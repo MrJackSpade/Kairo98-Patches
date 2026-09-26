@@ -1,0 +1,2451 @@
+[
+ {
+  "alttitle": "遊撃隊 ～最強神復活之巻～",
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://www.pc98.org/yugekit1.html"
+   }
+  ],
+  "id": "r8938",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p1490",
+    "name": "Gargatar"
+   }
+  ],
+  "released": "2010-06-29",
+  "title": "Yuugekitai ~Saikyoushin Fukkatsu no Maki~",
+  "vns": [
+   {
+    "alttitle": "遊撃隊 ～最強神復活之巻～",
+    "id": "v4672",
+    "title": "Yuugekitai ~Saikyoushin Fukkatsu no Maki~",
+    "titles": [
+     {
+      "title": "遊撃隊 ～最強神復活之巻～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": "EMIT Vol.1: 時の迷子",
+  "extlinks": [],
+  "id": "r30728",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   },
+   {
+    "lang": "ja",
+    "mtl": false
+   }
+  ],
+  "official": true,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p473",
+    "name": "KOEI Co., Ltd."
+   }
+  ],
+  "released": "1994-09-30",
+  "title": "EMIT Vol. 1: Toki no Maigo",
+  "vns": [
+   {
+    "alttitle": "EMIT Vol.1: 時の迷子",
+    "id": "v6956",
+    "title": "EMIT Vol. 1: Toki no Maigo",
+    "titles": [
+     {
+      "title": "EMIT Vol.1: 時の迷子"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": "EMIT Vol.2: 命がけの旅",
+  "extlinks": [],
+  "id": "r30729",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   },
+   {
+    "lang": "ja",
+    "mtl": false
+   }
+  ],
+  "official": true,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p473",
+    "name": "KOEI Co., Ltd."
+   }
+  ],
+  "released": "1995-01-13",
+  "title": "EMIT Vol. 2: Inochigake no Tabi",
+  "vns": [
+   {
+    "alttitle": "EMIT Vol.2: 命がけの旅",
+    "id": "v19001",
+    "title": "EMIT Vol. 2: Inochigake no Tabi",
+    "titles": [
+     {
+      "title": "EMIT Vol.2: 命がけの旅"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": "EMIT Vol.3: 私にさよならを",
+  "extlinks": [],
+  "id": "r30730",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   },
+   {
+    "lang": "ja",
+    "mtl": false
+   }
+  ],
+  "official": true,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p473",
+    "name": "KOEI Co., Ltd."
+   }
+  ],
+  "released": "1995-03-17",
+  "title": "EMIT Vol. 3: Watashi ni Sayonara o",
+  "vns": [
+   {
+    "alttitle": "EMIT Vol.3: 私にさよならを",
+    "id": "v19003",
+    "title": "EMIT Vol. 3: Watashi ni Sayonara o",
+    "titles": [
+     {
+      "title": "EMIT Vol.3: 私にさよならを"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": "EMIT バリューパック",
+  "extlinks": [],
+  "id": "r30737",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   },
+   {
+    "lang": "ja",
+    "mtl": false
+   }
+  ],
+  "official": true,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p473",
+    "name": "KOEI Co., Ltd."
+   }
+  ],
+  "released": "1995-12-15",
+  "title": "EMIT Value Pack",
+  "vns": [
+   {
+    "alttitle": "EMIT Vol.1: 時の迷子",
+    "id": "v6956",
+    "title": "EMIT Vol. 1: Toki no Maigo",
+    "titles": [
+     {
+      "title": "EMIT Vol.1: 時の迷子"
+     }
+    ]
+   },
+   {
+    "alttitle": "EMIT Vol.2: 命がけの旅",
+    "id": "v19001",
+    "title": "EMIT Vol. 2: Inochigake no Tabi",
+    "titles": [
+     {
+      "title": "EMIT Vol.2: 命がけの旅"
+     }
+    ]
+   },
+   {
+    "alttitle": "EMIT Vol.3: 私にさよならを",
+    "id": "v19003",
+    "title": "EMIT Vol. 3: Watashi ni Sayonara o",
+    "titles": [
+     {
+      "title": "EMIT Vol.3: 私にさよならを"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "http://www.pc98.org/marble.html"
+   }
+  ],
+  "id": "r36784",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p5103",
+    "name": "Ryo-Cokey's Hentai Game Translations"
+   }
+  ],
+  "released": "2004-07-25",
+  "title": "Marble Cooking",
+  "vns": [
+   {
+    "alttitle": "マーブルクッキング",
+    "id": "v16149",
+    "title": "Marble Cooking",
+    "titles": [
+     {
+      "title": "マーブルクッキング"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Patreon post",
+    "url": "https://www.patreon.com/posts/6628055"
+   }
+  ],
+  "id": "r47682",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p6312",
+    "name": "Nana"
+   }
+  ],
+  "released": "2016-08-28",
+  "title": "Reserve",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v18414",
+    "title": "Réserve",
+    "titles": [
+     {
+      "title": "Réserve"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Patreon post",
+    "url": "https://www.patreon.com/posts/6628055"
+   }
+  ],
+  "id": "r47683",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p6312",
+    "name": "Nana"
+   }
+  ],
+  "released": "2016-08-28",
+  "title": "Reserve 1/2",
+  "vns": [
+   {
+    "alttitle": "レゼルブ１/２",
+    "id": "v18415",
+    "title": "Réserve 1/2",
+    "titles": [
+     {
+      "title": "レゼルブ１/２"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://web.archive.org/web/20180608055319/http://pc98.cat/translations.html"
+   }
+  ],
+  "id": "r48195",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p6312",
+    "name": "Nana"
+   }
+  ],
+  "released": "2016-09-29",
+  "title": "Belloncho Body Inspection",
+  "vns": [
+   {
+    "alttitle": "ベロンチョ身体検査 ～女子高校編～",
+    "id": "v9372",
+    "title": "Belloncho Shintai Kensa ~Joshikoukou Hen~",
+    "titles": [
+     {
+      "title": "ベロンチョ身体検査 ～女子高校編～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://web.archive.org/web/20230130144759/http://www.projectharlemblade.com/2020/04/26/harlem-blade-english-patch-v-1-04/"
+   }
+  ],
+  "id": "r63374",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p9072",
+    "name": "Jenbrother"
+   }
+  ],
+  "released": "2020-02-12",
+  "title": "Harlem Blade ~The Greatest of All Time.~",
+  "vns": [
+   {
+    "alttitle": "ハーレムブレイド～The Greatest of All Time.～",
+    "id": "v6568",
+    "title": "Harlem Blade ~The Greatest of All Time.~",
+    "titles": [
+     {
+      "title": "ハーレムブレイド～The Greatest of All Time.～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/lakers/lakers"
+   }
+  ],
+  "id": "r79791",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-05-20",
+  "title": "Holy Girl Force Lakers",
+  "vns": [
+   {
+    "alttitle": "聖少女戦隊レイカーズ",
+    "id": "v16865",
+    "title": "Sei Shoujo Sentai Lakers",
+    "titles": [
+     {
+      "title": "Holy Girl Force Lakers"
+     },
+     {
+      "title": "聖少女戦隊レイカーズ"
+     },
+     {
+      "title": "聖少女戰隊"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/lakers2/lakers2"
+   }
+  ],
+  "id": "r79792",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-11-13",
+  "title": "Holy Girl Force Lakers II",
+  "vns": [
+   {
+    "alttitle": "聖少女戦隊レイカーズ II",
+    "id": "v16866",
+    "title": "Sei Shoujo Sentai Lakers II",
+    "titles": [
+     {
+      "title": "聖少女戦隊レイカーズ II"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-holy-girl-force-lakers-iii-partial-english-patch.37466/"
+   }
+  ],
+  "id": "r80271",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2021-06-06",
+  "title": "Holy Girl Force Lakers III",
+  "vns": [
+   {
+    "alttitle": "聖少女戦隊レイカーズ III",
+    "id": "v16867",
+    "title": "Sei Shoujo Sentai Lakers III",
+    "titles": [
+     {
+      "title": "聖少女戦隊レイカーズ III"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": "ポゼッショナー",
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://www.romhacking.net/forum/index.php?topic=27891.0"
+   }
+  ],
+  "id": "r83124",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [],
+  "released": "TBA",
+  "title": "Possessioner",
+  "vns": [
+   {
+    "alttitle": "ポゼッショナー",
+    "id": "v9016",
+    "title": "Possessioner",
+    "titles": [
+     {
+      "title": "ポゼッショナー"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [],
+  "id": "r83125",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [],
+  "released": "TBA",
+  "title": "Dragon Knight 4",
+  "vns": [
+   {
+    "alttitle": "ドラゴンナイト4",
+    "id": "v498",
+    "title": "Dragon Knight 4",
+    "titles": [
+     {
+      "title": "ドラゴンナイト4"
+     },
+     {
+      "title": "드래곤 나이트 4"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/yuno/yuno"
+   }
+  ],
+  "id": "r83617",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-01-26",
+  "title": "YU-NO - The Girl that Chants Love at the Edge of the World",
+  "vns": [
+   {
+    "alttitle": "この世の果てで恋を唄う少女YU-NO",
+    "id": "v1377",
+    "title": "Kono Yo no Hate de Koi o Utau Shoujo YU-NO",
+    "titles": [
+     {
+      "title": "YU-NO - The Girl that Chants Love at the Edge of the World"
+     },
+     {
+      "title": "この世の果てで恋を唄う少女YU-NO"
+     },
+     {
+      "title": "이 세상 끝에서 사랑을 노래하는 소녀 YU-NO"
+     },
+     {
+      "title": "在世界尽头咏唱恋曲的少女YU-NO"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://nebulous.group/index.php/projects/translations/macross-skull-leader-complete-pack/"
+   }
+  ],
+  "id": "r84474",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p12367",
+    "name": "Nebulous Translations"
+   }
+  ],
+  "released": "2017-08-06",
+  "title": "The Super Dimension Fortress Macross: Skull Leader Complete Pack",
+  "vns": [
+   {
+    "alttitle": "超時空要塞マクロス スカルリーダー",
+    "id": "v32737",
+    "title": "Choujikuu Yousai Macross: Skull Leader",
+    "titles": [
+     {
+      "title": "超時空要塞マクロス スカルリーダー"
+     }
+    ]
+   },
+   {
+    "alttitle": "超時空要塞マクロス ラブストーリーズ",
+    "id": "v32738",
+    "title": "Choujikuu Yousai Macross: Love Stories",
+    "titles": [
+     {
+      "title": "超時空要塞マクロス ラブストーリーズ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/foxy/foxy"
+   }
+  ],
+  "id": "r87658",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-02-27",
+  "title": "FOXY",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v17064",
+    "title": "FOXY",
+    "titles": [
+     {
+      "title": "FOXY"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/runrun/runrun"
+   }
+  ],
+  "id": "r88581",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-03-10",
+  "title": "Run Run Concerto",
+  "vns": [
+   {
+    "alttitle": "ＲＵＮ・ＲＵＮ　狂走曲",
+    "id": "v17494",
+    "title": "Run Run Kyousoukyoku",
+    "titles": [
+     {
+      "title": "ＲＵＮ・ＲＵＮ　狂走曲"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://github.com/OldCorpo/Xenon-PC98-Tools/tree/master/game"
+   }
+  ],
+  "id": "r90595",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p30968",
+    "name": "OldCorpo"
+   }
+  ],
+  "released": "2026-08-24",
+  "title": "Xenon ~Mugen no Shitai~",
+  "vns": [
+   {
+    "alttitle": "XENON ～夢幻の肢体～",
+    "id": "v7474",
+    "title": "Xenon ~Mugen no Shitai~",
+    "titles": [
+     {
+      "title": "XENON ～夢幻の肢体～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/desire-haitoku-no-rasen-pc-9801-english-translation-patch.37851/"
+   }
+  ],
+  "id": "r94547",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p17258",
+    "name": "MrSilentVid"
+   },
+   {
+    "id": "p17259",
+    "name": "Tamamoball"
+   }
+  ],
+  "released": "2023-02-09",
+  "title": "DESIRE: Haitoku no Rasen",
+  "vns": [
+   {
+    "alttitle": "DESIRE 背徳の螺旋",
+    "id": "v151",
+    "title": "DESIRE - Haitoku no Rasen",
+    "titles": [
+     {
+      "title": "Desire"
+     },
+     {
+      "title": "DESIRE 背徳の螺旋"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://archive.org/details/guynarock-ii-eng-patch"
+   }
+  ],
+  "id": "r97968",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2022-11-04",
+  "title": "Guynarock II",
+  "vns": [
+   {
+    "alttitle": "銀聖戦神ガイナロック 2",
+    "id": "v18121",
+    "title": "Ginsei Senshin Guynarock 2",
+    "titles": [
+     {
+      "title": "銀聖戦神ガイナロック 2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/jast/jast"
+   }
+  ],
+  "id": "r98275",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2022-11-08",
+  "title": "JAST USA Memorial Collection",
+  "vns": [
+   {
+    "alttitle": "三姉妹",
+    "id": "v113",
+    "title": "San Shimai",
+    "titles": [
+     {
+      "title": "Three Sisters' Story"
+     },
+     {
+      "title": "三姉妹"
+     }
+    ]
+   },
+   {
+    "alttitle": "さくらの季節",
+    "id": "v206",
+    "title": "Sakura no Kisetsu",
+    "titles": [
+     {
+      "title": "Season of the Sakura"
+     },
+     {
+      "title": "さくらの季節"
+     },
+     {
+      "title": "櫻花的季節"
+     }
+    ]
+   },
+   {
+    "alttitle": "迷走都市",
+    "id": "v843",
+    "title": "Meisou Toshi",
+    "titles": [
+     {
+      "title": "Runaway City"
+     },
+     {
+      "title": "迷走都市"
+     },
+     {
+      "title": "迷走都市"
+     },
+     {
+      "title": "迷走都市"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [],
+  "id": "r98982",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "2022-12-10",
+  "title": "Etsuraku no Gakuen",
+  "vns": [
+   {
+    "alttitle": "悦楽の学園",
+    "id": "v740",
+    "title": "Etsuraku no Gakuen",
+    "titles": [
+     {
+      "title": "Love Potion"
+     },
+     {
+      "title": "悦楽の学園"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/amy/amy"
+   }
+  ],
+  "id": "r99102",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2022-12-10",
+  "title": "Amy's Fantasies",
+  "vns": [
+   {
+    "alttitle": "エイミーと呼ばないでっ",
+    "id": "v734",
+    "title": "Eimmy to Yobanaide",
+    "titles": [
+     {
+      "title": "Amy's Fantasies"
+     },
+     {
+      "title": "エイミーと呼ばないでっ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [],
+  "id": "r99987",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p17258",
+    "name": "MrSilentVid"
+   }
+  ],
+  "released": "TBA",
+  "title": "ELLE",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v2293",
+    "title": "ELLE",
+    "titles": [
+     {
+      "title": "ELLE"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://archive.org/details/hacchake-ayayo-san-english"
+   }
+  ],
+  "id": "r100717",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p28577",
+    "name": "Glazed Ham"
+   }
+  ],
+  "released": "2023-04-08",
+  "title": "Hacchake Ayayo-san",
+  "vns": [
+   {
+    "alttitle": "はっちゃけあやよさん",
+    "id": "v8892",
+    "title": "Hacchake Ayayo-san",
+    "titles": [
+     {
+      "title": "はっちゃけあやよさん"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://romhack.ing/database/content/entry/Yt0DNsApTlCoFzdRS3A5mQ/hacchake-ayayo-san-2-ayayo-s-love-affair-english-translation"
+   }
+  ],
+  "id": "r100718",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p28577",
+    "name": "Glazed Ham"
+   }
+  ],
+  "released": "2024-02-24",
+  "title": "Hacchake Ayayo-san 2 - Ikenai Holiday - Ayayo's Love Affair",
+  "vns": [
+   {
+    "alttitle": "はっちゃけあやよさん２ いけないホリデイ ＡＹＡＹＯ＇Ｓ ＬＯＶＥ ＡＦＦＡＩＲ",
+    "id": "v8893",
+    "title": "Hacchake Ayayo-san 2 - Ikenai Holiday - Ayayo's Love Affair",
+    "titles": [
+     {
+      "title": "はっちゃけあやよさん２ いけないホリデイ ＡＹＡＹＯ＇Ｓ ＬＯＶＥ ＡＦＦＡＩＲ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [],
+  "id": "r100719",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "TBA",
+  "title": "Angel Hearts",
+  "vns": [
+   {
+    "alttitle": "エンジェル・ハーツ",
+    "id": "v18063",
+    "title": "Angel Hearts",
+    "titles": [
+     {
+      "title": "エンジェル・ハーツ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://github.com/XenonTranslation/script"
+   }
+  ],
+  "id": "r103517",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [],
+  "released": "2013-10-19",
+  "title": "Xenon ~Mugen no Shitai~",
+  "vns": [
+   {
+    "alttitle": "XENON ～夢幻の肢体～",
+    "id": "v7474",
+    "title": "Xenon ~Mugen no Shitai~",
+    "titles": [
+     {
+      "title": "XENON ～夢幻の肢体～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/lime/lime"
+   }
+  ],
+  "id": "r103962",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2023-08-10",
+  "title": "Jewel Bem Hunter Lime",
+  "vns": [
+   {
+    "alttitle": "宝魔ハンターライム",
+    "id": "v4569",
+    "title": "Houma Hunter Lime",
+    "titles": [
+     {
+      "title": "宝魔ハンターライム"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-shangrlia-2-english-patch.38290/"
+   }
+  ],
+  "id": "r107533",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2023-10-28",
+  "title": "Shangrlia 2",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v3183",
+    "title": "SHANGRLIA2",
+    "titles": [
+     {
+      "title": "SHANGRLIA2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://archive.org/download/jan-jaka-jan-english-translation-by-gan"
+   }
+  ],
+  "id": "r110716",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p20831",
+    "name": "GAN"
+   }
+  ],
+  "released": "2023-12-31",
+  "title": "Jan Jaka Jan",
+  "vns": [
+   {
+    "alttitle": "雀ＪＡＫＡ雀",
+    "id": "v18064",
+    "title": "Jan Jaka Jan",
+    "titles": [
+     {
+      "title": "雀ＪＡＫＡ雀"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/milk/milk"
+   }
+  ],
+  "id": "r112386",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2023-08-29",
+  "title": "Exciting Milk",
+  "vns": [
+   {
+    "alttitle": "エキサイティングみるく第１話",
+    "id": "v8875",
+    "title": "Exciting Milk Dai 1 Wa",
+    "titles": [
+     {
+      "title": "エキサイティングみるく第１話"
+     }
+    ]
+   },
+   {
+    "alttitle": "エキサイティングみるく第 2 話",
+    "id": "v18119",
+    "title": "Exciting Milk Dai 2 Wa",
+    "titles": [
+     {
+      "title": "エキサイティングみるく第 2 話"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/kindan-no-ketsuzoku-pc-98-english-patch.38222/"
+   }
+  ],
+  "id": "r112891",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "2023-09-10",
+  "title": "Fatal Relations",
+  "vns": [
+   {
+    "alttitle": "禁断の血族",
+    "id": "v739",
+    "title": "Kindan no Ketsuzoku",
+    "titles": [
+     {
+      "title": "Fatal Relations"
+     },
+     {
+      "title": "禁断の血族"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/dead-of-the-brain-cry-of-the-dead-pc-98-english-patch.38296/"
+   }
+  ],
+  "id": "r113617",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "2023-10-31",
+  "title": "Dead of the Brain ~Cry of the Dead~",
+  "vns": [
+   {
+    "alttitle": "DEAD OF THE BRAIN ～死霊の叫び～",
+    "id": "v4513",
+    "title": "DEAD OF THE BRAIN ~Shiryou no Sakebi~",
+    "titles": [
+     {
+      "title": "DEAD OF THE BRAIN ～死霊の叫び～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-rance-quest-for-hikari-english-patch.38291/"
+   }
+  ],
+  "id": "r114480",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2023-10-28",
+  "title": "Rance: Quest for Hikari",
+  "vns": [
+   {
+    "alttitle": "Rance -光をもとめて-",
+    "id": "v1414",
+    "title": "Rance -Hikari o Motomete-",
+    "titles": [
+     {
+      "title": "Rance -光をもとめて-"
+     },
+     {
+      "title": "Rance: Quest for Hikari"
+     },
+     {
+      "title": "Rance: En búsqueda de Hikari"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://github.com/Her-Saki/shizuku_pc98_eng/releases/tag/shizuku_eng_patch_2.0"
+   }
+  ],
+  "id": "r116606",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p6888",
+    "name": "Her-Saki"
+   }
+  ],
+  "released": "2026-01-26",
+  "title": "Shizuku",
+  "vns": [
+   {
+    "alttitle": "雫",
+    "id": "v235",
+    "title": "Shizuku",
+    "titles": [
+     {
+      "title": "雫"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/rance2/rance2"
+   }
+  ],
+  "id": "r117863",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-01-01",
+  "title": "Rance II: The Rebellious Maidens",
+  "vns": [
+   {
+    "alttitle": "ランスII　－反逆の少女たち－",
+    "id": "v1427",
+    "title": "Rance II -Hangyaku no Shoujo-tachi-",
+    "titles": [
+     {
+      "title": "ランスII　－反逆の少女たち－"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/nightslave/nightslave"
+   }
+  ],
+  "id": "r119347",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2024-02-12",
+  "title": "Night Slave",
+  "vns": [
+   {
+    "alttitle": "ナイト・スレイブ",
+    "id": "v11762",
+    "title": "Night Slave",
+    "titles": [
+     {
+      "title": "ナイト・スレイブ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-toushin-toshi-english-patch.38454/"
+   }
+  ],
+  "id": "r119561",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-02-18",
+  "title": "Toushin Toshi",
+  "vns": [
+   {
+    "alttitle": "闘神都市",
+    "id": "v888",
+    "title": "Toushin Toshi",
+    "titles": [
+     {
+      "title": "闘神都市"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-rance-iii-the-fall-of-leazas-english-patch.38545/"
+   }
+  ],
+  "id": "r121570",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-04-04",
+  "title": "Rance III - The Fall of Leazas -",
+  "vns": [
+   {
+    "alttitle": "ランス III　－リーザス陥落－",
+    "id": "v1829",
+    "title": "Rance III - Leazas Kanraku -",
+    "titles": [
+     {
+      "title": "ランス III　－リーザス陥落－"
+     },
+     {
+      "title": "Rance III - The Fall of Leazas -"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://archive.org/details/nec-pc-9801-translations"
+   }
+  ],
+  "id": "r122971",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": false,
+  "producers": [],
+  "released": "2024-04-18",
+  "title": "Lightning Warrior Raidy",
+  "vns": [
+   {
+    "alttitle": "雷の戦士ライディ",
+    "id": "v158",
+    "title": "Ikazuchi no Senshi Raidy",
+    "titles": [
+     {
+      "title": "Lightning Warrior Raidy"
+     },
+     {
+      "title": "雷の戦士ライディ"
+     },
+     {
+      "title": "Lightning Warrior Raidy"
+     },
+     {
+      "title": "Райди - Повелительница молний"
+     },
+     {
+      "title": "雷之战士莱蒂 破邪的雷光"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/alice/alice"
+   }
+  ],
+  "id": "r123389",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-05-22",
+  "title": "Alice's Cottage",
+  "vns": [
+   {
+    "alttitle": "ALICEの館",
+    "id": "v9610",
+    "title": "Alice no Yakata",
+    "titles": [
+     {
+      "title": "ALICEの館"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://www.romhacking.net/forum/index.php?topic=29759.0"
+   }
+  ],
+  "id": "r127895",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p22909",
+    "name": "Aluminiumi"
+   }
+  ],
+  "released": "2020-05-22",
+  "title": "Strush",
+  "vns": [
+   {
+    "alttitle": "ストラッシュ",
+    "id": "v9100",
+    "title": "Strush",
+    "titles": [
+     {
+      "title": "ストラッシュ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/rance4/rance4"
+   }
+  ],
+  "id": "r127999",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-10-04",
+  "title": "Rance IV - Legacy of the Sect -",
+  "vns": [
+   {
+    "alttitle": "ランス IV　－教団の遺産－",
+    "id": "v2040",
+    "title": "Rance IV - Kyoudan no Isan -",
+    "titles": [
+     {
+      "title": "Rance IV - The Legacy of the Sect -"
+     },
+     {
+      "title": "ランス IV　－教団の遺産－"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/rance4-2/rance4-2"
+   }
+  ],
+  "id": "r128649",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-10-19",
+  "title": "Rance 4.2 -Angel Army-",
+  "vns": [
+   {
+    "alttitle": "ランス４．２　～エンジェル組～",
+    "id": "v2044",
+    "title": "Rance 4.2 ~Angelgumi~",
+    "titles": [
+     {
+      "title": "Rance 4.2 -Angel Army-"
+     },
+     {
+      "title": "ランス４．２　～エンジェル組～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/rance4-1/rance4-1"
+   }
+  ],
+  "id": "r128650",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-10-19",
+  "title": "Rance 4.1 -Save the Medicine Plant!-",
+  "vns": [
+   {
+    "alttitle": "ランス４．１　～お薬工場を救え！～",
+    "id": "v2043",
+    "title": "Rance 4.1 ~Okusuri Koujou o Sukue!~",
+    "titles": [
+     {
+      "title": "Rance 4.1 -Save the Medicine Plant!-"
+     },
+     {
+      "title": "ランス４．１　～お薬工場を救え！～"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/alice2/alice2"
+   }
+  ],
+  "id": "r128819",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2024-10-30",
+  "title": "Alice's Cottage II",
+  "vns": [
+   {
+    "alttitle": "ALICEの館II",
+    "id": "v9609",
+    "title": "ALICE no Yakata II",
+    "titles": [
+     {
+      "title": "ALICEの館II"
+     },
+     {
+      "title": "爱丽丝之馆 -揍揍卷卷塔-"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-cyber-arms-val-kaizer-english-patch.39095/"
+   }
+  ],
+  "id": "r133234",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   },
+   {
+    "id": "p15964",
+    "name": "Alpharobo"
+   }
+  ],
+  "released": "2025-03-14",
+  "title": "Cyber Arms Val-Kaizer",
+  "vns": [
+   {
+    "alttitle": "機甲装神ヴァルカイザー",
+    "id": "v8837",
+    "title": "Kikou Soushin Val-Kaizer",
+    "titles": [
+     {
+      "title": "Cyber Arms Val-Kaizer"
+     },
+     {
+      "title": "機甲装神ヴァルカイザー"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/rance2/rance2"
+   }
+  ],
+  "id": "r134405",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2024-01-01",
+  "title": "Rance 2 Hint Disc",
+  "vns": [
+   {
+    "alttitle": "SDらんす",
+    "id": "v32939",
+    "title": "SD Rance",
+    "titles": [
+     {
+      "title": "SDらんす"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://romhack.ing/database/content/entry/AjCUMkpmSjyuyC2B90szzA/mime-floating-dream-english-translation"
+   }
+  ],
+  "id": "r135002",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p24569",
+    "name": "Valley Bell"
+   }
+  ],
+  "released": "2025-05-01",
+  "title": "Mime - Floating Dream",
+  "vns": [
+   {
+    "alttitle": "舞夢",
+    "id": "v17599",
+    "title": "Mime",
+    "titles": [
+     {
+      "title": "舞夢"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://baba-jpc.neocities.org/translations/policewoman/policewoman"
+   }
+  ],
+  "id": "r142233",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2024-04-10",
+  "title": "Policewoman VX",
+  "vns": [
+   {
+    "alttitle": "婦警さんＶＸ",
+    "id": "v56530",
+    "title": "Fukei-san VX",
+    "titles": [
+     {
+      "title": "Policewoman VX"
+     },
+     {
+      "title": "婦警さんＶＸ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://jackdbs.neocities.org/tl_dotb2"
+   }
+  ],
+  "id": "r142769",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "2025-10-01",
+  "title": "Dead of the Brain 2",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v6037",
+    "title": "DEAD OF THE BRAIN2",
+    "titles": [
+     {
+      "title": "DEAD OF THE BRAIN2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://cdn.discordapp.com/attachments/1441613472482857052/1477414046130114747/Nova_TL-En_by_Fuzion.hdi?ex=69a7f84d&is=69a6a6cd&hm=31b2000763f736c963a540a7b561421703c9f9954a903fd1ef16a8f755e4395b&"
+   }
+  ],
+  "id": "r149929",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p28352",
+    "name": "Fuzion"
+   }
+  ],
+  "released": "2026-02-28",
+  "title": "NOVA",
+  "vns": [
+   {
+    "alttitle": "ノ・ヴァ",
+    "id": "v8992",
+    "title": "NOVA",
+    "titles": [
+     {
+      "title": "ノ・ヴァ"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://github.com/EK720/X-Girl_Trans"
+   }
+  ],
+  "id": "r150093",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": false,
+  "producers": [
+   {
+    "id": "p28352",
+    "name": "Fuzion"
+   }
+  ],
+  "released": "TBA",
+  "title": "X-GIRL",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v8717",
+    "title": "X-GIRL",
+    "titles": [
+     {
+      "title": "X-GIRL"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [],
+  "id": "r152119",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p6888",
+    "name": "Her-Saki"
+   }
+  ],
+  "released": "TBA",
+  "title": "Kizuato",
+  "vns": [
+   {
+    "alttitle": "痕",
+    "id": "v184",
+    "title": "Kizuato",
+    "titles": [
+     {
+      "title": "痕"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-dragoon-armor-for-adult-english-patch.39859/"
+   }
+  ],
+  "id": "r155530",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p28352",
+    "name": "Fuzion"
+   }
+  ],
+  "released": "2026-05-10",
+  "title": "Dragoon Armor for Adult",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v18444",
+    "title": "DRAGOON ARMOR FOR ADULT",
+    "titles": [
+     {
+      "title": "DRAGOON ARMOR FOR ADULT"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://jackdbs.neocities.org/tl_dengeki"
+   }
+  ],
+  "id": "r160140",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p16410",
+    "name": "WINE"
+   }
+  ],
+  "released": "2026-07-04",
+  "title": "Dengeki Nurse",
+  "vns": [
+   {
+    "alttitle": "電撃ナース",
+    "id": "v8676",
+    "title": "Dengeki Nurse",
+    "titles": [
+     {
+      "title": "電撃ナース"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "alttitle": null,
+  "extlinks": [
+   {
+    "label": "Official website",
+    "url": "https://gbatemp.net/download/pc-98-eve-burst-error-english-patch.40003/"
+   }
+  ],
+  "id": "r163952",
+  "languages": [
+   {
+    "lang": "en",
+    "mtl": false
+   }
+  ],
+  "official": false,
+  "patch": true,
+  "producers": [
+   {
+    "id": "p11935",
+    "name": "BabaJeanmel"
+   }
+  ],
+  "released": "2026-08-27",
+  "title": "EVE Burst Error",
+  "vns": [
+   {
+    "alttitle": null,
+    "id": "v147",
+    "title": "EVE burst error",
+    "titles": [
+     {
+      "title": "EVE Burst Error"
+     },
+     {
+      "title": "EVE burst error"
+     }
+    ]
+   }
+  ]
+ }
+]

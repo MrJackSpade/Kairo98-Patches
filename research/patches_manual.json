@@ -1,0 +1,204 @@
+{
+ "_note": "Hand-verified links keyed by collection title key (index/index.json 'key').",
+ "Enix.zip/46 Okunen Monogatari - The Shinkaron": [
+  {
+   "label": "46OkuMen/46-okunen-monogatari (translation tools/notes; patch released)",
+   "url": "https://github.com/46OkuMen/46-okunen-monogatari",
+   "source": "GitHub"
+  }
+ ],
+ "TGL.zip/Appareden - Fukuryuu no Shou": [
+  {
+   "label": "46OkuMen/appareden (translation tools/notes; patch released)",
+   "url": "https://github.com/46OkuMen/appareden",
+   "source": "GitHub"
+  }
+ ],
+ "Wiz.zip/CRW Metal Jacket": [
+  {
+   "label": "46OkuMen/crw (translation tools/notes; patch released)",
+   "url": "https://github.com/46OkuMen/crw",
+   "source": "GitHub"
+  }
+ ],
+ "C-Lab.zip/Rusty": [
+  {
+   "label": "46OkuMen/rusty (translation tools/notes; patch released)",
+   "url": "https://github.com/46OkuMen/rusty",
+   "source": "GitHub"
+  }
+ ],
+ "Konami.zip/Policenauts": [
+  {
+   "label": "79joseca/Policenauts-PC98-Translation (WIP, incomplete)",
+   "url": "https://github.com/79joseca/Policenauts-PC98-Translation",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "Custom.zip/Metal Orange": [
+  {
+   "label": "ChronoStriker1/metal-orange-english (IPS patches in repo)",
+   "url": "https://github.com/ChronoStriker1/metal-orange-english",
+   "source": "GitHub"
+  }
+ ],
+ "elf.zip/Doukyuusei": [
+  {
+   "label": "Comrade-Hee-Ho/Dokyusei-PC-98-English-Translation (script backup of an in-progress translation; no release)",
+   "url": "https://github.com/Comrade-Hee-Ho/Dokyusei-PC-98-English-Translation",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "CocktailSoftFmc.zip/Bay City Elegy": [
+  {
+   "label": "dantecsm/bay-city-elegy-translation-toolkit (toolkit; check repo for patch status)",
+   "url": "https://github.com/dantecsm/bay-city-elegy-translation-toolkit",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "CsWare.zip/Eve Burst Error": [
+  {
+   "label": "dantecsm/EveBurstErrorTL (translation project)",
+   "url": "https://github.com/dantecsm/EveBurstErrorTL",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "Compile.zip/Madou Monogatari 1-2-3": [
+  {
+   "label": "Eight-Mansions/MadouMonogatari1-pc98 (Madou 1, released v1.0 2023-07)",
+   "url": "https://github.com/Eight-Mansions/MadouMonogatari1-pc98",
+   "source": "GitHub"
+  },
+  {
+   "label": "Eight-Mansions/MadouMonogatari2-pc98 (Madou 2)",
+   "url": "https://github.com/Eight-Mansions/MadouMonogatari2-pc98",
+   "source": "GitHub"
+  },
+  {
+   "label": "Eight-Mansions/MadouMonogatari3-pc98 (Madou 3)",
+   "url": "https://github.com/Eight-Mansions/MadouMonogatari3-pc98",
+   "source": "GitHub"
+  }
+ ],
+ "FairytaleRed-zone.zip/X-Girl": [
+  {
+   "label": "FuzionCD/X-Girl_Trans (translation files)",
+   "url": "https://github.com/FuzionCD/X-Girl_Trans",
+   "source": "GitHub"
+  }
+ ],
+ "Leaf.zip/Shizuku": [
+  {
+   "label": "Her-Saki/shizuku_pc98_eng (patch released)",
+   "url": "https://github.com/Her-Saki/shizuku_pc98_eng",
+   "source": "GitHub"
+  }
+ ],
+ "elf.zip/Words Worth": [
+  {
+   "label": "kukfirst/words-worth-en (patch + pipeline)",
+   "url": "https://github.com/kukfirst/words-worth-en",
+   "source": "GitHub"
+  }
+ ],
+ "Falcom.zip/Dragon Slayer - The Legend of Heroes (Eiyuu Densetsu)": [
+  {
+   "label": "nleseul/ds6_pc98_trans (patch released)",
+   "url": "https://github.com/nleseul/ds6_pc98_trans",
+   "source": "GitHub"
+  }
+ ],
+ "Falcom.zip/Dragon Slayer - The Legend of Heroes (Eiyuu Densetsu) II": [
+  {
+   "label": "nleseul/loh2_pc98_trans (translation project; no release yet)",
+   "url": "https://github.com/nleseul/loh2_pc98_trans",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "FairytaleHardcover.zip/Ballade for Maria (Maria ni Sasageru Ballade)": [
+  {
+   "label": "OPNA2608/ballade-for-maria-translation (WIP machine translation)",
+   "url": "https://github.com/OPNA2608/ballade-for-maria-translation",
+   "source": "GitHub",
+   "wip": true
+  },
+  {
+   "label": "XanderZoneRulez/ballade-for-maria-pc98-en (WIP translation workflow)",
+   "url": "https://github.com/XanderZoneRulez/ballade-for-maria-pc98-en",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "Giga.zip/V.G. - Variable Geo": [
+  {
+   "label": "pandohzen/GeoPatcher (text-editing tools for the Variable Geo series)",
+   "url": "https://github.com/pandohzen/GeoPatcher",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "CocktailSoft.zip/Dengeki Nurse": [
+  {
+   "label": "romh-acking/dengeki-nurse-pc98-en (patch released)",
+   "url": "https://github.com/romh-acking/dengeki-nurse-pc98-en",
+   "source": "GitHub"
+  }
+ ],
+ "Fairytale.zip/Dead of the Brain": [
+  {
+   "label": "romh-acking/dotb1-pc98-en (patch released)",
+   "url": "https://github.com/romh-acking/dotb1-pc98-en",
+   "source": "GitHub"
+  }
+ ],
+ "Fairytale.zip/Dead of the Brain 2": [
+  {
+   "label": "romh-acking/dotb2-pc98-en (patch released)",
+   "url": "https://github.com/romh-acking/dotb2-pc98-en",
+   "source": "GitHub"
+  }
+ ],
+ "IllusionCore.zip/Aegean no Shizuku": [
+  {
+   "label": "Svipur/Aegean-Kai-No-Shizuku-PC98-English (patch released)",
+   "url": "https://github.com/Svipur/Aegean-Kai-No-Shizuku-PC98-English",
+   "source": "GitHub"
+  }
+ ],
+ "KSS.zip/Innocent Tour": [
+  {
+   "label": "Svipur/Innocent-Tour-English (patch released)",
+   "url": "https://github.com/Svipur/Innocent-Tour-English",
+   "source": "GitHub"
+  }
+ ],
+ "HummingBirdSoft.zip/Record of Lodoss War - Haiiro no Majo": [
+  {
+   "label": "bferguson3/lodoss-e (tools/translation for Lodoss 1 and 2; no release)",
+   "url": "https://github.com/bferguson3/lodoss-e",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "HummingBirdSoft.zip/Record of Lodoss War II - Goshiki no Maryuu": [
+  {
+   "label": "bferguson3/lodoss-e (tools/translation for Lodoss 1 and 2; no release)",
+   "url": "https://github.com/bferguson3/lodoss-e",
+   "source": "GitHub",
+   "wip": true
+  }
+ ],
+ "AliceSoft.zip/Dalk": [
+  {
+   "label": "This repo: games/dalk (extract/patch working, script awaiting translation)",
+   "url": "../games/dalk/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ]
+}

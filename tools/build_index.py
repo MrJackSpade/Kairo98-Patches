@@ -1,0 +1,212 @@
+"""Build the collection index and attach known English patches.
+
+    python tools/build_index.py
+
+Inputs (all optional except the inventory):
+  inventory.json                          tools/inventory.py over C:\\PC98
+  research/ia_translations.json           archive.org/metadata/nec-pc-9801-translations
+  research/kairo98_matches.json           Kairo98 catalog/research/matches-v1.json
+  research/patches_manual.json            hand-verified extra links:
+      {"<Publisher.zip>/<Title>": [{"label": ..., "url": ..., "source": ...}], ...}
+Outputs:
+  index/index.json   one record per title
+  index/INDEX.md     same, grouped by publisher, translated titles marked
+"""
+import json
+import os
+import re
+import urllib.parse
+from collections import defaultdict
+
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+IA_ITEM = "nec-pc-9801-translations"
+HOMEBREW = "doujinHomebrew.zip"   # grouped by creator; one entry per game here
+
+
+def p(*a):
+    return os.path.join(ROOT, *a)
+
+
+def load(path, default=None):
+    return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else default
+
+
+def slug(s):
+    """Case/punctuation-insensitive key; keeps kana/kanji so Japanese titles stay distinct."""
+    import unicodedata
+    return re.sub(r"[\W_]", "", unicodedata.normalize("NFKC", s).casefold())
+
+
+def ia_title(fname):
+    """'Alternates/Innocent Tour [T-En by Svipur v1.2] [Censored].zip' -> 'Innocent Tour'"""
+    base = fname.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    return re.split(r"\s*[\[(]", base, maxsplit=1)[0].strip()
+
+
+def ia_tags(fname):
+    return re.findall(r"\[([^\]]+)\]", fname)
+
+
+def _md_link(l):
+    label = l["label"].replace("|", "/")
+    return "[%s](%s)" % (label, l["url"]) if l["url"] else label
+
+
+def collection():
+    inv = load(p("inventory.json"))["ok"]
+    titles = {}
+    for zname, files in inv.items():
+        for name, size in files:
+            parts = name.split("/")
+            if name.endswith("/") or len(parts) < 3:
+                continue
+            publisher, title = parts[0], parts[1]
+            if zname == HOMEBREW:  # "<Creator>/<Creator> (<Game>) [FD].zip"
+                m = re.match(re.escape(parts[1]) + r" \((.+)\)(?: \[[^\]]*\])+\.zip$", parts[-1])
+                if m:
+                    publisher, title = parts[1], m.group(1)
+            key = "%s/%s" % (zname, title)
+            t = titles.setdefault(key, {"key": key, "archive": zname, "publisher": publisher,
+                                        "title": title, "media": set(), "files": [], "patches": []})
+            t["files"].append(name.split("/", 2)[2] if len(parts) > 2 else name)
+            for tag in re.findall(r"\[([A-Za-z]+)", parts[-1]):
+                if tag in ("FD", "HD", "CD", "ROM", "extras"):
+                    t["media"].add(tag)
+    return titles
+
+
+def main():
+    titles = collection()
+    by_group = {"pc98:%s:%s" % (t["archive"], t["title"]): t for t in titles.values()}
+
+    ia = load(p("research", "ia_translations.json"), {"files": []})
+    ia_files = [f["name"] for f in ia["files"] if f["name"].endswith(".zip")]
+    k98 = load(p("research", "kairo98_matches.json"), {"entries": []})["entries"]
+    slug_to_groups = defaultdict(set)
+    for e in k98:
+        groups = e.get("sourceGroups", [])
+        tr = [g.split(":", 1)[1] for g in groups if g.startswith("translated:")]
+        own = [g for g in groups if g.startswith("pc98:")]
+        for s in tr:
+            slug_to_groups[s].update(own)
+        # also allow matching by the record's title/aliases
+        for name in [e.get("title", "")] + e.get("aliases", []):
+            if own and tr and slug(name):
+                slug_to_groups[slug(name)].update(own)
+
+    ia_manual = load(p("research", "ia_manual.json"), {})
+    unmatched = []
+    for f in ia_files:
+        s = slug(ia_title(f))
+        groups = set(slug_to_groups.get(s, set()))
+        groups.update(g for g, t in by_group.items() if slug(t["title"]) == s)
+        groups.update("pc98:" + k.replace("/", ":", 1) for k in ia_manual.get(f, []))
+        link = {"label": f.rsplit("/", 1)[-1].rsplit(".", 1)[0],
+                "url": "https://archive.org/download/%s/%s" % (IA_ITEM, urllib.parse.quote(f)),
+                "source": "archive.org PC-98 translation archive (pre-patched)",
+                "tags": ia_tags(f)}
+        hit = False
+        for g in groups:
+            if g in by_group:
+                by_group[g]["patches"].append(link)
+                hit = True
+        if not hit:
+            unmatched.append(f)
+
+    # ---- VNDB: English PC-98 releases (api.vndb.org/kana) -------------------
+    name_to_keys = defaultdict(set)
+    for t in titles.values():
+        name_to_keys[slug(t["title"])].add(t["key"])
+    for e in k98:
+        own = [g for g in e.get("sourceGroups", []) if g.startswith("pc98:") and g in by_group]
+        for name in [e.get("title", "")] + e.get("aliases", []):
+            for g in own:
+                if slug(name):
+                    name_to_keys[slug(name)].add(by_group[g]["key"])
+    vndb_manual = load(p("research", "vndb_manual.json"), {})
+    vndb_unmatched = []
+    for r in load(p("research", "vndb_p98_en.json"), []):
+        names = [r["title"], r.get("alttitle") or ""]
+        for v in r["vns"]:
+            names += [v["title"], v.get("alttitle") or ""] + [x["title"] for x in v.get("titles", [])]
+        keys = set(vndb_manual.get(r["id"], []))
+        if not keys:
+            for n in names:
+                if slug(n) and slug(n) in name_to_keys:
+                    keys |= name_to_keys[slug(n)]
+        kind = "fan patch" if r["patch"] else "official English release"
+        mtl = any(l.get("mtl") for l in r.get("languages", []) if l["lang"] == "en")
+        links = [{"label": "%s: VNDB %s (%s%s)" % (r["title"], r["id"], kind, ", MTL" if mtl else ""),
+                  "url": "https://vndb.org/" + r["id"], "source": "VNDB"}]
+        links += [{"label": "%s: %s" % (r["title"], x["label"]), "url": x["url"], "source": "VNDB extlink"}
+                  for x in r["extlinks"]]
+        if not keys:
+            vndb_unmatched.append(links[0])
+        for k in keys:
+            for l in links:
+                if l["url"] not in {x["url"] for x in titles[k]["patches"]}:
+                    titles[k]["patches"].append(l)
+
+    # English builds already present in the collection itself
+    for t in titles.values():
+        for f in t["files"]:
+            if re.search(r"\(English|English (patch|version)", f):
+                t["patches"].append({"label": "Already in collection: " + f, "url": "",
+                                     "source": "collection"})
+
+    manual = load(p("research", "patches_manual.json"), {})
+    for key, links in manual.items():
+        if key.startswith("_"):
+            continue
+        if key in titles:
+            for l in links:
+                if l["url"] not in {x["url"] for x in titles[key]["patches"]}:
+                    titles[key]["patches"].append(l)
+        else:
+            print("manual key not in collection:", key)
+
+    out = sorted(titles.values(), key=lambda t: (t["publisher"].lower(), t["title"].lower()))
+    for t in out:
+        t["media"] = sorted(t["media"])
+        t["english"] = any(not l.get("wip") for l in t["patches"])
+        t["in_progress"] = any(l.get("wip") for l in t["patches"])
+    os.makedirs(p("index"), exist_ok=True)
+    n_wip = sum(t["in_progress"] and not t["english"] for t in out)
+    json.dump({"titles": out, "unmatched_translations": unmatched, "vndb_unmatched": vndb_unmatched},
+              open(p("index", "index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+    n_en = sum(t["english"] for t in out)
+    lines = ["# PC-98 collection index", "",
+             "%d titles from %d publisher archives in `C:\\PC98`. **%d have a known English patch** (marked EN); "
+             "%d more have a translation in progress." % (len(out), len({t['archive'] for t in out}), n_en, n_wip), "",
+             "Generated by `tools/build_index.py`; sources are listed in `index/SOURCES.md`.", "",
+             "## Titles with English patches", ""]
+    lines += ["| Publisher | Title | Media | Patches |", "|---|---|---|---|"]
+    for t in out:
+        if t["english"]:
+            lines.append("| %s | %s | %s | %s |" % (t["publisher"], t["title"], " ".join(t["media"]),
+                         "<br>".join(_md_link(l) for l in t["patches"])))
+    lines += ["", "## Translations in progress (no finished English patch)", "",
+              "| Publisher | Title | Media | Projects |", "|---|---|---|---|"]
+    for t in out:
+        if t["in_progress"] and not t["english"]:
+            lines.append("| %s | %s | %s | %s |" % (t["publisher"], t["title"], " ".join(t["media"]),
+                         "<br>".join(_md_link(l) for l in t["patches"])))
+    if unmatched:
+        lines += ["", "## Translations not yet matched to a collection title", ""]
+        lines += ["- [%s](https://archive.org/download/%s/%s)" % (f, IA_ITEM, urllib.parse.quote(f)) for f in unmatched]
+    lines += ["", "## Full collection", ""]
+    cur = None
+    for t in out:
+        if t["publisher"] != cur:
+            cur = t["publisher"]
+            lines += ["", "### %s (`%s`)" % (cur, t["archive"]), ""]
+        mark = " — **EN**" if t["english"] else (" — *translation in progress*" if t["in_progress"] else "")
+        lines.append("- %s [%s]%s" % (t["title"], " ".join(t["media"]), mark))
+    open(p("index", "INDEX.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    print("%d titles, %d with English patches, %d archive / %d VNDB entries unmatched"
+          % (len(out), n_en, len(unmatched), len(vndb_unmatched)))
+
+
+if __name__ == "__main__":
+    main()
