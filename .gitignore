@@ -1,0 +1,16 @@
+# Game data never goes in the repo
+*.hdi
+*.hdm
+*.fdi
+*.d88
+*.nfd
+*.zip
+*_files/
+# local working material
+ref/
+emu/
+inventory.json
+__pycache__/
+*.pyc
+games/*/strings_sample.json
+toolchain/
