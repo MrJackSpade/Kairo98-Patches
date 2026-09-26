@@ -59,8 +59,8 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Ayumi-chan Monogatari | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
 | ♥ Crescent Moon Girl | alice-sys (System 1, 2 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 330 of 3575) | works, memory-neutral | OK (see notes) |
 | ♥ D.P.S (Dream Program System) SG | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 46 of 10861) | works, memory-neutral | OK (see notes) |
-| ♥ D.P.S (Dream Program System) SG Set 2 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 48 of 16452) | works; **scenario floppies too full for 2.5x filler** (open decision, see notes) | — |
-| ♥ D.P.S (Dream Program System) SG Set 3 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 86 of 13306) | works; **scenario floppies too full for 2.5x filler** (open decision, see notes) | — |
+| ♥ D.P.S (Dream Program System) SG Set 2 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 48 of 16452) | works, memory-neutral; installs to a hard-disk image (floppies too small) | OK (see notes) |
+| ♥ D.P.S (Dream Program System) SG Set 3 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 86 of 13306) | works, memory-neutral; installs to a hard-disk image (floppies too small) | OK (see notes) |
 | ♥ D.P.S Zenbu (All Dream Program System) | alice-sys (System 3, 4 sets) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
 | ♥ Dalk | alice-sys (System 2) | extracted | **Ready to translate** (maintainer); 291 done | works, memory-neutral | OK (see notes) |
 | ♥ Dr. Stop! | alice-sys (System 2) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 102 of 7426) | works, memory-neutral | OK (see notes) |

@@ -57,7 +57,8 @@ def main():
     out_dir = os.path.join(here, "output")
     os.makedirs(out_dir, exist_ok=True)
     safe = "".join(c for c in title if c not in '<>:"/\\|?*')
-    ext = os.path.splitext(src)[1].lower() or ".hdi"   # floppy games stay floppy images
+    # floppy games stay floppy images, unless the game is installed to a hard disk ("hdd")
+    ext = ".hdi" if cfg.get("hdd") else (os.path.splitext(src)[1].lower() or ".hdi")
     dst = os.path.join(out_dir, "%s (English MTL)%s" % (safe, ext))
     rc = subprocess.call([sys.executable, os.path.join(here, "patch.py"), src, dst], cwd=here)
     if rc != 0:

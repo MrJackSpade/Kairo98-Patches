@@ -1,20 +1,29 @@
 {
  "_note": "Per-game remarks for tools/write_notes.py: extra 'not_handled' items, extra test rows, and free-text remarks.",
  "alice_no_yakata_3": {
-  "not_handled": ["The Windows version (SYSTEM3.EXE and its DLLs) on the same disk; the patch covers the DOS programs."]
+  "not_handled": [
+   "The Windows version (SYSTEM3.EXE and its DLLs) on the same disk; the patch covers the DOS programs."
+  ]
  },
  "dalk": {
-  "remarks": ["The 249 `name` entries, the verb/object captions, the engine strings and the title menu were translated by hand earlier (romanization of names without an official source, e.g. セイル = \"Seil\", is a guess)."]
+  "remarks": [
+   "The 249 `name` entries, the verb/object captions, the engine strings and the title menu were translated by hand earlier (romanization of names without an official source, e.g. セイル = \"Seil\", is a guess)."
+  ]
  },
  "dps_sg2": {
-  "tests": [["Stress test (--pseudo)", "**fails: the scenario floppies are full.** Each holds about 1 MB of CG next to the scenario; 2.5x filler needs up to 173 KB more than the disk has (72 KB after dropping the unused X68000/FM Towns/PC-88VA music files)"]],
-  "remarks": ["**Open decision:** the scenario floppies cannot hold a long English script. The game's own HDD install (AD.BAT / B_COPY.BAT / SET2.BAT) is the way around it: build a hard-disk image with the system files in `\\SG_SET2` and each scenario in `SNR1`-`SNR3`. That needs a bootable DOS HDI to start from, which these floppies don't include."]
+  "remarks": [
+   "**Output is a hard-disk image.** The scenario floppies hold about 1 MB of CG each and cannot fit a long English script, so `PATCH.BAT` installs the game the way its own HDD installer does (AD.BAT / B_COPY.BAT): system files in `\\SG_SET2`, each scenario in `\\SG_SET2\\SNR1`-`SNR3`, the installer's `SET2A.ORG` as `\\SET2.BAT`, scenario 1 as the default copy. The DOS setup comes from the collection's Super D.P.S hard-disk image (its own game is removed), so that image must be in the collection. It boots straight into scenario 1; to pick another, quit to DOS and type `SET2 2` or `SET2 3` (`SET2 ?` lists them)."
+  ]
  },
  "dps_sg3": {
-  "tests": [["Stress test (--pseudo)", "**fails: the scenario floppies are full** (same as SG Set 2)"]],
-  "remarks": ["**Open decision:** same as D.P.S SG Set 2: the scenario floppies cannot hold a long English script; the game's own HDD install layout needs a bootable DOS HDI to start from."]
+  "remarks": [
+   "**Output is a hard-disk image.** The scenario floppies hold about 1 MB of CG each and cannot fit a long English script, so `PATCH.BAT` installs the game the way its own HDD installer does (AD.BAT / B_COPY.BAT): system files in `\\SG_SET2`, each scenario in `\\SG_SET2\\SNR1`-`SNR3`, the installer's `SET2A.ORG` as `\\SET2.BAT`, scenario 1 as the default copy. The DOS setup comes from the collection's Super D.P.S hard-disk image (its own game is removed), so that image must be in the collection. It boots straight into scenario 1; to pick another, quit to DOS and type `SET2 2` or `SET2 3` (`SET2 ?` lists them).",
+   "The Set 3 system disk carries the Set 2 installer unchanged, so its batch file prints Set 2's scenario names; the scenarios themselves are Set 3's (1 Rabbit - P4P, 2 Shinkon-san Monogatari, 3 Sotsugyou)."
+  ]
  },
  "crescent_moon_girl": {
-  "remarks": ["The collection's `[FD]` set (three DOS floppies with ADV.COM) is the one patched; the `[FD hdb]` D88 dumps of the original disks are not used."]
+  "remarks": [
+   "The collection's `[FD]` set (three DOS floppies with ADV.COM) is the one patched; the `[FD hdb]` D88 dumps of the original disks are not used."
+  ]
  }
 }

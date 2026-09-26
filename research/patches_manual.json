@@ -251,7 +251,7 @@
  ],
  "AliceSoft.zip/D.P.S (Dream Program System) SG Set 2": [
   {
-   "label": "This repo: games/dps_sg2 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)",
+   "label": "This repo: games/dps_sg2 (patcher working, machine translation in progress; installs to a hard-disk image)",
    "url": "../games/dps_sg2/notes.md",
    "source": "this repo",
    "wip": true
@@ -259,7 +259,7 @@
  ],
  "AliceSoft.zip/D.P.S (Dream Program System) SG Set 3": [
   {
-   "label": "This repo: games/dps_sg3 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)",
+   "label": "This repo: games/dps_sg3 (patcher working, machine translation in progress; installs to a hard-disk image)",
    "url": "../games/dps_sg3/notes.md",
    "source": "this repo",
    "wip": true

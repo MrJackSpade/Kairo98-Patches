@@ -38,13 +38,14 @@ def kana_table(adv):
     return [bytes([t[i + 1], t[i]]).decode("cp932", "replace") for i in range(0, 128, 2)]
 
 
-def _games(here, img, src=None):
+def _games(here, img, src=None, cfg=None):
     """One Sys2Game per scenario set.  Without "sets": a single game.  With
     "sets" (e.g. Super D.P.S): the shared ADISK pages once, then each set's
     own disks, e.g. {"prefix": "s1:", "disks": {"2": "SDPS/SDPS0001/BDISK.DAT"}}.
     A set may name its own command table ("version"), e.g. a sub-game run by a
     second engine from its own scenario file."""
-    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    if cfg is None:
+        cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     vol = img.volumes[0]
     conf = dict(cfg.get("config", {}))
     conf.setdefault("encoding", cfg["encoding"])
@@ -200,12 +201,76 @@ def _strings_and_font(cfg, prog, texts, sizes, encode, label, report, room=0x100
     return out
 
 
+DOS_FILES = {"IO.SYS", "MSDOS.SYS", "COMMAND.COM", "CONFIG.SYS", "AUTOEXEC.BAT"}
+
+
+def _hdd_install(cfg, src):
+    """For floppy games whose scenario disks can't hold a long English script
+    (D.P.S SG Set 2/3): lay the game out on a DOS hard-disk image the way its
+    own HDD installer does, and return (image, config for patching there).
+
+    cfg["hdd"]: {"base": DOS hard-disk image (relative to the collection),
+    "remove": [base's own game files], "dir": install directory,
+    "rename": {system-disk file: root name} (e.g. the installer's SET2A.ORG
+    that becomes \\SET2.BAT), "run": the command AUTOEXEC.BAT ends with,
+    "order": set prefixes in the installer's scenario order (optional)}.
+    Each scenario set goes to <dir>/SNR<n> (its xDISK/xCG/xMUS files), and
+    set 1 is also the default copy in <dir>, as after installation."""
+    h = cfg["hdd"]
+    img = DiskImage(os.path.join(COLLECTION, h["base"]))
+    vol = img.volumes[0]
+    for name in h.get("remove", []):
+        vol.delete(name)
+    sysvol = DiskImage(src).volumes[0]
+    d = h["dir"]
+    vol.mkdir(d)
+    for e in sysvol.listdir(0):
+        if e["is_dir"] or e["name"].upper() in DOS_FILES:
+            continue
+        data = sysvol.read(e["name"])
+        vol.create(h.get("rename", {}).get(e["name"].upper(), d + "/" + e["name"]), data)
+    base = os.path.dirname(src)
+    sets = []
+    order = h.get("order")  # set prefixes in the installer's SNR order
+    ordered = sorted(cfg["sets"], key=lambda st: order.index(st["prefix"])) if order else cfg["sets"]
+    for n, st in enumerate(ordered, 1):
+        setvol = DiskImage(os.path.join(base, st["image"])).volumes[0]
+        snr = "%s/SNR%d" % (d, n)
+        vol.mkdir(snr)
+        letters = {os.path.basename(p)[0].upper() for p in st["disks"].values()}
+        for e in setvol.listdir(0):
+            nm = e["name"].upper()
+            if nm[0] in letters and nm[1:] in ("DISK.DAT", "CG.DAT", "MUS.DAT"):
+                vol.create(snr + "/" + nm, setvol.read(e["name"]))
+        sets.append({"prefix": st["prefix"], "disks": {k: "%s/%s" % (snr, os.path.basename(p).upper())
+                                                        for k, p in st["disks"].items()}})
+    auto = vol.read("AUTOEXEC.BAT").decode("cp932").split("\r\n")
+    gone = {os.path.splitext(r)[0].upper() for r in h.get("remove", [])}
+    auto = [h["run"] if ln.strip().upper() in gone else ln for ln in auto]
+    vol.write("AUTOEXEC.BAT", "\r\n".join(auto).encode("cp932"))
+    pcfg = dict(cfg, game_dir=d, sets=sets)
+    return img, pcfg
+
+
+def _hdd_default_set(cfg, vol):
+    """Refresh the default scenario copy in the install directory from SNR1."""
+    for p in cfg["sets"][0]["disks"].values():
+        snr = os.path.dirname(p)
+        for e in vol.listdir(vol.find(snr)["cluster"]):
+            vol.create(cfg["game_dir"] + "/" + e["name"], vol.read(snr + "/" + e["name"]))
+
+
 def run_patch(here, src, dst, mode="en"):
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
-    img = DiskImage(src)
-    cfg, vol, games = _games(here, img, src)
+    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    if cfg.get("hdd"):
+        img, pcfg = _hdd_install(cfg, src)
+        cfg, vol, games = _games(here, img, src, pcfg)
+    else:
+        img = DiskImage(src)
+        cfg, vol, games = _games(here, img, src)
     report = []
     for g in games:
         g.patch(doc, mode=mode, report=report)
@@ -224,6 +289,8 @@ def run_patch(here, src, dst, mode="en"):
                                           report, room=0x2000))
     vol.create((cfg["game_dir"] + "/" if cfg["game_dir"] else "") + "MTL_NOTE.TXT",
                MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))
+    if cfg.get("hdd"):
+        _hdd_default_set(cfg, vol)
     img.save(dst)
     stem, ext = os.path.splitext(dst)
     for g in games:  # scenario floppies patched alongside the main image

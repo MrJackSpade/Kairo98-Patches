@@ -51,7 +51,8 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 | Test | Result |
 |---|---|
-| Stress test (--pseudo) | **fails: the scenario floppies are full.** Each holds about 1 MB of CG next to the scenario; 2.5x filler needs up to 173 KB more than the disk has (72 KB after dropping the unused X68000/FM Towns/PC-88VA music files) |
+| Boot the hard-disk image, D.P.S menu, scenario 1 (Antique House) | OK: half-width letters in the text layer |
+| Scenarios 2 and 3 (SET2 2 / SET2 3) | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
 
-**Open decision:** the scenario floppies cannot hold a long English script. The game's own HDD install (AD.BAT / B_COPY.BAT / SET2.BAT) is the way around it: build a hard-disk image with the system files in `\SG_SET2` and each scenario in `SNR1`-`SNR3`. That needs a bootable DOS HDI to start from, which these floppies don't include.
+**Output is a hard-disk image.** The scenario floppies hold about 1 MB of CG each and cannot fit a long English script, so `PATCH.BAT` installs the game the way its own HDD installer does (AD.BAT / B_COPY.BAT): system files in `\SG_SET2`, each scenario in `\SG_SET2\SNR1`-`SNR3`, the installer's `SET2A.ORG` as `\SET2.BAT`, scenario 1 as the default copy. The DOS setup comes from the collection's Super D.P.S hard-disk image (its own game is removed), so that image must be in the collection. It boots straight into scenario 1; to pick another, quit to DOS and type `SET2 2` or `SET2 3` (`SET2 ?` lists them).

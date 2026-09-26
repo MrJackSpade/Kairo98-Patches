@@ -30,5 +30,17 @@
    },
    "image": "D.P.S (Dream Program System) SG Set 3 (Sotsugyou).hdm"
   }
- ]
+ ],
+ "hdd": {
+  "base": "Super D.P.S (Dream Program System)\\Super D.P.S (Dream Program System) [HD]\\Super D.P.S (Dream Program System).hdi",
+  "remove": [
+   "SDPS",
+   "SDPS.BAT"
+  ],
+  "dir": "SG_SET2",
+  "run": "SET2",
+  "rename": {
+   "SET2A.ORG": "SET2.BAT"
+  }
+ }
 }

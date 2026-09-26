@@ -191,8 +191,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Ayumi-chan Monogatari | [This repo: games/ayumi_chan (patcher working, machine translation in progress)](../games/ayumi_chan/notes.md) |
 | Alice Soft | Crescent Moon Girl | [This repo: games/crescent_moon_girl (patcher working, machine translation in progress)](../games/crescent_moon_girl/notes.md) |
 | Alice Soft | D.P.S (Dream Program System) SG | [This repo: games/dps_sg (patcher working, machine translation in progress)](../games/dps_sg/notes.md) |
-| Alice Soft | D.P.S (Dream Program System) SG Set 2 | [This repo: games/dps_sg2 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)](../games/dps_sg2/notes.md) |
-| Alice Soft | D.P.S (Dream Program System) SG Set 3 | [This repo: games/dps_sg3 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)](../games/dps_sg3/notes.md) |
+| Alice Soft | D.P.S (Dream Program System) SG Set 2 | [This repo: games/dps_sg2 (patcher working, machine translation in progress; installs to a hard-disk image)](../games/dps_sg2/notes.md) |
+| Alice Soft | D.P.S (Dream Program System) SG Set 3 | [This repo: games/dps_sg3 (patcher working, machine translation in progress; installs to a hard-disk image)](../games/dps_sg3/notes.md) |
 | Alice Soft | D.P.S Zenbu (All Dream Program System) | [This repo: games/dps_zenbu (patcher working, machine translation in progress)](../games/dps_zenbu/notes.md) |
 | Alice Soft | Dalk | [This repo: games/dalk (patcher working, machine translation in progress)](../games/dalk/notes.md) |
 | Alice Soft | Dr. Stop! | [This repo: games/dr_stop (patcher working, machine translation in progress)](../games/dr_stop/notes.md) |

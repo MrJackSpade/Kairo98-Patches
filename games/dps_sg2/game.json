@@ -30,5 +30,22 @@
    },
    "image": "D.P.S (Dream Program System) SG Set 2 [Set 1] (Ikenai Naika Kenshin Futatabi).hdm"
   }
- ]
+ ],
+ "hdd": {
+  "base": "Super D.P.S (Dream Program System)\\Super D.P.S (Dream Program System) [HD]\\Super D.P.S (Dream Program System).hdi",
+  "remove": [
+   "SDPS",
+   "SDPS.BAT"
+  ],
+  "dir": "SG_SET2",
+  "run": "SET2",
+  "rename": {
+   "SET2A.ORG": "SET2.BAT"
+  },
+  "order": [
+   "s2:",
+   "s1:",
+   "s3:"
+  ]
+ }
 }

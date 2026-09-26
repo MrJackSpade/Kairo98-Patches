@@ -142,10 +142,41 @@ class FatVolume:
         if slot is None:
             raise IOError("directory full")
         entry = bytearray(32)
-        entry[0:11] = (name.ljust(8) + ext.ljust(3)).encode("ascii")
+        entry[0:11] = name.encode("cp932").ljust(8) + ext.encode("cp932").ljust(3)
         entry[11] = 0x20  # archive
         self.buf[slot:slot + 32] = entry
         self.write(path, data)
+
+    def mkdir(self, path):
+        """Create a directory (8.3 name) in an existing directory."""
+        parts = [p for p in path.replace("\\", "/").split("/") if p]
+        parent = self.find("/".join(parts[:-1]))["cluster"] if len(parts) > 1 else 0
+        self.create(path, b"")
+        ent = self.find(path)
+        c = self._free_clusters(1)[0]
+        self._set(c, 0xFFF if self.fat12 else 0xFFFF)
+        o = self._coff(c)
+        self.buf[o:o + self.cluster_size] = bytes(self.cluster_size)
+        for i, (name, clus) in enumerate(((b".", c), (b"..", parent))):
+            d = bytearray(32)
+            d[0:11] = name.ljust(11)
+            d[11] = 0x10
+            struct.pack_into("<H", d, 26, clus)
+            self.buf[o + 32 * i:o + 32 * i + 32] = d
+        e = ent["entry_off"]
+        self.buf[e + 11] = 0x10
+        struct.pack_into("<H", self.buf, e + 26, c)
+        struct.pack_into("<I", self.buf, e + 28, 0)
+
+    def delete(self, path):
+        """Delete a file, or a directory with everything in it."""
+        ent = self.find(path)
+        if ent["is_dir"]:
+            for sub in self.listdir(ent["cluster"]):
+                self.delete(path.rstrip("/") + "/" + sub["name"])
+        for c in (self.chain(ent["cluster"]) if ent["cluster"] else []):
+            self._set(c, 0)
+        self.buf[ent["entry_off"]] = 0xE5
 
     def write(self, path, data):
         """Replace an existing file's contents, growing/shrinking its chain."""

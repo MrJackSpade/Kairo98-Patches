@@ -104,8 +104,8 @@
    "OK"
   ],
   [
-   "Large-font title line",
-   "first characters show garbled; check with real English"
+   "Title screen (large font), real English",
+   "OK"
   ]
  ],
  "intruder": [
@@ -168,6 +168,26 @@
   [
    "Title scene, message window, later scenes",
    "OK: half-width letters in the text layer"
+  ]
+ ],
+ "dps_sg2": [
+  [
+   "Boot the hard-disk image, D.P.S menu, scenario 1 (Antique House)",
+   "OK: half-width letters in the text layer"
+  ],
+  [
+   "Scenarios 2 and 3 (SET2 2 / SET2 3)",
+   "not yet seen"
+  ]
+ ],
+ "dps_sg3": [
+  [
+   "Boot the hard-disk image, D.P.S menu, scenario 1 (Rabbit - P4P)",
+   "OK"
+  ],
+  [
+   "Scenarios 2 and 3 (SET2 2 / SET2 3)",
+   "not yet seen"
   ]
  ]
 }
