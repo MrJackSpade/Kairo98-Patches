@@ -564,11 +564,11 @@
   ]
  },
  "AliceSoft.zip/Abunai Tengu Densetsu": {
-  "adult": false,
+  "adult": true,
   "hits": 2,
-  "strings": 4235,
+  "strings": 4244,
   "distinct_terms": 1,
-  "summary": "2 of 4235 strings match the sexual-vocabulary list (1 distinct terms)",
+  "summary": "manual: sexual action choice for the schoolgirl protagonist found while translating (first at u00099) (2026-09-26)",
   "adult_ids": [
    "u00099",
    "m00565"

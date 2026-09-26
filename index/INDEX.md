@@ -652,7 +652,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Alice Soft (`AliceSoft.zip`)
 
 - ♥ [Alice Soft materials] [extras]
-- Abunai Tengu Densetsu [FD extras] — *MTL (this repo)*
+- ♥ Abunai Tengu Densetsu [FD extras] — *MTL (this repo)*
 - ♥ Alice no Yakata [FD extras] — **EN**
 - ♥ Alice no Yakata II [FD HD extras] `alice-sys` — **EN**
 - ♥ Alice no Yakata III [CD FD HD] `alice-sys` — *MTL (this repo)*

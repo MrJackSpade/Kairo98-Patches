@@ -1,4 +1,4 @@
-# Abunai Tengu Densetsu (Alice Soft)
+# ♥ Abunai Tengu Densetsu (Alice Soft)
 
 > This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
 
@@ -38,7 +38,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 4244 strings: 9 exe, 256 menu, 3979 msg.
 
-No ♥ (2 of 4235 strings match the sexual-vocabulary list (1 distinct terms)). Claude translates it; 0 of 4244 strings done.
+♥ by the safety valve: sexual action choice for the schoolgirl protagonist found while translating (first at u00099) (2026-09-26). Claude translated 98 strings before that point; the rest is the maintainer's to translate.
 
 ## Limits
 

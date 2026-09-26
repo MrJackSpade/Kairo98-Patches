@@ -75,4 +75,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Super D.P.S (Dream Program System) | alice-sys (System 2, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 176 of 9508) | works, memory-neutral | OK (see notes) |
 | ♥ Toushin Toshi II - Soshite, Sorekara | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 1799 of 5485) | works, memory-neutral | OK (see notes) |
 | ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
-| Abunai Tengu Densetsu | alice-sys (System 1 scenario, N88-BASIC engine) | extracted | Claude (translation in progress) | works, memory-neutral; adds cylinders 77-81 to the disks for the longer script | OK (see notes) |
+| ♥ Abunai Tengu Densetsu | alice-sys (System 1 scenario, N88-BASIC engine) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 98 of 4244) | works, memory-neutral; adds cylinders 77-81 to the disks for the longer script | OK (see notes) |
