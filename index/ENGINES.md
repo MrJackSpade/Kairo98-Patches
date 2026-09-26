@@ -1,11 +1,11 @@
 # Engine survey
 
-4086 titles classified from the files inside their disk images (1175 floppies opened directly). Families are ranked by how many titles without an English patch they cover.
+4086 titles classified from the files inside their disk images (2361 floppies opened directly). Families are ranked by how many titles without an English patch they cover.
 
 | Engine | Titles | Have English | Untranslated | Notes |
 |---|---|---|---|---|
-| Not yet identified (`unknown`) | 2900 | 85 | 2815 | files listed, no rule matched; per-publisher engines |
-| No readable file listing (`unlisted`) | 536 | 14 | 522 | copy-protected / non-DOS floppies, CD-only titles |
+| Not yet identified (`unknown`) | 2919 | 86 | 2833 | files listed, no rule matched; per-publisher engines |
+| No readable file listing (`unlisted`) | 517 | 13 | 504 | copy-protected / non-DOS floppies, CD-only titles |
 | RPG Tsukuru Dante98 (`dante98`) | 133 | 2 | 131 | RPG.EXE + PLAYER/ENEMY/ITEM.DAT (contest RPGs) |
 | Cocktail Soft / Fairytale ADV engine (`adv98v`) | 92 | 5 | 87 | *.MES + *.TCM/*.GPC/*.USO, ADV98V.OVL; cracked by existing patches (Dead of the Brain, Dengeki Nurse, X-Girl) |
 | NA.COM engine (Great / KSS) (`great-na`) | 56 | 0 | 56 | NA.COM + *.O + TONES.DTA |

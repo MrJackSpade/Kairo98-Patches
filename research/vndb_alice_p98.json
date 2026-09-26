@@ -1,0 +1,8580 @@
+[
+ {
+  "alttitle": "闘神都市",
+  "description": "Custom, a swordsman from a small village, is on a journey when he comes across a carriage being attacked. He defeats the attackers, rescuing the lovely maiden Kumiko. Kumiko was on her way to Toushin Toshi (Combat God City) to search for her father. She suspects her father is in the Combat God Mansion, residence of the annual combat tournament's champion. In order to get in, she needs to partner up with someone who can win the tournament that year, and Custom agrees that she can be his partner. They head to Combat God City to enter the tournament.\n\nAlthough victory in each round of the tournament earns one gold, special medicine, and other wonderful prizes, perhaps the most interesting prize is the opponent's partner. Each participant is required to have a beautiful female partner, and if the participant loses in combat, the victor gets his or her partner to do with as he/she pleases for one night. Female warriors in the tournament can choose to act as their own partner, as do the ninja Yayoi and swordswoman Morris.\n\nThis monster-filled underground maze is located on the outskirts of Combat God City. One of the requirements to participate in the tournament is the retrieval of a Hero Crest from here. While the Hero Crests are on the first level of the labyrinth, there are several more floors and surprises waiting deeper inside.\n\n[Edited from [url=http://alicesoft.wikia.com/wiki/Toushin_Toshi]AliceSoft Wikia[/url]]",
+  "id": "v888",
+  "length_minutes": 462,
+  "rating": 59.8,
+  "released": "1990-12-15",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g207",
+    "name": "Attempted Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g219",
+    "name": "Sexual Slavery",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g220",
+    "name": "Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g274",
+    "name": "Dungeon Crawling Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g392",
+    "name": "Sex Involving Prostitution",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g438",
+    "name": "Deities",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g468",
+    "name": "Tournament",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g476",
+    "name": "Mage Protagonist",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g570",
+    "name": "Duel",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g580",
+    "name": "Breaking the Fourth Wall",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g685",
+    "name": "Magic School",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g735",
+    "name": "Sex in Public Places",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1420",
+    "name": "Monster Girl Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1640",
+    "name": "Monster Rape",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g1822",
+    "name": "Sexual Slavery (Non-consensual)",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2064",
+    "name": "Torture Chamber",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g2099",
+    "name": "Unlockable Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2149",
+    "name": "Loli Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2344",
+    "name": "Capturable Characters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2374",
+    "name": "Arena",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3071",
+    "name": "Stuck in Meatwall",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Toushin Toshi",
+  "votecount": 350
+ },
+ {
+  "alttitle": "闘神都市II",
+  "description": "You've been in love with your old childhood friend Hazuki ever since you can remember. You've become a couple and all seems perfect...except that she is the daughter of the person you've been studying swordsmanship under. And the fact that you have been stuck at Level 4 for the longest time makes winning her hand a bit out of your reach...\n\nThen comes the Toushin tournament. A fighting tourney that happens every year, the best of fighters enter to win the coveted Toushin title (Toushin literally means God of Battle). Each contestant must come in with a female partner and if the contestant loses the battle, their partner becomes the property of the winner for the rest of the day, free to do whatever he or she wishes to do to them.\n\nHazuki, after getting the promise from her father to allow her marriage to you if she goes as the partner of the strongest warrior of all his pupils, she heads out to the Tournament...but she in fact agreed to a promise waiting to the broken. Hazuki's father, determined to have a strong warrior carry on the dojo, wants only the winner of the tournament to marry her daughter...leaving you with only one option: To win the tournament.\n\nAs you fight, a number of mysteries arise. What is the reason the Toushin Tournament is held every year? Why did a person tell you to not win the tournament? Why is it that none of the previous winners ever leave the city? \n\n[From [url=http://www.rpgfan.com/reviews/toushintoshi2/Toushin_Toshi_2.html]RPGFan Reviews[/url]]",
+  "id": "v889",
+  "length_minutes": 1680,
+  "rating": 76.4,
+  "released": "1994-12-10",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g12",
+    "name": "Action",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 1.64999997615814,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g65",
+    "name": "Fighting Heroine",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g111",
+    "name": "Oneesan-type Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g141",
+    "name": "Past",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g178",
+    "name": "Tentacle Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g203",
+    "name": "Nameable Protagonist",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g259",
+    "name": "Fictional World",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g261",
+    "name": "Reverse Rape",
+    "rating": 1.66666662693024,
+    "spoiler": 1
+   },
+   {
+    "category": "tech",
+    "id": "g274",
+    "name": "Dungeon Crawling Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g356",
+    "name": "Parody",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g358",
+    "name": "Group Sex of One Female and Several Males",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g392",
+    "name": "Sex Involving Prostitution",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g468",
+    "name": "Tournament",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g480",
+    "name": "Angels",
+    "rating": 2.33333325386047,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g511",
+    "name": "High Amounts of Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g513",
+    "name": "Netorare",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g560",
+    "name": "Dragon Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g606",
+    "name": "Branching Plot",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g623",
+    "name": "Lesbian Rape",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g662",
+    "name": "Blackmail",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "ero",
+    "id": "g718",
+    "name": "Female Domination",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g806",
+    "name": "Underworld",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g891",
+    "name": "Fighting Hero",
+    "rating": 0.466666668653488,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g942",
+    "name": "Torture",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g993",
+    "name": "Maid Support Character",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g994",
+    "name": "Medieval Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1041",
+    "name": "Possession",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1252",
+    "name": "Betrayal",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g1265",
+    "name": "Sacrifice",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1323",
+    "name": "Gang Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2064",
+    "name": "Torture Chamber",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2320",
+    "name": "Masturbation in front of an Audience",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2344",
+    "name": "Capturable Characters",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2507",
+    "name": "Rape by Possession",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g2905",
+    "name": "Whipping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3039",
+    "name": "Rope Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3138",
+    "name": "Single Boobjob",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3204",
+    "name": "Heroine with Big Breasts",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3376",
+    "name": "Vaginal Object Insertion",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Toushin Toshi II",
+  "votecount": 308
+ },
+ {
+  "alttitle": "Rance -光をもとめて-",
+  "description": "The story is pretty simple - Hikari (\"Light\"), the red haired girl that you see in an opening clip, has been kidnapped. And Rance gets the mission from his boss (the bald guy) to investigate the case. \n\nRance is something like a detective in this story. This also turns the whole game more into a detective-like exploring than into rpg or more less rpg/strategy to which the gamers of the latter games of the series are used to. Rance isn’t alone in his job as he has a helper - 16 year old Sill. She's actually Rance's slave. She was from a rich family but later got kidnapped by some bandit and then auctioned as a slave. The one who bought her was of course Rance.\n\nNow with her help you (Rance) have to solve this mystery, bring Hikari back and pay back to the ones at fault. \n\n[From the [url=http://alicesoft.wikia.com/wiki/Rance_1]AliceSoft Wikia[/url]]",
+  "id": "v1414",
+  "length_minutes": 225,
+  "rating": 54.5,
+  "released": "1989-07-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2.21428561210632,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.64285707473755,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2.78571438789368,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g65",
+    "name": "Fighting Heroine",
+    "rating": 1.36363637447357,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 0.899999976158142,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g112",
+    "name": "Maid Heroine",
+    "rating": 1.25,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 2.85714292526245,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g120",
+    "name": "Kunoichi Heroine",
+    "rating": 1.35714280605316,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.85714292526245,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g138",
+    "name": "Mage Heroine",
+    "rating": 2.41666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g139",
+    "name": "Fighting Protagonist",
+    "rating": 2.92857146263123,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 2.78571438789368,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g157",
+    "name": "Violence",
+    "rating": 0.333333343267441,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g202",
+    "name": "Fictional Beings",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g208",
+    "name": "Spontaneous Sex Scenes",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g220",
+    "name": "Bondage",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g257",
+    "name": "Timid Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g258",
+    "name": "Shy Heroine",
+    "rating": 1.58333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g294",
+    "name": "Princess Heroine",
+    "rating": 2.1538462638855,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2.85714292526245,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 2.28571438789368,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g311",
+    "name": "Castle",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g323",
+    "name": "Detective Work",
+    "rating": 1.83333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 2.69230771064758,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g344",
+    "name": "Ghost",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.42857146263123,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 2.83333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g490",
+    "name": "Lesbian Heroine",
+    "rating": 1.60000002384186,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.76923084259033,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g580",
+    "name": "Breaking the Fourth Wall",
+    "rating": 1.69230771064758,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 2.46153855323792,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g670",
+    "name": "Protagonist with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g718",
+    "name": "Female Domination",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g735",
+    "name": "Sex in Public Places",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g795",
+    "name": "No Event CGs",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 2.83333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g994",
+    "name": "Medieval Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1102",
+    "name": "Mercenary Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1122",
+    "name": "Sexual Scenes with Gameplay",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1347",
+    "name": "Kidnapping",
+    "rating": 1.66666662693024,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1463",
+    "name": "Clothed Male Naked Female",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1570",
+    "name": "Impulsive Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1650",
+    "name": "Bisexual Heroine",
+    "rating": 1.57142853736877,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1669",
+    "name": "Wooden Horse",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1735",
+    "name": "Standing Sex",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1807",
+    "name": "Slave Heroine",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1822",
+    "name": "Sexual Slavery (Non-consensual)",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1823",
+    "name": "Sexual Slavery (Choukyou Variation)",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2083",
+    "name": "Disappearance",
+    "rating": 0.833333313465118,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2153",
+    "name": "No Gallery",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2223",
+    "name": "No Romance Plot",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2269",
+    "name": "Playboy Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2651",
+    "name": "No Quick Save/Load",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3259",
+    "name": "Promiscuous Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1826",
+    "name": "Black Comedy",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance -Hikari o Motomete-",
+  "votecount": 1167
+ },
+ {
+  "alttitle": "ランスII　－反逆の少女たち－",
+  "description": "Ten years ago in the town of Custom, four young girls were appointed as disciples to old mage Ragithis. They were to be raised as mages and then to work as town's guardians. But after the ten years of training due to unknown reason girls rebelled against Ragithis and killed him. During the harsh magic battle a whole town were entombed in the underground and a barrier spell was put on town preventing everyone from going out.\n\nThis is when Rance appears with Sill on his side, and taking a job of defeating magician maidens and saving the town. But after some research he finds out that actual evil guy was Ragithis himself, who put four magical rings on four maidens. That rings are giving a great boost of magical power to its bearers, but also able to steal magic power from virgin sorceresses and after collecting magic power of 40 maidens anyone could use these rings to obtain unlimited power. The leader of girls, Masou Shizuka, figured out Ragithis's plan and rebelled against him but it was too late - cursed rings could not be removed and the curse started to dive maidens crazy. Now they are sheltered in the labirinth beneath the town abducting young girls from the town and killing everyone who tried to go into the labirinth and stop them. It seems that the only way to release them from the curse of the rings is to steal their virginity from them, and the only man up to this job is Rance. \n\n[Taken from the [url=http://alicesoft.wikia.com/wiki/Rance_2]AliceSoft Wikia[/url]]",
+  "id": "v1427",
+  "length_minutes": 412,
+  "rating": 62,
+  "released": "1990-05-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2.81818175315857,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.90909099578857,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2.81818175315857,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g65",
+    "name": "Fighting Heroine",
+    "rating": 2.90000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2.88888883590698,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g108",
+    "name": "Genius Heroine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.90909099578857,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g138",
+    "name": "Mage Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g139",
+    "name": "Fighting Protagonist",
+    "rating": 2.90909099578857,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 2.90000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g163",
+    "name": "Bullying",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g178",
+    "name": "Tentacle Rape",
+    "rating": 1.33333337306976,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g194",
+    "name": "Classic Tsundere Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g202",
+    "name": "Fictional Beings",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g205",
+    "name": "Mummy",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g246",
+    "name": "Brief Branches Only",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g258",
+    "name": "Shy Heroine",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g274",
+    "name": "Dungeon Crawling Game",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g292",
+    "name": "Female Protagonist for a Short Time",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2.90000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 2.27272725105286,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 2.625,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g334",
+    "name": "Combat Capable Friends",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g344",
+    "name": "Ghost",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g357",
+    "name": "Group Sex of One Male and Several Females",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g387",
+    "name": "Prostitution",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g434",
+    "name": "Harem Ending",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g488",
+    "name": "Witch Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g491",
+    "name": "Undead",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g498",
+    "name": "Nympho Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.90909099578857,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g511",
+    "name": "High Amounts of Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g562",
+    "name": "Constructs",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g567",
+    "name": "Sword Wielding Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g574",
+    "name": "Unavoidable Heroine Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 2.77777767181396,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g623",
+    "name": "Lesbian Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g653",
+    "name": "Priest Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2.25,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g857",
+    "name": "Heroine with Visible Panties",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g891",
+    "name": "Fighting Hero",
+    "rating": 0.666666686534882,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g942",
+    "name": "Torture",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g954",
+    "name": "Science Fantasy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g958",
+    "name": "Knight Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g967",
+    "name": "Popular Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 2.90000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g988",
+    "name": "Sex With Monsters",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g994",
+    "name": "Medieval Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1017",
+    "name": "Unavoidable Harem Ending",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g1041",
+    "name": "Possession",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g1095",
+    "name": "Tribadism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1102",
+    "name": "Mercenary Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g1252",
+    "name": "Betrayal",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1273",
+    "name": "Macho Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1283",
+    "name": "Voyeurism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1393",
+    "name": "Outdoor Sex",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1400",
+    "name": "Clothing Damage",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1431",
+    "name": "Colored Texts",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1445",
+    "name": "Comedic Sex Scenes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1505",
+    "name": "Hero with Armor",
+    "rating": 1.35000002384186,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1650",
+    "name": "Bisexual Heroine",
+    "rating": 1.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1667",
+    "name": "Promiscuity",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1734",
+    "name": "Mirror Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1737",
+    "name": "Spoons",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1807",
+    "name": "Slave Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1824",
+    "name": "Sex in Front of an Audience",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2064",
+    "name": "Torture Chamber",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2083",
+    "name": "Disappearance",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2153",
+    "name": "No Gallery",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2238",
+    "name": "Dirty Talk",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2252",
+    "name": "Perverted Heroine",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2269",
+    "name": "Playboy Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2451",
+    "name": "Shopkeeper Heroine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2905",
+    "name": "Whipping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2921",
+    "name": "Side Character Having Sex with Others",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3039",
+    "name": "Rope Bondage",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3061",
+    "name": "Church Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3128",
+    "name": "High Fantasy",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3148",
+    "name": "Vaginal Masturbation",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3259",
+    "name": "Promiscuous Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1029",
+    "name": "Soldier Hero",
+    "rating": 0.333333343267441,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance II -Hangyaku no Shoujo-tachi-",
+  "votecount": 1017
+ },
+ {
+  "alttitle": "宇宙快盗ファニーBee",
+  "description": "In the future, space travel has become an inseparable part of human civilization. Humanity spread all over the Milky Way. Most of the problems concerning war, ecological disasters, and others were successfully solved. Human beings have entered an era of peace. But human nature never changes, and most other aspects of human culture haven't either. Since the galaxy became a huge urban playground, a new type of criminals have emerged - interstellar thieves. Piloting their own space ship, they terrorize the galaxy with their cleverly planned tricks. Particularly notorious is a duo of two young and pretty girls, Sati and Shiori... which are the two protagonists of the game.\n\n[From [url=http://www.mobygames.com/game/pc98/uch-kait-funny-bee]Moby Games[/url]]",
+  "id": "v1723",
+  "length_minutes": 455,
+  "rating": 71,
+  "released": "1994-08-10",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g53",
+    "name": "Space",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g83",
+    "name": "Male on Male Sex",
+    "rating": 1,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g105",
+    "name": "Science Fiction",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g139",
+    "name": "Fighting Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g575",
+    "name": "Non-heroine Only Unavoidable Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g614",
+    "name": "Foolish Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g791",
+    "name": "No Character Sprites",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g938",
+    "name": "Starship Combat",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1570",
+    "name": "Impulsive Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2346",
+    "name": "Thief Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2484",
+    "name": "Body Food",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2781",
+    "name": "Phantom Thieves",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3212",
+    "name": "Flat Tints Only",
+    "rating": 3,
+    "spoiler": 0
+   }
+  ],
+  "title": "Uchuu Kaitou Funny Bee",
+  "votecount": 13
+ },
+ {
+  "alttitle": null,
+  "description": "A war between the god Matis and a group of rival goddesses called Mira leaves Matis sealed away in a deserted temple. To break the seal a young monk and a group of female adventurers will have to get to the top of a mountain and seal away the goddesses of Mira in the process.",
+  "id": "v1798",
+  "length_minutes": 1928,
+  "rating": 59,
+  "released": "1992-12-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g65",
+    "name": "Fighting Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g111",
+    "name": "Oneesan-type Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g258",
+    "name": "Shy Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g263",
+    "name": "Leader Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g331",
+    "name": "Catgirl Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g339",
+    "name": "SRPG",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g438",
+    "name": "Deities",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g462",
+    "name": "Heroine with Eyepatch",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g522",
+    "name": "Bookworm Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g705",
+    "name": "Priest(ess) Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g875",
+    "name": "Twin Tail Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1695",
+    "name": "Unlockable Bonus Content",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "DALK",
+  "votecount": 19
+ },
+ {
+  "alttitle": null,
+  "description": "In \"Dr. Stop\", you control Takumi, who works in a hospital and whose mind is mostly occupied with female patients, most of whom are young and pretty. One day, during a visit to a patient, an explosion occurs. Who caused it - one of the patients or an outsider, or maybe a staff member? It's up to you to investigate... and to win the affection of your lovely patients.\n\n[From [url=http://www.mobygames.com/game/pc98/dr-stop]Moby Games[/url]]",
+  "id": "v1828",
+  "length_minutes": 270,
+  "rating": 60,
+  "released": "1992-04-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g19",
+    "name": "Mystery",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g43",
+    "name": "NVL",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g196",
+    "name": "Sickly Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g240",
+    "name": "Homunculus Heroine",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g270",
+    "name": "Hospital",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g581",
+    "name": "Medical Doctor Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g598",
+    "name": "Episodic Story",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g615",
+    "name": "Perverted Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g635",
+    "name": "Nurse Heroine",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g826",
+    "name": "Genetic Research",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g1453",
+    "name": "Attempted Suicide",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1480",
+    "name": "Few Event CGs",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2147",
+    "name": "Unavoidable Heroine Death",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "tech",
+    "id": "g1526",
+    "name": "Title Parody",
+    "rating": 1,
+    "spoiler": 0
+   }
+  ],
+  "title": "Dr.STOP!",
+  "votecount": 11
+ },
+ {
+  "alttitle": "ランス III　－リーザス陥落－",
+  "description": "Despite previous failed invasions, the nation of Helman allies with demons and successfully captures Leazas Castle, compelling Princess Lia to seek help from the adventurer Rance. To confront this new threat, Rance must gather three sacred royal treasures and revive the legendary magic sword Chaos. However, having previously sold some of these treasures for money, he embarks on a quest to retrieve them, which involves rescuing a girl named Laura from a monster called Liss.\n\nDuring his journey, Rance encounters fellow adventurers and faces various challenges that test his abilities and resolve. He joins forces with Maria, leader of the Leazas Liberation Army, to rescue citizens and mount a resistance against the invaders. Meanwhile, internal strife within Helman complicates the conflict, as Commander Patton grapples with political interference and suppressed reinforcements.\n\nAs battles rage and alliances shift, Rance and his companions strive to reclaim Leazas and overcome the demonic forces.\n\n[Based on Wikipedia]",
+  "id": "v1829",
+  "length_minutes": 810,
+  "rating": 65.4,
+  "released": "1991-10-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g46",
+    "name": "Military",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1.39999997615814,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g108",
+    "name": "Genius Heroine",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 2.79999995231628,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g118",
+    "name": "Knight Heroine",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g120",
+    "name": "Kunoichi Heroine",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g138",
+    "name": "Mage Heroine",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g139",
+    "name": "Fighting Protagonist",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g157",
+    "name": "Violence",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g159",
+    "name": "Descriptions of Violence",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g163",
+    "name": "Bullying",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g194",
+    "name": "Classic Tsundere Heroine",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g202",
+    "name": "Fictional Beings",
+    "rating": 2.59999990463257,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g204",
+    "name": "Werewolf",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g208",
+    "name": "Spontaneous Sex Scenes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g220",
+    "name": "Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g223",
+    "name": "Religious Organization",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g259",
+    "name": "Fictional World",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g263",
+    "name": "Leader Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g294",
+    "name": "Princess Heroine",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2.59999990463257,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g334",
+    "name": "Combat Capable Friends",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g339",
+    "name": "SRPG",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g354",
+    "name": "Villainous Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g355",
+    "name": "Brief NVL Scenes",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g357",
+    "name": "Group Sex of One Male and Several Females",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g387",
+    "name": "Prostitution",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g456",
+    "name": "War",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g488",
+    "name": "Witch Heroine",
+    "rating": 0.400000005960464,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g498",
+    "name": "Nympho Heroine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.79999995231628,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g511",
+    "name": "High Amounts of Rape",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g516",
+    "name": "Sex Involving Drugs",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g567",
+    "name": "Sword Wielding Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g623",
+    "name": "Lesbian Rape",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g670",
+    "name": "Protagonist with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g692",
+    "name": "Proactive Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g718",
+    "name": "Female Domination",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g723",
+    "name": "Strap-on Dildos",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g777",
+    "name": "Tactician Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g792",
+    "name": "Dark Skinned Characters",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g862",
+    "name": "Heroine with Armor",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g870",
+    "name": "Master and Servant",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g894",
+    "name": "Sixty-nine",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g937",
+    "name": "Mind Control",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g942",
+    "name": "Torture",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g953",
+    "name": "Genre Savvy Protagonist",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g955",
+    "name": "Rebellion",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g961",
+    "name": "Heroine with Eye Covering Hairstyle",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g988",
+    "name": "Sex With Monsters",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g994",
+    "name": "Medieval Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1059",
+    "name": "Open Ending(s)",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g1102",
+    "name": "Mercenary Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1104",
+    "name": "Nun Support Character",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1138",
+    "name": "Naked Heroine with Apron",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1190",
+    "name": "Cunnilingus",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1282",
+    "name": "Tsundere Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1292",
+    "name": "Enema",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1335",
+    "name": "Central Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1343",
+    "name": "Homicide",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1391",
+    "name": "Rape by Deception",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1400",
+    "name": "Clothing Damage",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1417",
+    "name": "Quickie",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1420",
+    "name": "Monster Girl Support Character",
+    "rating": 1.25,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1463",
+    "name": "Clothed Male Naked Female",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1466",
+    "name": "Inventor Heroine",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1557",
+    "name": "Sadist Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1566",
+    "name": "Talking Object",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1570",
+    "name": "Impulsive Protagonist",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1582",
+    "name": "Reverse Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1640",
+    "name": "Monster Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1644",
+    "name": "Consensual Sex With Monsters",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1650",
+    "name": "Bisexual Heroine",
+    "rating": 1.60000002384186,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1667",
+    "name": "Promiscuity",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1781",
+    "name": "Consumption of Pornography",
+    "rating": 1.75,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1782",
+    "name": "No Skip Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1807",
+    "name": "Slave Heroine",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2117",
+    "name": "Sexual Fantasizing",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2138",
+    "name": "Quickie Fix Position",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2225",
+    "name": "Specula (Sexual)",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2238",
+    "name": "Dirty Talk",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2252",
+    "name": "Perverted Heroine",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2269",
+    "name": "Playboy Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2645",
+    "name": "Sensual Biting",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2651",
+    "name": "No Quick Save/Load",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2709",
+    "name": "Muscular Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2905",
+    "name": "Whipping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2920",
+    "name": "Heroine Having Sex with Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2921",
+    "name": "Side Character Having Sex with Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2945",
+    "name": "Sex Swing",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2979",
+    "name": "Braless Heroine",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3128",
+    "name": "High Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3147",
+    "name": "Single Blowjob",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3148",
+    "name": "Vaginal Masturbation",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3150",
+    "name": "Pissing",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3153",
+    "name": "Masturbation Involving Food",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3375",
+    "name": "Anal Object Insertion",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g434",
+    "name": "Harem Ending",
+    "rating": 1,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance III - Leazas Kanraku -",
+  "votecount": 872
+ },
+ {
+  "alttitle": "あゆみちゃん物語",
+  "description": "The premise of Ayumi-chan Monogatari is rather simple: the protagonist, a young boy named Kouichi, is in love with the most beautiful girl in his school, Ayumi Kawai. One day she admits that she also loves him, and they begin a relationship.",
+  "id": "v1929",
+  "length_minutes": 255,
+  "rating": 58.9,
+  "released": "1992-12-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g47",
+    "name": "School",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g203",
+    "name": "Nameable Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g214",
+    "name": "Nukige",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g268",
+    "name": "Only a Single Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g373",
+    "name": "Student Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g735",
+    "name": "Sex in Public Places",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1184",
+    "name": "High School Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1333",
+    "name": "Protagonist's Girlfriend as a Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Ayumi-chan Monogatari",
+  "votecount": 15
+ },
+ {
+  "alttitle": "Ｏｎｌｙ Ｙｏｕ　－世紀末のジュリエット達－",
+  "description": "A Japanese teenager named Yuuji is interested in martial arts, and has to take care of his little sister. Their older brother Yuuichi had gone abroad; just when he announced that he was coming back he disappeared under mysterious circumstances. Yuuji and his friends eventually find out that an international supernatural criminal syndicate is in cohorts with an even darker power that is about to bring the apocalypse onto Earth.\n\n[Edited from [url=http://www.mobygames.com/game/pc98/only-you-seikimatsu-no-juliet-tachi]Moby Games[/url]]",
+  "id": "v2003",
+  "length_minutes": 1078,
+  "rating": 70.4,
+  "released": "1996-01-01",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g47",
+    "name": "School",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g115",
+    "name": "Miko Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g148",
+    "name": "Multiple Endings",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g203",
+    "name": "Nameable Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g223",
+    "name": "Religious Organization",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g265",
+    "name": "Blind Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g373",
+    "name": "Student Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g387",
+    "name": "Prostitution",
+    "rating": 1,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g444",
+    "name": "Revenge",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g572",
+    "name": "Martial Artist Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g573",
+    "name": "Martial Artist Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g606",
+    "name": "Branching Plot",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g672",
+    "name": "Bad Ending(s)",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g775",
+    "name": "Orphan Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1251",
+    "name": "More Than Seven Endings",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1284",
+    "name": "Relationship Chart",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1344",
+    "name": "Poor Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1347",
+    "name": "Kidnapping",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1705",
+    "name": "Uncle/Niece Incest",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g358",
+    "name": "Group Sex of One Female and Several Males",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Only You -Seikimatsu no Juliette-tachi-",
+  "votecount": 17
+ },
+ {
+  "alttitle": "ランス IV　－教団の遺産－",
+  "description": "Following the events of Rance III, Rance is sent to Ylapu, a giant island floating above Leazas. There, Rance must find a way to return to The Continent's surface, while being hindered by agents from Helman who are attempting to revive and control the Wargod Upsilon, an ancient superweapon created by the Holy Magic Sect.\n\n[Edited from [url=https://en.wikipedia.org/wiki/Rance_(series)#Rance_IV:_Legacy_of_the_Sect]Wikipedia[/url]]",
+  "id": "v2040",
+  "length_minutes": 1020,
+  "rating": 62.2,
+  "released": "1993-12-11",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 1.73333334922791,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.42857146263123,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2.85714292526245,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g41",
+    "name": "Turn-Based Strategy",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g108",
+    "name": "Genius Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g118",
+    "name": "Knight Heroine",
+    "rating": 1.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g120",
+    "name": "Kunoichi Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g138",
+    "name": "Mage Heroine",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g157",
+    "name": "Violence",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g194",
+    "name": "Classic Tsundere Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g195",
+    "name": "Deredere Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g202",
+    "name": "Fictional Beings",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g207",
+    "name": "Attempted Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g208",
+    "name": "Spontaneous Sex Scenes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g219",
+    "name": "Sexual Slavery",
+    "rating": 2.25,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g292",
+    "name": "Female Protagonist for a Short Time",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 2.16666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g327",
+    "name": "Past Setting in a Fictional World",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g334",
+    "name": "Combat Capable Friends",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g354",
+    "name": "Villainous Protagonist",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g357",
+    "name": "Group Sex of One Male and Several Females",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g438",
+    "name": "Deities",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g482",
+    "name": "Kemonomimi Support Character",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g488",
+    "name": "Witch Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.59999990463257,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g511",
+    "name": "High Amounts of Rape",
+    "rating": 2.16666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g516",
+    "name": "Sex Involving Drugs",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g615",
+    "name": "Perverted Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g633",
+    "name": "Other Perspectives",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g670",
+    "name": "Protagonist with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g721",
+    "name": "Vibrators",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g727",
+    "name": "Hidden Vibrator",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g732",
+    "name": "Remote-controlled Vibrator",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g735",
+    "name": "Sex in Public Places",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g844",
+    "name": "Exhibitionism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g862",
+    "name": "Heroine with Armor",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g884",
+    "name": "Hero with a Sword",
+    "rating": 0.466666668653488,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g891",
+    "name": "Fighting Hero",
+    "rating": 0.600000023841858,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g894",
+    "name": "Sixty-nine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g937",
+    "name": "Mind Control",
+    "rating": 1.5,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g953",
+    "name": "Genre Savvy Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g954",
+    "name": "Science Fantasy",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g988",
+    "name": "Sex With Monsters",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g994",
+    "name": "Medieval Fantasy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1054",
+    "name": "Mad Scientist Support Character",
+    "rating": 0.666666686534882,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1095",
+    "name": "Tribadism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1104",
+    "name": "Nun Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 1.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1171",
+    "name": "Erotic Spanking",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1190",
+    "name": "Cunnilingus",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1273",
+    "name": "Macho Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1307",
+    "name": "Body Writing",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1336",
+    "name": "Ear-Cleaning",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1347",
+    "name": "Kidnapping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1378",
+    "name": "Panchira",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1391",
+    "name": "Rape by Deception",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1393",
+    "name": "Outdoor Sex",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1400",
+    "name": "Clothing Damage",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1437",
+    "name": "Few Choices",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1466",
+    "name": "Inventor Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1486",
+    "name": "Defloration by Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1505",
+    "name": "Hero with Armor",
+    "rating": 0.466666668653488,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1551",
+    "name": "Sex with Sleepers",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1570",
+    "name": "Impulsive Protagonist",
+    "rating": 2.75,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1640",
+    "name": "Monster Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1650",
+    "name": "Bisexual Heroine",
+    "rating": 0.333333343267441,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1667",
+    "name": "Promiscuity",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1669",
+    "name": "Wooden Horse",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1735",
+    "name": "Standing Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1736",
+    "name": "Sitting Sex",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1743",
+    "name": "Rape Involving Drugs",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1782",
+    "name": "No Skip Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1796",
+    "name": "Bathroom Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1807",
+    "name": "Slave Heroine",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2103",
+    "name": "Robots",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2269",
+    "name": "Playboy Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2283",
+    "name": "Handcuffed Sex",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2302",
+    "name": "Anal Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2436",
+    "name": "Spreader Bar",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2452",
+    "name": "Music Recollection",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2651",
+    "name": "No Quick Save/Load",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2709",
+    "name": "Muscular Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2905",
+    "name": "Whipping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2915",
+    "name": "Rape by Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2936",
+    "name": "Side Character Rape by Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3039",
+    "name": "Rope Bondage",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3128",
+    "name": "High Fantasy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3138",
+    "name": "Single Boobjob",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3147",
+    "name": "Single Blowjob",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3148",
+    "name": "Vaginal Masturbation",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3151",
+    "name": "Anal Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3154",
+    "name": "Sex Involving Food",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3259",
+    "name": "Promiscuous Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3375",
+    "name": "Anal Object Insertion",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3376",
+    "name": "Vaginal Object Insertion",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3415",
+    "name": "Heroine with Small Breasts (Non-Loli)",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g339",
+    "name": "SRPG",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g434",
+    "name": "Harem Ending",
+    "rating": 1,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance IV - Kyoudan no Isan -",
+  "votecount": 1388
+ },
+ {
+  "alttitle": "ランス４．１　～お薬工場を救え！～",
+  "description": "This is a side-story in Rance series, released shortly after the fourth game, but dedicated to an entirely different quest. All kinds of troubles are happening to a factory where a new Happiness Medicine is being developed. The mercenary Rance is hired by the manager to investigate the source of these troubles. First task: clear the factory of the monsters...\n\nThis is a RPG with turn-based combat and strong adventure elements (menu with command verbs such as \"Examine\", \"Talk\", etc., at every given screen). Unlike the previous Rance games, the battles do not allow free movement on the screen, and are carried out in a more traditional Japanese-style way. There is no physical movement in the game; hostile areas (dungeons) are also explored by choosing menu commands. As in all other Rance games, there are explicit sex scenes in this game.\n\n[From [url=http://www.mobygames.com/game/rance-41-o-kusuri-koujou-o-sukue]Moby Games[/url]]",
+  "id": "v2043",
+  "length_minutes": 210,
+  "rating": 53.4,
+  "released": "1995-12-01",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g10",
+    "name": "Terrorized by Monsters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 1.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2.59999990463257,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g45",
+    "name": "Corporations",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g65",
+    "name": "Fighting Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g79",
+    "name": "Unarmed Combat",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g126",
+    "name": "Robot Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g139",
+    "name": "Fighting Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g157",
+    "name": "Violence",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g190",
+    "name": "Airhead Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g202",
+    "name": "Fictional Beings",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g223",
+    "name": "Religious Organization",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g237",
+    "name": "Secret Identity",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g259",
+    "name": "Fictional World",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g274",
+    "name": "Dungeon Crawling Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 1.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g333",
+    "name": "Summoning",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g334",
+    "name": "Combat Capable Friends",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g354",
+    "name": "Villainous Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 2.25,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g445",
+    "name": "Terrorism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g514",
+    "name": "Netori",
+    "rating": 1.5,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g615",
+    "name": "Perverted Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 1.75,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g653",
+    "name": "Priest Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g670",
+    "name": "Protagonist with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g721",
+    "name": "Vibrators",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g735",
+    "name": "Sex in Public Places",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g872",
+    "name": "No Common Sense Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g875",
+    "name": "Twin Tail Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g894",
+    "name": "Sixty-nine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g954",
+    "name": "Science Fantasy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1084",
+    "name": "Multiple Penetration",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1102",
+    "name": "Mercenary Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1122",
+    "name": "Sexual Scenes with Gameplay",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1171",
+    "name": "Erotic Spanking",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1190",
+    "name": "Cunnilingus",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1357",
+    "name": "Office",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1391",
+    "name": "Rape by Deception",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1416",
+    "name": "Mercenary Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1480",
+    "name": "Few Event CGs",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1582",
+    "name": "Reverse Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1736",
+    "name": "Sitting Sex",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1782",
+    "name": "No Skip Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1796",
+    "name": "Bathroom Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2109",
+    "name": "Sexual Blindfold",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2138",
+    "name": "Quickie Fix Position",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2223",
+    "name": "No Romance Plot",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2302",
+    "name": "Anal Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2320",
+    "name": "Masturbation in front of an Audience",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2452",
+    "name": "Music Recollection",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2645",
+    "name": "Sensual Biting",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2651",
+    "name": "No Quick Save/Load",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2827",
+    "name": "Hostage Crisis",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2836",
+    "name": "Cliffhanger Ending",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2903",
+    "name": "Sex on Toilet",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2921",
+    "name": "Side Character Having Sex with Others",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3042",
+    "name": "Hair Pulling (Sexual)",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3128",
+    "name": "High Fantasy",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3147",
+    "name": "Single Blowjob",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3148",
+    "name": "Vaginal Masturbation",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3246",
+    "name": "Debt",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3259",
+    "name": "Promiscuous Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3375",
+    "name": "Anal Object Insertion",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3376",
+    "name": "Vaginal Object Insertion",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance 4.1 ~Okusuri Koujou o Sukue!~",
+  "votecount": 890
+ },
+ {
+  "alttitle": "ランス４．２　～エンジェル組～",
+  "description": "Rance 4.2: Angel-gumi is the second part of the story that began in Rance 4.1: O-Kusuri Koujou o Sukue! rather than an all-new Rance adventure. The hero continues to investigate the weird occurrences connected to the Happiness Medicine Factory. Since the story picks up directly where it ended in the prequel, Rance begins his adventure going against the Angel Army.\n\nNothing has changed gameplay-wise; as before, interaction with the game world is done through menu commands everywhere, including dungeons. The combat system has also remained exactly the same as in predecessor.\n\n[From [url=http://www.mobygames.com/game/rance-42-angel-gumi]Moby Games[/url]]",
+  "id": "v2044",
+  "length_minutes": 216,
+  "rating": 53.7,
+  "released": "1995-12-08",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g10",
+    "name": "Terrorized by Monsters",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 1.35000002384186,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.20000004768372,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2.40000009536743,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g45",
+    "name": "Corporations",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g79",
+    "name": "Unarmed Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g126",
+    "name": "Robot Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g148",
+    "name": "Multiple Endings",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g157",
+    "name": "Violence",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g190",
+    "name": "Airhead Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g223",
+    "name": "Religious Organization",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g237",
+    "name": "Secret Identity",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g259",
+    "name": "Fictional World",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g274",
+    "name": "Dungeon Crawling Game",
+    "rating": 2.25,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g304",
+    "name": "High Sexual Content",
+    "rating": 2.25,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g334",
+    "name": "Combat Capable Friends",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g357",
+    "name": "Group Sex of One Male and Several Females",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g358",
+    "name": "Group Sex of One Female and Several Males",
+    "rating": 1.33333337306976,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g406",
+    "name": "Rapist Protagonist",
+    "rating": 2.75,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g445",
+    "name": "Terrorism",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g464",
+    "name": "Heroine with Sexual Experience",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g503",
+    "name": "Nympho Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g525",
+    "name": "Antihero Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g580",
+    "name": "Breaking the Fourth Wall",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g615",
+    "name": "Perverted Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g621",
+    "name": "Comedy Rape",
+    "rating": 2.25,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g653",
+    "name": "Priest Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g670",
+    "name": "Protagonist with Sexual Experience",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g875",
+    "name": "Twin Tail Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g876",
+    "name": "Bad Endings with Story",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g878",
+    "name": "Missionary Position",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g942",
+    "name": "Torture",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g954",
+    "name": "Science Fantasy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g996",
+    "name": "Monsters",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1055",
+    "name": "Resurrection",
+    "rating": 1,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g1102",
+    "name": "Mercenary Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1122",
+    "name": "Sexual Scenes with Gameplay",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1190",
+    "name": "Cunnilingus",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1276",
+    "name": "Quiz Game",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1292",
+    "name": "Enema",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1323",
+    "name": "Gang Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1391",
+    "name": "Rape by Deception",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1393",
+    "name": "Outdoor Sex",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1416",
+    "name": "Mercenary Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1429",
+    "name": "Arrogant Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1437",
+    "name": "Few Choices",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1450",
+    "name": "Sadist Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1551",
+    "name": "Sex with Sleepers",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1669",
+    "name": "Wooden Horse",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1695",
+    "name": "Unlockable Bonus Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1736",
+    "name": "Sitting Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1782",
+    "name": "No Skip Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1788",
+    "name": "Clamps (BDSM)",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1824",
+    "name": "Sex in Front of an Audience",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1993",
+    "name": "Non-consensual Erotic Humiliation",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2073",
+    "name": "Park",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2138",
+    "name": "Quickie Fix Position",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2188",
+    "name": "Suspension Bondage",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2302",
+    "name": "Anal Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2452",
+    "name": "Music Recollection",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2466",
+    "name": "Unlockable Gallery",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2537",
+    "name": "Public Use (Choukyou or Non-Consensual)",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3005",
+    "name": "Major Antagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3039",
+    "name": "Rope Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3138",
+    "name": "Single Boobjob",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3140",
+    "name": "Single Handjob",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3155",
+    "name": "Vaginal Fingering",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3156",
+    "name": "Vaginal Gaping",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g3167",
+    "name": "Unavoidable Protagonist Death",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g3246",
+    "name": "Debt",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2651",
+    "name": "No Quick Save/Load",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g434",
+    "name": "Harem Ending",
+    "rating": 1,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance 4.2 ~Angelgumi~",
+  "votecount": 853
+ },
+ {
+  "alttitle": "AmbivalenZ -二律背反-",
+  "description": "Shura is a knight who has devoted his life to two things: his beloved princess and killing evil demon monsters called Duendy. The Duendy goddess, Deirdre, was pissed that her children were being defeated by this knight, so she sent in some monsters to go kill Shura's beloved. Shura goes in to try to save his princess, but it's too late. Her soul had been destroyed and she was never coming back.\n\nShura was heartbroken by this. He was also cursed to never age. he would forever have to live with the fact that his true love was dead and never coming back. All the while, Duendy torment him through the centuries and make his life into a living hell. Not wanting to fall into despair, Shura's heart fills with vengeance and promises to one day kill Dierdre and avenge his princess' death.\n\nIn modern day Japan, Shura is off hunting Duendy when he comes across a girl that looks just like his princess. Interestingly enough, she's also very skilled with magic and has wings. She isn't the princess though, as much as Shura wants to believe otherwise.\n\nAmbivalenZ is an adventure visual novel that has interactive battle scenes and occasional map movement. It resembles an RPG, but it isn't. There are no statistics, no numbers, and no leveling up, almost as if the RPG is just a shell. It also has frequent \"boss battles\" where you could potentially lose based on how you choose how to fight.",
+  "id": "v2048",
+  "length_minutes": 747,
+  "rating": 65.1,
+  "released": "1994-04-28",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g4",
+    "name": "Magic",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g12",
+    "name": "Action",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g63",
+    "name": "Combat with Bladed Weapons",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g66",
+    "name": "Sword Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g80",
+    "name": "Magic/ESP Combat",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g96",
+    "name": "Romance",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g117",
+    "name": "Unavoidable Rape",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g137",
+    "name": "Adult Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g158",
+    "name": "Graphic Violence",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g161",
+    "name": "Gore",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g268",
+    "name": "Only a Single Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g439",
+    "name": "Immortal Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g444",
+    "name": "Revenge",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g481",
+    "name": "Demons",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g598",
+    "name": "Episodic Story",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g616",
+    "name": "Sword Wielding Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g775",
+    "name": "Orphan Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g806",
+    "name": "Underworld",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1129",
+    "name": "Sacred Treasure",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1509",
+    "name": "Albino Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1897",
+    "name": "Urban Fantasy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "AmbivalenZ -Niritsu Haihan-",
+  "votecount": 19
+ },
+ {
+  "alttitle": "D.P.S.全部",
+  "description": "D.P.S. Zenbu, is, as the name implies, a complete collection of scenarios (total of 15) from all the previous D.P.S./Dream Program System series entries:\n\nD.P.S.\nD.P.S. SG\nD.P.S. SG Set 2\nD.P.S. SG Set 3\nSuper D.P.S. \n\n\nNo changes have been made to graphics or gameplay in any of the scenarios.\n\nAs a bonus, the game also contains the 16th scenario, entitled Megumi's Story. The scenario is non-interactive (the player simply has to press a button to scroll the text) and depicts the first sexual experiences (some of them violent) of an innocent teenage girl.\n\n[From [url=http://www.mobygames.com/game/pc98/dps-zenbu]Moby Games[/url]]",
+  "id": "v2234",
+  "length_minutes": null,
+  "rating": 58.7,
+  "released": "1995-11-10",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "D.P.S. Zenbu",
+  "votecount": 9
+ },
+ {
+  "alttitle": "学園KING －日出彦 学校をつくる－",
+  "description": "In the year 30 of the Meiji era in Japan (end of 19th century), a powerful family of Japanese oligarchs (zaibatsu) known as \"Amatsukami\" has constructed an artificial island and ruled over it, basically creating a state within a state. They had high hopes of building the \"Japan of the future\" and educating the young ones: the central place on the island was dedicated to a high school. But years have passed, and the youngsters rebelled against the oligarchs. Chaos reigned on the island, and even terrorist attacks were not uncommon. Amatsukami Hidehiko, the last (and youngest) of the oligarchs, decides to change the way of things. Using his charisma, but also more violent tactics, he goes to the troubled school to deal personally with anyone who dares oppose him.\n\nGakuen King is a peculiar mixture of typical Japanese RPG with random turn-based battles, strategy elements (recruiting students to join Hidehiko's army), and adventure elements (\"search\" command, finding and manipulating items), with extended sex scenes that have Japanese adventure-style menu-based interaction. The basic gameplay is that of a top-down RPG: Hidehiko walks around, fights random enemies, levels up, etc. The combat system is rather basic: Hidehiko's party (or, better to say, army) is treated like a single character - the player is only able to give general commands (attack, use special powers, retreat, etc.), after which the battle unfolds automatically. That is why the player also has to focus on adventure-like exploration to solve problems and overcome obstacles, as well as constantly enlarging the army to become stronger.\n\n[From [url=http://www.mobygames.com/game/gakuen-king-hidehiko-gakk-o-tsukuru]Moby Games[/url]]",
+  "id": "v2461",
+  "length_minutes": 821,
+  "rating": 65.1,
+  "released": "1996-06-07",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g47",
+    "name": "School",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g221",
+    "name": "Modern Day Japan",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g297",
+    "name": "Map Movement",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g373",
+    "name": "Student Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g469",
+    "name": "Butler Support Character",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g544",
+    "name": "Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g698",
+    "name": "Wealthy Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1299",
+    "name": "Fictional Modern Day Japanese Island",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1660",
+    "name": "Tsukkomi Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1903",
+    "name": "Protagonist with a Sprite",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Gakuen King -Hidehiko Gakkou o Tsukuru-",
+  "votecount": 9
+ },
+ {
+  "alttitle": "ぷろすちゅーでんとG",
+  "description": "By the end of the 20th century, radical educational reforms have transformed the Japanese society. Students were split into opposing groups, and the more aggressive of those eventually formed a dominant organization named Order of Black Phoenix, centered on the cult of a mysterious person known as \"The Queen\". Outcast students have escaped to a secluded island near Okinawa. A wandering lazy and lecherous manga and anime fan named Gorō Endō teams up with a female teacher and a few students to lead an opposition force against the oppressive governing circles.\n\nPro Student G is a Japanese-style erotic comedy adventure. The player guides Gorō through a series of locations and encounters, selecting choices from a menu to trigger the next event and advance the story. Some choices have a traditional verb-object structure, while others incorporate context-specific actions, many of which are included for humorous effect.\n\n[From [url=http://www.mobygames.com/game/pro-student-g]Moby Games[/url]]",
+  "id": "v4701",
+  "length_minutes": null,
+  "rating": 69.7,
+  "released": "1993-05-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g14",
+    "name": "Mecha Combat",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g25",
+    "name": "Personal Armed Combat",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g148",
+    "name": "Multiple Endings",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g177",
+    "name": "Teacher Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g292",
+    "name": "Female Protagonist for a Short Time",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g506",
+    "name": "Gender Bending",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g573",
+    "name": "Martial Artist Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g737",
+    "name": "Side Portraits",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g983",
+    "name": "Heroine With Kansai Accent",
+    "rating": 1,
+    "spoiler": 2
+   },
+   {
+    "category": "tech",
+    "id": "g1025",
+    "name": "Lots of Choices",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1050",
+    "name": "Journey",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1198",
+    "name": "Ugly Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1247",
+    "name": "Genderbent Sex",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Prostudent G",
+  "votecount": 15
+ },
+ {
+  "alttitle": "CRESCENT MOON がぁる",
+  "description": "You play as a cat that walks into a tent and is transformed into a human by a breaking a crystal ball. You don't want to be a human, though! You liked being a cat! The owner of the broken crystal ball says that she'll reverse the curse if you can go through town and bring her the Crescent Moon Girl. That is how your quest begins.",
+  "id": "v5457",
+  "length_minutes": 106,
+  "rating": 57.9,
+  "released": "1989-08-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g161",
+    "name": "Gore",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g278",
+    "name": "Cats",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g548",
+    "name": "Curse",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g875",
+    "name": "Twin Tail Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1188",
+    "name": "Shapeshifting",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "CRESCENT MOON Girl",
+  "votecount": 20
+ },
+ {
+  "alttitle": "夢幻泡影",
+  "description": "After a prolonged absence due to mental problems, Kuon, a young heir to a dynasty of powerful oligarchs, returns to his mansion. He is greeted by his wife, his associates, his servants, and other people who live in the huge family estate. Kuon has to continue the political work of his predecessors, but he is more interested in exploring sexual desires - his own and those of other people. But each \"experiment\" reveals more of Kuon's troubled past, and he will have to fight his childhood traumas and determine himself the limits of what he can allow himself to do...\n\n[From [url=http://www.mobygames.com/game/pc98/mgen-hy]Moby Games[/url]]",
+  "id": "v5933",
+  "length_minutes": 360,
+  "rating": 57.6,
+  "released": "1995-07-07",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g92",
+    "name": "Blood-related Brother/Sister Incest",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g112",
+    "name": "Maid Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g168",
+    "name": "Life and Death Drama",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g189",
+    "name": "Idol Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g191",
+    "name": "Heroine with Glasses",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g203",
+    "name": "Nameable Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g220",
+    "name": "Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g227",
+    "name": "Protagonist's Blood-related Sister as a Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g228",
+    "name": "Protagonist's Non-blood-related Sister as a Heroine",
+    "rating": 0.666666686534882,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g280",
+    "name": "Dying Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g281",
+    "name": "Illness",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g309",
+    "name": "Western-style Manor",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g357",
+    "name": "Group Sex of One Male and Several Females",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g358",
+    "name": "Group Sex of One Female and Several Males",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g459",
+    "name": "Unlockable Routes",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g594",
+    "name": "Dark Skinned Heroine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g635",
+    "name": "Nurse Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g676",
+    "name": "Flashback",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g698",
+    "name": "Wealthy Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g718",
+    "name": "Female Domination",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g723",
+    "name": "Strap-on Dildos",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g749",
+    "name": "Anal Penetration",
+    "rating": 0.666666686534882,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g834",
+    "name": "Fisting",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g876",
+    "name": "Bad Endings with Story",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1085",
+    "name": "Bukkake",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1087",
+    "name": "Masturbation",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1182",
+    "name": "High Amount of Bad Endings",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1190",
+    "name": "Cunnilingus",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1245",
+    "name": "Pegging",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1251",
+    "name": "More Than Seven Endings",
+    "rating": 2.66666674613953,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1297",
+    "name": "Doggy Style",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1309",
+    "name": "Dream",
+    "rating": 2,
+    "spoiler": 2
+   },
+   {
+    "category": "cont",
+    "id": "g1435",
+    "name": "Protagonist's Wife as a Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1454",
+    "name": "Deepthroat",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1515",
+    "name": "Fingering",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1581",
+    "name": "Cowgirl",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1739",
+    "name": "Piledriver",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1794",
+    "name": "Food Play",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1843",
+    "name": "Ending Scene Recollection",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2113",
+    "name": "Gang Bang",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2247",
+    "name": "Reverse Piledriver",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2252",
+    "name": "Perverted Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2264",
+    "name": "Trampling",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2437",
+    "name": "Double Penetration (Group Sex)",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g693",
+    "name": "Utsuge",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g154",
+    "name": "Loli Heroine",
+    "rating": 1,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g359",
+    "name": "Sex Change",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1376",
+    "name": "Joke Endings",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1234",
+    "name": "Unlockable Choices",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Mugen Houyou",
+  "votecount": 14
+ },
+ {
+  "alttitle": "闘神都市II そして、それから・・・",
+  "description": "Returning from the goddess tournament, Seed is reduced to level 1 by the Demon King. His dojo sent him to a training journey, but Hazuki was so worried about him that she followed Seed and got into trouble herself.\n\n[From [url=https://vndbreview.blogspot.nl/2017/07/vn-of-month-december-1995.html]vndbreview[/url]]",
+  "id": "v6916",
+  "length_minutes": 153,
+  "rating": 70.4,
+  "released": "1995-12-08",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g43",
+    "name": "NVL",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g235",
+    "name": "No Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g709",
+    "name": "Kinetic Novel",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g791",
+    "name": "No Character Sprites",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Toushin Toshi II - Soshite, Sorekara...",
+  "votecount": 17
+ },
+ {
+  "alttitle": "Intruder -桜屋敷の探索-",
+  "description": "Boy meets a girl and he falls in love with her. He loves her so much so he decided to get into her home... That's where real drama begins!",
+  "id": "v7370",
+  "length_minutes": 90,
+  "rating": 56.9,
+  "released": "1989-07-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g185",
+    "name": "Ghost Heroine",
+    "rating": 1.66666662693024,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g186",
+    "name": "Ojousama Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g207",
+    "name": "Attempted Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g309",
+    "name": "Western-style Manor",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Intruder -Sakura Yashiki no Tansaku-",
+  "votecount": 14
+ },
+ {
+  "alttitle": "あぶない天狗伝説",
+  "description": "Kazumi Kinoshita and Sanae Kanazawa are two high school girls who go on a school trip together with their classmates. Shortly after their arrival at the camp dormitory, various girls become targeted by unknown assailants. In order to solve the mystery the two heroines must talk to their classmates, collect clues, and eventually find the culprits.\n\nAbunai Tengu Densetsu is an adventure game with menu-based navigation and input. Most screens offer a fairly long list of verb commands, some of which must be combined with objects or persons selected from a sub-menu in order to interact with the environment. The game allows the player to visit many different rooms and other locations in any order; however, certain events must be triggered in order to advance, sometimes by repeatedly selecting commands. Certain situations require the player to find items and use them in a different location.\n\n[From [url=http://www.mobygames.com/game/abunai-tengu-densetsu]MobyGames[/url]]",
+  "id": "v8549",
+  "length_minutes": 162,
+  "rating": 59.1,
+  "released": "1989-10-15",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g490",
+    "name": "Lesbian Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g742",
+    "name": "Hotel",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1184",
+    "name": "High School Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Abunai Tengu Densetsu",
+  "votecount": 16
+ },
+ {
+  "alttitle": "あゆみちゃん物語 実写版",
+  "description": "Remake of Ayumi-chan Monogatari using real photos.",
+  "id": "v8566",
+  "length_minutes": null,
+  "rating": null,
+  "released": "1995-01-12",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g47",
+    "name": "School",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g214",
+    "name": "Nukige",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g268",
+    "name": "Only a Single Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g427",
+    "name": "Photographic Sprites",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g433",
+    "name": "Photographic Backgrounds",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1005",
+    "name": "Date Display",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1259",
+    "name": "Checkpoints",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1378",
+    "name": "Panchira",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Ayumi-chan Monogatari Jisshaban",
+  "votecount": 3
+ },
+ {
+  "alttitle": null,
+  "description": "D.P.S. is a collection of three short scenarios, which are unrelated to each other story-wise and can be played separately. Those scenarios are presented as cartridges played on a fictional console named Dream Program System. Each scenario allows the player to choose between two different protagonists, or two different personalities for the protagonist. All of the scenarios feature nudity and/or sexual situations.\n\nThe scenarios in this game include:\n1. A medieval fantasy tale entitled Princess Fantasy, in which the player controls a knight who accompanies a princess on a journey. Depending on the personality choice, the knight can either be brave and compassionate, or cynically take advantage of the helpless girl.\n\n2. A typical \"naughty doctor\" story, in which the player - as either male or female school doctor - has to \"examine\" young and pretty female patients, trying not to scare them away by employing too direct methods.\n\n3. An encounter between a famous female pop idol and her fan (also female), which leads to a bizarre sexual experience. The player can choose to control the events from the point of view of either the star or the fan.\n\n[From [url=http://www.mobygames.com/game/dps-dream-program-system]Moby Games[/url]]",
+  "id": "v8666",
+  "length_minutes": 90,
+  "rating": 45.1,
+  "released": "1989-12-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1.66666662693024,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g158",
+    "name": "Graphic Violence",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "cont",
+    "id": "g161",
+    "name": "Gore",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g178",
+    "name": "Tentacle Rape",
+    "rating": 1.33333337306976,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g189",
+    "name": "Idol Heroine",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g294",
+    "name": "Princess Heroine",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g373",
+    "name": "Student Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g559",
+    "name": "Protagonist Selection",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g581",
+    "name": "Medical Doctor Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g791",
+    "name": "No Character Sprites",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g901",
+    "name": "No Saves",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g958",
+    "name": "Knight Protagonist",
+    "rating": 2.33333325386047,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1554",
+    "name": "Scenario Selection",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1630",
+    "name": "Idol Protagonist",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "D.P.S.",
+  "votecount": 30
+ },
+ {
+  "alttitle": null,
+  "description": "D.P.S. SG is the second entry in the D.P.S./Dream Program System series. Like the other D.P.S. games, it is a collection of three short scenarios, which are unrelated to each other story-wise and can be played separately. Those scenarios are presented as cartridges played on a fictional console named Dream Program System. Each scenario allows the player to choose between two different protagonists, or two different personalities for the protagonist. All of the scenarios feature nudity and/or sexual situations.\n\nThe scenarios in this game include:\n1. A traditional account of a private lesson given by an experienced male tutor to a cute teenage girl. It can be player as either the teacher or the student, the latter involving deliberately giving wrong answers to English questions in order to gain time to seduce the teacher.\n\n2. An episode entitled Fahnen Fliegen (German for \"flags flying\"), depicting capture and torture of a female war prisoner by an SS officer. The player can choose to control the officer, effectively torturing the victim himself, or take the role of a soldier who tries to ease her pain, hoping to gain her sexual favors.\n\n3. A scenario set in the Sengoku period of the Japanese history, in the house of the famous warlord Oda Nobunaga. It is possible to play this scenario as Nobunaga himself, or as his daughter, the spoiled princess. In either case, the goal is to seduce the cute maid who works in the house.\n\n[From [url=http://www.mobygames.com/game/pc98/dps-sg]Moby Games[/url]]",
+  "id": "v8667",
+  "length_minutes": 70,
+  "rating": 58.2,
+  "released": "1990-08-15",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g84",
+    "name": "Rape",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g166",
+    "name": "Sengoku Period",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g220",
+    "name": "Bondage",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g475",
+    "name": "Teacher Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g547",
+    "name": "Officer Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g559",
+    "name": "Protagonist Selection",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g574",
+    "name": "Unavoidable Heroine Rape",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g647",
+    "name": "World War II",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g838",
+    "name": "Foreigner Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g901",
+    "name": "No Saves",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g942",
+    "name": "Torture",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1073",
+    "name": "Teacher Hero",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2124",
+    "name": "Hime Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2166",
+    "name": "Middle School Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2296",
+    "name": "Middle School Student Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "D.P.S. SG",
+  "votecount": 9
+ },
+ {
+  "alttitle": null,
+  "description": "D.P.S. SG set2 is the third entry in the D.P.S./Dream Program System series. Like the other D.P.S. games, it is a collection of three short scenarios, which are unrelated to each other story-wise and can be played separately. Those scenarios are presented as cartridges played on a fictional console named Dream Program System. Each scenario allows the player to choose between two different protagonists, or two different personalities for the protagonist. All of the scenarios feature nudity and/or sexual situations.\n\nThe scenarios in this game include:\n\nA horror story entitled Antique House, in which a young couple is trapped at night in a secluded haunted mansion, possessed by monsters. The player can choose the personality of the female character before beginning, influencing the story with this choice.\n\nA modern-day story without any supernatural elements, entitled Red Night. The protagonist is a man who finds himself in a hotel when a fire starts. Trying to escape, he enters a room occupied by a prostitute. The following events evolve slightly differently, depending on the personality choice made by the player before the start of the game.\n\nA sequel to the second episode of the first D.P.S. game. Once again, the player chooses either the male doctor Katsuki or the female doctor Katsumi whose goal is to seduce the patient, the cute school girl Yumiko.\n\n[From [url=http://www.mobygames.com/game/pc98/dps-sg-set-2]Moby Games[/url]]",
+  "id": "v8668",
+  "length_minutes": 78,
+  "rating": 58.7,
+  "released": "1991-04-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g373",
+    "name": "Student Heroine",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g559",
+    "name": "Protagonist Selection",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g581",
+    "name": "Medical Doctor Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g646",
+    "name": "Prostitute Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g671",
+    "name": "Haunted House",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g742",
+    "name": "Hotel",
+    "rating": 1.5,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1235",
+    "name": "Europe",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 1,
+    "spoiler": 0
+   }
+  ],
+  "title": "D.P.S. SG set2",
+  "votecount": 8
+ },
+ {
+  "alttitle": null,
+  "description": "D.P.S. SG Set 3 is the fourth entry in the D.P.S./Dream Program System series. Like the other D.P.S. games, it is a collection of three short scenarios, which are unrelated to each other story-wise and can be played separately. Those scenarios are presented as cartridges played on a fictional console named Dream Program System. Each scenario allows the player to choose between two different protagonists, or two different personalities for the protagonist. All of the scenarios feature nudity and/or sexual situations.\n\nThe scenarios in this game include:\n\n1. A rather mundane depiction of a young couple's day directly after their wedding. The two return home and prepare for the \"big event\" in the night. The player can choose to control either the husband or the wife.\n\n2. A story entitled Graduation, which begins with a rather standard premise of a shy high school boy trying to express his love to a pretty school mate. However, the events take an unexpected turn when a dragon appears and the girl is hurt. The player can determine the personality of the hero before the start of the episode.\n\n3. A bizarre fantasy tale with the title Rabbit P4P. The protagonist follows a mysterious \"bunny girl\" into a fairy tale-like realm, where he has to figure out what to do in order to win the graces of magical creatures, which look like young and pretty women. The personality choice influences the hero's attitude in this episode as well.\n\n[From [url=http://www.mobygames.com/game/pc98/dps-sg-set-3]Moby Games[/url]]",
+  "id": "v8669",
+  "length_minutes": 108,
+  "rating": 60,
+  "released": "1991-12-15",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g2",
+    "name": "Fantasy",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g559",
+    "name": "Protagonist Selection",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g561",
+    "name": "Dragon",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g630",
+    "name": "Superheroine",
+    "rating": 2,
+    "spoiler": 1
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g880",
+    "name": "Protagonist in Relationship",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1025",
+    "name": "Lots of Choices",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1138",
+    "name": "Naked Heroine with Apron",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1184",
+    "name": "High School Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1435",
+    "name": "Protagonist's Wife as a Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1595",
+    "name": "Sex in Water",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "D.P.S. SG set3",
+  "votecount": 11
+ },
+ {
+  "alttitle": null,
+  "description": "Super D.P.S. is the fifth entry in the D.P.S./Dream Program System series. Like the other D.P.S. games, it is a collection of three short scenarios, which are unrelated to each other story-wise and can be played separately. Those scenarios are presented as cartridges played on a fictional console named Dream Program System. Each scenario allows the player to choose between two different protagonists, or two different personalities for the protagonist. All of the scenarios feature nudity and/or sexual situations.\n\nThe scenarios in this game include:\n\n1. A rather disturbing tale entitled Maria and Kanpan, which focuses on a young female robot specialist who falls asleep and is sexually \"explored\" by one of the robots. The player can view the events from either the girl's or the robot's point of view.\n\n2. An adventurous scenario, which depicts the dangers encountered by a young couple in a tropical forest populated by local tribes. The two are imprisoned and have to find a way to escape. The player can choose to control either the heroine or the hero.\n\n3. A scenario with sci-fi elements, involving a famous female space pirate named Camelia, who raids a space ship together with her pretty lieutenant. The story varies according to the player's choice to control Camelia herself, or a male soldier on the ship who captures Camelia's lieutenant.\n\n[From [url=http://www.mobygames.com/game/super-dps]Moby Games[/url]]",
+  "id": "v8670",
+  "length_minutes": null,
+  "rating": 61.2,
+  "released": "1992-09",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g53",
+    "name": "Space",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g103",
+    "name": "Spaceship",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2137",
+    "name": "Robot Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Super D.P.S.",
+  "votecount": 6
+ },
+ {
+  "alttitle": "人魚－蘿子－",
+  "description": "A boy and a girl run away with a mysterious stone and hide in a cave. But pursuers are nearby already.\n\n[From [url=https://vndbreview.blogspot.com/2017/07/vn-of-month-january-1996.html]vndbreview[/url]]",
+  "id": "v8986",
+  "length_minutes": 18,
+  "rating": 56.8,
+  "released": "1996-10",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g147",
+    "name": "Drama",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g268",
+    "name": "Only a Single Heroine",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g733",
+    "name": "Defloration",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g756",
+    "name": "Only Virgin Heroines",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g983",
+    "name": "Heroine With Kansai Accent",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1007",
+    "name": "Mermaid Heroine",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1393",
+    "name": "Outdoor Sex",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g380",
+    "name": "Early Sexual Content",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g145",
+    "name": "Linear Plot",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g709",
+    "name": "Kinetic Novel",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1105",
+    "name": "No Background Music",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Ningyo -Tsutako-",
+  "votecount": 10
+ },
+ {
+  "alttitle": "ALICEの館3",
+  "description": "A collection of five mini-games with Alice from the Rance series. \nThe first two games in this series were only available on Japanese computers. It includes a quiz game \"TokuSakari quiz Rerorero\", fighting Prince Patton, a female teacher in agony hell visual novel with two endings - one good and a darker one. \n\n[From [url=http://www.legendsworld.net/adventure/year/1995#16910]legendsworld[/url]]",
+  "id": "v9426",
+  "length_minutes": null,
+  "rating": 57.1,
+  "released": "1995-04-01",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g82",
+    "name": "Lesbian Sex",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g203",
+    "name": "Nameable Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g663",
+    "name": "Rape with Blackmail",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g749",
+    "name": "Anal Penetration",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g820",
+    "name": "Orphan Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g877",
+    "name": "Game Over",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1276",
+    "name": "Quiz Game",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2237",
+    "name": "Heroine with Pubic Hair",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Alice no Yakata 3",
+  "votecount": 6
+ },
+ {
+  "alttitle": "ALICEの館II",
+  "description": "An Alice Soft fan-disc containing four short games and varied extra content, such as being able to listen to the complete soundtrack of all their previous games.\n\nThe following games are part of this collection:\n\n1. A mini-RPG set after the events of Rance 3. You take the control of Patton as he tries to beat an M Land attraction during Hunty's absence.\n\n2. A short adventure game about a pair policewomen trying to solve the case of a serial rapist.\n\n3. After the disappearance of Rance at the end of Rance 3, the princess of Leazas Lia takes her frustrations out on monsters she takes captive. You play as a valiant Okayu Fever as he assaults Leazas castle to save the captive monsters. \nThe game inherits the Rance 3 battle system and is composed of a set of preset encounters.\n\n4. A quiz game in which you get a naked CG or a short ero scene with an Alice Soft heroine after succesfully answering the questions. Includes heroines from the Rance series, Toushin Toshi and D.P.S. SG Set 2.",
+  "id": "v9609",
+  "length_minutes": 360,
+  "rating": 58.5,
+  "released": "1992-07-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g35",
+    "name": "RPG",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1276",
+    "name": "Quiz Game",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g2401",
+    "name": "Softcore",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "ALICE no Yakata II",
+  "votecount": 21
+ },
+ {
+  "alttitle": "ALICEの館",
+  "description": "A collection of additional materials including a new adventure story \"Sentimental season\".\n\nThe heroine dates a boy, but the relationship in the pair of her school friend Mami develops much more intensively and the heroine does not want to lag behind.\n\n[From [url=https://vndbreview.blogspot.com/2017/05/vn-of-year-1990.html]vndbreview[/url]]",
+  "id": "v9610",
+  "length_minutes": 36,
+  "rating": 51.5,
+  "released": "1990-02-15",
+  "tags": [
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g134",
+    "name": "Female Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g728",
+    "name": "Protagonist with a Face",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g830",
+    "name": "Anthology",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g1117",
+    "name": "BDSM",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Alice no Yakata",
+  "votecount": 41
+ },
+ {
+  "alttitle": "あぶない文化祭前夜",
+  "description": "Bonus game included on Rance III Option set - あぶない 文化祭前夜",
+  "id": "v23259",
+  "length_minutes": 73,
+  "rating": null,
+  "released": "1991-10-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g151",
+    "name": "School Life Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g538",
+    "name": "School Festival",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g3130",
+    "name": "Pixel Art",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g3064",
+    "name": "Lesbian Sex Only",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Abunai Bunkasai Zen'ya",
+  "votecount": 4
+ },
+ {
+  "alttitle": "ランス外伝 －闘神都市－",
+  "description": null,
+  "id": "v29954",
+  "length_minutes": 98,
+  "rating": 56.1,
+  "released": "1991-02",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance Gaiden - Toushin Toshi -",
+  "votecount": 10
+ },
+ {
+  "alttitle": "走り女II",
+  "description": "Bonus game included in the Rance 4.1/4.2 hint disk.",
+  "id": "v30385",
+  "length_minutes": null,
+  "rating": null,
+  "released": "1995-12-01",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g39",
+    "name": "Dating Simulation",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Hashiri Onna II",
+  "votecount": 3
+ },
+ {
+  "alttitle": "ランスIV オプションディスク",
+  "description": "Option and hint disc for Rance 4",
+  "id": "v32938",
+  "length_minutes": null,
+  "rating": 56.6,
+  "released": "1994-03",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "Rance 4 Option Disc",
+  "votecount": 8
+ },
+ {
+  "alttitle": "SDらんす",
+  "description": "\"SD Rance\" is a small ADV game starring Rance as a grade schooler, investigating the case of Mr. Ragisis' stolen ring. Appearances are made by other Rance 2 characters, Kurusu Miki from Little Vampire and two characters from Gakuen Senki, Midori and Yoko.\n\n[From [url=https://alicesoft.miraheze.org/wiki/Rance_02:Hint_Disk]AliceSoft Wiki[/url]]",
+  "id": "v32939",
+  "length_minutes": 16,
+  "rating": 51.3,
+  "released": "1990",
+  "tags": [
+   {
+    "category": "cont",
+    "id": "g19",
+    "name": "Mystery",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g32",
+    "name": "ADV",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g104",
+    "name": "Comedy",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g133",
+    "name": "Male Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g146",
+    "name": "Single Ending",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g163",
+    "name": "Bullying",
+    "rating": 1,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g350",
+    "name": "Interactive Adventure Game",
+    "rating": 2.5,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g668",
+    "name": "Shota Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1326",
+    "name": "Elementary School",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1512",
+    "name": "Elementary School Student Protagonist",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2149",
+    "name": "Loli Support Character",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g2161",
+    "name": "No Hero(in)es",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2223",
+    "name": "No Romance Plot",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2652",
+    "name": "No Auto Function",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g1258",
+    "name": "No Backlog",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g2342",
+    "name": "No Skip Read Text Option",
+    "rating": 2,
+    "spoiler": 0
+   },
+   {
+    "category": "tech",
+    "id": "g901",
+    "name": "No Saves",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "SD Rance",
+  "votecount": 41
+ },
+ {
+  "alttitle": "DALKヒントディスク",
+  "description": "Includes short official stories for DALK characters, a quiz game, a short game titled \"Zero Shiki\", and short fan stories.",
+  "id": "v49802",
+  "length_minutes": 360,
+  "rating": null,
+  "released": "1993",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 2,
+    "spoiler": 0
+   }
+  ],
+  "title": "DALK Hint Disk",
+  "votecount": 3
+ },
+ {
+  "alttitle": "走り女",
+  "description": null,
+  "id": "v55861",
+  "length_minutes": null,
+  "rating": null,
+  "released": "1991-10-15",
+  "tags": [
+   {
+    "category": "ero",
+    "id": "g23",
+    "name": "Sexual Content",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "cont",
+    "id": "g1807",
+    "name": "Slave Heroine",
+    "rating": 3,
+    "spoiler": 0
+   },
+   {
+    "category": "ero",
+    "id": "g975",
+    "name": "Short Sexual Scenes",
+    "rating": 3,
+    "spoiler": 0
+   }
+  ],
+  "title": "Hashiri Onna",
+  "votecount": 2
+ },
+ {
+  "alttitle": "婦警さんＶＸ",
+  "description": null,
+  "id": "v56530",
+  "length_minutes": 12,
+  "rating": 45.9,
+  "released": "1989-07-15",
+  "tags": [],
+  "title": "Fukei-san VX",
+  "votecount": 16
+ }
+]
