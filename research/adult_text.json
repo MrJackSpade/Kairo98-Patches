@@ -203,7 +203,7 @@
   ]
  },
  "AliceSoft.zip/D.P.S Zenbu (All Dream Program System)": {
-  "adult": false,
+  "adult": true,
   "hits": 27,
   "strings": 20849,
   "distinct_terms": 2,
