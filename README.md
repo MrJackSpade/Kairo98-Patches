@@ -25,9 +25,12 @@ The full checklist for finishing a game, including clearance, the ♥ rule, patc
 testing and publishing, is **[DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md)**.
 
 
-* **Skip** any game with a human English translation, or one announced by a team
-  that has finished releases (`index/TEAMS.md`). Those are listed in the index
-  with their source and the date we checked.
+* **Skip** any game with a human English translation for the PC-98, or one
+  announced for the PC-98 by a team that has finished releases
+  (`index/TEAMS.md`). Those are listed in the index with their source and the
+  date we checked. A translation of another version (e.g. a Win95 release)
+  doesn't count: it's linked, and its script can be ported, but the game is
+  still ours.
 * A game announced only by a team with no finished releases is still fair game,
   since we don't wait for a new team to prove itself. The announcement stays
   linked.

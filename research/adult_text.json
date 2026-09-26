@@ -573,5 +573,139 @@
    "u00099",
    "m00565"
   ]
+ },
+ "Illusion.zip/Hyouryuu": {
+  "adult": true,
+  "hits": 10,
+  "strings": 2570,
+  "distinct_terms": 4,
+  "summary": "10 of 2570 strings match the sexual-vocabulary list (4 distinct terms)",
+  "adult_ids": [
+   "m00140",
+   "m00154",
+   "m00172",
+   "m01253",
+   "m01268",
+   "m01269",
+   "m01295",
+   "m01301",
+   "m02230",
+   "m02276"
+  ]
+ },
+ "Illusion.zip/Kankin": {
+  "adult": true,
+  "hits": 5,
+  "strings": 420,
+  "distinct_terms": 3,
+  "summary": "5 of 420 strings match the sexual-vocabulary list (3 distinct terms)",
+  "adult_ids": [
+   "m00285",
+   "m00318",
+   "m00321",
+   "m00322",
+   "m00391"
+  ]
+ },
+ "Illusion.zip/Kitoujima Joshi Keimusho": {
+  "adult": false,
+  "hits": 3,
+  "strings": 2538,
+  "distinct_terms": 2,
+  "summary": "3 of 2538 strings match the sexual-vocabulary list (2 distinct terms)",
+  "adult_ids": [
+   "m00192",
+   "m01187",
+   "m02001"
+  ]
+ },
+ "Illusion.zip/Mokkoriman RPG": {
+  "adult": true,
+  "hits": 25,
+  "strings": 988,
+  "distinct_terms": 5,
+  "summary": "25 of 988 strings match the sexual-vocabulary list (5 distinct terms)",
+  "adult_ids": [
+   "m00005",
+   "m00024",
+   "m00026",
+   "m00027",
+   "m00030",
+   "m00031",
+   "m00032",
+   "m00034",
+   "m00035",
+   "m00039",
+   "m00068",
+   "m00083",
+   "m00104",
+   "m00112",
+   "m00160",
+   "m00177",
+   "m00178",
+   "m00267",
+   "m00394",
+   "m00531",
+   "m00534",
+   "m00733",
+   "m00763",
+   "m00778",
+   "m00784"
+  ]
+ },
+ "Illusion.zip/Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri": {
+  "adult": false,
+  "hits": 1,
+  "strings": 277,
+  "distinct_terms": 1,
+  "summary": "1 of 277 strings match the sexual-vocabulary list (1 distinct terms)",
+  "adult_ids": [
+   "m00052"
+  ]
+ },
+ "Illusion.zip/Red Cobra": {
+  "adult": false,
+  "hits": 2,
+  "strings": 586,
+  "distinct_terms": 2,
+  "summary": "2 of 586 strings match the sexual-vocabulary list (2 distinct terms)",
+  "adult_ids": [
+   "m00014",
+   "m00403"
+  ]
+ },
+ "ProIllusion.zip/Ura Mansion Hakkin": {
+  "adult": true,
+  "hits": 25,
+  "strings": 710,
+  "distinct_terms": 5,
+  "summary": "25 of 710 strings match the sexual-vocabulary list (5 distinct terms)",
+  "adult_ids": [
+   "m00066",
+   "m00067",
+   "m00073",
+   "m00110",
+   "m00160",
+   "m00261",
+   "m00263",
+   "m00266",
+   "m00268",
+   "m00311",
+   "m00318",
+   "m00330",
+   "m00331",
+   "m00353",
+   "m00371",
+   "m00406",
+   "m00433",
+   "m00452",
+   "m00466",
+   "m00485",
+   "m00508",
+   "m00511",
+   "m00640",
+   "m00641",
+   "m00642"
+  ]
  }
 }

@@ -33,14 +33,21 @@ Two kinds of game have different end states:
 
 ## 1. Clearance (before any work)
 
-- [ ] The game has **no human English translation**, not even a partial one we
-      could extend. It must not show *human translation* in `index/INDEX.md`.
+- [ ] The game has **no human English translation for the PC-98**, not even a
+      partial one we could extend: a patch for the PC-98 version or a
+      pre-patched PC-98 image. It must not show *human translation* in
+      `index/INDEX.md`. A translation of another version (Windows, DOS/V, other
+      computers) does **not** stop work: many of those are Win95-era releases
+      that no longer run or can't be obtained. Link it in the index, and use its
+      script as the source for our English where it can be matched.
+- [ ] The same goes for announcements: only a PC-98 translation announced by a
+      proven team stops work.
 - [ ] No team with a finished release has **announced** it
       (`research/announced.json`, `index/TEAMS.md`). If a team with no finished
       release announced it, the game is still ours, and the announcement stays
       linked.
-- [ ] You checked it **now**, not from memory: VNDB (English releases on any
-      platform), the AliceSoft wiki where relevant, the project pages of active
+- [ ] You checked it **now**, not from memory: VNDB (English releases, noting
+      which platform each is for), the AliceSoft wiki where relevant, the project pages of active
       teams (BabaJeanmel, Alpharobo and others in `index/TEAMS.md`), GitHub, and
       one web search for the title plus "English translation".
 - [ ] The result is recorded in `research/clearance.json` with the date and sources.

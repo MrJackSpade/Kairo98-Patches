@@ -247,5 +247,381 @@
   "sources": [
    "archive holds scans/extras only; no disk images to translate"
   ]
+ },
+ "Illusion.zip/Angel Army": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Hyouryuu": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Kankin": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Kitoujima Joshi Keimusho": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Moeru Asoko no Paipai Yuugi": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Mokkoriman RPG": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Red Cobra": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Seisenshi Mokkoriman": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Illusion.zip/Yami no Ryousen": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "IllusionCore.zip/Aegean no Shizuku": {
+  "checked": "2026-09-26",
+  "result": "human translation on PC-98: skipped",
+  "sources": [
+   "Aegean Kai No Shizuku [T-En by Svipur v1.1] [Real Hardware Fix by OPN-2608]",
+   "Svipur/Aegean-Kai-No-Shizuku-PC98-English (patch released)"
+  ]
+ },
+ "Jast.zip/Cosmos Club": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Deep": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Eden no Kaori": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Gomen ne Angel - Yokohama Monogatari": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Hunting Roulette - Totsugeki Bakkon Street II": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Sanshimai": {
+  "checked": "2026-09-26",
+  "result": "human translation on PC-98: skipped",
+  "sources": [
+   "Three Sisters Story [T-En by JAST USA][Port by Alpharobo, Kirinn B & BabaJeanmel v1.0]",
+   "JAST USA Memorial Collection: VNDB r98275 (fan patch)"
+  ]
+ },
+ "Jast.zip/Setsujuu - Yuganda Kioku": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Shuukan From H": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Bangaihen": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Collection": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Collection 2": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo II - Minako": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo II Bangaihen": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III - Ribbon": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo IV - Yuko": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Special II": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Tenkousei": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo VI - My Fair Teacher": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Hohoemi": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Totsugeki! Bakkon Street": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "Jast.zip/Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
+ },
+ "ProIllusion.zip/Ura Mansion Hakkin": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-09-26: no English release on any platform (PC-98 or other)",
+   "baba-jpc.neocities.org translations page (incl. JAST Memorial Collection): not listed",
+   "alpharobo.neocities.org: not listed",
+   "web search (title + English translation, PC-98): nothing"
+  ]
  }
 }
