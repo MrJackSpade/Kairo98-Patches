@@ -14,3 +14,7 @@ __pycache__/
 *.pyc
 games/*/strings_sample.json
 toolchain/
+index/*.log
+index/extract.lock
+index/scan/
+index/catalog/

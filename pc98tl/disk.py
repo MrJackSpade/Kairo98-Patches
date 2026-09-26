@@ -157,8 +157,10 @@ class DiskImage:
         else:
             self.path = path_or_bytes
             raw = bytearray(open(path_or_bytes, "rb").read())
-        self.raw = raw
         self.volumes = []
+        if self._looks_d88(raw):
+            raw = self._d88_to_raw(raw)  # read-only view: sectors in C/H/R order
+        self.raw = raw
         if self._looks_hdi(raw):
             self.kind = "hdi"
             (_r, _t, hsize, _dsize, ssize, spt, heads, _cyl) = struct.unpack_from("<8I", raw, 0)
@@ -175,6 +177,36 @@ class DiskImage:
                 if self._is_bpb(raw, off):
                     self.volumes.append(FatVolume(raw, off))
                     break
+
+    @staticmethod
+    def _looks_d88(raw):
+        if len(raw) < 0x2B0:
+            return False
+        size = struct.unpack_from("<I", raw, 0x1C)[0]
+        first = struct.unpack_from("<I", raw, 0x20)[0]
+        return size == len(raw) and first in (0x2A0, 0x2B0) or (first == 0x2B0 and size <= len(raw))
+
+    @staticmethod
+    def _d88_to_raw(raw):
+        """Flatten a D88 image to raw sectors (tracks in order, sectors by R)."""
+        out = bytearray()
+        for t in range(164):
+            off = struct.unpack_from("<I", raw, 0x20 + t * 4)[0]
+            if not off or off >= len(raw):
+                continue
+            secs = []
+            nsec = struct.unpack_from("<H", raw, off + 4)[0] or 1
+            p = off
+            for _ in range(nsec):
+                if p + 16 > len(raw):
+                    break
+                r = raw[p + 2]
+                size = struct.unpack_from("<H", raw, p + 0x0E)[0]
+                secs.append((r, bytes(raw[p + 16:p + 16 + size])))
+                p += 16 + size
+            for _, data in sorted(secs):
+                out += data
+        return out
 
     @staticmethod
     def _looks_hdi(raw):

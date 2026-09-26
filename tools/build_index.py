@@ -2,8 +2,9 @@
 
     python tools/build_index.py
 
-Inputs (all optional except the inventory):
-  inventory.json                          tools/inventory.py over C:\\PC98
+Inputs (all optional except the scan):
+  index/scan/*.json                       tools/scan_collection.py (deep scan of the collection)
+  index/catalog/*.json, index/folders.json  tools/extract_collection.py (unpacked layout)
   research/ia_translations.json           archive.org/metadata/nec-pc-9801-translations
   research/kairo98_matches.json           Kairo98 catalog/research/matches-v1.json
   research/patches_manual.json            hand-verified extra links:
@@ -12,13 +13,16 @@ Outputs:
   index/index.json   one record per title
   index/INDEX.md     same, grouped by publisher, translated titles marked
 """
+import glob
 import json
 import os
 import re
+import sys
 import urllib.parse
 from collections import defaultdict
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 IA_ITEM = "nec-pc-9801-translations"
 HOMEBREW = "doujinHomebrew.zip"   # grouped by creator; one entry per game here
 
@@ -53,25 +57,37 @@ def _md_link(l):
 
 
 def collection():
-    inv = load(p("inventory.json"))["ok"]
+    """Titles from the deep scan (index/scan), which outlives the deleted zips.
+    Adds each title's folder under the collection root and its disk images with content IDs."""
+    from extract_collection import game_of
+    folders = load(p("index", "folders.json"), {})
+    extracted = {os.path.basename(f)[:-5] for f in glob.glob(p("index", "catalog", "*.json"))}
     titles = {}
-    for zname, files in inv.items():
-        for name, size in files:
-            parts = name.split("/")
-            if name.endswith("/") or len(parts) < 3:
+    for sf in sorted(glob.glob(p("index", "scan", "*.json"))):
+        scan = load(sf)
+        zname = scan["archive"]
+        for rec in scan["images"]:
+            parts = rec["inner"].split("/")
+            if len(parts) < 3:
                 continue
-            publisher, title = parts[0], parts[1]
-            if zname == HOMEBREW:  # "<Creator>/<Creator> (<Game>) [FD].zip"
-                m = re.match(re.escape(parts[1]) + r" \((.+)\)(?: \[[^\]]*\])+\.zip$", parts[-1])
-                if m:
-                    publisher, title = parts[1], m.group(1)
+            publisher, title, variant = game_of(zname, rec["inner"])
             key = "%s/%s" % (zname, title)
             t = titles.setdefault(key, {"key": key, "archive": zname, "publisher": publisher,
-                                        "title": title, "media": set(), "files": [], "patches": []})
-            t["files"].append(name.split("/", 2)[2] if len(parts) > 2 else name)
+                                        "title": title, "folder": folders.get(key), "media": set(),
+                                        "files": [], "images": [], "patches": []})
+            inner_name = rec["inner"].split("/", 2)[2]
+            if inner_name not in t["files"]:
+                t["files"].append(inner_name)
             for tag in re.findall(r"\[([A-Za-z]+)", parts[-1]):
                 if tag in ("FD", "HD", "CD", "ROM", "extras"):
                     t["media"].add(tag)
+            is_cd_img = rec["image"].lower().endswith(".img") and rec["size"] > 4 << 20
+            if (rec.get("kind") in ("hdi", "fd") or "content_id" in rec) and not is_cd_img:
+                img = {"variant": variant, "image": rec["image"], "size": rec["size"],
+                       "content_id": rec.get("content_id")}
+                if zname in extracted and t["folder"]:
+                    img["path"] = os.path.join(t["folder"], *variant.split("/"), *rec["image"].split("/"))
+                t["images"].append(img)
     return titles
 
 
@@ -143,6 +159,8 @@ def main():
         if not keys:
             vndb_unmatched.append(links[0])
         for k in keys:
+            if k not in titles:  # title's archive not scanned yet
+                continue
             for l in links:
                 if l["url"] not in {x["url"] for x in titles[k]["patches"]}:
                     titles[k]["patches"].append(l)
@@ -166,7 +184,9 @@ def main():
             print("manual key not in collection:", key)
 
     out = sorted(titles.values(), key=lambda t: (t["publisher"].lower(), t["title"].lower()))
+    engines = load(p("index", "engines.json"), {})
     for t in out:
+        t["engine"] = engines.get(t["key"], "unlisted")
         t["media"] = sorted(t["media"])
         t["english"] = any(not l.get("wip") for l in t["patches"])
         t["in_progress"] = any(l.get("wip") for l in t["patches"])
@@ -179,7 +199,8 @@ def main():
     lines = ["# PC-98 collection index", "",
              "%d titles from %d publisher archives in `C:\\PC98`. **%d have a known English patch** (marked EN); "
              "%d more have a translation in progress." % (len(out), len({t['archive'] for t in out}), n_en, n_wip), "",
-             "Generated by `tools/build_index.py`; sources are listed in `index/SOURCES.md`.", "",
+             "Generated by `tools/build_index.py`; sources are listed in `index/SOURCES.md`; "
+             "engine families (`backticks`) come from `tools/engine_survey.py`, see `index/ENGINES.md`.", "",
              "## Titles with English patches", ""]
     lines += ["| Publisher | Title | Media | Patches |", "|---|---|---|---|"]
     for t in out:
@@ -202,7 +223,8 @@ def main():
             cur = t["publisher"]
             lines += ["", "### %s (`%s`)" % (cur, t["archive"]), ""]
         mark = " — **EN**" if t["english"] else (" — *translation in progress*" if t["in_progress"] else "")
-        lines.append("- %s [%s]%s" % (t["title"], " ".join(t["media"]), mark))
+        eng = "" if t["engine"] in ("unknown", "unlisted") else " `%s`" % t["engine"]
+        lines.append("- %s [%s]%s%s" % (t["title"], " ".join(t["media"]), eng, mark))
     open(p("index", "INDEX.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
     print("%d titles, %d with English patches, %d archive / %d VNDB entries unmatched"
           % (len(out), n_en, len(unmatched), len(vndb_unmatched)))
