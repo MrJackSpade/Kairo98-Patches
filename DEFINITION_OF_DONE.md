@@ -8,6 +8,20 @@ The order matters: the script is extracted and classified **first**, and then
 handed off, so translation (the maintainer's for ♥ games, Claude's otherwise)
 runs while the patching work goes on. Nobody waits for the patcher.
 
+> **What stops work, and what doesn't**
+>
+> * **The only thing that stops work** on a game is §1: a human translation
+>   already exists, or a team with finished releases has announced one. Then the
+>   game is recorded as skipped and is finished.
+> * **A ♥ mark never stops work.** It changes exactly one thing: Claude doesn't
+>   translate that game's script (§7), and the maintainer does. Every other
+>   section (extraction, handoff, patching, the standard folder, testing,
+>   publishing) is still Claude's job, and must be completed for a ♥ game
+>   exactly as for any other. A ♥ game isn't Done until it's Tooling Done.
+> * The same goes if a no-♥ game turns out to be adult partway through
+>   translation: Claude stops *translating* it, and carries on with all the
+>   other work.
+
 Two kinds of game have different end states:
 
 | Kind | How you tell | Done means |
@@ -62,16 +76,21 @@ index, and **stop**. That game is not ours.
       the list in `tools/adult_scan.py`). Profanity and violence never count.
 - [ ] Put the mark in the game's `notes.md` title (`# ♥ Title`) and in the index.
 - [ ] **Safety valve:** if explicit sexual text turns up while translating a
-      no-♥ game, stop translating. Mark it ♥ (record `"adult": true` with a
-      `"summary"` beginning `manual:` in `research/adult_text.json`) and hand the
-      rest to the maintainer. Never translate past it.
+      no-♥ game, stop *translating*. Never translate past it. Mark the game ♥
+      (record `"adult": true` with a `"summary"` beginning `manual:` in
+      `research/adult_text.json`), and the rest of the translation goes to the
+      maintainer. **All other work on the game continues** (patching, testing,
+      publishing).
+- [ ] **A ♥ result is not a reason to stop.** Continue straight on to the handoff
+      and §4–§8. Only §7 (translation) moves to the maintainer.
 
 ## Handoff: translation starts here, alongside development
 
 - [ ] **♥ game:** commit and push `strings.json` right away, and mark the game
       **Ready to translate** in `ROADMAP.md`'s status table. The maintainer
-      translates it with their own model while the patching work below goes on.
-      Don't hold the script back until the patcher is finished.
+      translates it with their own model while Claude **carries on with §4–§8
+      for this same game**. Handing off the script is not the end of Claude's
+      work on it, and it isn't held back until the patcher is finished.
 - [ ] **No-♥ game:** Claude starts translating (§7) in parallel with the patching work.
 
 ## 4. Patching
@@ -128,7 +147,8 @@ index, and **stop**. That game is not ours.
 - [ ] The English build boots and reads correctly across the screens in §6,
       using real text instead of filler.
 
-(For ♥ games this section belongs to the maintainer. Claude doesn't do it.)
+(For ♥ games this one section belongs to the maintainer, and Claude skips only
+this section. Sections 4, 5, 6 and 8 still apply in full.)
 
 ## 8. Record and publish
 
