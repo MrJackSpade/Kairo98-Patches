@@ -126,6 +126,27 @@ class FatVolume:
             data += self.buf[o:o + self.cluster_size]
         return bytes(data[:ent["size"]])
 
+    def create(self, path, data):
+        """Create (or overwrite) a file with an 8.3 name in an existing directory."""
+        parts = [p for p in path.replace("\\", "/").split("/") if p]
+        try:
+            self.find(path)
+            return self.write(path, data)
+        except FileNotFoundError:
+            pass
+        name, _, ext = parts[-1].upper().partition(".")
+        if not (1 <= len(name) <= 8 and len(ext) <= 3):
+            raise ValueError("not an 8.3 name: %s" % parts[-1])
+        cluster = self.find("/".join(parts[:-1]))["cluster"] if len(parts) > 1 else 0
+        slot = next((off for off, e in self._dir_slots(cluster) if e[0] in (0, 0xE5)), None)
+        if slot is None:
+            raise IOError("directory full")
+        entry = bytearray(32)
+        entry[0:11] = (name.ljust(8) + ext.ljust(3)).encode("ascii")
+        entry[11] = 0x20  # archive
+        self.buf[slot:slot + 32] = entry
+        self.write(path, data)
+
     def write(self, path, data):
         """Replace an existing file's contents, growing/shrinking its chain."""
         ent = self.find(path)

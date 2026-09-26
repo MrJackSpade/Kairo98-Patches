@@ -1,5 +1,7 @@
 # Dalk (DALK, Alice Soft, 1992)
 
+> This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
+
 Source image: `Alice Soft/Dalk/Dalk [HD].zip` → `Dalk (v1.08) (uncensored).hdi`
 (sha256 recorded in `strings.json`; the patcher warns if you use a different dump).
 

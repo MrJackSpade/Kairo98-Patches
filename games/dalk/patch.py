@@ -14,6 +14,14 @@ import advhack  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GAME_DIR = "DALK"
+NOTE = """Dalk - English patch (machine translation)
+
+The English script in this patch is a MACHINE TRANSLATION (AI/MTL), not a
+human translation. It was made so the game can be played at all. If a human
+translation is released, use that instead; this patch will be retired.
+
+Made with the PC-98 translation kit (Kairo98-Patches).
+"""
 
 
 def main():
@@ -32,6 +40,7 @@ def main():
     adv, warn = advhack.apply_exe_strings(adv, texts, game.enc.encode)
     report += warn
     vol.write(GAME_DIR + "/ADV.COM", advhack.build(adv))
+    vol.create(GAME_DIR + "/MTL_NOTE.TXT", NOTE.replace(chr(10), chr(13) + chr(10)).encode("ascii"))
     img.save(dst)
     done = sum(1 for e in doc["strings"] if e["en"])
     print("patched %s (%s mode, %d/%d strings translated)" % (dst, mode, done, len(doc["strings"])))

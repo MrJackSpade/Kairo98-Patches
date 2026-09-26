@@ -121,6 +121,9 @@ def main():
                 "url": "https://archive.org/download/%s/%s" % (IA_ITEM, urllib.parse.quote(f)),
                 "source": "archive.org PC-98 translation archive (pre-patched)",
                 "tags": ia_tags(f)}
+        if f.startswith("Incomplete/"):
+            link["partial"] = True
+            link["label"] += " (incomplete)"
         hit = False
         for g in groups:
             if g in by_group:
@@ -185,11 +188,21 @@ def main():
 
     out = sorted(titles.values(), key=lambda t: (t["publisher"].lower(), t["title"].lower()))
     engines = load(p("index", "engines.json"), {})
+    announced = load(p("research", "announced.json"), {})
     for t in out:
         t["engine"] = engines.get(t["key"], "unlisted")
         t["media"] = sorted(t["media"])
-        t["english"] = any(not l.get("wip") for l in t["patches"])
-        t["in_progress"] = any(l.get("wip") for l in t["patches"])
+        human = [l for l in t["patches"] if l.get("source") != "this repo"]
+        t["english"] = any(not l.get("wip") and not l.get("partial") for l in human)
+        t["in_progress"] = any(l.get("wip") or l.get("partial") for l in human)
+        t["announced"] = announced.get(t["key"], [])
+        ours = any(l.get("source") == "this repo" for l in t["patches"])
+        # skip = a human translation exists, or a team with finished releases announced one
+        t["skip"] = t["english"] or any(a["proven"] for a in t["announced"])
+        t["status"] = ("human translation" if t["english"] else
+                       "announced by proven team" if t["skip"] else
+                       "machine translation (this repo)" if ours else
+                       "in progress elsewhere" if t["in_progress"] or t["announced"] else "untranslated")
     os.makedirs(p("index"), exist_ok=True)
     n_wip = sum(t["in_progress"] and not t["english"] for t in out)
     json.dump({"titles": out, "unmatched_translations": unmatched, "vndb_unmatched": vndb_unmatched},
@@ -207,12 +220,26 @@ def main():
         if t["english"]:
             lines.append("| %s | %s | %s | %s |" % (t["publisher"], t["title"], " ".join(t["media"]),
                          "<br>".join(_md_link(l) for l in t["patches"])))
-    lines += ["", "## Translations in progress (no finished English patch)", "",
+    lines += ["", "## Announced by teams with finished releases (this repo skips these)", "",
+              "| Publisher | Title | Team | Status | Source |", "|---|---|---|---|---|"]
+    for t in out:
+        for a in t["announced"]:
+            if a["proven"] and not t["english"]:
+                lines.append("| %s | %s | %s | %s (checked %s) | [link](%s) |" % (
+                    t["publisher"], t["title"], a["team"], a["status"], a["checked"], a["url"]))
+    lines += ["", "## Translations in progress elsewhere (no finished English patch)", "",
               "| Publisher | Title | Media | Projects |", "|---|---|---|---|"]
     for t in out:
         if t["in_progress"] and not t["english"]:
             lines.append("| %s | %s | %s | %s |" % (t["publisher"], t["title"], " ".join(t["media"]),
-                         "<br>".join(_md_link(l) for l in t["patches"])))
+                         "<br>".join(_md_link(l) for l in t["patches"] if l.get("source") != "this repo")))
+    lines += ["", "## Machine translations in this repo", "",
+              "AI/MTL-driven, not human translations. Each is retired when a human translation appears.", "",
+              "| Publisher | Title | Status |", "|---|---|---|"]
+    for t in out:
+        for l in t["patches"]:
+            if l.get("source") == "this repo":
+                lines.append("| %s | %s | %s |" % (t["publisher"], t["title"], _md_link(l)))
     if unmatched:
         lines += ["", "## Translations not yet matched to a collection title", ""]
         lines += ["- [%s](https://archive.org/download/%s/%s)" % (f, IA_ITEM, urllib.parse.quote(f)) for f in unmatched]
@@ -222,7 +249,9 @@ def main():
         if t["publisher"] != cur:
             cur = t["publisher"]
             lines += ["", "### %s (`%s`)" % (cur, t["archive"]), ""]
-        mark = " — **EN**" if t["english"] else (" — *translation in progress*" if t["in_progress"] else "")
+        mark = {"human translation": " — **EN**", "announced by proven team": " — *announced (skip)*",
+                "machine translation (this repo)": " — *MTL (this repo)*",
+                "in progress elsewhere": " — *in progress elsewhere*"}.get(t["status"], "")
         eng = "" if t["engine"] in ("unknown", "unlisted") else " `%s`" % t["engine"]
         lines.append("- %s [%s]%s%s" % (t["title"], " ".join(t["media"]), eng, mark))
     open(p("index", "INDEX.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")

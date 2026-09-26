@@ -1,0 +1,21 @@
+{
+ "_note": "Announced English translations. proven=true means the team has finished releases (research/proven_teams.json) -> we skip the title.",
+ "AliceSoft.zip/Toushin Toshi II": [
+  {
+   "team": "BabaJeanmel & Alpharobo (with RottenBlock)",
+   "proven": true,
+   "status": "TBA, 25% (page 'under construction')",
+   "checked": "2026-09-26",
+   "url": "https://baba-jpc.neocities.org/translations/toushin2/toushin2.htm"
+  }
+ ],
+ "Koei.zip/Tamashii no Mon - Dante Shinkyoku yori": [
+  {
+   "team": "BabaJeanmel & Alpharobo (with Kirinn B)",
+   "proven": true,
+   "status": "TBA, 25%",
+   "checked": "2026-09-26",
+   "url": "https://baba-jpc.neocities.org/translations/dante/dante.htm"
+  }
+ ]
+}

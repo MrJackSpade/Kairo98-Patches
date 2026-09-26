@@ -1,0 +1,12 @@
+{
+ "_note": "Verified home pages of translation teams. Keys match names in research/proven_teams.json. Per-game patch pages and repos are linked from index/index.json instead.",
+ "BabaJeanmel": ["https://baba-jpc.neocities.org/translations/translations.htm"],
+ "Alpharobo": ["https://alpharobo.neocities.org/"],
+ "46 OkuMen": ["https://46okumen.com/", "https://github.com/46OkuMen"],
+ "46 Okumen": ["https://46okumen.com/", "https://github.com/46OkuMen"],
+ "Nebulous Translations": ["https://nebulous.group/"],
+ "Svipur": ["https://github.com/Svipur"],
+ "NLeseul": ["https://github.com/nleseul"],
+ "Lynn": ["https://github.com/lynn"],
+ "Her-Saki": ["https://github.com/Her-Saki"]
+}

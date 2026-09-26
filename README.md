@@ -1,10 +1,36 @@
 # PC-98 translation patch kit
 
-Extract Japanese script text from PC-98 disk images into JSON, translate the
-JSON (machine translation is fine), and patch it back into a copy of the image.
+> **The translations made here are machine translations (AI/MTL). They are not
+> human translations.** They exist so games nobody has translated can be played
+> at all. Where a human translation exists or has been announced by a team with
+> a track record, we don't make one. We link to theirs instead, and when a human
+> translation comes out for a game we've done, our version is retired.
+
+This repo has two parts:
+
+1. **An index of the PC-98 library and the human translations of it**
+   ([index/INDEX.md](index/INDEX.md)). It links every finished, partial, and
+   announced translation we know of, plus the teams behind them
+   ([index/TEAMS.md](index/TEAMS.md)). Please support those teams directly.
+2. **Tools that make machine translations possible** for the rest. They extract
+   the Japanese script from a PC-98 disk image into JSON, the JSON gets machine
+   translated, and the patcher writes it back into a copy of the image.
 
 No game data lives in this repo. Every tool reads an image you supply and
 writes a new one next to it; the originals are never modified.
+
+## Policy
+
+* **Skip** any game with a human English translation, or one announced by a team
+  that has finished releases (`index/TEAMS.md`). Those are listed in the index
+  with their source and the date we checked.
+* A game announced only by a team with no finished releases is still fair game,
+  since we don't wait for a new team to prove itself. The announcement stays
+  linked.
+* Every machine translation is labeled as one in this README, in its game's
+  `notes.md`, and in the index.
+* When a human translation of a game we've machine-translated appears, ours is
+  marked superseded and removed, and the index links to theirs.
 
 ## Layout
 
