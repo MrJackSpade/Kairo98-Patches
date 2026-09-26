@@ -57,7 +57,8 @@ def main():
     out_dir = os.path.join(here, "output")
     os.makedirs(out_dir, exist_ok=True)
     safe = "".join(c for c in title if c not in '<>:"/\\|?*')
-    dst = os.path.join(out_dir, "%s (English MTL).hdi" % safe)
+    ext = os.path.splitext(src)[1].lower() or ".hdi"   # floppy games stay floppy images
+    dst = os.path.join(out_dir, "%s (English MTL)%s" % (safe, ext))
     rc = subprocess.call([sys.executable, os.path.join(here, "patch.py"), src, dst], cwd=here)
     if rc != 0:
         fail("patching failed (see messages above)")

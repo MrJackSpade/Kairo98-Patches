@@ -1,0 +1,34 @@
+{
+ "title": "D.P.S (Dream Program System) SG Set 2",
+ "key": "AliceSoft.zip/D.P.S (Dream Program System) SG Set 2",
+ "image": "D.P.S (Dream Program System) SG Set 2\\D.P.S (Dream Program System) SG Set 2 [FD] [Set 1]\\D.P.S (Dream Program System) SG Set 2 [Set 1] (System disk).hdm",
+ "game_dir": "",
+ "version": 1,
+ "encoding": "textvram",
+ "config": {
+  "menu_fit_jp": true
+ },
+ "sets": [
+  {
+   "prefix": "s1:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 2 [Set 1] (Akai Yoru).hdm"
+  },
+  {
+   "prefix": "s2:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 2 [Set 1] (Antique House).hdm"
+  },
+  {
+   "prefix": "s3:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 2 [Set 1] (Ikenai Naika Kenshin Futatabi).hdm"
+  }
+ ]
+}

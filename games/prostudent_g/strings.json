@@ -190762,6 +190762,686 @@
     "obj:22"
    ],
    "max_cells": 10
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "ちょこちゃん",
+   "en": "",
+   "refs": [
+    "adv:155d"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "　沙織ちゃん",
+   "en": "",
+   "refs": [
+    "adv:156a"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "　さんちゃん",
+   "en": "",
+   "refs": [
+    "adv:1577"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "　愛の悟郎　",
+   "en": "",
+   "refs": [
+    "adv:1584"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "本のディスク",
+   "en": "",
+   "refs": [
+    "adv:1591"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "（キー操作｜リターン：入力，スペース：削除，ＥＳＣ：終了）",
+   "en": "",
+   "refs": [
+    "adv:2816"
+   ],
+   "max_bytes": 58
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "　　ｐｒｏ　ｓｔｕｄｅｎｔ－Ｇ－",
+   "en": "",
+   "refs": [
+    "adv:3a0b"
+   ],
+   "max_bytes": 32
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "　　　　　　ＳＴＡＦＦ",
+   "en": "",
+   "refs": [
+    "adv:3a30"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "　　　　　ゲームデザイン",
+   "en": "",
+   "refs": [
+    "adv:3a4d"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "　　　　　みんなで考えた",
+   "en": "",
+   "refs": [
+    "adv:3a66"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "　　　　　ストーリー原案",
+   "en": "",
+   "refs": [
+    "adv:3a85"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "　　　これもみんなで話あった",
+   "en": "",
+   "refs": [
+    "adv:3a9e"
+   ],
+   "max_bytes": 28
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "　　　　　　シナリオ",
+   "en": "",
+   "refs": [
+    "adv:3ac1"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "　　　　　　イマーム",
+   "en": "",
+   "refs": [
+    "adv:3ad6"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "　　　本のディスクのシナリオ",
+   "en": "",
+   "refs": [
+    "adv:3b05"
+   ],
+   "max_bytes": 28
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "　　　　　　　と",
+   "en": "",
+   "refs": [
+    "adv:3b22"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "　　　　　　イラスト",
+   "en": "",
+   "refs": [
+    "adv:3b33"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "　　　ラッシャー・ヴェラク",
+   "en": "",
+   "refs": [
+    "adv:3b48"
+   ],
+   "max_bytes": 26
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "　　　キャラクターデザイン",
+   "en": "",
+   "refs": [
+    "adv:3b69"
+   ],
+   "max_bytes": 26
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "　　　　　　　Ｋ",
+   "en": "",
+   "refs": [
+    "adv:3b84"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "　　　　　　むっち",
+   "en": "",
+   "refs": [
+    "adv:3b95"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "　　　　　　　Ｋ",
+   "en": "",
+   "refs": [
+    "adv:3bd1"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "　　　　　　むっち",
+   "en": "",
+   "refs": [
+    "adv:3be2"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "　　　　　　むっち",
+   "en": "",
+   "refs": [
+    "adv:3c0e"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00025",
+   "kind": "exe",
+   "jp": "　　　　グラフィックス",
+   "en": "",
+   "refs": [
+    "adv:3c27"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00026",
+   "kind": "exe",
+   "jp": "　　　　　　ちーぼう",
+   "en": "",
+   "refs": [
+    "adv:3c3e"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00027",
+   "kind": "exe",
+   "jp": "　　　（暗号はＣ４Ｆ８Ｋ）",
+   "en": "",
+   "refs": [
+    "adv:3c53"
+   ],
+   "max_bytes": 26
+  },
+  {
+   "id": "e00028",
+   "kind": "exe",
+   "jp": "　　　　　ＫＡＯＲＩ",
+   "en": "",
+   "refs": [
+    "adv:3c6e"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00029",
+   "kind": "exe",
+   "jp": "　　　　　　ぷかぴー",
+   "en": "",
+   "refs": [
+    "adv:3caa"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00030",
+   "kind": "exe",
+   "jp": "　　　　　　むっち",
+   "en": "",
+   "refs": [
+    "adv:3cbf"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00031",
+   "kind": "exe",
+   "jp": "　　　　　　　Ｋ",
+   "en": "",
+   "refs": [
+    "adv:3cd2"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00032",
+   "kind": "exe",
+   "jp": "　　　グラフィックス背景",
+   "en": "",
+   "refs": [
+    "adv:3ce9"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00033",
+   "kind": "exe",
+   "jp": "　　　　　　なかじー",
+   "en": "",
+   "refs": [
+    "adv:3d02"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00034",
+   "kind": "exe",
+   "jp": "　　　スペシャルＣＧゲスト",
+   "en": "",
+   "refs": [
+    "adv:3d1d"
+   ],
+   "max_bytes": 26
+  },
+  {
+   "id": "e00035",
+   "kind": "exe",
+   "jp": "　　　　　ＹＵＫＩＭＩ",
+   "en": "",
+   "refs": [
+    "adv:3d38"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00036",
+   "kind": "exe",
+   "jp": "　　　　　　ぷりん",
+   "en": "",
+   "refs": [
+    "adv:3d4f"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00037",
+   "kind": "exe",
+   "jp": "　　　　　　プログラム",
+   "en": "",
+   "refs": [
+    "adv:3d95"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00038",
+   "kind": "exe",
+   "jp": "　　９８０１担当　ＷＡＯ",
+   "en": "",
+   "refs": [
+    "adv:3daf"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00039",
+   "kind": "exe",
+   "jp": "　　　　　　　　　しげ",
+   "en": "",
+   "refs": [
+    "adv:3dc8"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00040",
+   "kind": "exe",
+   "jp": "　　　Ｘ６８担当　ＰＬＵＭ’Ｆ",
+   "en": "",
+   "refs": [
+    "adv:3de2"
+   ],
+   "max_bytes": 30
+  },
+  {
+   "id": "e00041",
+   "kind": "exe",
+   "jp": "　ＴＯＷＮＳ担当　ＷＡＯ",
+   "en": "",
+   "refs": [
+    "adv:3e04"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00042",
+   "kind": "exe",
+   "jp": "　　　　　　　　　しげ",
+   "en": "",
+   "refs": [
+    "adv:3e3d"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00043",
+   "kind": "exe",
+   "jp": "　　　ＡＬＩＣＥ－ＤＯＳ制作",
+   "en": "",
+   "refs": [
+    "adv:3e5a"
+   ],
+   "max_bytes": 28
+  },
+  {
+   "id": "e00044",
+   "kind": "exe",
+   "jp": "　　　　　　ＷＡＯ",
+   "en": "",
+   "refs": [
+    "adv:3e77"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00045",
+   "kind": "exe",
+   "jp": "　　　　　　ＰＬＵＭ’Ｆ",
+   "en": "",
+   "refs": [
+    "adv:3e8a"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00046",
+   "kind": "exe",
+   "jp": "　　　　　　しげ",
+   "en": "",
+   "refs": [
+    "adv:3ea3"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00047",
+   "kind": "exe",
+   "jp": "　　　スペシャルサンクス",
+   "en": "",
+   "refs": [
+    "adv:3eba"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00048",
+   "kind": "exe",
+   "jp": "　　　　ｆｏｒ　ＣＧ",
+   "en": "",
+   "refs": [
+    "adv:3ed3"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00049",
+   "kind": "exe",
+   "jp": "　　　　　ばっすん",
+   "en": "",
+   "refs": [
+    "adv:3f1e"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00050",
+   "kind": "exe",
+   "jp": "　　　　　ごぶりん",
+   "en": "",
+   "refs": [
+    "adv:3f31"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00051",
+   "kind": "exe",
+   "jp": "　　　　　　ヨシタカ",
+   "en": "",
+   "refs": [
+    "adv:3f5d"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00052",
+   "kind": "exe",
+   "jp": "　Ｓｐｅｃｉａｌ　Ｔｈａｎｋｓ！！",
+   "en": "",
+   "refs": [
+    "adv:3f78"
+   ],
+   "max_bytes": 34
+  },
+  {
+   "id": "e00053",
+   "kind": "exe",
+   "jp": "　　　　　ＯＫＡＭＵＲＡ",
+   "en": "",
+   "refs": [
+    "adv:3f9b"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00054",
+   "kind": "exe",
+   "jp": "　　　　　　ふーちゃん",
+   "en": "",
+   "refs": [
+    "adv:3fb4"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00055",
+   "kind": "exe",
+   "jp": "　　　　　　　ＰＤ．",
+   "en": "",
+   "refs": [
+    "adv:3fcb"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00056",
+   "kind": "exe",
+   "jp": "　　　　　ディレクター",
+   "en": "",
+   "refs": [
+    "adv:3fe7"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00057",
+   "kind": "exe",
+   "jp": "　　　　　　　とり",
+   "en": "",
+   "refs": [
+    "adv:3ffe"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00058",
+   "kind": "exe",
+   "jp": "　　　　プロデューサー",
+   "en": "",
+   "refs": [
+    "adv:4017"
+   ],
+   "max_bytes": 22
+  },
+  {
+   "id": "e00059",
+   "kind": "exe",
+   "jp": "　　　　　　ＴＡＤＡ",
+   "en": "",
+   "refs": [
+    "adv:402e"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00060",
+   "kind": "exe",
+   "jp": "　（Ｃ）　ＡＬＩＣＥ　ＳＯＦＴ",
+   "en": "",
+   "refs": [
+    "adv:4049"
+   ],
+   "max_bytes": 30
+  },
+  {
+   "id": "e00061",
+   "kind": "exe",
+   "jp": "　　ｐｒｏ　ｓｔｕｄｅｎｔ－Ｇ－",
+   "en": "",
+   "refs": [
+    "adv:4089"
+   ],
+   "max_bytes": 32
+  },
+  {
+   "id": "e00062",
+   "kind": "exe",
+   "jp": "　　　　　　　ＥＮＤ",
+   "en": "",
+   "refs": [
+    "adv:40aa"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00063",
+   "kind": "exe",
+   "jp": "【Ａ－ｄｒｉｖｅのライトプロテクトを解除してください】",
+   "en": "",
+   "refs": [
+    "adv:52a4"
+   ],
+   "max_bytes": 54
+  },
+  {
+   "id": "e00064",
+   "kind": "exe",
+   "jp": "動詞，名詞が存在しません",
+   "en": "",
+   "refs": [
+    "adv:52db"
+   ],
+   "max_bytes": 24
+  },
+  {
+   "id": "e00065",
+   "kind": "exe",
+   "jp": "やっぱりやめる",
+   "en": "",
+   "refs": [
+    "adv:52f4"
+   ],
+   "max_bytes": 14
+  },
+  {
+   "id": "e00066",
+   "kind": "exe",
+   "jp": "【★－ｄｒｉｖｅに［",
+   "en": "",
+   "refs": [
+    "adv:5303"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00067",
+   "kind": "exe",
+   "jp": "］－ｄｉｓｋを入れてください】",
+   "en": "",
+   "refs": [
+    "adv:531b"
+   ],
+   "max_bytes": 30
+  },
+  {
+   "id": "e00068",
+   "kind": "exe",
+   "jp": "　Ａ－ＤＩＳＫ　",
+   "en": "",
+   "refs": [
+    "adv:5da0"
+   ],
+   "max_bytes": 16
   }
  ]
 }

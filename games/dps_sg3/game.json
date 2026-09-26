@@ -1,0 +1,34 @@
+{
+ "title": "D.P.S (Dream Program System) SG Set 3",
+ "key": "AliceSoft.zip/D.P.S (Dream Program System) SG Set 3",
+ "image": "D.P.S (Dream Program System) SG Set 3\\D.P.S (Dream Program System) SG Set 3 [FD]\\D.P.S (Dream Program System) SG Set 3 (System disk).hdm",
+ "game_dir": "",
+ "version": 1,
+ "encoding": "textvram",
+ "config": {
+  "menu_fit_jp": true
+ },
+ "sets": [
+  {
+   "prefix": "s1:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 3 (Rabbit - P4P).hdm"
+  },
+  {
+   "prefix": "s2:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 3 (Shinkon-san Monogatari).hdm"
+  },
+  {
+   "prefix": "s3:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG Set 3 (Sotsugyou).hdm"
+  }
+ ]
+}

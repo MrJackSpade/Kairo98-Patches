@@ -29,6 +29,8 @@ def is_message(c):
 COMMON = {"}": "", "]": "", "A": "", "F": "", "K": "", "R": "", "@": "a", "\\": "a",
           "&": "e", "%": "e", "[": "bba", ":": "ebba", "M": "S", "S": "b", "X": "b"}
 TABLES = {
+    1: dict(COMMON, **{"{": "e", "G": "b", "L": "b", "P": "b", "Q": "b", "U": "bb",
+                       "Y": "ee", "Z": "ee"}),
     2: dict(COMMON, **{"{": "e", "G": "e", "B": "eeeeeee", "D": "eeeeeeee", "E": "eee",
                        "T": "eee", "O": "eee", "W": "eeee", "H": "be", "I": "eee", "J": "ee",
                        "N": "ee", "U": "ee", "Y": "ee", "Z": "ee", "L": "b", "P": "b", "Q": "b",
@@ -197,17 +199,24 @@ class ADisk:
         """Rebuild every disk file with new page bytes (aligned with self.links)."""
         out = {}
         for disk, data in self.files.items():
-            mine = [(li, i) for i, (d, li) in enumerate(self.links) if d == disk]
-            if not mine:
+            linked = {li: i for i, (d, li) in enumerate(self.links) if d == disk}
+            if not linked:
                 out[disk] = data
                 continue
-            first = min(struct.unpack_from("<H", data, li * 2)[0] for li, _ in mine)
-            last_end = max(struct.unpack_from("<H", data, li * 2 + 2)[0] for li, _ in mine)
+            # every pointer-table entry is repacked; entries no link points to
+            # (orphan pages) keep their original bytes
+            entries = range(1, self.valid.get(disk, 0) + 1)
+            first = min(struct.unpack_from("<H", data, li * 2)[0] for li in entries)
+            last_end = max(struct.unpack_from("<H", data, li * 2 + 2)[0] for li in entries)
             slack = data[(last_end - 1) * 256:]  # bytes after the last page (kept as-is)
             head = bytearray(data[:(first - 1) * 256])
             body, cur = bytearray(), first
-            for li, i in sorted(mine):
-                pg = pages[i] or b""
+            for li in entries:
+                if li in linked:
+                    pg = pages[linked[li]] or b""
+                else:
+                    s_, e_ = struct.unpack_from("<HH", data, li * 2)
+                    pg = data[(s_ - 1) * 256:(e_ - 1) * 256]
                 nsec = (len(pg) + 255) // 256
                 struct.pack_into("<HH", head, li * 2, cur, cur + nsec)
                 body += pg.ljust(nsec * 256, b"\0")

@@ -1,0 +1,34 @@
+{
+ "title": "D.P.S (Dream Program System) SG",
+ "key": "AliceSoft.zip/D.P.S (Dream Program System) SG",
+ "image": "D.P.S (Dream Program System) SG\\D.P.S (Dream Program System) SG [FD]\\D.P.S (Dream Program System) SG (System disk).hdm",
+ "game_dir": "",
+ "version": 1,
+ "encoding": "textvram",
+ "config": {
+  "menu_fit_jp": true
+ },
+ "sets": [
+  {
+   "prefix": "s1:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG (Fahnen Fliegen).hdm"
+  },
+  {
+   "prefix": "s2:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG (Katei Kyoushi wa Suteki na Oshigoto).hdm"
+  },
+  {
+   "prefix": "s3:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "D.P.S (Dream Program System) SG (Nobunaga no Inbo).hdm"
+  }
+ ]
+}

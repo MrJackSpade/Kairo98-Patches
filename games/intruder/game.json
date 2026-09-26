@@ -1,0 +1,12 @@
+{
+ "title": "Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)",
+ "key": "AliceSoft.zip/Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)",
+ "image": "Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)\\Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) [FD]\\Intruder - Sakura Yashiki no Tansaku (FM Towns conversion).hdm",
+ "game_dir": "",
+ "version": 1,
+ "encoding": "textvram",
+ "engine": "ADVINT.COM",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

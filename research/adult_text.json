@@ -410,5 +410,41 @@
   "distinct_terms": 0,
   "summary": "0 of 7401 strings match the sexual-vocabulary list (0 distinct terms)",
   "adult_ids": []
+ },
+ "AliceSoft.zip/Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)": {
+  "adult": false,
+  "hits": 0,
+  "strings": 1966,
+  "distinct_terms": 0,
+  "summary": "0 of 1966 strings match the sexual-vocabulary list (0 distinct terms)",
+  "adult_ids": []
+ },
+ "AliceSoft.zip/D.P.S (Dream Program System) SG": {
+  "adult": false,
+  "hits": 1,
+  "strings": 10861,
+  "distinct_terms": 1,
+  "summary": "1 of 10861 strings match the sexual-vocabulary list (1 distinct terms)",
+  "adult_ids": [
+   "m08562"
+  ]
+ },
+ "AliceSoft.zip/D.P.S (Dream Program System) SG Set 2": {
+  "adult": false,
+  "hits": 0,
+  "strings": 16452,
+  "distinct_terms": 0,
+  "summary": "0 of 16452 strings match the sexual-vocabulary list (0 distinct terms)",
+  "adult_ids": []
+ },
+ "AliceSoft.zip/D.P.S (Dream Program System) SG Set 3": {
+  "adult": false,
+  "hits": 1,
+  "strings": 13306,
+  "distinct_terms": 1,
+  "summary": "1 of 13306 strings match the sexual-vocabulary list (1 distinct terms)",
+  "adult_ids": [
+   "m03793"
+  ]
  }
 }

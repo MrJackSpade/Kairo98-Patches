@@ -20,7 +20,7 @@ import hashlib
 import struct
 
 from .alice_sys import ADisk, Page, mblen
-from . import alice3_font
+from . import alice3_font, alice1_text
 from . import packfont
 from .text import encode_fullwidth, wrap, pseudo, TOKEN_RE
 
@@ -70,6 +70,8 @@ class Encoder:
             return packfont.encode(s, encode_fullwidth)
         if self.kind == "halfkana":
             return alice3_font.encode(s, encode_fullwidth)
+        if self.kind == "textvram":
+            return alice1_text.encode(s, encode_fullwidth)
         return encode_fullwidth(s)
 
     def cells(self, s):
@@ -79,6 +81,8 @@ class Encoder:
             return packfont.cells(plain) + extra
         if self.kind == "halfkana":
             return alice3_font.cells(plain) + extra
+        if self.kind == "textvram":
+            return alice1_text.cells(plain) + extra
         return (sum(1 if c == " " else 2 for c in plain) + 1) // 2 + extra
 
 
@@ -189,7 +193,7 @@ class Sys2Game:
                 "max_page_bytes": 65000}
 
     def __init__(self, vol, game_dir, version=2, ag00="AG00.DAT", config=None,
-                 disks=None, scope=None, prefix=""):
+                 disks=None, scope=None, prefix="", adisk_bytes=None):
         """disks: {disk number: path} overriding ADISK/BDISK discovery in game_dir.
         scope: disk numbers whose pages this instance handles (scenario sets share
         disk 1 but carry their own BDISK).  prefix: string-ref prefix per set."""
@@ -208,6 +212,9 @@ class Sys2Game:
             except FileNotFoundError:
                 continue
             self.disk_paths[n] = path
+        if adisk_bytes is not None:  # link table from another disk image (floppy sets)
+            files[1] = adisk_bytes
+            self.disk_paths.pop(1, None)
         self.adisk = ADisk(files)
         self.scope = set(scope) if scope else set(files)
         self.prefix = prefix
@@ -422,7 +429,7 @@ class Sys2Game:
                 data = page.assemble()
             new_pages.append(data)
         for n, data in self.adisk.build(new_pages).items():
-            if n in self.scope:
+            if n in self.scope and n in self.disk_paths:
                 self.vol.write(self.disk_paths[n], data)
         if not self.ag00_path or 1 not in self.scope:
             return report
