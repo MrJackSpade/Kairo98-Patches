@@ -19,7 +19,9 @@ for g in $games; do
         fd2=$(ls "test_$g - "* 2>/dev/null | head -1)
         if [ -n "$fd2" ]; then set -- -Fd1 "$main" -Fd2 "$fd2"; else set -- -Fd1 "$main"; fi
     fi
+    rm -f emu/shots/boot_${g}_*.png
     pwsh -NoProfile -File tools/emu_shot.ps1 "$@" -Out "emu/shots/boot_$g" -Steps "$steps" >/dev/null
-    python tools/contact_sheet.py "emu/shots/sheet_$g.png" 5 emu/shots/boot_${g}_1.png emu/shots/boot_${g}_2.png emu/shots/boot_${g}_3.png emu/shots/boot_${g}_4.png emu/shots/boot_${g}_5.png
+    shots=$(ls emu/shots/boot_${g}_*.png | sort -V)
+    python tools/contact_sheet.py "emu/shots/sheet_$g.png" $(echo "$shots" | wc -l) $shots
     echo "booted $g"
 done

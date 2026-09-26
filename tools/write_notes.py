@@ -1,4 +1,4 @@
-"""Write games/<title>/notes.md for every Alice Soft game from the facts.
+"""Write games/<title>/notes.md for every Alice Soft and Illusion game from the facts.
 
     python tools/write_notes.py [folder ...]
 
@@ -69,6 +69,85 @@ COMMON = """* The hook goes just above the program's old stack top, and the stac
   full, after the hook, and the code that loads it is pointed there."""
 
 
+ILLUSION_DISPLAY = """## English display (`pc98tl/illusion_font.py`)
+
+* The message library draws a record one Shift-JIS character at a time from
+  the kanji ROM. Its draw loop is rewritten in place (both far calls stay at
+  their offsets, so the relocation table still matches): a byte below 80 is
+  drawn as the kanji ROM's 8x16 ANK glyph, one column wide, so English is
+  half-width and untranslated Japanese still draws as before.
+* English is word-wrapped to the message window's width (taken from the
+  engine's calls to the message routine); a line the engine wraps by itself
+  swallows the line break right after it.
+* Messages longer than the box page: the box area is saved on graphics page 1
+  (unused by these games), the game waits for a click, the box is restored and
+  the text continues at the top. Only messages longer than the box do this.
+* The pager lives in a small DOS block of its own (under 1 KB) that an entry
+  stub allocates at the top of memory before the game starts; the stub's
+  load area is zeroed again afterwards. The game keeps all its other memory.
+* The message lookup's end mark changes from `!` to the ^Z every message file
+  ends with, so English may use `!`. All patch sites are found by byte
+  signature."""
+
+
+def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    done = sum(1 for e in strings if e["en"])
+    files = sorted({r.split(":")[0] for e in strings if e["kind"] == "msg" for r in e["refs"]})
+    out = ["# %s%s (Illusion)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Illusion's tmexec engine, `%s/%s`. Messages are `#nnnnn` ... `$` records in %s; "
+            "the engine's own Japanese strings (also `$`-terminated) are replaced in place."
+            % (cfg["game_dir"], cfg["engine"], ", ".join("`%s`" % f for f in files)),
+            "", ILLUSION_DISPLAY, "", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, k) for k, n in sorted(kinds.items()))), ""]
+    if heart:
+        basis = a.get("summary", "")
+        if basis.startswith("manual:"):
+            out.append("♥ by the safety valve: %s. Claude translated %d strings before that point; "
+                       "the rest is the maintainer's to translate." % (basis[len("manual:"):].strip(), done))
+        else:
+            out.append("♥ by the script-text scan (%s). The maintainer translates it; %d strings "
+                       "have English so far." % (basis, done))
+    else:
+        out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
+            a.get("summary", "not scanned"), done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Message lines wrap at the message window's width%s; `\\n` forces a break, "
+            "and a line that already fits is kept as written (spacing included)."
+            % (" (%d columns, set in game.json)" % cfg["window_cols"] if cfg.get("window_cols") else ""),
+            "* Clickable menus and buttons are hit-tested at the Japanese layout: those records "
+            "carry a `note` in `strings.json` with the lines and columns to keep.",
+            "* Engine strings: their original byte length.",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (logos, captions, title menus drawn as pictures).",
+            "* Installer and driver messages."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for t, r in extra.get(name, {}).get("tests", []):
+        out.append("| %s | %s |" % (t, r))
+    out.append("| Gameplay past the opening scenes, save/load, endings | not yet seen |")
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def main():
     names = sys.argv[1:] or sorted(os.listdir(os.path.join(ROOT, "games")))
     adult = load("research", "adult_text.json", default={})
@@ -80,6 +159,11 @@ def main():
         cfg = load("games", name, "game.json")
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
+            continue
+        if cfg.get("encoding") == "illusion":
+            out = illusion_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
             continue
         key = cfg["key"]
         a = adult.get(key, {})

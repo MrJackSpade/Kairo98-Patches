@@ -76,3 +76,10 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Toushin Toshi II - Soshite, Sorekara | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 1799 of 5485) | works, memory-neutral | OK (see notes) |
 | ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
 | ♥ Abunai Tengu Densetsu | alice-sys (System 1 scenario, N88-BASIC engine) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 98 of 4244) | works, memory-neutral; adds cylinders 77-81 to the disks for the longer script | OK (see notes) |
+| ♥ Hyouryuu | tmexec (Illusion) | extracted | **Ready to translate** (maintainer) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Kankin | tmexec (Illusion) | extracted | **Ready to translate** (maintainer) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Kitoujima Joshi Keimusho | tmexec (Illusion) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 6 of 2602) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Mokkoriman RPG | tmexec (Illusion) | extracted | **Ready to translate** (maintainer) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri | tmexec (Illusion) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 45 of 301) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Red Cobra | tmexec (Illusion) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 149 of 643) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Ura Mansion Hakkin | tmexec (Illusion) | extracted | **Ready to translate** (maintainer) | works, pager in a <1 KB DOS block | OK (see notes) |

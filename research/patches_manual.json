@@ -368,5 +368,61 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Illusion.zip/Hyouryuu": [
+  {
+   "label": "This repo: games/hyouryuu (patcher working, machine translation in progress)",
+   "url": "../games/hyouryuu/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Kankin": [
+  {
+   "label": "This repo: games/kankin (patcher working, machine translation in progress)",
+   "url": "../games/kankin/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Kitoujima Joshi Keimusho": [
+  {
+   "label": "This repo: games/kitoujima (patcher working, machine translation in progress)",
+   "url": "../games/kitoujima/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Mokkoriman RPG": [
+  {
+   "label": "This repo: games/mokkoriman_rpg (patcher working, machine translation in progress)",
+   "url": "../games/mokkoriman_rpg/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri": [
+  {
+   "label": "This repo: games/rankou (patcher working, machine translation in progress)",
+   "url": "../games/rankou/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Red Cobra": [
+  {
+   "label": "This repo: games/red_cobra (patcher working, machine translation in progress)",
+   "url": "../games/red_cobra/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "ProIllusion.zip/Ura Mansion Hakkin": [
+  {
+   "label": "This repo: games/ura_mansion (patcher working, machine translation in progress)",
+   "url": "../games/ura_mansion/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

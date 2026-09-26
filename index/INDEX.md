@@ -208,6 +208,13 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
+| Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
+| Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
+| Illusion | Kitoujima Joshi Keimusho | [This repo: games/kitoujima (patcher working, machine translation in progress)](../games/kitoujima/notes.md) |
+| Illusion | Mokkoriman RPG | [This repo: games/mokkoriman_rpg (patcher working, machine translation in progress)](../games/mokkoriman_rpg/notes.md) |
+| Illusion | Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri | [This repo: games/rankou (patcher working, machine translation in progress)](../games/rankou/notes.md) |
+| Illusion | Red Cobra | [This repo: games/red_cobra (patcher working, machine translation in progress)](../games/red_cobra/notes.md) |
+| Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -3054,13 +3061,13 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Illusion (`Illusion.zip`)
 
 - ♥ Angel Army [FD HD] `tmexec`
-- ♥ Hyouryuu [FD HD] `tmexec`
-- ♥ Kankin [FD HD] `tmexec`
-- ♥ Kitoujima Joshi Keimusho [FD HD] `tmexec`
+- ♥ Hyouryuu [FD HD] `tmexec` — *MTL (this repo)*
+- ♥ Kankin [FD HD] `tmexec` — *MTL (this repo)*
+- ♥ Kitoujima Joshi Keimusho [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Moeru Asoko no Paipai Yuugi [FD HD extras] `tmexec`
-- ♥ Mokkoriman RPG [FD HD] `tmexec`
-- ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [FD HD] `tmexec`
-- ♥ Red Cobra [FD HD] `tmexec`
+- ♥ Mokkoriman RPG [FD HD] `tmexec` — *MTL (this repo)*
+- ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [FD HD] `tmexec` — *MTL (this repo)*
+- ♥ Red Cobra [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Seisenshi Mokkoriman [FD HD] `tmexec`
 - ♥ Yami no Ryousen [FD HD] `tmexec`
 
@@ -4892,7 +4899,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Pro Illusion (`ProIllusion.zip`)
 
-- ♥ Ura Mansion Hakkin [FD HD] `tmexec`
+- ♥ Ura Mansion Hakkin [FD HD] `tmexec` — *MTL (this repo)*
 
 ### Progress (`Progress.zip`)
 

@@ -207,5 +207,103 @@
    "Scenario data read from the added cylinders 77+",
    "OK (test image with DISK-A starting on cylinder 77)"
   ]
+ ],
+ "hyouryuu": [
+  [
+   "Opening and title",
+   "OK"
+  ],
+  [
+   "Main message window",
+   "OK: half-width filler inside the frame, 4-line box full"
+  ],
+  [
+   "Scene past the opening (tent)",
+   "OK"
+  ]
+ ],
+ "kankin": [
+  [
+   "Opening narration (full-screen text)",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Title and message window over the title art",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Scene past the opening (car)",
+   "OK, messages page on click"
+  ]
+ ],
+ "kitoujima": [
+  [
+   "Title menu",
+   "OK (drawn as a picture, stays Japanese)"
+  ],
+  [
+   "Character select: prompt and name row (engine strings)",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Confirm box",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Story message window after character select",
+   "OK: half-width filler inside the frame"
+  ]
+ ],
+ "mokkoriman_rpg": [
+  [
+   "Opening (runs about 150 s) and title",
+   "OK"
+  ],
+  [
+   "Story message window (34 columns)",
+   "OK: half-width filler inside the frame, 5-line box"
+  ],
+  [
+   "Following messages",
+   "OK"
+  ]
+ ],
+ "rankou": [
+  [
+   "Title and character menu (clickable lines)",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Character call-out message",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Scene past the opening (fishing-spot select with message)",
+   "OK: half-width filler inside the frame"
+  ]
+ ],
+ "red_cobra": [
+  [
+   "Opening text screens",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Story text beside the art",
+   "OK: filler lines in place"
+  ],
+  [
+   "Later text pages",
+   "OK"
+  ]
+ ],
+ "ura_mansion": [
+  [
+   "Opening scene message window",
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Following messages (5-line box)",
+   "OK, words kept whole"
+  ]
  ]
 }

@@ -10,14 +10,18 @@ engine wrapping lines itself.  The patch
   sends code - 2000 to ports A1/A3, and code (c+20)00 there selects ANK c)
   with the width set to 1 for that character (the engine's half-width mode
   keeps the glyph's left half), and advances one byte; a line wraps when the
-  columns left drop to zero or below;
+  columns left drop to zero or below, and a CR LF right after such a wrap is
+  taken as that line's end (not drawn, no blank line);
 * pages long messages (English outgrows boxes the Japanese filled): when the
   box's line count is used up and more text follows, it waits for a mouse
   click (mouse port 7FD9, bit 7), restores the box area saved when the
   message started and continues at the top.  The saved copy sits at the same
   place on graphics page 1 (copied row by row through the access-page port
-  A6), which these games leave unused, so no memory is taken.  This code lives in the library's unused tail
-  (zero-filled in the file, untouched at run time), found by size;
+  A6), which these games leave unused.  Only messages longer than the box
+  are saved and paged, so short strings never touch the access page.  The
+  pager lives in a small DOS block of its own, set up by an entry stub
+  before the game starts (see _entry_stub), and the loop calls it through
+  far pointers kept in its own spare bytes;
 * changes the message lookup's end-of-file mark from "!" to the ^Z every
   message file ends with, so English may use "!".
 All sites are found by byte signature.
@@ -30,7 +34,6 @@ LOOP = re.compile(
     rb"(\x9a..(..))\x2e\x89\x2e(..)(\x9a(..)..)\x5f\x5e\x5a\x59\x5b\x58\x2e\x2b\x06(..)\x74\x1d"
     rb".{50,110}?\x2e\xa1(..)\x83\xc6\x02\xe9..", re.S)
 SEARCH = re.compile(rb"\x26\x80\x3c\x21(\x74.\x26\x80\x3c\x23)", re.S)
-CAVE_BYTES = 0x300
 
 
 def _asm(ks, src, org, want=()):
@@ -85,50 +88,96 @@ def build(exe, box_lines=4):
     pos = int.from_bytes(tail.group(1), "little")
     stride = int.from_bytes(stride_m.group(1), "little")
     region = m.end() - m.start()
-    # the pager: in the zero-filled tail of the library segment (its last part)
-    z = re.compile(rb"\x00{%d,}" % 0x800).search(img, m.end())
-    if not z or z.start() - seg * 16 > 0x10000 - 0x800:
-        raise ValueError("no free space in the library segment for the pager")
-    cave = z.end() - seg * 16 - CAVE_BYTES
-    if cave + CAVE_BYTES > 0x10000:
-        cave = 0x10000 - CAVE_BYTES
+    # the loop reaches the pager through two far pointers kept in the loop's
+    # own spare bytes (its last 8)
+    ptrs = org + region - 8
     ks = Ks(KS_ARCH_X86, KS_MODE_16)
-    v = {"W": width, "P": pos, "S": stride, "C": cols, "B": bpvar, "L": org, "ML": box_lines}
+    v = {"W": width, "P": pos, "S": stride, "C": cols, "B": bpvar, "L": org, "ML": box_lines,
+         "PTRH": ptrs, "PTRC": ptrs + 4}
 
-    # data at fixed offsets from the pager's start (numeric addresses: keystone
+    # the pager runs in a DOS block of its own (see _entry_stub); its data sits
+    # at fixed offsets from the block's start (numeric addresses: keystone
     # would give label operands a 32-bit address prefix, which a 286 rejects)
-    d = {k: cave + off for k, off in (("flag", 2), ("pend", 3), ("lines", 4), ("dirv", 5),
-                                      ("p0", 6), ("rows", 8), ("vpos", 10), ("pseg", 12),
-                                      ("planes", 14), ("temp", 22))}
+    d = {"LIB": 0, "OIP": 2, "OCS": 4, "ZSEG": 6, "ZLEN": 8, "flag": 10, "pend": 11,
+         "lines": 12, "dirv": 13, "endf": 14, "p0": 16, "rows": 18, "vpos": 20, "pseg": 22,
+         "planes": 24, "cc": 32, "temp": 34}
     v.update(d)
-    cave_src = """
-        .byte 0xeb, 100
-        .byte 0, 0, 0, 0
+    pager_src = """
+        .word 0, 0, 0, 0, 0
+        .byte 0, 0, 0, 0, 0, 0
         .word 0, 0, 0, 0
         .word 0xa800, 0xb000, 0xb800, 0xe000
+        .word 0
         .fill 80, 1, 0
+    head_far:
+        push ds
+        mov ds, word ptr cs:[{LIB}]
+        CALLN head
+        cmp byte ptr cs:[{endf}], 0
+        jne hf_end
+        pop ds
+        .byte 0xcb
+    hf_end:
+        mov byte ptr cs:[{endf}], 0
+        pop ds
+        add sp, 4
+        .byte 0xcb
+    common_far:
+        push ds
+        mov ds, word ptr cs:[{LIB}]
+        CALLN common
+        pop ds
+        .byte 0xcb
+    finish:
+        mov es, word ptr cs:[{ZSEG}]
+        xor di, di
+        mov cx, word ptr cs:[{ZLEN}]
+        xor al, al
+        cld
+        rep stosb
+        pop es
+        pop ds
+        pop bp
+        pop di
+        pop si
+        pop dx
+        pop cx
+        pop bx
+        pop ax
+        .byte 0x2e, 0xff, 0x2e
+        .word {OIP}
     head:
         cmp byte ptr es:[si], 0x24
         jne h1
         mov byte ptr cs:[{flag}], 0
         mov byte ptr cs:[{pend}], 0
-        add sp, 2
-        .byte 0xcb
+        mov byte ptr cs:[{endf}], 1
+        .byte 0xc3
     h1:
         cmp byte ptr cs:[{flag}], 0
         jne h2
         mov byte ptr cs:[{flag}], 1
         mov byte ptr cs:[{lines}], 0
         push ax
-        mov ax, word ptr cs:[{P}]
+        mov ax, word ptr [{P}]
         mov word ptr cs:[{p0}], ax
         pop ax
+        CALLN count
+        cmp byte ptr cs:[{flag}], 2
+        je h1s
+        .byte 0xc3
+    h1s:
         mov byte ptr cs:[{dirv}], 0
         CALLN copybox
         .byte 0xc3
     h2:
         cmp byte ptr cs:[{pend}], 0
-        jne h3
+        jne h2p
+        .byte 0xc3
+    h2p:
+        cmp byte ptr cs:[{flag}], 2
+        je h3
+        mov byte ptr cs:[{pend}], 0
         .byte 0xc3
     h3:
         mov byte ptr cs:[{pend}], 0
@@ -148,16 +197,61 @@ def build(exe, box_lines=4):
         mov byte ptr cs:[{dirv}], 1
         CALLN copybox
         mov ax, word ptr cs:[{p0}]
-        mov word ptr cs:[{P}], ax
-        mov ax, word ptr cs:[{C}]
+        mov word ptr [{P}], ax
+        mov ax, word ptr [{C}]
         mov byte ptr cs:[{lines}], 0
         .byte 0xc3
+    count:
+        push ax
+        push bx
+        push cx
+        push si
+        xor bx, bx
+        xor cx, cx
+    cn_loop:
+        mov al, byte ptr es:[si]
+        cmp al, 0x24
+        je cn_done
+        cmp al, 0x0d
+        jne cn_char
+        inc bl
+        xor cx, cx
+        add si, 2
+        jmp cn_loop
+    cn_char:
+        test al, al
+        js cn_wide
+        inc cx
+        inc si
+        jmp cn_wrap
+    cn_wide:
+        add cx, word ptr [{W}]
+        add si, 2
+    cn_wrap:
+        cmp cx, word ptr [{C}]
+        jb cn_loop
+        inc bl
+        xor cx, cx
+        cmp byte ptr es:[si], 0x0d
+        jne cn_loop
+        add si, 2
+        jmp cn_loop
+    cn_done:
+        cmp bl, {ML}
+        jb cn_out
+        mov byte ptr cs:[{flag}], 2
+    cn_out:
+        pop si
+        pop cx
+        pop bx
+        pop ax
+        .byte 0xc3
     common:
-        mov bx, word ptr cs:[{S}]
+        mov bx, word ptr [{S}]
         add bx, ax
-        sub bx, word ptr cs:[{C}]
-        add word ptr cs:[{P}], bx
-        mov ax, word ptr cs:[{C}]
+        sub bx, word ptr [{C}]
+        add word ptr [{P}], bx
+        mov ax, word ptr [{C}]
         inc byte ptr cs:[{lines}]
         mov bl, byte ptr cs:[{lines}]
         cmp bl, {ML}
@@ -175,11 +269,12 @@ def build(exe, box_lines=4):
         push ds
         push es
         mov ax, {ML}
-        mul word ptr cs:[{S}]
+        mul word ptr [{S}]
         mov bx, 80
         div bx
         mov word ptr cs:[{rows}], ax
-        mov ax, word ptr cs:[{C}]
+        mov ax, word ptr [{C}]
+        mov word ptr cs:[{cc}], ax
         cmp ax, 80
         ja cb_out
         xor al, al
@@ -194,7 +289,7 @@ def build(exe, box_lines=4):
     cb_row:
         mov al, byte ptr cs:[{dirv}]
         out 0xa6, al
-        mov cx, word ptr cs:[{C}]
+        mov cx, word ptr cs:[{cc}]
         mov si, word ptr cs:[{vpos}]
         mov ds, word ptr cs:[{pseg}]
         mov di, {temp}
@@ -205,7 +300,7 @@ def build(exe, box_lines=4):
         mov al, byte ptr cs:[{dirv}]
         xor al, 1
         out 0xa6, al
-        mov cx, word ptr cs:[{C}]
+        mov cx, word ptr cs:[{cc}]
         mov si, {temp}
         push cs
         pop ds
@@ -231,15 +326,11 @@ def build(exe, box_lines=4):
         pop ax
         .byte 0xc3
     """.format(**v)
-    cave_code, labels = _asm(ks, cave_src, cave, ("head", "common"))
-    if len(cave_code) > CAVE_BYTES:
-        raise ValueError("pager is %d bytes, room for %d" % (len(cave_code), CAVE_BYTES))
-    cave_head, cave_common = labels["head"], labels["common"]
+    pager, labels = _asm(ks, pager_src, 0, ("head_far", "common_far", "finish"))
 
     head_src = """
-        CALLN 0x%x
-        nop
-        nop
+        .byte 0x2e, 0xff, 0x1e
+        .word 0x%x
         nop
         nop
         push ax
@@ -252,7 +343,7 @@ def build(exe, box_lines=4):
         test al, al
         .byte 0x79, 0x00
         xchg al, ah
-    """ % cave_head
+    """ % v["PTRH"]
     head, _ = _asm(ks, head_src, org)                     # the jns (79 xx) target is fixed up below
     if len(head) != 22:
         raise ValueError("head is %d bytes, expected 22" % len(head))
@@ -276,11 +367,13 @@ def build(exe, box_lines=4):
         jmp {L}
     wrap:
         mov ax, bx
-        jmp common
+        cmp byte ptr es:[si], 0x0d
+        jne common
     nl:
         add si, 2
     common:
-        CALLN 0x{CC:x}
+        .byte 0x2e, 0xff, 0x1e
+        .word {PTRC}
         jmp {L}
     ascii:
         mov ah, al
@@ -302,24 +395,130 @@ def build(exe, box_lines=4):
         mov bx, 1
         inc si
         jmp adv
-    """.format(CC=cave_common, F=fetch, **v)
+    """.format(F=fetch, **v)
     tail_code, tl = _asm(ks, tail_src, t0, ("ascii",))
-    if 37 + len(tail_code) > region:
-        raise ValueError("rewritten loop is %d bytes, room for %d" % (37 + len(tail_code), region))
+    if 37 + len(tail_code) > region - 8:
+        raise ValueError("rewritten loop is %d bytes, room for %d" % (37 + len(tail_code), region - 8))
     ascii_at = tl["ascii"]
     jns = head.index(b"\x79")
     rel = ascii_at - (org + jns + 2)
     if not -128 <= rel <= 127:
         raise ValueError("ascii path out of short-jump range")
     head = head[:jns + 1] + bytes([rel & 0xFF]) + head[jns + 2:]
-    code = (head + keep + tail_code).ljust(region, b"\x90")
+    code = (head + keep + tail_code).ljust(region - 8, b"\x90") + bytes(8)
     exe[base + m.start():base + m.end()] = code
-    at = base + seg * 16 + cave
-    if any(exe[at:at + len(cave_code)]):
-        raise ValueError("pager area is not free")
-    exe[at:at + len(cave_code)] = cave_code
+    _entry_stub(ks, exe, pager, labels, seg, v["PTRH"], v["PTRC"])
     exe[base + s.start() + 3] = 0x1A                     # lookup stops at ^Z instead of "!"
     return bytes(exe)
+
+
+def _entry_stub(ks, exe, pager, labels, libseg, ptrh, ptrc):
+    """Give the pager a DOS block of its own, set up before the game starts.
+
+    The EXE's entry point moves to a stub which shrinks the program's block
+    (DOS hands a program all free memory) by the pager's size, allocates that
+    freed top of memory to the pager, copies the pager there, points the
+    draw loop's far pointers at it, zeroes the area the stub and pager were
+    loaded into (a zero-filled area of the image, which the game may use as
+    data later) and jumps to the original entry point.  The block holds a few
+    hundred bytes of the free memory the game runs in."""
+    hdr = struct.unpack_from("<14H", exe, 0)
+    base = hdr[4] * 16
+    img = bytes(exe[base:])
+    paras = (len(pager) + 15) // 16
+    stack = (hdr[7] * 16, hdr[7] * 16 + hdr[8])
+    relocs = set()
+    for k in range(hdr[3]):
+        off, sg = struct.unpack_from("<HH", exe, hdr[12] + 4 * k)
+        relocs.update((sg * 16 + off, sg * 16 + off + 1))
+    msg = b"Not enough memory to start the English patch.\r\n$"
+
+    def stub_src(poff, zlen, msg_at):
+        return """
+        push ax
+        push bx
+        push cx
+        push dx
+        push si
+        push di
+        push bp
+        push ds
+        push es
+        mov ah, 0x4a
+        mov bx, 0xffff
+        int 0x21
+        sub bx, {np1}
+        jb fail
+        mov ah, 0x4a
+        int 0x21
+        jb fail
+        mov ah, 0x48
+        mov bx, {np}
+        int 0x21
+        jb fail
+        mov es, ax
+        push cs
+        pop ds
+        mov si, {poff}
+        xor di, di
+        mov cx, {plen}
+        cld
+        rep movsb
+        mov bp, sp
+        mov dx, word ptr [bp]
+        add dx, 0x10
+        mov ax, dx
+        add ax, {libseg}
+        mov word ptr es:[0], ax
+        mov word ptr es:[2], {oip}
+        mov ax, dx
+        add ax, {ocs}
+        mov word ptr es:[4], ax
+        mov word ptr es:[6], cs
+        mov word ptr es:[8], {zlen}
+        mov ax, word ptr es:[0]
+        mov ds, ax
+        mov word ptr [{ptrh}], {head}
+        mov word ptr [{ptrh2}], es
+        mov word ptr [{ptrc}], {common}
+        mov word ptr [{ptrc2}], es
+        push es
+        mov ax, {finish}
+        push ax
+        .byte 0xcb
+    fail:
+        push cs
+        pop ds
+        mov dx, {msg_at}
+        mov ah, 9
+        int 0x21
+        mov ax, 0x4c01
+        int 0x21
+        """.format(np=paras, np1=paras + 1, poff=poff, plen=len(pager), libseg=libseg,
+                   oip=hdr[10], ocs=hdr[11], zlen=zlen, ptrh=ptrh, ptrh2=ptrh + 2,
+                   ptrc=ptrc, ptrc2=ptrc + 2, head=labels["head_far"],
+                   common=labels["common_far"], finish=labels["finish"], msg_at=msg_at)
+
+    # the immediates are 16-bit, so the stub's size doesn't depend on them
+    size = len(_asm(ks, stub_src(0x1000, 0x1000, 0x1000), 0)[0])
+    stub = _asm(ks, stub_src(size + len(msg), size + len(msg) + len(pager), size), 0)[0]
+    blob = stub + msg + pager
+    if len(stub) != size:
+        raise ValueError("entry stub size changed between passes")
+    # a zero-filled, paragraph-aligned area of the image: not the stack, and no
+    # relocation entry inside (the loader would write there)
+    for z in re.finditer(rb"\x00{%d,}" % (len(blob) + 16), img):
+        at = (z.start() + 15) & ~15
+        end = at + len(blob)
+        if end > z.end() or end > stack[0] and at < stack[1]:
+            continue
+        if any(r in relocs for r in range(at, end)):
+            continue
+        break
+    else:
+        raise ValueError("no free area in the EXE image for the entry stub")
+    exe[base + at:base + end] = blob
+    struct.pack_into("<HH", exe, 20, 0, at // 16)        # entry point: the stub
 
 
 def message_width(exe):

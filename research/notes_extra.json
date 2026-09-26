@@ -33,5 +33,28 @@
   "remarks": [
    "The notice file is `MTL_NO.TXT` on disk A (N88 file names are 6+3 characters)."
   ]
+ },
+ "kitoujima": {
+  "not_handled": [
+   "The title menu and the opening narration are pictures (the narration pages and the name captions are drawn into the art)."
+  ],
+  "remarks": [
+   "Boot steps: the character select and the confirm box are clicked at the game's fixed click areas; those records carry layout notes."
+  ]
+ },
+ "hyouryuu": {
+  "not_handled": [
+   "The date/place caption after the title (\"2096年 東京都狛江市\") is a picture."
+  ]
+ },
+ "rankou": {
+  "remarks": [
+   "The character menu (record m00001) is clicked by line: keep one item per line."
+  ]
+ },
+ "mokkoriman_rpg": {
+  "remarks": [
+   "The message window is 34 columns; the engine's call sites use several widths, so game.json sets window_cols (measured in np21w)."
+  ]
  }
 }

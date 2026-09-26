@@ -1988,7 +1988,8 @@
     "MES3.DOC:60000",
     "MES4.DOC:60000"
    ],
-   "max_cells": 13
+   "max_cells": 13,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［難易度の設定］ line 1 col 0; ● line 1 col 16; ● line 2 col 0; ● line 3 col 0; ● line 4 col 0."
   },
   {
    "id": "m00191",
@@ -2035,7 +2036,8 @@
    "refs": [
     "MES0.DOC:60004"
    ],
-   "max_cells": 16
+   "max_cells": 16,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［セーブモード］ line 1 col 0; ● line 1 col 18; ● line 2 col 2; ● line 3 col 2; ● line 4 col 2; ● line 5 col 2."
   },
   {
    "id": "m00195",
@@ -2045,7 +2047,8 @@
    "refs": [
     "MES0.DOC:60005"
    ],
-   "max_cells": 16
+   "max_cells": 16,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［ロードモード］ line 1 col 0; ● line 1 col 18; ● line 2 col 2; ● line 3 col 2; ● line 4 col 2; ● line 5 col 2."
   },
   {
    "id": "m00196",
@@ -2055,7 +2058,8 @@
    "refs": [
     "MES0.DOC:60006"
    ],
-   "max_cells": 14
+   "max_cells": 14,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［ＣＧ　モード］ line 1 col 0; ● line 1 col 18; ● line 2 col 2; ● line 3 col 2; ● line 4 col 2; ● line 5 col 2; ● line 6 col 2."
   },
   {
    "id": "m00197",
@@ -2065,7 +2069,8 @@
    "refs": [
     "MES0.DOC:60007"
    ],
-   "max_cells": 22
+   "max_cells": 22,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［ＢＧＭモード］ line 1 col 0; ● line 1 col 16; ● line 2 col 0."
   },
   {
    "id": "m00198",
@@ -2075,7 +2080,8 @@
    "refs": [
     "MES0.DOC:60008"
    ],
-   "max_cells": 14
+   "max_cells": 14,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［ＰＣＭモード］ line 1 col 0; ● line 1 col 18; ● line 2 col 2; ● line 3 col 2; ● line 4 col 2; ● line 5 col 2; ● line 6 col 2."
   },
   {
    "id": "m00199",
@@ -4911,7 +4917,8 @@
    "refs": [
     "MES3.DOC:00075"
    ],
-   "max_cells": 16
+   "max_cells": 16,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［お鈴］ line 1 col 22."
   },
   {
    "id": "m00482",
@@ -5967,6 +5974,50 @@
   {
    "id": "e00001",
    "kind": "exe",
+   "jp": "　ＳＴＡＧＥ　２　",
+   "en": "",
+   "refs": [
+    "exe:04602"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "　ＳＴＡＧＥ　３　",
+   "en": "",
+   "refs": [
+    "exe:04615"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "　ＳＴＡＧＥ　４　",
+   "en": "",
+   "refs": [
+    "exe:04628"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "　ＳＴＡＧＥ　５　",
+   "en": "",
+   "refs": [
+    "exe:0463b"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
    "jp": "【コブラ】　　　　　",
    "en": "",
    "refs": [
@@ -5976,7 +6027,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00002",
+   "id": "e00006",
    "kind": "exe",
    "jp": "【ミスターＭ】　　　",
    "en": "",
@@ -5987,7 +6038,18 @@
    "max_cells": 10
   },
   {
-   "id": "e00003",
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "【女】　　　　　　　",
+   "en": "",
+   "refs": [
+    "exe:04866"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00008",
    "kind": "exe",
    "jp": "【リズミイ】　　　　",
    "en": "",
@@ -5998,7 +6060,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00004",
+   "id": "e00009",
    "kind": "exe",
    "jp": "【サムソン】　　　　",
    "en": "",
@@ -6009,7 +6071,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00005",
+   "id": "e00010",
    "kind": "exe",
    "jp": "【クリーム】　　　　",
    "en": "",
@@ -6020,7 +6082,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00006",
+   "id": "e00011",
    "kind": "exe",
    "jp": "【ポッキー】　　　　",
    "en": "",
@@ -6031,7 +6093,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00007",
+   "id": "e00012",
    "kind": "exe",
    "jp": "【カマキリ君】　　　",
    "en": "",
@@ -6042,7 +6104,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00008",
+   "id": "e00013",
    "kind": "exe",
    "jp": "【マングース】　　　",
    "en": "",
@@ -6053,7 +6115,18 @@
    "max_cells": 10
   },
   {
-   "id": "e00009",
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "【春鈴】　　　　　　",
+   "en": "",
+   "refs": [
+    "exe:048f9"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00015",
    "kind": "exe",
    "jp": "【リーニャ】　　　　",
    "en": "",
@@ -6064,7 +6137,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00010",
+   "id": "e00016",
    "kind": "exe",
    "jp": "【メロディ】　　　　",
    "en": "",
@@ -6075,7 +6148,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00011",
+   "id": "e00017",
    "kind": "exe",
    "jp": "【ファックマン】　　",
    "en": "",
@@ -6086,7 +6159,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00012",
+   "id": "e00018",
    "kind": "exe",
    "jp": "【キャスリン】　　　",
    "en": "",
@@ -6097,7 +6170,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00013",
+   "id": "e00019",
    "kind": "exe",
    "jp": "【怪しげな男】　　　",
    "en": "",
@@ -6108,7 +6181,18 @@
    "max_cells": 10
   },
   {
-   "id": "e00014",
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "【風魔】　　　　　　",
+   "en": "",
+   "refs": [
+    "exe:04977"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00021",
    "kind": "exe",
    "jp": "【タイガー】　　　　",
    "en": "",
@@ -6119,7 +6203,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00015",
+   "id": "e00022",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＡを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6130,7 +6214,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00016",
+   "id": "e00023",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＢを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6141,7 +6225,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00017",
+   "id": "e00024",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＣを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6152,7 +6236,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00018",
+   "id": "e00025",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＤを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6163,7 +6247,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00019",
+   "id": "e00026",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＥを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6174,7 +6258,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00020",
+   "id": "e00027",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＦを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6185,7 +6269,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00021",
+   "id": "e00028",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＧを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6196,7 +6280,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00022",
+   "id": "e00029",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＨを入れて、　　　\n左ボタンを押して下さい。　",
    "en": "",
@@ -6207,7 +6291,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00023",
+   "id": "e00030",
    "kind": "exe",
    "jp": "ＥＡＳＹです。　",
    "en": "",
@@ -6218,7 +6302,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00024",
+   "id": "e00031",
    "kind": "exe",
    "jp": "ＮＯＲＭＡＬです",
    "en": "",
@@ -6229,7 +6313,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00025",
+   "id": "e00032",
    "kind": "exe",
    "jp": "ＨＡＲＤです。　",
    "en": "",
@@ -6240,7 +6324,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00026",
+   "id": "e00033",
    "kind": "exe",
    "jp": "コンティニュー　：　左ボタン",
    "en": "",
@@ -6251,7 +6335,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00027",
+   "id": "e00034",
    "kind": "exe",
    "jp": "　終　　　了　　：　右ボタン",
    "en": "",
@@ -6262,7 +6346,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00028",
+   "id": "e00035",
    "kind": "exe",
    "jp": "　コンティニューできません　",
    "en": "",
@@ -6273,7 +6357,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00029",
+   "id": "e00036",
    "kind": "exe",
    "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
    "en": "",
@@ -6284,7 +6368,7 @@
    "max_cells": 36
   },
   {
-   "id": "e00030",
+   "id": "e00037",
    "kind": "exe",
    "jp": "ＥＭＭデバイスドライバを外して起動して下さい。\n",
    "en": "",
@@ -6295,7 +6379,7 @@
    "max_cells": 23
   },
   {
-   "id": "e00031",
+   "id": "e00038",
    "kind": "exe",
    "jp": "が搭載されていない機種では動作しません。\n",
    "en": "",
@@ -6306,7 +6390,7 @@
    "max_cells": 20
   },
   {
-   "id": "e00032",
+   "id": "e00039",
    "kind": "exe",
    "jp": "右ボタンで上にスクロール、左ボタンで下スクロールです。\n左右ボタンを同時に押すと終了します。",
    "en": "",
@@ -6317,7 +6401,7 @@
    "max_cells": 27
   },
   {
-   "id": "e00033",
+   "id": "e00040",
    "kind": "exe",
    "jp": "左ボタンを押すと【次を表示】します。\n右ボタンを押すと【終　　了】します。",
    "en": "",
@@ -6328,7 +6412,7 @@
    "max_cells": 18
   },
   {
-   "id": "e00034",
+   "id": "e00041",
    "kind": "exe",
    "jp": "マウスを動かして【淫】のポイントを上げて下さい。\n右ボタンで上にスクロール、左ボタンで下スクロールします。",
    "en": "",
@@ -6339,7 +6423,7 @@
    "max_cells": 28
   },
   {
-   "id": "e00035",
+   "id": "e00042",
    "kind": "exe",
    "jp": "ライトプロテクト状態です。",
    "en": "",
@@ -6350,7 +6434,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00036",
+   "id": "e00043",
    "kind": "exe",
    "jp": "ドライブが存在しません。",
    "en": "",
@@ -6361,7 +6445,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00037",
+   "id": "e00044",
    "kind": "exe",
    "jp": "ドライブの準備ができていません。",
    "en": "",
@@ -6372,7 +6456,7 @@
    "max_cells": 16
   },
   {
-   "id": "e00038",
+   "id": "e00045",
    "kind": "exe",
    "jp": "存在しないコマンドです。",
    "en": "",
@@ -6383,7 +6467,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00039",
+   "id": "e00046",
    "kind": "exe",
    "jp": "データのＣＲＣエラーです。",
    "en": "",
@@ -6394,7 +6478,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00040",
+   "id": "e00047",
    "kind": "exe",
    "jp": "エラー　０５ｈ",
    "en": "",
@@ -6405,7 +6489,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00041",
+   "id": "e00048",
    "kind": "exe",
    "jp": "シークエラーです。",
    "en": "",
@@ -6416,7 +6500,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00042",
+   "id": "e00049",
    "kind": "exe",
    "jp": "存在しないメディアタイプです。",
    "en": "",
@@ -6427,7 +6511,7 @@
    "max_cells": 15
   },
   {
-   "id": "e00043",
+   "id": "e00050",
    "kind": "exe",
    "jp": "セクタが見つかりません。",
    "en": "",
@@ -6438,7 +6522,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00044",
+   "id": "e00051",
    "kind": "exe",
    "jp": "プリンタの用紙切れです。",
    "en": "",
@@ -6449,7 +6533,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00045",
+   "id": "e00052",
    "kind": "exe",
    "jp": "書き込み不良です。",
    "en": "",
@@ -6460,7 +6544,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00046",
+   "id": "e00053",
    "kind": "exe",
    "jp": "読み込み不良です。",
    "en": "",
@@ -6471,7 +6555,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00047",
+   "id": "e00054",
    "kind": "exe",
    "jp": "ディスク不良です。",
    "en": "",
@@ -6482,7 +6566,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00048",
+   "id": "e00055",
    "kind": "exe",
    "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
    "en": "",
@@ -6493,7 +6577,7 @@
    "max_cells": 15
   },
   {
-   "id": "e00049",
+   "id": "e00056",
    "kind": "exe",
    "jp": "スペースキーでもう一度やります。",
    "en": "",
@@ -6504,7 +6588,7 @@
    "max_cells": 16
   },
   {
-   "id": "e00050",
+   "id": "e00057",
    "kind": "exe",
    "jp": "ディスクを当社までご返送下さい。",
    "en": "",

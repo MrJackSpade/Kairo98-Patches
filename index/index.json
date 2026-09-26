@@ -116576,7 +116576,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -116699,15 +116699,22 @@
      "path": "Hyouryuu\\Hyouryuu [HD]\\Hyouryuu.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hyouryuu (patcher working, machine translation in progress)",
+     "url": "../games/hyouryuu/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17738 (erotic content)",
+   "heart_basis": "script text: 10 of 2570 strings match the sexual-vocabulary list (4 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Kankin",
@@ -116781,15 +116788,22 @@
      "path": "Kankin\\Kankin [HD]\\Kankin.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kankin (patcher working, machine translation in progress)",
+     "url": "../games/kankin/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17780 (erotic content)",
+   "heart_basis": "script text: 5 of 420 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Kitoujima Joshi Keimusho",
@@ -116927,15 +116941,22 @@
      "path": "Kitoujima Joshi Keimusho\\Kitoujima Joshi Keimusho [HD]\\Kitoujima Joshi Keimusho.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kitoujima (patcher working, machine translation in progress)",
+     "url": "../games/kitoujima/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r18047 (erotic content)",
+   "heart_basis": "script text: manual: sexual assault during a prison intake search found while translating (first at m00007) (2026-09-26)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Moeru Asoko no Paipai Yuugi",
@@ -117056,7 +117077,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -117150,15 +117171,22 @@
      "path": "Mokkoriman RPG\\Mokkoriman RPG [HD]\\Mokkoriman RPG.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mokkoriman_rpg (patcher working, machine translation in progress)",
+     "url": "../games/mokkoriman_rpg/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "script text: 25 of 988 strings match the sexual-vocabulary list (5 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri",
@@ -117218,15 +117246,22 @@
      "path": "Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri\\Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [HD]\\Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/rankou (patcher working, machine translation in progress)",
+     "url": "../games/rankou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "script text: manual: sexualized reward scene involving a possible minor, then explicit scenes, found while translating (first at m00046) (2026-09-26)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Red Cobra",
@@ -117328,15 +117363,22 @@
      "path": "Red Cobra\\Red Cobra [HD]\\Red Cobra.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/red_cobra (patcher working, machine translation in progress)",
+     "url": "../games/red_cobra/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "script text: manual: explicit genital description found while translating (first at m00150) (2026-09-26)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Seisenshi Mokkoriman",
@@ -117398,7 +117440,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 4 of 4 classified Illusion titles are adult",
+   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -175202,15 +175244,22 @@
      "path": "Ura Mansion Hakkin\\Ura Mansion Hakkin [HD]\\Ura Mansion Hakkin.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ura_mansion (patcher working, machine translation in progress)",
+     "url": "../games/ura_mansion/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17731 (erotic content)",
+   "heart_basis": "script text: 25 of 710 strings match the sexual-vocabulary list (5 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Progress.zip/Kao Derby",

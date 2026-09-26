@@ -5,5 +5,6 @@
  "game_dir": "MOKO2",
  "engine": "GAME.EXE",
  "encoding": "illusion",
- "boot_steps": "30:shot,1:lclick,15:lclick,15:shot,1:lclick,10:lclick,10:shot,1:lclick,5:lclick,5:lclick,5:shot,1:lclick,3:lclick,3:lclick,3:lclick,5:shot"
+ "boot_steps": "120:shot,40:shot,1:lclick,4:shot,1:lclick,1:lclick,4:shot,1:lclick,1:lclick,1:lclick,1:lclick,4:shot",
+ "window_cols": 34
 }

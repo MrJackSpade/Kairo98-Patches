@@ -10,7 +10,8 @@
    "refs": [
     "MI.DOC:00001"
    ],
-   "max_cells": 8
+   "max_cells": 8,
+   "note": "Clickable menu: the game's click areas are the three lines of the Japanese layout (one item per line). Keep one item per line, three lines."
   },
   {
    "id": "m00002",

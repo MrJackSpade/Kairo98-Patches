@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | mouse=dx;dy | enter | space | esc | up | down | left | right
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -41,12 +41,18 @@ foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out
 Set-Content $ini $out2
 $argv = @("-i$ini") + ($fds | ForEach-Object { '"' + $_ + '"' })
 $started = Get-Date
+$vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right = 39 }
+# reject a malformed step before the emulator starts
+foreach ($s in $Steps.Split(",")) {
+    $wait, $act = $s.Split(":", 2)
+    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
+}
 $p = Start-Process $Exe -ArgumentList $argv -WorkingDirectory $bin -PassThru
 Start-Sleep 3
 $p.Refresh(); $h = $p.MainWindowHandle
-$vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right = 39 }
 $n = 0
 New-Item -ItemType Directory -Force (Split-Path $Out) | Out-Null
+try {
 foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
     Start-Sleep -Milliseconds ([int]([double]$wait * 1000))
@@ -61,8 +67,14 @@ foreach ($s in $Steps.Split(",")) {
         # PC-98 mouse button (our np21w build's test message WM_USER+0x7A1: button mask)
         $mask = if ($act -eq "lclick") { 1 } else { 2 }
         [W]::PostMessage($h, 0xBA1, [IntPtr]$mask, [IntPtr]0) | Out-Null
-        Start-Sleep -Milliseconds 200
+        Start-Sleep -Milliseconds 500  # held long enough for games that sample the button slowly
         [W]::PostMessage($h, 0xBA1, [IntPtr]0, [IntPtr]0) | Out-Null
+        continue
+    }
+    if ($act -eq "ldown" -or $act -eq "lup") {
+        # hold / release the left button
+        $mask = if ($act -eq "ldown") { 1 } else { 0 }
+        [W]::PostMessage($h, 0xBA1, [IntPtr]$mask, [IntPtr]0) | Out-Null
         continue
     }
     if ($act -eq "save") {
@@ -85,7 +97,10 @@ foreach ($s in $Steps.Split(",")) {
         [W]::PostMessage($h, 0x101, [IntPtr]$code, [IntPtr](1 -bor ($sc -shl 16) -bor (3 -shl 30))) | Out-Null
     }
 }
-$p.CloseMainWindow() | Out-Null; Start-Sleep 1; if (-not $p.HasExited) { $p.Kill() }
+} finally {
+    # always close the emulator, even when a step fails
+    $p.CloseMainWindow() | Out-Null; Start-Sleep 1; if (-not $p.HasExited) { $p.Kill() }
+}
 $state = Get-ChildItem -Path $work, $bin -Filter *.S00 -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -ge $started } | Sort-Object LastWriteTime | Select-Object -Last 1
 if ($state) { Move-Item -Force $state.FullName ("{0}.s00" -f $Out); Write-Output ("state {0}.s00" -f $Out) }
 Remove-Item -Recurse -Force $work

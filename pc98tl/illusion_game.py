@@ -49,7 +49,8 @@ def _message_files(vol, game_dir):
 def exe_strings(exe):
     """Japanese strings hard-coded in the engine, ended by "$" like the
     message records (drawn by the same library, or printed through DOS):
-    [(offset, byte length, text)]."""
+    [(offset, byte length, text)].  A string needs two kana, unless it sits
+    in a "$"-separated table (character names, menu labels)."""
     out = []
     for m in EXE_TEXT.finditer(exe):
         raw, k = m.group(1), 0
@@ -60,7 +61,9 @@ def exe_strings(exe):
             text = raw.decode("cp932")
         except UnicodeDecodeError:
             continue
-        if len(KANA.findall(text)) >= 2:
+        start = m.start(1) + k
+        in_table = exe[start - 1] == 0x24 and "\r\n" not in text and text.strip("　") != ""
+        if len(KANA.findall(text)) >= 2 or in_table:
             out.append((m.start(1) + k, len(raw), text.replace("\r\n", "\n")))
     return out
 
@@ -117,27 +120,36 @@ def encode_en(text):
 
 def _lay_out(text, cols):
     """Word-wrap English to the message window's width (the engine would
-    otherwise break lines mid-word) and join lines with CR LF."""
+    otherwise break lines mid-word) and join lines with CR LF.  A line that
+    already fits is kept as written, spacing included (menus place their
+    items at fixed columns)."""
     from .text import wrap
     cols = max(8, cols)
-    lines = wrap(text, cols, width=lambda t: len(encode_en(t)))
+    width = lambda t: len(encode_en(t))  # noqa: E731
+    lines = []
+    for para in text.split("\n"):
+        lines += [para] if width(para) <= cols else wrap(para, cols, width=width)
     return b"\r\n".join(encode_en(line) for line in lines)
 
 
+
 def _box_lines(cfg, doc, window):
-    """Lines the message box holds: the most any Japanese record fills when
-    the engine wraps it at the window width (the authors kept every record
-    inside its box), unless game.json sets "box_lines"."""
+    """Lines the message box holds: the most lines Japanese records fill when
+    the engine wraps them at the window width (the authors kept records
+    inside their box), counting only line counts at least 1% of records
+    reach, since a few records (credits, endings) are drawn in larger windows.
+    game.json "box_lines" overrides it."""
     if cfg.get("box_lines"):
         return cfg["box_lines"]
-    most = 1
+    counts = {}
     for e in doc["strings"]:
         if e["kind"] != "msg":
             continue
         n = sum(max(1, -(-sum(1 if ord(c) < 0x80 else 2 for c in line) // window))
                 for line in e["jp"].split("\n"))
-        most = max(most, n)
-    return most
+        counts[n] = counts.get(n, 0) + 1
+    total = sum(counts.values())
+    return max([n for n, k in counts.items() if k * 100 >= total] or [1])
 
 
 def _text(e, mode):

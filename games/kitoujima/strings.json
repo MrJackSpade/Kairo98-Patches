@@ -1761,7 +1761,8 @@
     "YOU_3:60000",
     "YOU_4:60000"
    ],
-   "max_cells": 18
+   "max_cells": 18,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［確認］ line 1 col 20; ［取消］ line 1 col 28."
   },
   {
    "id": "m00169",
@@ -1791,7 +1792,8 @@
     "YOU_3:60001",
     "YOU_4:60001"
    ],
-   "max_cells": 18
+   "max_cells": 18,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［確認］ line 1 col 20; ［取消］ line 1 col 28."
   },
   {
    "id": "m00170",
@@ -1849,7 +1851,8 @@
     "YOU_3:60003",
     "YOU_4:60003"
    ],
-   "max_cells": 8
+   "max_cells": 8,
+   "note": "Clickable menu: the game's click areas are fixed at the Japanese layout. Keep the same lines and start each item at the same half-width column: ［続行］ line 1 col 0; ［変更］ line 1 col 8."
   },
   {
    "id": "m00172",
@@ -26817,6 +26820,61 @@
   {
    "id": "e00033",
    "kind": "exe",
+   "jp": "神崎知果",
+   "en": "",
+   "refs": [
+    "exe:16d42"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "e00034",
+   "kind": "exe",
+   "jp": "天瑠美樹",
+   "en": "",
+   "refs": [
+    "exe:16d4b"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "e00035",
+   "kind": "exe",
+   "jp": "松澤延子",
+   "en": "",
+   "refs": [
+    "exe:16d54"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "e00036",
+   "kind": "exe",
+   "jp": "夜名正樹",
+   "en": "",
+   "refs": [
+    "exe:16d5d"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "e00037",
+   "kind": "exe",
+   "jp": "音無陽一郎",
+   "en": "",
+   "refs": [
+    "exe:16d66"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "e00038",
+   "kind": "exe",
    "jp": "Ｈグラフィックを見る",
    "en": "",
    "refs": [
@@ -26826,7 +26884,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00034",
+   "id": "e00039",
    "kind": "exe",
    "jp": "　　ＢＧＭを聞く",
    "en": "",
@@ -26837,7 +26895,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00035",
+   "id": "e00040",
    "kind": "exe",
    "jp": "　　　　　オープニング",
    "en": "",
@@ -26848,7 +26906,7 @@
    "max_cells": 11
   },
   {
-   "id": "e00036",
+   "id": "e00041",
    "kind": "exe",
    "jp": "　タイトル～鬼頭島女子刑務所",
    "en": "",
@@ -26859,7 +26917,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00037",
+   "id": "e00042",
    "kind": "exe",
    "jp": "　　　　悪夢への前奏曲",
    "en": "",
@@ -26870,7 +26928,7 @@
    "max_cells": 11
   },
   {
-   "id": "e00038",
+   "id": "e00043",
    "kind": "exe",
    "jp": "　　　　　悪夢その１",
    "en": "",
@@ -26881,7 +26939,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00039",
+   "id": "e00044",
    "kind": "exe",
    "jp": "　　悪夢の源～所長のテーマ",
    "en": "",
@@ -26892,7 +26950,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00040",
+   "id": "e00045",
    "kind": "exe",
    "jp": "　　　　　悪夢その２",
    "en": "",
@@ -26903,7 +26961,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00041",
+   "id": "e00046",
    "kind": "exe",
    "jp": "　　　　　悪夢その３",
    "en": "",
@@ -26914,7 +26972,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00042",
+   "id": "e00047",
    "kind": "exe",
    "jp": "　　　　　悪夢その４",
    "en": "",
@@ -26925,7 +26983,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00043",
+   "id": "e00048",
    "kind": "exe",
    "jp": "　刑務所の黒い花～松澤のテーマ",
    "en": "",
@@ -26936,7 +26994,7 @@
    "max_cells": 15
   },
   {
-   "id": "e00044",
+   "id": "e00049",
    "kind": "exe",
    "jp": "　　監獄の悪魔～夜名のテーマ",
    "en": "",
@@ -26947,7 +27005,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00045",
+   "id": "e00050",
    "kind": "exe",
    "jp": "　　　　　悪夢その５",
    "en": "",
@@ -26958,7 +27016,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00046",
+   "id": "e00051",
    "kind": "exe",
    "jp": "　　　　　悪夢その６",
    "en": "",
@@ -26969,7 +27027,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00047",
+   "id": "e00052",
    "kind": "exe",
    "jp": "　　　　　悪夢その７",
    "en": "",
@@ -26980,7 +27038,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00048",
+   "id": "e00053",
    "kind": "exe",
    "jp": "　　　　　悪夢その８",
    "en": "",
@@ -26991,7 +27049,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00049",
+   "id": "e00054",
    "kind": "exe",
    "jp": "　　　　地獄に向かって",
    "en": "",
@@ -27002,7 +27060,18 @@
    "max_cells": 11
   },
   {
-   "id": "e00050",
+   "id": "e00055",
+   "kind": "exe",
+   "jp": "　　　　　狂気～脱走",
+   "en": "",
+   "refs": [
+    "exe:16f21"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00056",
    "kind": "exe",
    "jp": "　　　　皆殺しのテーマ",
    "en": "",
@@ -27013,7 +27082,7 @@
    "max_cells": 11
   },
   {
-   "id": "e00051",
+   "id": "e00057",
    "kind": "exe",
    "jp": "エンディング～鬼頭島女子刑務所",
    "en": "",
@@ -27024,7 +27093,7 @@
    "max_cells": 15
   },
   {
-   "id": "e00052",
+   "id": "e00058",
    "kind": "exe",
    "jp": "　闇の監獄へ～トップメニュー",
    "en": "",
@@ -27033,6 +27102,72 @@
    ],
    "max_bytes": 28,
    "max_cells": 14
+  },
+  {
+   "id": "e00059",
+   "kind": "exe",
+   "jp": "ＮＯ　ＤＡＴＡ",
+   "en": "",
+   "refs": [
+    "exe:17185"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00060",
+   "kind": "exe",
+   "jp": "神崎　知果",
+   "en": "",
+   "refs": [
+    "exe:17194"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "e00061",
+   "kind": "exe",
+   "jp": "天瑠　美樹",
+   "en": "",
+   "refs": [
+    "exe:1719f"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "e00062",
+   "kind": "exe",
+   "jp": "松澤　延子",
+   "en": "",
+   "refs": [
+    "exe:171aa"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "e00063",
+   "kind": "exe",
+   "jp": "夜名　正樹",
+   "en": "",
+   "refs": [
+    "exe:171b5"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "e00064",
+   "kind": "exe",
+   "jp": "音無　陽一郎",
+   "en": "",
+   "refs": [
+    "exe:171c0"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
   }
  ]
 }
