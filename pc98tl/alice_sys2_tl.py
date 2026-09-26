@@ -102,7 +102,7 @@ class Block:
 
     @property
     def ref(self):
-        return "p%02d:%04x" % (self.page.index, self.page.ops[self.start].addr)
+        return "%sp%02d:%04x" % (self.page.prefix, self.page.index, self.page.ops[self.start].addr)
 
 
 def find_blocks(page):
@@ -149,7 +149,11 @@ class Sys2Game:
                 "name_bytes": 32, "verb_cells": 10, "obj_cells": 10,
                 "max_page_bytes": 65000}
 
-    def __init__(self, vol, game_dir, version=2, ag00="AG00.DAT", config=None):
+    def __init__(self, vol, game_dir, version=2, ag00="AG00.DAT", config=None,
+                 disks=None, scope=None, prefix=""):
+        """disks: {disk number: path} overriding ADISK/BDISK discovery in game_dir.
+        scope: disk numbers whose pages this instance handles (scenario sets share
+        disk 1 but carry their own BDISK).  prefix: string-ref prefix per set."""
         self.vol = vol
         self.game_dir = game_dir
         self.version = version
@@ -159,19 +163,64 @@ class Sys2Game:
         # scenario disks: ADISK.DAT = 1, BDISK.DAT = 2, ...
         self.disk_paths, files = {}, {}
         for n, letter in enumerate("ABCDEFGH", 1):
-            path = "%s/%sDISK.DAT" % (game_dir, letter)
+            path = (disks or {}).get(n) or "%s/%sDISK.DAT" % (game_dir, letter)
             try:
                 files[n] = vol.read(path)
             except FileNotFoundError:
                 continue
             self.disk_paths[n] = path
         self.adisk = ADisk(files)
-        self.pages = {i: Page(i, d, version) for i, d in enumerate(self.adisk.page_data) if d is not None}
+        self.scope = set(scope) if scope else set(files)
+        self.prefix = prefix
+        self.pages = {}
+        wanted = self._reachable(version) if self.config.get("reachable_only") else None
+        for i, d in enumerate(self.adisk.page_data):
+            if d is not None and self.adisk.links[i][0] in self.scope and (wanted is None or i in wanted):
+                self.pages[i] = Page(i, d, version)
+                self.pages[i].prefix = prefix
         self.ag00_path = game_dir + "/" + ag00
         try:
             vol.find(self.ag00_path)
         except FileNotFoundError:
             self.ag00_path = None
+
+    def _reachable(self, version):
+        """Pages reachable from page 0 through page jumps/calls with constant
+        targets.  Used where a disk's pointer table carries filler entries
+        (Super D.P.S).  If any jump target is computed at runtime, every
+        parseable page is kept so nothing can silently drop out."""
+        from .alice_sys import SysError
+        seen, todo, dynamic = set(), [0], False
+        while todo:
+            i = todo.pop()
+            if i in seen or i >= len(self.adisk.page_data) or self.adisk.page_data[i] is None:
+                continue
+            seen.add(i)
+            try:
+                page = Page(i, self.adisk.page_data[i], version)
+            except SysError:
+                continue
+            for op in page.ops:
+                if op.cmd in ("&", "%"):
+                    e = op.parts[0][1:]
+                    if len(e) == 2 and 0x40 <= e[0] <= 0x76 and e[1] == 0x7F:
+                        todo.append(e[0] - 0x40)
+                    elif len(e) == 3 and e[0] <= 0x3F and e[2] == 0x7F:
+                        todo.append(((e[0] & 0x3F) << 8) | e[1])
+                    else:
+                        dynamic = True
+        if dynamic:
+            ok = set()
+            for i, d in enumerate(self.adisk.page_data):
+                if d is None:
+                    continue
+                try:
+                    Page(i, d, version)
+                    ok.add(i)
+                except SysError:
+                    pass
+            return ok
+        return seen
 
     # ---------------------------------------------------------------- extract
     def extract(self, title, image_sha):
@@ -198,8 +247,9 @@ class Sys2Game:
                     add(b.kind, jp, b.ref, max(cfg["msg_cells"], widest))
             for op in page.ops:
                 if op.cmd == "M" and op.text:
-                    add("name", _jp(op.text), "p%02d:%04x" % (pi, op.addr), cfg["name_bytes"] // 2)
-        head, verbs, objs = parse_ag00(self.vol.read(self.ag00_path)) if self.ag00_path else (b"", [], [])
+                    add("name", _jp(op.text), "%sp%02d:%04x" % (self.prefix, pi, op.addr), cfg["name_bytes"] // 2)
+        use_ag00 = self.ag00_path and 1 in self.scope
+        head, verbs, objs = parse_ag00(self.vol.read(self.ag00_path)) if use_ag00 else (b"", [], [])
         for n, v in enumerate(verbs):
             if v.strip():
                 add("verb", _jp(v), "verb:%d" % n, cfg["verb_cells"])
@@ -248,7 +298,7 @@ class Sys2Game:
                         repl[k] = []
             for k, op in enumerate(page.ops):
                 if op.cmd == "M":
-                    hit = by_ref.get("p%02d:%04x" % (i, op.addr))
+                    hit = by_ref.get("%sp%02d:%04x" % (self.prefix, i, op.addr))
                     if hit:
                         e, text = hit
                         text = text.replace("\n", " ")
@@ -274,8 +324,9 @@ class Sys2Game:
                 data = page.assemble()
             new_pages.append(data)
         for n, data in self.adisk.build(new_pages).items():
-            self.vol.write(self.disk_paths[n], data)
-        if not self.ag00_path:
+            if n in self.scope:
+                self.vol.write(self.disk_paths[n], data)
+        if not self.ag00_path or 1 not in self.scope:
             return report
 
         orig = self.vol.read(self.ag00_path)

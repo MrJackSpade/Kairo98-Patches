@@ -1,0 +1,11 @@
+{
+ "title": "Ayumi-chan Monogatari",
+ "key": "AliceSoft.zip/Ayumi-chan Monogatari",
+ "image": "Ayumi-chan Monogatari\\Ayumi-chan Monogatari [HD]\\Ayumi-chan Monogatari.hdi",
+ "game_dir": "AYUMI",
+ "version": 2,
+ "encoding": "packed",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "title": "Otome Senki",
+ "key": "AliceSoft.zip/Otome Senki",
+ "image": "Otome Senki\\Otome Senki [HD]\\Otome Senki.hdi",
+ "game_dir": "",
+ "version": 3,
+ "encoding": "halfkana",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

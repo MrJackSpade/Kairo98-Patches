@@ -1,0 +1,32 @@
+{
+ "title": "Super D.P.S (Dream Program System)",
+ "key": "AliceSoft.zip/Super D.P.S (Dream Program System)",
+ "image": "Super D.P.S (Dream Program System)\\Super D.P.S (Dream Program System) [HD]\\Super D.P.S (Dream Program System).hdi",
+ "game_dir": "SDPS",
+ "version": 2,
+ "encoding": "packed",
+ "config": {
+  "menu_fit_jp": true,
+  "reachable_only": true
+ },
+ "sets": [
+  {
+   "prefix": "s1:",
+   "disks": {
+    "2": "SDPS/SDPS0001/BDISK.DAT"
+   }
+  },
+  {
+   "prefix": "s2:",
+   "disks": {
+    "2": "SDPS/SDPS0002/BDISK.DAT"
+   }
+  },
+  {
+   "prefix": "s3:",
+   "disks": {
+    "2": "SDPS/SDPS0003/BDISK.DAT"
+   }
+  }
+ ]
+}

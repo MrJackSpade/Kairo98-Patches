@@ -1,6 +1,6 @@
 """Scaffold games/<folder>/ for an Alice Soft System 3 title from the index.
 
-    python tools/new_alice_game.py <folder> "<index key>" [image substring]
+    python tools/new_alice_game.py <folder> "<index key>" [image substring] [--sys2]
 
 Picks the title's HDI (optionally the one whose name contains the substring),
 finds the directory holding ADISK.DAT, writes game.json, extract.py, patch.py
@@ -41,7 +41,9 @@ if __name__ == "__main__":
 
 def main():
     folder, key = sys.argv[1], sys.argv[2]
-    want = sys.argv[3] if len(sys.argv) > 3 else ""
+    args = [a for a in sys.argv[3:] if not a.startswith("--")]
+    want = args[0] if args else ""
+    version = 2 if "--sys2" in sys.argv else 3
     titles = json.load(open(os.path.join(ROOT, "index", "index.json"), encoding="utf-8"))["titles"]
     t = next(x for x in titles if x["key"] == key)
     hdis = [i for i in t["images"] if i.get("path", "").lower().endswith(".hdi") and want in i["image"]]
@@ -52,7 +54,8 @@ def main():
     here = os.path.join(ROOT, "games", folder)
     os.makedirs(here, exist_ok=True)
     cfg = {"title": t["title"], "key": key, "image": img["path"],
-           "game_dir": game_dir, "version": 3, "encoding": "halfkana",
+           "game_dir": game_dir, "version": version,
+           "encoding": "packed" if version == 2 else "halfkana",
            "config": {"menu_fit_jp": True}}
     json.dump(cfg, open(os.path.join(here, "game.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for name, body in (("extract.py", EXTRACT), ("patch.py", PATCH)):

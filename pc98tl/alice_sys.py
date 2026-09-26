@@ -173,9 +173,21 @@ class ADisk:
         self.link_sector, self.data_sector = struct.unpack_from("<HH", a, 0)
         lt = a[(self.link_sector - 1) * 256:(self.data_sector - 1) * 256]
         self.links = [(lt[i * 2], lt[i * 2 + 1]) for i in range(len(lt) // 2)]
+        # A disk's pointer table holds strictly increasing sector numbers; the
+        # shared link table can list more pages than a given scenario disk has
+        # (Super D.P.S), so stop at the first entry that breaks the sequence.
+        self.valid = {}
+        for disk, data in files.items():
+            n, li = len(data) // 256, 1
+            while (li + 1) * 2 + 2 <= len(data):
+                s_, e_ = struct.unpack_from("<HH", data, li * 2)
+                if not (1 <= s_ < e_ and e_ - 1 <= n):
+                    break
+                li += 1
+            self.valid[disk] = li - 1  # entries 1..valid are real pages
         self.page_data = []
         for disk, li in self.links:
-            if disk in (0, 0x1A) or disk not in files:
+            if disk in (0, 0x1A) or disk not in files or li > self.valid.get(disk, 0):
                 self.page_data.append(None)
                 continue
             s, e = struct.unpack_from("<HH", files[disk], li * 2)

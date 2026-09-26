@@ -219,5 +219,33 @@
    "alpharobo.neocities.org: not listed",
    "web search (Funny Bee): nothing"
   ]
+ },
+ "AliceSoft.zip/Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls)": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API: no English release on any platform",
+   "AliceSoft wiki Translation_project: not listed",
+   "baba-jpc.neocities.org translations (incl. Rance 4.1/4.2 pages): not listed",
+   "web search: nothing"
+  ]
+ },
+ "AliceSoft.zip/Toushin Toshi II - Soshite, Sorekara": {
+  "checked": "2026-09-26",
+  "result": "clear",
+  "sources": [
+   "VNDB API: no English release on any platform",
+   "AliceSoft wiki Translation_project: not listed",
+   "baba-jpc.neocities.org translations (incl. Rance 4.1/4.2 pages): not listed",
+   "web search: nothing",
+   "the announced BabaJeanmel/Alpharobo project covers Toushin Toshi II itself, not this sequel disk"
+  ]
+ },
+ "AliceSoft.zip/[Alice Soft materials]": {
+  "checked": "2026-09-26",
+  "result": "not a game",
+  "sources": [
+   "archive holds scans/extras only; no disk images to translate"
+  ]
  }
 }

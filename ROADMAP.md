@@ -61,3 +61,10 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Alice no Yakata III | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory on this image; page splitting pending | — |
 | ♥ D.P.S Zenbu | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory; oversized pages; page splitting pending | — |
 | Ningyo | alice-sys (System 3) | extracted | Claude (no ♥) | engine build needs its own signature | — |
+| ♥ AmbivalenZ | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | pending | — |
+| ♥ Prostudent G | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | pending (System 2 font patch generalization) | — |
+| ♥ Ayumi-chan Monogatari | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | pending (System 2 font patch generalization) | — |
+| Otome Senki | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
+| Toushin Toshi II - Soshite, Sorekara | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
+| Hashiri Onna II (Rance 4.1+4.2 hint disk) | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
+| Super D.P.S | alice-sys (System 2, 3 scenario sets) | extracted | Claude (no ♥) | pending (System 2 font patch generalization) | — |

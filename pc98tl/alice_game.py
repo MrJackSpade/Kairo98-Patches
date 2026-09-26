@@ -32,12 +32,46 @@ def kana_table(adv):
     return [bytes([t[i + 1], t[i]]).decode("cp932", "replace") for i in range(0, 128, 2)]
 
 
-def _game(here, img):
+def _games(here, img):
+    """One Sys2Game per scenario set.  Without "sets": a single game.  With
+    "sets" (e.g. Super D.P.S): the shared ADISK pages once, then each set's
+    own disks, e.g. {"prefix": "s1:", "disks": {"2": "SDPS/SDPS0001/BDISK.DAT"}}."""
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     vol = img.volumes[0]
     conf = dict(cfg.get("config", {}))
     conf.setdefault("encoding", cfg["encoding"])
-    return cfg, vol, Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf)
+    if not cfg.get("sets"):
+        return cfg, vol, [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf)]
+    games = [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf, scope={1})]
+    for st in cfg["sets"]:
+        disks = {int(k): v for k, v in st["disks"].items()}
+        games.append(Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf,
+                              disks=disks, scope=set(disks), prefix=st["prefix"]))
+    return cfg, vol, games
+
+
+def _merge(docs):
+    """Merge extract() results of several scenario sets into one document."""
+    merged, order = {}, []
+    for doc in docs:
+        for e in doc["strings"]:
+            key = (e["kind"], e["jp"])
+            if key in merged:
+                merged[key]["refs"] += e["refs"]
+                merged[key]["max_cells"] = min(merged[key]["max_cells"], e["max_cells"])
+            else:
+                merged[key] = dict(e)
+                order.append(key)
+    prefix = {"msg": "m", "menu": "u", "name": "n", "verb": "v", "obj": "o", "exe": "e"}
+    counters, out = {}, []
+    for key in order:
+        e = merged[key]
+        counters[e["kind"]] = counters.get(e["kind"], 0) + 1
+        e["id"] = "%s%05d" % (prefix.get(e["kind"], "x"), counters[e["kind"]])
+        out.append(e)
+    doc = dict(docs[0])
+    doc["strings"] = out
+    return doc
 
 
 def run_extract(here, src):
@@ -47,8 +81,9 @@ def run_extract(here, src):
     table = kana_table(img.volumes[0].read(cfg["game_dir"] + "/ADV.COM"))
     if table:
         set_kana_table(table)
-    cfg, vol, game = _game(here, img)
-    doc = game.extract(cfg["title"], sha256(src))
+    cfg, vol, games = _games(here, img)
+    docs = [g.extract(cfg["title"], sha256(src)) for g in games]
+    doc = docs[0] if len(docs) == 1 else _merge(docs)
     if os.path.exists(out):  # keep translations and hand-tuned fields
         old = {(e["kind"], e["jp"]): e for e in json.load(open(out, encoding="utf-8"))["strings"]}
         for e in doc["strings"]:
@@ -70,8 +105,10 @@ def run_patch(here, src, dst, mode="en"):
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
     img = DiskImage(src)
-    cfg, vol, game = _game(here, img)
-    report = game.patch(doc, mode=mode)
+    cfg, vol, games = _games(here, img)
+    report = []
+    for g in games:
+        g.patch(doc, mode=mode, report=report)
     adv_path = cfg["game_dir"] + "/ADV.COM"
     if cfg["encoding"] == "halfkana":
         vol.write(adv_path, alice3_font.build(vol.read(adv_path)))

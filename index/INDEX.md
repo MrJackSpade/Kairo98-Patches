@@ -653,16 +653,16 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Mugen Houyou [CD FD HD extras] `alice-sys`
 - Ningyo - Tsutako [FD HD] `alice-sys`
 - ♥ Only You - Seikimatsu no Juliet-tachi [CD FD HD] `alice-sys`
-- ♥ Otome Senki [HD] `alice-sys`
+- Otome Senki [HD] `alice-sys`
 - ♥ Pro Student G [FD HD extras] `alice-sys`
 - ♥ Rance [FD extras] — **EN**
 - ♥ Rance 4.1 [FD HD] `alice-sys` — **EN**
-- ♥ Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) [FD HD] `alice-sys`
+- Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) [FD HD] `alice-sys`
 - ♥ Rance 4.2 [FD HD] `alice-sys` — **EN**
 - ♥ Rance II [FD HD extras] `alice-sys` — **EN**
 - ♥ Rance III [FD HD extras] `alice-sys` — **EN**
 - ♥ Rance IV [FD HD] `alice-sys` — **EN**
-- ♥ Super D.P.S (Dream Program System) [FD HD extras] `alice-sys`
+- Super D.P.S (Dream Program System) [FD HD extras] `alice-sys`
 - ♥ Toushin Toshi [FD HD extras] `alice-sys` — **EN**
 - ♥ Toushin Toshi II [FD HD extras] `alice-sys` — *announced (skip)*
 - Toushin Toshi II - Soshite, Sorekara [CD HD] `alice-sys`
