@@ -25,15 +25,17 @@ recent.
 
 ## Per game
 
-1. Extractor → `games/<title>/strings.json` (JP text as displayed, empty `en`)
+1. Extractor → `games/<title>/strings.json` (JP text as displayed, empty `en`),
+   then `tools/adult_scan.py` sets the final ♥ mark from the script text
 2. Patcher → patched copy of the HDI (engine hooks as needed, e.g. half-width font)
 3. Stress test with `--pseudo`, then boot-test in np21w (`tools/emu_shot.ps1`)
 4. Translation: port an existing English script when one exists for another
-   platform; otherwise the user machine-translates via `tools/mtl.py`
+   platform. Otherwise, **no ♥**: translated in this repo; **♥**: the maintainer
+   machine-translates it with a separate model via `tools/mtl.py`
 5. Status shows in `index/INDEX.md`
 
 ## Status
 
 | Game | Engine | Extract | Patch | Boot test | Translation |
 |---|---|---|---|---|---|
-| Dalk | alice-sys (System 2) | done | done | done | UI/names done; script awaiting MTL |
+| ♥ Dalk | alice-sys (System 2) | done | done | done | UI/names done; script goes to the maintainer's model |
