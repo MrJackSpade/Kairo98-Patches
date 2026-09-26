@@ -200,5 +200,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "AliceSoft.zip/Uchuu Kaitou Funny Bee": [
+  {
+   "label": "This repo: games/funny_bee (extract/patch working, script ready for translation)",
+   "url": "../games/funny_bee/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

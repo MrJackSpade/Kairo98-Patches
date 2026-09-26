@@ -22057,15 +22057,22 @@
      "path": "Uchuu Kaitou Funny Bee\\Uchuu Kaitou Funny Bee [HD]\\Uchuu Kaitou Funny Bee.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/funny_bee (extract/patch working, script ready for translation)",
+     "url": "../games/funny_bee/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17732 (erotic content)",
+   "heart_basis": "script text: 15 of 15243 strings match the sexual-vocabulary list (5 distinct terms)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Allex.zip/Pick Up Mahjong Master",

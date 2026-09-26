@@ -18,7 +18,8 @@ Strings file layout (UTF-8 JSON):
 """
 import hashlib
 
-from .alice_sys2 import ADisk, Page, mblen
+from .alice_sys import ADisk, Page, mblen
+from . import alice3_font
 from . import packfont
 from .text import encode_fullwidth, wrap, pseudo, TOKEN_RE
 
@@ -66,6 +67,8 @@ class Encoder:
     def encode(self, s):
         if self.kind == "packed":
             return packfont.encode(s, encode_fullwidth)
+        if self.kind == "halfkana":
+            return alice3_font.encode(s, encode_fullwidth)
         return encode_fullwidth(s)
 
     def cells(self, s):
@@ -73,6 +76,8 @@ class Encoder:
         extra = TOKEN_CELLS * len(TOKEN_RE.findall(s))
         if self.kind == "packed":
             return packfont.cells(plain) + extra
+        if self.kind == "halfkana":
+            return alice3_font.cells(plain) + extra
         return (sum(1 if c == " " else 2 for c in plain) + 1) // 2 + extra
 
 
@@ -143,15 +148,29 @@ class Sys2Game:
                 "name_bytes": 32, "verb_cells": 10, "obj_cells": 10,
                 "max_page_bytes": 65000}
 
-    def __init__(self, vol, game_dir, adisk="ADISK.DAT", ag00="AG00.DAT", config=None):
+    def __init__(self, vol, game_dir, version=2, ag00="AG00.DAT", config=None):
         self.vol = vol
-        self.adisk_path = game_dir + "/" + adisk
-        self.ag00_path = game_dir + "/" + ag00
+        self.game_dir = game_dir
+        self.version = version
         self.config = dict(self.DEFAULTS)
         self.config.update(config or {})
         self.enc = Encoder(self.config["encoding"])
-        self.adisk = ADisk(vol.read(self.adisk_path))
-        self.pages = {i: Page(i, d) for i, d in enumerate(self.adisk.page_data) if d is not None}
+        # scenario disks: ADISK.DAT = 1, BDISK.DAT = 2, ...
+        self.disk_paths, files = {}, {}
+        for n, letter in enumerate("ABCDEFGH", 1):
+            path = "%s/%sDISK.DAT" % (game_dir, letter)
+            try:
+                files[n] = vol.read(path)
+            except FileNotFoundError:
+                continue
+            self.disk_paths[n] = path
+        self.adisk = ADisk(files)
+        self.pages = {i: Page(i, d, version) for i, d in enumerate(self.adisk.page_data) if d is not None}
+        self.ag00_path = game_dir + "/" + ag00
+        try:
+            vol.find(self.ag00_path)
+        except FileNotFoundError:
+            self.ag00_path = None
 
     # ---------------------------------------------------------------- extract
     def extract(self, title, image_sha):
@@ -170,12 +189,16 @@ class Sys2Game:
             for b in find_blocks(page):
                 jp = b.jp_text()
                 widest = max(jp_cells(l.encode("cp932", "replace")) for l in jp.split("\n"))
-                floor = cfg["menu_cells"] if b.kind == "menu" else cfg["msg_cells"]
-                add(b.kind, jp, b.ref, max(floor, widest))
+                if b.kind == "menu":
+                    # menu boxes grow with their text from a fixed position, so each
+                    # item keeps its own Japanese width (the original authors' layout)
+                    add(b.kind, jp, b.ref, max(4, widest) if cfg.get("menu_fit_jp") else max(cfg["menu_cells"], widest))
+                else:
+                    add(b.kind, jp, b.ref, max(cfg["msg_cells"], widest))
             for op in page.ops:
                 if op.cmd == "M" and op.text:
                     add("name", _jp(op.text), "p%02d:%04x" % (pi, op.addr), cfg["name_bytes"] // 2)
-        head, verbs, objs = parse_ag00(self.vol.read(self.ag00_path))
+        head, verbs, objs = parse_ag00(self.vol.read(self.ag00_path)) if self.ag00_path else (b"", [], [])
         for n, v in enumerate(verbs):
             if v.strip():
                 add("verb", _jp(v), "verb:%d" % n, cfg["verb_cells"])
@@ -203,6 +226,8 @@ class Sys2Game:
             else:
                 jp_w = max(len(l) for l in e["jp"].split("\n"))
                 text = pseudo(e["id"], jp_w * 2, factor=2.5)  # ~2.5 letters per JP char
+                if e["kind"] != "msg":  # fixed-size slots: stay inside the limit
+                    text = text[:max(1, e["max_cells"] * 2)]
             if text:
                 for r in e["refs"]:
                     by_ref[r] = (e, text)
@@ -239,7 +264,10 @@ class Sys2Game:
                 raise ValueError("page %d is %d bytes after patching (limit %d)"
                                  % (i, len(data), self.config["max_page_bytes"]))
             new_pages.append(data)
-        self.vol.write(self.adisk_path, self.adisk.build(new_pages))
+        for n, data in self.adisk.build(new_pages).items():
+            self.vol.write(self.disk_paths[n], data)
+        if not self.ag00_path:
+            return report
 
         orig = self.vol.read(self.ag00_path)
         head, verbs, objs = parse_ag00(orig)

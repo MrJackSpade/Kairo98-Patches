@@ -13,5 +13,29 @@
    "m12482",
    "m15512"
   ]
+ },
+ "AliceSoft.zip/Uchuu Kaitou Funny Bee": {
+  "adult": true,
+  "hits": 15,
+  "strings": 15243,
+  "distinct_terms": 5,
+  "summary": "15 of 15243 strings match the sexual-vocabulary list (5 distinct terms)",
+  "adult_ids": [
+   "m02645",
+   "m02667",
+   "m02913",
+   "m04106",
+   "m06277",
+   "m06278",
+   "m06281",
+   "m08617",
+   "m09820",
+   "m09821",
+   "m09829",
+   "m11688",
+   "m13930",
+   "m13965",
+   "m13988"
+  ]
  }
 }

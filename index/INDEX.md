@@ -187,6 +187,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Publisher | Title | Status |
 |---|---|---|
 | Alice Soft | Dalk | [This repo: games/dalk (extract/patch working, script awaiting translation)](../games/dalk/notes.md) |
+| Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (extract/patch working, script ready for translation)](../games/funny_bee/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -665,7 +666,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Toushin Toshi [FD HD extras] `alice-sys` — **EN**
 - ♥ Toushin Toshi II [FD HD extras] `alice-sys` — *announced (skip)*
 - Toushin Toshi II - Soshite, Sorekara [CD HD] `alice-sys`
-- ♥ Uchuu Kaitou Funny Bee [FD HD extras] `alice-sys`
+- ♥ Uchuu Kaitou Funny Bee [FD HD extras] `alice-sys` — *MTL (this repo)*
 
 ### Allex (`Allex.zip`)
 

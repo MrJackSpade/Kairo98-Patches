@@ -39,3 +39,4 @@ recent.
 | Game | Engine | Extract | Patch | Boot test | Translation |
 |---|---|---|---|---|---|
 | ♥ Dalk | alice-sys (System 2) | done | done | done | UI/names done; script goes to the maintainer's model |
+| ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | done | done | intro + menus (filler) | script goes to the maintainer's model |
