@@ -18,3 +18,4 @@ index/*.log
 index/extract.lock
 index/scan/
 index/catalog/
+games/*/output/

@@ -57,6 +57,9 @@ def main():
     json.dump(cfg, open(os.path.join(here, "game.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     for name, body in (("extract.py", EXTRACT), ("patch.py", PATCH)):
         open(os.path.join(here, name), "w", encoding="utf-8").write(body)
+    # every game folder carries the identical standard PATCH.BAT
+    bat = open(os.path.join(ROOT, "tools", "PATCH.BAT.template"), encoding="utf-8").read()
+    open(os.path.join(here, "PATCH.BAT"), "w", encoding="utf-8", newline=chr(13) + chr(10)).write(bat)
     print(os.path.join(COLLECTION, img["path"]))
 
 

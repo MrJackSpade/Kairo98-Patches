@@ -25,6 +25,15 @@ recent.
 
 ## Per game
 
+**Required layout** (checked by `tools/check_games.py`): every `games/<title>/`
+holds `game.json`, `extract.py`, `patch.py` (contract: `patch.py IN OUT
+[--pseudo]`), `strings.json`, `notes.md` with the machine-translation notice,
+and **`PATCH.BAT`, byte-identical to `tools/PATCH.BAT.template`**. Double-clicking
+`PATCH.BAT` patches the collection copy of the game (or an image dropped onto it)
+and writes `output/<title> (English MTL).hdi` plus `notes.md`. That is the one
+standard way to produce a patched game, for every game.
+
+
 1. Extractor → `games/<title>/strings.json` (JP text as displayed, empty `en`),
    then `tools/adult_scan.py` sets the final ♥ mark from the script text
 2. Patcher → patched copy of the HDI (engine hooks as needed, e.g. half-width font)

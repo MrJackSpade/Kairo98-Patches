@@ -1,0 +1,3 @@
+*.BAT text eol=crlf
+*.bat text eol=crlf
+*.template text eol=crlf
