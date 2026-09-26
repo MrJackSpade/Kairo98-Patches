@@ -1,0 +1,11 @@
+{
+ "title": "Dr. Stop!",
+ "key": "AliceSoft.zip/Dr. Stop!",
+ "image": "Dr. Stop!\\Dr. Stop! [HD]\\Dr. Stop!.hdi",
+ "game_dir": "",
+ "version": 2,
+ "encoding": "packed",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

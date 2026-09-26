@@ -202,6 +202,8 @@ class ADisk:
                 out[disk] = data
                 continue
             first = min(struct.unpack_from("<H", data, li * 2)[0] for li, _ in mine)
+            last_end = max(struct.unpack_from("<H", data, li * 2 + 2)[0] for li, _ in mine)
+            slack = data[(last_end - 1) * 256:]  # bytes after the last page (kept as-is)
             head = bytearray(data[:(first - 1) * 256])
             body, cur = bytearray(), first
             for li, i in sorted(mine):
@@ -210,5 +212,5 @@ class ADisk:
                 struct.pack_into("<HH", head, li * 2, cur, cur + nsec)
                 body += pg.ljust(nsec * 256, b"\0")
                 cur += nsec
-            out[disk] = bytes(head + body)
+            out[disk] = bytes(head + body) + slack
         return out

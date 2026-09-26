@@ -77,7 +77,7 @@ def _rel(frm_next, to):
     return (to - frm_next) & 0xFFFF
 
 
-def build(adv):
+def build(adv, enlarge_pool=False):
     from keystone import Ks, KS_ARCH_X86, KS_MODE_16
     adv = bytearray(adv)
     if len(adv) != EXPECT_SIZE:
@@ -205,7 +205,8 @@ def build(adv):
     # stack B8F6, memory block +0x100 paragraphs
     adv[f(SP_IMM):f(SP_IMM) + 2] = (0xB8F6).to_bytes(2, "little")
     adv[f(RESIZE_IMM):f(RESIZE_IMM) + 2] = (0x01A0).to_bytes(2, "little")
-    adv[f(POOL_IMM):f(POOL_IMM) + 2] = POOL_PARAS.to_bytes(2, "little")
+    if enlarge_pool:
+        adv[f(POOL_IMM):f(POOL_IMM) + 2] = POOL_PARAS.to_bytes(2, "little")
     return bytes(adv + blob)
 
 

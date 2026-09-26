@@ -127,6 +127,45 @@ def find_blocks(page):
     return blocks
 
 
+def _consts(raw, start):
+    """Values of the expressions in raw[start:]; None where not a constant."""
+    vals, p, cur = [], start, []
+    while p < len(raw):
+        x = raw[p]
+        if x == 0x7F:
+            vals.append(cur[0] if len(cur) == 1 and cur[0] is not None else None)
+            cur, p = [], p + 1
+            continue
+        if 0x40 <= x <= 0x76:
+            cur.append(x - 0x40)
+            p += 1
+        elif x <= 0x3F:
+            cur.append(((x & 0x3F) << 8) | raw[p + 1])
+            p += 2
+        else:  # variables and operators: not a plain constant
+            cur.append(None)
+            p += 2 if x >= 0xC0 else 1
+    return vals
+
+
+def window_command(op, version):
+    """(sub-command, index, p1..p5) of a 'B' window command, None for non-constants."""
+    raw = op.parts[0]
+    if version == 3:
+        vals = _consts(raw, 2)
+        return [raw[1]] + vals
+    return _consts(raw, 1)
+
+
+def window_cells(p1, p3):
+    """Text window width in 16px cells from its left/right coordinates
+    (8px columns when small, pixels otherwise)."""
+    if p1 is None or p3 is None or p3 <= p1:
+        return None
+    px = (p3 - p1) * 8 if max(p1, p3) <= 80 else (p3 & 0xFFF8) - (p1 & 0xFFF8)
+    return max(4, px // 16)
+
+
 def parse_ag00(data):
     head, _, rest = data.partition(b"\r\n")
     _d0, nverb, nobj, _d3 = map(int, head.split(b","))
@@ -184,6 +223,51 @@ class Sys2Game:
         except FileNotFoundError:
             self.ag00_path = None
 
+    def layout(self, page, blocks, on_block):
+        """Walk a page in order, tracking the active text window's width and the
+        column where the next text starts.  Calls on_block(block, width, first)
+        for each message block (first = room left on the current line) and
+        expects the number of cells the block's last line uses (or None when
+        the block is unchanged, to use its Japanese width)."""
+        starts = {b.start: b for b in blocks}
+        msg_widths = [max(jp_cells(l.encode("cp932", "replace")) for l in b.jp_text().split("\n"))
+                      for b in blocks if b.kind == "msg"]
+        fallback = max(msg_widths + [8])  # widest Japanese line on this page
+        widths, active, col = {}, None, 0
+        ops, k = page.ops, 0
+        while k < len(ops):
+            op = ops[k]
+            b = starts.get(k)
+            if b is not None:
+                known = widths.get(active) is not None
+                w = widths.get(active) or fallback
+                jp_w = max(jp_cells(l.encode("cp932", "replace")) for l in b.jp_text().split("\n"))
+                w = max(w, jp_w) if col == 0 else w
+                b.window_known = known
+                used = on_block(b, w, max(0, w - col))
+                if b.kind != "msg":  # menu items go to the menu box, not the text line
+                    k = b.end
+                    continue
+                if used is None:  # unchanged: advance by the Japanese
+                    last = b.jp_text().split("\n")[-1]
+                    used = jp_cells(last.encode("cp932", "replace")) + (col if "\n" not in b.jp_text() else 0)
+                col = used
+                k = b.end
+                continue
+            if op.cmd == "B":
+                v = window_command(op, self.version)
+                if len(v) >= 7 and v[0] == 3:
+                    widths[v[1]] = window_cells(v[2], v[4])
+                elif len(v) >= 7 and v[0] == 4 and v[6] == 0:
+                    active, col = v[1], 0
+            elif op.cmd in ("R", "A"):
+                col = 0
+            elif op.cmd == "X":
+                col += TOKEN_CELLS
+            elif op.cmd == "text":
+                col += jp_cells(op.text)
+            k += 1
+
     def _reachable(self, version):
         """Pages reachable from page 0 through page jumps/calls with constant
         targets.  Used where a disk's pointer table carries filler entries
@@ -236,7 +320,10 @@ class Sys2Game:
             entries[key]["refs"].append(ref)
 
         for pi, page in self.pages.items():
-            for b in find_blocks(page):
+            blocks = find_blocks(page)
+            room = {}
+            self.layout(page, blocks, lambda b, w, first: room.__setitem__(b.start, w))
+            for b in blocks:
                 jp = b.jp_text()
                 widest = max(jp_cells(l.encode("cp932", "replace")) for l in jp.split("\n"))
                 if b.kind == "menu":
@@ -244,7 +331,7 @@ class Sys2Game:
                     # item keeps its own Japanese width (the original authors' layout)
                     add(b.kind, jp, b.ref, max(4, widest) if cfg.get("menu_fit_jp") else max(cfg["menu_cells"], widest))
                 else:
-                    add(b.kind, jp, b.ref, max(cfg["msg_cells"], widest))
+                    add(b.kind, jp, b.ref, max(widest, room.get(b.start, cfg["msg_cells"])))
             for op in page.ops:
                 if op.cmd == "M" and op.text:
                     add("name", _jp(op.text), "%sp%02d:%04x" % (self.prefix, pi, op.addr), cfg["name_bytes"] // 2)
@@ -278,7 +365,7 @@ class Sys2Game:
                 jp_w = max(len(l) for l in e["jp"].split("\n"))
                 text = pseudo(e["id"], jp_w * 2, factor=2.5)  # ~2.5 letters per JP char
                 if e["kind"] != "msg":  # fixed-size slots: stay inside the limit
-                    text = text[:max(1, e["max_cells"] * 2)]
+                    text = text[:max(1, e.get("max_cells", e.get("max_bytes", 32) // 2) * 2)]
             if text:
                 for r in e["refs"]:
                     by_ref[r] = (e, text)
@@ -290,12 +377,23 @@ class Sys2Game:
                 new_pages.append(self.adisk.page_data[i])
                 continue
             repl = {}
-            for b in find_blocks(page):
+
+            def place(b, width, first):
                 hit = by_ref.get(b.ref)
-                if hit:
-                    repl[b.start] = self._encode_block(hit[0], hit[1], report)
-                    for k in range(b.start + 1, b.end):
-                        repl[k] = []
+                if not hit:
+                    return None
+                parts, used = self._encode_block(hit[0], hit[1], report, width, first)
+                jp_lines = b.jp_text().count(chr(10)) + 1
+                en_lines = sum(1 for x in parts if x == b"R") + 1
+                if not getattr(b, "window_known", True) and en_lines > jp_lines and mode != "pseudo":
+                    report.append("%s: %d lines where the Japanese has %d, in a window of unknown size "
+                                  "(may overlap; shorten)" % (hit[0]["id"], en_lines, jp_lines))
+                repl[b.start] = parts
+                for k in range(b.start + 1, b.end):
+                    repl[k] = []
+                return used
+
+            self.layout(page, find_blocks(page), place)
             for k, op in enumerate(page.ops):
                 if op.cmd == "M":
                     hit = by_ref.get("%sp%02d:%04x" % (self.prefix, i, op.addr))
@@ -347,9 +445,10 @@ class Sys2Game:
         self.vol.write(self.ag00_path, ag)
         return report
 
-    def _encode_block(self, e, text, report):
+    def _encode_block(self, e, text, report, width=None, first=None):
         if e["kind"] == "msg":
-            lines = wrap(text, e["max_cells"], width=self.enc.cells)
+            width = width or e["max_cells"]
+            lines = wrap(text, width, width=self.enc.cells, first=first)
         else:
             lines = [text.replace("\n", " ")]
             if self.enc.cells(lines[0]) > e["max_cells"]:
@@ -366,7 +465,13 @@ class Sys2Game:
                 pos = m.end()
             if pos < len(line):
                 parts.append(self.enc.encode(line[pos:]))
-        return parts or [self.enc.encode(" ")]
+        parts = parts or [self.enc.encode(" ")]
+        if e["kind"] != "msg":
+            return parts, None
+        last = self.enc.cells(lines[-1]) if lines else 0
+        if len(lines) == 1 and first is not None:  # continued on the same line
+            last += width - first
+        return parts, last
 
 
 def _trim(enc, lim):

@@ -51,19 +51,23 @@ def encode_fullwidth(s):
     return b"".join(_fw(c) for c in s)
 
 
-def wrap(s, max_cols, encode=encode_fullwidth, width=None):
+def wrap(s, max_cols, encode=encode_fullwidth, width=None, first=None):
     """Greedy word wrap.  `width(str)` gives display width (defaults to the
     Shift-JIS column width of `encode(str)`).  '\n' forces a break.
     Returns a list of str lines."""
     if width is None:
         width = lambda t: sjis_cols(encode(t))  # noqa: E731
     lines = []
+    head = s.split("\n", 1)[0].split(" ", 1)[0]
+    if first is not None and head and width(head) > first:
+        lines.append("")  # continuing too close to the edge: start on a fresh line
     for para in s.split("\n"):
         words = para.split(" ")
         cur = ""
         for w in words:
             cand = w if not cur else cur + " " + w
-            if width(cand) <= max_cols or not cur:
+            lim = first if (first is not None and not lines) else max_cols
+            if width(cand) <= lim or not cur:
                 cur = cand
                 # a single over-long word: hard split
                 while width(cur) > max_cols:

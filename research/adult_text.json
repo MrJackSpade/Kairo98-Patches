@@ -402,5 +402,13 @@
   "adult_ids": [
    "m00386"
   ]
+ },
+ "AliceSoft.zip/Dr. Stop!": {
+  "adult": false,
+  "hits": 0,
+  "strings": 7401,
+  "distinct_terms": 0,
+  "summary": "0 of 7401 strings match the sexual-vocabulary list (0 distinct terms)",
+  "adult_ids": []
  }
 }

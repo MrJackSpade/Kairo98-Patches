@@ -9,8 +9,10 @@ kanji ROM.  So the patch only has to
   2. advance the cursor half a cell after a row-9 character (or the space
      code 8140) instead of a whole cell.  Other characters keep the full
      advance, so partly translated builds stay readable;
-  3. enlarge the scenario page pool (0x800 paragraphs = 32 KB) because English
-     pages grow; and move the stack up so the hook fits after the file.
+  3. move the stack up so the hook fits after the file.  The scenario page
+     region (0x800 paragraphs) is left alone by default: original games load
+     pages far larger than it, and growing it can exceed the free memory of
+     the disk image's DOS setup.  `pool_paras` enlarges it only on request.
 This follows the approach of the PC-98 Rance 4.1/4.2 English ports (half-width
 row-9 glyphs through the kana table); the per-character advance is our change.
 
@@ -79,7 +81,7 @@ def _find(data, pattern, what):
     return hits[0]
 
 
-def build(adv):
+def build(adv, pool_paras=None):
     from keystone import Ks, KS_ARCH_X86, KS_MODE_16
     adv = bytearray(adv)
     # 1. kana table
@@ -89,9 +91,16 @@ def build(adv):
         adv[t + 2 * i] = w & 0xFF
         adv[t + 2 * i + 1] = w >> 8
     # 2. character advance in the text drawer
-    m = _find(bytes(adv), rb"\xe8..\x73\x05\xe8..\xeb\x06\x8a\xe0\x26\x8a\x04\x46"
-                          rb"\x8b\x2e(..)\x8b\x3e..\x8b\x0e..(\x01\x0e(..))", "text drawer")
-    site, xvar = m.start(2), int.from_bytes(m.group(3), "little")
+    try:  # 1994-95 builds: lead check, kana convert, then mov bp/di/cx, add [x],cx
+        m = _find(bytes(adv), rb"\xe8..\x73\x05\xe8..\xeb\x06\x8a\xe0\x26\x8a\x04\x46"
+                              rb"\x8b\x2e(..)\x8b\x3e..\x8b\x0e..(\x01\x0e(..))", "text drawer")
+        site, xvar = m.start(2), int.from_bytes(m.group(3), "little")
+    except ValueError:  # 1996 builds (Ningyo): mov bx/cx/bp/di, add [x],cx after a half-width branch
+        hits = [h for h in re.finditer(rb"\x8b\x1e..\x8b\x0e..\x8b\x2e(..)\x8b\x3e..(\x01\x0e(..))", bytes(adv), re.S)
+                if h.group(1) == h.group(3)]
+        if len(hits) != 1:
+            raise ValueError("text drawer: expected 1 match, found %d" % len(hits))
+        site, xvar = hits[0].start(2), int.from_bytes(hits[0].group(3), "little")
     # 3. stack / memory block / page pool
     # mov ax,imm / mov sp,ax  or  mov sp,imm
     sp = _find(bytes(adv[:0x40]), rb"\xb8(..)\x8b\xe0|\xbc(..)", "stack setup")
@@ -129,6 +138,7 @@ def build(adv):
     adv[sp.start(sp_group):sp.start(sp_group) + 2] = (sp_val + 0x1000).to_bytes(2, "little")
     old = int.from_bytes(resize.group(rs_group), "little")
     adv[resize.start(rs_group):resize.start(rs_group) + 2] = (old + rs_add).to_bytes(2, "little")
-    adv[pool.start(1):pool.start(1) + 2] = (0x2000).to_bytes(2, "little")
+    if pool_paras:  # optional; off by default so the patch stays memory-neutral
+        adv[pool.start(1):pool.start(1) + 2] = pool_paras.to_bytes(2, "little")
     pad = b"\0" * (code_at - base)
     return bytes(adv) + pad + hook
