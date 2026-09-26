@@ -21,6 +21,10 @@ writes a new one next to it; the originals are never modified.
 
 ## Policy
 
+The full checklist for finishing a game, including clearance, the ♥ rule, patching,
+testing and publishing, is **[DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md)**.
+
+
 * **Skip** any game with a human English translation, or one announced by a team
   that has finished releases (`index/TEAMS.md`). Those are listed in the index
   with their source and the date we checked.

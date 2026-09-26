@@ -25,6 +25,9 @@ recent.
 
 ## Per game
 
+A game is finished when it meets **[DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md)**.
+The list below summarizes it.
+
 **Required layout** (checked by `tools/check_games.py`): every `games/<title>/`
 holds `game.json`, `extract.py`, `patch.py` (contract: `patch.py IN OUT
 [--pseudo]`), `strings.json`, `notes.md` with the machine-translation notice,
