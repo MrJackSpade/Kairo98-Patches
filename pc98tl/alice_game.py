@@ -12,7 +12,9 @@ import re
 
 from .disk import DiskImage
 from .alice_sys2_tl import Sys2Game, sha256, set_kana_table
-from . import alice3_font, alice2_font, alice1_text, dosmem
+from . import alice3_font, alice2_font, alice1_text, dosmem, nact_text
+from .n88disk import N88Image
+from . import n88basic
 from .alice_exe import find_strings, apply_strings, widen
 from .text import pseudo
 
@@ -52,7 +54,8 @@ def _games(here, img, src=None, cfg=None):
     if cfg["encoding"] == "packed":  # message cell width comes from the engine
         conf.setdefault("font_px", alice2_font.font_px(vol.read(_adv_path(cfg))))
     if not cfg.get("sets"):
-        return cfg, vol, [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf)]
+        disks = {int(k): v for k, v in cfg.get("disks", {}).items()} or None
+        return cfg, vol, [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf, disks=disks)]
     games = [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf, scope={1})]
     for st in cfg["sets"]:
         disks = {int(k): v for k, v in st["disks"].items()}
@@ -130,11 +133,23 @@ def _cells(jp):
     return sum(1 if ord(c) < 0x80 else 2 for c in jp) // 2
 
 
+def _image(cfg, src):
+    """The game's disk(s): a DOS image, or (N88-BASIC games, "n88") the main
+    N88 disk plus the others named in cfg["n88"], next to it."""
+    if cfg.get("n88"):
+        base = os.path.dirname(src)
+        return N88Image([src] + [os.path.join(base, n) for n in cfg["n88"]])
+    return DiskImage(src)
+
+
 def run_extract(here, src):
     out = os.path.join(here, "strings.json")
-    img = DiskImage(src)
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    table = kana_table(img.volumes[0].read(_adv_path(cfg)))
+    img = _image(cfg, src)
+    if cfg["encoding"] == "nact":
+        table = nact_text.kana_table(img.volumes[0].read(_adv_path(cfg)))
+    else:
+        table = kana_table(img.volumes[0].read(_adv_path(cfg)))
     if table:
         set_kana_table(table)
     cfg, vol, games = _games(here, img, src)
@@ -144,6 +159,12 @@ def run_extract(here, src):
     for n, st in enumerate(_exe_strings(cfg, adv), 1):
         doc["strings"].append({"id": "e%05d" % n, "kind": "exe", "jp": st["jp"], "en": "",
                                "refs": ["adv:%04x" % st["addr"]], "max_bytes": st["max_bytes"]})
+    n = sum(1 for e in doc["strings"] if e["kind"] == "exe")
+    for name in cfg.get("basic", []):  # protected N88-BASIC programs (the engine itself)
+        for off, size, jp in n88basic.strings(vol.read(name)):
+            n += 1
+            doc["strings"].append({"id": "e%05d" % n, "kind": "exe", "jp": jp, "en": "",
+                                   "refs": ["bas:%s:%04x" % (name, off)], "max_bytes": size})
     n = 0
     for name in cfg.get("demos", []):  # opening/demo programs: same in-place rules
         prog = vol.read(_prog_path(cfg, name))
@@ -184,6 +205,8 @@ def _font(cfg, prog, room=0x1000):
         return alice2_font.build(prog, room=room)
     if cfg["encoding"] == "textvram":
         return alice1_text.build(prog)
+    if cfg["encoding"] == "nact":
+        return nact_text.build(prog)
     return prog
 
 
@@ -269,17 +292,24 @@ def run_patch(here, src, dst, mode="en"):
         img, pcfg = _hdd_install(cfg, src)
         cfg, vol, games = _games(here, img, src, pcfg)
     else:
-        img = DiskImage(src)
+        img = _image(cfg, src)
         cfg, vol, games = _games(here, img, src)
     report = []
     for g in games:
         g.patch(doc, mode=mode, report=report)
     adv_path = _adv_path(cfg)
     adv = vol.read(adv_path)
-    exe = [e for e in doc["strings"] if e["kind"] == "exe"]
+    exe = [e for e in doc["strings"] if e["kind"] == "exe" and e["refs"][0].startswith("adv:")]
     texts = {int(e["refs"][0][4:], 16): _fixed(e, mode) for e in exe if _fixed(e, mode)}
     sizes = {int(e["refs"][0][4:], 16): e["max_bytes"] for e in exe}
     vol.write(adv_path, _strings_and_font(cfg, adv, texts, sizes, games[0].enc.encode, "ADV.COM", report))
+    for name in cfg.get("basic", []):
+        ents = [e for e in doc["strings"] if e["refs"][0].startswith("bas:%s:" % name)]
+        texts = {int(e["refs"][0].split(":")[2], 16): _fixed(e, mode) for e in ents if _fixed(e, mode)}
+        sizes = {int(e["refs"][0].split(":")[2], 16): e["max_bytes"] for e in ents}
+        prog, warn = n88basic.apply(vol.read(name), texts, sizes, name)
+        report += warn
+        vol.write(name, prog)
     for name in cfg.get("demos", []):
         path = _prog_path(cfg, name)
         ents = [e for e in doc["strings"] if e["kind"] == "demo" and e["refs"][0].split(":")[1] == name]

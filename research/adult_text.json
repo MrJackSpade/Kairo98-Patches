@@ -562,5 +562,16 @@
   "adult_ids": [
    "m02139"
   ]
+ },
+ "AliceSoft.zip/Abunai Tengu Densetsu": {
+  "adult": false,
+  "hits": 2,
+  "strings": 4235,
+  "distinct_terms": 1,
+  "summary": "2 of 4235 strings match the sexual-vocabulary list (1 distinct terms)",
+  "adult_ids": [
+   "u00099",
+   "m00565"
+  ]
  }
 }

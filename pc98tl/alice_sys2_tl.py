@@ -20,7 +20,7 @@ import hashlib
 import struct
 
 from .alice_sys import ADisk, Page, mblen
-from . import alice3_font, alice1_text
+from . import alice3_font, alice1_text, nact_text
 from . import packfont
 from .text import encode_fullwidth, wrap, pseudo, TOKEN_RE
 
@@ -72,6 +72,8 @@ class Encoder:
             return alice3_font.encode(s, encode_fullwidth)
         if self.kind == "textvram":
             return alice1_text.encode(s, encode_fullwidth)
+        if self.kind == "nact":
+            return nact_text.encode(s, encode_fullwidth)
         return encode_fullwidth(s)
 
     def cells(self, s):
@@ -83,6 +85,8 @@ class Encoder:
             return alice3_font.cells(plain) + extra
         if self.kind == "textvram":
             return alice1_text.cells(plain) + extra
+        if self.kind == "nact":
+            return nact_text.cells(plain) + extra
         return (sum(1 if c == " " else 2 for c in plain) + 1) // 2 + extra
 
 

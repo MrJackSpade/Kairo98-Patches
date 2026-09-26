@@ -360,5 +360,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "AliceSoft.zip/Abunai Tengu Densetsu": [
+  {
+   "label": "This repo: games/abunai_tengu (patcher working, machine translation in progress)",
+   "url": "../games/abunai_tengu/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

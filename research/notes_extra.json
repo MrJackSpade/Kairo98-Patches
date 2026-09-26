@@ -25,5 +25,13 @@
   "remarks": [
    "The collection's `[FD]` set (three DOS floppies with ADV.COM) is the one patched; the `[FD hdb]` D88 dumps of the original disks are not used."
   ]
+ },
+ "abunai_tengu": {
+  "not_handled": [
+   "The graphics-drawn title logo and side panel."
+  ],
+  "remarks": [
+   "The notice file is `MTL_NO.TXT` on disk A (N88 file names are 6+3 characters)."
+  ]
  }
 }

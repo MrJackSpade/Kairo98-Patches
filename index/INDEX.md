@@ -186,6 +186,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 | Publisher | Title | Status |
 |---|---|---|
+| Alice Soft | Abunai Tengu Densetsu | [This repo: games/abunai_tengu (patcher working, machine translation in progress)](../games/abunai_tengu/notes.md) |
 | Alice Soft | Alice no Yakata III | [This repo: games/alice_no_yakata_3 (patcher working, machine translation in progress)](../games/alice_no_yakata_3/notes.md) |
 | Alice Soft | Ambivalenz - Niritsu Haihan | [This repo: games/ambivalenz (patcher working, machine translation in progress)](../games/ambivalenz/notes.md) |
 | Alice Soft | Ayumi-chan Monogatari | [This repo: games/ayumi_chan (patcher working, machine translation in progress)](../games/ayumi_chan/notes.md) |
@@ -651,7 +652,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Alice Soft (`AliceSoft.zip`)
 
 - ♥ [Alice Soft materials] [extras]
-- ♥ Abunai Tengu Densetsu [FD extras]
+- Abunai Tengu Densetsu [FD extras] — *MTL (this repo)*
 - ♥ Alice no Yakata [FD extras] — **EN**
 - ♥ Alice no Yakata II [FD HD extras] `alice-sys` — **EN**
 - ♥ Alice no Yakata III [CD FD HD] `alice-sys` — *MTL (this repo)*

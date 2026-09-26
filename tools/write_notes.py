@@ -38,6 +38,21 @@ DISPLAY = {
   stays at about one byte per letter.
 * Engines that draw straight from the kanji ROM ("direct" shape) get their 16-dot
   routine hooked, and their 24-dot routine too when they have one.""",
+    "nact": """## English display (`pc98tl/nact_text.py`, `pc98tl/n88basic.py`, `pc98tl/n88disk.py`)
+
+* The game runs on N88-BASIC(86) from N88-DISK BASIC floppies (no DOS). The
+  scenario (DISK-A/B/C) is System 1's page format, rebuilt byte for byte.
+* Messages are drawn by the machine-code module NAC3.MAC. Its kana table now
+  maps the script bytes A1-DE to ASCII, and a hook writes those as single
+  half-width cells in text VRAM.
+* The engine's own prompts live in the protected BASIC program NACT4 (each
+  byte rotated one bit); they are replaced in place with ASCII of the same
+  length.
+* English makes the scenario files larger than the disks' free space, so the
+  patched disks gain track sides 154-163 (cylinders 77-81) where needed:
+  their FAT entries were already free, and N88-BASIC reads files there
+  normally (tested in np21w). An emulator must accept D88 images with the
+  full 164-track table.""",
     "textvram": """## English display (`pc98tl/alice1_text.py`)
 
 * System 1 prints on the text layer. Script bytes A0-DD carry English letters,
@@ -81,6 +96,8 @@ def main():
         for st in cfg.get("sets", []):
             if st.get("image"):
                 out.append("Also: `%s` (scenario disk)." % st["image"])
+        for name in cfg.get("n88", []):
+            out.append("Also: `%s`." % name)
         c = clear.get(key)
         if c:
             res = c.get("result", "")

@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | enter | space | esc | up | down | left | right
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | enter | space | esc | up | down | left | right
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -40,6 +40,7 @@ $out2 = @()
 foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100" } }
 Set-Content $ini $out2
 $argv = @("-i$ini") + ($fds | ForEach-Object { '"' + $_ + '"' })
+$started = Get-Date
 $p = Start-Process $Exe -ArgumentList $argv -WorkingDirectory $bin -PassThru
 Start-Sleep 3
 $p.Refresh(); $h = $p.MainWindowHandle
@@ -50,6 +51,11 @@ foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
     Start-Sleep -Milliseconds ([int]([double]$wait * 1000))
     $p.Refresh(); $h = $p.MainWindowHandle
+    if ($act -eq "save") {
+        # emulator state (raw main memory inside), kept as <Out>.s00
+        [W]::PostMessage($h, 0x111, [IntPtr]40201, [IntPtr]0) | Out-Null
+        continue
+    }
     if ($act -eq "shot") {
         $r = New-Object W+RECT; [W]::GetWindowRect($h, [ref]$r) | Out-Null
         $bmp = New-Object System.Drawing.Bitmap ($r.R - $r.L), ($r.B - $r.T)
@@ -66,4 +72,6 @@ foreach ($s in $Steps.Split(",")) {
     }
 }
 $p.CloseMainWindow() | Out-Null; Start-Sleep 1; if (-not $p.HasExited) { $p.Kill() }
+$state = Get-ChildItem -Path $work, $bin -Filter *.S00 -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -ge $started } | Sort-Object LastWriteTime | Select-Object -Last 1
+if ($state) { Move-Item -Force $state.FullName ("{0}.s00" -f $Out); Write-Output ("state {0}.s00" -f $Out) }
 Remove-Item -Recurse -Force $work

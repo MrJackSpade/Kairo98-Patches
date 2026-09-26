@@ -17991,7 +17991,7 @@
    "images": [],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 33 of 34 classified Alice Soft titles are adult",
+   "heart_basis": "provisional: 32 of 34 classified Alice Soft titles are adult",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
@@ -18114,15 +18114,22 @@
      "path": "Abunai Tengu Densetsu\\Abunai Tengu Densetsu [FD hdb]\\alts\\Abunai Tengu Densetsu (Disk A) [Alt 1].nfd"
     }
    ],
-   "patches": [],
-   "heart": true,
-   "heart_basis": "VNDB r17405 (erotic content)",
+   "patches": [
+    {
+     "label": "This repo: games/abunai_tengu (patcher working, machine translation in progress)",
+     "url": "../games/abunai_tengu/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": false,
+   "heart_basis": "script text: 2 of 4235 strings match the sexual-vocabulary list (1 distinct terms)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Alice no Yakata",
@@ -18902,7 +18909,7 @@
     }
    ],
    "heart": true,
-   "heart_basis": "provisional: 33 of 34 classified Alice Soft titles are adult",
+   "heart_basis": "provisional: 32 of 34 classified Alice Soft titles are adult",
    "engine": "unlisted",
    "english": true,
    "in_progress": false,

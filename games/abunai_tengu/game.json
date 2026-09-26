@@ -1,0 +1,24 @@
+{
+ "title": "Abunai Tengu Densetsu",
+ "key": "AliceSoft.zip/Abunai Tengu Densetsu",
+ "image": "Abunai Tengu Densetsu\\Abunai Tengu Densetsu [FD hdb]\\Abunai Tengu Densetsu (Disk A).d88",
+ "n88": [
+  "Abunai Tengu Densetsu (Disk B).d88",
+  "Abunai Tengu Densetsu (Disk C).d88"
+ ],
+ "game_dir": "",
+ "version": 1,
+ "encoding": "nact",
+ "engine": "NAC3.MAC",
+ "disks": {
+  "1": "DISK-A",
+  "2": "DISK-B",
+  "3": "DISK-C"
+ },
+ "config": {
+  "menu_fit_jp": true
+ },
+ "basic": [
+  "NACT4"
+ ]
+}

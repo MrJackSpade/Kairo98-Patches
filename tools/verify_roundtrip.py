@@ -9,7 +9,7 @@ import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, ROOT)
-from pc98tl.disk import DiskImage  # noqa: E402
+from pc98tl.alice_game import _image  # noqa: E402
 from pc98tl.alice_game import _games  # noqa: E402
 
 
@@ -19,8 +19,9 @@ def main():
     for name in sorted(names):
         here = os.path.join(ROOT, "games", name)
         cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-        img = DiskImage(os.path.join(os.environ.get("PC98_ROOT", r"C:\PC98"), cfg["image"]))
-        _cfg, _vol, games = _games(here, img)
+        src = os.path.join(os.environ.get("PC98_ROOT", r"C:\PC98"), cfg["image"])
+        img = _image(cfg, src)
+        _cfg, _vol, games = _games(here, img, src)
         ok, pages = True, 0
         for g in games:
             new = []

@@ -189,5 +189,23 @@
    "Scenarios 2 and 3 (SET2 2 / SET2 3)",
    "not yet seen"
   ]
+ ],
+ "abunai_tengu": [
+  [
+   "Boot disk A with disk C in drive 2, title, menu",
+   "OK: half-width filler in the message window and menus"
+  ],
+  [
+   "Engine prompt (NACT4) replaced",
+   "OK"
+  ],
+  [
+   "Scenario start (disk C pages)",
+   "OK"
+  ],
+  [
+   "Scenario data read from the added cylinders 77+",
+   "OK (test image with DISK-A starting on cylinder 77)"
+  ]
  ]
 }
