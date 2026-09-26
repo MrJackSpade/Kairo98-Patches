@@ -47,5 +47,6 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 | Test | Result |
 |---|---|
-| Title text, menus, message window | OK |
+| Menus, message window | OK |
+| Large-font title line | first characters show garbled; check with real English |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

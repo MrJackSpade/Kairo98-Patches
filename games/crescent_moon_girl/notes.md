@@ -49,6 +49,8 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 | Test | Result |
 |---|---|
+| Boot from disk A with disk B in drive 2 | OK |
+| Title scene, message window, later scenes | OK: half-width letters in the text layer |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
 
 The collection's `[FD]` set (three DOS floppies with ADV.COM) is the one patched; the `[FD hdb]` D88 dumps of the original disks are not used.
