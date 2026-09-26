@@ -1,0 +1,11 @@
+{
+ "title": "Mugen Houyou",
+ "key": "AliceSoft.zip/Mugen Houyou",
+ "image": "Mugen Houyou\\Mugen Houyou (CD version) [HD]\\Mugen Houyou (CD version).hdi",
+ "game_dir": "ALICE_MU",
+ "version": 3,
+ "encoding": "halfkana",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

@@ -93,8 +93,14 @@ def build(adv):
                           rb"\x8b\x2e(..)\x8b\x3e..\x8b\x0e..(\x01\x0e(..))", "text drawer")
     site, xvar = m.start(2), int.from_bytes(m.group(3), "little")
     # 3. stack / memory block / page pool
-    sp = _find(bytes(adv[:0x40]), rb"\xb8(..)\x8b\xe0", "stack setup")
-    resize = _find(bytes(adv), rb"\xbb..\xc1\xeb\x04\x81\xc3(\xa0\x00)\xb4\x4a\xcd\x21", "memory resize")
+    # mov ax,imm / mov sp,ax  or  mov sp,imm
+    sp = _find(bytes(adv[:0x40]), rb"\xb8(..)\x8b\xe0|\xbc(..)", "stack setup")
+    sp_group = 1 if sp.group(1) is not None else 2
+    # memory block = end of init code + stack room: either "shr 4; add paragraphs"
+    # (group 1) or "add bytes; shr 4" (group 2).  Both grow by 0x1000 bytes.
+    resize = _find(bytes(adv), rb"\xbb..\xc1\xeb\x04\x81\xc3(..)\xb4\x4a\xcd\x21"
+                               rb"|\xbb..\x81\xc3(..)\xc1\xeb\x04(?:\x8b\xf3\x8b\xfb)?\xb4\x4a\xcd\x21", "memory resize")
+    rs_group, rs_add = (1, 0x100) if resize.group(1) is not None else (2, 0x1000)
     pool = _find(bytes(adv), rb"\xb4\x48\xcd\x21\x72\xfa\x03\xd8\xa3..\xa3..\x05(\x00\x08)", "page pool")
 
     base = ORG + len(adv)
@@ -115,13 +121,14 @@ def build(adv):
         .byte 0xc3
     """.format(x=xvar)
     hook = bytes(ks.asm(asm, code_at)[0])
-    sp_val = int.from_bytes(sp.group(1), "little")
+    sp_val = int.from_bytes(sp.group(sp_group), "little")
     if code_at + len(hook) >= sp_val - 0x400:
         raise ValueError("no room for the hook below the stack")
     rel = (code_at - (ORG + site + 3)) & 0xFFFF
     adv[site:site + 4] = b"\xe8" + rel.to_bytes(2, "little") + b"\x90"
-    adv[sp.start(1):sp.start(1) + 2] = (sp_val + 0x1000).to_bytes(2, "little")
-    adv[resize.start(1):resize.start(1) + 2] = (0x00A0 + 0x100).to_bytes(2, "little")
+    adv[sp.start(sp_group):sp.start(sp_group) + 2] = (sp_val + 0x1000).to_bytes(2, "little")
+    old = int.from_bytes(resize.group(rs_group), "little")
+    adv[resize.start(rs_group):resize.start(rs_group) + 2] = (old + rs_add).to_bytes(2, "little")
     adv[pool.start(1):pool.start(1) + 2] = (0x2000).to_bytes(2, "little")
     pad = b"\0" * (code_at - base)
     return bytes(adv) + pad + hook

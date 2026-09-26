@@ -17,6 +17,7 @@ Strings file layout (UTF-8 JSON):
 * Empty "en" leaves the Japanese in place, so partial translations work.
 """
 import hashlib
+import struct
 
 from .alice_sys import ADisk, Page, mblen
 from . import alice3_font
@@ -259,10 +260,18 @@ class Sys2Game:
                             report.append("%s: name exceeds %d bytes, truncated" % (e["id"], lim))
                             enc = _trim(enc, lim)
                         repl[k] = [b"M", enc, b":"]
-            data = page.assemble(repl)
-            if len(data) > self.config["max_page_bytes"]:
-                raise ValueError("page %d is %d bytes after patching (limit %d)"
-                                 % (i, len(data), self.config["max_page_bytes"]))
+            try:
+                data = page.assemble(repl)
+            except struct.error:  # an address no longer fits in 16 bits
+                data = None
+            if data is None or len(data) > self.config["max_page_bytes"]:
+                size = "over 64 KB" if data is None else "%d bytes" % len(data)
+                if mode != "pseudo":
+                    raise ValueError("page %d is %s after patching (limit %d)"
+                                     % (i, size, self.config["max_page_bytes"]))
+                report.append("page %d would be %s (limit %d); left in Japanese for this test"
+                              % (i, size, self.config["max_page_bytes"]))
+                data = page.assemble()
             new_pages.append(data)
         for n, data in self.adisk.build(new_pages).items():
             self.vol.write(self.disk_paths[n], data)

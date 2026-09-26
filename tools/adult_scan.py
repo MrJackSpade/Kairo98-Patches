@@ -27,8 +27,9 @@ TERMS = [
 PATTERN = re.compile("|".join(map(re.escape, TERMS))
                      + r"|フェラ(?![ーガリ])"                  # not フェラーリ (Ferrari) / フェラガモ
                      + r"|(?<!ユニ)セックス(?!アピール)")       # not ユニセックス (unisex) / sex appeal
-MIN_LINES = 5   # strings with a hit
-MIN_TERMS = 3   # distinct terms among them, so one odd word can't flag a game
+MIN_LINES = 5    # strings with a hit
+MIN_TERMS = 3    # distinct terms among them, so one odd word can't flag a game
+MANY_LINES = 15  # ...unless one or two terms are used this often
 
 
 def scan(strings):
@@ -45,7 +46,7 @@ def main():
     key, path = sys.argv[1], sys.argv[2]
     doc = json.load(open(path, encoding="utf-8"))
     hits, terms = scan(doc["strings"])
-    adult = len(hits) >= MIN_LINES and len(terms) >= MIN_TERMS
+    adult = len(hits) >= MIN_LINES and (len(terms) >= MIN_TERMS or len(hits) >= MANY_LINES)
     out_path = os.path.join(ROOT, "research", "adult_text.json")
     data = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {}
     data[key] = {"adult": adult, "hits": len(hits), "strings": len(doc["strings"]),

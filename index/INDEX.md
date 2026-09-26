@@ -643,7 +643,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ D.P.S (Dream Program System) SG [FD extras] `alice-sys`
 - ♥ D.P.S (Dream Program System) SG Set 2 [FD extras] `alice-sys`
 - ♥ D.P.S (Dream Program System) SG Set 3 [FD extras] `alice-sys`
-- ♥ D.P.S Zenbu (All Dream Program System) [CD HD] `alice-sys`
+- D.P.S Zenbu (All Dream Program System) [CD HD] `alice-sys`
 - ♥ Dalk [FD HD extras] `alice-sys` — *MTL (this repo)*
 - ♥ Dr. Stop! [FD HD extras] `alice-sys`
 - ♥ Fukei-san VX (CG version) [HD] `alice-sys` — **EN**
@@ -651,7 +651,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) [FD] `alice-sys`
 - Little Vampire (MS-DOS version) [FD] `alice-sys` — **EN**
 - ♥ Mugen Houyou [CD FD HD extras] `alice-sys`
-- ♥ Ningyo - Tsutako [FD HD] `alice-sys`
+- Ningyo - Tsutako [FD HD] `alice-sys`
 - ♥ Only You - Seikimatsu no Juliet-tachi [CD FD HD] `alice-sys`
 - ♥ Otome Senki [HD] `alice-sys`
 - ♥ Pro Student G [FD HD extras] `alice-sys`

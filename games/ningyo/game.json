@@ -1,0 +1,11 @@
+{
+ "title": "Ningyo - Tsutako",
+ "key": "AliceSoft.zip/Ningyo - Tsutako",
+ "image": "Ningyo - Tsutako\\Ningyo - Tsutako [HD]\\Ningyo - Tsutako.hdi",
+ "game_dir": "ALI_NIN",
+ "version": 3,
+ "encoding": "halfkana",
+ "config": {
+  "menu_fit_jp": true
+ }
+}

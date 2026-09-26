@@ -1,0 +1,11 @@
+{
+ "title": "Alice no Yakata III",
+ "key": "AliceSoft.zip/Alice no Yakata III",
+ "image": "Alice no Yakata III\\Alice no Yakata III [HD]\\Alice no Yakata III.hdi",
+ "game_dir": "ALICE_Y3",
+ "version": 3,
+ "encoding": "halfkana",
+ "config": {
+  "menu_fit_jp": true
+ }
+}
