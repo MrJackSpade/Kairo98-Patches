@@ -4,11 +4,15 @@ This is the checklist for calling a game **Done**. A goal like *"bring Funny Bee
 to Done"* means: work through every item below that applies, in order, until
 all of them are true, and don't stop at "it works on my machine".
 
+The order matters: the script is extracted and classified **first**, and then
+handed off, so translation (the maintainer's for ♥ games, Claude's otherwise)
+runs while the patching work goes on. Nobody waits for the patcher.
+
 Two kinds of game have different end states:
 
 | Kind | How you tell | Done means |
 |---|---|---|
-| **♥ adult** | the script-text scan says adult (see §2) | **Tooling Done**: the game is fully patchable and tested. The script goes to the maintainer, who translates it with their own model. Claude does not translate it. |
+| **♥ adult** | the script-text scan says adult (see §3) | **Tooling Done**: the game is fully patchable and tested. The script goes to the maintainer **as soon as it's extracted and classified**, and they translate it with their own model while Claude builds the patch. Claude does not translate it. |
 | **No ♥** | the scan says not adult | **Translated Done**: Tooling Done, *plus* Claude has translated the whole script and the English build is tested. |
 
 ---
@@ -30,21 +34,7 @@ Two kinds of game have different end states:
 If a proven team covers it: add it to `research/announced.json`, rebuild the
 index, and **stop**. That game is not ours.
 
-## 2. Adult (♥) classification
-
-- [ ] Extract the script (§3), then run
-      `python tools/adult_scan.py "<index key>" games/<title>/strings.json`.
-- [ ] The scan decides the mark, and nothing else does (not the publisher, the
-      box art, or VNDB). It flags a game with **5+ matching lines and 3+ distinct
-      terms, or 15+ matching lines**, using only single-meaning sexual terms (see
-      the list in `tools/adult_scan.py`). Profanity and violence never count.
-- [ ] Put the mark in the game's `notes.md` title (`# ♥ Title`) and in the index.
-- [ ] **Safety valve:** if explicit sexual text turns up while translating a
-      no-♥ game, stop translating. Mark it ♥ (record `"adult": true` with a
-      `"summary"` beginning `manual:` in `research/adult_text.json`) and hand the
-      rest to the maintainer. Never translate past it.
-
-## 3. Extraction
+## 2. Extraction
 
 - [ ] The script disassembles and **rebuilds byte-for-byte** unmodified. This
       proves the tooling understands every command, so no text gets missed.
@@ -58,6 +48,31 @@ index, and **stop**. That game is not ours.
       window, menu item width, name slot).
 - [ ] Text drawn as graphics (title logos, status panels) is listed in
       `notes.md` as not handled.
+- [ ] **Re-extraction never loses translations.** `extract.py` carries every
+      existing `en` (and hand-tuned `max_cells`/`note`) forward by matching kind
+      and Japanese text. If a later tooling change alters the displayed `jp`,
+      migrate the existing translations in the same commit.
+
+## 3. Adult (♥) classification: immediately after extraction
+
+- [ ] Run `python tools/adult_scan.py "<index key>" games/<title>/strings.json`.
+- [ ] The scan decides the mark, and nothing else does (not the publisher, the
+      box art, or VNDB). It flags a game with **5+ matching lines and 3+ distinct
+      terms, or 15+ matching lines**, using only single-meaning sexual terms (see
+      the list in `tools/adult_scan.py`). Profanity and violence never count.
+- [ ] Put the mark in the game's `notes.md` title (`# ♥ Title`) and in the index.
+- [ ] **Safety valve:** if explicit sexual text turns up while translating a
+      no-♥ game, stop translating. Mark it ♥ (record `"adult": true` with a
+      `"summary"` beginning `manual:` in `research/adult_text.json`) and hand the
+      rest to the maintainer. Never translate past it.
+
+## Handoff: translation starts here, alongside development
+
+- [ ] **♥ game:** commit and push `strings.json` right away, and mark the game
+      **Ready to translate** in `ROADMAP.md`'s status table. The maintainer
+      translates it with their own model while the patching work below goes on.
+      Don't hold the script back until the patcher is finished.
+- [ ] **No-♥ game:** Claude starts translating (§7) in parallel with the patching work.
 
 ## 4. Patching
 
@@ -135,7 +150,11 @@ index, and **stop**. That game is not ours.
 ## Using this in a goal
 
 - *"Bring `<game>` to Done"*: every applicable section above.
+- *"Get `<game>` ready to translate"*: §1–§3 plus the handoff. This is the fast
+  path that gives the maintainer something to translate.
 - *"Bring the `<engine>` family to Tooling Done"*: §1–§6 and §8 for each game
-  on that engine, plus the translation (§7) for any no-♥ game among them.
+  on that engine, plus the translation (§7) for any no-♥ game among them. Do
+  §1–§3 and the handoff for **every** game in the family before starting the
+  patch work on any of them.
 - A game that fails §1 is finished once it's recorded as skipped. That counts
   as done for that game.

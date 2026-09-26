@@ -48,7 +48,16 @@ standard way to produce a patched game, for every game.
 
 ## Status
 
-| Game | Engine | Extract | Patch | Boot test | Translation |
+**Ready to translate** means `games/<title>/strings.json` is final enough to
+translate now; later tooling fixes carry translations forward. See
+DEFINITION_OF_DONE.md for the full checklist.
+
+| Game | Engine | Script | Translation | Patch | Boot test |
 |---|---|---|---|---|---|
-| ♥ Dalk | alice-sys (System 2) | done | done | done | UI/names done; script goes to the maintainer's model |
-| ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | done | done | intro + menus (filler) | script goes to the maintainer's model |
+| ♥ Dalk | alice-sys (System 2) | extracted | **Ready to translate** (maintainer); UI/names done | works; not yet memory-neutral | title, intro, first scenes |
+| ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works | title, intro, menus (filler) |
+| ♥ Only You | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works; mid-line wrap fix pending | message window (filler) |
+| ♥ Mugen Houyou | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory on this image; page splitting pending | — |
+| ♥ Alice no Yakata III | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory on this image; page splitting pending | — |
+| ♥ D.P.S Zenbu | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory; oversized pages; page splitting pending | — |
+| Ningyo | alice-sys (System 3) | extracted | Claude (no ♥) | engine build needs its own signature | — |
