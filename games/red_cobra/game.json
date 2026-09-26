@@ -4,5 +4,6 @@
  "image": "Red Cobra\\Red Cobra [HD]\\Red Cobra.hdi",
  "game_dir": "RED",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "30:shot,1:lclick,6:shot,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,1:lclick,6:shot"
 }

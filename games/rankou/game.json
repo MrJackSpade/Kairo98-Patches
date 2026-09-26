@@ -4,5 +4,6 @@
  "image": "Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri\\Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [HD]\\Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri.hdi",
  "game_dir": "RANKOU",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "30:shot,1:lclick,6:shot,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,1:lclick,6:shot"
 }

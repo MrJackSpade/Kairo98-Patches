@@ -4,5 +4,6 @@
  "image": "Ura Mansion Hakkin\\Ura Mansion Hakkin [HD]\\Ura Mansion Hakkin.hdi",
  "game_dir": "MANSYON",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "30:shot,1:lclick,6:shot,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,1:lclick,6:shot"
 }

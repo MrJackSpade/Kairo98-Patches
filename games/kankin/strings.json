@@ -4214,6 +4214,336 @@
     "MES5.DOC:50002"
    ],
    "max_cells": 11
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＡを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03b61"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＢを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03bb4"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＣを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03c07"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＤを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03c5a"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＥを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03cad"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＦを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03d00"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＧを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03d53"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＨを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:03da6"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:08d3c"
+   ],
+   "max_bytes": 74,
+   "max_cells": 36
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "ＥＭＭデバイスドライバを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:08da8"
+   ],
+   "max_bytes": 48,
+   "max_cells": 23
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "が搭載されていない機種では動作しません。\n",
+   "en": "",
+   "refs": [
+    "exe:08dde"
+   ],
+   "max_bytes": 42,
+   "max_cells": 20
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "右ボタンで上にスクロール、左ボタンで下スクロールです。\n左右ボタンを同時に押すと終了します。",
+   "en": "",
+   "refs": [
+    "exe:08e09"
+   ],
+   "max_bytes": 92,
+   "max_cells": 27
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "左ボタンを押すと【次を表示】します。\n右ボタンを押すと【終　　了】します。",
+   "en": "",
+   "refs": [
+    "exe:08e66"
+   ],
+   "max_bytes": 74,
+   "max_cells": 18
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "マウスを動かして【淫】のポイントを上げて下さい。\n右ボタンで上にスクロール、左ボタンで下スクロールします。",
+   "en": "",
+   "refs": [
+    "exe:08eb1"
+   ],
+   "max_bytes": 106,
+   "max_cells": 28
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "ライトプロテクト状態です。",
+   "en": "",
+   "refs": [
+    "exe:0e585"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "ドライブが存在しません。",
+   "en": "",
+   "refs": [
+    "exe:0e5a0"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "ドライブの準備ができていません。",
+   "en": "",
+   "refs": [
+    "exe:0e5b9"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "存在しないコマンドです。",
+   "en": "",
+   "refs": [
+    "exe:0e5da"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "データのＣＲＣエラーです。",
+   "en": "",
+   "refs": [
+    "exe:0e5f3"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "エラー　０５ｈ",
+   "en": "",
+   "refs": [
+    "exe:0e60e"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "シークエラーです。",
+   "en": "",
+   "refs": [
+    "exe:0e61d"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "存在しないメディアタイプです。",
+   "en": "",
+   "refs": [
+    "exe:0e630"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "セクタが見つかりません。",
+   "en": "",
+   "refs": [
+    "exe:0e64f"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "プリンタの用紙切れです。",
+   "en": "",
+   "refs": [
+    "exe:0e668"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00025",
+   "kind": "exe",
+   "jp": "書き込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:0e681"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00026",
+   "kind": "exe",
+   "jp": "読み込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:0e694"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00027",
+   "kind": "exe",
+   "jp": "ディスク不良です。",
+   "en": "",
+   "refs": [
+    "exe:0e6a7"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00028",
+   "kind": "exe",
+   "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
+   "en": "",
+   "refs": [
+    "exe:0e6ba"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00029",
+   "kind": "exe",
+   "jp": "スペースキーでもう一度やります。",
+   "en": "",
+   "refs": [
+    "exe:0e6d9"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00030",
+   "kind": "exe",
+   "jp": "ディスクを当社までご返送下さい。",
+   "en": "",
+   "refs": [
+    "exe:0e6fa"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
   }
  ]
 }

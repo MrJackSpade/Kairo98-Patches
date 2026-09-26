@@ -4,5 +4,6 @@
  "image": "Kankin\\Kankin [HD]\\Kankin.hdi",
  "game_dir": "KAN",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "30:shot,1:rclick,6:shot,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,1:lclick,6:shot"
 }

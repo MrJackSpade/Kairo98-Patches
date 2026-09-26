@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "　１もっこりまん\n　２おっぱいん\n　３ふとももん",
-   "en": "",
+   "en": "1 Mokkoriman\n2 Oppain\n3 Futomomon",
    "refs": [
     "MI.DOC:00001"
    ],
@@ -16,7 +16,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "「よっしゃあ！　元気一発！　もっこりまん！」",
-   "en": "",
+   "en": "\"Alright! Full of pep! Mokkoriman!\"",
    "refs": [
     "MI.DOC:00002"
    ],
@@ -26,7 +26,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "「よ－－－しっ！　熟れた体で！　おっぱいん！」",
-   "en": "",
+   "en": "\"Here we go! With a ripe body! Oppain!\"",
    "refs": [
     "MI.DOC:00003"
    ],
@@ -36,7 +36,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "「きゃい－－－んっ！　プリプリ娘の！　ふとももん！」",
-   "en": "",
+   "en": "\"Kyaiiin! The bouncy girl! Futomomon!\"",
    "refs": [
     "MI.DOC:00004"
    ],
@@ -46,7 +46,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "「さあ、どこの釣り場にするか選んでくれ！」",
-   "en": "",
+   "en": "\"Okay, pick which fishing spot we hit!\"",
    "refs": [
     "MI.DOC:00005"
    ],
@@ -56,7 +56,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "「どこの釣り場にするの？　選択してちょうだい」",
-   "en": "",
+   "en": "\"Which fishing spot shall we go to? Make your choice.\"",
    "refs": [
     "MI.DOC:00006"
    ],
@@ -66,7 +66,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "「どこの釣り場にしようかな。選んでね」",
-   "en": "",
+   "en": "\"Hmm, which fishing spot should I pick? You choose!\"",
    "refs": [
     "MI.DOC:00007"
    ],
@@ -76,7 +76,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "「あたし、このプールのヌシの中森いわな。釣れるものなら釣ってごらん」",
-   "en": "",
+   "en": "\"I'm Iwana Nakamori, master of this pool. Catch me if you can.\"",
    "refs": [
     "MI.DOC:00008"
    ],
@@ -86,7 +86,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "「あたし、鮎川鱗子。この温泉のヌシを釣ろうだなんて、１０年はやいわよ」",
-   "en": "",
+   "en": "\"I'm Rinko Ayukawa. Trying to catch the master of this hot spring? You're ten years too early.\"",
    "refs": [
     "MI.DOC:00010"
    ],
@@ -96,7 +96,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "「俺の名前は黒瀬まみ。この風呂のヌシは俺さ。火傷しないうちに帰ったほうが身のためだぜ」",
-   "en": "",
+   "en": "\"The name's Mami Kurose. I'm the master of this bath. Better head home before you get burned.\"",
    "refs": [
     "MI.DOC:00011"
    ],
@@ -106,7 +106,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "わたくし、この風呂屋のヌシ、せせらぎうな子です。あなたに釣られちゃったらどうしましょう」",
-   "en": "",
+   "en": "\"I am Unako Seseragi, master of this bathhouse. Oh my, whatever shall I do if you catch me?\"",
    "refs": [
     "MI.DOC:00012"
    ],
@@ -116,7 +116,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "「あたし、このプールのヌシの田鮭いくら。優しく釣り上げてくれたら、たっぷりサービスしちゃうわよ」",
-   "en": "",
+   "en": "\"I'm Ikura Tajake, master of this pool. Reel me in gently and I'll give you plenty of service.\"",
    "refs": [
     "MI.DOC:00013"
    ],
@@ -126,7 +126,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "「わたし満潮鯛子。この泡風呂のヌシを釣ろうっていうの？　うふふ、高くつくわよ」",
-   "en": "",
+   "en": "\"I'm Taiko Mancho. You want to catch the master of this bubble bath? Ufufu, it'll cost you.\"",
    "refs": [
     "MI.DOC:00014"
    ],
@@ -136,7 +136,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "「あたしはユニットバス女王、海原麻里。あなたのナニが大きかったら釣られてあげてもいいわよ」",
-   "en": "",
+   "en": "\"I'm Mari Unabara, Queen of the Unit Bath. If your thing is big enough, maybe I'll let you catch me.\"",
    "refs": [
     "MI.DOC:00015"
    ],
@@ -146,7 +146,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "釣りを開始",
-   "en": "",
+   "en": "Start Fishing",
    "refs": [
     "MI.DOC:00016"
    ],
@@ -156,7 +156,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "釣り人を交代",
-   "en": "",
+   "en": "Switch Angler",
    "refs": [
     "MI.DOC:00017"
    ],
@@ -166,7 +166,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "釣り場の変更",
-   "en": "",
+   "en": "Change Spot",
    "refs": [
     "MI.DOC:00018"
    ],
@@ -176,7 +176,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "女子校のプール",
-   "en": "",
+   "en": "Girls' School Pool",
    "refs": [
     "MI.DOC:00019"
    ],
@@ -186,7 +186,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "熱海の温泉",
-   "en": "",
+   "en": "Atami Hot Spring",
    "refs": [
     "MI.DOC:00020"
    ],
@@ -196,7 +196,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "ラブホテルの風呂",
-   "en": "",
+   "en": "Love Hotel Bath",
    "refs": [
     "MI.DOC:00021"
    ],
@@ -206,7 +206,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "下町の風呂屋",
-   "en": "",
+   "en": "Old Town Bathhouse",
    "refs": [
     "MI.DOC:00022"
    ],
@@ -216,7 +216,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "女子大のプール",
-   "en": "",
+   "en": "Women's College Pool",
    "refs": [
     "MI.DOC:00023"
    ],
@@ -226,7 +226,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "ソープの泡風呂",
-   "en": "",
+   "en": "Soapland Bubble Bath",
    "refs": [
     "MI.DOC:00024"
    ],
@@ -236,7 +236,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "ＯＬのユニットバス",
-   "en": "",
+   "en": "Office Lady's Unit Bath",
    "refs": [
     "MI.DOC:00025"
    ],
@@ -246,7 +246,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "「しまったあ！　逃げられたあ！」",
-   "en": "",
+   "en": "\"Dang it! It got away!\"",
    "refs": [
     "MI.DOC:00026"
    ],
@@ -256,7 +256,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "「あーんっ、逃げられちゃったわ！」",
-   "en": "",
+   "en": "\"Aww, it got away!\"",
    "refs": [
     "MI.DOC:00027"
    ],
@@ -266,7 +266,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "「やだっ、逃げちゃったあ！」",
-   "en": "",
+   "en": "\"No way, it escaped!\"",
    "refs": [
     "MI.DOC:00028"
    ],
@@ -276,7 +276,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "「ほりゃあああ！　かかったあ！」",
-   "en": "",
+   "en": "\"Hoooraaah! Got a bite!\"",
    "refs": [
     "MI.DOC:00029"
    ],
@@ -286,7 +286,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "「そーれっ！　かかったわよっ！」",
-   "en": "",
+   "en": "\"There we go! Got one!\"",
    "refs": [
     "MI.DOC:00030"
    ],
@@ -296,7 +296,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "「きゃいんっ！　かかったみたいっ！」",
-   "en": "",
+   "en": "\"Kyain! I think I've got one!\"",
    "refs": [
     "MI.DOC:00031"
    ],
@@ -306,7 +306,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "「おっ、これはヌシだっ」",
-   "en": "",
+   "en": "\"Whoa, this is the master!\"",
    "refs": [
     "MI.DOC:00032"
    ],
@@ -316,7 +316,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "「おーしっ、ボタンを押して糸を引くぞ！」",
-   "en": "",
+   "en": "\"Alright, hit the button to reel in the line!\"",
    "refs": [
     "MI.DOC:00033"
    ],
@@ -326,7 +326,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "「やった、これはヌシだわっ」",
-   "en": "",
+   "en": "\"Yes, this is the master!\"",
    "refs": [
     "MI.DOC:00034"
    ],
@@ -336,7 +336,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "「よーしっ、ボタンを押して糸をひくわ！」",
-   "en": "",
+   "en": "\"Okay, I'll press the button and reel in the line!\"",
    "refs": [
     "MI.DOC:00035"
    ],
@@ -346,7 +346,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "「きゃいんっ、これってヌシだよっ」",
-   "en": "",
+   "en": "\"Kyain, this is the master!\"",
    "refs": [
     "MI.DOC:00036"
    ],
@@ -356,7 +356,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "「やっほーっ、ボタンを押して糸を引くわ！」",
-   "en": "",
+   "en": "\"Yahoo! I'll press the button and reel in the line!\"",
    "refs": [
     "MI.DOC:00037"
    ],
@@ -366,7 +366,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "「やめてーー！」",
-   "en": "",
+   "en": "\"Stop iiit!\"",
    "refs": [
     "MI.DOC:00038"
    ],
@@ -376,7 +376,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "「キリキリキリ・・・・・」",
-   "en": "",
+   "en": "\"Creak creak creak.....\"",
    "refs": [
     "MI.DOC:00039"
    ],
@@ -386,7 +386,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "「いやーんっ」",
-   "en": "",
+   "en": "\"Eeek!\"",
    "refs": [
     "MI.DOC:00040"
    ],
@@ -396,7 +396,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "「やったぜー！　釣り上げたあ！」",
-   "en": "",
+   "en": "\"Yeah! I reeled it in!\"",
    "refs": [
     "MI.DOC:00041"
    ],
@@ -406,7 +406,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "「やったわっ、釣れたわ！」",
-   "en": "",
+   "en": "\"I did it, I caught one!\"",
    "refs": [
     "MI.DOC:00042"
    ],
@@ -416,7 +416,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "「やったあっ、釣っちゃった！」",
-   "en": "",
+   "en": "\"Yay, I caught it!\"",
    "refs": [
     "MI.DOC:00043"
    ],
@@ -426,7 +426,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "　ボタンを押して下さい",
-   "en": "",
+   "en": "Press the button",
    "refs": [
     "MI.DOC:00044"
    ],
@@ -436,7 +436,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "●リリースする\n●食べちゃう",
-   "en": "",
+   "en": "- Release\n- Eat her up",
    "refs": [
     "MI.DOC:00045"
    ],
@@ -446,7 +446,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "「リリースしますか？」\n　左でリリース\n　右でキャンセル",
-   "en": "",
+   "en": "\"Release her?\"\nLeft: Release\nRight: Cancel",
    "refs": [
     "MI.DOC:00046"
    ],
@@ -2779,6 +2779,270 @@
     "MI.DOC:65015"
    ],
    "max_cells": 25
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:0d7c5"
+   ],
+   "max_bytes": 74,
+   "max_cells": 36
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "ＥＭＳが使用可能状態の為ＰＣＭが正常に再生されない可能性があります。\n",
+   "en": "",
+   "refs": [
+    "exe:0fd80"
+   ],
+   "max_bytes": 70,
+   "max_cells": 34
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "ＰＣＭを正常に再生するには CONFIG.SYS を書き換える必要があります。\n",
+   "en": "",
+   "refs": [
+    "exe:0fdc7"
+   ],
+   "max_bytes": 68,
+   "max_cells": 33
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "の 変更方法はMS-DOSのマニュアルを参照して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:0fe16"
+   ],
+   "max_bytes": 51,
+   "max_cells": 25
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "何か押すとゲームを続行します。\n",
+   "en": "",
+   "refs": [
+    "exe:0fe4e"
+   ],
+   "max_bytes": 32,
+   "max_cells": 15
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "メモリー不足のため起動出来ません。\n",
+   "en": "",
+   "refs": [
+    "exe:0fe7a"
+   ],
+   "max_bytes": 36,
+   "max_cells": 17
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "でゲームを行う場合、およそ524Kバイトのメモリーが必要です。\n",
+   "en": "",
+   "refs": [
+    "exe:0fea5"
+   ],
+   "max_bytes": 60,
+   "max_cells": 29
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "や AUTOEXEC.BATの内容を変更してメモリーを確保して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:0feed"
+   ],
+   "max_bytes": 59,
+   "max_cells": 29
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "ライトプロテクト状態です。",
+   "en": "",
+   "refs": [
+    "exe:1c225"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "ドライブが存在しません。",
+   "en": "",
+   "refs": [
+    "exe:1c240"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "ドライブの準備ができていません。",
+   "en": "",
+   "refs": [
+    "exe:1c259"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "存在しないコマンドです。",
+   "en": "",
+   "refs": [
+    "exe:1c27a"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "データのＣＲＣエラーです。",
+   "en": "",
+   "refs": [
+    "exe:1c293"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "エラー　０５ｈ",
+   "en": "",
+   "refs": [
+    "exe:1c2ae"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "シークエラーです。",
+   "en": "",
+   "refs": [
+    "exe:1c2bd"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "存在しないメディアタイプです。",
+   "en": "",
+   "refs": [
+    "exe:1c2d0"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "セクタが見つかりません。",
+   "en": "",
+   "refs": [
+    "exe:1c2ef"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "プリンタの用紙切れです。",
+   "en": "",
+   "refs": [
+    "exe:1c308"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "書き込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:1c321"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "読み込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:1c334"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "ディスク不良です。",
+   "en": "",
+   "refs": [
+    "exe:1c347"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
+   "en": "",
+   "refs": [
+    "exe:1c35a"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "マウスの左ボタンでやりなおします",
+   "en": "",
+   "refs": [
+    "exe:1c379"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "続行不可能。当社まで連絡下さい。",
+   "en": "",
+   "refs": [
+    "exe:1c39a"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
   }
  ]
 }

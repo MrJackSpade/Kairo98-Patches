@@ -4,5 +4,6 @@
  "image": "Kitoujima Joshi Keimusho\\Kitoujima Joshi Keimusho [HD]\\Kitoujima Joshi Keimusho.hdi",
  "game_dir": "PRI",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "40:shot,1:mouse=40;20,1:mouse=40;20,1:mouse=40;20,1:mouse=0;-8,1:lclick,8:shot,1:lclick,1:lclick,1:lclick,8:shot,1:lclick,1:lclick,1:lclick,1:lclick,8:shot,1:lclick,1:lclick,1:lclick,1:lclick,1:lclick,8:shot"
 }

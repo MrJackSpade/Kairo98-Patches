@@ -4,5 +4,6 @@
  "image": "Hyouryuu\\Hyouryuu [HD]\\Hyouryuu.hdi",
  "game_dir": "HYOURYUU",
  "engine": "GAME.EXE",
- "encoding": "illusion"
+ "encoding": "illusion",
+ "boot_steps": "30:shot,1:lclick,6:shot,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,6:shot,1:lclick,1:lclick,1:lclick,1:lclick,6:shot"
 }

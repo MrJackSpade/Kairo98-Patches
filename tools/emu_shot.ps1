@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | enter | space | esc | up | down | left | right
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | mouse=dx;dy | enter | space | esc | up | down | left | right
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -26,7 +26,7 @@ $bin = Split-Path $Exe
 $work = Join-Path $env:TEMP ("np21_" + [guid]::NewGuid().ToString("N").Substring(0, 8))
 New-Item -ItemType Directory $work | Out-Null
 $img = ""
-if ($Hdi) { $img = Join-Path $work "disk.hdi"; Copy-Item $Hdi $img }
+if ($Hdi) { $img = Join-Path $work "disk.hdi"; Copy-Item -LiteralPath $Hdi $img }
 $fds = @()
 foreach ($f in @($Fd1, $Fd2)) {
     if ($f) { $c = Join-Path $work ("fd{0}{1}" -f $fds.Count, [IO.Path]::GetExtension($f)); Copy-Item -LiteralPath $f $c; $fds += $c }
@@ -51,6 +51,20 @@ foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
     Start-Sleep -Milliseconds ([int]([double]$wait * 1000))
     $p.Refresh(); $h = $p.MainWindowHandle
+    if ($act -like "mouse=*") {
+        # move the emulated mouse (our np21w build's test message WM_USER+0x7A0, signed deltas)
+        $dxy = $act.Substring(6).Split(";")
+        [W]::PostMessage($h, 0xBA0, [IntPtr][int]$dxy[0], [IntPtr][int]$dxy[1]) | Out-Null
+        continue
+    }
+    if ($act -eq "lclick" -or $act -eq "rclick") {
+        # PC-98 mouse button (our np21w build's test message WM_USER+0x7A1: button mask)
+        $mask = if ($act -eq "lclick") { 1 } else { 2 }
+        [W]::PostMessage($h, 0xBA1, [IntPtr]$mask, [IntPtr]0) | Out-Null
+        Start-Sleep -Milliseconds 200
+        [W]::PostMessage($h, 0xBA1, [IntPtr]0, [IntPtr]0) | Out-Null
+        continue
+    }
     if ($act -eq "save") {
         # emulator state (raw main memory inside), kept as <Out>.s00
         [W]::PostMessage($h, 0x111, [IntPtr]40201, [IntPtr]0) | Out-Null

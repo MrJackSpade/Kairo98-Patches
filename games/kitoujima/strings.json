@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "鬼塚港から船に乗り鬼頭島にやってきた知果は、まっすぐに刑務所にやって来た。",
-   "en": "",
+   "en": "Having taken the boat from Onizuka Port to Kitou Island, Chika went straight to the prison.",
    "refs": [
     "CHIKA_1:00004"
    ],
@@ -16,7 +16,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "四方を海に囲まれた孤島というだけに、それほど警備は厳しくない。",
-   "en": "",
+   "en": "Since it was a lone island surrounded on all sides by sea, security was not especially tight.",
    "refs": [
     "CHIKA_1:00005"
    ],
@@ -26,7 +26,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "この海は流れが渦を巻いており、一度海に入れば立ちどころに飲まれてしまう。\nこのため船で陸まで１５分とはいえ、泳いでの逃亡は不可能であった。",
-   "en": "",
+   "en": "The currents here swirled into whirlpools, and anyone who entered the water would be swallowed at once. So although the mainland was only 15 minutes away by boat, escape by swimming was impossible.",
    "refs": [
     "CHIKA_1:00006"
    ],
@@ -36,7 +36,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "知果は刑務所に着くと、身体検査をされた。\nそれは強引ともいえるような程のものだった。",
-   "en": "",
+   "en": "When Chika arrived at the prison, she was given a body search. It was so thorough it could only be called forceful.",
    "refs": [
     "CHIKA_1:00007"
    ],
@@ -46,7 +46,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "知果　　　えっ？？　やっ・・・いやぁっ！！　なにするの？\n松澤　　　身体検査よ。\n　　　　　刑務所内に入る人間は誰であろうとも検査を受けてもらうわ。",
-   "en": "",
+   "en": "Chika: Huh?? No... stop it! What are you doing?\nMatsuzawa: A body search. Anyone who enters the prison gets searched, no matter who they are.",
    "refs": [
     "CHIKA_1:00008"
    ],
@@ -56,7 +56,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "女１　　　ほぉらっ！！　力を抜いて！！\n知果　　　えぇぇ・・・そんな事まで・・・\n松澤　　　よくここに物を隠して来る奴がいるのよ。",
-   "en": "",
+   "en": "Woman 1: Come on! Relax!\nChika: Ehh... even that...\nMatsuzawa: We get plenty of people who try to hide things there.",
    "refs": [
     "CHIKA_1:00009"
    ],
@@ -26461,6 +26461,578 @@
     "YOU_4:00141"
    ],
    "max_cells": 34
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "ライトプロテクト状態です。",
+   "en": "",
+   "refs": [
+    "exe:08e05"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "ドライブが存在しません。",
+   "en": "",
+   "refs": [
+    "exe:08e20"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "ドライブの準備ができていません。",
+   "en": "",
+   "refs": [
+    "exe:08e39"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "存在しないコマンドです。",
+   "en": "",
+   "refs": [
+    "exe:08e5a"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "データのＣＲＣエラーです。",
+   "en": "",
+   "refs": [
+    "exe:08e73"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "エラー　０５ｈ",
+   "en": "",
+   "refs": [
+    "exe:08e8e"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "シークエラーです。",
+   "en": "",
+   "refs": [
+    "exe:08e9d"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "存在しないメディアタイプです。",
+   "en": "",
+   "refs": [
+    "exe:08eb0"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "セクタが見つかりません。",
+   "en": "",
+   "refs": [
+    "exe:08ecf"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "プリンタの用紙切れです。",
+   "en": "",
+   "refs": [
+    "exe:08ee8"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "書き込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:08f01"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "読み込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:08f14"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "ディスク不良です。",
+   "en": "",
+   "refs": [
+    "exe:08f27"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
+   "en": "",
+   "refs": [
+    "exe:08f3a"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "スペースキーでもう一度やります。",
+   "en": "",
+   "refs": [
+    "exe:08f59"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "続行不可能。当社まで連絡下さい。",
+   "en": "",
+   "refs": [
+    "exe:08f7a"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:16ae8"
+   ],
+   "max_bytes": 74,
+   "max_cells": 36
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい",
+   "en": "",
+   "refs": [
+    "exe:16c02"
+   ],
+   "max_bytes": 70,
+   "max_cells": 35
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "ディスクＡを",
+   "en": "",
+   "refs": [
+    "exe:16c49"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "ドライブ１に入れて下さい。",
+   "en": "",
+   "refs": [
+    "exe:16c56"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "ディスクＢを",
+   "en": "",
+   "refs": [
+    "exe:16c71"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "ディスクＣを",
+   "en": "",
+   "refs": [
+    "exe:16c7e"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "ディスクＤを",
+   "en": "",
+   "refs": [
+    "exe:16c8b"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "ディスクＥを",
+   "en": "",
+   "refs": [
+    "exe:16c98"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00025",
+   "kind": "exe",
+   "jp": "ディスクＦを",
+   "en": "",
+   "refs": [
+    "exe:16ca5"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00026",
+   "kind": "exe",
+   "jp": "ディスクＧを",
+   "en": "",
+   "refs": [
+    "exe:16cb2"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00027",
+   "kind": "exe",
+   "jp": "ディスクＨを",
+   "en": "",
+   "refs": [
+    "exe:16cbf"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "e00028",
+   "kind": "exe",
+   "jp": "ドライブ２に入れて下さい。",
+   "en": "",
+   "refs": [
+    "exe:16ccc"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00029",
+   "kind": "exe",
+   "jp": "データファイル ",
+   "en": "",
+   "refs": [
+    "exe:16ce7"
+   ],
+   "max_bytes": 15,
+   "max_cells": 8
+  },
+  {
+   "id": "e00030",
+   "kind": "exe",
+   "jp": "が存在しません。\n",
+   "en": "",
+   "refs": [
+    "exe:16cf7"
+   ],
+   "max_bytes": 18,
+   "max_cells": 8
+  },
+  {
+   "id": "e00031",
+   "kind": "exe",
+   "jp": "強制終了します。",
+   "en": "",
+   "refs": [
+    "exe:16d0a"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00032",
+   "kind": "exe",
+   "jp": "プレイするキャラクターを選択して下さい",
+   "en": "",
+   "refs": [
+    "exe:16d1b"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "e00033",
+   "kind": "exe",
+   "jp": "Ｈグラフィックを見る",
+   "en": "",
+   "refs": [
+    "exe:16d71"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00034",
+   "kind": "exe",
+   "jp": "　　ＢＧＭを聞く",
+   "en": "",
+   "refs": [
+    "exe:16d86"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00035",
+   "kind": "exe",
+   "jp": "　　　　　オープニング",
+   "en": "",
+   "refs": [
+    "exe:16dc0"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "e00036",
+   "kind": "exe",
+   "jp": "　タイトル～鬼頭島女子刑務所",
+   "en": "",
+   "refs": [
+    "exe:16dd7"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "e00037",
+   "kind": "exe",
+   "jp": "　　　　悪夢への前奏曲",
+   "en": "",
+   "refs": [
+    "exe:16df4"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "e00038",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その１",
+   "en": "",
+   "refs": [
+    "exe:16e0b"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00039",
+   "kind": "exe",
+   "jp": "　　悪夢の源～所長のテーマ",
+   "en": "",
+   "refs": [
+    "exe:16e20"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00040",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その２",
+   "en": "",
+   "refs": [
+    "exe:16e3b"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00041",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その３",
+   "en": "",
+   "refs": [
+    "exe:16e50"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00042",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その４",
+   "en": "",
+   "refs": [
+    "exe:16e65"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00043",
+   "kind": "exe",
+   "jp": "　刑務所の黒い花～松澤のテーマ",
+   "en": "",
+   "refs": [
+    "exe:16e7a"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00044",
+   "kind": "exe",
+   "jp": "　　監獄の悪魔～夜名のテーマ",
+   "en": "",
+   "refs": [
+    "exe:16e99"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "e00045",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その５",
+   "en": "",
+   "refs": [
+    "exe:16eb6"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00046",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その６",
+   "en": "",
+   "refs": [
+    "exe:16ecb"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00047",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その７",
+   "en": "",
+   "refs": [
+    "exe:16ee0"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00048",
+   "kind": "exe",
+   "jp": "　　　　　悪夢その８",
+   "en": "",
+   "refs": [
+    "exe:16ef5"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "e00049",
+   "kind": "exe",
+   "jp": "　　　　地獄に向かって",
+   "en": "",
+   "refs": [
+    "exe:16f0a"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "e00050",
+   "kind": "exe",
+   "jp": "　　　　皆殺しのテーマ",
+   "en": "",
+   "refs": [
+    "exe:16f36"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "e00051",
+   "kind": "exe",
+   "jp": "エンディング～鬼頭島女子刑務所",
+   "en": "",
+   "refs": [
+    "exe:16f4d"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00052",
+   "kind": "exe",
+   "jp": "　闇の監獄へ～トップメニュー",
+   "en": "",
+   "refs": [
+    "exe:16f6c"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
   }
  ]
 }

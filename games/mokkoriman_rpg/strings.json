@@ -10202,6 +10202,688 @@
     "MES3.DOC:61004"
    ],
    "max_cells": 14
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "左ボタンを押すと【次を表示】します。\n右ボタンを押すと【終　　了】します。",
+   "en": "",
+   "refs": [
+    "exe:0900d"
+   ],
+   "max_bytes": 74,
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "メッセージ［速］",
+   "en": "",
+   "refs": [
+    "exe:091eb"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "メッセージ［中］",
+   "en": "",
+   "refs": [
+    "exe:091fc"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "メッセージ［遅］",
+   "en": "",
+   "refs": [
+    "exe:0920d"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "スクロール［速］",
+   "en": "",
+   "refs": [
+    "exe:0921e"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "スクロール［中］",
+   "en": "",
+   "refs": [
+    "exe:0922f"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "スクロール［遅］",
+   "en": "",
+   "refs": [
+    "exe:09240"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "ＣＧモード　　　ＢＧＭモード　　ＰＣＭモード　　ＰＣＭ音声の切替",
+   "en": "",
+   "refs": [
+    "exe:09251"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "もっこりまんおっぱいん　ふとももん　－－－－－－\nレベル　　　\n精　力　　　　　／\nＨ　力　　　　　／\nＨ攻撃力　　\nＨ防御力　　\nＨ熟練度　　",
+   "en": "",
+   "refs": [
+    "exe:09c3c"
+   ],
+   "max_bytes": 144,
+   "max_cells": 24
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "　舌　＞\n　腰　＞\n男　根＞\nリング＞",
+   "en": "",
+   "refs": [
+    "exe:09ccd"
+   ],
+   "max_bytes": 38,
+   "max_cells": 4
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "手で責める　　　",
+   "en": "",
+   "refs": [
+    "exe:11797"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "口で責める　　　",
+   "en": "",
+   "refs": [
+    "exe:117a8"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "腰で責める　　　",
+   "en": "",
+   "refs": [
+    "exe:117b9"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "乳房を責める　　",
+   "en": "",
+   "refs": [
+    "exe:117e6"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "太股を責める　　",
+   "en": "",
+   "refs": [
+    "exe:117f7"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "股間を責める　　",
+   "en": "",
+   "refs": [
+    "exe:11808"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "じらす　　　　　",
+   "en": "",
+   "refs": [
+    "exe:11835"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "ゆっくり責める　",
+   "en": "",
+   "refs": [
+    "exe:11846"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "激しく責める　　",
+   "en": "",
+   "refs": [
+    "exe:11857"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＢを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:13077"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＢを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:130ca"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＣを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:1311d"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＤを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:13170"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＥを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:131c3"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00025",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＦを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:13216"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00026",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＧを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:13269"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00027",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、　　　　\nディスクＨを入れて、　　　\n左ボタンを押して下さい。　",
+   "en": "",
+   "refs": [
+    "exe:132bc"
+   ],
+   "max_bytes": 82,
+   "max_cells": 13
+  },
+  {
+   "id": "e00028",
+   "kind": "exe",
+   "jp": "ドライブ＜２＞に、\nディスクＨを入れて、\n左ボタンを押して下さい。",
+   "en": "",
+   "refs": [
+    "exe:13558"
+   ],
+   "max_bytes": 66,
+   "max_cells": 12
+  },
+  {
+   "id": "e00029",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:156dc"
+   ],
+   "max_bytes": 74,
+   "max_cells": 36
+  },
+  {
+   "id": "e00030",
+   "kind": "exe",
+   "jp": "ＥＭＭデバイスドライバを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:15748"
+   ],
+   "max_bytes": 48,
+   "max_cells": 23
+  },
+  {
+   "id": "e00031",
+   "kind": "exe",
+   "jp": "右ボタンで上にスクロール、左ボタンで下スクロールです。\n左右ボタンを同時に押すと終了します。",
+   "en": "",
+   "refs": [
+    "exe:15779"
+   ],
+   "max_bytes": 92,
+   "max_cells": 27
+  },
+  {
+   "id": "e00032",
+   "kind": "exe",
+   "jp": "左ボタンを押すと【次を表示】します。\n右ボタンを押すと【終　　了】します。",
+   "en": "",
+   "refs": [
+    "exe:157d6"
+   ],
+   "max_bytes": 74,
+   "max_cells": 18
+  },
+  {
+   "id": "e00033",
+   "kind": "exe",
+   "jp": "マウスを動かして【淫】のポイントを上げて下さい。\n右ボタンで上にスクロール、左ボタンで下スクロールします。",
+   "en": "",
+   "refs": [
+    "exe:15821"
+   ],
+   "max_bytes": 106,
+   "max_cells": 28
+  },
+  {
+   "id": "e00034",
+   "kind": "exe",
+   "jp": "イボ付き男根　",
+   "en": "",
+   "refs": [
+    "exe:17c7a"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00035",
+   "kind": "exe",
+   "jp": "》怪しい道具屋ＮＯＴＨＩＮＧＮＯＴＨＩＮＧＮＯＴＨＩＮＧＮＯＴＨＩＮＧＮＯＴＨＩＮＧＮＯＴＨＩＮＧＮＯＴＨＩＮＧ　　　　　　円",
+   "en": "",
+   "refs": [
+    "exe:180ad"
+   ],
+   "max_bytes": 126,
+   "max_cells": 63
+  },
+  {
+   "id": "e00036",
+   "kind": "exe",
+   "jp": "ああんっ・・・とってもいい・・・ああ・・・あ・・・",
+   "en": "",
+   "refs": [
+    "exe:18d31"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00037",
+   "kind": "exe",
+   "jp": "はあんっ・・・あ・・・ああ・・・あああっ・・・・・",
+   "en": "",
+   "refs": [
+    "exe:18d64"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00038",
+   "kind": "exe",
+   "jp": "ああっ・・・も・・・もっと・・・あっ・・・あっ・・",
+   "en": "",
+   "refs": [
+    "exe:18d97"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00039",
+   "kind": "exe",
+   "jp": "い・・・いい・・・もっと強く・・・あああっ・・・・",
+   "en": "",
+   "refs": [
+    "exe:18dca"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00040",
+   "kind": "exe",
+   "jp": "あっ・・・ああっ・・・しびれるわ・・・・ああああっ",
+   "en": "",
+   "refs": [
+    "exe:18dfd"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00041",
+   "kind": "exe",
+   "jp": "ああああっ・・・気持ち・・・いい・・・とってもいい",
+   "en": "",
+   "refs": [
+    "exe:18e30"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00042",
+   "kind": "exe",
+   "jp": "ああっ　ああっ　ああっ・・・す、すごいわ・・・・・",
+   "en": "",
+   "refs": [
+    "exe:18e63"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00043",
+   "kind": "exe",
+   "jp": "あん・・・はん・・・あ・・・あ・・・あああっ・・・",
+   "en": "",
+   "refs": [
+    "exe:18e96"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00044",
+   "kind": "exe",
+   "jp": "あああんっ・・・も、もっと・・・こすって・・・・・",
+   "en": "",
+   "refs": [
+    "exe:18ec9"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00045",
+   "kind": "exe",
+   "jp": "ああっ・・・ああああっ・・・い、いっちゃう・・・・",
+   "en": "",
+   "refs": [
+    "exe:18efc"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00046",
+   "kind": "exe",
+   "jp": "あ・・・・・や、やめないで・・・お願い・・・・・・",
+   "en": "",
+   "refs": [
+    "exe:18f2f"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "e00047",
+   "kind": "exe",
+   "jp": "ライトプロテクト状態です。",
+   "en": "",
+   "refs": [
+    "exe:20945"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00048",
+   "kind": "exe",
+   "jp": "ドライブが存在しません。",
+   "en": "",
+   "refs": [
+    "exe:20960"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00049",
+   "kind": "exe",
+   "jp": "ドライブの準備ができていません。",
+   "en": "",
+   "refs": [
+    "exe:20979"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00050",
+   "kind": "exe",
+   "jp": "存在しないコマンドです。",
+   "en": "",
+   "refs": [
+    "exe:2099a"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00051",
+   "kind": "exe",
+   "jp": "データのＣＲＣエラーです。",
+   "en": "",
+   "refs": [
+    "exe:209b3"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00052",
+   "kind": "exe",
+   "jp": "エラー　０５ｈ",
+   "en": "",
+   "refs": [
+    "exe:209ce"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00053",
+   "kind": "exe",
+   "jp": "シークエラーです。",
+   "en": "",
+   "refs": [
+    "exe:209dd"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00054",
+   "kind": "exe",
+   "jp": "存在しないメディアタイプです。",
+   "en": "",
+   "refs": [
+    "exe:209f0"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00055",
+   "kind": "exe",
+   "jp": "セクタが見つかりません。",
+   "en": "",
+   "refs": [
+    "exe:20a0f"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00056",
+   "kind": "exe",
+   "jp": "プリンタの用紙切れです。",
+   "en": "",
+   "refs": [
+    "exe:20a28"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00057",
+   "kind": "exe",
+   "jp": "書き込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:20a41"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00058",
+   "kind": "exe",
+   "jp": "読み込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:20a54"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00059",
+   "kind": "exe",
+   "jp": "ディスク不良です。",
+   "en": "",
+   "refs": [
+    "exe:20a67"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00060",
+   "kind": "exe",
+   "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
+   "en": "",
+   "refs": [
+    "exe:20a7a"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00061",
+   "kind": "exe",
+   "jp": "スペースキーでもう一度やります。",
+   "en": "",
+   "refs": [
+    "exe:20a99"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00062",
+   "kind": "exe",
+   "jp": "続行不可能。当社まで連絡下さい。",
+   "en": "",
+   "refs": [
+    "exe:20aba"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
   }
  ]
 }

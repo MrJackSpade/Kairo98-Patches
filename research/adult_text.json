@@ -608,11 +608,11 @@
   ]
  },
  "Illusion.zip/Kitoujima Joshi Keimusho": {
-  "adult": false,
+  "adult": true,
   "hits": 3,
   "strings": 2538,
   "distinct_terms": 2,
-  "summary": "3 of 2538 strings match the sexual-vocabulary list (2 distinct terms)",
+  "summary": "manual: sexual assault during a prison intake search found while translating (first at m00007) (2026-09-26)",
   "adult_ids": [
    "m00192",
    "m01187",
@@ -654,21 +654,21 @@
   ]
  },
  "Illusion.zip/Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri": {
-  "adult": false,
+  "adult": true,
   "hits": 1,
   "strings": 277,
   "distinct_terms": 1,
-  "summary": "1 of 277 strings match the sexual-vocabulary list (1 distinct terms)",
+  "summary": "manual: sexualized reward scene involving a possible minor, then explicit scenes, found while translating (first at m00046) (2026-09-26)",
   "adult_ids": [
    "m00052"
   ]
  },
  "Illusion.zip/Red Cobra": {
-  "adult": false,
+  "adult": true,
   "hits": 2,
   "strings": 586,
   "distinct_terms": 2,
-  "summary": "2 of 586 strings match the sexual-vocabulary list (2 distinct terms)",
+  "summary": "manual: explicit genital description found while translating (first at m00150) (2026-09-26)",
   "adult_ids": [
    "m00014",
    "m00403"

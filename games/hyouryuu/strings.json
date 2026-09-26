@@ -27443,6 +27443,270 @@
     "K9V.DOC:03868"
    ],
    "max_cells": 33
+  },
+  {
+   "id": "e00001",
+   "kind": "exe",
+   "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:10725"
+   ],
+   "max_bytes": 74,
+   "max_cells": 36
+  },
+  {
+   "id": "e00002",
+   "kind": "exe",
+   "jp": "ＥＭＳが使用可能状態の為ＰＣＭが正常に再生されない可能性があります。\n",
+   "en": "",
+   "refs": [
+    "exe:110e0"
+   ],
+   "max_bytes": 70,
+   "max_cells": 34
+  },
+  {
+   "id": "e00003",
+   "kind": "exe",
+   "jp": "ＰＣＭを正常に再生するには CONFIG.SYS を書き換える必要があります。\n",
+   "en": "",
+   "refs": [
+    "exe:11127"
+   ],
+   "max_bytes": 68,
+   "max_cells": 33
+  },
+  {
+   "id": "e00004",
+   "kind": "exe",
+   "jp": "の 変更方法はMS-DOSのマニュアルを参照して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:11176"
+   ],
+   "max_bytes": 51,
+   "max_cells": 25
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "何か押すとゲームを続行します。\n",
+   "en": "",
+   "refs": [
+    "exe:111ae"
+   ],
+   "max_bytes": 32,
+   "max_cells": 15
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "メモリー不足のため起動出来ません。\n",
+   "en": "",
+   "refs": [
+    "exe:111da"
+   ],
+   "max_bytes": 36,
+   "max_cells": 17
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "でゲームを行う場合、およそ524Kバイトのメモリーが必要です。\n",
+   "en": "",
+   "refs": [
+    "exe:11205"
+   ],
+   "max_bytes": 60,
+   "max_cells": 29
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "や AUTOEXEC.BATの内容を変更してメモリーを確保して下さい。\n",
+   "en": "",
+   "refs": [
+    "exe:1124d"
+   ],
+   "max_bytes": 59,
+   "max_cells": 29
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "ライトプロテクト状態です。",
+   "en": "",
+   "refs": [
+    "exe:1cba5"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "ドライブが存在しません。",
+   "en": "",
+   "refs": [
+    "exe:1cbc0"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "ドライブの準備ができていません。",
+   "en": "",
+   "refs": [
+    "exe:1cbd9"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "存在しないコマンドです。",
+   "en": "",
+   "refs": [
+    "exe:1cbfa"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "データのＣＲＣエラーです。",
+   "en": "",
+   "refs": [
+    "exe:1cc13"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "エラー　０５ｈ",
+   "en": "",
+   "refs": [
+    "exe:1cc2e"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "シークエラーです。",
+   "en": "",
+   "refs": [
+    "exe:1cc3d"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "存在しないメディアタイプです。",
+   "en": "",
+   "refs": [
+    "exe:1cc50"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "セクタが見つかりません。",
+   "en": "",
+   "refs": [
+    "exe:1cc6f"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "プリンタの用紙切れです。",
+   "en": "",
+   "refs": [
+    "exe:1cc88"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "書き込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:1cca1"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "読み込み不良です。",
+   "en": "",
+   "refs": [
+    "exe:1ccb4"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "ディスク不良です。",
+   "en": "",
+   "refs": [
+    "exe:1ccc7"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
+   "en": "",
+   "refs": [
+    "exe:1ccda"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "マウスの左ボタンでやりなおします",
+   "en": "",
+   "refs": [
+    "exe:1ccf9"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "続行不可能。当社まで連絡下さい。",
+   "en": "",
+   "refs": [
+    "exe:1cd1a"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
   }
  ]
 }
