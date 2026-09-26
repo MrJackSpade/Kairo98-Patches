@@ -191442,6 +191442,798 @@
     "adv:5da0"
    ],
    "max_bytes": 16
+  },
+  {
+   "id": "d00001",
+   "kind": "demo",
+   "jp": "この物語はフィクションであり",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0953"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00002",
+   "kind": "demo",
+   "jp": "実在する人名、地名、団体名とは",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0970"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00003",
+   "kind": "demo",
+   "jp": "全く関係はありません",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:098f"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00004",
+   "kind": "demo",
+   "jp": "「右京、まだ持って来てくれないの？」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:09c4"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00005",
+   "kind": "demo",
+   "jp": "「はい、お嬢様。申し訳ございません。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:09e9"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00006",
+   "kind": "demo",
+   "jp": "　今暫くのご辛抱を・・・」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0a0e"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00007",
+   "kind": "demo",
+   "jp": "「もぉっ。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0a2a"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "d00008",
+   "kind": "demo",
+   "jp": "　そんな言葉、聞き飽きちゃったわ。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0a35"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00009",
+   "kind": "demo",
+   "jp": "　それと、あたしの事はお嬢様じゃなくって女王様って",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0a58"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00010",
+   "kind": "demo",
+   "jp": "　呼びなさいって言ったでしょ！」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0a8b"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00011",
+   "kind": "demo",
+   "jp": "「申し訳ございません・・・・」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0aad"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00012",
+   "kind": "demo",
+   "jp": "「もうっいいわよ！",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0acc"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00013",
+   "kind": "demo",
+   "jp": "「はい」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0aea"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00014",
+   "kind": "demo",
+   "jp": "「左京はお利口だから、もう手に入れちゃってるよねぇ？」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0af4"
+   ],
+   "max_bytes": 54,
+   "max_cells": 27
+  },
+  {
+   "id": "d00015",
+   "kind": "demo",
+   "jp": "「いえ、申し訳ございません。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0b2b"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00016",
+   "kind": "demo",
+   "jp": "　仲々ガードが堅く、手中におさめる事は今だに・・・」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0b48"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00017",
+   "kind": "demo",
+   "jp": "「そんな言葉、もう聞き飽きたって言ってるじゃない！",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0b7e"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00018",
+   "kind": "demo",
+   "jp": "　早く、手に入れて！",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0bb1"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00019",
+   "kind": "demo",
+   "jp": "　でないと、右京も左京もずぅっとおやつ抜きの刑に",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0bc6"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00020",
+   "kind": "demo",
+   "jp": "　しちゃうから！」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0bf7"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00021",
+   "kind": "demo",
+   "jp": "「は・・・・」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c0b"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00022",
+   "kind": "demo",
+   "jp": "「はちぶしゅー達も、心しておく事ね！",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c1a"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00023",
+   "kind": "demo",
+   "jp": "　失敗は絶対に許さないんだから！",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c3f"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00024",
+   "kind": "demo",
+   "jp": "　１０年間、おやつ抜きだからね！」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c60"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00025",
+   "kind": "demo",
+   "jp": "「はい、女王様」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c84"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "d00026",
+   "kind": "demo",
+   "jp": "「あーーーあ。つまんないの。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0c95"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00027",
+   "kind": "demo",
+   "jp": "　それにおなか空いちゃった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0cb2"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00028",
+   "kind": "demo",
+   "jp": "　右京、ご飯食べたいの。今日はお子様ランチにしてね」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0ccf"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00029",
+   "kind": "demo",
+   "jp": "「畏まりました、お嬢・・・女王様」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0d05"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00030",
+   "kind": "demo",
+   "jp": "「旗は、にっぽんじゃないと、いやよ」",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0d28"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00031",
+   "kind": "demo",
+   "jp": "２０世紀も終焉を迎えようとしている時。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0d5c"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00032",
+   "kind": "demo",
+   "jp": "教育制度に大きな革命があった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0d83"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00033",
+   "kind": "demo",
+   "jp": "それはあっという間に日本全土に広まり、そして、さらなる",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0da2"
+   ],
+   "max_bytes": 54,
+   "max_cells": 27
+  },
+  {
+   "id": "d00034",
+   "kind": "demo",
+   "jp": "厳しい学歴社会を作ったのである。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0dd9"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00035",
+   "kind": "demo",
+   "jp": "そしてそれから落ちこぼれた者は、「はみだし者」のレッテルを",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0dfa"
+   ],
+   "max_bytes": 58,
+   "max_cells": 29
+  },
+  {
+   "id": "d00036",
+   "kind": "demo",
+   "jp": "張られ、日本の社会から抹殺される者として存在する事になった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0e35"
+   ],
+   "max_bytes": 60,
+   "max_cells": 30
+  },
+  {
+   "id": "d00037",
+   "kind": "demo",
+   "jp": "そして今より２年前。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0e72"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00038",
+   "kind": "demo",
+   "jp": "その「はみだし者」を支配する者が現れた。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0e87"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00039",
+   "kind": "demo",
+   "jp": "表には姿を現さない「女王様」とその忠実なる部下達によって組織",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0eb0"
+   ],
+   "max_bytes": 60,
+   "max_cells": 30
+  },
+  {
+   "id": "d00040",
+   "kind": "demo",
+   "jp": "された史上最強の不良グループ。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0eed"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00041",
+   "kind": "demo",
+   "jp": "それまで道の隅の影中に生きていた不良達を日の当たる場所へと",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0f2d"
+   ],
+   "max_bytes": 58,
+   "max_cells": 29
+  },
+  {
+   "id": "d00042",
+   "kind": "demo",
+   "jp": "連れ出したのは、彼らである。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0f68"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00043",
+   "kind": "demo",
+   "jp": "その為、不良達は暗黒鳳凰団に絶対服従を誓っていた。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0f85"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00044",
+   "kind": "demo",
+   "jp": "そして彼らが狙うものはただひとつ。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0fbb"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00045",
+   "kind": "demo",
+   "jp": "現在の絶対学歴社会を作り出した者達の抹殺。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:0fde"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00046",
+   "kind": "demo",
+   "jp": "大帝都東京に本部を構える中央集権教育制度の渦中。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1009"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00047",
+   "kind": "demo",
+   "jp": "絶対学歴主義を唱え、それを日本中に深淵させた彼らにとって",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:105d"
+   ],
+   "max_bytes": 56,
+   "max_cells": 28
+  },
+  {
+   "id": "d00048",
+   "kind": "demo",
+   "jp": "不良達は自分達の邪魔をするやっかい者でしかなかった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1096"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00049",
+   "kind": "demo",
+   "jp": "教育者の名にかけて、それを抹殺する事も、彼らの仕事になっていた。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:10cb"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "d00050",
+   "kind": "demo",
+   "jp": "そして両者は血で血を洗う争いを始めたのである。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:110f"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00051",
+   "kind": "demo",
+   "jp": "まず、大日本総合教育本部は、不良達の弱体化の為に、日本にある",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:114a"
+   ],
+   "max_bytes": 60,
+   "max_cells": 30
+  },
+  {
+   "id": "d00052",
+   "kind": "demo",
+   "jp": "すべての学校を週休二日制にする事を決定した。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1187"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00053",
+   "kind": "demo",
+   "jp": "学校を根城に恐喝を行っている不良達の資金元を弱体化する為である。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:11b4"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "d00054",
+   "kind": "demo",
+   "jp": "だが、週休二日制にするのには、帝都にある大日本教育本部へ、各々の",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:11f5"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "d00055",
+   "kind": "demo",
+   "jp": "学校関係者が必ず、許可証に学校印を押しにいかねばならなかった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1236"
+   ],
+   "max_bytes": 62,
+   "max_cells": 31
+  },
+  {
+   "id": "d00056",
+   "kind": "demo",
+   "jp": "そこで、暗黒鳳凰団は、その学校関係者達に刺客を次々と送り込んだ。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1275"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "d00057",
+   "kind": "demo",
+   "jp": "暗黒鳳凰団には、「八部衆」と呼ばれる女王様付きの精鋭達がいる。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:12b6"
+   ],
+   "max_bytes": 62,
+   "max_cells": 31
+  },
+  {
+   "id": "d00058",
+   "kind": "demo",
+   "jp": "そしてその他に、常に女王様のそばにいる双子の執事と閃光の白騎士と",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:12f5"
+   ],
+   "max_bytes": 64,
+   "max_cells": 32
+  },
+  {
+   "id": "d00059",
+   "kind": "demo",
+   "jp": "呼ばれる手練れの者が次々と、仇敵を消し去っていった。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1336"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00060",
+   "kind": "demo",
+   "jp": "ある者は海の藻屑となり、ある者はアスファルトの上で・・・",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:136b"
+   ],
+   "max_bytes": 56,
+   "max_cells": 28
+  },
+  {
+   "id": "d00061",
+   "kind": "demo",
+   "jp": "分割民営化して弱体化してしまった警察には、このふたつの勢力の争いを",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:13b0"
+   ],
+   "max_bytes": 66,
+   "max_cells": 33
+  },
+  {
+   "id": "d00062",
+   "kind": "demo",
+   "jp": "止める事が出来ずにいた。",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:13f3"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00063",
+   "kind": "demo",
+   "jp": "反骨精神の暗黒鳳凰団と完全管理精神の大日本教育本部の死闘は",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:140c"
+   ],
+   "max_bytes": 58,
+   "max_cells": 29
+  },
+  {
+   "id": "d00064",
+   "kind": "demo",
+   "jp": "今もなお、続いているのであった・・・・",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1447"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00065",
+   "kind": "demo",
+   "jp": "ちょこちゃん",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1b24"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00066",
+   "kind": "demo",
+   "jp": "　沙織ちゃん",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1b31"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00067",
+   "kind": "demo",
+   "jp": "　さんちゃん",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1b3e"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00068",
+   "kind": "demo",
+   "jp": "　愛の悟郎　",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1b4b"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00069",
+   "kind": "demo",
+   "jp": "本のディスク",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:1b58"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00070",
+   "kind": "demo",
+   "jp": "【Ａ－ｄｒｉｖｅのライトプロテクトを解除してください】",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:24a9"
+   ],
+   "max_bytes": 54,
+   "max_cells": 27
+  },
+  {
+   "id": "d00071",
+   "kind": "demo",
+   "jp": "【★－ｄｒｉｖｅに［",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:24e0"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00072",
+   "kind": "demo",
+   "jp": "］－ｄｉｓｋを入れてください】",
+   "en": "",
+   "refs": [
+    "demo:PSTUDENT.COM:24f8"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
   }
  ]
 }

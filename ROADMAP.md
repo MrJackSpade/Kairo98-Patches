@@ -10,8 +10,8 @@ recent.
 ## Order
 
 1. **Alice Soft** (`alice-sys`): Funny Bee, Only You, Prostudent G,
-   AmbivalenZ, Gakuen King, Mugen Houyou, Dalk (patcher done, needs MTL), then
-   the rest. *Skipped:* Toushin Toshi II (BabaJeanmel & Alpharobo, announced,
+   AmbivalenZ, Gakuen King, Mugen Houyou, Dalk and the rest: every title but
+   Abunai Tengu Densetsu is extracted and patchable (see the status table). *Skipped:* Toushin Toshi II (BabaJeanmel & Alpharobo, announced,
    25%).
 2. **JAST** (`jast`, 13 untranslated on their own engine).
 3. **Illusion** (`tmexec`: the same engine also covers Heart Soft, Interheart,
@@ -52,19 +52,27 @@ standard way to produce a patched game, for every game.
 translate now; later tooling fixes carry translations forward. See
 DEFINITION_OF_DONE.md for the full checklist.
 
-| Game | Engine | Script | Translation | Patch | Boot test |
+| Game | Engine | Script | Translation | Patch | Boot test (filler) |
 |---|---|---|---|---|---|
-| ♥ Dalk | alice-sys (System 2) | extracted | **Ready to translate** (maintainer); UI/names done | works; not yet memory-neutral | title, intro, first scenes |
-| ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works | title, intro, menus (filler) |
-| ♥ Only You | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works; mid-line wrap fix pending | message window (filler) |
-| ♥ Mugen Houyou | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory on this image; page splitting pending | — |
-| ♥ Alice no Yakata III | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory on this image; page splitting pending | — |
-| ♥ D.P.S Zenbu | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | out of memory; oversized pages; page splitting pending | — |
-| Ningyo | alice-sys (System 3) | extracted | Claude (no ♥) | engine build needs its own signature | — |
-| ♥ AmbivalenZ | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | pending | — |
-| ♥ Prostudent G | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | pending (System 2 font patch generalization) | — |
-| ♥ Ayumi-chan Monogatari | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | pending (System 2 font patch generalization) | — |
-| Otome Senki | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
-| Toushin Toshi II - Soshite, Sorekara | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
-| Hashiri Onna II (Rance 4.1+4.2 hint disk) | alice-sys (System 3) | extracted | Claude (no ♥) | pending | — |
-| Super D.P.S | alice-sys (System 2, 3 scenario sets) | extracted | Claude (no ♥) | pending (System 2 font patch generalization) | — |
+| ♥ Alice no Yakata III | alice-sys (System 3, 1 set) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Ambivalenz - Niritsu Haihan | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Ayumi-chan Monogatari | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Crescent Moon Girl | alice-sys (System 1, 2 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 330 of 3575) | works, memory-neutral | OK (see notes) |
+| ♥ D.P.S (Dream Program System) SG | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 46 of 10861) | works, memory-neutral | OK (see notes) |
+| ♥ D.P.S (Dream Program System) SG Set 2 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 48 of 16452) | works; **scenario floppies too full for 2.5x filler** (open decision, see notes) | — |
+| ♥ D.P.S (Dream Program System) SG Set 3 | alice-sys (System 1, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 86 of 13306) | works; **scenario floppies too full for 2.5x filler** (open decision, see notes) | — |
+| ♥ D.P.S Zenbu (All Dream Program System) | alice-sys (System 3, 4 sets) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Dalk | alice-sys (System 2) | extracted | **Ready to translate** (maintainer); 291 done | works, memory-neutral | OK (see notes) |
+| ♥ Dr. Stop! | alice-sys (System 2) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 102 of 7426) | works, memory-neutral | OK (see notes) |
+| ♥ Gakuen King | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) | alice-sys (System 1) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 1106 of 1966) | works, memory-neutral | OK (see notes) |
+| ♥ Mugen Houyou | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Ningyo - Tsutako | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 0 of 290) | works, memory-neutral | OK (see notes) |
+| ♥ Only You - Seikimatsu no Juliet-tachi | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Otome Senki | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 813 of 2086) | works, memory-neutral | OK (see notes) |
+| ♥ Pro Student G | alice-sys (System 2) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| ♥ Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 270 of 1013) | works, memory-neutral | OK (see notes) |
+| ♥ Super D.P.S (Dream Program System) | alice-sys (System 2, 3 sets) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 176 of 9508) | works, memory-neutral | OK (see notes) |
+| ♥ Toushin Toshi II - Soshite, Sorekara | alice-sys (System 3) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 1799 of 5485) | works, memory-neutral | OK (see notes) |
+| ♥ Uchuu Kaitou Funny Bee | alice-sys (System 3) | extracted | **Ready to translate** (maintainer) | works, memory-neutral | OK (see notes) |
+| Abunai Tengu Densetsu | custom floppy loader | **not extracted**: text is packed; loader not yet reverse-engineered | — | — | — |

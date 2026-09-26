@@ -1,0 +1,12 @@
+{
+ "title": "Gakuen King",
+ "key": "AliceSoft.zip/Gakuen King",
+ "image": "Gakuen King\\Gakuen King (FD version) [HD]\\Gakuen King (FD version).hdi",
+ "game_dir": "ALI_GAKU",
+ "version": "gakuen",
+ "encoding": "halfkana",
+ "config": {
+  "menu_fit_jp": true
+ },
+ "engine": "GAKUEN.COM"
+}

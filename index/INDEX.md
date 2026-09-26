@@ -186,8 +186,27 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 | Publisher | Title | Status |
 |---|---|---|
-| Alice Soft | Dalk | [This repo: games/dalk (extract/patch working, script awaiting translation)](../games/dalk/notes.md) |
-| Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (extract/patch working, script ready for translation)](../games/funny_bee/notes.md) |
+| Alice Soft | Alice no Yakata III | [This repo: games/alice_no_yakata_3 (patcher working, machine translation in progress)](../games/alice_no_yakata_3/notes.md) |
+| Alice Soft | Ambivalenz - Niritsu Haihan | [This repo: games/ambivalenz (patcher working, machine translation in progress)](../games/ambivalenz/notes.md) |
+| Alice Soft | Ayumi-chan Monogatari | [This repo: games/ayumi_chan (patcher working, machine translation in progress)](../games/ayumi_chan/notes.md) |
+| Alice Soft | Crescent Moon Girl | [This repo: games/crescent_moon_girl (patcher working, machine translation in progress)](../games/crescent_moon_girl/notes.md) |
+| Alice Soft | D.P.S (Dream Program System) SG | [This repo: games/dps_sg (patcher working, machine translation in progress)](../games/dps_sg/notes.md) |
+| Alice Soft | D.P.S (Dream Program System) SG Set 2 | [This repo: games/dps_sg2 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)](../games/dps_sg2/notes.md) |
+| Alice Soft | D.P.S (Dream Program System) SG Set 3 | [This repo: games/dps_sg3 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)](../games/dps_sg3/notes.md) |
+| Alice Soft | D.P.S Zenbu (All Dream Program System) | [This repo: games/dps_zenbu (patcher working, machine translation in progress)](../games/dps_zenbu/notes.md) |
+| Alice Soft | Dalk | [This repo: games/dalk (patcher working, machine translation in progress)](../games/dalk/notes.md) |
+| Alice Soft | Dr. Stop! | [This repo: games/dr_stop (patcher working, machine translation in progress)](../games/dr_stop/notes.md) |
+| Alice Soft | Gakuen King | [This repo: games/gakuen_king (patcher working, machine translation in progress)](../games/gakuen_king/notes.md) |
+| Alice Soft | Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) | [This repo: games/intruder (patcher working, machine translation in progress)](../games/intruder/notes.md) |
+| Alice Soft | Mugen Houyou | [This repo: games/mugen_houyou (patcher working, machine translation in progress)](../games/mugen_houyou/notes.md) |
+| Alice Soft | Ningyo - Tsutako | [This repo: games/ningyo (patcher working, machine translation in progress)](../games/ningyo/notes.md) |
+| Alice Soft | Only You - Seikimatsu no Juliet-tachi | [This repo: games/only_you (patcher working, machine translation in progress)](../games/only_you/notes.md) |
+| Alice Soft | Otome Senki | [This repo: games/otome_senki (patcher working, machine translation in progress)](../games/otome_senki/notes.md) |
+| Alice Soft | Pro Student G | [This repo: games/prostudent_g (patcher working, machine translation in progress)](../games/prostudent_g/notes.md) |
+| Alice Soft | Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) | [This repo: games/hashiri_onna_2 (patcher working, machine translation in progress)](../games/hashiri_onna_2/notes.md) |
+| Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
+| Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
+| Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -635,37 +654,37 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Abunai Tengu Densetsu [FD extras]
 - ♥ Alice no Yakata [FD extras] — **EN**
 - ♥ Alice no Yakata II [FD HD extras] `alice-sys` — **EN**
-- ♥ Alice no Yakata III [CD FD HD] `alice-sys`
-- ♥ Ambivalenz - Niritsu Haihan [FD HD] `alice-sys`
-- ♥ Ayumi-chan Monogatari [FD HD extras] `alice-sys`
-- ♥ Crescent Moon Girl [FD extras] `alice-sys`
+- ♥ Alice no Yakata III [CD FD HD] `alice-sys` — *MTL (this repo)*
+- ♥ Ambivalenz - Niritsu Haihan [FD HD] `alice-sys` — *MTL (this repo)*
+- ♥ Ayumi-chan Monogatari [FD HD extras] `alice-sys` — *MTL (this repo)*
+- ♥ Crescent Moon Girl [FD extras] `alice-sys` — *MTL (this repo)*
 - ♥ D.P.S (Dream Program System) [FD extras] — **EN**
-- ♥ D.P.S (Dream Program System) SG [FD extras] `alice-sys`
-- ♥ D.P.S (Dream Program System) SG Set 2 [FD extras] `alice-sys`
-- ♥ D.P.S (Dream Program System) SG Set 3 [FD extras] `alice-sys`
-- ♥ D.P.S Zenbu (All Dream Program System) [CD HD] `alice-sys`
+- ♥ D.P.S (Dream Program System) SG [FD extras] `alice-sys` — *MTL (this repo)*
+- ♥ D.P.S (Dream Program System) SG Set 2 [FD extras] `alice-sys` — *MTL (this repo)*
+- ♥ D.P.S (Dream Program System) SG Set 3 [FD extras] `alice-sys` — *MTL (this repo)*
+- ♥ D.P.S Zenbu (All Dream Program System) [CD HD] `alice-sys` — *MTL (this repo)*
 - ♥ Dalk [FD HD extras] `alice-sys` — *MTL (this repo)*
-- ♥ Dr. Stop! [FD HD extras] `alice-sys`
+- ♥ Dr. Stop! [FD HD extras] `alice-sys` — *MTL (this repo)*
 - ♥ Fukei-san VX (CG version) [HD] `alice-sys` — **EN**
-- ♥ Gakuen King [CD FD HD extras] `alice-sys`
-- ♥ Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) [FD] `alice-sys`
+- ♥ Gakuen King [CD FD HD extras] `alice-sys` — *MTL (this repo)*
+- ♥ Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) [FD] `alice-sys` — *MTL (this repo)*
 - Little Vampire (MS-DOS version) [FD] `alice-sys` — **EN**
-- ♥ Mugen Houyou [CD FD HD extras] `alice-sys`
-- Ningyo - Tsutako [FD HD] `alice-sys`
-- ♥ Only You - Seikimatsu no Juliet-tachi [CD FD HD] `alice-sys`
-- Otome Senki [HD] `alice-sys`
-- ♥ Pro Student G [FD HD extras] `alice-sys`
+- ♥ Mugen Houyou [CD FD HD extras] `alice-sys` — *MTL (this repo)*
+- ♥ Ningyo - Tsutako [FD HD] `alice-sys` — *MTL (this repo)*
+- ♥ Only You - Seikimatsu no Juliet-tachi [CD FD HD] `alice-sys` — *MTL (this repo)*
+- ♥ Otome Senki [HD] `alice-sys` — *MTL (this repo)*
+- ♥ Pro Student G [FD HD extras] `alice-sys` — *MTL (this repo)*
 - ♥ Rance [FD extras] — **EN**
 - ♥ Rance 4.1 [FD HD] `alice-sys` — **EN**
-- Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) [FD HD] `alice-sys`
+- ♥ Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) [FD HD] `alice-sys` — *MTL (this repo)*
 - ♥ Rance 4.2 [FD HD] `alice-sys` — **EN**
 - ♥ Rance II [FD HD extras] `alice-sys` — **EN**
 - ♥ Rance III [FD HD extras] `alice-sys` — **EN**
 - ♥ Rance IV [FD HD] `alice-sys` — **EN**
-- Super D.P.S (Dream Program System) [FD HD extras] `alice-sys`
+- ♥ Super D.P.S (Dream Program System) [FD HD extras] `alice-sys` — *MTL (this repo)*
 - ♥ Toushin Toshi [FD HD extras] `alice-sys` — **EN**
 - ♥ Toushin Toshi II [FD HD extras] `alice-sys` — *announced (skip)*
-- Toushin Toshi II - Soshite, Sorekara [CD HD] `alice-sys`
+- ♥ Toushin Toshi II - Soshite, Sorekara [CD HD] `alice-sys` — *MTL (this repo)*
 - ♥ Uchuu Kaitou Funny Bee [FD HD extras] `alice-sys` — *MTL (this repo)*
 
 ### Allex (`Allex.zip`)

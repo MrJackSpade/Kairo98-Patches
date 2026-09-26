@@ -7,5 +7,31 @@
  "encoding": "halfkana",
  "config": {
   "menu_fit_jp": true
- }
+ },
+ "sets": [
+  {
+   "prefix": "s1:",
+   "disks": {
+    "1": "ALICE_DA/ADISK_S1.DAT"
+   }
+  },
+  {
+   "prefix": "s2:",
+   "disks": {
+    "1": "ALICE_DA/ADISK_S2.DAT"
+   }
+  },
+  {
+   "prefix": "s3:",
+   "disks": {
+    "1": "ALICE_DA/ADISK_S3.DAT"
+   }
+  },
+  {
+   "prefix": "s4:",
+   "disks": {
+    "1": "ALICE_DA/ADISK_S4.DAT"
+   }
+  }
+ ]
 }

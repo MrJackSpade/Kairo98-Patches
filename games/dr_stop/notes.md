@@ -1,6 +1,52 @@
-# Dr. Stop! (Alice Soft)
+# ♥ Dr. Stop! (Alice Soft)
 
 > This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
 
-System 2. Script extracted to `strings.json` (7401 strings). Script scan: 0 of 7401 strings match the sexual-vocabulary list (0 distinct terms).
-See ROADMAP.md for status.
+Source image: `Dr. Stop!/Dr. Stop! [HD]/Dr. Stop!.hdi` (sha256 in `strings.json`).
+Clearance: no English release or announcement found on 2026-09-26 (`research/clearance.json`).
+
+## Engine
+
+Alice Soft **System 2**, engine `ADV.COM`.
+* Opening/extra program `DRD.COM`: its hard-coded text is extracted as `demo` strings and it gets the same display patch.
+
+Every script page disassembles and reassembles byte for byte (`tools/verify_roundtrip.py`).
+
+## English display (`pc98tl/alice2_font.py`)
+
+* Two letters are packed into one unused Shift-JIS code; the engine draws it as
+  one 16-dot cell built from its own ANK font table (A100:0000), so the script
+  stays at about one byte per letter.
+* Engines that draw straight from the kanji ROM ("direct" shape) get their 16-dot
+  routine hooked, and their 24-dot routine too when they have one.
+* The hook goes just above the program's old stack top, and the stack moves up
+  past it (the DOS memory block grows to match). Nothing else changes size, so
+  the patch is memory-neutral. All patch sites are found by byte signature.
+* A text run hard-coded in a program that outgrows its place is written, in
+  full, after the hook, and the code that loads it is pointed there.
+
+## Script
+
+7426 strings: 21 demo, 4 exe, 342 menu, 7008 msg, 33 obj, 18 verb.
+
+♥ by the safety valve: sexual command menu, possibly involving a minor, found while translating (first at u00052) (2026-09-26). Claude translated 102 strings before that point; the rest is the maintainer's to translate.
+
+## Limits
+
+* Message lines wrap to the text window (its width from the script's window commands, or the widest Japanese line); `\n` forces a break.
+* Menu items: each item's Japanese width (twice that in letters).
+* Hard-coded strings: their original byte length unless moved past the hook.
+
+## Not handled
+
+* Text drawn into the artwork (logos, panel labels).
+* Installer and driver messages.
+
+## Test status (np21w, `tools/boot_all.sh`)
+
+| Test | Result |
+|---|---|
+| Opening demo (DRD.COM) | OK |
+| Menus (16-dot) | OK |
+| Message windows (24-dot) | OK: letters drawn through the engine's own 24-dot scaling; wrapping uses 24-dot cells |
+| Gameplay past the opening scenes, save/load, endings | not yet seen |

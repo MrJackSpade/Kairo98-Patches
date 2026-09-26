@@ -49,11 +49,14 @@ def main():
     adult = len(hits) >= MIN_LINES and (len(terms) >= MIN_TERMS or len(hits) >= MANY_LINES)
     out_path = os.path.join(ROOT, "research", "adult_text.json")
     data = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {}
+    prev = data.get(key, {})
+    summary = ("%d of %d strings match the sexual-vocabulary list (%d distinct terms)"
+               % (len(hits), len(doc["strings"]), len(terms)))
+    if str(prev.get("summary", "")).startswith("manual:"):
+        # a safety-valve mark (explicit text found while translating) is final
+        adult, summary = True, prev["summary"]
     data[key] = {"adult": adult, "hits": len(hits), "strings": len(doc["strings"]),
-                 "distinct_terms": len(terms),
-                 "summary": "%d of %d strings match the sexual-vocabulary list (%d distinct terms)"
-                            % (len(hits), len(doc["strings"]), len(terms)),
-                 "adult_ids": hits}
+                 "distinct_terms": len(terms), "summary": summary, "adult_ids": hits}
     json.dump(data, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("%s: %s (%s)" % (key, "♥ adult" if adult else "not adult", data[key]["summary"]))
 

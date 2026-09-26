@@ -1,0 +1,20 @@
+{
+ "_note": "Per-game remarks for tools/write_notes.py: extra 'not_handled' items, extra test rows, and free-text remarks.",
+ "alice_no_yakata_3": {
+  "not_handled": ["The Windows version (SYSTEM3.EXE and its DLLs) on the same disk; the patch covers the DOS programs."]
+ },
+ "dalk": {
+  "remarks": ["The 249 `name` entries, the verb/object captions, the engine strings and the title menu were translated by hand earlier (romanization of names without an official source, e.g. セイル = \"Seil\", is a guess)."]
+ },
+ "dps_sg2": {
+  "tests": [["Stress test (--pseudo)", "**fails: the scenario floppies are full.** Each holds about 1 MB of CG next to the scenario; 2.5x filler needs up to 173 KB more than the disk has (72 KB after dropping the unused X68000/FM Towns/PC-88VA music files)"]],
+  "remarks": ["**Open decision:** the scenario floppies cannot hold a long English script. The game's own HDD install (AD.BAT / B_COPY.BAT / SET2.BAT) is the way around it: build a hard-disk image with the system files in `\\SG_SET2` and each scenario in `SNR1`-`SNR3`. That needs a bootable DOS HDI to start from, which these floppies don't include."]
+ },
+ "dps_sg3": {
+  "tests": [["Stress test (--pseudo)", "**fails: the scenario floppies are full** (same as SG Set 2)"]],
+  "remarks": ["**Open decision:** same as D.P.S SG Set 2: the scenario floppies cannot hold a long English script; the game's own HDD install layout needs a bootable DOS HDI to start from."]
+ },
+ "crescent_moon_girl": {
+  "remarks": ["The collection's `[FD]` set (three DOS floppies with ADV.COM) is the one patched; the `[FD hdb]` D88 dumps of the original disks are not used."]
+ }
+}

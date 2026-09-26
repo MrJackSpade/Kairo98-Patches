@@ -7,5 +7,8 @@
  "encoding": "packed",
  "config": {
   "menu_fit_jp": true
- }
+ },
+ "demos": [
+  "DRD.COM"
+ ]
 }

@@ -165412,6 +165412,886 @@
     "adv:473b"
    ],
    "max_bytes": 18
+  },
+  {
+   "id": "d00001",
+   "kind": "demo",
+   "jp": "【★ドライブに［★］ディスクを入れてください】",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:17e0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00002",
+   "kind": "demo",
+   "jp": "チーム☆妃乃車",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2841"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00003",
+   "kind": "demo",
+   "jp": "［乱］の時代。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2850"
+   ],
+   "max_bytes": 12,
+   "max_cells": 7
+  },
+  {
+   "id": "d00004",
+   "kind": "demo",
+   "jp": "人々の文化は、［信仰］を中心に巡っていた。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:285d"
+   ],
+   "max_bytes": 32,
+   "max_cells": 21
+  },
+  {
+   "id": "d00005",
+   "kind": "demo",
+   "jp": "魔法と呪術を信じ、神に祈りを捧ぐ事に総てを従事していた。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:287e"
+   ],
+   "max_bytes": 42,
+   "max_cells": 28
+  },
+  {
+   "id": "d00006",
+   "kind": "demo",
+   "jp": "［神］という名の元、人々は、己が信じる様々な［神］を［作り出して］いった。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:28a9"
+   ],
+   "max_bytes": 57,
+   "max_cells": 37
+  },
+  {
+   "id": "d00007",
+   "kind": "demo",
+   "jp": "村という村、街という街、国という国中に、ありとあらゆる［神］がいた。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:28e3"
+   ],
+   "max_bytes": 45,
+   "max_cells": 34
+  },
+  {
+   "id": "d00008",
+   "kind": "demo",
+   "jp": "そう、聖も邪も。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2911"
+   ],
+   "max_bytes": 10,
+   "max_cells": 8
+  },
+  {
+   "id": "d00009",
+   "kind": "demo",
+   "jp": "「もうすぐ、冬も終わりね。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:291c"
+   ],
+   "max_bytes": 16,
+   "max_cells": 13
+  },
+  {
+   "id": "d00010",
+   "kind": "demo",
+   "jp": "シュラ」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:292d"
+   ],
+   "max_bytes": 7,
+   "max_cells": 4
+  },
+  {
+   "id": "d00011",
+   "kind": "demo",
+   "jp": "「はい。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2935"
+   ],
+   "max_bytes": 4,
+   "max_cells": 4
+  },
+  {
+   "id": "d00012",
+   "kind": "demo",
+   "jp": "先日、王の共で狩りに出かけました時、ふきのとうが",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:293a"
+   ],
+   "max_bytes": 33,
+   "max_cells": 24
+  },
+  {
+   "id": "d00013",
+   "kind": "demo",
+   "jp": "芽吹いていました」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:295c"
+   ],
+   "max_bytes": 11,
+   "max_cells": 9
+  },
+  {
+   "id": "d00014",
+   "kind": "demo",
+   "jp": "「そう・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2968"
+   ],
+   "max_bytes": 7,
+   "max_cells": 7
+  },
+  {
+   "id": "d00015",
+   "kind": "demo",
+   "jp": "「シィア様、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2970"
+   ],
+   "max_bytes": 10,
+   "max_cells": 6
+  },
+  {
+   "id": "d00016",
+   "kind": "demo",
+   "jp": "おひとりで外出なさってはいけませんよ」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:297b"
+   ],
+   "max_bytes": 22,
+   "max_cells": 19
+  },
+  {
+   "id": "d00017",
+   "kind": "demo",
+   "jp": "「くすくす・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2992"
+   ],
+   "max_bytes": 8,
+   "max_cells": 8
+  },
+  {
+   "id": "d00018",
+   "kind": "demo",
+   "jp": "シュラには私が考えている事、すぐにばれちゃうね。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:299b"
+   ],
+   "max_bytes": 33,
+   "max_cells": 24
+  },
+  {
+   "id": "d00019",
+   "kind": "demo",
+   "jp": "ほんと、勘がいいんだもん」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:29bd"
+   ],
+   "max_bytes": 16,
+   "max_cells": 13
+  },
+  {
+   "id": "d00020",
+   "kind": "demo",
+   "jp": "「貴方が生まれた時からずっとそばにいますから・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:29ce"
+   ],
+   "max_bytes": 33,
+   "max_cells": 26
+  },
+  {
+   "id": "d00021",
+   "kind": "demo",
+   "jp": "「じゃあ・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:29f0"
+   ],
+   "max_bytes": 7,
+   "max_cells": 6
+  },
+  {
+   "id": "d00022",
+   "kind": "demo",
+   "jp": "ふたりならいいの？」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:29f8"
+   ],
+   "max_bytes": 11,
+   "max_cells": 10
+  },
+  {
+   "id": "d00023",
+   "kind": "demo",
+   "jp": "「ふたり？」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a04"
+   ],
+   "max_bytes": 7,
+   "max_cells": 6
+  },
+  {
+   "id": "d00024",
+   "kind": "demo",
+   "jp": "「うん。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a0c"
+   ],
+   "max_bytes": 4,
+   "max_cells": 4
+  },
+  {
+   "id": "d00025",
+   "kind": "demo",
+   "jp": "シュラとふたり」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a11"
+   ],
+   "max_bytes": 11,
+   "max_cells": 8
+  },
+  {
+   "id": "d00026",
+   "kind": "demo",
+   "jp": "「ふたりで、ずっと昔からの秘密のお花畑・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a1d"
+   ],
+   "max_bytes": 29,
+   "max_cells": 22
+  },
+  {
+   "id": "d00027",
+   "kind": "demo",
+   "jp": "行こ」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a3b"
+   ],
+   "max_bytes": 4,
+   "max_cells": 3
+  },
+  {
+   "id": "d00028",
+   "kind": "demo",
+   "jp": "「はい。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a40"
+   ],
+   "max_bytes": 4,
+   "max_cells": 4
+  },
+  {
+   "id": "d00029",
+   "kind": "demo",
+   "jp": "春になって、花が咲き乱れたら、いきましょう」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a45"
+   ],
+   "max_bytes": 27,
+   "max_cells": 22
+  },
+  {
+   "id": "d00030",
+   "kind": "demo",
+   "jp": "「ほんと、シュラ？",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a61"
+   ],
+   "max_bytes": 13,
+   "max_cells": 9
+  },
+  {
+   "id": "d00031",
+   "kind": "demo",
+   "jp": "約束ね」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a6f"
+   ],
+   "max_bytes": 6,
+   "max_cells": 4
+  },
+  {
+   "id": "d00032",
+   "kind": "demo",
+   "jp": "「はい」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a76"
+   ],
+   "max_bytes": 4,
+   "max_cells": 4
+  },
+  {
+   "id": "d00033",
+   "kind": "demo",
+   "jp": "「約束ね、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a7b"
+   ],
+   "max_bytes": 7,
+   "max_cells": 5
+  },
+  {
+   "id": "d00034",
+   "kind": "demo",
+   "jp": "シュラ」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a83"
+   ],
+   "max_bytes": 7,
+   "max_cells": 4
+  },
+  {
+   "id": "d00035",
+   "kind": "demo",
+   "jp": "「我が娘シィアが悪名高きギンヌンガガップの信者達にさらわれてしまった。",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2a8b"
+   ],
+   "max_bytes": 56,
+   "max_cells": 35
+  },
+  {
+   "id": "d00036",
+   "kind": "demo",
+   "jp": "軍を率い、シィアを・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2ac4"
+   ],
+   "max_bytes": 17,
+   "max_cells": 12
+  },
+  {
+   "id": "d00037",
+   "kind": "demo",
+   "jp": "我が娘を助けてくれ」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2ad6"
+   ],
+   "max_bytes": 14,
+   "max_cells": 10
+  },
+  {
+   "id": "d00038",
+   "kind": "demo",
+   "jp": "「貴様・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2ae5"
+   ],
+   "max_bytes": 7,
+   "max_cells": 5
+  },
+  {
+   "id": "d00039",
+   "kind": "demo",
+   "jp": "シィア様じゃない・・・！！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2aed"
+   ],
+   "max_bytes": 21,
+   "max_cells": 14
+  },
+  {
+   "id": "d00040",
+   "kind": "demo",
+   "jp": "「勘の良い男だな・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b03"
+   ],
+   "max_bytes": 16,
+   "max_cells": 12
+  },
+  {
+   "id": "d00041",
+   "kind": "demo",
+   "jp": "「騎士よ、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b14"
+   ],
+   "max_bytes": 7,
+   "max_cells": 5
+  },
+  {
+   "id": "d00042",
+   "kind": "demo",
+   "jp": "その勇敢さは無駄に終わったな・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b1c"
+   ],
+   "max_bytes": 22,
+   "max_cells": 17
+  },
+  {
+   "id": "d00043",
+   "kind": "demo",
+   "jp": "「貴様・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b33"
+   ],
+   "max_bytes": 8,
+   "max_cells": 6
+  },
+  {
+   "id": "d00044",
+   "kind": "demo",
+   "jp": "「我が名はディアドラ・・・邪気と呪術より生まれいでた［闇の娘］・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b46"
+   ],
+   "max_bytes": 53,
+   "max_cells": 35
+  },
+  {
+   "id": "d00045",
+   "kind": "demo",
+   "jp": "「シィア様に何をした・・？！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b7c"
+   ],
+   "max_bytes": 22,
+   "max_cells": 15
+  },
+  {
+   "id": "d00046",
+   "kind": "demo",
+   "jp": "「ほう・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b93"
+   ],
+   "max_bytes": 6,
+   "max_cells": 6
+  },
+  {
+   "id": "d00047",
+   "kind": "demo",
+   "jp": "この娘、貴様と恋仲であったか・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2b9a"
+   ],
+   "max_bytes": 23,
+   "max_cells": 17
+  },
+  {
+   "id": "d00048",
+   "kind": "demo",
+   "jp": "「貴様の恋人はまっこと美味であった・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bb2"
+   ],
+   "max_bytes": 28,
+   "max_cells": 21
+  },
+  {
+   "id": "d00049",
+   "kind": "demo",
+   "jp": "「心も・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bcf"
+   ],
+   "max_bytes": 7,
+   "max_cells": 6
+  },
+  {
+   "id": "d00050",
+   "kind": "demo",
+   "jp": "臓物もな・・！！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bd7"
+   ],
+   "max_bytes": 13,
+   "max_cells": 9
+  },
+  {
+   "id": "d00051",
+   "kind": "demo",
+   "jp": "「う・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2be5"
+   ],
+   "max_bytes": 6,
+   "max_cells": 6
+  },
+  {
+   "id": "d00052",
+   "kind": "demo",
+   "jp": "「うおおっ！！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bec"
+   ],
+   "max_bytes": 10,
+   "max_cells": 8
+  },
+  {
+   "id": "d00053",
+   "kind": "demo",
+   "jp": "「ほっ・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bf7"
+   ],
+   "max_bytes": 5,
+   "max_cells": 5
+  },
+  {
+   "id": "d00054",
+   "kind": "demo",
+   "jp": "ほほほほほっ・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2bfd"
+   ],
+   "max_bytes": 10,
+   "max_cells": 10
+  },
+  {
+   "id": "d00055",
+   "kind": "demo",
+   "jp": "「騎士よ、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c08"
+   ],
+   "max_bytes": 7,
+   "max_cells": 5
+  },
+  {
+   "id": "d00056",
+   "kind": "demo",
+   "jp": "貴様の恋人を食ろうた我が憎いか？",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c10"
+   ],
+   "max_bytes": 25,
+   "max_cells": 16
+  },
+  {
+   "id": "d00057",
+   "kind": "demo",
+   "jp": "我を殺したいか？」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c2a"
+   ],
+   "max_bytes": 12,
+   "max_cells": 9
+  },
+  {
+   "id": "d00058",
+   "kind": "demo",
+   "jp": "「殺したいのなら、追いかけてくるが良い・・・」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c37"
+   ],
+   "max_bytes": 27,
+   "max_cells": 23
+  },
+  {
+   "id": "d00059",
+   "kind": "demo",
+   "jp": "「だがその前に、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c53"
+   ],
+   "max_bytes": 11,
+   "max_cells": 8
+  },
+  {
+   "id": "d00060",
+   "kind": "demo",
+   "jp": "ここから生きて出る事が出来んとな・・・！！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c5f"
+   ],
+   "max_bytes": 30,
+   "max_cells": 22
+  },
+  {
+   "id": "d00061",
+   "kind": "demo",
+   "jp": "「それを見事倒し、",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c7e"
+   ],
+   "max_bytes": 12,
+   "max_cells": 9
+  },
+  {
+   "id": "d00062",
+   "kind": "demo",
+   "jp": "追ってこい」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c8b"
+   ],
+   "max_bytes": 7,
+   "max_cells": 6
+  },
+  {
+   "id": "d00063",
+   "kind": "demo",
+   "jp": "「我を・・・",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c93"
+   ],
+   "max_bytes": 7,
+   "max_cells": 6
+  },
+  {
+   "id": "d00064",
+   "kind": "demo",
+   "jp": "このディアドラを・・！」",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2c9b"
+   ],
+   "max_bytes": 18,
+   "max_cells": 12
+  },
+  {
+   "id": "d00065",
+   "kind": "demo",
+   "jp": "Ｏｒｉｇｉｎａｌ－ｓｔｏｒｙ  Ｒｉｋａ Ｏｈｎｅ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2cae"
+   ],
+   "max_bytes": 47,
+   "max_cells": 23
+  },
+  {
+   "id": "d00066",
+   "kind": "demo",
+   "jp": "Ｄｉｒｅｃｔｏｒ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2cde"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "d00067",
+   "kind": "demo",
+   "jp": "ａｎｄ      Ｔｏｒｉ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2cef"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00068",
+   "kind": "demo",
+   "jp": "Ｓｃｅｎａｒｉｏ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d04"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "d00069",
+   "kind": "demo",
+   "jp": "Ａｒｔ  Ｍｕｔｓｕｍｉ Ｍａｓａｔｏ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d15"
+   ],
+   "max_bytes": 35,
+   "max_cells": 17
+  },
+  {
+   "id": "d00070",
+   "kind": "demo",
+   "jp": "ＣＧ  Ｙｏｋ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d3c"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00071",
+   "kind": "demo",
+   "jp": "Ｐｕｋａｐｉｅ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d49"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00072",
+   "kind": "demo",
+   "jp": "Ｓｐｅｃｉａｌ Ｔｈａｎｋｓ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d58"
+   ],
+   "max_bytes": 27,
+   "max_cells": 13
+  },
+  {
+   "id": "d00073",
+   "kind": "demo",
+   "jp": "Ｎａｋａｇｉｅ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d74"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00074",
+   "kind": "demo",
+   "jp": "Ｙａｓ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d83"
+   ],
+   "max_bytes": 6,
+   "max_cells": 3
+  },
+  {
+   "id": "d00075",
+   "kind": "demo",
+   "jp": "Ｃｈｏｍｏｙａｍａ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d8a"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00076",
+   "kind": "demo",
+   "jp": "Ｏｒｉｏｎ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2d9d"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "d00077",
+   "kind": "demo",
+   "jp": "Ｍｕｓｉｃ    Ｉｋａｚｕｃｈｉｍａｒｕ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2da8"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00078",
+   "kind": "demo",
+   "jp": "Ｐｒｏｇｒａｍ  Ｓｈｉｇｅ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2dcf"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00079",
+   "kind": "demo",
+   "jp": "Ｐｒｏｄｕｃｅ　　Ｔａｄａ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2dea"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00080",
+   "kind": "demo",
+   "jp": "Ｙｕｋｉｍｉ",
+   "en": "",
+   "refs": [
+    "demo:AMB_DEMO.COM:2e05"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
   }
  ]
 }

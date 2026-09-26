@@ -42,6 +42,12 @@ TABLES = {
 }
 
 
+# Gakuen King: System 3 with game-specific commands (reference: nact_gakuenking.cpp)
+TABLES["gakuen"] = dict(TABLES[3], **{"B": "ee", "P": "e", "N": "ee", "W": "eee", "Z": "eee",
+                                      "J": "ee", "T": "eee", "K": "b", "I": "eee", "L": "e",
+                                      "Q": "e", "Y": "ee"})
+
+
 class Op:
     """One instruction. `parts` is a list of bytes objects and ('addr', old) tuples."""
     __slots__ = ("addr", "cmd", "parts", "text")

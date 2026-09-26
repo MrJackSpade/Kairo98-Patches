@@ -171235,6 +171235,677 @@
     "adv:54c6"
    ],
    "max_bytes": 42
+  },
+  {
+   "id": "d00001",
+   "kind": "demo",
+   "jp": "峻険な山脈の中で最も高く聳えるトラム山の麓に、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0244"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00002",
+   "kind": "demo",
+   "jp": "ショートラムという街がある。　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0273"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00003",
+   "kind": "demo",
+   "jp": "この街は気候的にも恵まれ、街の外の農村地域も、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:02a2"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00004",
+   "kind": "demo",
+   "jp": "作物を育てるのに適した肥沃の大地であった。　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:02d1"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00005",
+   "kind": "demo",
+   "jp": "だが、ここは、飢えと病が、街中を支配していた。",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:032f"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00006",
+   "kind": "demo",
+   "jp": "ある時、一人の修行僧の若者が、この街を訪れた。",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:038d"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00007",
+   "kind": "demo",
+   "jp": "街の現状に胸を傷めた若者は、寺院に足を運んだ。",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:03bc"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00008",
+   "kind": "demo",
+   "jp": "司祭不在の寺院・・・・・・・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:03eb"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00009",
+   "kind": "demo",
+   "jp": "そこで若者はひとつの壺を見つける。　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:041a"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00010",
+   "kind": "demo",
+   "jp": "若者が、それに手を触れようとしたその時、目映い",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0478"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00011",
+   "kind": "demo",
+   "jp": "閃光とともに、一人の神が現れた。　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:04a7"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00012",
+   "kind": "demo",
+   "jp": "神の名は恋愛神マーティス。男女の恋愛を司る男神",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:04d6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00013",
+   "kind": "demo",
+   "jp": "である。だが、マーティスはウーギの封印によって",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0505"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00014",
+   "kind": "demo",
+   "jp": "神の力を封じられ、壺に閉じ込められてしまったと",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0534"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00015",
+   "kind": "demo",
+   "jp": "いう。封印したのは、マーティスと同じく恋愛神で",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0563"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00016",
+   "kind": "demo",
+   "jp": "ある女神の多体神ミラ。　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0592"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00017",
+   "kind": "demo",
+   "jp": "ミラは半年前、マーティスに突如戦いを挑んだ。　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:05f0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00018",
+   "kind": "demo",
+   "jp": "男型モンスターを引き連れて・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:061f"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00019",
+   "kind": "demo",
+   "jp": "恋愛神マーティスは女性を、ミラは男性の心を操る",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:067d"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00020",
+   "kind": "demo",
+   "jp": "力を持ち、その反面、同性には無力と化す。　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:06ac"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00021",
+   "kind": "demo",
+   "jp": "突然の出来事と無力化された力の為、成す術もなく",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:070a"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00022",
+   "kind": "demo",
+   "jp": "マーティスは封印された。　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0739"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00023",
+   "kind": "demo",
+   "jp": "その為に、マーティスとミラの神力の均衡が崩れ、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0768"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00024",
+   "kind": "demo",
+   "jp": "このままでは、ショートラムの街だけでなく世界中",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0797"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00025",
+   "kind": "demo",
+   "jp": "に厄災が、その猛威を奮うだろう。　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:07c6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00026",
+   "kind": "demo",
+   "jp": "事情を知った若者は、マーティスの封印の解封を試",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0824"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00027",
+   "kind": "demo",
+   "jp": "みる。　　　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0853"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00028",
+   "kind": "demo",
+   "jp": "だが、完全には解封出来なかった。　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0882"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00029",
+   "kind": "demo",
+   "jp": "それでもある程度自由を取り戻したマーティスは、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:08e0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00030",
+   "kind": "demo",
+   "jp": "若者の潜在的な力を見込み、ウーギの封印の力の源",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:090f"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00031",
+   "kind": "demo",
+   "jp": "である鍵を、外す事を若者に要請した。　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:093e"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00032",
+   "kind": "demo",
+   "jp": "その鍵は、険しく高きトラム山の頂上にあるマーテ",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:099c"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00033",
+   "kind": "demo",
+   "jp": "ィスの神殿にあるという。そして、その神殿には、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:09cb"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00034",
+   "kind": "demo",
+   "jp": "トラム山内部に存在する水力エレベーターを使えば",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:09fa"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00035",
+   "kind": "demo",
+   "jp": "辿り着ける。　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0a29"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00036",
+   "kind": "demo",
+   "jp": "しかし、敵対するミラによって、世界中からそこに",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0a87"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00037",
+   "kind": "demo",
+   "jp": "転移された迷宮に、邪悪なモンスターが、数多く放",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0ab6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00038",
+   "kind": "demo",
+   "jp": "たれていた。よって鍵を外す為には、モンスターを",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0ae5"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00039",
+   "kind": "demo",
+   "jp": "倒し、ミラを封じる以外に方法が無い・・・・・・",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0b14"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00040",
+   "kind": "demo",
+   "jp": "とマーティスは語った。　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0b43"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00041",
+   "kind": "demo",
+   "jp": "若者は、ある疑問をマーティスに問い掛けた。　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0ba1"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00042",
+   "kind": "demo",
+   "jp": "ミラ神を封印すれば、貴方様を解封しても、結局は",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0bd0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00043",
+   "kind": "demo",
+   "jp": "世界のバランスが崩れてしまうのではないか？　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0bff"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00044",
+   "kind": "demo",
+   "jp": "マーティスは答える。我に任せよ・・・・・・と。",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0c5d"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00045",
+   "kind": "demo",
+   "jp": "承諾した若者に、マーティスは女神を封じるアイテ",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0cbb"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00046",
+   "kind": "demo",
+   "jp": "ムを渡す。　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0cea"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00047",
+   "kind": "demo",
+   "jp": "それを受け取った若者に、不思議な力が宿った。　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0d48"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00048",
+   "kind": "demo",
+   "jp": "若者は、それを手に、神殿攻略の為に共に戦う仲間",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0d77"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00049",
+   "kind": "demo",
+   "jp": "たちを求め、街中を歩き回った。　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0da6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00050",
+   "kind": "demo",
+   "jp": "だが、誰一人として若者の話に耳を傾ける者はいな",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0e04"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00051",
+   "kind": "demo",
+   "jp": "かった。　　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0e33"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00052",
+   "kind": "demo",
+   "jp": "失望と挫折感に、がっくりと、うなだれる若者・・",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0e62"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00053",
+   "kind": "demo",
+   "jp": "そんな時、一人の愛らしい少女の声が若者を優しく",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0ec0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00054",
+   "kind": "demo",
+   "jp": "包み込んだ。　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0eef"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00055",
+   "kind": "demo",
+   "jp": "わたし達が、あなたの力になりましょう・・・と。",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0f1e"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00056",
+   "kind": "demo",
+   "jp": "こうして若者と１４人の乙女たちとの英雄口伝が、",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0f62"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00057",
+   "kind": "demo",
+   "jp": "今、ここに始まる・・・・・・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:0f91"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00058",
+   "kind": "demo",
+   "jp": "動詞，名詞が存在しません",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:227b"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00059",
+   "kind": "demo",
+   "jp": "やっぱりやめる",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:2294"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00060",
+   "kind": "demo",
+   "jp": "【★ドライブが書き込み禁止です】",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:22a3"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00061",
+   "kind": "demo",
+   "jp": "【★ドライブに★ディスクを入れてください】",
+   "en": "",
+   "refs": [
+    "demo:DALK_DEM.COM:22c4"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
   }
  ]
 }

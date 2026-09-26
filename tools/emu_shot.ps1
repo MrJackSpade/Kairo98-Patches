@@ -3,7 +3,9 @@
 # Each step is "<seconds to wait>:<action>"; action = shot | enter | space | esc | up | down | left | right
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
-    [Parameter(Mandatory)] [string]$Hdi,
+    [string]$Hdi = "",
+    [string]$Fd1 = "",
+    [string]$Fd2 = "",
     [Parameter(Mandatory)] [string]$Out,
     [string]$Steps = "25:shot",
     [string]$Exe = "C:\PC98work\emu\bin\np21x64w.exe"
@@ -23,8 +25,12 @@ public static class W {
 $bin = Split-Path $Exe
 $work = Join-Path $env:TEMP ("np21_" + [guid]::NewGuid().ToString("N").Substring(0, 8))
 New-Item -ItemType Directory $work | Out-Null
-$img = Join-Path $work "disk.hdi"
-Copy-Item $Hdi $img
+$img = ""
+if ($Hdi) { $img = Join-Path $work "disk.hdi"; Copy-Item $Hdi $img }
+$fds = @()
+foreach ($f in @($Fd1, $Fd2)) {
+    if ($f) { $c = Join-Path $work ("fd{0}{1}" -f $fds.Count, [IO.Path]::GetExtension($f)); Copy-Item -LiteralPath $f $c; $fds += $c }
+}
 $ini = Join-Path $work "np21.ini"
 $base = Join-Path $bin "np21x64w.ini"
 $lines = @()
@@ -33,7 +39,8 @@ if (-not ($lines -match '^\[NekoProject21\]')) { $lines = @("[NekoProject21]") +
 $out2 = @()
 foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100" } }
 Set-Content $ini $out2
-$p = Start-Process $Exe -ArgumentList "-i$ini" -WorkingDirectory $bin -PassThru
+$argv = @("-i$ini") + ($fds | ForEach-Object { '"' + $_ + '"' })
+$p = Start-Process $Exe -ArgumentList $argv -WorkingDirectory $bin -PassThru
 Start-Sleep 3
 $p.Refresh(); $h = $p.MainWindowHandle
 $vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right = 39 }

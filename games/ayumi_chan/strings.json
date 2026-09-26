@@ -114472,6 +114472,1579 @@
     "adv:4957"
    ],
    "max_bytes": 16
+  },
+  {
+   "id": "d00001",
+   "kind": "demo",
+   "jp": "【★－ｄｒｉｖｅに［",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:232c"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00002",
+   "kind": "demo",
+   "jp": "］－ｄｉｓｋを入れてください】",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2344"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00003",
+   "kind": "demo",
+   "jp": "カラーンコローン",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:24e2"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "d00004",
+   "kind": "demo",
+   "jp": "下校のチャイムが僕の耳に流れ込んできた。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:24f3"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00005",
+   "kind": "demo",
+   "jp": "後、５分・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:251c"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00006",
+   "kind": "demo",
+   "jp": "彼女はいつも、その時間、この道を通って帰る。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:252b"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00007",
+   "kind": "demo",
+   "jp": "クラスの委員長。頭もいいし、めんどうみがよくって",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2558"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00008",
+   "kind": "demo",
+   "jp": "かわいくて、やさしくて、クラスの中で一番人気。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2589"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00009",
+   "kind": "demo",
+   "jp": "僕の大好きな美少女。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:25b8"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00010",
+   "kind": "demo",
+   "jp": "そして僕は徹夜で書き上げたラブレターを握り締めて",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:25cd"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00011",
+   "kind": "demo",
+   "jp": "ここに立っている・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:25fe"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00012",
+   "kind": "demo",
+   "jp": "校門の角にちらっと見覚えのある姿が見えた途端",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2617"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00013",
+   "kind": "demo",
+   "jp": "僕の心臓は、さらに高鳴った。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2644"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00014",
+   "kind": "demo",
+   "jp": "１００メートル・・・５０メートル・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2661"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00015",
+   "kind": "demo",
+   "jp": "彼女が近づいてくる・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2688"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00016",
+   "kind": "demo",
+   "jp": "５メートル！",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:26a1"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00017",
+   "kind": "demo",
+   "jp": "怪訝そうな顔をして立ち止まる彼女。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:26ae"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00018",
+   "kind": "demo",
+   "jp": "学年で恋人にしたい女の子Ｎｏ．１",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:26d1"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00019",
+   "kind": "demo",
+   "jp": "河合あゆみちゃん。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:26f2"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00020",
+   "kind": "demo",
+   "jp": "実は、僕もそのひとり・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2705"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00021",
+   "kind": "demo",
+   "jp": "だ・・・だけど、彼女を見たら、手紙を渡す勇気が・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2720"
+   ],
+   "max_bytes": 54,
+   "max_cells": 27
+  },
+  {
+   "id": "d00022",
+   "kind": "demo",
+   "jp": "えっ・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2757"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "d00023",
+   "kind": "demo",
+   "jp": "ええいっ！！",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2762"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00024",
+   "kind": "demo",
+   "jp": "出ろっ！勇気百倍パワー！（当社比）",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:276f"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00025",
+   "kind": "demo",
+   "jp": "僕はあゆみちゃんに一世一代の告白をする為に",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2792"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00026",
+   "kind": "demo",
+   "jp": "一歩、前に出た・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:27bd"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00027",
+   "kind": "demo",
+   "jp": "「あああっ、あゆみちゃん！",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:27d4"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00028",
+   "kind": "demo",
+   "jp": "　突然だけど、これ受け取ってくれないかな・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:27ef"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00029",
+   "kind": "demo",
+   "jp": "　僕、本気で君のことが好きで・・あの・・その・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2820"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00030",
+   "kind": "demo",
+   "jp": "突然の告白を受け、驚く彼女。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2853"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00031",
+   "kind": "demo",
+   "jp": "「あの・・・・・・わたし・・・・・・・・・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2870"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00032",
+   "kind": "demo",
+   "jp": "そう答えたまま恥ずかしげにうつむき、黙り込む彼女。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:28a3"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00033",
+   "kind": "demo",
+   "jp": "「・・・・そうだよな・・・こんな僕を・・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:28d6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00034",
+   "kind": "demo",
+   "jp": "　ごめん・・・・やっぱり迷惑だったよね？・・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2905"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00035",
+   "kind": "demo",
+   "jp": "「ううん・・・・そうじゃないの。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:293a"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00036",
+   "kind": "demo",
+   "jp": "　わたし・・入学式の時から、ずっと貴方のこと見てたの。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:295b"
+   ],
+   "max_bytes": 54,
+   "max_cells": 27
+  },
+  {
+   "id": "d00037",
+   "kind": "demo",
+   "jp": "　素敵な人だなぁ・・って・・でも、他に付き合っている",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2992"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00038",
+   "kind": "demo",
+   "jp": "　人がいるんじゃないかと思って諦めてたの・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:29c7"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00039",
+   "kind": "demo",
+   "jp": "「ぼ・・僕、付き合っている人なんかいないよ！！",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:29fa"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00040",
+   "kind": "demo",
+   "jp": "　ぼ、僕が付き合いたいと思っているのは",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2a29"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00041",
+   "kind": "demo",
+   "jp": "　あっ、あ、あゆみちゃん！　君だけさ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2a50"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00042",
+   "kind": "demo",
+   "jp": "「・・・・でも・・・本当にいいの・・・？",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2a77"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00043",
+   "kind": "demo",
+   "jp": "　わたしなんかで・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2aa0"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00044",
+   "kind": "demo",
+   "jp": "うつむきかげんで上目づかいにボクの顔をのぞく。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2abb"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00045",
+   "kind": "demo",
+   "jp": "「君以外にいないよ・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2aea"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00046",
+   "kind": "demo",
+   "jp": "ボクの心からの言葉！！",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2b07"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00047",
+   "kind": "demo",
+   "jp": "「・・・・・嬉しい・・・・ひっく・・・ぐすっ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2b1e"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00048",
+   "kind": "demo",
+   "jp": "「どっ、どうしたの？・・・泣いたりして・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2b4d"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00049",
+   "kind": "demo",
+   "jp": "「くすん・・・ヘンなの・・・・嬉しいのに・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2b7c"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00050",
+   "kind": "demo",
+   "jp": "　こんなに涙が出てきちゃうなんて・・・・ひっく」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2bab"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00051",
+   "kind": "demo",
+   "jp": "そんな彼女を僕は抱き締めずにはいられなかった・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2bdc"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00052",
+   "kind": "demo",
+   "jp": "「好きだよ・・・・あゆみちゃん・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2c11"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00053",
+   "kind": "demo",
+   "jp": "「わたしも・・・・貴方のことが大好き・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2c3a"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00054",
+   "kind": "demo",
+   "jp": "★　それから、僕とあゆみちゃんの交際が始まった　★",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2c69"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00055",
+   "kind": "demo",
+   "jp": "「おはよう。今日は早いね。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2cd1"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00056",
+   "kind": "demo",
+   "jp": "　あっ・・・どうしたの？目、赤いよ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2cec"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00057",
+   "kind": "demo",
+   "jp": "「うん・・・ちょっとね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2d11"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00058",
+   "kind": "demo",
+   "jp": "「くすっ・・・きっとまたゲームで徹夜したんでしょ？",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2d2a"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00059",
+   "kind": "demo",
+   "jp": "　もう・・・・・・身体壊さないように、注意してね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2d5d"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00060",
+   "kind": "demo",
+   "jp": "「はいはい」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2d90"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00061",
+   "kind": "demo",
+   "jp": "「おっはよーー。ねぇ、知ってる？",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2d9d"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00062",
+   "kind": "demo",
+   "jp": "　近所に遊園地が出来たんだって。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2dbe"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00063",
+   "kind": "demo",
+   "jp": "　今度の日曜日に、一緒に遊びに行こうよ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2ddf"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00064",
+   "kind": "demo",
+   "jp": "「うん、そうだね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2e08"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00065",
+   "kind": "demo",
+   "jp": "「うふっ・・・じゃあ、わたしお弁当用意するから",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2e1b"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00066",
+   "kind": "demo",
+   "jp": "　それも楽しみにしててね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2e4a"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00067",
+   "kind": "demo",
+   "jp": "「うん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2e65"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00068",
+   "kind": "demo",
+   "jp": "「おはよう、あゆみちゃん・・ごめん、ちょっと寝坊して・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2e6e"
+   ],
+   "max_bytes": 56,
+   "max_cells": 28
+  },
+  {
+   "id": "d00069",
+   "kind": "demo",
+   "jp": "　あの・・・・待っててくれたんだ？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2ea7"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00070",
+   "kind": "demo",
+   "jp": "「うん。遅いからちょっと心配しちゃった。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2ecc"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00071",
+   "kind": "demo",
+   "jp": "　さあ、急がないと、遅刻しちゃうよ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2ef5"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00072",
+   "kind": "demo",
+   "jp": "「そうだね。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2f1a"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00073",
+   "kind": "demo",
+   "jp": "　よーーし、学校まで競争だ！！」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2f27"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00074",
+   "kind": "demo",
+   "jp": "「うん、じゃあ、よーーいどん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2f48"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00075",
+   "kind": "demo",
+   "jp": "「ごめん、あゆみちゃん。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2f67"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00076",
+   "kind": "demo",
+   "jp": "　次の授業の宿題、ちょーーっとだけ見せて」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2f80"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00077",
+   "kind": "demo",
+   "jp": "「もう・・・・しょうがない人ね。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2fab"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00078",
+   "kind": "demo",
+   "jp": "　本当は自分でやらないと意味がないのよ・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2fcc"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00079",
+   "kind": "demo",
+   "jp": "「うううっ・・・反省してます」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:2ffd"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00080",
+   "kind": "demo",
+   "jp": "「・・・・・今回だけよ・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:301c"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00081",
+   "kind": "demo",
+   "jp": "「ありがとう、あゆみちゃん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3039"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00082",
+   "kind": "demo",
+   "jp": "「次の授業は自習なんだって」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3056"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00083",
+   "kind": "demo",
+   "jp": "「おおっ、ラッキーー」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3073"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00084",
+   "kind": "demo",
+   "jp": "「くすっ・・・そんなにはしゃいじゃって・・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:308a"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00085",
+   "kind": "demo",
+   "jp": "　先生がいない時こそ、ちゃんとやらないとダメよ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:30bb"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00086",
+   "kind": "demo",
+   "jp": "「あはははっ、そっ、それもそうだね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:30ec"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00087",
+   "kind": "demo",
+   "jp": "「ごめんなさい・・ちょっと優等生的発言だったかしら・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3111"
+   ],
+   "max_bytes": 56,
+   "max_cells": 28
+  },
+  {
+   "id": "d00088",
+   "kind": "demo",
+   "jp": "「ううん、あゆみちゃんの言っていることは正しいよ。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:314a"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00089",
+   "kind": "demo",
+   "jp": "　さっ、一緒に自習しよう。テストも近いことだしね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:317d"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00090",
+   "kind": "demo",
+   "jp": "「うん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:31b0"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00091",
+   "kind": "demo",
+   "jp": "「あゆみちゃーーん。頑張って！！」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:31b9"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00092",
+   "kind": "demo",
+   "jp": "「うん。頑張るから見ててね。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:31dc"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00093",
+   "kind": "demo",
+   "jp": "　絶対にクラスマッチで優勝するから」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:31f9"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00094",
+   "kind": "demo",
+   "jp": "「エースアタッカーのあゆみちゃんがいれば",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:321e"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00095",
+   "kind": "demo",
+   "jp": "　ばっちりだよ。うんっ、絶対優勝間違いなし」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3247"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00096",
+   "kind": "demo",
+   "jp": "「くすっ・・・・・ありがとう」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3274"
+   ],
+   "max_bytes": 30,
+   "max_cells": 15
+  },
+  {
+   "id": "d00097",
+   "kind": "demo",
+   "jp": "「こらっ、なにじろじろ見てるの？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3293"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00098",
+   "kind": "demo",
+   "jp": "「いや、その・・・・あゆみちゃんの体操服姿って",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:32b6"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00099",
+   "kind": "demo",
+   "jp": "　素敵だなーーって・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:32e5"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00100",
+   "kind": "demo",
+   "jp": "「・・・さっきから、お尻の方ばかり見てなかった？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3300"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00101",
+   "kind": "demo",
+   "jp": "「そっ・・・・そんなことは・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3333"
+   ],
+   "max_bytes": 34,
+   "max_cells": 17
+  },
+  {
+   "id": "d00102",
+   "kind": "demo",
+   "jp": "「くすくすっ・・・冗談よ、じょーだん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3356"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00103",
+   "kind": "demo",
+   "jp": "あはははっ・・・一本とられちゃったな、これは・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:337d"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00104",
+   "kind": "demo",
+   "jp": "「あゆみちゃんのお弁当、おいしそうだね」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:33b0"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00105",
+   "kind": "demo",
+   "jp": "「えへへ・・・これ、わたしが作ったのよ。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:33d9"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00106",
+   "kind": "demo",
+   "jp": "　よかったら、このウインナー食べる？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3402"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00107",
+   "kind": "demo",
+   "jp": "「うん。ぜひ食べたい」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3429"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00108",
+   "kind": "demo",
+   "jp": "「じゃあ・・・・あーーん、して」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3440"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00109",
+   "kind": "demo",
+   "jp": "「あははっ・・・なんか照れちゃうけど・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3461"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00110",
+   "kind": "demo",
+   "jp": "　あーーん・・・・・・ぱく・・・もぐもぐ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:348c"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00111",
+   "kind": "demo",
+   "jp": "「どう？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:34b7"
+   ],
+   "max_bytes": 10,
+   "max_cells": 5
+  },
+  {
+   "id": "d00112",
+   "kind": "demo",
+   "jp": "「うん、とーーーーーーってもおいしい！」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:34c2"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00113",
+   "kind": "demo",
+   "jp": "「くすっ・・・・・嬉しいな」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:34eb"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00114",
+   "kind": "demo",
+   "jp": "「こうやって、あゆみちゃんと二人っきりで",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3508"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00115",
+   "kind": "demo",
+   "jp": "　食べると・・・おいしさ１００倍に感じるな」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3531"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00116",
+   "kind": "demo",
+   "jp": "「やん・・・・・調子のいいこと言って・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:355e"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00117",
+   "kind": "demo",
+   "jp": "　おだてて、その後わたしのおかずを頂戴って言う",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:358b"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00118",
+   "kind": "demo",
+   "jp": "　つもりなんでしょ？」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:35ba"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00119",
+   "kind": "demo",
+   "jp": "「あははっ・・・・ばれたか・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:35d1"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00120",
+   "kind": "demo",
+   "jp": "「くすくす・・・・・いいわよ、あげる」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:35f2"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00121",
+   "kind": "demo",
+   "jp": "「わーーーいっ、ありがとう、あゆみちゃん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3619"
+   ],
+   "max_bytes": 42,
+   "max_cells": 21
+  },
+  {
+   "id": "d00122",
+   "kind": "demo",
+   "jp": "「さぁ、早く掃除を片づけて帰りましょう。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3644"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00123",
+   "kind": "demo",
+   "jp": "　今日は、テニス部はお休みだし、一緒に帰れるから」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:366d"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
+  },
+  {
+   "id": "d00124",
+   "kind": "demo",
+   "jp": "「うんっ、そうと決まれば速攻で片付けちゃうよ」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:36a0"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00125",
+   "kind": "demo",
+   "jp": "バタバタバタ・・・・・・どんがらがっしゃん。",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:36cf"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00126",
+   "kind": "demo",
+   "jp": "「あいててて・・・バケツに足を突っ込んじゃった」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:36fc"
+   ],
+   "max_bytes": 48,
+   "max_cells": 24
+  },
+  {
+   "id": "d00127",
+   "kind": "demo",
+   "jp": "「大丈夫？・・・・もう・・・慌てるから・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:372d"
+   ],
+   "max_bytes": 44,
+   "max_cells": 22
+  },
+  {
+   "id": "d00128",
+   "kind": "demo",
+   "jp": "「だって・・・・早くあゆみちゃんと一緒に",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:375a"
+   ],
+   "max_bytes": 40,
+   "max_cells": 20
+  },
+  {
+   "id": "d00129",
+   "kind": "demo",
+   "jp": "　帰りたかったんだもん」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3783"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00130",
+   "kind": "demo",
+   "jp": "「・・・・・・わたしも・・・・」",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:379c"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00131",
+   "kind": "demo",
+   "jp": "今まであゆみちゃんと清い交際を続けてきた僕は、",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:37bd"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00132",
+   "kind": "demo",
+   "jp": "今日、新たな決意を胸に学校に向かった・・・・・",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:37ec"
+   ],
+   "max_bytes": 46,
+   "max_cells": 23
+  },
+  {
+   "id": "d00133",
+   "kind": "demo",
+   "jp": "企画・プロデュース",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:381b"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00134",
+   "kind": "demo",
+   "jp": "ＴＡＤＡ",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:382e"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00135",
+   "kind": "demo",
+   "jp": "シナリオ　　　イマーム",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3837"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00136",
+   "kind": "demo",
+   "jp": "シナリオ協力",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:384e"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00137",
+   "kind": "demo",
+   "jp": "む～みん",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:385b"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00138",
+   "kind": "demo",
+   "jp": "アリスネットあゆみプロジェクトメンバー",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:3864"
+   ],
+   "max_bytes": 38,
+   "max_cells": 19
+  },
+  {
+   "id": "d00139",
+   "kind": "demo",
+   "jp": "原画　　ラッシャー・ヴェラク",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:388b"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00140",
+   "kind": "demo",
+   "jp": "プログラム　　　しげ",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:38a8"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00141",
+   "kind": "demo",
+   "jp": "技術協力　　　ＷＡＯ",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:38bd"
+   ],
+   "max_bytes": 20,
+   "max_cells": 10
+  },
+  {
+   "id": "d00142",
+   "kind": "demo",
+   "jp": "背景・ＣＧ修正",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:38df"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00143",
+   "kind": "demo",
+   "jp": "なかじー",
+   "en": "",
+   "refs": [
+    "demo:AYU_DEMO.COM:38ee"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
   }
  ]
 }

@@ -17991,7 +17991,7 @@
    "images": [],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 26 of 32 classified Alice Soft titles are adult",
+   "heart_basis": "provisional: 33 of 34 classified Alice Soft titles are adult",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
@@ -18396,7 +18396,14 @@
      "path": "Alice no Yakata III\\Alice no Yakata III [HD]\\Alice no Yakata III.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/alice_no_yakata_3 (patcher working, machine translation in progress)",
+     "url": "../games/alice_no_yakata_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 77 of 13207 strings match the sexual-vocabulary list (9 distinct terms)",
    "engine": "alice-sys",
@@ -18404,7 +18411,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Ambivalenz - Niritsu Haihan",
@@ -18535,7 +18542,14 @@
      "path": "Ambivalenz - Niritsu Haihan\\Ambivalenz - Niritsu Haihan [HD]\\Ambivalenz - Niritsu Haihan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ambivalenz (patcher working, machine translation in progress)",
+     "url": "../games/ambivalenz/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 5 of 16140 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "alice-sys",
@@ -18543,7 +18557,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Ayumi-chan Monogatari",
@@ -18662,7 +18676,14 @@
      "path": "Ayumi-chan Monogatari\\Ayumi-chan Monogatari [HD]\\Ayumi-chan Monogatari.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ayumi_chan (patcher working, machine translation in progress)",
+     "url": "../games/ayumi_chan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 62 of 11319 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "alice-sys",
@@ -18670,7 +18691,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Crescent Moon Girl",
@@ -18794,15 +18815,22 @@
      "path": "Crescent Moon Girl\\Crescent Moon Girl [FD]\\Crescent Moon Girl (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/crescent_moon_girl (patcher working, machine translation in progress)",
+     "url": "../games/crescent_moon_girl/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r10517 (erotic content)",
+   "heart_basis": "script text: manual: explicit sex scene found while translating (first at m00665) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/D.P.S (Dream Program System)",
@@ -18874,7 +18902,7 @@
     }
    ],
    "heart": true,
-   "heart_basis": "provisional: 26 of 32 classified Alice Soft titles are adult",
+   "heart_basis": "provisional: 33 of 34 classified Alice Soft titles are adult",
    "engine": "unlisted",
    "english": true,
    "in_progress": false,
@@ -18954,15 +18982,22 @@
      "path": "D.P.S (Dream Program System) SG\\D.P.S (Dream Program System) SG [FD]\\D.P.S (Dream Program System) SG (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dps_sg (patcher working, machine translation in progress)",
+     "url": "../games/dps_sg/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r4372 (erotic content)",
+   "heart_basis": "script text: manual: sexual assault command menu found while translating (first at u00047) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/D.P.S (Dream Program System) SG Set 2",
@@ -19073,15 +19108,22 @@
      "path": "D.P.S (Dream Program System) SG Set 2\\D.P.S (Dream Program System) SG Set 2 [FD]\\D.P.S (Dream Program System) SG Set 2 (System disk) [GReen-DOS].hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dps_sg2 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)",
+     "url": "../games/dps_sg2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 26 of 32 classified Alice Soft titles are adult",
+   "heart_basis": "script text: manual: sexual advances toward a character stated to be 17 found while translating (first at u00049) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/D.P.S (Dream Program System) SG Set 3",
@@ -19148,15 +19190,22 @@
      "path": "D.P.S (Dream Program System) SG Set 3\\D.P.S (Dream Program System) SG Set 3 [FD]\\D.P.S (Dream Program System) SG Set 3 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dps_sg3 (patcher working, machine translation in progress) (scenario floppies too full for a long script; see notes)",
+     "url": "../games/dps_sg3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 26 of 32 classified Alice Soft titles are adult",
+   "heart_basis": "script text: manual: explicit sex-scene command menu found while translating (first at u00087) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/D.P.S Zenbu (All Dream Program System)",
@@ -19181,15 +19230,22 @@
      "path": "D.P.S Zenbu (All Dream Program System)\\D.P.S Zenbu (All Dream Program System) [HD]\\D.P.S Zenbu (All Dream Program System).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dps_zenbu (patcher working, machine translation in progress)",
+     "url": "../games/dps_zenbu/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "script text: 27 of 20849 strings match the sexual-vocabulary list (2 distinct terms)",
+   "heart_basis": "script text: 40 of 30816 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Dalk",
@@ -19381,7 +19437,7 @@
    ],
    "patches": [
     {
-     "label": "This repo: games/dalk (extract/patch working, script awaiting translation)",
+     "label": "This repo: games/dalk (patcher working, machine translation in progress)",
      "url": "../games/dalk/notes.md",
      "source": "this repo",
      "wip": true
@@ -19464,15 +19520,22 @@
      "path": "Dr. Stop!\\Dr. Stop! [HD]\\Dr. Stop!.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dr_stop (patcher working, machine translation in progress)",
+     "url": "../games/dr_stop/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r3543 (erotic content)",
+   "heart_basis": "script text: manual: sexual command menu, possibly involving a minor, found while translating (first at u00052) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Fukei-san VX (CG version)",
@@ -19644,15 +19707,22 @@
      "path": "Gakuen King\\Gakuen King [FD]\\Gakuen King (Disk 6).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gakuen_king (patcher working, machine translation in progress)",
+     "url": "../games/gakuen_king/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r4803 (erotic content)",
+   "heart_basis": "script text: 84 of 19401 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)",
@@ -19682,15 +19752,22 @@
      "path": "Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)\\Intruder - Sakura Yashiki no Tansaku (FM Towns conversion) [FD]\\Intruder - Sakura Yashiki no Tansaku (FM Towns conversion).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/intruder (patcher working, machine translation in progress)",
+     "url": "../games/intruder/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r48481 (erotic content)",
+   "heart_basis": "script text: manual: explicit sex scene found while translating (first at m00872) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Little Vampire (MS-DOS version)",
@@ -19810,7 +19887,14 @@
      "path": "Mugen Houyou\\Mugen Houyou [FD]\\Mugen Houyou (Disk 5).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mugen_houyou (patcher working, machine translation in progress)",
+     "url": "../games/mugen_houyou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 19 of 12804 strings match the sexual-vocabulary list (5 distinct terms)",
    "engine": "alice-sys",
@@ -19818,7 +19902,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Ningyo - Tsutako",
@@ -19850,15 +19934,22 @@
      "path": "Ningyo - Tsutako\\Ningyo - Tsutako [HD]\\Ningyo - Tsutako.hdi"
     }
    ],
-   "patches": [],
-   "heart": false,
-   "heart_basis": "script text: 0 of 284 strings match the sexual-vocabulary list (0 distinct terms)",
+   "patches": [
+    {
+     "label": "This repo: games/ningyo (patcher working, machine translation in progress)",
+     "url": "../games/ningyo/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": true,
+   "heart_basis": "script text: manual: explicit sexual scenes found while translating (2026-09-26); the scan's vocabulary list misses them (dialect and euphemism)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Only You - Seikimatsu no Juliet-tachi",
@@ -20021,7 +20112,14 @@
      "path": "Only You - Seikimatsu no Juliet-tachi\\Only You - Seikimatsu no Juliet-tachi (CD version) [HD]\\Only You - Seikimatsu no Juliet-tachi (CD version).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/only_you (patcher working, machine translation in progress)",
+     "url": "../games/only_you/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 33 of 21824 strings match the sexual-vocabulary list (4 distinct terms)",
    "engine": "alice-sys",
@@ -20029,7 +20127,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Otome Senki",
@@ -20052,15 +20150,22 @@
      "path": "Otome Senki\\Otome Senki [HD]\\Otome Senki.hdi"
     }
    ],
-   "patches": [],
-   "heart": false,
-   "heart_basis": "script text: 0 of 2080 strings match the sexual-vocabulary list (0 distinct terms)",
+   "patches": [
+    {
+     "label": "This repo: games/otome_senki (patcher working, machine translation in progress)",
+     "url": "../games/otome_senki/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": true,
+   "heart_basis": "script text: manual: sexual proposition scene involving party members stated to be 16-17 found while translating (2026-09-26, first at m00076)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Pro Student G",
@@ -20186,7 +20291,14 @@
      "path": "Pro Student G\\Pro Student G [HD]\\Pro Student G (uncensored).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/prostudent_g (patcher working, machine translation in progress)",
+     "url": "../games/prostudent_g/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "script text: 37 of 18820 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "alice-sys",
@@ -20194,7 +20306,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Rance",
@@ -20494,15 +20606,22 @@
      "path": "Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls)\\Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls) [HD]\\Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls).hdi"
     }
    ],
-   "patches": [],
-   "heart": false,
-   "heart_basis": "script text: 0 of 1007 strings match the sexual-vocabulary list (0 distinct terms)",
+   "patches": [
+    {
+     "label": "This repo: games/hashiri_onna_2 (patcher working, machine translation in progress)",
+     "url": "../games/hashiri_onna_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": true,
+   "heart_basis": "script text: manual: sexualized commentary on possibly underage racers and an explicit training menu found while translating (2026-09-26, first at m00145)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Rance 4.2",
@@ -21443,15 +21562,22 @@
      "path": "Super D.P.S (Dream Program System)\\Super D.P.S (Dream Program System) [HD]\\Super D.P.S (Dream Program System).hdi"
     }
    ],
-   "patches": [],
-   "heart": false,
-   "heart_basis": "script text: 1 of 9483 strings match the sexual-vocabulary list (1 distinct terms)",
+   "patches": [
+    {
+     "label": "This repo: games/super_dps (patcher working, machine translation in progress)",
+     "url": "../games/super_dps/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": true,
+   "heart_basis": "script text: manual: sexual assault command menu found while translating (first at u00163) (2026-09-26)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Toushin Toshi",
@@ -21873,15 +21999,22 @@
      "path": "Toushin Toshi II - Soshite, Sorekara\\Toushin Toshi II - Soshite, Sorekara... [HD]\\Toushin Toshi II - Soshite, Sorekara....hdi"
     }
    ],
-   "patches": [],
-   "heart": false,
-   "heart_basis": "script text: 0 of 5479 strings match the sexual-vocabulary list (0 distinct terms)",
+   "patches": [
+    {
+     "label": "This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)",
+     "url": "../games/toushin_toshi_2_sp/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
+   "heart": true,
+   "heart_basis": "script text: manual: sexualized description of a character stated to be 15 found while translating (2026-09-26, first at m01700)",
    "engine": "alice-sys",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "AliceSoft.zip/Uchuu Kaitou Funny Bee",
@@ -22059,7 +22192,7 @@
    ],
    "patches": [
     {
-     "label": "This repo: games/funny_bee (extract/patch working, script ready for translation)",
+     "label": "This repo: games/funny_bee (patcher working, machine translation in progress)",
      "url": "../games/funny_bee/notes.md",
      "source": "this repo",
      "wip": true

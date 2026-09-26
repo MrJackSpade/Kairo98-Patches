@@ -17,7 +17,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "音源の設定をして下さい。\n注意！「謳」←Ｗｉｎｄｏｗ使用でこのカッコ内に漢字が\n表示されていなければ、［設定］でフォントの変更を行った\n後、選択肢の所で右クリックして下さい。",
-   "en": "",
+   "en": "Please choose your sound setting.\nNote for Windows users: if text does not display correctly, change the font under [Settings], then right-click on the list of choices.",
    "refs": [
     "p00:103d"
    ],
@@ -27,7 +27,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "ＦＭ音源",
-   "en": "",
+   "en": "FM Synth",
    "refs": [
     "p00:10cc"
    ],
@@ -37,7 +37,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "ＣＤ－ＤＡ",
-   "en": "",
+   "en": "CD-DA",
    "refs": [
     "p00:10d8"
    ],
@@ -47,7 +47,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "対応音源無し",
-   "en": "",
+   "en": "No Sound",
    "refs": [
     "p00:10e6"
    ],
@@ -57,7 +57,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "ＦＭ音源の使用は、ＰＣ－９８０１シリーズ、\nまたはその互換マシンで、ＭＳ－ＤＯＳからの\n起動の時のみ、使用可能です。",
-   "en": "",
+   "en": "FM sound can only be used on PC-9801 series machines or compatibles, when started from MS-DOS.",
    "refs": [
     "p00:1102"
    ],
@@ -67,7 +67,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "ＰＣ－９８０１－２６Ｋ、もしくはその互換ボードか、\n８６ボード、１１８ボード接続の必要があります。",
-   "en": "",
+   "en": "A PC-9801-26K or compatible board, or an 86 or 118 board, must be installed.",
    "refs": [
     "p00:1161"
    ],
@@ -77,7 +77,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "サウンドブラスター等の対応はしていませんので\n注意して下さい。",
-   "en": "",
+   "en": "Please note that Sound Blaster and similar cards are not supported.",
    "refs": [
     "p00:11b0"
    ],
@@ -87,7 +87,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "ＦＭ音源でＢＧＭ演奏をします。",
-   "en": "",
+   "en": "BGM will be played using FM sound.",
    "refs": [
     "p00:11e2"
    ],
@@ -97,7 +97,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "ＣＤ－ＤＡの使用は、Ｗｉｎｄｏｗｓ，ＰＣ－９８０１\nシリーズまたはその互換機のＭＳ－ＤＯＳモードで、\nＣＤドライブを使用可能な状態にする必要があります。",
-   "en": "",
+   "en": "To use CD-DA, you need a working CD drive under Windows, or in MS-DOS mode on a PC-9801 series machine or compatible.",
    "refs": [
     "p00:1210"
    ],
@@ -107,7 +107,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "ただし、このゲームのＢＧＭが収録されたＣＤ、\n「ランス４，１（４，２）ヒントディスク ＣＤ版」\nを持っている必要があります。",
-   "en": "",
+   "en": "You will also need the CD that contains this game's BGM: \"Rance 4.1 (4.2) Hint Disk CD Edition\".",
    "refs": [
     "p00:1291"
    ],
@@ -117,7 +117,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "ＣＤ－ＤＡでＢＧＭを演奏します。",
-   "en": "",
+   "en": "BGM will be played from CD-DA.",
    "refs": [
     "p00:12f7"
    ],
@@ -127,7 +127,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "ただし、このゲームのＢＧＭが収録されたＣＤ、\n「ランス４，１（４，２）ヒントディスク ＣＤ版」\nをお持ちでない方は、無音でのプレイとなります。",
-   "en": "",
+   "en": "However, if you do not own the CD that contains this game's BGM, \"Rance 4.1 (4.2) Hint Disk CD Edition\", you will play without music.",
    "refs": [
     "p00:1313"
    ],
@@ -137,7 +137,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "お持ちの方は、ＣＤをセットして下さい。",
-   "en": "",
+   "en": "If you have it, please insert the CD.",
    "refs": [
     "p00:1384"
    ],
@@ -147,7 +147,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "乙女戦記  Ｖｅｒ １．０２\n\n（Ｃ）ＡＬＩＣＥ ＳＯＦＴ",
-   "en": "",
+   "en": "Otome Senki  Ver 1.02\n\n(C) ALICE SOFT",
    "refs": [
     "p00:13be"
    ],
@@ -157,7 +157,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "        時はＬＰ２年６月 戦乱の嵐吹くＪＡＰＡＮ・・・\n\n     魔神と謳われた武将、信長によってまた一つの国が制圧された。\n\n             その名を「原家」という。",
-   "en": "",
+   "en": "The year is LP 2, the sixth month. JAPAN, swept by the storms of war...\n\nYet another nation has fallen to Nobunaga, the warlord hailed as a demon god.\n\nIts name: the Hara clan.",
    "refs": [
     "p00:1433",
     "p00:275c",
@@ -169,7 +169,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "                     あかね\n                     ＝Ａｋａｎｅ＝\n\n                      年齢：１７歳\n                      職業：足軽\n\n                      趣味：弟妹と遊ぶこと\n                      大切なもの：家族\n\n\n                      「がんばるっ。\n                       信長軍のやつらなんか、とっとと\n                       追い出してやりたいもんねっ！」",
-   "en": "",
+   "en": "Akane\n=Akane=\n\nAge: 17\nOccupation: Ashigaru\n\nHobby: Playing with her little brothers and sisters\nTreasure: Her family\n\n\n\"I'll do my best! I can't wait to kick those Nobunaga soldiers out of here!\"",
    "refs": [
     "p00:14ef",
     "p00:280f",
@@ -181,7 +181,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "                翌月ＬＰ２年７月\n\n         生き残ったわずかな領民達に、触れが出される。",
-   "en": "",
+   "en": "The following month: LP 2, the seventh month.\n\nA proclamation is issued to the few townsfolk who survived.",
    "refs": [
     "p00:1665",
     "p00:2985",
@@ -193,7 +193,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": " 桧垣 真朱\n ＝Ｍａｓｏｈｏ Ｈｉｇａｋｉ＝\n\n  年齢：１８歳\n  職業：侍\n\n  趣味：武術の訓練\n  大切なもの：父の形見の鎧\n\n\n  「父の無念は私が晴らすわ、\n   必ず・・・！」",
-   "en": "",
+   "en": "Higaki Masoho\n=Masoho Higaki=\n\nAge: 18\nOccupation: Samurai\n\nHobby: Martial arts training\nTreasure: The armor her late father left her\n\n\n\"I will avenge my father's bitter end... I swear it...!\"",
    "refs": [
     "p00:16e5",
     "p00:2a05",
@@ -205,7 +205,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "「       罪人の流刑地であるクロウの迷宮に、京姫を幽閉した。\n\n     何者であろうと見事助け出した暁には、お家再興の機会を与えよう。   」",
-   "en": "",
+   "en": "\"Princess Kyo has been imprisoned in the Crow Maze, the place of exile for criminals.\n\nWhoever succeeds in rescuing her, whoever they may be, shall be given the chance to restore their house.\"",
    "refs": [
     "p00:17aa",
     "p00:2aca",
@@ -217,7 +217,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "                     立湧 七緒\n                     ＝Ｎａｎａｏ Ｔａｔｅｗａｋｉ＝\n\n                      年齢：１７歳\n                      職業：侍\n\n                      趣味：写経\n                      大切なもの：集まってくれた仲間たち\n\n\n                      「姫がお気の毒です。\n                       早くお助けしなくては・・・\n                       城下の皆さんが苦しんでいるのも、\n                       見てはいられません」",
-   "en": "",
+   "en": "Tatewaku Nanao\n=Nanao Tatewaku=\n\nAge: 17\nOccupation: Samurai\n\nHobby: Copying sutras\nTreasure: The friends who gathered with her\n\n\n\"I feel so sorry for the princess. We must rescue her quickly... And I cannot bear to watch the people of the castle town suffer.\"",
    "refs": [
     "p00:1848",
     "p00:2b68",
@@ -229,7 +229,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "              人々は、喜び、うかれた。\n\n        原家のお侍なら、すぐに助け出してくれるだろうと。",
-   "en": "",
+   "en": "The people rejoiced, their spirits lifted.\n\nSurely the samurai of the Hara clan would rescue her in no time.",
    "refs": [
     "p00:1a1e",
     "p00:2d20",
@@ -241,7 +241,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": " 一条 春菜\n ＝Ｈａｒｕｎａ Ｉｃｈｉｊｏｈ＝\n\n  年齢：１６歳\n  職業：柔術士\n\n  趣味：洗濯、掃除\n  大切なもの：こころ\n\n\n  「私、柔術の腕はまだまだだけど・・・\n   心は武道家のつもりです。\n   だから、皆さんのお家再興を\n   手伝わせて下さい」",
-   "en": "",
+   "en": "Ichijo Haruna\n=Haruna Ichijo=\n\nAge: 16\nOccupation: Jujutsu Fighter\n\nHobby: Laundry and cleaning\nTreasure: A true heart\n\n\n\"My jujutsu still has a long way to go... but at heart I consider myself a martial artist. So please, let me help you restore your house.\"",
    "refs": [
     "p00:1a9b",
     "p00:2d9d",
@@ -253,7 +253,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "                 しかし誰が？\n\n     先の戦で侍はおろか、無事な男は一人も残っていないというのに。",
-   "en": "",
+   "en": "But who would do it?\n\nAfter the last war, not a single able-bodied man remained, let alone a samurai.",
    "refs": [
     "p00:1b93",
     "p00:2e95",
@@ -265,7 +265,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "                     このは（剣菱 このは）\n                     ＝Ｋｏｎｏｈａ Ｋｅｎｂｉｓｈｉ＝\n\n                      年齢：１９歳\n                      職業：忍者\n\n                      趣味：趣味に興じる暇はない\n                      大切なもの：使命を果たすこと\n\n\n                      「必ず、姫をお助けするわ。\n                       たとえ自分が死んでもね」",
-   "en": "",
+   "en": "Konoha (Kenbishi Konoha)\n=Konoha Kenbishi=\n\nAge: 19\nOccupation: Ninja\n\nHobby: No time for hobbies\nTreasure: Fulfilling her mission\n\n\n\"I will rescue the princess, no matter what. Even if it costs me my life.\"",
    "refs": [
     "p00:1c12",
     "p00:2f14",
@@ -277,7 +277,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "          今、クロウの迷宮の前に、立つ影が９人。\n\n       男が戦えないのならば・・・と、立ち上がった少女達。",
-   "en": "",
+   "en": "Now, nine figures stand before the Crow Maze.\n\nGirls who rose up, saying: if the men cannot fight, then we will...",
    "refs": [
     "p00:1dad",
     "p00:3091",
@@ -289,7 +289,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": " 愛\n ＝Ａｉ＝\n\n  年齢：２２歳\n  職業：クノイチ\n\n  趣味：飲酒\n  大切なもの：秘密\n      （「自分」だと思われる）\n\n\n  「うふふ、わたくしなどがお役に\n   たてれば良いのですが・・・」",
-   "en": "",
+   "en": "Ai\n=Ai=\n\nAge: 22\nOccupation: Kunoichi\n\nHobby: Drinking\nTreasure: A secret\n(Believed to be \"herself\")\n\n\n\"Ufufu, I only hope someone like me can be of some use...\"",
    "refs": [
     "p00:1e38",
     "p00:311c",
@@ -301,7 +301,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "         重い鎧に身をつつみ、歩みすらもおぼつかない。\n\n         刀や槍を握る手も、決して手慣れた様子はない。",
-   "en": "",
+   "en": "Wrapped in heavy armor, they can barely even walk.\n\nThe hands gripping sword and spear are anything but practiced.",
    "refs": [
     "p00:1efc",
     "p00:31e0",
@@ -313,7 +313,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "                     美鈴\n                     ＝Ｍｉｓｕｚｕ＝\n\n                      年齢：１６歳\n                      職業：呪術士\n\n                      趣味：お花を摘むこと・・・？\n                      大切なもの：ふかふかのおふとん\n\n\n                      「あのぉ、師匠が行方不明なんです\n                       ・・・たぶん死んでらっしゃるん\n                       でしょうけど・・・修行しなくちゃ」",
-   "en": "",
+   "en": "Misuzu\n=Misuzu=\n\nAge: 16\nOccupation: Sorcerer\n\nHobby: Picking flowers...?\nTreasure: Her fluffy futon\n\n\n\"Umm, my master has gone missing... They're probably dead, I suppose... but I have to keep up my training.\"",
    "refs": [
     "p00:1f80",
     "p00:3264",
@@ -325,7 +325,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "          しかし彼女達に、脅えや恐怖の色はなかった。\n\n           今、クロウの迷宮へと続く門をくぐる。",
-   "en": "",
+   "en": "Yet there was no trace of fear in them.\n\nNow they pass through the gate that leads into the Crow Maze.",
    "refs": [
     "p00:2115",
     "p00:33f9",
@@ -337,7 +337,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": " ミオ（鈴木 ミオ）\n ＝Ｍｉｏ Ｓｕｚｕｋｉ＝\n\n  年齢：１６歳\n  職業：天志僧\n\n  趣味：座禅\n  大切なもの：天志様の教え\n\n\n  「若輩ながら、拙僧が助太刀いたす」",
-   "en": "",
+   "en": "Mio (Suzuki Mio)\n=Mio Suzuki=\n\nAge: 16\nOccupation: Tenshi Monk\n\nHobby: Zazen meditation\nTreasure: The teachings of Lord Tenshi\n\n\n\"Young though I may be, this humble monk shall lend her aid.\"",
    "refs": [
     "p00:2199",
     "p00:347d",
@@ -349,7 +349,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "             背後で、錠がおろされる・・・\n\n                かまいはしない。",
-   "en": "",
+   "en": "Behind them, the lock falls into place...\n\nNo matter.",
    "refs": [
     "p00:2257",
     "p00:353b",
@@ -361,7 +361,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "                     篭目\n                     ＝Ｋａｇｏｍｅ＝\n\n                      年齢：１０歳（生後４年）\n                      職業：ぬへ\n\n                      趣味：なし\n                      大切なもの：なし\n\n\n                      「・・・・・・」",
-   "en": "",
+   "en": "Kagome\n=Kagome=\n\nAge: 10 (4 years since birth)\nOccupation: Nue\n\nHobby: None\nTreasure: None\n\n\n\"......\"",
    "refs": [
     "p00:22c7",
     "p00:35ab",
@@ -373,7 +373,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "        次にこの門をくぐる時は、姫を助けた時なのだから。",
-   "en": "",
+   "en": "For the next time they pass through this gate will be when they have rescued the princess.",
    "refs": [
     "p00:2413",
     "p00:36cf",
@@ -385,7 +385,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "ロードしました。",
-   "en": "",
+   "en": "Game loaded.",
    "refs": [
     "p01:00e0",
     "p01:0a2b",
@@ -397,7 +397,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "続きから始める",
-   "en": "",
+   "en": "Continue",
    "refs": [
     "p01:017c"
    ],
@@ -407,7 +407,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "最初から始める",
-   "en": "",
+   "en": "New Game",
    "refs": [
     "p01:0189"
    ],
@@ -417,7 +417,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "セーブするバンクを選んでください",
-   "en": "",
+   "en": "Choose a bank to save to.",
    "refs": [
     "p01:01b1"
    ],
@@ -427,7 +427,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "バンク１",
-   "en": "",
+   "en": "Bank 1",
    "refs": [
     "p01:01cc",
     "p01:0357"
@@ -438,7 +438,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "バンク２",
-   "en": "",
+   "en": "Bank 2",
    "refs": [
     "p01:01d8",
     "p01:0363"
@@ -449,7 +449,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "バンク３",
-   "en": "",
+   "en": "Bank 3",
    "refs": [
     "p01:01e4",
     "p01:036f"
@@ -460,7 +460,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "バンク４",
-   "en": "",
+   "en": "Bank 4",
    "refs": [
     "p01:01f0",
     "p01:037b"
@@ -471,7 +471,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "戻る",
-   "en": "",
+   "en": "Back",
    "refs": [
     "p01:01fc",
     "p01:0387",
@@ -496,7 +496,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "このバンクには、以前のプレイのデータが残っています。\nこのまま続けると、そのデータは抹消されてしまいますが、\n本当にいいのですか？",
-   "en": "",
+   "en": "This bank still contains data from a previous game. If you continue, that data will be erased. Are you sure?",
    "refs": [
     "p01:0242"
    ],
@@ -506,7 +506,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "ＮＯ",
-   "en": "",
+   "en": "NO",
    "refs": [
     "p01:029c",
     "p01:0405",
@@ -533,7 +533,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "ＹＥＳ",
-   "en": "",
+   "en": "YES",
    "refs": [
     "p01:02a4",
     "p01:03fb",
@@ -560,7 +560,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "それではバンク",
-   "en": "",
+   "en": "Starting the game in bank ",
    "refs": [
     "p01:02b4"
    ],
@@ -570,7 +570,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "でゲームを始めます。",
-   "en": "",
+   "en": ".",
    "refs": [
     "p01:02c3"
    ],
@@ -580,7 +580,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "ロードするバンクを選んでください",
-   "en": "",
+   "en": "Choose a bank to load.",
    "refs": [
     "p01:033c"
    ],
@@ -590,7 +590,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "そのバンクにデータはありません。",
-   "en": "",
+   "en": "There is no data in that bank.",
    "refs": [
     "p01:03c8"
    ],
@@ -600,7 +600,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "番のバンクでいいですか？",
-   "en": "",
+   "en": " - use this bank?",
    "refs": [
     "p01:03e5"
    ],
@@ -610,7 +610,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "それでは始めます。",
-   "en": "",
+   "en": "Starting the game.",
    "refs": [
     "p01:040e"
    ],
@@ -620,7 +620,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "・・・もう誰も、帰ってくることはない。\n彼女達が迷宮でどうなったのか、知る者はいない。\n知る術も無い。",
-   "en": "",
+   "en": "...None of them would ever return. No one knows what became of them in the maze, nor is there any way to find out.",
    "refs": [
     "p01:04df"
    ],
@@ -630,7 +630,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "         ＧＡＭＥ・ＯＶＥＲ",
-   "en": "",
+   "en": "GAME OVER",
    "refs": [
     "p01:0523"
    ],
@@ -640,7 +640,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "みんなが寝泊まりしている本陣です。\n迷宮を探り始めて",
-   "en": "",
+   "en": "This is HQ, where everyone lodges.\nThis is day ",
    "refs": [
     "p01:0549"
    ],
@@ -650,7 +650,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "日目です。",
-   "en": "",
+   "en": " of exploring the maze.",
    "refs": [
     "p01:0572"
    ],
@@ -660,7 +660,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "外に出る",
-   "en": "",
+   "en": "Go Out",
    "refs": [
     "p01:0585"
    ],
@@ -670,7 +670,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "ステータス確認",
-   "en": "",
+   "en": "Check Status",
    "refs": [
     "p01:0597",
     "p04:00b2"
@@ -681,7 +681,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "メンバーの選択",
-   "en": "",
+   "en": "Select Members",
    "refs": [
     "p01:05a8"
    ],
@@ -691,7 +691,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "時間をすすめる",
-   "en": "",
+   "en": "Pass Time",
    "refs": [
     "p01:05b8"
    ],
@@ -701,7 +701,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "セーブする",
-   "en": "",
+   "en": "Save",
    "refs": [
     "p01:05c5"
    ],
@@ -711,7 +711,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "時が過ぎるのを待ちます。どれくらい待ちますか？",
-   "en": "",
+   "en": "You will wait for time to pass. How long will you wait?",
    "refs": [
     "p01:05d6"
    ],
@@ -721,7 +721,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "１時間",
-   "en": "",
+   "en": "1 Hour",
    "refs": [
     "p01:05f8"
    ],
@@ -731,7 +731,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "２時間",
-   "en": "",
+   "en": "2 Hours",
    "refs": [
     "p01:0602"
    ],
@@ -741,7 +741,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "４時間",
-   "en": "",
+   "en": "4 Hours",
    "refs": [
     "p01:060c"
    ],
@@ -751,7 +751,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "８時間",
-   "en": "",
+   "en": "8 Hours",
    "refs": [
     "p01:0616"
    ],
@@ -761,7 +761,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "やめる",
-   "en": "",
+   "en": "Cancel",
    "refs": [
     "p01:0620",
     "p01:1e35",
@@ -779,7 +779,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "１時間待ちます。",
-   "en": "",
+   "en": "You wait 1 hour.",
    "refs": [
     "p01:0632"
    ],
@@ -789,7 +789,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "２時間待ちます。",
-   "en": "",
+   "en": "You wait 2 hours.",
    "refs": [
     "p01:064b"
    ],
@@ -799,7 +799,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "４時間待ちます。いいですか？",
-   "en": "",
+   "en": "You will wait 4 hours. Is that OK?",
    "refs": [
     "p01:0664"
    ],
@@ -809,7 +809,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "８時間待ちます。いいですか？",
-   "en": "",
+   "en": "You will wait 8 hours. Is that OK?",
    "refs": [
     "p01:0697"
    ],
@@ -819,7 +819,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "あかねが元気になって戻ってきました。",
-   "en": "",
+   "en": "Akane has recovered and is back.",
    "refs": [
     "p01:07e5"
    ],
@@ -829,7 +829,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "真朱が元気になって戻ってきました。",
-   "en": "",
+   "en": "Masoho has recovered and is back.",
    "refs": [
     "p01:0816"
    ],
@@ -839,7 +839,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "七緒が元気になって戻ってきました。",
-   "en": "",
+   "en": "Nanao has recovered and is back.",
    "refs": [
     "p01:0848"
    ],
@@ -849,7 +849,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "春菜が元気になって戻ってきました。",
-   "en": "",
+   "en": "Haruna has recovered and is back.",
    "refs": [
     "p01:087a"
    ],
@@ -859,7 +859,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "美鈴が元気になって戻ってきました。",
-   "en": "",
+   "en": "Misuzu has recovered and is back.",
    "refs": [
     "p01:08ac"
    ],
@@ -869,7 +869,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "このはが元気になって戻ってきました。",
-   "en": "",
+   "en": "Konoha has recovered and is back.",
    "refs": [
     "p01:08de"
    ],
@@ -879,7 +879,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "愛が元気になって戻ってきました。",
-   "en": "",
+   "en": "Ai has recovered and is back.",
    "refs": [
     "p01:090f"
    ],
@@ -889,7 +889,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "ミオが元気になって戻ってきました。",
-   "en": "",
+   "en": "Mio has recovered and is back.",
    "refs": [
     "p01:093f"
    ],
@@ -899,7 +899,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "篭目が元気になって戻ってきました。",
-   "en": "",
+   "en": "Kagome has recovered and is back.",
    "refs": [
     "p01:0971"
    ],
@@ -909,7 +909,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "セーブしました。",
-   "en": "",
+   "en": "Game saved.",
    "refs": [
     "p01:0a3f"
    ],
@@ -919,7 +919,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "本陣を出ます。",
-   "en": "",
+   "en": "Leaving HQ.",
    "refs": [
     "p01:0a4d"
    ],
@@ -929,7 +929,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "全員のステータス",
-   "en": "",
+   "en": "Party Status",
    "refs": [
     "p01:0a7a"
    ],
@@ -939,7 +939,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "パーティ編成",
-   "en": "",
+   "en": "Form Party",
    "refs": [
     "p01:0a8c"
    ],
@@ -949,7 +949,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "あかね 足 Ｌ／経：",
-   "en": "",
+   "en": "Akane  Ash L/XP:",
    "refs": [
     "p01:0ac0",
     "p01:0b01",
@@ -968,7 +968,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "／",
-   "en": "",
+   "en": "/",
    "refs": [
     "p01:0ad4",
     "p01:0b15",
@@ -1095,7 +1095,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": " 疲：",
-   "en": "",
+   "en": " Ftg:",
    "refs": [
     "p01:0adb",
     "p01:0b1c",
@@ -1194,7 +1194,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": " 状態：入院×",
-   "en": "",
+   "en": " Status: Hospitalized",
    "refs": [
     "p01:0ae5",
     "p01:0c22",
@@ -1221,7 +1221,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": " 状態：不明×",
-   "en": "",
+   "en": " Status: Missing",
    "refs": [
     "p01:0b26",
     "p01:0c65",
@@ -1248,7 +1248,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": " 状態：疲労△",
-   "en": "",
+   "en": " Status: Tired",
    "refs": [
     "p01:0b67",
     "p01:0ca8",
@@ -1266,7 +1266,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": " 状態：普通○",
-   "en": "",
+   "en": " Status: Normal",
    "refs": [
     "p01:0ba8",
     "p01:0ceb",
@@ -1284,7 +1284,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": " 状態：全快◎",
-   "en": "",
+   "en": " Status: Full Health",
    "refs": [
     "p01:0be1",
     "p01:0d26",
@@ -1311,7 +1311,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "真朱  侍 Ｌ／経：",
-   "en": "",
+   "en": "Masoho Sam L/XP:",
    "refs": [
     "p01:0bfb",
     "p01:0c3e",
@@ -1330,7 +1330,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "七緒  侍 Ｌ／経：",
-   "en": "",
+   "en": "Nanao  Sam L/XP:",
    "refs": [
     "p01:0d40",
     "p01:0d83",
@@ -1349,7 +1349,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "春菜  柔 Ｌ／経：",
-   "en": "",
+   "en": "Haruna Juj L/XP:",
    "refs": [
     "p01:0e85",
     "p01:0ec8",
@@ -1368,7 +1368,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "このは 忍 Ｌ／経：",
-   "en": "",
+   "en": "Konoha Nin L/XP:",
    "refs": [
     "p01:0fca",
     "p01:100b",
@@ -1387,7 +1387,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "愛   く Ｌ／経：",
-   "en": "",
+   "en": "Ai     Kun L/XP:",
    "refs": [
     "p01:1105",
     "p01:1146",
@@ -1406,7 +1406,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "美鈴  呪 Ｌ／経：",
-   "en": "",
+   "en": "Misuzu Sor L/XP:",
    "refs": [
     "p01:1240",
     "p01:1283",
@@ -1425,7 +1425,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "ミオ  天 Ｌ／経：",
-   "en": "",
+   "en": "Mio    Mon L/XP:",
    "refs": [
     "p01:1385",
     "p01:13c8",
@@ -1444,7 +1444,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "篭目  ぬ Ｌ／経：",
-   "en": "",
+   "en": "Kagome Nue L/XP:",
    "refs": [
     "p01:14ca",
     "p01:150c",
@@ -1463,7 +1463,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "現在のパーティは解散されます。",
-   "en": "",
+   "en": "The current party will be disbanded.",
    "refs": [
     "p01:17bd"
    ],
@@ -1473,7 +1473,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "戦闘不能の者は養生所に送られます。",
-   "en": "",
+   "en": "Anyone unable to fight will be sent to the clinic.",
    "refs": [
     "p01:17e4",
     "p01:1813",
@@ -1485,7 +1485,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "いいですか？",
-   "en": "",
+   "en": "Is that OK?",
    "refs": [
     "p01:185d"
    ],
@@ -1495,7 +1495,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "パーティを編成します。",
-   "en": "",
+   "en": "Forming a party.",
    "refs": [
     "p01:187b"
    ],
@@ -1505,7 +1505,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "街に戻ります。",
-   "en": "",
+   "en": "Returning to town.",
    "refs": [
     "p01:1966"
    ],
@@ -1515,7 +1515,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "どこへ向かいますか？",
-   "en": "",
+   "en": "Where will you go?",
    "refs": [
     "p01:19e1"
    ],
@@ -1525,7 +1525,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "本陣",
-   "en": "",
+   "en": "HQ",
    "refs": [
     "p01:19f1"
    ],
@@ -1535,7 +1535,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "安藤に会う",
-   "en": "",
+   "en": "See Ando",
    "refs": [
     "p01:19f9"
    ],
@@ -1545,7 +1545,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "養生所",
-   "en": "",
+   "en": "Clinic",
    "refs": [
     "p01:1a05"
    ],
@@ -1555,7 +1555,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "キャンプを張る",
-   "en": "",
+   "en": "Make Camp",
    "refs": [
     "p01:1a0f"
    ],
@@ -1565,7 +1565,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "迷宮",
-   "en": "",
+   "en": "Maze",
    "refs": [
     "p01:1a1f"
    ],
@@ -1575,7 +1575,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "・",
-   "en": "",
+   "en": ".",
    "refs": [
     "p01:1a32",
     "p01:1a38",
@@ -1617,7 +1617,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "門番の男が近寄ってきた。",
-   "en": "",
+   "en": "The gatekeeper came over.",
    "refs": [
     "p01:1a44"
    ],
@@ -1627,7 +1627,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "門番「頑張ってるみてぇじゃねぇか・・・しかし、\n   この下の店・・・とんでもなく、モノが高ぇだろ。\n   薬の一つも満足に買えねぇよなぁ。」",
-   "en": "",
+   "en": "Gatekeeper: \"Lookin' like you're workin' hard... But that shop down below... everything's crazy expensive, ain't it? Can't even afford a decent bottle of medicine, huh.\"",
    "refs": [
     "p01:1a57"
    ],
@@ -1657,7 +1657,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "無視する",
-   "en": "",
+   "en": "Ignore",
    "refs": [
     "p01:1b0b"
    ],
@@ -1667,7 +1667,7 @@
    "id": "u00040",
    "kind": "menu",
    "jp": "応じる",
-   "en": "",
+   "en": "Respond",
    "refs": [
     "p01:1b15"
    ],
@@ -1697,7 +1697,7 @@
    "id": "u00041",
    "kind": "menu",
    "jp": "あかね",
-   "en": "",
+   "en": "Akane",
    "refs": [
     "p01:1ba9",
     "p01:1c4e",
@@ -1750,7 +1750,7 @@
    "id": "u00042",
    "kind": "menu",
    "jp": "桧垣 真朱",
-   "en": "",
+   "en": "H. Masoho",
    "refs": [
     "p01:1bb8",
     "p01:1c5d",
@@ -1803,7 +1803,7 @@
    "id": "u00043",
    "kind": "menu",
    "jp": "立湧 七緒",
-   "en": "",
+   "en": "T. Nanao",
    "refs": [
     "p01:1bcd",
     "p01:1c72",
@@ -1856,7 +1856,7 @@
    "id": "u00044",
    "kind": "menu",
    "jp": "一条 春菜",
-   "en": "",
+   "en": "I. Haruna",
    "refs": [
     "p01:1be2",
     "p01:1c87",
@@ -1909,7 +1909,7 @@
    "id": "u00045",
    "kind": "menu",
    "jp": "美鈴",
-   "en": "",
+   "en": "Misuzu",
    "refs": [
     "p01:1bf7",
     "p01:1c9c",
@@ -1962,7 +1962,7 @@
    "id": "u00046",
    "kind": "menu",
    "jp": "剣菱 このは",
-   "en": "",
+   "en": "K. Konoha",
    "refs": [
     "p01:1c07",
     "p01:1cac",
@@ -2015,7 +2015,7 @@
    "id": "u00047",
    "kind": "menu",
    "jp": "愛",
-   "en": "",
+   "en": "Ai",
    "refs": [
     "p01:1c1b",
     "p01:1cc0",
@@ -2068,7 +2068,7 @@
    "id": "u00048",
    "kind": "menu",
    "jp": "鈴木 ミオ",
-   "en": "",
+   "en": "Suzuki Mio",
    "refs": [
     "p01:1c29",
     "p01:1cce",
@@ -2121,7 +2121,7 @@
    "id": "u00049",
    "kind": "menu",
    "jp": "篭目",
-   "en": "",
+   "en": "Kagome",
    "refs": [
     "p01:1c3e",
     "p01:1ce3",
@@ -2411,7 +2411,7 @@
    "id": "u00050",
    "kind": "menu",
    "jp": "出る",
-   "en": "",
+   "en": "Leave",
    "refs": [
     "p01:24f1",
     "p01:2c3b"
@@ -3077,7 +3077,7 @@
    "id": "n00001",
    "kind": "name",
    "jp": "あかね",
-   "en": "",
+   "en": "Akane",
    "refs": [
     "p01:1645",
     "p01:3478",
@@ -3114,7 +3114,7 @@
    "id": "n00002",
    "kind": "name",
    "jp": "足軽",
-   "en": "",
+   "en": "Ashigaru",
    "refs": [
     "p01:1652",
     "p01:3485",
@@ -3127,7 +3127,7 @@
    "id": "n00003",
    "kind": "name",
    "jp": "桧垣　真朱",
-   "en": "",
+   "en": "Higaki Masoho",
    "refs": [
     "p01:166c",
     "p01:349f",
@@ -3164,7 +3164,7 @@
    "id": "n00004",
    "kind": "name",
    "jp": "侍",
-   "en": "",
+   "en": "Samurai",
    "refs": [
     "p01:167d",
     "p01:16a6",
@@ -3181,7 +3181,7 @@
    "id": "n00005",
    "kind": "name",
    "jp": "立湧　七緒",
-   "en": "",
+   "en": "Tatewaku Nanao",
    "refs": [
     "p01:1695",
     "p01:34c8",
@@ -3218,7 +3218,7 @@
    "id": "n00006",
    "kind": "name",
    "jp": "一条　春菜",
-   "en": "",
+   "en": "Ichijo Haruna",
    "refs": [
     "p01:16be",
     "p01:34f1",
@@ -3255,7 +3255,7 @@
    "id": "n00007",
    "kind": "name",
    "jp": "柔術士",
-   "en": "",
+   "en": "Jujutsu Fighter",
    "refs": [
     "p01:16cf",
     "p01:3502",
@@ -3268,7 +3268,7 @@
    "id": "n00008",
    "kind": "name",
    "jp": "美鈴",
-   "en": "",
+   "en": "Misuzu",
    "refs": [
     "p01:16eb",
     "p01:351e",
@@ -3305,7 +3305,7 @@
    "id": "n00009",
    "kind": "name",
    "jp": "呪術士",
-   "en": "",
+   "en": "Sorcerer",
    "refs": [
     "p01:16f6",
     "p01:3529",
@@ -3318,7 +3318,7 @@
    "id": "n00010",
    "kind": "name",
    "jp": "剣菱　このは",
-   "en": "",
+   "en": "Kenbishi Konoha",
    "refs": [
     "p01:1712",
     "p01:3545",
@@ -3355,7 +3355,7 @@
    "id": "n00011",
    "kind": "name",
    "jp": "忍者",
-   "en": "",
+   "en": "Ninja",
    "refs": [
     "p01:1725",
     "p01:3558",
@@ -3369,7 +3369,7 @@
    "id": "n00012",
    "kind": "name",
    "jp": "愛",
-   "en": "",
+   "en": "Ai",
    "refs": [
     "p01:173f",
     "p01:3572",
@@ -3406,7 +3406,7 @@
    "id": "n00013",
    "kind": "name",
    "jp": "クノイチ",
-   "en": "",
+   "en": "Kunoichi",
    "refs": [
     "p01:1748",
     "p01:357b",
@@ -3419,7 +3419,7 @@
    "id": "n00014",
    "kind": "name",
    "jp": "鈴木　ミオ",
-   "en": "",
+   "en": "Suzuki Mio",
    "refs": [
     "p01:1766",
     "p01:3599",
@@ -3456,7 +3456,7 @@
    "id": "n00015",
    "kind": "name",
    "jp": "天志僧",
-   "en": "",
+   "en": "Tenshi Monk",
    "refs": [
     "p01:1777",
     "p01:35aa",
@@ -3469,7 +3469,7 @@
    "id": "n00016",
    "kind": "name",
    "jp": "篭目",
-   "en": "",
+   "en": "Kagome",
    "refs": [
     "p01:1793",
     "p01:35c6",
@@ -3506,7 +3506,7 @@
    "id": "n00017",
    "kind": "name",
    "jp": "ぬへ",
-   "en": "",
+   "en": "Nue",
    "refs": [
     "p01:179e",
     "p01:35d1",
@@ -3650,7 +3650,7 @@
    "id": "u00051",
    "kind": "menu",
    "jp": "開けない",
-   "en": "",
+   "en": "Leave It",
    "refs": [
     "p02:2f70"
    ],
@@ -3660,7 +3660,7 @@
    "id": "u00052",
    "kind": "menu",
    "jp": "開ける",
-   "en": "",
+   "en": "Open",
    "refs": [
     "p02:2f79"
    ],
@@ -4172,7 +4172,7 @@
    "id": "u00053",
    "kind": "menu",
    "jp": "地下１階",
-   "en": "",
+   "en": "B1F",
    "refs": [
     "p02:4132",
     "p02:41e2"
@@ -4183,7 +4183,7 @@
    "id": "u00054",
    "kind": "menu",
    "jp": "地下２階",
-   "en": "",
+   "en": "B2F",
    "refs": [
     "p02:4146"
    ],
@@ -4193,7 +4193,7 @@
    "id": "u00055",
    "kind": "menu",
    "jp": "地下３階",
-   "en": "",
+   "en": "B3F",
    "refs": [
     "p02:415a"
    ],
@@ -4203,7 +4203,7 @@
    "id": "u00056",
    "kind": "menu",
    "jp": "地下４階",
-   "en": "",
+   "en": "B4F",
    "refs": [
     "p02:416e"
    ],
@@ -4213,7 +4213,7 @@
    "id": "u00057",
    "kind": "menu",
    "jp": "地下５階",
-   "en": "",
+   "en": "B5F",
    "refs": [
     "p02:4182"
    ],
@@ -4223,7 +4223,7 @@
    "id": "u00058",
    "kind": "menu",
    "jp": "使わない",
-   "en": "",
+   "en": "Skip",
    "refs": [
     "p02:418e",
     "p02:4254"
@@ -4234,7 +4234,7 @@
    "id": "u00059",
    "kind": "menu",
    "jp": "地下６階",
-   "en": "",
+   "en": "B6F",
    "refs": [
     "p02:41f6"
    ],
@@ -4244,7 +4244,7 @@
    "id": "u00060",
    "kind": "menu",
    "jp": "地下７階",
-   "en": "",
+   "en": "B7F",
    "refs": [
     "p02:420a"
    ],
@@ -4254,7 +4254,7 @@
    "id": "u00061",
    "kind": "menu",
    "jp": "地下８階",
-   "en": "",
+   "en": "B8F",
    "refs": [
     "p02:421e"
    ],
@@ -4264,7 +4264,7 @@
    "id": "u00062",
    "kind": "menu",
    "jp": "地下９階",
-   "en": "",
+   "en": "B9F",
    "refs": [
     "p02:4232"
    ],
@@ -4274,7 +4274,7 @@
    "id": "u00063",
    "kind": "menu",
    "jp": "地下１０階",
-   "en": "",
+   "en": "B10F",
    "refs": [
     "p02:4246"
    ],
@@ -4575,7 +4575,7 @@
    "id": "u00064",
    "kind": "menu",
    "jp": "キャンプ",
-   "en": "",
+   "en": "Camp",
    "refs": [
     "p02:53b1"
    ],
@@ -4585,7 +4585,7 @@
    "id": "u00065",
    "kind": "menu",
    "jp": "システム",
-   "en": "",
+   "en": "System",
    "refs": [
     "p02:53bd"
    ],
@@ -4595,7 +4595,7 @@
    "id": "u00066",
    "kind": "menu",
    "jp": "セーブ",
-   "en": "",
+   "en": "Save",
    "refs": [
     "p02:53cd"
    ],
@@ -4605,7 +4605,7 @@
    "id": "u00067",
    "kind": "menu",
    "jp": "バーウェイト",
-   "en": "",
+   "en": "Bar Wait",
    "refs": [
     "p02:53d6"
    ],
@@ -4625,7 +4625,7 @@
    "id": "u00068",
    "kind": "menu",
    "jp": "とてもはやい",
-   "en": "",
+   "en": "Very Fast",
    "refs": [
     "p02:5403"
    ],
@@ -4635,7 +4635,7 @@
    "id": "u00069",
    "kind": "menu",
    "jp": "はやい",
-   "en": "",
+   "en": "Fast",
    "refs": [
     "p02:540d"
    ],
@@ -4645,7 +4645,7 @@
    "id": "u00070",
    "kind": "menu",
    "jp": "普通",
-   "en": "",
+   "en": "Normal",
    "refs": [
     "p02:5414"
    ],
@@ -5239,7 +5239,7 @@
    "id": "u00071",
    "kind": "menu",
    "jp": "攻撃する",
-   "en": "",
+   "en": "Attack",
    "refs": [
     "p03:1628"
    ],
@@ -5249,7 +5249,7 @@
    "id": "u00072",
    "kind": "menu",
    "jp": "防御",
-   "en": "",
+   "en": "Defend",
    "refs": [
     "p03:1632"
    ],
@@ -5259,7 +5259,7 @@
    "id": "u00073",
    "kind": "menu",
    "jp": "槍術",
-   "en": "",
+   "en": "Spear",
    "refs": [
     "p03:1672"
    ],
@@ -5269,7 +5269,7 @@
    "id": "u00074",
    "kind": "menu",
    "jp": "剣技",
-   "en": "",
+   "en": "Sword",
    "refs": [
     "p03:16ad",
     "p03:16bd",
@@ -5282,7 +5282,7 @@
    "id": "u00075",
    "kind": "menu",
    "jp": "鈴",
-   "en": "",
+   "en": "Bell",
    "refs": [
     "p03:1731"
    ],
@@ -5292,7 +5292,7 @@
    "id": "u00076",
    "kind": "menu",
    "jp": "巻き物",
-   "en": "",
+   "en": "Scroll",
    "refs": [
     "p03:1744"
    ],
@@ -5302,7 +5302,7 @@
    "id": "u00077",
    "kind": "menu",
    "jp": "お祈り",
-   "en": "",
+   "en": "Pray",
    "refs": [
     "p03:1755"
    ],
@@ -5312,7 +5312,7 @@
    "id": "u00078",
    "kind": "menu",
    "jp": "回復アイテム",
-   "en": "",
+   "en": "Heal Item",
    "refs": [
     "p03:1781",
     "p04:0140"
@@ -5323,7 +5323,7 @@
    "id": "u00079",
    "kind": "menu",
    "jp": "逃げる",
-   "en": "",
+   "en": "Run",
    "refs": [
     "p03:1791"
    ],
@@ -5333,7 +5333,7 @@
    "id": "u00080",
    "kind": "menu",
    "jp": "ステータスを見る",
-   "en": "",
+   "en": "View Status",
    "refs": [
     "p03:179a"
    ],
@@ -5395,7 +5395,7 @@
    "id": "u00081",
    "kind": "menu",
    "jp": "ＬＶ１",
-   "en": "",
+   "en": "LV1",
    "refs": [
     "p03:1a26"
    ],
@@ -5405,7 +5405,7 @@
    "id": "u00082",
    "kind": "menu",
    "jp": "ＬＶ２",
-   "en": "",
+   "en": "LV2",
    "refs": [
     "p03:1a38"
    ],
@@ -5415,7 +5415,7 @@
    "id": "u00083",
    "kind": "menu",
    "jp": "ＬＶ３",
-   "en": "",
+   "en": "LV3",
    "refs": [
     "p03:1a4a"
    ],
@@ -5477,7 +5477,7 @@
    "id": "u00084",
    "kind": "menu",
    "jp": "火",
-   "en": "",
+   "en": "Fire",
    "refs": [
     "p03:1b0f"
    ],
@@ -5487,7 +5487,7 @@
    "id": "u00085",
    "kind": "menu",
    "jp": "氷",
-   "en": "",
+   "en": "Ice",
    "refs": [
     "p03:1b15"
    ],
@@ -5497,7 +5497,7 @@
    "id": "u00086",
    "kind": "menu",
    "jp": "雷",
-   "en": "",
+   "en": "Thunder",
    "refs": [
     "p03:1b1b"
    ],
@@ -5507,7 +5507,7 @@
    "id": "u00087",
    "kind": "menu",
    "jp": "光",
-   "en": "",
+   "en": "Light",
    "refs": [
     "p03:1b21"
    ],
@@ -5517,7 +5517,7 @@
    "id": "u00088",
    "kind": "menu",
    "jp": "闇",
-   "en": "",
+   "en": "Dark",
    "refs": [
     "p03:1b27"
    ],
@@ -5672,7 +5672,7 @@
    "id": "u00089",
    "kind": "menu",
    "jp": "ふにゃふにゃ",
-   "en": "",
+   "en": "Floppy",
    "refs": [
     "p03:2107"
    ],
@@ -5682,7 +5682,7 @@
    "id": "u00090",
    "kind": "menu",
    "jp": "もりもり",
-   "en": "",
+   "en": "Beefy",
    "refs": [
     "p03:2119",
     "p04:183b"
@@ -5693,7 +5693,7 @@
    "id": "u00091",
    "kind": "menu",
    "jp": "おろおろ",
-   "en": "",
+   "en": "Fluster",
    "refs": [
     "p03:2129"
    ],
@@ -5703,7 +5703,7 @@
    "id": "u00092",
    "kind": "menu",
    "jp": "かちかち",
-   "en": "",
+   "en": "Harden",
    "refs": [
     "p03:2139"
    ],
@@ -5713,7 +5713,7 @@
    "id": "u00093",
    "kind": "menu",
    "jp": "もたもた",
-   "en": "",
+   "en": "Dawdle",
    "refs": [
     "p03:2149"
    ],
@@ -5878,7 +5878,7 @@
    "id": "u00094",
    "kind": "menu",
    "jp": "世色癌１  ：",
-   "en": "",
+   "en": "Seshokugan 1:",
    "refs": [
     "p03:28b9",
     "p04:0441"
@@ -5910,7 +5910,7 @@
    "id": "u00095",
    "kind": "menu",
    "jp": "世色癌２  ：",
-   "en": "",
+   "en": "Seshokugan 2:",
    "refs": [
     "p03:28ec",
     "p04:0474"
@@ -5921,7 +5921,7 @@
    "id": "u00096",
    "kind": "menu",
    "jp": "世色癌３  ：",
-   "en": "",
+   "en": "Seshokugan 3:",
    "refs": [
     "p03:291f",
     "p04:04a7"
@@ -5932,7 +5932,7 @@
    "id": "u00097",
    "kind": "menu",
    "jp": "まんが肉  ：",
-   "en": "",
+   "en": "Manga Meat  :",
    "refs": [
     "p03:2952",
     "p04:04da"
@@ -5943,7 +5943,7 @@
    "id": "u00098",
    "kind": "menu",
    "jp": "竜角惨   ：",
-   "en": "",
+   "en": "Ryukakuzan  :",
    "refs": [
     "p03:2983",
     "p04:050b"
@@ -6642,7 +6642,7 @@
    "id": "n00018",
    "kind": "name",
    "jp": "素手",
-   "en": "",
+   "en": "Bare Hands",
    "refs": [
     "p03:5688"
    ],
@@ -6652,7 +6652,7 @@
    "id": "n00019",
    "kind": "name",
    "jp": "ヤリ",
-   "en": "",
+   "en": "Spear",
    "refs": [
     "p03:569e"
    ],
@@ -6662,7 +6662,7 @@
    "id": "n00020",
    "kind": "name",
    "jp": "カタナ",
-   "en": "",
+   "en": "Katana",
    "refs": [
     "p03:56c4"
    ],
@@ -6672,7 +6672,7 @@
    "id": "n00021",
    "kind": "name",
    "jp": "くない",
-   "en": "",
+   "en": "Kunai",
    "refs": [
     "p03:56ec"
    ],
@@ -6682,7 +6682,7 @@
    "id": "n00022",
    "kind": "name",
    "jp": "杖",
-   "en": "",
+   "en": "Staff",
    "refs": [
     "p03:5714"
    ],
@@ -6692,7 +6692,7 @@
    "id": "n00023",
    "kind": "name",
    "jp": "銅の鈴",
-   "en": "",
+   "en": "Copper Bell",
    "refs": [
     "p03:5738"
    ],
@@ -6702,7 +6702,7 @@
    "id": "n00024",
    "kind": "name",
    "jp": "日本刀　丙",
-   "en": "",
+   "en": "Katana, Grade C",
    "refs": [
     "p03:5760"
    ],
@@ -6712,7 +6712,7 @@
    "id": "n00025",
    "kind": "name",
    "jp": "なぎなた",
-   "en": "",
+   "en": "Naginata",
    "refs": [
     "p03:578c"
    ],
@@ -6722,7 +6722,7 @@
    "id": "n00026",
    "kind": "name",
    "jp": "風の忍刀",
-   "en": "",
+   "en": "Wind Ninja Blade",
    "refs": [
     "p03:57b6"
    ],
@@ -6732,7 +6732,7 @@
    "id": "n00027",
    "kind": "name",
    "jp": "イナズマの剣",
-   "en": "",
+   "en": "Lightning Sword",
    "refs": [
     "p03:57e0"
    ],
@@ -6742,7 +6742,7 @@
    "id": "n00028",
    "kind": "name",
    "jp": "日本刀　乙",
-   "en": "",
+   "en": "Katana, Grade B",
    "refs": [
     "p03:580e"
    ],
@@ -6752,7 +6752,7 @@
    "id": "n00029",
    "kind": "name",
    "jp": "氷の鈴",
-   "en": "",
+   "en": "Ice Bell",
    "refs": [
     "p03:583a"
    ],
@@ -6762,7 +6762,7 @@
    "id": "n00030",
    "kind": "name",
    "jp": "知恵の杖",
-   "en": "",
+   "en": "Staff of Wisdom",
    "refs": [
     "p03:5862"
    ],
@@ -6772,7 +6772,7 @@
    "id": "n00031",
    "kind": "name",
    "jp": "力の杖",
-   "en": "",
+   "en": "Staff of Power",
    "refs": [
     "p03:588c"
    ],
@@ -6782,7 +6782,7 @@
    "id": "n00032",
    "kind": "name",
    "jp": "柴田刀",
-   "en": "",
+   "en": "Shibata Blade",
    "refs": [
     "p03:58b4"
    ],
@@ -6792,7 +6792,7 @@
    "id": "n00033",
    "kind": "name",
    "jp": "くじら殺し",
-   "en": "",
+   "en": "Whale Slayer",
    "refs": [
     "p03:58dc"
    ],
@@ -6802,7 +6802,7 @@
    "id": "n00034",
    "kind": "name",
    "jp": "ガラスの鈴",
-   "en": "",
+   "en": "Glass Bell",
    "refs": [
     "p03:5908"
    ],
@@ -6812,7 +6812,7 @@
    "id": "n00035",
    "kind": "name",
    "jp": "くまさんの爪",
-   "en": "",
+   "en": "Teddy Bear Claw",
    "refs": [
     "p03:5934"
    ],
@@ -6822,7 +6822,7 @@
    "id": "n00036",
    "kind": "name",
    "jp": "ドラゴンスレイヤー",
-   "en": "",
+   "en": "Dragon Slayer",
    "refs": [
     "p03:5962"
    ],
@@ -6832,7 +6832,7 @@
    "id": "n00037",
    "kind": "name",
    "jp": "のろわれたヤリ",
-   "en": "",
+   "en": "Cursed Spear",
    "refs": [
     "p03:5996"
    ],
@@ -6842,7 +6842,7 @@
    "id": "n00038",
    "kind": "name",
    "jp": "鉛の鈴",
-   "en": "",
+   "en": "Lead Bell",
    "refs": [
     "p03:59c6"
    ],
@@ -6852,7 +6852,7 @@
    "id": "n00039",
    "kind": "name",
    "jp": "ムチ",
-   "en": "",
+   "en": "Whip",
    "refs": [
     "p03:59ee"
    ],
@@ -6862,7 +6862,7 @@
    "id": "n00040",
    "kind": "name",
    "jp": "青龍の刀",
-   "en": "",
+   "en": "Seiryu Blade",
    "refs": [
     "p03:5a14"
    ],
@@ -6872,7 +6872,7 @@
    "id": "n00041",
    "kind": "name",
    "jp": "玄武の刀",
-   "en": "",
+   "en": "Genbu Blade",
    "refs": [
     "p03:5a3e"
    ],
@@ -6882,7 +6882,7 @@
    "id": "n00042",
    "kind": "name",
    "jp": "白虎の刀",
-   "en": "",
+   "en": "Byakko Blade",
    "refs": [
     "p03:5a68"
    ],
@@ -6892,7 +6892,7 @@
    "id": "n00043",
    "kind": "name",
    "jp": "朱雀の刀",
-   "en": "",
+   "en": "Suzaku Blade",
    "refs": [
     "p03:5a92"
    ],
@@ -6902,7 +6902,7 @@
    "id": "n00044",
    "kind": "name",
    "jp": "蔵人知槍",
-   "en": "",
+   "en": "Kurodo Spear",
    "refs": [
     "p03:5abc"
    ],
@@ -6912,7 +6912,7 @@
    "id": "n00045",
    "kind": "name",
    "jp": "ロングソード３",
-   "en": "",
+   "en": "Long Sword 3",
    "refs": [
     "p03:5ae6"
    ],
@@ -6922,7 +6922,7 @@
    "id": "n00046",
    "kind": "name",
    "jp": "白金の鈴",
-   "en": "",
+   "en": "Platinum Bell",
    "refs": [
     "p03:5b16"
    ],
@@ -6932,7 +6932,7 @@
    "id": "n00047",
    "kind": "name",
    "jp": "村正",
-   "en": "",
+   "en": "Muramasa",
    "refs": [
     "p03:5b40"
    ],
@@ -6942,7 +6942,7 @@
    "id": "n00048",
    "kind": "name",
    "jp": "天志僧の杖",
-   "en": "",
+   "en": "Tenshi Staff",
    "refs": [
     "p03:5b66"
    ],
@@ -6952,7 +6952,7 @@
    "id": "n00049",
    "kind": "name",
    "jp": "忍者ブレード！",
-   "en": "",
+   "en": "Ninja Blade!",
    "refs": [
     "p03:5b92"
    ],
@@ -6962,7 +6962,7 @@
    "id": "n00050",
    "kind": "name",
    "jp": "日本刀　甲",
-   "en": "",
+   "en": "Katana, Grade A",
    "refs": [
     "p03:5bc2"
    ],
@@ -6972,7 +6972,7 @@
    "id": "n00051",
    "kind": "name",
    "jp": "一鉄",
-   "en": "",
+   "en": "Ittetsu",
    "refs": [
     "p03:5bee"
    ],
@@ -6982,7 +6982,7 @@
    "id": "n00052",
    "kind": "name",
    "jp": "合金の鈴",
-   "en": "",
+   "en": "Alloy Bell",
    "refs": [
     "p03:5c14"
    ],
@@ -6992,7 +6992,7 @@
    "id": "n00053",
    "kind": "name",
    "jp": "さびた剣",
-   "en": "",
+   "en": "Rusty Sword",
    "refs": [
     "p03:5c3e"
    ],
@@ -7002,7 +7002,7 @@
    "id": "n00054",
    "kind": "name",
    "jp": "トライデン",
-   "en": "",
+   "en": "Trident",
    "refs": [
     "p03:5c68"
    ],
@@ -7012,7 +7012,7 @@
    "id": "n00055",
    "kind": "name",
    "jp": "ハルバー",
-   "en": "",
+   "en": "Halberd",
    "refs": [
     "p03:5c94"
    ],
@@ -7022,7 +7022,7 @@
    "id": "n00056",
    "kind": "name",
    "jp": "紫電改",
-   "en": "",
+   "en": "Shiden Kai",
    "refs": [
     "p03:5cbe"
    ],
@@ -7032,7 +7032,7 @@
    "id": "n00057",
    "kind": "name",
    "jp": "すごいタケヤリ",
-   "en": "",
+   "en": "Awesome Takeyari",
    "refs": [
     "p03:5ce6"
    ],
@@ -7042,7 +7042,7 @@
    "id": "n00058",
    "kind": "name",
    "jp": "貞治",
-   "en": "",
+   "en": "Sadaharu",
    "refs": [
     "p03:5d16"
    ],
@@ -7052,7 +7052,7 @@
    "id": "n00059",
    "kind": "name",
    "jp": "ロイヤルアサシン",
-   "en": "",
+   "en": "Royal Assassin",
    "refs": [
     "p03:5d3c"
    ],
@@ -7062,7 +7062,7 @@
    "id": "n00060",
    "kind": "name",
    "jp": "女王様のムチ",
-   "en": "",
+   "en": "Queen's Whip",
    "refs": [
     "p03:5d6e"
    ],
@@ -7072,7 +7072,7 @@
    "id": "n00061",
    "kind": "name",
    "jp": "超合金の鈴",
-   "en": "",
+   "en": "Super Alloy Bell",
    "refs": [
     "p03:5d9c"
    ],
@@ -7082,7 +7082,7 @@
    "id": "n00062",
    "kind": "name",
    "jp": "アタナイフ",
-   "en": "",
+   "en": "Athame Knife",
    "refs": [
     "p03:5dc8"
    ],
@@ -7092,7 +7092,7 @@
    "id": "n00063",
    "kind": "name",
    "jp": "乙女の小太刀",
-   "en": "",
+   "en": "Maiden's Kodachi",
    "refs": [
     "p03:5df5"
    ],
@@ -7102,7 +7102,7 @@
    "id": "n00064",
    "kind": "name",
    "jp": "なしＢ",
-   "en": "",
+   "en": "None B",
    "refs": [
     "p03:5e29"
    ],
@@ -7112,7 +7112,7 @@
    "id": "n00065",
    "kind": "name",
    "jp": "なしＣ",
-   "en": "",
+   "en": "None C",
    "refs": [
     "p03:5e51"
    ],
@@ -7122,7 +7122,7 @@
    "id": "n00066",
    "kind": "name",
    "jp": "なしＤ",
-   "en": "",
+   "en": "None D",
    "refs": [
     "p03:5e79"
    ],
@@ -7132,7 +7132,7 @@
    "id": "n00067",
    "kind": "name",
    "jp": "なしＥ",
-   "en": "",
+   "en": "None E",
    "refs": [
     "p03:5ea1"
    ],
@@ -7142,7 +7142,7 @@
    "id": "n00068",
    "kind": "name",
    "jp": "なしＦ",
-   "en": "",
+   "en": "None F",
    "refs": [
     "p03:5ec9"
    ],
@@ -7152,7 +7152,7 @@
    "id": "n00069",
    "kind": "name",
    "jp": "武器Ｎｏ．５１",
-   "en": "",
+   "en": "Weapon No.51",
    "refs": [
     "p03:5ef1"
    ],
@@ -7162,7 +7162,7 @@
    "id": "n00070",
    "kind": "name",
    "jp": "武器Ｎｏ．５２",
-   "en": "",
+   "en": "Weapon No.52",
    "refs": [
     "p03:5f21"
    ],
@@ -7172,7 +7172,7 @@
    "id": "n00071",
    "kind": "name",
    "jp": "武器Ｎｏ．５３",
-   "en": "",
+   "en": "Weapon No.53",
    "refs": [
     "p03:5f51"
    ],
@@ -7182,7 +7182,7 @@
    "id": "n00072",
    "kind": "name",
    "jp": "武器Ｎｏ．５４",
-   "en": "",
+   "en": "Weapon No.54",
    "refs": [
     "p03:5f81"
    ],
@@ -7192,7 +7192,7 @@
    "id": "n00073",
    "kind": "name",
    "jp": "武器Ｎｏ．５５",
-   "en": "",
+   "en": "Weapon No.55",
    "refs": [
     "p03:5fb2"
    ],
@@ -7202,7 +7202,7 @@
    "id": "n00074",
    "kind": "name",
    "jp": "武器Ｎｏ．５６",
-   "en": "",
+   "en": "Weapon No.56",
    "refs": [
     "p03:5fe3"
    ],
@@ -7212,7 +7212,7 @@
    "id": "n00075",
    "kind": "name",
    "jp": "武器Ｎｏ．５７",
-   "en": "",
+   "en": "Weapon No.57",
    "refs": [
     "p03:6014"
    ],
@@ -7222,7 +7222,7 @@
    "id": "n00076",
    "kind": "name",
    "jp": "武器Ｎｏ．５８",
-   "en": "",
+   "en": "Weapon No.58",
    "refs": [
     "p03:6045"
    ],
@@ -7232,7 +7232,7 @@
    "id": "n00077",
    "kind": "name",
    "jp": "武器Ｎｏ．５９",
-   "en": "",
+   "en": "Weapon No.59",
    "refs": [
     "p03:6076"
    ],
@@ -7242,7 +7242,7 @@
    "id": "n00078",
    "kind": "name",
    "jp": "武器Ｎｏ．６０",
-   "en": "",
+   "en": "Weapon No.60",
    "refs": [
     "p03:60a7"
    ],
@@ -7322,7 +7322,7 @@
    "id": "u00099",
    "kind": "menu",
    "jp": "順番を入れ替える",
-   "en": "",
+   "en": "Change Order",
    "refs": [
     "p04:00c3"
    ],
@@ -7332,7 +7332,7 @@
    "id": "u00100",
    "kind": "menu",
    "jp": "装備変更",
-   "en": "",
+   "en": "Equip",
    "refs": [
     "p04:00d3"
    ],
@@ -7342,7 +7342,7 @@
    "id": "u00101",
    "kind": "menu",
    "jp": "道具袋をのぞく",
-   "en": "",
+   "en": "Check Item Bag",
    "refs": [
     "p04:00df"
    ],
@@ -7352,7 +7352,7 @@
    "id": "u00102",
    "kind": "menu",
    "jp": "キャンプを抜ける",
-   "en": "",
+   "en": "Break Camp",
    "refs": [
     "p04:00ee"
    ],
@@ -7362,7 +7362,7 @@
    "id": "u00103",
    "kind": "menu",
    "jp": "イベントアイテム",
-   "en": "",
+   "en": "Key Items",
    "refs": [
     "p04:010b"
    ],
@@ -7372,7 +7372,7 @@
    "id": "u00104",
    "kind": "menu",
    "jp": "帰り木  残：",
-   "en": "",
+   "en": "Return Wood :",
    "refs": [
     "p04:015d"
    ],
@@ -7552,7 +7552,7 @@
    "id": "u00105",
    "kind": "menu",
    "jp": "復活の小判 ：",
-   "en": "",
+   "en": "Revival Coin:",
    "refs": [
     "p04:053d"
    ],
@@ -7734,7 +7734,7 @@
    "id": "u00106",
    "kind": "menu",
    "jp": "術",
-   "en": "",
+   "en": "Arts",
    "refs": [
     "p04:1816"
    ],
@@ -7744,7 +7744,7 @@
    "id": "u00107",
    "kind": "menu",
    "jp": "すたすた",
-   "en": "",
+   "en": "Brisk",
    "refs": [
     "p04:184b"
    ],
@@ -7817,7 +7817,7 @@
    "id": "u00108",
    "kind": "menu",
    "jp": "あかね  ＨＰ：",
-   "en": "",
+   "en": "Akane   HP:",
    "refs": [
     "p04:2049"
    ],
@@ -7827,7 +7827,7 @@
    "id": "u00109",
    "kind": "menu",
    "jp": "真朱   ＨＰ：",
-   "en": "",
+   "en": "Masoho  HP:",
    "refs": [
     "p04:2075"
    ],
@@ -7837,7 +7837,7 @@
    "id": "u00110",
    "kind": "menu",
    "jp": "七緒   ＨＰ：",
-   "en": "",
+   "en": "Nanao   HP:",
    "refs": [
     "p04:20a3"
    ],
@@ -7847,7 +7847,7 @@
    "id": "u00111",
    "kind": "menu",
    "jp": "春菜   ＨＰ：",
-   "en": "",
+   "en": "Haruna  HP:",
    "refs": [
     "p04:20d1"
    ],
@@ -7857,7 +7857,7 @@
    "id": "u00112",
    "kind": "menu",
    "jp": "このは  ＨＰ：",
-   "en": "",
+   "en": "Konoha  HP:",
    "refs": [
     "p04:20ff"
    ],
@@ -7867,7 +7867,7 @@
    "id": "u00113",
    "kind": "menu",
    "jp": "愛    ＨＰ：",
-   "en": "",
+   "en": "Ai      HP:",
    "refs": [
     "p04:212b"
    ],
@@ -7877,7 +7877,7 @@
    "id": "u00114",
    "kind": "menu",
    "jp": "美鈴   ＨＰ：",
-   "en": "",
+   "en": "Misuzu  HP:",
    "refs": [
     "p04:2158"
    ],
@@ -7887,7 +7887,7 @@
    "id": "u00115",
    "kind": "menu",
    "jp": "ミオ   ＨＰ：",
-   "en": "",
+   "en": "Mio     HP:",
    "refs": [
     "p04:2186"
    ],
@@ -7897,7 +7897,7 @@
    "id": "u00116",
    "kind": "menu",
    "jp": "篭目   ＨＰ：",
-   "en": "",
+   "en": "Kagome  HP:",
    "refs": [
     "p04:21b4"
    ],
@@ -7917,7 +7917,7 @@
    "id": "n00079",
    "kind": "name",
    "jp": "　　",
-   "en": "",
+   "en": "    ",
    "refs": [
     "p04:1d90",
     "p04:1d9b",
@@ -7934,7 +7934,7 @@
    "id": "n00080",
    "kind": "name",
    "jp": "グリーンハニー",
-   "en": "",
+   "en": "Green Honey",
    "refs": [
     "p05:01ba"
    ],
@@ -7944,7 +7944,7 @@
    "id": "n00081",
    "kind": "name",
    "jp": "パンチ",
-   "en": "",
+   "en": "Punch",
    "refs": [
     "p05:021f",
     "p05:030a",
@@ -7972,7 +7972,7 @@
    "id": "n00082",
    "kind": "name",
    "jp": "ハニーフラッシュ",
-   "en": "",
+   "en": "Honey Flash",
    "refs": [
     "p05:0246",
     "p05:0a48",
@@ -7988,7 +7988,7 @@
    "id": "n00083",
    "kind": "name",
    "jp": "トライデンで攻撃",
-   "en": "",
+   "en": "Trident Attack",
    "refs": [
     "p05:0276",
     "p05:0a78",
@@ -8001,7 +8001,7 @@
    "id": "n00084",
    "kind": "name",
    "jp": "ぬぼぼ",
-   "en": "",
+   "en": "Nubobo",
    "refs": [
     "p05:02ad"
    ],
@@ -8011,7 +8011,7 @@
    "id": "n00085",
    "kind": "name",
    "jp": "キック",
-   "en": "",
+   "en": "Kick",
    "refs": [
     "p05:0330",
     "p05:06b8",
@@ -8032,7 +8032,7 @@
    "id": "n00086",
    "kind": "name",
    "jp": "巻き付き攻撃",
-   "en": "",
+   "en": "Coil Attack",
    "refs": [
     "p05:0356"
    ],
@@ -8042,7 +8042,7 @@
    "id": "n00087",
    "kind": "name",
    "jp": "金魚",
-   "en": "",
+   "en": "Goldfish",
    "refs": [
     "p05:0389"
    ],
@@ -8052,7 +8052,7 @@
    "id": "n00088",
    "kind": "name",
    "jp": "体当たり",
-   "en": "",
+   "en": "Body Slam",
    "refs": [
     "p05:03e4",
     "p05:04c8",
@@ -8073,7 +8073,7 @@
    "id": "n00089",
    "kind": "name",
    "jp": "噛付いてきた",
-   "en": "",
+   "en": "Bite",
    "refs": [
     "p05:040c",
     "p05:11ca",
@@ -8094,7 +8094,7 @@
    "id": "n00090",
    "kind": "name",
    "jp": "一斉攻撃",
-   "en": "",
+   "en": "All-Out Attack",
    "refs": [
     "p05:0438"
    ],
@@ -8104,7 +8104,7 @@
    "id": "n00091",
    "kind": "name",
    "jp": "こんにちわ",
-   "en": "",
+   "en": "Hello",
    "refs": [
     "p05:0467"
    ],
@@ -8114,7 +8114,7 @@
    "id": "n00092",
    "kind": "name",
    "jp": "あいさつ攻撃",
-   "en": "",
+   "en": "Greeting Attack",
    "refs": [
     "p05:0516"
    ],
@@ -8124,7 +8124,7 @@
    "id": "n00093",
    "kind": "name",
    "jp": "きゃんきゃん",
-   "en": "",
+   "en": "Kyan-Kyan",
    "refs": [
     "p05:0549"
    ],
@@ -8134,7 +8134,7 @@
    "id": "n00094",
    "kind": "name",
    "jp": "おねだり",
-   "en": "",
+   "en": "Begging",
    "refs": [
     "p05:05ac",
     "p05:0939"
@@ -8145,7 +8145,7 @@
    "id": "n00095",
    "kind": "name",
    "jp": "あいさつ",
-   "en": "",
+   "en": "Greeting",
    "refs": [
     "p05:05d4",
     "p05:0961",
@@ -8157,7 +8157,7 @@
    "id": "n00096",
    "kind": "name",
    "jp": "じゃれている",
-   "en": "",
+   "en": "Frolicking",
    "refs": [
     "p05:05fc",
     "p05:0989"
@@ -8168,7 +8168,7 @@
    "id": "n00097",
    "kind": "name",
    "jp": "ラルカット",
-   "en": "",
+   "en": "Larcat",
    "refs": [
     "p05:062f"
    ],
@@ -8178,7 +8178,7 @@
    "id": "n00098",
    "kind": "name",
    "jp": "チョップ",
-   "en": "",
+   "en": "Chop",
    "refs": [
     "p05:0690",
     "p05:4891"
@@ -8189,7 +8189,7 @@
    "id": "n00099",
    "kind": "name",
    "jp": "引っ掻き攻撃",
-   "en": "",
+   "en": "Scratch Attack",
    "refs": [
     "p05:06de"
    ],
@@ -8199,7 +8199,7 @@
    "id": "n00100",
    "kind": "name",
    "jp": "やもりん",
-   "en": "",
+   "en": "Yamorin",
    "refs": [
     "p05:0711"
    ],
@@ -8209,7 +8209,7 @@
    "id": "n00101",
    "kind": "name",
    "jp": "５０連キック",
-   "en": "",
+   "en": "50-Kick Combo",
    "refs": [
     "p05:0796"
    ],
@@ -8219,7 +8219,7 @@
    "id": "n00102",
    "kind": "name",
    "jp": "１００連キック",
-   "en": "",
+   "en": "100-Kick Combo",
    "refs": [
     "p05:07c2"
    ],
@@ -8229,7 +8229,7 @@
    "id": "n00103",
    "kind": "name",
    "jp": "マジ・スコ",
-   "en": "",
+   "en": "Maji-Suko",
    "refs": [
     "p05:07f7"
    ],
@@ -8239,7 +8239,7 @@
    "id": "n00104",
    "kind": "name",
    "jp": "炎の矢を放った",
-   "en": "",
+   "en": "Fired flaming arrows",
    "refs": [
     "p05:0859"
    ],
@@ -8249,7 +8249,7 @@
    "id": "n00105",
    "kind": "name",
    "jp": "尻尾で攻撃",
-   "en": "",
+   "en": "Tail Attack",
    "refs": [
     "p05:08ad",
     "p05:2070"
@@ -8260,7 +8260,7 @@
    "id": "n00106",
    "kind": "name",
    "jp": "きゃんきゃλ",
-   "en": "",
+   "en": "Kyan-Kyam",
    "refs": [
     "p05:08d6"
    ],
@@ -8270,7 +8270,7 @@
    "id": "n00107",
    "kind": "name",
    "jp": "ブルーハニー",
-   "en": "",
+   "en": "Blue Honey",
    "refs": [
     "p05:09be"
    ],
@@ -8280,7 +8280,7 @@
    "id": "n00108",
    "kind": "name",
    "jp": "るろんた",
-   "en": "",
+   "en": "Ruronta",
    "refs": [
     "p05:0aaf"
    ],
@@ -8290,7 +8290,7 @@
    "id": "n00109",
    "kind": "name",
    "jp": "抱き付いてきた",
-   "en": "",
+   "en": "Clung on tight",
    "refs": [
     "p05:0b34"
    ],
@@ -8300,7 +8300,7 @@
    "id": "n00110",
    "kind": "name",
    "jp": "ちゃつみ",
-   "en": "",
+   "en": "Chatsumi",
    "refs": [
     "p05:0b91"
    ],
@@ -8310,7 +8310,7 @@
    "id": "n00111",
    "kind": "name",
    "jp": "抱きついてきた",
-   "en": "",
+   "en": "Latched on",
    "refs": [
     "p05:0bf0"
    ],
@@ -8320,7 +8320,7 @@
    "id": "n00112",
    "kind": "name",
    "jp": "でんぐりがえり",
-   "en": "",
+   "en": "Somersault",
    "refs": [
     "p05:0c1e"
    ],
@@ -8330,7 +8330,7 @@
    "id": "n00113",
    "kind": "name",
    "jp": "でんぐりだっこ",
-   "en": "",
+   "en": "Somersault Hug",
    "refs": [
     "p05:0c4c"
    ],
@@ -8340,7 +8340,7 @@
    "id": "n00114",
    "kind": "name",
    "jp": "めいどさん",
-   "en": "",
+   "en": "Maid",
    "refs": [
     "p05:0c81"
    ],
@@ -8350,7 +8350,7 @@
    "id": "n00115",
    "kind": "name",
    "jp": "はたきで攻撃",
-   "en": "",
+   "en": "Feather Duster Attack",
    "refs": [
     "p05:0ce2"
    ],
@@ -8360,7 +8360,7 @@
    "id": "n00116",
    "kind": "name",
    "jp": "ビンタ",
-   "en": "",
+   "en": "Slap",
    "refs": [
     "p05:0d0e"
    ],
@@ -8370,7 +8370,7 @@
    "id": "n00117",
    "kind": "name",
    "jp": "料理爆弾を投げた",
-   "en": "",
+   "en": "Threw a cooking bomb",
    "refs": [
     "p05:0d34"
    ],
@@ -8380,7 +8380,7 @@
    "id": "n00118",
    "kind": "name",
    "jp": "おかし女",
-   "en": "",
+   "en": "Candy Girl",
    "refs": [
     "p05:0d6b"
    ],
@@ -8390,7 +8390,7 @@
    "id": "n00119",
    "kind": "name",
    "jp": "お菓子を投げた",
-   "en": "",
+   "en": "Threw sweets",
    "refs": [
     "p05:0dca"
    ],
@@ -8400,7 +8400,7 @@
    "id": "n00120",
    "kind": "name",
    "jp": "お菓子を食べた",
-   "en": "",
+   "en": "Ate sweets",
    "refs": [
     "p05:0df8"
    ],
@@ -8410,7 +8410,7 @@
    "id": "n00121",
    "kind": "name",
    "jp": "小麦粉をばらまいた",
-   "en": "",
+   "en": "Scattered flour",
    "refs": [
     "p05:0e26"
    ],
@@ -8420,7 +8420,7 @@
    "id": "n00122",
    "kind": "name",
    "jp": "うし使い",
-   "en": "",
+   "en": "Cow Tamer",
    "refs": [
     "p05:0e5f"
    ],
@@ -8430,7 +8430,7 @@
    "id": "n00123",
    "kind": "name",
    "jp": "剣で攻撃",
-   "en": "",
+   "en": "Sword Attack",
    "refs": [
     "p05:0ebe",
     "p05:3ff9"
@@ -8441,7 +8441,7 @@
    "id": "n00124",
    "kind": "name",
    "jp": "うしを突進させた",
-   "en": "",
+   "en": "Sent a cow charging",
    "refs": [
     "p05:0ee6"
    ],
@@ -8451,7 +8451,7 @@
    "id": "n00125",
    "kind": "name",
    "jp": "うしを抱きしめた",
-   "en": "",
+   "en": "Hugged the cow",
    "refs": [
     "p05:0f16"
    ],
@@ -8461,7 +8461,7 @@
    "id": "n00126",
    "kind": "name",
    "jp": "てんてん",
-   "en": "",
+   "en": "Tenten",
    "refs": [
     "p05:0f4d"
    ],
@@ -8471,7 +8471,7 @@
    "id": "n00127",
    "kind": "name",
    "jp": "てんてんパーンチ",
-   "en": "",
+   "en": "Tenten Puuunch",
    "refs": [
     "p05:0fac"
    ],
@@ -8481,7 +8481,7 @@
    "id": "n00128",
    "kind": "name",
    "jp": "てんてんキーック",
-   "en": "",
+   "en": "Tenten Kiiick",
    "refs": [
     "p05:0fdc"
    ],
@@ -8491,7 +8491,7 @@
    "id": "n00129",
    "kind": "name",
    "jp": "雷撃を放つ",
-   "en": "",
+   "en": "Lightning Strike",
    "refs": [
     "p05:100c",
     "p05:41f1"
@@ -8502,7 +8502,7 @@
    "id": "n00130",
    "kind": "name",
    "jp": "にょ◎に◎ろ",
-   "en": "",
+   "en": "Nyo-ni-ro",
    "refs": [
     "p05:1035"
    ],
@@ -8512,7 +8512,7 @@
    "id": "n00131",
    "kind": "name",
    "jp": "にょろん",
-   "en": "",
+   "en": "Nyoron",
    "refs": [
     "p05:1098"
    ],
@@ -8522,7 +8522,7 @@
    "id": "n00132",
    "kind": "name",
    "jp": "にょろろん",
-   "en": "",
+   "en": "Nyororon",
    "refs": [
     "p05:10c0"
    ],
@@ -8532,7 +8532,7 @@
    "id": "n00133",
    "kind": "name",
    "jp": "にょろにょろん",
-   "en": "",
+   "en": "Nyoronyoron",
    "refs": [
     "p05:10ea"
    ],
@@ -8542,7 +8542,7 @@
    "id": "n00134",
    "kind": "name",
    "jp": "ぷりょ",
-   "en": "",
+   "en": "Puryo",
    "refs": [
     "p05:111c"
    ],
@@ -8552,7 +8552,7 @@
    "id": "n00135",
    "kind": "name",
    "jp": "牙で攻撃",
-   "en": "",
+   "en": "Fang Attack",
    "refs": [
     "p05:117a"
    ],
@@ -8562,7 +8562,7 @@
    "id": "n00136",
    "kind": "name",
    "jp": "増殖した",
-   "en": "",
+   "en": "Multiplied",
    "refs": [
     "p05:11a2"
    ],
@@ -8572,7 +8572,7 @@
    "id": "n00137",
    "kind": "name",
    "jp": "マグボール",
-   "en": "",
+   "en": "Mag Ball",
    "refs": [
     "p05:11fd"
    ],
@@ -8582,7 +8582,7 @@
    "id": "n00138",
    "kind": "name",
    "jp": "引っ掻いてきた",
-   "en": "",
+   "en": "Scratched",
    "refs": [
     "p05:125f",
     "p05:1613",
@@ -8594,7 +8594,7 @@
    "id": "n00139",
    "kind": "name",
    "jp": "目から怪光線を放つ",
-   "en": "",
+   "en": "Fired strange beams from eyes",
    "refs": [
     "p05:128d"
    ],
@@ -8604,7 +8604,7 @@
    "id": "n00140",
    "kind": "name",
    "jp": "怪電波を放射した",
-   "en": "",
+   "en": "Emitted weird radio waves",
    "refs": [
     "p05:12bf"
    ],
@@ -8614,7 +8614,7 @@
    "id": "n00141",
    "kind": "name",
    "jp": "うっぴー",
-   "en": "",
+   "en": "Uppy",
    "refs": [
     "p05:12f6"
    ],
@@ -8624,7 +8624,7 @@
    "id": "n00142",
    "kind": "name",
    "jp": "火を吹いた",
-   "en": "",
+   "en": "Breathed fire",
    "refs": [
     "p05:1382",
     "p05:404e"
@@ -8635,7 +8635,7 @@
    "id": "n00143",
    "kind": "name",
    "jp": "火炎放射",
-   "en": "",
+   "en": "Flamethrower",
    "refs": [
     "p05:13ac"
    ],
@@ -8645,7 +8645,7 @@
    "id": "n00144",
    "kind": "name",
    "jp": "ぶたバンバラ",
-   "en": "",
+   "en": "Pig Banbara",
    "refs": [
     "p05:13db"
    ],
@@ -8655,7 +8655,7 @@
    "id": "n00145",
    "kind": "name",
    "jp": "剣を振り回す",
-   "en": "",
+   "en": "Swung a sword wildly",
    "refs": [
     "p05:143f"
    ],
@@ -8665,7 +8665,7 @@
    "id": "n00146",
    "kind": "name",
    "jp": "大暴れ",
-   "en": "",
+   "en": "Rampage",
    "refs": [
     "p05:1493"
    ],
@@ -8675,7 +8675,7 @@
    "id": "n00147",
    "kind": "name",
    "jp": "金魚使い",
-   "en": "",
+   "en": "Goldfish Tamer",
    "refs": [
     "p05:14c0"
    ],
@@ -8685,7 +8685,7 @@
    "id": "n00148",
    "kind": "name",
    "jp": "自力パンチ",
-   "en": "",
+   "en": "Self-Powered Punch",
    "refs": [
     "p05:1520"
    ],
@@ -8695,7 +8695,7 @@
    "id": "n00149",
    "kind": "name",
    "jp": "金魚を召喚した",
-   "en": "",
+   "en": "Summoned goldfish",
    "refs": [
     "p05:154a"
    ],
@@ -8705,7 +8705,7 @@
    "id": "n00150",
    "kind": "name",
    "jp": "自力チョップ",
-   "en": "",
+   "en": "Self-Powered Chop",
    "refs": [
     "p05:1578"
    ],
@@ -8715,7 +8715,7 @@
    "id": "n00151",
    "kind": "name",
    "jp": "ライカンスロープ",
-   "en": "",
+   "en": "Lycanthrope",
    "refs": [
     "p05:15ab"
    ],
@@ -8725,7 +8725,7 @@
    "id": "n00152",
    "kind": "name",
    "jp": "うしうしバンバン",
-   "en": "",
+   "en": "Moo-Moo Bang Bang",
    "refs": [
     "p05:169a"
    ],
@@ -8735,7 +8735,7 @@
    "id": "n00153",
    "kind": "name",
    "jp": "うしうしパンチ",
-   "en": "",
+   "en": "Moo-Moo Punch",
    "refs": [
     "p05:1702"
    ],
@@ -8745,7 +8745,7 @@
    "id": "n00154",
    "kind": "name",
    "jp": "うしうし連続パンチ",
-   "en": "",
+   "en": "Moo-Moo Punch Barrage",
    "refs": [
     "p05:1730"
    ],
@@ -8755,7 +8755,7 @@
    "id": "n00155",
    "kind": "name",
    "jp": "スーパーパンチ",
-   "en": "",
+   "en": "Super Punch",
    "refs": [
     "p05:1762"
    ],
@@ -8765,7 +8765,7 @@
    "id": "n00156",
    "kind": "name",
    "jp": "キ◎ガイへむれん",
-   "en": "",
+   "en": "Loony Hemuren",
    "refs": [
     "p05:178f"
    ],
@@ -8775,7 +8775,7 @@
    "id": "n00157",
    "kind": "name",
    "jp": "網を振り回した",
-   "en": "",
+   "en": "Swung a net around",
    "refs": [
     "p05:17f7"
    ],
@@ -8785,7 +8785,7 @@
    "id": "n00158",
    "kind": "name",
    "jp": "よだれを垂らしている",
-   "en": "",
+   "en": "Is drooling",
    "refs": [
     "p05:1826"
    ],
@@ -8795,7 +8795,7 @@
    "id": "n00159",
    "kind": "name",
    "jp": "かみついてきた",
-   "en": "",
+   "en": "Bit you",
    "refs": [
     "p05:185a"
    ],
@@ -8805,7 +8805,7 @@
    "id": "n00160",
    "kind": "name",
    "jp": "盗賊",
-   "en": "",
+   "en": "Bandit",
    "refs": [
     "p05:188f"
    ],
@@ -8815,7 +8815,7 @@
    "id": "n00161",
    "kind": "name",
    "jp": "短剣を振りおろす",
-   "en": "",
+   "en": "Brought down a dagger",
    "refs": [
     "p05:18eb"
    ],
@@ -8825,7 +8825,7 @@
    "id": "n00162",
    "kind": "name",
    "jp": "短剣で突いてきた",
-   "en": "",
+   "en": "Stabbed with a dagger",
    "refs": [
     "p05:191b"
    ],
@@ -8835,7 +8835,7 @@
    "id": "n00163",
    "kind": "name",
    "jp": "短剣でなぎ払う",
-   "en": "",
+   "en": "Swept with a dagger",
    "refs": [
     "p05:194b"
    ],
@@ -8845,7 +8845,7 @@
    "id": "n00164",
    "kind": "name",
    "jp": "レッドハニー",
-   "en": "",
+   "en": "Red Honey",
    "refs": [
     "p05:1980"
    ],
@@ -8855,7 +8855,7 @@
    "id": "n00165",
    "kind": "name",
    "jp": "いもむしＤＸ",
-   "en": "",
+   "en": "Caterpillar DX",
    "refs": [
     "p05:1a72"
    ],
@@ -8865,7 +8865,7 @@
    "id": "n00166",
    "kind": "name",
    "jp": "巻き付いてきた",
-   "en": "",
+   "en": "Coiled around you",
    "refs": [
     "p05:1b2a"
    ],
@@ -8875,7 +8875,7 @@
    "id": "n00167",
    "kind": "name",
    "jp": "ちゃそば",
-   "en": "",
+   "en": "Chasoba",
    "refs": [
     "p05:1b5f"
    ],
@@ -8885,7 +8885,7 @@
    "id": "n00168",
    "kind": "name",
    "jp": "スーパー体当たり",
-   "en": "",
+   "en": "Super Body Slam",
    "refs": [
     "p05:1c0d"
    ],
@@ -8895,7 +8895,7 @@
    "id": "n00169",
    "kind": "name",
    "jp": "ハチ女",
-   "en": "",
+   "en": "Bee Girl",
    "refs": [
     "p05:1c44"
    ],
@@ -8905,7 +8905,7 @@
    "id": "n00170",
    "kind": "name",
    "jp": "ヤリで攻撃",
-   "en": "",
+   "en": "Spear Attack",
    "refs": [
     "p05:1ca4"
    ],
@@ -8915,7 +8915,7 @@
    "id": "n00171",
    "kind": "name",
    "jp": "ヤリで突撃",
-   "en": "",
+   "en": "Spear Charge",
    "refs": [
     "p05:1ccf"
    ],
@@ -8925,7 +8925,7 @@
    "id": "n00172",
    "kind": "name",
    "jp": "ヤリで乱れ突き",
-   "en": "",
+   "en": "Spear Flurry",
    "refs": [
     "p05:1cfa"
    ],
@@ -8935,7 +8935,7 @@
    "id": "n00173",
    "kind": "name",
    "jp": "カエル魔女",
-   "en": "",
+   "en": "Frog Witch",
    "refs": [
     "p05:1d2f"
    ],
@@ -8945,7 +8945,7 @@
    "id": "n00174",
    "kind": "name",
    "jp": "炎の矢を放つ",
-   "en": "",
+   "en": "Fires flaming arrows",
    "refs": [
     "p05:1db7"
    ],
@@ -8955,7 +8955,7 @@
    "id": "n00175",
    "kind": "name",
    "jp": "火爆破を唱えた",
-   "en": "",
+   "en": "Cast Fire Blast",
    "refs": [
     "p05:1de3",
     "p05:28f0",
@@ -8968,7 +8968,7 @@
    "id": "n00176",
    "kind": "name",
    "jp": "やぎさん",
-   "en": "",
+   "en": "Mr. Goat",
    "refs": [
     "p05:1e18"
    ],
@@ -8978,7 +8978,7 @@
    "id": "n00177",
    "kind": "name",
    "jp": "角笛を吹いた",
-   "en": "",
+   "en": "Blew a horn",
    "refs": [
     "p05:1ec5"
    ],
@@ -8988,7 +8988,7 @@
    "id": "n00178",
    "kind": "name",
    "jp": "すな◎きん",
-   "en": "",
+   "en": "Suna-kin",
    "refs": [
     "p05:1ef0"
    ],
@@ -8998,7 +8998,7 @@
    "id": "n00179",
    "kind": "name",
    "jp": "ギターを弾いた",
-   "en": "",
+   "en": "Played the guitar",
    "refs": [
     "p05:1f52"
    ],
@@ -9008,7 +9008,7 @@
    "id": "n00180",
    "kind": "name",
    "jp": "帽子を投げた",
-   "en": "",
+   "en": "Threw a hat",
    "refs": [
     "p05:1f80"
    ],
@@ -9018,7 +9018,7 @@
    "id": "n00181",
    "kind": "name",
    "jp": "説教をたれた",
-   "en": "",
+   "en": "Gave a sermon",
    "refs": [
     "p05:1fac"
    ],
@@ -9028,7 +9028,7 @@
    "id": "n00182",
    "kind": "name",
    "jp": "三つ目トカゲ",
-   "en": "",
+   "en": "Three-Eyed Lizard",
    "refs": [
     "p05:1fe0"
    ],
@@ -9038,7 +9038,7 @@
    "id": "n00183",
    "kind": "name",
    "jp": "毒ガスを吐いた",
-   "en": "",
+   "en": "Breathed poison gas",
    "refs": [
     "p05:209a"
    ],
@@ -9048,7 +9048,7 @@
    "id": "n00184",
    "kind": "name",
    "jp": "オッズ",
-   "en": "",
+   "en": "Odds",
    "refs": [
     "p05:20cf"
    ],
@@ -9058,7 +9058,7 @@
    "id": "n00185",
    "kind": "name",
    "jp": "ワンツーパンチ",
-   "en": "",
+   "en": "One-Two Punch",
    "refs": [
     "p05:217b"
    ],
@@ -9068,7 +9068,7 @@
    "id": "n00186",
    "kind": "name",
    "jp": "ルスト",
-   "en": "",
+   "en": "Rust",
    "refs": [
     "p05:21b0"
    ],
@@ -9078,7 +9078,7 @@
    "id": "n00187",
    "kind": "name",
    "jp": "呪文を唱えた",
-   "en": "",
+   "en": "Chanted a spell",
    "refs": [
     "p05:220e",
     "p05:223a",
@@ -9106,7 +9106,7 @@
    "id": "n00188",
    "kind": "name",
    "jp": "凶悪ハニー",
-   "en": "",
+   "en": "Vicious Honey",
    "refs": [
     "p05:2299"
    ],
@@ -9116,7 +9116,7 @@
    "id": "n00189",
    "kind": "name",
    "jp": "ドスで切りかかる",
-   "en": "",
+   "en": "Slashed with a dagger",
    "refs": [
     "p05:22fb"
    ],
@@ -9126,7 +9126,7 @@
    "id": "n00190",
    "kind": "name",
    "jp": "白い粉を使った",
-   "en": "",
+   "en": "Used a white powder",
    "refs": [
     "p05:232b"
    ],
@@ -9136,7 +9136,7 @@
    "id": "n00191",
    "kind": "name",
    "jp": "ざしきわらし",
-   "en": "",
+   "en": "Zashiki Warashi",
    "refs": [
     "p05:2391"
    ],
@@ -9146,7 +9146,7 @@
    "id": "n00192",
    "kind": "name",
    "jp": "たぬきパンチ",
-   "en": "",
+   "en": "Tanuki Punch",
    "refs": [
     "p05:23f5"
    ],
@@ -9156,7 +9156,7 @@
    "id": "n00193",
    "kind": "name",
    "jp": "きつねパンチ",
-   "en": "",
+   "en": "Fox Punch",
    "refs": [
     "p05:2421"
    ],
@@ -9166,7 +9166,7 @@
    "id": "n00194",
    "kind": "name",
    "jp": "ダブルパンチ",
-   "en": "",
+   "en": "Double Punch",
    "refs": [
     "p05:244d",
     "p05:3959"
@@ -9177,7 +9177,7 @@
    "id": "n00195",
    "kind": "name",
    "jp": "とっこーちゃん",
-   "en": "",
+   "en": "Tokko-chan",
    "refs": [
     "p05:2480"
    ],
@@ -9187,7 +9187,7 @@
    "id": "n00196",
    "kind": "name",
    "jp": "ナギナタで突いてきた",
-   "en": "",
+   "en": "Thrust a naginata",
    "refs": [
     "p05:24e6"
    ],
@@ -9197,7 +9197,7 @@
    "id": "n00197",
    "kind": "name",
    "jp": "ナギナタを振り下ろす",
-   "en": "",
+   "en": "Brought down a naginata",
    "refs": [
     "p05:251a"
    ],
@@ -9207,7 +9207,7 @@
    "id": "n00198",
    "kind": "name",
    "jp": "ナギナタを振り回した",
-   "en": "",
+   "en": "Swung a naginata around",
    "refs": [
     "p05:254e"
    ],
@@ -9217,7 +9217,7 @@
    "id": "n00199",
    "kind": "name",
    "jp": "ワーチアガール",
-   "en": "",
+   "en": "Were-Cheerleader",
    "refs": [
     "p05:2589",
     "p05:2672"
@@ -9228,7 +9228,7 @@
    "id": "n00200",
    "kind": "name",
    "jp": "ポンポンでパンチ",
-   "en": "",
+   "en": "Pom-Pom Punch",
    "refs": [
     "p05:25ef",
     "p05:26d8"
@@ -9239,7 +9239,7 @@
    "id": "n00201",
    "kind": "name",
    "jp": "自分を応援した",
-   "en": "",
+   "en": "Cheered herself on",
    "refs": [
     "p05:2645",
     "p05:272e"
@@ -9250,7 +9250,7 @@
    "id": "n00202",
    "kind": "name",
    "jp": "こんばんわ",
-   "en": "",
+   "en": "Good Evening",
    "refs": [
     "p05:2763"
    ],
@@ -9260,7 +9260,7 @@
    "id": "n00203",
    "kind": "name",
    "jp": "マーシュ",
-   "en": "",
+   "en": "Marsh",
    "refs": [
     "p05:2842"
    ],
@@ -9270,7 +9270,7 @@
    "id": "n00204",
    "kind": "name",
    "jp": "ロンメル",
-   "en": "",
+   "en": "Rommel",
    "refs": [
     "p05:2925"
    ],
@@ -9280,7 +9280,7 @@
    "id": "n00205",
    "kind": "name",
    "jp": "叫び男",
-   "en": "",
+   "en": "Screaming Man",
    "refs": [
     "p05:2a10"
    ],
@@ -9290,7 +9290,7 @@
    "id": "n00206",
    "kind": "name",
    "jp": "叫んだ",
-   "en": "",
+   "en": "Screamed",
    "refs": [
     "p05:2a6e"
    ],
@@ -9300,7 +9300,7 @@
    "id": "n00207",
    "kind": "name",
    "jp": "暗黒吐息を放つ",
-   "en": "",
+   "en": "Breathes dark breath",
    "refs": [
     "p05:2ac0",
     "p05:2b8b"
@@ -9311,7 +9311,7 @@
    "id": "n00208",
    "kind": "name",
    "jp": "スモッグシルフ",
-   "en": "",
+   "en": "Smog Sylph",
    "refs": [
     "p05:2af5"
    ],
@@ -9321,7 +9321,7 @@
    "id": "n00209",
    "kind": "name",
    "jp": "冷たい手で触った",
-   "en": "",
+   "en": "Touched with a cold hand",
    "refs": [
     "p05:2b5b",
     "p05:2c52"
@@ -9332,7 +9332,7 @@
    "id": "n00210",
    "kind": "name",
    "jp": "超暗黒吐息を放つ",
-   "en": "",
+   "en": "Breathes super dark breath",
    "refs": [
     "p05:2bb9"
    ],
@@ -9342,7 +9342,7 @@
    "id": "n00211",
    "kind": "name",
    "jp": "フローズン",
-   "en": "",
+   "en": "Frozen",
    "refs": [
     "p05:2bf0"
    ],
@@ -9352,7 +9352,7 @@
    "id": "n00212",
    "kind": "name",
    "jp": "氷雪吹雪を唱えた",
-   "en": "",
+   "en": "Cast Blizzard",
    "refs": [
     "p05:2c82"
    ],
@@ -9362,7 +9362,7 @@
    "id": "n00213",
    "kind": "name",
    "jp": "スノーレーザーを放つ",
-   "en": "",
+   "en": "Fires a Snow Laser",
    "refs": [
     "p05:2cb2"
    ],
@@ -9372,7 +9372,7 @@
    "id": "n00214",
    "kind": "name",
    "jp": "ちょ～ちん",
-   "en": "",
+   "en": "Choochin",
    "refs": [
     "p05:2ce5"
    ],
@@ -9382,7 +9382,7 @@
    "id": "n00215",
    "kind": "name",
    "jp": "強い光を放った",
-   "en": "",
+   "en": "Gave off a bright light",
    "refs": [
     "p05:2d73",
     "p05:2da2",
@@ -9395,7 +9395,7 @@
    "id": "n00216",
    "kind": "name",
    "jp": "ちょーちん",
-   "en": "",
+   "en": "Chochin",
    "refs": [
     "p05:2dcf"
    ],
@@ -9405,7 +9405,7 @@
    "id": "n00217",
    "kind": "name",
    "jp": "ブラックハニー",
-   "en": "",
+   "en": "Black Honey",
    "refs": [
     "p05:2ec1"
    ],
@@ -9415,7 +9415,7 @@
    "id": "n00218",
    "kind": "name",
    "jp": "花火を振り回す",
-   "en": "",
+   "en": "Swings fireworks around",
    "refs": [
     "p05:2f28"
    ],
@@ -9425,7 +9425,7 @@
    "id": "n00219",
    "kind": "name",
    "jp": "女殺し",
-   "en": "",
+   "en": "Lady Killer",
    "refs": [
     "p05:2fb4"
    ],
@@ -9435,7 +9435,7 @@
    "id": "n00220",
    "kind": "name",
    "jp": "包丁を振り回す",
-   "en": "",
+   "en": "Swings a kitchen knife",
    "refs": [
     "p05:3012"
    ],
@@ -9445,7 +9445,7 @@
    "id": "n00221",
    "kind": "name",
    "jp": "包丁を振りかざす",
-   "en": "",
+   "en": "Raises a kitchen knife",
    "refs": [
     "p05:3041"
    ],
@@ -9455,7 +9455,7 @@
    "id": "n00222",
    "kind": "name",
    "jp": "包丁をなめた",
-   "en": "",
+   "en": "Licked the kitchen knife",
    "refs": [
     "p05:3072"
    ],
@@ -9465,7 +9465,7 @@
    "id": "n00223",
    "kind": "name",
    "jp": "おかゆフィーバー",
-   "en": "",
+   "en": "Okayu Fever",
    "refs": [
     "p05:30a5"
    ],
@@ -9475,7 +9475,7 @@
    "id": "n00224",
    "kind": "name",
    "jp": "頭突きをしてきた",
-   "en": "",
+   "en": "Headbutted",
    "refs": [
     "p05:3133"
    ],
@@ -9485,7 +9485,7 @@
    "id": "n00225",
    "kind": "name",
    "jp": "おかゆダンス",
-   "en": "",
+   "en": "Okayu Dance",
    "refs": [
     "p05:3163"
    ],
@@ -9495,7 +9495,7 @@
    "id": "n00226",
    "kind": "name",
    "jp": "マーダー",
-   "en": "",
+   "en": "Murder",
    "refs": [
     "p05:3196"
    ],
@@ -9505,7 +9505,7 @@
    "id": "n00227",
    "kind": "name",
    "jp": "体当たりで攻撃",
-   "en": "",
+   "en": "Body Slam Attack",
    "refs": [
     "p05:3222"
    ],
@@ -9515,7 +9515,7 @@
    "id": "n00228",
    "kind": "name",
    "jp": "プールポニー",
-   "en": "",
+   "en": "Pool Pony",
    "refs": [
     "p05:3283"
    ],
@@ -9525,7 +9525,7 @@
    "id": "n00229",
    "kind": "name",
    "jp": "引っ掻いた",
-   "en": "",
+   "en": "Scratched",
    "refs": [
     "p05:32e7",
     "p05:42b4"
@@ -9536,7 +9536,7 @@
    "id": "n00230",
    "kind": "name",
    "jp": "噛付いた",
-   "en": "",
+   "en": "Bit",
    "refs": [
     "p05:3311",
     "p05:3771",
@@ -9548,7 +9548,7 @@
    "id": "n00231",
    "kind": "name",
    "jp": "ワーＯＬ",
-   "en": "",
+   "en": "Were-Office Lady",
    "refs": [
     "p05:3366"
    ],
@@ -9558,7 +9558,7 @@
    "id": "n00232",
    "kind": "name",
    "jp": "パンプスでキック",
-   "en": "",
+   "en": "Pump Heel Kick",
    "refs": [
     "p05:33c6"
    ],
@@ -9568,7 +9568,7 @@
    "id": "n00233",
    "kind": "name",
    "jp": "書類の角で攻撃",
-   "en": "",
+   "en": "Hit with a document corner",
    "refs": [
     "p05:33f6"
    ],
@@ -9578,7 +9578,7 @@
    "id": "n00234",
    "kind": "name",
    "jp": "ボールペンを投げた",
-   "en": "",
+   "en": "Threw a ballpoint pen",
    "refs": [
     "p05:3424"
    ],
@@ -9588,7 +9588,7 @@
    "id": "n00235",
    "kind": "name",
    "jp": "ワー消防士",
-   "en": "",
+   "en": "Were-Firefighter",
    "refs": [
     "p05:345d",
     "p05:353b"
@@ -9599,7 +9599,7 @@
    "id": "n00236",
    "kind": "name",
    "jp": "放水攻撃",
-   "en": "",
+   "en": "Water Hose Attack",
    "refs": [
     "p05:34c0",
     "p05:359e"
@@ -9610,7 +9610,7 @@
    "id": "n00237",
    "kind": "name",
    "jp": "ハンマーで攻撃",
-   "en": "",
+   "en": "Hammer Attack",
    "refs": [
     "p05:34e8",
     "p05:35c6"
@@ -9621,7 +9621,7 @@
    "id": "n00238",
    "kind": "name",
    "jp": "大放水",
-   "en": "",
+   "en": "Mega Water Blast",
    "refs": [
     "p05:3516",
     "p05:35f4"
@@ -9632,7 +9632,7 @@
    "id": "n00239",
    "kind": "name",
    "jp": "ゲーリング",
-   "en": "",
+   "en": "Goering",
    "refs": [
     "p05:3621"
    ],
@@ -9642,7 +9642,7 @@
    "id": "n00240",
    "kind": "name",
    "jp": "はっぴー",
-   "en": "",
+   "en": "Happy",
    "refs": [
     "p05:3710"
    ],
@@ -9652,7 +9652,7 @@
    "id": "n00241",
    "kind": "name",
    "jp": "冷たい息を吐いた",
-   "en": "",
+   "en": "Breathed cold air",
    "refs": [
     "p05:3799"
    ],
@@ -9662,7 +9662,7 @@
    "id": "n00242",
    "kind": "name",
    "jp": "冷凍光線を発した",
-   "en": "",
+   "en": "Fired a freeze ray",
    "refs": [
     "p05:37c9"
    ],
@@ -9672,7 +9672,7 @@
    "id": "n00243",
    "kind": "name",
    "jp": "くらげＭｋ２",
-   "en": "",
+   "en": "Jellyfish Mk2",
    "refs": [
     "p05:3800"
    ],
@@ -9682,7 +9682,7 @@
    "id": "n00244",
    "kind": "name",
    "jp": "足をふりまわした",
-   "en": "",
+   "en": "Flailed its legs",
    "refs": [
     "p05:3865"
    ],
@@ -9692,7 +9692,7 @@
    "id": "n00245",
    "kind": "name",
    "jp": "ふわふわと体当り",
-   "en": "",
+   "en": "Floated into you",
    "refs": [
     "p05:3895"
    ],
@@ -9702,7 +9702,7 @@
    "id": "n00246",
    "kind": "name",
    "jp": "放電した",
-   "en": "",
+   "en": "Discharged electricity",
    "refs": [
     "p05:38c5"
    ],
@@ -9712,7 +9712,7 @@
    "id": "n00247",
    "kind": "name",
    "jp": "ダブルハニー",
-   "en": "",
+   "en": "Double Honey",
    "refs": [
     "p05:38f4"
    ],
@@ -9722,7 +9722,7 @@
    "id": "n00248",
    "kind": "name",
    "jp": "海の幸",
-   "en": "",
+   "en": "Seafood",
    "refs": [
     "p05:39ed"
    ],
@@ -9732,7 +9732,7 @@
    "id": "n00249",
    "kind": "name",
    "jp": "必殺パンチ",
-   "en": "",
+   "en": "Killer Punch",
    "refs": [
     "p05:3a4c",
     "p05:3b3a"
@@ -9743,7 +9743,7 @@
    "id": "n00250",
    "kind": "name",
    "jp": "必殺キック",
-   "en": "",
+   "en": "Killer Kick",
    "refs": [
     "p05:3a76",
     "p05:3b64"
@@ -9754,7 +9754,7 @@
    "id": "n00251",
    "kind": "name",
    "jp": "お魚スレイヤーで攻撃",
-   "en": "",
+   "en": "Fish Slayer Attack",
    "refs": [
     "p05:3aa0"
    ],
@@ -9764,7 +9764,7 @@
    "id": "n00252",
    "kind": "name",
    "jp": "山の幸",
-   "en": "",
+   "en": "Mountain Harvest",
    "refs": [
     "p05:3adb"
    ],
@@ -9774,7 +9774,7 @@
    "id": "n00253",
    "kind": "name",
    "jp": "爪で引っ掻いた",
-   "en": "",
+   "en": "Scratched with claws",
    "refs": [
     "p05:3b8e"
    ],
@@ -9784,7 +9784,7 @@
    "id": "n00254",
    "kind": "name",
    "jp": "キャプテンばにら",
-   "en": "",
+   "en": "Captain Vanilla",
    "refs": [
     "p05:3bc3"
    ],
@@ -9794,7 +9794,7 @@
    "id": "n00255",
    "kind": "name",
    "jp": "まぐろアッパー",
-   "en": "",
+   "en": "Tuna Uppercut",
    "refs": [
     "p05:3c2c"
    ],
@@ -9804,7 +9804,7 @@
    "id": "n00256",
    "kind": "name",
    "jp": "ヒーリングを唱えた",
-   "en": "",
+   "en": "Cast Healing",
    "refs": [
     "p05:3c5a"
    ],
@@ -9814,7 +9814,7 @@
    "id": "n00257",
    "kind": "name",
    "jp": "海賊シップを放った",
-   "en": "",
+   "en": "Launched a pirate ship",
    "refs": [
     "p05:3c8c"
    ],
@@ -9824,7 +9824,7 @@
    "id": "n00258",
    "kind": "name",
    "jp": "勇者",
-   "en": "",
+   "en": "Hero",
    "refs": [
     "p05:3cc5"
    ],
@@ -9834,7 +9834,7 @@
    "id": "n00259",
    "kind": "name",
    "jp": "あわてている",
-   "en": "",
+   "en": "Is panicking",
    "refs": [
     "p05:3d22",
     "p05:3d4f",
@@ -9846,7 +9846,7 @@
    "id": "n00260",
    "kind": "name",
    "jp": "キューニチョーキ",
-   "en": "",
+   "en": "Kyuunichooki",
    "refs": [
     "p05:3da7"
    ],
@@ -9856,7 +9856,7 @@
    "id": "n00261",
    "kind": "name",
    "jp": "プロペラではたく",
-   "en": "",
+   "en": "Swatted with a propeller",
    "refs": [
     "p05:3e0f"
    ],
@@ -9866,7 +9866,7 @@
    "id": "n00262",
    "kind": "name",
    "jp": "前足ではたく",
-   "en": "",
+   "en": "Swatted with forepaws",
    "refs": [
     "p05:3e3f"
    ],
@@ -9876,7 +9876,7 @@
    "id": "n00263",
    "kind": "name",
    "jp": "横をすり抜けた",
-   "en": "",
+   "en": "Slipped past",
    "refs": [
     "p05:3e6c"
    ],
@@ -9886,7 +9886,7 @@
    "id": "n00264",
    "kind": "name",
    "jp": "クレッチマー",
-   "en": "",
+   "en": "Kretschmer",
    "refs": [
     "p05:3ea1"
    ],
@@ -9896,7 +9896,7 @@
    "id": "n00265",
    "kind": "name",
    "jp": "ドラゴンナイト",
-   "en": "",
+   "en": "Dragon Knight",
    "refs": [
     "p05:3f93"
    ],
@@ -9906,7 +9906,7 @@
    "id": "n00266",
    "kind": "name",
    "jp": "忍者刀を振るう",
-   "en": "",
+   "en": "Swings a ninja sword",
    "refs": [
     "p05:40db"
    ],
@@ -9916,7 +9916,7 @@
    "id": "n00267",
    "kind": "name",
    "jp": "手裏剣を放つ",
-   "en": "",
+   "en": "Throws shuriken",
    "refs": [
     "p05:410a"
    ],
@@ -9926,7 +9926,7 @@
    "id": "n00268",
    "kind": "name",
    "jp": "火遁の術",
-   "en": "",
+   "en": "Fire Release Jutsu",
    "refs": [
     "p05:4136",
     "p05:4e2c"
@@ -9937,7 +9937,7 @@
    "id": "n00269",
    "kind": "name",
    "jp": "アカメ",
-   "en": "",
+   "en": "Akame",
    "refs": [
     "p05:4165"
    ],
@@ -9947,7 +9947,7 @@
    "id": "n00270",
    "kind": "name",
    "jp": "炎の矢を撃った",
-   "en": "",
+   "en": "Shot flaming arrows",
    "refs": [
     "p05:421b"
    ],
@@ -9957,7 +9957,7 @@
    "id": "n00271",
    "kind": "name",
    "jp": "ねこまたまた",
-   "en": "",
+   "en": "Nekomatamata",
    "refs": [
     "p05:4250"
    ],
@@ -9967,7 +9967,7 @@
    "id": "n00272",
    "kind": "name",
    "jp": "ヘビさん",
-   "en": "",
+   "en": "Mr. Snake",
    "refs": [
     "p05:4333"
    ],
@@ -9977,7 +9977,7 @@
    "id": "n00273",
    "kind": "name",
    "jp": "ヘビが噛付いた",
-   "en": "",
+   "en": "The snake bit",
    "refs": [
     "p05:4393"
    ],
@@ -9987,7 +9987,7 @@
    "id": "n00274",
    "kind": "name",
    "jp": "ヘビが巻き付いた",
-   "en": "",
+   "en": "The snake coiled around",
    "refs": [
     "p05:43e7"
    ],
@@ -9997,7 +9997,7 @@
    "id": "n00275",
    "kind": "name",
    "jp": "ワーボクサー",
-   "en": "",
+   "en": "Were-Boxer",
    "refs": [
     "p05:441e"
    ],
@@ -10007,7 +10007,7 @@
    "id": "n00276",
    "kind": "name",
    "jp": "ジャブで牽制",
-   "en": "",
+   "en": "Feints with a jab",
    "refs": [
     "p05:4482"
    ],
@@ -10017,7 +10017,7 @@
    "id": "n00277",
    "kind": "name",
    "jp": "ストレートを放った",
-   "en": "",
+   "en": "Threw a straight",
    "refs": [
     "p05:44ae"
    ],
@@ -10027,7 +10027,7 @@
    "id": "n00278",
    "kind": "name",
    "jp": "力石アッパー！",
-   "en": "",
+   "en": "Rikiishi Uppercut!",
    "refs": [
     "p05:44e1"
    ],
@@ -10037,7 +10037,7 @@
    "id": "n00279",
    "kind": "name",
    "jp": "ユリイカ",
-   "en": "",
+   "en": "Eureka",
    "refs": [
     "p05:4516"
    ],
@@ -10047,7 +10047,7 @@
    "id": "n00280",
    "kind": "name",
    "jp": "歩き出した",
-   "en": "",
+   "en": "Started walking",
    "refs": [
     "p05:4577"
    ],
@@ -10057,7 +10057,7 @@
    "id": "n00281",
    "kind": "name",
    "jp": "動かない・・・",
-   "en": "",
+   "en": "Won't move...",
    "refs": [
     "p05:45a2"
    ],
@@ -10067,7 +10067,7 @@
    "id": "n00282",
    "kind": "name",
    "jp": "光合成を始めた",
-   "en": "",
+   "en": "Began photosynthesis",
    "refs": [
     "p05:45d1"
    ],
@@ -10077,7 +10077,7 @@
    "id": "n00283",
    "kind": "name",
    "jp": "アノマロカリス",
-   "en": "",
+   "en": "Anomalocaris",
    "refs": [
     "p05:45fe"
    ],
@@ -10087,7 +10087,7 @@
    "id": "n00284",
    "kind": "name",
    "jp": "前歯で噛んだ",
-   "en": "",
+   "en": "Bit with front teeth",
    "refs": [
     "p05:4665"
    ],
@@ -10097,7 +10097,7 @@
    "id": "n00285",
    "kind": "name",
    "jp": "三葉虫を捕まえた",
-   "en": "",
+   "en": "Caught a trilobite",
    "refs": [
     "p05:4692"
    ],
@@ -10107,7 +10107,7 @@
    "id": "n00286",
    "kind": "name",
    "jp": "優雅に泳いでいる",
-   "en": "",
+   "en": "Is swimming gracefully",
    "refs": [
     "p05:46c4"
    ],
@@ -10117,7 +10117,7 @@
    "id": "n00287",
    "kind": "name",
    "jp": "カイトクローン",
-   "en": "",
+   "en": "Kite Clone",
    "refs": [
     "p05:46fb"
    ],
@@ -10127,7 +10127,7 @@
    "id": "n00288",
    "kind": "name",
    "jp": "奥義を繰り出した",
-   "en": "",
+   "en": "Unleashed a secret move",
    "refs": [
     "p05:47af"
    ],
@@ -10137,7 +10137,7 @@
    "id": "n00289",
    "kind": "name",
    "jp": "バウ",
-   "en": "",
+   "en": "Bau",
    "refs": [
     "p05:47e6"
    ],
@@ -10147,7 +10147,7 @@
    "id": "n00290",
    "kind": "name",
    "jp": "ストーンゴーレム",
-   "en": "",
+   "en": "Stone Golem",
    "refs": [
     "p05:48c0"
    ],
@@ -10157,7 +10157,7 @@
    "id": "n00291",
    "kind": "name",
    "jp": "踏みつけてきた",
-   "en": "",
+   "en": "Stomped on you",
    "refs": [
     "p05:494f"
    ],
@@ -10167,7 +10167,7 @@
    "id": "n00292",
    "kind": "name",
    "jp": "体当り",
-   "en": "",
+   "en": "Body Slam",
    "refs": [
     "p05:497d"
    ],
@@ -10177,7 +10177,7 @@
    "id": "n00293",
    "kind": "name",
    "jp": "微笑み男",
-   "en": "",
+   "en": "Smiling Man",
    "refs": [
     "p05:49aa"
    ],
@@ -10187,7 +10187,7 @@
    "id": "n00294",
    "kind": "name",
    "jp": "微笑んだ",
-   "en": "",
+   "en": "Smiled",
    "refs": [
     "p05:4a0b"
    ],
@@ -10197,7 +10197,7 @@
    "id": "n00295",
    "kind": "name",
    "jp": "ニヤリと笑った",
-   "en": "",
+   "en": "Grinned",
    "refs": [
     "p05:4a34"
    ],
@@ -10207,7 +10207,7 @@
    "id": "n00296",
    "kind": "name",
    "jp": "ニヒルに笑った",
-   "en": "",
+   "en": "Smirked cynically",
    "refs": [
     "p05:4a63"
    ],
@@ -10217,7 +10217,7 @@
    "id": "n00297",
    "kind": "name",
    "jp": "ハニーナイト",
-   "en": "",
+   "en": "Honey Knight",
    "refs": [
     "p05:4a98"
    ],
@@ -10227,7 +10227,7 @@
    "id": "n00298",
    "kind": "name",
    "jp": "ハルバーで攻撃",
-   "en": "",
+   "en": "Halberd Attack",
    "refs": [
     "p05:4afd"
    ],
@@ -10237,7 +10237,7 @@
    "id": "n00299",
    "kind": "name",
    "jp": "盾をかまえた",
-   "en": "",
+   "en": "Raised a shield",
    "refs": [
     "p05:4b5c"
    ],
@@ -10247,7 +10247,7 @@
    "id": "n00300",
    "kind": "name",
    "jp": "ガーランド",
-   "en": "",
+   "en": "Garland",
    "refs": [
     "p05:4b8f"
    ],
@@ -10257,7 +10257,7 @@
    "id": "n00301",
    "kind": "name",
    "jp": "ナースホルン",
-   "en": "",
+   "en": "Nashorn",
    "refs": [
     "p05:4c7f"
    ],
@@ -10267,7 +10267,7 @@
    "id": "n00302",
    "kind": "name",
    "jp": "赤忍者",
-   "en": "",
+   "en": "Red Ninja",
    "refs": [
     "p05:4d6d"
    ],
@@ -10277,7 +10277,7 @@
    "id": "n00303",
    "kind": "name",
    "jp": "くないで攻撃",
-   "en": "",
+   "en": "Kunai Attack",
    "refs": [
     "p05:4dce"
    ],
@@ -10287,7 +10287,7 @@
    "id": "n00304",
    "kind": "name",
    "jp": "手裏剣をとばした",
-   "en": "",
+   "en": "Threw shuriken",
    "refs": [
     "p05:4dfb"
    ],
@@ -10297,7 +10297,7 @@
    "id": "n00305",
    "kind": "name",
    "jp": "源氏",
-   "en": "",
+   "en": "Genji",
    "refs": [
     "p05:4e5b"
    ],
@@ -10307,7 +10307,7 @@
    "id": "n00306",
    "kind": "name",
    "jp": "斬りかかってきた",
-   "en": "",
+   "en": "Slashed at you",
    "refs": [
     "p05:4eba",
     "p05:4fb4"
@@ -10318,7 +10318,7 @@
    "id": "n00307",
    "kind": "name",
    "jp": "地力を吸収した",
-   "en": "",
+   "en": "Drained life force",
    "refs": [
     "p05:4eeb",
     "p05:4fe5"
@@ -10329,7 +10329,7 @@
    "id": "n00308",
    "kind": "name",
    "jp": "急所を狙ってきた",
-   "en": "",
+   "en": "Aimed for a vital spot",
    "refs": [
     "p05:4f1a"
    ],
@@ -10339,7 +10339,7 @@
    "id": "n00309",
    "kind": "name",
    "jp": "真・源氏",
-   "en": "",
+   "en": "True Genji",
    "refs": [
     "p05:4f51"
    ],
@@ -10349,7 +10349,7 @@
    "id": "n00310",
    "kind": "name",
    "jp": "乱れ斬り",
-   "en": "",
+   "en": "Slashing Flurry",
    "refs": [
     "p05:5014"
    ],
@@ -10359,7 +10359,7 @@
    "id": "n00311",
    "kind": "name",
    "jp": "パタパタ",
-   "en": "",
+   "en": "Patapata",
    "refs": [
     "p05:5043"
    ],
@@ -10369,7 +10369,7 @@
    "id": "n00312",
    "kind": "name",
    "jp": "ヤリで突いて来た",
-   "en": "",
+   "en": "Thrust with a spear",
    "refs": [
     "p05:50a4"
    ],
@@ -10379,7 +10379,7 @@
    "id": "n00313",
    "kind": "name",
    "jp": "後ろを向いた",
-   "en": "",
+   "en": "Turned around",
    "refs": [
     "p05:50fd"
    ],
@@ -10389,7 +10389,7 @@
    "id": "n00314",
    "kind": "name",
    "jp": "まじしゃん",
-   "en": "",
+   "en": "Magician",
    "refs": [
     "p05:5130"
    ],
@@ -10399,7 +10399,7 @@
    "id": "n00315",
    "kind": "name",
    "jp": "ファイヤーレーザー",
-   "en": "",
+   "en": "Fire Laser",
    "refs": [
     "p05:51c1"
    ],
@@ -10409,7 +10409,7 @@
    "id": "n00316",
    "kind": "name",
    "jp": "白色破壊光線を放った",
-   "en": "",
+   "en": "Fired a white destruction ray",
    "refs": [
     "p05:51f4"
    ],
@@ -10419,7 +10419,7 @@
    "id": "n00317",
    "kind": "name",
    "jp": "ハミング",
-   "en": "",
+   "en": "Humming",
    "refs": [
     "p05:522f"
    ],
@@ -10429,7 +10429,7 @@
    "id": "n00318",
    "kind": "name",
    "jp": "歌を歌い始めた",
-   "en": "",
+   "en": "Started singing",
    "refs": [
     "p05:528f",
     "p05:52bd",
@@ -10441,7 +10441,7 @@
    "id": "n00319",
    "kind": "name",
    "jp": "ワー花嫁",
-   "en": "",
+   "en": "Were-Bride",
    "refs": [
     "p05:5321"
    ],
@@ -10451,7 +10451,7 @@
    "id": "n00320",
    "kind": "name",
    "jp": "ブーケで攻撃",
-   "en": "",
+   "en": "Bouquet Attack",
    "refs": [
     "p05:5381"
    ],
@@ -10461,7 +10461,7 @@
    "id": "n00321",
    "kind": "name",
    "jp": "ひっぱたいてきた",
-   "en": "",
+   "en": "Slapped you",
    "refs": [
     "p05:53ae"
    ],
@@ -10471,7 +10471,7 @@
    "id": "n00322",
    "kind": "name",
    "jp": "微笑んでいる",
-   "en": "",
+   "en": "Is smiling",
    "refs": [
     "p05:53e0"
    ],
@@ -10481,7 +10481,7 @@
    "id": "n00323",
    "kind": "name",
    "jp": "髪長姫",
-   "en": "",
+   "en": "Long-Haired Princess",
    "refs": [
     "p05:5413"
    ],
@@ -10491,7 +10491,7 @@
    "id": "n00324",
    "kind": "name",
    "jp": "髪で攻撃",
-   "en": "",
+   "en": "Hair Attack",
    "refs": [
     "p05:5474"
    ],
@@ -10501,7 +10501,7 @@
    "id": "n00325",
    "kind": "name",
    "jp": "ライトニングレーザー",
-   "en": "",
+   "en": "Lightning Laser",
    "refs": [
     "p05:549d"
    ],
@@ -10511,7 +10511,7 @@
    "id": "n00326",
    "kind": "name",
    "jp": "髪をふりまわした",
-   "en": "",
+   "en": "Whipped her hair around",
    "refs": [
     "p05:54d2"
    ],
@@ -10521,7 +10521,7 @@
    "id": "n00327",
    "kind": "name",
    "jp": "神風",
-   "en": "",
+   "en": "Kamikaze",
    "refs": [
     "p05:5509"
    ],
@@ -10531,7 +10531,7 @@
    "id": "n00328",
    "kind": "name",
    "jp": "矢を射った",
-   "en": "",
+   "en": "Shot an arrow",
    "refs": [
     "p05:5568"
    ],
@@ -10541,7 +10541,7 @@
    "id": "n00329",
    "kind": "name",
    "jp": "闇の矢を射った",
-   "en": "",
+   "en": "Shot an arrow of darkness",
    "refs": [
     "p05:5593"
    ],
@@ -10551,7 +10551,7 @@
    "id": "n00330",
    "kind": "name",
    "jp": "光の矢を射った",
-   "en": "",
+   "en": "Shot an arrow of light",
    "refs": [
     "p05:55c2"
    ],
@@ -10561,7 +10561,7 @@
    "id": "n00331",
    "kind": "name",
    "jp": "ちゃぷちゃぷ",
-   "en": "",
+   "en": "Chapuchapu",
    "refs": [
     "p05:55ef"
    ],
@@ -10571,7 +10571,7 @@
    "id": "n00332",
    "kind": "name",
    "jp": "水をかけてきた",
-   "en": "",
+   "en": "Splashed water",
    "refs": [
     "p05:5653"
    ],
@@ -10581,7 +10581,7 @@
    "id": "n00333",
    "kind": "name",
    "jp": "硫酸をかけてきた",
-   "en": "",
+   "en": "Splashed sulfuric acid",
    "refs": [
     "p05:5682"
    ],
@@ -10591,7 +10591,7 @@
    "id": "n00334",
    "kind": "name",
    "jp": "硫酸をぶちまけた",
-   "en": "",
+   "en": "Dumped out sulfuric acid",
    "refs": [
     "p05:56b3"
    ],
@@ -10601,7 +10601,7 @@
    "id": "n00335",
    "kind": "name",
    "jp": "ヨシツネ",
-   "en": "",
+   "en": "Yoshitsune",
    "refs": [
     "p05:56e2",
     "p05:57ba",
@@ -10613,7 +10613,7 @@
    "id": "n00336",
    "kind": "name",
    "jp": "兜割り",
-   "en": "",
+   "en": "Helm Splitter",
    "refs": [
     "p05:5742",
     "p05:581a"
@@ -10624,7 +10624,7 @@
    "id": "n00337",
    "kind": "name",
    "jp": "居合斬り",
-   "en": "",
+   "en": "Iai Slash",
    "refs": [
     "p05:5769",
     "p05:5841"
@@ -10635,7 +10635,7 @@
    "id": "n00338",
    "kind": "name",
    "jp": "ツバメ返し",
-   "en": "",
+   "en": "Swallow Reversal",
    "refs": [
     "p05:5792",
     "p05:586a"
@@ -10646,7 +10646,7 @@
    "id": "n00339",
    "kind": "name",
    "jp": "腕を叩きつけた",
-   "en": "",
+   "en": "Slammed down an arm",
    "refs": [
     "p05:58f3"
    ],
@@ -10656,7 +10656,7 @@
    "id": "n00340",
    "kind": "name",
    "jp": "酸を吐いた",
-   "en": "",
+   "en": "Spat acid",
    "refs": [
     "p05:5922"
    ],
@@ -10666,7 +10666,7 @@
    "id": "n00341",
    "kind": "name",
    "jp": "再生を始めた",
-   "en": "",
+   "en": "Began regenerating",
    "refs": [
     "p05:594d"
    ],
@@ -10676,7 +10676,7 @@
    "id": "n00342",
    "kind": "name",
    "jp": "ムサシボウ",
-   "en": "",
+   "en": "Musashibo",
    "refs": [
     "p05:597f"
    ],
@@ -10686,7 +10686,7 @@
    "id": "n00343",
    "kind": "name",
    "jp": "尺杖で突いてきた",
-   "en": "",
+   "en": "Jabbed with a staff",
    "refs": [
     "p05:59e1"
    ],
@@ -10696,7 +10696,7 @@
    "id": "n00344",
    "kind": "name",
    "jp": "ナギナタを振りおろす",
-   "en": "",
+   "en": "Brought down a naginata",
    "refs": [
     "p05:5a11"
    ],
@@ -10706,7 +10706,7 @@
    "id": "n00345",
    "kind": "name",
    "jp": "千の武器を振るった",
-   "en": "",
+   "en": "Wielded a thousand weapons",
    "refs": [
     "p05:5a45"
    ],
@@ -10716,7 +10716,7 @@
    "id": "n00346",
    "kind": "name",
    "jp": "テング",
-   "en": "",
+   "en": "Tengu",
    "refs": [
     "p05:5a76",
     "p05:5b69"
@@ -10727,7 +10727,7 @@
    "id": "n00347",
    "kind": "name",
    "jp": "かまいたちを起こした",
-   "en": "",
+   "en": "Raised a sickle wind",
    "refs": [
     "p05:5ad4",
     "p05:5bc7"
@@ -10738,7 +10738,7 @@
    "id": "n00348",
    "kind": "name",
    "jp": "高足ゲタで蹴りつけた",
-   "en": "",
+   "en": "Kicked with tall geta",
    "refs": [
     "p05:5b08",
     "p05:5bfc"
@@ -10749,7 +10749,7 @@
    "id": "n00349",
    "kind": "name",
    "jp": "竜巻を起こした",
-   "en": "",
+   "en": "Raised a tornado",
    "refs": [
     "p05:5b3c",
     "p05:5c30"
@@ -10760,7 +10760,7 @@
    "id": "n00350",
    "kind": "name",
    "jp": "トモエ",
-   "en": "",
+   "en": "Tomoe",
    "refs": [
     "p05:5c5d",
     "p05:5d52",
@@ -10772,7 +10772,7 @@
    "id": "n00351",
    "kind": "name",
    "jp": "微笑んでいる・・・",
-   "en": "",
+   "en": "Is smiling...",
    "refs": [
     "p05:5cbc"
    ],
@@ -10782,7 +10782,7 @@
    "id": "n00352",
    "kind": "name",
    "jp": "見つめている・・・",
-   "en": "",
+   "en": "Is staring...",
    "refs": [
     "p05:5cef",
     "p05:5d22"
@@ -10793,7 +10793,7 @@
    "id": "n00353",
    "kind": "name",
    "jp": "扇子で打ちつけた",
-   "en": "",
+   "en": "Struck with a folding fan",
    "refs": [
     "p05:5db0",
     "p05:5e98"
@@ -10804,7 +10804,7 @@
    "id": "n00354",
    "kind": "name",
    "jp": "流れる髪で攻撃",
-   "en": "",
+   "en": "Flowing Hair Attack",
    "refs": [
     "p05:5de0",
     "p05:5ec8"
@@ -10815,7 +10815,7 @@
    "id": "n00355",
    "kind": "name",
    "jp": "荒ぶる髪で攻撃",
-   "en": "",
+   "en": "Raging Hair Attack",
    "refs": [
     "p05:5e0e",
     "p05:5ef6"
@@ -10826,7 +10826,7 @@
    "id": "n00356",
    "kind": "name",
    "jp": "ヨシナカ",
-   "en": "",
+   "en": "Yoshinaka",
    "refs": [
     "p05:5f23",
     "p05:601a",
@@ -10838,7 +10838,7 @@
    "id": "n00357",
    "kind": "name",
    "jp": "じっとしている・・・",
-   "en": "",
+   "en": "Is standing still...",
    "refs": [
     "p05:5f84",
     "p05:5fb9"
@@ -10849,7 +10849,7 @@
    "id": "n00358",
    "kind": "name",
    "jp": "ギラリと睨んだ",
-   "en": "",
+   "en": "Glared fiercely",
    "refs": [
     "p05:5fee"
    ],
@@ -10859,7 +10859,7 @@
    "id": "n00359",
    "kind": "name",
    "jp": "刀で斬りつける",
-   "en": "",
+   "en": "Slashes with a sword",
    "refs": [
     "p05:607a",
     "p05:6156"
@@ -10870,7 +10870,7 @@
    "id": "n00360",
    "kind": "name",
    "jp": "居合抜き",
-   "en": "",
+   "en": "Quick Draw",
    "refs": [
     "p05:60a8",
     "p05:6185"
@@ -10881,7 +10881,7 @@
    "id": "n00361",
    "kind": "name",
    "jp": "乱れ打ち",
-   "en": "",
+   "en": "Wild Strikes",
    "refs": [
     "p05:60d0",
     "p05:61ad"
@@ -10892,7 +10892,7 @@
    "id": "n00362",
    "kind": "name",
    "jp": "イヌ",
-   "en": "",
+   "en": "Dog",
    "refs": [
     "p05:61d4"
    ],
@@ -10902,7 +10902,7 @@
    "id": "n00363",
    "kind": "name",
    "jp": "飛び掛かってきた",
-   "en": "",
+   "en": "Pounced on you",
    "refs": [
     "p05:625d"
    ],
@@ -10912,7 +10912,7 @@
    "id": "n00364",
    "kind": "name",
    "jp": "サル",
-   "en": "",
+   "en": "Monkey",
    "refs": [
     "p05:62b4"
    ],
@@ -10922,7 +10922,7 @@
    "id": "n00365",
    "kind": "name",
    "jp": "キジ",
-   "en": "",
+   "en": "Pheasant",
    "refs": [
     "p05:6391"
    ],
@@ -10932,7 +10932,7 @@
    "id": "n00366",
    "kind": "name",
    "jp": "爪でつかみ掛かる",
-   "en": "",
+   "en": "Grabs with talons",
    "refs": [
     "p05:63ed"
    ],
@@ -10942,7 +10942,7 @@
    "id": "n00367",
    "kind": "name",
    "jp": "くちばしで突く",
-   "en": "",
+   "en": "Pecks with its beak",
    "refs": [
     "p05:641d"
    ],
@@ -10952,7 +10952,7 @@
    "id": "n00368",
    "kind": "name",
    "jp": "突風を巻き起こす",
-   "en": "",
+   "en": "Whips up a gust",
    "refs": [
     "p05:644b"
    ],
@@ -10962,7 +10962,7 @@
    "id": "n00369",
    "kind": "name",
    "jp": "キラトーキ",
-   "en": "",
+   "en": "Kiratoki",
    "refs": [
     "p05:647a"
    ],
@@ -10972,7 +10972,7 @@
    "id": "n00370",
    "kind": "name",
    "jp": "軽くパンチ",
-   "en": "",
+   "en": "Light Punch",
    "refs": [
     "p05:64dc"
    ],
@@ -10982,7 +10982,7 @@
    "id": "n00371",
    "kind": "name",
    "jp": "全員にパンチ",
-   "en": "",
+   "en": "Punches everyone",
    "refs": [
     "p05:6506"
    ],
@@ -10992,7 +10992,7 @@
    "id": "n00372",
    "kind": "name",
    "jp": "全力でパンチ",
-   "en": "",
+   "en": "Full-Power Punch",
    "refs": [
     "p05:6532"
    ],
@@ -11002,7 +11002,7 @@
    "id": "n00373",
    "kind": "name",
    "jp": "プラムズゴースト",
-   "en": "",
+   "en": "Plum's Ghost",
    "refs": [
     "p05:655d"
    ],
@@ -11012,7 +11012,7 @@
    "id": "n00374",
    "kind": "name",
    "jp": "いえーい爆弾を投げた",
-   "en": "",
+   "en": "Threw a Yay Bomb",
    "refs": [
     "p05:65c5"
    ],
@@ -11022,7 +11022,7 @@
    "id": "n00375",
    "kind": "name",
    "jp": "なにやら説明しだした",
-   "en": "",
+   "en": "Started explaining something",
    "refs": [
     "p05:65f9"
    ],
@@ -11032,7 +11032,7 @@
    "id": "n00376",
    "kind": "name",
    "jp": "デバッグレーザー",
-   "en": "",
+   "en": "Debug Laser",
    "refs": [
     "p05:662d"
    ],
@@ -11052,7 +11052,7 @@
    "id": "u00117",
    "kind": "menu",
    "jp": "頭",
-   "en": "",
+   "en": "Head",
    "refs": [
     "p06:002c"
    ],
@@ -11062,7 +11062,7 @@
    "id": "u00118",
    "kind": "menu",
    "jp": "体",
-   "en": "",
+   "en": "Body",
    "refs": [
     "p06:0032"
    ],
@@ -11072,7 +11072,7 @@
    "id": "u00119",
    "kind": "menu",
    "jp": "武器",
-   "en": "",
+   "en": "Weapon",
    "refs": [
     "p06:0038",
     "p19:0b25"
@@ -11083,7 +11083,7 @@
    "id": "u00120",
    "kind": "menu",
    "jp": "特殊",
-   "en": "",
+   "en": "Special",
    "refs": [
     "p06:0040"
    ],
@@ -11093,7 +11093,7 @@
    "id": "u00121",
    "kind": "menu",
    "jp": "足",
-   "en": "",
+   "en": "Feet",
    "refs": [
     "p06:0048"
    ],
@@ -11103,7 +11103,7 @@
    "id": "u00122",
    "kind": "menu",
    "jp": "腕",
-   "en": "",
+   "en": "Arms",
    "refs": [
     "p06:004e"
    ],
@@ -11113,7 +11113,7 @@
    "id": "u00123",
    "kind": "menu",
    "jp": "飾り",
-   "en": "",
+   "en": "Trinket",
    "refs": [
     "p06:0054"
    ],
@@ -11123,7 +11123,7 @@
    "id": "u00124",
    "kind": "menu",
    "jp": "装備する",
-   "en": "",
+   "en": "Equip",
    "refs": [
     "p06:0090",
     "p06:00b4",
@@ -11140,7 +11140,7 @@
    "id": "u00125",
    "kind": "menu",
    "jp": "兜を脱ぐ",
-   "en": "",
+   "en": "No Helm",
    "refs": [
     "p06:009a"
    ],
@@ -11150,7 +11150,7 @@
    "id": "u00126",
    "kind": "menu",
    "jp": "鎧を脱ぐ",
-   "en": "",
+   "en": "No Armor",
    "refs": [
     "p06:00be"
    ],
@@ -11160,7 +11160,7 @@
    "id": "u00127",
    "kind": "menu",
    "jp": "武器を外す",
-   "en": "",
+   "en": "No Weapon",
    "refs": [
     "p06:00e2"
    ],
@@ -11170,7 +11170,7 @@
    "id": "u00128",
    "kind": "menu",
    "jp": "装備を外す",
-   "en": "",
+   "en": "Unequip",
    "refs": [
     "p06:0107",
     "p06:0152"
@@ -11181,7 +11181,7 @@
    "id": "u00129",
    "kind": "menu",
    "jp": "履物を脱ぐ",
-   "en": "",
+   "en": "No Shoes",
    "refs": [
     "p06:012c"
    ],
@@ -11191,7 +11191,7 @@
    "id": "u00130",
    "kind": "menu",
    "jp": "飾りを外す",
-   "en": "",
+   "en": "No Trinket",
    "refs": [
     "p06:0177"
    ],
@@ -11201,7 +11201,7 @@
    "id": "u00131",
    "kind": "menu",
    "jp": "ヤリ       ：足侍",
-   "en": "",
+   "en": "Spear           :As Sa",
    "refs": [
     "p06:0196"
    ],
@@ -11211,7 +11211,7 @@
    "id": "u00132",
    "kind": "menu",
    "jp": "カタナ      ：足侍忍く",
-   "en": "",
+   "en": "Katana          :As Sa Ni Ku",
    "refs": [
     "p06:01b2"
    ],
@@ -11221,7 +11221,7 @@
    "id": "u00133",
    "kind": "menu",
    "jp": "くない      ：忍く",
-   "en": "",
+   "en": "Kunai           :Ni Ku",
    "refs": [
     "p06:01d2"
    ],
@@ -11231,7 +11231,7 @@
    "id": "u00134",
    "kind": "menu",
    "jp": "杖        ：足侍天",
-   "en": "",
+   "en": "Staff           :As Sa Te",
    "refs": [
     "p06:01eb"
    ],
@@ -11241,7 +11241,7 @@
    "id": "u00135",
    "kind": "menu",
    "jp": "銅の鈴      ：呪",
-   "en": "",
+   "en": "Copper Bell     :So",
    "refs": [
     "p06:0208"
    ],
@@ -11251,7 +11251,7 @@
    "id": "u00136",
    "kind": "menu",
    "jp": "日本刀 丙    ：足侍忍く",
-   "en": "",
+   "en": "Katana, Grade C :As Sa Ni Ku",
    "refs": [
     "p06:0222"
    ],
@@ -11261,7 +11261,7 @@
    "id": "u00137",
    "kind": "menu",
    "jp": "なぎなた     ：足侍",
-   "en": "",
+   "en": "Naginata        :As Sa",
    "refs": [
     "p06:0243"
    ],
@@ -11271,7 +11271,7 @@
    "id": "u00138",
    "kind": "menu",
    "jp": "風の忍刀     ：忍く",
-   "en": "",
+   "en": "Wind Ninja Blade:Ni Ku",
    "refs": [
     "p06:025e"
    ],
@@ -11281,7 +11281,7 @@
    "id": "u00139",
    "kind": "menu",
    "jp": "イナズマの剣   ：足侍",
-   "en": "",
+   "en": "Lightning Sword :As Sa",
    "refs": [
     "p06:027a"
    ],
@@ -11291,7 +11291,7 @@
    "id": "u00140",
    "kind": "menu",
    "jp": "日本刀 乙    ：足侍忍",
-   "en": "",
+   "en": "Katana, Grade B :As Sa Ni",
    "refs": [
     "p06:0299"
    ],
@@ -11301,7 +11301,7 @@
    "id": "u00141",
    "kind": "menu",
    "jp": "次のページ",
-   "en": "",
+   "en": "Next Page",
    "refs": [
     "p06:02b9",
     "p06:0452",
@@ -11320,7 +11320,7 @@
    "id": "u00142",
    "kind": "menu",
    "jp": "氷の鈴      ：呪",
-   "en": "",
+   "en": "Ice Bell        :So",
    "refs": [
     "p06:0343"
    ],
@@ -11330,7 +11330,7 @@
    "id": "u00143",
    "kind": "menu",
    "jp": "知恵の杖     ：天",
-   "en": "",
+   "en": "Staff of Wisdom :Te",
    "refs": [
     "p06:035d"
    ],
@@ -11340,7 +11340,7 @@
    "id": "u00144",
    "kind": "menu",
    "jp": "力の杖      ：天",
-   "en": "",
+   "en": "Staff of Power  :Te",
    "refs": [
     "p06:0378"
    ],
@@ -11350,7 +11350,7 @@
    "id": "u00145",
    "kind": "menu",
    "jp": "柴田刀      ：足侍",
-   "en": "",
+   "en": "Shibata Blade   :As Sa",
    "refs": [
     "p06:0392"
    ],
@@ -11360,7 +11360,7 @@
    "id": "u00146",
    "kind": "menu",
    "jp": "くじら殺し    ：足侍",
-   "en": "",
+   "en": "Whale Slayer    :As Sa",
    "refs": [
     "p06:03af"
    ],
@@ -11370,7 +11370,7 @@
    "id": "u00147",
    "kind": "menu",
    "jp": "ガラスの鈴    ：呪",
-   "en": "",
+   "en": "Glass Bell      :So",
    "refs": [
     "p06:03cb"
    ],
@@ -11380,7 +11380,7 @@
    "id": "u00148",
    "kind": "menu",
    "jp": "くまさんの爪   ：忍く",
-   "en": "",
+   "en": "Teddy Bear Claw :Ni Ku",
    "refs": [
     "p06:03e7"
    ],
@@ -11390,7 +11390,7 @@
    "id": "u00149",
    "kind": "menu",
    "jp": "ドラゴンスレイヤー：足侍",
-   "en": "",
+   "en": "Dragon Slayer   :As Sa",
    "refs": [
     "p06:0401"
    ],
@@ -11400,7 +11400,7 @@
    "id": "u00150",
    "kind": "menu",
    "jp": "のろわれたヤリ  ：足侍",
-   "en": "",
+   "en": "Cursed Spear    :As Sa",
    "refs": [
     "p06:0423"
    ],
@@ -11410,7 +11410,7 @@
    "id": "u00151",
    "kind": "menu",
    "jp": "鉛の鈴      ：呪",
-   "en": "",
+   "en": "Lead Bell       :So",
    "refs": [
     "p06:043f"
    ],
@@ -11420,7 +11420,7 @@
    "id": "u00152",
    "kind": "menu",
    "jp": "ムチ       ：忍く",
-   "en": "",
+   "en": "Whip            :Ni Ku",
    "refs": [
     "p06:04e0"
    ],
@@ -11430,7 +11430,7 @@
    "id": "u00153",
    "kind": "menu",
    "jp": "青龍の刀     ：足侍",
-   "en": "",
+   "en": "Seiryu Blade    :As Sa",
    "refs": [
     "p06:04fb"
    ],
@@ -11440,7 +11440,7 @@
    "id": "u00154",
    "kind": "menu",
    "jp": "玄武の刀     ：足侍",
-   "en": "",
+   "en": "Genbu Blade     :As Sa",
    "refs": [
     "p06:0518"
    ],
@@ -11450,7 +11450,7 @@
    "id": "u00155",
    "kind": "menu",
    "jp": "白虎の刀     ：足侍",
-   "en": "",
+   "en": "Byakko Blade    :As Sa",
    "refs": [
     "p06:0535"
    ],
@@ -11460,7 +11460,7 @@
    "id": "u00156",
    "kind": "menu",
    "jp": "朱雀の刀     ：足侍",
-   "en": "",
+   "en": "Suzaku Blade    :As Sa",
    "refs": [
     "p06:0552"
    ],
@@ -11470,7 +11470,7 @@
    "id": "u00157",
    "kind": "menu",
    "jp": "蔵人知槍     ：足侍",
-   "en": "",
+   "en": "Kurodo Spear    :As Sa",
    "refs": [
     "p06:056f"
    ],
@@ -11480,7 +11480,7 @@
    "id": "u00158",
    "kind": "menu",
    "jp": "ロングソード３  ：足侍",
-   "en": "",
+   "en": "Long Sword 3    :As Sa",
    "refs": [
     "p06:058d"
    ],
@@ -11490,7 +11490,7 @@
    "id": "u00159",
    "kind": "menu",
    "jp": "白金の鈴     ：呪",
-   "en": "",
+   "en": "Platinum Bell   :So",
    "refs": [
     "p06:05ad"
    ],
@@ -11500,7 +11500,7 @@
    "id": "u00160",
    "kind": "menu",
    "jp": "村正       ：足侍",
-   "en": "",
+   "en": "Muramasa        :As Sa",
    "refs": [
     "p06:05c8"
    ],
@@ -11510,7 +11510,7 @@
    "id": "u00161",
    "kind": "menu",
    "jp": "天志僧の杖    ：天",
-   "en": "",
+   "en": "Tenshi Staff    :Te",
    "refs": [
     "p06:05e4"
    ],
@@ -11520,7 +11520,7 @@
    "id": "u00162",
    "kind": "menu",
    "jp": "忍者ブレード！  ：忍く",
-   "en": "",
+   "en": "Ninja Blade!    :Ni Ku",
    "refs": [
     "p06:0687"
    ],
@@ -11530,7 +11530,7 @@
    "id": "u00163",
    "kind": "menu",
    "jp": "日本刀 甲    ：足侍",
-   "en": "",
+   "en": "Katana, Grade A :As Sa",
    "refs": [
     "p06:06a6"
    ],
@@ -11540,7 +11540,7 @@
    "id": "u00164",
    "kind": "menu",
    "jp": "一鉄       ：足侍",
-   "en": "",
+   "en": "Ittetsu         :As Sa",
    "refs": [
     "p06:06c4"
    ],
@@ -11550,7 +11550,7 @@
    "id": "u00165",
    "kind": "menu",
    "jp": "合金の鈴     ：呪",
-   "en": "",
+   "en": "Alloy Bell      :So",
    "refs": [
     "p06:06e0"
    ],
@@ -11560,7 +11560,7 @@
    "id": "u00166",
    "kind": "menu",
    "jp": "さびた剣     ：足侍忍く",
-   "en": "",
+   "en": "Rusty Sword     :As Sa Ni Ku",
    "refs": [
     "p06:06fb"
    ],
@@ -11570,7 +11570,7 @@
    "id": "u00167",
    "kind": "menu",
    "jp": "トライデン    ：足侍",
-   "en": "",
+   "en": "Trident         :As Sa",
    "refs": [
     "p06:071a"
    ],
@@ -11580,7 +11580,7 @@
    "id": "u00168",
    "kind": "menu",
    "jp": "ハルバー     ：足侍",
-   "en": "",
+   "en": "Halberd         :As Sa",
    "refs": [
     "p06:0739"
    ],
@@ -11590,7 +11590,7 @@
    "id": "u00169",
    "kind": "menu",
    "jp": "紫電改      ：侍",
-   "en": "",
+   "en": "Shiden Kai      :Sa",
    "refs": [
     "p06:0756"
    ],
@@ -11600,7 +11600,7 @@
    "id": "u00170",
    "kind": "menu",
    "jp": "すごいタケヤリ  ：足",
-   "en": "",
+   "en": "Awesome Takeyari:As",
    "refs": [
     "p06:0771"
    ],
@@ -11610,7 +11610,7 @@
    "id": "u00171",
    "kind": "menu",
    "jp": "貞治       ：天",
-   "en": "",
+   "en": "Sadaharu        :Te",
    "refs": [
     "p06:078e"
    ],
@@ -11620,7 +11620,7 @@
    "id": "u00172",
    "kind": "menu",
    "jp": "前のページ",
-   "en": "",
+   "en": "Prev Page",
    "refs": [
     "p06:07be",
     "p06:0a15",
@@ -11636,7 +11636,7 @@
    "id": "u00173",
    "kind": "menu",
    "jp": "ロイヤルアサシン ：忍く",
-   "en": "",
+   "en": "Royal Assassin  :Ni Ku",
    "refs": [
     "p06:07d1"
    ],
@@ -11646,7 +11646,7 @@
    "id": "u00174",
    "kind": "menu",
    "jp": "女王様のムチ   ：く",
-   "en": "",
+   "en": "Queen's Whip    :Ku",
    "refs": [
     "p06:07f2"
    ],
@@ -11656,7 +11656,7 @@
    "id": "u00175",
    "kind": "menu",
    "jp": "超合金の鈴    ：呪",
-   "en": "",
+   "en": "Super Alloy Bell:So",
    "refs": [
     "p06:080e"
    ],
@@ -11666,7 +11666,7 @@
    "id": "u00176",
    "kind": "menu",
    "jp": "アタナイフ    ：忍く",
-   "en": "",
+   "en": "Athame Knife    :Ni Ku",
    "refs": [
     "p06:082a"
    ],
@@ -11676,7 +11676,7 @@
    "id": "u00177",
    "kind": "menu",
    "jp": "武器Ｎｏ．４５",
-   "en": "",
+   "en": "Weapon No.45",
    "refs": [
     "p06:0848"
    ],
@@ -11686,7 +11686,7 @@
    "id": "u00178",
    "kind": "menu",
    "jp": "武器Ｎｏ．４６",
-   "en": "",
+   "en": "Weapon No.46",
    "refs": [
     "p06:0861"
    ],
@@ -11696,7 +11696,7 @@
    "id": "u00179",
    "kind": "menu",
    "jp": "武器Ｎｏ．４７",
-   "en": "",
+   "en": "Weapon No.47",
    "refs": [
     "p06:087a"
    ],
@@ -11706,7 +11706,7 @@
    "id": "u00180",
    "kind": "menu",
    "jp": "武器Ｎｏ．４８",
-   "en": "",
+   "en": "Weapon No.48",
    "refs": [
     "p06:0893"
    ],
@@ -11716,7 +11716,7 @@
    "id": "u00181",
    "kind": "menu",
    "jp": "武器Ｎｏ．４９",
-   "en": "",
+   "en": "Weapon No.49",
    "refs": [
     "p06:08ac"
    ],
@@ -11726,7 +11726,7 @@
    "id": "u00182",
    "kind": "menu",
    "jp": "武器Ｎｏ．５０",
-   "en": "",
+   "en": "Weapon No.50",
    "refs": [
     "p06:08c5"
    ],
@@ -11736,7 +11736,7 @@
    "id": "u00183",
    "kind": "menu",
    "jp": "急祥の兜     ：侍",
-   "en": "",
+   "en": "Kyusho Helm     :Sa",
    "refs": [
     "p06:08eb"
    ],
@@ -11746,7 +11746,7 @@
    "id": "u00184",
    "kind": "menu",
    "jp": "雅修の兜     ：侍",
-   "en": "",
+   "en": "Gashu Helm      :Sa",
    "refs": [
     "p06:0906"
    ],
@@ -11756,7 +11756,7 @@
    "id": "u00185",
    "kind": "menu",
    "jp": "懐滝の兜     ：侍",
-   "en": "",
+   "en": "Kaitaki Helm    :Sa",
    "refs": [
     "p06:0921"
    ],
@@ -11766,7 +11766,7 @@
    "id": "u00186",
    "kind": "menu",
    "jp": "吉蔵の兜     ：侍",
-   "en": "",
+   "en": "Kichizo Helm    :Sa",
    "refs": [
     "p06:093c"
    ],
@@ -11776,7 +11776,7 @@
    "id": "u00187",
    "kind": "menu",
    "jp": "祭乞の兜     ：侍",
-   "en": "",
+   "en": "Saiko Helm      :Sa",
    "refs": [
     "p06:0957"
    ],
@@ -11786,7 +11786,7 @@
    "id": "u00188",
    "kind": "menu",
    "jp": "はちまき     ：全員",
-   "en": "",
+   "en": "Headband        :All",
    "refs": [
     "p06:0972"
    ],
@@ -11796,7 +11796,7 @@
    "id": "u00189",
    "kind": "menu",
    "jp": "鉄かぶと     ：足侍",
-   "en": "",
+   "en": "Iron Helmet     :As Sa",
    "refs": [
     "p06:098c"
    ],
@@ -11806,7 +11806,7 @@
    "id": "u00190",
    "kind": "menu",
    "jp": "山菜ハット    ：全員",
-   "en": "",
+   "en": "Wild Veggie Hat :All",
    "refs": [
     "p06:09a8"
    ],
@@ -11816,7 +11816,7 @@
    "id": "u00191",
    "kind": "menu",
    "jp": "金のかんざし   ：全員",
-   "en": "",
+   "en": "Gold Hairpin    :All",
    "refs": [
     "p06:09c7"
    ],
@@ -11826,7 +11826,7 @@
    "id": "u00192",
    "kind": "menu",
    "jp": "ベレー帽     ：全員",
-   "en": "",
+   "en": "Beret           :All",
    "refs": [
     "p06:09e3"
    ],
@@ -11836,7 +11836,7 @@
    "id": "u00193",
    "kind": "menu",
    "jp": "リボン      ：全員",
-   "en": "",
+   "en": "Ribbon          :All",
    "refs": [
     "p06:0a28"
    ],
@@ -11846,7 +11846,7 @@
    "id": "u00194",
    "kind": "menu",
    "jp": "般若の面     ：全員",
-   "en": "",
+   "en": "Hannya Mask     :All",
    "refs": [
     "p06:0a45"
    ],
@@ -11856,7 +11856,7 @@
    "id": "u00195",
    "kind": "menu",
    "jp": "角かくし     ：全員",
-   "en": "",
+   "en": "Bridal Hood     :All",
    "refs": [
     "p06:0a62"
    ],
@@ -11866,7 +11866,7 @@
    "id": "u00196",
    "kind": "menu",
    "jp": "ネコ帽      ：全員",
-   "en": "",
+   "en": "Cat Hat         :All",
    "refs": [
     "p06:0a7d"
    ],
@@ -11876,7 +11876,7 @@
    "id": "u00197",
    "kind": "menu",
    "jp": "おつるちゃん   ：全員",
-   "en": "",
+   "en": "Otsuru-chan     :All",
    "refs": [
     "p06:0a9a"
    ],
@@ -11886,7 +11886,7 @@
    "id": "u00198",
    "kind": "menu",
    "jp": "蝶のマスク    ：く",
-   "en": "",
+   "en": "Butterfly Mask  :Ku",
    "refs": [
     "p06:0ab4"
    ],
@@ -11896,7 +11896,7 @@
    "id": "u00199",
    "kind": "menu",
    "jp": "面        ：全員",
-   "en": "",
+   "en": "Kendo Mask      :All",
    "refs": [
     "p06:0acf"
    ],
@@ -11906,7 +11906,7 @@
    "id": "u00200",
    "kind": "menu",
    "jp": "頭装備Ｎｏ．１８",
-   "en": "",
+   "en": "Head No.18",
    "refs": [
     "p06:0aea"
    ],
@@ -11916,7 +11916,7 @@
    "id": "u00201",
    "kind": "menu",
    "jp": "頭装備Ｎｏ．１９",
-   "en": "",
+   "en": "Head No.19",
    "refs": [
     "p06:0b05"
    ],
@@ -11926,7 +11926,7 @@
    "id": "u00202",
    "kind": "menu",
    "jp": "頭装備Ｎｏ．２０",
-   "en": "",
+   "en": "Head No.20",
    "refs": [
     "p06:0b20"
    ],
@@ -11936,7 +11936,7 @@
    "id": "u00203",
    "kind": "menu",
    "jp": "服        ：全員",
-   "en": "",
+   "en": "Clothes         :All",
    "refs": [
     "p06:0b48"
    ],
@@ -11946,7 +11946,7 @@
    "id": "u00204",
    "kind": "menu",
    "jp": "カチカチ洋服   ：全員",
-   "en": "",
+   "en": "Rock-Hard Outfit:All",
    "refs": [
     "p06:0b63"
    ],
@@ -11956,7 +11956,7 @@
    "id": "u00205",
    "kind": "menu",
    "jp": "スーパースター  ：全員",
-   "en": "",
+   "en": "Superstar       :All",
    "refs": [
     "p06:0b83"
    ],
@@ -11966,7 +11966,7 @@
    "id": "u00206",
    "kind": "menu",
    "jp": "チマ チョゴリ  ：全員",
-   "en": "",
+   "en": "Chima Jeogori   :All",
    "refs": [
     "p06:0ba1"
    ],
@@ -11976,7 +11976,7 @@
    "id": "u00207",
    "kind": "menu",
    "jp": "可愛いブレザー  ：全員",
-   "en": "",
+   "en": "Cute Blazer     :All",
    "refs": [
     "p06:0bc1"
    ],
@@ -11986,7 +11986,7 @@
    "id": "u00208",
    "kind": "menu",
    "jp": "天志僧衣     ：天",
-   "en": "",
+   "en": "Tenshi Robe     :Te",
    "refs": [
     "p06:0be0"
    ],
@@ -11996,7 +11996,7 @@
    "id": "u00209",
    "kind": "menu",
    "jp": "忍者服      ：忍く",
-   "en": "",
+   "en": "Ninja Garb      :Ni Ku",
    "refs": [
     "p06:0bfc"
    ],
@@ -12006,7 +12006,7 @@
    "id": "u00210",
    "kind": "menu",
    "jp": "黒装束      ：忍く",
-   "en": "",
+   "en": "Black Garb      :Ni Ku",
    "refs": [
     "p06:0c18"
    ],
@@ -12016,7 +12016,7 @@
    "id": "u00211",
    "kind": "menu",
    "jp": "風の忍服     ：忍く",
-   "en": "",
+   "en": "Wind Ninja Garb :Ni Ku",
    "refs": [
     "p06:0c34"
    ],
@@ -12026,7 +12026,7 @@
    "id": "u00212",
    "kind": "menu",
    "jp": "柔道着      ：柔ぬ",
-   "en": "",
+   "en": "Judo Gi         :Ju Nu",
    "refs": [
     "p06:0c50"
    ],
@@ -12036,7 +12036,7 @@
    "id": "u00213",
    "kind": "menu",
    "jp": "高級柔道着    ：柔ぬ",
-   "en": "",
+   "en": "Fine Judo Gi    :Ju Nu",
    "refs": [
     "p06:0d02"
    ],
@@ -12046,7 +12046,7 @@
    "id": "u00214",
    "kind": "menu",
    "jp": "タイガー柔道着  ：柔",
-   "en": "",
+   "en": "Tiger Judo Gi   :Ju",
    "refs": [
     "p06:0d20"
    ],
@@ -12056,7 +12056,7 @@
    "id": "u00215",
    "kind": "menu",
    "jp": "男魂       ：柔",
-   "en": "",
+   "en": "Manly Soul      :Ju",
    "refs": [
     "p06:0d3e"
    ],
@@ -12066,7 +12066,7 @@
    "id": "u00216",
    "kind": "menu",
    "jp": "足軽の鎧     ：足侍ぬ",
-   "en": "",
+   "en": "Ashigaru Armor  :As Sa Nu",
    "refs": [
     "p06:0d58"
    ],
@@ -12076,7 +12076,7 @@
    "id": "u00217",
    "kind": "menu",
    "jp": "武者の鎧     ：足侍",
-   "en": "",
+   "en": "Warrior Armor   :As Sa",
    "refs": [
     "p06:0d76"
    ],
@@ -12086,7 +12086,7 @@
    "id": "u00218",
    "kind": "menu",
    "jp": "原家の鎧     ：侍",
-   "en": "",
+   "en": "Hara Clan Armor :Sa",
    "refs": [
     "p06:0d93"
    ],
@@ -12096,7 +12096,7 @@
    "id": "u00219",
    "kind": "menu",
    "jp": "２２年式鎧    ：足侍",
-   "en": "",
+   "en": "Type 22 Armor   :As Sa",
    "refs": [
     "p06:0dae"
    ],
@@ -12106,7 +12106,7 @@
    "id": "u00220",
    "kind": "menu",
    "jp": "コースアーマー  ：足侍",
-   "en": "",
+   "en": "Coarse Armor    :As Sa",
    "refs": [
     "p06:0dcd"
    ],
@@ -12116,7 +12116,7 @@
    "id": "u00221",
    "kind": "menu",
    "jp": "治癒の鎧     ：足侍ぬ",
-   "en": "",
+   "en": "Healing Armor   :As Sa Nu",
    "refs": [
     "p06:0deb"
    ],
@@ -12126,7 +12126,7 @@
    "id": "u00222",
    "kind": "menu",
    "jp": "長門の鎧     ：足侍",
-   "en": "",
+   "en": "Nagato Armor    :As Sa",
    "refs": [
     "p06:0e09"
    ],
@@ -12136,7 +12136,7 @@
    "id": "u00223",
    "kind": "menu",
    "jp": "猿アーマー    ：足侍柔ぬ",
-   "en": "",
+   "en": "Monkey Armor    :As Sa Ju Nu",
    "refs": [
     "p06:0e4b"
    ],
@@ -12146,7 +12146,7 @@
    "id": "u00224",
    "kind": "menu",
    "jp": "富嶽       ：足侍",
-   "en": "",
+   "en": "Fugaku          :As Sa",
    "refs": [
     "p06:0e6b"
    ],
@@ -12156,7 +12156,7 @@
    "id": "u00225",
    "kind": "menu",
    "jp": "ボンテージクロス ：く",
-   "en": "",
+   "en": "Bondage Suit    :Ku",
    "refs": [
     "p06:0e87"
    ],
@@ -12166,7 +12166,7 @@
    "id": "u00226",
    "kind": "menu",
    "jp": "エロチックムーン ：全員",
-   "en": "",
+   "en": "Erotic Moon     :All",
    "refs": [
     "p06:0ea5"
    ],
@@ -12176,7 +12176,7 @@
    "id": "u00227",
    "kind": "menu",
    "jp": "体装備Ｎｏ．２５",
-   "en": "",
+   "en": "Body No.25",
    "refs": [
     "p06:0ec6"
    ],
@@ -12186,7 +12186,7 @@
    "id": "u00228",
    "kind": "menu",
    "jp": "体装備Ｎｏ．２６",
-   "en": "",
+   "en": "Body No.26",
    "refs": [
     "p06:0ee1"
    ],
@@ -12196,7 +12196,7 @@
    "id": "u00229",
    "kind": "menu",
    "jp": "体装備Ｎｏ．２７",
-   "en": "",
+   "en": "Body No.27",
    "refs": [
     "p06:0efc"
    ],
@@ -12206,7 +12206,7 @@
    "id": "u00230",
    "kind": "menu",
    "jp": "体装備Ｎｏ．２８",
-   "en": "",
+   "en": "Body No.28",
    "refs": [
     "p06:0f17"
    ],
@@ -12216,7 +12216,7 @@
    "id": "u00231",
    "kind": "menu",
    "jp": "体装備Ｎｏ．２９",
-   "en": "",
+   "en": "Body No.29",
    "refs": [
     "p06:0f32"
    ],
@@ -12226,7 +12226,7 @@
    "id": "u00232",
    "kind": "menu",
    "jp": "体装備Ｎｏ．３０",
-   "en": "",
+   "en": "Body No.30",
    "refs": [
     "p06:0f4d"
    ],
@@ -12236,7 +12236,7 @@
    "id": "u00233",
    "kind": "menu",
    "jp": "ぞうり      ：全員",
-   "en": "",
+   "en": "Zori            :All",
    "refs": [
     "p06:0f75"
    ],
@@ -12246,7 +12246,7 @@
    "id": "u00234",
    "kind": "menu",
    "jp": "たび       ：全員",
-   "en": "",
+   "en": "Tabi            :All",
    "refs": [
     "p06:0f90"
    ],
@@ -12256,7 +12256,7 @@
    "id": "u00235",
    "kind": "menu",
    "jp": "すねあて     ：足侍柔忍く",
-   "en": "",
+   "en": "Shin Guards    :As Sa Ju Ni Ku",
    "refs": [
     "p06:0fab"
    ],
@@ -12266,7 +12266,7 @@
    "id": "u00236",
    "kind": "menu",
    "jp": "毛皮のくつ    ：全員",
-   "en": "",
+   "en": "Fur Boots       :All",
    "refs": [
     "p06:0fca"
    ],
@@ -12276,7 +12276,7 @@
    "id": "u00237",
    "kind": "menu",
    "jp": "鉄ゲタ      ：足侍柔ぬ",
-   "en": "",
+   "en": "Iron Geta       :As Sa Ju Nu",
    "refs": [
     "p06:0fe6"
    ],
@@ -12286,7 +12286,7 @@
    "id": "u00238",
    "kind": "menu",
    "jp": "かんじき     ：全員",
-   "en": "",
+   "en": "Snowshoes       :All",
    "refs": [
     "p06:1006"
    ],
@@ -12296,7 +12296,7 @@
    "id": "u00239",
    "kind": "menu",
    "jp": "一本ゲタ     ：全員",
-   "en": "",
+   "en": "Tall Geta       :All",
    "refs": [
     "p06:1021"
    ],
@@ -12306,7 +12306,7 @@
    "id": "u00240",
    "kind": "menu",
    "jp": "寅一       ：全員",
-   "en": "",
+   "en": "Toraichi        :All",
    "refs": [
     "p06:103f"
    ],
@@ -12316,7 +12316,7 @@
    "id": "u00241",
    "kind": "menu",
    "jp": "ウェスタンブーツ ：足侍",
-   "en": "",
+   "en": "Western Boots   :As Sa",
    "refs": [
     "p06:105b"
    ],
@@ -12326,7 +12326,7 @@
    "id": "u00242",
    "kind": "menu",
    "jp": "金のわらじ    ：全員",
-   "en": "",
+   "en": "Gold Sandals    :All",
    "refs": [
     "p06:107c"
    ],
@@ -12336,7 +12336,7 @@
    "id": "u00243",
    "kind": "menu",
    "jp": "鉄球       ：柔ぬ",
-   "en": "",
+   "en": "Iron Ball       :Ju Nu",
    "refs": [
     "p06:10f1"
    ],
@@ -12346,7 +12346,7 @@
    "id": "u00244",
    "kind": "menu",
    "jp": "福助       ：全員",
-   "en": "",
+   "en": "Fukusuke        :All",
    "refs": [
     "p06:110c"
    ],
@@ -12356,7 +12356,7 @@
    "id": "u00245",
    "kind": "menu",
    "jp": "絹のたび     ：全員",
-   "en": "",
+   "en": "Silk Tabi       :All",
    "refs": [
     "p06:1128"
    ],
@@ -12366,7 +12366,7 @@
    "id": "u00246",
    "kind": "menu",
    "jp": "ハイヒール！   ：く",
-   "en": "",
+   "en": "High Heels!     :Ku",
    "refs": [
     "p06:1144"
    ],
@@ -12376,7 +12376,7 @@
    "id": "u00247",
    "kind": "menu",
    "jp": "足装備Ｎｏ．１５",
-   "en": "",
+   "en": "Feet No.15",
    "refs": [
     "p06:1160"
    ],
@@ -12386,7 +12386,7 @@
    "id": "u00248",
    "kind": "menu",
    "jp": "足装備Ｎｏ．１６",
-   "en": "",
+   "en": "Feet No.16",
    "refs": [
     "p06:117b"
    ],
@@ -12396,7 +12396,7 @@
    "id": "u00249",
    "kind": "menu",
    "jp": "足装備Ｎｏ．１７",
-   "en": "",
+   "en": "Feet No.17",
    "refs": [
     "p06:1196"
    ],
@@ -12406,7 +12406,7 @@
    "id": "u00250",
    "kind": "menu",
    "jp": "足装備Ｎｏ．１８",
-   "en": "",
+   "en": "Feet No.18",
    "refs": [
     "p06:11b1"
    ],
@@ -12416,7 +12416,7 @@
    "id": "u00251",
    "kind": "menu",
    "jp": "足装備Ｎｏ．１９",
-   "en": "",
+   "en": "Feet No.19",
    "refs": [
     "p06:11cc"
    ],
@@ -12426,7 +12426,7 @@
    "id": "u00252",
    "kind": "menu",
    "jp": "足装備Ｎｏ．２０",
-   "en": "",
+   "en": "Feet No.20",
    "refs": [
     "p06:11e7"
    ],
@@ -12436,7 +12436,7 @@
    "id": "u00253",
    "kind": "menu",
    "jp": "小手       ：足侍柔忍く",
-   "en": "",
+   "en": "Gauntlets      :As Sa Ju Ni Ku",
    "refs": [
     "p06:120f"
    ],
@@ -12446,7 +12446,7 @@
    "id": "u00254",
    "kind": "menu",
    "jp": "丈夫な小手    ：足侍",
-   "en": "",
+   "en": "Sturdy Gauntlets:As Sa",
    "refs": [
     "p06:1230"
    ],
@@ -12456,7 +12456,7 @@
    "id": "u00255",
    "kind": "menu",
    "jp": "金の腕輪     ：全員",
-   "en": "",
+   "en": "Gold Bangle     :All",
    "refs": [
     "p06:124e"
    ],
@@ -12466,7 +12466,7 @@
    "id": "u00256",
    "kind": "menu",
    "jp": "銀の腕輪     ：全員",
-   "en": "",
+   "en": "Silver Bangle   :All",
    "refs": [
     "p06:126b"
    ],
@@ -12476,7 +12476,7 @@
    "id": "u00257",
    "kind": "menu",
    "jp": "パールの腕輪   ：全員",
-   "en": "",
+   "en": "Pearl Bangle    :All",
    "refs": [
     "p06:1288"
    ],
@@ -12486,7 +12486,7 @@
    "id": "u00258",
    "kind": "menu",
    "jp": "手袋       ：全員",
-   "en": "",
+   "en": "Gloves          :All",
    "refs": [
     "p06:12a6"
    ],
@@ -12496,7 +12496,7 @@
    "id": "u00259",
    "kind": "menu",
    "jp": "レザーの手袋   ：く",
-   "en": "",
+   "en": "Leather Gloves  :Ku",
    "refs": [
     "p06:12c2"
    ],
@@ -12506,7 +12506,7 @@
    "id": "u00260",
    "kind": "menu",
    "jp": "爆熱神指     ：柔",
-   "en": "",
+   "en": "God Finger      :Ju",
    "refs": [
     "p06:12dd"
    ],
@@ -12516,7 +12516,7 @@
    "id": "u00261",
    "kind": "menu",
    "jp": "腕装備Ｎｏ．０９",
-   "en": "",
+   "en": "Arms No.09",
    "refs": [
     "p06:12f9"
    ],
@@ -12526,7 +12526,7 @@
    "id": "u00262",
    "kind": "menu",
    "jp": "腕装備Ｎｏ．１０",
-   "en": "",
+   "en": "Arms No.10",
    "refs": [
     "p06:1314"
    ],
@@ -12536,7 +12536,7 @@
    "id": "u00263",
    "kind": "menu",
    "jp": "白帯       ：柔",
-   "en": "",
+   "en": "White Belt      :Ju",
    "refs": [
     "p06:1343"
    ],
@@ -12546,7 +12546,7 @@
    "id": "u00264",
    "kind": "menu",
    "jp": "黒帯       ：柔",
-   "en": "",
+   "en": "Black Belt      :Ju",
    "refs": [
     "p06:135d"
    ],
@@ -12556,7 +12556,7 @@
    "id": "u00265",
    "kind": "menu",
    "jp": "赤帯       ：柔",
-   "en": "",
+   "en": "Red Belt        :Ju",
    "refs": [
     "p06:1377"
    ],
@@ -12566,7 +12566,7 @@
    "id": "u00266",
    "kind": "menu",
    "jp": "金帯       ：柔",
-   "en": "",
+   "en": "Gold Belt       :Ju",
    "refs": [
     "p06:1391"
    ],
@@ -12576,7 +12576,7 @@
    "id": "u00267",
    "kind": "menu",
    "jp": "天の護符     ：呪",
-   "en": "",
+   "en": "Heaven Talisman :So",
    "refs": [
     "p06:13ab"
    ],
@@ -12586,7 +12586,7 @@
    "id": "u00268",
    "kind": "menu",
    "jp": "地の護符     ：呪",
-   "en": "",
+   "en": "Earth Talisman  :So",
    "refs": [
     "p06:13c6"
    ],
@@ -12596,7 +12596,7 @@
    "id": "u00269",
    "kind": "menu",
    "jp": "人の護符     ：呪",
-   "en": "",
+   "en": "Human Talisman  :So",
    "refs": [
     "p06:13e1"
    ],
@@ -12606,7 +12606,7 @@
    "id": "u00270",
    "kind": "menu",
    "jp": "はらたま     ：天",
-   "en": "",
+   "en": "Haratama        :Te",
    "refs": [
     "p06:13fc"
    ],
@@ -12616,7 +12616,7 @@
    "id": "u00271",
    "kind": "menu",
    "jp": "きよたま     ：天",
-   "en": "",
+   "en": "Kiyotama        :Te",
    "refs": [
     "p06:1414"
    ],
@@ -12626,7 +12626,7 @@
    "id": "u00272",
    "kind": "menu",
    "jp": "原家の印篭    ：侍",
-   "en": "",
+   "en": "Hara Clan Inro  :Sa",
    "refs": [
     "p06:142c"
    ],
@@ -12636,7 +12636,7 @@
    "id": "u00273",
    "kind": "menu",
    "jp": "いかりやちょうけし：ぬ",
-   "en": "",
+   "en": "Ikariya Chokeshi:Nu",
    "refs": [
     "p06:14a1"
    ],
@@ -12646,7 +12646,7 @@
    "id": "u00274",
    "kind": "menu",
    "jp": "死んだ小鳥の死体 ：ぬ",
-   "en": "",
+   "en": "Dead Bird Corpse:Nu",
    "refs": [
     "p06:14b8"
    ],
@@ -12656,7 +12656,7 @@
    "id": "u00275",
    "kind": "menu",
    "jp": "らっきょ     ：ぬ",
-   "en": "",
+   "en": "Rakkyo          :Nu",
    "refs": [
     "p06:14d5"
    ],
@@ -12666,7 +12666,7 @@
    "id": "u00276",
    "kind": "menu",
    "jp": "火の巻      ：忍く",
-   "en": "",
+   "en": "Fire Scroll     :Ni Ku",
    "refs": [
     "p06:14ec"
    ],
@@ -12676,7 +12676,7 @@
    "id": "u00277",
    "kind": "menu",
    "jp": "水の巻      ：忍く",
-   "en": "",
+   "en": "Water Scroll    :Ni Ku",
    "refs": [
     "p06:1507"
    ],
@@ -12686,7 +12686,7 @@
    "id": "u00278",
    "kind": "menu",
    "jp": "土の巻      ：忍く",
-   "en": "",
+   "en": "Earth Scroll    :Ni Ku",
    "refs": [
     "p06:1522"
    ],
@@ -12696,7 +12696,7 @@
    "id": "u00279",
    "kind": "menu",
    "jp": "雷の巻      ：忍く",
-   "en": "",
+   "en": "Thunder Scroll  :Ni Ku",
    "refs": [
     "p06:153d"
    ],
@@ -12706,7 +12706,7 @@
    "id": "u00280",
    "kind": "menu",
    "jp": "光の巻      ：忍く",
-   "en": "",
+   "en": "Light Scroll    :Ni Ku",
    "refs": [
     "p06:1558"
    ],
@@ -12716,7 +12716,7 @@
    "id": "u00281",
    "kind": "menu",
    "jp": "闇の巻      ：忍く",
-   "en": "",
+   "en": "Dark Scroll     :Ni Ku",
    "refs": [
     "p06:1573"
    ],
@@ -12726,7 +12726,7 @@
    "id": "u00282",
    "kind": "menu",
    "jp": "網タイツ     ：く",
-   "en": "",
+   "en": "Fishnet Tights  :Ku",
    "refs": [
     "p06:158e"
    ],
@@ -12736,7 +12736,7 @@
    "id": "u00283",
    "kind": "menu",
    "jp": "力の指輪     ：全員",
-   "en": "",
+   "en": "Ring of Power   :All",
    "refs": [
     "p06:15b6"
    ],
@@ -12746,7 +12746,7 @@
    "id": "u00284",
    "kind": "menu",
    "jp": "早さの指輪    ：全員",
-   "en": "",
+   "en": "Ring of Speed   :All",
    "refs": [
     "p06:15d3"
    ],
@@ -12756,7 +12756,7 @@
    "id": "u00285",
    "kind": "menu",
    "jp": "体力の指輪    ：全員",
-   "en": "",
+   "en": "Ring of Stamina :All",
    "refs": [
     "p06:15f0"
    ],
@@ -12766,7 +12766,7 @@
    "id": "u00286",
    "kind": "menu",
    "jp": "勇気の指輪    ：全員",
-   "en": "",
+   "en": "Ring of Courage :All",
    "refs": [
     "p06:160e"
    ],
@@ -12776,7 +12776,7 @@
    "id": "u00287",
    "kind": "menu",
    "jp": "石榴石の耳飾り  ：全員",
-   "en": "",
+   "en": "Garnet Earrings :All",
    "refs": [
     "p06:162c"
    ],
@@ -12786,7 +12786,7 @@
    "id": "u00288",
    "kind": "menu",
    "jp": "水晶の耳飾り   ：全員",
-   "en": "",
+   "en": "Crystal Earrings:All",
    "refs": [
     "p06:164b"
    ],
@@ -12796,7 +12796,7 @@
    "id": "u00289",
    "kind": "menu",
    "jp": "琥珀の耳飾り   ：全員",
-   "en": "",
+   "en": "Amber Earrings  :All",
    "refs": [
     "p06:1669"
    ],
@@ -12806,7 +12806,7 @@
    "id": "u00290",
    "kind": "menu",
    "jp": "金剛石の耳飾り  ：全員",
-   "en": "",
+   "en": "Diamond Earrings:All",
    "refs": [
     "p06:1687"
    ],
@@ -12816,7 +12816,7 @@
    "id": "u00291",
    "kind": "menu",
    "jp": "黒真珠の耳飾り  ：全員",
-   "en": "",
+   "en": "B.Pearl Earrings:All",
    "refs": [
     "p06:16a6"
    ],
@@ -12826,7 +12826,7 @@
    "id": "u00292",
    "kind": "menu",
    "jp": "商売繁昌の御守  ：全員",
-   "en": "",
+   "en": "Business Amulet :All",
    "refs": [
     "p06:16c5"
    ],
@@ -12836,7 +12836,7 @@
    "id": "u00293",
    "kind": "menu",
    "jp": "無病息災の御守  ：全員",
-   "en": "",
+   "en": "Health Amulet   :All",
    "refs": [
     "p06:173e"
    ],
@@ -12846,7 +12846,7 @@
    "id": "u00294",
    "kind": "menu",
    "jp": "交通安全の御守  ：全員",
-   "en": "",
+   "en": "Travel Amulet   :All",
    "refs": [
     "p06:175e"
    ],
@@ -12856,7 +12856,7 @@
    "id": "u00295",
    "kind": "menu",
    "jp": "学業成就の御守  ：全員",
-   "en": "",
+   "en": "Study Amulet    :All",
    "refs": [
     "p06:177e"
    ],
@@ -12866,7 +12866,7 @@
    "id": "u00296",
    "kind": "menu",
    "jp": "くまのワッペン  ：全員",
-   "en": "",
+   "en": "Bear Patch      :All",
    "refs": [
     "p06:179e"
    ],
@@ -12876,7 +12876,7 @@
    "id": "u00297",
    "kind": "menu",
    "jp": "くつした     ：全員",
-   "en": "",
+   "en": "Socks           :All",
    "refs": [
     "p06:17bc"
    ],
@@ -12886,7 +12886,7 @@
    "id": "u00298",
    "kind": "menu",
    "jp": "扇子ｏｆワンダー ：全員",
-   "en": "",
+   "en": "Fan of Wonder   :All",
    "refs": [
     "p06:17d6"
    ],
@@ -12896,7 +12896,7 @@
    "id": "u00299",
    "kind": "menu",
    "jp": "手鏡       ：全員",
-   "en": "",
+   "en": "Hand Mirror     :All",
    "refs": [
     "p06:17f7"
    ],
@@ -12906,7 +12906,7 @@
    "id": "u00300",
    "kind": "menu",
    "jp": "力だすき     ：全員",
-   "en": "",
+   "en": "Power Sash      :All",
    "refs": [
     "p06:1813"
    ],
@@ -12916,7 +12916,7 @@
    "id": "u00301",
    "kind": "menu",
    "jp": "ガーターベルト  ：く",
-   "en": "",
+   "en": "Garter Belt     :Ku",
    "refs": [
     "p06:182f"
    ],
@@ -12926,7 +12926,7 @@
    "id": "u00302",
    "kind": "menu",
    "jp": "飾り２０",
-   "en": "",
+   "en": "Acc. 20",
    "refs": [
     "p06:184b"
    ],
@@ -13247,7 +13247,7 @@
    "id": "u00303",
    "kind": "menu",
    "jp": "装備しない",
-   "en": "",
+   "en": "No Equip",
    "refs": [
     "p06:219f"
    ],
@@ -18245,7 +18245,7 @@
    "id": "u00304",
    "kind": "menu",
    "jp": "世色癌１",
-   "en": "",
+   "en": "Sesho. 1",
    "refs": [
     "p19:01d5"
    ],
@@ -18255,7 +18255,7 @@
    "id": "u00305",
    "kind": "menu",
    "jp": "世色癌２",
-   "en": "",
+   "en": "Sesho. 2",
    "refs": [
     "p19:01e1"
    ],
@@ -18265,7 +18265,7 @@
    "id": "u00306",
    "kind": "menu",
    "jp": "世色癌３",
-   "en": "",
+   "en": "Sesho. 3",
    "refs": [
     "p19:01ed"
    ],
@@ -18275,7 +18275,7 @@
    "id": "u00307",
    "kind": "menu",
    "jp": "帰り木",
-   "en": "",
+   "en": "Ret.Wood",
    "refs": [
     "p19:0200"
    ],
@@ -18285,7 +18285,7 @@
    "id": "u00308",
    "kind": "menu",
    "jp": "まんが肉",
-   "en": "",
+   "en": "Mng.Meat",
    "refs": [
     "p19:0210"
    ],
@@ -18295,7 +18295,7 @@
    "id": "u00309",
    "kind": "menu",
    "jp": "竜角惨",
-   "en": "",
+   "en": "Ryukaku.",
    "refs": [
     "p19:0221"
    ],
@@ -18305,7 +18305,7 @@
    "id": "u00310",
    "kind": "menu",
    "jp": "復活の小判",
-   "en": "",
+   "en": "Rev.Coin",
    "refs": [
     "p19:022b"
    ],
@@ -18315,7 +18315,7 @@
    "id": "u00311",
    "kind": "menu",
    "jp": "店を離れる",
-   "en": "",
+   "en": "Leave",
    "refs": [
     "p19:0238",
     "p19:0abe"
@@ -18426,7 +18426,7 @@
    "id": "u00312",
    "kind": "menu",
    "jp": "買わない",
-   "en": "",
+   "en": "Cancel",
    "refs": [
     "p19:0504",
     "p19:18bc"
@@ -18437,7 +18437,7 @@
    "id": "u00313",
    "kind": "menu",
    "jp": "買う",
-   "en": "",
+   "en": "Buy",
    "refs": [
     "p19:050d",
     "p19:18c5"
@@ -18538,7 +18538,7 @@
    "id": "u00314",
    "kind": "menu",
    "jp": "防具",
-   "en": "",
+   "en": "Armor",
    "refs": [
     "p19:0b2d"
    ],
@@ -18568,7 +18568,7 @@
    "id": "u00315",
    "kind": "menu",
    "jp": "カタナ",
-   "en": "",
+   "en": "Katana",
    "refs": [
     "p19:0bcf",
     "p19:0c36"
@@ -18579,7 +18579,7 @@
    "id": "u00316",
    "kind": "menu",
    "jp": "日本刀 丙",
-   "en": "",
+   "en": "Katana C",
    "refs": [
     "p19:0bd9",
     "p19:0c40",
@@ -18591,7 +18591,7 @@
    "id": "u00317",
    "kind": "menu",
    "jp": "なぎなた",
-   "en": "",
+   "en": "Naginata",
    "refs": [
     "p19:0be6"
    ],
@@ -18601,7 +18601,7 @@
    "id": "u00318",
    "kind": "menu",
    "jp": "イナズマの剣",
-   "en": "",
+   "en": "Ltng.Sword",
    "refs": [
     "p19:0bef",
     "p19:0ca3"
@@ -18612,7 +18612,7 @@
    "id": "u00319",
    "kind": "menu",
    "jp": "日本刀 乙",
-   "en": "",
+   "en": "Katana B",
    "refs": [
     "p19:0bfe",
     "p19:0cb2"
@@ -18623,7 +18623,7 @@
    "id": "u00320",
    "kind": "menu",
    "jp": "氷の鈴",
-   "en": "",
+   "en": "Ice Bell",
    "refs": [
     "p19:0c13",
     "p19:0cec"
@@ -18634,7 +18634,7 @@
    "id": "u00321",
    "kind": "menu",
    "jp": "ガラスの鈴",
-   "en": "",
+   "en": "Glass Bell",
    "refs": [
     "p19:0c1c",
     "p19:0cf5"
@@ -18645,7 +18645,7 @@
    "id": "u00322",
    "kind": "menu",
    "jp": "風の忍刀",
-   "en": "",
+   "en": "Wind Bld",
    "refs": [
     "p19:0c4d",
     "p19:0d30"
@@ -18656,7 +18656,7 @@
    "id": "u00323",
    "kind": "menu",
    "jp": "くまさんの爪",
-   "en": "",
+   "en": "Teddy Claw",
    "refs": [
     "p19:0c58",
     "p19:0d3b"
@@ -18667,7 +18667,7 @@
    "id": "u00324",
    "kind": "menu",
    "jp": "力の杖",
-   "en": "",
+   "en": "PwrStaff",
    "refs": [
     "p19:0c6b",
     "p19:0d56"
@@ -18678,7 +18678,7 @@
    "id": "u00325",
    "kind": "menu",
    "jp": "知恵の杖",
-   "en": "",
+   "en": "WisStaff",
    "refs": [
     "p19:0c74",
     "p19:0d5f"
@@ -18689,7 +18689,7 @@
    "id": "u00326",
    "kind": "menu",
    "jp": "柴田刀",
-   "en": "",
+   "en": "Shibata",
    "refs": [
     "p19:0cbf"
    ],
@@ -18699,7 +18699,7 @@
    "id": "u00327",
    "kind": "menu",
    "jp": "くじら殺し",
-   "en": "",
+   "en": "Whale Slyr",
    "refs": [
     "p19:0cc9"
    ],
@@ -18709,7 +18709,7 @@
    "id": "u00328",
    "kind": "menu",
    "jp": "Ｄ・スレイヤー",
-   "en": "",
+   "en": "Dragon Slayer",
    "refs": [
     "p19:0cd4"
    ],
@@ -18719,7 +18719,7 @@
    "id": "u00329",
    "kind": "menu",
    "jp": "鉛の鈴",
-   "en": "",
+   "en": "LeadBell",
    "refs": [
     "p19:0d02"
    ],
@@ -18729,7 +18729,7 @@
    "id": "u00330",
    "kind": "menu",
    "jp": "白金の鈴",
-   "en": "",
+   "en": "Plt.Bell",
    "refs": [
     "p19:0d0b"
    ],
@@ -18739,7 +18739,7 @@
    "id": "u00331",
    "kind": "menu",
    "jp": "ムチ",
-   "en": "",
+   "en": "Whip",
    "refs": [
     "p19:0d46"
    ],
@@ -18759,7 +18759,7 @@
    "id": "u00332",
    "kind": "menu",
    "jp": "鉄かぶと",
-   "en": "",
+   "en": "IronHelm",
    "refs": [
     "p19:0db8",
     "p19:0f29",
@@ -18771,7 +18771,7 @@
    "id": "u00333",
    "kind": "menu",
    "jp": "武者の鎧",
-   "en": "",
+   "en": "Wr.Armor",
    "refs": [
     "p19:0dc2"
    ],
@@ -18781,7 +18781,7 @@
    "id": "u00334",
    "kind": "menu",
    "jp": "２２年式鎧",
-   "en": "",
+   "en": "Type 22",
    "refs": [
     "p19:0dcd",
     "p19:0f33",
@@ -18793,7 +18793,7 @@
    "id": "u00335",
    "kind": "menu",
    "jp": "すねあて",
-   "en": "",
+   "en": "Shin Grd",
    "refs": [
     "p19:0ddb",
     "p19:0e17",
@@ -18809,7 +18809,7 @@
    "id": "u00336",
    "kind": "menu",
    "jp": "手袋",
-   "en": "",
+   "en": "Gloves",
    "refs": [
     "p19:0de3",
     "p19:0e1f",
@@ -18824,7 +18824,7 @@
    "id": "u00337",
    "kind": "menu",
    "jp": "面",
-   "en": "",
+   "en": "Mask",
    "refs": [
     "p19:0df3",
     "p19:0e37",
@@ -18838,7 +18838,7 @@
    "id": "u00338",
    "kind": "menu",
    "jp": "山菜ハット",
-   "en": "",
+   "en": "Veggie Hat",
    "refs": [
     "p19:0df9",
     "p19:0fa1",
@@ -18850,7 +18850,7 @@
    "id": "u00339",
    "kind": "menu",
    "jp": "カチカチ洋服",
-   "en": "",
+   "en": "Hard Outfit",
    "refs": [
     "p19:0e07",
     "p19:0e3d",
@@ -18868,7 +18868,7 @@
    "id": "u00340",
    "kind": "menu",
    "jp": "はちまき",
-   "en": "",
+   "en": "Headband",
    "refs": [
     "p19:0e2f",
     "p19:0ea5",
@@ -18880,7 +18880,7 @@
    "id": "u00341",
    "kind": "menu",
    "jp": "毛皮のくつ",
-   "en": "",
+   "en": "Fur Boots",
    "refs": [
     "p19:0e4d",
     "p19:0ec3",
@@ -18895,7 +18895,7 @@
    "id": "u00342",
    "kind": "menu",
    "jp": "忍者服",
-   "en": "",
+   "en": "Ninja Gi",
    "refs": [
     "p19:0e83",
     "p19:1040"
@@ -18906,7 +18906,7 @@
    "id": "u00343",
    "kind": "menu",
    "jp": "寅一",
-   "en": "",
+   "en": "Toraichi",
    "refs": [
     "p19:0f49"
    ],
@@ -18916,7 +18916,7 @@
    "id": "u00344",
    "kind": "menu",
    "jp": "小手",
-   "en": "",
+   "en": "Gauntlet",
    "refs": [
     "p19:0f51",
     "p19:0f91"
@@ -18927,7 +18927,7 @@
    "id": "u00345",
    "kind": "menu",
    "jp": "雅修の兜",
-   "en": "",
+   "en": "GashuHlm",
    "refs": [
     "p19:0f70"
    ],
@@ -18937,7 +18937,7 @@
    "id": "u00346",
    "kind": "menu",
    "jp": "高級柔道着",
-   "en": "",
+   "en": "FineJudoGi",
    "refs": [
     "p19:0fbf"
    ],
@@ -18947,7 +18947,7 @@
    "id": "u00347",
    "kind": "menu",
    "jp": "パールの腕輪",
-   "en": "",
+   "en": "Pearl Bangl",
    "refs": [
     "p19:0fd5",
     "p19:1019",
@@ -18961,7 +18961,7 @@
    "id": "u00348",
    "kind": "menu",
    "jp": "リボン",
-   "en": "",
+   "en": "Ribbon",
    "refs": [
     "p19:0feb"
    ],
@@ -18971,7 +18971,7 @@
    "id": "u00349",
    "kind": "menu",
    "jp": "かんじき",
-   "en": "",
+   "en": "Snowshoe",
    "refs": [
     "p19:1010"
    ],
@@ -18981,7 +18981,7 @@
    "id": "u00350",
    "kind": "menu",
    "jp": "金のかんざし",
-   "en": "",
+   "en": "Gold Hairpin",
    "refs": [
     "p19:1034"
    ],
@@ -18991,7 +18991,7 @@
    "id": "u00351",
    "kind": "menu",
    "jp": "黒装束",
-   "en": "",
+   "en": "Blk.Garb",
    "refs": [
     "p19:104a"
    ],
@@ -19001,7 +19001,7 @@
    "id": "u00352",
    "kind": "menu",
    "jp": "ベレー帽",
-   "en": "",
+   "en": "Beret",
    "refs": [
     "p19:1072"
    ],
@@ -19011,7 +19011,7 @@
    "id": "u00353",
    "kind": "menu",
    "jp": "一本ゲタ",
-   "en": "",
+   "en": "TallGeta",
    "refs": [
     "p19:1098"
    ],
@@ -19021,7 +19021,7 @@
    "id": "u00354",
    "kind": "menu",
    "jp": "スーパースター",
-   "en": "",
+   "en": "Superstar",
    "refs": [
     "p19:10d8"
    ],
@@ -20438,7 +20438,7 @@
    "id": "u00355",
    "kind": "menu",
    "jp": "このメンバーで出陣する",
-   "en": "",
+   "en": "Sortie with this party",
    "refs": [
     "p22:0c33"
    ],
@@ -20478,7 +20478,7 @@
    "id": "u00356",
    "kind": "menu",
    "jp": "これでいい",
-   "en": "",
+   "en": "Confirm",
    "refs": [
     "p22:134d"
    ],
@@ -20488,7 +20488,7 @@
    "id": "u00357",
    "kind": "menu",
    "jp": "選びなおす",
-   "en": "",
+   "en": "Reselect",
    "refs": [
     "p22:1357"
    ],
@@ -20498,7 +20498,7 @@
    "id": "u00358",
    "kind": "menu",
    "jp": "過去を振り返る",
-   "en": "",
+   "en": "Look Back",
    "refs": [
     "p22:1362"
    ],
@@ -20518,7 +20518,7 @@
    "id": "u00359",
    "kind": "menu",
    "jp": "出陣",
-   "en": "",
+   "en": "Sortie",
    "refs": [
     "p22:1853"
    ],
@@ -20528,7 +20528,7 @@
    "id": "u00360",
    "kind": "menu",
    "jp": "解散",
-   "en": "",
+   "en": "Disband",
    "refs": [
     "p22:185b"
    ],
@@ -20538,7 +20538,7 @@
    "id": "u00361",
    "kind": "menu",
    "jp": "今のキャラを外す",
-   "en": "",
+   "en": "Remove This One",
    "refs": [
     "p22:1863"
    ],
@@ -22408,7 +22408,7 @@
    "id": "n00377",
    "kind": "name",
    "jp": "未定",
-   "en": "",
+   "en": "TBD",
    "refs": [
     "p22:0020",
     "p22:002b",

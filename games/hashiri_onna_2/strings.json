@@ -17,7 +17,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "ランス４．１／４．２\n\n ひんとＤＩＳＫ\n\nＡＬＩＣＥ－ＳＯＦＴ",
-   "en": "",
+   "en": "Rance 4.1/4.2\n\nHint DISK\n\nALICE-SOFT",
    "refs": [
     "p00:0ab6"
    ],
@@ -27,7 +27,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "ランスヒント集",
-   "en": "",
+   "en": "Rance Hints",
    "refs": [
     "p00:0b01"
    ],
@@ -37,7 +37,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "おまけゲーム",
-   "en": "",
+   "en": "Bonus Game",
    "refs": [
     "p00:0b13"
    ],
@@ -47,7 +47,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": " ランス４．１／４．２のヒントおよび\n その他、もろもろのコーナー。\n\n\n （ なんか適当だな・・これの開発のほとんどが\n   走り女２に費やされたのがもろ見えだ）",
-   "en": "",
+   "en": "Hints for Rance 4.1/4.2, plus assorted other corners.\n\n\n(Kind of half-hearted... You can plainly see most of the development went into Running Girls 2.)",
    "refs": [
     "p00:0b32"
    ],
@@ -57,7 +57,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": " それじゃ選んで下さい。",
-   "en": "",
+   "en": "Well then, please make a choice.",
    "refs": [
     "p00:0bae"
    ],
@@ -67,7 +67,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "ランス４１解答",
-   "en": "",
+   "en": "4.1 Solution",
    "refs": [
     "p00:0bc2"
    ],
@@ -77,7 +77,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "ランス４２解答",
-   "en": "",
+   "en": "4.2 Solution",
    "refs": [
     "p00:0bd4"
    ],
@@ -87,7 +87,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "抜ける",
-   "en": "",
+   "en": "Exit",
    "refs": [
     "p00:0be6",
     "p00:2af0"
@@ -98,7 +98,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "Ｒａｎｃｅ４．１  完全解答\n\nけっこう難しいと思われるポイントのみ書かせて頂きます。\n\n１：ハピネス製薬の４Ｆ\n  警備員の子が妨害するので「蹴る」で倒す。\n\n２：４Ｆ第１研究所\n  ジョセフと会う。\n\n３：４Ｆ第２研究所\n  ローズと会う。\n\n４：５Ｆ女の子の部屋\n\n５：１Ｆ受付\n  受付の子と話す。\n\n６：独身寮\n  シルバレルに部屋の事を聞く。",
-   "en": "",
+   "en": "Rance 4.1 - Complete Solution\n\nI'll only cover the points that seem fairly tricky.\n\n1: Happiness Pharmaceuticals 4F\nThe guard girl gets in your way, so knock her down with \"Kick\".\n\n2: 4F Lab No. 1\nMeet Joseph.\n\n3: 4F Lab No. 2\nMeet Rose.\n\n4: 5F Girls' room\n\n5: 1F Reception\nTalk to the receptionist.\n\n6: Bachelor dorm\nAsk Silvarel about a room.",
    "refs": [
     "p00:0bf7"
    ],
@@ -108,7 +108,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "７：自分の部屋\n  あてな２号とＨ出来る（しなくてもよい）\n\n８：迷宮１Ｆ 大広間地点\n  ハニーの石像を見る。\n\n９：迷宮１Ｆ ＹＹ地点\n  たき火を調べる。\n\n１０：迷宮１Ｆ キサラの部屋\n  キサラとバードに会う。\n  机から（魔法瓶）を取る。\n\n１１：迷宮１Ｆ 行き止まり\n  アーニィと会う。\n\n１２：１Ｆ受付\n  言裏が口説いている。",
-   "en": "",
+   "en": "7: Your room\nYou can have sex with Athena 2 (optional).\n\n8: Labyrinth 1F, Great Hall\nLook at the Honey statue.\n\n9: Labyrinth 1F, point YY\nExamine the bonfire.\n\n10: Labyrinth 1F, Kisara's room\nMeet Kisara and Bird.\nTake the (thermos) from the desk.\n\n11: Labyrinth 1F, dead end\nMeet Arnie.\n\n12: 1F Reception\nGenri is hitting on someone.",
    "refs": [
     "p00:0d0d"
    ],
@@ -118,7 +118,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "１３：５Ｆ廊下\n  エリーヌとぶつかる。\n\n１４：ハピネス製薬 外\n  バードと会う。\n\n１５：迷宮１Ｆ Ｘ地点\n  言裏と会い、石像の事を聞く。\n\n１６：迷宮１Ｆ 水たまり\n  魔法瓶を使って水たまりから水を汲む。\n\n１７：迷宮１Ｆ 大広間\n  魔法瓶を使って石像に水をかける。\n\n１８：迷宮２Ｆ Ｃ’\n  つるはしを取る。\n  （これを取ると、謎の女地点に行けなくなる。）",
-   "en": "",
+   "en": "13: 5F Hallway\nBump into Eline.\n\n14: Outside Happiness Pharmaceuticals\nMeet Bird.\n\n15: Labyrinth 1F, point X\nMeet Genri and ask about the statue.\n\n16: Labyrinth 1F, puddle\nUse the thermos to scoop water from the puddle.\n\n17: Labyrinth 1F, Great Hall\nUse the thermos to pour water on the statue.\n\n18: Labyrinth 2F, C'\nTake the pickaxe.\n(Once you take it, you can no longer reach the Mystery Woman point.)",
    "refs": [
     "p00:0e18"
    ],
@@ -128,7 +128,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "１９：迷宮２Ｆ ねちゃ地点\n  魔法瓶を使ってねばねばを取る。\n\n２０：迷宮２Ｆ 召還ちゃん\n  召還ちゃんと会います。\n\n２１：１Ｆ 受付\n  言裏と受付の子のＨを目撃する。\n\n２２：一晩すごす\n  ローズさんとＨする。\n\n２３：４Ｆ 第２研究所\n  魔法瓶を使って、ねばねばをローズに渡す。\n\n２４：迷宮１Ｆ Ｙ地点\n  バードとキサラに会う\n\n２５：４Ｆ 第２研究室\n  ローズと話してワクチンを取る。",
-   "en": "",
+   "en": "19: Labyrinth 2F, Gooey point\nUse the thermos to collect the goo.\n\n20: Labyrinth 2F, Summon-chan\nMeet Summon-chan.\n\n21: 1F Reception\nWitness Genri and the receptionist getting it on.\n\n22: Spend the night\nSleep with Rose.\n\n23: 4F Lab No. 2\nUse the thermos to give the goo to Rose.\n\n24: Labyrinth 1F, point Y\nMeet Bird and Kisara.\n\n25: 4F Lab No. 2\nTalk to Rose and take the vaccine.",
    "refs": [
     "p00:0f31"
    ],
@@ -138,7 +138,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "２６：迷宮２Ｆ ねちゃ地点\n  ワクチンを使って、ねばねばを破壊する。\n\n２７：迷宮１Ｆ 司令部\n  通信機を使ってパーティを見る。\n  操作パネルで毒ガスを止める。\n\n２８：迷宮１Ｆ 倉庫\n  戸棚よりロープを取る。\n\n２９：５Ｆ エリーヌの部屋\n  ［キサラとＨした後で・・］\n\n３０：迷宮２Ｆ 扉\n   だいとかい いんせきおちて ないていた\n\n３１：迷宮２Ｆ こぽこぽ\n   梯子を取ります。（つるはしで掘ってから）\n   （この梯子で独身寮の２Ｆを覗く事が出来ます。\n    ただし、召喚ちゃんを倒す前のみです）",
-   "en": "",
+   "en": "26: Labyrinth 2F, Gooey point\nUse the vaccine to destroy the goo.\n\n27: Labyrinth 1F, Command Center\nUse the radio to watch the party.\nStop the poison gas with the control panel.\n\n28: Labyrinth 1F, Storeroom\nTake the rope from the cupboard.\n\n29: 5F Eline's room\n[After the scene with Kisara...]\n\n30: Labyrinth 2F, Door\nAnswer: daitokai inseki ochite naiteita (\"the big city, a meteor fell, it was crying\")\n\n31: Labyrinth 2F, Gurgle point\nTake the ladder. (After digging with the pickaxe.)\n(With this ladder you can peek into the 2F of the bachelor dorm - but only before you defeat Summon-chan.)",
    "refs": [
     "p00:1068"
    ],
@@ -148,7 +148,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－\nいろいろなＧＡＭＥ ＯＶＥＲのパターン\n\n    ○戦闘で倒されてしまう。\n    ○ドハラス社長を殴る。\n    ○女の子を使ったハニーの罠にかかる。\n    ○レッド草をハニーの倉庫の壺に入れる。\n\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－",
-   "en": "",
+   "en": "----------------------------------\nVarious GAME OVER patterns\n\n- Getting defeated in battle.\n- Punching President Doharas.\n- Falling for the Honey trap that uses a girl.\n- Putting the red herb in the jar in the Honey storeroom.\n\n----------------------------------",
    "refs": [
     "p00:11ec"
    ],
@@ -158,7 +158,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "戦闘時の行動\n\nランス ：\n    通常攻撃\n  ランスアタック\n    パワーを貯めて使う事が出来る。命中するとかなり大きな\n    ダメージを敵に与える。\n\nあてな２号：\n  通常攻撃\n    ギガボウを発射する\n  連続発射\n    総ての目標に対してギガボウを発射する。\n  急所一発\n    敵のいのちを１－６ポイント奪います。うまくいけば\n    強敵でも一撃で殺せます。\n  回復\n    自分のいのちを２ポイント回復させます。",
-   "en": "",
+   "en": "Battle actions\n\nRance:\nNormal Attack\nRance Attack\nCan be used after building up power. When it hits, it deals quite heavy damage to the enemy.\n\nAthena 2:\nNormal Attack\nFires the Giga Bow.\nRapid Fire\nFires the Giga Bow at all targets.\nVital Strike\nSteals 1-6 points of the enemy's life. If it goes well, you can kill even a strong enemy in one hit.\nRecover\nRestores 2 points of her own life.",
    "refs": [
     "p00:1307"
    ],
@@ -168,7 +168,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "フェリス：\n   フェリスは、この物語で１０回まで呼び出す事が出来ます。\n   あまり戦闘が多いゲームじゃありませんが、計画的に呼び出して\n   使うのがいいと思います。敵が４匹出た時とか、強敵のマーティ\n   鈴木が出た時に使うのが一番。\n  通常攻撃\n    カマで攻撃します。\n  デビルビーム\n    強力なビーム光線を発射します。\n\n\nインド魔王の出し方\n  食堂で３つの食材を探し出して、先にキャベツを食べると\n  カレーうどんを作る事が出来るようになり食べると・・\n\n氷山の剣をパワーアップ\n 迷宮１ＦのＺＺ地点の丸い石を叩きまくると剣が\n パワーアップします。",
-   "en": "",
+   "en": "Feris:\nFeris can be summoned up to 10 times in this story. It's not a battle-heavy game, but I think it's best to summon her according to plan. She's best used when 4 enemies show up, or when the tough Marty Suzuki appears.\nNormal Attack\nAttacks with her scythe.\nDevil Beam\nFires a powerful beam.\n\n\nHow to make the Indian Demon King appear\nFind the three ingredients in the cafeteria and eat the cabbage first; then you'll be able to make curry udon, and when you eat it...\n\nPowering up the Iceberg Sword\nKeep smacking the round stone at point ZZ on Labyrinth 1F and your sword will power up.",
    "refs": [
     "p00:1445"
    ],
@@ -178,7 +178,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "くさくさ地点の謎\n 実に意味ありげな場所だが、なんの意味もない。\n ただの臭いだけの場所。\n\n言裏の謎\n 実は、この言裏と言う男は、ＪＡＰＡＮの天志教本山から送られて\n きた諜報員である。ＪＡＰＡＮを制覇しようとしている魔王信長を\n 倒せる人材を捜すのが目的。だが、遊び好きのこの男は、あまりその\n ような事を考えていない。特技として指先よりでる淫の念力により\n どのような女でも濡らす事が出来る。\n （あてなにその技が利かないのは、あてな２号が人工生命体だから）\n\nハニーの罠の謎の女\n ハニーが粘土をコネコネして作った人間もどきのトラップ。\n 人間じゃないので助ける事もＨする事も出来ません。\n 少しだけ見たら速やかに立ち去りましょう。",
-   "en": "",
+   "en": "The mystery of the Stinky point\nIt's a place that seems awfully meaningful, but it means nothing at all. It's just a place that smells.\n\nThe mystery of Genri\nActually, this man Genri is a spy sent from the head temple of the Tenshi sect in JAPAN. His goal is to find someone capable of defeating Demon King Nobunaga, who is trying to conquer JAPAN. But this fun-loving guy doesn't really think about that much. His special skill is a lewd psychic power from his fingertips that can get any woman hot and bothered.\n(The reason the technique doesn't work on Athena is that Athena 2 is an artificial life form.)\n\nThe mystery woman of the Honey trap\nA human look-alike trap that the Honeys made by kneading clay. Since she's not human, you can neither rescue her nor do anything naughty with her. Take a quick look and then promptly leave.",
    "refs": [
     "p00:15f4"
    ],
@@ -188,7 +188,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "Ｒａｎｃｅ４．１の最強のモンスターは？\n 通常だとマーティ鈴木です。かなり強いです。闘神都市２で地下２８Ｆ\n に出てきた奴ですからね。\n 後、さなぎ男がふ化したライデンは、さらに強いです。どうしても\n 戦いたい人は、どうぞ。",
-   "en": "",
+   "en": "The strongest monster in Rance 4.1?\nNormally it's Marty Suzuki. He's pretty strong. After all, he's the guy who showed up on B28F in Toushin Toshi 2.\nAlso, Raiden, who hatches from the Chrysalis Man, is even stronger. Anyone who really wants to fight him, go right ahead.",
    "refs": [
     "p00:17bd"
    ],
@@ -198,7 +198,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "ランス４．２ 解答\n\n０１：砂場、トイレ、散歩道、それぞれの場所にある冷蔵庫を\n   開けようとしてみる。\n\n０２：ハピネス製薬に戻って拷問\n\n０３：通路を塞いでいる爆弾を持っている男\n   会ってからトイレ（基地内）にいき戻ってくると自爆します。\n\n０４：ファルコン\n  Ｘ地点から西へ向かうとファルコンという不死身の男が現れます。\n  何度倒しても西へ進もうとすると現れます。\n  （倒しながら西の地点まで突き進んでも構いませんが・・）\n  ファルコンを倒すのは、不可能なので（時計の針）を手に入れて\n  Ｂの部屋の時計に使って、奥の扉を開けます。\n  そしてクローゼットの中の女の子を犯します。\n  それからファルコンに会うと大丈夫です。",
-   "en": "",
+   "en": "Rance 4.2 - Solution\n\n01: Try to open the refrigerators found in each location: the sandbox, the toilet, and the walking path.\n\n02: Go back to Happiness Pharmaceuticals and torture.\n\n03: The man with the bomb blocking the passage\nAfter meeting him, go to the toilet (inside the base) and come back, and he'll blow himself up.\n\n04: Falcon\nHead west from point X and an undying man named Falcon appears. No matter how many times you beat him, he appears whenever you try to go west.\n(You can beat him over and over and push through to the western point if you like, but...)\nSince defeating Falcon is impossible, get the (clock hand), use it on the clock in room B, and open the door at the back.\nThen force yourself on the girl in the closet.\nAfter that, meeting Falcon will be fine.",
    "refs": [
     "p00:186a"
    ],
@@ -208,7 +208,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "０５：謎の部屋の通り方\n   水があふれ出てくる謎の部屋は、２度目に行くと排水溝を\n   発見する事が出来ます。\n   ［弁当箱］［砂の入ったバケツ］［石］［難しい本］の\n   どれかを使うと重しにして排水溝を開いた状態に出来ます。\n   （どれもない時は、言裏が漬け物石を置いてくれます）\n\n０６：４人の暗殺者と会って、クイズ室を見た後、大きな戸の前に\n   行くとアーニィ達が現れる。\n\n０７：夜逃げ\n   敵は、夜が来るとランスを恐れて夜逃げします。\n   逃げられないようにする為には、言裏かキサラを留守番に残して\n   おいて（キサラを置くとＨシーンが見れない）、砂場の冷蔵庫を\n   見張りさせておきます。散歩道とトイレの冷蔵庫は、基地の中より\n   梯子を登って接着剤で中から封鎖しておく必要があります。\n   （接着剤は、戦闘に勝つと手に入りますが、セェラァを倒した\n    後にハピネス製薬に戻るとドハラス社長がくれます。）",
-   "en": "",
+   "en": "05: Getting through the mystery room\nIn the mystery room where water gushes out, you can find a drain on your second visit.\nUse any one of [Lunchbox], [Bucket of Sand], [Stone] or [Difficult Book] as a weight to keep the drain open.\n(If you have none of them, Genri will put down a pickling stone for you.)\n\n06: After meeting the 4 assassins and seeing the quiz room, go to the big door and Arnie and the others appear.\n\n07: Skipping town at night\nWhen night falls, the enemy gets scared of Rance and skips town.\nTo keep them from escaping, leave Genri or Kisara behind to mind the base (if you leave Kisara, you won't see the H scene), and have them keep watch on the sandbox refrigerator. As for the walking path and toilet refrigerators, you need to climb the ladder from inside the base and seal them from the inside with glue.\n(You get glue by winning battles, but after defeating Sailor, if you go back to Happiness Pharmaceuticals, President Doharas will give you some.)",
    "refs": [
     "p00:1a43"
    ],
@@ -218,7 +218,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "０８：ブレザァとのクイズ\n  間違わないと進まないので間違えて下さい。\n\n０９：下に落ちて一人ぼっち\n  ２カ所の見張りの盗賊と空の部屋を見てから、もう一度\n  空の部屋に戻って下さい。そこで服を奪います。\n\n０９：ブレザァを倒してみんなと合流\n\n１０：司令室前の扉\n   ぶたの金庫の中の鍵で開きます。\n   ぶたの金庫の開け方は、ぶた金庫を見てからパーティを\n   拷問して聞いて下さい。",
-   "en": "",
+   "en": "08: Quiz with Blazer\nYou can't advance unless you get it wrong, so please answer wrong.\n\n09: Fallen down and all alone\nLook at the two bandit lookouts and the empty room, then go back to the empty room once more. There you steal some clothes.\n\n09: Defeat Blazer and regroup with everyone\n\n10: The door in front of the command room\nIt opens with the key inside the piggy safe.\nTo find out how to open the piggy safe, look at it and then torture the party to ask them.",
    "refs": [
     "p00:1cae"
    ],
@@ -228,7 +228,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "１１：最後の長い通路\n  もし、４人の暗殺者を殺していないとここで連続で\n  現れます。\n  １度目  スパルタン，如芙花\n  ２度目  スパルタン、如芙花、Ｄ・ブラボー\n  ３度目  スパルタン、如芙花、Ｄ・ブラボー、摩利支天\n  一人ずつ確実に殺していかないと３度目の戦闘では、全員と\n  戦う羽目になるので注意が必要です。\n  とにかく気絶させて確実に止めを刺す事が必要です。\n\n\n\nＧＡＭＥ ＯＶＥＲ\n ○ウェンリーナーの部屋の自爆装置を押す\n ○落ちた部屋で一人でベッドで寝る\n ○ある部屋で謎のポスターを１０回見る\n ○アーニィ、セェラァ、ブレザァ、ジャンスカを戦闘で殺して\n  しまう。\n ○戦闘に破れる\n ○エンジェル組に夜逃げされる。",
-   "en": "",
+   "en": "11: The last long passage\nIf you haven't killed the 4 assassins, they'll appear here one after another.\n1st time: Spartan, Nyofuka\n2nd time: Spartan, Nyofuka, D. Bravo\n3rd time: Spartan, Nyofuka, D. Bravo, Marishiten\nIf you don't make sure to kill them one at a time, you'll end up fighting all of them in the third battle, so be careful.\nIn any case, you need to knock them out and make sure to finish them off.\n\n\n\nGAME OVER\n- Pressing the self-destruct button in Wenrina's room\n- Sleeping alone in the bed in the room you fell into\n- Looking at the mysterious poster in a certain room 10 times\n- Killing Arnie, Sailor, Blazer or Jumpskirt in battle\n- Losing a battle\n- Letting the Angel Squad skip town at night",
    "refs": [
     "p00:1dcb"
    ],
@@ -238,7 +238,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "ウェンリーナーの部屋\n   Ｂの部屋で戸棚を調べて本を手に入れます。\n   （この本は、排水溝を塞ぐのにも使えますが、使わないように）\n   セェラァの部屋の水槽に本を沈めて、染み出たインクでサバを\n   殺します。そして水の鍵を取ります。\n   その鍵を使うとウェンリーナーの部屋に入れます。\n\nブレザァが誰かにやられている。\n さらし者にされたブレザァがやられるのは、ランス達が\n 司令室前にきた頃である。その後、行けばやられたブレザァ\n を見る事が出来る。\n\n通路の途中で見かけた女の子\n ランスが一人の時に敵基地内で見かけた女の子は、絵のある場所の\n 隠し部屋に隠れています。\n 絵を少し調べた後にパーティを拷問して聞くと隠し部屋の開け方を\n 教えてくれます。",
-   "en": "",
+   "en": "Wenrina's room\nExamine the cupboard in room B to get a book.\n(The book can also be used to block the drain, but don't use it for that.)\nSink the book in the water tank in Sailor's room and kill the mackerel with the ink that seeps out. Then take the water key.\nUse that key to enter Wenrina's room.\n\nSomeone is having their way with Blazer.\nBlazer, put on public display, gets done in around the time Rance and co. reach the front of the command room. If you go after that, you can see Blazer after the fact.\n\nThe girl you glimpsed partway down the passage\nThe girl Rance glimpsed inside the enemy base while he was alone is hiding in a secret room where the painting is.\nExamine the painting a little, then torture the party to ask, and they'll tell you how to open the secret room.",
    "refs": [
     "p00:1fc8"
    ],
@@ -248,7 +248,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "聖女モンスター\n この世界に４人しかいない特別な女の子モンスターです。\n 彼女達は、他にない特別な能力と共に新しい種族を生み出す\n 力があります。ウェンリーナー他に３人いますが設定だけの\n 問題でこの物語に出て来る事は、ありません。\n\nレア女の子モンスター\n 同種が無数に存在する普通の女の子モンスターと違い、この世に\n 一匹しか存在しない特別な女の子モンスターです。\n 彼女らは、死ぬとどこかに転生する事になります。\n\n\n一般人は、殺していいのか？\n エンジェル組の基地の中には、非戦闘員の事務員と\n 出会う事もあります。戦闘の選択枝で見逃す事も\n 出来ますが、殺しても何のペナルティもありません。\n （良心の呵責さえ無ければ、どんどん経験点をかせぐ\n  事が出来ます。）",
-   "en": "",
+   "en": "Saint Monsters\nSpecial girl monsters, of whom there are only 4 in this world. Along with unique special abilities, they have the power to give birth to new species. Besides Wenrina there are 3 others, but they're just background setting and never appear in this story.\n\nRare Girl Monsters\nUnlike ordinary girl monsters, of which countless members of the same species exist, these are special girl monsters of which only one exists in the world. When they die, they're reincarnated somewhere.\n\n\nIs it okay to kill civilians?\nInside the Angel Squad's base you may run into non-combatant office workers. You can let them go via a battle choice, but there's no penalty at all for killing them.\n(As long as your conscience doesn't bother you, you can rack up lots of experience points.)",
    "refs": [
     "p00:21a7"
    ],
@@ -258,7 +258,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "マスターこじ◎後藤の事\n 後藤の居場所は、犬の鳴き声で分かります。必要な場所に\n 後藤がいる場合は、公園の入り口で犬の鳴き声の場所が\n 変わるまで別の所へ移動するのがいいでしょう。\n （後藤と戦ってもあまりメリットは、ありません）\n\n弁当に関して\n 公園（トイレ以外）の場所で弁当は、食べる事が出来ます。\n かなりの回復が出来るのでタイミングを見計らって使うように\n して下さい。ただし、次の日には、古くなるので使えなくなります。\n\nウドンの卵\n 散歩道のぽぽの木に登ると発見する事が出来ます。その後、公園の\n 入り口で石を拾って、それを身代わりにウドンの卵を盗む事が\n 出来ます。\n ウドンのタマゴは、ウェンリーナーの部屋にいるメイドさんに\n あげると代わりに幸運を授かります。\n  （幸運を得ると経験点がより多くもらえます）",
-   "en": "",
+   "en": "About Master Koji-O Goto\nYou can tell where Goto is by the barking of a dog. If Goto is somewhere you need to go, it's best to move somewhere else until the barking at the park entrance changes location.\n(There's not much benefit in fighting Goto.)\n\nAbout lunchboxes\nYou can eat a lunchbox anywhere in the park (except the toilet). It restores quite a lot, so time its use carefully. However, it goes bad the next day and becomes unusable.\n\nThe Udon egg\nYou can find it by climbing the popo tree on the walking path. After that, pick up a stone at the park entrance and use it as a decoy to steal the Udon egg.\nIf you give the Udon egg to the maid in Wenrina's room, she'll bless you with good luck in return.\n(With good luck, you receive more experience points.)",
    "refs": [
     "p00:239b"
    ],
@@ -268,7 +268,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "Ａ前の扉\n 開ける事なく、考えてから行動すると中の敵を戦う事なく\n 焼き殺す事が出来ます。\n ここに集まっている兵士達は、最初の階段から北方向に\n 進もうとすると後ろから現れる奴らです。\n\n\n壁紙を呪いにしていると、戦闘の経験点が１になる。\n\nおまけＣＧ\n スロットマシンのカードを総べて集めると見れる。\n\n ブレザァのクイズを１００問正解すると見れる。\n\n 魔法ビジョンをスコップで叩くと見れる。\n   （ただし、これはクイズの時と同じ絵です）",
-   "en": "",
+   "en": "The door in front of A\nIf you don't open it and instead choose to think before acting, you can burn the enemies inside to death without fighting them.\nThe soldiers gathered here are the guys who appear behind you when you try to go north from the first staircase.\n\n\nIf you set the wallpaper to Curse, battle experience becomes 1.\n\nBonus CG\nViewable when you collect all the slot machine cards.\n\nViewable when you answer 100 of Blazer's quiz questions correctly.\n\nViewable when you hit the Magic Vision with the shovel.\n(However, it's the same picture as the quiz one.)",
    "refs": [
     "p00:25af"
    ],
@@ -278,7 +278,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "金庫に入っているべったんの事\n これは、関西系だけの言葉らしいが・・東京の方では、\n メンコというらしい\n\nタハコ\n あやしい草の葉を精製してそれを紙でくるんで火を付けて\n 吸ったり吐いたりする物。\n すっきりした気分になったりハイな気分になるが、体内に\n 毒物を溜めていく事になり、危険な物。\n 現在は、法律で禁止されている。",
-   "en": "",
+   "en": "About the \"bettan\" in the safe\nApparently that's a Kansai-only word... over in Tokyo they seem to call it \"menko\".\n\nTahako\nA thing made by refining the leaves of a suspicious herb, wrapping them in paper, lighting them, and inhaling and exhaling.\nIt makes you feel refreshed or high, but it builds up poison in your body - a dangerous thing.\nIt's currently banned by law.",
    "refs": [
     "p00:26f1"
    ],
@@ -288,7 +288,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "ゲーム再開",
-   "en": "",
+   "en": "Resume",
    "refs": [
     "p00:2ac3"
    ],
@@ -298,7 +298,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "データロード",
-   "en": "",
+   "en": "Load Data",
    "refs": [
     "p00:2ad8"
    ],
@@ -308,7 +308,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "最初から",
-   "en": "",
+   "en": "New Game",
    "refs": [
     "p00:2ae6"
    ],
@@ -318,7 +318,7 @@
    "id": "n00001",
    "kind": "name",
    "jp": "レミーナー",
-   "en": "",
+   "en": "Remina",
    "refs": [
     "p00:2958"
    ],
@@ -328,7 +328,7 @@
    "id": "n00002",
    "kind": "name",
    "jp": "なつみ",
-   "en": "",
+   "en": "Natsumi",
    "refs": [
     "p00:2970"
    ],
@@ -338,7 +338,7 @@
    "id": "n00003",
    "kind": "name",
    "jp": "ウェンディ",
-   "en": "",
+   "en": "Wendy",
    "refs": [
     "p00:2984"
    ],
@@ -348,7 +348,7 @@
    "id": "n00004",
    "kind": "name",
    "jp": "プリシラ",
-   "en": "",
+   "en": "Priscilla",
    "refs": [
     "p00:299c"
    ],
@@ -358,7 +358,7 @@
    "id": "n00005",
    "kind": "name",
    "jp": "みんく",
-   "en": "",
+   "en": "Minku",
    "refs": [
     "p00:29b2"
    ],
@@ -368,7 +368,7 @@
    "id": "n00006",
    "kind": "name",
    "jp": "あさぎ",
-   "en": "",
+   "en": "Asagi",
    "refs": [
     "p00:29c6"
    ],
@@ -378,7 +378,7 @@
    "id": "n00007",
    "kind": "name",
    "jp": "ローラ",
-   "en": "",
+   "en": "Laura",
    "refs": [
     "p00:29da"
    ],
@@ -388,7 +388,7 @@
    "id": "n00008",
    "kind": "name",
    "jp": "すみれ",
-   "en": "",
+   "en": "Sumire",
    "refs": [
     "p00:29ee"
    ],
@@ -398,7 +398,7 @@
    "id": "n00009",
    "kind": "name",
    "jp": "すず",
-   "en": "",
+   "en": "Suzu",
    "refs": [
     "p00:2a02"
    ],
@@ -408,7 +408,7 @@
    "id": "n00010",
    "kind": "name",
    "jp": "ミアカさま",
-   "en": "",
+   "en": "Lady Miaka",
    "refs": [
     "p00:2a14"
    ],
@@ -418,7 +418,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "３",
-   "en": "",
+   "en": "3",
    "refs": [
     "p01:0933"
    ],
@@ -428,7 +428,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "・２",
-   "en": "",
+   "en": "...2",
    "refs": [
     "p01:093a"
    ],
@@ -438,7 +438,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "・１",
-   "en": "",
+   "en": "...1",
    "refs": [
     "p01:0942"
    ],
@@ -448,7 +448,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "・ＧＯ！",
-   "en": "",
+   "en": "...GO!",
    "refs": [
     "p01:094a"
    ],
@@ -458,7 +458,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "へん",
-   "en": "",
+   "en": "Hmm",
    "refs": [
     "p01:1ceb",
     "p01:2894",
@@ -473,7 +473,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "レース結果\n\n   一着   ",
-   "en": "",
+   "en": "Race Results\n\n   1st:   ",
    "refs": [
     "p01:2013"
    ],
@@ -483,7 +483,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "あなたの走り女は",
-   "en": "",
+   "en": "Your running girl was attacked by",
    "refs": [
     "p01:20d8"
    ],
@@ -493,7 +493,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "ハニーキング",
-   "en": "",
+   "en": "Honey King",
    "refs": [
     "p01:20ea",
     "p01:24cf"
@@ -504,7 +504,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "ランス",
-   "en": "",
+   "en": "Rance",
    "refs": [
     "p01:20fd",
     "p01:24e2"
@@ -515,7 +515,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "に\n襲われてしまい、レースをリタイアしました。",
-   "en": "",
+   "en": "!\nShe had to retire from the race.",
    "refs": [
     "p01:2103"
    ],
@@ -525,7 +525,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "・・・しかも純潔を奪われました。",
-   "en": "",
+   "en": "...and on top of that, she lost her virginity.",
    "refs": [
     "p01:212f",
     "p01:250e"
@@ -536,7 +536,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "あなたの走り女はワナにかかりましたが、奇跡的に\n軽傷ですみ、走ることを続けられそうです。\nしかし後遺症は残ってしまいます・・・",
-   "en": "",
+   "en": "Your running girl fell into a trap, but miraculously got off with minor injuries and looks able to keep running.\nHowever, there will be lasting aftereffects...",
    "refs": [
     "p01:217a",
     "p01:264b"
@@ -547,7 +547,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "あなたの走り女はワナにかかり、今後レースを\n続けていくには難しい状況です。",
-   "en": "",
+   "en": "Your running girl fell into a trap and will have a hard time continuing to race from now on.",
    "refs": [
     "p01:2216",
     "p01:2559"
@@ -558,7 +558,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "走れなくなった走り女を牧場においてはおけません。\nあなたはただ、去っていく彼女の背中を見送るしか\nできませんでした。",
-   "en": "",
+   "en": "You can't keep a running girl who can no longer run at the ranch.\nAll you could do was watch her back as she walked away.",
    "refs": [
     "p01:2249",
     "p01:258c"
@@ -569,7 +569,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "あなたの走り女が優勝しました。少し自信がつきました。",
-   "en": "",
+   "en": "Your running girl won! She's gained a little confidence.",
    "refs": [
     "p01:231c"
    ],
@@ -579,7 +579,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "あなたの走り女は最強の走り女として、名を残す\nことでしょう。",
-   "en": "",
+   "en": "Your running girl will surely go down in history as the strongest running girl ever.",
    "refs": [
     "p01:2353"
    ],
@@ -589,7 +589,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "このランクで",
-   "en": "",
+   "en": "In this rank, this is win number",
    "refs": [
     "p01:23a0"
    ],
@@ -599,7 +599,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "回目の優勝です。",
-   "en": "",
+   "en": ".",
    "refs": [
     "p01:23af"
    ],
@@ -609,7 +609,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "このランクで３回優勝したのでランクアップします。",
-   "en": "",
+   "en": "She's won 3 times in this rank, so she ranks up.",
    "refs": [
     "p01:23d5"
    ],
@@ -619,7 +619,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "賞金を",
-   "en": "",
+   "en": "Earned",
    "refs": [
     "p01:23fd"
    ],
@@ -629,7 +629,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "万円 稼ぎました。",
-   "en": "",
+   "en": "0,000 yen in prize money.",
    "refs": [
     "p01:2407"
    ],
@@ -639,7 +639,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "場内アナウンス「えー、ただいまのレースは、競技時間が\n        長くなりすぎたため、無効試合とします。」",
-   "en": "",
+   "en": "PA announcement: \"Ahem, the race just run has gone on far too long, so it has been declared void.\"",
    "refs": [
     "p01:243c"
    ],
@@ -649,7 +649,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "しかしあなたの走り女が",
-   "en": "",
+   "en": "But the fact remains that your running girl was attacked by",
    "refs": [
     "p01:24b9"
    ],
@@ -659,7 +659,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "に\n襲われてしまったことはかわりません・・・。",
-   "en": "",
+   "en": ".\nThat can't be undone...",
    "refs": [
     "p01:24e8"
    ],
@@ -669,7 +669,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "末",
-   "en": "",
+   "en": "End",
    "refs": [
     "p01:285e"
    ],
@@ -679,7 +679,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "嶽",
-   "en": "",
+   "en": "Peak",
    "refs": [
     "p01:2864"
    ],
@@ -689,7 +689,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "埋",
-   "en": "",
+   "en": "Bury",
    "refs": [
     "p01:286a"
    ],
@@ -699,7 +699,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "まはりこ",
-   "en": "",
+   "en": "Mahariko",
    "refs": [
     "p01:361c"
    ],
@@ -709,7 +709,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "ぺったんこ",
-   "en": "",
+   "en": "Pettanko",
    "refs": [
     "p01:362a",
     "p01:36b2",
@@ -723,7 +723,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "かすみ",
-   "en": "",
+   "en": "Kasumi",
    "refs": [
     "p01:363a"
    ],
@@ -733,7 +733,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "あんこ",
-   "en": "",
+   "en": "Anko",
    "refs": [
     "p01:3647"
    ],
@@ -743,7 +743,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "てるてる",
-   "en": "",
+   "en": "Teruteru",
    "refs": [
     "p01:3654"
    ],
@@ -753,7 +753,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "ゆか",
-   "en": "",
+   "en": "Yuka",
    "refs": [
     "p01:3662"
    ],
@@ -763,7 +763,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "しじみ",
-   "en": "",
+   "en": "Shijimi",
    "refs": [
     "p01:366e"
    ],
@@ -773,7 +773,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "たま",
-   "en": "",
+   "en": "Tama",
    "refs": [
     "p01:367c"
    ],
@@ -783,7 +783,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "みんみん",
-   "en": "",
+   "en": "Minmin",
    "refs": [
     "p01:3688"
    ],
@@ -793,7 +793,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "べす",
-   "en": "",
+   "en": "Beth",
    "refs": [
     "p01:3696"
    ],
@@ -803,7 +803,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "まだるこ",
-   "en": "",
+   "en": "Madaruko",
    "refs": [
     "p01:36a3"
    ],
@@ -813,7 +813,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "かえで",
-   "en": "",
+   "en": "Kaede",
    "refs": [
     "p01:36c2"
    ],
@@ -823,7 +823,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "きなこ",
-   "en": "",
+   "en": "Kinako",
    "refs": [
     "p01:36d0"
    ],
@@ -833,7 +833,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "あゆ",
-   "en": "",
+   "en": "Ayu",
    "refs": [
     "p01:36dd"
    ],
@@ -843,7 +843,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "たんぽぽ",
-   "en": "",
+   "en": "Tanpopo",
    "refs": [
     "p01:36e9"
    ],
@@ -853,7 +853,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "おすかる",
-   "en": "",
+   "en": "Oscar",
    "refs": [
     "p01:36f9"
    ],
@@ -863,7 +863,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "バーバラ",
-   "en": "",
+   "en": "Barbara",
    "refs": [
     "p01:3707"
    ],
@@ -873,7 +873,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "イライザ",
-   "en": "",
+   "en": "Eliza",
    "refs": [
     "p01:3718"
    ],
@@ -883,7 +883,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "しのぶ",
-   "en": "",
+   "en": "Shinobu",
    "refs": [
     "p01:372a"
    ],
@@ -893,7 +893,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "うぇいこ",
-   "en": "",
+   "en": "Weiko",
    "refs": [
     "p01:3738"
    ],
@@ -903,7 +903,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "つばき",
-   "en": "",
+   "en": "Tsubaki",
    "refs": [
     "p01:3756"
    ],
@@ -913,7 +913,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "おしるこ",
-   "en": "",
+   "en": "Oshiruko",
    "refs": [
     "p01:3764"
    ],
@@ -923,7 +923,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "さやか",
-   "en": "",
+   "en": "Sayaka",
    "refs": [
     "p01:3772"
    ],
@@ -933,7 +933,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "ジャクリーン",
-   "en": "",
+   "en": "Jacqueline",
    "refs": [
     "p01:377f"
    ],
@@ -943,7 +943,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "あっこちゃん",
-   "en": "",
+   "en": "Akko-chan",
    "refs": [
     "p01:3794"
    ],
@@ -953,7 +953,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "ごんちゃん",
-   "en": "",
+   "en": "Gon-chan",
    "refs": [
     "p01:37a4"
    ],
@@ -963,7 +963,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "たかし",
-   "en": "",
+   "en": "Takashi",
    "refs": [
     "p01:37b4"
    ],
@@ -973,7 +973,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "香奈美",
-   "en": "",
+   "en": "Kanami",
    "refs": [
     "p01:37c1"
    ],
@@ -983,7 +983,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "てぃるこ",
-   "en": "",
+   "en": "Tiruko",
    "refs": [
     "p01:37d1"
    ],
@@ -993,7 +993,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "さつき",
-   "en": "",
+   "en": "Satsuki",
    "refs": [
     "p01:37ef"
    ],
@@ -1003,7 +1003,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "ひかるん",
-   "en": "",
+   "en": "Hikarun",
    "refs": [
     "p01:37fc"
    ],
@@ -1013,7 +1013,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "なんてん",
-   "en": "",
+   "en": "Nanten",
    "refs": [
     "p01:380a"
    ],
@@ -1023,7 +1023,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "ゆんたん",
-   "en": "",
+   "en": "Yuntan",
    "refs": [
     "p01:3818"
    ],
@@ -1033,7 +1033,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "くらっくしゅーこ",
-   "en": "",
+   "en": "Crack Shuko",
    "refs": [
     "p01:3826"
    ],
@@ -1043,7 +1043,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "ろざりー",
-   "en": "",
+   "en": "Rosary",
    "refs": [
     "p01:3838"
    ],
@@ -1053,7 +1053,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "みやこ",
-   "en": "",
+   "en": "Miyako",
    "refs": [
     "p01:3847"
    ],
@@ -1063,7 +1063,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "このは",
-   "en": "",
+   "en": "Konoha",
    "refs": [
     "p01:3854"
    ],
@@ -1073,7 +1073,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "にゅーくりあぶらすこ",
-   "en": "",
+   "en": "Nuclear Blasko",
    "refs": [
     "p01:3861"
    ],
@@ -1083,7 +1083,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "くつとり女",
-   "en": "",
+   "en": "Shoe-Snatcher",
    "refs": [
     "p01:3886"
    ],
@@ -1093,7 +1093,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "おつるちゃん",
-   "en": "",
+   "en": "Otsuru-chan",
    "refs": [
     "p01:3896"
    ],
@@ -1103,7 +1103,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "きりしま",
-   "en": "",
+   "en": "Kirishima",
    "refs": [
     "p01:38a6"
    ],
@@ -1113,7 +1113,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "しらこちゃん",
-   "en": "",
+   "en": "Shirako-chan",
    "refs": [
     "p01:38b4"
    ],
@@ -1123,7 +1123,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "なのこ",
-   "en": "",
+   "en": "Nanoko",
    "refs": [
     "p01:38c4"
    ],
@@ -1133,7 +1133,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "なぞの女α",
-   "en": "",
+   "en": "Mystery Girl Alpha",
    "refs": [
     "p01:38d1"
    ],
@@ -1143,7 +1143,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "なぞの女β",
-   "en": "",
+   "en": "Mystery Girl Beta",
    "refs": [
     "p01:38e3"
    ],
@@ -1153,7 +1153,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "なぞの女γ",
-   "en": "",
+   "en": "Mystery Girl Gamma",
    "refs": [
     "p01:38f5"
    ],
@@ -1163,7 +1163,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "今回アナウンスさせていただく、私、む～みんです。\nつたない解説ですが、どうぞよろしく。",
-   "en": "",
+   "en": "I'll be your announcer for today, Muumin. My commentary may be clumsy, but I hope you'll bear with me.",
    "refs": [
     "p02:0002"
    ],
@@ -1173,7 +1173,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "さあ、スタートラインに各走り女が並びました。\nスタートのシグナルまであと僅かです！\nそれでは紹介していきましょう。",
-   "en": "",
+   "en": "And now the running girls are lined up at the starting line!\nJust moments until the start signal!\nLet's introduce them.",
    "refs": [
     "p02:004b"
    ],
@@ -1183,7 +1183,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "第一コース、",
-   "en": "",
+   "en": "Lane one,",
    "refs": [
     "p02:009f"
    ],
@@ -1193,7 +1193,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "。",
-   "en": "",
+   "en": ".",
    "refs": [
     "p02:00b9",
     "p02:00e8",
@@ -1206,7 +1206,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "第二コース、",
-   "en": "",
+   "en": "Lane two,",
    "refs": [
     "p02:00ce"
    ],
@@ -1216,7 +1216,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "第三コース、",
-   "en": "",
+   "en": "Lane three,",
    "refs": [
     "p02:00fd"
    ],
@@ -1226,7 +1226,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "第四コース、",
-   "en": "",
+   "en": "Lane four,",
    "refs": [
     "p02:012c"
    ],
@@ -1236,7 +1236,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "おっと、どうやらスタートのようです！",
-   "en": "",
+   "en": "Oh, it looks like they're off!",
    "refs": [
     "p02:015b"
    ],
@@ -1246,7 +1246,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "まはりこ。\n炎系の魔法で３Ｄ６のダメージが１グループに・・・\n\nえ？違う？これは失礼。",
-   "en": "",
+   "en": "Mahariko.\nA fire-type spell dealing 3D6 damage to one group...\n\nEh? That's not it? My apologies.",
    "refs": [
     "p02:017e"
    ],
@@ -1256,7 +1256,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "ぺったんこ。\n・・・私にはただのタルにしか見えません。が、ちゃんと\n中に入っているそうです。どんな転がりを見せてくれるので\nしょうか。",
-   "en": "",
+   "en": "Pettanko.\n...To me she just looks like a barrel. But apparently she's properly inside it. What kind of rolling will she show us?",
    "refs": [
     "p02:01c9"
    ],
@@ -1266,7 +1266,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "かすみ。\n忍者タイプの走り女ですね。スピードが期待できそうです。",
-   "en": "",
+   "en": "Kasumi.\nA ninja-type running girl. We can expect some speed from her.",
    "refs": [
     "p02:0226"
    ],
@@ -1276,7 +1276,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "あんこ。\nなにやら制服のような衣装を着ていますが、どうやら\nブリーダーが女学生フェチなようです。",
-   "en": "",
+   "en": "Anko.\nShe's wearing something like a school uniform - it seems her breeder has a schoolgirl fetish.",
    "refs": [
     "p02:0261"
    ],
@@ -1286,7 +1286,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "てるてる。\nなにゆえあんな走りにくそうな衣装なのかわかりません。",
-   "en": "",
+   "en": "Teruteru.\nWhy she's wearing such a hard-to-run-in outfit, I have no idea.",
    "refs": [
     "p02:02ae"
    ],
@@ -1296,7 +1296,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "ゆか。\nいたって普通の走り女、気にかけることもないでしょう。 ",
-   "en": "",
+   "en": "Yuka.\nA thoroughly ordinary running girl. Nothing to worry about.",
    "refs": [
     "p02:02dc"
    ],
@@ -1306,7 +1306,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "しじみ。\nボーイッシュな、いや、むしろニューハーフ臭い外見を\nしていますが、まっとうな走り女だそうです。",
-   "en": "",
+   "en": "Shijimi.\nShe looks boyish - no, frankly more like a drag queen - but I'm told she's a proper running girl.",
    "refs": [
     "p02:030c"
    ],
@@ -1316,7 +1316,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "たま。\n格好といい走る能力といい、決して走り女向きとは\nいえません。いったいどんな走りを見せてくれるので\nしょうか。",
-   "en": "",
+   "en": "Tama.\nBetween her outfit and her running ability, she's hardly cut out to be a running girl. What kind of run will she show us?",
    "refs": [
     "p02:035d"
    ],
@@ -1326,7 +1326,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "みんみん。\n生まれて来た時、すでに平地を駆けていたという、生まれ\nながらのスプリンター、まさに平地の鬼です。\n・・・他の地形のデータがありませんね？",
-   "en": "",
+   "en": "Minmin.\nA born sprinter who was already dashing across flat ground the moment she was born - truly a demon of the flats!\n...We don't seem to have data on any other terrain, do we?",
    "refs": [
     "p02:03af"
    ],
@@ -1336,7 +1336,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "べす。\nタイトなスーツに羽織った白衣、その姿はまさに女医！\n彼女の走る姿は、まるで突然の急患がはこび込まれた\n救急病院のようです。",
-   "en": "",
+   "en": "Beth.\nA tight suit with a white coat thrown over it - the very image of a lady doctor!\nWatching her run is like watching an ER when an emergency patient suddenly gets wheeled in.",
    "refs": [
     "p02:041d"
    ],
@@ -1346,7 +1346,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "まだるこ。\n吹雪系の攻撃魔法。４Ｄ８のダメージを１グループに・・・\n\nえ、また違う？",
-   "en": "",
+   "en": "Madaruko.\nA blizzard-type attack spell. 4D8 damage to one group...\n\nEh, wrong again?",
    "refs": [
     "p02:0488"
    ],
@@ -1356,7 +1356,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "ぺったんこ。\nどうやらタルではダメだということに気がついたようです。\nずた袋に半身包んでの登場、今度はどんな走りを、いや\n這いずりをみせてくれるのでしょうか。",
-   "en": "",
+   "en": "Pettanko.\nIt seems she's realized the barrel was no good. She appears with half her body in a burlap sack. What kind of running - no, crawling - will she show us this time?",
    "refs": [
     "p02:04d1"
    ],
@@ -1366,7 +1366,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "かえで。\n忍者系の走り女で、唯一顔を隠していない女の子です。\n黄色いヘアバンドといい、オシャレを気にするなんて\n忍者の風上にもおけません。",
-   "en": "",
+   "en": "Kaede.\nA ninja-type running girl, and the only one who doesn't hide her face. With that yellow hairband, worrying about fashion like that - she's a disgrace to ninjas everywhere.",
    "refs": [
     "p02:0545"
    ],
@@ -1376,7 +1376,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "きなこ。\nこの走り女も女学生のような格好をしています。\nＤクラスのあんこと同じプリーダーの所属ですね。",
-   "en": "",
+   "en": "Kinako.\nThis running girl is also dressed like a schoolgirl. She belongs to the same breeder as Anko in D class.",
    "refs": [
     "p02:05b3"
    ],
@@ -1386,7 +1386,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "あゆ。\nスクール水着に水泳帽、ちょっとマニアックな走り女\nです。しかし冬場は寒そうだ。",
-   "en": "",
+   "en": "Ayu.\nSchool swimsuit and swim cap - a slightly niche running girl. But she looks cold in winter.",
    "refs": [
     "p02:0604"
    ],
@@ -1396,7 +1396,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "たんぽぽ。\n黒衣に似合わないフワフワの髪の毛は、まさにたんぽぽ\nです。",
-   "en": "",
+   "en": "Tanpopo.\nHer fluffy hair, so unsuited to her black robes, is a true dandelion puff.",
    "refs": [
     "p02:064e"
    ],
@@ -1406,7 +1406,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "おすかる。\nまさにおすかる！タカラヅカ！走り女だというのに、\n女性ファンが多いのも特徴の一つでしょうか。",
-   "en": "",
+   "en": "Oscar.\nTruly Oscar! Takarazuka! Though she's a running girl, one of her features is her many female fans.",
    "refs": [
     "p02:068b"
    ],
@@ -1416,7 +1416,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "バーバラ。\n一昔前の外国映画にでてきそうな名前ですが、種族は\nＪＡＰＡＮ風、サラサラ黒髪タイプの走り女です。\n名付け親の趣味が伺えますね。",
-   "en": "",
+   "en": "Barbara.\nA name straight out of an old foreign movie, but her type is JAPAN-style: a silky black-haired running girl. You can tell a lot about the taste of whoever named her.",
    "refs": [
     "p02:06df"
    ],
@@ -1426,7 +1426,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "イライザ。\n赤い炎のような走り女です。時折狂ったように対空技を\n連発する様は、まるで踊るポンポコリン！",
-   "en": "",
+   "en": "Eliza.\nA running girl like a red flame. The way she sometimes spams anti-air moves like a madwoman is just like a dancing Ponpokorin!",
    "refs": [
     "p02:0759"
    ],
@@ -1436,7 +1436,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "しのぶさん。\n私情を挟ませて頂きます。私、彼女だけは呼び捨てに\nできません！走れ未亡人！ＪＡＰＡＮの母！",
-   "en": "",
+   "en": "Miss Shinobu.\nAllow me a personal note. She's the one person I simply can't call by name alone! Run, widow! Mother of JAPAN!",
    "refs": [
     "p02:07b2"
    ],
@@ -1446,7 +1446,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "うぇいこ。\n噂のニュークリアシスターズの片割れ、一説によると\n体内に原子炉があるとの話です。",
-   "en": "",
+   "en": "Weiko.\nOne half of the rumored Nuclear Sisters. According to one theory, she has a nuclear reactor inside her body.",
    "refs": [
     "p02:080b"
    ],
@@ -1456,7 +1456,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "ぺったんこ。\n今度は全身をぐるぐるに縛っての登場です。あの縄は一体\n何を意味するのか、もしや一人ＳＭかっ？！\nいい跳躍に期待しましょう。いいかげん走って欲しいですが。",
-   "en": "",
+   "en": "Pettanko.\nThis time she appears bound head to toe in rope. What could that rope mean? Could it be solo SM?!\nLet's hope for a good jump. Though I really wish she'd run already.",
    "refs": [
     "p02:085a"
    ],
@@ -1466,7 +1466,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "つばき。\n黒髪たなびく疾風の忍者、走る姿は黒い風、といいたい\n所ですが、正直そんなに速くはありません。忍者はムラの\n多い走りをしますね。",
-   "en": "",
+   "en": "Tsubaki.\nA ninja swift as the wind with flowing black hair, running like a black gale - or so I'd like to say, but honestly she's not that fast. Ninjas run so inconsistently.",
    "refs": [
     "p02:08d8"
    ],
@@ -1476,7 +1476,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "おしるこ。\n甘いもの系の名前の走り女、やはり女学生です。\nどうやらこのブリーダー、女子校の校長になる夢を\n持っていたそうです。",
-   "en": "",
+   "en": "Oshiruko.\nA running girl with a sweets-type name - a schoolgirl again, of course. It seems this breeder once dreamed of becoming the principal of a girls' school.",
    "refs": [
     "p02:093f"
    ],
@@ -1486,7 +1486,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "さやか。\n銀盤を滑る姿はまさに氷上の妖精。\nしかし平地はそこそこ、他の地形にいたってはボロボロ\nです。スケート靴でも履いているのでしょうか。",
-   "en": "",
+   "en": "Sayaka.\nGliding over the ice, she's truly a fairy on ice.\nBut she's so-so on flat ground and a wreck on other terrain. Is she wearing skates or something?",
    "refs": [
     "p02:099f"
    ],
@@ -1496,7 +1496,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "ジャクリーン。\n・・・謎のお団子頭といい、走りにくそうなハイヒール\nといい、まったくもってよくわからない走り女です。\n走りのほうもまさに謎、決してはやくはありません。",
-   "en": "",
+   "en": "Jacqueline.\n...Between the mysterious bun hairdo and the hard-to-run-in high heels, she's a running girl who makes no sense at all.\nHer running is a mystery too - she's certainly not fast.",
    "refs": [
     "p02:0a09"
    ],
@@ -1506,7 +1506,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "あっこちゃん。\n全身タイツの原画描き、ドロドロ系がニガテなせいか、\n沼地は少々気がすすまない走り女。\n「お嫁さんコース脱落」？ 何でしょう、これは？",
-   "en": "",
+   "en": "Akko-chan.\nAn artist in a full-body leotard. Maybe because she hates muddy stuff, she's not too keen on swamps.\n\"Dropped out of the bride course\"? What on earth is this?",
    "refs": [
     "p02:0a7b"
    ],
@@ -1516,7 +1516,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "ごんちゃん。\n小さい頃、砂場でイヤな事があったのがトラウマなのか、\n砂地が異常に遅い走り女だそうです。\n・・・小さい頃って、なんなんでしょうか？",
-   "en": "",
+   "en": "Gon-chan.\nMaybe it's trauma from something nasty that happened in a sandbox when she was little, but she's abnormally slow on sand.\n...When she was little? What does that even mean?",
    "refs": [
     "p02:0af2"
    ],
@@ -1526,7 +1526,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "たかし。\nイライザと同門の走り女ですが、タイプは全く違います。\n欠点らしい欠点はなく、このクラスではトップクラスの\n実力の持ち主・・・なのですが、ホームレスだそうです。",
-   "en": "",
+   "en": "Takashi.\nFrom the same school as Eliza, but a totally different type. She has no real weaknesses and is among the top in this class... except that she's homeless.",
    "refs": [
     "p02:0b62"
    ],
@@ -1536,7 +1536,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "香奈美。\n全走り女中、唯一漢字の名前をもつ、ＪＡＰＡＮ産の走り女。\nＣクラスのしのぶさんの娘だそうです。\nいやはや、母親似で将来が楽しみですね。",
-   "en": "",
+   "en": "Kanami.\nThe only running girl with a name written in kanji, a JAPAN-bred running girl.\nApparently she's the daughter of Miss Shinobu of C class.\nMy, my, she takes after her mother - we can't wait to see her grow up.",
    "refs": [
     "p02:0bea"
    ],
@@ -1546,7 +1546,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "てぃるこ。\nＢクラスのうぇいこより速いのは、高速増殖炉を搭載して\nいるからだそうです。しかし動作は不安定、メルトダウンの\n可能性を秘めた、まさに走るチェルノ○イリ！",
-   "en": "",
+   "en": "Tiruko.\nShe's faster than Weiko of B class because she's equipped with a fast breeder reactor. But she's unstable - with the potential for meltdown, she's a running Cherno*yl!",
    "refs": [
     "p02:0c63"
    ],
@@ -1556,7 +1556,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "ぺったんこ。\nやりました、ついに走ってくれました！これでこそ走り女、\n足の鉄球など、小さなことを気にしてはいけません！\nおじいさん、クララが歩いたよ！",
-   "en": "",
+   "en": "Pettanko.\nShe did it, she's finally running! Now THAT'S a running girl! Never mind little things like the iron balls on her feet!\nGrandpa, Clara is walking!",
    "refs": [
     "p02:0ce6"
    ],
@@ -1566,7 +1566,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "さつき。\n最強の忍者、マスターの称号を持つそうです。\nその手刀からくりだされる攻撃は、一発で首をはねることも\nあるそうですが、走ることには何の関係もありません。",
-   "en": "",
+   "en": "Satsuki.\nThe strongest ninja, said to hold the title of Master. The attacks from her knife-hand can sometimes lop off a head in one blow, but that has nothing to do with running.",
    "refs": [
     "p02:0d50"
    ],
@@ -1576,7 +1576,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "ひかるん・・・？\nど、どうして甘いものじゃないのでしょうか。この女学生\nシリーズは、今まで甘いもの系の名前だったのに！\nどうして饅頭やボタモチではないのか！なぜっ？！",
-   "en": "",
+   "en": "Hikarun...?\nWh-why isn't it something sweet? This schoolgirl series always had sweets-type names until now!\nWhy isn't it Manju or Botamochi? Why?!",
    "refs": [
     "p02:0dc5"
    ],
@@ -1586,7 +1586,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "なんてん。\n巫女です！赤い袴ををひるがえし、流れる黒髪たなびかせ、\n立てば芍薬座れば牡丹、走る姿はセーラー○ーズ！",
-   "en": "",
+   "en": "Nanten.\nA shrine maiden! Red hakama fluttering, flowing black hair streaming behind her - standing, a peony; sitting, a tree peony; running, a Sailor M**n!",
    "refs": [
     "p02:0e43"
    ],
@@ -1596,7 +1596,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "ゆんたん。\n初代ぎゃざ王の称号を持つ、沼の女帝スワンプウォーカー！\nただしそれをのぞけば、いいとこ２／２クリーチャーです。",
-   "en": "",
+   "en": "Yuntan.\nHolder of the title of first Gathering King, the Swamp Empress, Swampwalker! But apart from that, she's a 2/2 creature at best.",
    "refs": [
     "p02:0ea1"
    ],
@@ -1606,7 +1606,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "くらっくしゅーこ。\n確実に走れば強いのですが、なぜか突然バックジャンプキック\nをしてしまう、よくわからない走り女です。\n一説によると彼女の帽子は頭から生えてくるそうです。",
-   "en": "",
+   "en": "Crack Shuko.\nShe'd be strong if she just ran properly, but for some reason she'll suddenly throw a back-jump kick - a baffling running girl.\nOne theory says her hat grows out of her head.",
    "refs": [
     "p02:0f07"
    ],
@@ -1616,7 +1616,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "ろざりー。\n家が貧乏なのを苦にして、父親と狂言誘拐を図った過去を\n持つ彼女、最近では大金持ちのイタリア人を捕まえてブイブイ\nいわせているそうです。",
-   "en": "",
+   "en": "Rosary.\nDistressed by her family's poverty, she once staged a fake kidnapping with her father. These days, I hear she's snagged a rich Italian and is living it up.",
    "refs": [
     "p02:0f87"
    ],
@@ -1626,7 +1626,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "みやこ。\n由緒正しき梅名人の血をひく走り女です。\n梅靴下をはき、梅ハチマキをしめ、梅シューズで大地を蹴る\n様は、まさに梅！",
-   "en": "",
+   "en": "Miyako.\nA running girl descended from a distinguished line of plum masters.\nWearing plum socks, a plum headband, and kicking the earth in plum shoes - she is truly plum!",
    "refs": [
     "p02:0ffe"
    ],
@@ -1636,7 +1636,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "このは。\n大事な珠を無くしてしまった隠れキリシタンの彼女は、\n走り女に身をやつし、虎視眈々と珠を取り戻す機会を\n狙っているのであった・・・って、何だこりゃ。",
-   "en": "",
+   "en": "Konoha.\nHaving lost her precious orb, this hidden Christian has disguised herself as a running girl, watching like a tiger for a chance to get the orb back... wait, what is this?",
    "refs": [
     "p02:1063"
    ],
@@ -1646,7 +1646,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "にゅーくりあぶらすこ。\nパワーレベルで力の加減はできるものの、いつも全開\nぶちかまし、総ての敵に１００近くのダメージを与える、\n走る最終兵器だそうです。",
-   "en": "",
+   "en": "Nuclear Blasko.\nShe can adjust her power with power levels, but she always goes full blast, dealing nearly 100 damage to every enemy - a running doomsday weapon, apparently.",
    "refs": [
     "p02:10d8"
    ],
@@ -1656,7 +1656,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "ぺったんこ・・・\nな、なんと！ どうしたのでしょうか、彼女が普通に\n走っています！今までのタルや袋や縄や鉄球は、一体\n何だったのかっ？！",
-   "en": "",
+   "en": "Pettanko...\nWh-what's this! What's happened? She's running normally! What was all that about the barrel, the sack, the rope and the iron balls?!",
    "refs": [
     "p02:114e"
    ],
@@ -1666,7 +1666,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "どうやら、何もつけないことが最速だということに、\nやっと気がついた様です！素晴らしい学習効果！\nワンダフル！マーベラス！ファンタジック！",
-   "en": "",
+   "en": "It seems she's finally realized that wearing nothing extra is fastest! What a wonderful learning effect!\nWonderful! Marvelous! Fantastic!",
    "refs": [
     "p02:11ac"
    ],
@@ -1676,7 +1676,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "くつとり女。\n史上最速の走り女とうたわれた彼女、その走る様は\nまさに生ける伝説、私にはあの足の動きが見えません！\nしかし階段は苦手だ！",
-   "en": "",
+   "en": "Shoe-Snatcher.\nHailed as the fastest running girl in history, she's truly a living legend. I can't even see her legs move!\nBut she's bad with stairs!",
    "refs": [
     "p02:1220"
    ],
@@ -6718,7 +6718,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "訓練",
-   "en": "",
+   "en": "Training",
    "refs": [
     "p08:040b"
    ],
@@ -6728,7 +6728,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "表示女の子変更",
-   "en": "",
+   "en": "Change Girl",
    "refs": [
     "p08:0413"
    ],
@@ -6738,7 +6738,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "次の月に進む",
-   "en": "",
+   "en": "Next Month",
    "refs": [
     "p08:0424"
    ],
@@ -6748,7 +6748,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "試合出場",
-   "en": "",
+   "en": "Compete",
    "refs": [
     "p08:0439"
    ],
@@ -6758,7 +6758,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "子供を作る",
-   "en": "",
+   "en": "Breed",
    "refs": [
     "p08:0469"
    ],
@@ -6768,7 +6768,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "売却する",
-   "en": "",
+   "en": "Sell",
    "refs": [
     "p08:047d"
    ],
@@ -6778,7 +6778,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "システム",
-   "en": "",
+   "en": "System",
    "refs": [
     "p08:0487"
    ],
@@ -6799,7 +6799,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "（{X1}）",
-   "en": "",
+   "en": "({X1})",
    "refs": [
     "p08:04c7",
     "p08:2ffc"
@@ -6810,7 +6810,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "（{X2}）",
-   "en": "",
+   "en": "({X2})",
    "refs": [
     "p08:04d9",
     "p08:300e"
@@ -6821,7 +6821,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "（{X3}）",
-   "en": "",
+   "en": "({X3})",
    "refs": [
     "p08:04eb",
     "p08:3020"
@@ -6832,7 +6832,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "（{X4}）",
-   "en": "",
+   "en": "({X4})",
    "refs": [
     "p08:04fd",
     "p08:3032"
@@ -6843,7 +6843,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "（{X5}）",
-   "en": "",
+   "en": "({X5})",
    "refs": [
     "p08:050f",
     "p08:3044"
@@ -6854,7 +6854,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "（{X6}）",
-   "en": "",
+   "en": "({X6})",
    "refs": [
     "p08:0521",
     "p08:3056"
@@ -6865,7 +6865,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "（{X7}）",
-   "en": "",
+   "en": "({X7})",
    "refs": [
     "p08:0533",
     "p08:3068"
@@ -6876,7 +6876,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "（{X8}）",
-   "en": "",
+   "en": "({X8})",
    "refs": [
     "p08:0545",
     "p08:307a"
@@ -6887,7 +6887,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "変更しない",
-   "en": "",
+   "en": "No Change",
    "refs": [
     "p08:0557"
    ],
@@ -7167,7 +7167,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "走り女スーパーレース",
-   "en": "",
+   "en": "RunGirl SuperRace",
    "refs": [
     "p08:0ddc"
    ],
@@ -7177,7 +7177,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "正月レース",
-   "en": "",
+   "en": "New Year",
    "refs": [
     "p08:0df7"
    ],
@@ -7187,7 +7187,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "地獄巡りレース",
-   "en": "",
+   "en": "Hell Tour Race",
    "refs": [
     "p08:0e13"
    ],
@@ -7197,7 +7197,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "はにわ記念",
-   "en": "",
+   "en": "Haniwa Cup",
    "refs": [
     "p08:0e2a"
    ],
@@ -7207,7 +7207,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "ラボ・クライアー",
-   "en": "",
+   "en": "Labo Crier",
    "refs": [
     "p08:0e44"
    ],
@@ -7217,7 +7217,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "さくらステークス",
-   "en": "",
+   "en": "Sakura Stakes",
    "refs": [
     "p08:0e5d"
    ],
@@ -7227,7 +7227,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "ＮＮＨＫ全国レース",
-   "en": "",
+   "en": "NNHK National",
    "refs": [
     "p08:0e7c"
    ],
@@ -7237,7 +7237,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "春の総合レース",
-   "en": "",
+   "en": "Spring Grand",
    "refs": [
     "p08:0e98"
    ],
@@ -7247,7 +7247,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "ハニーキング杯",
-   "en": "",
+   "en": "Honey King Cup",
    "refs": [
     "p08:0eb7"
    ],
@@ -7257,7 +7257,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "元気っこＲＵＮ",
-   "en": "",
+   "en": "Genki Kid RUN",
    "refs": [
     "p08:0ecf"
    ],
@@ -7267,7 +7267,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "笑ってＧＯ！",
-   "en": "",
+   "en": "Smile & GO!",
    "refs": [
     "p08:0eee"
    ],
@@ -7277,7 +7277,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "はにわ帝国レース",
-   "en": "",
+   "en": "Haniwa Empire",
    "refs": [
     "p08:0f03"
    ],
@@ -7287,7 +7287,7 @@
    "id": "u00040",
    "kind": "menu",
    "jp": "篠田さん杯",
-   "en": "",
+   "en": "Shinoda Cp",
    "refs": [
     "p08:0f22"
    ],
@@ -7297,7 +7297,7 @@
    "id": "u00041",
    "kind": "menu",
    "jp": "山田商店杯",
-   "en": "",
+   "en": "Yamada Cup",
    "refs": [
     "p08:0f35"
    ],
@@ -7307,7 +7307,7 @@
    "id": "u00042",
    "kind": "menu",
    "jp": "アナベルレース",
-   "en": "",
+   "en": "Annabel Race",
    "refs": [
     "p08:0f52"
    ],
@@ -7317,7 +7317,7 @@
    "id": "u00043",
    "kind": "menu",
    "jp": "ユキチカップ",
-   "en": "",
+   "en": "Yukichi Cup",
    "refs": [
     "p08:0f6a"
    ],
@@ -7327,7 +7327,7 @@
    "id": "u00044",
    "kind": "menu",
    "jp": "くるくるステークス",
-   "en": "",
+   "en": "Kurukuru Stakes",
    "refs": [
     "p08:0f89"
    ],
@@ -7337,7 +7337,7 @@
    "id": "u00045",
    "kind": "menu",
    "jp": "アリスカップ",
-   "en": "",
+   "en": "Alice Cup",
    "refs": [
     "p08:0fa1"
    ],
@@ -7347,7 +7347,7 @@
    "id": "u00046",
    "kind": "menu",
    "jp": "ハーネ財閥支援杯",
-   "en": "",
+   "en": "Hane Group Cup",
    "refs": [
     "p08:0fc0"
    ],
@@ -7357,7 +7357,7 @@
    "id": "u00047",
    "kind": "menu",
    "jp": "秋の総合レース",
-   "en": "",
+   "en": "Autumn Grand",
    "refs": [
     "p08:0fda"
    ],
@@ -7367,7 +7367,7 @@
    "id": "u00048",
    "kind": "menu",
    "jp": "天山スーパー",
-   "en": "",
+   "en": "Tenzan Super",
    "refs": [
     "p08:0ff9"
    ],
@@ -7377,7 +7377,7 @@
    "id": "u00049",
    "kind": "menu",
    "jp": "冬近し走れ女の子杯",
-   "en": "",
+   "en": "Winter's Near Cup",
    "refs": [
     "p08:100e"
    ],
@@ -7387,7 +7387,7 @@
    "id": "u00050",
    "kind": "menu",
    "jp": "越の寒杯",
-   "en": "",
+   "en": "Cold Cup",
    "refs": [
     "p08:1030"
    ],
@@ -7397,7 +7397,7 @@
    "id": "u00051",
    "kind": "menu",
    "jp": "死神レース",
-   "en": "",
+   "en": "Reaper Run",
    "refs": [
     "p08:1042"
    ],
@@ -7407,7 +7407,7 @@
    "id": "u00052",
    "kind": "menu",
    "jp": "参加しない",
-   "en": "",
+   "en": "Skip Race",
    "refs": [
     "p08:104f"
    ],
@@ -7457,7 +7457,7 @@
    "id": "u00053",
    "kind": "menu",
    "jp": "走り込み",
-   "en": "",
+   "en": "Running",
    "refs": [
     "p08:1567"
    ],
@@ -7467,7 +7467,7 @@
    "id": "u00054",
    "kind": "menu",
    "jp": "水泳",
-   "en": "",
+   "en": "Swimming",
    "refs": [
     "p08:1571"
    ],
@@ -7477,7 +7477,7 @@
    "id": "u00055",
    "kind": "menu",
    "jp": "教養",
-   "en": "",
+   "en": "Culture",
    "refs": [
     "p08:1579"
    ],
@@ -7487,7 +7487,7 @@
    "id": "u00056",
    "kind": "menu",
    "jp": "精神修行",
-   "en": "",
+   "en": "Meditate",
    "refs": [
     "p08:1581"
    ],
@@ -7497,7 +7497,7 @@
    "id": "u00057",
    "kind": "menu",
    "jp": "女にする",
-   "en": "",
+   "en": "Deflower",
    "refs": [
     "p08:1595"
    ],
@@ -7507,7 +7507,7 @@
    "id": "u00058",
    "kind": "menu",
    "jp": "ＳＭプレイ",
-   "en": "",
+   "en": "SM Play",
    "refs": [
     "p08:15a6"
    ],
@@ -7517,7 +7517,7 @@
    "id": "u00059",
    "kind": "menu",
    "jp": "調教しない",
-   "en": "",
+   "en": "No Taming",
    "refs": [
     "p08:15b4"
    ],
@@ -7527,7 +7527,7 @@
    "id": "u00060",
    "kind": "menu",
    "jp": "平地コース",
-   "en": "",
+   "en": "Flat Track",
    "refs": [
     "p08:15c3"
    ],
@@ -7537,7 +7537,7 @@
    "id": "u00061",
    "kind": "menu",
    "jp": "砂地コース",
-   "en": "",
+   "en": "Sand Track",
    "refs": [
     "p08:15d0"
    ],
@@ -7547,7 +7547,7 @@
    "id": "u00062",
    "kind": "menu",
    "jp": "湿地コース",
-   "en": "",
+   "en": "Bog Track",
    "refs": [
     "p08:15dd"
    ],
@@ -7557,7 +7557,7 @@
    "id": "u00063",
    "kind": "menu",
    "jp": "氷河コース",
-   "en": "",
+   "en": "Ice Track",
    "refs": [
     "p08:15ea"
    ],
@@ -7567,7 +7567,7 @@
    "id": "u00064",
    "kind": "menu",
    "jp": "走り込みしない",
-   "en": "",
+   "en": "Skip Running",
    "refs": [
     "p08:15f7"
    ],
@@ -8142,7 +8142,7 @@
    "id": "u00065",
    "kind": "menu",
    "jp": "ＹＥＳ",
-   "en": "",
+   "en": "YES",
    "refs": [
     "p08:2e72",
     "p08:4a07"
@@ -8153,7 +8153,7 @@
    "id": "u00066",
    "kind": "menu",
    "jp": "ＮＯ",
-   "en": "",
+   "en": "NO",
    "refs": [
     "p08:2e7c",
     "p08:4a11"
@@ -8204,7 +8204,7 @@
    "id": "u00067",
    "kind": "menu",
    "jp": "ゲーム中断",
-   "en": "",
+   "en": "Quit Game",
    "refs": [
     "p08:3118"
    ],
@@ -8214,7 +8214,7 @@
    "id": "u00068",
    "kind": "menu",
    "jp": "説明書",
-   "en": "",
+   "en": "Manual",
    "refs": [
     "p08:3125"
    ],
@@ -8224,7 +8224,7 @@
    "id": "u00069",
    "kind": "menu",
    "jp": "訓練アニメ",
-   "en": "",
+   "en": "Train Anim",
    "refs": [
     "p08:312f"
    ],
@@ -8234,7 +8234,7 @@
    "id": "u00070",
    "kind": "menu",
    "jp": "サウンド切替",
-   "en": "",
+   "en": "Sound Mode",
    "refs": [
     "p08:313d"
    ],
@@ -8244,7 +8244,7 @@
    "id": "u00071",
    "kind": "menu",
    "jp": "戻る",
-   "en": "",
+   "en": "Back",
    "refs": [
     "p08:314d"
    ],
@@ -8284,7 +8284,7 @@
    "id": "u00072",
    "kind": "menu",
    "jp": "ＦＭ音源",
-   "en": "",
+   "en": "FM Sound",
    "refs": [
     "p08:31a5"
    ],
@@ -8294,7 +8294,7 @@
    "id": "u00073",
    "kind": "menu",
    "jp": "ＣＤ音源",
-   "en": "",
+   "en": "CD Sound",
    "refs": [
     "p08:31b1"
    ],
@@ -8304,7 +8304,7 @@
    "id": "u00074",
    "kind": "menu",
    "jp": "無音",
-   "en": "",
+   "en": "Mute",
    "refs": [
     "p08:31bd"
    ],
@@ -8384,7 +8384,7 @@
    "id": "u00075",
    "kind": "menu",
    "jp": "アニメＯＮ",
-   "en": "",
+   "en": "Anim ON",
    "refs": [
     "p08:334d"
    ],
@@ -8394,7 +8394,7 @@
    "id": "u00076",
    "kind": "menu",
    "jp": "アニメＯＦＦ",
-   "en": "",
+   "en": "Anim OFF",
    "refs": [
     "p08:335b"
    ],
@@ -8434,7 +8434,7 @@
    "id": "u00077",
    "kind": "menu",
    "jp": "いや、うそだ",
-   "en": "",
+   "en": "No, I lied",
    "refs": [
     "p08:33c6"
    ],
@@ -8444,7 +8444,7 @@
    "id": "u00078",
    "kind": "menu",
    "jp": "うむ、その通り",
-   "en": "",
+   "en": "Yes, exactly",
    "refs": [
     "p08:33d1"
    ],
@@ -8494,7 +8494,7 @@
    "id": "u00079",
    "kind": "menu",
    "jp": "ステータス",
-   "en": "",
+   "en": "Status",
    "refs": [
     "p08:34a9"
    ],
@@ -8504,7 +8504,7 @@
    "id": "u00080",
    "kind": "menu",
    "jp": "レース",
-   "en": "",
+   "en": "Races",
    "refs": [
     "p08:34b6"
    ],
@@ -8514,7 +8514,7 @@
    "id": "u00081",
    "kind": "menu",
    "jp": "二世誕生",
-   "en": "",
+   "en": "Births",
    "refs": [
     "p08:34bf"
    ],
@@ -8524,7 +8524,7 @@
    "id": "u00082",
    "kind": "menu",
    "jp": "セーブ関係",
-   "en": "",
+   "en": "Saving",
    "refs": [
     "p08:34cb"
    ],
@@ -8534,7 +8534,7 @@
    "id": "u00083",
    "kind": "menu",
    "jp": "ワンポイント",
-   "en": "",
+   "en": "Quick Tips",
    "refs": [
     "p08:34d8"
    ],
@@ -8544,7 +8544,7 @@
    "id": "u00084",
    "kind": "menu",
    "jp": "その他",
-   "en": "",
+   "en": "Other",
    "refs": [
     "p08:34e8"
    ],
@@ -8554,7 +8554,7 @@
    "id": "u00085",
    "kind": "menu",
    "jp": "システムに戻る",
-   "en": "",
+   "en": "Back to System",
    "refs": [
     "p08:34f0"
    ],
@@ -8619,7 +8619,7 @@
    "id": "u00086",
    "kind": "menu",
    "jp": "名前",
-   "en": "",
+   "en": "Name",
    "refs": [
     "p08:36d6"
    ],
@@ -8629,7 +8629,7 @@
    "id": "u00087",
    "kind": "menu",
    "jp": "限界値",
-   "en": "",
+   "en": "Limit",
    "refs": [
     "p08:36de"
    ],
@@ -8639,7 +8639,7 @@
    "id": "u00088",
    "kind": "menu",
    "jp": "女／ランク",
-   "en": "",
+   "en": "Girl/Rank",
    "refs": [
     "p08:36e8"
    ],
@@ -8649,7 +8649,7 @@
    "id": "u00089",
    "kind": "menu",
    "jp": "スピード／適性",
-   "en": "",
+   "en": "Speed/Aptitude",
    "refs": [
     "p08:36f6"
    ],
@@ -8659,7 +8659,7 @@
    "id": "u00090",
    "kind": "menu",
    "jp": "気迫／健康状態",
-   "en": "",
+   "en": "Spirit/Health",
    "refs": [
     "p08:3707"
    ],
@@ -8669,7 +8669,7 @@
    "id": "u00091",
    "kind": "menu",
    "jp": "気品",
-   "en": "",
+   "en": "Grace",
    "refs": [
     "p08:3719"
    ],
@@ -8679,7 +8679,7 @@
    "id": "u00092",
    "kind": "menu",
    "jp": "目次",
-   "en": "",
+   "en": "Contents",
    "refs": [
     "p08:3721",
     "p08:3afa",
@@ -8811,7 +8811,7 @@
    "id": "u00093",
    "kind": "menu",
    "jp": "参加",
-   "en": "",
+   "en": "Entry",
    "refs": [
     "p08:3ad9"
    ],
@@ -8821,7 +8821,7 @@
    "id": "u00094",
    "kind": "menu",
    "jp": "レース概要",
-   "en": "",
+   "en": "Race Info",
    "refs": [
     "p08:3ae1"
    ],
@@ -8831,7 +8831,7 @@
    "id": "u00095",
    "kind": "menu",
    "jp": "トラップ",
-   "en": "",
+   "en": "Traps",
    "refs": [
     "p08:3aee"
    ],
@@ -8972,7 +8972,7 @@
    "id": "u00096",
    "kind": "menu",
    "jp": "季節",
-   "en": "",
+   "en": "Seasons",
    "refs": [
     "p08:3e67"
    ],
@@ -8982,7 +8982,7 @@
    "id": "u00097",
    "kind": "menu",
    "jp": "女／男選択",
-   "en": "",
+   "en": "Girl/Stud",
    "refs": [
     "p08:3e6f"
    ],
@@ -8992,7 +8992,7 @@
    "id": "u00098",
    "kind": "menu",
    "jp": "出産",
-   "en": "",
+   "en": "Birth",
    "refs": [
     "p08:3e7d"
    ],
@@ -9002,7 +9002,7 @@
    "id": "u00099",
    "kind": "menu",
    "jp": "能力",
-   "en": "",
+   "en": "Ability",
    "refs": [
     "p08:3e85"
    ],
@@ -9865,7 +9865,7 @@
    "id": "u00100",
    "kind": "menu",
    "jp": "自分    ：  ０",
-   "en": "",
+   "en": "Yourself    :  0",
    "refs": [
     "p09:0050"
    ],
@@ -9875,7 +9875,7 @@
    "id": "u00101",
    "kind": "menu",
    "jp": "ハイデル男爵： ５０",
-   "en": "",
+   "en": "Baron Heidel: 50",
    "refs": [
     "p09:0062"
    ],
@@ -9885,7 +9885,7 @@
    "id": "u00102",
    "kind": "menu",
    "jp": "ライダー馬助：１００",
-   "en": "",
+   "en": "Rider Umasuke:100",
    "refs": [
     "p09:0079"
    ],
@@ -9895,7 +9895,7 @@
    "id": "u00103",
    "kind": "menu",
    "jp": "がんばり太郎：３００",
-   "en": "",
+   "en": "Ganbari Taro:300",
    "refs": [
     "p09:0090"
    ],
@@ -9905,7 +9905,7 @@
    "id": "u00104",
    "kind": "menu",
    "jp": "ランス   ：５００",
-   "en": "",
+   "en": "Rance       :500",
    "refs": [
     "p09:00ae"
    ],
@@ -9915,7 +9915,7 @@
    "id": "u00105",
    "kind": "menu",
    "jp": "バソルゾン ：７００",
-   "en": "",
+   "en": "Basolzon    :700",
    "refs": [
     "p09:00c3"
    ],
@@ -9925,7 +9925,7 @@
    "id": "u00106",
    "kind": "menu",
    "jp": "織音さる  ： ４０",
-   "en": "",
+   "en": "Orine Saru  : 40",
    "refs": [
     "p09:00e2"
    ],
@@ -9935,7 +9935,7 @@
    "id": "u00107",
    "kind": "menu",
    "jp": "しない",
-   "en": "",
+   "en": "Skip",
    "refs": [
     "p09:00f5"
    ],
@@ -10035,7 +10035,7 @@
    "id": "u00108",
    "kind": "menu",
    "jp": "これでいい",
-   "en": "",
+   "en": "Fine",
    "refs": [
     "p09:04c1"
    ],
@@ -10045,7 +10045,7 @@
    "id": "u00109",
    "kind": "menu",
    "jp": "別の種男にする",
-   "en": "",
+   "en": "Another Stud",
    "refs": [
     "p09:04cb"
    ],
@@ -10215,7 +10215,7 @@
    "id": "n00011",
    "kind": "name",
    "jp": "自分",
-   "en": "",
+   "en": "Yourself",
    "refs": [
     "p09:0198"
    ],
@@ -10225,7 +10225,7 @@
    "id": "n00012",
    "kind": "name",
    "jp": "ハイデル男爵",
-   "en": "",
+   "en": "Baron Heidel",
    "refs": [
     "p09:0228"
    ],
@@ -10235,7 +10235,7 @@
    "id": "n00013",
    "kind": "name",
    "jp": "ライダー馬助",
-   "en": "",
+   "en": "Rider Umasuke",
    "refs": [
     "p09:02ab"
    ],
@@ -10245,7 +10245,7 @@
    "id": "n00014",
    "kind": "name",
    "jp": "がんばり太郎",
-   "en": "",
+   "en": "Ganbari Taro",
    "refs": [
     "p09:032e"
    ],
@@ -10255,7 +10255,7 @@
    "id": "n00015",
    "kind": "name",
    "jp": "ランス",
-   "en": "",
+   "en": "Rance",
    "refs": [
     "p09:03ad"
    ],
@@ -10265,7 +10265,7 @@
    "id": "n00016",
    "kind": "name",
    "jp": "バソルゾン",
-   "en": "",
+   "en": "Basolzon",
    "refs": [
     "p09:0426"
    ],
@@ -10275,7 +10275,7 @@
    "id": "n00017",
    "kind": "name",
    "jp": "織音さる",
-   "en": "",
+   "en": "Orine Saru",
    "refs": [
     "p09:04a2"
    ],

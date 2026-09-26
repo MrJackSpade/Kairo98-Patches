@@ -7,6 +7,11 @@
     python tools/mtl.py merge games/dalk/strings.json translated_dir_or_file ...
         reads {"id": "english", ...} files and fills the matching "en" fields
 
+    python tools/mtl.py merge-work games/dalk/strings.json work/mtl/dalk
+        merges out/batch_*.json against the matching in/batch_*.json (whose
+        entries carry kind and jp), matching strings by kind and Japanese text,
+        so ids that shifted in a re-extraction still land on the right string
+
     python tools/mtl.py check games/dalk/strings.json
         reports progress and strings whose {X1}-style tokens don't match
 """
@@ -57,6 +62,27 @@ def merge(path, sources):
     check(path)
 
 
+def merge_work(path, work):
+    doc = load(path)
+    by_text = {}
+    for e in doc["strings"]:
+        by_text.setdefault((e["kind"], e["jp"]), []).append(e)
+    n = unknown = 0
+    for f in sorted(glob.glob(os.path.join(work, "out", "*.json"))):
+        src = load(os.path.join(work, "in", os.path.basename(f)))
+        for k, v in load(f).items():
+            ents = by_text.get((src[k]["kind"], src[k]["jp"])) if k in src else None
+            if ents and isinstance(v, str):
+                for e in ents:
+                    e["en"] = v
+                n += 1
+            else:
+                unknown += 1
+    save(doc, path)
+    print("merged %d translations (%d unmatched)" % (n, unknown))
+    check(path)
+
+
 def check(path):
     doc = load(path)
     done = [e for e in doc["strings"] if e["en"]]
@@ -76,5 +102,7 @@ if __name__ == "__main__":
         split(pos[0], pos[1], size, "--all" in args)
     elif cmd == "merge":
         merge(args[0], args[1:])
+    elif cmd == "merge-work":
+        merge_work(args[0], args[1])
     elif cmd == "check":
         check(args[0])

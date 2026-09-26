@@ -109,11 +109,11 @@
   ]
  },
  "AliceSoft.zip/Ningyo - Tsutako": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
-  "strings": 284,
+  "strings": 290,
   "distinct_terms": 0,
-  "summary": "0 of 284 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: explicit sexual scenes found while translating (2026-09-26); the scan's vocabulary list misses them (dialect and euphemism)",
   "adult_ids": []
  },
  "AliceSoft.zip/Alice no Yakata III": {
@@ -204,10 +204,10 @@
  },
  "AliceSoft.zip/D.P.S Zenbu (All Dream Program System)": {
   "adult": true,
-  "hits": 27,
-  "strings": 20849,
-  "distinct_terms": 2,
-  "summary": "27 of 20849 strings match the sexual-vocabulary list (2 distinct terms)",
+  "hits": 40,
+  "strings": 30816,
+  "distinct_terms": 7,
+  "summary": "40 of 30816 strings match the sexual-vocabulary list (7 distinct terms)",
   "adult_ids": [
    "m00813",
    "m00898",
@@ -235,7 +235,20 @@
    "m05602",
    "m05658",
    "m17685",
-   "m18203"
+   "m18203",
+   "m18479",
+   "m26640",
+   "m26684",
+   "m26693",
+   "m26795",
+   "m26889",
+   "m26990",
+   "m26991",
+   "m26994",
+   "m27035",
+   "m27078",
+   "m27098",
+   "m27103"
   ]
  },
  "AliceSoft.zip/Ambivalenz - Niritsu Haihan": {
@@ -253,27 +266,27 @@
   ]
  },
  "AliceSoft.zip/Otome Senki": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 2080,
   "distinct_terms": 0,
-  "summary": "0 of 2080 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: sexual proposition scene involving party members stated to be 16-17 found while translating (2026-09-26, first at m00076)",
   "adult_ids": []
  },
  "AliceSoft.zip/Toushin Toshi II - Soshite, Sorekara": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 5479,
   "distinct_terms": 0,
-  "summary": "0 of 5479 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: sexualized description of a character stated to be 15 found while translating (2026-09-26, first at m01700)",
   "adult_ids": []
  },
  "AliceSoft.zip/Rance 4.1+4.2 Hint Disk (Hashiri Onna II - Running Girls)": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 1007,
   "distinct_terms": 0,
-  "summary": "0 of 1007 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: sexualized commentary on possibly underage racers and an explicit training menu found while translating (2026-09-26, first at m00145)",
   "adult_ids": []
  },
  "AliceSoft.zip/Pro Student G": {
@@ -394,57 +407,160 @@
   ]
  },
  "AliceSoft.zip/Super D.P.S (Dream Program System)": {
-  "adult": false,
+  "adult": true,
   "hits": 1,
   "strings": 9483,
   "distinct_terms": 1,
-  "summary": "1 of 9483 strings match the sexual-vocabulary list (1 distinct terms)",
+  "summary": "manual: sexual assault command menu found while translating (first at u00163) (2026-09-26)",
   "adult_ids": [
    "m00386"
   ]
  },
  "AliceSoft.zip/Dr. Stop!": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 7401,
   "distinct_terms": 0,
-  "summary": "0 of 7401 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: sexual command menu, possibly involving a minor, found while translating (first at u00052) (2026-09-26)",
   "adult_ids": []
  },
  "AliceSoft.zip/Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 1966,
   "distinct_terms": 0,
-  "summary": "0 of 1966 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: explicit sex scene found while translating (first at m00872) (2026-09-26)",
   "adult_ids": []
  },
  "AliceSoft.zip/D.P.S (Dream Program System) SG": {
-  "adult": false,
+  "adult": true,
   "hits": 1,
   "strings": 10861,
   "distinct_terms": 1,
-  "summary": "1 of 10861 strings match the sexual-vocabulary list (1 distinct terms)",
+  "summary": "manual: sexual assault command menu found while translating (first at u00047) (2026-09-26)",
   "adult_ids": [
    "m08562"
   ]
  },
  "AliceSoft.zip/D.P.S (Dream Program System) SG Set 2": {
-  "adult": false,
+  "adult": true,
   "hits": 0,
   "strings": 16452,
   "distinct_terms": 0,
-  "summary": "0 of 16452 strings match the sexual-vocabulary list (0 distinct terms)",
+  "summary": "manual: sexual advances toward a character stated to be 17 found while translating (first at u00049) (2026-09-26)",
   "adult_ids": []
  },
  "AliceSoft.zip/D.P.S (Dream Program System) SG Set 3": {
-  "adult": false,
+  "adult": true,
   "hits": 1,
   "strings": 13306,
   "distinct_terms": 1,
-  "summary": "1 of 13306 strings match the sexual-vocabulary list (1 distinct terms)",
+  "summary": "manual: explicit sex-scene command menu found while translating (first at u00087) (2026-09-26)",
   "adult_ids": [
    "m03793"
+  ]
+ },
+ "AliceSoft.zip/Gakuen King": {
+  "adult": true,
+  "hits": 84,
+  "strings": 19401,
+  "distinct_terms": 7,
+  "summary": "84 of 19401 strings match the sexual-vocabulary list (7 distinct terms)",
+  "adult_ids": [
+   "m01416",
+   "m01428",
+   "m01462",
+   "m01467",
+   "m01475",
+   "m03192",
+   "m03433",
+   "m09006",
+   "m11739",
+   "m11756",
+   "m11770",
+   "m12339",
+   "m12358",
+   "m12396",
+   "m12453",
+   "m12487",
+   "m12498",
+   "m12533",
+   "m12573",
+   "m12578",
+   "m12592",
+   "m13553",
+   "m13604",
+   "m13612",
+   "m13945",
+   "m13982",
+   "m14192",
+   "m14199",
+   "m14203",
+   "m14367",
+   "m14394",
+   "m14410",
+   "m14428",
+   "m14442",
+   "m14443",
+   "m14446",
+   "m14565",
+   "m14631",
+   "m14843",
+   "m14853",
+   "m14862",
+   "m14878",
+   "m15085",
+   "m15120",
+   "m15141",
+   "m15152",
+   "m15154",
+   "m15207",
+   "m15300",
+   "m15469",
+   "m15524",
+   "m15529",
+   "m15764",
+   "m15784",
+   "m15990",
+   "m16485",
+   "m16655",
+   "m16665",
+   "m16668",
+   "m16718",
+   "m16725",
+   "m16733",
+   "m16737",
+   "m16738",
+   "m16741",
+   "m16748",
+   "m16811",
+   "m17234",
+   "m17239",
+   "m17246",
+   "m17256",
+   "m17259",
+   "m17592",
+   "m17616",
+   "m17625",
+   "m17648",
+   "m17737",
+   "m17749",
+   "m17769",
+   "m17876",
+   "m17898",
+   "m17907",
+   "m17953",
+   "m17967"
+  ]
+ },
+ "AliceSoft.zip/Crescent Moon Girl": {
+  "adult": true,
+  "hits": 1,
+  "strings": 3575,
+  "distinct_terms": 1,
+  "summary": "manual: explicit sex scene found while translating (first at m00665) (2026-09-26)",
+  "adult_ids": [
+   "m02139"
   ]
  }
 }

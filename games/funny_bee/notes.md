@@ -1,41 +1,52 @@
-# ♥ Uchuu Kaitou Funny Bee (Alice Soft, 1994)
+# ♥ Uchuu Kaitou Funny Bee (Alice Soft)
 
 > This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
 
-Source image: `Uchuu Kaitou Funny Bee [HD]/Uchuu Kaitou Funny Bee.hdi` (sha256 in `strings.json`).
+Source image: `Uchuu Kaitou Funny Bee/Uchuu Kaitou Funny Bee [HD]/Uchuu Kaitou Funny Bee.hdi` (sha256 in `strings.json`).
 Clearance: no English release or announcement found on 2026-09-26 (`research/clearance.json`).
 
 ## Engine
 
-Alice Soft **System 3**. The script is split across `BEE/ADISK.DAT` and `BEE/BDISK.DAT`
-(80 pages). There's no `AG00.DAT`, since this game has no verb/object menu. Disassembling
-and reassembling all pages reproduces both files byte for byte.
+Alice Soft **System 3**, engine `ADV.COM` in `BEE/`.
+
+Every script page disassembles and reassembles byte for byte (`tools/verify_roundtrip.py`).
 
 ## English display (`pc98tl/alice3_font.py`)
 
-* The kana table in `ADV.COM` is remapped so the bytes A0-DD become NEC half-width
-  ASCII glyphs from the kanji ROM, at one script byte per letter. Characters
-  outside `A-Z a-z . , ! ? ' - : ( )` and space are written as 2-byte half-width
-  codes.
-* The text drawer advances half a cell after a half-width character, and a full
-  cell otherwise, so Japanese that hasn't been translated yet still lays out correctly.
-* The scenario page pool goes from 32 KB to 128 KB, and the stack moves up to make
-  room for the hook.
+* The kana table in the engine is remapped so the script bytes A0-DD become NEC
+  half-width ASCII glyphs from the kanji ROM, one byte per letter. Other
+  characters are written as 2-byte half-width codes.
+* The text drawer advances half a cell after a half-width character and a full
+  cell otherwise, so untranslated Japanese still lays out correctly.
+* Untranslated text hard-coded in a program has its half-width kana rewritten
+  as full-width codes, so it still shows as Japanese.
+* The hook goes just above the program's old stack top, and the stack moves up
+  past it (the DOS memory block grows to match). Nothing else changes size, so
+  the patch is memory-neutral. All patch sites are found by byte signature.
+* A text run hard-coded in a program that outgrows its place is written, in
+  full, after the hook, and the code that loads it is pointed there.
 
-All patch sites are found by byte signature, not fixed addresses.
+## Script
+
+15249 strings: 6 exe, 585 menu, 14592 msg, 66 name.
+
+♥ by the script-text scan (15 of 15243 strings match the sexual-vocabulary list (5 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
 ## Limits
 
-* Message lines: the width of the widest Japanese line in each message, at least 21 cells (42 letters).
-* Menus: each item's own Japanese width in cells (twice that in letters). The menu
-  box grows to the right from a fixed position and runs off screen when an item is too long.
-* Names: 32 bytes.
+* Message lines wrap to the text window (its width from the script's window commands, or the widest Japanese line); `\n` forces a break.
+* Menu items: each item's Japanese width (twice that in letters).
+* Hard-coded strings: their original byte length unless moved past the hook.
 
-## Test status (np21w)
+## Not handled
+
+* Text drawn into the artwork (logos, panel labels).
+* Installer and driver messages.
+
+## Test status (np21w, `tools/boot_all.sh`)
 
 | Test | Result |
 |---|---|
-| Boot, intro, title menu with 2.5× filler | OK: half-width text renders; menus fit |
-| Scrolling intro text | JP-length screens redraw over earlier lines. Check with real English |
-| Menu highlight bar | stops slightly short of long items (cosmetic) |
-| Gameplay, save/load | not yet seen |
+| Boot, intro, title menu | OK |
+| Intro text over the starfield | OK |
+| Gameplay past the opening scenes, save/load, endings | not yet seen |

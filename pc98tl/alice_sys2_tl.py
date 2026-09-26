@@ -161,13 +161,14 @@ def window_command(op, version):
     return _consts(raw, 1)
 
 
-def window_cells(p1, p3):
-    """Text window width in 16px cells from its left/right coordinates
-    (8px columns when small, pixels otherwise)."""
+def window_cells(p1, p3, font_px=16):
+    """Text window width in character cells from its left/right coordinates
+    (8px columns when small, pixels otherwise); a cell is font_px wide (24 in
+    engines whose messages use the 24-dot mode)."""
     if p1 is None or p3 is None or p3 <= p1:
         return None
     px = (p3 - p1) * 8 if max(p1, p3) <= 80 else (p3 & 0xFFF8) - (p1 & 0xFFF8)
-    return max(4, px // 16)
+    return max(4, px // font_px)
 
 
 def parse_ag00(data):
@@ -261,10 +262,10 @@ class Sys2Game:
                 col = used
                 k = b.end
                 continue
-            if op.cmd == "B":
+            if op.cmd == "B" and self.version in (1, 2, 3):
                 v = window_command(op, self.version)
                 if len(v) >= 7 and v[0] == 3:
-                    widths[v[1]] = window_cells(v[2], v[4])
+                    widths[v[1]] = window_cells(v[2], v[4], self.config.get("font_px", 16))
                 elif len(v) >= 7 and v[0] == 4 and v[6] == 0:
                     active, col = v[1], 0
             elif op.cmd in ("R", "A"):

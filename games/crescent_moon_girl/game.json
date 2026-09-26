@@ -1,0 +1,27 @@
+{
+ "title": "Crescent Moon Girl",
+ "key": "AliceSoft.zip/Crescent Moon Girl",
+ "image": "Crescent Moon Girl\\Crescent Moon Girl [FD]\\Crescent Moon Girl (Disk A).hdm",
+ "game_dir": "",
+ "version": 1,
+ "encoding": "textvram",
+ "config": {
+  "menu_fit_jp": true
+ },
+ "sets": [
+  {
+   "prefix": "b:",
+   "disks": {
+    "2": "BDISK.DAT"
+   },
+   "image": "Crescent Moon Girl (Disk B).hdm"
+  },
+  {
+   "prefix": "c:",
+   "disks": {
+    "3": "CDISK.DAT"
+   },
+   "image": "Crescent Moon Girl (Disk C).hdm"
+  }
+ ]
+}

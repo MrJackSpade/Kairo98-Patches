@@ -1,0 +1,69 @@
+{
+ "_note": "np21w boot tests of the --pseudo (2.5x filler) builds, tools/boot_all.sh. Rows are [test, result]; tools/write_notes.py puts them in each game's notes.md.",
+ "alice_no_yakata_3": [
+  ["Boot, main menu with 2.5x filler", "OK; the menu buttons on the right are drawn as graphics and stay Japanese"],
+  ["Message window", "OK: filler wraps inside the frame"],
+  ["Sub-game (ADVT2.COM + ADISK.PAT)", "not yet seen"]
+ ],
+ "ambivalenz": [
+  ["Opening demo (AMB_DEMO.COM)", "OK: English narration; long runs are moved past the hook. Lines are centred by byte count, so English sits slightly right of centre"],
+  ["Title menu", "OK: items fit the box"],
+  ["Message window, first scene", "OK"]
+ ],
+ "ayumi_chan": [
+  ["Opening demo (AYU_DEMO.COM)", "OK"],
+  ["Message window, first scene, choice box", "OK"]
+ ],
+ "dalk": [
+  ["Opening demo (DALK_DEM.COM)", "OK"],
+  ["Title menu, message window, command menus", "OK"],
+  ["Later scene with the status panel", "OK; the panel labels (LV / EXP / H.P) are part of the artwork and stay Japanese"]
+ ],
+ "dps_sg": [
+  ["Boot from the system floppy, scenario floppy in drive 2", "OK"],
+  ["Scenario menu, message window (Fahnen Fliegen)", "OK: half-width letters in the text layer"]
+ ],
+ "dps_zenbu": [
+  ["Title, scenario select screen, message window", "OK"]
+ ],
+ "dr_stop": [
+  ["Opening demo (DRD.COM)", "OK"],
+  ["Menus (16-dot)", "OK"],
+  ["Message windows (24-dot)", "OK: letters drawn through the engine's own 24-dot scaling; wrapping uses 24-dot cells"]
+ ],
+ "funny_bee": [
+  ["Boot, intro, title menu", "OK"],
+  ["Intro text over the starfield", "OK"]
+ ],
+ "gakuen_king": [
+  ["Status windows, message window, map screen", "OK"]
+ ],
+ "hashiri_onna_2": [
+  ["Title text, menus, message window", "OK"]
+ ],
+ "intruder": [
+  ["Title, first scenes, message window", "OK: half-width letters in the text layer"]
+ ],
+ "mugen_houyou": [
+  ["Boot, menu, message window, first scene", "OK (no longer runs out of memory)"]
+ ],
+ "ningyo": [
+  ["Opening, title, first scenes", "OK"]
+ ],
+ "only_you": [
+  ["Title, menu, message window", "OK"]
+ ],
+ "otome_senki": [
+  ["Message window, menus", "OK"]
+ ],
+ "prostudent_g": [
+  ["Logo, message window, first scene", "OK"]
+ ],
+ "super_dps": [
+  ["Opening demo (SDPS_DM.COM)", "OK"],
+  ["Scenario select, message window", "OK"]
+ ],
+ "toushin_toshi_2_sp": [
+  ["Message window, menus", "OK"]
+ ]
+}

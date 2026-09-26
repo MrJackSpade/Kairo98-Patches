@@ -28,5 +28,8 @@
     "2": "SDPS/SDPS0003/BDISK.DAT"
    }
   }
+ ],
+ "demos": [
+  "SDPS_DM.COM"
  ]
 }

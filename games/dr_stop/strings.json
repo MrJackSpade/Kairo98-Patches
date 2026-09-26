@@ -27,7 +27,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "ゲーム",
-   "en": "",
+   "en": "Game",
    "refs": [
     "p00:0127"
    ],
@@ -37,7 +37,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "ロード",
-   "en": "",
+   "en": "Load",
    "refs": [
     "p00:0130"
    ],
@@ -47,7 +47,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "アリスの館",
-   "en": "",
+   "en": "Alice Hall",
    "refs": [
     "p00:0139"
    ],
@@ -67,7 +67,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "１",
-   "en": "",
+   "en": "1",
    "refs": [
     "p00:0158",
     "p02:001a",
@@ -83,7 +83,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "２",
-   "en": "",
+   "en": "2",
    "refs": [
     "p00:015e",
     "p02:0020",
@@ -99,7 +99,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "３",
-   "en": "",
+   "en": "3",
    "refs": [
     "p00:0164",
     "p02:0026",
@@ -115,7 +115,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "４",
-   "en": "",
+   "en": "4",
    "refs": [
     "p00:016a",
     "p02:002c",
@@ -131,7 +131,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "５",
-   "en": "",
+   "en": "5",
    "refs": [
     "p00:0170",
     "p02:0032",
@@ -148,7 +148,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "ロードしない",
-   "en": "",
+   "en": "Don't load",
    "refs": [
     "p00:0176"
    ],
@@ -258,7 +258,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "開発日記",
-   "en": "",
+   "en": "Dev Log",
    "refs": [
     "p01:0108"
    ],
@@ -268,7 +268,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "青年の主張",
-   "en": "",
+   "en": "Soapbox",
    "refs": [
     "p01:0114"
    ],
@@ -278,7 +278,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "変更点",
-   "en": "",
+   "en": "Changes",
    "refs": [
     "p01:0121"
    ],
@@ -288,7 +288,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "スタッフ募集",
-   "en": "",
+   "en": "Staff Wanted",
    "refs": [
     "p01:012b"
    ],
@@ -298,7 +298,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "マニュアルの不具合",
-   "en": "",
+   "en": "Manual Errata",
    "refs": [
     "p01:013b"
    ],
@@ -308,7 +308,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "戻る",
-   "en": "",
+   "en": "Back",
    "refs": [
     "p01:0150",
     "p12:008e",
@@ -534,7 +534,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "ＮＹＡＮ",
-   "en": "",
+   "en": "NYAN",
    "refs": [
     "p01:07db"
    ],
@@ -544,7 +544,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "ＫＡＯＲＩ",
-   "en": "",
+   "en": "KAORI",
    "refs": [
     "p01:07e7"
    ],
@@ -554,7 +554,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "ちーぼう",
-   "en": "",
+   "en": "Chibou",
    "refs": [
     "p01:07f5"
    ],
@@ -564,7 +564,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "とり",
-   "en": "",
+   "en": "Tori",
    "refs": [
     "p01:07fe"
    ],
@@ -574,7 +574,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "ＹＵＫＩＭＩ",
-   "en": "",
+   "en": "YUKIMI",
    "refs": [
     "p01:0804"
    ],
@@ -584,7 +584,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "Ｋ",
-   "en": "",
+   "en": "K",
    "refs": [
     "p01:0814",
     "p59:0a73"
@@ -595,7 +595,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "ＰＬＵＭ．Ｆ",
-   "en": "",
+   "en": "PLUM.F",
    "refs": [
     "p01:081a"
    ],
@@ -605,7 +605,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "ＷＡＯ",
-   "en": "",
+   "en": "WAO",
    "refs": [
     "p01:082a"
    ],
@@ -615,7 +615,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "ぷりん",
-   "en": "",
+   "en": "Purin",
    "refs": [
     "p01:0834"
    ],
@@ -625,7 +625,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "やめる",
-   "en": "",
+   "en": "Quit",
    "refs": [
     "p01:083c",
     "p25:0308",
@@ -1357,7 +1357,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "受け取る",
-   "en": "",
+   "en": "Accept",
    "refs": [
     "p01:18c9"
    ],
@@ -1367,7 +1367,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "受け取らない",
-   "en": "",
+   "en": "Decline",
    "refs": [
     "p01:18d3"
    ],
@@ -5725,7 +5725,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "自分の事を考える",
-   "en": "",
+   "en": "About myself",
    "refs": [
     "p08:02d6"
    ],
@@ -5735,7 +5735,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "病院の事を考える",
-   "en": "",
+   "en": "The hospital",
    "refs": [
     "p08:02eb"
    ],
@@ -5745,7 +5745,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "副院長の事を考える",
-   "en": "",
+   "en": "The vice director",
    "refs": [
     "p08:0301",
     "p63:0809"
@@ -5756,7 +5756,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "院長の事を考える",
-   "en": "",
+   "en": "The director",
    "refs": [
     "p08:0319",
     "p63:07e9",
@@ -6090,7 +6090,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "婦長の事を考える",
-   "en": "",
+   "en": "The head nurse",
    "refs": [
     "p08:0ade",
     "p63:081b"
@@ -6101,7 +6101,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "婦長と話す",
-   "en": "",
+   "en": "Talk nurse",
    "refs": [
     "p08:0aee"
    ],
@@ -6434,7 +6434,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "行く",
-   "en": "",
+   "en": "Go",
    "refs": [
     "p08:10ee"
    ],
@@ -6444,7 +6444,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "行かない",
-   "en": "",
+   "en": "Don't go",
    "refs": [
     "p08:10f5"
    ],
@@ -6704,7 +6704,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "熱を測る",
-   "en": "",
+   "en": "Get temp",
    "refs": [
     "p09:02de",
     "p09:09e3",
@@ -6717,7 +6717,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "病状を詳しく聞く",
-   "en": "",
+   "en": "Ask for details",
    "refs": [
     "p09:02e8"
    ],
@@ -6727,7 +6727,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "カルテを見る",
-   "en": "",
+   "en": "Read chart",
    "refs": [
     "p09:02f8",
     "p09:0a07",
@@ -6740,7 +6740,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "きおしをじっと見る",
-   "en": "",
+   "en": "Stare at Kioshi",
    "refs": [
     "p09:0306"
    ],
@@ -6750,7 +6750,7 @@
    "id": "u00040",
    "kind": "menu",
    "jp": "職業について尋ねる",
-   "en": "",
+   "en": "Ask about job",
    "refs": [
     "p09:031a"
    ],
@@ -7182,7 +7182,7 @@
    "id": "u00041",
    "kind": "menu",
    "jp": "病状を聞く",
-   "en": "",
+   "en": "Symptoms?",
    "refs": [
     "p09:09ed",
     "p93:0c8a"
@@ -7193,7 +7193,7 @@
    "id": "u00042",
    "kind": "menu",
    "jp": "華那子を見る",
-   "en": "",
+   "en": "Look Kanako",
    "refs": [
     "p09:09f9"
    ],
@@ -8161,7 +8161,7 @@
    "id": "u00043",
    "kind": "menu",
    "jp": "吸うのやめる",
-   "en": "",
+   "en": "Stop smoking",
    "refs": [
     "p10:0718"
    ],
@@ -8171,7 +8171,7 @@
    "id": "u00044",
    "kind": "menu",
    "jp": "吸い続ける",
-   "en": "",
+   "en": "Keep going",
    "refs": [
     "p10:0723"
    ],
@@ -8241,7 +8241,7 @@
    "id": "u00045",
    "kind": "menu",
    "jp": "ほっとく",
-   "en": "",
+   "en": "Leave it",
    "refs": [
     "p10:0804"
    ],
@@ -8251,7 +8251,7 @@
    "id": "u00046",
    "kind": "menu",
    "jp": "止める",
-   "en": "",
+   "en": "Stop",
    "refs": [
     "p10:080c"
    ],
@@ -8739,7 +8739,7 @@
    "id": "u00047",
    "kind": "menu",
    "jp": "遊ぶ",
-   "en": "",
+   "en": "Play",
    "refs": [
     "p10:0dcd"
    ],
@@ -8749,7 +8749,7 @@
    "id": "u00048",
    "kind": "menu",
    "jp": "遊ぶ時",
-   "en": "",
+   "en": "Playtime",
    "refs": [
     "p10:0dd5"
    ],
@@ -8759,7 +8759,7 @@
    "id": "u00049",
    "kind": "menu",
    "jp": "遊べば",
-   "en": "",
+   "en": "Play?",
    "refs": [
     "p10:0ddf"
    ],
@@ -8769,7 +8769,7 @@
    "id": "u00050",
    "kind": "menu",
    "jp": "遊べ",
-   "en": "",
+   "en": "Play!",
    "refs": [
     "p10:0de9"
    ],
@@ -8779,7 +8779,7 @@
    "id": "u00051",
    "kind": "menu",
    "jp": "遊びましょう",
-   "en": "",
+   "en": "Let's play",
    "refs": [
     "p10:0df1"
    ],
@@ -75064,7 +75064,7 @@
    "id": "v00001",
    "kind": "verb",
    "jp": "会話",
-   "en": "",
+   "en": "Talk",
    "refs": [
     "verb:0"
    ],
@@ -75074,7 +75074,7 @@
    "id": "v00002",
    "kind": "verb",
    "jp": "考える",
-   "en": "",
+   "en": "Think",
    "refs": [
     "verb:1"
    ],
@@ -75084,7 +75084,7 @@
    "id": "v00003",
    "kind": "verb",
    "jp": "見る",
-   "en": "",
+   "en": "Look",
    "refs": [
     "verb:2"
    ],
@@ -75094,7 +75094,7 @@
    "id": "v00004",
    "kind": "verb",
    "jp": "捜す",
-   "en": "",
+   "en": "Search",
    "refs": [
     "verb:3"
    ],
@@ -75104,7 +75104,7 @@
    "id": "v00005",
    "kind": "verb",
    "jp": "使う",
-   "en": "",
+   "en": "Use",
    "refs": [
     "verb:4"
    ],
@@ -75114,7 +75114,7 @@
    "id": "v00006",
    "kind": "verb",
    "jp": "調べる",
-   "en": "",
+   "en": "Examine",
    "refs": [
     "verb:5"
    ],
@@ -75124,7 +75124,7 @@
    "id": "v00007",
    "kind": "verb",
    "jp": "取る",
-   "en": "",
+   "en": "Take",
    "refs": [
     "verb:6"
    ],
@@ -75134,7 +75134,7 @@
    "id": "v00008",
    "kind": "verb",
    "jp": "診察",
-   "en": "",
+   "en": "Diagnose",
    "refs": [
     "verb:7"
    ],
@@ -75144,7 +75144,7 @@
    "id": "v00009",
    "kind": "verb",
    "jp": "買う",
-   "en": "",
+   "en": "Buy",
    "refs": [
     "verb:8"
    ],
@@ -75154,7 +75154,7 @@
    "id": "v00010",
    "kind": "verb",
    "jp": "渡す",
-   "en": "",
+   "en": "Give",
    "refs": [
     "verb:9"
    ],
@@ -75164,7 +75164,7 @@
    "id": "v00011",
    "kind": "verb",
    "jp": "ちょっかい",
-   "en": "",
+   "en": "Tease",
    "refs": [
     "verb:10"
    ],
@@ -75174,7 +75174,7 @@
    "id": "v00012",
    "kind": "verb",
    "jp": "掃除",
-   "en": "",
+   "en": "Clean",
    "refs": [
     "verb:11"
    ],
@@ -75184,7 +75184,7 @@
    "id": "v00013",
    "kind": "verb",
    "jp": "捕まえる",
-   "en": "",
+   "en": "Catch",
    "refs": [
     "verb:12"
    ],
@@ -75194,7 +75194,7 @@
    "id": "v00014",
    "kind": "verb",
    "jp": "移動",
-   "en": "",
+   "en": "Move",
    "refs": [
     "verb:13"
    ],
@@ -75204,7 +75204,7 @@
    "id": "v00015",
    "kind": "verb",
    "jp": "忍び寄る",
-   "en": "",
+   "en": "Sneak up",
    "refs": [
     "verb:14"
    ],
@@ -75214,7 +75214,7 @@
    "id": "v00016",
    "kind": "verb",
    "jp": "入る",
-   "en": "",
+   "en": "Enter",
    "refs": [
     "verb:15"
    ],
@@ -75224,7 +75224,7 @@
    "id": "v00017",
    "kind": "verb",
    "jp": "出る",
-   "en": "",
+   "en": "Exit",
    "refs": [
     "verb:16"
    ],
@@ -75234,7 +75234,7 @@
    "id": "v00018",
    "kind": "verb",
    "jp": "システム",
-   "en": "",
+   "en": "System",
    "refs": [
     "verb:17"
    ],
@@ -75244,7 +75244,7 @@
    "id": "o00001",
    "kind": "obj",
    "jp": "*",
-   "en": "",
+   "en": "*",
    "refs": [
     "obj:0"
    ],
@@ -75254,7 +75254,7 @@
    "id": "o00002",
    "kind": "obj",
    "jp": "まわり",
-   "en": "",
+   "en": "Surroundings",
    "refs": [
     "obj:1"
    ],
@@ -75264,7 +75264,7 @@
    "id": "o00003",
    "kind": "obj",
    "jp": "明美",
-   "en": "",
+   "en": "Akemi",
    "refs": [
     "obj:2"
    ],
@@ -75274,7 +75274,7 @@
    "id": "o00004",
    "kind": "obj",
    "jp": "百合子",
-   "en": "",
+   "en": "Yuriko",
    "refs": [
     "obj:3"
    ],
@@ -75284,7 +75284,7 @@
    "id": "o00005",
    "kind": "obj",
    "jp": "美子",
-   "en": "",
+   "en": "Yoshiko",
    "refs": [
     "obj:4"
    ],
@@ -75294,7 +75294,7 @@
    "id": "o00006",
    "kind": "obj",
    "jp": "万里",
-   "en": "",
+   "en": "Mari",
    "refs": [
     "obj:5"
    ],
@@ -75304,7 +75304,7 @@
    "id": "o00007",
    "kind": "obj",
    "jp": "千歌",
-   "en": "",
+   "en": "Chika",
    "refs": [
     "obj:6"
    ],
@@ -75314,7 +75314,7 @@
    "id": "o00008",
    "kind": "obj",
    "jp": "店員",
-   "en": "",
+   "en": "Clerk",
    "refs": [
     "obj:7"
    ],
@@ -75324,7 +75324,7 @@
    "id": "o00009",
    "kind": "obj",
    "jp": "まんが",
-   "en": "",
+   "en": "Manga",
    "refs": [
     "obj:8"
    ],
@@ -75334,7 +75334,7 @@
    "id": "o00010",
    "kind": "obj",
    "jp": "キャンディ",
-   "en": "",
+   "en": "Candy",
    "refs": [
     "obj:9"
    ],
@@ -75344,7 +75344,7 @@
    "id": "o00011",
    "kind": "obj",
    "jp": "物置",
-   "en": "",
+   "en": "Storeroom",
    "refs": [
     "obj:10"
    ],
@@ -75354,7 +75354,7 @@
    "id": "o00012",
    "kind": "obj",
    "jp": "廊下",
-   "en": "",
+   "en": "Hallway",
    "refs": [
     "obj:11"
    ],
@@ -75364,7 +75364,7 @@
    "id": "o00013",
    "kind": "obj",
    "jp": "玄関",
-   "en": "",
+   "en": "Entrance",
    "refs": [
     "obj:12"
    ],
@@ -75374,7 +75374,7 @@
    "id": "o00014",
    "kind": "obj",
    "jp": "美緒",
-   "en": "",
+   "en": "Mio",
    "refs": [
     "obj:13"
    ],
@@ -75384,7 +75384,7 @@
    "id": "o00015",
    "kind": "obj",
    "jp": "夢太郎",
-   "en": "",
+   "en": "Yumetaro",
    "refs": [
     "obj:14"
    ],
@@ -75394,7 +75394,7 @@
    "id": "o00016",
    "kind": "obj",
    "jp": "研究員",
-   "en": "",
+   "en": "Researcher",
    "refs": [
     "obj:15"
    ],
@@ -75404,7 +75404,7 @@
    "id": "o00017",
    "kind": "obj",
    "jp": "名刺",
-   "en": "",
+   "en": "Business card",
    "refs": [
     "obj:16"
    ],
@@ -75414,7 +75414,7 @@
    "id": "o00018",
    "kind": "obj",
    "jp": "手紙",
-   "en": "",
+   "en": "Letter",
    "refs": [
     "obj:17"
    ],
@@ -75424,7 +75424,7 @@
    "id": "o00019",
    "kind": "obj",
    "jp": "副院長",
-   "en": "",
+   "en": "Vice Director",
    "refs": [
     "obj:18"
    ],
@@ -75434,7 +75434,7 @@
    "id": "o00020",
    "kind": "obj",
    "jp": "かをる",
-   "en": "",
+   "en": "Kaoru",
    "refs": [
     "obj:19"
    ],
@@ -75444,7 +75444,7 @@
    "id": "o00021",
    "kind": "obj",
    "jp": "須田",
-   "en": "",
+   "en": "Suda",
    "refs": [
     "obj:20"
    ],
@@ -75454,7 +75454,7 @@
    "id": "o00022",
    "kind": "obj",
    "jp": "外",
-   "en": "",
+   "en": "Outside",
    "refs": [
     "obj:21"
    ],
@@ -75464,7 +75464,7 @@
    "id": "o00023",
    "kind": "obj",
    "jp": "婦長",
-   "en": "",
+   "en": "Head Nurse",
    "refs": [
     "obj:22"
    ],
@@ -75474,7 +75474,7 @@
    "id": "o00024",
    "kind": "obj",
    "jp": "彩子",
-   "en": "",
+   "en": "Ayako",
    "refs": [
     "obj:23"
    ],
@@ -75484,7 +75484,7 @@
    "id": "o00025",
    "kind": "obj",
    "jp": "豪徳寺",
-   "en": "",
+   "en": "Gotokuji",
    "refs": [
     "obj:24"
    ],
@@ -75494,7 +75494,7 @@
    "id": "o00026",
    "kind": "obj",
    "jp": "院長",
-   "en": "",
+   "en": "Director",
    "refs": [
     "obj:25"
    ],
@@ -75504,7 +75504,7 @@
    "id": "o00027",
    "kind": "obj",
    "jp": "ＣＴスキャン室",
-   "en": "",
+   "en": "CT Scan Room",
    "refs": [
     "obj:26"
    ],
@@ -75514,7 +75514,7 @@
    "id": "o00028",
    "kind": "obj",
    "jp": "中",
-   "en": "",
+   "en": "Inside",
    "refs": [
     "obj:27"
    ],
@@ -75524,7 +75524,7 @@
    "id": "o00029",
    "kind": "obj",
    "jp": "ゆか",
-   "en": "",
+   "en": "Yuka",
    "refs": [
     "obj:28"
    ],
@@ -75534,7 +75534,7 @@
    "id": "o00030",
    "kind": "obj",
    "jp": "稀羅",
-   "en": "",
+   "en": "Kira",
    "refs": [
     "obj:29"
    ],
@@ -75544,7 +75544,7 @@
    "id": "o00031",
    "kind": "obj",
    "jp": "姫子",
-   "en": "",
+   "en": "Himeko",
    "refs": [
     "obj:30"
    ],
@@ -75554,7 +75554,7 @@
    "id": "o00032",
    "kind": "obj",
    "jp": "女",
-   "en": "",
+   "en": "Woman",
    "refs": [
     "obj:31"
    ],
@@ -75564,7 +75564,7 @@
    "id": "o00033",
    "kind": "obj",
    "jp": "爆弾",
-   "en": "",
+   "en": "Bomb",
    "refs": [
     "obj:32"
    ],
@@ -75609,6 +75609,237 @@
     "adv:2f28"
    ],
    "max_bytes": 50
+  },
+  {
+   "id": "d00001",
+   "kind": "demo",
+   "jp": "著作・制作　アリスソフト",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0358"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00002",
+   "kind": "demo",
+   "jp": "シナリオ　　とり",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0371"
+   ],
+   "max_bytes": 16,
+   "max_cells": 8
+  },
+  {
+   "id": "d00003",
+   "kind": "demo",
+   "jp": "プログラム　ＷＡＯ",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0382"
+   ],
+   "max_bytes": 18,
+   "max_cells": 9
+  },
+  {
+   "id": "d00004",
+   "kind": "demo",
+   "jp": "原画　ラッシャー・ヴェラク",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0395"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00005",
+   "kind": "demo",
+   "jp": "ＣＧ　かおり",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0417"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00006",
+   "kind": "demo",
+   "jp": "　　　ち～ぼう",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0424"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00007",
+   "kind": "demo",
+   "jp": "「こちらです！急いで！！」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0597"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00008",
+   "kind": "demo",
+   "jp": "「クランケ（患者）は？」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:05b2"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00009",
+   "kind": "demo",
+   "jp": "「重傷です。",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:05cb"
+   ],
+   "max_bytes": 12,
+   "max_cells": 6
+  },
+  {
+   "id": "d00010",
+   "kind": "demo",
+   "jp": "　大腿骨と、肋骨を折っています。",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:05d8"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00011",
+   "kind": "demo",
+   "jp": "　交通事故だそうです」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:05f9"
+   ],
+   "max_bytes": 22,
+   "max_cells": 11
+  },
+  {
+   "id": "d00012",
+   "kind": "demo",
+   "jp": "「輸血の用意」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:06f2"
+   ],
+   "max_bytes": 14,
+   "max_cells": 7
+  },
+  {
+   "id": "d00013",
+   "kind": "demo",
+   "jp": "「はい」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0701"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00014",
+   "kind": "demo",
+   "jp": "「ライト（無影灯）をつけろ」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:070a"
+   ],
+   "max_bytes": 28,
+   "max_cells": 14
+  },
+  {
+   "id": "d00015",
+   "kind": "demo",
+   "jp": "「はい」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0727"
+   ],
+   "max_bytes": 8,
+   "max_cells": 4
+  },
+  {
+   "id": "d00016",
+   "kind": "demo",
+   "jp": "「せっ・・先生！うちの子は・・・！」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:081c"
+   ],
+   "max_bytes": 36,
+   "max_cells": 18
+  },
+  {
+   "id": "d00017",
+   "kind": "demo",
+   "jp": "「残念ながら手遅れでした。",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:0841"
+   ],
+   "max_bytes": 26,
+   "max_cells": 13
+  },
+  {
+   "id": "d00018",
+   "kind": "demo",
+   "jp": "　死亡時刻は午前３時１７分です」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:085c"
+   ],
+   "max_bytes": 32,
+   "max_cells": 16
+  },
+  {
+   "id": "d00019",
+   "kind": "demo",
+   "jp": "「・・ああっ・・・！！」",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:087d"
+   ],
+   "max_bytes": 24,
+   "max_cells": 12
+  },
+  {
+   "id": "d00020",
+   "kind": "demo",
+   "jp": "【★－ｄｉｓｋのライトプロテクトを解除してください】",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:1f64"
+   ],
+   "max_bytes": 52,
+   "max_cells": 26
+  },
+  {
+   "id": "d00021",
+   "kind": "demo",
+   "jp": "【［★］ｄｒｉｖｅに★－ｄｉｓｋを入れてください】",
+   "en": "",
+   "refs": [
+    "demo:DRD.COM:1f99"
+   ],
+   "max_bytes": 50,
+   "max_cells": 25
   }
  ]
 }

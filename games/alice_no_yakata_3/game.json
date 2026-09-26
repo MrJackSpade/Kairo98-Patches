@@ -7,5 +7,17 @@
  "encoding": "halfkana",
  "config": {
   "menu_fit_jp": true
- }
+ },
+ "demos": [
+  "ADVT2.COM"
+ ],
+ "sets": [
+  {
+   "prefix": "pat:",
+   "version": "gakuen",
+   "disks": {
+    "1": "ALICE_Y3/ADISK.PAT"
+   }
+  }
+ ]
 }

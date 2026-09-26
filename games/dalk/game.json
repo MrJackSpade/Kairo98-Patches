@@ -4,5 +4,8 @@
  "image": "Dalk\\Dalk [HD]\\Dalk (v1.08) (uncensored).hdi",
  "game_dir": "DALK",
  "version": 2,
- "encoding": "packed"
+ "encoding": "packed",
+ "demos": [
+  "DALK_DEM.COM"
+ ]
 }

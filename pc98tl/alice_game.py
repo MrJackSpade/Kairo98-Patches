@@ -2,7 +2,8 @@
 
 A game folder holds game.json:
   {"title": ..., "key": "<index key>", "game_dir": "BEE", "version": 3,
-   "encoding": "halfkana", "config": {...optional Sys2Game overrides}}
+   "encoding": "halfkana", "config": {...optional Sys2Game overrides},
+   "demos": ["BEE_DEMO.COM", ...optional opening/demo programs in game_dir]}
 and thin extract.py / patch.py wrappers that call run_extract / run_patch.
 """
 import json
@@ -11,9 +12,11 @@ import re
 
 from .disk import DiskImage
 from .alice_sys2_tl import Sys2Game, sha256, set_kana_table
-from . import alice3_font, alice2_font, alice1_text
-from .alice_exe import find_strings, apply_strings
+from . import alice3_font, alice2_font, alice1_text, dosmem
+from .alice_exe import find_strings, apply_strings, widen
+from .text import pseudo
 
+ORG = 0x100
 COLLECTION = os.environ.get("PC98_ROOT", r"C:\PC98")
 
 MTL_NOTE = """{title} - English patch (machine translation)
@@ -38,11 +41,15 @@ def kana_table(adv):
 def _games(here, img, src=None):
     """One Sys2Game per scenario set.  Without "sets": a single game.  With
     "sets" (e.g. Super D.P.S): the shared ADISK pages once, then each set's
-    own disks, e.g. {"prefix": "s1:", "disks": {"2": "SDPS/SDPS0001/BDISK.DAT"}}."""
+    own disks, e.g. {"prefix": "s1:", "disks": {"2": "SDPS/SDPS0001/BDISK.DAT"}}.
+    A set may name its own command table ("version"), e.g. a sub-game run by a
+    second engine from its own scenario file."""
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     vol = img.volumes[0]
     conf = dict(cfg.get("config", {}))
     conf.setdefault("encoding", cfg["encoding"])
+    if cfg["encoding"] == "packed":  # message cell width comes from the engine
+        conf.setdefault("font_px", alice2_font.font_px(vol.read(_adv_path(cfg))))
     if not cfg.get("sets"):
         return cfg, vol, [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf)]
     games = [Sys2Game(vol, cfg["game_dir"], version=cfg["version"], config=conf, scope={1})]
@@ -55,7 +62,7 @@ def _games(here, img, src=None):
             set_vol = set_img.volumes[0]
             # the shared link table lives on the main image's ADISK.DAT
             disks = dict(disks)
-        g = Sys2Game(set_vol, cfg["game_dir"], version=cfg["version"], config=conf,
+        g = Sys2Game(set_vol, cfg["game_dir"], version=st.get("version", cfg["version"]), config=conf,
                      disks=disks, scope=set(disks), prefix=st["prefix"],
                      adisk_bytes=vol.read((cfg["game_dir"] + "/" if cfg["game_dir"] else "") + "ADISK.DAT")
                      if set_img else None)
@@ -76,7 +83,7 @@ def _merge(docs):
             else:
                 merged[key] = dict(e)
                 order.append(key)
-    prefix = {"msg": "m", "menu": "u", "name": "n", "verb": "v", "obj": "o", "exe": "e"}
+    prefix = {"msg": "m", "menu": "u", "name": "n", "verb": "v", "obj": "o", "exe": "e", "demo": "d"}
     counters, out = {}, []
     for key in order:
         e = merged[key]
@@ -92,9 +99,34 @@ def _adv_path(cfg):
     return (cfg["game_dir"] + "/" if cfg["game_dir"] else "") + cfg.get("engine", "ADV.COM")
 
 
+def _kana(cfg, prog):
+    """(display table, full-width codes) for a System 3 program whose kana
+    table the English patch remaps; (None, None) otherwise."""
+    if cfg["encoding"] != "halfkana":
+        return None, None
+    at = prog.find(bytes.fromhex("4081428175817681418145"))
+    if at < 0:
+        return None, None
+    words = [bytes([prog[at + i + 1], prog[at + i]]) for i in range(0, 128, 2)]
+    return [w.decode("cp932", "replace") for w in words], words
+
+
+def _keep(cfg, prog):
+    words = _kana(cfg, prog)[1]
+    return (lambda raw: widen(raw, words)) if words else None
+
+
 def _exe_strings(cfg, adv):
-    return find_strings(adv, add=[int(a, 16) for a in cfg.get("exe_add", [])],
+    return find_strings(adv, kana=_kana(cfg, adv)[0], add=[int(a, 16) for a in cfg.get("exe_add", [])],
                         skip=[int(a, 16) for a in cfg.get("exe_skip", [])])
+
+
+def _prog_path(cfg, name):
+    return (cfg["game_dir"] + "/" if cfg["game_dir"] else "") + name
+
+
+def _cells(jp):
+    return sum(1 if ord(c) < 0x80 else 2 for c in jp) // 2
 
 
 def run_extract(here, src):
@@ -111,6 +143,14 @@ def run_extract(here, src):
     for n, st in enumerate(_exe_strings(cfg, adv), 1):
         doc["strings"].append({"id": "e%05d" % n, "kind": "exe", "jp": st["jp"], "en": "",
                                "refs": ["adv:%04x" % st["addr"]], "max_bytes": st["max_bytes"]})
+    n = 0
+    for name in cfg.get("demos", []):  # opening/demo programs: same in-place rules
+        prog = vol.read(_prog_path(cfg, name))
+        for st in find_strings(prog, kana=_kana(cfg, prog)[0]):
+            n += 1
+            doc["strings"].append({"id": "d%05d" % n, "kind": "demo", "jp": st["jp"], "en": "",
+                                   "refs": ["demo:%s:%04x" % (name, st["addr"])],
+                                   "max_bytes": st["max_bytes"], "max_cells": _cells(st["jp"])})
     if os.path.exists(out):  # keep translations and hand-tuned fields
         old = {(e["kind"], e["jp"]): e for e in json.load(open(out, encoding="utf-8"))["strings"]}
         for e in doc["strings"]:
@@ -127,6 +167,39 @@ def run_extract(here, src):
     print("wrote %s: %d strings %s" % (out, len(doc["strings"]), kinds))
 
 
+def _fixed(e, mode):
+    """Text for a string replaced in place: the translation, or in pseudo mode
+    filler exactly as wide as the Japanese (these slots cannot grow)."""
+    if mode == "pseudo":
+        return pseudo(e["id"], sum(1 if ord(c) < 0x80 else 2 for c in e["jp"]), factor=2.0)
+    return e["en"]
+
+
+def _font(cfg, prog, room=0x1000):
+    """Add the English display patch for the game's encoding to a program."""
+    if cfg["encoding"] == "halfkana":
+        return alice3_font.build(prog, room=room)
+    if cfg["encoding"] == "packed":
+        return alice2_font.build(prog, room=room)
+    if cfg["encoding"] == "textvram":
+        return alice1_text.build(prog)
+    return prog
+
+
+def _strings_and_font(cfg, prog, texts, sizes, encode, label, report, room=0x1000):
+    """Display patch first, then the strings: a run too long for its place
+    spills into the memory between the hook and the moved stack.  Opening
+    demos get more room, since their narration is mostly 1-byte kana that
+    English outgrows."""
+    keep = _keep(cfg, prog)                     # from the original kana table
+    patched = _font(cfg, prog, room)
+    top = dosmem.stack_top(patched)
+    spill = (ORG + len(patched), top - 0x400) if top else None
+    out, warn = apply_strings(patched, texts, encode, sizes, label=label, keep=keep, spill=spill)
+    report += warn
+    return out
+
+
 def run_patch(here, src, dst, mode="en"):
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
@@ -139,17 +212,16 @@ def run_patch(here, src, dst, mode="en"):
     adv_path = _adv_path(cfg)
     adv = vol.read(adv_path)
     exe = [e for e in doc["strings"] if e["kind"] == "exe"]
-    texts = {int(e["refs"][0][4:], 16): e["en"] for e in exe if e["en"]}
+    texts = {int(e["refs"][0][4:], 16): _fixed(e, mode) for e in exe if _fixed(e, mode)}
     sizes = {int(e["refs"][0][4:], 16): e["max_bytes"] for e in exe}
-    adv, warn = apply_strings(adv, texts, games[0].enc.encode, sizes)
-    report += warn
-    if cfg["encoding"] == "halfkana":
-        adv = alice3_font.build(adv)
-    elif cfg["encoding"] == "packed":
-        adv = alice2_font.build(adv)
-    elif cfg["encoding"] == "textvram":
-        adv = alice1_text.build(adv)
-    vol.write(adv_path, adv)
+    vol.write(adv_path, _strings_and_font(cfg, adv, texts, sizes, games[0].enc.encode, "ADV.COM", report))
+    for name in cfg.get("demos", []):
+        path = _prog_path(cfg, name)
+        ents = [e for e in doc["strings"] if e["kind"] == "demo" and e["refs"][0].split(":")[1] == name]
+        texts = {int(e["refs"][0].split(":")[2], 16): _fixed(e, mode) for e in ents if _fixed(e, mode)}
+        sizes = {int(e["refs"][0].split(":")[2], 16): e["max_bytes"] for e in ents}
+        vol.write(path, _strings_and_font(cfg, vol.read(path), texts, sizes, games[0].enc.encode, name,
+                                          report, room=0x2000))
     vol.create((cfg["game_dir"] + "/" if cfg["game_dir"] else "") + "MTL_NOTE.TXT",
                MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))
     img.save(dst)
