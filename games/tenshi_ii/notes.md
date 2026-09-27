@@ -32,7 +32,7 @@ JAST's typed-command engine on self-booting 2HD floppies (D88, 256-byte sectors,
 
 1230 strings (908 scene text, 312 menu words, 10 title screen).
 
-♥ by the safety valve: sex scenes (the vocabulary scan finds no terms in the script text); for the translation model: an age of 17 is stated in m00024, m00026 (the opening line), m00032 and m00129 (found 2026-09-27). The maintainer translates it; 0 strings have English so far.
+♥ by the safety valve: sex scenes (the vocabulary scan finds no terms in the script text); for the translation model: the heroine is stated to be 17 in m00026 (the opening line, scene0:0), m00032 (scene1:2) and m00129 (scene6:11) (found 2026-09-27). The maintainer translates it; 0 strings have English so far.
 
 ## Limits
 
