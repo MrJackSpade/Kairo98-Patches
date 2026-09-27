@@ -229,7 +229,6 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo Collection | [This repo: games/tenshi_collection (patcher working, machine translation in progress)](../games/tenshi_collection/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection 2 | [This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)](../games/tenshi_collection_2/notes.md) |
 | Jast | Tenshi-tachi no Gogo III - Ribbon | [This repo: games/tenshi_iii_ribbon (patcher working, machine translation in progress)](../games/tenshi_iii_ribbon/notes.md) |
-| Jast | Tenshi-tachi no Gogo III Bangaihen | [This repo: games/tenshi_iii_bangaihen (patcher working, machine translation in progress)](../games/tenshi_iii_bangaihen/notes.md) |
 | Jast | Tenshi-tachi no Gogo III Bangaihen Hanseiban | [This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)](../games/tenshi_iii_hanseiban/notes.md) |
 | Jast | Tenshi-tachi no Gogo IV - Yuko | [This repo: games/tenshi_iv (patcher working, machine translation in progress)](../games/tenshi_iv/notes.md) |
 | Jast | Tenshi-tachi no Gogo Special II | [This repo: games/tenshi_special_ii (patcher working, machine translation in progress)](../games/tenshi_special_ii/notes.md) |
@@ -237,7 +236,6 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo V - Nerawareta Tenshi | [This repo: games/tenshi_v (patcher working, machine translation in progress)](../games/tenshi_v/notes.md) |
 | Jast | Tenshi-tachi no Gogo VI - My Fair Teacher | [This repo: games/tenshi_vi (patcher working, machine translation in progress)](../games/tenshi_vi/notes.md) |
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
-| Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 
 ## Translations not yet matched to a collection title
@@ -3245,7 +3243,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Tenshi-tachi no Gogo II - Minako [FD]
 - ♥ Tenshi-tachi no Gogo II Bangaihen [FD]
 - ♥ Tenshi-tachi no Gogo III - Ribbon [FD extras] — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo III Bangaihen [FD] — *MTL (this repo)*
+- ♥ Tenshi-tachi no Gogo III Bangaihen [FD]
 - ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo IV - Yuko [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Special II [FD] — *MTL (this repo)*
@@ -3254,7 +3252,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Tenshi-tachi no Gogo VI - My Fair Teacher [FD HD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Hohoemi [FD HD] `jast` — *MTL (this repo)*
 - ♥ Totsugeki! Bakkon Street [FD HD]
-- ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD extras] — *MTL (this repo)*
+- ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD extras]
 
 ### JHV (`JHV.zip`)
 
