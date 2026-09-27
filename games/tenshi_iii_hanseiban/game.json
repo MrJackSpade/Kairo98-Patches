@@ -1,0 +1,42 @@
+{
+ "title": "Tenshi-tachi no Gogo III Bangaihen Hanseiban",
+ "key": "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban",
+ "image": "Tenshi-tachi no Gogo III Bangaihen Hanseiban\\Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD]\\Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk A).hdm",
+ "game_dir": "",
+ "engine": ".EXE",
+ "encoding": "jast_scm",
+ "cols": 60,
+ "native_ascii": true,
+ "boot_steps": "30:shot,3:enter,4:space,4:shot,2:lclick,4:shot,2:lclick,4:shot",
+ "hdd": {
+  "base": "Kankin\\Kankin [HD]\\Kankin.hdi",
+  "remove": [
+   "KAN"
+  ],
+  "dir": "TENSHI",
+  "disks": [
+   "Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk B).hdm",
+   "Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk C).hdm",
+   "Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk D).hdm"
+  ],
+  "skip": [
+   "INST.EXE",
+   "TEN.BAT",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "CD TENSHI",
+   "",
+   ""
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "CD KAN",
+   "GAME"
+  ]
+ },
+ "box_lines": 4,
+ "dipsw": "3e f3 7b",
+ "cave": 58132,
+ "one_drive": true
+}

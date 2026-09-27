@@ -1,0 +1,45 @@
+{
+ "title": "Tenshi-tachi no Gogo Special II",
+ "key": "Jast.zip/Tenshi-tachi no Gogo Special II",
+ "image": "Tenshi-tachi no Gogo Special II\\Tenshi-tachi no Gogo Special II [FD]\\Tenshi-tachi no Gogo Special II (Disk A).hdm",
+ "game_dir": "",
+ "engine": ".EXE",
+ "encoding": "jast_scm",
+ "cols": 60,
+ "native_ascii": false,
+ "boot_steps": "30:enter,4:space,4:lclick,5:lclick,5:shot,3:lclick,4:shot,3:lclick,4:shot",
+ "dgroup": 2370,
+ "pointers": [
+  1536,
+  1540
+ ],
+ "hdd": {
+  "base": "Kankin\\Kankin [HD]\\Kankin.hdi",
+  "remove": [
+   "KAN"
+  ],
+  "dir": "TENSHI",
+  "disks": [
+   "Tenshi-tachi no Gogo Special II (Disk B).hdm",
+   "Tenshi-tachi no Gogo Special II (Disk C).hdm",
+   "Tenshi-tachi no Gogo Special II (Disk D).hdm",
+   "Tenshi-tachi no Gogo Special II (Disk E).hdm"
+  ],
+  "skip": [
+   "INST.EXE",
+   "TEN.BAT",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "CD TENSHI",
+   "",
+   " /h"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "CD KAN",
+   "GAME"
+  ]
+ },
+ "dipsw": "3e f3 7b"
+}

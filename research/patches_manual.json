@@ -489,6 +489,22 @@
    "wip": true
   }
  ],
+ "Jast.zip/Tenshi-tachi no Gogo Collection": [
+  {
+   "label": "This repo: games/tenshi_collection (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_collection/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Collection 2": [
+  {
+   "label": "This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_collection_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
  "Jast.zip/Tenshi-tachi no Gogo Tenkousei": [
   {
    "label": "This repo: games/tenshi_tenkousei (patcher working, machine translation in progress)",
@@ -505,6 +521,14 @@
    "wip": true
   }
  ],
+ "Jast.zip/Shuukan From H": [
+  {
+   "label": "This repo: games/shuukan_from_h (patcher working, machine translation in progress)",
+   "url": "../games/shuukan_from_h/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
  "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX": [
   {
    "label": "This repo: games/marilyn_dx (patcher working, machine translation in progress)",
@@ -513,10 +537,34 @@
    "wip": true
   }
  ],
+ "Jast.zip/Tenshi-tachi no Gogo VI - My Fair Teacher": [
+  {
+   "label": "This repo: games/tenshi_vi (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_vi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
  "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi": [
   {
    "label": "This repo: games/tenshi_v (patcher working, machine translation in progress)",
    "url": "../games/tenshi_v/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban": [
+  {
+   "label": "This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_iii_hanseiban/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Special II": [
+  {
+   "label": "This repo: games/tenshi_special_ii (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_special_ii/notes.md",
    "source": "this repo",
    "wip": true
   }

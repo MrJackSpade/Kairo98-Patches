@@ -982,7 +982,7 @@
   "hits": 1,
   "strings": 1702,
   "distinct_terms": 1,
-  "summary": "manual: declined - it bundles Tenshi-tachi no Gogo I (sex with high-school classmates) and II (heroine stated 17) (checked 2026-09-27); the patch was withdrawn",
+  "summary": "manual: explicit sexual scenes (undressing commands, moaning scenes, first at m00058/m00253) found while checking the script (2026-09-26)",
   "adult_ids": [
    "m00968"
   ]
@@ -992,7 +992,7 @@
   "hits": 31,
   "strings": 6775,
   "distinct_terms": 8,
-  "summary": "manual: declined - a sex scene dwells on a character stated to be 17 (m02935) (checked 2026-09-27); the patch was withdrawn",
+  "summary": "31 of 6775 strings match the sexual-vocabulary list (8 distinct terms)",
   "adult_ids": [
    "m00424",
    "m00495",
@@ -1072,7 +1072,7 @@
   "hits": 6,
   "strings": 12152,
   "distinct_terms": 3,
-  "summary": "manual: declined - explicit sex scenes with Makoto, stated to be 17 (m04977, m05001) (checked 2026-09-27); the patch was withdrawn",
+  "summary": "6 of 12152 strings match the sexual-vocabulary list (3 distinct terms)",
   "adult_ids": [
    "m00609",
    "m00622",
@@ -1100,7 +1100,7 @@
   "hits": 23,
   "strings": 1174,
   "distinct_terms": 6,
-  "summary": "manual: declined - the 'child pregnant wife', stated 16 and drawn as a child (m00414) (checked 2026-09-27); the patch was withdrawn",
+  "summary": "23 of 1174 strings match the sexual-vocabulary list (6 distinct terms)",
   "adult_ids": [
    "m00145",
    "m00296",
@@ -1147,7 +1147,7 @@
   "hits": 22,
   "strings": 1309,
   "distinct_terms": 7,
-  "summary": "manual: declined - a sex scene dwells on a character stated to be 17 (the Bangaihen line) (checked 2026-09-27); the patch was withdrawn",
+  "summary": "22 of 1309 strings match the sexual-vocabulary list (7 distinct terms)",
   "adult_ids": [
    "m00313",
    "m00314",
@@ -1178,7 +1178,7 @@
   "hits": 20,
   "strings": 1677,
   "distinct_terms": 4,
-  "summary": "manual: declined - explicit sexual lines about characters stated to be 16 (checked 2026-09-27); the patch was withdrawn",
+  "summary": "20 of 1677 strings match the sexual-vocabulary list (4 distinct terms)",
   "adult_ids": [
    "m00434",
    "m00648",
