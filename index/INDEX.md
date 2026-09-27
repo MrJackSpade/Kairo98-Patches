@@ -224,17 +224,11 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Gomen ne Angel - Yokohama Monogatari | [This repo: games/gomen_ne_angel (patcher working, machine translation in progress)](../games/gomen_ne_angel/notes.md) |
 | Jast | Hunting Roulette - Totsugeki Bakkon Street II | [This repo: games/hunting_roulette (patcher working, machine translation in progress)](../games/hunting_roulette/notes.md) |
 | Jast | Setsujuu - Yuganda Kioku | [This repo: games/setsujuu (patcher working, machine translation in progress)](../games/setsujuu/notes.md) |
-| Jast | Shuukan From H | [This repo: games/shuukan_from_h (patcher working, machine translation in progress)](../games/shuukan_from_h/notes.md) |
 | Jast | Super Ultra Mucchin Puripuri Cyborg Marilyn DX | [This repo: games/marilyn_dx (patcher working, machine translation in progress)](../games/marilyn_dx/notes.md) |
-| Jast | Tenshi-tachi no Gogo Collection | [This repo: games/tenshi_collection (patcher working, machine translation in progress)](../games/tenshi_collection/notes.md) |
-| Jast | Tenshi-tachi no Gogo Collection 2 | [This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)](../games/tenshi_collection_2/notes.md) |
 | Jast | Tenshi-tachi no Gogo III - Ribbon | [This repo: games/tenshi_iii_ribbon (patcher working, machine translation in progress)](../games/tenshi_iii_ribbon/notes.md) |
-| Jast | Tenshi-tachi no Gogo III Bangaihen Hanseiban | [This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)](../games/tenshi_iii_hanseiban/notes.md) |
 | Jast | Tenshi-tachi no Gogo IV - Yuko | [This repo: games/tenshi_iv (patcher working, machine translation in progress)](../games/tenshi_iv/notes.md) |
-| Jast | Tenshi-tachi no Gogo Special II | [This repo: games/tenshi_special_ii (patcher working, machine translation in progress)](../games/tenshi_special_ii/notes.md) |
 | Jast | Tenshi-tachi no Gogo Tenkousei | [This repo: games/tenshi_tenkousei (patcher working, machine translation in progress)](../games/tenshi_tenkousei/notes.md) |
 | Jast | Tenshi-tachi no Gogo V - Nerawareta Tenshi | [This repo: games/tenshi_v (patcher working, machine translation in progress)](../games/tenshi_v/notes.md) |
-| Jast | Tenshi-tachi no Gogo VI - My Fair Teacher | [This repo: games/tenshi_vi (patcher working, machine translation in progress)](../games/tenshi_vi/notes.md) |
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 
@@ -3234,22 +3228,22 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Hunting Roulette - Totsugeki Bakkon Street II [FD HD] `jast` — *MTL (this repo)*
 - ♥ Sanshimai [FD HD] `jast` — **EN**
 - ♥ Setsujuu - Yuganda Kioku [FD HD] `jast` — *MTL (this repo)*
-- ♥ Shuukan From H [FD HD] `jast` — *MTL (this repo)*
+- ♥ Shuukan From H [FD HD] `jast`
 - ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo [FD]
 - ♥ Tenshi-tachi no Gogo Bangaihen [FD]
-- ♥ Tenshi-tachi no Gogo Collection [FD HD] `jast` — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo Collection 2 [FD HD] `jast` — *MTL (this repo)*
+- ♥ Tenshi-tachi no Gogo Collection [FD HD] `jast`
+- ♥ Tenshi-tachi no Gogo Collection 2 [FD HD] `jast`
 - ♥ Tenshi-tachi no Gogo II - Minako [FD]
 - ♥ Tenshi-tachi no Gogo II Bangaihen [FD]
 - ♥ Tenshi-tachi no Gogo III - Ribbon [FD extras] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo III Bangaihen [FD]
-- ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD] — *MTL (this repo)*
+- ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD]
 - ♥ Tenshi-tachi no Gogo IV - Yuko [FD] — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo Special II [FD] — *MTL (this repo)*
+- ♥ Tenshi-tachi no Gogo Special II [FD]
 - ♥ Tenshi-tachi no Gogo Tenkousei [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo V - Nerawareta Tenshi [FD] — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo VI - My Fair Teacher [FD HD] — *MTL (this repo)*
+- ♥ Tenshi-tachi no Gogo VI - My Fair Teacher [FD HD]
 - ♥ Tenshi-tachi no Hohoemi [FD HD] `jast` — *MTL (this repo)*
 - ♥ Totsugeki! Bakkon Street [FD HD]
 - ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD extras]

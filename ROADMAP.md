@@ -91,17 +91,11 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Eden no Kaori | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Hunting Roulette - Totsugeki Bakkon Street II | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
 | ♥ Setsujuu - Yuganda Kioku | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo Collection | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo Collection 2 | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo Tenkousei | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
 | ♥ Tenshi-tachi no Hohoemi | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
-| ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
 | ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Cosmos Club | jast boot disk (D88, text blob) | extracted | **Ready to translate** (maintainer) | works; self-booting D88 floppy set, message window pages | OK (see notes) |
 | ♥ Gomen ne Angel - Yokohama Monogatari | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo III - Ribbon | jast boot disk (blob) | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, scenes read from disk, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo IV - Yuko | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo V - Nerawareta Tenshi | jast SCM | extracted | **Ready to translate** (maintainer) | works; floppy set, message window pages | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban | jast SCM | extracted | **Ready to translate** (maintainer) | works; hard-disk layout, message window pages | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo Special II | jast SCM | extracted | **Ready to translate** (maintainer) | works; hard-disk layout | OK (see notes) |

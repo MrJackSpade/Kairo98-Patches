@@ -1,9 +1,0 @@
-{
- "title": "Shuukan From H",
- "key": "Jast.zip/Shuukan From H",
- "image": "Shuukan From H\\Shuukan From H [HD]\\Shuukan From H.hdi",
- "game_dir": "FRM",
- "engine": "FRM.EXE",
- "encoding": "jast",
- "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
-}

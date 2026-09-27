@@ -408,52 +408,6 @@
    "OK: filler inside the menus, game runs on"
   ]
  ],
- "tenshi_collection": [
-  [
-   "Game select menu",
-   "OK (engine menu, Japanese)"
-  ],
-  [
-   "First game's message window",
-   "OK: half-width filler, wrapped between words inside the frame"
-  ],
-  [
-   "Engine strings (title menu, labels) rewritten in place",
-   "OK: filler inside the menus, game runs on"
-  ]
- ],
- "tenshi_collection_2": [
-  [
-   "Game select menu",
-   "OK (engine menu, Japanese)"
-  ],
-  [
-   "Message window",
-   "OK: half-width filler, wrapped between words inside the frame"
-  ],
-  [
-   "Engine strings (title menu, labels) rewritten in place",
-   "OK: filler inside the menus, game runs on"
-  ]
- ],
- "tenshi_vi": [
-  [
-   "Title / command menu (engine strings)",
-   "OK: filler in place"
-  ],
-  [
-   "Object menu (noun table)",
-   "OK: filler words"
-  ],
-  [
-   "Message window",
-   "OK: half-width filler inside the frame, wrapped between words (60 columns)"
-  ],
-  [
-   "Long message: the engine pages a full box itself",
-   "OK (9-line test message)"
-  ]
- ],
  "hunting_roulette": [
   [
    "Title menu (engine strings)",
@@ -508,24 +462,6 @@
    "OK"
   ]
  ],
- "shuukan_from_h": [
-  [
-   "Opening pictures",
-   "OK"
-  ],
-  [
-   "Message window",
-   "OK: half-width filler inside the frame, wrapped between words"
-  ],
-  [
-   "Scene past the opening (in the car)",
-   "OK"
-  ],
-  [
-   "Engine strings (title menu, labels) rewritten in place",
-   "OK: filler inside the menus, game runs on"
-  ]
- ],
  "marilyn_dx": [
   [
    "Start menu (engine strings)",
@@ -548,46 +484,6 @@
   [
    "Long message: waits at a full box, next page after a click or key",
    "OK"
-  ],
-  [
-   "Command menu (engine strings)",
-   "OK: filler in place"
-  ]
- ],
- "tenshi_iii_hanseiban": [
-  [
-   "Hard-disk layout boots (drive-B reads go to the hard disk)",
-   "OK"
-  ],
-  [
-   "Opening pictures",
-   "OK"
-  ],
-  [
-   "Message window",
-   "OK: half-width filler inside the frame, wrapped between words"
-  ],
-  [
-   "Paging on a full box",
-   "OK"
-  ],
-  [
-   "Command menu (engine strings)",
-   "OK: filler in place"
-  ]
- ],
- "tenshi_special_ii": [
-  [
-   "Hard-disk layout boots (engine's /h mode)",
-   "OK"
-  ],
-  [
-   "Opening and title",
-   "OK"
-  ],
-  [
-   "Message window",
-   "OK: half-width filler inside the frame, wrapped between words; the engine pages a full box (▼)"
   ],
   [
    "Command menu (engine strings)",

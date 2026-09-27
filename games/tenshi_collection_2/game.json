@@ -1,9 +1,0 @@
-{
- "title": "Tenshi-tachi no Gogo Collection 2",
- "key": "Jast.zip/Tenshi-tachi no Gogo Collection 2",
- "image": "Tenshi-tachi no Gogo Collection 2\\Tenshi-tachi no Gogo Collection 2 [HD]\\Tenshi-tachi no Gogo Collection 2.hdi",
- "game_dir": "TSP2",
- "engine": "TSP2.EXE",
- "encoding": "jast",
- "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
-}

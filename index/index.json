@@ -123741,22 +123741,15 @@
      "path": "Shuukan From H\\Shuukan From H [HD]\\Shuukan From H.hdi"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/shuukan_from_h (patcher working, machine translation in progress)",
-     "url": "../games/shuukan_from_h/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: 6 of 12152 strings match the sexual-vocabulary list (3 distinct terms)",
+   "heart_basis": "script text: manual: declined - explicit sex scenes with Makoto, stated to be 17 (m04977, m05001) (checked 2026-09-27); the patch was withdrawn",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX",
@@ -123953,22 +123946,15 @@
      "path": "Tenshi-tachi no Gogo Collection\\Tenshi-tachi no Gogo Collection [HD]\\Tenshi-tachi no Gogo Collection.hdi"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/tenshi_collection (patcher working, machine translation in progress)",
-     "url": "../games/tenshi_collection/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: manual: explicit sexual scenes (undressing commands, moaning scenes, first at m00058/m00253) found while checking the script (2026-09-26)",
+   "heart_basis": "script text: manual: declined - it bundles Tenshi-tachi no Gogo I (sex with high-school classmates) and II (heroine stated 17) (checked 2026-09-27); the patch was withdrawn",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo Collection 2",
@@ -124021,22 +124007,15 @@
      "path": "Tenshi-tachi no Gogo Collection 2\\Tenshi-tachi no Gogo Collection 2 [HD]\\Tenshi-tachi no Gogo Collection 2.hdi"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)",
-     "url": "../games/tenshi_collection_2/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: 31 of 6775 strings match the sexual-vocabulary list (8 distinct terms)",
+   "heart_basis": "script text: manual: declined - a sex scene dwells on a character stated to be 17 (m02935) (checked 2026-09-27); the patch was withdrawn",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo II - Minako",
@@ -124354,22 +124333,15 @@
      "path": "Tenshi-tachi no Gogo III Bangaihen Hanseiban\\Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD]\\Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk D).hdm"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)",
-     "url": "../games/tenshi_iii_hanseiban/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: 22 of 1309 strings match the sexual-vocabulary list (7 distinct terms)",
+   "heart_basis": "script text: manual: declined - a sex scene dwells on a character stated to be 17 (the Bangaihen line) (checked 2026-09-27); the patch was withdrawn",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo IV - Yuko",
@@ -124544,22 +124516,15 @@
      "path": "Tenshi-tachi no Gogo Special II\\Tenshi-tachi no Gogo Special II [FD]\\Tenshi-tachi no Gogo Special II (Disk E).hdm"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/tenshi_special_ii (patcher working, machine translation in progress)",
-     "url": "../games/tenshi_special_ii/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: 20 of 1677 strings match the sexual-vocabulary list (4 distinct terms)",
+   "heart_basis": "script text: manual: declined - explicit sexual lines about characters stated to be 16 (checked 2026-09-27); the patch was withdrawn",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo Tenkousei",
@@ -124788,22 +124753,15 @@
      "path": "Tenshi-tachi no Gogo VI - My Fair Teacher\\Tenshi-tachi no Gogo VI - My Fair Teacher [HD]\\Tenshi-tachi no Gogo VI - My Fair Teacher.hdi"
     }
    ],
-   "patches": [
-    {
-     "label": "This repo: games/tenshi_vi (patcher working, machine translation in progress)",
-     "url": "../games/tenshi_vi/notes.md",
-     "source": "this repo",
-     "wip": true
-    }
-   ],
+   "patches": [],
    "heart": true,
-   "heart_basis": "script text: 23 of 1174 strings match the sexual-vocabulary list (6 distinct terms)",
+   "heart_basis": "script text: manual: declined - the 'child pregnant wife', stated 16 and drawn as a child (m00414) (checked 2026-09-27); the patch was withdrawn",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "machine translation (this repo)"
+   "status": "untranslated"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Hohoemi",
