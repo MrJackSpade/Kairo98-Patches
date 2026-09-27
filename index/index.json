@@ -123251,15 +123251,22 @@
      "path": "Deep\\Deep [HD]\\Deep.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/deep (patcher working, machine translation in progress)",
+     "url": "../games/deep/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17657 (erotic content)",
+   "heart_basis": "script text: 74 of 13101 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Eden no Kaori",
@@ -123319,15 +123326,22 @@
      "path": "Eden no Kaori\\Eden no Kaori [HD]\\Eden no Kaori.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/eden_no_kaori (patcher working, machine translation in progress)",
+     "url": "../games/eden_no_kaori/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17947 (erotic content)",
+   "heart_basis": "script text: 5 of 4073 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Gomen ne Angel - Yokohama Monogatari",
@@ -123467,15 +123481,22 @@
      "path": "Hunting Roulette - Totsugeki Bakkon Street II\\Hunting Roulette - Totsugeki Bakkon Street II [HD]\\Hunting Roulette - Totsugeki Bakkon Street II.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hunting_roulette (patcher working, machine translation in progress)",
+     "url": "../games/hunting_roulette/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 23 of 23 classified Jast titles are adult",
+   "heart_basis": "script text: 30 of 4833 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Sanshimai",
@@ -123631,15 +123652,22 @@
      "path": "Setsujuu - Yuganda Kioku\\Setsujuu - Yuganda Kioku [HD]\\Setsujuu - Yuganda Kioku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/setsujuu (patcher working, machine translation in progress)",
+     "url": "../games/setsujuu/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r42343 (erotic content)",
+   "heart_basis": "script text: 42 of 6923 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Shuukan From H",
@@ -123699,15 +123727,22 @@
      "path": "Shuukan From H\\Shuukan From H [HD]\\Shuukan From H.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/shuukan_from_h (patcher working, machine translation in progress)",
+     "url": "../games/shuukan_from_h/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r18256 (erotic content)",
+   "heart_basis": "script text: 6 of 12152 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX",
@@ -123760,15 +123795,22 @@
      "path": "Super Ultra Mucchin Puripuri Cyborg Marilyn DX\\Super Ultra Mucchin Puripuri Cyborg Marilyn DX [HD]\\Super Ultra Mucchin Puripuri Cyborg Marilyn DX.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/marilyn_dx (patcher working, machine translation in progress)",
+     "url": "../games/marilyn_dx/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r42357 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual scenes (first at m01382/m01475) found while checking the script (2026-09-26)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo",
@@ -123897,15 +123939,22 @@
      "path": "Tenshi-tachi no Gogo Collection\\Tenshi-tachi no Gogo Collection [HD]\\Tenshi-tachi no Gogo Collection.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_collection (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_collection/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17912 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual scenes (undressing commands, moaning scenes, first at m00058/m00253) found while checking the script (2026-09-26)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo Collection 2",
@@ -123958,15 +124007,22 @@
      "path": "Tenshi-tachi no Gogo Collection 2\\Tenshi-tachi no Gogo Collection 2 [HD]\\Tenshi-tachi no Gogo Collection 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_collection_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17913 (erotic content)",
+   "heart_basis": "script text: 31 of 6775 strings match the sexual-vocabulary list (8 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo II - Minako",
@@ -124455,7 +124511,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 23 of 23 classified Jast titles are adult",
+   "heart_basis": "provisional: 24 of 24 classified Jast titles are adult",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
@@ -124521,15 +124577,22 @@
      "path": "Tenshi-tachi no Gogo Tenkousei\\Tenshi-tachi no Gogo Tenkousei [HD]\\Tenshi-tachi no Gogo Tenkousei.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_tenkousei (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_tenkousei/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r2262 (erotic content)",
+   "heart_basis": "script text: 20 of 7326 strings match the sexual-vocabulary list (4 distinct terms)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi",
@@ -124676,15 +124739,22 @@
      "path": "Tenshi-tachi no Gogo VI - My Fair Teacher\\Tenshi-tachi no Gogo VI - My Fair Teacher [HD]\\Tenshi-tachi no Gogo VI - My Fair Teacher.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_vi (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_vi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17832 (erotic content)",
+   "heart_basis": "script text: 23 of 1174 strings match the sexual-vocabulary list (6 distinct terms)",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Hohoemi",
@@ -124758,15 +124828,22 @@
      "path": "Tenshi-tachi no Hohoemi\\Tenshi-tachi no Hohoemi [HD]\\Tenshi-tachi no Hohoemi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_hohoemi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r12617 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual scene with the protagonist's student Aya (first at m00209/m00254) found while checking the script (2026-09-26)",
    "engine": "jast",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Totsugeki! Bakkon Street",
@@ -124814,7 +124891,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 23 of 23 classified Jast titles are adult",
+   "heart_basis": "provisional: 24 of 24 classified Jast titles are adult",
    "engine": "unknown",
    "english": false,
    "in_progress": false,

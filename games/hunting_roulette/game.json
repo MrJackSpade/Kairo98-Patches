@@ -1,0 +1,10 @@
+{
+ "title": "Hunting Roulette - Totsugeki Bakkon Street II",
+ "key": "Jast.zip/Hunting Roulette - Totsugeki Bakkon Street II",
+ "image": "Hunting Roulette - Totsugeki Bakkon Street II\\Hunting Roulette - Totsugeki Bakkon Street II [HD]\\Hunting Roulette - Totsugeki Bakkon Street II.hdi",
+ "game_dir": "HNT",
+ "engine": "HNT_RLT.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot",
+ "dipsw": "3e f3 7b"
+}

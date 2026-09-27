@@ -1,0 +1,9 @@
+{
+ "title": "Tenshi-tachi no Gogo Tenkousei",
+ "key": "Jast.zip/Tenshi-tachi no Gogo Tenkousei",
+ "image": "Tenshi-tachi no Gogo Tenkousei\\Tenshi-tachi no Gogo Tenkousei [HD]\\Tenshi-tachi no Gogo Tenkousei.hdi",
+ "game_dir": "TK",
+ "engine": "TK.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:mouse=0;16,1:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
+}

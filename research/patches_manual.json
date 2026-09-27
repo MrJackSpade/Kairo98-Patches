@@ -456,5 +456,93 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Deep": [
+  {
+   "label": "This repo: games/deep (patcher working, machine translation in progress)",
+   "url": "../games/deep/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Eden no Kaori": [
+  {
+   "label": "This repo: games/eden_no_kaori (patcher working, machine translation in progress)",
+   "url": "../games/eden_no_kaori/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Hunting Roulette - Totsugeki Bakkon Street II": [
+  {
+   "label": "This repo: games/hunting_roulette (patcher working, machine translation in progress)",
+   "url": "../games/hunting_roulette/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Setsujuu - Yuganda Kioku": [
+  {
+   "label": "This repo: games/setsujuu (patcher working, machine translation in progress)",
+   "url": "../games/setsujuu/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Collection": [
+  {
+   "label": "This repo: games/tenshi_collection (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_collection/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Collection 2": [
+  {
+   "label": "This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_collection_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Tenkousei": [
+  {
+   "label": "This repo: games/tenshi_tenkousei (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_tenkousei/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Hohoemi": [
+  {
+   "label": "This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_hohoemi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Shuukan From H": [
+  {
+   "label": "This repo: games/shuukan_from_h (patcher working, machine translation in progress)",
+   "url": "../games/shuukan_from_h/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX": [
+  {
+   "label": "This repo: games/marilyn_dx (patcher working, machine translation in progress)",
+   "url": "../games/marilyn_dx/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo VI - My Fair Teacher": [
+  {
+   "label": "This repo: games/tenshi_vi (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_vi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

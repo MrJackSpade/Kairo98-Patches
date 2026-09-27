@@ -361,5 +361,123 @@
    "Scene past the opening (country card, next quote)",
    "OK"
   ]
+ ],
+ "deep": [
+  [
+   "Title, history crawl, character select",
+   "OK (pictures)"
+  ],
+  [
+   "Prologue message window",
+   "OK: half-width filler, wrapped between words inside the frame"
+  ],
+  [
+   "Following messages (speaker lines)",
+   "OK: name, colon, hanging lines"
+  ]
+ ],
+ "eden_no_kaori": [
+  [
+   "Title menu",
+   "OK (picture)"
+  ],
+  [
+   "First scene message window",
+   "OK: half-width filler, wrapped between words inside the frame"
+  ]
+ ],
+ "setsujuu": [
+  [
+   "Opening narration",
+   "OK"
+  ],
+  [
+   "Message window",
+   "OK: half-width filler, wrapped between words inside the frame; speaker names from the engine's name table"
+  ]
+ ],
+ "tenshi_collection": [
+  [
+   "Game select menu",
+   "OK (engine menu, Japanese)"
+  ],
+  [
+   "First game's message window",
+   "OK: half-width filler, wrapped between words inside the frame"
+  ]
+ ],
+ "tenshi_collection_2": [
+  [
+   "Game select menu",
+   "OK (engine menu, Japanese)"
+  ],
+  [
+   "Message window",
+   "OK: half-width filler, wrapped between words inside the frame"
+  ]
+ ],
+ "tenshi_vi": [
+  [
+   "Title / command menu",
+   "OK (engine menus stay Japanese)"
+  ],
+  [
+   "Message window",
+   "OK: half-width filler, wrapped between words inside the frame (60 columns)"
+  ],
+  [
+   "Commands LOOK/SPEAK and their messages",
+   "OK"
+  ]
+ ],
+ "hunting_roulette": [
+  [
+   "Boots to the town map (clickable picture)",
+   "OK"
+  ],
+  [
+   "Message window",
+   "not yet seen (the boot steps don't reach a message)"
+  ]
+ ],
+ "tenshi_tenkousei": [
+  [
+   "Boots to the load/new-game menu",
+   "OK"
+  ],
+  [
+   "Message window",
+   "not yet seen (the boot steps don't reach a message)"
+  ]
+ ],
+ "tenshi_hohoemi": [
+  [
+   "Boots to the player name entry",
+   "OK"
+  ],
+  [
+   "Message window",
+   "not yet seen (the boot steps don't reach a message)"
+  ]
+ ],
+ "shuukan_from_h": [
+  [
+   "Builds; boot not yet run",
+   "OK"
+  ],
+  [
+   "Message window",
+   "not yet seen (the boot steps don't reach a message)"
+  ]
+ ],
+ "marilyn_dx": [
+  [
+   "Builds; boot not yet run",
+   "OK"
+  ],
+  [
+   "Message window",
+   "not yet seen (the boot steps don't reach a message)"
+  ]
  ]
 }

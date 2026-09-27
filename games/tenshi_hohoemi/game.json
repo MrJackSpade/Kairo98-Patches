@@ -1,0 +1,9 @@
+{
+ "title": "Tenshi-tachi no Hohoemi",
+ "key": "Jast.zip/Tenshi-tachi no Hohoemi",
+ "image": "Tenshi-tachi no Hohoemi\\Tenshi-tachi no Hohoemi [HD]\\Tenshi-tachi no Hohoemi.hdi",
+ "game_dir": "TENHO",
+ "engine": "TENHO.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
+}

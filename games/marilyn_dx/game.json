@@ -1,0 +1,10 @@
+{
+ "title": "Super Ultra Mucchin Puripuri Cyborg Marilyn DX",
+ "key": "Jast.zip/Super Ultra Mucchin Puripuri Cyborg Marilyn DX",
+ "image": "Super Ultra Mucchin Puripuri Cyborg Marilyn DX\\Super Ultra Mucchin Puripuri Cyborg Marilyn DX [HD]\\Super Ultra Mucchin Puripuri Cyborg Marilyn DX.hdi",
+ "game_dir": "DX",
+ "engine": "MAL_DX.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot",
+ "relocate": true
+}

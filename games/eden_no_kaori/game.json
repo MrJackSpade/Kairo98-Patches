@@ -1,0 +1,9 @@
+{
+ "title": "Eden no Kaori",
+ "key": "Jast.zip/Eden no Kaori",
+ "image": "Eden no Kaori\\Eden no Kaori [HD]\\Eden no Kaori.hdi",
+ "game_dir": "J_ADV2",
+ "engine": "J_ADV2.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
+}

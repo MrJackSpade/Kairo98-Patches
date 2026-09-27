@@ -1,0 +1,9 @@
+{
+ "title": "Setsujuu - Yuganda Kioku",
+ "key": "Jast.zip/Setsujuu - Yuganda Kioku",
+ "image": "Setsujuu - Yuganda Kioku\\Setsujuu - Yuganda Kioku [HD]\\Setsujuu - Yuganda Kioku.hdi",
+ "game_dir": "SETU",
+ "engine": "SETU.EXE",
+ "encoding": "jast",
+ "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot"
+}

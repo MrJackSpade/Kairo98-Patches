@@ -87,3 +87,14 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Seisenshi Mokkoriman | Illusion MES.D (older engine) | extracted | **Ready to translate** (maintainer) | works; native half-width font, window pages instead of scrolling | OK (see notes) |
 | ♥ Moeru Asoko no Paipai Yuugi | Illusion C engine, 24-dot font (EXEPACK) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, 0 translated) | works; letter pairs through the kanji-ROM path, hooks in a <1 KB DOS block | OK (see notes) |
 | Angel Army | Illusion C engine, 24-dot font (EXEPACK) | extracted | **Translated** (Claude, 297/297) | works; letter pairs through the kanji-ROM path, quote boxes turned horizontal | OK (see notes) |
+| ♥ Deep | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Eden no Kaori | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Hunting Roulette - Totsugeki Bakkon Street II | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Setsujuu - Yuganda Kioku | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo Collection | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo Collection 2 | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo Tenkousei | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Tenshi-tachi no Hohoemi | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
