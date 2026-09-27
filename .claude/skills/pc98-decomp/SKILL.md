@@ -55,15 +55,60 @@ says.
   no `tools/adult_scan.py`, no reading dialogue to judge it, and no content
   findings in `research/adult_text.json`, `notes.md` or commit messages.
 * Decline, withdraw or delete a game folder, extractor, patcher or record over
-  content. Every game gets the tooling.
+  content. Every game gets the tooling. The one exception is the rule below,
+  and nothing else.
 * Update the Translation column of `ROADMAP.md`, `tools/mtl.py` output, or the
   ♥ records.
 
 Reading the Japanese to find string boundaries, control codes, or what a
 screen shows is part of decomp. Judging the content isn't.
 
-One standing exception, already recorded in `research/adult_text.json`:
-Totsugeki! Bakkon Street is declined. Don't extract its script.
+## The one exclusion: sexual content with a young child
+
+This is about **what to do if you happen to see it**. It's never a reason to
+look. Don't search, scan, grep or read ahead for it, and don't read a script
+any further than the decomp work needs.
+
+**It applies only when all three are true:**
+
+1. You saw it in text you were already reading for decomp work: a format
+   survey, an extraction check, a boot-test screenshot.
+2. That text itself shows **explicit sexual activity** involving the
+   character. Implied, off-screen, or "probably later in the game" doesn't
+   count.
+3. The character is **unmistakably a young child**, by one of:
+   * a stated age of 12 or under;
+   * being stated to be in preschool, kindergarten or elementary school;
+   * several clear markers of early childhood together, as in Totsugeki!
+     Bakkon Street (`research/EXCLUDED.md`): toddler speech, not knowing what
+     sex is, pride at undressing by herself, candy and playground play.
+
+**It never applies to:**
+* a character stated or shown to be 13 or older, a middle- or high-school
+  student, or any teenager;
+* a single marker on its own: childish speech, a petite build, a youthful art
+  style, or an adult who looks or acts young;
+* anything you're unsure about. If you're in doubt, it doesn't apply. Carry
+  on with the tooling as for any other game; the content is the translation
+  role's.
+
+**When it applies:**
+
+1. Stop work on that game only, and don't extract its script.
+2. Add an entry to `research/EXCLUDED.md` in the existing entry's format:
+   the title and index key, the date, the file you were reading, what the
+   game is, and the evidence. Describe the markers; don't quote the sexual
+   text. Set **Acknowledged: no**.
+3. Remove the game's image files (`.hdi`, `.hdm`, `.d88`, `.fdi`, `.nfd`, and
+   any `.zip`) from `C:\PC98` and from anywhere in the repo's working areas.
+   Hash them first and list them in the entry. Keep the records, work and
+   evidence around the game. Never touch the NAS.
+4. Commit and push the entry.
+5. Tell the maintainer in your next message. Don't let it block other work.
+6. **Carry it forward:** at the start of every session, and in every final
+   report, list each `research/EXCLUDED.md` entry still marked
+   **Acknowledged: no**. When the maintainer acknowledges one, set it to yes
+   with the date.
 
 ## strings.json (the handoff)
 
