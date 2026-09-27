@@ -1284,5 +1284,21 @@
   "distinct_terms": 0,
   "summary": "manual: declined - the heroine is stated to be 17 in a game with sex scenes (the opening line, found 2026-09-27); no patch will be made",
   "adult_ids": []
+ },
+ "Jast.zip/Tenshi-tachi no Gogo": {
+  "hits": 0,
+  "strings": 0,
+  "distinct_terms": 0,
+  "adult_ids": [],
+  "adult": true,
+  "summary": "manual: declined - the sex content (including a rape command) targets the player's high-school classmates, as its remake in Tenshi-tachi no Gogo Collection shows (checked 2026-09-27); no patch will be made"
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Bangaihen": {
+  "hits": 0,
+  "strings": 0,
+  "distinct_terms": 0,
+  "adult_ids": [],
+  "adult": true,
+  "summary": "manual: declined - the sex content (including a rape command) targets the player's high-school classmates, as its remake in Tenshi-tachi no Gogo Collection shows (checked 2026-09-27); no patch will be made"
  }
 }
