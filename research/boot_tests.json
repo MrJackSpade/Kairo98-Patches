@@ -547,5 +547,53 @@
    "Scene past the opening (the principal's office conversation)",
    "OK"
   ]
+ ],
+ "gomen_ne_angel": [
+  [
+   "Title and opening (floppy set: boot disk and disk 2)",
+   "OK: half-width filler in the message box"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Scene past the opening (the school gate)",
+   "OK"
+  ],
+  [
+   "Long message: waits at a full box",
+   "not yet seen in this game (same pager code as Tenshi-tachi no Gogo IV, where it was checked)"
+  ]
+ ],
+ "tenshi_iii_bangaihen": [
+  [
+   "Title and opening (floppy set: boot disk and disk 2)",
+   "OK"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window (this build has no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK (a test build with a six-line message at the start)"
+  ],
+  [
+   "Partly translated build: untranslated Japanese still correct",
+   "OK (menus in Japanese next to an English message)"
+  ],
+  [
+   "Scene past the opening (breakfast)",
+   "OK"
+  ]
  ]
 }

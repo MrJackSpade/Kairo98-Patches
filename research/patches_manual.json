@@ -576,5 +576,21 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Gomen ne Angel - Yokohama Monogatari": [
+  {
+   "label": "This repo: games/gomen_ne_angel (patcher working, machine translation in progress)",
+   "url": "../games/gomen_ne_angel/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen": [
+  {
+   "label": "This repo: games/tenshi_iii_bangaihen (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_iii_bangaihen/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

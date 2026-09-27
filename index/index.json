@@ -123392,15 +123392,22 @@
      "path": "Gomen ne Angel - Yokohama Monogatari\\Gomen ne Angel - Yokohama Monogatari [FD]\\Gomen ne Angel - Yokohama Monogatari (Disk 2).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gomen_ne_angel (patcher working, machine translation in progress)",
+     "url": "../games/gomen_ne_angel/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17834 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual command words (caress, nipples, clitoris, first at w00025) and sex scenes found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Hunting Roulette - Totsugeki Bakkon Street II",
@@ -124267,15 +124274,22 @@
      "path": "Tenshi-tachi no Gogo III Bangaihen\\Tenshi-tachi no Gogo III Bangaihen [FD]\\Tenshi-tachi no Gogo III Bangaihen (uncensored) (Disk A).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_iii_bangaihen (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_iii_bangaihen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17829 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban",

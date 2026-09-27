@@ -1,0 +1,12 @@
+{
+ "title": "Gomen ne Angel - Yokohama Monogatari",
+ "key": "Jast.zip/Gomen ne Angel - Yokohama Monogatari",
+ "image": "Gomen ne Angel - Yokohama Monogatari\\Gomen ne Angel - Yokohama Monogatari [FD]\\Gomen ne Angel - Yokohama Monogatari (Disk 1).hdm",
+ "encoding": "jast_boot",
+ "floppies": {
+  "B": "Gomen ne Angel - Yokohama Monogatari (Disk 2).hdm"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,4:enter,4:shot,4:enter,5:enter,4:down,1:enter,4:shot,1:enter,4:shot,4:enter,4:shot"
+}

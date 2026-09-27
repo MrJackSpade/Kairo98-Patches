@@ -1221,5 +1221,30 @@
    "m00675",
    "m00747"
   ]
+ },
+ "Jast.zip/Gomen ne Angel - Yokohama Monogatari": {
+  "adult": true,
+  "hits": 4,
+  "strings": 1962,
+  "distinct_terms": 2,
+  "summary": "manual: explicit sexual command words (caress, nipples, clitoris, first at w00025) and sex scenes found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "m00832",
+   "m00834",
+   "m01092",
+   "m01123"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen": {
+  "adult": true,
+  "hits": 3,
+  "strings": 1974,
+  "distinct_terms": 3,
+  "summary": "manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "m01674",
+   "w00117",
+   "w00211"
+  ]
  }
 }

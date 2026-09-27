@@ -259,11 +259,15 @@ BOOT_DISPLAY = """## English display (`pc98tl/jast_boot.py`)
   helper that draws a code whose first byte is below 80 as two ASCII letters
   in two half-width cells (the engine's own half-width put).  Japanese draws
   as before.
-* English lines are wrapped to 72 columns and joined by the engine's line
-  mark `↓`.  The three-line box scrolls a line at a time, so the line scrolls
-  in the message draw go through a pager: every third new line of a message
-  waits for a key or a left click first.  The helpers sit in the unused
-  (zero) tail of the music table, which stays zero in a running game."""
+* English lines are wrapped to 72 columns between words and joined by the
+  engine's line mark `↓` (builds without it: padded with spaces to the edge,
+  where the engine wraps).  The three-line box scrolls a line at a time, so
+  the line scrolls in the message draw go through a pager: every third new
+  line of a message waits for a key or a left click first.  The helpers sit
+  in the unused (zero) tail of the music table, which stays zero in a
+  running game.
+* A word file with a message table is rebuilt and loaded just below the
+  engine, which gives the scene buffer the room the file leaves."""
 
 
 def jast_notes(name, cfg, doc, adult, clear, tests, extra):

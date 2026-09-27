@@ -220,12 +220,14 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Illusion | Yami no Ryousen | [This repo: games/yami_no_ryousen (patcher working, machine translation in progress)](../games/yami_no_ryousen/notes.md) |
 | Jast | Deep | [This repo: games/deep (patcher working, machine translation in progress)](../games/deep/notes.md) |
 | Jast | Eden no Kaori | [This repo: games/eden_no_kaori (patcher working, machine translation in progress)](../games/eden_no_kaori/notes.md) |
+| Jast | Gomen ne Angel - Yokohama Monogatari | [This repo: games/gomen_ne_angel (patcher working, machine translation in progress)](../games/gomen_ne_angel/notes.md) |
 | Jast | Hunting Roulette - Totsugeki Bakkon Street II | [This repo: games/hunting_roulette (patcher working, machine translation in progress)](../games/hunting_roulette/notes.md) |
 | Jast | Setsujuu - Yuganda Kioku | [This repo: games/setsujuu (patcher working, machine translation in progress)](../games/setsujuu/notes.md) |
 | Jast | Shuukan From H | [This repo: games/shuukan_from_h (patcher working, machine translation in progress)](../games/shuukan_from_h/notes.md) |
 | Jast | Super Ultra Mucchin Puripuri Cyborg Marilyn DX | [This repo: games/marilyn_dx (patcher working, machine translation in progress)](../games/marilyn_dx/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection | [This repo: games/tenshi_collection (patcher working, machine translation in progress)](../games/tenshi_collection/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection 2 | [This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)](../games/tenshi_collection_2/notes.md) |
+| Jast | Tenshi-tachi no Gogo III Bangaihen | [This repo: games/tenshi_iii_bangaihen (patcher working, machine translation in progress)](../games/tenshi_iii_bangaihen/notes.md) |
 | Jast | Tenshi-tachi no Gogo III Bangaihen Hanseiban | [This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)](../games/tenshi_iii_hanseiban/notes.md) |
 | Jast | Tenshi-tachi no Gogo IV - Yuko | [This repo: games/tenshi_iv (patcher working, machine translation in progress)](../games/tenshi_iv/notes.md) |
 | Jast | Tenshi-tachi no Gogo Special II | [This repo: games/tenshi_special_ii (patcher working, machine translation in progress)](../games/tenshi_special_ii/notes.md) |
@@ -3227,7 +3229,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Cosmos Club [FD]
 - ♥ Deep [FD HD] `jast` — *MTL (this repo)*
 - ♥ Eden no Kaori [FD HD] `jast` — *MTL (this repo)*
-- ♥ Gomen ne Angel - Yokohama Monogatari [FD]
+- ♥ Gomen ne Angel - Yokohama Monogatari [FD] — *MTL (this repo)*
 - ♥ Hunting Roulette - Totsugeki Bakkon Street II [FD HD] `jast` — *MTL (this repo)*
 - ♥ Sanshimai [FD HD] `jast` — **EN**
 - ♥ Setsujuu - Yuganda Kioku [FD HD] `jast` — *MTL (this repo)*
@@ -3240,7 +3242,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Tenshi-tachi no Gogo II - Minako [FD]
 - ♥ Tenshi-tachi no Gogo II Bangaihen [FD]
 - ♥ Tenshi-tachi no Gogo III - Ribbon [FD extras]
-- ♥ Tenshi-tachi no Gogo III Bangaihen [FD]
+- ♥ Tenshi-tachi no Gogo III Bangaihen [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo IV - Yuko [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Special II [FD] — *MTL (this repo)*

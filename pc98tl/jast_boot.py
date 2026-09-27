@@ -3,14 +3,16 @@
 Gomen ne Angel): extract/patch driver.
 
 Disk layout.  The boot sector loads the engine (hand-written assembly) from
-logical sector 8 onwards into one segment and jumps to it; the load code is
-also kept inside the engine ("b8 08 00 bd <base> b9 <count> ... retf"), which
-gives the engine's load offset.  Everything else is found through four
+logical sector 8 onwards and jumps to it.  The engine keeps its own reload
+code ("b8 08 00 bd <offset> b9 <count> ... int 3"), which gives the offset
+the engine runs at in its segment.  Everything else is found through four
 directory tables in the engine (graphics, animation, scenes, music), one
 4-byte entry per file: disk number (1 = the boot disk), then 24 bits with
 the logical sector (1 KB sectors, 8 per track side) in the low 12 and the
 sector count in the high 12.  The menu words are one more file, loaded by a
-fixed call (sector, count, address).
+fixed call (address, sector, count): a header of table offsets, two tables
+of 16-byte words (verbs, nouns) and, where the header has a fourth offset,
+a list of system messages (e.g. "no need for that").
 
 Scenes.  A scene file is command tables, then the messages from offset
 4C + (word at 4A).  The engine reads a message two bytes at a time: a zero
@@ -18,18 +20,21 @@ word ends it, a word up to 2000h (little-endian) is an animation control,
 anything else is a Shift-JIS character.  "－", "＋" and "±" only switch the
 text colour (name, highlight, normal) and aren't drawn; "↓" starts a new
 line.  A message is found by counting, so messages may change length.  The
-disk tool that built the floppies cut files at a sector boundary, so a
-scene's last message can be cut off (the next file starts there): only
-messages that end inside the file are listed, and the rest of the file is
-kept as it is.
+disk tool that built the floppies left old sector contents after a file's
+end and cut some files at a sector boundary: the leftovers are not listed
+(see scene_messages), and a scene's cut-off last message is kept as it is.
 
 Patch.
 * Scenes are rebuilt with the English messages and written to free sectors
-  of their disk (sectors still holding the format filler E5 that no table
-  refers to); their table entries are updated.  A scene must fit the
-  engine's scene buffer (it loads at offset 0 of the engine segment, below
-  the word file).
-* The menu words are 16-byte entries (7 cells shown), rewritten in place.
+  of their disk (sectors that no table refers to and that hold one filler
+  byte throughout: the format's E5, or the dump's gap byte 4E); their table
+  entries are updated.  A scene must fit the engine's scene buffer (offset
+  0 of the engine segment up to the word file); the patcher refuses one
+  that would not.
+* The menu words are rewritten in place (7 cells shown).  A word file with
+  a message table is rebuilt with the English messages and loaded just
+  below the engine (its load call updated), which gives the scene buffer the
+  room the file leaves.
 * Engine: the message draw and the menu draw call one character routine
   with the Shift-JIS code; both calls go to a helper that draws a code whose
   first byte is below 80h as two ASCII letters in two half-width text cells
@@ -41,7 +46,8 @@ Patch.
 
 game.json: {"title", "key", "image", "encoding": "jast_boot",
             "floppies": {"B": "<disk 2 image>"}, "box_lines" (3), "dipsw", "boot_steps"}
-A string's ref is "scene<n>:<message number>" or "word<table>:<entry>".
+A string's ref is "scene<n>:<message number>", "word<table>:<entry>" or
+"words:<message number>".
 """
 import json
 import os
@@ -51,7 +57,6 @@ import struct
 from .alice_sys2_tl import sha256
 
 SECTOR = 1024
-FILLER = b"\xe5" * SECTOR
 
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -62,26 +67,28 @@ translation is released, use that instead; this patch will be retired.
 Made with the PC-98 translation kit (Kairo98-Patches).
 """
 
-# the engine's own load code (in the boot sector and again in the engine)
-LOAD = re.compile(rb"\xb8(..)\xbd(..)\xb9(..)\xe8\x12\x00\x72\x31\x40\x81\xc5\x00\x04\xe2\xf4"
-                  rb"\xb8..\x50\xb8..\x50\xcb", re.S)
+# the engine's reload code (kept in the engine, ends in int 3): sector 8, the
+# offset in the engine's own segment, sector count.  (The boot sector's copy
+# may load through another segment:offset pair for the same place.)
+LOAD = re.compile(rb"\xb8(..)\xbd(..)\xb9(..)\xe8\x0a\x00\x72\x07\x40\x81\xc5\x00\x04\xe2\xf4\xcc", re.S)
 # a directory lookup: si = table + 4 * index ... ax = [si+1], cl = [si+3]
 TABLE = re.compile(rb"\xbe(..)[^\xbe]{2,8}?\x32\xe4\xd1\xe0\xd1\xe0\x03\xf0.{0,10}?\x8b\x44\x01\x8a\x4c\x03", re.S)
 # the scene load: bp = 0 ... then si = 4C + [4A]
 SCENE = re.compile(rb"\xbe(..)\xa0..\x32\xe4\xd1\xe0\xd1\xe0\x03\xf0\xbd\x00\x00\x8b\x44\x01.{20,40}?"
                    rb"\xbe(.)\x00\x03\x74\xfe", re.S)
-# the music load (its table is the last one; the helpers go in its tail)
-MUSIC = re.compile(rb"\xbe(..)\xa0..\xfe\xc8\x32\xe4\xd1\xe0\xd1\xe0\x03\xf0\xbd", re.S)
 # the word file load: bp = address, bx = sector, cx = count, then the three table offsets
 WORDS = re.compile(rb"\xbd(..)\xbb(..)\xb9(..)\x33\xc0\xe8..\x72.\xbe(..)\x8b\x04\x03\xc6\xa3", re.S)
 # the message draw: start position, then the character loop
 MSG_START = re.compile(rb"\xba..\x89\x16..\x33\xc9\xc6\x06..\x00\xad\x0b\xc0", re.S)
-MSG_PUT = re.compile(rb"\x51\x8a\x0e..\x92\xe8(..)\x92", re.S)
+# (some builds' put leaves the column alone and the caller adds 2)
+MSG_PUT = re.compile(rb"\x51\x8a\x0e..\x92\xe8(..)(\xfe\xc0\xfe\xc0)?\x92", re.S)
+# the wrap: scroll, cursor back to the line start, column count 0
+WRAP = re.compile(rb"\xe8(..)\x8b\x16..\x33\xc9", re.S)
 NEWLINE = re.compile(rb"\x3d\xab\x81\x75\x0b\xe8(..)", re.S)
 # the menu word draw: dx = [si], swapped, attribute, put
 MENU_PUT = re.compile(rb"\x8b\x14\x46\x46\x86\xd6\x8a\x0e..\xe8(..)", re.S)
 # the half-width put: position in ax, character in dl, attribute in cl
-PUT_HALF = re.compile(rb"\x1e\x50\x52\x57\xfc\x8a\xf0\x32\xc0\xd1\xe8\x8b\xf8", re.S)
+PUT_HALF = re.compile(rb"\x1e\x50\x52\x57\xfc\x8a\xf0(?:\x32\xc0\xd1\xe8|\xb0\xa0\xf6\xe4)\x8b\xf8", re.S)
 
 COLOURS = {b"\x81\x7b": "{C1}", b"\x81\x7c": "{C2}", b"\x81\x7d": "{C0}"}
 NEWLINE_CHAR = b"\x81\xab"
@@ -103,7 +110,8 @@ class Game:
         self.paths = list(paths)
         self.disks = [bytearray(open(p, "rb").read()) for p in self.paths]
         boot = bytes(self.disks[0])
-        hits = [m for m in LOAD.finditer(boot)]
+        # (a copy-protection loader in some boot sectors has the same shape, for one sector)
+        hits = [m for m in LOAD.finditer(boot) if _u16(m.group(3), 0) >= 8]
         if not hits:
             raise ValueError("engine load code not found")
         m = hits[0]
@@ -118,14 +126,14 @@ class Game:
         self.tables = sorted({_u16(t.group(1), 0) for t in TABLE.finditer(self.img)})
         if self.scene_table not in self.tables:
             raise ValueError("directory tables not found")
-        mu = MUSIC.search(self.img)
-        if not mu:
-            raise ValueError("music load not found")
-        self.music_table = _u16(mu.group(1), 0)
+        self.music_table = self.tables[-1]     # the last table (music)
         w = WORDS.search(self.img)
         if not w:
             raise ValueError("word file load not found")
         self.word_addr, self.word_lba, self.word_count = (_u16(w.group(k), 0) for k in (1, 2, 3))
+        self.word_load = w
+        # "↓" starts a new line in most builds; others only wrap at the edge
+        self.newline = bool(NEWLINE.search(self.img))
         self.scene_limit = min(self.word_addr, self.base)
 
     # ---- engine image ---------------------------------------------------------
@@ -159,9 +167,35 @@ class Game:
 
     # ---- words -------------------------------------------------------------------
     def word_tables(self):
+        """(data, [the two word tables' (start, end)], the message table's
+        (start, end) or None).  The header holds the table offsets; a
+        four-entry header (8 bytes) also gives the end of the third table,
+        a list of messages like a scene's; with three entries that table is
+        not used (its space holds leftovers)."""
         data = self.read(1, self.word_lba, self.word_count)
-        h = struct.unpack_from("<3H", data, 0)
-        return data, [(h[0], h[1]), (h[1], h[2])]
+        n = _u16(data, 0) // 2
+        h = struct.unpack_from("<%dH" % n, data, 0)
+        return data, [(h[0], h[1]), (h[1], h[2])], ((h[2], h[3]) if n >= 4 else None)
+
+    def set_words(self, data):
+        """Write a rebuilt word file.  One with a known end (four-entry
+        header) is loaded just below the engine, so the scene buffer below
+        it gets any room it leaves; its sectors move to free ones when it no
+        longer fits its old place."""
+        need = -(-len(data) // SECTOR)
+        lba = self.word_lba
+        if need > self.word_count:
+            lba = _take_run(self.free_sectors(1), need)
+            if lba is None:
+                raise ValueError("no %d free sectors in a row for the word file" % need)
+        img = self.disks[0]
+        img[lba * SECTOR:(lba + need) * SECTOR] = data.ljust(need * SECTOR, b"\0")
+        addr = self.base - need * SECTOR
+        w = self.word_load
+        for grp, val in ((1, addr), (2, lba), (3, need), (4, addr)):
+            self.poke(self.base + w.start(grp), struct.pack("<H", val))
+        self.word_addr, self.word_lba, self.word_count = addr, lba, need
+        self.scene_limit = min(addr, self.base)
 
     # ---- free space ----------------------------------------------------------------
     def free_sectors(self, disk):
@@ -175,7 +209,7 @@ class Game:
             used.update(range(self.word_lba, self.word_lba + self.word_count))
         img = self.disks[disk - 1]
         return [s for s in range(len(img) // SECTOR)
-                if s not in used and img[s * SECTOR:(s + 1) * SECTOR] == FILLER]
+                if s not in used and len(set(img[s * SECTOR:(s + 1) * SECTOR])) == 1]
 
 
 def _word_ok(w):
@@ -235,8 +269,9 @@ def scene_messages(game):
     return out
 
 
-def decode(piece):
-    """A message as shown: colours and controls as tokens, "↓" as a newline."""
+def decode(piece, newline=True):
+    """A message as shown: colours and controls as tokens, "↓" as a newline
+    (in builds that have it)."""
     out = []
     for i in range(0, len(piece), 2):
         w = piece[i:i + 2]
@@ -245,7 +280,7 @@ def decode(piece):
             out.append("{A%d}" % v)
         elif w in COLOURS:
             out.append(COLOURS[w])
-        elif w == NEWLINE_CHAR:
+        elif w == NEWLINE_CHAR and newline:
             out.append("\n")
         else:
             out.append(w.decode("cp932", "replace"))
@@ -329,9 +364,10 @@ def _width(items):
     return cols + run + (run % 2)
 
 
-def lay_out(text, cols=LINE_COLS):
+def lay_out(text, cols=LINE_COLS, newline=True):
     """English -> message bytes (without the zero word): lines wrapped at
-    word boundaries to `cols` columns and joined by "↓"."""
+    word boundaries to `cols` columns and joined by "↓", or, in a build
+    without it, padded with spaces to the edge where the engine wraps."""
     lines = []
     for para in text.split("\n"):
         items = _items(para)
@@ -357,7 +393,14 @@ def lay_out(text, cols=LINE_COLS):
                 items = items[cut + 1:]
             line = []
         lines.append(line)
-    return NEWLINE_CHAR.join(_encode_line(ln) for ln in lines)
+    if newline:
+        return NEWLINE_CHAR.join(_encode_line(ln) for ln in lines)
+    out = b""
+    for k, ln in enumerate(lines):
+        if k < len(lines) - 1:
+            ln = ln + [("a", " ", 1)] * (cols - _width(ln))
+        out += _encode_line(ln)
+    return out
 
 
 def encode_word(text):
@@ -373,23 +416,21 @@ def patch_engine(game, box_lines=3):
     img, base = game.img, game.base
     ms = MSG_START.search(img)
     mp = MSG_PUT.search(img, ms.start() if ms else 0)
-    nl = NEWLINE.search(img, ms.start() if ms else 0)
+    wr = WRAP.search(img, ms.start() if ms else 0)
     mn = MENU_PUT.search(img)
     ph = PUT_HALF.search(img)
-    if not (ms and mp and nl and mn and ph):
+    if not (ms and mp and wr and mn and ph) or wr.start() > mp.start():
         raise ValueError("message/menu draw not found")
     put_at = mp.start(1)                        # rel16 of the put call
     put = _rel(img, put_at, base)
+    advances = mp.group(2) is None              # the put moves the column itself
     menu_at = mn.start(1)
     if _rel(img, menu_at, base) != put:
         raise ValueError("menu draw uses another put routine")
-    scroll = _rel(img, nl.start(1), base)
-    # the scroll calls inside the message draw (the "↓" one and the wrap one)
-    end = mp.end() + 0x60
-    scrolls = [c.start() + 1 for c in re.finditer(rb"\xe8(..)", img[ms.start():end], re.S)]
+    scroll = _rel(img, wr.start(1), base)
+    # the scroll calls inside the message draw (the wrap and, where there is one, "↓")
+    scrolls = [c.start(1) for c in re.finditer(rb"\xe8(..)", img[ms.start():mp.start()], re.S)]
     scrolls = [ms.start() + a for a in scrolls if _rel(img, ms.start() + a, base) == scroll]
-    if len(scrolls) < 2:
-        raise ValueError("message line scrolls not found")
     half = ph.start() + base
     start_code = img[ms.start():ms.start() + 7]   # mov dx, pos; mov [cursor], dx
     # cave: the music table's tail
@@ -406,11 +447,17 @@ def patch_engine(game, box_lines=3):
         CALLN 0x{put:x}
         .byte 0xc3
     asc:
+        push ax
         push dx
         mov dl, dh
         CALLN 0x{half:x}
         pop dx
+        pop ax
+        push ax
+        inc al
         CALLN 0x{half:x}
+        pop ax
+        {advance}
         .byte 0xc3
     scrl:
         inc byte ptr cs:[{cnt}]
@@ -462,7 +509,7 @@ def patch_engine(game, box_lines=3):
         .byte 0xc3
     """
     ks = Ks(KS_ARCH_X86, KS_MODE_16)
-    fmt = dict(put=put, half=half, scroll=scroll, lines=box_lines,
+    fmt = dict(put=put, half=half, advance="add al, 2" if advances else "", scroll=scroll, lines=box_lines,
                cnt=cave, start=", ".join("0x%02x" % b for b in start_code))
     code, labels = _asm(ks, src.format(**fmt), cave, ("put2", "scrl", "reset"))
     if len(code) > room:
@@ -504,16 +551,21 @@ def run_extract(here, src):
 
     for k, (data, msgs) in scene_messages(game).items():
         for num, s, e in msgs:
-            jp = decode(data[s:e])
+            jp = decode(data[s:e], game.newline)
             if not re.sub(r"\{[A-Z]\d+\}|\s|　", "", jp):
                 continue
             add("msg", jp, "scene%d:%d" % (k, num), 3 * LINE_COLS // 2)
-    data, tables = game.word_tables()
+    data, tables, mtab = game.word_tables()
     for t, (a, b) in enumerate(tables):
         for i, o in enumerate(range(a, b, 16)):
             jp = data[o:o + 16].decode("cp932", "replace").rstrip("　 ")
             if jp:
                 add("word", jp, "word%d:%d" % (t, i), WORD_CELLS)
+    if mtab:
+        for num, s, e in word_messages(data, mtab):
+            jp = decode(data[s:e], game.newline)
+            if re.sub(r"\{[A-Z]\d+\}|\s|　", "", jp):
+                add("msg", jp, "words:%d" % num, 3 * LINE_COLS // 2)
     strings = []
     counters = {"msg": 0, "word": 0}
     for key in order:
@@ -562,19 +614,29 @@ def run_patch(here, src, dst, mode="en"):
                 b = b[:2 * WORD_CELLS]
             val = b.ljust(16, b" ")
         else:
-            val = lay_out(text)
+            val = lay_out(text, newline=game.newline)
         for r in e["refs"]:
             by_ref[r] = val
-    # word file, in place
-    data, tables = game.word_tables()
+    # word file: entries in place; a message table is rebuilt
+    data, tables, mtab = game.word_tables()
     words = bytearray(data)
     for t, (a, b) in enumerate(tables):
         for i, o in enumerate(range(a, b, 16)):
             v = by_ref.get("word%d:%d" % (t, i))
             if v is not None:
                 words[o:o + 16] = v
-    o = game.word_lba * SECTOR
-    game.disks[0][o:o + len(words)] = words
+    if mtab:
+        out, pos = bytearray(words[:mtab[0]]), mtab[0]
+        for num, s, e in word_messages(data, mtab):
+            en = by_ref.get("words:%d" % num)
+            out += words[pos:s] + (en if en is not None else words[s:e])
+            pos = e
+        out += words[pos:mtab[1]]
+        struct.pack_into("<H", out, 6, len(out))
+        game.set_words(bytes(out))
+    else:
+        o = game.word_lba * SECTOR
+        game.disks[0][o:o + len(words)] = words
     # scenes: rebuilt and moved to free sectors
     free = {d: game.free_sectors(d) for d in range(1, len(game.disks) + 1)}
     parsed = scene_messages(game)
@@ -590,7 +652,7 @@ def run_patch(here, src, dst, mode="en"):
             changed = True
         if not changed:
             continue
-        out += data[pos:]
+        out += _tail(data, pos)
         if len(out) > game.scene_limit:
             raise ValueError("scene %d is %d bytes; the scene buffer holds %d" % (k, len(out), game.scene_limit))
         need = -(-len(out) // SECTOR)
@@ -620,6 +682,30 @@ def run_patch(here, src, dst, mode="en"):
         print("warning: " + w)
     done = sum(1 for e in doc["strings"] if e["en"])
     print("patched %s (%s mode, %d/%d strings translated)" % (dst, mode, done, len(doc["strings"])))
+
+
+def word_messages(data, mtab):
+    """[(number, start, end)] in the word file's message table."""
+    out, i, n = [], mtab[0], 0
+    while i + 2 <= mtab[1]:
+        e = i
+        while e + 2 <= mtab[1] and data[e:e + 2] != b"\0\0":
+            e += 2
+        if e > i:
+            out.append((n, i, e))
+        n += 1
+        i = e + 2
+    return out
+
+
+def _tail(data, pos):
+    """What follows a scene's last listed message: a message cut off at the
+    file's end is kept as it was; old sector contents (pieces ended by a
+    zero word) are dropped."""
+    for i in range(pos, len(data) - 1, 2):
+        if data[i:i + 2] == b"\0\0":
+            return b""
+    return data[pos:]
 
 
 def _take_run(free, need):
