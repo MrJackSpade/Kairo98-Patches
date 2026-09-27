@@ -124971,15 +124971,22 @@
      "path": "Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD]\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)",
+     "url": "../games/yoru_no_tenshi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r18355 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "JHV.zip/Aggregate",

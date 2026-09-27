@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's self-booting engine: the floppies have no file system.  The boot sector loads the engine (hand-written assembly) from sector 8; four directory tables in it give each file's disk, sector and length.  54 scenes hold command tables, then messages read two bytes at a time and ended by a zero word, found by count; the menu verbs and nouns are 16-byte entries in one more file (`pc98tl/jast_boot.py` documents the layout).
+JAST's self-booting engine: the floppies have no file system.  The boot sector loads the engine (hand-written assembly) from a fixed sector; directory tables in it give each file's disk, sector and length.  54 scenes hold command tables, then messages read two bytes at a time and ended by a zero word, found by count; the menu verbs and nouns are 16-byte entries in one more file (`pc98tl/jast_boot.py` documents the layout).
 
 The disk tool that built the floppies cut files at a sector boundary and left old sector contents after each file's end; the extractor stops each scene at the first leftover fragment, and keeps a scene's cut-off last message as it is.
 
@@ -38,13 +38,13 @@ The disk tool that built the floppies cut files at a sector boundary and left ol
 
 * Messages: `{C2}` (name colour), `{C1}` (highlight) and `{C0}` (normal colour) switch the text colour and are not drawn; `{A<n>}` are animation controls; keep them. `\n` starts a new line.  Full-width characters such as 「」 can stay in the English.
 * Menu words: 14 letters (7 cells shown); longer ones are cut and reported.
-* A rebuilt scene must fit the engine's scene buffer (it loads below the word file); the patcher refuses a scene that would not.  Grown scenes move to never-written sectors of their disk and their directory entry is updated.
+* A rebuilt scene must fit the engine's scene buffer (it loads below the word file); the patcher refuses a scene that would not.  Grown scenes move to free sectors of their disk (no table refers to them, one filler byte throughout) and their directory entry is updated.
 * The disks have no file system, so the machine-translation notice is `MTL_NOTE.TXT` next to the patched images instead of a file on the disk.
 
 ## Not handled
 
 * Text drawn into the artwork (the title logo).
-* The engine's own screen strings (save/load, disk prompts) are English already, drawn full-width, and are left as they are.
+* The engine's other screen strings (save/load, disk prompts) are English already, drawn full-width, and are left as they are.
 
 ## Test status (np21w, `tools/boot_all.sh`)
 

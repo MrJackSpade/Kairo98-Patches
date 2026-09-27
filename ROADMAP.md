@@ -100,6 +100,7 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Gomen ne Angel - Yokohama Monogatari | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo III Bangaihen | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, message window pages | OK (see notes) |
+| ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | jast boot disk (JIS) | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo IV - Yuko | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo V - Nerawareta Tenshi | jast SCM | extracted | **Ready to translate** (maintainer) | works; floppy set, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban | jast SCM | extracted | **Ready to translate** (maintainer) | works; hard-disk layout, message window pages | OK (see notes) |

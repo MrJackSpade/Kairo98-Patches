@@ -592,5 +592,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken": [
+  {
+   "label": "This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)",
+   "url": "../games/yoru_no_tenshi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

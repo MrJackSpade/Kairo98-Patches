@@ -595,5 +595,27 @@
    "Scene past the opening (breakfast)",
    "OK"
   ]
+ ],
+ "yoru_no_tenshi": [
+  [
+   "Title: sound output prompt (engine strings)",
+   "OK: half-width filler in the prompt box"
+  ],
+  [
+   "Opening (floppy set: boot disk and disk 2)",
+   "OK"
+  ],
+  [
+   "Message window (this build has no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK"
+  ],
+  [
+   "Verb and noun menus",
+   "not yet seen (the opening runs as a sequence of messages)"
+  ]
  ]
 }

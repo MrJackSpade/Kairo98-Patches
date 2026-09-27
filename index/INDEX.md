@@ -235,6 +235,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo V - Nerawareta Tenshi | [This repo: games/tenshi_v (patcher working, machine translation in progress)](../games/tenshi_v/notes.md) |
 | Jast | Tenshi-tachi no Gogo VI - My Fair Teacher | [This repo: games/tenshi_vi (patcher working, machine translation in progress)](../games/tenshi_vi/notes.md) |
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
+| Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 
 ## Translations not yet matched to a collection title
@@ -3251,7 +3252,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Tenshi-tachi no Gogo VI - My Fair Teacher [FD HD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Hohoemi [FD HD] `jast` — *MTL (this repo)*
 - ♥ Totsugeki! Bakkon Street [FD HD]
-- ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD extras]
+- ♥ Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD extras] — *MTL (this repo)*
 
 ### JHV (`JHV.zip`)
 

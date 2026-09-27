@@ -302,7 +302,7 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     elif cfg["encoding"] == "jast_boot":
         scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
         out += ["JAST's self-booting engine: the floppies have no file system.  The boot sector loads "
-                "the engine (hand-written assembly) from sector 8; four directory tables in it give each "
+                "the engine (hand-written assembly) from a fixed sector; directory tables in it give each "
                 "file's disk, sector and length.  %d scenes hold command tables, then messages read two "
                 "bytes at a time and ended by a zero word, found by count; the menu verbs and nouns are "
                 "16-byte entries in one more file (`pc98tl/jast_boot.py` documents the layout)." % len(scenes),
@@ -311,6 +311,11 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "contents after each file's end; the extractor stops each scene at the first leftover "
                 "fragment, and keeps a scene's cut-off last message as it is.",
                 "", BOOT_DISPLAY]
+        if any(e["kind"] == "engine" for e in strings):
+            out += ["* This is the oldest build: its text is JIS (low byte first), so an English "
+                    "letter pair marks its first letter with bit 7.  Its title screen's sound "
+                    "prompt is three JIS strings in the engine; they are rewritten in place, and "
+                    "the engine's string put draws through the same helper."]
     else:
         out += ["JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
                 "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
@@ -334,14 +339,19 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "starts a new line.  Full-width characters such as 「」 can stay in the English.",
                 "* Menu words: 14 letters (7 cells shown); longer ones are cut and reported.",
                 "* A rebuilt scene must fit the engine's scene buffer (it loads below the word file); "
-                "the patcher refuses a scene that would not.  Grown scenes move to never-written "
-                "sectors of their disk and their directory entry is updated.",
+                "the patcher refuses a scene that would not.  Grown scenes move to free sectors of "
+                "their disk (no table refers to them, one filler byte throughout) and their directory "
+                "entry is updated.",
                 "* The disks have no file system, so the machine-translation notice is `MTL_NOTE.TXT` "
-                "next to the patched images instead of a file on the disk.",
+                "next to the patched images instead of a file on the disk."]
+        if any(e["kind"] == "engine" for e in strings):
+            out.append("* Engine strings (`e` ids): their original length (2 letters per cell); "
+                       "longer ones are cut and reported.")
+        out += [
                 "", "## Not handled", "",
                 "* Text drawn into the artwork (the title logo).",
-                "* The engine's own screen strings (save/load, disk prompts) are English already, drawn "
-                "full-width, and are left as they are."]
+                "* The engine's other screen strings (save/load, disk prompts) are English already, "
+                "drawn full-width, and are left as they are."]
     else:
         out += ["", "## Limits", "",
                 "* Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` "

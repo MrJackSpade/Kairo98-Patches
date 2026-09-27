@@ -1246,5 +1246,15 @@
    "w00117",
    "w00211"
   ]
+ },
+ "Jast.zip/Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken": {
+  "adult": true,
+  "hits": 1,
+  "strings": 1582,
+  "distinct_terms": 1,
+  "summary": "manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "m00676"
+  ]
  }
 }
