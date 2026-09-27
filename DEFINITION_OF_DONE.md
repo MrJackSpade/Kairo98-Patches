@@ -1,25 +1,16 @@
 # Definition of Done
 
-This is the checklist for calling a game **Done**. A goal like *"bring Funny Bee
-to Done"* means: work through every item below that applies, in order, until
-all of them are true, and don't stop at "it works on my machine".
+This is the checklist for calling a game **Done**. A goal like *"bring Funny
+Bee to Done"* means: work through every item below that applies, in order,
+until all of them are true, and don't stop at "it works on my machine".
 
-The order matters: the script is extracted **first** and handed off, so the
-translation model can start while the patching work goes on. Nobody waits for
-the patcher.
+**Roles come first:** read `AGENTS.md` and load your own role's skill. Each
+skill says which sections below are that role's.
 
-> **Who does what**
->
-> * **Claude does decomp only:** reverse-engineering the engine, extracting
->   the Japanese script into `strings.json`, and building a patcher that takes
->   arbitrary, longer English back in. It also sets up the standard folder,
->   runs the boot tests and keeps the tooling records. Claude doesn't
->   translate any game, adult or not.
-> * **The translation model does everything to do with the script's
->   content:** translating, the adult (♥) classification, and any tagging or
->   flagging of what's in the script. Claude doesn't read scripts for
->   content, scan them, or record content findings. The scripts are then left
->   to other people and teams to use as they choose.
+The order matters: the script is extracted **first** and handed off, so
+translation can start while the patching work goes on. Nobody waits for the
+patcher.
+
 > * **The only thing that stops work** on a game is §1: a human translation
 >   already exists, or a team with finished releases has announced one. Then
 >   the game is recorded as skipped and is finished.
@@ -78,14 +69,9 @@ index, and **stop**. That game is not ours.
 ## 3. Handoff: right after extraction
 
 - [ ] Commit and push `strings.json` right away, and mark the game **Ready to
-      translate** in `ROADMAP.md`'s status table. The translation model takes
-      it from there (translation, ♥ classification, any content flags) while
-      Claude **carries on with §4–§8 for this same game**. Handing off the
-      script isn't the end of Claude's work on it, and the script isn't held
-      back until the patcher is finished.
-- [ ] Claude doesn't classify, scan, tag or flag the script's content, and
-      doesn't write content findings into `research/adult_text.json`,
-      `notes.md` or anywhere else. That record belongs to the translation model.
+      translate** in `ROADMAP.md`'s status table. The translation role takes
+      it from there, while the decomp role **carries on with §4–§8 for this
+      same game**. The script isn't held back until the patcher is finished.
 
 ## 4. Patching
 
@@ -130,13 +116,12 @@ index, and **stop**. That game is not ours.
 - [ ] Anything not reached (battles, dungeons, save/load, endings) is listed
       as **not yet seen** in `notes.md`. Don't claim what wasn't seen.
 
-## 7. Translation: not Claude's
+## 7. Translation: the translation role's
 
-Translation belongs to the translation model for every game, with or without
-♥. So do the ♥ mark (`research/adult_text.json`, `tools/adult_scan.py`) and any
-content tagging or flagging. Claude's part ends when any English the model
-writes, of any length, goes in through `patch.py` (§4, proven by the §6 stress
-test).
+Translation, the ♥ mark and all content tagging or flagging belong to the
+translation role for every game (see `AGENTS.md`). The decomp role's part ends
+when any English, of any length, goes in through `patch.py` (§4, proven by
+the §6 stress test).
 
 ## 8. Record and publish
 
@@ -159,7 +144,7 @@ test).
 
 - *"Bring `<game>` to Done"*: every applicable section above.
 - *"Get `<game>` ready to translate"*: §1–§3. This is the fast path that
-  gives the translation model something to translate.
+  gives the translation role something to translate.
 - *"Bring the `<engine>` family to Tooling Done"*: §1–§6 and §8 for each game
   on that engine. Do §1–§3 for **every** game in the family before starting
   the patch work on any of them.
