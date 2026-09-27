@@ -1,0 +1,12 @@
+{
+ "AliceSoft.zip/Intruder - Sakura Yashiki no Tansaku (FM Towns conversion)": {
+  "classification": "age unresolved",
+  "translation_disposition": "Wont do",
+  "evidence": "Natsuki is introduced as Sayoko's younger sister and called a girl (m01469-m01471). The protagonist can choose an assault branch involving her (m01481-m01501). She says she cannot marry yet (m01489), but the script gives no numeric age. A game-specific walkthrough confirms the branch but gives no age. Do not infer an exact age from appearance, school materials, or marriage dialogue alone; leave existing English intact and do not translate the remaining script until her age is verified.",
+  "sources": [
+   "games/intruder/strings.json: m01469-m01501",
+   "https://w.atwiki.jp/retropcgame/pages/585.html"
+  ],
+  "checked": "2026-09-27"
+ }
+}

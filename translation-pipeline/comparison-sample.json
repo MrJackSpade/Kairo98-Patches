@@ -1,0 +1,14 @@
+{
+  "game": "Model comparison: spring mansion",
+  "engine": "sample",
+  "strings": [
+    {"id": "m001", "kind": "msg", "jp": "春の風が頬をなで、桜屋敷の門が目の前に現れた。", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m002", "kind": "msg", "jp": "門番の澪は、昼間は決して笑わない。けれど今夜は違った。", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m003", "kind": "msg", "jp": "「また来たの、{X1}。今夜だけは、見なかったことにしてあげる」", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m004", "kind": "msg", "jp": "彼女は笑ったが、その手は震えていた。", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m005", "kind": "msg", "jp": "「義理は返した。あとはあんたの番だよ」", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m006", "kind": "msg", "jp": "「まさか……あの人が、裏で糸を引いていたなんて」", "en": "", "refs": [], "max_cells": 36},
+    {"id": "m007", "kind": "menu", "jp": "澪を信じる", "en": "", "refs": [], "max_cells": 16},
+    {"id": "m008", "kind": "menu", "jp": "門の奥を調べる", "en": "", "refs": [], "max_cells": 16}
+  ]
+}
