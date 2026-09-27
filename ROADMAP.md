@@ -89,14 +89,14 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Angel Army | Illusion C engine, 24-dot font (EXEPACK) | extracted | **Translated** (Claude, 297/297) | works; letter pairs through the kanji-ROM path, quote boxes turned horizontal | OK (see notes) |
 | ♥ Deep | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Eden no Kaori | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
-| ♥ Hunting Roulette - Totsugeki Bakkon Street II | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Hunting Roulette - Totsugeki Bakkon Street II | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
 | ♥ Setsujuu - Yuganda Kioku | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo Collection | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo Collection 2 | jast OVL | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
-| ♥ Tenshi-tachi no Gogo Tenkousei | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
-| ♥ Tenshi-tachi no Hohoemi | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
-| ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
-| ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
+| ♥ Tenshi-tachi no Gogo Tenkousei | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
+| ♥ Tenshi-tachi no Hohoemi | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
+| ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
+| ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works; engine strings in place | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
 | ♥ Cosmos Club | jast boot disk (D88, text blob) | extracted | **Ready to translate** (maintainer) | works; self-booting D88 floppy set, message window pages | OK (see notes) |
 | ♥ Gomen ne Angel - Yokohama Monogatari | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set | OK (see notes) |

@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's later scene engine: 85 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
+JAST's later scene engine: 88 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
 Every floppy's scene files are patched; the output is the full disk set.
 
 ## English display (`pc98tl/jast_scm.py`, `pc98tl/jast_console.py`)
@@ -21,7 +21,7 @@ Every floppy's scene files are patched; the output is the full disk set.
 
 ## Script
 
-1959 strings (scene text).
+2238 strings (1959 scene text, 32 engine strings, 233 menu words, 14 batch lines).
 
 ♥ by the script-text scan (6 of 2002 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -29,12 +29,15 @@ Every floppy's scene files are patched; the output is the full disk set.
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
+* Noun table words (`w` ids, NTBL.BIN: the objects of the command menus): 16 letters.
+* Batch files' Japanese echo lines (`b` ids) are rewritten as they are.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
@@ -43,4 +46,5 @@ Every floppy's scene files are patched; the output is the full disk set.
 | Title (floppy set, patched scenes on every disk) | OK |
 | Message window, first page | OK: half-width filler inside the frame, wrapped between words |
 | Long message: waits at a full box, next page after a click or key | OK |
+| Command menu (engine strings) | OK: filler in place |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

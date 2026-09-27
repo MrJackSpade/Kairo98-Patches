@@ -38333,6 +38333,376 @@
    "refs": [
     "JO6611.OVL:8a6"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:16dcc"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "はじめから",
+   "en": "",
+   "refs": [
+    "EXE:17b54"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "  ロード",
+   "en": "",
+   "refs": [
+    "EXE:17b5f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": " 環境設定",
+   "en": "",
+   "refs": [
+    "EXE:17b68"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": " 人物紹介",
+   "en": "",
+   "refs": [
+    "EXE:17b72"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "  おわる",
+   "en": "",
+   "refs": [
+    "EXE:17b7c"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ＣＧを見る",
+   "en": "",
+   "refs": [
+    "EXE:17b85"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "音楽を聴く",
+   "en": "",
+   "refs": [
+    "EXE:17b90"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:17b9b"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "終了",
+   "en": "",
+   "refs": [
+    "EXE:17ba2"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": " 　ロード１　 ",
+   "en": "",
+   "refs": [
+    "EXE:17ba7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": " 　ロード２　 ",
+   "en": "",
+   "refs": [
+    "EXE:17bb6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": " 　ロード３　 ",
+   "en": "",
+   "refs": [
+    "EXE:17bc5"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": " 　ロード４　 ",
+   "en": "",
+   "refs": [
+    "EXE:17bd4"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": " 　ロード５　 ",
+   "en": "",
+   "refs": [
+    "EXE:17be3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": " 　セーブ１　 ",
+   "en": "",
+   "refs": [
+    "EXE:17bf2"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": " 　セーブ２　 ",
+   "en": "",
+   "refs": [
+    "EXE:17c01"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": " 　セーブ３　 ",
+   "en": "",
+   "refs": [
+    "EXE:17c10"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": " 　セーブ４　 ",
+   "en": "",
+   "refs": [
+    "EXE:17c1f"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": " 　セーブ５　 ",
+   "en": "",
+   "refs": [
+    "EXE:17c2e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "天使達の午後２　番外編",
+   "en": "",
+   "refs": [
+    "EXE:17c3d"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "天使達の午後３番外反省版",
+   "en": "",
+   "refs": [
+    "EXE:17c54"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "天使達の午後４～ゆう子～",
+   "en": "",
+   "refs": [
+    "EXE:17c6d"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:17c86"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:17c98"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:17cb1"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "Ｆ Ｍ 音 源",
+   "en": "",
+   "refs": [
+    "EXE:17ccc"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "Ｍ Ｉ Ｄ Ｉ",
+   "en": "",
+   "refs": [
+    "EXE:17cd8"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "実はまだやる",
+   "en": "",
+   "refs": [
+    "EXE:17ce4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "本当に終わる",
+   "en": "",
+   "refs": [
+    "EXE:17cf1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "状態表示",
+   "en": "",
+   "refs": [
+    "EXE:17cfe"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "移動モード",
+   "en": "",
+   "refs": [
+    "EXE:17d07"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "ゲーム終了",
+   "en": "",
+   "refs": [
+    "EXE:17d12"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "  おまけ",
+   "en": "",
+   "refs": [
+    "EXE:17d1d"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "どこ行こうか？",
+   "en": "",
+   "refs": [
+    "EXE:18434"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "セーブ　",
+   "en": "",
+   "refs": [
+    "EXE:18519"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "ロード　",
+   "en": "",
+   "refs": [
+    "EXE:18522"
+   ],
+   "max_cells": 4
   }
  ]
 }

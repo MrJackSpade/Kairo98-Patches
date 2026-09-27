@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's later scene engine: 101 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
+JAST's later scene engine: 103 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
 
 ## English display (`pc98tl/jast_scm.py`)
 
@@ -21,7 +21,7 @@ JAST's later scene engine: 101 scene files (`*.SCM`), command tables then messag
 
 ## Script
 
-1118 strings (scene text).
+1442 strings (1118 scene text, 111 engine strings, 213 menu words).
 
 ♥ by the script-text scan (23 of 1174 strings match the sexual-vocabulary list (6 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -29,18 +29,22 @@ JAST's later scene engine: 101 scene files (`*.SCM`), command tables then messag
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
+* Noun table words (`w` ids, NTBL.BIN: the objects of the command menus): 16 letters.
+* Batch files' Japanese echo lines (`b` ids) are rewritten as they are.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
 | Test | Result |
 |---|---|
-| Title / command menu | OK (engine menus stay Japanese) |
+| Title / command menu (engine strings) | OK: filler in place |
+| Object menu (noun table) | OK: filler words |
 | Message window | OK: half-width filler inside the frame, wrapped between words (60 columns) |
 | Long message: the engine pages a full box itself | OK (9-line test message) |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

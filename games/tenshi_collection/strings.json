@@ -15947,6 +15947,1276 @@
    "refs": [
     "SCM66.OVL:c7"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:1162a"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "最初から",
+   "en": "",
+   "refs": [
+    "EXE:11db0"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "ロード１",
+   "en": "",
+   "refs": [
+    "EXE:11db9"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "ロード２",
+   "en": "",
+   "refs": [
+    "EXE:11dc2"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ロード３",
+   "en": "",
+   "refs": [
+    "EXE:11dcb"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "ロード４",
+   "en": "",
+   "refs": [
+    "EXE:11dd4"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ロード５",
+   "en": "",
+   "refs": [
+    "EXE:11ddd"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "　　　天使達の午後",
+   "en": "",
+   "refs": [
+    "EXE:11de6"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "天使達の午後２～美奈子～",
+   "en": "",
+   "refs": [
+    "EXE:11df9"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "天使達の午後３～リボン～",
+   "en": "",
+   "refs": [
+    "EXE:11e12"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:11e2b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:11e44"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:11e5f"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "EXE:11e66"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "終了",
+   "en": "",
+   "refs": [
+    "EXE:11e6d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "セーブ１",
+   "en": "",
+   "refs": [
+    "EXE:11e72"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "セーブ２",
+   "en": "",
+   "refs": [
+    "EXE:11e7b"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "セーブ３",
+   "en": "",
+   "refs": [
+    "EXE:11e84"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "セーブ４",
+   "en": "",
+   "refs": [
+    "EXE:11e8d"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "セーブ５",
+   "en": "",
+   "refs": [
+    "EXE:11e96"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:11e9f"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "　　ＦＭ音源／音源無し",
+   "en": "",
+   "refs": [
+    "EXE:11eb1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "ＭＩＤＩ（ＳＣ－５５）使用",
+   "en": "",
+   "refs": [
+    "EXE:11ec8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "ジーザス",
+   "en": "",
+   "refs": [
+    "EXE:120c9"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "マリア",
+   "en": "",
+   "refs": [
+    "EXE:120d5"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "桐藤",
+   "en": "",
+   "refs": [
+    "EXE:120dc"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "大河原",
+   "en": "",
+   "refs": [
+    "EXE:120e1"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "ヒックス",
+   "en": "",
+   "refs": [
+    "EXE:120e8"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "モネ",
+   "en": "",
+   "refs": [
+    "EXE:120f1"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "イヴ",
+   "en": "",
+   "refs": [
+    "EXE:120f6"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "ボウ",
+   "en": "",
+   "refs": [
+    "EXE:120fb"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "黒服の男",
+   "en": "",
+   "refs": [
+    "EXE:12100"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "案内嬢",
+   "en": "",
+   "refs": [
+    "EXE:12109"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "係員",
+   "en": "",
+   "refs": [
+    "EXE:12110"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "新郎",
+   "en": "",
+   "refs": [
+    "EXE:12115"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "新婦",
+   "en": "",
+   "refs": [
+    "EXE:1211a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "倫子",
+   "en": "",
+   "refs": [
+    "EXE:1211f"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "観光客Ａ",
+   "en": "",
+   "refs": [
+    "EXE:12124"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "観光客Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:1212d"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "観光客Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:12136"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "アイス屋親父",
+   "en": "",
+   "refs": [
+    "EXE:1213f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "スリのガキ",
+   "en": "",
+   "refs": [
+    "EXE:1214c"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "ファーミ",
+   "en": "",
+   "refs": [
+    "EXE:12157"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "謎の老人",
+   "en": "",
+   "refs": [
+    "EXE:12160"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "男の子",
+   "en": "",
+   "refs": [
+    "EXE:1216c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "店員",
+   "en": "",
+   "refs": [
+    "EXE:12173"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "サドの男",
+   "en": "",
+   "refs": [
+    "EXE:12178"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "サティー",
+   "en": "",
+   "refs": [
+    "EXE:12181"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "ナーディル",
+   "en": "",
+   "refs": [
+    "EXE:1218a"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "ゾウ",
+   "en": "",
+   "refs": [
+    "EXE:12195"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "子供Ａ",
+   "en": "",
+   "refs": [
+    "EXE:1219a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "子供Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:121a1"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "子供Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:121a8"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "日本人のオヤジ",
+   "en": "",
+   "refs": [
+    "EXE:121af"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "インド人",
+   "en": "",
+   "refs": [
+    "EXE:121be"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "カルメン",
+   "en": "",
+   "refs": [
+    "EXE:121c7"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "フラメンコの女",
+   "en": "",
+   "refs": [
+    "EXE:121d0"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "エレキ",
+   "en": "",
+   "refs": [
+    "EXE:121df"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "イコライザー",
+   "en": "",
+   "refs": [
+    "EXE:121e6"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "ジョン",
+   "en": "",
+   "refs": [
+    "EXE:121f3"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "警察官",
+   "en": "",
+   "refs": [
+    "EXE:121fa"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "女性",
+   "en": "",
+   "refs": [
+    "EXE:12201"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "変質者",
+   "en": "",
+   "refs": [
+    "EXE:12206"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "サラリーマン",
+   "en": "",
+   "refs": [
+    "EXE:1220d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00065",
+   "kind": "engine",
+   "jp": "サーラ",
+   "en": "",
+   "refs": [
+    "EXE:1221a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "マイヤー",
+   "en": "",
+   "refs": [
+    "EXE:12221"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00067",
+   "kind": "engine",
+   "jp": "紳士",
+   "en": "",
+   "refs": [
+    "EXE:1222a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "フィル",
+   "en": "",
+   "refs": [
+    "EXE:1222f"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "クリステン",
+   "en": "",
+   "refs": [
+    "EXE:12236"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "情報屋",
+   "en": "",
+   "refs": [
+    "EXE:12241"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "レイリア",
+   "en": "",
+   "refs": [
+    "EXE:12248"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00072",
+   "kind": "engine",
+   "jp": "乞食",
+   "en": "",
+   "refs": [
+    "EXE:12251"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00073",
+   "kind": "engine",
+   "jp": "達也",
+   "en": "",
+   "refs": [
+    "EXE:1225c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00074",
+   "kind": "engine",
+   "jp": "女の子",
+   "en": "",
+   "refs": [
+    "EXE:12261"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00075",
+   "kind": "engine",
+   "jp": "偏屈な男",
+   "en": "",
+   "refs": [
+    "EXE:12268"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00076",
+   "kind": "engine",
+   "jp": "反対運動家Ａ",
+   "en": "",
+   "refs": [
+    "EXE:12271"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00077",
+   "kind": "engine",
+   "jp": "反対運動家Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:1227e"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00078",
+   "kind": "engine",
+   "jp": "反対運動家Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:1228b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00079",
+   "kind": "engine",
+   "jp": "吸血鬼",
+   "en": "",
+   "refs": [
+    "EXE:12298"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00080",
+   "kind": "engine",
+   "jp": "執事",
+   "en": "",
+   "refs": [
+    "EXE:1229f"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00081",
+   "kind": "engine",
+   "jp": "初老の男",
+   "en": "",
+   "refs": [
+    "EXE:122a4"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00082",
+   "kind": "engine",
+   "jp": "おばさん",
+   "en": "",
+   "refs": [
+    "EXE:122ad"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00083",
+   "kind": "engine",
+   "jp": "ウェイトレス",
+   "en": "",
+   "refs": [
+    "EXE:122b6"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00084",
+   "kind": "engine",
+   "jp": "奇妙な化け物",
+   "en": "",
+   "refs": [
+    "EXE:122c6"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00085",
+   "kind": "engine",
+   "jp": "シヴァ",
+   "en": "",
+   "refs": [
+    "EXE:122d3"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00086",
+   "kind": "engine",
+   "jp": "子供",
+   "en": "",
+   "refs": [
+    "EXE:122da"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00087",
+   "kind": "engine",
+   "jp": "おじさん",
+   "en": "",
+   "refs": [
+    "EXE:122df"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00088",
+   "kind": "engine",
+   "jp": "少女",
+   "en": "",
+   "refs": [
+    "EXE:122e8"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00089",
+   "kind": "engine",
+   "jp": "少年",
+   "en": "",
+   "refs": [
+    "EXE:122ed"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00090",
+   "kind": "engine",
+   "jp": "青年",
+   "en": "",
+   "refs": [
+    "EXE:122f2"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00091",
+   "kind": "engine",
+   "jp": "スチュワーデス",
+   "en": "",
+   "refs": [
+    "EXE:122f7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00092",
+   "kind": "engine",
+   "jp": "研究員Ａ",
+   "en": "",
+   "refs": [
+    "EXE:12306"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00093",
+   "kind": "engine",
+   "jp": "研究員Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:1230f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00094",
+   "kind": "engine",
+   "jp": "研究員Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:12318"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00095",
+   "kind": "engine",
+   "jp": "研究員Ｄ",
+   "en": "",
+   "refs": [
+    "EXE:12321"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00096",
+   "kind": "engine",
+   "jp": "謎の声",
+   "en": "",
+   "refs": [
+    "EXE:1232a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00097",
+   "kind": "engine",
+   "jp": "警備員",
+   "en": "",
+   "refs": [
+    "EXE:12331"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00098",
+   "kind": "engine",
+   "jp": "Ｅ＆Ｅ",
+   "en": "",
+   "refs": [
+    "EXE:12338"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00099",
+   "kind": "engine",
+   "jp": "チャイナ",
+   "en": "",
+   "refs": [
+    "EXE:1233f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00100",
+   "kind": "engine",
+   "jp": "トンファー",
+   "en": "",
+   "refs": [
+    "EXE:12348"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00101",
+   "kind": "engine",
+   "jp": "まっちょ",
+   "en": "",
+   "refs": [
+    "EXE:12353"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00102",
+   "kind": "engine",
+   "jp": "敵ビクサーＡ",
+   "en": "",
+   "refs": [
+    "EXE:1235c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00103",
+   "kind": "engine",
+   "jp": "敵ビクサーＢ",
+   "en": "",
+   "refs": [
+    "EXE:12369"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00104",
+   "kind": "engine",
+   "jp": "敵ビクサーＣ",
+   "en": "",
+   "refs": [
+    "EXE:12376"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00105",
+   "kind": "engine",
+   "jp": "ふっふっふ、貴方、全部クリアしましたね！？",
+   "en": "",
+   "refs": [
+    "EXE:12386"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00106",
+   "kind": "engine",
+   "jp": "おめでたう。",
+   "en": "",
+   "refs": [
+    "EXE:123b1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00107",
+   "kind": "engine",
+   "jp": "そんな貴方だけのためのとっておきのコーナーですよ。",
+   "en": "",
+   "refs": [
+    "EXE:123be"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00108",
+   "kind": "engine",
+   "jp": "・・・・・スタッフ一同の開発日誌・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:123f1"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00109",
+   "kind": "engine",
+   "jp": "ビリヤード松山：天使たちの午後って・・・淒いゲームだ・・・。",
+   "en": "",
+   "refs": [
+    "EXE:1241c"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00110",
+   "kind": "engine",
+   "jp": "さすが私が生まれる前のゲームだねッ。（うそだよ。）",
+   "en": "",
+   "refs": [
+    "EXE:12459"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00111",
+   "kind": "engine",
+   "jp": "次は雪獸ッ！！　燃えて燃えて奇跡を呼ぶゾ！！",
+   "en": "",
+   "refs": [
+    "EXE:1248c"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00112",
+   "kind": "engine",
+   "jp": "また会おうねッ！！　たこやきたこやきー☆　クレープでも可☆",
+   "en": "",
+   "refs": [
+    "EXE:124b9"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "e00113",
+   "kind": "engine",
+   "jp": "　　　　うさうさぎを虐める会会長　踊るビリヤード松山でした！！☆",
+   "en": "",
+   "refs": [
+    "EXE:124f4"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00114",
+   "kind": "engine",
+   "jp": "うさうさぎ：はーい　と言うわけで、虐められてる、うさうさぎなんですけどね。",
+   "en": "",
+   "refs": [
+    "EXE:12535"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00115",
+   "kind": "engine",
+   "jp": "いやー、よくクリアしましたねー。",
+   "en": "",
+   "refs": [
+    "EXE:12580"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00116",
+   "kind": "engine",
+   "jp": "暇だったんですか？ｳｿ",
+   "en": "",
+   "refs": [
+    "EXE:125a1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00117",
+   "kind": "engine",
+   "jp": "　　　　うさうさぎでした。",
+   "en": "",
+   "refs": [
+    "EXE:125b6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00118",
+   "kind": "engine",
+   "jp": "鉄人Ａ：はっきり言って「疲れた！！」の一言。",
+   "en": "",
+   "refs": [
+    "EXE:125d1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00119",
+   "kind": "engine",
+   "jp": "１０年近くも前のソフトなんで資料も少なく「どうしましょう」の言葉連発",
+   "en": "",
+   "refs": [
+    "EXE:125fe"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00120",
+   "kind": "engine",
+   "jp": "でも、「天使たちの午後」は、私が若い頃、楽しんで解いた懐かしのゲームなんだなぁ。これが。",
+   "en": "",
+   "refs": [
+    "EXE:12643"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "e00121",
+   "kind": "engine",
+   "jp": "当時は、美少女ゲームを買うのがとても恥ずかしく、他人の目を気にしてはこそこそ買っていたなぁ。",
+   "en": "",
+   "refs": [
+    "EXE:1269c"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "e00122",
+   "kind": "engine",
+   "jp": "それが今では堂々と「この美少女ゲーム下さい」の一言。うーーーーーーん。時代かなぁ。",
+   "en": "",
+   "refs": [
+    "EXE:126f9"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "e00123",
+   "kind": "engine",
+   "jp": "　　　　とてもオジン臭い文章を書く　謎の鉄人Ａどえっす！！",
+   "en": "",
+   "refs": [
+    "EXE:1274c"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "e00124",
+   "kind": "engine",
+   "jp": "さてこの度、当社はパソコンネットを開く事になりました。",
+   "en": "",
+   "refs": [
+    "EXE:12821"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00125",
+   "kind": "engine",
+   "jp": "ＩＤ発行希望者は、往復ハガキに、住所，氏名，電話番号，購入されたソフト名，及び、これから表示されるパスワードを明記し、当社までお送り下さい。",
+   "en": "",
+   "refs": [
+    "EXE:12858"
+   ],
+   "max_cells": 70
+  },
+  {
+   "id": "e00126",
+   "kind": "engine",
+   "jp": "パソコンネットが開催され次第、ＩＤ，パスワードを発行し、ご連絡いたします。",
+   "en": "",
+   "refs": [
+    "EXE:128e5"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00127",
+   "kind": "engine",
+   "jp": "パスワード　：　転校生",
+   "en": "",
+   "refs": [
+    "EXE:12930"
+   ],
+   "max_cells": 11
   }
  ]
 }

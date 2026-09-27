@@ -374,6 +374,10 @@
   [
    "Following messages (speaker lines)",
    "OK: name, colon, hanging lines"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "eden_no_kaori": [
@@ -384,6 +388,10 @@
   [
    "First scene message window",
    "OK: half-width filler, wrapped between words inside the frame"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "setsujuu": [
@@ -394,6 +402,10 @@
   [
    "Message window",
    "OK: half-width filler, wrapped between words inside the frame; speaker names from the engine's name table"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "tenshi_collection": [
@@ -404,6 +416,10 @@
   [
    "First game's message window",
    "OK: half-width filler, wrapped between words inside the frame"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "tenshi_collection_2": [
@@ -414,12 +430,20 @@
   [
    "Message window",
    "OK: half-width filler, wrapped between words inside the frame"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "tenshi_vi": [
   [
-   "Title / command menu",
-   "OK (engine menus stay Japanese)"
+   "Title / command menu (engine strings)",
+   "OK: filler in place"
+  ],
+  [
+   "Object menu (noun table)",
+   "OK: filler words"
   ],
   [
    "Message window",
@@ -432,52 +456,84 @@
  ],
  "hunting_roulette": [
   [
-   "Boots to the town map (clickable picture)",
+   "Title menu (engine strings)",
+   "OK: filler"
+  ],
+  [
+   "Town map; building captions and the move menu (engine strings)",
+   "OK: filler in place"
+  ],
+  [
+   "Status panel (engine strings)",
    "OK"
   ],
   [
-   "Message window",
-   "not yet seen (the boot steps don't reach a message)"
+   "Going into a building: scene and message window",
+   "OK: half-width filler inside the frame"
   ]
  ],
  "tenshi_tenkousei": [
   [
-   "Boots to the load/new-game menu",
-   "OK"
+   "Title menu (engine strings)",
+   "OK: filler"
+  ],
+  [
+   "Opening (script inside the program: engine strings)",
+   "OK: filler in the message window"
   ],
   [
    "Message window",
-   "not yet seen (the boot steps don't reach a message)"
+   "OK: half-width filler inside the frame"
   ]
  ],
  "tenshi_hohoemi": [
   [
-   "Boots to the player name entry",
+   "Title menu (engine strings)",
+   "OK: filler"
+  ],
+  [
+   "Name entry: character grid kept, prompt and buttons in place",
+   "OK"
+  ],
+  [
+   "Weekly schedule and status panel (engine strings)",
    "OK"
   ],
   [
    "Message window",
-   "not yet seen (the boot steps don't reach a message)"
+   "OK: half-width filler inside the frame"
+  ],
+  [
+   "Scene past the opening (the park)",
+   "OK"
   ]
  ],
  "shuukan_from_h": [
   [
-   "Builds; boot not yet run",
+   "Opening pictures",
    "OK"
   ],
   [
    "Message window",
-   "not yet seen (the boot steps don't reach a message)"
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Scene past the opening (in the car)",
+   "OK"
+  ],
+  [
+   "Engine strings (title menu, labels) rewritten in place",
+   "OK: filler inside the menus, game runs on"
   ]
  ],
  "marilyn_dx": [
   [
-   "Builds; boot not yet run",
-   "OK"
+   "Start menu (engine strings)",
+   "OK: filler"
   ],
   [
    "Message window",
-   "not yet seen (the boot steps don't reach a message)"
+   "OK: half-width filler inside the frame, wrapped between words"
   ]
  ],
  "tenshi_v": [
@@ -492,6 +548,10 @@
   [
    "Long message: waits at a full box, next page after a click or key",
    "OK"
+  ],
+  [
+   "Command menu (engine strings)",
+   "OK: filler in place"
   ]
  ],
  "tenshi_iii_hanseiban": [
@@ -510,6 +570,10 @@
   [
    "Paging on a full box",
    "OK"
+  ],
+  [
+   "Command menu (engine strings)",
+   "OK: filler in place"
   ]
  ],
  "tenshi_special_ii": [
@@ -524,6 +588,10 @@
   [
    "Message window",
    "OK: half-width filler inside the frame, wrapped between words; the engine pages a full box (▼)"
+  ],
+  [
+   "Command menu (engine strings)",
+   "OK: filler in place"
   ]
  ],
  "tenshi_iv": [

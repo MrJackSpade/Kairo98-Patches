@@ -19,8 +19,18 @@ game.json: {"title", "key", "image", "game_dir", "engine", "encoding": "jast_scm
             "boot_steps", "dipsw", optional "native_ascii": true (engines that
             draw ASCII half-width themselves, on the text layer: no engine
             patch), "floppies": {"B": "<other disk image>", ...}}
-A string's ref is "<file>:<message number>".
+A string's ref is "<file>:<message number>"; the engine program's own
+strings (menus, disk prompts, help) are kind "engine", ref "EXE:<offset>",
+rewritten in place (pc98tl/engine_strings.py) as ASCII (letter pairs in the
+kanji-ROM builds, whose glyph routine draws them).  The noun table
+NTBL.BIN (the objects of the LOOK/SPEAK/ACTION menus: 256 records of 16
+bytes and a NUL) is kind "word", ref "NTBL:<record>", rewritten in place on
+every disk that has it; batch files' Japanese echo lines are kind "batch",
+ref "<file>:<line>".
 """
+
+NTBL = "NTBL.BIN"
+NTBL_REC = 17
 import json
 import os
 import re
@@ -28,6 +38,7 @@ import struct
 
 from .disk import DiskImage
 from .alice_sys2_tl import sha256
+from . import engine_strings
 
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -122,6 +133,19 @@ def disks(cfg, src):
     return out
 
 
+def _exists(vol, path):
+    try:
+        vol.read(path)
+        return True
+    except Exception:
+        return False
+
+
+def batch_files(cfg, vol):
+    ents = vol.listdir(vol.find(cfg["game_dir"])["cluster"]) if cfg["game_dir"] else vol.listdir(0)
+    return sorted(e["name"] for e in ents if e["name"].upper().endswith(".BAT"))
+
+
 def _ref(tag, name, num):
     return ("%s/%s:%d" % (tag, name, num)) if tag else ("%s:%d" % (name, num))
 
@@ -129,7 +153,8 @@ def _ref(tag, name, num):
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     merged, order = {}, []
-    for tag, _img, vol in disks(cfg, src):
+    all_disks = disks(cfg, src)
+    for tag, _img, vol in all_disks:
       for name in scene_files(cfg, vol):
         data = vol.read(_path(cfg, name))
         for num, s, e in messages(data):
@@ -145,6 +170,29 @@ def run_extract(here, src):
             merged[jp] = {"kind": "msg", "jp": jp, "en": "", "refs": [ref], "speaker_pages": speaker}
             order.append(jp)
     strings = [{"id": "m%05d" % i, **merged[jp]} for i, jp in enumerate(order, 1)]
+    exe = all_disks[0][2].read(_path(cfg, cfg["engine"]))
+    eng = {}
+    for s, e, jp in engine_strings.find(exe):
+        if jp in eng:
+            eng[jp]["refs"].append("EXE:%x" % s)
+            continue
+        eng[jp] = {"kind": "engine", "jp": jp, "en": "", "refs": ["EXE:%x" % s], "max_cells": (e - s) // 2}
+    strings += [{"id": "e%05d" % i, **v} for i, v in enumerate(eng.values(), 1)]
+    vol0 = all_disks[0][2]
+    words, bats = {}, {}
+    if _exists(vol0, _path(cfg, NTBL)):
+        table = vol0.read(_path(cfg, NTBL))
+        for k in range(len(table) // NTBL_REC):
+            jp = table[k * NTBL_REC:k * NTBL_REC + 16].decode("cp932", "replace").rstrip("\u3000 ")
+            if jp:
+                words.setdefault(jp, {"kind": "word", "jp": jp, "en": "", "refs": [], "max_cells": 8})
+                words[jp]["refs"].append("NTBL:%d" % k)
+    for name in batch_files(cfg, vol0):
+        for n, jp in engine_strings.batch_lines(vol0.read(_path(cfg, name))):
+            bats.setdefault(jp, {"kind": "batch", "jp": jp, "en": "", "refs": []})
+            bats[jp]["refs"].append("%s:%d" % (name, n))
+    strings += [{"id": "w%05d" % i, **v} for i, v in enumerate(words.values(), 1)]
+    strings += [{"id": "b%05d" % i, **v} for i, v in enumerate(bats.values(), 1)]
     out = os.path.join(here, "strings.json")
     if os.path.exists(out):
         old = {(e["kind"], e["jp"]): e for e in json.load(open(out, encoding="utf-8"))["strings"]}
@@ -333,13 +381,25 @@ def run_patch(here, src, dst, mode="en"):
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
     cols = cfg.get("cols", 60)
-    by_ref = {}
+    by_ref, eng = {}, {}
     for e in doc["strings"]:
         if mode == "pseudo":
             text = "\n".join(pseudo("%s.%d" % (e["id"], k), int(len(pg) * 2.5))
                              for k, pg in enumerate(e["jp"].split("\n")))
+            if e["kind"] == "engine":      # filler as long as the string's room
+                text = pseudo(e["id"], 2 * e["max_cells"], 1.0)[:2 * e["max_cells"]]
         else:
             text = e["en"]
+        if text and e["kind"] == "engine":
+            for r in e["refs"]:
+                eng[r] = encode_en(text)
+            continue
+        if mode == "pseudo" and e["kind"] == "word":
+            text = ("<%s>" % e["id"][1:])[:16]
+        if text and e["kind"] in ("word", "batch"):
+            for r in e["refs"]:
+                eng[r] = text
+            continue
         if text:
             for r in e["refs"]:
                 by_ref[r] = (lay_out_lines if cfg.get("native_ascii") else lay_out)(
@@ -359,6 +419,24 @@ def run_patch(here, src, dst, mode="en"):
         if changed:
             out += data[pos:]
             vol.write(_path(cfg, name), bytes(out))
+    for tag, _img, vol in all_disks:
+        if _exists(vol, _path(cfg, NTBL)):
+            table = bytearray(vol.read(_path(cfg, NTBL)))
+            for k in range(len(table) // NTBL_REC):
+                v = eng.get("NTBL:%d" % k)
+                if v is not None:
+                    b = encode_en(v)
+                    if len(b) > 16:
+                        print("warning: NTBL:%d: %d letters, the menu shows 16" % (k, len(b)))
+                        b = b[:16]
+                    table[k * NTBL_REC:k * NTBL_REC + 16] = b.ljust(16, b" ")
+            vol.write(_path(cfg, NTBL), bytes(table))
+        for name in batch_files(cfg, vol):
+            data = vol.read(_path(cfg, name))
+            lines = {n: eng["%s:%d" % (name, n)] for n, _t in engine_strings.batch_lines(data)
+                     if "%s:%d" % (name, n) in eng}
+            if lines:
+                vol.write(_path(cfg, name), engine_strings.apply_batch(data, lines))
     tag, img, vol = all_disks[0]
     exe_path = _path(cfg, cfg["engine"])
     if cfg.get("one_drive"):
@@ -373,6 +451,13 @@ def run_patch(here, src, dst, mode="en"):
             raise ValueError("select-disk call not found (or not unique)")
         exe[at + 2:at + 5] = bytes.fromhex("b20090")
         vol.write(exe_path, bytes(exe))
+    runs = engine_strings.find(vol.read(exe_path))
+    exe, cut = engine_strings.apply(vol.read(exe_path), runs,
+                                    {s: eng["EXE:%x" % s] for s, _e, _t in runs if "EXE:%x" % s in eng})
+    vol.write(exe_path, exe)
+    ids = {r: e["id"] for e in doc["strings"] for r in e["refs"]}
+    for s, need, room in cut:
+        print("warning: %s: %d bytes, room for %d (cut)" % (ids.get("EXE:%x" % s, "EXE:%x" % s), need, room))
     if cfg.get("native_ascii"):       # text layer through DOS: only the pager
         from .jast_console import install
         vol.write(exe_path, install(vol.read(exe_path), cfg["cave"]))

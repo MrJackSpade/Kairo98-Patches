@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's scene engine (`DX/MAL_DX.EXE`): 102 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
+JAST's scene engine (`DX/MAL_DX.EXE`): 103 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
 
 ## English display (`pc98tl/jast_game.py`)
 
@@ -25,7 +25,7 @@ JAST's scene engine (`DX/MAL_DX.EXE`): 102 scene files (`*.OVL`) holding text an
 
 ## Script
 
-1628 strings (scene text).
+1973 strings (1628 scene text, 345 engine strings).
 
 ♥ by the safety valve: explicit sexual scenes (first at m01382/m01475) found while checking the script (2026-09-26). The maintainer translates it; 0 strings have English so far.
 
@@ -33,17 +33,18 @@ JAST's scene engine (`DX/MAL_DX.EXE`): 102 scene files (`*.OVL`) holding text an
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
 | Test | Result |
 |---|---|
-| Builds; boot not yet run | OK |
-| Message window | not yet seen (the boot steps don't reach a message) |
+| Start menu (engine strings) | OK: filler |
+| Message window | OK: half-width filler inside the frame, wrapped between words |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

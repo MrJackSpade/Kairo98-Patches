@@ -19,9 +19,14 @@ English lines are padded with spaces so the engine's own wrap (at the text
 window's width, a speaker's lines hanging after the colon) falls between
 words.
 
+Strings hard-coded in the engine program (menus, prompts, item names, the
+bonus texts and, in some games, the opening) are rewritten in place
+(pc98tl/engine_strings.py); ASCII is native there too.
+
 game.json: {"title", "key", "image", "game_dir", "engine", "encoding": "jast",
             optional "cols" (else read from the engine), "min_run", "boot_steps"}
-A string's ref is "<file>:<offset>"; kind "msg" for scene text.
+A string's ref is "<file>:<offset>"; kind "msg" for scene text, "engine"
+(ref "EXE:<offset>" in the unpacked program) for the engine's strings.
 """
 import json
 import os
@@ -30,7 +35,7 @@ import struct
 
 from .disk import DiskImage
 from .alice_sys2_tl import sha256
-from . import exepack
+from . import exepack, engine_strings
 
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -136,6 +141,16 @@ def run_extract(here, src):
             merged[jp] = {"kind": "msg", "jp": jp, "en": "", "refs": [ref]}
             order.append(jp)
     strings = [{"id": "m%05d" % i, **merged[jp]} for i, jp in enumerate(order, 1)]
+    exe = vol.read(_path(cfg, cfg["engine"]))
+    if exepack.is_packed(exe):
+        exe = exepack.unpack(exe)
+    eng = {}
+    for s, e, jp in engine_strings.find(exe):
+        if jp in eng:
+            eng[jp]["refs"].append("EXE:%x" % s)
+            continue
+        eng[jp] = {"kind": "engine", "jp": jp, "en": "", "refs": ["EXE:%x" % s], "max_cells": (e - s) // 2}
+    strings += [{"id": "e%05d" % i, **v} for i, v in enumerate(eng.values(), 1)]
     out = os.path.join(here, "strings.json")
     if os.path.exists(out):  # keep translations and hand-tuned fields
         old = {(e["kind"], e["jp"]): e for e in json.load(open(out, encoding="utf-8"))["strings"]}
@@ -300,9 +315,19 @@ def run_patch(here, src, dst, mode="en"):
             m = re.match(r"^([^0-9０-９【】「」]{1,8}?)：", jp)
             body = pseudo(e["id"], int(len(jp) * 2))
             text = (m.group(1) + ": " + body) if m else body
-        if text:
+            if e["kind"] == "engine":      # filler as long as the string's room
+                text = pseudo(e["id"], 2 * e["max_cells"], 1.0)[:2 * e["max_cells"]]
+        if not text:
+            continue
+        if e["kind"] == "engine":
+            room = 2 * e["max_cells"]
+            laid = lay_out(text, cols)
+            val = laid if len(laid) <= room else encode_en(text)
             for r in e["refs"]:
-                by_ref[r] = lay_out(text, cols)
+                by_ref[r] = val
+            continue
+        for r in e["refs"]:
+            by_ref[r] = lay_out(text, cols)
     report = []
     for name in scene_files(cfg, vol):
         data = vol.read(_path(cfg, name))
@@ -319,6 +344,12 @@ def run_patch(here, src, dst, mode="en"):
                           % (name, len(new), SCENE_BUFFER))
             continue
         vol.write(_path(cfg, name), new)
+    runs = engine_strings.find(exe)
+    exe, cut = engine_strings.apply(exe, runs, {s: by_ref["EXE:%x" % s] for s, _e, _t in runs
+                                               if "EXE:%x" % s in by_ref})
+    ids = {r: e["id"] for e in doc["strings"] for r in e["refs"]}
+    for s, need, room in cut:
+        report.append("%s: %d bytes, room for %d (cut)" % (ids.get("EXE:%x" % s, "EXE:%x" % s), need, room))
     vol.write(exe_path, patch_engine(exe))
     vol.create(_path(cfg, "MTL_NOTE.TXT"),
                MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))

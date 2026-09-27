@@ -14830,6 +14830,3470 @@
    "refs": [
     "S106.OVL:af2"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "はじめから",
+   "en": "",
+   "refs": [
+    "EXE:171be"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "  おまけ  ",
+   "en": "",
+   "refs": [
+    "EXE:171c9"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "２ドライブにＣディスクを入れて下さい",
+   "en": "",
+   "refs": [
+    "EXE:171d9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "２ドライブにＢディスクを入れて下さい",
+   "en": "",
+   "refs": [
+    "EXE:171fe"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "修理ロボットを使った",
+   "en": "",
+   "refs": [
+    "EXE:17344"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "ＨＰが回復した",
+   "en": "",
+   "refs": [
+    "EXE:17359"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "そういえば、そんなもの持っていなかったな。",
+   "en": "",
+   "refs": [
+    "EXE:17368"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ロボビタンＤＸを使った",
+   "en": "",
+   "refs": [
+    "EXE:17393"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "ＥＧが回復した",
+   "en": "",
+   "refs": [
+    "EXE:173aa"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "ハイパーロボビタンを使った",
+   "en": "",
+   "refs": [
+    "EXE:173b9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "全部回復した",
+   "en": "",
+   "refs": [
+    "EXE:173d4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "階に来ました",
+   "en": "",
+   "refs": [
+    "EXE:173e1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "をひろった！",
+   "en": "",
+   "refs": [
+    "EXE:173ee"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "ゲームオーバー",
+   "en": "",
+   "refs": [
+    "EXE:17424"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": " マリリン ：ふっ、たわいもない",
+   "en": "",
+   "refs": [
+    "EXE:17433"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "マリリン ：ふっ、たわいもない",
+   "en": "",
+   "refs": [
+    "EXE:17434"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "ｽC マリリン ：いくぞ！",
+   "en": "",
+   "refs": [
+    "EXE:1745c"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "ﾈB使用できません",
+   "en": "",
+   "refs": [
+    "EXE:17478"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "ＰＰ／ＭＡＸ　ＰＰ",
+   "en": "",
+   "refs": [
+    "EXE:1820f"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "ＥＧ／ＭＡＸ　ＥＧ",
+   "en": "",
+   "refs": [
+    "EXE:18222"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "攻撃力            ",
+   "en": "",
+   "refs": [
+    "EXE:18235"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "防御力            ",
+   "en": "",
+   "refs": [
+    "EXE:18248"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "素早さ            ",
+   "en": "",
+   "refs": [
+    "EXE:1825b"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "命中率            ",
+   "en": "",
+   "refs": [
+    "EXE:1826e"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "回避率            ",
+   "en": "",
+   "refs": [
+    "EXE:18281"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "修理ロボット      ",
+   "en": "",
+   "refs": [
+    "EXE:18294"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "精神安定プログラム",
+   "en": "",
+   "refs": [
+    "EXE:182a7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "ロボビタンＤＸ    ",
+   "en": "",
+   "refs": [
+    "EXE:182ba"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "ハイパーロボビタン",
+   "en": "",
+   "refs": [
+    "EXE:182cd"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "パラメータ",
+   "en": "",
+   "refs": [
+    "EXE:182e0"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": " アイテム ",
+   "en": "",
+   "refs": [
+    "EXE:182eb"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "アイテム ",
+   "en": "",
+   "refs": [
+    "EXE:182ec"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "  セーブ  ",
+   "en": "",
+   "refs": [
+    "EXE:182f6"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "  ロード  ",
+   "en": "",
+   "refs": [
+    "EXE:18301"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "   終了   ",
+   "en": "",
+   "refs": [
+    "EXE:1830c"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "データ １",
+   "en": "",
+   "refs": [
+    "EXE:18317"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "データ ２",
+   "en": "",
+   "refs": [
+    "EXE:18321"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "データ ３",
+   "en": "",
+   "refs": [
+    "EXE:1832b"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "データ ４",
+   "en": "",
+   "refs": [
+    "EXE:18335"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "データ ５",
+   "en": "",
+   "refs": [
+    "EXE:1833f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "終わる！",
+   "en": "",
+   "refs": [
+    "EXE:18349"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": " 戻る！ ",
+   "en": "",
+   "refs": [
+    "EXE:18352"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "キック",
+   "en": "",
+   "refs": [
+    "EXE:18368"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "必殺技",
+   "en": "",
+   "refs": [
+    "EXE:1836f"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "拡張装備",
+   "en": "",
+   "refs": [
+    "EXE:18376"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "のダメージ！",
+   "en": "",
+   "refs": [
+    "EXE:1837f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "の精神的ダメージ！",
+   "en": "",
+   "refs": [
+    "EXE:1838c"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "のダメージは身と心を直撃",
+   "en": "",
+   "refs": [
+    "EXE:1839f"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "マリリン・スカ！",
+   "en": "",
+   "refs": [
+    "EXE:183b8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "マリリン",
+   "en": "",
+   "refs": [
+    "EXE:183c9",
+    "EXE:19ceb"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "アトミックパンチ",
+   "en": "",
+   "refs": [
+    "EXE:183d2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "パワーキック",
+   "en": "",
+   "refs": [
+    "EXE:183e3"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "パワーシーター",
+   "en": "",
+   "refs": [
+    "EXE:183f0"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "バシッ！",
+   "en": "",
+   "refs": [
+    "EXE:183ff",
+    "EXE:1deb2"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "ドフッ！",
+   "en": "",
+   "refs": [
+    "EXE:18408",
+    "EXE:1debb"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "ドバ、ドバドバドバ？！",
+   "en": "",
+   "refs": [
+    "EXE:18411"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "巨大ガマ",
+   "en": "",
+   "refs": [
+    "EXE:18428"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "吸盤でこピン",
+   "en": "",
+   "refs": [
+    "EXE:1843c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "ジャンプキック",
+   "en": "",
+   "refs": [
+    "EXE:18449"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "ペロペロ舌攻撃",
+   "en": "",
+   "refs": [
+    "EXE:18458"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "ビシッ",
+   "en": "",
+   "refs": [
+    "EXE:18467"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "ポカ！",
+   "en": "",
+   "refs": [
+    "EXE:1846e"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "ベチョベチョ？",
+   "en": "",
+   "refs": [
+    "EXE:18475"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "ＢＩＧセミ",
+   "en": "",
+   "refs": [
+    "EXE:18484"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00065",
+   "kind": "engine",
+   "jp": "ジャブ！",
+   "en": "",
+   "refs": [
+    "EXE:1849a"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "羽攻撃",
+   "en": "",
+   "refs": [
+    "EXE:184a3"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00067",
+   "kind": "engine",
+   "jp": "ピロピロ舌攻撃",
+   "en": "",
+   "refs": [
+    "EXE:184aa"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "ビシッ、ビシッ！",
+   "en": "",
+   "refs": [
+    "EXE:184b9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "ピロ、ピロピロピロ",
+   "en": "",
+   "refs": [
+    "EXE:184ca"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "エレファント女",
+   "en": "",
+   "refs": [
+    "EXE:184dd"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "鼻で転がす",
+   "en": "",
+   "refs": [
+    "EXE:184f7"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00072",
+   "kind": "engine",
+   "jp": "エレファントキック",
+   "en": "",
+   "refs": [
+    "EXE:18502"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00073",
+   "kind": "engine",
+   "jp": "象プレス",
+   "en": "",
+   "refs": [
+    "EXE:18515"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00074",
+   "kind": "engine",
+   "jp": "ごろごろ！",
+   "en": "",
+   "refs": [
+    "EXE:1851e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00075",
+   "kind": "engine",
+   "jp": "ベキッ！！",
+   "en": "",
+   "refs": [
+    "EXE:18529"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00076",
+   "kind": "engine",
+   "jp": "グジャ！グジャ！",
+   "en": "",
+   "refs": [
+    "EXE:18534"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00077",
+   "kind": "engine",
+   "jp": "大蛇女",
+   "en": "",
+   "refs": [
+    "EXE:18545"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00078",
+   "kind": "engine",
+   "jp": "しっぽアタック",
+   "en": "",
+   "refs": [
+    "EXE:18557"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00079",
+   "kind": "engine",
+   "jp": "噛みつく",
+   "en": "",
+   "refs": [
+    "EXE:18566"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00080",
+   "kind": "engine",
+   "jp": "巻き付く",
+   "en": "",
+   "refs": [
+    "EXE:1856f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00081",
+   "kind": "engine",
+   "jp": "ペシ！",
+   "en": "",
+   "refs": [
+    "EXE:18578"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00082",
+   "kind": "engine",
+   "jp": "がぶ！",
+   "en": "",
+   "refs": [
+    "EXE:1857f"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00083",
+   "kind": "engine",
+   "jp": "ギュウ！ギュウ！",
+   "en": "",
+   "refs": [
+    "EXE:18586"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00084",
+   "kind": "engine",
+   "jp": "巫女・麗",
+   "en": "",
+   "refs": [
+    "EXE:18597"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00085",
+   "kind": "engine",
+   "jp": "おみくじ",
+   "en": "",
+   "refs": [
+    "EXE:185ab"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00086",
+   "kind": "engine",
+   "jp": "お札アタック",
+   "en": "",
+   "refs": [
+    "EXE:185b4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00087",
+   "kind": "engine",
+   "jp": "ファイヤーバード曼陀羅",
+   "en": "",
+   "refs": [
+    "EXE:185c1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00088",
+   "kind": "engine",
+   "jp": "大凶！・・・ドス！",
+   "en": "",
+   "refs": [
+    "EXE:185d8"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00089",
+   "kind": "engine",
+   "jp": "悪霊退散・・・ドカ！",
+   "en": "",
+   "refs": [
+    "EXE:185eb"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00090",
+   "kind": "engine",
+   "jp": "行け、我が分身よ！．．．バシ！",
+   "en": "",
+   "refs": [
+    "EXE:18600"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00091",
+   "kind": "engine",
+   "jp": "クレリック・メイ",
+   "en": "",
+   "refs": [
+    "EXE:1861f"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00092",
+   "kind": "engine",
+   "jp": "祈り",
+   "en": "",
+   "refs": [
+    "EXE:1863b"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00093",
+   "kind": "engine",
+   "jp": "十字架フラッシュ",
+   "en": "",
+   "refs": [
+    "EXE:18640"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00094",
+   "kind": "engine",
+   "jp": "クラック・クルセード",
+   "en": "",
+   "refs": [
+    "EXE:18651"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00095",
+   "kind": "engine",
+   "jp": "サイコウエーブ！？",
+   "en": "",
+   "refs": [
+    "EXE:18666"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00096",
+   "kind": "engine",
+   "jp": "ピカー！",
+   "en": "",
+   "refs": [
+    "EXE:18679"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00097",
+   "kind": "engine",
+   "jp": "ピカ、ピカ、ドシャ！",
+   "en": "",
+   "refs": [
+    "EXE:18682"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00098",
+   "kind": "engine",
+   "jp": "マジシャン・エミ",
+   "en": "",
+   "refs": [
+    "EXE:18697"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00099",
+   "kind": "engine",
+   "jp": "ファイヤー",
+   "en": "",
+   "refs": [
+    "EXE:186b3"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00100",
+   "kind": "engine",
+   "jp": "サンダーアロー",
+   "en": "",
+   "refs": [
+    "EXE:186be"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00101",
+   "kind": "engine",
+   "jp": "メガフラッシュ",
+   "en": "",
+   "refs": [
+    "EXE:186cd"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00102",
+   "kind": "engine",
+   "jp": "ボー、ボー！",
+   "en": "",
+   "refs": [
+    "EXE:186dc"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00103",
+   "kind": "engine",
+   "jp": "ビガッ！",
+   "en": "",
+   "refs": [
+    "EXE:186e9"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00104",
+   "kind": "engine",
+   "jp": "機関銃とセーラ服",
+   "en": "",
+   "refs": [
+    "EXE:186f2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00105",
+   "kind": "engine",
+   "jp": "鋼鉄ヨーヨー",
+   "en": "",
+   "refs": [
+    "EXE:1870e"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00106",
+   "kind": "engine",
+   "jp": "機関銃",
+   "en": "",
+   "refs": [
+    "EXE:1871b"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00107",
+   "kind": "engine",
+   "jp": "パンチラキック",
+   "en": "",
+   "refs": [
+    "EXE:18722"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00108",
+   "kind": "engine",
+   "jp": "ボコ！",
+   "en": "",
+   "refs": [
+    "EXE:18731"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00109",
+   "kind": "engine",
+   "jp": "ダダダ・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:18738"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00110",
+   "kind": "engine",
+   "jp": "チラリ・・・・ボコ！",
+   "en": "",
+   "refs": [
+    "EXE:18749"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00111",
+   "kind": "engine",
+   "jp": "ＲＹ－７８セーラ",
+   "en": "",
+   "refs": [
+    "EXE:1875e"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00112",
+   "kind": "engine",
+   "jp": "ビームサーベル",
+   "en": "",
+   "refs": [
+    "EXE:1877a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00113",
+   "kind": "engine",
+   "jp": "ビームライフル",
+   "en": "",
+   "refs": [
+    "EXE:18789"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00114",
+   "kind": "engine",
+   "jp": "サイコミュー",
+   "en": "",
+   "refs": [
+    "EXE:18798"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00115",
+   "kind": "engine",
+   "jp": "ザクッ！",
+   "en": "",
+   "refs": [
+    "EXE:187a5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00116",
+   "kind": "engine",
+   "jp": "バッキューン！",
+   "en": "",
+   "refs": [
+    "EXE:187ae"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00117",
+   "kind": "engine",
+   "jp": "どどどどどどどど！",
+   "en": "",
+   "refs": [
+    "EXE:187bd"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00118",
+   "kind": "engine",
+   "jp": "パワード・サリー",
+   "en": "",
+   "refs": [
+    "EXE:187d0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00119",
+   "kind": "engine",
+   "jp": "ダイナマイト・ストレート",
+   "en": "",
+   "refs": [
+    "EXE:187ec"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00120",
+   "kind": "engine",
+   "jp": "パワードライブ",
+   "en": "",
+   "refs": [
+    "EXE:18805"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00121",
+   "kind": "engine",
+   "jp": "ドシッ！",
+   "en": "",
+   "refs": [
+    "EXE:18814"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00122",
+   "kind": "engine",
+   "jp": "ボコ、ボコボコボコボコ！",
+   "en": "",
+   "refs": [
+    "EXE:1881d"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00123",
+   "kind": "engine",
+   "jp": "ななこ",
+   "en": "",
+   "refs": [
+    "EXE:18836"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00124",
+   "kind": "engine",
+   "jp": "パワーナックル",
+   "en": "",
+   "refs": [
+    "EXE:18848"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00125",
+   "kind": "engine",
+   "jp": "超高速降下飛びけり",
+   "en": "",
+   "refs": [
+    "EXE:18857"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00126",
+   "kind": "engine",
+   "jp": "ジェットアタック",
+   "en": "",
+   "refs": [
+    "EXE:1886a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00127",
+   "kind": "engine",
+   "jp": "ヒューーー、ドカン！",
+   "en": "",
+   "refs": [
+    "EXE:1887b"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00128",
+   "kind": "engine",
+   "jp": "ドドドドーーー、ドカン！",
+   "en": "",
+   "refs": [
+    "EXE:18890"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00129",
+   "kind": "engine",
+   "jp": "ブレード・ミカ",
+   "en": "",
+   "refs": [
+    "EXE:188a9"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00130",
+   "kind": "engine",
+   "jp": "脳天かち割り切り",
+   "en": "",
+   "refs": [
+    "EXE:188c3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00131",
+   "kind": "engine",
+   "jp": "ファイヤーブレイド",
+   "en": "",
+   "refs": [
+    "EXE:188d4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00132",
+   "kind": "engine",
+   "jp": "ザク！",
+   "en": "",
+   "refs": [
+    "EXE:188e7"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00133",
+   "kind": "engine",
+   "jp": "ボカ！",
+   "en": "",
+   "refs": [
+    "EXE:188ee"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00134",
+   "kind": "engine",
+   "jp": "ファイヤーーーー！",
+   "en": "",
+   "refs": [
+    "EXE:188f5"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00135",
+   "kind": "engine",
+   "jp": "ボッグ",
+   "en": "",
+   "refs": [
+    "EXE:18908"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00136",
+   "kind": "engine",
+   "jp": "ビーム",
+   "en": "",
+   "refs": [
+    "EXE:18914"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00137",
+   "kind": "engine",
+   "jp": "ベアークロー",
+   "en": "",
+   "refs": [
+    "EXE:1891b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00138",
+   "kind": "engine",
+   "jp": "ファイナルクロー",
+   "en": "",
+   "refs": [
+    "EXE:18928"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00139",
+   "kind": "engine",
+   "jp": "ビーーーーー！",
+   "en": "",
+   "refs": [
+    "EXE:18939"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00140",
+   "kind": "engine",
+   "jp": "グサッ！",
+   "en": "",
+   "refs": [
+    "EXE:18948"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00141",
+   "kind": "engine",
+   "jp": "グサッ、グサッグサッグサッ",
+   "en": "",
+   "refs": [
+    "EXE:18951"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00142",
+   "kind": "engine",
+   "jp": "ズボッグ",
+   "en": "",
+   "refs": [
+    "EXE:1896c"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00143",
+   "kind": "engine",
+   "jp": "ハイパービーム",
+   "en": "",
+   "refs": [
+    "EXE:1897a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00144",
+   "kind": "engine",
+   "jp": "ファイヤークロー",
+   "en": "",
+   "refs": [
+    "EXE:18989"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00145",
+   "kind": "engine",
+   "jp": "スクリュークロー",
+   "en": "",
+   "refs": [
+    "EXE:1899a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00146",
+   "kind": "engine",
+   "jp": "ゴーーーー！",
+   "en": "",
+   "refs": [
+    "EXE:189ab"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00147",
+   "kind": "engine",
+   "jp": "ボーーー、グサッ",
+   "en": "",
+   "refs": [
+    "EXE:189b8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00148",
+   "kind": "engine",
+   "jp": "くるくる．．．．グサッ",
+   "en": "",
+   "refs": [
+    "EXE:189c9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00149",
+   "kind": "engine",
+   "jp": "Ｂ・ホープ",
+   "en": "",
+   "refs": [
+    "EXE:189e0"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00150",
+   "kind": "engine",
+   "jp": "拡散ビーム",
+   "en": "",
+   "refs": [
+    "EXE:189f0"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00151",
+   "kind": "engine",
+   "jp": "タイガーバツーカ",
+   "en": "",
+   "refs": [
+    "EXE:189fb"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00152",
+   "kind": "engine",
+   "jp": "ダイナマイトボンバー",
+   "en": "",
+   "refs": [
+    "EXE:18a0c"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00153",
+   "kind": "engine",
+   "jp": "ビッビッビッビッビッ",
+   "en": "",
+   "refs": [
+    "EXE:18a21"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00154",
+   "kind": "engine",
+   "jp": "ドッカーーーーン！",
+   "en": "",
+   "refs": [
+    "EXE:18a36"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00155",
+   "kind": "engine",
+   "jp": "ビヨーーーーーーーン！",
+   "en": "",
+   "refs": [
+    "EXE:18a49"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00156",
+   "kind": "engine",
+   "jp": "ボトム",
+   "en": "",
+   "refs": [
+    "EXE:18a60"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00157",
+   "kind": "engine",
+   "jp": "のびるパンチ",
+   "en": "",
+   "refs": [
+    "EXE:18a6c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00158",
+   "kind": "engine",
+   "jp": "工事力ビーム",
+   "en": "",
+   "refs": [
+    "EXE:18a79"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00159",
+   "kind": "engine",
+   "jp": "ロケットパンチ",
+   "en": "",
+   "refs": [
+    "EXE:18a86"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00160",
+   "kind": "engine",
+   "jp": "ビヨーーーーーン、ペチッ！",
+   "en": "",
+   "refs": [
+    "EXE:18a95"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00161",
+   "kind": "engine",
+   "jp": "どどど、びびび！？",
+   "en": "",
+   "refs": [
+    "EXE:18ab0"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00162",
+   "kind": "engine",
+   "jp": "びよおおおおおん！",
+   "en": "",
+   "refs": [
+    "EXE:18ac3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00163",
+   "kind": "engine",
+   "jp": "ロボット兵",
+   "en": "",
+   "refs": [
+    "EXE:18ad6",
+    "EXE:19d0e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00164",
+   "kind": "engine",
+   "jp": "ビーム！",
+   "en": "",
+   "refs": [
+    "EXE:18ae1"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00165",
+   "kind": "engine",
+   "jp": "ミサイル！",
+   "en": "",
+   "refs": [
+    "EXE:18aea"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00166",
+   "kind": "engine",
+   "jp": "誘導大型ミサイル",
+   "en": "",
+   "refs": [
+    "EXE:18af5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00167",
+   "kind": "engine",
+   "jp": "ビーーーーーイ！",
+   "en": "",
+   "refs": [
+    "EXE:18b06"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00168",
+   "kind": "engine",
+   "jp": "ドッッッッカン！",
+   "en": "",
+   "refs": [
+    "EXE:18b17"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00169",
+   "kind": "engine",
+   "jp": "ヒューーーーードッッカン！",
+   "en": "",
+   "refs": [
+    "EXE:18b28"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00170",
+   "kind": "engine",
+   "jp": "門番兵",
+   "en": "",
+   "refs": [
+    "EXE:18b43",
+    "EXE:19da1"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00171",
+   "kind": "engine",
+   "jp": "パンチ！",
+   "en": "",
+   "refs": [
+    "EXE:18b4a"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00172",
+   "kind": "engine",
+   "jp": "キック！",
+   "en": "",
+   "refs": [
+    "EXE:18b53"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00173",
+   "kind": "engine",
+   "jp": "門アタック！",
+   "en": "",
+   "refs": [
+    "EXE:18b5c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00174",
+   "kind": "engine",
+   "jp": "パコ！",
+   "en": "",
+   "refs": [
+    "EXE:18b69"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00175",
+   "kind": "engine",
+   "jp": "ペシッ、マリリンは、門にはさまれた",
+   "en": "",
+   "refs": [
+    "EXE:18b70"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00176",
+   "kind": "engine",
+   "jp": "天宮丈之介",
+   "en": "",
+   "refs": [
+    "EXE:18b93"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00177",
+   "kind": "engine",
+   "jp": "＊スーパースペシャルドクター・ジョウはマリリンＤＸの胸をもんだ！",
+   "en": "",
+   "refs": [
+    "EXE:18b9e"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00178",
+   "kind": "engine",
+   "jp": "＊スーパースペシャルドクター・ジョウはマリリンＤＸに抱きついた！！",
+   "en": "",
+   "refs": [
+    "EXE:18bdf"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "e00179",
+   "kind": "engine",
+   "jp": "＊スーパースペシャルドクター・ジョウはマリリンＤＸの股間にさわった！",
+   "en": "",
+   "refs": [
+    "EXE:18c22"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00180",
+   "kind": "engine",
+   "jp": "ふっふっふっ、なかなかいい体をしておるではないか。                  ＞ショック！",
+   "en": "",
+   "refs": [
+    "EXE:18c67"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "e00181",
+   "kind": "engine",
+   "jp": "ふっふっふっ、なかなかいい体をしておるではないか。                   ＞ショック！",
+   "en": "",
+   "refs": [
+    "EXE:18cb8"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "e00182",
+   "kind": "engine",
+   "jp": "ふっふっふっ、けっこう感じておるのではないのか？                    ＞ショック！",
+   "en": "",
+   "refs": [
+    "EXE:18d0a"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "e00183",
+   "kind": "engine",
+   "jp": "警官",
+   "en": "",
+   "refs": [
+    "EXE:18d5b"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00184",
+   "kind": "engine",
+   "jp": "抵抗すると容赦せんぞ！",
+   "en": "",
+   "refs": [
+    "EXE:18d60"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00185",
+   "kind": "engine",
+   "jp": "貴っ様～～～っ、もう許さん！",
+   "en": "",
+   "refs": [
+    "EXE:18d77"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00186",
+   "kind": "engine",
+   "jp": "公務執行妨害で逮捕する！",
+   "en": "",
+   "refs": [
+    "EXE:18d94"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00187",
+   "kind": "engine",
+   "jp": "＊警官は警棒で殴りかかってきた！  ＞ポカ！",
+   "en": "",
+   "refs": [
+    "EXE:18dad"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00188",
+   "kind": "engine",
+   "jp": "＊警官はピストルをぶっ放した！　＞パキューン",
+   "en": "",
+   "refs": [
+    "EXE:18dd8"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00189",
+   "kind": "engine",
+   "jp": "国家権力を使ってきた！！　＞逮捕された！",
+   "en": "",
+   "refs": [
+    "EXE:18e05"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00190",
+   "kind": "engine",
+   "jp": "巨大セミ",
+   "en": "",
+   "refs": [
+    "EXE:18e2e"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00191",
+   "kind": "engine",
+   "jp": "ミニゾウ",
+   "en": "",
+   "refs": [
+    "EXE:18e37"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00192",
+   "kind": "engine",
+   "jp": "ジューシー奈緒美",
+   "en": "",
+   "refs": [
+    "EXE:18e40"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00193",
+   "kind": "engine",
+   "jp": "塩酸を投げた！",
+   "en": "",
+   "refs": [
+    "EXE:18e56"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00194",
+   "kind": "engine",
+   "jp": "中性子爆弾をセットした！",
+   "en": "",
+   "refs": [
+    "EXE:18e65"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00195",
+   "kind": "engine",
+   "jp": "私たちが開発した科学兵器の威力を受けてみなさい！",
+   "en": "",
+   "refs": [
+    "EXE:18e7e"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00196",
+   "kind": "engine",
+   "jp": "ジュ、ジュウウウウウ！",
+   "en": "",
+   "refs": [
+    "EXE:18eaf"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00197",
+   "kind": "engine",
+   "jp": "バシューーーー！",
+   "en": "",
+   "refs": [
+    "EXE:18ec6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00198",
+   "kind": "engine",
+   "jp": "＊ジューシー奈緒美は細菌銃を発射した！　＞ドッカーーーーン！",
+   "en": "",
+   "refs": [
+    "EXE:18ed7"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00199",
+   "kind": "engine",
+   "jp": "ミルキー真由美",
+   "en": "",
+   "refs": [
+    "EXE:18f14"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00200",
+   "kind": "engine",
+   "jp": "真由美の超能力をあまく見たら、ゆるさないんだから！              ＊ミルキー真由美のサイコキネシス！",
+   "en": "",
+   "refs": [
+    "EXE:18f28"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "e00201",
+   "kind": "engine",
+   "jp": "サイコウエーブ",
+   "en": "",
+   "refs": [
+    "EXE:18f8b"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00202",
+   "kind": "engine",
+   "jp": "ドカ、ボコ、マリリンは壁にぶつけられた！",
+   "en": "",
+   "refs": [
+    "EXE:18f9a"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00203",
+   "kind": "engine",
+   "jp": "あ、頭が変になる！",
+   "en": "",
+   "refs": [
+    "EXE:18fc3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00204",
+   "kind": "engine",
+   "jp": "片瀬めぐみ",
+   "en": "",
+   "refs": [
+    "EXE:18fd6"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00205",
+   "kind": "engine",
+   "jp": "%003：これ以上したら、わたし、%000のこと嫌いになっちゃうかもしれない…",
+   "en": "",
+   "refs": [
+    "EXE:18fe1"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "e00206",
+   "kind": "engine",
+   "jp": "%003：……ごめんなさい。わたし今日、アノ日なの……。",
+   "en": "",
+   "refs": [
+    "EXE:19028"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "e00207",
+   "kind": "engine",
+   "jp": "…＊片瀬めぐみの精神的揺さぶり！",
+   "en": "",
+   "refs": [
+    "EXE:1905d"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00208",
+   "kind": "engine",
+   "jp": "…＊片瀬めぐみは卑怯な言い訳をした！",
+   "en": "",
+   "refs": [
+    "EXE:1907e"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00209",
+   "kind": "engine",
+   "jp": "ビューティー加奈子",
+   "en": "",
+   "refs": [
+    "EXE:190a3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00210",
+   "kind": "engine",
+   "jp": "さあ、我が軍の最新兵器を受けてみよ！",
+   "en": "",
+   "refs": [
+    "EXE:190bb"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00211",
+   "kind": "engine",
+   "jp": "ドシ！",
+   "en": "",
+   "refs": [
+    "EXE:190e0"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00212",
+   "kind": "engine",
+   "jp": "スパイラルランチャーを発射した！",
+   "en": "",
+   "refs": [
+    "EXE:190e7"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00213",
+   "kind": "engine",
+   "jp": "キャンディ・ペア",
+   "en": "",
+   "refs": [
+    "EXE:19108"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00214",
+   "kind": "engine",
+   "jp": "ドロップキック！",
+   "en": "",
+   "refs": [
+    "EXE:1911e"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00215",
+   "kind": "engine",
+   "jp": "コンビネーションアタック！",
+   "en": "",
+   "refs": [
+    "EXE:1912f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00216",
+   "kind": "engine",
+   "jp": "ミキ，アスカ：さあ、これが私たちが新開発したプロレス技よ        スプラッシュアタック！",
+   "en": "",
+   "refs": [
+    "EXE:1914a"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "e00217",
+   "kind": "engine",
+   "jp": "ボコ、ドカ、パシ！",
+   "en": "",
+   "refs": [
+    "EXE:191a1"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00218",
+   "kind": "engine",
+   "jp": "ドドドドドド、ボコボコボコ！",
+   "en": "",
+   "refs": [
+    "EXE:191b4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00219",
+   "kind": "engine",
+   "jp": "手榴弾を投げた",
+   "en": "",
+   "refs": [
+    "EXE:191d6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00220",
+   "kind": "engine",
+   "jp": "サンダーーーーーーーキック！",
+   "en": "",
+   "refs": [
+    "EXE:191ea"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00221",
+   "kind": "engine",
+   "jp": "ベキ、ベキベキベキ．．．ドシ！",
+   "en": "",
+   "refs": [
+    "EXE:19207"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00222",
+   "kind": "engine",
+   "jp": "古川志津江",
+   "en": "",
+   "refs": [
+    "EXE:19226"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00223",
+   "kind": "engine",
+   "jp": "観念しなさい。あなたは私に勝てないわ。            クリティカルボンバー！",
+   "en": "",
+   "refs": [
+    "EXE:19236"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00224",
+   "kind": "engine",
+   "jp": "ケンジ",
+   "en": "",
+   "refs": [
+    "EXE:19ce4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00225",
+   "kind": "engine",
+   "jp": "丈之介",
+   "en": "",
+   "refs": [
+    "EXE:19cf4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00226",
+   "kind": "engine",
+   "jp": "めぐみ",
+   "en": "",
+   "refs": [
+    "EXE:19cfb"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00227",
+   "kind": "engine",
+   "jp": "明子",
+   "en": "",
+   "refs": [
+    "EXE:19d02"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00228",
+   "kind": "engine",
+   "jp": "加奈子",
+   "en": "",
+   "refs": [
+    "EXE:19d07"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00229",
+   "kind": "engine",
+   "jp": "通行人Ａ",
+   "en": "",
+   "refs": [
+    "EXE:19d19"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00230",
+   "kind": "engine",
+   "jp": "通行人Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:19d22"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00231",
+   "kind": "engine",
+   "jp": "通行人Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:19d2b"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00232",
+   "kind": "engine",
+   "jp": "警察",
+   "en": "",
+   "refs": [
+    "EXE:19d34"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00233",
+   "kind": "engine",
+   "jp": "まこと",
+   "en": "",
+   "refs": [
+    "EXE:19d39"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00234",
+   "kind": "engine",
+   "jp": "子供Ａ",
+   "en": "",
+   "refs": [
+    "EXE:19d40"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00235",
+   "kind": "engine",
+   "jp": "子供Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:19d47"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00236",
+   "kind": "engine",
+   "jp": "子供Ａ，Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:19d4e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00237",
+   "kind": "engine",
+   "jp": "乗客Ａ",
+   "en": "",
+   "refs": [
+    "EXE:19d59"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00238",
+   "kind": "engine",
+   "jp": "乗客Ｂ",
+   "en": "",
+   "refs": [
+    "EXE:19d60"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00239",
+   "kind": "engine",
+   "jp": "乗客Ｃ",
+   "en": "",
+   "refs": [
+    "EXE:19d67"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00240",
+   "kind": "engine",
+   "jp": "乗客Ｄ",
+   "en": "",
+   "refs": [
+    "EXE:19d6e"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00241",
+   "kind": "engine",
+   "jp": "アナウンス",
+   "en": "",
+   "refs": [
+    "EXE:19d75"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00242",
+   "kind": "engine",
+   "jp": "狩人",
+   "en": "",
+   "refs": [
+    "EXE:19d80"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00243",
+   "kind": "engine",
+   "jp": "奈緒美",
+   "en": "",
+   "refs": [
+    "EXE:19d85"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00244",
+   "kind": "engine",
+   "jp": "店員",
+   "en": "",
+   "refs": [
+    "EXE:19d8c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00245",
+   "kind": "engine",
+   "jp": "おばさん",
+   "en": "",
+   "refs": [
+    "EXE:19d91"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00246",
+   "kind": "engine",
+   "jp": "真由美",
+   "en": "",
+   "refs": [
+    "EXE:19d9a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00247",
+   "kind": "engine",
+   "jp": "ミキ",
+   "en": "",
+   "refs": [
+    "EXE:19da8"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00248",
+   "kind": "engine",
+   "jp": "アスカ",
+   "en": "",
+   "refs": [
+    "EXE:19dad"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00249",
+   "kind": "engine",
+   "jp": "志津枝",
+   "en": "",
+   "refs": [
+    "EXE:19db4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00250",
+   "kind": "engine",
+   "jp": "マリリン：バニィー、フラーッシュ！　食らってぇ～～ん。",
+   "en": "",
+   "refs": [
+    "EXE:1c7c9",
+    "EXE:1c8a8",
+    "EXE:1c9b0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00251",
+   "kind": "engine",
+   "jp": "＊マリリンＤＸ、必殺のバニーフラッシュ！！",
+   "en": "",
+   "refs": [
+    "EXE:1c800",
+    "EXE:1c8df",
+    "EXE:1c9e7"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00252",
+   "kind": "engine",
+   "jp": "＊ジューシー奈緒美の戦闘服はズタズタに引き裂かれた！！",
+   "en": "",
+   "refs": [
+    "EXE:1c82b"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00253",
+   "kind": "engine",
+   "jp": "＊ミルキー真由美はかなり弱ってきているようだ。",
+   "en": "",
+   "refs": [
+    "EXE:1c862"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "e00254",
+   "kind": "engine",
+   "jp": "→必殺技のチャンス！！",
+   "en": "",
+   "refs": [
+    "EXE:1c891",
+    "EXE:1c999",
+    "EXE:1cace",
+    "EXE:1cbe2",
+    "EXE:1cda5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00255",
+   "kind": "engine",
+   "jp": "真由美：いやああぁぁーーーーっ……！！",
+   "en": "",
+   "refs": [
+    "EXE:1c90a"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00256",
+   "kind": "engine",
+   "jp": "＊ミルキー真由美の戦闘服はズタズタに引き裂かれた！！",
+   "en": "",
+   "refs": [
+    "EXE:1c931"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "e00257",
+   "kind": "engine",
+   "jp": "＊ビューティー加奈子はかなり弱ってきているようだ。",
+   "en": "",
+   "refs": [
+    "EXE:1c966"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00258",
+   "kind": "engine",
+   "jp": "加奈子：フッ………甘いわッ！！",
+   "en": "",
+   "refs": [
+    "EXE:1ca12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00259",
+   "kind": "engine",
+   "jp": "→ビューティー加奈子がバニーフラッシュを弾きかえした！！",
+   "en": "",
+   "refs": [
+    "EXE:1ca31"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "e00260",
+   "kind": "engine",
+   "jp": "マリリン：うわぁあぁぁぁぁぁーーーーーーーーーっ！",
+   "en": "",
+   "refs": [
+    "EXE:1ca6a"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00261",
+   "kind": "engine",
+   "jp": "＊キャンディ・ペアはかなり弱ってきているようだ。",
+   "en": "",
+   "refs": [
+    "EXE:1ca9d"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00262",
+   "kind": "engine",
+   "jp": "マリリン：プラズマァァ、スパーーク！　あぁん、いっちゃう～～ん。",
+   "en": "",
+   "refs": [
+    "EXE:1cae5"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00263",
+   "kind": "engine",
+   "jp": "＊マリリンＤＸ、必殺のプラズマスパーク！！",
+   "en": "",
+   "refs": [
+    "EXE:1cb26"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00264",
+   "kind": "engine",
+   "jp": "加奈子：きゃああぁぁーーーーっ……！！",
+   "en": "",
+   "refs": [
+    "EXE:1cb51"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00265",
+   "kind": "engine",
+   "jp": "＊ビューティー加奈子の戦闘服はズタズタに引き裂かれた！！",
+   "en": "",
+   "refs": [
+    "EXE:1cb78"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "e00266",
+   "kind": "engine",
+   "jp": "＊プリティーめぐみはかなり弱ってきているようだ。",
+   "en": "",
+   "refs": [
+    "EXE:1cbb1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00267",
+   "kind": "engine",
+   "jp": "マリリン：プラズマァァ、スパーーク！　あぁん、いっちゃう～～ん。＊マリリンＤＸ、必殺のプラズマスパーク！！",
+   "en": "",
+   "refs": [
+    "EXE:1cbf9"
+   ],
+   "max_cells": 53
+  },
+  {
+   "id": "e00268",
+   "kind": "engine",
+   "jp": "めぐみ：きゃああぁぁーーーーっ……！！",
+   "en": "",
+   "refs": [
+    "EXE:1cc64"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00269",
+   "kind": "engine",
+   "jp": "＊プリティーめぐみの戦闘服はズタズタに引き裂かれた！！",
+   "en": "",
+   "refs": [
+    "EXE:1cc8b"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00270",
+   "kind": "engine",
+   "jp": "＊マリリンＤＸ、必殺兵器のキラービーム！！",
+   "en": "",
+   "refs": [
+    "EXE:1ccc2"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00271",
+   "kind": "engine",
+   "jp": "「ビシュウウゥゥーーーーッ……！！」",
+   "en": "",
+   "refs": [
+    "EXE:1cced"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00272",
+   "kind": "engine",
+   "jp": "志津枝：きゃああぁぁーーーーっ……！！",
+   "en": "",
+   "refs": [
+    "EXE:1cd12"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00273",
+   "kind": "engine",
+   "jp": "＊マリリンＤＸのキラービームが古川志津枝の胸を撃ち抜いた！",
+   "en": "",
+   "refs": [
+    "EXE:1cd39"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "e00274",
+   "kind": "engine",
+   "jp": "＊ジューシー奈緒美はかなり弱ってきているようだ。",
+   "en": "",
+   "refs": [
+    "EXE:1cd74"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00275",
+   "kind": "engine",
+   "jp": "%001：よし、いくぞ！　バニィー、フラーッシュ！",
+   "en": "",
+   "refs": [
+    "EXE:1cdbc"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "e00276",
+   "kind": "engine",
+   "jp": "%001：…………あれ？　なにも起こらないぞ、どうなってるんだ！？",
+   "en": "",
+   "refs": [
+    "EXE:1cdeb"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "e00277",
+   "kind": "engine",
+   "jp": "「ピーッ、ピーッ、ピーッ……」",
+   "en": "",
+   "refs": [
+    "EXE:1ce2a",
+    "EXE:1d051"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00278",
+   "kind": "engine",
+   "jp": "%002：どうだ、調子は？",
+   "en": "",
+   "refs": [
+    "EXE:1ce4b"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00279",
+   "kind": "engine",
+   "jp": "%001：あっ、親父、ちょうどよかった！　『バニーフラッシュ』と叫んだのに、なにも起こらなかったぞ！　いったいどうなってるんだよ！？",
+   "en": "",
+   "refs": [
+    "EXE:1ce62"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "e00280",
+   "kind": "engine",
+   "jp": "%002：馬鹿者っ！！　だから言ったであろう。『バニィー、フラーッシュ！　食らってぇ～～ん』と叫ばなければ、音声識別装置は反応せん、と。",
+   "en": "",
+   "refs": [
+    "EXE:1cee3"
+   ],
+   "max_cells": 66
+  },
+  {
+   "id": "e00281",
+   "kind": "engine",
+   "jp": "%001：……その『食らってぇ～～ん』ていうのは、どうしてもつけなけりゃいけないのか？",
+   "en": "",
+   "refs": [
+    "EXE:1cf68"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "e00282",
+   "kind": "engine",
+   "jp": "%001：…………。",
+   "en": "",
+   "refs": [
+    "EXE:1cfca"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00283",
+   "kind": "engine",
+   "jp": "%002：さあ、もう用がないのなら通信を切るぞ。",
+   "en": "",
+   "refs": [
+    "EXE:1cfdb"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00284",
+   "kind": "engine",
+   "jp": "「プチッ」",
+   "en": "",
+   "refs": [
+    "EXE:1d008"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00285",
+   "kind": "engine",
+   "jp": "%001：くっ、強い……強すぎる！　こいつ、本当に人間なのか！？",
+   "en": "",
+   "refs": [
+    "EXE:1d014"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00286",
+   "kind": "engine",
+   "jp": "%002：どうやら苦戦しているようだな、マリリンよ。",
+   "en": "",
+   "refs": [
+    "EXE:1d072"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00287",
+   "kind": "engine",
+   "jp": "%001：親父……もう、だめだ。とてもじゃないが歯が立たない。このままじゃオレ、殺されちまうかも……",
+   "en": "",
+   "refs": [
+    "EXE:1d0a3"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "e00288",
+   "kind": "engine",
+   "jp": "%002：うむ……こうなったら、やむをえまい。マリリンよ、ボタンＣを使うのだ！",
+   "en": "",
+   "refs": [
+    "EXE:1d104"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00289",
+   "kind": "engine",
+   "jp": "%001：えっ？　ボタンＣって……確か自爆装置のスイッチじゃなかったか？",
+   "en": "",
+   "refs": [
+    "EXE:1d14f"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00290",
+   "kind": "engine",
+   "jp": "%002：アホかお前。なんのために自爆装置なんぞつけなきゃならンのだ。",
+   "en": "",
+   "refs": [
+    "EXE:1d194"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "e00291",
+   "kind": "engine",
+   "jp": "%001：あのなぁ……あんたがそう言ったんだろーが！",
+   "en": "",
+   "refs": [
+    "EXE:1d1d7"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00292",
+   "kind": "engine",
+   "jp": "%002：ボタンＣは、最強の武器『キラービーム』の発射ボタンだ。ただ……その武器はな、あまりにも殺傷能力が高すぎるのだ。だからワシは、お前に人殺しをさせないために、それを教えなかったのだ。",
+   "en": "",
+   "refs": [
+    "EXE:1d208"
+   ],
+   "max_cells": 92
+  },
+  {
+   "id": "e00293",
+   "kind": "engine",
+   "jp": "%001：じゃ、じゃあ、それを使ったら古川志津枝は……",
+   "en": "",
+   "refs": [
+    "EXE:1d2c1"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00294",
+   "kind": "engine",
+   "jp": "%002：しかし、お前の命には代えられん。いいか、いかにサイボーグと言えども、脳を破壊されたら再生のしようがないのだぞ！　%000よ、生き延びるためにはボタンＣを使うのだ、いいな！？",
+   "en": "",
+   "refs": [
+    "EXE:1d2f4"
+   ],
+   "max_cells": 87
+  },
+  {
+   "id": "e00295",
+   "kind": "engine",
+   "jp": "「プチッ……」",
+   "en": "",
+   "refs": [
+    "EXE:1d3a3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00296",
+   "kind": "engine",
+   "jp": "%001：そ、そんな……。",
+   "en": "",
+   "refs": [
+    "EXE:1d3b2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00297",
+   "kind": "engine",
+   "jp": "アトミックパンチ！",
+   "en": "",
+   "refs": [
+    "EXE:1de2e"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00298",
+   "kind": "engine",
+   "jp": "フラッシュキック！",
+   "en": "",
+   "refs": [
+    "EXE:1de41"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00299",
+   "kind": "engine",
+   "jp": "必殺！ＤＸタイタン！！",
+   "en": "",
+   "refs": [
+    "EXE:1de54"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00300",
+   "kind": "engine",
+   "jp": "サイキックバルカン！",
+   "en": "",
+   "refs": [
+    "EXE:1de6b"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00301",
+   "kind": "engine",
+   "jp": "アストラルボンバー！",
+   "en": "",
+   "refs": [
+    "EXE:1de80"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00302",
+   "kind": "engine",
+   "jp": "ハイプレッシャーマグナム！！",
+   "en": "",
+   "refs": [
+    "EXE:1de95"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00303",
+   "kind": "engine",
+   "jp": "ずびいぃぃぃぃぃぃぃぃぃ！！",
+   "en": "",
+   "refs": [
+    "EXE:1dec4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00304",
+   "kind": "engine",
+   "jp": "ドガガガガガガガガガ！",
+   "en": "",
+   "refs": [
+    "EXE:1dee1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00305",
+   "kind": "engine",
+   "jp": "世にも奇妙なものを見た！",
+   "en": "",
+   "refs": [
+    "EXE:1def8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00306",
+   "kind": "engine",
+   "jp": "ドッ、ガオォォォォォォッッ！！",
+   "en": "",
+   "refs": [
+    "EXE:1df11"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00307",
+   "kind": "engine",
+   "jp": "ＤＩＲＥＣＴＯＲ",
+   "en": "",
+   "refs": [
+    "EXE:1ece0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00308",
+   "kind": "engine",
+   "jp": "（謎）",
+   "en": "",
+   "refs": [
+    "EXE:1ecf1"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00309",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ",
+   "en": "",
+   "refs": [
+    "EXE:1ecf8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00310",
+   "kind": "engine",
+   "jp": "Ｒ．Ｋ",
+   "en": "",
+   "refs": [
+    "EXE:1ed09"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00311",
+   "kind": "engine",
+   "jp": "ＧＲＡＰＨＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1ed10"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00312",
+   "kind": "engine",
+   "jp": "水野　滝",
+   "en": "",
+   "refs": [
+    "EXE:1ed1f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00313",
+   "kind": "engine",
+   "jp": "ビリヤード松山",
+   "en": "",
+   "refs": [
+    "EXE:1ed37"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00314",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ　ＭＡＩＮ",
+   "en": "",
+   "refs": [
+    "EXE:1ed46"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00315",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ　ＳＵＢ",
+   "en": "",
+   "refs": [
+    "EXE:1ed6c"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00316",
+   "kind": "engine",
+   "jp": "クラッシャー・ジュン",
+   "en": "",
+   "refs": [
+    "EXE:1ed83"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00317",
+   "kind": "engine",
+   "jp": "ふぁいあー",
+   "en": "",
+   "refs": [
+    "EXE:1ed98"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00318",
+   "kind": "engine",
+   "jp": "原　画",
+   "en": "",
+   "refs": [
+    "EXE:1eda3"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00319",
+   "kind": "engine",
+   "jp": "有栖賀　明",
+   "en": "",
+   "refs": [
+    "EXE:1edaa"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00320",
+   "kind": "engine",
+   "jp": "ＭＵＳＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1edb5"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00321",
+   "kind": "engine",
+   "jp": "Ｋｅｎｉｃｈｉ　Ｋａｍｉｏ",
+   "en": "",
+   "refs": [
+    "EXE:1edc0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00322",
+   "kind": "engine",
+   "jp": "協　力",
+   "en": "",
+   "refs": [
+    "EXE:1eddb"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00323",
+   "kind": "engine",
+   "jp": "有限会社　アートミック",
+   "en": "",
+   "refs": [
+    "EXE:1ede2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00324",
+   "kind": "engine",
+   "jp": "ＳＰＥＣＩＡＬ　ＴＨＡＮＫＳ",
+   "en": "",
+   "refs": [
+    "EXE:1edf9"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00325",
+   "kind": "engine",
+   "jp": "八王子　高尾",
+   "en": "",
+   "refs": [
+    "EXE:1ee16"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00326",
+   "kind": "engine",
+   "jp": "ＰＲＥＳＥＮＴＥＤ　ＢＹ",
+   "en": "",
+   "refs": [
+    "EXE:1ee23"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00327",
+   "kind": "engine",
+   "jp": "株式会社　ＪＡＳＴ",
+   "en": "",
+   "refs": [
+    "EXE:1ee3c"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00328",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　第１回",
+   "en": "",
+   "refs": [
+    "EXE:1eec8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00329",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　第２回",
+   "en": "",
+   "refs": [
+    "EXE:1eee3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00330",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　第３回",
+   "en": "",
+   "refs": [
+    "EXE:1eefe"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00331",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　第４回",
+   "en": "",
+   "refs": [
+    "EXE:1ef19"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00332",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　第５回",
+   "en": "",
+   "refs": [
+    "EXE:1ef34"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00333",
+   "kind": "engine",
+   "jp": "えっ、　　　　　　　最終回",
+   "en": "",
+   "refs": [
+    "EXE:1ef4f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00334",
+   "kind": "engine",
+   "jp": "マリリンのシュート　第１回",
+   "en": "",
+   "refs": [
+    "EXE:1ef6a"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00335",
+   "kind": "engine",
+   "jp": "マリリンのシュート　最終回",
+   "en": "",
+   "refs": [
+    "EXE:1ef85"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00336",
+   "kind": "engine",
+   "jp": "おまけ４コママンガルーレット",
+   "en": "",
+   "refs": [
+    "EXE:1f047"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00337",
+   "kind": "engine",
+   "jp": "スタート！",
+   "en": "",
+   "refs": [
+    "EXE:1f064"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00338",
+   "kind": "engine",
+   "jp": "左クリックでＳＴＯＰ",
+   "en": "",
+   "refs": [
+    "EXE:1f06f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00339",
+   "kind": "engine",
+   "jp": "右クリックでＥＮＤ！",
+   "en": "",
+   "refs": [
+    "EXE:1f084"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00340",
+   "kind": "engine",
+   "jp": "マンガは全部で８個だよ！",
+   "en": "",
+   "refs": [
+    "EXE:1f099"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00341",
+   "kind": "engine",
+   "jp": "設置最大数を越えました！",
+   "en": "",
+   "refs": [
+    "EXE:1f172"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00342",
+   "kind": "engine",
+   "jp": "烽fＤＣクロックが５ＭＨｚになっています。２．５ＭＨｚに変更してください。",
+   "en": "",
+   "refs": [
+    "EXE:1f36f"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00343",
+   "kind": "engine",
+   "jp": "変更方法：",
+   "en": "",
+   "refs": [
+    "EXE:1f3b9"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00344",
+   "kind": "engine",
+   "jp": "　ディップスイッチ２の８番をＯＦＦにしてリセットボタンを押してください。",
+   "en": "",
+   "refs": [
+    "EXE:1f3c4"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00345",
+   "kind": "engine",
+   "jp": "　詳しくはマニュアル等を参照してください。",
+   "en": "",
+   "refs": [
+    "EXE:1f40d"
+   ],
+   "max_cells": 21
   }
  ]
 }

@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's later scene engine: 47 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
+JAST's later scene engine: 50 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
 The floppies have no room for a longer script, so the patch lays the game out on a DOS hard-disk image (every disk's files in `TENSHI/`, started as the floppy's batch file does; the engine's select-disk call always picks the hard disk); the base image is the collection's `Kankin/Kankin [HD]/Kankin.hdi` with its own game removed.
 
 ## English display (`pc98tl/jast_scm.py`, `pc98tl/jast_console.py`)
@@ -21,7 +21,7 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-1262 strings (scene text).
+1498 strings (1262 scene text, 33 engine strings, 186 menu words, 17 batch lines).
 
 ♥ by the script-text scan (22 of 1309 strings match the sexual-vocabulary list (7 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -29,12 +29,15 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
+* Noun table words (`w` ids, NTBL.BIN: the objects of the command menus): 16 letters.
+* Batch files' Japanese echo lines (`b` ids) are rewritten as they are.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
@@ -44,4 +47,5 @@ The floppies have no room for a longer script, so the patch lays the game out on
 | Opening pictures | OK |
 | Message window | OK: half-width filler inside the frame, wrapped between words |
 | Paging on a full box | OK |
+| Command menu (engine strings) | OK: filler in place |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

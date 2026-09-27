@@ -5,6 +5,6 @@
  "game_dir": "HNT",
  "engine": "HNT_RLT.EXE",
  "encoding": "jast",
- "boot_steps": "30:shot,3:lclick,5:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:lclick,5:shot,3:lclick,5:shot",
+ "boot_steps": "30:shot,3:lclick,5:lclick,4:mouse=0;14,1:lclick,5:shot,1:mouse=0;-32,1:shot,1:lclick,5:shot,3:lclick,4:shot,3:lclick,4:shot",
  "dipsw": "3e f3 7b"
 }

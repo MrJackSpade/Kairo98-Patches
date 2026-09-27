@@ -20310,6 +20310,2797 @@
    "speaker_pages": [
     0
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ＬＯＯＫ",
+   "en": "",
+   "refs": [
+    "EXE:bb54"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "ＳＰＥＡＫ",
+   "en": "",
+   "refs": [
+    "EXE:bb5d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "ＡＣＴＩＯＮ",
+   "en": "",
+   "refs": [
+    "EXE:bb68"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "ＳＹＳＴＥＭ",
+   "en": "",
+   "refs": [
+    "EXE:bb75"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ロード又はセーブ",
+   "en": "",
+   "refs": [
+    "EXE:bb82"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "を選択しなさい",
+   "en": "",
+   "refs": [
+    "EXE:bb93"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "EXE:bba2"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:bba9"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "セーブＮＯ１",
+   "en": "",
+   "refs": [
+    "EXE:bbb0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "セーブＮＯ２",
+   "en": "",
+   "refs": [
+    "EXE:bbbd"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "セーブＮＯ３",
+   "en": "",
+   "refs": [
+    "EXE:bbca"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "セーブＮＯ４",
+   "en": "",
+   "refs": [
+    "EXE:bbd7"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "ロードＮＯ１",
+   "en": "",
+   "refs": [
+    "EXE:bbe4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "ロードＮＯ２",
+   "en": "",
+   "refs": [
+    "EXE:bbf1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "ロードＮＯ３",
+   "en": "",
+   "refs": [
+    "EXE:bbfe"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "ロードＮＯ４",
+   "en": "",
+   "refs": [
+    "EXE:bc0b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "キー入力",
+   "en": "",
+   "refs": [
+    "EXE:bc2a"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "マウス入力",
+   "en": "",
+   "refs": [
+    "EXE:bc33"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "ディスク２に交換してください。",
+   "en": "",
+   "refs": [
+    "EXE:c158"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "ＨＩＴ　ＡＮＹ　ＫＥＹ",
+   "en": "",
+   "refs": [
+    "EXE:c177",
+    "EXE:c1eb",
+    "EXE:c25f",
+    "EXE:c2d3",
+    "EXE:c42e",
+    "EXE:c4e7",
+    "EXE:c53b",
+    "EXE:c5df",
+    "EXE:c633",
+    "EXE:c677",
+    "EXE:c6cb"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "ディスク３に交換してください。",
+   "en": "",
+   "refs": [
+    "EXE:c1cc"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "ディスク４に交換してください。",
+   "en": "",
+   "refs": [
+    "EXE:c240"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "ディスク５に交換してください。",
+   "en": "",
+   "refs": [
+    "EXE:c2b4"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "ディスクがちがいます。",
+   "en": "",
+   "refs": [
+    "EXE:c3fc",
+    "EXE:c509",
+    "EXE:c601",
+    "EXE:c699"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "ディスク２を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c413"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "選択しても無駄ですよ",
+   "en": "",
+   "refs": [
+    "EXE:c4a5"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "ディスク２を抜いてディスク３を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c4ba"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "ディスク３を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c520"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "ディスク３を抜いてディスク４を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c5b2"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "ディスク４を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c618"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "ディスク４を抜いてディスク５を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c64a"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "ディスク５を入れてください",
+   "en": "",
+   "refs": [
+    "EXE:c6b0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "w00001",
+   "kind": "word",
+   "jp": "スタジオ",
+   "en": "",
+   "refs": [
+    "NTBL:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00002",
+   "kind": "word",
+   "jp": "ライト",
+   "en": "",
+   "refs": [
+    "NTBL:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00003",
+   "kind": "word",
+   "jp": "警察官",
+   "en": "",
+   "refs": [
+    "NTBL:3",
+    "NTBL:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00004",
+   "kind": "word",
+   "jp": "婦警",
+   "en": "",
+   "refs": [
+    "NTBL:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00005",
+   "kind": "word",
+   "jp": "信一",
+   "en": "",
+   "refs": [
+    "NTBL:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00006",
+   "kind": "word",
+   "jp": "血痕を嘗める",
+   "en": "",
+   "refs": [
+    "NTBL:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00007",
+   "kind": "word",
+   "jp": "鑑識官",
+   "en": "",
+   "refs": [
+    "NTBL:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00008",
+   "kind": "word",
+   "jp": "田中刑事",
+   "en": "",
+   "refs": [
+    "NTBL:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00009",
+   "kind": "word",
+   "jp": "スピーカー",
+   "en": "",
+   "refs": [
+    "NTBL:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00010",
+   "kind": "word",
+   "jp": "スクリーン",
+   "en": "",
+   "refs": [
+    "NTBL:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00011",
+   "kind": "word",
+   "jp": "スタッフ",
+   "en": "",
+   "refs": [
+    "NTBL:12"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00012",
+   "kind": "word",
+   "jp": "マネージャー",
+   "en": "",
+   "refs": [
+    "NTBL:13"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00013",
+   "kind": "word",
+   "jp": "ロッカー",
+   "en": "",
+   "refs": [
+    "NTBL:14"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00014",
+   "kind": "word",
+   "jp": "メンバー",
+   "en": "",
+   "refs": [
+    "NTBL:15"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00015",
+   "kind": "word",
+   "jp": "カーテン",
+   "en": "",
+   "refs": [
+    "NTBL:16"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00016",
+   "kind": "word",
+   "jp": "鏡",
+   "en": "",
+   "refs": [
+    "NTBL:17"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00017",
+   "kind": "word",
+   "jp": "美衣",
+   "en": "",
+   "refs": [
+    "NTBL:18"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00018",
+   "kind": "word",
+   "jp": "香織",
+   "en": "",
+   "refs": [
+    "NTBL:19"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00019",
+   "kind": "word",
+   "jp": "香織を誉める",
+   "en": "",
+   "refs": [
+    "NTBL:20"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00020",
+   "kind": "word",
+   "jp": "香織をなじる",
+   "en": "",
+   "refs": [
+    "NTBL:21"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00021",
+   "kind": "word",
+   "jp": "マネージャー犯す",
+   "en": "",
+   "refs": [
+    "NTBL:22"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00022",
+   "kind": "word",
+   "jp": "美衣と喧嘩する",
+   "en": "",
+   "refs": [
+    "NTBL:23"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00023",
+   "kind": "word",
+   "jp": "香織を犯す",
+   "en": "",
+   "refs": [
+    "NTBL:24"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00024",
+   "kind": "word",
+   "jp": "メンバーを犯す",
+   "en": "",
+   "refs": [
+    "NTBL:25"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00025",
+   "kind": "word",
+   "jp": "インカム",
+   "en": "",
+   "refs": [
+    "NTBL:26"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00026",
+   "kind": "word",
+   "jp": "窓",
+   "en": "",
+   "refs": [
+    "NTBL:27"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00027",
+   "kind": "word",
+   "jp": "椅子",
+   "en": "",
+   "refs": [
+    "NTBL:28"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00028",
+   "kind": "word",
+   "jp": "壁",
+   "en": "",
+   "refs": [
+    "NTBL:29"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00029",
+   "kind": "word",
+   "jp": "柵",
+   "en": "",
+   "refs": [
+    "NTBL:30"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00030",
+   "kind": "word",
+   "jp": "机",
+   "en": "",
+   "refs": [
+    "NTBL:31"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00031",
+   "kind": "word",
+   "jp": "眠いから寝る",
+   "en": "",
+   "refs": [
+    "NTBL:32"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00032",
+   "kind": "word",
+   "jp": "煙草を吸う",
+   "en": "",
+   "refs": [
+    "NTBL:33"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00033",
+   "kind": "word",
+   "jp": "ブラインド",
+   "en": "",
+   "refs": [
+    "NTBL:34"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00034",
+   "kind": "word",
+   "jp": "引きだし",
+   "en": "",
+   "refs": [
+    "NTBL:35"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00035",
+   "kind": "word",
+   "jp": "出る",
+   "en": "",
+   "refs": [
+    "NTBL:36"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00036",
+   "kind": "word",
+   "jp": "麻理",
+   "en": "",
+   "refs": [
+    "NTBL:37"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00037",
+   "kind": "word",
+   "jp": "ポスター",
+   "en": "",
+   "refs": [
+    "NTBL:38"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00038",
+   "kind": "word",
+   "jp": "貼紙",
+   "en": "",
+   "refs": [
+    "NTBL:39"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00039",
+   "kind": "word",
+   "jp": "パソコン",
+   "en": "",
+   "refs": [
+    "NTBL:40"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00040",
+   "kind": "word",
+   "jp": "ワープロ",
+   "en": "",
+   "refs": [
+    "NTBL:41"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00041",
+   "kind": "word",
+   "jp": "キスをする",
+   "en": "",
+   "refs": [
+    "NTBL:42"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00042",
+   "kind": "word",
+   "jp": "犯す",
+   "en": "",
+   "refs": [
+    "NTBL:43"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00043",
+   "kind": "word",
+   "jp": "脱がす",
+   "en": "",
+   "refs": [
+    "NTBL:44"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00044",
+   "kind": "word",
+   "jp": "パンティ",
+   "en": "",
+   "refs": [
+    "NTBL:45"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00045",
+   "kind": "word",
+   "jp": "お尻",
+   "en": "",
+   "refs": [
+    "NTBL:46"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00046",
+   "kind": "word",
+   "jp": "腰を突き上げる",
+   "en": "",
+   "refs": [
+    "NTBL:47"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00047",
+   "kind": "word",
+   "jp": "アヌスを愛撫する",
+   "en": "",
+   "refs": [
+    "NTBL:48"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00048",
+   "kind": "word",
+   "jp": "お尻を愛撫する",
+   "en": "",
+   "refs": [
+    "NTBL:49"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00049",
+   "kind": "word",
+   "jp": "止める",
+   "en": "",
+   "refs": [
+    "NTBL:50"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00050",
+   "kind": "word",
+   "jp": "あそこ",
+   "en": "",
+   "refs": [
+    "NTBL:51"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00051",
+   "kind": "word",
+   "jp": "アヌス",
+   "en": "",
+   "refs": [
+    "NTBL:52"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00052",
+   "kind": "word",
+   "jp": "ベッド",
+   "en": "",
+   "refs": [
+    "NTBL:53"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00053",
+   "kind": "word",
+   "jp": "ブラジャー",
+   "en": "",
+   "refs": [
+    "NTBL:54"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00054",
+   "kind": "word",
+   "jp": "胸を愛撫する",
+   "en": "",
+   "refs": [
+    "NTBL:55"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00055",
+   "kind": "word",
+   "jp": "胸",
+   "en": "",
+   "refs": [
+    "NTBL:56"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00056",
+   "kind": "word",
+   "jp": "下着を取る",
+   "en": "",
+   "refs": [
+    "NTBL:57"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00057",
+   "kind": "word",
+   "jp": "脇を撫で上げる",
+   "en": "",
+   "refs": [
+    "NTBL:58"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00058",
+   "kind": "word",
+   "jp": "あそこを愛撫する",
+   "en": "",
+   "refs": [
+    "NTBL:59"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00059",
+   "kind": "word",
+   "jp": "フェラチオさせる",
+   "en": "",
+   "refs": [
+    "NTBL:60"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00060",
+   "kind": "word",
+   "jp": "腰を使う",
+   "en": "",
+   "refs": [
+    "NTBL:61"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00061",
+   "kind": "word",
+   "jp": "太股を愛撫する",
+   "en": "",
+   "refs": [
+    "NTBL:62"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00062",
+   "kind": "word",
+   "jp": "ナニを入れる",
+   "en": "",
+   "refs": [
+    "NTBL:63"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00063",
+   "kind": "word",
+   "jp": "腰",
+   "en": "",
+   "refs": [
+    "NTBL:64"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00064",
+   "kind": "word",
+   "jp": "脚",
+   "en": "",
+   "refs": [
+    "NTBL:65"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00065",
+   "kind": "word",
+   "jp": "太股",
+   "en": "",
+   "refs": [
+    "NTBL:66"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00066",
+   "kind": "word",
+   "jp": "電話",
+   "en": "",
+   "refs": [
+    "NTBL:67"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00067",
+   "kind": "word",
+   "jp": "時計",
+   "en": "",
+   "refs": [
+    "NTBL:68",
+    "NTBL:74"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00068",
+   "kind": "word",
+   "jp": "枕",
+   "en": "",
+   "refs": [
+    "NTBL:69"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00069",
+   "kind": "word",
+   "jp": "図書館",
+   "en": "",
+   "refs": [
+    "NTBL:70"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00070",
+   "kind": "word",
+   "jp": "植え込み",
+   "en": "",
+   "refs": [
+    "NTBL:71"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00071",
+   "kind": "word",
+   "jp": "夕暮れ",
+   "en": "",
+   "refs": [
+    "NTBL:72"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00072",
+   "kind": "word",
+   "jp": "男",
+   "en": "",
+   "refs": [
+    "NTBL:73"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00073",
+   "kind": "word",
+   "jp": "殴る",
+   "en": "",
+   "refs": [
+    "NTBL:75"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00074",
+   "kind": "word",
+   "jp": "受付",
+   "en": "",
+   "refs": [
+    "NTBL:76"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00075",
+   "kind": "word",
+   "jp": "由季",
+   "en": "",
+   "refs": [
+    "NTBL:77"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00076",
+   "kind": "word",
+   "jp": "書架",
+   "en": "",
+   "refs": [
+    "NTBL:78"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00077",
+   "kind": "word",
+   "jp": "髪を撫で上げる",
+   "en": "",
+   "refs": [
+    "NTBL:79"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00078",
+   "kind": "word",
+   "jp": "本",
+   "en": "",
+   "refs": [
+    "NTBL:80"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00079",
+   "kind": "word",
+   "jp": "ソファー",
+   "en": "",
+   "refs": [
+    "NTBL:81"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00080",
+   "kind": "word",
+   "jp": "資料",
+   "en": "",
+   "refs": [
+    "NTBL:82"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00081",
+   "kind": "word",
+   "jp": "書架を壊す",
+   "en": "",
+   "refs": [
+    "NTBL:83"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00082",
+   "kind": "word",
+   "jp": "タンクトップ",
+   "en": "",
+   "refs": [
+    "NTBL:84"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00083",
+   "kind": "word",
+   "jp": "ホットパンツ",
+   "en": "",
+   "refs": [
+    "NTBL:85"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00084",
+   "kind": "word",
+   "jp": "双葉",
+   "en": "",
+   "refs": [
+    "NTBL:86"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00085",
+   "kind": "word",
+   "jp": "生徒",
+   "en": "",
+   "refs": [
+    "NTBL:87"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00086",
+   "kind": "word",
+   "jp": "廊下",
+   "en": "",
+   "refs": [
+    "NTBL:88"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00087",
+   "kind": "word",
+   "jp": "教室",
+   "en": "",
+   "refs": [
+    "NTBL:89"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00088",
+   "kind": "word",
+   "jp": "鍵を渡す",
+   "en": "",
+   "refs": [
+    "NTBL:90"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00089",
+   "kind": "word",
+   "jp": "双葉を犯す",
+   "en": "",
+   "refs": [
+    "NTBL:91"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00090",
+   "kind": "word",
+   "jp": "生徒をナンパする",
+   "en": "",
+   "refs": [
+    "NTBL:92"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00091",
+   "kind": "word",
+   "jp": "生徒を犯す",
+   "en": "",
+   "refs": [
+    "NTBL:93"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00092",
+   "kind": "word",
+   "jp": "行く",
+   "en": "",
+   "refs": [
+    "NTBL:94"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00093",
+   "kind": "word",
+   "jp": "廊下を走る",
+   "en": "",
+   "refs": [
+    "NTBL:95"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00094",
+   "kind": "word",
+   "jp": "封筒の中身",
+   "en": "",
+   "refs": [
+    "NTBL:96"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00095",
+   "kind": "word",
+   "jp": "独り言をつぶやく",
+   "en": "",
+   "refs": [
+    "NTBL:97"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00096",
+   "kind": "word",
+   "jp": "ロッカーを開ける",
+   "en": "",
+   "refs": [
+    "NTBL:98"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00097",
+   "kind": "word",
+   "jp": "席に着く",
+   "en": "",
+   "refs": [
+    "NTBL:99"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00098",
+   "kind": "word",
+   "jp": "落書をする",
+   "en": "",
+   "refs": [
+    "NTBL:100"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00099",
+   "kind": "word",
+   "jp": "美紀",
+   "en": "",
+   "refs": [
+    "NTBL:101"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00100",
+   "kind": "word",
+   "jp": "ロープ",
+   "en": "",
+   "refs": [
+    "NTBL:102"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00101",
+   "kind": "word",
+   "jp": "胸元",
+   "en": "",
+   "refs": [
+    "NTBL:103"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00102",
+   "kind": "word",
+   "jp": "頬を叩く",
+   "en": "",
+   "refs": [
+    "NTBL:104"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00103",
+   "kind": "word",
+   "jp": "ジャケットを貸す",
+   "en": "",
+   "refs": [
+    "NTBL:105"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00104",
+   "kind": "word",
+   "jp": "教卓",
+   "en": "",
+   "refs": [
+    "NTBL:106"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00105",
+   "kind": "word",
+   "jp": "純子",
+   "en": "",
+   "refs": [
+    "NTBL:107"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00106",
+   "kind": "word",
+   "jp": "有希子",
+   "en": "",
+   "refs": [
+    "NTBL:108"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00107",
+   "kind": "word",
+   "jp": "グラス",
+   "en": "",
+   "refs": [
+    "NTBL:109"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00108",
+   "kind": "word",
+   "jp": "照明",
+   "en": "",
+   "refs": [
+    "NTBL:110"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00109",
+   "kind": "word",
+   "jp": "触る",
+   "en": "",
+   "refs": [
+    "NTBL:111"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00110",
+   "kind": "word",
+   "jp": "飲む",
+   "en": "",
+   "refs": [
+    "NTBL:112"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00111",
+   "kind": "word",
+   "jp": "有希子を追い払う",
+   "en": "",
+   "refs": [
+    "NTBL:113"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00112",
+   "kind": "word",
+   "jp": "店内",
+   "en": "",
+   "refs": [
+    "NTBL:114"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00113",
+   "kind": "word",
+   "jp": "着物",
+   "en": "",
+   "refs": [
+    "NTBL:115"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00114",
+   "kind": "word",
+   "jp": "有希子を想う",
+   "en": "",
+   "refs": [
+    "NTBL:116"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00115",
+   "kind": "word",
+   "jp": "天井",
+   "en": "",
+   "refs": [
+    "NTBL:117"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00116",
+   "kind": "word",
+   "jp": "口に指を入れる",
+   "en": "",
+   "refs": [
+    "NTBL:118"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00117",
+   "kind": "word",
+   "jp": "外",
+   "en": "",
+   "refs": [
+    "NTBL:119"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00118",
+   "kind": "word",
+   "jp": "テーブル",
+   "en": "",
+   "refs": [
+    "NTBL:120"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00119",
+   "kind": "word",
+   "jp": "メニュー",
+   "en": "",
+   "refs": [
+    "NTBL:121"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00120",
+   "kind": "word",
+   "jp": "ポスターを剥がす",
+   "en": "",
+   "refs": [
+    "NTBL:122"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00121",
+   "kind": "word",
+   "jp": "双葉に謝る",
+   "en": "",
+   "refs": [
+    "NTBL:123"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00122",
+   "kind": "word",
+   "jp": "封筒を渡す",
+   "en": "",
+   "refs": [
+    "NTBL:124"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00123",
+   "kind": "word",
+   "jp": "ガラス",
+   "en": "",
+   "refs": [
+    "NTBL:125"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00124",
+   "kind": "word",
+   "jp": "弾痕",
+   "en": "",
+   "refs": [
+    "NTBL:126"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00125",
+   "kind": "word",
+   "jp": "双葉をかばう",
+   "en": "",
+   "refs": [
+    "NTBL:127"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00126",
+   "kind": "word",
+   "jp": "観葉植物",
+   "en": "",
+   "refs": [
+    "NTBL:128"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00127",
+   "kind": "word",
+   "jp": "鉢植",
+   "en": "",
+   "refs": [
+    "NTBL:129"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00128",
+   "kind": "word",
+   "jp": "取り乱す",
+   "en": "",
+   "refs": [
+    "NTBL:130"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00129",
+   "kind": "word",
+   "jp": "クッション",
+   "en": "",
+   "refs": [
+    "NTBL:131"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00130",
+   "kind": "word",
+   "jp": "スタンド",
+   "en": "",
+   "refs": [
+    "NTBL:132"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00131",
+   "kind": "word",
+   "jp": "双葉を慰める",
+   "en": "",
+   "refs": [
+    "NTBL:133"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00132",
+   "kind": "word",
+   "jp": "髪",
+   "en": "",
+   "refs": [
+    "NTBL:134"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00133",
+   "kind": "word",
+   "jp": "カーペット",
+   "en": "",
+   "refs": [
+    "NTBL:135"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00134",
+   "kind": "word",
+   "jp": "手",
+   "en": "",
+   "refs": [
+    "NTBL:136"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00135",
+   "kind": "word",
+   "jp": "腰を撫で上げる",
+   "en": "",
+   "refs": [
+    "NTBL:137"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00136",
+   "kind": "word",
+   "jp": "腕",
+   "en": "",
+   "refs": [
+    "NTBL:138"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00137",
+   "kind": "word",
+   "jp": "男たち",
+   "en": "",
+   "refs": [
+    "NTBL:139"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00138",
+   "kind": "word",
+   "jp": "眼鏡の男",
+   "en": "",
+   "refs": [
+    "NTBL:140"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00139",
+   "kind": "word",
+   "jp": "グラサン男",
+   "en": "",
+   "refs": [
+    "NTBL:141"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00140",
+   "kind": "word",
+   "jp": "奥の女の子",
+   "en": "",
+   "refs": [
+    "NTBL:142"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00141",
+   "kind": "word",
+   "jp": "部屋",
+   "en": "",
+   "refs": [
+    "NTBL:143"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00142",
+   "kind": "word",
+   "jp": "銃を取り上げる",
+   "en": "",
+   "refs": [
+    "NTBL:144"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00143",
+   "kind": "word",
+   "jp": "おとなしく従う",
+   "en": "",
+   "refs": [
+    "NTBL:145"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00144",
+   "kind": "word",
+   "jp": "荷物",
+   "en": "",
+   "refs": [
+    "NTBL:146"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00145",
+   "kind": "word",
+   "jp": "裸電球",
+   "en": "",
+   "refs": [
+    "NTBL:147"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00146",
+   "kind": "word",
+   "jp": "腕を振りほどく",
+   "en": "",
+   "refs": [
+    "NTBL:148"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00147",
+   "kind": "word",
+   "jp": "脇腹",
+   "en": "",
+   "refs": [
+    "NTBL:149"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00148",
+   "kind": "word",
+   "jp": "荷物を投げる",
+   "en": "",
+   "refs": [
+    "NTBL:150"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00149",
+   "kind": "word",
+   "jp": "下着",
+   "en": "",
+   "refs": [
+    "NTBL:151"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00150",
+   "kind": "word",
+   "jp": "双葉の服を裂く",
+   "en": "",
+   "refs": [
+    "NTBL:152"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00151",
+   "kind": "word",
+   "jp": "床",
+   "en": "",
+   "refs": [
+    "NTBL:153"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00152",
+   "kind": "word",
+   "jp": "立ち上がる",
+   "en": "",
+   "refs": [
+    "NTBL:154"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00153",
+   "kind": "word",
+   "jp": "真琴",
+   "en": "",
+   "refs": [
+    "NTBL:155"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00154",
+   "kind": "word",
+   "jp": "カルテ",
+   "en": "",
+   "refs": [
+    "NTBL:156"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00155",
+   "kind": "word",
+   "jp": "刑事",
+   "en": "",
+   "refs": [
+    "NTBL:157"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00156",
+   "kind": "word",
+   "jp": "俺",
+   "en": "",
+   "refs": [
+    "NTBL:158"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00157",
+   "kind": "word",
+   "jp": "エプロン",
+   "en": "",
+   "refs": [
+    "NTBL:159"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00158",
+   "kind": "word",
+   "jp": "スカート",
+   "en": "",
+   "refs": [
+    "NTBL:160"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00159",
+   "kind": "word",
+   "jp": "道路",
+   "en": "",
+   "refs": [
+    "NTBL:161"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00160",
+   "kind": "word",
+   "jp": "マンホール",
+   "en": "",
+   "refs": [
+    "NTBL:162"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00161",
+   "kind": "word",
+   "jp": "ゴミ",
+   "en": "",
+   "refs": [
+    "NTBL:163"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00162",
+   "kind": "word",
+   "jp": "男を追う",
+   "en": "",
+   "refs": [
+    "NTBL:164"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00163",
+   "kind": "word",
+   "jp": "ゴミを漁る",
+   "en": "",
+   "refs": [
+    "NTBL:165"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00164",
+   "kind": "word",
+   "jp": "美衣を泣かす",
+   "en": "",
+   "refs": [
+    "NTBL:166"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00165",
+   "kind": "word",
+   "jp": "非常灯",
+   "en": "",
+   "refs": [
+    "NTBL:167"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00166",
+   "kind": "word",
+   "jp": "ロビー",
+   "en": "",
+   "refs": [
+    "NTBL:168"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00167",
+   "kind": "word",
+   "jp": "灰皿",
+   "en": "",
+   "refs": [
+    "NTBL:169"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00168",
+   "kind": "word",
+   "jp": "ゴミ箱",
+   "en": "",
+   "refs": [
+    "NTBL:170"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00169",
+   "kind": "word",
+   "jp": "女子高生",
+   "en": "",
+   "refs": [
+    "NTBL:171"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00170",
+   "kind": "word",
+   "jp": "煙草",
+   "en": "",
+   "refs": [
+    "NTBL:172"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00171",
+   "kind": "word",
+   "jp": "ウェイトレス",
+   "en": "",
+   "refs": [
+    "NTBL:173"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00172",
+   "kind": "word",
+   "jp": "煙草を貰う",
+   "en": "",
+   "refs": [
+    "NTBL:174"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00173",
+   "kind": "word",
+   "jp": "スカートをめくる",
+   "en": "",
+   "refs": [
+    "NTBL:175"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00174",
+   "kind": "word",
+   "jp": "カウンター",
+   "en": "",
+   "refs": [
+    "NTBL:176"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00175",
+   "kind": "word",
+   "jp": "抱きしめる",
+   "en": "",
+   "refs": [
+    "NTBL:177"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00176",
+   "kind": "word",
+   "jp": "木",
+   "en": "",
+   "refs": [
+    "NTBL:178"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00177",
+   "kind": "word",
+   "jp": "しげみ",
+   "en": "",
+   "refs": [
+    "NTBL:179"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00178",
+   "kind": "word",
+   "jp": "服",
+   "en": "",
+   "refs": [
+    "NTBL:180"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00179",
+   "kind": "word",
+   "jp": "芝生",
+   "en": "",
+   "refs": [
+    "NTBL:181"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00180",
+   "kind": "word",
+   "jp": "下着を食い込ます",
+   "en": "",
+   "refs": [
+    "NTBL:182"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00181",
+   "kind": "word",
+   "jp": "室内",
+   "en": "",
+   "refs": [
+    "NTBL:183"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00182",
+   "kind": "word",
+   "jp": "バッグ",
+   "en": "",
+   "refs": [
+    "NTBL:184"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00183",
+   "kind": "word",
+   "jp": "お金を渡す",
+   "en": "",
+   "refs": [
+    "NTBL:185"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00184",
+   "kind": "word",
+   "jp": "電話を掛ける",
+   "en": "",
+   "refs": [
+    "NTBL:186"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00185",
+   "kind": "word",
+   "jp": "スカーフ",
+   "en": "",
+   "refs": [
+    "NTBL:187"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00186",
+   "kind": "word",
+   "jp": "セーラー服",
+   "en": "",
+   "refs": [
+    "NTBL:188"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00187",
+   "kind": "word",
+   "jp": "パイプ",
+   "en": "",
+   "refs": [
+    "NTBL:189"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00188",
+   "kind": "word",
+   "jp": "スカーフをほどく",
+   "en": "",
+   "refs": [
+    "NTBL:190"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00189",
+   "kind": "word",
+   "jp": "スカートをはく",
+   "en": "",
+   "refs": [
+    "NTBL:191"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00190",
+   "kind": "word",
+   "jp": "門",
+   "en": "",
+   "refs": [
+    "NTBL:192"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00191",
+   "kind": "word",
+   "jp": "表札",
+   "en": "",
+   "refs": [
+    "NTBL:193"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00192",
+   "kind": "word",
+   "jp": "インターホン",
+   "en": "",
+   "refs": [
+    "NTBL:194"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00193",
+   "kind": "word",
+   "jp": "屋敷",
+   "en": "",
+   "refs": [
+    "NTBL:195"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00194",
+   "kind": "word",
+   "jp": "様子を伺う",
+   "en": "",
+   "refs": [
+    "NTBL:196"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00195",
+   "kind": "word",
+   "jp": "白魚の様な脚",
+   "en": "",
+   "refs": [
+    "NTBL:197"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00196",
+   "kind": "word",
+   "jp": "庭",
+   "en": "",
+   "refs": [
+    "NTBL:198"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00197",
+   "kind": "word",
+   "jp": "椅子を回す",
+   "en": "",
+   "refs": [
+    "NTBL:199"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00198",
+   "kind": "word",
+   "jp": "椅子に座る",
+   "en": "",
+   "refs": [
+    "NTBL:200"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00199",
+   "kind": "word",
+   "jp": "ドアを開ける",
+   "en": "",
+   "refs": [
+    "NTBL:201"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00200",
+   "kind": "word",
+   "jp": "女",
+   "en": "",
+   "refs": [
+    "NTBL:202"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00201",
+   "kind": "word",
+   "jp": "壁を叩く",
+   "en": "",
+   "refs": [
+    "NTBL:203"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00202",
+   "kind": "word",
+   "jp": "十郎",
+   "en": "",
+   "refs": [
+    "NTBL:204"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00203",
+   "kind": "word",
+   "jp": "写真",
+   "en": "",
+   "refs": [
+    "NTBL:205"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00204",
+   "kind": "word",
+   "jp": "女の子",
+   "en": "",
+   "refs": [
+    "NTBL:206"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00205",
+   "kind": "word",
+   "jp": "写真を奪う",
+   "en": "",
+   "refs": [
+    "NTBL:207"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00206",
+   "kind": "word",
+   "jp": "謝る",
+   "en": "",
+   "refs": [
+    "NTBL:208"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00207",
+   "kind": "word",
+   "jp": "祈る",
+   "en": "",
+   "refs": [
+    "NTBL:209"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00208",
+   "kind": "word",
+   "jp": "ドア",
+   "en": "",
+   "refs": [
+    "NTBL:210"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00209",
+   "kind": "word",
+   "jp": "スイッチ",
+   "en": "",
+   "refs": [
+    "NTBL:211"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00210",
+   "kind": "word",
+   "jp": "十郎を殴る",
+   "en": "",
+   "refs": [
+    "NTBL:212"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00211",
+   "kind": "word",
+   "jp": "舞台",
+   "en": "",
+   "refs": [
+    "NTBL:213"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00212",
+   "kind": "word",
+   "jp": "双葉にキスをする",
+   "en": "",
+   "refs": [
+    "NTBL:214"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00213",
+   "kind": "word",
+   "jp": "キーボード",
+   "en": "",
+   "refs": [
+    "NTBL:215"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00214",
+   "kind": "word",
+   "jp": "紙コップ",
+   "en": "",
+   "refs": [
+    "NTBL:216"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00215",
+   "kind": "word",
+   "jp": "美衣にキスをする",
+   "en": "",
+   "refs": [
+    "NTBL:217"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00216",
+   "kind": "word",
+   "jp": "舞台で踊る",
+   "en": "",
+   "refs": [
+    "NTBL:218"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00217",
+   "kind": "word",
+   "jp": "美衣の控室に行く",
+   "en": "",
+   "refs": [
+    "NTBL:219"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00218",
+   "kind": "word",
+   "jp": "香織の控室に行く",
+   "en": "",
+   "refs": [
+    "NTBL:220"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00219",
+   "kind": "word",
+   "jp": "舞台の袖に行く",
+   "en": "",
+   "refs": [
+    "NTBL:221"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00220",
+   "kind": "word",
+   "jp": "楽屋裏に行く",
+   "en": "",
+   "refs": [
+    "NTBL:222"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00221",
+   "kind": "word",
+   "jp": "左へ行く",
+   "en": "",
+   "refs": [
+    "NTBL:223"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00222",
+   "kind": "word",
+   "jp": "右へ行く",
+   "en": "",
+   "refs": [
+    "NTBL:224"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00223",
+   "kind": "word",
+   "jp": "スタジオへ行く",
+   "en": "",
+   "refs": [
+    "NTBL:225"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00224",
+   "kind": "word",
+   "jp": "考える",
+   "en": "",
+   "refs": [
+    "NTBL:226"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00225",
+   "kind": "word",
+   "jp": "企画室に行く",
+   "en": "",
+   "refs": [
+    "NTBL:227"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00226",
+   "kind": "word",
+   "jp": "愛をささやく",
+   "en": "",
+   "refs": [
+    "NTBL:228"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00227",
+   "kind": "word",
+   "jp": "ロッカーの中",
+   "en": "",
+   "refs": [
+    "NTBL:229"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00228",
+   "kind": "word",
+   "jp": "有希子を口説く",
+   "en": "",
+   "refs": [
+    "NTBL:230"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00229",
+   "kind": "word",
+   "jp": "純子を口説く",
+   "en": "",
+   "refs": [
+    "NTBL:231"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00230",
+   "kind": "word",
+   "jp": "追いかける",
+   "en": "",
+   "refs": [
+    "NTBL:232"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00231",
+   "kind": "word",
+   "jp": "ランプ",
+   "en": "",
+   "refs": [
+    "NTBL:233"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00232",
+   "kind": "word",
+   "jp": "唇",
+   "en": "",
+   "refs": [
+    "NTBL:234"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00233",
+   "kind": "word",
+   "jp": "呼ぶ",
+   "en": "",
+   "refs": [
+    "NTBL:235"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "b00001",
+   "kind": "batch",
+   "jp": "ドライブ１にＭＳ－ＤＯＳのシステムディスクをセットして下さい。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:5"
+   ]
+  },
+  {
+   "id": "b00002",
+   "kind": "batch",
+   "jp": "ドライブ２に『天使たちの午後Ⅴ』のディスク１セットして下さい。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:6"
+   ]
+  },
+  {
+   "id": "b00003",
+   "kind": "batch",
+   "jp": "　　注意！　●ＭＳ－ＤＯＳは本製品に付属されておりません！",
+   "en": "",
+   "refs": [
+    "JAST.BAT:8"
+   ]
+  },
+  {
+   "id": "b00004",
+   "kind": "batch",
+   "jp": "　　　　　　　必ずバージョン３．１以降のＭＳ－ＤＯＳを御用意下さい。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:9"
+   ]
+  },
+  {
+   "id": "b00005",
+   "kind": "batch",
+   "jp": "            ●ディスクは正しくセットしてください。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:10"
+   ]
+  },
+  {
+   "id": "b00006",
+   "kind": "batch",
+   "jp": "            　誤ったディスクのセットを行うと、組み込み作業が正常に",
+   "en": "",
+   "refs": [
+    "JAST.BAT:11"
+   ]
+  },
+  {
+   "id": "b00007",
+   "kind": "batch",
+   "jp": "              行われないだけでなく、ディスクを破損する恐れがあります。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:12"
+   ]
+  },
+  {
+   "id": "b00008",
+   "kind": "batch",
+   "jp": "              ディスクが正しくセットされているか、確認してからキーを",
+   "en": "",
+   "refs": [
+    "JAST.BAT:13"
+   ]
+  },
+  {
+   "id": "b00009",
+   "kind": "batch",
+   "jp": "              押してください。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:14"
+   ]
+  },
+  {
+   "id": "b00010",
+   "kind": "batch",
+   "jp": "ＭＳ－ＤＯＳ組み込み中...Wait a moment...",
+   "en": "",
+   "refs": [
+    "JAST.BAT:17"
+   ]
+  },
+  {
+   "id": "b00011",
+   "kind": "batch",
+   "jp": "ＭＳ－ＤＯＳ組み込み作業完了！",
+   "en": "",
+   "refs": [
+    "JAST.BAT:20"
+   ]
+  },
+  {
+   "id": "b00012",
+   "kind": "batch",
+   "jp": "ドライブ１に『天使たちの午後Ⅴ』のディスク１を、",
+   "en": "",
+   "refs": [
+    "JAST.BAT:21"
+   ]
+  },
+  {
+   "id": "b00013",
+   "kind": "batch",
+   "jp": "ドライブ２に『天使たちの午後Ⅴ』のディスク２をセットして下さい。",
+   "en": "",
+   "refs": [
+    "JAST.BAT:22"
+   ]
+  },
+  {
+   "id": "b00014",
+   "kind": "batch",
+   "jp": "セットし終りましたか？　それではリセットボタンを押して下さい！",
+   "en": "",
+   "refs": [
+    "JAST.BAT:23"
+   ]
   }
  ]
 }

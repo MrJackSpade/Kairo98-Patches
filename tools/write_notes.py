@@ -336,7 +336,12 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
         out += ["JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
                 "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
                 "", JAST_DISPLAY]
-    out += ["", "## Script", "", "%d strings (scene text)." % len(strings), ""]
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    labels = {"msg": "scene text", "engine": "engine strings", "word": "menu words", "batch": "batch lines"}
+    out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
+        "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
     if heart:
         basis = a.get("summary", "")
         if basis.startswith("manual:"):
@@ -374,10 +379,17 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "placeholder); `\\n` starts a new paragraph.",
                 "* A scene file, with its English appended, must fit the engine's 16 KB scene buffer; "
                 "the patcher leaves a scene that would not fit in Japanese and reports it.",
-                "", "## Not handled", "",
+                "* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are "
+                "rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte "
+                "length, two letters per full-width cell; longer ones are cut and reported."]
+        if cfg["encoding"] == "jast_scm":
+            out += ["* Noun table words (`w` ids, NTBL.BIN: the objects of the command menus): 16 letters.",
+                    "* Batch files' Japanese echo lines (`b` ids) are rewritten as they are."]
+        out += ["", "## Not handled", "",
                 "* Text drawn into the artwork (logos, menus drawn as pictures).",
-                "* Strings hard-coded in the engine program (menus, item names).",
-                "* Installer and driver messages."]
+                "* The name-entry character grids stay Japanese: the engine picks characters from them "
+                "by position.",
+                "* Driver messages (mouse and music drivers)."]
     for line in extra.get(name, {}).get("not_handled", []):
         out.append("* " + line)
     out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]

@@ -68011,6 +68011,1306 @@
    "refs": [
     "TEN_S309.OVL:311"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:13efc"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "☆お楽しみディスクのお知らせ☆",
+   "en": "",
+   "refs": [
+    "EXE:13f3c"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "「天使たちの午後　～転校生～」のゲームクリア、おめでとうございます。",
+   "en": "",
+   "refs": [
+    "EXE:13f5e"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "ただ今当社では、「天使たちの午後　～転校生～」のおまけディスクの通信",
+   "en": "",
+   "refs": [
+    "EXE:13fa5"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "販売を行っております。",
+   "en": "",
+   "refs": [
+    "EXE:13fec"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "おまけディスクを購入されると以下の素晴らしい特権がつきます。",
+   "en": "",
+   "refs": [
+    "EXE:14005"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "１．女の子たちのＣＧが見れるという、とってもうれしいＣＧモード",
+   "en": "",
+   "refs": [
+    "EXE:14044"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "２．ゲーム中に使用された素晴らしい音楽が再び聞けるミュージックモード",
+   "en": "",
+   "refs": [
+    "EXE:14085"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "３．今回原画を担当した「花屋敷ぼたん」先生が書き下ろしたオリジナル",
+   "en": "",
+   "refs": [
+    "EXE:140cc"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "原画と、そのＣＧが特別に見られるゴージャスモード",
+   "en": "",
+   "refs": [
+    "EXE:14111"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "４．その他、開発陣からの色々なお話が・・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:14144"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "メディアを明記の上、現金書留で当社までお送り下さい。",
+   "en": "",
+   "refs": [
+    "EXE:141b4"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "料金は、￥１，５００円（送料サービス，消費税込）です。",
+   "en": "",
+   "refs": [
+    "EXE:141eb"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": " 　ロ ー ド",
+   "en": "",
+   "refs": [
+    "EXE:14bd8"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "　最 初 か ら",
+   "en": "",
+   "refs": [
+    "EXE:14be4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "　環 境 設 定",
+   "en": "",
+   "refs": [
+    "EXE:14bf2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "見る",
+   "en": "",
+   "refs": [
+    "EXE:14c00"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "話す",
+   "en": "",
+   "refs": [
+    "EXE:14c05"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "聞く",
+   "en": "",
+   "refs": [
+    "EXE:14c0a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "考える",
+   "en": "",
+   "refs": [
+    "EXE:14c0f"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "行く",
+   "en": "",
+   "refs": [
+    "EXE:14c16"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": " 　セ ー ブ",
+   "en": "",
+   "refs": [
+    "EXE:14c1b"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": " 　終　　了",
+   "en": "",
+   "refs": [
+    "EXE:14c27"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": " 　ロード１",
+   "en": "",
+   "refs": [
+    "EXE:14c33"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": " 　ロード２",
+   "en": "",
+   "refs": [
+    "EXE:14c3f"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": " 　ロード３",
+   "en": "",
+   "refs": [
+    "EXE:14c4b"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": " 　ロード４",
+   "en": "",
+   "refs": [
+    "EXE:14c57"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": " 　ロード５",
+   "en": "",
+   "refs": [
+    "EXE:14c63"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": " 　セーブ１",
+   "en": "",
+   "refs": [
+    "EXE:14c6f"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": " 　セーブ２",
+   "en": "",
+   "refs": [
+    "EXE:14c7b"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": " 　セーブ３",
+   "en": "",
+   "refs": [
+    "EXE:14c87"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": " 　セーブ４",
+   "en": "",
+   "refs": [
+    "EXE:14c93"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": " 　セーブ５",
+   "en": "",
+   "refs": [
+    "EXE:14c9f"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "　　　天使達の午後",
+   "en": "",
+   "refs": [
+    "EXE:14cab"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "天使達の午後２～美奈子～",
+   "en": "",
+   "refs": [
+    "EXE:14cbe"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "天使達の午後３～リボン～",
+   "en": "",
+   "refs": [
+    "EXE:14cd7"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:14cf0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:14d02"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:14d1b"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "　　ＦＭ音源",
+   "en": "",
+   "refs": [
+    "EXE:14d36"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "　　ＭＩＤＩ",
+   "en": "",
+   "refs": [
+    "EXE:14d43"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "実はまだやる",
+   "en": "",
+   "refs": [
+    "EXE:14d50"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "本当に終わる",
+   "en": "",
+   "refs": [
+    "EXE:14d5d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "年上と年下、どっちが好みか？",
+   "en": "",
+   "refs": [
+    "EXE:14fc6"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "年下",
+   "en": "",
+   "refs": [
+    "EXE:14fe3"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "年上",
+   "en": "",
+   "refs": [
+    "EXE:14fe8"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "彼女と２人きりになれるとしたら、明るいところがいいか暗い方がいいか？",
+   "en": "",
+   "refs": [
+    "EXE:14fed"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "暗いところ",
+   "en": "",
+   "refs": [
+    "EXE:15032"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "明るいところ",
+   "en": "",
+   "refs": [
+    "EXE:1503d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "彼女とＨして、泣かせた事があるか？",
+   "en": "",
+   "refs": [
+    "EXE:1504a"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "ない",
+   "en": "",
+   "refs": [
+    "EXE:1506d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "ある",
+   "en": "",
+   "refs": [
+    "EXE:15072"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "髪は短いのと長いのと、どちらが好みか？",
+   "en": "",
+   "refs": [
+    "EXE:15077"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "長い",
+   "en": "",
+   "refs": [
+    "EXE:1509e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "短い",
+   "en": "",
+   "refs": [
+    "EXE:150a3"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "明るい娘と内気な娘、どっちがいいか？",
+   "en": "",
+   "refs": [
+    "EXE:150a8"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "内気な娘",
+   "en": "",
+   "refs": [
+    "EXE:150cd"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "明るい娘",
+   "en": "",
+   "refs": [
+    "EXE:150d6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "１度関係を持った女の子を生涯愛する事が出来るか？",
+   "en": "",
+   "refs": [
+    "EXE:150df"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "できない",
+   "en": "",
+   "refs": [
+    "EXE:15110"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "できる",
+   "en": "",
+   "refs": [
+    "EXE:15119"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "欲望と義理、どちらを取るか？",
+   "en": "",
+   "refs": [
+    "EXE:15120"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "義理",
+   "en": "",
+   "refs": [
+    "EXE:1513d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "欲望",
+   "en": "",
+   "refs": [
+    "EXE:15142"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00065",
+   "kind": "engine",
+   "jp": "愛情と友情、どちらを優先するか？",
+   "en": "",
+   "refs": [
+    "EXE:15147"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "友情",
+   "en": "",
+   "refs": [
+    "EXE:15168"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00067",
+   "kind": "engine",
+   "jp": "愛情",
+   "en": "",
+   "refs": [
+    "EXE:1516d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "女の子が困ってたら助けてやるか？",
+   "en": "",
+   "refs": [
+    "EXE:15172"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "助けない",
+   "en": "",
+   "refs": [
+    "EXE:15193"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "助ける",
+   "en": "",
+   "refs": [
+    "EXE:1519c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "愛と金、どちらを大事にするか？",
+   "en": "",
+   "refs": [
+    "EXE:151a3"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00072",
+   "kind": "engine",
+   "jp": "【占い師】：おぬしの未来は、ナンパ師ぞよ。",
+   "en": "",
+   "refs": [
+    "EXE:151c8"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00073",
+   "kind": "engine",
+   "jp": "【%001】：はぁ・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:151f3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00074",
+   "kind": "engine",
+   "jp": "【占い師】：女好きのおぬしには、ぴったりじゃろう？",
+   "en": "",
+   "refs": [
+    "EXE:1520e"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00075",
+   "kind": "engine",
+   "jp": "【占い師】：おぬしの未来は、犯罪者ぞよ。",
+   "en": "",
+   "refs": [
+    "EXE:15241"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00076",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・な、なんで！？",
+   "en": "",
+   "refs": [
+    "EXE:1526a"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00077",
+   "kind": "engine",
+   "jp": "【占い師】：危ない趣味のおぬしには、ぴったりじゃろう？",
+   "en": "",
+   "refs": [
+    "EXE:1528d"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00078",
+   "kind": "engine",
+   "jp": "【占い師】：おぬしの未来は、男色家ぞよ。",
+   "en": "",
+   "refs": [
+    "EXE:152c4"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00079",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・・おいおい。",
+   "en": "",
+   "refs": [
+    "EXE:152ed"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00080",
+   "kind": "engine",
+   "jp": "【占い師】：女にモテないおぬしには、ぴったりじゃろう？",
+   "en": "",
+   "refs": [
+    "EXE:1530e"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00081",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・・ふんふんふふんふん・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:15348"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "e00082",
+   "kind": "engine",
+   "jp": "【%001】：でぇと、でぇと、たらったらったたらら・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:1537d"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "e00083",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・ん？何だこりゃ。",
+   "en": "",
+   "refs": [
+    "EXE:153b6"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00084",
+   "kind": "engine",
+   "jp": "【%001】：こんなとこに、こんなもんあったかな・・・・・ま、いいや。時間もあるし、ちょっと寄って見るか。",
+   "en": "",
+   "refs": [
+    "EXE:153db"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "e00085",
+   "kind": "engine",
+   "jp": "【占い師】：いらっしゃい・・・・・・ここは、未来を覗く館ぞよ。",
+   "en": "",
+   "refs": [
+    "EXE:15443"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "e00086",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・ま、お約束だな。",
+   "en": "",
+   "refs": [
+    "EXE:15482"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00087",
+   "kind": "engine",
+   "jp": "【占い師】：何か言ったかえ？",
+   "en": "",
+   "refs": [
+    "EXE:154a7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00088",
+   "kind": "engine",
+   "jp": "【%001】：いえ、別に・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:154c4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00089",
+   "kind": "engine",
+   "jp": "【占い師】：まあよい。さ、そこにお座りなさい。",
+   "en": "",
+   "refs": [
+    "EXE:154e5"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "e00090",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・はいはい。",
+   "en": "",
+   "refs": [
+    "EXE:15514"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00091",
+   "kind": "engine",
+   "jp": "【占い師】：・・・で、そなたはどんな未来が望みかえ？",
+   "en": "",
+   "refs": [
+    "EXE:15533"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "e00092",
+   "kind": "engine",
+   "jp": "【%001】：おねーさんとの明るい家族計画。",
+   "en": "",
+   "refs": [
+    "EXE:15568"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00093",
+   "kind": "engine",
+   "jp": "【占い師】：・・・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:15591"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00094",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・冗談です。",
+   "en": "",
+   "refs": [
+    "EXE:155ae"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00095",
+   "kind": "engine",
+   "jp": "【占い師】：・・・ふん、まあよいわ。",
+   "en": "",
+   "refs": [
+    "EXE:155cd"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00096",
+   "kind": "engine",
+   "jp": "【占い師】：よいか・・・これから、この水晶玉に質問が映し出される。",
+   "en": "",
+   "refs": [
+    "EXE:155f2"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "e00097",
+   "kind": "engine",
+   "jp": "【占い師】：その質問は、おぬしにしか見えん。だからおぬしは、その質問と答えをこの紙に書くのじゃ。",
+   "en": "",
+   "refs": [
+    "EXE:15635"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "e00098",
+   "kind": "engine",
+   "jp": "【占い師】：質問が出なくなったら、その紙を私に見せるのじゃ。さすれば、そなたは未来を知る事が出来よう。",
+   "en": "",
+   "refs": [
+    "EXE:15696"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "e00099",
+   "kind": "engine",
+   "jp": "（未来を知る、ねぇ・・・・・）",
+   "en": "",
+   "refs": [
+    "EXE:156fd"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00100",
+   "kind": "engine",
+   "jp": "【占い師】：ほれ、早ようせんか。",
+   "en": "",
+   "refs": [
+    "EXE:1571c"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00101",
+   "kind": "engine",
+   "jp": "【%001】：あぁ・・・はいはい。",
+   "en": "",
+   "refs": [
+    "EXE:1573d"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00102",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・はい。",
+   "en": "",
+   "refs": [
+    "EXE:1575e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00103",
+   "kind": "engine",
+   "jp": "【占い師】：どれどれ・・・・・ほうほう、なるほどのう・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:15779"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00104",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・はぁ。そーですかー。",
+   "en": "",
+   "refs": [
+    "EXE:157bc"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "e00105",
+   "kind": "engine",
+   "jp": "【占い師】：・・・おぉ、一つ言い忘れておった。",
+   "en": "",
+   "refs": [
+    "EXE:157e5"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "e00106",
+   "kind": "engine",
+   "jp": "（・・・・・まだなんかあるのか？）",
+   "en": "",
+   "refs": [
+    "EXE:15814"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00107",
+   "kind": "engine",
+   "jp": "【占い師】：おまえの大事な人に、危機が迫っておるぞ。それを救えるのは、おまえだけじゃ。それだけは、肝に命じておくが良い。",
+   "en": "",
+   "refs": [
+    "EXE:15837"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "e00108",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・・はぁ。どーも・・・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:158b0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00109",
+   "kind": "engine",
+   "jp": "【%001】：・・・・・ふぅ。一体なん時間いたんだ・・・って、おい。",
+   "en": "",
+   "refs": [
+    "EXE:158e2"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00110",
+   "kind": "engine",
+   "jp": "【%001】：やっべー！遅刻だー！！",
+   "en": "",
+   "refs": [
+    "EXE:15923"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00111",
+   "kind": "engine",
+   "jp": "俺は、全速力で駅に向かって駆け出した。",
+   "en": "",
+   "refs": [
+    "EXE:15944"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00112",
+   "kind": "engine",
+   "jp": "Ｇａｍｅ　Ｏｖｅｒ",
+   "en": "",
+   "refs": [
+    "EXE:15999"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00113",
+   "kind": "engine",
+   "jp": "ＤＩＲＥＣＴＯＲ",
+   "en": "",
+   "refs": [
+    "EXE:1a0e6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00114",
+   "kind": "engine",
+   "jp": "水野　滝",
+   "en": "",
+   "refs": [
+    "EXE:1a104"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00115",
+   "kind": "engine",
+   "jp": "原　画",
+   "en": "",
+   "refs": [
+    "EXE:1a10d"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00116",
+   "kind": "engine",
+   "jp": "花屋敷　ぼたん",
+   "en": "",
+   "refs": [
+    "EXE:1a121"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00117",
+   "kind": "engine",
+   "jp": "ＧＲＡＰＨ",
+   "en": "",
+   "refs": [
+    "EXE:1a130"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00118",
+   "kind": "engine",
+   "jp": "ビリヤード松山",
+   "en": "",
+   "refs": [
+    "EXE:1a149"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00119",
+   "kind": "engine",
+   "jp": "うさ　うさぎ",
+   "en": "",
+   "refs": [
+    "EXE:1a158"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00120",
+   "kind": "engine",
+   "jp": "ゆみりん",
+   "en": "",
+   "refs": [
+    "EXE:1a165"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00121",
+   "kind": "engine",
+   "jp": "浅野",
+   "en": "",
+   "refs": [
+    "EXE:1a16e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00122",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ",
+   "en": "",
+   "refs": [
+    "EXE:1a173"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00123",
+   "kind": "engine",
+   "jp": "プロフェッサー圧縮",
+   "en": "",
+   "refs": [
+    "EXE:1a191"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00124",
+   "kind": "engine",
+   "jp": "ぽん酢",
+   "en": "",
+   "refs": [
+    "EXE:1a1a4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00125",
+   "kind": "engine",
+   "jp": "ＭＵＳＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1a1ab"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00126",
+   "kind": "engine",
+   "jp": "Ｈ２",
+   "en": "",
+   "refs": [
+    "EXE:1a1c3"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00127",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ",
+   "en": "",
+   "refs": [
+    "EXE:1a1c8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00128",
+   "kind": "engine",
+   "jp": "破壊師　退蔵",
+   "en": "",
+   "refs": [
+    "EXE:1a1e4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00129",
+   "kind": "engine",
+   "jp": "ＰＲＥＳＥＮＴＥＤ　ＢＹ",
+   "en": "",
+   "refs": [
+    "EXE:1a1f1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00130",
+   "kind": "engine",
+   "jp": "株式会社　ジャスト",
+   "en": "",
+   "refs": [
+    "EXE:1a211"
+   ],
+   "max_cells": 9
   }
  ]
 }

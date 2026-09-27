@@ -129098,6 +129098,716 @@
    "refs": [
     "YUMI_ED.OVL:40a"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:196ac"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "はじめから",
+   "en": "",
+   "refs": [
+    "EXE:1a712"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "つづきから",
+   "en": "",
+   "refs": [
+    "EXE:1a71d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": " せってい",
+   "en": "",
+   "refs": [
+    "EXE:1a728"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "せってい",
+   "en": "",
+   "refs": [
+    "EXE:1a729"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "  おわり  ",
+   "en": "",
+   "refs": [
+    "EXE:1a732"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ＣＧをみる",
+   "en": "",
+   "refs": [
+    "EXE:1a73d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": " 曲をきく ",
+   "en": "",
+   "refs": [
+    "EXE:1a748"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "人生にしおりをつける",
+   "en": "",
+   "refs": [
+    "EXE:1a753"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "人生を見つめ直す",
+   "en": "",
+   "refs": [
+    "EXE:1a768"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "人生をあきらめる",
+   "en": "",
+   "refs": [
+    "EXE:1a779"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": " 　ロード１　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a78a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": " 　ロード２　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a799"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": " 　ロード３　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7a8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": " 　ロード４　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7b7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": " 　ロード５　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7c6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": " 　セーブ１　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7d5"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": " 　セーブ２　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7e4"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": " 　セーブ３　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a7f3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": " 　セーブ４　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a802"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": " 　セーブ５　 ",
+   "en": "",
+   "refs": [
+    "EXE:1a811"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "天使達の午後２　番外編",
+   "en": "",
+   "refs": [
+    "EXE:1a820"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "天使達の午後３番外反省版",
+   "en": "",
+   "refs": [
+    "EXE:1a837"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "天使達の午後４～ゆう子～",
+   "en": "",
+   "refs": [
+    "EXE:1a850"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:1a869"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:1a87b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:1a894"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "ＦＭ音源",
+   "en": "",
+   "refs": [
+    "EXE:1a8af"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "ＭＩＤＩ",
+   "en": "",
+   "refs": [
+    "EXE:1a8b8"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "実はまだやる",
+   "en": "",
+   "refs": [
+    "EXE:1a8c1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "本当に終わる",
+   "en": "",
+   "refs": [
+    "EXE:1a8ce"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "状態表示",
+   "en": "",
+   "refs": [
+    "EXE:1a8db"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:1a8e4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "EXE:1a8eb"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "移動モード",
+   "en": "",
+   "refs": [
+    "EXE:1a8f2"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "ゲーム終了",
+   "en": "",
+   "refs": [
+    "EXE:1a8fd"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "  おまけ  ",
+   "en": "",
+   "refs": [
+    "EXE:1a908"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "もどす　　　おわり　",
+   "en": "",
+   "refs": [
+    "EXE:1aa67"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "名前を入れて下さい",
+   "en": "",
+   "refs": [
+    "EXE:1aa7c"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "秘密の花園",
+   "en": "",
+   "refs": [
+    "EXE:1aa9b"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "グローバルフラグ",
+   "en": "",
+   "refs": [
+    "EXE:1ab30"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "ローカルフラグ",
+   "en": "",
+   "refs": [
+    "EXE:1ab87"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "セーブ　",
+   "en": "",
+   "refs": [
+    "EXE:1abed"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "ロード　",
+   "en": "",
+   "refs": [
+    "EXE:1abf6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "ＤＩＲＥＣＴＯＲ",
+   "en": "",
+   "refs": [
+    "EXE:1b15b"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "破壊師　退蔵",
+   "en": "",
+   "refs": [
+    "EXE:1b16c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "ＧＲＡＰＨＩＣ　ＤＥＳＩＧＮＥＲ",
+   "en": "",
+   "refs": [
+    "EXE:1b180"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "一色　良太郎",
+   "en": "",
+   "refs": [
+    "EXE:1b1a1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "ＣＧ　ＳＵＰＥＲＶＩＳＯＲ",
+   "en": "",
+   "refs": [
+    "EXE:1b1b5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "大島　さなぎ",
+   "en": "",
+   "refs": [
+    "EXE:1b1d0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "ＣＯＭＰＵＴＥＲ　ＧＲＡＰＨＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1b1e4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "うさ　うさぎ",
+   "en": "",
+   "refs": [
+    "EXE:1b205"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "ゆみりん（源氏名）",
+   "en": "",
+   "refs": [
+    "EXE:1b212"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "井沢　彩也",
+   "en": "",
+   "refs": [
+    "EXE:1b22c"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "カーリーくん",
+   "en": "",
+   "refs": [
+    "EXE:1b237"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "ＨＡＲＵ",
+   "en": "",
+   "refs": [
+    "EXE:1b244"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "ＡＳＳＩＳＴＡＮＴ",
+   "en": "",
+   "refs": [
+    "EXE:1b254"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "小黒",
+   "en": "",
+   "refs": [
+    "EXE:1b267"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ",
+   "en": "",
+   "refs": [
+    "EXE:1b273"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "柘植　宗章",
+   "en": "",
+   "refs": [
+    "EXE:1b284"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ　ＡＳＳＩＳＴＡＮＴ",
+   "en": "",
+   "refs": [
+    "EXE:1b296"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "ゆきかげ",
+   "en": "",
+   "refs": [
+    "EXE:1b2bb"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "ＭＵＳＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1b2c4"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "Ｔａｋａｎｏｒｉ　Ｎａｋａｉｇａｗａ",
+   "en": "",
+   "refs": [
+    "EXE:1b2d6"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00065",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ",
+   "en": "",
+   "refs": [
+    "EXE:1b2fb"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ　ＰＲＯＧＲＡＭ",
+   "en": "",
+   "refs": [
+    "EXE:1b311"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00067",
+   "kind": "engine",
+   "jp": "高杉　孝友",
+   "en": "",
+   "refs": [
+    "EXE:1b332"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "ＳＰＥＣＩＡＬ　ＴＨＡＮＫＳ",
+   "en": "",
+   "refs": [
+    "EXE:1b344"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "ＰＣ－ＡＮＧＥＬ様サマ",
+   "en": "",
+   "refs": [
+    "EXE:1b361"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "ＰＬＡＮ・ＰＲＯＤＵＣＴＩＯＮ",
+   "en": "",
+   "refs": [
+    "EXE:1b37f"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "ティアラ",
+   "en": "",
+   "refs": [
+    "EXE:1b39e"
+   ],
+   "max_cells": 4
   }
  ]
 }

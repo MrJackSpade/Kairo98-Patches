@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's scene engine (`HNT/HNT_RLT.EXE`): 151 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
+JAST's scene engine (`HNT/HNT_RLT.EXE`): 152 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
 
 ## English display (`pc98tl/jast_game.py`)
 
@@ -25,7 +25,7 @@ JAST's scene engine (`HNT/HNT_RLT.EXE`): 151 scene files (`*.OVL`) holding text 
 
 ## Script
 
-4833 strings (scene text).
+4985 strings (4833 scene text, 152 engine strings).
 
 ♥ by the script-text scan (30 of 4833 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -33,17 +33,20 @@ JAST's scene engine (`HNT/HNT_RLT.EXE`): 151 scene files (`*.OVL`) holding text 
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
 | Test | Result |
 |---|---|
-| Boots to the town map (clickable picture) | OK |
-| Message window | not yet seen (the boot steps don't reach a message) |
+| Title menu (engine strings) | OK: filler |
+| Town map; building captions and the move menu (engine strings) | OK: filler in place |
+| Status panel (engine strings) | OK |
+| Going into a building: scene and message window | OK: half-width filler inside the frame |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

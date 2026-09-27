@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's scene engine (`TSP2/TSP2.EXE`): 175 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
+JAST's scene engine (`TSP2/TSP2.EXE`): 176 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
 
 ## English display (`pc98tl/jast_game.py`)
 
@@ -25,7 +25,7 @@ JAST's scene engine (`TSP2/TSP2.EXE`): 175 scene files (`*.OVL`) holding text an
 
 ## Script
 
-6775 strings (scene text).
+6832 strings (6775 scene text, 57 engine strings).
 
 ♥ by the script-text scan (31 of 6775 strings match the sexual-vocabulary list (8 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -33,12 +33,13 @@ JAST's scene engine (`TSP2/TSP2.EXE`): 175 scene files (`*.OVL`) holding text an
 
 * Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` placeholder); `\n` starts a new paragraph.
 * A scene file, with its English appended, must fit the engine's 16 KB scene buffer; the patcher leaves a scene that would not fit in Japanese and reports it.
+* Engine strings (`e` ids: menus, prompts, item and character names, bonus texts) are rewritten in place in the program (`pc98tl/engine_strings.py`): their original byte length, two letters per full-width cell; longer ones are cut and reported.
 
 ## Not handled
 
 * Text drawn into the artwork (logos, menus drawn as pictures).
-* Strings hard-coded in the engine program (menus, item names).
-* Installer and driver messages.
+* The name-entry character grids stay Japanese: the engine picks characters from them by position.
+* Driver messages (mouse and music drivers).
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
@@ -46,4 +47,5 @@ JAST's scene engine (`TSP2/TSP2.EXE`): 175 scene files (`*.OVL`) holding text an
 |---|---|
 | Game select menu | OK (engine menu, Japanese) |
 | Message window | OK: half-width filler, wrapped between words inside the frame |
+| Engine strings (title menu, labels) rewritten in place | OK: filler inside the menus, game runs on |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

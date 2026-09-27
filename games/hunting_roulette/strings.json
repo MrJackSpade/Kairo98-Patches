@@ -43810,6 +43810,1537 @@
    "refs": [
     "S16_Z.OVL:11"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:15478"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "結果発表",
+   "en": "",
+   "refs": [
+    "EXE:154fa"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "%sの優勝です。おめでとうございます。",
+   "en": "",
+   "refs": [
+    "EXE:15523"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "されました",
+   "en": "",
+   "refs": [
+    "EXE:155ea"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "パラメータ",
+   "en": "",
+   "refs": [
+    "EXE:155f5"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "アルバイト",
+   "en": "",
+   "refs": [
+    "EXE:1566a",
+    "EXE:1883a"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "アルバイトして、",
+   "en": "",
+   "refs": [
+    "EXE:15675"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "アイテム使用",
+   "en": "",
+   "refs": [
+    "EXE:15686"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "なし",
+   "en": "",
+   "refs": [
+    "EXE:156a0"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "乗りますか？",
+   "en": "",
+   "refs": [
+    "EXE:156a8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "プレイヤーセレクト",
+   "en": "",
+   "refs": [
+    "EXE:156b5"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "ＳＴＡＲＴ",
+   "en": "",
+   "refs": [
+    "EXE:156d4"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "休憩",
+   "en": "",
+   "refs": [
+    "EXE:15758",
+    "EXE:1892d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "休憩して、",
+   "en": "",
+   "refs": [
+    "EXE:1575d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "勉強",
+   "en": "",
+   "refs": [
+    "EXE:15768"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "勉強して、",
+   "en": "",
+   "refs": [
+    "EXE:1576d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "映画鑑賞",
+   "en": "",
+   "refs": [
+    "EXE:15778"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "映画を見て、",
+   "en": "",
+   "refs": [
+    "EXE:15781"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "ダンス",
+   "en": "",
+   "refs": [
+    "EXE:1578e"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "踊って、",
+   "en": "",
+   "refs": [
+    "EXE:15795"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "注文",
+   "en": "",
+   "refs": [
+    "EXE:1579e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "コーヒーでくつろいで、",
+   "en": "",
+   "refs": [
+    "EXE:157a3"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "運動",
+   "en": "",
+   "refs": [
+    "EXE:157ba"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "運動して、",
+   "en": "",
+   "refs": [
+    "EXE:157bf"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "お茶を立てる",
+   "en": "",
+   "refs": [
+    "EXE:157ca"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "お茶を立てて、",
+   "en": "",
+   "refs": [
+    "EXE:157d7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "懺悔",
+   "en": "",
+   "refs": [
+    "EXE:157e6",
+    "EXE:18a60"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "懺悔して、",
+   "en": "",
+   "refs": [
+    "EXE:157eb"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "入院",
+   "en": "",
+   "refs": [
+    "EXE:157f9"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "　現在入院中です　",
+   "en": "",
+   "refs": [
+    "EXE:157fe"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "入場料",
+   "en": "",
+   "refs": [
+    "EXE:158c2"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "　お金が足りません　",
+   "en": "",
+   "refs": [
+    "EXE:158c9"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "　入場料として %d 円とられました　",
+   "en": "",
+   "refs": [
+    "EXE:158de"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "一郎",
+   "en": "",
+   "refs": [
+    "EXE:15b8a",
+    "EXE:15b9a",
+    "EXE:18e2c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "二郎",
+   "en": "",
+   "refs": [
+    "EXE:15baa",
+    "EXE:18e5c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "三郎",
+   "en": "",
+   "refs": [
+    "EXE:15bba",
+    "EXE:18e8c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "四郎",
+   "en": "",
+   "refs": [
+    "EXE:15bca",
+    "EXE:18ebc"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "淑恵",
+   "en": "",
+   "refs": [
+    "EXE:15bda"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "今日子",
+   "en": "",
+   "refs": [
+    "EXE:15bea"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "麻里",
+   "en": "",
+   "refs": [
+    "EXE:15bfa"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "エリス",
+   "en": "",
+   "refs": [
+    "EXE:15c0a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "圭子",
+   "en": "",
+   "refs": [
+    "EXE:15c1a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "利津子",
+   "en": "",
+   "refs": [
+    "EXE:15c2a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "美嘉子",
+   "en": "",
+   "refs": [
+    "EXE:15c3a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "美智恵",
+   "en": "",
+   "refs": [
+    "EXE:15c4a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "イゼリア",
+   "en": "",
+   "refs": [
+    "EXE:15c5a"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "啓子",
+   "en": "",
+   "refs": [
+    "EXE:15c6a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "恵美",
+   "en": "",
+   "refs": [
+    "EXE:15c7a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "みゆき",
+   "en": "",
+   "refs": [
+    "EXE:15c8a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "早苗",
+   "en": "",
+   "refs": [
+    "EXE:15c9a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "玲鈴",
+   "en": "",
+   "refs": [
+    "EXE:15cba"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "ジョアンナ",
+   "en": "",
+   "refs": [
+    "EXE:15cca"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "聞く",
+   "en": "",
+   "refs": [
+    "EXE:187ee"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "名前",
+   "en": "",
+   "refs": [
+    "EXE:187f3"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "好みのタイプ",
+   "en": "",
+   "refs": [
+    "EXE:187f8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "自分の事",
+   "en": "",
+   "refs": [
+    "EXE:18805"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "彼女の事",
+   "en": "",
+   "refs": [
+    "EXE:1880e"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "メインメニュー",
+   "en": "",
+   "refs": [
+    "EXE:18817"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "ルーレット",
+   "en": "",
+   "refs": [
+    "EXE:18826"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "中に入る",
+   "en": "",
+   "refs": [
+    "EXE:18831"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "情報を見る",
+   "en": "",
+   "refs": [
+    "EXE:18845"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "アイテムを使う",
+   "en": "",
+   "refs": [
+    "EXE:18850"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "システム",
+   "en": "",
+   "refs": [
+    "EXE:1885f"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "乗る",
+   "en": "",
+   "refs": [
+    "EXE:18868"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00065",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:1886d"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "EXE:18874"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00067",
+   "kind": "engine",
+   "jp": "終了",
+   "en": "",
+   "refs": [
+    "EXE:1887b"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "セーブ１",
+   "en": "",
+   "refs": [
+    "EXE:18880"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "セーブ２",
+   "en": "",
+   "refs": [
+    "EXE:18889"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "セーブ３",
+   "en": "",
+   "refs": [
+    "EXE:18892"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "セーブ４",
+   "en": "",
+   "refs": [
+    "EXE:1889b"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00072",
+   "kind": "engine",
+   "jp": "セーブ５",
+   "en": "",
+   "refs": [
+    "EXE:188a4"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00073",
+   "kind": "engine",
+   "jp": "ロード１",
+   "en": "",
+   "refs": [
+    "EXE:188ad"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00074",
+   "kind": "engine",
+   "jp": "ロード２",
+   "en": "",
+   "refs": [
+    "EXE:188b6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00075",
+   "kind": "engine",
+   "jp": "ロード３",
+   "en": "",
+   "refs": [
+    "EXE:188bf"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00076",
+   "kind": "engine",
+   "jp": "ロード４",
+   "en": "",
+   "refs": [
+    "EXE:188c8"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00077",
+   "kind": "engine",
+   "jp": "ロード５",
+   "en": "",
+   "refs": [
+    "EXE:188d1"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00078",
+   "kind": "engine",
+   "jp": "買物",
+   "en": "",
+   "refs": [
+    "EXE:188ed"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00079",
+   "kind": "engine",
+   "jp": "バラ",
+   "en": "",
+   "refs": [
+    "EXE:188f2"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00080",
+   "kind": "engine",
+   "jp": "かすみ草",
+   "en": "",
+   "refs": [
+    "EXE:188f7"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00081",
+   "kind": "engine",
+   "jp": "出る",
+   "en": "",
+   "refs": [
+    "EXE:18900"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00082",
+   "kind": "engine",
+   "jp": "はい",
+   "en": "",
+   "refs": [
+    "EXE:18905"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00083",
+   "kind": "engine",
+   "jp": "いいえ",
+   "en": "",
+   "refs": [
+    "EXE:1890a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00084",
+   "kind": "engine",
+   "jp": "初めから",
+   "en": "",
+   "refs": [
+    "EXE:18919"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00085",
+   "kind": "engine",
+   "jp": "自分の部屋",
+   "en": "",
+   "refs": [
+    "EXE:18922"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00086",
+   "kind": "engine",
+   "jp": "校庭",
+   "en": "",
+   "refs": [
+    "EXE:18932"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00087",
+   "kind": "engine",
+   "jp": "教室へ行く",
+   "en": "",
+   "refs": [
+    "EXE:18937"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00088",
+   "kind": "engine",
+   "jp": "教室",
+   "en": "",
+   "refs": [
+    "EXE:18942"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00089",
+   "kind": "engine",
+   "jp": "勉強する",
+   "en": "",
+   "refs": [
+    "EXE:18947"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00090",
+   "kind": "engine",
+   "jp": "公園",
+   "en": "",
+   "refs": [
+    "EXE:18950"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00091",
+   "kind": "engine",
+   "jp": "図書館",
+   "en": "",
+   "refs": [
+    "EXE:18955"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00092",
+   "kind": "engine",
+   "jp": "映画館",
+   "en": "",
+   "refs": [
+    "EXE:1895c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00093",
+   "kind": "engine",
+   "jp": "映画を見る",
+   "en": "",
+   "refs": [
+    "EXE:18963"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00094",
+   "kind": "engine",
+   "jp": "コンビニ",
+   "en": "",
+   "refs": [
+    "EXE:1896e",
+    "EXE:19744"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00095",
+   "kind": "engine",
+   "jp": "買い物",
+   "en": "",
+   "refs": [
+    "EXE:18977"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00096",
+   "kind": "engine",
+   "jp": "道路",
+   "en": "",
+   "refs": [
+    "EXE:1897e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00097",
+   "kind": "engine",
+   "jp": "深呼吸",
+   "en": "",
+   "refs": [
+    "EXE:18983"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00098",
+   "kind": "engine",
+   "jp": "移動",
+   "en": "",
+   "refs": [
+    "EXE:1898a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00099",
+   "kind": "engine",
+   "jp": "花屋",
+   "en": "",
+   "refs": [
+    "EXE:1898f"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00100",
+   "kind": "engine",
+   "jp": "薬局",
+   "en": "",
+   "refs": [
+    "EXE:18994"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00101",
+   "kind": "engine",
+   "jp": "麻里の部屋",
+   "en": "",
+   "refs": [
+    "EXE:18999"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00102",
+   "kind": "engine",
+   "jp": "ディスコ",
+   "en": "",
+   "refs": [
+    "EXE:189a4",
+    "EXE:19434"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00103",
+   "kind": "engine",
+   "jp": "踊る",
+   "en": "",
+   "refs": [
+    "EXE:189ad"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00104",
+   "kind": "engine",
+   "jp": "駐車場",
+   "en": "",
+   "refs": [
+    "EXE:189b2"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00105",
+   "kind": "engine",
+   "jp": "大学",
+   "en": "",
+   "refs": [
+    "EXE:189b9"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00106",
+   "kind": "engine",
+   "jp": "喫茶店",
+   "en": "",
+   "refs": [
+    "EXE:189be",
+    "EXE:1946c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00107",
+   "kind": "engine",
+   "jp": "注文する",
+   "en": "",
+   "refs": [
+    "EXE:189c5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00108",
+   "kind": "engine",
+   "jp": "キャバクラ",
+   "en": "",
+   "refs": [
+    "EXE:189ce"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00109",
+   "kind": "engine",
+   "jp": "ラブホテル",
+   "en": "",
+   "refs": [
+    "EXE:189d9"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00110",
+   "kind": "engine",
+   "jp": "フィットネスクラブ",
+   "en": "",
+   "refs": [
+    "EXE:189e4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00111",
+   "kind": "engine",
+   "jp": "運動する",
+   "en": "",
+   "refs": [
+    "EXE:189f7"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00112",
+   "kind": "engine",
+   "jp": "用具室",
+   "en": "",
+   "refs": [
+    "EXE:18a00"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00113",
+   "kind": "engine",
+   "jp": "奇跡の館",
+   "en": "",
+   "refs": [
+    "EXE:18a07"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00114",
+   "kind": "engine",
+   "jp": "茶道教室",
+   "en": "",
+   "refs": [
+    "EXE:18a15"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00115",
+   "kind": "engine",
+   "jp": "お茶",
+   "en": "",
+   "refs": [
+    "EXE:18a1e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00116",
+   "kind": "engine",
+   "jp": "啓子の部屋",
+   "en": "",
+   "refs": [
+    "EXE:18a23"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00117",
+   "kind": "engine",
+   "jp": "イメージクラブ",
+   "en": "",
+   "refs": [
+    "EXE:18a2e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00118",
+   "kind": "engine",
+   "jp": "病室",
+   "en": "",
+   "refs": [
+    "EXE:18a3d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00119",
+   "kind": "engine",
+   "jp": "寝る",
+   "en": "",
+   "refs": [
+    "EXE:18a42"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00120",
+   "kind": "engine",
+   "jp": "診療室",
+   "en": "",
+   "refs": [
+    "EXE:18a47"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00121",
+   "kind": "engine",
+   "jp": "中華料理屋",
+   "en": "",
+   "refs": [
+    "EXE:18a4e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00122",
+   "kind": "engine",
+   "jp": "礼拝堂",
+   "en": "",
+   "refs": [
+    "EXE:18a59"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00123",
+   "kind": "engine",
+   "jp": "茶器",
+   "en": "",
+   "refs": [
+    "EXE:18b2c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00124",
+   "kind": "engine",
+   "jp": "栄養剤「おーがぱわー」",
+   "en": "",
+   "refs": [
+    "EXE:18b5c"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00125",
+   "kind": "engine",
+   "jp": "筋肉強化剤「どらごんまっする」",
+   "en": "",
+   "refs": [
+    "EXE:18b8c"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00126",
+   "kind": "engine",
+   "jp": "日刊「ザ・要約」",
+   "en": "",
+   "refs": [
+    "EXE:18bbc"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00127",
+   "kind": "engine",
+   "jp": "男性化粧品「でみとる」",
+   "en": "",
+   "refs": [
+    "EXE:18bec"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00128",
+   "kind": "engine",
+   "jp": "彗星のペンダント",
+   "en": "",
+   "refs": [
+    "EXE:18c1c"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00129",
+   "kind": "engine",
+   "jp": "中華料理",
+   "en": "",
+   "refs": [
+    "EXE:1938c"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00130",
+   "kind": "engine",
+   "jp": "教会",
+   "en": "",
+   "refs": [
+    "EXE:193c4"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00131",
+   "kind": "engine",
+   "jp": "工事現場",
+   "en": "",
+   "refs": [
+    "EXE:1977c"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00132",
+   "kind": "engine",
+   "jp": "タクシー",
+   "en": "",
+   "refs": [
+    "EXE:19894"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00133",
+   "kind": "engine",
+   "jp": "ＤＩＲＥＣＴＯＲ",
+   "en": "",
+   "refs": [
+    "EXE:1a2c0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00134",
+   "kind": "engine",
+   "jp": "ＳＣＥＮＡＲＩＯ",
+   "en": "",
+   "refs": [
+    "EXE:1a2de"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00135",
+   "kind": "engine",
+   "jp": "山本晃司",
+   "en": "",
+   "refs": [
+    "EXE:1a2ef"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00136",
+   "kind": "engine",
+   "jp": "ＧＲＡＰＨＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1a2f8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00137",
+   "kind": "engine",
+   "jp": "水野　滝",
+   "en": "",
+   "refs": [
+    "EXE:1a307"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00138",
+   "kind": "engine",
+   "jp": "ビリヤード松山",
+   "en": "",
+   "refs": [
+    "EXE:1a310"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00139",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ　ＭＡＩＮ",
+   "en": "",
+   "refs": [
+    "EXE:1a32e"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00140",
+   "kind": "engine",
+   "jp": "ＰＲＯＧＲＡＭ　ＳＵＢ",
+   "en": "",
+   "refs": [
+    "EXE:1a347"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00141",
+   "kind": "engine",
+   "jp": "ふぁいあー",
+   "en": "",
+   "refs": [
+    "EXE:1a35e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00142",
+   "kind": "engine",
+   "jp": "原　画",
+   "en": "",
+   "refs": [
+    "EXE:1a369"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00143",
+   "kind": "engine",
+   "jp": "徳永孔雀",
+   "en": "",
+   "refs": [
+    "EXE:1a370"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00144",
+   "kind": "engine",
+   "jp": "ＳＴＲＡＮＧＥ藻好良",
+   "en": "",
+   "refs": [
+    "EXE:1a379"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00145",
+   "kind": "engine",
+   "jp": "ＭＵＳＩＣ",
+   "en": "",
+   "refs": [
+    "EXE:1a38e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00146",
+   "kind": "engine",
+   "jp": "ノブスケ",
+   "en": "",
+   "refs": [
+    "EXE:1a399"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00147",
+   "kind": "engine",
+   "jp": "ＰＲＥＳＥＮＴＥＤ　ＢＹ",
+   "en": "",
+   "refs": [
+    "EXE:1a3a2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00148",
+   "kind": "engine",
+   "jp": "株式会社　ＪＡＳＴ",
+   "en": "",
+   "refs": [
+    "EXE:1a3bb"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00149",
+   "kind": "engine",
+   "jp": "烽fＤＣクロックが５ＭＨｚになっています。２．５ＭＨｚに変更してください。",
+   "en": "",
+   "refs": [
+    "EXE:1a53f"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00150",
+   "kind": "engine",
+   "jp": "変更方法：",
+   "en": "",
+   "refs": [
+    "EXE:1a589"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00151",
+   "kind": "engine",
+   "jp": "　ディップスイッチ２の８番をＯＦＦにしてリセットボタンを押してください。",
+   "en": "",
+   "refs": [
+    "EXE:1a594"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00152",
+   "kind": "engine",
+   "jp": "　詳しくはマニュアル等を参照してください。",
+   "en": "",
+   "refs": [
+    "EXE:1a5dd"
+   ],
+   "max_cells": 21
   }
  ]
 }

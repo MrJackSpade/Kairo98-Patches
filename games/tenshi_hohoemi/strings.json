@@ -66985,6 +66985,516 @@
    "refs": [
     "Y_ZYU_F.OVL:5b2"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:1a0ac"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "孝友",
+   "en": "",
+   "refs": [
+    "EXE:1a50c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "めぐみ",
+   "en": "",
+   "refs": [
+    "EXE:1a53c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "琴乃",
+   "en": "",
+   "refs": [
+    "EXE:1a54c"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "はじめから",
+   "en": "",
+   "refs": [
+    "EXE:1b198"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "  ロード",
+   "en": "",
+   "refs": [
+    "EXE:1b1a3"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": " 環境設定",
+   "en": "",
+   "refs": [
+    "EXE:1b1ac"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "  おわる",
+   "en": "",
+   "refs": [
+    "EXE:1b1b6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "ＣＧを見る",
+   "en": "",
+   "refs": [
+    "EXE:1b1bf"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "音楽を聴く",
+   "en": "",
+   "refs": [
+    "EXE:1b1ca"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "終了",
+   "en": "",
+   "refs": [
+    "EXE:1b1d5"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": " 　ロード１　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b1da"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": " 　ロード２　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b1e9"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": " 　ロード３　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b1f8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": " 　ロード４　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b207"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": " 　ロード５　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b216"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": " 　セーブ１　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b225"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": " 　セーブ２　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b234"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": " 　セーブ３　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b243"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": " 　セーブ４　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b252"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": " 　セーブ５　 ",
+   "en": "",
+   "refs": [
+    "EXE:1b261"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "天使達の午後２　番外編",
+   "en": "",
+   "refs": [
+    "EXE:1b270"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "天使達の午後３番外反省版",
+   "en": "",
+   "refs": [
+    "EXE:1b287"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "天使達の午後４～ゆう子～",
+   "en": "",
+   "refs": [
+    "EXE:1b2a0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:1b2b9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:1b2cb"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:1b2e4"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "Ｆ Ｍ 音 源",
+   "en": "",
+   "refs": [
+    "EXE:1b2ff"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "Ｍ Ｉ Ｄ Ｉ",
+   "en": "",
+   "refs": [
+    "EXE:1b30b"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "実はまだやる",
+   "en": "",
+   "refs": [
+    "EXE:1b317"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "本当に終わる",
+   "en": "",
+   "refs": [
+    "EXE:1b324"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "状態表示",
+   "en": "",
+   "refs": [
+    "EXE:1b331"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:1b33a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "移動モード",
+   "en": "",
+   "refs": [
+    "EXE:1b341"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "ゲーム終了",
+   "en": "",
+   "refs": [
+    "EXE:1b34c"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "  おまけ",
+   "en": "",
+   "refs": [
+    "EXE:1b357"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "グローバルフラグ",
+   "en": "",
+   "refs": [
+    "EXE:1b490"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "ローカルフラグ",
+   "en": "",
+   "refs": [
+    "EXE:1b4e7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "もどす　　　おわり　",
+   "en": "",
+   "refs": [
+    "EXE:1b504"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "名前を入れて下さい",
+   "en": "",
+   "refs": [
+    "EXE:1b519"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "セーブ ",
+   "en": "",
+   "refs": [
+    "EXE:1b57d"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "週目",
+   "en": "",
+   "refs": [
+    "EXE:1b585"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "ロード ",
+   "en": "",
+   "refs": [
+    "EXE:1b58a"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "胸に抱いた手紙　渡せないまま",
+   "en": "",
+   "refs": [
+    "EXE:1b89a"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "あなたの勇気　ため息に変わる",
+   "en": "",
+   "refs": [
+    "EXE:1b8be"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "想う恋だけしてても　何も始まりはしない",
+   "en": "",
+   "refs": [
+    "EXE:1b8e2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "抑えてた気持ちをといて―――",
+   "en": "",
+   "refs": [
+    "EXE:1b930"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "そう　傷ついたら　私の微笑みで",
+   "en": "",
+   "refs": [
+    "EXE:1b9a9"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "あなたの心　癒してあげるから",
+   "en": "",
+   "refs": [
+    "EXE:1b9cf"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "内に秘めた想いを伝えて　素直に",
+   "en": "",
+   "refs": [
+    "EXE:1ba1a"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "大切な言葉あの人へ―――",
+   "en": "",
+   "refs": [
+    "EXE:1ba40"
+   ],
+   "max_cells": 12
   }
  ]
 }

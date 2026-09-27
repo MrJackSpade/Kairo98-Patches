@@ -62286,6 +62286,576 @@
    "refs": [
     "S4_081.OVL:36e"
    ]
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ﾃﾞｨｽｸ を Bﾄﾞﾗｲﾌﾞ にセットしてください",
+   "en": "",
+   "refs": [
+    "EXE:136ba"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "　最初から　",
+   "en": "",
+   "refs": [
+    "EXE:141e4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "　ロード１　",
+   "en": "",
+   "refs": [
+    "EXE:141f1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "　ロード２　",
+   "en": "",
+   "refs": [
+    "EXE:141fe"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "　ロード３　",
+   "en": "",
+   "refs": [
+    "EXE:1420b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "　ロード４　",
+   "en": "",
+   "refs": [
+    "EXE:14218"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "　ロード５　",
+   "en": "",
+   "refs": [
+    "EXE:14225"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "天使達の午後２　番外編",
+   "en": "",
+   "refs": [
+    "EXE:14232"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "天使達の午後３番外反省版",
+   "en": "",
+   "refs": [
+    "EXE:14249"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "天使達の午後４～ゆう子～",
+   "en": "",
+   "refs": [
+    "EXE:14262"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "　　　　環境設定　　　　",
+   "en": "",
+   "refs": [
+    "EXE:1427b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　",
+   "en": "",
+   "refs": [
+    "EXE:14294"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "EXE:142ad"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "EXE:142b4"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "終了",
+   "en": "",
+   "refs": [
+    "EXE:142bb"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": " 　ロード１　 ",
+   "en": "",
+   "refs": [
+    "EXE:142c0"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": " 　ロード２　 ",
+   "en": "",
+   "refs": [
+    "EXE:142cf"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": " 　ロード３　 ",
+   "en": "",
+   "refs": [
+    "EXE:142de"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": " 　ロード４　 ",
+   "en": "",
+   "refs": [
+    "EXE:142ed"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": " 　ロード５　 ",
+   "en": "",
+   "refs": [
+    "EXE:142fc"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": " 　セーブ１　 ",
+   "en": "",
+   "refs": [
+    "EXE:1430b"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": " 　セーブ２　 ",
+   "en": "",
+   "refs": [
+    "EXE:1431a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": " 　セーブ３　 ",
+   "en": "",
+   "refs": [
+    "EXE:14329"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": " 　セーブ４　 ",
+   "en": "",
+   "refs": [
+    "EXE:14338"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": " 　セーブ５　 ",
+   "en": "",
+   "refs": [
+    "EXE:14347"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "　　　 お・ま・け",
+   "en": "",
+   "refs": [
+    "EXE:14356"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "　　　ゲーム　終了　　　　",
+   "en": "",
+   "refs": [
+    "EXE:14368"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "Ｆ Ｍ 音 源",
+   "en": "",
+   "refs": [
+    "EXE:14383"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "Ｍ Ｉ Ｄ Ｉ",
+   "en": "",
+   "refs": [
+    "EXE:1438f"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "実はまだやる",
+   "en": "",
+   "refs": [
+    "EXE:1439b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "本当に終わる",
+   "en": "",
+   "refs": [
+    "EXE:143a8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "状態表示",
+   "en": "",
+   "refs": [
+    "EXE:143b5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "移動モード",
+   "en": "",
+   "refs": [
+    "EXE:143be"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "ゲーム終了",
+   "en": "",
+   "refs": [
+    "EXE:143c9"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "ふっふっふ、貴方、全部クリアしましたね！？",
+   "en": "",
+   "refs": [
+    "EXE:144b6"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "おめでたう。",
+   "en": "",
+   "refs": [
+    "EXE:144e1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "そんな貴方だけのためのとっておきのコーナーですよ。",
+   "en": "",
+   "refs": [
+    "EXE:144ee"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "・・・・・スタッフ一同の開発日誌・・・・・",
+   "en": "",
+   "refs": [
+    "EXE:14521"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "ビリヤード松山：天使たちの午後って・・・淒いゲームだ・・・。",
+   "en": "",
+   "refs": [
+    "EXE:1454c"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "さすが私が生まれる前のゲームだねッ。（うそだよ。）",
+   "en": "",
+   "refs": [
+    "EXE:14589"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "次は雪獸ッ！！　燃えて燃えて奇跡を呼ぶゾ！！",
+   "en": "",
+   "refs": [
+    "EXE:145bc"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "また会おうねッ！！　たこやきたこやきー☆　クレープでも可☆",
+   "en": "",
+   "refs": [
+    "EXE:145e9"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "　　　　うさうさぎを虐める会会長　踊るビリヤード松山でした！！☆",
+   "en": "",
+   "refs": [
+    "EXE:14624"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "うさうさぎ：はーい　と言うわけで、虐められてる、うさうさぎなんですけどね。",
+   "en": "",
+   "refs": [
+    "EXE:14665"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00045",
+   "kind": "engine",
+   "jp": "いやー、よくクリアしましたねー。",
+   "en": "",
+   "refs": [
+    "EXE:146b0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00046",
+   "kind": "engine",
+   "jp": "暇だったんですか？ｳｿ",
+   "en": "",
+   "refs": [
+    "EXE:146d1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "　　　　うさうさぎでした。",
+   "en": "",
+   "refs": [
+    "EXE:146e6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00048",
+   "kind": "engine",
+   "jp": "鉄人Ａ：はっきり言って「疲れた！！」の一言。",
+   "en": "",
+   "refs": [
+    "EXE:14701"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "１０年近くも前のソフトなんで資料も少なく「どうしましょう」の言葉連発",
+   "en": "",
+   "refs": [
+    "EXE:1472e"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "e00050",
+   "kind": "engine",
+   "jp": "でも、「天使たちの午後」は、私が若い頃、楽しんで解いた懐かしのゲームなんだなぁ。これが。",
+   "en": "",
+   "refs": [
+    "EXE:14773"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "当時は、美少女ゲームを買うのがとても恥ずかしく、他人の目を気にしてはこそこそ買っていたなぁ。",
+   "en": "",
+   "refs": [
+    "EXE:147cc"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "それが今では堂々と「この美少女ゲーム下さい」の一言。うーーーーーーん。時代かなぁ。",
+   "en": "",
+   "refs": [
+    "EXE:14829"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "　　　　とてもオジン臭い文章を書く　謎の鉄人Ａどえっす！！",
+   "en": "",
+   "refs": [
+    "EXE:1487c"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "e00054",
+   "kind": "engine",
+   "jp": "さてこの度、当社はパソコンネットを開く事になりました。",
+   "en": "",
+   "refs": [
+    "EXE:14951"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "e00055",
+   "kind": "engine",
+   "jp": "ＩＤ発行希望者は、往復ハガキに、住所，氏名，電話番号，購入されたソフト名，及び、これから表示されるパスワードを明記し、当社までお送り下さい。",
+   "en": "",
+   "refs": [
+    "EXE:14988"
+   ],
+   "max_cells": 70
+  },
+  {
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "パソコンネットが開催され次第、ＩＤ，パスワードを発行し、ご連絡いたします。",
+   "en": "",
+   "refs": [
+    "EXE:14a15"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00057",
+   "kind": "engine",
+   "jp": "パスワード　：　転校生",
+   "en": "",
+   "refs": [
+    "EXE:14a60"
+   ],
+   "max_cells": 11
   }
  ]
 }
