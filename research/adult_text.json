@@ -1209,5 +1209,17 @@
   "distinct_terms": 0,
   "adult_ids": [],
   "summary": "manual: declined - the script sexualizes a young child (found in the first scene file, 2026-09-27); no extraction or patch will be made"
+ },
+ "Jast.zip/Tenshi-tachi no Gogo IV - Yuko": {
+  "adult": true,
+  "hits": 3,
+  "strings": 1477,
+  "distinct_terms": 3,
+  "summary": "manual: explicit sexual command words (clitoris, cunnilingus, SEX, first at w00118) and sex scenes found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "m00363",
+   "m00675",
+   "m00747"
+  ]
  }
 }

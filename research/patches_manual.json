@@ -568,5 +568,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo IV - Yuko": [
+  {
+   "label": "This repo: games/tenshi_iv (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_iv/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

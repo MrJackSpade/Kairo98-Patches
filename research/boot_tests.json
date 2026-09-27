@@ -525,5 +525,27 @@
    "Message window",
    "OK: half-width filler inside the frame, wrapped between words; the engine pages a full box (▼)"
   ]
+ ],
+ "tenshi_iv": [
+  [
+   "Title and opening (floppy set: boot disk and disk 2)",
+   "OK: half-width filler in the message box"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window, first page",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK"
+  ],
+  [
+   "Scene past the opening (the principal's office conversation)",
+   "OK"
+  ]
  ]
 }

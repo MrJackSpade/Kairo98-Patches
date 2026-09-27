@@ -252,6 +252,20 @@ SCM_TEXT_DISPLAY = """## English display (`pc98tl/jast_scm.py`, `pc98tl/jast_con
   never touches."""
 
 
+BOOT_DISPLAY = """## English display (`pc98tl/jast_boot.py`)
+
+* The engine prints on the PC-98 text layer.  Its message and menu draws
+  hand each Shift-JIS code to one character routine; both calls now go to a
+  helper that draws a code whose first byte is below 80 as two ASCII letters
+  in two half-width cells (the engine's own half-width put).  Japanese draws
+  as before.
+* English lines are wrapped to 72 columns and joined by the engine's line
+  mark `↓`.  The three-line box scrolls a line at a time, so the line scrolls
+  in the message draw go through a pager: every third new line of a message
+  waits for a key or a left click first.  The helpers sit in the unused
+  (zero) tail of the music table, which stays zero in a running game."""
+
+
 def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -281,6 +295,18 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
         elif cfg.get("floppies"):
             out.append("Every floppy's scene files are patched; the output is the full disk set.")
         out += ["", SCM_TEXT_DISPLAY if cfg.get("native_ascii") else SCM_ROM_DISPLAY]
+    elif cfg["encoding"] == "jast_boot":
+        scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
+        out += ["JAST's self-booting engine: the floppies have no file system.  The boot sector loads "
+                "the engine (hand-written assembly) from sector 8; four directory tables in it give each "
+                "file's disk, sector and length.  %d scenes hold command tables, then messages read two "
+                "bytes at a time and ended by a zero word, found by count; the menu verbs and nouns are "
+                "16-byte entries in one more file (`pc98tl/jast_boot.py` documents the layout)." % len(scenes),
+                "",
+                "The disk tool that built the floppies cut files at a sector boundary and left old sector "
+                "contents after each file's end; the extractor stops each scene at the first leftover "
+                "fragment, and keeps a scene's cut-off last message as it is.",
+                "", BOOT_DISPLAY]
     else:
         out += ["JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
                 "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
@@ -297,15 +323,31 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     else:
         out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
             a.get("summary", "not scanned"), done, len(strings)))
-    out += ["", "## Limits", "",
-            "* Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` "
-            "placeholder); `\\n` starts a new paragraph.",
-            "* A scene file, with its English appended, must fit the engine's 16 KB scene buffer; "
-            "the patcher leaves a scene that would not fit in Japanese and reports it.",
-            "", "## Not handled", "",
-            "* Text drawn into the artwork (logos, menus drawn as pictures).",
-            "* Strings hard-coded in the engine program (menus, item names).",
-            "* Installer and driver messages."]
+    if cfg["encoding"] == "jast_boot":
+        out += ["", "## Limits", "",
+                "* Messages: `{C2}` (name colour), `{C1}` (highlight) and `{C0}` (normal colour) switch "
+                "the text colour and are not drawn; `{A<n>}` are animation controls; keep them. `\\n` "
+                "starts a new line.  Full-width characters such as 「」 can stay in the English.",
+                "* Menu words: 14 letters (7 cells shown); longer ones are cut and reported.",
+                "* A rebuilt scene must fit the engine's scene buffer (it loads below the word file); "
+                "the patcher refuses a scene that would not.  Grown scenes move to never-written "
+                "sectors of their disk and their directory entry is updated.",
+                "* The disks have no file system, so the machine-translation notice is `MTL_NOTE.TXT` "
+                "next to the patched images instead of a file on the disk.",
+                "", "## Not handled", "",
+                "* Text drawn into the artwork (the title logo).",
+                "* The engine's own screen strings (save/load, disk prompts) are English already, drawn "
+                "full-width, and are left as they are."]
+    else:
+        out += ["", "## Limits", "",
+                "* Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` "
+                "placeholder); `\\n` starts a new paragraph.",
+                "* A scene file, with its English appended, must fit the engine's 16 KB scene buffer; "
+                "the patcher leaves a scene that would not fit in Japanese and reports it.",
+                "", "## Not handled", "",
+                "* Text drawn into the artwork (logos, menus drawn as pictures).",
+                "* Strings hard-coded in the engine program (menus, item names).",
+                "* Installer and driver messages."]
     for line in extra.get(name, {}).get("not_handled", []):
         out.append("* " + line)
     out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
@@ -331,7 +373,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") in ("jast", "jast_scm"):
+        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

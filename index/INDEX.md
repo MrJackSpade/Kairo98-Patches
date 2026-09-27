@@ -227,6 +227,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo Collection | [This repo: games/tenshi_collection (patcher working, machine translation in progress)](../games/tenshi_collection/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection 2 | [This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)](../games/tenshi_collection_2/notes.md) |
 | Jast | Tenshi-tachi no Gogo III Bangaihen Hanseiban | [This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)](../games/tenshi_iii_hanseiban/notes.md) |
+| Jast | Tenshi-tachi no Gogo IV - Yuko | [This repo: games/tenshi_iv (patcher working, machine translation in progress)](../games/tenshi_iv/notes.md) |
 | Jast | Tenshi-tachi no Gogo Special II | [This repo: games/tenshi_special_ii (patcher working, machine translation in progress)](../games/tenshi_special_ii/notes.md) |
 | Jast | Tenshi-tachi no Gogo Tenkousei | [This repo: games/tenshi_tenkousei (patcher working, machine translation in progress)](../games/tenshi_tenkousei/notes.md) |
 | Jast | Tenshi-tachi no Gogo V - Nerawareta Tenshi | [This repo: games/tenshi_v (patcher working, machine translation in progress)](../games/tenshi_v/notes.md) |
@@ -3241,7 +3242,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Tenshi-tachi no Gogo III - Ribbon [FD extras]
 - ♥ Tenshi-tachi no Gogo III Bangaihen [FD]
 - ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD] — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo IV - Yuko [FD]
+- ♥ Tenshi-tachi no Gogo IV - Yuko [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Special II [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Tenkousei [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo V - Nerawareta Tenshi [FD] — *MTL (this repo)*

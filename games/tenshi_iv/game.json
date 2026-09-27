@@ -1,0 +1,12 @@
+{
+ "title": "Tenshi-tachi no Gogo IV - Yuko",
+ "key": "Jast.zip/Tenshi-tachi no Gogo IV - Yuko",
+ "image": "Tenshi-tachi no Gogo IV - Yuko\\Tenshi-tachi no Gogo IV - Yuko [FD]\\Tenshi-tachi no Gogo IV - Yuko (Disk A).hdm",
+ "encoding": "jast_boot",
+ "floppies": {
+  "B": "Tenshi-tachi no Gogo IV - Yuko (Disk B).hdm"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,4:enter,4:shot,4:enter,5:enter,4:down,1:enter,4:shot,1:enter,4:shot,4:enter,4:shot"
+}
