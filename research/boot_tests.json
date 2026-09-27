@@ -638,6 +638,54 @@
    "not yet seen in this game (same pager code as Tenshi-tachi no Gogo IV, where it was checked)"
   ]
  ],
+ "tenshi_iii_bangaihen": [
+  [
+   "Title and opening (floppy set: boot disk and disk 2)",
+   "OK"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window (this build has no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK (a test build with a six-line message at the start)"
+  ],
+  [
+   "Partly translated build: untranslated Japanese still correct",
+   "OK (menus in Japanese next to an English message)"
+  ],
+  [
+   "Scene past the opening (breakfast)",
+   "OK"
+  ]
+ ],
+ "yoru_no_tenshi": [
+  [
+   "Title: sound output prompt (engine strings)",
+   "OK: half-width filler in the prompt box"
+  ],
+  [
+   "Opening (floppy set: boot disk and disk 2)",
+   "OK"
+  ],
+  [
+   "Message window (this build has no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK"
+  ],
+  [
+   "Verb and noun menus",
+   "not yet seen (the opening runs as a sequence of messages)"
+  ]
+ ],
  "tenshi_iii_ribbon": [
   [
    "Title and opening (floppy set: boot disk and disk 2)",

@@ -1,0 +1,12 @@
+{
+ "title": "Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken",
+ "key": "Jast.zip/Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken",
+ "image": "Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD]\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken (Disk A).hdm",
+ "encoding": "jast_boot",
+ "floppies": {
+  "B": "Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken (Disk B).hdm"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,4:enter,4:shot,4:enter,5:enter,4:down,1:enter,4:shot,1:enter,4:shot,4:enter,4:shot"
+}

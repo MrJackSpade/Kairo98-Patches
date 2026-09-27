@@ -1240,7 +1240,7 @@
   "hits": 3,
   "strings": 1974,
   "distinct_terms": 3,
-  "summary": "manual: declined - the script sexualizes a character stated to be 17 (a scene text line, found 2026-09-27); no patch will be made",
+  "summary": "manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script (2026-09-27)",
   "adult_ids": [
    "m01674",
    "w00117",
@@ -1252,7 +1252,7 @@
   "hits": 1,
   "strings": 1582,
   "distinct_terms": 1,
-  "summary": "manual: declined - the script has sex with a character stated to be 17 (found 2026-09-27); no patch will be made",
+  "summary": "manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script (2026-09-27)",
   "adult_ids": [
    "m00676"
   ]
@@ -1276,13 +1276,5 @@
   "adult_ids": [
    "w00116"
   ]
- },
- "Jast.zip/Tenshi-tachi no Gogo II - Minako": {
-  "adult": true,
-  "hits": 0,
-  "strings": 1230,
-  "distinct_terms": 0,
-  "summary": "manual: declined - the heroine is stated to be 17 in a game with sex scenes (the opening line, found 2026-09-27); no patch will be made",
-  "adult_ids": []
  }
 }

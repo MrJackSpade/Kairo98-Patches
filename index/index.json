@@ -124125,7 +124125,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "script text: manual: declined - the heroine is stated to be 17 in a game with sex scenes (the opening line, found 2026-09-27); no patch will be made",
+   "heart_basis": "VNDB r17826 (erotic content)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
@@ -124288,15 +124288,22 @@
      "path": "Tenshi-tachi no Gogo III Bangaihen\\Tenshi-tachi no Gogo III Bangaihen [FD]\\Tenshi-tachi no Gogo III Bangaihen (uncensored) (Disk A).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_iii_bangaihen (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_iii_bangaihen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "script text: manual: declined - the script sexualizes a character stated to be 17 (a scene text line, found 2026-09-27); no patch will be made",
+   "heart_basis": "script text: manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban",
@@ -124978,15 +124985,22 @@
      "path": "Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken [FD]\\Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)",
+     "url": "../games/yoru_no_tenshi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "script text: manual: declined - the script has sex with a character stated to be 17 (found 2026-09-27); no patch will be made",
+   "heart_basis": "script text: manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "JHV.zip/Aggregate",
