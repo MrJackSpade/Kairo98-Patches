@@ -4,41 +4,31 @@ This is the checklist for calling a game **Done**. A goal like *"bring Funny Bee
 to Done"* means: work through every item below that applies, in order, until
 all of them are true, and don't stop at "it works on my machine".
 
-The order matters: the script is extracted and classified **first**, and then
-handed off, so translation (the maintainer's for ♥ games, Claude's otherwise)
-runs while the patching work goes on. Nobody waits for the patcher.
+The order matters: the script is extracted **first** and handed off, so the
+translation model can start while the patching work goes on. Nobody waits for
+the patcher.
 
-> **What stops work, and what doesn't**
+> **Who does what**
 >
+> * **Claude does decomp only:** reverse-engineering the engine, extracting
+>   the Japanese script into `strings.json`, and building a patcher that takes
+>   arbitrary, longer English back in. It also sets up the standard folder,
+>   runs the boot tests and keeps the tooling records. Claude doesn't
+>   translate any game, adult or not.
+> * **The translation model does everything to do with the script's
+>   content:** translating, the adult (♥) classification, and any tagging or
+>   flagging of what's in the script. Claude doesn't read scripts for
+>   content, scan them, or record content findings. The scripts are then left
+>   to other people and teams to use as they choose.
 > * **The only thing that stops work** on a game is §1: a human translation
->   already exists, or a team with finished releases has announced one. Then the
->   game is recorded as skipped and is finished.
-> * **A ♥ mark never stops work.** It changes exactly one thing: Claude doesn't
->   translate that game's script (§7), and the maintainer does. Every other
->   section (extraction, handoff, patching, the standard folder, testing,
->   publishing) is still Claude's job, and must be completed for a ♥ game
->   exactly as for any other. A ♥ game isn't Done until it's Tooling Done.
-> * The same goes if a no-♥ game turns out to be adult partway through
->   translation: Claude stops *translating* it, and carries on with all the
->   other work.
-> * **Content never stops the tooling.** This repo develops patching tooling
->   (extraction, patcher, standard folder, testing, records) for **every**
->   game. Whether a script can be translated, and by whom, is the translation
->   model's call, and it can only be made from the extracted script and the
->   record of what was found and why (`research/adult_text.json`, `notes.md`).
->   Those scripts and records are then left to other people and teams to use
->   as they choose.
-> * So a content concern (explicit text, characters' stated ages) is
->   **recorded**, not acted on: note what was found and where, and carry on
->   with the tooling. Never decline, withdraw or delete a game folder,
->   extractor, patcher or record over content.
+>   already exists, or a team with finished releases has announced one. Then
+>   the game is recorded as skipped and is finished.
+> * **Content never stops the tooling.** Every game gets the tooling. Never
+>   decline, withdraw or delete a game folder, extractor, patcher or record
+>   over content.
 
-Two kinds of game have different end states:
-
-| Kind | How you tell | Done means |
-|---|---|---|
-| **♥ adult** | the script-text scan says adult (see §3) | **Tooling Done**: the game is fully patchable and tested. The script goes to the maintainer **as soon as it's extracted and classified**, and they translate it with their own model while Claude builds the patch. Claude does not translate it. |
-| **No ♥** | the scan says not adult | **Translated Done**: Tooling Done, *plus* Claude has translated the whole script and the English build is tested. |
+**Done** means **Tooling Done**: the script is extracted and handed off, and
+the game is fully patchable with any English and tested (§1–§6 and §8).
 
 ---
 
@@ -85,37 +75,17 @@ index, and **stop**. That game is not ours.
       and Japanese text. If a later tooling change alters the displayed `jp`,
       migrate the existing translations in the same commit.
 
-## 3. Adult (♥) classification: immediately after extraction
+## 3. Handoff: right after extraction
 
-- [ ] Run `python tools/adult_scan.py "<index key>" games/<title>/strings.json`.
-- [ ] The scan decides the mark, and nothing else does (not the publisher, the
-      box art, or VNDB). It flags a game with **5+ matching lines and 3+ distinct
-      terms, or 15+ matching lines**, using only single-meaning sexual terms (see
-      the list in `tools/adult_scan.py`). Profanity and violence never count.
-- [ ] Put the mark in the game's `notes.md` title (`# ♥ Title`) and in the index.
-- [ ] **Safety valve:** if explicit sexual text turns up while translating a
-      no-♥ game, stop *translating*. Never translate past it. Mark the game ♥
-      (record `"adult": true` with a `"summary"` beginning `manual:` in
-      `research/adult_text.json`), and the rest of the translation goes to the
-      maintainer. **All other work on the game continues** (patching, testing,
-      publishing).
-- [ ] **A ♥ result is not a reason to stop.** Continue straight on to the handoff
-      and §4–§8. Only §7 (translation) moves to the maintainer.
-- [ ] **Record any content concern for the translation model.** If the script
-      raises one (for example characters' stated ages in sexual scenes), write
-      what was found, where (scene file or string ids) and why it matters into
-      the game's `research/adult_text.json` summary and `notes.md`. That record
-      is for whoever translates; it doesn't change the tooling work, which
-      continues to Tooling Done.
-
-## Handoff: translation starts here, alongside development
-
-- [ ] **♥ game:** commit and push `strings.json` right away, and mark the game
-      **Ready to translate** in `ROADMAP.md`'s status table. The maintainer
-      translates it with their own model while Claude **carries on with §4–§8
-      for this same game**. Handing off the script is not the end of Claude's
-      work on it, and it isn't held back until the patcher is finished.
-- [ ] **No-♥ game:** Claude starts translating (§7) in parallel with the patching work.
+- [ ] Commit and push `strings.json` right away, and mark the game **Ready to
+      translate** in `ROADMAP.md`'s status table. The translation model takes
+      it from there (translation, ♥ classification, any content flags) while
+      Claude **carries on with §4–§8 for this same game**. Handing off the
+      script isn't the end of Claude's work on it, and the script isn't held
+      back until the patcher is finished.
+- [ ] Claude doesn't classify, scan, tag or flag the script's content, and
+      doesn't write content findings into `research/adult_text.json`,
+      `notes.md` or anywhere else. That record belongs to the translation model.
 
 ## 4. Patching
 
@@ -160,19 +130,13 @@ index, and **stop**. That game is not ours.
 - [ ] Anything not reached (battles, dungeons, save/load, endings) is listed
       as **not yet seen** in `notes.md`. Don't claim what wasn't seen.
 
-## 7. Translation (no-♥ games only)
+## 7. Translation: not Claude's
 
-- [ ] Every string in `strings.json` has `en`, and
-      `python tools/mtl.py check` shows **no token mismatches**.
-- [ ] Names, places and terms are consistent throughout. Settle the `name`
-      entries first and use them as the glossary.
-- [ ] A real patch (`PATCH.BAT`) builds with **no warnings** (nothing too wide,
-      nothing truncated).
-- [ ] The English build boots and reads correctly across the screens in §6,
-      using real text instead of filler.
-
-(For ♥ games this one section belongs to the maintainer, and Claude skips only
-this section. Sections 4, 5, 6 and 8 still apply in full.)
+Translation belongs to the translation model for every game, with or without
+♥. So do the ♥ mark (`research/adult_text.json`, `tools/adult_scan.py`) and any
+content tagging or flagging. Claude's part ends when any English the model
+writes, of any length, goes in through `patch.py` (§4, proven by the §6 stress
+test).
 
 ## 8. Record and publish
 
@@ -194,11 +158,10 @@ this section. Sections 4, 5, 6 and 8 still apply in full.)
 ## Using this in a goal
 
 - *"Bring `<game>` to Done"*: every applicable section above.
-- *"Get `<game>` ready to translate"*: §1–§3 plus the handoff. This is the fast
-  path that gives the maintainer something to translate.
+- *"Get `<game>` ready to translate"*: §1–§3. This is the fast path that
+  gives the translation model something to translate.
 - *"Bring the `<engine>` family to Tooling Done"*: §1–§6 and §8 for each game
-  on that engine, plus the translation (§7) for any no-♥ game among them. Do
-  §1–§3 and the handoff for **every** game in the family before starting the
-  patch work on any of them.
+  on that engine. Do §1–§3 for **every** game in the family before starting
+  the patch work on any of them.
 - A game that fails §1 is finished once it's recorded as skipped. That counts
   as done for that game.

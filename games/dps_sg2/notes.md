@@ -34,7 +34,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 16452 strings: 5 exe, 738 menu, 15709 msg.
 
-♥ by the safety valve: sexual advances toward a character stated to be 17 found while translating (first at u00049) (2026-09-26). Claude translated 48 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 48 of 16452 strings have English so far.
 
 ## Limits
 

@@ -28,7 +28,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 1966 strings: 4 exe, 136 menu, 1727 msg, 71 obj, 28 verb.
 
-♥ by the safety valve: explicit sex scene found while translating (first at m00872) (2026-09-26). Claude translated 1106 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 1106 of 1966 strings have English so far.
 
 ## Limits
 

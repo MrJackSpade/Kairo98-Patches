@@ -27,7 +27,7 @@ JAST's scene engine (`TEN_S/TEN_S.EXE`): 179 scene files (`*.OVL`) holding text 
 
 1829 strings (1702 scene text, 127 engine strings).
 
-♥ by the safety valve: explicit sexual scenes (undressing commands, moaning scenes, first at m00058/m00253) found while checking the script (2026-09-26). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1829 strings have English so far.
 
 ## Limits
 

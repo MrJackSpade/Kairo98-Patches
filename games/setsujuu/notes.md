@@ -27,7 +27,7 @@ JAST's scene engine (`SETU/SETU.EXE`): 136 scene files (`*.OVL`) holding text an
 
 6966 strings (6923 scene text, 43 engine strings).
 
-♥ by the script-text scan (42 of 6923 strings match the sexual-vocabulary list (7 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6966 strings have English so far.
 
 ## Limits
 

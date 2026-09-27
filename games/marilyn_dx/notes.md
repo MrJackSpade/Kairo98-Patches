@@ -27,7 +27,7 @@ JAST's scene engine (`DX/MAL_DX.EXE`): 103 scene files (`*.OVL`) holding text an
 
 1973 strings (1628 scene text, 345 engine strings).
 
-♥ by the safety valve: explicit sexual scenes (first at m01382/m01475) found while checking the script (2026-09-26). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1973 strings have English so far.
 
 ## Limits
 

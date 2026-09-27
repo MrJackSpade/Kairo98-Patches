@@ -27,7 +27,7 @@ JAST's scene engine (`FRM/FRM.EXE`): 157 scene files (`*.OVL`) holding text and 
 
 12223 strings (12152 scene text, 71 engine strings).
 
-♥ by the script-text scan (6 of 12152 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 12223 strings have English so far.
 
 ## Limits
 

@@ -27,7 +27,7 @@ JAST's scene engine (`TENHO/TENHO.EXE`): 92 scene files (`*.OVL`) holding text a
 
 7353 strings (7302 scene text, 51 engine strings).
 
-♥ by the safety valve: explicit sexual scene with the protagonist's student Aya (first at m00209/m00254) found while checking the script (2026-09-26). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 7353 strings have English so far.
 
 ## Limits
 

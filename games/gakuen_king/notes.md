@@ -30,7 +30,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 19401 strings: 40 exe, 547 menu, 18370 msg, 444 name.
 
-♥ by the script-text scan (84 of 19401 strings match the sexual-vocabulary list (7 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 19401 strings have English so far.
 
 ## Limits
 

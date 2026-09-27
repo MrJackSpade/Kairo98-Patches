@@ -30,7 +30,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 2086 strings: 6 exe, 361 menu, 1342 msg, 377 name.
 
-♥ by the safety valve: sexual proposition scene involving party members stated to be 16-17 found while translating (2026-09-26, first at m00076). Claude translated 813 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 813 of 2086 strings have English so far.
 
 ## Limits
 

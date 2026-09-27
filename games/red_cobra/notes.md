@@ -33,7 +33,7 @@ Illusion's tmexec engine, `RED/GAME.EXE`. Messages are `#nnnnn` ... `$` records 
 
 643 strings: 57 exe, 586 msg.
 
-♥ by the safety valve: explicit genital description found while translating (first at m00150) (2026-09-26). Claude translated 149 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 149 of 643 strings have English so far.
 
 ## Limits
 

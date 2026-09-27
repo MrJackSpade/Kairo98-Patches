@@ -27,7 +27,7 @@ JAST's scene engine (`HNT/HNT_RLT.EXE`): 152 scene files (`*.OVL`) holding text 
 
 4985 strings (4833 scene text, 152 engine strings).
 
-♥ by the script-text scan (30 of 4833 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4985 strings have English so far.
 
 ## Limits
 

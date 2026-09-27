@@ -28,7 +28,7 @@ Illusion's C-compiled engine (`ARMY/GAME.EXE`, packed with Microsoft EXEPACK; th
 
 297 strings: 234 exe, 63 text.
 
-No ♥ (0 of 297 strings match the sexual-vocabulary list (0 distinct terms)). Claude translates it; 297 of 297 strings done.
+Translation and the content classification (♥) are done by the translation model; 297 of 297 strings have English so far.
 
 ## Limits
 

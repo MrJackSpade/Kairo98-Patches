@@ -33,7 +33,7 @@ Illusion's tmexec engine, `HYOURYUU/GAME.EXE`. Messages are `#nnnnn` ... `$` rec
 
 2594 strings: 24 exe, 2570 msg.
 
-♥ by the script-text scan (10 of 2570 strings match the sexual-vocabulary list (4 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 2594 strings have English so far.
 
 ## Limits
 

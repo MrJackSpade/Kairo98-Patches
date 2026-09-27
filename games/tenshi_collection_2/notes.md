@@ -27,7 +27,7 @@ JAST's scene engine (`TSP2/TSP2.EXE`): 176 scene files (`*.OVL`) holding text an
 
 6832 strings (6775 scene text, 57 engine strings).
 
-♥ by the script-text scan (31 of 6775 strings match the sexual-vocabulary list (8 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6832 strings have English so far.
 
 ## Limits
 

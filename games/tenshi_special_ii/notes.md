@@ -24,7 +24,7 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 1879 strings (1633 scene text, 42 engine strings, 204 menu words).
 
-♥ by the script-text scan (20 of 1677 strings match the sexual-vocabulary list (4 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1879 strings have English so far.
 
 ## Limits
 

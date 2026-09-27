@@ -29,7 +29,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 7426 strings: 21 demo, 4 exe, 342 menu, 7008 msg, 33 obj, 18 verb.
 
-♥ by the safety valve: sexual command menu, possibly involving a minor, found while translating (first at u00052) (2026-09-26). Claude translated 102 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 102 of 7426 strings have English so far.
 
 ## Limits
 

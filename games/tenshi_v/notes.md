@@ -23,7 +23,7 @@ Every floppy's scene files are patched; the output is the full disk set.
 
 2238 strings (1959 scene text, 32 engine strings, 233 menu words, 14 batch lines).
 
-♥ by the script-text scan (6 of 2002 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 2238 strings have English so far.
 
 ## Limits
 

@@ -171,17 +171,8 @@ def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
         out += ["", ILLUSION_DISPLAY]
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, k) for k, n in sorted(kinds.items()))), ""]
-    if heart:
-        basis = a.get("summary", "")
-        if basis.startswith("manual:"):
-            out.append("♥ by the safety valve: %s. Claude translated %d strings before that point; "
-                       "the rest is the maintainer's to translate." % (basis[len("manual:"):].strip(), done))
-        else:
-            out.append("♥ by the script-text scan (%s). The maintainer translates it; %d strings "
-                       "have English so far." % (basis, done))
-    else:
-        out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
-            a.get("summary", "not scanned"), done, len(strings)))
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
     out += ["", "## Limits", ""]
     if cfg["encoding"] == "illusion_font24":
         out += ["* Each string keeps its original byte length: one letter per byte, two per "
@@ -375,17 +366,8 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     labels = {"title": "title screen", "msg": "scene text", "engine": "engine strings", "word": "menu words", "batch": "batch lines"}
     out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
         "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
-    if heart:
-        basis = a.get("summary", "")
-        if basis.startswith("manual:"):
-            out.append("♥ by the safety valve: %s. The maintainer translates it; %d strings have English so far."
-                       % (basis[len("manual:"):].strip(), done))
-        else:
-            out.append("♥ by the script-text scan (%s). The maintainer translates it; %d strings "
-                       "have English so far." % (basis, done))
-    else:
-        out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
-            a.get("summary", "not scanned"), done, len(strings)))
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
     if cfg["encoding"] in ("jast_boot", "jast_ribbon", "jast_cosmos"):
         out += ["", "## Limits", "",
                 "* Messages: `{C2}` (name colour), `{C1}` (highlight) and `{C0}` (normal colour) switch "
@@ -514,17 +496,8 @@ def main():
         out += ["", DISPLAY.get(cfg["encoding"], ""), COMMON, "", "## Script", ""]
         out.append("%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, k) for k, n in sorted(kinds.items()))))
         out.append("")
-        if heart:
-            basis = a.get("summary", "")
-            if basis.startswith("manual:"):
-                out.append("♥ by the safety valve: %s. Claude translated %d strings before that point; "
-                           "the rest is the maintainer's to translate." % (basis[len("manual:"):].strip(), done))
-            else:
-                out.append("♥ by the script-text scan (%s). The maintainer translates it; %d strings "
-                           "have English so far." % (basis, done))
-        else:
-            out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
-                a.get("summary", "not scanned"), done, len(strings)))
+        out.append("Translation and the content classification (♥) are done by the translation model; "
+                   "%d of %d strings have English so far." % (done, len(strings)))
         out += ["", "## Limits", "",
                 "* Message lines wrap to the text window (its width from the script's window "
                 "commands, or the widest Japanese line); `\\n` forces a break.",

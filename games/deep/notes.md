@@ -27,7 +27,7 @@ JAST's scene engine (`DEEP/DEEP.EXE`): 658 scene files (`*.OVL`) holding text an
 
 13270 strings (13101 scene text, 169 engine strings).
 
-♥ by the script-text scan (74 of 13101 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 13270 strings have English so far.
 
 ## Limits
 

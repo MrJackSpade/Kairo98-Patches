@@ -25,7 +25,7 @@ Illusion's older engine (``MOKKORI/GAME.EXE``). Messages are records in `MES0.D`
 
 311 strings: 9 lyric, 243 msg, 53 profile, 6 prompt.
 
-♥ by the script-text scan (33 of 311 strings match the sexual-vocabulary list (4 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 311 strings have English so far.
 
 ## Limits
 

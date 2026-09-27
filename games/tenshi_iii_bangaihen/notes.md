@@ -32,7 +32,7 @@ The disk tool that built the floppies cut files at a sector boundary and left ol
 
 1988 strings (1712 scene text, 276 menu words).
 
-♥ by the safety valve: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script; for the translation model: a character is stated to be 17 in a sexual context at m01674 (scene52:3) (2026-09-27). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1988 strings have English so far.
 
 ## Limits
 

@@ -30,7 +30,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 1013 strings: 6 exe, 109 menu, 881 msg, 17 name.
 
-♥ by the safety valve: sexualized commentary on possibly underage racers and an explicit training menu found while translating (2026-09-26, first at m00145). Claude translated 270 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 270 of 1013 strings have English so far.
 
 ## Limits
 

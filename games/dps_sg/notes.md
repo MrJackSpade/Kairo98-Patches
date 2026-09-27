@@ -34,7 +34,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 10861 strings: 8 exe, 691 menu, 10162 msg.
 
-♥ by the safety valve: sexual assault command menu found while translating (first at u00047) (2026-09-26). Claude translated 46 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 46 of 10861 strings have English so far.
 
 ## Limits
 

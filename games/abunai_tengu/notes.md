@@ -38,7 +38,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 4244 strings: 9 exe, 256 menu, 3979 msg.
 
-♥ by the safety valve: sexual action choice for the schoolgirl protagonist found while translating (first at u00099) (2026-09-26). Claude translated 98 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 98 of 4244 strings have English so far.
 
 ## Limits
 

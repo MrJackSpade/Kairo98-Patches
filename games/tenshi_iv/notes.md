@@ -30,9 +30,9 @@ The disk tool that built the floppies cut files at a sector boundary and left ol
 
 ## Script
 
-1477 strings (scene text).
+1477 strings (1211 scene text, 266 menu words).
 
-♥ by the safety valve: explicit sexual command words (clitoris, cunnilingus, SEX, first at w00118) and sex scenes found while checking the script (2026-09-27). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1477 strings have English so far.
 
 ## Limits
 

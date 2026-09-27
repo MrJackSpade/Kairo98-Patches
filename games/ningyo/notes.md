@@ -30,7 +30,7 @@ Every script page disassembles and reassembles byte for byte (`tools/verify_roun
 
 290 strings: 6 exe, 284 msg.
 
-♥ by the safety valve: explicit sexual scenes found while translating (2026-09-26); the scan's vocabulary list misses them (dialect and euphemism). Claude translated 0 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 0 of 290 strings have English so far.
 
 ## Limits
 

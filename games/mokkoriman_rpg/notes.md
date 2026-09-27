@@ -33,7 +33,7 @@ Illusion's tmexec engine, `MOKO2/GAME.EXE`. Messages are `#nnnnn` ... `$` record
 
 1052 strings: 64 exe, 988 msg.
 
-♥ by the script-text scan (25 of 988 strings match the sexual-vocabulary list (5 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1052 strings have English so far.
 
 ## Limits
 

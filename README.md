@@ -38,11 +38,12 @@ testing and publishing, is **[DEFINITION_OF_DONE.md](DEFINITION_OF_DONE.md)**.
   `notes.md`, and in the index.
 * When a human translation of a game we've machine-translated appears, ours is
   marked superseded and removed, and the index links to theirs.
-* **♥ marks adult content.** A ♥ game's script is machine-translated by the
-  maintainer with a separate model; games without ♥ are machine-translated in
-  this repo. The mark is judged from the game's script text alone
-  (`tools/adult_scan.py`, stored as counts only in `research/adult_text.json`).
-  Until a game's script has been extracted, a provisional mark comes from VNDB's
+* **This repo's own work is decomp:** engine tooling, extracting each game's
+  Japanese script into `strings.json`, and patchers that take any English
+  back in. Translating every script, adult or not, is done by a separate
+  translation model, and so is all classification of a script's content: the
+  ♥ (adult) mark in `research/adult_text.json` and any tagging or flagging.
+  Until a script has been classified, a provisional mark comes from VNDB's
   erotic-content flag or the publisher's record.
 
 ## Layout

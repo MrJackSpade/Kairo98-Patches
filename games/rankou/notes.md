@@ -33,7 +33,7 @@ Illusion's tmexec engine, `RANKOU/GAME.EXE`. Messages are `#nnnnn` ... `$` recor
 
 301 strings: 24 exe, 277 msg.
 
-♥ by the safety valve: sexualized reward scene involving a possible minor, then explicit scenes, found while translating (first at m00046) (2026-09-26). Claude translated 45 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 45 of 301 strings have English so far.
 
 ## Limits
 

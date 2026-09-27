@@ -33,7 +33,7 @@ Illusion's tmexec engine, `PRI/GAME.EXE`. Messages are `#nnnnn` ... `$` records 
 
 2602 strings: 64 exe, 2538 msg.
 
-♥ by the safety valve: sexual assault during a prison intake search found while translating (first at m00007) (2026-09-26). Claude translated 6 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 6 of 2602 strings have English so far.
 
 ## Limits
 

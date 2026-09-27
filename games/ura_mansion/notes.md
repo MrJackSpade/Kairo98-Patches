@@ -33,7 +33,7 @@ Illusion's tmexec engine, `MANSYON/GAME.EXE`. Messages are `#nnnnn` ... `$` reco
 
 734 strings: 24 exe, 710 msg.
 
-♥ by the script-text scan (25 of 710 strings match the sexual-vocabulary list (5 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 734 strings have English so far.
 
 ## Limits
 

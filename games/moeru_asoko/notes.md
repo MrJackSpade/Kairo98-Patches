@@ -28,7 +28,7 @@ Illusion's C-compiled engine (`PAIPAI/GAME.EXE`, packed with Microsoft EXEPACK; 
 
 106 strings: 5 dos, 101 exe.
 
-♥ by the safety valve: strip-mahjong game with H scenes; the first opponent is introduced as 17 (found while testing) (2026-09-26). Claude translated 0 strings before that point; the rest is the maintainer's to translate.
+Translation and the content classification (♥) are done by the translation model; 0 of 106 strings have English so far.
 
 ## Limits
 

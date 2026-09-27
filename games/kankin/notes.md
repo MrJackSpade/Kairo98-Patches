@@ -33,7 +33,7 @@ Illusion's tmexec engine, `KAN/GAME.EXE`. Messages are `#nnnnn` ... `$` records 
 
 450 strings: 30 exe, 420 msg.
 
-♥ by the script-text scan (5 of 420 strings match the sexual-vocabulary list (3 distinct terms)). The maintainer translates it; 0 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 450 strings have English so far.
 
 ## Limits
 
