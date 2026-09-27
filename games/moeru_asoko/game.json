@@ -1,0 +1,24 @@
+{
+ "title": "Moeru Asoko no Paipai Yuugi",
+ "key": "Illusion.zip/Moeru Asoko no Paipai Yuugi",
+ "image": "Moeru Asoko no Paipai Yuugi\\Moeru Asoko no Paipai Yuugi [HD]\\Moeru Asoko no Paipai Yuugi.hdi",
+ "game_dir": "PAIPAI",
+ "engine": "GAME.EXE",
+ "encoding": "illusion_font24",
+ "data": [
+  121584,
+  128512
+ ],
+ "skip": [
+  [
+   126672,
+   127056
+  ]
+ ],
+ "dgroup": 7595,
+ "pointers": [
+  7936,
+  7940
+ ],
+ "boot_steps": "30:shot,10:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,15:shot,1:mouse=-80;-50,1:mouse=-80;-50,1:lclick,12:shot,8:lclick,10:shot,5:lclick,5:shot"
+}

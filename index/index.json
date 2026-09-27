@@ -116576,7 +116576,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 8 of 8 classified Illusion titles are adult",
+   "heart_basis": "provisional: 9 of 9 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -117075,15 +117075,22 @@
      "path": "Moeru Asoko no Paipai Yuugi\\Moeru Asoko no Paipai Yuugi [HD]\\Moeru Asoko no Paipai Yuugi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/moeru_asoko (patcher working, machine translation in progress)",
+     "url": "../games/moeru_asoko/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 8 of 8 classified Illusion titles are adult",
+   "heart_basis": "script text: manual: strip-mahjong game with H scenes; the first opponent is introduced as 17 (found while testing) (2026-09-26)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Mokkoriman RPG",

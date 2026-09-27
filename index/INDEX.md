@@ -211,6 +211,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
 | Illusion | Kitoujima Joshi Keimusho | [This repo: games/kitoujima (patcher working, machine translation in progress)](../games/kitoujima/notes.md) |
+| Illusion | Moeru Asoko no Paipai Yuugi | [This repo: games/moeru_asoko (patcher working, machine translation in progress)](../games/moeru_asoko/notes.md) |
 | Illusion | Mokkoriman RPG | [This repo: games/mokkoriman_rpg (patcher working, machine translation in progress)](../games/mokkoriman_rpg/notes.md) |
 | Illusion | Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri | [This repo: games/rankou (patcher working, machine translation in progress)](../games/rankou/notes.md) |
 | Illusion | Red Cobra | [This repo: games/red_cobra (patcher working, machine translation in progress)](../games/red_cobra/notes.md) |
@@ -3066,7 +3067,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Hyouryuu [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Kankin [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Kitoujima Joshi Keimusho [FD HD] `tmexec` — *MTL (this repo)*
-- ♥ Moeru Asoko no Paipai Yuugi [FD HD extras] `tmexec`
+- ♥ Moeru Asoko no Paipai Yuugi [FD HD extras] `tmexec` — *MTL (this repo)*
 - ♥ Mokkoriman RPG [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Red Cobra [FD HD] `tmexec` — *MTL (this repo)*

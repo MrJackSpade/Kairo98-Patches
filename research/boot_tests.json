@@ -333,5 +333,19 @@
    "Character profile frame (profile records)",
    "OK: half-width filler inside the frame, one record per frame line"
   ]
+ ],
+ "moeru_asoko": [
+  [
+   "Title and stage select",
+   "OK (pictures)"
+  ],
+  [
+   "Opponent introduction",
+   "OK (picture)"
+  ],
+  [
+   "Mahjong table: seat winds, scores, round label",
+   "OK: half-width filler letter pairs, two per cell; untranslated 局 draws as before"
+  ]
  ]
 }

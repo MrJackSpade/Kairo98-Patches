@@ -440,5 +440,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Illusion.zip/Moeru Asoko no Paipai Yuugi": [
+  {
+   "label": "This repo: games/moeru_asoko (patcher working, machine translation in progress)",
+   "url": "../games/moeru_asoko/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

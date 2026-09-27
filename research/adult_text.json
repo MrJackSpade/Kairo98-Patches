@@ -773,5 +773,13 @@
    "m00902",
    "m01077"
   ]
+ },
+ "Illusion.zip/Moeru Asoko no Paipai Yuugi": {
+  "adult": true,
+  "hits": 0,
+  "strings": 106,
+  "distinct_terms": 0,
+  "summary": "manual: strip-mahjong game with H scenes; the first opponent is introduced as 17 (found while testing) (2026-09-26)",
+  "adult_ids": []
  }
 }

@@ -1,0 +1,1088 @@
+{
+ "game": "Moeru Asoko no Paipai Yuugi",
+ "source_image_sha256": "b96940c9b15542bebe68c1cffb9f118ad0234340eab113299b01ce3ddf655d72",
+ "strings": [
+  {
+   "id": "e00001",
+   "kind": "dos",
+   "jp": "起動用のメモリが足りません。必要空きメモリは約５６０ＫＢです。\n",
+   "en": "",
+   "refs": [
+    "exe:1fe52"
+   ],
+   "max_bytes": 63
+  },
+  {
+   "id": "e00002",
+   "kind": "dos",
+   "jp": "ハードディスクでコマンドラインから起動すると、このように何かと不都合が生じる場合\n",
+   "en": "",
+   "refs": [
+    "exe:1fe92"
+   ],
+   "max_bytes": 81
+  },
+  {
+   "id": "e00003",
+   "kind": "dos",
+   "jp": "がありますので、フロッピーディスクから起動して実行をハードディスクに移す方法を\n",
+   "en": "",
+   "refs": [
+    "exe:1fee4"
+   ],
+   "max_bytes": 79
+  },
+  {
+   "id": "e00004",
+   "kind": "dos",
+   "jp": "お勧めします。\n",
+   "en": "",
+   "refs": [
+    "exe:1ff34"
+   ],
+   "max_bytes": 15
+  },
+  {
+   "id": "e00005",
+   "kind": "exe",
+   "jp": "チー",
+   "en": "",
+   "refs": [
+    "exe:200a6"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00006",
+   "kind": "exe",
+   "jp": "ポン",
+   "en": "",
+   "refs": [
+    "exe:200b3"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00007",
+   "kind": "exe",
+   "jp": "カン",
+   "en": "",
+   "refs": [
+    "exe:200c0",
+    "exe:200da",
+    "exe:20142",
+    "exe:2014f"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00008",
+   "kind": "exe",
+   "jp": "ロン",
+   "en": "",
+   "refs": [
+    "exe:200cd"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00009",
+   "kind": "exe",
+   "jp": "リーチ",
+   "en": "",
+   "refs": [
+    "exe:20128"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00010",
+   "kind": "exe",
+   "jp": "ツモ",
+   "en": "",
+   "refs": [
+    "exe:20135"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00011",
+   "kind": "exe",
+   "jp": "九種九牌",
+   "en": "",
+   "refs": [
+    "exe:2015c"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00012",
+   "kind": "exe",
+   "jp": "つづける",
+   "en": "",
+   "refs": [
+    "exe:20169"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00013",
+   "kind": "exe",
+   "jp": "やめる",
+   "en": "",
+   "refs": [
+    "exe:20176"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00014",
+   "kind": "exe",
+   "jp": "おつかれさまでした",
+   "en": "",
+   "refs": [
+    "exe:20ce6"
+   ],
+   "max_bytes": 18
+  },
+  {
+   "id": "e00015",
+   "kind": "exe",
+   "jp": "ディスクを抜いて、電源を切ってください",
+   "en": "",
+   "refs": [
+    "exe:20cf9"
+   ],
+   "max_bytes": 38
+  },
+  {
+   "id": "e00016",
+   "kind": "exe",
+   "jp": "ＢＧＭ@@%.2d",
+   "en": "",
+   "refs": [
+    "exe:20d20"
+   ],
+   "max_bytes": 12,
+   "note": "printf format: keep the %-specifier; the result is drawn as letter pairs, so the English on each side of the specifier must be even in length"
+  },
+  {
+   "id": "e00017",
+   "kind": "exe",
+   "jp": "まだおあずけ",
+   "en": "",
+   "refs": [
+    "exe:20d30"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00018",
+   "kind": "exe",
+   "jp": "水着篇麻雀中",
+   "en": "",
+   "refs": [
+    "exe:20d46"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00019",
+   "kind": "exe",
+   "jp": "制服篇麻雀中",
+   "en": "",
+   "refs": [
+    "exe:20d53"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00020",
+   "kind": "exe",
+   "jp": "ＯＬ篇麻雀中",
+   "en": "",
+   "refs": [
+    "exe:20d60"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00021",
+   "kind": "exe",
+   "jp": "　Ｈシーン",
+   "en": "",
+   "refs": [
+    "exe:20d6d"
+   ],
+   "max_bytes": 10
+  },
+  {
+   "id": "e00022",
+   "kind": "exe",
+   "jp": "@@自己紹介１",
+   "en": "",
+   "refs": [
+    "exe:20d7a"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00023",
+   "kind": "exe",
+   "jp": "@@自己紹介２",
+   "en": "",
+   "refs": [
+    "exe:20d87"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00024",
+   "kind": "exe",
+   "jp": "@@自己紹介３",
+   "en": "",
+   "refs": [
+    "exe:20d94"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00025",
+   "kind": "exe",
+   "jp": "　タイトル",
+   "en": "",
+   "refs": [
+    "exe:20da1"
+   ],
+   "max_bytes": 10
+  },
+  {
+   "id": "e00026",
+   "kind": "exe",
+   "jp": "ステージ選択",
+   "en": "",
+   "refs": [
+    "exe:20dae"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00027",
+   "kind": "exe",
+   "jp": "ゲームオーバ",
+   "en": "",
+   "refs": [
+    "exe:20dbb"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00028",
+   "kind": "exe",
+   "jp": "エンディング",
+   "en": "",
+   "refs": [
+    "exe:20dc8"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00029",
+   "kind": "exe",
+   "jp": "得点表-YOU１",
+   "en": "",
+   "refs": [
+    "exe:20dd5"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00030",
+   "kind": "exe",
+   "jp": "得点表-YOU２",
+   "en": "",
+   "refs": [
+    "exe:20de2"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00031",
+   "kind": "exe",
+   "jp": "得点表-COM１",
+   "en": "",
+   "refs": [
+    "exe:20def"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00032",
+   "kind": "exe",
+   "jp": "得点表-COM２",
+   "en": "",
+   "refs": [
+    "exe:20dfc"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00033",
+   "kind": "exe",
+   "jp": "ＣＯＭリーチ",
+   "en": "",
+   "refs": [
+    "exe:20e09"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00034",
+   "kind": "exe",
+   "jp": "ＹＯＵリーチ",
+   "en": "",
+   "refs": [
+    "exe:20e16"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00035",
+   "kind": "exe",
+   "jp": "店頭デモ用１",
+   "en": "",
+   "refs": [
+    "exe:20e23"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00036",
+   "kind": "exe",
+   "jp": "店頭デモ用２",
+   "en": "",
+   "refs": [
+    "exe:20e30"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00037",
+   "kind": "exe",
+   "jp": "店頭デモ用３",
+   "en": "",
+   "refs": [
+    "exe:20e3d"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00038",
+   "kind": "dos",
+   "jp": "このディレクトリに %s がありません。\n　カレントディレクトリを変更してください。\n",
+   "en": "",
+   "refs": [
+    "exe:20fe8"
+   ],
+   "max_bytes": 80,
+   "note": "printf format: keep the %-specifier; the result is drawn as letter pairs, so the English on each side of the specifier must be even in length"
+  },
+  {
+   "id": "e00039",
+   "kind": "exe",
+   "jp": "ディスクが違います。",
+   "en": "",
+   "refs": [
+    "exe:21039"
+   ],
+   "max_bytes": 20
+  },
+  {
+   "id": "e00040",
+   "kind": "exe",
+   "jp": "未定義エラー",
+   "en": "",
+   "refs": [
+    "exe:2106e"
+   ],
+   "max_bytes": 12
+  },
+  {
+   "id": "e00041",
+   "kind": "exe",
+   "jp": "ダブル立直",
+   "en": "",
+   "refs": [
+    "exe:214e6"
+   ],
+   "max_bytes": 10
+  },
+  {
+   "id": "e00042",
+   "kind": "exe",
+   "jp": "立直",
+   "en": "",
+   "refs": [
+    "exe:214f1"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00043",
+   "kind": "exe",
+   "jp": "一発",
+   "en": "",
+   "refs": [
+    "exe:214f6"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00044",
+   "kind": "exe",
+   "jp": "自摸和",
+   "en": "",
+   "refs": [
+    "exe:214fb"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00045",
+   "kind": "exe",
+   "jp": "海底撈月",
+   "en": "",
+   "refs": [
+    "exe:21502"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00046",
+   "kind": "exe",
+   "jp": "河底撈魚",
+   "en": "",
+   "refs": [
+    "exe:2150b"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00047",
+   "kind": "exe",
+   "jp": "嶺上開花",
+   "en": "",
+   "refs": [
+    "exe:21514"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00048",
+   "kind": "exe",
+   "jp": "槍槓",
+   "en": "",
+   "refs": [
+    "exe:2151d"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00049",
+   "kind": "exe",
+   "jp": "飜牌",
+   "en": "",
+   "refs": [
+    "exe:21522"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00050",
+   "kind": "exe",
+   "jp": "断公九",
+   "en": "",
+   "refs": [
+    "exe:21527"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00051",
+   "kind": "exe",
+   "jp": "平和",
+   "en": "",
+   "refs": [
+    "exe:2152e"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00052",
+   "kind": "exe",
+   "jp": "一盃口",
+   "en": "",
+   "refs": [
+    "exe:21533"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00053",
+   "kind": "exe",
+   "jp": "三色同順",
+   "en": "",
+   "refs": [
+    "exe:2153a"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00054",
+   "kind": "exe",
+   "jp": "一気通貫",
+   "en": "",
+   "refs": [
+    "exe:21543"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00055",
+   "kind": "exe",
+   "jp": "全帯公",
+   "en": "",
+   "refs": [
+    "exe:2154c"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00056",
+   "kind": "exe",
+   "jp": "対々和",
+   "en": "",
+   "refs": [
+    "exe:21553"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00057",
+   "kind": "exe",
+   "jp": "三暗刻",
+   "en": "",
+   "refs": [
+    "exe:2155a"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00058",
+   "kind": "exe",
+   "jp": "三槓子",
+   "en": "",
+   "refs": [
+    "exe:21561"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00059",
+   "kind": "exe",
+   "jp": "三色同刻",
+   "en": "",
+   "refs": [
+    "exe:21568"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00060",
+   "kind": "exe",
+   "jp": "混老頭",
+   "en": "",
+   "refs": [
+    "exe:21571"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00061",
+   "kind": "exe",
+   "jp": "小三元",
+   "en": "",
+   "refs": [
+    "exe:21578"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00062",
+   "kind": "exe",
+   "jp": "七対子",
+   "en": "",
+   "refs": [
+    "exe:2157f"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00063",
+   "kind": "exe",
+   "jp": "純全帯公",
+   "en": "",
+   "refs": [
+    "exe:21586"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00064",
+   "kind": "exe",
+   "jp": "二盃口",
+   "en": "",
+   "refs": [
+    "exe:2158f"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00065",
+   "kind": "exe",
+   "jp": "混一色",
+   "en": "",
+   "refs": [
+    "exe:21596"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00066",
+   "kind": "exe",
+   "jp": "清一色",
+   "en": "",
+   "refs": [
+    "exe:2159d"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00067",
+   "kind": "exe",
+   "jp": "ドラ",
+   "en": "",
+   "refs": [
+    "exe:215a4"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00068",
+   "kind": "exe",
+   "jp": "四暗刻",
+   "en": "",
+   "refs": [
+    "exe:215a9"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00069",
+   "kind": "exe",
+   "jp": "国士無双",
+   "en": "",
+   "refs": [
+    "exe:215b0"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00070",
+   "kind": "exe",
+   "jp": "九連宝燈",
+   "en": "",
+   "refs": [
+    "exe:215b9"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00071",
+   "kind": "exe",
+   "jp": "緑一色",
+   "en": "",
+   "refs": [
+    "exe:215c2"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00072",
+   "kind": "exe",
+   "jp": "清老頭",
+   "en": "",
+   "refs": [
+    "exe:215c9"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00073",
+   "kind": "exe",
+   "jp": "大三元",
+   "en": "",
+   "refs": [
+    "exe:215d0"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00074",
+   "kind": "exe",
+   "jp": "字一色",
+   "en": "",
+   "refs": [
+    "exe:215d7"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00075",
+   "kind": "exe",
+   "jp": "四槓子",
+   "en": "",
+   "refs": [
+    "exe:215de"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00076",
+   "kind": "exe",
+   "jp": "天和",
+   "en": "",
+   "refs": [
+    "exe:215e5"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00077",
+   "kind": "exe",
+   "jp": "地和",
+   "en": "",
+   "refs": [
+    "exe:215ea"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00078",
+   "kind": "exe",
+   "jp": "人和",
+   "en": "",
+   "refs": [
+    "exe:215ef"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00079",
+   "kind": "exe",
+   "jp": "小四喜",
+   "en": "",
+   "refs": [
+    "exe:215f4"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00080",
+   "kind": "exe",
+   "jp": "大四喜",
+   "en": "",
+   "refs": [
+    "exe:215fb"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00081",
+   "kind": "exe",
+   "jp": "大車輪",
+   "en": "",
+   "refs": [
+    "exe:21602"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00082",
+   "kind": "exe",
+   "jp": "十三不搭",
+   "en": "",
+   "refs": [
+    "exe:21609"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00083",
+   "kind": "exe",
+   "jp": "流し満貫",
+   "en": "",
+   "refs": [
+    "exe:21612"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00084",
+   "kind": "exe",
+   "jp": "東",
+   "en": "",
+   "refs": [
+    "exe:21804",
+    "exe:21850"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00085",
+   "kind": "exe",
+   "jp": "南",
+   "en": "",
+   "refs": [
+    "exe:21807",
+    "exe:21853"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00086",
+   "kind": "exe",
+   "jp": "西",
+   "en": "",
+   "refs": [
+    "exe:2180a"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00087",
+   "kind": "exe",
+   "jp": "北",
+   "en": "",
+   "refs": [
+    "exe:2180d"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00088",
+   "kind": "exe",
+   "jp": "東一",
+   "en": "",
+   "refs": [
+    "exe:21810",
+    "exe:21856"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00089",
+   "kind": "exe",
+   "jp": "東二",
+   "en": "",
+   "refs": [
+    "exe:21815",
+    "exe:2185b"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00090",
+   "kind": "exe",
+   "jp": "東三",
+   "en": "",
+   "refs": [
+    "exe:2181a",
+    "exe:21860"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00091",
+   "kind": "exe",
+   "jp": "東四",
+   "en": "",
+   "refs": [
+    "exe:2181f",
+    "exe:21865"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00092",
+   "kind": "exe",
+   "jp": "南一",
+   "en": "",
+   "refs": [
+    "exe:21824",
+    "exe:2186a"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00093",
+   "kind": "exe",
+   "jp": "南二",
+   "en": "",
+   "refs": [
+    "exe:21829",
+    "exe:2186f"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00094",
+   "kind": "exe",
+   "jp": "南三",
+   "en": "",
+   "refs": [
+    "exe:2182e",
+    "exe:21874"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00095",
+   "kind": "exe",
+   "jp": "南四",
+   "en": "",
+   "refs": [
+    "exe:21833",
+    "exe:21879"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00096",
+   "kind": "exe",
+   "jp": "%s局",
+   "en": "",
+   "refs": [
+    "exe:21838",
+    "exe:2187e",
+    "exe:218f5"
+   ],
+   "max_bytes": 4,
+   "note": "printf format: keep the %-specifier; the result is drawn as letter pairs, so the English on each side of the specifier must be even in length"
+  },
+  {
+   "id": "e00097",
+   "kind": "exe",
+   "jp": "点",
+   "en": "",
+   "refs": [
+    "exe:2184a",
+    "exe:218b9",
+    "exe:21903",
+    "exe:2192f"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00098",
+   "kind": "exe",
+   "jp": "チョンボ",
+   "en": "",
+   "refs": [
+    "exe:21883"
+   ],
+   "max_bytes": 8
+  },
+  {
+   "id": "e00099",
+   "kind": "exe",
+   "jp": "フリテンチョンボ",
+   "en": "",
+   "refs": [
+    "exe:2188c"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00100",
+   "kind": "exe",
+   "jp": "あなたのステハイ",
+   "en": "",
+   "refs": [
+    "exe:2189d"
+   ],
+   "max_bytes": 16
+  },
+  {
+   "id": "e00101",
+   "kind": "exe",
+   "jp": "%d飜",
+   "en": "",
+   "refs": [
+    "exe:218ae"
+   ],
+   "max_bytes": 4,
+   "note": "printf format: keep the %-specifier; the result is drawn as letter pairs, so the English on each side of the specifier must be even in length"
+  },
+  {
+   "id": "e00102",
+   "kind": "exe",
+   "jp": "符",
+   "en": "",
+   "refs": [
+    "exe:218b3"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00103",
+   "kind": "exe",
+   "jp": "飜",
+   "en": "",
+   "refs": [
+    "exe:218b6"
+   ],
+   "max_bytes": 2
+  },
+  {
+   "id": "e00104",
+   "kind": "exe",
+   "jp": "荒牌",
+   "en": "",
+   "refs": [
+    "exe:21906"
+   ],
+   "max_bytes": 4
+  },
+  {
+   "id": "e00105",
+   "kind": "exe",
+   "jp": "四開槓",
+   "en": "",
+   "refs": [
+    "exe:2190b"
+   ],
+   "max_bytes": 6
+  },
+  {
+   "id": "e00106",
+   "kind": "exe",
+   "jp": "九種公九牌倒牌",
+   "en": "",
+   "refs": [
+    "exe:21912"
+   ],
+   "max_bytes": 14
+  }
+ ]
+}

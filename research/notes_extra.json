@@ -82,5 +82,19 @@
   "remarks": [
    "Scene messages in play come after the action stages, which the boot steps don't clear; they use the same text window and pager as the CG-mode captions."
   ]
+ },
+ "moeru_asoko": {
+  "not_handled": [
+   "Tile faces, the call buttons (チー/ポン/カン/リーチ/ロン/ツモ) and the menus are pictures."
+  ],
+  "tests": [
+   [
+    "Calls, hand names and score screens during play",
+    "not yet seen"
+   ]
+  ],
+  "remarks": [
+   "The patch uses the collection's hard-disk install; the floppy set needs disk swaps the boot steps can't do."
+  ]
  }
 }

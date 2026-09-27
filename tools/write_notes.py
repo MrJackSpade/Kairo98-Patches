@@ -103,6 +103,22 @@ MES_DISPLAY = """## English display (`pc98tl/illusion_mes.py`)
   so the patcher refuses a file that outgrows it."""
 
 
+FONT24_DISPLAY = """## English display (`pc98tl/illusion_font24.py`)
+
+* The engine draws text two bytes per 24-dot cell: its own 24-dot font for the
+  characters it knows, the kanji ROM for the rest.  English is written as
+  letter pairs whose first byte (A0-DF) no Shift-JIS lead, font code or
+  control code uses, so the engine sends them down its kanji-ROM path.
+* Two hooks there (the Shift-JIS to JIS step and the 16x16 fetch) put the
+  kanji ROM's two 8x16 ANK letters side by side in the glyph buffer, which the
+  engine scales like any kanji: two half-width letters per cell.  Untranslated
+  Japanese draws as before.
+* The hooks live in a small DOS block of their own (under 1 KB) that an entry
+  stub allocates at the top of memory before the game starts; the drawer
+  calls them through far pointers kept in data-segment bytes that stay zero
+  at run time.  All patch sites are found by byte signature."""
+
+
 def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -123,7 +139,12 @@ def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     where = "`%s/%s`" % (cfg["game_dir"], cfg["engine"]) if cfg["game_dir"] else "`%s`" % cfg["engine"]
     out += ["", "## Engine", ""]
-    if cfg["encoding"] == "illusion_mes":
+    if cfg["encoding"] == "illusion_font24":
+        out += ["Illusion's C-compiled engine (%s, packed with Microsoft EXEPACK; the patch unpacks "
+                "it with `pc98tl/exepack.py` and writes it back unpacked). Its text is NUL-terminated "
+                "Shift-JIS strings in the program itself, replaced in place; strings with line breaks "
+                "are DOS messages and stay plain ASCII." % where, "", FONT24_DISPLAY]
+    elif cfg["encoding"] == "illusion_mes":
         out += ["Illusion's older engine (`%s`). Messages are records in %s: `10 <index> <group>` "
                 "then Shift-JIS text; group 90 is the character profiles (one record per frame "
                 "line), A0 a song's lyrics, F4 the disk prompts, the rest scene messages."
@@ -162,7 +183,12 @@ def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
             a.get("summary", "not scanned"), done, len(strings)))
     out += ["", "## Limits", ""]
-    if cfg["encoding"] == "illusion_mes":
+    if cfg["encoding"] == "illusion_font24":
+        out += ["* Each string keeps its original byte length: one letter per byte, two per "
+                "Japanese character (e.g. a 3-kanji hand name holds 6 letters).",
+                "* Strings with a `%`-specifier are printf formats: keep the specifier, and keep the "
+                "English on each side of it even in length (see the string's `note`)."]
+    elif cfg["encoding"] == "illusion_mes":
         out += ["* Each string has `max_cols` (its window's width: profile lines %d, disk prompts %d, "
                 "scene messages %d); longer lines are word-wrapped, `\\n` forces a break."
                 % (cfg["cols"].get("90", 0), cfg["cols"].get("f4", 0), cfg.get("default_cols", 70)),
@@ -203,7 +229,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") in ("illusion", "illusion_mes"):
+        if cfg.get("encoding") in ("illusion", "illusion_mes", "illusion_font24"):
             out = illusion_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
