@@ -617,5 +617,31 @@
    "Verb and noun menus",
    "not yet seen (the opening runs as a sequence of messages)"
   ]
+ ],
+ "tenshi_iii_ribbon": [
+  [
+   "Title and opening (floppy set: boot disk and disk 2)",
+   "OK"
+  ],
+  [
+   "Scenes read from disk (rebuilt scene table)",
+   "OK: the opening room scene and its messages"
+  ],
+  [
+   "Verb and noun menus (word file moved)",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window (no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK (a test build with a six-line first message)"
+  ],
+  [
+   "Partly translated build: untranslated Japanese still correct",
+   "OK"
+  ]
  ]
 }

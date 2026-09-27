@@ -1,0 +1,12 @@
+{
+ "title": "Tenshi-tachi no Gogo III - Ribbon",
+ "key": "Jast.zip/Tenshi-tachi no Gogo III - Ribbon",
+ "image": "Tenshi-tachi no Gogo III - Ribbon\\Tenshi-tachi no Gogo III - Ribbon [FD]\\Tenshi-tachi no Gogo III - Ribbon (Disk A).hdm",
+ "encoding": "jast_ribbon",
+ "floppies": {
+  "B": "Tenshi-tachi no Gogo III - Ribbon (Disk B).hdm"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,5:shot,4:enter,5:shot,4:enter,5:shot,4:down,1:enter,4:shot"
+}

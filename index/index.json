@@ -124215,15 +124215,22 @@
      "path": "Tenshi-tachi no Gogo III - Ribbon\\Tenshi-tachi no Gogo III - Ribbon [FD]\\Tenshi-tachi no Gogo III - Ribbon (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_iii_ribbon (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_iii_ribbon/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17828 (erotic content)",
+   "heart_basis": "script text: manual: explicit sexual command words (assault/rape, caress, first at w00008) and sex scenes found while checking the script (2026-09-27)",
    "engine": "unlisted",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo III Bangaihen",

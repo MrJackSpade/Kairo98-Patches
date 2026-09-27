@@ -116,9 +116,11 @@ class Codec:
     a JIS build, whose codes are all below 80h, the first letter carries
     bit 7."""
 
-    def __init__(self, jis=False, newline=True):
+    def __init__(self, jis=False, newline=True, colours=None):
         self.jis, self.newline = jis, newline
-        self.colours = {b"\x5c\x21": "{C1}", b"\x5d\x21": "{C2}"} if jis else COLOURS
+        if colours is None:
+            colours = {b"\x5c\x21": "{C1}", b"\x5d\x21": "{C2}"} if jis else COLOURS
+        self.colours = colours
 
     def control(self, v):
         return v < 0x2000 if self.jis else v <= 0x2000

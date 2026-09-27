@@ -600,5 +600,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo III - Ribbon": [
+  {
+   "label": "This repo: games/tenshi_iii_ribbon (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_iii_ribbon/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

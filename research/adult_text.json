@@ -1256,5 +1256,15 @@
   "adult_ids": [
    "m00676"
   ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III - Ribbon": {
+  "adult": true,
+  "hits": 1,
+  "strings": 1399,
+  "distinct_terms": 1,
+  "summary": "manual: explicit sexual command words (assault/rape, caress, first at w00008) and sex scenes found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "m00264"
+  ]
  }
 }
