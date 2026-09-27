@@ -5,6 +5,9 @@
 Inputs (all optional except the scan):
   index/scan/*.json                       tools/scan_collection.py (deep scan of the collection)
   index/catalog/*.json, index/folders.json  tools/extract_collection.py (unpacked layout)
+  index/collection.json                   the fields of the two above this builder uses; tracked,
+                                          refreshed whenever index/scan is present, and the only
+                                          scan input a fresh clone needs
   research/ia_translations.json           archive.org/metadata/nec-pc-9801-translations
   research/kairo98_matches.json           Kairo98 catalog/research/matches-v1.json
   research/patches_manual.json            hand-verified extra links:
@@ -56,15 +59,46 @@ def _md_link(l):
     return "[%s](%s)" % (label, l["url"]) if l["url"] else label
 
 
+MANIFEST_FIELDS = ("inner", "image", "size", "kind", "content_id")
+
+
+def collection_manifest():
+    """The scan data the index is built from, as [{"archive", "extracted",
+    "images": [...]}].  index/scan and index/catalog (large, local, untracked)
+    win when present, and index/collection.json (tracked) is refreshed from
+    them; a fresh clone builds from index/collection.json alone."""
+    scans = sorted(glob.glob(p("index", "scan", "*.json")))
+    path = p("index", "collection.json")
+    if not scans:
+        doc = load(path)
+        if doc is None:
+            sys.exit("no index/scan and no index/collection.json: nothing to build from")
+        return doc["archives"]
+    extracted = {os.path.basename(f)[:-5] for f in glob.glob(p("index", "catalog", "*.json"))}
+    archives = []
+    for sf in scans:
+        scan = load(sf)
+        archives.append({"archive": scan["archive"], "extracted": scan["archive"] in extracted,
+                         "images": [{k: r[k] for k in MANIFEST_FIELDS if k in r} for r in scan["images"]]})
+    doc = {"_note": "Written by tools/build_index.py from index/scan (tools/scan_collection.py) and "
+                    "index/catalog (tools/extract_collection.py), which stay local; the fields "
+                    "build_index.py needs, so a fresh clone rebuilds the index.",
+           "archives": archives}
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("{\n \"_note\": %s,\n \"archives\": [\n" % json.dumps(doc["_note"]))
+        f.write(",\n".join("  " + json.dumps(a, ensure_ascii=False, separators=(",", ":")) for a in archives))
+        f.write("\n ]\n}\n")
+    return archives
+
+
 def collection():
-    """Titles from the deep scan (index/scan), which outlives the deleted zips.
-    Adds each title's folder under the collection root and its disk images with content IDs."""
+    """Titles from the deep scan (index/collection.json, see collection_manifest),
+    which outlives the deleted zips.  Adds each title's folder under the
+    collection root and its disk images with content IDs."""
     from extract_collection import game_of
     folders = load(p("index", "folders.json"), {})
-    extracted = {os.path.basename(f)[:-5] for f in glob.glob(p("index", "catalog", "*.json"))}
     titles = {}
-    for sf in sorted(glob.glob(p("index", "scan", "*.json"))):
-        scan = load(sf)
+    for scan in collection_manifest():
         zname = scan["archive"]
         for rec in scan["images"]:
             parts = rec["inner"].split("/")
@@ -85,7 +119,7 @@ def collection():
             if (rec.get("kind") in ("hdi", "fd") or "content_id" in rec) and not is_cd_img:
                 img = {"variant": variant, "image": rec["image"], "size": rec["size"],
                        "content_id": rec.get("content_id")}
-                if zname in extracted and t["folder"]:
+                if scan["extracted"] and t["folder"]:
                     img["path"] = os.path.join(t["folder"], *variant.split("/"), *rec["image"].split("/"))
                 t["images"].append(img)
     return titles
