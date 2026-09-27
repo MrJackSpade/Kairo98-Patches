@@ -1240,7 +1240,7 @@
   "hits": 3,
   "strings": 1974,
   "distinct_terms": 3,
-  "summary": "manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script (2026-09-27)",
+  "summary": "manual: explicit sexual command words (clitoris, fellatio, SEX, first at w00117) and sex scenes found while checking the script; for the translation model: a character is stated to be 17 in a sexual context at m01674 (scene52:3) (2026-09-27)",
   "adult_ids": [
    "m01674",
    "w00117",
@@ -1252,7 +1252,7 @@
   "hits": 1,
   "strings": 1582,
   "distinct_terms": 1,
-  "summary": "manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script (2026-09-27)",
+  "summary": "manual: explicit sexual command words (rape, first at w00057) and sex scenes (first at m00007) found while checking the script; for the translation model: sex with a character stated to be 17 at m00676 (scene37:28) (2026-09-27)",
   "adult_ids": [
    "m00676"
   ]
@@ -1275,6 +1275,16 @@
   "summary": "manual: explicit sexual command words (rape, caress, first at w00004) and sex scenes found while checking the script (2026-09-27)",
   "adult_ids": [
    "w00116"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo II - Minako": {
+  "adult": true,
+  "hits": 0,
+  "strings": 1230,
+  "distinct_terms": 0,
+  "summary": "manual: sex scenes (the vocabulary scan finds no terms in the script text); for the translation model: an age of 17 is stated in m00024, m00026 (the opening line), m00032 and m00129 (found 2026-09-27)",
+  "adult_ids": [
+   "m00026"
   ]
  }
 }

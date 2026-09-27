@@ -616,5 +616,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo II - Minako": [
+  {
+   "label": "This repo: games/tenshi_ii (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_ii/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

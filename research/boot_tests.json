@@ -737,5 +737,23 @@
    "Scene past the opening (room 5)",
    "OK"
   ]
+ ],
+ "tenshi_ii": [
+  [
+   "Title screen (sound setup, text-layer image)",
+   "OK: filler in the Japanese's cells, boxes kept"
+  ],
+  [
+   "Opening scene, message window",
+   "OK: half-width letter-pair filler inside the frame"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK"
+  ],
+  [
+   "Typed command (capitals from the letter keys)",
+   "OK: typed letters shown with the game's A-Z glyphs"
+  ]
  ]
 }
