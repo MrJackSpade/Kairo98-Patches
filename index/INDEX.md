@@ -218,6 +218,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Illusion | Red Cobra | [This repo: games/red_cobra (patcher working, machine translation in progress)](../games/red_cobra/notes.md) |
 | Illusion | Seisenshi Mokkoriman | [This repo: games/seisenshi_mokkoriman (patcher working, machine translation in progress)](../games/seisenshi_mokkoriman/notes.md) |
 | Illusion | Yami no Ryousen | [This repo: games/yami_no_ryousen (patcher working, machine translation in progress)](../games/yami_no_ryousen/notes.md) |
+| Jast | Cosmos Club | [This repo: games/cosmos_club (patcher working, machine translation in progress)](../games/cosmos_club/notes.md) |
 | Jast | Deep | [This repo: games/deep (patcher working, machine translation in progress)](../games/deep/notes.md) |
 | Jast | Eden no Kaori | [This repo: games/eden_no_kaori (patcher working, machine translation in progress)](../games/eden_no_kaori/notes.md) |
 | Jast | Gomen ne Angel - Yokohama Monogatari | [This repo: games/gomen_ne_angel (patcher working, machine translation in progress)](../games/gomen_ne_angel/notes.md) |
@@ -3228,7 +3229,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Jast (`Jast.zip`)
 
-- ♥ Cosmos Club [FD]
+- ♥ Cosmos Club [FD] — *MTL (this repo)*
 - ♥ Deep [FD HD] `jast` — *MTL (this repo)*
 - ♥ Eden no Kaori [FD HD] `jast` — *MTL (this repo)*
 - ♥ Gomen ne Angel - Yokohama Monogatari [FD] — *MTL (this repo)*

@@ -60,9 +60,87 @@ FETCH = re.compile(rb"\x1e\x06\xbb\x00(.)\x8e\xdb\x8c\xcb\x8e\xc3\xfc\x8a\xd8\x3
 WRITE = re.compile(rb"\x86\xc4\x2c\x20\x26\x89\x05\x26\xc7\x45\x02\x20\x00\xa0(..)\x26\x88\x85\x00\x20"
                    rb"\x26\x88\x85\x02\x20\x83\xc7\x04", re.S)
 # the message draw: start (line start saved), controls below 2000h, the wrap
-MSG_START = re.compile(rb"\x8b\xf8(\x33\xc9\xa3(..))\xb8\x00\xa0\x8e\xc0\xad\x0b\xc0\x74.\x80\xfc\x20", re.S)
+MSG_START = re.compile(rb"\x8b\xf8(\x33\xc9\xa3(..))\xb8\x00\xa0\x8e\xc0\xad\x0b\xc0\x74."
+                       rb"(?:\x80\xfc\x20|\x3d\x56\x21)", re.S)
 WRAP = re.compile(rb"\xe8(..)\x8b\x3e..\x33\xc9", re.S)
 # the read routine: ah = 0 read, al = disk - 1, bx = sector, cx = count, es:bp = buffer
+
+
+# the character write, the pager on the line scroll and the message start
+# (format keys: attr, cnt, lines, scroll, cursor)
+DRAW_HELPERS = """
+    cnt:
+        .byte 0
+    w2:
+        test al, 0x80
+        jnz asc
+        xchg ah, al
+        sub al, 0x20
+        mov word ptr es:[di], ax
+        mov word ptr es:[di + 2], 0x20
+        jmp at
+    asc:
+        and al, 0x7f
+        mov byte ptr es:[di], al
+        mov byte ptr es:[di + 1], 0
+        mov byte ptr es:[di + 2], ah
+        mov byte ptr es:[di + 3], 0
+    at:
+        mov al, byte ptr [{attr}]
+        mov byte ptr es:[di + 0x2000], al
+        mov byte ptr es:[di + 0x2002], al
+        add di, 4
+        .byte 0xc3
+    scrl:
+        inc byte ptr cs:[{cnt}]
+        cmp byte ptr cs:[{cnt}], {lines}
+        jb go
+        mov byte ptr cs:[{cnt}], 0
+        push ax
+        push bx
+        push dx
+        mov dx, 0x7fd9
+    fl:
+        mov ah, 1
+        int 0x18
+        or bh, bh
+        je w0
+        mov ah, 0
+        int 0x18
+        jmp fl
+    w0:
+        in al, dx
+        test al, 0x80
+        jz w0
+    w1:
+        mov ah, 1
+        int 0x18
+        or bh, bh
+        jne wkey
+        in al, dx
+        test al, 0x80
+        jnz w1
+    w2b:
+        in al, dx
+        test al, 0x80
+        jz w2b
+        jmp wdone
+    wkey:
+        mov ah, 0
+        int 0x18
+    wdone:
+        pop dx
+        pop bx
+        pop ax
+    go:
+        CALLN 0x{scroll:x}
+        .byte 0xc3
+    reset:
+        mov byte ptr cs:[{cnt}], 0
+        xor cx, cx
+        mov word ptr [{cursor}], ax
+        .byte 0xc3
+"""
 
 
 class Game:
@@ -182,78 +260,7 @@ def patch_engine(game, scene_places, word_size, box_lines=3):
     cursor = _u16(ms.group(2), 0)
     text_ptr = _u16(fetches[0].group(4), 0)
     hdr = fetches[0].group(3)[0]
-    src = """
-    cnt:
-        .byte 0
-    w2:
-        test al, 0x80
-        jnz asc
-        xchg ah, al
-        sub al, 0x20
-        mov word ptr es:[di], ax
-        mov word ptr es:[di + 2], 0x20
-        jmp at
-    asc:
-        and al, 0x7f
-        mov byte ptr es:[di], al
-        mov byte ptr es:[di + 1], 0
-        mov byte ptr es:[di + 2], ah
-        mov byte ptr es:[di + 3], 0
-    at:
-        mov al, byte ptr [{attr}]
-        mov byte ptr es:[di + 0x2000], al
-        mov byte ptr es:[di + 0x2002], al
-        add di, 4
-        .byte 0xc3
-    scrl:
-        inc byte ptr cs:[{cnt}]
-        cmp byte ptr cs:[{cnt}], {lines}
-        jb go
-        mov byte ptr cs:[{cnt}], 0
-        push ax
-        push bx
-        push dx
-        mov dx, 0x7fd9
-    fl:
-        mov ah, 1
-        int 0x18
-        or bh, bh
-        je w0
-        mov ah, 0
-        int 0x18
-        jmp fl
-    w0:
-        in al, dx
-        test al, 0x80
-        jz w0
-    w1:
-        mov ah, 1
-        int 0x18
-        or bh, bh
-        jne wkey
-        in al, dx
-        test al, 0x80
-        jnz w1
-    w2b:
-        in al, dx
-        test al, 0x80
-        jz w2b
-        jmp wdone
-    wkey:
-        mov ah, 0
-        int 0x18
-    wdone:
-        pop dx
-        pop bx
-        pop ax
-    go:
-        CALLN 0x{scroll:x}
-        .byte 0xc3
-    reset:
-        mov byte ptr cs:[{cnt}], 0
-        xor cx, cx
-        mov word ptr [{cursor}], ax
-        .byte 0xc3
+    src = DRAW_HELPERS + """
     fetch:
         push es
         push bx

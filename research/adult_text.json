@@ -1266,5 +1266,15 @@
   "adult_ids": [
    "m00264"
   ]
+ },
+ "Jast.zip/Cosmos Club": {
+  "adult": true,
+  "hits": 1,
+  "strings": 697,
+  "distinct_terms": 1,
+  "summary": "manual: explicit sexual command words (rape, caress, first at w00004) and sex scenes found while checking the script (2026-09-27)",
+  "adult_ids": [
+   "w00116"
+  ]
  }
 }

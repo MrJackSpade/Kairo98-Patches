@@ -643,5 +643,31 @@
    "Partly translated build: untranslated Japanese still correct",
    "OK"
   ]
+ ],
+ "cosmos_club": [
+  [
+   "Title and opening (D88 floppy set: boot disk and disk 2)",
+   "OK: half-width filler in the message box"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: filler words half-width inside the menu boxes"
+  ],
+  [
+   "Message window (no line mark: lines padded to the edge)",
+   "OK: half-width filler inside the frame, wrapped between words"
+  ],
+  [
+   "Long message: waits at a full box, next lines after a key",
+   "OK (a test build with a six-line first message)"
+  ],
+  [
+   "Partly translated build: untranslated Japanese still correct",
+   "OK"
+  ],
+  [
+   "Scene past the opening (room 5)",
+   "OK"
+  ]
  ]
 }

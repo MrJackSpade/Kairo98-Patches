@@ -299,7 +299,7 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
         elif cfg.get("floppies"):
             out.append("Every floppy's scene files are patched; the output is the full disk set.")
         out += ["", SCM_TEXT_DISPLAY if cfg.get("native_ascii") else SCM_ROM_DISPLAY]
-    elif cfg["encoding"] in ("jast_boot", "jast_ribbon"):
+    elif cfg["encoding"] in ("jast_boot", "jast_ribbon", "jast_cosmos"):
         scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
         out += ["JAST's self-booting engine: the floppies have no file system.  The boot sector loads "
                 "the engine (hand-written assembly) from a fixed sector; directory tables in it give each "
@@ -311,6 +311,14 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "contents after each file's end; the extractor stops each scene at the first leftover "
                 "fragment, and keeps a scene's cut-off last message as it is.",
                 "", BOOT_DISPLAY]
+        if cfg["encoding"] == "jast_cosmos":
+            out += ["* The oldest engine (`pc98tl/jast_cosmos.py`), on D88 floppies with 256-byte "
+                    "sectors: the scenes' command parts and a text blob (the word file and every "
+                    "scene's text part, with a header of offsets) are loaded whole into one segment "
+                    "at start.  The patch rebuilds the text blob with the English and a new header; "
+                    "it may grow to the end of its segment, and moves to free sectors when it no "
+                    "longer fits its old ones.  Text is JIS without control words or colour codes; "
+                    "every character write goes through the helper."]
         if cfg["encoding"] == "jast_ribbon":
             out += ["* This older build (`pc98tl/jast_ribbon.py`) keeps all scenes in one 64 KB blob "
                     "loaded whole at start, with a 2 KB scene buffer below the word file.  The patch "
@@ -340,7 +348,7 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     else:
         out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
             a.get("summary", "not scanned"), done, len(strings)))
-    if cfg["encoding"] in ("jast_boot", "jast_ribbon"):
+    if cfg["encoding"] in ("jast_boot", "jast_ribbon", "jast_cosmos"):
         out += ["", "## Limits", "",
                 "* Messages: `{C2}` (name colour), `{C1}` (highlight) and `{C0}` (normal colour) switch "
                 "the text colour and are not drawn; `{A<n>}` are animation controls; keep them. `\\n` "
@@ -395,7 +403,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon"):
+        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

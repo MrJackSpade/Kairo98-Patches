@@ -608,5 +608,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Cosmos Club": [
+  {
+   "label": "This repo: games/cosmos_club (patcher working, machine translation in progress)",
+   "url": "../games/cosmos_club/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

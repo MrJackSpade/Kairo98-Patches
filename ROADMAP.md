@@ -98,6 +98,7 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
 | ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
 | ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Cosmos Club | jast boot disk (D88, text blob) | extracted | **Ready to translate** (maintainer) | works; self-booting D88 floppy set, message window pages | OK (see notes) |
 | ♥ Gomen ne Angel - Yokohama Monogatari | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo III - Ribbon | jast boot disk (blob) | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, scenes read from disk, message window pages | OK (see notes) |
 | ♥ Tenshi-tachi no Gogo III Bangaihen | jast boot disk | extracted | **Ready to translate** (maintainer) | works; self-booting floppy set, message window pages | OK (see notes) |

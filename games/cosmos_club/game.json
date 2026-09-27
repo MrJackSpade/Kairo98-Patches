@@ -1,0 +1,12 @@
+{
+ "title": "Cosmos Club",
+ "key": "Jast.zip/Cosmos Club",
+ "image": "Cosmos Club\\Cosmos Club [FD h01]\\Cosmos Club (Disk A).d88",
+ "encoding": "jast_cosmos",
+ "floppies": {
+  "B": "Cosmos Club (Disk B).d88"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,5:shot,4:enter,5:shot,4:enter,5:shot,4:down,1:enter,4:shot"
+}
