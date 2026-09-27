@@ -448,5 +448,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Illusion.zip/Angel Army": [
+  {
+   "label": "This repo: games/angel_army (machine translation complete)",
+   "url": "../games/angel_army/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

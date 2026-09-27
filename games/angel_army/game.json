@@ -1,0 +1,26 @@
+{
+ "title": "Angel Army",
+ "key": "Illusion.zip/Angel Army",
+ "image": "Angel Army\\Angel Army [HD]\\Angel Army.hdi",
+ "game_dir": "ARMY",
+ "engine": "GAME.EXE",
+ "encoding": "illusion_font24",
+ "data": [
+  214528,
+  305408
+ ],
+ "skip": [],
+ "text_files": [
+  "MESSAGE.TXT",
+  "STAFF.TXT"
+ ],
+ "text_cols": 22,
+ "dgroup": 17708,
+ "pointers": [
+  25216,
+  25220
+ ],
+ "dipsw": "3e f3 7b",
+ "boot_steps": "12:shot,8:shot,12:shot,4:shot,10:lclick,5:shot",
+ "horizontal_quotes": true
+}

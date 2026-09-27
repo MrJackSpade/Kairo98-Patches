@@ -208,6 +208,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
+| Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
 | Illusion | Kitoujima Joshi Keimusho | [This repo: games/kitoujima (patcher working, machine translation in progress)](../games/kitoujima/notes.md) |
@@ -3063,7 +3064,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Illusion (`Illusion.zip`)
 
-- ♥ Angel Army [FD HD] `tmexec`
+- Angel Army [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Hyouryuu [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Kankin [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Kitoujima Joshi Keimusho [FD HD] `tmexec` — *MTL (this repo)*

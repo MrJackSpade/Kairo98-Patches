@@ -18,7 +18,9 @@ The text drawer takes two bytes per cell.  English is written as letter
 pairs (encode_en) that the patched drawer shows as two kanji-ROM ANK letters
 in one cell (patch_engine); game.json then also has "dgroup" (the data
 segment) and "pointers" (two DGROUP offsets that stay zero at run time, for
-the hooks' far pointers).
+the hooks' far pointers).  "text_files" lists "$XXXXXXXX"-record text
+files (Angel Army's MESSAGE.TXT, STAFF.TXT); their strings are kind "text",
+ref "<file>:<number>", wrapped at "text_cols".
 """
 import json
 import os
@@ -62,6 +64,55 @@ def strings_in(exe, cfg):
     return out
 
 
+TEXT_RECORD = re.compile(rb"\$([0-9A-F]{8})\r\n(.*?)(?=\r\n\$)", re.S)
+
+
+def decode_nec(raw):
+    """Shift-JIS text, with NEC's own codes Python lacks (row 86: line
+    glyphs) kept as "{XXYY}" tokens."""
+    out, i = [], 0
+    while i < len(raw):
+        b = raw[i]
+        if 0x81 <= b <= 0x9F or 0xE0 <= b <= 0xEF:
+            pair = raw[i:i + 2]
+            try:
+                out.append(pair.decode("cp932"))
+            except UnicodeDecodeError:
+                out.append("{%s}" % pair.hex().upper())
+            i += 2
+        else:
+            out.append(chr(b) if b < 0x80 else bytes([b]).decode("cp932", "replace"))
+            i += 1
+    return "".join(out)
+
+
+def text_records(data):
+    """MESSAGE.TXT / STAFF.TXT: "$XXXXXXXX" CR LF lines ... up to "$FFFFFFFF".
+    [(number, style prefix, text)]; a leading digit is a style (STAFF.TXT)."""
+    out = []
+    for m in TEXT_RECORD.finditer(data):
+        if m.group(1) == b"FFFFFFFF":
+            break
+        text = decode_nec(m.group(2)).replace("\r\n", "\n")
+        prefix = text[0] if text[:1].isdigit() else ""
+        out.append((m.group(1).decode(), prefix, text[len(prefix):]))
+    return out
+
+
+def rebuild_text(data, texts):
+    """Replace records ({number: bytes}); every other byte kept."""
+    out, prev = bytearray(), 0
+    for m in TEXT_RECORD.finditer(data):
+        num = m.group(1).decode()
+        if num in texts:
+            body = m.group(2)
+            prefix = body[:1] if body[:1].isdigit() else b""
+            out += data[prev:m.start(2)] + prefix + texts[num]
+            prev = m.end(2)
+    out += data[prev:]
+    return bytes(out)
+
+
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     vol = DiskImage(src).volumes[0]
@@ -81,6 +132,12 @@ def run_extract(here, src):
                                   "must be even in length")
         order.append(jp)
     strings = [{"id": "e%05d" % i, **merged[jp]} for i, jp in enumerate(order, 1)]
+    n = 0
+    for name in cfg.get("text_files", []):
+        for num, prefix, jp in text_records(vol.read(_path(cfg, name))):
+            n += 1
+            strings.append({"id": "t%05d" % n, "kind": "text", "jp": jp, "en": "",
+                            "refs": ["%s:%s" % (name, num)], "max_cols": cfg.get("text_cols", 22)})
     out = os.path.join(here, "strings.json")
     if os.path.exists(out):  # keep translations and hand-tuned fields
         old = {(e["kind"], e["jp"]): e for e in json.load(open(out, encoding="utf-8"))["strings"]}
@@ -134,6 +191,26 @@ def encode_en(text):
     return bytes(out)
 
 
+FORMAT_SPEC = re.compile(r"%[-+ #0]*(\d*)(?:\.\d+)?l?[a-zA-Z]")
+
+
+def encode_fmt(text):
+    """A printf format: specifiers stay ASCII (their output is plain ASCII
+    digits or an already-encoded name, both drawn as pairs), the text
+    between them is encoded in pairs; a number of odd width gets a space
+    after it so every later cell stays on a pair boundary."""
+    out, pos = bytearray(), 0
+    for m in FORMAT_SPEC.finditer(text):
+        out += encode_en(text[pos:m.start()]) if m.start() > pos else b""
+        out += m.group().encode("ascii")
+        width = int(m.group(1) or 0)
+        if m.group()[-1] != "s" and width % 2:
+            out += b" "
+        pos = m.end()
+    out += encode_en(text[pos:]) if pos < len(text) else b""
+    return bytes(out)
+
+
 def patch_engine(exe, cfg):
     """Hook the drawer's glyph path (see encode_en): the two far routines
     live in a DOS block set up by illusion_font's entry stub; the drawer
@@ -145,7 +222,7 @@ def patch_engine(exe, cfg):
     base = struct.unpack_from("<H", exe, 8)[0] * 16
     img = bytes(exe[base:])
     c = CONV_CALL.search(img)
-    f = FETCH_CALL.search(img)
+    f = FETCH_CALL.search(img, c.start()) if c else None      # the drawer's own fetch, after it
     if not c or not f:
         raise ValueError("text drawer glyph calls not found")
     dgroup, ptrs = cfg["dgroup"], cfg["pointers"]
@@ -156,6 +233,15 @@ def patch_engine(exe, cfg):
         push bp
         mov bp, sp
         mov ax, word ptr [bp + 6]
+        cmp ah, 0x20
+        jb sj
+        cmp ah, 0x80
+        jae ch1
+        and al, 0x7f
+        or ah, 0x80
+        pop bp
+        .byte 0xcb
+    ch1:
         cmp ah, 0xa0
         jb sj
         cmp ah, 0xdf
@@ -303,6 +389,40 @@ def patch_engine(exe, cfg):
     return bytes(exe)
 
 
+# Angel Army's quote boxes (MESSAGE.TXT) are drawn vertically: each record
+# line is a column, the next one 4 or 5 bytes to the left.  English reads
+# across, so the boxes are turned horizontal: the text parameters step a
+# cell right instead of down, each line goes one 24-dot row down instead of
+# a column left, and each leader's box starts at its left edge.
+QUOTE_CALLS = (re.compile(rb"\x2b\xc0\x50\xb8\xfc\xff\x50\xff\x76.\xb0\x01\x50\xb8(..)", re.S),
+               re.compile(rb"\x2b\xc0\x50\xba\xfb\xff\x52\x51\xb1\x01\x51\xb9(..)", re.S))
+QUOTE_X = re.compile(rb"\xd1\xe3\xff\xb7(..)\x8a\x46\x0a", re.S)
+
+
+def horizontal_quotes(exe, dgroup, leaders=10, shift=20, pitch=24):
+    import struct
+    exe = bytearray(exe)
+    base = struct.unpack_from("<H", exe, 8)[0] * 16
+    img = bytes(exe[base:])
+    a, b = QUOTE_CALLS[0].search(img), QUOTE_CALLS[1].search(img)
+    x = QUOTE_X.search(img)
+    if not a or not b or not x:
+        raise ValueError("quote box sites not found")
+    params = struct.unpack("<H", a.group(1))[0]
+    if struct.unpack("<H", b.group(1))[0] != params:
+        raise ValueError("quote box callers use different text parameters")
+    at = base + dgroup * 16 + params
+    exe[at:at + 2] = b"\x03\x00"                         # a cell: 3 bytes right, no row step
+    step = b"\xb8" + struct.pack("<H", pitch) + b"\x50"  # line step y = pitch ...
+    exe[base + a.start():base + a.start() + 7] = step + b"\x31\xc0\x50"   # ... x = 0
+    exe[base + b.start():base + b.start() + 7] = step + b"\x31\xd2\x52"
+    tab = base + dgroup * 16 + struct.unpack("<H", x.group(1))[0]
+    for i in range(leaders):
+        v = struct.unpack_from("<h", exe, tab + 2 * i)[0]
+        struct.pack_into("<h", exe, tab + 2 * i, max(0, v - shift))
+    return bytes(exe)
+
+
 def run_patch(here, src, dst, mode="en"):
     from .text import pseudo
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
@@ -314,6 +434,8 @@ def run_patch(here, src, dst, mode="en"):
     exe = bytearray(engine(cfg, vol))
     report = []
     for e in doc["strings"]:
+        if e["kind"] == "text":           # text files: below
+            continue
         if mode == "pseudo":
             if "%" in e["jp"]:
                 continue          # format strings keep their specifiers
@@ -325,7 +447,9 @@ def run_patch(here, src, dst, mode="en"):
         if not text:
             continue
         keep_nl = text.endswith("\n")
-        if e["kind"] == "dos":        # printed through DOS: plain ASCII
+        if "%" in e["jp"] and e["kind"] != "dos":
+            enc = encode_fmt(text)
+        elif e["kind"] == "dos":        # printed through DOS: plain ASCII
             enc = b"\r\n".join(line.encode("ascii", "replace") for line in text.rstrip("\n").split("\n"))
         else:
             enc = b"\r\n".join(encode_en(line) for line in text.rstrip("\n").split("\n"))
@@ -338,6 +462,24 @@ def run_patch(here, src, dst, mode="en"):
         for r in e["refs"]:
             off = int(r[4:], 16)
             exe[off:off + n] = enc.ljust(n, b"\0")
+    from .text import wrap
+    for name in cfg.get("text_files", []):
+        data = vol.read(_path(cfg, name))
+        texts = {}
+        for e in doc["strings"]:
+            if e["kind"] != "text" or not e["refs"][0].startswith(name + ":"):
+                continue
+            text = pseudo(e["id"], len(e["jp"]) * 5 // 2) if mode == "pseudo" else e["en"]
+            if not text:
+                continue
+            lines = []
+            for para in text.split("\n"):
+                lines += [para] if len(para) <= e["max_cols"] else wrap(para, e["max_cols"], width=len)
+            texts[e["refs"][0].split(":")[1]] = b"\r\n".join(encode_en(line) for line in lines)
+        if texts:
+            vol.write(_path(cfg, name), rebuild_text(data, texts))
+    if cfg.get("horizontal_quotes"):
+        exe = bytearray(horizontal_quotes(bytes(exe), cfg["dgroup"]))
     vol.write(_path(cfg, cfg["engine"]), patch_engine(bytes(exe), cfg))
     vol.create(_path(cfg, "MTL_NOTE.TXT"),
                MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))

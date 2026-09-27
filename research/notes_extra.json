@@ -96,5 +96,20 @@
   "remarks": [
    "The patch uses the collection's hard-disk install; the floppy set needs disk swaps the boot steps can't do."
   ]
+ },
+ "angel_army": {
+  "not_handled": [
+   "The title logo, country cards and map/menu graphics are pictures."
+  ],
+  "tests": [
+   [
+    "Map play, unit menus, status and damage screens",
+    "not yet seen (their strings are translated and within their byte limits)"
+   ]
+  ],
+  "remarks": [
+   "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; the game refuses to start otherwise). The patch uses the collection's hard-disk install.",
+   "Engine strings keep their byte length, so some labels are abbreviated (country names JPN/CHN/GER, one-kanji terrain names as two letters, the heroine Kotono as Koto on name labels)."
+  ]
  }
 }

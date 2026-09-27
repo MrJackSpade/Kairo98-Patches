@@ -19,6 +19,8 @@ for g in $games; do
         fd2=$(ls "test_$g - "* 2>/dev/null | head -1)
         if [ -n "$fd2" ]; then set -- -Fd1 "$main" -Fd2 "$fd2"; else set -- -Fd1 "$main"; fi
     fi
+    dip=$(python -c "import json;print(json.load(open('games/$g/game.json',encoding='utf-8')).get('dipsw',''))" 2>/dev/null)
+    [ -n "$dip" ] && set -- "$@" -Dip "$dip"
     rm -f emu/shots/boot_${g}_*.png
     pwsh -NoProfile -File tools/emu_shot.ps1 "$@" -Out "emu/shots/boot_$g" -Steps "$steps" >/dev/null
     shots=$(ls emu/shots/boot_${g}_*.png | sort -V)

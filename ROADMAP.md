@@ -86,3 +86,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Yami no Ryousen | tmexec (Illusion), EXEPACK engine | extracted | **Ready to translate** (maintainer) | works; hard-disk layout (floppies full), pager in a <1 KB DOS block | OK (see notes) |
 | ♥ Seisenshi Mokkoriman | Illusion MES.D (older engine) | extracted | **Ready to translate** (maintainer) | works; native half-width font, window pages instead of scrolling | OK (see notes) |
 | ♥ Moeru Asoko no Paipai Yuugi | Illusion C engine, 24-dot font (EXEPACK) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, 0 translated) | works; letter pairs through the kanji-ROM path, hooks in a <1 KB DOS block | OK (see notes) |
+| Angel Army | Illusion C engine, 24-dot font (EXEPACK) | extracted | **Translated** (Claude, 297/297) | works; letter pairs through the kanji-ROM path, quote boxes turned horizontal | OK (see notes) |

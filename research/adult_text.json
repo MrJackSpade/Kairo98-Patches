@@ -781,5 +781,13 @@
   "distinct_terms": 0,
   "summary": "manual: strip-mahjong game with H scenes; the first opponent is introduced as 17 (found while testing) (2026-09-26)",
   "adult_ids": []
+ },
+ "Illusion.zip/Angel Army": {
+  "adult": false,
+  "hits": 0,
+  "strings": 297,
+  "distinct_terms": 0,
+  "summary": "0 of 297 strings match the sexual-vocabulary list (0 distinct terms)",
+  "adult_ids": []
  }
 }

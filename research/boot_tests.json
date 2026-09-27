@@ -347,5 +347,19 @@
    "Mahjong table: seat winds, scores, round label",
    "OK: half-width filler letter pairs, two per cell; untranslated 局 draws as before"
   ]
+ ],
+ "angel_army": [
+  [
+   "Title menu (engine strings)",
+   "OK: half-width letter pairs; English build reads correctly"
+  ],
+  [
+   "Leader quote boxes (MESSAGE.TXT), turned horizontal",
+   "OK: filler and English inside the box, name label below"
+  ],
+  [
+   "Scene past the opening (country card, next quote)",
+   "OK"
+  ]
  ]
 }
