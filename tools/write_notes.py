@@ -90,6 +90,19 @@ ILLUSION_DISPLAY = """## English display (`pc98tl/illusion_font.py`)
   signature."""
 
 
+MES_DISPLAY = """## English display (`pc98tl/illusion_mes.py`)
+
+* The engine draws a byte below 80 from its own 8x16 font (`FONT.DAT`, a full
+  ASCII set), so English is half-width with no font work; records may change
+  length.
+* Its text windows scroll when their rows run out. The patch makes them page
+  instead: the window waits for the space key or a left click, clears and
+  goes on at the top. The pager sits in the dead scroll code itself, around
+  the relocated calls there, so nothing moves and no memory is taken.
+* Each message file loads into a 10000-byte buffer (up to the next buffer),
+  so the patcher refuses a file that outgrows it."""
+
+
 def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -108,11 +121,34 @@ def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
-    out += ["", "## Engine", "",
-            "Illusion's tmexec engine, `%s/%s`. Messages are `#nnnnn` ... `$` records in %s; "
-            "the engine's own Japanese strings (also `$`-terminated) are replaced in place."
-            % (cfg["game_dir"], cfg["engine"], ", ".join("`%s`" % f for f in files)),
-            "", ILLUSION_DISPLAY, "", "## Script", "",
+    where = "`%s/%s`" % (cfg["game_dir"], cfg["engine"]) if cfg["game_dir"] else "`%s`" % cfg["engine"]
+    out += ["", "## Engine", ""]
+    if cfg["encoding"] == "illusion_mes":
+        out += ["Illusion's older engine (`%s`). Messages are records in %s: `10 <index> <group>` "
+                "then Shift-JIS text; group 90 is the character profiles (one record per frame "
+                "line), A0 a song's lyrics, F4 the disk prompts, the rest scene messages."
+                % (where, ", ".join("`%s`" % f for f in cfg["files"])),
+                "", MES_DISPLAY]
+    else:
+        out.append("Illusion's tmexec engine, %s. Messages are `#nnnnn` ... `$` records in %s; "
+                   "the engine's own Japanese strings (also `$`-terminated) are replaced in place."
+                   % (where, ", ".join("`%s`" % f for f in files)))
+        if cfg.get("msg_encoding") == "euc_x80":
+            out.append("The message files are stored as EUC-JP with every byte's top bit flipped; "
+                       "they are decoded for extraction and written back the same way.")
+        if cfg.get("exepack"):
+            out.append("The engine is packed with Microsoft EXEPACK; the patch unpacks it "
+                       "(`pc98tl/exepack.py`) and writes it back unpacked.")
+        if cfg.get("hdd"):
+            h = cfg["hdd"]
+            out.append("The floppies have no room for a longer script, so the patch lays the game out "
+                       "on a DOS hard-disk image, as its own HD installer does: every disk's files in "
+                       "`%s/`, and the engine's drive prefixes pointed at the hard disk (%s). The base "
+                       "image is the collection's `%s` with its own game removed."
+                       % (h["dir"], ", ".join("`%s` to `%s`" % kv for kv in cfg.get("drive_prefix", {}).items()),
+                          h["base"].replace("\\", "/")))
+        out += ["", ILLUSION_DISPLAY]
+    out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, k) for k, n in sorted(kinds.items()))), ""]
     if heart:
         basis = a.get("summary", "")
@@ -125,14 +161,21 @@ def illusion_notes(name, cfg, doc, adult, clear, tests, extra):
     else:
         out.append("No ♥ (%s). Claude translates it; %d of %d strings done." % (
             a.get("summary", "not scanned"), done, len(strings)))
-    out += ["", "## Limits", "",
-            "* Message lines wrap at the message window's width%s; `\\n` forces a break, "
-            "and a line that already fits is kept as written (spacing included)."
-            % (" (%d columns, set in game.json)" % cfg["window_cols"] if cfg.get("window_cols") else ""),
-            "* Clickable menus and buttons are hit-tested at the Japanese layout: those records "
-            "carry a `note` in `strings.json` with the lines and columns to keep.",
-            "* Engine strings: their original byte length.",
-            "", "## Not handled", "",
+    out += ["", "## Limits", ""]
+    if cfg["encoding"] == "illusion_mes":
+        out += ["* Each string has `max_cols` (its window's width: profile lines %d, disk prompts %d, "
+                "scene messages %d); longer lines are word-wrapped, `\\n` forces a break."
+                % (cfg["cols"].get("90", 0), cfg["cols"].get("f4", 0), cfg.get("default_cols", 70)),
+                "* Profile records are one frame line each.",
+                "* A message file may grow to %d bytes." % cfg.get("max_file", 10000)]
+    else:
+        out += ["* Message lines wrap at the message window's width%s; `\\n` forces a break, "
+                "and a line that already fits is kept as written (spacing included)."
+                % (" (%d columns, set in game.json)" % cfg["window_cols"] if cfg.get("window_cols") else ""),
+                "* Clickable menus and buttons are hit-tested at the Japanese layout: those records "
+                "carry a `note` in `strings.json` with the lines and columns to keep.",
+                "* Engine strings: their original byte length."]
+    out += ["", "## Not handled", "",
             "* Text drawn into the artwork (logos, captions, title menus drawn as pictures).",
             "* Installer and driver messages."]
     for line in extra.get(name, {}).get("not_handled", []):
@@ -160,7 +203,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") == "illusion":
+        if cfg.get("encoding") in ("illusion", "illusion_mes"):
             out = illusion_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

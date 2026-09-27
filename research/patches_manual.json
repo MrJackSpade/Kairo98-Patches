@@ -424,5 +424,21 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Illusion.zip/Yami no Ryousen": [
+  {
+   "label": "This repo: games/yami_no_ryousen (patcher working, machine translation in progress)",
+   "url": "../games/yami_no_ryousen/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Illusion.zip/Seisenshi Mokkoriman": [
+  {
+   "label": "This repo: games/seisenshi_mokkoriman (patcher working, machine translation in progress)",
+   "url": "../games/seisenshi_mokkoriman/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

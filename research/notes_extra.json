@@ -56,5 +56,31 @@
   "remarks": [
    "The message window is 34 columns; the engine's call sites use several widths, so game.json sets window_cols (measured in np21w)."
   ]
+ },
+ "yami_no_ryousen": {
+  "not_handled": [
+   "The chapter title cards are pictures."
+  ],
+  "remarks": [
+   "The patched game is a hard-disk image; the floppies are not changed."
+  ]
+ },
+ "seisenshi_mokkoriman": {
+  "not_handled": [
+   "The title song's lyrics and credits, the scenario menu and the scene title cards are pictures."
+  ],
+  "tests": [
+   [
+    "CG mode (all scenarios marked cleared in SAVE.DAT, test image only): scene captions in the lower message box",
+    "OK: filler half-width, wrapped at 32 columns"
+   ],
+   [
+    "Paging: a 6-line caption in that box",
+    "OK: 3 lines, waits for space, box cleared, lines 4-6"
+   ]
+  ],
+  "remarks": [
+   "Scene messages in play come after the action stages, which the boot steps don't clear; they use the same text window and pager as the CG-mode captions."
+  ]
  }
 }

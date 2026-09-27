@@ -214,6 +214,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Illusion | Mokkoriman RPG | [This repo: games/mokkoriman_rpg (patcher working, machine translation in progress)](../games/mokkoriman_rpg/notes.md) |
 | Illusion | Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri | [This repo: games/rankou (patcher working, machine translation in progress)](../games/rankou/notes.md) |
 | Illusion | Red Cobra | [This repo: games/red_cobra (patcher working, machine translation in progress)](../games/red_cobra/notes.md) |
+| Illusion | Seisenshi Mokkoriman | [This repo: games/seisenshi_mokkoriman (patcher working, machine translation in progress)](../games/seisenshi_mokkoriman/notes.md) |
+| Illusion | Yami no Ryousen | [This repo: games/yami_no_ryousen (patcher working, machine translation in progress)](../games/yami_no_ryousen/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 
 ## Translations not yet matched to a collection title
@@ -3068,8 +3070,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Mokkoriman RPG [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri [FD HD] `tmexec` — *MTL (this repo)*
 - ♥ Red Cobra [FD HD] `tmexec` — *MTL (this repo)*
-- ♥ Seisenshi Mokkoriman [FD HD] `tmexec`
-- ♥ Yami no Ryousen [FD HD] `tmexec`
+- ♥ Seisenshi Mokkoriman [FD HD] `tmexec` — *MTL (this repo)*
+- ♥ Yami no Ryousen [FD HD] `tmexec` — *MTL (this repo)*
 
 ### Illusion Core (`IllusionCore.zip`)
 

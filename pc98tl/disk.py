@@ -139,6 +139,13 @@ class FatVolume:
             raise ValueError("not an 8.3 name: %s" % parts[-1])
         cluster = self.find("/".join(parts[:-1]))["cluster"] if len(parts) > 1 else 0
         slot = next((off for off, e in self._dir_slots(cluster) if e[0] in (0, 0xE5)), None)
+        if slot is None and cluster:        # a subdirectory grows by a cluster
+            last = self.chain(cluster)[-1]
+            c = self._free_clusters(1)[0]
+            self._set(last, c)
+            self._set(c, 0xFFF if self.fat12 else 0xFFFF)
+            slot = self._coff(c)
+            self.buf[slot:slot + self.cluster_size] = bytes(self.cluster_size)
         if slot is None:
             raise IOError("directory full")
         entry = bytearray(32)

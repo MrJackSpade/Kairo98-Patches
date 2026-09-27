@@ -83,3 +83,5 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Rankou Nyotaitsuri - Mokkoriman no Nani de Nushitsuri | tmexec (Illusion) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 45 of 301) | works, pager in a <1 KB DOS block | OK (see notes) |
 | ♥ Red Cobra | tmexec (Illusion) | extracted | **Ready to translate** (maintainer; ♥ by the safety valve, Claude did 149 of 643) | works, pager in a <1 KB DOS block | OK (see notes) |
 | ♥ Ura Mansion Hakkin | tmexec (Illusion) | extracted | **Ready to translate** (maintainer) | works, pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Yami no Ryousen | tmexec (Illusion), EXEPACK engine | extracted | **Ready to translate** (maintainer) | works; hard-disk layout (floppies full), pager in a <1 KB DOS block | OK (see notes) |
+| ♥ Seisenshi Mokkoriman | Illusion MES.D (older engine) | extracted | **Ready to translate** (maintainer) | works; native half-width font, window pages instead of scrolling | OK (see notes) |

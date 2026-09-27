@@ -1,0 +1,24 @@
+{
+ "title": "Seisenshi Mokkoriman",
+ "key": "Illusion.zip/Seisenshi Mokkoriman",
+ "image": "Seisenshi Mokkoriman\\Seisenshi Mokkoriman [HD]\\Seisenshi Mokkoriman.hdi",
+ "game_dir": "MOKKORI",
+ "encoding": "illusion_mes",
+ "files": [
+  "MES0.D",
+  "MES1.D",
+  "MES2.D",
+  "MES3.D",
+  "MES4.D",
+  "MES5.D",
+  "MES6.D"
+ ],
+ "cols": {
+  "90": 22,
+  "f4": 32
+ },
+ "default_cols": 70,
+ "max_file": 10000,
+ "boot_steps": "60:shot,190:shot,1:space,5:shot,1:space,3:shot,1:space,4:shot",
+ "engine": "GAME.EXE"
+}

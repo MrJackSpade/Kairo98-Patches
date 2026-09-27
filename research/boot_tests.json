@@ -305,5 +305,33 @@
    "Following messages (5-line box)",
    "OK, words kept whole"
   ]
+ ],
+ "yami_no_ryousen": [
+  [
+   "Hard-disk layout boots (all seven disks' files in YAMI, drive prefixes pointed at A:)",
+   "OK"
+  ],
+  [
+   "Opening scenes (pictures from the former data disks)",
+   "OK"
+  ],
+  [
+   "Main message window",
+   "OK: half-width filler inside the frame, 5-line box"
+  ],
+  [
+   "Following messages",
+   "OK"
+  ]
+ ],
+ "seisenshi_mokkoriman": [
+  [
+   "Title and theme song, scenario menu (space selects)",
+   "OK (menu and song credits are pictures)"
+  ],
+  [
+   "Character profile frame (profile records)",
+   "OK: half-width filler inside the frame, one record per frame line"
+  ]
  ]
 }

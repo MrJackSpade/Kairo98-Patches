@@ -116576,7 +116576,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
+   "heart_basis": "provisional: 8 of 8 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -117077,7 +117077,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
+   "heart_basis": "provisional: 8 of 8 classified Illusion titles are adult",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
@@ -117438,15 +117438,22 @@
      "path": "Seisenshi Mokkoriman\\Seisenshi Mokkoriman [HD]\\Seisenshi Mokkoriman.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/seisenshi_mokkoriman (patcher working, machine translation in progress)",
+     "url": "../games/seisenshi_mokkoriman/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 7 of 7 classified Illusion titles are adult",
+   "heart_basis": "script text: 33 of 311 strings match the sexual-vocabulary list (4 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Illusion.zip/Yami no Ryousen",
@@ -117548,15 +117555,22 @@
      "path": "Yami no Ryousen\\Yami no Ryousen [HD]\\Yami no Ryousen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yami_no_ryousen (patcher working, machine translation in progress)",
+     "url": "../games/yami_no_ryousen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r18351 (erotic content)",
+   "heart_basis": "script text: 15 of 1361 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "tmexec",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "IllusionCore.zip/Aegean no Shizuku",

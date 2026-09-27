@@ -1,0 +1,48 @@
+{
+ "title": "Yami no Ryousen",
+ "key": "Illusion.zip/Yami no Ryousen",
+ "image": "Yami no Ryousen\\Yami no Ryousen [FD]\\Yami no Ryousen (Disk A) [installed].hdm",
+ "game_dir": "",
+ "engine": "MAIN.EXE",
+ "encoding": "illusion",
+ "msg_encoding": "euc_x80",
+ "boot_steps": "40:shot,3:lclick,3:lclick,3:enter,3:space,3:rclick,8:shot,2:lclick,5:shot,2:lclick,5:shot,2:lclick,2:lclick,5:shot,2:lclick,2:lclick,2:lclick,5:shot",
+ "hdd": {
+  "base": "Kankin\\Kankin [HD]\\Kankin.hdi",
+  "remove": [
+   "KAN"
+  ],
+  "dir": "YAMI",
+  "disks": [
+   "Yami no Ryousen (Disk B).hdm",
+   "Yami no Ryousen (Disk C).hdm",
+   "Yami no Ryousen (Disk D).hdm",
+   "Yami no Ryousen (Disk E).hdm",
+   "Yami no Ryousen (Disk F).hdm",
+   "Yami no Ryousen (Disk G).hdm"
+  ],
+  "skip": [
+   "HDINST.EXE",
+   "HDINST.CHP",
+   "HDINST.DAT",
+   "HDINST.PG4",
+   "MDINST.D",
+   "MDINST.EXE",
+   "MDINST.FNT",
+   "MDINST.ICN",
+   "TMEXEC.ASC"
+  ],
+  "run": [
+   "CD YAMI",
+   "MAIN"
+  ],
+  "replace": [
+   "CD KAN",
+   "GAME"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "exepack": true
+}
