@@ -7,25 +7,21 @@ Clearance: no PC-98 English release or announcement found on 2026-09-26 (`resear
 
 ## Engine
 
-JAST's scene engine (`TEN6/TEN6.EXE`): 101 scene files (`*.OVL`) holding text and scene code in one stream (`pc98tl/jast_ovl.py` documents the format).
+JAST's later scene engine: 101 scene files (`*.SCM`), command tables then messages ended by `00 00`, found by count (`pc98tl/jast_scm.py`).
 
-## English display (`pc98tl/jast_game.py`)
+## English display (`pc98tl/jast_scm.py`)
 
-* The engine draws single-byte ASCII half-width from its own ANK font, so the
-  English needs no font work.  Its character check dropped ASCII punctuation;
-  the patch marks bytes 21-3F (but digits and `%`, the name placeholder) as
-  single-byte characters in the engine's character class table.
-* Scene files are never rearranged: each Japanese text run is overwritten
-  with the engine's own goto (`0B 36` + file offset) to its English, appended
-  at the end of the file, which ends with a goto back to just after the run.
-  Every offset the scene code holds stays valid.
-* English lines are padded with spaces so the engine's own wrap (78 columns,
-  a speaker's lines hanging after the colon at 62) falls between words.
-  Messages longer than the three-line box page as in the original.
+* The engine draws every character from the kanji ROM.  Its glyph fetch is
+  rewritten: a code whose first byte is below 80 is two ASCII letters, drawn
+  as the kanji ROM's two 8x16 ANK glyphs side by side in one cell (a far
+  routine in a small DOS block from the entry stub); Japanese draws as before.
+* English is one stream of lines padded to the window's width, words
+  stopping two columns short of the edge; the engine pages a full box itself
+  (waits for a click).
 
 ## Script
 
-1174 strings (scene text).
+1118 strings (scene text).
 
 ♥ by the script-text scan (23 of 1174 strings match the sexual-vocabulary list (6 distinct terms)). The maintainer translates it; 0 strings have English so far.
 
@@ -45,6 +41,6 @@ JAST's scene engine (`TEN6/TEN6.EXE`): 101 scene files (`*.OVL`) holding text an
 | Test | Result |
 |---|---|
 | Title / command menu | OK (engine menus stay Japanese) |
-| Message window | OK: half-width filler, wrapped between words inside the frame (60 columns) |
-| Commands LOOK/SPEAK and their messages | OK |
+| Message window | OK: half-width filler inside the frame, wrapped between words (60 columns) |
+| Long message: the engine pages a full box itself | OK (9-line test message) |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

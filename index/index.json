@@ -124333,15 +124333,22 @@
      "path": "Tenshi-tachi no Gogo III Bangaihen Hanseiban\\Tenshi-tachi no Gogo III Bangaihen Hanseiban [FD]\\Tenshi-tachi no Gogo III Bangaihen Hanseiban (Disk D).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_iii_hanseiban/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17829 (erotic content)",
+   "heart_basis": "script text: 22 of 1309 strings match the sexual-vocabulary list (7 distinct terms)",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo IV - Yuko",
@@ -124509,15 +124516,22 @@
      "path": "Tenshi-tachi no Gogo Special II\\Tenshi-tachi no Gogo Special II [FD]\\Tenshi-tachi no Gogo Special II (Disk E).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_special_ii (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_special_ii/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "provisional: 24 of 24 classified Jast titles are adult",
+   "heart_basis": "script text: 20 of 1677 strings match the sexual-vocabulary list (4 distinct terms)",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo Tenkousei",
@@ -124671,15 +124685,22 @@
      "path": "Tenshi-tachi no Gogo V - Nerawareta Tenshi\\Tenshi-tachi no Gogo V - Nerawareta Tenshi [FD]\\Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk E).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_v (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_v/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
-   "heart_basis": "VNDB r17831 (erotic content)",
+   "heart_basis": "script text: 6 of 2002 strings match the sexual-vocabulary list (3 distinct terms)",
    "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo VI - My Fair Teacher",
@@ -124891,7 +124912,7 @@
    ],
    "patches": [],
    "heart": true,
-   "heart_basis": "provisional: 24 of 24 classified Jast titles are adult",
+   "heart_basis": "script text: manual: declined - the script sexualizes a young child (found in the first scene file, 2026-09-27); no extraction or patch will be made",
    "engine": "unknown",
    "english": false,
    "in_progress": false,

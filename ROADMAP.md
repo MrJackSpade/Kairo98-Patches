@@ -98,3 +98,6 @@ DEFINITION_OF_DONE.md for the full checklist.
 | ♥ Shuukan From H | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
 | ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX | jast OVL | extracted | **Ready to translate** (maintainer) | works | boots; message window not yet reached |
 | ♥ Tenshi-tachi no Gogo VI - My Fair Teacher | jast SCM | extracted | **Ready to translate** (maintainer) | works | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo V - Nerawareta Tenshi | jast SCM | extracted | **Ready to translate** (maintainer) | works; floppy set, message window pages | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo III Bangaihen Hanseiban | jast SCM | extracted | **Ready to translate** (maintainer) | works; hard-disk layout, message window pages | OK (see notes) |
+| ♥ Tenshi-tachi no Gogo Special II | jast SCM | extracted | **Ready to translate** (maintainer) | works; hard-disk layout | OK (see notes) |

@@ -1126,5 +1126,88 @@
    "m01114",
    "m01116"
   ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi": {
+  "adult": true,
+  "hits": 6,
+  "strings": 2002,
+  "distinct_terms": 3,
+  "summary": "6 of 2002 strings match the sexual-vocabulary list (3 distinct terms)",
+  "adult_ids": [
+   "m00750",
+   "m00918",
+   "m00942",
+   "m01462",
+   "m01552",
+   "m01569"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban": {
+  "adult": true,
+  "hits": 22,
+  "strings": 1309,
+  "distinct_terms": 7,
+  "summary": "22 of 1309 strings match the sexual-vocabulary list (7 distinct terms)",
+  "adult_ids": [
+   "m00313",
+   "m00314",
+   "m00323",
+   "m00340",
+   "m00369",
+   "m00386",
+   "m00389",
+   "m00392",
+   "m00394",
+   "m00459",
+   "m00461",
+   "m00473",
+   "m00660",
+   "m00825",
+   "m00829",
+   "m00870",
+   "m00880",
+   "m00886",
+   "m00962",
+   "m01289",
+   "m01298",
+   "m01300"
+  ]
+ },
+ "Jast.zip/Tenshi-tachi no Gogo Special II": {
+  "adult": true,
+  "hits": 20,
+  "strings": 1677,
+  "distinct_terms": 4,
+  "summary": "20 of 1677 strings match the sexual-vocabulary list (4 distinct terms)",
+  "adult_ids": [
+   "m00434",
+   "m00648",
+   "m00677",
+   "m00681",
+   "m00682",
+   "m00696",
+   "m00828",
+   "m00842",
+   "m00844",
+   "m00846",
+   "m00885",
+   "m00921",
+   "m00952",
+   "m01182",
+   "m01184",
+   "m01202",
+   "m01254",
+   "m01260",
+   "m01261",
+   "m01650"
+  ]
+ },
+ "Jast.zip/Totsugeki! Bakkon Street": {
+  "adult": true,
+  "hits": 0,
+  "strings": 0,
+  "distinct_terms": 0,
+  "adult_ids": [],
+  "summary": "manual: declined - the script sexualizes a young child (found in the first scene file, 2026-09-27); no extraction or patch will be made"
  }
 }

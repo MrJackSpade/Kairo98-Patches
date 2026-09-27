@@ -544,5 +544,29 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi": [
+  {
+   "label": "This repo: games/tenshi_v (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_v/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo III Bangaihen Hanseiban": [
+  {
+   "label": "This repo: games/tenshi_iii_hanseiban (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_iii_hanseiban/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo Special II": [
+  {
+   "label": "This repo: games/tenshi_special_ii (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_special_ii/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

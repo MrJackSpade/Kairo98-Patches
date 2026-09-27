@@ -1,0 +1,20 @@
+{
+ "title": "Tenshi-tachi no Gogo V - Nerawareta Tenshi",
+ "key": "Jast.zip/Tenshi-tachi no Gogo V - Nerawareta Tenshi",
+ "image": "Tenshi-tachi no Gogo V - Nerawareta Tenshi\\Tenshi-tachi no Gogo V - Nerawareta Tenshi [FD]\\Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk A).hdm",
+ "game_dir": "",
+ "engine": ".EXE",
+ "encoding": "jast_scm",
+ "cols": 60,
+ "native_ascii": true,
+ "floppies": {
+  "B": "Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk B).hdm",
+  "C": "Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk C).hdm",
+  "D": "Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk D).hdm",
+  "E": "Tenshi-tachi no Gogo V - Nerawareta Tenshi (Disk E).hdm"
+ },
+ "dipsw": "3e f3 7b",
+ "boot_steps": "30:shot,3:enter,4:space,4:shot,2:lclick,4:shot,2:lclick,4:shot",
+ "box_lines": 4,
+ "cave": 52034
+}

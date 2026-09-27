@@ -232,6 +232,26 @@ JAST_DISPLAY = """## English display (`pc98tl/jast_game.py`)
   Messages longer than the three-line box page as in the original."""
 
 
+SCM_ROM_DISPLAY = """## English display (`pc98tl/jast_scm.py`)
+
+* The engine draws every character from the kanji ROM.  Its glyph fetch is
+  rewritten: a code whose first byte is below 80 is two ASCII letters, drawn
+  as the kanji ROM's two 8x16 ANK glyphs side by side in one cell (a far
+  routine in a small DOS block from the entry stub); Japanese draws as before.
+* English is one stream of lines padded to the window's width, words
+  stopping two columns short of the edge; the engine pages a full box itself
+  (waits for a click)."""
+
+SCM_TEXT_DISPLAY = """## English display (`pc98tl/jast_scm.py`, `pc98tl/jast_console.py`)
+
+* The engine prints on the PC-98 text layer, so ASCII is half-width already.
+* English lines end with the engine's newline; the message window used to
+  scroll a full box up, losing its start, so its scroll calls now go to a
+  pager: it waits for a click or a key, clears the window and goes on at the
+  top.  The pager sits in a zero-filled part of the program that the game
+  never touches."""
+
+
 def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -247,10 +267,25 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
-    out += ["", "## Engine", "",
-            "JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
-            "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
-            "", JAST_DISPLAY, "", "## Script", "", "%d strings (scene text)." % len(strings), ""]
+    out += ["", "## Engine", ""]
+    if cfg["encoding"] == "jast_scm":
+        out.append("JAST's later scene engine: %d scene files (`*.SCM`), command tables then messages "
+                   "ended by `00 00`, found by count (`pc98tl/jast_scm.py`)." % len(files))
+        if cfg.get("hdd"):
+            out.append("The floppies have no room for a longer script, so the patch lays the game out on a "
+                       "DOS hard-disk image (every disk's files in `%s/`, started as the floppy's batch file "
+                       "does%s); the base image is the collection's `%s` with its own game removed."
+                       % (cfg["hdd"]["dir"], ", with the engine's hard-disk switch `/h`" if cfg["hdd"]["run"][-1].endswith("/h")
+                          else "; the engine's select-disk call always picks the hard disk",
+                          cfg["hdd"]["base"].replace("\\", "/")))
+        elif cfg.get("floppies"):
+            out.append("Every floppy's scene files are patched; the output is the full disk set.")
+        out += ["", SCM_TEXT_DISPLAY if cfg.get("native_ascii") else SCM_ROM_DISPLAY]
+    else:
+        out += ["JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
+                "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
+                "", JAST_DISPLAY]
+    out += ["", "## Script", "", "%d strings (scene text)." % len(strings), ""]
     if heart:
         basis = a.get("summary", "")
         if basis.startswith("manual:"):

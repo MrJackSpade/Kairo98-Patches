@@ -478,10 +478,7 @@ def _entry_stub(ks, exe, pager, labels, libseg, ptrh, ptrc):
         mov word ptr es:[8], {zlen}
         mov ax, word ptr es:[0]
         mov ds, ax
-        mov word ptr [{ptrh}], {head}
-        mov word ptr [{ptrh2}], es
-        mov word ptr [{ptrc}], {common}
-        mov word ptr [{ptrc2}], es
+        {pointers}
         push es
         mov ax, {finish}
         push ax
@@ -495,9 +492,17 @@ def _entry_stub(ks, exe, pager, labels, libseg, ptrh, ptrc):
         mov ax, 0x4c01
         int 0x21
         """.format(np=paras, np1=paras + 1, poff=poff, plen=len(pager), libseg=libseg,
-                   oip=hdr[10], ocs=hdr[11], zlen=zlen, ptrh=ptrh, ptrh2=ptrh + 2,
-                   ptrc=ptrc, ptrc2=ptrc + 2, head=labels["head_far"],
-                   common=labels["common_far"], finish=labels["finish"], msg_at=msg_at)
+                   oip=hdr[10], ocs=hdr[11], zlen=zlen, finish=labels["finish"], msg_at=msg_at,
+                   pointers=pointers)
+
+    # far pointers to the pager's entry points, written into the program's
+    # memory; none when the pager hooks the program another way (an
+    # interrupt vector set in its own "finish" code)
+    pointers = "" if ptrh is None else "\n".join((
+        "mov word ptr [%d], %d" % (ptrh, labels["head_far"]),
+        "mov word ptr [%d], es" % (ptrh + 2),
+        "mov word ptr [%d], %d" % (ptrc, labels["common_far"]),
+        "mov word ptr [%d], es" % (ptrc + 2)))
 
     # the immediates are 16-bit, so the stub's size doesn't depend on them
     size = len(_asm(ks, stub_src(0x1000, 0x1000, 0x1000), 0)[0])

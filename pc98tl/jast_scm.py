@@ -16,7 +16,9 @@ ASCII, two letters per cell; untranslated Japanese draws as before.
 game.json: {"title", "key", "image", "game_dir", "engine", "encoding": "jast_scm",
             "cols" (the text window's width in half-width columns), "dgroup" and
             "pointers" (two DGROUP offsets that stay zero, for the far pointer),
-            "boot_steps", "dipsw"}
+            "boot_steps", "dipsw", optional "native_ascii": true (engines that
+            draw ASCII half-width themselves, on the text layer: no engine
+            patch), "floppies": {"B": "<other disk image>", ...}}
 A string's ref is "<file>:<message number>".
 """
 import json
@@ -47,21 +49,51 @@ def _path(cfg, name):
     return (cfg["game_dir"] + "/" if cfg["game_dir"] else "") + name
 
 
+def _clean(piece):
+    """Pure message text: Shift-JIS, ASCII, half-width kana, 01 (a speaker
+    line) and 0A (a new page)."""
+    i = 0
+    while i < len(piece):
+        b = piece[i]
+        if 0x81 <= b <= 0x9F or 0xE0 <= b <= 0xEF:
+            if i + 1 >= len(piece) or not 0x40 <= piece[i + 1] <= 0xFC:
+                return False
+            i += 2
+        elif 0x20 <= b <= 0x7E or 0xA1 <= b <= 0xDF or b in (0x01, 0x0A):
+            i += 1
+        else:
+            return False
+    return True
+
+
 def text_start(data):
-    """Where the messages begin: the first Shift-JIS character after the
-    tables (every message is Shift-JIS text ended by 00 00)."""
-    m = re.search(rb"[\x81-\x9f\xe0-\xef][\x40-\xfc]", data)
-    return m.start() if m else len(data)
+    """Where the messages begin: the first position just after a table byte
+    (FF or a control value) whose 00 00-ended piece is message text with a
+    Shift-JIS character in it."""
+    cands = [0] + [i + 1 for i, b in enumerate(data) if b == 0xFF or (b < 0x20 and b not in (0x01, 0x0A))]
+    for p in cands:
+        e = data.find(b"\x00\x00", p)
+        if e <= p:
+            continue
+        piece = data[p:e]
+        if _clean(piece) and re.search(rb"[\x81-\x9f\xe0-\xef][\x40-\xfc]", piece):
+            return p
+    return len(data)
 
 
 def messages(data):
-    """[(number, start, end)]: messages after the tables, each ended by 00 00."""
+    """[(number, start, end)]: the pieces after the tables, each ended by
+    00 00, numbered by position; only pieces of pure message text are
+    listed (a few files keep command tables between their messages, which
+    are left alone)."""
     out, i, n = [], text_start(data), 0
     while i < len(data):
         e = data.find(b"\x00\x00", i)
         if e < 0:
             break
-        out.append((n, i, e))
+        piece = data[i:e]
+        if piece and _clean(piece):
+            out.append((n, i, e))
         n += 1
         i = e + 2
     return out
@@ -72,21 +104,45 @@ def scene_files(cfg, vol):
     return sorted(e["name"] for e in ents if e["name"].upper().endswith(".SCM"))
 
 
+def disks(cfg, src):
+    """[(tag, image, volume)]: the source image (tag "") and, for floppy
+    sets, the other disks named in game.json "floppies" (next to the source;
+    tag = their key, e.g. "B").  Every disk's scene files are patched: the
+    engine loads a scene from whichever disk is in the drive."""
+    if cfg.get("hdd"):   # floppies too full for English: the hard-disk layout
+        from .illusion_game import _hdd_install
+        img, hcfg = _hdd_install(cfg, src)
+        cfg["game_dir"] = hcfg["game_dir"]
+        return [("", img, img.volumes[0])]
+    img = DiskImage(src)
+    out = [("", img, img.volumes[0])]
+    for tag, name in cfg.get("floppies", {}).items():
+        other = DiskImage(os.path.join(os.path.dirname(src), name))
+        out.append((tag, other, other.volumes[0]))
+    return out
+
+
+def _ref(tag, name, num):
+    return ("%s/%s:%d" % (tag, name, num)) if tag else ("%s:%d" % (name, num))
+
+
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    vol = DiskImage(src).volumes[0]
     merged, order = {}, []
-    for name in scene_files(cfg, vol):
+    for tag, _img, vol in disks(cfg, src):
+      for name in scene_files(cfg, vol):
         data = vol.read(_path(cfg, name))
         for num, s, e in messages(data):
-            jp = data[s:e].decode("cp932", "replace").replace("\x00", "\n")
+            pages = data[s:e].split(b"\x0a")
+            speaker = [k for k, pg in enumerate(pages) if pg[:1] == b"\x01"]
+            jp = "\n".join(pg.lstrip(b"\x01").decode("cp932", "replace") for pg in pages)
             if not jp.strip():
                 continue
-            ref = "%s:%d" % (name, num)
+            ref = _ref(tag, name, num)
             if jp in merged:
                 merged[jp]["refs"].append(ref)
                 continue
-            merged[jp] = {"kind": "msg", "jp": jp, "en": "", "refs": [ref]}
+            merged[jp] = {"kind": "msg", "jp": jp, "en": "", "refs": [ref], "speaker_pages": speaker}
             order.append(jp)
     strings = [{"id": "m%05d" % i, **merged[jp]} for i, jp in enumerate(order, 1)]
     out = os.path.join(here, "strings.json")
@@ -241,15 +297,33 @@ def encode_en(text):
     return s.encode("ascii")
 
 
-def lay_out(text, cols):
-    """Word-wrapped to the window (lines padded to full width, two letters a
-    cell, so the engine's own cell wrap lands between words)."""
+def lay_out(text, cols, box_lines, speaker_pages=()):
+    """For the kanji-ROM engines (Tenshi VI, Special II): one stream of lines
+    word-wrapped to the window and padded to its full width, so the engine's
+    own cell wrap lands between words; the engine pages a full box itself
+    (waits for a click, clears).  Its 0A doesn't break a line, so the
+    English uses none; each Japanese page starts on a new line."""
     from .text import wrap
     lines = []
-    for para in text.split("\n"):
-        lines += wrap(para, cols, width=len) or [""]
-    body = "".join(line.ljust(cols) if k < len(lines) - 1 else line for k, line in enumerate(lines))
+    for page in text.split("\n"):
+        # words stop two columns short of the edge (a letter in the last
+        # column can be lost where the portrait panel meets the box)
+        lines += wrap(page, cols - 2, width=len) or [""]
+    body = "".join(ln.ljust(cols) if j < len(lines) - 1 else ln for j, ln in enumerate(lines))
     return encode_en(body)
+
+
+def lay_out_lines(text, cols, box_lines, speaker_pages=()):
+    """For the text-layer engines (native ASCII): every line ends with the
+    engine's newline 0A and a Japanese page's first line keeps its speaker
+    code 01; a message longer than the box pages through the console pager
+    (pc98tl/jast_console.py)."""
+    from .text import wrap
+    lines = []
+    for k, page in enumerate(text.split("\n")):
+        for j, ln in enumerate(wrap(page, cols - 1, width=len) or [""]):
+            lines.append((b"\x01" if (j == 0 and k in speaker_pages) else b"") + encode_en(ln).rstrip(b" "))
+    return b"\x0a".join(lines)
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -258,20 +332,25 @@ def run_patch(here, src, dst, mode="en"):
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
-    img = DiskImage(src)
-    vol = img.volumes[0]
     cols = cfg.get("cols", 60)
     by_ref = {}
     for e in doc["strings"]:
-        text = pseudo(e["id"], int(len(e["jp"]) * 2)) if mode == "pseudo" else e["en"]
+        if mode == "pseudo":
+            text = "\n".join(pseudo("%s.%d" % (e["id"], k), int(len(pg) * 2.5))
+                             for k, pg in enumerate(e["jp"].split("\n")))
+        else:
+            text = e["en"]
         if text:
             for r in e["refs"]:
-                by_ref[r] = lay_out(text, cols)
-    for name in scene_files(cfg, vol):
+                by_ref[r] = (lay_out_lines if cfg.get("native_ascii") else lay_out)(
+                    text, cols, cfg.get("box_lines", 3), e.get("speaker_pages", ()))
+    all_disks = disks(cfg, src)
+    for tag, _img, vol in all_disks:
+      for name in scene_files(cfg, vol):
         data = vol.read(_path(cfg, name))
         out, pos, changed = bytearray(), 0, False
         for num, s, e in messages(data):
-            en = by_ref.get("%s:%d" % (name, num))
+            en = by_ref.get(_ref(tag, name, num))
             if en is None:
                 continue
             out += data[pos:s] + en
@@ -280,10 +359,30 @@ def run_patch(here, src, dst, mode="en"):
         if changed:
             out += data[pos:]
             vol.write(_path(cfg, name), bytes(out))
+    tag, img, vol = all_disks[0]
     exe_path = _path(cfg, cfg["engine"])
-    vol.write(exe_path, patch_engine(vol.read(exe_path), cfg["dgroup"], cfg["pointers"]))
+    if cfg.get("one_drive"):
+        # hard-disk layout for an engine without a hard-disk mode: its
+        # "select disk" (DOS function 0E, drive from the argument) always
+        # selects drive A, the hard disk, whose current directory holds
+        # every disk's files
+        exe = bytearray(vol.read(exe_path))
+        sel = bytes.fromhex("b40e8a5604cd21")
+        at = bytes(exe).find(sel)
+        if at < 0 or bytes(exe).find(sel, at + 1) >= 0:
+            raise ValueError("select-disk call not found (or not unique)")
+        exe[at + 2:at + 5] = bytes.fromhex("b20090")
+        vol.write(exe_path, bytes(exe))
+    if cfg.get("native_ascii"):       # text layer through DOS: only the pager
+        from .jast_console import install
+        vol.write(exe_path, install(vol.read(exe_path), cfg["cave"]))
+    else:                             # engines that draw only kanji-ROM glyphs
+        vol.write(exe_path, patch_engine(vol.read(exe_path), cfg["dgroup"], cfg["pointers"]))
     vol.create(_path(cfg, "MTL_NOTE.TXT"),
                MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))
     img.save(dst)
+    stem = os.path.splitext(dst)[0]
+    for tag, other, _vol in all_disks[1:]:
+        other.save("%s - %s" % (stem, os.path.basename(other.path)))
     done = sum(1 for e in doc["strings"] if e["en"])
     print("patched %s (%s mode, %d/%d strings translated)" % (dst, mode, done, len(doc["strings"])))
