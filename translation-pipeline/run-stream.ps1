@@ -6,7 +6,8 @@ param(
     [int]$MaxFieldTokens = 3000,
     [string]$Work,
     [string]$Output,
-    [int]$Limit = 0
+    [int]$Limit = 0,
+    [switch]$RecoverOnly
 )
 $ErrorActionPreference = 'Stop'
 $projectDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -19,7 +20,7 @@ $models = @{
 }
 if ($ContextTokens -eq 0) { $ContextTokens = if ($Model -eq 'deepseek') { 262144 } else { 16384 } }
 $modelPath = $models[$Model]
-if (-not (Test-Path -LiteralPath $modelPath)) { throw "Model is missing: $modelPath" }
+if (-not $RecoverOnly -and -not (Test-Path -LiteralPath $modelPath)) { throw "Model is missing: $modelPath" }
 $runnerArgs = @(
     (Join-Path $projectDir 'translate_stream.py'), $InputFile,
     '--model', $modelPath, '--model-tag', $Model,
@@ -30,5 +31,6 @@ if ($GpuLayers -ge 0) { $runnerArgs += @('--gpu-layers', [string]$GpuLayers) }
 if ($Work) { $runnerArgs += @('--work', $Work) }
 if ($Output) { $runnerArgs += @('--output', $Output) }
 if ($Limit -gt 0) { $runnerArgs += @('--limit', [string]$Limit) }
+if ($RecoverOnly) { $runnerArgs += '--recover-only' }
 & $python @runnerArgs
 exit $LASTEXITCODE

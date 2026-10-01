@@ -1,8 +1,10 @@
 """ctypes binding for the exact llama.cpp b11205 Windows DLL used by this pipeline."""
 import ctypes as C
+import mmap
 import os
 from pathlib import Path
 import sys
+import tempfile
 
 
 class ModelParams(C.Structure):
@@ -70,11 +72,36 @@ def bind(dll, name, restype, *argtypes):
     return fn
 
 
+class DiskSnapshot:
+    """One file-backed sequence state, removed when closed."""
+
+    def __init__(self, file, mapping, size, token_count):
+        self.file = file
+        self.mapping = mapping
+        self.size = size
+        self.token_count = token_count
+
+    def close(self):
+        if self.mapping is not None:
+            self.mapping.close()
+            self.mapping = None
+        if self.file is not None:
+            self.file.close()
+            self.file = None
+
+    def __del__(self):
+        self.close()
+
+
 class DirectLlama:
     def __init__(self, model_path, context_tokens=16384, kv_on_gpu=True, gpu_layers=99,
-                 cpu_tensor_patterns=()):
+                 cpu_tensor_patterns=(), progress=None, threads=None,
+                 interrupt_requested=None):
         self.model_path = Path(model_path)
+        self.interrupt_requested = interrupt_requested
         runtime = Path(__file__).resolve().parent / "runtime" / "llama"
+        if progress:
+            progress.start("loading llama.cpp and CUDA libraries")
         self._dll_dir = os.add_dll_directory(str(runtime))
         # Windows' backend loader needs CUDA and its dependencies resident first.
         self.cuda = C.CDLL(str(runtime / "ggml-cuda.dll"))
@@ -88,10 +115,18 @@ class DirectLlama:
                 sys.stderr.write(message.decode("utf-8", errors="replace"))
         self._log_callback = LOG_CALLBACK(log_errors)
         self.llama_log_set(self._log_callback, None)
+        if progress:
+            progress.finish()
+            progress.start("initializing llama.cpp backends")
         self.ggml_backend_load_all_from_path(os.fsencode(str(runtime)))
         self.llama_backend_init()
         params = self.llama_model_default_params()
         params.n_gpu_layers = gpu_layers
+        if interrupt_requested:
+            LOAD_PROGRESS = C.CFUNCTYPE(C.c_bool, C.c_float, C.c_void_p)
+            self._load_progress_callback = LOAD_PROGRESS(
+                lambda _fraction, _data: not interrupt_requested())
+            params.progress_callback = C.cast(self._load_progress_callback, C.c_void_p).value
         if cpu_tensor_patterns:
             cpu_buft = self.ggml_backend_cpu_buffer_type()
             if not cpu_buft:
@@ -102,24 +137,44 @@ class DirectLlama:
                 overrides[index] = TensorBuftOverride(pattern, cpu_buft)
             self._tensor_overrides = overrides
             params.tensor_buft_overrides = C.cast(overrides, C.c_void_p).value
+        if progress:
+            progress.finish()
+            progress.start("loading model weights into RAM/VRAM")
         self.model = self.llama_model_load_from_file(os.fsencode(str(model_path)), params)
+        if interrupt_requested and interrupt_requested():
+            self.close()
+            raise KeyboardInterrupt
         if not self.model:
             raise RuntimeError("llama.dll could not load model")
+        if progress:
+            progress.finish()
+            progress.start(f"allocating {context_tokens:,}-token context and KV cache")
         cparams = self.llama_context_default_params()
         cparams.n_ctx = context_tokens
         cparams.n_batch = 2048
         cparams.n_ubatch = 512
+        if threads is not None:
+            cparams.n_threads = threads
+        self.threads = cparams.n_threads
+        self.batch_threads = cparams.n_threads_batch
         cparams.flash_attn_type = 1
         cparams.type_k = 8  # GGML_TYPE_Q8_0
         cparams.type_v = 8
         cparams.offload_kqv = kv_on_gpu
         self.ctx = self.llama_init_from_model(self.model, cparams)
+        if interrupt_requested and interrupt_requested():
+            self.close()
+            raise KeyboardInterrupt
         if not self.ctx:
             self.llama_model_free(self.model)
             raise RuntimeError("llama.dll could not initialize context")
         self.vocab = self.llama_model_get_vocab(self.model)
         self.context_tokens = context_tokens
         self.tokens_used = 0
+
+    def _check_interrupt(self):
+        if self.interrupt_requested and self.interrupt_requested():
+            raise KeyboardInterrupt
 
     def _bind(self):
         lib = self.lib
@@ -158,9 +213,7 @@ class DirectLlama:
         self.llama_sampler_chain_add = bind(lib, "llama_sampler_chain_add", None, C.c_void_p, C.c_void_p)
         self.llama_sampler_init_grammar = bind(lib, "llama_sampler_init_grammar", C.c_void_p,
                                                C.c_void_p, C.c_char_p, C.c_char_p)
-        self.llama_sampler_init_temp = bind(lib, "llama_sampler_init_temp", C.c_void_p, C.c_float)
-        self.llama_sampler_init_top_p = bind(lib, "llama_sampler_init_top_p", C.c_void_p, C.c_float, C.c_size_t)
-        self.llama_sampler_init_dist = bind(lib, "llama_sampler_init_dist", C.c_void_p, C.c_uint32)
+        self.llama_sampler_init_greedy = bind(lib, "llama_sampler_init_greedy", C.c_void_p)
         self.llama_sampler_sample = bind(lib, "llama_sampler_sample", C.c_int32, C.c_void_p, C.c_void_p, C.c_int32)
         self.llama_sampler_free = bind(lib, "llama_sampler_free", None, C.c_void_p)
         self.llama_vocab_is_eog = bind(lib, "llama_vocab_is_eog", C.c_bool, C.c_void_p, C.c_int32)
@@ -175,6 +228,7 @@ class DirectLlama:
 
     def reset(self):
         self.llama_memory_clear(self.llama_get_memory(self.ctx), True)
+        self._check_interrupt()
         self.tokens_used = 0
 
     def rewind(self, token_count):
@@ -190,7 +244,44 @@ class DirectLlama:
             raise RuntimeError("llama.cpp could not snapshot the prefix")
         return buffer, copied, self.tokens_used
 
+    def snapshot_to_disk(self, directory, max_bytes):
+        size = self.llama_state_seq_get_size(self.ctx, 0)
+        if not 0 < size <= max_bytes:
+            raise ValueError(f"cache state needs {size / 1073741824:.1f} GiB; "
+                             f"disk checkpoint limit is {max_bytes / 1073741824:.1f} GiB")
+        file = tempfile.TemporaryFile(dir=directory)
+        mapping = None
+        try:
+            file.truncate(size)
+            mapping = mmap.mmap(file.fileno(), size, access=mmap.ACCESS_WRITE)
+            first_byte = C.c_char.from_buffer(mapping)
+            try:
+                copied = self.llama_state_seq_get_data(self.ctx, C.byref(first_byte), size, 0)
+            finally:
+                del first_byte
+            if copied == 0:
+                raise RuntimeError("llama.cpp could not save the cache state")
+            mapping.flush()
+            return DiskSnapshot(file, mapping, copied, self.tokens_used)
+        except BaseException:
+            if mapping is not None:
+                mapping.close()
+            file.close()
+            raise
+
     def restore(self, snapshot):
+        if isinstance(snapshot, DiskSnapshot):
+            self.reset()
+            first_byte = C.c_char.from_buffer(snapshot.mapping)
+            try:
+                restored = self.llama_state_seq_set_data(
+                    self.ctx, C.byref(first_byte), snapshot.size, 0)
+            finally:
+                del first_byte
+            if not restored:
+                raise RuntimeError("llama.cpp could not restore the disk cache state")
+            self.tokens_used = snapshot.token_count
+            return
         buffer, size, token_count = snapshot
         self.reset()
         if not self.llama_state_seq_set_data(self.ctx, buffer, size, 0):
@@ -202,28 +293,35 @@ class DirectLlama:
         size = max(32, len(raw) + 8)
         tokens = (C.c_int32 * size)()
         count = self.llama_tokenize(self.vocab, raw, len(raw), tokens, size, add_special, True)
+        self._check_interrupt()
         if count < 0:
             size = -count
             tokens = (C.c_int32 * size)()
             count = self.llama_tokenize(self.vocab, raw, len(raw), tokens, size, add_special, True)
+            self._check_interrupt()
         if count < 0:
             raise RuntimeError("llama_tokenize failed")
         return list(tokens[:count])
 
-    def decode_tokens(self, tokens):
+    def decode_tokens(self, tokens, on_progress=None):
         for offset in range(0, len(tokens), 512):
             part = tokens[offset:offset + 512]
             if self.tokens_used + len(part) > self.context_tokens:
                 raise ValueError("llama context is full")
             arr = (C.c_int32 * len(part))(*part)
             result = self.llama_decode(self.ctx, self.llama_batch_get_one(arr, len(part)))
+            self._check_interrupt()
             if result != 0:
                 raise RuntimeError(f"llama_decode failed with code {result}")
             self.tokens_used += len(part)
+            if on_progress:
+                on_progress(offset + len(part), len(tokens))
 
-    def prefill(self, text, initial=False):
+    def prefill(self, text, initial=False, on_progress=None):
         tokens = self.tokenize(text, add_special=initial)
-        self.decode_tokens(tokens)
+        if on_progress:
+            on_progress(0, len(tokens))
+        self.decode_tokens(tokens, on_progress=on_progress)
         return len(tokens)
 
     def token_piece(self, token):
@@ -264,34 +362,41 @@ class DirectLlama:
             rendered += "<think>\n</think>\n\n"
         return rendered
 
-    def sample_json_string(self, grammar, max_tokens=3000):
+    def sample_json_string(self, grammar, max_tokens=3000, on_piece=None, on_token=None):
         chain = self.llama_sampler_chain_init(self.llama_sampler_chain_default_params())
         grammar_sampler = self.llama_sampler_init_grammar(self.vocab, grammar.encode("utf-8"), b"root")
         if not grammar_sampler:
             self.llama_sampler_free(chain)
             raise RuntimeError("llama.dll rejected JSON string grammar")
         self.llama_sampler_chain_add(chain, grammar_sampler)
-        self.llama_sampler_chain_add(chain, self.llama_sampler_init_top_p(0.9, 1))
-        self.llama_sampler_chain_add(chain, self.llama_sampler_init_temp(0.15))
-        self.llama_sampler_chain_add(chain, self.llama_sampler_init_dist(0xFFFFFFFF))
+        self.llama_sampler_chain_add(chain, self.llama_sampler_init_greedy())
         pieces = []
         escaped = False
         try:
-            for _ in range(max_tokens):
+            for index in range(max_tokens):
                 token = self.llama_sampler_sample(chain, self.ctx, -1)
+                self._check_interrupt()
                 if self.llama_vocab_is_eog(self.vocab, token):
                     raise ValueError("model stopped before closing the English JSON string")
                 piece = self.token_piece(token)
                 pieces.append(piece)
                 self.decode_tokens([token])
+                if on_token:
+                    on_token(index + 1)
                 data = b"".join(pieces)
-                for position, char in enumerate(piece, len(data) - len(piece)):
+                start = len(data) - len(piece)
+                for offset, char in enumerate(piece):
                     if escaped:
                         escaped = False
                     elif char == 92:
                         escaped = True
                     elif char == 34:
+                        if on_piece:
+                            on_piece(piece[:offset])
+                        position = start + offset
                         return '"' + data[:position + 1].decode("utf-8"), data[position + 1:]
+                if on_piece:
+                    on_piece(piece)
             preview = b"".join(pieces).decode("utf-8", errors="replace")
             raise ValueError(f"English field reached max_tokens without a closing quote: {preview[:400]!r}")
         finally:

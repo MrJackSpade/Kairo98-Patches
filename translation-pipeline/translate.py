@@ -7,20 +7,43 @@ from pathlib import Path
 import re
 import sys
 import time
+import unicodedata
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from llama_dll import DirectLlama
 
-TOKEN = re.compile(r"\{[A-Z]\d+\}")
+TOKEN = re.compile(r"\{[A-Z]\d+\}|%(?:\d*\.\d+[A-Za-z]+|\d+[A-Za-z]+|[A-Za-z]+|\d+)")
 ROOT = Path(__file__).resolve().parent
 DEFAULT_WORK = ROOT / "work"
 SYSTEM = (
-    "You are a careful Japanese-to-English game script translator. Preserve meaning, "
-    "speaker voice, names, honorifics, cultural references, runtime tokens such as {X1}, "
-    "and intentional line breaks. Use full story context to resolve ambiguous short lines. "
-    "Do not add text or censor content. Return only the requested JSON. Use a literal rendering "
-    "for a joke or idiom when a freer adaptation would require a translator note."
+    "Translate Japanese PC-98 visual novels for English-speaking readers who know anime and "
+    "Japanese game culture. Write fluent adult English, preserving meaning, speaker voice, "
+    "relationships, humor, explicitness, names, runtime tokens such as {X1}, %001, "
+    "and printf placeholders such as %s or %2d, and intentional "
+    "line breaks. Use full story context to resolve ambiguous short lines. "
+    "Keep Japanese forms of address: name suffixes -san, -chan, -kun, -sama and spoken terms "
+    "such as senpai, kohai, and sensei. Keep kinship-style vocatives such as Onee-san, "
+    "Onee-chan, Onii-san, and Onii-chan; never replace them with Big Sister or Big Brother. "
+    "A confirmed family relationship described in narration may be translated as older sister "
+    "or older brother. Preserve changes in names, nicknames, titles, and honorifics; do not "
+    "invent or remove them. Keep familiar Japanese cultural referents such as Obon, onsen, "
+    "bento, onigiri, kimono, yukata, manga, doujin, otaku, and yen rather than Westernizing "
+    "them. Translate ordinary Japanese words into natural English; keep a Japanese word when "
+    "it is itself a name, catchphrase, or piece of wordplay. Do not leave random romaji or add "
+    "explanatory glosses. Preserve period details and do not invent relationships or "
+    "cultural equivalents. Never censor, soften, infantilize, or add cheerful dub-style "
+    "catchphrases or modern slang absent from the source. Translate idioms naturally without "
+    "changing their point. Do not add translator notes inside en. Return only the requested JSON."
 )
 JSON_STRING_GRAMMAR = r'''root ::= ([^"\\\x7F\x00-\x1F] | "\\" (["\\bfnrt] | "u" [0-9a-fA-F]{4}))+ "\"" .*'''
+DECORATIVE_SYMBOLS = frozenset("♪♫♬♩★☆♥♡")
+
+
+def copy_without_translation(value):
+    """Copy known non-linguistic characters; leave unknowns for MTL."""
+    return all(char.isspace() or char in DECORATIVE_SYMBOLS or
+               unicodedata.category(char)[0] in "NPZ" or
+               unicodedata.category(char) in ("Sm", "Sc", "Sk")
+               for char in value)
 
 
 def compact(value):
@@ -28,16 +51,16 @@ def compact(value):
 
 
 def write_json(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    os.replace(temp, path)
+    write_bytes(path, (json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
 
 
 def write_bytes(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_bytes(data)
+    with temp.open("wb") as stream:
+        stream.write(data)
+        stream.flush()
+        os.fsync(stream.fileno())
     os.replace(temp, path)
 
 
@@ -163,7 +186,7 @@ def context_entries(doc):
     return [{"id": e["id"], "kind": e.get("kind"), "jp": e["jp"],
              **({"en": e["en"]} if e["en"] else {}),
              **({"tn_note": e["tn_note"]} if e.get("tn_note") else {})}
-            for e in doc["strings"]]
+            for e in doc["strings"] if not copy_without_translation(e["jp"])]
 
 
 def build_context(doc, source_sha, work, model, context_budget):
@@ -265,6 +288,10 @@ def run(args):
         raise ValueError("source or model changed since checkpoint; use a new --work folder")
     rows = saved.get("strings", {})
     eligible = [e for e in doc["strings"] if args.all or not e["en"]]
+    copied = [e for e in eligible if e["id"] not in rows and
+              copy_without_translation(e["jp"])]
+    for entry in copied:
+        rows[entry["id"]] = {"id": entry["id"], "en": entry["jp"]}
     todo = [e for e in eligible if e["id"] not in rows]
     full_prompt_cost = 2 * estimated_tokens(compact(doc)) + args.max_output_tokens + 1500
     mode = "whole" if full_prompt_cost <= args.context_tokens * 0.8 else "context"
@@ -272,8 +299,15 @@ def run(args):
         mode = "whole"
     if args.mode == "context":
         mode = "context"
-    print(f"{doc.get('game', source.parent.name)}: {len(todo)} pending, mode={mode}", flush=True)
+    print(f"{doc.get('game', source.parent.name)}: {len(todo)} pending, "
+          f"{len(copied)} copied without translation, mode={mode}", flush=True)
     if args.dry_run:
+        return
+    if copied:
+        write_json(checkpoint, {"source_sha256": source_sha,
+                                "model_tag": args.model_tag, "strings": rows})
+    if not todo:
+        run_loaded(args, doc, raw, source_sha, work, saved, rows, todo, eligible, mode, None)
         return
     model_path = ROOT / "models" / ("gemma-4-31B-it-QAT-Q4_0.gguf" if args.model_tag == "gemma" else "Qwen3.8-27B-Q4_K_M.gguf")
     if not model_path.exists():
@@ -311,7 +345,8 @@ def run_loaded(args, doc, raw, source_sha, work, saved, rows, todo, eligible, mo
                                              for position in target_positions
                                              for near in range(max(0, position - 3),
                                                                min(len(all_entries), position + 4))})
-            neighborhood = [all_entries[position] for position in neighborhood_positions]
+            neighborhood = [all_entries[position] for position in neighborhood_positions
+                            if not copy_without_translation(all_entries[position]["jp"])]
             surrounding = [{"id": e["id"], "jp": e["jp"], "en": e["en"]} for e in neighborhood]
             batch_doc = {"game": doc.get("game"),
                          "strings": [{**e, "en": ""} for e in target]}
