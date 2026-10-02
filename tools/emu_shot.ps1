@@ -9,7 +9,7 @@ param(
     [Parameter(Mandatory)] [string]$Out,
     [string]$Steps = "25:shot",
     [string]$Dip = "",   # DIP switch bytes, e.g. "3e f3 7b" (np21w DIPswtch)
-    [string]$Exe = "C:\PC98work\emu\bin\np21x64w.exe"
+    [string]$Exe = "E:\PC98work\emu\bin\np21x64w.exe"
 )
 $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing

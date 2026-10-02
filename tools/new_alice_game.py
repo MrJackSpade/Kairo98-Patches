@@ -14,7 +14,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, ROOT)
 from pc98tl.disk import DiskImage  # noqa: E402
 
-COLLECTION = r"C:\PC98"
+COLLECTION = r"E:\PC98"
 EXTRACT = '''"""Extract the script to strings.json:  python extract.py IMAGE.hdi"""
 import os
 import sys

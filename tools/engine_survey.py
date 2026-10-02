@@ -20,7 +20,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, ROOT)
 from extract_collection import game_of  # noqa: E402
 
-COLLECTION = r"C:\PC98"
+COLLECTION = r"E:\PC98"
 DOS_DIRS = ("DOS/", "TOOLS/", "WINDOWS/", "BIN/", "UTIL/", "DRIVER/")
 
 # (id, family name, note, test(names, exts, publisher)).  First match wins.

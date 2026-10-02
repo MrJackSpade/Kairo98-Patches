@@ -1,6 +1,6 @@
-"""Deep scan of C:\\PC98: every disk image, its content hash, and the files inside it.
+"""Deep scan of E:\\PC98: every disk image, its content hash, and the files inside it.
 
-    python tools/scan_collection.py [C:\\PC98]
+    python tools/scan_collection.py [E:\\PC98]
 
 Resumable: results are cached per publisher archive (keyed by name, size and
 mtime) in index/scan/<archive>.json, so re-running only processes archives
@@ -81,7 +81,7 @@ def scan_inner(zbytes, inner_name):
 
 
 def main():
-    src = sys.argv[1] if len(sys.argv) > 1 else r"C:\PC98"
+    src = sys.argv[1] if len(sys.argv) > 1 else r"E:\PC98"
     os.makedirs(OUT, exist_ok=True)
     skipped, done, cached = [], 0, 0
     for name in sorted(os.listdir(src)):

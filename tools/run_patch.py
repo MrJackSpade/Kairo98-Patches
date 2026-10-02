@@ -4,7 +4,7 @@
 
 * Source image: the argument if given (e.g. an image dropped on PATCH.BAT),
   otherwise the collection copy named in game.json ("image", relative to
-  C:\\PC98 or the PC98_ROOT environment variable).
+  E:\\PC98 or the PC98_ROOT environment variable).
 * Output: <game folder>/output/<title> (English MTL).hdi, plus a copy of the
   game's notes and MTL notice next to it.
 * Runs the game's own patch.py (contract: patch.py IN OUT [--pseudo]).
@@ -37,7 +37,7 @@ def main():
         fail("no game.json in %s" % here)
     cfg = json.load(open(cfg_path, encoding="utf-8"))
     title = cfg["title"]
-    root = os.environ.get("PC98_ROOT", r"C:\PC98")
+    root = os.environ.get("PC98_ROOT", r"E:\PC98")
     src = sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else os.path.join(root, cfg["image"])
     print("%s - English patch (machine translation)" % title)
     print("source: %s" % src)

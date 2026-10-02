@@ -48,7 +48,7 @@ where the dump ended.
 Not known: whether an age is stated elsewhere, and what the other `-H` files
 contain.
 
-### Removed from `C:\PC98\Totsugeki! Bakkon Street\` (2026-09-27)
+### Removed from `E:\PC98\Totsugeki! Bakkon Street\` (2026-09-27)
 
 | File | Bytes | sha256 |
 |---|---|---|

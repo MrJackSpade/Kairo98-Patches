@@ -1,6 +1,6 @@
-"""Unpack C:\\PC98\\<Publisher>.zip into one folder per game, verify, delete the zip.
+"""Unpack E:\\PC98\\<Publisher>.zip into one folder per game, verify, delete the zip.
 
-    python tools/extract_collection.py [--root C:\\PC98] [--keep-zips] [--only X.zip]
+    python tools/extract_collection.py [--root E:\\PC98] [--keep-zips] [--only X.zip]
 
 Layout:   <root>\\<Game>\\<Variant>\\<files>     e.g. Dalk\\Dalk [HD]\\Dalk (v1.08) (uncensored).hdi
 Catalog:  index/catalog/<Publisher>.zip.json   one record per extracted file with
@@ -87,7 +87,7 @@ def main():
 
 def run():
     args = sys.argv[1:]
-    root = args[args.index("--root") + 1] if "--root" in args else r"C:\PC98"
+    root = args[args.index("--root") + 1] if "--root" in args else r"E:\PC98"
     only = args[args.index("--only") + 1] if "--only" in args else None
     keep = "--keep-zips" in args
     os.makedirs(CATALOG, exist_ok=True)

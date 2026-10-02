@@ -19,7 +19,7 @@ from .alice_exe import find_strings, apply_strings, widen
 from .text import pseudo
 
 ORG = 0x100
-COLLECTION = os.environ.get("PC98_ROOT", r"C:\PC98")
+COLLECTION = os.environ.get("PC98_ROOT", r"E:\PC98")
 
 MTL_NOTE = """{title} - English patch (machine translation)
 

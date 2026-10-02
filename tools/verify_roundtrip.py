@@ -19,7 +19,7 @@ def main():
     for name in sorted(names):
         here = os.path.join(ROOT, "games", name)
         cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-        src = os.path.join(os.environ.get("PC98_ROOT", r"C:\PC98"), cfg["image"])
+        src = os.path.join(os.environ.get("PC98_ROOT", r"E:\PC98"), cfg["image"])
         img = _image(cfg, src)
         _cfg, _vol, games = _games(here, img, src)
         ok, pages = True, 0

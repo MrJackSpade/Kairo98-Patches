@@ -64,7 +64,7 @@ tools/                  one-off research helpers
 ## Making a patched game
 
 Every game folder has the same `PATCH.BAT`. Double-click it to patch your copy
-of the game from the collection (`C:\PC98`, or set `PC98_ROOT`), or drag the
+of the game from the collection (`E:\PC98`, or set `PC98_ROOT`), or drag the
 game's disk image onto it. The patched image and its notes are written to
 `games/<title>/output/`. You need Python 3 and `pip install -r requirements.txt`
 (once).

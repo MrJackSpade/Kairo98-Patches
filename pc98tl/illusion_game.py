@@ -206,7 +206,7 @@ def _hdd_install(cfg, src):
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
-    root = os.environ.get("PC98_ROOT", r"C:\PC98")
+    root = os.environ.get("PC98_ROOT", r"E:\PC98")
     img = DiskImage(os.path.join(root, h["base"]))
     vol = img.volumes[0]
     for name in h.get("remove", []):

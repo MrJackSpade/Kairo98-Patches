@@ -1,10 +1,10 @@
 #!/bin/sh
-# Keep ingesting C:\PC98 while archives are still arriving:
+# Keep ingesting E:\PC98 while archives are still arriving:
 # scan new zips -> extract + verify + delete -> rebuild index, every 10 minutes,
 # until no publisher zips remain (or 12 hours pass).
 #   sh tools/ingest_loop.sh [root]
 cd "$(dirname "$0")/.." || exit 1
-ROOT="${1:-C:\\PC98}"
+ROOT="${1:-E:\\PC98}"
 export PYTHONIOENCODING=utf-8
 end=$(( $(date +%s) + 12 * 3600 ))
 while [ "$(date +%s)" -lt "$end" ]; do

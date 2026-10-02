@@ -1,5 +1,5 @@
 import zipfile, os, sys, json
-src = r"C:\PC98"
+src = r"E:\PC98"
 out = {}
 bad = []
 for f in sorted(os.listdir(src)):

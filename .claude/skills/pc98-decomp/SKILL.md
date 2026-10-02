@@ -100,7 +100,7 @@ any further than the decomp work needs.
    game is, and the evidence. Describe the markers; don't quote the sexual
    text. Set **Acknowledged: no**.
 3. Remove the game's image files (`.hdi`, `.hdm`, `.d88`, `.fdi`, `.nfd`, and
-   any `.zip`) from `C:\PC98` and from anywhere in the repo's working areas.
+   any `.zip`) from `E:\PC98` and from anywhere in the repo's working areas.
    Hash them first and list them in the entry. Keep the records, work and
    evidence around the game. Never touch the NAS.
 4. Commit and push the entry.
