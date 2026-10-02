@@ -1,0 +1,20 @@
+{
+ "title": "Tenshi-tachi no Gogo II Bangaihen",
+ "key": "Jast.zip/Tenshi-tachi no Gogo II Bangaihen",
+ "image": "Tenshi-tachi no Gogo II Bangaihen\\Tenshi-tachi no Gogo II Bangaihen [FD h01]\\Tenshi-tachi no Gogo II Bangaihen (Disk A).d88",
+ "encoding": "jast_menu12",
+ "floppies": {
+  "B": "Tenshi-tachi no Gogo II Bangaihen (Disk B).d88"
+ },
+ "box_lines": 3,
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,4:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:enter,3:enter,3:enter,5:shot,1:down,1:down,1:down,1:shot,1:enter,3:shot",
+ "opening_scenes": [
+  4,
+  5
+ ],
+ "opening_prompts": [
+  "eng:1"
+ ],
+ "opening_cols": 44
+}

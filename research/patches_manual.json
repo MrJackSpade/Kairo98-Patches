@@ -624,5 +624,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo II Bangaihen": [
+  {
+   "label": "This repo: games/tenshi_ii_bangaihen (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_ii_bangaihen/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

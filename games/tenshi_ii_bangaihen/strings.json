@@ -1,0 +1,12263 @@
+{
+ "source_image_sha256": "36f52973e11d878d20412bc5f36c46b6b75c54ec329d9741f2c0437f71a8f82c",
+ "strings": [
+  {
+   "id": "t00001",
+   "kind": "title",
+   "jp": "JAST SOUND を 使用しますか ？",
+   "en": "",
+   "refs": [
+    "title:1:23"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00002",
+   "kind": "title",
+   "jp": "を 使用しない あなたは ",
+   "en": "",
+   "refs": [
+    "title:4:19"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00003",
+   "kind": "title",
+   "jp": "KEY を 押してネ",
+   "en": "",
+   "refs": [
+    "title:4:53"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00004",
+   "kind": "title",
+   "jp": "を  使用するあなたは ",
+   "en": "",
+   "refs": [
+    "title:7:19"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00005",
+   "kind": "title",
+   "jp": "KEY を  押してネ",
+   "en": "",
+   "refs": [
+    "title:7:52",
+    "title:10:52"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00006",
+   "kind": "title",
+   "jp": "を  使用する  あなたは ",
+   "en": "",
+   "refs": [
+    "title:10:19"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00007",
+   "kind": "title",
+   "jp": "ＧＡＭＥ　を　始める前　に　選んでネ 。",
+   "en": "",
+   "refs": [
+    "title:13:4"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "t00008",
+   "kind": "title",
+   "jp": "使う場合　は　専用ハ−ド　が　ひつよう ナノ。",
+   "en": "",
+   "refs": [
+    "title:15:4"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "t00009",
+   "kind": "title",
+   "jp": "は　ＪＡＳＴ　オリジナル　の　音声合成マシン・・・!!",
+   "en": "",
+   "refs": [
+    "title:17:16"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "t00010",
+   "kind": "title",
+   "jp": "美　奈　子",
+   "en": "",
+   "refs": [
+    "title:20:30"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "w00001",
+   "kind": "word",
+   "jp": "調へ゛る・見る",
+   "en": "",
+   "refs": [
+    "verb:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00002",
+   "kind": "word",
+   "jp": "話す・聞く",
+   "en": "",
+   "refs": [
+    "verb:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00003",
+   "kind": "word",
+   "jp": "考える",
+   "en": "",
+   "refs": [
+    "verb:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00004",
+   "kind": "word",
+   "jp": "行く",
+   "en": "",
+   "refs": [
+    "verb:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00005",
+   "kind": "word",
+   "jp": "眠る",
+   "en": "",
+   "refs": [
+    "verb:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00006",
+   "kind": "word",
+   "jp": "つける",
+   "en": "",
+   "refs": [
+    "verb:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00007",
+   "kind": "word",
+   "jp": "起こす",
+   "en": "",
+   "refs": [
+    "verb:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00008",
+   "kind": "word",
+   "jp": "襲う・犯す",
+   "en": "",
+   "refs": [
+    "verb:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00009",
+   "kind": "word",
+   "jp": "キスする",
+   "en": "",
+   "refs": [
+    "verb:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00010",
+   "kind": "word",
+   "jp": "さわる",
+   "en": "",
+   "refs": [
+    "verb:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00011",
+   "kind": "word",
+   "jp": "キスする・なめる",
+   "en": "",
+   "refs": [
+    "verb:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00012",
+   "kind": "word",
+   "jp": "さわる・もむ",
+   "en": "",
+   "refs": [
+    "verb:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00013",
+   "kind": "word",
+   "jp": "抱く",
+   "en": "",
+   "refs": [
+    "verb:12"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00014",
+   "kind": "word",
+   "jp": "やめる",
+   "en": "",
+   "refs": [
+    "verb:13"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00015",
+   "kind": "word",
+   "jp": "さか゛す",
+   "en": "",
+   "refs": [
+    "verb:14"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00016",
+   "kind": "word",
+   "jp": "食へ゛る・飲む",
+   "en": "",
+   "refs": [
+    "verb:15"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00017",
+   "kind": "word",
+   "jp": "名前をいう",
+   "en": "",
+   "refs": [
+    "verb:16"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00018",
+   "kind": "word",
+   "jp": "使う",
+   "en": "",
+   "refs": [
+    "verb:17"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00019",
+   "kind": "word",
+   "jp": "見つめる",
+   "en": "",
+   "refs": [
+    "verb:18"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00020",
+   "kind": "word",
+   "jp": "打ち明ける",
+   "en": "",
+   "refs": [
+    "verb:19"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00021",
+   "kind": "word",
+   "jp": "帰る",
+   "en": "",
+   "refs": [
+    "verb:20"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00022",
+   "kind": "word",
+   "jp": "居間",
+   "en": "",
+   "refs": [
+    "noun:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00023",
+   "kind": "word",
+   "jp": "母",
+   "en": "",
+   "refs": [
+    "noun:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00024",
+   "kind": "word",
+   "jp": "家族",
+   "en": "",
+   "refs": [
+    "noun:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00025",
+   "kind": "word",
+   "jp": "イス",
+   "en": "",
+   "refs": [
+    "noun:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00026",
+   "kind": "word",
+   "jp": "とけい",
+   "en": "",
+   "refs": [
+    "noun:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00027",
+   "kind": "word",
+   "jp": "キャンセル",
+   "en": "",
+   "refs": [
+    "noun:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00028",
+   "kind": "word",
+   "jp": "義妹のこと",
+   "en": "",
+   "refs": [
+    "noun:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00029",
+   "kind": "word",
+   "jp": "仕事のこと",
+   "en": "",
+   "refs": [
+    "noun:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00030",
+   "kind": "word",
+   "jp": "その他",
+   "en": "",
+   "refs": [
+    "noun:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00031",
+   "kind": "word",
+   "jp": "母のこと",
+   "en": "",
+   "refs": [
+    "noun:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00032",
+   "kind": "word",
+   "jp": "時間",
+   "en": "",
+   "refs": [
+    "noun:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00033",
+   "kind": "word",
+   "jp": "廊下",
+   "en": "",
+   "refs": [
+    "noun:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00034",
+   "kind": "word",
+   "jp": "前",
+   "en": "",
+   "refs": [
+    "noun:12"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00035",
+   "kind": "word",
+   "jp": "後ろ",
+   "en": "",
+   "refs": [
+    "noun:13"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00036",
+   "kind": "word",
+   "jp": "右",
+   "en": "",
+   "refs": [
+    "noun:14"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00037",
+   "kind": "word",
+   "jp": "左",
+   "en": "",
+   "refs": [
+    "noun:15"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00038",
+   "kind": "word",
+   "jp": "？",
+   "en": "",
+   "refs": [
+    "noun:16"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00039",
+   "kind": "word",
+   "jp": "義父の寝室",
+   "en": "",
+   "refs": [
+    "noun:17"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00040",
+   "kind": "word",
+   "jp": "食堂",
+   "en": "",
+   "refs": [
+    "noun:18"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00041",
+   "kind": "word",
+   "jp": "二階",
+   "en": "",
+   "refs": [
+    "noun:19"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00042",
+   "kind": "word",
+   "jp": "外",
+   "en": "",
+   "refs": [
+    "noun:20"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00043",
+   "kind": "word",
+   "jp": "部屋",
+   "en": "",
+   "refs": [
+    "noun:21"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00044",
+   "kind": "word",
+   "jp": "義父",
+   "en": "",
+   "refs": [
+    "noun:22"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00045",
+   "kind": "word",
+   "jp": "テレヒ゛ケ゛ーム",
+   "en": "",
+   "refs": [
+    "noun:23"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00046",
+   "kind": "word",
+   "jp": "机",
+   "en": "",
+   "refs": [
+    "noun:24"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00047",
+   "kind": "word",
+   "jp": "本",
+   "en": "",
+   "refs": [
+    "noun:25"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00048",
+   "kind": "word",
+   "jp": "義父のこと",
+   "en": "",
+   "refs": [
+    "noun:26"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00049",
+   "kind": "word",
+   "jp": "テーフ゛ル",
+   "en": "",
+   "refs": [
+    "noun:27"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00050",
+   "kind": "word",
+   "jp": "棚",
+   "en": "",
+   "refs": [
+    "noun:28"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00051",
+   "kind": "word",
+   "jp": "窓",
+   "en": "",
+   "refs": [
+    "noun:29"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00052",
+   "kind": "word",
+   "jp": "自分の寝室",
+   "en": "",
+   "refs": [
+    "noun:30"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00053",
+   "kind": "word",
+   "jp": "義妹の寝室",
+   "en": "",
+   "refs": [
+    "noun:31"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00054",
+   "kind": "word",
+   "jp": "一階",
+   "en": "",
+   "refs": [
+    "noun:32"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00055",
+   "kind": "word",
+   "jp": "ヘ゛ット",
+   "en": "",
+   "refs": [
+    "noun:33"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00056",
+   "kind": "word",
+   "jp": "室",
+   "en": "",
+   "refs": [
+    "noun:34"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00057",
+   "kind": "word",
+   "jp": "床",
+   "en": "",
+   "refs": [
+    "noun:35"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00058",
+   "kind": "word",
+   "jp": "義妹",
+   "en": "",
+   "refs": [
+    "noun:36"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00059",
+   "kind": "word",
+   "jp": "部屋の中",
+   "en": "",
+   "refs": [
+    "noun:37"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00060",
+   "kind": "word",
+   "jp": "マッチ",
+   "en": "",
+   "refs": [
+    "noun:38"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00061",
+   "kind": "word",
+   "jp": "ライター",
+   "en": "",
+   "refs": [
+    "noun:39"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00062",
+   "kind": "word",
+   "jp": "ケイコウ灯",
+   "en": "",
+   "refs": [
+    "noun:40"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00063",
+   "kind": "word",
+   "jp": "人形",
+   "en": "",
+   "refs": [
+    "noun:41"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00064",
+   "kind": "word",
+   "jp": "梢",
+   "en": "",
+   "refs": [
+    "noun:42"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00065",
+   "kind": "word",
+   "jp": "人形のこと",
+   "en": "",
+   "refs": [
+    "noun:43"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00066",
+   "kind": "word",
+   "jp": "コンクールのこと",
+   "en": "",
+   "refs": [
+    "noun:44"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00067",
+   "kind": "word",
+   "jp": "梢のこと",
+   "en": "",
+   "refs": [
+    "noun:45"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00068",
+   "kind": "word",
+   "jp": "ほほ",
+   "en": "",
+   "refs": [
+    "noun:46"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00069",
+   "kind": "word",
+   "jp": "カミ",
+   "en": "",
+   "refs": [
+    "noun:47"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00070",
+   "kind": "word",
+   "jp": "胸",
+   "en": "",
+   "refs": [
+    "noun:48"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00071",
+   "kind": "word",
+   "jp": "腰",
+   "en": "",
+   "refs": [
+    "noun:49"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00072",
+   "kind": "word",
+   "jp": "アソコ",
+   "en": "",
+   "refs": [
+    "noun:50"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00073",
+   "kind": "word",
+   "jp": "ロひ゛る",
+   "en": "",
+   "refs": [
+    "noun:51"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00074",
+   "kind": "word",
+   "jp": "セックスのこと",
+   "en": "",
+   "refs": [
+    "noun:52"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00075",
+   "kind": "word",
+   "jp": "ひたい",
+   "en": "",
+   "refs": [
+    "noun:53"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00076",
+   "kind": "word",
+   "jp": "乳首",
+   "en": "",
+   "refs": [
+    "noun:54"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00077",
+   "kind": "word",
+   "jp": "背中",
+   "en": "",
+   "refs": [
+    "noun:55"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00078",
+   "kind": "word",
+   "jp": "肩",
+   "en": "",
+   "refs": [
+    "noun:56"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00079",
+   "kind": "word",
+   "jp": "カラタ゛",
+   "en": "",
+   "refs": [
+    "noun:57"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00080",
+   "kind": "word",
+   "jp": "腕",
+   "en": "",
+   "refs": [
+    "noun:58"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00081",
+   "kind": "word",
+   "jp": "足",
+   "en": "",
+   "refs": [
+    "noun:59"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00082",
+   "kind": "word",
+   "jp": "セックス",
+   "en": "",
+   "refs": [
+    "noun:60"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00083",
+   "kind": "word",
+   "jp": "クリちゃん",
+   "en": "",
+   "refs": [
+    "noun:61"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00084",
+   "kind": "word",
+   "jp": "窓・外",
+   "en": "",
+   "refs": [
+    "noun:62"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00085",
+   "kind": "word",
+   "jp": "昨夜のこと",
+   "en": "",
+   "refs": [
+    "noun:63"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00086",
+   "kind": "word",
+   "jp": "梢の寝室",
+   "en": "",
+   "refs": [
+    "noun:64"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00087",
+   "kind": "word",
+   "jp": "下着",
+   "en": "",
+   "refs": [
+    "noun:65"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00088",
+   "kind": "word",
+   "jp": "お金",
+   "en": "",
+   "refs": [
+    "noun:66"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00089",
+   "kind": "word",
+   "jp": "ハ゛イフ゛",
+   "en": "",
+   "refs": [
+    "noun:67"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00090",
+   "kind": "word",
+   "jp": "朝食",
+   "en": "",
+   "refs": [
+    "noun:68"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00091",
+   "kind": "word",
+   "jp": "カッフ゜",
+   "en": "",
+   "refs": [
+    "noun:69"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00092",
+   "kind": "word",
+   "jp": "ハ゜ン",
+   "en": "",
+   "refs": [
+    "noun:70"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00093",
+   "kind": "word",
+   "jp": "コーヒー",
+   "en": "",
+   "refs": [
+    "noun:71"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00094",
+   "kind": "word",
+   "jp": "おかす゛",
+   "en": "",
+   "refs": [
+    "noun:72"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00095",
+   "kind": "word",
+   "jp": "学校",
+   "en": "",
+   "refs": [
+    "noun:73"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00096",
+   "kind": "word",
+   "jp": "家族のこと",
+   "en": "",
+   "refs": [
+    "noun:74"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00097",
+   "kind": "word",
+   "jp": "家（マンション）",
+   "en": "",
+   "refs": [
+    "noun:75"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00098",
+   "kind": "word",
+   "jp": "駅",
+   "en": "",
+   "refs": [
+    "noun:76"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00099",
+   "kind": "word",
+   "jp": "カフェ・ハ゛ー",
+   "en": "",
+   "refs": [
+    "noun:77"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00100",
+   "kind": "word",
+   "jp": "公園",
+   "en": "",
+   "refs": [
+    "noun:78"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00101",
+   "kind": "word",
+   "jp": "あつし",
+   "en": "",
+   "refs": [
+    "noun:79"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00102",
+   "kind": "word",
+   "jp": "たかし",
+   "en": "",
+   "refs": [
+    "noun:80"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00103",
+   "kind": "word",
+   "jp": "まさし",
+   "en": "",
+   "refs": [
+    "noun:81"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00104",
+   "kind": "word",
+   "jp": "さとし",
+   "en": "",
+   "refs": [
+    "noun:82"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00105",
+   "kind": "word",
+   "jp": "ひろし",
+   "en": "",
+   "refs": [
+    "noun:83"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00106",
+   "kind": "word",
+   "jp": "つよし",
+   "en": "",
+   "refs": [
+    "noun:84"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00107",
+   "kind": "word",
+   "jp": "たけし",
+   "en": "",
+   "refs": [
+    "noun:85"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00108",
+   "kind": "word",
+   "jp": "きよし",
+   "en": "",
+   "refs": [
+    "noun:86"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00109",
+   "kind": "word",
+   "jp": "受付嬢",
+   "en": "",
+   "refs": [
+    "noun:87"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00110",
+   "kind": "word",
+   "jp": "玄関",
+   "en": "",
+   "refs": [
+    "noun:88"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00111",
+   "kind": "word",
+   "jp": "校舎",
+   "en": "",
+   "refs": [
+    "noun:89"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00112",
+   "kind": "word",
+   "jp": "下足箱",
+   "en": "",
+   "refs": [
+    "noun:90"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00113",
+   "kind": "word",
+   "jp": "まわり",
+   "en": "",
+   "refs": [
+    "noun:91"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00114",
+   "kind": "word",
+   "jp": "梢の教室",
+   "en": "",
+   "refs": [
+    "noun:92"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00115",
+   "kind": "word",
+   "jp": "名前",
+   "en": "",
+   "refs": [
+    "noun:93"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00116",
+   "kind": "word",
+   "jp": "受付嬢のこと",
+   "en": "",
+   "refs": [
+    "noun:94"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00117",
+   "kind": "word",
+   "jp": "三階",
+   "en": "",
+   "refs": [
+    "noun:95"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00118",
+   "kind": "word",
+   "jp": "受付室",
+   "en": "",
+   "refs": [
+    "noun:96"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00119",
+   "kind": "word",
+   "jp": "女子高生",
+   "en": "",
+   "refs": [
+    "noun:97"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00120",
+   "kind": "word",
+   "jp": "曜日",
+   "en": "",
+   "refs": [
+    "noun:98"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00121",
+   "kind": "word",
+   "jp": "年令",
+   "en": "",
+   "refs": [
+    "noun:99"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00122",
+   "kind": "word",
+   "jp": "電話番号",
+   "en": "",
+   "refs": [
+    "noun:100"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00123",
+   "kind": "word",
+   "jp": "猫",
+   "en": "",
+   "refs": [
+    "noun:101"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00124",
+   "kind": "word",
+   "jp": "恵美",
+   "en": "",
+   "refs": [
+    "noun:102"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00125",
+   "kind": "word",
+   "jp": "教室",
+   "en": "",
+   "refs": [
+    "noun:103"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00126",
+   "kind": "word",
+   "jp": "ト゛ア",
+   "en": "",
+   "refs": [
+    "noun:104"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00127",
+   "kind": "word",
+   "jp": "女子高生・Ａ",
+   "en": "",
+   "refs": [
+    "noun:105"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00128",
+   "kind": "word",
+   "jp": "女子高生・Ｂ",
+   "en": "",
+   "refs": [
+    "noun:106"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00129",
+   "kind": "word",
+   "jp": "女子高生・Ｃ",
+   "en": "",
+   "refs": [
+    "noun:107"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00130",
+   "kind": "word",
+   "jp": "授業のこと",
+   "en": "",
+   "refs": [
+    "noun:108"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00131",
+   "kind": "word",
+   "jp": "女子高生のこと",
+   "en": "",
+   "refs": [
+    "noun:109"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00132",
+   "kind": "word",
+   "jp": "教室の中",
+   "en": "",
+   "refs": [
+    "noun:110"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00133",
+   "kind": "word",
+   "jp": "美しい娘",
+   "en": "",
+   "refs": [
+    "noun:111"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00134",
+   "kind": "word",
+   "jp": "カハ゛ン",
+   "en": "",
+   "refs": [
+    "noun:112"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00135",
+   "kind": "word",
+   "jp": "女子高生・Ｄ",
+   "en": "",
+   "refs": [
+    "noun:113"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00136",
+   "kind": "word",
+   "jp": "女子高生・Ｅ",
+   "en": "",
+   "refs": [
+    "noun:114"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00137",
+   "kind": "word",
+   "jp": "手",
+   "en": "",
+   "refs": [
+    "noun:115"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00138",
+   "kind": "word",
+   "jp": "マスコット人形",
+   "en": "",
+   "refs": [
+    "noun:116"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00139",
+   "kind": "word",
+   "jp": "ケシコ゛ム",
+   "en": "",
+   "refs": [
+    "noun:117"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00140",
+   "kind": "word",
+   "jp": "指",
+   "en": "",
+   "refs": [
+    "noun:118"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00141",
+   "kind": "word",
+   "jp": "舌",
+   "en": "",
+   "refs": [
+    "noun:119"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00142",
+   "kind": "word",
+   "jp": "ホ゛ールヘ゜ン",
+   "en": "",
+   "refs": [
+    "noun:120"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00143",
+   "kind": "word",
+   "jp": "頭",
+   "en": "",
+   "refs": [
+    "noun:121"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00144",
+   "kind": "word",
+   "jp": "オーシ゛ィ",
+   "en": "",
+   "refs": [
+    "noun:122"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00145",
+   "kind": "word",
+   "jp": "先生",
+   "en": "",
+   "refs": [
+    "noun:123"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00146",
+   "kind": "word",
+   "jp": "女子高生・Ｆ",
+   "en": "",
+   "refs": [
+    "noun:124"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00147",
+   "kind": "word",
+   "jp": "女子高生・Ｇ",
+   "en": "",
+   "refs": [
+    "noun:125"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00148",
+   "kind": "word",
+   "jp": "天気のこと",
+   "en": "",
+   "refs": [
+    "noun:126"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00149",
+   "kind": "word",
+   "jp": "トイレ",
+   "en": "",
+   "refs": [
+    "noun:127"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00150",
+   "kind": "word",
+   "jp": "先生のこと",
+   "en": "",
+   "refs": [
+    "noun:128"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00151",
+   "kind": "word",
+   "jp": "制服",
+   "en": "",
+   "refs": [
+    "noun:129"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00152",
+   "kind": "word",
+   "jp": "おしり",
+   "en": "",
+   "refs": [
+    "noun:130"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00153",
+   "kind": "word",
+   "jp": "亀の子タワシ",
+   "en": "",
+   "refs": [
+    "noun:131"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00154",
+   "kind": "word",
+   "jp": "杏子",
+   "en": "",
+   "refs": [
+    "noun:132"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00155",
+   "kind": "word",
+   "jp": "気持ち",
+   "en": "",
+   "refs": [
+    "noun:133"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00156",
+   "kind": "word",
+   "jp": "５００円玉",
+   "en": "",
+   "refs": [
+    "noun:134"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00157",
+   "kind": "word",
+   "jp": "セッケン水",
+   "en": "",
+   "refs": [
+    "noun:135"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00158",
+   "kind": "word",
+   "jp": "校長室",
+   "en": "",
+   "refs": [
+    "noun:136"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00159",
+   "kind": "word",
+   "jp": "保健室",
+   "en": "",
+   "refs": [
+    "noun:137"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00160",
+   "kind": "word",
+   "jp": "音楽室",
+   "en": "",
+   "refs": [
+    "noun:138"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00161",
+   "kind": "word",
+   "jp": "男",
+   "en": "",
+   "refs": [
+    "noun:139"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00162",
+   "kind": "word",
+   "jp": "女",
+   "en": "",
+   "refs": [
+    "noun:140"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00163",
+   "kind": "word",
+   "jp": "学校のこと",
+   "en": "",
+   "refs": [
+    "noun:141"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00164",
+   "kind": "word",
+   "jp": "ワセリン",
+   "en": "",
+   "refs": [
+    "noun:142"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00165",
+   "kind": "word",
+   "jp": "クロロフォルム",
+   "en": "",
+   "refs": [
+    "noun:143"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00166",
+   "kind": "word",
+   "jp": "心",
+   "en": "",
+   "refs": [
+    "noun:144"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00167",
+   "kind": "word",
+   "jp": "足元",
+   "en": "",
+   "refs": [
+    "noun:145"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00168",
+   "kind": "word",
+   "jp": "指先",
+   "en": "",
+   "refs": [
+    "noun:146"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00169",
+   "kind": "word",
+   "jp": "人生のこと",
+   "en": "",
+   "refs": [
+    "noun:147"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00170",
+   "kind": "word",
+   "jp": "愛",
+   "en": "",
+   "refs": [
+    "noun:148"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00171",
+   "kind": "word",
+   "jp": "ハ゛イオリン",
+   "en": "",
+   "refs": [
+    "noun:149"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00172",
+   "kind": "word",
+   "jp": "ヒサ゛の上",
+   "en": "",
+   "refs": [
+    "noun:150"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00173",
+   "kind": "word",
+   "jp": "保健室の中",
+   "en": "",
+   "refs": [
+    "noun:151"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00174",
+   "kind": "word",
+   "jp": "美奈子",
+   "en": "",
+   "refs": [
+    "noun:152"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "w00175",
+   "kind": "word",
+   "jp": "美奈子のこと",
+   "en": "",
+   "refs": [
+    "noun:153"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "ＨＩＴ・ＡＮＹ・ＫＥＹ",
+   "en": "",
+   "refs": [
+    "sys:0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "俺は、まわりを見渡した・・・か゛、相手はと゛こにもいなかった。",
+   "en": "",
+   "refs": [
+    "sys:1"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "他には誰もいないのて゛、俺はひとりこ゛とをつふ゛やいた。",
+   "en": "",
+   "refs": [
+    "sys:2"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "＜ＣＡＮＣＥＬ＞",
+   "en": "",
+   "refs": [
+    "sys:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "いや、まて・・・後悔しないように、考えてから行動した方か゛よい。",
+   "en": "",
+   "refs": [
+    "sys:4"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "『おやすみ、梢・・・』",
+   "en": "",
+   "refs": [
+    "sys:5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "俺は、梢のひたいにキスをすると、自分の寝室へ戻って眠ることにした。",
+   "en": "",
+   "refs": [
+    "sys:6"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "俺はまた゛、仕事て゛外国へ行くことを、梢に打ち明ける決心か゛つかない。",
+   "en": "",
+   "refs": [
+    "sys:7"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "俺にはまた゛、梢に打ち明ける決心か゛ついていない。",
+   "en": "",
+   "refs": [
+    "sys:8"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "・・・いまは、考えたくない。",
+   "en": "",
+   "refs": [
+    "sys:9"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "て゛ーた　を　せーふ゛するわね。",
+   "en": "",
+   "refs": [
+    "eng:0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "て゛ーた　を　ろーと゛するわね。",
+   "en": "",
+   "refs": [
+    "eng:1"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "{A3}{A3}「{A1}お兄ちゃん{A2}・・・・・・」{A3}",
+   "en": "",
+   "refs": [
+    "scene4:0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "この娘は、柳沢梢（やなき゛さわ・こす゛え）、十八歳・・・俺の義妹（いもうと）た゛{A3}。",
+   "en": "",
+   "refs": [
+    "scene5:0"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "「・・・・・・{A1}お兄ちゃん{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene5:1"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "「{A1}アナタは{A2}{A3}・・・{A1}わたしを{A2}{A3}、{A1}愛してくれますか{A2}？」{A3}{A6}",
+   "en": "",
+   "refs": [
+    "scene5:2"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "＜金曜日・深夜・・・・・・＞",
+   "en": "",
+   "refs": [
+    "scene6:0"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "俺は、母に呼ひ゛出されて、一階の居間にやって来ていた。",
+   "en": "",
+   "refs": [
+    "scene7:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "居間にいるのは、俺と母た゛けて゛・・・とくに、かわったものはない。",
+   "en": "",
+   "refs": [
+    "scene7:1"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "俺の実母た゛。",
+   "en": "",
+   "refs": [
+    "scene7:2"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "俺と母、義父と・・・義妹の四人家族た゛。",
+   "en": "",
+   "refs": [
+    "scene7:3"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "母か゛すわっている。",
+   "en": "",
+   "refs": [
+    "scene7:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "もう、午後十一時をすき゛ている。",
+   "en": "",
+   "refs": [
+    "scene7:5"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "「もう、あの娘には話したのかい・・・お前か゛、自分て゛いうといってたから、あたしとお義父さんは、何も話していないんた゛よ」",
+   "en": "",
+   "refs": [
+    "scene7:6"
+   ],
+   "max_cells": 61
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "「あの娘は、なくなった母親ににて、性悪な女た゛よ」",
+   "en": "",
+   "refs": [
+    "scene7:7"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "「今度の日曜日に外国へ行ってしまったら、五年間も帰って来れないんた゛ね」",
+   "en": "",
+   "refs": [
+    "scene7:8"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "「あたしは、もう寝ますよ」",
+   "en": "",
+   "refs": [
+    "scene7:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "義妹は、もう眠ってしまったた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene7:10"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "義父の代行て゛外国へ行って、会社設立の指揮を取らなくてはならない。",
+   "en": "",
+   "refs": [
+    "scene7:11"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "母は、と゛うして義妹のことを、ひと゛くいうのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene7:12"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "また゛、せ゛んせ゛ん眠くない。",
+   "en": "",
+   "refs": [
+    "scene7:13"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "俺は、あの娘を愛している！",
+   "en": "",
+   "refs": [
+    "scene7:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "「また゛起ていたのかい、ひろし！　もう、寝てしまいなさい！！」",
+   "en": "",
+   "refs": [
+    "scene7:15"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "再婚前は、こんなにキツイ感し゛て゛はなかったのた゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene7:16"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "もうすく゛、午前０時になる。",
+   "en": "",
+   "refs": [
+    "scene7:17"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "「日曜日の出発た゛から、いまのうちに荷物をまとめておきなさい」",
+   "en": "",
+   "refs": [
+    "scene7:18"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "「お義父さんのかわりに外国へ行くのて゛すから、しっかりおやりなさい」",
+   "en": "",
+   "refs": [
+    "scene7:19"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "「お前、まさかあの娘と関係なと゛、していないた゛ろうね！？」",
+   "en": "",
+   "refs": [
+    "scene7:20"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "「やか゛ては、お前か゛お義父さんの＜柳沢ク゛ルーフ゜＞を受けつく゛のて゛すからね」",
+   "en": "",
+   "refs": [
+    "scene7:21"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "「お前も、もう寝なさい！」",
+   "en": "",
+   "refs": [
+    "scene7:22"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "・・・俺と義妹の関係は、もう６ケ月以上もつつ゛いている。",
+   "en": "",
+   "refs": [
+    "scene7:23"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "俺は、母を居間に残して、廊下へ出た。",
+   "en": "",
+   "refs": [
+    "scene7:24"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "ここは、一階の廊下た゛。",
+   "en": "",
+   "refs": [
+    "scene8:0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "玄関か゛ある。",
+   "en": "",
+   "refs": [
+    "scene8:1"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "食堂か゛ある。",
+   "en": "",
+   "refs": [
+    "scene8:2"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "義父の寝室と二階へ行く階段か゛ある。",
+   "en": "",
+   "refs": [
+    "scene8:3"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "居間とトイレか゛ある。",
+   "en": "",
+   "refs": [
+    "scene8:4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "俺か゛いるた゛けた゛・・・他には誰もいない。",
+   "en": "",
+   "refs": [
+    "scene8:5"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "『フ゛ツフ゛ツフ゛ツフ゛ツフ゛ツ・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene8:6"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "あの娘か゛高校を卒業してから家を出て、アハ゜ートを二人て゛かりようと思っていたのた゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene8:7"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "義父の仕事は、ヤリカ゛イはあるのた゛か゛・・・あの娘は、五年間も待っていてくれるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene8:8"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "また゛、あまり眠くないな。",
+   "en": "",
+   "refs": [
+    "scene8:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "母は、俺と義妹の関係に、気か゛ついているのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene8:10"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "俺は、あの娘を他の男に渡したくない！",
+   "en": "",
+   "refs": [
+    "scene8:11"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "俺は、居間に戻ることにした。",
+   "en": "",
+   "refs": [
+    "scene8:12"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "俺は、義父の寝室のト゛アをノックすると、そのト゛アを開けた。",
+   "en": "",
+   "refs": [
+    "scene8:13"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "俺はふり返ると、食堂へ入って行った。",
+   "en": "",
+   "refs": [
+    "scene8:14"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "俺は階段を上か゛って、二階へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene8:15"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "いまから外へ行っても、開いている店はあまりないた゛ろうから、やめておこう。",
+   "en": "",
+   "refs": [
+    "scene8:16"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "「と゛うした、眠れないのかね？」",
+   "en": "",
+   "refs": [
+    "scene9:0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "この部屋は、義父の寝室と書斎を兼用している。",
+   "en": "",
+   "refs": [
+    "scene9:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "関連会社七社を持つ＜柳沢ク゛ルーフ゜＞の会長をしているのか゛、俺の義父た゛。",
+   "en": "",
+   "refs": [
+    "scene9:2"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "Ａ・ＲＰＧの＜キャンテ゛ィ・キッス＞をやっているようた゛。",
+   "en": "",
+   "refs": [
+    "scene9:3"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "りっは゜な机た゛。",
+   "en": "",
+   "refs": [
+    "scene9:4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "＜ＰＯＤＬＯＴＥＫ＞ーとかかれている。ホ゜ーラント゛の本た゛。",
+   "en": "",
+   "refs": [
+    "scene9:5"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "「日曜日に出発する準備は、もう終っておるのか？」",
+   "en": "",
+   "refs": [
+    "scene9:6"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "「お前か゛外国に行くことを、あの娘には話してあるのかね？」",
+   "en": "",
+   "refs": [
+    "scene9:7"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "「いまは、不況た゛といわれておるか゛、会社を大きくしてカをつけるのならは゛、いまか゛チャンスた゛」",
+   "en": "",
+   "refs": [
+    "scene9:8"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "「この＜ＰＯＤＬＯＴＥＫ＞ーは、お前にはシケ゛キか゛強すき゛るかも知れん」",
+   "en": "",
+   "refs": [
+    "scene9:9"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "義妹と俺か゛関係か゛あることを知ったら、この義父はと゛うするた゛ろう・・・。",
+   "en": "",
+   "refs": [
+    "scene9:10"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "義父の経営方法と技術は、尊敬している。",
+   "en": "",
+   "refs": [
+    "scene9:11"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "この義父を見ていると、あの娘の実父とは、と゛うしても思えない。",
+   "en": "",
+   "refs": [
+    "scene9:12"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "あの＜ＰＯＤＬＯＴＥＫ＞ーは、何の本なのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene9:13"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "『それて゛は義父さん、おやすみなさい』",
+   "en": "",
+   "refs": [
+    "scene9:14"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "「五年間も行っておるのた゛、荷物は多くしないて゛、必要な物はあちらて゛かいなさい」",
+   "en": "",
+   "refs": [
+    "scene9:15"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "「わしは、もしあの娘を不幸にする者か゛いたら、その者をタタ゛て゛はおかんよ」",
+   "en": "",
+   "refs": [
+    "scene9:16"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "「あの娘は、日曜日に国際ハ゛イオリン・コンクールか゛あるそうた゛か゛、お前は行くことか゛出来んかも知れんな」",
+   "en": "",
+   "refs": [
+    "scene9:17"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "いつまて゛もケ゛ームのし゛ゃまをしていると、義父にと゛なられそうた゛な。",
+   "en": "",
+   "refs": [
+    "scene9:18"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "食堂は、明かりか゛けされている。",
+   "en": "",
+   "refs": [
+    "scene10:0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "うす暗くてよく判らないか゛、特にかわったところはない。",
+   "en": "",
+   "refs": [
+    "scene10:1"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "タ食は、す゛いふ゛ん前に終っているのて゛、テーフ゛ルの上はかたす゛けられている。",
+   "en": "",
+   "refs": [
+    "scene10:2"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "『ー痛てっ！』",
+   "en": "",
+   "refs": [
+    "scene10:3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "手を入れたとたん、指先をくた゛ものナイフて゛切ってしまった。",
+   "en": "",
+   "refs": [
+    "scene10:4"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "・・・日曜日のタ食からは、イスか゛ひとついらなくなるんた゛な。",
+   "en": "",
+   "refs": [
+    "scene10:5"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "明日は、いい天気になりそうた゛。",
+   "en": "",
+   "refs": [
+    "scene10:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "「すこし、野さいを食へ゛なくてはいけないな・・・」",
+   "en": "",
+   "refs": [
+    "scene10:7"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "義妹のエフ゜ロンすか゛たは、もうすく゛見られなくなるんた゛な。",
+   "en": "",
+   "refs": [
+    "scene10:8"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "外国へ行く不安はない、しかし・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene10:9"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "きょうあの娘か゛作ったロールキャヘ゛ツは、うまかったな。",
+   "en": "",
+   "refs": [
+    "scene10:10"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "ここにいても仕方か゛ない・・・おれは、廊下に戻った。",
+   "en": "",
+   "refs": [
+    "scene10:11"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "いや、やめておこう・・・同し゛あやまちは、くり返したくない。",
+   "en": "",
+   "refs": [
+    "scene10:12"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "猫か゛、赤ん坊の様な声て゛ないている。",
+   "en": "",
+   "refs": [
+    "scene10:13"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "うるさいなぁ・・・しかし、猫はうらやましい。",
+   "en": "",
+   "refs": [
+    "scene10:14"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "俺か゛いなくなったら、あの娘は誰の為にエフ゜ロンをつけるんた゛ろう・・・。",
+   "en": "",
+   "refs": [
+    "scene10:15"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "きのうのヒ゛ーフ・ストロカ゛ノフは最高た゛った。",
+   "en": "",
+   "refs": [
+    "scene10:16"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "しかし・・・きょうのロールキャヘ゛ツは、うまかった！",
+   "en": "",
+   "refs": [
+    "scene10:17"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "俺は階段を上か゛って、二階の廊下にやって来た。",
+   "en": "",
+   "refs": [
+    "scene11:0"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "窓か゛あって、行きと゛まりになっている。",
+   "en": "",
+   "refs": [
+    "scene11:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "後ろには、室に小さな窓か゛あるた゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene11:2"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "義妹の寝室とトイレか゛ある。",
+   "en": "",
+   "refs": [
+    "scene11:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "俺の寝室と、下へ行く階段か゛ある。",
+   "en": "",
+   "refs": [
+    "scene11:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "二階には、俺と義妹の寝室、それにトイレか゛あるた゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene11:5"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "「俺の部屋よりも、義妹の部屋か゛ひろいのは、仕方のないことた゛・・・」",
+   "en": "",
+   "refs": [
+    "scene11:6"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "いまこ゛ろあの娘は、何のゆめを見ているのた゛ろう・・・？",
+   "en": "",
+   "refs": [
+    "scene11:7"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "義妹のことか゛あるのて゛、いまいち乗り気になれない。",
+   "en": "",
+   "refs": [
+    "scene11:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "ー理性は、いつも俺のシ゛ャマをする。",
+   "en": "",
+   "refs": [
+    "scene11:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "俺は、自分の寝室へ向かった。",
+   "en": "",
+   "refs": [
+    "scene11:10"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "いや、まて・・・義妹との関係を、す゛るす゛るつつ゛けていいのか？",
+   "en": "",
+   "refs": [
+    "scene11:11"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "俺は、再ひ゛階段を降りて一階へ行った。",
+   "en": "",
+   "refs": [
+    "scene11:12"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "義妹の寝室は、カキ゛か゛かかっていないと思う。",
+   "en": "",
+   "refs": [
+    "scene11:13"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "あの娘の寝顔た゛けて゛も見てから、眠ろうかな・・・。",
+   "en": "",
+   "refs": [
+    "scene11:14"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "いまあの娘と会っても、外国へ行くことをいい出せそうもない。",
+   "en": "",
+   "refs": [
+    "scene11:15"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "俺は、義妹の寝室まて゛行くと、そのト゛アを開けた。",
+   "en": "",
+   "refs": [
+    "scene11:16"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "ここは、俺の部屋た゛。",
+   "en": "",
+   "refs": [
+    "scene12:0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "外国へ行くための荷物は、また゛まとめていない。",
+   "en": "",
+   "refs": [
+    "scene12:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "一日に一度は、義妹か゛そうし゛してくれるのた゛か゛、俺はすく゛にちらかしてしまう。",
+   "en": "",
+   "refs": [
+    "scene12:2"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "ヘ゛ットの下には、俺の愛と゛く書か゛かくしてある。",
+   "en": "",
+   "refs": [
+    "scene12:3"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "中藤美希（なかふし゛・みき）のホ゜スターか゛はってある。",
+   "en": "",
+   "refs": [
+    "scene12:4"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "現金て゛、２万円入っている・・・明日は、必要になるかも知れない。",
+   "en": "",
+   "refs": [
+    "scene12:5"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "なんた゛、あれは・・・！",
+   "en": "",
+   "refs": [
+    "scene12:6"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "・・・ハ゛ッチイ、俺のおケケた゛った。",
+   "en": "",
+   "refs": [
+    "scene12:7"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "「俺はもう、眠りをころした・・・なんちゃって！」",
+   "en": "",
+   "refs": [
+    "scene12:8"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "あの娘とこの部屋て゛、何度関係を持ったた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene12:9"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "外国て゛の仕事か゛うまく行ったら、義父は会社をひとつゆす゛ってくれるといっていた。",
+   "en": "",
+   "refs": [
+    "scene12:10"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "なんた゛か、このまま眠れそうにない。",
+   "en": "",
+   "refs": [
+    "scene12:11"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "俺は、とりあえす゛廊下へ戻った。",
+   "en": "",
+   "refs": [
+    "scene12:12"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "俺は、ヘ゛ットまて゛行くのか゛めんと゛うくさくなったのて゛、床によこになり眠ってしまった。",
+   "en": "",
+   "refs": [
+    "scene12:13"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "俺は、服をぬいて゛ヘ゛ットに入ると、ヒツシ゛の数をかそ゛え始めた。",
+   "en": "",
+   "refs": [
+    "scene12:14"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "{A4}・・・俺は、５００円玉をひろったのて゛、机の中へ入れた。{A5}",
+   "en": "",
+   "refs": [
+    "scene12:15"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "ハ゜ソコンを持ってもいないのにかってしまった、＜ウ゛ァルツェル＞ーのハ゜ッケーシ゛か゛落ちていた。",
+   "en": "",
+   "refs": [
+    "scene12:16"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "床て゛ひろった５００円玉か゛ふえて、現金は２万５００円になった。",
+   "en": "",
+   "refs": [
+    "scene12:17"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "部屋には、ヘ゛ットか゛あるというのに・・・？",
+   "en": "",
+   "refs": [
+    "scene12:18"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "いまのままて゛はヒツシ゛を数えても、眠れそうもないか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene12:19"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "暗くてよく判らないか゛、ここか゛義妹のへやた゛。",
+   "en": "",
+   "refs": [
+    "scene13:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "木いちこ゛の様な、あの娘の香りか゛する。",
+   "en": "",
+   "refs": [
+    "scene13:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "よく見えないか゛、ヘ゛ットて゛眠っている様た゛。",
+   "en": "",
+   "refs": [
+    "scene13:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "あの娘は、俺とちか゛って寝そ゛うか゛いいからな・・・。",
+   "en": "",
+   "refs": [
+    "scene13:3"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "ト゛アの左の室に、ケイコウ灯のスイッチか゛あるハス゛た゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene13:4"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "暗くて、何も見えない！",
+   "en": "",
+   "refs": [
+    "scene13:5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "ここて゛あの娘を呼んた゛ら、下の階の母たちに聞かれてしまう！",
+   "en": "",
+   "refs": [
+    "scene13:6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "この部屋に入ったた゛けて゛も、あの娘のやわらかさにつつまれた様に感し゛る。",
+   "en": "",
+   "refs": [
+    "scene13:7"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "俺にはまた゛、外国に行く決心か゛つかないて゛いる。",
+   "en": "",
+   "refs": [
+    "scene13:8"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "このまま自分の部屋へ戻ろうか、それとも・・・？",
+   "en": "",
+   "refs": [
+    "scene13:9"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "俺は、暗い部屋の中へ歩んて゛いった。",
+   "en": "",
+   "refs": [
+    "scene13:10"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "俺は、ト゛アを静かに閉し゛ると、廊下へ戻った。",
+   "en": "",
+   "refs": [
+    "scene13:11"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "俺は、マッチを持っていない。",
+   "en": "",
+   "refs": [
+    "scene13:12"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "ーそして、タハ゛コをくわえたか゛、ひをつけす゛に箱へ戻した。",
+   "en": "",
+   "refs": [
+    "scene13:13"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "俺は、手さく゛りて゛スイッチを見つけると、スイッチをＯＮにした。",
+   "en": "",
+   "refs": [
+    "scene13:14"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "いまは、いったい何時頃なんた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene13:15"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "俺は、ト゛アとヘ゛ットの中間くらいまて゛歩んた゛。",
+   "en": "",
+   "refs": [
+    "scene14:0"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "ケイコウ灯をつけないと、よく判らない。",
+   "en": "",
+   "refs": [
+    "scene14:1"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "かすかな寝いきか゛、やさしく聞こえる。",
+   "en": "",
+   "refs": [
+    "scene14:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "暗くて、寝顔も見えやしない。",
+   "en": "",
+   "refs": [
+    "scene14:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "なた゛らかなシルエットて゛、あの娘か゛眠っているのか゛判る。",
+   "en": "",
+   "refs": [
+    "scene14:4"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "ト゛アの近くに、ケイコウ灯のスイッチか゛あるハス゛た゛。",
+   "en": "",
+   "refs": [
+    "scene14:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "毛足の長いシ゛ュータンか゛、ひいてある。",
+   "en": "",
+   "refs": [
+    "scene14:6"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "このまま声をかけたら、おと゛ろいて声を上け゛るかも知れない。",
+   "en": "",
+   "refs": [
+    "scene14:7"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "ここまて゛来ると、義妹の美しい顔を見ないて゛はいられない。",
+   "en": "",
+   "refs": [
+    "scene14:8"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "俺は、いつまて゛も義妹に「お兄ちゃん」ーと呼は゛れたい・・・これはムリな願いた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene14:9"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "仕事とあの娘のと゛ちらかをえらへ゛ーといわれても、と゛ちらとも大切た゛。",
+   "en": "",
+   "refs": [
+    "scene14:10"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "た゛んた゛ん、レイフ゜・マンの様な気持ちになって来た・・・。",
+   "en": "",
+   "refs": [
+    "scene14:11"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "俺は、ト゛アまて゛戻りふり返って義妹を見ると、静かにト゛アを閉し゛て廊下に出た。",
+   "en": "",
+   "refs": [
+    "scene14:12"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "義妹は、ＥＰもＬＰもＣＤも持っていない・・・うぅむ、これはちょっとキツイな。",
+   "en": "",
+   "refs": [
+    "scene14:13"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "いや、そんな一時しのき゛て゛はなくて、へ゛つの方法か゛あるハス゛た゛。",
+   "en": "",
+   "refs": [
+    "scene14:14"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "俺は、ト゛アの所まて゛戻ると、ケイコウ灯のスイッチをＯＮにした。",
+   "en": "",
+   "refs": [
+    "scene14:15"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "目覚めるかと思ったか゛、義妹はまた゛よく眠っている。",
+   "en": "",
+   "refs": [
+    "scene15:0"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "義妹は、また゛よく眠っている。",
+   "en": "",
+   "refs": [
+    "scene15:1"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "俺の部屋とちか゛って、娘らしい可愛い部屋た゛。",
+   "en": "",
+   "refs": [
+    "scene15:2"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "俺は、指先て゛義妹の頬にふれてみた・・・やわらかく、あたたたかい。",
+   "en": "",
+   "refs": [
+    "scene15:3"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "ウモウフトンた゛から、通気性にすく゛れ・・・なんてコマーシャルか゛、むかしあったな。",
+   "en": "",
+   "refs": [
+    "scene15:4"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "人魚のタヘ゜ストリーか゛、かかっている。",
+   "en": "",
+   "refs": [
+    "scene15:5"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "特に何も・・・コ゛ミひとつ落ていない。",
+   "en": "",
+   "refs": [
+    "scene15:6"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "義妹は、また゛眠っている。",
+   "en": "",
+   "refs": [
+    "scene15:7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "俺か゛母とこの家に来た時には、六つか七つの女の子た゛った・・・。",
+   "en": "",
+   "refs": [
+    "scene15:8"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "こうして、義妹の寝顔を見つめている時に、考えたくない。",
+   "en": "",
+   "refs": [
+    "scene15:9"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "・・・・・・可愛い梢。",
+   "en": "",
+   "refs": [
+    "scene15:10",
+    "scene19:11"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "俺は、ケイコウ灯のスイッチを切ると、廊下へ戻った。",
+   "en": "",
+   "refs": [
+    "scene15:11"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "『梢、こす゛え・・・』",
+   "en": "",
+   "refs": [
+    "scene15:12"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "目前に、梢か゛いるのに・・・？",
+   "en": "",
+   "refs": [
+    "scene15:13"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "『梢・・・欲しい！』",
+   "en": "",
+   "refs": [
+    "scene15:14"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "義妹は、また゛眠っている・・・よほと゛つかれていて気か゛つかないのか、眠っているフリをしているのか？",
+   "en": "",
+   "refs": [
+    "scene15:15"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "「と゛うしたの、お兄ちゃん・・・こんな時間に？」",
+   "en": "",
+   "refs": [
+    "scene16:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "この部屋にいるのは、俺と梢た゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene16:1"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "俺か゛肩をゆすって起こしたのて゛、梢は目覚めた。",
+   "en": "",
+   "refs": [
+    "scene16:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "梢は、ヘ゛ットの上て゛カラタ゛を起こして、俺を見つめている。",
+   "en": "",
+   "refs": [
+    "scene16:3"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "室にあるタヘ゜ストリの人魚には、初めから足か゛ある・・・俺も、その方か゛いいとおもう。",
+   "en": "",
+   "refs": [
+    "scene16:4"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "「ヘンなお兄ちゃん・・・と゛うしたの？」",
+   "en": "",
+   "refs": [
+    "scene16:5"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "俺か゛初めてこの家に来た時に、梢におみやけ゛て゛あけ゛た人形た゛。",
+   "en": "",
+   "refs": [
+    "scene16:6"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "「お兄ちゃん、日曜日は時間か゛あいているかしら？」",
+   "en": "",
+   "refs": [
+    "scene16:7"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "「これは・・・わたしのたから物よ」",
+   "en": "",
+   "refs": [
+    "scene16:8"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "「日曜日に、お願いか゛あるの・・・」",
+   "en": "",
+   "refs": [
+    "scene16:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "「わたし、今度の日曜日に公会堂て゛開かれる、国際ハ゛イオリン・コンクールに出場するのよ」",
+   "en": "",
+   "refs": [
+    "scene16:10"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "「お兄ちゃんに、ステーシ゛のソテ゛まて゛、ついて来てもらいたいの」",
+   "en": "",
+   "refs": [
+    "scene16:11"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "「お義母さん、わたしか゛ハ゛イオリンを弾くのを、あまりお好きて゛はないみたい・・・」",
+   "en": "",
+   "refs": [
+    "scene16:12"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "母さんは、と゛うして＜柳沢＞ーの義父さんと再婚したんた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene16:13"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "母さんか゛、梢をきらうのは、梢か゛自分の実母のカタミのハ゛イオリンを弾いているからて゛はない・・・。",
+   "en": "",
+   "refs": [
+    "scene16:14"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "あの人形を梢にあけ゛た時の、梢のうれしそうな顔・・・俺は、一生わすれないた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene16:15"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "行ってやりたい、しかし・・・！",
+   "en": "",
+   "refs": [
+    "scene16:16"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "俺か゛、カ゛ールフレント゛と長つつ゛きしないのは、たふ゛ん梢を知ってしまったからた゛。",
+   "en": "",
+   "refs": [
+    "scene16:17"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "『梢・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene16:18"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "「フカフカて゛しょう・・・？」",
+   "en": "",
+   "refs": [
+    "scene16:19"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・今夜は、と゛うしちゃったの！？」",
+   "en": "",
+   "refs": [
+    "scene16:20"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "「わたし、そのお人形もらった時、とってもうれしかった」",
+   "en": "",
+   "refs": [
+    "scene16:21"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "「あぁん・・・ヤタ゛！」",
+   "en": "",
+   "refs": [
+    "scene16:22"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "「・・・・・・なぁに、お兄ちゃん？」",
+   "en": "",
+   "refs": [
+    "scene16:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene16:24"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "「はぁうん・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene16:25"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "「・・・こ゛めんなさい。　きゅうなワカ゛ママをいいた゛したりして・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene17:0"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "「・・・いつもと、ちか゛っているかしら？」",
+   "en": "",
+   "refs": [
+    "scene17:1"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "梢か゛、まっすく゛に俺を見つめている・・・俺は、その素直なまなさ゛しか゛時々こわく思えることか゛ある。",
+   "en": "",
+   "refs": [
+    "scene17:2"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "「なにか、ヘン・・・？」",
+   "en": "",
+   "refs": [
+    "scene17:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "「今夜のお兄ちゃん、何た゛かおかしいわ・・・」",
+   "en": "",
+   "refs": [
+    "scene17:4"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "こんなにふるくなっても大切にされて・・・お前は幸せた゛な。",
+   "en": "",
+   "refs": [
+    "scene17:5"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "「わたし、何た゛か目か゛さえてきちゃった」",
+   "en": "",
+   "refs": [
+    "scene17:6"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "「わたしの学校の後輩て゛、とてもわたしをしたってくれている娘か゛いるの」",
+   "en": "",
+   "refs": [
+    "scene17:7"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "「そのお人形の名前は＜マリアーシ゛ュ＞ーというのよ」",
+   "en": "",
+   "refs": [
+    "scene17:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "「コンクールて゛は、チャイコフスキーのハ゛イオリン・コンツェツトニ長調作品３５、第一楽章を演奏するの」",
+   "en": "",
+   "refs": [
+    "scene17:9"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "「お兄ちゃんた゛から、話します・・・」",
+   "en": "",
+   "refs": [
+    "scene17:10"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "「わたしのお母さんも、同し゛コンクールに出場したことか゛あるの」",
+   "en": "",
+   "refs": [
+    "scene17:11"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "「お母さんは、チャイコフスキーのハ゛イオリン・コンツェルトニ長調作品３５、第二楽章て゛金賞を受賞したわ」",
+   "en": "",
+   "refs": [
+    "scene17:12"
+   ],
+   "max_cells": 52
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "「・・・わたしは、お母さんに近つ゛きたい」",
+   "en": "",
+   "refs": [
+    "scene17:13"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "・・・・・・抱きしめたい。",
+   "en": "",
+   "refs": [
+    "scene17:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "俺は、お前と立場をかわりたいよ。",
+   "en": "",
+   "refs": [
+    "scene17:15"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "俺は、コンクールへ行って、梢を見まもってあけ゛たいか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene17:16"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "梢・・・お前なら、きっと金賞を受賞て゛きるよ。",
+   "en": "",
+   "refs": [
+    "scene17:17"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "また゛、朝陽は顔を見せない。",
+   "en": "",
+   "refs": [
+    "scene17:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "『・・・・・・梢』",
+   "en": "",
+   "refs": [
+    "scene17:19"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "そんなこと、するか！！",
+   "en": "",
+   "refs": [
+    "scene17:20"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "「・・・と゛うかしたの、お兄ちゃん？」",
+   "en": "",
+   "refs": [
+    "scene17:21"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "「もぅ・・・やめて！」",
+   "en": "",
+   "refs": [
+    "scene17:22"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "「・・・・・・お兄ちゃん」",
+   "en": "",
+   "refs": [
+    "scene17:23",
+    "scene19:8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "「あんっ・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene17:24"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "「・・・・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene18:0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "「あぅ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene18:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "そんな気になれない・・・。",
+   "en": "",
+   "refs": [
+    "scene18:2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "睡を閉し゛て、ロひ゛るをうっすらと開いている。",
+   "en": "",
+   "refs": [
+    "scene18:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "何度もうは゛った、ロひ゛るた゛・・・あまく、やわらかい。",
+   "en": "",
+   "refs": [
+    "scene18:4"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "セミ・タ゛フ゛ルた゛から、安心た゛・・・（何か゛？）。",
+   "en": "",
+   "refs": [
+    "scene18:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "こんな時に、そんな所を見なくたって・・・！！",
+   "en": "",
+   "refs": [
+    "scene18:6"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・愛しています。　愛しています！！」",
+   "en": "",
+   "refs": [
+    "scene18:7"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "『・・・・・・愛してる』",
+   "en": "",
+   "refs": [
+    "scene18:8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "「わたし、不安なの・・・」",
+   "en": "",
+   "refs": [
+    "scene18:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "「・・・・・・・・・お願い」",
+   "en": "",
+   "refs": [
+    "scene18:10"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "愛しい娘た゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene18:11"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "コンクールの前に、俺か゛外国へ行くと打ち明けたら、結果は目に見えている。",
+   "en": "",
+   "refs": [
+    "scene18:12"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "梢のカラタ゛から、木いちこ゛の様な香りか゛する。",
+   "en": "",
+   "refs": [
+    "scene18:13"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "「んっ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene18:14"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "「ーやんっ！」",
+   "en": "",
+   "refs": [
+    "scene18:15"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "「タ゛メ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene18:16"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene18:17"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "「はぁ・・・・・・あぅん」",
+   "en": "",
+   "refs": [
+    "scene19:0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "梢のはた゛は、色し゛ろて゛キメか゛こまかい。",
+   "en": "",
+   "refs": [
+    "scene19:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "乳首か゛、上にツンと向いている。",
+   "en": "",
+   "refs": [
+    "scene19:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "可愛いらしく、小さい。",
+   "en": "",
+   "refs": [
+    "scene19:3"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "ほっそりとして、カタチか゛いい。",
+   "en": "",
+   "refs": [
+    "scene19:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "・・・・・・また゛た゛。",
+   "en": "",
+   "refs": [
+    "scene19:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "スフ゜リンク゛か゛きしむ様な、安物て゛はない。",
+   "en": "",
+   "refs": [
+    "scene19:6"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "「やさしく・・・・・・して」",
+   "en": "",
+   "refs": [
+    "scene19:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "梢は、いつて゛も初めての時の様にふるえる・・・。",
+   "en": "",
+   "refs": [
+    "scene19:9"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "・・・義理の兄妹て゛も、近親相姦にはかわりか゛ない。",
+   "en": "",
+   "refs": [
+    "scene19:10"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "「お兄ちゃん、あつい・・・」",
+   "en": "",
+   "refs": [
+    "scene19:12"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "「あぁ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene19:13"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "「・・・・・・うぅっ」",
+   "en": "",
+   "refs": [
+    "scene19:14"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "「・・・・・・あふぅ」",
+   "en": "",
+   "refs": [
+    "scene19:15",
+    "scene20:21"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "「あああっ・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene19:16"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "「・・・・・・ちか゛うわ」",
+   "en": "",
+   "refs": [
+    "scene19:17"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "「あ・・あっ・・・ん」",
+   "en": "",
+   "refs": [
+    "scene19:18"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "「ーいたい・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene19:19"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "「わたして゛は、タ゛メなの・・・？」",
+   "en": "",
+   "refs": [
+    "scene19:20"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "「あぁぁぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene20:0",
+    "scene31:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "梢の頬か゛わす゛かに上気して、ほんのりと赤みをおひ゛ている。",
+   "en": "",
+   "refs": [
+    "scene20:1"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "やわらかい・・・か゛、マシュマロよりは弾カか゛ある。",
+   "en": "",
+   "refs": [
+    "scene20:2"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "すこし、かたくなって来た。",
+   "en": "",
+   "refs": [
+    "scene20:3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "この付近のさまさ゛まなきょくせんは、かみか゛つくり出した最高のけ゛い術た゛。",
+   "en": "",
+   "refs": [
+    "scene20:4"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "もう少した゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene20:5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "大丈夫た゛・・・俺か゛乗っても、スフ゜リンク゛はきしまない。",
+   "en": "",
+   "refs": [
+    "scene20:6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "「抱きしめて、強く・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene20:7"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "「・・・今夜は、大丈夫・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene20:8"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "いまは、お前のことた゛けを考えたい。",
+   "en": "",
+   "refs": [
+    "scene20:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "俺にはまた゛、セックス以上の愛し方か゛判らない。",
+   "en": "",
+   "refs": [
+    "scene20:10"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "梢・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene20:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "「んっ、んっ・・・・・・あぁ」",
+   "en": "",
+   "refs": [
+    "scene20:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "「うっ、うぅ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene20:13"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "「んぅ・・・・・・あふっ」",
+   "en": "",
+   "refs": [
+    "scene20:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "「あっぁぁぁ・・・」",
+   "en": "",
+   "refs": [
+    "scene20:15"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "「はぁ・・・・・・うぅ」",
+   "en": "",
+   "refs": [
+    "scene20:16"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "「あっ、うっ、うぅ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene20:17"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・？」",
+   "en": "",
+   "refs": [
+    "scene20:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "・・・・・・そろそろた゛。",
+   "en": "",
+   "refs": [
+    "scene20:19"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "「あぅん・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene20:20"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "「お兄ちゃん、お兄ちゃん・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene20:22"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene21:0"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "睡に、うっすらとなみた゛か゛うかんて゛いる。",
+   "en": "",
+   "refs": [
+    "scene21:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "ここにある小さなホクロを、他の男には見せたくない！",
+   "en": "",
+   "refs": [
+    "scene21:2"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "かたくなっている・・・。",
+   "en": "",
+   "refs": [
+    "scene21:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "わす゛かに、アセは゛んて゛いる。",
+   "en": "",
+   "refs": [
+    "scene21:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "もう、十分にぬれている。",
+   "en": "",
+   "refs": [
+    "scene21:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "と゛うやら、クリーニンク゛屋のマスコット・キャラクターの名前らしい。",
+   "en": "",
+   "refs": [
+    "scene21:6"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "「わたしを、はなさないて゛・・・・・・！！」",
+   "en": "",
+   "refs": [
+    "scene21:7"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "「・・・・・・わたしの、お兄ちゃん！」",
+   "en": "",
+   "refs": [
+    "scene21:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "梢か゛五年待ってくれれは゛・・・と思うのは、俺のエコ゛た゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene21:9"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "・・・終った後て゛は、いつも少した゛け後悔する。",
+   "en": "",
+   "refs": [
+    "scene21:10"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "母は、俺と梢のこの様な関係を、うすうす感つ゛いているのた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene21:11"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "五年あれは゛、梢を幸せにするた゛けの、金とカを手に入れられるのた゛か゛な。",
+   "en": "",
+   "refs": [
+    "scene21:12"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "「もう少し、このままて゛いて・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene21:13"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "「うふっ・・・・・・くぅん」",
+   "en": "",
+   "refs": [
+    "scene21:14"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "「あぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene21:15"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "「うっ・・・・・・あん」",
+   "en": "",
+   "refs": [
+    "scene21:16",
+    "scene21:19"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "「はぁぁぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene21:17"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "「くふっ・・・・・・ぅん」",
+   "en": "",
+   "refs": [
+    "scene21:18"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "「あっ、あぁ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene21:20"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "「あっぁぁぁぁぁ・・・・・・う！！」",
+   "en": "",
+   "refs": [
+    "scene21:21"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "とうとう外国へ出発する前日、土曜日になってしまった・・・。",
+   "en": "",
+   "refs": [
+    "scene22:0"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "・・・昨夜のことを思うと、ハ゛カなことをしたものた゛ー痛っ、床て゛寝たから、背中か゛痛い。",
+   "en": "",
+   "refs": [
+    "scene22:1"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "・・・昨夜のことを思うと、梢を求ておけは゛よかったと未練か゛残るな。",
+   "en": "",
+   "refs": [
+    "scene22:2"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "・・・昨夜のことを思うと、もっと激しく梢を求めれは゛よかったと未練か゛残るな。",
+   "en": "",
+   "refs": [
+    "scene22:3"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "・・・昨夜のことを思うと、もう少し激しく梢を求めれは゛よかったなと未練か゛残るな。",
+   "en": "",
+   "refs": [
+    "scene22:4"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "・・・昨夜のことを思うと、外国行きをいしきしてか、激しく求めすき゛たかも知れない・・・。",
+   "en": "",
+   "refs": [
+    "scene22:5"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "昨夜、この部屋に戻って来て、ヘ゛ットにもく゛り込んた゛のは、何時頃た゛ったろうか・・・？",
+   "en": "",
+   "refs": [
+    "scene23:0"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "とうとう朝まて゛、床て゛眠ってしまったな・・・。",
+   "en": "",
+   "refs": [
+    "scene23:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "ここは、自分の寝室た゛。",
+   "en": "",
+   "refs": [
+    "scene23:2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "ヘ゛ット・メイキンク゛は、いつも梢か゛してくれる。",
+   "en": "",
+   "refs": [
+    "scene23:3"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "と゛うして、ヘ゛ットて゛眠らなかったんた゛！！",
+   "en": "",
+   "refs": [
+    "scene23:4"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "梢は、もう学校へ行っている時間た゛な・・・。",
+   "en": "",
+   "refs": [
+    "scene23:5"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "今日も、いい天気た゛。",
+   "en": "",
+   "refs": [
+    "scene23:6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "・・・あぁ、朝陽か゛目にしみる。",
+   "en": "",
+   "refs": [
+    "scene23:7"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "引き出しの中に、現金か゛２万円か゛入っていた・・・俺は、それをサイフに入れて、ス゛ホ゛ンのホ゜ケットにしまいこんた゛。{A4}",
+   "en": "",
+   "refs": [
+    "scene23:8"
+   ],
+   "max_cells": 59
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "引き出しの中には、現金か゛２万５００円入っている・・・俺は、それをサイフに入れて、上着のホ゜ケットにしまいこんた゛。{A4}",
+   "en": "",
+   "refs": [
+    "scene23:9"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "『出発は、明日た゛・・・コンクールにえいきょうしない様に、梢に打ち明けられるた゛ろうか？』",
+   "en": "",
+   "refs": [
+    "scene23:10"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "未練か゛残るな・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene23:11"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "梢か゛あんなにもえたのは、初めてた゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene23:12"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "仕事にたいしての不安は、まったくないのた゛か゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene23:13"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "今日は、これからと゛うしようか・・・？",
+   "en": "",
+   "refs": [
+    "scene23:14"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "俺は、梢の寝室へ行ってみることにした。",
+   "en": "",
+   "refs": [
+    "scene23:15"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "俺は、一階の食堂へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene23:16"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "机には、特に何もなかった。",
+   "en": "",
+   "refs": [
+    "scene23:17"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "俺は、自分の部屋に戻って来た。",
+   "en": "",
+   "refs": [
+    "scene23:18"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "梢の部屋にやって来た。",
+   "en": "",
+   "refs": [
+    "scene24:0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "部屋の中は、キチンとせいとんされている。",
+   "en": "",
+   "refs": [
+    "scene24:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "梢は、まい朝シーツをかえている。",
+   "en": "",
+   "refs": [
+    "scene24:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "美しい人魚のタヘ゜ストリか゛かけてある。",
+   "en": "",
+   "refs": [
+    "scene24:3"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "特に、何もない。",
+   "en": "",
+   "refs": [
+    "scene24:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "・・・・・・いい天気た゛。",
+   "en": "",
+   "refs": [
+    "scene24:5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "『梢の香りか゛する・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene24:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "昨夜は、梢を抱くことをカ゛マン出来た・・・今夜は、もっと楽にカ゛マンすることか゛出来るた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene24:7"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "また゛、梢の感しょくか゛残っている。",
+   "en": "",
+   "refs": [
+    "scene24:8"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "梢か゛、コンクールの出場する時間によっては、コンクールへ顔を出すことも出来るた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene24:9"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "明日は、いよいよ外国へ出発しなけれは゛ならない。",
+   "en": "",
+   "refs": [
+    "scene24:10"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "今日は、土曜日た゛・・・梢は、学校にいる。",
+   "en": "",
+   "refs": [
+    "scene24:11"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "俺は、一階へ降りて、食堂へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene24:12"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "俺は、自分の寝室へ戻って行った。",
+   "en": "",
+   "refs": [
+    "scene24:13"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "俺は、棚の引き出しを開けてみた・・・すると、ホワイト、ヘ゛ーシ゛ュやヒ゜ンクのスキャンティか゛はいっていた！",
+   "en": "",
+   "refs": [
+    "scene24:14"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "義妹のおこす゛かいにまて゛、手を出す様な男た゛ったのか、俺は・・・？",
+   "en": "",
+   "refs": [
+    "scene24:15"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "・・・いまの女子高生は、そんなモノを持っているのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene24:16"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "俺は、ヘ゛ットのスミをさか゛してみた・・・すると、何も出てこなかった。",
+   "en": "",
+   "refs": [
+    "scene24:17"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "食堂にやって来ると、梢か゛いない・・・やはり、学校へ行ったのた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene25:0"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "「明日か゛出発た゛から、落ちつかないのかい・・・うろうろ、行ったり来たりして？」",
+   "en": "",
+   "refs": [
+    "scene25:1"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "しん聞をよんて゛いる。",
+   "en": "",
+   "refs": [
+    "scene25:2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "食きをあらっている。",
+   "en": "",
+   "refs": [
+    "scene25:3"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "いまは、朝食のさいちゅうらしい。",
+   "en": "",
+   "refs": [
+    "scene25:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "この家て゛は、朝食はよう食に決まっている。",
+   "en": "",
+   "refs": [
+    "scene25:5"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "ロイヤル・クヘ゛ンハウンのカッフ゜て゛、一客数万円するカッフ゜た゛。",
+   "en": "",
+   "refs": [
+    "scene25:6"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "「梢の国際ハ゛イオリン・コンクールは、とうとう明日になったな」",
+   "en": "",
+   "refs": [
+    "scene25:7"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "「いままて゛外国へ行くことをいわなかったのならは゛、最後まて゛いわないて゛行ってしまった方か゛、よいのかも知れん」",
+   "en": "",
+   "refs": [
+    "scene25:8"
+   ],
+   "max_cells": 57
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "「いよいよ明日、外国へ出発するのね・・・」",
+   "en": "",
+   "refs": [
+    "scene25:9"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "「外国へ行ってしまうことを、もう梢に打ち明けたの？」",
+   "en": "",
+   "refs": [
+    "scene25:10"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "「梢はもう、す゛いふ゛ん前に家を出ましたよ」",
+   "en": "",
+   "refs": [
+    "scene25:11"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "「今日は土曜日た゛けと゛、ハ゛イオリンの練習をするのて゛、帰りか゛おそくなるといっていたわ」",
+   "en": "",
+   "refs": [
+    "scene25:12"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "「明日のコンクールは、午前十時開演た゛といっていたな？」",
+   "en": "",
+   "refs": [
+    "scene25:13"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "「お前は、今日はと゛うするのかね？」",
+   "en": "",
+   "refs": [
+    "scene25:14"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "仕事にはキヒ゛シイ人た゛か゛、梢にはよい父親た゛。",
+   "en": "",
+   "refs": [
+    "scene25:15"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "俺か゛外国へ行ってしまったら、母は梢につらくあたらないた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene25:16"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "夜になれは゛、外国へ行くことを、またーいい出せなくなるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene25:17"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "梢の学校まて゛、行ってみようか？",
+   "en": "",
+   "refs": [
+    "scene25:18"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "明日の外国への出発は、午前十時三十七分発のヒコウキた゛。",
+   "en": "",
+   "refs": [
+    "scene25:19"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "学校へ行ったら、梢に会えるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene25:20"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "俺は食堂を出ると、二階の梢の寝室へ向かって行った。",
+   "en": "",
+   "refs": [
+    "scene25:21"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "俺は、自分の寝室へ戻るために食堂を出た。",
+   "en": "",
+   "refs": [
+    "scene25:22"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "俺は、外に出ることにした。",
+   "en": "",
+   "refs": [
+    "scene25:23"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "本当は、俺はしろいコ゛ハンか゛食へ゛たい・・・！",
+   "en": "",
+   "refs": [
+    "scene25:24"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "もう食へ゛られない・・・。",
+   "en": "",
+   "refs": [
+    "scene25:25"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "まい朝、梢か゛ネル・ト゛リッフ゜て゛いれてくれるコーヒーは、うまいっ！",
+   "en": "",
+   "refs": [
+    "scene25:26"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "コーヒーのいれ方か゛上手た゛と、サトウか゛なくてもあまく感し゛るものた゛。",
+   "en": "",
+   "refs": [
+    "scene25:27"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "「こらっ、キチンとイスにすわって食へ゛なさい！」",
+   "en": "",
+   "refs": [
+    "scene25:28"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "・・・・・・これは、母か゛作ったやつた゛。",
+   "en": "",
+   "refs": [
+    "scene25:29"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "・・・・・・なんとなく、梢の学校の通学路へ来てしまった。",
+   "en": "",
+   "refs": [
+    "scene26:0"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "梢の学校の校門か゛見えている。",
+   "en": "",
+   "refs": [
+    "scene26:1"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "このみちをまっすく゛行って、つきあたってから左へ行くと、家のマンションか゛ある。",
+   "en": "",
+   "refs": [
+    "scene26:2"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "梢の学校のヘイか゛ある。",
+   "en": "",
+   "refs": [
+    "scene26:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "＜猫原公園＞ーか゛ある。",
+   "en": "",
+   "refs": [
+    "scene26:4"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "と゛うやら、授業中らしいか゛・・・ここからは、よく判らない。",
+   "en": "",
+   "refs": [
+    "scene26:5"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "「テレヒ゛・ト゛ラマかなんかた゛と、カンタンに梢を呼ひ゛出して、連れ出すことか゛出来るた゛ろうに・・・」",
+   "en": "",
+   "refs": [
+    "scene26:6"
+   ],
+   "max_cells": 52
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "外国行きを梢に打ち明けるのて゛あれは゛、いまのうちの方か゛、よいかも知れない。",
+   "en": "",
+   "refs": [
+    "scene26:7"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "俺の見おくりなと゛いらないから、明日は梢のコンクールへ行ってあけ゛て欲しい。",
+   "en": "",
+   "refs": [
+    "scene26:8"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "明日のいま頃は、と゛うしているた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene26:9"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "俺か゛、いま外国行きを打ち明けれは゛、梢はコンテ゛ィションをくす゛してしまうた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene26:10"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "学校へ行って、梢を呼ひ゛出してもらおうか？",
+   "en": "",
+   "refs": [
+    "scene26:11"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "休み時間になれは゛、梢を呼ひ゛出してもらえるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene26:12"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "俺は、と゛こへも行く気か゛しないのて゛、家へ帰ることにした。",
+   "en": "",
+   "refs": [
+    "scene26:13"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "梢を、呼ひ゛出してもらえるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene26:14"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "ＯＫー行ってみるか！？",
+   "en": "",
+   "refs": [
+    "scene26:15"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "逃け゛るのか・・・・・・？",
+   "en": "",
+   "refs": [
+    "scene26:16"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "あのカフェハ゛ーは、俺か゛梢に教えてやったんた゛・・・開店は、午後五時からた゛。",
+   "en": "",
+   "refs": [
+    "scene26:17"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "行って、と゛うする・・・ひなたほ゛っこて゛もするのか？",
+   "en": "",
+   "refs": [
+    "scene26:18"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "・・・何から？",
+   "en": "",
+   "refs": [
+    "scene26:19"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "五年たっても、日本に帰って来るつもりか゛なけれは゛、それもよいかも知れない・・・。",
+   "en": "",
+   "refs": [
+    "scene26:20"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "それよりも、学校へ行ってみた方か゛いいと思う・・・。",
+   "en": "",
+   "refs": [
+    "scene26:21"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "ここか゛、梢のかよっている学校た゛・・・。",
+   "en": "",
+   "refs": [
+    "scene27:0"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "・・・おカタイお嬢様学校た゛と聞いているか゛、梢とは会えるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene27:1"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "＜ここて゛、テ゛ィスク２をテ゛ィスク３に交換してくた゛さいね！＞",
+   "en": "",
+   "refs": [
+    "scene27:2"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "＜テ゛ィスクを交換してから、何かキーを押して下さい！！＞",
+   "en": "",
+   "refs": [
+    "scene27:3"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "俺は、学校の玄関にやって来た。",
+   "en": "",
+   "refs": [
+    "scene28:0"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "「ーと゛ちら様て゛すか？」",
+   "en": "",
+   "refs": [
+    "scene28:1"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "受付嬢か゛、窓の向こうから俺を見つめている。",
+   "en": "",
+   "refs": [
+    "scene28:2"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "『俺の名前は、柳沢・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene28:3"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "「柳沢あつし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:4"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "「柳沢たかし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:5"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "「柳沢まさし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:6"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "「柳沢さとし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:7"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "「あらっ・・・て゛は、柳沢梢さんのお義兄様？」",
+   "en": "",
+   "refs": [
+    "scene28:8"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "「柳沢つよし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:9"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "「柳沢たけし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:10"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "「柳沢きよし様て゛すね・・・」",
+   "en": "",
+   "refs": [
+    "scene28:11"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "「今日は、と゛の様なこ゛用けんて゛しょう？」",
+   "en": "",
+   "refs": [
+    "scene29:0"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "なかなか、美しい女た゛。",
+   "en": "",
+   "refs": [
+    "scene29:1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "この学校の正めん玄関た゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene29:2"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "また゛あたらしい、三階建校舎た゛・・・梢の教室は、と゛こなのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene29:3"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "来客用のスリッハ゜か゛、いくつも入っている。",
+   "en": "",
+   "refs": [
+    "scene29:4"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "いまは授業中らしく、まわりには受付嬢しかいない。",
+   "en": "",
+   "refs": [
+    "scene29:5"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "「梢さんか゛国際ハ゛イオリン・コンクールに出場するのは、本校にとってスハ゛ラシイことて゛すわ。」",
+   "en": "",
+   "refs": [
+    "scene29:6"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "「いまは、また゛授業中て゛すもの・・・教室まて゛は、行かれませんわよ」",
+   "en": "",
+   "refs": [
+    "scene29:7"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "「わたくしのて゛すか・・・必要こ゛さ゛います？」",
+   "en": "",
+   "refs": [
+    "scene29:8"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "「いまの授業時間か゛終るまて゛、あと数十分こ゛さ゛いますか゛・・・」",
+   "en": "",
+   "refs": [
+    "scene29:9"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "梢は、この学校のと゛こかにいるハス゛なんた゛！",
+   "en": "",
+   "refs": [
+    "scene29:10"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "可愛いというよりも、美しいというタイフ゜た゛ね。",
+   "en": "",
+   "refs": [
+    "scene29:11"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "窓からのそ゛くと、受付室の中には彼女しかいないか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene29:12"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "「と゛うゆうおつもり・・・・・・？」",
+   "en": "",
+   "refs": [
+    "scene29:13"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "俺は、スリッハ゜にはきかえると、受付室へ向かった。",
+   "en": "",
+   "refs": [
+    "scene29:14"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "受付嬢に見られてしまったし、このまま帰れは゛ヘンに思われるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene29:15"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "「休み時間まて゛、お待ちになっていたた゛けませんの？」",
+   "en": "",
+   "refs": [
+    "scene29:16"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "俺は、受付嬢か゛目をはなしたスキに、近くにある階段を音もなく駆け上か゛って行った。",
+   "en": "",
+   "refs": [
+    "scene29:17"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "あまり外をうろつかない方か゛いいと思うか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene29:18"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "「困ります、勝手に上か゛らないて゛下さい・・・」",
+   "en": "",
+   "refs": [
+    "scene29:19"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "と゛うやって・・・彼女は、受付室にいるのに？",
+   "en": "",
+   "refs": [
+    "scene29:20"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "俺は、まわりを見渡してから、受付室へ駆け込んた゛。",
+   "en": "",
+   "refs": [
+    "scene29:21"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "と゛こに、梢か゛いるのか？",
+   "en": "",
+   "refs": [
+    "scene29:22"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "「後藤恵美ともうします」",
+   "en": "",
+   "refs": [
+    "scene29:23"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "「{A1}アナタ{A2}{A3}、{A1}いい男ね{A2}{A3}{A3}・・・{A1}わたくしの好みた゛わ{A2}！」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "「{A1}まぁ{A2}{A3}・・・{A1}と゛こへ行ってらしたの{A2}？」{A3}{A3}",
+   "en": "",
+   "refs": [
+    "scene30:1"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "ここは、受付室た゛・・・窓から、玄関か゛見える。",
+   "en": "",
+   "refs": [
+    "scene30:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "やわらかくほほえんて゛いる。{A3}",
+   "en": "",
+   "refs": [
+    "scene30:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "俺と受付嬢の二人しかいない。",
+   "en": "",
+   "refs": [
+    "scene30:4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "いまの授業は、あとと゛のくらいて゛終わるのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene30:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "今日は土曜日た゛・・・俺か゛日本て゛すこ゛す、最後の土曜日になるかも知れない。",
+   "en": "",
+   "refs": [
+    "scene30:6"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "「{A1}今日は{A2}、{A1}と゛の様なことて゛いらしたの{A2}？」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:7"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "「{A1}と゛こかて゛{A2}{A3}{A3}、{A1}お会いしましたかしら{A2}？」",
+   "en": "",
+   "refs": [
+    "scene30:8"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "「{A1}わたくしは{A2}{A3}、{A1}後藤恵美ともうします{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "{A3}{A3}「{A1}もぅ{A2}、{A1}わすれておしまいて゛すか{A2}{A3}・・・{A1}恵美て゛す{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:10"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "「{A1}まぁ{A2}{A3}・・・{A1}女性に{A2}{A3}、{A1}年令なと゛聞くものて゛はないわ{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:11"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "「{A1}Ｘ３{A2}ー{A1}Ｘ４Ｘ{A2}ー{A1}Ｘ５ＸＸよ{A2}・・・{A1}たた゛し{A2}{A3}、{A1}午後１１時以降にしてね{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:12"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "「{A1}この女子校の大学部を{A2}、{A1}卒業したは゛かりよ{A2}{A3}・・・」",
+   "en": "",
+   "refs": [
+    "scene30:13"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "「{A1}この学校には{A2}{A3}、{A1}五月睡という大学部のときのクラス・メートか゛いるわ{A2}」",
+   "en": "",
+   "refs": [
+    "scene30:14"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "その欲ほ゛うには、かき゛りか゛ない。",
+   "en": "",
+   "refs": [
+    "scene30:15"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "この受付嬢は、梢のいる場所を知っているた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene30:16"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "玄関て゛梢を待っていても、さらし者になるた゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene30:17"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "俺は、また゛何もしたくない。",
+   "en": "",
+   "refs": [
+    "scene30:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "「{A1}フフフ{A2}・・・{A1}あまえん坊さんね{A2}」{A3}",
+   "en": "",
+   "refs": [
+    "scene30:19"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "「{A1}アナタ{A2}{A3}・・・{A1}何をしていらっしゃるの{A2}？」",
+   "en": "",
+   "refs": [
+    "scene30:20"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "{A3}「・・・{A1}ヘンな人{A2}」",
+   "en": "",
+   "refs": [
+    "scene30:21"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "「{A1}アンッ{A2}{A3}・・・・・・{A1}強引なのね{A2}」",
+   "en": "",
+   "refs": [
+    "scene30:22"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "{A3}「{A1}わたくしか゛{A2}、{A1}リート゛して差し上け゛ますわ{A2}」",
+   "en": "",
+   "refs": [
+    "scene30:23"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "「{A1}今度はわたくしにも{A2}、{A1}いかせて下さいね{A2}{A3}・・・」",
+   "en": "",
+   "refs": [
+    "scene30:24"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "「あぁぁぁ・・・・・・あせらないて゛！」",
+   "en": "",
+   "refs": [
+    "scene31:0"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "「キャーッ、誰かァ！！」",
+   "en": "",
+   "refs": [
+    "scene31:1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "恵美は、タ゛イタンにテーフ゛ルの上によこたわっている。",
+   "en": "",
+   "refs": [
+    "scene31:2"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "見事なハ゛ストた゛。",
+   "en": "",
+   "refs": [
+    "scene31:3"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "もぅ、すて゛にかたくなっている。",
+   "en": "",
+   "refs": [
+    "scene31:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "美しく、くひ゛れている。",
+   "en": "",
+   "refs": [
+    "scene31:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "ぬれて、キラキラしている。",
+   "en": "",
+   "refs": [
+    "scene31:6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "ほっそりとして、長い足た゛。",
+   "en": "",
+   "refs": [
+    "scene31:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "「・・・・・・上手よ」",
+   "en": "",
+   "refs": [
+    "scene31:8"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "「くふっ・・・・・・ん、強すき゛るわ」",
+   "en": "",
+   "refs": [
+    "scene31:9"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "「そう・・・・・・もっと、ゆっくりね」",
+   "en": "",
+   "refs": [
+    "scene31:10"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "かならす゛、いかせてやるー！！",
+   "en": "",
+   "refs": [
+    "scene31:11"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "こんな所て゛こんなことをして、外には聞こえないのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene31:12"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "いや・・・・・・また゛た゛。",
+   "en": "",
+   "refs": [
+    "scene31:13"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "また゛、また゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene31:14"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "「いいわよ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene31:15"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "「うっ、うっ・・・んぅ」",
+   "en": "",
+   "refs": [
+    "scene31:16"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "「あふぅ、あぁぁぁ・・・」",
+   "en": "",
+   "refs": [
+    "scene31:17"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "「あっ、あふ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene31:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "「・・・・・・いぃ」",
+   "en": "",
+   "refs": [
+    "scene31:20"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "「そこよ・・・そこか゛こっているの」",
+   "en": "",
+   "refs": [
+    "scene31:21"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "「・・・何してるの？」",
+   "en": "",
+   "refs": [
+    "scene31:22"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "「そうゆうシュミか゛あるの・・・？」",
+   "en": "",
+   "refs": [
+    "scene31:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "「・・・・・・あっぁぁぁぁぁ！」",
+   "en": "",
+   "refs": [
+    "scene32:0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "もぅ、準備は出来ているみたいた゛・・・。",
+   "en": "",
+   "refs": [
+    "scene32:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "あらいいきつ゛かいて゛、激しく上下している。",
+   "en": "",
+   "refs": [
+    "scene32:2"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "オレンシ゛色の乳首か゛、やや大きめた゛。",
+   "en": "",
+   "refs": [
+    "scene32:3"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "モウチョウの後か゛、うっすら残っている。",
+   "en": "",
+   "refs": [
+    "scene32:4"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "指をそっと入れてみる・・・と、まるて゛すいつくようた゛。",
+   "en": "",
+   "refs": [
+    "scene32:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "大きく開かれているのて゛、すへ゛てか゛見える。",
+   "en": "",
+   "refs": [
+    "scene32:6"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "「梢さんの教室は、三年生た゛から三階にあるのよ」",
+   "en": "",
+   "refs": [
+    "scene32:7"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "「いまこ゛ろは、音楽室て゛練習しているハス゛た゛わ」",
+   "en": "",
+   "refs": [
+    "scene32:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "「また゛よ、アナタひとりて゛、いかないて゛・・・！！」",
+   "en": "",
+   "refs": [
+    "scene32:9"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "「・・・・・・もっと、つつ゛けて！」",
+   "en": "",
+   "refs": [
+    "scene32:10"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "きっと、いかせてみせるそ゛！",
+   "en": "",
+   "refs": [
+    "scene32:11"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "アレーか゛ないけれと゛、まぁいいた゛ろう・・・いつもは、サイフに入れておくのた゛か゛。",
+   "en": "",
+   "refs": [
+    "scene32:12"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "「・・・・・・すんて゛からて゛も、いいて゛しょう？」",
+   "en": "",
+   "refs": [
+    "scene32:13"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "俺は、後しまつをすると受付室を出て、校舎の三階へ向かった。",
+   "en": "",
+   "refs": [
+    "scene32:14"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "「いまはまた゛、はなれないて゛！」",
+   "en": "",
+   "refs": [
+    "scene32:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "俺は、後しまつをすると受付室を出て、二階まて゛階段を駆け上か゛った。",
+   "en": "",
+   "refs": [
+    "scene32:16"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "「・・・・・・はふぅん」",
+   "en": "",
+   "refs": [
+    "scene32:17"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "「くふぅぅぅ・・・・・・うん」",
+   "en": "",
+   "refs": [
+    "scene32:18"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "「あんっ、あんっ・・・・・・あぁぁぁ！」",
+   "en": "",
+   "refs": [
+    "scene32:19"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "「はぁああぁぁん・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene32:20"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "「うっ・・・・・・あぁん」",
+   "en": "",
+   "refs": [
+    "scene32:21"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "「うぅ、あぁぁぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene32:22"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "「あっ、あっ、あっ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene32:23"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "梢のいる場所、なんとか判らないかな・・・？",
+   "en": "",
+   "refs": [
+    "scene32:24"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00521",
+   "kind": "msg",
+   "jp": "『あなたのカミをみた゛してしまったから・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene32:25"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00522",
+   "kind": "msg",
+   "jp": "「わたくし、その様な女て゛はこ゛さ゛いません・・・」",
+   "en": "",
+   "refs": [
+    "scene32:26"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00523",
+   "kind": "msg",
+   "jp": "俺は、サイフの中から２万円を取り出して、恵美のスーツの内ホ゜ケットへ入れた。{A5}",
+   "en": "",
+   "refs": [
+    "scene32:27"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00524",
+   "kind": "msg",
+   "jp": "俺は、十分な金を持っていない。",
+   "en": "",
+   "refs": [
+    "scene32:28"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00525",
+   "kind": "msg",
+   "jp": "「あっ、原先生・・・！！」",
+   "en": "",
+   "refs": [
+    "scene33:0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00526",
+   "kind": "msg",
+   "jp": "「キミたちは、ここて゛ナニをしているのかね！？」",
+   "en": "",
+   "refs": [
+    "scene33:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00527",
+   "kind": "msg",
+   "jp": "「キミは、ここて゛いったいナニをしておるんた゛！？」",
+   "en": "",
+   "refs": [
+    "scene33:2"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00528",
+   "kind": "msg",
+   "jp": "「誰た゛、キミは・・・ここて゛何をしている！？」",
+   "en": "",
+   "refs": [
+    "scene33:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00529",
+   "kind": "msg",
+   "jp": "俺は逃け゛出そうとしたか゛、後ろからはか゛いし゛めにされて、つかまってしまった。",
+   "en": "",
+   "refs": [
+    "scene33:4"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00530",
+   "kind": "msg",
+   "jp": "俺は逃け゛出そうてしたか゛、後ろからはか゛いし゛めにされて、押したおされた。",
+   "en": "",
+   "refs": [
+    "scene33:5"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00531",
+   "kind": "msg",
+   "jp": "そして、俺はス゛ホ゛ンをぬか゛されると・・・・・・くすぅん。",
+   "en": "",
+   "refs": [
+    "scene33:6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00532",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・と゛うして、あんな事をしたの？」",
+   "en": "",
+   "refs": [
+    "scene34:0"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00533",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・ヒロシお兄ちゃん！」",
+   "en": "",
+   "refs": [
+    "scene34:1"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00534",
+   "kind": "msg",
+   "jp": "「わたしは、いつまて゛も待っていますから・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene34:2"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00535",
+   "kind": "msg",
+   "jp": "・・・俺は、外国よりもとおくへ連れて行かれることになってしまった。",
+   "en": "",
+   "refs": [
+    "scene34:3"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00536",
+   "kind": "msg",
+   "jp": "『ＧＡＭＥ・ＯＶＥＲ』{A6}",
+   "en": "",
+   "refs": [
+    "scene34:4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00537",
+   "kind": "msg",
+   "jp": "「もう、わたし・・・・・・お兄ちゃんか゛、判らないわ」",
+   "en": "",
+   "refs": [
+    "scene34:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00538",
+   "kind": "msg",
+   "jp": "「・・・・・・わたし、お兄ちゃんの帰りを待つ自しんか゛ない」",
+   "en": "",
+   "refs": [
+    "scene34:6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00539",
+   "kind": "msg",
+   "jp": "三階の廊下にやって来た。",
+   "en": "",
+   "refs": [
+    "scene35:0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00540",
+   "kind": "msg",
+   "jp": "この階にあるのは、と゛れも三年生の教室は゛かりた゛。",
+   "en": "",
+   "refs": [
+    "scene35:1"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00541",
+   "kind": "msg",
+   "jp": "何やら、にき゛やかな話し声か゛する。",
+   "en": "",
+   "refs": [
+    "scene35:2"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00542",
+   "kind": "msg",
+   "jp": "また゛授業中らしく、廊下には俺ひとりしかいない。",
+   "en": "",
+   "refs": [
+    "scene35:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00543",
+   "kind": "msg",
+   "jp": "また゛、午前中た゛。",
+   "en": "",
+   "refs": [
+    "scene35:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00544",
+   "kind": "msg",
+   "jp": "いい天気た゛な・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene35:5"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00545",
+   "kind": "msg",
+   "jp": "「この学校は、す゛いふ゛ん授業時間か゛長いな・・・」",
+   "en": "",
+   "refs": [
+    "scene35:6"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00546",
+   "kind": "msg",
+   "jp": "梢は、教室にいるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene35:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00547",
+   "kind": "msg",
+   "jp": "梢は、もう教室にいるた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene35:8"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00548",
+   "kind": "msg",
+   "jp": "なかなか、美しい女た゛った。",
+   "en": "",
+   "refs": [
+    "scene35:9"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00549",
+   "kind": "msg",
+   "jp": "外国には、せ゛ったいに行かなくてはならない・・・それか゛義父への、おん返した゛と思っている。",
+   "en": "",
+   "refs": [
+    "scene35:10"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00550",
+   "kind": "msg",
+   "jp": "と゛んな女て゛も、アレはいっしょた゛な・・・。",
+   "en": "",
+   "refs": [
+    "scene35:11"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00551",
+   "kind": "msg",
+   "jp": "行ってやりたい・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene35:12"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00552",
+   "kind": "msg",
+   "jp": "この学校は、おカタイ学校た゛と聞いていたか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene35:13"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00553",
+   "kind": "msg",
+   "jp": "俺は、近くにある＜３年２組＞ーという教室へ向かった。",
+   "en": "",
+   "refs": [
+    "scene35:14"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00554",
+   "kind": "msg",
+   "jp": "俺は、二階へ行くために階段を降りていった。",
+   "en": "",
+   "refs": [
+    "scene35:15"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00555",
+   "kind": "msg",
+   "jp": "いまは、特にしたくない。",
+   "en": "",
+   "refs": [
+    "scene35:16"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00556",
+   "kind": "msg",
+   "jp": "そうするよりも、一階す゛つ降りて行きなか゛ら、梢をさか゛した方か゛いい。",
+   "en": "",
+   "refs": [
+    "scene35:17"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00557",
+   "kind": "msg",
+   "jp": "見つかったらヤハ゛イから、やめておこう。",
+   "en": "",
+   "refs": [
+    "scene35:18"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00558",
+   "kind": "msg",
+   "jp": "ここは、三階た゛そ゛・・・・・・まぁ、梢には見つけてもらえるた゛ろうか゛。",
+   "en": "",
+   "refs": [
+    "scene35:19"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00559",
+   "kind": "msg",
+   "jp": "俺は＜３年２組＞ーの入ロまて゛来ると、教室の中か゛にき゛やかなのて゛、思い切ってト゛アを開けた。",
+   "en": "",
+   "refs": [
+    "scene36:0"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "m00560",
+   "kind": "msg",
+   "jp": "「梢は、また゛戻って来ていないわよ！」",
+   "en": "",
+   "refs": [
+    "scene36:1"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00561",
+   "kind": "msg",
+   "jp": "教師か゛いなくて、生徒たちか゛好き勝手なことしている。",
+   "en": "",
+   "refs": [
+    "scene36:2"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00562",
+   "kind": "msg",
+   "jp": "ふつうのト゛アた゛・・・特に、変わった所はない。",
+   "en": "",
+   "refs": [
+    "scene36:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00563",
+   "kind": "msg",
+   "jp": "誰もいない・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene36:4"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00564",
+   "kind": "msg",
+   "jp": "初夏の陽差しみたいた゛。",
+   "en": "",
+   "refs": [
+    "scene36:5",
+    "scene48:6"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00565",
+   "kind": "msg",
+   "jp": "何人かか゛、俺を見つめている。",
+   "en": "",
+   "refs": [
+    "scene36:6"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00566",
+   "kind": "msg",
+   "jp": "「アンタ、誰よ？」",
+   "en": "",
+   "refs": [
+    "scene36:7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00567",
+   "kind": "msg",
+   "jp": "「梢か゛いつもいっている様に、なかなかハンサムさんね」",
+   "en": "",
+   "refs": [
+    "scene36:8"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00568",
+   "kind": "msg",
+   "jp": "「キャア・・・ッ、男よ！！」",
+   "en": "",
+   "refs": [
+    "scene36:9"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00569",
+   "kind": "msg",
+   "jp": "「こんな所て゛、何をしているの？」",
+   "en": "",
+   "refs": [
+    "scene36:10"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00570",
+   "kind": "msg",
+   "jp": "「梢は、見つかったの、＜お兄ちゃん＞？」",
+   "en": "",
+   "refs": [
+    "scene36:11"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00571",
+   "kind": "msg",
+   "jp": "「いまは、自習時間なのよ」",
+   "en": "",
+   "refs": [
+    "scene36:12"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00572",
+   "kind": "msg",
+   "jp": "「梢は、校長先生にいわれて、今日は授業を受けなくてもいいて゛すって」",
+   "en": "",
+   "refs": [
+    "scene36:13"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00573",
+   "kind": "msg",
+   "jp": "「明日の国際ハ゛イオリン・コンクールのために、練習しているわ」",
+   "en": "",
+   "refs": [
+    "scene36:14"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00574",
+   "kind": "msg",
+   "jp": "「あんまりキョーミないけと゛、梢か゛出場するんた゛もの・・・行くわよ」",
+   "en": "",
+   "refs": [
+    "scene36:15"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00575",
+   "kind": "msg",
+   "jp": "『俺は、＜柳沢梢＞ーの義兄なんた゛か゛・・・』",
+   "en": "",
+   "refs": [
+    "scene36:16"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00576",
+   "kind": "msg",
+   "jp": "「梢は、また゛音楽室て゛練習しているんし゛ゃないかしら？」",
+   "en": "",
+   "refs": [
+    "scene36:17"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00577",
+   "kind": "msg",
+   "jp": "なかなか、色っほ゜い娘は゛かりた゛な・・・。",
+   "en": "",
+   "refs": [
+    "scene36:18"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00578",
+   "kind": "msg",
+   "jp": "梢に会ったら、明日の出発のことをいい出せるた゛ろうか・・・？",
+   "en": "",
+   "refs": [
+    "scene36:19"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00579",
+   "kind": "msg",
+   "jp": "世界中から人か゛あつまるんた゛から、金賞を取れれは゛、アマチュアて゛は世界のトッフ゜になるわけた゛。",
+   "en": "",
+   "refs": [
+    "scene36:20"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00580",
+   "kind": "msg",
+   "jp": "・・・・・・明日の出発は、せ゛ったいに変えることは出来ない。",
+   "en": "",
+   "refs": [
+    "scene36:21"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00581",
+   "kind": "msg",
+   "jp": "制服をぬいた゛ら、とても高校三年生には見えないた゛ろうな・・・この娘たちは。",
+   "en": "",
+   "refs": [
+    "scene36:22"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00582",
+   "kind": "msg",
+   "jp": "俺は、教室の中へ歩んて゛行った。",
+   "en": "",
+   "refs": [
+    "scene36:23"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00583",
+   "kind": "msg",
+   "jp": "俺は、ト゛アを閉し゛て、廊下に戻った。",
+   "en": "",
+   "refs": [
+    "scene36:24"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00584",
+   "kind": "msg",
+   "jp": "それもよいと思うか゛・・・ここからは、行かれない。",
+   "en": "",
+   "refs": [
+    "scene36:25"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00585",
+   "kind": "msg",
+   "jp": "いまは、行きたくない。",
+   "en": "",
+   "refs": [
+    "scene36:26"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00586",
+   "kind": "msg",
+   "jp": "二階を素通りしていくのは、もったいない。",
+   "en": "",
+   "refs": [
+    "scene36:27"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00587",
+   "kind": "msg",
+   "jp": "見つかったらマス゛イから、やめた方か゛いい。",
+   "en": "",
+   "refs": [
+    "scene36:28"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00588",
+   "kind": "msg",
+   "jp": "俺は、また゛しにたくない・・・ここは、三階た゛そ゛。",
+   "en": "",
+   "refs": [
+    "scene36:29"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00589",
+   "kind": "msg",
+   "jp": "この教室の中には、梢か゛いない。",
+   "en": "",
+   "refs": [
+    "scene36:30"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00590",
+   "kind": "msg",
+   "jp": "「いくらさか゛しても、梢はいないわよ」",
+   "en": "",
+   "refs": [
+    "scene37:0"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00591",
+   "kind": "msg",
+   "jp": "教師か゛いないから、自習をしている娘は、ひとりもいない。",
+   "en": "",
+   "refs": [
+    "scene37:1"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00592",
+   "kind": "msg",
+   "jp": "まるて゛、初夏の様な陽差した゛な。",
+   "en": "",
+   "refs": [
+    "scene37:2"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00593",
+   "kind": "msg",
+   "jp": "まわりにいる女子高生たちは、みんな俺を見つめている。",
+   "en": "",
+   "refs": [
+    "scene37:3"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00594",
+   "kind": "msg",
+   "jp": "俺か゛行っていた高校よりも、いい机た゛な。",
+   "en": "",
+   "refs": [
+    "scene37:4"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00595",
+   "kind": "msg",
+   "jp": "あれて゛、なく゛られたら痛いた゛ろうな。",
+   "en": "",
+   "refs": [
+    "scene37:5"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00596",
+   "kind": "msg",
+   "jp": "可愛いらしい、ウ゛ィタ゛ルのマスコット人形か゛ついている。",
+   "en": "",
+   "refs": [
+    "scene37:6"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00597",
+   "kind": "msg",
+   "jp": "「よく受付室の前を、素通り出来たわね？」",
+   "en": "",
+   "refs": [
+    "scene37:7"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00598",
+   "kind": "msg",
+   "jp": "「梢には、もったいないわ」",
+   "en": "",
+   "refs": [
+    "scene37:8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00599",
+   "kind": "msg",
+   "jp": "「梢は、いつも行っているわよ・・・＜ステキなお兄ちゃん＞ーって」",
+   "en": "",
+   "refs": [
+    "scene37:9"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00600",
+   "kind": "msg",
+   "jp": "「梢とは、ちか゛つなか゛っていないんて゛しょう・・・？」",
+   "en": "",
+   "refs": [
+    "scene37:10"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00601",
+   "kind": "msg",
+   "jp": "「ねぇ、＜お兄ちゃん＞ーあたしたちに、男を教えて！」",
+   "en": "",
+   "refs": [
+    "scene37:11"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00602",
+   "kind": "msg",
+   "jp": "「いまこ゛ろ、梢に何の用なの？」",
+   "en": "",
+   "refs": [
+    "scene37:12"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00603",
+   "kind": "msg",
+   "jp": "「梢は、ここ６ケ月て゛、す゛いふ゛んキレイになったわ」",
+   "en": "",
+   "refs": [
+    "scene37:13"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00604",
+   "kind": "msg",
+   "jp": "「まさかお義兄さまは、梢と関係してるーってこと、ないわよね？」",
+   "en": "",
+   "refs": [
+    "scene37:14"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00605",
+   "kind": "msg",
+   "jp": "「梢は、何をやってもゆうとう生よ」",
+   "en": "",
+   "refs": [
+    "scene37:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00606",
+   "kind": "msg",
+   "jp": "「先生は、自分の結婚式て゛お休みなのよ」",
+   "en": "",
+   "refs": [
+    "scene37:16"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00607",
+   "kind": "msg",
+   "jp": "＜最近のわかい娘は・・・＞ーとは、いいたくはないか゛。",
+   "en": "",
+   "refs": [
+    "scene37:17"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00608",
+   "kind": "msg",
+   "jp": "梢は、学校て゛俺のことを、と゛ういっているのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene37:18"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00609",
+   "kind": "msg",
+   "jp": "金賞を取れは゛、世界て゛トッフ゜になるんた゛な・・・。",
+   "en": "",
+   "refs": [
+    "scene37:19"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00610",
+   "kind": "msg",
+   "jp": "明日の出発を変えられるものなら、変えたいか゛・・・それはムリた゛。",
+   "en": "",
+   "refs": [
+    "scene37:20"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00611",
+   "kind": "msg",
+   "jp": "こうしている時間か゛もったいない・・・か゛、悪い気はしない。",
+   "en": "",
+   "refs": [
+    "scene37:21"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00612",
+   "kind": "msg",
+   "jp": "俺は、ふり返ると廊下に戻って行った。",
+   "en": "",
+   "refs": [
+    "scene37:22"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00613",
+   "kind": "msg",
+   "jp": "ここからて゛は、すく゛にはムリた゛。",
+   "en": "",
+   "refs": [
+    "scene37:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00614",
+   "kind": "msg",
+   "jp": "俺は、また゛したくない。",
+   "en": "",
+   "refs": [
+    "scene37:24"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00615",
+   "kind": "msg",
+   "jp": "このままこの教室を出て行くのは、もったいないな。",
+   "en": "",
+   "refs": [
+    "scene37:25"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00616",
+   "kind": "msg",
+   "jp": "た゛れかに見つかるとヤハ゛イから、行きたくない。",
+   "en": "",
+   "refs": [
+    "scene37:26"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00617",
+   "kind": "msg",
+   "jp": "窓の外には、ヘ゛ランタ゛はないそ゛。",
+   "en": "",
+   "refs": [
+    "scene37:27"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00618",
+   "kind": "msg",
+   "jp": "「梢にも、こうするの・・・？」",
+   "en": "",
+   "refs": [
+    "scene37:28"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00619",
+   "kind": "msg",
+   "jp": "「いまの娘は、こんなんし゛ゃマンソ゛クしないわよ！」",
+   "en": "",
+   "refs": [
+    "scene37:29"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00620",
+   "kind": "msg",
+   "jp": "俺は、近くの娘を抱きよせると、自分のクチヒ゛ルて゛その娘のをふさいた゛。",
+   "en": "",
+   "refs": [
+    "scene37:30"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00621",
+   "kind": "msg",
+   "jp": "「ヤタ゛ァ・・・ヘンな人！！」",
+   "en": "",
+   "refs": [
+    "scene37:31"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00622",
+   "kind": "msg",
+   "jp": "「ネェ、誰か先生を呼んた゛方か゛いいんし゛ゃない？」",
+   "en": "",
+   "refs": [
+    "scene37:32"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00623",
+   "kind": "msg",
+   "jp": "俺は、近くの女子高生を抱きよせると、下着をいっきにぬか゛せた！",
+   "en": "",
+   "refs": [
+    "scene37:33"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00624",
+   "kind": "msg",
+   "jp": "「みんなて゛、＜お兄ちゃん＞ーを犯しちゃえ！！」",
+   "en": "",
+   "refs": [
+    "scene38:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00625",
+   "kind": "msg",
+   "jp": "「す゛るいわ・・・みんな、いっしょにしてよ！」",
+   "en": "",
+   "refs": [
+    "scene38:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00626",
+   "kind": "msg",
+   "jp": "「・・・・・・もっと！！」",
+   "en": "",
+   "refs": [
+    "scene38:2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00627",
+   "kind": "msg",
+   "jp": "いまの女子高生って・・・・・・すこ゛い！！",
+   "en": "",
+   "refs": [
+    "scene38:3"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00628",
+   "kind": "msg",
+   "jp": "小さいのや大きいの、色々あるか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene38:4"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00629",
+   "kind": "msg",
+   "jp": "すて゛に、かたくなっているもの、そうし゛ゃないもの・・・と゛れもみんな可愛いらしい。",
+   "en": "",
+   "refs": [
+    "scene38:5"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00630",
+   "kind": "msg",
+   "jp": "と゛れもみな、あやしくうこ゛めいている。",
+   "en": "",
+   "refs": [
+    "scene38:6"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00631",
+   "kind": "msg",
+   "jp": "こんなに多人数いても、と゛こかか゛少しす゛つちか゛っている。",
+   "en": "",
+   "refs": [
+    "scene38:7"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00632",
+   "kind": "msg",
+   "jp": "ここは、本当に学校の教室た゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene38:8"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00633",
+   "kind": "msg",
+   "jp": "「また゛よ、あたしもして・・・！！」",
+   "en": "",
+   "refs": [
+    "scene38:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00634",
+   "kind": "msg",
+   "jp": "「つき゛は、あたしよ・・・し゛らさないて゛！」",
+   "en": "",
+   "refs": [
+    "scene38:10"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00635",
+   "kind": "msg",
+   "jp": "「梢か゛いたら、逃け゛出しちゃうわね・・・」",
+   "en": "",
+   "refs": [
+    "scene38:11"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00636",
+   "kind": "msg",
+   "jp": "「みんなか゛終わるまて゛、帰さないわよ！！」",
+   "en": "",
+   "refs": [
+    "scene38:12"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00637",
+   "kind": "msg",
+   "jp": "・・・・・・みた゛れてるなぁ。",
+   "en": "",
+   "refs": [
+    "scene38:13"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00638",
+   "kind": "msg",
+   "jp": "梢、こ゛めん・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene38:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00639",
+   "kind": "msg",
+   "jp": "・・・最後まて゛もつた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene38:15"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00640",
+   "kind": "msg",
+   "jp": "これは、男の＜サカ゛＞ーた゛ね。",
+   "en": "",
+   "refs": [
+    "scene38:16"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00641",
+   "kind": "msg",
+   "jp": "俺は、逃け゛る様にして、廊下に駆け戻った。",
+   "en": "",
+   "refs": [
+    "scene38:17"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00642",
+   "kind": "msg",
+   "jp": "あいにく、いまはしたくない！",
+   "en": "",
+   "refs": [
+    "scene38:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00643",
+   "kind": "msg",
+   "jp": "逃け゛出すにしても、場所か゛ちか゛う！",
+   "en": "",
+   "refs": [
+    "scene38:19"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00644",
+   "kind": "msg",
+   "jp": "「んんっ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene38:20"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00645",
+   "kind": "msg",
+   "jp": "「くぅぅぅ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene38:21"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00646",
+   "kind": "msg",
+   "jp": "「はぅっ・・・あんっ！」",
+   "en": "",
+   "refs": [
+    "scene38:22"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00647",
+   "kind": "msg",
+   "jp": "「あぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene38:23"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00648",
+   "kind": "msg",
+   "jp": "「あふぅ・・・・・・うぅっ」",
+   "en": "",
+   "refs": [
+    "scene38:24"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00649",
+   "kind": "msg",
+   "jp": "「そこは、タ゛メェ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene38:25"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00650",
+   "kind": "msg",
+   "jp": "「そんなとこ、感し゛ないわ！」",
+   "en": "",
+   "refs": [
+    "scene38:26"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00651",
+   "kind": "msg",
+   "jp": "「もぅ・・・し゛らさないて゛よぅ！！」",
+   "en": "",
+   "refs": [
+    "scene38:27"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00652",
+   "kind": "msg",
+   "jp": "「うっ、うぁん・・・・・・くっ」",
+   "en": "",
+   "refs": [
+    "scene38:28"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00653",
+   "kind": "msg",
+   "jp": "「・・・・・・すっ、すこ゛い」",
+   "en": "",
+   "refs": [
+    "scene38:29"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00654",
+   "kind": "msg",
+   "jp": "「もっと、もっと強くぅ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene38:30"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00655",
+   "kind": "msg",
+   "jp": "「はぁぁぁ、いい・・・そこ」",
+   "en": "",
+   "refs": [
+    "scene38:31"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00656",
+   "kind": "msg",
+   "jp": "これた゛けの人数か゛いて、ウ゛ァーシ゛ンはひとりもいないなんて・・・。",
+   "en": "",
+   "refs": [
+    "scene38:32"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00657",
+   "kind": "msg",
+   "jp": "「あんっ、あふぅ・・・・・・あぁん」",
+   "en": "",
+   "refs": [
+    "scene38:33"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00658",
+   "kind": "msg",
+   "jp": "「＜お兄ちゃん＞・・・・・・ステキ、ステキよ！！」",
+   "en": "",
+   "refs": [
+    "scene39:0"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00659",
+   "kind": "msg",
+   "jp": "クラス全員て゛、三十人以上はいる。",
+   "en": "",
+   "refs": [
+    "scene39:1"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00660",
+   "kind": "msg",
+   "jp": "と゛れも、リス゛ミカルに上下している。",
+   "en": "",
+   "refs": [
+    "scene39:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00661",
+   "kind": "msg",
+   "jp": "す゛いふ゛ん、色のこい娘か゛いるな・・・。",
+   "en": "",
+   "refs": [
+    "scene39:3"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00662",
+   "kind": "msg",
+   "jp": "この動き、と゛こて゛覚えたんた゛？",
+   "en": "",
+   "refs": [
+    "scene39:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00663",
+   "kind": "msg",
+   "jp": "・・・・・・恐ろしい、俺は恐怖すら感し゛始めた。",
+   "en": "",
+   "refs": [
+    "scene39:5"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00664",
+   "kind": "msg",
+   "jp": "英語のスヘ゜ルは、＜ＯＲＧＹ＞ーた゛。",
+   "en": "",
+   "refs": [
+    "scene39:6"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00665",
+   "kind": "msg",
+   "jp": "「ねぇ、と゛うしたの・・・もっと！」",
+   "en": "",
+   "refs": [
+    "scene39:7"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00666",
+   "kind": "msg",
+   "jp": "「あと少し・・・・・・あと少しよ！！」",
+   "en": "",
+   "refs": [
+    "scene39:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00667",
+   "kind": "msg",
+   "jp": "「あの娘は、カハ゛ンを取りに来る時まて゛、教室には戻って来ないと思うわ」",
+   "en": "",
+   "refs": [
+    "scene39:9"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00668",
+   "kind": "msg",
+   "jp": "「もっと、舌を・・・そぅ、あぁぁぁ！」",
+   "en": "",
+   "refs": [
+    "scene39:10"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00669",
+   "kind": "msg",
+   "jp": "「＜お兄ちゃん＞・・・・・・いい、いいわ」",
+   "en": "",
+   "refs": [
+    "scene39:11"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00670",
+   "kind": "msg",
+   "jp": "本当に、女子高生なのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene39:12"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00671",
+   "kind": "msg",
+   "jp": "クラス・メート（全員）と、関係した事か゛判ったら、梢はと゛うするた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene39:13"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00672",
+   "kind": "msg",
+   "jp": "・・・これは、ほとんと゛ロウト゛ウた゛な。",
+   "en": "",
+   "refs": [
+    "scene39:14"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00673",
+   "kind": "msg",
+   "jp": "＜ほと゛ほと゛＞ーか゛、いいね・・・多すき゛るとイヤになる。",
+   "en": "",
+   "refs": [
+    "scene39:15"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00674",
+   "kind": "msg",
+   "jp": "タ゛メた゛・・・彼女たちか゛、はなしてくれない。",
+   "en": "",
+   "refs": [
+    "scene39:16"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00675",
+   "kind": "msg",
+   "jp": "「いま行けは゛、＜お兄ちゃん＞ーのまけよ！」",
+   "en": "",
+   "refs": [
+    "scene39:17"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00676",
+   "kind": "msg",
+   "jp": "俺は、アンニュイな気持ちを背おって、教室を出て行った。",
+   "en": "",
+   "refs": [
+    "scene39:18"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00677",
+   "kind": "msg",
+   "jp": "いまは、立ち上か゛る事すら出来ない。",
+   "en": "",
+   "refs": [
+    "scene39:19"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00678",
+   "kind": "msg",
+   "jp": "「ー行っちゃぁ、タ゛メェ！」",
+   "en": "",
+   "refs": [
+    "scene39:20"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00679",
+   "kind": "msg",
+   "jp": "・・・・・・そうしたくもなるね。",
+   "en": "",
+   "refs": [
+    "scene39:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00680",
+   "kind": "msg",
+   "jp": "もう、ロのまわりか゛ヘ゛トヘ゛ト・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene39:22"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00681",
+   "kind": "msg",
+   "jp": "と゛うやら、舌か゛あれてしまったらしい・・・・・・舌先か゛すへ゛らない。",
+   "en": "",
+   "refs": [
+    "scene39:23"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00682",
+   "kind": "msg",
+   "jp": "なんた゛か、かみちき゛りたくなってきた。",
+   "en": "",
+   "refs": [
+    "scene39:24"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00683",
+   "kind": "msg",
+   "jp": "・・・・・・うふ゛毛か゛、舌に痛い。",
+   "en": "",
+   "refs": [
+    "scene39:25"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00684",
+   "kind": "msg",
+   "jp": "「あぁぁぁぁぁ・・・・・・っ」",
+   "en": "",
+   "refs": [
+    "scene39:26"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00685",
+   "kind": "msg",
+   "jp": "「はぁ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene39:27"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00686",
+   "kind": "msg",
+   "jp": "「いっは゜い、いっは゜い感し゛ちゃう・・・・・・！！」",
+   "en": "",
+   "refs": [
+    "scene39:28"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00687",
+   "kind": "msg",
+   "jp": "「・・・・・・あぁぁぁ！」",
+   "en": "",
+   "refs": [
+    "scene39:29"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00688",
+   "kind": "msg",
+   "jp": "「はふっ・・・・・・んぅ」",
+   "en": "",
+   "refs": [
+    "scene39:30"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00689",
+   "kind": "msg",
+   "jp": "「・・・・・・・・・うぅっ」",
+   "en": "",
+   "refs": [
+    "scene39:31"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00690",
+   "kind": "msg",
+   "jp": "「くふぅ・・・・・・感し゛ちゃう！」",
+   "en": "",
+   "refs": [
+    "scene39:32"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00691",
+   "kind": "msg",
+   "jp": "「あっ、あぅ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene39:33"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00692",
+   "kind": "msg",
+   "jp": "「あんっ、ひと゛い・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene39:34"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00693",
+   "kind": "msg",
+   "jp": "「・・・・・・やんっ、痛い！」",
+   "en": "",
+   "refs": [
+    "scene39:35"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00694",
+   "kind": "msg",
+   "jp": "「そんなのイヤッ！」",
+   "en": "",
+   "refs": [
+    "scene39:36"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00695",
+   "kind": "msg",
+   "jp": "いまは・・・・・・使えない。",
+   "en": "",
+   "refs": [
+    "scene39:37"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00696",
+   "kind": "msg",
+   "jp": "ふぅ・・・・・・終った。",
+   "en": "",
+   "refs": [
+    "scene39:38"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00697",
+   "kind": "msg",
+   "jp": "二階の廊下にやって来た。",
+   "en": "",
+   "refs": [
+    "scene40:0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00698",
+   "kind": "msg",
+   "jp": "また゛授業中た゛、誰もいない。",
+   "en": "",
+   "refs": [
+    "scene40:1"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00699",
+   "kind": "msg",
+   "jp": "近くの教室からは、美しい発音の英語か゛聞こえて来る。",
+   "en": "",
+   "refs": [
+    "scene40:2"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00700",
+   "kind": "msg",
+   "jp": "正午まて゛には、また゛時間か゛あるな・・・。",
+   "en": "",
+   "refs": [
+    "scene40:3"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00701",
+   "kind": "msg",
+   "jp": "いい陽差した゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene40:4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00702",
+   "kind": "msg",
+   "jp": "『俺は、いったいここて゛何をしているんた゛ろう？』",
+   "en": "",
+   "refs": [
+    "scene40:5"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00703",
+   "kind": "msg",
+   "jp": "梢にあったら、外国へ行くことをいうことか゛出来るた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene40:6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00704",
+   "kind": "msg",
+   "jp": "・・・・・・たい陽か゛き色い。",
+   "en": "",
+   "refs": [
+    "scene40:7"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00705",
+   "kind": "msg",
+   "jp": "いったい、と゛こにいるんた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene40:8"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00706",
+   "kind": "msg",
+   "jp": "あのクラス・メートて゛は、梢か゛可哀想た゛。",
+   "en": "",
+   "refs": [
+    "scene40:9"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00707",
+   "kind": "msg",
+   "jp": "おカタイ、お嬢様学校た゛と聞いていたか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene40:10"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00708",
+   "kind": "msg",
+   "jp": "・・・・・・みた゛れている。",
+   "en": "",
+   "refs": [
+    "scene40:11"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00709",
+   "kind": "msg",
+   "jp": "俺のいま食へ゛たいモノは、生タマコ゛、レハ゛ニライタメ、おろしニンニク、ナットウ、トロロイモとスッホ゜ン・スーフ゜た゛。",
+   "en": "",
+   "refs": [
+    "scene40:12"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00710",
+   "kind": "msg",
+   "jp": "俺は、とりあえす゛英語の聞こえて来る教室へ行った。",
+   "en": "",
+   "refs": [
+    "scene40:13"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00711",
+   "kind": "msg",
+   "jp": "俺は、さっきとはちか゛う教室へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene40:14"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00712",
+   "kind": "msg",
+   "jp": "俺は、再ひ゛階段を上か゛って、三階へ向かっていった。",
+   "en": "",
+   "refs": [
+    "scene40:15"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00713",
+   "kind": "msg",
+   "jp": "・・・・・・もぅ、行きたくない。",
+   "en": "",
+   "refs": [
+    "scene40:16"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00714",
+   "kind": "msg",
+   "jp": "俺は、このまま廊下を歩んて゛行くことにした。",
+   "en": "",
+   "refs": [
+    "scene40:17"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00715",
+   "kind": "msg",
+   "jp": "あまり廊下は、うろつかない方か゛いいた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene40:18"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00716",
+   "kind": "msg",
+   "jp": "俺は、階段をおりて、受付室へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene40:19"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00717",
+   "kind": "msg",
+   "jp": "いまは、恵美に会いたくない・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene40:20"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00718",
+   "kind": "msg",
+   "jp": "いま見つかったら、いままて゛のくろうか゛水のアワた゛。",
+   "en": "",
+   "refs": [
+    "scene40:21"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00719",
+   "kind": "msg",
+   "jp": "俺は、一階へ降りて行った。",
+   "en": "",
+   "refs": [
+    "scene40:22"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00720",
+   "kind": "msg",
+   "jp": "「ＷＨＯ　ＡＲＥ　ＹＯＵ？ーと゛なたて゛すか？」",
+   "en": "",
+   "refs": [
+    "scene41:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00721",
+   "kind": "msg",
+   "jp": "と゛うやらここは、二年生の教室た゛。",
+   "en": "",
+   "refs": [
+    "scene41:1"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00722",
+   "kind": "msg",
+   "jp": "・・・・・・・・・美人た゛。",
+   "en": "",
+   "refs": [
+    "scene41:2"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00723",
+   "kind": "msg",
+   "jp": "気か゛強そうな娘た゛・・・。",
+   "en": "",
+   "refs": [
+    "scene41:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00724",
+   "kind": "msg",
+   "jp": "静かて゛、誰もいない。",
+   "en": "",
+   "refs": [
+    "scene41:4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00725",
+   "kind": "msg",
+   "jp": "ここは二階た゛から、下まて゛は３メートル以上はある。",
+   "en": "",
+   "refs": [
+    "scene41:5"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00726",
+   "kind": "msg",
+   "jp": "・・・・・・まふ゛しいせ゛。",
+   "en": "",
+   "refs": [
+    "scene41:6"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00727",
+   "kind": "msg",
+   "jp": "俺は、ト゛アをスミからスミまて゛見つめたか゛、特に変わった所か゛なかった。",
+   "en": "",
+   "refs": [
+    "scene41:7"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00728",
+   "kind": "msg",
+   "jp": "「いまは授業中て゛すから、少しお待ちいたた゛けませんか？」",
+   "en": "",
+   "refs": [
+    "scene41:8"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00729",
+   "kind": "msg",
+   "jp": "「受付にいる＜後藤＞ーという者か゛、こ゛あん内すると思いますか゛・・・」",
+   "en": "",
+   "refs": [
+    "scene41:9"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00730",
+   "kind": "msg",
+   "jp": "「睡先生は、美人て゛しょう・・・？」",
+   "en": "",
+   "refs": [
+    "scene41:10"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00731",
+   "kind": "msg",
+   "jp": "「出て行って下さい、授業のシ゛ャマて゛す！！」",
+   "en": "",
+   "refs": [
+    "scene41:11"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00732",
+   "kind": "msg",
+   "jp": "「柳沢さんは、三年生て゛すから・・・教室は、三階にあります」",
+   "en": "",
+   "refs": [
+    "scene41:12"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00733",
+   "kind": "msg",
+   "jp": "『柳沢梢の身内の者て゛すか゛・・・』",
+   "en": "",
+   "refs": [
+    "scene41:13"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00734",
+   "kind": "msg",
+   "jp": "「うわぁ、梢先輩のお義兄さまってステキーッ！！」",
+   "en": "",
+   "refs": [
+    "scene41:14"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00735",
+   "kind": "msg",
+   "jp": "男物のムスクの香りをさせているなんて、なかなかた゛な。",
+   "en": "",
+   "refs": [
+    "scene41:15"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00736",
+   "kind": "msg",
+   "jp": "恵美のクラス・メートた゛った先生って、この先生のことた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene41:16"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00737",
+   "kind": "msg",
+   "jp": "二年生く゛らいた゛と、また゛顔立ちに幼さか゛残っているな。",
+   "en": "",
+   "refs": [
+    "scene41:17"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00738",
+   "kind": "msg",
+   "jp": "このクラスは、と゛うやらマトモみたいた゛。",
+   "en": "",
+   "refs": [
+    "scene41:18"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00739",
+   "kind": "msg",
+   "jp": "この階には、と゛うやら梢はいなさそうた゛な。",
+   "en": "",
+   "refs": [
+    "scene41:19"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00740",
+   "kind": "msg",
+   "jp": "教師をしているのか゛、もったいないくらいの美人教師た゛。",
+   "en": "",
+   "refs": [
+    "scene41:20"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00741",
+   "kind": "msg",
+   "jp": "この娘たちも、三年生になったら、あんなふうになるのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene41:21"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00742",
+   "kind": "msg",
+   "jp": "「困ります、今は授業中て゛すから・・・」",
+   "en": "",
+   "refs": [
+    "scene41:22"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00743",
+   "kind": "msg",
+   "jp": "俺は、かるく頭を下け゛ると、教室のト゛アを閉し゛た。",
+   "en": "",
+   "refs": [
+    "scene41:23"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00744",
+   "kind": "msg",
+   "jp": "俺はト゛アを閉し゛ると廊下に戻った。",
+   "en": "",
+   "refs": [
+    "scene41:24"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00745",
+   "kind": "msg",
+   "jp": "ここからは、すく゛には行かれない。",
+   "en": "",
+   "refs": [
+    "scene41:25"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00746",
+   "kind": "msg",
+   "jp": "俺は、また゛せ゛んせ゛んしたくない。",
+   "en": "",
+   "refs": [
+    "scene41:26"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00747",
+   "kind": "msg",
+   "jp": "・・・いや、やめておこう。",
+   "en": "",
+   "refs": [
+    "scene41:27"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00748",
+   "kind": "msg",
+   "jp": "勝手に入って来たのか゛、見つかってしまうそ゛。",
+   "en": "",
+   "refs": [
+    "scene41:28"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00749",
+   "kind": "msg",
+   "jp": "・・・・・・それて゛もいいのか？",
+   "en": "",
+   "refs": [
+    "scene41:29"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00750",
+   "kind": "msg",
+   "jp": "ここは、二年生の教室た゛・・・いるハス゛か゛ない。",
+   "en": "",
+   "refs": [
+    "scene41:30"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00751",
+   "kind": "msg",
+   "jp": "あのコハ゛ルト・ク゛リーンのかみの娘か゛、人気か゛ありそうた゛な。",
+   "en": "",
+   "refs": [
+    "scene41:31"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00752",
+   "kind": "msg",
+   "jp": "廊下を、ひとりの女子高生か゛歩んて゛行く。",
+   "en": "",
+   "refs": [
+    "scene42:0"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00753",
+   "kind": "msg",
+   "jp": "あの娘は、いったいと゛こへ向かっているのた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene42:1"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00754",
+   "kind": "msg",
+   "jp": "廊下にいるのは、俺とあの娘た゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene42:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00755",
+   "kind": "msg",
+   "jp": "この階は、二年生の教室は゛かりた゛から、あの娘もたふ゛ん二年生た゛ろう。",
+   "en": "",
+   "refs": [
+    "scene42:3"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00756",
+   "kind": "msg",
+   "jp": "いい天気た゛・・・ホ゛ートて゛も、乗りに行きたくなる。",
+   "en": "",
+   "refs": [
+    "scene42:4"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00757",
+   "kind": "msg",
+   "jp": "・・・・・・目か゛くらむ。",
+   "en": "",
+   "refs": [
+    "scene42:5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00758",
+   "kind": "msg",
+   "jp": "正午には、また゛時間か゛ある。",
+   "en": "",
+   "refs": [
+    "scene42:6"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00759",
+   "kind": "msg",
+   "jp": "授業中なのて゛、ト゛アか゛閉し゛られている。",
+   "en": "",
+   "refs": [
+    "scene42:7"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00760",
+   "kind": "msg",
+   "jp": "ここて゛、大声て゛も上け゛られたら困るそ゛。",
+   "en": "",
+   "refs": [
+    "scene42:8"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00761",
+   "kind": "msg",
+   "jp": "ここて゛は、また゛マス゛イ・・・。",
+   "en": "",
+   "refs": [
+    "scene42:9"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00762",
+   "kind": "msg",
+   "jp": "いきなり声をかけても、大丈夫た゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene42:10"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00763",
+   "kind": "msg",
+   "jp": "俺の時代は、これか゛キホンた゛った・・・。",
+   "en": "",
+   "refs": [
+    "scene42:11"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00764",
+   "kind": "msg",
+   "jp": "『お嬢さんいい天気て゛すね？』",
+   "en": "",
+   "refs": [
+    "scene42:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00765",
+   "kind": "msg",
+   "jp": "俺は、あいにく教師とは、また゛出会っていない。",
+   "en": "",
+   "refs": [
+    "scene42:13"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00766",
+   "kind": "msg",
+   "jp": "あれた゛け美しいと、モテ゛ルにて゛もなれは゛人気か゛出るた゛ろうに・・・。",
+   "en": "",
+   "refs": [
+    "scene42:14"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00767",
+   "kind": "msg",
+   "jp": "いまは授業中のハス゛なのに、と゛こへ行こうとしているのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene42:15"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00768",
+   "kind": "msg",
+   "jp": "いまならは゛、梢に打ち明ける決心か゛ついているけれと゛・・・それも、時間とともになえてしまう。",
+   "en": "",
+   "refs": [
+    "scene42:16"
+   ],
+   "max_cells": 47
+  },
+  {
+   "id": "m00769",
+   "kind": "msg",
+   "jp": "このまま、梢と会えないまま、終わってしまうのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene42:17"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00770",
+   "kind": "msg",
+   "jp": "俺は、近くにある教室のト゛アをノックすると、ト゛アを静かに開けた。",
+   "en": "",
+   "refs": [
+    "scene42:18"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00771",
+   "kind": "msg",
+   "jp": "俺は、さっきのとはちか゛う教室のト゛アをノックした。",
+   "en": "",
+   "refs": [
+    "scene42:19"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00772",
+   "kind": "msg",
+   "jp": "いま、この娘を見うしなうと、そのうちに後悔しそうな気か゛する。",
+   "en": "",
+   "refs": [
+    "scene42:20"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00773",
+   "kind": "msg",
+   "jp": "俺は、彼女か゛トイレの入ロへ向かったとき、タ゛ッシュして彼女を呼ひ゛とめた。",
+   "en": "",
+   "refs": [
+    "scene42:21"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00774",
+   "kind": "msg",
+   "jp": "いま、そうする必要か゛あると、本気て゛は思っていない。",
+   "en": "",
+   "refs": [
+    "scene42:22"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00775",
+   "kind": "msg",
+   "jp": "{A3}{A3}「{A1}た゛ぁれ{A2}{A3}、{A1}お兄さん{A2}・・・・・・？」",
+   "en": "",
+   "refs": [
+    "scene43:0"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00776",
+   "kind": "msg",
+   "jp": "「{A1}あらっ{A2}{A3}、{A1}梢先輩のお義兄さん{A2}・・・{A1}と゛うしたの{A2}？」{A3}",
+   "en": "",
+   "refs": [
+    "scene43:1"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00777",
+   "kind": "msg",
+   "jp": "{A3}大きな睡て゛、俺を見つめている。",
+   "en": "",
+   "refs": [
+    "scene43:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00778",
+   "kind": "msg",
+   "jp": "この娘、と゛こかて゛会ったことか゛あるのかな？",
+   "en": "",
+   "refs": [
+    "scene43:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00779",
+   "kind": "msg",
+   "jp": "さすか゛に女子校た゛・・・男子トイレはない。",
+   "en": "",
+   "refs": [
+    "scene43:4"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00780",
+   "kind": "msg",
+   "jp": "ここは、トイレの前た゛。",
+   "en": "",
+   "refs": [
+    "scene43:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00781",
+   "kind": "msg",
+   "jp": "ときと゛き、教室の中からわらい声か゛聞こえる・・・きっと、教師の授業のやり方か゛うまいのた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene43:6"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "m00782",
+   "kind": "msg",
+   "jp": "さっきの英語の授業の教室にいた娘かな？",
+   "en": "",
+   "refs": [
+    "scene43:7"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00783",
+   "kind": "msg",
+   "jp": "イヤになるくらいの・・・いい天気た゛。",
+   "en": "",
+   "refs": [
+    "scene43:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00784",
+   "kind": "msg",
+   "jp": "「{A1}お義兄さん{A2}{A3}、{A1}ステキた゛な{A2}・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene43:9"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00785",
+   "kind": "msg",
+   "jp": "「{A1}杏子のおとも達の美奈子って娘か゛{A2}{A3}、{A1}梢先輩におネツなの{A2}・・・{A1}ユルセナイ{A2}{A3}！！」",
+   "en": "",
+   "refs": [
+    "scene43:10"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00786",
+   "kind": "msg",
+   "jp": "「{A1}杏子{A2}{A3}・・・{A1}安藤杏子て゛ぇす{A2}{A3}！{A3}」",
+   "en": "",
+   "refs": [
+    "scene43:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00787",
+   "kind": "msg",
+   "jp": "「{A1}シ゛ェラシー感し゛てるっ{A2}{A3}！{A3}」",
+   "en": "",
+   "refs": [
+    "scene43:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00788",
+   "kind": "msg",
+   "jp": "{A3}{A3}「{A1}と゛の先生のこと{A2}？」",
+   "en": "",
+   "refs": [
+    "scene43:13"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00789",
+   "kind": "msg",
+   "jp": "「{A1}と゛っかの学校からきた{A2}、{A1}原先生ってのか゛こあいよ{A2}{A3}！」",
+   "en": "",
+   "refs": [
+    "scene43:14"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00790",
+   "kind": "msg",
+   "jp": "「{A1}お義兄さんは{A2}{A3}、{A1}この学校に何しに来たの{A2}？」",
+   "en": "",
+   "refs": [
+    "scene43:15"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00791",
+   "kind": "msg",
+   "jp": "「{A1}杏子{A2}、＜{A1}と゛くせんよく＞ーか゛強いから{A2}{A3}{A3}、{A1}美奈子か゛ほかの娘を好きになるのゆるせないの{A2}{A3}」",
+   "en": "",
+   "refs": [
+    "scene43:16"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00792",
+   "kind": "msg",
+   "jp": "「{A1}て゛も{A2}{A3}、{A1}相手か゛梢先輩た゛から{A2}、＜{A1}もくにん＞ーしてるの{A2}{A3}！」",
+   "en": "",
+   "refs": [
+    "scene43:17"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00793",
+   "kind": "msg",
+   "jp": "・・・・・・わからない。",
+   "en": "",
+   "refs": [
+    "scene43:18"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00794",
+   "kind": "msg",
+   "jp": "五回人生をやりなおせるとしても、俺は五回とも梢を愛するた゛ろう・・・・・・と思う。",
+   "en": "",
+   "refs": [
+    "scene43:19"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00795",
+   "kind": "msg",
+   "jp": "俺の母も、梢の実母も、この学校を同期て゛卒業したらしいか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene43:20"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00796",
+   "kind": "msg",
+   "jp": "考えられそうにない・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene43:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00797",
+   "kind": "msg",
+   "jp": "「{A1}タ゛メッ{A2}{A3}{A3}、{A1}ここは杏子達女の子のトイレた゛もん{A2}{A3}！」",
+   "en": "",
+   "refs": [
+    "scene43:22"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00798",
+   "kind": "msg",
+   "jp": "「{A1}子と゛もみたいに{A2}、{A1}ナテ゛ナテ゛しないて゛{A2}{A3}！」",
+   "en": "",
+   "refs": [
+    "scene43:23"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00799",
+   "kind": "msg",
+   "jp": "「{A1}痛いよ{A2}{A3}、{A1}ツンツンすると{A2}・・・」",
+   "en": "",
+   "refs": [
+    "scene43:24"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00800",
+   "kind": "msg",
+   "jp": "{A3}「・・・{A1}梢先輩に{A2}{A3}、＜{A1}ふくしゅう＞ーしちゃおうかな{A2}{A3}」{A3}",
+   "en": "",
+   "refs": [
+    "scene43:25"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00801",
+   "kind": "msg",
+   "jp": "「{A1}お義兄さん{A2}{A3}{A3}、{A1}制服マニアなの{A2}・・・？」",
+   "en": "",
+   "refs": [
+    "scene43:26"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00802",
+   "kind": "msg",
+   "jp": "「ー{A1}やんっ{A2}{A3}！」",
+   "en": "",
+   "refs": [
+    "scene43:27"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00803",
+   "kind": "msg",
+   "jp": "「{A1}お義兄さん{A2}、{A1}すこ゛い{A2}{A3}{A3}・・・{A1}杏子はいま{A2}{A3}、{A1}モーレツに感動してるっ{A2}{A3}！{A3}」",
+   "en": "",
+   "refs": [
+    "scene43:28"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00804",
+   "kind": "msg",
+   "jp": "「{A1}そんな事しようとしたら{A2}{A3}、{A1}大声上け゛ちゃうよ{A2}{A3}！{A3}」",
+   "en": "",
+   "refs": [
+    "scene43:29"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00805",
+   "kind": "msg",
+   "jp": "「{A1}制服をよこ゛さないて゛ね{A2}{A3}{A3}・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene43:30"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00806",
+   "kind": "msg",
+   "jp": "「はぁふ・・・・・・杏子、こんなの初めてよ」",
+   "en": "",
+   "refs": [
+    "scene44:0"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00807",
+   "kind": "msg",
+   "jp": "こんな事をしなか゛らも、ちゃんと制服をよこ゛さない様に気をつかっている。",
+   "en": "",
+   "refs": [
+    "scene44:1"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00808",
+   "kind": "msg",
+   "jp": "幼い顔をしたわりには、かなり形か゛よくて大きい。",
+   "en": "",
+   "refs": [
+    "scene44:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00809",
+   "kind": "msg",
+   "jp": "・・・これて゛、女子高の二年生なのか？",
+   "en": "",
+   "refs": [
+    "scene44:3"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00810",
+   "kind": "msg",
+   "jp": "まるて゛、へ゛つの生物のように、激しく動いている。",
+   "en": "",
+   "refs": [
+    "scene44:4"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00811",
+   "kind": "msg",
+   "jp": "うっ、これはまほ゛ろしの・・・・・・！",
+   "en": "",
+   "refs": [
+    "scene44:5"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00812",
+   "kind": "msg",
+   "jp": "すけて見えそうな、スキャンティた゛。",
+   "en": "",
+   "refs": [
+    "scene44:6"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00813",
+   "kind": "msg",
+   "jp": "「すこ゛い、すこ゛ぉい・・・・・・杏子わからなくなっちゃうよぅ！」",
+   "en": "",
+   "refs": [
+    "scene44:7"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00814",
+   "kind": "msg",
+   "jp": "「と゛うしたの・・・・・・＜お兄ちゃん＞？」",
+   "en": "",
+   "refs": [
+    "scene44:8"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00815",
+   "kind": "msg",
+   "jp": "「いいわ、＜お兄ちゃん＞はシ゛ッとしていて・・・・・・杏子か゛、してあけ゛るからね」",
+   "en": "",
+   "refs": [
+    "scene44:9"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00816",
+   "kind": "msg",
+   "jp": "「あぁん、つめたぁい・・・・・・ヘンよ、ヘンになっちゃう！」",
+   "en": "",
+   "refs": [
+    "scene44:10"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00817",
+   "kind": "msg",
+   "jp": "「・・・・・・これて゛、梢先輩とおあいこね」",
+   "en": "",
+   "refs": [
+    "scene44:11"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00818",
+   "kind": "msg",
+   "jp": "「この学校の音楽室は、一階にあるの・・・」",
+   "en": "",
+   "refs": [
+    "scene44:12"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00819",
+   "kind": "msg",
+   "jp": "「くっ・・・あん、す・・・すこ゛いわ！」",
+   "en": "",
+   "refs": [
+    "scene44:13"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00820",
+   "kind": "msg",
+   "jp": "「こんなの、こんなのはし゛めて・・・・・・いっは゜いいっちゃう！」",
+   "en": "",
+   "refs": [
+    "scene44:14"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00821",
+   "kind": "msg",
+   "jp": "「まちて゛会ったら、声をかけてね・・・」",
+   "en": "",
+   "refs": [
+    "scene44:15"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00822",
+   "kind": "msg",
+   "jp": "と゛、と゛こて゛こんなテクニックを・・・！",
+   "en": "",
+   "refs": [
+    "scene44:16"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00823",
+   "kind": "msg",
+   "jp": "天使のこ゛ときわか゛たましいのく゛うそ゛う・・・。",
+   "en": "",
+   "refs": [
+    "scene44:17"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00824",
+   "kind": "msg",
+   "jp": "理性て゛は判っていても、体か゛勝手に・・・。",
+   "en": "",
+   "refs": [
+    "scene44:18"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00825",
+   "kind": "msg",
+   "jp": "ちか゛う娘を抱いていても、梢のことか゛頭からはなれない。",
+   "en": "",
+   "refs": [
+    "scene44:19"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00826",
+   "kind": "msg",
+   "jp": "「杏子、もうすく゛なの・・・やめちゃイヤ！」",
+   "en": "",
+   "refs": [
+    "scene44:20"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00827",
+   "kind": "msg",
+   "jp": "俺は、ク゛ッタリとしている杏子を残して、廊下へ戻って行った。",
+   "en": "",
+   "refs": [
+    "scene44:21"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00828",
+   "kind": "msg",
+   "jp": "「あと少した゛ったのに・・・もう！！」",
+   "en": "",
+   "refs": [
+    "scene44:22"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00829",
+   "kind": "msg",
+   "jp": "俺は、放心している杏子をおいて、階段を降りて行った。",
+   "en": "",
+   "refs": [
+    "scene44:23"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00830",
+   "kind": "msg",
+   "jp": "「これからよくなるところた゛ったのになぁ・・・」",
+   "en": "",
+   "refs": [
+    "scene44:24"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00831",
+   "kind": "msg",
+   "jp": "いまは、それと゛ころて゛はない。",
+   "en": "",
+   "refs": [
+    "scene44:25"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00832",
+   "kind": "msg",
+   "jp": "「ムンッ・・・・・・んぅ」",
+   "en": "",
+   "refs": [
+    "scene44:26"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00833",
+   "kind": "msg",
+   "jp": "「はぁっ・・・あっ・・・・・・あぅ」",
+   "en": "",
+   "refs": [
+    "scene44:27"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00834",
+   "kind": "msg",
+   "jp": "「や・・・あ・・・・・・あっ」",
+   "en": "",
+   "refs": [
+    "scene44:28"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00835",
+   "kind": "msg",
+   "jp": "「カラタ゛か゛・・・・・・あつい」",
+   "en": "",
+   "refs": [
+    "scene44:29"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00836",
+   "kind": "msg",
+   "jp": "「杏子・・・そこか゛、よわいの」",
+   "en": "",
+   "refs": [
+    "scene44:30"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00837",
+   "kind": "msg",
+   "jp": "「あうっ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene44:31"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00838",
+   "kind": "msg",
+   "jp": "「・・・・・・し゛らさないて゛よ」",
+   "en": "",
+   "refs": [
+    "scene44:32"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00839",
+   "kind": "msg",
+   "jp": "「ふん・・・・・・ああん・・・」",
+   "en": "",
+   "refs": [
+    "scene44:33"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00840",
+   "kind": "msg",
+   "jp": "「くふっ・・・・・・ぅん・・・んっ」",
+   "en": "",
+   "refs": [
+    "scene44:34"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00841",
+   "kind": "msg",
+   "jp": "「もっと、下よ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene44:35"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00842",
+   "kind": "msg",
+   "jp": "「はぅぅぅっ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene44:36"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00843",
+   "kind": "msg",
+   "jp": "「あぁあああ・・・！」",
+   "en": "",
+   "refs": [
+    "scene44:37"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00844",
+   "kind": "msg",
+   "jp": "「あふ・・・んっ・・・・・・ん」",
+   "en": "",
+   "refs": [
+    "scene44:38"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00845",
+   "kind": "msg",
+   "jp": "「・・・もっと強くぅ」",
+   "en": "",
+   "refs": [
+    "scene44:39"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00846",
+   "kind": "msg",
+   "jp": "この娘は・・・・・・多い。",
+   "en": "",
+   "refs": [
+    "scene44:40"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00847",
+   "kind": "msg",
+   "jp": "いまくやんて゛もおそいか゛、俺は持って来なかった。",
+   "en": "",
+   "refs": [
+    "scene44:41"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00848",
+   "kind": "msg",
+   "jp": "俺は、サイフから５００円玉を取り出すと、ホ゛ックスに入れた。{A5}",
+   "en": "",
+   "refs": [
+    "scene44:42"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00849",
+   "kind": "msg",
+   "jp": "俺は、それを十分に使い、へ゛つのところを攻め始めた。",
+   "en": "",
+   "refs": [
+    "scene44:43"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00850",
+   "kind": "msg",
+   "jp": "あいにくた゛か゛、５００円玉は１まいしか持っていなかった。",
+   "en": "",
+   "refs": [
+    "scene44:44"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00851",
+   "kind": "msg",
+   "jp": "これ以上、使う必要はないそ゛。",
+   "en": "",
+   "refs": [
+    "scene44:45"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00852",
+   "kind": "msg",
+   "jp": "「美奈子はね、頭痛か゛するって保健室へ行ってるの」",
+   "en": "",
+   "refs": [
+    "scene44:46"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00853",
+   "kind": "msg",
+   "jp": "やっと、一階の廊下にやって来た。{A5}",
+   "en": "",
+   "refs": [
+    "scene45:0"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00854",
+   "kind": "msg",
+   "jp": "つきあたりになっていて、廊下か゛左右にわかれている。",
+   "en": "",
+   "refs": [
+    "scene45:1"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00855",
+   "kind": "msg",
+   "jp": "校長室と保健室か゛ある。",
+   "en": "",
+   "refs": [
+    "scene45:2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00856",
+   "kind": "msg",
+   "jp": "音楽室か゛ある・・・・・・！",
+   "en": "",
+   "refs": [
+    "scene45:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00857",
+   "kind": "msg",
+   "jp": "と゛こからか、ハ゛イオリンの音色か゛聞こえてくる。",
+   "en": "",
+   "refs": [
+    "scene45:4"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00858",
+   "kind": "msg",
+   "jp": "俺は、廊下へ戻ってきた。{A5}",
+   "en": "",
+   "refs": [
+    "scene45:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00859",
+   "kind": "msg",
+   "jp": "『ここに来て、また゛梢に打ち明ける決心か゛ついていない・・・』",
+   "en": "",
+   "refs": [
+    "scene45:6"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00860",
+   "kind": "msg",
+   "jp": "この学校の教育方針は、＜貞淑て゛もあり、美しくもある＞ーた゛と聞いているか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene45:7"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00861",
+   "kind": "msg",
+   "jp": "俺は、梢を愛している・・・ならは゛、このまま梢を連れた゛してー！？",
+   "en": "",
+   "refs": [
+    "scene45:8"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00862",
+   "kind": "msg",
+   "jp": "俺か゛外国へ行くことを打ち明けれは゛、明日のコンクールは、さんさ゛んなものになるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene45:9"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00863",
+   "kind": "msg",
+   "jp": "外国へ行くことをやめにするーということは、＜柳沢家＞をすてることになる。",
+   "en": "",
+   "refs": [
+    "scene45:10"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00864",
+   "kind": "msg",
+   "jp": "俺は、こ゛うまんた゛、執念ふ゛かい、野心も強い、その気になれは゛と゛んなツミて゛も犯すた゛ろう・・・。",
+   "en": "",
+   "refs": [
+    "scene45:11"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "m00865",
+   "kind": "msg",
+   "jp": "なせ゛・・・梢か仕事かを、えらは゛なくてはいけないのか？",
+   "en": "",
+   "refs": [
+    "scene45:12"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00866",
+   "kind": "msg",
+   "jp": "もとの木か゛いやしけれは゛・・・いやしいハナしかさきはしない。",
+   "en": "",
+   "refs": [
+    "scene45:13"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00867",
+   "kind": "msg",
+   "jp": "・・・・・・行きたいとも思わない。",
+   "en": "",
+   "refs": [
+    "scene45:14"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00868",
+   "kind": "msg",
+   "jp": "いまは、行く必要か゛ないた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene45:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00869",
+   "kind": "msg",
+   "jp": "いや・・・・・・やめておこう。",
+   "en": "",
+   "refs": [
+    "scene45:16"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00870",
+   "kind": "msg",
+   "jp": "ここまて゛来て、このまま帰るのか？",
+   "en": "",
+   "refs": [
+    "scene45:17"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00871",
+   "kind": "msg",
+   "jp": "・・・・・・このまま、帰ることにしよう。",
+   "en": "",
+   "refs": [
+    "scene45:18"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00872",
+   "kind": "msg",
+   "jp": "俺は、校長室へ行くことにした。",
+   "en": "",
+   "refs": [
+    "scene45:19"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00873",
+   "kind": "msg",
+   "jp": "もう、あんなの見たくない！",
+   "en": "",
+   "refs": [
+    "scene45:20"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00874",
+   "kind": "msg",
+   "jp": "俺は、保健室へ行ってみることにした。",
+   "en": "",
+   "refs": [
+    "scene45:21"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00875",
+   "kind": "msg",
+   "jp": "もう、ムタ゛なし゛ょうねつをついやしたくはない。",
+   "en": "",
+   "refs": [
+    "scene45:22"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00876",
+   "kind": "msg",
+   "jp": "また゛た゛。また゛決心か゛つかない・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene45:23"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00877",
+   "kind": "msg",
+   "jp": "・・・・・・とりあえす゛、行ってみるか。",
+   "en": "",
+   "refs": [
+    "scene45:24"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00878",
+   "kind": "msg",
+   "jp": "「何た゛ねキミは、ノックもせす゛に・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene46:0"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00879",
+   "kind": "msg",
+   "jp": "本当にここは、校長室なのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene46:1"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00880",
+   "kind": "msg",
+   "jp": "・・・・・・あれか゛、校長か？",
+   "en": "",
+   "refs": [
+    "scene46:2"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00881",
+   "kind": "msg",
+   "jp": "あっ・・・・・・あんなところに、ホクロか゛ある！",
+   "en": "",
+   "refs": [
+    "scene46:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00882",
+   "kind": "msg",
+   "jp": "女の両足か゛大きくひらかれて乗っている。",
+   "en": "",
+   "refs": [
+    "scene46:4"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00883",
+   "kind": "msg",
+   "jp": "す゛いふ゛ん、陽か゛高くなった。",
+   "en": "",
+   "refs": [
+    "scene46:5"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00884",
+   "kind": "msg",
+   "jp": "また゛、授業は終らないのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene46:6"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00885",
+   "kind": "msg",
+   "jp": "「コラッ、はやく出て行け！」",
+   "en": "",
+   "refs": [
+    "scene46:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00886",
+   "kind": "msg",
+   "jp": "「はやく、出て行きなさい！！」",
+   "en": "",
+   "refs": [
+    "scene46:8"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00887",
+   "kind": "msg",
+   "jp": "「柳沢くんには、せ゛ひとも金賞を取ってもらわねは゛困る！！」",
+   "en": "",
+   "refs": [
+    "scene46:9"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00888",
+   "kind": "msg",
+   "jp": "「わしの教育方針を、とやかくいわれるすし゛あいはない！」",
+   "en": "",
+   "refs": [
+    "scene46:10"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00889",
+   "kind": "msg",
+   "jp": "「柳沢くんか゛金賞を取れは゛、この学校から二人めのハ゛イオリニスト世界一か゛そた゛った事になるのた゛」",
+   "en": "",
+   "refs": [
+    "scene46:11"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "m00890",
+   "kind": "msg",
+   "jp": "「もぅ、いいた゛ろう・・・出て行きたまえ！」",
+   "en": "",
+   "refs": [
+    "scene46:12"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00891",
+   "kind": "msg",
+   "jp": "「これは、来期の入学シース゛ンに、いいせんて゛んになるた゛ろう」",
+   "en": "",
+   "refs": [
+    "scene46:13"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00892",
+   "kind": "msg",
+   "jp": "ここは・・・・・・と゛うゆう学校なんた゛？",
+   "en": "",
+   "refs": [
+    "scene46:14"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00893",
+   "kind": "msg",
+   "jp": "校長も男なんた゛な・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene46:15"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00894",
+   "kind": "msg",
+   "jp": "・・・・・・梢か゛可哀想た゛。",
+   "en": "",
+   "refs": [
+    "scene46:16"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00895",
+   "kind": "msg",
+   "jp": "＜この校長にして、ここの生徒あり＞ーた゛な。",
+   "en": "",
+   "refs": [
+    "scene46:17"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00896",
+   "kind": "msg",
+   "jp": "出ちょうサーヒ゛スの、ファッション・マッサーシ゛た゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene46:18"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00897",
+   "kind": "msg",
+   "jp": "もう少しここにいて、イシ゛ワルしてやろうか・・・。",
+   "en": "",
+   "refs": [
+    "scene46:19"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00898",
+   "kind": "msg",
+   "jp": "俺は、廊下に戻って行った。",
+   "en": "",
+   "refs": [
+    "scene46:20"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00899",
+   "kind": "msg",
+   "jp": "いいや、また゛梢に会っていない。",
+   "en": "",
+   "refs": [
+    "scene46:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00900",
+   "kind": "msg",
+   "jp": "まさか、ここから外に行くわけにはいかないた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene46:22"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00901",
+   "kind": "msg",
+   "jp": "ここて゛、かくれられる所は、机の下とカーテンの向こう側た゛か、さっきは廊下て゛ハ゛イオリンの音か゛聞こえていたそ゛。",
+   "en": "",
+   "refs": [
+    "scene46:23"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00902",
+   "kind": "msg",
+   "jp": "金目の物なと゛、ありゃしない。",
+   "en": "",
+   "refs": [
+    "scene46:24"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00903",
+   "kind": "msg",
+   "jp": "保健室にやって来た。",
+   "en": "",
+   "refs": [
+    "scene47:0"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00904",
+   "kind": "msg",
+   "jp": "俺のほかには、誰もいない様た゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene47:1"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00905",
+   "kind": "msg",
+   "jp": "おやっ・・・なんた゛か、人の気はいか゛する。",
+   "en": "",
+   "refs": [
+    "scene47:2"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00906",
+   "kind": "msg",
+   "jp": "＜ＶＡＳＥＬＩＮＥ＞や＜ＣＨＬＯＲＯＦＯＲＭ＞ーと、ラヘ゛ルに書かれているヒ゛ンか゛ある。{A4}",
+   "en": "",
+   "refs": [
+    "scene47:3"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00907",
+   "kind": "msg",
+   "jp": "特に、変わった物はない。",
+   "en": "",
+   "refs": [
+    "scene47:4"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00908",
+   "kind": "msg",
+   "jp": "あれっ・・・カーテンの向こう側に、女子高生の上ク゛ツか゛ある！",
+   "en": "",
+   "refs": [
+    "scene47:5"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00909",
+   "kind": "msg",
+   "jp": "廊下には、誰もいない。",
+   "en": "",
+   "refs": [
+    "scene47:6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00910",
+   "kind": "msg",
+   "jp": "「赤まむし・ト゛リンクは・・・ないた゛ろうなぁ」",
+   "en": "",
+   "refs": [
+    "scene47:7"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00911",
+   "kind": "msg",
+   "jp": "この学校は、す゛いふ゛ん授業時間か゛長いように感し゛るか゛、それは気のせいた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene47:8"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00912",
+   "kind": "msg",
+   "jp": "梢ならは゛、かならす゛金賞を取れると思うか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene47:9"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00913",
+   "kind": "msg",
+   "jp": "俺は、梢を愛している・・・。",
+   "en": "",
+   "refs": [
+    "scene47:10"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00914",
+   "kind": "msg",
+   "jp": "ヘ゛ットて゛、誰か眠っているのか？",
+   "en": "",
+   "refs": [
+    "scene47:11"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00915",
+   "kind": "msg",
+   "jp": "俺は、ト゛アを閉し゛ると、カーテンを開いてヘ゛ットをのそ゛いた。",
+   "en": "",
+   "refs": [
+    "scene47:12"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00916",
+   "kind": "msg",
+   "jp": "それもいいか゛・・・・・・何た゛か、ヘ゛ットの方か゛気にかかるな。",
+   "en": "",
+   "refs": [
+    "scene47:13"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00917",
+   "kind": "msg",
+   "jp": "梢ならは゛、音楽室にいるハス゛た゛か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene47:14"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00918",
+   "kind": "msg",
+   "jp": "この学校には、＜美しくない娘＞ーは、いないように思う。",
+   "en": "",
+   "refs": [
+    "scene47:15"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00919",
+   "kind": "msg",
+   "jp": "この娘は、ひ゛ょう気かなにかて゛、く゛あいか゛悪いのかな？",
+   "en": "",
+   "refs": [
+    "scene48:0"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00920",
+   "kind": "msg",
+   "jp": "この娘か゛、さっき杏子って娘か゛いっていた＜美奈子＞ーなのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene48:1"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00921",
+   "kind": "msg",
+   "jp": "俺と、この娘しかいない。",
+   "en": "",
+   "refs": [
+    "scene48:2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00922",
+   "kind": "msg",
+   "jp": "うすいカケ布は、彼女の体のリンカクをはっきりあらわしている。",
+   "en": "",
+   "refs": [
+    "scene48:3"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00923",
+   "kind": "msg",
+   "jp": "つらそうに、顔をしかめたまま眠っている。",
+   "en": "",
+   "refs": [
+    "scene48:4"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00924",
+   "kind": "msg",
+   "jp": "ヘ゛ットの足元側の棚には、ぬいた゛制服か゛キチンとたたんて゛おいてある。",
+   "en": "",
+   "refs": [
+    "scene48:5"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00925",
+   "kind": "msg",
+   "jp": "さっきまて゛聞こえていたハ゛イオリンの音色は、ここまて゛は聞こえてこない。",
+   "en": "",
+   "refs": [
+    "scene48:7"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00926",
+   "kind": "msg",
+   "jp": "この娘は、何も着けないて゛眠っているのか？",
+   "en": "",
+   "refs": [
+    "scene48:8"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00927",
+   "kind": "msg",
+   "jp": "眠っていてはムリた゛・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene48:9"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00928",
+   "kind": "msg",
+   "jp": "そのために、起こすのは可哀想た゛。",
+   "en": "",
+   "refs": [
+    "scene48:10"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00929",
+   "kind": "msg",
+   "jp": "梢をしたってくれて、ありか゛とう・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene48:11"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00930",
+   "kind": "msg",
+   "jp": "この娘は、と゛れくらい本気て゛、梢のことを好きなのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene48:12"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00931",
+   "kind": "msg",
+   "jp": "少しは俺にも、＜理性か゛あるんた゛＞ーてところを、見せた方か゛いいと思うか゛・・・。",
+   "en": "",
+   "refs": [
+    "scene48:13"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00932",
+   "kind": "msg",
+   "jp": "ここに梢か゛いたら、ヘンな三かく関係か゛出来上か゛るな。",
+   "en": "",
+   "refs": [
+    "scene48:14"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00933",
+   "kind": "msg",
+   "jp": "俺か゛外国へ行ってしまったら、この娘か゛梢をなく゛さめてくれるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene48:15"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00934",
+   "kind": "msg",
+   "jp": "梢か゛この娘のことを俺に話すとき、ちょっひ゜りほこらしけ゛にしていた。",
+   "en": "",
+   "refs": [
+    "scene48:16"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00935",
+   "kind": "msg",
+   "jp": "俺は、はた゛けたカケ布を肩にかけ直してやると、静かに廊下へ戻って行った。",
+   "en": "",
+   "refs": [
+    "scene48:17"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00936",
+   "kind": "msg",
+   "jp": "ここから、すく゛には行かれない・・・ます゛はー。",
+   "en": "",
+   "refs": [
+    "scene48:18"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00937",
+   "kind": "msg",
+   "jp": "おいおい・・・いくら一階た゛からといって窓から出るのか？",
+   "en": "",
+   "refs": [
+    "scene48:19"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00938",
+   "kind": "msg",
+   "jp": "・・・・・・この娘は、梢のモノた゛。",
+   "en": "",
+   "refs": [
+    "scene48:20"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00939",
+   "kind": "msg",
+   "jp": "俺は、カケ布の中に手をすへ゛り込ませた・・・。",
+   "en": "",
+   "refs": [
+    "scene48:21"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00940",
+   "kind": "msg",
+   "jp": "・・・この娘は、また゛ウ゛ァーシ゛ンた゛。",
+   "en": "",
+   "refs": [
+    "scene48:22"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00941",
+   "kind": "msg",
+   "jp": "そんな物、と゛こにあるというのた゛？",
+   "en": "",
+   "refs": [
+    "scene48:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00942",
+   "kind": "msg",
+   "jp": "俺は、さっき見つけた棚からそのヒ゛ンを取り出して来ると、それを十分にぬりたくった。{A5}",
+   "en": "",
+   "refs": [
+    "scene48:24"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00943",
+   "kind": "msg",
+   "jp": "俺は、カ゛ーセ゛とそのヒ゛ンを取り出して来て、カ゛ーセ゛にそれをしみ込ませると、この娘のロとハナの前をそれて゛おおった。{A5}",
+   "en": "",
+   "refs": [
+    "scene48:25"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00944",
+   "kind": "msg",
+   "jp": "この娘を抱けは゛、梢をうしないそうな気か゛する。",
+   "en": "",
+   "refs": [
+    "scene48:26"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00945",
+   "kind": "msg",
+   "jp": "俺は、カケ布をはき゛取ると、彼女をやさしく抱きしめた。",
+   "en": "",
+   "refs": [
+    "scene48:27"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00946",
+   "kind": "msg",
+   "jp": "彼女は、きゅうに目を覚ますと、俺に気つ゛いてひめいを上け゛た！！",
+   "en": "",
+   "refs": [
+    "scene48:28"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00947",
+   "kind": "msg",
+   "jp": "もう、十分すき゛るくらいた゛・・・。",
+   "en": "",
+   "refs": [
+    "scene48:29"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00948",
+   "kind": "msg",
+   "jp": "この学校て゛俺か゛出会ったウ゛ァーシ゛ンは、この娘ひとりた゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene49:0"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00949",
+   "kind": "msg",
+   "jp": "クロロフォルムによって眠っているハス゛た゛か゛、ロひ゛るからはわす゛かにあえき゛声か゛もれている。",
+   "en": "",
+   "refs": [
+    "scene49:1"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "m00950",
+   "kind": "msg",
+   "jp": "少しカタクて、ハリか゛ある。",
+   "en": "",
+   "refs": [
+    "scene49:2"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00951",
+   "kind": "msg",
+   "jp": "小さくて、うすいヒ゜ンク色をしている。",
+   "en": "",
+   "refs": [
+    "scene49:3"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00952",
+   "kind": "msg",
+   "jp": "そこからは、健こうてきな両足か゛スラリとのひ゛ている。",
+   "en": "",
+   "refs": [
+    "scene49:4"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00953",
+   "kind": "msg",
+   "jp": "この娘は、まちか゛いなくウ゛ァーシ゛ン・・・・・・た゛った。",
+   "en": "",
+   "refs": [
+    "scene49:5"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00954",
+   "kind": "msg",
+   "jp": "俺か゛その小さなとっ起をつまむと、美奈子は腰をくねらせた。",
+   "en": "",
+   "refs": [
+    "scene49:6"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00955",
+   "kind": "msg",
+   "jp": "いまは、何をいってもこたえないか゛、体の方は反応している。",
+   "en": "",
+   "refs": [
+    "scene49:7"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00956",
+   "kind": "msg",
+   "jp": "よく眠っているのて゛、いまは話せない。",
+   "en": "",
+   "refs": [
+    "scene49:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00957",
+   "kind": "msg",
+   "jp": "いまは、ムタ゛なことた゛。",
+   "en": "",
+   "refs": [
+    "scene49:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00958",
+   "kind": "msg",
+   "jp": "この娘と梢て゛は、と゛ちらか゛＜タチ＞て゛、と゛ちらか゛＜ネコ＞なのた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene49:10"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00959",
+   "kind": "msg",
+   "jp": "正かくには、俺か゛この学校て゛知っているウ゛ァーシ゛ンた゛った娘は、梢とこの娘た゛けた゛。",
+   "en": "",
+   "refs": [
+    "scene49:11"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00960",
+   "kind": "msg",
+   "jp": "梢は、この娘のことをと゛う思っているのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene49:12"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00961",
+   "kind": "msg",
+   "jp": "俺、梢とこの娘て゛＜３Ｐ＞ーというのも、おもしろそうた゛。",
+   "en": "",
+   "refs": [
+    "scene49:13"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00962",
+   "kind": "msg",
+   "jp": "それは、もう少し後て゛もよいた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene49:14"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00963",
+   "kind": "msg",
+   "jp": "何た゛か今日は、家に帰りたくない。",
+   "en": "",
+   "refs": [
+    "scene49:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00964",
+   "kind": "msg",
+   "jp": "「ん・・・んく゛く゛・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene49:16"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00965",
+   "kind": "msg",
+   "jp": "「あぅ・・・ん・・・・・・あっ、あっ・・・」",
+   "en": "",
+   "refs": [
+    "scene49:17"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00966",
+   "kind": "msg",
+   "jp": "「あぁっ・・・あぁぁぁ・・・はぁぅ」",
+   "en": "",
+   "refs": [
+    "scene49:18"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00967",
+   "kind": "msg",
+   "jp": "「あっ・・・・・・あんっ・・・あ！」",
+   "en": "",
+   "refs": [
+    "scene49:19"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00968",
+   "kind": "msg",
+   "jp": "「ヤンッ・・・・・・やめてっ！」",
+   "en": "",
+   "refs": [
+    "scene49:20"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00969",
+   "kind": "msg",
+   "jp": "「・・・・・・あぁぁんっ」",
+   "en": "",
+   "refs": [
+    "scene49:21"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00970",
+   "kind": "msg",
+   "jp": "「あぁんっ・・・・・・あっ、あん」",
+   "en": "",
+   "refs": [
+    "scene49:22"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00971",
+   "kind": "msg",
+   "jp": "「んあぁっ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene49:23"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00972",
+   "kind": "msg",
+   "jp": "「あ・・・あぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene49:24"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00973",
+   "kind": "msg",
+   "jp": "「あっ・・・あんっ」",
+   "en": "",
+   "refs": [
+    "scene49:25"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00974",
+   "kind": "msg",
+   "jp": "「んぅ・・・あぁ・・・・・・はぁぁぁ」",
+   "en": "",
+   "refs": [
+    "scene49:26"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00975",
+   "kind": "msg",
+   "jp": "「い・・・いや、いやぁ・・・・・・！」",
+   "en": "",
+   "refs": [
+    "scene49:27"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00976",
+   "kind": "msg",
+   "jp": "「・・・タ゛メェ・・・・・・ヤンッ！」",
+   "en": "",
+   "refs": [
+    "scene49:28"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00977",
+   "kind": "msg",
+   "jp": "「はぁぁぁぁぁ・・・・・・っ！！」",
+   "en": "",
+   "refs": [
+    "scene49:29"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00978",
+   "kind": "msg",
+   "jp": "「あんっ、ん・・・んぅ・・・うっ」",
+   "en": "",
+   "refs": [
+    "scene49:30"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00979",
+   "kind": "msg",
+   "jp": "俺は、ワセリンをぬり直すと、へ゛つのホールを攻め始めた。",
+   "en": "",
+   "refs": [
+    "scene49:31"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00980",
+   "kind": "msg",
+   "jp": "もう、十分使っている。",
+   "en": "",
+   "refs": [
+    "scene49:32"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00981",
+   "kind": "msg",
+   "jp": "俺は、行為を終えると、身つ゛くろいを始めた・・・。",
+   "en": "",
+   "refs": [
+    "scene49:33"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00982",
+   "kind": "msg",
+   "jp": "梢・・・・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene50:0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00983",
+   "kind": "msg",
+   "jp": "・・・俺は、とうとうここまて゛来てしまった。",
+   "en": "",
+   "refs": [
+    "scene50:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00984",
+   "kind": "msg",
+   "jp": "・・・美しい。",
+   "en": "",
+   "refs": [
+    "scene50:2"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00985",
+   "kind": "msg",
+   "jp": "何故・・・俺たちは、義兄妹なのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene50:3"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00986",
+   "kind": "msg",
+   "jp": "ストラテ゛ィウ゛ァリの１８１４年製のハ゛イオリンた゛・・・。",
+   "en": "",
+   "refs": [
+    "scene50:4"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00987",
+   "kind": "msg",
+   "jp": "・・・うったら、いくらく゛らいた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene50:5"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00988",
+   "kind": "msg",
+   "jp": "学校のスリッハ゜は、と゛うして歩く時にヘ゜タヘ゜タと音か゛するんた゛？",
+   "en": "",
+   "refs": [
+    "scene50:6"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00989",
+   "kind": "msg",
+   "jp": "俺の指先いっほ゜んて゛・・・・・・大カイシ゛ュウか゛、て゛んく゛りか゛えるわけか゛ない。",
+   "en": "",
+   "refs": [
+    "scene50:7"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00990",
+   "kind": "msg",
+   "jp": "俺の能カて゛は、＜柳沢ク゛ルーフ゜＞の後ろた゛てか゛ないと、出世出来ないのた゛ろうか？",
+   "en": "",
+   "refs": [
+    "scene50:8"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00991",
+   "kind": "msg",
+   "jp": "俺は、そのてい度の人間か・・・・・・？",
+   "en": "",
+   "refs": [
+    "scene50:9"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00992",
+   "kind": "msg",
+   "jp": "梢には、金賞を取らせてやりたい・・・それか゛、これからの梢のはけ゛みになるはす゛た゛。",
+   "en": "",
+   "refs": [
+    "scene50:10"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00993",
+   "kind": "msg",
+   "jp": "俺はお前を愛している、た゛れよりも、なによりも、愛している。それた゛けはしんし゛てくれ。",
+   "en": "",
+   "refs": [
+    "scene50:11"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00994",
+   "kind": "msg",
+   "jp": "あの娘か゛いれは゛、俺か゛外国へ行ってしまっても、梢をなく゛さめてくれるた゛ろう。",
+   "en": "",
+   "refs": [
+    "scene50:12"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00995",
+   "kind": "msg",
+   "jp": "俺は、また゛わかい・・・・・・後悔をするか、しないかは、これからの自分した゛いた゛。",
+   "en": "",
+   "refs": [
+    "scene50:13"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00996",
+   "kind": "msg",
+   "jp": "本当に打ち明けてもいいのか？",
+   "en": "",
+   "refs": [
+    "scene50:14"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00997",
+   "kind": "msg",
+   "jp": "打ち明けたい、しかし・・・・・・。",
+   "en": "",
+   "refs": [
+    "scene50:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00998",
+   "kind": "msg",
+   "jp": "・・・打ち明けて、後悔しないか？",
+   "en": "",
+   "refs": [
+    "scene50:16"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00999",
+   "kind": "msg",
+   "jp": "ここに来るまて゛に関係した娘のことを、梢に打ち明けてなんになる？",
+   "en": "",
+   "refs": [
+    "scene50:17"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m01000",
+   "kind": "msg",
+   "jp": "いま梢を抱いてしまえは゛、後戻り出来なくなるそ゛・・・！",
+   "en": "",
+   "refs": [
+    "scene50:18"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m01001",
+   "kind": "msg",
+   "jp": "俺は、音楽室へ駆け込むと、梢をカいっは゜い抱きしめた。",
+   "en": "",
+   "refs": [
+    "scene50:19"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m01002",
+   "kind": "msg",
+   "jp": "せっかく、ここまて゛たと゛り着いたのに・・・？",
+   "en": "",
+   "refs": [
+    "scene50:20"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m01003",
+   "kind": "msg",
+   "jp": "俺は、静かに音楽室に入ると、梢か゛気か゛つくまて゛ハ゛イオリンの音色を聞いていた。",
+   "en": "",
+   "refs": [
+    "scene50:21"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m01004",
+   "kind": "msg",
+   "jp": "俺は、決心をかためると、音楽室に入って行った。",
+   "en": "",
+   "refs": [
+    "scene50:22"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m01005",
+   "kind": "msg",
+   "jp": "・・・それならは゛、しかたか゛ないな。",
+   "en": "",
+   "refs": [
+    "scene50:23"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m01006",
+   "kind": "msg",
+   "jp": "ＯＫ・・・ならは゛、いまそれを打ち明けなくてもいいた゛ろう？",
+   "en": "",
+   "refs": [
+    "scene50:24"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m01007",
+   "kind": "msg",
+   "jp": "「お兄ちゃん・・・・・・！？」",
+   "en": "",
+   "refs": [
+    "scene50:25"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m01008",
+   "kind": "msg",
+   "jp": "『・・・・・・・・・梢』",
+   "en": "",
+   "refs": [
+    "scene50:26"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m01009",
+   "kind": "msg",
+   "jp": "俺は、玄関から校舎の外に出ると、今夜は家に帰らない決心をした。",
+   "en": "",
+   "refs": [
+    "scene50:27"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m01010",
+   "kind": "msg",
+   "jp": "『さぁて、今日は日本て゛すこ゛す最後の土曜日た゛・・・・・・！！』",
+   "en": "",
+   "refs": [
+    "scene50:28"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m01011",
+   "kind": "msg",
+   "jp": "いいや、もう一度た゛け考え直した方か゛いいかも知れない。",
+   "en": "",
+   "refs": [
+    "scene50:29"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m01012",
+   "kind": "msg",
+   "jp": "やはり、タ゛メた゛・・・・・・いさ゛梢を目の前にすると、せっかくの決心か゛にふ゛ってしまった。",
+   "en": "",
+   "refs": [
+    "scene51:0"
+   ],
+   "max_cells": 47
+  },
+  {
+   "id": "m01013",
+   "kind": "msg",
+   "jp": "「と゛うしたのお兄ちゃん、学校にまて゛来たりして・・・・・・？」",
+   "en": "",
+   "refs": [
+    "scene51:1"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m01014",
+   "kind": "msg",
+   "jp": "「・・・お兄ちゃん、明日の国際ハ゛イオリン・コンクールには、来てもらえるの？」",
+   "en": "",
+   "refs": [
+    "scene51:2"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m01015",
+   "kind": "msg",
+   "jp": "『・・・・・・・・・行くよ』",
+   "en": "",
+   "refs": [
+    "scene51:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m01016",
+   "kind": "msg",
+   "jp": "「ウフッ・・・ならわたし、いっは゜いか゛んは゛らなくちゃ！」",
+   "en": "",
+   "refs": [
+    "scene51:4"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m01017",
+   "kind": "msg",
+   "jp": "＜よく日、日曜日・・・・・・＞",
+   "en": "",
+   "refs": [
+    "scene52:0"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m01018",
+   "kind": "msg",
+   "jp": "『つき゛は、とうとう梢の出番た゛な・・・か゛んは゛りなさい！』",
+   "en": "",
+   "refs": [
+    "scene52:1"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m01019",
+   "kind": "msg",
+   "jp": "「{A1}はい{A2}{A3}、{A1}お兄ちゃん{A2}{A3}」{A3}",
+   "en": "",
+   "refs": [
+    "scene52:2"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m01020",
+   "kind": "msg",
+   "jp": "『梢{A3}・・・俺は、これから出かけなくてはならない』",
+   "en": "",
+   "refs": [
+    "scene52:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m01021",
+   "kind": "msg",
+   "jp": "「{A1}えっ{A2}{A3}、{A3}{A1}た゛って{A2}{A3}・・・・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene53:0"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m01022",
+   "kind": "msg",
+   "jp": "『すく゛に帰って来るさ・・・たったの五年た゛から』",
+   "en": "",
+   "refs": [
+    "scene53:1"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m01023",
+   "kind": "msg",
+   "jp": "「ー{A1}お兄ちゃん{A2}{A3}！{A3}？」",
+   "en": "",
+   "refs": [
+    "scene53:2"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m01024",
+   "kind": "msg",
+   "jp": "『し゛ゃあ、行って来るよ・・・・・・コンクール、か゛んは゛るんた゛そ゛』{A3}",
+   "en": "",
+   "refs": [
+    "scene53:3"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m01025",
+   "kind": "msg",
+   "jp": "「＜柳沢梢さん、出番て゛す！＞」",
+   "en": "",
+   "refs": [
+    "scene53:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m01026",
+   "kind": "msg",
+   "jp": "『・・・・・・さぁ、梢』{A3}{A3}",
+   "en": "",
+   "refs": [
+    "scene53:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m01027",
+   "kind": "msg",
+   "jp": "「{A1}お兄ちゃん{A2}{A3}・・・・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene53:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m01028",
+   "kind": "msg",
+   "jp": "「（これか゛、お兄ちゃん・・・あなたの、わたしへの愛なのて゛すか？）」",
+   "en": "",
+   "refs": [
+    "scene54:0"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m01029",
+   "kind": "msg",
+   "jp": "「（・・・・・・お兄ちゃん・・・）」",
+   "en": "",
+   "refs": [
+    "scene54:1"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m01030",
+   "kind": "msg",
+   "jp": "＜ＴＨＥ・ＥＮＤ＞{A6}",
+   "en": "",
+   "refs": [
+    "scene54:2",
+    "scene59:4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m01031",
+   "kind": "msg",
+   "jp": "「お、お兄ちゃん、と゛うしてこんな所に・・・・・・？」",
+   "en": "",
+   "refs": [
+    "scene55:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m01032",
+   "kind": "msg",
+   "jp": "「はぁ・・・くっ、あぁぁん・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene55:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m01033",
+   "kind": "msg",
+   "jp": "『梢、おいて゛・・・・・・』",
+   "en": "",
+   "refs": [
+    "scene56:0"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m01034",
+   "kind": "msg",
+   "jp": "「・・・・・・えっ？」",
+   "en": "",
+   "refs": [
+    "scene56:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m01035",
+   "kind": "msg",
+   "jp": "『お前には、俺た゛けしかあけ゛られないけれと゛・・・』",
+   "en": "",
+   "refs": [
+    "scene56:2"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m01036",
+   "kind": "msg",
+   "jp": "「・・・はい・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene56:3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m01037",
+   "kind": "msg",
+   "jp": "{A3}「{A1}お帰りなさい{A2}・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene59:0"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m01038",
+   "kind": "msg",
+   "jp": "「・・・{A1}はい{A2}{A3}？」",
+   "en": "",
+   "refs": [
+    "scene59:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m01039",
+   "kind": "msg",
+   "jp": "「{A1}いま{A2}{A3}、{A1}とてもしあわせて゛す{A2}{A3}・・・」",
+   "en": "",
+   "refs": [
+    "scene59:2"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m01040",
+   "kind": "msg",
+   "jp": "「{A1}それは{A2}{A3}{A3}・・・{A1}あなたか゛いるから{A2}{A3}・・・・・・」",
+   "en": "",
+   "refs": [
+    "scene59:3"
+   ],
+   "max_cells": 23
+  }
+ ]
+}

@@ -124182,7 +124182,14 @@
      "path": "Tenshi-tachi no Gogo II Bangaihen\\Tenshi-tachi no Gogo II Bangaihen [FD h01]\\Tenshi-tachi no Gogo II Bangaihen (Disk B).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_ii_bangaihen (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_ii_bangaihen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17827 (erotic content)",
    "engine": "unlisted",
@@ -124190,7 +124197,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo III - Ribbon",

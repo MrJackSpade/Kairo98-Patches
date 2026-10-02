@@ -278,6 +278,31 @@ FONT12_DISPLAY = """## English display (`pc98tl/jast_font12.py`)
   load."""
 
 
+MENU12_DISPLAY = """## English display (`pc98tl/jast_menu12.py`)
+
+* The game draws every character itself from its own font of 12x10 glyphs
+  (text is one glyph number a byte).  English is two letters to a cell: a
+  letter pair is two bytes, a first byte from glyph numbers that are blank
+  and unused by the script, and a second byte numbering the pair.  The
+  message draw's and the menu draw's glyph lookups go to helpers that build
+  the pair's glyph from a 6x10 font (`pc98tl/font6x10.py`) and hand it to
+  the game's own draw; Japanese draws as before.
+* Message lines are padded with blank glyphs to the window edge, where the
+  engine wraps.  The main box is 3 lines of 40 cells that scroll; its
+  scroll goes through a pager, which waits for a key before a scroll once 3
+  lines of the message have been shown.  The opening's one-line window wraps
+  at its frame, and a wrap there waits for a key, blanks the line and goes
+  on in place.
+* The helpers and the 6x10 font sit in the unused tail of the font's third
+  bank, which the boot already loads.  The nouns move above the engine (the
+  boot's engine load grows to cover them); the verbs, system messages and
+  the save and load prompts are rebuilt in the word block, which the boot's
+  word load reads over the old system messages.
+* Scenes are rebuilt with the English; one that outgrows its sectors moves to
+  free sectors of the scene disk.
+* The title screen's Japanese is rewritten in its text-layer image."""
+
+
 def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -356,6 +381,17 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "* Typed commands: the word tables get the English words, typed and shown with the "
                 "game's own A-Z glyphs, and the key tables give capitals for the letter keys.",
                 "* The title screen's Japanese is rewritten in its text-layer image."]
+    elif cfg["encoding"] == "jast_menu12":
+        scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
+        out += ["JAST's menu engine on self-booting 2HD floppies (D88, 256-byte sectors, records 1-19 "
+                "of each track side), a sibling of Tenshi II - Minako's engine with commands picked from "
+                "menus.  The boot sector loads the engine, the word block and the font block (system "
+                "messages, then the font), and draws the title screen (the sound setup) from a "
+                "run-length text-layer image.  %d scenes on the second disk are found through a "
+                "directory on its first track; each is a header, a command table, the messages (found "
+                "by count) and the menus (lists of word numbers).  `pc98tl/jast_menu12.py` documents "
+                "the layout." % len(scenes),
+                "", MENU12_DISPLAY]
     else:
         out += ["JAST's scene engine (`%s/%s`): %d scene files (`*.OVL`) holding text and scene code "
                 "in one stream (`pc98tl/jast_ovl.py` documents the format)." % (cfg["game_dir"], cfg["engine"], len(files)),
@@ -406,6 +442,28 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "next to the patched images instead of a file on the disk.",
                 "", "## Not handled", "",
                 "* Text drawn into the artwork (the title logo, pictures)."]
+    elif cfg["encoding"] == "jast_menu12":
+        out += ["", "## Limits", "",
+                "* Messages (`m` ids: scene text, the system messages and the engine's save and load "
+                "prompts): `{A<n>}` are the talking face's animation controls (not drawn; keep them), "
+                "`\\n` starts a new line.  Letters and `.,'!?-` are drawn in pairs; digits and "
+                "characters in the game's font (Japanese, brackets) use its own glyphs; anything else "
+                "shows as `?`.",
+                "* The main box is 40 cells a line and pages by itself (any number of lines).  The "
+                "opening's one-line window (the messages of scenes %s and the load prompt) is %d cells; "
+                "longer messages there page a line at a time." % (
+                    ", ".join(str(n) for n in cfg.get("opening_scenes", [])), cfg.get("opening_cols", 47)),
+                "* Menu words (`w` ids: `verb:` and `noun:` refs): 8 cells (16 letters); longer ones "
+                "are cut and reported.",
+                "* Title screen (`t` ids): the cells of the Japanese (`max_cells`), two letters each.",
+                "* A rebuilt scene must fit the engine's 4 KB scene buffer, the nouns the space above "
+                "the engine (2816 bytes) and the verbs, system messages and prompts the word block "
+                "(2560 bytes); the patcher refuses a build that breaks one.  Grown scenes move to free "
+                "sectors of their disk and their directory entry is updated.",
+                "* The disks have no file system, so the machine-translation notice is `MTL_NOTE.TXT` "
+                "next to the patched images instead of a file on the disk.",
+                "", "## Not handled", "",
+                "* Text drawn into the artwork (the title logo, pictures)."]
     else:
         out += ["", "## Limits", "",
                 "* Speaker lines are written `Name: text` (the name up to 14 columns, or a `%nnn` "
@@ -448,7 +506,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12"):
+        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

@@ -500,6 +500,31 @@ def _title(game):
             "c_at": c_at, "a_at": a_at, "end": end}
 
 
+def write_title(game, by_ref):
+    """Rewrite the title screen's Japanese runs ("title:<row>:<col>" refs)
+    in its run-length text-layer image on the boot disk; ASCII only, cut to
+    the run's cells."""
+    ti = _title(game)
+    if not ti:
+        return
+    codes = list(ti["codes"])
+    for row, col, n, _text in title_segments(ti["codes"]):
+        v = by_ref.get("title:%d:%d" % (row, col))
+        if v is None:
+            continue
+        s = "".join(c if 0x20 <= ord(c) < 0x7F else "?" for c in v)[:n].ljust(n)
+        for i, ch in enumerate(s):
+            codes[row * 80 + col + i] = bytes([ord(ch), 0])
+    cdata = rle_encode(codes)
+    adata = rle_encode(ti["attrs"])
+    room_c = ti["a_at"] - ti["c_at"]
+    if len(cdata) > room_c or ti["a_at"] + len(adata) > len(ti["data"]):
+        raise ValueError("title screen does not fit its sectors")
+    data = bytearray(ti["data"])
+    data[ti["c_at"]:ti["c_at"] + room_c] = cdata.ljust(room_c, b"\0")
+    game.disks[0].write(ti["sector"], bytes(data))
+
+
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     game = Game(_images(cfg, src))
@@ -878,24 +903,7 @@ def run_patch(here, src, dst, mode="en"):
     boot[at + 5], boot[at + 6] = 1, start
     struct.pack_into("<H", boot, at + 8, cave)
     # title screen
-    ti = _title(game)
-    if ti:
-        codes = list(ti["codes"])
-        for row, col, n, _text in title_segments(ti["codes"]):
-            v = by_ref.get("title:%d:%d" % (row, col))
-            if v is None:
-                continue
-            s = "".join(c if 0x20 <= ord(c) < 0x7F else "?" for c in v)[:n].ljust(n)
-            for i, ch in enumerate(s):
-                codes[row * 80 + col + i] = bytes([ord(ch), 0])
-        cdata = rle_encode(codes)
-        adata = rle_encode(ti["attrs"])
-        room_c = ti["a_at"] - ti["c_at"]
-        if len(cdata) > room_c or ti["a_at"] + len(adata) > len(ti["data"]):
-            raise ValueError("title screen does not fit its sectors")
-        data = bytearray(ti["data"])
-        data[ti["c_at"]:ti["c_at"] + room_c] = cdata.ljust(room_c, b"\0")
-        a.write(ti["sector"], bytes(data))
+    write_title(game, by_ref)
     a.write(0, bytes(boot))
     with open(dst, "wb") as f:
         f.write(a.raw)

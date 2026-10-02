@@ -759,5 +759,31 @@
    "Typed command to the next scene (scene 2 loaded from the repacked second disk)",
    "OK: new scene's picture, its messages half-width filler inside the frame"
   ]
+ ],
+ "tenshi_ii_bangaihen": [
+  [
+   "Title screen (sound setup, text-layer image)",
+   "OK: filler in the Japanese's cells, boxes kept"
+  ],
+  [
+   "Opening's one-line window",
+   "OK: half-width letter-pair filler inside the frame; a long line waits for a key, then goes on in the cleared line (checked with a 3-page test line)"
+  ],
+  [
+   "Main message box",
+   "OK: filler wrapped to 40 cells inside the frame; a 7-line test message pages 1-3, 4-6, then 5-7"
+  ],
+  [
+   "Verb and noun menus",
+   "OK: 16-letter filler in the 8-cell menu entries; cursor and noun lists work"
+  ],
+  [
+   "Scenes past the opening (night exterior, living room; grown scenes moved on the scene disk)",
+   "OK"
+  ],
+  [
+   "Save and load prompts",
+   "not yet seen"
+  ]
  ]
 }
