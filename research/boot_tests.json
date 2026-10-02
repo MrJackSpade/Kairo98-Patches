@@ -748,8 +748,8 @@
    "OK: half-width letter-pair filler inside the frame"
   ],
   [
-   "Long message: waits at a full box, next lines after a key",
-   "OK"
+   "Long message (7-line test): waits before a line would scroll out unread",
+   "OK: line 1, then lines 2-3, 4-5, 6-7, each pair after a key"
   ],
   [
    "Typed command (capitals from the letter keys)",

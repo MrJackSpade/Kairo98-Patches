@@ -20,7 +20,9 @@ JAST's typed-command engine on self-booting 2HD floppies (D88, 256-byte sectors,
   draws as before.
 * Lines are padded with blank glyphs to the box edge (46 columns, 47 on the
   first line), where the engine wraps; the line scrolls in the message draw
-  go through a pager: every third new line of a message waits for a key.
+  go through a pager.  The box shows 2 lines and starts each message empty:
+  the pager waits for a key before a line would scroll out unread (at the
+  message's first scroll, then every second one).
 * The helpers, the 6x10 font and the moved system messages are one new
   block, loaded from a free track of the boot disk by the boot's own table
   load.
@@ -53,7 +55,7 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Title screen (sound setup, text-layer image) | OK: filler in the Japanese's cells, boxes kept |
 | Opening scene, message window | OK: half-width letter-pair filler inside the frame |
-| Long message: waits at a full box, next lines after a key | OK |
+| Long message (7-line test): waits before a line would scroll out unread | OK: line 1, then lines 2-3, 4-5, 6-7, each pair after a key |
 | Typed command (capitals from the letter keys) | OK: typed letters shown with the game's A-Z glyphs |
 | Typed command to the next scene (scene 2 loaded from the repacked second disk) | OK: new scene's picture, its messages half-width filler inside the frame |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

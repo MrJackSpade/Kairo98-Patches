@@ -272,7 +272,9 @@ FONT12_DISPLAY = """## English display (`pc98tl/jast_font12.py`)
   draws as before.
 * Lines are padded with blank glyphs to the box edge (46 columns, 47 on the
   first line), where the engine wraps; the line scrolls in the message draw
-  go through a pager: every third new line of a message waits for a key.
+  go through a pager.  The box shows 2 lines and starts each message empty:
+  the pager waits for a key before a line would scroll out unread (at the
+  message's first scroll, then every second one).
 * The helpers, the 6x10 font and the moved system messages are one new
   block, loaded from a free track of the boot disk by the boot's own table
   load."""

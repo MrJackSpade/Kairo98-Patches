@@ -42,8 +42,11 @@ Patch.
   every other glyph is drawn as before.  Digits and brackets use the
   game's own glyphs.
 * Lines are padded with blank glyphs to the box edge, where the engine
-  wraps; the line scrolls in the message draw go through a pager (every
-  third new line of a message waits for a key).
+  wraps; the line scrolls in the message draw go through a pager.  The box
+  shows box_lines (2) lines and starts each message empty, so the first
+  lines need no scroll: the pager waits for a key at the message's first
+  scroll and then at every box_lines-th, before a line would scroll out
+  unread.
 * Scenes are rebuilt with the English and written back to back on their
   disk using all 26 records of a track (the engine's reader now takes 26 a
   track on that disk and still 19 on the boot disk, which it also reads),
@@ -58,7 +61,7 @@ Patch.
 * The title screen's Japanese is rewritten in the text-layer image.
 
 game.json: {"title", "key", "image", "encoding": "jast_font12",
-            "floppies": {"B": "<disk 2>"}, "box_lines" (3), "dipsw", "boot_steps"}
+            "floppies": {"B": "<disk 2>"}, "box_lines" (2), "dipsw", "boot_steps"}
 Refs: "scene<n>:<message>", "sys:<n>", "verb:<i>", "noun:<i>", "title:<row>:<col>".
 """
 import json
@@ -703,7 +706,7 @@ HELPERS = """
         CALLN 0x{scroll:x}
         .byte 0xc3
     reset:
-        mov byte ptr cs:[{cnt}], 0
+        mov byte ptr cs:[{cnt}], {lines} - 1
         CALLN 0x{draw:x}
         .byte 0xc3
     spt:
@@ -872,7 +875,7 @@ def run_patch(here, src, dst, mode="en"):
                 game.mem[at + WORD_LEN * i:at + WORD_LEN * (i + 1)] = v.ljust(WORD_LEN, b" ")
     warnings += _word_clashes(game, {r: e["id"] for e in doc["strings"] if e["kind"] == "word"
                                      for r in e["refs"] if r in by_ref})
-    block = patch_engine(game, bytes(sys_block), cfg.get("box_lines", 3))
+    block = patch_engine(game, bytes(sys_block), cfg.get("box_lines", 2))
     # boot disk: engine back in place, the new block (cave + word tables) on a free track
     a = game.disks[0]
     eng = game.engine
