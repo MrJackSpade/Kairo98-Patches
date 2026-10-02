@@ -1,0 +1,26 @@
+{
+ "jast_remaining": {
+  "checked": "2026-10-02",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "Jast.zip/Tenshi-tachi no Gogo",
+    "title": "Tenshi-tachi no Gogo",
+    "vndb": [
+     "v8769",
+     "v8770",
+     "v8771"
+    ],
+    "votes": 23
+   },
+   {
+    "key": "Jast.zip/Tenshi-tachi no Gogo Bangaihen",
+    "title": "Tenshi-tachi no Gogo Bangaihen",
+    "vndb": [
+     "v8769"
+    ],
+    "votes": 13
+   }
+  ]
+ }
+}
