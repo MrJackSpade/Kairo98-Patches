@@ -754,6 +754,10 @@
   [
    "Typed command (capitals from the letter keys)",
    "OK: typed letters shown with the game's A-Z glyphs"
+  ],
+  [
+   "Typed command to the next scene (scene 2 loaded from the repacked second disk)",
+   "OK: new scene's picture, its messages half-width filler inside the frame"
   ]
  ]
 }

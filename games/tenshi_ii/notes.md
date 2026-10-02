@@ -38,6 +38,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 * Messages (`m` ids, scene text and the system messages): `\n` starts a new line.  Letters and `.,'!?-` are drawn in pairs; digits and characters in the game's font (Japanese, brackets) use its own glyphs; anything else shows as `?`.
 * Command words (`w` ids: `verb:` and `noun:` refs): up to 5 capital letters or digits, typed by the player; longer ones are cut and reported.
+* The engine finds each command word anywhere in the typed line, trying the table's words in order, so a word must not contain an earlier word of its own table or a word of the other table (`SEE` inside `SEEK` makes `SEEK` read as `SEE`); the patcher reports each such pair by string id.
 * Title screen (`t` ids): the cells of the Japanese (`max_cells`), two letters each.
 * A rebuilt scene must fit the engine's 32 KB scene buffer, and all scenes the second disk; the patcher refuses a build that breaks either.
 * The disks have no file system, so the machine-translation notice is `MTL_NOTE.TXT` next to the patched images instead of a file on the disk.
@@ -54,4 +55,5 @@ Translation and the content classification (♥) are done by the translation mod
 | Opening scene, message window | OK: half-width letter-pair filler inside the frame |
 | Long message: waits at a full box, next lines after a key | OK |
 | Typed command (capitals from the letter keys) | OK: typed letters shown with the game's A-Z glyphs |
+| Typed command to the next scene (scene 2 loaded from the repacked second disk) | OK: new scene's picture, its messages half-width filler inside the frame |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

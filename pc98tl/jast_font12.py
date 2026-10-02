@@ -20,12 +20,17 @@ track side, "sector n" below counts only those):
   in the engine: half (1 = tracks from 1, 2 = tracks from 78), track,
   record, count and two bytes the engine keeps.  A scene file is the
   picture (6-byte header, then three planes of run-length words), a spare
-  byte, a command table (count, then 5 bytes each) and the messages, found
-  by count.  Scenes load at 1000:8000.
+  byte, a command table (count, then 5 bytes each: verb, noun, reply
+  message, next scene, event routine) and the messages, found by count.
+  Scenes load at 1000:8000.  After a command the engine runs the event
+  routine when it's nonzero (a jump table in the engine); otherwise it shows
+  the reply, and loads the next scene when that differs from the current one.
 * The player types commands: the words are looked up in two tables of 5-byte
-  entries (verbs, nouns: the first glyphs of a word, space-padded, matched
-  as a prefix); the position is what the scripts use.  The keys are turned
-  into glyphs through two tables (plain, shifted) in the engine.
+  entries (verbs, nouns: the first glyphs of a word, space-padded).  For each
+  entry in table order the engine searches the whole typed line, anywhere in
+  it, and the first entry found wins; its 1-based position is what the
+  command tables use.  The keys are turned into glyphs through two tables
+  (plain, shifted) in the engine.
 
 Patch.
 * English is two letters to a cell.  A letter pair is two bytes: a first
@@ -453,6 +458,32 @@ def _words(mem, at, count):
         yield i, raw
 
 
+def _word_clashes(game, ids):
+    """Warnings for English command words the engine can't tell apart: it
+    finds each table's words anywhere in the typed line, first entry first,
+    so a word holding an earlier word of its table, or a word of the other
+    table, is read as that word.  ids: {"verb:<i>": string id} of the
+    English words; clashes between two Japanese words are the game's own."""
+    tables = {}
+    for name, at in (("verb", game.verbs_at), ("noun", game.nouns_at)):
+        limit = game.input_at if name == "verb" else game.sys_at
+        tables[name] = [(i, raw.split(b" ")[0].split(b"\0")[0])
+                        for i, raw in _words(game.mem, at, min(255, (limit - at) // WORD_LEN))]
+    out = []
+    for name, words in tables.items():
+        other = "noun" if name == "verb" else "verb"
+        for i, w in words:
+            # an earlier word of the same table, or a different word of the other
+            rivals = [(name, j, x) for j, x in words[:i]] + \
+                     [(other, j, x) for j, x in tables[other] if x != w]
+            for kind, j, x in rivals:
+                a, b = "%s:%d" % (name, i), "%s:%d" % (kind, j)
+                if x and w and x in w and (a in ids or b in ids):
+                    out.append("%s (%s) contains %s (%s): typing it is read as that %s"
+                               % (ids.get(a, a), a, ids.get(b, b), b, kind))
+    return out
+
+
 def _title(game):
     t, pl, te = game.title, game.title_planes, game.title_end
     if not (t and pl and te):
@@ -749,7 +780,7 @@ def run_patch(here, src, dst, mode="en"):
         text = e["en"]
         if mode == "pseudo":
             if e["kind"] == "word":
-                text = "W%d" % int(e["id"][1:])
+                text = "W%03d" % int(e["id"][1:])      # fixed width: the engine matches words anywhere in the typed line
             elif e["kind"] == "title":
                 text = pseudo(e["id"], 2 * e["max_cells"], 1.0)[:2 * e["max_cells"]]
             else:
@@ -814,6 +845,8 @@ def run_patch(here, src, dst, mode="en"):
             v = by_ref.get("%s:%d" % (name, i))
             if v is not None:
                 game.mem[at + WORD_LEN * i:at + WORD_LEN * (i + 1)] = v.ljust(WORD_LEN, b" ")
+    warnings += _word_clashes(game, {r: e["id"] for e in doc["strings"] if e["kind"] == "word"
+                                     for r in e["refs"] if r in by_ref})
     block = patch_engine(game, bytes(sys_block), cfg.get("box_lines", 3))
     # boot disk: engine back in place, the new block (cave + word tables) on a free track
     a = game.disks[0]

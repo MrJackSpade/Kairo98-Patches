@@ -395,6 +395,10 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "(Japanese, brackets) use its own glyphs; anything else shows as `?`.",
                 "* Command words (`w` ids: `verb:` and `noun:` refs): up to 5 capital letters or "
                 "digits, typed by the player; longer ones are cut and reported.",
+                "* The engine finds each command word anywhere in the typed line, trying the table's "
+                "words in order, so a word must not contain an earlier word of its own table or a word "
+                "of the other table (`SEE` inside `SEEK` makes `SEEK` read as `SEE`); the patcher "
+                "reports each such pair by string id.",
                 "* Title screen (`t` ids): the cells of the Japanese (`max_cells`), two letters each.",
                 "* A rebuilt scene must fit the engine's 32 KB scene buffer, and all scenes the second "
                 "disk; the patcher refuses a build that breaks either.",

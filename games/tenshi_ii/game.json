@@ -8,5 +8,5 @@
  },
  "box_lines": 3,
  "dipsw": "3e f3 7b",
- "boot_steps": "20:shot,5:enter,5:shot,4:enter,5:shot,4:enter,5:shot,1:key=77,1:key=73,1:shot,1:enter,4:shot"
+ "boot_steps": "20:shot,5:enter,5:enter,4:enter,5:shot,1:key=87,1:key=48,1:key=48,1:key=51,1:key=32,1:key=87,1:key=49,1:key=50,1:key=56,1:shot,1:enter,5:shot,3:enter,4:shot,3:enter,5:shot"
 }
