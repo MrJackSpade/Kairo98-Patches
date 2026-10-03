@@ -727,5 +727,13 @@
    "url": "https://vndb.org/r160191",
    "source": "VNDB"
   }
+ ],
+ "FairytaleXShitei.zip/Saori - Bishoujo-tachi no Yakata": [
+  {
+   "label": "This repo: games/saori (patcher working, machine translation in progress)",
+   "url": "../games/saori/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

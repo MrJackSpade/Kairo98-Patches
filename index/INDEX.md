@@ -219,6 +219,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Jinmon Yuugi | [This repo: games/jinmon_yuugi (patcher working, machine translation in progress)](../games/jinmon_yuugi/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
+| Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
@@ -2278,7 +2279,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 - ♥ Dragon City X Shitei [FD extras] `adv98v`
 - ♥ Kounai Shasei [FD extras] `adv98v`
-- ♥ Saori - Bishoujo-tachi no Yakata [FD HD] `adv98v`
+- ♥ Saori - Bishoujo-tachi no Yakata [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Falcom (`Falcom.zip`)
 

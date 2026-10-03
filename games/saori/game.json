@@ -1,0 +1,12 @@
+{
+ "title": "Saori - Bishoujo-tachi no Yakata",
+ "key": "FairytaleXShitei.zip/Saori - Bishoujo-tachi no Yakata",
+ "image": "Saori - Bishoujo-tachi no Yakata\\Saori - Bishoujo-tachi no Yakata [HD]\\Saori - Bishoujo-tachi no Yakata.hdi",
+ "encoding": "adv98v",
+ "game_dir": "SAORI",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "wait": "",
+ "page_break": "8190",
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,4:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

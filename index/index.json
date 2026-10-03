@@ -84841,7 +84841,14 @@
      "path": "Saori - Bishoujo-tachi no Yakata\\Saori - Bishoujo-tachi no Yakata [HD]\\Saori - Bishoujo-tachi no Yakata.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/saori (patcher working, machine translation in progress)",
+     "url": "../games/saori/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18236 (erotic content)",
    "engine": "adv98v",
@@ -84849,7 +84856,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Falcom.zip/[Falcom materials]",

@@ -965,5 +965,23 @@
    "Save/load, later chapters, endings",
    "not yet seen"
   ]
+ ],
+ "saori": [
+  [
+   "Start menu",
+   "OK: full-width filler items (this old engine takes Shift-JIS only in menus)"
+  ],
+  [
+   "Opening scene messages",
+   "OK: filler wrapped to the one-line box (63 columns), each line its own page with the key wait"
+  ],
+  [
+   "First in-game menu and a choice",
+   "OK: full-width filler items; the choice goes on to the next messages"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

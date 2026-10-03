@@ -642,6 +642,9 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("* The hero's name is printed between two message runs: the run before it ends where "
                    "the name starts (end it with a space if one should come before the name), the run "
                    "after it starts right after the name.")
+    if cfg.get("page_break") == "8190":
+        out.append("* This old build ends each message with a key wait (`81 90`) that clears the box, so "
+                   "pages are split with it; in its one-line box a message pages a line at a time.")
     if cfg.get("menu_fullwidth"):
         out.append("* This engine draws menus from Shift-JIS only (an ASCII string in a menu crashes it), "
                    "so menu items are written in full-width letters: `max_cells` letters each, cut and "

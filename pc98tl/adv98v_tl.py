@@ -47,7 +47,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             the startup script sets, in force where a script sets none),
             "wait" (hex of the wait put before a page's message end, ""
             where the end procedure waits itself; default D1 1 3 0, which
-            the oldest engines read differently), "boot_steps"}
+            the oldest engines read differently), "page_break" (hex of the
+            break between pages where no file has a message end of its
+            own: the oldest engines' 81 90, a key wait that clears the
+            box), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -624,18 +627,21 @@ def frame_size(frame):
 
 
 def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None,
-          max_rows=None, fullwidth=False):
+          max_rows=None, fullwidth=False, pages_ok=False):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
     it on its line; down: the lines what follows moves on before the next
     text (which must stay inside the frame); max_cols, max_rows: a
     narrower width and fewer lines than the frame's to keep to;
-    fullwidth: menu items written as full-width characters (older
+    pages_ok: a message in a one-line frame that ends with a key wait
+    or the message end, so it pages a line at a time (else it keeps its
+    Japanese width: a prompt with a field after it); fullwidth: menu
+    items written as full-width characters (older
     engines draw a menu from Shift-JIS only, and crash on an ASCII
     string in one)."""
     size = frame_size(frame)
-    if kind in ("item", "inline", "label") or not size or size[1] == 1:
+    if kind in ("item", "inline", "label") or not size or (size[1] == 1 and not (pages_ok and brk)):
         # text in a one-line frame often has more drawn after it on the
         # line (an input field, numbers), so it keeps its Japanese width
         # (a label placed on the screen, too)
@@ -707,7 +713,9 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
     us = units(data, toks, frames, default_frame)
-    starts = [_start(data, toks, i, proc, insert, effects or {}) for i, _j, _k, _f in us]
+    # the oldest engines' key wait clears the box: a page end
+    clears = fallback == KEY_WAIT
+    starts = [_start(data, toks, i, proc, insert, effects or {}, clears) for i, _j, _k, _f in us]
     # a page break: a wait and the message-end procedure, or the file's
     # own message end where it has none
     brk = (wait + proc) if proc else inline_end(data, toks, us, wait) or fallback
@@ -724,7 +732,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         start = ((end[0] + down, col) if down else (end[0], end[1] + col)) if cont and end else (down, col)
         # room for what is printed after it on its line (a name, an
         # ellipsis), and the lines that moves on before more text
-        reserve, down, follows = _after(data, toks, j, proc, insert, effects or {})
+        reserve, down, follows = _after(data, toks, j, proc, insert, effects or {}, clears)
         down = down if follows else 0
         s, e = toks[i][1], toks[j - 1][2]
         # a question with a menu after it keeps to its Japanese lines'
@@ -745,7 +753,8 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
             else:
                 bkind = "label"
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
-                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth)
+                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
+                         _waits_after(data, toks, j, proc))
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -859,7 +868,7 @@ def _call_num(call):
     return av._num(call, 1) if len(call) > 1 else None
 
 
-def _start(data, toks, i, proc, insert, effects):
+def _start(data, toks, i, proc, insert, effects, clears=False):
     """Where a message starts: (continues, lines, column, need, located).  Looking
     back from the message to the last text, or to a page end or frame
     reset (the message-end procedure, A6, AA, or a procedure that does
@@ -881,7 +890,7 @@ def _start(data, toks, i, proc, insert, effects):
     starts lines down a fresh page.  located: (x, y) of a cursor
     placement (A7 x y) that comes first: the text is placed on the screen
     there."""
-    gap, stop = _gap(data, toks, i, -1, proc, insert, effects)
+    gap, stop = _gap(data, toks, i, -1, proc, insert, effects, clears)
     lines, cols, need = _layout(data, gap, insert, effects)
     located = None
     for y, (k, s, _e) in enumerate(gap):
@@ -889,6 +898,20 @@ def _start(data, toks, i, proc, insert, effects):
             nums = [t for t in gap[y + 1:y + 3] if t[0] == "num"]
             located = tuple(_num(data, t[1]) for t in nums) if len(nums) == 2 else (None, None)
     return stop == "text", lines, cols, need, located
+
+
+def _waits_after(data, toks, j, proc):
+    """Whether a text run is followed by a key wait (81 90) or the
+    message-end procedure call."""
+    if j >= len(toks):
+        return False
+    k, s, e = toks[j]
+    if k == "ctrl" and bytes(data[s:e]) == b"\x81\x90":
+        return True
+    return bool(proc) and k == "cmd" and data[s] == 0xBA and j + 1 < len(toks) and         bytes(data[s:toks[j + 1][2]]) == proc
+
+
+KEY_WAIT = bytes([0x81, 0x90])
 
 
 def _menu_follows(data, toks, j):
@@ -911,24 +934,26 @@ def _line_cols(data, toks, i, j):
     return widest
 
 
-def _after(data, toks, j, proc, insert, effects):
+def _after(data, toks, j, proc, insert, effects, clears=False):
     """What follows a text run up to the next text or page end: (need,
     lines, text follows) as in _start, read forward."""
-    gap, stop = _gap(data, toks, j, 1, proc, insert, effects)
+    gap, stop = _gap(data, toks, j, 1, proc, insert, effects, clears)
     lines, _cols, need = _layout(data, gap, insert, effects)
     return need, lines, stop == "text" and not any(k == "cmd" and data[s] == 0xA7 for k, s, _e in gap)
 
 
-def _gap(data, toks, at, step, proc, insert, effects):
+def _gap(data, toks, at, step, proc, insert, effects, clears=False):
     """The tokens from at (back from before it, or on from it) to the
-    nearest text or page end: (tokens in order, "text"/"reset"/None)."""
+    nearest text or page end: (tokens in order, "text"/"reset"/None).
+    clears: a key wait (81 90) is a page end too."""
     gap, x, stop = [], at - 1 if step < 0 else at, None
     while 0 <= x < len(toks) and abs(x - at) <= 32:
         k, s, _e = toks[x]
         if k in TEXT:
             stop = "text"
             break
-        if k == "cmd" and data[s] in (0xA6, 0xAA, 0xAB):
+        if (k == "cmd" and data[s] in (0xA6, 0xAA, 0xAB)) or (k == "ctrl" and clears
+                                                               and bytes(data[s:_e]) == KEY_WAIT):
             stop = "reset"
             break
         if k == "cmd" and data[s] == 0xBA and x + 1 < len(toks) and toks[x + 1][0] == "num":
@@ -1045,6 +1070,8 @@ def run_patch(here, src, dst, mode="en"):
                 resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
     wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else WAIT
     game_break = wait + resets.most_common(1)[0][0] if resets else None
+    if "page_break" in cfg:
+        game_break = bytes.fromhex(cfg["page_break"])
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
