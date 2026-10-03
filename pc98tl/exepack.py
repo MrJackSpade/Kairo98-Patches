@@ -84,3 +84,92 @@ def unpack(exe):
     head += b"".join(struct.pack("<HH", o, s) for o, s in relocs)
     head = head.ljust(hdr_paras * 16, b"\0")
     return head + image
+
+
+def _commands(exe):
+    """(prefix, commands, long header): the length of the image's start
+    that the packed data holds as it is, then the commands for the rest,
+    lowest output first: [(start, end, "fill" | "copy", byte or bytes)]."""
+    hdr = struct.unpack_from("<14H", exe, 0)
+    img = exe[hdr[4] * 16:]
+    block = hdr[11] * 16
+    long_hdr = img[block + 16:block + 18] == SIGNATURE
+    dest_len = struct.unpack_from("<H", img, block + 12)[0]
+    packed = img[:block]
+    src = len(packed) - 1
+    while src >= 0 and packed[src] == 0xFF:
+        src -= 1
+    dst = dest_len * 16
+    cmds = []
+    while True:
+        cmd = packed[src]
+        count = (packed[src - 1] << 8) | packed[src - 2]
+        src -= 3
+        if cmd & 0xFE == 0xB0:
+            cmds.append((dst - count, dst, "fill", packed[src]))
+            src -= 1
+        else:
+            cmds.append((dst - count, dst, "copy", bytes(packed[src - count + 1:src + 1])))
+            src -= count
+        dst -= count
+        if cmd & 1:
+            break
+    # the image's start is the packed data's own start, left in place
+    if src + 1 != dst:
+        raise ValueError("EXEPACK: the packed data's start is not the image's")
+    return dst, list(reversed(cmds)), long_hdr
+
+
+def pack(orig, image):
+    """`orig` (an EXEPACK-packed program) with its unpacked load image
+    replaced by `image` (the same length): the original's commands are
+    kept where the bytes are unchanged, and those covering changed bytes
+    become copies (a fill split around them).  The unpacker, its
+    relocation table and the memory the program asks for stay as they
+    were.  The result is checked by unpacking it."""
+    hdr = list(struct.unpack_from("<14H", orig, 0))
+    base = hdr[4] * 16
+    img = orig[base:]
+    block = hdr[11] * 16
+    prefix, cmds, _ = _commands(orig)
+    out = []
+    for start, end, kind, val in cmds:
+        new = image[start:end]
+        if kind == "fill" and new == bytes([val]) * (end - start) or kind == "copy" and new == val:
+            out.append((start, end, kind, val))
+            continue
+        if kind == "copy":
+            out.append((start, end, "copy", new))
+            continue
+        # a fill with changed bytes: fill / copy / fill
+        changed = [i for i in range(end - start) if new[i] != val]
+        a, b = changed[0], changed[-1] + 1
+        if a:
+            out.append((start, start + a, "fill", val))
+        out.append((start + a, start + b, "copy", new[a:b]))
+        if b < end - start:
+            out.append((start + b, end, "fill", val))
+    data = bytearray(image[:prefix])
+    for n, (start, end, kind, val) in enumerate(out):
+        count = end - start
+        if count > 0xFFFF:
+            raise ValueError("EXEPACK: a command over 64 KB")
+        last = 1 if n == 0 else 0
+        if kind == "fill":
+            data += bytes([val, count & 0xFF, count >> 8, 0xB0 | last])
+        else:
+            data += val + bytes([count & 0xFF, count >> 8, 0xB2 | last])
+    while len(data) % 16:
+        data.append(0xFF)
+    stub = img[block:]
+    hdr[11] = len(data) // 16                       # the unpacker's segment
+    load_old = hdr[2] * 512 - (512 - hdr[1] if hdr[1] else 0) - base
+    load_new = len(data) + len(stub)
+    hdr[5] = max(0, hdr[5] - (load_new - load_old + 15) // 16)    # the same total memory
+    total = base + load_new
+    hdr[1], hdr[2] = total % 512, (total + 511) // 512
+    result = struct.pack("<14H", *hdr) + orig[28:base] + bytes(data) + stub
+    check = unpack(result)
+    if check[struct.unpack_from("<H", check, 8)[0] * 16:][:len(image)] != image:
+        raise ValueError("EXEPACK: the repacked program does not unpack to the image")
+    return result

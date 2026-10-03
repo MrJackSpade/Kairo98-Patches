@@ -1,0 +1,44 @@
+{
+ "title": "Cosmic Psycho",
+ "key": "CocktailSoft.zip/Cosmic Psycho",
+ "image": "Cosmic Psycho\\Cosmic Psycho [FD hd9]\\Cosmic Psycho (Disk A).d88",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "proc_slot": 102,
+ "proc_slots": 20,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Cosmic Psycho (Disk B).d88",
+   "Cosmic Psycho (Disk C).d88"
+  ],
+  "subdirs": true,
+  "skip": [
+   "MOUSE.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "boot_steps": "30:shot,4:enter,8:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

@@ -212,6 +212,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
+| Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
@@ -1537,7 +1538,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Can Can Bunny Superior [FD extras]
 - ♥ Cocktail Soft Zoukangou [FD] `adv98v`
 - ♥ Cocktail Soft Zoukangou 2 [FD HD] `adv98v`
-- ♥ Cosmic Psycho [FD] `adv98v`
+- ♥ Cosmic Psycho [FD] `adv98v` — *MTL (this repo)*
 - ♥ Custom Mate [FD HD extras] `adv98v`
 - ♥ Custom Mate 2 [FD HD extras] `adv98v`
 - ♥ Custom Mate 3 [FD HD extras] `adv98v`

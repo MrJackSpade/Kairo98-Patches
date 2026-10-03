@@ -206,7 +206,19 @@ def _copy_dir(fv, src_dir, vol, dst_dir):
         if e["is_dir"]:
             _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"])
         else:
-            vol.create(dst_dir + "/" + e["name"], fv.read(src_dir + "/" + e["name"]))
+            _put(vol, dst_dir + "/" + e["name"], fv.read(src_dir + "/" + e["name"]))
+
+
+def _put(vol, path, data):
+    """A file onto the hard disk; one already there (the same file on two
+    disks of a set) must be the same."""
+    try:
+        old = vol.read(path)
+    except FileNotFoundError:
+        vol.create(path, data)
+        return
+    if old != data:
+        raise SystemExit("%s differs between the disks; the set cannot be laid out on one disk" % path)
 
 
 def _hdd_install(cfg, src):
@@ -220,7 +232,8 @@ def _hdd_install(cfg, src):
     not installed], "run": [AUTOEXEC.BAT lines that start the game],
     "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces],
     "subdirs": true to copy the disks' folders too, same-named ones
-    merged}.
+    merged}.  dir "" installs into the root (an engine that names its
+    files from the drive's root).
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -230,7 +243,9 @@ def _hdd_install(cfg, src):
     for name in h.get("remove", []):
         vol.delete(name)
     d = h["dir"]
-    vol.mkdir(d)
+    if d:
+        vol.mkdir(d)
+    pre = d + "/" if d else ""
     skip = {n.upper() for n in h.get("skip", [])} | DOS_FILES
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
         fv = DiskImage(disk).volumes[0]
@@ -239,9 +254,9 @@ def _hdd_install(cfg, src):
                 continue
             if e["is_dir"]:
                 if h.get("subdirs"):
-                    _copy_dir(fv, e["name"], vol, d + "/" + e["name"])
+                    _copy_dir(fv, e["name"], vol, pre + e["name"])
                 continue
-            vol.create(d + "/" + e["name"], fv.read(e["name"]))
+            _put(vol, pre + e["name"], fv.read(e["name"]))
     auto = vol.read("AUTOEXEC.BAT").decode("cp932").split("\r\n")
     out, done = [], False
     for ln in auto:

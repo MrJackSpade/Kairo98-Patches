@@ -50983,7 +50983,14 @@
      "path": "Cosmic Psycho\\Cosmic Psycho [FD] [Set 1]\\Cosmic Psycho [Set 1] (Disk C).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cosmic_psycho (patcher working, machine translation in progress)",
+     "url": "../games/cosmic_psycho/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18752 (erotic content)",
    "engine": "adv98v",
@@ -50991,7 +50998,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Custom Mate",

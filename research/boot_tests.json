@@ -1107,5 +1107,27 @@
    "Command menus, save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "cosmic_psycho": [
+  [
+   "Floppy set laid out on a hard disk; start menu",
+   "OK: boots from the hard disk (disk-change waits skipped); menu items as half-width filler"
+  ],
+  [
+   "Timed opening (credits, narration)",
+   "OK: half-width filler, each page paced by the opening's own timed pause (it takes no keys)"
+  ],
+  [
+   "Dialogue in the one-line box (name, ellipsis inserts)",
+   "OK: name procedure, filler runs and ellipsis procedures on one line, paged a line at a time"
+  ],
+  [
+   "Title screen after the opening, first office scene",
+   "OK: reached; English drawn half-width; no memory error after scenes (the helper sits in the disk-check routines, not in a buffer)"
+  ],
+  [
+   "Command menus, save/load, later acts (disk B and C files), endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -783,5 +783,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Cosmic Psycho": [
+  {
+   "label": "This repo: games/cosmic_psycho (patcher working, machine translation in progress)",
+   "url": "../games/cosmic_psycho/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

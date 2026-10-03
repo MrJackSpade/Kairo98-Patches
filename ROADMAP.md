@@ -126,3 +126,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Doki Doki Vacation | adv98v (Adv98V 1.74, floppy set) | extracted | **Ready to translate** | works; eight floppies laid out on a hard disk, half-width ASCII strings, name tags and messages wrapped and paged | OK (see notes) |
 | Mayumi | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 3-line box, full-width menu items | OK (see notes) |
 | Will no Dengon | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 2-line box, full-width menu items | OK (see notes) |
+| Cosmic Psycho | adv98v (ADVH 1.53, floppy set) | extracted | **Ready to translate** | works; floppies laid out on a hard disk at the root, ADVH.EXE patched for half-width letters and repacked, disk-change waits skipped, one-line boxes paged | OK (see notes) |
