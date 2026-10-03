@@ -1341,5 +1341,27 @@
    "The other menu choices, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "dragon_eyes": [
+  [
+   "Opening (Ines' farewell), its three-item menu",
+   "OK: filler half-width in the box, wrapped between words; the menu's items at their places, the highlight on the first"
+  ],
+  [
+   "Intro pictures and the title screen menu",
+   "OK: messages page, the title menu's three filler items at their places"
+  ],
+  [
+   "Prologue (bath, the green beast, the cockpit and the video call)",
+   "OK: long filler messages over two lines, a key and the rest on the next page; pictures change with the story"
+  ],
+  [
+   "Mouse",
+   "With the base image's QMOUSE the game takes no click; the install loads the game's own MOUSE.SYS (CONFIG.SYS), which clicks work with. The run used Enter, which both pages and chooses"
+  ],
+  [
+   "Later chapters, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -907,5 +907,13 @@
    "url": "https://vndb.org/r160187",
    "source": "VNDB"
   }
+ ],
+ "GameTechnopolis.zip/Dragon Eyes": [
+  {
+   "label": "This repo: games/dragon_eyes (patcher working, machine translation in progress)",
+   "url": "../games/dragon_eyes/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -28,6 +28,7 @@ its own unpacker, pc98tl/exepack.py):
 Every site is found by its byte signature; a program that does not match
 is refused.
 """
+import re
 import struct
 
 from keystone import Ks, KS_ARCH_X86, KS_MODE_16
@@ -37,15 +38,16 @@ from .illusion_font import _asm
 
 # the text loop: cmp ax, 81A8h / jne draw / mov ax, [cursor x]
 LOOP_SIG = bytes.fromhex("3da881751fa1fdc2")
-# the disk-change command's wait loop (mov al, cs:[drive] / call read id / cmp al, cs:[want] / je done)
-DISK_SIG = bytes.fromhex("2ea0cb14e8a4002e3a06cc147411")
+# the disk-change command's wait loop (mov al, cs:[drive] / call read id / cmp al, cs:[want] / je done);
+# the variables' and the reader's addresses differ between the games' builds
+DISK_SIG = re.compile(rb"\x2e\xa0..\xe8..\x2e\x3a\x06..\x74", re.S)
 
 
 def _find_once(img, sig, what):
-    n = img.count(sig)
-    if n != 1:
-        raise SystemExit("ADVH.EXE: the %s signature is found %d times, not once" % (what, n))
-    return img.find(sig)
+    found = [m.start() for m in sig.finditer(img)] if isinstance(sig, re.Pattern) else [k for k in range(len(img)) if img.startswith(sig, k)]
+    if len(found) != 1:
+        raise SystemExit("ADVH.EXE: the %s signature is found %d times, not once" % (what, len(found)))
+    return found[0]
 
 
 def _cave(img, disk):

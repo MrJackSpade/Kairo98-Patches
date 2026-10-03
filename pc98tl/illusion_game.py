@@ -232,8 +232,10 @@ def _hdd_install(cfg, src):
     not installed], "run": [AUTOEXEC.BAT lines that start the game],
     "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces],
     "subdirs": true to copy the disks' folders too, same-named ones
-    merged}.  dir "" installs into the root (an engine that names its
-    files from the drive's root).
+    merged, "config_sys": [CONFIG.SYS lines put before its SHELL line: a
+    driver the game needs, such as its own mouse driver]}.  dir ""
+    installs into the root (an engine that names its files from the
+    drive's root).
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -267,6 +269,10 @@ def _hdd_install(cfg, src):
             continue
         out.append(ln)
     vol.write("AUTOEXEC.BAT", "\r\n".join(out).encode("cp932"))
+    if h.get("config_sys"):
+        conf = vol.read("CONFIG.SYS").decode("cp932").split("\r\n")
+        at = [k for k, ln in enumerate(conf) if ln.upper().startswith("SHELL=")][0]
+        vol.write("CONFIG.SYS", "\r\n".join(conf[:at] + h["config_sys"] + conf[at:]).encode("cp932"))
     return img, dict(cfg, game_dir=d)
 
 

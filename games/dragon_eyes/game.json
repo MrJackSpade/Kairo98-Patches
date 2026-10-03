@@ -1,0 +1,47 @@
+{
+ "title": "Dragon Eyes",
+ "key": "GameTechnopolis.zip/Dragon Eyes",
+ "image": "Dragon Eyes\\Dragon Eyes [FD hd9]\\Dragon Eyes (Disk A).d88",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "base_scripts": [
+  "000.MES"
+ ],
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Dragon Eyes (Disk B).d88",
+   "Dragon Eyes (Disk C).d88"
+  ],
+  "subdirs": true,
+  "skip": [],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "boot_steps": "30:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}
