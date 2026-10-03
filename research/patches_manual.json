@@ -751,5 +751,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Miho": [
+  {
+   "label": "This repo: games/miho (patcher working, machine translation in progress)",
+   "url": "../games/miho/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

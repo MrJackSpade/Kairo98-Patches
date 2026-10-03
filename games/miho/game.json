@@ -1,0 +1,9 @@
+{
+ "title": "Miho",
+ "key": "FairytaleRed-zone.zip/Miho",
+ "image": "Miho\\Miho [HD]\\Miho.hdi",
+ "encoding": "adv98v",
+ "game_dir": "MIHO",
+ "extraop": true,
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

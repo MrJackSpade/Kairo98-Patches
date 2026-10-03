@@ -813,17 +813,39 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
 
 def proc_frames(data, toks):
     """{number: frame} of the procedures a stream defines: the text frame
-    a procedure sets (the last A6 in the body), or None (so a definition
-    that sets none replaces one from another file that does)."""
+    a procedure sets (the last A6 in the body), ("call", [numbers]) when it
+    sets none itself but calls others (resolved by resolve_frames), or
+    None (so a definition that sets none replaces one from another file
+    that does)."""
     out = {}
     for pn, (bs, be) in procs(data, toks).items():
-        out[pn] = None
+        out[pn], calls = None, []
         for x, (k, s, _e) in enumerate(toks):
-            if bs <= s < be and k == "cmd" and data[s] == 0xA6:
+            if not bs <= s < be or k != "cmd":
+                continue
+            if data[s] == 0xA6:
                 nums = [t for t in toks[x + 1:x + 5] if t[0] == "num"]
                 if len(nums) == 4:
                     out[pn] = tuple(_num(data, t[1]) for t in nums)
+            elif data[s] == 0xBA and x + 1 < len(toks) and toks[x + 1][0] == "num":
+                calls.append(_num(data, toks[x + 1][1]))
+        if out[pn] is None and calls:
+            out[pn] = ("call", calls)
     return out
+
+
+def resolve_frames(frames):
+    """The frames in force: a procedure that sets none itself takes the
+    frame of what it calls (the last call that sets one; where it picks
+    one of several by a flag, they set the same box)."""
+    def frame(pn, seen):
+        f = frames.get(pn)
+        if isinstance(f, tuple) and f and f[0] == "call":
+            got = [frame(c, seen | {pn}) for c in f[1] if c not in seen]
+            got = [g for g in got if g]
+            return got[-1] if got else None
+        return f
+    return {pn: frame(pn, frozenset()) for pn in frames}
 
 
 def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
@@ -1080,7 +1102,8 @@ def run_patch(here, src, dst, mode="en"):
         for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols).items():
             if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
                 anywhere[pn] = f
-        frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items() if f})
+        frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items()
+                                if f and f[0] != "call"})
     start_eff, base_nums = dict(anywhere), set()
     for bname in base:
         bdata = vol.read(mes_path(vol, cfg["game_dir"], bname))
@@ -1145,7 +1168,7 @@ def run_patch(here, src, dst, mode="en"):
             nums = table[:2] + (set(),) if table and name.upper() in base else table
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
                                                                     name_cols)])
-            frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}
+            frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2])})
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
                                cfg.get("marker_cols", 0))
@@ -1160,7 +1183,7 @@ def run_patch(here, src, dst, mode="en"):
                                                                             name_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
-                                           {**frames, **proc_frames(inner, itoks)}, game_break,
+                                           resolve_frames({**frames, **proc_frames(inner, itoks)}), game_break,
                                            cfg.get("menu_fullwidth", False), default_frame, wait,
                                            cfg.get("marker_cols", 0))
                     out += new[pos:s] + av.encrypt(rebuilt, key)

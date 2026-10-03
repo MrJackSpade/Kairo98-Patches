@@ -1035,5 +1035,23 @@
    "Mahjong games (separate engine, no Japanese text), opponents' scenes, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "miho": [
+  [
+   "Setup questions and menus, Miho Premium Collection title",
+   "OK: questions as filler, wrapped in their frame; menu items fixed width"
+  ],
+  [
+   "Hospital scene messages",
+   "OK: filler wrapped between words to the 64-column box (set by a procedure that picks one of two others; it used to take the full screen and break mid-word)"
+  ],
+  [
+   "Place menu and its hover tags",
+   "OK: filler at the Japanese width"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

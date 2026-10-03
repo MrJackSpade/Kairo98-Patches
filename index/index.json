@@ -83858,7 +83858,14 @@
      "path": "Miho\\Miho [HD]\\Miho.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/miho (patcher working, machine translation in progress)",
+     "url": "../games/miho/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18097 (erotic content)",
    "engine": "adv98v",
@@ -83866,7 +83873,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Naomi - Bishoujo-tachi no Yakata",
