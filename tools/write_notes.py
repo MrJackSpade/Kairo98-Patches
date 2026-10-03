@@ -610,8 +610,8 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "written as `85 xx` (xx its ASCII code), which the program draws from the BIOS's 8x16 "
             "font one column wide and steps the cursor one column on; the program is unpacked, patched "
             "and packed again with its own EXEPACK unpacker.  Its disk-change command (wait for disk X "
-            "in the floppy drive) goes straight on.  Messages are one-line boxes that page a line at a "
-            "time with the key wait `81 90`.", ""]
+            "in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which "
+            "clears the box: a message longer than the box goes on after a key on a fresh page.", ""]
     if cfg.get("hdd"):
         out[out.index(ADV98V_DISPLAY):out.index(ADV98V_DISPLAY)] = [
             ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "
