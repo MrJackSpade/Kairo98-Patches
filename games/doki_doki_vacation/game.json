@@ -1,0 +1,51 @@
+{
+ "title": "Doki Doki Vacation",
+ "key": "CocktailSoft.zip/Doki Doki Vacation",
+ "image": "Doki Doki Vacation\\Doki Doki Vacation [FD]\\Doki Doki Vacation (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "DOKIV",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "hdd": {
+  "base": "Custom Mate 3\\Custom Mate 3 [HD]\\Custom Mate 3.hdi",
+  "remove": [
+   "CM3",
+   "CM_3.BAT"
+  ],
+  "dir": "DOKIV",
+  "disks": [
+   "Doki Doki Vacation (Disk B).hdm",
+   "Doki Doki Vacation (Disk C).hdm",
+   "Doki Doki Vacation (Disk D).hdm",
+   "Doki Doki Vacation (Disk E).hdm",
+   "Doki Doki Vacation (Disk F).hdm",
+   "Doki Doki Vacation (Disk G).hdm",
+   "Doki Doki Vacation (Disk H).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "IO98.SYS",
+   "MEGDOS.SYS",
+   "INSTALL.EXE",
+   "INSTALL.DAT",
+   "INSTH.EXE"
+  ],
+  "run": [
+   "A:",
+   "cd \\DOKIV",
+   "DOKIV",
+   "cd .."
+  ],
+  "replace": [
+   "CD CM3",
+   "CM3.COM",
+   "CD .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

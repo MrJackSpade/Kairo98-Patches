@@ -293,8 +293,10 @@ def inline_end(data, toks, us=None):
 
 def _files(vol, game_dir):
     """The scripts: [(name, path)], from the MES folder and, where the
-    game keeps its MEC files apart, the MEC folder."""
-    out = []
+    game keeps its MEC files apart, the MEC folder; and any in the game
+    folder itself (a startup script kept beside the engine)."""
+    out = [(e["name"], game_dir + "/" + e["name"]) for e in vol.listdir(vol.find(game_dir)["cluster"])
+           if not e["is_dir"] and e["name"].upper().endswith(".MES")]
     for kind in ("MES", "MEC"):
         folder = _subdir(vol, game_dir, kind)
         if folder:
@@ -316,7 +318,7 @@ def start_script(vol, game_dir, extraop):
             inis.insert(0, game_dir + "/" + e["name"])
     for ini in inis:
         for _tag, data, _toks in _streams(vol.read(ini), extraop):
-            m = re.search(rb'"(?:[a-z]:)?\\?(?:\w+_)?mes\\([^"\\]+\.mes)"', data, re.I)
+            m = re.search(rb'"(?:[a-z]:)?\\?(?:(?:\w+_)?mes\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
     return "START.MES"

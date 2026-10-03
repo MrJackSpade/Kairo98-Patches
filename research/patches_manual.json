@@ -759,5 +759,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Doki Doki Vacation": [
+  {
+   "label": "This repo: games/doki_doki_vacation (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_vacation/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

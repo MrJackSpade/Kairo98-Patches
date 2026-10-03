@@ -1053,5 +1053,23 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "doki_doki_vacation": [
+  [
+   "Eight floppies laid out on a hard disk; title menu",
+   "OK: boots from the hard disk (Custom Mate 3's DOS image as the base, the only one in the family with room); menu items fixed width"
+  ],
+  [
+   "Opening classroom scene",
+   "OK: speaker tags on the first line, the message under them wrapped between words, 2-line pages"
+  ],
+  [
+   "First in-game menus",
+   "OK: filler items at their Japanese width"
+  ],
+  [
+   "Save/load, later days (other disks' files), endings",
+   "not yet seen"
+  ]
  ]
 }
