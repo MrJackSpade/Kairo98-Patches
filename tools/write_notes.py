@@ -406,6 +406,15 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "* Typed commands: the word tables get the English words, typed and shown with the "
                 "game's own A-Z glyphs, and the key tables give capitals for the letter keys.",
                 "* The title screen's Japanese is rewritten in its text-layer image."]
+    elif cfg["encoding"] == "jast_typed" and not any(e["kind"] == "word" for e in strings):
+        scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
+        out += ["A scene viewer on JAST's first engine (one self-booting 2HD floppy laid out like an "
+                "N88-BASIC disk): the player types a digit and the engine shows that scene's picture "
+                "and its message; %d scenes come from a table of 4-byte entries in the engine "
+                "(`pc98tl/jast_typed.py` documents the layout).  Its message box is 3 lines of 53 "
+                "cells, empty at each scene; it pages at every third scrolled line from the first, so "
+                "no line scrolls out unread." % len(scenes),
+                "", TYPED_DISPLAY]
     elif cfg["encoding"] == "jast_typed":
         scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
         out += ["JAST's first typed-command engine on one self-booting 2HD floppy laid out like an "

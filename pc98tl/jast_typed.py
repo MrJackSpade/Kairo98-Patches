@@ -62,12 +62,11 @@ SECTOR = 256
 WORD_LEN = 4
 BOX_COLS = 53
 SCENE_ROOM = 0x6000     # 8000-DFFF, the portraits load at E000
-CAVE = 0x2800           # in the engine load's zero tail (27DB-3100 stays zero)
 
 # ---- the font -------------------------------------------------------------------------------
 _B1 = {0xA1: "。", 0xA2: "「", 0xA3: "」", 0xA4: "、", 0xA5: "・", 0x20: "　", 0x21: "！", 0x28: "（",
        0x29: "）", 0x2D: "ー", 0x3C: "＜", 0x3E: "＞", 0x3F: "？", 0x5B: "『", 0x5D: "』",
-       0x27: "’", 0xE2: "〜", 0xE7: "‼", 0x60: "┌", 0x61: "┐", 0x62: "└", 0x63: "┘", 0x64: "│", 0x65: "─"}
+       0x27: "’", 0xE2: "〜", 0xE7: "‼", 0x60: "┌", 0x61: "┐", 0x62: "└", 0x63: "┘", 0x64: "│", 0x65: "─", 0x2E: "．"}
 for _i, _c in enumerate("をぁぃぅぇぉゃゅょっーあいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわん゛゜"):
     _B1[0xA6 + _i] = _c
 for _i, _c in enumerate("ヲァィゥェォャュョッ"):
@@ -122,6 +121,10 @@ PORTRAITS = re.compile(rb"\x8d\x36(..)\x87\xd3\x03\xf2\xbb(..)\xe8", re.S)
 ROMAJI = re.compile(rb"\x8a\xe8\xe8..\x8a\xc8\x3c\xff\x74", re.S)
 STORE = re.compile(rb"\xe8..\xb1\x04\xe9..\x8a\xe8\xe8", re.S)          # call; mov cl, 4; jmp <store>
 MSG_ENTRY = re.compile(rb"\x32\xc0\xa2..\x8a\x07\x43\x0a\xc0\x75\x01\xc3", re.S)
+# the viewer's scene load: mov al, [choice]; ... mov dx, <table>; add bx, dx; mov [entry], bx; push bx; pop si; mov bx, <buffer>; call
+VIEWER = re.compile(rb"\xa0(..)\x8a\xd8\xb7\x00\x03\xdb\x03\xdb\xba(..)\x03\xda\x89\x1e(..)\x53\x5e\xbb(..)\xe8", re.S)
+# the box pager: mov al, [lines]; inc al; cmp al, <limit>; jb
+PAGER = re.compile(rb"\xa0..\xfe\xc0\x3c(\x04)\x72", re.S)
 # a string in the engine handed to the message draw: lea bx, [s] / mov bx, s; call <draw>
 ENG_STR = re.compile(rb"(\x8d\x1e|\xbb)(..)\xe8(..)", re.S)
 # the command help panel: lea bx, [rows]; mov dx, <position>; mov ch, <rows>
@@ -205,55 +208,79 @@ class Game:
             self.mem[ld["dest"]:ld["dest"] + len(data)] = data
         self.engine = [l for l in self.loads if l["dest"] < 0x1000][0]
         img = bytes(self.mem)
-        md, sc, wd, pt, rj, st, sv = (p.search(img) for p in (MSG_DRAW, SCENES, WORDS, PORTRAITS, ROMAJI,
-                                                              STORE, SAVE))
-        if not (md and sc and wd and pt and rj and st and sv):
-            raise ValueError("engine pieces not found")
+        md, me = MSG_DRAW.search(img), MSG_ENTRY.search(img)
+        if not (md and me):
+            raise ValueError("message draw not found")
         self.font = struct.unpack("<H", md.group(1))[0]
         self.font2 = struct.unpack("<H", md.group(2))[0]
         self.hook = md.end(2)                           # push bx; jmp <draw>
         self.draw = self.hook + 3 + struct.unpack("b", md.group(3))[0]
         self.after_lookup = self.draw + 3               # past "call <glyph address>"
-        self.scene_at = struct.unpack("<H", sc.group(1))[0]
-        self.scene_buf = struct.unpack("<H", sc.group(3))[0]
-        self.verbs_at, self.nouns_at = (struct.unpack("<H", wd.group(i))[0] for i in (1, 2))
-        self.portraits_at = struct.unpack("<H", pt.group(1))[0]
-        self.romaji = rj.start()
-        self.store = st.start()
-        self.save = (sv.group(2)[0], sv.group(1)[0])       # dh = track, dl = record
-        me, pn = MSG_ENTRY.search(img), PANEL.search(img)
-        if not (me and pn):
-            raise ValueError("engine pieces not found")
-        entry = me.start()
-        self.msg_entry = entry
+        self.msg_entry = me.start()
+        pg = PAGER.search(img)
+        if not pg:
+            raise ValueError("box pager not found")
+        self.pager_limit = pg.start(1)
+        end = self.engine["dest"] + 0x100 * self.engine["count"]
+        # the cave: past the engine's code and variables, in its load's zero tail
+        code_end = len(img[:end].rstrip(b"\0"))
+        self.cave = (code_end + 0x1FF) & ~0xFF
         self.eng_refs = {}                              # string address: [immediate offsets]
-        for m in ENG_STR.finditer(img[:CAVE]):
-            if (m.end() + struct.unpack("<h", m.group(3))[0]) & 0xFFFF == entry:
+        for m in ENG_STR.finditer(img[:code_end]):
+            if (m.end() + struct.unpack("<h", m.group(3))[0]) & 0xFFFF == self.msg_entry:
                 self.eng_refs.setdefault(struct.unpack("<H", m.group(2))[0], []).append(m.start(2))
-        self.panel_ref = pn.start(1)
-        self.panel_at = struct.unpack("<H", pn.group(1))[0]
-        self.panel_rows = pn.group(3)[0]
+        sc = SCENES.search(img)
+        if sc:
+            # the game: typed commands, a help panel, portraits and a save
+            wd, pt, rj, st, sv, pn = (p.search(img) for p in (WORDS, PORTRAITS, ROMAJI, STORE, SAVE, PANEL))
+            if not (wd and pt and rj and st and sv and pn):
+                raise ValueError("engine pieces not found")
+            self.kind, self.stride = "typed", 6
+            self.scene_at = struct.unpack("<H", sc.group(1))[0]
+            self.scene_buf = struct.unpack("<H", sc.group(3))[0]
+            self.verbs_at, self.nouns_at = (struct.unpack("<H", wd.group(i))[0] for i in (1, 2))
+            self.portraits_at = struct.unpack("<H", pt.group(1))[0]
+            self.romaji = rj.start()
+            self.store = st.start()
+            self.save = (sv.group(2)[0], sv.group(1)[0])       # dh = track, dl = record
+            self.panel_ref = pn.start(1)
+            self.panel_at = struct.unpack("<H", pn.group(1))[0]
+            self.panel_rows = pn.group(3)[0]
+            return
+        vw = VIEWER.search(img)
+        if not vw:
+            raise ValueError("scene table not found")
+        # the scene viewer (the Bangaihen): a typed digit picks a scene
+        self.kind, self.stride = "viewer", 4
+        self.scene_at = struct.unpack("<H", vw.group(2))[0]
+        self.scene_buf = struct.unpack("<H", vw.group(4))[0]
+        self.save = None
+        self.portraits_at = None
+        self.panel_rows = 0
 
     def scene_entries(self):
-        out, at = [], self.scene_at
+        out, at, n = [], self.scene_at, self.stride
         while True:
-            e = bytes(self.mem[at + 6 * len(out):at + 6 * len(out) + 6])
+            e = bytes(self.mem[at + n * len(out):at + n * len(out) + n])
             if e[0] not in (0, 1) or not 1 <= e[2] <= SPT or not e[3]:
                 return out
             out.append(e)
 
     def portrait_entries(self):
         out, at = [], self.portraits_at
-        while True:
+        while at is not None:
             e = self.mem[at + 4 * len(out):at + 4 * len(out) + 4]
             if e[0] not in (0, 1) or not e[3] or not e[2] or e[2] > SPT:
                 return out
             out.append(bytes(e))
+        return out
 
     def panel(self):
         """The command help panel's rows: zero-ended glyph strings, the first
         and last the frame, the others a frame glyph, a space, the text,
         spaces and a frame glyph."""
+        if not self.panel_rows:
+            return []
         out, p = [], self.panel_at
         for _k in range(self.panel_rows):
             q = self.mem.index(0, p)
@@ -266,7 +293,9 @@ class Game:
 
     def words(self):
         """(verbs, nouns), raw 4-byte entries; the nouns run until the
-        table stops looking like words."""
+        table stops looking like words.  The viewer has none."""
+        if self.kind != "typed":
+            return [], []
         verbs = [bytes(self.mem[a:a + WORD_LEN]) for a in range(self.verbs_at, self.nouns_at, WORD_LEN)]
         nouns, a = [], self.nouns_at
         while all(b == 0 or b in _B1 for b in self.mem[a:a + WORD_LEN]):
@@ -637,10 +666,10 @@ def _helpers(game, codes):
     fmt = dict(codes=", ".join("0x%02x" % c for c in codes), ncodes=len(codes), font=game.font,
                nchars=len(font6x10.CHARS), after=game.after_lookup, draw=game.draw,
                buf=0x1111, codes_at=0x1111, table=0x1111)
-    _c, labels = _asm16(HELPERS.format(**fmt), CAVE, names)
+    _c, labels = _asm16(HELPERS.format(**fmt), game.cave, names)
     fmt.update(buf=labels["buf"], codes_at=labels["codes"], table=labels["table"])
-    code, again = _asm16(HELPERS.format(**fmt), CAVE, names)
-    if again != labels or labels["table"] - CAVE != len(code):
+    code, again = _asm16(HELPERS.format(**fmt), game.cave, names)
+    if again != labels or labels["table"] - game.cave != len(code):
         raise ValueError("helper layout")
     return code + font6x10.table(), labels
 
@@ -704,12 +733,12 @@ def run_patch(here, src, dst, mode="en"):
         n = Disk.index(_track(e), e[2])
         scene_secs.update(range(n, n + e[3]))
     others = game.used() - scene_secs
-    free = sorted(disk.sectors() - others - {Disk.index(*game.save)})
+    free = sorted(disk.sectors() - others - ({Disk.index(*game.save)} if game.save else set()))
     done = {}
     for k, e in enumerate(entries):
         if e[:4] in done:
             new = done[e[:4]]
-            mem[game.scene_at + 6 * k:game.scene_at + 6 * k + 4] = new
+            mem[game.scene_at + game.stride * k:game.scene_at + game.stride * k + 4] = new
             continue
         d = game.scene(e)
         msgs, cmd = scene_messages(d)
@@ -728,12 +757,13 @@ def run_patch(here, src, dst, mode="en"):
         disk.write(t, r, bytes(out).ljust(size * SECTOR, b"\0"))
         half, tt = (1, t - 80) if t > 80 else (0, t)
         new = bytes([half, tt, r, size])
-        mem[game.scene_at + 6 * k:game.scene_at + 6 * k + 4] = new
+        mem[game.scene_at + game.stride * k:game.scene_at + game.stride * k + 4] = new
         done[e[:4]] = new
     # command words
     verbs, nouns = game.words()
     table = {}
-    for name, at, words in (("verb", game.verbs_at, verbs), ("noun", game.nouns_at, nouns)):
+    tables = (("verb", game.verbs_at, verbs), ("noun", game.nouns_at, nouns)) if game.kind == "typed" else ()
+    for name, at, words in tables:
         for i, w in enumerate(words):
             v = by_ref.get("%s:%d" % (name, i))
             if v is not None:
@@ -747,7 +777,7 @@ def run_patch(here, src, dst, mode="en"):
         mem[at:at + 3] = b"\xe9" + struct.pack("<H", (game.store - (at + 3)) & 0xFFFF)
     # helpers
     code, labels = _helpers(game, enc.codes)
-    if any(mem[CAVE:game.engine["dest"] + 0x100 * game.engine["count"]]):
+    if any(mem[game.cave:game.engine["dest"] + 0x100 * game.engine["count"]]):
         raise ValueError("the helpers' place in the engine is not free")
     # the engine's strings and the help panel, after the helpers
     extra = b""
@@ -755,7 +785,7 @@ def run_patch(here, src, dst, mode="en"):
         v = by_ref.get("eng:%04x" % at)
         if v is None:
             continue
-        here = CAVE + len(code) + len(extra)
+        here = game.cave + len(code) + len(extra)
         extra += v + b"\0"
         for r in refs:
             struct.pack_into("<H", mem, r, here)
@@ -767,17 +797,23 @@ def run_patch(here, src, dst, mode="en"):
             n = glyph_cells(v)
             row = row[:2] + v + b"\x20" * (_panel_room(row) - n) + row[-1:]
         panel += row + b"\0"
-    struct.pack_into("<H", mem, game.panel_ref, CAVE + len(code) + len(extra))
+    if rows:
+        struct.pack_into("<H", mem, game.panel_ref, game.cave + len(code) + len(extra))
     code += extra + panel
-    if CAVE + len(code) > game.engine["dest"] + 0x100 * game.engine["count"]:
+    if game.cave + len(code) > game.engine["dest"] + 0x100 * game.engine["count"]:
         raise ValueError("helpers, engine strings and panel need %d bytes; there are %d"
-                         % (len(code), game.engine["dest"] + 0x100 * game.engine["count"] - CAVE))
-    mem[CAVE:CAVE + len(code)] = code
+                         % (len(code), game.engine["dest"] + 0x100 * game.engine["count"] - game.cave))
+    mem[game.cave:game.cave + len(code)] = code
     at = game.hook
     mem[at:at + 3] = b"\xe9" + struct.pack("<H", (labels["put"] - (at + 3)) & 0xFFFF)
-    # the box's own pager counts a message's scrolled lines from 0, so its
-    # first line scrolled out unread before the first wait; count from 1
-    mem[game.msg_entry:game.msg_entry + 2] = b"\xb0\x01"            # xor al, al -> mov al, 1
+    # the box's own pager counts a message's scrolled lines from 0, waiting at
+    # the fourth, so a message's first lines scrolled out unread: in the game
+    # (a 4-line box that is never empty) the count starts at 1; in the viewer
+    # (a 3-line box, empty at each scene) it waits at every third scroll from
+    # the first
+    start, limit = (1, 4) if game.kind == "typed" else (2, 3)
+    mem[game.msg_entry:game.msg_entry + 2] = bytes([0xB0, start])     # xor al, al -> mov al, <start>
+    mem[game.pager_limit] = limit
     eng = game.engine
     disk.write(eng["track"], eng["rec"], bytes(mem[eng["dest"]:eng["dest"] + 0x100 * eng["count"]]))
     with open(dst, "wb") as f:

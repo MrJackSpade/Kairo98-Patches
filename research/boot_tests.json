@@ -807,5 +807,15 @@
    "Save and load prompts, game over",
    "not yet seen"
   ]
+ ],
+ "tenshi_i_bangaihen": [
+  [
+   "Scene choice by digit (scenes 0, 2, 5 and 9 from the repacked disk)",
+   "OK: each scene's picture and its half-width filler message"
+  ],
+  [
+   "Long message (6-line test): the box's pager",
+   "OK: lines 1-3, then 4-6 (lines 1-2 used to scroll out unread)"
+  ]
  ]
 }

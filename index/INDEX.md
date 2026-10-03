@@ -227,6 +227,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Shuukan From H | [This repo: games/shuukan_from_h (patcher working, machine translation in progress)](../games/shuukan_from_h/notes.md) |
 | Jast | Super Ultra Mucchin Puripuri Cyborg Marilyn DX | [This repo: games/marilyn_dx (patcher working, machine translation in progress)](../games/marilyn_dx/notes.md) |
 | Jast | Tenshi-tachi no Gogo | [This repo: games/tenshi_i (patcher working, machine translation in progress)](../games/tenshi_i/notes.md) |
+| Jast | Tenshi-tachi no Gogo Bangaihen | [This repo: games/tenshi_i_bangaihen (patcher working, machine translation in progress)](../games/tenshi_i_bangaihen/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection | [This repo: games/tenshi_collection (patcher working, machine translation in progress)](../games/tenshi_collection/notes.md) |
 | Jast | Tenshi-tachi no Gogo Collection 2 | [This repo: games/tenshi_collection_2 (patcher working, machine translation in progress)](../games/tenshi_collection_2/notes.md) |
 | Jast | Tenshi-tachi no Gogo II - Minako | [This repo: games/tenshi_ii (patcher working, machine translation in progress)](../games/tenshi_ii/notes.md) |
@@ -3242,7 +3243,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Shuukan From H [FD HD] `jast` — *MTL (this repo)*
 - ♥ Super Ultra Mucchin Puripuri Cyborg Marilyn DX [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo [FD] — *MTL (this repo)*
-- ♥ Tenshi-tachi no Gogo Bangaihen [FD]
+- ♥ Tenshi-tachi no Gogo Bangaihen [FD] — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Collection [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo Collection 2 [FD HD] `jast` — *MTL (this repo)*
 - ♥ Tenshi-tachi no Gogo II - Minako [FD] — *MTL (this repo)*
