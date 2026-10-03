@@ -12,5 +12,9 @@
   "flag": "0ff5",
   "cols": 8
  },
+ "base_scripts": [
+  "START.MES",
+  "MENU.MES"
+ ],
  "boot_steps": "30:enter,6:shot,6:enter,4:lclick,4:shot,4:lclick,3:mouse=0;-24,2:lclick,8:shot,8:lclick,4:lclick,6:rclick,3:mouse=0;-14,1:lclick,6:shot,3:lclick,3:shot,3:lclick,3:shot"
 }

@@ -8,5 +8,10 @@
  "proc_slot": 76,
  "proc_slots": 20,
  "name_cols": 8,
+ "base_scripts": [
+  "STARTUP.MES",
+  "MENU.MES",
+  "START.MES"
+ ],
  "boot_steps": "30:shot,4:enter,4:shot,4:mouse=40;-40,2:mouse=40;-20,2:lclick,5:mouse=40;4,2:key=32,10:shot,4:key=32,4:shot,4:key=32,4:shot,3:key=32,5:shot,3:key=32,3:shot,3:key=32,3:shot,3:key=32,3:shot"
 }

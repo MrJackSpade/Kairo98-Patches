@@ -83531,15 +83531,27 @@
      "path": "Jinmon Yuugi\\Jinmon Yuugi [HD]\\Jinmon Yuugi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/jinmon_yuugi (patcher working, machine translation in progress)",
+     "url": "../games/jinmon_yuugi/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Official English Windows release announced by Fakku (VNDB r160189, not yet released)",
+     "url": "https://vndb.org/r160189",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18030 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FairytaleRed-zone.zip/Kanako",

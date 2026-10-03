@@ -38,7 +38,9 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             ({"call": hex of the hero's name procedure call, "flag": hex of
             the register set that makes it print inline, "cols": the
             widest name part it prints}), "name_cols" (the widest name the
-            name entry takes, where there is no name_insert), "boot_steps"}
+            name entry takes, where there is no name_insert), "base_scripts"
+            (the scripts run before the scenes, in order, where the chain
+            goes past the startup script the INI names), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -150,7 +152,7 @@ def procs(data, toks):
 def proc_room(nums, start_nums, slot, slots):
     """{number: bytes} the procedure table gives each procedure a file
     defines: its slot and the free slots after it, up to the next
-    procedure in force (this file's or START.MES's)."""
+    procedure in force (this file's or the startup script's)."""
     live = sorted(set(nums) | set(start_nums))
     out = {}
     for n in nums:
@@ -227,6 +229,19 @@ def _files(vol, game_dir):
     d = vol.find(game_dir + "/MES")
     return [(e["name"], game_dir + "/MES/" + e["name"]) for e in vol.listdir(d["cluster"])
             if not e["is_dir"] and e["name"].upper().endswith((".MES", ".MEC"))]
+
+
+def start_script(vol, game_dir, extraop):
+    """The script the engine runs first: the one the game's INI (itself a
+    script, its tail often encrypted) names, else START.MES."""
+    for e in vol.listdir(vol.find(game_dir)["cluster"]):
+        if e["is_dir"] or not e["name"].upper().endswith(".INI"):
+            continue
+        for _tag, data, _toks in _streams(vol.read(game_dir + "/" + e["name"]), extraop):
+            m = re.search(rb'"(?:[a-z]:)?\\?mes\\([^"\\]+\.mes)"', data, re.I)
+            if m:
+                return m.group(1).decode("cp932").upper()
+    return "START.MES"
 
 
 def _streams(data, extraop):
@@ -515,12 +530,13 @@ def frame_size(frame):
     return x2 - x1, max(1, (y2 - y1 - GLYPH_H) // LINE_H + 1)
 
 
-def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, down=0):
+def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
     it on its line; down: the lines what follows moves on before the next
-    text (which must stay inside the frame)."""
+    text (which must stay inside the frame); max_cols: a narrower width
+    than the frame's to wrap to."""
     size = frame_size(frame)
     if kind in ("item", "inline", "label") or not size or size[1] == 1:
         # text in a one-line frame often has more drawn after it on the
@@ -540,6 +556,8 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, do
             flat = flat.ljust(room)
         return _encode(flat), None
     cols, rows = size
+    if max_cols:
+        cols = min(cols, max_cols)
     row, col = start
     if col >= cols:
         row, col = row + 1, 0
@@ -577,7 +595,7 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, do
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
                  frames=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
-    count, START.MES's procedure numbers).  A procedure body may grow to
+    count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
     past that it would overwrite a procedure in force, so the build is
     refused, or with fit (the --pseudo filler) the body's texts are cut
@@ -605,8 +623,11 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         reserve, down, follows = _after(data, toks, j, proc, insert, effects or {})
         down = down if follows else 0
         s, e = toks[i][1], toks[j - 1][2]
+        # a question with a menu after it keeps to its Japanese lines'
+        # width: the menu's window is drawn over the frame's right side
+        narrow = _line_cols(data, toks, i, j) if _menu_follows(data, toks, j) else None
         new, end = build(text, "label" if located and kind == "msg" else kind, frame, unit_cells(data, toks, i, j),
-                         proc, warn, ids.get(ref, ref), start, reserve, down)
+                         proc, warn, ids.get(ref, ref), start, reserve, down, narrow)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -747,6 +768,26 @@ def _start(data, toks, i, proc, insert, effects):
     return stop == "text", lines, cols, need, located
 
 
+def _menu_follows(data, toks, j):
+    """Whether a menu (AD/AE) comes after a text run before more text."""
+    for k, s, _e in toks[j:j + 24]:
+        if k in TEXT:
+            return False
+        if k == "cmd" and data[s] in (0xAD, 0xAE):
+            return True
+    return False
+
+
+def _line_cols(data, toks, i, j):
+    """The widest line of a text run's Japanese, in half-width columns."""
+    widest, start = 0, i
+    for x in range(i, j + 1):
+        if x == j or (toks[x][0] == "cmd" and data[toks[x][1]] == 0xA5):
+            widest = max(widest, 2 * unit_cells(data, toks, start, x))
+            start = x + 1
+    return widest
+
+
 def _after(data, toks, j, proc, insert, effects):
     """What follows a text run up to the next text or page end: (need,
     lines, text follows) as in _start, read forward."""
@@ -838,14 +879,14 @@ def run_patch(here, src, dst, mode="en"):
             by_ref[r] = text
             ids[r] = e["id"]
     extraop = cfg.get("extraop", False)
-    start = vol.read(cfg["game_dir"] + "/MES/START.MES")
-    table = ((cfg["proc_slot"], cfg["proc_slots"], set(procs(start, av.tokenize(start, extraop))))
-             if "proc_slot" in cfg else None)
-    fit = mode == "pseudo"
-    stoks = av.tokenize(start, extraop)
+    # the scripts run before the scenes, in order (the startup script and
+    # what it chains to): their procedures are in force in every scene
+    # that does not define its own
+    base = [n.upper() for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
-    # procedures defined only in other files (run at startup, say):
-    # each number's widest definition anywhere, under START.MES's own
+    fit = mode == "pseudo"
+    # procedures defined only in other files: each number's widest
+    # definition anywhere, under the base scripts'
     anywhere, frames_anywhere = {}, {}
     for oname, opath in _files(vol, cfg["game_dir"]):
         odata = vol.read(opath)
@@ -854,11 +895,15 @@ def run_patch(here, src, dst, mode="en"):
             if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
                 anywhere[pn] = f
         frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items() if f})
-    frames_anywhere.update(proc_frames(start, av.tokenize(start, extraop)))
-    start_eff = proc_effects(start, stoks, "START.MES", "", by_ref, None, name_cols)
-    start_eff = {**anywhere, **proc_effects(start, stoks, "START.MES", "", by_ref,
-                                            end_proc(start, stoks, resolve_effects([anywhere, start_eff])),
-                                            name_cols)}
+    start_eff, base_nums = dict(anywhere), set()
+    for bname in base:
+        bdata = vol.read(cfg["game_dir"] + "/MES/" + bname)
+        btoks = av.tokenize(bdata, extraop)
+        base_nums |= set(procs(bdata, btoks))
+        frames_anywhere.update(proc_frames(bdata, btoks))
+        plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols)])
+        start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols))
+    table = (cfg["proc_slot"], cfg["proc_slots"], base_nums) if "proc_slot" in cfg else None
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
@@ -897,7 +942,7 @@ def run_patch(here, src, dst, mode="en"):
             plain = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, None,
                                                              name_cols)])
             proc = end_proc(data, streams[0][2], plain)
-            nums = table[:2] + (set(),) if table and name.upper() == "START.MES" else table
+            nums = table[:2] + (set(),) if table and name.upper() in base else table
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
                                                                     name_cols)])
             frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}

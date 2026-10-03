@@ -893,5 +893,19 @@
    "Name entry, save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "jinmon_yuugi": [
+  [
+   "Sound board question and its menu",
+   "OK: the question as filler wrapped to its Japanese lines' width, clear of the menu window; menu items fixed width"
+  ],
+  [
+   "Opening (picture sequence, no text) and the first scene",
+   "OK: filler wrapped between words to the 3-line box (63 columns), pages with a wait between"
+  ],
+  [
+   "Save/load, later chapters, endings",
+   "not yet seen"
+  ]
  ]
 }

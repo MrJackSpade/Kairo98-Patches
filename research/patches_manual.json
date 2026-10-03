@@ -680,5 +680,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Jinmon Yuugi": [
+  {
+   "label": "This repo: games/jinmon_yuugi (patcher working, machine translation in progress)",
+   "url": "../games/jinmon_yuugi/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release announced by Fakku (VNDB r160189, not yet released)",
+   "url": "https://vndb.org/r160189",
+   "source": "VNDB"
+  }
  ]
 }
