@@ -733,5 +733,306 @@
    "GitHub search: no answer",
    "web search (title + English translation, PC-98): web search 2026-10-03 ('Akiko Gold' Fairytale Red-zone PC-98 English translation): no English patch found"
   ]
+ },
+ "FairytaleRed-zone.zip/Jankirou": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-03 ('Jankirou' Fairytale Red-zone PC-98 mahjong English translation): no English patch found"
+  ]
+ },
+ "FairytaleRed-zone.zip/Miho": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): romh-acking/miho-nakayama-tokimeki-high-school; romh-acking/miho-nakayama-tokimeki-high-school-manual; secret-moctar/mihon-translation-; ZaleraPane/-Furi-s-Faction-More-Miho-; malikid/mk-miho"
+  ]
+ },
+ "CocktailSoft.zip/Doki Doki Vacation": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Mayumi": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Will no Dengon": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Cosmic Psycho": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Can Can Bunny Premiere": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer"
+  ]
+ },
+ "CocktailSoft.zip/Can Can Bunny Extra": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Miki": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): veldlabs/bot-translations"
+  ]
+ },
+ "CocktailSoft.zip/Travel Junction": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer"
+  ]
+ },
+ "Fairytale.zip/Dracula Hakushaku": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: English releases: Dracula Hakushaku (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Akiko Premium Version": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Demon City": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Arabesque": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Virtuacall": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Virtuacall 2": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "DezClimax.zip/Injuu Gakuen - La Blue Girl": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Shinjuku Monogatari": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: English releases: Shinjuku Monogatari (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "GameTechnopolis.zip/Dragon Eyes": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Hare Nochi Munasawagi!": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Can Can Bunny Spirits": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer"
+  ]
+ },
+ "CocktailSoft.zip/Custom Mate 3": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "DezClimax.zip/Youjuu Kyoushitsu": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Koroshi no Dress 3": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Yumeji - Asakusa Kitan": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Kanako": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "GameTechnopolis.zip/Dennou Tenshi - Digital Ange": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Tomboy.zip/Night Walker - Mayonaka no Tantei": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CatsPro.zip/Cat's Part 1": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Can Can Bunny Limited 5 1-2": {
+  "checked": "2026-10-03",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-03: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
  }
 }
