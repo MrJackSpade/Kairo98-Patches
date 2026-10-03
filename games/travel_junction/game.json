@@ -1,0 +1,9 @@
+{
+ "title": "Travel Junction",
+ "key": "CocktailSoft.zip/Travel Junction",
+ "image": "Travel Junction\\Travel Junction [HD]\\Travel Junction.hdi",
+ "encoding": "adv98v",
+ "game_dir": "TRAVELJ",
+ "extraop": true,
+ "boot_steps": "30:shot"
+}

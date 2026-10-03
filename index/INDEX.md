@@ -220,6 +220,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
+| Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
@@ -1570,7 +1571,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Sailor-fuku Senshi Felis [FD extras]
 - ♥ Sekai de Ichiban Kimi ga Suki! [FD]
 - ♥ Sotsugyou Shashin - Photograph [FD extras]
-- ♥ Travel Junction [FD HD extras] `adv98v`
+- ♥ Travel Junction [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ True Heart [FD HD extras] `adv98v`
 - ♥ Will no Dengon [FD HD] `adv98v` — *MTL (this repo)*
 

@@ -53721,7 +53721,14 @@
      "path": "Travel Junction\\Travel Junction [HD]\\Travel Junction.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/travel_junction (patcher working, machine translation in progress)",
+     "url": "../games/travel_junction/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18315 (erotic content)",
    "engine": "adv98v",
@@ -53729,7 +53736,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/True Heart",

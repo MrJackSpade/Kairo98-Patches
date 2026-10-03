@@ -825,5 +825,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Travel Junction": [
+  {
+   "label": "This repo: games/travel_junction (patcher working, machine translation in progress)",
+   "url": "../games/travel_junction/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

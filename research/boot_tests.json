@@ -1175,5 +1175,19 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "travel_junction": [
+  [
+   "Setup wizard (first run; its text is artwork)",
+   "Blocked: takes no emulated input in the original or the patched build (mouse moved onto its OK button and clicked, keyboard Enter and space)"
+  ],
+  [
+   "Title menu (artwork) with the wizard skipped in a test image",
+   "Blocked: the cursor moves (arrows, mouse) but no item can be selected (click, Enter, space)"
+  ],
+  [
+   "Messages, menus, scenes past the opening, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }
