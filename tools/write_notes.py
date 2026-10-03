@@ -660,6 +660,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     if cfg.get("page_break") == "8190":
         out.append("* This old build ends each message with a key wait (`81 90`) that clears the box, so "
                    "pages are split with it; in its one-line box a message pages a line at a time.")
+    if cfg.get("keep_flag"):
+        out.append("* Where the script marks a message end to keep the page (a register set before the "
+                   "message-end call), the next message goes on from where the last one ended, on the "
+                   "same line: end the first with a space if one should come between them.")
     if cfg.get("menu_fullwidth"):
         out.append("* This engine draws menus from Shift-JIS only (an ASCII string in a menu crashes it), "
                    "so menu items are written in full-width letters: `max_cells` letters each, cut and "

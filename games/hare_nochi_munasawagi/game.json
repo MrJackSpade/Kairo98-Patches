@@ -1,0 +1,13 @@
+{
+ "title": "Hare Nochi Munasawagi!",
+ "key": "CocktailSoft.zip/Hare Nochi Munasawagi!",
+ "image": "Hare Nochi Munasawagi!\\Hare Nochi Munasawagi! [HD]\\Hare Nochi Munasawagi!.hdi",
+ "encoding": "adv98v",
+ "game_dir": "HARE",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "keep_flag": "0fdf",
+ "boot_steps": "30:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

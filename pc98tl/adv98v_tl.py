@@ -62,7 +62,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             break between pages where a file has no message end of its
             own, in place of a key wait and the game's text reset: the
             oldest engines' and ADVH's 81 90, a key wait that clears the
-            box), "boot_steps"}
+            box), "keep_flag" (hex of the register set a script puts right
+            before the message-end procedure where the next text goes on
+            on the same page: the procedure waits for the key and skips
+            its reset), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -80,7 +83,7 @@ TEXT = ("chr1", "chr2", "str")
 LINE_H, GLYPH_H = 20, 16
 # the engine being patched (set by run_patch from game.json): "advh" for
 # ADVH's half-width codes, "line_h" its line height in dots
-ENGINE = {"advh": False, "line_h": LINE_H}
+ENGINE = {"advh": False, "line_h": LINE_H, "keep_flag": None}
 WAIT = b"\xd1\x24\x26\x23"      # D1 1 3 0: wait for a key or click, as after a message
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -1201,8 +1204,11 @@ def _gap(data, toks, at, step, proc, insert, effects, clears=False):
             break
         if k == "cmd" and data[s] == 0xBA and x + 1 < len(toks) and toks[x + 1][0] == "num":
             call = bytes(data[s:toks[x + 1][2]])
-            if call == proc or (not (insert and call == insert[0])
-                                and effects.get(_call_num(call), ("none",))[0] == "reset"):
+            # the register set that makes the message end keep the page
+            kept = (ENGINE["keep_flag"] and x > 0 and toks[x - 1][0] == "reg"
+                    and bytes(data[toks[x - 1][1]:toks[x - 1][2]]) == ENGINE["keep_flag"])
+            if not kept and (call == proc or (not (insert and call == insert[0])
+                                              and effects.get(_call_num(call), ("none",))[0] == "reset")):
                 stop = "reset"
                 break
         gap.append(toks[x])
@@ -1272,6 +1278,7 @@ def run_patch(here, src, dst, mode="en"):
     extraop = cfg.get("extraop", False)
     ENGINE["advh"] = cfg.get("engine") == "advh"
     ENGINE["line_h"] = cfg.get("line_h", LINE_H)
+    ENGINE["keep_flag"] = bytes.fromhex(cfg["keep_flag"]) if "keep_flag" in cfg else None
     if ENGINE["advh"]:
         exe_path = _join(cfg["game_dir"], "ADVH.EXE")
         vol.write(exe_path, advh.patch(vol.read(exe_path)))

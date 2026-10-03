@@ -52302,7 +52302,14 @@
      "path": "Hare Nochi Munasawagi!\\Hare Nochi Munasawagi! [HD]\\Hare Nochi Munasawagi!.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)",
+     "url": "../games/hare_nochi_munasawagi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17725 (erotic content)",
    "engine": "adv98v",
@@ -52310,7 +52317,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Hare Nochi Oosawagi!",

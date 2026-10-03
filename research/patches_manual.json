@@ -915,5 +915,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Hare Nochi Munasawagi!": [
+  {
+   "label": "This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)",
+   "url": "../games/hare_nochi_munasawagi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

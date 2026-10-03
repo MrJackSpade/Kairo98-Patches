@@ -220,6 +220,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
 | Cocktail Soft | Demon City | [This repo: games/demon_city (patcher working, machine translation in progress)](../games/demon_city/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
+| Cocktail Soft | Hare Nochi Munasawagi! | [This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)](../games/hare_nochi_munasawagi/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
@@ -1566,7 +1567,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Erotic Baka Novel - Denwa no Bell ga [FD HD] `adv98v`
 - ♥ Erotic Baka Novel Series 2 - Itsuka Dokoka de [FD HD] `adv98v`
 - ♥ Halfmoon ni Kawaru made [FD HD] `adv98v`
-- ♥ Hare Nochi Munasawagi! [FD HD] `adv98v`
+- ♥ Hare Nochi Munasawagi! [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Hare Nochi Oosawagi! [FD extras]
 - ♥ Illumina! [FD extras]
 - ♥ JYB [FD HD] `adv98v`

@@ -1363,5 +1363,27 @@
    "Later chapters, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "hare_nochi_munasawagi": [
+  [
+   "Name entry window at the start",
+   "OK: the window's labels and its prompt as filler at their places (the kana table stays Japanese); its finish button takes a click and the game goes on with the default name"
+  ],
+  [
+   "Opening (hero's room, the street, Chihiro's house)",
+   "OK: speaker tags (name parts and the hero's name) on the first line, filler wrapped between words below, pages waiting for a click"
+  ],
+  [
+   "A message the script keeps on the page (register DF before the message end)",
+   "OK: the next message goes on from where the last ended and pages to a fresh box when it runs out (before keep_flag it ran past the box edge and broke mid-word)"
+  ],
+  [
+   "Speaker tags from START.MES's name procedure",
+   "OK: tag filler cut to the procedure's slot room (the names share 21 bytes beyond the Japanese)"
+  ],
+  [
+   "Menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
