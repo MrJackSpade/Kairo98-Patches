@@ -20,18 +20,11 @@ ides' Adv98V script engine (`PIA/`), on a hard-disk image: 352 scripts with text
   in half-width columns) and cut into pages of its line count; between
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
-* A message after a speaker's name tag (a procedure that ends its line)
-  starts on the frame's second line.  The hero's name, printed mid-message
-  by a procedure call with its inline flag set, leaves room for the longest
-  name the name entry takes, and the text after it carries on the same
-  line.
 * Menu items and text in one-line frames keep their Japanese width.
-* Procedures (`B9 n`) are copied into fixed slots of a table (one per
-  number, run on into free slots after it); a build that would overrun one
-  is refused.
-* String variables' values (`@n='...'` arguments: the hero's default name,
-  item names, picture titles) and the strings in the engine's programs (the
-  name window's labels) are rewritten in place.
+* A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
+* The hero's name, printed mid-message by a procedure call with its inline flag set, leaves room for the longest name the name entry takes (8 columns), and the text after it carries on the same line.
+* Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on into free slots after it); a build that would overrun one is refused.
+* String variables' values (`@n='...'` arguments) and the strings in the engine's programs are rewritten in place.
 
 ## Script
 

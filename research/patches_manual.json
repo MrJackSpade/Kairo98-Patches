@@ -656,5 +656,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Naomi - Bishoujo-tachi no Yakata": [
+  {
+   "label": "This repo: games/naomi (patcher working, machine translation in progress)",
+   "url": "../games/naomi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

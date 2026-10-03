@@ -33,7 +33,8 @@ breaks (A5) between them; a run is one string here.
 
 game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             "game_dir", "extraop" (bool), "proc_slot" (bytes a procedure
-            slot holds), "proc_slots" (slots in the table), "name_insert"
+            slot holds), "proc_slots" (slots in the table; both only for a game
+            whose procedures hold text), "name_insert"
             ({"call": hex of the hero's name procedure call, "flag": hex of
             the register set that makes it print inline, "cols": the
             widest name part it prints}), "boot_steps"}
@@ -343,7 +344,7 @@ def run_extract(here, src):
                 order.append(key)
     extra = [("var", name, "v%d" % n, s, e, text, room // 2)
              for name, found in var_strings(vol, cfg["game_dir"], cfg.get("extraop", False),
-                                            cfg["name_insert"]["cols"]).items()
+                                            cfg.get("name_insert", {}).get("cols", 0)).items()
              for n, (s, e, text, room, _pad) in enumerate(found)]
     for name, path in _programs(vol, cfg["game_dir"]):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
@@ -513,11 +514,11 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     the larger of its own length and its room in the procedure table;
     past that it would overwrite a procedure in force, so the build is
     refused, or with fit (the --pseudo filler) the body's texts are cut
-    to fit."""
-    slot, slots, start_nums = table
+    to fit.  With no table (a game whose procedures hold no text, so it
+    was not measured) a procedure may not grow."""
     defs = procs(data, toks)
-    room = proc_room(defs, start_nums, slot, slots)
-    limit = {n: max(e - s, room[n]) for n, (s, e) in defs.items()}
+    room = proc_room(defs, table[2], table[0], table[1]) if table else {}
+    limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
     us = units(data, toks)
     starts = [_start(data, toks, i, proc, insert) for i, _j, _k, _f in us]
@@ -543,7 +544,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         if grown <= limit[pn]:
             continue
         if not fit:
-            raise SystemExit("%s%s: procedure %d would be %d bytes, its slots hold %d (strings %s); shorten them"
+            raise SystemExit("%s%s: procedure %d would be %d bytes, it may take %d (strings %s); shorten them"
                              % (name, tag and " " + tag, pn, grown, limit[pn], ", ".join(reps[s][1] for s in inside)))
         # each text gets its old bytes and an even share of the room left
         spare = limit[pn] - (be - bs)
@@ -628,11 +629,12 @@ def run_patch(here, src, dst, mode="en"):
             ids[r] = e["id"]
     extraop = cfg.get("extraop", False)
     start = vol.read(cfg["game_dir"] + "/MES/START.MES")
-    table = (cfg["proc_slot"], cfg["proc_slots"], set(procs(start, av.tokenize(start, extraop))))
+    table = ((cfg["proc_slot"], cfg["proc_slots"], set(procs(start, av.tokenize(start, extraop))))
+             if "proc_slot" in cfg else None)
     fit = mode == "pseudo"
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
-    variables = var_strings(vol, cfg["game_dir"], extraop, cfg["name_insert"]["cols"])
+    variables = var_strings(vol, cfg["game_dir"], extraop, cfg.get("name_insert", {}).get("cols", 0))
     for name, path in _programs(vol, cfg["game_dir"]):
         exe = vol.read(path)
         runs = program_strings(exe)
@@ -664,7 +666,7 @@ def run_patch(here, src, dst, mode="en"):
         data = bytes(out + data[pos:])
         streams = _streams(data, extraop)
         proc = end_proc(data, streams[0][2])
-        nums = table if name.upper() != "START.MES" else table[:2] + (set(),)
+        nums = table[:2] + (set(),) if table and name.upper() == "START.MES" else table
         new = patch_stream(data, streams[0][2], "", name, by_ref, ids, proc, warn, nums, insert, fit)
         if len(streams) > 1:
             # the tails: re-encrypt each rebuilt tail in place of the old one

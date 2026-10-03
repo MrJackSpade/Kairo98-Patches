@@ -1,0 +1,9 @@
+{
+ "title": "Naomi - Bishoujo-tachi no Yakata",
+ "key": "FairytaleRed-zone.zip/Naomi - Bishoujo-tachi no Yakata",
+ "image": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+ "encoding": "adv98v",
+ "game_dir": "NAOMI",
+ "extraop": true,
+ "boot_steps": "25:shot,4:enter,3:shot,4:enter,3:shot,4:enter,3:shot,4:lclick,3:shot,4:lclick,3:shot,3:lclick,3:shot"
+}

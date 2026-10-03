@@ -843,5 +843,23 @@
    "Save/load, item lists, picture viewer",
    "not yet seen"
   ]
+ ],
+ "naomi": [
+  [
+   "Sound board, save file and start menus",
+   "OK: questions as filler in their one-line frame, cut to the Japanese width; menu items in their boxes at fixed width"
+  ],
+  [
+   "Opening scene messages",
+   "OK: filler wrapped between words to the frame"
+  ],
+  [
+   "Long message (9 sentences, test build)",
+   "OK: 3-line pages with a wait between; no line drawn over another"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

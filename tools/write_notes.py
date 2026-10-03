@@ -570,18 +570,7 @@ ADV98V_DISPLAY = """## English display (`pc98tl/adv98v_tl.py`)
   in half-width columns) and cut into pages of its line count; between
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
-* A message after a speaker's name tag (a procedure that ends its line)
-  starts on the frame's second line.  The hero's name, printed mid-message
-  by a procedure call with its inline flag set, leaves room for the longest
-  name the name entry takes, and the text after it carries on the same
-  line.
-* Menu items and text in one-line frames keep their Japanese width.
-* Procedures (`B9 n`) are copied into fixed slots of a table (one per
-  number, run on into free slots after it); a build that would overrun one
-  is refused.
-* String variables' values (`@n='...'` arguments: the hero's default name,
-  item names, picture titles) and the strings in the engine's programs (the
-  name window's labels) are rewritten in place."""
+* Menu items and text in one-line frames keep their Japanese width."""
 
 
 def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
@@ -599,14 +588,31 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    has = {e["kind"] for e in strings}
+    names = any(r.startswith("TCM/NAMEWIND") for e in strings for r in e["refs"])
     out += ["", "## Engine", "",
             "ides' Adv98V script engine (`%s/`), on a hard-disk image: %d scripts with text (`MES/*.MES`, "
             "`*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
-            "rebuilds byte for byte.  The procedure table holds %d slots of %d bytes (read off the "
-            "engine's memory)." % (cfg["game_dir"], len(files),
-                                   "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "",
-                                   cfg["proc_slots"], cfg["proc_slot"]),
+            "rebuilds byte for byte." % (cfg["game_dir"], len(files),
+                                         "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "")
+            + (("  The procedure table holds %d slots of %d bytes (read off the engine's memory)."
+                % (cfg["proc_slots"], cfg["proc_slot"])) if "proc_slot" in cfg else
+               "  No procedure holds text, so no procedure grows."),
             "", ADV98V_DISPLAY]
+    if "inline" in has:
+        out.append("* A message after a speaker's name tag (a procedure that ends its line) starts on the "
+                   "frame's second line.")
+    if cfg.get("name_insert"):
+        out.append("* The hero's name, printed mid-message by a procedure call with its inline flag set, "
+                   "leaves room for the longest name the name entry takes (%d columns), and the text after "
+                   "it carries on the same line." % cfg["name_insert"]["cols"])
+    if "proc_slot" in cfg:
+        out.append("* Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on "
+                   "into free slots after it); a build that would overrun one is refused.")
+    if "var" in has or "engine" in has:
+        what = " and ".join(x for x, k in (("string variables' values (`@n='...'` arguments)", "var"),
+                                           ("the strings in the engine's programs", "engine")) if k in has)
+        out.append("* %s%s are rewritten in place." % (what[0].upper(), what[1:]))
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
@@ -619,26 +625,32 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     out += ["", "## Limits", "",
             "* Messages (`m` ids): any length; `\\n` starts a new line.  Full-width characters can stay "
             "in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are "
-            "written back as they are.",
-            "* The hero's name is printed between two message runs: the run before it ends where the "
-            "name starts (end it with a space if one should come before the name), the run after it "
-            "starts right after the name.",
-            "* Menu items (`i` ids) and messages in one-line frames: twice their `max_cells` in letters; "
-            "longer ones are cut and reported.",
-            "* Name tags (`n` ids) live in procedures, and a procedure may only grow into the free "
-            "slots after its own (%d bytes a slot), so the tags of one procedure share a few bytes "
-            "beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses "
-            "a build that overruns a slot and names that procedure's strings." % cfg["proc_slot"],
-            "* String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters); "
-            "the hero's default name parts (offered again by the name entry) up to %d letters.  "
-            "Longer ones are refused.  `'` and `\"` are written full-width (they would end the "
-            "script's quoting)." % cfg["name_insert"]["cols"],
-            "* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones "
-            "are cut and reported.",
-            "", "## Not handled", "",
-            "* Text drawn into the artwork (the title logo, pictures).",
-            "* The name window's character tables stay Japanese: the engine picks characters from "
-            "them by position (its English-letter table lets the player type an English name)."]
+            "written back as they are."]
+    if cfg.get("name_insert"):
+        out.append("* The hero's name is printed between two message runs: the run before it ends where "
+                   "the name starts (end it with a space if one should come before the name), the run "
+                   "after it starts right after the name.")
+    out.append("* Menu items (`i` ids) and messages in one-line frames: twice their `max_cells` in "
+               "letters; longer ones are cut and reported.")
+    if "inline" in has:
+        out.append("* Name tags (`n` ids) live in procedures, and a procedure may only grow into the free "
+                   "slots after its own%s, so the tags of one procedure share a few bytes beyond the "
+                   "Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build "
+                   "that overruns a slot and names that procedure's strings."
+                   % (" (%d bytes a slot)" % cfg["proc_slot"] if "proc_slot" in cfg else ""))
+    if "var" in has:
+        out.append("* String variables (`v` ids): the Japanese's byte length (twice `max_cells` in "
+                   "letters)%s.  Longer ones are refused.  `'` and `\"` are written full-width (they "
+                   "would end the script's quoting)." % (
+                       "; the hero's default name parts (offered again by the name entry) up to %d letters"
+                       % cfg["name_insert"]["cols"] if cfg.get("name_insert") else ""))
+    if "engine" in has:
+        out.append("* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer "
+                   "ones are cut and reported.")
+    out += ["", "## Not handled", "", "* Text drawn into the artwork (the title logo, pictures)."]
+    if names:
+        out.append("* The name window's character tables stay Japanese: the engine picks characters from "
+                   "them by position (its English-letter table lets the player type an English name).")
     for line in extra.get(name, {}).get("not_handled", []):
         out.append("* " + line)
     out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
