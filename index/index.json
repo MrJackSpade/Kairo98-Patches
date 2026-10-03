@@ -82990,15 +82990,27 @@
      "path": "Necronomicon\\Necronomicon [HD]\\Necronomicon.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/necronomicon (patcher working, machine translation in progress)",
+     "url": "../games/necronomicon/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Official English Windows release announced by Fakku (VNDB r160191, not yet released)",
+     "url": "https://vndb.org/r160191",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17894 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FairytaleRed-zone.zip/Akiko Gold",

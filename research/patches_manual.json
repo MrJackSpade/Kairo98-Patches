@@ -714,5 +714,18 @@
    "url": "https://vndb.org/r157245",
    "source": "VNDB"
   }
+ ],
+ "FairytaleHardcover.zip/Necronomicon": [
+  {
+   "label": "This repo: games/necronomicon (patcher working, machine translation in progress)",
+   "url": "../games/necronomicon/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release announced by Fakku (VNDB r160191, not yet released)",
+   "url": "https://vndb.org/r160191",
+   "source": "VNDB"
+  }
  ]
 }

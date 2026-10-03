@@ -1,0 +1,9 @@
+{
+ "title": "Necronomicon",
+ "key": "FairytaleHardcover.zip/Necronomicon",
+ "image": "Necronomicon\\Necronomicon [HD]\\Necronomicon.hdi",
+ "encoding": "adv98v",
+ "game_dir": "NECRO",
+ "extraop": true,
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,4:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}
