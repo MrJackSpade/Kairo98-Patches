@@ -833,5 +833,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Dracula Hakushaku": [
+  {
+   "label": "This repo: games/dracula_hakushaku (patcher working, machine translation in progress)",
+   "url": "../games/dracula_hakushaku/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release announced by Fakku (VNDB r160190, not yet released)",
+   "url": "https://vndb.org/r160190",
+   "source": "VNDB"
+  }
  ]
 }

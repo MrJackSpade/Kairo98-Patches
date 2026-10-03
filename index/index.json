@@ -80136,15 +80136,27 @@
      "path": "Dracula Hakushaku\\Dracula Hakushaku [HD]\\Dracula Hakushaku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dracula_hakushaku (patcher working, machine translation in progress)",
+     "url": "../games/dracula_hakushaku/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Official English Windows release announced by Fakku (VNDB r160190, not yet released)",
+     "url": "https://vndb.org/r160190",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17940 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Fairytale.zip/Dragoon Armor for Adult",

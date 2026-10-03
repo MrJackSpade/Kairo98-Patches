@@ -1189,5 +1189,23 @@
    "Messages, menus, scenes past the opening, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "dracula_hakushaku": [
+  [
+   "Opening choice (two crosses, labels under them; question in the bottom box)",
+   "OK: question filler wrapped in the box; labels as filler at their Japanese width; clicking a cross goes on"
+  ],
+  [
+   "Second choice (one cross)",
+   "OK: label filler; clicking it goes on"
+  ],
+  [
+   "Prologue narration after the choices",
+   "OK: filler wrapped between words to the full-width bottom box, 2-line pages, each waiting for a click"
+  ],
+  [
+   "Picture scenes, save/load, later chapters, endings",
+   "not yet seen"
+  ]
  ]
 }

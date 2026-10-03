@@ -1,0 +1,16 @@
+{
+ "title": "Dracula Hakushaku",
+ "key": "Fairytale.zip/Dracula Hakushaku",
+ "image": "Dracula Hakushaku\\Dracula Hakushaku [HD]\\Dracula Hakushaku.hdi",
+ "encoding": "adv98v",
+ "game_dir": "DRACULA",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "default_frame": [
+  0,
+  340,
+  79,
+  399
+ ],
+ "boot_steps": "30:shot,0:mouse=-80;-80,0:mouse=-80;-80,0:mouse=-80;-80,0:mouse=-80;-80,0:mouse=-80;-80,1:mouse=22;20,1:mouse=22;20,1:mouse=22;20,1:mouse=22;20,1:mouse=22;20,1:mouse=0;12,1:mouse=0;12,1:mouse=0;12,1:lclick,4:lclick,4:lclick,4:lclick,6:shot,1:mouse=-8;-6,1:lclick,3:shot,1:mouse=-8;-6,1:lclick,3:shot,1:mouse=-8;-6,1:lclick,3:shot"
+}
