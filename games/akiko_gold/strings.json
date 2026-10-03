@@ -999,7 +999,7 @@
     "ED_02.MES:168",
     "ED_02.MES:175"
    ],
-   "max_cells": 10
+   "max_cells": 9
   },
   {
    "id": "i00011",
@@ -24775,7 +24775,7 @@
    "refs": [
     "START_02.MES:0"
    ],
-   "max_cells": 10
+   "max_cells": 7
   },
   {
    "id": "i00128",
@@ -24785,7 +24785,7 @@
    "refs": [
     "START_02.MES:1"
    ],
-   "max_cells": 10
+   "max_cells": 8
   },
   {
    "id": "m02103",
@@ -24847,7 +24847,7 @@
    "refs": [
     "START_02.MES:10"
    ],
-   "max_cells": 10
+   "max_cells": 8
   },
   {
    "id": "i00130",
@@ -24857,7 +24857,7 @@
    "refs": [
     "START_02.MES:11"
    ],
-   "max_cells": 10
+   "max_cells": 7
   },
   {
    "id": "m02108",

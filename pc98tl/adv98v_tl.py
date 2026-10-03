@@ -610,6 +610,21 @@ def mec_rooms(vol, game_dir, extraop):
     return {t: max(r, sizes[t]) for t, r in rooms.items()}
 
 
+def tight_files(vol, game_dir, extraop):
+    """The file names whose room in the MEC buffer is their own size (the
+    only file loaded there, or one packed against the next), so they may
+    not grow: their menu items keep their byte length (item_budget)."""
+    rooms = mec_rooms(vol, game_dir, extraop)
+    return {name.upper() for name, path in _files(vol, game_dir)
+            if rooms.get(name.upper()) == len(vol.read(path))}
+
+
+def item_budget(nbytes):
+    """The letters a menu item of nbytes takes when it keeps its length:
+    the ASCII string's 21 and 00 come out of it."""
+    return max(0, nbytes - 2)
+
+
 def _image(cfg, src):
     """(image, cfg): the source image, or for a floppy set too small for
     the English ("hdd" in game.json) the game laid out on a hard disk
@@ -647,7 +662,8 @@ def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     img, cfg = _image(cfg, src)
     vol = img.volumes[0]
-    merged, order = {}, []
+    merged, order, caps = {}, [], {}
+    tight = tight_files(vol, cfg["game_dir"], cfg.get("extraop", False))
     for name, path in _files(vol, cfg["game_dir"]):
         data = vol.read(path)
         for tag, d, toks in _streams(data, cfg.get("extraop", False)):
@@ -657,6 +673,10 @@ def run_extract(here, src):
                     continue
                 cells = unit_cells(d, toks, i, j)
                 key = (kind, jp)
+                if kind == "item" and name.upper() in tight:
+                    # a menu item in a file that may not grow keeps its bytes
+                    cap = item_budget(toks[j - 1][2] - toks[i][1]) // 2
+                    caps[key] = min(caps.get(key, cap), cap)
                 ref = "%s:%s%d" % (name, tag, n)
                 if key in merged:
                     merged[key]["refs"].append(ref)
@@ -681,6 +701,8 @@ def run_extract(here, src):
             order.append(key)
         merged[key]["refs"].append("%s:%s" % (name, at))
         merged[key]["max_cells"] = min(merged[key]["max_cells"], cells)
+    for key, cap in caps.items():
+        merged[key]["max_cells"] = min(merged[key]["max_cells"], cap)
     prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e", "file": "t"}
     counters, strings = {}, []
     for key in order:
@@ -808,7 +830,7 @@ def frame_size(frame):
 
 
 def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None,
-          max_rows=None, fullwidth=False, pages_ok=False, marker=0):
+          max_rows=None, fullwidth=False, pages_ok=False, marker=0, budget=None):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
@@ -821,7 +843,8 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
     Japanese width: a prompt with a field after it); fullwidth: menu
     items written as full-width characters (older
     engines draw a menu from Shift-JIS only, and crash on an ASCII
-    string in one)."""
+    string in one); budget: the letters a menu item may take in a file
+    that may not grow (see tight_files)."""
     size = frame_size(frame)
     if kind in ("item", "inline", "label") or not size or (size[1] == 1 and not (pages_ok and brk)
                                                                     and not (ENGINE["advh"] and brk)):
@@ -829,6 +852,8 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
         # line (an input field, numbers), so it keeps its Japanese width
         # (a label placed on the screen, too)
         room = 2 * cells if kind == "item" or not size else size[0] if kind == "inline" else min(size[0], 2 * cells)
+        if kind == "item" and budget is not None:
+            room = min(room, budget)
         flat = " ".join(text.split("\n"))
         if _width(flat) > room:
             warn.append("%s: %d columns, the box has %d" % (sid, _width(flat), room))
@@ -886,14 +911,15 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
                  frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT, marker=0,
-                 forced_break=None):
+                 forced_break=None, tight=False):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
     past that it would overwrite a procedure in force, so the build is
     refused, or with fit (the --pseudo filler) the body's texts are cut
     to fit.  With no table (a game whose procedures hold no text, so it
-    was not measured) a procedure may not grow."""
+    was not measured) a procedure may not grow.  tight: a file that may
+    not grow (tight_files), whose menu items keep their byte length."""
     defs = procs(data, toks)
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
     limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
@@ -942,7 +968,8 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                 bkind = "label"
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
                          brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
-                         _waits_after(data, toks, j, proc), marker)
+                         _waits_after(data, toks, j, proc), marker,
+                         item_budget(e - s) if tight else None)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -1306,6 +1333,7 @@ def run_patch(here, src, dst, mode="en"):
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
     rooms = mec_rooms(vol, cfg["game_dir"], extraop)
+    tight = tight_files(vol, cfg["game_dir"], extraop)
     for name in cfg.get("text_files", []):
         path = _join(cfg["game_dir"], name)
         old_file = vol.read(path)
@@ -1355,7 +1383,7 @@ def run_patch(here, src, dst, mode="en"):
             frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2])})
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
-                               cfg.get("marker_cols", 0), forced)
+                               cfg.get("marker_cols", 0), forced, name.upper() in tight)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -1369,7 +1397,7 @@ def run_patch(here, src, dst, mode="en"):
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
                                            resolve_frames({**frames, **proc_frames(inner, itoks)}), game_break,
                                            cfg.get("menu_fullwidth", False), default_frame, wait,
-                                           cfg.get("marker_cols", 0), forced)
+                                           cfg.get("marker_cols", 0), forced, name.upper() in tight)
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

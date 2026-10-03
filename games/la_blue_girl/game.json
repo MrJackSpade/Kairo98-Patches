@@ -1,0 +1,11 @@
+{
+ "title": "Injuu Gakuen - La Blue Girl",
+ "key": "DezClimax.zip/Injuu Gakuen - La Blue Girl",
+ "image": "Injuu Gakuen - La Blue Girl\\Injuu Gakuen - La Blue Girl [HD]\\Injuu Gakuen - La Blue Girl.hdi",
+ "encoding": "adv98v",
+ "game_dir": "INJU",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "boot_steps": "30:shot,4:enter,4:enter,5:lclick,4:lclick,4:lclick,6:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

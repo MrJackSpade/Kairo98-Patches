@@ -1297,5 +1297,31 @@
    "Choosing a name in the window, phone calls, save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "la_blue_girl": [
+  [
+   "Startup menu (start, tutorial, extras, clear saves)",
+   "OK: item filler at fixed width in the menu window"
+  ],
+  [
+   "Title and opening prompts",
+   "OK: one-line prompts at their Japanese width (cut and reported)"
+  ],
+  [
+   "First classroom scene: command menu and its target submenu",
+   "OK: menus pop up under the cursor with the filler items; speaker's name on its line, message wrapped between words below it"
+  ],
+  [
+   "System submenu (save, load, slots)",
+   "OK: filler at its place; SYSTEM.MES stays within its 1051 bytes (1047)"
+  ],
+  [
+   "Operation tutorial (startup menu, second item)",
+   "OK: a long message paged: three lines, a click, the rest on the next page under the speaker's name; the two-item menu after it. The mouse diagram's labels are drawn in the picture"
+  ],
+  [
+   "Leaving the classroom (the scene's commands in the order it wants), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

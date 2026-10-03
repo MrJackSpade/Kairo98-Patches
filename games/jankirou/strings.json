@@ -53575,7 +53575,7 @@
    "refs": [
     "MAHSEL.MEC:0"
    ],
-   "max_cells": 7
+   "max_cells": 5
   },
   {
    "id": "i00046",
@@ -53585,7 +53585,7 @@
    "refs": [
     "MAHSEL.MEC:1"
    ],
-   "max_cells": 7
+   "max_cells": 5
   },
   {
    "id": "i00047",
@@ -53595,7 +53595,7 @@
    "refs": [
     "MAHSEL.MEC:2"
    ],
-   "max_cells": 7
+   "max_cells": 3
   },
   {
    "id": "i00048",
@@ -53605,7 +53605,7 @@
    "refs": [
     "MAHSEL.MEC:3"
    ],
-   "max_cells": 7
+   "max_cells": 3
   },
   {
    "id": "i00049",
@@ -53615,7 +53615,7 @@
    "refs": [
     "MAHSEL.MEC:4"
    ],
-   "max_cells": 7
+   "max_cells": 3
   },
   {
    "id": "i00050",
@@ -53625,7 +53625,7 @@
    "refs": [
     "MAHSEL.MEC:5"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "i00051",
@@ -53635,7 +53635,7 @@
    "refs": [
     "MAHSEL.MEC:6"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "i00052",
@@ -53645,7 +53645,7 @@
    "refs": [
     "MAHSEL.MEC:7"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "i00053",
@@ -53655,7 +53655,7 @@
    "refs": [
     "MAHSEL.MEC:8"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "i00054",
@@ -53665,7 +53665,7 @@
    "refs": [
     "MAHSEL.MEC:9"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "i00055",
@@ -53685,7 +53685,7 @@
    "refs": [
     "MAHSEL.MEC:11"
    ],
-   "max_cells": 7
+   "max_cells": 4
   },
   {
    "id": "m05210",

@@ -44810,7 +44810,7 @@
     "LOAD.MES:1",
     "SAVE.MEC:1"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "i00153",
@@ -44821,7 +44821,7 @@
     "LOAD.MES:2",
     "SAVE.MEC:2"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "i00154",
@@ -44832,7 +44832,7 @@
     "LOAD.MES:3",
     "SAVE.MEC:3"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "i00155",
@@ -44843,7 +44843,7 @@
     "LOAD.MES:4",
     "SAVE.MEC:4"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "i00156",
@@ -44854,7 +44854,7 @@
     "LOAD.MES:5",
     "SAVE.MEC:5"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "i00157",
@@ -44865,7 +44865,7 @@
     "LOAD.MES:6",
     "SAVE.MEC:6"
    ],
-   "max_cells": 9
+   "max_cells": 8
   },
   {
    "id": "m04221",

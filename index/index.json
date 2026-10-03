@@ -67729,7 +67729,14 @@
      "path": "Injuu Gakuen - La Blue Girl\\Injuu Gakuen - La Blue Girl [HD]\\Injuu Gakuen - La Blue Girl.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/la_blue_girl (patcher working, machine translation in progress)",
+     "url": "../games/la_blue_girl/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17756 (erotic content)",
    "engine": "adv98v",
@@ -67737,7 +67744,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DezClimax.zip/Youjuu Kyoushitsu",

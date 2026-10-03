@@ -886,5 +886,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DezClimax.zip/Injuu Gakuen - La Blue Girl": [
+  {
+   "label": "This repo: games/la_blue_girl (patcher working, machine translation in progress)",
+   "url": "../games/la_blue_girl/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

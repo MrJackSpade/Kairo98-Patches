@@ -89074,7 +89074,7 @@
    "refs": [
     "CHRCALL4.MEC:83"
    ],
-   "max_cells": 29
+   "max_cells": 24
   },
   {
    "id": "i00276",
@@ -89084,7 +89084,7 @@
    "refs": [
     "CHRCALL4.MEC:84"
    ],
-   "max_cells": 29
+   "max_cells": 23
   },
   {
    "id": "i00277",
@@ -89094,7 +89094,7 @@
    "refs": [
     "CHRCALL4.MEC:85"
    ],
-   "max_cells": 29
+   "max_cells": 23
   },
   {
    "id": "m07513",
