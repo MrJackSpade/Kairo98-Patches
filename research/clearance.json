@@ -623,5 +623,106 @@
    "alpharobo.neocities.org: not listed",
    "web search (title + English translation, PC-98): nothing"
   ]
+ },
+ "CocktailSoft.zip/Pia Carrot e Youkoso!!": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Welcome to Pia Carrot!! (pcf); Pia♥Carrot e Youkoso!! ~We've Been Waiting for You~ (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): only the PC-FX version's English fan patch (David Michel / filler, 2009, romhacking.net #1372); no PC-98 translation"
+  ]
+ },
+ "FairytaleRed-zone.zip/Naomi - Bishoujo-tachi no Yakata": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Jinmon Yuugi (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): rzhao22/NAOMi-Translation; CarsonKompon/RhythmHeavenArcadeENG; NaomiHoniker/capstone"
+  ]
+ },
+ "CocktailSoft.zip/Angel (U-Jin Presents)": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Chiemi": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Jinmon Yuugi": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Jinmon Yuugi (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Sayaka - Gibo": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Jinmon Yuugi (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Fairytale.zip/Kurutta Kajitsu": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Kurutta Kajitsu - BEEP Limited Edition (win); Kurutta Kajitsu - Download Edition (win); Kurutta Kajitsu Line Fix (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleHardcover.zip/Necronomicon": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: English releases: Necronomicon (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): SzymonBrycki/OtwarlszyNecronomicon"
+  ]
+ },
+ "FairytaleXShitei.zip/Saori - Bishoujo-tachi no Yakata": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FairytaleRed-zone.zip/Akiko Gold": {
+  "checked": "2026-10-02",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-02: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer"
+  ]
  }
 }

@@ -1,0 +1,16 @@
+{
+ "title": "Pia Carrot e Youkoso!!",
+ "key": "CocktailSoft.zip/Pia Carrot e Youkoso!!",
+ "image": "Pia Carrot e Youkoso!!\\Pia Carrot e Youkoso!! [HD]\\Pia Carrot e Youkoso!!.hdi",
+ "encoding": "adv98v",
+ "game_dir": "PIA",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_insert": {
+  "call": "ba23",
+  "flag": "0ff5",
+  "cols": 8
+ },
+ "boot_steps": "30:enter,6:shot,6:enter,4:lclick,4:shot,4:lclick,3:mouse=0;-24,2:lclick,8:shot,8:lclick,4:lclick,6:rclick,3:mouse=0;-14,1:lclick,6:shot,3:lclick,3:shot,3:lclick,3:shot"
+}

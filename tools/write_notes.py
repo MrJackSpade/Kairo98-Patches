@@ -559,6 +559,99 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+ADV98V_DISPLAY = """## English display (`pc98tl/adv98v_tl.py`)
+
+* The engine draws ASCII strings (`21 ... 00`) half-width itself, so English
+  is written as ASCII strings in place of the Japanese text runs; the
+  scripts are rebuilt with them (no offset table refers into a script).
+* The engine wraps at the text frame's right edge even inside a word, and
+  does not scroll (a fourth line of a 3-line frame draws over the first).
+  So messages are broken between words to the frame's width (`A6` gives it
+  in half-width columns) and cut into pages of its line count; between
+  pages goes a wait and the file's message-end procedure call, as between
+  the original messages.
+* A message after a speaker's name tag (a procedure that ends its line)
+  starts on the frame's second line.  The hero's name, printed mid-message
+  by a procedure call with its inline flag set, leaves room for the longest
+  name the name entry takes, and the text after it carries on the same
+  line.
+* Menu items and text in one-line frames keep their Japanese width.
+* Procedures (`B9 n`) are copied into fixed slots of a table (one per
+  number, run on into free slots after it); a build that would overrun one
+  is refused.
+* String variables' values (`@n='...'` arguments: the hero's default name,
+  item names, picture titles) and the strings in the engine's programs (the
+  name window's labels) are rewritten in place."""
+
+
+def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith((".MES", ".MEC"))})
+    out = ["# %s%s (Cocktail Soft / Fairytale)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "ides' Adv98V script engine (`%s/`), on a hard-disk image: %d scripts with text (`MES/*.MES`, "
+            "`*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
+            "rebuilds byte for byte.  The procedure table holds %d slots of %d bytes (read off the "
+            "engine's memory)." % (cfg["game_dir"], len(files),
+                                   "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "",
+                                   cfg["proc_slots"], cfg["proc_slot"]),
+            "", ADV98V_DISPLAY]
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    labels = {"msg": "messages", "item": "menu items", "inline": "name tags (procedure text)",
+              "var": "string variable values", "engine": "program strings"}
+    out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
+        "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; `\\n` starts a new line.  Full-width characters can stay "
+            "in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are "
+            "written back as they are.",
+            "* The hero's name is printed between two message runs: the run before it ends where the "
+            "name starts (end it with a space if one should come before the name), the run after it "
+            "starts right after the name.",
+            "* Menu items (`i` ids) and messages in one-line frames: twice their `max_cells` in letters; "
+            "longer ones are cut and reported.",
+            "* Name tags (`n` ids) live in procedures, and a procedure may only grow into the free "
+            "slots after its own (%d bytes a slot), so the tags of one procedure share a few bytes "
+            "beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses "
+            "a build that overruns a slot and names that procedure's strings." % cfg["proc_slot"],
+            "* String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters); "
+            "the hero's default name parts (offered again by the name entry) up to %d letters.  "
+            "Longer ones are refused.  `'` and `\"` are written full-width (they would end the "
+            "script's quoting)." % cfg["name_insert"]["cols"],
+            "* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones "
+            "are cut and reported.",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, pictures).",
+            "* The name window's character tables stay Japanese: the engine picks characters from "
+            "them by position (its English-letter table lets the player type an English name)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for t, r in extra.get(name, {}).get("tests", []):
+        out.append("| %s | %s |" % (t, r))
+    out.append("| Gameplay past the opening scenes, save/load, endings | not yet seen |")
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def main():
     names = sys.argv[1:] or sorted(os.listdir(os.path.join(ROOT, "games")))
     adult = load("research", "adult_text.json", default={})
@@ -573,6 +666,11 @@ def main():
             continue
         if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12", "jast_typed"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "adv98v":
+            out = adv98v_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

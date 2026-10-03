@@ -208,6 +208,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
+| Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
@@ -1542,7 +1543,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Miki [FD extras] `adv98v`
 - ♥ Nike [FD HD extras]
 - ♥ Noushuku Angel 120% (U-Jin Presents) [FD HD] `adv98v`
-- ♥ Pia Carrot e Youkoso!! [FD HD extras] `adv98v`
+- ♥ Pia Carrot e Youkoso!! [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Queen's Library [FD HD]
 - ♥ Sailor-fuku Senshi Felis [FD extras]
 - ♥ Sekai de Ichiban Kimi ga Suki! [FD]

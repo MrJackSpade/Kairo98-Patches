@@ -817,5 +817,31 @@
    "Long message (6-line test): the box's pager",
    "OK: lines 1-3, then 4-6 (lines 1-2 used to scroll out unread)"
   ]
+ ],
+ "pia_carrot": [
+  [
+   "Name prompt and name entry window",
+   "OK: prompts as filler cut to their Japanese width (ending before the input field); the window's labels as filler at each label's place, cut to its bytes; the hero's default name (8-letter filler) in the field; Finish clicked through"
+  ],
+  [
+   "Menus (uniform select, yes/no)",
+   "OK: menu items in their boxes at fixed width; the question in its one-line frame"
+  ],
+  [
+   "Opening narration",
+   "OK: filler wrapped between words to the frame, 3-line pages with a wait between (the engine used to wrap mid-word and draw a fourth line over the first)"
+  ],
+  [
+   "Hero's name inside a message",
+   "OK: name (filler) printed inline; the text after it carries on the same line without a mid-word break"
+  ],
+  [
+   "Speaker name tags in the first scene",
+   "OK: tag filler (cut to its procedure's slots) on the first line, the message on the next two, later pages of 3 lines"
+  ],
+  [
+   "Save/load, item lists, picture viewer",
+   "not yet seen"
+  ]
  ]
 }

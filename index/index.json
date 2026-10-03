@@ -53227,7 +53227,14 @@
      "path": "Pia Carrot e Youkoso!!\\Pia Carrot e Youkoso!! [HD]\\Pia Carrot e Youkoso!!.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/pia_carrot (patcher working, machine translation in progress)",
+     "url": "../games/pia_carrot/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18146 (erotic content)",
    "engine": "adv98v",
@@ -53235,7 +53242,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Queen's Library",

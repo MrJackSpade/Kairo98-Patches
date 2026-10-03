@@ -648,5 +648,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Pia Carrot e Youkoso!!": [
+  {
+   "label": "This repo: games/pia_carrot (patcher working, machine translation in progress)",
+   "url": "../games/pia_carrot/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
