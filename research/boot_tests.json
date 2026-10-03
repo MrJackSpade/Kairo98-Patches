@@ -907,5 +907,27 @@
    "Save/load, later chapters, endings",
    "not yet seen"
   ]
+ ],
+ "sayaka_gibo": [
+  [
+   "Sound board and term questions with their menus",
+   "OK: questions kept to their Japanese line width and count, paged first (the window close waits for a key), last page left with the menu on the frame's next line; menu items fixed width"
+  ],
+  [
+   "Caution message placed in the box (A7)",
+   "OK: filler wrapped from where it is placed"
+  ],
+  [
+   "Term entry window",
+   "OK: labels as filler at their places; Finish picked with the arrow keys; the default value's field shows filler under the stored term"
+  ],
+  [
+   "Opening scene",
+   "OK: filler wrapped between words to the 2-line box, pages with a wait between"
+  ],
+  [
+   "Save/load, later acts, endings",
+   "not yet seen"
+  ]
  ]
 }

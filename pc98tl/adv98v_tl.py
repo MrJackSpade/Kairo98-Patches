@@ -224,10 +224,45 @@ def end_proc(data, toks, effects=None):
     return max((c, b) for b, c in seen.items())[1] if seen else None
 
 
+def _subdir(vol, game_dir, kind):
+    """The game folder's subfolder for scripts or modules ("MES", "TCM"):
+    named so, or ending in "_MES" ("GIBO_MES"); None if there is none."""
+    for e in vol.listdir(vol.find(game_dir)["cluster"]):
+        if e["is_dir"] and (e["name"].upper() == kind or e["name"].upper().endswith("_" + kind)):
+            return game_dir + "/" + e["name"]
+    return None
+
+
+def mes_path(vol, game_dir, name):
+    return _subdir(vol, game_dir, "MES") + "/" + name
+
+
+def inline_end(data, toks, us=None):
+    """A file's message end written out after its messages instead of a
+    procedure call: the commands most often right after a message, up to
+    and including a text reset (AA n); with the window close (AB) among
+    them they wait for a key themselves, else a wait goes first.  None
+    when the file has none."""
+    seen = collections.Counter()
+    for _i, j, kind, _f in us if us is not None else units(data, toks):
+        if kind != "msg":
+            continue
+        x = j
+        while x < len(toks) and toks[x][0] in ("cmd", "num") and x - j < 8:
+            if toks[x][0] == "cmd" and data[toks[x][1]] == 0xAA and x + 1 < len(toks) and toks[x + 1][0] == "num":
+                seen[bytes(data[toks[j][1]:toks[x + 1][2]])] += 1
+                break
+            x += 1
+    if not seen:
+        return None
+    seq = max((c, b) for b, c in seen.items())[1]
+    return seq if seq[0] == 0xAB else WAIT + seq
+
+
 def _files(vol, game_dir):
     """The MES folder's scripts: [(name, path)]."""
-    d = vol.find(game_dir + "/MES")
-    return [(e["name"], game_dir + "/MES/" + e["name"]) for e in vol.listdir(d["cluster"])
+    mes = _subdir(vol, game_dir, "MES")
+    return [(e["name"], mes + "/" + e["name"]) for e in vol.listdir(vol.find(mes)["cluster"])
             if not e["is_dir"] and e["name"].upper().endswith((".MES", ".MEC"))]
 
 
@@ -238,7 +273,7 @@ def start_script(vol, game_dir, extraop):
         if e["is_dir"] or not e["name"].upper().endswith(".INI"):
             continue
         for _tag, data, _toks in _streams(vol.read(game_dir + "/" + e["name"]), extraop):
-            m = re.search(rb'"(?:[a-z]:)?\\?mes\\([^"\\]+\.mes)"', data, re.I)
+            m = re.search(rb'"(?:[a-z]:)?\\?(?:\w+_)?mes\\([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
     return "START.MES"
@@ -263,13 +298,11 @@ def _programs(vol, game_dir):
     """The engine's program files (the game folder's and its TCM modules'):
     [(name, path)]."""
     out = []
-    for sub in ("", "/TCM"):
-        try:
-            d = vol.find(game_dir + sub)
-        except FileNotFoundError:
-            continue
-        out += [((sub[1:] + "/" if sub else "") + e["name"], game_dir + sub + "/" + e["name"])
-                for e in vol.listdir(d["cluster"]) if not e["is_dir"] and e["name"].upper().endswith(PROGRAM_EXT)]
+    tcm = _subdir(vol, game_dir, "TCM")
+    for folder in [game_dir] + ([tcm] if tcm else []):
+        prefix = folder[len(game_dir) + 1:] + "/" if folder != game_dir else ""
+        out += [(prefix + e["name"], folder + "/" + e["name"]) for e in vol.listdir(vol.find(folder)["cluster"])
+                if not e["is_dir"] and e["name"].upper().endswith(PROGRAM_EXT)]
     return out
 
 
@@ -530,13 +563,14 @@ def frame_size(frame):
     return x2 - x1, max(1, (y2 - y1 - GLYPH_H) // LINE_H + 1)
 
 
-def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None):
+def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None,
+          max_rows=None):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
     it on its line; down: the lines what follows moves on before the next
-    text (which must stay inside the frame); max_cols: a narrower width
-    than the frame's to wrap to."""
+    text (which must stay inside the frame); max_cols, max_rows: a
+    narrower width and fewer lines than the frame's to keep to."""
     size = frame_size(frame)
     if kind in ("item", "inline", "label") or not size or size[1] == 1:
         # text in a one-line frame often has more drawn after it on the
@@ -558,6 +592,8 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, do
     cols, rows = size
     if max_cols:
         cols = min(cols, max_cols)
+    if max_rows:
+        rows = min(rows, max_rows)
     row, col = start
     if col >= cols:
         row, col = row + 1, 0
@@ -565,35 +601,35 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, do
     if row >= rows:
         # carried past the frame's last line (line breaks after a full
         # page): a new page first, or it would draw over the first line
-        lead, row, col = (WAIT + proc if proc else b""), 0, 0
+        lead, row, col = (brk or b""), 0, 0
     lines = wrap(text, cols, col)
     # the first page has the lines left below the start row
     first = rows - row
     pages = [lines[:first]] + [lines[k:k + rows] for k in range(first, len(lines), rows)]
     pages = [p for p in pages if p]
-    if len(pages) > 1 and proc is None:
-        warn.append("%s: %d lines, the frame shows %d and this file has no message-end procedure to page with"
+    if len(pages) > 1 and not brk:
+        warn.append("%s: %d lines, the frame shows %d and this file has no message end to page with"
                     % (sid, len(lines), rows))
         pages = [lines]
     end_row = (row if len(pages) == 1 else 0) + len(pages[-1]) - 1
     end_col = _width(pages[-1][-1]) + (col if len(pages) == 1 and len(pages[-1]) == 1 else 0)
     body = [b"\xa5".join(_encode(ln) if ln else b"" for ln in page) for page in pages]
-    out = lead + ((WAIT + proc).join(body) if proc else body[0])
+    out = lead + (brk.join(body) if brk else body[0])
     if reserve and end_col + reserve > cols:
         # what follows on this line (the hero's name) goes to the next one
-        if end_row + 1 < rows or not proc:
+        if end_row + 1 < rows or not brk:
             out, end_row, end_col = out + b"\xa5", end_row + 1, 0
         else:
-            out, end_row, end_col = out + WAIT + proc, 0, 0
-    if down and proc and end_row + down >= rows:
+            out, end_row, end_col = out + brk, 0, 0
+    if down and brk and end_row + down >= rows:
         # what follows (a name tag, line breaks) would leave the frame: it
         # opens the next page instead
-        out, end_row, end_col = out + WAIT + proc, 0, 0
+        out, end_row, end_col = out + brk, 0, 0
     return out, (end_row, end_col)
 
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
-                 frames=None):
+                 frames=None, fallback=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -607,6 +643,9 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     reps = {}
     us = units(data, toks, frames)
     starts = [_start(data, toks, i, proc, insert, effects or {}) for i, _j, _k, _f in us]
+    # a page break: a wait and the message-end procedure, or the file's
+    # own message end where it has none
+    brk = WAIT + proc if proc else inline_end(data, toks, us) or fallback
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
@@ -625,9 +664,21 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         s, e = toks[i][1], toks[j - 1][2]
         # a question with a menu after it keeps to its Japanese lines'
         # width: the menu's window is drawn over the frame's right side
+        # and its Japanese line count (the menu may sit on the frame's next
+        # line; longer English pages first)
         narrow = _line_cols(data, toks, i, j) if _menu_follows(data, toks, j) else None
-        new, end = build(text, "label" if located and kind == "msg" else kind, frame, unit_cells(data, toks, i, j),
-                         proc, warn, ids.get(ref, ref), start, reserve, down, narrow)
+        lines = 1 + sum(1 for k, s2, _e in toks[i:j] if k == "cmd" and data[s2] == 0xA5) if narrow else None
+        bkind = kind
+        if located and kind == "msg":
+            # placed text: a label at its Japanese width, or, with lines
+            # of its own, a message starting where it is placed
+            x, y = located
+            if lines is None and any(k == "cmd" and data[s2] == 0xA5 for k, s2, _e in toks[i:j]) and frame                     and x is not None and x >= frame[0] and y >= frame[1]:
+                start = ((y - frame[1]) // LINE_H, x - frame[0])
+            else:
+                bkind = "label"
+        new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
+                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -760,11 +811,16 @@ def _start(data, toks, i, proc, insert, effects):
     last line before the first line change, which the text leaves room
     for.  Where the text before is in another branch of a block this
     pages sooner than needed, never later.  After a page end the message
-    starts lines down a fresh page.  located: a cursor placement (A7 x y)
-    comes first, so the text is a label at a fixed place on the screen."""
+    starts lines down a fresh page.  located: (x, y) of a cursor
+    placement (A7 x y) that comes first: the text is placed on the screen
+    there."""
     gap, stop = _gap(data, toks, i, -1, proc, insert, effects)
     lines, cols, need = _layout(data, gap, insert, effects)
-    located = any(k == "cmd" and data[s] == 0xA7 for k, s, _e in gap)
+    located = None
+    for y, (k, s, _e) in enumerate(gap):
+        if k == "cmd" and data[s] == 0xA7:
+            nums = [t for t in gap[y + 1:y + 3] if t[0] == "num"]
+            located = tuple(_num(data, t[1]) for t in nums) if len(nums) == 2 else (None, None)
     return stop == "text", lines, cols, need, located
 
 
@@ -897,13 +953,24 @@ def run_patch(here, src, dst, mode="en"):
         frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items() if f})
     start_eff, base_nums = dict(anywhere), set()
     for bname in base:
-        bdata = vol.read(cfg["game_dir"] + "/MES/" + bname)
+        bdata = vol.read(mes_path(vol, cfg["game_dir"], bname))
         btoks = av.tokenize(bdata, extraop)
         base_nums |= set(procs(bdata, btoks))
         frames_anywhere.update(proc_frames(bdata, btoks))
         plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols)])
         start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols))
     table = (cfg["proc_slot"], cfg["proc_slots"], base_nums) if "proc_slot" in cfg else None
+    # a file that ends its messages neither with a procedure nor written
+    # out pages with a wait and the game's usual text reset (AA n), which
+    # needs no procedure (a file run at startup may not have them yet)
+    resets = collections.Counter()
+    for _oname, opath in _files(vol, cfg["game_dir"]):
+        odata = vol.read(opath)
+        otoks = av.tokenize(odata, extraop)
+        for x, (k, s2, _e) in enumerate(otoks[:-1]):
+            if k == "cmd" and odata[s2] == 0xAA and otoks[x + 1][0] == "num":
+                resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
+    game_break = WAIT + resets.most_common(1)[0][0] if resets else None
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
@@ -947,7 +1014,7 @@ def run_patch(here, src, dst, mode="en"):
                                                                     name_cols)])
             frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
-                               frames)
+                               frames, game_break)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -959,7 +1026,7 @@ def run_patch(here, src, dst, mode="en"):
                                                                             name_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
-                                           {**frames, **proc_frames(inner, itoks)})
+                                           {**frames, **proc_frames(inner, itoks)}, game_break)
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

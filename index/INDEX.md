@@ -214,6 +214,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Chiemi | [This repo: games/chiemi (patcher working, machine translation in progress)](../games/chiemi/notes.md) |
 | Fairytale Red-Zone | Jinmon Yuugi | [This repo: games/jinmon_yuugi (patcher working, machine translation in progress)](../games/jinmon_yuugi/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
+| Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
@@ -2263,7 +2264,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Manami - Ai to Koukan no Hibi [FD HD] `adv98v`
 - ♥ Miho [FD HD extras] `adv98v`
 - ♥ Naomi - Bishoujo-tachi no Yakata [FD HD extras] `adv98v` — *MTL (this repo)*
-- ♥ Sayaka - Gibo [FD HD] `adv98v`
+- ♥ Sayaka - Gibo [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Tokyo Joshikousei Sailor-fuku Nyuumon Dai-1-kan [FD]
 - ♥ Toumei Ningen [FD HD] `adv98v`
 - ♥ U-Jin Special Collection (Kounai Shasei re-release) [FD HD] `adv98v`

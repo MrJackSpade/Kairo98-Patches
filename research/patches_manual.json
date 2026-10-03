@@ -693,5 +693,13 @@
    "url": "https://vndb.org/r160189",
    "source": "VNDB"
   }
+ ],
+ "FairytaleRed-zone.zip/Sayaka - Gibo": [
+  {
+   "label": "This repo: games/sayaka_gibo (patcher working, machine translation in progress)",
+   "url": "../games/sayaka_gibo/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

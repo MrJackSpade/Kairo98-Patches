@@ -116,3 +116,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Angel (U-Jin Presents) | adv98v (Adv98V 1.70) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged, name tags and hero name inline, procedure slots and MEC buffer checked | OK (see notes) |
 | Chiemi | adv98v (Adv98V 1.71) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged to the box its procedures set | OK (see notes) |
 | Jinmon Yuugi | adv98v (Adv98V 1.75) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged | OK (see notes) |
+| Sayaka - Gibo | adv98v (Adv98V 1.73) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged (its written-out message end) | OK (see notes) |
