@@ -22,6 +22,7 @@ ides' Adv98V script engine (`PIA/`), on a hard-disk image: 352 scripts with text
   the original messages.
 * Menu items and text in one-line frames keep their Japanese width.
 * A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
+* Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (up to 8 columns, the name entry's limit) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 * The hero's name, printed mid-message by a procedure call with its inline flag set, leaves room for the longest name the name entry takes (8 columns), and the text after it carries on the same line.
 * Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on into free slots after it); a build that would overrun one is refused.
 * String variables' values (`@n='...'` arguments) and the strings in the engine's programs are rewritten in place.
@@ -36,7 +37,8 @@ Translation and the content classification (♥) are done by the translation mod
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * The hero's name is printed between two message runs: the run before it ends where the name starts (end it with a space if one should come before the name), the run after it starts right after the name.
-* Menu items (`i` ids) and messages in one-line frames: twice their `max_cells` in letters; longer ones are cut and reported.
+* Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
+* Strings in `*.MEC` files: the engine loads these into one shared buffer, each at its own offset, so a `.MEC` file can only grow up to the next file's offset (or, for the top one, as far as the original game's loads reach; past that the buffer meets the engine's stack), often only a few dozen bytes past its Japanese.  The patcher refuses a build where one outgrows its room and lists that file's strings.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters); the hero's default name parts (offered again by the name entry) up to 8 letters.  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.

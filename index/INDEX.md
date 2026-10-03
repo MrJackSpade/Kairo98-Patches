@@ -208,6 +208,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
+| Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
@@ -1511,7 +1512,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Cocktail Soft (`CocktailSoft.zip`)
 
 - ♥ [Cocktail Soft materials] [extras]
-- ♥ Angel (U-Jin Presents) [CD FD HD extras] `adv98v`
+- ♥ Angel (U-Jin Presents) [CD FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Bishoujo Tsuushin - Chat no Susume [FD extras] `adv98v`
 - ♥ Can Can Bunny [FD extras]
 - ♥ Can Can Bunny Extra [FD HD] `adv98v`

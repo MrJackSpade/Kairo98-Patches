@@ -37,7 +37,8 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             whose procedures hold text), "name_insert"
             ({"call": hex of the hero's name procedure call, "flag": hex of
             the register set that makes it print inline, "cols": the
-            widest name part it prints}), "boot_steps"}
+            widest name part it prints}), "name_cols" (the widest name the
+            name entry takes, where there is no name_insert), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -195,18 +196,22 @@ def unit_cells(data, toks, i, j):
     return -(-half // 2)
 
 
-def end_proc(data, toks):
+def end_proc(data, toks, effects=None):
     """The file's message-end procedure: the BA call that most often
-    follows a message within a few tokens; None when there is none."""
+    follows a message within a few tokens; None when there is none.
+    With effects (resolve_effects), only a procedure that clears the
+    text counts (a game may call one that prints an ellipsis first)."""
     seen = collections.Counter()
     for _i, j, kind, _f in units(data, toks):
         if kind != "msg":
             continue
         for x in range(j, min(j + 12, len(toks) - 1)):
             k, s, _e = toks[x]
-            if k == "cmd" and data[s] == 0xBA:
-                if toks[x + 1][0] == "num":
-                    seen[bytes(data[s:toks[x + 1][2]])] += 1
+            if k == "cmd" and data[s] == 0xBA and toks[x + 1][0] == "num":
+                call = bytes(data[s:toks[x + 1][2]])
+                if effects is not None and effects.get(_call_num(call), ("none",))[0] != "reset":
+                    continue
+                seen[call] += 1
                 break
             if k in TEXT:
                 break
@@ -250,10 +255,19 @@ def _programs(vol, game_dir):
 
 
 def _is_table(text):
-    """A character table the name entry picks from by position (kana,
-    full-width letters and Japanese punctuation, no kanji)."""
+    """A character table the name entry picks from by position: kana,
+    full-width letters and Japanese punctuation without kanji, or kana in
+    code order (a stray code byte may sit before it)."""
     body = [c for c in text if c != "　"]
-    return len(body) >= 20 and all("、" <= c <= "ヿ" or "！" <= c <= "～" for c in body)
+    if len(body) >= 20 and all("、" <= c <= "ヿ" or "！" <= c <= "～" for c in body):
+        return True
+    # tables list kana in code order: six or more rising kana in a row
+    run = best = 0
+    for prev, c in zip([""] + body, body):
+        kana = "ぁ" <= c <= "ヶ"
+        run = run + 1 if kana and prev and "ぁ" <= prev <= "ヶ" and c > prev else (1 if kana else 0)
+        best = max(best, run)
+    return best >= 6
 
 
 def program_strings(exe):
@@ -277,11 +291,20 @@ def program_strings(exe):
     return out
 
 
+def _all_japanese(raw):
+    """An argument that is Japanese text only (a name entry's default)."""
+    try:
+        text = raw.decode("cp932")
+    except UnicodeDecodeError:
+        return False
+    return bool(text) and all(ord(c) >= 0x3000 for c in text)
+
+
 def var_strings(vol, game_dir, extraop, entry_cols):
     """{file name: [(start, end, text, room, pad)]}: the values the scripts give
     string variables (@n='...' in an argument: the hero's default name,
     item names, picture titles), and the name entry's defaults (an
-    argument holding just one of them).  room is the bytes a value may
+    argument holding just one of them, or just Japanese text).  room is the bytes a value may
     take: its own length, or the name entry's width for the names it
     offers; a value inside a procedure keeps its length, as the
     procedure's slot is fixed.  pad: a shorter English value is padded
@@ -306,8 +329,10 @@ def var_strings(vol, game_dir, extraop, entry_cols):
             if k != "arg":
                 continue
             spans = [(s + m.start(1), s + m.end(1)) for m in _HERO.finditer(data[s:e])]
-            if bytes(data[s + 1:e - 1]) in values:
+            inner = bytes(data[s + 1:e - 1])
+            if inner in values or _all_japanese(inner):
                 spans.append((s + 1, e - 1))
+                offered.add(inner)
             for a, b in spans:
                 raw = bytes(data[a:b])
                 if not raw.decode("cp932").strip("　 "):
@@ -319,6 +344,34 @@ def var_strings(vol, game_dir, extraop, entry_cols):
         if found:
             out[name] = sorted(found)
     return out
+
+
+def mec_rooms(vol, game_dir, extraop):
+    """{file name: bytes}: the room of each file the scripts load into the
+    engine's MEC buffer (C0 "file" offset: the file goes in at that byte
+    offset, beside the others loaded at other offsets).  A file may take up to the next higher offset any script loads at, or,
+    loaded at the top, up to the furthest the original game's loads
+    reach (past that the buffer meets the engine's stack); never less
+    than its own size."""
+    sizes = {name.upper(): len(vol.read(path)) for name, path in _files(vol, game_dir)}
+    loads = []
+    for _name, path in _files(vol, game_dir):
+        for _tag, data, toks in _streams(vol.read(path), extraop):
+            for x, (k, s, _e) in enumerate(toks[:-2]):
+                if k == "cmd" and data[s] == 0xC0 and toks[x + 1][0] == "arg" and toks[x + 2][0] == "num":
+                    arg = bytes(data[toks[x + 1][1] + 1:toks[x + 1][2] - 1]).decode("cp932")
+                    target = arg.replace("\\", "/").split("/")[-1].upper()
+                    if target in sizes:
+                        loads.append((target, _num(data, toks[x + 2][1])))
+    if not loads:
+        return {}
+    top = max(off + sizes[t] for t, off in loads)
+    offsets = sorted({off for _t, off in loads})
+    rooms = {}
+    for t, off in loads:
+        nxt = min([o for o in offsets if o > off] + [top])
+        rooms[t] = min(rooms.get(t, nxt - off), nxt - off)
+    return {t: max(r, sizes[t]) for t, r in rooms.items()}
 
 
 # ---- extraction ------------------------------------------------------------------------------
@@ -344,7 +397,7 @@ def run_extract(here, src):
                 order.append(key)
     extra = [("var", name, "v%d" % n, s, e, text, room // 2)
              for name, found in var_strings(vol, cfg["game_dir"], cfg.get("extraop", False),
-                                            cfg.get("name_insert", {}).get("cols", 0)).items()
+                                            cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))).items()
              for n, (s, e, text, room, _pad) in enumerate(found)]
     for name, path in _programs(vol, cfg["game_dir"]):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
@@ -458,15 +511,17 @@ def frame_size(frame):
     return x2 - x1, max(1, (y2 - y1 - GLYPH_H) // LINE_H + 1)
 
 
-def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0):
+def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, down=0):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
-    it on its line."""
+    it on its line; down: the lines what follows moves on before the next
+    text (which must stay inside the frame)."""
     size = frame_size(frame)
-    if kind in ("item", "inline") or not size or size[1] == 1:
+    if kind in ("item", "inline", "label") or not size or size[1] == 1:
         # text in a one-line frame often has more drawn after it on the
         # line (an input field, numbers), so it keeps its Japanese width
+        # (a label placed on the screen, too)
         room = 2 * cells if kind == "item" or not size else size[0] if kind == "inline" else min(size[0], 2 * cells)
         flat = " ".join(text.split("\n"))
         if _width(flat) > room:
@@ -484,8 +539,11 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0):
     row, col = start
     if col >= cols:
         row, col = row + 1, 0
+    lead = b""
     if row >= rows:
-        row = 0
+        # carried past the frame's last line (line breaks after a full
+        # page): a new page first, or it would draw over the first line
+        lead, row, col = (WAIT + proc if proc else b""), 0, 0
     lines = wrap(text, cols, col)
     # the first page has the lines left below the start row
     first = rows - row
@@ -498,17 +556,21 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0):
     end_row = (row if len(pages) == 1 else 0) + len(pages[-1]) - 1
     end_col = _width(pages[-1][-1]) + (col if len(pages) == 1 and len(pages[-1]) == 1 else 0)
     body = [b"\xa5".join(_encode(ln) if ln else b"" for ln in page) for page in pages]
-    out = (WAIT + proc).join(body) if proc else body[0]
+    out = lead + ((WAIT + proc).join(body) if proc else body[0])
     if reserve and end_col + reserve > cols:
         # what follows on this line (the hero's name) goes to the next one
         if end_row + 1 < rows or not proc:
             out, end_row, end_col = out + b"\xa5", end_row + 1, 0
         else:
             out, end_row, end_col = out + WAIT + proc, 0, 0
+    if down and proc and end_row + down >= rows:
+        # what follows (a name tag, line breaks) would leave the frame: it
+        # opens the next page instead
+        out, end_row, end_col = out + WAIT + proc, 0, 0
     return out, (end_row, end_col)
 
 
-def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False):
+def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, START.MES's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -521,7 +583,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
     us = units(data, toks)
-    starts = [_start(data, toks, i, proc, insert) for i, _j, _k, _f in us]
+    starts = [_start(data, toks, i, proc, insert, effects or {}) for i, _j, _k, _f in us]
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
@@ -529,14 +591,17 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         if text is None:
             end = None
             continue
-        cont, row, col = starts[n]
-        # a message that continues the last one's line starts where it ended
-        start = (end[0], end[1] + col) if cont and end else (row, col)
-        nxt = starts[n + 1] if n + 1 < len(us) else (False, 0, 0)
-        reserve = nxt[2] if nxt[0] and us[n + 1][2] == "msg" else 0
+        cont, down, col, _need, located = starts[n]
+        # a message after text on its page starts where that text ended,
+        # moved on by what was printed between
+        start = ((end[0] + down, col) if down else (end[0], end[1] + col)) if cont and end else (down, col)
+        # room for what is printed after it on its line (a name, an
+        # ellipsis), and the lines that moves on before more text
+        reserve, down, follows = _after(data, toks, j, proc, insert, effects or {})
+        down = down if follows else 0
         s, e = toks[i][1], toks[j - 1][2]
-        new, end = build(text, kind, frame, unit_cells(data, toks, i, j), proc, warn, ids.get(ref, ref),
-                         start, reserve)
+        new, end = build(text, "label" if located and kind == "msg" else kind, frame, unit_cells(data, toks, i, j),
+                         proc, warn, ids.get(ref, ref), start, reserve, down)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -561,49 +626,174 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     return bytes(out)
 
 
-def _start(data, toks, i, proc, insert):
-    """Where a message starts: (continues, line, column).  Looking back
-    from the message to the last text, page end, frame or procedure call:
+def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
+    """{number: facts} of the procedures a stream defines, read off their
+    bodies, for resolve_effects: the columns of text they print (the
+    Japanese's or the English's, the wider; a string variable shown with
+    "DISP @n" counts as a name of name_cols), their line breaks (A5),
+    whether they set the frame or clear the text (A6, AA, AB, or a call
+    of the message-end procedure), and the procedures they call."""
+    defs = procs(data, toks)
+    starts = {t[1]: x for x, t in enumerate(toks)}
+    us = units(data, toks)
+    out = {}
+    for pn, (bs, be) in defs.items():
+        x, body = starts.get(bs), []
+        while x is not None and x < len(toks) and toks[x][1] < be:
+            body.append(x)
+            x += 1
+        cmds = [data[toks[y][1]] for y in body if toks[y][0] == "cmd"]
+        calls = [bytes(data[toks[y][1]:toks[y + 1][2]]) for y in body
+                 if toks[y][0] == "cmd" and data[toks[y][1]] == 0xBA and y + 1 < len(toks)]
+        width = sum(name_cols for y in body if toks[y][0] == "arg"
+                    and _DISP.match(bytes(data[toks[y][1]:toks[y][2]])))
+        for n, (i, j, _kind, _f) in enumerate(us):
+            if bs <= toks[i][1] < be:
+                en = by_ref.get("%s:%s%d" % (name, tag, n))
+                width += max(2 * unit_cells(data, toks, i, j), _width(" ".join(en.split("\n"))) if en else 0)
+        out[pn] = {"width": width, "breaks": cmds.count(0xA5),
+                   "reset": bool(set(cmds) & {0xA6, 0xAA, 0xAB}) or (proc is not None and proc in calls),
+                   "calls": [_call_num(c) for c in calls]}
+    return out
 
-    * a call of the name procedure with its inline flag set (insert:
-      (call bytes, flag bytes, columns)) prints the hero's name on the line,
-      so the message starts that many columns on; right after text, with
-      only such calls and variable sets between, it continues that text's
-      line (continues: True);
-    * any other call but the message-end one prints a speaker's name tag,
-      which ends its line, so the message starts on the second line."""
-    gap, x, stop = [], i - 1, None
-    while x >= 0 and i - x <= 24:
+
+_DISP = re.compile(rb'^"DISP @\d+"$')
+
+
+def resolve_effects(layers):
+    """{number: effect} in force on the text cursor, from layers of
+    proc_effects facts (later ones over earlier ones), with what a
+    procedure calls counted as its own: ("tag", columns) prints text and
+    ends its line (a speaker's name tag); ("insert", columns) prints text
+    on the line; ("reset",) sets the frame or clears the text; ("break",
+    n) only breaks the line n times; ("none",) leaves the cursor alone
+    (pictures, sounds, flags)."""
+    facts = {}
+    for layer in layers:
+        facts.update(layer)
+
+    def total(pn, seen):
+        f = facts.get(pn)
+        if f is None or pn in seen:
+            return 0, 0, False
+        width, breaks, reset = f["width"], f["breaks"], f["reset"]
+        for c in f["calls"]:
+            w, b, r = total(c, seen | {pn})
+            width, breaks, reset = width + w, breaks + b, reset or r
+        return width, breaks, reset
+
+    eff = {}
+    for pn in facts:
+        width, breaks, reset = total(pn, frozenset())
+        if reset:
+            eff[pn] = ("reset",)
+        elif width:
+            eff[pn] = ("tag", width) if breaks else ("insert", width)
+        elif breaks:
+            eff[pn] = ("break", breaks)
+        else:
+            eff[pn] = ("none",)
+    return eff
+
+
+def _call_num(call):
+    return av._num(call, 1) if len(call) > 1 else None
+
+
+def _start(data, toks, i, proc, insert, effects):
+    """Where a message starts: (continues, lines, column, need, located).  Looking
+    back from the message to the last text, or to a page end or frame
+    reset (the message-end procedure, A6, AA, or a procedure that does
+    those), and then forward over what lies between:
+
+    * a line break (A5, or a procedure of breaks) moves to the next line;
+    * a speaker's name tag (a procedure printing text and ending its line)
+      prints on the line, then moves to the next;
+    * a procedure printing text without a break (the hero's name: the
+      name procedure with its inline flag set, insert: (call bytes, flag
+      bytes, columns); or a fixed text) moves along the line.
+
+    After text the message continues that text's page (continues: True):
+    lines down from where the text ended, at column (column: past where
+    it ended when lines is 0); need is what is printed on that text's
+    last line before the first line change, which the text leaves room
+    for.  Where the text before is in another branch of a block this
+    pages sooner than needed, never later.  After a page end the message
+    starts lines down a fresh page.  located: a cursor placement (A7 x y)
+    comes first, so the text is a label at a fixed place on the screen."""
+    gap, stop = _gap(data, toks, i, -1, proc, insert, effects)
+    lines, cols, need = _layout(data, gap, insert, effects)
+    located = any(k == "cmd" and data[s] == 0xA7 for k, s, _e in gap)
+    return stop == "text", lines, cols, need, located
+
+
+def _after(data, toks, j, proc, insert, effects):
+    """What follows a text run up to the next text or page end: (need,
+    lines, text follows) as in _start, read forward."""
+    gap, stop = _gap(data, toks, j, 1, proc, insert, effects)
+    lines, _cols, need = _layout(data, gap, insert, effects)
+    return need, lines, stop == "text" and not any(k == "cmd" and data[s] == 0xA7 for k, s, _e in gap)
+
+
+def _gap(data, toks, at, step, proc, insert, effects):
+    """The tokens from at (back from before it, or on from it) to the
+    nearest text or page end: (tokens in order, "text"/"reset"/None)."""
+    gap, x, stop = [], at - 1 if step < 0 else at, None
+    while 0 <= x < len(toks) and abs(x - at) <= 32:
         k, s, _e = toks[x]
         if k in TEXT:
             stop = "text"
             break
-        if k == "cmd" and data[s] in (0xA6, 0xAA, 0xA5):
+        if k == "cmd" and data[s] in (0xA6, 0xAA, 0xAB):
             stop = "reset"
             break
-        if k == "cmd" and data[s] == 0xBA and x + 1 < len(toks) and x + 1 < i:
+        if k == "cmd" and data[s] == 0xBA and x + 1 < len(toks) and toks[x + 1][0] == "num":
             call = bytes(data[s:toks[x + 1][2]])
-            if not insert or call != insert[0]:
-                stop = "end" if call == proc else "tag"
+            if call == proc or (not (insert and call == insert[0])
+                                and effects.get(_call_num(call), ("none",))[0] == "reset"):
+                stop = "reset"
                 break
         gap.append(toks[x])
-        x -= 1
-    gap.reverse()
-    cols, flag, tagged, clean = 0, False, stop == "tag", True
+        x += step
+    if step < 0:
+        gap.reverse()
+    return gap, stop
+
+
+def _layout(data, gap, insert, effects):
+    """(lines, column, need) after what a gap prints: see _start."""
+    lines, cols, need, flag = 0, 0, 0, False
+
+    def advance(width, down):
+        nonlocal lines, cols, need
+        if not lines:
+            need += width
+        if down:
+            lines, cols = lines + down, 0
+        else:
+            cols += width
+
     for y, (k, s, e) in enumerate(gap):
         if insert and bytes(data[s:e]) == insert[1]:
             flag = True
-        elif k == "cmd" and data[s] == 0xBA:
-            if flag:
-                cols += insert[2]
-            else:
-                cols, tagged, clean = 0, True, False
-            flag = False
-        elif k not in ("reg", "var", "num"):
-            clean = False
-    if stop == "text" and clean:
-        return True, 0, cols
-    return False, (1 if tagged else 0), cols
+        elif k == "cmd" and data[s] == 0xA5:
+            advance(0, 1)
+        elif k == "cmd" and data[s] == 0xBA and y + 1 < len(gap):
+            call = bytes(data[s:gap[y + 1][2]])
+            eff = effects.get(_call_num(call), ("none",))
+            if insert and call == insert[0]:
+                if flag:
+                    advance(insert[2], 0)
+                else:
+                    advance(eff[1] if eff[0] == "tag" else 0, 1)
+                flag = False
+            elif eff[0] == "insert":
+                advance(eff[1], 0)
+            elif eff[0] == "tag":
+                advance(eff[1], 1)
+            elif eff[0] == "break":
+                advance(0, eff[1])
+    return lines, cols, need
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -632,9 +822,24 @@ def run_patch(here, src, dst, mode="en"):
     table = ((cfg["proc_slot"], cfg["proc_slots"], set(procs(start, av.tokenize(start, extraop))))
              if "proc_slot" in cfg else None)
     fit = mode == "pseudo"
+    stoks = av.tokenize(start, extraop)
+    name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
+    # procedures defined only in other files (run at startup, say):
+    # each number's widest definition anywhere, under START.MES's own
+    anywhere = {}
+    for oname, opath in _files(vol, cfg["game_dir"]):
+        odata = vol.read(opath)
+        for pn, f in proc_effects(odata, av.tokenize(odata, extraop), oname, "", by_ref, None, name_cols).items():
+            if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
+                anywhere[pn] = f
+    start_eff = proc_effects(start, stoks, "START.MES", "", by_ref, None, name_cols)
+    start_eff = {**anywhere, **proc_effects(start, stoks, "START.MES", "", by_ref,
+                                            end_proc(start, stoks, resolve_effects([anywhere, start_eff])),
+                                            name_cols)}
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
-    variables = var_strings(vol, cfg["game_dir"], extraop, cfg.get("name_insert", {}).get("cols", 0))
+    variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
+    rooms = mec_rooms(vol, cfg["game_dir"], extraop)
     for name, path in _programs(vol, cfg["game_dir"]):
         exe = vol.read(path)
         runs = program_strings(exe)
@@ -664,22 +869,47 @@ def run_patch(here, src, dst, mode="en"):
             out += data[pos:s] + (raw.ljust(e - s) if pad else raw)
             pos = e
         data = bytes(out + data[pos:])
-        streams = _streams(data, extraop)
-        proc = end_proc(data, streams[0][2])
-        nums = table[:2] + (set(),) if table and name.upper() == "START.MES" else table
-        new = patch_stream(data, streams[0][2], "", name, by_ref, ids, proc, warn, nums, insert, fit)
-        if len(streams) > 1:
-            # the tails: re-encrypt each rebuilt tail in place of the old one
-            toks = av.tokenize(new, extraop)
-            crypts = [t for t in toks if t[0] == "crypt"]
-            out, pos = bytearray(), 0
-            for (tag, inner, itoks), (_k, s, e) in zip(streams[1:], crypts):
-                key = _num(new, [t for t in toks if t[2] == s][0][1])
-                rebuilt = patch_stream(inner, itoks, tag, name, by_ref, ids, end_proc(inner, itoks) or proc, warn,
-                                       nums, insert, fit)
-                out += new[pos:s] + av.encrypt(rebuilt, key)
-                pos = e
-            new = bytes(out + new[pos:])
+        def rebuild(texts):
+            streams = _streams(data, extraop)
+            plain = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, None,
+                                                             name_cols)])
+            proc = end_proc(data, streams[0][2], plain)
+            nums = table[:2] + (set(),) if table and name.upper() == "START.MES" else table
+            effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
+                                                                    name_cols)])
+            new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects)
+            if len(streams) > 1:
+                # the tails: re-encrypt each rebuilt tail in place of the old one
+                toks = av.tokenize(new, extraop)
+                crypts = [t for t in toks if t[0] == "crypt"]
+                out, pos = bytearray(), 0
+                for (tag, inner, itoks), (_k, s, e) in zip(streams[1:], crypts):
+                    key = _num(new, [t for t in toks if t[2] == s][0][1])
+                    effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
+                                                                            name_cols)])
+                    rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
+                                           end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects)
+                    out += new[pos:s] + av.encrypt(rebuilt, key)
+                    pos = e
+                new = bytes(out + new[pos:])
+            return new
+
+        new = rebuild(by_ref)
+        room = rooms.get(name.upper())
+        if room and len(new) > room:
+            mine = sorted({ids[r] for r in by_ref if r.startswith(name + ":")})
+            if not fit:
+                raise SystemExit("%s: %d bytes with the English, its place in the engine's MEC buffer holds %d "
+                                 "(strings %s); shorten them" % (name, len(new), room, ", ".join(mine)))
+            # the --pseudo filler: this file's texts cut until it fits
+            for scale in (0.8, 0.6, 0.45, 0.3, 0.2, 0.1, 0):
+                texts = {r: t for r, t in by_ref.items() if not r.startswith(name + ":")}
+                if scale:
+                    texts.update({r: t[:max(1, int(len(t) * scale))] for r, t in by_ref.items()
+                                  if r.startswith(name + ":")})
+                new = rebuild(texts)
+                if len(new) <= room:
+                    break
         if new != vol.read(path):
             vol.write(path, new)
     note = MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii")

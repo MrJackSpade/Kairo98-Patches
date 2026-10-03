@@ -21,6 +21,7 @@ ides' Adv98V script engine (`NAOMI/`), on a hard-disk image: 35 scripts with tex
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
 * Menu items and text in one-line frames keep their Japanese width.
+* Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (its Japanese width) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 * The strings in the engine's programs are rewritten in place.
 
 ## Script
@@ -32,7 +33,7 @@ Translation and the content classification (♥) are done by the translation mod
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
-* Menu items (`i` ids) and messages in one-line frames: twice their `max_cells` in letters; longer ones are cut and reported.
+* Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled

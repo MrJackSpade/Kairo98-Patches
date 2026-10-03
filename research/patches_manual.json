@@ -664,5 +664,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Angel (U-Jin Presents)": [
+  {
+   "label": "This repo: games/angel (patcher working, machine translation in progress)",
+   "url": "../games/angel/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
