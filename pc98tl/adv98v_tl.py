@@ -68,7 +68,9 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             its reset), "proc_fullwidth" (an engine that hangs on an ASCII
             string in a procedure body: the text of procedures, the
             speakers' name tags, is written in full-width letters),
-            "boot_steps"}
+            "var_cols" ({"n": columns}: what "DISP @n" shows where the
+            engine shows more than the variable's own values, e.g. a
+            surname shown with the given name after it), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -86,7 +88,8 @@ TEXT = ("chr1", "chr2", "str")
 LINE_H, GLYPH_H = 20, 16
 # the engine being patched (set by run_patch from game.json): "advh" for
 # ADVH's half-width codes, "line_h" its line height in dots
-ENGINE = {"advh": False, "line_h": LINE_H, "keep_flag": None, "proc_fullwidth": False}
+ENGINE = {"advh": False, "line_h": LINE_H, "keep_flag": None, "proc_fullwidth": False,
+          "var_cols": {}, "name_cols": 0}
 WAIT = b"\xd1\x24\x26\x23"      # D1 1 3 0: wait for a key or click, as after a message
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -979,6 +982,14 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         # line; longer English pages first)
         narrow = _line_cols(data, toks, i, j) if _menu_follows(data, toks, j) else None
         lines = 1 + sum(1 for k, s2, _e in toks[i:j] if k == "cmd" and data[s2] == 0xA5) if narrow else None
+        if n + 1 < len(us) and starts[n + 1][0] and frame and kind == "msg":
+            # text placed next on this page (A7) at a line of the frame:
+            # this message keeps above that line (pages sooner if need be)
+            spot = starts[n + 1][4]
+            if spot and spot[0] is not None and spot[0] >= frame[0] and spot[1] > frame[1]:
+                above = (spot[1] - frame[1]) // ENGINE["line_h"]
+                if above > 0:
+                    lines = min(lines, above) if lines else above
         bkind = kind
         if located and kind == "inline":
             bkind = "label"         # a marker placed by a procedure (the wait arrow)
@@ -994,6 +1005,13 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                          brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
                          _waits_after(data, toks, j, proc), marker,
                          item_budget(e - s) if tight else None)
+        if end is None and bkind == "label" and located and frame and located[0] is not None \
+                and located[0] >= frame[0] and located[1] >= frame[1]:
+            # a label placed in the frame (A7): what follows it on its
+            # line starts where it ends
+            shown = sum(max(0, (e2 - s2) - 2) for k2, s2, e2 in av.tokenize(new, False) if k2 == "str")
+            shown += sum(2 for k2, _s2, _e2 in av.tokenize(new, False) if k2 in ("chr1", "chr2"))
+            end = ((located[1] - frame[1]) // ENGINE["line_h"], located[0] - frame[0] + shown)
         if ENGINE["proc_fullwidth"] and any(bs <= s < be for _pn, bs, be in every):
             # the engine hangs on an ASCII string in a procedure body
             new = _fullwidth(" ".join(text.split("\n")), None)
@@ -1273,6 +1291,9 @@ def _layout(data, gap, insert, effects):
     for y, (k, s, e) in enumerate(gap):
         if insert and bytes(data[s:e]) == insert[1]:
             flag = True
+        elif k == "arg" and _DISP.match(bytes(data[s:e])):
+            # a variable shown on the line: as wide as its widest value
+            advance(ENGINE["var_cols"].get(int(_DISP.match(bytes(data[s:e])).group(1)), ENGINE["name_cols"]), 0)
         elif k == "cmd" and data[s] == 0xA5:
             advance(0, 1)
         elif k == "cmd" and data[s] == 0xBA and y + 1 < len(gap):
@@ -1341,6 +1362,8 @@ def run_patch(here, src, dst, mode="en"):
     base = [n.upper() for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
     var_cols = variable_widths(vol, cfg["game_dir"], extraop, name_cols)
+    var_cols.update({int(n): cols for n, cols in cfg.get("var_cols", {}).items()})
+    ENGINE["var_cols"], ENGINE["name_cols"] = var_cols, name_cols
     fit = mode == "pseudo"
     default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
     # procedures defined only in other files: each number's widest

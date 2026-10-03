@@ -1407,5 +1407,35 @@
    "Choosing a name, the episodes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "custom_mate_3": [
+  [
+   "Startup menu (new game, load)",
+   "OK: filler items at their places in the tag-shaped window"
+  ],
+  [
+   "Opening (Shinjuku at Christmas, the Custom Mate club door)",
+   "OK: filler wrapped between words to the 4-line box, pages waiting for a click"
+  ],
+  [
+   "The club's office (the first scene with a speaker)",
+   "OK: the speaker's tag on its own line, the message below, pages waiting for a click"
+  ],
+  [
+   "Name entry",
+   "The name window appears and takes clicks, but the click script cannot steer it reliably; for the rest of the test a test image set the two name parts to their defaults with the engine's own expression call (cd 9472 \"@n='...'\") in place of the window's calls"
+  ],
+  [
+   "Data-entry dialog (the name field placed with A7)",
+   "OK: the message keeps above the placed name field and pages before it; the field's surname-and-given-name display (DISP @3 shows both, 19 columns kept) with the bracket after it, wrapping and paging instead of running past the box edge"
+  ],
+  [
+   "Character status screen",
+   "Reached; its labels are drawn in the picture"
+  ],
+  [
+   "Customizing, the married life simulation, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

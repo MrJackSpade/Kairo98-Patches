@@ -1,0 +1,15 @@
+{
+ "title": "Custom Mate 3",
+ "key": "CocktailSoft.zip/Custom Mate 3",
+ "image": "Custom Mate 3\\Custom Mate 3 [HD]\\Custom Mate 3.hdi",
+ "encoding": "adv98v",
+ "game_dir": "CM3",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "var_cols": {
+  "3": 19
+ },
+ "boot_steps": "30:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot"
+}
