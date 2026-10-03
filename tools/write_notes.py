@@ -570,7 +570,10 @@ ADV98V_DISPLAY = """## English display (`pc98tl/adv98v_tl.py`)
   in half-width columns) and cut into pages of its line count; between
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
-* Menu items and text in one-line frames keep their Japanese width."""
+* Menu items and text in one-line frames keep their Japanese width.
+* Pieces of text with only colour, speed, pause or fade commands between
+  them are one string; the English replaces all of it, without those
+  effects."""
 
 
 def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):

@@ -23,6 +23,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
 * Menu items and text in one-line frames keep their Japanese width.
+* Pieces of text with only colour, speed, pause or fade commands between
+  them are one string; the English replaces all of it, without those
+  effects.
 * A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
 * Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (its Japanese width) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 * Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on into free slots after it); a build that would overrun one is refused.

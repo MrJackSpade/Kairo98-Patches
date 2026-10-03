@@ -21,6 +21,9 @@ ides' Adv98V script engine (`GIBO/`), on a hard-disk image: 62 scripts with text
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
 * Menu items and text in one-line frames keep their Japanese width.
+* Pieces of text with only colour, speed, pause or fade commands between
+  them are one string; the English replaces all of it, without those
+  effects.
 * A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
 * Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (up to 8 columns, the name entry's limit) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 * Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on into free slots after it); a build that would overrun one is refused.

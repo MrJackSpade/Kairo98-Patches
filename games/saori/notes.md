@@ -21,6 +21,9 @@ ides' Adv98V script engine (`SAORI/`), on a hard-disk image: 69 scripts with tex
   pages goes a wait and the file's message-end procedure call, as between
   the original messages.
 * Menu items and text in one-line frames keep their Japanese width.
+* Pieces of text with only colour, speed, pause or fade commands between
+  them are one string; the English replaces all of it, without those
+  effects.
 * Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (its Japanese width) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 
 ## Script
