@@ -632,5 +632,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Jast.zip/Tenshi-tachi no Gogo": [
+  {
+   "label": "This repo: games/tenshi_i (patcher working, machine translation in progress)",
+   "url": "../games/tenshi_i/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -1,0 +1,6112 @@
+{
+ "source_image_sha256": "29c4ead580a3b9e9c4222639a68810cabaac734cceb768fcbdde9fbb0de7d794",
+ "strings": [
+  {
+   "id": "w00001",
+   "kind": "word",
+   "jp": "ひろう",
+   "en": "",
+   "refs": [
+    "verb:4"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00002",
+   "kind": "word",
+   "jp": "みる",
+   "en": "",
+   "refs": [
+    "verb:5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00003",
+   "kind": "word",
+   "jp": "いく",
+   "en": "",
+   "refs": [
+    "verb:6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00004",
+   "kind": "word",
+   "jp": "はいる",
+   "en": "",
+   "refs": [
+    "verb:7"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00005",
+   "kind": "word",
+   "jp": "さか゛す",
+   "en": "",
+   "refs": [
+    "verb:8"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00006",
+   "kind": "word",
+   "jp": "しらへ゛",
+   "en": "",
+   "refs": [
+    "verb:9"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00007",
+   "kind": "word",
+   "jp": "はなす",
+   "en": "",
+   "refs": [
+    "verb:10"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00008",
+   "kind": "word",
+   "jp": "とる",
+   "en": "",
+   "refs": [
+    "verb:11"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00009",
+   "kind": "word",
+   "jp": "あける",
+   "en": "",
+   "refs": [
+    "verb:12"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00010",
+   "kind": "word",
+   "jp": "うこ゛か",
+   "en": "",
+   "refs": [
+    "verb:13"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00011",
+   "kind": "word",
+   "jp": "て゛る",
+   "en": "",
+   "refs": [
+    "verb:14"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00012",
+   "kind": "word",
+   "jp": "きく",
+   "en": "",
+   "refs": [
+    "verb:15"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00013",
+   "kind": "word",
+   "jp": "なく゛る",
+   "en": "",
+   "refs": [
+    "verb:16"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00014",
+   "kind": "word",
+   "jp": "のる",
+   "en": "",
+   "refs": [
+    "verb:17"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00015",
+   "kind": "word",
+   "jp": "かえる",
+   "en": "",
+   "refs": [
+    "verb:18"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00016",
+   "kind": "word",
+   "jp": "みせる",
+   "en": "",
+   "refs": [
+    "verb:19"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00017",
+   "kind": "word",
+   "jp": "もと゛る",
+   "en": "",
+   "refs": [
+    "verb:20"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00018",
+   "kind": "word",
+   "jp": "のほ゛る",
+   "en": "",
+   "refs": [
+    "verb:21"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00019",
+   "kind": "word",
+   "jp": "すてる",
+   "en": "",
+   "refs": [
+    "verb:22"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00020",
+   "kind": "word",
+   "jp": "くと゛く",
+   "en": "",
+   "refs": [
+    "verb:23"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00021",
+   "kind": "word",
+   "jp": "たへ゛る",
+   "en": "",
+   "refs": [
+    "verb:24"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00022",
+   "kind": "word",
+   "jp": "つかう",
+   "en": "",
+   "refs": [
+    "verb:25"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00023",
+   "kind": "word",
+   "jp": "あいふ゛",
+   "en": "",
+   "refs": [
+    "verb:26"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00024",
+   "kind": "word",
+   "jp": "なめる",
+   "en": "",
+   "refs": [
+    "verb:27"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00025",
+   "kind": "word",
+   "jp": "おかす",
+   "en": "",
+   "refs": [
+    "verb:28"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00026",
+   "kind": "word",
+   "jp": "せつくす",
+   "en": "",
+   "refs": [
+    "verb:29"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00027",
+   "kind": "word",
+   "jp": "もむ",
+   "en": "",
+   "refs": [
+    "verb:30"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00028",
+   "kind": "word",
+   "jp": "ぬか゛す",
+   "en": "",
+   "refs": [
+    "verb:31"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00029",
+   "kind": "word",
+   "jp": "くすく゛",
+   "en": "",
+   "refs": [
+    "verb:32"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00030",
+   "kind": "word",
+   "jp": "ねる",
+   "en": "",
+   "refs": [
+    "verb:33"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00031",
+   "kind": "word",
+   "jp": "きすする",
+   "en": "",
+   "refs": [
+    "verb:34"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00032",
+   "kind": "word",
+   "jp": "わかれる",
+   "en": "",
+   "refs": [
+    "verb:35"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00033",
+   "kind": "word",
+   "jp": "か゛つこ",
+   "en": "",
+   "refs": [
+    "noun:1"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00034",
+   "kind": "word",
+   "jp": "こうしや",
+   "en": "",
+   "refs": [
+    "noun:2"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00035",
+   "kind": "word",
+   "jp": "き",
+   "en": "",
+   "refs": [
+    "noun:3"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00036",
+   "kind": "word",
+   "jp": "まえ",
+   "en": "",
+   "refs": [
+    "noun:4"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00037",
+   "kind": "word",
+   "jp": "うしろ",
+   "en": "",
+   "refs": [
+    "noun:5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00038",
+   "kind": "word",
+   "jp": "ひた゛り",
+   "en": "",
+   "refs": [
+    "noun:6"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00039",
+   "kind": "word",
+   "jp": "みき゛",
+   "en": "",
+   "refs": [
+    "noun:7"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00040",
+   "kind": "word",
+   "jp": "かみ",
+   "en": "",
+   "refs": [
+    "noun:8"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00041",
+   "kind": "word",
+   "jp": "めも",
+   "en": "",
+   "refs": [
+    "noun:9"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00042",
+   "kind": "word",
+   "jp": "ゆみこ",
+   "en": "",
+   "refs": [
+    "noun:10"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00043",
+   "kind": "word",
+   "jp": "まり",
+   "en": "",
+   "refs": [
+    "noun:11"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00044",
+   "kind": "word",
+   "jp": "くみ",
+   "en": "",
+   "refs": [
+    "noun:12"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00045",
+   "kind": "word",
+   "jp": "なおこ",
+   "en": "",
+   "refs": [
+    "noun:13"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00046",
+   "kind": "word",
+   "jp": "ようこ",
+   "en": "",
+   "refs": [
+    "noun:14"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00047",
+   "kind": "word",
+   "jp": "いしい",
+   "en": "",
+   "refs": [
+    "noun:15"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00048",
+   "kind": "word",
+   "jp": "かなあみ",
+   "en": "",
+   "refs": [
+    "noun:16"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00049",
+   "kind": "word",
+   "jp": "ふ゛しつ",
+   "en": "",
+   "refs": [
+    "noun:17"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00050",
+   "kind": "word",
+   "jp": "くらふ゛",
+   "en": "",
+   "refs": [
+    "noun:18"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00051",
+   "kind": "word",
+   "jp": "と゛あ",
+   "en": "",
+   "refs": [
+    "noun:19"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00052",
+   "kind": "word",
+   "jp": "まと゛",
+   "en": "",
+   "refs": [
+    "noun:20"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00053",
+   "kind": "word",
+   "jp": "かき゛",
+   "en": "",
+   "refs": [
+    "noun:21"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00054",
+   "kind": "word",
+   "jp": "せんせい",
+   "en": "",
+   "refs": [
+    "noun:22"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00055",
+   "kind": "word",
+   "jp": "たいいく",
+   "en": "",
+   "refs": [
+    "noun:23"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00056",
+   "kind": "word",
+   "jp": "ふく",
+   "en": "",
+   "refs": [
+    "noun:24"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00057",
+   "kind": "word",
+   "jp": "は゜んて",
+   "en": "",
+   "refs": [
+    "noun:25"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00058",
+   "kind": "word",
+   "jp": "むね",
+   "en": "",
+   "refs": [
+    "noun:26"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00059",
+   "kind": "word",
+   "jp": "おしり",
+   "en": "",
+   "refs": [
+    "noun:27"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00060",
+   "kind": "word",
+   "jp": "こし",
+   "en": "",
+   "refs": [
+    "noun:28"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00061",
+   "kind": "word",
+   "jp": "からた゛",
+   "en": "",
+   "refs": [
+    "noun:29"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00062",
+   "kind": "word",
+   "jp": "あそこ",
+   "en": "",
+   "refs": [
+    "noun:30"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00063",
+   "kind": "word",
+   "jp": "せいき",
+   "en": "",
+   "refs": [
+    "noun:31"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00064",
+   "kind": "word",
+   "jp": "おんな",
+   "en": "",
+   "refs": [
+    "noun:32"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00065",
+   "kind": "word",
+   "jp": "てにすこ",
+   "en": "",
+   "refs": [
+    "noun:33"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00066",
+   "kind": "word",
+   "jp": "こうてい",
+   "en": "",
+   "refs": [
+    "noun:34"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00067",
+   "kind": "word",
+   "jp": "こうもん",
+   "en": "",
+   "refs": [
+    "noun:35"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00068",
+   "kind": "word",
+   "jp": "かお",
+   "en": "",
+   "refs": [
+    "noun:36"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00069",
+   "kind": "word",
+   "jp": "あし",
+   "en": "",
+   "refs": [
+    "noun:37"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00070",
+   "kind": "word",
+   "jp": "て",
+   "en": "",
+   "refs": [
+    "noun:38"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00071",
+   "kind": "word",
+   "jp": "みち",
+   "en": "",
+   "refs": [
+    "noun:39",
+    "noun:80"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00072",
+   "kind": "word",
+   "jp": "かは゛ん",
+   "en": "",
+   "refs": [
+    "noun:40"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00073",
+   "kind": "word",
+   "jp": "つくえ",
+   "en": "",
+   "refs": [
+    "noun:41"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00074",
+   "kind": "word",
+   "jp": "いす",
+   "en": "",
+   "refs": [
+    "noun:42"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00075",
+   "kind": "word",
+   "jp": "まいこん",
+   "en": "",
+   "refs": [
+    "noun:43"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00076",
+   "kind": "word",
+   "jp": "うえ",
+   "en": "",
+   "refs": [
+    "noun:44"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00077",
+   "kind": "word",
+   "jp": "はいきん",
+   "en": "",
+   "refs": [
+    "noun:45"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00078",
+   "kind": "word",
+   "jp": "らし゛か",
+   "en": "",
+   "refs": [
+    "noun:46"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00079",
+   "kind": "word",
+   "jp": "かへ゛",
+   "en": "",
+   "refs": [
+    "noun:47"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00080",
+   "kind": "word",
+   "jp": "ほ゜すた",
+   "en": "",
+   "refs": [
+    "noun:48"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00081",
+   "kind": "word",
+   "jp": "しやしん",
+   "en": "",
+   "refs": [
+    "noun:49"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00082",
+   "kind": "word",
+   "jp": "ぬーと゛",
+   "en": "",
+   "refs": [
+    "noun:50"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00083",
+   "kind": "word",
+   "jp": "て゛んわ",
+   "en": "",
+   "refs": [
+    "noun:51"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00084",
+   "kind": "word",
+   "jp": "かいた゛",
+   "en": "",
+   "refs": [
+    "noun:52"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00085",
+   "kind": "word",
+   "jp": "いもうと",
+   "en": "",
+   "refs": [
+    "noun:53"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00086",
+   "kind": "word",
+   "jp": "け゛んか",
+   "en": "",
+   "refs": [
+    "noun:54"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00087",
+   "kind": "word",
+   "jp": "た゛いと",
+   "en": "",
+   "refs": [
+    "noun:55"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00088",
+   "kind": "word",
+   "jp": "いま",
+   "en": "",
+   "refs": [
+    "noun:56"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00089",
+   "kind": "word",
+   "jp": "はは",
+   "en": "",
+   "refs": [
+    "noun:57"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00090",
+   "kind": "word",
+   "jp": "へ゛つと",
+   "en": "",
+   "refs": [
+    "noun:58",
+    "noun:85"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00091",
+   "kind": "word",
+   "jp": "ちち",
+   "en": "",
+   "refs": [
+    "noun:59"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00092",
+   "kind": "word",
+   "jp": "そと",
+   "en": "",
+   "refs": [
+    "noun:60"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00093",
+   "kind": "word",
+   "jp": "こうえん",
+   "en": "",
+   "refs": [
+    "noun:61"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00094",
+   "kind": "word",
+   "jp": "ほん",
+   "en": "",
+   "refs": [
+    "noun:62"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00095",
+   "kind": "word",
+   "jp": "ゆうはん",
+   "en": "",
+   "refs": [
+    "noun:63"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00096",
+   "kind": "word",
+   "jp": "ひみつ",
+   "en": "",
+   "refs": [
+    "noun:64"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00097",
+   "kind": "word",
+   "jp": "しんふ゛",
+   "en": "",
+   "refs": [
+    "noun:65"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00098",
+   "kind": "word",
+   "jp": "おしいれ",
+   "en": "",
+   "refs": [
+    "noun:66"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00099",
+   "kind": "word",
+   "jp": "しけ゛み",
+   "en": "",
+   "refs": [
+    "noun:67"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00100",
+   "kind": "word",
+   "jp": "へ゛んち",
+   "en": "",
+   "refs": [
+    "noun:68"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00101",
+   "kind": "word",
+   "jp": "すへ゛り",
+   "en": "",
+   "refs": [
+    "noun:69"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00102",
+   "kind": "word",
+   "jp": "ふ゛らん",
+   "en": "",
+   "refs": [
+    "noun:70"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00103",
+   "kind": "word",
+   "jp": "あへ゛つ",
+   "en": "",
+   "refs": [
+    "noun:71"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00104",
+   "kind": "word",
+   "jp": "せーらー",
+   "en": "",
+   "refs": [
+    "noun:72"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00105",
+   "kind": "word",
+   "jp": "えき",
+   "en": "",
+   "refs": [
+    "noun:73"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00106",
+   "kind": "word",
+   "jp": "て゛なわ",
+   "en": "",
+   "refs": [
+    "noun:74"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00107",
+   "kind": "word",
+   "jp": "なそ゛",
+   "en": "",
+   "refs": [
+    "noun:75"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00108",
+   "kind": "word",
+   "jp": "ほ゛ーと",
+   "en": "",
+   "refs": [
+    "noun:76"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00109",
+   "kind": "word",
+   "jp": "みす゛う",
+   "en": "",
+   "refs": [
+    "noun:77"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00110",
+   "kind": "word",
+   "jp": "のりは゛",
+   "en": "",
+   "refs": [
+    "noun:78"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00111",
+   "kind": "word",
+   "jp": "もり",
+   "en": "",
+   "refs": [
+    "noun:79"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00112",
+   "kind": "word",
+   "jp": "ほらあな",
+   "en": "",
+   "refs": [
+    "noun:81"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00113",
+   "kind": "word",
+   "jp": "と゛うく",
+   "en": "",
+   "refs": [
+    "noun:82"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00114",
+   "kind": "word",
+   "jp": "いわ",
+   "en": "",
+   "refs": [
+    "noun:83"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00115",
+   "kind": "word",
+   "jp": "あめ",
+   "en": "",
+   "refs": [
+    "noun:84"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00116",
+   "kind": "word",
+   "jp": "たんす",
+   "en": "",
+   "refs": [
+    "noun:86"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00117",
+   "kind": "word",
+   "jp": "ひきた゛",
+   "en": "",
+   "refs": [
+    "noun:87"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00118",
+   "kind": "word",
+   "jp": "まち",
+   "en": "",
+   "refs": [
+    "noun:88"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00119",
+   "kind": "word",
+   "jp": "くつしよ",
+   "en": "",
+   "refs": [
+    "noun:89"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00120",
+   "kind": "word",
+   "jp": "すたんと",
+   "en": "",
+   "refs": [
+    "noun:90"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00121",
+   "kind": "word",
+   "jp": "ようみ",
+   "en": "",
+   "refs": [
+    "noun:91"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00122",
+   "kind": "word",
+   "jp": "かーてん",
+   "en": "",
+   "refs": [
+    "noun:92"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00123",
+   "kind": "word",
+   "jp": "えいか゛",
+   "en": "",
+   "refs": [
+    "noun:93"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00124",
+   "kind": "word",
+   "jp": "とるこ",
+   "en": "",
+   "refs": [
+    "noun:94"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00125",
+   "kind": "word",
+   "jp": "て゛いす",
+   "en": "",
+   "refs": [
+    "noun:95"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00126",
+   "kind": "word",
+   "jp": "すなつく",
+   "en": "",
+   "refs": [
+    "noun:96"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00127",
+   "kind": "word",
+   "jp": "ろし゛",
+   "en": "",
+   "refs": [
+    "noun:97"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00128",
+   "kind": "word",
+   "jp": "やくさ゛",
+   "en": "",
+   "refs": [
+    "noun:98"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00129",
+   "kind": "word",
+   "jp": "ちんひ゜",
+   "en": "",
+   "refs": [
+    "noun:99"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00130",
+   "kind": "word",
+   "jp": "ますたー",
+   "en": "",
+   "refs": [
+    "noun:100"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00131",
+   "kind": "word",
+   "jp": "かね",
+   "en": "",
+   "refs": [
+    "noun:101"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00132",
+   "kind": "word",
+   "jp": "さけ",
+   "en": "",
+   "refs": [
+    "noun:102"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00133",
+   "kind": "word",
+   "jp": "みせ",
+   "en": "",
+   "refs": [
+    "noun:103"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00134",
+   "kind": "word",
+   "jp": "きやく",
+   "en": "",
+   "refs": [
+    "noun:104"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00135",
+   "kind": "word",
+   "jp": "ほてる",
+   "en": "",
+   "refs": [
+    "noun:105"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00136",
+   "kind": "word",
+   "jp": "へや",
+   "en": "",
+   "refs": [
+    "noun:106"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00137",
+   "kind": "word",
+   "jp": "けいかん",
+   "en": "",
+   "refs": [
+    "noun:107"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00138",
+   "kind": "word",
+   "jp": "てれひ゛",
+   "en": "",
+   "refs": [
+    "noun:108"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00139",
+   "kind": "word",
+   "jp": "しはいに",
+   "en": "",
+   "refs": [
+    "noun:109"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00140",
+   "kind": "word",
+   "jp": "ひ゛て゛",
+   "en": "",
+   "refs": [
+    "noun:110"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00141",
+   "kind": "word",
+   "jp": "しやわー",
+   "en": "",
+   "refs": [
+    "noun:111"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00142",
+   "kind": "word",
+   "jp": "ふろ",
+   "en": "",
+   "refs": [
+    "noun:112"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00143",
+   "kind": "word",
+   "jp": "いえ",
+   "en": "",
+   "refs": [
+    "noun:113"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00144",
+   "kind": "word",
+   "jp": "にかい",
+   "en": "",
+   "refs": [
+    "noun:114"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00145",
+   "kind": "word",
+   "jp": "らけつと",
+   "en": "",
+   "refs": [
+    "noun:115"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00146",
+   "kind": "word",
+   "jp": "なまえ",
+   "en": "",
+   "refs": [
+    "noun:116"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00147",
+   "kind": "word",
+   "jp": "てんし",
+   "en": "",
+   "refs": [
+    "noun:117"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "w00148",
+   "kind": "word",
+   "jp": "えりか",
+   "en": "",
+   "refs": [
+    "noun:118"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ＤＡＴＡを",
+   "en": "",
+   "refs": [
+    "eng:033a"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "ロート゛",
+   "en": "",
+   "refs": [
+    "eng:0340"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "セーフ゛",
+   "en": "",
+   "refs": [
+    "eng:0345"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "します。",
+   "en": "",
+   "refs": [
+    "eng:034a"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ＧＡＭＥ　ＯＶＥＲ",
+   "en": "",
+   "refs": [
+    "eng:037d"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "ＨＩＴ　ＡＮＹ　ＫＥＹ",
+   "en": "",
+   "refs": [
+    "eng:0387"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ＰＵＳＨ　ＲＥＴＵＲＮ　ＫＥＹ",
+   "en": "",
+   "refs": [
+    "eng:0393"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "p00001",
+   "kind": "panel",
+   "jp": "前に行く",
+   "en": "",
+   "refs": [
+    "panel:1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00002",
+   "kind": "panel",
+   "jp": "後ろに行く",
+   "en": "",
+   "refs": [
+    "panel:2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00003",
+   "kind": "panel",
+   "jp": "左に行く",
+   "en": "",
+   "refs": [
+    "panel:3"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00004",
+   "kind": "panel",
+   "jp": "右に行く",
+   "en": "",
+   "refs": [
+    "panel:4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00005",
+   "kind": "panel",
+   "jp": "見る",
+   "en": "",
+   "refs": [
+    "panel:5"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00006",
+   "kind": "panel",
+   "jp": "行く",
+   "en": "",
+   "refs": [
+    "panel:6"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00007",
+   "kind": "panel",
+   "jp": "入る",
+   "en": "",
+   "refs": [
+    "panel:7"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00008",
+   "kind": "panel",
+   "jp": "探す",
+   "en": "",
+   "refs": [
+    "panel:8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00009",
+   "kind": "panel",
+   "jp": "調へ゛る",
+   "en": "",
+   "refs": [
+    "panel:9"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00010",
+   "kind": "panel",
+   "jp": "話す",
+   "en": "",
+   "refs": [
+    "panel:10"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00011",
+   "kind": "panel",
+   "jp": "取る",
+   "en": "",
+   "refs": [
+    "panel:11"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00012",
+   "kind": "panel",
+   "jp": "あける",
+   "en": "",
+   "refs": [
+    "panel:12"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "p00013",
+   "kind": "panel",
+   "jp": "動かす",
+   "en": "",
+   "refs": [
+    "panel:13"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "今、熱いおもいを込めて、あなたにおくるロマン・アト゛ヘ゛ンチャー　‼　　彼女たちはあなたを待っています。　さあ、ＬＥＴ’Ｓ　ＬＯＶＥ　！！",
+   "en": "",
+   "refs": [
+    "scene0:0"
+   ],
+   "max_cells": 69
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "ここはあなたの高校の校庭て゛す。　放課後、あなたはクラフ゛活動を終えて　帰ろうとしているところて゛す。",
+   "en": "",
+   "refs": [
+    "scene1:0"
+   ],
+   "max_cells": 51
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "授業か゛終って　静かて゛す。皆んなもう帰ったようて゛すね。",
+   "en": "",
+   "refs": [
+    "scene1:1"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "マイコンクラフ゛の部しつか゛あります。",
+   "en": "",
+   "refs": [
+    "scene1:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "テニスコートか゛あります。",
+   "en": "",
+   "refs": [
+    "scene1:3",
+    "scene2:7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "体育館か゛あります。",
+   "en": "",
+   "refs": [
+    "scene1:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "校庭て゛す。",
+   "en": "",
+   "refs": [
+    "scene1:5",
+    "scene2:2",
+    "scene3:1",
+    "scene4:1",
+    "scene5:2",
+    "scene6:2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "もう少し校庭をふ゛らついてみませんか？",
+   "en": "",
+   "refs": [
+    "scene1:6",
+    "scene2:12",
+    "scene3:10",
+    "scene5:5",
+    "scene6:5"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "テニスコートにきました。テニス部はまた゛熱心に練習しています。",
+   "en": "",
+   "refs": [
+    "scene2:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "テニス部はまた゛練習しています。由美子か゛いるはす゛て゛す。探してみませんか。",
+   "en": "",
+   "refs": [
+    "scene2:1"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "校門か゛あります。",
+   "en": "",
+   "refs": [
+    "scene2:3",
+    "scene4:2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "ムフフフ・・・。コーフンしますねェ・・・。",
+   "en": "",
+   "refs": [
+    "scene2:4",
+    "scene3:4"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "かわいいコは゛かりて゛す。みんなヒ゜チヒ゜チて゛すね〜。",
+   "en": "",
+   "refs": [
+    "scene2:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "金アミか゛あって、行けません。　　　　　",
+   "en": "",
+   "refs": [
+    "scene2:6"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "いてて・・・よってたかってイシ゛メられました。",
+   "en": "",
+   "refs": [
+    "scene2:8"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "練習に夢中て゛相手にしてくれません。",
+   "en": "",
+   "refs": [
+    "scene2:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "これからなんた゛から、あわてないて゛下さいよ。",
+   "en": "",
+   "refs": [
+    "scene2:10",
+    "scene3:9"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "と゛こにいるのかわかりません。探してくた゜さい。",
+   "en": "",
+   "refs": [
+    "scene2:11"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "由美子か゛いました。この学校のＮＯ１。男子生徒のあこか゛れて゛す。頭も顔もよく、スホ゜ーツ万能の彼女にもちろんあなたもあこか゛れています。という訳て゛、あなたの目的はこの由美子を何とか口説き落とすことて゛す。",
+   "en": "",
+   "refs": [
+    "scene3:0"
+   ],
+   "max_cells": 104
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "テニスの練習をしています。すてきた゛なァ・・・。",
+   "en": "",
+   "refs": [
+    "scene3:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "ムフフ。すてきた゛なァ・・・。",
+   "en": "",
+   "refs": [
+    "scene3:3"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "何もかもあなた好みて゛す。せ゛ひともモノにして下さい。",
+   "en": "",
+   "refs": [
+    "scene3:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "金アミか゛あって、その向うは外て゛す。",
+   "en": "",
+   "refs": [
+    "scene3:6"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "ここか゛テスコートて゛す。",
+   "en": "",
+   "refs": [
+    "scene3:7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "かるく無視されました。",
+   "en": "",
+   "refs": [
+    "scene3:8"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "あなたの入っているマイコンクラフ゛の部しつか゛あります。",
+   "en": "",
+   "refs": [
+    "scene4:0"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "もう少し校庭をフ゛ラついてみませんか　？",
+   "en": "",
+   "refs": [
+    "scene4:3"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "先生か゛います。「こらっ！早く帰れ！」と言ってます。",
+   "en": "",
+   "refs": [
+    "scene5:0"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "「また゛ウロウロしてるのか、早く帰れ！」とと゛なられました。",
+   "en": "",
+   "refs": [
+    "scene5:1"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "学校て゛は一番コワイ先生。あなたはこの先生にはと゛うも弱いのて゛す。",
+   "en": "",
+   "refs": [
+    "scene5:3"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "ここか゛校舎て゛す。",
+   "en": "",
+   "refs": [
+    "scene5:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "体育館の入口の前て゛す。",
+   "en": "",
+   "refs": [
+    "scene6:0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "体育館か゛あります。メモか゛落ちています。",
+   "en": "",
+   "refs": [
+    "scene6:1"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "カキ゛か゛かかっていて、中には入れません。",
+   "en": "",
+   "refs": [
+    "scene6:3"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "何か書いてあります。拾わないとわかりません。",
+   "en": "",
+   "refs": [
+    "scene6:4"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "友人の石井か゛います。「よお、　いっしょに帰ろうせ゛！」と言ってます。",
+   "en": "",
+   "refs": [
+    "scene7:0"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "同し゛マイコンクラフ゛の男て゛す。女好きて゛なかなかいいやつて゛す。",
+   "en": "",
+   "refs": [
+    "scene7:1"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "テニスコートて゛すか゛、もう、もと゛っても何もないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene7:2"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "校門て゛す。",
+   "en": "",
+   "refs": [
+    "scene7:3",
+    "scene8:1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "そろそろ帰らないと先生か゛ウルサイて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene7:4",
+    "scene8:10"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "先ほと゛はテニスコートにいましたか゛、もう帰っているて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene7:5"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "「早く帰ろうせ゛！」",
+   "en": "",
+   "refs": [
+    "scene7:6"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "「こりゃ何かのフ゜ロク゛ラムし゛ゃないのか・・？　マイコンにうちこんて゛走らせないと分からんな。お前のところのマイコンて゛やってみな・・」",
+   "en": "",
+   "refs": [
+    "scene7:7"
+   ],
+   "max_cells": 69
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "ハ゛カなことを考えないて゛下さい。それとも、あなた、もしかして・・・。",
+   "en": "",
+   "refs": [
+    "scene7:8"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "誰かいるようて゛す。女の子かな　・・？",
+   "en": "",
+   "refs": [
+    "scene7:9"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "校舎か゛見えます。誰かいるようて゛す。女の子かな　・・？",
+   "en": "",
+   "refs": [
+    "scene7:10"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "テニス部の１年生、真理か゛帰ろうとしています。もう練習は終ったのて゛しょうか・・・。",
+   "en": "",
+   "refs": [
+    "scene8:0"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "校庭て゛す",
+   "en": "",
+   "refs": [
+    "scene8:2"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "校舎か゛見えます。",
+   "en": "",
+   "refs": [
+    "scene8:3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "ヒ゜カヒ゜カの女子高生。　かわいいな〜〜。",
+   "en": "",
+   "refs": [
+    "scene8:4"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "顔にスケヘ゛心を出して、女の子をシ゛ッとみつめています。",
+   "en": "",
+   "refs": [
+    "scene8:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "セーラー服て゛すねェ。",
+   "en": "",
+   "refs": [
+    "scene8:6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "ムラムラときます。",
+   "en": "",
+   "refs": [
+    "scene8:7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "ぬか゛せなきゃわかりませんよ。",
+   "en": "",
+   "refs": [
+    "scene8:8"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "この子も、とってもかわいいて゛すねぇ・・・。",
+   "en": "",
+   "refs": [
+    "scene8:9"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "さっきまて゛テニスコートにいましたか゛、もう帰っているて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene8:11"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "由美子のことを聞きました。　「とってもすてきな人て゛すよ。　て゛も、あの先ハ゜イなんた゛か暗いとこか゛あるみたい。」",
+   "en": "",
+   "refs": [
+    "scene8:12"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "「かわいいなこの子、やっちまおうか　？」",
+   "en": "",
+   "refs": [
+    "scene8:13"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "「イターーイ！　何するんて゛すか・・・‼」",
+   "en": "",
+   "refs": [
+    "scene8:14"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "「イテッ！　何すんた゛よハ゛カ‼」",
+   "en": "",
+   "refs": [
+    "scene8:15"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "「何て゛すか　これ・・・？」",
+   "en": "",
+   "refs": [
+    "scene8:16"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "「イヤた゛ぁ〜、好みし゛ゃありません。」",
+   "en": "",
+   "refs": [
+    "scene8:17"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "「キャ〜〜ッ‼　何するのよ　やめて〜〜っ！！」",
+   "en": "",
+   "refs": [
+    "scene8:18"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "「何かヒミツの部分か゛あって、そこか゛またステキなのよ〜。」",
+   "en": "",
+   "refs": [
+    "scene8:19"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "マリて゛〜す。　よろしくね　♥",
+   "en": "",
+   "refs": [
+    "scene8:20"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "キャーッ、何するのよ！やめてーッ！",
+   "en": "",
+   "refs": [
+    "scene9:0"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "そんなことしてるハ゛アイし゛ゃないて゛しょう・・！",
+   "en": "",
+   "refs": [
+    "scene9:1"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "かなりいやか゛ってますよ。",
+   "en": "",
+   "refs": [
+    "scene9:2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "こ゛らんの通りて゛す。フ゜フ゜ッ！ハナ血か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene9:3"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "顔にスケヘ゛心を出して、女の子をシ゛ッと見つめています。",
+   "en": "",
+   "refs": [
+    "scene9:4"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "あなたにぬか゛されています。",
+   "en": "",
+   "refs": [
+    "scene9:5"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "「ああ〜ん！」　とてもそれと゛ころて゛はありません。",
+   "en": "",
+   "refs": [
+    "scene9:6",
+    "scene10:6"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "「ホラ、早くやっちまえよ！」",
+   "en": "",
+   "refs": [
+    "scene9:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "ああ〜ん、おかあさ〜ん！",
+   "en": "",
+   "refs": [
+    "scene9:8",
+    "scene10:8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "今さら口説いてもしかたないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene9:9",
+    "scene10:7"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "「いやああ〜ん！」",
+   "en": "",
+   "refs": [
+    "scene9:10"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "もう　し゛ゅう分て゛す。",
+   "en": "",
+   "refs": [
+    "scene9:11"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "「あぁーーーん・・・・ン」",
+   "en": "",
+   "refs": [
+    "scene10:0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "あなたに犯されています。",
+   "en": "",
+   "refs": [
+    "scene10:1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "石井か゛「早くしろよ、オ、オレも・・・！」とさわいて゛います。",
+   "en": "",
+   "refs": [
+    "scene10:2"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "そんなヨユーはありませんよ。",
+   "en": "",
+   "refs": [
+    "scene10:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "「あうぅっっ！」　その気になって、もた゛えています。",
+   "en": "",
+   "refs": [
+    "scene10:4"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "勝手に見てくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene10:5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "もうぬか゛してます。",
+   "en": "",
+   "refs": [
+    "scene10:9"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "「と゛うしたんた゛。最近たまっているんし゛ゃないのか」と言われました。",
+   "en": "",
+   "refs": [
+    "scene11:0"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "「あの子なかなかよかったな。お前も悪いヤローた゛よ。」",
+   "en": "",
+   "refs": [
+    "scene11:1"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "学校か゛見えます。",
+   "en": "",
+   "refs": [
+    "scene11:2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "ヘイか゛続いています。",
+   "en": "",
+   "refs": [
+    "scene11:3"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "もう学校へもと゛っても何もありません。あきらめて家に帰りましょう。",
+   "en": "",
+   "refs": [
+    "scene11:4",
+    "scene11:7"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "と゛こへ行くんて゛すか？家はそっちし゛ゃありませんよ。　",
+   "en": "",
+   "refs": [
+    "scene11:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "探してもしかたないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene11:6"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "と゛こかへ行ってしまいました。",
+   "en": "",
+   "refs": [
+    "scene11:8"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "目の前にいます。",
+   "en": "",
+   "refs": [
+    "scene11:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "ここて゛はと゛うしようもありません。",
+   "en": "",
+   "refs": [
+    "scene11:10"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "はし゛めからやらないとムリて゛しょう・・・。",
+   "en": "",
+   "refs": [
+    "scene11:11"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "もう持っています。",
+   "en": "",
+   "refs": [
+    "scene11:12"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "「おまえ、いい女紹介してやろうか。日曜日あいてたらハイキンク゛に行こうせ゛。」",
+   "en": "",
+   "refs": [
+    "scene11:13"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "このまま帰っちゃっていいんて゛すか・・・？",
+   "en": "",
+   "refs": [
+    "scene11:14"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "「あのコなかなかよかったな・・。　それよりおまえ、いい女紹介してやろうか。日曜日あいてたらハイキンク゛に行こうせ゛。」",
+   "en": "",
+   "refs": [
+    "scene11:15"
+   ],
+   "max_cells": 59
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "「なんた゛よ　それ・・？」",
+   "en": "",
+   "refs": [
+    "scene11:16"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "あなたは自分の家に帰ってきました。ここはあなたの部屋て゛す。机、イス、ラシ゛カセなと゛か゛あります。カヘ゛にはホ゜スターか゛はってあります。",
+   "en": "",
+   "refs": [
+    "scene12:0"
+   ],
+   "max_cells": 70
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "　シ゛リリリーン！　あなたに電話か゛かかってきました。今の恋人の久美て゛す。あなたはこの女にあきあきしています。「ねぇ、今、近くの公園にいるの。すく゛来てよ。」",
+   "en": "",
+   "refs": [
+    "scene12:1"
+   ],
+   "max_cells": 80
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "ろうかか゛あります。",
+   "en": "",
+   "refs": [
+    "scene12:2",
+    "scene12:14",
+    "scene14:1",
+    "scene15:1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "ヌート゛のホ゜スターて゛す。",
+   "en": "",
+   "refs": [
+    "scene12:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "もちろん由美子のしゃしんて゛す。",
+   "en": "",
+   "refs": [
+    "scene12:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "行ってもしょうか゛ないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene12:5",
+    "scene13:5",
+    "scene14:13",
+    "scene15:3",
+    "scene16:15",
+    "scene17:14"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "二階にいます。",
+   "en": "",
+   "refs": [
+    "scene12:6",
+    "scene13:6",
+    "scene14:5",
+    "scene15:6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "台所にいます。",
+   "en": "",
+   "refs": [
+    "scene12:7",
+    "scene13:7",
+    "scene15:7",
+    "scene16:9",
+    "scene17:7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "居間にいます。",
+   "en": "",
+   "refs": [
+    "scene12:8",
+    "scene13:8",
+    "scene14:7",
+    "scene16:10",
+    "scene17:8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "目の前にいますよ。",
+   "en": "",
+   "refs": [
+    "scene12:9",
+    "scene14:6",
+    "scene15:8",
+    "scene16:8",
+    "scene17:6"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "ヘソクリの２万円か゛あります。由美子とホテルに行くシキンて゛す。",
+   "en": "",
+   "refs": [
+    "scene12:10"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "「ユミコノ　シ゛ュウタ゛イナ　ヒミツヲ　オシエヨウ。カノシ゛ョハ　アルオトコト　トクヘ゛ツナ　カンケイヲ　モッテイル。ソノオトコハ・・・」　ここて゛終っている。",
+   "en": "",
+   "refs": [
+    "scene12:11"
+   ],
+   "max_cells": 80
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "何も聞こえません。",
+   "en": "",
+   "refs": [
+    "scene12:12"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "「つかう　まいこん」と、入力。",
+   "en": "",
+   "refs": [
+    "scene12:13"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "と゛こにあるのかわかりません。",
+   "en": "",
+   "refs": [
+    "scene12:15",
+    "scene13:11",
+    "scene14:14",
+    "scene15:13",
+    "scene16:16",
+    "scene17:15"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "ホ゜ケットの中に持っていますよ。",
+   "en": "",
+   "refs": [
+    "scene12:16",
+    "scene13:12",
+    "scene14:15",
+    "scene15:14",
+    "scene16:17",
+    "scene17:16"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "このままて゛は分かりません。",
+   "en": "",
+   "refs": [
+    "scene12:17"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "ここはあなたの家のろうかて゛す。左に台所と階段か゛あります。二階は妹の部屋て゛す。右は居間て゛前方はけ゛んかんて゛す。あなたの部屋はうしろて゛す。",
+   "en": "",
+   "refs": [
+    "scene13:0"
+   ],
+   "max_cells": 73
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "玄関て゛す。外に出てもしょうか゛ないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene13:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "あなたの部屋か゛あります。",
+   "en": "",
+   "refs": [
+    "scene13:2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "台所と階段か゛あります。",
+   "en": "",
+   "refs": [
+    "scene13:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "居間か゛あります。",
+   "en": "",
+   "refs": [
+    "scene13:4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "あなたの部屋にあります。",
+   "en": "",
+   "refs": [
+    "scene13:9",
+    "scene14:8",
+    "scene15:9",
+    "scene16:7",
+    "scene17:9"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "と゛こへ帰るのて゛すか・・・？",
+   "en": "",
+   "refs": [
+    "scene13:10"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "台所にきました。おいしそうなにおいか゛します。あなたの母親か゛夕食のしたくをしています。",
+   "en": "",
+   "refs": [
+    "scene14:0"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "母親のハ゜ンティを見たか゛るなんて、あなたヘンタイて゛すか！？",
+   "en": "",
+   "refs": [
+    "scene14:2"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "勝手に見て下さい。このスケヘ゛！",
+   "en": "",
+   "refs": [
+    "scene14:3",
+    "scene16:3",
+    "scene17:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "ここか゛そうて゛す。",
+   "en": "",
+   "refs": [
+    "scene14:4",
+    "scene15:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "「すく゛夕食て゛すからね。外なんか行っちゃた゛めよ！」",
+   "en": "",
+   "refs": [
+    "scene14:9"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "ハ゛カなことしないて゛下さい。",
+   "en": "",
+   "refs": [
+    "scene14:10",
+    "scene15:5",
+    "scene17:13"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "また゛したくか゛て゛きてません。",
+   "en": "",
+   "refs": [
+    "scene14:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "「キャッ！なにするの、この子は！ハ゛カなことしないて゛ちょうた゛い！」としかられました。",
+   "en": "",
+   "refs": [
+    "scene14:12"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "居間にきました。あなたの父親か゛新聞を読んて゛います。",
+   "en": "",
+   "refs": [
+    "scene15:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "「ハ゛カモノ。また゛せ゛んふ゛読み終っとらん！」とおこられました。",
+   "en": "",
+   "refs": [
+    "scene15:2"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "新聞を読むのに夢中て゛「アー」とか「ウー」としか答えてくれません。",
+   "en": "",
+   "refs": [
+    "scene15:10"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "「ハ゛カ、何やってんた゛、お前。寝るなら自分の部屋へいけ」とおこられました。",
+   "en": "",
+   "refs": [
+    "scene15:11"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "ハ゛チッ。「いててて！」いきなりなく゛られました。あたり前た゛けと゛・・・。",
+   "en": "",
+   "refs": [
+    "scene15:12"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "妹の部屋にきました。妹は寝ころんて゛本を読んて゛います。",
+   "en": "",
+   "refs": [
+    "scene16:0"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "「なによ、お兄ちゃん。こんと゛あんなことしたら、お父さんに言いつけるから」",
+   "en": "",
+   "refs": [
+    "scene16:1",
+    "scene17:0"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "Ｇハ゜ンをぬか゛せなきゃ見れませんね。",
+   "en": "",
+   "refs": [
+    "scene16:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "ちょっとナマイキた゛けと゛、かわいい妹て゛す。",
+   "en": "",
+   "refs": [
+    "scene16:4"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "少女まんか゛て゛しょう。",
+   "en": "",
+   "refs": [
+    "scene16:5"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "これ以上、上には行けません。",
+   "en": "",
+   "refs": [
+    "scene16:6",
+    "scene17:5"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "あなたの妹て゛すよ。いいかけ゛んにして下さい。",
+   "en": "",
+   "refs": [
+    "scene16:11"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "「いたあ〜い！あ〜ん。お兄ちゃんのハ゛カ！」",
+   "en": "",
+   "refs": [
+    "scene16:12",
+    "scene17:11"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "「何ハ゛カいってるのよ」と妹にハ゛カにされました。",
+   "en": "",
+   "refs": [
+    "scene16:13"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "「いやあ〜ん。やめてよ〜っ！」",
+   "en": "",
+   "refs": [
+    "scene16:14"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "階段か゛あります。",
+   "en": "",
+   "refs": [
+    "scene16:18"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "「ん？　お兄ちゃん、何か用？」",
+   "en": "",
+   "refs": [
+    "scene16:19"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "「キャーッ！なにすんのよ、お兄ちゃん！」",
+   "en": "",
+   "refs": [
+    "scene17:1"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "階段か゛あって、下におりるとろうかて゛す。",
+   "en": "",
+   "refs": [
+    "scene17:2"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "ロリータハ゜ンティて゛す。し゛っくりこ゛らん下さい。しかし、・・・？？。",
+   "en": "",
+   "refs": [
+    "scene17:3"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "勝手に調へ゛てくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene17:10"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "「いやあーっ！お父さ〜ん」　妹の声て゛父親にみつかり、あなたは大目玉をくらいました。ハ゛ツとして外出キンシて゛す。これて゛はと゛うすることもて゛きません。",
+   "en": "",
+   "refs": [
+    "scene17:12"
+   ],
+   "max_cells": 77
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "「いやた゛ったら、お父さんに言うわよ！」",
+   "en": "",
+   "refs": [
+    "scene17:17"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "ここはあなたの家の近くの公園の入口て゛す。人かけ゛はまったくありません。",
+   "en": "",
+   "refs": [
+    "scene18:0"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "と゛うろか゛あります。",
+   "en": "",
+   "refs": [
+    "scene18:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "ヘ゛ンチか゛あります。",
+   "en": "",
+   "refs": [
+    "scene18:2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "しけ゛みか゛あります。",
+   "en": "",
+   "refs": [
+    "scene18:3",
+    "scene19:2",
+    "scene20:3",
+    "scene22:2",
+    "scene23:2",
+    "scene24:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "ここか゛公園て゛す。",
+   "en": "",
+   "refs": [
+    "scene18:4",
+    "scene19:5",
+    "scene20:4",
+    "scene21:3",
+    "scene22:3",
+    "scene23:5",
+    "scene24:8"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "フ゛ランコか゛あります。久美か゛いました。",
+   "en": "",
+   "refs": [
+    "scene18:5",
+    "scene22:0"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "久美に聞いてもちょっと分からないて゛しょう。むしろ・・・・。",
+   "en": "",
+   "refs": [
+    "scene18:6",
+    "scene19:10",
+    "scene20:6",
+    "scene21:5",
+    "scene22:8",
+    "scene23:10",
+    "scene24:12"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "まえに同し゛クラスて゛した。半年ほと゛つきあっていますか゛、性格的にあなたとはあわないようて゛す。かわいいんた゛けと゛・・・。",
+   "en": "",
+   "refs": [
+    "scene18:7",
+    "scene19:9",
+    "scene20:7",
+    "scene21:6",
+    "scene22:9",
+    "scene23:11",
+    "scene24:13"
+   ],
+   "max_cells": 63
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "メモは家においてきました。しかし、ある男とはいったい誰て゛しょう。彼女をモノにするためには、それか゛誰なのかしっておかなけれは゛なりません。",
+   "en": "",
+   "refs": [
+    "scene18:8",
+    "scene19:12",
+    "scene20:12",
+    "scene21:7",
+    "scene22:7",
+    "scene23:3",
+    "scene24:2"
+   ],
+   "max_cells": 70
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "と゛こあるか分かりません。",
+   "en": "",
+   "refs": [
+    "scene18:9",
+    "scene19:14",
+    "scene20:8",
+    "scene21:8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "と゛こにいるのか分かりません。",
+   "en": "",
+   "refs": [
+    "scene18:10",
+    "scene19:15"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "しけ゛みの左の方にあるフ゛ランコのところにいるようて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene18:11",
+    "scene19:16",
+    "scene20:9",
+    "scene21:9"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "家においてきました。",
+   "en": "",
+   "refs": [
+    "scene18:12",
+    "scene19:17",
+    "scene20:10",
+    "scene21:10",
+    "scene23:7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "て゛もないようは分かっているから、もう必要ありませんよ。",
+   "en": "",
+   "refs": [
+    "scene18:13",
+    "scene19:18",
+    "scene20:11",
+    "scene21:11",
+    "scene22:6",
+    "scene23:8"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "スッキリしてるは゛あいし゛ゃないて゛しょう。由美子はと゛うするんて゛す？",
+   "en": "",
+   "refs": [
+    "scene18:14",
+    "scene19:19",
+    "scene20:13",
+    "scene21:12",
+    "scene22:10",
+    "scene23:13"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "しけ゛みか゛あって、アヘ゛ックか゛います。「コラッのそ゛くな！」とと゛なられました。",
+   "en": "",
+   "refs": [
+    "scene19:0"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "公園の入口か゛あります。",
+   "en": "",
+   "refs": [
+    "scene19:1",
+    "scene20:1",
+    "scene21:1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "たいしたものはありません。",
+   "en": "",
+   "refs": [
+    "scene19:3",
+    "scene21:2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "「いつまて゛もノソ゛クな、ハ゛カ‼」とと゛なられました。",
+   "en": "",
+   "refs": [
+    "scene19:4"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "しけ゛みの前にいます。",
+   "en": "",
+   "refs": [
+    "scene19:6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "「ハ゛カヤロー！」とイシをふ゛つけられました。",
+   "en": "",
+   "refs": [
+    "scene19:7"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "ノソ゛キをしにきたわけし゛ゃないて゛しょう。目の前にいるけと゛・・・。",
+   "en": "",
+   "refs": [
+    "scene19:8"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "「このやろう、なめんし゛ゃねえそ゛‼」ホ゛カッ。なく゛られました。",
+   "en": "",
+   "refs": [
+    "scene19:11"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "木立ちか゛あります。　その方向には行けません。",
+   "en": "",
+   "refs": [
+    "scene19:13"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "「ウルサイ。あっちへ行け」とと゛なられました。",
+   "en": "",
+   "refs": [
+    "scene19:20"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "「ああ、そのこならさっきフ゛ランコの方に行ったよ。」",
+   "en": "",
+   "refs": [
+    "scene19:21"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "スヘ゛リ台か゛あります。",
+   "en": "",
+   "refs": [
+    "scene20:0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "へ゛んちか゛あります。",
+   "en": "",
+   "refs": [
+    "scene20:2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "目の前はすへ゛り台て゛す。のほ゛ってすへ゛る気し゛ゃないて゛しょうね。",
+   "en": "",
+   "refs": [
+    "scene20:5"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "誰もいません。久美はと゛こにいるのて゛しょうか。",
+   "en": "",
+   "refs": [
+    "scene21:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "目の前か゛ヘ゛ンチて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene21:4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "暗くてよく見えません。",
+   "en": "",
+   "refs": [
+    "scene22:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "ここか゛フ゛ランコのあるところて゛す。久美か゛います。",
+   "en": "",
+   "refs": [
+    "scene22:4",
+    "scene23:6",
+    "scene24:9"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "家においてきました。　",
+   "en": "",
+   "refs": [
+    "scene22:5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "「やめてえッ！何するのよ！」",
+   "en": "",
+   "refs": [
+    "scene22:11",
+    "scene23:14",
+    "scene24:15"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "久美は泣きなか゛ら帰っていきました。いいんて゛す。今は由美子か゛ターケ゛ットて゛す。",
+   "en": "",
+   "refs": [
+    "scene22:12",
+    "scene23:15"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "「最近、冷たいのね。ちっとも会ってくれないし゛ゃない。もう、あたしをきらいになったの」と言ってます。て゛も、由美子のことをわすれちゃいけません。",
+   "en": "",
+   "refs": [
+    "scene23:0"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "スケヘ゛心か゛うす゛きます。",
+   "en": "",
+   "refs": [
+    "scene23:1"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "セーラー服か゛スケヘ゛心をそそります。しかし、ここはカ゛マンしないと・・・。",
+   "en": "",
+   "refs": [
+    "scene23:4"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "メモは家においてきました。",
+   "en": "",
+   "refs": [
+    "scene23:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "「ほかの人を好きになっちゃいやよ。」",
+   "en": "",
+   "refs": [
+    "scene23:12"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "もう今さら口説くことはないて゛しょう。半年もつきあっているんた゛から・・・。",
+   "en": "",
+   "refs": [
+    "scene23:16"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "「あああ〜ん。好きよ・・・大好き」　これし゛ゃ由美子と゛ころし゛ゃないて゛すね。",
+   "en": "",
+   "refs": [
+    "scene24:0"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "こ゛らんの通りて゛す。好みて゛はないけと゛、やっは゜り・・・フ゜フ゜フ゜て゛す。",
+   "en": "",
+   "refs": [
+    "scene24:3"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "そんなもの見なくてもいいて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene24:4"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "ぬか゛してと゛こかへナケ゛ちゃったて゛しょ。",
+   "en": "",
+   "refs": [
+    "scene24:5"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "かってに見てコーフンして下さい。",
+   "en": "",
+   "refs": [
+    "scene24:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "あ〜あ、あなたはやっは゜りスケヘ゛て゛すね。あとて゛、と゛うなってもしりませんよ。",
+   "en": "",
+   "refs": [
+    "scene24:7"
+   ],
+   "max_cells": 41
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "あなたか゛と゛こかへなけ゛すてたて゛しょう。彼女はノーハ゜ンて゛帰らなきゃなりません。",
+   "en": "",
+   "refs": [
+    "scene24:10"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "それと゛ころし゛ゃありません。",
+   "en": "",
+   "refs": [
+    "scene24:11",
+    "scene30:5",
+    "scene33:14",
+    "scene34:17",
+    "scene36:6",
+    "scene39:3",
+    "scene40:2"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "はけ゛しく動いています。",
+   "en": "",
+   "refs": [
+    "scene24:14"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "モタ゛えてます。「ああぁぁぁ〜〜〜っ！」",
+   "en": "",
+   "refs": [
+    "scene24:16"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "今日は石井とやくそくしたハイキンク゛にいく日て゛す。彼らはもう駅て゛あなたをまっています。まん中の女の子か゛石井の彼女て゛直子。左は彼女の友達の洋子て゛す。",
+   "en": "",
+   "refs": [
+    "scene25:0"
+   ],
+   "max_cells": 78
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "彼女のことはよくしってます。石井とは３か月ほと゛つきあっています。",
+   "en": "",
+   "refs": [
+    "scene25:1",
+    "scene27:3",
+    "scene28:6",
+    "scene29:3"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "あなたはこの子にあうのは初めてて゛す。なかなかかわいい子て゛すね。",
+   "en": "",
+   "refs": [
+    "scene25:2",
+    "scene27:4",
+    "scene28:7",
+    "scene29:4"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "いちは゛ん早くきたらしく、待ちくたひ゛れています。",
+   "en": "",
+   "refs": [
+    "scene25:3"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "「いやん、エッチ！」",
+   "en": "",
+   "refs": [
+    "scene25:4",
+    "scene28:2"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "ムチムチしています。おもわす゛コーフン。て゛も由美子は・・・？",
+   "en": "",
+   "refs": [
+    "scene25:5",
+    "scene28:3",
+    "scene29:1",
+    "scene30:3"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "同級生て゛おなし゛マイコンクラフ゛のメンハ゛ーて゛す。",
+   "en": "",
+   "refs": [
+    "scene25:6",
+    "scene27:5",
+    "scene28:8",
+    "scene29:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "ナソ゛の男か゛気にかかります。誰かしっているて゛しょうか。",
+   "en": "",
+   "refs": [
+    "scene25:7",
+    "scene27:6",
+    "scene28:9",
+    "scene29:6"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "今のところまさにナソ゛。何もわかりません。",
+   "en": "",
+   "refs": [
+    "scene25:8",
+    "scene27:7",
+    "scene28:10",
+    "scene29:7"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "「この子　洋子よ。私の友達なの」",
+   "en": "",
+   "refs": [
+    "scene25:9"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "「私、洋子て゛す。よろしくね」とかわいく言ってます。",
+   "en": "",
+   "refs": [
+    "scene25:10"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "「おそいし゛ゃねーの。早くいこうせ゛」",
+   "en": "",
+   "refs": [
+    "scene25:11"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "ハ゛カなことは　しないよーに。",
+   "en": "",
+   "refs": [
+    "scene25:12",
+    "scene27:11",
+    "scene28:14"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "「おい、と゛こへ行くんた゛よ」と石井にいわれました。",
+   "en": "",
+   "refs": [
+    "scene25:13",
+    "scene27:12"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "「ハ゛カ！オレの彼女た゛そ゛！」と石井におこられました。",
+   "en": "",
+   "refs": [
+    "scene25:14"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "あわてないよーに。",
+   "en": "",
+   "refs": [
+    "scene25:15",
+    "scene27:14",
+    "scene28:17"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "電車にのって１時間あまり、山と湖か゛見える所やってきました。天気はいいし、気分もいい・・・。たまには、こういう所に来るのもいいもんて゛す。",
+   "en": "",
+   "refs": [
+    "scene26:0"
+   ],
+   "max_cells": 69
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "あなたは湖のホ゛ートのりは゛にきています。彼らか゛ホ゛ートに乗ろうとさそっています。",
+   "en": "",
+   "refs": [
+    "scene27:0"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "ホ゛ートに乗っています。",
+   "en": "",
+   "refs": [
+    "scene27:1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "ホ゛ートのまえて゛あなたを待っています。",
+   "en": "",
+   "refs": [
+    "scene27:2"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "「ねぇ、早くきてぇー。ホ゛ートに乗りましょうよ。」",
+   "en": "",
+   "refs": [
+    "scene27:8"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "「あなた　由美子さんを好きなの？うん、あたしはよくしらないけと゛、あの人なんかウラの部分か゛あるみたいね。そのことなら直子か゛くわしいわ。」",
+   "en": "",
+   "refs": [
+    "scene27:9",
+    "scene28:12",
+    "scene29:8"
+   ],
+   "max_cells": 70
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "「しらないわ　そんな人」",
+   "en": "",
+   "refs": [
+    "scene27:10",
+    "scene28:13"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "さすか゛手か゛早い。彼女もまんさ゛らて゛もなさそうて゛す。",
+   "en": "",
+   "refs": [
+    "scene27:13",
+    "scene28:16"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "あなたは洋子とホ゛ートに乗っています。彼女もかわいいて゛すね。",
+   "en": "",
+   "refs": [
+    "scene28:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "いいけしきて゛す。",
+   "en": "",
+   "refs": [
+    "scene28:1"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "ひろい湖て゛すねぇ。",
+   "en": "",
+   "refs": [
+    "scene28:4"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "このコに由美子のことを聞いてみますか？",
+   "en": "",
+   "refs": [
+    "scene28:5",
+    "scene29:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "「あなたいい人ね。誰か好きな人いるの？」　彼女はあなたを気にいったようて゛す。",
+   "en": "",
+   "refs": [
+    "scene28:11",
+    "scene29:10"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "もう乗っています。",
+   "en": "",
+   "refs": [
+    "scene28:15"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "あなたを見つめています。きっとあなたか゛気にいったんて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene29:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "「そろそろもと゛りましょう。おなかすいちゃったわ」",
+   "en": "",
+   "refs": [
+    "scene29:9"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "「ああ〜っ！あふ゛ない。こんなところて゛やめてよ〜‼」",
+   "en": "",
+   "refs": [
+    "scene30:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "かなりいやか゛ってます。やめたほうか゛いいのて゛は・・・。",
+   "en": "",
+   "refs": [
+    "scene30:1"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "こ゛らんの通り、す゛り下け゛られています。自分て゛やったくせに。",
+   "en": "",
+   "refs": [
+    "scene30:2"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "ゆれています。あふ゛ないて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene30:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "気もちのいい草原て゛す。へ゛んとうは食へ゛たし、天気はいいし、女の子ははしゃいて゛います。",
+   "en": "",
+   "refs": [
+    "scene31:0"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "こ゛らんの通りの野原て゛す。いい天気て゛すね。",
+   "en": "",
+   "refs": [
+    "scene31:1",
+    "scene32:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "まわりはす゛っと野原て゛す。",
+   "en": "",
+   "refs": [
+    "scene31:2",
+    "scene32:2"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "ナソ゛の男とは一体誰のことなのて゛しょう　？",
+   "en": "",
+   "refs": [
+    "scene31:3",
+    "scene32:3",
+    "scene33:2",
+    "scene34:3",
+    "scene35:3",
+    "scene36:4"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "むし゛ゃきにはしゃいて゛います。",
+   "en": "",
+   "refs": [
+    "scene31:4",
+    "scene32:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "スケヘ゛そうにわらっています。",
+   "en": "",
+   "refs": [
+    "scene31:5",
+    "scene32:5"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "あそこに見えるて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene31:6",
+    "scene32:6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "いまのところと゛うしようもありません。",
+   "en": "",
+   "refs": [
+    "scene31:7",
+    "scene32:7",
+    "scene33:5",
+    "scene34:9",
+    "scene35:8",
+    "scene36:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "誰かに聞いてみますか？",
+   "en": "",
+   "refs": [
+    "scene31:8",
+    "scene32:8",
+    "scene33:6",
+    "scene34:10",
+    "scene35:9",
+    "scene36:9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "友人のカ゛ールフレント゛て゛す。",
+   "en": "",
+   "refs": [
+    "scene31:9",
+    "scene35:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "直子か゛何かをしっているかもしれません。あとて゛聞いてみましょう。",
+   "en": "",
+   "refs": [
+    "scene31:10",
+    "scene32:9",
+    "scene33:7",
+    "scene34:11",
+    "scene35:10",
+    "scene36:10"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "今のところ直子の友人た゛ということしかわかっていません。",
+   "en": "",
+   "refs": [
+    "scene31:11",
+    "scene32:11",
+    "scene33:9",
+    "scene34:13",
+    "scene35:12",
+    "scene36:12"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "マイコンクラフ゛の中て゛はワリと気か゛あうほうて゛す。",
+   "en": "",
+   "refs": [
+    "scene31:12",
+    "scene32:12",
+    "scene33:10",
+    "scene34:14",
+    "scene35:13",
+    "scene36:13"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "「え、なあに？なにをフ゛ツフ゛ツいってんのよ」",
+   "en": "",
+   "refs": [
+    "scene31:13",
+    "scene32:16"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "し゛ょうた゛んはヨセ！",
+   "en": "",
+   "refs": [
+    "scene31:14",
+    "scene33:13",
+    "scene34:16"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "ここし゛ゃます゛いて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene31:15"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "「へへへ、おまえ、あの子　気にいったか？　と゛うた゛森にいかないか」",
+   "en": "",
+   "refs": [
+    "scene32:0"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "石井のカ゛ールフレント゛て゛す。",
+   "en": "",
+   "refs": [
+    "scene32:10",
+    "scene33:8",
+    "scene34:12",
+    "scene36:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "「おれも直子とうまくやるから、森へいこうせ゛」",
+   "en": "",
+   "refs": [
+    "scene32:13"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "「何すんた゛よ　ハ゛カ！」",
+   "en": "",
+   "refs": [
+    "scene32:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "また゛早い！",
+   "en": "",
+   "refs": [
+    "scene32:15"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "森の中て゛す。みちにまよったふりして洋子と二人きりになりました。",
+   "en": "",
+   "refs": [
+    "scene33:0"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "ほんとにまよってしまいました。と゛こにも行けません。",
+   "en": "",
+   "refs": [
+    "scene33:1",
+    "scene34:7"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "あなたの下心に気つ゛いたのか、ふ安そうて゛す。",
+   "en": "",
+   "refs": [
+    "scene33:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "ここは森の中て゛すよ。",
+   "en": "",
+   "refs": [
+    "scene33:4",
+    "scene34:8",
+    "scene35:6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "「直子たちはと゛こへ行っちゃったのかしら・・・」",
+   "en": "",
+   "refs": [
+    "scene33:11"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "みちにまよって出られません。",
+   "en": "",
+   "refs": [
+    "scene33:12"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "雨か゛ふってきました。「あそこに　ほら穴か゛あるわ！」とまあつこ゛うのいいことて゛・・・。",
+   "en": "",
+   "refs": [
+    "scene34:0"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "ほら穴か゛あります。",
+   "en": "",
+   "refs": [
+    "scene34:1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "と゛こをみわたしても森て゛す。",
+   "en": "",
+   "refs": [
+    "scene34:2"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "とつせ゛んの雨にあわてています。",
+   "en": "",
+   "refs": [
+    "scene34:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "雨やと゛りするのにもってこいのほら穴て゛す。",
+   "en": "",
+   "refs": [
+    "scene34:5"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "ちょっと　やみそうにありませんねェ。",
+   "en": "",
+   "refs": [
+    "scene34:6",
+    "scene35:5"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "「あそこて゛雨やと゛りしましょうよ！」",
+   "en": "",
+   "refs": [
+    "scene34:15"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "「いやよ　こんなとこし゛ゃ」",
+   "en": "",
+   "refs": [
+    "scene34:18",
+    "scene35:23"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "ほら穴の中にはいりました。二人ともス゛フ゛ぬれて゛す。",
+   "en": "",
+   "refs": [
+    "scene35:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "ほら穴の入り口て゛す。",
+   "en": "",
+   "refs": [
+    "scene35:1",
+    "scene36:2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "ほら穴の中て゛す。",
+   "en": "",
+   "refs": [
+    "scene35:2",
+    "scene36:3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "あなたを見つめています。",
+   "en": "",
+   "refs": [
+    "scene35:4",
+    "scene50:2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "ここか゛ほら穴の中て゛す。",
+   "en": "",
+   "refs": [
+    "scene35:7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "「早く　雨やまないかしら」",
+   "en": "",
+   "refs": [
+    "scene35:14"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "「なあに　それ？」",
+   "en": "",
+   "refs": [
+    "scene35:15"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "「由美子さんか゛好きなの！？　あの人　やめたほうか゛いいわ。あまりいいうわさ聞かないもの。直子に聞いてみたらいいわ。」",
+   "en": "",
+   "refs": [
+    "scene35:16"
+   ],
+   "max_cells": 59
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "「あたしは由美子さんについては　それ以上しらないわ。あとは直子に聞いてよ。」",
+   "en": "",
+   "refs": [
+    "scene35:17"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "「小学校のころからの友達よ。彼女、由美子さんとも友達た゛わ」",
+   "en": "",
+   "refs": [
+    "scene35:18"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "「あたしはふつうの女の子よ」",
+   "en": "",
+   "refs": [
+    "scene35:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "「しらないわそんな人」",
+   "en": "",
+   "refs": [
+    "scene35:20"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "「あの人　今は直子とつきあっているけと゛、ちょっと前は由美子さんか゛好きた゛ったみたいよ」",
+   "en": "",
+   "refs": [
+    "scene35:21"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "そんなおそまつなものを見せても　よろこひ゛ませんよ。",
+   "en": "",
+   "refs": [
+    "scene35:22",
+    "scene36:16"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "「あ、やめて　いた〜〜い！やめてえっ！」　下か゛いわなのて゛　ちょっといたいのかもしれません。",
+   "en": "",
+   "refs": [
+    "scene36:0"
+   ],
+   "max_cells": 47
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "こ゛らんの通りて゛す。あなたもスキて゛すねぇ。",
+   "en": "",
+   "refs": [
+    "scene36:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "もた゛えています。",
+   "en": "",
+   "refs": [
+    "scene36:5",
+    "scene40:3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "ムフフフフ・・・・・",
+   "en": "",
+   "refs": [
+    "scene36:7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "「いやーっ、やめてよーっ‼」",
+   "en": "",
+   "refs": [
+    "scene36:14"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "「あああ〜〜ん！」",
+   "en": "",
+   "refs": [
+    "scene36:15"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "あなたは由美子の話をきくために直子の家にやってきました。ここは直子の部屋て゛す。",
+   "en": "",
+   "refs": [
+    "scene37:0"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "この子もイロっほ゜て゛すねェ。石井にはもったいない。",
+   "en": "",
+   "refs": [
+    "scene37:1",
+    "scene38:1",
+    "scene38:4",
+    "scene39:1",
+    "scene40:1"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "「ちょっと　何するのよ！」とおこられました。",
+   "en": "",
+   "refs": [
+    "scene37:2"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "石井の恋人て゛すか゛、由美子の友達て゛もあります。あとは本人にと゛うそ゛。",
+   "en": "",
+   "refs": [
+    "scene37:3",
+    "scene37:6",
+    "scene38:5",
+    "scene39:6",
+    "scene40:6"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "そのために　ここに来たのて゛す。直子にきいてくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene37:4",
+    "scene38:6"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "直子にきいてくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene37:5",
+    "scene38:7"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "「由美子はね、原先生にす゛っとせまられていたのよ。もちろん　そんなハ゛カな話にのるような由美子し゛ゃないけと゛、何か弱みをにき゛られているみたい。今も関係してるわ。」　「それから　由美子の性格かわっちゃってね。まいにち夜の街をさまよっているわ。あなた　助けてあけ゛てよ」",
+   "en": "",
+   "refs": [
+    "scene37:7",
+    "scene38:8"
+   ],
+   "max_cells": 135
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "「あの人　由美子か゛好きた゛ったのよ」",
+   "en": "",
+   "refs": [
+    "scene37:8",
+    "scene38:9"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "「せっかく来たのに、そう　あわてることないし゛ゃない」　ユーワクしてるのかな？",
+   "en": "",
+   "refs": [
+    "scene37:9",
+    "scene38:11"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "彼女にこのメモのキ゛ワクを聞いてみましょうか？",
+   "en": "",
+   "refs": [
+    "scene37:10",
+    "scene38:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "その気か゛ありそうて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene37:11"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "話をしにきたんて゛しょ。",
+   "en": "",
+   "refs": [
+    "scene37:12",
+    "scene38:12"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "「へえ、　あなたも由美子か゛好きなの・・・フフフ。」　イミのあるわらいて゛す。",
+   "en": "",
+   "refs": [
+    "scene37:13"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "「へえ、あなたも由美子か゛好きなの　フフフ」　イミのあるわらいかたて゛す。",
+   "en": "",
+   "refs": [
+    "scene38:0"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "彼女の部屋の出口て゛す。",
+   "en": "",
+   "refs": [
+    "scene38:2",
+    "scene39:2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "「て゛も　先生との関係か゛わかって　あきらめたみたい」",
+   "en": "",
+   "refs": [
+    "scene38:10"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "「ああ〜〜ん♡」　あなたは石井にわるいと思いつつ、直子に手をた゛してしまいました。あとて゛　と゛うなってもしりませんよ〜〜っ！",
+   "en": "",
+   "refs": [
+    "scene39:0"
+   ],
+   "max_cells": 63
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "口て゛はいやか゛っていますか゛、まんさ゛らて゛もなさそうて゛す。",
+   "en": "",
+   "refs": [
+    "scene39:4"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "ムチムチて゛す。おっと　ハナ血か゛・・・。",
+   "en": "",
+   "refs": [
+    "scene39:5",
+    "scene40:4"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "また゛　直子にきくへ゛き話か゛あるんて゛すか゛、しょうか゛ないて゛すね。",
+   "en": "",
+   "refs": [
+    "scene39:7"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "これ以上ぬか゛す必要もないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene39:8",
+    "scene40:9"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "そうて゛す。　石井のこともあるし、今は由美子のことを考えるへ゛きて゛すね。",
+   "en": "",
+   "refs": [
+    "scene39:9"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "「い、い、いいわ・・・！　あううっっ！！」",
+   "en": "",
+   "refs": [
+    "scene39:10"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "「アッ　アウッ　ウァァ〜〜ッ！」　そろそろやめたほうか゛　いいんし゛ゃないて゛すか？　石井にハ゛レたらことて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene40:0"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "「あううっ！　い、いいわ・・♡」",
+   "en": "",
+   "refs": [
+    "scene40:5"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "そうて゛す。石井のこともあるし、今は由美子のことを考えるへ゛きて゛すからね。",
+   "en": "",
+   "refs": [
+    "scene40:7"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "「アッ　アウッ　ウァァ〜〜ッ！」　もた゛えています。",
+   "en": "",
+   "refs": [
+    "scene40:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "また゛　久由に聞くへ゛きことか゛あるんて゛すか゛、しかたないて゛すね・・・。",
+   "en": "",
+   "refs": [
+    "scene40:10"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "「あ、こ、こ、このヤロウ！なんてことするんた゛‼」　あなたはメいっは゜いふ゛んなく゛られました。人の彼女に手をた゛したあなたか゛悪い。　従って、これ以上ケ゛ームを続けることはて゛きません。",
+   "en": "",
+   "refs": [
+    "scene41:0"
+   ],
+   "max_cells": 94
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "あなたは由美子を探しに夜の街にやってきました。　左にはトルコ、右にスナックとテ゛ィスコか゛あります。その間に路地か゛あります。",
+   "en": "",
+   "refs": [
+    "scene42:0"
+   ],
+   "max_cells": 63
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "夜の街て゛す。",
+   "en": "",
+   "refs": [
+    "scene42:1"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "まさか　あの先生と由美子か゛？信し゛られません。早く　由美子を探して　はっきりさせて下さい。",
+   "en": "",
+   "refs": [
+    "scene42:2",
+    "scene43:3",
+    "scene44:2",
+    "scene45:3",
+    "scene46:3",
+    "scene47:4"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "と゛こにいるか分かりません。探して下さい。",
+   "en": "",
+   "refs": [
+    "scene42:3",
+    "scene43:4",
+    "scene43:7",
+    "scene44:3",
+    "scene44:6",
+    "scene45:4",
+    "scene45:7",
+    "scene46:4",
+    "scene47:5"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "ロリータホ゜ルノをやっています。見たいて゛しょうか゛　今はカ゛マンて゛すね。",
+   "en": "",
+   "refs": [
+    "scene42:4"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "ここからて゛は　よく見えません。",
+   "en": "",
+   "refs": [
+    "scene42:5"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "そんなところへ行っても　しょうか゛ないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene42:6"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "映画をみてるヒマはありません。",
+   "en": "",
+   "refs": [
+    "scene42:7",
+    "scene43:6",
+    "scene44:5",
+    "scene45:6",
+    "scene46:7",
+    "scene47:6"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "テ゛ィスコにいるみたいて゛すよ。",
+   "en": "",
+   "refs": [
+    "scene42:8",
+    "scene43:8",
+    "scene44:7",
+    "scene45:8",
+    "scene46:8"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "せっかく来たのに　由美子をみつけてからて゛いいて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene42:9",
+    "scene43:9"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "交番か゛あります。　「こらっ　こんなところを高校生か゛ウロウロするんし゛ゃない。早く帰れ」",
+   "en": "",
+   "refs": [
+    "scene43:0"
+   ],
+   "max_cells": 45
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "「また　お前か。なんと゛言ったらわかるんた゛。ちょっと　こっちへ来い！」　交番につれこまれてしまいました。　従って、これ以上ケ゛ームを続けることはて゛きません。",
+   "en": "",
+   "refs": [
+    "scene43:1"
+   ],
+   "max_cells": 80
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "にき゛やかな夜のカンラクカ゛イて゛す。",
+   "en": "",
+   "refs": [
+    "scene43:2",
+    "scene44:1",
+    "scene45:2",
+    "scene46:2",
+    "scene47:3"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "交番にはいっても　しょうか゛ないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene43:5"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "トルコにはいりました。「お客さん、いい子か゛いますよ。入って下さいよ。」",
+   "en": "",
+   "refs": [
+    "scene44:0"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "あ〜あ　すっきりした。て゛も　あなたは由美子をさか゛しにきたんて゛しょ？　お金はせ゛んふ゛使ってしまいましたよ。",
+   "en": "",
+   "refs": [
+    "scene44:4"
+   ],
+   "max_cells": 56
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "「そんな女　しらないね」　とシハイニンか゛言ってます。",
+   "en": "",
+   "refs": [
+    "scene44:8"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "スナックの中て゛す。マスターと客か゛います。　　",
+   "en": "",
+   "refs": [
+    "scene45:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "ゆっくりしてるは゛あいし゛ゃ　ありませんよ。",
+   "en": "",
+   "refs": [
+    "scene45:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "うさんくさそうに　こっちを見ています。",
+   "en": "",
+   "refs": [
+    "scene45:5"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "「ああ　その子ならさっきまて゛　ここにいたな。テ゛ィスコへ行くって言ってたよ」",
+   "en": "",
+   "refs": [
+    "scene45:9"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "「そんな女　しらないね」　とお客さんか゛言ってます。",
+   "en": "",
+   "refs": [
+    "scene45:10",
+    "scene47:7"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "「おいっ。カ゛キのくせに　こんなところをウロウロするんし゛ゃねぇョ。金もってるた゛ろう。ヨコシナ」　あり金せ゛んふ゛まきあけ゛られました。",
+   "en": "",
+   "refs": [
+    "scene46:0"
+   ],
+   "max_cells": 69
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "「テメェ　また来たのか。ナマイキなやつた゛な」　と　ホ゛コホ゛コされました。サイキフノウて゛す。",
+   "en": "",
+   "refs": [
+    "scene46:1"
+   ],
+   "max_cells": 48
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "こっちを　にらんて゛ます。",
+   "en": "",
+   "refs": [
+    "scene46:5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "おそろしいことを　かんか゛えないて゛下さい。",
+   "en": "",
+   "refs": [
+    "scene46:6"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "ゆうかんに　ヤクサ゛にたちむかったあなたは、とうせ゛んメチャクチャにやられました。　従って、これ以上ケ゛ームを続けることはて゛きません。",
+   "en": "",
+   "refs": [
+    "scene46:9"
+   ],
+   "max_cells": 68
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "テ゛ィスコの中て゛す。みんな　キ゛ンキ゛ンにのりまくっています。",
+   "en": "",
+   "refs": [
+    "scene47:0"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "ここに由美子か゛いるはす゛て゛す。　よく探してみて下さい。",
+   "en": "",
+   "refs": [
+    "scene47:1"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "人こ゛みて゛す。",
+   "en": "",
+   "refs": [
+    "scene47:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "テ゛ィスコの中て゛す。あっ　由美子か゛いました。",
+   "en": "",
+   "refs": [
+    "scene48:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "みんな　おと゛っています。にき゛やかて゛す。",
+   "en": "",
+   "refs": [
+    "scene48:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "あなたはメモのないようを　また゛カイメイしていません。",
+   "en": "",
+   "refs": [
+    "scene48:2"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "由美子にし゛し゛つかと゛うか聞いてみましょう。",
+   "en": "",
+   "refs": [
+    "scene48:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "由美子はかなりヨっているようて゛す。学校て゛みるのとは別人のようて゛す。",
+   "en": "",
+   "refs": [
+    "scene48:4",
+    "scene49:2"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "由美子のイメーシ゛からは　かけはなれた服をきています。",
+   "en": "",
+   "refs": [
+    "scene48:5",
+    "scene50:3",
+    "scene51:3"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "服はかわっても、やはり由美子はすは゛らしい。何としてて゛も今夜モノにしなけれは゛・・・。",
+   "en": "",
+   "refs": [
+    "scene48:6",
+    "scene49:4",
+    "scene50:4"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "今さら　そんなところへ行ってもしょうか゛ないて゛しょう。",
+   "en": "",
+   "refs": [
+    "scene48:7",
+    "scene50:5"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "由美子に聞いてみて下さい。",
+   "en": "",
+   "refs": [
+    "scene48:8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "「誰？あなた。思いた゛した。いつもテニスしているのを見てた人ね」",
+   "en": "",
+   "refs": [
+    "scene48:9"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "「ウルさいわねぇ。あっちへ行ってよ！」",
+   "en": "",
+   "refs": [
+    "scene48:10"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "由美子と話をつけなけりゃ、ひとりて゛出てもしかたありません。",
+   "en": "",
+   "refs": [
+    "scene48:11"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "は゛しょをかんか゛えて下さい。",
+   "en": "",
+   "refs": [
+    "scene48:12",
+    "scene50:8",
+    "scene51:8"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "あなたか゛原先生のことを話すと、由美子の顔いろか゛かわりました。　何かありそうて゛す。　・・あなたは由美子といっしょにテ゛ィスコをて゛ました。",
+   "en": "",
+   "refs": [
+    "scene49:0"
+   ],
+   "max_cells": 71
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "にき゛やかな夜の街て゛す。",
+   "en": "",
+   "refs": [
+    "scene49:1",
+    "scene50:1",
+    "scene51:1"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "「ふふふ・・。　そうねぇ・・・。」　　？？　",
+   "en": "",
+   "refs": [
+    "scene49:3"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "ホテルを探した方か゛いいんし゛ゃないて゛すか・・・？",
+   "en": "",
+   "refs": [
+    "scene49:5"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "「あたしと　あの先生のことしってるなんて、あなた　なかなかね」",
+   "en": "",
+   "refs": [
+    "scene49:6",
+    "scene50:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "「フフ・・・そう、直子はあたしか゛原先生とつきあっているのを　しってるものね。て゛も　と゛うしてつきあっているのかは、しらないて゛しょ。きっと」",
+   "en": "",
+   "refs": [
+    "scene49:7"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "口説きか゛　うまくいってからにして下さい。",
+   "en": "",
+   "refs": [
+    "scene49:8"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "「何　考えてるのよ。このスケヘ゛」　見ぬかれていますよ。",
+   "en": "",
+   "refs": [
+    "scene50:6",
+    "scene51:6"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "「世の中いろいろあるのよ。あなたなんかに関係ないわ」",
+   "en": "",
+   "refs": [
+    "scene50:7",
+    "scene51:7"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "な、なんと、つこ゛うよくホテルか゛ありました。あなたと由美子は今、ホテルの前にいます。",
+   "en": "",
+   "refs": [
+    "scene51:0"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "あなたか゛と゛うするのか見ています。",
+   "en": "",
+   "refs": [
+    "scene51:2"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "「いいわ・・・」",
+   "en": "",
+   "refs": [
+    "scene51:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "目の前にありますよ。",
+   "en": "",
+   "refs": [
+    "scene51:5"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "あなたはホテルに入ろうにも、お金をもっていません。　さっき街て゛せ゛んふ゛使ってしまったからて゛す。　これし゛ゃ由美子をホテルにつれこめませんね。　従って、これ以上ケ゛ームを続けることはて゛きません。",
+   "en": "",
+   "refs": [
+    "scene52:0"
+   ],
+   "max_cells": 100
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "あなたと由美子はホテルの中にいます。　ついにここまて゛来ました。",
+   "en": "",
+   "refs": [
+    "scene53:0"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "こうして見ると、由美子はやっは゜りすは゛らしい女て゛す。　あなたの目は高い。　さあ、早く・・・・！",
+   "en": "",
+   "refs": [
+    "scene53:1"
+   ],
+   "max_cells": 49
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "「そんなにあわてなくてもいいし゛ゃない。」",
+   "en": "",
+   "refs": [
+    "scene53:2"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "そんなことをしてるハ゛アイし゛ゃありませんよ。",
+   "en": "",
+   "refs": [
+    "scene53:3",
+    "scene54:2",
+    "scene55:2",
+    "scene56:3",
+    "scene57:5"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "「シャワーて゛も浴ひ゛てきたら。」",
+   "en": "",
+   "refs": [
+    "scene53:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "「そんなこと　話したくないわ。」",
+   "en": "",
+   "refs": [
+    "scene53:5",
+    "scene54:5",
+    "scene56:4"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "せっかくここまて゛来たのに・・・。　もうひといき、か゛んは゛ってくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene53:6",
+    "scene54:6",
+    "scene56:6",
+    "scene57:2"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "ま、まさか・・・！　そんなことて゛きませんよ。",
+   "en": "",
+   "refs": [
+    "scene53:7",
+    "scene54:7"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "「そんなにあわてなくてもいいし゛ゃない・・。　シャワーて゛も浴ひ゛てきたら。」",
+   "en": "",
+   "refs": [
+    "scene53:8"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "今さら何を言ってるんて゛すか！",
+   "en": "",
+   "refs": [
+    "scene53:9",
+    "scene54:8"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "シャワーを浴ひ゛て、由美子は今、ヘ゛ット゛の中にいます。　つ、ついに・・・・",
+   "en": "",
+   "refs": [
+    "scene54:0"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "チョーハツ的な目て゛こちらを見ています。か゛んは゛って下さい。",
+   "en": "",
+   "refs": [
+    "scene54:1"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "「あ、ちょっと待ってよ、思い出したわ！　あなた　たしか久美とつきあってたわねぇ。　ウソ言ってもタ゛メよ。　あたし、そういうウワキモノって大きらい！」　あ、あ、ここまて゛来て・・・・　従って、これ以上ケ゛ームを続けることはて゛きません。",
+   "en": "",
+   "refs": [
+    "scene54:3"
+   ],
+   "max_cells": 117
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "「と゛うしたの？　早くぅ・・・♡」",
+   "en": "",
+   "refs": [
+    "scene54:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "「あああ・・・・・んんっ！」　由美子は、いか゛いにもえやすいタイフ゜なのかもしれません。",
+   "en": "",
+   "refs": [
+    "scene55:0"
+   ],
+   "max_cells": 44
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "あなたのウテ゛の中て゛もた゛えています・・・。",
+   "en": "",
+   "refs": [
+    "scene55:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "また゛イってはいけません。",
+   "en": "",
+   "refs": [
+    "scene55:3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "「あっふう〜〜〜ん。うっうああぁ〜っ！！」",
+   "en": "",
+   "refs": [
+    "scene55:4",
+    "scene56:5",
+    "scene56:7"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "今さら何を言っとるんて゛すか！",
+   "en": "",
+   "refs": [
+    "scene55:5",
+    "scene56:8",
+    "scene57:4"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "つ、ついに　やりました！　あなたは　目的を果たしました。　しかし、彼女の心か゛あなたのものになった訳て゛はないし、あのメモのことも　また゛わかっていませんね。なせ゛彼女か゛先生とつきあったかもしらないまま　ケ゛ームオーハ゛ーて゛す。",
+   "en": "",
+   "refs": [
+    "scene56:0"
+   ],
+   "max_cells": 116
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "つ、ついに　やりました！　あなたは　目的を果たしました。",
+   "en": "",
+   "refs": [
+    "scene56:1"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "よーく見て下さい。由美子は今、あなたのものて゛す！",
+   "en": "",
+   "refs": [
+    "scene56:2"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "「うああぁぁぁ〜〜っ　いいぃ〜〜っっ！」",
+   "en": "",
+   "refs": [
+    "scene56:9"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "「あたしね、　し゛つはあの先生をゆすってたのよ。　あの先生以前あたしを犯そうとしてね。　た゛から逆におと゛してやったのよ。　て゛も、そういう自分か゛いやになってね・・・　それて゛まい晩飲みあるいてたって訳よ。」",
+   "en": "",
+   "refs": [
+    "scene57:0"
+   ],
+   "max_cells": 105
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "あなたにすへ゛てを告白しています。",
+   "en": "",
+   "refs": [
+    "scene57:1"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "今は彼女の話を聞いてあけ゛てくた゛さい。",
+   "en": "",
+   "refs": [
+    "scene57:3"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "「あなたの他にももう一人、石井クンか゛そのことをしってるわ。」",
+   "en": "",
+   "refs": [
+    "scene57:6"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "しかし、彼女の心か゛あなたのものになった訳て゛はないし、あのメモのことも　また゛わかっていませんね。なせ゛彼女か゛先生とつきあったかもしらないまま　ケ゛ームオーハ゛ーて゛す。",
+   "en": "",
+   "refs": [
+    "scene57:7"
+   ],
+   "max_cells": 87
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "後日、あなたは原先生を呼ひ゛出して、テッテー的にふ゛んなく゛ったのて゛す。　先生として、男としてなさけないて゛すからね。　原先生はその後、学校から姿を消しました。",
+   "en": "",
+   "refs": [
+    "scene58:0"
+   ],
+   "max_cells": 81
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "という訳て゛、由美子はあなたに大感シャ。すっかりあなたにホレてしまいました。　　そうて゛す！　あなたはついに大目的を果たしたのて゛す。　こ゛りっは゜！　えらいっ！！　と゛ーもおつかれさまて゛した。",
+   "en": "",
+   "refs": [
+    "scene59:0"
+   ],
+   "max_cells": 98
+  }
+ ]
+}

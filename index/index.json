@@ -123854,7 +123854,14 @@
      "path": "Tenshi-tachi no Gogo\\Tenshi-tachi no Gogo [FD hdb]\\Tenshi-tachi no Gogo.nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshi_i (patcher working, machine translation in progress)",
+     "url": "../games/tenshi_i/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17825 (erotic content)",
    "engine": "unlisted",
@@ -123862,7 +123869,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Jast.zip/Tenshi-tachi no Gogo Bangaihen",

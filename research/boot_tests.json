@@ -785,5 +785,27 @@
    "Save and load prompts",
    "not yet seen"
   ]
+ ],
+ "tenshi_i": [
+  [
+   "Title screen and opening message",
+   "OK: half-width letter-pair filler, wrapped to 53 cells"
+  ],
+  [
+   "Help panel (command list)",
+   "OK: 12-letter filler in each framed row"
+  ],
+  [
+   "Typed command to the next scene (school yard to the gym entrance, from the repacked disk)",
+   "OK: typed capitals shown; new scene's picture and filler message"
+  ],
+  [
+   "Long message (9-line test): the box's own pager",
+   "OK: lines 1-4, 5-8, then 7-9 (line 1 used to scroll out unread)"
+  ],
+  [
+   "Save and load prompts, game over",
+   "not yet seen"
+  ]
  ]
 }

@@ -1,0 +1,8 @@
+{
+ "title": "Tenshi-tachi no Gogo",
+ "key": "Jast.zip/Tenshi-tachi no Gogo",
+ "image": "Tenshi-tachi no Gogo\\Tenshi-tachi no Gogo [FD hdb]\\Tenshi-tachi no Gogo.d88",
+ "encoding": "jast_typed",
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,5:enter,4:shot,1:key=87,1:key=48,1:key=48,1:key=51,1:key=32,1:key=87,1:key=48,1:key=51,1:key=57,1:shot,1:enter,5:shot,3:enter,3:shot"
+}

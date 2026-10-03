@@ -305,6 +305,29 @@ MENU12_DISPLAY = """## English display (`pc98tl/jast_menu12.py`)
 * The title screen's Japanese is rewritten in its text-layer image."""
 
 
+TYPED_DISPLAY = """## English display (`pc98tl/jast_typed.py`)
+
+* The game draws every character itself from its own 12x10 font (text is
+  one glyph number a byte, FF before a second-bank glyph).  English is two
+  letters to a cell: a letter pair is two bytes, a first byte from glyph
+  numbers that are blank and unused by the script, and a second byte
+  numbering the pair.  The message draw's glyph lookup goes to a helper that
+  builds the pair's glyph from a 6x10 font (`pc98tl/font6x10.py`); Japanese
+  draws as before.
+* Message lines are padded with blank glyphs to the box edge (53 cells),
+  where the engine wraps.  The box pages itself, waiting for a key every
+  fourth scrolled line; its count now starts at a message's first line, so
+  no line scrolls out unread.
+* The helpers, the 6x10 font, the engine's English strings and the rebuilt
+  command panel sit in the engine load's zero tail, which stays zero in a
+  running game; the engine's pointers to them follow.
+* Scenes are rebuilt with the English and placed again, first fit, in their
+  old sectors and the free ones; the scene table follows.
+* Typed commands: the word tables get the English words, typed and shown
+  with the game's own capitals; the romaji conversion is bypassed so a typed
+  letter is stored as the capital itself."""
+
+
 def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -383,6 +406,16 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "* Typed commands: the word tables get the English words, typed and shown with the "
                 "game's own A-Z glyphs, and the key tables give capitals for the letter keys.",
                 "* The title screen's Japanese is rewritten in its text-layer image."]
+    elif cfg["encoding"] == "jast_typed":
+        scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
+        out += ["JAST's first typed-command engine on one self-booting 2HD floppy laid out like an "
+                "N88-BASIC disk (track 0 of 128-byte records, the game reading records 1-16 of the "
+                "other tracks).  The boot loads the font and the engine; %d scenes are found through a "
+                "table of 6-byte entries in the engine, each a run-length picture, the messages and a "
+                "command table.  The player types romaji commands, looked up in two tables of 4-glyph "
+                "words; a framed help panel lists the commands (`pc98tl/jast_typed.py` documents the "
+                "layout)." % len(scenes),
+                "", TYPED_DISPLAY]
     elif cfg["encoding"] == "jast_menu12":
         scenes = {r.split(":")[0] for e in strings for r in e["refs"] if r.startswith("scene")}
         out += ["JAST's menu engine on self-booting 2HD floppies (D88, 256-byte sectors, records 1-19 "
@@ -401,7 +434,7 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    labels = {"title": "title screen", "msg": "scene text", "engine": "engine strings", "word": "menu words", "batch": "batch lines"}
+    labels = {"panel": "help panel rows", "title": "title screen", "msg": "scene text", "engine": "engine strings", "word": "menu words", "batch": "batch lines"}
     out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
         "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
     out.append("Translation and the content classification (♥) are done by the translation model; "
@@ -444,6 +477,27 @@ def jast_notes(name, cfg, doc, adult, clear, tests, extra):
                 "next to the patched images instead of a file on the disk.",
                 "", "## Not handled", "",
                 "* Text drawn into the artwork (the title logo, pictures)."]
+    elif cfg["encoding"] == "jast_typed":
+        out += ["", "## Limits", "",
+                "* Messages (`m` ids): `\\n` starts a new line.  Letters and `.,'!?-` are drawn in "
+                "pairs; digits and characters in the game's font (Japanese, brackets) use its own "
+                "glyphs; anything else shows as `?`.",
+                "* Command words (`w` ids: `verb:` and `noun:` refs): up to 4 capital letters or "
+                "digits, typed by the player; longer ones are cut and reported.  The engine finds a "
+                "word anywhere in the typed line, so a word holding another (`SEE` in `SEEK`) also "
+                "matches that word's commands; the patcher reports each such pair.",
+                "* Help panel rows (`p` ids): `max_cells` cells (2 letters each); longer ones are cut "
+                "and reported.",
+                "* Engine strings (`e` ids): no length limit.  The save and load prompts are drawn in "
+                "pieces, one after another: `eng:033a` (\"DATAを\"), then `eng:0340` (\"ロード\", load) "
+                "or `eng:0345` (\"セーブ\", save), then `eng:034a` (\"します。\").",
+                "* A rebuilt scene must fit the engine's 24 KB scene buffer, and all scenes the disk; "
+                "the patcher refuses a build that breaks either.",
+                "* The disk has no file system, so the machine-translation notice is `MTL_NOTE.TXT` "
+                "next to the patched image instead of a file on the disk.",
+                "", "## Not handled", "",
+                "* Text drawn into the artwork (the title logo, pictures) and the \"Presented by "
+                "JAST\" glyphs on the title screen."]
     elif cfg["encoding"] == "jast_menu12":
         out += ["", "## Limits", "",
                 "* Messages (`m` ids: scene text, the system messages and the engine's save and load "
@@ -508,7 +562,7 @@ def main():
         doc = load("games", name, "strings.json")
         if cfg is None or doc is None:
             continue
-        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12"):
+        if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12", "jast_typed"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
