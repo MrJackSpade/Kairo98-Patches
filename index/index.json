@@ -80806,15 +80806,27 @@
      "path": "Kurutta Kajitsu\\Kurutta Kajitsu [FD]\\Kurutta Kajitsu (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)",
+     "url": "../games/kurutta_kajitsu/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Official English Windows release (BEEP, 2026-05-29; VNDB r157245)",
+     "url": "https://vndb.org/r157245",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r7935 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Fairytale.zip/Lam-Mal",

@@ -591,14 +591,20 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     has = {e["kind"] for e in strings}
     names = any(r.startswith("TCM/NAMEWIND") for e in strings for r in e["refs"])
     out += ["", "## Engine", "",
-            "ides' Adv98V script engine (`%s/`), on a hard-disk image: %d scripts with text (`MES/*.MES`, "
+            "ides' Adv98V script engine (`%s/`), %s: %d scripts with text (`MES/*.MES`, "
             "`*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
-            "rebuilds byte for byte." % (cfg["game_dir"], len(files),
+            "rebuilds byte for byte." % (cfg["game_dir"], "on a hard-disk image" if not cfg.get("hdd") else "on %d floppies" % (1 + len(cfg["hdd"]["disks"])), len(files),
                                          "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "")
             + (("  The procedure table holds %d slots of %d bytes (read off the engine's memory)."
                 % (cfg["proc_slots"], cfg["proc_slot"])) if "proc_slot" in cfg else
                "  No procedure holds text, so no procedure grows."),
             "", ADV98V_DISPLAY]
+    if cfg.get("hdd"):
+        out[out.index(ADV98V_DISPLAY):out.index(ADV98V_DISPLAY)] = [
+            "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
+            "hard-disk image (every disk's files in `%s/`, with the scripts' drive letters taken off "
+            "their file names, started as the floppy's boot does); the base image is the collection's "
+            "`%s` with its own game removed." % (cfg["hdd"]["dir"], cfg["hdd"]["base"].replace("\\", "/")), ""]
     if "inline" in has:
         out.append("* A message after a speaker's name tag (a procedure that ends its line) starts on the "
                    "frame's second line.")
@@ -636,6 +642,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("* The hero's name is printed between two message runs: the run before it ends where "
                    "the name starts (end it with a space if one should come before the name), the run "
                    "after it starts right after the name.")
+    if cfg.get("menu_fullwidth"):
+        out.append("* This engine draws menus from Shift-JIS only (an ASCII string in a menu crashes it), "
+                   "so menu items are written in full-width letters: `max_cells` letters each, cut and "
+                   "padded.")
     out.append("* Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on "
                "the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are "
                "cut and reported.")

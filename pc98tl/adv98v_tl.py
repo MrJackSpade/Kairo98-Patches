@@ -40,7 +40,14 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             widest name part it prints}), "name_cols" (the widest name the
             name entry takes, where there is no name_insert), "base_scripts"
             (the scripts run before the scenes, in order, where the chain
-            goes past the startup script the INI names), "boot_steps"}
+            goes past the startup script the INI names), "hdd" and
+            "drive_prefix" (a floppy set laid out on a hard disk, see
+            pc98tl/illusion_game.py), "menu_fullwidth" (an engine whose
+            menus take Shift-JIS only), "default_frame" (the message box
+            the startup script sets, in force where a script sets none),
+            "wait" (hex of the wait put before a page's message end, ""
+            where the end procedure waits itself; default D1 1 3 0, which
+            the oldest engines read differently), "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -75,12 +82,12 @@ def _cmd(data, tok, code):
     return tok[0] == "cmd" and data[tok[1]] == code
 
 
-def units(data, toks, proc_frames=None):
+def units(data, toks, proc_frames=None, frame=None):
     """[(first, end, kind, frame)] of the text runs: token index range,
     "msg" or "item", and the text frame (x1, y1, x2, y2) in force (set by
     A6, or by calling a procedure that sets one: proc_frames {number:
-    frame})."""
-    out, frame, i = [], None, 0
+    frame}); frame: the one in force when the script starts."""
+    out, i = [], 0
     menu_depth, proc_depth, depth = [], [], 0      # depths of open menu item / procedure blocks
     pending_menu = pending_proc = False
     while i < len(toks):
@@ -237,7 +244,7 @@ def mes_path(vol, game_dir, name):
     return _subdir(vol, game_dir, "MES") + "/" + name
 
 
-def inline_end(data, toks, us=None):
+def inline_end(data, toks, us=None, wait=WAIT):
     """A file's message end written out after its messages instead of a
     procedure call: the commands most often right after a message, up to
     and including a text reset (AA n); with the window close (AB) among
@@ -256,7 +263,7 @@ def inline_end(data, toks, us=None):
     if not seen:
         return None
     seq = max((c, b) for b, c in seen.items())[1]
-    return seq if seq[0] == 0xAB else WAIT + seq
+    return seq if seq[0] == 0xAB else wait + seq
 
 
 def _files(vol, game_dir):
@@ -268,11 +275,17 @@ def _files(vol, game_dir):
 
 def start_script(vol, game_dir, extraop):
     """The script the engine runs first: the one the game's INI (itself a
-    script, its tail often encrypted) names, else START.MES."""
+    script, its tail often encrypted; in the game folder or one below)
+    names, else START.MES."""
+    inis = []
     for e in vol.listdir(vol.find(game_dir)["cluster"]):
-        if e["is_dir"] or not e["name"].upper().endswith(".INI"):
-            continue
-        for _tag, data, _toks in _streams(vol.read(game_dir + "/" + e["name"]), extraop):
+        if e["is_dir"] and e["name"] not in (".", ".."):
+            inis += [game_dir + "/" + e["name"] + "/" + f["name"] for f in vol.listdir(e["cluster"])
+                     if not f["is_dir"] and f["name"].upper().endswith(".INI")]
+        elif e["name"].upper().endswith(".INI"):
+            inis.insert(0, game_dir + "/" + e["name"])
+    for ini in inis:
+        for _tag, data, _toks in _streams(vol.read(ini), extraop):
             m = re.search(rb'"(?:[a-z]:)?\\?(?:\w+_)?mes\\([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
@@ -426,10 +439,39 @@ def mec_rooms(vol, game_dir, extraop):
     return {t: max(r, sizes[t]) for t, r in rooms.items()}
 
 
+def _image(cfg, src):
+    """(image, cfg): the source image, or for a floppy set too small for
+    the English ("hdd" in game.json) the game laid out on a hard disk
+    (pc98tl/illusion_game.py _hdd_install), game_dir its install folder."""
+    if cfg.get("hdd"):
+        from .illusion_game import _hdd_install
+        return _hdd_install(cfg, src)
+    return DiskImage(src), cfg
+
+
+def strip_drives(data, extraop, prefixes):
+    """A script with the drive prefixes of its file names ("a:", "b:":
+    floppy drives) mapped as installed (game.json "drive_prefix")."""
+    if not prefixes:
+        return data
+    out, pos = bytearray(), 0
+    for k, s, e in av.tokenize(data, extraop):
+        if k != "arg":
+            continue
+        inner = bytes(data[s + 1:e - 1])
+        for old, new in prefixes.items():
+            if inner.lower().startswith(old.lower().encode("ascii")):
+                out += data[pos:s + 1] + new.encode("ascii") + inner[len(old):]
+                pos = e - 1
+                break
+    return bytes(out + data[pos:])
+
+
 # ---- extraction ------------------------------------------------------------------------------
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    vol = DiskImage(src).volumes[0]
+    img, cfg = _image(cfg, src)
+    vol = img.volumes[0]
     merged, order = {}, []
     for name, path in _files(vol, cfg["game_dir"]):
         data = vol.read(path)
@@ -484,7 +526,8 @@ def run_extract(here, src):
 def roundtrip(src, cfg):
     """Every script rebuilt from its tokens, its tails re-encrypted,
     matches the disk."""
-    vol = DiskImage(src).volumes[0]
+    img, cfg = _image(cfg, src)
+    vol = img.volumes[0]
     for _name, path in _files(vol, cfg["game_dir"]):
         data = vol.read(path)
         toks = av.tokenize(data, cfg.get("extraop", False))
@@ -501,6 +544,23 @@ _SUBST = {"’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-"
 
 
 _UTOK = re.compile(r"\{U([0-9a-f]{4})\}")
+
+
+def _fullwidth(text, cells):
+    """A menu item as full-width Shift-JIS, one character a cell, cut and
+    padded to cells."""
+    out = ""
+    for ch in "".join(_SUBST.get(c, c) for c in text):
+        if ch == " ":
+            ch = "　"
+        elif 0x21 <= ord(ch) < 0x7F:
+            ch = chr(ord(ch) + 0xFEE0)
+        try:
+            ch.encode("cp932")
+        except UnicodeEncodeError:
+            ch = "？"
+        out += ch
+    return out[:cells].ljust(cells, "　").encode("cp932")
 
 
 def _encode(text):
@@ -564,13 +624,16 @@ def frame_size(frame):
 
 
 def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None,
-          max_rows=None):
+          max_rows=None, fullwidth=False):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
     it on its line; down: the lines what follows moves on before the next
     text (which must stay inside the frame); max_cols, max_rows: a
-    narrower width and fewer lines than the frame's to keep to."""
+    narrower width and fewer lines than the frame's to keep to;
+    fullwidth: menu items written as full-width characters (older
+    engines draw a menu from Shift-JIS only, and crash on an ASCII
+    string in one)."""
     size = frame_size(frame)
     if kind in ("item", "inline", "label") or not size or size[1] == 1:
         # text in a one-line frame often has more drawn after it on the
@@ -586,6 +649,8 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
                     break
                 out, w = out + ch, w + _width(ch)
             flat = out
+        if kind == "item" and fullwidth:
+            return _fullwidth(" ".join(text.split("\n")), cells), None
         if kind == "item":
             flat = flat.ljust(room)
         return _encode(flat), None
@@ -629,7 +694,7 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
 
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
-                 frames=None, fallback=None):
+                 frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -641,11 +706,11 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
     limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
-    us = units(data, toks, frames)
+    us = units(data, toks, frames, default_frame)
     starts = [_start(data, toks, i, proc, insert, effects or {}) for i, _j, _k, _f in us]
     # a page break: a wait and the message-end procedure, or the file's
     # own message end where it has none
-    brk = WAIT + proc if proc else inline_end(data, toks, us) or fallback
+    brk = (wait + proc) if proc else inline_end(data, toks, us, wait) or fallback
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
@@ -669,6 +734,8 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         narrow = _line_cols(data, toks, i, j) if _menu_follows(data, toks, j) else None
         lines = 1 + sum(1 for k, s2, _e in toks[i:j] if k == "cmd" and data[s2] == 0xA5) if narrow else None
         bkind = kind
+        if located and kind == "inline":
+            bkind = "label"         # a marker placed by a procedure (the wait arrow)
         if located and kind == "msg":
             # placed text: a label at its Japanese width, or, with lines
             # of its own, a message starting where it is placed
@@ -678,7 +745,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
             else:
                 bkind = "label"
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
-                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines)
+                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -919,7 +986,7 @@ def run_patch(here, src, dst, mode="en"):
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
-    img = DiskImage(src)
+    img, cfg = _image(cfg, src)
     vol = img.volumes[0]
     by_ref, ids, warn = {}, {}, []
     for e in doc["strings"]:
@@ -935,12 +1002,18 @@ def run_patch(here, src, dst, mode="en"):
             by_ref[r] = text
             ids[r] = e["id"]
     extraop = cfg.get("extraop", False)
+    for _name, path in _files(vol, cfg["game_dir"]):
+        data = vol.read(path)
+        moved = strip_drives(data, extraop, cfg.get("drive_prefix"))
+        if moved != data:
+            vol.write(path, moved)
     # the scripts run before the scenes, in order (the startup script and
     # what it chains to): their procedures are in force in every scene
     # that does not define its own
     base = [n.upper() for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
     fit = mode == "pseudo"
+    default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
     # procedures defined only in other files: each number's widest
     # definition anywhere, under the base scripts'
     anywhere, frames_anywhere = {}, {}
@@ -970,7 +1043,8 @@ def run_patch(here, src, dst, mode="en"):
         for x, (k, s2, _e) in enumerate(otoks[:-1]):
             if k == "cmd" and odata[s2] == 0xAA and otoks[x + 1][0] == "num":
                 resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
-    game_break = WAIT + resets.most_common(1)[0][0] if resets else None
+    wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else WAIT
+    game_break = wait + resets.most_common(1)[0][0] if resets else None
     ins = cfg.get("name_insert")
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
@@ -1014,7 +1088,7 @@ def run_patch(here, src, dst, mode="en"):
                                                                     name_cols)])
             frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
-                               frames, game_break)
+                               frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -1026,7 +1100,8 @@ def run_patch(here, src, dst, mode="en"):
                                                                             name_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
-                                           {**frames, **proc_frames(inner, itoks)}, game_break)
+                                           {**frames, **proc_frames(inner, itoks)}, game_break,
+                                           cfg.get("menu_fullwidth", False), default_frame, wait)
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

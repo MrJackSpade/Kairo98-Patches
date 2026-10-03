@@ -929,5 +929,23 @@
    "Save/load, later acts, endings",
    "not yet seen"
   ]
+ ],
+ "kurutta_kajitsu": [
+  [
+   "Floppy set laid out on a hard disk, title and load menu",
+   "OK: boots from the hard disk with every disk's files; the load menu's items as full-width filler"
+  ],
+  [
+   "New game: opening messages",
+   "OK: filler wrapped to the message box (53 columns) in 4-line pages; the wait marker as 2-letter filler at its place"
+  ],
+  [
+   "First command menus (look / talk / save, then places)",
+   "OK: full-width filler items; picking items goes on to the next messages (ASCII items crashed this engine)"
+  ],
+  [
+   "Save/load, later chapters (disk B and C files), endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -193,6 +193,22 @@ def _text(e, mode):
 DOS_FILES = {"IO.SYS", "MSDOS.SYS", "COMMAND.COM", "AUTOEXEC.BAT", "CONFIG.SYS"}
 
 
+def _copy_dir(fv, src_dir, vol, dst_dir):
+    """A floppy folder's files (and folders) into the hard disk's, merged
+    with one already there."""
+    try:
+        vol.find(dst_dir)
+    except FileNotFoundError:
+        vol.mkdir(dst_dir)
+    for e in fv.listdir(fv.find(src_dir)["cluster"]):
+        if e["name"] in (".", ".."):
+            continue
+        if e["is_dir"]:
+            _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"])
+        else:
+            vol.create(dst_dir + "/" + e["name"], fv.read(src_dir + "/" + e["name"]))
+
+
 def _hdd_install(cfg, src):
     """For floppy games whose disks can't hold the English script: lay the
     game out on a DOS hard-disk image the way its own HD installer does, and
@@ -202,7 +218,9 @@ def _hdd_install(cfg, src):
     "remove": [the base's own game entries], "dir": install directory,
     "disks": [the other floppies, next to the source image], "skip": [files
     not installed], "run": [AUTOEXEC.BAT lines that start the game],
-    "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces]}.
+    "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces],
+    "subdirs": true to copy the disks' folders too, same-named ones
+    merged}.
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -217,7 +235,11 @@ def _hdd_install(cfg, src):
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
         fv = DiskImage(disk).volumes[0]
         for e in fv.listdir(0):
-            if e["is_dir"] or e["name"].upper() in skip:
+            if e["name"].upper() in skip or e["name"] in (".", ".."):
+                continue
+            if e["is_dir"]:
+                if h.get("subdirs"):
+                    _copy_dir(fv, e["name"], vol, d + "/" + e["name"])
                 continue
             vol.create(d + "/" + e["name"], fv.read(e["name"]))
     auto = vol.read("AUTOEXEC.BAT").decode("cp932").split("\r\n")

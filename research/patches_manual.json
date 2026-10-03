@@ -701,5 +701,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Kurutta Kajitsu": [
+  {
+   "label": "This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)",
+   "url": "../games/kurutta_kajitsu/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release (BEEP, 2026-05-29; VNDB r157245)",
+   "url": "https://vndb.org/r157245",
+   "source": "VNDB"
+  }
  ]
 }
