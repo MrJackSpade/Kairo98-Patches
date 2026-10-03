@@ -67846,7 +67846,14 @@
      "path": "Youjuu Kyoushitsu\\Youjuu Kyoushitsu [HD]\\Youjuu Kyoushitsu.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)",
+     "url": "../games/youjuu_kyoushitsu/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17757 (erotic content)",
    "engine": "adv98v",
@@ -67854,7 +67861,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Flash Chase",

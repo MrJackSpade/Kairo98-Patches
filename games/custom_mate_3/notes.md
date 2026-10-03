@@ -31,7 +31,7 @@ ides' Adv98V script engine (`CM3/`), on a hard-disk image: 761 scripts with text
 
 ## Script
 
-19250 strings (135 name tags (procedure text), 17702 messages, 1299 menu items, 99 string variable values, 15 program strings).
+19250 strings (135 name tags (procedure text), 17692 messages, 1309 menu items, 99 string variable values, 15 program strings).
 
 Translation and the content classification (♥) are done by the translation model; 0 of 19250 strings have English so far.
 

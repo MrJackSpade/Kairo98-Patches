@@ -1437,5 +1437,27 @@
    "Customizing, the married life simulation, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "youjuu_kyoushitsu": [
+  [
+   "Startup menu (start, settings, extras box)",
+   "OK: three filler items at their places"
+  ],
+  [
+   "Opening scene (the school infirmary)",
+   "OK: speaker tags on their line, filler wrapped between words below, pages waiting for a click"
+  ],
+  [
+   "Command menu (look, talk, think, system) and the look submenu",
+   "OK: filler items at their places, the highlight follows the cursor; the submenu's flag-picked third item is a menu item like the others"
+  ],
+  [
+   "Talk and think",
+   "OK: their dialogue pages the same way and returns to the menu"
+  ],
+  [
+   "Leaving the first scene (the commands in the order it wants), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

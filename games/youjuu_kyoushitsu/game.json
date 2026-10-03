@@ -1,0 +1,11 @@
+{
+ "title": "Youjuu Kyoushitsu",
+ "key": "DezClimax.zip/Youjuu Kyoushitsu",
+ "image": "Youjuu Kyoushitsu\\Youjuu Kyoushitsu [HD]\\Youjuu Kyoushitsu.hdi",
+ "encoding": "adv98v",
+ "game_dir": "YOJU",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "boot_steps": "30:shot,4:enter,4:enter,3:lclick,3:lclick,3:lclick,3:lclick,3:lclick,4:shot,1:mouse=0;10,1:mouse=0;10,2:lclick,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot,3:lclick,1:shot"
+}

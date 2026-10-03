@@ -30,9 +30,9 @@ ides' Adv98V script engine (`TRAVELJ/`), on a hard-disk image: 254 scripts with 
 
 ## Script
 
-13766 strings (13206 messages, 538 menu items, 2 name tags (procedure text), 2 string variable values, 18 program strings).
+13765 strings (13204 messages, 539 menu items, 2 name tags (procedure text), 2 string variable values, 18 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 13766 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 13765 strings have English so far.
 
 ## Limits
 

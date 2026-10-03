@@ -229,6 +229,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Dez Climax | Injuu Gakuen - La Blue Girl | [This repo: games/la_blue_girl (patcher working, machine translation in progress)](../games/la_blue_girl/notes.md) |
+| Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
@@ -1977,7 +1978,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Dez Climax (`DezClimax.zip`)
 
 - ♥ Injuu Gakuen - La Blue Girl [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ Youjuu Kyoushitsu [FD HD] `adv98v`
+- ♥ Youjuu Kyoushitsu [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Digital Artplan (`doujinHomebrew.zip`)
 

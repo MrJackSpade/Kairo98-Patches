@@ -31,7 +31,7 @@ ides' Adv98V script engine (`HARE/`), on a hard-disk image: 278 scripts with tex
 
 ## Script
 
-11519 strings (11146 messages, 63 name tags (procedure text), 7 menu items, 288 string variable values, 15 program strings).
+11519 strings (11138 messages, 63 name tags (procedure text), 15 menu items, 288 string variable values, 15 program strings).
 
 Translation and the content classification (♥) are done by the translation model; 0 of 11519 strings have English so far.
 

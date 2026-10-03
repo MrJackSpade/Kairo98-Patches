@@ -157,7 +157,10 @@ def units(data, toks, proc_frames=None, frame=None):
                 break
             # menu items keep their box; text in a procedure (a name tag) is
             # printed inline by its callers, so it is not wrapped or paged
-            kind = "item" if menu_depth and menu_depth[-1] == depth else "inline" if proc_depth else "msg"
+            # (an item's text may sit in a block of its own inside the menu,
+            # a flag picking one of two labels: still a menu item)
+            kind = "item" if menu_depth and (not proc_depth or proc_depth[-1] < menu_depth[-1]) \
+                else "inline" if proc_depth else "msg"
             out.append((i, j, kind, frame))
             i = j
             continue
