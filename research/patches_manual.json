@@ -894,5 +894,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Shinjuku Monogatari": [
+  {
+   "label": "This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)",
+   "url": "../games/shinjuku_monogatari/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release announced by Fakku (VNDB r160187, not yet released)",
+   "url": "https://vndb.org/r160187",
+   "source": "VNDB"
+  }
  ]
 }

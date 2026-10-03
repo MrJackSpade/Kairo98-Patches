@@ -1323,5 +1323,23 @@
    "Leaving the classroom (the scene's commands in the order it wants), saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "shinjuku_monogatari": [
+  [
+   "Opening (street, stairs and office pictures)",
+   "OK: filler wrapped between words to the 2-line box, pages waiting for a click; a long message continues on the next page"
+  ],
+  [
+   "Scenes after the opening (the office, two later rooms)",
+   "OK: pictures change with the story, messages page the same way"
+  ],
+  [
+   "First command menu",
+   "OK: three filler items at their places in the menu window, ASCII drawn (no full-width needed)"
+  ],
+  [
+   "The other menu choices, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
