@@ -22,5 +22,686 @@
     "votes": 13
    }
   ]
+ },
+ "adv98v": {
+  "checked": "2026-10-02",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "CocktailSoft.zip/Pia Carrot e Youkoso!!",
+    "title": "Pia Carrot e Youkoso!!",
+    "vndb": [
+     "v169"
+    ],
+    "votes": 128
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Naomi - Bishoujo-tachi no Yakata",
+    "title": "Naomi - Bishoujo-tachi no Yakata",
+    "vndb": [
+     "v17759",
+     "v8553",
+     "v8628",
+     "v8920",
+     "v8971"
+    ],
+    "votes": 35
+   },
+   {
+    "key": "CocktailSoft.zip/Angel (U-Jin Presents)",
+    "title": "Angel (U-Jin Presents)",
+    "vndb": [
+     "v162"
+    ],
+    "votes": 31
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Chiemi",
+    "title": "Chiemi",
+    "vndb": [
+     "v18234",
+     "v8552",
+     "v8628",
+     "v8970",
+     "v8971"
+    ],
+    "votes": 30
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Jinmon Yuugi",
+    "title": "Jinmon Yuugi",
+    "vndb": [
+     "v17759",
+     "v8553",
+     "v8920",
+     "v8971"
+    ],
+    "votes": 30
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Sayaka - Gibo",
+    "title": "Sayaka - Gibo",
+    "vndb": [
+     "v17759",
+     "v8553",
+     "v8920",
+     "v8971"
+    ],
+    "votes": 30
+   },
+   {
+    "key": "Fairytale.zip/Kurutta Kajitsu",
+    "title": "Kurutta Kajitsu",
+    "vndb": [
+     "v4075"
+    ],
+    "votes": 27
+   },
+   {
+    "key": "FairytaleHardcover.zip/Necronomicon",
+    "title": "Necronomicon",
+    "vndb": [
+     "v8813"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "FairytaleXShitei.zip/Saori - Bishoujo-tachi no Yakata",
+    "title": "Saori - Bishoujo-tachi no Yakata",
+    "vndb": [
+     "v9070"
+    ],
+    "votes": 19
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Akiko Gold",
+    "title": "Akiko Gold",
+    "vndb": [
+     "v18234",
+     "v8552",
+     "v8628",
+     "v8970"
+    ],
+    "votes": 17
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Jankirou",
+    "title": "Jankirou",
+    "vndb": [
+     "v18234",
+     "v8552",
+     "v8628",
+     "v8970"
+    ],
+    "votes": 17
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Miho",
+    "title": "Miho",
+    "vndb": [
+     "v18234",
+     "v8552",
+     "v8628",
+     "v8970"
+    ],
+    "votes": 17
+   },
+   {
+    "key": "CocktailSoft.zip/Doki Doki Vacation",
+    "title": "Doki Doki Vacation",
+    "vndb": [
+     "v2547"
+    ],
+    "votes": 16
+   },
+   {
+    "key": "CocktailSoft.zip/Mayumi",
+    "title": "Mayumi",
+    "vndb": [
+     "v8929",
+     "v8965",
+     "v9159"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "CocktailSoft.zip/Will no Dengon",
+    "title": "Will no Dengon",
+    "vndb": [
+     "v8929",
+     "v8965",
+     "v9159"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "CocktailSoft.zip/Cosmic Psycho",
+    "title": "Cosmic Psycho",
+    "vndb": [
+     "v9356"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "CocktailSoft.zip/Can Can Bunny Premiere",
+    "title": "Can Can Bunny Premiere",
+    "vndb": [
+     "v6478"
+    ],
+    "votes": 11
+   },
+   {
+    "key": "CocktailSoft.zip/Can Can Bunny Extra",
+    "title": "Can Can Bunny Extra",
+    "vndb": [
+     "v4560"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "CocktailSoft.zip/Miki",
+    "title": "Miki",
+    "vndb": [
+     "v692"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "CocktailSoft.zip/Travel Junction",
+    "title": "Travel Junction",
+    "vndb": [
+     "v9133"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "Fairytale.zip/Dracula Hakushaku",
+    "title": "Dracula Hakushaku",
+    "vndb": [
+     "v8849"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Akiko Premium Version",
+    "title": "Akiko Premium Version",
+    "vndb": [
+     "v8553"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "CocktailSoft.zip/Demon City",
+    "title": "Demon City",
+    "vndb": [
+     "v8675"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "Fairytale.zip/Arabesque",
+    "title": "Arabesque",
+    "vndb": [
+     "v8556"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "Fairytale.zip/Virtuacall",
+    "title": "Virtuacall",
+    "vndb": [
+     "v4452"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "Fairytale.zip/Virtuacall 2",
+    "title": "Virtuacall 2",
+    "vndb": [
+     "v4453"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "DezClimax.zip/Injuu Gakuen - La Blue Girl",
+    "title": "Injuu Gakuen - La Blue Girl",
+    "vndb": [
+     "v8733"
+    ],
+    "votes": 7
+   },
+   {
+    "key": "Fairytale.zip/Shinjuku Monogatari",
+    "title": "Shinjuku Monogatari",
+    "vndb": [
+     "v9083"
+    ],
+    "votes": 7
+   },
+   {
+    "key": "GameTechnopolis.zip/Dragon Eyes",
+    "title": "Dragon Eyes",
+    "vndb": [
+     "v8683"
+    ],
+    "votes": 7
+   },
+   {
+    "key": "CocktailSoft.zip/Hare Nochi Munasawagi!",
+    "title": "Hare Nochi Munasawagi!",
+    "vndb": [
+     "v8715"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "CocktailSoft.zip/Can Can Bunny Spirits",
+    "title": "Can Can Bunny Spirits",
+    "vndb": [
+     "v6480"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "CocktailSoft.zip/Custom Mate 3",
+    "title": "Custom Mate 3",
+    "vndb": [
+     "v5806"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "DezClimax.zip/Youjuu Kyoushitsu",
+    "title": "Youjuu Kyoushitsu",
+    "vndb": [
+     "v8734"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "Fairytale.zip/Koroshi no Dress 3",
+    "title": "Koroshi no Dress 3",
+    "vndb": [
+     "v8936"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "Fairytale.zip/Yumeji - Asakusa Kitan",
+    "title": "Yumeji - Asakusa Kitan",
+    "vndb": [
+     "v9166"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Kanako",
+    "title": "Kanako",
+    "vndb": [
+     "v8745"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "GameTechnopolis.zip/Dennou Tenshi - Digital Ange",
+    "title": "Dennou Tenshi - Digital Ange",
+    "vndb": [
+     "v4713"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "Tomboy.zip/Night Walker - Mayonaka no Tantei",
+    "title": "Night Walker - Mayonaka no Tantei",
+    "vndb": [
+     "v8983"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "CatsPro.zip/Cat's Part 1",
+    "title": "Cat's Part 1",
+    "vndb": [
+     "v8607"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "CocktailSoft.zip/Can Can Bunny Limited 5 1-2",
+    "title": "Can Can Bunny Limited 5 1-2",
+    "vndb": [
+     "v6481"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "CocktailSoft.zip/Custom Mate",
+    "title": "Custom Mate",
+    "vndb": [
+     "v8834"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "CocktailSoft.zip/Dora Dora Emotion - Seihaiden",
+    "title": "Dora Dora Emotion - Seihaiden",
+    "vndb": [
+     "v8682"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "CocktailSoft.zip/True Heart",
+    "title": "True Heart",
+    "vndb": [
+     "v8824"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "Fairytale.zip/Marine Philt",
+    "title": "Marine Philt",
+    "vndb": [
+     "v8961"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Manami - Ai to Koukan no Hibi",
+    "title": "Manami - Ai to Koukan no Hibi",
+    "vndb": [
+     "v8959"
+    ],
+    "votes": 4
+   },
+   {
+    "key": "Fairytale.zip/Lipstick Adventure 3",
+    "title": "Lipstick Adventure 3",
+    "vndb": [
+     "v8780"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "Fairytale.zip/XIX!",
+    "title": "XIX!",
+    "vndb": [
+     "v17646"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "GameTechnopolis.zip/Himitsu no Hanazono",
+    "title": "Himitsu no Hanazono",
+    "vndb": [
+     "v4715"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "GameTechnopolis.zip/Kimi Dake ni Ai o",
+    "title": "Kimi Dake ni Ai o",
+    "vndb": [
+     "v8749"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "CocktailSoft.zip/Bishoujo Tsuushin - Chat no Susume",
+    "title": "Bishoujo Tsuushin - Chat no Susume",
+    "vndb": [
+     "v18242"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "CocktailSoft.zip/Custom Mate 2",
+    "title": "Custom Mate 2",
+    "vndb": [
+     "v8835"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "CocktailSoft.zip/Dengeki Nurse 2 - More Sexy",
+    "title": "Dengeki Nurse 2 - More Sexy",
+    "vndb": [
+     "v8678"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "CocktailSoft.zip/Halfmoon ni Kawaru made",
+    "title": "Halfmoon ni Kawaru made",
+    "vndb": [
+     "v8897"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "CocktailSoft.zip/Noushuku Angel 120% (U-Jin Presents)",
+    "title": "Noushuku Angel 120% (U-Jin Presents)",
+    "vndb": [
+     "v8991"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Toumei Ningen",
+    "title": "Toumei Ningen",
+    "vndb": [
+     "v1264"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "FairytaleXShitei.zip/Dragon City X Shitei",
+    "title": "Dragon City X Shitei",
+    "vndb": [
+     "v8850"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "FairytaleXShitei.zip/Kounai Shasei",
+    "title": "Kounai Shasei",
+    "vndb": [
+     "v8751"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "GameTechnopolis.zip/Hatsukoi Monogatari",
+    "title": "Hatsukoi Monogatari",
+    "vndb": [
+     "v4714"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "SantaFe.zip/Bishoujo Audition - Idol o Sagase!",
+    "title": "Bishoujo Audition - Idol o Sagase!",
+    "vndb": [
+     "v18224"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "CocktailSoft.zip/Kurukuru Party - Princess Quest",
+    "title": "Kurukuru Party - Princess Quest",
+    "vndb": [
+     "v18233"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "CocktailSoftFmc.zip/Glass no Destiny",
+    "title": "Glass no Destiny",
+    "vndb": [
+     "v8887"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "DynamicPro.zip/Kekkou Kamen 2 - Oshioki Densetsu no Maki",
+    "title": "Kekkou Kamen 2 - Oshioki Densetsu no Maki",
+    "vndb": [
+     "v8747"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "FairytaleRed-zone.zip/Himitsu Shirei 1919",
+    "title": "Himitsu Shirei 1919",
+    "vndb": [
+     "v15309"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "Ides.zip/Ides User's Club Disk Magazine #003",
+    "title": "Ides User's Club Disk Magazine #003",
+    "vndb": [
+     "v51947"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "Ides.zip/Ides User's Club Disk Magazine #004",
+    "title": "Ides User's Club Disk Magazine #004",
+    "vndb": [
+     "v51947"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "SantaFe.zip/101 Kaime no Approach Shot",
+    "title": "101 Kaime no Approach Shot",
+    "vndb": [
+     "v29125"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "ASCII.zip/LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98",
+    "title": "LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/Cocktail Soft Zoukangou",
+    "title": "Cocktail Soft Zoukangou",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/Cocktail Soft Zoukangou 2",
+    "title": "Cocktail Soft Zoukangou 2",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/Erotic Baka Novel - Denwa no Bell ga",
+    "title": "Erotic Baka Novel - Denwa no Bell ga",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/Erotic Baka Novel Series 2 - Itsuka Dokoka de",
+    "title": "Erotic Baka Novel Series 2 - Itsuka Dokoka de",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/JYB",
+    "title": "JYB",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "CocktailSoft.zip/Kerakeraboshi",
+    "title": "Kerakeraboshi",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DynamicPro.zip/Kekkou Kamen - Oshioki Paradise no Maki",
+    "title": "Kekkou Kamen - Oshioki Paradise no Maki",
+    "vndb": [
+     "v8748"
+    ],
+    "votes": 0
+   },
+   {
+    "key": "Fairytale.zip/Fairytale Kaizokuban",
+    "title": "Fairytale Kaizokuban",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "Fairytale.zip/Gokuraku Mandara",
+    "title": "Gokuraku Mandara",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "Fairytale.zip/Lam-Mal",
+    "title": "Lam-Mal",
+    "vndb": [
+     "v8943"
+    ],
+    "votes": 0
+   },
+   {
+    "key": "Fairytale.zip/Mai",
+    "title": "Mai",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "Fairytale.zip/Watashi o Golf ni Tsuretette",
+    "title": "Watashi o Golf ni Tsuretette",
+    "vndb": [
+     "v27000"
+    ],
+    "votes": 0
+   },
+   {
+    "key": "FairytaleRed-zone.zip/U-Jin Special Collection (Kounai Shasei re-release)",
+    "title": "U-Jin Special Collection (Kounai Shasei re-release)",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "GameTechnopolis.zip/Tessera (IV)",
+    "title": "Tessera (IV)",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "Ides.zip/Ides User's Club Disk Magazine #001",
+    "title": "Ides User's Club Disk Magazine #001",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "Ides.zip/Ides User's Club Disk Magazine #002",
+    "title": "Ides User's Club Disk Magazine #002",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "SantaFe.zip/Disk Bishoujo Daizukan",
+    "title": "Disk Bishoujo Daizukan",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "SantaFe.zip/Disk Bishoujo Daizukan '91",
+    "title": "Disk Bishoujo Daizukan '91",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
  }
 }

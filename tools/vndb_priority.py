@@ -46,10 +46,18 @@ def votecounts(ids):
 
 
 def search(title):
-    res = _post({"filters": ["search", "=", title], "fields": "title,votecount", "results": 5})
-    for r in res["results"]:
-        if slug(r["title"]) == slug(title):
-            return r["id"]
+    """A VNDB title search: the full title, then without its subtitle or
+    parenthetical; a result counts when one title holds the other."""
+    import re
+    queries = [title, title.split(" - ")[0], re.sub(r"\s*\(.*?\)", "", title)]
+    for q in dict.fromkeys(q.strip() for q in queries if q.strip()):
+        res = _post({"filters": ["search", "=", q], "fields": "title,alttitle,votecount", "results": 10})
+        want = slug(q)
+        for r in res["results"]:
+            for name in (r["title"], r.get("alttitle") or ""):
+                got = slug(name)
+                if got and len(min(got, want, key=len)) >= 4 and (got == want or want in got or got in want):
+                    return r["id"]
     return None
 
 
@@ -71,7 +79,7 @@ def main():
     vns = {}
     for t in titles:
         ids = by_name.get(slug(t["title"]), set())
-        if not ids:
+        if not ids or not sum(votecounts(sorted(ids)).values()):
             v = search(t["title"])
             ids = {v} if v else set()
         vns[t["key"]] = sorted(ids)
