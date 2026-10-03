@@ -1,0 +1,12 @@
+{
+ "title": "Virtuacall",
+ "key": "Fairytale.zip/Virtuacall",
+ "image": "Virtuacall\\Virtuacall [HD]\\Virtuacall.hdi",
+ "encoding": "adv98v",
+ "game_dir": "Q2",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

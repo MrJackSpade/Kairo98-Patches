@@ -870,5 +870,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Virtuacall": [
+  {
+   "label": "This repo: games/virtuacall (patcher working, machine translation in progress)",
+   "url": "../games/virtuacall/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

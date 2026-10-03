@@ -1257,5 +1257,23 @@
    "Picture scenes after the prologue, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "virtuacall": [
+  [
+   "Title, opening question and its menu",
+   "OK: question filler in the box; items fixed width"
+  ],
+  [
+   "Name entry window",
+   "OK: the window's labels as filler at their places (the kana table stays Japanese). Its buttons take no emulated click or key in the original or the patched build (hover works), so for the rest of the test a test image skipped the two name-entry calls, keeping the default name"
+  ],
+  [
+   "Phone screen and first town scene (test image)",
+   "OK: speaker name and message on one line, filler wrapped between words to the 3-line box, pages waiting for a click"
+  ],
+  [
+   "Choosing a name in the window, save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

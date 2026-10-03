@@ -82181,7 +82181,14 @@
      "path": "Virtuacall\\Virtuacall [HD]\\Virtuacall.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/virtuacall (patcher working, machine translation in progress)",
+     "url": "../games/virtuacall/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r8585 (erotic content)",
    "engine": "adv98v",
@@ -82189,7 +82196,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Virtuacall 2",
