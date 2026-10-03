@@ -73,9 +73,11 @@ def _cmd(data, tok, code):
     return tok[0] == "cmd" and data[tok[1]] == code
 
 
-def units(data, toks):
+def units(data, toks, proc_frames=None):
     """[(first, end, kind, frame)] of the text runs: token index range,
-    "msg" or "item", and the text frame (x1, y1, x2, y2) in force."""
+    "msg" or "item", and the text frame (x1, y1, x2, y2) in force (set by
+    A6, or by calling a procedure that sets one: proc_frames {number:
+    frame})."""
     out, frame, i = [], None, 0
     menu_depth, proc_depth, depth = [], [], 0      # depths of open menu item / procedure blocks
     pending_menu = pending_proc = False
@@ -85,6 +87,8 @@ def units(data, toks):
             nums = [t for t in toks[i + 1:i + 5] if t[0] == "num"]
             if len(nums) == 4:
                 frame = tuple(_num(data, t[1]) for t in nums)
+        if k == "cmd" and data[s] == 0xBA and proc_frames and i + 1 < len(toks) and toks[i + 1][0] == "num":
+            frame = proc_frames.get(_num(data, toks[i + 1][1])) or frame
         if k == "cmd" and data[s] in (0xAD, 0xAE):
             pending_menu = True
         if k == "cmd" and data[s] == 0xB9:
@@ -570,7 +574,8 @@ def build(text, kind, frame, cells, proc, warn, sid, start=(0, 0), reserve=0, do
     return out, (end_row, end_col)
 
 
-def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None):
+def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
+                 frames=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, START.MES's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -582,7 +587,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
     limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
-    us = units(data, toks)
+    us = units(data, toks, frames)
     starts = [_start(data, toks, i, proc, insert, effects or {}) for i, _j, _k, _f in us]
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
@@ -624,6 +629,21 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         pos = e
     out += data[pos:]
     return bytes(out)
+
+
+def proc_frames(data, toks):
+    """{number: frame} of the procedures a stream defines: the text frame
+    a procedure sets (the last A6 in the body), or None (so a definition
+    that sets none replaces one from another file that does)."""
+    out = {}
+    for pn, (bs, be) in procs(data, toks).items():
+        out[pn] = None
+        for x, (k, s, _e) in enumerate(toks):
+            if bs <= s < be and k == "cmd" and data[s] == 0xA6:
+                nums = [t for t in toks[x + 1:x + 5] if t[0] == "num"]
+                if len(nums) == 4:
+                    out[pn] = tuple(_num(data, t[1]) for t in nums)
+    return out
 
 
 def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
@@ -826,12 +846,15 @@ def run_patch(here, src, dst, mode="en"):
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
     # procedures defined only in other files (run at startup, say):
     # each number's widest definition anywhere, under START.MES's own
-    anywhere = {}
+    anywhere, frames_anywhere = {}, {}
     for oname, opath in _files(vol, cfg["game_dir"]):
         odata = vol.read(opath)
-        for pn, f in proc_effects(odata, av.tokenize(odata, extraop), oname, "", by_ref, None, name_cols).items():
+        otoks = av.tokenize(odata, extraop)
+        for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols).items():
             if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
                 anywhere[pn] = f
+        frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items() if f})
+    frames_anywhere.update(proc_frames(start, av.tokenize(start, extraop)))
     start_eff = proc_effects(start, stoks, "START.MES", "", by_ref, None, name_cols)
     start_eff = {**anywhere, **proc_effects(start, stoks, "START.MES", "", by_ref,
                                             end_proc(start, stoks, resolve_effects([anywhere, start_eff])),
@@ -877,7 +900,9 @@ def run_patch(here, src, dst, mode="en"):
             nums = table[:2] + (set(),) if table and name.upper() == "START.MES" else table
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
                                                                     name_cols)])
-            new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects)
+            frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}
+            new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
+                               frames)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -888,7 +913,8 @@ def run_patch(here, src, dst, mode="en"):
                     effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
                                                                             name_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
-                                           end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects)
+                                           end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
+                                           {**frames, **proc_frames(inner, itoks)})
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

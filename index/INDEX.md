@@ -210,6 +210,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
+| Fairytale Red-Zone | Chiemi | [This repo: games/chiemi (patcher working, machine translation in progress)](../games/chiemi/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
@@ -2252,7 +2253,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 - ♥ Akiko Gold [CD FD HD extras] `adv98v`
 - ♥ Akiko Premium Version [FD HD] `adv98v`
-- ♥ Chiemi [FD HD extras] `adv98v`
+- ♥ Chiemi [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Himitsu Shirei 1919 [FD HD] `adv98v`
 - ♥ Jankirou [FD] `adv98v`
 - ♥ Jinmon Yuugi [CD FD HD extras] `adv98v`

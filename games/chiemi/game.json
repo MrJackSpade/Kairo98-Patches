@@ -1,0 +1,10 @@
+{
+ "title": "Chiemi",
+ "key": "FairytaleRed-zone.zip/Chiemi",
+ "image": "Chiemi\\Chiemi [HD]\\Chiemi.hdi",
+ "encoding": "adv98v",
+ "game_dir": "CHIEMI",
+ "extraop": true,
+ "name_cols": 8,
+ "boot_steps": "30:shot,4:enter,3:shot,4:enter,3:shot,4:key=32,3:shot,4:key=32,3:shot,4:lclick,3:shot,4:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot"
+}

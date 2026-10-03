@@ -879,5 +879,19 @@
    "Registration (name entry), save/load, other scenarios, endings",
    "not yet seen"
   ]
+ ],
+ "chiemi": [
+  [
+   "Setup menus (sound board, start)",
+   "OK: questions as filler in their one-line frame at the Japanese width; menu items fixed width"
+  ],
+  [
+   "Opening scene messages",
+   "OK: filler wrapped between words to the message box (66 columns, set by a procedure the scripts call), 2-line pages with a wait between"
+  ],
+  [
+   "Name entry, save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

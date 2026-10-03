@@ -83245,7 +83245,14 @@
      "path": "Chiemi\\Chiemi [HD]\\Chiemi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/chiemi (patcher working, machine translation in progress)",
+     "url": "../games/chiemi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17553 (erotic content)",
    "engine": "adv98v",
@@ -83253,7 +83260,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Himitsu Shirei 1919",
