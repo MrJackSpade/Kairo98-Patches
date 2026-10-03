@@ -124,3 +124,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Jankirou | adv98v (Adv98V, floppy set) | extracted | **Ready to translate** | works; floppies laid out on a hard disk, half-width ASCII strings, messages wrapped and paged, scripts in MES and MEC folders | OK (see notes) |
 | Miho | adv98v (Adv98V 1.71) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged to the box its procedures set | OK (see notes) |
 | Doki Doki Vacation | adv98v (Adv98V 1.74, floppy set) | extracted | **Ready to translate** | works; eight floppies laid out on a hard disk, half-width ASCII strings, name tags and messages wrapped and paged | OK (see notes) |
+| Mayumi | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 3-line box, full-width menu items | OK (see notes) |

@@ -213,6 +213,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
+| Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
@@ -1554,7 +1555,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Kerakeraboshi [FD HD] `adv98v`
 - ♥ Kurukuru Party - Princess Quest [FD HD] `adv98v`
 - ♥ Liberty [FD]
-- ♥ Mayumi [FD HD] `adv98v`
+- ♥ Mayumi [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Miki [FD extras] `adv98v`
 - ♥ Nike [FD HD extras]
 - ♥ Noushuku Angel 120% (U-Jin Presents) [FD HD] `adv98v`

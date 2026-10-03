@@ -1,0 +1,16 @@
+{
+ "title": "Mayumi",
+ "key": "CocktailSoft.zip/Mayumi",
+ "image": "Mayumi\\Mayumi [HD]\\Mayumi.hdi",
+ "encoding": "adv98v",
+ "game_dir": "MAYUMI",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "default_frame": [
+  1,
+  283,
+  78,
+  348
+ ],
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

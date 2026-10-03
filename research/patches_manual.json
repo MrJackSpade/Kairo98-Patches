@@ -767,5 +767,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Mayumi": [
+  {
+   "label": "This repo: games/mayumi (patcher working, machine translation in progress)",
+   "url": "../games/mayumi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

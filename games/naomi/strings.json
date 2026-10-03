@@ -461,12 +461,12 @@
     "N_ENDD3.MES:218",
     "N_ENDD3.MES:230",
     "N_ENDD3.MES:233",
-    "N_ENDD3.MES:243",
-    "N_ENDD3.MES:247",
-    "N_ENDD3.MES:250",
-    "N_ENDD3.MES:254",
-    "N_ENDD3.MES:257",
-    "N_ENDD3.MES:261"
+    "N_ENDD3.MES:242",
+    "N_ENDD3.MES:246",
+    "N_ENDD3.MES:249",
+    "N_ENDD3.MES:253",
+    "N_ENDD3.MES:256",
+    "N_ENDD3.MES:260"
    ],
    "max_cells": 7
   },
@@ -577,7 +577,7 @@
     "N_ENDD3.MES:184",
     "N_ENDD3.MES:219",
     "N_ENDD3.MES:234",
-    "N_ENDD3.MES:262"
+    "N_ENDD3.MES:261"
    ],
    "max_cells": 10
   },
@@ -1977,8 +1977,7 @@
     "N_ENDA4.MES:188",
     "N_ENDC2.MES:69",
     "N_ENDD3.MES:177",
-    "N_ENDD3.MES:239",
-    "N_ENDD3.MES:263"
+    "N_ENDD3.MES:262"
    ],
    "max_cells": 6
   },
@@ -2031,7 +2030,7 @@
    "refs": [
     "NK_002.MES:5",
     "N_ENDD2.MES:38",
-    "N_ENDD3.MES:249"
+    "N_ENDD3.MES:248"
    ],
    "max_cells": 4
   },
@@ -39790,12 +39789,12 @@
   {
    "id": "m03694",
    "kind": "msg",
-   "jp": "私は、最初にミナと入った応接間にやってきた。",
+   "jp": "‥‥‥‥‥‥私は、最初にミナと入った応接間にやってきた。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:240"
+    "N_ENDD3.MES:239"
    ],
-   "max_cells": 22
+   "max_cells": 28
   },
   {
    "id": "m03695",
@@ -39803,7 +39802,7 @@
    "jp": "もう大丈夫‥‥‥それに歩くのは疲れたし。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:241"
+    "N_ENDD3.MES:240"
    ],
    "max_cells": 20
   },
@@ -39813,7 +39812,7 @@
    "jp": "恐くない‥‥‥だってミナがいるんだもの。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:242"
+    "N_ENDD3.MES:241"
    ],
    "max_cells": 20
   },
@@ -39823,7 +39822,7 @@
    "jp": "私は考えていた‥‥‥ミナとどんなお話をしよう、何をしよう。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:244"
+    "N_ENDD3.MES:243"
    ],
    "max_cells": 29
   },
@@ -39833,7 +39832,7 @@
    "jp": "楽しみ‥‥‥。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:245"
+    "N_ENDD3.MES:244"
    ],
    "max_cells": 7
   },
@@ -39843,7 +39842,7 @@
    "jp": "あぁ‥‥‥だんだんと‥‥‥目の前に、黒い霧がかかっていく。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:246"
+    "N_ENDD3.MES:245"
    ],
    "max_cells": 29
   },
@@ -39853,7 +39852,7 @@
    "jp": "あれ？　このままだと‥‥‥私はどこに行っちゃうの？",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:248"
+    "N_ENDD3.MES:247"
    ],
    "max_cells": 25
   },
@@ -39863,7 +39862,7 @@
    "jp": "もう、駄目だ‥‥‥立ってられない。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:251"
+    "N_ENDD3.MES:250"
    ],
    "max_cells": 17
   },
@@ -39873,7 +39872,7 @@
    "jp": "私の体は床に向かって倒れた‥‥‥。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:252"
+    "N_ENDD3.MES:251"
    ],
    "max_cells": 17
   },
@@ -39883,7 +39882,7 @@
    "jp": "もう、何も見えない‥‥‥。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:253"
+    "N_ENDD3.MES:252"
    ],
    "max_cells": 13
   },
@@ -39893,7 +39892,7 @@
    "jp": "ああ！　ミナ！",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:255"
+    "N_ENDD3.MES:254"
    ],
    "max_cells": 7
   },
@@ -39903,7 +39902,7 @@
    "jp": "早く！　早く私を迎えに来て！！",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:256"
+    "N_ENDD3.MES:255"
    ],
    "max_cells": 15
   },
@@ -39913,7 +39912,7 @@
    "jp": "意識が遠のいていく‥‥‥それでも私。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:258"
+    "N_ENDD3.MES:257"
    ],
    "max_cells": 18
   },
@@ -39923,7 +39922,7 @@
    "jp": "ミナの事を考えていた‥‥‥。",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:259"
+    "N_ENDD3.MES:258"
    ],
    "max_cells": 14
   },
@@ -39933,7 +39932,7 @@
    "jp": "私と会ったら、ミナは喜んでくれるかしら？",
    "en": "",
    "refs": [
-    "N_ENDD3.MES:260"
+    "N_ENDD3.MES:259"
    ],
    "max_cells": 20
   },

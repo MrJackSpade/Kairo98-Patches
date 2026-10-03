@@ -25,9 +25,9 @@ ides' Adv98V script engine (`SAORI/`), on a hard-disk image: 69 scripts with tex
 
 ## Script
 
-4910 strings (4670 messages, 240 menu items).
+4905 strings (4665 messages, 240 menu items).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4910 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4905 strings have English so far.
 
 ## Limits
 

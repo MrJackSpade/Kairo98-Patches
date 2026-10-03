@@ -14,6 +14,9 @@ breaks (A5) between them; a run is one string here.
   file's message-end procedure (the procedure called most often right after
   a message: it waits for a key and clears the frame), as between the
   original messages.
+* Pieces of text with only look-and-pace commands between them (colour,
+  text speed, pauses, palette fades: A8, A9, AC, C4) are one message; the
+  English replaces the whole of it, without those effects.
 * Menu items (the texts in the block after AD/AE) sit in boxes drawn for the
   Japanese, so they keep their width: two letters to a full-width cell, and
   longer ones are cut and reported.  So does text in a one-line frame.
@@ -122,9 +125,16 @@ def units(data, toks, proc_frames=None, frame=None):
             depth -= 1
         if k in TEXT:
             j = i
-            while j < len(toks) and (toks[j][0] in TEXT or (_cmd(data, toks[j], 0xA5) and j + 1 < len(toks)
-                                                            and toks[j + 1][0] in TEXT)):
-                j += 1
+            while j < len(toks):
+                if toks[j][0] in TEXT or (_cmd(data, toks[j], 0xA5) and j + 1 < len(toks)
+                                          and toks[j + 1][0] in TEXT):
+                    j += 1
+                    continue
+                n = _effects(data, toks, j)
+                if n and j + n < len(toks) and toks[j + n][0] in TEXT:
+                    j += n
+                    continue
+                break
             # menu items keep their box; text in a procedure (a name tag) is
             # printed inline by its callers, so it is not wrapped or paged
             kind = "item" if menu_depth and menu_depth[-1] == depth else "inline" if proc_depth else "msg"
@@ -133,6 +143,23 @@ def units(data, toks, proc_frames=None, frame=None):
             continue
         i += 1
     return out
+
+
+# commands that only change how text looks or how fast it comes (colour,
+# text speed, a pause, a palette fade) and their number count: between two
+# pieces of text they belong to one message
+EFFECTS = {0xA8: 1, 0xA9: 1, 0xAC: 1, 0xC4: 2}
+
+
+def _effects(data, toks, j):
+    """The token count of a run of look-and-pace commands at j (0: none)."""
+    n = j
+    while n < len(toks) and toks[n][0] == "cmd" and data[toks[n][1]] in EFFECTS:
+        arity = EFFECTS[data[toks[n][1]]]
+        if not all(n + 1 + q < len(toks) and toks[n + 1 + q][0] == "num" for q in range(arity)):
+            break
+        n += 1 + arity
+    return n - j
 
 
 def procs(data, toks):
@@ -175,6 +202,8 @@ def proc_room(nums, start_nums, slot, slots):
 def unit_text(data, toks, i, j):
     out = []
     for k, s, e in toks[i:j]:
+        if k == "num" or (k == "cmd" and data[s] != 0xA5):
+            continue                    # look-and-pace commands inside a message
         if k == "cmd":
             out.append("\n")
         elif k == "str":
@@ -317,7 +346,9 @@ def start_script(vol, game_dir, extraop):
         elif e["name"].upper().endswith(".INI"):
             inis.insert(0, game_dir + "/" + e["name"])
     for ini in inis:
-        for _tag, data, _toks in _streams(vol.read(ini), extraop):
+        # (every build's INI has its encrypted tail after D5, which the
+        # scripts of the earliest builds otherwise never use)
+        for _tag, data, _toks in _streams(vol.read(ini), True):
             m = re.search(rb'"(?:[a-z]:)?\\?(?:(?:\w+_)?mes\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()

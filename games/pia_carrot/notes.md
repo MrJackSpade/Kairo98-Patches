@@ -29,9 +29,9 @@ ides' Adv98V script engine (`PIA/`), on a hard-disk image: 352 scripts with text
 
 ## Script
 
-8564 strings (8141 messages, 95 name tags (procedure text), 291 menu items, 22 string variable values, 15 program strings).
+8562 strings (8139 messages, 95 name tags (procedure text), 291 menu items, 22 string variable values, 15 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 8564 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 8562 strings have English so far.
 
 ## Limits
 

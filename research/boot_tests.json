@@ -1071,5 +1071,23 @@
    "Save/load, later days (other disks' files), endings",
    "not yet seen"
   ]
+ ],
+ "mayumi": [
+  [
+   "Load menu",
+   "OK: question as filler at its Japanese width; full-width filler items"
+  ],
+  [
+   "Opening (short lines placed on the screen, each character faded in)",
+   "OK: each line one message (the fade commands between its characters belong to it), filler at its Japanese width where it is placed"
+  ],
+  [
+   "First scene messages",
+   "OK: filler wrapped between words to the box set at startup, 3-line pages"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
