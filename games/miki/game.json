@@ -1,0 +1,44 @@
+{
+ "title": "Miki",
+ "key": "CocktailSoft.zip/Miki",
+ "image": "Miki\\Miki [FD]\\Miki.hdm",
+ "encoding": "adv98v",
+ "game_dir": "MIKI",
+ "extraop": false,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "menu_fullwidth": true,
+ "default_frame": [
+  2,
+  306,
+  77,
+  384
+ ],
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "MIKI",
+  "disks": [],
+  "subdirs": true,
+  "run": [
+   "A:",
+   "cd \\MIKI",
+   "ADVSHELL",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

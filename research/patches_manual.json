@@ -817,5 +817,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Miki": [
+  {
+   "label": "This repo: games/miki (patcher working, machine translation in progress)",
+   "url": "../games/miki/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

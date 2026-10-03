@@ -1161,5 +1161,19 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "miki": [
+  [
+   "Floppy laid out on a hard disk; start menu",
+   "OK: boots from the hard disk; full-width filler items"
+  ],
+  [
+   "Opening village and festival scenes",
+   "OK: speaker tag on the first line, filler wrapped between words to the box (set at startup), pages of 3 lines"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
