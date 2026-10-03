@@ -228,6 +228,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale | Virtuacall | [This repo: games/virtuacall (patcher working, machine translation in progress)](../games/virtuacall/notes.md) |
+| Fairytale | Virtuacall 2 | [This repo: games/virtuacall_2 (patcher working, machine translation in progress)](../games/virtuacall_2/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
 | Fairytale Red-Zone | Akiko Gold | [This repo: games/akiko_gold (patcher working, machine translation in progress)](../games/akiko_gold/notes.md) |
 | Fairytale Red-Zone | Akiko Premium Version | [This repo: games/akiko_premium (patcher working, machine translation in progress)](../games/akiko_premium/notes.md) |
@@ -2264,7 +2265,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Strawberry Daisenryaku II [FD]
 - ♥ Urotsuki Douji [FD]
 - ♥ Virtuacall [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ Virtuacall 2 [CD FD HD extras] `adv98v`
+- ♥ Virtuacall 2 [CD FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Watashi o Golf ni Tsuretette [FD] `adv98v`
 - ♥ X-na [FD extras]
 - ♥ XIX! [FD extras] `adv98v`

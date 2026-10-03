@@ -1,0 +1,12 @@
+{
+ "title": "Virtuacall 2",
+ "key": "Fairytale.zip/Virtuacall 2",
+ "image": "Virtuacall 2\\Virtuacall 2 (FD version) [HD]\\Virtuacall 2 (FD version).hdi",
+ "encoding": "adv98v",
+ "game_dir": "VC2",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

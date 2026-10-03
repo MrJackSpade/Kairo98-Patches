@@ -1275,5 +1275,27 @@
    "Choosing a name in the window, save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "virtuacall_2": [
+  [
+   "Title and sound-board question with its two-item menu",
+   "OK: question filler in the box, the items at their places"
+  ],
+  [
+   "Name entry window",
+   "OK: the window's labels as filler at their places (the kana table stays Japanese). In the original and the patched build the buttons take clicks (Standard name fills in the default), but Finish input leaves the game on the window in np21w, and with the window's call left out the original stops at the next command too; so for the rest of the test a test image set the two name parts to their defaults with the engine's own expression call (cd 5376 \"@0='...'\") in place of the window's calls"
+  ],
+  [
+   "Opening (city pictures, headgear boot text)",
+   "OK: filler wrapped between words to the box, pages waiting for a click, the red boot text on its lines"
+  ],
+  [
+   "First room scene (test image)",
+   "OK: speaker bracket, the hero's name (DISP @1, 8 columns kept for it) and the message on one line, wrapped between words inside the 3-line box, pages waiting for a click; the two-item menu after the question"
+  ],
+  [
+   "Choosing a name in the window, phone calls, save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

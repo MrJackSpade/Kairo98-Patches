@@ -82283,7 +82283,14 @@
      "path": "Virtuacall 2\\Virtuacall 2 [FD]\\Virtuacall 2 (Disk F).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/virtuacall_2 (patcher working, machine translation in progress)",
+     "url": "../games/virtuacall_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r8587 (erotic content)",
    "engine": "adv98v",
@@ -82291,7 +82298,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Watashi o Golf ni Tsuretette",
