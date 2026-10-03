@@ -664,6 +664,11 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("* Where the script marks a message end to keep the page (a register set before the "
                    "message-end call), the next message goes on from where the last one ended, on the "
                    "same line: end the first with a space if one should come between them.")
+    if cfg.get("proc_fullwidth"):
+        out.append("* This engine hangs on an ASCII string inside a procedure, so text kept in procedures "
+                   "(the speakers' name tags, `n` ids) is written in full-width letters, each two columns "
+                   "wide and two bytes long; a tag grows only into its procedure's free slots, so keep tags "
+                   "about as long as the Japanese.")
     if cfg.get("menu_fullwidth"):
         out.append("* This engine draws menus from Shift-JIS only (an ASCII string in a menu crashes it), "
                    "so menu items are written in full-width letters: `max_cells` letters each, cut and "

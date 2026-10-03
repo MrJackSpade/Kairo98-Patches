@@ -50670,7 +50670,14 @@
      "path": "Can Can Bunny Spirits\\Can Can Bunny Spirits [FD]\\Can Can Bunny Spirits (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/can_can_bunny_spirits (patcher working, machine translation in progress)",
+     "url": "../games/can_can_bunny_spirits/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12841 (erotic content)",
    "engine": "adv98v",
@@ -50678,7 +50685,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny Superior",

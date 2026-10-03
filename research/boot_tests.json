@@ -1385,5 +1385,27 @@
    "Menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "can_can_bunny_spirits": [
+  [
+   "Startup menu (prologue, two episodes, the extra story, load)",
+   "OK: five filler items at their places, the highlight on the first"
+  ],
+  [
+   "Name entry window",
+   "Its kana grid highlights under the cursor but takes no emulated click or key, in the original too (as in Can Can Bunny Premiere); for the rest of the test a test image left out the name module's run in OPEN.MES (the default name stays)"
+  ],
+  [
+   "Opening (MOON's monologue over the night city)",
+   "OK: centred filler lines, pages waiting for a key"
+  ],
+  [
+   "Ariko's arrival (the first scene)",
+   "OK: speaker tags in full-width filler, the message after the tag on its line, wrapped between words to the box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "Choosing a name, the episodes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

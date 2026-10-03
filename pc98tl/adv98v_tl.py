@@ -65,7 +65,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             box), "keep_flag" (hex of the register set a script puts right
             before the message-end procedure where the next text goes on
             on the same page: the procedure waits for the key and skips
-            its reset), "boot_steps"}
+            its reset), "proc_fullwidth" (an engine that hangs on an ASCII
+            string in a procedure body: the text of procedures, the
+            speakers' name tags, is written in full-width letters),
+            "boot_steps"}
 Refs: "<file>:<n>" (n counts the file's text runs in order; a "c<k>." before
 n for runs inside the k-th encrypted tail).
 """
@@ -83,7 +86,7 @@ TEXT = ("chr1", "chr2", "str")
 LINE_H, GLYPH_H = 20, 16
 # the engine being patched (set by run_patch from game.json): "advh" for
 # ADVH's half-width codes, "line_h" its line height in dots
-ENGINE = {"advh": False, "line_h": LINE_H, "keep_flag": None}
+ENGINE = {"advh": False, "line_h": LINE_H, "keep_flag": None, "proc_fullwidth": False}
 WAIT = b"\xd1\x24\x26\x23"      # D1 1 3 0: wait for a key or click, as after a message
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -181,8 +184,16 @@ def procs(data, toks):
     """{number: (body start, body end)} of the procedures a file defines
     (B9 n A2 ... A3): the body is what the engine copies to the
     procedure's slot, from after the A2 to its matching A3, both ends
-    included."""
-    out, x = {}, 0
+    included.  A number defined more than once (a speaker's tag set anew
+    for each speaker) gives its last definition; proc_defs lists them
+    all."""
+    return {n: (bs, be) for n, bs, be in proc_defs(data, toks)}
+
+
+def proc_defs(data, toks):
+    """[(number, body start, body end)] of every procedure definition in
+    a file, in order (see procs)."""
+    out, x = [], 0
     while x < len(toks):
         k, s, _e = toks[x]
         if k == "cmd" and data[s] == 0xB9 and x + 2 < len(toks) and toks[x + 1][0] == "num":
@@ -196,7 +207,7 @@ def procs(data, toks):
                     depth -= 1
                     if depth == 0:
                         break
-            out[_num(data, toks[x + 1][1])] = (toks[y][2], toks[z][2])
+            out.append((_num(data, toks[x + 1][1]), toks[y][2], toks[z][2]))
             x = z
         x += 1
     return out
@@ -261,7 +272,9 @@ def end_proc(data, toks, effects=None):
     """The file's message-end procedure: the BA call that most often
     follows a message within a few tokens; None when there is none.
     With effects (resolve_effects), only a procedure that clears the
-    text counts (a game may call one that prints an ellipsis first)."""
+    text and prints nothing counts (a game may call one that prints an
+    ellipsis first, or a scene effect that resets the box and prints the
+    next speaker's tag, which a page break must not repeat)."""
     seen = collections.Counter()
     for _i, j, kind, _f in units(data, toks):
         if kind != "msg":
@@ -270,7 +283,8 @@ def end_proc(data, toks, effects=None):
             k, s, _e = toks[x]
             if k == "cmd" and data[s] == 0xBA and toks[x + 1][0] == "num":
                 call = bytes(data[s:toks[x + 1][2]])
-                if effects is not None and effects.get(_call_num(call), ("none",))[0] != "reset":
+                eff = effects.get(_call_num(call), ("none",)) if effects is not None else None
+                if eff is not None and (eff[0] != "reset" or eff[1]):
                     continue
                 seen[call] += 1
                 break
@@ -751,7 +765,7 @@ _UTOK = re.compile(r"\{U([0-9a-f]{4})\}")
 
 def _fullwidth(text, cells):
     """A menu item as full-width Shift-JIS, one character a cell, cut and
-    padded to cells."""
+    padded to cells (None: as long as the text)."""
     out = ""
     for ch in "".join(_SUBST.get(c, c) for c in text):
         if ch == " ":
@@ -763,7 +777,7 @@ def _fullwidth(text, cells):
         except UnicodeEncodeError:
             ch = "？"
         out += ch
-    return out[:cells].ljust(cells, "　").encode("cp932")
+    return (out if cells is None else out[:cells].ljust(cells, "　")).encode("cp932")
 
 
 def _encode(text):
@@ -924,8 +938,8 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     was not measured) a procedure may not grow.  tight: a file that may
     not grow (tight_files), whose menu items keep their byte length."""
     defs = procs(data, toks)
+    every = proc_defs(data, toks)
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
-    limit = {n: max(e - s, room.get(n, 0)) for n, (s, e) in defs.items()}
     reps = {}
     us = units(data, toks, frames, default_frame)
     # the oldest engines' key wait clears the box: a page end
@@ -940,10 +954,17 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
         text = by_ref.get(ref)
-        if text is None:
-            end = None
-            continue
         cont, down, col, _need, located = starts[n]
+        if text is None:
+            # a run kept as it is (blank padding that centres a line, or
+            # one left untranslated): on one line, what follows starts
+            # past its Japanese width
+            if any(k == "cmd" and data[s2] == 0xA5 for k, s2, _e in toks[i:j]):
+                end = None
+            else:
+                at = ((end[0] + down, col) if down else (end[0], end[1] + col)) if cont and end else (down, col)
+                end = (at[0], at[1] + 2 * unit_cells(data, toks, i, j))
+            continue
         # a message after text on its page starts where that text ended,
         # moved on by what was printed between
         start = ((end[0] + down, col) if down else (end[0], end[1] + col)) if cont and end else (down, col)
@@ -973,21 +994,29 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                          brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
                          _waits_after(data, toks, j, proc), marker,
                          item_budget(e - s) if tight else None)
+        if ENGINE["proc_fullwidth"] and any(bs <= s < be for _pn, bs, be in every):
+            # the engine hangs on an ASCII string in a procedure body
+            new = _fullwidth(" ".join(text.split("\n")), None)
         reps[s] = (e, ids.get(ref, ref), new)
-    for pn, (bs, be) in defs.items():
+    # every definition of a procedure is copied to its slot when it runs
+    for pn, bs, be in every:
+        limit = max(be - bs, room.get(pn, 0))
         inside = sorted(s for s in reps if bs <= s < be)
         grown = (be - bs) + sum(len(reps[s][2]) - (reps[s][0] - s) for s in inside)
-        if grown <= limit[pn]:
+        if grown <= limit:
             continue
         if not fit:
             raise SystemExit("%s%s: procedure %d would be %d bytes, it may take %d (strings %s); shorten them"
-                             % (name, tag and " " + tag, pn, grown, limit[pn], ", ".join(reps[s][1] for s in inside)))
+                             % (name, tag and " " + tag, pn, grown, limit, ", ".join(reps[s][1] for s in inside)))
         # each text gets its old bytes and an even share of the room left
-        spare = limit[pn] - (be - bs)
+        spare = limit - (be - bs)
         for s in inside:
             e, sid, new = reps[s]
             keep = max(1, (e - s) + spare // len(inside) - 2)
-            reps[s] = (e, sid, new[:1 + keep] + b"\x00" if len(new) > keep + 2 else new)
+            if ENGINE["proc_fullwidth"]:
+                reps[s] = (e, sid, new[:max(2, keep) // 2 * 2])
+            else:
+                reps[s] = (e, sid, new[:1 + keep] + b"\x00" if len(new) > keep + 2 else new)
     out, pos = bytearray(), 0
     for s in sorted(reps):
         e, _sid, new = reps[s]
@@ -1054,7 +1083,8 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None
         cmds = [data[toks[y][1]] for y in body if toks[y][0] == "cmd"]
         calls = [bytes(data[toks[y][1]:toks[y + 1][2]]) for y in body
                  if toks[y][0] == "cmd" and data[toks[y][1]] == 0xBA and y + 1 < len(toks)]
-        width = 0
+        width, free = 0, 0
+        placed = [toks[y][1] for y in body if toks[y][0] == "cmd" and data[toks[y][1]] == 0xA7]
         for y in body:
             if toks[y][0] == "arg":
                 m = _DISP.match(bytes(data[toks[y][1]:toks[y][2]]))
@@ -1064,8 +1094,13 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None
         for n, (i, j, _kind, _f) in enumerate(us):
             if bs <= toks[i][1] < be:
                 en = by_ref.get("%s:%s%d" % (name, tag, n))
-                width += max(2 * unit_cells(data, toks, i, j), _width(" ".join(en.split("\n"))) if en else 0)
-        out[pn] = {"width": width, "breaks": cmds.count(0xA5),
+                flat = " ".join(en.split("\n")) if en else ""
+                # (written full-width there, each letter two columns)
+                wide = 2 * len(flat) if ENGINE["proc_fullwidth"] else _width(flat)
+                width += max(2 * unit_cells(data, toks, i, j), wide)
+                if not any(at < toks[i][1] for at in placed):
+                    free += max(2 * unit_cells(data, toks, i, j), wide)
+        out[pn] = {"width": width, "free": free, "breaks": cmds.count(0xA5),
                    "reset": bool(set(cmds) & {0xA6, 0xAA, 0xAB}) or (proc is not None and proc in calls),
                    "calls": [_call_num(c) for c in calls]}
     return out
@@ -1079,7 +1114,9 @@ def resolve_effects(layers):
     proc_effects facts (later ones over earlier ones), with what a
     procedure calls counted as its own: ("tag", columns) prints text and
     ends its line (a speaker's name tag); ("insert", columns) prints text
-    on the line; ("reset",) sets the frame or clears the text; ("break",
+    on the line; ("reset", columns) sets the frame or clears the text
+    (columns: what it prints as well on the text cursor, a name tag after
+    a flash; a wait marker placed with A7 does not count); ("break",
     n) only breaks the line n times; ("none",) leaves the cursor alone
     (pictures, sounds, flags)."""
     facts = {}
@@ -1089,18 +1126,20 @@ def resolve_effects(layers):
     def total(pn, seen):
         f = facts.get(pn)
         if f is None or pn in seen:
-            return 0, 0, False
-        width, breaks, reset = f["width"], f["breaks"], f["reset"]
+            return 0, 0, False, 0
+        width, breaks, reset, free = f["width"], f["breaks"], f["reset"], f.get("free", f["width"])
         for c in f["calls"]:
-            w, b, r = total(c, seen | {pn})
-            width, breaks, reset = width + w, breaks + b, reset or r
-        return width, breaks, reset
+            w, b, r, fr = total(c, seen | {pn})
+            width, breaks, reset, free = width + w, breaks + b, reset or r, free + fr
+        return width, breaks, reset, free
 
     eff = {}
     for pn in facts:
-        width, breaks, reset = total(pn, frozenset())
+        width, breaks, reset, free = total(pn, frozenset())
         if reset:
-            eff[pn] = ("reset",)
+            # (free: what it prints on the text cursor, not a marker
+            # placed at a fixed spot with A7)
+            eff[pn] = ("reset", free)
         elif width:
             eff[pn] = ("tag", width) if breaks else ("insert", width)
         elif breaks:
@@ -1279,6 +1318,7 @@ def run_patch(here, src, dst, mode="en"):
     ENGINE["advh"] = cfg.get("engine") == "advh"
     ENGINE["line_h"] = cfg.get("line_h", LINE_H)
     ENGINE["keep_flag"] = bytes.fromhex(cfg["keep_flag"]) if "keep_flag" in cfg else None
+    ENGINE["proc_fullwidth"] = cfg.get("proc_fullwidth", False)
     if ENGINE["advh"]:
         exe_path = _join(cfg["game_dir"], "ADVH.EXE")
         vol.write(exe_path, advh.patch(vol.read(exe_path)))

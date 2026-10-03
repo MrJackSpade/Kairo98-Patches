@@ -1,0 +1,45 @@
+{
+ "title": "Can Can Bunny Spirits",
+ "key": "CocktailSoft.zip/Can Can Bunny Spirits",
+ "image": "Can Can Bunny Spirits\\Can Can Bunny Spirits [FD]\\Can Can Bunny Spirits (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "CCBS",
+ "extraop": false,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "proc_fullwidth": true,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "CCBS",
+  "disks": [
+   "Can Can Bunny Spirits (Disk B).hdm",
+   "Can Can Bunny Spirits (Disk C).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "ADV98V.SYS",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\CCBS",
+   "ADV98V\\ADVBIOS",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "40:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}
