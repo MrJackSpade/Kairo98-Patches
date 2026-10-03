@@ -11,6 +11,5 @@
   75,
   370
  ],
- "wait": "ab",
  "boot_steps": "30:shot,4:enter,4:shot,4:lclick,10:lclick,25:shot,2:lclick,20:shot"
 }

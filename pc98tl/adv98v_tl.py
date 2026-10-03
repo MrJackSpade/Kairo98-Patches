@@ -45,9 +45,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             pc98tl/illusion_game.py), "menu_fullwidth" (an engine whose
             menus take Shift-JIS only), "default_frame" (the message box
             the startup script sets, in force where a script sets none),
-            "wait" (hex of the wait put before a page's message end, ""
-            where the end procedure waits itself; default D1 1 3 0, which
-            the oldest engines read differently), "page_break" (hex of the
+            "wait" (hex of the pause put before the message-end
+            procedure; see default_wait), "marker_cols" (columns at the
+            right of the message box where the message end draws its wait
+            marker, kept free of text), "page_break" (hex of the
             break between pages where no file has a message end of its
             own: the oldest engines' 81 90, a key wait that clears the
             box), "boot_steps"}
@@ -247,11 +248,32 @@ def mes_path(vol, game_dir, name):
     return _subdir(vol, game_dir, "MES") + "/" + name
 
 
-def inline_end(data, toks, us=None, wait=WAIT):
+KEY = bytes([0xAB])          # wait for a key or click
+
+
+def default_wait(vol, game_dir, extraop):
+    """The short pause the games put before the message-end procedure
+    (which waits for the key itself): D1 1 3 0 where the game's D1 takes three
+    numbers (the later builds), else none (the earlier builds' D1 takes
+    two)."""
+    counts = collections.Counter()
+    for _name, path in _files(vol, game_dir):
+        data = vol.read(path)
+        toks = av.tokenize(data, extraop)
+        for x, (k, s, _e) in enumerate(toks[:-3]):
+            if k == "cmd" and data[s] == 0xD1:
+                n = 0
+                while n < 3 and toks[x + 1 + n][0] == "num":
+                    n += 1
+                counts[n] += 1
+    return WAIT if counts[3] > counts[2] else b""
+
+
+def inline_end(data, toks, us=None):
     """A file's message end written out after its messages instead of a
     procedure call: the commands most often right after a message, up to
-    and including a text reset (AA n); with the window close (AB) among
-    them they wait for a key themselves, else a wait goes first.  None
+    and including a text reset (AA n); starting with the key wait (AB)
+    they wait themselves, else a key wait goes first.  None
     when the file has none."""
     seen = collections.Counter()
     for _i, j, kind, _f in us if us is not None else units(data, toks):
@@ -266,7 +288,7 @@ def inline_end(data, toks, us=None, wait=WAIT):
     if not seen:
         return None
     seq = max((c, b) for b, c in seen.items())[1]
-    return seq if seq[0] == 0xAB else wait + seq
+    return seq if seq[0] == 0xAB else KEY + seq
 
 
 def _files(vol, game_dir):
@@ -627,14 +649,15 @@ def frame_size(frame):
 
 
 def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, down=0, max_cols=None,
-          max_rows=None, fullwidth=False, pages_ok=False):
+          max_rows=None, fullwidth=False, pages_ok=False, marker=0):
     """English for a text run: (the bytes to put in its place, the (line,
     column) it ends at).  A message starts at start (line, column) of its
     page and leaves reserve columns at its end for what is printed after
     it on its line; down: the lines what follows moves on before the next
     text (which must stay inside the frame); max_cols, max_rows: a
     narrower width and fewer lines than the frame's to keep to;
-    pages_ok: a message in a one-line frame that ends with a key wait
+    marker: columns kept free at the right of the box for the wait
+    marker; pages_ok: a message in a one-line frame that ends with a key wait
     or the message end, so it pages a line at a time (else it keeps its
     Japanese width: a prompt with a field after it); fullwidth: menu
     items written as full-width characters (older
@@ -663,6 +686,8 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
     cols, rows = size
     if max_cols:
         cols = min(cols, max_cols)
+    if marker and kind == "msg":
+        cols -= marker      # the message end's wait marker sits at the box's right edge
     if max_rows:
         rows = min(rows, max_rows)
     row, col = start
@@ -700,7 +725,7 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
 
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
-                 frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT):
+                 frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT, marker=0):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -718,7 +743,9 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     starts = [_start(data, toks, i, proc, insert, effects or {}, clears) for i, _j, _k, _f in us]
     # a page break: a wait and the message-end procedure, or the file's
     # own message end where it has none
-    brk = (wait + proc) if proc else inline_end(data, toks, us, wait) or fallback
+    # (the message-end procedure waits for the key itself, as after every
+    # original message: only the build's short pause goes before it)
+    brk = (wait + proc) if proc else inline_end(data, toks, us) or fallback
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
@@ -754,7 +781,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                 bkind = "label"
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
                          brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
-                         _waits_after(data, toks, j, proc))
+                         _waits_after(data, toks, j, proc), marker)
         reps[s] = (e, ids.get(ref, ref), new)
     for pn, (bs, be) in defs.items():
         inside = sorted(s for s in reps if bs <= s < be)
@@ -1068,8 +1095,8 @@ def run_patch(here, src, dst, mode="en"):
         for x, (k, s2, _e) in enumerate(otoks[:-1]):
             if k == "cmd" and odata[s2] == 0xAA and otoks[x + 1][0] == "num":
                 resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
-    wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else WAIT
-    game_break = wait + resets.most_common(1)[0][0] if resets else None
+    wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else default_wait(vol, cfg["game_dir"], extraop)
+    game_break = KEY + resets.most_common(1)[0][0] if resets else None
     if "page_break" in cfg:
         game_break = bytes.fromhex(cfg["page_break"])
     ins = cfg.get("name_insert")
@@ -1115,7 +1142,8 @@ def run_patch(here, src, dst, mode="en"):
                                                                     name_cols)])
             frames = {**frames_anywhere, **proc_frames(data, streams[0][2])}
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
-                               frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait)
+                               frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
+                               cfg.get("marker_cols", 0))
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -1128,7 +1156,8 @@ def run_patch(here, src, dst, mode="en"):
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
                                            {**frames, **proc_frames(inner, itoks)}, game_break,
-                                           cfg.get("menu_fullwidth", False), default_frame, wait)
+                                           cfg.get("menu_fullwidth", False), default_frame, wait,
+                                           cfg.get("marker_cols", 0))
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

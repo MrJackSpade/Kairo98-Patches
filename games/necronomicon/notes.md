@@ -50,5 +50,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Setup questions and menus | OK: questions as filler in their one-line frame; menu items fixed width |
 | Credits and title (artwork) | OK: unchanged (drawn as pictures) |
 | Opening scene messages | OK: filler wrapped between words to the message box; the wait marker as 1-letter filler at its place |
+| Page wait (9-sentence test string in the opening) | OK: each page holds until clicked (checked after 20 s), one click a page |
 | Save/load, later chapters, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

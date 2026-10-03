@@ -47,5 +47,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Sound board, save file and start menus | OK: questions as filler in their one-line frame, cut to the Japanese width; menu items in their boxes at fixed width |
 | Opening scene messages | OK: filler wrapped between words to the frame |
 | Long message (9 sentences, test build) | OK: 3-line pages with a wait between; no line drawn over another |
+| Page wait (9-sentence test string in the first opening message) | OK: each page holds until clicked (checked after 20 s); the last page is cleared without a wait, as the original does after this message |
 | Save/load, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

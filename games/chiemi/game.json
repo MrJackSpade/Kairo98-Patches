@@ -6,5 +6,6 @@
  "game_dir": "CHIEMI",
  "extraop": true,
  "name_cols": 8,
+ "marker_cols": 2,
  "boot_steps": "30:shot,4:enter,3:shot,4:enter,3:shot,4:key=32,3:shot,4:key=32,3:shot,4:lclick,3:shot,4:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot"
 }

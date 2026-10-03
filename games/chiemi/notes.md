@@ -48,5 +48,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Setup menus (sound board, start) | OK: questions as filler in their one-line frame at the Japanese width; menu items fixed width |
 | Opening scene messages | OK: filler wrapped between words to the message box (66 columns, set by a procedure the scripts call), 2-line pages with a wait between |
+| Page wait (9-sentence test string in the opening) | OK: each page holds until clicked, one click a page; text kept clear of the wait marker at the box's right edge (it used to draw over the last letters) |
 | Name entry, save/load, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

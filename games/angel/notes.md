@@ -52,5 +52,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Title, main menu and its sub-menu | OK: menu buttons (text placed at fixed spots) as filler at their Japanese width; the welcome message in its frame with its colour changes |
 | Scenario select (KISS ME!) | OK: the three routes as fixed-width filler items |
 | Opening scenes of the route | OK: filler wrapped between words to the frame, 3-line pages; name tags and the hero's name (from the registration) printed inline with the text after them on the same line; ellipsis procedures inside lines; no mid-word breaks |
+| Page wait (9-sentence test string in the scenario's first message) | OK: each page holds until clicked (checked after 20 s), one click a page |
 | Registration (name entry), save/load, other scenarios, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
