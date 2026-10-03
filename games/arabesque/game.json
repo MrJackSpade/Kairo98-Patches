@@ -1,0 +1,12 @@
+{
+ "title": "Arabesque",
+ "key": "Fairytale.zip/Arabesque",
+ "image": "Arabesque\\Arabesque [HD]\\Arabesque.hdi",
+ "encoding": "adv98v",
+ "game_dir": "ALICE",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "marker_cols": 3,
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

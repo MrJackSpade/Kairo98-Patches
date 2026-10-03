@@ -1243,5 +1243,19 @@
    "Save/load, later chapters, endings",
    "not yet seen"
   ]
+ ],
+ "arabesque": [
+  [
+   "Sound board choice (artwork buttons)",
+   "OK: unchanged artwork; picked with Enter"
+  ],
+  [
+   "Prologue narration (black screen, framed box), first ~100 messages",
+   "OK: filler wrapped between words, 3-line pages waiting for a click; the wait marker's columns at the right edge kept clear (the third line used to run into it)"
+  ],
+  [
+   "Picture scenes after the prologue, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

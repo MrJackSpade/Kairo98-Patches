@@ -134,3 +134,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Dracula Hakushaku | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the bottom box, full-width labels | OK (see notes) |
 | Akiko Premium Version | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 3-line box (key wait between pages), full-width menu items | OK (see notes) |
 | Demon City | adv98v (Adv98V 1.71.58) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged, name tags and names shown from variables inline, the opening roll's text file | OK (see notes) |
+| Arabesque | adv98v (Adv98V 1.72.59) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 3-line framed box | OK (see notes) |

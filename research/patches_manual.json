@@ -862,5 +862,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Arabesque": [
+  {
+   "label": "This repo: games/arabesque (patcher working, machine translation in progress)",
+   "url": "../games/arabesque/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

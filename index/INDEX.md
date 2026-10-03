@@ -224,6 +224,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
+| Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
@@ -2233,7 +2234,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Apple Club Data Shuu Dai-3-kan [FD]
 - ♥ Apple Club Data Shuu Dai-4-kan [FD]
 - ♥ Apple Club Data Shuu Dai-5-kan [FD]
-- ♥ Arabesque [FD HD] `adv98v`
+- ♥ Arabesque [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Dead of the Brain [FD] `adv98v` — **EN**
 - ♥ Dead of the Brain 2 [FD HD extras] `adv98v` — **EN**
 - ♥ Dracula Hakushaku [FD HD] `adv98v` — **EN**
