@@ -775,5 +775,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Will no Dengon": [
+  {
+   "label": "This repo: games/will_no_dengon (patcher working, machine translation in progress)",
+   "url": "../games/will_no_dengon/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

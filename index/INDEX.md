@@ -215,6 +215,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
+| Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
 | Fairytale Red-Zone | Akiko Gold | [This repo: games/akiko_gold (patcher working, machine translation in progress)](../games/akiko_gold/notes.md) |
@@ -1566,7 +1567,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Sotsugyou Shashin - Photograph [FD extras]
 - ♥ Travel Junction [FD HD extras] `adv98v`
 - ♥ True Heart [FD HD extras] `adv98v`
-- ♥ Will no Dengon [FD HD] `adv98v`
+- ♥ Will no Dengon [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Cocktail Soft FMC (`CocktailSoftFmc.zip`)
 

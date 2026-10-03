@@ -1089,5 +1089,23 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "will_no_dengon": [
+  [
+   "Start menu",
+   "OK: full-width filler items"
+  ],
+  [
+   "Opening (lines placed beside the pictures)",
+   "OK: filler at each line's Japanese width where it is placed"
+  ],
+  [
+   "First town scene",
+   "OK: filler wrapped between words to the 2-line box; the command bar is artwork (unchanged)"
+  ],
+  [
+   "Command menus, save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -53864,7 +53864,14 @@
      "path": "Will no Dengon\\Will no Dengon [HD]\\Will no Dengon.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/will_no_dengon (patcher working, machine translation in progress)",
+     "url": "../games/will_no_dengon/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18349 (erotic content)",
    "engine": "adv98v",
@@ -53872,7 +53879,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoftFmc.zip/Bay City Elegy",

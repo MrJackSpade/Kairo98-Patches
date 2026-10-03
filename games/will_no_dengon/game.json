@@ -1,0 +1,16 @@
+{
+ "title": "Will no Dengon",
+ "key": "CocktailSoft.zip/Will no Dengon",
+ "image": "Will no Dengon\\Will no Dengon [HD]\\Will no Dengon.hdi",
+ "encoding": "adv98v",
+ "game_dir": "WILL",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "default_frame": [
+  13,
+  280,
+  66,
+  335
+ ],
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}
