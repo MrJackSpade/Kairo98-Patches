@@ -80860,7 +80860,14 @@
      "path": "Koroshi no Dress 3\\Koroshi no Dress 3 [HD]\\Koroshi no Dress 3.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koroshi_no_dress_3 (patcher working, machine translation in progress)",
+     "url": "../games/koroshi_no_dress_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18051 (erotic content)",
    "engine": "adv98v",
@@ -80868,7 +80875,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Kurutta Kajitsu",

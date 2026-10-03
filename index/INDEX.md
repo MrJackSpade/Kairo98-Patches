@@ -232,6 +232,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
+| Fairytale | Koroshi no Dress 3 | [This repo: games/koroshi_no_dress_3 (patcher working, machine translation in progress)](../games/koroshi_no_dress_3/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale | Shinjuku Monogatari | [This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)](../games/shinjuku_monogatari/notes.md) |
 | Fairytale | Virtuacall | [This repo: games/virtuacall (patcher working, machine translation in progress)](../games/virtuacall/notes.md) |
@@ -2256,7 +2257,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Karei naru Jinsei 2 [FD HD]
 - ♥ Koroshi no Dress [FD HD]
 - ♥ Koroshi no Dress 2 [FD extras]
-- ♥ Koroshi no Dress 3 [FD HD] `adv98v`
+- ♥ Koroshi no Dress 3 [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kurutta Kajitsu [FD] `adv98v` — **EN**
 - ♥ Lam-Mal [FD] `adv98v`
 - ♥ Lipstick #1 - Lolita-hen [FD]

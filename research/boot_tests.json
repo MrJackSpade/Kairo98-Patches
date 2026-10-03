@@ -1459,5 +1459,27 @@
    "Leaving the first scene (the commands in the order it wants), saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "koroshi_no_dress_3": [
+  [
+   "Startup menu",
+   "OK: full-width filler items at their places"
+  ],
+  [
+   "The name question before its yes/no menu",
+   "OK: the question keeps to its Japanese width beside the menu and pages with the game's message end and its clear (the menu file has no message end of its own); the two items under it"
+  ],
+  [
+   "Opening (the apartment door, the shadow at the door)",
+   "OK: filler wrapped between words to the box, pages waiting for a click"
+  ],
+  [
+   "The detective's office (the first scene)",
+   "OK: messages page the same way as the story goes on"
+  ],
+  [
+   "The investigation's command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

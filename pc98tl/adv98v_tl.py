@@ -347,7 +347,9 @@ def end_gap(data, toks, us, proc, effects):
     the next text, as most often: the call, then the text resets (AA) and
     the frame or reset procedures that follow it, up to the next name tag,
     name or other text.  A page break repeats it, so the next page is in
-    the same cleared frame as the next message would be."""
+    the same cleared frame as the next message would be.  None where the
+    file has no message that ends with the call (the caller uses the
+    game's usual one)."""
     seen = collections.Counter()
     for _i, j, kind, _f in us:
         if kind != "msg" or j + 1 >= len(toks):
@@ -366,7 +368,7 @@ def end_gap(data, toks, us, proc, effects):
                 continue
             break
         seen[bytes(data[toks[j][1]:toks[x - 1][2]])] += 1
-    return max((c, b) for b, c in seen.items())[1] if seen else proc
+    return max((c, b) for b, c in seen.items())[1] if seen else None
 
 
 def inline_end(data, toks, us=None):
@@ -934,7 +936,7 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
                  frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT, marker=0,
-                 forced_break=None, tight=False):
+                 forced_break=None, tight=False, game_gap=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -942,7 +944,9 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     refused, or with fit (the --pseudo filler) the body's texts are cut
     to fit.  With no table (a game whose procedures hold no text, so it
     was not measured) a procedure may not grow.  tight: a file that may
-    not grow (tight_files), whose menu items keep their byte length."""
+    not grow (tight_files), whose menu items keep their byte length.
+    game_gap: {message-end call: the game's usual message end after it},
+    for a file whose own messages never end with the call."""
     defs = procs(data, toks)
     every = proc_defs(data, toks)
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
@@ -955,7 +959,18 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     # own message end where it has none
     # (the message-end procedure waits for the key itself, as after every
     # original message: only the build's short pause goes before it)
-    brk = (wait + end_gap(data, toks, us, proc, effects or {})) if proc else         inline_end(data, toks, us) or forced_break or fallback
+    own = end_gap(data, toks, us, proc, effects or {}) if proc else None
+    if proc and (not own or own == proc):
+        # (a bare call does not clear the box: the game's usual end does,
+        # up to its clears; the frame it sets after them is a speaker's)
+        usual = (game_gap or {}).get(proc, proc)
+        gt, keep = av.tokenize(usual, False), len(proc)
+        for gk, gs, ge in gt:
+            if gs >= len(proc) and gk == "cmd" and usual[gs] != 0xAA:
+                break
+            keep = max(keep, ge)
+        own = usual[:keep]
+    brk = (wait + own) if proc else         inline_end(data, toks, us) or forced_break or fallback
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)
@@ -1407,6 +1422,19 @@ def run_patch(here, src, dst, mode="en"):
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
     rooms = mec_rooms(vol, cfg["game_dir"], extraop)
     tight = tight_files(vol, cfg["game_dir"], extraop)
+    # each message-end call's usual message end across the game's files,
+    # for a file that only pages with it (a question before a menu)
+    gaps = collections.defaultdict(collections.Counter)
+    for oname, opath in _files(vol, cfg["game_dir"]):
+        odata = vol.read(opath)
+        otoks = av.tokenize(odata, extraop)
+        oeff = resolve_effects([start_eff, proc_effects(odata, otoks, oname, "", {}, None, name_cols, var_cols)])
+        oproc = end_proc(odata, otoks, oeff)
+        if oproc:
+            ogap = end_gap(odata, otoks, units(odata, otoks), oproc, oeff)
+            if ogap:
+                gaps[oproc][ogap] += 1
+    game_gap = {c: g.most_common(1)[0][0] for c, g in gaps.items()}
     for name in cfg.get("text_files", []):
         path = _join(cfg["game_dir"], name)
         old_file = vol.read(path)
@@ -1456,7 +1484,7 @@ def run_patch(here, src, dst, mode="en"):
             frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2])})
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
-                               cfg.get("marker_cols", 0), forced, name.upper() in tight)
+                               cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -1470,7 +1498,7 @@ def run_patch(here, src, dst, mode="en"):
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
                                            resolve_frames({**frames, **proc_frames(inner, itoks)}), game_break,
                                            cfg.get("menu_fullwidth", False), default_frame, wait,
-                                           cfg.get("marker_cols", 0), forced, name.upper() in tight)
+                                           cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])
