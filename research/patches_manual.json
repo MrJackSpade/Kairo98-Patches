@@ -791,5 +791,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Can Can Bunny Premiere": [
+  {
+   "label": "This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)",
+   "url": "../games/can_can_bunny_premiere/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -212,6 +212,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
+| Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
 | Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
@@ -1533,7 +1534,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Can Can Bunny [FD extras]
 - ♥ Can Can Bunny Extra [FD HD] `adv98v`
 - ♥ Can Can Bunny Limited 5 1-2 [FD HD extras] `adv98v`
-- ♥ Can Can Bunny Premiere [FD HD] `adv98v`
+- ♥ Can Can Bunny Premiere [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Spirits [FD extras] `adv98v`
 - ♥ Can Can Bunny Superior [FD extras]
 - ♥ Cocktail Soft Zoukangou [FD] `adv98v`

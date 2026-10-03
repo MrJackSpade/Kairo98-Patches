@@ -50531,7 +50531,14 @@
      "path": "Can Can Bunny Premiere\\Can Can Bunny Premiere [HD]\\Can Can Bunny Premiere.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)",
+     "url": "../games/can_can_bunny_premiere/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12842 (erotic content)",
    "engine": "adv98v",
@@ -50539,7 +50546,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny Spirits",

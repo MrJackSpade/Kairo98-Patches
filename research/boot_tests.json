@@ -1129,5 +1129,23 @@
    "Command menus, save/load, later acts (disk B and C files), endings",
    "not yet seen"
   ]
+ ],
+ "can_can_bunny_premiere": [
+  [
+   "Start menus",
+   "OK: full-width filler items in their boxes"
+  ],
+  [
+   "Name prompt in the message window",
+   "OK: prompt filler inside the frame, on its lines"
+  ],
+  [
+   "Name entry window (kana grid module)",
+   "Blocked: the module takes no emulated input (mouse clicks and small moves, keyboard letters, arrows, Enter and space all tried), and with its call skipped in a test image the game waits for the name; scenes past the opening not reached"
+  ],
+  [
+   "Scenes past the opening, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

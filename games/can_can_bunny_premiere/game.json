@@ -1,0 +1,10 @@
+{
+ "title": "Can Can Bunny Premiere",
+ "key": "CocktailSoft.zip/Can Can Bunny Premiere",
+ "image": "Can Can Bunny Premiere\\Can Can Bunny Premiere [HD]\\Can Can Bunny Premiere.hdi",
+ "encoding": "adv98v",
+ "game_dir": "CAN4",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,4:shot,4:lclick,4:shot"
+}
