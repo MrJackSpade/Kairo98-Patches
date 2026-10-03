@@ -1017,5 +1017,23 @@
    "In-game menus, save/load, later acts, endings",
    "not yet seen"
   ]
+ ],
+ "jankirou": [
+  [
+   "Floppy set laid out on a hard disk, sound and name questions",
+   "OK: boots from the hard disk; questions page within their one-line space before the menu; menu items fixed width"
+  ],
+  [
+   "Gate select (click a gate)",
+   "OK: prompt filler in its frame; the gate's welcome tag (five runs, the gate name chosen by branch) in its small box, each run at its Japanese width"
+  ],
+  [
+   "Opponent select (portraits and a command list)",
+   "OK: commands as filler at their Japanese width; the hover name tag in its box"
+  ],
+  [
+   "Mahjong games (separate engine, no Japanese text), opponents' scenes, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

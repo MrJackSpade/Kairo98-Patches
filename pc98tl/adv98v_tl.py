@@ -245,7 +245,7 @@ def _subdir(vol, game_dir, kind):
 
 
 def mes_path(vol, game_dir, name):
-    return _subdir(vol, game_dir, "MES") + "/" + name
+    return dict((n.upper(), p) for n, p in _files(vol, game_dir))[name.upper()]
 
 
 KEY = bytes([0xAB])          # wait for a key or click
@@ -292,10 +292,15 @@ def inline_end(data, toks, us=None):
 
 
 def _files(vol, game_dir):
-    """The MES folder's scripts: [(name, path)]."""
-    mes = _subdir(vol, game_dir, "MES")
-    return [(e["name"], mes + "/" + e["name"]) for e in vol.listdir(vol.find(mes)["cluster"])
-            if not e["is_dir"] and e["name"].upper().endswith((".MES", ".MEC"))]
+    """The scripts: [(name, path)], from the MES folder and, where the
+    game keeps its MEC files apart, the MEC folder."""
+    out = []
+    for kind in ("MES", "MEC"):
+        folder = _subdir(vol, game_dir, kind)
+        if folder:
+            out += [(e["name"], folder + "/" + e["name"]) for e in vol.listdir(vol.find(folder)["cluster"])
+                    if not e["is_dir"] and e["name"].upper().endswith((".MES", ".MEC"))]
+    return out
 
 
 def start_script(vol, game_dir, extraop):

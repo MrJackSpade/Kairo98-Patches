@@ -601,6 +601,8 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "", ADV98V_DISPLAY]
     if cfg.get("hdd"):
         out[out.index(ADV98V_DISPLAY):out.index(ADV98V_DISPLAY)] = [
+            ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "
+             if cfg["game_dir"] == "JANKI" else "") +
             "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
             "hard-disk image (every disk's files in `%s/`, with the scripts' drive letters taken off "
             "their file names, started as the floppy's boot does); the base image is the collection's "

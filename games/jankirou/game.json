@@ -1,0 +1,46 @@
+{
+ "title": "Jankirou",
+ "key": "FairytaleRed-zone.zip/Jankirou",
+ "image": "Jankirou\\Jankirou [FD]\\Jankirou (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "JANKI",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "JANKI",
+  "disks": [
+   "Jankirou (Disk B).hdm",
+   "Jankirou (Disk C).hdm",
+   "Jankirou (Disk D).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "IO98.SYS",
+   "MEGDOS.SYS",
+   "INSTH.EXE"
+  ],
+  "run": [
+   "A:",
+   "cd \\JANKI",
+   "JANKI",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "30:shot,4:enter,4:lclick,4:lclick,6:enter,3:enter,3:enter,10:shot,1:mouse=-800;-800,1:mouse=100;150,1:lclick,6:shot,3:lclick,3:shot"
+}
