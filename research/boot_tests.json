@@ -1207,5 +1207,23 @@
    "Picture scenes, save/load, later chapters, endings",
    "not yet seen"
   ]
+ ],
+ "akiko_premium": [
+  [
+   "Start menu",
+   "OK: full-width filler items"
+  ],
+  [
+   "Opening narration (text typed slowly)",
+   "OK: filler wrapped between words to the box, 3-line pages, each waiting for a click"
+  ],
+  [
+   "School scene past the opening",
+   "OK: reached; filler wrapped to the box"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

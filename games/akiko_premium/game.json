@@ -1,0 +1,11 @@
+{
+ "title": "Akiko Premium Version",
+ "key": "FairytaleRed-zone.zip/Akiko Premium Version",
+ "image": "Akiko Premium Version\\Akiko Premium Version [HD]\\Akiko Premium Version.hdi",
+ "encoding": "adv98v",
+ "game_dir": "AKIKO",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "page_break": "8190",
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

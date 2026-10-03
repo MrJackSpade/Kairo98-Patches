@@ -83256,7 +83256,14 @@
      "path": "Akiko Premium Version\\Akiko Premium Version [HD]\\Akiko Premium Version.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/akiko_premium (patcher working, machine translation in progress)",
+     "url": "../games/akiko_premium/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17413 (erotic content)",
    "engine": "adv98v",
@@ -83264,7 +83271,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Chiemi",

@@ -846,5 +846,13 @@
    "url": "https://vndb.org/r160190",
    "source": "VNDB"
   }
+ ],
+ "FairytaleRed-zone.zip/Akiko Premium Version": [
+  {
+   "label": "This repo: games/akiko_premium (patcher working, machine translation in progress)",
+   "url": "../games/akiko_premium/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
