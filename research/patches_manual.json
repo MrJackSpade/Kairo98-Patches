@@ -854,5 +854,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Demon City": [
+  {
+   "label": "This repo: games/demon_city (patcher working, machine translation in progress)",
+   "url": "../games/demon_city/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

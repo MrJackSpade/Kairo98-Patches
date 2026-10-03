@@ -48,7 +48,9 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             pc98tl/illusion_game.py), "engine": "advh" (ADVH, the engine
             before Adv98V: see pc98tl/advh.py), "line_h" (line height in
             dots, 22 in ADVH), "menu_fullwidth" (an engine whose
-            menus take Shift-JIS only), "program_fixes" ([{"file", "find",
+            menus take Shift-JIS only), "text_files" ([files, relative to
+            the game folder, of plain text the engine shows as it is: an
+            opening roll]), "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
             cannot pass), "default_frame" (the message box
@@ -478,6 +480,58 @@ def _all_japanese(raw):
     return bool(text) and all(ord(c) >= 0x3000 for c in text)
 
 
+_SET = re.compile(rb"@(\d+)='([^']*)'")
+
+
+def variable_widths(vol, game_dir, extraop, name_cols):
+    """{n: columns}: the widest value the scripts give string variable @n
+    (@n='...').  The English of a value keeps to its byte length (see
+    var_strings), so that is its width on screen; a name the player
+    enters is up to name_cols."""
+    out = {}
+    for _name, path in _files(vol, game_dir):
+        data = vol.read(path)
+        for k, s, e in av.tokenize(data, extraop):
+            if k != "arg":
+                continue
+            for m in _SET.finditer(data[s:e]):
+                n = int(m.group(1))
+                out[n] = max(out.get(n, 0), len(m.group(2)), name_cols)
+    return out
+
+
+def text_file_lines(data):
+    """A plain Shift-JIS text file the engine shows as it is (CR LF lines,
+    ended by 1A): [(line text, byte length)] of its lines with text."""
+    body = data.split(b"\x1a")[0]
+    return [(raw.decode("cp932", "replace"), len(raw)) for raw in body.split(b"\r\n")
+            if raw.decode("cp932", "replace").strip("\u3000 ")]
+
+
+def patch_text_file(data, texts, sids, warn):
+    """The file with its text lines replaced (None: kept).  It is loaded
+    into a fixed place in memory, so it keeps its size: each line is cut
+    to its Japanese byte length and padded with spaces to it."""
+    body = data.split(b"\x1a")[0]
+    tail = data[len(body):]
+    out, n = [], 0
+    for raw in body.split(b"\r\n"):
+        if not raw.decode("cp932", "replace").strip("\u3000 "):
+            out.append(raw)
+            continue
+        text = texts[n]
+        if text is None:
+            out.append(raw)
+        else:
+            enc = _plain(" ".join(text.split("\n")))
+            if len(enc) > len(raw):
+                warn.append("%s: %d bytes, the line holds %d" % (sids[n], len(enc), len(raw)))
+                enc = enc[:len(raw)]
+            out.append(enc.ljust(len(raw)))
+        n += 1
+    return b"\r\n".join(out) + tail
+
+
 def var_strings(vol, game_dir, extraop, entry_cols):
     """{file name: [(start, end, text, room, pad)]}: the values the scripts give
     string variables (@n='...' in an argument: the hero's default name,
@@ -614,6 +668,9 @@ def run_extract(here, src):
              for name, found in var_strings(vol, cfg["game_dir"], cfg.get("extraop", False),
                                             cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))).items()
              for n, (s, e, text, room, _pad) in enumerate(found)]
+    for name in cfg.get("text_files", []):
+        lines = text_file_lines(vol.read(_join(cfg["game_dir"], name)))
+        extra += [("file", name, "%d" % n, 0, 0, text, raw_len // 2) for n, (text, raw_len) in enumerate(lines)]
     for name, path in _programs(vol, cfg["game_dir"]):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
                   for s, e, text in program_strings(vol.read(path))]
@@ -624,7 +681,7 @@ def run_extract(here, src):
             order.append(key)
         merged[key]["refs"].append("%s:%s" % (name, at))
         merged[key]["max_cells"] = min(merged[key]["max_cells"], cells)
-    prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e"}
+    prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e", "file": "t"}
     counters, strings = {}, []
     for key in order:
         e = merged[key]
@@ -947,11 +1004,12 @@ def resolve_frames(frames):
     return {pn: frame(pn, frozenset()) for pn in frames}
 
 
-def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
+def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None):
     """{number: facts} of the procedures a stream defines, read off their
     bodies, for resolve_effects: the columns of text they print (the
     Japanese's or the English's, the wider; a string variable shown with
-    "DISP @n" counts as a name of name_cols), their line breaks (A5),
+    "DISP @n" counts as its variable's widest value, var_cols {n:
+    columns}, or as a name of name_cols), their line breaks (A5),
     whether they set the frame or clear the text (A6, AA, AB, or a call
     of the message-end procedure), and the procedures they call."""
     defs = procs(data, toks)
@@ -966,8 +1024,13 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
         cmds = [data[toks[y][1]] for y in body if toks[y][0] == "cmd"]
         calls = [bytes(data[toks[y][1]:toks[y + 1][2]]) for y in body
                  if toks[y][0] == "cmd" and data[toks[y][1]] == 0xBA and y + 1 < len(toks)]
-        width = sum(name_cols for y in body if toks[y][0] == "arg"
-                    and _DISP.match(bytes(data[toks[y][1]:toks[y][2]])))
+        width = 0
+        for y in body:
+            if toks[y][0] == "arg":
+                m = _DISP.match(bytes(data[toks[y][1]:toks[y][2]]))
+                if m:
+                    # a variable shown: as wide as its longest value, or a name
+                    width += var_cols.get(int(m.group(1)), name_cols) if var_cols else name_cols
         for n, (i, j, _kind, _f) in enumerate(us):
             if bs <= toks[i][1] < be:
                 en = by_ref.get("%s:%s%d" % (name, tag, n))
@@ -978,7 +1041,7 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0):
     return out
 
 
-_DISP = re.compile(rb'^"DISP @\d+"$')
+_DISP = re.compile(rb'^"DISP @(\d+)"$')
 
 
 def resolve_effects(layers):
@@ -1170,7 +1233,7 @@ def run_patch(here, src, dst, mode="en"):
     for e in doc["strings"]:
         text = e["en"]
         if mode == "pseudo":
-            fixed = e["kind"] in ("item", "var", "engine")
+            fixed = e["kind"] in ("item", "var", "engine", "file")
             text = pseudo(e["id"], 2 * e["max_cells"], 1.0 if fixed else 2.5)
             if fixed:
                 text = text[:2 * e["max_cells"]]
@@ -1203,6 +1266,7 @@ def run_patch(here, src, dst, mode="en"):
     # that does not define its own
     base = [n.upper() for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
+    var_cols = variable_widths(vol, cfg["game_dir"], extraop, name_cols)
     fit = mode == "pseudo"
     default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
     # procedures defined only in other files: each number's widest
@@ -1211,7 +1275,7 @@ def run_patch(here, src, dst, mode="en"):
     for oname, opath in _files(vol, cfg["game_dir"]):
         odata = vol.read(opath)
         otoks = av.tokenize(odata, extraop)
-        for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols).items():
+        for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols, var_cols).items():
             if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
                 anywhere[pn] = f
         frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items()
@@ -1222,8 +1286,8 @@ def run_patch(here, src, dst, mode="en"):
         btoks = av.tokenize(bdata, extraop)
         base_nums |= set(procs(bdata, btoks))
         frames_anywhere.update(proc_frames(bdata, btoks))
-        plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols)])
-        start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols))
+        plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols, var_cols)])
+        start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols, var_cols))
     table = (cfg["proc_slot"], cfg["proc_slots"], base_nums) if "proc_slot" in cfg else None
     # a file that ends its messages neither with a procedure nor written
     # out pages with a wait and the game's usual text reset (AA n), which
@@ -1242,6 +1306,15 @@ def run_patch(here, src, dst, mode="en"):
     insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
     variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
     rooms = mec_rooms(vol, cfg["game_dir"], extraop)
+    for name in cfg.get("text_files", []):
+        path = _join(cfg["game_dir"], name)
+        old_file = vol.read(path)
+        new_file = patch_text_file(old_file, [by_ref.get("%s:%d" % (name, n))
+                                              for n in range(len(text_file_lines(old_file)))],
+                                   [ids.get("%s:%d" % (name, n), "%s:%d" % (name, n))
+                                    for n in range(len(text_file_lines(old_file)))], warn)
+        if new_file != old_file:
+            vol.write(path, new_file)
     for name, path in _programs(vol, cfg["game_dir"]):
         exe = vol.read(path)
         runs = program_strings(exe)
@@ -1274,11 +1347,11 @@ def run_patch(here, src, dst, mode="en"):
         def rebuild(texts):
             streams = _streams(data, extraop)
             plain = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, None,
-                                                             name_cols)])
+                                                             name_cols, var_cols)])
             proc = end_proc(data, streams[0][2], plain)
             nums = table[:2] + (set(),) if table and name.upper() in base else table
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
-                                                                    name_cols)])
+                                                                    name_cols, var_cols)])
             frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2])})
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
@@ -1291,7 +1364,7 @@ def run_patch(here, src, dst, mode="en"):
                 for (tag, inner, itoks), (_k, s, e) in zip(streams[1:], crypts):
                     key = _num(new, [t for t in toks if t[2] == s][0][1])
                     effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
-                                                                            name_cols)])
+                                                                            name_cols, var_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
                                            resolve_frames({**frames, **proc_frames(inner, itoks)}), game_break,

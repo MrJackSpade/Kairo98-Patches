@@ -1,0 +1,14 @@
+{
+ "title": "Demon City",
+ "key": "CocktailSoft.zip/Demon City",
+ "image": "Demon City\\Demon City [HD]\\Demon City.hdi",
+ "encoding": "adv98v",
+ "game_dir": "DEMON",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "text_files": [
+  "DAT/OPEN.DAT"
+ ],
+ "boot_steps": "20:shot,4:shot,4:shot,4:shot,8:enter,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

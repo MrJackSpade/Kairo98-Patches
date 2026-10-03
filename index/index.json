@@ -51502,7 +51502,14 @@
      "path": "Demon City\\Demon City [HD]\\Demon City.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/demon_city (patcher working, machine translation in progress)",
+     "url": "../games/demon_city/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17662 (erotic content)",
    "engine": "adv98v",
@@ -51510,7 +51517,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Dengeki Nurse",

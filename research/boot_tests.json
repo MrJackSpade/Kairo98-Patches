@@ -1225,5 +1225,23 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "demon_city": [
+  [
+   "Opening roll (plain text file DAT/OPEN.DAT, scrolled by a module)",
+   "OK: filler lines drawn half-width as they scroll"
+  ],
+  [
+   "Title and chapter card (artwork)",
+   "OK: unchanged"
+  ],
+  [
+   "Prologue scene: speaker tags, a name shown from a variable mid-line, messages",
+   "OK: tag on the first line; the variable's name then the message on the next, wrapped between words with room for the name (it used to break mid-word and draw over it); 3-line pages"
+  ],
+  [
+   "Save/load, later chapters, endings",
+   "not yet seen"
+  ]
  ]
 }

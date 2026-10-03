@@ -644,7 +644,7 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     labels = {"msg": "messages", "item": "menu items", "inline": "name tags (procedure text)",
-              "var": "string variable values", "engine": "program strings"}
+              "var": "string variable values", "engine": "program strings", "file": "text file lines"}
     out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
         "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
     out.append("Translation and the content classification (♥) are done by the translation model; "
@@ -685,6 +685,11 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "would end the script's quoting)." % (
                        "; the hero's default name parts (offered again by the name entry) up to %d letters"
                        % cfg["name_insert"]["cols"] if cfg.get("name_insert") else ""))
+    if "file" in has:
+        out.append("* Text file lines (`t` ids: %s, shown as they are, e.g. the opening roll): each line "
+                   "up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded "
+                   "into a fixed place in memory; longer ones are cut and reported."
+                   % ", ".join("`%s`" % f for f in cfg.get("text_files", [])))
     if "engine" in has:
         out.append("* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer "
                    "ones are cut and reported.")
