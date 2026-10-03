@@ -1147,5 +1147,19 @@
    "Scenes past the opening, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "can_can_bunny_extra": [
+  [
+   "Title and its option window (choices written as text in a framed box)",
+   "OK: filler in the box; a choice goes on"
+  ],
+  [
+   "First scene (speaker tag, message, the game's own symbols inside lines)",
+   "OK: tag on the first line, filler wrapped between words under it, 2-line pages; each page cleared and re-tagged as between the original messages (they used to draw over each other)"
+  ],
+  [
+   "Save/load, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -1,0 +1,9 @@
+{
+ "title": "Can Can Bunny Extra",
+ "key": "CocktailSoft.zip/Can Can Bunny Extra",
+ "image": "Can Can Bunny Extra\\Can Can Bunny Extra [HD]\\Can Can Bunny Extra.hdi",
+ "encoding": "adv98v",
+ "game_dir": "CAN5",
+ "extraop": true,
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+}

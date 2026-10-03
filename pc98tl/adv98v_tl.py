@@ -155,9 +155,10 @@ def units(data, toks, proc_frames=None, frame=None):
 
 
 # commands that only change how text looks or how fast it comes (colour,
-# text speed, a pause, a palette fade) and their number count: between two
+# text speed, a pause, a palette fade, the switch around the game's own
+# symbols) and their number count: between two
 # pieces of text they belong to one message
-EFFECTS = {0xA8: 1, 0xA9: 1, 0xAC: 1, 0xC4: 2}
+EFFECTS = {0xA8: 1, 0xA9: 1, 0xAC: 1, 0xC4: 2, 0xCB: 2}
 
 
 def _effects(data, toks, j):
@@ -314,6 +315,33 @@ def default_wait(vol, game_dir, extraop):
                     n += 1
                 counts[n] += 1
     return WAIT if counts[3] > counts[2] else b""
+
+
+def end_gap(data, toks, us, proc, effects):
+    """What the file writes after a message from its message-end call to
+    the next text, as most often: the call, then the text resets (AA) and
+    the frame or reset procedures that follow it, up to the next name tag,
+    name or other text.  A page break repeats it, so the next page is in
+    the same cleared frame as the next message would be."""
+    seen = collections.Counter()
+    for _i, j, kind, _f in us:
+        if kind != "msg" or j + 1 >= len(toks):
+            continue
+        k, s, _e = toks[j]
+        if not (k == "cmd" and data[s] == 0xBA and bytes(data[s:toks[j + 1][2]]) == proc):
+            continue
+        x = j + 2
+        while x < len(toks):
+            k, s, _e = toks[x]
+            if k == "cmd" and data[s] == 0xAA:
+                x += 2 if x + 1 < len(toks) and toks[x + 1][0] == "num" else 1
+                continue
+            if k == "cmd" and data[s] == 0xBA and x + 1 < len(toks) and toks[x + 1][0] == "num" and                     effects.get(_num(data, toks[x + 1][1]), ("none",))[0] == "reset":
+                x += 2
+                continue
+            break
+        seen[bytes(data[toks[j][1]:toks[x - 1][2]])] += 1
+    return max((c, b) for b, c in seen.items())[1] if seen else proc
 
 
 def inline_end(data, toks, us=None):
@@ -485,7 +513,11 @@ def var_strings(vol, game_dir, extraop, entry_cols):
                 offered.add(inner)
             for a, b in spans:
                 raw = bytes(data[a:b])
-                if not raw.decode("cp932").strip("　 "):
+                try:
+                    text = raw.decode("cp932")
+                except UnicodeDecodeError:
+                    continue            # a PC-98 symbol of its own, not text
+                if not text.strip("　 "):
                     continue
                 room = max(len(raw), entry_cols) if raw in offered else len(raw)
                 if any(bs <= a < be for bs, be in bodies):
@@ -817,7 +849,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     # own message end where it has none
     # (the message-end procedure waits for the key itself, as after every
     # original message: only the build's short pause goes before it)
-    brk = (wait + proc) if proc else inline_end(data, toks, us) or forced_break or fallback
+    brk = (wait + end_gap(data, toks, us, proc, effects or {})) if proc else         inline_end(data, toks, us) or forced_break or fallback
     end = None                          # where the last message replaced ended
     for n, (i, j, kind, frame) in enumerate(us):
         ref = "%s:%s%d" % (name, tag, n)

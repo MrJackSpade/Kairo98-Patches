@@ -799,5 +799,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Can Can Bunny Extra": [
+  {
+   "label": "This repo: games/can_can_bunny_extra (patcher working, machine translation in progress)",
+   "url": "../games/can_can_bunny_extra/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
