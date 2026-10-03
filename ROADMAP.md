@@ -120,3 +120,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Kurutta Kajitsu | adv98v (Adv98V 1.70, floppy set) | extracted | **Ready to translate** | works; floppies laid out on a hard disk, half-width ASCII messages wrapped and paged, full-width menu items | OK (see notes) |
 | Necronomicon | adv98v (Adv98V 1.73) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged | OK (see notes) |
 | Saori - Bishoujo-tachi no Yakata | adv98v (Adv98V 1.70.33) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages paged a line at a time by the key wait, full-width menu items | OK (see notes) |
+| Akiko Gold | adv98v (Adv98V 1.74) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII strings, messages wrapped and paged in the 2-line box (key wait between pages) | OK (see notes) |

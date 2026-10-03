@@ -983,5 +983,23 @@
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "akiko_gold": [
+  [
+   "Setup and start menus",
+   "OK: questions and menu items as filler at their Japanese width"
+  ],
+  [
+   "Opening narration (text typed slowly, several runs a sentence)",
+   "OK: runs continue on the page, wrapped between words to the 70-column box; a page of exactly 70 columns draws whole; pages wait for a click (a timed wait used to turn them by itself)"
+  ],
+  [
+   "Riding scene messages",
+   "OK: filler wrapped to the box"
+  ],
+  [
+   "In-game menus, save/load, later acts, endings",
+   "not yet seen"
+  ]
  ]
 }

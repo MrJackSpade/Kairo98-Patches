@@ -735,5 +735,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Akiko Gold": [
+  {
+   "label": "This repo: games/akiko_gold (patcher working, machine translation in progress)",
+   "url": "../games/akiko_gold/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

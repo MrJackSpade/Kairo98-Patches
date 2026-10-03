@@ -215,6 +215,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
+| Fairytale Red-Zone | Akiko Gold | [This repo: games/akiko_gold (patcher working, machine translation in progress)](../games/akiko_gold/notes.md) |
 | Fairytale Red-Zone | Chiemi | [This repo: games/chiemi (patcher working, machine translation in progress)](../games/chiemi/notes.md) |
 | Fairytale Red-Zone | Jinmon Yuugi | [This repo: games/jinmon_yuugi (patcher working, machine translation in progress)](../games/jinmon_yuugi/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
@@ -2259,7 +2260,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Fairytale Red-Zone (`FairytaleRed-zone.zip`)
 
-- ♥ Akiko Gold [CD FD HD extras] `adv98v`
+- ♥ Akiko Gold [CD FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Akiko Premium Version [FD HD] `adv98v`
 - ♥ Chiemi [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Himitsu Shirei 1919 [FD HD] `adv98v`
