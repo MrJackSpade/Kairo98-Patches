@@ -221,6 +221,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
 | Cocktail Soft | Can Can Bunny Spirits | [This repo: games/can_can_bunny_spirits (patcher working, machine translation in progress)](../games/can_can_bunny_spirits/notes.md) |
 | Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
+| Cocktail Soft | Custom Mate | [This repo: games/custom_mate (patcher working, machine translation in progress)](../games/custom_mate/notes.md) |
 | Cocktail Soft | Custom Mate 3 | [This repo: games/custom_mate_3 (patcher working, machine translation in progress)](../games/custom_mate_3/notes.md) |
 | Cocktail Soft | Demon City | [This repo: games/demon_city (patcher working, machine translation in progress)](../games/demon_city/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
@@ -1566,7 +1567,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Cocktail Soft Zoukangou [FD] `adv98v`
 - ♥ Cocktail Soft Zoukangou 2 [FD HD] `adv98v`
 - ♥ Cosmic Psycho [FD] `adv98v` — *MTL (this repo)*
-- ♥ Custom Mate [FD HD extras] `adv98v`
+- ♥ Custom Mate [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Custom Mate 2 [FD HD extras] `adv98v`
 - ♥ Custom Mate 3 [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Demon City [FD HD extras] `adv98v` — *MTL (this repo)*

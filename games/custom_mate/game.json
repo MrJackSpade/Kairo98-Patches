@@ -1,0 +1,9 @@
+{
+ "title": "Custom Mate",
+ "key": "CocktailSoft.zip/Custom Mate",
+ "image": "Custom Mate\\Custom Mate [HD]\\Custom Mate.hdi",
+ "encoding": "adv98v",
+ "game_dir": "CMSTART",
+ "extraop": true,
+ "boot_steps": "40:shot,1:mouse=0;10,2:lclick,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot,2:up,1:lclick,2:shot"
+}

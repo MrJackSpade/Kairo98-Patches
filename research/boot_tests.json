@@ -1585,5 +1585,27 @@
    "Choosing the date, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "custom_mate": [
+  [
+   "Game-mode menu (name entry, start, new game, text colour)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name entry (the first item)",
+   "Its kana window takes no emulated click or key in the original either; the run picks game start instead"
+  ],
+  [
+   "The opening and its yes/no question",
+   "OK: filler in the box, the two answers under it; Up and click choose"
+  ],
+  [
+   "Customizing the girl (the demon, her questions and the stat panel)",
+   "OK: questions with their menus, the panel's label and value per line cut to their Japanese widths; the dialog box over the bottom box as in the original"
+  ],
+  [
+   "Entering a name, the simulation, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
