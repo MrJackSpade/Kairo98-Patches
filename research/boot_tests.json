@@ -1535,5 +1535,27 @@
    "Entering a name, menus in the scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "night_walker": [
+  [
+   "Text colour question and its menu",
+   "OK: the question pages in its own box (the clear its box was set up with, not the game's panel clear) and the two items under it"
+  ],
+  [
+   "Start menu (opening / day one)",
+   "OK: two filler items at their places"
+  ],
+  [
+   "Opening roll (MES/TEXT.DOC over the night bridge)",
+   "OK: the text file's lines as filler at their byte size"
+  ],
+  [
+   "Day one (the pendant, the hero's monologue, the first meeting)",
+   "OK: filler wrapped between words to the 3-line box; a message that ends with its own key wait and clear pages the same way; pictures and portraits change with the story; the scene's game screen reached"
+  ],
+  [
+   "The investigation's command menus, the staff roll, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

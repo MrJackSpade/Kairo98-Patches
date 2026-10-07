@@ -225432,7 +225432,14 @@
      "path": "Night Walker - Mayonaka no Tantei\\Night Walker - Mayonaka no Tantei [HD]\\Night Walker - Mayonaka no Tantei.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/night_walker (patcher working, machine translation in progress)",
+     "url": "../games/night_walker/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18114 (erotic content)",
    "engine": "adv98v",
@@ -225440,7 +225447,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Volley Ball 2 on 2",

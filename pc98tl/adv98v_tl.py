@@ -1043,6 +1043,31 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                       if t[0] == "num" and x2 and brk[av.tokenize(brk, False)[x2 - 1][1]] == 0xBA]
             if any(isinstance(f2, tuple) and len(f2) == 4 and f2 != tuple(frame) for f2 in set_by):
                 page_brk = brk + b"\xa6" + b"".join(_num_bytes(c) for c in frame)
+        j2 = j
+        while j2 < len(toks) and toks[j2][0] == "cmd" and data[toks[j2][1]] == 0xA5:
+            j2 += 1                     # (line breaks the message ends with)
+        if j2 + 2 < len(toks) and toks[j2][0] == "cmd" and data[toks[j2][1]] == 0xAB \
+                and toks[j2 + 1][0] == "cmd" and data[toks[j2 + 1][1]] == 0xAA and toks[j2 + 2][0] == "num":
+            # the message ends with its own key wait and clear: its pages
+            # end the same way (not with a procedure other messages call)
+            page_brk = bytes(data[toks[j2][1]:toks[j2 + 2][2]])
+        elif page_brk and not proc:
+            # a written-out page end clears the box the way this message's
+            # own box was set up (the nearest AA n before it), not with the
+            # file's or game's most common clear (which may paint a panel)
+            own_aa = None
+            for x2 in range(i - 1, max(-1, i - 64), -1):
+                k2, s2, _e2 = toks[x2]
+                if k2 == "cmd" and data[s2] == 0xAA and x2 + 1 < len(toks) and toks[x2 + 1][0] == "num":
+                    own_aa = bytes(data[s2:toks[x2 + 1][2]])
+                    break
+                if k2 in TEXT or (k2 == "cmd" and data[s2] == 0xA6):
+                    break
+            bt = av.tokenize(page_brk, False)
+            for x2, (k2, s2, _e2) in enumerate(bt):
+                if own_aa and k2 == "cmd" and page_brk[s2] == 0xAA and x2 + 1 < len(bt) and bt[x2 + 1][0] == "num":
+                    page_brk = page_brk[:s2] + own_aa + page_brk[bt[x2 + 1][2]:]
+                    break
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
                          page_brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
                          _waits_after(data, toks, j, proc), marker,

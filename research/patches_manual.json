@@ -979,5 +979,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Tomboy.zip/Night Walker - Mayonaka no Tantei": [
+  {
+   "label": "This repo: games/night_walker (patcher working, machine translation in progress)",
+   "url": "../games/night_walker/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

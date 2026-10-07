@@ -286,6 +286,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
 | Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
+| Tomboy | Night Walker - Mayonaka no Tantei | [This repo: games/night_walker (patcher working, machine translation in progress)](../games/night_walker/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -6525,7 +6526,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Tomboy (`Tomboy.zip`)
 
-- ♥ Night Walker - Mayonaka no Tantei [FD HD] `adv98v`
+- ♥ Night Walker - Mayonaka no Tantei [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Tome (`doujinHomebrew.zip`)
 
