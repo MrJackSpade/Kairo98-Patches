@@ -244,6 +244,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Chiemi | [This repo: games/chiemi (patcher working, machine translation in progress)](../games/chiemi/notes.md) |
 | Fairytale Red-Zone | Jankirou | [This repo: games/jankirou (patcher working, machine translation in progress)](../games/jankirou/notes.md) |
 | Fairytale Red-Zone | Jinmon Yuugi | [This repo: games/jinmon_yuugi (patcher working, machine translation in progress)](../games/jinmon_yuugi/notes.md) |
+| Fairytale Red-Zone | Kanako | [This repo: games/kanako (patcher working, machine translation in progress)](../games/kanako/notes.md) |
 | Fairytale Red-Zone | Miho | [This repo: games/miho (patcher working, machine translation in progress)](../games/miho/notes.md) |
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
@@ -2294,7 +2295,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Himitsu Shirei 1919 [FD HD] `adv98v`
 - ♥ Jankirou [FD] `adv98v` — *MTL (this repo)*
 - ♥ Jinmon Yuugi [CD FD HD extras] `adv98v` — **EN**
-- ♥ Kanako [FD HD] `adv98v`
+- ♥ Kanako [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Manami - Ai to Koukan no Hibi [FD HD] `adv98v`
 - ♥ Miho [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Naomi - Bishoujo-tachi no Yakata [FD HD extras] `adv98v` — *MTL (this repo)*

@@ -83866,7 +83866,14 @@
      "path": "Kanako\\Kanako [HD]\\Kanako.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kanako (patcher working, machine translation in progress)",
+     "url": "../games/kanako/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17778 (erotic content)",
    "engine": "adv98v",
@@ -83874,7 +83881,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Manami - Ai to Koukan no Hibi",

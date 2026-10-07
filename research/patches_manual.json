@@ -963,5 +963,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Kanako": [
+  {
+   "label": "This repo: games/kanako (patcher working, machine translation in progress)",
+   "url": "../games/kanako/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
