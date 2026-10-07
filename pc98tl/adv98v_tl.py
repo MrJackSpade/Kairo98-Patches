@@ -301,10 +301,15 @@ def end_proc(data, toks, effects=None):
 
 def _subdir(vol, game_dir, kind):
     """The game folder's subfolder for scripts or modules ("MES", "TCM"):
-    named so, or ending in "_MES" ("GIBO_MES"); None if there is none."""
-    for e in vol.listdir(_cluster(vol, game_dir)):
-        if e["is_dir"] and (e["name"].upper() == kind or e["name"].upper().endswith("_" + kind)):
-            return _join(game_dir, e["name"])
+    named so, or ending in "_MES" ("GIBO_MES"), or else ending in "MES"
+    ("IREGMES"); None if there is none."""
+    dirs = [e["name"] for e in vol.listdir(_cluster(vol, game_dir)) if e["is_dir"]]
+    for name in dirs:
+        if name.upper() == kind or name.upper().endswith("_" + kind):
+            return _join(game_dir, name)
+    for name in dirs:
+        if name.upper().endswith(kind):
+            return _join(game_dir, name)
     return None
 
 
@@ -429,7 +434,7 @@ def start_script(vol, game_dir, extraop):
         # keep code after its end mark)
         for data in [raw] + [av.decrypt(raw[s:e], _num(raw, [t for t in toks if t[2] == s][0][1]))
                              for k, s, e in toks if k == "crypt"]:
-            m = re.search(rb'"(?:[a-z]:)?\\?(?:(?:\w+_)?mes\\)?([^"\\]+\.mes)"', data, re.I)
+            m = re.search(rb'"(?:[a-z]:)?\\?(?:\w*mes\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
     return "START.MES"
@@ -1224,7 +1229,7 @@ def resolve_effects(layers):
         if reset:
             # (free: what it prints on the text cursor, not a marker
             # placed at a fixed spot with A7)
-            eff[pn] = ("reset", free)
+            eff[pn] = ("reset", free, breaks)
         elif width:
             eff[pn] = ("tag", width) if breaks else ("insert", width)
         elif breaks:
@@ -1334,6 +1339,11 @@ def _gap(data, toks, at, step, proc, insert, effects, clears=False):
             if not kept and (call == proc or (not (insert and call == insert[0])
                                               and effects.get(_call_num(call), ("none",))[0] == "reset")):
                 stop = "reset"
+                eff = effects.get(_call_num(call), ("none",))
+                if step < 0 and call != proc and len(eff) > 2 and eff[2]:
+                    # a reset that then prints a speaker's tag and breaks
+                    # the line: the text after it starts lines down
+                    gap.append(toks[x])
                 break
         gap.append(toks[x])
         x += step
@@ -1378,6 +1388,8 @@ def _layout(data, gap, insert, effects):
                 advance(eff[1], 1)
             elif eff[0] == "break":
                 advance(0, eff[1])
+            elif eff[0] == "reset" and len(eff) > 2 and eff[2]:
+                advance(eff[1], eff[2])
     return lines, cols, need
 
 

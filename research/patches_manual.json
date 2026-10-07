@@ -995,5 +995,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Can Can Bunny Limited 5 1-2": [
+  {
+   "label": "This repo: games/can_can_bunny_limited (patcher working, machine translation in progress)",
+   "url": "../games/can_can_bunny_limited/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

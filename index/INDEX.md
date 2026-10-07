@@ -217,6 +217,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cat's Pro | Cat's Part 1 | [This repo: games/cats_part_1 (patcher working, machine translation in progress)](../games/cats_part_1/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
 | Cocktail Soft | Can Can Bunny Extra | [This repo: games/can_can_bunny_extra (patcher working, machine translation in progress)](../games/can_can_bunny_extra/notes.md) |
+| Cocktail Soft | Can Can Bunny Limited 5 1-2 | [This repo: games/can_can_bunny_limited (patcher working, machine translation in progress)](../games/can_can_bunny_limited/notes.md) |
 | Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
 | Cocktail Soft | Can Can Bunny Spirits | [This repo: games/can_can_bunny_spirits (patcher working, machine translation in progress)](../games/can_can_bunny_spirits/notes.md) |
 | Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
@@ -1558,7 +1559,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Bishoujo Tsuushin - Chat no Susume [FD extras] `adv98v`
 - ♥ Can Can Bunny [FD extras]
 - ♥ Can Can Bunny Extra [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ Can Can Bunny Limited 5 1-2 [FD HD extras] `adv98v`
+- ♥ Can Can Bunny Limited 5 1-2 [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Premiere [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Spirits [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Superior [FD extras]

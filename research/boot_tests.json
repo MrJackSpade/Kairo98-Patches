@@ -1567,5 +1567,23 @@
    "Messages, menus, scenes, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "can_can_bunny_limited": [
+  [
+   "Title menu (two items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Opening (the phone call in the dark)",
+   "OK: the speaker's tag on its line (its procedure clears the box, prints the tag and breaks the line), the message below it, the hero's name and ellipses inline; pages stay inside the 3-line box"
+  ],
+  [
+   "The first scene (Ariko's arrival)",
+   "OK: pictures and messages in the box"
+  ],
+  [
+   "Choosing the date, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
