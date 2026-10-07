@@ -1517,5 +1517,23 @@
    "The verb and noun command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "dennou_tenshi": [
+  [
+   "Title screen (Ange's greeting, the START and name-entry buttons)",
+   "OK: filler in the box, pages waiting for a click; the buttons are drawn in the picture"
+  ],
+  [
+   "Name entry (the second button)",
+   "Reached: its kana grid is drawn in the picture; not driven further"
+  ],
+  [
+   "Opening after START (the street, the girl on the rooftop, the meeting, the title)",
+   "OK: filler wrapped between words to the 2-line box, pages waiting for a click, pictures change with the story"
+  ],
+  [
+   "Entering a name, menus in the scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

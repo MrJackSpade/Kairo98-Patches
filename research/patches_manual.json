@@ -971,5 +971,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "GameTechnopolis.zip/Dennou Tenshi - Digital Ange": [
+  {
+   "label": "This repo: games/dennou_tenshi (patcher working, machine translation in progress)",
+   "url": "../games/dennou_tenshi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -1,0 +1,9 @@
+{
+ "title": "Dennou Tenshi - Digital Ange",
+ "key": "GameTechnopolis.zip/Dennou Tenshi - Digital Ange",
+ "image": "Dennou Tenshi - Digital Ange\\Dennou Tenshi - Digital Ange [HD]\\Dennou Tenshi - Digital Ange.hdi",
+ "encoding": "adv98v",
+ "game_dir": "DENAN",
+ "extraop": true,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,3:shot,1:mouse=-35;-35,1:mouse=-30;-30,1:shot,2:lclick,3:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

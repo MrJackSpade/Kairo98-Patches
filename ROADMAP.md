@@ -147,3 +147,4 @@ DEFINITION_OF_DONE.md for the full checklist.
 | Koroshi no Dress 3 | adv98v (Adv98V 1.70.54) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged, menus in full-width letters (this build draws menus from Shift-JIS only) | OK (see notes) |
 | Yumeji - Asakusa Kitan | adv98v (Adv98V 1.70.52) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged, menus in full-width letters (this build draws menus from Shift-JIS only) | OK (see notes) |
 | Kanako | adv98v (Adv98V 1.75.63) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 2-line box, menus at their places | OK (see notes) |
+| Dennou Tenshi - Digital Ange | adv98v (Adv98V 1.71.57) | extracted | **Ready to translate** | works; hard-disk image, half-width ASCII messages wrapped and paged in the 2-line box, menus at their places | OK (see notes) |
