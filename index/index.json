@@ -51980,7 +51980,14 @@
      "path": "Dora Dora Emotion - Seihaiden\\Dora Dora Emotion - Seihaiden [HD]\\Dora Dora Emotion - Seihaiden.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dora_dora_emotion (patcher working, machine translation in progress)",
+     "url": "../games/dora_dora_emotion/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17677 (erotic content)",
    "engine": "adv98v",
@@ -51988,7 +51995,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Erotic Baka Novel - Denwa no Bell ga",

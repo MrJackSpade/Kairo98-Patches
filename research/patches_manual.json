@@ -1011,5 +1011,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Dora Dora Emotion - Seihaiden": [
+  {
+   "label": "This repo: games/dora_dora_emotion (patcher working, machine translation in progress)",
+   "url": "../games/dora_dora_emotion/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

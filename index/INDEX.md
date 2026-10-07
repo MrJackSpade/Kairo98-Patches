@@ -225,6 +225,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Custom Mate 3 | [This repo: games/custom_mate_3 (patcher working, machine translation in progress)](../games/custom_mate_3/notes.md) |
 | Cocktail Soft | Demon City | [This repo: games/demon_city (patcher working, machine translation in progress)](../games/demon_city/notes.md) |
 | Cocktail Soft | Doki Doki Vacation | [This repo: games/doki_doki_vacation (patcher working, machine translation in progress)](../games/doki_doki_vacation/notes.md) |
+| Cocktail Soft | Dora Dora Emotion - Seihaiden | [This repo: games/dora_dora_emotion (patcher working, machine translation in progress)](../games/dora_dora_emotion/notes.md) |
 | Cocktail Soft | Hare Nochi Munasawagi! | [This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)](../games/hare_nochi_munasawagi/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
@@ -1574,7 +1575,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Dengeki Nurse [FD HD] `adv98v` — **EN**
 - ♥ Dengeki Nurse 2 - More Sexy [FD HD extras] `adv98v`
 - ♥ Doki Doki Vacation [FD] `adv98v` — *MTL (this repo)*
-- ♥ Dora Dora Emotion - Seihaiden [FD HD] `adv98v`
+- ♥ Dora Dora Emotion - Seihaiden [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Erotic Baka Novel - Denwa no Bell ga [FD HD] `adv98v`
 - ♥ Erotic Baka Novel Series 2 - Itsuka Dokoka de [FD HD] `adv98v`
 - ♥ Halfmoon ni Kawaru made [FD HD] `adv98v`
