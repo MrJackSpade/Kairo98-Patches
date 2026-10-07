@@ -1019,5 +1019,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/True Heart": [
+  {
+   "label": "This repo: games/true_heart (patcher working, machine translation in progress)",
+   "url": "../games/true_heart/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

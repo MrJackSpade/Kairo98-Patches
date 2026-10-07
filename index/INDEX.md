@@ -231,6 +231,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
+| Cocktail Soft | True Heart | [This repo: games/true_heart (patcher working, machine translation in progress)](../games/true_heart/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Dez Climax | Injuu Gakuen - La Blue Girl | [This repo: games/la_blue_girl (patcher working, machine translation in progress)](../games/la_blue_girl/notes.md) |
 | Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
@@ -1596,7 +1597,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Sekai de Ichiban Kimi ga Suki! [FD]
 - ♥ Sotsugyou Shashin - Photograph [FD extras]
 - ♥ Travel Junction [FD HD extras] `adv98v` — *MTL (this repo)*
-- ♥ True Heart [FD HD extras] `adv98v`
+- ♥ True Heart [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Will no Dengon [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Cocktail Soft FMC (`CocktailSoftFmc.zip`)

@@ -1621,5 +1621,19 @@
    "The map, the mahjong matches, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "true_heart": [
+  [
+   "Title menu (name, start, continue, CG mode)",
+   "Its items are drawn in the picture; start chosen with a click"
+  ],
+  [
+   "Opening scene (the prince)",
+   "OK: speaker tags (cut to their procedure's room) on their line, filler wrapped between words below, pages waiting for a click within the 2-line box"
+  ],
+  [
+   "The name entry, command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

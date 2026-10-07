@@ -1,0 +1,12 @@
+{
+ "title": "True Heart",
+ "key": "CocktailSoft.zip/True Heart",
+ "image": "True Heart\\True Heart [HD]\\True Heart.hdi",
+ "encoding": "adv98v",
+ "game_dir": "TRUE",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}
