@@ -987,5 +987,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CatsPro.zip/Cat's Part 1": [
+  {
+   "label": "This repo: games/cats_part_1 (patcher working, machine translation in progress)",
+   "url": "../games/cats_part_1/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

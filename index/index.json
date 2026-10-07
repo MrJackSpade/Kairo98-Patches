@@ -47969,7 +47969,14 @@
      "path": "Cat's Part 1\\Cat's Part 1 [HD]\\Cat's Part 1.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cats_part_1 (patcher working, machine translation in progress)",
+     "url": "../games/cats_part_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17515 (erotic content)",
    "engine": "adv98v",
@@ -47977,7 +47984,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CatsPro.zip/Feti (Fetish)",

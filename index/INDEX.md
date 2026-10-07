@@ -214,6 +214,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Super D.P.S (Dream Program System) | [This repo: games/super_dps (patcher working, machine translation in progress)](../games/super_dps/notes.md) |
 | Alice Soft | Toushin Toshi II - Soshite, Sorekara | [This repo: games/toushin_toshi_2_sp (patcher working, machine translation in progress)](../games/toushin_toshi_2_sp/notes.md) |
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
+| Cat's Pro | Cat's Part 1 | [This repo: games/cats_part_1 (patcher working, machine translation in progress)](../games/cats_part_1/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
 | Cocktail Soft | Can Can Bunny Extra | [This repo: games/can_can_bunny_extra (patcher working, machine translation in progress)](../games/can_can_bunny_extra/notes.md) |
 | Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
@@ -1453,7 +1454,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Cat's Pro (`CatsPro.zip`)
 
-- ♥ Cat's Part 1 [FD HD extras] `adv98v`
+- ♥ Cat's Part 1 [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Feti (Fetish) [FD HD]
 - ♥ Heart Heat Girls (HHG) [FD HD]
 - ♥ Ikenie - Kyouraku no Shinden [FD HD]

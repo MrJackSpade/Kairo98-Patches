@@ -9,6 +9,7 @@ param(
     [Parameter(Mandatory)] [string]$Out,
     [string]$Steps = "25:shot",
     [string]$Dip = "",   # DIP switch bytes, e.g. "3e f3 7b" (np21w DIPswtch)
+    [string]$ClkMult = "",   # CPU clock multiplier (np21w clk_mult; empty: the emulator's default)
     [string]$Exe = "E:\PC98work\emu\bin\np21x64w.exe"
 )
 $ErrorActionPreference = "Stop"
@@ -35,10 +36,10 @@ foreach ($f in @($Fd1, $Fd2)) {
 $ini = Join-Path $work "np21.ini"
 $base = Join-Path $bin "np21x64w.ini"
 $lines = @()
-if (Test-Path $base) { $lines = Get-Content $base | Where-Object { $_ -notmatch '^(HDD1FILE|IDE1TYPE|WindposX|WindposY|DIPswtch)=' } }
+if (Test-Path $base) { $lines = Get-Content $base | Where-Object { $_ -notmatch '^(HDD1FILE|IDE1TYPE|WindposX|WindposY|DIPswtch|clk_mult)=' } }
 if (-not ($lines -match '^\[NekoProject21\]')) { $lines = @("[NekoProject21]") + $lines }
 $out2 = @()
-foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100"; if ($Dip) { $out2 += "DIPswtch=$Dip" } } }
+foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100"; if ($Dip) { $out2 += "DIPswtch=$Dip" }; if ($ClkMult) { $out2 += "clk_mult=$ClkMult" } } }
 Set-Content $ini $out2
 $argv = @("-i$ini") + ($fds | ForEach-Object { '"' + $_ + '"' })
 $started = Get-Date

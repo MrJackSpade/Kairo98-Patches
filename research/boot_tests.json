@@ -1557,5 +1557,15 @@
    "The investigation's command menus, the staff roll, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "cats_part_1": [
+  [
+   "Title picture",
+   "Blocked: the game stops on the title in np21w in the original as well: the collection's hard-disk install (in PART1, where the root-relative script paths fail), the floppy set laid out at the root, the original floppies booted as they are, and the CPU slowed to 9.8 MHz all stay on it for six minutes with keys and clicks. The title's timed wait (AC 320 0) never ends; with it left out in a test image the next timed wait stops on the logo, and the scripts use that wait 186 times"
+  ],
+  [
+   "Messages, menus, scenes, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }
