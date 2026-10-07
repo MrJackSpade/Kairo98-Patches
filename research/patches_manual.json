@@ -955,5 +955,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Yumeji - Asakusa Kitan": [
+  {
+   "label": "This repo: games/yumeji (patcher working, machine translation in progress)",
+   "url": "../games/yumeji/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

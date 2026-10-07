@@ -82751,7 +82751,14 @@
      "path": "Yumeji - Asakusa Kitan\\Yumeji - Asakusa Kitan [HD]\\Yumeji - Asakusa Kitan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yumeji (patcher working, machine translation in progress)",
+     "url": "../games/yumeji/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18359 (erotic content)",
    "engine": "adv98v",
@@ -82759,7 +82766,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleHardcover.zip/Ballade for Maria (Maria ni Sasageru Ballade)",

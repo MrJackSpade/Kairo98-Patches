@@ -423,7 +423,12 @@ def start_script(vol, game_dir, extraop):
     for ini in inis:
         # (every build's INI has its encrypted tail after D5, which the
         # scripts of the earliest builds otherwise never use)
-        for _tag, data, _toks in _streams(vol.read(ini), True):
+        raw = vol.read(ini)
+        toks = av.tokenize(raw, True)
+        # (the decrypted tail is only searched, not tokenized: some builds
+        # keep code after its end mark)
+        for data in [raw] + [av.decrypt(raw[s:e], _num(raw, [t for t in toks if t[2] == s][0][1]))
+                             for k, s, e in toks if k == "crypt"]:
             m = re.search(rb'"(?:[a-z]:)?\\?(?:(?:\w+_)?mes\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
@@ -788,6 +793,15 @@ def _fullwidth(text, cells):
     return (out if cells is None else out[:cells].ljust(cells, "　")).encode("cp932")
 
 
+def _num_bytes(n):
+    """A number in the script's encoding (adv98v._num reads it)."""
+    if n <= 4:
+        return bytes([0x23 + n])
+    if n < 256:
+        return bytes([0x28, n])
+    return bytes([0x29 + n // 0x4000, n % 0x4000 // 0x80, n % 0x80])
+
+
 def _encode(text):
     """A line as a 21 string: ASCII as it is, {Uxxxx} as those SJIS bytes,
     anything else as SJIS.  For ADVH (ENGINE["advh"]) the letters are its
@@ -999,7 +1013,9 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         # and its Japanese line count (the menu may sit on the frame's next
         # line; longer English pages first)
         narrow = _line_cols(data, toks, i, j) if _menu_follows(data, toks, j) else None
-        lines = 1 + sum(1 for k, s2, _e in toks[i:j] if k == "cmd" and data[s2] == 0xA5) if narrow else None
+        # (its Japanese line count from the line it starts on)
+        lines = start[0] + 1 + sum(1 for k, s2, _e in toks[i:j] if k == "cmd" and data[s2] == 0xA5) \
+            if narrow else None
         if n + 1 < len(us) and starts[n + 1][0] and frame and kind == "msg":
             # text placed next on this page (A7) at a line of the frame:
             # this message keeps above that line (pages sooner if need be)
@@ -1019,8 +1035,16 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                 start = ((y - frame[1]) // ENGINE["line_h"], x - frame[0])
             else:
                 bkind = "label"
+        # a page break whose procedure sets another frame (the file's usual
+        # message end, from a full-screen scene) goes on in this message's
+        page_brk = brk
+        if brk and frame and len(frame) == 4 and frames:
+            set_by = [frames.get(_num(brk, t[1])) for x2, t in enumerate(av.tokenize(brk, False))
+                      if t[0] == "num" and x2 and brk[av.tokenize(brk, False)[x2 - 1][1]] == 0xBA]
+            if any(isinstance(f2, tuple) and len(f2) == 4 and f2 != tuple(frame) for f2 in set_by):
+                page_brk = brk + b"\xa6" + b"".join(_num_bytes(c) for c in frame)
         new, end = build(text, bkind, frame, unit_cells(data, toks, i, j),
-                         brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
+                         page_brk, warn, ids.get(ref, ref), start, reserve, down, narrow, lines, fullwidth,
                          _waits_after(data, toks, j, proc), marker,
                          item_budget(e - s) if tight else None)
         if end is None and bkind == "label" and located and frame and located[0] is not None \

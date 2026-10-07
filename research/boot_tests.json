@@ -1481,5 +1481,23 @@
    "The investigation's command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "yumeji": [
+  [
+   "Sound-board setup (its question and three-item menu)",
+   "OK: full-width filler items at their places; the question keeps to its Japanese lines in the setup box and pages inside that box (the file's message end sets a full-screen frame, so the page break sets the box again)"
+  ],
+  [
+   "Opening (Asakusa, the title picture)",
+   "OK: filler on the title picture, pages waiting for a click"
+  ],
+  [
+   "The gallery scene (the first scene)",
+   "OK: filler wrapped between words over two lines, pages waiting for a click as the story goes on"
+  ],
+  [
+   "The scene menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
