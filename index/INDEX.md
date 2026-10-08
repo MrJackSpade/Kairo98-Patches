@@ -240,6 +240,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
 | Fairytale | Koroshi no Dress 3 | [This repo: games/koroshi_no_dress_3 (patcher working, machine translation in progress)](../games/koroshi_no_dress_3/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
+| Fairytale | Lipstick Adventure 3 | [This repo: games/lipstick_adventure_3 (patcher working, machine translation in progress)](../games/lipstick_adventure_3/notes.md) |
 | Fairytale | Marine Philt | [This repo: games/marine_philt (patcher working, machine translation in progress)](../games/marine_philt/notes.md) |
 | Fairytale | Shinjuku Monogatari | [This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)](../games/shinjuku_monogatari/notes.md) |
 | Fairytale | Virtuacall | [This repo: games/virtuacall (patcher working, machine translation in progress)](../games/virtuacall/notes.md) |
@@ -2275,7 +2276,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Lipstick #1 - Lolita-hen [FD]
 - ♥ Lipstick Adventure [FD extras]
 - ♥ Lipstick Adventure 2 [FD]
-- ♥ Lipstick Adventure 3 [FD HD extras] `adv98v`
+- ♥ Lipstick Adventure 3 [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Mai [FD HD] `adv98v`
 - ♥ Marine Philt [FD HD] `adv98v` — **EN**
 - ♥ Moon Gate [FD HD extras]

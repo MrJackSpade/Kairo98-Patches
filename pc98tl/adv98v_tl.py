@@ -64,7 +64,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             break between pages where a file has no message end of its
             own, in place of a key wait and the game's text reset: the
             oldest engines' and ADVH's 81 90, a key wait that clears the
-            box), "keep_flag" (hex of the register set a script puts right
+            box), "script_room" (bytes the engine's script buffer holds,
+            read off its memory: from where a script is loaded to the
+            procedure table after it; a script that would outgrow it is
+            refused), "keep_flag" (hex of the register set a script puts right
             before the message-end procedure where the next text goes on
             on the same page: the procedure waits for the key and skips
             its reset), "proc_fullwidth" (an engine that hangs on an ASCII
@@ -1037,6 +1040,12 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         bkind = kind
         if located and kind == "inline":
             bkind = "label"         # a marker placed by a procedure (the wait arrow)
+        if kind == "inline" and any(bs <= s < be and any(k2 == "cmd" and data[s2] == 0xA6 and s2 >= toks[j - 1][2]
+                                                          and s2 < be for k2, s2, _e2 in toks[j:j + 8])
+                                    for _pn, bs, be in every):
+            # procedure text the procedure then sets a frame after (a
+            # quote mark before the message's frame): it keeps its width
+            bkind = "label"
         if located and kind == "msg":
             # placed text: a label at its Japanese width, or, with lines
             # of its own, a message starting where it is placed
@@ -1573,11 +1582,16 @@ def run_patch(here, src, dst, mode="en"):
 
         new = rebuild(by_ref)
         room = rooms.get(name.upper())
+        where = "its place in the engine's MEC buffer"
+        if not room and cfg.get("script_room"):
+            # a script is run from the engine's script buffer, which ends
+            # where the procedure table starts
+            room, where = cfg["script_room"], "the engine's script buffer"
         if room and len(new) > room:
             mine = sorted({ids[r] for r in by_ref if r.startswith(name + ":")})
             if not fit:
-                raise SystemExit("%s: %d bytes with the English, its place in the engine's MEC buffer holds %d "
-                                 "(strings %s); shorten them" % (name, len(new), room, ", ".join(mine)))
+                raise SystemExit("%s: %d bytes with the English, %s holds %d "
+                                 "(strings %s); shorten them" % (name, len(new), where, room, ", ".join(mine)))
             # the --pseudo filler: this file's texts cut until it fits
             for scale in (0.8, 0.6, 0.45, 0.3, 0.2, 0.1, 0):
                 texts = {r: t for r, t in by_ref.items() if not r.startswith(name + ":")}

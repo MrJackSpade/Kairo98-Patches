@@ -664,6 +664,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("* Where the script marks a message end to keep the page (a register set before the "
                    "message-end call), the next message goes on from where the last one ended, on the "
                    "same line: end the first with a space if one should come between them.")
+    if cfg.get("script_room"):
+        out.append("* A script runs from the engine's script buffer, which holds %d bytes (read off its "
+                   "memory): a file that would outgrow it with the English is refused and named, so keep "
+                   "the longest scripts' English about as long as the Japanese." % cfg["script_room"])
     if cfg.get("proc_fullwidth"):
         out.append("* This engine hangs on an ASCII string inside a procedure, so text kept in procedures "
                    "(the speakers' name tags, `n` ids) is written in full-width letters, each two columns "

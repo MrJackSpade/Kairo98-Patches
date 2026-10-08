@@ -1667,5 +1667,23 @@
    "The other commands, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "lipstick_adventure_3": [
+  [
+   "Title menu and the wedding opening",
+   "OK: filler items, the opening's lines and credits"
+  ],
+  [
+   "Goro's office (the first scene)",
+   "OK: speaker tags and their opening quote mark at their Japanese width, the message after them wrapped between words, pages waiting for a click; the command bar (artwork)"
+  ],
+  [
+   "The script buffer",
+   "A full-length filler build of LP1_01A.MES (21632 bytes) ran past the engine's 17744-byte script buffer into the procedure table and the game went black after the title; the build now holds each script to the buffer (the --pseudo filler is cut to fit, an English build that outgrows it is refused)"
+  ],
+  [
+   "The commands (look, talk, think, use, move), saving and loading, later chapters, endings",
+   "not yet seen"
+  ]
  ]
 }
