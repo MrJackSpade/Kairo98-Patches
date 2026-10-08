@@ -592,6 +592,13 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     has = {e["kind"] for e in strings}
+    display = ADV98V_DISPLAY if cfg.get("engine") != "advh" else ADV98V_DISPLAY.replace(
+        "* The engine draws ASCII strings (`21 ... 00`) half-width itself, so English\n"
+        "  is written as ASCII strings in place of the Japanese text runs; the\n"
+        "  scripts are rebuilt with them (no offset table refers into a script).",
+        "* English letters are written as `85 xx` in place of the Japanese text runs\n"
+        "  (see the engine note above); the scripts are rebuilt with them (no offset\n"
+        "  table refers into a script).")
     names = any(r.startswith("TCM/NAMEWIND") for e in strings for r in e["refs"])
     out += ["", "## Engine", "",
             "ides' Adv98V script engine (%s), %s: %d scripts with text (`MES/*.MES`, "
@@ -603,10 +610,12 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                                          "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "")
             + (("  The procedure table holds %d slots of %d bytes (read off the engine's memory)."
                 % (cfg["proc_slots"], cfg["proc_slot"])) if "proc_slot" in cfg else
-               "  No procedure holds text, so no procedure grows."),
-            "", ADV98V_DISPLAY]
+               ("  The procedure table was not measured, so a procedure may not grow: text in a procedure "
+                "(`n` ids) keeps its Japanese byte length." if "inline" in has else
+                "  No procedure holds text, so no procedure grows.")),
+            "", display]
     if cfg.get("engine") == "advh":
-        out[out.index(ADV98V_DISPLAY):out.index(ADV98V_DISPLAY)] = [
+        out[out.index(display):out.index(display)] = [
             "This is ADVH, the engine before Adv98V (`ADVH.EXE`, run by `ADVSHELL.COM`): the same "
             "bytecode, but no ASCII string command, and every character drawn as a 16x16 glyph.  The "
             "patch adds half-width letters to the program (`pc98tl/advh.py`): each English letter is "
@@ -616,7 +625,7 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which "
             "clears the box: a message longer than the box goes on after a key on a fresh page.", ""]
     if cfg.get("hdd"):
-        out[out.index(ADV98V_DISPLAY):out.index(ADV98V_DISPLAY)] = [
+        out[out.index(display):out.index(display)] = [
             ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "
              if cfg["game_dir"] == "JANKI" else "") +
             "The floppies have no room for a longer script, so the patch lays the game out on a DOS "

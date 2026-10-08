@@ -15,9 +15,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
-* The engine draws ASCII strings (`21 ... 00`) half-width itself, so English
-  is written as ASCII strings in place of the Japanese text runs; the
-  scripts are rebuilt with them (no offset table refers into a script).
+* English letters are written as `85 xx` in place of the Japanese text runs
+  (see the engine note above); the scripts are rebuilt with them (no offset
+  table refers into a script).
 * The engine wraps at the text frame's right edge even inside a word, and
   does not scroll (a fourth line of a 3-line frame draws over the first).
   So messages are broken between words to the frame's width (`A6` gives it

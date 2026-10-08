@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`/`), on 3 floppies: 164 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (at the disk's root), on 3 floppies: 164 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
 
 This is ADVH, the engine before Adv98V (`ADVH.EXE`, run by `ADVSHELL.COM`): the same bytecode, but no ASCII string command, and every character drawn as a 16x16 glyph.  The patch adds half-width letters to the program (`pc98tl/advh.py`): each English letter is written as `85 xx` (xx its ASCII code), which the program draws from the BIOS's 8x16 font one column wide and steps the cursor one column on; the program is unpacked, patched and packed again with its own EXEPACK unpacker.  Its disk-change command (wait for disk X in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which clears the box: a message longer than the box goes on after a key on a fresh page.
 
@@ -15,9 +15,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
-* The engine draws ASCII strings (`21 ... 00`) half-width itself, so English
-  is written as ASCII strings in place of the Japanese text runs; the
-  scripts are rebuilt with them (no offset table refers into a script).
+* English letters are written as `85 xx` in place of the Japanese text runs
+  (see the engine note above); the scripts are rebuilt with them (no offset
+  table refers into a script).
 * The engine wraps at the text frame's right edge even inside a word, and
   does not scroll (a fourth line of a 3-line frame draws over the first).
   So messages are broken between words to the frame's width (`A6` gives it
