@@ -2281,5 +2281,23 @@
    "The magazine's menu and its other programs",
    "not yet seen"
   ]
+ ],
+ "denwa_no_bell": [
+  [
+   "Title menu",
+   "OK: filler items at their places, picked with a click"
+  ],
+  [
+   "The opening (the room, the morning)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click and clearing the box"
+  ],
+  [
+   "The first choice menu",
+   "OK: filler items at their places beside the picture"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

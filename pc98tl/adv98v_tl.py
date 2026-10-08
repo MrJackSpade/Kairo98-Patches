@@ -66,7 +66,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
-            cannot pass), "default_frame" (the message box
+            cannot pass), "proc_frames" ({procedure: [frame]}: the text
+            frame a procedure leaves in force where its body chooses by a
+            flag between frames, the one its messages are shown in),
+            "default_frame" (the message box
             the startup script sets, in force where a script sets none),
             "wait" (hex of the pause put before the message-end
             procedure; see default_wait), "marker_cols" (columns at the
@@ -1752,6 +1755,8 @@ def run_patch(here, src, dst, mode="en"):
     ENGINE["var_cols"], ENGINE["name_cols"] = var_cols, name_cols
     fit = mode == "pseudo"
     default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
+    # (a procedure's text frame where its body picks one by a flag the reading cannot follow)
+    proc_frame_fix = {int(pn): tuple(f) for pn, f in cfg.get("proc_frames", {}).items()}
     # procedures defined only in other files: each number's widest
     # definition anywhere, under the base scripts'
     anywhere, frames_anywhere = {}, {}
@@ -1874,7 +1879,7 @@ def run_patch(here, src, dst, mode="en"):
             nums = table[:2] + (set(),) if table and name.upper() in base else table
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
                                                                     name_cols, var_cols)])
-            frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2])})
+            frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2]), **proc_frame_fix})
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
                                cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
@@ -1889,7 +1894,8 @@ def run_patch(here, src, dst, mode="en"):
                                                                             name_cols, var_cols)])
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
                                            end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
-                                           resolve_frames({**frames, **proc_frames(inner, itoks)}), game_break,
+                                           resolve_frames({**frames, **proc_frames(inner, itoks), **proc_frame_fix}),
+                                           game_break,
                                            cfg.get("menu_fullwidth", False), default_frame, wait,
                                            cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
                     out += new[pos:s] + av.encrypt(rebuilt, key)

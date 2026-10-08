@@ -52124,7 +52124,14 @@
      "path": "Erotic Baka Novel - Denwa no Bell ga\\Erotic Baka Novel - Denwa no Bell ga... [HD]\\Erotic Baka Novel - Denwa no Bell ga....hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/denwa_no_bell (patcher working, machine translation in progress)",
+     "url": "../games/denwa_no_bell/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52132,7 +52139,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Erotic Baka Novel Series 2 - Itsuka Dokoka de",
