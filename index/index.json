@@ -82728,7 +82728,14 @@
      "path": "XIX!\\XIX! [FD]\\XIX! (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/xix (patcher working, machine translation in progress)",
+     "url": "../games/xix/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40508 (erotic content)",
    "engine": "adv98v",
@@ -82736,7 +82743,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Yumeji - Asakusa Kitan",

@@ -1056,5 +1056,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/XIX!": [
+  {
+   "label": "This repo: games/xix (patcher working, machine translation in progress)",
+   "url": "../games/xix/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

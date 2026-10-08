@@ -1685,5 +1685,27 @@
    "The commands (look, talk, think, use, move), saving and loading, later chapters, endings",
    "not yet seen"
   ]
+ ],
+ "xix": [
+  [
+   "Start menu (four items)",
+   "OK: full-width filler items at their places; with ASCII items choosing one ended the engine ('ﾓﾄﾞｯﾁｬｯﾀ'), as in the oldest builds"
+  ],
+  [
+   "Opening (the desert, the crystal ball) and the title",
+   "OK: filler messages under the pictures, pages waiting for a key"
+  ],
+  [
+   "The first scene (the girl from the crystal by the fire)",
+   "OK: filler wrapped between words, pages waiting for a key"
+  ],
+  [
+   "Hard-disk layout",
+   "Not used: AdvBIOS prints 'cannot run on this machine' under the hard disk's DOS, so the patch writes the game's own boot floppy"
+  ],
+  [
+   "Menus in scenes, the dungeon map, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

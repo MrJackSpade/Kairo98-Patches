@@ -245,6 +245,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale | Shinjuku Monogatari | [This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)](../games/shinjuku_monogatari/notes.md) |
 | Fairytale | Virtuacall | [This repo: games/virtuacall (patcher working, machine translation in progress)](../games/virtuacall/notes.md) |
 | Fairytale | Virtuacall 2 | [This repo: games/virtuacall_2 (patcher working, machine translation in progress)](../games/virtuacall_2/notes.md) |
+| Fairytale | XIX! | [This repo: games/xix (patcher working, machine translation in progress)](../games/xix/notes.md) |
 | Fairytale | Yumeji - Asakusa Kitan | [This repo: games/yumeji (patcher working, machine translation in progress)](../games/yumeji/notes.md) |
 | Fairytale Hardcover | Necronomicon | [This repo: games/necronomicon (patcher working, machine translation in progress)](../games/necronomicon/notes.md) |
 | Fairytale Red-Zone | Akiko Gold | [This repo: games/akiko_gold (patcher working, machine translation in progress)](../games/akiko_gold/notes.md) |
@@ -2290,7 +2291,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Virtuacall 2 [CD FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Watashi o Golf ni Tsuretette [FD] `adv98v`
 - ♥ X-na [FD extras]
-- ♥ XIX! [FD extras] `adv98v`
+- ♥ XIX! [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Yumeji - Asakusa Kitan [FD HD extras] `adv98v` — *MTL (this repo)*
 
 ### Fairytale Hardcover (`FairytaleHardcover.zip`)
