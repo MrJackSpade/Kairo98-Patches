@@ -31,9 +31,9 @@ ides' Adv98V script engine (`YUGI/`), on a hard-disk image: 113 scripts with tex
 
 ## Script
 
-4520 strings (4354 messages, 115 menu items, 4 name tags (procedure text), 46 text file lines, 1 program strings).
+4522 strings (4354 messages, 115 menu items, 4 name tags (procedure text), 46 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4520 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4522 strings have English so far.
 
 ## Limits
 

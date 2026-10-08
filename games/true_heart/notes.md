@@ -31,9 +31,9 @@ ides' Adv98V script engine (`TRUE/`), on a hard-disk image: 106 scripts with tex
 
 ## Script
 
-6384 strings (6222 messages, 80 name tags (procedure text), 13 menu items, 68 string variable values, 1 program strings).
+6386 strings (6222 messages, 80 name tags (procedure text), 13 menu items, 68 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6384 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6386 strings have English so far.
 
 ## Limits
 

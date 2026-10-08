@@ -508,7 +508,7 @@ def start_script(vol, game_dir, extraop):
         # keep code after its end mark)
         for data in [raw] + [av.decrypt(raw[s:e], _num(raw, [t for t in toks if t[2] == s][0][1]))
                              for k, s, e in toks if k == "crypt"]:
-            m = re.search(rb'"(?:[a-z]:)?\\?(?:\w*mes\\)?([^"\\]+\.mes)"', data, re.I)
+            m = re.search(rb'"(?:[a-z]:)?\\?(?:\w*mes\w*\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
     return "START.MES"

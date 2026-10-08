@@ -31,9 +31,9 @@ ides' Adv98V script engine (`GIBO/`), on a hard-disk image: 62 scripts with text
 
 ## Script
 
-7459 strings (7025 messages, 387 menu items, 6 name tags (procedure text), 1 string variable values, 25 text file lines, 15 program strings).
+7461 strings (7025 messages, 387 menu items, 6 name tags (procedure text), 1 string variable values, 25 text file lines, 17 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 7459 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 7461 strings have English so far.
 
 ## Limits
 

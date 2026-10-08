@@ -70093,6 +70093,26 @@
     "TOM.COM:0100"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "TOM.COM:0187"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "TOM.COM:01b7"
+   ],
+   "max_cells": 21
   }
  ]
 }

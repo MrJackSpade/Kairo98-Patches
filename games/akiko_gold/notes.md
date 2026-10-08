@@ -29,9 +29,9 @@ ides' Adv98V script engine (`GOLD/`), on a hard-disk image: 90 scripts with text
 
 ## Script
 
-11552 strings (11077 messages, 445 menu items, 29 text file lines, 1 program strings).
+11554 strings (11077 messages, 445 menu items, 29 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 11552 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 11554 strings have English so far.
 
 ## Limits
 

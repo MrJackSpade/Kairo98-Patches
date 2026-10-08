@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-02 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`NECRO/`), on a hard-disk image: 207 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (`NECRO/`), on a hard-disk image: 207 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -30,9 +30,9 @@ ides' Adv98V script engine (`NECRO/`), on a hard-disk image: 207 scripts with te
 
 ## Script
 
-10125 strings (10032 messages, 91 menu items, 1 name tags (procedure text), 1 program strings).
+10127 strings (10032 messages, 91 menu items, 1 name tags (procedure text), 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10125 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 10127 strings have English so far.
 
 ## Limits
 

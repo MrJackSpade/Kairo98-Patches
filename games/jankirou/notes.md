@@ -33,9 +33,9 @@ This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of i
 
 ## Script
 
-5327 strings (5210 messages, 70 menu items, 45 name tags (procedure text), 1 string variable values, 1 program strings).
+5329 strings (5210 messages, 70 menu items, 45 name tags (procedure text), 1 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 5327 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 5329 strings have English so far.
 
 ## Limits
 

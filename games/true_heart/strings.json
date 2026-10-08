@@ -66532,6 +66532,26 @@
     "TRUE.COM:00ff"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "TRUE.COM:0186"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "TRUE.COM:01b6"
+   ],
+   "max_cells": 21
   }
  ]
 }

@@ -83896,6 +83896,26 @@
     "LIP3.COM:0102"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "LIP3.COM:0189"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "LIP3.COM:01b9"
+   ],
+   "max_cells": 21
   }
  ]
 }

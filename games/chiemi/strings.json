@@ -62083,6 +62083,26 @@
     "CHIEMI.COM:0103"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "CHIEMI.COM:018a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "CHIEMI.COM:01ba"
+   ],
+   "max_cells": 21
   }
  ]
 }

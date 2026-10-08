@@ -49871,6 +49871,26 @@
     "MAYUMI.COM:00f4"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "MAYUMI.COM:017b"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "MAYUMI.COM:01ab"
+   ],
+   "max_cells": 21
   }
  ]
 }

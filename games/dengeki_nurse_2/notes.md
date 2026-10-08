@@ -31,9 +31,9 @@ ides' Adv98V script engine (`N2/`), on a hard-disk image: 168 scripts with text 
 
 ## Script
 
-10789 strings (10543 messages, 39 name tags (procedure text), 4 menu items, 203 program strings).
+11388 strings (10543 messages, 39 name tags (procedure text), 4 menu items, 802 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10789 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 11388 strings have English so far.
 
 ## Limits
 

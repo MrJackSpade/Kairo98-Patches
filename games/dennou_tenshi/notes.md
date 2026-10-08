@@ -29,9 +29,9 @@ ides' Adv98V script engine (`DENAN/`), on a hard-disk image: 106 scripts with te
 
 ## Script
 
-1891 strings (1754 messages, 58 menu items, 1 string variable values, 77 text file lines, 1 program strings).
+1893 strings (1754 messages, 58 menu items, 1 string variable values, 77 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 1891 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1893 strings have English so far.
 
 ## Limits
 

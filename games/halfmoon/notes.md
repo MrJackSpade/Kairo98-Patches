@@ -31,9 +31,9 @@ ides' Adv98V script engine (`RAMIYA/`), on a hard-disk image: 84 scripts with te
 
 ## Script
 
-4965 strings (82 name tags (procedure text), 4823 messages, 10 menu items, 7 string variable values, 43 program strings).
+4967 strings (82 name tags (procedure text), 4823 messages, 10 menu items, 7 string variable values, 45 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4965 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4967 strings have English so far.
 
 ## Limits
 

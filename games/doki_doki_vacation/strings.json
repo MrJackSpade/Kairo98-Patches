@@ -120023,6 +120023,26 @@
   {
    "id": "e00002",
    "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "DOKIV.COM:0187"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "DOKIV.COM:01b7"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
    "jp": "じゅんいち",
    "en": "",
    "refs": [

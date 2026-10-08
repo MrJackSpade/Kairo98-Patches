@@ -81763,6 +81763,26 @@
     "NIGHT.COM:0102"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "NIGHT.COM:0189"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "NIGHT.COM:01b9"
+   ],
+   "max_cells": 21
   }
  ]
 }

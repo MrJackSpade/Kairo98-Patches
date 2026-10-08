@@ -31,9 +31,9 @@ ides' Adv98V script engine (`DORA/`), on a hard-disk image: 104 scripts with tex
 
 ## Script
 
-6895 strings (6721 messages, 71 menu items, 48 name tags (procedure text), 1 string variable values, 53 text file lines, 1 program strings).
+6897 strings (6721 messages, 71 menu items, 48 name tags (procedure text), 1 string variable values, 53 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6895 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6897 strings have English so far.
 
 ## Limits
 

@@ -31,9 +31,9 @@ ides' Adv98V script engine (`ANGEL/`), on a hard-disk image: 142 scripts with te
 
 ## Script
 
-16909 strings (16445 messages, 348 menu items, 41 name tags (procedure text), 3 string variable values, 71 text file lines, 1 program strings).
+16911 strings (16445 messages, 348 menu items, 41 name tags (procedure text), 3 string variable values, 71 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 16909 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 16911 strings have English so far.
 
 ## Limits
 

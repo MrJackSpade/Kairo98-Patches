@@ -29,9 +29,9 @@ ides' Adv98V script engine (`KANAKO/`), on a hard-disk image: 141 scripts with t
 
 ## Script
 
-6731 strings (6306 messages, 400 menu items, 24 text file lines, 1 program strings).
+6733 strings (6306 messages, 400 menu items, 24 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6731 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6733 strings have English so far.
 
 ## Limits
 

@@ -30,9 +30,9 @@ ides' Adv98V script engine (`CMSTART/`), on a hard-disk image: 181 scripts with 
 
 ## Script
 
-6437 strings (5527 messages, 891 menu items, 16 name tags (procedure text), 1 string variable values, 2 program strings).
+6439 strings (5527 messages, 891 menu items, 16 name tags (procedure text), 1 string variable values, 4 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6437 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6439 strings have English so far.
 
 ## Limits
 

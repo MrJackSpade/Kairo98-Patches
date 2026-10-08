@@ -29,9 +29,9 @@ ides' Adv98V script engine (`AKIKO/`), on a hard-disk image: 70 scripts with tex
 
 ## Script
 
-6511 strings (6229 messages, 281 menu items, 1 program strings).
+6513 strings (6229 messages, 281 menu items, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6511 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6513 strings have English so far.
 
 ## Limits
 

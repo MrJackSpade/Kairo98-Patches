@@ -30,9 +30,9 @@ ides' Adv98V script engine (`KD3/`), on a hard-disk image: 287 scripts with text
 
 ## Script
 
-15170 strings (14603 messages, 477 menu items, 2 name tags (procedure text), 1 string variable values, 86 text file lines, 1 program strings).
+15172 strings (14603 messages, 477 menu items, 2 name tags (procedure text), 1 string variable values, 86 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 15170 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 15172 strings have English so far.
 
 ## Limits
 

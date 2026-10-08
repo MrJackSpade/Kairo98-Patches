@@ -70,19 +70,38 @@ def decode(raw):
 
 def _mostly_japanese(text):
     k = sum(1 for c in text if "぀" <= c <= "ヿ" or c in _JP)
-    return k >= 4 and k / len(text) > 0.4
+    # (spaces centring a message in its box do not count against it)
+    return k >= 4 and k / max(1, len(text.replace(" ", "").replace("　", ""))) > 0.4
+
+
+def _segments(exe):
+    """[(start, end)] of the text runs, each split where it holds a PC-98
+    own character that is not text (lead 0x86, 0xEB and up: the frame
+    lines boxing a message in), so the text inside the box is a run."""
+    out = []
+    for m in _RUN.finditer(exe):
+        s, i = m.start(), m.start()
+        while i < m.end():
+            ch, n = char_at(exe, i)
+            if ch is None and (exe[i] == 0x86 or exe[i] >= 0xEB) and i + n <= m.end():
+                if i > s:
+                    out.append((s, i))
+                s = i + n
+            i += n
+        if m.end() > s:
+            out.append((s, m.end()))
+    return out
 
 
 def find(exe):
     """[(start, end, text)] of the Japanese strings in the program."""
     out = []
-    for m in _RUN.finditer(exe):
-        raw = m.group()
+    for s, e in _segments(exe):
+        raw = exe[s:e]
         # keep whole characters: a run may start on a trail byte of the previous one
         text = decode(raw)
         if text is None:
             continue
-        s, e = m.start(), m.end()
         # trim ASCII noise at the ends (code bytes that happen to be printable; one byte each,
         # where a PC-98 half-width letter, two bytes, is text)
         while text and text[0] in " \t" + "".join(chr(c) for c in range(0x21, 0x7f)) and not text.startswith("%") \

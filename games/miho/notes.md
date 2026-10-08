@@ -29,9 +29,9 @@ ides' Adv98V script engine (`MIHO/`), on a hard-disk image: 59 scripts with text
 
 ## Script
 
-4041 strings (179 menu items, 3860 messages, 1 string variable values, 1 program strings).
+4043 strings (179 menu items, 3860 messages, 1 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4041 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4043 strings have English so far.
 
 ## Limits
 

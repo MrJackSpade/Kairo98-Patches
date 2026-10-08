@@ -62813,6 +62813,26 @@
     "INJU.COM:0101"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "INJU.COM:0188"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "INJU.COM:01b8"
+   ],
+   "max_cells": 21
   }
  ]
 }

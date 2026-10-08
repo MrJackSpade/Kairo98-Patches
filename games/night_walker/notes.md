@@ -31,9 +31,9 @@ ides' Adv98V script engine (`NIGHT/`), on a hard-disk image: 95 scripts with tex
 
 ## Script
 
-7749 strings (7303 messages, 65 name tags (procedure text), 336 menu items, 1 string variable values, 43 text file lines, 1 program strings).
+7751 strings (7303 messages, 65 name tags (procedure text), 336 menu items, 1 string variable values, 43 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 7749 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 7751 strings have English so far.
 
 ## Limits
 

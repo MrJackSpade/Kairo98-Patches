@@ -74197,6 +74197,26 @@
   {
    "id": "e00002",
    "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "CMSTART.COM:018b"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "CMSTART.COM:01bb"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
    "jp": "まちゃあき",
    "en": "",
    "refs": [

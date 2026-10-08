@@ -113007,6 +113007,16 @@
   {
    "id": "e00003",
    "kind": "engine",
+   "jp": "@S電撃レーザーメス@S",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:71ec"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
    "jp": "ビタミンＮ",
    "en": "",
    "refs": [
@@ -113018,7 +113028,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00004",
+   "id": "e00005",
    "kind": "engine",
    "jp": "ｓｕｐｅｒ",
    "en": "",
@@ -113028,7 +113038,27 @@
    "max_cells": 5
   },
   {
-   "id": "e00005",
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "@SプロテインＶ@S",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:727b"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "@SメスカリンＤ@S",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:72b5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00008",
    "kind": "engine",
    "jp": "バリウムＺ",
    "en": "",
@@ -113040,7 +113070,17 @@
    "max_cells": 5
   },
   {
-   "id": "e00006",
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "@Sマヒロホルム@S",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:72ed"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00010",
    "kind": "engine",
    "jp": "@Sパープーホルモン@S",
    "en": "",
@@ -113050,7 +113090,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00007",
+   "id": "e00011",
    "kind": "engine",
    "jp": "禁断の秘薬",
    "en": "",
@@ -113060,7 +113100,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00008",
+   "id": "e00012",
    "kind": "engine",
    "jp": "倍速の秘薬",
    "en": "",
@@ -113070,7 +113110,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00009",
+   "id": "e00013",
    "kind": "engine",
    "jp": "ネパールの秘薬",
    "en": "",
@@ -113081,7 +113121,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00010",
+   "id": "e00014",
    "kind": "engine",
    "jp": "@Sプラズマシールド@S",
    "en": "",
@@ -113091,7 +113131,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00011",
+   "id": "e00015",
    "kind": "engine",
    "jp": "プラズマフラッシュ",
    "en": "",
@@ -113102,7 +113142,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00012",
+   "id": "e00016",
    "kind": "engine",
    "jp": "@SプラズマフラッシュＲ@S",
    "en": "",
@@ -113112,7 +113152,17 @@
    "max_cells": 12
   },
   {
-   "id": "e00013",
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "@Sたこやき@S",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:74d0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00018",
    "kind": "engine",
    "jp": "体力",
    "en": "",
@@ -113122,7 +113172,7 @@
    "max_cells": 2
   },
   {
-   "id": "e00014",
+   "id": "e00019",
    "kind": "engine",
    "jp": "攻撃力",
    "en": "",
@@ -113132,7 +113182,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00015",
+   "id": "e00020",
    "kind": "engine",
    "jp": "守備力",
    "en": "",
@@ -113142,7 +113192,60 @@
    "max_cells": 3
   },
   {
-   "id": "e00016",
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "コマンドを選んでねッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:769d"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "は力尽き倒れた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:76ba",
+    "NRS2FGT.CMD:ccfc"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "稲妻が泣いている@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:76e2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "バカ状態から抜け出した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7728",
+    "NRS2FGT.CMD:798c"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "中枢神経がマヒしている@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:774c",
+    "NRS2FGT.CMD:79b0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00026",
    "kind": "engine",
    "jp": "プラズマシールドは",
    "en": "",
@@ -113152,7 +113255,17 @@
    "max_cells": 9
   },
   {
-   "id": "e00017",
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "効果がなくなった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7782"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00028",
    "kind": "engine",
    "jp": "金銀パールに目がくらみ",
    "en": "",
@@ -113163,7 +113276,37 @@
    "max_cells": 11
   },
   {
-   "id": "e00018",
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "戦うことを忘れている@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:77b6"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "は我にかえった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:77d3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "お金じゃなくて愛なのよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:77fb"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00032",
    "kind": "engine",
    "jp": "たこ焼きは",
    "en": "",
@@ -113173,7 +113316,17 @@
    "max_cells": 5
   },
   {
-   "id": "e00019",
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "どこかに消えていった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7825"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00034",
    "kind": "engine",
    "jp": "ちょっと残念だけど",
    "en": "",
@@ -113183,7 +113336,17 @@
    "max_cells": 9
   },
   {
-   "id": "e00020",
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "これで薬が使えるわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:785a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00036",
    "kind": "engine",
    "jp": "の周りから",
    "en": "",
@@ -113194,7 +113357,37 @@
    "max_cells": 5
   },
   {
-   "id": "e00021",
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "プラズマ波は消えている@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7884"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "プラズマ波が戻ってきた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:78ae"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "恐怖に震えて何もできない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:78d2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00040",
    "kind": "engine",
    "jp": "恐いゴースト達は",
    "en": "",
@@ -113204,7 +113397,47 @@
    "max_cells": 8
   },
   {
-   "id": "e00022",
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "魔界に帰っていった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7904"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "よかったよォォオ@C13@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7944"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "恐怖に足がすくんでいる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:79d4"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00044",
+   "kind": "engine",
+   "jp": "ひっこめますか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7a10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00045",
    "kind": "engine",
    "jp": "@Sはい",
    "en": "",
@@ -113214,7 +113447,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00023",
+   "id": "e00046",
    "kind": "engine",
    "jp": "いいえ",
    "en": "",
@@ -113224,7 +113457,17 @@
    "max_cells": 3
   },
   {
-   "id": "e00024",
+   "id": "e00047",
+   "kind": "engine",
+   "jp": "ありがとう。",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7a4d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00048",
    "kind": "engine",
    "jp": "あとは私が戦うわ。",
    "en": "",
@@ -113234,7 +113477,17 @@
    "max_cells": 9
   },
   {
-   "id": "e00025",
+   "id": "e00049",
+   "kind": "engine",
+   "jp": "きららちゃん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7a8f"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00050",
    "kind": "engine",
    "jp": "私ってば壊れちゃったみたい",
    "en": "",
@@ -113244,7 +113497,39 @@
    "max_cells": 13
   },
   {
-   "id": "e00026",
+   "id": "e00051",
+   "kind": "engine",
+   "jp": "うるうるうるうる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7acd"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00052",
+   "kind": "engine",
+   "jp": "もう一緒には戦えないわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7af0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00053",
+   "kind": "engine",
+   "jp": "プラズマパワーが足りない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7b0d",
+    "NRS2FGT.CMD:7b57",
+    "NRS2FGT.CMD:7ba5"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00054",
    "kind": "engine",
    "jp": "プラズマシールド",
    "en": "",
@@ -113254,7 +113539,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00027",
+   "id": "e00055",
    "kind": "engine",
    "jp": "プラズマフラッシュＲ",
    "en": "",
@@ -113264,7 +113549,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00028",
+   "id": "e00056",
+   "kind": "engine",
+   "jp": "プラズマパワーは満タンよ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7bfc"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00057",
    "kind": "engine",
    "jp": "ポイントの",
    "en": "",
@@ -113278,7 +113573,83 @@
    "max_cells": 5
   },
   {
-   "id": "e00029",
+   "id": "e00058",
+   "kind": "engine",
+   "jp": "ダメージを与えた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7c6c",
+    "NRS2FGT.CMD:8b86",
+    "NRS2FGT.CMD:90c7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00059",
+   "kind": "engine",
+   "jp": "ダメージを与えられません@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7c98"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00060",
+   "kind": "engine",
+   "jp": "どうしてぇ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7ccb"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00061",
+   "kind": "engine",
+   "jp": "攻撃はかわされてしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7cde"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00062",
+   "kind": "engine",
+   "jp": "やめてよっ@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7d1d"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00063",
+   "kind": "engine",
+   "jp": "ポイント下げた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7d45",
+    "NRS2FGT.CMD:7d6e",
+    "NRS2FGT.CMD:90fd",
+    "NRS2FGT.CMD:9131"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00064",
+   "kind": "engine",
+   "jp": "中枢神経をマヒさせた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7d8d",
+    "NRS2FGT.CMD:915b"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00065",
    "kind": "engine",
    "jp": "脳味噌ぷにょぷにょの",
    "en": "",
@@ -113289,7 +113660,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00030",
+   "id": "e00066",
+   "kind": "engine",
+   "jp": "おバカちゃんになった@C13@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7dc3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00067",
    "kind": "engine",
    "jp": "のドラッグは",
    "en": "",
@@ -113300,7 +113681,81 @@
    "max_cells": 6
   },
   {
-   "id": "e00031",
+   "id": "e00068",
+   "kind": "engine",
+   "jp": "効果がなかった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7df4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00069",
+   "kind": "engine",
+   "jp": "おっかしいなァ…@C5@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7e14"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00070",
+   "kind": "engine",
+   "jp": "ポイント回復した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7e3c",
+    "NRS2FGT.CMD:84a6"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00071",
+   "kind": "engine",
+   "jp": "ポイント上がった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7e85",
+    "NRS2FGT.CMD:7eac",
+    "NRS2FGT.CMD:845a",
+    "NRS2FGT.CMD:8481"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00072",
+   "kind": "engine",
+   "jp": "カラダが熱く燃えたぎる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7ec2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00073",
+   "kind": "engine",
+   "jp": "は無敵になった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7ee0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00074",
+   "kind": "engine",
+   "jp": "空から稲妻がほとばしる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7ef7"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00075",
    "kind": "engine",
    "jp": "プラズマパワーを",
    "en": "",
@@ -113312,7 +113767,47 @@
    "max_cells": 8
   },
   {
-   "id": "e00032",
+   "id": "e00076",
+   "kind": "engine",
+   "jp": "チャージした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7f32"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00077",
+   "kind": "engine",
+   "jp": "てろてろてろ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7f43"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00078",
+   "kind": "engine",
+   "jp": "バカになってしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7f7b"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00079",
+   "kind": "engine",
+   "jp": "まったく気づいていない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7fbb"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00080",
    "kind": "engine",
    "jp": "は自分に向かって",
    "en": "",
@@ -113322,7 +113817,142 @@
    "max_cells": 8
   },
   {
-   "id": "e00033",
+   "id": "e00081",
+   "kind": "engine",
+   "jp": "パンチをブチかました@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:7fe9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00082",
+   "kind": "engine",
+   "jp": "メスカリンＤを打った@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8015"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00083",
+   "kind": "engine",
+   "jp": "バリウムＺを飲みほした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8037"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00084",
+   "kind": "engine",
+   "jp": "泣けてくる一撃@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8057"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00085",
+   "kind": "engine",
+   "jp": "ダメージを受けた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8080",
+    "NRS2FGT.CMD:8a7e"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00086",
+   "kind": "engine",
+   "jp": "ダメージを受けなかった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:809e"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00087",
+   "kind": "engine",
+   "jp": "攻撃をかわした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:80c2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00088",
+   "kind": "engine",
+   "jp": "ポイント下がった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:80e7",
+    "NRS2FGT.CMD:8111",
+    "NRS2FGT.CMD:9184",
+    "NRS2FGT.CMD:91ae",
+    "NRS2FGT.CMD:91d8"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00089",
+   "kind": "engine",
+   "jp": "中枢神経がマヒした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8131"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00090",
+   "kind": "engine",
+   "jp": "ピーンチ@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:814a"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00091",
+   "kind": "engine",
+   "jp": "これでは攻撃できないっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8161"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00092",
+   "kind": "engine",
+   "jp": "おバカ娘になってしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8195"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00093",
+   "kind": "engine",
+   "jp": "戦うことを忘れてしまった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:81f1"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00094",
    "kind": "engine",
    "jp": "すべて、",
    "en": "",
@@ -113332,7 +113962,37 @@
    "max_cells": 4
   },
   {
-   "id": "e00034",
+   "id": "e00095",
+   "kind": "engine",
+   "jp": "たこ焼きになってしまった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8228"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00096",
+   "kind": "engine",
+   "jp": "プラズマ波が消えてゆく@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8255"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00097",
+   "kind": "engine",
+   "jp": "何もできなくなった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8285"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00098",
    "kind": "engine",
    "jp": "メスカリンＤ",
    "en": "",
@@ -113343,7 +114003,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00035",
+   "id": "e00099",
    "kind": "engine",
    "jp": "マヒロホルム",
    "en": "",
@@ -113354,7 +114014,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00036",
+   "id": "e00100",
    "kind": "engine",
    "jp": "パープーホルモン",
    "en": "",
@@ -113365,7 +114025,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00037",
+   "id": "e00101",
    "kind": "engine",
    "jp": "プロテインＶ",
    "en": "",
@@ -113376,7 +114036,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00038",
+   "id": "e00102",
    "kind": "engine",
    "jp": "楽しそうに歌った。",
    "en": "",
@@ -113386,7 +114046,27 @@
    "max_cells": 9
   },
   {
-   "id": "e00039",
+   "id": "e00103",
+   "kind": "engine",
+   "jp": "狂ったように踊り続けた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8552"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00104",
+   "kind": "engine",
+   "jp": "いつまでも笑い続けた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8576"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00105",
    "kind": "engine",
    "jp": "空に向かって",
    "en": "",
@@ -113396,7 +114076,27 @@
    "max_cells": 6
   },
   {
-   "id": "e00040",
+   "id": "e00106",
+   "kind": "engine",
+   "jp": "スクランブル発信をした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:85a4"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00107",
+   "kind": "engine",
+   "jp": "じゃじゃじゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:85f0"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00108",
    "kind": "engine",
    "jp": "お尻にビタミンＮｓｕｐｅｒ",
    "en": "",
@@ -113406,7 +114106,17 @@
    "max_cells": 13
   },
   {
-   "id": "e00041",
+   "id": "e00109",
+   "kind": "engine",
+   "jp": "が突き刺さった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8695"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00110",
    "kind": "engine",
    "jp": "のカワイイお尻を",
    "en": "",
@@ -113416,7 +114126,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00042",
+   "id": "e00111",
    "kind": "engine",
    "jp": "めがけてマヒロホルムが",
    "en": "",
@@ -113426,7 +114136,17 @@
    "max_cells": 11
   },
   {
-   "id": "e00043",
+   "id": "e00112",
+   "kind": "engine",
+   "jp": "ひゅうんと飛んできた@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:86d1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00113",
    "kind": "engine",
    "jp": "の頭に向かって",
    "en": "",
@@ -113436,7 +114156,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00044",
+   "id": "e00114",
    "kind": "engine",
    "jp": "パープーホルモンが",
    "en": "",
@@ -113446,7 +114166,87 @@
    "max_cells": 9
   },
   {
-   "id": "e00045",
+   "id": "e00115",
+   "kind": "engine",
+   "jp": "ふにふに飛んできた@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8716"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00116",
+   "kind": "engine",
+   "jp": "ぱしゅぱしゅぱしゅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8784"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00117",
+   "kind": "engine",
+   "jp": "バチラス５０を照射された@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:87ad"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00118",
+   "kind": "engine",
+   "jp": "奪われてしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:87e2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00119",
+   "kind": "engine",
+   "jp": "特攻隊は体当りをかました@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8811"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00120",
+   "kind": "engine",
+   "jp": "何もしないで去っていった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:883e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00121",
+   "kind": "engine",
+   "jp": "ゴォォォオオオオオ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8862"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00122",
+   "kind": "engine",
+   "jp": "は火を吹いた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8883"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00123",
    "kind": "engine",
    "jp": "よくわかんないけど",
    "en": "",
@@ -113456,7 +114256,238 @@
    "max_cells": 9
   },
   {
-   "id": "e00046",
+   "id": "e00124",
+   "kind": "engine",
+   "jp": "私って、すっご@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:88b0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00125",
+   "kind": "engine",
+   "jp": "ぴゅるるるるる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:88ce"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00126",
+   "kind": "engine",
+   "jp": "はお腹を壊した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:88f1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00127",
+   "kind": "engine",
+   "jp": "しくしく@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:890b",
+    "NRS2FGT.CMD:a8fb"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00128",
+   "kind": "engine",
+   "jp": "なんだかなあ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:891e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00129",
+   "kind": "engine",
+   "jp": "バチバチバチバチ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:893d"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00130",
+   "kind": "engine",
+   "jp": "放電してしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:895f"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00131",
+   "kind": "engine",
+   "jp": "ショック@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:897f"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00132",
+   "kind": "engine",
+   "jp": "ぴらりらりらり@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:899e"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00133",
+   "kind": "engine",
+   "jp": "ああ、妖しすぎる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:89e2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00134",
+   "kind": "engine",
+   "jp": "ぽわぽわぽわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:89ff"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00135",
+   "kind": "engine",
+   "jp": "何だか気持ちよくなった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8a20"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00136",
+   "kind": "engine",
+   "jp": "ど、どうしょう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8a44"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00137",
+   "kind": "engine",
+   "jp": "そんな攻撃は通用しない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8aa8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00138",
+   "kind": "engine",
+   "jp": "ぴきぴきぴきぴき@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8ae0"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00139",
+   "kind": "engine",
+   "jp": "は悲しい音と",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8b0b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00140",
+   "kind": "engine",
+   "jp": "共に壊れてしまった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8b18"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00141",
+   "kind": "engine",
+   "jp": "太極拳をくり出した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8b4a"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00142",
+   "kind": "engine",
+   "jp": "戦いのボンゴを叩いた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8bb1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00143",
+   "kind": "engine",
+   "jp": "戦いのラッパを吹いた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8be0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00144",
+   "kind": "engine",
+   "jp": "天空に剣をかざした@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8c0f"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00145",
+   "kind": "engine",
+   "jp": "プラズマパワーを与えた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8c42"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00146",
+   "kind": "engine",
+   "jp": "何か恐いことをした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8c73"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00147",
    "kind": "engine",
    "jp": "足がすくんで",
    "en": "",
@@ -113466,7 +114497,17 @@
    "max_cells": 6
   },
   {
-   "id": "e00047",
+   "id": "e00148",
+   "kind": "engine",
+   "jp": "動けなくなった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8c9f"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00149",
    "kind": "engine",
    "jp": "コタツに入って",
    "en": "",
@@ -113476,7 +114517,17 @@
    "max_cells": 7
   },
   {
-   "id": "e00048",
+   "id": "e00150",
+   "kind": "engine",
+   "jp": "玄米茶をすすった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8cd6"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00151",
    "kind": "engine",
    "jp": "体力が少し回復したようだ",
    "en": "",
@@ -113486,7 +114537,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00049",
+   "id": "e00152",
    "kind": "engine",
    "jp": "しかし、",
    "en": "",
@@ -113498,7 +114549,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00050",
+   "id": "e00153",
    "kind": "engine",
    "jp": "プラズマフラッシュは",
    "en": "",
@@ -113508,7 +114559,27 @@
    "max_cells": 10
   },
   {
-   "id": "e00051",
+   "id": "e00154",
+   "kind": "engine",
+   "jp": "できなかった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8d91"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00155",
+   "kind": "engine",
+   "jp": "ッとした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8dcf"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00156",
    "kind": "engine",
    "jp": "は踊り狂った。",
    "en": "",
@@ -113518,7 +114589,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00052",
+   "id": "e00157",
+   "kind": "engine",
+   "jp": "それでいいのか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8dec"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00158",
+   "kind": "engine",
+   "jp": "声高らかに熱唱した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8e0f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00159",
+   "kind": "engine",
+   "jp": "アゴが外れなければいいが@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8e65"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00160",
    "kind": "engine",
    "jp": "自分を見つめ直した。",
    "en": "",
@@ -113528,7 +114629,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00053",
+   "id": "e00161",
+   "kind": "engine",
+   "jp": "答えは風の中だった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8ea8"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00162",
    "kind": "engine",
    "jp": "タンスやツボを調べた。",
    "en": "",
@@ -113538,7 +114649,27 @@
    "max_cells": 11
   },
   {
-   "id": "e00054",
+   "id": "e00163",
+   "kind": "engine",
+   "jp": "何も見つからなかった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8ee9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00164",
+   "kind": "engine",
+   "jp": "少し、ムッとした@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8f16"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00165",
    "kind": "engine",
    "jp": "自分のお尻を触ってみた",
    "en": "",
@@ -113548,7 +114679,17 @@
    "max_cells": 11
   },
   {
-   "id": "e00055",
+   "id": "e00166",
+   "kind": "engine",
+   "jp": "お尻の形には自信を持った@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8f48"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00167",
    "kind": "engine",
    "jp": "自分の肩を揉みほぐした",
    "en": "",
@@ -113558,7 +114699,17 @@
    "max_cells": 11
   },
   {
-   "id": "e00056",
+   "id": "e00168",
+   "kind": "engine",
+   "jp": "かなり、こっているようだ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8f80"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00169",
    "kind": "engine",
    "jp": "自分の腕を舐め、",
    "en": "",
@@ -113568,7 +114719,27 @@
    "max_cells": 8
   },
   {
-   "id": "e00057",
+   "id": "e00170",
+   "kind": "engine",
+   "jp": "ごしごし擦ってみた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8fb6"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00171",
+   "kind": "engine",
+   "jp": "腕が臭くなってしまった@C9@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:8fd1"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00172",
    "kind": "engine",
    "jp": "チャージＯＮと",
    "en": "",
@@ -113578,7 +114749,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00058",
+   "id": "e00173",
+   "kind": "engine",
+   "jp": "言いたかったらしい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9006"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00174",
+   "kind": "engine",
+   "jp": "無敵状態は終わりを告げた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9028"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00175",
+   "kind": "engine",
+   "jp": "入れ替わった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9093"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00176",
    "kind": "engine",
    "jp": "鉄仮面ナースは",
    "en": "",
@@ -113591,7 +114792,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00059",
+   "id": "e00177",
    "kind": "engine",
    "jp": "の情報を吸収した",
    "en": "",
@@ -113601,7 +114802,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00060",
+   "id": "e00178",
    "kind": "engine",
    "jp": "そっくりに化けた",
    "en": "",
@@ -113611,7 +114812,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00061",
+   "id": "e00179",
    "kind": "engine",
    "jp": "鉄仮面ナースの",
    "en": "",
@@ -113622,7 +114823,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00062",
+   "id": "e00180",
    "kind": "engine",
    "jp": "ポイゾンチューリップは",
    "en": "",
@@ -113632,7 +114833,18 @@
    "max_cells": 11
   },
   {
-   "id": "e00063",
+   "id": "e00181",
+   "kind": "engine",
+   "jp": "効果がなかった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9248",
+    "NRS2FGT.CMD:9287"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00182",
    "kind": "engine",
    "jp": "エレガンスチューリップは",
    "en": "",
@@ -113642,7 +114854,17 @@
    "max_cells": 12
   },
   {
-   "id": "e00064",
+   "id": "e00183",
+   "kind": "engine",
+   "jp": "ぴんぽんぱんぽ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:929a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00184",
    "kind": "engine",
    "jp": "パラメーターは",
    "en": "",
@@ -113652,7 +114874,47 @@
    "max_cells": 7
   },
   {
-   "id": "e00065",
+   "id": "e00185",
+   "kind": "engine",
+   "jp": "１５０以上あがりませ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:92e3"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00186",
+   "kind": "engine",
+   "jp": "違法コピーになった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9320"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00187",
+   "kind": "engine",
+   "jp": "カツアゲされてしまった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9352"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00188",
+   "kind": "engine",
+   "jp": "電撃ナースは無敵だ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9371"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00189",
    "kind": "engine",
    "jp": "何をやられても",
    "en": "",
@@ -113662,7 +114924,27 @@
    "max_cells": 7
   },
   {
-   "id": "e00066",
+   "id": "e00190",
+   "kind": "engine",
+   "jp": "んぜん平気だ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:93a3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00191",
+   "kind": "engine",
+   "jp": "ざまあカンカ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:93bb"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00192",
    "kind": "engine",
    "jp": "なんと、たこやきは",
    "en": "",
@@ -113672,7 +114954,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00067",
+   "id": "e00193",
    "kind": "engine",
    "jp": "如X29@C1いきなり鉄仮面ナースが",
    "en": "",
@@ -113682,7 +114964,187 @@
    "max_cells": 15
   },
   {
-   "id": "e00068",
+   "id": "e00194",
+   "kind": "engine",
+   "jp": "乱入してきた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9508"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00195",
+   "kind": "engine",
+   "jp": "どきなさいよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9520"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00196",
+   "kind": "engine",
+   "jp": "私が戦うわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9537"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00197",
+   "kind": "engine",
+   "jp": "愛する力のハリケーン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9548"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00198",
+   "kind": "engine",
+   "jp": "ミストラルチューリップ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9566"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00199",
+   "kind": "engine",
+   "jp": "コズミックチューリップ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:95a2"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00200",
+   "kind": "engine",
+   "jp": "燃えるマグマの熱き心@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:95c0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00201",
+   "kind": "engine",
+   "jp": "バーニングチューリップ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:95de"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00202",
+   "kind": "engine",
+   "jp": "可憐な花にも棘がある@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:95fc"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00203",
+   "kind": "engine",
+   "jp": "ポイゾンチューリップ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:961a"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00204",
+   "kind": "engine",
+   "jp": "美しき獣よ華麗に踊れ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9636"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00205",
+   "kind": "engine",
+   "jp": "エレガンスチューリップ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9654"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00206",
+   "kind": "engine",
+   "jp": "いくわよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:96e4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00207",
+   "kind": "engine",
+   "jp": "でぇぇええいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:974a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00208",
+   "kind": "engine",
+   "jp": "これでもくらいなさいっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9781"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00209",
+   "kind": "engine",
+   "jp": "電撃レーザーメス@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:97a2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00210",
+   "kind": "engine",
+   "jp": "覚悟はいいわねっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:97be"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00211",
+   "kind": "engine",
+   "jp": "電撃バズーカっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:97d9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00212",
    "kind": "engine",
    "jp": "攻撃力がありすぎると",
    "en": "",
@@ -113692,7 +115154,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00069",
+   "id": "e00213",
    "kind": "engine",
    "jp": "高血圧になって",
    "en": "",
@@ -113702,7 +115164,17 @@
    "max_cells": 7
   },
   {
-   "id": "e00070",
+   "id": "e00214",
+   "kind": "engine",
+   "jp": "長生きできないわよっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:98d5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00215",
    "kind": "engine",
    "jp": "守備力が高いと、",
    "en": "",
@@ -113712,7 +115184,47 @@
    "max_cells": 8
   },
   {
-   "id": "e00071",
+   "id": "e00216",
+   "kind": "engine",
+   "jp": "糖尿病になりやすいのよっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9900"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00217",
+   "kind": "engine",
+   "jp": "体によくないわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:992c"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00218",
+   "kind": "engine",
+   "jp": "少し、休みなさいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9941"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00219",
+   "kind": "engine",
+   "jp": "たぁぁあああッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9958"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00220",
    "kind": "engine",
    "jp": "これでもくらって",
    "en": "",
@@ -113722,7 +115234,37 @@
    "max_cells": 8
   },
   {
-   "id": "e00072",
+   "id": "e00221",
+   "kind": "engine",
+   "jp": "自分を見つめ直しなさいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:997e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00222",
+   "kind": "engine",
+   "jp": "今日も元気でレッツゴ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:99a0"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00223",
+   "kind": "engine",
+   "jp": "２４時間戦えちゃうぞ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:99d9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00224",
    "kind": "engine",
    "jp": "カラダの奥から",
    "en": "",
@@ -113732,7 +115274,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00073",
+   "id": "e00225",
+   "kind": "engine",
+   "jp": "沸き上がるエネルギー@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9a1e"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00226",
+   "kind": "engine",
+   "jp": "飲めば飲むほど強くなる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9a39"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00227",
+   "kind": "engine",
+   "jp": "ミラクルパワーで筋肉増強@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9a56"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00228",
    "kind": "engine",
    "jp": "これからの女のコは",
    "en": "",
@@ -113742,7 +115314,37 @@
    "max_cells": 9
   },
   {
-   "id": "e00074",
+   "id": "e00229",
+   "kind": "engine",
+   "jp": "たくましい筋肉よッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9a88"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00230",
+   "kind": "engine",
+   "jp": "これっしかないわね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9acb"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00231",
+   "kind": "engine",
+   "jp": "スピードアップチャージ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9af8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00232",
    "kind": "engine",
    "jp": "何だかよくわかんないけど",
    "en": "",
@@ -113752,7 +115354,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00075",
+   "id": "e00233",
    "kind": "engine",
    "jp": "とりあえず",
    "en": "",
@@ -113762,7 +115364,17 @@
    "max_cells": 5
   },
   {
-   "id": "e00076",
+   "id": "e00234",
+   "kind": "engine",
+   "jp": "飲んでみよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9b3b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00235",
    "kind": "engine",
    "jp": "ぱくぱくぱくぱく",
    "en": "",
@@ -113772,7 +115384,357 @@
    "max_cells": 8
   },
   {
-   "id": "e00077",
+   "id": "e00236",
+   "kind": "engine",
+   "jp": "さすが、大阪のたこ焼き@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9b6b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00237",
+   "kind": "engine",
+   "jp": "ちょっとの間、お願いねッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9bb3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00238",
+   "kind": "engine",
+   "jp": "プラズマパワ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9bd3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00239",
+   "kind": "engine",
+   "jp": "パラパラパラ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c19",
+    "NRS2FGT.CMD:cdc1"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00240",
+   "kind": "engine",
+   "jp": "うぇるかむ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c3a",
+    "NRS2FGT.CMD:cde2",
+    "NRS2FGT.CMD:dd4b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00241",
+   "kind": "engine",
+   "jp": "のんすとっぷゆ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c4b",
+    "NRS2FGT.CMD:cdf3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00242",
+   "kind": "engine",
+   "jp": "ろないつ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c5f",
+    "NRS2FGT.CMD:ce07"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00243",
+   "kind": "engine",
+   "jp": "ヘイヘイ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c6e",
+    "NRS2FGT.CMD:ce16"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00244",
+   "kind": "engine",
+   "jp": "ダンシ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9c78",
+    "NRS2FGT.CMD:ce20"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00245",
+   "kind": "engine",
+   "jp": "どろく",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9cb4",
+    "NRS2FGT.CMD:ce5c"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00246",
+   "kind": "engine",
+   "jp": "よ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9cbc",
+    "NRS2FGT.CMD:ce64"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00247",
+   "kind": "engine",
+   "jp": "ナースぅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9cdd",
+    "NRS2FGT.CMD:9ced"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00248",
+   "kind": "engine",
+   "jp": "でんげきナースぅう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9d04"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00249",
+   "kind": "engine",
+   "jp": "くすくすくすくすくすくす@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9d20",
+    "NRS2FGT.CMD:cec8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00250",
+   "kind": "engine",
+   "jp": "げらげらげらげらげらげら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9d3f",
+    "NRS2FGT.CMD:b78f",
+    "NRS2FGT.CMD:cee7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00251",
+   "kind": "engine",
+   "jp": "きゃはははははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9d5e",
+    "NRS2FGT.CMD:cf06"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00252",
+   "kind": "engine",
+   "jp": "うひゃひゃひゃひゃひゃあ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9d7d",
+    "NRS2FGT.CMD:cf25"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00253",
+   "kind": "engine",
+   "jp": "いったい何なのかしらッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9dd0"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00254",
+   "kind": "engine",
+   "jp": "ここかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9df0",
+    "NRS2FGT.CMD:c9c7"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00255",
+   "kind": "engine",
+   "jp": "そこかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9e00",
+    "NRS2FGT.CMD:c9d7"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00256",
+   "kind": "engine",
+   "jp": "それとも、アソコかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9e0f"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00257",
+   "kind": "engine",
+   "jp": "ちんどんや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9e4b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00258",
+   "kind": "engine",
+   "jp": "オマエの母さんデ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9e5e"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00259",
+   "kind": "engine",
+   "jp": "わさわさわさわさわさ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9e8a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00260",
+   "kind": "engine",
+   "jp": "もみもみもみもみもみ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9eaa"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00261",
+   "kind": "engine",
+   "jp": "ぺろぺろぺろぺろぺろ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9eca"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00262",
+   "kind": "engine",
+   "jp": "ごしごしごしごし@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9ee7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00263",
+   "kind": "engine",
+   "jp": "何かしたのかしら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9f91",
+    "NRS2FGT.CMD:cb54"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00264",
+   "kind": "engine",
+   "jp": "もうだめェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9fb1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00265",
+   "kind": "engine",
+   "jp": "戦えないッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:9fd2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00266",
+   "kind": "engine",
+   "jp": "何するのよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a005",
+    "NRS2FGT.CMD:cc81"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00267",
+   "kind": "engine",
+   "jp": "やめてェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a022"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00268",
+   "kind": "engine",
+   "jp": "やだあッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a030",
+    "NRS2FGT.CMD:a131"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00269",
    "kind": "engine",
    "jp": "どうして、そんな",
    "en": "",
@@ -113782,7 +115744,39 @@
    "max_cells": 8
   },
   {
-   "id": "e00078",
+   "id": "e00270",
+   "kind": "engine",
+   "jp": "変な攻撃ができるのよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a050"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00271",
+   "kind": "engine",
+   "jp": "そんな攻撃当たらないわよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a079",
+    "NRS2FGT.CMD:cca8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00272",
+   "kind": "engine",
+   "jp": "そんなの全然、痛くないわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a0ac",
+    "NRS2FGT.CMD:ccdb"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00273",
    "kind": "engine",
    "jp": "そんな変な攻撃が",
    "en": "",
@@ -113792,7 +115786,27 @@
    "max_cells": 8
   },
   {
-   "id": "e00079",
+   "id": "e00274",
+   "kind": "engine",
+   "jp": "通用するわけないでしょ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a0df"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00275",
+   "kind": "engine",
+   "jp": "体から力が抜けちゃうっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a110"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00276",
    "kind": "engine",
    "jp": "筋肉がぷにょぷにょに",
    "en": "",
@@ -113802,7 +115816,97 @@
    "max_cells": 10
   },
   {
-   "id": "e00080",
+   "id": "e00277",
+   "kind": "engine",
+   "jp": "なっちゃううッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a155"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00278",
+   "kind": "engine",
+   "jp": "あああんっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a16d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00279",
+   "kind": "engine",
+   "jp": "体が自由に動かないッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a17e"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00280",
+   "kind": "engine",
+   "jp": "そんなのありィ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a1a9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00281",
+   "kind": "engine",
+   "jp": "何だか得しちゃったァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a1dc"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00282",
+   "kind": "engine",
+   "jp": "得したのかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a210"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00283",
+   "kind": "engine",
+   "jp": "損したのかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a225"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00284",
+   "kind": "engine",
+   "jp": "まっ、どうでもいいや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a23a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00285",
+   "kind": "engine",
+   "jp": "私は何をしてるのかしら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a30f"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00286",
    "kind": "engine",
    "jp": "息の根を止めてあげるわ",
    "en": "",
@@ -113812,7 +115916,37 @@
    "max_cells": 11
   },
   {
-   "id": "e00081",
+   "id": "e00287",
+   "kind": "engine",
+   "jp": "ブラックスト@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a34e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00288",
+   "kind": "engine",
+   "jp": "うふふッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a36d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00289",
+   "kind": "engine",
+   "jp": "きららちゃん可愛いわよ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a382"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00290",
    "kind": "engine",
    "jp": "ブラックナースＲＸは",
    "en": "",
@@ -113822,7 +115956,27 @@
    "max_cells": 10
   },
   {
-   "id": "e00082",
+   "id": "e00291",
+   "kind": "engine",
+   "jp": "タービネイズレ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a407"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00292",
+   "kind": "engine",
+   "jp": "や、やるわねッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a435"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00293",
    "kind": "engine",
    "jp": "でも・・・私は・・・",
    "en": "",
@@ -113832,7 +115986,37 @@
    "max_cells": 10
   },
   {
-   "id": "e00083",
+   "id": "e00294",
+   "kind": "engine",
+   "jp": "負けるワケにはいかないわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a45f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00295",
+   "kind": "engine",
+   "jp": "アハハハハハハハ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a481"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00296",
+   "kind": "engine",
+   "jp": "まだまだ狙いが大甘ね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a498"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00297",
    "kind": "engine",
    "jp": "悪いけど、そんな攻撃じゃ",
    "en": "",
@@ -113842,7 +116026,27 @@
    "max_cells": 12
   },
   {
-   "id": "e00084",
+   "id": "e00298",
+   "kind": "engine",
+   "jp": "ビクともしないわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a4db"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00299",
+   "kind": "engine",
+   "jp": "く、くそう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a4f0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00300",
    "kind": "engine",
    "jp": "カラダを機械化しても",
    "en": "",
@@ -113852,7 +116056,177 @@
    "max_cells": 10
   },
   {
-   "id": "e00085",
+   "id": "e00301",
+   "kind": "engine",
+   "jp": "勝てないなんて@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a51a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00302",
+   "kind": "engine",
+   "jp": "も、もう終しまいだわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a535"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00303",
+   "kind": "engine",
+   "jp": "ちゃっちゃちゃちゃらりら",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a55e"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00304",
+   "kind": "engine",
+   "jp": "プリマドンナなの@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a5dd"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00305",
+   "kind": "engine",
+   "jp": "私は悲しい機械のカラダ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a605"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00306",
+   "kind": "engine",
+   "jp": "胸が痛むのギイギイギイ@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a61e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00307",
+   "kind": "engine",
+   "jp": "オイル差してね",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a647"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00308",
+   "kind": "engine",
+   "jp": "はははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a689"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00309",
+   "kind": "engine",
+   "jp": "あはははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a69c"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00310",
+   "kind": "engine",
+   "jp": "っはっはっはは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a6bf"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00311",
+   "kind": "engine",
+   "jp": "いやぁぁあ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a6f3"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00312",
+   "kind": "engine",
+   "jp": "そのうちいいことあるよね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a73e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00313",
+   "kind": "engine",
+   "jp": "くらくらァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a75d"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00314",
+   "kind": "engine",
+   "jp": "行くわよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a771"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00315",
+   "kind": "engine",
+   "jp": "ななこ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a782"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00316",
+   "kind": "engine",
+   "jp": "ぱ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a78a"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00317",
+   "kind": "engine",
+   "jp": "うふふん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a7a1"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00318",
    "kind": "engine",
    "jp": "これでもかぶりなさいっ",
    "en": "",
@@ -113862,7 +116236,47 @@
    "max_cells": 11
   },
   {
-   "id": "e00086",
+   "id": "e00319",
+   "kind": "engine",
+   "jp": "乳酸オキシド@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a7d7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00320",
+   "kind": "engine",
+   "jp": "やっぱりここはァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a7f7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00321",
+   "kind": "engine",
+   "jp": "女の子なんだしィ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a80e"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00322",
+   "kind": "engine",
+   "jp": "できれば野蛮な事はァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a827"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00323",
    "kind": "engine",
    "jp": "止めたほうがいいと思うのォ",
    "en": "",
@@ -113872,7 +116286,67 @@
    "max_cells": 13
   },
   {
-   "id": "e00087",
+   "id": "e00324",
+   "kind": "engine",
+   "jp": "とりあえずゥ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a85f"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00325",
+   "kind": "engine",
+   "jp": "危ないからァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a872"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00326",
+   "kind": "engine",
+   "jp": "攻撃力は小さい方がァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a887"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00327",
+   "kind": "engine",
+   "jp": "イイと思っちゃうワケでェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a8a4"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00328",
+   "kind": "engine",
+   "jp": "お嫁に行けなくなっちゃう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a8da"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00329",
+   "kind": "engine",
+   "jp": "当たんなかったみたい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a926"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00330",
    "kind": "engine",
    "jp": "よくわかんないけどォ",
    "en": "",
@@ -113882,7 +116356,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00088",
+   "id": "e00331",
+   "kind": "engine",
+   "jp": "まぁいっかァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a975"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00332",
    "kind": "engine",
    "jp": "私ってやっぱり",
    "en": "",
@@ -113892,7 +116376,117 @@
    "max_cells": 7
   },
   {
-   "id": "e00089",
+   "id": "e00333",
+   "kind": "engine",
+   "jp": "不幸な女なのねぇ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a9cf"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00334",
+   "kind": "engine",
+   "jp": "しくしくしくぅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:a9ea"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00335",
+   "kind": "engine",
+   "jp": "レッツリンボ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aa14"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00336",
+   "kind": "engine",
+   "jp": "どんがらどんがらどんがら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aa2d"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00337",
+   "kind": "engine",
+   "jp": "アイアムビンボ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aa4c"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00338",
+   "kind": "engine",
+   "jp": "うふふふふふふふふ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aad6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00339",
+   "kind": "engine",
+   "jp": "きゃはははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ab0e"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00340",
+   "kind": "engine",
+   "jp": "うきゃきゃきゃる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ab2b"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00341",
+   "kind": "engine",
+   "jp": "何だかいい気持ち@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aba2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00342",
+   "kind": "engine",
+   "jp": "これでもくらうのねっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:abc4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00343",
+   "kind": "engine",
+   "jp": "スクランブルチェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:abe1"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00344",
    "kind": "engine",
    "jp": "むちむちぷっちん",
    "en": "",
@@ -113902,7 +116496,27 @@
    "max_cells": 8
   },
   {
-   "id": "e00090",
+   "id": "e00345",
+   "kind": "engine",
+   "jp": "ぷりりんぱぁぁあああ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ac35"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00346",
+   "kind": "engine",
+   "jp": "ムチムチの鞭ィ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ac50"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00347",
    "kind": "engine",
    "jp": "童心に返るのは大切な事よっ",
    "en": "",
@@ -113912,7 +116526,17 @@
    "max_cells": 13
   },
   {
-   "id": "e00091",
+   "id": "e00348",
+   "kind": "engine",
+   "jp": "いいわぁ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:acda"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00349",
    "kind": "engine",
    "jp": "そうこなくっちゃ",
    "en": "",
@@ -113922,7 +116546,17 @@
    "max_cells": 8
   },
   {
-   "id": "e00092",
+   "id": "e00350",
+   "kind": "engine",
+   "jp": "楽しくないわよねぇ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ad00"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00351",
    "kind": "engine",
    "jp": "攻撃を命中させるなんて",
    "en": "",
@@ -113932,7 +116566,27 @@
    "max_cells": 11
   },
   {
-   "id": "e00093",
+   "id": "e00352",
+   "kind": "engine",
+   "jp": "全然痛くないわっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ad69"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00353",
+   "kind": "engine",
+   "jp": "真面目にやってよねッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ad80"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00354",
    "kind": "engine",
    "jp": "クイーンとまで言われた",
    "en": "",
@@ -113942,7 +116596,151 @@
    "max_cells": 11
   },
   {
-   "id": "e00094",
+   "id": "e00355",
+   "kind": "engine",
+   "jp": "アタシが負けるなんて@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:adc1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00356",
+   "kind": "engine",
+   "jp": "何かの間違いよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ade0"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00357",
+   "kind": "engine",
+   "jp": "タンタカタンタカ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ae03",
+    "NRS2FGT.CMD:ae39"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00358",
+   "kind": "engine",
+   "jp": "タンタカタンタン@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ae16"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00359",
+   "kind": "engine",
+   "jp": "あなたの胸に@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ae77"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00360",
+   "kind": "engine",
+   "jp": "顔をうずめたいけど@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ae8e"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00361",
+   "kind": "engine",
+   "jp": "首が痛くてできないの@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:aeb7"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00362",
+   "kind": "engine",
+   "jp": "ほっほっほ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:af00",
+    "NRS2FGT.CMD:af21",
+    "NRS2FGT.CMD:af42",
+    "NRS2FGT.CMD:af63"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00363",
+   "kind": "engine",
+   "jp": "や、やぁん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:af93"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00364",
+   "kind": "engine",
+   "jp": "ええいッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:afca"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00365",
+   "kind": "engine",
+   "jp": "札ビラアタ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:afe1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00366",
+   "kind": "engine",
+   "jp": "ばしばしばしばしっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b008"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00367",
+   "kind": "engine",
+   "jp": "うふふッ@C6",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b021"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00368",
+   "kind": "engine",
+   "jp": "私の靴の匂い嗅がない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b032"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00369",
    "kind": "engine",
    "jp": "フローラの香りの",
    "en": "",
@@ -113952,7 +116750,17 @@
    "max_cells": 8
   },
   {
-   "id": "e00095",
+   "id": "e00370",
+   "kind": "engine",
+   "jp": "幸せの靴って言うんだよォ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b05e"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00371",
    "kind": "engine",
    "jp": "うふふふふッ",
    "en": "",
@@ -113962,7 +116770,17 @@
    "max_cells": 6
   },
   {
-   "id": "e00096",
+   "id": "e00372",
+   "kind": "engine",
+   "jp": "至高の幸福をあなたにッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b08f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00373",
    "kind": "engine",
    "jp": "そんな事したら",
    "en": "",
@@ -113972,7 +116790,57 @@
    "max_cells": 7
   },
   {
-   "id": "e00097",
+   "id": "e00374",
+   "kind": "engine",
+   "jp": "痛いでしょ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b104"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00375",
+   "kind": "engine",
+   "jp": "やめてよね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b129"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00376",
+   "kind": "engine",
+   "jp": "てっへへ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b146"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00377",
+   "kind": "engine",
+   "jp": "ちょろいちょろい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b16a"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00378",
+   "kind": "engine",
+   "jp": "くすくすッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b18a"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00379",
    "kind": "engine",
    "jp": "そんな攻撃じゃ",
    "en": "",
@@ -113982,7 +116850,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00098",
+   "id": "e00380",
+   "kind": "engine",
+   "jp": "小学生だって泣かないわァ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b1b0"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00381",
+   "kind": "engine",
+   "jp": "もう悪い事しませ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b1e7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00382",
+   "kind": "engine",
+   "jp": "ごめんなさ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b208"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00383",
    "kind": "engine",
    "jp": "ロックンロールで",
    "en": "",
@@ -113992,7 +116890,87 @@
    "max_cells": 8
   },
   {
-   "id": "e00099",
+   "id": "e00384",
+   "kind": "engine",
+   "jp": "ツイスト＆シャウトよォオ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b23a"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00385",
+   "kind": "engine",
+   "jp": "ジェニジェニジェニ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b25b"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00386",
+   "kind": "engine",
+   "jp": "愛はお金じゃ買えない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b29f"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00387",
+   "kind": "engine",
+   "jp": "愛でお金は稼げるの@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b2d7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00388",
+   "kind": "engine",
+   "jp": "愛はミステリ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b2fc"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00389",
+   "kind": "engine",
+   "jp": "にたにた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b328"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00390",
+   "kind": "engine",
+   "jp": "うひひひ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b34d"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00391",
+   "kind": "engine",
+   "jp": "うはははははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b379"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00392",
    "kind": "engine",
    "jp": "修行に修行を積んだ",
    "en": "",
@@ -114002,7 +116980,67 @@
    "max_cells": 9
   },
   {
-   "id": "e00100",
+   "id": "e00393",
+   "kind": "engine",
+   "jp": "岩石オープンチョ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b439"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00394",
+   "kind": "engine",
+   "jp": "２０Ｇでどうかしら",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b467"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00395",
+   "kind": "engine",
+   "jp": "パフパフパフ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b47c"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00396",
+   "kind": "engine",
+   "jp": "たぁぁぁあああ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b4bc"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00397",
+   "kind": "engine",
+   "jp": "げれげれッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b4e8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00398",
+   "kind": "engine",
+   "jp": "ちょっとアンタねェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b4f9"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00399",
    "kind": "engine",
    "jp": "アタシにそんなことして",
    "en": "",
@@ -114012,7 +117050,27 @@
    "max_cells": 11
   },
   {
-   "id": "e00101",
+   "id": "e00400",
+   "kind": "engine",
+   "jp": "タダで済むと思ってんのォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b529"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00401",
+   "kind": "engine",
+   "jp": "ふふふのフン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b546"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00402",
    "kind": "engine",
    "jp": "アンタの攻撃なんて",
    "en": "",
@@ -114022,7 +117080,237 @@
    "max_cells": 9
   },
   {
-   "id": "e00102",
+   "id": "e00403",
+   "kind": "engine",
+   "jp": "まる見えよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b56c"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00404",
+   "kind": "engine",
+   "jp": "ついでにパンツもマル見え@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b57f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00405",
+   "kind": "engine",
+   "jp": "んな攻撃なんか",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b5a6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00406",
+   "kind": "engine",
+   "jp": "んぜん効かないわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b5bf"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00407",
+   "kind": "engine",
+   "jp": "バカバカバ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b5e9"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00408",
+   "kind": "engine",
+   "jp": "ぐふぅっっっっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b608"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00409",
+   "kind": "engine",
+   "jp": "なんて事なのッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b62b"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00410",
+   "kind": "engine",
+   "jp": "くやしぃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b667"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00411",
+   "kind": "engine",
+   "jp": "くねくねくね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b688"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00412",
+   "kind": "engine",
+   "jp": "くにゃくにゃくにゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b69d"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00413",
+   "kind": "engine",
+   "jp": "うねうねうねうねうね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b6b8"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00414",
+   "kind": "engine",
+   "jp": "毒の沼を越えて@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b735"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00415",
+   "kind": "engine",
+   "jp": "ぎゃはははははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b770"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00416",
+   "kind": "engine",
+   "jp": "ひっひっひっひっひ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b7b8"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00417",
+   "kind": "engine",
+   "jp": "かっかっかっかっか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b7db"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00418",
+   "kind": "engine",
+   "jp": "アルアルアルアル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b837"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00419",
+   "kind": "engine",
+   "jp": "そうでア@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b858"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00420",
+   "kind": "engine",
+   "jp": "ちゃはァァァァアア@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b877"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00421",
+   "kind": "engine",
+   "jp": "ちゃはははははァアア@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b8cc"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00422",
+   "kind": "engine",
+   "jp": "野人もビックリ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b8fe"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00423",
+   "kind": "engine",
+   "jp": "タマネギの皮むき@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b915"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00424",
+   "kind": "engine",
+   "jp": "冥土の土産に取っとくアル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b92e"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00425",
+   "kind": "engine",
+   "jp": "点棒ダイナマ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b968"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00426",
    "kind": "engine",
    "jp": "中国四千年級のダメージを",
    "en": "",
@@ -114032,7 +117320,77 @@
    "max_cells": 12
   },
   {
-   "id": "e00103",
+   "id": "e00427",
+   "kind": "engine",
+   "jp": "くらってしまったアル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b9b1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00428",
+   "kind": "engine",
+   "jp": "ちゃはッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b9d0"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00429",
+   "kind": "engine",
+   "jp": "攻撃をかわせたアル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:b9fa"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00430",
+   "kind": "engine",
+   "jp": "ちゃはは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ba15"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00431",
+   "kind": "engine",
+   "jp": "そんな攻撃無力アル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ba3d"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00432",
+   "kind": "engine",
+   "jp": "くくくぅぅぅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ba54"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00433",
+   "kind": "engine",
+   "jp": "負けてしまったアル@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ba6d"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00434",
    "kind": "engine",
    "jp": "普通の女の子に戻って",
    "en": "",
@@ -114042,7 +117400,208 @@
    "max_cells": 10
   },
   {
-   "id": "e00104",
+   "id": "e00435",
+   "kind": "engine",
+   "jp": "踊り踊るなァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bad3"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00436",
+   "kind": "engine",
+   "jp": "ちょいと上海音頭ォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb00"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00437",
+   "kind": "engine",
+   "jp": "シャンシャン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb1d"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00438",
+   "kind": "engine",
+   "jp": "ハイハイ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb31"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00439",
+   "kind": "engine",
+   "jp": "ゆんぱおちんちゅん@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb4e"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00440",
+   "kind": "engine",
+   "jp": "ちゃいちゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb6f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00441",
+   "kind": "engine",
+   "jp": "ほんこんが@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bb86"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00442",
+   "kind": "engine",
+   "jp": "まんちゅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bbb3"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00443",
+   "kind": "engine",
+   "jp": "はっはっは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bbd8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00444",
+   "kind": "engine",
+   "jp": "あはははははははっは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bbe9"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00445",
+   "kind": "engine",
+   "jp": "ちゃははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bc08"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00446",
+   "kind": "engine",
+   "jp": "はっはっはっはっは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bc25"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00447",
+   "kind": "engine",
+   "jp": "でんねん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bc71",
+    "NRS2FGT.CMD:c100"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00448",
+   "kind": "engine",
+   "jp": "ここわどこやね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bc83"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00449",
+   "kind": "engine",
+   "jp": "うちは誰やね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bca4"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00450",
+   "kind": "engine",
+   "jp": "うりゃぁぁああ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bcc5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00451",
+   "kind": "engine",
+   "jp": "スプラッシュマウンテンや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bcf3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00452",
+   "kind": "engine",
+   "jp": "大阪名物びろびろ攻撃やァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bd10"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00453",
+   "kind": "engine",
+   "jp": "２割３割はあたりまえ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bdb5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00454",
+   "kind": "engine",
+   "jp": "どんどん割引まっせ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bdd0"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00455",
    "kind": "engine",
    "jp": "ちったあ手加減してくれても",
    "en": "",
@@ -114052,7 +117611,27 @@
    "max_cells": 13
   },
   {
-   "id": "e00105",
+   "id": "e00456",
+   "kind": "engine",
+   "jp": "ええのんちゃうか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:be1b"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00457",
+   "kind": "engine",
+   "jp": "ほいさっさ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:be36"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00458",
    "kind": "engine",
    "jp": "そんなドンくさい攻撃",
    "en": "",
@@ -114062,7 +117641,27 @@
    "max_cells": 10
   },
   {
-   "id": "e00106",
+   "id": "e00459",
+   "kind": "engine",
+   "jp": "うちの敵やおまへんで@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:be64"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00460",
+   "kind": "engine",
+   "jp": "てなもんや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:be81"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00461",
    "kind": "engine",
    "jp": "そんなん",
    "en": "",
@@ -114072,7 +117671,47 @@
    "max_cells": 4
   },
   {
-   "id": "e00107",
+   "id": "e00462",
+   "kind": "engine",
+   "jp": "全然痛ないでぇ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:be9f"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00463",
+   "kind": "engine",
+   "jp": "うちとしたことが@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bebc"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00464",
+   "kind": "engine",
+   "jp": "油断してもうたわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bed7"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00465",
+   "kind": "engine",
+   "jp": "アンタは偉い奴ちゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bf09"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00466",
    "kind": "engine",
    "jp": "それをまけたら",
    "en": "",
@@ -114082,7 +117721,17 @@
    "max_cells": 7
   },
   {
-   "id": "e00108",
+   "id": "e00467",
+   "kind": "engine",
+   "jp": "商売あがったりやがな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bf35"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00468",
    "kind": "engine",
    "jp": "これだけは",
    "en": "",
@@ -114092,7 +117741,117 @@
    "max_cells": 5
   },
   {
-   "id": "e00109",
+   "id": "e00469",
+   "kind": "engine",
+   "jp": "まけられへんなあ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bf5f"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00470",
+   "kind": "engine",
+   "jp": "どだだだだだだだ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bfc6"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00471",
+   "kind": "engine",
+   "jp": "でででででんね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:bfe9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00472",
+   "kind": "engine",
+   "jp": "大阪でぇぇえ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c015"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00473",
+   "kind": "engine",
+   "jp": "生まれたぁぁあ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c034"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00474",
+   "kind": "engine",
+   "jp": "女はサイバ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c059"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00475",
+   "kind": "engine",
+   "jp": "勉強させてもらいま@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c074"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00476",
+   "kind": "engine",
+   "jp": "うひゃひゃひゃひゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c08f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00477",
+   "kind": "engine",
+   "jp": "ひゃっひゃっひゃっひゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c0ae"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00478",
+   "kind": "engine",
+   "jp": "うひひうひうひうひひひひ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c0cd"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00479",
+   "kind": "engine",
+   "jp": "んぼぼぼぼ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c16b"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00480",
    "kind": "engine",
    "jp": "ぶったるんだ腐れ根性に",
    "en": "",
@@ -114102,7 +117861,77 @@
    "max_cells": 11
   },
   {
-   "id": "e00110",
+   "id": "e00481",
+   "kind": "engine",
+   "jp": "ヤキ入れたるでぇええええ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c19d"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00482",
+   "kind": "engine",
+   "jp": "おりゃぁぁああ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c1bc"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00483",
+   "kind": "engine",
+   "jp": "千本ノックハリセ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c1d5"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00484",
+   "kind": "engine",
+   "jp": "ぱちぱちパ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c22a"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00485",
+   "kind": "engine",
+   "jp": "ネル",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c27d"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00486",
+   "kind": "engine",
+   "jp": "サンダ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c283"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00487",
+   "kind": "engine",
+   "jp": "痛ったぁっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c2b1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00488",
    "kind": "engine",
    "jp": "でもこんな事じゃ",
    "en": "",
@@ -114112,7 +117941,27 @@
    "max_cells": 8
   },
   {
-   "id": "e00111",
+   "id": "e00489",
+   "kind": "engine",
+   "jp": "負けへんでェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c2d5"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00490",
+   "kind": "engine",
+   "jp": "スローモションとちゃうで@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c2fd"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00491",
    "kind": "engine",
    "jp": "そんなトロ臭い攻撃",
    "en": "",
@@ -114122,7 +117971,17 @@
    "max_cells": 9
   },
   {
-   "id": "e00112",
+   "id": "e00492",
+   "kind": "engine",
+   "jp": "当たってたまるかいな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c32f"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00493",
    "kind": "engine",
    "jp": "大リーグボール養成ギブスで",
    "en": "",
@@ -114132,7 +117991,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00113",
+   "id": "e00494",
    "kind": "engine",
    "jp": "鍛え上げたカラダに",
    "en": "",
@@ -114142,7 +118001,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00114",
+   "id": "e00495",
    "kind": "engine",
    "jp": "そんな攻撃が",
    "en": "",
@@ -114152,7 +118011,37 @@
    "max_cells": 6
   },
   {
-   "id": "e00115",
+   "id": "e00496",
+   "kind": "engine",
+   "jp": "効く思てんのかァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c38d"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00497",
+   "kind": "engine",
+   "jp": "ごっつう遠かったみたいや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c3c8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00498",
+   "kind": "engine",
+   "jp": "またしばらく山ごもりや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c3e7"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00499",
    "kind": "engine",
    "jp": "オイラに",
    "en": "",
@@ -114162,7 +118051,17 @@
    "max_cells": 4
   },
   {
-   "id": "e00116",
+   "id": "e00500",
+   "kind": "engine",
+   "jp": "打てへんモンはないんやッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c40d"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00501",
    "kind": "engine",
    "jp": "あんたの攻撃なんか",
    "en": "",
@@ -114172,7 +118071,178 @@
    "max_cells": 9
   },
   {
-   "id": "e00117",
+   "id": "e00502",
+   "kind": "engine",
+   "jp": "打ち返したるわいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c441"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00503",
+   "kind": "engine",
+   "jp": "やぁきゅぅう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c466"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00504",
+   "kind": "engine",
+   "jp": "すぅうるなら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c47d"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00505",
+   "kind": "engine",
+   "jp": "よよいのよいよいよいよい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c4bb"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00506",
+   "kind": "engine",
+   "jp": "野球小僧を知ってるか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c4e4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00507",
+   "kind": "engine",
+   "jp": "燃える瞳に虎吼える@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c503"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00508",
+   "kind": "engine",
+   "jp": "六甲おろしに颯爽とォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c528"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00509",
+   "kind": "engine",
+   "jp": "おいしい水を飲んでいる@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c54d"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00510",
+   "kind": "engine",
+   "jp": "っすっすストライク@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c572"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00511",
+   "kind": "engine",
+   "jp": "っぼっぼボ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c595"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00512",
+   "kind": "engine",
+   "jp": "ふぁっふぁファ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c5ba"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00513",
+   "kind": "engine",
+   "jp": "っほっほホームラン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c5e1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00514",
+   "kind": "engine",
+   "jp": "うにゅうにゅタコラ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c63f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00515",
+   "kind": "engine",
+   "jp": "くれくれタコラ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c660"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00516",
+   "kind": "engine",
+   "jp": "８連発オクトパシ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c679"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00517",
+   "kind": "engine",
+   "jp": "マドモアゼ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c70a",
+    "NRS2FGT.CMD:c7f0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00518",
+   "kind": "engine",
+   "jp": "ちょいと失礼ざんす@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c725"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00519",
    "kind": "engine",
    "jp": "パンツの中に",
    "en": "",
@@ -114182,7 +118252,37 @@
    "max_cells": 6
   },
   {
-   "id": "e00118",
+   "id": "e00520",
+   "kind": "engine",
+   "jp": "ミーのトレビア@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c780"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00521",
+   "kind": "engine",
+   "jp": "連鎖攻撃を受けるざんすっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c79b"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00522",
+   "kind": "engine",
+   "jp": "ふぁいや@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c7bd"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00523",
    "kind": "engine",
    "jp": "なかなかやるやんけ",
    "en": "",
@@ -114192,7 +118292,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00119",
+   "id": "e00524",
    "kind": "engine",
    "jp": "でもミーは負けないざんすよ",
    "en": "",
@@ -114202,7 +118302,17 @@
    "max_cells": 13
   },
   {
-   "id": "e00120",
+   "id": "e00525",
+   "kind": "engine",
+   "jp": "ふはははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c830"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00526",
    "kind": "engine",
    "jp": "今頃ミーのすばやさに",
    "en": "",
@@ -114212,7 +118322,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00121",
+   "id": "e00527",
+   "kind": "engine",
+   "jp": "驚いても遅いざんす@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c85a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00528",
    "kind": "engine",
    "jp": "ミーは痛くもかゆくも",
    "en": "",
@@ -114222,7 +118342,37 @@
    "max_cells": 10
   },
   {
-   "id": "e00122",
+   "id": "e00529",
+   "kind": "engine",
+   "jp": "ないざんすよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c8a0"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00530",
+   "kind": "engine",
+   "jp": "お、俺はいったい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c8d2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00531",
+   "kind": "engine",
+   "jp": "何をしていたんだ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c8fe"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00532",
    "kind": "engine",
    "jp": "フランス革命以来、",
    "en": "",
@@ -114232,7 +118382,17 @@
    "max_cells": 9
   },
   {
-   "id": "e00123",
+   "id": "e00533",
+   "kind": "engine",
+   "jp": "タコはマヒしないざんすよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c92c"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00534",
    "kind": "engine",
    "jp": "国会で青島ユキオが",
    "en": "",
@@ -114242,7 +118402,187 @@
    "max_cells": 9
   },
   {
-   "id": "e00124",
+   "id": "e00535",
+   "kind": "engine",
+   "jp": "決めたざんす@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c95e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00536",
+   "kind": "engine",
+   "jp": "すりゃいいのさァ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c991"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00537",
+   "kind": "engine",
+   "jp": "タコのふんどしィ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c9a4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00538",
+   "kind": "engine",
+   "jp": "あっそこかな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:c9e6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00539",
+   "kind": "engine",
+   "jp": "でっかい海が@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ca17"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00540",
+   "kind": "engine",
+   "jp": "呼んでいるゥ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ca2e"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00541",
+   "kind": "engine",
+   "jp": "ボンジュ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ca5c"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00542",
+   "kind": "engine",
+   "jp": "たここここここここ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ca7c"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00543",
+   "kind": "engine",
+   "jp": "っこっこ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:caad"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00544",
+   "kind": "engine",
+   "jp": "たこたこたこたこ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cabc"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00545",
+   "kind": "engine",
+   "jp": "たこっで@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cad7"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00546",
+   "kind": "engine",
+   "jp": "行くわよっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cb77"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00547",
+   "kind": "engine",
+   "jp": "電撃にせもんパーンチ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cb8a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00548",
+   "kind": "engine",
+   "jp": "すすすすすすすすす@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cba6"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00549",
+   "kind": "engine",
+   "jp": "っとなぞった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cc0d"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00550",
+   "kind": "engine",
+   "jp": "行くわよォオオ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cc22"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00551",
+   "kind": "engine",
+   "jp": "スキャニングビ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cc44"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00552",
+   "kind": "engine",
+   "jp": "カラスが泣いている@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cd22"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00553",
    "kind": "engine",
    "jp": "アンタのプラズマなんて",
    "en": "",
@@ -114252,7 +118592,48 @@
    "max_cells": 11
   },
   {
-   "id": "e00125",
+   "id": "e00554",
+   "kind": "engine",
+   "jp": "効かないよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cd92"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00555",
+   "kind": "engine",
+   "jp": "アースぅ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ce85",
+    "NRS2FGT.CMD:ce95"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00556",
+   "kind": "engine",
+   "jp": "でんげきアースぅう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ceac"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00557",
+   "kind": "engine",
+   "jp": "です。ハイ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cf71"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00558",
    "kind": "engine",
    "jp": "ドリリンが敵だった事を",
    "en": "",
@@ -114262,7 +118643,87 @@
    "max_cells": 11
   },
   {
-   "id": "e00126",
+   "id": "e00559",
+   "kind": "engine",
+   "jp": "後悔するです。ハイ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cf9a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00560",
+   "kind": "engine",
+   "jp": "ドリルヘッドバ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cfbb"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00561",
+   "kind": "engine",
+   "jp": "えへえへ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cfda"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00562",
+   "kind": "engine",
+   "jp": "ドリリン特製@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cfe9"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00563",
+   "kind": "engine",
+   "jp": "鼻クソばくだ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:cffc"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00564",
+   "kind": "engine",
+   "jp": "ドリリンは不良になった@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d020"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00565",
+   "kind": "engine",
+   "jp": "よォよォね@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d040"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00566",
+   "kind": "engine",
+   "jp": "チャンよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d050"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00567",
    "kind": "engine",
    "jp": "痛い目見ないうちに",
    "en": "",
@@ -114272,7 +118733,147 @@
    "max_cells": 9
   },
   {
-   "id": "e00127",
+   "id": "e00568",
+   "kind": "engine",
+   "jp": "出すモンだしな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d076"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00569",
+   "kind": "engine",
+   "jp": "ふぇぇぇええええん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d095"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00570",
+   "kind": "engine",
+   "jp": "ぐしぐしぐしぐし@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d0b0"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00571",
+   "kind": "engine",
+   "jp": "痛かったですゥ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d0c9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00572",
+   "kind": "engine",
+   "jp": "やったァァアア@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d0e4"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00573",
+   "kind": "engine",
+   "jp": "当たらなかったです@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d0ff"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00574",
+   "kind": "engine",
+   "jp": "えへへのへ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d141"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00575",
+   "kind": "engine",
+   "jp": "ドリリンは強い子@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d161"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00576",
+   "kind": "engine",
+   "jp": "象が踏んでも壊れない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d182"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00577",
+   "kind": "engine",
+   "jp": "だから、全然痛くな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d1a7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00578",
+   "kind": "engine",
+   "jp": "負けちゃったです@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d1f8"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00579",
+   "kind": "engine",
+   "jp": "もっといっぱいお勉強して@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d211"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00580",
+   "kind": "engine",
+   "jp": "もっともっともっともっと@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d230"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00581",
+   "kind": "engine",
+   "jp": "お利口さんになるです@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d24f"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00582",
    "kind": "engine",
    "jp": "ドリリンは",
    "en": "",
@@ -114282,7 +118883,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00128",
+   "id": "e00583",
    "kind": "engine",
    "jp": "お利口さんだから",
    "en": "",
@@ -114292,7 +118893,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00129",
+   "id": "e00584",
    "kind": "engine",
    "jp": "バカにはならないと",
    "en": "",
@@ -114302,7 +118903,47 @@
    "max_cells": 9
   },
   {
-   "id": "e00130",
+   "id": "e00585",
+   "kind": "engine",
+   "jp": "思いますです。ハイ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d29f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00586",
+   "kind": "engine",
+   "jp": "ばぶばぶ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d2d9"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00587",
+   "kind": "engine",
+   "jp": "バブルスタ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d31c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00588",
+   "kind": "engine",
+   "jp": "マルチイリュ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d337"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00589",
    "kind": "engine",
    "jp": "バブリンは",
    "en": "",
@@ -114312,7 +118953,78 @@
    "max_cells": 5
   },
   {
-   "id": "e00131",
+   "id": "e00590",
+   "kind": "engine",
+   "jp": "ハマグリを投げつけた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d3a6"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00591",
+   "kind": "engine",
+   "jp": "痛いですわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d418"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00592",
+   "kind": "engine",
+   "jp": "もうもうもうもう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d435"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00593",
+   "kind": "engine",
+   "jp": "バブリン怒ったからねっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d44c"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00594",
+   "kind": "engine",
+   "jp": "きゃははん@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d46b",
+    "NRS2FGT.CMD:d4df"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00595",
+   "kind": "engine",
+   "jp": "へたくそ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d4c6"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00596",
+   "kind": "engine",
+   "jp": "んぜん痛くないも@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d500"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00597",
    "kind": "engine",
    "jp": "そんなの何度くらっても",
    "en": "",
@@ -114322,7 +119034,27 @@
    "max_cells": 11
   },
   {
-   "id": "e00132",
+   "id": "e00598",
+   "kind": "engine",
+   "jp": "きゃうぅぅぅぅん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d553"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00599",
+   "kind": "engine",
+   "jp": "ぐすぐすひんひんすんすん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d56a"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00600",
    "kind": "engine",
    "jp": "アナタに負けちゃうなんて",
    "en": "",
@@ -114332,7 +119064,17 @@
    "max_cells": 12
   },
   {
-   "id": "e00133",
+   "id": "e00601",
+   "kind": "engine",
+   "jp": "バブリン大ショ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d5a2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00602",
    "kind": "engine",
    "jp": "バカは、おバカな人しか",
    "en": "",
@@ -114342,7 +119084,67 @@
    "max_cells": 11
   },
   {
-   "id": "e00134",
+   "id": "e00603",
+   "kind": "engine",
+   "jp": "ならないのよォ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d5f7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00604",
+   "kind": "engine",
+   "jp": "バブリンには効かないわァ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d614"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00605",
+   "kind": "engine",
+   "jp": "ねへねへねへねへ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d66d"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00606",
+   "kind": "engine",
+   "jp": "すぽぽぽぽ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d684"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00607",
+   "kind": "engine",
+   "jp": "たぁぁぁああああああッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d6c2"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00608",
+   "kind": "engine",
+   "jp": "ベルリンの黒い雨ッ@C6@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d6e1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00609",
    "kind": "engine",
    "jp": "これでも食べて",
    "en": "",
@@ -114352,7 +119154,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00135",
+   "id": "e00610",
+   "kind": "engine",
+   "jp": "お腹を壊しなさいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d71d"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00611",
+   "kind": "engine",
+   "jp": "極太フランクフルト@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d736"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00612",
+   "kind": "engine",
+   "jp": "カール・ゴッチ直伝@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d753"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00613",
    "kind": "engine",
    "jp": "ジャーマン",
    "en": "",
@@ -114362,7 +119194,37 @@
    "max_cells": 5
   },
   {
-   "id": "e00136",
+   "id": "e00614",
+   "kind": "engine",
+   "jp": "スープレックスホールド@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d790"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00615",
+   "kind": "engine",
+   "jp": "やってくれるじゃないの@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d7ba"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00616",
+   "kind": "engine",
+   "jp": "この痛みは忘れないわよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d7d7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00617",
    "kind": "engine",
    "jp": "ちゃんと目は",
    "en": "",
@@ -114372,7 +119234,37 @@
    "max_cells": 6
   },
   {
-   "id": "e00137",
+   "id": "e00618",
+   "kind": "engine",
+   "jp": "付いてるのかしらァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d814"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00619",
+   "kind": "engine",
+   "jp": "全然当たらないわよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d82d"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00620",
+   "kind": "engine",
+   "jp": "ふふふふッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d848"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00621",
    "kind": "engine",
    "jp": "へなちょこ攻撃",
    "en": "",
@@ -114382,7 +119274,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00138",
+   "id": "e00622",
+   "kind": "engine",
+   "jp": "ダメージナッシングだわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d86f"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00623",
+   "kind": "engine",
+   "jp": "小娘だと思って油断した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d89b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00624",
+   "kind": "engine",
+   "jp": "ゲルマン魂は不滅よ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d8d7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00625",
    "kind": "engine",
    "jp": "そんなフニャフニャした",
    "en": "",
@@ -114392,7 +119314,17 @@
    "max_cells": 11
   },
   {
-   "id": "e00139",
+   "id": "e00626",
+   "kind": "engine",
+   "jp": "おもちゃは通用しないわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d90b"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00627",
    "kind": "engine",
    "jp": "ベンツのように",
    "en": "",
@@ -114402,7 +119334,257 @@
    "max_cells": 7
   },
   {
-   "id": "e00140",
+   "id": "e00628",
+   "kind": "engine",
+   "jp": "頑強なのにしたらどう",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d939"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00629",
+   "kind": "engine",
+   "jp": "ずんちゃっちゃ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d95c"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00630",
+   "kind": "engine",
+   "jp": "ずんちゃっちゃ@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d96d"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00631",
+   "kind": "engine",
+   "jp": "ラインの畔で",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d994"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00632",
+   "kind": "engine",
+   "jp": "踊るワルツの調べだわァ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d9a1"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00633",
+   "kind": "engine",
+   "jp": "ちたまよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d9d8"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00634",
+   "kind": "engine",
+   "jp": "ニコちゃん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:d9e9"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00635",
+   "kind": "engine",
+   "jp": "乗ってみたいな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:da10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00636",
+   "kind": "engine",
+   "jp": "ド、ド、ドイツの大爆笑@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:da5c"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00637",
+   "kind": "engine",
+   "jp": "うほほほほぽるしぇ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:da79"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00638",
+   "kind": "engine",
+   "jp": "うへへへへべんつ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:da98"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00639",
+   "kind": "engine",
+   "jp": "ぬわわわわわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dab7"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00640",
+   "kind": "engine",
+   "jp": "にゃにゃにゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:db0d"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00641",
+   "kind": "engine",
+   "jp": "ごろごろごろごろにゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:db22"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00642",
+   "kind": "engine",
+   "jp": "うにゃぁぁぁああ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:db46"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00643",
+   "kind": "engine",
+   "jp": "ペロペロペロリ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:db7a"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00644",
+   "kind": "engine",
+   "jp": "ニャンニャン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:db9c"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00645",
+   "kind": "engine",
+   "jp": "おいしい足の裏ニャン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dbb1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00646",
+   "kind": "engine",
+   "jp": "ニャニャニャ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dbcd"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00647",
+   "kind": "engine",
+   "jp": "ロケットパ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dbea"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00648",
+   "kind": "engine",
+   "jp": "やめて欲しいニャ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dc29"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00649",
+   "kind": "engine",
+   "jp": "ニャハハハハニャ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dc4b"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00650",
+   "kind": "engine",
+   "jp": "かすりもしないニャ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dc6e"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00651",
+   "kind": "engine",
+   "jp": "にゃにゃん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dc8f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00652",
+   "kind": "engine",
+   "jp": "ダメージを受けないニャン@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dca0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00653",
    "kind": "engine",
    "jp": "ニャンは悪魔の力を",
    "en": "",
@@ -114412,7 +119594,27 @@
    "max_cells": 9
   },
   {
-   "id": "e00141",
+   "id": "e00654",
+   "kind": "engine",
+   "jp": "授かったニャン",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dcd2"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00655",
+   "kind": "engine",
+   "jp": "ごめんニャさ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dcfe"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00656",
    "kind": "engine",
    "jp": "ごろごろごろごろ",
    "en": "",
@@ -114422,7 +119624,180 @@
    "max_cells": 8
   },
   {
-   "id": "e00142",
+   "id": "e00657",
+   "kind": "engine",
+   "jp": "れっつふぃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dd7f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00658",
+   "kind": "engine",
+   "jp": "にこにこにゃんにゃん",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ddcf"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00659",
+   "kind": "engine",
+   "jp": "にこにこぷん@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dde6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00660",
+   "kind": "engine",
+   "jp": "ネズミもペンギンも",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:de05"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00661",
+   "kind": "engine",
+   "jp": "にゃははははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:de3d",
+    "NRS2FGT.CMD:de7b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00662",
+   "kind": "engine",
+   "jp": "にゃにゃにゃにゃにゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:de5c",
+    "NRS2FGT.CMD:de9a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00663",
+   "kind": "engine",
+   "jp": "はらほれひろはら@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:ded8"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00664",
+   "kind": "engine",
+   "jp": "けけけッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:def3",
+    "NRS2FGT.CMD:e125"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00665",
+   "kind": "engine",
+   "jp": "デスクラッシャ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:df21"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00666",
+   "kind": "engine",
+   "jp": "パンツのゴムぷっち@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:df3c"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00667",
+   "kind": "engine",
+   "jp": "オカマの釜でぇぇえええい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:df74"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00668",
+   "kind": "engine",
+   "jp": "大魔王ルシファー@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:df91"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00669",
+   "kind": "engine",
+   "jp": "赤い血と薔薇の契約により@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dfa8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00670",
+   "kind": "engine",
+   "jp": "今、闇の扉が開かれん@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:dfc7"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00671",
+   "kind": "engine",
+   "jp": "なかなかやるじゃねぇか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e010"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00672",
+   "kind": "engine",
+   "jp": "オイラは負けねえぜ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e037"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00673",
+   "kind": "engine",
+   "jp": "けけけけッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e052"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00674",
    "kind": "engine",
    "jp": "当たりもしねえ攻撃を",
    "en": "",
@@ -114432,7 +119807,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00143",
+   "id": "e00675",
    "kind": "engine",
    "jp": "タラタラ",
    "en": "",
@@ -114442,7 +119817,207 @@
    "max_cells": 4
   },
   {
-   "id": "e00144",
+   "id": "e00676",
+   "kind": "engine",
+   "jp": "やってんじゃねえぜ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e081"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00677",
+   "kind": "engine",
+   "jp": "そんな攻撃屁でもねえぜッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e0a8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00678",
+   "kind": "engine",
+   "jp": "ち、ちきしょう@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e0c9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00679",
+   "kind": "engine",
+   "jp": "こ、こんな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e0e2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00680",
+   "kind": "engine",
+   "jp": "こんなハズじゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e0f5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00681",
+   "kind": "engine",
+   "jp": "なかったのに@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e10c"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00682",
+   "kind": "engine",
+   "jp": "オイラにマヒは効かねえぜ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e134"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00683",
+   "kind": "engine",
+   "jp": "やめた方が利口だぜッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e160"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00684",
+   "kind": "engine",
+   "jp": "マンボォォオ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e189"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00685",
+   "kind": "engine",
+   "jp": "すっちゃちゃらっちゃ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e1a8"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00686",
+   "kind": "engine",
+   "jp": "すっちゃちゃらっちゃ@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e1bf"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00687",
+   "kind": "engine",
+   "jp": "けッ、ラテンの血が騒ぐぜ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e1e0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00688",
+   "kind": "engine",
+   "jp": "けっけけけけのけ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e209"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00689",
+   "kind": "engine",
+   "jp": "朝は寝床でグゥグゥグゥ@C1@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e224"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00690",
+   "kind": "engine",
+   "jp": "夜は墓場でグゥグゥグゥ",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e24d"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00691",
+   "kind": "engine",
+   "jp": "うらやましいな@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e266"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00692",
+   "kind": "engine",
+   "jp": "けけけけけけけけ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e280"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00693",
+   "kind": "engine",
+   "jp": "っけっけっけっけ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e2a3"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00694",
+   "kind": "engine",
+   "jp": "けけけけけけけ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e2ba"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00695",
+   "kind": "engine",
+   "jp": "おっぺけけ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e2d5"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00696",
    "kind": "engine",
    "jp": "虫ケラのように",
    "en": "",
@@ -114452,7 +120027,78 @@
    "max_cells": 7
   },
   {
-   "id": "e00145",
+   "id": "e00697",
+   "kind": "engine",
+   "jp": "死んでおしまいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e336"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00698",
+   "kind": "engine",
+   "jp": "ヘルブリザ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e34f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00699",
+   "kind": "engine",
+   "jp": "うふふふふッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e370"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00700",
+   "kind": "engine",
+   "jp": "結構イヤな性格なのよ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e38a"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00701",
+   "kind": "engine",
+   "jp": "お尻に画ビョウを刺した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e3c6"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00702",
+   "kind": "engine",
+   "jp": "うふふふ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e3e1",
+    "NRS2FGT.CMD:e594"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00703",
+   "kind": "engine",
+   "jp": "地獄で悪夢を見るがいいわ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e3f8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00704",
    "kind": "engine",
    "jp": "ヘルスエンジェル",
    "en": "",
@@ -114462,7 +120108,17 @@
    "max_cells": 8
   },
   {
-   "id": "e00146",
+   "id": "e00705",
+   "kind": "engine",
+   "jp": "ヒポノタ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e42e"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00706",
    "kind": "engine",
    "jp": "あまり私を",
    "en": "",
@@ -114472,7 +120128,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00147",
+   "id": "e00707",
    "kind": "engine",
    "jp": "怒らせない方が",
    "en": "",
@@ -114482,7 +120138,27 @@
    "max_cells": 7
   },
   {
-   "id": "e00148",
+   "id": "e00708",
+   "kind": "engine",
+   "jp": "身のためよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e474"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00709",
+   "kind": "engine",
+   "jp": "うふふっ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e491"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00710",
    "kind": "engine",
    "jp": "アナタの攻撃が当たるほど",
    "en": "",
@@ -114492,7 +120168,27 @@
    "max_cells": 12
   },
   {
-   "id": "e00149",
+   "id": "e00711",
+   "kind": "engine",
+   "jp": "間抜けじゃないわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e4c7"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00712",
+   "kind": "engine",
+   "jp": "あははははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e4de"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00713",
    "kind": "engine",
    "jp": "そんな攻撃で",
    "en": "",
@@ -114502,7 +120198,57 @@
    "max_cells": 6
   },
   {
-   "id": "e00150",
+   "id": "e00714",
+   "kind": "engine",
+   "jp": "私を倒すつもりなの",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e502"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00715",
+   "kind": "engine",
+   "jp": "私も甘く見られたものねッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e517"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00716",
+   "kind": "engine",
+   "jp": "このままじゃ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e562"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00717",
+   "kind": "engine",
+   "jp": "すませないわよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e579"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00718",
+   "kind": "engine",
+   "jp": "お馬鹿さんねェ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e5a3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00719",
    "kind": "engine",
    "jp": "そんな小細工は",
    "en": "",
@@ -114512,7 +120258,17 @@
    "max_cells": 7
   },
   {
-   "id": "e00151",
+   "id": "e00720",
+   "kind": "engine",
+   "jp": "通用しないわよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e5cb"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00721",
    "kind": "engine",
    "jp": "地獄でたっぷり",
    "en": "",
@@ -114522,7 +120278,37 @@
    "max_cells": 7
   },
   {
-   "id": "e00152",
+   "id": "e00722",
+   "kind": "engine",
+   "jp": "後悔するがいいわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e62a"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00723",
+   "kind": "engine",
+   "jp": "クリティカルクロ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e647"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00724",
+   "kind": "engine",
+   "jp": "あははははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e662"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00725",
    "kind": "engine",
    "jp": "アリゲーターナース様の",
    "en": "",
@@ -114532,7 +120318,17 @@
    "max_cells": 11
   },
   {
-   "id": "e00153",
+   "id": "e00726",
+   "kind": "engine",
+   "jp": "禁断の秘技を受けるがいい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e68c"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00727",
    "kind": "engine",
    "jp": "アリゲーターナースは",
    "en": "",
@@ -114543,7 +120339,27 @@
    "max_cells": 10
   },
   {
-   "id": "e00154",
+   "id": "e00728",
+   "kind": "engine",
+   "jp": "下駄を投げつけた@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e6e1"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00729",
+   "kind": "engine",
+   "jp": "新しい世界に祝福のブレス@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e6fe"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00730",
    "kind": "engine",
    "jp": "すべての醜い虫ケラ共は",
    "en": "",
@@ -114553,7 +120369,78 @@
    "max_cells": 11
   },
   {
-   "id": "e00155",
+   "id": "e00731",
+   "kind": "engine",
+   "jp": "滅び去るがいいわッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e734"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00732",
+   "kind": "engine",
+   "jp": "グゴォォォオオオオ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e74f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00733",
+   "kind": "engine",
+   "jp": "ラジウムを放射した@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e785"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00734",
+   "kind": "engine",
+   "jp": "な、なかなか@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e7af"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00735",
+   "kind": "engine",
+   "jp": "楽しませてくれるじゃない",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e7c8"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00736",
+   "kind": "engine",
+   "jp": "でも、勝負はこれからよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e7e3"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00737",
+   "kind": "engine",
+   "jp": "うふふふふ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e800",
+    "NRS2FGT.CMD:e92c"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00738",
    "kind": "engine",
    "jp": "アナタの攻撃なんて",
    "en": "",
@@ -114563,7 +120450,47 @@
    "max_cells": 9
   },
   {
-   "id": "e00156",
+   "id": "e00739",
+   "kind": "engine",
+   "jp": "見え見えなのよッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e824"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00740",
+   "kind": "engine",
+   "jp": "もう、あきらめなさいッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e83d"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00741",
+   "kind": "engine",
+   "jp": "あはははは@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e85a"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00742",
+   "kind": "engine",
+   "jp": "無駄な攻撃はやめなさい@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e86b"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00743",
    "kind": "engine",
    "jp": "アナタごときの力で",
    "en": "",
@@ -114573,7 +120500,57 @@
    "max_cells": 9
   },
   {
-   "id": "e00157",
+   "id": "e00744",
+   "kind": "engine",
+   "jp": "この私を倒せるワケがない@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e89b"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00745",
+   "kind": "engine",
+   "jp": "こ、これで@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e8d3"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00746",
+   "kind": "engine",
+   "jp": "すべては終わりだ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e8f0"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "e00747",
+   "kind": "engine",
+   "jp": "そして地球も@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e917"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00748",
+   "kind": "engine",
+   "jp": "何度言ったらワカるのッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e943"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00749",
    "kind": "engine",
    "jp": "この私に子供だましは",
    "en": "",
@@ -114583,7 +120560,17 @@
    "max_cells": 10
   },
   {
-   "id": "e00158",
+   "id": "e00750",
+   "kind": "engine",
+   "jp": "通用しないッ@0",
+   "en": "",
+   "refs": [
+    "NRS2FGT.CMD:e977"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00751",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",
    "en": "",
@@ -114593,7 +120580,27 @@
    "max_cells": 15
   },
   {
-   "id": "e00159",
+   "id": "e00752",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "N2.COM:0186"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00753",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "N2.COM:01b6"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00754",
    "kind": "engine",
    "jp": "電撃プロジェクト",
    "en": "",
@@ -114603,7 +120610,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00160",
+   "id": "e00755",
    "kind": "engine",
    "jp": "シナリオ・ゲームデザイン",
    "en": "",
@@ -114613,7 +120620,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00161",
+   "id": "e00756",
    "kind": "engine",
    "jp": "原画・キャラクターデザイン",
    "en": "",
@@ -114623,7 +120630,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00162",
+   "id": "e00757",
    "kind": "engine",
    "jp": "ＣＧ監修・ゲームデザイン",
    "en": "",
@@ -114633,7 +120640,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00163",
+   "id": "e00758",
    "kind": "engine",
    "jp": "シナリオプログラム",
    "en": "",
@@ -114643,7 +120650,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00164",
+   "id": "e00759",
    "kind": "engine",
    "jp": "戦闘・効果プログラム",
    "en": "",
@@ -114653,7 +120660,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00165",
+   "id": "e00760",
    "kind": "engine",
    "jp": "原画・ＣＧエディット",
    "en": "",
@@ -114663,7 +120670,7 @@
    "max_cells": 10
   },
   {
-   "id": "e00166",
+   "id": "e00761",
    "kind": "engine",
    "jp": "ＣＧエディット",
    "en": "",
@@ -114676,7 +120683,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00167",
+   "id": "e00762",
    "kind": "engine",
    "jp": "テストプレイ",
    "en": "",
@@ -114691,7 +120698,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00168",
+   "id": "e00763",
    "kind": "engine",
    "jp": "ひろもりさかな",
    "en": "",
@@ -114701,7 +120708,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00169",
+   "id": "e00764",
    "kind": "engine",
    "jp": "小林あんぷく",
    "en": "",
@@ -114711,7 +120718,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00170",
+   "id": "e00765",
    "kind": "engine",
    "jp": "シャイニング・フィンガー",
    "en": "",
@@ -114721,7 +120728,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00171",
+   "id": "e00766",
    "kind": "engine",
    "jp": "駄菓子屋ジョニー",
    "en": "",
@@ -114731,7 +120738,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00172",
+   "id": "e00767",
    "kind": "engine",
    "jp": "システム監修",
    "en": "",
@@ -114741,7 +120748,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00173",
+   "id": "e00768",
    "kind": "engine",
    "jp": "プロデュース",
    "en": "",
@@ -114751,7 +120758,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00174",
+   "id": "e00769",
    "kind": "engine",
    "jp": "カクテル・ソフト",
    "en": "",
@@ -114761,7 +120768,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00175",
+   "id": "e00770",
    "kind": "engine",
    "jp": "ラブコール",
    "en": "",
@@ -114771,7 +120778,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00176",
+   "id": "e00771",
    "kind": "engine",
    "jp": "宇宙の果て",
    "en": "",
@@ -114781,7 +120788,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00177",
+   "id": "e00772",
    "kind": "engine",
    "jp": "帰れない",
    "en": "",
@@ -114791,7 +120798,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00178",
+   "id": "e00773",
    "kind": "engine",
    "jp": "魔法の涙",
    "en": "",
@@ -114801,7 +120808,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00179",
+   "id": "e00774",
    "kind": "engine",
    "jp": "詰め込んだ",
    "en": "",
@@ -114811,7 +120818,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00180",
+   "id": "e00775",
    "kind": "engine",
    "jp": "ピストルで",
    "en": "",
@@ -114821,7 +120828,47 @@
    "max_cells": 5
   },
   {
-   "id": "e00181",
+   "id": "e00776",
+   "kind": "engine",
+   "jp": "あなたの胸",
+   "en": "",
+   "refs": [
+    "TCM/NRS2OPEN.TCM:1775"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00777",
+   "kind": "engine",
+   "jp": "粉々に",
+   "en": "",
+   "refs": [
+    "TCM/NRS2OPEN.TCM:1781"
+   ],
+   "max_cells": 3
+  },
+  {
+   "id": "e00778",
+   "kind": "engine",
+   "jp": "吹き飛ばす",
+   "en": "",
+   "refs": [
+    "TCM/NRS2OPEN.TCM:1789"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "e00779",
+   "kind": "engine",
+   "jp": "COME ON ",
+   "en": "",
+   "refs": [
+    "TCM/NRS2OPEN.TCM:1795"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00780",
    "kind": "engine",
    "jp": "髪の毛から",
    "en": "",
@@ -114831,7 +120878,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00182",
+   "id": "e00781",
    "kind": "engine",
    "jp": "つま先まで",
    "en": "",
@@ -114841,7 +120888,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00183",
+   "id": "e00782",
    "kind": "engine",
    "jp": "しびれるような ",
    "en": "",
@@ -114851,7 +120898,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00184",
+   "id": "e00783",
    "kind": "engine",
    "jp": " 電気ショックのくちづけ ",
    "en": "",
@@ -114862,7 +120909,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00185",
+   "id": "e00784",
    "kind": "engine",
    "jp": "電撃ナース",
    "en": "",
@@ -114872,7 +120919,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00186",
+   "id": "e00785",
    "kind": "engine",
    "jp": "ブラックナースＲＸ",
    "en": "",
@@ -114882,7 +120929,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00187",
+   "id": "e00786",
    "kind": "engine",
    "jp": "なあなあナース",
    "en": "",
@@ -114892,7 +120939,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00188",
+   "id": "e00787",
    "kind": "engine",
    "jp": "鞭打ナース",
    "en": "",
@@ -114902,7 +120949,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00189",
+   "id": "e00788",
    "kind": "engine",
    "jp": "フローラ",
    "en": "",
@@ -114912,7 +120959,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00190",
+   "id": "e00789",
    "kind": "engine",
    "jp": "ビアンカ",
    "en": "",
@@ -114922,7 +120969,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00191",
+   "id": "e00790",
    "kind": "engine",
    "jp": "ちゃいちゃいナース",
    "en": "",
@@ -114932,7 +120979,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00192",
+   "id": "e00791",
    "kind": "engine",
    "jp": "サイデッカーナース",
    "en": "",
@@ -114942,7 +120989,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00193",
+   "id": "e00792",
    "kind": "engine",
    "jp": "タイガーナース",
    "en": "",
@@ -114952,7 +120999,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00194",
+   "id": "e00793",
    "kind": "engine",
    "jp": "ドクターＴＡＫＯ",
    "en": "",
@@ -114962,7 +121009,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00195",
+   "id": "e00794",
    "kind": "engine",
    "jp": "電撃アース",
    "en": "",
@@ -114972,7 +121019,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00196",
+   "id": "e00795",
    "kind": "engine",
    "jp": "ドリリン",
    "en": "",
@@ -114982,7 +121029,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00197",
+   "id": "e00796",
    "kind": "engine",
    "jp": "バブリン",
    "en": "",
@@ -114992,7 +121039,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00198",
+   "id": "e00797",
    "kind": "engine",
    "jp": "ナース元帥",
    "en": "",
@@ -115002,7 +121049,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00199",
+   "id": "e00798",
    "kind": "engine",
    "jp": "デビルニャン",
    "en": "",
@@ -115012,7 +121059,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00200",
+   "id": "e00799",
    "kind": "engine",
    "jp": "死神ナース",
    "en": "",
@@ -115022,7 +121069,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00201",
+   "id": "e00800",
    "kind": "engine",
    "jp": "地獄ナース",
    "en": "",
@@ -115032,7 +121079,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00202",
+   "id": "e00801",
    "kind": "engine",
    "jp": "アリゲーターナース",
    "en": "",
@@ -115042,7 +121089,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00203",
+   "id": "e00802",
    "kind": "engine",
    "jp": "電極２号Ｍｋ２",
    "en": "",

@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (at the disk's root), on 3 floppies: 76 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (at the disk's root), on 3 floppies: 76 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 The floppies have no room for a longer script, so the patch lays the game out on a DOS hard-disk image (every disk's files in `/`, with the scripts' drive letters taken off their file names, started as the floppy's boot does); the base image is the collection's `Naomi - Bishoujo-tachi no Yakata/Naomi - Bishoujo-tachi no Yakata [HD]/Naomi - Bishoujo-tachi no Yakata.hdi` with its own game removed.
 
@@ -32,9 +32,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-6626 strings (13 name tags (procedure text), 6348 messages, 263 menu items, 1 string variable values, 1 program strings).
+6628 strings (13 name tags (procedure text), 6348 messages, 263 menu items, 1 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6626 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6628 strings have English so far.
 
 ## Limits
 

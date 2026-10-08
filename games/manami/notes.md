@@ -29,9 +29,9 @@ ides' Adv98V script engine (`MANAMI/`), on a hard-disk image: 49 scripts with te
 
 ## Script
 
-3132 strings (2987 messages, 105 menu items, 1 string variable values, 24 text file lines, 15 program strings).
+3134 strings (2987 messages, 105 menu items, 1 string variable values, 24 text file lines, 17 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3132 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3134 strings have English so far.
 
 ## Limits
 

@@ -85473,6 +85473,26 @@
     "MARINE.COM:0104"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "MARINE.COM:018b"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "MARINE.COM:01bb"
+   ],
+   "max_cells": 21
   }
  ]
 }
