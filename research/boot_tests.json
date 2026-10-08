@@ -2231,5 +2231,27 @@
    "Shots, the caddie's lines, the girls' scenes, endings",
    "not yet seen"
   ]
+ ],
+ "hokkaido_rensa": [
+  [
+   "Title (the copyright lines)",
+   "OK: each line's filler on its own row, above the next line's frame"
+  ],
+  [
+   "Monitor question and message speed question",
+   "OK: filler question and items at their places"
+  ],
+  [
+   "Name window (KNJNAME.CMD)",
+   "OK: its labels as full-width filler at their places, the kana grid as it is; the click script cannot steer it to its done button, so for the rest of the test a test image left out its run in OHO000.MES (no-ops of the same length), after which the original goes on as well"
+  ],
+  [
+   "The phone call and the harbour scene with its command menu",
+   "OK: filler in the bottom box, the command menu's filler items at their places"
+  ],
+  [
+   "The investigation, the blackjack game, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -32400,15 +32400,27 @@
      "path": "LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98\\LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98 [FD]\\LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98 (Disk 2).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hokkaido_rensa (patcher working, machine translation in progress)",
+     "url": "../games/hokkaido_rensa/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Hokkaido Serial Murder Case remake (Switch/Steam, 2024, English)",
+     "url": "https://www.timeextension.com/news/2024/05/switch-remake-of-yuji-horiis-hokkaido-rensa-satsujin-ohotsuku-ni-kiyu-will-have-english-language-support",
+     "source": "web"
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "ASCII.zip/LOGiN Disk & Book Series - Kohakuiro no Yuigon",

@@ -1305,6 +1305,17 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
                 above = (spot[1] - frame[1]) // ENGINE["line_h"]
                 if above > 0:
                     lines = min(lines, above) if lines else above
+        if n + 1 < len(us) and frame and len(frame) == 4 and kind == "msg":
+            # the next text sets a frame of its own that starts lower inside this one, shown with
+            # it (no key wait between): this message keeps above that frame (the title's lines
+            # each in a frame running to the screen's foot)
+            nxt = us[n + 1][3]
+            if isinstance(nxt, tuple) and len(nxt) == 4 and nxt != tuple(frame) \
+                    and frame[1] < nxt[1] <= frame[3] and nxt[0] <= frame[2] and nxt[2] >= frame[0] \
+                    and not any(k == "cmd" and data[s2] == 0xAB for k, s2, _e in toks[j:us[n + 1][0]]):
+                above = (nxt[1] - frame[1]) // ENGINE["line_h"]
+                if above > 0:
+                    lines = min(lines, above) if lines else above
         bkind = kind
         if located and kind == "inline":
             bkind = "label"         # a marker placed by a procedure (the wait arrow)
