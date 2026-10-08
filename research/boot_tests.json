@@ -2253,5 +2253,23 @@
    "The investigation, the blackjack game, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "cocktail_zoukangou": [
+  [
+   "Start menu (the four sampling-program items)",
+   "OK: filler items at their places, the question below in its colour"
+  ],
+  [
+   "The explanation story (the night city, the girl)",
+   "OK: filler wrapped in the bottom box, pages waiting for a key; pictures change with the story, and it returns to the menu"
+  ],
+  [
+   "Mouse",
+   "With the base image's QMOUSE loaded beside the game's MOUSE.SYS the key waits take no key or click; the install leaves QMOUSE out"
+  ],
+  [
+   "The other programs, the default names (NAME.DEF)",
+   "not yet seen"
+  ]
  ]
 }

@@ -1245,5 +1245,13 @@
    "url": "https://www.timeextension.com/news/2024/05/switch-remake-of-yuji-horiis-hokkaido-rensa-satsujin-ohotsuku-ni-kiyu-will-have-english-language-support",
    "source": "web"
   }
+ ],
+ "CocktailSoft.zip/Cocktail Soft Zoukangou": [
+  {
+   "label": "This repo: games/cocktail_zoukangou (patcher working, machine translation in progress)",
+   "url": "../games/cocktail_zoukangou/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
