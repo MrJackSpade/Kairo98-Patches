@@ -594,9 +594,12 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     has = {e["kind"] for e in strings}
     names = any(r.startswith("TCM/NAMEWIND") for e in strings for r in e["refs"])
     out += ["", "## Engine", "",
-            "ides' Adv98V script engine (`%s/`), %s: %d scripts with text (`MES/*.MES`, "
+            "ides' Adv98V script engine (%s), %s: %d scripts with text (`MES/*.MES`, "
             "`*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
-            "rebuilds byte for byte." % (cfg["game_dir"], "on a hard-disk image" if not cfg.get("hdd") else "on %d floppies" % (1 + len(cfg["hdd"]["disks"])), len(files),
+            "rebuilds byte for byte." % ("`%s/`" % cfg["game_dir"] if cfg["game_dir"] else "at the disk's root",
+                                         "on a hard-disk image" if cfg.get("hdd") is None and cfg["image"].lower().endswith(".hdi")
+                                         else "on its boot floppy, patched in place" if not cfg.get("hdd")
+                                         else "on %d floppies" % (1 + len(cfg["hdd"]["disks"])), len(files),
                                          "; this build has the later engines' extended opcodes" if cfg.get("extraop") else "")
             + (("  The procedure table holds %d slots of %d bytes (read off the engine's memory)."
                 % (cfg["proc_slots"], cfg["proc_slot"])) if "proc_slot" in cfg else

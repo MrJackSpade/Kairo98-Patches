@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`/`), on 3 floppies: 100 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  The procedure table holds 20 slots of 102 bytes (read off the engine's memory).
+ides' Adv98V script engine (at the disk's root), on 3 floppies: 100 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  The procedure table holds 20 slots of 102 bytes (read off the engine's memory).
 
 This is ADVH, the engine before Adv98V (`ADVH.EXE`, run by `ADVSHELL.COM`): the same bytecode, but no ASCII string command, and every character drawn as a 16x16 glyph.  The patch adds half-width letters to the program (`pc98tl/advh.py`): each English letter is written as `85 xx` (xx its ASCII code), which the program draws from the BIOS's 8x16 font one column wide and steps the cursor one column on; the program is unpacked, patched and packed again with its own EXEPACK unpacker.  Its disk-change command (wait for disk X in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which clears the box: a message longer than the box goes on after a key on a fresh page.
 

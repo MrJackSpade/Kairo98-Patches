@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-07 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`/`), on a hard-disk image: 26 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (at the disk's root), on its boot floppy, patched in place: 26 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
