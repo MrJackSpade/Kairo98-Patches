@@ -1120,5 +1120,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Toumei Ningen": [
+  {
+   "label": "This repo: games/toumei_ningen (patcher working, machine translation in progress)",
+   "url": "../games/toumei_ningen/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

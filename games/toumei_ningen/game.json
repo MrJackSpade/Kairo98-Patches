@@ -1,0 +1,13 @@
+{
+ "title": "Toumei Ningen",
+ "key": "FairytaleRed-zone.zip/Toumei Ningen",
+ "image": "Toumei Ningen\\Toumei Ningen [HD]\\Toumei Ningen.hdi",
+ "encoding": "adv98v",
+ "game_dir": "TOM",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "script_room": 17744,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+}

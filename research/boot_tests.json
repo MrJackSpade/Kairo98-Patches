@@ -1817,5 +1817,19 @@
    "The commands, the other stories, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "toumei_ningen": [
+  [
+   "Setup menus at the start (one and two items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Prologue (the laboratory, the scientist and the invisibility drug)",
+   "OK: filler wrapped between words under the pictures, pages waiting for a click"
+  ],
+  [
+   "The command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

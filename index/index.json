@@ -84449,7 +84449,14 @@
      "path": "Toumei Ningen\\Toumei Ningen [HD]\\Toumei Ningen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/toumei_ningen (patcher working, machine translation in progress)",
+     "url": "../games/toumei_ningen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 12 of 12 classified Fairytale Red-Zone titles are adult",
    "engine": "adv98v",
@@ -84457,7 +84464,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/U-Jin Special Collection (Kounai Shasei re-release)",
