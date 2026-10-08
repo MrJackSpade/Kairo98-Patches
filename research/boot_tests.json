@@ -1785,5 +1785,19 @@
    "The commands, the transformation scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "halfmoon": [
+  [
+   "Story select (the four girls' panels, artwork) and its centre menu",
+   "OK: the centre menu's filler items; Suzuka's panel chosen with a click"
+  ],
+  [
+   "Suzuka's prologue (full-screen text) and the escape scene",
+   "OK: filler wrapped between words, the speaker's tag above each message, pages waiting for a click; the game's key wait clears the box, so pages end with it (page_break 81 90) and no extra cleared box comes between them"
+  ],
+  [
+   "The other three stories, the menu's other items, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -52269,7 +52269,14 @@
      "path": "Halfmoon ni Kawaru made\\Halfmoon ni Kawaru made [HD]\\Halfmoon ni Kawaru made.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/halfmoon (patcher working, machine translation in progress)",
+     "url": "../games/halfmoon/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52277,7 +52284,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Hare Nochi Munasawagi!",

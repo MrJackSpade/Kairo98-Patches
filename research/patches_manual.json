@@ -1104,5 +1104,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Halfmoon ni Kawaru made": [
+  {
+   "label": "This repo: games/halfmoon (patcher working, machine translation in progress)",
+   "url": "../games/halfmoon/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
