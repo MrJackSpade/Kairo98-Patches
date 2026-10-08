@@ -39,6 +39,7 @@ Translation and the content classification (♥) are done by the translation mod
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
+* A script runs from the engine's script buffer, which holds 17100 bytes (read off its memory): a file that would outgrow it with the English is refused and named, so keep the longest scripts' English about as long as the Japanese.
 * This engine hangs on an ASCII string inside a procedure, so text kept in procedures (the speakers' name tags, `n` ids) is written in full-width letters, each two columns wide and two bytes long; a tag grows only into its procedure's free slots, so keep tags about as long as the Japanese.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.

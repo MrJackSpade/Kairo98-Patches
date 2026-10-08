@@ -1072,5 +1072,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "GameTechnopolis.zip/Kimi Dake ni Ai o": [
+  {
+   "label": "This repo: games/kimi_dake_ni_ai_o (patcher working, machine translation in progress)",
+   "url": "../games/kimi_dake_ni_ai_o/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -99451,7 +99451,14 @@
      "path": "Kimi Dake ni Ai o\\Kimi Dake ni Ai o... [FD]\\Kimi Dake ni Ai o... (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kimi_dake_ni_ai_o (patcher working, machine translation in progress)",
+     "url": "../games/kimi_dake_ni_ai_o/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17785 (erotic content)",
    "engine": "adv98v",
@@ -99459,7 +99466,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Ligarued",
