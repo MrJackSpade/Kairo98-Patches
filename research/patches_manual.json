@@ -1216,5 +1216,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Ides.zip/Ides User's Club Disk Magazine #004": [
+  {
+   "label": "This repo: games/ides_club_004 (patcher working, machine translation in progress)",
+   "url": "../games/ides_club_004/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

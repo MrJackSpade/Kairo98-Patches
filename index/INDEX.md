@@ -280,6 +280,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Game Technopolis | Himitsu no Hanazono | [This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)](../games/himitsu_no_hanazono/notes.md) |
 | Game Technopolis | Kimi Dake ni Ai o | [This repo: games/kimi_dake_ni_ai_o (patcher working, machine translation in progress)](../games/kimi_dake_ni_ai_o/notes.md) |
 | Ides | Ides User's Club Disk Magazine #003 | [This repo: games/ides_club_003 (patcher working, machine translation in progress)](../games/ides_club_003/notes.md) |
+| Ides | Ides User's Club Disk Magazine #004 | [This repo: games/ides_club_004 (patcher working, machine translation in progress)](../games/ides_club_004/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
@@ -3153,7 +3154,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Ides User's Club Disk Magazine #001 [FD] `adv98v`
 - ♥ Ides User's Club Disk Magazine #002 [FD] `adv98v`
 - ♥ Ides User's Club Disk Magazine #003 [FD] `adv98v` — *MTL (this repo)*
-- ♥ Ides User's Club Disk Magazine #004 [FD HD] `adv98v`
+- ♥ Ides User's Club Disk Magazine #004 [FD HD] `adv98v` — *MTL (this repo)*
 
 ### IGI Limited (`doujinHomebrew.zip`)
 

@@ -1,0 +1,10 @@
+{
+ "title": "Ides User's Club Disk Magazine #004",
+ "key": "Ides.zip/Ides User's Club Disk Magazine #004",
+ "image": "Ides User's Club Disk Magazine #004\\Ides User's Club Disk Magazine #004 [HD]\\Ides User's Club Disk Magazine #004.hdi",
+ "encoding": "adv98v",
+ "game_dir": "IUC_#004",
+ "extraop": true,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "script_room": 18612
+}

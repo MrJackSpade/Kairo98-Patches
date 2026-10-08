@@ -2191,5 +2191,23 @@
    "The other pages, the menu's return, exit",
    "not yet seen"
   ]
+ ],
+ "ides_club_004": [
+  [
+   "Opening (the editor girl) and the magazine menu (artwork)",
+   "OK: filler beside the girl; the menu is artwork"
+  ],
+  [
+   "Exit page (the closing credits, 4_MAIN.MES)",
+   "OK: its single page-long message as filler wrapped over the full-screen frame, as in the original"
+  ],
+  [
+   "A game page (4_FAIR05.MES)",
+   "OK on a test image whose start script chains to that page: the list menu's filler items, the title panel and the text box's filler wrapped between words, pages waiting for a click"
+  ],
+  [
+   "The other pages, the novel, the shop",
+   "not yet seen"
+  ]
  ]
 }

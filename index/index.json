@@ -116914,7 +116914,14 @@
      "path": "Ides User's Club Disk Magazine #004\\Ides User's Club Disk Magazine #004 [HD]\\Ides User's Club Disk Magazine #004.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_004 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_004/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r128941 (erotic content)",
    "engine": "adv98v",
@@ -116922,7 +116929,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Uno Byouin Monogatari Hen - Kangofu ver.",
