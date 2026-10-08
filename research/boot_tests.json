@@ -2299,5 +2299,19 @@
    "Later scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "itsuka_dokoka_de": [
+  [
+   "Title and its 'enter your name?' question",
+   "OK: the question as filler in its bar beside the Y/N buttons (artwork)"
+  ],
+  [
+   "The Y/N buttons (IT_TCM/ICON3H.TCM)",
+   "Take no emulated click (the pointer is not drawn over the title, and clicks at the buttons' place do nothing) nor Y/N/Enter keys, in the original too; leaving the button wait out on a test image does not get past it either"
+  ],
+  [
+   "The story, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

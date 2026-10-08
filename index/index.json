@@ -52213,7 +52213,14 @@
      "path": "Erotic Baka Novel Series 2 - Itsuka Dokoka de\\Erotic Baka Novel Series 2 - Itsuka Dokoka de. [HD]\\Erotic Baka Novel Series 2 - Itsuka Dokoka de..hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/itsuka_dokoka_de (patcher working, machine translation in progress)",
+     "url": "../games/itsuka_dokoka_de/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52221,7 +52228,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Halfmoon ni Kawaru made",
