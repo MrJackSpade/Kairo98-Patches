@@ -44335,6 +44335,16 @@
     "MATT11.MES:v1"
    ],
    "max_cells": 0
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "主人公の名前を決めて下さい。",
+   "en": "",
+   "refs": [
+    "CMD/NAME.I86:0285"
+   ],
+   "max_cells": 14
   }
  ]
 }

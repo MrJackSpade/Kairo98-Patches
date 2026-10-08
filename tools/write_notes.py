@@ -721,7 +721,11 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded "
                    "into a fixed place in memory; longer ones are cut and reported."
                    % ", ".join("`%s`" % f for f in cfg.get("text_files", [])))
-    if "engine" in has:
+    if "engine" in has and cfg.get("program_fullwidth"):
+        out.append("* Program strings (`e` ids: %s): the module draws Shift-JIS only, so they are written "
+                   "in full-width letters, up to `max_cells` letters each, in place; longer ones are cut "
+                   "and reported." % ", ".join("`%s`" % f for f in cfg.get("program_files", [])))
+    elif "engine" in has:
         out.append("* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer "
                    "ones are cut and reported.")
     out += ["", "## Not handled", "", "* Text drawn into the artwork (the title logo, pictures)."]

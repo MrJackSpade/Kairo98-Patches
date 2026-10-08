@@ -41,5 +41,9 @@
   "b:": ""
  },
  "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
- "proc_fullwidth": true
+ "proc_fullwidth": true,
+ "program_files": [
+  "CMD/NAME.I86"
+ ],
+ "program_fullwidth": true
 }

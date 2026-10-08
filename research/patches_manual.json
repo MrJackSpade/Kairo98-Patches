@@ -1139,6 +1139,12 @@
  ],
  "FairytaleXShitei.zip/Kounai Shasei": [
   {
+   "label": "This repo: games/kounai_shasei_2 (patcher working, machine translation in progress)",
+   "url": "../games/kounai_shasei_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
    "label": "This repo: games/kounai_shasei_1 (patcher working, machine translation in progress)",
    "url": "../games/kounai_shasei_1/notes.md",
    "source": "this repo",

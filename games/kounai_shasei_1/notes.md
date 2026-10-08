@@ -28,13 +28,13 @@ The floppies have no room for a longer script, so the patch lays the game out on
   effects.
 * A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
 * Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (its Japanese width) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
-* String variables' values (`@n='...'` arguments) are rewritten in place.
+* String variables' values (`@n='...'` arguments) and the strings in the engine's programs are rewritten in place.
 
 ## Script
 
-4339 strings (3747 messages, 513 menu items, 76 name tags (procedure text), 3 string variable values).
+4340 strings (3747 messages, 513 menu items, 76 name tags (procedure text), 3 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4339 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4340 strings have English so far.
 
 ## Limits
 
@@ -46,6 +46,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own, so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Program strings (`e` ids: `CMD/NAME.I86`): the module draws Shift-JIS only, so they are written in full-width letters, up to `max_cells` letters each, in place; longer ones are cut and reported.
 
 ## Not handled
 
@@ -56,6 +57,7 @@ Translation and the content classification (♥) are done by the translation mod
 | Test | Result |
 |---|---|
 | Start menu and the save slot menu | OK: filler items at their places, the highlight on the first |
+| Name registration (the start menu's third item, CMD/NAME.I86) | OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken and the start menu returns |
 | Opening text and the title card (Vol. 1) | OK: filler wrapped in the window, pages waiting for a key |
 | The guide's introduction and the four-story select screen | OK: filler in the bottom box; the story labels (procedures in Y2SEL.MES) in full-width filler at their places on the picture grid |
 | The yes/no question and the first story (the stained glass, the school) | OK: question and items at their places; dialogue under the speaker tag, pages waiting for a key |

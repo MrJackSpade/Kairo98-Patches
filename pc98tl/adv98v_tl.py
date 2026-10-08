@@ -54,6 +54,8 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             draws Shift-JIS only: their lines in full-width letters),
             "program_files" ([other modules, relative to the game
             folder, whose strings are shown: a name entry module]),
+            "program_fullwidth" (those modules draw Shift-JIS only: their
+            strings in full-width letters),
             "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
@@ -1582,7 +1584,15 @@ def run_patch(here, src, dst, mode="en"):
         for s, e, _t in runs:
             ref = "%s:%04x" % (name, s)
             if ref in by_ref:
-                values[s] = _plain(" ".join(by_ref[ref].split("\n")))
+                flat = " ".join(by_ref[ref].split("\n"))
+                if cfg.get("program_fullwidth") and name in cfg.get("program_files", ()):
+                    # (cut and padded to whole characters here: the module reads two bytes a letter)
+                    whole = _fullwidth(flat, None)
+                    values[s] = _fullwidth(flat, (e - s) // 2)
+                    if len(whole) > e - s:
+                        warn.append("%s: %d bytes, the program has room for %d" % (ids[ref], len(whole), e - s))
+                else:
+                    values[s] = _plain(flat)
         new, cut = engine_strings.apply(exe, runs, values)
         for s, need, room in cut:
             warn.append("%s: %d bytes, the program has room for %d" % (ids["%s:%04x" % (name, s)], need, room))

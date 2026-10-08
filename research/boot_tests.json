@@ -1860,6 +1860,10 @@
    "OK: filler items at their places, the highlight on the first"
   ],
   [
+   "Name registration (the start menu's third item, CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken and the start menu returns"
+  ],
+  [
    "Opening text and the title card (Vol. 1)",
    "OK: filler wrapped in the window, pages waiting for a key"
   ],
@@ -1873,6 +1877,24 @@
   ],
   [
    "The other stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "kounai_shasei_2": [
+  [
+   "Start menu, the confirmation and the change-name question",
+   "OK: filler question and items at their places, the highlight on the first"
+  ],
+  [
+   "Name entry (CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken"
+  ],
+  [
+   "The first scene (the girl at the window) with its command menu (talk, think, look)",
+   "OK: filler items at their places; dialogue under the pictures, pages waiting for a key; the one-item submenu returns to the menu"
+  ],
+  [
+   "Leaving the first scene, saving and loading, later scenes, endings",
    "not yet seen"
   ]
  ]

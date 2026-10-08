@@ -265,6 +265,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
 | Fairytale Red-Zone | Toumei Ningen | [This repo: games/toumei_ningen (patcher working, machine translation in progress)](../games/toumei_ningen/notes.md) |
 | Fairytale X Shitei | Dragon City X Shitei | [This repo: games/dragon_city (patcher working, machine translation in progress)](../games/dragon_city/notes.md) |
+| Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_2 (patcher working, machine translation in progress)](../games/kounai_shasei_2/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_1 (patcher working, machine translation in progress)](../games/kounai_shasei_1/notes.md) |
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
