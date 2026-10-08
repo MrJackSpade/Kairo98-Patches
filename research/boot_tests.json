@@ -2079,5 +2079,23 @@
    "The school days after the questions, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "bishoujo_audition": [
+  [
+   "Start menu",
+   "OK: filler item at its place"
+  ],
+  [
+   "Opening (the girl in the school uniform) and the title",
+   "OK: filler under the picture, pages waiting for a click"
+  ],
+  [
+   "The cat-eared guide's explanation on the blackboard, with its menus",
+   "OK: filler wrapped on the blackboard and in the bottom box, menus' filler items at their places"
+  ],
+  [
+   "The auditions, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

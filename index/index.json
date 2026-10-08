@@ -181810,7 +181810,14 @@
      "path": "Bishoujo Audition - Idol o Sagase!\\Bishoujo Audition - Idol o Sagase! [HD]\\Bishoujo Audition - Idol o Sagase!.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_audition (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_audition/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42349 (erotic content)",
    "engine": "adv98v",
@@ -181818,7 +181825,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Disk Bishoujo Daizukan",

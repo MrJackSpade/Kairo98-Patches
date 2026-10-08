@@ -1170,5 +1170,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "SantaFe.zip/Bishoujo Audition - Idol o Sagase!": [
+  {
+   "label": "This repo: games/bishoujo_audition (patcher working, machine translation in progress)",
+   "url": "../games/bishoujo_audition/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
