@@ -1224,5 +1224,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "SantaFe.zip/101 Kaime no Approach Shot": [
+  {
+   "label": "This repo: games/approach_shot (patcher working, machine translation in progress)",
+   "url": "../games/approach_shot/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

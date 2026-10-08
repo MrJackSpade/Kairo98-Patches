@@ -717,8 +717,17 @@ def program_strings(exe):
     split at it."""
     out = []
     for s, e, text in engine_strings.find(exe):
-        if _is_table(text) or _swapped_table(exe, s, e):
+        if _swapped_table(exe, s, e):
             continue
+        if _is_table(text):
+            # (a prompt may follow the name entry's grid in the same run, set off by a double
+            # full-width space: the part after the grid with kanji in it is the prompt)
+            cut = text.rfind("　　")
+            rest = text[cut + 2:].lstrip("　") if cut >= 0 else ""
+            if not rest or _is_table(rest) or not any("一" <= c <= "鿿" for c in rest):
+                continue
+            s += len(text[:len(text) - len(rest)].encode("cp932"))
+            text = rest
         pos, piece, at = s, "", s
         while pos <= e:
             ch, n = engine_strings.char_at(exe, pos) if pos < e else ("　", 0)

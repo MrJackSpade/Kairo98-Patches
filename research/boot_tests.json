@@ -2209,5 +2209,27 @@
    "The other pages, the novel, the shop",
    "not yet seen"
   ]
+ ],
+ "approach_shot": [
+  [
+   "The club receptionist's greeting",
+   "OK: filler in the box beside the picture, pages waiting for a key"
+  ],
+  [
+   "Name entry (BIN/GNAME.COM: the hero's name, then the golf name in letters)",
+   "OK: its prompts as full-width filler at their places (the prompt after the kana grid included); names typed with the keyboard are taken"
+  ],
+  [
+   "The club's questions and menus (explanation, mode, course, out/in, hole)",
+   "OK: question filler above full-width filler items, picked with the keyboard"
+  ],
+  [
+   "The golf round (BIN/HIT.EXE)",
+   "OK: the round starts on the first hole"
+  ],
+  [
+   "Shots, the caddie's lines, the girls' scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -181776,7 +181776,14 @@
      "path": "101 Kaime no Approach Shot\\101 Kaime no Approach Shot [FD]\\alts\\101 Kaime no Approach Shot (Disk A) [Alt 3].hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/approach_shot (patcher working, machine translation in progress)",
+     "url": "../games/approach_shot/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r74218 (erotic content)",
    "engine": "adv98v",
@@ -181784,7 +181791,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Bishoujo Audition - Idol o Sagase!",
