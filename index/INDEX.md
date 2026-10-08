@@ -225,6 +225,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
 | Cocktail Soft | Can Can Bunny Spirits | [This repo: games/can_can_bunny_spirits (patcher working, machine translation in progress)](../games/can_can_bunny_spirits/notes.md) |
 | Cocktail Soft | Cocktail Soft Zoukangou | [This repo: games/cocktail_zoukangou (patcher working, machine translation in progress)](../games/cocktail_zoukangou/notes.md) |
+| Cocktail Soft | Cocktail Soft Zoukangou 2 | [This repo: games/cocktail_zoukangou_2 (patcher working, machine translation in progress)](../games/cocktail_zoukangou_2/notes.md) |
 | Cocktail Soft | Cosmic Psycho | [This repo: games/cosmic_psycho (patcher working, machine translation in progress)](../games/cosmic_psycho/notes.md) |
 | Cocktail Soft | Custom Mate | [This repo: games/custom_mate (patcher working, machine translation in progress)](../games/custom_mate/notes.md) |
 | Cocktail Soft | Custom Mate 2 | [This repo: games/custom_mate_2 (patcher working, machine translation in progress)](../games/custom_mate_2/notes.md) |
@@ -1597,7 +1598,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Can Can Bunny Spirits [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Superior [FD extras]
 - ♥ Cocktail Soft Zoukangou [FD] `adv98v` — *MTL (this repo)*
-- ♥ Cocktail Soft Zoukangou 2 [FD HD] `adv98v`
+- ♥ Cocktail Soft Zoukangou 2 [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Cosmic Psycho [FD] `adv98v` — *MTL (this repo)*
 - ♥ Custom Mate [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Custom Mate 2 [FD HD extras] `adv98v` — *MTL (this repo)*

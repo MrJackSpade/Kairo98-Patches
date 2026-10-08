@@ -1253,5 +1253,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Cocktail Soft Zoukangou 2": [
+  {
+   "label": "This repo: games/cocktail_zoukangou_2 (patcher working, machine translation in progress)",
+   "url": "../games/cocktail_zoukangou_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
