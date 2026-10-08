@@ -1178,5 +1178,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoftFmc.zip/Glass no Destiny": [
+  {
+   "label": "This repo: games/glass_no_destiny (patcher working, machine translation in progress)",
+   "url": "../games/glass_no_destiny/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

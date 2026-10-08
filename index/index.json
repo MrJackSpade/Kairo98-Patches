@@ -54235,7 +54235,14 @@
      "path": "Glass no Destiny\\Glass no Destiny [HD]\\Glass no Destiny.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/glass_no_destiny (patcher working, machine translation in progress)",
+     "url": "../games/glass_no_destiny/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17990 (erotic content)",
    "engine": "adv98v",
@@ -54243,7 +54250,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Colossus.zip/File 0 - Ghost Killer Kamimura Rei",

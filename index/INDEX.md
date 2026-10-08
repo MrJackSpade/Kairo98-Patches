@@ -239,6 +239,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
 | Cocktail Soft | True Heart | [This repo: games/true_heart (patcher working, machine translation in progress)](../games/true_heart/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
+| Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
 | Dez Climax | Injuu Gakuen - La Blue Girl | [This repo: games/la_blue_girl (patcher working, machine translation in progress)](../games/la_blue_girl/notes.md) |
 | Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
@@ -1623,7 +1624,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Cocktail Soft FMC (`CocktailSoftFmc.zip`)
 
 - ♥ Bay City Elegy [FD HD] `adv98v` — *in progress elsewhere*
-- ♥ Glass no Destiny [FD HD] `adv98v`
+- ♥ Glass no Destiny [FD HD] `adv98v` — *MTL (this repo)*
 
 ### Colossus (`Colossus.zip`)
 
