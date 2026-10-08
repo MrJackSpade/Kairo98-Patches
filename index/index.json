@@ -70550,7 +70550,14 @@
      "path": "Kekkou Kamen 2 - Oshioki Densetsu no Maki\\Kekkou Kamen 2 - Oshioki Densetsu no Maki [HD]\\Kekkou Kamen 2 - Oshioki Densetsu no Maki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)",
+     "url": "../games/kekkou_kamen_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17782 (erotic content)",
    "engine": "adv98v",
@@ -70558,7 +70565,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DynamicPro.zip/Super Erect Taisen S-EX",

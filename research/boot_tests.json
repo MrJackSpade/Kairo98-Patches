@@ -2111,5 +2111,27 @@
    "Menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "kekkou_kamen_2": [
+  [
+   "Start menu (start, change name)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (TCM/NAMEWIND.TCM)",
+   "OK: its labels as filler at their places, the kana grid as it is, the default name shown; it takes no emulated input, so for the rest of the test a test image left out its call in MES/START.MES (no-ops of the same length; the default name in NAME.DEF stays), as the start menu's first item does in the original"
+  ],
+  [
+   "Opening (the walk to the school, the title, the school, the corridor, the staff room)",
+   "OK: the speaker tag (a procedure) and filler wrapped in the bottom box, pages waiting for a click; pictures change with the story"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -1186,5 +1186,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DynamicPro.zip/Kekkou Kamen 2 - Oshioki Densetsu no Maki": [
+  {
+   "label": "This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)",
+   "url": "../games/kekkou_kamen_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
