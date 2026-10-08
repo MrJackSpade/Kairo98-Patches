@@ -264,6 +264,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
 | Fairytale Red-Zone | Toumei Ningen | [This repo: games/toumei_ningen (patcher working, machine translation in progress)](../games/toumei_ningen/notes.md) |
+| Fairytale X Shitei | Dragon City X Shitei | [This repo: games/dragon_city (patcher working, machine translation in progress)](../games/dragon_city/notes.md) |
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
 | Game Technopolis | Dragon Eyes | [This repo: games/dragon_eyes (patcher working, machine translation in progress)](../games/dragon_eyes/notes.md) |
@@ -2327,7 +2328,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Fairytale X Shitei (`FairytaleXShitei.zip`)
 
-- ♥ Dragon City X Shitei [FD extras] `adv98v`
+- ♥ Dragon City X Shitei [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Kounai Shasei [FD extras] `adv98v`
 - ♥ Saori - Bishoujo-tachi no Yakata [FD HD] `adv98v` — *MTL (this repo)*
 

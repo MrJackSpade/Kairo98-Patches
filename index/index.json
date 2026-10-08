@@ -84785,7 +84785,14 @@
      "path": "Dragon City X Shitei\\Dragon City X Shitei [FD]\\Dragon City X Shitei (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dragon_city (patcher working, machine translation in progress)",
+     "url": "../games/dragon_city/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17941 (erotic content)",
    "engine": "adv98v",
@@ -84793,7 +84800,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleXShitei.zip/Kounai Shasei",

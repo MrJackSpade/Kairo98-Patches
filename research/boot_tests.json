@@ -1831,5 +1831,27 @@
    "The command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "dragon_city": [
+  [
+   "Title and the start menu",
+   "OK: filler question and items, the highlight on the first"
+  ],
+  [
+   "Name entry (BIN/NAME.BIN)",
+   "OK: its prompt as half-width filler; a name typed with the keyboard is taken (its typing tables stay as they are)"
+  ],
+  [
+   "Opening (the dream, the girl, the first meeting)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "ADVH.EXE",
+   "This release wraps ADVH 1.31A (EXEPACK) in an XOR layer, and its variables sit 2 bytes lower than Dragon Eyes'; the patch unwraps it, reads the variable addresses off the text loop, and writes the plain EXEPACK program"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

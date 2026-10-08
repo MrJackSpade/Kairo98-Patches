@@ -1128,5 +1128,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleXShitei.zip/Dragon City X Shitei": [
+  {
+   "label": "This repo: games/dragon_city (patcher working, machine translation in progress)",
+   "url": "../games/dragon_city/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

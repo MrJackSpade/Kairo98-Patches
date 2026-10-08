@@ -52,6 +52,8 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             the game folder, of plain text the engine shows as it is: an
             opening roll]), "text_fullwidth" (the module that shows them
             draws Shift-JIS only: their lines in full-width letters),
+            "program_files" ([other modules, relative to the game
+            folder, whose strings are shown: a name entry module]),
             "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
@@ -491,10 +493,11 @@ PROGRAM_EXT = (".COM", ".EXE", ".OV1", ".OVL", ".TCM")
 _HERO = re.compile(rb"@\d+='([^']+)'")
 
 
-def _programs(vol, game_dir):
-    """The engine's program files (the game folder's and its TCM modules'):
-    [(name, path)]."""
-    out = []
+def _programs(vol, game_dir, extra=()):
+    """The engine's program files (the game folder's and its TCM modules',
+    and extra: game.json's "program_files", other modules relative to the
+    game folder): [(name, path)]."""
+    out = [(name, _join(game_dir, name)) for name in extra]
     tcm = _subdir(vol, game_dir, "TCM")
     for folder in [game_dir] + ([tcm] if tcm else []):
         prefix = folder[len(game_dir) + 1 if game_dir else 0:] + "/" if folder != game_dir else ""
@@ -510,6 +513,9 @@ def _is_table(text):
     code order (a stray code byte may sit before it)."""
     body = [c for c in text if c != "　"]
     if len(body) >= 20 and all("、" <= c <= "ヿ" or "！" <= c <= "～" for c in body):
+        return True
+    # (a typing table's run of full-width letters, digits and symbols)
+    if len(body) >= 2 and all("！" <= c <= "～" or c in "‘’“”" for c in body):
         return True
     # tables list kana in code order: six or more rising kana in a row
     run = best = 0
@@ -769,7 +775,7 @@ def run_extract(here, src):
     for name in cfg.get("text_files", []):
         lines = text_file_lines(vol.read(_join(cfg["game_dir"], name)))
         extra += [("file", name, "%d" % n, 0, 0, text, raw_len // 2) for n, (text, raw_len) in enumerate(lines)]
-    for name, path in _programs(vol, cfg["game_dir"]):
+    for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
                   for s, e, text in program_strings(vol.read(path))]
     for kind, name, at, _s, _e, jp, cells in extra:
@@ -1166,7 +1172,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         for s in inside:
             e, sid, new = reps[s]
             keep = max(1, (e - s) + spare // len(inside) - 2)
-            if ENGINE["proc_fullwidth"]:
+            if ENGINE["proc_fullwidth"] or ENGINE["advh"]:
                 reps[s] = (e, sid, new[:max(2, keep) // 2 * 2])
             else:
                 reps[s] = (e, sid, new[:1 + keep] + b"\x00" if len(new) > keep + 2 else new)
@@ -1569,7 +1575,7 @@ def run_patch(here, src, dst, mode="en"):
                                    cfg.get("text_fullwidth", False))
         if new_file != old_file:
             vol.write(path, new_file)
-    for name, path in _programs(vol, cfg["game_dir"]):
+    for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
         exe = vol.read(path)
         runs = program_strings(exe)
         values = {}

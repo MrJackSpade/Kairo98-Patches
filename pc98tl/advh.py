@@ -37,7 +37,9 @@ from . import exepack
 from .illusion_font import _asm
 
 # the text loop: cmp ax, 81A8h / jne draw / mov ax, [cursor x]
-LOOP_SIG = bytes.fromhex("3da881751fa1fdc2")
+# (the cursor variable's address, the last two bytes, moves between builds;
+# the other variables the helper uses sit at fixed distances from it)
+LOOP_SIG = re.compile(rb"\x3d\xa8\x81\x75\x1f\xa1..", re.S)
 # the disk-change command's wait loop (mov al, cs:[drive] / call read id / cmp al, cs:[want] / je done);
 # the variables' and the reader's addresses differ between the games' builds
 DISK_SIG = re.compile(rb"\x2e\xa0..\xe8..\x2e\x3a\x06..\x74", re.S)
@@ -94,14 +96,57 @@ def _asm16(src, org):
     return bytes(code)
 
 
+# an XOR layer some releases wrap around the EXEPACK program: mov ax, seed /
+# mov bx, mult / mov di, 100h / mov cx, count / mul bx / add ax, add /
+# xor [di], dl / inc di / loop; then the original bytes it overwrote are
+# put back from cs:1EEh (a word to cs:6, three bytes to cs:E6h, 12h bytes
+# to the entry) and it jumps to EXEPACK's entry, cs:10h
+WRAP_SIG = re.compile(rb"\xb8(..)\xbb(..)\xbf\x00\x01\xb9(..)\xf7\xe3\x05(..)\x30\x15\x47\xe2\xf6", re.S)
+
+
+def unwrap(exe):
+    """The plain EXEPACK program inside an XOR-wrapped ADVH.EXE (the
+    program as it is when it is not wrapped)."""
+    if exepack.is_packed(exe):
+        return exe
+    hdr = list(struct.unpack_from("<14H", exe, 0))
+    base = hdr[4] * 16
+    ip, cs = hdr[10], hdr[11]
+    entry = base + cs * 16 + ip
+    m = WRAP_SIG.match(exe, entry)
+    if not m:
+        raise SystemExit("ADVH.EXE: neither EXEPACK-packed nor in the known XOR wrapper")
+    ax, bx, count, add = (struct.unpack("<H", g)[0] for g in m.groups())
+    img = bytearray(exe[base:])
+    for k in range(count):
+        prod = ax * bx
+        img[k] ^= (prod >> 16) & 0xFF
+        ax = (prod + add) & 0xFFFF
+    seg = cs * 16
+    src = seg + 0x1EE
+    img[seg + 6:seg + 8] = img[src:src + 2]
+    img[seg + 0xE6:seg + 0xE9] = img[src + 2:src + 5]
+    img[seg + ip:seg + ip + 0x12] = img[src + 5:src + 0x17]
+    hdr[10] = 0x10
+    out = bytearray(exe[:base]) + img
+    struct.pack_into("<14H", out, 0, *hdr)
+    out = bytes(out)
+    if not exepack.is_packed(out):
+        raise SystemExit("ADVH.EXE: the XOR wrapper does not hold an EXEPACK program")
+    return out
+
+
 def patch(orig):
     """The program with half-width letters (85 xx): unpacked, patched and
     packed again with the original unpacker (an unpacked ADVH.EXE fails to
-    restart when ADVSHELL runs it again)."""
+    restart when ADVSHELL runs it again).  A program in the XOR wrapper is
+    written back without it."""
+    orig = unwrap(orig)
     exe = exepack.unpack(orig) if exepack.is_packed(orig) else orig
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
     img = bytearray(exe[hdr:])
     loop = _find_once(bytes(img), LOOP_SIG, "text loop")
+    cur = struct.unpack_from("<H", img, loop + 6)[0]     # the cursor column (0xc2fd in most builds)
     disk = _find_once(bytes(img), DISK_SIG, "disk check")
     # the loop's targets, read off its code: jne +1F after the 5-byte
     # compare, the advance path right after it, the loop head from the
@@ -129,15 +174,15 @@ def patch(orig):
         push es
         mov dl, al
         xor dh, dh
-        mov cx, 0xc2d9
+        mov cx, {glyph}
         mov bx, ds
         mov ah, 0x14
         int 0x18
         mov ax, 0x50
-        mul word ptr [0xc2ff]
-        add ax, word ptr [0xc2fd]
+        mul word ptr [{cury}]
+        add ax, word ptr [{curx}]
         mov di, ax
-        mov bx, word ptr [0xc301]
+        mov bx, word ptr [{color}]
         test bl, 1
         jz p2
         mov ax, 0xa800
@@ -155,25 +200,25 @@ def patch(orig):
     drawn:
         pop es
         pop si
-        mov cx, word ptr [0xc305]
+        mov cx, word ptr [{speed}]
         cmp cx, 0
         je adv
         CALLN {delay}
     adv:
-        mov ax, word ptr [0xc2fd]
+        mov ax, word ptr [{curx}]
         inc ax
-        mov word ptr [0xc2fd], ax
-        cmp ax, word ptr [0xc30d]
+        mov word ptr [{curx}], ax
+        cmp ax, word ptr [{right}]
         jbe next
-        mov ax, word ptr [0xc309]
-        mov word ptr [0xc2fd], ax
+        mov ax, word ptr [{left}]
+        mov word ptr [{curx}], ax
         JMPN {newline}
     next:
         JMPN {head}
     plane:
         mov es, ax
         push di
-        mov si, 0xc2db
+        mov si, {glyphb}
         mov cx, 16
     line:
         movsb
@@ -183,11 +228,13 @@ def patch(orig):
         .byte 0xc3
     """
     # the text speed wait the draw path calls (call near after "mov cx, [speed]; cmp cx, 0; je")
-    after = img.find(bytes.fromhex("8b0e05c383f9007403e8"), draw)
+    after = img.find(b"\x8b\x0e" + struct.pack("<H", cur + 8) + bytes.fromhex("83f9007403e8"), draw)
     if after < 0 or after > draw + 0x40:
         raise SystemExit("ADVH.EXE: the text speed wait is not found")
     delay = after + 9 + 3 + struct.unpack_from("<h", img, after + 10)[0]
-    code = asm.format(advance=hex(advance), draw=hex(draw), newline=hex(newline), head=hex(head), delay=hex(delay))
+    code = asm.format(advance=hex(advance), draw=hex(draw), newline=hex(newline), head=hex(head), delay=hex(delay),
+                      curx=hex(cur), cury=hex(cur + 2), color=hex(cur + 4), speed=hex(cur + 8), left=hex(cur + 0xC),
+                      right=hex(cur + 0x10), glyph=hex(cur - 0x24), glyphb=hex(cur - 0x22))
     enc = _asm16(code, cave)
     if cave + len(enc) > cave_end:
         raise SystemExit("ADVH.EXE: the helper is %d bytes, the room %d" % (len(enc), cave_end - cave))
