@@ -1853,5 +1853,27 @@
    "Menus in the scenes, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "kounai_shasei_1": [
+  [
+   "Start menu and the save slot menu",
+   "OK: filler items at their places, the highlight on the first"
+  ],
+  [
+   "Opening text and the title card (Vol. 1)",
+   "OK: filler wrapped in the window, pages waiting for a key"
+  ],
+  [
+   "The guide's introduction and the four-story select screen",
+   "OK: filler in the bottom box; the story labels (procedures in Y2SEL.MES) in full-width filler at their places on the picture grid"
+  ],
+  [
+   "The yes/no question and the first story (the stained glass, the school)",
+   "OK: question and items at their places; dialogue under the speaker tag, pages waiting for a key"
+  ],
+  [
+   "The other stories, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
