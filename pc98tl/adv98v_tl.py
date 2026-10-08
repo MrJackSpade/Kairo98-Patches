@@ -368,8 +368,19 @@ def _join(folder, name):
     return folder + "/" + name if folder else name
 
 
+def _full_name(vol, game_dir, name):
+    """A script's _files name (upper case) from its own name: START.MES,
+    or MES_1/START.MES where it sits in another script folder."""
+    names = [n.upper() for n, _p in _files(vol, game_dir)]
+    return name.upper() if name.upper() in names else [n for n in names if n.split("/")[-1] == name.upper()][0]
+
+
 def mes_path(vol, game_dir, name):
-    return dict((n.upper(), p) for n, p in _files(vol, game_dir))[name.upper()]
+    files = dict((n.upper(), p) for n, p in _files(vol, game_dir))
+    if name.upper() in files:
+        return files[name.upper()]
+    # (a script in a numbered folder, MES_1/START.MES, by its own name)
+    return [p for n, p in files.items() if n.split("/")[-1] == name.upper()][0]
 
 
 KEY = bytes([0xAB])          # wait for a key or click
@@ -452,12 +463,29 @@ def _files(vol, game_dir):
     folder itself (a startup script kept beside the engine)."""
     out = [(e["name"], _join(game_dir, e["name"])) for e in vol.listdir(_cluster(vol, game_dir))
            if not e["is_dir"] and e["name"].upper().endswith(".MES")]
-    for kind in ("MES", "MEC"):
-        folder = _subdir(vol, game_dir, kind)
+    main = [_subdir(vol, game_dir, kind) for kind in ("MES", "MEC")]
+    for folder in main:
         if folder:
             out += [(e["name"], folder + "/" + e["name"]) for e in vol.listdir(vol.find(folder)["cluster"])
                     if not e["is_dir"] and e["name"].upper().endswith((".MES", ".MEC"))]
+    # (more script folders beside the main one: MES_02, MES_T1 (Custom Mate 3), or numbered ones
+    # instead of it, MES_1 to MES_7 (Hatsukoi Monogatari); their files are named FOLDER/FILE, as a
+    # name may repeat between folders)
+    for e in vol.listdir(_cluster(vol, game_dir)):
+        folder = _join(game_dir, e["name"])
+        if e["is_dir"] and e["name"].upper().startswith("MES") and folder not in main:
+            out += [(e["name"] + "/" + f["name"], folder + "/" + f["name"]) for f in vol.listdir(e["cluster"])
+                    if not f["is_dir"] and f["name"].upper().endswith((".MES", ".MEC"))]
     return out
+
+
+def _script_name(arg, names):
+    """The _files name a script's file argument ("mes_t1\\t1111.mec",
+    "b:\\mes\\open.mes") points to: FOLDER/FILE where that is a name, else
+    the file's own name."""
+    parts = arg.replace("\\", "/").split(":")[-1].strip("/").split("/")
+    two = "/".join(parts[-2:]).upper()
+    return two if two in names else parts[-1].upper()
 
 
 def start_script(vol, game_dir, extraop):
@@ -856,7 +884,7 @@ def mec_rooms(vol, game_dir, extraop):
             for x, (k, s, _e) in enumerate(toks[:-2]):
                 if k == "cmd" and data[s] == 0xC0 and toks[x + 1][0] == "arg" and toks[x + 2][0] == "num":
                     arg = bytes(data[toks[x + 1][1] + 1:toks[x + 1][2] - 1]).decode("cp932")
-                    target = arg.replace("\\", "/").split("/")[-1].upper()
+                    target = _script_name(arg, sizes)
                     if target in sizes:
                         loads.append((target, _num(data, toks[x + 2][1])))
     if not loads:
@@ -1696,7 +1724,8 @@ def run_patch(here, src, dst, mode="en"):
     # the scripts run before the scenes, in order (the startup script and
     # what it chains to): their procedures are in force in every scene
     # that does not define its own
-    base = [n.upper() for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
+    base = [_full_name(vol, cfg["game_dir"], n)
+            for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
     name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
     var_cols = variable_widths(vol, cfg["game_dir"], extraop, name_cols)
     var_cols.update({int(n): cols for n, cols in cfg.get("var_cols", {}).items()})

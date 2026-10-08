@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`CM3/`), on a hard-disk image: 761 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table holds 20 slots of 76 bytes (read off the engine's memory).
+ides' Adv98V script engine (`CM3/`), on a hard-disk image: 1319 scripts with text (`MES/*.MES`, `*.MEC`, and in the script folders `MES_02/`, `MES_T1/`, `MES_T2/`, `MES_T3/`, `MES_T4/`, `MES_T5/`, named `FOLDER/FILE` in the refs) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table holds 20 slots of 76 bytes (read off the engine's memory).
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -31,9 +31,9 @@ ides' Adv98V script engine (`CM3/`), on a hard-disk image: 761 scripts with text
 
 ## Script
 
-19186 strings (135 name tags (procedure text), 17619 messages, 1287 menu items, 99 string variable values, 31 text file lines, 15 program strings).
+29176 strings (137 name tags (procedure text), 27605 messages, 1289 menu items, 99 string variable values, 31 text file lines, 15 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 19186 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 29176 strings have English so far.
 
 ## Limits
 
@@ -61,5 +61,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Data-entry dialog (the name field placed with A7) | OK: the message keeps above the placed name field and pages before it; the field's surname-and-given-name display (DISP @3 shows both, 19 columns kept) with the bracket after it, wrapping and paging instead of running past the box edge |
 | Character status screen | Reached; its labels are drawn in the picture |
 | Staff roll (MES/STAFF.TXT) | not yet seen |
+| Scripts in MES_02 and MES_T1 to MES_T5 (now extracted) | not yet seen |
 | Customizing, the married life simulation, saving and loading, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
