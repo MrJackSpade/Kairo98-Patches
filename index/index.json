@@ -83988,7 +83988,14 @@
      "path": "Manami - Ai to Koukan no Hibi\\Manami - Ai to Koukan no Hibi [HD]\\Manami - Ai to Koukan no Hibi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/manami (patcher working, machine translation in progress)",
+     "url": "../games/manami/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18085 (erotic content)",
    "engine": "adv98v",
@@ -83996,7 +84003,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Miho",

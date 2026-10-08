@@ -1653,5 +1653,19 @@
    "The commands (look, talk, get, move, use), saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "manami": [
+  [
+   "Setup questions with their menus (sound board, text colour)",
+   "OK: questions and filler items in their windows"
+  ],
+  [
+   "The first scene and its four-item command menu",
+   "OK: filler wrapped between words to the 3-line box, pages waiting for a click; the menu's items at their places, the first command's replies"
+  ],
+  [
+   "The other commands, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

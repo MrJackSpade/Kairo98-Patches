@@ -1040,5 +1040,13 @@
    "url": "https://vndb.org/r160192",
    "source": "VNDB"
   }
+ ],
+ "FairytaleRed-zone.zip/Manami - Ai to Koukan no Hibi": [
+  {
+   "label": "This repo: games/manami (patcher working, machine translation in progress)",
+   "url": "../games/manami/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
