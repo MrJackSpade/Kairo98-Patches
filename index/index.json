@@ -51305,7 +51305,14 @@
      "path": "Custom Mate 2\\Custom Mate 2 [HD]\\Custom Mate 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/custom_mate_2 (patcher working, machine translation in progress)",
+     "url": "../games/custom_mate_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17925 (erotic content)",
    "engine": "adv98v",
@@ -51313,7 +51320,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Custom Mate 3",

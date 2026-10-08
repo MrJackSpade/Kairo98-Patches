@@ -1088,5 +1088,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Custom Mate 2": [
+  {
+   "label": "This repo: games/custom_mate_2 (patcher working, machine translation in progress)",
+   "url": "../games/custom_mate_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

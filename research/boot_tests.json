@@ -1749,5 +1749,23 @@
    "The commands (profile, line status, calling a partner, chat), saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "custom_mate_2": [
+  [
+   "Name window at the start",
+   "Its labels as filler; it takes clicks but the click script cannot steer it, so a test image set the names to their defaults with the engine's own expression call (cd 8192 \"@n='...'\") in place of the window's calls"
+  ],
+  [
+   "Opening (the layered text windows)",
+   "OK: filler wrapped between words in each window, pages waiting for a click"
+  ],
+  [
+   "The lab, the terminal and its two-item menus, the scene with the android",
+   "OK: messages page in the bottom box; menus at their places; the terminal's name field"
+  ],
+  [
+   "The customization and life simulation, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
