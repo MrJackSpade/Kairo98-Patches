@@ -1080,5 +1080,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Bishoujo Tsuushin - Chat no Susume": [
+  {
+   "label": "This repo: games/bishoujo_tsuushin (patcher working, machine translation in progress)",
+   "url": "../games/bishoujo_tsuushin/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

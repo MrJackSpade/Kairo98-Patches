@@ -217,6 +217,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Alice Soft | Uchuu Kaitou Funny Bee | [This repo: games/funny_bee (patcher working, machine translation in progress)](../games/funny_bee/notes.md) |
 | Cat's Pro | Cat's Part 1 | [This repo: games/cats_part_1 (patcher working, machine translation in progress)](../games/cats_part_1/notes.md) |
 | Cocktail Soft | Angel (U-Jin Presents) | [This repo: games/angel (patcher working, machine translation in progress)](../games/angel/notes.md) |
+| Cocktail Soft | Bishoujo Tsuushin - Chat no Susume | [This repo: games/bishoujo_tsuushin (patcher working, machine translation in progress)](../games/bishoujo_tsuushin/notes.md) |
 | Cocktail Soft | Can Can Bunny Extra | [This repo: games/can_can_bunny_extra (patcher working, machine translation in progress)](../games/can_can_bunny_extra/notes.md) |
 | Cocktail Soft | Can Can Bunny Limited 5 1-2 | [This repo: games/can_can_bunny_limited (patcher working, machine translation in progress)](../games/can_can_bunny_limited/notes.md) |
 | Cocktail Soft | Can Can Bunny Premiere | [This repo: games/can_can_bunny_premiere (patcher working, machine translation in progress)](../games/can_can_bunny_premiere/notes.md) |
@@ -1566,7 +1567,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 - ♥ [Cocktail Soft materials] [extras]
 - ♥ Angel (U-Jin Presents) [CD FD HD extras] `adv98v` — *MTL (this repo)*
-- ♥ Bishoujo Tsuushin - Chat no Susume [FD extras] `adv98v`
+- ♥ Bishoujo Tsuushin - Chat no Susume [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny [FD extras]
 - ♥ Can Can Bunny Extra [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Can Can Bunny Limited 5 1-2 [FD HD extras] `adv98v` — *MTL (this repo)*

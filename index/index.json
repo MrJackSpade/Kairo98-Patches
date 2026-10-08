@@ -50103,7 +50103,14 @@
      "path": "Bishoujo Tsuushin - Chat no Susume\\Bishoujo Tsuushin - Chat no Susume [FD]\\Bishoujo Tsuushin - Chat no Susume (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_tsuushin (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_tsuushin/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42464 (erotic content)",
    "engine": "adv98v",
@@ -50111,7 +50118,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny",

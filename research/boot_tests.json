@@ -1735,5 +1735,19 @@
    "Menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "bishoujo_tsuushin": [
+  [
+   "Opening notice (full-screen text)",
+   "OK: filler lines on the white screen, pages waiting for a click"
+  ],
+  [
+   "The BBS command screen and the robot host's message",
+   "OK: the command buttons are drawn in the artwork; the host's message wrapped between words in the 4-line box"
+  ],
+  [
+   "The commands (profile, line status, calling a partner, chat), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
