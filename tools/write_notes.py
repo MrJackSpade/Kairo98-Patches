@@ -749,6 +749,8 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                        ", ".join("`%s`" % f for f in cfg["data_files"]),
                        " full-width letters, as the files hold these names in Shift-JIS only"
                        if cfg.get("data_fullwidth") else ", twice that in half-width letters"))
+    for fix in cfg.get("program_fixes", []):
+        out.append("* `%s` is patched in place (a byte signature, the same length): %s." % (fix["file"], fix["why"]))
     out += ["", "## Not handled", "", "* Text drawn into the artwork (the title logo, pictures)."]
     if names:
         out.append("* The name window's character tables stay Japanese: the engine picks characters from "
