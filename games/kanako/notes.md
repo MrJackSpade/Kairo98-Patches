@@ -29,14 +29,15 @@ ides' Adv98V script engine (`KANAKO/`), on a hard-disk image: 141 scripts with t
 
 ## Script
 
-6707 strings (6306 messages, 400 menu items, 1 program strings).
+6731 strings (6306 messages, 400 menu items, 24 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6707 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6731 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
+* Text file lines (`t` ids: `KA_DAT/STAFF.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -50,5 +51,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Opening pictures and the Red-Zone logo | OK |
 | Title screen with its menus | OK: filler questions in the box, the two-item menus at their places |
 | The first scene (the office) | OK: filler wrapped between words to the 2-line box, pages waiting for a click as the story goes on |
+| Staff roll (KA_DAT/STAFF.DAT) | not yet seen |
 | The verb and noun command menus, saving and loading, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

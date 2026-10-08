@@ -884,6 +884,10 @@
    "OK: each page holds until clicked (checked after 20 s), one click a page"
   ],
   [
+   "Staff list (DAT/STAFF.DAT, from the menu)",
+   "not yet seen"
+  ],
+  [
    "Registration (name entry), save/load, other scenarios, endings",
    "not yet seen"
   ]
@@ -916,6 +920,10 @@
    "OK: filler wrapped between words to the 3-line box (63 columns), pages with a wait between"
   ],
   [
+   "Staff roll (TCM/FN_STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "Save/load, later chapters, endings",
    "not yet seen"
   ]
@@ -936,6 +944,10 @@
   [
    "Opening scene",
    "OK: filler wrapped between words to the 2-line box, pages with a wait between"
+  ],
+  [
+   "Staff roll (GIBO_TCM/STAFF.DAT)",
+   "not yet seen"
   ],
   [
    "Save/load, later acts, endings",
@@ -1014,6 +1026,10 @@
    "OK: filler wrapped to the box"
   ],
   [
+   "Staff credits (TCM/S_CREDIT.DAT)",
+   "not yet seen"
+  ],
+  [
    "In-game menus, save/load, later acts, endings",
    "not yet seen"
   ]
@@ -1066,6 +1082,14 @@
   [
    "First in-game menus",
    "OK: filler items at their Japanese width"
+  ],
+  [
+   "Staff rolls (CLM/ROLL.DAT, CLM/ROLL2.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
   ],
   [
    "Save/load, later days (other disks' files), endings",
@@ -1158,6 +1182,10 @@
    "OK: tag on the first line, filler wrapped between words under it, 2-line pages; each page cleared and re-tagged as between the original messages (they used to draw over each other)"
   ],
   [
+   "Ending rolls (CMD/ROLL_A.DAT, CMD/ROLL_B.DAT)",
+   "not yet seen"
+  ],
+  [
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
@@ -1172,6 +1200,14 @@
    "OK: speaker tag on the first line, filler wrapped between words to the box (set at startup), pages of 3 lines"
   ],
   [
+   "Name entry prompt (CMD/MOUSENAM.I86, the start menu's fourth item)",
+   "OK: half-width filler under the kana grid; the grid stays as it is"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
+  ],
+  [
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
@@ -1184,6 +1220,18 @@
   [
    "Title menu (artwork) with the wizard skipped in a test image",
    "Blocked: the cursor moves (arrows, mouse) but no item can be selected (click, Enter, space)"
+  ],
+  [
+   "Ending roll (DAT/END1.DAT)",
+   "not yet seen"
+  ],
+  [
+   "Restart list (DAT/RESTART.DAT) and the load window's notes (DAT/TJLH.DAT)",
+   "not yet seen (behind the setup wizard, which takes no emulated input)"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
   ],
   [
    "Messages, menus, scenes past the opening, save/load, endings",
@@ -1254,6 +1302,10 @@
    "OK: filler wrapped between words, 3-line pages waiting for a click; the wait marker's columns at the right edge kept clear (the third line used to run into it)"
   ],
   [
+   "Staff roll (DAT/AR_STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "Picture scenes after the prologue, save/load, endings",
    "not yet seen"
   ]
@@ -1292,6 +1344,10 @@
   [
    "First room scene (test image)",
    "OK: speaker bracket, the hero's name (DISP @1, 8 columns kept for it) and the message on one line, wrapped between words inside the 3-line box, pages waiting for a click; the two-item menu after the question"
+  ],
+  [
+   "Staff rolls (MES/VC2_STF.DAT, TCM/VC2_STF.DAT)",
+   "not yet seen"
   ],
   [
    "Choosing a name in the window, phone calls, save/load, later scenes, endings",
@@ -1336,6 +1392,10 @@
   [
    "First command menu",
    "OK: three filler items at their places in the menu window, ASCII drawn (no full-width needed)"
+  ],
+  [
+   "Opening credits (SJOP.CMD)",
+   "OK: every credit line as half-width filler at its place, the two spelled in the PC-98's own half-width letters (0x85 xx) included"
   ],
   [
    "The other menu choices, saving and loading, later scenes, endings",
@@ -1404,6 +1464,10 @@
    "OK: speaker tags in full-width filler, the message after the tag on its line, wrapped between words to the box, pages waiting for a key; pictures change with the story"
   ],
   [
+   "Name entry prompt (CMD/MOUSENAM.I86)",
+   "OK: half-width filler under the kana grid; the grid stays as it is"
+  ],
+  [
    "Choosing a name, the episodes, saving and loading, endings",
    "not yet seen"
   ]
@@ -1432,6 +1496,10 @@
   [
    "Character status screen",
    "Reached; its labels are drawn in the picture"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
   ],
   [
    "Customizing, the married life simulation, saving and loading, endings",
@@ -1478,6 +1546,10 @@
    "OK: messages page the same way as the story goes on"
   ],
   [
+   "Ending roll (CMD/ROLL.DAT, shown by G_ED1B.MES)",
+   "OK on a test image that runs G_ED1B.MES's roll part right after the start script's setup: the roll's lines scroll up as full-width filler"
+  ],
+  [
    "The investigation's command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
@@ -1514,6 +1586,10 @@
    "OK: filler wrapped between words to the 2-line box, pages waiting for a click as the story goes on"
   ],
   [
+   "Staff roll (KA_DAT/STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "The verb and noun command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
@@ -1530,6 +1606,10 @@
   [
    "Opening after START (the street, the girl on the rooftop, the meeting, the title)",
    "OK: filler wrapped between words to the 2-line box, pages waiting for a click, pictures change with the story"
+  ],
+  [
+   "Ending rolls (DEN_TCM/ENDING_1-7.TXT)",
+   "not yet seen"
   ],
   [
    "Entering a name, menus in the scenes, saving and loading, endings",
@@ -1582,6 +1662,10 @@
    "OK: pictures and messages in the box"
   ],
   [
+   "Staff roll (STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "Choosing the date, saving and loading, later scenes, endings",
    "not yet seen"
   ]
@@ -1604,6 +1688,10 @@
    "OK: questions with their menus, the panel's label and value per line cut to their Japanese widths; the dialog box over the bottom box as in the original"
   ],
   [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
+  ],
+  [
    "Entering a name, the simulation, saving and loading, endings",
    "not yet seen"
   ]
@@ -1616,6 +1704,10 @@
   [
    "Opening scene (Asuta and Mink)",
    "OK: speaker tags (cut to their procedure's room) on the first line, filler wrapped between words below, pages waiting for a click within the 3-line box"
+  ],
+  [
+   "Staff roll (DAT/S.DAT)",
+   "not yet seen"
   ],
   [
    "The map, the mahjong matches, saving and loading, later scenes, endings",
@@ -1664,6 +1756,10 @@
    "OK: filler wrapped between words to the 3-line box, pages waiting for a click; the menu's items at their places, the first command's replies"
   ],
   [
+   "Staff roll (TCM/ROLL.DAT)",
+   "not yet seen"
+  ],
+  [
    "The other commands, saving and loading, later scenes, endings",
    "not yet seen"
   ]
@@ -1702,6 +1798,14 @@
   [
    "Hard-disk layout",
    "Not used: AdvBIOS prints 'cannot run on this machine' under the hard disk's DOS, so the patch writes the game's own boot floppy"
+  ],
+  [
+   "Name entry prompt (NAME.I86)",
+   "not yet seen"
+  ],
+  [
+   "Battles (the prompt in ADVXSYS/ADVX2.DAT, the monster names in ADVXSYS/MONSTER*.DAT)",
+   "not yet seen"
   ],
   [
    "Menus in scenes, the dungeon map, saving and loading, endings",
@@ -1764,6 +1868,10 @@
    "OK: messages page in the bottom box; menus at their places; the terminal's name field"
   ],
   [
+   "Staff roll (MES/STAFF2.TXT)",
+   "not yet seen"
+  ],
+  [
    "The customization and life simulation, saving and loading, endings",
    "not yet seen"
   ]
@@ -1782,6 +1890,10 @@
    "OK: speaker tags on the first line, the message below, pages waiting for a click; the command bar is artwork"
   ],
   [
+   "Battles (NRS2FGT.CMD's texts, the enemy names in DAT/NRS2ENM.DAT)",
+   "not yet seen"
+  ],
+  [
    "The commands, the transformation scenes, saving and loading, endings",
    "not yet seen"
   ]
@@ -1794,6 +1906,10 @@
   [
    "Suzuka's prologue (full-screen text) and the escape scene",
    "OK: filler wrapped between words, the speaker's tag above each message, pages waiting for a click; the game's key wait clears the box, so pages end with it (page_break 81 90) and no extra cleared box comes between them"
+  ],
+  [
+   "Item and art names (DAT/ITEM.TBL)",
+   "not yet seen"
   ],
   [
    "The other three stories, the menu's other items, saving and loading, endings",

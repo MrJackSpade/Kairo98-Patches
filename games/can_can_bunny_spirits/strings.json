@@ -117597,6 +117597,16 @@
     "SENJYO.MES:8"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "主人公の名前を入力してください：▼",
+   "en": "",
+   "refs": [
+    "CMD/MOUSENAM.I86:0535"
+   ],
+   "max_cells": 17
   }
  ]
 }

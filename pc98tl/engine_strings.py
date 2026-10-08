@@ -34,6 +34,40 @@ def _is_grid(text):
     return len(body) >= 10 and table and len(groups) >= 3 and all(len(g) <= 5 for g in groups)
 
 
+def char_at(raw, i):
+    """(character, byte length) at raw[i]: Shift-JIS, ASCII, half-width
+    kana, and the PC-98's own half-width letters 0x85 0x40-0x9e (row 9:
+    ASCII 0x21-0x7e drawn from two bytes) and space 0x86 0x40 as the
+    ASCII they show; None for anything else."""
+    b = raw[i]
+    if raw[i:i + 2] == b"\x86\x40":
+        return " ", 2                   # (its half-width space)
+    if b == 0x85 and i + 1 < len(raw) and 0x40 <= raw[i + 1] <= 0x9E and raw[i + 1] != 0x7F:
+        t = raw[i + 1]
+        return chr(0x21 + (t - 0x40 if t < 0x7F else t - 0x41)), 2
+    if 0x81 <= b <= 0x9F or 0xE0 <= b <= 0xFC:
+        try:
+            return raw[i:i + 2].decode("cp932"), 2
+        except UnicodeDecodeError:
+            return None, 2
+    try:
+        return raw[i:i + 1].decode("cp932"), 1
+    except UnicodeDecodeError:
+        return None, 1
+
+
+def decode(raw):
+    """raw as text (see char_at), or None where a character is not one."""
+    out, i = [], 0
+    while i < len(raw):
+        ch, n = char_at(raw, i)
+        if ch is None or i + n > len(raw):
+            return None
+        out.append(ch)
+        i += n
+    return "".join(out)
+
+
 def _mostly_japanese(text):
     k = sum(1 for c in text if "぀" <= c <= "ヿ" or c in _JP)
     return k >= 4 and k / len(text) > 0.4
@@ -45,16 +79,18 @@ def find(exe):
     for m in _RUN.finditer(exe):
         raw = m.group()
         # keep whole characters: a run may start on a trail byte of the previous one
-        try:
-            text = raw.decode("cp932")
-        except UnicodeDecodeError:
+        text = decode(raw)
+        if text is None:
             continue
         s, e = m.start(), m.end()
-        # trim ASCII noise at the ends (code bytes that happen to be printable)
-        while text and text[0] in " \t" + "".join(chr(c) for c in range(0x21, 0x7f)) and not text.startswith("%"):
+        # trim ASCII noise at the ends (code bytes that happen to be printable; one byte each,
+        # where a PC-98 half-width letter, two bytes, is text)
+        while text and text[0] in " \t" + "".join(chr(c) for c in range(0x21, 0x7f)) and not text.startswith("%") \
+                and exe[s] < 0x80:
             s += 1
             text = text[1:]
-        while text and ord(text[-1]) < 0x80 and text[-1] not in "%sd0123456789 ":
+        while text and ord(text[-1]) < 0x80 and text[-1] not in "%sd0123456789 " and exe[e - 1] < 0x80 \
+                and not (e >= 2 and exe[e - 2] == 0x85):
             e -= 1
             text = text[:-1]
         if not text or not _mostly_japanese(text) or _is_grid(text):
@@ -66,9 +102,8 @@ def find(exe):
         s, e = m.start(), m.end()
         if any(a <= s < b for a, b in kana):
             continue
-        try:
-            text = m.group().decode("cp932")
-        except UnicodeDecodeError:
+        text = decode(m.group())
+        if text is None:
             continue
         body = text.replace(" ", "").replace("\u3000", "")
         if len(body) < 2 or len(set(body)) == 1 or _is_grid(text):

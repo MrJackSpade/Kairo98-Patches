@@ -219084,6 +219084,316 @@
    "max_cells": 2
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　原案・企画・演出",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:0"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　 ゲームデザイン ：はやしなおかず",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:1"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　 プログラム　",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:2"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "　　　　　　シナリオ：さわべいづみ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:3"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　シナリオ補佐：はやし　もも",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　Ｊａｎｅ稲村",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:5"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　　グラフィック監修：ＣＨＡＲＭ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "キャラクターデザイン：ふじみや　いと",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:7"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　　　　　絵コンテ：ふくもと　かん",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:8"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　　　　　　ＣＧ原画：ふじみや　いと",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　りん　しん",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:10"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　ＣＧ－ＥＤＩＴ：ＣＨＡＲＭ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　ＮＡＫ村",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　甘露樹",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:13"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　ＣＡＲＲＯＴ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:14"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　よっち",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:15"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　攻冴沙",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:16"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　　　　　音楽：ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:17"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　システム監修：西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:18"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　（お）",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　テストプレイ：小林キャンディーミルキー",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:20"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　西脇　泉水",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　独楽鼠",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:22"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　竹本⑩連コンボ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　澤井　和彦",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:24"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "　　　マニュアル作成：春月　彩",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:25"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　武内　よしみ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:26"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "パッケージセルワーク：中田　亮大",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:27"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "　　ＣＧ＿Ｐｒｏｇ．：ｎ☆ｂｙｓ",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:28"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "　　　　プロデュース：ひろもり　さかな",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:29"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "　　　　　制作総指揮：井手　健介",
+   "en": "",
+   "refs": [
+    "MES/STAFF.TXT:30"
+   ],
+   "max_cells": 16
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

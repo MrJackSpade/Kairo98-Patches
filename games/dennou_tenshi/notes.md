@@ -29,9 +29,9 @@ ides' Adv98V script engine (`DENAN/`), on a hard-disk image: 106 scripts with te
 
 ## Script
 
-1814 strings (1754 messages, 58 menu items, 1 string variable values, 1 program strings).
+1891 strings (1754 messages, 58 menu items, 1 string variable values, 77 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 1814 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1891 strings have English so far.
 
 ## Limits
 
@@ -39,6 +39,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Strings in `*.MEC` files: the engine loads these into one shared buffer, each at its own offset, so a `.MEC` file can only grow up to the next file's offset (or, for the top one, as far as the original game's loads reach; past that the buffer meets the engine's stack), often only a few dozen bytes past its Japanese.  The patcher refuses a build where one outgrows its room and lists that file's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `DEN_TCM/ENDING_1.TXT`, `DEN_TCM/ENDING_2.TXT`, `DEN_TCM/ENDING_3.TXT`, `DEN_TCM/ENDING_4.TXT`, `DEN_TCM/ENDING_5.TXT`, `DEN_TCM/ENDING_6.TXT`, `DEN_TCM/ENDING_7.TXT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -52,5 +53,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Title screen (Ange's greeting, the START and name-entry buttons) | OK: filler in the box, pages waiting for a click; the buttons are drawn in the picture |
 | Name entry (the second button) | Reached: its kana grid is drawn in the picture; not driven further |
 | Opening after START (the street, the girl on the rooftop, the meeting, the title) | OK: filler wrapped between words to the 2-line box, pages waiting for a click, pictures change with the story |
+| Ending rolls (DEN_TCM/ENDING_1-7.TXT) | not yet seen |
 | Entering a name, menus in the scenes, saving and loading, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

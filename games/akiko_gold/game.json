@@ -11,5 +11,9 @@
   75,
   370
  ],
- "boot_steps": "30:shot,4:enter,4:shot,4:lclick,10:lclick,25:shot,2:lclick,20:shot"
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,10:lclick,25:shot,2:lclick,20:shot",
+ "text_files": [
+  "TCM/S_CREDIT.DAT"
+ ],
+ "text_fullwidth": true
 }

@@ -12480,6 +12480,26 @@
     "MIKI05.MES:v0"
    ],
    "max_cells": 1
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "主人公の名前を入力してください：▼",
+   "en": "",
+   "refs": [
+    "CMD/MOUSENAM.I86:054d"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "しんのすけ",
+   "en": "",
+   "refs": [
+    "NAME.DEF:0000"
+   ],
+   "max_cells": 5
   }
  ]
 }

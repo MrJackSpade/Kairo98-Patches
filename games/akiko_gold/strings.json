@@ -118949,6 +118949,296 @@
    "max_cells": 17
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　プロデュース・原案　セニョ～ル歌麿",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:0"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　（ＧＯＬＤ　ＰＲＯＤＵＣＴＩＯＮ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:1"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　　　　シナリオ　澁澤龍乃助",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "キャラクターデザイン",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:3"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　　　　　原画　山本正文",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:4"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　カバーイラスト　石原豪人",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:5"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "Ｓｏｕｎｄ",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:6"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　　　Ｐｒｏｄｕｃｅ　亜希羅（ＭＵＳＥ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:7"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "Ｍｕｓｉｃ",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:8"
+   ],
+   "max_cells": 5
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　　　Ｃｏｍｐｏｓｅ　ＨＡＴＡ（ＭＵＳＥ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:9"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　「新世界」作曲　ドボルザーク",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:10"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　「野ばら」作曲　シューベルト",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:11"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "声の出演",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:12"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "　　（ＣＤ－ＲＯＭ）　麻莉亜（新宿マダムＱ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:13"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　シナリオプログラム　中井　真也",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:14"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　グラフィック監修　如月忍（スタジオノヴァ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:15"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　グラフィック　ウッキー",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:16"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　月丸",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:17"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　テストプレイ　西脇　泉水",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:18"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　カルマ１００％　小林",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:19"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　デヴィッド・ヤウパーデール",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:20"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　作画プロデュース　松永宏樹（ＴＯＭＢＯＹ）",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:21"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　絵コンテ　いずみゆう",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:22"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　　　　セルワーク　永井留美子",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:23"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "　　　　　　セル背景　（株）プロダクション　アイ",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:24"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "　　　　　　作画進行　ＴＯＭＢＯＹ",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:25"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "　　　　　アドワーク　ＳＨＥＣＴＯＲ",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:26"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "　　　　　　　　協力　藤井純生",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:27"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "　　　　　制作・著作　（有）アイデス",
+   "en": "",
+   "refs": [
+    "TCM/S_CREDIT.DAT:28"
+   ],
+   "max_cells": 18
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

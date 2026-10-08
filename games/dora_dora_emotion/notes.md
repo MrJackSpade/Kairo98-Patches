@@ -31,9 +31,9 @@ ides' Adv98V script engine (`DORA/`), on a hard-disk image: 104 scripts with tex
 
 ## Script
 
-6842 strings (6721 messages, 71 menu items, 48 name tags (procedure text), 1 string variable values, 1 program strings).
+6895 strings (6721 messages, 71 menu items, 48 name tags (procedure text), 1 string variable values, 53 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6842 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6895 strings have English so far.
 
 ## Limits
 
@@ -42,6 +42,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Strings in `*.MEC` files: the engine loads these into one shared buffer, each at its own offset, so a `.MEC` file can only grow up to the next file's offset (or, for the top one, as far as the original game's loads reach; past that the buffer meets the engine's stack), often only a few dozen bytes past its Japanese.  The patcher refuses a build where one outgrows its room and lists that file's strings.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `DAT/S.DAT`, shown as they are, e.g. the opening roll): the files hold Shift-JIS only (no half-width letters), so they are written in full-width letters, each line up to `max_cells` letters (its Japanese byte length), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -54,5 +55,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Title menu (three items) | OK: filler items at their places |
 | Opening scene (Asuta and Mink) | OK: speaker tags (cut to their procedure's room) on the first line, filler wrapped between words below, pages waiting for a click within the 3-line box |
+| Staff roll (DAT/S.DAT) | not yet seen |
 | The map, the mahjong matches, saving and loading, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

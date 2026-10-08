@@ -5,5 +5,14 @@
  "encoding": "adv98v",
  "game_dir": "DENAN",
  "extraop": true,
- "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,3:shot,1:mouse=-35;-35,1:mouse=-30;-30,1:shot,2:lclick,3:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,3:shot,1:mouse=-35;-35,1:mouse=-30;-30,1:shot,2:lclick,3:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "text_files": [
+  "DEN_TCM/ENDING_1.TXT",
+  "DEN_TCM/ENDING_2.TXT",
+  "DEN_TCM/ENDING_3.TXT",
+  "DEN_TCM/ENDING_4.TXT",
+  "DEN_TCM/ENDING_5.TXT",
+  "DEN_TCM/ENDING_6.TXT",
+  "DEN_TCM/ENDING_7.TXT"
+ ]
 }

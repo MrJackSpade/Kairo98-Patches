@@ -173160,6 +173160,746 @@
    "max_cells": 4
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　　 ☆メインプログラム☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:0"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　　　　Ｍ・ＣＡＴ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:1"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　◆好きな異性のタイプ◆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:2",
+    "DAT/STAFF.DAT:6",
+    "DAT/STAFF.DAT:11",
+    "DAT/STAFF.DAT:18",
+    "DAT/STAFF.DAT:24",
+    "DAT/STAFF.DAT:28",
+    "DAT/STAFF.DAT:33",
+    "DAT/STAFF.DAT:37",
+    "DAT/STAFF.DAT:43",
+    "DAT/STAFF.DAT:48",
+    "DAT/STAFF.DAT:52",
+    "DAT/STAFF.DAT:57",
+    "DAT/STAFF.DAT:63",
+    "DAT/STAFF.DAT:67",
+    "DAT/STAFF.DAT:71",
+    "DAT/STAFF.DAT:75",
+    "DAT/STAFF.DAT:79",
+    "DAT/STAFF.DAT:83",
+    "DAT/STAFF.DAT:87",
+    "DAT/STAFF.DAT:91",
+    "DAT/STAFF.DAT:95",
+    "DAT/STAFF.DAT:99"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "　フィーバーパワフルの夢夢ちゃん！！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:3"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　☆第１話シナリオ☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:4"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　Ｊａｎｅ稲村",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:5"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　　　養老の滝の愛想の悪い",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:7"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　　 ウェイトレス以外の女性",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:8"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　　　☆第２話シナリオ☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:9"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　　　　　　火野蜘蛛",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:10"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": " 街でショートカットの娘を見かけたら",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:12"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": " 近づいてってにほひを嗅いじゃうよ、",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:13"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": " ボクは！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:14"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "　　　性格は二重人格がいいナ。",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:15"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　　　　☆第３話シナリオ☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:16"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　　　葛西みなみ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:17"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　３０過ぎの子持ちなのに",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　頭をモヒカンにしてる",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:20"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　脳天気オヤジ以外なら・・・",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　☆第３話シナリオお手伝い☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:22"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　　　 ななこ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:23"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　 イメージは「在広東少年」です☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:25"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　 ☆原画☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:26",
+    "DAT/STAFF.DAT:31"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　 ストロングアニメータ１号",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:27"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "　　　髪が緑で角が生えてて、",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:29"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "虎縞のビキニを着てる娘以外は却下！！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:30"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "　　 ストロングアニメータ２号",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:32"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "　異性には興味はありません・・・",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:34"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "　　　　　☆ＣＧ監修☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:35"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "　　　　　 亜久都まお",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:36"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "　　　最近は横山智佐かなー？",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:38"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "　　　　　　でもでも",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:39"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "　永作博美も細川ふみえも好きー！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:40"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "　　　　　　☆ＣＧ☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:41",
+    "DAT/STAFF.DAT:46",
+    "DAT/STAFF.DAT:50",
+    "DAT/STAFF.DAT:55"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "　　　　　　ＢＥＬＬ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:42"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "あまりチ○ポの大きくない人（短小はイヤ☆）",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:44"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "体臭のきつくない人（獣のようなのはパス☆）",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:45"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": "　　　　　　 みっち",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:47"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "　 Ｈな絵をバリバリ描ける女の子",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:49"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": "　　　　　 千恵ちゃん",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:51"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": "　　　　　うーーん・・・",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:53"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": "やっぱり頼れる感じの人が良いです。",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:54"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": "　　　　　マッキー松本",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:56"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": "　　 そうですね。三石琴乃とか",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:58"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": "　　 バカな役をやりつつ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:59"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": "　　 実はまじめそうって人かな？",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:60"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00047",
+   "kind": "file",
+   "jp": "　　　　　☆音楽監修☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:61"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00048",
+   "kind": "file",
+   "jp": "　　　　　　 亜希羅",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:62"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00049",
+   "kind": "file",
+   "jp": "　ＳでＭな子（清楚で真面目な子？）",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:64"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00050",
+   "kind": "file",
+   "jp": "　　　　 ☆作曲・編曲☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:65"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00051",
+   "kind": "file",
+   "jp": "　　　　　　　直樹",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:66"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00052",
+   "kind": "file",
+   "jp": "　　ボディコンイケイケギャル！！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:68"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00053",
+   "kind": "file",
+   "jp": "　　　　 ☆テストプレイ☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:69",
+    "DAT/STAFF.DAT:73",
+    "DAT/STAFF.DAT:77",
+    "DAT/STAFF.DAT:81",
+    "DAT/STAFF.DAT:85",
+    "DAT/STAFF.DAT:89"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00054",
+   "kind": "file",
+   "jp": "　　　　 駄菓子屋ジョニー",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:70"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00055",
+   "kind": "file",
+   "jp": "　　　　料理が上手な人・・・",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:72"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00056",
+   "kind": "file",
+   "jp": "　　　　 伊集院ヨロレイヒ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:74"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00057",
+   "kind": "file",
+   "jp": "　 フェラチオがうまい女子高生！！",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:76"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00058",
+   "kind": "file",
+   "jp": "　　　　　 小林ふぃー",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:78"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00059",
+   "kind": "file",
+   "jp": "　僕のチ○チンを見つけてくれる人",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:80"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00060",
+   "kind": "file",
+   "jp": "　　　　　 宍戸江利花",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:82"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00061",
+   "kind": "file",
+   "jp": "　　　　　 福岡晶・・・",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:84"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00062",
+   "kind": "file",
+   "jp": "　　　　  坂井まちゃあき",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:86"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00063",
+   "kind": "file",
+   "jp": "　　　　い・い・ひ・と☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:88"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00064",
+   "kind": "file",
+   "jp": "　　　　　 あちき平間",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:90"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00065",
+   "kind": "file",
+   "jp": "　経理をしている人妻（さわティ）",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:92"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00066",
+   "kind": "file",
+   "jp": "　　　　 ☆システム監修☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:93"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00067",
+   "kind": "file",
+   "jp": "　　　　　 西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:94"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00068",
+   "kind": "file",
+   "jp": "　 パチンコと競馬の好きな女の子",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:96"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00069",
+   "kind": "file",
+   "jp": "　　　　☆プロデュース☆",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:97"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00070",
+   "kind": "file",
+   "jp": "　　　　　　田所広成",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:98"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00071",
+   "kind": "file",
+   "jp": "　アナルセックスの好きな看護婦さん",
+   "en": "",
+   "refs": [
+    "DAT/STAFF.DAT:100"
+   ],
+   "max_cells": 17
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

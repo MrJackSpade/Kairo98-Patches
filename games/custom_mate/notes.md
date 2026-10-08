@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-07 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`CMSTART/`), on a hard-disk image: 181 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (`CMSTART/`), on a hard-disk image: 181 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -30,9 +30,9 @@ ides' Adv98V script engine (`CMSTART/`), on a hard-disk image: 181 scripts with 
 
 ## Script
 
-6436 strings (5527 messages, 891 menu items, 16 name tags (procedure text), 1 string variable values, 1 program strings).
+6437 strings (5527 messages, 891 menu items, 16 name tags (procedure text), 1 string variable values, 2 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6436 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6437 strings have English so far.
 
 ## Limits
 
@@ -41,6 +41,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own, so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -54,5 +55,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Name entry (the first item) | Its kana window takes no emulated click or key in the original either; the run picks game start instead |
 | The opening and its yes/no question | OK: filler in the box, the two answers under it; Up and click choose |
 | Customizing the girl (the demon, her questions and the stat panel) | OK: questions with their menus, the panel's label and value per line cut to their Japanese widths; the dialog box over the bottom box as in the original |
+| The default hero name (NAME.DEF) in the story | not yet seen |
 | Entering a name, the simulation, saving and loading, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

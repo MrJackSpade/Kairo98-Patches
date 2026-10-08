@@ -32448,6 +32448,246 @@
    "max_cells": 2
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　　　　　　『真奈美』制作スタッフ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:0"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　　　　プロデュース　セニョ～ル・歌麿",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:1"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　　　　　　シナリオ　石弓　達也",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:2"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "　　　　音楽プロデュース　㈲ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:3"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　シナリオプログラム　片桐　秀",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　グラフィック監修　如月　忍（スタジオ・ノヴァ）",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "グラフィック・エディット　ウッキー",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:6"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　月丸",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:7"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　　　　　システム監修　西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:8"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　グラフィックプログラム　ｎ☆ｂｙｓ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:9"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　　作画プロデュース　松永　宏樹（ＴＯＭＢＯＹ）",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:10"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　　　　　　作画進行　にのみや（ＴＯＭＢＯＹ）",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:11"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　　絵コンテ　いずみゆう",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:12"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "　　　　　　　　　　作画　スタジオ・マーク",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:13"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　佐藤　　修",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:14"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　永田　正美",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:15"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　水野　悦明",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:16"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　川添　政和",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:17"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　　ゲームデザイン　駄菓子屋ジョニー",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:18"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　西脇　泉水",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:19"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　竹本　１０連コンボ（４６才）",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:20"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　伊集院　うに",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:21"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　セル・ワーク　ＡＩＣ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:22"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　　　　　アド・ワーク　ＳＣＥＣＴＥＲ",
+   "en": "",
+   "refs": [
+    "TCM/ROLL.DAT:23"
+   ],
+   "max_cells": 20
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

@@ -8,5 +8,9 @@
  "proc_slot": 76,
  "proc_slots": 20,
  "marker_cols": 3,
- "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot",
+ "text_files": [
+  "DAT/AR_STAFF.DAT"
+ ],
+ "text_fullwidth": true
 }

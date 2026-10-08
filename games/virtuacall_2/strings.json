@@ -369004,6 +369004,542 @@
    "max_cells": 4
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "                 Virtuacall 2  STAFF",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:0",
+    "TCM/VC2_STF.DAT:0"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "                      producer",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:1",
+    "TCM/VC2_STF.DAT:1"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "                   かなすぎはじめ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:2",
+    "MES/VC2_STF.DAT:6",
+    "TCM/VC2_STF.DAT:2",
+    "TCM/VC2_STF.DAT:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "                      director",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:3",
+    "TCM/VC2_STF.DAT:3"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "                  坂井“弥七”正明",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:4",
+    "MES/VC2_STF.DAT:7",
+    "MES/VC2_STF.DAT:9",
+    "TCM/VC2_STF.DAT:4",
+    "TCM/VC2_STF.DAT:7",
+    "TCM/VC2_STF.DAT:9"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "                    game-design",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:5",
+    "TCM/VC2_STF.DAT:5"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "                    game-program",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:8",
+    "TCM/VC2_STF.DAT:8"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "              character design & graphic",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:10",
+    "TCM/VC2_STF.DAT:10"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "                      藤井純生",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:11",
+    "MES/VC2_STF.DAT:33",
+    "TCM/VC2_STF.DAT:11",
+    "TCM/VC2_STF.DAT:33"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "                      松本規之",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:12",
+    "TCM/VC2_STF.DAT:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "                       あさの",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:13",
+    "MES/VC2_STF.DAT:34",
+    "TCM/VC2_STF.DAT:13",
+    "TCM/VC2_STF.DAT:34"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "                 宇野真（ジーベック）",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:14",
+    "TCM/VC2_STF.DAT:14"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "               高木潤（サム・タック企画）",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:15",
+    "TCM/VC2_STF.DAT:15"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "                  超おまけの人　Ｘ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:16",
+    "TCM/VC2_STF.DAT:16"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "                      scenario",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:17",
+    "TCM/VC2_STF.DAT:17"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "                       澁澤Ｔ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:18",
+    "TCM/VC2_STF.DAT:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "                      石川洋一",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:19",
+    "TCM/VC2_STF.DAT:19"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "                  Ｙ．Ｓｕｇａｎｏ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:20",
+    "TCM/VC2_STF.DAT:20"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "                    music compose",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:21",
+    "TCM/VC2_STF.DAT:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "                       ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:22",
+    "TCM/VC2_STF.DAT:22"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "                      graphic",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:23",
+    "TCM/VC2_STF.DAT:23"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "                       塩見元",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:24",
+    "TCM/VC2_STF.DAT:24"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "                       たま２",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:25",
+    "TCM/VC2_STF.DAT:25"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "                      山田山子",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:26",
+    "TCM/VC2_STF.DAT:26"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "                      高橋正吉",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:27",
+    "TCM/VC2_STF.DAT:27"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "                   スタジオ　ノヴァ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:28",
+    "TCM/VC2_STF.DAT:28"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "                    ピースメーカー",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:29",
+    "TCM/VC2_STF.DAT:29"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "                    frame design",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:30",
+    "TCM/VC2_STF.DAT:30"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "                      須磨邦雄",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:31",
+    "TCM/VC2_STF.DAT:31"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "                  graphic-supervise",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:32",
+    "TCM/VC2_STF.DAT:32"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "                gamedesign-supervise",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:35",
+    "TCM/VC2_STF.DAT:35"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "                     中原ゆうき",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:36",
+    "TCM/VC2_STF.DAT:36"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "          　　　 system maintenance",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:37",
+    "TCM/VC2_STF.DAT:37"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "                      ＰＩＹＯ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:38",
+    "TCM/VC2_STF.DAT:38"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "                    art direction",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:39",
+    "TCM/VC2_STF.DAT:39"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "                  ＳＣＨＥＣＴＥＲ",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:40",
+    "TCM/VC2_STF.DAT:40"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "                     test-play",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:41",
+    "TCM/VC2_STF.DAT:41"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": "                     ナンセンス",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:42",
+    "TCM/VC2_STF.DAT:42"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "                  小林パーマネント",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:43",
+    "TCM/VC2_STF.DAT:43"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": "                  駄菓子屋ジョニー",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:44",
+    "TCM/VC2_STF.DAT:44"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": "                      独楽鼠",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:45"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": "                  沢井和彦（ＧＥＸ）",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:46"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": "                   special thanks",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:47",
+    "TCM/VC2_STF.DAT:45"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": "             デヴィッド・カウパーデール",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:48",
+    "TCM/VC2_STF.DAT:46"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": "                下地志直（ジーベック）",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:49",
+    "TCM/VC2_STF.DAT:47"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": "             金子康良（サム・タック企画）",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:50",
+    "TCM/VC2_STF.DAT:48"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00047",
+   "kind": "file",
+   "jp": "                     制作・著作",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:51",
+    "TCM/VC2_STF.DAT:49"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00048",
+   "kind": "file",
+   "jp": "           （株）アイデス・フェアリーテール",
+   "en": "",
+   "refs": [
+    "MES/VC2_STF.DAT:52",
+    "TCM/VC2_STF.DAT:50"
+   ],
+   "max_cells": 21
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

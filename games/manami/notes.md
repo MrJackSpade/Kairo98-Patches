@@ -29,15 +29,16 @@ ides' Adv98V script engine (`MANAMI/`), on a hard-disk image: 49 scripts with te
 
 ## Script
 
-3108 strings (2987 messages, 105 menu items, 1 string variable values, 15 program strings).
+3132 strings (2987 messages, 105 menu items, 1 string variable values, 24 text file lines, 15 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3108 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3132 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `TCM/ROLL.DAT`, shown as they are, e.g. the opening roll): the files hold Shift-JIS only (no half-width letters), so they are written in full-width letters, each line up to `max_cells` letters (its Japanese byte length), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -51,5 +52,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Setup questions with their menus (sound board, text colour) | OK: questions and filler items in their windows |
 | The first scene and its four-item command menu | OK: filler wrapped between words to the 3-line box, pages waiting for a click; the menu's items at their places, the first command's replies |
+| Staff roll (TCM/ROLL.DAT) | not yet seen |
 | The other commands, saving and loading, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

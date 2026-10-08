@@ -119382,6 +119382,635 @@
    "max_cells": 5
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "       ～ ＤＯＫＩＤＯＫＩバケーション制作スタッフ ～",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:0"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "                     [ 企画／原案 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:1",
+    "CLM/ROLL2.DAT:16"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "                           ゆ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:2",
+    "CLM/ROLL.DAT:40",
+    "CLM/ROLL2.DAT:17",
+    "CLM/ROLL2.DAT:55"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "                        [ 原画 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:3",
+    "CLM/ROLL2.DAT:18"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "                           あ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:4",
+    "CLM/ROLL2.DAT:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "                      [ シナリオ ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:5",
+    "CLM/ROLL2.DAT:20"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "                        綾川　久",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:6",
+    "CLM/ROLL2.DAT:21"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "                           **",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:7",
+    "CLM/ROLL.DAT:9",
+    "CLM/ROLL.DAT:15",
+    "CLM/ROLL.DAT:17",
+    "CLM/ROLL.DAT:19",
+    "CLM/ROLL.DAT:21",
+    "CLM/ROLL.DAT:23",
+    "CLM/ROLL.DAT:49",
+    "CLM/ROLL2.DAT:4",
+    "CLM/ROLL2.DAT:6",
+    "CLM/ROLL2.DAT:8",
+    "CLM/ROLL2.DAT:10",
+    "CLM/ROLL2.DAT:12",
+    "CLM/ROLL2.DAT:22",
+    "CLM/ROLL2.DAT:24",
+    "CLM/ROLL2.DAT:30",
+    "CLM/ROLL2.DAT:32",
+    "CLM/ROLL2.DAT:34",
+    "CLM/ROLL2.DAT:36",
+    "CLM/ROLL2.DAT:38",
+    "CLM/ROLL2.DAT:64"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "                         中山寺",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:8",
+    "CLM/ROLL2.DAT:23"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "                  シナリー = スケッターズ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:10",
+    "CLM/ROLL2.DAT:25"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "                      [ ＣＧ作監 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:11",
+    "CLM/ROLL2.DAT:26"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "                       ＣＨＡＲＭ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:12",
+    "CLM/ROLL2.DAT:27"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "                        [ ＣＧ ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:13",
+    "CLM/ROLL2.DAT:28"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "                         らん☆",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:14",
+    "CLM/ROLL2.DAT:29"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "                      武内　よしみ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:16",
+    "CLM/ROLL2.DAT:31"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "                        甘露　樹",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:18",
+    "CLM/ROLL2.DAT:33"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "                        ＮＡＫ村",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:20",
+    "CLM/ROLL2.DAT:35"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "                    ★ＣＡＲＲＯＴ★",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:22",
+    "CLM/ROLL2.DAT:37"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "                         月　睦",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:24",
+    "CLM/ROLL2.DAT:39"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "                  [ ＣＧディレクター ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:25",
+    "CLM/ROLL2.DAT:40"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "                       茶之泉　善",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:26",
+    "CLM/ROLL2.DAT:41"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "                    [ システム管理 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:27",
+    "CLM/ROLL2.DAT:42"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "                      西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:28",
+    "CLM/ROLL2.DAT:43"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "                        [ 音楽 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:29",
+    "CLM/ROLL2.DAT:44"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "                        ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:30",
+    "CLM/ROLL2.DAT:45"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "                    [ テストプレイ ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:31",
+    "CLM/ROLL2.DAT:46"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "                 良心回路    ひろもり　さかな",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:32",
+    "CLM/ROLL2.DAT:47"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "           チンパク評論家    伊集院くちでする",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:33",
+    "CLM/ROLL2.DAT:48"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "                 栄養番長　  小林”デ～ブ”ぶよまん",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:34",
+    "CLM/ROLL2.DAT:49"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "         １８歳　女子校生　  西脇　泉水",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:35",
+    "CLM/ROLL2.DAT:50"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "                 東方不敗　  駄菓子屋ジョニ～",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:36",
+    "CLM/ROLL2.DAT:51"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "       トリガ～・ハッピ～　  独楽鼠",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:37",
+    "CLM/ROLL2.DAT:52"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "             モ～ホ～注意　  デヴィット・カウパ～デ～ル",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:38",
+    "CLM/ROLL2.DAT:53"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "                    [ ディレクター ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:39",
+    "CLM/ROLL2.DAT:54"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "                 [ スペシャルサンクス ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:41",
+    "CLM/ROLL2.DAT:56"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "                        ＤＬＴ！",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:42",
+    "CLM/ROLL2.DAT:57"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　 **",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:43",
+    "CLM/ROLL.DAT:45",
+    "CLM/ROLL.DAT:47",
+    "CLM/ROLL2.DAT:58",
+    "CLM/ROLL2.DAT:60",
+    "CLM/ROLL2.DAT:62"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": "                        ほげっ様",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:44",
+    "CLM/ROLL2.DAT:59"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "                        ひらめ様",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:46",
+    "CLM/ROLL2.DAT:61"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": "                    ノースフライト様",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:48",
+    "CLM/ROLL2.DAT:63"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": "                 ＩＤＳネット会員の皆様",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:50",
+    "CLM/ROLL2.DAT:65"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": "                     [ 製作総指揮 ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:51",
+    "CLM/ROLL2.DAT:66"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": "                       井手　健介",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:52",
+    "CLM/ROLL2.DAT:67"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": "                        (C)1995",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:53",
+    "CLM/ROLL2.DAT:68"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": "                    （有）アイデス",
+   "en": "",
+   "refs": [
+    "CLM/ROLL.DAT:54",
+    "CLM/ROLL2.DAT:69"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": "        ～ ＤＯＫＩＤＯＫＩバケーション・スタッフ ～",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:0"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00047",
+   "kind": "file",
+   "jp": "                      [ キャスト ]",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:1"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00048",
+   "kind": "file",
+   "jp": "                        高階　睦",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00049",
+   "kind": "file",
+   "jp": "                      立川　めぐみ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:3"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00050",
+   "kind": "file",
+   "jp": "                       雪谷　綾香",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:5"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00051",
+   "kind": "file",
+   "jp": "                      九段　美奈穂",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:7"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00052",
+   "kind": "file",
+   "jp": "                       加賀　優莉",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:9"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00053",
+   "kind": "file",
+   "jp": "                        柳沢　徹",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00054",
+   "kind": "file",
+   "jp": "   アレクサンドラ・コミクローシュ・ネイティベルグソン",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:13"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00055",
+   "kind": "file",
+   "jp": "                       ・タニア・",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:14"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00056",
+   "kind": "file",
+   "jp": "                     アレクサンドラ",
+   "en": "",
+   "refs": [
+    "CLM/ROLL2.DAT:15"
+   ],
+   "max_cells": 17
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",
@@ -119390,6 +120019,16 @@
     "DOKIV.COM:0100"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "じゅんいち",
+   "en": "",
+   "refs": [
+    "NAME.DEF:0000"
+   ],
+   "max_cells": 5
   }
  ]
 }

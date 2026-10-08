@@ -55,7 +55,14 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             "program_files" ([other modules, relative to the game
             folder, whose strings are shown: a name entry module]),
             "program_fullwidth" (those modules draw Shift-JIS only: their
-            strings in full-width letters),
+            strings in full-width letters), "data_files" ([data files,
+            relative to the game folder, of names the engine shows: item,
+            monster and enemy tables; see data_strings]) and
+            "data_fullwidth" (their names in full-width letters),
+            "table_files" ([string table files, relative to the game
+            folder: a list box's lines, the load window's notes; see
+            table_parse]) and "table_fullwidth" (their text in full-width
+            letters),
             "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
@@ -528,24 +535,172 @@ def _is_table(text):
     return best >= 6
 
 
+def _swapped_table(exe, s, e):
+    """A run that is really part of a character table stored as
+    little-endian words (a name entry's kana keys, 0xa0 0x82 for あ): read
+    as byte-swapped words from s or from the byte before it, every word in
+    it is kana or a full-width letter or digit."""
+    for at in (s, s - 1):
+        words = [exe[k + 1] << 8 | exe[k] for k in range(max(at, 0), e - 1, 2)]
+        if len(words) >= 3 and all(0x824F <= w <= 0x82F1 or 0x8340 <= w <= 0x8396 for w in words):
+            return True
+    return False
+
+
+def table_parse(data):
+    """A string table file (game.json "table_files": a list box's lines,
+    the load window's chapter notes): a table of little-endian word
+    offsets to NUL-ended Shift-JIS strings (CR for a line break), either
+    with the count first (count, offset...) or without (offset..., the
+    lowest offset giving the count).  Returns (head bytes before the
+    table, [offsets]) or None."""
+    words = lambda n, at: [data[at + 2 * k] | data[at + 2 * k + 1] << 8 for k in range(n)]
+    if len(data) < 4:
+        return None
+    first = words(1, 0)[0]
+    for head, n in ((2, first), (0, first // 2)):
+        if not n or head + 2 * n > len(data):
+            continue
+        offs = words(n, head)
+        # (entries may share a string, so the offsets need not rise)
+        if min(offs) == head + 2 * n and max(offs) < len(data) and all(b"\x00" in data[at:] for at in offs):
+            return data[:head], offs
+    return None
+
+
+def table_strings(data):
+    """[(index, text)] of a string table's strings with text, each under
+    the first entry that points to it (see table_parse); a CR is a line
+    break (\\n)."""
+    head, offs = table_parse(data)
+    out, seen = [], set()
+    for n, at in enumerate(offs):
+        if at in seen:
+            continue
+        seen.add(at)
+        # (a CR ending the string stays the patch's to write back: not part of the text)
+        text = _line_text(data[at:data.index(b"\x00", at)].rstrip(b"\r")).replace("\r", "\n")
+        if text.strip(" 　\n"):
+            out.append((n, text))
+    return out
+
+
+def patch_table(data, texts, sids, warn, fullwidth):
+    """The string table rebuilt with the English (texts: {index: text},
+    index as table_strings gives it), the strings in their old order and
+    every offset moved to match.  It is loaded into a buffer of the
+    file's size, so it may not grow: the strings that would overrun it
+    are kept in Japanese and reported."""
+    head, offs = table_parse(data)
+    starts = sorted(set(offs))
+    old = {at: data[at:data.index(b"\x00", at)] for at in starts}
+    new = dict(old)
+    for n, text in texts.items():
+        ends = len(old[offs[n]]) - len(old[offs[n]].rstrip(b"\r"))
+        new[offs[n]] = b"\r".join(_line_bytes(line, fullwidth) for line in text.split("\n")) + b"\r" * ends
+    size = lambda: len(data) + sum(len(new[at]) - len(old[at]) for at in starts)
+    for n in sorted(texts, reverse=True):
+        if size() <= len(data):
+            break
+        warn.append("%s: the table outgrows its file (%d bytes), kept in Japanese" % (sids[n], len(data)))
+        new[offs[n]] = old[offs[n]]
+    pos, moved, body = len(head) + 2 * len(offs), {}, b""
+    for k, at in enumerate(starts):
+        # (bytes between one string's NUL and the next string, and after the last, go along)
+        gap = data[at + len(old[at]) + 1:starts[k + 1] if k + 1 < len(starts) else len(data)]
+        moved[at] = pos
+        body += new[at] + b"\x00" + gap
+        pos += len(new[at]) + 1 + len(gap)
+    out = head + b"".join(bytes([moved[at] & 0xFF, moved[at] >> 8]) for at in offs) + body
+    return out.ljust(len(data), b"\x00")
+
+
+_DRUN = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc]| )+")
+
+
+def data_strings(data):
+    """[(start, end, text)] of the names in a data file (game.json
+    "data_files": item, monster and enemy tables, a battle prompt): runs
+    of whole Shift-JIS characters and spaces, split at ＠ (the engine's
+    blank, which pads fixed-width fields).  start..end is the room the
+    English may take: the run with the spaces around the name and the ＠
+    padding after it; text is the name without them."""
+    out = []
+    for m in _DRUN.finditer(data):
+        pos, pieces, at, piece = m.start(), [], m.start(), ""
+        raw = m.group()
+        i = 0
+        while i < len(raw):
+            if raw[i] == 0x20:
+                ch, n = " ", 1
+            else:
+                try:
+                    ch, n = raw[i:i + 2].decode("cp932"), 2
+                except UnicodeDecodeError:
+                    ch, n = None, 2
+            if ch == "＠":
+                if piece.strip(" 　"):
+                    pieces.append([at, pos, piece])
+                if pieces and pieces[-1][1] == pos:
+                    pieces[-1][1] = pos + n        # the padding is the field's room
+                at, piece = pos + n, ""
+            elif ch is None:
+                if piece.strip(" 　"):
+                    pieces.append([at, pos, piece])
+                at, piece = pos + n, ""
+            else:
+                piece += ch
+            pos += n
+            i += n
+        if piece.strip(" 　"):
+            pieces.append([at, pos, piece])
+        for s, e, text in pieces:
+            body = text.strip(" 　")
+            if all("぀" <= c <= "ヿ" or "一" <= c <= "鿿" or "！" <= c <= "～" or c in " 　、。・ー★☆〜「」『』"
+                   for c in body):
+                out.append((s, e, body))
+    return out
+
+
+def _data_field(data, s, e, text, wide, warn, sid):
+    """A data file name's bytes for its field s..e (see data_strings): the
+    English (full-width letters, wide) cut to the room in whole letters
+    and padded as the field was: with ＠ where its padding was ＠, else
+    with the NUL or FF that ends it, else spaces."""
+    enc = _fullwidth(text, None) if wide else _plain(text)
+    if len(enc) > e - s:
+        warn.append("%s: %d bytes, the field has room for %d" % (sid, len(enc), e - s))
+        enc = enc[:(e - s) // 2 * 2] if wide else enc[:e - s]
+    if data[e - 2:e] == "＠".encode("cp932"):
+        fill = "＠".encode("cp932") * ((e - s - len(enc)) // 2) + b" " * ((e - s - len(enc)) % 2)
+    elif e < len(data) and data[e] in (0x00, 0xFF):
+        fill = bytes([data[e]]) * (e - s - len(enc))
+    else:
+        fill = (b"\x81\x40" if wide else b" ") * ((e - s - len(enc)) // (2 if wide else 1))
+        fill += b" " * (e - s - len(enc) - len(fill))
+    return enc + fill
+
+
 def program_strings(exe):
     """[(start, end, text)] of the Japanese in a program, with rows of
     labels split at their full-width spaces so each label keeps its place
-    (the name window picks a label by where it is clicked)."""
+    (the name window picks a label by where it is clicked), and fields
+    padded with ＠ (the engine's blank, a data file's fixed-width names)
+    split at it."""
     out = []
     for s, e, text in engine_strings.find(exe):
-        if _is_table(text):
+        if _is_table(text) or _swapped_table(exe, s, e):
             continue
         pos, piece, at = s, "", s
-        for ch in text + "　":
-            n = len(ch.encode("cp932"))
-            if ch == "　":
+        while pos <= e:
+            ch, n = engine_strings.char_at(exe, pos) if pos < e else ("　", 0)
+            if ch in "　＠":
                 if piece.strip():
                     out.append((at, pos, piece))
                 piece, at = "", pos + n
             else:
                 piece += ch
-            pos += n
+            pos += n or 1
     return out
 
 
@@ -582,8 +737,33 @@ def text_file_lines(data):
     """A plain Shift-JIS text file the engine shows as it is (CR LF lines,
     ended by 1A): [(line text, byte length)] of its lines with text."""
     body = data.split(b"\x1a")[0]
-    return [(raw.decode("cp932", "replace"), len(raw)) for raw in body.split(b"\r\n")
+    return [(_line_text(raw), len(raw)) for raw in body.split(b"\r\n")
             if raw.decode("cp932", "replace").strip("\u3000 ")]
+
+
+def _line_text(raw):
+    """A line of Shift-JIS, a PC-98 own character (a lead byte from EB, or
+    one cp932 lacks) as {Uxxxx}, as in the scripts."""
+    out, i = [], 0
+    while i < len(raw):
+        b = raw[i]
+        if (0x81 <= b <= 0x9F or 0xE0 <= b <= 0xFC) and i + 1 < len(raw):
+            pair = raw[i:i + 2]
+            out.append("{U%s}" % pair.hex() if b >= 0xEB or _undecodable(pair) else pair.decode("cp932"))
+            i += 2
+        else:
+            out.append(raw[i:i + 1].decode("cp932", "replace"))
+            i += 1
+    return "".join(out)
+
+
+def _line_bytes(text, fullwidth):
+    """A text file line's bytes: {Uxxxx} as those bytes, the rest ASCII (or
+    full-width letters, fullwidth) and Shift-JIS."""
+    out = b""
+    for n, part in enumerate(_UTOK.split(" ".join(text.split("\n")))):
+        out += bytes.fromhex(part) if n % 2 else (_fullwidth(part, None) if fullwidth else _plain(part))
+    return out
 
 
 def patch_text_file(data, texts, sids, warn, fullwidth=False):
@@ -603,8 +783,7 @@ def patch_text_file(data, texts, sids, warn, fullwidth=False):
         if text is None:
             out.append(raw)
         else:
-            enc = _fullwidth(" ".join(text.split("\n")), None) if fullwidth \
-                else _plain(" ".join(text.split("\n")))
+            enc = _line_bytes(text, fullwidth)
             if len(enc) > len(raw):
                 warn.append("%s: %d bytes, the line holds %d" % (sids[n], len(enc), len(raw)))
                 enc = enc[:len(raw) // 2 * 2] if fullwidth else enc[:len(raw)]
@@ -780,6 +959,14 @@ def run_extract(here, src):
     for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
                   for s, e, text in program_strings(vol.read(path))]
+    for name in cfg.get("data_files", []):
+        extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
+                  for s, e, text in data_strings(vol.read(_join(cfg["game_dir"], name)))]
+    for name in cfg.get("table_files", []):
+        found = table_strings(vol.read(_join(cfg["game_dir"], name)))
+        # (the window's width: its widest Japanese line; the strings share the file's bytes)
+        wide = max(_width(line) for _n, text in found for line in text.split("\n")) // 2
+        extra += [("file", name, "%d" % n, 0, 0, text, wide) for n, text in found]
     for kind, name, at, _s, _e, jp, cells in extra:
         key = (kind, jp)
         if key not in merged:
@@ -1577,15 +1764,31 @@ def run_patch(here, src, dst, mode="en"):
                                    cfg.get("text_fullwidth", False))
         if new_file != old_file:
             vol.write(path, new_file)
-    for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
+    for name in cfg.get("table_files", []):
+        path = _join(cfg["game_dir"], name)
+        old_file = vol.read(path)
+        found = table_strings(old_file)
+        texts = {n: by_ref["%s:%d" % (name, n)] for n, _t in found if "%s:%d" % (name, n) in by_ref}
+        new_file = patch_table(old_file, texts, {n: ids.get("%s:%d" % (name, n)) for n, _t in found}, warn,
+                               cfg.get("table_fullwidth", False))
+        if new_file != old_file:
+            vol.write(path, new_file)
+    # (program_fullwidth applies to the program_files modules, data_fullwidth to the data files)
+    written = [(name, path, program_strings, cfg.get("program_fullwidth") and name in cfg.get("program_files", ()))
+               for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ()))]
+    written += [(name, _join(cfg["game_dir"], name), data_strings, cfg.get("data_fullwidth", False))
+                for name in cfg.get("data_files", [])]
+    for name, path, finder, wide in written:
         exe = vol.read(path)
-        runs = program_strings(exe)
+        runs = finder(exe)
         values = {}
         for s, e, _t in runs:
             ref = "%s:%04x" % (name, s)
             if ref in by_ref:
                 flat = " ".join(by_ref[ref].split("\n"))
-                if cfg.get("program_fullwidth") and name in cfg.get("program_files", ()):
+                if finder is data_strings:
+                    values[s] = _data_field(exe, s, e, flat, wide, warn, ids[ref])
+                elif wide:
                     # (cut and padded to whole characters here: the module reads two bytes a letter)
                     whole = _fullwidth(flat, None)
                     values[s] = _fullwidth(flat, (e - s) // 2)

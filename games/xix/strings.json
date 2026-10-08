@@ -21193,6 +21193,367 @@
     "START2.MES:59"
    ],
    "max_cells": 34
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "主人公の名前を決めて下さい。",
+   "en": "",
+   "refs": [
+    "NAME.I86:0295"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "どのモンスターを攻撃しますか？",
+   "en": "",
+   "refs": [
+    "ADVXSYS/ADVX2.DAT:0012"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "カゲロウ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0010",
+    "ADVXSYS/MONSTER0.DAT:0020",
+    "ADVXSYS/MONSTER0.DAT:0030",
+    "ADVXSYS/MONSTER0.DAT:0040",
+    "ADVXSYS/MONSTER0.DAT:0050"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "サンドワーム",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0060",
+    "ADVXSYS/MONSTER0.DAT:0070",
+    "ADVXSYS/MONSTER0.DAT:0080",
+    "ADVXSYS/MONSTER0.DAT:0090"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "スコルパ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:00a0",
+    "ADVXSYS/MONSTER0.DAT:00b0",
+    "ADVXSYS/MONSTER0.DAT:00c0",
+    "ADVXSYS/MONSTER1.DAT:0060",
+    "ADVXSYS/MONSTER1.DAT:0070",
+    "ADVXSYS/MONSTER1.DAT:0080",
+    "ADVXSYS/MONSTER1.DAT:0090",
+    "ADVXSYS/MONSTER1.DAT:00a0",
+    "ADVXSYS/MONSTER1.DAT:00b0",
+    "ADVXSYS/MONSTER1.DAT:00c0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "グレイピクシー",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:00d0",
+    "ADVXSYS/MONSTER0.DAT:00e0",
+    "ADVXSYS/MONSTER0.DAT:00f0",
+    "ADVXSYS/MONSTER1.DAT:0010",
+    "ADVXSYS/MONSTER1.DAT:00d0",
+    "ADVXSYS/MONSTER1.DAT:00e0",
+    "ADVXSYS/MONSTER1.DAT:00f0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "パンサラス",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0100",
+    "ADVXSYS/MONSTER1.DAT:0020",
+    "ADVXSYS/MONSTER1.DAT:0030",
+    "ADVXSYS/MONSTER1.DAT:0040",
+    "ADVXSYS/MONSTER1.DAT:0050",
+    "ADVXSYS/MONSTER1.DAT:0100",
+    "ADVXSYS/MONSTER2.DAT:0100"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ライア",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0110",
+    "ADVXSYS/MONSTER1.DAT:0110",
+    "ADVXSYS/MONSTER2.DAT:0110"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "キャティ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0120",
+    "ADVXSYS/MONSTER1.DAT:0120",
+    "ADVXSYS/MONSTER2.DAT:0120"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "ジャミル",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0130",
+    "ADVXSYS/MONSTER1.DAT:0130",
+    "ADVXSYS/MONSTER2.DAT:0130"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "ミラン",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER0.DAT:0140",
+    "ADVXSYS/MONSTER1.DAT:0140",
+    "ADVXSYS/MONSTER2.DAT:0140"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "スノーレディー",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:0010",
+    "ADVXSYS/MONSTER2.DAT:0020",
+    "ADVXSYS/MONSTER2.DAT:0030"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "ダークピクシー",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:0040",
+    "ADVXSYS/MONSTER2.DAT:0050"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "ウルヴァーン",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:0060",
+    "ADVXSYS/MONSTER2.DAT:0070"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "スラッグ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:0080",
+    "ADVXSYS/MONSTER2.DAT:0090",
+    "ADVXSYS/MONSTER2.DAT:00a0",
+    "ADVXSYS/MONSTER2.DAT:00b0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "ラミア",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:00c0",
+    "ADVXSYS/MONSTER2.DAT:00d0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "バーディ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER2.DAT:00e0",
+    "ADVXSYS/MONSTER2.DAT:00f0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "大蜘蛛",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0010",
+    "ADVXSYS/MONSTER4.DAT:0020",
+    "ADVXSYS/MONSTER4.DAT:0030",
+    "ADVXSYS/MONSTER4.DAT:0040",
+    "ADVXSYS/MONSTER4.DAT:0050"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "巨大蜘蛛",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0060",
+    "ADVXSYS/MONSTER4.DAT:0070"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "リトル",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0080",
+    "ADVXSYS/MONSTER4.DAT:0090",
+    "ADVXSYS/MONSTER4.DAT:00a0",
+    "ADVXSYS/MONSTER4.DAT:00b0",
+    "ADVXSYS/MONSTER4.DAT:00c0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "アイスドール",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:00d0",
+    "ADVXSYS/MONSTER4.DAT:00e0",
+    "ADVXSYS/MONSTER4.DAT:00f0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "ミュート",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0100",
+    "ADVXSYS/MONSTER5.DAT:0100"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "ＡＭＤインセクトメタルクィーン",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0110",
+    "ADVXSYS/MONSTER5.DAT:0110"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "エルメス",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0130"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "魔王デューン",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER4.DAT:0140",
+    "ADVXSYS/MONSTER5.DAT:0140"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "フラム",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER5.DAT:0010",
+    "ADVXSYS/MONSTER5.DAT:0020",
+    "ADVXSYS/MONSTER5.DAT:0030",
+    "ADVXSYS/MONSTER5.DAT:0040",
+    "ADVXSYS/MONSTER5.DAT:0050",
+    "ADVXSYS/MONSTER5.DAT:0060"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "石巨人",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER5.DAT:0070",
+    "ADVXSYS/MONSTER5.DAT:0080",
+    "ADVXSYS/MONSTER5.DAT:0090",
+    "ADVXSYS/MONSTER5.DAT:00a0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "メタルクィーン",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER5.DAT:00b0",
+    "ADVXSYS/MONSTER5.DAT:00c0",
+    "ADVXSYS/MONSTER5.DAT:00d0",
+    "ADVXSYS/MONSTER5.DAT:00e0",
+    "ADVXSYS/MONSTER5.DAT:00f0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "帝王ギゼ",
+   "en": "",
+   "refs": [
+    "ADVXSYS/MONSTER5.DAT:0130"
+   ],
+   "max_cells": 8
   }
  ]
 }

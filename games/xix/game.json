@@ -6,5 +6,18 @@
  "game_dir": "",
  "extraop": true,
  "menu_fullwidth": true,
- "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "program_files": [
+  "NAME.I86"
+ ],
+ "program_fullwidth": true,
+ "data_files": [
+  "ADVXSYS/ADVX2.DAT",
+  "ADVXSYS/MONSTER0.DAT",
+  "ADVXSYS/MONSTER1.DAT",
+  "ADVXSYS/MONSTER2.DAT",
+  "ADVXSYS/MONSTER4.DAT",
+  "ADVXSYS/MONSTER5.DAT"
+ ],
+ "data_fullwidth": true
 }

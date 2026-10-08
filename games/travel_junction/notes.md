@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`TRAVELJ/`), on a hard-disk image: 254 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (`TRAVELJ/`), on a hard-disk image: 254 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -30,9 +30,9 @@ ides' Adv98V script engine (`TRAVELJ/`), on a hard-disk image: 254 scripts with 
 
 ## Script
 
-13761 strings (13204 messages, 535 menu items, 2 name tags (procedure text), 2 string variable values, 18 program strings).
+14099 strings (13204 messages, 535 menu items, 2 name tags (procedure text), 2 string variable values, 337 text file lines, 19 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 13761 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 14099 strings have English so far.
 
 ## Limits
 
@@ -40,7 +40,10 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own, so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `DAT/END1.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* String tables (`t` ids from `DAT/RESTART.DAT`, `DAT/TJLH.DAT`, e.g. a list box's lines or the load window's notes): each file is a table of offsets to its strings, rebuilt with the English; `\n` is a line break, up to `max_cells` full-width letters a line (the widest Japanese line).  The strings of a file share its bytes, as it is loaded into a buffer of its size: where the English would outgrow the file, the last strings stay Japanese and are reported.
+* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -53,5 +56,8 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Setup wizard (first run; its text is artwork) | Blocked: takes no emulated input in the original or the patched build (mouse moved onto its OK button and clicked, keyboard Enter and space) |
 | Title menu (artwork) with the wizard skipped in a test image | Blocked: the cursor moves (arrows, mouse) but no item can be selected (click, Enter, space) |
+| Ending roll (DAT/END1.DAT) | not yet seen |
+| Restart list (DAT/RESTART.DAT) and the load window's notes (DAT/TJLH.DAT) | not yet seen (behind the setup wizard, which takes no emulated input) |
+| The default hero name (NAME.DEF) in the story | not yet seen |
 | Messages, menus, scenes past the opening, save/load, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

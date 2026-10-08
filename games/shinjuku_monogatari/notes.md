@@ -29,9 +29,9 @@ ides' Adv98V script engine (`SHINJUKU/`), on a hard-disk image: 51 scripts with 
 
 ## Script
 
-2348 strings (2286 messages, 61 menu items, 1 program strings).
+2361 strings (2286 messages, 61 menu items, 14 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 2348 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 2361 strings have English so far.
 
 ## Limits
 
@@ -50,5 +50,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Opening (street, stairs and office pictures) | OK: filler wrapped between words to the 2-line box, pages waiting for a click; a long message continues on the next page |
 | Scenes after the opening (the office, two later rooms) | OK: pictures change with the story, messages page the same way |
 | First command menu | OK: three filler items at their places in the menu window, ASCII drawn (no full-width needed) |
+| Opening credits (SJOP.CMD) | OK: every credit line as half-width filler at its place, the two spelled in the PC-98's own half-width letters (0x85 xx) included |
 | The other menu choices, saving and loading, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

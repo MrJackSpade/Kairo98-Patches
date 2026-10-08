@@ -31,15 +31,16 @@ ides' Adv98V script engine (`YUGI/`), on a hard-disk image: 113 scripts with tex
 
 ## Script
 
-4474 strings (4354 messages, 115 menu items, 4 name tags (procedure text), 1 program strings).
+4520 strings (4354 messages, 115 menu items, 4 name tags (procedure text), 46 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4474 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4520 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
+* Text file lines (`t` ids: `TCM/FN_STAFF.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -52,5 +53,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Sound board question and its menu | OK: the question as filler wrapped to its Japanese lines' width, clear of the menu window; menu items fixed width |
 | Opening (picture sequence, no text) and the first scene | OK: filler wrapped between words to the 3-line box (63 columns), pages with a wait between |
+| Staff roll (TCM/FN_STAFF.DAT) | not yet seen |
 | Save/load, later chapters, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

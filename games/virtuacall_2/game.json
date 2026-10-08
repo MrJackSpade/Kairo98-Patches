@@ -8,5 +8,9 @@
  "proc_slot": 76,
  "proc_slots": 20,
  "name_cols": 8,
- "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot"
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "text_files": [
+  "MES/VC2_STF.DAT",
+  "TCM/VC2_STF.DAT"
+ ]
 }

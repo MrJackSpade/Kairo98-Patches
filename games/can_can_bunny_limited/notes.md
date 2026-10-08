@@ -31,9 +31,9 @@ ides' Adv98V script engine (`LIMIT/`), on a hard-disk image: 80 scripts with tex
 
 ## Script
 
-10611 strings (10062 messages, 533 menu items, 14 name tags (procedure text), 1 string variable values, 1 program strings).
+10636 strings (10062 messages, 533 menu items, 14 name tags (procedure text), 1 string variable values, 25 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10611 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 10636 strings have English so far.
 
 ## Limits
 
@@ -41,6 +41,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `STAFF.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -54,5 +55,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Title menu (two items) | OK: filler items at their places |
 | Opening (the phone call in the dark) | OK: the speaker's tag on its line (its procedure clears the box, prints the tag and breaks the line), the message below it, the hero's name and ellipses inline; pages stay inside the 3-line box |
 | The first scene (Ariko's arrival) | OK: pictures and messages in the box |
+| Staff roll (STAFF.DAT) | not yet seen |
 | Choosing the date, saving and loading, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

@@ -18590,6 +18590,776 @@
    "max_cells": 2
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　　　      　    　  プログラム　ＮＥＡＬ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:0"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　(NEON ELECTRIC AMUSEMENT LAB.)",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:1"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　　　  　　　　　　　　　　　  小池蛍光色",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:2"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "　　　　 　　 キャラクターデザイン",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:3"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　原画  まみやなつき",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:4"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　　　　　　ゲームデザイン",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:5"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　　　　           　　 演出・脚本　古雅ちはや",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:6"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　　　コンピューターグラフィックス　スタジオ・ノヴァ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:7"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　　　           　 　　　　作曲　ＧＵＮ－ＫＵＡＮ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　編曲・効果",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:9"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:10"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　声の出演　フォルシーニア〈フォル〉　天野由梨",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:11"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　クレアリデル〈クレア〉　松下美由紀",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:12"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　エインデベル〈ベル〉　　椎名へきる",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:13"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　リアムローダ〈リア〉　　　岡本麻弥",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:14"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　メルキュール〈メル〉　　野上ゆかな",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:15"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　ミリネール〈ミリ〉　　　　荒木香恵",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:16"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　電脳神リガルード　　　　　西村知道",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:17"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　フォル２・アクエリュース　兵藤まこ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:18"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　岡田馨子　　　　　　　　　上原慶子",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:19"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　川崎真理　　　　　　　　　鷹森淑乃",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:20"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　名木田先生　　　　　　　　伊藤美紀",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:21"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　貴也〈プレイヤー〉　　　　細井　治",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:22"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　協力　㈱アーツビジョン　　　　　松田咲實",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:23"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　木野内正義",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:24"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　録音　㈱　現　　　　　　　　　　渡辺　淳",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:25"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "　　　　              　　デバッグ　伊集院ヨリモド氏",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:26"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　平間ゴンズイ研究所",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:27"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　東京掘門軍団",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:28"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "　　　　              　　デザイン　林田宏子",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:29"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　マニュアル　神保郁雄",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:30"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "　　　　　　　　スペシャルサンクス　しらさき凱",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:31"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "　　　　　　　　　　 　　 　　　　　テクノポリス編集部",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:32"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "　　　　                企画・製作  徳間書店インターメディア㈱",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:33"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "　　　　                      制作  ㈲アイデス",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:34"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "　　　　                 　　 販売　㈱ニュース",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:35"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "　　　　                制作総指揮　井手健介",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:36"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": "　　　　            　プロデュース　隠　居",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:37"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　監督　古雅ちはや",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_1.TXT:38"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": " 　　　　　プログラム　ＮＥＡＬ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:0"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　　(NEON ELECTRIC AMUSEMENT LAB.)",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:1"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　　小池蛍光色",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:2"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": " キャラクターデザイン",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:3"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": " 　　　　　　　　原画　まみやなつき",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": " 　　　ゲームデザイン",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:5"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": " 　　　　　演出・脚本　古雅ちはや",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_2.TXT:6"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00047",
+   "kind": "file",
+   "jp": " 　コンピューターグラフィックス　スタジオ・ノヴァ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_3.TXT:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00048",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　　　　作曲　ＧＵＮ－ＫＵＡＮ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_3.TXT:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00049",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　編曲・効果　ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_3.TXT:2"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00050",
+   "kind": "file",
+   "jp": "　　声の出演　フォルシーニア〈フォル〉　天野由梨",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:0"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00051",
+   "kind": "file",
+   "jp": "　　　　　　　クレアリデル〈クレア〉　松下美由紀",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00052",
+   "kind": "file",
+   "jp": "　　　　　　　エインデベル〈ベル〉　　椎名へきる",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00053",
+   "kind": "file",
+   "jp": "　　　　　　　リアムローダ〈リア〉　　　岡本麻弥",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:3"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00054",
+   "kind": "file",
+   "jp": "　　　　　　　メルキュール〈メル〉　　野上ゆかな",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:4"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00055",
+   "kind": "file",
+   "jp": "　　　　　　　ミリネール〈ミリ〉　　　　荒木香恵",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:5"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00056",
+   "kind": "file",
+   "jp": "　　　　　　　電脳神リガルード　　　　　西村知道",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:6"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00057",
+   "kind": "file",
+   "jp": "　　　　　　　フォル２・アクエリュース　兵藤まこ",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:7"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00058",
+   "kind": "file",
+   "jp": "　　　　　　　岡田馨子　　　　　　　　　上原慶子",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:8"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00059",
+   "kind": "file",
+   "jp": "　　　　　　　川崎真理　　　　　　　　　鷹森淑乃",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:9"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00060",
+   "kind": "file",
+   "jp": "　　　　　　　名木田先生　　　　　　　　伊藤美紀",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:10"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00061",
+   "kind": "file",
+   "jp": "　　　　　　　貴也〈プレイヤー〉　　　　細井　治",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:11"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00062",
+   "kind": "file",
+   "jp": "　　　　協力　㈱アーツビジョン　　　　　松田咲實",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:12"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00063",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　木野内正義",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:13"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00064",
+   "kind": "file",
+   "jp": "　　　　録音　㈱　現　　　　　　　　　　渡辺　淳",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_4.TXT:14"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00065",
+   "kind": "file",
+   "jp": " 　　　　　　　　デバッグ　伊集院ヨリモド氏",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:0"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00066",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　　　　平間ゴンズイ研究所",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:1"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00067",
+   "kind": "file",
+   "jp": " 　　　　　　　　　　　　　東京掘門軍団",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:2"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00068",
+   "kind": "file",
+   "jp": " 　　　　　　　　デザイン　林田宏子",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:3"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00069",
+   "kind": "file",
+   "jp": " 　　　　　　　マニュアル　神保郁雄",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00070",
+   "kind": "file",
+   "jp": " 　　　スペシャルサンクス　しらさき凱",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:5"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00071",
+   "kind": "file",
+   "jp": " 　 　　　　　　 　　　　　テクノポリス編集部",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_5.TXT:6"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00072",
+   "kind": "file",
+   "jp": "　　　　企画・製作　徳間書店インターメディア㈱",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_6.TXT:0"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00073",
+   "kind": "file",
+   "jp": "　　　　　　　制作　㈲アイデス",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_6.TXT:1"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00074",
+   "kind": "file",
+   "jp": "　　　　　　　販売　㈱ニュース",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_6.TXT:2"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00075",
+   "kind": "file",
+   "jp": "　　　　制作総指揮　井手健介",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_6.TXT:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00076",
+   "kind": "file",
+   "jp": "　　　プロデュース　隠　居",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_6.TXT:4"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00077",
+   "kind": "file",
+   "jp": " 　　　　　　　　　監督　古雅ちはや",
+   "en": "",
+   "refs": [
+    "DEN_TCM/ENDING_7.TXT:0"
+   ],
+   "max_cells": 17
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

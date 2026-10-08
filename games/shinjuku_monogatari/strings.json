@@ -23835,6 +23835,136 @@
   {
    "id": "e00001",
    "kind": "engine",
+   "jp": "企画",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:2639"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "プロデュース",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:263f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "なかやまゆき",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:264f"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "美術",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:265e"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ふるみ“TONARI”まさと",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:2666"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "原画",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:2685"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "ＴＯＭＢＯＹ：氷室芹夏",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:268d"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "技術",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26aa"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "Turbo-R Sophia",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26b2"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "サウンド",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26d5"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26e1"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "演出",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26f2"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "大野近一",
+   "en": "",
+   "refs": [
+    "SJOP.CMD:26fa"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
    "jp": "エラー: メモリーが足りません。",
    "en": "",
    "refs": [

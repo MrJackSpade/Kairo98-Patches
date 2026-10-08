@@ -50028,6 +50028,302 @@
     "TCM/NAMEWIND.TCM:0ebc"
    ],
    "max_cells": 4
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "毒手裏剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0040",
+    "DAT/ITEM.TBL:05a0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "割れた蛍の鏡",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0060"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "鈴 鳴 剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0080",
+    "DAT/ITEM.TBL:0560",
+    "DAT/ITEM.TBL:0580"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "経　　文",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:00a0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "望月家の懐剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:00c0",
+    "DAT/ITEM.TBL:0680"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "三 鈷 杵",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:00e0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "忍薬ゴールド",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0100"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "香　　炉",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0120"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "鍵",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0140"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "恋　　鏡",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0160"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00026",
+   "kind": "engine",
+   "jp": "水晶の念珠",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0180"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00027",
+   "kind": "engine",
+   "jp": "大ミミズ",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:01a0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00028",
+   "kind": "engine",
+   "jp": "手 裏 剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:01c0",
+    "DAT/ITEM.TBL:05e0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00029",
+   "kind": "engine",
+   "jp": "鉤　　縄",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:01e0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00030",
+   "kind": "engine",
+   "jp": "蛍 の 鏡",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0200"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00031",
+   "kind": "engine",
+   "jp": "青いカギ",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0220"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00032",
+   "kind": "engine",
+   "jp": "赤いカギ",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0240"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00033",
+   "kind": "engine",
+   "jp": "忍　　薬",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0260"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00034",
+   "kind": "engine",
+   "jp": "半 月 剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0280",
+    "DAT/ITEM.TBL:0640"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00035",
+   "kind": "engine",
+   "jp": "火炎龍の術",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:02e0",
+    "DAT/ITEM.TBL:0300"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00036",
+   "kind": "engine",
+   "jp": "水撃龍の術",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0320",
+    "DAT/ITEM.TBL:0340",
+    "DAT/ITEM.TBL:0360"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00037",
+   "kind": "engine",
+   "jp": "花隠れの術",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0380",
+    "DAT/ITEM.TBL:03a0",
+    "DAT/ITEM.TBL:03c0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00038",
+   "kind": "engine",
+   "jp": "雷 神 拳",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0440"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00039",
+   "kind": "engine",
+   "jp": "舞 鶴 脚",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0460",
+    "DAT/ITEM.TBL:0480",
+    "DAT/ITEM.TBL:04a0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00040",
+   "kind": "engine",
+   "jp": "鳳 凰 爪",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:04c0",
+    "DAT/ITEM.TBL:04e0",
+    "DAT/ITEM.TBL:0500"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00041",
+   "kind": "engine",
+   "jp": "＊手 裏 剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:05c0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00042",
+   "kind": "engine",
+   "jp": "＊半 月 剣",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0600",
+    "DAT/ITEM.TBL:0620"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00043",
+   "kind": "engine",
+   "jp": "★守り回復",
+   "en": "",
+   "refs": [
+    "DAT/ITEM.TBL:0660"
+   ],
+   "max_cells": 6
   }
  ]
 }

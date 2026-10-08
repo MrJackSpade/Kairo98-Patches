@@ -31,9 +31,9 @@ ides' Adv98V script engine (`N2/`), on a hard-disk image: 168 scripts with text 
 
 ## Script
 
-10613 strings (10543 messages, 39 name tags (procedure text), 4 menu items, 27 program strings).
+10789 strings (10543 messages, 39 name tags (procedure text), 4 menu items, 203 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10613 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 10789 strings have English so far.
 
 ## Limits
 
@@ -43,6 +43,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Strings in `*.MEC` files: the engine loads these into one shared buffer, each at its own offset, so a `.MEC` file can only grow up to the next file's offset (or, for the top one, as far as the original game's loads reach; past that the buffer meets the engine's stack), often only a few dozen bytes past its Japanese.  The patcher refuses a build where one outgrows its room and lists that file's strings.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* Names in data files (`e` ids from `DAT/NRS2ENM.DAT`): written in place, each up to its field's room (`max_cells`, twice that in half-width letters: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -55,5 +56,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Title menu (artwork) and the chapter card | Drawn in the picture; the first item chosen with a click |
 | Prologue (the villains' throne room) | OK: filler wrapped between words beside each speaker's portrait, pages waiting for a click |
 | The first scene (the hero at the car) with its command bar | OK: speaker tags on the first line, the message below, pages waiting for a click; the command bar is artwork |
+| Battles (NRS2FGT.CMD's texts, the enemy names in DAT/NRS2ENM.DAT) | not yet seen |
 | The commands, the transformation scenes, saving and loading, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

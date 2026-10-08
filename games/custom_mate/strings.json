@@ -74193,6 +74193,16 @@
     "CMSTART.COM:0104"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "まちゃあき",
+   "en": "",
+   "refs": [
+    "NAME.DEF:0000"
+   ],
+   "max_cells": 5
   }
  ]
 }

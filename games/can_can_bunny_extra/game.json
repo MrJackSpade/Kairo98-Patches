@@ -5,5 +5,9 @@
  "encoding": "adv98v",
  "game_dir": "CAN5",
  "extraop": true,
- "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+ "boot_steps": "30:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot",
+ "text_files": [
+  "CMD/ROLL_A.DAT",
+  "CMD/ROLL_B.DAT"
+ ]
 }

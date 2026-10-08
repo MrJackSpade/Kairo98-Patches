@@ -194881,6 +194881,779 @@
    "max_cells": 1
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　　　　　　　ＣＡＮＣＡＮ　ＢＵＮＮＹ　　－　ＥＸＴＲＡ　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "                  PRESENTED BY  {Uebb3} ＴＥＡＭ － ＤＲＡＧＯＮ {Uebb4}",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:1"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "                              － ORIGINAL STORY －",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:2"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "                        Ｋｉｓａｒａ　Ｄａｉｔｏｋｕｊｉ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:3"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "                          － CHIEF SCENARIO WRITER －",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:4"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "                                  Ｎａｎａｋｏ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:5"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "                             － SCENARIO PROGRAM －",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:6"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "                         Ｙｕｔａｋａ　Ｉｓｈｉｈａｒａ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:7"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "                            MUSIC BY  {Uebb3} ＭＵＳＥ {Uebb4}",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:8"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "                    opening theme : 『Ｉ　ｍｅｅｔ　ｙｏｕ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:9"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "                         ending theme : 『ａｇａｉｎ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:10"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "                              『ｗｉｔｈ　ｙｏｕ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:11"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "                               『ｈｏｌｄ　ｍｅ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:12"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "                          『ｗａｉｋｉｎｇ　ｔｏｗｎ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:13"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "                               『ｋｙａｒｕｎ☆』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:14"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "                           『ｂｒｉｇｈｔ　ｓｔａｒ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:15"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "                                 『ｎｉｇｈｔ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:16"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "                                『ｏｍｏｉｄｅ』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:17"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "                        『ｍｏｅｒｏ　ｅｋｕｓｕｔｏ！』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:18"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "                     {Uebaa}１９９３　ＣＯＣＫＴＡＩＬ　ＳＯＦＴ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:19"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "                           Just a moment, please ････",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_A.DAT:20"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "                         {Uec52}{Uec53}{Uec54}{Uec52}{Uec53}{Uec54}{Uec55}{Uec56}{Uec57}{Uec58}{Uec59}{Uec5a}{Uec5b}{Uec5c}{Uec5d}",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:0"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "                               『また逢えたね{Uebbd}』",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:1"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "                               －　企画・原作　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:2"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "                                  大徳寺きさら",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:3",
+    "CMD/ROLL_B.DAT:54"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "                        －　チーフ・シナリオライター　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:4"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "                                     ななこ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:5"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "                〈美沙生／香織／千里／春菜／スワティ／他　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:6"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": "                     －　アシスタント・シナリオライター　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:7"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": "                             ＹＯＨ．〈雪江　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:8"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "                                 ゆ〈綾　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:9"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "                                  －　原画　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:10"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "                          あ〈スワティ／七福神　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:11"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "                          こばやしひよこ〈千里　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:12"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "             高橋しんや〈春菜／美沙生／香織／雪江／綾／麻理　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:13"
+   ],
+   "max_cells": 33
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "                     こだいらとおる (TOM-BOY)〈背景　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:14"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "                        井上博文 (TOM-BOY)〈背景　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:15"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": "                         亜浦睦 (TOM-BOY)〈背景　担当〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:16"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "                           －　ＣＧエディット監督　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:17"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": "                                    松本規之",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:18",
+    "CMD/ROLL_B.DAT:20"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": "                             －　ＣＧエディット　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:19"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": "                                    すえちく",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:21"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": "                                   亜久都まお",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:22"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": "                                   千恵ちゃん",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:23"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": "                                   ＣＨＡＲＭ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:24"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": "                                     らん☆",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:25"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00047",
+   "kind": "file",
+   "jp": "                                      浅妓",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:26"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00048",
+   "kind": "file",
+   "jp": "                          －　システム・プログラム　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:27"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00049",
+   "kind": "file",
+   "jp": "                                    岡地常義",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:28"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00050",
+   "kind": "file",
+   "jp": "                               －　プログラム　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:29"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00051",
+   "kind": "file",
+   "jp": "                                  西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:30"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00052",
+   "kind": "file",
+   "jp": "                                      佳邦",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:31"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00053",
+   "kind": "file",
+   "jp": "                                    ぺぺ藤岡",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:32"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00054",
+   "kind": "file",
+   "jp": "                          －　シナリオ・プログラム　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:33"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00055",
+   "kind": "file",
+   "jp": "                                     石原裕",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:34",
+    "CMD/ROLL_B.DAT:52"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00056",
+   "kind": "file",
+   "jp": "                                  －　音楽　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:35"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00057",
+   "kind": "file",
+   "jp": "                                    ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:36"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00058",
+   "kind": "file",
+   "jp": "                                －　デバッグ　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:37"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00059",
+   "kind": "file",
+   "jp": "　　　　　　　　     伊集院ヨロレイヒ　＆　けつふぃすと軍団",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:38"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00060",
+   "kind": "file",
+   "jp": "                                           平間知之助",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:39"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00061",
+   "kind": "file",
+   "jp": "                                           坂井まちゃあき",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:40"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00062",
+   "kind": "file",
+   "jp": "                                           駄菓子屋ジョニー",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:41"
+   ],
+   "max_cells": 29
+  },
+  {
+   "id": "t00063",
+   "kind": "file",
+   "jp": "                                           小林てんこ盛り",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:42"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00064",
+   "kind": "file",
+   "jp": "                             －　マニュアル作成　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:43"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00065",
+   "kind": "file",
+   "jp": "                                       ゆ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:44"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00066",
+   "kind": "file",
+   "jp": "                                  －　協力　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:45"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00067",
+   "kind": "file",
+   "jp": "                        ホビーステーション　ＴＯＭＢＯＹ",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:46"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00068",
+   "kind": "file",
+   "jp": "                        　　　　　　　　　　　　松永宏樹",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:47"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00069",
+   "kind": "file",
+   "jp": "                        　　　　　　　　　　　　二宮克拓",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:48"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00070",
+   "kind": "file",
+   "jp": "                             雅人さま{Uebbd}  〈資料提供〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:49"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00071",
+   "kind": "file",
+   "jp": "                           まらい君さま{Uebbd}〈資料提供〉",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:50"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00072",
+   "kind": "file",
+   "jp": "                                  －　演出　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:51"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00073",
+   "kind": "file",
+   "jp": "                                  －　監督　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:53"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00074",
+   "kind": "file",
+   "jp": "                               －　製作総指揮　－",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:55"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00075",
+   "kind": "file",
+   "jp": "                                    井手健介",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:56"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00076",
+   "kind": "file",
+   "jp": "                           {Uebaa}１９９３　カクテルソフト",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:57"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00077",
+   "kind": "file",
+   "jp": "                             {Uebaa}１９９３　Ｉｄｅｓ´",
+   "en": "",
+   "refs": [
+    "CMD/ROLL_B.DAT:58"
+   ],
+   "max_cells": 25
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

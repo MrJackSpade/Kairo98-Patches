@@ -75291,6 +75291,256 @@
    "max_cells": 4
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "企画＆シナリオ　　　　　ＳＮＲ．Ｕｔａｍａｒｏ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:0"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "製作　　　　　　　　　　ＳＮＲ．Ｕｔａｍａｒｏ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:1"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "キャラクターデザイン　　山本　正文",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:2"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "原画　　　　　　　　　　山本　正文",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:3"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　Ｇ・クリカ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:4"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　井上　博文",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:5"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "シナリオ＆テキスト　　　千曲川くねり＆釧路川のたり",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:6"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "グラフィック監修　　　　藤井　純生",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:7"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "シナリオプログラム　　　弥七",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:8"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "着色チーフ　　　　　　　塩見　元",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:9"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "着色　　　　　　　　　　松本　規之",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:10"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　須磨　邦雄",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:11"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　あさの",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:12"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "原画マネジメント　　　　ＴＯＭＢＯＹ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:13"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "テストプレイ　　　　　　ひろもりさかな",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:14"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　小林　北海道",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:15"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　駄菓子屋ジョニー",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:16"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　独楽鼠",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:17"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　デイヴィット･カウパーデール",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:18"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "ＡＤ　ＷＯＲＫ　　　　　ＳＣＨＥＣＴＥＲ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:19"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "パッケージセル　　　　　スタジオ　ボギー",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:20"
+   ],
+   "max_cells": 20
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "パッケージ背景　　　　　朝倉　千登勢",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:21"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　（プロダクション　アイ）",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:22"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "システム保守　　　　　　西陣ターボＲ",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:23"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "制作著作　　　　　　　　アイデス・フェアリーテール",
+   "en": "",
+   "refs": [
+    "GIBO_TCM/STAFF.DAT:24"
+   ],
+   "max_cells": 25
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

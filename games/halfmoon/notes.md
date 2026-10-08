@@ -31,9 +31,9 @@ ides' Adv98V script engine (`RAMIYA/`), on a hard-disk image: 84 scripts with te
 
 ## Script
 
-4937 strings (82 name tags (procedure text), 4823 messages, 10 menu items, 7 string variable values, 15 program strings).
+4965 strings (82 name tags (procedure text), 4823 messages, 10 menu items, 7 string variable values, 43 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4937 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4965 strings have English so far.
 
 ## Limits
 
@@ -45,6 +45,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* Names in data files (`e` ids from `DAT/ITEM.TBL`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -57,5 +58,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Story select (the four girls' panels, artwork) and its centre menu | OK: the centre menu's filler items; Suzuka's panel chosen with a click |
 | Suzuka's prologue (full-screen text) and the escape scene | OK: filler wrapped between words, the speaker's tag above each message, pages waiting for a click; the game's key wait clears the box, so pages end with it (page_break 81 90) and no extra cleared box comes between them |
+| Item and art names (DAT/ITEM.TBL) | not yet seen |
 | The other three stories, the menu's other items, saving and loading, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

@@ -710,24 +710,40 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "would end the script's quoting)." % (
                        "; the hero's default name parts (offered again by the name entry) up to %d letters"
                        % cfg["name_insert"]["cols"] if cfg.get("name_insert") else ""))
-    if "file" in has and cfg.get("text_fullwidth"):
-        out.append("* Text file lines (`t` ids: %s, shown as they are, e.g. the opening roll): the module "
-                   "that shows them draws Shift-JIS only, so they are written in full-width letters, each "
+    if cfg.get("text_files") and cfg.get("text_fullwidth"):
+        out.append("* Text file lines (`t` ids: %s, shown as they are, e.g. the opening roll): the files hold "
+                   "Shift-JIS only (no half-width letters), so they are written in full-width letters, each "
                    "line up to `max_cells` letters (its Japanese byte length), as the file is loaded into a "
                    "fixed place in memory; longer ones are cut and reported."
                    % ", ".join("`%s`" % f for f in cfg.get("text_files", [])))
-    elif "file" in has:
+    elif cfg.get("text_files"):
         out.append("* Text file lines (`t` ids: %s, shown as they are, e.g. the opening roll): each line "
                    "up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded "
                    "into a fixed place in memory; longer ones are cut and reported."
                    % ", ".join("`%s`" % f for f in cfg.get("text_files", [])))
     if "engine" in has and cfg.get("program_fullwidth"):
-        out.append("* Program strings (`e` ids: %s): the module draws Shift-JIS only, so they are written "
-                   "in full-width letters, up to `max_cells` letters each, in place; longer ones are cut "
+        out.append("* Program strings (`e` ids: %s): the module's text is Shift-JIS only, so they are "
+                   "written in full-width letters, up to `max_cells` letters each, in place; longer ones are cut "
                    "and reported." % ", ".join("`%s`" % f for f in cfg.get("program_files", [])))
     elif "engine" in has:
         out.append("* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer "
                    "ones are cut and reported.")
+    if cfg.get("table_files"):
+        out.append("* String tables (`t` ids from %s, e.g. a list box's lines or the load window's notes): "
+                   "each file is a table of offsets to its strings, rebuilt with the English; `\\n` is a line "
+                   "break, up to `max_cells` %s a line (the widest Japanese line).  The strings of a file share "
+                   "its bytes, as it is loaded into a buffer of its size: where the English would outgrow the "
+                   "file, the last strings stay Japanese and are reported." % (
+                       ", ".join("`%s`" % f for f in cfg["table_files"]),
+                       "full-width letters" if cfg.get("table_fullwidth") else "cells (two half-width letters each)"))
+    if cfg.get("data_files"):
+        out.append("* Names in data files (`e` ids from %s): written in place, each up to its field's room "
+                   "(`max_cells`%s: the name with the spaces around it and any `＠` padding after it), a "
+                   "shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are "
+                   "cut and reported." % (
+                       ", ".join("`%s`" % f for f in cfg["data_files"]),
+                       " full-width letters, as the files hold these names in Shift-JIS only"
+                       if cfg.get("data_fullwidth") else ", twice that in half-width letters"))
     out += ["", "## Not handled", "", "* Text drawn into the artwork (the title logo, pictures)."]
     if names:
         out.append("* The name window's character tables stay Japanese: the engine picks characters from "

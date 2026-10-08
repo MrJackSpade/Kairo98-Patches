@@ -270489,6 +270489,136 @@
    "max_cells": 4
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　企画・監督　はやし　なおかず",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:0"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　　原画　Ｍ２４",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:1"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　　音楽　ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:2"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "グラフィック　畑　まさし",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　　　　弟子壱号",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:4"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　　　壱",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　　シナリオ　素浪人　あ゛",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "システム保守　西陣　ターボＲ",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　デバック　伊集院　熱帯魚",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:8"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　　　　　　　西脇　泉水",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:9"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　　　　　デイヴィッド・カウパーデール",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:10"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "　　　　　　　駄菓子屋　ジョニー",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:11"
+   ],
+   "max_cells": 16
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　ひろもり　さかな",
+   "en": "",
+   "refs": [
+    "MES/STAFF2.TXT:12"
+   ],
+   "max_cells": 15
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",

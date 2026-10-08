@@ -110501,6 +110501,256 @@
    "max_cells": 4
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "プロデュース　　　　　　　　　　　　　　井手　健介",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:0"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "シナリオ＆プログラム　　　　　　　　　　Ｙ．ＳＵＧＡＮＯ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:1"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "グラフィックチーフ　　　　　　　　　　　茶之泉　善",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:2"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "ＣＧ制作　　　　　　　　　　　　　　　　謎の男",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:3"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　ＣＨＡＲＭ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:4"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　甘露樹",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:5"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　ＮＡＫ村",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:6"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　うきゃ{Uebe2}らん(T_T)",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:7"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　★ＣＡＲＲＯＴ★",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:8"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "テストプレイ　　　　　　　　　　　　　　小林　大あさり",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:9"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　独楽鼠",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:10"
+   ],
+   "max_cells": 23
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": "アート・ワーク　　　　　　　　　　　　　林田宏子",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:11"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　ＳＣＨＥＣＴＥＲ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:12"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": "音楽　　　　　　　　　　　　　　　　　　ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:13"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "制作協力　　　　　　　　　　　　　　　　ＴＯＭＢＯＹ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:14"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "　　　　ビジュアルプロデューサー　　　　松永　宏樹",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:15"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　　　キャラクターデザイン＆作画監督　としま　ちはや",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:16"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　　原画＆動画　　　　　　　　　　　おきゃん",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:17"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　パッケージセルワーク　　　　　　永井　留美子",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:18"
+   ],
+   "max_cells": 26
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "　　　　ビジュアル制作進行　　　　　　　神原　正夫",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:19"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　　　　　　　　　二宮　克拓",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:20"
+   ],
+   "max_cells": 25
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　　　　　　　　　　　制作・著作",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:21"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "　　　　　　　　アイデス　／　カクテルソフト",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:22"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": "　　　　　　　ｔｏ　ｂｅ　ｃｏｎｔｉｎｕｅｄ",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:23"
+   ],
+   "max_cells": 22
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "　　　　”Ｃａｎｃａｎ　Ｂｕｎｎｙ　ＰＲＥＭＩＥＲ”",
+   "en": "",
+   "refs": [
+    "STAFF.DAT:24"
+   ],
+   "max_cells": 26
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",
