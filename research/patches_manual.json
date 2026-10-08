@@ -1194,5 +1194,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "FairytaleRed-zone.zip/Himitsu Shirei 1919": [
+  {
+   "label": "This repo: games/himitsu_shirei_1919 (patcher working, machine translation in progress)",
+   "url": "../games/himitsu_shirei_1919/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -83679,7 +83679,14 @@
      "path": "Himitsu Shirei 1919\\Himitsu Shirei 1919 (Dai-2-wa) [HD]\\Himitsu Shirei 1919 (Dai-2-wa).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/himitsu_shirei_1919 (patcher working, machine translation in progress)",
+     "url": "../games/himitsu_shirei_1919/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r34218 (erotic content)",
    "engine": "adv98v",
@@ -83687,7 +83694,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Jankirou",

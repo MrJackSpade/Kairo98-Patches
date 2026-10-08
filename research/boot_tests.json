@@ -2133,5 +2133,27 @@
    "Menus in the scenes, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "himitsu_shirei_1919": [
+  [
+   "Start menu (opening, parameters, game start, config)",
+   "OK: filler items at their places; the game start item used for the test (the opening's name window takes no emulated input)"
+  ],
+  [
+   "The first briefing (the office, the agents, the target)",
+   "OK: filler wrapped between words in the 57-column box under the speaker's tag, pages waiting for a click and carrying on where they left off; pictures change with the story"
+  ],
+  [
+   "The command menu and its submenus",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (TCM/NAMEWIND.TCM) in the opening",
+   "Its kana grid takes no emulated input in the original either"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
