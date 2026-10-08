@@ -1,0 +1,43 @@
+{
+ "title": "Ides User's Club Disk Magazine #003",
+ "key": "Ides.zip/Ides User's Club Disk Magazine #003",
+ "image": "Ides User's Club Disk Magazine #003\\Ides User's Club Disk Magazine #003 [FD]\\Ides User's Club Disk Magazine #003.hdm",
+ "encoding": "adv98v",
+ "game_dir": "IUC_003",
+ "extraop": true,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "IUC_003",
+  "disks": [],
+  "subdirs": true,
+  "skip": [
+   "IO98.SYS",
+   "MEGDOS.SYS",
+   "INSTALL.EXE",
+   "INSTALL.DAT",
+   "INSTH.EXE"
+  ],
+  "run": [
+   "A:",
+   "cd \\IUC_003",
+   "IUC_003",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "script_room": 17744
+}

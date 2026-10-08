@@ -116853,7 +116853,14 @@
      "path": "Ides User's Club Disk Magazine #003\\Ides User's Club Disk Magazine #003 [FD]\\Ides User's Club Disk Magazine #003.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_003 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_003/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r128940 (erotic content)",
    "engine": "adv98v",
@@ -116861,7 +116868,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Ides.zip/Ides User's Club Disk Magazine #004",

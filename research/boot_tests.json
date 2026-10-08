@@ -2173,5 +2173,23 @@
    "Menus in the scenes, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "ides_club_003": [
+  [
+   "Main menu (artwork)",
+   "Its items are artwork; it takes no emulated click or key in the patched build (the pointer does not show), so the pages below were tested on test images whose start script chains to that page instead of the menu"
+  ],
+  [
+   "Novel page (003_N01.MES, the room)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click"
+  ],
+  [
+   "Shop catalogue page (003_FA5.MES)",
+   "OK: its list menu's filler items at their places, the title and description panels' filler wrapped in their frames"
+  ],
+  [
+   "The other pages, the menu's return, exit",
+   "not yet seen"
+  ]
  ]
 }
