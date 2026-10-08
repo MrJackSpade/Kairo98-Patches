@@ -259,6 +259,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Akiko Premium Version | [This repo: games/akiko_premium (patcher working, machine translation in progress)](../games/akiko_premium/notes.md) |
 | Fairytale Red-Zone | Chiemi | [This repo: games/chiemi (patcher working, machine translation in progress)](../games/chiemi/notes.md) |
 | Fairytale Red-Zone | Himitsu Shirei 1919 | [This repo: games/himitsu_shirei_1919 (patcher working, machine translation in progress)](../games/himitsu_shirei_1919/notes.md) |
+| Fairytale Red-Zone | Himitsu Shirei 1919 | [This repo: games/himitsu_shirei_1919_2 (patcher working, machine translation in progress)](../games/himitsu_shirei_1919_2/notes.md) |
 | Fairytale Red-Zone | Jankirou | [This repo: games/jankirou (patcher working, machine translation in progress)](../games/jankirou/notes.md) |
 | Fairytale Red-Zone | Jinmon Yuugi | [This repo: games/jinmon_yuugi (patcher working, machine translation in progress)](../games/jinmon_yuugi/notes.md) |
 | Fairytale Red-Zone | Kanako | [This repo: games/kanako (patcher working, machine translation in progress)](../games/kanako/notes.md) |

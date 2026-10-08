@@ -2155,5 +2155,23 @@
    "Later scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "himitsu_shirei_1919_2": [
+  [
+   "Start menu",
+   "OK: filler items at their places; the game start item used for the test"
+  ],
+  [
+   "The briefing (the office, the chief's message on the computer monitor)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click; the monitor's one-line frame keeps its text to the Japanese width (longer filler is cut there, as reported by the patcher)"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }
