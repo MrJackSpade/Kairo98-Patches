@@ -1112,5 +1112,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Noushuku Angel 120% (U-Jin Presents)": [
+  {
+   "label": "This repo: games/noushuku_angel (patcher working, machine translation in progress)",
+   "url": "../games/noushuku_angel/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

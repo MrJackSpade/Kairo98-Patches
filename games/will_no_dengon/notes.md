@@ -29,9 +29,9 @@ ides' Adv98V script engine (`WILL/`), on a hard-disk image: 34 scripts with text
 
 ## Script
 
-1557 strings (1507 messages, 46 menu items, 3 string variable values, 1 program strings).
+1554 strings (1504 messages, 46 menu items, 3 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 1557 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1554 strings have English so far.
 
 ## Limits
 

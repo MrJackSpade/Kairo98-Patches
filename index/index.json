@@ -53276,7 +53276,14 @@
      "path": "Noushuku Angel 120% (U-Jin Presents)\\Noushuku Angel 120% (U-Jin Presents) [HD]\\Noushuku Angel 120% (U-Jin Presents).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/noushuku_angel (patcher working, machine translation in progress)",
+     "url": "../games/noushuku_angel/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18122 (erotic content)",
    "engine": "adv98v",
@@ -53284,7 +53291,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Pia Carrot e Youkoso!!",

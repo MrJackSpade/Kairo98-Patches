@@ -103923,8 +103923,7 @@
     "VC2_MIN.MES:21",
     "VC2_MIN.MES:29",
     "VC2_MIN.MES:37",
-    "VC2_MIN.MES:45",
-    "VC2_TTL.MES:27"
+    "VC2_MIN.MES:45"
    ],
    "max_cells": 7
   },
@@ -306533,7 +306532,8 @@
    "jp": "　　　　　　　　　　　キャンセル　　　　　　　　　　",
    "en": "",
    "refs": [
-    "VC2_TTL.MES:24"
+    "VC2_TTL.MES:24",
+    "VC2_TTL.MES:27"
    ],
    "max_cells": 26
   },

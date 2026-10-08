@@ -30,9 +30,9 @@ ides' Adv98V script engine (`CAN4/`), on a hard-disk image: 218 scripts with tex
 
 ## Script
 
-12480 strings (11242 messages, 1218 menu items, 19 name tags (procedure text), 1 program strings).
+12419 strings (11233 messages, 1166 menu items, 19 name tags (procedure text), 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 12480 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 12419 strings have English so far.
 
 ## Limits
 

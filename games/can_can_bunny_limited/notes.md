@@ -31,9 +31,9 @@ ides' Adv98V script engine (`LIMIT/`), on a hard-disk image: 80 scripts with tex
 
 ## Script
 
-10619 strings (10069 messages, 534 menu items, 14 name tags (procedure text), 1 string variable values, 1 program strings).
+10611 strings (10062 messages, 533 menu items, 14 name tags (procedure text), 1 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10619 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 10611 strings have English so far.
 
 ## Limits
 

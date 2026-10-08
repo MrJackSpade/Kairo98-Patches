@@ -73377,7 +73377,8 @@
    "jp": " キャンセル ",
    "en": "",
    "refs": [
-    "GIBO_OMK.MES:21"
+    "GIBO_OMK.MES:21",
+    "GIBO_OMK.MES:34"
    ],
    "max_cells": 6
   },
@@ -73498,16 +73499,6 @@
    "en": "",
    "refs": [
     "GIBO_OMK.MES:33"
-   ],
-   "max_cells": 10
-  },
-  {
-   "id": "i00388",
-   "kind": "item",
-   "jp": " キャンセル　　　　 ",
-   "en": "",
-   "refs": [
-    "GIBO_OMK.MES:34"
    ],
    "max_cells": 10
   },

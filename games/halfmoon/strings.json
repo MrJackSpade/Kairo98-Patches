@@ -36156,7 +36156,8 @@
    "jp": "思い出なんぞいらん！！　",
    "en": "",
    "refs": [
-    "SHOP.MES:13"
+    "SHOP.MES:13",
+    "SHOP.MES:23"
    ],
    "max_cells": 12
   },
@@ -36227,16 +36228,6 @@
    "en": "",
    "refs": [
     "SHOP.MES:22"
-   ],
-   "max_cells": 13
-  },
-  {
-   "id": "i00011",
-   "kind": "item",
-   "jp": "思い出なんぞいらん！！　　",
-   "en": "",
-   "refs": [
-    "SHOP.MES:23"
    ],
    "max_cells": 13
   },

@@ -32,9 +32,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-11577 strings (1534 menu items, 10007 messages, 36 name tags (procedure text)).
+11559 strings (1535 menu items, 9988 messages, 36 name tags (procedure text)).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 11577 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 11559 strings have English so far.
 
 ## Limits
 

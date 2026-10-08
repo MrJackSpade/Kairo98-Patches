@@ -31,9 +31,9 @@ ides' Adv98V script engine (`MARINE/`), on a hard-disk image: 133 scripts with t
 
 ## Script
 
-8194 strings (8042 messages, 102 menu items, 8 name tags (procedure text), 41 text file lines, 1 program strings).
+8191 strings (8039 messages, 102 menu items, 8 name tags (procedure text), 41 text file lines, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 8194 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 8191 strings have English so far.
 
 ## Limits
 

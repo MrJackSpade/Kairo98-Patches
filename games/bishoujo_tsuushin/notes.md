@@ -29,9 +29,9 @@ ides' Adv98V script engine (at the disk's root), on its boot floppy, patched in 
 
 ## Script
 
-4968 strings (4876 messages, 62 menu items, 30 name tags (procedure text)).
+4962 strings (4870 messages, 62 menu items, 30 name tags (procedure text)).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4968 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4962 strings have English so far.
 
 ## Limits
 

@@ -170,6 +170,36 @@ def units(data, toks, proc_frames=None, frame=None):
             i = j
             continue
         i += 1
+    # a message run with a menu item's very text is that item drawn again
+    # (the highlight of a menu the script draws itself): an item too
+    items = {_bare(unit_text(data, toks, i, j)) for i, j, kind, _f in out if kind == "item"}
+    return [(i, j, "item" if kind == "msg" and _bare(unit_text(data, toks, i, j)) in items else kind, f)
+            for i, j, kind, f in out]
+
+
+def _bare(text):
+    """A label without the spaces that centre it."""
+    return text.strip("\u3000 ")
+
+
+def redraws(data, toks, us=None):
+    """{unit index: (item text, columns)} of the runs that draw a menu item
+    again (its highlight, with the item's centring spaces left out and
+    placed past them): the item's text, and how many columns of leading
+    spaces the item has that the run lacks."""
+    us = us if us is not None else units(data, toks)
+    texts = [unit_text(data, toks, i, j) for i, j, _k, _f in us]
+    items = {}
+    for n, (_i, _j, kind, _f) in enumerate(us):
+        if kind == "item":
+            items.setdefault(_bare(texts[n]), texts[n])
+    out = {}
+    for n, (_i, _j, kind, _f) in enumerate(us):
+        item = items.get(_bare(texts[n]))
+        if kind == "item" and item is not None and item != texts[n]:
+            def lead(t):
+                return 2 * (len(t) - len(t.lstrip("\u3000"))) + (len(t.lstrip("\u3000")) - len(t.lstrip("\u3000 ")))
+            out[n] = (item, lead(item) - lead(texts[n]))
     return out
 
 
@@ -710,11 +740,16 @@ def run_extract(here, src):
     for name, path in _files(vol, cfg["game_dir"]):
         data = vol.read(path)
         for tag, d, toks in _streams(data, cfg.get("extraop", False)):
+            again = redraws(d, toks)
             for n, (i, j, kind, frame) in enumerate(units(d, toks)):
                 jp = unit_text(d, toks, i, j)
                 if not jp.strip():
                     continue
                 cells = unit_cells(d, toks, i, j)
+                if n in again:
+                    # a menu item drawn again: the item's own string
+                    jp = again[n][0]
+                    cells = -(-sum(2 if ord(c) > 0x7F else 1 for c in _UTOK.sub("　", jp)) // 2)
                 key = (kind, jp)
                 if kind == "item" and name.upper() in tight:
                     # a menu item in a file that may not grow keeps its bytes
@@ -979,6 +1014,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     room = proc_room(defs, table[2], table[0], table[1]) if table else {}
     reps = {}
     us = units(data, toks, frames, default_frame)
+    again = redraws(data, toks, us)
     # the oldest engines' key wait clears the box: a page end
     clears = (forced_break or fallback) == KEY_WAIT
     starts = [_start(data, toks, i, proc, insert, effects or {}, clears) for i, _j, _k, _f in us]
@@ -1102,6 +1138,19 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
             # the engine hangs on an ASCII string in a procedure body
             new = _fullwidth(" ".join(text.split("\n")), None)
         reps[s] = (e, ids.get(ref, ref), new)
+        if n in again and again[n][1]:
+            # a menu item drawn again, placed past the item's centring
+            # spaces, which the English item does not have: placed at the
+            # item's own column
+            for x2 in range(i - 1, max(-1, i - 24), -1):
+                k2, s2, _e2 = toks[x2]
+                if k2 in TEXT:
+                    break
+                if k2 == "cmd" and data[s2] == 0xA7 and x2 + 1 < len(toks) and toks[x2 + 1][0] == "num":
+                    xs, xe = toks[x2 + 1][1], toks[x2 + 1][2]
+                    col = _num(data, xs) - again[n][1]
+                    if col >= 0 and xs not in reps:
+                        reps[xs] = (xe, ids.get(ref, ref), _num_bytes(col))
     # every definition of a procedure is copied to its slot when it runs
     for pn, bs, be in every:
         limit = max(be - bs, room.get(pn, 0))

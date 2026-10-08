@@ -234,6 +234,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Hare Nochi Munasawagi! | [This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)](../games/hare_nochi_munasawagi/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
+| Cocktail Soft | Noushuku Angel 120% (U-Jin Presents) | [This repo: games/noushuku_angel (patcher working, machine translation in progress)](../games/noushuku_angel/notes.md) |
 | Cocktail Soft | Pia Carrot e Youkoso!! | [This repo: games/pia_carrot (patcher working, machine translation in progress)](../games/pia_carrot/notes.md) |
 | Cocktail Soft | Travel Junction | [This repo: games/travel_junction (patcher working, machine translation in progress)](../games/travel_junction/notes.md) |
 | Cocktail Soft | True Heart | [This repo: games/true_heart (patcher working, machine translation in progress)](../games/true_heart/notes.md) |
@@ -1601,7 +1602,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Mayumi [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Miki [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Nike [FD HD extras]
-- ♥ Noushuku Angel 120% (U-Jin Presents) [FD HD] `adv98v`
+- ♥ Noushuku Angel 120% (U-Jin Presents) [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Pia Carrot e Youkoso!! [FD HD extras] `adv98v` — **EN**
 - ♥ Queen's Library [FD HD]
 - ♥ Sailor-fuku Senshi Felis [FD extras]

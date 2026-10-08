@@ -30,9 +30,9 @@ ides' Adv98V script engine (`MAYUMI/`), on a hard-disk image: 72 scripts with te
 
 ## Script
 
-4944 strings (4749 messages, 74 menu items, 18 name tags (procedure text), 102 string variable values, 1 program strings).
+4910 strings (4715 messages, 74 menu items, 18 name tags (procedure text), 102 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4944 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4910 strings have English so far.
 
 ## Limits
 

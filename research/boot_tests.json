@@ -1799,5 +1799,23 @@
    "The other three stories, the menu's other items, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "noushuku_angel": [
+  [
+   "Title menu (five items in the blackboard window)",
+   "OK: filler items; the highlight the script draws over each item (the item's label without its centring spaces, placed past them) is the item's own string at the item's column, so the two no longer draw over each other"
+  ],
+  [
+   "Opening (the town, the school, the corridor, the two at the spotlight)",
+   "OK: filler under each picture, pages waiting for a click"
+  ],
+  [
+   "The school gate (the first scene) with its command panel",
+   "OK: speaker tags and the message in the box, pages waiting for a click; the command panel is artwork"
+  ],
+  [
+   "The commands, the other stories, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

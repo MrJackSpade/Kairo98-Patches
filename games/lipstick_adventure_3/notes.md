@@ -31,9 +31,9 @@ ides' Adv98V script engine (`LIP3/`), on a hard-disk image: 132 scripts with tex
 
 ## Script
 
-8189 strings (36 name tags (procedure text), 7813 messages, 338 menu items, 1 string variable values, 1 program strings).
+8169 strings (36 name tags (procedure text), 7795 messages, 336 menu items, 1 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 8189 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 8169 strings have English so far.
 
 ## Limits
 

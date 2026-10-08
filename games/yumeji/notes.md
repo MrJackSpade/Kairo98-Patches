@@ -30,9 +30,9 @@ ides' Adv98V script engine (`YUMEJI/`), on a hard-disk image: 100 scripts with t
 
 ## Script
 
-3312 strings (3130 messages, 179 menu items, 1 name tags (procedure text), 1 string variable values, 1 program strings).
+3299 strings (3117 messages, 179 menu items, 1 name tags (procedure text), 1 string variable values, 1 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3312 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3299 strings have English so far.
 
 ## Limits
 

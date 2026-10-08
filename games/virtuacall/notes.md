@@ -30,9 +30,9 @@ ides' Adv98V script engine (`Q2/`), on a hard-disk image: 195 scripts with text 
 
 ## Script
 
-25367 strings (25308 messages, 42 menu items, 2 string variable values, 15 program strings).
+25366 strings (25307 messages, 42 menu items, 2 string variable values, 15 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 25367 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 25366 strings have English so far.
 
 ## Limits
 
