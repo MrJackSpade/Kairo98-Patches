@@ -1897,5 +1897,23 @@
    "Leaving the first scene, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "kounai_shasei_3": [
+  [
+   "Start menu and the save slot menu",
+   "OK: filler items at their places, the highlight on the first"
+  ],
+  [
+   "Name registration (the start menu's second item, CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken and the start menu returns"
+  ],
+  [
+   "Opening (the giant turtle, the defence force office, the girl's transformation and fight)",
+   "OK: speaker tags and filler wrapped in the bottom box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
