@@ -1915,5 +1915,27 @@
    "Later scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "kounai_shasei_sp": [
+  [
+   "Opening exchange (the X team and the users) and the title",
+   "OK: filler lines in their colours at their places, waiting for a key"
+  ],
+  [
+   "Main menu (four corners) with its explanation",
+   "OK: filler heading, items at their places with the highlight on the first, the explanation below"
+  ],
+  [
+   "Quiz (question titles, the questions with their answer menus and hints, right and wrong answers)",
+   "OK: filler question above the items, the hint at its place; the answer screens' lines (procedures) in full-width filler"
+  ],
+  [
+   "The penalty game after a wrong answer",
+   "OK: speaker tag and filler, then its menu, which returns to itself on a wrong pick as in the original"
+  ],
+  [
+   "The music and graphics corners, the bonus corner, the end of the quiz",
+   "not yet seen"
+  ]
  ]
 }

@@ -1155,6 +1155,12 @@
    "url": "../games/kounai_shasei_3/notes.md",
    "source": "this repo",
    "wip": true
+  },
+  {
+   "label": "This repo: games/kounai_shasei_sp (patcher working, machine translation in progress)",
+   "url": "../games/kounai_shasei_sp/notes.md",
+   "source": "this repo",
+   "wip": true
   }
  ]
 }

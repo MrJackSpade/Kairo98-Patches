@@ -1,0 +1,13 @@
+{
+ "title": "Kounai Shasei Special Disk",
+ "key": "FairytaleXShitei.zip/Kounai Shasei",
+ "image": "Kounai Shasei\\Kounai Shasei (Special Disk) [FD hd9]\\Kounai Shasei (Special Disk).d88",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "menu_fullwidth": true,
+ "page_break": "8190",
+ "proc_fullwidth": true,
+ "script_room": 17096
+}

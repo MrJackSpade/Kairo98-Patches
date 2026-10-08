@@ -268,6 +268,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_2 (patcher working, machine translation in progress)](../games/kounai_shasei_2/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_1 (patcher working, machine translation in progress)](../games/kounai_shasei_1/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_3 (patcher working, machine translation in progress)](../games/kounai_shasei_3/notes.md) |
+| Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_sp (patcher working, machine translation in progress)](../games/kounai_shasei_sp/notes.md) |
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
 | Game Technopolis | Dragon Eyes | [This repo: games/dragon_eyes (patcher working, machine translation in progress)](../games/dragon_eyes/notes.md) |
