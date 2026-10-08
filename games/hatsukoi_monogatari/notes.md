@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-07 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`FIRST/`), on a hard-disk image: 640 scripts with text (`MES/*.MES`, `*.MEC`, and in the script folders `MES_1/`, `MES_2/`, `MES_3/`, `MES_4/`, `MES_5/`, `MES_6/`, `MES_7/`, named `FOLDER/FILE` in the refs) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
+ides' Adv98V script engine (`FIRST/`), on a hard-disk image: 640 scripts with text (`*.MEC`, and in the script folders `MES_1/`, `MES_2/`, `MES_3/`, `MES_4/`, `MES_5/`, `MES_6/`, `MES_7/`, named `FOLDER/FILE` in the refs) in its bytecode (`pc98tl/adv98v.py` documents it; this build has the later engines' extended opcodes).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 

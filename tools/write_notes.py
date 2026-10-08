@@ -601,10 +601,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
         "  table refers into a script).")
     names = any(r.startswith("TCM/NAMEWIND") for e in strings for r in e["refs"])
     subs = sorted({f.split("/")[0] for f in files if "/" in f})
-    where = ("`MES/*.MES`, `*.MEC`" if not subs else
-             "`MES/*.MES`, `*.MEC`, and in the script folders %s, named `FOLDER/FILE` in the refs"
-             % ", ".join("`%s/`" % s for s in subs) if any("/" not in f for f in files) else
-             "in the script folders %s, named `FOLDER/FILE` in the refs" % ", ".join("`%s/`" % s for s in subs))
+    main = ", ".join(x for x, ext in (("`MES/*.MES`", ".MES"), ("`*.MEC`", ".MEC"))
+                     if not subs or any("/" not in f and f.upper().endswith(ext) for f in files))
+    where = main if not subs else "%s%sin the script folders %s, named `FOLDER/FILE` in the refs" % (
+        main, ", and " if main else "", ", ".join("`%s/`" % s for s in subs))
     out += ["", "## Engine", "",
             "ides' Adv98V script engine (%s), %s: %d scripts with text (%s) in its bytecode "
             "(`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
