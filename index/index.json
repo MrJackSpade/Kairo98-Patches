@@ -51790,7 +51790,14 @@
      "path": "Dengeki Nurse 2 - More Sexy\\Dengeki Nurse 2 - More Sexy [HD]\\Dengeki Nurse 2 - More Sexy.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dengeki_nurse_2 (patcher working, machine translation in progress)",
+     "url": "../games/dengeki_nurse_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17666 (erotic content)",
    "engine": "adv98v",
@@ -51798,7 +51805,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Doki Doki Vacation",

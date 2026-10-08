@@ -1096,5 +1096,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Dengeki Nurse 2 - More Sexy": [
+  {
+   "label": "This repo: games/dengeki_nurse_2 (patcher working, machine translation in progress)",
+   "url": "../games/dengeki_nurse_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -1767,5 +1767,23 @@
    "The customization and life simulation, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "dengeki_nurse_2": [
+  [
+   "Title menu (artwork) and the chapter card",
+   "Drawn in the picture; the first item chosen with a click"
+  ],
+  [
+   "Prologue (the villains' throne room)",
+   "OK: filler wrapped between words beside each speaker's portrait, pages waiting for a click"
+  ],
+  [
+   "The first scene (the hero at the car) with its command bar",
+   "OK: speaker tags on the first line, the message below, pages waiting for a click; the command bar is artwork"
+  ],
+  [
+   "The commands, the transformation scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
