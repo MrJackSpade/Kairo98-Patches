@@ -1162,5 +1162,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "GameTechnopolis.zip/Hatsukoi Monogatari": [
+  {
+   "label": "This repo: games/hatsukoi_monogatari (patcher working, machine translation in progress)",
+   "url": "../games/hatsukoi_monogatari/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

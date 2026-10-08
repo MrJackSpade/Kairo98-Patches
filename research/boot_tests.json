@@ -2057,5 +2057,27 @@
    "The music and graphics corners, the bonus corner, the end of the quiz",
    "not yet seen"
   ]
+ ],
+ "hatsukoi_monogatari": [
+  [
+   "Opening (Fol, the guide, introducing herself)",
+   "OK: speaker tag and filler in the bottom box, pages waiting for a click"
+  ],
+  [
+   "Name window (HAT_TCM/MOUSENAM.TCM)",
+   "Its kana grid takes no emulated click or key, in the original too; for the rest of the test a test image left out the window's load and call in MES_1/PRSC02A.MES and PRSC02B.MES (no-ops of the same length; the default name in NAME.DEF stays)"
+  ],
+  [
+   "Blood type (artwork buttons) and star sign menus with their Yes/No confirmations",
+   "OK: the star sign grid's two-line buttons as filler at their places, picked with the keyboard; the confirmation's items at their places"
+  ],
+  [
+   "The fortune question (artwork buttons)",
+   "OK: the question as filler; its buttons are artwork"
+  ],
+  [
+   "The school days after the questions, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
