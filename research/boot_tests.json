@@ -1707,5 +1707,23 @@
    "Menus in scenes, the dungeon map, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "himitsu_no_hanazono": [
+  [
+   "Start menu (two items)",
+   "OK: full-width filler items"
+  ],
+  [
+   "Opening (Reiko, then Yukari at the window)",
+   "OK: filler wrapped between words in the bottom box and then the top box as the scene moves it, pages waiting for a key; the [Hit Return Key] prompt as filler"
+  ],
+  [
+   "Procedure text",
+   "With ASCII strings in procedures (the wait marker, ellipses) the game hung on a black screen before drawing anything; written full-width it runs"
+  ],
+  [
+   "The command choices, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

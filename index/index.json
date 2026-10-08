@@ -99364,7 +99364,14 @@
      "path": "Himitsu no Hanazono\\Himitsu no Hanazono [FD]\\Himitsu no Hanazono (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)",
+     "url": "../games/himitsu_no_hanazono/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18011 (erotic content)",
    "engine": "adv98v",
@@ -99372,7 +99379,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Kimi Dake ni Ai o",

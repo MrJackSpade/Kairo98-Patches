@@ -1,0 +1,12 @@
+{
+ "title": "Himitsu no Hanazono",
+ "key": "GameTechnopolis.zip/Himitsu no Hanazono",
+ "image": "Himitsu no Hanazono\\Himitsu no Hanazono [FD]\\Himitsu no Hanazono (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "script_room": 17096,
+ "menu_fullwidth": true,
+ "proc_fullwidth": true,
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

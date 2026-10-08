@@ -1064,5 +1064,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "GameTechnopolis.zip/Himitsu no Hanazono": [
+  {
+   "label": "This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)",
+   "url": "../games/himitsu_no_hanazono/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

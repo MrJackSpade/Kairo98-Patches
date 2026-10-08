@@ -261,6 +261,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
 | Game Technopolis | Dragon Eyes | [This repo: games/dragon_eyes (patcher working, machine translation in progress)](../games/dragon_eyes/notes.md) |
+| Game Technopolis | Himitsu no Hanazono | [This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)](../games/himitsu_no_hanazono/notes.md) |
 | Illusion | Angel Army | [This repo: games/angel_army (machine translation complete)](../games/angel_army/notes.md) |
 | Illusion | Hyouryuu | [This repo: games/hyouryuu (patcher working, machine translation in progress)](../games/hyouryuu/notes.md) |
 | Illusion | Kankin | [This repo: games/kankin (patcher working, machine translation in progress)](../games/kankin/notes.md) |
@@ -2587,7 +2588,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Dennou Tenshi - Digital Ange [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Dragon Eyes [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Hatsukoi Monogatari [FD HD extras] `adv98v`
-- ♥ Himitsu no Hanazono [FD extras] `adv98v`
+- ♥ Himitsu no Hanazono [FD extras] `adv98v` — *MTL (this repo)*
 - ♥ Kimi Dake ni Ai o [FD] `adv98v`
 - ♥ Ligarued [FD]
 - ♥ Majaventure - Negi Mahjong [FD]
