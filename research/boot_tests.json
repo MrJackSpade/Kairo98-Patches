@@ -1635,5 +1635,23 @@
    "The name entry, command menus, saving and loading, later scenes, endings",
    "not yet seen"
   ]
+ ],
+ "marine_philt": [
+  [
+   "Title menu (three items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Opening roll (2050 A.D., the city, the satellite, the capsule)",
+   "OK: the roll's lines as full-width filler (the roll module draws Shift-JIS only; ASCII came out blank) scrolling over the pictures"
+  ],
+  [
+   "Seed's room (the first scene)",
+   "OK: the command screen with its artwork buttons; messages wrapped between words to the 3-line box, the MORE marker pages them"
+  ],
+  [
+   "The commands (look, talk, get, move, use), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

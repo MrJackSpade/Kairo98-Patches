@@ -50,7 +50,9 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             dots, 22 in ADVH), "menu_fullwidth" (an engine whose
             menus take Shift-JIS only), "text_files" ([files, relative to
             the game folder, of plain text the engine shows as it is: an
-            opening roll]), "program_fixes" ([{"file", "find",
+            opening roll]), "text_fullwidth" (the module that shows them
+            draws Shift-JIS only: their lines in full-width letters),
+            "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
             cannot pass), "default_frame" (the message box
@@ -543,10 +545,12 @@ def text_file_lines(data):
             if raw.decode("cp932", "replace").strip("\u3000 ")]
 
 
-def patch_text_file(data, texts, sids, warn):
+def patch_text_file(data, texts, sids, warn, fullwidth=False):
     """The file with its text lines replaced (None: kept).  It is loaded
     into a fixed place in memory, so it keeps its size: each line is cut
-    to its Japanese byte length and padded with spaces to it."""
+    to its Japanese byte length and padded with spaces to it.  fullwidth:
+    the module that shows it draws Shift-JIS only, so the letters are
+    written full-width (two bytes each)."""
     body = data.split(b"\x1a")[0]
     tail = data[len(body):]
     out, n = [], 0
@@ -558,10 +562,11 @@ def patch_text_file(data, texts, sids, warn):
         if text is None:
             out.append(raw)
         else:
-            enc = _plain(" ".join(text.split("\n")))
+            enc = _fullwidth(" ".join(text.split("\n")), None) if fullwidth \
+                else _plain(" ".join(text.split("\n")))
             if len(enc) > len(raw):
                 warn.append("%s: %d bytes, the line holds %d" % (sids[n], len(enc), len(raw)))
-                enc = enc[:len(raw)]
+                enc = enc[:len(raw) // 2 * 2] if fullwidth else enc[:len(raw)]
             out.append(enc.ljust(len(raw)))
         n += 1
     return b"\r\n".join(out) + tail
@@ -1502,7 +1507,8 @@ def run_patch(here, src, dst, mode="en"):
         new_file = patch_text_file(old_file, [by_ref.get("%s:%d" % (name, n))
                                               for n in range(len(text_file_lines(old_file)))],
                                    [ids.get("%s:%d" % (name, n), "%s:%d" % (name, n))
-                                    for n in range(len(text_file_lines(old_file)))], warn)
+                                    for n in range(len(text_file_lines(old_file)))], warn,
+                                   cfg.get("text_fullwidth", False))
         if new_file != old_file:
             vol.write(path, new_file)
     for name, path in _programs(vol, cfg["game_dir"]):

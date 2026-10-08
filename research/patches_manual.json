@@ -1027,5 +1027,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Marine Philt": [
+  {
+   "label": "This repo: games/marine_philt (patcher working, machine translation in progress)",
+   "url": "../games/marine_philt/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "Official English Windows release announced by Fakku (VNDB r160192, not yet released)",
+   "url": "https://vndb.org/r160192",
+   "source": "VNDB"
+  }
  ]
 }
