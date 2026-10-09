@@ -2441,5 +2441,33 @@
    "The stories, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "ujin_collection_2": [
+  [
+   "The setup questions and menus, the logo screen",
+   "OK: filler questions and items at their places"
+  ],
+  [
+   "Name window (kana grid)",
+   "Its prompt as filler; its grid takes no emulated click or key (as in the other releases' name windows), so the story is not reached"
+  ],
+  [
+   "The stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "ujin_collection_3": [
+  [
+   "Start question",
+   "OK: filler question and items at their places"
+  ],
+  [
+   "Opening (the giant turtle, the defence force office)",
+   "OK: filler wrapped in the boxes beside the frame art, pages waiting for a click (the game draws its screen in two halves, the same in the original)"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

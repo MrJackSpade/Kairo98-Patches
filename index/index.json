@@ -84646,6 +84646,18 @@
      "url": "../games/ujin_collection_1/notes.md",
      "source": "this repo",
      "wip": true
+    },
+    {
+     "label": "This repo: games/ujin_collection_2 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/ujin_collection_3 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_3/notes.md",
+     "source": "this repo",
+     "wip": true
     }
    ],
    "heart": true,
