@@ -2,14 +2,14 @@
 
 > This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
 
-Source image: `Dragon Knight III/Dragon Knight III [FD]/Dragon Knight III (Disk A).hdm` (sha256 in `strings.json`).
+Source image: `Dragon Knight III/Dragon Knight III [HD]/Dragon Knight III.hdi` (sha256 in `strings.json`).
 Clearance: no PC-98 English release or announcement found on 2026-10-09 (`research/clearance.json`).
 
 ## Engine
 
 Elf's **AI5** (`AI5.EXE`): the script is 100 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
 
-The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a longer script, so the patch lays the game out on a DOS hard-disk image the way its own hard-disk installer does: every disk's files in `DK3/`, started with `play4 / nmd / ai5 start.mes H x`.  The base image is the collection's `Custom Mate 3/Custom Mate 3 [HD]/Custom Mate 3.hdi` with its own game removed.
+The patch works on the game's hard-disk release (the game in `DR3/`), which has room for a longer script.
 
 * Nothing in a script is an address, so the scripts are rebuilt with the English in place of the Japanese.
 * English is written as the engine's half-width strings (06 ... 06), between commands that set the character width to one column and back to two; the program is not changed.
@@ -38,7 +38,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 | Test | Result |
 |---|---|
-| Six ELFDOS floppies laid out on a hard disk; the opening pictures and the title menu | OK: boots from the hard disk; the title menu's items as full-width filler |
+| The hard-disk release; the opening pictures and the title menu | OK: boots; the title menu's items as full-width filler |
 | Name entry | OK: its prompt and buttons as half-width filler in their slots; the character grid stays Japanese; the default name is taken |
 | Town dialogue (the two-line box) | OK: filler wrapped between words in the box, the hero's name in brackets, pages waiting for a key |
 | Event scene (the bottom text) | OK: filler wrapped across the bottom window, pages waiting for a key |

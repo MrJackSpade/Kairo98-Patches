@@ -562,6 +562,11 @@ def rebuild(d, values, warn, ids, name):
 # ---- the game
 
 def _install(cfg, src):
+    """(the image to patch, its config): the game's own hard-disk image, or
+    its floppies laid out on one (cfg "hdd", see illusion_game)."""
+    if not cfg.get("hdd"):
+        from .disk import DiskImage
+        return DiskImage(src), cfg
     from .illusion_game import _hdd_install
     return _hdd_install(cfg, src)
 

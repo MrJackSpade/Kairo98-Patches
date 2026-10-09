@@ -794,7 +794,7 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "item": "menu items", "label": "labels"}
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"]})
-    h = cfg["hdd"]
+    h = cfg.get("hdd")
     out = ["# %s%s (Elf)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -808,11 +808,13 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
             "Elf's **AI5** (`AI5.EXE`): the script is %d `*.MES` files with text, bytecode with a "
             "dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every "
             "script tokenizes from its start to its end." % len(files), "",
-            "The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a "
-            "longer script, so the patch lays the game out on a DOS hard-disk image the way its own "
-            "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "
-            "the collection's `%s` with its own game removed." % (
-                h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")), "",
+            ("The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a "
+             "longer script, so the patch lays the game out on a DOS hard-disk image the way its own "
+             "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "
+             "the collection's `%s` with its own game removed." % (
+                 h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")) if h else
+             "The patch works on the game's hard-disk release (the game in `%s/`), which has room for a "
+             "longer script." % cfg["game_dir"]), "",
             "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
             "of the Japanese.",
             "* English is written as the engine's half-width strings (06 ... 06), between commands that "
