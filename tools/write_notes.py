@@ -805,9 +805,10 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     out += ["", "## Engine", "",
-            "Elf's **AI5** (`AI5.EXE`): the script is %d `*.MES` files with text, bytecode with a "
+            "Elf's **%s** (`%s.EXE`): the script is %d `*.MES` files with text, bytecode with a "
             "dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every "
-            "script tokenizes from its start to its end." % len(files), "",
+            "script tokenizes from its start to its end." % (
+                cfg.get("version", "ai5").upper(), cfg.get("version", "ai5").upper(), len(files)), "",
             ("The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a "
              "longer script, so the patch lays the game out on a DOS hard-disk image the way its own "
              "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "
@@ -821,8 +822,13 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                     "`%s`" % f for f in cfg["archives"]) if cfg.get("archives") else ""), "",
             "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
             "of the Japanese.",
-            "* English is written as the engine's half-width strings (06 ... 06), between commands that "
-            "set the character width to one column and back to two; the program is not changed.",
+            ("* English is written as the engine's half-width strings (06 ... 06), between commands that "
+             "set the character width to one column and back to two; the program is not changed."
+             if cfg.get("version", "ai5") == "ai5" else
+             "* This engine draws no half-width strings, so English is written in the PC-98's half-width "
+             "two-byte letters (85 40-9E, the space 86 40), between commands that set the character "
+             "width to one column and back to two; each rebuilt script's dictionary is laid out again "
+             "so its most frequent letters take one byte; the program is not changed."),
             "* Lines are wrapped between words to the text window the script set up (its own commands, "
             "or a subroutine it calls), and a new page (a key wait and a clear) starts before a line "
             "would run past the window's bottom.",

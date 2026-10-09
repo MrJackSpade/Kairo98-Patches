@@ -1445,5 +1445,13 @@
    "url": "https://vndb.org/v2337",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/Shangrlia": [
+  {
+   "label": "This repo: games/shangrlia (patcher working, machine translation in progress)",
+   "url": "../games/shangrlia/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -259,6 +259,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Dynamic Pro | Kekkou Kamen 2 - Oshioki Densetsu no Maki | [This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)](../games/kekkou_kamen_2/notes.md) |
 | elf | Doukyuusei 2 | [This repo: games/doukyuusei_2 (patcher working, machine translation in progress)](../games/doukyuusei_2/notes.md) |
 | elf | Dragon Knight III | [This repo: games/dragon_knight_3 (patcher working, machine translation in progress)](../games/dragon_knight_3/notes.md) |
+| elf | Shangrlia | [This repo: games/shangrlia (patcher working, machine translation in progress)](../games/shangrlia/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
 | Fairytale | Fairytale Kaizokuban | [This repo: games/fairytale_kaizokuban (patcher working, machine translation in progress)](../games/fairytale_kaizokuban/notes.md) |
@@ -2194,7 +2195,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Private School [FD extras]
 - ♥ Ray-Gun [FD extras] `elf-other`
 - ♥ Run Run Kyousoukyoku [FD extras] `elf-other` — **EN**
-- ♥ Shangrlia [FD HD extras] `elf-ai5`
+- ♥ Shangrlia [FD HD extras] `elf-ai5` — *MTL (this repo)*
 - ♥ Shangrlia 2 [FD HD extras] `elf-ai5` — **EN**
 - ♥ Tenshin Ranma [FD HD] `elf-ai5`
 - ♥ Words Worth [FD HD] `elf-ai5` — **EN**

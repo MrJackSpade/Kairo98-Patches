@@ -1609,17 +1609,19 @@
    "VNDB API 2026-10-09: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): DeepL/deepl-java; myomi/jbpm4-developersguide-ja-translation; potappo/moz-devnews-ja; metinilgar/desktop-translation-app-deepl-javafx; DeeJay429/AI-VideoTranslator-by-DeeJay"
+   "GitHub search (title + translation): DeepL/deepl-java; myomi/jbpm4-developersguide-ja-translation; potappo/moz-devnews-ja; metinilgar/desktop-translation-app-deepl-javafx; DeeJay429/AI-VideoTranslator-by-DeeJay",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found"
   ]
  },
  "elf.zip/Shangrlia": {
   "checked": "2026-10-09",
-  "result": "review",
+  "result": "clear",
   "sources": [
    "VNDB API 2026-10-09: no English release on any platform",
-   "https://baba-jpc.neocities.org/translations/translations: LISTED",
+   "https://baba-jpc.neocities.org/translations/translations: LISTED as shangrlia2 only (the sequel, Shangrlia 2); settled by hand: the first game is not translated",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found (the fan translation by BabaJeanmel and Alpharobo is of the sequel, Shangrlia 2)"
   ]
  },
  "PioneerLdc.zip/El-Hazard - The Magnificent World": {

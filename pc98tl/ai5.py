@@ -259,9 +259,22 @@ def _number(d, i):
         return None
 
 
+# the engine's variables at @ (DS:E256h in AI5, C256h in AI4) as word indexes, by engine version
+ENGINES = {
+    "ai5": {"window": (13, 14, 15, 16), "cursor": 17, "font": 21, "ank": True},
+    # (AI4, Shangrlia: no half-width strings; 06 ... 06 is skipped)
+    "ai4": {"window": (24, 25, 26, 27), "cursor": 28, "font": 12, "ank": False},
+}
 WINDOW = (13, 14, 15, 16)       # the poke indexes of the window's left, top, right, bottom
 CURSOR = 17                     # the cursor's column and line
 FONT = 21                       # line height | character width << 8
+ANK = True                      # the engine draws half-width strings (06 ... 06)
+
+
+def set_engine(cfg):
+    global WINDOW, CURSOR, FONT, ANK
+    e = ENGINES[cfg.get("version", "ai5")]
+    WINDOW, CURSOR, FONT, ANK = e["window"], e["cursor"], e["font"], e["ank"]
 
 
 def _block_end(d, i):
@@ -300,7 +313,7 @@ def windows(d, toks):
             end = _block_end(d, start)
             bodies.append((start, end))
             subs[_number(d, s + 1)] = [t[3] for t in toks if t[0] == "poke" and start <= t[1] < end]
-    state = {13: None, 14: None, 15: None, 16: None, 21: None}
+    state = {k: None for k in WINDOW + (FONT,)}
     saved, body_end = None, None
     out = {}
     for n, (kind, s, e, extra) in enumerate(toks):
@@ -317,18 +330,61 @@ def windows(d, toks):
             for p in subs.get(_number(d, s + 1), ()):
                 _apply(state, p)
         elif kind == "ch":
-            out[n] = (state[13], state[14], state[15], state[16], (state[21] or 0x210) & 0xFF)
+            out[n] = tuple(state[k] for k in WINDOW) + ((state[FONT] or 0x210) & 0xFF,)
     return out
 
 
 # ---- English
 
+def half_glyph(c):
+    """The Shift-JIS code of the PC-98's half-width glyph for an ASCII
+    character (row 9, 85 40-9E; the space 86 40)."""
+    if c == " ":
+        return b"\x86\x40"
+    t = ord(c) - 0x21
+    return bytes([0x85, t + 0x40 if t + 0x40 < 0x7F else t + 0x41])
+
+
+def redict(d):
+    """The script with its dictionary laid out again: the 128 characters
+    that save the most bytes (each use of a dictionary character is one
+    byte where it would be two), the text re-encoded with it."""
+    toks = tokenize(d)
+    start = struct.unpack_from("<H", d, 0)[0]
+    old = {0x80 + k: d[2 + 2 * k:4 + 2 * k] for k in range((start - 2) // 2)}
+
+    def pair(t):
+        b = d[t[1]]
+        return old[b] if b >= 0x80 else bytes([b + 0x20, d[t[1] + 1]])
+    counts = {}
+    for t in toks:
+        if t[0] == "ch":
+            p = pair(t)
+            counts[p] = counts.get(p, 0) + 1
+    # (a character with a lead byte from A0h has no two-byte form: it must be in the dictionary)
+    must = [p for p in counts if p[0] >= 0xA0]
+    if len(must) > 128:
+        raise SystemExit("%d characters need the dictionary, which holds 128" % len(must))
+    chosen = must + [p for p, n in sorted(counts.items(), key=lambda x: -x[1])
+                     if n > 1 and p not in must][:128 - len(must)]
+    code = {p: 0x80 + k for k, p in enumerate(chosen)}
+    out = bytearray(struct.pack("<H", 2 + 2 * len(chosen)) + b"".join(chosen))
+    for t in toks:
+        if t[0] == "ch":
+            p = pair(t)
+            out += bytes([code[p]]) if p in code else bytes([p[0] - 0x20, p[1]])
+        else:
+            out += d[t[1]:t[2]]
+    return bytes(out)
+
+
 def font_poke(width, height):
-    """0D 40 21 (width << 8) + height: 08 (w << 4 | 3) (h << 2) 03 (nine bytes; the value in the
-    08 form: ((x >> 2) << 8 | y) >> 2)."""
+    """0D 40 FONT (width << 8) + height: 08 (w << 4 | 3) (h << 2) 03 (the value in the 08 form:
+    ((x >> 2) << 8 | y) >> 2; the index 30h + n below 16, else 07 (n << 2 | 3))."""
     if not 2 <= height <= 0x3F:
         raise SystemExit("a line height of %d" % height)
-    return bytes([0x0D, 0x40, 0x07, 0x57, 0x03, 0x08, width << 4 | 3, height << 2, 0x03])
+    idx = bytes([0x30 + FONT]) if FONT < 16 else bytes([0x07, FONT << 2 | 3])
+    return bytes([0x0D, 0x40]) + idx + bytes([0x03, 0x08, width << 4 | 3, height << 2, 0x03])
 NAME_CELLS = 8          # the hero's name a subroutine prints (four full-width letters)
 # the subroutine calls messages hold ({Xn}): {n: (cells drawn, a page break: a key wait and a clear)};
 # game.json "calls": {"n": {"cells": .., "page": .., "note": ..}}
@@ -423,6 +479,17 @@ class Writer:
             self.open = False
 
     def ascii(self, s):
+        if not ANK:
+            # (an engine without half-width strings: the PC-98's half-width two-byte glyphs,
+            # 85 40-9E for ! to ~ and 86 40 for the space, at width 1; the file's dictionary
+            # is laid out again afterwards, see redict)
+            if not self.half:
+                self.out += self.half_poke
+                self.half = True
+            for c in s:
+                self.out += _wide(half_glyph(c), self.dic)
+            self.st["col"] += len(s)
+            return
         if not self.half or self.guard:
             # (after 11 the width command comes first: a string right after it would be
             # taken for its argument)
@@ -645,7 +712,7 @@ def rebuild(d, values, warn, ids, name):
                         st["col"] += _call_cells(call_number(d, t)) if t[0] == "op" else 2
         out += d[s:e]
         n += 1
-    return bytes(out)
+    return bytes(out) if ANK else redict(bytes(out))
 
 
 # ---- the game
@@ -718,6 +785,7 @@ PREFIX = {"msg": "m", "item": "i", "label": "l"}
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     set_calls(cfg)
+    set_engine(cfg)
     notes = {int(n): c.get("note", "") for n, c in
              cfg.get("calls", {"26": {"note": "the hero's name"}}).items()}
     img, cfg2 = _install(cfg, src)
@@ -799,6 +867,7 @@ def run_patch(here, src, dst, mode="en"):
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
     set_calls(cfg)
+    set_engine(cfg)
     img, cfg2 = _install(cfg, src)
     vol = img.volumes[0]
     by_ref, ids = {}, {}
