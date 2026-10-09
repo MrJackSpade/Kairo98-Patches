@@ -741,7 +741,17 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "file, the last strings stay Japanese and are reported." % (
                        ", ".join("`%s`" % f for f in cfg["table_files"]),
                        "full-width letters" if cfg.get("table_fullwidth") else "cells (two half-width letters each)"))
-    if cfg.get("data_files"):
+    if cfg.get("data_files") and cfg.get("engine") == "advh":
+        out.append("* The hero's default name (an `e` id from %s): up to `max_cells`%s; that is as long a name "
+                   "as the name entry takes from the player, or the Japanese name's length where the game has "
+                   "no name entry.  Longer names are cut and reported.  The file pairs the name with the "
+                   "placeholder `＊＊＊`, which the engine swaps for the name as it reads a message (the name "
+                   "entry writes the name the player types under the same placeholder): keep `＊＊＊` in the "
+                   "English of a message where the name goes." % (
+                       ", ".join("`%s`" % f for f in cfg["data_files"]),
+                       " full-width letters (the engine reads the name as message text)"
+                       if cfg.get("data_fullwidth") else ", twice that in half-width letters"))
+    elif cfg.get("data_files"):
         out.append("* Names in data files (`e` ids from %s): written in place, each up to its field's room "
                    "(`max_cells`%s: the name with the spaces around it and any `＠` padding after it), a "
                    "shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are "

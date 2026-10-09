@@ -1,0 +1,50 @@
+{
+ "title": "Disk Bishoujo Daizukan '91",
+ "key": "SantaFe.zip/Disk Bishoujo Daizukan '91",
+ "image": "Disk Bishoujo Daizukan '91\\Disk Bishoujo Daizukan '91 [FD]\\Disk Bishoujo Daizukan '91 (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Disk Bishoujo Daizukan '91 (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "DUMMY.SYS",
+   "ADVH_DOS.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "boot_steps": "40:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,2:shot,1:down,1:shot,1:enter,3:shot,3:enter,4:shot,1:key=65,1:key=66,1:key=67,2:shot,2:key=13,4:shot,3:enter,3:shot,3:enter,3:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

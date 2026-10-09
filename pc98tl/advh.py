@@ -209,7 +209,7 @@ def patch(orig, fixes=()):
         push si
         push es
         mov dl, al
-        xor dh, dh
+        mov dh, 0x80
         mov cx, {glyph}
         mov bx, ds
         mov ah, 0x14

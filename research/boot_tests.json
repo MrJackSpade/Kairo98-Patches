@@ -2527,5 +2527,31 @@
    "The other girls, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "bishoujo_daizukan_91": [
+  [
+   "Opening (the hostess) and the name question",
+   "OK: filler wrapped beside the picture, pages waiting for a key; the two items, the highlight moving between them"
+  ],
+  [
+   "Name entry (NAME.COM)",
+   "OK: its prompt as filler; a name typed with the keyboard is taken"
+  ],
+  [
+   "Hero's name in messages (＊＊＊, NAME.DEF)",
+   "OK: English messages with ＊＊＊ show the default name (set in English) and, after the name entry, the typed name"
+  ],
+  [
+   "Start of the game (the saved place in FLAG0 loaded)",
+   "OK: the girls' menu and a profile page with filler at their places; a girl's scene with filler under the picture in the speaker's colour"
+  ],
+  [
+   "ADVH.EXE",
+   "Not wrapped (plain EXEPACK); in this build a run of program text starts on code bytes (9D C3, popf / ret, before the disk-change message), which the extraction leaves out: written over, the program's save loading ended in \"ERROR: unknown .MES file\""
+  ],
+  [
+   "The other girls, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

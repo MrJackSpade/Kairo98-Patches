@@ -33,9 +33,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-2230 strings (1972 messages, 248 menu items, 10 program strings).
+2229 strings (1972 messages, 248 menu items, 9 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 2230 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 2229 strings have English so far.
 
 ## Limits
 
@@ -43,7 +43,7 @@ Translation and the content classification (♥) are done by the translation mod
 * This old build ends each message with a key wait (`81 90`) that clears the box, so pages are split with it; in its one-line box a message pages a line at a time.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
-* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
+* The hero's default name (an `e` id from `NAME.DEF`): up to `max_cells` full-width letters (the engine reads the name as message text); that is as long a name as the name entry takes from the player, or the Japanese name's length where the game has no name entry.  Longer names are cut and reported.  The file pairs the name with the placeholder `＊＊＊`, which the engine swaps for the name as it reads a message (the name entry writes the name the player types under the same placeholder): keep `＊＊＊` in the English of a message where the name goes.
 * `ADVSHELL.COM` is patched in place (a byte signature, the same length): ADVSHELL checks drive A's volume label for the game disk's (ｶｸﾃﾙｿﾞｳｶﾝ A); on the hard disk the check is made to report a match.
 
 ## Not handled

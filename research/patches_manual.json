@@ -1377,5 +1377,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "SantaFe.zip/Disk Bishoujo Daizukan '91": [
+  {
+   "label": "This repo: games/bishoujo_daizukan_91 (patcher working, machine translation in progress)",
+   "url": "../games/bishoujo_daizukan_91/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

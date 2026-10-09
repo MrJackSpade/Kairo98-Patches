@@ -121,6 +121,12 @@ def find(exe):
                 and not (e >= 2 and exe[e - 2] == 0x85):
             e -= 1
             text = text[:-1]
+        # a routine's last bytes read as a rare (JIS level 2) kanji at the very start: one
+        # ending in a return (C3, CB) is code, 9D C3 (popf / ret) before "ドライブ１に" reads as 敕
+        while len(text) > 1 and s + 1 < e and exe[s + 1] in (0xC3, 0xCB) \
+                and 0x989F <= (exe[s] << 8 | exe[s + 1]) <= 0xEAA4 and decode(exe[s:s + 2]) == text[0]:
+            s += 2
+            text = text[1:]
         if not text or not _mostly_japanese(text) or _is_grid(text):
             continue
         out.append((s, e, text))

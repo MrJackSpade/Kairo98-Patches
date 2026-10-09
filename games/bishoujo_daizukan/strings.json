@@ -44620,16 +44620,6 @@
   {
    "id": "e00008",
    "kind": "engine",
-   "jp": "＊＊＊",
-   "en": "",
-   "refs": [
-    "NAME.DEF:0000"
-   ],
-   "max_cells": 3
-  },
-  {
-   "id": "e00009",
-   "kind": "engine",
    "jp": "そーいちろー",
    "en": "",
    "refs": [

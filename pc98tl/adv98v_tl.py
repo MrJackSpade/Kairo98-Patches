@@ -680,13 +680,70 @@ def patch_table(data, texts, sids, warn, fullwidth):
 _DRUN = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc]| )+")
 
 
+def name_table(data):
+    """ADVH's name file (NAME.DEF in the ADVH games): pairs of text, each
+    part ended by FF FF and 00 00 after the last, that the engine swaps as
+    it reads a message: a placeholder the messages hold (＊＊＊) and what
+    it stands for (the hero's name; the name entry writes the name the
+    player types under the same placeholder).  [(placeholder start, end,
+    name start, end)], or None for a file of another form."""
+    out, pos = [], 0
+    while data[pos:pos + 2] != b"\0\0":
+        k = data.find(b"\xff\xff", pos)
+        v = data.find(b"\xff\xff", k + 2) if k > pos else -1
+        if v <= k + 2:
+            return None
+        try:
+            data[pos:k].decode("cp932")
+            data[k + 2:v].decode("cp932")
+        except UnicodeDecodeError:
+            return None
+        out.append((pos, k, k + 2, v))
+        pos = v + 2
+    return out if out and not data[pos:].strip(b"\0") else None
+
+
+def name_room(vol, game_dir, data):
+    """The bytes a name in ADVH's name file (see name_table) may take: as
+    many as the name entry (NAME.COM) takes from the player (its input
+    loop's cmp bx, n / jae: the name it writes is as long), else the
+    name's own bytes; 0 for a file of another form."""
+    table = name_table(data)
+    if table is None:
+        return 0
+    own = max(ve - vs for _ks, _ke, vs, ve in table)
+    try:
+        entry = vol.read(_join(game_dir, "NAME.COM"))
+    except FileNotFoundError:
+        return own
+    found = re.findall(rb"\x83\xfb(.)\x73", entry, re.S)
+    return max(own, found[0][0]) if len(found) == 1 else own
+
+
+def _name_table_file(data, table, values):
+    """The name file with the names in values (bytes, keyed by start
+    offset) and the placeholders as they are, padded with NULs to its
+    size."""
+    out = bytearray()
+    for ks, ke, vs, ve in table:
+        out += data[ks:ke] + b"\xff\xff" + values.get(vs, data[vs:ve]) + b"\xff\xff"
+    if len(out) + 2 > len(data):
+        raise SystemExit("the name file's names take %d bytes, the file has %d" % (len(out) + 2, len(data)))
+    return bytes(out) + bytes(len(data) - len(out))
+
+
 def data_strings(data):
     """[(start, end, text)] of the names in a data file (game.json
     "data_files": item, monster and enemy tables, a battle prompt): runs
     of whole Shift-JIS characters and spaces, split at ＠ (the engine's
     blank, which pads fixed-width fields).  start..end is the room the
     English may take: the run with the spaces around the name and the ＠
-    padding after it; text is the name without them."""
+    padding after it; text is the name without them.  Of ADVH's name file
+    (see name_table), the names only: a placeholder is matched against the
+    messages and stays as it is."""
+    table = name_table(data)
+    if table is not None:
+        return [(vs, ve, data[vs:ve].decode("cp932")) for _ks, _ke, vs, ve in table]
     out = []
     for m in _DRUN.finditer(data):
         pos, pieces, at, piece = m.start(), [], m.start(), ""
@@ -1033,8 +1090,10 @@ def run_extract(here, src):
         extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
                   for s, e, text in program_strings(vol.read(path))]
     for name in cfg.get("data_files", []):
-        extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
-                  for s, e, text in data_strings(vol.read(_join(cfg["game_dir"], name)))]
+        data = vol.read(_join(cfg["game_dir"], name))
+        grow = name_room(vol, cfg["game_dir"], data)
+        extra += [("engine", name, "%04x" % s, s, e, text, max(e - s, grow) // 2)
+                  for s, e, text in data_strings(data)]
     for name in cfg.get("table_files", []):
         found = table_strings(vol.read(_join(cfg["game_dir"], name)))
         # (the window's width: its widest Japanese line; the strings share the file's bytes)
@@ -1893,12 +1952,21 @@ def run_patch(here, src, dst, mode="en"):
     for name, path, finder, wide in written:
         exe = vol.read(path)
         runs = finder(exe)
+        name_file = name_table(exe) if finder is data_strings else None
         values = {}
         for s, e, _t in runs:
             ref = "%s:%04x" % (name, s)
             if ref in by_ref:
                 flat = " ".join(by_ref[ref].split("\n"))
-                if finder is data_strings:
+                if name_file is not None:
+                    # (a name ends at its FF FF: no padding, the table closes up and ends in NULs)
+                    enc = _fullwidth(flat, None) if wide else _plain(flat)
+                    room = max(e - s, name_room(vol, cfg["game_dir"], exe))
+                    if len(enc) > room:
+                        warn.append("%s: %d bytes, the name has room for %d" % (ids[ref], len(enc), room))
+                        enc = enc[:room // 2 * 2] if wide else enc[:room]
+                    values[s] = enc
+                elif finder is data_strings:
                     values[s] = _data_field(exe, s, e, flat, wide, warn, ids[ref])
                 elif wide:
                     # (cut and padded to whole characters here: the module reads two bytes a letter)
@@ -1908,6 +1976,11 @@ def run_patch(here, src, dst, mode="en"):
                         warn.append("%s: %d bytes, the program has room for %d" % (ids[ref], len(whole), e - s))
                 else:
                     values[s] = _plain(flat)
+        if name_file is not None:
+            new = _name_table_file(exe, name_file, values)
+            if new != exe:
+                vol.write(path, new)
+            continue
         new, cut = engine_strings.apply(exe, runs, values)
         for s, need, room in cut:
             warn.append("%s: %d bytes, the program has room for %d" % (ids["%s:%04x" % (name, s)], need, room))

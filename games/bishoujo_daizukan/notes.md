@@ -34,9 +34,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-4367 strings (4124 messages, 228 menu items, 4 name tags (procedure text), 2 string variable values, 9 program strings).
+4366 strings (4124 messages, 228 menu items, 4 name tags (procedure text), 2 string variable values, 8 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4367 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4366 strings have English so far.
 
 ## Limits
 
@@ -46,7 +46,7 @@ Translation and the content classification (♥) are done by the translation mod
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own, so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
-* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
+* The hero's default name (an `e` id from `NAME.DEF`): up to `max_cells` full-width letters (the engine reads the name as message text); that is as long a name as the name entry takes from the player, or the Japanese name's length where the game has no name entry.  Longer names are cut and reported.  The file pairs the name with the placeholder `＊＊＊`, which the engine swaps for the name as it reads a message (the name entry writes the name the player types under the same placeholder): keep `＊＊＊` in the English of a message where the name goes.
 * `ADVH.EXE` is changed in its unpacked program (a byte signature, the same length): the release's crack: after its wrapper opens the program it rewrites seven bytes of the copy-protection check (which otherwise resets the machine); applied here to the unwrapped program.
 
 ## Not handled

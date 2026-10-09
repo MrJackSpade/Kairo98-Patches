@@ -182091,7 +182091,14 @@
      "path": "Disk Bishoujo Daizukan '91\\Disk Bishoujo Daizukan '91 [FD]\\Disk Bishoujo Daizukan '91 (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_daizukan_91 (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_daizukan_91/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Santa Fe titles are adult",
    "engine": "adv98v",
@@ -182099,7 +182106,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Assault Alien",
