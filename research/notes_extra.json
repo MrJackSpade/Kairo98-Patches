@@ -111,5 +111,10 @@
    "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; the game refuses to start otherwise). The patch uses the collection's hard-disk install.",
    "Engine strings keep their byte length, so some labels are abbreviated (country names JPN/CHN/GER, one-kanji terrain names as two letters, the heroine Kotono as Koto on name labels)."
   ]
+ },
+ "mai": {
+  "remarks": [
+   "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; AdvBIOS asks for it and stops otherwise)."
+  ]
  }
 }

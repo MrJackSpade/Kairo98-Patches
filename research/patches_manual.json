@@ -1361,5 +1361,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Mai": [
+  {
+   "label": "This repo: games/mai (patcher working, machine translation in progress)",
+   "url": "../games/mai/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

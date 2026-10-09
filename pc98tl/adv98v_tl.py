@@ -535,6 +535,15 @@ def start_script(vol, game_dir, extraop):
             m = re.search(rb'"(?:[a-z]:)?\\?(?:\w*mes\w*\\)?([^"\\]+\.mes)"', data, re.I)
             if m:
                 return m.group(1).decode("cp932").upper()
+    # (no INI names one: the launcher may pass it on the engine's command line,
+    # "Adv98VX\Adv98V.Ovl Mai_Mes\Ivt_samp.mes")
+    try:
+        shell = vol.read(_join(game_dir, "ADVSHELL.COM"))
+    except FileNotFoundError:
+        shell = b""
+    m = re.search(rb"\.ovl +(?:[a-z]:)?\\?(?:\w*mes\w*\\)?([^\\\s\x00$]+\.mes)", shell, re.I)
+    if m:
+        return m.group(1).decode("cp932").upper()
     return "START.MES"
 
 

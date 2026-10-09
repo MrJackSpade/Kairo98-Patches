@@ -259,6 +259,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale | Lam-Mal | [This repo: games/lam_mal (patcher working, machine translation in progress)](../games/lam_mal/notes.md) |
 | Fairytale | Lipstick Adventure 3 | [This repo: games/lipstick_adventure_3 (patcher working, machine translation in progress)](../games/lipstick_adventure_3/notes.md) |
+| Fairytale | Mai | [This repo: games/mai (patcher working, machine translation in progress)](../games/mai/notes.md) |
 | Fairytale | Marine Philt | [This repo: games/marine_philt (patcher working, machine translation in progress)](../games/marine_philt/notes.md) |
 | Fairytale | Shinjuku Monogatari | [This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)](../games/shinjuku_monogatari/notes.md) |
 | Fairytale | Virtuacall | [This repo: games/virtuacall (patcher working, machine translation in progress)](../games/virtuacall/notes.md) |
@@ -2317,7 +2318,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Lipstick Adventure [FD extras]
 - ♥ Lipstick Adventure 2 [FD]
 - ♥ Lipstick Adventure 3 [FD HD extras] `adv98v` — *MTL (this repo)*
-- ♥ Mai [FD HD] `adv98v`
+- ♥ Mai [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Marine Philt [FD HD] `adv98v` — **EN**
 - ♥ Moon Gate [FD HD extras]
 - ♥ Romance wa Tsurugi no Kagayaki - The Last Crusader [FD HD]
