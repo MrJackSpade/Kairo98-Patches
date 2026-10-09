@@ -2391,5 +2391,19 @@
    "The other pages, the shop, exit",
    "not yet seen"
   ]
+ ],
+ "ides_club_002": [
+  [
+   "Opening notice, title and the magazine menu",
+   "OK: filler wrapped on the notice page, the menu's heading and items at their places"
+  ],
+  [
+   "The magazine's explanation pages",
+   "OK: filler wrapped in the page frame, the key-prompt line at the foot, returning to the menu"
+  ],
+  [
+   "The other pages, exit",
+   "not yet seen"
+  ]
  ]
 }
