@@ -351,7 +351,9 @@ def end_proc(data, toks, effects=None):
     With effects (resolve_effects), only a procedure that clears the
     text and prints nothing counts (a game may call one that prints an
     ellipsis first, or a scene effect that resets the box and prints the
-    next speaker's tag, which a page break must not repeat)."""
+    next speaker's tag, which a page break must not repeat; nor one that
+    loads a file (C8): a scene effect that clears the box to show a
+    picture, Doki Doki Shutter Chance's)."""
     seen = collections.Counter()
     for _i, j, kind, _f in units(data, toks):
         if kind != "msg":
@@ -361,7 +363,7 @@ def end_proc(data, toks, effects=None):
             if k == "cmd" and data[s] == 0xBA and toks[x + 1][0] == "num":
                 call = bytes(data[s:toks[x + 1][2]])
                 eff = effects.get(_call_num(call), ("none",)) if effects is not None else None
-                if eff is not None and (eff[0] != "reset" or eff[1]):
+                if eff is not None and (eff[0] != "reset" or eff[1] or eff[3]):
                     continue
                 seen[call] += 1
                 break
@@ -1031,6 +1033,22 @@ def _image(cfg, src):
     return DiskImage(src), cfg
 
 
+def _parts(cfg):
+    """[(ref prefix, cfg)]: the game, then each data collection that is a
+    game of its own (game.json "parts": folders of the install directory,
+    each with its own engine and start script; their scripts' refs are
+    FOLDER/FILE:...)."""
+    return [("", cfg)] + [(p + "/", dict(cfg, game_dir=_join(cfg["game_dir"], p))) for p in cfg.get("parts", [])]
+
+
+def _part_refs(by_ref, part, cfg):
+    """The refs of one _parts entry, without its prefix."""
+    others = tuple(p + "/" for p in cfg.get("parts", []))
+    if part:
+        return {r[len(part):]: v for r, v in by_ref.items() if r.startswith(part)}
+    return {r: v for r, v in by_ref.items() if not r.startswith(others)} if others else dict(by_ref)
+
+
 def strip_drives(data, extraop, prefixes):
     """A script with the drive prefixes of its file names ("a:", "b:":
     floppy drives) mapped as installed (game.json "drive_prefix"),
@@ -1056,64 +1074,65 @@ def strip_drives(data, extraop, prefixes):
 # ---- extraction ------------------------------------------------------------------------------
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    img, cfg = _image(cfg, src)
+    img, game = _image(cfg, src)
     vol = img.volumes[0]
     merged, order, caps = {}, [], {}
-    tight = tight_files(vol, cfg["game_dir"], cfg.get("extraop", False))
-    for name, path in _files(vol, cfg["game_dir"]):
-        data = vol.read(path)
-        for tag, d, toks in _streams(data, cfg.get("extraop", False)):
-            again = redraws(d, toks)
-            for n, (i, j, kind, frame) in enumerate(units(d, toks)):
-                jp = unit_text(d, toks, i, j)
-                if not jp.strip():
-                    continue
-                cells = unit_cells(d, toks, i, j)
-                if n in again:
-                    # a menu item drawn again: the item's own string
-                    jp = again[n][0]
-                    cells = -(-sum(2 if ord(c) > 0x7F else 1 for c in _UTOK.sub("　", jp)) // 2)
-                key = (kind, jp)
-                if kind == "item" and name.upper() in tight:
-                    # a menu item in a file that may not grow keeps its bytes
-                    cap = item_budget(toks[j - 1][2] - toks[i][1]) // 2
-                    caps[key] = min(caps.get(key, cap), cap)
-                ref = "%s:%s%d" % (name, tag, n)
-                if key in merged:
-                    merged[key]["refs"].append(ref)
-                    merged[key]["max_cells"] = max(merged[key]["max_cells"], cells)
-                    continue
-                merged[key] = {"kind": kind, "jp": jp, "en": "", "refs": [ref], "max_cells": cells}
+    for part, cfg in _parts(game):
+        tight = tight_files(vol, cfg["game_dir"], cfg.get("extraop", False))
+        for name, path in _files(vol, cfg["game_dir"]):
+            data = vol.read(path)
+            for tag, d, toks in _streams(data, cfg.get("extraop", False)):
+                again = redraws(d, toks)
+                for n, (i, j, kind, frame) in enumerate(units(d, toks)):
+                    jp = unit_text(d, toks, i, j)
+                    if not jp.strip():
+                        continue
+                    cells = unit_cells(d, toks, i, j)
+                    if n in again:
+                        # a menu item drawn again: the item's own string
+                        jp = again[n][0]
+                        cells = -(-sum(2 if ord(c) > 0x7F else 1 for c in _UTOK.sub("　", jp)) // 2)
+                    key = (kind, jp)
+                    if kind == "item" and name.upper() in tight:
+                        # a menu item in a file that may not grow keeps its bytes
+                        cap = item_budget(toks[j - 1][2] - toks[i][1]) // 2
+                        caps[key] = min(caps.get(key, cap), cap)
+                    ref = "%s%s:%s%d" % (part, name, tag, n)
+                    if key in merged:
+                        merged[key]["refs"].append(ref)
+                        merged[key]["max_cells"] = max(merged[key]["max_cells"], cells)
+                        continue
+                    merged[key] = {"kind": kind, "jp": jp, "en": "", "refs": [ref], "max_cells": cells}
+                    order.append(key)
+        extra = [("var", name, "v%d" % n, s, e, text, room // 2)
+                 for name, found in var_strings(vol, cfg["game_dir"], cfg.get("extraop", False),
+                                                cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))).items()
+                 for n, (s, e, text, room, _pad) in enumerate(found)]
+        for name in cfg.get("text_files", []):
+            lines = text_file_lines(vol.read(_join(cfg["game_dir"], name)))
+            extra += [("file", name, "%d" % n, 0, 0, text, raw_len // 2) for n, (text, raw_len) in enumerate(lines)]
+        for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
+            extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
+                      for s, e, text in program_strings(vol.read(path))]
+        for name in cfg.get("data_files", []):
+            data = vol.read(_join(cfg["game_dir"], name))
+            grow = name_room(vol, cfg["game_dir"], data)
+            extra += [("engine", name, "%04x" % s, s, e, text, max(e - s, grow) // 2)
+                      for s, e, text in data_strings(data)]
+        for name in cfg.get("table_files", []):
+            found = table_strings(vol.read(_join(cfg["game_dir"], name)))
+            # (the window's width: its widest Japanese line; the strings share the file's bytes)
+            wide = max(_width(line) for _n, text in found for line in text.split("\n")) // 2
+            extra += [("file", name, "%d" % n, 0, 0, text, wide) for n, text in found]
+        for kind, name, at, _s, _e, jp, cells in extra:
+            key = (kind, jp)
+            if key not in merged:
+                merged[key] = {"kind": kind, "jp": jp, "en": "", "refs": [], "max_cells": cells}
                 order.append(key)
-    extra = [("var", name, "v%d" % n, s, e, text, room // 2)
-             for name, found in var_strings(vol, cfg["game_dir"], cfg.get("extraop", False),
-                                            cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))).items()
-             for n, (s, e, text, room, _pad) in enumerate(found)]
-    for name in cfg.get("text_files", []):
-        lines = text_file_lines(vol.read(_join(cfg["game_dir"], name)))
-        extra += [("file", name, "%d" % n, 0, 0, text, raw_len // 2) for n, (text, raw_len) in enumerate(lines)]
-    for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
-        extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
-                  for s, e, text in program_strings(vol.read(path))]
-    for name in cfg.get("data_files", []):
-        data = vol.read(_join(cfg["game_dir"], name))
-        grow = name_room(vol, cfg["game_dir"], data)
-        extra += [("engine", name, "%04x" % s, s, e, text, max(e - s, grow) // 2)
-                  for s, e, text in data_strings(data)]
-    for name in cfg.get("table_files", []):
-        found = table_strings(vol.read(_join(cfg["game_dir"], name)))
-        # (the window's width: its widest Japanese line; the strings share the file's bytes)
-        wide = max(_width(line) for _n, text in found for line in text.split("\n")) // 2
-        extra += [("file", name, "%d" % n, 0, 0, text, wide) for n, text in found]
-    for kind, name, at, _s, _e, jp, cells in extra:
-        key = (kind, jp)
-        if key not in merged:
-            merged[key] = {"kind": kind, "jp": jp, "en": "", "refs": [], "max_cells": cells}
-            order.append(key)
-        merged[key]["refs"].append("%s:%s" % (name, at))
-        merged[key]["max_cells"] = min(merged[key]["max_cells"], cells)
-    for key, cap in caps.items():
-        merged[key]["max_cells"] = min(merged[key]["max_cells"], cap)
+            merged[key]["refs"].append("%s%s:%s" % (part, name, at))
+            merged[key]["max_cells"] = min(merged[key]["max_cells"], cells)
+        for key, cap in caps.items():
+            merged[key]["max_cells"] = min(merged[key]["max_cells"], cap)
     prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e", "file": "t"}
     counters, strings = {}, []
     for key in order:
@@ -1604,7 +1623,7 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None
                 width += max(2 * unit_cells(data, toks, i, j), wide)
                 if not any(at < toks[i][1] for at in placed):
                     free += max(2 * unit_cells(data, toks, i, j), wide)
-        out[pn] = {"width": width, "free": free, "breaks": cmds.count(0xA5),
+        out[pn] = {"width": width, "free": free, "breaks": cmds.count(0xA5), "loads": 0xC8 in cmds,
                    "reset": bool(set(cmds) & {0xA6, 0xAA, 0xAB}) or (proc is not None and proc in calls),
                    "calls": [_call_num(c) for c in calls]}
     return out
@@ -1638,7 +1657,9 @@ def resolve_effects(layers):
     ends its line (a speaker's name tag); ("insert", columns) prints text
     on the line; ("reset", columns) sets the frame or clears the text
     (columns: what it prints as well on the text cursor, a name tag after
-    a flash; a wait marker placed with A7 does not count); ("break",
+    a flash; a wait marker placed with A7 does not count), then its line
+    breaks and whether it loads a file (a scene effect, not a message
+    end); ("break",
     n) only breaks the line n times; ("none",) leaves the cursor alone
     (pictures, sounds, flags)."""
     facts = {}
@@ -1648,20 +1669,21 @@ def resolve_effects(layers):
     def total(pn, seen):
         f = facts.get(pn)
         if f is None or pn in seen:
-            return 0, 0, False, 0
+            return 0, 0, False, 0, False
         width, breaks, reset, free = f["width"], f["breaks"], f["reset"], f.get("free", f["width"])
+        loads = f.get("loads", False)
         for c in f["calls"]:
-            w, b, r, fr = total(c, seen | {pn})
-            width, breaks, reset, free = width + w, breaks + b, reset or r, free + fr
-        return width, breaks, reset, free
+            w, b, r, fr, sc = total(c, seen | {pn})
+            width, breaks, reset, free, loads = width + w, breaks + b, reset or r, free + fr, loads or sc
+        return width, breaks, reset, free, loads
 
     eff = {}
     for pn in facts:
-        width, breaks, reset, free = total(pn, frozenset())
+        width, breaks, reset, free, loads = total(pn, frozenset())
         if reset:
             # (free: what it prints on the text cursor, not a marker
             # placed at a fixed spot with A7)
-            eff[pn] = ("reset", free, breaks)
+            eff[pn] = ("reset", free, breaks, loads)
         elif width:
             eff[pn] = ("tag", width) if breaks else ("insert", width)
         elif breaks:
@@ -1846,235 +1868,238 @@ def run_patch(here, src, dst, mode="en"):
         for r in e["refs"]:
             by_ref[r] = text
             ids[r] = e["id"]
-    extraop = cfg.get("extraop", False)
-    ENGINE["advh"] = cfg.get("engine") == "advh"
-    ENGINE["line_h"] = cfg.get("line_h", LINE_H)
-    ENGINE["keep_flag"] = bytes.fromhex(cfg["keep_flag"]) if "keep_flag" in cfg else None
-    ENGINE["proc_fullwidth"] = cfg.get("proc_fullwidth", False)
-    if ENGINE["advh"]:
-        exe_path = _join(cfg["game_dir"], "ADVH.EXE")
-        vol.write(exe_path, advh.patch(vol.read(exe_path), cfg.get("advh_fixes", ())))
-    for fix in cfg.get("program_fixes", []):
-        # (byte-signature fixes in the engine's programs, the same length)
-        path = _join(cfg["game_dir"], fix["file"])
-        exe = vol.read(path)
-        find, repl = bytes.fromhex(fix["find"]), bytes.fromhex(fix["replace"])
-        if exe.count(find) != 1 or len(find) != len(repl):
-            raise SystemExit("%s: the signature for '%s' is not found once" % (fix["file"], fix["why"]))
-        vol.write(path, exe.replace(find, repl))
-    for _name, path in _files(vol, cfg["game_dir"]):
-        data = vol.read(path)
-        moved = strip_drives(data, extraop, cfg.get("drive_prefix"))
-        if moved != data:
-            vol.write(path, moved)
-    # the scripts run before the scenes, in order (the startup script and
-    # what it chains to): their procedures are in force in every scene
-    # that does not define its own
-    base = [_full_name(vol, cfg["game_dir"], n)
-            for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
-    name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
-    var_cols = variable_widths(vol, cfg["game_dir"], extraop, name_cols)
-    var_cols.update({int(n): cols for n, cols in cfg.get("var_cols", {}).items()})
-    ENGINE["var_cols"], ENGINE["name_cols"] = var_cols, name_cols
-    fit = mode == "pseudo"
-    default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
-    # (a procedure's text frame where its body picks one by a flag the reading cannot follow)
-    proc_frame_fix = {int(pn): tuple(f) for pn, f in cfg.get("proc_frames", {}).items()}
-    # procedures defined only in other files: each number's widest
-    # definition anywhere, under the base scripts'
-    anywhere, frames_anywhere = {}, {}
-    for oname, opath in _files(vol, cfg["game_dir"]):
-        odata = vol.read(opath)
-        otoks = av.tokenize(odata, extraop)
-        for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols, var_cols).items():
-            if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
-                anywhere[pn] = f
-        frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items()
-                                if f and f[0] != "call"})
-    start_eff, base_nums = dict(anywhere), set()
-    for bname in base:
-        bdata = vol.read(mes_path(vol, cfg["game_dir"], bname))
-        btoks = av.tokenize(bdata, extraop)
-        base_nums |= set(procs(bdata, btoks))
-        frames_anywhere.update(proc_frames(bdata, btoks))
-        plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols, var_cols)])
-        start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols, var_cols))
-    table = (cfg["proc_slot"], cfg["proc_slots"], base_nums) if "proc_slot" in cfg else None
-    # a file that ends its messages neither with a procedure nor written
-    # out pages with a wait and the game's usual text reset (AA n), which
-    # needs no procedure (a file run at startup may not have them yet)
-    resets = collections.Counter()
-    for _oname, opath in _files(vol, cfg["game_dir"]):
-        odata = vol.read(opath)
-        otoks = av.tokenize(odata, extraop)
-        for x, (k, s2, _e) in enumerate(otoks[:-1]):
-            if k == "cmd" and odata[s2] == 0xAA and otoks[x + 1][0] == "num":
-                resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
-    wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else default_wait(vol, cfg["game_dir"], extraop)
-    game_break = KEY + resets.most_common(1)[0][0] if resets else None
-    forced = bytes.fromhex(cfg["page_break"]) if "page_break" in cfg else None
-    ins = cfg.get("name_insert")
-    insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
-    variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
-    rooms = mec_rooms(vol, cfg["game_dir"], extraop)
-    tight = tight_files(vol, cfg["game_dir"], extraop)
-    # each message-end call's usual message end across the game's files,
-    # for a file that only pages with it (a question before a menu)
-    gaps = collections.defaultdict(collections.Counter)
-    for oname, opath in _files(vol, cfg["game_dir"]):
-        odata = vol.read(opath)
-        otoks = av.tokenize(odata, extraop)
-        oeff = resolve_effects([start_eff, proc_effects(odata, otoks, oname, "", {}, None, name_cols, var_cols)])
-        oproc = end_proc(odata, otoks, oeff)
-        if oproc:
-            ogap = end_gap(odata, otoks, units(odata, otoks), oproc, oeff)
-            if ogap:
-                gaps[oproc][ogap] += 1
-    game_gap = {c: g.most_common(1)[0][0] for c, g in gaps.items()}
-    for name in cfg.get("text_files", []):
-        path = _join(cfg["game_dir"], name)
-        old_file = vol.read(path)
-        new_file = patch_text_file(old_file, [by_ref.get("%s:%d" % (name, n))
-                                              for n in range(len(text_file_lines(old_file)))],
-                                   [ids.get("%s:%d" % (name, n), "%s:%d" % (name, n))
-                                    for n in range(len(text_file_lines(old_file)))], warn,
-                                   cfg.get("text_fullwidth", False))
-        if new_file != old_file:
-            vol.write(path, new_file)
-    for name in cfg.get("table_files", []):
-        path = _join(cfg["game_dir"], name)
-        old_file = vol.read(path)
-        found = table_strings(old_file)
-        texts = {n: by_ref["%s:%d" % (name, n)] for n, _t in found if "%s:%d" % (name, n) in by_ref}
-        new_file = patch_table(old_file, texts, {n: ids.get("%s:%d" % (name, n)) for n, _t in found}, warn,
-                               cfg.get("table_fullwidth", False))
-        if new_file != old_file:
-            vol.write(path, new_file)
-    # (program_fullwidth applies to the program_files modules, data_fullwidth to the data files)
-    written = [(name, path, program_strings, cfg.get("program_fullwidth") and name in cfg.get("program_files", ()))
-               for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ()))]
-    written += [(name, _join(cfg["game_dir"], name), data_strings, cfg.get("data_fullwidth", False))
-                for name in cfg.get("data_files", [])]
-    for name, path, finder, wide in written:
-        exe = vol.read(path)
-        runs = finder(exe)
-        name_file = name_table(exe) if finder is data_strings else None
-        values = {}
-        for s, e, _t in runs:
-            ref = "%s:%04x" % (name, s)
-            if ref in by_ref:
-                flat = " ".join(by_ref[ref].split("\n"))
-                if name_file is not None:
-                    # (a name ends at its FF FF: no padding, the table closes up and ends in NULs)
-                    enc = _fullwidth(flat, None) if wide else _plain(flat)
-                    room = max(e - s, name_room(vol, cfg["game_dir"], exe))
-                    if len(enc) > room:
-                        warn.append("%s: %d bytes, the name has room for %d" % (ids[ref], len(enc), room))
-                        enc = enc[:room // 2 * 2] if wide else enc[:room]
-                    values[s] = enc
-                elif finder is data_strings:
-                    values[s] = _data_field(exe, s, e, flat, wide, warn, ids[ref])
-                elif wide:
-                    # (cut and padded to whole characters here: the module reads two bytes a letter)
-                    whole = _fullwidth(flat, None)
-                    values[s] = _fullwidth(flat, (e - s) // 2)
-                    if len(whole) > e - s:
-                        warn.append("%s: %d bytes, the program has room for %d" % (ids[ref], len(whole), e - s))
-                else:
-                    values[s] = _plain(flat)
-        if name_file is not None:
-            new = _name_table_file(exe, name_file, values)
+    game, all_ref, all_ids = cfg, by_ref, ids
+    for part, cfg in _parts(game):
+        by_ref, ids = _part_refs(all_ref, part, game), _part_refs(all_ids, part, game)
+        extraop = cfg.get("extraop", False)
+        ENGINE["advh"] = cfg.get("engine") == "advh"
+        ENGINE["line_h"] = cfg.get("line_h", LINE_H)
+        ENGINE["keep_flag"] = bytes.fromhex(cfg["keep_flag"]) if "keep_flag" in cfg else None
+        ENGINE["proc_fullwidth"] = cfg.get("proc_fullwidth", False)
+        if ENGINE["advh"]:
+            exe_path = _join(cfg["game_dir"], "ADVH.EXE")
+            vol.write(exe_path, advh.patch(vol.read(exe_path), cfg.get("advh_fixes", ())))
+        for fix in cfg.get("program_fixes", []):
+            # (byte-signature fixes in the engine's programs, the same length)
+            path = _join(cfg["game_dir"], fix["file"])
+            exe = vol.read(path)
+            find, repl = bytes.fromhex(fix["find"]), bytes.fromhex(fix["replace"])
+            if exe.count(find) != 1 or len(find) != len(repl):
+                raise SystemExit("%s: the signature for '%s' is not found once" % (fix["file"], fix["why"]))
+            vol.write(path, exe.replace(find, repl))
+        for _name, path in _files(vol, cfg["game_dir"]):
+            data = vol.read(path)
+            moved = strip_drives(data, extraop, cfg.get("drive_prefix"))
+            if moved != data:
+                vol.write(path, moved)
+        # the scripts run before the scenes, in order (the startup script and
+        # what it chains to): their procedures are in force in every scene
+        # that does not define its own
+        base = [_full_name(vol, cfg["game_dir"], n)
+                for n in cfg.get("base_scripts", [start_script(vol, cfg["game_dir"], extraop)])]
+        name_cols = cfg.get("name_cols", cfg.get("name_insert", {}).get("cols", 0))
+        var_cols = variable_widths(vol, cfg["game_dir"], extraop, name_cols)
+        var_cols.update({int(n): cols for n, cols in cfg.get("var_cols", {}).items()})
+        ENGINE["var_cols"], ENGINE["name_cols"] = var_cols, name_cols
+        fit = mode == "pseudo"
+        default_frame = tuple(cfg["default_frame"]) if cfg.get("default_frame") else None
+        # (a procedure's text frame where its body picks one by a flag the reading cannot follow)
+        proc_frame_fix = {int(pn): tuple(f) for pn, f in cfg.get("proc_frames", {}).items()}
+        # procedures defined only in other files: each number's widest
+        # definition anywhere, under the base scripts'
+        anywhere, frames_anywhere = {}, {}
+        for oname, opath in _files(vol, cfg["game_dir"]):
+            odata = vol.read(opath)
+            otoks = av.tokenize(odata, extraop)
+            for pn, f in proc_effects(odata, otoks, oname, "", by_ref, None, name_cols, var_cols).items():
+                if pn not in anywhere or f["width"] > anywhere[pn]["width"]:
+                    anywhere[pn] = f
+            frames_anywhere.update({pn: f for pn, f in proc_frames(odata, otoks).items()
+                                    if f and f[0] != "call"})
+        start_eff, base_nums = dict(anywhere), set()
+        for bname in base:
+            bdata = vol.read(mes_path(vol, cfg["game_dir"], bname))
+            btoks = av.tokenize(bdata, extraop)
+            base_nums |= set(procs(bdata, btoks))
+            frames_anywhere.update(proc_frames(bdata, btoks))
+            plain = resolve_effects([start_eff, proc_effects(bdata, btoks, bname, "", by_ref, None, name_cols, var_cols)])
+            start_eff.update(proc_effects(bdata, btoks, bname, "", by_ref, end_proc(bdata, btoks, plain), name_cols, var_cols))
+        table = (cfg["proc_slot"], cfg["proc_slots"], base_nums) if "proc_slot" in cfg else None
+        # a file that ends its messages neither with a procedure nor written
+        # out pages with a wait and the game's usual text reset (AA n), which
+        # needs no procedure (a file run at startup may not have them yet)
+        resets = collections.Counter()
+        for _oname, opath in _files(vol, cfg["game_dir"]):
+            odata = vol.read(opath)
+            otoks = av.tokenize(odata, extraop)
+            for x, (k, s2, _e) in enumerate(otoks[:-1]):
+                if k == "cmd" and odata[s2] == 0xAA and otoks[x + 1][0] == "num":
+                    resets[bytes(odata[s2:otoks[x + 1][2]])] += 1
+        wait = bytes.fromhex(cfg["wait"]) if "wait" in cfg else default_wait(vol, cfg["game_dir"], extraop)
+        game_break = KEY + resets.most_common(1)[0][0] if resets else None
+        forced = bytes.fromhex(cfg["page_break"]) if "page_break" in cfg else None
+        ins = cfg.get("name_insert")
+        insert = (bytes.fromhex(ins["call"]), bytes.fromhex(ins["flag"]), ins["cols"]) if ins else None
+        variables = var_strings(vol, cfg["game_dir"], extraop, name_cols)
+        rooms = mec_rooms(vol, cfg["game_dir"], extraop)
+        tight = tight_files(vol, cfg["game_dir"], extraop)
+        # each message-end call's usual message end across the game's files,
+        # for a file that only pages with it (a question before a menu)
+        gaps = collections.defaultdict(collections.Counter)
+        for oname, opath in _files(vol, cfg["game_dir"]):
+            odata = vol.read(opath)
+            otoks = av.tokenize(odata, extraop)
+            oeff = resolve_effects([start_eff, proc_effects(odata, otoks, oname, "", {}, None, name_cols, var_cols)])
+            oproc = end_proc(odata, otoks, oeff)
+            if oproc:
+                ogap = end_gap(odata, otoks, units(odata, otoks), oproc, oeff)
+                if ogap:
+                    gaps[oproc][ogap] += 1
+        game_gap = {c: g.most_common(1)[0][0] for c, g in gaps.items()}
+        for name in cfg.get("text_files", []):
+            path = _join(cfg["game_dir"], name)
+            old_file = vol.read(path)
+            new_file = patch_text_file(old_file, [by_ref.get("%s:%d" % (name, n))
+                                                  for n in range(len(text_file_lines(old_file)))],
+                                       [ids.get("%s:%d" % (name, n), "%s:%d" % (name, n))
+                                        for n in range(len(text_file_lines(old_file)))], warn,
+                                       cfg.get("text_fullwidth", False))
+            if new_file != old_file:
+                vol.write(path, new_file)
+        for name in cfg.get("table_files", []):
+            path = _join(cfg["game_dir"], name)
+            old_file = vol.read(path)
+            found = table_strings(old_file)
+            texts = {n: by_ref["%s:%d" % (name, n)] for n, _t in found if "%s:%d" % (name, n) in by_ref}
+            new_file = patch_table(old_file, texts, {n: ids.get("%s:%d" % (name, n)) for n, _t in found}, warn,
+                                   cfg.get("table_fullwidth", False))
+            if new_file != old_file:
+                vol.write(path, new_file)
+        # (program_fullwidth applies to the program_files modules, data_fullwidth to the data files)
+        written = [(name, path, program_strings, cfg.get("program_fullwidth") and name in cfg.get("program_files", ()))
+                   for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ()))]
+        written += [(name, _join(cfg["game_dir"], name), data_strings, cfg.get("data_fullwidth", False))
+                    for name in cfg.get("data_files", [])]
+        for name, path, finder, wide in written:
+            exe = vol.read(path)
+            runs = finder(exe)
+            name_file = name_table(exe) if finder is data_strings else None
+            values = {}
+            for s, e, _t in runs:
+                ref = "%s:%04x" % (name, s)
+                if ref in by_ref:
+                    flat = " ".join(by_ref[ref].split("\n"))
+                    if name_file is not None:
+                        # (a name ends at its FF FF: no padding, the table closes up and ends in NULs)
+                        enc = _fullwidth(flat, None) if wide else _plain(flat)
+                        room = max(e - s, name_room(vol, cfg["game_dir"], exe))
+                        if len(enc) > room:
+                            warn.append("%s: %d bytes, the name has room for %d" % (ids[ref], len(enc), room))
+                            enc = enc[:room // 2 * 2] if wide else enc[:room]
+                        values[s] = enc
+                    elif finder is data_strings:
+                        values[s] = _data_field(exe, s, e, flat, wide, warn, ids[ref])
+                    elif wide:
+                        # (cut and padded to whole characters here: the module reads two bytes a letter)
+                        whole = _fullwidth(flat, None)
+                        values[s] = _fullwidth(flat, (e - s) // 2)
+                        if len(whole) > e - s:
+                            warn.append("%s: %d bytes, the program has room for %d" % (ids[ref], len(whole), e - s))
+                    else:
+                        values[s] = _plain(flat)
+            if name_file is not None:
+                new = _name_table_file(exe, name_file, values)
+                if new != exe:
+                    vol.write(path, new)
+                continue
+            new, cut = engine_strings.apply(exe, runs, values)
+            for s, need, room in cut:
+                warn.append("%s: %d bytes, the program has room for %d" % (ids["%s:%04x" % (name, s)], need, room))
             if new != exe:
                 vol.write(path, new)
-            continue
-        new, cut = engine_strings.apply(exe, runs, values)
-        for s, need, room in cut:
-            warn.append("%s: %d bytes, the program has room for %d" % (ids["%s:%04x" % (name, s)], need, room))
-        if new != exe:
-            vol.write(path, new)
-    for name, path in _files(vol, cfg["game_dir"]):
-        data = vol.read(path)
-        out, pos = bytearray(), 0
-        for n, (s, e, _t, room, pad) in enumerate(variables.get(name, [])):
-            ref = "%s:v%d" % (name, n)
-            if ref not in by_ref:
-                continue
-            raw = _plain(" ".join(by_ref[ref].split("\n"))).replace(b"'", "’".encode("cp932")).replace(
-                b'"', "”".encode("cp932"))
-            if len(raw) > room:
-                if not fit:
-                    raise SystemExit("%s: %d bytes, the variable holds %d; shorten it" % (ids[ref], len(raw), room))
-                raw = raw[:room]
-            out += data[pos:s] + (raw.ljust(e - s) if pad else raw)
-            pos = e
-        data = bytes(out + data[pos:])
-        def rebuild(texts):
-            streams = _streams(data, extraop)
-            plain = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, None,
-                                                             name_cols, var_cols)])
-            proc = end_proc(data, streams[0][2], plain)
-            nums = table[:2] + (set(),) if table and name.upper() in base else table
-            effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
-                                                                    name_cols, var_cols)])
-            frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2]), **proc_frame_fix})
-            staged = staged_effects(data, streams[0][2], lambda defs: proc_effects(
-                data, streams[0][2], name, "", texts, proc, name_cols, var_cols, defs), start_eff)
-            new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
-                               frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
-                               cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap, staged)
-            if len(streams) > 1:
-                # the tails: re-encrypt each rebuilt tail in place of the old one
-                toks = av.tokenize(new, extraop)
-                crypts = [t for t in toks if t[0] == "crypt"]
-                out, pos = bytearray(), 0
-                for (tag, inner, itoks), (_k, s, e) in zip(streams[1:], crypts):
-                    key = _num(new, [t for t in toks if t[2] == s][0][1])
-                    effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
-                                                                            name_cols, var_cols)])
-                    iproc = end_proc(inner, itoks, effects) or proc
-                    istaged = staged_effects(inner, itoks, lambda defs: proc_effects(
-                        inner, itoks, name, tag, texts, iproc, name_cols, var_cols, defs), start_eff)
-                    rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
-                                           iproc, warn, nums, insert, fit, effects,
-                                           resolve_frames({**frames, **proc_frames(inner, itoks), **proc_frame_fix}),
-                                           game_break,
-                                           cfg.get("menu_fullwidth", False), default_frame, wait,
-                                           cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap,
-                                           istaged)
-                    out += new[pos:s] + av.encrypt(rebuilt, key)
-                    pos = e
-                new = bytes(out + new[pos:])
-            return new
+        for name, path in _files(vol, cfg["game_dir"]):
+            data = vol.read(path)
+            out, pos = bytearray(), 0
+            for n, (s, e, _t, room, pad) in enumerate(variables.get(name, [])):
+                ref = "%s:v%d" % (name, n)
+                if ref not in by_ref:
+                    continue
+                raw = _plain(" ".join(by_ref[ref].split("\n"))).replace(b"'", "’".encode("cp932")).replace(
+                    b'"', "”".encode("cp932"))
+                if len(raw) > room:
+                    if not fit:
+                        raise SystemExit("%s: %d bytes, the variable holds %d; shorten it" % (ids[ref], len(raw), room))
+                    raw = raw[:room]
+                out += data[pos:s] + (raw.ljust(e - s) if pad else raw)
+                pos = e
+            data = bytes(out + data[pos:])
+            def rebuild(texts):
+                streams = _streams(data, extraop)
+                plain = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, None,
+                                                                 name_cols, var_cols)])
+                proc = end_proc(data, streams[0][2], plain)
+                nums = table[:2] + (set(),) if table and name.upper() in base else table
+                effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
+                                                                        name_cols, var_cols)])
+                frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2]), **proc_frame_fix})
+                staged = staged_effects(data, streams[0][2], lambda defs: proc_effects(
+                    data, streams[0][2], name, "", texts, proc, name_cols, var_cols, defs), start_eff)
+                new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
+                                   frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
+                                   cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap, staged)
+                if len(streams) > 1:
+                    # the tails: re-encrypt each rebuilt tail in place of the old one
+                    toks = av.tokenize(new, extraop)
+                    crypts = [t for t in toks if t[0] == "crypt"]
+                    out, pos = bytearray(), 0
+                    for (tag, inner, itoks), (_k, s, e) in zip(streams[1:], crypts):
+                        key = _num(new, [t for t in toks if t[2] == s][0][1])
+                        effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
+                                                                                name_cols, var_cols)])
+                        iproc = end_proc(inner, itoks, effects) or proc
+                        istaged = staged_effects(inner, itoks, lambda defs: proc_effects(
+                            inner, itoks, name, tag, texts, iproc, name_cols, var_cols, defs), start_eff)
+                        rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
+                                               iproc, warn, nums, insert, fit, effects,
+                                               resolve_frames({**frames, **proc_frames(inner, itoks), **proc_frame_fix}),
+                                               game_break,
+                                               cfg.get("menu_fullwidth", False), default_frame, wait,
+                                               cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap,
+                                               istaged)
+                        out += new[pos:s] + av.encrypt(rebuilt, key)
+                        pos = e
+                    new = bytes(out + new[pos:])
+                return new
 
-        new = rebuild(by_ref)
-        room = rooms.get(name.upper())
-        where = "its place in the engine's MEC buffer"
-        if not room and cfg.get("script_room"):
-            # a script is run from the engine's script buffer, which ends
-            # where the procedure table starts
-            room, where = cfg["script_room"], "the engine's script buffer"
-        if room and len(new) > room:
-            mine = sorted({ids[r] for r in by_ref if r.startswith(name + ":")})
-            if not fit:
-                raise SystemExit("%s: %d bytes with the English, %s holds %d "
-                                 "(strings %s); shorten them" % (name, len(new), where, room, ", ".join(mine)))
-            # the --pseudo filler: this file's texts cut until it fits
-            for scale in (0.8, 0.6, 0.45, 0.3, 0.2, 0.1, 0):
-                texts = {r: t for r, t in by_ref.items() if not r.startswith(name + ":")}
-                if scale:
-                    texts.update({r: t[:max(1, int(len(t) * scale))] for r, t in by_ref.items()
-                                  if r.startswith(name + ":")})
-                new = rebuild(texts)
-                if len(new) <= room:
-                    break
-        if new != vol.read(path):
-            vol.write(path, new)
-    note = MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii")
-    try:
-        vol.find(cfg["game_dir"] + "/MTL_NOTE.TXT")
-        vol.write(cfg["game_dir"] + "/MTL_NOTE.TXT", note)
-    except FileNotFoundError:
-        vol.create(cfg["game_dir"] + "/MTL_NOTE.TXT", note)
+            new = rebuild(by_ref)
+            room = rooms.get(name.upper())
+            where = "its place in the engine's MEC buffer"
+            if not room and cfg.get("script_room"):
+                # a script is run from the engine's script buffer, which ends
+                # where the procedure table starts
+                room, where = cfg["script_room"], "the engine's script buffer"
+            if room and len(new) > room:
+                mine = sorted({ids[r] for r in by_ref if r.startswith(name + ":")})
+                if not fit:
+                    raise SystemExit("%s: %d bytes with the English, %s holds %d "
+                                     "(strings %s); shorten them" % (name, len(new), where, room, ", ".join(mine)))
+                # the --pseudo filler: this file's texts cut until it fits
+                for scale in (0.8, 0.6, 0.45, 0.3, 0.2, 0.1, 0):
+                    texts = {r: t for r, t in by_ref.items() if not r.startswith(name + ":")}
+                    if scale:
+                        texts.update({r: t[:max(1, int(len(t) * scale))] for r, t in by_ref.items()
+                                      if r.startswith(name + ":")})
+                    new = rebuild(texts)
+                    if len(new) <= room:
+                        break
+            if new != vol.read(path):
+                vol.write(path, new)
+        note = MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii")
+        try:
+            vol.find(cfg["game_dir"] + "/MTL_NOTE.TXT")
+            vol.write(cfg["game_dir"] + "/MTL_NOTE.TXT", note)
+        except FileNotFoundError:
+            vol.create(cfg["game_dir"] + "/MTL_NOTE.TXT", note)
     img.save(dst)
     for w in warn:
         print("warning: " + w)

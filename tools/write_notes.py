@@ -582,7 +582,11 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     strings = doc["strings"]
     done = sum(1 for e in strings if e["en"])
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith((".MES", ".MEC"))})
-    out = ["# %s%s (Cocktail Soft / Fairytale)" % ("♥ " if heart else "", cfg["title"]), "",
+    # (another maker's game on the engine: Elf's on its ADVH)
+    other = {"elf": "Elf"}.get(cfg["key"].split(".zip/")[0])
+    out = ["# %s%s (%s)" % ("♥ " if heart else "", cfg["title"],
+                            "%s, on Cocktail Soft / Fairytale's engine" % other if other
+                            else "Cocktail Soft / Fairytale"), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
            "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
@@ -605,6 +609,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                      if not subs or any("/" not in f and f.upper().endswith(ext) for f in files))
     where = main if not subs else "%s%sin the script folders %s, named `FOLDER/FILE` in the refs" % (
         main, ", and " if main else "", ", ".join("`%s/`" % s for s in subs))
+    if cfg.get("parts"):
+        # (games of their own in folders: each one's scripts, not script folders)
+        where = "each game's `START.MES`: the main game's, and in its folders %s" % ", ".join(
+            "`%s/`" % s for s in cfg["parts"])
     out += ["", "## Engine", "",
             "ides' Adv98V script engine (%s), %s: %d scripts with text (%s) in its bytecode "
             "(`pc98tl/adv98v.py` documents it%s).  Every script tokenizes and "
@@ -621,12 +629,12 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "", display]
     if cfg.get("engine") == "advh":
         out[out.index(display):out.index(display)] = [
-            "This is ADVH, the engine before Adv98V (`ADVH.EXE`, run by `ADVSHELL.COM`): the same "
+            "This is ADVH, the engine before Adv98V (`ADVH.EXE`, in most games run by `ADVSHELL.COM`): the same "
             "bytecode, but no ASCII string command, and every character drawn as a 16x16 glyph.  The "
             "patch adds half-width letters to the program (`pc98tl/advh.py`): each English letter is "
             "written as `85 xx` (xx its ASCII code), which the program draws from the BIOS's 8x16 "
-            "font one column wide and steps the cursor one column on; the program is unpacked, patched "
-            "and packed again with its own EXEPACK unpacker.  Its disk-change command (wait for disk X "
+            "font one column wide and steps the cursor one column on; a packed program is unpacked, patched "
+            "and packed again with its own EXEPACK unpacker.  The disk-change command (wait for disk X "
             "in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which "
             "clears the box: a message longer than the box goes on after a key on a fresh page.", ""]
     if cfg.get("hdd"):
@@ -634,12 +642,20 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "
              if cfg["game_dir"] == "JANKI" else "") +
             "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
-            "hard-disk image (every disk's files in `%s/`, with the scripts' drive letters taken off "
+            "hard-disk image (%s's files in `%s/`, with the scripts' drive letters taken off "
             "their file names, started as the floppy's boot does); the base image is the collection's "
-            "`%s` with its own game removed." % (cfg["hdd"]["dir"], cfg["hdd"]["base"].replace("\\", "/"))
+            "`%s` with its own game removed." % ("the main disk" if cfg["hdd"].get("disk_dirs") else "every disk",
+                                                 cfg["hdd"]["dir"], cfg["hdd"]["base"].replace("\\", "/"))
             + "".join("  %s's copy of %s is left out: another disk holds it differently, and the scripts load "
                       "only that one." % (disk, ", ".join("`%s`" % f for f in files))
-                      for disk, files in cfg["hdd"].get("unused", {}).items()), ""]
+                      for disk, files in cfg["hdd"].get("unused", {}).items())
+            + ("  The data collections are games of their own, each with its engine and start script, "
+               "so each disk goes into its own folder: %s.  The hard disk starts the main game; a "
+               "collection is started from DOS with `cd \\%s\\FOLDER` and `ADVH START.MES`.  Their "
+               "scripts' refs are `FOLDER/START.MES:n`, and a string the games share lists every "
+               "game's refs." % (", ".join("`%s/%s/` (%s)" % (cfg["hdd"]["dir"], sub, disk.rsplit("/", 1)[-1])
+                                         for disk, sub in cfg["hdd"]["disk_dirs"].items()), cfg["hdd"]["dir"])
+               if cfg["hdd"].get("disk_dirs") else ""), ""]
     if "inline" in has:
         out.append("* A message after a speaker's name tag (a procedure that ends its line) starts on the "
                    "frame's second line.")
@@ -679,7 +695,7 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "after it starts right after the name.")
     if cfg.get("page_break") == "8190":
         out.append("* This old build ends each message with a key wait (`81 90`) that clears the box, so "
-                   "pages are split with it; in its one-line box a message pages a line at a time.")
+                   "pages are split with it (in a one-line box, a line at a time).")
     if cfg.get("keep_flag"):
         out.append("* Where the script marks a message end to keep the page (a register set before the "
                    "message-end call), the next message goes on from where the last one ended, on the "

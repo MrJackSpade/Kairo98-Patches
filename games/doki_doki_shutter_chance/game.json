@@ -1,0 +1,50 @@
+{
+ "title": "Doki Doki Shutter Chance",
+ "key": "elf.zip/Doki Doki Shutter Chance",
+ "image": "Doki Doki Shutter Chance\\Doki Doki Shutter Chance [FD]\\Doki Doki Shutter Chance.hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 11,
+ "page_break": "8190",
+ "script_room": 10240,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI"
+  ],
+  "dir": "DOKI",
+  "disks": [
+   "../Doki Doki Shutter Chance (Data Shuu #1 - Joshikou) [FD]/Doki Doki Shutter Chance (Data Shuu #1 - Joshikou) {ADVH START.MES}.hdm",
+   "../Doki Doki Shutter Chance (Data Shuu #2 - Nurse) [FD]/Doki Doki Shutter Chance (Data Shuu #2 - Nurse) {ADVH START.MES}.hdm",
+   "../Doki Doki Shutter Chance (Data Shuu #3 - Bus Guide) [FD]/Doki Doki Shutter Chance (Data Shuu #3 - Bus Guide) {ADVH START.MES}.hdm"
+  ],
+  "disk_dirs": {
+   "Doki Doki Shutter Chance (Data Shuu #1 - Joshikou) {ADVH START.MES}.hdm": "JOSHI",
+   "Doki Doki Shutter Chance (Data Shuu #2 - Nurse) {ADVH START.MES}.hdm": "NURSE",
+   "Doki Doki Shutter Chance (Data Shuu #3 - Bus Guide) {ADVH START.MES}.hdm": "BUS"
+  },
+  "skip": [
+   "ELF1.SYS",
+   "ELF2.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\DOKI",
+   "ADVH START.MES"
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "parts": [
+  "JOSHI",
+  "NURSE",
+  "BUS"
+ ],
+ "boot_steps": "25:shot,3:lclick,4:shot,2:space,4:shot,2:rclick,4:rclick,4:shot,2:enter,3:lclick,3:space,6:shot,2:lclick,6:shot,2:lclick,6:shot,2:lclick,6:shot,2:lclick,6:shot,2:lclick,6:shot"
+}

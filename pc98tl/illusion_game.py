@@ -238,7 +238,10 @@ def _hdd_install(cfg, src):
     installs into the root (an engine that names its files from the
     drive's root).  "unused": {disk: [paths]}: a disk's copies of files
     that another disk holds differently and the game never loads from it
-    (the scripts name the other disk's), not installed.
+    (the scripts name the other disk's), not installed.  "disk_dirs":
+    {disk: folder}: a disk that is a game of its own (a data collection
+    with its own engine and start script) installed into that folder of
+    the install directory instead.
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -250,10 +253,13 @@ def _hdd_install(cfg, src):
     d = h["dir"]
     if d:
         vol.mkdir(d)
-    pre = d + "/" if d else ""
     skip = {n.upper() for n in h.get("skip", [])} | DOS_FILES
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
         left = {q.upper() for q in h.get("unused", {}).get(os.path.basename(disk), [])}
+        sub = h.get("disk_dirs", {}).get(os.path.basename(disk))
+        pre = (d + "/" if d else "") + (sub + "/" if sub else "")
+        if sub:
+            vol.mkdir(pre[:-1])
         if elfdos.is_elfdos(open(disk, "rb").read()):
             # (Elf's own file system: one folder of files)
             for name, data in elfdos.files(disk):

@@ -1484,5 +1484,18 @@
    "url": "https://vndb.org/v7825",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/Doki Doki Shutter Chance": [
+  {
+   "label": "This repo: games/doki_doki_shutter_chance (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_shutter_chance/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v17596",
+   "url": "https://vndb.org/v17596",
+   "source": "VNDB"
+  }
  ]
 }

@@ -1,29 +1,29 @@
 # Engine survey
 
-4086 titles classified from the files inside their disk images (2361 floppies opened directly). Families are ranked by how many titles without an English patch they cover.
+4086 titles classified from the files inside their disk images (2358 floppies opened directly). Families are ranked by how many titles without an English patch they cover.
 
 | Engine | Titles | Have English | Untranslated | Notes |
 |---|---|---|---|---|
-| Not yet identified (`unknown`) | 2919 | 86 | 2833 | files listed, no rule matched; per-publisher engines |
-| No readable file listing (`unlisted`) | 517 | 13 | 504 | copy-protected / non-DOS floppies, CD-only titles |
+| Not yet identified (`unknown`) | 2969 | 77 | 2892 | files listed, no rule matched; per-publisher engines |
+| No readable file listing (`unlisted`) | 447 | 10 | 437 | copy-protected / non-DOS floppies, CD-only titles |
 | RPG Tsukuru Dante98 (`dante98`) | 133 | 2 | 131 | RPG.EXE + PLAYER/ENEMY/ITEM.DAT (contest RPGs) |
-| Cocktail Soft / Fairytale ADV engine (`adv98v`) | 92 | 5 | 87 | *.MES + *.TCM/*.GPC/*.USO, ADV98V.OVL; cracked by existing patches (Dead of the Brain, Dengeki Nurse, X-Girl) |
+| Cocktail Soft / Fairytale ADV engine (`adv98v`) | 101 | 15 | 86 | *.MES + *.TCM/*.GPC/*.USO, ADV98V.OVL or ADVH.EXE; cracked by existing patches (Dead of the Brain, Dengeki Nurse, X-Girl) |
 | NA.COM engine (Great / KSS) (`great-na`) | 56 | 0 | 56 | NA.COM + *.O + TONES.DTA |
 | N88-BASIC programs (`n88basic`) | 47 | 0 | 47 | N88BASIC.EXE / .LIB runtime |
 | Bio_100% (doujin) (`bio100`) | 42 | 0 | 42 | *.EFS/*.SCR/*.FNT |
 | Compile Disc Station shell (`compile-ds`) | 32 | 1 | 31 | S_TXT.COM, DSH.COM |
 | TMEXEC engine (Illusion / Heart Soft / Interheart / Dott Plan) (`tmexec`) | 30 | 1 | 29 | TMEXEC.ASC, SDN.COM, BGMnn.X |
 | Alice Soft System 1-3 (`alice-sys`) | 37 | 9 | 28 | ADISK.DAT scenario; Dalk is done (games/dalk) |
-| ASCII contest RPG kit (`ascii-rpgkit`) | 26 | 0 | 26 | BGM_A..Z.MML + KAn.ANI |
-| D.O. engine (`do`) | 23 | 0 | 23 | DA/DB/DO + ORDER.DEF, *.GF |
+| D.O. engine (`do`) | 28 | 0 | 28 | DA/DB/DO + ORDER.DEF, *.GF |
+| ASCII contest RPG kit (`ascii-rpgkit`) | 27 | 0 | 27 | BGM_A..Z.MML + KAn.ANI |
 | CDOS98 shell (Mediax / Fairy Dust) (`cdos98`) | 20 | 0 | 20 | CDOS98.COM + SHELL.RC, *.SCR |
 | Sogna / Silence SGS (`sogna-sgs`) | 39 | 21 | 18 | SGS.COM, *.SZH |
-| Elf AI5 (`elf-ai5`) | 21 | 6 | 15 | AI5.EXE, *.MES scripts |
 | JAST MEGSHL (`jast`) | 16 | 3 | 13 | MEGSHL.COM, JAST.FNT |
 | Silky's SIL engine (`silkys`) | 12 | 0 | 12 | SIL.EXE / SILKn.DAT |
 | Mink (`mink`) | 11 | 0 | 11 | NAX.COM + *.GPP |
 | Active AGG/ADV (`active`) | 9 | 0 | 9 | *.AGG + *.ADV |
-| Elf (pre-AI5) (`elf-other`) | 4 | 3 | 1 | older Elf engines |
+| Elf AI5 (`elf-ai5`) | 22 | 13 | 9 | AI5.EXE, *.MES scripts |
+| Elf (pre-AI5) (`elf-other`) | 8 | 3 | 5 | older Elf engines |
 
 ## RPG Tsukuru Dante98
 
@@ -163,7 +163,7 @@
 
 ## Cocktail Soft / Fairytale ADV engine
 
-- LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98
+- LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98 — **EN**
 - Cat's Part 1
 - Nova — **EN**
 - Angel (U-Jin Presents)
@@ -172,6 +172,7 @@
 - Can Can Bunny Limited 5 1-2
 - Can Can Bunny Premiere
 - Can Can Bunny Spirits
+- Can Can Bunny Superior
 - Cocktail Soft Zoukangou
 - Cocktail Soft Zoukangou 2
 - Cosmic Psycho
@@ -187,13 +188,15 @@
 - Erotic Baka Novel Series 2 - Itsuka Dokoka de
 - Halfmoon ni Kawaru made
 - Hare Nochi Munasawagi!
+- Hare Nochi Oosawagi!
 - JYB
 - Kerakeraboshi
-- Kurukuru Party - Princess Quest
+- Kurukuru Party - Princess Quest — **EN**
 - Mayumi
 - Miki
 - Noushuku Angel 120% (U-Jin Presents)
-- Pia Carrot e Youkoso!!
+- Pia Carrot e Youkoso!! — **EN**
+- Sekai de Ichiban Kimi ga Suki!
 - Travel Junction
 - True Heart
 - Will no Dengon
@@ -203,32 +206,38 @@
 - Youjuu Kyoushitsu
 - Kekkou Kamen - Oshioki Paradise no Maki
 - Kekkou Kamen 2 - Oshioki Densetsu no Maki
+- Doki Doki Shutter Chance
+- The Old Village Story
 - Arabesque
 - Dead of the Brain — **EN**
 - Dead of the Brain 2 — **EN**
-- Dracula Hakushaku
+- Dracula Hakushaku — **EN**
 - Fairytale Kaizokuban
 - Gokuraku Mandara
+- Kao Floppy Gekijou - Route 246 Satsujin Annai
+- Koroshi no Dress 2
 - Koroshi no Dress 3
-- Kurutta Kajitsu
+- Kurutta Kajitsu — **EN**
 - Lam-Mal
+- Lipstick Adventure 2
 - Lipstick Adventure 3
 - Mai
-- Marine Philt
-- Shinjuku Monogatari
+- Marine Philt — **EN**
+- Shinjuku Monogatari — **EN**
+- Urotsuki Douji
 - Virtuacall
 - Virtuacall 2
-- Watashi o Golf ni Tsuretette
+- Watashi o Golf ni Tsuretette — **EN**
 - XIX!
 - Yumeji - Asakusa Kitan
 - Ballade for Maria (Maria ni Sasageru Ballade)
-- Necronomicon
+- Necronomicon — **EN**
 - Akiko Gold
 - Akiko Premium Version
 - Chiemi
 - Himitsu Shirei 1919
 - Jankirou
-- Jinmon Yuugi
+- Jinmon Yuugi — **EN**
 - Kanako
 - Manami - Ai to Koukan no Hibi
 - Miho
@@ -518,6 +527,37 @@
 - Disc Station 98 #04
 - Ayumi-chan Monogatari Jissha-ban
 
+## D.O. engine
+
+- Arquelphos
+- Collector D
+- Collector D Bangaihen
+- Crystal Rinal
+- Cybernoid Alpha
+- D.O. Doki Doki Disk Vol. 3
+- D.O. Doki Doki Disk Vol. 4
+- D.O. Doki Doki Disk Vol. 5
+- D.O. Doki Doki Disk Vol. 6
+- D.O. Doki Doki Disk Vol. 7
+- D.O. Doki Doki Disk Vol. 8
+- D.O. Doki Doki Disk Vol. 9
+- D.O. Kaizokuban
+- DOR Part 1
+- DOR Part 2
+- DOR Part 3
+- DOR Special Edition '93
+- DOR Special Edition Sakigake
+- Hoshi no Suna Monogatari 2
+- Moonlight Chan Rin Shan
+- Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk
+- Yuu Disk Vol. 5 - Telephone Scandal
+- Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen
+- Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban
+- Yuu Disk Vol. 9 - Arquelphos Gekitou-hen
+- Zatsuon Ryouiki
+- Hamlet
+- Lesser Mern
+
 ## ASCII contest RPG kit
 
 - Bakasuka Wars
@@ -544,34 +584,9 @@
 - Shootin' Spirit
 - Sky Joe
 - Supercat Tamataro
+- Ulamander
 - Ulife Force
 - Virtues Angels
-
-## D.O. engine
-
-- Arquelphos
-- Collector D
-- Collector D Bangaihen
-- Crystal Rinal
-- Cybernoid Alpha
-- D.O. Doki Doki Disk Vol. 8
-- D.O. Doki Doki Disk Vol. 9
-- D.O. Kaizokuban
-- DOR Part 1
-- DOR Part 2
-- DOR Part 3
-- DOR Special Edition '93
-- DOR Special Edition Sakigake
-- Hoshi no Suna Monogatari 2
-- Moonlight Chan Rin Shan
-- Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk
-- Yuu Disk Vol. 5 - Telephone Scandal
-- Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen
-- Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban
-- Yuu Disk Vol. 9 - Arquelphos Gekitou-hen
-- Zatsuon Ryouiki
-- Hamlet
-- Lesser Mern
 
 ## CDOS98 shell (Mediax / Fairy Dust)
 
@@ -638,30 +653,6 @@
 - Viper V8 RS
 - Minimum Guynarock
 
-## Elf AI5
-
-- De-Ja
-- De-Ja II
-- Doki Doki Shutter Chance
-- Doukyuusei
-- Doukyuusei 2
-- Dragon Knight 4 — **EN**
-- Dragon Knight II — **EN**
-- Dragon Knight III
-- Elle — **EN**
-- Foxy 2
-- Isaku
-- Jan Jaka Jan — **EN**
-- Kakyuusei
-- Metal Eye
-- Metal Eye 2
-- Shangrlia
-- Shangrlia 2 — **EN**
-- Tenshin Ranma
-- Words Worth — **EN**
-- El-Hazard - The Magnificent World
-- Premium
-
 ## JAST MEGSHL
 
 - Deep
@@ -722,9 +713,38 @@
 - Mahjong Fantasia (Mahjong Gensoukyoku) II
 - Sweet Angel
 
+## Elf AI5
+
+- De-Ja
+- De-Ja II
+- Doukyuusei
+- Doukyuusei 2 — **EN**
+- Dragon Knight — **EN**
+- Dragon Knight 4 — **EN**
+- Dragon Knight II — **EN**
+- Dragon Knight III — **EN**
+- Elle — **EN**
+- Foxy — **EN**
+- Foxy 2
+- Isaku
+- Jan Jaka Jan — **EN**
+- Kakyuusei
+- Metal Eye — **EN**
+- Metal Eye 2
+- Shangrlia — **EN**
+- Shangrlia 2 — **EN**
+- Tenshin Ranma
+- Words Worth — **EN**
+- El-Hazard - The Magnificent World — **EN**
+- Premium
+
 ## Elf (pre-AI5)
 
 - Angel Hearts — **EN**
 - Kono Yo no Hate de Koi o Utau Shoujo YU-NO — **EN**
+- Pinky Ponky - Beautiful Dream
+- Pinky Ponky 2 - Twilight Games
+- Pinky Ponky 3 - Battle Lover
+- Private School
 - Ray-Gun
 - Run Run Kyousoukyoku — **EN**

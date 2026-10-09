@@ -10,7 +10,8 @@ it runs a stored two-byte pseudo character, 81 A8, that moves the cursor
 two columns on (and to the next line at the frame's right edge).
 
 The patch (made on the EXEPACK-unpacked program, then packed again with
-its own unpacker, pc98tl/exepack.py):
+its own unpacker, pc98tl/exepack.py; the earliest builds are not packed
+and are written back as they are):
 
 * English letters are written as 85 xx, xx the ASCII code: Shift-JIS lead
   85 (NEC's row 9-10) is used by none of the ADVH games' scripts, and the
@@ -24,6 +25,12 @@ its own unpacker, pc98tl/exepack.py):
   wrap; anything else goes on as before.
 * The disk-change command (wait until the floppy drive holds disk X) goes
   straight on: laid out on a hard disk, every disk's files are there.
+* The earliest build draws its glyphs squeezed to ten rows (its lines are
+  11 rows apart); the helper squeezes the letters the same way.
+* A build with no disk-change command (the earliest, for a one-disk game,
+  unpacked) has the helper put after the end of its image instead, which
+  is the end of the text loop's code segment; the header's size grows with
+  it, and the program's own memory request (the file's size) with that.
 
 Every site is found by its byte signature; a program that does not match
 is refused.
@@ -43,6 +50,12 @@ LOOP_SIG = re.compile(rb"\x3d\xa8\x81\x75\x1f\xa1..", re.S)
 # the disk-change command's wait loop (mov al, cs:[drive] / call read id / cmp al, cs:[want] / je done);
 # the variables' and the reader's addresses differ between the games' builds
 DISK_SIG = re.compile(rb"\x2e\xa0..\xe8..\x2e\x3a\x06..\x74", re.S)
+# the earliest build's glyph writer, which squeezes the 16 rows into 10
+# (its lines are 11 rows apart): mov si, glyph / mov cx, 2 / movsw /
+# mov ax, [si] / inc si / inc si / or es:[di-2], ax; it ORs rows 0+1, 2+3,
+# 6+7, 8+9, 10+11 and 14+15 and copies 4, 5, 12 and 13
+SQUEEZE_SIG = re.compile(rb"\xbe..\xb9\x02\x00\xa5\x8b\x04\x46\x46\x26\x09\x45\xfe", re.S)
+SQUEEZE_MAP = 0b1001110011   # the ten rows written, low bit first: set = two glyph rows ORed
 
 
 def _find_once(img, sig, what):
@@ -132,7 +145,7 @@ def _unwrap_tc0(exe, hdr, base, entry):
 
 def unwrap(exe):
     """The plain EXEPACK program inside an XOR-wrapped ADVH.EXE (the
-    program as it is when it is not wrapped)."""
+    program as it is when it is not wrapped, packed or not)."""
     if exepack.is_packed(exe):
         return exe
     hdr = list(struct.unpack_from("<14H", exe, 0))
@@ -143,7 +156,10 @@ def unwrap(exe):
         return _unwrap_tc0(exe, hdr, base, entry)
     m = WRAP_SIG.match(exe, entry)
     if not m:
-        raise SystemExit("ADVH.EXE: neither EXEPACK-packed nor in the known XOR wrapper")
+        # (a plain program: the earliest builds, Doki Doki Shutter Chance's,
+        # are neither packed nor wrapped; anything else fails the
+        # signatures patch looks for)
+        return exe
     ax, bx, count, add = (struct.unpack("<H", g)[0] for g in m.groups())
     img = bytearray(exe[base:])
     for k in range(count):
@@ -183,7 +199,7 @@ def patch(orig, fixes=()):
         img[at:at + len(find)] = repl
     loop = _find_once(bytes(img), LOOP_SIG, "text loop")
     cur = struct.unpack_from("<H", img, loop + 6)[0]     # the cursor column (0xc2fd in most builds)
-    disk = _find_once(bytes(img), DISK_SIG, "disk check")
+    disk = _find_once(bytes(img), DISK_SIG, "disk check") if DISK_SIG.search(bytes(img)) else None
     # the loop's targets, read off its code: jne +1F after the 5-byte
     # compare, the advance path right after it, the loop head from the
     # jmp at the end of the advance path
@@ -196,7 +212,16 @@ def patch(orig, fixes=()):
     head = advance + 0x0F + 3 + struct.unpack_from("<h", img, advance + 0x10)[0]   # jmp near loop head
     if img[advance + 0x0F] != 0xE9:
         raise SystemExit("ADVH.EXE: the text loop's advance path is not laid out as expected")
-    cave, cave_end = _cave(bytes(img), disk)
+    if disk is not None:
+        cave, cave_end = _cave(bytes(img), disk)
+        seg = 0
+    else:
+        # (no disk-change command: after the image, in the text loop's code segment, the entry's)
+        seg = struct.unpack_from("<H", exe, 0x16)[0] * 16
+        if exepack.is_packed(orig) or not seg <= loop < len(img):
+            raise SystemExit("ADVH.EXE: no disk-change command, and the text loop is not in the image's last segment")
+        cave, cave_end = len(img), seg + 0x10000
+        img += bytes(0x100)
     asm = """
         cmp ax, 0x81a8
         jne notadv
@@ -255,6 +280,28 @@ def patch(orig, fixes=()):
         mov es, ax
         push di
         mov si, {glyphb}
+    """
+    if SQUEEZE_SIG.search(bytes(img)):
+        # (the letter squeezed as the engine squeezes its glyphs: two rows ORed into one where the
+        # map's bit is set, low bit first, ten rows for the lines' 11-row pitch)
+        asm += """
+        mov dx, %s
+        mov cx, 10
+    line:
+        lodsb
+        shr dx, 1
+        jnc single
+        or al, byte ptr [si]
+        inc si
+    single:
+        stosb
+        add di, 0x4f
+        loop line
+        pop di
+        .byte 0xc3
+    """ % hex(SQUEEZE_MAP)
+    else:
+        asm += """
         mov cx, 16
     line:
         movsb
@@ -268,28 +315,35 @@ def patch(orig, fixes=()):
     if after < 0 or after > draw + 0x40:
         raise SystemExit("ADVH.EXE: the text speed wait is not found")
     delay = after + 9 + 3 + struct.unpack_from("<h", img, after + 10)[0]
-    code = asm.format(advance=hex(advance), draw=hex(draw), newline=hex(newline), head=hex(head), delay=hex(delay),
+    # (code addresses as offsets in the segment: the assembler's are 16-bit)
+    code = asm.format(advance=hex(advance - seg), draw=hex(draw - seg), newline=hex(newline - seg),
+                      head=hex(head - seg), delay=hex(delay - seg),
                       curx=hex(cur), cury=hex(cur + 2), color=hex(cur + 4), speed=hex(cur + 8), left=hex(cur + 0xC),
                       right=hex(cur + 0x10), glyph=hex(cur - 0x24), glyphb=hex(cur - 0x22))
-    enc = _asm16(code, cave)
+    enc = _asm16(code, cave - seg)
     if cave + len(enc) > cave_end:
         raise SystemExit("ADVH.EXE: the helper is %d bytes, the room %d" % (len(enc), cave_end - cave))
     img[cave:cave + len(enc)] = bytes(enc)
     jmp = b"\xe9" + struct.pack("<h", cave - (loop + 3))
     img[loop:loop + 5] = jmp + b"\x90\x90"
-    # the disk-change wait: jump to its end (its je target)
-    end = disk + 14 + img[disk + 13]
-    img[disk:disk + 2] = bytes([0xEB, end - (disk + 2)])
+    if disk is not None:
+        # the disk-change wait: jump to its end (its je target)
+        end = disk + 14 + img[disk + 13]
+        img[disk:disk + 2] = bytes([0xEB, end - (disk + 2)])
+    else:
+        del img[cave + len(enc):]
     # no segment fixup may fall in what was changed
     nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
     fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
               for k in range(nrel)]
-    for lo, hi in ((loop, loop + 5), (disk, disk + 2), (cave, cave + len(enc))):
+    for lo, hi in ((loop, loop + 5), (cave, cave + len(enc))) + (((disk, disk + 2),) if disk is not None else ()):
         if any(lo - 1 <= f < hi for f in fixups):
             raise SystemExit("ADVH.EXE: a segment fixup falls in a patched range")
     if exepack.is_packed(orig):
         return exepack.pack(orig, bytes(img))
-    return bytes(exe[:hdr]) + bytes(img)
+    out = bytearray(exe[:hdr]) + img
+    struct.pack_into("<HH", out, 2, len(out) % 512, -(-len(out) // 512))
+    return bytes(out)
 
 
 def encode(text):

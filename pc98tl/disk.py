@@ -2,7 +2,10 @@
 
 Supports:
   * .hdi  Anex86 hard disk image (32-byte header, header_size usually 4096)
-  * .hdm / .fdi-less raw 2HD floppy (1024-byte sectors, FAT12 at offset 0)
+  * .hdm / .fdi-less raw 2HD floppy (1024-byte sectors, FAT12 at offset 0);
+    a self-booting one whose boot sector holds no BPB (Elf's own system
+    disks) is read with the standard 2HD layout when its FAT starts with
+    the 2HD media byte (FE FF FF in sector 1)
 
 The FAT layer can list, read, replace (grow or shrink) and add files, so a
 patcher can write translated data straight back into a copy of the image.
@@ -10,11 +13,15 @@ patcher can write translated data straight back into a copy of the image.
 import struct
 
 
+# the standard 2HD floppy's BPB fields (bytes 11-35 of a boot sector)
+BPB_2HD = struct.pack("<HBHBHHBHHHII", 1024, 1, 1, 2, 192, 1232, 0xFE, 2, 8, 2, 0, 0)
+
+
 class FatVolume:
-    def __init__(self, buf, base):
+    def __init__(self, buf, base, bpb=None):
         self.buf = buf            # bytearray of the whole image
         self.base = base          # byte offset of the FAT boot sector
-        b = bytes(buf[base:base + 64])
+        b = bytes(buf[base:base + 64]) if bpb is None else bytes(11) + bpb
         (self.bps, self.spc, self.reserved, self.nfats, self.root_entries,
          total16, self.media, self.fat_sectors, _spt, _heads, _hidden,
          total32) = struct.unpack_from("<HBHBHHBHHHII", b, 11)
@@ -231,6 +238,8 @@ class DiskImage:
             self.header_size = 0
             if self._is_bpb(raw, 0):
                 self.volumes.append(FatVolume(raw, 0))
+            elif len(raw) == 1232 * 1024 and raw[1024:1027] == b"\xfe\xff\xff":
+                self.volumes.append(FatVolume(raw, 0, BPB_2HD))
         if not self.volumes:  # fallback: scan for a boot sector
             for off in range(0, min(len(raw), 8 << 20), 256):
                 if self._is_bpb(raw, off):

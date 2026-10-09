@@ -2701,5 +2701,27 @@
    "Status screens, battles, the Special Disk (separate floppies, not in the hard-disk release), endings",
    "not yet seen"
   ]
+ ],
+ "doki_doki_shutter_chance": [
+  [
+   "Hard-disk layout boots (main game in DOKI, ADVH started from AUTOEXEC.BAT)",
+   "OK"
+  ],
+  [
+   "Opening lines before the title picture",
+   "OK: half-width filler, centred lines kept on the screen"
+  ],
+  [
+   "Title picture, then the story pages in the middle box",
+   "OK: filler wrapped in the box, lines 11 dots apart as the engine's own, a click (right button) going on"
+  ],
+  [
+   "The client's scene (portrait with the text column at its right)",
+   "OK: filler wrapped in the column; a long message pages with a key wait, the column cleared for the next page"
+  ],
+  [
+   "A data collection (DOKI/JOSHI started in a test image)",
+   "OK: its opening, story pages and client scene as in the main game"
+  ]
  ]
 }
