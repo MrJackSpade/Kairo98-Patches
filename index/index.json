@@ -84640,7 +84640,14 @@
      "path": "U-Jin Special Collection (Kounai Shasei re-release)\\U-Jin Special Collection (Kounai Shasei re-release) [HD]\\U-Jin Special Collection (Kounai Shasei re-release) (Vol. 3).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ujin_collection_1 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 12 of 12 classified Fairytale Red-Zone titles are adult",
    "engine": "adv98v",
@@ -84648,7 +84655,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/X-Girl",

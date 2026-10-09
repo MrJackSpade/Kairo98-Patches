@@ -278,6 +278,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale Red-Zone | Naomi - Bishoujo-tachi no Yakata | [This repo: games/naomi (patcher working, machine translation in progress)](../games/naomi/notes.md) |
 | Fairytale Red-Zone | Sayaka - Gibo | [This repo: games/sayaka_gibo (patcher working, machine translation in progress)](../games/sayaka_gibo/notes.md) |
 | Fairytale Red-Zone | Toumei Ningen | [This repo: games/toumei_ningen (patcher working, machine translation in progress)](../games/toumei_ningen/notes.md) |
+| Fairytale Red-Zone | U-Jin Special Collection (Kounai Shasei re-release) | [This repo: games/ujin_collection_1 (patcher working, machine translation in progress)](../games/ujin_collection_1/notes.md) |
 | Fairytale X Shitei | Dragon City X Shitei | [This repo: games/dragon_city (patcher working, machine translation in progress)](../games/dragon_city/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_2 (patcher working, machine translation in progress)](../games/kounai_shasei_2/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_1 (patcher working, machine translation in progress)](../games/kounai_shasei_1/notes.md) |
@@ -2349,7 +2350,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Sayaka - Gibo [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Tokyo Joshikousei Sailor-fuku Nyuumon Dai-1-kan [FD]
 - ♥ Toumei Ningen [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ U-Jin Special Collection (Kounai Shasei re-release) [FD HD] `adv98v`
+- ♥ U-Jin Special Collection (Kounai Shasei re-release) [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ X-Girl [FD HD] `adv98v` — **EN**
 
 ### Fairytale X Shitei (`FairytaleXShitei.zip`)
