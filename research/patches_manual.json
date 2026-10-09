@@ -1301,5 +1301,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Gokuraku Mandara": [
+  {
+   "label": "This repo: games/gokuraku_mandara (patcher working, machine translation in progress)",
+   "url": "../games/gokuraku_mandara/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

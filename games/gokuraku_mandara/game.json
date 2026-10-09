@@ -1,0 +1,10 @@
+{
+ "title": "Gokuraku Mandara",
+ "key": "Fairytale.zip/Gokuraku Mandara",
+ "image": "Gokuraku Mandara\\Gokuraku Mandara [HD]\\Gokuraku Mandara.hdi",
+ "encoding": "adv98v",
+ "game_dir": "GOK",
+ "extraop": true,
+ "boot_steps": "40:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot,3:lclick,7:shot",
+ "script_room": 17744
+}

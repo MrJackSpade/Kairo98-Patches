@@ -80556,7 +80556,14 @@
      "path": "Gokuraku Mandara\\Gokuraku Mandara [HD]\\Gokuraku Mandara.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gokuraku_mandara (patcher working, machine translation in progress)",
+     "url": "../games/gokuraku_mandara/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17710 (erotic content)",
    "engine": "adv98v",
@@ -80564,7 +80571,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Kao Floppy Gekijou - Route 246 Satsujin Annai",

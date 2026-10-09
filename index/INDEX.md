@@ -254,6 +254,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Dynamic Pro | Kekkou Kamen 2 - Oshioki Densetsu no Maki | [This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)](../games/kekkou_kamen_2/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
+| Fairytale | Gokuraku Mandara | [This repo: games/gokuraku_mandara (patcher working, machine translation in progress)](../games/gokuraku_mandara/notes.md) |
 | Fairytale | Koroshi no Dress 3 | [This repo: games/koroshi_no_dress_3 (patcher working, machine translation in progress)](../games/koroshi_no_dress_3/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
 | Fairytale | Lipstick Adventure 3 | [This repo: games/lipstick_adventure_3 (patcher working, machine translation in progress)](../games/lipstick_adventure_3/notes.md) |
@@ -2296,7 +2297,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Dracula Hakushaku [FD HD] `adv98v` — **EN**
 - ♥ Dragoon Armor for Adult [FD extras] — **EN**
 - ♥ Fairytale Kaizokuban [FD] `adv98v`
-- ♥ Gokuraku Mandara [FD HD] `adv98v`
+- ♥ Gokuraku Mandara [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kao Floppy Gekijou - Route 246 Satsujin Annai [FD]
 - ♥ Karei naru Jinsei [FD HD]
 - ♥ Karei naru Jinsei 2 [FD HD]
