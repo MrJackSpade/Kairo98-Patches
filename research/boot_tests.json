@@ -2501,5 +2501,31 @@
    "The game proper, the staff roll (GAIBU/STAFF.TXT), saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "bishoujo_daizukan": [
+  [
+   "Opening (the hostess, the guide)",
+   "OK: filler wrapped beside the pictures, pages waiting for a key"
+  ],
+  [
+   "Name entry (NAME.COM)",
+   "OK: its prompt as filler; a name typed with the keyboard is taken"
+  ],
+  [
+   "The girls' menu and a profile page",
+   "OK: filler items and the profile's lines at their places"
+  ],
+  [
+   "A girl's scene",
+   "OK: filler wrapped under the picture in the speaker's colour"
+  ],
+  [
+   "ADVH.EXE",
+   "Wrapped three times in a XOR layer (\"TC0\"); the program checks a key disk and resets the machine otherwise, which the release's crack disarms at run time; the patch unwraps it and makes the crack's seven-byte change to the program (game.json advh_fixes)"
+  ],
+  [
+   "The other girls, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -182032,7 +182032,14 @@
      "path": "Disk Bishoujo Daizukan\\Disk Bishoujo Daizukan [FD]\\Disk Bishoujo Daizukan (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_daizukan (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_daizukan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Santa Fe titles are adult",
    "engine": "adv98v",
@@ -182040,7 +182047,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Disk Bishoujo Daizukan '91",

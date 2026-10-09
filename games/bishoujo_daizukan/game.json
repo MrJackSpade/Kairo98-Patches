@@ -1,0 +1,54 @@
+{
+ "title": "Disk Bishoujo Daizukan",
+ "key": "SantaFe.zip/Disk Bishoujo Daizukan",
+ "image": "Disk Bishoujo Daizukan\\Disk Bishoujo Daizukan [FD]\\Disk Bishoujo Daizukan (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Disk Bishoujo Daizukan (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "boot_steps": "40:shot,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,2:shot,1:key=65,1:key=66,1:key=67,2:shot,2:key=13,4:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "advh_fixes": [
+  {
+   "find": "9d7c0e01c036b24250019e6751cb043709a9d92dad",
+   "replace": "9d461601aea4994250019e6751cb043709a97103ac",
+   "why": "the release's crack: after its wrapper opens the program it rewrites seven bytes of the copy-protection check (which otherwise resets the machine); applied here to the unwrapped program"
+  }
+ ],
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true
+}

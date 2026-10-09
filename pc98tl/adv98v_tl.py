@@ -63,7 +63,8 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             folder: a list box's lines, the load window's notes; see
             table_parse]) and "table_fullwidth" (their text in full-width
             letters),
-            "program_fixes" ([{"file", "find",
+            "advh_fixes" ([{"find", "replace", "why"}]: ADVH.EXE program
+            fixes, see advh.patch), "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
             cannot pass), "proc_frames" ({procedure: [frame]}: the text
@@ -764,7 +765,9 @@ def program_strings(exe):
         pos, piece, at = s, "", s
         while pos <= e:
             ch, n = engine_strings.char_at(exe, pos) if pos < e else ("　", 0)
-            if ch in "　＠":
+            # (and at a DOS message's "$" end between two full-width messages)
+            dollar = ch == "$" and piece and ord(piece[-1]) >= 0x3000 and pos + 1 < e and exe[pos + 1] >= 0x81
+            if ch in "　＠" or dollar:
                 if piece.strip():
                     out.append((at, pos, piece))
                 piece, at = "", pos + n
@@ -1785,7 +1788,7 @@ def run_patch(here, src, dst, mode="en"):
     ENGINE["proc_fullwidth"] = cfg.get("proc_fullwidth", False)
     if ENGINE["advh"]:
         exe_path = _join(cfg["game_dir"], "ADVH.EXE")
-        vol.write(exe_path, advh.patch(vol.read(exe_path)))
+        vol.write(exe_path, advh.patch(vol.read(exe_path), cfg.get("advh_fixes", ())))
     for fix in cfg.get("program_fixes", []):
         # (byte-signature fixes in the engine's programs, the same length)
         path = _join(cfg["game_dir"], fix["file"])

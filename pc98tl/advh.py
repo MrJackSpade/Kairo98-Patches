@@ -104,6 +104,32 @@ def _asm16(src, org):
 WRAP_SIG = re.compile(rb"\xb8(..)\xbb(..)\xbf\x00\x01\xb9(..)\xf7\xe3\x05(..)\x30\x15\x47\xe2\xf6", re.S)
 
 
+def _unwrap_tc0(exe, hdr, base, entry):
+    """The "TC0" wrapper (Disk Bishoujo Daizukan): after its signature,
+    seed, byte count, start offset in the loaded image (+0x100 from the
+    PSP), the real entry ip:cs and sp:ss (both relative to the image);
+    each byte is XORed with bits 8-15 of the seed rotated left twice,
+    the seed stepping by *0x2711 + 0x3619.  The wrapper's code follows
+    the image, which keeps its size."""
+    seed, count, start, ip, cs, sp, ss = struct.unpack_from("<7H", exe, entry + 6)
+    img = bytearray(exe[base:])
+    at = start - 0x100
+    for k in range(count):
+        seed = (seed * 0x2711 + 0x3619) & 0xFFFF
+        img[at + k] ^= ((seed << 2 | seed >> 14) & 0xFFFF) >> 8
+    hdr[10], hdr[11], hdr[8], hdr[7] = ip, cs, sp, ss
+    out = bytearray(exe[:base]) + img
+    struct.pack_into("<14H", out, 0, *hdr)
+    out = bytes(out)
+    inner = base + cs * 16 + ip
+    if out[inner:inner + 6] == b"\xe8\x11\x00TC0":
+        # (wrapped more than once: each layer opens the next)
+        return _unwrap_tc0(out, hdr, base, inner)
+    if not exepack.is_packed(out):
+        raise SystemExit("ADVH.EXE: the TC0 wrapper does not hold an EXEPACK program")
+    return out
+
+
 def unwrap(exe):
     """The plain EXEPACK program inside an XOR-wrapped ADVH.EXE (the
     program as it is when it is not wrapped)."""
@@ -113,6 +139,8 @@ def unwrap(exe):
     base = hdr[4] * 16
     ip, cs = hdr[10], hdr[11]
     entry = base + cs * 16 + ip
+    if exe[entry:entry + 6] == b"\xe8\x11\x00TC0":
+        return _unwrap_tc0(exe, hdr, base, entry)
     m = WRAP_SIG.match(exe, entry)
     if not m:
         raise SystemExit("ADVH.EXE: neither EXEPACK-packed nor in the known XOR wrapper")
@@ -136,15 +164,23 @@ def unwrap(exe):
     return out
 
 
-def patch(orig):
+def patch(orig, fixes=()):
     """The program with half-width letters (85 xx): unpacked, patched and
     packed again with the original unpacker (an unpacked ADVH.EXE fails to
-    restart when ADVSHELL runs it again).  A program in the XOR wrapper is
-    written back without it."""
+    restart when ADVSHELL runs it again).  A program in a wrapper is
+    written back without it.  fixes: [{"find", "replace", "why"}] (hex,
+    the same length), applied to the unpacked program, each found once:
+    what a wrapper did to the program at run time (a release's crack)."""
     orig = unwrap(orig)
     exe = exepack.unpack(orig) if exepack.is_packed(orig) else orig
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
     img = bytearray(exe[hdr:])
+    for fix in fixes:
+        find, repl = bytes.fromhex(fix["find"]), bytes.fromhex(fix["replace"])
+        if bytes(img).count(find) != 1 or len(find) != len(repl):
+            raise SystemExit("ADVH.EXE: the signature for '%s' is not found once" % fix["why"])
+        at = bytes(img).index(find)
+        img[at:at + len(find)] = repl
     loop = _find_once(bytes(img), LOOP_SIG, "text loop")
     cur = struct.unpack_from("<H", img, loop + 6)[0]     # the cursor column (0xc2fd in most builds)
     disk = _find_once(bytes(img), DISK_SIG, "disk check")

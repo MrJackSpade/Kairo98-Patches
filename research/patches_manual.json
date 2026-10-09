@@ -1369,5 +1369,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "SantaFe.zip/Disk Bishoujo Daizukan": [
+  {
+   "label": "This repo: games/bishoujo_daizukan (patcher working, machine translation in progress)",
+   "url": "../games/bishoujo_daizukan/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

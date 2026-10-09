@@ -32,9 +32,9 @@ This is ADVH, the engine before Adv98V (`ADVH.EXE`, run by `ADVSHELL.COM`): the 
 
 ## Script
 
-3675 strings (3276 messages, 363 menu items, 30 name tags (procedure text), 1 string variable values, 5 program strings).
+3676 strings (3276 messages, 363 menu items, 30 name tags (procedure text), 1 string variable values, 6 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3675 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3676 strings have English so far.
 
 ## Limits
 

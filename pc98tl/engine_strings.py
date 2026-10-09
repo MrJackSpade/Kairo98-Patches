@@ -97,11 +97,20 @@ def find(exe):
     """[(start, end, text)] of the Japanese strings in the program."""
     out = []
     for s, e in _segments(exe):
-        raw = exe[s:e]
-        # keep whole characters: a run may start on a trail byte of the previous one
-        text = decode(raw)
-        if text is None:
+        # keep whole characters: a run may start on a trail byte of the previous one, or on
+        # code bytes that read as half-width kana and shift every character after them
+        # (C3 90 before "メモリー"): of the first few start bytes, the one whose reading
+        # holds the most kana (the earliest of equals)
+        best = None
+        for k in range(4):
+            got = decode(exe[s + k:e]) if s + k < e else None
+            if got is not None:
+                score = sum(1 for c in got if "぀" <= c <= "ヿ" or c in _JP)
+                if best is None or score > best[0]:
+                    best = (score, k, got)
+        if best is None:
             continue
+        s, text = s + best[1], best[2]
         # trim ASCII noise at the ends (code bytes that happen to be printable; one byte each,
         # where a PC-98 half-width letter, two bytes, is text)
         while text and text[0] in " \t" + "".join(chr(c) for c in range(0x21, 0x7f)) and not text.startswith("%") \

@@ -336,6 +336,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 | Santa Fe | 101 Kaime no Approach Shot | [This repo: games/approach_shot (patcher working, machine translation in progress)](../games/approach_shot/notes.md) |
 | Santa Fe | Bishoujo Audition - Idol o Sagase! | [This repo: games/bishoujo_audition (patcher working, machine translation in progress)](../games/bishoujo_audition/notes.md) |
+| Santa Fe | Disk Bishoujo Daizukan | [This repo: games/bishoujo_daizukan (patcher working, machine translation in progress)](../games/bishoujo_daizukan/notes.md) |
 | Tomboy | Night Walker - Mayonaka no Tantei | [This repo: games/night_walker (patcher working, machine translation in progress)](../games/night_walker/notes.md) |
 
 ## Translations not yet matched to a collection title
@@ -5281,7 +5282,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 - ♥ 101 Kaime no Approach Shot [FD] `adv98v` — *MTL (this repo)*
 - ♥ Bishoujo Audition - Idol o Sagase! [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ Disk Bishoujo Daizukan [FD] `adv98v`
+- ♥ Disk Bishoujo Daizukan [FD] `adv98v` — *MTL (this repo)*
 - ♥ Disk Bishoujo Daizukan '91 [FD] `adv98v`
 
 ### Sashimin (`doujinHomebrew.zip`)
