@@ -172192,7 +172192,14 @@
      "path": "El-Hazard - The Magnificent World\\El-Hazard - The Magnificent World [HD]\\El-Hazard - The Magnificent World.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/el_hazard (patcher working, machine translation in progress)",
+     "url": "../games/el_hazard/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "elf-ai5",
@@ -172200,7 +172207,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "PistonSoft.zip/His Name is Diamond",

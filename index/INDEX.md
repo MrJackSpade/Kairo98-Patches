@@ -343,6 +343,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo VI - My Fair Teacher | [This repo: games/tenshi_vi (patcher working, machine translation in progress)](../games/tenshi_vi/notes.md) |
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
 | Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
+| Pioneer LDC | El-Hazard - The Magnificent World | [This repo: games/el_hazard (patcher working, machine translation in progress)](../games/el_hazard/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 | Santa Fe | 101 Kaime no Approach Shot | [This repo: games/approach_shot (patcher working, machine translation in progress)](../games/approach_shot/notes.md) |
 | Santa Fe | Bishoujo Audition - Idol o Sagase! | [This repo: games/bishoujo_audition (patcher working, machine translation in progress)](../games/bishoujo_audition/notes.md) |
@@ -4926,7 +4927,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Pioneer LDC (`PioneerLdc.zip`)
 
-- El-Hazard - The Magnificent World [CD HD] `elf-ai5`
+- El-Hazard - The Magnificent World [CD HD] `elf-ai5` — *MTL (this repo)*
 
 ### Piston Soft (`PistonSoft.zip`)
 

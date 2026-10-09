@@ -18,9 +18,9 @@ The patch works on the game's hard-disk release (the game in `NANPA2/`), which h
 
 ## Script
 
-55032 strings: 1316 menu items, 37 labels, 53679 messages.
+55034 strings: 1316 menu items, 37 labels, 53681 messages.
 
-Translation and the content classification (♥) are done by the translation model; 0 of 55032 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 55034 strings have English so far.
 
 ## Limits
 

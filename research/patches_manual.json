@@ -1453,5 +1453,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "PioneerLdc.zip/El-Hazard - The Magnificent World": [
+  {
+   "label": "This repo: games/el_hazard (patcher working, machine translation in progress)",
+   "url": "../games/el_hazard/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

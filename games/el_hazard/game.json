@@ -1,0 +1,21 @@
+{
+ "title": "El-Hazard - The Magnificent World",
+ "key": "PioneerLdc.zip/El-Hazard - The Magnificent World",
+ "image": "El-Hazard - The Magnificent World\\El-Hazard - The Magnificent World [HD]\\El-Hazard - The Magnificent World.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "game_dir": "PLDC/ELHAZARD",
+ "calls": {
+  "0": {
+   "cells": 0,
+   "note": "a pause in the staff roll"
+  },
+  "3": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "25:shot,15:shot,10:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "cd": "El-Hazard - The Magnificent World\\El-Hazard - The Magnificent World [CD]\\El-Hazard - The Magnificent World.ccd",
+ "script_room": 40960
+}

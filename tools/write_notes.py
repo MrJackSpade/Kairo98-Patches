@@ -847,12 +847,13 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                 n, c.get("note", "a subroutine call"), n,
                 "; the English goes on on a fresh page after it" if c.get("page") else "")
                 for n, c in cfg.get("calls", {"26": {"note": "the hero's name"}}).items()] + [
-            "* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:E000h: "
+            "* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:%04Xh: "
             "a script with its English may take %d bytes.  Each English letter is one byte; a message "
             "takes up to twenty bytes more for the commands around it (two where messages follow one "
             "another), and a full-width character or a name call in it about twenty more.  A build "
             "whose script outgrows its buffer is "
-            "refused and names the script and its strings."  % cfg.get("script_room", 0xE000),
+            "refused and names the script and its strings." % (cfg.get("script_room", 0xE000),
+                                                              cfg.get("script_room", 0xE000)),
             "* Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is "
             "written full-width, so it holds half as many letters.  Longer ones are cut and reported.",
             "* Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's "

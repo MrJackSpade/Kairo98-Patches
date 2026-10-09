@@ -199,6 +199,10 @@ def _tokens(d, out):
             i += 2
             out.append(("ch", s, i, None))
             continue
+        elif 0x30 <= b <= 0x5A or b in (7, 8, 9):
+            # (an expression standing alone where a statement would be: data the engine never
+            # runs, between a menu's item texts in a few scripts)
+            i = _expr(d, i)[0]
         else:
             raise Bad("statement %02x at %x" % (b, i))
         out.append(("op", s, i, b))

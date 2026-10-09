@@ -21,6 +21,9 @@ for g in $games; do
     fi
     dip=$(python -c "import json;print(json.load(open('games/$g/game.json',encoding='utf-8')).get('dipsw',''))" 2>/dev/null)
     [ -n "$dip" ] && set -- "$@" -Dip "$dip"
+    # (a game that reads its CD: game.json "cd", relative to the collection)
+    cd_img=$(python -c "import json;c=json.load(open('games/$g/game.json',encoding='utf-8')).get('cd','');print('E:/PC98/'+c.replace(chr(92),'/') if c else '')" 2>/dev/null)
+    [ -n "$cd_img" ] && set -- "$@" -Cd "$cd_img"
     rm -f emu/shots/boot_${g}_*.png
     pwsh -NoProfile -File tools/emu_shot.ps1 "$@" -Out "emu/shots/boot_$g" -Steps "$steps" >/dev/null
     shots=$(ls emu/shots/boot_${g}_*.png | sort -V)

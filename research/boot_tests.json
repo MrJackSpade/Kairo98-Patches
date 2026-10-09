@@ -2665,5 +2665,23 @@
    "The strategy map, the girls' scenes, battles, the staff roll",
    "not yet seen"
   ]
+ ],
+ "el_hazard": [
+  [
+   "The hard-disk release with its CD in the drive (game.json cd); the animated opening",
+   "OK: boots and plays the opening (it needs the CD; without it the screen stays black, as the original's does)"
+  ],
+  [
+   "The first scenes (the school at night, Makoto, Nanami)",
+   "OK: filler wrapped in the bottom window, the speaker's bracket kept, pages waiting for a key"
+  ],
+  [
+   "Script buffer",
+   "A script runs at DS:0000 before the engine's variables at DS:A000h (40960 bytes; read off the running engine)"
+  ],
+  [
+   "Menus, the later chapters, the staff roll",
+   "not yet seen"
+  ]
  ]
 }
