@@ -784,6 +784,76 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def gip_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "var": "string variable values"}
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"]})
+    out = ["# %s%s (Cocktail Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Ides' **gip** 2.08 (\"Gun'sHip\"): `PQ.OV1` (the gip system) runs `PQ.OVL` (the script "
+            "interpreter and the game's own commands) with the frame file `PQ.OV2`, all in `%s/` on the "
+            "game's hard-disk release.  The script is bytecode in `EVT/*.EVT` (%d files with text); "
+            "`pc98tl/gip.py` documents it.  Every command has a fixed length or a known form; the "
+            "disassembler follows the code from each script's start (and from the entries the game's "
+            "commands start) and reaches every Japanese string." % (cfg["game_dir"], len(files)), "",
+            "* Messages, menu items and string variable values are reached only through the commands' "
+            "pointers, so the English is laid out in the bytes the Japanese leaves free and after the "
+            "script's end, and the pointers are moved to it; the code does not move.",
+            "* The game's text driver draws ASCII half-width, so English is written as ASCII; the "
+            "program is not changed.",
+            "* Lines are wrapped between words to the window the script opened, a letter short of its "
+            "width (a letter in the last column wraps the line itself), and a new page (key wait, "
+            "clear) starts before a line would scroll the window.",
+            "", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; `\\n` starts a new line.  `max_cells` is the line's room "
+            "in its window (English letters); longer text wraps between words and pages.",
+            "* `{Xn}` in a message is string variable n, which the script sets to a name, a speaker's name "
+            "and opening bracket, an indent or a page break (the string's `note` says which): keep it in "
+            "the English; the variable's own value is a `v` id.",
+            "* Menu items (`i` ids): `max_cells` letters, the menu window's width; longer ones are cut and "
+            "reported.",
+            "* String variable values (`v` ids): up to 64 bytes (64 letters).",
+            "* A script may not outgrow its buffer: the main one holds 20000 bytes, the second one "
+            "(for the scripts the others load and call) 7003.  A script's English may take the bytes "
+            "of all its Japanese strings and the room left in its buffer; a build whose English does "
+            "not fit is refused and names the script and its strings.  The scripts in the second buffer "
+            "have the least room: in some, the English should take about as many bytes as the Japanese.",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, pictures).",
+            "* The gip system's own messages in `PQ.OV1` (option, memory and disk errors) and the "
+            "floppy release's disk prompts in `PQ.INI`; the hard-disk release does not ask for disks."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for t, r in extra.get(name, {}).get("tests", []):
+        out.append("| %s | %s |" % (t, r))
+    out.append("| Gameplay past the opening scenes, save/load, endings | not yet seen |")
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def main():
     names = sys.argv[1:] or sorted(os.listdir(os.path.join(ROOT, "games")))
     adult = load("research", "adult_text.json", default={})
@@ -798,6 +868,11 @@ def main():
             continue
         if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12", "jast_typed"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "gip":
+            out = gip_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

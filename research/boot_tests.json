@@ -2589,5 +2589,23 @@
    "The stories behind the other menu items, Disk B's pictures, endings",
    "not yet seen"
   ]
+ ],
+ "kurukuru_party": [
+  [
+   "Title menu, the start and the mode question (START.EVT)",
+   "OK: filler wrapped in the two-line box and paged with a key wait; menu items at their places, cut to the menu's width"
+  ],
+  [
+   "Character select (PREMAIN1.EVT)",
+   "OK: filler in the message window beside the portraits; the YES/NO menu"
+  ],
+  [
+   "The explanation (EXP.EVT, run from a test image whose start script chains to it)",
+   "OK: filler wrapped between words in the 40-letter, four-line window, a new page before a line would scroll it"
+  ],
+  [
+   "The scripts in the second buffer (the characters' openings, events, endings), the board game",
+   "not yet seen"
+  ]
  ]
 }

@@ -1,0 +1,9 @@
+{
+ "title": "Kurukuru Party - Princess Quest",
+ "key": "CocktailSoft.zip/Kurukuru Party - Princess Quest",
+ "image": "Kurukuru Party - Princess Quest\\Kurukuru Party - Princess Quest [HD]\\Kurukuru Party - Princess Quest.hdi",
+ "encoding": "gip",
+ "game_dir": "PQ",
+ "start_script": "START.EVT",
+ "boot_steps": "45:enter,3:enter,3:enter,3:enter,6:shot,1:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot"
+}

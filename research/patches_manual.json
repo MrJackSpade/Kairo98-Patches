@@ -1406,5 +1406,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Kurukuru Party - Princess Quest": [
+  {
+   "label": "This repo: games/kurukuru_party (patcher working, machine translation in progress)",
+   "url": "../games/kurukuru_party/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v18233",
+   "url": "https://vndb.org/v18233",
+   "source": "VNDB"
+  }
  ]
 }
