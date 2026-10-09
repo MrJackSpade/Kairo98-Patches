@@ -1293,5 +1293,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DynamicPro.zip/Kekkou Kamen - Oshioki Paradise no Maki": [
+  {
+   "label": "This repo: games/kekkou_kamen (patcher working, machine translation in progress)",
+   "url": "../games/kekkou_kamen/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

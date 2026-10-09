@@ -250,6 +250,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
 | Dez Climax | Injuu Gakuen - La Blue Girl | [This repo: games/la_blue_girl (patcher working, machine translation in progress)](../games/la_blue_girl/notes.md) |
 | Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
+| Dynamic Pro | Kekkou Kamen - Oshioki Paradise no Maki | [This repo: games/kekkou_kamen (patcher working, machine translation in progress)](../games/kekkou_kamen/notes.md) |
 | Dynamic Pro | Kekkou Kamen 2 - Oshioki Densetsu no Maki | [This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)](../games/kekkou_kamen_2/notes.md) |
 | Fairytale | Arabesque | [This repo: games/arabesque (patcher working, machine translation in progress)](../games/arabesque/notes.md) |
 | Fairytale | Dracula Hakushaku | [This repo: games/dracula_hakushaku (patcher working, machine translation in progress)](../games/dracula_hakushaku/notes.md) |
@@ -2083,7 +2084,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 ### Dynamic Pro (`DynamicPro.zip`)
 
 - ♥ Harenchi Gakuen [FD HD]
-- ♥ Kekkou Kamen - Oshioki Paradise no Maki [FD HD] `adv98v`
+- ♥ Kekkou Kamen - Oshioki Paradise no Maki [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kekkou Kamen 2 - Oshioki Densetsu no Maki [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Super Erect Taisen S-EX [FD HD]
 

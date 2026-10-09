@@ -70515,7 +70515,14 @@
      "path": "Kekkou Kamen - Oshioki Paradise no Maki\\Kekkou Kamen - Oshioki Paradise no Maki [HD]\\Kekkou Kamen - Oshioki Paradise no Maki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kekkou_kamen (patcher working, machine translation in progress)",
+     "url": "../games/kekkou_kamen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17783 (erotic content)",
    "engine": "adv98v",
@@ -70523,7 +70530,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DynamicPro.zip/Kekkou Kamen 2 - Oshioki Densetsu no Maki",
