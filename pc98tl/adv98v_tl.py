@@ -569,12 +569,14 @@ def _programs(vol, game_dir, extra=()):
     and extra: game.json's "program_files", other modules relative to the
     game folder): [(name, path)]."""
     out = [(name, _join(game_dir, name)) for name in extra]
+    listed = {path.upper() for _n, path in out}
     tcm = _subdir(vol, game_dir, "TCM")
     for folder in [game_dir] + ([tcm] if tcm else []):
         prefix = folder[len(game_dir) + 1 if game_dir else 0:] + "/" if folder != game_dir else ""
         out += [(prefix + e["name"], _join(folder, e["name"])) for e in vol.listdir(_cluster(vol, folder))
                 if not e["is_dir"] and e["name"].upper().endswith(PROGRAM_EXT)
-                and not (folder == "" and e["name"].upper() in DOS_PROGRAMS)]
+                and not (folder == "" and e["name"].upper() in DOS_PROGRAMS)
+                and _join(folder, e["name"]).upper() not in listed]
     return out
 
 
@@ -705,18 +707,22 @@ def name_table(data):
 
 def name_room(vol, game_dir, data):
     """The bytes a name in ADVH's name file (see name_table) may take: as
-    many as the name entry (NAME.COM) takes from the player (its input
-    loop's cmp bx, n / jae: the name it writes is as long), else the
-    name's own bytes; 0 for a file of another form."""
+    many as the name entry (the program beside the engine that writes
+    NAME.DEF: NAME.COM, GNAME.COM) takes from the player (its input loop
+    for two-byte letters: cmp bx, n / jae / mov [bx+si], ax; the name it
+    writes is as long), else the name's own bytes; 0 for a file of
+    another form."""
     table = name_table(data)
     if table is None:
         return 0
     own = max(ve - vs for _ks, _ke, vs, ve in table)
-    try:
-        entry = vol.read(_join(game_dir, "NAME.COM"))
-    except FileNotFoundError:
-        return own
-    found = re.findall(rb"\x83\xfb(.)\x73", entry, re.S)
+    found = []
+    for e in vol.listdir(vol.find(game_dir)["cluster"] if game_dir else 0):
+        if e["is_dir"] or not e["name"].upper().endswith((".COM", ".EXE")):
+            continue
+        prog = vol.read(_join(game_dir, e["name"]))
+        if b"NAME.DEF" in prog.upper() and not e["name"].upper().startswith("ADVH"):
+            found += re.findall(rb"\x83\xfb(.)\x73.\x89\x00", prog, re.S)
     return max(own, found[0][0]) if len(found) == 1 else own
 
 

@@ -2553,5 +2553,27 @@
    "The other girls, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "watashi_golf": [
+  [
+   "Start menu",
+   "OK: filler items, the highlight on the first"
+  ],
+  [
+   "Name entry (GNAME.COM: the hero's name, then the golf name in letters)",
+   "OK: its prompts as full-width filler at their places; names typed with the keyboard are taken and shown in its confirmation line"
+  ],
+  [
+   "The club lobby (messages and the command menus)",
+   "OK: filler wrapped in the bottom box, pages waiting for a key; one-line menus picked with the arrow keys, the choices leading on to new messages"
+  ],
+  [
+   "The golf round (GOLF/HIT.EXE, started from the practice script RENSYU.MES in a test image)",
+   "OK: the round starts on the first hole; shots are hit and scored"
+  ],
+  [
+   "The caddie's lines (GOLF/SPEAK.DAT), the girls' scenes, Disk B and C scenes, endings",
+   "not yet seen"
+  ]
  ]
 }

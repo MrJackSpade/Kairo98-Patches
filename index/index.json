@@ -82680,15 +82680,27 @@
      "path": "Watashi o Golf ni Tsuretette\\Watashi o Golf ni Tsuretette [FD hd9]\\Watashi o Golf ni Tsuretette (Disk C).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/watashi_golf (patcher working, machine translation in progress)",
+     "url": "../games/watashi_golf/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v27000",
+     "url": "https://vndb.org/v27000",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r67578 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Fairytale.zip/X-na",

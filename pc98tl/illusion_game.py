@@ -193,9 +193,9 @@ def _text(e, mode):
 DOS_FILES = {"IO.SYS", "MSDOS.SYS", "COMMAND.COM", "AUTOEXEC.BAT", "CONFIG.SYS"}
 
 
-def _copy_dir(fv, src_dir, vol, dst_dir):
+def _copy_dir(fv, src_dir, vol, dst_dir, left=()):
     """A floppy folder's files (and folders) into the hard disk's, merged
-    with one already there."""
+    with one already there; left: the floppy's paths not copied."""
     try:
         vol.find(dst_dir)
     except FileNotFoundError:
@@ -204,8 +204,8 @@ def _copy_dir(fv, src_dir, vol, dst_dir):
         if e["name"] in (".", ".."):
             continue
         if e["is_dir"]:
-            _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"])
-        else:
+            _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"], left)
+        elif (src_dir + "/" + e["name"]).upper() not in left:
             _put(vol, dst_dir + "/" + e["name"], fv.read(src_dir + "/" + e["name"]))
 
 
@@ -235,7 +235,9 @@ def _hdd_install(cfg, src):
     merged, "config_sys": [CONFIG.SYS lines put before its SHELL line: a
     driver the game needs, such as its own mouse driver]}.  dir ""
     installs into the root (an engine that names its files from the
-    drive's root).
+    drive's root).  "unused": {disk: [paths]}: a disk's copies of files
+    that another disk holds differently and the game never loads from it
+    (the scripts name the other disk's), not installed.
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -251,12 +253,15 @@ def _hdd_install(cfg, src):
     skip = {n.upper() for n in h.get("skip", [])} | DOS_FILES
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
         fv = DiskImage(disk).volumes[0]
+        left = {q.upper() for q in h.get("unused", {}).get(os.path.basename(disk), [])}
         for e in fv.listdir(0):
             if e["name"].upper() in skip or e["name"] in (".", ".."):
                 continue
             if e["is_dir"]:
                 if h.get("subdirs"):
-                    _copy_dir(fv, e["name"], vol, pre + e["name"])
+                    _copy_dir(fv, e["name"], vol, pre + e["name"], left)
+                continue
+            if e["name"].upper() in left:
                 continue
             _put(vol, pre + e["name"], fv.read(e["name"]))
     auto = vol.read("AUTOEXEC.BAT").decode("cp932").split("\r\n")

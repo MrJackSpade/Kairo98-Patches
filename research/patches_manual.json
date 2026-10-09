@@ -1385,5 +1385,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Watashi o Golf ni Tsuretette": [
+  {
+   "label": "This repo: games/watashi_golf (patcher working, machine translation in progress)",
+   "url": "../games/watashi_golf/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v27000",
+   "url": "https://vndb.org/v27000",
+   "source": "VNDB"
+  }
  ]
 }

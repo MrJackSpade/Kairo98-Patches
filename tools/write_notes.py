@@ -636,7 +636,10 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
             "hard-disk image (every disk's files in `%s/`, with the scripts' drive letters taken off "
             "their file names, started as the floppy's boot does); the base image is the collection's "
-            "`%s` with its own game removed." % (cfg["hdd"]["dir"], cfg["hdd"]["base"].replace("\\", "/")), ""]
+            "`%s` with its own game removed." % (cfg["hdd"]["dir"], cfg["hdd"]["base"].replace("\\", "/"))
+            + "".join("  %s's copy of %s is left out: another disk holds it differently, and the scripts load "
+                      "only that one." % (disk, ", ".join("`%s`" % f for f in files))
+                      for disk, files in cfg["hdd"].get("unused", {}).items()), ""]
     if "inline" in has:
         out.append("* A message after a speaker's name tag (a procedure that ends its line) starts on the "
                    "frame's second line.")
