@@ -4,5 +4,11 @@
  "image": "Dragon Knight III\\Dragon Knight III [HD]\\Dragon Knight III.hdi",
  "encoding": "ai5",
  "game_dir": "DR3",
- "boot_steps": "36:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot"
+ "boot_steps": "36:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot",
+ "calls": {
+  "26": {
+   "cells": 8,
+   "note": "the hero's name"
+  }
+ }
 }

@@ -1,0 +1,22 @@
+{
+ "title": "Doukyuusei 2",
+ "key": "elf.zip/Doukyuusei 2",
+ "image": "Doukyuusei 2\\Doukyuusei 2 (with Special Disk) [HD]\\Doukyuusei 2 (with Special Disk).hdi",
+ "encoding": "ai5",
+ "game_dir": "NANPA2",
+ "archives": [
+  "ELFSYS.DAT",
+  "SPECIAL.DAT"
+ ],
+ "boot_steps": "15:shot,1:key=49,40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "calls": {
+  "0": {
+   "cells": 8,
+   "note": "the hero's name"
+  },
+  "57": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ }
+}

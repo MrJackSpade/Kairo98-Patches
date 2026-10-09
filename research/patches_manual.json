@@ -1432,5 +1432,18 @@
    "url": "https://vndb.org/v723",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/Doukyuusei 2": [
+  {
+   "label": "This repo: games/doukyuusei_2 (patcher working, machine translation in progress)",
+   "url": "../games/doukyuusei_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v2337 (English release: the 2024 Windows remake, Winter Heat)",
+   "url": "https://vndb.org/v2337",
+   "source": "VNDB"
+  }
  ]
 }

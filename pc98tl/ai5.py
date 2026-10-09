@@ -96,7 +96,8 @@ def _expr(d, i):
 
 
 def _is_expr(b):
-    return b in (7, 8, 9) or 0x20 <= b <= 0x5a
+    # (03 alone is an empty expression; no statement starts with it)
+    return b in (3, 7, 8, 9) or 0x20 <= b <= 0x5a
 
 
 def _string(d, i):
@@ -123,9 +124,31 @@ def _args(d, i, values=None):
 def tokenize(d):
     """[(kind, start, end, extra)]: "ch" a text character, "ank" a string
     drawn as text, "poke" a 0D 40 command (extra: (index, [values])), "op"
-    any other statement (extra: its first byte), "struct" 00/01/02."""
-    i = struct.unpack_from("<H", d, 0)[0]
+    any other statement (extra: its first byte), "struct" 00/01/02, and
+    "tail": bytes after the script's last block that are not a script
+    (some files carry left-over data after their end; the engine never
+    runs into it)."""
     out = []
+    try:
+        _tokens(d, out)
+    except (Bad, IndexError, ValueError):
+        depth, cut = 0, None
+        for n, t in enumerate(out):
+            if t[0] == "struct" and t[3] == 1:
+                depth += 1
+            elif t[0] == "struct" and t[3] == 0:
+                depth = max(0, depth - 1)
+                if depth == 0:
+                    cut = n + 1
+        if cut is None:
+            raise
+        del out[cut:]
+        out.append(("tail", out[-1][2], len(d), None))
+    return out
+
+
+def _tokens(d, out):
+    i = struct.unpack_from("<H", d, 0)[0]
     while i < len(d):
         b, s = d[i], i
         if b in (0, 1, 2):
@@ -179,7 +202,6 @@ def tokenize(d):
         else:
             raise Bad("statement %02x at %x" % (b, i))
         out.append(("op", s, i, b))
-    return out
 
 
 def char(d, a):
@@ -226,7 +248,15 @@ def units(d, toks=None):
 
 
 def call_number(d, tok):
-    return _expr(d, tok[1] + 1)[1]
+    return _number(d, tok[1] + 1)
+
+
+def _number(d, i):
+    """The value of the expression at i, None where it is not one."""
+    try:
+        return _expr(d, i)[1]
+    except (Bad, IndexError):
+        return None
 
 
 WINDOW = (13, 14, 15, 16)       # the poke indexes of the window's left, top, right, bottom
@@ -269,7 +299,7 @@ def windows(d, toks):
             start = toks[n + 1][1]
             end = _block_end(d, start)
             bodies.append((start, end))
-            subs[_expr(d, s + 1)[1]] = [t[3] for t in toks if t[0] == "poke" and start <= t[1] < end]
+            subs[_number(d, s + 1)] = [t[3] for t in toks if t[0] == "poke" and start <= t[1] < end]
     state = {13: None, 14: None, 15: None, 16: None, 21: None}
     saved, body_end = None, None
     out = {}
@@ -284,7 +314,7 @@ def windows(d, toks):
         if kind == "poke":
             _apply(state, extra)
         elif kind == "op" and extra == 0x13:
-            for p in subs.get(_expr(d, s + 1)[1], ()):
+            for p in subs.get(_number(d, s + 1), ()):
                 _apply(state, p)
         elif kind == "ch":
             out[n] = (state[13], state[14], state[15], state[16], (state[21] or 0x210) & 0xFF)
@@ -293,9 +323,26 @@ def windows(d, toks):
 
 # ---- English
 
-POKE_HALF = bytes.fromhex("0d 40 07 57 03 08 13 03 07 43 20 03")   # line height 16, character width 1
-POKE_FULL = bytes.fromhex("0d 40 07 57 03 08 23 03 07 43 20 03")   # line height 16, character width 2
+def font_poke(width, height):
+    """0D 40 21 (width << 8) + height: 08 (w << 4 | 3) (h << 2) 03 (nine bytes; the value in the
+    08 form: ((x >> 2) << 8 | y) >> 2)."""
+    if not 2 <= height <= 0x3F:
+        raise SystemExit("a line height of %d" % height)
+    return bytes([0x0D, 0x40, 0x07, 0x57, 0x03, 0x08, width << 4 | 3, height << 2, 0x03])
 NAME_CELLS = 8          # the hero's name a subroutine prints (four full-width letters)
+# the subroutine calls messages hold ({Xn}): {n: (cells drawn, a page break: a key wait and a clear)};
+# game.json "calls": {"n": {"cells": .., "page": .., "note": ..}}
+CALLS = {}
+
+
+def set_calls(cfg):
+    CALLS.clear()
+    for n, c in cfg.get("calls", {"26": {"cells": NAME_CELLS, "note": "the hero's name"}}).items():
+        CALLS[int(n)] = (c.get("cells", 0), bool(c.get("page")))
+
+
+def _call_cells(n):
+    return CALLS.get(n, (NAME_CELLS, False))[0]
 _TOKEN = re.compile(r"\{([XU])([0-9A-Fa-f]+)\}")
 _SUBST = {"’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-", "…": "..."}
 
@@ -346,7 +393,8 @@ def pieces(text, calls, dic):
         if m is None:
             break
         if m.group(1) == "X":
-            out.append(("call", calls[int(m.group(2))], NAME_CELLS))
+            n = int(m.group(2))
+            out.append(("page" if CALLS.get(n, (0, False))[1] else "call", calls[n], _call_cells(n)))
         else:
             b = _wide(bytes.fromhex(m.group(2)), dic)
             out.append(("wide", b, 2) if b else ("word", "?", 1))
@@ -359,10 +407,15 @@ class Writer:
     the character width switched around them, lines wrapped between words,
     a new page (11: a key wait and a clear) where the window is full."""
 
-    def __init__(self, dic, width, lines, state):
+    def __init__(self, dic, width, lines, state, height=16, half=False, restore=True, guard=False):
+        """half: the width is 1 already (the message before set it and nothing
+        between draws); restore: the width goes back to 2 at the end; guard:
+        the statement before takes arguments a string would join."""
         self.dic, self.width, self.lines, self.st = dic, width, lines, state
+        self.half_poke, self.full_poke = font_poke(1, height), font_poke(2, height)
         self.out = bytearray()
-        self.open = self.half = self.guard = False
+        self.open = False
+        self.half, self.guard, self.restore = half, guard, restore
 
     def _close(self):
         if self.open:
@@ -374,7 +427,7 @@ class Writer:
             # (after 11 the width command comes first: a string right after it would be
             # taken for its argument)
             self._close()
-            self.out += POKE_HALF
+            self.out += self.half_poke
             self.half, self.guard = True, False
         if not self.open:
             self.out.append(6)
@@ -385,7 +438,7 @@ class Writer:
     def wide(self, b, cells):
         self._close()
         if self.half:
-            self.out += POKE_FULL
+            self.out += self.full_poke
             self.half = False
         self.out += b
         self.guard = False
@@ -404,8 +457,8 @@ class Writer:
 
     def finish(self):
         self._close()
-        if self.half:
-            self.out += POKE_FULL
+        if self.half and self.restore:
+            self.out += self.full_poke
             self.half = False
         return bytes(self.out)
 
@@ -427,6 +480,13 @@ class Writer:
                 val, cells = val[k:], cells - k
             if kind == "word":
                 self.ascii(val)
+            elif kind in ("call", "page"):
+                # (a string right after a call would be read as its argument: the width command
+                # comes first again)
+                self.wide(val, cells)
+                self.guard = True
+                if kind == "page":
+                    self.st["line"] = self.st["col"] = 0
             else:
                 self.wide(val, cells)
 
@@ -470,8 +530,9 @@ def _win(w):
     return tuple(DEFAULT_WINDOW[k] if v is None else v for k, v in enumerate(w))
 
 
-def _cells_jp(toks, k, j):
-    return sum(NAME_CELLS if t[0] == "op" else 2 for t in toks[k:j])
+def _cells_jp(toks, k, j, d=None):
+    return sum((_call_cells(call_number(d, t)) if d is not None else NAME_CELLS) if t[0] == "op" else 2
+               for t in toks[k:j])
 
 
 def _lines(top, bottom, h):
@@ -481,6 +542,26 @@ def _lines(top, bottom, h):
     while top + n * h + h - 2 < bottom:
         n += 1
     return n
+
+
+# statements that may stand between two messages without drawing: the key wait, the speaker
+# command, pokes other than the font's
+_QUIET_OPS = (0x10, 0x11)
+
+
+def _links(d, toks, us, values):
+    """{token index of a translated message whose width need not go back to
+    two: the next statement that draws is another translated message, in
+    the same block (no structure byte between, so nothing branches in)}."""
+    out = set()
+    msgs = [(k, j) for k, j, kind, _jp in us if kind == "msg" and toks[k][1] in values]
+    for (k, j), (k2, _j2) in zip(msgs, msgs[1:]):
+        between = toks[j:k2]
+        if all(t[0] == "op" and (t[3] in _QUIET_OPS or t[3] == 0x13 and
+                                 CALLS.get(call_number(d, t), (0, False))[1])
+               or t[0] == "poke" and t[3][0] is not None and t[3][0] != FONT for t in between):
+            out.add(k)
+    return out
 
 
 def rebuild(d, values, warn, ids, name):
@@ -493,6 +574,8 @@ def rebuild(d, values, warn, ids, name):
     win = windows(d, toks)
     dic = _dict(d)
     by_start = {k: (j, kind) for k, j, kind, _jp in us}
+    linked = _links(d, toks, us, values)
+    carry = False
     out = bytearray(d[:toks[0][1]])
     st = {"line": 0, "col": 0}
     n = 0
@@ -511,7 +594,7 @@ def rebuild(d, values, warn, ids, name):
                 if ukind == "item":
                     # (a menu draws its items' characters itself: full-width letters, within the
                     # Japanese item's width)
-                    room = _cells_jp(toks, n, j)
+                    room = _cells_jp(toks, n, j, d)
                     b = item_bytes(values[s], calls, dic)
                     used = sum(NAME_CELLS if c[:1] == b"\x13" else 2 for c in b)
                     if used > room:
@@ -523,7 +606,7 @@ def rebuild(d, values, warn, ids, name):
                     continue
                 if ukind == "label":
                     # (one line in the Japanese label's slot: half-width letters, as many as its cells)
-                    room = _cells_jp(toks, n, j)
+                    room = _cells_jp(toks, n, j, d)
                     ps = [p for p in ps if p[0] != "nl"]
                     used = sum(c for _k, _v, c in ps)
                     if used > room:
@@ -537,14 +620,17 @@ def rebuild(d, values, warn, ids, name):
                             keep.append(p)
                             total += p[2]
                         ps = keep
-                    w = Writer(dic, room, 1, {"line": 0, "col": 0})
+                    w = Writer(dic, room, 1, {"line": 0, "col": 0}, h or 16)
                     w.text(ps)
                     out += w.finish()
                     n = j
                     continue
-                w = Writer(dic, width, lines, st)
+                prev = toks[n - 1] if n else None
+                w = Writer(dic, width, lines, st, h or 16, half=carry, restore=n not in linked,
+                           guard=bool(prev and prev[0] == "op" and prev[2] - prev[1] == 1))
                 w.text(ps)
                 out += w.finish()
+                carry = n in linked and w.half
                 n = j
                 continue
             # (Japanese kept: the window's cursor moves on as it would)
@@ -553,7 +639,10 @@ def rebuild(d, values, warn, ids, name):
                     st["line"] = min(st["line"] + 1, lines - 1)
                     st["col"] = 0
                 else:
-                    st["col"] += NAME_CELLS if t[0] == "op" else 2
+                    if t[0] == "op" and CALLS.get(call_number(d, t), (0, False))[1]:
+                        st["line"] = st["col"] = 0
+                    else:
+                        st["col"] += _call_cells(call_number(d, t)) if t[0] == "op" else 2
         out += d[s:e]
         n += 1
     return bytes(out)
@@ -571,10 +660,56 @@ def _install(cfg, src):
     return _hdd_install(cfg, src)
 
 
-def _scripts(vol, cfg):
-    d = cfg["game_dir"]
-    return [(p.split("/")[-1], p) for p, *_ in vol.walk()
-            if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
+# a script is loaded at DS:0000 and runs there; the engine's variables start at DS:E000h
+SCRIPT_ROOM = 0xE000
+
+
+class Scripts:
+    """The game's MES files: loose in the game folder, or in Elf's archives
+    (game.json "archives": [archive file names in the game folder]; the
+    scripts in one are found from start.mes through the script names the
+    scripts give, as the archive holds hashes only).  Names are as the refs
+    give them: "FILE.MES", or "ARCHIVE/file.mes"."""
+
+    def __init__(self, vol, cfg):
+        self.vol, self.cfg = vol, cfg
+        self.arcs, self.changed = {}, {}
+        d = cfg["game_dir"]
+        if not cfg.get("archives"):
+            self.items = [(p.split("/")[-1], p) for p, *_ in vol.walk()
+                          if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
+            return
+        from . import elfarc
+        self.items = []
+        for name in cfg["archives"]:
+            arc = elfarc.Archive(vol.read(d + "/" + name))
+            self.arcs[name] = arc
+            todo, seen = ["start.mes"], set()
+            while todo:
+                f = todo.pop()
+                if f in seen or arc.index(f) is None:
+                    continue
+                seen.add(f)
+                self.items.append(("%s/%s" % (name, f), (name, f)))
+                for m in re.findall(rb"\x06([!-~]{1,12}\.mes)\x06", arc.read(f), re.I):
+                    todo.append(m.decode("ascii").lower())
+            self.items.sort()
+
+    def read(self, where):
+        if isinstance(where, tuple):
+            return self.arcs[where[0]].read(where[1])
+        return self.vol.read(where)
+
+    def write(self, where, data):
+        if isinstance(where, tuple):
+            self.changed.setdefault(where[0], {})[where[1]] = data
+        else:
+            self.vol.write(where, data)
+
+    def commit(self):
+        d = self.cfg["game_dir"]
+        for name, files in self.changed.items():
+            self.vol.write(d + "/" + name, self.arcs[name].rebuilt(files))
 
 
 PREFIX = {"msg": "m", "item": "i", "label": "l"}
@@ -582,26 +717,32 @@ PREFIX = {"msg": "m", "item": "i", "label": "l"}
 
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    set_calls(cfg)
+    notes = {int(n): c.get("note", "") for n, c in
+             cfg.get("calls", {"26": {"note": "the hero's name"}}).items()}
     img, cfg2 = _install(cfg, src)
     vol = img.volumes[0]
     merged, order = {}, []
-    for name, path in _scripts(vol, cfg2):
-        d = vol.read(path)
+    store = Scripts(vol, cfg2)
+    for name, path in store.items:
+        d = store.read(path)
         toks = tokenize(d)
         win = windows(d, toks)
         for k, j, kind, jp in units(d, toks):
             if not jp.strip("　 \n") or is_grid(jp):
                 continue
             left, top, right, bottom, h = _win(win[k])
-            cellsn = _cells_jp(toks, k, j) if kind in ("item", "label") else max(8, right - left - 1)
+            cellsn = _cells_jp(toks, k, j, d) if kind in ("item", "label") else max(8, right - left - 1)
             key = (kind, jp)
             ref = "%s:%04x" % (name, toks[k][1])
             if key in merged:
                 merged[key]["refs"].append(ref)
                 continue
             e = {"kind": kind, "jp": jp, "en": "", "refs": [ref], "max_cells": cellsn}
-            if "{X26}" in jp:
-                e["note"] = "{X26}: the hero's name (the script's subroutine 26 prints it)"
+            used = sorted({int(x) for x in re.findall(r"\{X(\d+)\}", jp)})
+            if used:
+                e["note"] = "; ".join("{X%d}: %s (the script's subroutine %d)" % (x, notes.get(x) or "a subroutine call", x)
+                                      for x in used)
             merged[key] = e
             order.append(key)
     counts, strings = {}, []
@@ -622,19 +763,48 @@ def run_extract(here, src):
     print("wrote %s: %d strings" % (out, len(strings)))
 
 
+_SPEAKER = re.compile(r"【[^】]{0,12}】")
+_BLANK = "　 " + chr(10)
+
+
+def pseudo_text(e):
+    """The --pseudo filler for a string: a part between page-break calls
+    each gets filler, its speaker's bracket (and name call) kept."""
+    from .text import pseudo
+    out = ""
+    for part in re.split(r"(\{X\d+\})", e["jp"]):
+        m = re.fullmatch(r"\{X(\d+)\}", part)
+        if m:
+            out += part
+            continue
+        if not part.strip(_BLANK):
+            out += part if part.startswith("】") else ""
+            continue
+        head = ""
+        if part.startswith("】"):
+            head, part = "】", part[1:]
+        sp = _SPEAKER.match(part)
+        if sp:
+            head, part = head + sp.group(), part[sp.end():]
+        if part.startswith("【") and "】" not in part[:12]:
+            head, part = head + "【", part[1:]
+        out += head + (pseudo(e["id"], 2 * len(part)) if part.strip(_BLANK) else part)
+    return out
+
+
 def run_patch(here, src, dst, mode="en"):
     from .text import pseudo
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
+    set_calls(cfg)
     img, cfg2 = _install(cfg, src)
     vol = img.volumes[0]
     by_ref, ids = {}, {}
     for e in doc["strings"]:
         if mode == "pseudo":
-            body = pseudo(e["id"], 2 * len(e["jp"].replace("{X26}", "")))
-            text = ("【{X26}】" + body) if e["jp"].startswith("【{X26}】") else body
+            text = pseudo_text(e)
         else:
             text = e["en"]
         for r in e["refs"]:
@@ -643,14 +813,40 @@ def run_patch(here, src, dst, mode="en"):
             if text:
                 by_ref[(f, int(a, 16))] = text
     warn, done = [], 0
-    for name, path in _scripts(vol, cfg2):
-        d = vol.read(path)
+    store = Scripts(vol, cfg2)
+    for name, path in store.items:
+        d = store.read(path)
         values = {a: t for (f, a), t in by_ref.items() if f == name}
         new = rebuild(d, values, warn, ids, name)
+        room = cfg.get("script_room", SCRIPT_ROOM)
+        if len(new) > room and mode != "pseudo":
+            raise SystemExit("%s: %d bytes, the script buffer holds %d; shorten these strings: %s" % (
+                name, len(new), room, ", ".join(sorted({ids[(name, a)] for a in values}))))
+        cut = 0
+        while len(new) > room:
+            # (the --pseudo filler: every string cut in proportion until the script fits)
+            total = sum(len(v) for v in values.values())
+            ratio = max(0.0, 1 - (len(new) - room) * 1.1 / max(1, total))
+            before = total
+            for a in values:
+                v = values[a]
+                keep = max(min(len(v), 4), int(len(v) * ratio))
+                # (a token is not cut through)
+                while keep < len(v) and "{" in v[:keep] and "}" not in v[v.rindex("{", 0, keep):keep]:
+                    keep += 1
+                values[a] = v[:keep]
+            after = sum(len(v) for v in values.values())
+            if after == before:
+                raise SystemExit("%s: the script does not fit its buffer even with its filler cut" % name)
+            cut += before - after
+            new = rebuild(d, values, [], ids, name)
+        if cut:
+            warn.append("%s: the filler was cut by %d letters to fit the script buffer" % (name, cut))
         if new != d:
             tokenize(new)
-            vol.write(path, new)
+            store.write(path, new)
             done += 1
+    store.commit()
     for w in dict.fromkeys(warn):
         print("warning:", w)
     img.save(dst)

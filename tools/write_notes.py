@@ -814,7 +814,11 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
              "the collection's `%s` with its own game removed." % (
                  h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")) if h else
              "The patch works on the game's hard-disk release (the game in `%s/`), which has room for a "
-             "longer script." % cfg["game_dir"]), "",
+             "longer script." % cfg["game_dir"]) + (
+                "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
+                "only, so the scripts are found from `start.mes` through the script names the scripts "
+                "give; a rebuilt script is compressed again and the archive laid out anew." % ", ".join(
+                    "`%s`" % f for f in cfg["archives"]) if cfg.get("archives") else ""), "",
             "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
             "of the Japanese.",
             "* English is written as the engine's half-width strings (06 ... 06), between commands that "
@@ -830,9 +834,19 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
     out.append("Translation and the content classification (♥) are done by the translation model; "
                "%d of %d strings have English so far." % (done, len(strings)))
     out += ["", "## Limits", "",
-            "* Messages (`m` ids): any length; `\\n` starts a new line.  `max_cells` is a line's room in "
-            "its window (English letters); longer text wraps between words and pages.",
-            "* `{X26}` is the hero's name (the script's subroutine 26 prints it): keep it in the English.",
+            "* Messages (`m` ids): any length within the script's buffer (below); `\\n` starts a new "
+            "line.  `max_cells` is a line's room in its window (English letters); longer text wraps "
+            "between words and pages.",
+            ] + ["* `{X%s}` is %s (the script's subroutine %s%s): keep it in the English." % (
+                n, c.get("note", "a subroutine call"), n,
+                "; the English goes on on a fresh page after it" if c.get("page") else "")
+                for n, c in cfg.get("calls", {"26": {"note": "the hero's name"}}).items()] + [
+            "* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:E000h: "
+            "a script with its English may take %d bytes.  Each English letter is one byte; a message "
+            "takes up to twenty bytes more for the commands around it (two where messages follow one "
+            "another), and a full-width character or a name call in it about twenty more.  A build "
+            "whose script outgrows its buffer is "
+            "refused and names the script and its strings."  % cfg.get("script_room", 0xE000),
             "* Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is "
             "written full-width, so it holds half as many letters.  Longer ones are cut and reported.",
             "* Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's "

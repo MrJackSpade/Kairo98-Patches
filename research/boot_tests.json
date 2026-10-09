@@ -2629,5 +2629,27 @@
    "Shops, battles, camp menu, later towns, endings",
    "not yet seen"
   ]
+ ],
+ "doukyuusei_2": [
+  [
+   "The hard-disk release (both games from its menu); the logo and the start menu",
+   "OK: boots; the start menu's items as full-width filler"
+  ],
+  [
+   "Name entry",
+   "The entry's prompt is a picture; its window takes no emulated key or click (the original's neither), so the scenes below were run in a test image with the name entry left out"
+  ],
+  [
+   "Prologue (the classroom, the teacher)",
+   "OK: filler wrapped in the bottom window, the speaker's bracket kept, pages waiting for a key"
+  ],
+  [
+   "Scripts over the 57344-byte buffer with full filler",
+   "the --pseudo build cuts their filler to fit (reported per script); a real build over it is refused"
+  ],
+  [
+   "The town map, the other girls' scenes, the Special Disk, endings",
+   "not yet seen"
+  ]
  ]
 }

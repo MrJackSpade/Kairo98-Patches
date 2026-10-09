@@ -121,5 +121,10 @@
   "not_handled": [
    "The title line ADVSHELL.COM prints while it loads the engine (`Ｆａｉｒｙｔａｌｅ　海賊版`, a brand name in full-width letters and three kanji): the program-string search takes only runs with kana."
   ]
+ },
+ "doukyuusei_2": {
+  "remarks": [
+   "Script room: in these scripts the English (with its commands) has fewer than three bytes for each Japanese character, so their English must be kept short (bytes for English / Japanese characters): `17.mes` 25419 / 17354; `27.mes` 25029 / 16595; `14.mes` 25503 / 15815; `15.mes` 27286 / 16268; `30.mes` 27066 / 15378; `39.mes` 25406 / 14291; `16a.mes` 23921 / 12915; `42.mes` 28230 / 15057; `41.mes` 25307 / 13292; `01.mes` 28598 / 14886; `26.mes` 27184 / 13514; `22.mes` 30917 / 15196; `21.mes` 29086 / 13196; `36.mes` 30258 / 13111; `43.mes` 31126 / 13468; `25.mes` 39443 / 16099; `SPECIAL.DAT/hint.mes` 49002 / 19738; `38.mes` 28762 / 11545; `31.mes` 31897 / 11756; `02.mes` 30631 / 11224; `40.mes` 33932 / 12069; `37.mes` 32798 / 11087; `39_sub.mes` 35471 / 11940; `62b.mes` 35715 / 11951."
+  ]
  }
 }

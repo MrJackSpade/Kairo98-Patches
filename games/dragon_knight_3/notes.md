@@ -24,8 +24,9 @@ Translation and the content classification (♥) are done by the translation mod
 
 ## Limits
 
-* Messages (`m` ids): any length; `\n` starts a new line.  `max_cells` is a line's room in its window (English letters); longer text wraps between words and pages.
-* `{X26}` is the hero's name (the script's subroutine 26 prints it): keep it in the English.
+* Messages (`m` ids): any length within the script's buffer (below); `\n` starts a new line.  `max_cells` is a line's room in its window (English letters); longer text wraps between words and pages.
+* `{X26}` is the hero's name (the script's subroutine 26): keep it in the English.
+* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:E000h: a script with its English may take 57344 bytes.  Each English letter is one byte; a message takes up to twenty bytes more for the commands around it (two where messages follow one another), and a full-width character or a name call in it about twenty more.  A build whose script outgrows its buffer is refused and names the script and its strings.
 * Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is written full-width, so it holds half as many letters.  Longer ones are cut and reported.
 * Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's buttons): one line, `max_cells` half-width letters; longer ones are cut and reported.
 

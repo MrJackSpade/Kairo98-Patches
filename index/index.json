@@ -73797,15 +73797,27 @@
      "path": "Doukyuusei 2\\Doukyuusei 2 [FD]\\Doukyuusei 2 (Disk K).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doukyuusei_2 (patcher working, machine translation in progress)",
+     "url": "../games/doukyuusei_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2337 (English release: the 2024 Windows remake, Winter Heat)",
+     "url": "https://vndb.org/v2337",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4564 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Dragon Knight",
