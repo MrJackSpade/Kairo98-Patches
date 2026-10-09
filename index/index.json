@@ -75471,8 +75471,8 @@
      "wip": true
     },
     {
-     "label": "VNDB",
-     "url": "https://vndb.org/v1957",
+     "label": "VNDB v7825",
+     "url": "https://vndb.org/v7825",
      "source": "VNDB"
     }
    ],
@@ -75970,16 +75970,21 @@
      "url": "../games/shangrlia/notes.md",
      "source": "this repo",
      "wip": true
+    },
+    {
+     "label": "VNDB v3182",
+     "url": "https://vndb.org/v3182",
+     "source": "VNDB"
     }
    ],
    "heart": true,
    "heart_basis": "VNDB r6251 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "machine translation (this repo)"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Shangrlia 2",
@@ -172210,16 +172215,21 @@
      "url": "../games/el_hazard/notes.md",
      "source": "this repo",
      "wip": true
+    },
+    {
+     "label": "VNDB v9084",
+     "url": "https://vndb.org/v9084",
+     "source": "VNDB"
     }
    ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "machine translation (this repo)"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "PistonSoft.zip/His Name is Diamond",

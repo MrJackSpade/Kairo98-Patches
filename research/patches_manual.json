@@ -1452,6 +1452,11 @@
    "url": "../games/shangrlia/notes.md",
    "source": "this repo",
    "wip": true
+  },
+  {
+   "label": "VNDB v3182",
+   "url": "https://vndb.org/v3182",
+   "source": "VNDB"
   }
  ],
  "PioneerLdc.zip/El-Hazard - The Magnificent World": [
@@ -1460,6 +1465,11 @@
    "url": "../games/el_hazard/notes.md",
    "source": "this repo",
    "wip": true
+  },
+  {
+   "label": "VNDB v9084",
+   "url": "https://vndb.org/v9084",
+   "source": "VNDB"
   }
  ],
  "elf.zip/Metal Eye": [
@@ -1470,8 +1480,8 @@
    "wip": true
   },
   {
-   "label": "VNDB",
-   "url": "https://vndb.org/v1957",
+   "label": "VNDB v7825",
+   "url": "https://vndb.org/v7825",
    "source": "VNDB"
   }
  ]
