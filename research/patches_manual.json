@@ -1277,5 +1277,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/JYB": [
+  {
+   "label": "This repo: games/jyb (patcher working, machine translation in progress)",
+   "url": "../games/jyb/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -128,6 +128,17 @@ def _cmd(data, tok, code):
     return tok[0] == "cmd" and data[tok[1]] == code
 
 
+def _def_frame(data, toks, bs, be):
+    """The text frame a procedure body (bs..be) sets: its last A6, else None."""
+    out = None
+    for x, (k, s, _e) in enumerate(toks):
+        if bs <= s < be and k == "cmd" and data[s] == 0xA6:
+            nums = [t for t in toks[x + 1:x + 5] if t[0] == "num"]
+            if len(nums) == 4:
+                out = tuple(_num(data, t[1]) for t in nums)
+    return out
+
+
 def units(data, toks, proc_frames=None, frame=None):
     """[(first, end, kind, frame)] of the text runs: token index range,
     "msg" or "item", and the text frame (x1, y1, x2, y2) in force (set by
@@ -136,8 +147,18 @@ def units(data, toks, proc_frames=None, frame=None):
     out, i = [], 0
     menu_depth, proc_depth, depth = [], [], 0      # depths of open menu item / procedure blocks
     pending_menu = pending_proc = False
+    # (a script that defines a procedure again partway through: the frame of the definition met
+    # last on the way is in force, not the file's last one; the file's frames feed calls first)
+    redefs = {}
+    if proc_frames:
+        proc_frames = dict(proc_frames)
+        defs = proc_defs(data, toks)
+        if len({pn for pn, _bs, _be in defs}) < len(defs):
+            redefs = {bs: (pn, _def_frame(data, toks, bs, be)) for pn, bs, be in defs}
     while i < len(toks):
         k, s, e = toks[i]
+        if s in redefs and redefs[s][1] is not None:
+            proc_frames[redefs[s][0]] = redefs[s][1]
         if k == "cmd" and data[s] == 0xA6:
             nums = [t for t in toks[i + 1:i + 5] if t[0] == "num"]
             if len(nums) == 4:
@@ -1233,7 +1254,7 @@ def build(text, kind, frame, cells, brk, warn, sid, start=(0, 0), reserve=0, dow
 
 def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=None, fit=False, effects=None,
                  frames=None, fallback=None, fullwidth=False, default_frame=None, wait=WAIT, marker=0,
-                 forced_break=None, tight=False, game_gap=None):
+                 forced_break=None, tight=False, game_gap=None, staged=None):
     """The stream with its text runs replaced.  table: (slot bytes, slot
     count, the startup script's procedure numbers).  A procedure body may grow to
     the larger of its own length and its room in the procedure table;
@@ -1252,7 +1273,12 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
     again = redraws(data, toks, us)
     # the oldest engines' key wait clears the box: a page end
     clears = (forced_break or fallback) == KEY_WAIT
-    starts = [_start(data, toks, i, proc, insert, effects or {}, clears) for i, _j, _k, _f in us]
+    # (a file that defines a procedure again partway through: the effects of the definitions
+    # met so far, staged_effects)
+    def eff_at(pos):
+        got = [e for at, e in staged or [] if at <= pos]
+        return got[-1] if got else (staged[0][1] if staged else effects or {})
+    starts = [_start(data, toks, i, proc, insert, eff_at(toks[i][1]), clears) for i, _j, _k, _f in us]
     # a page break: a wait and the message-end procedure, or the file's
     # own message end where it has none
     # (the message-end procedure waits for the key itself, as after every
@@ -1289,7 +1315,7 @@ def patch_stream(data, toks, tag, name, by_ref, ids, proc, warn, table, insert=N
         start = ((end[0] + down, col) if down else (end[0], end[1] + col)) if cont and end else (down, col)
         # room for what is printed after it on its line (a name, an
         # ellipsis), and the lines that moves on before more text
-        reserve, down, follows = _after(data, toks, j, proc, insert, effects or {}, clears)
+        reserve, down, follows = _after(data, toks, j, proc, insert, eff_at(toks[i][1]), clears)
         down = down if follows else 0
         s, e = toks[i][1], toks[j - 1][2]
         # a question with a menu after it keeps to its Japanese lines'
@@ -1462,15 +1488,17 @@ def resolve_frames(frames):
     return {pn: frame(pn, frozenset()) for pn in frames}
 
 
-def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None):
+def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None, defs=None):
     """{number: facts} of the procedures a stream defines, read off their
     bodies, for resolve_effects: the columns of text they print (the
     Japanese's or the English's, the wider; a string variable shown with
     "DISP @n" counts as its variable's widest value, var_cols {n:
     columns}, or as a name of name_cols), their line breaks (A5),
     whether they set the frame or clear the text (A6, AA, AB, or a call
-    of the message-end procedure), and the procedures they call."""
-    defs = procs(data, toks)
+    of the message-end procedure), and the procedures they call.
+    defs: {number: (body start, body end)} to read in place of the
+    file's last definitions (see staged_effects)."""
+    defs = defs if defs is not None else procs(data, toks)
     starts = {t[1]: x for x, t in enumerate(toks)}
     us = units(data, toks)
     out = {}
@@ -1506,6 +1534,24 @@ def proc_effects(data, toks, name, tag, by_ref, proc, name_cols=0, var_cols=None
 
 
 _DISP = re.compile(rb'^"DISP @(\d+)"$')
+
+
+def staged_effects(data, toks, layer, base):
+    """[(position, effects)] for a stream that defines a procedure more
+    than once: at each definition, the effects in force from there on
+    (the definitions met so far, the first ones before them), resolved
+    over base; None where every procedure is defined once.  layer(defs)
+    gives proc_effects for a definition map."""
+    every = proc_defs(data, toks)
+    if len({pn for pn, _bs, _be in every}) == len(every):
+        return None
+    first, cur, out = {}, {}, []
+    for pn, bs, be in every:
+        first.setdefault(pn, (bs, be))
+    for pn, bs, be in every:
+        cur[pn] = (bs, be)
+        out.append((bs, resolve_effects([base, layer({**first, **cur})])))
+    return out
 
 
 def resolve_effects(layers):
@@ -1880,9 +1926,11 @@ def run_patch(here, src, dst, mode="en"):
             effects = resolve_effects([start_eff, proc_effects(data, streams[0][2], name, "", texts, proc,
                                                                     name_cols, var_cols)])
             frames = resolve_frames({**frames_anywhere, **proc_frames(data, streams[0][2]), **proc_frame_fix})
+            staged = staged_effects(data, streams[0][2], lambda defs: proc_effects(
+                data, streams[0][2], name, "", texts, proc, name_cols, var_cols, defs), start_eff)
             new = patch_stream(data, streams[0][2], "", name, texts, ids, proc, warn, nums, insert, fit, effects,
                                frames, game_break, cfg.get("menu_fullwidth", False), default_frame, wait,
-                               cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
+                               cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap, staged)
             if len(streams) > 1:
                 # the tails: re-encrypt each rebuilt tail in place of the old one
                 toks = av.tokenize(new, extraop)
@@ -1892,12 +1940,16 @@ def run_patch(here, src, dst, mode="en"):
                     key = _num(new, [t for t in toks if t[2] == s][0][1])
                     effects = resolve_effects([start_eff, proc_effects(inner, itoks, name, tag, texts, proc,
                                                                             name_cols, var_cols)])
+                    iproc = end_proc(inner, itoks, effects) or proc
+                    istaged = staged_effects(inner, itoks, lambda defs: proc_effects(
+                        inner, itoks, name, tag, texts, iproc, name_cols, var_cols, defs), start_eff)
                     rebuilt = patch_stream(inner, itoks, tag, name, texts, ids,
-                                           end_proc(inner, itoks, effects) or proc, warn, nums, insert, fit, effects,
+                                           iproc, warn, nums, insert, fit, effects,
                                            resolve_frames({**frames, **proc_frames(inner, itoks), **proc_frame_fix}),
                                            game_break,
                                            cfg.get("menu_fullwidth", False), default_frame, wait,
-                                           cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap)
+                                           cfg.get("marker_cols", 0), forced, name.upper() in tight, game_gap,
+                                           istaged)
                     out += new[pos:s] + av.encrypt(rebuilt, key)
                     pos = e
                 new = bytes(out + new[pos:])

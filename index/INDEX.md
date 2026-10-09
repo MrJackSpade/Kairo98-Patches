@@ -238,6 +238,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Erotic Baka Novel Series 2 - Itsuka Dokoka de | [This repo: games/itsuka_dokoka_de (patcher working, machine translation in progress)](../games/itsuka_dokoka_de/notes.md) |
 | Cocktail Soft | Halfmoon ni Kawaru made | [This repo: games/halfmoon (patcher working, machine translation in progress)](../games/halfmoon/notes.md) |
 | Cocktail Soft | Hare Nochi Munasawagi! | [This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)](../games/hare_nochi_munasawagi/notes.md) |
+| Cocktail Soft | JYB | [This repo: games/jyb (patcher working, machine translation in progress)](../games/jyb/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
 | Cocktail Soft | Noushuku Angel 120% (U-Jin Presents) | [This repo: games/noushuku_angel (patcher working, machine translation in progress)](../games/noushuku_angel/notes.md) |
@@ -1616,7 +1617,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Hare Nochi Munasawagi! [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Hare Nochi Oosawagi! [FD extras]
 - ♥ Illumina! [FD extras]
-- ♥ JYB [FD HD] `adv98v`
+- ♥ JYB [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kerakeraboshi [FD HD] `adv98v`
 - ♥ Kurukuru Party - Princess Quest [FD HD] `adv98v`
 - ♥ Liberty [FD]

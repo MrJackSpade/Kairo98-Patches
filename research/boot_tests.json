@@ -2313,5 +2313,27 @@
    "The story, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "jyb": [
+  [
+   "Title menu",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (Tcm/MouseNam.Tcm)",
+   "Its prompt as filler; it takes no emulated input, so for the rest of the test a test image left out its two calls in STARTUP.MES (no-ops of the same length)"
+  ],
+  [
+   "Opening (the three girls' picture, the dialogue under it)",
+   "OK: each speaker tag on its line and the filler wrapped below it in the box under the picture, pages waiting for a click (OPENING.MES defines its speaker and box procedures again per scene)"
+  ],
+  [
+   "The speech-bubble scene",
+   "OK: filler wrapped in each bubble at its place"
+  ],
+  [
+   "The town map, the shops, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }
