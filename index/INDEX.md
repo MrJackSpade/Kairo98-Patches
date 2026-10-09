@@ -257,6 +257,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale | Gokuraku Mandara | [This repo: games/gokuraku_mandara (patcher working, machine translation in progress)](../games/gokuraku_mandara/notes.md) |
 | Fairytale | Koroshi no Dress 3 | [This repo: games/koroshi_no_dress_3 (patcher working, machine translation in progress)](../games/koroshi_no_dress_3/notes.md) |
 | Fairytale | Kurutta Kajitsu | [This repo: games/kurutta_kajitsu (patcher working, machine translation in progress)](../games/kurutta_kajitsu/notes.md) |
+| Fairytale | Lam-Mal | [This repo: games/lam_mal (patcher working, machine translation in progress)](../games/lam_mal/notes.md) |
 | Fairytale | Lipstick Adventure 3 | [This repo: games/lipstick_adventure_3 (patcher working, machine translation in progress)](../games/lipstick_adventure_3/notes.md) |
 | Fairytale | Marine Philt | [This repo: games/marine_philt (patcher working, machine translation in progress)](../games/marine_philt/notes.md) |
 | Fairytale | Shinjuku Monogatari | [This repo: games/shinjuku_monogatari (patcher working, machine translation in progress)](../games/shinjuku_monogatari/notes.md) |
@@ -2311,7 +2312,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Koroshi no Dress 2 [FD extras]
 - ♥ Koroshi no Dress 3 [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kurutta Kajitsu [FD] `adv98v` — **EN**
-- ♥ Lam-Mal [FD] `adv98v`
+- ♥ Lam-Mal [FD] `adv98v` — *MTL (this repo)*
 - ♥ Lipstick #1 - Lolita-hen [FD]
 - ♥ Lipstick Adventure [FD extras]
 - ♥ Lipstick Adventure 2 [FD]

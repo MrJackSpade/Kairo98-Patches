@@ -2469,5 +2469,23 @@
    "Later scenes, saving and loading, endings",
    "not yet seen"
   ]
+ ],
+ "lam_mal": [
+  [
+   "The scroll's notices and menus at the start",
+   "OK: filler wrapped in the scroll, the items at their places"
+  ],
+  [
+   "Name window (MOUSENAM.I86)",
+   "OK: its prompt as half-width filler, the name field and the fixed name suffix in their places; its grid takes no emulated click or key, so for the rest of the test a test image left out its run in START.MES (no-ops of the same length)"
+  ],
+  [
+   "Opening (the logos, the town under the moon)",
+   "OK: filler wrapped under the picture, pages waiting for a click"
+  ],
+  [
+   "The game proper, the disk changes, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

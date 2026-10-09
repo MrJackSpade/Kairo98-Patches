@@ -81177,7 +81177,14 @@
      "path": "Lam-Mal\\Lam-Mal [FD]\\Lam-Mal (Disk 4 - Ni).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/lam_mal (patcher working, machine translation in progress)",
+     "url": "../games/lam_mal/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18062 (erotic content)",
    "engine": "adv98v",
@@ -81185,7 +81192,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Lipstick #1 - Lolita-hen",

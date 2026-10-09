@@ -1353,5 +1353,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Fairytale.zip/Lam-Mal": [
+  {
+   "label": "This repo: games/lam_mal (patcher working, machine translation in progress)",
+   "url": "../games/lam_mal/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
