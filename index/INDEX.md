@@ -239,6 +239,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Halfmoon ni Kawaru made | [This repo: games/halfmoon (patcher working, machine translation in progress)](../games/halfmoon/notes.md) |
 | Cocktail Soft | Hare Nochi Munasawagi! | [This repo: games/hare_nochi_munasawagi (patcher working, machine translation in progress)](../games/hare_nochi_munasawagi/notes.md) |
 | Cocktail Soft | JYB | [This repo: games/jyb (patcher working, machine translation in progress)](../games/jyb/notes.md) |
+| Cocktail Soft | Kerakeraboshi | [This repo: games/kerakeraboshi (patcher working, machine translation in progress)](../games/kerakeraboshi/notes.md) |
 | Cocktail Soft | Mayumi | [This repo: games/mayumi (patcher working, machine translation in progress)](../games/mayumi/notes.md) |
 | Cocktail Soft | Miki | [This repo: games/miki (patcher working, machine translation in progress)](../games/miki/notes.md) |
 | Cocktail Soft | Noushuku Angel 120% (U-Jin Presents) | [This repo: games/noushuku_angel (patcher working, machine translation in progress)](../games/noushuku_angel/notes.md) |
@@ -1618,7 +1619,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Hare Nochi Oosawagi! [FD extras]
 - ♥ Illumina! [FD extras]
 - ♥ JYB [FD HD] `adv98v` — *MTL (this repo)*
-- ♥ Kerakeraboshi [FD HD] `adv98v`
+- ♥ Kerakeraboshi [FD HD] `adv98v` — *MTL (this repo)*
 - ♥ Kurukuru Party - Princess Quest [FD HD] `adv98v`
 - ♥ Liberty [FD]
 - ♥ Mayumi [FD HD] `adv98v` — *MTL (this repo)*

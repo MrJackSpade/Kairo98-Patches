@@ -1285,5 +1285,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "CocktailSoft.zip/Kerakeraboshi": [
+  {
+   "label": "This repo: games/kerakeraboshi (patcher working, machine translation in progress)",
+   "url": "../games/kerakeraboshi/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
