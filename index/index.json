@@ -75463,15 +75463,27 @@
      "path": "Metal Eye\\Metal Eye [HD]\\Metal Eye.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/metal_eye (patcher working, machine translation in progress)",
+     "url": "../games/metal_eye/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB",
+     "url": "https://vndb.org/v1957",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15686 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Metal Eye 2",

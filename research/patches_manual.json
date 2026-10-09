@@ -1461,5 +1461,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "elf.zip/Metal Eye": [
+  {
+   "label": "This repo: games/metal_eye (patcher working, machine translation in progress)",
+   "url": "../games/metal_eye/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB",
+   "url": "https://vndb.org/v1957",
+   "source": "VNDB"
+  }
  ]
 }

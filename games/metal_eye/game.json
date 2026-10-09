@@ -1,0 +1,15 @@
+{
+ "title": "Metal Eye",
+ "key": "elf.zip/Metal Eye",
+ "image": "Metal Eye\\Metal Eye [HD]\\Metal Eye.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "game_dir": "METAL",
+ "calls": {
+  "19": {
+   "cells": 0,
+   "note": "a subroutine of the status screens (it places the cursor)"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}
