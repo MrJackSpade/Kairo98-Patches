@@ -1325,5 +1325,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "GameTechnopolis.zip/Tessera (IV)": [
+  {
+   "label": "This repo: games/tessera (patcher working, machine translation in progress)",
+   "url": "../games/tessera/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

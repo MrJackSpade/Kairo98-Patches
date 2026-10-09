@@ -2405,5 +2405,23 @@
    "The other pages, exit",
    "not yet seen"
   ]
+ ],
+ "tessera": [
+  [
+   "Publisher logo and its start menu",
+   "OK: filler items at their places"
+  ],
+  [
+   "Prologue (the car, the woman in the forest), the title",
+   "OK: filler wrapped in the one-line box, pages waiting for a click"
+  ],
+  [
+   "The first scene (the motorcycle) with its command menu and submenu",
+   "OK: filler items at their places; the message below"
+  ],
+  [
+   "Later scenes, the name entry, saving and loading, endings",
+   "not yet seen"
+  ]
  ]
 }

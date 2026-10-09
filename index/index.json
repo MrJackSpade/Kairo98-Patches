@@ -99982,7 +99982,14 @@
      "path": "Tessera (IV)\\Tessera (IV) [HD]\\Tessera (IV).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tessera (patcher working, machine translation in progress)",
+     "url": "../games/tessera/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 7 of 7 classified Game Technopolis titles are adult",
    "engine": "adv98v",
@@ -99990,7 +99997,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Tsukune-chan no Daibouken",

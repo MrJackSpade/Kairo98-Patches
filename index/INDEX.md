@@ -289,6 +289,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Game Technopolis | Hatsukoi Monogatari | [This repo: games/hatsukoi_monogatari (patcher working, machine translation in progress)](../games/hatsukoi_monogatari/notes.md) |
 | Game Technopolis | Himitsu no Hanazono | [This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)](../games/himitsu_no_hanazono/notes.md) |
 | Game Technopolis | Kimi Dake ni Ai o | [This repo: games/kimi_dake_ni_ai_o (patcher working, machine translation in progress)](../games/kimi_dake_ni_ai_o/notes.md) |
+| Game Technopolis | Tessera (IV) | [This repo: games/tessera (patcher working, machine translation in progress)](../games/tessera/notes.md) |
 | Ides | Ides User's Club Disk Magazine #001 | [This repo: games/ides_club_001 (patcher working, machine translation in progress)](../games/ides_club_001/notes.md) |
 | Ides | Ides User's Club Disk Magazine #002 | [This repo: games/ides_club_002 (patcher working, machine translation in progress)](../games/ides_club_002/notes.md) |
 | Ides | Ides User's Club Disk Magazine #003 | [This repo: games/ides_club_003 (patcher working, machine translation in progress)](../games/ides_club_003/notes.md) |
@@ -2627,7 +2628,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Majaventure - Negi Mahjong [FD]
 - ♥ Ojousama Club [FD HD extras] `n88basic`
 - ♥ Otome Party [FD]
-- ♥ Tessera (IV) [FD HD extras] `adv98v`
+- ♥ Tessera (IV) [FD HD extras] `adv98v` — *MTL (this repo)*
 - ♥ Tsukune-chan no Daibouken [FD]
 - ♥ Virgin Dream [FD HD extras]
 
