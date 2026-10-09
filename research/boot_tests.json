@@ -2607,5 +2607,27 @@
    "The scripts in the second buffer (the characters' openings, events, endings), the board game",
    "not yet seen"
   ]
+ ],
+ "dragon_knight_3": [
+  [
+   "Six ELFDOS floppies laid out on a hard disk; the opening pictures and the title menu",
+   "OK: boots from the hard disk; the title menu's items as full-width filler"
+  ],
+  [
+   "Name entry",
+   "OK: its prompt and buttons as half-width filler in their slots; the character grid stays Japanese; the default name is taken"
+  ],
+  [
+   "Town dialogue (the two-line box)",
+   "OK: filler wrapped between words in the box, the hero's name in brackets, pages waiting for a key"
+  ],
+  [
+   "Event scene (the bottom text)",
+   "OK: filler wrapped across the bottom window, pages waiting for a key"
+  ],
+  [
+   "Shops, battles, camp menu, later towns, endings",
+   "not yet seen"
+  ]
  ]
 }

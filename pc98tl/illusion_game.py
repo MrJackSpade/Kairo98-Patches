@@ -19,7 +19,7 @@ import re
 
 from .disk import DiskImage
 from .alice_sys2_tl import sha256
-from . import illusion, exepack
+from . import elfdos, exepack, illusion
 
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -228,7 +228,8 @@ def _hdd_install(cfg, src):
 
     cfg["hdd"]: {"base": DOS hard-disk image (relative to the collection),
     "remove": [the base's own game entries], "dir": install directory,
-    "disks": [the other floppies, next to the source image], "skip": [files
+    "disks": [the other floppies, next to the source image; FAT, or Elf's
+    ELFDOS whose files go into the install directory], "skip": [files
     not installed], "run": [AUTOEXEC.BAT lines that start the game],
     "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces],
     "subdirs": true to copy the disks' folders too, same-named ones
@@ -252,8 +253,14 @@ def _hdd_install(cfg, src):
     pre = d + "/" if d else ""
     skip = {n.upper() for n in h.get("skip", [])} | DOS_FILES
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
-        fv = DiskImage(disk).volumes[0]
         left = {q.upper() for q in h.get("unused", {}).get(os.path.basename(disk), [])}
+        if elfdos.is_elfdos(open(disk, "rb").read()):
+            # (Elf's own file system: one folder of files)
+            for name, data in elfdos.files(disk):
+                if name.upper() not in skip and name.upper() not in left:
+                    _put(vol, pre + name, data)
+            continue
+        fv = DiskImage(disk).volumes[0]
         for e in fv.listdir(0):
             if e["name"].upper() in skip or e["name"] in (".", ".."):
                 continue

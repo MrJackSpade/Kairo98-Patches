@@ -1,0 +1,41 @@
+{
+ "title": "Dragon Knight III",
+ "key": "elf.zip/Dragon Knight III",
+ "image": "Dragon Knight III\\Dragon Knight III [FD]\\Dragon Knight III (Disk A).hdm",
+ "encoding": "ai5",
+ "game_dir": "DK3",
+ "hdd": {
+  "base": "Custom Mate 3\\Custom Mate 3 [HD]\\Custom Mate 3.hdi",
+  "remove": [
+   "CM3",
+   "CM_3.BAT"
+  ],
+  "dir": "DK3",
+  "disks": [
+   "Dragon Knight III (Disk B).hdm",
+   "Dragon Knight III (Disk C).hdm",
+   "Dragon Knight III (Disk D).hdm",
+   "Dragon Knight III (Disk E).hdm",
+   "Dragon Knight III (Disk F).hdm"
+  ],
+  "skip": [
+   "IPL.SYS",
+   "ELFDOS.SYS",
+   "STARTUP",
+   "DISKNO"
+  ],
+  "run": [
+   "A:",
+   "cd \\DK3",
+   "play4",
+   "nmd",
+   "ai5 start.mes H x"
+  ],
+  "replace": [
+   "CD CM3",
+   "CM3.COM",
+   "CD .."
+  ]
+ },
+ "boot_steps": "36:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot"
+}

@@ -784,6 +784,74 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "label": "labels"}
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"]})
+    h = cfg["hdd"]
+    out = ["# %s%s (Elf)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Elf's **AI5** (`AI5.EXE`): the script is %d `*.MES` files with text, bytecode with a "
+            "dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every "
+            "script tokenizes from its start to its end." % len(files), "",
+            "The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a "
+            "longer script, so the patch lays the game out on a DOS hard-disk image the way its own "
+            "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "
+            "the collection's `%s` with its own game removed." % (
+                h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")), "",
+            "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
+            "of the Japanese.",
+            "* English is written as the engine's half-width strings (06 ... 06), between commands that "
+            "set the character width to one column and back to two; the program is not changed.",
+            "* Lines are wrapped between words to the text window the script set up (its own commands, "
+            "or a subroutine it calls), and a new page (a key wait and a clear) starts before a line "
+            "would run past the window's bottom.",
+            "* Menu items are drawn by the menu itself, which takes characters only: their English is "
+            "written in full-width letters.",
+            "", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; `\\n` starts a new line.  `max_cells` is a line's room in "
+            "its window (English letters); longer text wraps between words and pages.",
+            "* `{X26}` is the hero's name (the script's subroutine 26 prints it): keep it in the English.",
+            "* Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is "
+            "written full-width, so it holds half as many letters.  Longer ones are cut and reported.",
+            "* Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's "
+            "buttons): one line, `max_cells` half-width letters; longer ones are cut and reported.",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, pictures).",
+            "* The name entry's character grid stays Japanese: the entry picks characters by their "
+            "place in it."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for t, r in extra.get(name, {}).get("tests", []):
+        out.append("| %s | %s |" % (t, r))
+    out.append("| Gameplay past the opening scenes, save/load, endings | not yet seen |")
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def gip_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -868,6 +936,11 @@ def main():
             continue
         if cfg.get("encoding") in ("jast", "jast_scm", "jast_boot", "jast_ribbon", "jast_cosmos", "jast_font12", "jast_menu12", "jast_typed"):
             out = jast_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "ai5":
+            out = ai5_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

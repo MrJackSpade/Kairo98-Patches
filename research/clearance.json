@@ -1559,5 +1559,146 @@
    "GitHub search (title + translation): nothing",
    "web search (title + English translation, PC-98): no PC-98 English translation found (searches for Disk Bishoujo Daizukan found only general PC-98 game lists)"
   ]
+ },
+ "elf.zip/Dragon Knight III": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Knights of Xentar - CD Edition (dos); Knights of Xentar - FD Edition (dos); Knights of Xentar - Demo (dos); Knights of Xentar - NR-18 Upgrade (dos)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found (the English release is the DOS localization Knights of Xentar, a rewritten script)"
+  ]
+ },
+ "elf.zip/Doukyuusei 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Dōkyūsei 2: Winter Heat (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Isaku": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Kakyuusei": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/De-Ja": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): DeepL/deepl-java; myomi/jbpm4-developersguide-ja-translation; potappo/moz-devnews-ja; metinilgar/desktop-translation-app-deepl-javafx; DeeJay429/AI-VideoTranslator-by-DeeJay"
+  ]
+ },
+ "elf.zip/Shangrlia": {
+  "checked": "2026-10-09",
+  "result": "review",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: LISTED",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "PioneerLdc.zip/El-Hazard - The Magnificent World": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Shinpi no Sekai El-Hazard (win); Shinpi no Sekai El-Hazard (gba)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Metal Eye": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Doki Doki Shutter Chance": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Metal Eye 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Premium": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): MerelyServices/Merely-Framework; deepaksabat/JobFair; kirby-tools/kirby.tools; endhvh/ze_premium; extiverse/premium-translations"
+  ]
+ },
+ "elf.zip/Tenshin Ranma": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/Foxy 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "elf.zip/De-Ja II": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
  }
 }

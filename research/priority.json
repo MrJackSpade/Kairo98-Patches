@@ -703,5 +703,121 @@
     "votes": 0
    }
   ]
+ },
+ "elf-ai5": {
+  "checked": "2026-10-09",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "elf.zip/Dragon Knight III",
+    "title": "Dragon Knight III",
+    "vndb": [
+     "v723"
+    ],
+    "votes": 159
+   },
+   {
+    "key": "elf.zip/Doukyuusei 2",
+    "title": "Doukyuusei 2",
+    "vndb": [
+     "v2337"
+    ],
+    "votes": 133
+   },
+   {
+    "key": "elf.zip/Isaku",
+    "title": "Isaku",
+    "vndb": [
+     "v2340"
+    ],
+    "votes": 118
+   },
+   {
+    "key": "elf.zip/Kakyuusei",
+    "title": "Kakyuusei",
+    "vndb": [
+     "v2341"
+    ],
+    "votes": 85
+   },
+   {
+    "key": "elf.zip/De-Ja",
+    "title": "De-Ja",
+    "vndb": [
+     "v2338"
+    ],
+    "votes": 28
+   },
+   {
+    "key": "elf.zip/Shangrlia",
+    "title": "Shangrlia",
+    "vndb": [
+     "v3182"
+    ],
+    "votes": 19
+   },
+   {
+    "key": "PioneerLdc.zip/El-Hazard - The Magnificent World",
+    "title": "El-Hazard - The Magnificent World",
+    "vndb": [
+     "v9084"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "elf.zip/Metal Eye",
+    "title": "Metal Eye",
+    "vndb": [
+     "v7825"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "elf.zip/Doki Doki Shutter Chance",
+    "title": "Doki Doki Shutter Chance",
+    "vndb": [
+     "v17596"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "elf.zip/Metal Eye 2",
+    "title": "Metal Eye 2",
+    "vndb": [
+     "v7834"
+    ],
+    "votes": 7
+   },
+   {
+    "key": "Silkys.zip/Premium",
+    "title": "Premium",
+    "vndb": [
+     "v6962"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "elf.zip/Tenshin Ranma",
+    "title": "Tenshin Ranma",
+    "vndb": [
+     "v7824"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "elf.zip/Foxy 2",
+    "title": "Foxy 2",
+    "vndb": [
+     "v17500"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "elf.zip/De-Ja II",
+    "title": "De-Ja II",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
  }
 }

@@ -74363,15 +74363,27 @@
      "path": "Dragon Knight III\\Dragon Knight III [HD]\\Dragon Knight III.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dragon_knight_3 (patcher working, machine translation in progress)",
+     "url": "../games/dragon_knight_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v723 (English release on DOS: Knights of Xentar, a rewritten localization)",
+     "url": "https://vndb.org/v723",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6774 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Elle",
