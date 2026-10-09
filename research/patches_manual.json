@@ -1398,5 +1398,13 @@
    "url": "https://vndb.org/v27000",
    "source": "VNDB"
   }
+ ],
+ "Fairytale.zip/Fairytale Kaizokuban": [
+  {
+   "label": "This repo: games/fairytale_kaizokuban (patcher working, machine translation in progress)",
+   "url": "../games/fairytale_kaizokuban/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -80460,7 +80460,14 @@
      "path": "Fairytale Kaizokuban\\Fairytale Kaizokuban [FD hd9]\\Fairytale Kaizokuban (Disk B).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/fairytale_kaizokuban (patcher working, machine translation in progress)",
+     "url": "../games/fairytale_kaizokuban/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 24 of 25 classified Fairytale titles are adult",
    "engine": "adv98v",
@@ -80468,7 +80475,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Gokuraku Mandara",

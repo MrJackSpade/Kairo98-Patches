@@ -116,5 +116,10 @@
   "remarks": [
    "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; AdvBIOS asks for it and stops otherwise)."
   ]
+ },
+ "fairytale_kaizokuban": {
+  "not_handled": [
+   "The title line ADVSHELL.COM prints while it loads the engine (`Ｆａｉｒｙｔａｌｅ　海賊版`, a brand name in full-width letters and three kanji): the program-string search takes only runs with kana."
+  ]
  }
 }
