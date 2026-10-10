@@ -320,5 +320,10 @@
   "remarks": [
    "NADL.EXE gives every statement its length after its opcode (a byte, or two with the top bit set), so the scripts walk without a table of lengths; a rebuilt statement gets its length anew, and each text statement is a string of its own (pc98tl/adl5.py, variant nadl)."
   ]
+ },
+ "moonlight_chan_rin_shan": {
+  "remarks": [
+   "The quiz questions and the profiles are drawn by the same text window routine the test copy used; the choices and the menus by the string routine the title menu shows."
+  ]
  }
 }

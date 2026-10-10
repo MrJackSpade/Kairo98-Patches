@@ -1135,6 +1135,75 @@ def arq_engine(cfg, prog, n_msgs):
                   % " and ".join("`%s`" % h for h in helpers)] if helpers else [])
 
 
+def chan_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    prog = cfg["program"]
+    names = {"msg": "messages (quiz questions and profiles)", "cmd": "quiz choices", "engine": "program strings"}
+    out = ["# %s%s (D.O.)" % ("\u2665 " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "D.O.'s **CHAN** engine (`%s`), a mahjong game with a quiz: the quiz in `QDAT` (a directory of "
+            "its members; each a table of 100 questions, then the questions with every byte inverted: four "
+            "offsets, the right choice, the question and its three choices), the girls' profiles and the "
+            "program's strings in `%s` itself.  `pc98tl/chan.py` documents the formats and the program "
+            "patch, `pc98tl/chan_tl.py` the English.  `QDAT` and the profiles rebuild byte for byte."
+            % (prog, prog), "",
+            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            "* `%s` gets a helper put in at the end of its code segment (the segments after it move up).  "
+            "A byte under 80h is a half-width letter: drawn 8 dots wide from the BIOS 8x16 font, bold as the "
+            "program's characters, in the caller's colour.  In the text window (the questions, the "
+            "profiles) the line's room is taken one for it, a word that would not fit what is left of the "
+            "line starts a new line (the window's own, paging at its last row), and a space at a line's "
+            "start is not drawn; the string routine (the choices, the menus) draws it the same way." % prog,
+            "* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew); "
+            "past the program's five reads (143360 bytes) the last read is made 8000h bytes and the stack "
+            "and the memory the program asks for move up with it, 163840 bytes in all.",
+            "* The profiles are rebuilt as one block in the room the Japanese took, their table's offsets "
+            "anew; the program's other strings are written in their own bytes."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (\u2665) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): a quiz question in the quiz window (`max_cells` 50 letters a line, 3 "
+            "lines, then a key wait and the window scrolled); a profile in its window (38 letters a "
+            "line); `\\n` starts a new line.  The program wraps between words.  ASCII is drawn half-width; "
+            "another character is drawn full-width when Shift-JIS has it (two cells), else written as `?`.",
+            "* Quiz choices (`c` ids): one line each at its place, `max_cells` letters to the screen's edge; "
+            "a new line is written as a space.",
+            "* `QDAT` with its English may take 163840 bytes (now %s with the Japanese): each English letter "
+            "is one byte, a Japanese character two; a member (100 questions) may take 32 KB.  A build "
+            "past either is refused." % cfg.get("qdat_size", "139760"),
+            "* The profiles share the bytes the Japanese took (%s); a build past it is refused and names "
+            "them." % cfg.get("profile_room", "their room"),
+            "* Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); longer ones "
+            "are cut and reported.",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, pictures, the mahjong tiles)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1284,6 +1353,11 @@ def main():
             continue
         if cfg.get("encoding") == "silky":
             out = silky_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "chan":
+            out = chan_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

@@ -3269,5 +3269,19 @@
    "The other sections, save/load",
    "not yet seen"
   ]
+ ],
+ "moonlight_chan_rin_shan": [
+  [
+   "The title menu (patched)",
+   "OK: its items half-width filler (the string routine), the pointer's item highlighted"
+  ],
+  [
+   "A test copy whose title loop draws the first girl's profile at once (the text window)",
+   "OK: the profile's filler half-width, 38 letters a line, wrapped between words"
+  ],
+  [
+   "The mahjong game, the quiz, the album, endings",
+   "not yet seen: the title menu takes no click in the emulator (the unpatched game neither); the clicks reach the program's button word, but no item starts"
+  ]
  ]
 }

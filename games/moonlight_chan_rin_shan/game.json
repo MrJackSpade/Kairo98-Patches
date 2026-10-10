@@ -1,0 +1,11 @@
+{
+ "title": "Moonlight Chan Rin Shan",
+ "key": "DO.zip/Moonlight Chan Rin Shan",
+ "image": "Moonlight Chan Rin Shan\\Moonlight Chan Rin Shan [HD]\\Moonlight Chan Rin Shan.hdi",
+ "encoding": "chan",
+ "program": "CHAN.EXE",
+ "game_dir": "MOON",
+ "boot_steps": "40:shot,1:mouse=-40;100,1:mouse=20;12,1:shot,1:lclick,4:shot",
+ "qdat_size": 139760,
+ "profile_room": 1382
+}

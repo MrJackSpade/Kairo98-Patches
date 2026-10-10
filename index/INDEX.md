@@ -301,6 +301,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | D.O | DOR Special Edition '93 | [This repo: games/dor_special_edition_93 (patcher working, machine translation in progress)](../games/dor_special_edition_93/notes.md) |
 | D.O | DOR Special Edition Sakigake | [This repo: games/dor_special_edition_sakigake (patcher working, machine translation in progress)](../games/dor_special_edition_sakigake/notes.md) |
 | D.O | Hoshi no Suna Monogatari 2 | [This repo: games/hoshi_no_suna_monogatari_2 (patcher working, machine translation in progress)](../games/hoshi_no_suna_monogatari_2/notes.md) |
+| D.O | Moonlight Chan Rin Shan | [This repo: games/moonlight_chan_rin_shan (patcher working, machine translation in progress)](../games/moonlight_chan_rin_shan/notes.md) |
 | D.O | Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk | [This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)](../games/yuu_disk_vol_4/notes.md) |
 | D.O | Yuu Disk Vol. 5 - Telephone Scandal | [This repo: games/yuu_disk_vol_5 (patcher working, machine translation in progress)](../games/yuu_disk_vol_5/notes.md) |
 | D.O | Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban | [This repo: games/yuu_disk_vol_8 (patcher working, machine translation in progress)](../games/yuu_disk_vol_8/notes.md) |
@@ -1927,7 +1928,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Hoshi no Suna Monogatari 3 [CD FD HD extras]
 - ♥ Kaerimichi wa Kiken ga Ippai [FD extras]
 - ♥ Legend of Rouge (Rouge no Densetsu) [FD HD]
-- ♥ Moonlight Chan Rin Shan [FD HD extras] `do`
+- ♥ Moonlight Chan Rin Shan [FD HD extras] `do` — *MTL (this repo)*
 - ♥ Youjuu Club Custom [FD HD extras]
 - ♥ Youjuu Senki - A.D. 2048 [FD HD extras]
 - ♥ Youjuu Senki 2 - Reimei no Senshi-tachi [FD HD]

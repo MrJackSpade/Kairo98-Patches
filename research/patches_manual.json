@@ -1937,5 +1937,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/Moonlight Chan Rin Shan": [
+  {
+   "label": "This repo: games/moonlight_chan_rin_shan (patcher working, machine translation in progress)",
+   "url": "../games/moonlight_chan_rin_shan/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
