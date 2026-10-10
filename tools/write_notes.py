@@ -809,7 +809,8 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "item": "menu items", "label": "labels", "record": "names in data tables"}
-    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(".MES")})
+    ext = cfg.get("script_ext", ".MES").upper()
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(ext)})
     h = cfg.get("hdd")
     maker = "Silky's" if cfg["key"].startswith("Silkys.zip/") else "Elf"
     out = ["# %s%s (%s)" % ("♥ " if heart else "", cfg["title"], maker), "",
@@ -822,7 +823,7 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     out += ["", "## Engine", "",
-            "Elf's **%s** (`%s`): the script is %d `*.MES` files with text, bytecode with a "
+            "Elf's **%s** (`%s`): the script is %d `*" + ext + "` files with text, bytecode with a "
             "dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every "
             "script tokenizes from its start to its end." % (
                 "AI4" if cfg.get("version") == "ai4" else "AI5",
