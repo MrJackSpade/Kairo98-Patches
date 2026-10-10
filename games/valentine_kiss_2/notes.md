@@ -35,6 +35,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 * Text drawn into the artwork (the title logo, pictures).
 * The name entry's character grid stays Japanese: the entry picks characters by their place in it.
+* The name entry's frame and its prompt (主人公の名前を入力してください, 名前, おわり) are part of a picture.
 
 ## Test status (np21w, `tools/boot_all.sh`)
 
@@ -47,3 +48,5 @@ Translation and the content classification (♥) are done by the translation mod
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
 
 Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_D (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2).
+
+The message box (columns 20-59) is set by DEFMAIN.MES, which the game runs first; the scripts after it set none, so game.json default_window gives it.
