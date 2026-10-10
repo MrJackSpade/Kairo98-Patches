@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-09 (`resear
 
 ## Engine
 
-Elf's **AI5** (`SIL.EXE`): the script is 0 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
+Elf's **AI5** (`SIL.EXE`): the script is 129 `*.M` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
 
 The patch works on the game's hard-disk release (the game in `CRE/`), which has room for a longer script.
 
