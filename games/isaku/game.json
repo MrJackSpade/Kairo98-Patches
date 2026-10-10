@@ -1,0 +1,20 @@
+{
+ "title": "Isaku",
+ "key": "elf.zip/Isaku",
+ "image": "Isaku\\Isaku [HD]\\Isaku.hdi",
+ "encoding": "ai5",
+ "game_dir": "ISAKU",
+ "archives": [
+  "ISAKU_A",
+  "ISAKU_B",
+  "ISAKU_C",
+  "ISAKU_D",
+  "ISAKU_E",
+  "ISAKU_F",
+  "ISAKU_G"
+ ],
+ "archive_format": "isaku",
+ "version": "isaku",
+ "boot_steps": "30:shot,3:enter,8:shot,6:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,2:enter,1:shot,2:enter,1:shot,2:enter,1:shot,2:enter,1:shot",
+ "program": "AI5.EXE"
+}

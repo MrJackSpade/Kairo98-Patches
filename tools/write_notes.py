@@ -834,21 +834,36 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
              "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "
              "the collection's `%s` with its own game removed." % (
                  h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")) if h else
-             "The patch works on the game's hard-disk release (the game in `%s/`), which has room for a "
-             "longer script." % cfg["game_dir"]) + (
+             ("The patch works on the game's hard-disk release (the game in `%s/`)." if cfg.get("version") == "isaku"
+              else "The patch works on the game's hard-disk release (the game in `%s/`), which has room for a "
+              "longer script.") % cfg["game_dir"]) + (
                 ("  The scripts are in Silky's data archives %s (`pc98tl/silkdat.py`): a directory "
                  "encrypted with a chained XOR and the members stored as they are; an archive with a rebuilt "
                  "script is laid out anew." if cfg.get("archive_format") == "silkdat" else
                  "  The scripts are in Silky's archives %s (`pc98tl/silkdat.py`): a directory encrypted "
                  "with an XOR running with the file offset and the members stored as they are; an archive with "
                  "a rebuilt script is laid out anew." if cfg.get("archive_format") == "silkdisk" else
+                 "  The scripts are in Isaku's archives %s (`pc98tl/isakuarc.py`): a directory encrypted with "
+                 "a rising XOR and a rotation, the members stored or packed (LZSS); an archive with a rebuilt "
+                 "script is laid out anew, the script stored." if cfg.get("archive_format") == "isaku" else
                  "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
                  "only, so the scripts are found from `start.mes` through the script names the scripts "
                  "give; a rebuilt script is compressed again and the archive laid out anew.") % ", ".join(
                     "`%s`" % f for f in cfg["archives"]) if cfg.get("archives") else ""), "",
-            "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
-            "of the Japanese.",
-            ("* English is written as the engine's half-width strings (06 ... 06), between commands that "
+            ("* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
+             "of the Japanese." if cfg.get("version") != "isaku" else
+             "* Isaku's AI5 calls a script's routines by address (system call 2Ah), its scene scripts "
+             "loaded at 0 below the libraries the game keeps loaded (`DEF.MES`, `DUNCALL.MES`, "
+             "`ITEMMAIN.MES` at fixed addresses), with no room to grow: so its English is kept out of the "
+             "scripts (`pc98tl/ai5_far.py`).  A rebuilt script's half-width strings become references "
+             "(06 7Fh, an offset, 06) into its English, a member `NAME.ENG` beside it in its archive; every "
+             "call's address is moved with what it points at."),
+            ("* `AI5.EXE` is unpacked (EXEPACK) and given a helper: loading a script loads its English into "
+             "a 64 KB segment of its own (the memory the program asks for grows by it), and the half-width "
+             "string statement draws a reference's letters from there.  English is written as the engine's "
+             "half-width strings, between commands that set the character width to one column and back "
+             "to two." if cfg.get("version") == "isaku" else
+             "* English is written as the engine's half-width strings (06 ... 06), between commands that "
              "set the character width to one column and back to two; the program is not changed."
              if cfg.get("version", "ai5") != "ai4" else
              "* This engine draws no half-width strings, so English is written in the PC-98's half-width "
@@ -873,13 +888,16 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                 n, c.get("note", "a subroutine call"), n,
                 "; the English goes on on a fresh page after it" if c.get("page") else "")
                 for n, c in cfg.get("calls", {"26": {"note": "the hero's name"}}).items()] + [
-            "* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:%04Xh: "
-            "a script with its English may take %d bytes.  Each English letter is one byte; a message "
+            ("* A scene's English (its `.ENG`) may take what the English segment leaves after the "
+             "libraries' (about 64 KB); a build past it is refused and names the script and its strings.  "
+             "The scripts themselves only shrink." if cfg.get("version") == "isaku" else
+             "* A script runs where it is loaded, at DS:0000 before the engine's variables at DS:%04Xh: "
+             "a script with its English may take %d bytes.  Each English letter is one byte; a message "
             "takes up to twenty bytes more for the commands around it (two where messages follow one "
             "another), and a full-width character or a name call in it about twenty more.  A build "
             "whose script outgrows its buffer is "
             "refused and names the script and its strings." % (cfg.get("script_room", 0xE000),
-                                                              cfg.get("script_room", 0xE000)),
+                                                              cfg.get("script_room", 0xE000))),
             "* Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is "
             "written full-width, so it holds half as many letters.  Longer ones are cut and reported.",
             "* Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's "

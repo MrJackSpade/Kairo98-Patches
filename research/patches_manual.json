@@ -1969,5 +1969,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "elf.zip/Isaku": [
+  {
+   "label": "This repo: games/isaku (patcher working, machine translation in progress)",
+   "url": "../games/isaku/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

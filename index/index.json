@@ -75054,7 +75054,14 @@
      "path": "Isaku\\Isaku [HD]\\Isaku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/isaku (patcher working, machine translation in progress)",
+     "url": "../games/isaku/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4586 (erotic content)",
    "engine": "elf-ai5",
@@ -75062,7 +75069,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Jan Jaka Jan",

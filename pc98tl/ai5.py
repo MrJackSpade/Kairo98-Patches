@@ -91,6 +91,9 @@ def _expr(d, i):
                 stack.append(None)
             else:
                 stack.append([x + y, max(0, x - y), x * y, x // y if y else 0, x % y if y else 0][b - 0x20])
+        elif LOOSE_END:
+            # (Isaku's AI5.EXE: any other byte ends an expression, read as its 03 is)
+            return i + 1, (stack[-1] if len(stack) == 1 else None)
         else:
             raise Bad("expression byte %02x at %x" % (b, i))
 
@@ -160,7 +163,10 @@ def _tokens(d, out):
                 continue
             out.append(("struct", s, i, b))
             continue
-        if b == 4:
+        if b == 4 and d[i + 1] in RAW_CALLS:
+            # (a system call whose argument is bytes of its own, not expressions)
+            i += 2 + RAW_CALLS[d[i + 1]]
+        elif b == 4:
             i = _args(d, i + 2)
         elif b == 6:
             i = _string(d, i)
@@ -271,7 +277,17 @@ ENGINES = {
     "sil2": {"window": (13, 14, 15, 16), "cursor": 17, "font": 21, "ank": True, "dict": 0xD0, "kanji": True},
     # (AI4, Shangrlia: no half-width strings; 06 ... 06 is skipped)
     "ai4": {"window": (24, 25, 26, 27), "cursor": 28, "font": 12, "ank": False},
+    # (Isaku's AI5.EXE: an expression ended by any byte that is not of one, not only 03)
+    # (2Ah: three bytes after it; dictionary characters from D0h, C0h-CFh xx a two-byte character
+    # too, its lead E0h-EFh, as in "sil2")
+    "isaku": {"window": (13, 14, 15, 16), "cursor": 17, "font": 21, "ank": True, "loose": True,
+              "kanji": True, "dict": 0xD0, "raw_calls": {0x2A: 3}, "far": True},
 }
+LOOSE_END = False               # any byte not of an expression ends one (and is read with it)
+RAW_CALLS = {}                  # system calls whose argument is a number of bytes, not expressions
+FAR = False                     # the English kept out of the scripts (Isaku: pc98tl/ai5_far.py)
+CALLED = {}                     # {an address 2Ah calls: the window pokes of its routine} (Isaku)
+LIBRARIES = {}                  # {the address a library is loaded at: (its bytes, its tokens)} (Isaku)
 WINDOW = (13, 14, 15, 16)       # the poke indexes of the window's left, top, right, bottom
 CURSOR = 17                     # the cursor's column and line
 FONT = 21                       # line height | character width << 8
@@ -284,11 +300,12 @@ KANJI = False                   # C0h-CFh xx is a two-byte character (lead E0h-E
 
 
 def set_engine(cfg):
-    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI, START_WINDOW
+    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI, START_WINDOW, LOOSE_END, RAW_CALLS, FAR
     e = ENGINES[cfg.get("version", "ai5")]
     START_WINDOW = cfg.get("default_window")
     WINDOW, CURSOR, FONT, ANK = e["window"], e["cursor"], e["font"], e["ank"]
-    DICT, KANJI = e.get("dict", 0x80), e.get("kanji", False)
+    DICT, KANJI, LOOSE_END = e.get("dict", 0x80), e.get("kanji", False), e.get("loose", False)
+    RAW_CALLS, FAR = e.get("raw_calls", {}), e.get("far", False)
 
 
 def _two_byte(b):
@@ -412,6 +429,10 @@ def windows(d, toks):
             a = _assign(d, s)
             if a is not None:
                 assigned[a[0]] = a[1]
+        elif kind == "op" and extra == 4 and d[s + 1] == 0x2A:
+            # (Isaku: a call to an address, a library's routine or the script's own)
+            for p in called_pokes(_num(b"\x09" + d[s + 2:s + 5], 0)[1], d, toks):
+                _apply(state, p)
         elif kind == "op" and extra == 0x13:
             pokes = subs.get(_number(d, s + 1), ())
             pick = {}
@@ -432,12 +453,63 @@ def windows(d, toks):
 
 
 def set_shared(store):
-    """SHARED from the start script of the game's scripts (a Scripts)."""
+    """SHARED from the start script of the game's scripts (a Scripts); and, where a script calls
+    an address (Isaku's 2Ah), CALLED from the scripts loaded at a fixed address."""
     SHARED.clear()
+    CALLED.clear()
+    LIBRARIES.clear()
     for name, path in store.items:
         if name.split("/")[-1].upper() == "START.MES":
             d = store.read(path)
             SHARED.update(subroutines(d, tokenize(d))[0])
+    if 0x2A in RAW_CALLS:
+        from . import ai5_far
+        libs = ai5_far.libraries(store)
+        for name, path in store.items:
+            base = libs.get(name.split("/")[-1].upper())
+            if base is not None:
+                d = store.read(path)
+                LIBRARIES[base] = (d, tokenize(d))
+                # (a library's subroutines (DEF.MES: their definitions) are the scenes' too)
+                SHARED.update(subroutines(d, LIBRARIES[base][1])[0])
+
+
+def routine_pokes(d, toks, at):
+    """The window pokes of the routine at offset at of d, up to its return (2Bh/2Ch, or the 00 that
+    ends the block it runs in)."""
+    start = next((j for j, u in enumerate(toks) if u[1] == at), None)
+    pokes, depth, skip = [], 0, None
+    for u in toks[start:] if start is not None else []:
+        if u[0] == "op" and u[3] == 4 and d[u[1] + 1] in (0x2B, 0x2C) and skip is None:
+            break
+        if u[0] == "op" and u[3] == 0x12 and skip is None:
+            # (a subroutine's definition: not run here)
+            skip = depth
+        if u[0] == "struct" and u[3] == 1:
+            depth += 1
+        elif u[0] == "struct" and u[3] == 0:
+            if not depth:
+                break
+            depth -= 1
+            if skip == depth:
+                skip = None
+            continue
+        if skip is not None:
+            continue
+        if u[0] == "poke" and u[3][0] in WINDOW + (FONT,):
+            pokes.append(u[3])
+    return pokes
+
+
+def called_pokes(v, d=None, toks=None):
+    """The window pokes of the routine a 2Ah calls at address v: a library's (CALLED keeps them), or
+    the script d's own."""
+    for base, (ld, lt) in LIBRARIES.items():
+        if base <= v < base + len(ld):
+            if v not in CALLED:
+                CALLED[v] = routine_pokes(ld, lt, v - base)
+            return CALLED[v]
+    return routine_pokes(d, toks, v) if d is not None and v < len(d) else []
 
 
 # ---- English
@@ -850,7 +922,8 @@ class Scripts:
     scripts in one are found from start.mes through the script names the
     scripts give, as the archive holds hashes only), or in Silky's data
     archives (game.json "archive_format": "silkdat" or "silkdisk",
-    pc98tl/silkdat.py: the scripts by their names in it); or loose with
+    pc98tl/silkdat.py), or Isaku's ("isaku", pc98tl/isakuarc.py): the
+    scripts by their names in it; or loose with
     another extension (game.json "script_ext"), named by their path in the
     game folder.  Names are as the refs give them:
     "FILE.MES", or "ARCHIVE/file.mes"."""
@@ -871,9 +944,10 @@ class Scripts:
                           if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
             return
         self.items = []
-        if cfg.get("archive_format") in ("silkdat", "silkdisk"):
-            from . import silkdat
-            kind = silkdat.Archive if cfg["archive_format"] == "silkdat" else silkdat.DiskArchive
+        if cfg.get("archive_format") in ("silkdat", "silkdisk", "isaku"):
+            from . import isakuarc, silkdat
+            kind = {"silkdat": silkdat.Archive, "silkdisk": silkdat.DiskArchive,
+                    "isaku": isakuarc.Archive}[cfg["archive_format"]]
             for name in cfg["archives"]:
                 self.arcs[name] = kind(vol.read(d + "/" + name))
             # (the script names the scripts give, for the one archive member whose first letter
@@ -1068,7 +1142,13 @@ def run_patch(here, src, dst, mode="en"):
     warn, done = [], 0
     store = Scripts(vol, cfg2)
     set_shared(store)
-    for name, path in store.items:
+    if FAR:
+        # (Isaku: the English in a segment of its own, pc98tl/ai5_far.py)
+        from . import ai5_far
+        done, regions = ai5_far.patch_scripts(store, by_ref, ids, warn, mode)
+        exe_path = cfg2["game_dir"] + "/" + cfg.get("program", "AI5.EXE")
+        vol.write(exe_path, ai5_far.patch_exe(vol.read(exe_path), regions))
+    for name, path in ([] if FAR else store.items):
         d = store.read(path)
         values = {a: t for (f, a), t in by_ref.items() if f == name}
         new = rebuild(d, values, warn, ids, name)

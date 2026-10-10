@@ -3353,5 +3353,23 @@
    "Events (EV200-EV205) and the ending (ED200, ED201 in ENDG.EXE)",
    "not reached in the test (the same message routine and helper as the maps')"
   ]
+ ],
+ "isaku": [
+  [
+   "Boot from the hard disk (AI5.EXE unpacked, with its helper; the English segment)",
+   "OK: the first menu (colour or monochrome) with its filler items, then the Elf logo"
+  ],
+  [
+   "Opening (OPENIN.MES): its lines from the English segment",
+   "OK: the filler drawn half-width line after line"
+  ],
+  [
+   "The first scene (a menu at the shoe lockers, then the classroom): the message window",
+   "OK: the filler read from the scene's English, wrapped between words at the window's width (62 letters), paged with a key"
+  ],
+  [
+   "Calls between the scripts (DEF.MES's routines, ITEMMAIN.MES) with the scripts rebuilt",
+   "OK: the game goes on from scene to scene"
+  ]
  ]
 }
