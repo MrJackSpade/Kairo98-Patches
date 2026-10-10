@@ -808,8 +808,8 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    names = {"msg": "messages", "item": "menu items", "label": "labels"}
-    files = sorted({r.split(":")[0] for e in strings for r in e["refs"]})
+    names = {"msg": "messages", "item": "menu items", "label": "labels", "record": "names in data tables"}
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(".MES")})
     h = cfg.get("hdd")
     out = ["# %s%s (Elf)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
@@ -874,6 +874,10 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
             "written full-width, so it holds half as many letters.  Longer ones are cut and reported.",
             "* Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's "
             "buttons): one line, `max_cells` half-width letters; longer ones are cut and reported.",
+            ] + ["* Names in data tables (`r` ids: %s): `max_cells` full-width letters, the room of "
+                 "their fixed fields (%d bytes, ended by a NUL); longer ones are cut and reported." % (
+                     ", ".join("`%s`" % r["file"] for r in cfg["records"]), cfg["records"][0]["size"])
+                 for _x in [0] if cfg.get("records")] + [
             "", "## Not handled", "",
             "* Text drawn into the artwork (the title logo, pictures).",
             "* The name entry's character grid stays Japanese: the entry picks characters by their "

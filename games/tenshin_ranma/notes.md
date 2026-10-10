@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-09 (`resear
 
 ## Engine
 
-Elf's **AI5** (`AI5.EXE`): the script is 77 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
+Elf's **AI5** (`AI5.EXE`): the script is 76 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
 
 The patch works on the game's hard-disk release (the game in `TEN/`), which has room for a longer script.
 
@@ -18,7 +18,7 @@ The patch works on the game's hard-disk release (the game in `TEN/`), which has 
 
 ## Script
 
-6298 strings: 105 menu items, 22 labels, 6066 messages, 105 record.
+6298 strings: 105 menu items, 22 labels, 6066 messages, 105 names in data tables.
 
 Translation and the content classification (♥) are done by the translation model; 0 of 6298 strings have English so far.
 
@@ -32,6 +32,7 @@ Translation and the content classification (♥) are done by the translation mod
 * A script runs where it is loaded, at DS:0000 before the engine's variables at DS:E000h: a script with its English may take 57344 bytes.  Each English letter is one byte; a message takes up to twenty bytes more for the commands around it (two where messages follow one another), and a full-width character or a name call in it about twenty more.  A build whose script outgrows its buffer is refused and names the script and its strings.
 * Menu items (`i` ids): `max_cells` is the Japanese item's width in cells; the English is written full-width, so it holds half as many letters.  Longer ones are cut and reported.
 * Labels (`l` ids: text the script puts in a slot of its own, such as the name entry's buttons): one line, `max_cells` half-width letters; longer ones are cut and reported.
+* Names in data tables (`r` ids: `SENTO.COM`): `max_cells` full-width letters, the room of their fixed fields (12 bytes, ended by a NUL); longer ones are cut and reported.
 
 ## Not handled
 
