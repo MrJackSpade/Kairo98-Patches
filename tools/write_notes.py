@@ -822,10 +822,11 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     out += ["", "## Engine", "",
-            "Elf's **%s** (`%s.EXE`): the script is %d `*.MES` files with text, bytecode with a "
+            "Elf's **%s** (`%s`): the script is %d `*.MES` files with text, bytecode with a "
             "dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every "
             "script tokenizes from its start to its end." % (
-                cfg.get("version", "ai5").upper(), cfg.get("version", "ai5").upper(), len(files)), "",
+                cfg.get("version", "ai5").upper(), cfg.get("program", cfg.get("version", "ai5").upper() + ".EXE"),
+                len(files)), "",
             ("The floppies use Elf's own file system (ELFDOS, `pc98tl/elfdos.py`) and have no room for a "
              "longer script, so the patch lays the game out on a DOS hard-disk image the way its own "
              "hard-disk installer does: every disk's files in `%s/`, started with `%s`.  The base image is "

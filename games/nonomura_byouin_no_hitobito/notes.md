@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-09 (`resear
 
 ## Engine
 
-Elf's **AI5** (`AI5.EXE`): the script is 97 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
+Elf's **AI5** (`SIL.EXE`): the script is 97 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
 
 The patch works on the game's hard-disk release (the game in `NONOMURA/`), which has room for a longer script.  The scripts are in Silky's data archives `SILK0.DAT`, `SILK1.DAT`, `SILK2.DAT`, `SILK3.DAT`, `SILK4.DAT` (`pc98tl/silkdat.py`): a directory encrypted with a chained XOR and the members stored as they are; an archive with a rebuilt script is laid out anew.
 

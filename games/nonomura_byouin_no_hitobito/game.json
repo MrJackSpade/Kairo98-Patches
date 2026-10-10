@@ -4,6 +4,7 @@
  "image": "Nonomura Byouin no Hitobito\\Nonomura Byouin no Hitobito [HD]\\Nonomura Byouin no Hitobito.hdi",
  "encoding": "ai5",
  "version": "ai5",
+ "program": "SIL.EXE",
  "game_dir": "NONOMURA",
  "archive_format": "silkdat",
  "archives": [
