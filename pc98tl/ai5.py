@@ -847,9 +847,12 @@ class Scripts:
             return
         self.items = []
         if cfg.get("archive_format") == "silkdat":
-            from . import silkdat
+            from . import silkdat, exepack
+            exe = vol.read(d + "/" + cfg.get("program", "SIL.EXE"))
+            exe = exepack.unpack(exe) if exepack.is_packed(exe) else exe
+            key = silkdat.key_of(exe)
             for name in cfg["archives"]:
-                arc = silkdat.Archive(vol.read(d + "/" + name))
+                arc = silkdat.Archive(vol.read(d + "/" + name), key)
                 self.arcs[name] = arc
                 self.items += [("%s/%s" % (name, f), (name, f)) for f in arc.names() if f.upper().endswith(".MES")]
             return

@@ -188082,15 +188082,27 @@
      "path": "Kawarazakike no Ichizoku\\Kawarazakike no Ichizoku [HD]\\Kawarazakike no Ichizoku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kawarazakike_no_ichizoku (patcher working, machine translation in progress)",
+     "url": "../games/kawarazakike_no_ichizoku/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2351",
+     "url": "https://vndb.org/v2351",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4594 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Koihime - Mystic Princess",

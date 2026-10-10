@@ -154,5 +154,10 @@
   "remarks": [
    "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`: a chained-XOR directory, the members stored as they are), which the patch lays out anew with the rebuilt scripts."
   ]
+ },
+ "kawarazakike_no_ichizoku": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`: a chained-XOR directory whose key, 2Ah here, is read off SIL.EXE; the members stored as they are), which the patch lays out anew with the rebuilt scripts."
+  ]
  }
 }

@@ -1,0 +1,24 @@
+{
+ "title": "Kawarazakike no Ichizoku",
+ "key": "Silkys.zip/Kawarazakike no Ichizoku",
+ "image": "Kawarazakike no Ichizoku\\Kawarazakike no Ichizoku [HD]\\Kawarazakike no Ichizoku.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "KAWA",
+ "archive_format": "silkdat",
+ "archives": [
+  "SILK0.DAT",
+  "SILK1.DAT",
+  "SILK2.DAT",
+  "SILK3.DAT",
+  "SILK4.DAT"
+ ],
+ "calls": {
+  "20": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}
