@@ -285,6 +285,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | D.O | Collector D Bangaihen | [This repo: games/collector_d_bangaihen (patcher working, machine translation in progress)](../games/collector_d_bangaihen/notes.md) |
 | D.O | Crystal Rinal | [This repo: games/crystal_rinal (patcher working, machine translation in progress)](../games/crystal_rinal/notes.md) |
 | D.O | Cybernoid Alpha | [This repo: games/cybernoid_alpha (patcher working, machine translation in progress)](../games/cybernoid_alpha/notes.md) |
+| D.O | D.O. Doki Doki Disk Vol. 3 | [This repo: games/doki_doki_disk_vol_3 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_3/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 4 | [This repo: games/doki_doki_disk_vol_4 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_4/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 5 | [This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_5/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 6 | [This repo: games/doki_doki_disk_vol_6 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_6/notes.md) |
@@ -1899,7 +1900,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ D.O. Doki Doki Disk CD Vol. 4-5 [CD]
 - ♥ D.O. Doki Doki Disk Vol. 1 [FD]
 - ♥ D.O. Doki Doki Disk Vol. 2 [FD]
-- ♥ D.O. Doki Doki Disk Vol. 3 [FD] `do`
+- ♥ D.O. Doki Doki Disk Vol. 3 [FD] `do` — *MTL (this repo)*
 - ♥ D.O. Doki Doki Disk Vol. 4 [FD] `do` — *MTL (this repo)*
 - ♥ D.O. Doki Doki Disk Vol. 5 [FD] `do` — *MTL (this repo)*
 - ♥ D.O. Doki Doki Disk Vol. 6 [FD] `do` — *MTL (this repo)*

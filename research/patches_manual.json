@@ -1897,5 +1897,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 3": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_3 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_3/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

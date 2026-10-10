@@ -294,5 +294,10 @@
    "ADL21.EXE is ADL98's engine with 67h one byte and AEh eleven, and 66h and 97h named (pc98tl/adl5.py, variant adl21).  POWER.EDT, a command table the scripts load with 18h, is named in game.json \"tables\".",
    "The start menu is a box (12h) with its items drawn at their own places (71h); the box's black background is drawn into the picture behind it, so each item's `max_cells` is the box's (15 letters)."
   ]
+ },
+ "doki_doki_disk_vol_3": {
+  "remarks": [
+   "This ADL.EXE walks ADL2's statements (its length table is ADL2.EXE's): pc98tl/adl.py, variant adl2."
+  ]
  }
 }

@@ -167,7 +167,7 @@ def resync(d, start, ents, step):
     starts with or a statement would run across an entry (tables the walker never steps onto, reached
     by the entries); the bytes skipped move with the statements around them (rebuild_pieces)."""
     ents = sorted(v for v in ents if v < len(d))
-    out, i = [], start
+    out, i, tried = [], start, set()
     while i < len(d) and d[i] != 0xFF:
         nxt = next((v for v in ents if v > i), None)
         try:
@@ -179,14 +179,17 @@ def resync(d, start, ents, step):
             out.append((i, j))
             i = j
             continue
-        # (the next entry after the last statement's start: a statement it falls inside is dropped)
+        # (the next entry after the last statement's start, not one the walk was picked up at before: a
+        # statement it falls inside is dropped)
+        tried.add(i)
         after = out[-1][0] if out else start - 1
-        e = next((v for v in ents if v > after and v != i), None)
+        e = next((v for v in ents if v > after and v not in tried), None)
         if e is None:
             break
         if e < i:
             while out and out[-1][1] > e:
                 out.pop()
+        tried.add(e)
         i = e
     return out
 

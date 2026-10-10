@@ -1148,7 +1148,9 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
             "for byte." % (
                 "ADL2" if cfg.get("version") == "adl2" else "ADL", prog, len(files),
                 ", ".join("`%s`" % f for f in files), ", ".join("`%s`" % f for f in tables)), "",
-            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            ("The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"]
+             if cfg["image"].lower().endswith(".hdi") else
+             "The patch works on the floppy (`%s`)." % cfg["image"].replace("\\", "/").split("/")[-1]), "",
             "* A script starts with its entries (the targets of its gotos and menus, as offsets), so a "
             "rebuilt script has them moved with its statements.",
             "* `%s` gets a helper in 768 bytes put in at the end of its code segment (the data and "
