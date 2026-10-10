@@ -9,7 +9,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-09 (`resear
 
 Elf's **AI5** (`SIL.EXE`): the script is 153 `*.MES` files with text, bytecode with a dictionary of the file's most frequent characters; `pc98tl/ai5.py` documents it.  Every script tokenizes from its start to its end.
 
-The patch works on the game's hard-disk release (the game in `MOBIUS/`), which has room for a longer script.  The scripts are in Elf's archives `DISK_A`, `DISK_B`, `DISK_C`, `DISK_D` (`pc98tl/elfarc.py`): the archive holds name hashes only, so the scripts are found from `start.mes` through the script names the scripts give; a rebuilt script is compressed again and the archive laid out anew.
+The patch works on the game's hard-disk release (the game in `MOBIUS/`), which has room for a longer script.  The scripts are in Silky's archives `DISK_A`, `DISK_B`, `DISK_C`, `DISK_D` (`pc98tl/silkdat.py`): a directory encrypted with an XOR running with the file offset and the members stored as they are; an archive with a rebuilt script is laid out anew.
 
 * Nothing in a script is an address, so the scripts are rebuilt with the English in place of the Japanese.
 * English is written as the engine's half-width strings (06 ... 06), between commands that set the character width to one column and back to two; the program is not changed.

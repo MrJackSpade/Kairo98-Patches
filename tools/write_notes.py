@@ -838,6 +838,9 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                 ("  The scripts are in Silky's data archives %s (`pc98tl/silkdat.py`): a directory "
                  "encrypted with a chained XOR and the members stored as they are; an archive with a rebuilt "
                  "script is laid out anew." if cfg.get("archive_format") == "silkdat" else
+                 "  The scripts are in Silky's archives %s (`pc98tl/silkdat.py`): a directory encrypted "
+                 "with an XOR running with the file offset and the members stored as they are; an archive with "
+                 "a rebuilt script is laid out anew." if cfg.get("archive_format") == "silkdisk" else
                  "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
                  "only, so the scripts are found from `start.mes` through the script names the scripts "
                  "give; a rebuilt script is compressed again and the archive laid out anew.") % ", ".join(
