@@ -2955,5 +2955,31 @@
    "Later scenes, the endings",
    "not yet seen"
   ]
+ ],
+ "dor_part_2": [
+  [
+   "The hard-disk release; the opening (OP.EDT) to its menu, clicking through",
+   "OK: boots; filler half-width in the message window, wrapped between words, paged with the blinking key-wait mark; the speaker's name box (filler name, colon, text indented 10 cells, wrapped lines indented too); colour changes inside a message kept"
+  ],
+  [
+   "The opening menu",
+   "OK: the menu commands' box draws half-width filler (cut to its 6 letters); the screen split into picture panels at this point is the game's own in np21w (the unpatched game shows the same)"
+  ],
+  [
+   "DOR3 (started from a test copy of OP.EDT jumping to the scenario-3 start): opening, story, first menu",
+   "OK: title logo, story text wrapped and paged, speaker names, a choice menu with the command box and the choice window widened to the filler"
+  ],
+  [
+   "DOR2 (the same way): opening pages",
+   "OK: wrapped and paged filler, the engine's own pages when a message outgrows the window"
+  ],
+  [
+   "English after a speaker's name (a test line in en mode)",
+   "OK: wraps between words, continuation lines under the indented text"
+  ],
+  [
+   "Save/load, DOR1, DOR4A/B, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -203,5 +203,11 @@
   "remarks": [
    "Silky's runs Elf's AI5 engine as SIL.EXE; Crescent's scripts are loose .M files in CRE/A-CRE/D (one folder a floppy), named by that path in the refs (game.json script_ext)."
   ]
+ },
+ "dor_part_2": {
+  "remarks": [
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: DOR2.EDT by 2,266 letters, DOR3.EDT (48,032 bytes in Japanese) by 19,182 and DOR4B.EDT by 7,206; a real translation must keep those scripts about as long in bytes as the Japanese plus what the segment leaves (the patcher refuses and names the strings otherwise).",
+   "DOR has English Windows releases (DOR Package Edition / Download Edition, VNDB): another platform, linked for the translation role to port from; it does not block this patch."
+  ]
  }
 }

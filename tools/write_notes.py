@@ -1060,6 +1060,85 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def adl_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands", "engine": "save slot names"}
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] == "msg"})
+    tables = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] in ("name", "cmd")})
+    cmd_cells = min([e["max_cells"] for e in strings if e["kind"] == "cmd"] or [16])
+    out = ["# %s%s (D.O.)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "D.O.'s **ADL** engine (`ADL.EXE`): %d scripts with text (%s), the speaker name tables and "
+            "the menu command tables (%s); `pc98tl/adl.py` documents the formats and the program patch, "
+            "and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) "
+            "to its end, every entry lands on a statement, and each rebuilds byte for byte." % (
+                len(files), ", ".join("`%s`" % f for f in files), ", ".join("`%s`" % f for f in tables)), "",
+            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            "* A script starts with its entries (the targets of its gotos and menus, as offsets), so a "
+            "rebuilt script has them moved with its statements.",
+            "* `ADL.EXE` gets a helper in 768 bytes put in at the end of its code segment (the data and "
+            "work segments after it move up, every relocation with them).  In a run of text, 20h (a "
+            "character the engine skips) switches to half-width letters: ASCII drawn one text cell each, "
+            "with the engine's own character wait, wrapped at the window's right edge and paged (the "
+            "blinking key-wait mark, then the window cleared) at its bottom.",
+            "* Lines are wrapped between words by the patcher to the text window the script set (71h), "
+            "the speaker's name indenting the text 10 cells; a full window that the script's new line "
+            "(06) would clear waits for a key first when text was drawn since the last wait.",
+            "* Speaker names, menu commands and the save slots' names take ASCII as well (one cell or "
+            "one 8-dot column each, the menus' from the BIOS 8x16 font).",
+            "* A menu's text window (sized by the script to the longest Japanese choice) is widened, "
+            "with its frame, to the longest English choice, so that each choice stays one line.",
+            "", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length within the script's room (below); `\\n` starts a new line. "
+            "`max_cells` is a line's width in its window (letters); longer text wraps between words and "
+            "pages.  A menu's choices (the messages right after a menu) should stay within one line: "
+            "their `max_cells` is the widest the screen allows the menu's window.  ASCII is drawn "
+            "half-width; another character is drawn full-width when Shift-JIS has it (two cells), else "
+            "written as `?`.",
+            "* `{X1}`, `{X2}`...: the script's controls between the runs of a message (a key wait, a "
+            "colour change, a new line, the next statement going on along the same line); the note says "
+            "what each does.  Keep each once, in any order; a message without them all is refused.",
+            "* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  "
+            "Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script "
+            "outgrows its segment is refused and names the script and its strings.",
+            "* Speaker names (`n` ids): %d letters (the table's 9-byte slot), drawn before the colon; the "
+            "text after them starts 10 cells in.  Longer ones are cut and reported." % 8,
+            "* Menu commands (`c` ids): `max_cells` (%d) letters fit the menus' boxes; up to 16 are taken "
+            "(the table's slot), longer ones are cut and reported." % cmd_cells,
+            "* Save slot names (`e` ids, in `ADL.EXE`): 16 letters (their 17-byte slots).",
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logos, pictures).",
+            "* `ADL.EXE`'s disk prompts (insert the system or scenario disk): shown only when the game "
+            "runs from floppies, never on the hard-disk release the patch builds."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def main():
     names = sys.argv[1:] or sorted(os.listdir(os.path.join(ROOT, "games")))
     adult = load("research", "adult_text.json", default={})
@@ -1084,6 +1163,11 @@ def main():
             continue
         if cfg.get("encoding") == "silky":
             out = silky_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "adl":
+            out = adl_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

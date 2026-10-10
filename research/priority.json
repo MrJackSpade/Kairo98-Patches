@@ -919,5 +919,205 @@
     "votes": 0
    }
   ]
+ },
+ "do": {
+  "checked": "2026-10-10",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "DO.zip/DOR Part 2",
+    "title": "DOR Part 2",
+    "vndb": [
+     "v159",
+     "v8680"
+    ],
+    "votes": 165
+   },
+   {
+    "key": "DO.zip/DOR Part 1",
+    "title": "DOR Part 1",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal",
+    "title": "Yuu Disk Vol. 5 - Telephone Scandal",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "DO.zip/Zatsuon Ryouiki",
+    "title": "Zatsuon Ryouiki",
+    "vndb": [
+     "v9173"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "DO.zip/Cybernoid Alpha",
+    "title": "Cybernoid Alpha",
+    "vndb": [
+     "v8838",
+     "v9170"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "DO.zip/DOR Part 3",
+    "title": "DOR Part 3",
+    "vndb": [
+     "v8681"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+    "title": "Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+    "vndb": [
+     "v8838"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "DO.zip/DOR Special Edition Sakigake",
+    "title": "DOR Special Edition Sakigake",
+    "vndb": [
+     "v18195"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "DO.zip/Hoshi no Suna Monogatari 2",
+    "title": "Hoshi no Suna Monogatari 2",
+    "vndb": [
+     "v8721"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "DO.zip/DOR Special Edition '93",
+    "title": "DOR Special Edition '93",
+    "vndb": [
+     "v18196"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "DO.zip/Collector D Bangaihen",
+    "title": "Collector D Bangaihen",
+    "vndb": [
+     "v18256"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "DO.zip/Arquelphos",
+    "title": "Arquelphos",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Collector D",
+    "title": "Collector D",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Crystal Rinal",
+    "title": "Crystal Rinal",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 3",
+    "title": "D.O. Doki Doki Disk Vol. 3",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 4",
+    "title": "D.O. Doki Doki Disk Vol. 4",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 5",
+    "title": "D.O. Doki Doki Disk Vol. 5",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 6",
+    "title": "D.O. Doki Doki Disk Vol. 6",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 7",
+    "title": "D.O. Doki Doki Disk Vol. 7",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 8",
+    "title": "D.O. Doki Doki Disk Vol. 8",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 9",
+    "title": "D.O. Doki Doki Disk Vol. 9",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Kaizokuban",
+    "title": "D.O. Kaizokuban",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Moonlight Chan Rin Shan",
+    "title": "Moonlight Chan Rin Shan",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+    "title": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+    "title": "Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+    "title": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "PantherSoftware.zip/Hamlet",
+    "title": "Hamlet",
+    "vndb": [
+     "v30597"
+    ],
+    "votes": 0
+   },
+   {
+    "key": "PantherSoftware.zip/Lesser Mern",
+    "title": "Lesser Mern",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
  }
 }
