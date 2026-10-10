@@ -140,7 +140,7 @@
    "The speech boxes are set by the start script's subroutine 1, which picks one of four windows by a variable the scene sets just before calling it (`0A var n`); the patcher follows the start script's subroutines into every scene and takes the window the variable picks (`pc98tl/ai5.py` windows).",
    "The party's names are typed in the name entry (its kana grid stays Japanese) and printed by subroutines 16-18; the patcher keeps 8 cells for each.",
    "Monster and item names in battle come from `SENTO.COM`, a table of 30-byte records, each with a 12-byte name field ended by a NUL: `r` ids, written in full-width letters, up to `max_cells` (5) letters.",
-   "Limit: the battle's one-line message box also holds the names and numbers the battle prints before a message, which the patcher does not count, so keep battle messages about as long as the Japanese; a longer one wraps onto the start of its own line."
+   "The battle prints a name (command 14) and a number (command 15) between the pieces of its one-line messages; the patcher counts 10 cells for each (game.json \"inserts\": the longest monster name, five full-width letters, and a five-digit number in full-width digits), so the text after them wraps and pages from where they leave the line."
   ]
  }
 }

@@ -23,6 +23,10 @@
    "note": "a party member's name (Amano)"
   }
  },
+ "inserts": {
+  "14": 10,
+  "15": 10
+ },
  "records": [
   {
    "file": "SENTO.COM",

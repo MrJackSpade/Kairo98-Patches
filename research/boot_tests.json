@@ -2761,10 +2761,10 @@
   ],
   [
    "A battle (its one-line message box)",
-   "Not OK with the 2.5x filler: a message runs past the box and wraps onto the start of its own line, as the names and numbers the battle prints before it are not counted"
+   "OK: the monster's name from SENTO.COM as full-width filler in its 5-letter field, the filler after it on the same line, a longer message paged in the box with a key wait"
   ],
   [
-   "Monster names (SENTO.COM) in battle, shops, the ending and the staff roll",
+   "Shops, the ending and the staff roll",
    "not yet seen"
   ]
  ]

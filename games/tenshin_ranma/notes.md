@@ -47,8 +47,8 @@ Translation and the content classification (♥) are done by the translation mod
 | Name entry (a new game) | OK: its prompt and buttons as half-width filler in their slots, the character grid stays Japanese, the default name is taken; the one-cell closing bracket of the name field (m00007) with its 8-letter filler is drawn again at the screen's left edge |
 | The opening scene | OK: the speaker's name (subroutines 16-18) before half-width filler, wrapped in the bottom window, pages waiting for a key |
 | Party talk in the dungeon (a shipped save loaded) | OK: filler wrapped in each speaker's box beside the portrait (the box the script picks by its variable) |
-| A battle (its one-line message box) | Not OK with the 2.5x filler: a message runs past the box and wraps onto the start of its own line, as the names and numbers the battle prints before it are not counted |
-| Monster names (SENTO.COM) in battle, shops, the ending and the staff roll | not yet seen |
+| A battle (its one-line message box) | OK: the monster's name from SENTO.COM as full-width filler in its 5-letter field, the filler after it on the same line, a longer message paged in the box with a key wait |
+| Shops, the ending and the staff roll | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
 
 The speech boxes are set by the start script's subroutine 1, which picks one of four windows by a variable the scene sets just before calling it (`0A var n`); the patcher follows the start script's subroutines into every scene and takes the window the variable picks (`pc98tl/ai5.py` windows).
@@ -57,4 +57,4 @@ The party's names are typed in the name entry (its kana grid stays Japanese) and
 
 Monster and item names in battle come from `SENTO.COM`, a table of 30-byte records, each with a 12-byte name field ended by a NUL: `r` ids, written in full-width letters, up to `max_cells` (5) letters.
 
-Limit: the battle's one-line message box also holds the names and numbers the battle prints before a message, which the patcher does not count, so keep battle messages about as long as the Japanese; a longer one wraps onto the start of its own line.
+The battle prints a name (command 14) and a number (command 15) between the pieces of its one-line messages; the patcher counts 10 cells for each (game.json "inserts": the longest monster name, five full-width letters, and a five-digit number in full-width digits), so the text after them wraps and pages from where they leave the line.

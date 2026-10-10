@@ -479,10 +479,15 @@ NAME_CELLS = 8          # the hero's name a subroutine prints (four full-width l
 # the subroutine calls messages hold ({Xn}): {n: (cells drawn, a page break: a key wait and a clear)};
 # game.json "calls": {"n": {"cells": .., "page": .., "note": ..}}
 CALLS = {}
+# commands that print a value on the text cursor between messages ({opcode: cells}: 14 a string
+# from memory, 15 a number; game.json "inserts"), counted on the line of the text after them
+INSERTS = {}
 
 
 def set_calls(cfg):
     CALLS.clear()
+    INSERTS.clear()
+    INSERTS.update({int(op, 16): cells for op, cells in cfg.get("inserts", {}).items()})
     for n, c in cfg.get("calls", {"26": {"cells": NAME_CELLS, "note": "the hero's name"}}).items():
         CALLS[int(n)] = (c.get("cells", 0), bool(c.get("page")))
 
@@ -740,6 +745,8 @@ def rebuild(d, values, warn, ids, name):
         kind, s, e, extra = toks[n]
         if kind == "op" and extra in (0x11, 0x17) or kind == "poke" and extra[0] in WINDOW:
             st = {"line": 0, "col": 0}
+        elif kind == "op" and d[s] in INSERTS:
+            st["col"] += INSERTS[d[s]]
         if n in by_start:
             j, ukind = by_start[n]
             left, top, right, bottom, h = _win(win[n])
