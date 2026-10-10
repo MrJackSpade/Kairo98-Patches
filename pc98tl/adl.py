@@ -1,4 +1,4 @@
-"""D.O.'s ADL engine (ADL.EXE, DOR Part 2 1993): the EDT scripts, the name
+"""D.O.'s ADL engine (ADL.EXE: DOR Part 1 and 2, 1993; addresses below are Part 2's): the EDT scripts, the name
 and command tables, and the half-width patch to ADL.EXE.
 
 The first script is named on AIF.TXT's first line; 50h and 61h load the
@@ -39,7 +39,8 @@ graphics planes through the GRCG (20h one 8-dot column).
 The patch (patch_exe, on ADL.EXE; it is not packed):
 
 * The helper's room: ROOM paragraphs put in at the end of the code
-  segment (segment 80h, before the data segment, 4C4h).  Every segment
+  segment (segment 80h, before the data segment: 4C4h in Part 2, 474h in
+  Part 1, the lowest segment the relocations hold past 80h).  Every segment
   after it moves up by as many: the data segment and the work segments
   (707h and up, past the file's end), whose every use is a relocated
   constant (the relocations are all in the code segment); the file's size
@@ -236,16 +237,15 @@ def table_write(parts, tail):
 # ---- ADL.EXE
 
 CODE_SEG = 0x80
-DATA_SEG = 0x4C4
 ROOM = 0x30                     # paragraphs put in at the end of the code segment for the helper
 
 # the run-of-text loop (19FCh): mov dh, es:[si] / inc si / or dh, dh / je / cmp dh, 20h / je / cmp dh, 80h
-TEXT_SIG = bytes.fromhex("268a34460af6745480fe2074f380fe807313")
+TEXT_SIG = re.compile(rb"\x26\x8a\x34\x46\x0a\xf6\x74.\x80\xfe\x20\x74\xf3\x80\xfe\x80\x73\x13", re.S)
 # the controls' loop (1B8Dh) and its table: mov al, es:[si] / inc si / or al, al / je / cmp al, 9 / jae /
 # xor ah, ah / dec al / shl ax, 1 / mov bx, table
 CTRL_SIG = re.compile(rb"\x26\x8a\x04\x46\x0a\xc0\x74\x16\x3c\x09\x73\x1f\x32\xe4\xfe\xc8\xd1\xe0\xbb(..)", re.S)
-# the name drawer (19B2h) at its two-byte character: mov dh, al / lodsb / mov dl, al / mov cl, es:[108h]
-NAME_SIG = bytes.fromhex("8af0ac8ad0268a0e0801")
+# the name drawer (19B2h) at its two-byte character: mov dh, al / lodsb / mov dl, al / mov cl, es:[colour]
+NAME_SIG = re.compile(rb"\x8a\xf0\xac\x8a\xd0\x26\x8a\x0e..", re.S)
 # the graphics-plane drawer (18D4h) at its two-byte character: lodsb / mov dl, al / call / jmp
 GRAPH_SIG = re.compile(rb"\x3c\x0d\x74\x08\xac\x8a\xd0\xe8(..)\xeb\xe6", re.S)
 
@@ -277,25 +277,25 @@ sj:
     mov dl, byte ptr es:[si]
     inc si
 kj:
-    mov ax, word ptr [0x109]
+    mov ax, word ptr [{x}]
     add ax, 16
-    cmp ax, word ptr [0x115]
+    cmp ax, word ptr [{right}]
     jbe kdraw
     CALLN wrap
 kdraw:
-    mov ax, word ptr [0x109]
-    mov bx, word ptr [0x10b]
+    mov ax, word ptr [{x}]
+    mov bx, word ptr [{y}]
     CALLN {xy}
     mov di, ax
-    mov cl, byte ptr [0x108]
+    mov cl, byte ptr [{color}]
     CALLN {kanji}
     mov cx, 16
     jmp adv
 ak:
     cmp dh, 0x0a
     jne a1
-    mov ax, word ptr [0x109]
-    cmp ax, word ptr [0x111]
+    mov ax, word ptr [{x}]
+    cmp ax, word ptr [{left}]
     je text
     CALLN wrap
     JMPN text
@@ -304,12 +304,12 @@ a1:
     jne a2
     mov dh, 0x20
 a2:
-    mov ax, word ptr [0x109]
-    mov bx, word ptr [0x10b]
+    mov ax, word ptr [{x}]
+    mov bx, word ptr [{y}]
     CALLN {xy}
     mov di, ax
     mov al, dh
-    mov cl, byte ptr [0x108]
+    mov cl, byte ptr [{color}]
     CALLN putank
     mov cx, 8
 adv:
@@ -320,19 +320,16 @@ adv:
     mov dl, 1
     test al, 3
     jnz d1
-    CALLN {skipkey}
-    test al, 0x10
-    jnz d1
-    mov dl, 3
+{skip}    mov dl, 3
 d1:
     mov al, dl
     CALLN {settimer}
     CALLN {waittimer}
     pop cx
-    mov ax, word ptr [0x109]
+    mov ax, word ptr [{x}]
     add ax, cx
-    mov word ptr [0x109], ax
-    cmp ax, word ptr [0x115]
+    mov word ptr [{x}], ax
+    cmp ax, word ptr [{right}]
     jae a3
     JMPN text
 a3:
@@ -340,10 +337,10 @@ a3:
     JMPN text
 
 wrap:
-    add word ptr [0x10b], 0x14
+    add word ptr [{y}], 0x14
     CALLN {page}
-    mov ax, word ptr [0x111]
-    mov word ptr [0x109], ax
+    mov ax, word ptr [{left}]
+    mov word ptr [{x}], ax
     .byte 0xc3
 
 putank:
@@ -364,15 +361,15 @@ putank:
     .byte 0xc3
 
 newline:
-    mov ax, word ptr [0x111]
-    mov word ptr [0x109], ax
-    add word ptr [0x10b], 0x14
-    mov ax, word ptr [0x117]
+    mov ax, word ptr [{left}]
+    mov word ptr [{x}], ax
+    add word ptr [{y}], 0x14
+    mov ax, word ptr [{bottom}]
     sub ax, 0x14
-    cmp ax, word ptr [0x10b]
+    cmp ax, word ptr [{y}]
     jne n2
-    mov ax, word ptr [0x113]
-    mov word ptr [0x10b], ax
+    mov ax, word ptr [{top}]
+    mov word ptr [{y}], ax
     cmp byte ptr cs:[{dirty}], 0
     je n1
     CALLN {keywait}
@@ -397,12 +394,12 @@ name:
     mov dh, al
     lodsb
     mov dl, al
-    mov cl, byte ptr es:[0x108]
+    mov cl, byte ptr es:[{color}]
     CALLN {kanji}
     add di, 4
     JMPN {nameloop}
 nm1:
-    mov cl, byte ptr es:[0x108]
+    mov cl, byte ptr es:[{color}]
     CALLN putank
     add di, 2
     JMPN {nameloop}
@@ -506,35 +503,59 @@ def patch_exe(exe):
         raise SystemExit("ADL.EXE: the entry is not in segment 80h")
     img = bytearray(exe[hdr:])
     cs0 = CODE_SEG * 16
-    seg = bytearray(img[cs0:cs0 + 0x10000])
-    text = _once(seg, TEXT_SIG, "text loop")
+    nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
+    fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
+              for k in range(nrel)]
+    # (the data segment: the lowest segment past the code's in the relocations; the code segment ends at it)
+    data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > CODE_SEG)
+    seg = bytearray(img[cs0:data_seg * 16])
+    text = _once(seg, TEXT_SIG, "text loop").start()
     # the table lookup and the draw path, read off the loop: mov bl, dh / xor bh, bh / shl bx, 1 / add bx, table
     look = seg.find(bytes.fromhex("8ade32ffd1e381c3"), text, text + 0x40)
     if look < 0:
         raise SystemExit("ADL.EXE: the text loop's table lookup is not found")
     kana = struct.unpack_from("<H", seg, look + 8)[0]
-    draw = seg.find(bytes.fromhex("a10901" "8b1e0b01e8"), text, text + 0x40)
-    if draw < 0:
+    # (the draw path: mov ax, [x] / mov bx, [y] / call xy / mov di, ax / mov cl, [colour] / call kanji)
+    m = re.compile(rb"\xa1(..)\x8b\x1e(..)\xe8..\x8b\xf8\x8a\x0e(..)\xe8", re.S).search(seg, text, text + 0x40)
+    if not m:
         raise SystemExit("ADL.EXE: the text loop's draw path is not found")
+    draw = m.start()
+    var_x, var_y, var_color = (struct.unpack("<H", g)[0] for g in m.groups())
     xy = _call_target(seg, draw + 7)
     kanji = _call_target(seg, draw + 16)
-    # (the speed wait after it: mov ah, 5 / int 33h / mov dl, 1 / test al, 3 / jne / call skipkey ...)
+    # (the speed wait after it: mov ah, 5 / int 33h / mov dl, 1 / test al, 3 / jne, then in later builds
+    # call skipkey / test al, 10h / jne; mov dl, 3 / mov al, dl / call settimer / call waittimer / call advance)
     wait = draw + 19
-    if seg[wait:wait + 10] != bytes.fromhex("b405cd33b201a8037509"):
+    if seg[wait:wait + 9] != bytes.fromhex("b405cd33b201a80375"):
         raise SystemExit("ADL.EXE: the text loop's speed wait is not laid out as expected")
-    skipkey = _call_target(seg, wait + 10)
-    settimer = _call_target(seg, wait + 21)
-    waittimer = _call_target(seg, wait + 24)
-    advance = _call_target(seg, wait + 27)
-    # (the advance: mov ax, [x] / add ax, 10h / cmp ax, [right] / jne / add [y], 14h / call page)
-    if seg[advance:advance + 17] != bytes.fromhex("a10901051000" "3b061501750b" "83060b0114"):
+    at = wait + 10
+    skip = ""
+    if seg[at] == 0xE8:
+        if seg[at + 3:at + 6] != bytes.fromhex("a81075"):
+            raise SystemExit("ADL.EXE: the text loop's speed wait is not laid out as expected")
+        skip = "    CALLN %s\n    test al, 0x10\n    jnz d1\n" % hex(_call_target(seg, at))
+        at += 7
+    if seg[at:at + 4] != bytes.fromhex("b2038ac2"):
+        raise SystemExit("ADL.EXE: the text loop's speed wait is not laid out as expected")
+    settimer = _call_target(seg, at + 4)
+    waittimer = _call_target(seg, at + 7)
+    advance = _call_target(seg, at + 10)
+    # (the advance: mov ax, [x] / add ax, 10h / cmp ax, [right] / jne / add [y], 14h / call page / mov ax, [left])
+    m = re.compile(rb"\xa1(..)\x05\x10\x00\x3b\x06(..)\x75\x0b\x83\x06(..)\x14\xe8..\xa1(..)", re.S).match(seg, advance)
+    if not m or struct.unpack("<H", m.group(1))[0] != var_x or struct.unpack("<H", m.group(3))[0] != var_y:
         raise SystemExit("ADL.EXE: the text loop's advance is not laid out as expected")
+    var_right, var_left = struct.unpack("<H", m.group(2))[0], struct.unpack("<H", m.group(4))[0]
     page = _call_target(seg, advance + 17)
+    # (the page: mov ax, [bottom] / sub ax, 14h / cmp ax, [y] / jne / mov ax, [top])
+    m = re.compile(rb"\xa1(..)\x2d\x14\x00\x3b\x06(..)\x75.\xa1(..)", re.S).match(seg, page)
+    if not m or struct.unpack("<H", m.group(2))[0] != var_y:
+        raise SystemExit("ADL.EXE: the paging routine is not laid out as expected")
+    var_bottom, var_top = struct.unpack("<H", m.group(1))[0], struct.unpack("<H", m.group(3))[0]
     m = _once(seg, CTRL_SIG, "controls' loop")
     table = struct.unpack_from("<H", m.group(1))[0]
     ctrl = list(struct.unpack_from("<8H", seg, table))
     keywait, clear = ctrl[1], ctrl[2]
-    name = _once(seg, NAME_SIG, "name drawer")
+    name = _once(seg, NAME_SIG, "name drawer").start()
     if seg[name + 13:name + 16] != b"\x83\xc7\x04" or seg[name + 16] != 0xEB:
         raise SystemExit("ADL.EXE: the name drawer is not laid out as expected")
     nameloop = name + 18 + struct.unpack("b", seg[name + 17:name + 18])[0]
@@ -549,12 +570,14 @@ def patch_exe(exe):
     grcg_on = _call_target(seg, cgk + 5)
     grcg_off = _call_target(seg, cgk + 14)
     # (the room: at the end of the code segment, the data segment and all after it moved up)
-    at = (DATA_SEG - CODE_SEG) * 16
+    at = (data_seg - CODE_SEG) * 16
     helper_at, flags = at, (at + ROOM * 16 - 2, at + ROOM * 16 - 1)
-    src = HELPER.format(kana=hex(kana), kana1=hex(kana + 1), xy=hex(xy), kanji=hex(kanji), skipkey=hex(skipkey),
+    src = HELPER.format(kana=hex(kana), kana1=hex(kana + 1), xy=hex(xy), kanji=hex(kanji), skip=skip,
                         settimer=hex(settimer), waittimer=hex(waittimer), page=hex(page), keywait=hex(keywait),
                         clear=hex(clear), nameloop=hex(nameloop), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
-                        grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), ank=hex(flags[0]), dirty=hex(flags[1]))
+                        grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), ank=hex(flags[0]), dirty=hex(flags[1]),
+                        x=hex(var_x), y=hex(var_y), color=hex(var_color), left=hex(var_left), top=hex(var_top),
+                        right=hex(var_right), bottom=hex(var_bottom))
     code, labels = _asm16(src, helper_at, ("text", "name", "graph", "waitkey", "clearwin", "newline"))
     if len(code) > ROOM * 16 - 2:
         raise SystemExit("ADL.EXE: the helper is %d bytes, the room %d" % (len(code), ROOM * 16 - 2))
@@ -568,19 +591,16 @@ def patch_exe(exe):
     struct.pack_into("<8H", seg, table, *ctrl)
     img[cs0:cs0 + len(seg)] = seg
     # no segment fixup may fall in what was changed
-    nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
-    fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
-              for k in range(nrel)]
     for lo, n in ((text, 3), (name, 5), (gat, 3), (table, 16)):
         if any(cs0 + lo - 1 <= f < cs0 + lo + n for f in fixups):
             raise SystemExit("ADL.EXE: a segment fixup falls in a patched range")
     # the room put in, the segments after it moved up
-    split = DATA_SEG * 16
+    split = data_seg * 16
     if any(f >= split for f in fixups):
         raise SystemExit("ADL.EXE: a segment fixup is past the code segment")
     for f in fixups:
         v = struct.unpack_from("<H", img, f)[0]
-        if v >= DATA_SEG:
+        if v >= data_seg:
             struct.pack_into("<H", img, f, v + ROOM)
         elif v != CODE_SEG:
             raise SystemExit("ADL.EXE: a fixup holds segment %x, before the data segment" % v)

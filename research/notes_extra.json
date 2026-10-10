@@ -209,5 +209,11 @@
    "The --pseudo build cuts its filler to fit the 64 KB script segment: DOR2.EDT by 2,266 letters, DOR3.EDT (48,032 bytes in Japanese) by 19,182 and DOR4B.EDT by 7,206; a real translation must keep those scripts about as long in bytes as the Japanese plus what the segment leaves (the patcher refuses and names the strings otherwise).",
    "DOR has English Windows releases (DOR Package Edition / Download Edition, VNDB): another platform, linked for the translation role to port from; it does not block this patch."
   ]
+ },
+ "dor_part_1": {
+  "remarks": [
+   "Part 1's ADL.EXE is an earlier build than Part 2's (its data segment at 474h, its variables a byte lower, no key-skip in the character wait); the patch reads every address off the program.",
+   "DOR has an English Windows release (G-Collections 2002; VNDB lists the Package and Download Editions): another platform, linked for the translation role to port from; it does not block this patch."
+  ]
  }
 }

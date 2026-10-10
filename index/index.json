@@ -61777,15 +61777,27 @@
      "path": "DOR Part 1\\DOR Part 1 [HD]\\DOR Part 1.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_part_1 (patcher working, machine translation in progress)",
+     "url": "../games/dor_part_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v159",
+     "url": "https://vndb.org/v159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17674 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Part 2",

@@ -19,8 +19,10 @@ Strings:
 
 English in a run of text is written as 20h, then ASCII (pc98tl/adl.py:
 the helper draws it half-width), wrapped between words with a new line
-(0Ah) where the next word would pass the text window's right edge; the
-engine pages by itself at the window's bottom.  The cursor is followed
+(0Ah) where the next word would reach the text window's last cell (a line
+that filled the window would be wrapped by the engine, and a new line (06)
+after it would leave an empty one); the engine pages by itself at the
+window's bottom.  The cursor is followed
 from statement to statement: the window 71h last set (its width; 0 at
 the start), the name's indent (10 cells after 04 n, to 03 clears or a 00
 after a control), new lines (06), and the Japanese runs left as they are
@@ -298,7 +300,9 @@ def rebuild(d, toks, values, table, ids):
             col, indent = _ctrl_effect(head, col, indent)
             for i, x in enumerate(seq):
                 if i % 2 == 0:
-                    text, col = wrap(x, max(width, 1), col, indent)
+                    # (a cell short of the edge: a line that fills the window is wrapped by the engine,
+                    # and the script's own new line after it would leave an empty one)
+                    text, col = wrap(x, max(width - 1, indent + 1), col, indent)
                     body += adl.encode_ascii(text)
                 else:
                     ctrl = between[x - 1]

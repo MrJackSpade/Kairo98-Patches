@@ -1,0 +1,8 @@
+{
+ "title": "DOR Part 1",
+ "key": "DO.zip/DOR Part 1",
+ "image": "DOR Part 1\\DOR Part 1 [HD]\\DOR Part 1.hdi",
+ "encoding": "adl",
+ "game_dir": "DOR",
+ "boot_steps": "40:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot"
+}

@@ -2981,5 +2981,19 @@
    "Save/load, DOR1, DOR4A/B, endings",
    "not yet seen"
   ]
+ ],
+ "dor_part_1": [
+  [
+   "The hard-disk release; the opening (OP.EDT) clicked through to its menu",
+   "OK: boots (ADL.EXE, Part 1's build, with the half-width helper); filler half-width, wrapped between words (a cell short of the edge, so no empty row after a full line), paged with the key-wait mark; colour changes inside a message kept; the speaker's name box and its indent"
+  ],
+  [
+   "The opening menu",
+   "OK: the command box draws half-width filler (cut to its 6 letters)"
+  ],
+  [
+   "The scenarios (DOR1-3, the DOR_P2/P3 and DOR3A/B parts), save/load, endings",
+   "not yet seen"
+  ]
  ]
 }
