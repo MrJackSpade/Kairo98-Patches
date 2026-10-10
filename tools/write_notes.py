@@ -1111,6 +1111,30 @@ def adl5_engine(cfg, files, tables, prog):
                   "`e` strings too." % " and ".join("`%s`" % h for h in helpers)] if helpers else [])
 
 
+def arq_engine(cfg, prog, n_msgs):
+    helpers = cfg.get("program_files", [])
+    return ["", "## Engine", "",
+            "D.O.'s **ARQ98** engine (`%s`): its %d messages are in the program itself, a block in its data "
+            "segment (a top table of groups, each group's table of messages, the messages: controls and runs "
+            "of text, ADL's characters); `pc98tl/arq.py` documents the block and its patch, `pc98tl/adl5.py` "
+            "the program patch (its run is ADL5's, with one window), `pc98tl/adl_tl.py` the English.  The "
+            "block rebuilds byte for byte." % (prog, n_msgs), "",
+            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            "* The block is rebuilt, with the English, in a segment of its own put in after the program's "
+            "image (the work segments after it move up), and the routine that shows the messages is "
+            "rewritten in its own bytes to read it there: the messages may take 64 KB together.",
+            "* `%s` gets ADL5's helper in 512 bytes put in at the end of its code segment.  In a run of "
+            "text, 20h switches to half-width letters: ASCII drawn 8 dots wide from the BIOS 8x16 font into "
+            "the graphics planes, with the engine's own character wait and paging (a new line whose row "
+            "would run past the window's bottom pages first).  Before each English word the helper "
+            "measures it against the window's right edge and starts a new line when it would not fit." % prog,
+            "* The program's own strings (the disk prompt, the save and load messages) take ASCII in their "
+            "own bytes.",
+            ] + (["* %s (run before the game) draws its lines with ADL5's graphics drawer: it gets the same "
+                  "half-width letters (a 256-byte helper), and its lines are `e` strings too."
+                  % " and ".join("`%s`" % h for h in helpers)] if helpers else [])
+
+
 def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1122,7 +1146,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
-             "engine": "program strings" if v5 else "save slot names"}
+             "engine": "program strings" if v5 or cfg.get("version") == "arq98" else "save slot names"}
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] == "msg"})
     name_cells = min([e["max_cells"] for e in strings if e["kind"] == "name"] or [8])
     tables = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] in ("name", "cmd")})
@@ -1136,7 +1160,10 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
-    if v5:
+    arq = cfg.get("version") == "arq98"
+    if arq:
+        out += arq_engine(cfg, prog, kinds.get("msg", 0))
+    elif v5:
         out += adl5_engine(cfg, files, tables, prog)
     else:
         out += ["", "## Engine", "",
@@ -1174,18 +1201,28 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     out.append("Translation and the content classification (♥) are done by the translation model; "
                "%d of %d strings have English so far." % (done, len(strings)))
     out += ["", "## Limits", "",
-            "* Messages (`m` ids): any length within the script's room (below); `\\n` starts a new line. "
-            "`max_cells` is a line's width in its window (letters); longer text wraps between words and "
-            "pages.  A menu's choices (the messages right after a menu) should stay within one line: "
-            "their `max_cells` is the widest the screen allows the menu's window.  ASCII is drawn "
-            "half-width; another character is drawn full-width when Shift-JIS has it (two cells), else "
-            "written as `?`.",
-            "* `{X1}`, `{X2}`...: the script's controls between the runs of a message (a key wait, a "
-            "colour change, a new line, the next statement going on along the same line); the note says "
-            "what each does.  Keep each once, in any order; a message without them all is refused.",
-            "* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  "
-            "Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script "
-            "outgrows its segment is refused and names the script and its strings.",
+            ("* Messages (`m` ids): any length within the block's room (below); `\\n` starts a new line.  "
+             "`max_cells` is a line's width in the window (letters); longer text wraps between words and "
+             "pages.  ASCII is drawn half-width; another character is drawn full-width when Shift-JIS has "
+             "it (two cells), else written as `?`." if arq else
+             "* Messages (`m` ids): any length within the script's room (below); `\\n` starts a new line. "
+             "`max_cells` is a line's width in its window (letters); longer text wraps between words and "
+             "pages.  A menu's choices (the messages right after a menu) should stay within one line: "
+             "their `max_cells` is the widest the screen allows the menu's window.  ASCII is drawn "
+             "half-width; another character is drawn full-width when Shift-JIS has it (two cells), else "
+             "written as `?`."),
+            ("* `{X1}`, `{X2}`...: the message's controls between its runs (a key wait, a new line, the "
+             "window cleared, the portrait); the note says what each does.  Keep each once, in any order; "
+             "a message without them all is refused." if arq else
+             "* `{X1}`, `{X2}`...: the script's controls between the runs of a message (a key wait, a "
+             "colour change, a new line, the next statement going on along the same line); the note says "
+             "what each does.  Keep each once, in any order; a message without them all is refused."),
+            ("* The messages are rebuilt into one 64 KB segment: with their English they may take 65536 "
+             "bytes together.  Each English letter is one byte; a Japanese kana one, a kanji two.  A build "
+             "that outgrows it is refused." if arq else
+             "* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  "
+             "Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script "
+             "outgrows its segment is refused and names the script and its strings."),
             ("* Speaker names (`n` ids): `max_cells` letters (%s, the slot the script gives the name's "
              "table, 19h); the text after a name starts as many cells in as its table's slot.  Longer ones "
              "are cut and reported." % _cells_range(strings, "name")
@@ -1198,7 +1235,9 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
              if v5 else
              "* Menu commands (`c` ids): `max_cells` (%d) letters fit the menus' boxes; up to 16 are taken "
              "(the table's slot), longer ones are cut and reported." % cmd_cells)]
-    if v5:
+    if arq:
+        out = [x for x in out if not x.startswith(("* Speaker names", "* Menu commands"))]
+    if v5 or arq:
         out += ["* Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); a "
                 "character the program writes in at run time (a drive letter, a digit) is `{X1}`..., kept "
                 "in the English, which is placed so that it stays where the program writes it.  Longer "

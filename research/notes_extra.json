@@ -299,5 +299,11 @@
   "remarks": [
    "This ADL.EXE walks ADL2's statements (its length table is ADL2.EXE's): pc98tl/adl.py, variant adl2."
   ]
+ },
+ "arquelphos": {
+  "remarks": [
+   "The messages' window is set up at run time: from B0h to 230h dots during the opening (48 letters, game.json \"message_cells\"), narrower where a portrait box is shown; the helper wraps at the window's edge as it is.",
+   "The patch adds the message segment (the block's size, in paragraphs) to the program's image; the memory the program asks DOS for past its image stays the same."
+  ]
  }
 }

@@ -59989,7 +59989,14 @@
      "path": "Arquelphos\\Arquelphos [HD]\\Arquelphos.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/arquelphos (patcher working, machine translation in progress)",
+     "url": "../games/arquelphos/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -59997,7 +60004,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Branmarker",

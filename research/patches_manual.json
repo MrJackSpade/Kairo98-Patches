@@ -1905,5 +1905,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/Arquelphos": [
+  {
+   "label": "This repo: games/arquelphos (patcher working, machine translation in progress)",
+   "url": "../games/arquelphos/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

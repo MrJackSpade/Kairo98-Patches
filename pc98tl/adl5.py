@@ -403,8 +403,22 @@ RUN_SIG = re.compile(
     rb"\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75."
     rb"\xb4\x05\xcd\x33\xb2\x01\xa8\x03\x75\x09\xe8(..)\xa8\x10\x75\x02\xb2\x03\x8a\xc2"
     rb"\xe8(..)\xe8(..)\xe8(..)\xe9", re.S)
+# ARQ98.EXE's run (Arquelphos, Yuu Disk Vol. 9: 64F3h), the same groups as RUN_SIG's: its own checks before
+# the character (cmp [buffer], 0 / jne / cmp [mode], 0 / je / cmp [mode], 2 / jne / test [x], FFh / nop / jne /
+# call), and one window (mov di, rec) where ADL5 picks one by [sel] (group 5 empty)
+RUN_SIG_ARQ = re.compile(
+    rb"\x80\x3e(..)\x00\x75.\x80\x3e..\x00\x74.\x80\x3e..\x02\x75.\xf6\x06..\xff\x90\x75.\xe8.."
+    rb"\x26\x8a\x34\x46\x0a\xf6\x75\x03\xe9..\x80\xfe\x20\x74."
+    rb"\x80\xfe\x80\x73\x13\x8a\xde\x32\xff\xd1\xe3\x81\xc3..\x2e\x8a\x37\x2e\x8a\x57\x01\xeb\x04"
+    rb"\x26\x8a\x14\x46"
+    rb"\x80\x3e..\x00\x74\x12\x8b\x3e(..)\x8a\x0e(..)\xe8(..)\x83\x06..\x02\xeb."
+    rb"()\xbf(..)\x8b\x05\x52\xe8(..)\x5a\x8b\x5d\x02\xe8(..)\x8b\xf8"
+    rb"\x8a\x0e..\xe8..(\x80\x3e..\x00|\xf6\x06..\x01)\x75.(\xb0\x0c\xe8..\x0a\xc0\x75.)?"
+    rb"\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75."
+    rb"\xb4\x05\xcd\x33\xb2\x01\xa8\x03\x75\x09\xe8(..)\xa8\x10\x75\x02\xb2\x03\x8a\xc2"
+    rb"\xe8(..)\xe8(..)\xe8(..)\xe9", re.S)
 # the advance (205Eh): ... add ax, [width] ...; its new line: add [di+2], 14h / call page
-ADVANCE_SIG = re.compile(rb"\xa0..\x32\xe4\xbf..\x03\xf8\x8b\x05\x03\x06(..)\x3d\x80\x02", re.S)
+ADVANCE_SIG = re.compile(rb"(?:\xa0..\x32\xe4\xbf..\x03\xf8|\xbf..)\x8b\x05\x03\x06(..)\x3d\x80\x02", re.S)
 # the glyph drawer (1DD7h): ... xor ah, ah / mov al, [colour] / cli / call grcg on / mov si, glyph /
 # call / call grcg off / sti; its rows: test [bold], 1
 GLYPH_SIG = re.compile(rb"\x32\xe4\xa0(..)\xfa\xe8(..)\xbe..\xe8..\xe8(..)\xfb", re.S)
@@ -442,11 +456,7 @@ t2:
     inc word ptr [{bufpos}]
     JMPN {run}
 t3:
-    mov al, byte ptr [{sel}]
-    xor ah, ah
-    mov di, {rec}
-    add di, ax
-    cmp dh, 0x0a
+{selrec}    cmp dh, 0x0a
     jne t4
     mov byte ptr cs:[{word}], 1
     mov ax, word ptr [di]
@@ -645,11 +655,15 @@ def patch_exe(exe, name="ADL5.EXE"):
     runs = _once(seg, RUNS_SIG, "text runs' loop")
     run_call = runs.start() + 15
     run = _call_target(seg, run_call)
-    m = _once(seg, RUN_SIG, "text run")
+    sig = RUN_SIG if RUN_SIG.search(seg) else RUN_SIG_ARQ
+    m = _once(seg, sig, "text run")
     if m.start() != run:
         raise SystemExit("%s: the text run is not where its loop calls" % name)
     word = lambda k: struct.unpack("<H", m.group(k))[0]  # noqa: E731
-    buffer, bufpos, color, sel, rec = word(1), word(2), word(3), word(5), word(6)
+    buffer, bufpos, color, rec = word(1), word(2), word(3), word(6)
+    # (the text window's record: rec plus the selected window's offset, or ARQ98's one window)
+    selrec = ("    mov al, byte ptr [%s]\n    xor ah, ah\n    mov di, %s\n    add di, ax\n" % (hex(word(5)), hex(rec))
+              if m.group(5) else "    mov di, %s\n" % hex(rec))
     # (the fast flag: cmp byte ptr [fast], 0, or (Yuu Disk Vol. 4's ADL98) test byte ptr [fast], 1)
     fast = struct.unpack("<H", m.group(9)[2:4])[0]
     fastcheck = ("test byte ptr [%s], 1" if m.group(9)[0] == 0xF6 else "cmp byte ptr [%s], 0") % hex(fast)
@@ -664,7 +678,11 @@ def patch_exe(exe, name="ADL5.EXE"):
     extra = ""
     if m.group(10):
         extra = "    mov al, 0x0c\n    CALLN %s\n    or al, al\n    jne t6s\n" % hex(_call_target(seg, m.start(10) + 2))
-    space = seg.find(b"\x80\xfe\x20\x74\xe4", run, run + 0x20)
+    # (cmp dh, 20h / je: back to the run's start)
+    space = next((k for k in range(run, run + 0x40) if seg[k:k + 4] == b"\x80\xfe\x20\x74"
+                  and k + 5 + struct.unpack("b", seg[k + 4:k + 5])[0] == run), -1)
+    if space < 0:
+        raise SystemExit("%s: the run's test for 20h is not found" % name)
     notspace = space + 5
     a = ADVANCE_SIG.match(seg, advance)
     if not a:
@@ -677,7 +695,7 @@ def patch_exe(exe, name="ADL5.EXE"):
     page = _call_target(seg, nl + 4)
     # (the page: mov ax, [di+2] / cmp ax, [di+bottom] / jb / call: a new line pages once a row starts at
     # or below the window's bottom; the helper's pages as well once a row would run past it)
-    pm = re.compile(rb"\x8b\x45\x02\x3b\x45(.)\x72\x03\xe8", re.S).match(seg, page)
+    pm = re.compile(rb"\x8b\x45\x02\x3b\x45(.)\x72", re.S).match(seg, page)
     if not pm:
         raise SystemExit("%s: the page is not laid out as expected" % name)
     bottom = pm.group(1)[0]
@@ -704,7 +722,7 @@ def patch_exe(exe, name="ADL5.EXE"):
     glyph = at + ROOM * 16 - 0x12          # the BIOS font's answer: 2 bytes, then 16 rows
     src = HELPER.format(
         ank=hex(flags[0]), word=hex(flags[1]), run=hex(run), notspace=hex(notspace), buffer=hex(buffer), bufpos=hex(bufpos),
-        sel=hex(sel), rec=hex(rec), page=hex(page), width=hex(width), prewrap=hex(prewrap), xy=hex(xy),
+        selrec=selrec, page=hex(page), width=hex(width), prewrap=hex(prewrap), xy=hex(xy),
         fastcheck=fastcheck, skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
         advance=hex(advance), glyph=hex(glyph), glyph2=hex(glyph + 2), color=hex(color), bold=hex(bold),
         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), cgkanji=hex(cgkanji), graphloop=hex(graphloop),

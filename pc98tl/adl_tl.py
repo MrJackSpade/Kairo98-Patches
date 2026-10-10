@@ -59,7 +59,7 @@ import os
 import re
 import struct
 
-from . import adl, adl5
+from . import adl, adl5, arq
 from .alice_sys2_tl import sha256
 
 PREFIX = {"msg": "m", "name": "n", "cmd": "c", "engine": "e"}
@@ -78,9 +78,11 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b",
+                                       "arq98") else adl
     if F is adl5:
-        adl5.set_variant(cfg["version"])
+        # (ARQ98.EXE: its messages in the program, pc98tl/arq.py; no scripts)
+        adl5.set_variant("adl5" if cfg["version"] == "arq98" else cfg["version"])
     else:
         adl.set_variant(cfg.get("version", "adl"))
     INDENT = cfg.get("name_cells", 10)
@@ -601,19 +603,59 @@ def _table_strings(raw):
     return [p.decode("cp932", "replace") for p in parts]
 
 
+def _arq_block(exe):
+    """(start, end) in the file of ARQ98.EXE's message block (pc98tl/arq.py), or None."""
+    if not arq.SHOW_SIG.search(exe):
+        return None
+    seg, top, _at = arq.find(exe)
+    hdr = struct.unpack_from("<H", exe, 8)[0] * 16
+    end = arq.groups(exe)[-1][1][-1][1]
+    return hdr + seg * 16 + top, hdr + seg * 16 + end
+
+
+ARQ_NOTE = {2: "a key wait", 3: "the window cleared", 6: "a new line"}
+
+
+def _arq_describe(ctrl):
+    """What ARQ98's control bytes between two runs do (each one byte)."""
+    return ", ".join(ARQ_NOTE.get(b, "control %02Xh" % b) for b in ctrl) or "none (the text goes on)"
+
+
+def _arq_messages(exe, table):
+    """[((group, index), jp, runs, between, (start, end))] of ARQ98.EXE's messages with text (offsets in
+    its data segment)."""
+    d = arq.data(exe)
+    out = []
+    for g, (_t, msgs) in enumerate(arq.groups(exe)):
+        for k, (s, e) in enumerate(msgs):
+            rs = arq.runs(d, s, e)
+            if not rs:
+                continue
+            between = [d[rs[i][1] + 1:rs[i + 1][0] - 1] for i in range(len(rs) - 1)]
+            out.append(((g, k), unit_text(d, rs, table), rs, between, (s, e)))
+    return out
+
+
 def _program_runs(exe):
     """[(start, end, kind, fixed, text)] of the program's own strings (file offsets): ADL5.EXE's
-    (pc98tl/adl5.py), ADL.EXE's save slots' names ("slot")."""
+    (pc98tl/adl5.py, but ARQ98.EXE's messages), ADL.EXE's save slots' names ("slot")."""
     if F is adl5:
         table = adl.kana_table(exe)
+        block = _arq_block(exe)
         out = []
         for s, e, kind, fixed in adl5.program_strings(exe):
+            if block and block[0] <= s < block[1]:
+                continue
             raw = exe[s:e]
             if kind == "run":
                 text = _text_with_fixed(raw, fixed, table)
             else:
                 text = raw.rstrip(b"\x00").decode("cp932", "replace")
             out.append((s, e, kind, fixed, text))
+        if block:
+            # (ARQ98.EXE's save and load messages: NUL-ended strings its far-pointer tables reach)
+            for s, e in arq.far_strings(exe):
+                out.append((s, e, "line", [], exe[s:e - 1].decode("cp932", "replace")))
         return out
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
     return [(hdr + at, hdr + at + SLOT_CELLS, "slot", [], jp) for at, jp in _slots(exe[hdr:])]
@@ -698,6 +740,15 @@ def run_extract(here, src):
             if jp.replace("　", "").strip():
                 add(kind, jp, "%s:%d" % (name, i), cells)
     prog = cfg.get("program", "ADL.EXE")
+    if cfg.get("version") == "arq98":
+        # (the message window's letters a line: game.json "message_cells", the window the program sets up at
+        # run time (Arquelphos: from B0h to 230h, 48 letters))
+        cells = cfg["message_cells"]
+        for (g, k), jp, rs, between, _se in _arq_messages(exe, table):
+            if not jp.replace("　", "").strip() or re.fullmatch(r"(\{X\d+\})*", jp.replace("　", "")):
+                continue
+            note = "; ".join("{X%d}: %s" % (i + 1, _arq_describe(c)) for i, c in enumerate(between)) or None
+            add("msg", jp, "%s#msg:%02x%02x" % (prog, g, k), cells, note)
     for s, e, kind, fixed, jp in _program_runs(exe):
         if kind == "slot":
             # (refs: offsets in the load image, as before)
@@ -705,7 +756,8 @@ def run_extract(here, src):
         else:
             note = "; ".join("{X%d}: a character the program writes there (the drive letter, the disk's number)"
                              % (n + 1) for n in range(len(fixed))) or None
-            add("engine", jp, "%s:%04x" % (prog, s), (e - s) - 1 - 2 * len(fixed) if kind == "run" else 8, note)
+            cells = {"run": (e - s) - 1 - 2 * len(fixed), "line": (e - s) - 1}.get(kind, 8)
+            add("engine", jp, "%s:%04x" % (prog, s), cells, note)
     for pname in cfg.get("program_files", []):
         raw = vol.read(_path(cfg, pname))
         for s, e, fixed in adl5.graph_strings(raw):
@@ -906,12 +958,38 @@ def run_patch(here, src, dst, mode="en"):
         elif kind == "word":
             b = _fixed(by_ref[key], 8)
             out_exe[s:e] = b + bytes(8 - len(b))
+        elif kind == "line":
+            # (in its own bytes, its NUL kept)
+            b = _fixed(by_ref[key], e - s - 1)
+            if len(_ascii(by_ref[key])) > e - s - 1:
+                warn.append("%s: cut to the program's room (%d bytes)" % (ids[key], e - s - 1))
+            out_exe[s:e] = b + bytes(e - s - len(b))
         else:
             b, cut = _fixed_run(by_ref[key], exe[s:e], fixed, ids[key])
             if cut:
                 warn.append("%s: cut to the program's room (%d bytes)" % (ids[key], e - s))
             out_exe[s:e] = b
-    vol.write(_path(cfg, prog), (F.patch_exe(bytes(out_exe), prog) if F is adl5 else F.patch_exe(bytes(out_exe))))
+    patched = F.patch_exe(bytes(out_exe), prog) if F is adl5 else F.patch_exe(bytes(out_exe))
+    if cfg.get("version") == "arq98":
+        # (the messages rebuilt into a segment of their own: pc98tl/arq.py)
+        d = arq.data(exe)
+        new = {}
+        for (g, k), _jp, rs, between, (s, e) in _arq_messages(exe, table):
+            key = (prog + "#msg", (g << 8) | k)
+            if key not in by_ref:
+                continue
+            pieces, order = split_tokens(by_ref[key], len(rs), ids[key])
+            seq = [pieces[0]] + [x for i, t in enumerate(order) for x in (t, pieces[i + 1])]
+            body = bytearray()
+            for i, x in enumerate(seq):
+                body += adl.encode_ascii(_ascii(x)) if i % 2 == 0 else b"\x00" + between[x - 1] + bytes([arq.TEXT_MARK])
+            new[(g, k)] = d[s:rs[0][0]] + bytes(body) + d[rs[-1][1]:e]
+        try:
+            block = arq.build(exe, new)
+        except arq.Bad as x:
+            raise SystemExit("%s: %s; shorten the messages" % (prog, x))
+        patched = arq.place(patched, block, adl5._move_up)
+    vol.write(_path(cfg, prog), patched)
     for pname in cfg.get("program_files", []):
         raw = vol.read(_path(cfg, pname))
         out = bytearray(raw)

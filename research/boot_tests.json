@@ -3225,5 +3225,19 @@
    "The other sections, save/load",
    "not yet seen"
   ]
+ ],
+ "arquelphos": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ARQ98: the opening (the village girl, the goddess Rera), the title, the island map",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged; the speaker's portrait box at its control; the map's menu (a picture) as it was"
+  ],
+  [
+   "The stages and their battles, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

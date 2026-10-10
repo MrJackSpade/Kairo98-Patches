@@ -281,6 +281,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | True Heart | [This repo: games/true_heart (patcher working, machine translation in progress)](../games/true_heart/notes.md) |
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
+| D.O | Arquelphos | [This repo: games/arquelphos (patcher working, machine translation in progress)](../games/arquelphos/notes.md) |
 | D.O | Collector D | [This repo: games/collector_d (patcher working, machine translation in progress)](../games/collector_d/notes.md) |
 | D.O | Collector D Bangaihen | [This repo: games/collector_d_bangaihen (patcher working, machine translation in progress)](../games/collector_d_bangaihen/notes.md) |
 | D.O | Crystal Rinal | [This repo: games/crystal_rinal (patcher working, machine translation in progress)](../games/crystal_rinal/notes.md) |
@@ -1885,7 +1886,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### D.O (`DO.zip`)
 
-- ♥ Arquelphos [CD FD HD extras] `do`
+- ♥ Arquelphos [CD FD HD extras] `do` — *MTL (this repo)*
 - ♥ Branmarker [CD FD extras]
 - ♥ Branmarker 2 [CD FD HD extras]
 - ♥ Collector D [FD HD] `do` — *MTL (this repo)*
