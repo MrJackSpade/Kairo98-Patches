@@ -1583,5 +1583,18 @@
    "url": "https://vndb.org/v1836",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Ushinawareta Rakuen": [
+  {
+   "label": "This repo: games/ushinawareta_rakuen (patcher working, machine translation in progress)",
+   "url": "../games/ushinawareta_rakuen/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v9147",
+   "url": "https://vndb.org/v9147",
+   "source": "VNDB"
+  }
  ]
 }
