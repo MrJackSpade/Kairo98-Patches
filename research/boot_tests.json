@@ -3050,8 +3050,12 @@
    "OK: boots; filler half-width in the framed windows, wrapped by the helper at each window's edge"
   ],
   [
-   "The story and the rest of the game",
-   "not reachable: the collection has only an alternate dump of Disk A (the game is about 5 MB installed; its other disks are missing)"
+   "Disk A (patched) in drive 1, Yuu Disk Vol. 8's Disk B in drive 2 (the setup menu's own strings left Japanese so it stays usable: at 2.5 times the Japanese its items overflow the small box and push its last item, End setup, out of view): the opening and the first scene",
+   "OK: the opening's pictures and title load from Disk B; the filler in the message window wrapped at its edge, page after page with Enter; a choice menu's items in filler"
+  ],
+  [
+   "Disks C and D",
+   "not reached in the test"
   ]
  ],
  "do_kaizokuban_hoshi": [

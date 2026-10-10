@@ -40,9 +40,10 @@ Translation and the content classification (♥) are done by the translation mod
 | Test | Result |
 |---|---|
 | Disk A (patched) alone; PA_01.EDT's setup menus | OK: boots; filler half-width in the framed windows, wrapped by the helper at each window's edge |
-| The story and the rest of the game | not reachable: the collection has only an alternate dump of Disk A (the game is about 5 MB installed; its other disks are missing) |
+| Disk A (patched) in drive 1, Yuu Disk Vol. 8's Disk B in drive 2 (the setup menu's own strings left Japanese so it stays usable: at 2.5 times the Japanese its items overflow the small box and push its last item, End setup, out of view): the opening and the first scene | OK: the opening's pictures and title load from Disk B; the filler in the message window wrapped at its edge, page after page with Enter; a choice menu's items in filler |
+| Disks C and D | not reached in the test |
 
-The collection has only an alternate dump of Disk A ("Disk A [Alt 1]"); the other disks are missing, so the patch covers Disk A, which holds the program and every script (EDT00), and the game cannot be played past what Disk A holds.
+The collection has only an alternate dump of this release's Disk A ("Disk A [Alt 1]"), which holds the program and every script (EDT00); the patch covers it. Yuu Disk Vol. 8 (games/yuu_disk_vol_8) is the same game: its Disk A matches this one file for file except DA (a saved game: this dump has been played) and DO (the settings), and its Disks B-D hold the rest (the disk-ID files DB-DD, the pictures GF01-GF03, the sounds PCM02-PCM03). Played with the patched Disk A and Yuu Disk Vol. 8's Disk B, the story runs (see the tests).
 
 The scripts and ADL98S.EXE are byte for byte those of Yuu Disk Vol. 8 (games/yuu_disk_vol_8, a complete hard-disk release): the strings are the same, ids included, so one translation serves both.
 
