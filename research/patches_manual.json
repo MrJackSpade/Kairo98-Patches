@@ -1523,5 +1523,13 @@
    "url": "https://vndb.org/v7824",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/De-Ja II": [
+  {
+   "label": "This repo: games/de_ja_2 (patcher working, machine translation in progress)",
+   "url": "../games/de_ja_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -73203,7 +73203,14 @@
      "path": "De-Ja II\\De-Ja II [HD]\\De-Ja II.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/de_ja_2 (patcher working, machine translation in progress)",
+     "url": "../games/de_ja_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4585 (erotic content)",
    "engine": "elf-ai5",
@@ -73211,7 +73218,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Doki Doki Shutter Chance",

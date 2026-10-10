@@ -263,6 +263,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Dez Climax | Youjuu Kyoushitsu | [This repo: games/youjuu_kyoushitsu (patcher working, machine translation in progress)](../games/youjuu_kyoushitsu/notes.md) |
 | Dynamic Pro | Kekkou Kamen - Oshioki Paradise no Maki | [This repo: games/kekkou_kamen (patcher working, machine translation in progress)](../games/kekkou_kamen/notes.md) |
 | Dynamic Pro | Kekkou Kamen 2 - Oshioki Densetsu no Maki | [This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)](../games/kekkou_kamen_2/notes.md) |
+| elf | De-Ja II | [This repo: games/de_ja_2 (patcher working, machine translation in progress)](../games/de_ja_2/notes.md) |
 | elf | Doki Doki Shutter Chance | [This repo: games/doki_doki_shutter_chance (patcher working, machine translation in progress)](../games/doki_doki_shutter_chance/notes.md) |
 | elf | Doukyuusei 2 | [This repo: games/doukyuusei_2 (patcher working, machine translation in progress)](../games/doukyuusei_2/notes.md) |
 | elf | Dragon Knight III | [This repo: games/dragon_knight_3 (patcher working, machine translation in progress)](../games/dragon_knight_3/notes.md) |
@@ -2183,7 +2184,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Angel Hearts [FD HD] `elf-other` — **EN**
 - ♥ Curse of Castle [FD]
 - ♥ De-Ja [FD HD extras] `elf-ai5`
-- ♥ De-Ja II [FD HD extras] `elf-ai5`
+- ♥ De-Ja II [FD HD extras] `elf-ai5` — *MTL (this repo)*
 - ♥ Doki Doki Shutter Chance [FD extras] `adv98v` — **EN**
 - ♥ Doukyuusei [FD HD extras] `elf-ai5` — *in progress elsewhere*
 - ♥ Doukyuusei 2 [FD HD extras] `elf-ai5` — **EN**

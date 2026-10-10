@@ -2767,5 +2767,19 @@
    "Shops, the ending and the staff roll",
    "not yet seen"
   ]
+ ],
+ "de_ja_2": [
+  [
+   "The hard-disk release; its first menu (the monitor type)",
+   "OK: boots; the prompt as half-width filler, the items as full-width filler cut to their boxes"
+  ],
+  [
+   "Picking a menu item",
+   "blocked: in np21w no key (Return, Space, Z, X, the keypad), mouse button or mouse move picks an item, in the original game as in the patched one; the arrow keys move the highlight"
+  ],
+  [
+   "Scenes, the name entry, the ending",
+   "not yet seen"
+  ]
  ]
 }

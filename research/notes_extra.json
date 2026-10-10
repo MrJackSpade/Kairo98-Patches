@@ -142,5 +142,12 @@
    "Monster and item names in battle come from `SENTO.COM`, a table of 30-byte records, each with a 12-byte name field ended by a NUL: `r` ids, written in full-width letters, up to `max_cells` (5) letters.",
    "The battle prints a name (command 14) and a number (command 15) between the pieces of its one-line messages; the patcher counts 10 cells for each (game.json \"inserts\": the longest monster name, five full-width letters, and a five-digit number in full-width digits), so the text after them wraps and pages from where they leave the line."
   ]
+ },
+ "de_ja_2": {
+  "remarks": [
+   "Subroutines 7 and 8 print the hero's family and given name from the name entry (its kana grid stays Japanese; the defaults はつしば and りゅうすけ are poked by OPEN.MES); the patcher keeps 12 cells for each.  Subroutine 9 prints an ellipsis (three ・) in Japanese; 6 cells.  Subroutines 18, 21 and 22 (083.MES) print an island's, a place's and a guide's name, their text strings of their own; 16 cells each.",
+   "The speaker tags (【...】) are subroutine bodies the script defines in a table (12 n, the text), which the driver treats as menu items: full-width letters within the Japanese tag's width.",
+   "The boot test stops at the first menu: np21w passes no key or mouse input that picks an item, in the original game too (AUTOEXEC.BAT loads Elf's ELF.COM, and START.MES the mouse cursor MOUSE.DAT)."
+  ]
  }
 }
