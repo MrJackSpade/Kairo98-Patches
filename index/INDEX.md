@@ -278,7 +278,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
 | D.O | Cybernoid Alpha | [This repo: games/cybernoid_alpha (patcher working, machine translation in progress)](../games/cybernoid_alpha/notes.md) |
-| D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban (patcher working, machine translation in progress)](../games/do_kaizokuban/notes.md) |
+| D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban (DOR, Disks A-B; patcher working, machine translation in progress)](../games/do_kaizokuban/notes.md) |
+| D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban_hoshi (Hoshi no Suna Monogatari, Disk C; patcher working, machine translation in progress)](../games/do_kaizokuban_hoshi/notes.md) |
 | D.O | DOR Part 1 | [This repo: games/dor_part_1 (patcher working, machine translation in progress)](../games/dor_part_1/notes.md) |
 | D.O | DOR Part 2 | [This repo: games/dor_part_2 (patcher working, machine translation in progress)](../games/dor_part_2/notes.md) |
 | D.O | DOR Part 3 | [This repo: games/dor_part_3 (patcher working, machine translation in progress)](../games/dor_part_3/notes.md) |

@@ -1,0 +1,10 @@
+{
+ "title": "D.O. Kaizokuban (Hoshi no Suna Monogatari)",
+ "key": "DO.zip/D.O. Kaizokuban",
+ "image": "D.O. Kaizokuban\\D.O. Kaizokuban [HD]\\D.O. Kaizokuban (Disk C) (Hoshi no Suna Monogatari).hdi",
+ "encoding": "adl",
+ "program": "ADL2.EXE",
+ "game_dir": "HOSHI12",
+ "boot_steps": "40:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot",
+ "version": "adl2"
+}

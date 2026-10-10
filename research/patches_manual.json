@@ -1778,8 +1778,14 @@
  ],
  "DO.zip/D.O. Kaizokuban": [
   {
-   "label": "This repo: games/do_kaizokuban (patcher working, machine translation in progress)",
+   "label": "This repo: games/do_kaizokuban (DOR, Disks A-B; patcher working, machine translation in progress)",
    "url": "../games/do_kaizokuban/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "This repo: games/do_kaizokuban_hoshi (Hoshi no Suna Monogatari, Disk C; patcher working, machine translation in progress)",
+   "url": "../games/do_kaizokuban_hoshi/notes.md",
    "source": "this repo",
    "wip": true
   }
