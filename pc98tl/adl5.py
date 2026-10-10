@@ -65,7 +65,48 @@ TEXT_MARK = 0xFF
 WINDOW_OP = 0x82
 # the controls' argument bytes
 CTRL_ARGS = {1: 1, 4: 1, 7: 1, 8: 1, 0x0B: 1, 9: 3, 0x0A: 3}
+CTRL_END = 0x0C                 # the first byte that is not a control
 LOADS = (0x50, 0x51)
+CODED = False                   # the scripts are coded (pc98tl/adl.py's codes, after a 4-byte prefix)
+
+# ADL98 (ADL98.EXE, Zatsuon Ryouiki 1994: its walker at 57A6h): ADL5's statements with these lengths
+# changed or added, more named statements, 0Ch a control with a byte, and the scripts coded
+ADL98 = {
+    "len": {0x10: 5, 0x1A: 4, 0x1B: 4, 0x3B: 4, 0x3C: 6, 0x65: 7, 0x89: 3, 0x8A: 1, 0x9A: 5, 0x9B: 5, 0xAD: 8,
+            0xAE: 13},
+    "named": {0xD0, 0xD1, 0x96},
+    "ctrl_args": {0x0C: 1},
+}
+_BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
+VARIANT = "adl5"
+
+
+def set_variant(name):
+    """The engine's build: "adl5" (ADL5.EXE) or "adl98" (ADL98.EXE)."""
+    global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
+    STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
+    CTRL_END, CODED, VARIANT = 0x0C, False, name
+    if name == "adl98":
+        STMT_LEN.update(ADL98["len"])
+        NAMED |= ADL98["named"]
+        CTRL_ARGS.update(ADL98["ctrl_args"])
+        CTRL_END, CODED = 0x0D, True
+
+
+def decode(raw):
+    """(the prefix and coding, a script as the engine reads it)."""
+    if not CODED:
+        return None, raw
+    from .adl import _decode
+    head, dec = _decode(raw[4:])
+    return (raw[:4], head), dec
+
+
+def encode(how, d):
+    if how is None:
+        return d
+    from .adl import _encode
+    return how[0] + _encode(how[1], d)
 
 
 def ctrl_len(b):
@@ -84,7 +125,7 @@ def _text(d, j):
             return j
         if b == TEXT_MARK:
             j = d.index(0, j) + 1
-        elif b < 0x0C:
+        elif b < CTRL_END:
             j += CTRL_ARGS.get(b, 0)
         else:
             return j - 1
@@ -118,13 +159,43 @@ def statement(d, i):
     if op == 0x61:
         return _named(d, i) + 1
     if op == 0x64:
-        return _named(d, i) + 5
+        return _named(d, i) + (6 if VARIANT == "adl98" else 5)
     if op == 0x93:
         return _named(d, i) + 3
     if op == 0xC3:
         return i + 4 + d[i + 1] * d[i + 2] * (2 if d[i + 3] & 2 else 1)
     if op == 0xC4:
         return _named(d, i + 1)
+    if VARIANT == "adl98":
+        if op == 0x98:
+            # (two bytes, then 3-byte records until 04)
+            j = i + 3
+            while d[j] != 4:
+                j += 3
+            return j + 1
+        if op == 0x99:
+            # (five bytes, then records until FFh: 00 and a word, 01 and three bytes, else five)
+            j = i + 6
+            while d[j] != 0xFF:
+                j += {0: 3, 1: 4}.get(d[j], 6)
+            return j + 1
+        if op == 0xE0:
+            return _named(d, i) + 6
+        if op == 0xD9:
+            return _named(d, i) + 5
+        if op == 0x76:
+            # (five bytes, then items until 00: 01 and a byte, or a byte and a run of bytes from 0Ah up)
+            j = i + 5
+            while d[j] != 0:
+                if d[j] == 1:
+                    j += 2
+                else:
+                    j += 1
+                    while d[j] >= 0x0A:
+                        j += 1
+            return j + 1
+        if op == 0x15:
+            return i + 1
     if op not in STMT_LEN:
         raise Bad("opcode %02X at %x" % (op, i))
     return i + STMT_LEN[op]
@@ -220,7 +291,8 @@ RUN_SIG = re.compile(
     rb"\x26\x8a\x14\x46"
     rb"\x80\x3e..\x00\x74\x12\x8b\x3e(..)\x8a\x0e(..)\xe8(..)\x83\x06..\x02\xeb."     # buffer: draw at [pos]
     rb"\xa0(..)\x32\xe4\xbf(..)\x03\xf8\x8b\x05\x52\xe8(..)\x5a\x8b\x5d\x02\xe8(..)\x8b\xf8"
-    rb"\x8a\x0e..\xe8..\x80\x3e(..)\x00\x75\x25\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75\x1b"
+    rb"\x8a\x0e..\xe8..\x80\x3e(..)\x00\x75.(\xb0\x0c\xe8..\x0a\xc0\x75.)?"
+    rb"\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75."
     rb"\xb4\x05\xcd\x33\xb2\x01\xa8\x03\x75\x09\xe8(..)\xa8\x10\x75\x02\xb2\x03\x8a\xc2"
     rb"\xe8(..)\xe8(..)\xe8(..)\xe9", re.S)
 # the advance (205Eh): ... add ax, [width] ...; its new line: add [di+2], 14h / call page
@@ -235,6 +307,7 @@ GRAPH_SIG = re.compile(rb"\x3c\x0d\x74\x08\xac\x8a\xd0\xe8(..)\xeb\xe6", re.S)
 HELPER = """
 runstart:
     mov byte ptr cs:[{ank}], 0
+    mov byte ptr cs:[{word}], 1
     JMPN {run}
 
 text:
@@ -264,6 +337,7 @@ t3:
     add di, ax
     cmp dh, 0x0a
     jne t4
+    mov byte ptr cs:[{word}], 1
     mov ax, word ptr [di]
     cmp ax, word ptr [di + 4]
     je t9
@@ -275,8 +349,43 @@ t9:
     JMPN {run}
 t4:
     cmp dh, 0x7f
-    jne t5
+    jne t4w
+    mov byte ptr cs:[{word}], 1
+    mov ax, word ptr [di]
+    cmp ax, word ptr [di + 4]
+    je t9
     mov dh, 0x20
+    jmp t5
+t4w:
+    cmp byte ptr cs:[{word}], 0
+    je t5
+    mov byte ptr cs:[{word}], 0
+    push si
+    mov cx, 1
+w1:
+    mov al, byte ptr es:[si]
+    cmp al, 0x21
+    jb w2
+    cmp al, 0x7f
+    jae w2
+    inc cx
+    inc si
+    jmp w1
+w2:
+    pop si
+    shl cx, 3
+    mov ax, word ptr [di]
+    cmp ax, word ptr [di + 4]
+    je t5
+    add ax, cx
+    cmp ax, word ptr [di + 8]
+    jbe t5
+    add word ptr [di + 2], 0x14
+    push dx
+    CALLN {page}
+    pop dx
+    mov ax, word ptr [di + 4]
+    mov word ptr [di], ax
 t5:
     push word ptr [{width}]
     mov word ptr [{width}], 8
@@ -292,7 +401,7 @@ t5:
     CALLN ank
     cmp byte ptr [{fast}], 0
     jne t7
-    mov ax, 0x40e
+{extra}    mov ax, 0x40e
     int 0x18
     test ah, 4
     jne t7
@@ -304,6 +413,7 @@ t5:
     CALLN {skipkey}
     test al, 0x10
     jne t6
+t6s:
     mov dl, 3
 t6:
     mov al, dl
@@ -372,97 +482,123 @@ g1:
 """
 
 
-def patch_exe(exe):
-    """ADL5.EXE with the half-width helper (see the module's docstring)."""
+def _move_up(exe, hdr, img, fixups, rel_at, split_seg, room_paras, code, name):
+    """The program with room_paras paragraphs (code at their start) put in at split_seg: every
+    segment from it on moves up (the fixups' values, the relocation entries past it, the stack)."""
+    split = split_seg * 16
+    for f in fixups:
+        v = struct.unpack_from("<H", img, f)[0]
+        if v >= split_seg:
+            struct.pack_into("<H", img, f, v + room_paras)
+    room = bytearray(room_paras * 16)
+    room[:len(code)] = code
+    img[split:split] = room
+    out = bytearray(exe[:hdr]) + img
+    for k in range(len(fixups)):
+        o, sg = struct.unpack_from("<2H", out, rel_at + 4 * k)
+        if sg * 16 + o >= split:
+            struct.pack_into("<H", out, rel_at + 4 * k + 2, sg + room_paras)
+    ss = struct.unpack_from("<H", out, 0x0E)[0]
+    if ss >= split_seg:
+        struct.pack_into("<H", out, 0x0E, ss + room_paras)
+    struct.pack_into("<HH", out, 2, len(out) % 512, -(-len(out) // 512))
+    return bytes(out)
+
+
+def patch_exe(exe, name="ADL5.EXE"):
+    """ADL5.EXE (or ADL98.EXE) with the half-width helper (see the module's docstring), put in at the
+    end of the code segment (the entry's), before the next segment the relocations name."""
     if exe[:2] != b"MZ":
-        raise SystemExit("ADL5.EXE: not an MZ program")
+        raise SystemExit("%s: not an MZ program" % name)
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
-    if struct.unpack_from("<H", exe, 0x16)[0] != CODE_SEG:
-        raise SystemExit("ADL5.EXE: the entry is not in segment 80h")
+    code_seg = struct.unpack_from("<H", exe, 0x16)[0]
     img = bytearray(exe[hdr:])
-    cs0 = CODE_SEG * 16
+    cs0 = code_seg * 16
     nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
     fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
               for k in range(nrel)]
-    data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > CODE_SEG)
-    seg = bytearray(img[cs0:data_seg * 16])
+    next_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > code_seg)
+    seg = bytearray(img[cs0:next_seg * 16])
     runs = _once(seg, RUNS_SIG, "text runs' loop")
     run_call = runs.start() + 15
     run = _call_target(seg, run_call)
     m = _once(seg, RUN_SIG, "text run")
     if m.start() != run:
-        raise SystemExit("ADL5.EXE: the text run is not where its loop calls")
-    (buffer, bufpos, color, _bufdraw, sel, rec, prewrap, xy, fast, skipkey, settimer, waittimer,
-     advance) = (struct.unpack("<H", g)[0] for g in m.groups())
+        raise SystemExit("%s: the text run is not where its loop calls" % name)
+    word = lambda k: struct.unpack("<H", m.group(k))[0]  # noqa: E731
+    buffer, bufpos, color, sel, rec, fast = word(1), word(2), word(3), word(5), word(6), word(9)
     # (call targets are relative: read them off their instructions)
     prewrap = _call_target(seg, m.start(7) - 1)
     xy = _call_target(seg, m.start(8) - 1)
-    skipkey = _call_target(seg, m.start(10) - 1)
-    settimer = _call_target(seg, m.start(11) - 1)
-    waittimer = _call_target(seg, m.start(12) - 1)
-    advance = _call_target(seg, m.start(13) - 1)
+    skipkey = _call_target(seg, m.start(11) - 1)
+    settimer = _call_target(seg, m.start(12) - 1)
+    waittimer = _call_target(seg, m.start(13) - 1)
+    advance = _call_target(seg, m.start(14) - 1)
+    # (ADL98's added key check before the wait: mov al, 0Ch / call / or al, al / jne (the slow wait))
+    extra = ""
+    if m.group(10):
+        extra = "    mov al, 0x0c\n    CALLN %s\n    or al, al\n    jne t6s\n" % hex(_call_target(seg, m.start(10) + 2))
     space = seg.find(b"\x80\xfe\x20\x74\xe4", run, run + 0x20)
     notspace = space + 5
     a = ADVANCE_SIG.match(seg, advance)
     if not a:
-        raise SystemExit("ADL5.EXE: the advance is not laid out as expected")
+        raise SystemExit("%s: the advance is not laid out as expected" % name)
     width = struct.unpack("<H", a.group(1))[0]
     # (the page: the new line's call after add [di+2], 14h)
     nl = seg.find(b"\x83\x45\x02\x14\xe8", advance, advance + 0x40)
     if nl < 0:
-        raise SystemExit("ADL5.EXE: the advance's new line is not found")
+        raise SystemExit("%s: the advance's new line is not found" % name)
     page = _call_target(seg, nl + 4)
     g = _once(seg, GLYPH_SIG, "glyph drawer")
     gcolor = struct.unpack("<H", g.group(1))[0]
     grcg_on = _call_target(seg, g.start() + 6)
     grcg_off = _call_target(seg, g.end() - 4)
     if gcolor != color:
-        raise SystemExit("ADL5.EXE: the glyph drawer's colour is not the text's")
+        raise SystemExit("%s: the glyph drawer's colour is not the text's" % name)
     bold = struct.unpack("<H", _once(seg, BOLD_SIG, "glyph rows").group(1))[0]
     gr = _once(seg, GRAPH_SIG, "graphics drawer")
     gat = gr.start() + 4
     cgkanji = _call_target(seg, gat + 3)
     graphloop = gat + 8 + struct.unpack("b", seg[gat + 7:gat + 8])[0]
-    at = (data_seg - CODE_SEG) * 16
+    # (the data segment the glyph drawer loads (push ds / push es / mov ax, seg / mov ds, ax / mov es, ax),
+    # as an offset from the code segment once the room is in: the graphics path's ds)
+    dm = re.compile(rb"\x1e\x06\xb8(..)\x8e\xd8\x8e\xc0", re.S).search(seg, cgkanji, cgkanji + 0x10)
+    if not dm:
+        raise SystemExit("%s: the glyph drawer's data segment is not found" % name)
+    data_seg = struct.unpack("<H", dm.group(1))[0]
+    dseg_delta = data_seg + (ROOM if data_seg >= next_seg else 0) - code_seg
+    at = len(seg)
     flags = (at + ROOM * 16 - 0x14, at + ROOM * 16 - 0x13)
     glyph = at + ROOM * 16 - 0x12          # the BIOS font's answer: 2 bytes, then 16 rows
     src = HELPER.format(
-        ank=hex(flags[0]), run=hex(run), notspace=hex(notspace), buffer=hex(buffer), bufpos=hex(bufpos),
+        ank=hex(flags[0]), word=hex(flags[1]), run=hex(run), notspace=hex(notspace), buffer=hex(buffer), bufpos=hex(bufpos),
         sel=hex(sel), rec=hex(rec), page=hex(page), width=hex(width), prewrap=hex(prewrap), xy=hex(xy),
         fast=hex(fast), skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
         advance=hex(advance), glyph=hex(glyph), glyph2=hex(glyph + 2), color=hex(color), bold=hex(bold),
         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
-        dseg_delta=hex(data_seg + ROOM - CODE_SEG))
+        extra=extra, dseg_delta=hex(dseg_delta))
     code, labels = _asm16(src, at, ("runstart", "text", "graph"))
     if len(code) > ROOM * 16 - 0x14:
-        raise SystemExit("ADL5.EXE: the helper is %d bytes, the room %d" % (len(code), ROOM * 16 - 0x14))
+        raise SystemExit("%s: the helper is %d bytes, the room %d" % (name, len(code), ROOM * 16 - 0x14))
     seg[run_call:run_call + 3] = b"\xe8" + struct.pack("<H", (labels["runstart"] - (run_call + 3)) & 0xFFFF)
     seg[space:space + 5] = b"\xe9" + struct.pack("<H", (labels["text"] - (space + 3)) & 0xFFFF) + b"\x90\x90"
     seg[gat:gat + 3] = b"\xe9" + struct.pack("<H", (labels["graph"] - (gat + 3)) & 0xFFFF)
     img[cs0:cs0 + len(seg)] = seg
     for lo, n in ((run_call, 3), (space, 5), (gat, 3)):
         if any(cs0 + lo - 1 <= f < cs0 + lo + n for f in fixups):
-            raise SystemExit("ADL5.EXE: a segment fixup falls in a patched range")
-    split = data_seg * 16
-    if any(f >= split for f in fixups):
-        raise SystemExit("ADL5.EXE: a segment fixup is past the code segment")
-    for f in fixups:
-        v = struct.unpack_from("<H", img, f)[0]
-        if v >= data_seg:
-            struct.pack_into("<H", img, f, v + ROOM)
-        elif v != CODE_SEG:
-            raise SystemExit("ADL5.EXE: a fixup holds segment %x, before the data segment" % v)
-    room = bytearray(ROOM * 16)
-    room[:len(code)] = code
-    img[split:split] = room
-    out = bytearray(exe[:hdr]) + img
-    struct.pack_into("<HH", out, 2, len(out) % 512, -(-len(out) // 512))
-    return bytes(out)
+            raise SystemExit("%s: a segment fixup falls in a patched range" % name)
+    return _move_up(exe, hdr, img, fixups, rel_at, next_seg, ROOM, code, name)
 
 
 # ---- ADL5.EXE's own strings
 
 _PAIR = rb"(?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc])"
+
+
+def _data_segment(img, fixups):
+    """The program's data segment: the segment its relocations name most often."""
+    from collections import Counter
+    return Counter(struct.unpack_from("<H", img, f)[0] for f in fixups).most_common(1)[0][0]
 
 
 def _runtime_bytes(seg):
@@ -481,9 +617,9 @@ def program_strings(exe):
     nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
     fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
               for k in range(nrel)]
-    data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > CODE_SEG)
+    data_seg = _data_segment(img, fixups)
     data = data_seg * 16
-    writes = _runtime_bytes(img[CODE_SEG * 16:data])
+    writes = _runtime_bytes(img[struct.unpack_from("<H", exe, 0x16)[0] * 16:data])
     out = []
     for m in re.finditer(rb"\xff(" + _PAIR + rb"{2,})\x00", img[data:], re.S):
         s, e = m.start(1), m.end(1)
@@ -621,7 +757,7 @@ def graph_strings(exe):
     nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
     fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
               for k in range(nrel)]
-    data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > code_seg)
+    data_seg = _data_segment(img, fixups)
     data = data_seg * 16
     writes = _runtime_bytes(img[code_seg * 16:data])
     out = []

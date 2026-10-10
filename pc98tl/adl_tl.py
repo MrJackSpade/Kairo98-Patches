@@ -75,8 +75,15 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") == "adl5" else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl98") else adl
+    if F is adl5:
+        adl5.set_variant(cfg["version"])
     INDENT = cfg.get("name_cells", 10)
+
+
+def _read_script(vol, cfg, name):
+    """(how it is coded, the script as the engine reads it: ADL98's are coded)."""
+    return F.decode(vol.read(_path(cfg, name)))
 
 
 def _path(cfg, name):
@@ -271,6 +278,44 @@ def split_tokens(text, n, sid):
     return TOKEN.split(text)[0::2], found
 
 
+# ADL5's (and ADL98's) flow: 28h goto, 2Bh call, 43h / 44h (a condition, or a menu item, then the
+# entry), 10h a menu (its items at an entry), the entry the last two bytes name (big-endian); 91h
+# returns, 28h, 50h and 51h (another script) do not go on to the next statement
+FLOW_TARGET = {0x28, 0x2B, 0x43, 0x44, 0x11}
+FLOW_STOP = {0x28, 0x91, 0x50, 0x51}
+
+
+def flow_widths(d, toks, start_width):
+    """{statement start: the narrowest text window (cells) any path to it set} of an ADL5 script,
+    following its gotos, calls and menus from its start (start_width before any window; a statement
+    no path reaches, or none sets a window before, is left out)."""
+    ents = F.entries(d)
+    index = {s: k for k, (s, _e) in enumerate(toks)}
+    succ = []
+    for k, (s, e) in enumerate(toks):
+        out = [] if d[s] in FLOW_STOP else ([k + 1] if k + 1 < len(toks) else [])
+        if d[s] in FLOW_TARGET or d[s] == 0x10:
+            n = struct.unpack_from(">H", d, (s + 1) if d[s] == 0x10 else (e - 2))[0]
+            if n in ents and ents[n] in index:
+                out.append(index[ents[n]])
+        succ.append(out)
+    state = {0: start_width or None}
+    work = [0]
+    while work:
+        k = work.pop()
+        w = state[k]
+        s, e = toks[k]
+        if d[s] == F.WINDOW_OP:
+            w = F.window(d, s)[1] // 8
+        for j in succ[k]:
+            old = state.get(j, "unseen")
+            new = w if old == "unseen" else (old if w is None else (w if old is None else min(old, w)))
+            if new != old:
+                state[j] = new
+                work.append(j)
+    return {toks[k][0]: w for k, w in state.items() if w}
+
+
 def start_widths(vol, cfg):
     """{script: the text window's width (cells) it starts with}: a script that draws text before it
     sets a window draws in the one its loader set.  The scripts each load (50h, 51h: a name,
@@ -278,7 +323,7 @@ def start_widths(vol, cfg):
     first script (and one no script loads) none (0)."""
     loads = {}
     for name in scripts(vol, cfg):
-        d = vol.read(_path(cfg, name))
+        how, d = _read_script(vol, cfg, name)
         toks = F.tokenize(d)
         width, out = None, []
         for s, e in toks:
@@ -309,6 +354,7 @@ def rebuild(d, toks, values, table, ids, start_width=0):
     menus = _menus(d, toks)
     new = {}
     width, col, indent = start_width, 0, 0
+    flow = flow_widths(d, toks, start_width) if F is adl5 else {}
     # (each translated unit's statements: rebuilt from the English pieces)
     plan = {}
     for s, (start, starts, runs, between) in us.items():
@@ -339,6 +385,8 @@ def rebuild(d, toks, values, table, ids, start_width=0):
             width, col, indent = w // 8, 0, 0
             k += 1
             continue
+        if s in flow and op in (0x70, 0x71):
+            width = flow[s]
         if op == 0x71 and F is adl5:
             # (a run drawn at a place of its own: one line to the screen's edge)
             if s in plan:
@@ -376,7 +424,11 @@ def rebuild(d, toks, values, table, ids, start_width=0):
                 if i % 2 == 0:
                     # (a cell short of the edge: a line that fills the window is wrapped by the engine,
                     # and the script's own new line after it would leave an empty one)
-                    text, col = wrap(x, max(width - 1, indent + 1), col, indent, max(width, indent + 1))
+                    if F is adl5:
+                        # (ADL5's helper wraps between words itself, at the window's edge)
+                        text = _ascii(x)
+                    else:
+                        text, col = wrap(x, max(width - 1, indent + 1), col, indent, max(width, indent + 1))
                     body += adl.encode_ascii(text)
                 else:
                     ctrl = between[x - 1]
@@ -427,18 +479,17 @@ def _ctrl_effect(raw, col, indent):
 def table_rooms(vol, cfg):
     """(name room, command room): the letters a table's slot holds.  ADL: 8 and 16.  ADL5 copies
     each table's strings into slots of twice the length 19h (names) and 18h (commands) give (a byte
-    before the table's name), and one more: the shortest any script sets."""
+    before the table's name), and one more: the shortest any script sets; None for a table no script
+    loads (Zatsuon Ryouiki's commands: never shown)."""
     if F is not adl5:
         return NAME_CELLS, CMD_CELLS
     rooms = {0x19: [], 0x18: []}
     for name in scripts(vol, cfg):
-        d = vol.read(_path(cfg, name))
+        how, d = _read_script(vol, cfg, name)
         for s, _e in F.tokenize(d):
             if d[s] in rooms:
                 rooms[d[s]].append(2 * d[s + 1])
-    if not rooms[0x19] or not rooms[0x18]:
-        raise SystemExit("no script sets the name and command tables' slots (19h, 18h)")
-    return min(rooms[0x19]), min(rooms[0x18])
+    return min(rooms[0x19] or [None]), min(rooms[0x18] or [None])
 
 
 def _table_strings(raw):
@@ -497,20 +548,23 @@ def run_extract(here, src):
             merged[key]["note"] = note
         order.append(key)
     name_room, cmd_room = table_rooms(vol, cfg)
-    menu_cells = cmd_room
+    menu_cells = cmd_room or CMD_CELLS
     starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
-        d = vol.read(_path(cfg, name))
+        how, d = _read_script(vol, cfg, name)
         toks = F.tokenize(d)
         menu_cells = min([menu_cells] + [_box_cells(d, s) for s, _e in toks if d[s] == 0x12])
         if F.rebuild(d, toks, {}) != d:
             raise SystemExit("%s does not rebuild byte for byte" % name)
         width = starts.get(name.upper(), 0)
+        flow = flow_widths(d, toks, width) if F is adl5 else {}
         choice_cells = {c: _widest(d, w, f) // 8 for w, (f, cs) in _menus(d, toks).items() for c in cs}
         firsts = {u[0]: u for u in units(d, toks)}
         for s, _e in toks:
             if d[s] == F.WINDOW_OP:
                 width = F.window(d, s)[1] // 8
+            if s in flow:
+                width = flow[s]
             if s in firsts:
                 _s, _starts, runs, between = firsts[s]
                 jp = unit_text(d, runs, table)
@@ -523,6 +577,8 @@ def run_extract(here, src):
                 add("msg", jp, "%s:%04x" % (name, s), cells, note)
     for name in tables(vol, cfg):
         kind = "name" if name.upper().startswith("NAME") else "cmd"
+        if (name_room if kind == "name" else cmd_room) is None:
+            continue
         for i, jp in enumerate(_table_strings(vol.read(_path(cfg, name)))):
             if jp.replace("　", "").strip():
                 add(kind, jp, "%s:%d" % (name, i), name_room if kind == "name" else menu_cells)
@@ -677,7 +733,7 @@ def run_patch(here, src, dst, mode="en"):
     starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
         path = _path(cfg, name)
-        d = vol.read(path)
+        how, d = _read_script(vol, cfg, name)
         toks = F.tokenize(d)
         values = {a: t for (f, a), t in by_ref.items() if f == name}
         if not values:
@@ -700,13 +756,15 @@ def run_patch(here, src, dst, mode="en"):
         if cut:
             warn.append("%s: the filler was cut by %d letters to fit the script's segment" % (name, cut))
         F.tokenize(new)
-        vol.write(path, new)
+        vol.write(path, F.encode(how, new))
         done += 1
     rooms = table_rooms(vol, cfg)
     for name in tables(vol, cfg):
         path = _path(cfg, name)
         parts, tail = adl.table_read(vol.read(path))
         room = rooms[0] if name.upper().startswith("NAME") else rooms[1]
+        if room is None:
+            continue
         changed = False
         for i in range(len(parts)):
             if (name, i) in by_ref:
@@ -733,7 +791,7 @@ def run_patch(here, src, dst, mode="en"):
             if cut:
                 warn.append("%s: cut to the program's room (%d bytes)" % (ids[key], e - s))
             out_exe[s:e] = b
-    vol.write(_path(cfg, prog), F.patch_exe(bytes(out_exe)))
+    vol.write(_path(cfg, prog), (F.patch_exe(bytes(out_exe), prog) if F is adl5 else F.patch_exe(bytes(out_exe))))
     for pname in cfg.get("program_files", []):
         raw = vol.read(_path(cfg, pname))
         out = bytearray(raw)

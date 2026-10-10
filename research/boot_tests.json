@@ -3023,5 +3023,15 @@
    "DOR_P2/DOR_P3 (the two calls), save/load, the disk prompts, endings",
    "not yet seen"
   ]
+ ],
+ "zatsuon_ryouiki": [
+  [
+   "The hard-disk release; MENU2.EDT, the display setting menu, clicked through",
+   "OK: boots (ADL98.EXE with the helper); filler half-width (8x16, graphics planes) in the white windows, wrapped by the helper between words at each window's own edge, paged; the menu's choices in their window (the choices come before the menu op: no widening, their max_cells is the window)"
+  ],
+  [
+   "The game's days (DAY1 ...), the replay menu, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

@@ -1062,25 +1062,33 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
 
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
+    v98 = cfg.get("version") == "adl98"
     return ["", "## Engine", "",
-            "D.O.'s **ADL5** engine (`%s`): %d scripts with text (%s), the speaker name table and the menu "
-            "command table (%s); `pc98tl/adl5.py` documents the script format and the program patch "
+            "D.O.'s **%s** engine (`%s`): %d scripts with text (%s), the speaker name table%s (%s); "
+            "`pc98tl/adl5.py` documents the script format%s and the program patch "
             "(`pc98tl/adl.py` the characters and the tables), `pc98tl/adl_tl.py` the English.  Every "
             "script tokenizes from its statements' start to its end, every entry lands on a statement, "
             "and each rebuilds byte for byte." % (
-                prog, len(files), ", ".join("`%s`" % f for f in files), ", ".join("`%s`" % f for f in tables)), "",
-            "The patch works on the disk that holds the program and its scripts (`%s`); the other "
-            "disks are used as they are." % cfg["image"].replace("\\", "/").split("/")[-1], "",
+                "ADL98" if v98 else "ADL5", prog, len(files), ", ".join("`%s`" % f for f in files),
+                " and the menu command table" if any(t.upper().startswith("KOM") for t in tables) else "",
+                ", ".join("`%s`" % f for f in tables),
+                " (ADL98's scripts are coded: after a 4-byte prefix, each byte inverted)" if v98 else ""), "",
+            ("The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"]
+             if cfg["image"].lower().endswith(".hdi") else
+             "The patch works on the disk that holds the program and its scripts (`%s`); the other "
+             "disks are used as they are." % cfg["image"].replace("\\", "/").split("/")[-1]), "",
             "* A script starts with its entries (the targets of its gotos, calls and menus, as offsets), "
             "so a rebuilt script has them moved with its statements.",
             "* `%s` gets a helper in 512 bytes put in at the end of its code segment (the data and work "
             "segments after it move up, every relocation with them).  In a run of text, 20h (a "
             "character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from "
             "the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's "
-            "text is), with the engine's own character wait, wrap and paging." % prog,
-            "* Lines are wrapped between words by the patcher to the text window the script set (82h: "
-            "its width less 32 dots), the speaker's name indenting the text %d cells; the engine's new "
-            "line (06) waits for a key itself before it clears a full window." % cfg.get("name_cells", 10),
+            "text is), with the engine's own character wait and paging.  Before each English word the "
+            "helper measures it against the window's right edge and starts a new line when it would not "
+            "fit (a space at a line's start is not drawn): the windows a script uses change as it calls "
+            "and jumps, so the wrap is the program's, not the patcher's." % prog,
+            "* The speaker's name indents the text %d cells; the engine's new line (06) waits for a key "
+            "itself before it clears a full window." % cfg.get("name_cells", 10),
             "* Speaker names, menu commands and the program's own strings take ASCII as well.",
             ] + (["* %s (run before the game) draws its lines with the same graphics drawer: it gets "
                   "the same half-width letters (a 256-byte helper, put in the same way), and its lines are "

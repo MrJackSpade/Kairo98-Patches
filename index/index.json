@@ -64209,15 +64209,27 @@
      "path": "Zatsuon Ryouiki\\Zatsuon Ryouiki [HD]\\Zatsuon Ryouiki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/zatsuon_ryouiki (patcher working, machine translation in progress)",
+     "url": "../games/zatsuon_ryouiki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1925",
+     "url": "https://vndb.org/v1925",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18368 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Zoku Youjuu Senki - Sajin no Mokushiroku",

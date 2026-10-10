@@ -84,6 +84,15 @@ class Bad(Exception):
     pass
 
 
+def decode(raw):
+    """(how a script is coded: not at all, the script)."""
+    return None, raw
+
+
+def encode(how, d):
+    return d
+
+
 def ctrl_len(b):
     """A control's bytes, its argument with it."""
     return 2 if b in CTRL_ARG else 1
