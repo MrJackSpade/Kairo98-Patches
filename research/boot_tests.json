@@ -3033,5 +3033,15 @@
    "The game's days (DAY1 ...), the replay menu, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "yuu_disk_vol_8": [
+  [
+   "The hard-disk release; PA_01.EDT's setup menus (display, sound, wait), clicked",
+   "OK: boots (ADL98S.EXE with the helper; the scripts and tables read from and written back to the EDT00 archive); filler half-width in the framed windows, wrapped by the helper between words at each window's edge"
+  ],
+  [
+   "The story (PA_02 ...), the battle scenes (S_xx), save/load, endings",
+   "not yet seen (the clicks keep choosing the same setup item)"
+  ]
  ]
 }

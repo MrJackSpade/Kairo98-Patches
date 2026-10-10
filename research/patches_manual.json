@@ -1744,5 +1744,18 @@
    "url": "https://vndb.org/v9173",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban": [
+  {
+   "label": "This repo: games/yuu_disk_vol_8 (patcher working, machine translation in progress)",
+   "url": "../games/yuu_disk_vol_8/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8838",
+   "url": "https://vndb.org/v8838",
+   "source": "VNDB"
+  }
  ]
 }

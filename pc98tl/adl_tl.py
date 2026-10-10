@@ -75,15 +75,42 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl98") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl98", "adl98s") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
     INDENT = cfg.get("name_cells", 10)
 
 
+ARCHIVE = {}                    # game.json "archive" (ADL98S's EDT00): {"path", "arc", "changed"}
+
+
+def _open_store(vol, cfg):
+    """The scripts' and tables' store: the game folder, or the archive game.json "archive" names."""
+    ARCHIVE.clear()
+    if cfg.get("archive"):
+        path = _path(cfg, cfg["archive"])
+        ARCHIVE.update(path=path, arc=adl5.Archive(vol.read(path)), changed={})
+
+
+def _file_read(vol, cfg, name):
+    return ARCHIVE["arc"].read(name) if ARCHIVE else vol.read(_path(cfg, name))
+
+
+def _file_write(vol, cfg, name, data):
+    if ARCHIVE:
+        ARCHIVE["changed"][name] = data
+    else:
+        vol.write(_path(cfg, name), data)
+
+
+def _close_store(vol):
+    if ARCHIVE and ARCHIVE["changed"]:
+        vol.write(ARCHIVE["path"], ARCHIVE["arc"].rebuilt(ARCHIVE["changed"]))
+
+
 def _read_script(vol, cfg, name):
     """(how it is coded, the script as the engine reads it: ADL98's are coded)."""
-    return F.decode(vol.read(_path(cfg, name)))
+    return F.decode(_file_read(vol, cfg, name))
 
 
 def _path(cfg, name):
@@ -96,6 +123,8 @@ def _image(cfg, src):
 
 
 def _game_files(vol, cfg):
+    if ARCHIVE:
+        return sorted(ARCHIVE["arc"].names())
     cluster = vol.find(cfg["game_dir"])["cluster"] if cfg["game_dir"] else 0
     return sorted(e["name"] for e in vol.listdir(cluster) if not e["is_dir"])
 
@@ -139,7 +168,7 @@ def units(d, toks):
             continue
         group = [k]
         while d[s] == 0x70 and _ends_on_text(F.items(d, *toks[group[-1]])) and group[-1] + 1 < len(toks) \
-                and d[toks[group[-1] + 1][0]] == 0x70 and toks[group[-1] + 1][0] not in targets:
+                and d[toks[group[-1] + 1][0]] == 0x70 and toks[group[-1] + 1][0] not in targets                 and toks[group[-1] + 1][0] == toks[group[-1]][1]:
             group.append(group[-1] + 1)
         runs = []
         for m in group:
@@ -293,7 +322,7 @@ def flow_widths(d, toks, start_width):
     index = {s: k for k, (s, _e) in enumerate(toks)}
     succ = []
     for k, (s, e) in enumerate(toks):
-        out = [] if d[s] in FLOW_STOP else ([k + 1] if k + 1 < len(toks) else [])
+        out = [] if d[s] in FLOW_STOP or e not in index else [index[e]]
         if d[s] in FLOW_TARGET or d[s] == 0x10:
             n = struct.unpack_from(">H", d, (s + 1) if d[s] == 0x10 else (e - 2))[0]
             if n in ents and ents[n] in index:
@@ -533,6 +562,7 @@ def run_extract(here, src):
     img = _image(cfg, src)
     vol = img.volumes[0]
     _set_format(cfg)
+    _open_store(vol, cfg)
     exe, hdr = _program(vol, cfg)
     table = adl.kana_table(exe[hdr:])
     merged, order = {}, []
@@ -579,7 +609,7 @@ def run_extract(here, src):
         kind = "name" if name.upper().startswith("NAME") else "cmd"
         if (name_room if kind == "name" else cmd_room) is None:
             continue
-        for i, jp in enumerate(_table_strings(vol.read(_path(cfg, name)))):
+        for i, jp in enumerate(_table_strings(_file_read(vol, cfg, name))):
             if jp.replace("　", "").strip():
                 add(kind, jp, "%s:%d" % (name, i), name_room if kind == "name" else menu_cells)
     prog = cfg.get("program", "ADL.EXE")
@@ -706,6 +736,7 @@ def run_patch(here, src, dst, mode="en"):
     img = _image(cfg, src)
     vol = img.volumes[0]
     _set_format(cfg)
+    _open_store(vol, cfg)
     exe, hdr = _program(vol, cfg)
     table = adl.kana_table(exe[hdr:])
     prog = cfg.get("program", "ADL.EXE")
@@ -756,12 +787,11 @@ def run_patch(here, src, dst, mode="en"):
         if cut:
             warn.append("%s: the filler was cut by %d letters to fit the script's segment" % (name, cut))
         F.tokenize(new)
-        vol.write(path, F.encode(how, new))
+        _file_write(vol, cfg, name, F.encode(how, new))
         done += 1
     rooms = table_rooms(vol, cfg)
     for name in tables(vol, cfg):
-        path = _path(cfg, name)
-        parts, tail = adl.table_read(vol.read(path))
+        parts, tail = adl.table_read(_file_read(vol, cfg, name))
         room = rooms[0] if name.upper().startswith("NAME") else rooms[1]
         if room is None:
             continue
@@ -774,7 +804,8 @@ def run_patch(here, src, dst, mode="en"):
                 parts[i] = b
                 changed = True
         if changed:
-            vol.write(path, adl.table_write(parts, tail))
+            _file_write(vol, cfg, name, adl.table_write(parts, tail))
+    _close_store(vol)
     out_exe = bytearray(exe)
     for s, e, kind, fixed, jp in _program_runs(exe):
         key = (prog, s - hdr) if kind == "slot" else (prog, s)

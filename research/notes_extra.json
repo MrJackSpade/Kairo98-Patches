@@ -233,5 +233,12 @@
    "In the menus here the choices are text statements before the menu op, in a window sized for the Japanese: an English choice longer than its max_cells wraps onto a second line, past the menu's rows.",
    "The --pseudo build cuts its filler to fit the 64 KB script segment: DAY1.EDT by 13,572 letters, DAY1A.EDT by 1,653, DAY2.EDT (63,656 bytes in Japanese) by 53,446 and DAY2P.EDT by 36,444; DAY2.EDT leaves 1,880 bytes for English beyond the Japanese, so its English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
   ]
+ },
+ "yuu_disk_vol_8": {
+  "remarks": [
+   "The scripts and ADL98S.EXE are byte for byte those of Cybernoid Alpha (its full release); a translation of this folder serves both.",
+   "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown.",
+   "Some scripts (the battle scenes S_xx, PA_14) hold tables the walker never steps onto (after AFh, records of 14h bytes the entries reach); the tokenizer picks the walk up again at the next entry and the tables move as they are."
+  ]
  }
 }

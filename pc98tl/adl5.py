@@ -73,24 +73,31 @@ CODED = False                   # the scripts are coded (pc98tl/adl.py's codes, 
 # changed or added, more named statements, 0Ch a control with a byte, and the scripts coded
 ADL98 = {
     "len": {0x10: 5, 0x1A: 4, 0x1B: 4, 0x3B: 4, 0x3C: 6, 0x65: 7, 0x89: 3, 0x8A: 1, 0x9A: 5, 0x9B: 5, 0xAD: 8,
-            0xAE: 13},
+            0xAE: 13, 0xD2: 11, 0xD3: 5, 0xD4: 10, 0xD5: 1, 0xD6: 5, 0xD7: 7, 0xD8: 3, 0xDA: 4, 0xDB: 2, 0xE1: 7,
+            0xE2: 9, 0xE3: 1},
     "named": {0xD0, 0xD1, 0x96},
     "ctrl_args": {0x0C: 1},
 }
+# ADL98S (ADL98S.EXE, Cybernoid Alpha 1995: its walker at 59FFh): ADL98's, and 66h named, 67h, 9Dh,
+# AFh, and 9Ch (a length byte and that many bytes)
+ADL98S = {"len": {0x67: 1, 0x9D: 6, 0xAF: 8}, "named": {0x66}}
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
 
 def set_variant(name):
-    """The engine's build: "adl5" (ADL5.EXE) or "adl98" (ADL98.EXE)."""
+    """The engine's build: "adl5" (ADL5.EXE), "adl98" (ADL98.EXE) or "adl98s" (ADL98S.EXE)."""
     global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
     STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
     CTRL_END, CODED, VARIANT = 0x0C, False, name
-    if name == "adl98":
+    if name in ("adl98", "adl98s"):
         STMT_LEN.update(ADL98["len"])
         NAMED |= ADL98["named"]
         CTRL_ARGS.update(ADL98["ctrl_args"])
         CTRL_END, CODED = 0x0D, True
+    if name == "adl98s":
+        STMT_LEN.update(ADL98S["len"])
+        NAMED |= ADL98S["named"]
 
 
 def decode(raw):
@@ -159,14 +166,16 @@ def statement(d, i):
     if op == 0x61:
         return _named(d, i) + 1
     if op == 0x64:
-        return _named(d, i) + (6 if VARIANT == "adl98" else 5)
+        return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s") else 5)
     if op == 0x93:
         return _named(d, i) + 3
     if op == 0xC3:
         return i + 4 + d[i + 1] * d[i + 2] * (2 if d[i + 3] & 2 else 1)
     if op == 0xC4:
         return _named(d, i + 1)
-    if VARIANT == "adl98":
+    if VARIANT == "adl98s" and op == 0x9C:
+        return i + 2 + d[i + 1]
+    if VARIANT in ("adl98", "adl98s"):
         if op == 0x98:
             # (two bytes, then 3-byte records until 04)
             j = i + 3
@@ -205,7 +214,7 @@ def base(d):
     return struct.unpack_from(">H", d, 0)[0]
 
 
-def tokenize(d):
+def _linear(d):
     out, i = [], base(d)
     while i < len(d) and d[i] != 0xFF:
         j = statement(d, i)
@@ -214,6 +223,42 @@ def tokenize(d):
         out.append((i, j))
         i = j
     return out
+
+
+def _resync(d):
+    """[(start, end)] of the statements read straight through, the walk picked up again at the next
+    entry wherever it meets bytes no statement starts with (ADL98S's tables after AFh: records the
+    entries reach, never the walker); the bytes skipped move with the statements around them."""
+    ents = sorted(v for v in entries(d).values() if v < len(d))
+    out, i = [], base(d)
+    while i < len(d) and d[i] != 0xFF:
+        try:
+            j = statement(d, i)
+            if j > len(d):
+                raise Bad("past the end")
+            out.append((i, j))
+            i = j
+        except (Bad, IndexError, ValueError):
+            # (the next entry after the last statement's start: a statement it falls inside is dropped,
+            # it was bytes the walker never steps onto)
+            after = out[-1][0] if out else -1
+            e = next((v for v in ents if v > after and v != i), len(d))
+            if e < i:
+                while out and out[-1][1] > e:
+                    out.pop()
+            elif e == len(d) or e <= i:
+                e = next((v for v in ents if v > i), len(d))
+            i = e
+    return out
+
+
+def tokenize(d):
+    """[(start, end)] of the statements: read straight through from the statements' start, or, where
+    that runs into bytes no statement starts with, picked up again at the next entry (_resync)."""
+    try:
+        return _linear(d)
+    except (Bad, IndexError, ValueError):
+        return _resync(d)
 
 
 def entries(d):
@@ -246,21 +291,27 @@ def rebuild(d, toks, new):
     bits: the caller refuses it by its size.)"""
     start = base(d)
     out = bytearray(d[:start])
-    moved, pos = {}, start
+    # (pieces: (old start, old end, new start, kept as it is); the bytes between statements kept)
+    pieces, pos = [], start
     for s, e in toks:
-        moved[s] = len(out)
+        if s > pos:
+            pieces.append((pos, s, len(out), True))
+            out += d[pos:s]
+        pieces.append((s, e, len(out), s not in new))
         out += new.get(s, d[s:e])
         pos = e
-    moved[pos] = len(out)
+    pieces.append((pos, len(d), len(out), True))
     out += d[pos:]
     for k, at in entries(d).items():
-        if at not in moved:
-            if at >= len(d):
-                # (an entry past the statements: the end of the file, moved with it)
-                moved[at] = at - len(d) + len(out)
-            else:
-                raise Bad("entry %d (%x) is not on a statement" % (k, at))
-        struct.pack_into(">H", out, 2 + 2 * k, (moved[at] - start) & 0xFFFF)
+        if at >= len(d):
+            # (an entry past the statements: the end of the file, moved with it)
+            to = at - len(d) + len(out)
+        else:
+            piece = next(p for p in pieces if p[0] <= at < p[1] or p[0] == at)
+            if at != piece[0] and not piece[3]:
+                raise Bad("entry %d (%x) is inside a rebuilt statement" % (k, at))
+            to = piece[2] + (at - piece[0])
+        struct.pack_into(">H", out, 2 + 2 * k, (to - start) & 0xFFFF)
     return bytes(out)
 
 
@@ -766,3 +817,41 @@ def graph_strings(exe):
         s, e = m.start(1), m.end(1)
         out.append((hdr + data + s, hdr + data + e, sorted(w - 1 - s for w in writes if s < w < e)))
     return out
+
+
+# ---- ADL98S's file archives (EDT00: the scripts and the tables)
+
+class Archive:
+    """EDT00 (and GF00, FMD00, PCM00): a word, the entries' size; entries of 16 bytes: the name
+    (12, NUL-padded) and the member's offset (a dword); an entry with no name gives the end.  The
+    members follow in order, from the header's end."""
+
+    def __init__(self, raw):
+        self.raw = raw
+        first = struct.unpack_from("<H", raw, 0)[0]
+        self.entries = []
+        for at in range(2, first, 16):
+            name = raw[at:at + 12].split(b"\x00")[0].decode("ascii")
+            self.entries.append((name, struct.unpack_from("<I", raw, at + 12)[0]))
+        if not self.entries or self.entries[-1][0]:
+            raise Bad("the archive does not end with an unnamed entry")
+
+    def names(self):
+        return [n for n, _o in self.entries[:-1]]
+
+    def read(self, name):
+        for k, (n, o) in enumerate(self.entries[:-1]):
+            if n == name:
+                return self.raw[o:self.entries[k + 1][1]]
+        raise KeyError(name)
+
+    def rebuilt(self, changed):
+        """The archive with changed ({name: bytes}) members, the offsets laid out anew."""
+        first = 2 + struct.unpack_from("<H", self.raw, 0)[0]
+        head = bytearray(self.raw[:first])
+        body = bytearray()
+        for k, (n, o) in enumerate(self.entries):
+            struct.pack_into("<I", head, 2 + 16 * k + 12, first + len(body))
+            if n:
+                body += changed.get(n, self.raw[o:self.entries[k + 1][1]])
+        return bytes(head + body + self.raw[self.entries[-1][1]:])
