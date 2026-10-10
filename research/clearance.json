@@ -1709,5 +1709,126 @@
    "GitHub search (title + translation): nothing",
    "web search (title + English translation, PC-98): web search 2026-10-09 (title + elf PC-98 English translation): no English translation or announcement found"
   ]
+ },
+ "Silkys.zip/Be-Yond": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: v1973 (Be-Yond ~Kurodaishou ni Mirareteru~, the PC-98 release r3876) has no English release (the earlier title search matched an unrelated VN)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Nonomura Byouin no Hitobito": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Kawarazakike no Ichizoku": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Ai Shimai - Futari no kajitsu": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Ushinawareta Rakuen": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Reira": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Fermion": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Jack - Haitoku no Megami": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): jackboxpt/JackboxPartyPack-Localization; JackboxUtility/JackboxUtility; Nriver/jackett-translation; ziyao233/lets_build_a_compiler_zh; OnoMichio/Yakuza6BlueJacketDemoTranslation"
+  ]
+ },
+ "Silkys.zip/Crescent": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Mobius Roid": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Silkys.zip/Valentine Kiss - Birth Days 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Mediax.zip/PP Disk No. 03": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
  }
 }

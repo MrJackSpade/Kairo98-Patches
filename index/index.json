@@ -187297,15 +187297,27 @@
      "path": "Be-Yond\\Be-Yond [HD]\\Be-Yond.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/be_yond (patcher working, machine translation in progress)",
+     "url": "../games/be_yond/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1973",
+     "url": "https://vndb.org/v1973",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 16 of 16 classified Silky's titles are adult",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Birth Days",

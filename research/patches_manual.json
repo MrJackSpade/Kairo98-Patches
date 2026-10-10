@@ -1531,5 +1531,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Silkys.zip/Be-Yond": [
+  {
+   "label": "This repo: games/be_yond (patcher working, machine translation in progress)",
+   "url": "../games/be_yond/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v1973",
+   "url": "https://vndb.org/v1973",
+   "source": "VNDB"
+  }
  ]
 }

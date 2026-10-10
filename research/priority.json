@@ -819,5 +819,105 @@
     "votes": 0
    }
   ]
+ },
+ "silkys": {
+  "checked": "2026-10-09",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "Silkys.zip/Be-Yond",
+    "title": "Be-Yond",
+    "vndb": [
+     "v432"
+    ],
+    "votes": 876
+   },
+   {
+    "key": "Silkys.zip/Nonomura Byouin no Hitobito",
+    "title": "Nonomura Byouin no Hitobito",
+    "vndb": [
+     "v2346"
+    ],
+    "votes": 88
+   },
+   {
+    "key": "Silkys.zip/Kawarazakike no Ichizoku",
+    "title": "Kawarazakike no Ichizoku",
+    "vndb": [
+     "v2351"
+    ],
+    "votes": 83
+   },
+   {
+    "key": "Silkys.zip/Ai Shimai - Futari no kajitsu",
+    "title": "Ai Shimai - Futari no kajitsu",
+    "vndb": [
+     "v1836"
+    ],
+    "votes": 40
+   },
+   {
+    "key": "Silkys.zip/Ushinawareta Rakuen",
+    "title": "Ushinawareta Rakuen",
+    "vndb": [
+     "v9147"
+    ],
+    "votes": 21
+   },
+   {
+    "key": "Silkys.zip/Reira",
+    "title": "Reira",
+    "vndb": [
+     "v9053"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "Silkys.zip/Fermion",
+    "title": "Fermion",
+    "vndb": [
+     "v5903"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "Silkys.zip/Jack - Haitoku no Megami",
+    "title": "Jack - Haitoku no Megami",
+    "vndb": [
+     "v6387"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "Silkys.zip/Crescent",
+    "title": "Crescent",
+    "vndb": [
+     "v8830"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "Silkys.zip/Mobius Roid",
+    "title": "Mobius Roid",
+    "vndb": [
+     "v8812"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "Silkys.zip/Valentine Kiss - Birth Days 2",
+    "title": "Valentine Kiss - Birth Days 2",
+    "vndb": [
+     "v18230"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "Mediax.zip/PP Disk No. 03",
+    "title": "PP Disk No. 03",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
  }
 }

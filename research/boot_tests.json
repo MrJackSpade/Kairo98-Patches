@@ -2781,5 +2781,31 @@
    "Scenes, the name entry, the ending",
    "not yet seen"
   ]
+ ],
+ "be_yond": [
+  [
+   "Hard-disk layout boots (the seven disks' files in BIYO, started with GAME.BAT)",
+   "OK"
+  ],
+  [
+   "The display menu and the title texts",
+   "OK: half-width filler, the menu's highlight on its items"
+  ],
+  [
+   "The icon menu (NEW GAME, LOAD, MES, EXIT)",
+   "OK: its label (a string variable) as half-width filler, centred"
+  ],
+  [
+   "The opening narration",
+   "OK: half-width filler wrapped between words in the bottom window, a key going on"
+  ],
+  [
+   "The first dialogue scene (speaker tags, the bridge)",
+   "OK: each speaker's tag on its own line, the message wrapped between words below it, longer ones paged by the engine"
+  ],
+  [
+   "The name entry, the program's error messages",
+   "not yet seen"
+  ]
  ]
 }

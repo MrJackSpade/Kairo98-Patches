@@ -1,0 +1,62 @@
+{
+ "title": "Be-Yond",
+ "key": "Silkys.zip/Be-Yond",
+ "image": "Be-Yond\\Be-Yond [FD]\\Be-Yond (Disk A).hdm",
+ "encoding": "silky",
+ "game_dir": "BIYO",
+ "program_files": [
+  "SL.EXE",
+  "MUSIC.COM"
+ ],
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI"
+  ],
+  "dir": "BIYO",
+  "disks": [
+   "Be-Yond (Disk B).hdm",
+   "Be-Yond (Disk C).hdm",
+   "Be-Yond (Disk D).hdm",
+   "Be-Yond (Disk E).hdm",
+   "Be-Yond (Disk F).hdm",
+   "Be-Yond (Disk G).hdm"
+  ],
+  "skip": [
+   "INSTALL.EXE",
+   "README.TXT"
+  ],
+  "unused": {
+   "Be-Yond (Disk B).hdm": [
+    "DISKNO"
+   ],
+   "Be-Yond (Disk C).hdm": [
+    "DISKNO"
+   ],
+   "Be-Yond (Disk D).hdm": [
+    "DISKNO"
+   ],
+   "Be-Yond (Disk E).hdm": [
+    "DISKNO"
+   ],
+   "Be-Yond (Disk F).hdm": [
+    "DISKNO"
+   ],
+   "Be-Yond (Disk G).hdm": [
+    "DISKNO"
+   ]
+  },
+  "run": [
+   "A:",
+   "cd \\BIYO",
+   "game"
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "boot_steps": "30:shot,3:enter,8:shot,3:enter,6:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot,3:enter,5:shot"
+}

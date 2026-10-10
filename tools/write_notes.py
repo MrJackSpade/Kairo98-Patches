@@ -965,6 +965,83 @@ def gip_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def silky_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "var": "string variable values", "engine": "program strings"}
+    files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(".MES")})
+    h = cfg["hdd"]
+    out = ["# %s%s (Silky's)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Silky's (Elf's) **General Message system-1** (`SL.EXE`): %d `*.MES` scripts with text, in "
+            "the archives `DISKA`-`DISKG` (one per floppy), each compressed; `pc98tl/silky.py` documents the "
+            "archive, the compression and the bytecode, and `pc98tl/silky_tl.py` the English.  Every script "
+            "tokenizes from its bytecode's start to its end, every address in it lands on a statement, and "
+            "each rebuilds byte for byte." % len(files), "",
+            "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
+            "hard-disk image the way its own installer does (every disk's files in `%s/`, started with "
+            "`%s`; one disk's `DISKNO` kept); the base image is the collection's `%s` with its own game "
+            "removed." % (h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")), "",
+            "* The scripts hold addresses (jumps, loops, cases, calls), so a rebuilt script has them moved "
+            "with its statements.",
+            "* English is a text statement in the engine's mode 2: single-byte letters, drawn half-width "
+            "(8x16) by the engine itself, which the game uses for its half-width katakana sound effects; "
+            "the program's drawing is not changed.",
+            "* Lines are wrapped between words to the text window the script set (46h; the message box "
+            "is columns 17-62, 46 letters), with the engine's new line (04); the engine starts a new page "
+            "by itself when a line would pass the window's bottom.",
+            "* A changed script is compressed again and its archive laid out anew.",
+            "", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length within the script's room (below); `\\n` starts a new line. "
+            "`max_cells` is a line's width in its window (letters); longer text wraps between words and "
+            "pages.  A message that ends with a new line in the Japanese (a speaker's tag) should end "
+            "with one too.  Letters only: the engine draws ASCII and half-width katakana in this mode, so "
+            "anything else (full-width characters, accented letters) is written as `?`.",
+            "* `{N}` is where the script prints a string variable (4Bh: the hero's name, from the name "
+            "entry): keep it in the English, in order; the patcher keeps 12 columns for it.",
+            "* A script is loaded at SS:0000 and the system library (`SYSTEM.MLL`) after it, at SS:%04Xh "
+            "(read off `SL.EXE`): a script with its English may take that many bytes.  Each English letter "
+            "is one byte, a Japanese character one or two, so the longest scripts must keep their English "
+            "about as long in bytes as the Japanese; a build whose script outgrows its room is refused "
+            "and names the script and its strings." % 0x7918,
+            "* String variable values (`v` ids: names and menu labels the script keeps in a variable): "
+            "`max_cells` letters (a string variable's 32-byte slot), an even number of them (a space is "
+            "added); longer ones are cut and reported.",
+            "* Program strings (`e` ids: `%s`): `max_cells` x 2 letters, written in place; longer ones are "
+            "cut and reported." % "`, `".join(cfg.get("program_files", [])),
+            "", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, pictures).",
+            "* The name entry's character grid stays Japanese: the entry picks characters by their "
+            "place in it."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    out.append("| Gameplay past the opening scenes, save/load, endings | not yet seen |")
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def main():
     names = sys.argv[1:] or sorted(os.listdir(os.path.join(ROOT, "games")))
     adult = load("research", "adult_text.json", default={})
@@ -984,6 +1061,11 @@ def main():
             continue
         if cfg.get("encoding") == "ai5":
             out = ai5_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "silky":
+            out = silky_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
