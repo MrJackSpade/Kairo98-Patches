@@ -1,0 +1,18 @@
+{
+ "title": "Ai Shimai - Futari no Kajitsu",
+ "key": "Silkys.zip/Ai Shimai - Futari no kajitsu",
+ "image": "Ai Shimai - Futari no kajitsu\\Ai Shimai - Futari no kajitsu [HD]\\Ai Shimai - Futari no kajitsu.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "AISHIMAI",
+ "archive_format": "silkdat",
+ "archives": [
+  "SILK0.DAT",
+  "SILK1.DAT",
+  "SILK2.DAT",
+  "SILK3.DAT"
+ ],
+ "calls": {},
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

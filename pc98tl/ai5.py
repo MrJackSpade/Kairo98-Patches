@@ -847,13 +847,19 @@ class Scripts:
             return
         self.items = []
         if cfg.get("archive_format") == "silkdat":
-            from . import silkdat, exepack
-            exe = vol.read(d + "/" + cfg.get("program", "SIL.EXE"))
-            exe = exepack.unpack(exe) if exepack.is_packed(exe) else exe
-            key = silkdat.key_of(exe)
+            from . import silkdat
             for name in cfg["archives"]:
-                arc = silkdat.Archive(vol.read(d + "/" + name), key)
-                self.arcs[name] = arc
+                self.arcs[name] = silkdat.Archive(vol.read(d + "/" + name))
+            # (the script names the scripts give, for the one archive member whose first letter
+            # takes the directory's key)
+            known = {"MAIN.MES", "START.MES"}
+            for arc in self.arcs.values():
+                for f in arc.names():
+                    if f.upper().endswith(".MES"):
+                        known |= {m.decode("ascii").upper() for m in
+                                  re.findall(rb"([!-~]{1,12}\.mes)", arc.read(f), re.I)}
+            for name, arc in self.arcs.items():
+                arc.name_first(known)
                 self.items += [("%s/%s" % (name, f), (name, f)) for f in arc.names() if f.upper().endswith(".MES")]
             return
         from . import elfarc

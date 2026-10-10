@@ -1570,5 +1570,18 @@
    "url": "https://vndb.org/v2351",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Ai Shimai - Futari no kajitsu": [
+  {
+   "label": "This repo: games/ai_shimai (patcher working, machine translation in progress)",
+   "url": "../games/ai_shimai/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v1836",
+   "url": "https://vndb.org/v1836",
+   "source": "VNDB"
+  }
  ]
 }

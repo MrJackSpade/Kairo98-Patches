@@ -187165,15 +187165,27 @@
      "path": "Ai Shimai - Futari no kajitsu\\Ai Shimai - Futari no kajitsu [HD]\\Ai Shimai - Futari no kajitsu.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ai_shimai (patcher working, machine translation in progress)",
+     "url": "../games/ai_shimai/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1836",
+     "url": "https://vndb.org/v1836",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17407 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Be-Yond",
