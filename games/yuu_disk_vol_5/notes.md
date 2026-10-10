@@ -12,8 +12,8 @@ D.O.'s **ADL5** engine (`ADL5.EXE`): 3 scripts with text (`DOR2.EDT`, `DOR_P2.ED
 The patch works on the disk that holds the program and its scripts (`Yuu Disk Vol. 5 - Telephone Scandal (Disk A).hdm`); the other disks are used as they are.
 
 * A script starts with its entries (the targets of its gotos, calls and menus, as offsets), so a rebuilt script has them moved with its statements.
-* `ADL5.EXE` gets a helper in 512 bytes put in at the end of its code segment (the data and work segments after it move up, every relocation with them).  In a run of text, 20h (a character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's text is), with the engine's own character wait, wrap and paging.
-* Lines are wrapped between words by the patcher to the text window the script set (82h: its width less 32 dots), the speaker's name indenting the text 8 cells; the engine's new line (06) waits for a key itself before it clears a full window.
+* `ADL5.EXE` gets a helper in 512 bytes put in at the end of its code segment (the data and work segments after it move up, every relocation with them).  In a run of text, 20h (a character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's text is), with the engine's own character wait and paging.  Before each English word the helper measures it against the window's right edge and starts a new line when it would not fit (a space at a line's start is not drawn): the windows a script uses change as it calls and jumps, so the wrap is the program's, not the patcher's.
+* The speaker's name indents the text 8 cells; the engine's new line (06) waits for a key itself before it clears a full window.
 * Speaker names, menu commands and the program's own strings take ASCII as well.
 * `PCMSET2.EXE` (run before the game) draws its lines with the same graphics drawer: it gets the same half-width letters (a 256-byte helper, put in the same way), and its lines are `e` strings too.
 
