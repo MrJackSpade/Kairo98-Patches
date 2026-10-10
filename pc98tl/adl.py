@@ -71,6 +71,27 @@ STMT_LEN = {0x10: 4, 0x11: 4, 0x12: 7, 0x13: 2, 0x14: 1, 0x15: 1, 0x20: 2, 0x21:
             0x44: 3, 0x45: 4, 0x47: 1, 0x60: 1, 0x62: 1, 0x63: 1, 0x65: 3, 0x71: 9, 0x80: 1, 0x81: 1,
             0x82: 9, 0x90: 10}
 FILE_OPS = {0x33, 0x38, 0x50, 0x51, 0x61, 0x64}
+LIST_OP = 0x46                  # a byte, then entries until FFh (ADL2's 4Ah)
+# ADL2 (ADL2.EXE, Hoshi no Suna Monogatari 1-2: its walker at 36C0h): ADL's script with other opcodes
+# (ADL5's numbering, but ADL's text and windows): a name and a byte after 16h, 33h, 38h, 50h, 51h, 61h,
+# 64h, 84h, 87h; the list 4Ah; the goto 28h; the rest as its table at cs:2FA7h gives
+ADL2_LEN = {0x10: 4, 0x11: 4, 0x12: 7, 0x13: 2, 0x14: 1, 0x15: 1, 0x17: 2, 0x20: 2, 0x21: 2, 0x28: 3,
+            0x29: 1, 0x30: 1, 0x31: 1, 0x32: 1, 0x34: 1, 0x35: 1, 0x36: 13, 0x37: 11, 0x39: 1, 0x40: 5,
+            0x41: 5, 0x42: 4, 0x43: 6, 0x48: 3, 0x49: 4, 0x4B: 3, 0x60: 1, 0x62: 1, 0x63: 1, 0x65: 3, 0x71: 9,
+            0x72: 2, 0x80: 1, 0x81: 1, 0x82: 9, 0x83: 3, 0x85: 2, 0x86: 6, 0x90: 10}
+_BASE = (dict(STMT_LEN), set(FILE_OPS), LIST_OP)
+
+
+def set_variant(name):
+    """The engine's build: "adl" (ADL.EXE, ADL'.EXE) or "adl2" (ADL2.EXE)."""
+    global STMT_LEN, FILE_OPS, LIST_OP
+    STMT_LEN, FILE_OPS, LIST_OP = dict(_BASE[0]), set(_BASE[1]), _BASE[2]
+    if name == "adl2":
+        STMT_LEN = dict(ADL2_LEN)
+        FILE_OPS = {0x16, 0x33, 0x38, 0x50, 0x51, 0x61, 0x64, 0x84, 0x87}
+        LIST_OP = 0x4A
+
+
 ENTRIES = 0x800
 BASE = 0x1000
 CTRL_ARG = {1, 4, 7, 8}
@@ -115,7 +136,7 @@ def statement(d, i):
     op = d[i]
     if op in FILE_OPS:
         return d.index(0, i + 1) + 2
-    if op == 0x46:
+    if op == LIST_OP:
         j = i + 2
         while d[j] != 0xFF:
             j += 2 + d[j + 1]
@@ -138,8 +159,64 @@ def statement(d, i):
     return i + STMT_LEN[op]
 
 
-def tokenize(d):
-    """[(start, end)] of the statements."""
+def resync(d, start, ents, step):
+    """[(start, end)] of a script's statements read straight through from start (step(d, i): the end of
+    the statement at i), the walk picked up again at an entry wherever it meets bytes no statement
+    starts with or a statement would run across an entry (tables the walker never steps onto, reached
+    by the entries); the bytes skipped move with the statements around them (rebuild_pieces)."""
+    ents = sorted(v for v in ents if v < len(d))
+    out, i = [], start
+    while i < len(d) and d[i] != 0xFF:
+        nxt = next((v for v in ents if v > i), None)
+        try:
+            j = step(d, i)
+            ok = j <= len(d) and (nxt is None or j <= nxt)
+        except (Bad, IndexError, ValueError):
+            ok = False
+        if ok:
+            out.append((i, j))
+            i = j
+            continue
+        # (the next entry after the last statement's start: a statement it falls inside is dropped)
+        after = out[-1][0] if out else start - 1
+        e = next((v for v in ents if v > after and v != i), None)
+        if e is None:
+            break
+        if e < i:
+            while out and out[-1][1] > e:
+                out.pop()
+        i = e
+    return out
+
+
+def rebuild_pieces(d, toks, new, start, ents):
+    """(the script with the statements in new ({start: bytes}) replaced, the bytes between statements
+    kept; {entry: its new offset}).  An entry inside bytes kept as they are moves with them; one inside
+    a rebuilt statement is refused."""
+    out = bytearray(d[:start])
+    pieces, pos = [], start
+    for s, e in toks:
+        if s > pos:
+            pieces.append((pos, s, len(out), True))
+            out += d[pos:s]
+        pieces.append((s, e, len(out), s not in new))
+        out += new.get(s, d[s:e])
+        pos = e
+    pieces.append((pos, len(d), len(out), True))
+    out += d[pos:]
+    moved = {}
+    for k, at in ents.items():
+        if at >= len(d):
+            moved[k] = at - len(d) + len(out)
+            continue
+        piece = next(p for p in pieces if p[0] <= at < p[1] or p[0] == at)
+        if at != piece[0] and not piece[3]:
+            raise Bad("entry %d (%x) is inside a rebuilt statement" % (k, at))
+        moved[k] = piece[2] + (at - piece[0])
+    return out, moved
+
+
+def _linear(d):
     out, i = [], BASE
     while i < len(d) and d[i] != 0xFF:
         j = statement(d, i)
@@ -148,6 +225,19 @@ def tokenize(d):
         out.append((i, j))
         i = j
     return out
+
+
+def tokenize(d):
+    """[(start, end)] of the statements: read straight through, or, where that meets bytes no
+    statement starts with or an entry inside a statement, picked up again at the entries (resync)."""
+    try:
+        out = _linear(d)
+        starts = {a for a, _b in out}
+        if all(v in starts or v >= len(d) for v in entries(d).values()):
+            return out
+    except (Bad, IndexError, ValueError):
+        pass
+    return resync(d, BASE, entries(d).values(), statement)
 
 
 def entries(d):
@@ -182,19 +272,9 @@ def rebuild(d, toks, new):
     entries moved with the statements.  (A script longer than its 64 KB
     segment comes back as it is built, its entries past 64 KB cut to 16
     bits: the caller refuses it by its size.)"""
-    out = bytearray(d[:BASE])
-    moved = {}
-    pos = 0
-    for s, e in toks:
-        moved[s] = len(out)
-        out += new.get(s, d[s:e])
-        pos = e
-    moved[pos] = len(out)
-    out += d[pos:]
-    for k, at in entries(d).items():
-        if at not in moved:
-            raise Bad("entry %d (%x) is not on a statement" % (k, at))
-        struct.pack_into(">H", out, 2 * k, (moved[at] - BASE) & 0xFFFF)
+    out, moved = rebuild_pieces(d, toks, new, BASE, entries(d))
+    for k, to in moved.items():
+        struct.pack_into(">H", out, 2 * k, (to - BASE) & 0xFFFF)
     return bytes(out)
 
 
@@ -290,8 +370,39 @@ def table_write(parts, tail):
 CODE_SEG = 0x80
 ROOM = 0x30                     # paragraphs put in at the end of the code segment for the helper
 
-# the run-of-text loop (19FCh): mov dh, es:[si] / inc si / or dh, dh / je / cmp dh, 20h / je / cmp dh, 80h
-TEXT_SIG = re.compile(rb"\x26\x8a\x34\x46\x0a\xf6\x74.\x80\xfe\x20\x74\xf3\x80\xfe\x80\x73\x13", re.S)
+# the run-of-text loop (19FCh): mov dh, es:[si] / inc si / or dh, dh / je / cmp dh, 20h / je (the loop's
+# start: here, or ADL2's call before it) / cmp dh, 80h
+TEXT_SIG = re.compile(rb"\x26\x8a\x34\x46\x0a\xf6\x74.\x80\xfe\x20\x74(.)\x80\xfe\x80\x73\x13", re.S)
+# the new-line control's override (only where the build's page routine clears without a key wait)
+NEWLINE_PART = """newline:
+    mov ax, word ptr [{left}]
+    mov word ptr [{x}], ax
+    add word ptr [{y}], 0x14
+    mov ax, word ptr [{bottom}]
+    sub ax, 0x14
+    cmp ax, word ptr [{y}]
+    jne n2
+    mov ax, word ptr [{top}]
+    mov word ptr [{y}], ax
+    cmp byte ptr cs:[{dirty}], 0
+    je n1
+    CALLN {keywait}
+n1:
+    mov byte ptr cs:[{dirty}], 0
+    CALLN {clear}
+n2:
+    .byte 0xc3
+
+waitkey:
+    mov byte ptr cs:[{dirty}], 0
+    JMPN {keywait}
+
+clearwin:
+    mov byte ptr cs:[{dirty}], 0
+    JMPN {clear}
+
+
+"""
 # the controls' loop (1B8Dh) and its table: mov al, es:[si] / inc si / or al, al / je / cmp al, 9 / jae /
 # xor ah, ah / dec al / shl ax, 1 / mov bx, table
 CTRL_SIG = re.compile(rb"\x26\x8a\x04\x46\x0a\xc0\x74\x16\x3c\x09\x73\x1f\x32\xe4\xfe\xc8\xd1\xe0\xbb(..)", re.S)
@@ -312,7 +423,7 @@ t0:
     cmp dh, 0x20
     jne t1
     xor byte ptr cs:[{ank}], 1
-    JMPN text
+    JMPN {loop}
 t1:
     cmp dh, 0x80
     jae sj
@@ -349,7 +460,7 @@ ak:
     cmp ax, word ptr [{left}]
     je text
     CALLN wrap
-    JMPN text
+    JMPN {loop}
 a1:
     cmp dh, 0x7f
     jne a2
@@ -366,7 +477,7 @@ a2:
 adv:
     mov byte ptr cs:[{dirty}], 1
     push cx
-    mov ah, 5
+{fast}    mov ah, 5
     int 0x33
     mov dl, 1
     test al, 3
@@ -376,16 +487,17 @@ d1:
     mov al, dl
     CALLN {settimer}
     CALLN {waittimer}
+d2:
     pop cx
     mov ax, word ptr [{x}]
     add ax, cx
     mov word ptr [{x}], ax
     cmp ax, word ptr [{right}]
     jae a3
-    JMPN text
+    JMPN {loop}
 a3:
     CALLN wrap
-    JMPN text
+    JMPN {loop}
 
 wrap:
     add word ptr [{y}], 0x14
@@ -411,34 +523,7 @@ putank:
     pop es
     .byte 0xc3
 
-newline:
-    mov ax, word ptr [{left}]
-    mov word ptr [{x}], ax
-    add word ptr [{y}], 0x14
-    mov ax, word ptr [{bottom}]
-    sub ax, 0x14
-    cmp ax, word ptr [{y}]
-    jne n2
-    mov ax, word ptr [{top}]
-    mov word ptr [{y}], ax
-    cmp byte ptr cs:[{dirty}], 0
-    je n1
-    CALLN {keywait}
-n1:
-    mov byte ptr cs:[{dirty}], 0
-    CALLN {clear}
-n2:
-    .byte 0xc3
-
-waitkey:
-    mov byte ptr cs:[{dirty}], 0
-    JMPN {keywait}
-
-clearwin:
-    mov byte ptr cs:[{dirty}], 0
-    JMPN {clear}
-
-
+{newline_part}
 name:
     cmp al, 0x80
     jb nm1
@@ -560,7 +645,9 @@ def patch_exe(exe):
     # (the data segment: the lowest segment past the code's in the relocations; the code segment ends at it)
     data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > CODE_SEG)
     seg = bytearray(img[cs0:data_seg * 16])
-    text = _once(seg, TEXT_SIG, "text loop").start()
+    tm = _once(seg, TEXT_SIG, "text loop")
+    text = tm.start()
+    loop = (text + 13 + struct.unpack("b", tm.group(1))[0]) & 0xFFFF
     # the table lookup and the draw path, read off the loop: mov bl, dh / xor bh, bh / shl bx, 1 / add bx, table
     look = seg.find(bytes.fromhex("8ade32ffd1e381c3"), text, text + 0x40)
     if look < 0:
@@ -576,8 +663,12 @@ def patch_exe(exe):
     kanji = _call_target(seg, draw + 16)
     # (the speed wait after it: mov ah, 5 / int 33h / mov dl, 1 / test al, 3 / jne, then in later builds
     # call skipkey / test al, 10h / jne; mov dl, 3 / mov al, dl / call settimer / call waittimer / call advance)
-    wait = draw + 19
-    if seg[wait:wait + 9] != bytes.fromhex("b405cd33b201a80375"):
+    wait = seg.find(bytes.fromhex("b405cd33b201a80375"), draw, draw + 0x50)
+    # (ADL2's: cmp [fast], 0 / jne / mov ax, 40Eh / int 18h / test ah, 4 / jne, before it)
+    fm = re.compile(rb"\x80\x3e(..)\x00\x75.\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75.", re.S).search(seg, draw, max(draw, wait))
+    fast = ("    cmp byte ptr [%s], 0\n    jne d2\n    mov ax, 0x40e\n    int 0x18\n    test ah, 4\n    jne d2\n"
+            % hex(struct.unpack("<H", fm.group(1))[0])) if fm else ""
+    if wait < 0 or seg[wait:wait + 9] != bytes.fromhex("b405cd33b201a80375"):
         raise SystemExit("ADL.EXE: the text loop's speed wait is not laid out as expected")
     at = wait + 10
     skip = ""
@@ -597,11 +688,17 @@ def patch_exe(exe):
         raise SystemExit("ADL.EXE: the text loop's advance is not laid out as expected")
     var_right, var_left = struct.unpack("<H", m.group(2))[0], struct.unpack("<H", m.group(4))[0]
     page = _call_target(seg, advance + 17)
-    # (the page: mov ax, [bottom] / sub ax, 14h / cmp ax, [y] / jne / mov ax, [top])
+    # (the page: mov ax, [bottom] / sub ax, 14h / cmp ax, [y] / jne / mov ax, [top]; ADL2's: mov ax, [y] /
+    # cmp ax, [bottom] / jb / call its new line, which waits for a key itself: no override then)
     m = re.compile(rb"\xa1(..)\x2d\x14\x00\x3b\x06(..)\x75.\xa1(..)", re.S).match(seg, page)
-    if not m or struct.unpack("<H", m.group(2))[0] != var_y:
+    m2 = re.compile(rb"\xa1(..)\x3b\x06(..)\x72\x03\xe8", re.S).match(seg, page)
+    if m and struct.unpack("<H", m.group(2))[0] == var_y:
+        var_bottom, var_top = struct.unpack("<H", m.group(1))[0], struct.unpack("<H", m.group(3))[0]
+        override = True
+    elif m2 and struct.unpack("<H", m2.group(1))[0] == var_y:
+        var_bottom, var_top, override = struct.unpack("<H", m2.group(2))[0], 0, False
+    else:
         raise SystemExit("ADL.EXE: the paging routine is not laid out as expected")
-    var_bottom, var_top = struct.unpack("<H", m.group(1))[0], struct.unpack("<H", m.group(3))[0]
     m = _once(seg, CTRL_SIG, "controls' loop")
     table = struct.unpack_from("<H", m.group(1))[0]
     ctrl = list(struct.unpack_from("<8H", seg, table))
@@ -623,13 +720,17 @@ def patch_exe(exe):
     # (the room: at the end of the code segment, the data segment and all after it moved up)
     at = (data_seg - CODE_SEG) * 16
     helper_at, flags = at, (at + ROOM * 16 - 2, at + ROOM * 16 - 1)
-    src = HELPER.format(kana=hex(kana), kana1=hex(kana + 1), xy=hex(xy), kanji=hex(kanji), skip=skip,
+    newline_part = NEWLINE_PART if override else ""
+    src = HELPER.replace("{newline_part}", newline_part).format(
+                        kana=hex(kana), kana1=hex(kana + 1), xy=hex(xy), kanji=hex(kanji), skip=skip,
+                        loop="text" if loop == text else hex(loop), fast=fast,
                         settimer=hex(settimer), waittimer=hex(waittimer), page=hex(page), keywait=hex(keywait),
                         clear=hex(clear), nameloop=hex(nameloop), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
                         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), ank=hex(flags[0]), dirty=hex(flags[1]),
                         x=hex(var_x), y=hex(var_y), color=hex(var_color), left=hex(var_left), top=hex(var_top),
                         right=hex(var_right), bottom=hex(var_bottom))
-    code, labels = _asm16(src, helper_at, ("text", "name", "graph", "waitkey", "clearwin", "newline"))
+    code, labels = _asm16(src, helper_at, ("text", "name", "graph") + (("waitkey", "clearwin", "newline")
+                                                                        if override else ()))
     if len(code) > ROOM * 16 - 2:
         raise SystemExit("ADL.EXE: the helper is %d bytes, the room %d" % (len(code), ROOM * 16 - 2))
 
@@ -638,8 +739,9 @@ def patch_exe(exe):
     jmp(text, labels["text"], 3)
     jmp(name, labels["name"], 5)
     jmp(gat, labels["graph"], 3)
-    ctrl[1], ctrl[2], ctrl[5] = labels["waitkey"], labels["clearwin"], labels["newline"]
-    struct.pack_into("<8H", seg, table, *ctrl)
+    if override:
+        ctrl[1], ctrl[2], ctrl[5] = labels["waitkey"], labels["clearwin"], labels["newline"]
+        struct.pack_into("<8H", seg, table, *ctrl)
     img[cs0:cs0 + len(seg)] = seg
     # no segment fixup may fall in what was changed
     for lo, n in ((text, 3), (name, 5), (gat, 3), (table, 16)):

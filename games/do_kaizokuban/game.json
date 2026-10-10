@@ -1,0 +1,9 @@
+{
+ "title": "D.O. Kaizokuban",
+ "key": "DO.zip/D.O. Kaizokuban",
+ "image": "D.O. Kaizokuban\\D.O. Kaizokuban [HD]\\D.O. Kaizokuban (Disk A-B) (DOR).hdi",
+ "encoding": "adl",
+ "program": "ADL'.EXE",
+ "game_dir": "DOR123",
+ "boot_steps": "40:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot"
+}

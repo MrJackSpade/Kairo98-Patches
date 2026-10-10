@@ -3053,5 +3053,25 @@
    "The story and the rest of the game",
    "not reachable: the collection has only an alternate dump of Disk A (the game is about 5 MB installed; its other disks are missing)"
   ]
+ ],
+ "do_kaizokuban_hoshi": [
+  [
+   "The hard-disk image of Disk C (Hoshi no Suna Monogatari, ADL2.EXE): the opening, the menu, the story",
+   "OK: boots; speaker names with the text indented; filler half-width, wrapped between words and paged; the menu's command box"
+  ],
+  [
+   "The rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "do_kaizokuban": [
+  [
+   "The hard-disk image of Disks A-B (DOR, ADL'.EXE): the opening, the menu, the first scenario (the planetarium)",
+   "OK: boots; speaker names with the text indented; filler half-width, wrapped between words and paged; the menu's command box half-width filler"
+  ],
+  [
+   "The other scenarios, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

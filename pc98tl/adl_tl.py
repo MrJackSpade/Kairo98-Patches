@@ -78,6 +78,8 @@ def _set_format(cfg):
     F = adl5 if cfg.get("version") in ("adl5", "adl98", "adl98s") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
+    else:
+        adl.set_variant(cfg.get("version", "adl"))
     INDENT = cfg.get("name_cells", 10)
 
 

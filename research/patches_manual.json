@@ -1775,5 +1775,13 @@
    "url": "https://vndb.org/v9170",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/D.O. Kaizokuban": [
+  {
+   "label": "This repo: games/do_kaizokuban (patcher working, machine translation in progress)",
+   "url": "../games/do_kaizokuban/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

@@ -247,5 +247,15 @@
    "The scripts and ADL98S.EXE are byte for byte those of Yuu Disk Vol. 8 (games/yuu_disk_vol_8, a complete hard-disk release): the strings are the same, ids included, so one translation serves both.",
    "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown."
   ]
+ },
+ "do_kaizokuban": {
+  "remarks": [
+   "D.O. Kaizokuban is two games on two images: this folder is Disks A-B (DOR's three scenarios, ADL'.EXE, on the ADL driver); games/do_kaizokuban_hoshi is Disk C (Hoshi no Suna Monogatari, ADL2.EXE)."
+  ]
+ },
+ "do_kaizokuban_hoshi": {
+  "remarks": [
+   "Disk C of D.O. Kaizokuban (games/do_kaizokuban is Disks A-B). ADL2.EXE is ADL with ADL5's opcode numbering (pc98tl/adl.py, variant adl2); its new line (06) waits for a key itself, so the patch leaves that control as it is."
+  ]
  }
 }

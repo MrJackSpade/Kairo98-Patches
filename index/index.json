@@ -61571,7 +61571,14 @@
      "path": "D.O. Kaizokuban\\D.O. Kaizokuban [HD]\\D.O. Kaizokuban (Disk C) (Hoshi no Suna Monogatari).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/do_kaizokuban (patcher working, machine translation in progress)",
+     "url": "../games/do_kaizokuban/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61579,7 +61586,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Kanshuu Premium Box - Touch My Heart",

@@ -278,6 +278,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft | Will no Dengon | [This repo: games/will_no_dengon (patcher working, machine translation in progress)](../games/will_no_dengon/notes.md) |
 | Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
 | D.O | Cybernoid Alpha | [This repo: games/cybernoid_alpha (patcher working, machine translation in progress)](../games/cybernoid_alpha/notes.md) |
+| D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban (patcher working, machine translation in progress)](../games/do_kaizokuban/notes.md) |
 | D.O | DOR Part 1 | [This repo: games/dor_part_1 (patcher working, machine translation in progress)](../games/dor_part_1/notes.md) |
 | D.O | DOR Part 2 | [This repo: games/dor_part_2 (patcher working, machine translation in progress)](../games/dor_part_2/notes.md) |
 | D.O | DOR Part 3 | [This repo: games/dor_part_3 (patcher working, machine translation in progress)](../games/dor_part_3/notes.md) |
@@ -1889,7 +1890,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ D.O. Doki Doki Disk Vol. 7 [FD] `do`
 - ♥ D.O. Doki Doki Disk Vol. 8 [FD HD] `do`
 - ♥ D.O. Doki Doki Disk Vol. 9 [FD HD] `do`
-- ♥ D.O. Kaizokuban [FD HD] `do`
+- ♥ D.O. Kaizokuban [FD HD] `do` — *MTL (this repo)*
 - ♥ D.O. Kanshuu Premium Box - Touch My Heart [CD FD HD extras]
 - ♥ DOR Best Selection Vol. 1 (Joukan) [CD]
 - ♥ DOR Best Selection Vol. 2 (Gekan) [CD]
