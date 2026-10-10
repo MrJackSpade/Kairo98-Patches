@@ -79,7 +79,7 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 def _set_format(cfg):
     global F, INDENT
     F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b",
-                                       "arq98") else adl
+                                       "arq98", "nadl") else adl
     if F is adl5:
         # (ARQ98.EXE: its messages in the program, pc98tl/arq.py; no scripts)
         adl5.set_variant("adl5" if cfg["version"] == "arq98" else cfg["version"])
@@ -199,7 +199,9 @@ def units(d, toks):
             k += 1
             continue
         group = [k]
-        while d[s] == 0x70 and _ends_on_text(F.items(d, *toks[group[-1]])) and group[-1] + 1 < len(toks) \
+        # (NADL: each statement its own: its length counts its own bytes)
+        while d[s] == 0x70 and not (F is adl5 and F.VARIANT == "nadl") \
+                and _ends_on_text(F.items(d, *toks[group[-1]])) and group[-1] + 1 < len(toks) \
                 and d[toks[group[-1] + 1][0]] == 0x70 and toks[group[-1] + 1][0] not in targets                 and toks[group[-1] + 1][0] == toks[group[-1]][1]:
             group.append(group[-1] + 1)
         runs = []
@@ -340,10 +342,15 @@ def _boxes(d, toks):
     return out
 
 
+def _arg(d, s):
+    """Where the statement at s's arguments start (NADL's length field skipped)."""
+    return F.arg(d, s) if F is adl5 else s + 1
+
+
 def _box_cells(d, s):
     """The letters a menu box (12h at s: x, y, width, big-endian words) holds: its items are drawn
     8 dots in from its left edge, and as far from its right."""
-    return max(1, (struct.unpack_from(">H", d, s + 5)[0] - 16) // 8)
+    return max(1, (struct.unpack_from(">H", d, _arg(d, s) + 4)[0] - 16) // 8)
 
 
 def _window(d, s):
@@ -378,7 +385,7 @@ def flow_widths(d, toks, start_width):
     for k, (s, e) in enumerate(toks):
         out = [] if d[s] in FLOW_STOP or e not in index else [index[e]]
         if d[s] in FLOW_TARGET or d[s] == 0x10:
-            n = struct.unpack_from(">H", d, (s + 1) if d[s] == 0x10 else (e - 2))[0]
+            n = struct.unpack_from(">H", d, _arg(d, s) if d[s] == 0x10 else (e - 2))[0]
             if n in ents and ents[n] in index:
                 out.append(index[ents[n]])
         succ.append(out)
@@ -413,7 +420,7 @@ def start_widths(vol, cfg):
             if d[s] == F.WINDOW_OP:
                 width = F.window(d, s)[1] // 8
             elif d[s] in (0x50, 0x51):
-                target = d[s + 1:d.index(0, s + 1)].decode("ascii", "replace").upper() + ".EDT"
+                target = d[_arg(d, s):d.index(0, _arg(d, s))].decode("ascii", "replace").upper() + ".EDT"
                 out.append((target, width))
         loads[name.upper()] = out
     start = {}
@@ -473,7 +480,7 @@ def rebuild(d, toks, values, table, ids, start_width=0):
         if op == 0x71 and F is adl5:
             # (a run drawn at a place of its own: one line to the screen's edge)
             if s in plan:
-                x = struct.unpack_from(">H", d, s + 1)[0]
+                x = struct.unpack_from(">H", d, _arg(d, s))[0]
                 runs, between = us[s][2], us[s][3]
                 pieces, order = plan[s]
                 seq = [pieces[0]] + [x2 for i, t in enumerate(order) for x2 in (t, pieces[i + 1])]
@@ -571,7 +578,7 @@ def table_rooms(vol, cfg):
         how, d = _read_script(vol, cfg, name)
         for s, _e in F.tokenize(d):
             if d[s] in rooms:
-                rooms[d[s]].append(2 * d[s + 1])
+                rooms[d[s]].append(2 * d[_arg(d, s)])
     return min(rooms[0x19] or [None]), min(rooms[0x18] or [None])
 
 
@@ -587,9 +594,10 @@ def table_slots(vol, cfg):
         cur = None
         for s, _e in F.tokenize(d):
             if d[s] in (0x18, 0x19):
-                t = d[s + 2:d.index(0, s + 2)].decode("cp932", "replace").upper() + ".EDT"
+                a = _arg(d, s)
+                t = d[a + 1:d.index(0, a + 1)].decode("cp932", "replace").upper() + ".EDT"
                 op, room, box = out.get(t, (d[s], None, None))
-                out[t] = (op, min(x for x in (room, 2 * d[s + 1]) if x is not None), box)
+                out[t] = (op, min(x for x in (room, 2 * d[a]) if x is not None), box)
                 if d[s] == 0x18:
                     cur = t
             elif d[s] == 0x12 and cur:
@@ -706,7 +714,7 @@ def run_extract(here, src):
         width = starts.get(name.upper(), 0)
         flow = flow_widths(d, toks, width) if F is adl5 else {}
         choice_cells = {c: _widest(d, w, f) // 8 for w, (f, cs) in _menus(d, toks).items() for c in cs}
-        box_items = {c: struct.unpack_from(">H", d, b + 1)[0] + struct.unpack_from(">H", d, b + 5)[0] - 8
+        box_items = {c: struct.unpack_from(">H", d, _arg(d, b))[0] + struct.unpack_from(">H", d, _arg(d, b) + 4)[0] - 8
                      for b, cs in _boxes(d, toks).items() for c in cs}
         firsts = {u[0]: u for u in units(d, toks)}
         for s, _e in toks:
@@ -724,7 +732,7 @@ def run_extract(here, src):
                 if d[s] == 0x71:
                     # (one line from its place to the screen's edge; a menu box's item, to the box's right
                     # edge less its margin)
-                    cells = (box_items.get(s, SCREEN) - struct.unpack_from(">H", d, s + 1)[0]) // 8
+                    cells = (box_items.get(s, SCREEN) - struct.unpack_from(">H", d, _arg(d, s))[0]) // 8
                 add("msg", jp, "%s:%04x" % (name, s), cells, note)
     slots = table_slots(vol, cfg)
     for name in tables(vol, cfg):

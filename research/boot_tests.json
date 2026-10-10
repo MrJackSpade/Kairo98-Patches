@@ -3249,5 +3249,25 @@
    "The stages and their battles, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "doki_doki_disk_vol_8": [
+  [
+   "NADL: the title, the main menu (the command box), the first section's messages",
+   "OK: the command box's items half-width with its highlight; filler half-width, the speaker's name half-width with the text indented; wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_9": [
+  [
+   "NADL: the title, the main menu (the command box), the first section's messages",
+   "OK: the command box's items half-width with its highlight; filler half-width, wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
  ]
 }

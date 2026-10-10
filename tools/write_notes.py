@@ -1069,8 +1069,8 @@ def _cells_range(strings, kind):
 
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
-    v98 = cfg.get("version") in ("adl98", "adl98s", "adl21")
-    label = {"adl98": "ADL98", "adl98u": "ADL98", "adl21": "ADL21", "adl98s": "ADL98S", "adl3a": "ADL3A",
+    v98 = cfg.get("version") in ("adl98", "adl98s", "adl21", "nadl")
+    label = {"adl98": "ADL98", "adl98u": "ADL98", "adl21": "ADL21", "adl98s": "ADL98S", "adl3a": "ADL3A", "nadl": "NADL",
              "adl3b": "ADL3B"}.get(cfg.get("version"), "ADL5")
     return ["", "## Engine", "",
             "D.O.'s **%s** engine (`%s`): %d scripts with text (%s), the speaker name table%s (%s); "
@@ -1143,7 +1143,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b")
+    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b", "nadl")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
              "engine": "program strings" if v5 or cfg.get("version") == "arq98" else "save slot names"}

@@ -61524,7 +61524,14 @@
      "path": "D.O. Doki Doki Disk Vol. 8\\D.O. Doki Doki Disk Vol. 8 [HD]\\D.O. Doki Doki Disk Vol. 8.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_8 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_8/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61532,7 +61539,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 9",
@@ -61571,7 +61578,14 @@
      "path": "D.O. Doki Doki Disk Vol. 9\\D.O. Doki Doki Disk Vol. 9 [HD]\\D.O. Doki Doki Disk Vol. 9.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_9 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_9/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61579,7 +61593,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Kaizokuban",

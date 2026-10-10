@@ -291,6 +291,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | D.O | D.O. Doki Doki Disk Vol. 5 | [This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_5/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 6 | [This repo: games/doki_doki_disk_vol_6 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_6/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 7 | [This repo: games/doki_doki_disk_vol_7 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_7/notes.md) |
+| D.O | D.O. Doki Doki Disk Vol. 8 | [This repo: games/doki_doki_disk_vol_8 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_8/notes.md) |
+| D.O | D.O. Doki Doki Disk Vol. 9 | [This repo: games/doki_doki_disk_vol_9 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_9/notes.md) |
 | D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban (DOR, Disks A-B; patcher working, machine translation in progress)](../games/do_kaizokuban/notes.md) |
 | D.O | D.O. Kaizokuban | [This repo: games/do_kaizokuban_hoshi (Hoshi no Suna Monogatari, Disk C; patcher working, machine translation in progress)](../games/do_kaizokuban_hoshi/notes.md) |
 | D.O | DOR Part 1 | [This repo: games/dor_part_1 (patcher working, machine translation in progress)](../games/dor_part_1/notes.md) |
@@ -1907,8 +1909,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ D.O. Doki Doki Disk Vol. 5 [FD] `do` — *MTL (this repo)*
 - ♥ D.O. Doki Doki Disk Vol. 6 [FD] `do` — *MTL (this repo)*
 - ♥ D.O. Doki Doki Disk Vol. 7 [FD] `do` — *MTL (this repo)*
-- ♥ D.O. Doki Doki Disk Vol. 8 [FD HD] `do`
-- ♥ D.O. Doki Doki Disk Vol. 9 [FD HD] `do`
+- ♥ D.O. Doki Doki Disk Vol. 8 [FD HD] `do` — *MTL (this repo)*
+- ♥ D.O. Doki Doki Disk Vol. 9 [FD HD] `do` — *MTL (this repo)*
 - ♥ D.O. Kaizokuban [FD HD] `do` — *MTL (this repo)*
 - ♥ D.O. Kanshuu Premium Box - Touch My Heart [CD FD HD extras]
 - ♥ DOR Best Selection Vol. 1 (Joukan) [CD]

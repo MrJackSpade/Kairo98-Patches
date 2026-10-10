@@ -310,5 +310,15 @@
   "remarks": [
    "The messages' window is set up at run time, as in Arquelphos: 48 letters (game.json \"message_cells\"), narrower where a portrait box is shown; the helper wraps at the window's edge as it is."
   ]
+ },
+ "doki_doki_disk_vol_8": {
+  "remarks": [
+   "NADL.EXE gives every statement its length after its opcode (a byte, or two with the top bit set), so the scripts walk without a table of lengths; a rebuilt statement gets its length anew, and each text statement is a string of its own (pc98tl/adl5.py, variant nadl)."
+  ]
+ },
+ "doki_doki_disk_vol_9": {
+  "remarks": [
+   "NADL.EXE gives every statement its length after its opcode (a byte, or two with the top bit set), so the scripts walk without a table of lengths; a rebuilt statement gets its length anew, and each text statement is a string of its own (pc98tl/adl5.py, variant nadl)."
+  ]
  }
 }

@@ -1,0 +1,2155 @@
+{
+ "source_image_sha256": "3739765cc67a58a12afb67cf2086b88ce8a07a96d9abf4364f846bd533c054c7",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　発刊のお言葉",
+   "en": "",
+   "refs": [
+    "D08.EDT:00ee"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "「・・・すぅ～・・・ぴぃ～・・・すやすや・・・」{X1}「キエーーーーイッ！」{X2}「なな、んな、なんなな、なんなんなぁー！？」{X3}「チェストォーーッ！」{X4}「なにすんじゃあ、このジジー！！」{X5}「何も聞かずに、わしと一緒に死んでくれえ～！」{X6}「ちょっと、ちょっと、落ち着けって。何があったんスか？」{X7}「あのね、あのね・・・」{X8}（どっちが師匠かわかんねーな）{X9}「えっとね、どきどきディスクがね、すごくね、すっごくね、もんっのすっごくね、遅れてるのね。だからね、会員さん達にね、申し訳なくってね・・・」{X10}「うんうん・・・」{X11}「だからぢゃーい！」{X12}「なんのこっちゃーい！」{X13}「まあいい、今日のレッスンはこれぐらいにしておこう」{X14}「なんのレッスンだー！」",
+   "en": "",
+   "refs": [
+    "D08.EDT:013f"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared, speaker 2's name; {X2}: a new line, speaker 1's name; {X3}: a key wait, the window cleared, speaker 2's name; {X4}: a new line, speaker 1's name; {X5}: a key wait, the window cleared, speaker 2's name; {X6}: a new line, speaker 1's name; {X7}: a key wait, the window cleared, speaker 2's name; {X8}: a new line, speaker 1's name; {X9}: a key wait, the window cleared, speaker 2's name; {X10}: a new line, speaker 1's name; {X11}: a key wait, the window cleared, speaker 2's name; {X12}: a new line, speaker 1's name; {X13}: a key wait, the window cleared, speaker 2's name; {X14}: a new line, speaker 1's name"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　そんな訳で、今回はお詫びの気持ちを込めて２枚組です。",
+   "en": "",
+   "refs": [
+    "D08.EDT:02f4"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　　　　　翌日、深夜・・・{X2}・・・・・・ひた{X3}・・・・・・ひたひた{X4}・・・ひたっ・・・ひたっ・・・{X5}しゅたたたたんっ・・・・・・キョロ、キョロ・・・{X6}「よし、今だ！」{X7}「待ていっ！」{X8}「ぬおおぅっ！？」{X9}「何処へ行く気ぢゃっ！！」{X10}「い、いや、ちょっと眠気覚ましに水中ク○バカでもしようと思って・・・」{X11}「嘘をつくな。逃げようとしたぢゃろう」{X12}「んな事言ったって、これだけ遅れまくっといて、いまさら『発刊のお言葉』書けだなんて、何書けばいいんスかぁ？気が重くて逃げたくもなるっスよぉ」{X13}「まったく今時の若いもんは・・・。{X14}お言葉と言えば、始めは天気やプロ野球の話題で軽くつかんで、中盤は今年の農作物の出来具合について語り、最後はドリブルで切り込んでバナナシュートで決りぢゃろーが！」{X15}「ワケわかんねー事言ってんじゃねーよ、オイ！」{X16}「わしに向かってオイとは何ぢゃ！貴様はわしのおじさんかぁ！」{X17}「んなワケねーだろ！とにかく、これだけ遅れまくった挙げ句にプロ野球の事なんかで書き始めといて、この俺が怒り狂った会員に心臓えぐり取られたりしたらどーしてくれるんスかぁ」{X18}「心臓の一つや二つでオタオタしおって、そんな事で日本一のワラ{X19}人形職人になれると思っとるのかっ！」{X20}「なりたかねーよ、そんなもん！」{X21}「まあいい。取り敢えず、誠心誠意を込めて切腹でもして会員様に謝罪てしみるというのはどうぢゃ？」{X22}「『どうぢゃ？』じゃねーよ、腹切ったら死んじまうじゃねーかよ。だいたい、俺が『どきどきディスク』作れって言われたのさっきなんだぜー。遅れたの俺のせいじゃねーだろー」{X23}「喝ーーーーっ。こういう時のために『理不尽』と言う言葉があるのを知らんのかあっ！」{X24}「理不尽ごときで俺の人生を終らせる気かぁぁ！」{X25}「切腹ぐらいで怖じ気づきおって、貴様には三角木馬職人としてのプライドはないのかっ」{X26}「誰が三角木馬職人だっ！」{X27}「三角木馬職人が嫌なら、臓器ブローカーにするか？」{X28}「そういう問題じゃねー！」{X29}「まあいい。迷いがあるのなら、師であるわしがひとおもいに決めてやろう」{X30}「誰が迷ってんだよ、明らかに拒絶してんだろーがっ！」{X31}「まあまあ、遠慮するな。{X32}この日のために用意した関孫六もある事だし」{X33}「この日のためって、オメー初めっから俺を殺す気だったのかっ！」{X34}「ふははは、バレては仕方がない。そのとおり、お前は会員様の怒りを鎮めるための人柱となるのぢゃ。{X35}さあ死ね、いま死ね、すぐに死ね、ほれほれほれ」{X36}ぶん、ぶん、ぶぶぶん、ぶぶん、ぶん。{X37}「あぶ、あぶ、あぶねーよ、おい、やめろって」{X38}「のほほほほ、死んで会員様に詫びるのぢぁあぁあぁあぁァァ」{X39}「やめろって言ってんだろーが、このキ○ガイ！」",
+   "en": "",
+   "refs": [
+    "D08.EDT:034e"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a key wait; {X4}: a key wait; {X5}: a key wait, a new line; {X6}: a key wait, the window cleared, speaker 1's name; {X7}: a key wait, the window cleared, speaker 2's name; {X8}: a new line, speaker 1's name; {X9}: a key wait, the window cleared, speaker 2's name; {X10}: a new line, speaker 1's name; {X11}: a key wait, the window cleared, speaker 2's name; {X12}: a key wait, the window cleared, speaker 1's name; {X13}: a key wait, the window cleared, speaker 2's name; {X14}: a key wait, a new line; {X15}: a key wait, the window cleared, speaker 1's name; {X16}: a new line, speaker 2's name; {X17}: a key wait, the window cleared, speaker 1's name; {X18}: a key wait, the window cleared, speaker 2's name; {X19}: a new line; {X20}: a new line, speaker 1's name; {X21}: a key wait, the window cleared, speaker 2's name; {X22}: a key wait, the window cleared, speaker 1's name; {X23}: a key wait, the window cleared, speaker 2's name; {X24}: a new line, speaker 1's name; {X25}: a key wait, the window cleared, speaker 2's name; {X26}: a new line, speaker 1's name; {X27}: a key wait, the window cleared, speaker 2's name; {X28}: a new line, speaker 1's name; {X29}: a key wait, the window cleared, speaker 2's name; {X30}: a new line, speaker 1's name; {X31}: a key wait, the window cleared, speaker 2's name; {X32}: a new line; {X33}: a new line, speaker 1's name; {X34}: a key wait, the window cleared, speaker 2's name; {X35}: a new line; {X36}: a key wait, the window cleared; {X37}: a new line, speaker 1's name; {X38}: a key wait, the window cleared, speaker 2's name; {X39}: a new line, speaker 1's name"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "んぷすっ！{X1}「はぐぁおごぉっへぎぇぁぬぐごわぁぁぁぁぁぁぁぁぁぁぁぁ・・・・・・・・・ぐぶぉっ」{X2}ザシャアァァァー・・・・・・{X3}「やっべー、やっちまったー。{X4}しかし、２ミリも刺さってねーのに派手に倒れやがったなー。{X5}しかも、どういうわけか血まで吐きやがって・・・」{X6}「・・・・・・・・・・・・」{X7}「まあいいや、たぶんショック死ってやつだろう。この際だから二度と生き返らないように徹底的にやっておこう。{X8}とりゃ、てりゃっ、うりゃりゃっ」",
+   "en": "",
+   "refs": [
+    "D08.EDT:09ac"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared, speaker 2's name; {X2}: a key wait, a new line; {X3}: a key wait, the window cleared, speaker 1's name; {X4}: a new line; {X5}: a new line; {X6}: a key wait, the window cleared, speaker 2's name; {X7}: a key wait, the window cleared, speaker 1's name; {X8}: a new line"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "ちくちくちくちくちくちくちくちくちくちくちくちくちくちくちくちくちく{X1}ぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷすぷす{X2}とすとすとすとすとすとすとすとすとすとすとすとすとす・・・・・・・・・{X3}「ふう・・・、一件落着だな」",
+   "en": "",
+   "refs": [
+    "D08.EDT:0ad8"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared, speaker 1's name"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　　　　　　某月　某日　←　怖くて書けない。{X2}　　　　　　　　　　　　港区某所での出来事であった。{X3}　{X4}　　　　　　　　　　　　と、いうわけで・・・・・・{X5}「まことに、大変に、モーレツ＆キョーレツに長らくお待たせ致しました。どきどきディスクＶｏｌ．８、ついに、どうにか、ようやく、なんとか、とうとう、やっと、どかーんと発刊でございますっ！{X6}存分にお楽しみくださいませぇぇぇーーーーー、げほげほーっ！」{X7}「よーし、今日のレッスンはこれまでっ！」{X8}「だから、なんのレッスンだよ・・・」",
+   "en": "",
+   "refs": [
+    "D08.EDT:0b77"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared; {X4}: a new line; {X5}: a key wait, the window cleared, speaker 3's name; {X6}: a new line; {X7}: a key wait, the window cleared, speaker 2's name; {X8}: a new line, speaker 1's name"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　ＳＭの夕べ{X2}　　　　ちょっとしたゲームのコーナーです。",
+   "en": "",
+   "refs": [
+    "D08.EDT:0cf0"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　トランプの『ブラックジャック』みたいなものです。{X2}　　　　　　　　あなたとコンピュータの１対１で対戦します。{X3}　{X4}　　　　　　１回引く毎に１～１３の数字がランダムで出ます。{X5}　　　　　これを足していって２１に近い方が勝ちとなります。{X6}　{X7}　　　　　　　　　　ただし、２１を越えると負けです。{X8}　{X9}　　数字が同じだったり、両方とも２１以上だった場合は引分けです。{X10}　　　　　　　　　　３回負けるとゲームオーバーです。{X11}　{X12}　何回か勝てば、ごほうびＣＧが最高３枚見れますので頑張ってください。{X13}　{X14}　　　　ディスクＡは『書き込み可能な状態』にしておいてください。",
+   "en": "",
+   "refs": [
+    "D08.EDT:0dbd"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared; {X4}: a new line; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a new line; {X10}: a new line; {X11}: a key wait, the window cleared; {X12}: a new line; {X13}: a key wait, the window cleared; {X14}: a new line"
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　アート・ギャラリー",
+   "en": "",
+   "refs": [
+    "D08.EDT:0fa0"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　よもやま通信",
+   "en": "",
+   "refs": [
+    "D08.EDT:1076"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "　サブタイトル：{X1}　　『あなたを時間の浪費へと誘う、",
+   "en": "",
+   "refs": [
+    "D08.EDT:1096"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "ちょっぴりソウルフルな駄文』",
+   "en": "",
+   "refs": [
+    "D08.EDT:10d6"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "　　本コーナーは『ウェイトあり』（［カナ］キーＯＦＦ）の状態で本領を{X1}　発揮するように綿密な計算に基づいて構成し、万全を期しておりますが、{X2}　過剰な期待は『思わぬ肩すかし』の原因となりますので、ご注意下さい。{X3}秋深し・・・、{X4}隣の柿は、よく客喰う柿だ・・・。",
+   "en": "",
+   "refs": [
+    "D08.EDT:1124"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared; {X4}: a key wait"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "スクープ！！",
+   "en": "",
+   "refs": [
+    "D08.EDT:11e9"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "恐怖！新種の食虫植物、人間を喰らうっ！！外見は普通の柿っ！！{X1}これは環境破壊を続ける人間に対する自然界の警鐘か！？{X2}なーんちゃってさ・・・。{X3}ふう・・・、もっと笑えるネタはないかなぁ・・・。{X4}そう言えば、別のコーナーでコレ作ってる時期をごまかしてたけど、ここで季語使ったからバレちゃったな・・・。{X5}という訳で、コレは秋に作られています。{X6}しかも、だいぶ深まってます。{X7}関係者一同、本当に申し訳ないと思っているんです。こんなに遅れちゃって・・・。{X8}申し訳ないと思いつつも、くだらないギャクでこのコーナーの幕を開けてしまう自分が悲しい。{X9}しかし、落ち込んでばかりもいられない。もうすぐ冬だ、それが過ぎれば花の薫る春が来る。{X10}春、それは美しい蝶が飛び交い、草木が一斉に芽を出し、まばゆいばかりの新緑に包まれる季節。{X11}ワオッ！春ってなんてすばらしい季節なんだろう。ビバ、春！！{X12}その春もやがて夏になり、秋になり、そして冬が来る・・・・・・。{X13}くおぉおぉおぉおぉぉぉ、結局俺様の人生には、また、何のイベントも無い{X14}まま一年が過ぎてしまうのかぁ！{X15}またかぁ！またなのかぁぁぁ！！{X16}むむう、いかんいかん。秋はどうも、悲観的になってしまう。{X17}もっと明るく、前向きに生きねば！{X18}そうだ、気分転換に散歩にでも行こう！{X19}一日中、中で仕事してるから駄目なんだよな。たまには外に出て太陽光線を浴びとかないと体にキノコが生えちゃうぜ。{X20}・・・・・・{X21}雲ってやがる・・・。{X22}太陽にまで嫌われちまったのか俺は・・・・・・。{X23}そうかそうか、俺なんかはベニテングダケにまみれて、世間の笑い者になりつつバクテリアどもに分解されて白骨化するのがお似合いって訳かい・・・。{X24}いやいや、そんな事はない。これはきっと、毎日モニターばかり眺めていて退化した俺の眼が、強烈な太陽光線でつぶれるのを未然に防ごうと言う、神様の慈愛に満ちた配慮に違い無い。{X25}うん、絶対そうだ。{X26}サンキュー、神様。{X27}よーし、俺は神の加護を受けている選ばれし者だって分かった事だし、ドーンと景気よく近くの公園で『読書の秋』と洒落込むかぁ。{X28}・・・・・・{X29}カップルばっかり・・・。{X30}くぅー、この俺に女がいないと思って、当てつけてやがるのか？{X31}そうか？　{X32}そうなのか？　{X33}そうなんだな？{X34}くっそー、どいつもこいつも、幸せそうな顔しやがって。{X35}幸せか？　{X36}幸せか？　{X37}俺の分まで幸せか？{X38}そうか！こいつらが俺の幸せを吸い取ったから俺が不幸になったんだ。{X39}と言うことは、こいつらを血祭に上げれば、こいつらが不幸になる、{X40}そして、その不幸を俺が吸い取れば、俺がますます・・・{X41}不幸・・・{X42}に・・・？{X43}ちがーう、何かがちがーう。俺は幸せになりたいんだー。{X44}大体、他人様を不幸にして自分が幸せになろうという発想自体がいかーん。{X45}前向きだー、前向きに考えろー。{X46}そうだ！他人を不幸にするんじゃなく、幸福な人達からちょっとずつ幸せを分けてもらえばいいんだ。{X47}丁度いい所にかっぷくのいい、優しそうなおじさんが歩いてるじゃないか。{X48}よーし・・・・・・{X49}「よーよー、オッサンよー、運と女と才能に見放された一流クリエイターに、無期限＆無担保でちょいとばかし不正融資してみねーかい？」{X50}ノォーーーッ！！コレジャー、タダノ『たかり』デェース。{X51}シィーット、ガッテーム、サノバビーッチ、ディッシィズァッペェーン！！{X52}・・・・・・外人になったところで、なんの解決にもなんないよな・・・。{X53}とにかく、落ち着こう、平常心を取り戻すんだ。{X54}まず、辺りの景色でも見て、と・・・{X55}ほらほら、あんな所で親子連れが、地上最高にして究極の愛玩動物としての地位を不動のものとし、全生命体の頂点に君臨している愛くるしい猫ちゃんと戯れているじゃあないか。{X56}うーん、なんて微笑ましい光景なんだ、これこそ俺が長年探し求めていた至福の時なのかも知れない。{X57}おやおや、あんなに無邪気にじゃれちゃって。{X58}お、おいおい、それじゃあ首が締まるじゃないか！{X59}ばかっ！叩くんじゃない。{X60}んぶっ！？　あのクソガキャー、いま蹴りやがったぞ！！{X61}親は何してるんだ、親は！{X62}おや？（爆笑）{X63}・・・・・・{X64}縛ってる・・・{X65}マジ？　{X66}ここ公園だろ？　{X67}いいの？　{X68}あんな事して・・・{X69}しかし・・・うーむ・・・あんなトリッキーな縛り方があったとは・・・{X70}あららら、ロウソクまで使ってるし・・・。{X71}ぬう！よく見ると、ロウソクを垂らしたあとが星座の形になっているじゃないか！！{X72}なんてロマンチックなんだ。きっと、「君と僕だけの星降る夜に乾杯！」とか言ってるんだろうなあ。{X73}まだ昼だけど・・・。{X74}うひょー、今度はムチだよ、むち！{X75}あのムチが、あの白いむちむちボディにむちっと炸裂して、むちむちがむっちりムちムちでムチがムチィってなってむっちっちっ・・・{X76}ハッ、俺は一体どうしたんだ？{X77}そうか、あのクソボンズがふざけた真似しやがるから頭に血が昇って、いかがわしい幻覚を見たんだな。おかげで俺様自慢のチャームポイントが元気はつらつに硬直しちゃって、いつでもファイト一発オッケー状態だぜ！{X78}な～んて事はどうでもいいとして、どうやら猫ちゃんは、うまく逃げたみたいだな・・・。{X79}あっ！もうこんな時間になってる。{X80}う～ん、なんでかわかんないけど、パワーがみなぎって来た様な気がするぞ・・・。{X81}やっぱり、息抜きって大事だよなっ！！{X82}「おーし、会社戻ってバキバキ仕事すんぞーっ！！」",
+   "en": "",
+   "refs": [
+    "D08.EDT:11fa"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, a new line; {X4}: a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: a key wait; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a key wait, the window cleared; {X10}: a key wait; {X11}: a key wait; {X12}: a key wait, the window cleared; {X13}: a key wait, a new line; {X14}: a new line; {X15}: a key wait; {X16}: a key wait, the window cleared; {X17}: a new line; {X18}: a key wait, the window cleared; {X19}: a new line; {X20}: a key wait, the window cleared; {X21}: a key wait; {X22}: a key wait, the window cleared; {X23}: a key wait, a new line; {X24}: a key wait, the window cleared; {X25}: a key wait; {X26}: a key wait, a new line; {X27}: a key wait, the window cleared; {X28}: a key wait, the window cleared; {X29}: a key wait; {X30}: a key wait, the window cleared; {X31}: a key wait, a new line; {X32}: a key wait; {X33}: a key wait; {X34}: a key wait, a new line; {X35}: a key wait, a new line; {X36}: a key wait; {X37}: a key wait; {X38}: a key wait, the window cleared; {X39}: a key wait, a new line; {X40}: a key wait; {X41}: a key wait; {X42}: a key wait; {X43}: a key wait, the window cleared; {X44}: a new line; {X45}: a new line; {X46}: a key wait, the window cleared; {X47}: a key wait, a new line; {X48}: a new line; {X49}: a key wait, the window cleared; {X50}: a key wait, a new line; {X51}: a new line; {X52}: a key wait, the window cleared; {X53}: a key wait, a new line; {X54}: a new line; {X55}: a key wait, the window cleared; {X56}: a key wait; {X57}: a key wait, the window cleared; {X58}: a key wait, a new line; {X59}: a key wait; {X60}: a key wait; {X61}: a key wait, the window cleared; {X62}: a key wait, a new line; {X63}: a key wait, the window cleared; {X64}: a key wait; {X65}: a key wait, a new line; {X66}: a key wait; {X67}: a key wait; {X68}: a key wait; {X69}: a key wait, the window cleared; {X70}: a new line; {X71}: a key wait; {X72}: a key wait, the window cleared; {X73}: a key wait; {X74}: a key wait, the window cleared; {X75}: a key wait; {X76}: a key wait; {X77}: a key wait, the window cleared; {X78}: a key wait, the window cleared; {X79}: a key wait, a new line; {X80}: a key wait, the window cleared; {X81}: a key wait, a new line; {X82}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "ぬ",
+   "en": "",
+   "refs": [
+    "D08.EDT:1dd2"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "　むっ",
+   "en": "",
+   "refs": [
+    "D08.EDT:1dd8"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "「？・・・・・・・・・・・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "D08.EDT:1de5"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "！！！",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e04"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "」{X1}「ママー、みてみてー。{X2}あのおじちゃんワンワンの",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e10"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "ウ○チ",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e3e"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "ふんでるよー」{X1}「しーっ！そ、そんなこと、大きな声で言うもんじゃありませんっ！",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e4b"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "ププーッ",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e85"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "、くすくすくす」{X1}「ううぅぅ・・・・・・・・・・・・・・・{X2}涙が止まらない・・・」{X3}　{X4}　　　　　　　　　　　ほとんどフィクションです。{X5}　　　　　　　　　　『通信』になってないな、コレ。",
+   "en": "",
+   "refs": [
+    "D08.EDT:1e95"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait; {X3}: a key wait, the window cleared; {X4}: a new line; {X5}: a key wait, a new line"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　クラブＤ．Ｏ．からのお知らせ",
+   "en": "",
+   "refs": [
+    "D08.EDT:1f44"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "今回のこのコーナーは、何件かお問い合わせのあったディーオーオリジナルグッズについて、現在の在庫状況等をお知らせしたいと思います。{X1}（１０月３１日現在）{X2}なお、ロットアップした商品は今後も生産いたしませんので、ご了承下さい。以下の価格が表示されている商品は現在も好評発売中です。価格は全て標準価格（税別）です。{X3}☆「ディー・オー　イラスト集」{X4}　ディー・オー　イラストレーションズ　　　　　完売御礼（ロットアップ）{X5}☆「ディー・オー　キャラクターズトランプ」（プラスチック製）{X6}　オリジナルキャラクタートランプ　　　　　　　　１，４００円{X7}　※過去にどきどき新聞で２，０００円と掲載された事がありましたが、{X8}　　正しい販売価格は１，４００円です。ここに訂正致します。{X9}☆「ジグソーパズル」　（５００ピース）{X10}　妖獣戦記　　　　　　　　　　　　　　　　　　　１，８００円{X11}　ブランマーカー　　　　　　　　　　　　　　　　１，８００円{X12}☆「テレフォンカード」　（５０度数）{X13}　ブランマーカー２　　　　　　　　　　　　　　　１，２００円{X14}　星の砂物語３　　　　　　　　　　　　　　　　　１，２００円{X15}　雑音領域　　　　　　　　　　　　　　　　　　　１，２００円{X16}　「テレフォンカード」{X17}　全日本美少女麻雀選手権大会ハートでロン！！　　１，２００円{X18}　クリスタルリナール　　　　　　　　　　　　　　１，２００円{X19}　ＤＯＲ　ＳＰＥＣＩＡＬ　ＥＤＩＴＩＯＮ’９３　１，２００円{X20}　「テレフォンカード」{X21}　妖獣戦記　－Ａ．Ｄ．２０４８－　　　　　　　　１，２００円{X22}　星の砂物語２　　　　　　　　　　　　　　　　　１，２００円{X23}　ブランマーカー　　　　　　　　　　　　　　　　１，２００円{X24}☆「オリジナルビデオＶＯＬ．１～５」（ＶＨＳビデオ）・・・旧タイトル{X25}　「ＤＯＲベストセレクション」　　（ＶＨＳビデオ）・・・現タイトル{X26}　ＶＯＬ．１　加奈子さんの憂鬱　　　　　　　　　４，８００円{X27}　ＶＯＬ．２～５　　　　　　　　　　　　　　　完売御礼（ロットアップ）{X28}☆「カレンダー」{X29}　ブランマーカー　９４年度カレンダー　　　　　完売御礼（ロットアップ）{X30}☆「オリジナルキャラクターディスクラベル」　　　　　８００円{X31}なお、諸般の事情により以下のグッズは『発売中止』になりました。{X32}１９９５年１０月３１日までにご注文を頂いている方には、お送り頂いた料金を返金すると共に、ご注文の商品の代替品をお送りし、お詫びとさせて頂きたいと思います。{X33}☆＜設定資料集＞{X34}　［ブランマーカー］［妖獣戦記］{X35}　代替品：ディーオー監修プレミアムボックス{X36}☆＜ポストカードコレクション＞{X37}　［妖獣戦記］［ブランマーカー］［星の砂物語シリーズ］{X38}　［ＤＯＲシリーズ］{X39}　代替品：ディーオー・オリジナル・ポストカードコレクション{X40}☆＜レターセット＞{X41}　［妖獣戦記］［ブランマーカー］{X42}　代替品：ディーオー・オリジナル・レターセット{X43}☆＜９４年度カレンダー＞{X44}　［妖獣戦記］{X45}　代替品：妖獣戦記テレフォンカード{X46}　{X47}　　　　　　ご迷惑をおかけして、誠に申し訳ありませんでした。",
+   "en": "",
+   "refs": [
+    "D08.EDT:1fa4"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: a new line; {X5}: a key wait, the window cleared; {X6}: a new line; {X7}: a new line; {X8}: a new line; {X9}: a key wait, the window cleared; {X10}: a new line; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a new line; {X15}: a new line; {X16}: a key wait, the window cleared; {X17}: a new line; {X18}: a new line; {X19}: a new line; {X20}: a key wait, the window cleared; {X21}: a new line; {X22}: a new line; {X23}: a new line; {X24}: a key wait, the window cleared; {X25}: a new line; {X26}: a new line; {X27}: a new line; {X28}: the window cleared; {X29}: a new line; {X30}: a key wait, the window cleared; {X31}: a key wait, the window cleared; {X32}: a new line; {X33}: a key wait, the window cleared; {X34}: a new line; {X35}: a new line; {X36}: a key wait, the window cleared; {X37}: a new line; {X38}: a new line; {X39}: a new line; {X40}: a key wait, the window cleared; {X41}: a new line; {X42}: a new line; {X43}: a key wait, the window cleared; {X44}: a new line; {X45}: a new line; {X46}: a key wait, the window cleared; {X47}: a new line"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　新　作　情　報",
+   "en": "",
+   "refs": [
+    "D08.EDT:276f"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　ＢＲＡＮＭＡＲＫＥＲ２",
+   "en": "",
+   "refs": [
+    "D08.EDT:27e8"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "　レジャ島を後にし、テラ大陸への船に乗ったシャミーとヴィガ。{X1}　シャミーはレジャ島の事件を回想し、一人物思いにふける。のどかに旅が{X2}　始まるかと思った矢先、二人の乗った船は突然の嵐に遭い難破。シャミー{X3}　とヴィガは海に投げ出されてしまう。{X4}　ちょうどそのころ、魔族の元老の娘カーラは、執事から『ブランマーカー{X5}　を持つ者が動きだした』と報告を受けていた。{X6}　海に投げ出されたシャミーとヴィガはファーシャ島南の海岸に漂着する。{X7}　持ち物も魔法の書も全て流されてしまった二人は、とりあえず近くのクリ{X8}　スの村に向かうことにした。",
+   "en": "",
+   "refs": [
+    "D08.EDT:2817"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: a new line; {X8}: a new line"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　妖獣戦記２　－黎明の戦士たち－",
+   "en": "",
+   "refs": [
+    "D08.EDT:2a1c"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "　　”妖獣掃討作戦”の後、バイオソルジャー達にも人間としての生活が許{X1}　され、それぞれの道に進んで行った。{X2}　ごく普通の少女として過ごす者も、戦いを継続する者もいた。{X3}　１０ヶ月後、再び妖獣がソフィアポリスを包囲してきた。{X4}　ベータの居ない今、なぜ妖獣は力を取り戻したのか？{X5}　霧原麗子は実戦部隊を再召集したが、作戦に十分な隊員は揃わなかった。{X6}　やむをえず、主義主張を越えてバイオソルジャーファクトリーに協力を求{X7}　める。",
+   "en": "",
+   "refs": [
+    "D08.EDT:2a4d"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, a new line; {X3}: a key wait, the window cleared; {X4}: a key wait, a new line; {X5}: a key wait, the window cleared; {X6}: a key wait, a new line; {X7}: a new line"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　ユーザーズ・サロン",
+   "en": "",
+   "refs": [
+    "D08.EDT:2bfd"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "あああ・・・ごめんなさい、ごめんなさい・・・ほんとはもっと早く紹介しなきゃならなかったのに、こんなに遅くなっちゃって・・・・ううう、すみません、すみません・・・・・・{X1}ううう、では気を取り直して、早速作品をご紹介しましょう。{X2}うううう・・・すみません、すみません・・・。",
+   "en": "",
+   "refs": [
+    "D08.EDT:2c5c"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, a new line"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "まずは、遠路はるばる鹿児島県から送ってくれたＰ．Ｎ　沙羅さん{X1}会員Ｎｏ．２２２３－８６３４の作品から。",
+   "en": "",
+   "refs": [
+    "D08.EDT:2d05"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　ＵＮＤＩＮＥ",
+   "en": "",
+   "refs": [
+    "D08.EDT:2d5a"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "なお、ご質問のあった、弊社より好評発売中の１６７７万色中２５６色描画可能なＰＣ－９８２１シリーズ専用グラフィックツール『ＪＥＤＡＩ』{X1}標準価格１４，８００円（税別）についての回答は次の通りです。{X2}（くぅー、さりげない宣伝じゃーん）{X3}必要メモリ：１．６Ｍバイト以上{X4}なお、ＦＤベースで起動ディスクから起ち上げる場合は意識する必要はありませんが、ＨＤＤから起ち上げる場合にはメインメモリに５２０Ｋバイト以上の空き容量が必要です。{X5}使用に際して『ＨＤＤは特に必要ありません』が、あればセーブやロード、{X6}データの管理等がケタ違いに快適だと思いますし、ＪＥＤＡＩ使用時以外で{X7}も何かと重宝すると思います。（←ちょっと、お節介）{X8}プリンターはＭＪ－７００Ｖ２Ｃ、スキャナーはＧＴ－６５００{X9}（各ＥＰＳＯＮ製）が価格もお手頃で、性能も申し分ないと思います。{X10}最後の質問、ブランマーカー２のＣＤ版は・・・『出します』と書くはずが、この時期だと『既に出てます』となってしまいました。好評発売中です。{X11}まだお求めになっていないようでしたら、宜しくお願いします。{X12}こんな感じでよろしいでしょうか？{X13}ＰＳ（プレ○ステーションではない）に書かれていた質問については{X14}『ひ・み・つ』です。ふふふふふふ・・・・・・。{X15}しかし、今ごろ答えてお役に立てるのでしょーか？{X16}ううう、遅くなってすみません・・・。",
+   "en": "",
+   "refs": [
+    "D08.EDT:2d8f"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared; {X4}: a new line; {X5}: a key wait, the window cleared; {X6}: a new line; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a new line; {X10}: a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a new line; {X15}: a key wait, the window cleared; {X16}: a new line"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "次は、前号Ｖｏｌ．７に引続き送ってくれた埼玉県の松本さんの作品です。",
+   "en": "",
+   "refs": [
+    "D08.EDT:30ea"
+   ],
+   "max_cells": 0
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　ＣＨＮＯＩＳＥ",
+   "en": "",
+   "refs": [
+    "D08.EDT:3129"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "同封のお手紙には『こりずにまたＣＧを描いてみました』とありましたが、{X1}なんのなんの、それでいいのです。懲りるようではいけません（←偉そう）。{X2}ローマは一日にして成らず、千里の道も一歩から、全ての道はローマに通ず。",
+   "en": "",
+   "refs": [
+    "D08.EDT:3161"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "（全然違う？　↑）{X1}明日のために、描くべし描くべし、狂ったようにひたすら描くべしっ！",
+   "en": "",
+   "refs": [
+    "D08.EDT:3216"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "（無責任↑）{X1}ということで、何事も地道な努力が必要だと思います。基礎なくして発展はあり得ません！　懲りる事なく、これからも試行錯誤を繰り返しつつ描き続けてください。",
+   "en": "",
+   "refs": [
+    "D08.EDT:326d"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　ユーザーズ・サロンから、ちょっとお願いがあります。{X2}　{X3}　　　　　　　　　　　　そのお願いとは・・・・・・{X4}採用作品をいざ紹介と言った時に、どこを見ても制作者の実名しか書かれていない場合があるので、次回からは作品をお送り頂く際に、実名の掲載がＯＫかどうかを書いて頂きたいのです。{X5}　{X6}　　　　　　　　　　　　　　　なぜなら・・・{X7}実名を掲載されてしまったが為に、不幸の手紙が殺到した、とか、カラスに頭をついばまれた、とか、電車でオカマにモノを握られた、とか、唐揚げ弁当の唐揚げが１つ少なかった、などなど、日常生活に著しく支障を来す不具合が発生してしまったじゃないか！{X8}なーんて事になったり、その他諸々の不都合が生じても、当方では何の責任も負えないからなんです。{X9}また、このコーナーではペンネーム（Ｐ．Ｎ）やハンドルネームでもＯＫですので、書いて頂ければ、そちらを優先で掲載したいと思います。{X10}ただし、ベラボーに長いものや、あまりにも反社会的なもの、商標登録がされていたり、版権が絡みそうなもの等が含まれる名前は不可です。{X11}（そんな人はいないだろうけど、念のためね）{X12}もし、実名掲載の可否やペンネーム等が書かれていない場合は、原則として名前を伏せさせて頂きます。{X13}それともう一つ、作品にタイトルがあるようでしたら、こちらが分かるように書いていただけるととてもうれしいです。{X14}取り敢えず、今回は送られてきた作品のファイルネームをタイトルとさせて頂きました。{X15}　{X16}　　　　　　　　　　　　　　そんなわけで・・・{X17}『取り敢えず描いてみたんですけど、こんなのでもいいですか？』{X18}というような、ピュアで謙虚な初心者から{X19}『フッ、これでも見て勉強しろよ・・・』{X20}という、怖い者（身の程？）知らずな人生の勝利者や、はたまた{X21}『何っ、火星人の襲撃を受けているだって。よし、今から救援電波を送るから頑張ってくれ、・・・ピピッピピピピッ・・・ファイトだ、ヘンリー・・・』{X22}といった、ちょっとアレな人まで、{X23}　{X24}　　　　　　　どんな方でもＯＫです・・・・・・たぶん・・・。{X25}　いつものとおり、宛先はこちらっ↓{X26}　〒２５１{X27}　神奈川県藤沢市藤沢１１５－２　藤沢郵便局　私書箱４号{X28}　（株）ディーオー　「クラブＤ．Ｏ．事務局　お便り、ＣＧコーナー」係{X29}　{X30}　　　　　　ガッツのある作品をゴリゴリ送り付けてくださいね！",
+   "en": "",
+   "refs": [
+    "D08.EDT:32ee"
+   ],
+   "max_cells": 0,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: a new line; {X7}: a key wait, the window cleared; {X8}: a key wait, the window cleared; {X9}: a key wait, the window cleared; {X10}: a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a key wait, the window cleared; {X14}: a new line; {X15}: a key wait, the window cleared; {X16}: a new line; {X17}: a key wait, the window cleared; {X18}: a key wait, a new line; {X19}: a key wait, the window cleared; {X20}: a key wait, a new line; {X21}: a key wait, the window cleared; {X22}: a key wait; {X23}: a key wait, the window cleared; {X24}: a new line; {X25}: a key wait, the window cleared; {X26}: a new line; {X27}: a new line; {X28}: a new line; {X29}: a key wait, the window cleared; {X30}: a new line"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "ハードディスク起動の場合はＤＯＳプロンプトに戻りますが、フロッピー起動の場合は、終了してもＤＯＳプロンプトには戻りませんので、フロッピーを抜いてから電源を切るか、リセットボタンを押して再起動してください。",
+   "en": "",
+   "refs": [
+    "D08.EDT:39fa"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　お疲れ様でした。",
+   "en": "",
+   "refs": [
+    "D08.EDT:3acb"
+   ],
+   "max_cells": 50,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "出目エラー",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:0287"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "あなたの勝ちです",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:032e",
+    "D08TXT.EDT:035e",
+    "D08TXT.EDT:0386"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "あなたの負けです",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:03b3"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "引分けです",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:03db"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　ゲームオーバー",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:03f0"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "　{X1}　おめでとうございます。完全制覇です。",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:0460"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "あなた：{X1}合　計：",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:04b8"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: an effect, a new line"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "ＣＯＭ：",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:04d7"
+   ],
+   "max_cells": 38
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "勝　ち：{X1}負　け：{X2}引分け：",
+   "en": "",
+   "refs": [
+    "D08TXT.EDT:04f7"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: an effect, a new line; {X2}: an effect, a new line"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "　{X1}　　ブランマーカー２音楽館",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:01e0"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "エラーＦＦ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:02f2"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "エラーＲＥＷ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:03a6"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "＃１{X1}　　　　　思い出は伝説",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:03c2"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "＃２{X1}　　　　ときめきの予感",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:03f5"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "＃３{X1}　ＳＴＲＡＮＧＥ{X2}　　　　　　　　ＢＡＴＴＬＥ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0426"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "＃４{X1}　　　　マブランを越えて",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0470"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "＃５{X1}　　　　　　光の森",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:04a4"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "＃６{X1}　Ａ　ｏｒ　Ｄ{X2}　（Ｔ．Ｒ．Ｇ．Ｎ＿ＭＩＸ）",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:04d3"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "＃７{X1}　　　　　　影の森",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:051e"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "＃８{X1}　ＣＡＭＯＵＦＬＡＧＥ{X2}　　　　　　　ＣＨＥＶＲＯＮ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:054d"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "＃９{X1}　　Ｒｅａｌ{X2}　　　　Ｉｍｉｔａｔｉｏｎ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:059e"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "＃１０{X1}　　　　　　アレス",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:05e5"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "＃１１{X1}　　　Ｃｏｌｏｒ　Ｂｏｘ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0614"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "＃１２{X1}　　　Ｃｏｏｌ　Ｄｏｗｎ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:064d"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "＃１３{X1}　　　　夢で会った少女",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0686"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "＃１４{X1}　Ｔｈｅ　Ｅｉｇｈｔｈ{X2}　　　　　　　　　Ｄａｒｋ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:06ba"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "＃１５{X1}　　　　マクロコスモス",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0707"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "＃１６{X1}　ときめきの予感{X2}　　　（ｓｌｏｗ＿ｅｄｉｔ）",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0738"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "＃１７{X1}　Ｔｅｎｄｅｒ　Ｇｒａｎｃｅ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0781"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "＃１８{X1}　　　　　魔法伝説",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:07c0"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "＃１９{X1}　　Ｄｏｕｂｌｅ　Ｅｄｇｅ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:07f2"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "＃２０{X1}　ＴＥＡ＿ＣＵＰ　ＤＲＥＡＭ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:082e"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　イベントミニレポート",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:089d"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "先日、ブランマーカー２ＣＤ－ＲＯＭ版の発売を記念して、東京と大阪で発売記念イベントを行いました。{X1}ゲストはシャミー役のこおろぎさとみさんと、シリア役の松井菜桜子さん。{X2}では、その時の模様を少し写真でご紹介しましょう。",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:08f3"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a new line"
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "えらー　イベント",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0a09"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "イベントに来てくれたみんな、どうもありがとう！{X1}来てくれた人も、来れなかった人も・・・これからも応援よろしくね！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0a67"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　攻略ワンポイントアドバイス",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0aed"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "　{X1}　　　うぉぉぉぉぉぉぉぉ！！{X2}　　たぁぁすけてくれぇぇぇ～！！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0b4a"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "つーわけで、ここではユーザーハガキの中で最も質問の多かった所の攻略の{X1}ワンポイントアドバイスをしちゃいます、ってそんな大袈裟なもんじゃないんだけど・・・。{X2}質問が多かったのは主に２ヶ所。まず一つは・・・",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0b87"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "　{X1}「うおーっ！流しのアイテム屋のじじいはどこいったーっ！」",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0c1a"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "というもの。{X1}ふっふっふ・・・甘い、甘いな今泉君！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0c48"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "海底洞窟の上の小島まで、延々戻ってしまったあなた・・・ご愁傷様でした。実は、じじいは水上神殿のすぐ近くに居たんです。灯台下暗しとはまさにこの事ですね～。",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0c95"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "さて、もう一つ多かった質問がこれ・・・",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0d0b"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "　{X1}「うがぁぁぁ！テラ城内で先に進めなくなったぁぁぁ！」",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0d2d"
+   ],
+   "max_cells": 46,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "ふっふっふ・・・甘い、甘いよヒイロ！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0d60"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "もしや、君はテラ城で『こけざるのつぼ』なるアイテムを入手していないかい？{X1}このつぼは、本当はもっと後のイベントに出てくる物で、この『こけざるのつぼ』の入っていた宝箱には、本来『鍵』が入っているはずなんだ。{X2}ゲーム中にフロッピーディスクやＣＤをドライブから抜いたり、指定された以外の方法でゲームを起動したりしていないかな？{X3}指定された通りの方法で起動し、ゲーム中はずっとフロッピーやＣＤは抜かないで、テラ城攻略前のセーブデータからもう一度やってみよう！{X4}それでも『こけざるのつぼ』が手に入ってしまう場合は、ディスクの不良かもしれないので、ユーザーサポート宛に問い合わせてみてね！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0dc0"
+   ],
+   "max_cells": 46,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　ブランマーカー２カルトクイズ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0f8b"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "ブランマーカー２カルトクイズー！どんどんどんぱふぱふ！{X1}さてさて、君は何問答えられるかな？それでは、ＬＥＴ’Ｓ　ＴＲＹ！！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:0fe0"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "第{X1}問",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1056"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: an effect"
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "エラー　ＲＮＤ＿Ｑ１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:118c"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "エラー　ＲＮＤ＿Ｑ２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:11dc"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "エラー　ＲＮＤ＿Ｑ３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:122c"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "問題１　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1259"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "Ｑ．留守電メッセージ（ＣＤ版）でヴィガたちが最後に歌うテーマは？{X1}１．引っ越しのサ○イ{X2}２．お仏壇のハ○ガワ{X3}３．春日井のグ○ーン豆",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:126a"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "問題２　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:12f2"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "Ｑ．ヴィガ曰く、シャミーは・・・{X1}１．短足{X2}２．胴長{X3}３．貧乳",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1303"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "問題３　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1355"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "Ｑ．ガーランテはシャミーのアソコの中をどう評した？{X1}１．柔らかく、それでいてよく締まっている{X2}２．まったりとして、それでいてコクがある{X3}３．肉襞は熱く、それでいてネットリと絡み付く",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1366"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "問題４　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:13f7"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "Ｑ．カーラは最初シャミーと会った時、シャミーの事を何と言った？{X1}１．美しい目をしている{X2}２．強い目をしている{X3}３．優しい目をしている",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1408"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "問題５　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1484"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "Ｑ．開発初期の段階、名前が決まるまでジィズは何と呼ばれていた？{X1}１．モーちゃん{X2}２．牛女{X3}３．爆乳娘",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1495"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "問題６　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1502"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "Ｑ．シャミーをさらったモンスターの名前は？{X1}１．ヘルズ・ビースト{X2}２．エビル・ビースト{X3}３．シャドー・ビースト",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1513"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "問題７　答え１",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1584"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "Ｑ．四天王の内で、冷血将軍と呼ばれるのは？{X1}１．ベゼル{X2}２．ガスト{X3}３．ガノン",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1595"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "問題８　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:15f2"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "Ｑ．キャラデザ＆原画のＧ．ＧＯＵＤＡ氏。その読み方は？{X1}１．ジャイアン・ゴウダ{X2}２．ゴンザレス・ゴウダ{X3}３．グレート・ゴウダ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1603"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "問題９　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1689"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "Ｑ．テラ城内のディーオー開発室、妖野氏は自分の病気は何だと言っていた？１．エイズ{X1}２．ガン{X2}３．結腸リケッチア",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:169a"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "問題１０　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:170f"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "Ｑ．ブランマーカー２のイメージソングのタイトルは？{X1}１．しあわせの予感{X2}２．ときめきの予感{X3}３．もっと！もっと！ときめき！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1721"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "問題１１　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1793"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "Ｑ．ガーランテはシャミーのオッパイをどう評した？{X1}１．揉みごたえのある形のいい乳房{X2}２．手ごたえのある柔らかい乳房{X3}３．触りがいのない貧弱な乳房",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:17a5"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "問題１２　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1829"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "Ｑ．『ソード・オブ・テラ』は何と交換で手に入る？{X1}１．人魚のうろこ{X2}２．ドラゴンのひげ{X3}３．猫耳印のコロン",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:183b"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "問題１３　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:18ad"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "Ｑ．火の魔法使いの出す問題を解くと貰える魔法は？{X1}１．フリーズ・ブラスト{X2}２．ラバ・ゲイザー{X3}３．ライジング・ウェーブ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:18bf"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "問題１４　答え２",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:193d"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "Ｑ．『解呪の霊薬』の値段はいくら？{X1}１．２００ＧＯＬＤ{X2}２．３００ＧＯＬＤ{X3}３．４００ＧＯＬＤ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:194f"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "問題１５　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:19b9"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "Ｑ．ミニドラマ（ＣＤ版）のネタ。ヴィガ曰く、「バカってのはなぁ・・・」１．死ななきゃ直らないんだぜ！{X1}２．天才のハンタイなのだ！{X2}３．バカって言った奴がバカなんだぞ、バカ！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:19cb"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "問題１６　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1a5b"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "Ｑ．テラ城内のディーオー開発室、島田氏は何を欲しがっていた？{X1}１．初回特典{X2}２．同人誌{X3}３．非売品",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1a6d"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "問題１７　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1ade"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "Ｑ．テラ城内のＤ．Ｏ．開発室、藤沢氏が「ええのぉ～」と言っていたのは？１．人妻{X1}２．声優{X2}３．若い娘",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1af0"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "問題１８　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1b5d"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "Ｑ．ミニドラマのネタ。ヴィガ曰く、「温泉とは・・・」{X1}１．人類にとって、最後のフロンティア{X2}２．老人にとって、最高のテーマパーク{X3}３．若者にとって、最先端のアミューズメントスポット",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1b6f"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "問題１９　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1c11"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "Ｑ．ルシアがシャミー達を助ける為にしていないことは？{X1}１．メモ書き{X2}２．アイテム落とし{X3}３．ステータス回復",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1c23"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "問題２０　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1c8a"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "Ｑ．『こけざるのつぼ』は何と交換で手に入る？{X1}１．アロアロ貝{X2}２．ドラゴンのひげ{X3}３．オチャ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1c9c"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "問題２１　答え３",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1d00"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "Ｑ．ＣＤ版、シナリオライター一押しの『猫耳娘１』の声優さんは？{X1}１．星野千寿子{X2}２．牧やよい{X3}３．川上とも子",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1d12"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "あたり！",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1d76"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "はずれ・・・",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1d86"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　絵コンテ＆ラフ画（らくがき）集",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1e30"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "えらー　コンテ",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:1f18"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "えらー　らくがき",
+   "en": "",
+   "refs": [
+    "D08TXTB.EDT:20b3"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "c00001",
+   "kind": "cmd",
+   "jp": "　　発　刊　の　お　言　葉",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:1"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00002",
+   "kind": "cmd",
+   "jp": "　　　Ｓ　Ｍ　の　夕　べ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:2"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00003",
+   "kind": "cmd",
+   "jp": "　ミュージック・ライブラリー",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:3"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00004",
+   "kind": "cmd",
+   "jp": "　ア ー ト ・ ギ ャ ラ リ ー",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:4"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00005",
+   "kind": "cmd",
+   "jp": "　　よ　も　や　ま　通　信",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:5"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00006",
+   "kind": "cmd",
+   "jp": "　　　編　集　部　便　り",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:6"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00007",
+   "kind": "cmd",
+   "jp": " クラブＤ．Ｏ．からのお知らせ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:7"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00008",
+   "kind": "cmd",
+   "jp": "　　　　新　作　情　報",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:8"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00009",
+   "kind": "cmd",
+   "jp": "　ユ ー ザ ー ズ ・ サ ロ ン",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:9"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00010",
+   "kind": "cmd",
+   "jp": "　　お 楽 し み コ ー ナ ー",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:10"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00011",
+   "kind": "cmd",
+   "jp": "　ど き ど き を 終 了 す る",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:11"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00012",
+   "kind": "cmd",
+   "jp": " ＰＬＡＹ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:13"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00013",
+   "kind": "cmd",
+   "jp": "　Ｆ　Ｆ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:14"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00014",
+   "kind": "cmd",
+   "jp": " Ｒ Ｅ Ｗ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:15"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00015",
+   "kind": "cmd",
+   "jp": " ＥＸＩＴ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:16"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00016",
+   "kind": "cmd",
+   "jp": "　まだ読む",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:18"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00017",
+   "kind": "cmd",
+   "jp": "　 見　る",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:19"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00018",
+   "kind": "cmd",
+   "jp": "　お 願 い",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:20"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00019",
+   "kind": "cmd",
+   "jp": " メニューへ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:21"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00020",
+   "kind": "cmd",
+   "jp": " もういい！",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:22"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00021",
+   "kind": "cmd",
+   "jp": "　遊　　ぶ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:23"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00022",
+   "kind": "cmd",
+   "jp": "　説　　明",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:24"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00023",
+   "kind": "cmd",
+   "jp": "　挑戦する",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:25"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00024",
+   "kind": "cmd",
+   "jp": " 絵コンテ集",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:26"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00025",
+   "kind": "cmd",
+   "jp": " らくがき集",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:27"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00026",
+   "kind": "cmd",
+   "jp": " 暇だから読む",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:29"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00027",
+   "kind": "cmd",
+   "jp": " 誰が読むか！",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:30"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00028",
+   "kind": "cmd",
+   "jp": " ブランマーカー２",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:32"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00029",
+   "kind": "cmd",
+   "jp": "　妖 獣 戦 記 ２",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:33"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00030",
+   "kind": "cmd",
+   "jp": "　グ ッ ズ 情 報",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:34"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00031",
+   "kind": "cmd",
+   "jp": "　メ ニ ュ ー へ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:35"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00032",
+   "kind": "cmd",
+   "jp": "　次を見る",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:38"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00033",
+   "kind": "cmd",
+   "jp": "　勝負する",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:41"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00034",
+   "kind": "cmd",
+   "jp": " 　引　く",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:42"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00035",
+   "kind": "cmd",
+   "jp": " ゲーム終了",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:43"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00036",
+   "kind": "cmd",
+   "jp": "　観　　賞",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:44"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00037",
+   "kind": "cmd",
+   "jp": " 　　ブランマーカー２音楽館",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:47"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00038",
+   "kind": "cmd",
+   "jp": "　　　イベントミニレポート",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:48"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00039",
+   "kind": "cmd",
+   "jp": " 　攻略ワンポイントアドバイス",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:49"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00040",
+   "kind": "cmd",
+   "jp": "　ブランマーカー２カルトクイズ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:50"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00041",
+   "kind": "cmd",
+   "jp": " 絵コンテ＆ラフ画（らくがき）集",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:51"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00042",
+   "kind": "cmd",
+   "jp": " 　　メ イ ン メ ニ ュ ー へ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:52"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00043",
+   "kind": "cmd",
+   "jp": "　１ 枚 目",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:54"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00044",
+   "kind": "cmd",
+   "jp": "　２ 枚 目",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:55"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00045",
+   "kind": "cmd",
+   "jp": "　３ 枚 目",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:56"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00046",
+   "kind": "cmd",
+   "jp": " あ た り",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:59"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00047",
+   "kind": "cmd",
+   "jp": " は ず れ",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:60"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00048",
+   "kind": "cmd",
+   "jp": "　１　番",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:62"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00049",
+   "kind": "cmd",
+   "jp": "　２　番",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:63"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00050",
+   "kind": "cmd",
+   "jp": "　３　番",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:64"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "c00051",
+   "kind": "cmd",
+   "jp": " 本当に終了",
+   "en": "",
+   "refs": [
+    "KOM_08.EDT:66"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "弟　子：",
+   "en": "",
+   "refs": [
+    "NAME_08.EDT:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "師　匠：",
+   "en": "",
+   "refs": [
+    "NAME_08.EDT:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "担　当：",
+   "en": "",
+   "refs": [
+    "NAME_08.EDT:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ドライブ{X1}に",
+   "en": "",
+   "refs": [
+    "NADL.EXE:ccd9",
+    "NADL.EXE:cd20"
+   ],
+   "max_cells": 9,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "{X1}をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cce8"
+   ],
+   "max_cells": 43,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cd2f"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "ディスクが書き込み禁止になっています。",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cd65"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "セーブが終了しました。",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cd95"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "システムディスク",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cdb0"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "データディスク",
+   "en": "",
+   "refs": [
+    "NADL.EXE:cdc7"
+   ],
+   "max_cells": 13
+  }
+ ]
+}

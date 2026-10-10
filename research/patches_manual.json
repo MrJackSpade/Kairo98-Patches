@@ -1921,5 +1921,21 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 8": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_8 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_8/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 9": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_9 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_9/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

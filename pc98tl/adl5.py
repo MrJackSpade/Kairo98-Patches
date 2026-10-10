@@ -103,14 +103,18 @@ ADL98U = {"len": {0x9C: 3, 0xAE: 11}, "ctrl_args": {0x0D: 1}}
 # ADL21 (ADL21.EXE of Crystal Rinal's CD version, 1994: its walker at 58A2h): ADL98's statements with 67h
 # one byte and AEh eleven, 66h and 97h named; the scripts coded as ADL98's
 ADL21 = {"len": {0x67: 1, 0xAE: 11}, "named": {0x66, 0x97}}
+# NADL (NADL.EXE, Doki Doki Disk Vol. 8 and 9): every statement carries its length after its opcode (a
+# byte, or with its top bit set two, the high seven bits first), counting the arguments after it; the
+# scripts coded as ADL98's, its controls ADL98's with 0Dh (no byte) as well
+NADL = {"ctrl_args": {0x0D: 0}}
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
 
 def set_variant(name):
     """The engine's build: "adl5" (ADL5.EXE), "adl5a" (an earlier ADL5.EXE), "adl98" (ADL98.EXE), "adl98u"
-    (Yuu Disk Vol. 4's ADL98.EXE), "adl21" (ADL21.EXE), "adl98s" (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b"
-    (ADL3B.EXE)."""
+    (Yuu Disk Vol. 4's ADL98.EXE), "adl21" (ADL21.EXE), "adl98s" (ADL98S.EXE), "adl3a" (ADL3A.EXE) "adl3b"
+    (ADL3B.EXE) or "nadl" (NADL.EXE)."""
     global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
     STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
     CTRL_END, CODED, VARIANT = 0x0C, False, name
@@ -122,6 +126,10 @@ def set_variant(name):
     if name == "adl21":
         STMT_LEN.update(ADL21["len"])
         NAMED |= ADL21["named"]
+    if name == "nadl":
+        CTRL_ARGS.update(ADL98["ctrl_args"])
+        CTRL_ARGS.update(NADL["ctrl_args"])
+        CTRL_END, CODED = 0x0E, True
     if name == "adl98u":
         STMT_LEN.update(ADL98U["len"])
         CTRL_ARGS.update(ADL98U["ctrl_args"])
@@ -178,9 +186,33 @@ def _text(d, j):
             return j - 1
 
 
+def _length_field(d, i):
+    """(NADL: the arguments' length, the bytes of the field) of the statement at i."""
+    b = d[i + 1]
+    if b & 0x80:
+        return ((b & 0x7F) << 8) | d[i + 2], 2
+    return b, 1
+
+
+def arg(d, s):
+    """Where the statement at s's arguments start (past NADL's length field)."""
+    return s + 1 + (_length_field(d, s)[1] if VARIANT == "nadl" else 0)
+
+
+def _with_length(op, body):
+    """NADL: a statement with its length field (for body, its arguments) made anew."""
+    n = len(body)
+    if n >= 0x8000:
+        raise Bad("a statement of %d bytes" % n)
+    return bytes([op]) + (bytes([n]) if n < 0x80 else bytes([0x80 | n >> 8, n & 0xFF])) + body
+
+
 def statement(d, i):
     """The end of the statement at i."""
     op = d[i]
+    if VARIANT == "nadl":
+        n, k = _length_field(d, i)
+        return i + 1 + k + n
     if op in NAMED:
         return _named(d, i)
     if op == 0x33:
@@ -326,7 +358,7 @@ def entries(d):
 def items(d, s, e):
     """As pc98tl/adl.py's: ("text", start, end), ("ctrl", start, end), ("end", s, e)."""
     out = []
-    j = s + (5 if d[s] == 0x71 else 1)
+    j = arg(d, s) + (4 if d[s] == 0x71 else 0)
     while j < e:
         b = d[j]
         if b == TEXT_MARK:
@@ -355,7 +387,11 @@ def rebuild(d, toks, new):
             pieces.append((pos, s, len(out), True))
             out += d[pos:s]
         pieces.append((s, e, len(out), s not in new))
-        out += new.get(s, d[s:e])
+        b = new.get(s, d[s:e])
+        if VARIANT == "nadl" and s in new and b:
+            # (the statement's length field made anew for its arguments as rebuilt)
+            b = _with_length(b[0], b[arg(d, s) - s:])
+        out += b
         pos = e
     pieces.append((pos, len(d), len(out), True))
     out += d[pos:]
@@ -374,14 +410,15 @@ def rebuild(d, toks, new):
 
 def window(d, s):
     """(x, the text's width in dots) of 82h at s."""
-    x, _y, w, _h = struct.unpack_from(">4H", d, s + 1)
+    x, _y, w, _h = struct.unpack_from(">4H", d, arg(d, s))
     return x, w - 32
 
 
 def set_window_width(d, s, width):
     """82h at s with its text widened to width dots."""
-    x, y, _w, h = struct.unpack_from(">4H", d, s + 1)
-    return d[s:s + 1] + struct.pack(">4H", x, y, width + 32, h) + d[s + 9:s + 10]
+    a = arg(d, s)
+    x, y, _w, h = struct.unpack_from(">4H", d, a)
+    return d[s:a] + struct.pack(">4H", x, y, width + 32, h) + d[a + 8:a + 9]
 
 
 # ---- ADL5.EXE

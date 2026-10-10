@@ -360,9 +360,8 @@ def table_read(raw):
     head, dec = _decode(raw)
     end = dec.index(0x1A)
     parts = dec[:end].split(b"\x00")
-    if parts[-1] != b"":
-        raise Bad("the table does not end in NUL")
-    return parts[:-1], (head, dec[end:])
+    # (bytes after the last NUL before the end, Doki Doki Disk Vol. 8's KOM_08's space: kept with the end)
+    return parts[:-1], (head, parts[-1] + dec[end:])
 
 
 def table_write(parts, tail):
