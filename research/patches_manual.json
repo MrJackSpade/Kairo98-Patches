@@ -1497,5 +1497,18 @@
    "url": "https://vndb.org/v17596",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/Metal Eye 2": [
+  {
+   "label": "This repo: games/metal_eye_2 (patcher working, machine translation in progress)",
+   "url": "../games/metal_eye_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v7834",
+   "url": "https://vndb.org/v7834",
+   "source": "VNDB"
+  }
  ]
 }

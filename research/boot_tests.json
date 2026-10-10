@@ -2723,5 +2723,23 @@
    "A data collection (DOKI/JOSHI started in a test image)",
    "OK: its opening, story pages and client scene as in the main game"
   ]
+ ],
+ "metal_eye_2": [
+  [
+   "The hard-disk release; the logos, the opening and the title",
+   "OK: boots; the opening's lines as half-width filler"
+  ],
+  [
+   "The start menu (load data 1-9, start from the beginning)",
+   "OK: items as full-width filler, picked with the arrow keys"
+  ],
+  [
+   "The prologue (the floating city)",
+   "OK: filler wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "Status screens, battles, the Special Disk (separate floppies, not in the hard-disk release), endings",
+   "not yet seen"
+  ]
  ]
 }
