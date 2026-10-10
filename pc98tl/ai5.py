@@ -304,21 +304,83 @@ def _apply(state, extra):
                 state[idx + k] = v
 
 
-def windows(d, toks):
-    """{token index of each character: (left, top, right, bottom, line
-    height)} of the text window it is drawn in: the pokes before it in the
-    file, with a subroutine's (12 n defines it, the block after it) where
-    13 n calls it, and a subroutine's own kept to its body (None where a
-    value is not known)."""
+def _assign(d, s):
+    """(variable, value) of a statement "0A var value 03" with numbers
+    for both (the script picking one of a subroutine's text windows),
+    else None."""
+    try:
+        i, var = _num(d, s + 1)
+        i, val = _num(d, i)
+    except (Bad, IndexError):
+        return None
+    return (var, val) if var is not None and val is not None and d[i] == 3 else None
+
+
+def _test(d, s):
+    """(variable, value) of an if "0F 2D var value 27 03" (the variable
+    equals the number), else None."""
+    if d[s + 1] != 0x2D:
+        return None
+    try:
+        i, var = _num(d, s + 2)
+        i, val = _num(d, i)
+    except (Bad, IndexError):
+        return None
+    return (var, val) if var is not None and val is not None and d[i:i + 2] == b"\x27\x03" else None
+
+
+def subroutines(d, toks):
+    """({number: [(condition, poke)]}, [(body start, end)]) of the
+    subroutines a script defines (12 n, the block after it): their pokes,
+    each with the (variable, value) its "if variable = value" block asks
+    for, or None."""
     subs, bodies = {}, []
     for n, (kind, s, e, extra) in enumerate(toks):
         if kind == "op" and extra == 0x12 and n + 1 < len(toks) and toks[n + 1][0] == "struct":
             start = toks[n + 1][1]
             end = _block_end(d, start)
             bodies.append((start, end))
-            subs[_number(d, s + 1)] = [t[3] for t in toks if t[0] == "poke" and start <= t[1] < end]
+            conds = []
+            for x in range(n + 1, len(toks)):
+                k2, s2, _e2, _x2 = toks[x]
+                if s2 >= end:
+                    break
+                if k2 == "op" and d[s2] == 0x0F:
+                    c = _test(d, s2)
+                    blk = next((t[1] for t in toks[x + 1:x + 3] if t[0] == "struct" and d[t[1]] == 1), None)
+                    if c is not None and blk is not None:
+                        conds.append((blk, _block_end(d, blk), c))
+            subs[_number(d, s + 1)] = [
+                (next((c for a, b, c in conds if a <= t[1] < b), None), t[3])
+                for t in toks if t[0] == "poke" and start <= t[1] < end]
+    return subs, bodies
+
+
+# subroutines the start script defines, in force in the scripts loaded after it ({number: pokes})
+SHARED = {}
+
+
+def _width(poke):
+    idx, vals = poke
+    if idx == WINDOW[0] and len(vals) >= 3 and None not in (vals[0], vals[2]):
+        return vals[2] - vals[0]
+    return None
+
+
+def windows(d, toks):
+    """{token index of each character: (left, top, right, bottom, line
+    height)} of the text window it is drawn in: the pokes before it in the
+    file, with a subroutine's (12 n defines it, the block after it; or the
+    start script's, SHARED) where 13 n calls it, and a subroutine's own kept
+    to its body (None where a value is not known).  A subroutine that picks
+    its window by a variable (if variable = value) takes the window the
+    caller's last "0A variable value" picks, or, the value not known, the
+    narrowest of them."""
+    own, bodies = subroutines(d, toks)
+    subs = {**SHARED, **own}
     state = {k: None for k in WINDOW + (FONT,)}
     saved, body_end = None, None
+    assigned = {}
     out = {}
     for n, (kind, s, e, extra) in enumerate(toks):
         if body_end is not None and s >= body_end:
@@ -330,12 +392,36 @@ def windows(d, toks):
                     break
         if kind == "poke":
             _apply(state, extra)
+        elif kind == "op" and d[s] == 0x0A:
+            a = _assign(d, s)
+            if a is not None:
+                assigned[a[0]] = a[1]
         elif kind == "op" and extra == 0x13:
-            for p in subs.get(_number(d, s + 1), ()):
-                _apply(state, p)
+            pokes = subs.get(_number(d, s + 1), ())
+            pick = {}
+            for var in {c[0] for c, _p in pokes if c is not None}:
+                if var in assigned:
+                    pick[var] = assigned[var]
+                else:
+                    known = [(c[1], _width(p)) for c, p in pokes
+                             if c is not None and c[0] == var and _width(p) is not None]
+                    if known:
+                        pick[var] = min(known, key=lambda x: x[1])[0]
+            for c, p in pokes:
+                if c is None or pick.get(c[0]) == c[1]:
+                    _apply(state, p)
         elif kind == "ch":
             out[n] = tuple(state[k] for k in WINDOW) + ((state[FONT] or 0x210) & 0xFF,)
     return out
+
+
+def set_shared(store):
+    """SHARED from the start script of the game's scripts (a Scripts)."""
+    SHARED.clear()
+    for name, path in store.items:
+        if name.split("/")[-1].upper() == "START.MES":
+            d = store.read(path)
+            SHARED.update(subroutines(d, tokenize(d))[0])
 
 
 # ---- English
@@ -783,7 +869,38 @@ class Scripts:
             self.vol.write(d + "/" + name, self.arcs[name].rebuilt(files))
 
 
-PREFIX = {"msg": "m", "item": "i", "label": "l"}
+PREFIX = {"msg": "m", "item": "i", "label": "l", "record": "r"}
+
+
+def records(data, spec):
+    """[(start, size, text)] of the names in a data file of fixed records
+    (game.json "records": [{"file", "first", "stride", "size"}]: a table
+    the engine reads names from, such as the monsters of a battle module):
+    each record's name field (size bytes from first + n * stride) that holds
+    Shift-JIS text ended by a NUL."""
+    out = []
+    at = spec["first"]
+    while at + spec["size"] <= len(data):
+        field = data[at:at + spec["size"]]
+        end = field.find(b"\0")
+        if end > 0:
+            try:
+                text = field[:end].decode("cp932")
+            except UnicodeDecodeError:
+                text = ""
+            if text and all(ord(c) > 0x7F for c in text):
+                out.append((at, spec["size"], text))
+        at += spec["stride"]
+    return out
+
+
+def record_bytes(text, size):
+    """A record's name field: the English in full-width letters (the
+    engine draws these names from Shift-JIS), cut to whole letters with
+    room for its NUL, NULs after it."""
+    from .adv98v_tl import _fullwidth
+    enc = _fullwidth(" ".join(text.split("\n")), None)[:(size - 1) // 2 * 2]
+    return enc.ljust(size, b"\0")
 
 
 def run_extract(here, src):
@@ -796,6 +913,7 @@ def run_extract(here, src):
     vol = img.volumes[0]
     merged, order = {}, []
     store = Scripts(vol, cfg2)
+    set_shared(store)
     for name, path in store.items:
         d = store.read(path)
         toks = tokenize(d)
@@ -816,6 +934,17 @@ def run_extract(here, src):
                 e["note"] = "; ".join("{X%d}: %s (the script's subroutine %d)" % (x, notes.get(x) or "a subroutine call", x)
                                       for x in used)
             merged[key] = e
+            order.append(key)
+    for spec in cfg.get("records", []):
+        for at, size, text in records(vol.read(cfg2["game_dir"] + "/" + spec["file"]), spec):
+            key = ("record", text)
+            ref = "%s:%04x" % (spec["file"], at)
+            if key in merged:
+                merged[key]["refs"].append(ref)
+                merged[key]["max_cells"] = min(merged[key]["max_cells"], (size - 1) // 2)
+                continue
+            merged[key] = {"kind": "record", "jp": text, "en": "", "refs": [ref],
+                           "max_cells": (size - 1) // 2, "note": spec.get("note", "")}
             order.append(key)
     counts, strings = {}, []
     for key in order:
@@ -877,7 +1006,7 @@ def run_patch(here, src, dst, mode="en"):
     by_ref, ids = {}, {}
     for e in doc["strings"]:
         if mode == "pseudo":
-            text = pseudo_text(e)
+            text = pseudo_text(e) if e["kind"] != "record" else pseudo(e["id"], e["max_cells"])[:e["max_cells"]]
         else:
             text = e["en"]
         for r in e["refs"]:
@@ -887,6 +1016,7 @@ def run_patch(here, src, dst, mode="en"):
                 by_ref[(f, int(a, 16))] = text
     warn, done = [], 0
     store = Scripts(vol, cfg2)
+    set_shared(store)
     for name, path in store.items:
         d = store.read(path)
         values = {a: t for (f, a), t in by_ref.items() if f == name}
@@ -920,6 +1050,18 @@ def run_patch(here, src, dst, mode="en"):
             store.write(path, new)
             done += 1
     store.commit()
+    for spec in cfg.get("records", []):
+        path = cfg2["game_dir"] + "/" + spec["file"]
+        data = bytearray(vol.read(path))
+        for at, size, _text in records(bytes(data), spec):
+            text = by_ref.get((spec["file"], at))
+            if text:
+                if len(text) > (size - 1) // 2:
+                    warn.append("%s: %d letters, the field has room for %d" % (
+                        ids[(spec["file"], at)], len(text), (size - 1) // 2))
+                data[at:at + size] = record_bytes(text, size)
+        if bytes(data) != vol.read(path):
+            vol.write(path, bytes(data))
     for w in dict.fromkeys(warn):
         print("warning:", w)
     img.save(dst)

@@ -76242,15 +76242,27 @@
      "path": "Tenshin Ranma\\Tenshin Ranma [HD]\\Tenshin Ranma.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshin_ranma (patcher working, machine translation in progress)",
+     "url": "../games/tenshin_ranma/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7824",
+     "url": "https://vndb.org/v7824",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15685 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Words Worth",

@@ -1510,5 +1510,18 @@
    "url": "https://vndb.org/v7834",
    "source": "VNDB"
   }
+ ],
+ "elf.zip/Tenshin Ranma": [
+  {
+   "label": "This repo: games/tenshin_ranma (patcher working, machine translation in progress)",
+   "url": "../games/tenshin_ranma/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v7824",
+   "url": "https://vndb.org/v7824",
+   "source": "VNDB"
+  }
  ]
 }

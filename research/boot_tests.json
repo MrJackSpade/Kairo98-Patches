@@ -2741,5 +2741,31 @@
    "Status screens, battles, the Special Disk (separate floppies, not in the hard-disk release), endings",
    "not yet seen"
   ]
+ ],
+ "tenshin_ranma": [
+  [
+   "The hard-disk release; the title and its menu",
+   "OK: boots; the menu's items as full-width filler, cut to their boxes"
+  ],
+  [
+   "Name entry (a new game)",
+   "OK: its prompt and buttons as half-width filler in their slots, the character grid stays Japanese, the default name is taken; the one-cell closing bracket of the name field (m00007) with its 8-letter filler is drawn again at the screen's left edge"
+  ],
+  [
+   "The opening scene",
+   "OK: the speaker's name (subroutines 16-18) before half-width filler, wrapped in the bottom window, pages waiting for a key"
+  ],
+  [
+   "Party talk in the dungeon (a shipped save loaded)",
+   "OK: filler wrapped in each speaker's box beside the portrait (the box the script picks by its variable)"
+  ],
+  [
+   "A battle (its one-line message box)",
+   "Not OK with the 2.5x filler: a message runs past the box and wraps onto the start of its own line, as the names and numbers the battle prints before it are not counted"
+  ],
+  [
+   "Monster names (SENTO.COM) in battle, shops, the ending and the staff roll",
+   "not yet seen"
+  ]
  ]
 }
