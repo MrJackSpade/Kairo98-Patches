@@ -62214,15 +62214,27 @@
      "path": "DOR Special Edition '93\\DOR Special Edition '93 [FD]\\DOR Special Edition '93 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_special_edition_93 (patcher working, machine translation in progress)",
+     "url": "../games/dor_special_edition_93/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18196",
+     "url": "https://vndb.org/v18196",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42261 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Special Edition Sakigake",

@@ -10479,7 +10479,7 @@
    "refs": [
     "KOM_F0.EDT:0"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00002",
@@ -10489,7 +10489,7 @@
    "refs": [
     "KOM_F0.EDT:1"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00003",
@@ -10499,7 +10499,7 @@
    "refs": [
     "KOM_F0.EDT:2"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00004",
@@ -10509,7 +10509,7 @@
    "refs": [
     "KOM_F0.EDT:3"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00005",
@@ -10519,7 +10519,7 @@
    "refs": [
     "KOM_F0.EDT:4"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00006",
@@ -10529,7 +10529,7 @@
    "refs": [
     "KOM_F0.EDT:5"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00007",
@@ -10539,7 +10539,7 @@
    "refs": [
     "KOM_F0.EDT:6"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00008",
@@ -10549,7 +10549,7 @@
    "refs": [
     "KOM_F0.EDT:7"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00009",
@@ -10559,7 +10559,7 @@
    "refs": [
     "KOM_F0.EDT:8"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "c00010",
@@ -10569,7 +10569,7 @@
    "refs": [
     "KOM_F0.EDT:9"
    ],
-   "max_cells": 4
+   "max_cells": 6
   },
   {
    "id": "n00001",
@@ -10579,7 +10579,7 @@
    "refs": [
     "NAME_10.EDT:0"
    ],
-   "max_cells": 6
+   "max_cells": 20
   },
   {
    "id": "n00002",
@@ -10719,7 +10719,7 @@
    "refs": [
     "NAME_F5.EDT:0"
    ],
-   "max_cells": 6
+   "max_cells": 10
   },
   {
    "id": "n00016",
@@ -10729,7 +10729,7 @@
    "refs": [
     "NAME_F6.EDT:0"
    ],
-   "max_cells": 6
+   "max_cells": 12
   },
   {
    "id": "n00017",
@@ -10739,7 +10739,7 @@
    "refs": [
     "NAME_F6.EDT:1"
    ],
-   "max_cells": 6
+   "max_cells": 12
   },
   {
    "id": "n00018",
@@ -10749,7 +10749,7 @@
    "refs": [
     "NAME_F8.EDT:0"
    ],
-   "max_cells": 6
+   "max_cells": 16
   },
   {
    "id": "e00001",

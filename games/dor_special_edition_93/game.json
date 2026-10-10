@@ -1,0 +1,14 @@
+{
+ "title": "DOR Special Edition '93",
+ "key": "DO.zip/DOR Special Edition '93",
+ "image": "DOR Special Edition '93\\DOR Special Edition '93 (FD version) [HD]\\DOR Special Edition '93 (FD version).hdi",
+ "encoding": "adl",
+ "version": "adl5",
+ "program": "ADL5.EXE",
+ "game_dir": "DORSE1",
+ "program_files": [
+  "PCMSET2.EXE"
+ ],
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:enter,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 8
+}

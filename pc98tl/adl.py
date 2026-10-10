@@ -46,7 +46,9 @@ The patch (patch_exe, on ADL.EXE; it is not packed):
   (707h and up, past the file's end), whose every use is a relocated
   constant (the relocations are all in the code segment); the file's size
   in the header grows with it, and the memory DOS gives past the file's
-  end (the header's minimum) is the same.
+  end (the header's minimum) is the same.  The room starts with a jump
+  over itself, for a routine that runs on past the code segment's end into
+  the bytes that moved.
 * In a run of text, 20h switches to half-width letters (until 20h again or
   the run's end): 21h-7Eh are ASCII, 7Fh a space and 0Ah a new line, each
   one cell (8 dots); bytes of 80h and up are still Shift-JIS.  The run's
@@ -412,6 +414,9 @@ NAME_SIG = re.compile(rb"\x8a\xf0\xac\x8a\xd0\x26\x8a\x0e..", re.S)
 GRAPH_SIG = re.compile(rb"\x3c\x0d\x74\x08\xac\x8a\xd0\xe8(..)\xeb\xe6", re.S)
 
 HELPER = """
+fallthrough:
+    JMPN {after}
+
 text:
     mov dh, byte ptr es:[si]
     inc si
@@ -728,7 +733,7 @@ def patch_exe(exe):
                         clear=hex(clear), nameloop=hex(nameloop), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
                         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), ank=hex(flags[0]), dirty=hex(flags[1]),
                         x=hex(var_x), y=hex(var_y), color=hex(var_color), left=hex(var_left), top=hex(var_top),
-                        right=hex(var_right), bottom=hex(var_bottom))
+                        right=hex(var_right), bottom=hex(var_bottom), after=hex(at + ROOM * 16))
     code, labels = _asm16(src, helper_at, ("text", "name", "graph") + (("waitkey", "clearwin", "newline")
                                                                         if override else ()))
     if len(code) > ROOM * 16 - 2:

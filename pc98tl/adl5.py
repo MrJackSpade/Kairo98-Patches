@@ -34,7 +34,10 @@ the GRCG (16 or 32 dots a character, bold or not).
 The patch (patch_exe, on ADL5.EXE; it is not packed):
 
 * The helper's room: ROOM paragraphs put in at the end of the code
-  segment, the segments after it moved up (as pc98tl/adl.py).
+  segment, the segments after it moved up (as pc98tl/adl.py).  The room
+  starts with a jump over itself: a routine at the code segment's end may
+  run on past it (DOR Special Edition '93's last routine ends 13 bytes
+  into the next segment), and goes on where its bytes moved.
 * In a run of text, 20h switches to half-width letters (until 20h again or
   the run's end): 21h-7Eh are ASCII, 7Fh a space and 0Ah a new line, each
   drawn 8 dots wide from the BIOS 8x16 font in the window's colour (bold
@@ -380,6 +383,9 @@ BOLD_SIG = re.compile(rb"\xac\x8a\xe0\xac\xf6\x06(..)\x01\x74\x06\x8b\xd8\xd1\xe
 GRAPH_SIG = re.compile(rb"\x3c\x0d\x74\x08\xac\x8a\xd0\xe8(..)\xeb\xe6", re.S)
 
 HELPER = """
+fallthrough:
+    JMPN {after}
+
 runstart:
     mov byte ptr cs:[{ank}], 0
     mov byte ptr cs:[{word}], 1
@@ -667,7 +673,7 @@ def patch_exe(exe, name="ADL5.EXE"):
         fast=hex(fast), skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
         advance=hex(advance), glyph=hex(glyph), glyph2=hex(glyph + 2), color=hex(color), bold=hex(bold),
         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
-        extra=extra, dseg_delta=hex(dseg_delta), bottom=hex(bottom))
+        extra=extra, dseg_delta=hex(dseg_delta), bottom=hex(bottom), after=hex(at + ROOM * 16))
     code, labels = _asm16(src, at, ("runstart", "text", "graph"))
     if len(code) > ROOM * 16 - 0x14:
         raise SystemExit("%s: the helper is %d bytes, the room %d" % (name, len(code), ROOM * 16 - 0x14))
@@ -746,6 +752,9 @@ def program_strings(exe):
 # ---- a helper program with the same graphics drawer (PCMSET2.EXE, the voice speed setting)
 
 GRAPH_HELPER = """
+fallthrough:
+    JMPN {after}
+
 graph:
     cmp al, 0x80
     jb g1
@@ -827,7 +836,7 @@ def patch_graph(exe, name):
     glyph = at + GRAPH_ROOM * 16 - 0x12
     src = GRAPH_HELPER.format(cgkanji=hex(cgkanji), graphloop=hex(graphloop), dseg_delta=hex(data_seg + GRAPH_ROOM - code_seg),
                               glyph=hex(glyph), glyph2=hex(glyph + 2), bold=hex(bold), color=hex(color),
-                              grcg_on=hex(grcg_on), grcg_off=hex(grcg_off))
+                              grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), after=hex(at + GRAPH_ROOM * 16))
     code, labels = _asm16(src, at, ("graph",))
     if len(code) > GRAPH_ROOM * 16 - 0x12:
         raise SystemExit("%s: the helper is %d bytes, the room %d" % (name, len(code), GRAPH_ROOM * 16 - 0x12))

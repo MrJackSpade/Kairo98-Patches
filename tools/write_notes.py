@@ -1060,6 +1060,13 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def _cells_range(strings, kind):
+    cells = sorted({e["max_cells"] for e in strings if e["kind"] == kind})
+    if not cells:
+        return "none"
+    return "%d" % cells[0] if len(cells) == 1 else "%d to %d by table" % (cells[0], cells[-1])
+
+
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
     v98 = cfg.get("version") in ("adl98", "adl98s")
@@ -1093,8 +1100,8 @@ def adl5_engine(cfg, files, tables, prog):
             "helper measures it against the window's right edge and starts a new line when it would not "
             "fit (a space at a line's start is not drawn): the windows a script uses change as it calls "
             "and jumps, so the wrap is the program's, not the patcher's." % prog,
-            "* The speaker's name indents the text %d cells; the engine's new line (06) waits for a key "
-            "itself before it clears a full window." % cfg.get("name_cells", 10),
+            "* The speaker's name indents the text by its name table's slot; the engine's new line (06) "
+            "waits for a key itself before it clears a full window.",
             "* Speaker names, menu commands and the program's own strings take ASCII as well.",
             ] + (["* %s (run before the game) draws its lines with the same graphics drawer: it gets "
                   "the same half-width letters (a 256-byte helper, put in the same way), and its lines are "
@@ -1174,13 +1181,15 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
             "* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  "
             "Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script "
             "outgrows its segment is refused and names the script and its strings.",
-            ("* Speaker names (`n` ids): %d letters (the slot the script gives the table, 19h); the text "
-             "after them starts %d cells in.  Longer ones are cut and reported." % (name_cells, cfg.get("name_cells", 10))
+            ("* Speaker names (`n` ids): `max_cells` letters (%s, the slot the script gives the name's "
+             "table, 19h); the text after a name starts as many cells in as its table's slot.  Longer ones "
+             "are cut and reported." % _cells_range(strings, "name")
              if v5 else
              "* Speaker names (`n` ids): %d letters (the table's 9-byte slot), drawn before the colon; the "
              "text after them starts 10 cells in.  Longer ones are cut and reported." % 8),
-            ("* Menu commands (`c` ids): %d letters (the slot the script gives the table, 18h); longer "
-             "ones would run into the next command's, so they are cut and reported." % cmd_cells
+            ("* Menu commands (`c` ids): `max_cells` letters (%s: the slot the script gives the command's "
+             "table, 18h, within the menu boxes drawn while it is loaded); longer ones would run into the "
+             "next command's, so they are cut and reported." % _cells_range(strings, "cmd")
              if v5 else
              "* Menu commands (`c` ids): `max_cells` (%d) letters fit the menus' boxes; up to 16 are taken "
              "(the table's slot), longer ones are cut and reported." % cmd_cells)]

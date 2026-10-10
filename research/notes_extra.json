@@ -275,5 +275,11 @@
    "This ADL5.EXE is an earlier build than the other D.O. titles': its 23h, 24h, 53h and 54h statements are ADL3's shorter ones (pc98tl/adl5.py, variant adl5a).",
    "The --pseudo build cuts its filler to fit the 64 KB script segment: MOVE.EDT (62,868 bytes, 58,160 of them Japanese text) leaves 2,668 bytes for English beyond the Japanese, so its English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
   ]
+ },
+ "dor_special_edition_93": {
+  "remarks": [
+   "The game's last routine in ADL5.EXE's code segment runs 13 bytes on into the next segment; the helper's room, put in between them, starts with a jump over itself so that routine goes on where its bytes moved (without it the town map stayed black).",
+   "Its tables are named NAME_/NA_ (names) and KOM_/COM_ (commands); each table's `max_cells` is the slot the scripts give it (19h, 18h), and for commands also the menu boxes drawn while it is loaded."
+  ]
  }
 }

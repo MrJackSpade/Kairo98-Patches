@@ -28726,7 +28726,7 @@
    "refs": [
     "NAME_F1.EDT:7"
    ],
-   "max_cells": 10
+   "max_cells": 12
   },
   {
    "id": "n00022",
@@ -28745,7 +28745,7 @@
     "NAME_F1.EDT:16",
     "NAME_F1.EDT:17"
    ],
-   "max_cells": 10
+   "max_cells": 12
   },
   {
    "id": "n00023",
@@ -28773,7 +28773,7 @@
     "NAME_F2.EDT:17",
     "NAME_F2.EDT:18"
    ],
-   "max_cells": 10
+   "max_cells": 14
   },
   {
    "id": "e00001",

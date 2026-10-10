@@ -15,10 +15,13 @@ Strings:
   a colour change between words), unless one is the target of an entry.
   The controls between its runs are {X1}, {X2}... (each kept once, in any
   order; the note says what each does).
-* "name": a name table's names (NAME_Fn.EDT: 8 letters, the 9-byte slot;
-  ADL5: twice the length 19h gives, its slot one more).
-* "cmd": a command table's items (KOM_Fn.EDT: 16 letters, the 17-byte slot,
-  ADL5: twice the length 18h gives; the menus' save/load and numbered items).
+* "name": a name table's names (NAME_Fn.EDT, NA_*.EDT: 8 letters, the 9-byte
+  slot; ADL5: twice the length the 19h loading the table gives, its slot one
+  more).
+* "cmd": a command table's items (KOM_Fn.EDT, COM_*.EDT: 16 letters, the
+  17-byte slot; ADL5: twice the length the 18h loading the table gives, and
+  within the menu boxes (12h) the scripts draw while it is loaded; the
+  menus' save/load and numbered items).
 * "engine": the program's own strings: ADL.EXE's save slots' names (16
   letters, the 17-byte slot); ADL5.EXE's messages (runs of text, each
   within the Japanese's bytes, a character the program rewrites (the drive
@@ -134,11 +137,23 @@ def _game_files(vol, cfg):
 def scripts(vol, cfg):
     """The game folder's scripts (*.EDT but the tables)."""
     return [n for n in _game_files(vol, cfg)
-            if n.upper().endswith(".EDT") and not re.match(r"(NAME|KOM)_", n.upper())]
+            if n.upper().endswith(".EDT") and not re.match(TABLE_RE, n.upper())]
+
+
+# (the tables: names (NAME_, DOR Special Edition '93's NA_) and commands (KOM_, its COM_))
+TABLE_RE = r"(NAME|NA|KOM|COM)_\w*\.EDT$"
 
 
 def tables(vol, cfg):
-    return [n for n in _game_files(vol, cfg) if re.match(r"(NAME|KOM)_\w*\.EDT$", n.upper())]
+    return [n for n in _game_files(vol, cfg) if re.match(TABLE_RE, n.upper())]
+
+
+def _table_kind(name, slots):
+    """"name" or "cmd": by the statement that loads the table (19h names, 18h commands), else by its
+    name."""
+    if name.upper() in slots:
+        return "name" if slots[name.upper()][0] == 0x19 else "cmd"
+    return "name" if name.upper().startswith("NA") else "cmd"
 
 
 def _program(vol, cfg):
@@ -523,6 +538,29 @@ def table_rooms(vol, cfg):
     return min(rooms[0x19] or [None]), min(rooms[0x18] or [None])
 
 
+def table_slots(vol, cfg):
+    """{TABLE.EDT: (19h or 18h, the letters its slot holds, the narrowest menu box (12h) a script
+    draws while the table is loaded, or None)} for ADL5's tables a script loads (the shortest slot any
+    load gives); {} for ADL."""
+    if F is not adl5:
+        return {}
+    out = {}
+    for name in scripts(vol, cfg):
+        how, d = _read_script(vol, cfg, name)
+        cur = None
+        for s, _e in F.tokenize(d):
+            if d[s] in (0x18, 0x19):
+                t = d[s + 2:d.index(0, s + 2)].decode("cp932", "replace").upper() + ".EDT"
+                op, room, box = out.get(t, (d[s], None, None))
+                out[t] = (op, min(x for x in (room, 2 * d[s + 1]) if x is not None), box)
+                if d[s] == 0x18:
+                    cur = t
+            elif d[s] == 0x12 and cur:
+                op, room, box = out[cur]
+                out[cur] = (op, room, min(x for x in (box, _box_cells(d, s)) if x is not None))
+    return out
+
+
 def _table_strings(raw):
     parts, _tail = adl.table_read(raw)
     return [p.decode("cp932", "replace") for p in parts]
@@ -607,13 +645,19 @@ def run_extract(here, src):
                 if d[s] == 0x71:
                     cells = (SCREEN - struct.unpack_from(">H", d, s + 1)[0]) // 8
                 add("msg", jp, "%s:%04x" % (name, s), cells, note)
+    slots = table_slots(vol, cfg)
     for name in tables(vol, cfg):
-        kind = "name" if name.upper().startswith("NAME") else "cmd"
+        kind = _table_kind(name, slots)
         if (name_room if kind == "name" else cmd_room) is None:
             continue
+        if name.upper() in slots:
+            _op, room, box = slots[name.upper()]
+            cells = room if kind == "name" else min(room, box or menu_cells)
+        else:
+            cells = name_room if kind == "name" else menu_cells
         for i, jp in enumerate(_table_strings(_file_read(vol, cfg, name))):
             if jp.replace("　", "").strip():
-                add(kind, jp, "%s:%d" % (name, i), name_room if kind == "name" else menu_cells)
+                add(kind, jp, "%s:%d" % (name, i), cells)
     prog = cfg.get("program", "ADL.EXE")
     for s, e, kind, fixed, jp in _program_runs(exe):
         if kind == "slot":
@@ -792,9 +836,13 @@ def run_patch(here, src, dst, mode="en"):
         _file_write(vol, cfg, name, F.encode(how, new))
         done += 1
     rooms = table_rooms(vol, cfg)
+    slots = table_slots(vol, cfg)
     for name in tables(vol, cfg):
         parts, tail = adl.table_read(_file_read(vol, cfg, name))
-        room = rooms[0] if name.upper().startswith("NAME") else rooms[1]
+        kind = _table_kind(name, slots)
+        room = rooms[0] if kind == "name" else rooms[1]
+        if room is not None and name.upper() in slots:
+            room = slots[name.upper()][1]
         if room is None:
             continue
         changed = False
