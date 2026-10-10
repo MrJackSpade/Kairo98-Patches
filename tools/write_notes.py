@@ -1168,9 +1168,12 @@ def chan_notes(name, cfg, doc, adult, clear, tests, extra):
             "profiles) the line's room is taken one for it, a word that would not fit what is left of the "
             "line starts a new line (the window's own, paging at its last row), and a space at a line's "
             "start is not drawn; the string routine (the choices, the menus) draws it the same way." % prog,
-            "* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew); "
-            "past the program's five reads (143360 bytes) the last read is made 8000h bytes and the stack "
-            "and the memory the program asks for move up with it, 163840 bytes in all.",
+            ("* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew); "
+             "past the program's five reads (143360 bytes) the last read is made 8000h bytes and the stack "
+             "and the memory the program asks for move up with it, 163840 bytes in all."
+             if cfg.get("qdat_max", 163840) > cfg.get("qdat_read", 143360) else
+             "* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew), "
+             "within the program's reads (%d bytes)." % cfg.get("qdat_max")),
             "* The profiles are rebuilt as one block in the room the Japanese took, their table's offsets "
             "anew; the program's other strings are written in their own bytes."]
     out += ["", "## Script", "",
@@ -1185,9 +1188,9 @@ def chan_notes(name, cfg, doc, adult, clear, tests, extra):
             "another character is drawn full-width when Shift-JIS has it (two cells), else written as `?`.",
             "* Quiz choices (`c` ids): one line each at its place, `max_cells` letters to the screen's edge; "
             "a new line is written as a space.",
-            "* `QDAT` with its English may take 163840 bytes (now %s with the Japanese): each English letter "
-            "is one byte, a Japanese character two; a member (100 questions) may take 32 KB.  A build "
-            "past either is refused." % cfg.get("qdat_size", "139760"),
+            "* `QDAT` with its English may take %s bytes (now %s with the Japanese): each English letter "
+            "is one byte, a Japanese character two; a member (its questions) may take 32 KB.  A build "
+            "past either is refused." % (cfg.get("qdat_max", 163840), cfg.get("qdat_size", "139760")),
             "* The profiles share the bytes the Japanese took (%s); a build past it is refused and names "
             "them." % cfg.get("profile_room", "their room"),
             "* Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); longer ones "

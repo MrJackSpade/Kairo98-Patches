@@ -10,5 +10,7 @@
  ],
  "qdat_size": 71632,
  "profile_room": 1217,
- "boot_steps": "40:shot,5:shot,5:shot,1:mouse=-40;100,1:mouse=20;12,1:shot,1:lclick,4:shot"
+ "boot_steps": "40:shot,5:shot,5:shot,1:mouse=-40;100,1:mouse=20;12,1:shot,1:lclick,4:shot",
+ "qdat_read": 98304,
+ "qdat_max": 98304
 }

@@ -254,9 +254,10 @@ def patch_exe(exe, name="CHAN.EXE", qdat_size=None):
     for lo, n in ((d0, 3), (dec.start(), 8), (copy + 1, 4), (s0, 5)):
         if any(cs0 + lo - 1 <= f < cs0 + lo + n for f in fixups):
             raise SystemExit("%s: a segment fixup falls in a patched range" % name)
-    if qdat_size and qdat_size > QDAT_MAX - 0x8000 + 0x3000:
-        if qdat_size > QDAT_MAX:
-            raise SystemExit("QDAT: %d bytes, the program reads 163840" % qdat_size)
+    room, most = qdat_room(exe) if qdat_size else (0, 0)
+    if qdat_size and qdat_size > room:
+        if qdat_size > most:
+            raise SystemExit("QDAT: %d bytes, the program reads %d" % (qdat_size, most))
         lr = _one(seg, LAST_READ_SIG, "quiz's last read", name)
         extra = 0x500
         seg[lr.start() + 3:lr.start() + 6] = b"\xb9\x00\x80"
@@ -427,3 +428,39 @@ def console_strings(exe):
         if len(SJIS_CHAR.findall(m.group())) >= 2:
             out.append((m.start(), m.end()))
     return out
+
+
+def qdat_room(exe):
+    """(the bytes the program reads QDAT into, the most the patch can make it read): the loader's reads
+    (from where it writes the name "qdat": each call to the read with cx, the last cx set), four of
+    8000h and one of 3000h in Moonlight Chan Rin Shan (the last made 8000h when needed: QDAT_MAX),
+    three of 8000h in Yuu Disk Vol. 7."""
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    hdr, ds = data_segment(exe)
+    img = exe[hdr:hdr + ds * 16]
+    at = img.find(b"\xb8\x71\x64\xab\xb8\x61\x74\xab")
+    if at < 0:
+        raise SystemExit("CHAN.EXE: the quiz's loader is not found")
+    # (open, then read with cx 8000h; then each piece: its address set, read again; then the close)
+    cx, read, other, total = 0, None, None, 0
+    for i in Cs(CS_ARCH_X86, CS_MODE_16).disasm(img[at:at + 0x80], at):
+        if i.mnemonic == "mov" and i.op_str.startswith("cx, "):
+            cx = int(i.op_str[4:], 16)
+        if i.mnemonic != "call":
+            continue
+        t = int(i.op_str, 16)
+        if read is None:
+            if cx == 0x8000:
+                read = t
+                total = cx
+            continue
+        if t == read:
+            total += cx
+        elif other is None:
+            other = t
+        elif t != other:
+            break
+    if not total:
+        raise SystemExit("CHAN.EXE: the quiz's reads are not found")
+    grow = QDAT_MAX if total == 4 * 0x8000 + 0x3000 and LAST_READ_SIG.search(img) else total
+    return total, grow

@@ -12,7 +12,7 @@ D.O.'s **CHAN** engine (`CHAN.EXE`), a mahjong game with a quiz: the quiz in `QD
 The patch works on the game's hard-disk release (the game in `MOONCB/`).
 
 * `CHAN.EXE` gets a helper put in at the end of its code segment (the segments after it move up).  A byte under 80h is a half-width letter: drawn 8 dots wide from the BIOS 8x16 font, bold as the program's characters, in the caller's colour.  In the text window (the questions, the profiles) the line's room is taken one for it, a word that would not fit what is left of the line starts a new line (the window's own, paging at its last row), and a space at a line's start is not drawn; the string routine (the choices, the menus) draws it the same way.
-* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew); past the program's five reads (143360 bytes) the last read is made 8000h bytes and the stack and the memory the program asks for move up with it, 163840 bytes in all.
+* `QDAT` is rebuilt with the English (each member padded to a paragraph, the directory anew), within the program's reads (98304 bytes).
 * The profiles are rebuilt as one block in the room the Japanese took, their table's offsets anew; the program's other strings are written in their own bytes.
 
 ## Script
@@ -25,7 +25,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 * Messages (`m` ids): a quiz question in the quiz window (`max_cells` 50 letters a line, 3 lines, then a key wait and the window scrolled); a profile in its window (38 letters a line); `\n` starts a new line.  The program wraps between words.  ASCII is drawn half-width; another character is drawn full-width when Shift-JIS has it (two cells), else written as `?`.
 * Quiz choices (`c` ids): one line each at its place, `max_cells` letters to the screen's edge; a new line is written as a space.
-* `QDAT` with its English may take 163840 bytes (now 71632 with the Japanese): each English letter is one byte, a Japanese character two; a member (100 questions) may take 32 KB.  A build past either is refused.
+* `QDAT` with its English may take 98304 bytes (now 71632 with the Japanese): each English letter is one byte, a Japanese character two; a member (its questions) may take 32 KB.  A build past either is refused.
 * The profiles share the bytes the Japanese took (1217); a build past it is refused and names them.
 * Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); longer ones are cut and reported.
 

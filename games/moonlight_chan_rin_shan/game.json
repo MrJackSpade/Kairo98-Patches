@@ -7,5 +7,7 @@
  "game_dir": "MOON",
  "boot_steps": "40:shot,1:mouse=-40;100,1:mouse=20;12,1:shot,1:lclick,4:shot",
  "qdat_size": 139760,
- "profile_room": 1382
+ "profile_room": 1382,
+ "qdat_read": 143360,
+ "qdat_max": 163840
 }

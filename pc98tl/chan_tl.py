@@ -186,6 +186,7 @@ def run_patch(here, src, dst, mode="en"):
     warn = []
     # (the quiz: each member rebuilt with its English; past the room, refused, or the filler cut)
     members, hs = chan.qdat_read(vol.read(_path(cfg, "QDAT")))
+    _room, most = chan.qdat_room(exe)
     ratio = 1.0
     while True:
         out_members = []
@@ -201,10 +202,10 @@ def run_patch(here, src, dst, mode="en"):
                 ents.append((ans, new))
             out_members.append((name, chan.member_write(ents)))
         qdat = chan.qdat_write(out_members, hs)
-        if len(qdat) <= chan.QDAT_MAX:
+        if len(qdat) <= most:
             break
         if mode != "pseudo":
-            raise SystemExit("QDAT: %d bytes, the program reads 163840; shorten the quiz's strings" % len(qdat))
+            raise SystemExit("QDAT: %d bytes, the program reads %d; shorten the quiz's strings" % (len(qdat), most))
         ratio *= 0.9
     if ratio < 1.0:
         warn.append("QDAT: the filler was cut to %d%% to fit the program's reads" % (ratio * 100))

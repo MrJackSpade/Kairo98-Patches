@@ -25,7 +25,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 * Messages (`m` ids): a quiz question in the quiz window (`max_cells` 50 letters a line, 3 lines, then a key wait and the window scrolled); a profile in its window (38 letters a line); `\n` starts a new line.  The program wraps between words.  ASCII is drawn half-width; another character is drawn full-width when Shift-JIS has it (two cells), else written as `?`.
 * Quiz choices (`c` ids): one line each at its place, `max_cells` letters to the screen's edge; a new line is written as a space.
-* `QDAT` with its English may take 163840 bytes (now 139760 with the Japanese): each English letter is one byte, a Japanese character two; a member (100 questions) may take 32 KB.  A build past either is refused.
+* `QDAT` with its English may take 163840 bytes (now 139760 with the Japanese): each English letter is one byte, a Japanese character two; a member (its questions) may take 32 KB.  A build past either is refused.
 * The profiles share the bytes the Japanese took (1382); a build past it is refused and names them.
 * Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); longer ones are cut and reported.
 
