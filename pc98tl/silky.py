@@ -155,7 +155,12 @@ class Archive:
         body = bytearray()
         start = 2 + 19 * len(self.entries)
         for name, kind, off, size in self.entries:
-            m = encode(changed[name]) if name in changed else self.raw[off:off + size]
+            if name in changed:
+                # (packed again where the member was packed; Fermion's are stored as they are)
+                packed = self.raw[off:off + 1] == b"\xff"
+                m = encode(changed[name]) if packed else changed[name]
+            else:
+                m = self.raw[off:off + size]
             if len(m) > 0xFFFF:
                 raise SystemExit("%s: %d bytes packed, an archive member holds 65535" % (name, len(m)))
             head += name.encode("ascii").ljust(12, b"\0") + struct.pack("<BHI", kind, len(m), start + len(body))
@@ -178,7 +183,7 @@ OPS = {
     0x4D: "L", 0x4E: "WL", 0x4F: "L", 0x50: "L", 0x51: "L", 0x52: "L", 0x53: "L", 0x54: "L",
     0x55: "L", 0x56: "", 0x57: "", 0x58: "L", 0x59: "L", 0x5A: "L", 0x5B: "L", 0x5C: "L",
     0x5D: "L", 0x5E: "L", 0x5F: "L", 0x62: "L", 0x63: "L", 0x64: "L", 0x65: "V", 0x66: "",
-    0x67: "L", 0x68: "VB", 0x69: "", 0x6A: "V", 0x6C: "L", 0x6D: "L", 0x6E: "L", 0x6F: "L",
+    0x67: "L", 0x68: "V", 0x69: "", 0x6A: "V", 0x6C: "L", 0x6D: "L", 0x6E: "L", 0x6F: "L",
     0x70: "", 0x72: "EvBEB", 0x73: "EvBEB", 0x74: "L", 0x75: "L", 0x76: "EEB", 0x77: "EEB",
     0x78: "L", 0x79: "EV", 0x7A: "L", 0x7B: "vBL", 0x7C: "", 0x7D: "L", 0x7E: "EvBEB",
     0x80: "", 0x81: "L", 0x82: "L", 0x83: "WWE", 0x84: "L", 0x85: "L",

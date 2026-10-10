@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-09 (`resear
 
 ## Engine
 
-Silky's (Elf's) **General Message system-1** (`SL.EXE`): 245 `*.MES` scripts with text, in the archives `DISKA`-`DISKG` (one per floppy), each compressed; `pc98tl/silky.py` documents the archive, the compression and the bytecode, and `pc98tl/silky_tl.py` the English.  Every script tokenizes from its bytecode's start to its end, every address in it lands on a statement, and each rebuilds byte for byte.
+Silky's (Elf's) **General Message system-1** (`SL.EXE`): 245 `*.MES` scripts with text, in the archives `DISKA`, `DISKB`, `DISKC`, `DISKD`, `DISKE`, `DISKF`, `DISKG` (one per floppy), each compressed; `pc98tl/silky.py` documents the archive, the compression and the bytecode, and `pc98tl/silky_tl.py` the English.  Every script tokenizes from its bytecode's start to its end, every address in it lands on a statement, and each rebuilds byte for byte.
 
 The floppies have no room for a longer script, so the patch lays the game out on a DOS hard-disk image the way its own installer does (every disk's files in `BIYO/`, started with `game`; one disk's `DISKNO` kept); the base image is the collection's `Naomi - Bishoujo-tachi no Yakata/Naomi - Bishoujo-tachi no Yakata [HD]/Naomi - Bishoujo-tachi no Yakata.hdi` with its own game removed.
 

@@ -13,7 +13,9 @@ words to the text window with 04 (a new line) where the next word would
 pass the window's right edge; the engine starts a new page by itself when
 a line would pass the window's bottom.  The window is the last one 46h
 set (its left and right columns: the first and third arguments), the
-game's message box (columns 17-62) before any.  The cursor's column goes
+game's message box before any (game.json "message_window": its left and
+right columns, set where the scripts cannot be read for it, by the system
+library; Be-Yond's 17-62 where it is not given).  The cursor's column goes
 on from one text statement to the next and back to 0 at a new line (04),
 at 49h, 4Fh and 50h (the box cleared) and at 46h.
 
@@ -56,6 +58,11 @@ PREFIX = {"msg": "m", "var": "v", "engine": "e"}
 
 
 def _install(cfg, src):
+    """(the image to patch, its config): the game's own hard-disk image, or
+    its floppies laid out on one (cfg "hdd")."""
+    if not cfg.get("hdd"):
+        from .disk import DiskImage
+        return DiskImage(src), cfg
     from .illusion_game import _hdd_install
     return _hdd_install(cfg, src)
 
@@ -69,9 +76,9 @@ def script_room(exe):
     return found.pop()
 
 
-def _sl_exe(vol, game_dir):
+def _sl_exe(vol, game_dir, program="SL.EXE"):
     from . import exepack
-    e = vol.read(game_dir + "/SL.EXE")
+    e = vol.read(game_dir + "/" + program)
     u = exepack.unpack(e) if exepack.is_packed(e) else e
     return u[struct.unpack_from("<H", u, 8)[0] * 16:]
 
@@ -288,8 +295,15 @@ def _write_program(vol, path, raw, data, hdr):
         vol.write(path, bytes(data))
 
 
+def _set_window(cfg):
+    """The message box before any 46h: game.json "message_window" [left, right], else Be-Yond's."""
+    global MAIN_WINDOW
+    MAIN_WINDOW = tuple(cfg.get("message_window", (17, 62)))
+
+
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    _set_window(cfg)
     img, cfg2 = _install(cfg, src)
     vol = img.volumes[0]
     merged, order = {}, []
@@ -345,12 +359,13 @@ def _cut(text, ratio):
 def run_patch(here, src, dst, mode="en"):
     from .text import pseudo
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    _set_window(cfg)
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
     img, cfg2 = _install(cfg, src)
     vol = img.volumes[0]
-    room = script_room(_sl_exe(vol, cfg2["game_dir"]))
+    room = script_room(_sl_exe(vol, cfg2["game_dir"], cfg.get("program", "SL.EXE")))
     by_ref, ids = {}, {}
     for e in doc["strings"]:
         if mode == "pseudo":

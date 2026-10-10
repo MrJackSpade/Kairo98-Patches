@@ -1648,5 +1648,18 @@
    "url": "https://vndb.org/v18230",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Fermion": [
+  {
+   "label": "This repo: games/fermion (patcher working, machine translation in progress)",
+   "url": "../games/fermion/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v5903",
+   "url": "https://vndb.org/v5903",
+   "source": "VNDB"
+  }
  ]
 }

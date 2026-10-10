@@ -984,7 +984,10 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "var": "string variable values", "engine": "program strings"}
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(".MES")})
-    h = cfg["hdd"]
+    h = cfg.get("hdd")
+    prog = cfg.get("program", "SL.EXE")
+    arcs = sorted({r.split("/")[0] for e in strings for r in e["refs"] if "/" in r.split(":")[0]})
+    left, right = cfg.get("message_window", (17, 62))
     out = ["# %s%s (Silky's)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -995,24 +998,29 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     out += ["", "## Engine", "",
-            "Silky's (Elf's) **General Message system-1** (`SL.EXE`): %d `*.MES` scripts with text, in "
-            "the archives `DISKA`-`DISKG` (one per floppy), each compressed; `pc98tl/silky.py` documents the "
-            "archive, the compression and the bytecode, and `pc98tl/silky_tl.py` the English.  Every script "
-            "tokenizes from its bytecode's start to its end, every address in it lands on a statement, and "
-            "each rebuilds byte for byte." % len(files), "",
-            "The floppies have no room for a longer script, so the patch lays the game out on a DOS "
-            "hard-disk image the way its own installer does (every disk's files in `%s/`, started with "
-            "`%s`; one disk's `DISKNO` kept); the base image is the collection's `%s` with its own game "
-            "removed." % (h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")), "",
+            "Silky's (Elf's) **General Message system-1** (`%s`): %d `*.MES` scripts with text, in "
+            "the archives %s (one per floppy)%s; `pc98tl/silky.py` documents the archive, the compression "
+            "and the bytecode, and `pc98tl/silky_tl.py` the English.  Every script tokenizes from its "
+            "bytecode's start to its end, every address in it lands on a statement, and each rebuilds byte "
+            "for byte." % (prog, len(files), ", ".join("`%s`" % a for a in arcs),
+                           ", each compressed" if h else ", stored as they are"), "",
+            ("The floppies have no room for a longer script, so the patch lays the game out on a DOS "
+             "hard-disk image the way its own installer does (every disk's files in `%s/`, started with "
+             "`%s`; one disk's `DISKNO` kept); the base image is the collection's `%s` with its own game "
+             "removed." % (h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")) if h else
+             "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"]), "",
             "* The scripts hold addresses (jumps, loops, cases, calls), so a rebuilt script has them moved "
             "with its statements.",
             "* English is a text statement in the engine's mode 2: single-byte letters, drawn half-width "
             "(8x16) by the engine itself, which the game uses for its half-width katakana sound effects; "
             "the program's drawing is not changed.",
             "* Lines are wrapped between words to the text window the script set (46h; the message box "
-            "is columns 17-62, 46 letters), with the engine's new line (04); the engine starts a new page "
-            "by itself when a line would pass the window's bottom.",
-            "* A changed script is compressed again and its archive laid out anew.",
+            "is columns %d-%d, %d letters%s), with the engine's new line (04); the engine starts a new page "
+            "by itself when a line would pass the window's bottom." % (
+                left, right, right - left + 1,
+                ", set by the system library and measured on screen" if "message_window" in cfg else ""),
+            "* A changed script is %s and its archive laid out anew." % (
+                "compressed again" if h else "stored as it is, like the game's own"),
             "", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
                                                        for k, n in sorted(kinds.items()))), ""]

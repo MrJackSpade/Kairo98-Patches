@@ -193,5 +193,10 @@
   "not_handled": [
    "The name entry's frame and its prompt (主人公の名前を入力してください, 名前, おわり) are part of a picture."
   ]
+ },
+ "fermion": {
+  "remarks": [
+   "Fermion's SIL.EXE is the same General Message system-1 (Rev.95:06:30) as Be-Yond's SL.EXE; its archives DISKA-DISKD hold the members uncompressed. The message box is set inside the system library, so its columns (3-63) were measured on screen: game.json message_window."
+  ]
  }
 }
