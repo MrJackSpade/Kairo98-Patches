@@ -279,14 +279,14 @@ ANK = True                      # the engine draws half-width strings (06 ... 06
 DICT = 0x80                     # the first dictionary character
 # the text window in force where a script sets none (game.json "default_window": [left, top,
 # right, bottom], set by a script the game runs before, such as Valentine Kiss's DEFMAIN.MES)
-DEFAULT_WINDOW = None
+START_WINDOW = None
 KANJI = False                   # C0h-CFh xx is a two-byte character (lead E0h-EFh) too
 
 
 def set_engine(cfg):
-    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI, DEFAULT_WINDOW
+    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI, START_WINDOW
     e = ENGINES[cfg.get("version", "ai5")]
-    DEFAULT_WINDOW = cfg.get("default_window")
+    START_WINDOW = cfg.get("default_window")
     WINDOW, CURSOR, FONT, ANK = e["window"], e["cursor"], e["font"], e["ank"]
     DICT, KANJI = e.get("dict", 0x80), e.get("kanji", False)
 
@@ -394,7 +394,7 @@ def windows(d, toks):
     own, bodies = subroutines(d, toks)
     subs = {**SHARED, **own}
     state = {k: None for k in WINDOW + (FONT,)}
-    state.update(zip(WINDOW, DEFAULT_WINDOW or ()))
+    state.update(zip(WINDOW, START_WINDOW or ()))
     saved, body_end = None, None
     assigned = {}
     out = {}
@@ -850,7 +850,9 @@ class Scripts:
     scripts in one are found from start.mes through the script names the
     scripts give, as the archive holds hashes only), or in Silky's data
     archives (game.json "archive_format": "silkdat" or "silkdisk",
-    pc98tl/silkdat.py: the scripts by their names in it).  Names are as the refs give them:
+    pc98tl/silkdat.py: the scripts by their names in it); or loose with
+    another extension (game.json "script_ext"), named by their path in the
+    game folder.  Names are as the refs give them:
     "FILE.MES", or "ARCHIVE/file.mes"."""
 
     def __init__(self, vol, cfg):
@@ -858,6 +860,13 @@ class Scripts:
         self.arcs, self.changed = {}, {}
         d = cfg["game_dir"]
         if not cfg.get("archives"):
+            ext = cfg.get("script_ext")
+            if ext:
+                # (scripts by another extension, in the game folder's folders (Crescent: .M in A-D, one
+                # folder a floppy): named by their path in the game folder)
+                self.items = [(p[len(d) + 1:], p) for p, *_ in vol.walk()
+                              if p.upper().startswith(d.upper() + "/") and p.upper().endswith(ext.upper())]
+                return
             self.items = [(p.split("/")[-1], p) for p, *_ in vol.walk()
                           if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
             return
