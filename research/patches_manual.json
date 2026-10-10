@@ -2001,5 +2001,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Mediax.zip/PP Disk No. 03": [
+  {
+   "label": "This repo: games/pp_disk_no_03 (patcher working, machine translation in progress)",
+   "url": "../games/pp_disk_no_03/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

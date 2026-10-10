@@ -406,6 +406,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Gogo VI - My Fair Teacher | [This repo: games/tenshi_vi (patcher working, machine translation in progress)](../games/tenshi_vi/notes.md) |
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
 | Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
+| Mediax | PP Disk No. 03 | [This repo: games/pp_disk_no_03 (patcher working, machine translation in progress)](../games/pp_disk_no_03/notes.md) |
 | Panther Software | Hamlet | [This repo: games/hamlet (patcher working, machine translation in progress)](../games/hamlet/notes.md) |
 | Panther Software | Lesser Mern | [This repo: games/lesser_mern (patcher working, machine translation in progress)](../games/lesser_mern/notes.md) |
 | Pioneer LDC | El-Hazard - The Magnificent World | [This repo: games/el_hazard (patcher working, machine translation in progress)](../games/el_hazard/notes.md) |
@@ -4249,7 +4250,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - Gekkan PP Disk Soukangou [FD]
 - PP Disk No. 01 [FD] `cdos98`
 - PP Disk No. 02 [FD] `cdos98`
-- PP Disk No. 03 [FD] `silkys`
+- PP Disk No. 03 [FD] `silkys` — *MTL (this repo)*
 - PP Disk No. 04 [FD extras] `cdos98`
 - PP Disk No. 05 [FD] `cdos98`
 - PP Disk No. 06 [FD] `cdos98`

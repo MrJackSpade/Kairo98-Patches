@@ -1051,15 +1051,13 @@ def record_bytes(text, size):
     return enc.ljust(size, b"\0")
 
 
-def run_extract(here, src):
-    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    set_calls(cfg)
-    set_engine(cfg)
+def script_strings(vol, cfg, cfg2):
+    """[(kind, jp, ref, max_cells, note)] of every script's text (set_calls and set_engine done
+    for cfg; cfg2 the config for vol, as _install gives it).  Also used for a game's scripts that
+    another driver's title carries (pc98tl/ppdisk_tl.py: a demo on a magazine's disk)."""
     notes = {int(n): c.get("note", "") for n, c in
              cfg.get("calls", {"26": {"note": "the hero's name"}}).items()}
-    img, cfg2 = _install(cfg, src)
-    vol = img.volumes[0]
-    merged, order = {}, []
+    out = []
     store = Scripts(vol, cfg2)
     set_shared(store)
     for name, path in store.items:
@@ -1071,18 +1069,30 @@ def run_extract(here, src):
                 continue
             left, top, right, bottom, h = _win(win[k])
             cellsn = _cells_jp(toks, k, j, d) if kind in ("item", "label") else max(8, right - left - 1)
-            key = (kind, jp)
-            ref = "%s:%04x" % (name, toks[k][1])
-            if key in merged:
-                merged[key]["refs"].append(ref)
-                continue
-            e = {"kind": kind, "jp": jp, "en": "", "refs": [ref], "max_cells": cellsn}
             used = sorted({int(x) for x in re.findall(r"\{X(\d+)\}", jp)})
-            if used:
-                e["note"] = "; ".join("{X%d}: %s (the script's subroutine %d)" % (x, notes.get(x) or "a subroutine call", x)
-                                      for x in used)
-            merged[key] = e
-            order.append(key)
+            note = "; ".join("{X%d}: %s (the script's subroutine %d)" % (x, notes.get(x) or "a subroutine call", x)
+                             for x in used)
+            out.append((kind, jp, "%s:%04x" % (name, toks[k][1]), cellsn, note))
+    return out
+
+
+def run_extract(here, src):
+    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    set_calls(cfg)
+    set_engine(cfg)
+    img, cfg2 = _install(cfg, src)
+    vol = img.volumes[0]
+    merged, order = {}, []
+    for kind, jp, ref, cellsn, note in script_strings(vol, cfg, cfg2):
+        key = (kind, jp)
+        if key in merged:
+            merged[key]["refs"].append(ref)
+            continue
+        e = {"kind": kind, "jp": jp, "en": "", "refs": [ref], "max_cells": cellsn}
+        if note:
+            e["note"] = note
+        merged[key] = e
+        order.append(key)
     for spec in cfg.get("records", []):
         for at, size, text in records(vol.read(cfg2["game_dir"] + "/" + spec["file"]), spec):
             key = ("record", text)
@@ -1141,28 +1151,10 @@ def pseudo_text(e):
     return out
 
 
-def run_patch(here, src, dst, mode="en"):
-    from .text import pseudo
-    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
-    if sha256(src) != doc["source_image_sha256"]:
-        print("warning: source image differs from the one strings.json was extracted from")
-    set_calls(cfg)
-    set_engine(cfg)
-    img, cfg2 = _install(cfg, src)
-    vol = img.volumes[0]
-    by_ref, ids = {}, {}
-    for e in doc["strings"]:
-        if mode == "pseudo":
-            text = pseudo_text(e) if e["kind"] != "record" else pseudo(e["id"], e["max_cells"])[:e["max_cells"]]
-        else:
-            text = e["en"]
-        for r in e["refs"]:
-            f, a = r.rsplit(":", 1)
-            ids[(f, int(a, 16))] = e["id"]
-            if text:
-                by_ref[(f, int(a, 16))] = text
-    warn, done = [], 0
+def patch_scripts(vol, cfg, cfg2, by_ref, ids, warn, mode):
+    """Every script rebuilt with its English (by_ref {(script, address): text}, ids the same keys'
+    string ids); returns how many changed.  set_calls and set_engine done for cfg."""
+    done = 0
     store = Scripts(vol, cfg2)
     set_shared(store)
     if FAR:
@@ -1204,6 +1196,32 @@ def run_patch(here, src, dst, mode="en"):
             store.write(path, new)
             done += 1
     store.commit()
+    return done
+
+
+def run_patch(here, src, dst, mode="en"):
+    from .text import pseudo
+    cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
+    if sha256(src) != doc["source_image_sha256"]:
+        print("warning: source image differs from the one strings.json was extracted from")
+    set_calls(cfg)
+    set_engine(cfg)
+    img, cfg2 = _install(cfg, src)
+    vol = img.volumes[0]
+    by_ref, ids = {}, {}
+    for e in doc["strings"]:
+        if mode == "pseudo":
+            text = pseudo_text(e) if e["kind"] != "record" else pseudo(e["id"], e["max_cells"])[:e["max_cells"]]
+        else:
+            text = e["en"]
+        for r in e["refs"]:
+            f, a = r.rsplit(":", 1)
+            ids[(f, int(a, 16))] = e["id"]
+            if text:
+                by_ref[(f, int(a, 16))] = text
+    warn = []
+    done = patch_scripts(vol, cfg, cfg2, by_ref, ids, warn, mode)
     for spec in cfg.get("records", []):
         path = cfg2["game_dir"] + "/" + spec["file"]
         data = bytearray(vol.read(path))

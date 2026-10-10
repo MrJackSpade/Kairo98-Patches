@@ -1309,6 +1309,82 @@ def lmern_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def ppdisk_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"article": "articles", "page": "full-screen pages", "title": "menu titles", "menu": "menu items",
+             "balloon": "Pia's balloons", "engine": "program messages", "install": "installer text",
+             "demo": "REIRA demo messages", "demo_item": "REIRA demo menu items", "demo_label": "REIRA demo labels"}
+    h = cfg["hdd"]
+    out = ["# %s%s (Mediax / P's PSYTEC)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`), with `%s` next to it." % (
+               cfg["image"].replace("\\", "/"), h["disks"][0])]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "A disk magazine: on each floppy the viewer `PPDISK.EXE` (the same program on both), its menus "
+            "(`PPDISK.SCR`: the menus, Pia's speech balloons and a pool of strings the program relocates when "
+            "it loads it) and its text (`PPDISK.TXT`: records of lines, shown in the menus' box or on the whole "
+            "screen).  Disk B also carries Silky's *REIRA* demo (`SIL.EXE`, `SILK0.DAT`: the AI5 engine, patched "
+            "by `pc98tl/ai5.py`) and its installer (`PPCOPY.EXE` with `PPCOPY.CMD`).  `pc98tl/ppdisk.py` "
+            "documents the formats and the program patch, `pc98tl/ppdisk_tl.py` the English.  Unchanged files "
+            "rebuild byte for byte.", "",
+            "The floppies have no room for the English (5 KB and 3 KB free), so the patch lays them out on a DOS "
+            "hard disk, as the other floppy games here are: Disk A in `\\%s`, Disk B in `\\%s\\%s`.  "
+            "AUTOEXEC.BAT starts Disk A's viewer and then Disk B's, each with `-d` (the program's own switch: ESC "
+            "on the main menu quits, which on the floppies it never does).  The demo runs with `GAME` in "
+            "`\\%s\\%s`." % (h["dir"], h["dir"], list(h["disk_dirs"].values())[0], h["dir"],
+                                 list(h["disk_dirs"].values())[0]), "",
+            "* `PPDISK.TXT` is rebuilt with the English, wrapped between words, and the menus' offsets of its "
+            "records rewritten.",
+            "* The menus' strings are written in their own bytes, or at the end of the pool (its size in the "
+            "header grows).",
+            "* `PPDISK.EXE`: the viewers' tables of page starts (32 on the stack) are moved to the last 512 bytes "
+            "of the 32 KB text buffer (256 pages), every read into the buffer stopping short of them.  ASCII is "
+            "drawn half-width by the program's own text routine.  Its messages are written in their own bytes."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Articles (`a` ids, `max_cells` 46): lines wrapped between words to 46 letters, 8 lines to a "
+            "page; full-screen pages (`p` ids, `max_cells` 80): 80 letters, 24 lines to a page.  `\\n` "
+            "between lines (a line's leading spaces are kept).  A record may take 32255 bytes (a byte a letter "
+            "and one for each line's end) and 256 pages; a build past either is refused and names it.",
+            "* Menu titles (`t` ids, `max_cells` 36) and items (`m` ids, `max_cells` 46): one line; past it "
+            "they run over the box (reported).",
+            "* Pia's balloons (`b` ids): wrapped to 16 letters, 6 lines at most; past them the build is refused.",
+            "* Program messages (`e` ids): in their own bytes, `max_cells` the room; past it cut and reported.  "
+            "`{S1}`/`{N1}` stand for the name/number the program puts in.",
+            "* Installer text (`i` ids): lines wrapped to 78 letters; the screen shows 23, past them the first "
+            "scroll off (reported).",
+            "* REIRA demo (`dm`, `di`, `dl` ids): as the AI5 games' messages, menu items and labels "
+            "(`games/reira/notes.md`).",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, "
+            "else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title screen, the map, the icons)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def lmern_max():
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
     from pc98tl import lmern
@@ -1546,6 +1622,11 @@ def main():
             continue
         if cfg.get("encoding") == "lmern":
             out = lmern_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "ppdisk":
+            out = ppdisk_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

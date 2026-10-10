@@ -351,5 +351,10 @@
   "not_handled": [
    "PRE.EXE's prompts to put a floppy in a drive: the floppy release's only, never shown by the hard-disk release the patch works on."
   ]
+ },
+ "pp_disk_no_03": {
+  "remarks": [
+   "Disk B's own record 0 (a copy of the replay mode's help) is never shown: no menu on Disk B opens the replay mode."
+  ]
  }
 }

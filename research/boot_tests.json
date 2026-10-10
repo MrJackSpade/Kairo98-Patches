@@ -3409,5 +3409,35 @@
    "The first messages (the window at the bottom)",
    "OK: the filler wrapped between words, paged with a key, page after page"
   ]
+ ],
+ "pp_disk_no_03": [
+  [
+   "Boot from the hard disk (Disk A's viewer, PPDISK -d)",
+   "OK: the title, then the main menu: its title, items and Pia's balloon in filler, half-width, in their boxes"
+  ],
+  [
+   "Disk A: the map quiz (the first item)",
+   "OK: its message in filler in the bar under the map"
+  ],
+  [
+   "Disk A: an article (a menu of type 3)",
+   "OK: the filler wrapped between words at the box's 46 letters, 8 lines to a page, the next page with Enter"
+  ],
+  [
+   "Disk A: a list (CG pictures and full-screen pages)",
+   "OK: the pages' filler wrapped at 80 letters, 24 lines to a page, the next page with a click; the pictures load"
+  ],
+  [
+   "ESC on the main menu, then Disk B's viewer",
+   "OK: Disk A's viewer quits, Disk B's title and menus follow in filler"
+  ],
+  [
+   "Disk B: the REIRA demo's installer text (PPCOPY.CMD)",
+   "OK: shown in filler wrapped at 78 letters; at 2.5 times the Japanese it takes 31 lines and the first scroll off (reported by the patcher)"
+  ],
+  [
+   "The REIRA demo (GAME in \\PPDISK\\B, run on its own)",
+   "OK: its setup screen, then its first message and menus in filler; later scenes not reached"
+  ]
  ]
 }

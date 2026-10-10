@@ -151373,7 +151373,14 @@
      "path": "PP Disk No. 03\\PP Disk No. 03 [FD]\\PP Disk No. 03 (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/pp_disk_no_03 (patcher working, machine translation in progress)",
+     "url": "../games/pp_disk_no_03/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "silkys",
@@ -151381,7 +151388,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Mediax.zip/PP Disk No. 04",
