@@ -1,0 +1,974 @@
+{
+ "source_image_sha256": "5b44d49a0d34df96443ab6a4815c15b6d597dfc6821755fff8363b3a2da1e0bb",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "１．発刊のお言葉{X1}２．遊ディスクって何？{X2}３．ミュージック・ライブラリー{X3}４．アート・ギャラリー{X4}５．よもやま通信{X5}６．開発室便り{X6}７．クラブＤ．Ｏ．からのお知らせ{X7}８．新作情報{X8}９．ユーザーズ・サロン",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:013e"
+   ],
+   "max_cells": 44,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line; {X4}: a new line; {X5}: a new line; {X6}: a new line; {X7}: a new line; {X8}: a new line"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　－－－３Ｄディスク発刊のお言葉－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:01fb"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "３ＤディスクＶｏｌ．７の発刊です。{X1}いやはや、いやはや・・・。前回のＶｏｌ．６で、もう締め切りが目の前だ、なんて言うようなことを口走ったような気がするんですけど。{X2}気がつけば、既にこんな季節です。実に困ったものです・・・。{X3}いったい締切はいつだったんでしょーか？{X4}しかし何とか発刊の運びとなり、年間２回の約束が果たせて、一安心と言ったところです。{X5}これもひとえにＤ．Ｏ．を応援してくれる、皆様の御声援と御支援の賜物と感謝する次第です。{X6}次々と迫り来る仕事の間隙を縫ってスタッフ一人ひとりが手掛けた３Ｄディスク、楽しんでいただければ幸いです。{X7}　{X8}　　　　　　　　「３Ｄディスクは、まだですかぁ・・・」{X9}うああぁぁぁ・・・。{X10}声が聞こえるうぅぅ・・・。{X11}会員の皆様の声が聞こえるうぅぅ・・・。{X12}「たしか前のディスクで、『このペースを維持して云々・・・』とゆーよーなことを言っていましたよね・・・」{X13}確かに、確かに言っていたけど・・・。{X14}でも、でもでも！これには色んな理由があるんだ。{X15}あい　たこいちは貰い事故にあっちゃったし、竜宮　城太郎は結婚するし、島田　茂はサードパーティーのＣＤ－ＲＯＭドライブのチェックで脳味噌が耳の穴から出てくるし、そりゃもー大変だったんですから。{X16}　{X17}　　　　　　　　　　　　　ところで・・・・・・{X18}「おい、岩石丸はどうした？」{X19}「えっ、奴なら疲労性腰痛で自宅勤務ですよ」{X20}「呼び出せ、呼び出せ。こっちは猫の手も借りたいんだ。腰痛なんざ、病気のうちに入らねーぞ」{X21}・・・・・・・・・・・・{X22}・・・・・・・・・・・・{X23}・・・・・・・・・・・・{X24}「そーゆーわけで、３Ｄディスクの責任者はお前だ。良きに計らうよーに」{X25}「はひ？するってぇと、現在制作中のシナリオどうなるんでしょーか？」{X26}「良きに計らって、頑張るよーに。デバッグも山のよーにあることだし」{X27}「・・・・・・は、はひ？」{X28}「仕事が山のようにあるなんていつものことだ。根性すえてかかるよーに」{X29}「はひ・・・岩石丸　巌、頑張らせていただきまふでふ」{X30}「と、ゆーよーな訳で、今年中に３Ｄディスクが発刊できない場合の責任は、全てお前に取ってもらうからな。苦情の電話・葉書等は、お前が処理に当たること。ま、お前は＜人柱＞みたいなもんだ」{X31}「そ、そんな・・・。私は税金だってちゃんと払ってるんですよ！」{X32}「何を訳の分からんことを言っとるか、納税は国民の義務だ」{X33}「・・・鬼、悪魔、人でなし、ろくでなし・・・」{X34}「はっはっはっ、何とでも言いたまへ。全ての厄災はお前の上にかかるよーにプログラムされとるんだからね」{X35}　{X36}　　　　　　　　　「きゅう・・・・・・」（←意識不明）{X37}日本全土が戦後最大級の猛暑に見舞われ、全国各地で水不足が深刻になりつつあった、７月末の出来事であった。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:022e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: a key wait, the window cleared; {X7}: a key wait, the window cleared; {X8}: a new line; {X9}: a key wait, the window cleared; {X10}: a new line; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a key wait, the window cleared; {X14}: a new line; {X15}: a key wait, the window cleared; {X16}: a key wait, the window cleared; {X17}: a new line; {X18}: a key wait, the window cleared; {X19}: a key wait, a new line; {X20}: a key wait, the window cleared; {X21}: a key wait, the window cleared; {X22}: a key wait, a new line; {X23}: a key wait, a new line; {X24}: a key wait, the window cleared; {X25}: a key wait, a new line; {X26}: a key wait, a new line; {X27}: a key wait, the window cleared; {X28}: a key wait, a new line; {X29}: a key wait, a new line; {X30}: a key wait, the window cleared; {X31}: a key wait, the window cleared; {X32}: a key wait, a new line; {X33}: a key wait, a new line; {X34}: a key wait, the window cleared; {X35}: a key wait, the window cleared; {X36}: a new line; {X37}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　－－－遊ディスクって何？－－－{X2}皆さん、『遊ディスク』を御存知でしょうか？{X3}まだ知らないと言う人にも、当然もう知っていると言う人にも更に詳しく『遊ディスク』を知ってもらいたいと思っています。{X4}そこで・・・・・・{X5}突然ですが、『遊ディスク』の説明です。{X6}　{X7}　　　　　　　　　　　その１『遊ディスク』って何？{X8}『遊ディスク』は、書店で買えるＰＣ－９８０１用のＤ．Ｏ．のゲームソフトのことです。{X9}ちなみに、『遊ディスク』は、『ゆうでぃすく』と読みます。{X10}今までパソコン取り扱い店やゲームソフトショップでしか買えなかったソフトが、書店で購入出来ます。{X11}しかも価格はたったの１９８０円と、とてもリーズナブル！{X12}　{X13}　　　　　　　　　　その２『遊ディスク』のタイトル{X14}『遊ディスク』は、Ｄ．Ｏ．が設立当初から発売してきたゲームの中から、名作と言われるものを厳選しリメイクし、ゲームとしての面白みをより高めたものです。{X15}１０月現在まで発売されている『遊ディスク』のタイトルは「エクスタリアン－カスタム－」、「妖獣戦記－カスタム－」、「加奈子さんの憂鬱」、「クリスタルリナール－お楽しみディスク－」です。{X16}特に「クリスタルリナール－お楽しみディスク－」は、ゲームのヒント、アドベンチャーやスロットマシンなどのオリジナルゲーム、制作裏話、ＭＩＤＩ対応の音楽図書館・・・ｅｔｃ，ｅｔｃと盛りだくさんの内容です。{X17}また、１１月末には「テレフォンスキャンダル」が発売されます。{X18}　{X19}　　　　　　　　　　その３『遊ディスク』のこれから{X20}『遊ディスク』はリメイクと言う性質上、オリジナリティーが出しにくくなってしまいがちですが、{X21}できるだけユーザーフレンドリーな、「クリスタルリナール－お楽しみディスク－」の様に、オリジナル性の高い『遊ディスク』ならではのソフトを作っていきたいと思っています。{X22}そう言った意味では、現在鋭意制作中の「ハートでロン！！－ＭＩＤＮＩＧＨＴ編－」は、オリジナル性が非常に高くなっています。{X23}「ハートでロン！！－ＭＩＤＮＩＧＨＴ編－」は、現在好評発売中の新作ソフト「ハートでロン！！」の『遊ディスク』バージョンです。{X24}「ハートでロン！！」で登場した人物の中で麻雀の出来なかった女の子と、麻雀対戦をすることが出来ます。{X25}もちろん麻雀は本格四人打で、勝負に勝つことが出来れば、ムフフなイベントが・・・。{X26}これからの『遊ディスク』シリーズのラインナップにご期待下さい！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:0886"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a new line; {X10}: a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a key wait, the window cleared; {X15}: a key wait, the window cleared; {X16}: a key wait, the window cleared; {X17}: a key wait, the window cleared; {X18}: a key wait, the window cleared; {X19}: a new line; {X20}: a key wait, the window cleared; {X21}: a key wait, the window cleared; {X22}: a key wait, the window cleared; {X23}: a key wait, the window cleared; {X24}: a key wait, the window cleared; {X25}: a key wait, the window cleared; {X26}: a new line"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "　{X1}－－　ミュージック・ライブラリー　－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:0eae"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "今号のミュージック／{X1}　　　続・妖獣戦記－砂塵の黙示録－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:0ed9"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "＃１{X1}　　　　　『美しい朝に』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:0ff4"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "＃２{X1}　　『ＨＡＰＰＹ　ＴＩＭＥ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:102e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "＃３{X1}『妖獣戦記－Ａ．Ｄ．２０４８－』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1071"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "＃４{X1}　　　『ＴＥＡ　ＴＩＭＥ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:10b7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "＃５{X1}　　『ビルの谷間の小さな公園』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:10f7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "＃６{X1}　　　　　　『ＦＵＮ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1139"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "＃７{X1}　　　　『ＨＩＳＴＯＲＹ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1173"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "＃８{X1}　　　　　『細菌兵器』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:11b3"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "＃９{X1}『ＭＥＤＩＣＡＬ　ＣＥＮＴＥＲ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:11ee"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "＃１０{X1}　　『新しい出発（たびたち）』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1237"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "＃１１{X1}　『ＬＯＶＥＲＳ　ＩＮ{X2}　　　　　　　ＭＥＭＯＬＩＳ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1276"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "＃１２{X1}　　　　　『妖獣の巣』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:12cf"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "＃１３{X1}　　　　　　『ベータ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:130a"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "＃１４{X1}　　　　『ゴーストタウン』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1344"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "＃１５{X1}　　　　　『ＰＩＮＣＨ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1381"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "＃１６{X1}　『ＭＩＤＮＩＧＨＴ　ＨＥＲＯ』",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:13bf"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　－－－－－－アート・ギャラリー－－－－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1406"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "今回のアート・ギャラリーも、Ｖｏｌ．６に続きオリジナルＣＧ展です。{X1}スタッフの一人ひとりが、今回のＶｏｌ．７のためにと描きおろした入魂のグラフィック集です。{X2}ゆっくりと堪能してください。{X3}それでは「アート・ギャラリー」、間もなく上映開始です。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1440"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, a new line; {X2}: a key wait, a new line; {X3}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "　{X1}　　　－－－　次　へ　－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1512",
+    "3D_V7.EDT:153b",
+    "3D_V7.EDT:1564",
+    "3D_V7.EDT:158d"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　{X1}　－－－　お　し　ま　い　－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:15b6"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　－－－－－－－－－よもやま通信－－－－－－－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:15fa"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "時の経つのは、実に早いものです。{X1}と、言うようなことを、いつぞや書いた記憶が有りますが、本当に早いものです。{X2}何と言っても、前回の３Ｄディスクが９４年の初頭の発刊ですから・・・時の経つのも早く感じようものです。{X3}ふっ、俺は過去を振り返らないのさ（感傷に浸っている場合じゃないゾ）。{X4}四捨五入すると約一年のブランクが有るわけですが（どうして四捨五入になるかは、考えないで下さい）、振り返ると実に色々なことが有りました。{X5}なんだか、前述したことをいきなり否定していますが・・・。{X6}まぁ、それはさて置き。{X7}スタッフの近況を、ちらほらと報告したいと思います。{X8}●あい　たこいち事故る{X9}『発刊のお言葉』のコーナーでも軽く触れたんですが、ここではもうちょっと詳しく書きたいと思いますです、はい。{X10}　{X11}　　　　　　　　　　　「いやもう、驚いたのなんのって」{X12}　{X13}　　　　と、あい　たこいちは、事故の模様を次のように語っている。{X14}「会社を終えてアパートに戻ろうとしたときだ。オイラは、バイクで信号の一番前に停車していたんだ。{X15}そうしたら何と、酔っぱらいのオヤジが運転する車が、ノーブレーキで後ろから突っ込んできやがった。オイラは、だるま落しよろしくバイクから跳ね飛ばされて、アスファルトに激突したわけだ」{X16}「・・・それでよく生きてますね」{X17}「どうやら、とっさに受け身を取ったみたいでな。首の方も、軽い鞭打ちだけで済んだし・・・。やっぱ、柔道をやっていたお蔭だな。{X18}ま、そのせいで、腕の方も怪我したけど。・・・ほれほれ、ここなんて肉がえぐれて骨が見えるんだぞ」{X19}「うわあっ！そんな気持ちの悪くなるもん見せないで下さいよ」{X20}「おー、たこいち、どうした？首に湿布なんか貼って」{X21}「あっ、藤沢さん、実はですね・・・」{X22}「肩こりなら、俺に任せろ。指圧で気持ち良くしてやろう」{X23}「いや、あのですね、ちょっ、ちょっと・・・！！」{X24}あい　たこいち{X25}鞭打ち悪化のため、緊急入院。{X26}●神坂　兼人－ハイテンションの行方－{X27}　{X28}　　　　　　　　　　　　　　泊り込み一週間目。{X29}『ハートでロン！！』のシナリオの〆切はとうの昔に過ぎていた。しかも最終〆切は翌日に迫っていると言うのに、キーボードを叩く指先は限りなく重い。{X30}寝袋の感触も打ちっぱなしのコンクリートのそれと変わらなくなり、体はきしみ、目は血走り、体は起きているのに脳ミソは寝ているのとなんら変わりのない極限状態。{X31}そしてそれは、起こるべくして起こった。{X32}「おおおおぉぉぉぉ俺は、アメリカへ行くんだあぁぁっ！」{X33}「神坂さん、どーしたんですか？」{X34}「アメリカに行ってプロレス観戦して、アルティメット大会も見て、それもってメキシコのルチャ・リブレも堪能して、それから最終的にブラジルへ行って本場のヴァーリ・トゥード大会に出場するんだぁっ！」{X35}「あの、神坂さん？」{X36}「ホイスだろうがヒクソンだろうがホイラーだろうが、かかって来やがれ！俺は、日本男児だ！文句があるかっ！！」{X37}「・・・・・・もしもし？」{X38}「健介、咲恵、見ていてくれ！俺は男になってみせるぜっ！ついでに、巌鉄じいちゃんも見ていてくれ！！」{X39}「神坂さんが、暴走してるぞ・・・」{X40}「バグっているのかも知れない」{X41}「脳ミソのメモリ不足と言うことも考えられる」{X42}「そんなことはどうでもいい。誰か止めるんだ！」{X43}「本来武道とは、ノールールの中で研鑽されてきたもののはずだ。何でもありの中で生き残れてこそ、武道と言うものだ！」{X44}「う～ん、どんどんおかしくなって行く」{X45}「俺の負けはすなわち一族の敗北。だからこそ、俺は負ける訳にはいかないのだ！」{X46}「壊れていく・・・神坂さんがどんどん壊れていく」{X47}「とにかく誰でもいい。奴を止めろ」{X48}「止めればいいんですね？」{X49}「そうだ、とにかく止めろ」{X50}「それでは失礼して・・・神坂さん御免なさい」{X51}そーゆーよーなわけで、{X52}グレーシー柔術ばりのチョークスリーパー。{X53}キュッ！{X54}　{X55}　　　　　　　　　　　　　　「グエェッ！」{X56}ビクビクビクビク・・・・・・。（←痙攣している）{X57}ピクピク・・・・・・ピクン。{X58}・・・・・・・・・・・・くたっ。{X59}・・・・・・・・・・・・{X60}・・・・・・・・・・・・{X61}・・・・・・・・・・・・{X62}「馬鹿者！誰が締め技をかけろと言った！！」{X63}「とにかく止めろって、言ったじゃないですか」{X64}「リーチ、一発、ツモ、タンヤオ、サンシキ、裏ドラも乗ってるみよょーん。ヘロヘロヘローンっだ」{X65}「ほら見ろ、頭に血と空気が回らないから、おかしくなっちゃったろーが」{X66}「そーゆーこと言ったって、しょーがないじゃないですか。こうなったら」{X67}「そんなこと言ったってなぁ・・・〆切は明日だぞ。２４時間無いんだぞ」{X68}「大丈夫ですよ、何とかなりますって」{X69}翌日・・・。{X70}どう言うわけか、シナリオは上がった。{X71}しかし、安心してはいけない。{X72}次の極限状態は、もうすぐそこまでやって来ているのだ。{X73}「だあああぁぁぁっ！後楽園ホールへ行くぞおおぉぉぉっ！」{X74}　{X75}　　　　　　　　　　　　　　　　　　　なんまんだぶなんまんだぶ・・・{X76}●金子　光晴の日常{X77}「あれ？金子さん、今日も泊まりですか？」{X78}「君は、今日は帰りかい」{X79}「ええ、五日くらい泊まってましたからね。さすがに、疲れますよ」{X80}「何を言っとるかね、わしゃもう二カ月も泊まっとるよ」{X81}「げっ！そんなになるんですか・・・」{X82}「いや、三カ月になるかも知れないな。この前、帰ったのが・・・」{X83}「は、ははははははは・・・お先に失礼しまーす」{X84}「とっとと帰んなさい」{X85}　{X86}　　　　　　　　　　　　　　　翌日・・・。{X87}「どうだね、最近の世の中の動きは？」{X88}「は？」{X89}「ほれ、家に帰らないから、世情と言うものが掴めんのでな」{X90}「新聞ぐらい買ってくればいいのに・・・」{X91}「何か言った？」{X92}「いや、独り言です・・・。そう言えば、ジャ○アンツの優勝が危うくなりましたよ」{X93}「完全独走で、優勝確定じゃなかったの？」{X94}「それが連敗に次ぐ連敗で、２位のカー○とのゲーム差が殆ど無くなっちゃったんですよ」{X95}「わしが知ってた頃には最下位だったのに・・・。世の中は、油断が出来ないもんだの」{X96}　{X97}　　　　　　　　　　　それからしばらくして・・・。{X98}「いやー金子さん、日本シリーズで、何とジャ○アンツが優勝しちゃいましたよ」{X99}「いやいや、大変なことになってるねぇ」{X100}こうして今日も、金子　光晴の一日は過ぎていくのであった。{X101}　{X102}　　　　　　　　　　　　　　　　　　　　　　つるかめつるかめ・・・。{X103}＊このコーナーはフィクションであり、実在の人物・団体・出来事等とは一切関係ありません（笑）。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:1637"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a key wait, the window cleared; {X10}: a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a key wait, the window cleared; {X15}: a key wait, the window cleared; {X16}: a key wait, the window cleared; {X17}: a key wait, a new line; {X18}: a key wait, the window cleared; {X19}: a key wait, a new line; {X20}: a key wait, the window cleared; {X21}: a key wait, a new line; {X22}: a key wait, a new line; {X23}: a key wait, the window cleared; {X24}: a key wait, the window cleared; {X25}: a key wait, a new line; {X26}: a key wait, the window cleared; {X27}: a key wait, the window cleared; {X28}: a new line; {X29}: a key wait, the window cleared; {X30}: a key wait, the window cleared; {X31}: a key wait, the window cleared; {X32}: a key wait, the window cleared; {X33}: a key wait, the window cleared; {X34}: a key wait, the window cleared; {X35}: a key wait, the window cleared; {X36}: a key wait, a new line; {X37}: a key wait, a new line; {X38}: a key wait, the window cleared; {X39}: a key wait, the window cleared; {X40}: a key wait, a new line; {X41}: a key wait, a new line; {X42}: a key wait, the window cleared; {X43}: a key wait, the window cleared; {X44}: a key wait, the window cleared; {X45}: a key wait, the window cleared; {X46}: a key wait, the window cleared; {X47}: a key wait, a new line; {X48}: a key wait, a new line; {X49}: a key wait, the window cleared; {X50}: a key wait, a new line; {X51}: a key wait, the window cleared; {X52}: a new line; {X53}: a key wait, a new line; {X54}: a key wait, the window cleared; {X55}: a new line; {X56}: a key wait, the window cleared; {X57}: a key wait, a new line; {X58}: a new line; {X59}: a key wait, the window cleared; {X60}: a key wait, a new line; {X61}: a key wait, a new line; {X62}: a key wait, the window cleared; {X63}: a key wait, a new line; {X64}: a key wait, the window cleared; {X65}: a key wait, the window cleared; {X66}: a key wait, a new line; {X67}: a key wait, a new line; {X68}: a key wait, the window cleared; {X69}: a key wait, the window cleared; {X70}: a new line; {X71}: a key wait, the window cleared; {X72}: a new line; {X73}: a key wait, the window cleared; {X74}: a key wait, a new line; {X75}: a new line; {X76}: a key wait, the window cleared; {X77}: a key wait, the window cleared; {X78}: a key wait, a new line; {X79}: a key wait, a new line; {X80}: a key wait, the window cleared; {X81}: a key wait, a new line; {X82}: a key wait, a new line; {X83}: a key wait, the window cleared; {X84}: a key wait, a new line; {X85}: a key wait, the window cleared; {X86}: a new line; {X87}: a key wait, the window cleared; {X88}: a key wait, a new line; {X89}: a key wait, a new line; {X90}: a key wait, the window cleared; {X91}: a key wait, a new line; {X92}: a key wait, the window cleared; {X93}: a key wait, the window cleared; {X94}: a key wait, a new line; {X95}: a key wait, the window cleared; {X96}: a key wait, the window cleared; {X97}: a new line; {X98}: a key wait, the window cleared; {X99}: a key wait, a new line; {X100}: a key wait, the window cleared; {X101}: a key wait, a new line; {X102}: a new line; {X103}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　－－－－－－開発室便り－－－－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:24b0"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "何処のゲームソフトメーカーもそうであろうが、年末が近付いてくると急に慌ただしくなってくる。{X1}それは往々にして、『修羅場』などという言葉で表現されたりするわけであるが、それも行き過ぎると頭に”究極の”と言う形容詞がついたりする。{X2}「あのー、すいません。このデータ、何処にはめ込むんですか？」{X3}「それはもう差し替えてあるから、必要無いよ」{X4}「え？でもさっき、取り替えろって言いませんでしたか？」{X5}「そりゃ３時間も前の話だろう。何を間抜けなこと言ってるんだ」{X6}「・・・・・・・・・・・・へ？」{X7}「お前、さては眠りこけてたな」{X8}「・・・・・・・・・・・・は？」{X9}「どうりで仕事の進みが遅いと思った。寝ろ寝ろ、寝ちまえ。お前のような奴は寝てしまえ」{X10}　{X11}　　　　　　　　　（三日分のお薬をお出ししておきます）{X12}「このバグって、ちゃんとチェックしたのか？」{X13}「ええ、ＯＫでしたよ」{X14}「でも、まだ直ってないぞ。ほら、見てみろ」{X15}「ちゃんと直ってますよ。ここの部分は、これでいいんですよ」{X16}「じゃあ、ここのこれって何なんだ？」{X17}「・・・・・・・・・・・・おやぁ？」{X18}「ひょっとして今のバグが直った代わりに出てきた、新しいバグってか？」{X19}「・・・・・・{X20}かも知れませんね」{X21}　{X22}　　　　　　　　　　（定期的な通院をお薦めします）{X23}「アップですよね、もうマスターアップしますよね？バグなんて、もうないですよね？」{X24}「そうだな。この最終チェックで何もなければ、アップだな」{X25}「そうですよね！」{X26}「でも案外、初期的なバグを見落としてたりするんだよな」{X27}「そんな不吉なこと、言わないで下さいよ」{X28}・・・・・・・・・・・・{X29}・・・・・・・・・・・・{X30}・・・・・・・・・・・・{X31}「おを゛っ、こんな所でハングしたぞ」{X32}「な、何故に・・・」{X33}「ま、こんなもんだよ。だいたい予定通りに物事が進む方がおかしいんだ」{X34}「ああっ・・・今日も終わらない」{X35}　{X36}　　　　　　　　　　　（今すぐに入院してください）{X37}さて、突然ですがここで問題です。{X38}地上６０階のビルの屋上から蟻を落とすと、いったいどうなるでしょう。{X39}１．生きている（但し、着地場所は不明）{X40}２．死ぬ（摩擦により消失したため、遺体の確認は不可能）{X41}３．それ以外{X42}答えの分かった人は、答えを葉書に書いて下記の住所まで送ってください。{X43}正解者の中から、抽選で素敵なプレゼントを・・・{X44}「コラ、何を言っとるかお前は！人心を惑わすようなことを口走ってるんじゃないっ！！」{X45}「・・・はっ、いつの間に。恐ろしいことだ」{X46}「そういうことを言って、現実逃避をしてるんじゃない！マスターアップしなけりゃ、ゆっくり眠れないし家にも帰れんぞ」{X47}「ああああぁぁぁっ！せめて、せめてあと２時間でいいです。寝かせてください、眠りにつかせてつかあさいいぃぃぃっ・・・・・・！」{X48}「泣きごとを言うんじゃないっ！ホラ、新しいバージョンが上がってきたぞ。ホラホラ、とっととやる！気合いだ、気合い！」{X49}「あーーーー・・・・・・」{X50}こうして・・・・・・{X51}今日もＤ．Ｏ．の夜はふけていくのであった。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:24e5"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: a key wait, a new line; {X4}: a key wait, a new line; {X5}: a key wait, the window cleared; {X6}: a key wait, a new line; {X7}: a key wait, the window cleared; {X8}: a key wait, a new line; {X9}: a key wait, the window cleared; {X10}: a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a key wait, a new line; {X14}: a key wait, a new line; {X15}: a key wait, the window cleared; {X16}: a key wait, a new line; {X17}: a key wait, a new line; {X18}: a key wait, the window cleared; {X19}: a key wait, a new line; {X20}: a key wait; {X21}: a key wait, the window cleared; {X22}: a new line; {X23}: a key wait, the window cleared; {X24}: a key wait, a new line; {X25}: a key wait, the window cleared; {X26}: a key wait, a new line; {X27}: a key wait, a new line; {X28}: a key wait, the window cleared; {X29}: a key wait, a new line; {X30}: a key wait, a new line; {X31}: a key wait, the window cleared; {X32}: a key wait, a new line; {X33}: a key wait, a new line; {X34}: a key wait, the window cleared; {X35}: a key wait, the window cleared; {X36}: a new line; {X37}: a key wait, the window cleared; {X38}: a new line; {X39}: a key wait, the window cleared; {X40}: a new line; {X41}: a new line; {X42}: a key wait, the window cleared; {X43}: a new line; {X44}: a key wait, the window cleared; {X45}: a key wait, a new line; {X46}: a key wait, the window cleared; {X47}: a key wait, the window cleared; {X48}: a key wait, the window cleared; {X49}: a key wait, a new line; {X50}: a key wait, the window cleared; {X51}: a key wait, a new line"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "　{X1}　　　　－－－－－－クラブＤ．Ｏ．からのお知らせ－－－－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:2ba5"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "すみません、すみません、非常に申し訳ありません！{X1}始まった早々、いきなり謝ってどうしたのよ？{X2}ユーザーの皆様からお問い合わせの多い「ブランマーカー２」なんだけど、実はまだ完成してないの！{X3}確か前回の「３Ｄディスク」では鋭意制作中って言ってたわよね。一体どうしちゃったのよ？{X4}それは、諸般の事情と言うやつで・・・前向きに善処はしてるんだけど。{X5}なんだか物事をはっきり言わない政治家の答弁みたいね。{X6}そんなこと言ったって・・・スタッフはみんな頑張ってるのよ！{X7}まぁ、みんな頑張ってるのは分かるけど・・・。で、いつ完成するの？{X8}そんなに遠くない未来かな・・・。{X9}凄い言いまわしね、それって。{X10}さて、唐突ですが、ここでクラブＤ．Ｏ．から、重大なお知らせがあります・・・。{X11}何シリアスになってるのよ、似合ってないわよ。{X12}うるさいわね、せっかく真面目にやろうとしてるのに。少し黙ってて。{X13}フン、分かったわよ。{X14}こほん・・・。では、気をとりなおして。{X15}Ｄ．Ｏ．は、来年１９９５年２月２３日で、満５周年を迎えます！{X16}これも一重に、ユーザーの皆様の叱咤激励のおかげと感謝しております。{X17}これから１０周年、１５周年と迎えられるよう努力を重ねて行きたいと思っておりますので、暖かい愛で見守ってやってください。{X18}思いおこせば５年前・・・{X19}あなたその頃、登場してなかったじゃない。{X20}それなのに、どうして５年前のことが分かるわけ？{X21}う、うるさいわね！ちょっとくらい感動に浸ったっていいじゃない！！{X22}だいたいラトナ、前から言いたかったんだけど・・・。{X23}お知らせがあるんじゃなかったの？{X24}あっ・・・・・・。{X25}えーと・・・Ｄ．Ｏ．は来年２月２３日の５周年を記念して、ふたつの特別企画を進行させています。{X26}ここではまだどんな内容か言えないけど、ウルトラ・スーパー・グレート・エキサイティング・ビューティフル・ゴージャス・デンジャラス、{X27}知ってる英語を並べ立てれば、凄そうに聞こえると思ってるの？{X28}あさはかね・・・あなたらしいわ。{X29}と、とにかく５周年を記念したとても素晴らしい企画なので、みんな期待して待っててね！{X30}本当に期待していいんでしょうね？{X31}あのね・・・・・・。{X32}以上、クラブＤ．Ｏ．からのお知らせでした。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:2be3"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, a new line, animation 5 on; {X2}: animation 5 off, a key wait, the window cleared, animation 1 on; {X3}: animation 1 off, a key wait, the window cleared, animation 5 on; {X4}: animation 5 off, a key wait, the window cleared, animation 1 on; {X5}: animation 1 off, a key wait, a new line, animation 5 on; {X6}: animation 5 off, a key wait, the window cleared, animation 1 on; {X7}: animation 1 off, a key wait, a new line, animation 5 on; {X8}: animation 5 off, a key wait, the window cleared, animation 1 on; {X9}: animation 1 off, a key wait, a new line, animation 5 on; {X10}: animation 5 off, a key wait, the window cleared, animation 1 on; {X11}: animation 1 off, a key wait, a new line, animation 5 on; {X12}: animation 5 off, a key wait, the window cleared, animation 0 off, animation 2 off, animation 2 on, animation 3 on; {X13}: animation 2 off, animation 3 off, a key wait, a new line, animation 5 on; {X14}: animation 5 off, animation 0 off, a key wait, the window cleared, animation 0 on, animation 1 on; {X15}: a new line; {X16}: a new line; {X17}: animation 1 off, a key wait, the window cleared, animation 1 on; {X18}: animation 1 off, a key wait, a new line, animation 1 on; {X19}: animation 1 off, a key wait, the window cleared, animation 5 on; {X20}: a new line; {X21}: animation 5 off, a key wait, the window cleared, animation 1 on; {X22}: a new line; {X23}: animation 1 off, a key wait, the window cleared, animation 5 on; {X24}: animation 5 off, a key wait, the window cleared, animation 1 on; {X25}: animation 1 off, a key wait, a new line, animation 1 on; {X26}: animation 1 off, a key wait, the window cleared, animation 1 on; {X27}: animation 1 off, a key wait, the window cleared, animation 5 on; {X28}: a new line; {X29}: animation 5 off, a key wait, the window cleared, animation 1 on; {X30}: animation 1 off, a key wait, the window cleared, animation 5 on; {X31}: animation 5 off, a key wait, a new line, animation 1 on; {X32}: animation 1 off, a key wait, the window cleared, animation 1 on, animation 5 on"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　－－－－－－新作情報－－－－－－",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:315e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "家庭用ゲーム機の普及、アミューズメント業界の台頭による麻雀業界の不振！！{X1}この危機に全国の雀荘経営者は『全国麻雀遊戯連盟』を結成、麻雀テーマタウンを建設し、そこでの『全日本美少女麻雀選手権大会』の開催を発表した！{X2}その全国から選りすぐりの美少女達が集まった麻雀テーマタウンへと訪れる「国際雀士Ａ級ライセンス」を収得したばかりの主人公。{X3}若さと強さと勢いとノリのよさで、大会に出場する美少女達の指導に燃える日々が今、始まる！{X4}ＣＧ総数、約２６０枚強！ヴィジュアル画面は当然全画面表示！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:31bb"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "ＡＶＧパートは画面数にして、約１００面の２Ｄマップスクロール型！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3378"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "そして勿論、麻雀パートもアドベンチャーシーンに負けない超本格派！！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:33d1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "総勢２５人以上の大会参加美少女達とは、みんなＨできる？",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:342b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "　　　　　　　　　『ハートでロン！！』{X1}　　　ＰＣ－９８０１ＶＸ／ＵＸ　ハードディスク専用版{X2}　　　　　　　　　　　好評発売中！！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:348e"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "脚本家・松本　直人は、義妹の真理子と雨の中を車で帰宅する。途中、道に迷った彼らは、妖しげな雰囲気を漂わせた蒔絵と出会い、宿を借りる。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3507"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "誘い込まれるように入った山中の館で、彼は何故か懐かしい感覚に捕らわれた。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3570"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "館の中で繰り広げられる狂気にも似た悦楽の波に、次第に翻弄されてゆく直人。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:35a7"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "「中に・・・、あう・・・、中に下さい・・・。ちゃんとお詫びをした証拠に・・・」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:35ef"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "「あああ、うう・・・」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3632"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "倒錯した世界の中で体験する、いつか見たはずの過去と、見覚えのある未来。{X1}そして、いつしか忘れ去られる日常・・・。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3648"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "「ああ！あっ！ああ！だめぇ！感じすぎます・・・。だめ・・・」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:36a6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "「あっ・・・、ああ！やめて・・・、いや・・・」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:36dc"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "直人の夢の中に現れる謎の女。{X1}彼女は、いったい何を伝えたいのか・・・。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:36fe"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "「あなたが、わたしの所にたどり着くように、祈っているわ」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:373f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "直人が失った記憶とは・・・？{X1}そして、直人と真理子を待ち受ける運命とは？！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3769"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "「あの方が、妙な懐疑心をいだくようになったのはあなたの責任です。しかも、鍵を渡せとは、私は言いませんでしたよ」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:37af"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "「お許しを・・・」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:37f9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "「あうっ！痛い！あああ・・・。いたいよぅ・・・！」",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3819"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　琥珀の時間の中で・・・・・・",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:383e"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　妖しく光る記憶と繚乱の領域",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3864"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "　　　　　　　　ＰＣ－９８０１ＶＭ／ＵＶ版{X1}　　　　　　　　　１２月１６日発売予定！",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:389a"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　－－－－－－ユーザーズサロン－－－－－－{X2}前号Ｖｏｌ．６のタイトルから（仮称）の２文字が消えて、正式名称になりました。{X3}実にめでたいことです。{X4}と言うことは、つまり・・・。{X5}ユーザーの方から、作品が寄せられたと言うことです。{X6}わーわーわーわー、ドンドンドン、パチパチパチパチ！！{X7}一人で何を絶叫してるのよ？とうとうおかしくなっちゃったの？{X8}あーのーねー、これは喜びを表現してるの。何処をどういう風にしたら、おかしくなった様に見えるって言うのよ。{X9}どう見てもおかしくなったとしか思えないけど・・・・・・。{X10}ラトナ、何か言った？{X11}何でもないわ、きっと空耳でしょう。{X12}あっ閑話休題、話を元に戻すわね。{X13}ユーザーの方から、作品が寄せられました。実に嬉しいことです。{X14}ま、これで送られてこなかったら、コーナーを立案したスタッフが岩を抱えて海にでも飛び込んでたところね。{X15}「誰も送ってきてくれなかったらどうしよう」なーんて言って、膝を抱えてブルーになってたけど、これで一安心ね。{X16}そうでもないわよ・・・。このコーナーに作品を送ってきてくれたのは、まだ一人なんだから。この調子で行ったら途中打ち切りになるんじゃないかって、けっこう心配してたわよ。{X17}まぁ、それでも誰も送ってきてくれないよりずっといいわ。{X18}ところで・・・作品は紹介しないの？{X19}あっ、そうだった、そうだった。えーと・・・埼玉県の松本さんから送られてきた、グラフィックです。じっくりご覧下さい。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:38f5"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: animation 1 off, a key wait, the window cleared, animation 1 on; {X7}: animation 1 off, a key wait, a new line, animation 5 on; {X8}: animation 5 off, a key wait, the window cleared, animation 1 on; {X9}: animation 1 off, a key wait, a new line, animation 5 on; {X10}: animation 5 off, a key wait, the window cleared, animation 1 on; {X11}: animation 1 off, a key wait, a new line, animation 5 on; {X12}: animation 5 off, a key wait, the window cleared, animation 1 on; {X13}: a new line; {X14}: animation 1 off, a key wait, the window cleared, animation 5 on; {X15}: animation 5 off, a key wait, the window cleared, animation 1 on; {X16}: animation 1 off, a key wait, the window cleared, animation 5 on; {X17}: animation 5 off, a key wait, a new line, animation 1 on; {X18}: animation 1 off, a key wait, the window cleared, animation 5 on; {X19}: animation 5 off, a key wait, the window cleared, animation 1 on"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "松本さんは、「描き始めなんであんまり上手じゃない」なんて手紙に書いてありましたけど、そんなことはないですよ。{X1}これを見て、「自分が描き始めた頃よりうまい」って言ってたスタッフも居たくらいだし、もっと自信を持った方がいいわ。{X2}そうそう、とにかく恥ずかしがらずに、もっと送ってきて欲しいな。{X3}もっともっと大々的なコーナーになるように、ユーザーの皆からの応募を心から待っています。{X4}ユーザーの皆さん、どんどんバシバシ作品を送って下さいね。{X5}Ｖｏｌ．６でも言ったとおり、お手紙、イラスト、ＣＧ、文章のテキストファイル、何でもＯＫです。{X6}ユーザズサロンへの作品応募の宛先は・・・{X7}　郵便番号　２５１{X8}　神奈川県藤沢市藤沢１１５－２　藤沢郵便局　私書箱４号{X9}　（株）ディー・オー「クラブＤ．Ｏ．事務局　お便り、ＣＧコーナー」係{X10}それでは、皆さんの力作を心からお待ちしています。",
+   "en": "",
+   "refs": [
+    "3D_V7.EDT:3c91"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, the window cleared, animation 5 on; {X2}: animation 5 off, a key wait, the window cleared, animation 1 on; {X3}: animation 1 off, a key wait, a new line, animation 5 on; {X4}: animation 5 off, a key wait, the window cleared, animation 1 on; {X5}: a new line; {X6}: animation 1 off, a key wait, the window cleared, animation 5 on; {X7}: animation 5 off, a key wait, the window cleared, animation 1 on; {X8}: a new line; {X9}: a new line; {X10}: animation 1 off, a key wait, the window cleared, animation 1 on, animation 5 on"
+  },
+  {
+   "id": "c00001",
+   "kind": "cmd",
+   "jp": "　 １",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00002",
+   "kind": "cmd",
+   "jp": "　 ２",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00003",
+   "kind": "cmd",
+   "jp": "　 ３",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00004",
+   "kind": "cmd",
+   "jp": "　 ４",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00005",
+   "kind": "cmd",
+   "jp": "　 ５",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00006",
+   "kind": "cmd",
+   "jp": "　 ６",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00007",
+   "kind": "cmd",
+   "jp": "　 ７",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00008",
+   "kind": "cmd",
+   "jp": "　 ８",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00009",
+   "kind": "cmd",
+   "jp": "　 ９",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00010",
+   "kind": "cmd",
+   "jp": "　１０",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00011",
+   "kind": "cmd",
+   "jp": "Ｆ　　Ｆ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00012",
+   "kind": "cmd",
+   "jp": "Ｒ Ｅ Ｗ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00013",
+   "kind": "cmd",
+   "jp": "ＥＸＩＴ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:12"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "直　人：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "真理子：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "弥　生：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "蒔　絵：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "　操　：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "瑞　穂：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00007",
+   "kind": "name",
+   "jp": "　唯　：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00008",
+   "kind": "name",
+   "jp": "　舞　：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00009",
+   "kind": "name",
+   "jp": "　女　：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00010",
+   "kind": "name",
+   "jp": "作業員：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "n00011",
+   "kind": "name",
+   "jp": "久美子：",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": " 前　進 ",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4b8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "右を向く",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4c1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "左を向く",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4ca"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": " 後　退 ",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4d3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ドライブ{X1}に",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10422",
+    "ADL5.EXE:10469"
+   ],
+   "max_cells": 9,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "{X1}をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10431"
+   ],
+   "max_cells": 43,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10478"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ディスクが書き込み禁止になっています。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104ae"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "セーブが終了しました。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104de"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "システムディスク",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104f9"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "データディスク",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10510"
+   ],
+   "max_cells": 13
+  }
+ ]
+}

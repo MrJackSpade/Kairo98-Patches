@@ -1802,5 +1802,21 @@
    "url": "https://vndb.org/v8721",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 6": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_6 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_6/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 7": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_7 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_7/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

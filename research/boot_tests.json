@@ -3083,5 +3083,25 @@
    "The days (DAY1-5), save/load, endings",
    "not yet seen"
   ]
+ ],
+ "doki_doki_disk_vol_6": [
+  [
+   "The floppy (patched): the logo, the opening menu (one statement, its items with new lines between), the studio scene",
+   "OK: boots (ADL5.EXE with the helper); filler half-width, wrapped by the helper between words, paged; the command box half-width"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_7": [
+  [
+   "The floppy (patched): the logo, the opening menu (one statement, its items with new lines between), the studio scene",
+   "OK: boots (ADL5.EXE with the helper); filler half-width, wrapped by the helper between words, paged; the command box half-width"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
  ]
 }
