@@ -198,5 +198,10 @@
   "remarks": [
    "Fermion's SIL.EXE is the same General Message system-1 (Rev.95:06:30) as Be-Yond's SL.EXE; its archives DISKA-DISKD hold the members uncompressed. The message box is set inside the system library, so its columns (3-63) were measured on screen: game.json message_window."
   ]
+ },
+ "crescent": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; Crescent's scripts are loose .M files in CRE/A-CRE/D (one folder a floppy), named by that path in the refs (game.json script_ext)."
+  ]
  }
 }

@@ -1661,5 +1661,18 @@
    "url": "https://vndb.org/v5903",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Crescent": [
+  {
+   "label": "This repo: games/crescent (patcher working, machine translation in progress)",
+   "url": "../games/crescent/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8830",
+   "url": "https://vndb.org/v8830",
+   "source": "VNDB"
+  }
  ]
 }
