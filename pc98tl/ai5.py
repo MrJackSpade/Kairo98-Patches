@@ -277,12 +277,16 @@ CURSOR = 17                     # the cursor's column and line
 FONT = 21                       # line height | character width << 8
 ANK = True                      # the engine draws half-width strings (06 ... 06)
 DICT = 0x80                     # the first dictionary character
+# the text window in force where a script sets none (game.json "default_window": [left, top,
+# right, bottom], set by a script the game runs before, such as Valentine Kiss's DEFMAIN.MES)
+DEFAULT_WINDOW = None
 KANJI = False                   # C0h-CFh xx is a two-byte character (lead E0h-EFh) too
 
 
 def set_engine(cfg):
-    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI
+    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI, DEFAULT_WINDOW
     e = ENGINES[cfg.get("version", "ai5")]
+    DEFAULT_WINDOW = cfg.get("default_window")
     WINDOW, CURSOR, FONT, ANK = e["window"], e["cursor"], e["font"], e["ank"]
     DICT, KANJI = e.get("dict", 0x80), e.get("kanji", False)
 
@@ -390,6 +394,7 @@ def windows(d, toks):
     own, bodies = subroutines(d, toks)
     subs = {**SHARED, **own}
     state = {k: None for k in WINDOW + (FONT,)}
+    state.update(zip(WINDOW, DEFAULT_WINDOW or ()))
     saved, body_end = None, None
     assigned = {}
     out = {}

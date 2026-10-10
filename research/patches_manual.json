@@ -1622,5 +1622,31 @@
    "url": "https://vndb.org/v8812",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Jack - Haitoku no Megami": [
+  {
+   "label": "This repo: games/jack (patcher working, machine translation in progress)",
+   "url": "../games/jack/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v6387",
+   "url": "https://vndb.org/v6387",
+   "source": "VNDB"
+  }
+ ],
+ "Silkys.zip/Valentine Kiss - Birth Days 2": [
+  {
+   "label": "This repo: games/valentine_kiss_2 (patcher working, machine translation in progress)",
+   "url": "../games/valentine_kiss_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v18230",
+   "url": "https://vndb.org/v18230",
+   "source": "VNDB"
+  }
  ]
 }

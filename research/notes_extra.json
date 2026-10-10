@@ -179,5 +179,15 @@
   "remarks": [
    "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_D (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2)."
   ]
+ },
+ "jack": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_E (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2)."
+  ]
+ },
+ "valentine_kiss_2": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_D (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2)."
+  ]
  }
 }
