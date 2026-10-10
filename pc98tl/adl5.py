@@ -34,10 +34,11 @@ the GRCG (16 or 32 dots a character, bold or not).
 The patch (patch_exe, on ADL5.EXE; it is not packed):
 
 * The helper's room: ROOM paragraphs put in at the end of the code
-  segment, the segments after it moved up (as pc98tl/adl.py).  The room
-  starts with a jump over itself: a routine at the code segment's end may
-  run on past it (DOR Special Edition '93's last routine ends 13 bytes
-  into the next segment), and goes on where its bytes moved.
+  segment's code, the segments after it moved up (as pc98tl/adl.py): where
+  the code segment's last routine runs on past the next segment's start
+  (DOR Special Edition '93, Yuu Disk Vol. 4), the room goes in after that
+  routine (pc98tl/adl.py _code_end).  The room starts with a jump over
+  itself, to where the bytes after it moved.
 * In a run of text, 20h switches to half-width letters (until 20h again or
   the run's end): 21h-7Eh are ASCII, 7Fh a space and 0Ah a new line, each
   drawn 8 dots wide from the BIOS 8x16 font in the window's colour (bold
@@ -56,7 +57,7 @@ refused.
 import re
 import struct
 
-from .adl import Bad, _asm16, _call_target, _once, CODE_SEG
+from .adl import Bad, _asm16, _call_target, _code_end, _once, CODE_SEG
 
 STMT_LEN = {0x10: 4, 0x11: 4, 0x12: 7, 0x13: 2, 0x14: 1, 0x15: 1, 0x17: 2, 0x20: 2, 0x21: 2, 0x23: 4, 0x24: 4,
             0x28: 3, 0x29: 1, 0x2A: 6, 0x2B: 3, 0x30: 1, 0x31: 1, 0x32: 1, 0x34: 1, 0x35: 1, 0x36: 17, 0x37: 11,
@@ -96,21 +97,28 @@ ADL3 = {"len": {0x23: 2, 0x24: 3, 0x53: 3, 0x54: 5},
         "named_drop": {0xC0, 0xC1}}
 # ADL5A (ADL5.EXE of Collector D Bangaihen: an earlier ADL5 build): ADL5's statements with ADL3's shorter
 # 23h, 24h, 53h, 54h
+# ADL98U (ADL98.EXE of Yuu Disk Vol. 4, 1994: its walker at 58FFh): ADL98's statements with 9Ch three
+# bytes and AEh eleven, 0Dh a control with a byte as well, and the scripts not coded
+ADL98U = {"len": {0x9C: 3, 0xAE: 11}, "ctrl_args": {0x0D: 1}}
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
 
 def set_variant(name):
-    """The engine's build: "adl5" (ADL5.EXE), "adl5a" (an earlier ADL5.EXE), "adl98" (ADL98.EXE), "adl98s"
-    (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b" (ADL3B.EXE)."""
+    """The engine's build: "adl5" (ADL5.EXE), "adl5a" (an earlier ADL5.EXE), "adl98" (ADL98.EXE), "adl98u"
+    (Yuu Disk Vol. 4's ADL98.EXE), "adl98s" (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b" (ADL3B.EXE)."""
     global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
     STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
     CTRL_END, CODED, VARIANT = 0x0C, False, name
-    if name in ("adl98", "adl98s"):
+    if name in ("adl98", "adl98s", "adl98u"):
         STMT_LEN.update(ADL98["len"])
         NAMED |= ADL98["named"]
         CTRL_ARGS.update(ADL98["ctrl_args"])
         CTRL_END, CODED = 0x0D, True
+    if name == "adl98u":
+        STMT_LEN.update(ADL98U["len"])
+        CTRL_ARGS.update(ADL98U["ctrl_args"])
+        CTRL_END, CODED = 0x0E, False
     if name == "adl98s":
         STMT_LEN.update(ADL98S["len"])
         NAMED |= ADL98S["named"]
@@ -191,7 +199,7 @@ def statement(d, i):
     if op == 0x61:
         return _named(d, i) + 1
     if op == 0x64:
-        return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s") else 5)
+        return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s", "adl98u") else 5)
     if op == 0x93 and VARIANT != "adl3a":
         return _named(d, i) + 3
     if op == 0xC3 and not VARIANT.startswith("adl3"):
@@ -200,7 +208,7 @@ def statement(d, i):
         return _named(d, i + 1)
     if VARIANT == "adl98s" and op == 0x9C:
         return i + 2 + d[i + 1]
-    if VARIANT in ("adl98", "adl98s"):
+    if VARIANT in ("adl98", "adl98s", "adl98u"):
         if op == 0x98:
             # (two bytes, then 3-byte records until 04)
             j = i + 3
@@ -239,9 +247,20 @@ def base(d):
     return struct.unpack_from(">H", d, 0)[0]
 
 
+def _past_end(d, i, ents):
+    """An FFh at i (the end the walker stops at) with an entry on it or past it: Yuu Disk Vol. 4's scripts go on
+    after an end, reached by their entries; the FFh is then a statement of one byte."""
+    return d[i] == 0xFF and any(v >= i for v in ents)
+
+
 def _linear(d):
+    ents = [v for v in entries(d).values() if v < len(d)]
     out, i = [], base(d)
-    while i < len(d) and d[i] != 0xFF:
+    while i < len(d) and (d[i] != 0xFF or _past_end(d, i, ents)):
+        if d[i] == 0xFF:
+            out.append((i, i + 1))
+            i += 1
+            continue
         j = statement(d, i)
         if j > len(d):
             raise Bad("statement at %x runs past the end" % i)
@@ -256,7 +275,11 @@ def _resync(d):
     entries reach, never the walker); the bytes skipped move with the statements around them."""
     ents = sorted(v for v in entries(d).values() if v < len(d))
     out, i, tried = [], base(d), set()
-    while i < len(d) and d[i] != 0xFF:
+    while i < len(d) and (d[i] != 0xFF or _past_end(d, i, ents)):
+        if d[i] == 0xFF:
+            out.append((i, i + 1))
+            i += 1
+            continue
         try:
             j = statement(d, i)
             if j > len(d):
@@ -369,7 +392,7 @@ RUN_SIG = re.compile(
     rb"\x26\x8a\x14\x46"
     rb"\x80\x3e..\x00\x74\x12\x8b\x3e(..)\x8a\x0e(..)\xe8(..)\x83\x06..\x02\xeb."     # buffer: draw at [pos]
     rb"\xa0(..)\x32\xe4\xbf(..)\x03\xf8\x8b\x05\x52\xe8(..)\x5a\x8b\x5d\x02\xe8(..)\x8b\xf8"
-    rb"\x8a\x0e..\xe8..\x80\x3e(..)\x00\x75.(\xb0\x0c\xe8..\x0a\xc0\x75.)?"
+    rb"\x8a\x0e..\xe8..(\x80\x3e..\x00|\xf6\x06..\x01)\x75.(\xb0\x0c\xe8..\x0a\xc0\x75.)?"   # the fast flag
     rb"\xb8\x0e\x04\xcd\x18\xf6\xc4\x04\x75."
     rb"\xb4\x05\xcd\x33\xb2\x01\xa8\x03\x75\x09\xe8(..)\xa8\x10\x75\x02\xb2\x03\x8a\xc2"
     rb"\xe8(..)\xe8(..)\xe8(..)\xe9", re.S)
@@ -478,7 +501,7 @@ t5:
     mov di, ax
     mov al, dh
     CALLN ank
-    cmp byte ptr [{fast}], 0
+    {fastcheck}
     jne t7
 {extra}    mov ax, 0x40e
     int 0x18
@@ -573,10 +596,11 @@ g1:
 """
 
 
-def _move_up(exe, hdr, img, fixups, rel_at, split_seg, room_paras, code, name):
-    """The program with room_paras paragraphs (code at their start) put in at split_seg: every
-    segment from it on moves up (the fixups' values, the relocation entries past it, the stack)."""
-    split = split_seg * 16
+def _move_up(exe, hdr, img, fixups, rel_at, split_seg, room_paras, code, name, split=None):
+    """The program with room_paras paragraphs (code at their start) put in at the byte split (split_seg's
+    start, or past it where the code before runs on into it, pc98tl/adl.py _code_end): every segment
+    from split_seg on moves up (the fixups' values, the relocation entries past split, the stack)."""
+    split = split_seg * 16 if split is None else split
     for f in fixups:
         v = struct.unpack_from("<H", img, f)[0]
         if v >= split_seg:
@@ -609,7 +633,8 @@ def patch_exe(exe, name="ADL5.EXE"):
     fixups = [struct.unpack_from("<H", exe, rel_at + 4 * k)[0] + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0]
               for k in range(nrel)]
     next_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > code_seg)
-    seg = bytearray(img[cs0:next_seg * 16])
+    split = _code_end(img, next_seg * 16, name)
+    seg = bytearray(img[cs0:split])
     runs = _once(seg, RUNS_SIG, "text runs' loop")
     run_call = runs.start() + 15
     run = _call_target(seg, run_call)
@@ -617,7 +642,10 @@ def patch_exe(exe, name="ADL5.EXE"):
     if m.start() != run:
         raise SystemExit("%s: the text run is not where its loop calls" % name)
     word = lambda k: struct.unpack("<H", m.group(k))[0]  # noqa: E731
-    buffer, bufpos, color, sel, rec, fast = word(1), word(2), word(3), word(5), word(6), word(9)
+    buffer, bufpos, color, sel, rec = word(1), word(2), word(3), word(5), word(6)
+    # (the fast flag: cmp byte ptr [fast], 0, or (Yuu Disk Vol. 4's ADL98) test byte ptr [fast], 1)
+    fast = struct.unpack("<H", m.group(9)[2:4])[0]
+    fastcheck = ("test byte ptr [%s], 1" if m.group(9)[0] == 0xF6 else "cmp byte ptr [%s], 0") % hex(fast)
     # (call targets are relative: read them off their instructions)
     prewrap = _call_target(seg, m.start(7) - 1)
     xy = _call_target(seg, m.start(8) - 1)
@@ -670,7 +698,7 @@ def patch_exe(exe, name="ADL5.EXE"):
     src = HELPER.format(
         ank=hex(flags[0]), word=hex(flags[1]), run=hex(run), notspace=hex(notspace), buffer=hex(buffer), bufpos=hex(bufpos),
         sel=hex(sel), rec=hex(rec), page=hex(page), width=hex(width), prewrap=hex(prewrap), xy=hex(xy),
-        fast=hex(fast), skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
+        fastcheck=fastcheck, skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
         advance=hex(advance), glyph=hex(glyph), glyph2=hex(glyph + 2), color=hex(color), bold=hex(bold),
         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
         extra=extra, dseg_delta=hex(dseg_delta), bottom=hex(bottom), after=hex(at + ROOM * 16))
@@ -684,7 +712,7 @@ def patch_exe(exe, name="ADL5.EXE"):
     for lo, n in ((run_call, 3), (space, 5), (gat, 3)):
         if any(cs0 + lo - 1 <= f < cs0 + lo + n for f in fixups):
             raise SystemExit("%s: a segment fixup falls in a patched range" % name)
-    return _move_up(exe, hdr, img, fixups, rel_at, next_seg, ROOM, code, name)
+    return _move_up(exe, hdr, img, fixups, rel_at, next_seg, ROOM, code, name, split)
 
 
 # ---- ADL5.EXE's own strings
@@ -822,7 +850,8 @@ def patch_graph(exe, name):
               for k in range(nrel)]
     data_seg = min(v for v in (struct.unpack_from("<H", img, f)[0] for f in fixups) if v > code_seg)
     cs0 = code_seg * 16
-    seg = bytearray(img[cs0:data_seg * 16])
+    split = _code_end(img, data_seg * 16, name)
+    seg = bytearray(img[cs0:split])
     gr = _once(seg, GRAPH_SIG, "graphics drawer")
     gat = gr.start() + 4
     cgkanji = _call_target(seg, gat + 3)
@@ -844,7 +873,6 @@ def patch_graph(exe, name):
     img[cs0:cs0 + len(seg)] = seg
     if any(cs0 + gat - 1 <= f < cs0 + gat + 3 for f in fixups):
         raise SystemExit("%s: a segment fixup falls in a patched range" % name)
-    split = data_seg * 16
     if any(f >= split for f in fixups):
         raise SystemExit("%s: a segment fixup is past the code segment" % name)
     for f in fixups:

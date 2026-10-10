@@ -3187,5 +3187,19 @@
    "The town's command menus, the story's sections, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "yuu_disk_vol_4": [
+  [
+   "ADL98: the title, the main menu (its eleven items, 71h text drawn at their places)",
+   "OK: the items half-width filler, one line each, the highlight bar on the item under the cursor; a click starts that item"
+  ],
+  [
+   "The slot machine corner (the menu's fourth item): the speakers' lines, its command box",
+   "OK: filler half-width, wrapped between words in the window, paged; the command box's items half-width (cut at the screen's right edge, where the box sits)"
+  ],
+  [
+   "The other corners, save/load",
+   "not yet seen"
+  ]
  ]
 }

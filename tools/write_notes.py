@@ -1070,7 +1070,8 @@ def _cells_range(strings, kind):
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
     v98 = cfg.get("version") in ("adl98", "adl98s")
-    label = {"adl98": "ADL98", "adl98s": "ADL98S", "adl3a": "ADL3A", "adl3b": "ADL3B"}.get(cfg.get("version"), "ADL5")
+    label = {"adl98": "ADL98", "adl98u": "ADL98", "adl98s": "ADL98S", "adl3a": "ADL3A",
+             "adl3b": "ADL3B"}.get(cfg.get("version"), "ADL5")
     return ["", "## Engine", "",
             "D.O.'s **%s** engine (`%s`): %d scripts with text (%s), the speaker name table%s (%s); "
             "`pc98tl/adl5.py` documents the script format%s and the program patch "
@@ -1083,9 +1084,11 @@ def adl5_engine(cfg, files, tables, prog):
                 ", ".join("`%s`" % f for f in tables),
                 " (ADL98's scripts are coded: after a 4-byte prefix, each byte inverted)" if v98 else ""), "",
             ("The patch works on the game's hard-disk release (the game in `%s/`)%s." % (
-                cfg["game_dir"], "; the scripts and the tables are members of the archive `%s` (a word, the "
-                "entries' size; entries of a 12-byte name and a dword offset; the members), which the "
-                "patch lays out anew" % cfg["archive"] if cfg.get("archive") else "")
+                cfg["game_dir"], "; the scripts and the tables are members of %s (a word, the entries' size; "
+                "entries of a 12-byte name and a dword offset; the members), which the patch lays out anew" % (
+                    "the archive `%s`" % cfg["archive"] if isinstance(cfg["archive"], str) else
+                    "the archives " + " and ".join("`%s`" % a for a in cfg["archive"]))
+                if cfg.get("archive") else "")
              if cfg["image"].lower().endswith(".hdi") else
              "The patch works on the disk that holds the program and its scripts (`%s`); the other "
              "disks are used as they are." % cfg["image"].replace("\\", "/").split("/")[-1]), "",
@@ -1116,7 +1119,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl3a", "adl3b")
+    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl3a", "adl3b")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
              "engine": "program strings" if v5 else "save slot names"}

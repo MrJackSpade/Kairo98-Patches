@@ -44,6 +44,6 @@ Translation and the content classification (♥) are done by the translation mod
 | ADL5: the title, the opening (OP.EDT): a speaker's name and her lines, then the town | OK: the speaker name half-width with the text indented by its slot (the lines after it indented the same, no name, as in the unpatched game); filler half-width, wrapped between words, paged; the town map (MOVE.EDT) drawn |
 | The town's command menus, the story's sections, save/load, endings | not yet seen |
 
-The game's last routine in ADL5.EXE's code segment runs 13 bytes on into the next segment; the helper's room, put in between them, starts with a jump over itself so that routine goes on where its bytes moved (without it the town map stayed black).
+ADL5.EXE's code segment's last routine runs on 13 bytes into the next segment; the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the routine ran into the helper and the town map stayed black.
 
 Its tables are named NAME_/NA_ (names) and KOM_/COM_ (commands); each table's `max_cells` is the slot the scripts give it (19h, 18h), and for commands also the menu boxes drawn while it is loaded.

@@ -63873,7 +63873,14 @@
      "path": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk [HD]\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_4/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -63881,7 +63888,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal",

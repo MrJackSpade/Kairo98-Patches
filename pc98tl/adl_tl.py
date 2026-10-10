@@ -72,13 +72,13 @@ SCREEN = 640
 TOKEN = re.compile(r"\{X(\d+)\}")
 CTRL_NOTE = {1: "colour %d", 2: "a key wait", 3: "the window cleared", 4: "speaker %d's name", 5: "the picture redrawn",
              6: "a new line", 7: "animation %d on", 8: "animation %d off", 9: "an effect", 10: "an effect",
-             11: "window %d"}
+             11: "window %d", 12: "control 0Ch (%d)", 13: "control 0Dh (%d)"}
 F = adl                         # the script format: pc98tl/adl.py or adl5.py (game.json "version")
 
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl3a", "adl3b") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl3a", "adl3b") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
     else:
@@ -86,31 +86,40 @@ def _set_format(cfg):
     INDENT = cfg.get("name_cells", 10)
 
 
-ARCHIVE = {}                    # game.json "archive" (ADL98S's EDT00): {"path", "arc", "changed"}
+ARCHIVE = {}                    # game.json "archive" (ADL98S's EDT00; Yuu Disk Vol. 4's EDT00 and EDT01):
+                                # {"arcs": [[path, Archive, {name: changed bytes}]], "where": {name: its archive}}
 
 
 def _open_store(vol, cfg):
-    """The scripts' and tables' store: the game folder, or the archive game.json "archive" names."""
+    """The scripts' and tables' store: the game folder, or the archive(s) game.json "archive" names (a
+    name or a list of names; a member's name is looked up in the first archive that holds it)."""
     ARCHIVE.clear()
-    if cfg.get("archive"):
-        path = _path(cfg, cfg["archive"])
-        ARCHIVE.update(path=path, arc=adl5.Archive(vol.read(path)), changed={})
+    names = cfg.get("archive")
+    if names:
+        arcs, where = [], {}
+        for a in ([names] if isinstance(names, str) else names):
+            path = _path(cfg, a)
+            arcs.append([path, adl5.Archive(vol.read(path)), {}])
+            for n in arcs[-1][1].names():
+                where.setdefault(n, arcs[-1])
+        ARCHIVE.update(arcs=arcs, where=where)
 
 
 def _file_read(vol, cfg, name):
-    return ARCHIVE["arc"].read(name) if ARCHIVE else vol.read(_path(cfg, name))
+    return ARCHIVE["where"][name][1].read(name) if ARCHIVE else vol.read(_path(cfg, name))
 
 
 def _file_write(vol, cfg, name, data):
     if ARCHIVE:
-        ARCHIVE["changed"][name] = data
+        ARCHIVE["where"][name][2][name] = data
     else:
         vol.write(_path(cfg, name), data)
 
 
 def _close_store(vol):
-    if ARCHIVE and ARCHIVE["changed"]:
-        vol.write(ARCHIVE["path"], ARCHIVE["arc"].rebuilt(ARCHIVE["changed"]))
+    for path, arc, changed in ARCHIVE.get("arcs", []):
+        if changed:
+            vol.write(path, arc.rebuilt(changed))
 
 
 def _read_script(vol, cfg, name):
@@ -129,7 +138,7 @@ def _image(cfg, src):
 
 def _game_files(vol, cfg):
     if ARCHIVE:
-        return sorted(ARCHIVE["arc"].names())
+        return sorted(ARCHIVE["where"])
     cluster = vol.find(cfg["game_dir"])["cluster"] if cfg["game_dir"] else 0
     return sorted(e["name"] for e in vol.listdir(cluster) if not e["is_dir"])
 

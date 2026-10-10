@@ -278,8 +278,14 @@
  },
  "dor_special_edition_93": {
   "remarks": [
-   "The game's last routine in ADL5.EXE's code segment runs 13 bytes on into the next segment; the helper's room, put in between them, starts with a jump over itself so that routine goes on where its bytes moved (without it the town map stayed black).",
+   "ADL5.EXE's code segment's last routine runs on 13 bytes into the next segment; the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the routine ran into the helper and the town map stayed black.",
    "Its tables are named NAME_/NA_ (names) and KOM_/COM_ (commands); each table's `max_cells` is the slot the scripts give it (19h, 18h), and for commands also the menu boxes drawn while it is loaded."
+  ]
+ },
+ "yuu_disk_vol_4": {
+  "remarks": [
+   "This ADL98.EXE is an earlier build than Zatsuon Ryouiki's: its scripts are not coded, 9Ch is three bytes and AEh eleven, 0Dh is a control with a byte, and some scripts go on after an end (FFh) that their entries reach (pc98tl/adl5.py, variant adl98u).",
+   "The code segment's last routine runs on 11 bytes into the next segment (an instruction across the boundary); the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the menu's highlight was lost."
   ]
  }
 }

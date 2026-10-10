@@ -615,6 +615,31 @@ def _asm16(src, org, want):
     return bytes(code), addr
 
 
+def _code_end(img, boundary, name):
+    """Where a code segment's code ends, for the room put in after it: the boundary (the next segment's
+    start, a paragraph) when the code before it ends there (a ret or jmp, or zero padding), else the end
+    of the routine that runs on past it (DOR Special Edition '93's ADL5.EXE: 13 bytes into its data
+    segment; Yuu Disk Vol. 4's ADL98.EXE: an instruction across the boundary, 11 bytes into a library
+    segment, whose own code starts after them).  The bytes up to it stay where they are."""
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    if bytes(img[boundary - 3:boundary]) == bytes(3):
+        return boundary
+    term = ("ret", "retf", "iret", "jmp", "ljmp")
+    start = max(0, boundary - 0x80)
+    ins = list(Cs(CS_ARCH_X86, CS_MODE_16).disasm(bytes(img[start:boundary + 0x40]), start))
+    before = [i for i in ins if i.address < boundary]
+    if not before:
+        raise SystemExit("%s: the code before the next segment does not decode" % name)
+    last = before[-1]
+    if last.address + last.size == boundary and last.mnemonic in term:
+        return boundary
+    for i in ins:
+        if i.address >= last.address and i.mnemonic in term:
+            return i.address + i.size
+    raise SystemExit("%s: the code segment's last routine does not end within 64 bytes of the next segment"
+                     % name)
+
+
 def _once(img, sig, what, lo=0, hi=None):
     hi = len(img) if hi is None else hi
     if isinstance(sig, re.Pattern):
@@ -722,8 +747,9 @@ def patch_exe(exe):
         raise SystemExit("ADL.EXE: the CG drawer is not laid out as expected")
     grcg_on = _call_target(seg, cgk + 5)
     grcg_off = _call_target(seg, cgk + 14)
-    # (the room: at the end of the code segment, the data segment and all after it moved up)
-    at = (data_seg - CODE_SEG) * 16
+    # (the room: at the end of the code segment's code, the data segment and all after it moved up)
+    split = _code_end(img, data_seg * 16, "ADL.EXE")
+    at = split - CODE_SEG * 16
     helper_at, flags = at, (at + ROOM * 16 - 2, at + ROOM * 16 - 1)
     newline_part = NEWLINE_PART if override else ""
     src = HELPER.replace("{newline_part}", newline_part).format(
@@ -753,7 +779,6 @@ def patch_exe(exe):
         if any(cs0 + lo - 1 <= f < cs0 + lo + n for f in fixups):
             raise SystemExit("ADL.EXE: a segment fixup falls in a patched range")
     # the room put in, the segments after it moved up
-    split = data_seg * 16
     if any(f >= split for f in fixups):
         raise SystemExit("ADL.EXE: a segment fixup is past the code segment")
     for f in fixups:

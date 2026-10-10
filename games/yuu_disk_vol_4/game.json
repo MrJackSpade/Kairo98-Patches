@@ -1,0 +1,15 @@
+{
+ "title": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+ "key": "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+ "image": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk [HD]\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk.hdi",
+ "encoding": "adl",
+ "version": "adl98u",
+ "program": "ADL98.EXE",
+ "game_dir": "UD",
+ "archive": [
+  "EDT00",
+  "EDT01"
+ ],
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 8
+}

@@ -1881,5 +1881,13 @@
    "url": "https://vndb.org/v18196",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk": [
+  {
+   "label": "This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)",
+   "url": "../games/yuu_disk_vol_4/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
