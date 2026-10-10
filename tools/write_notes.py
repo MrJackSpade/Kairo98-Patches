@@ -811,7 +811,8 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
     names = {"msg": "messages", "item": "menu items", "label": "labels", "record": "names in data tables"}
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if r.split(":")[0].upper().endswith(".MES")})
     h = cfg.get("hdd")
-    out = ["# %s%s (Elf)" % ("♥ " if heart else "", cfg["title"]), "",
+    maker = "Silky's" if cfg["key"].startswith("Silkys.zip/") else "Elf"
+    out = ["# %s%s (%s)" % ("♥ " if heart else "", cfg["title"], maker), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
            "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
@@ -832,9 +833,12 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                  h["dir"], " / ".join(h["run"][2:]), h["base"].replace("\\", "/")) if h else
              "The patch works on the game's hard-disk release (the game in `%s/`), which has room for a "
              "longer script." % cfg["game_dir"]) + (
-                "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
-                "only, so the scripts are found from `start.mes` through the script names the scripts "
-                "give; a rebuilt script is compressed again and the archive laid out anew." % ", ".join(
+                ("  The scripts are in Silky's data archives %s (`pc98tl/silkdat.py`): a directory "
+                 "encrypted with a chained XOR and the members stored as they are; an archive with a rebuilt "
+                 "script is laid out anew." if cfg.get("archive_format") == "silkdat" else
+                 "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
+                 "only, so the scripts are found from `start.mes` through the script names the scripts "
+                 "give; a rebuilt script is compressed again and the archive laid out anew.") % ", ".join(
                     "`%s`" % f for f in cfg["archives"]) if cfg.get("archives") else ""), "",
             "* Nothing in a script is an address, so the scripts are rebuilt with the English in place "
             "of the Japanese.",
