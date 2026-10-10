@@ -1609,5 +1609,18 @@
    "url": "https://vndb.org/v9053",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Mobius Roid": [
+  {
+   "label": "This repo: games/mobius_roid (patcher working, machine translation in progress)",
+   "url": "../games/mobius_roid/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8812",
+   "url": "https://vndb.org/v8812",
+   "source": "VNDB"
+  }
  ]
 }

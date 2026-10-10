@@ -1,0 +1,18 @@
+{
+ "title": "Mobius Roid",
+ "key": "Silkys.zip/Mobius Roid",
+ "image": "Mobius Roid\\Mobius Roid [HD]\\Mobius Roid.hdi",
+ "encoding": "ai5",
+ "version": "sil2",
+ "program": "SIL.EXE",
+ "game_dir": "MOBIUS",
+ "archive_format": "silkdisk",
+ "archives": [
+  "DISK_A",
+  "DISK_B",
+  "DISK_C",
+  "DISK_D"
+ ],
+ "calls": {},
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

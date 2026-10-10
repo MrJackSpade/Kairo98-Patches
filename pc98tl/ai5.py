@@ -191,12 +191,12 @@ def _tokens(d, out):
             i = _expr(d, i + 2)[0]
         elif b in (0x1c, 0x1d, 0x1e):
             i += 1
-        elif b >= 0x80:
-            i += 1
+        elif b >= 0x60 and _two_byte(b):
+            i += 2
             out.append(("ch", s, i, None))
             continue
-        elif 0x60 <= b < 0x80:
-            i += 2
+        elif b >= 0x80:
+            i += 1
             out.append(("ch", s, i, None))
             continue
         elif 0x30 <= b <= 0x5A or b in (7, 8, 9):
@@ -211,7 +211,7 @@ def _tokens(d, out):
 def char(d, a):
     """The character at a (a dictionary code or a two-byte one)."""
     b = d[a]
-    pair = d[2 + 2 * (b - 0x80):4 + 2 * (b - 0x80)] if b >= 0x80 else bytes([b + 0x20, d[a + 1]])
+    pair = bytes([b + 0x20, d[a + 1]]) if _two_byte(b) else d[2 + 2 * (b - DICT):4 + 2 * (b - DICT)]
     if pair == b"\x81\x93":
         return "\n"
     try:
@@ -266,6 +266,9 @@ def _number(d, i):
 # the engine's variables at @ (DS:E256h in AI5, C256h in AI4) as word indexes, by engine version
 ENGINES = {
     "ai5": {"window": (13, 14, 15, 16), "cursor": 17, "font": 21, "ank": True},
+    # (Silky's later SIL.EXE, Mobius Roid: dictionary characters from D0h, and C0h-CFh xx a
+    # two-byte character too, its lead E0h-EFh)
+    "sil2": {"window": (13, 14, 15, 16), "cursor": 17, "font": 21, "ank": True, "dict": 0xD0, "kanji": True},
     # (AI4, Shangrlia: no half-width strings; 06 ... 06 is skipped)
     "ai4": {"window": (24, 25, 26, 27), "cursor": 28, "font": 12, "ank": False},
 }
@@ -273,12 +276,20 @@ WINDOW = (13, 14, 15, 16)       # the poke indexes of the window's left, top, ri
 CURSOR = 17                     # the cursor's column and line
 FONT = 21                       # line height | character width << 8
 ANK = True                      # the engine draws half-width strings (06 ... 06)
+DICT = 0x80                     # the first dictionary character
+KANJI = False                   # C0h-CFh xx is a two-byte character (lead E0h-EFh) too
 
 
 def set_engine(cfg):
-    global WINDOW, CURSOR, FONT, ANK
+    global WINDOW, CURSOR, FONT, ANK, DICT, KANJI
     e = ENGINES[cfg.get("version", "ai5")]
     WINDOW, CURSOR, FONT, ANK = e["window"], e["cursor"], e["font"], e["ank"]
+    DICT, KANJI = e.get("dict", 0x80), e.get("kanji", False)
+
+
+def _two_byte(b):
+    """Whether the text byte b starts a two-byte character (its lead b + 20h)."""
+    return 0x60 <= b < 0x80 or KANJI and 0xC0 <= b <= 0xCF
 
 
 def _block_end(d, i):
@@ -500,14 +511,14 @@ _SUBST = {"’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-"
 
 def _dict(d):
     start = struct.unpack_from("<H", d, 0)[0]
-    return {d[2 + 2 * k:4 + 2 * k]: 0x80 + k for k in range((start - 2) // 2)}
+    return {d[2 + 2 * k:4 + 2 * k]: DICT + k for k in range((start - 2) // 2)}
 
 
 def _wide(pair, dic):
     """The script bytes of a two-byte character (None where it has none)."""
     if pair in dic:
         return bytes([dic[pair]])
-    if 0x81 <= pair[0] <= 0x9F:
+    if 0x81 <= pair[0] <= 0x9F or KANJI and 0xE0 <= pair[0] <= 0xEF:
         return bytes([pair[0] - 0x20, pair[1]])
     return None
 
@@ -833,8 +844,8 @@ class Scripts:
     (game.json "archives": [archive file names in the game folder]; the
     scripts in one are found from start.mes through the script names the
     scripts give, as the archive holds hashes only), or in Silky's data
-    archives (game.json "archive_format": "silkdat", pc98tl/silkdat.py: the
-    scripts by their names in it).  Names are as the refs give them:
+    archives (game.json "archive_format": "silkdat" or "silkdisk",
+    pc98tl/silkdat.py: the scripts by their names in it).  Names are as the refs give them:
     "FILE.MES", or "ARCHIVE/file.mes"."""
 
     def __init__(self, vol, cfg):
@@ -846,10 +857,11 @@ class Scripts:
                           if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
             return
         self.items = []
-        if cfg.get("archive_format") == "silkdat":
+        if cfg.get("archive_format") in ("silkdat", "silkdisk"):
             from . import silkdat
+            kind = silkdat.Archive if cfg["archive_format"] == "silkdat" else silkdat.DiskArchive
             for name in cfg["archives"]:
-                self.arcs[name] = silkdat.Archive(vol.read(d + "/" + name))
+                self.arcs[name] = kind(vol.read(d + "/" + name))
             # (the script names the scripts give, for the one archive member whose first letter
             # takes the directory's key)
             known = {"MAIN.MES", "START.MES"}

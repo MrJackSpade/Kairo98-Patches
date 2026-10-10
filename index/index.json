@@ -188319,15 +188319,27 @@
      "path": "Mobius Roid\\Mobius Roid [HD]\\Mobius Roid.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mobius_roid (patcher working, machine translation in progress)",
+     "url": "../games/mobius_roid/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8812",
+     "url": "https://vndb.org/v8812",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17891 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Nonomura Byouin no Hitobito",

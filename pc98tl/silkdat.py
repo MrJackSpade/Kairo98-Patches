@@ -75,3 +75,61 @@ class Archive:
         for i in range(1, len(dec)):
             enc[i] = dec[i] ^ enc[i - 1]
         return bytes(self.raw[:HEAD]) + struct.pack("<I", len(dec)) + bytes(enc) + bytes(body)
+
+
+class DiskArchive:
+    """Silky's other data archive (SIL.EXE: Mobius Roid, Jack, Valentine
+    Kiss 2; DISK_A ... DISK_E): a word, the count; that many 20-byte
+    entries (a name, 14 bytes NUL padded; the offset from the end of the
+    directory, a dword; the size, a word), every byte of them XORed with
+    its offset in the file plus a constant (97h in these games, read off
+    the first name's padding); the members, stored as they are."""
+
+    def __init__(self, raw):
+        self.raw = raw
+        n = struct.unpack_from("<H", raw, 0)[0]
+        # (the first name's last byte is padding: 0 once decoded)
+        self.k = (raw[2 + 13] - (2 + 13)) & 0xFF
+        dec = bytes(raw[i] ^ ((i + self.k) & 0xFF) for i in range(2, 2 + 20 * n))
+        self.base = 2 + 20 * n
+        self.entries = []
+        for j in range(n):
+            e = dec[20 * j:20 * j + 20]
+            off, size = struct.unpack_from("<IH", e, 14)
+            self.entries.append((e[:14].split(b"\0")[0].decode("ascii", "replace"), off, size, e[:14]))
+        if not self.entries or any(not re.fullmatch(r"[!-~]+", n) for n, *_ in self.entries):
+            raise ValueError("not a Silky's DISK_ archive (its directory does not decode)")
+
+    def name_first(self, known):
+        pass
+
+    def names(self):
+        return [e[0] for e in self.entries]
+
+    def read(self, name):
+        for n, off, size, _raw in self.entries:
+            if n == name:
+                return self.raw[self.base + off:self.base + off + size]
+        raise KeyError(name)
+
+    def rebuilt(self, changed):
+        """The archive with the members in changed put in, laid out anew.
+        A member keeps its whole span (up to the next member, or the end of
+        the file: a member past 64 KB has only its size's low word in the
+        directory, and some archives end with a few bytes more)."""
+        body = bytearray()
+        dec = bytearray()
+        offs = sorted({off for _n, off, _s, _r in self.entries}) + [len(self.raw) - self.base]
+        for name, off, size, raw_name in self.entries:
+            if name in changed:
+                data = changed[name]
+                if len(data) > 0xFFFF:
+                    raise SystemExit("%s: %d bytes, a DISK_ archive member holds 65535" % (name, len(data)))
+                size = len(data)
+            else:
+                data = self.raw[self.base + off:self.base + offs[offs.index(off) + 1]]
+            dec += raw_name + struct.pack("<IH", len(body), size)
+            body += data
+        head = bytearray(self.raw[:2])
+        head += bytes(b ^ ((i + 2 + self.k) & 0xFF) for i, b in enumerate(dec))
+        return bytes(head + body)
