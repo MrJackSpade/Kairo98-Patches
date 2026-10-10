@@ -1,0 +1,10 @@
+{
+ "title": "Hamlet",
+ "key": "PantherSoftware.zip/Hamlet",
+ "image": "Hamlet\\Hamlet [HD]\\Hamlet.hdi",
+ "encoding": "panther",
+ "program": "HAM.EXE",
+ "game_dir": "HAMLET",
+ "opening": "HOPEN.EXE",
+ "boot_steps": "30:shot,1:mouse=0;-20,1:shot,1:lclick,5:shot,1:lclick,5:shot,1:lclick,5:shot,10:shot,10:shot,1:lclick,5:shot"
+}

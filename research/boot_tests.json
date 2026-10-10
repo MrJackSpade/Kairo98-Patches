@@ -3297,5 +3297,35 @@
    "The mahjong game, the quiz, the album, endings",
    "not yet seen: as in Moonlight Chan Rin Shan, the title menu takes no click in the emulator"
   ]
+ ],
+ "hamlet": [
+  [
+   "Boot from the hard disk (PANTHER.EXE's logo, then HAM.EXE)",
+   "OK: the logo, then the title menu"
+  ],
+  [
+   "Title menu (HAM.EXE's string routine)",
+   "OK: the filler labels drawn half-width, bold, in the menu's colours; past the box where longer than the Japanese (reported as overruns)"
+  ],
+  [
+   "New game: the first scene's messages (START.BIN, message window)",
+   "OK: filler wrapped between words at 45 letters, 5 lines a page, the key wait and the next page; the face beside it"
+  ],
+  [
+   "Opening (HOPEN.EXE): glossary page",
+   "OK: each line typed out half-width at its place"
+  ],
+  [
+   "Opening: the characters' cards",
+   "OK: each name centred in its card, moving with it, cut to the card's 38 columns"
+  ],
+  [
+   "Opening: story pages (reveal and scroll)",
+   "OK: lines centred anew, cut at 80 letters (reported), revealed and scrolled as the Japanese"
+  ],
+  [
+   "Opening: the mode labels (CRUISE / ASSAULT / COMBAT MODE)",
+   "not reached in the test"
+  ]
  ]
 }

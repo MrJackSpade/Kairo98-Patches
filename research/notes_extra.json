@@ -331,5 +331,10 @@
    "This CHAN.EXE keeps its text window's state at 5758h (Moonlight Chan Rin Shan's at 0); pc98tl/chan.py reads it off the character draw.  Its profile table names four girls, each twice; the profiles it does not name are kept as they are.",
    "PSTAT.EXE (run first by MOON.BAT: it checks the machine and the memory) prints to DOS's text console, English as it is; its messages are `e` strings, each in its own bytes."
   ]
+ },
+ "hamlet": {
+  "remarks": [
+   "Menu labels longer than the Japanese draw past their box, and what is drawn outside it stays on screen after the menu closes: keep them to their `max_cells`."
+  ]
  }
 }

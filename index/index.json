@@ -168362,7 +168362,14 @@
      "path": "Hamlet\\Hamlet [HD]\\Hamlet.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hamlet (patcher working, machine translation in progress)",
+     "url": "../games/hamlet/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "do",
@@ -168370,7 +168377,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "PantherSoftware.zip/Isekai Denshou Joshua",

@@ -1207,6 +1207,83 @@ def chan_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def panther_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    prog, op = cfg["program"], cfg.get("opening")
+    names = {"msg": "scene strings", "engine": "program strings", "opening": "opening strings"}
+    kept = sum(1 for e in strings if e["kind"] == "msg" and "note" in e)
+    out = ["# %s%s (Panther Software)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Panther Software's own engine (`%s`): the scenes (`*.P`, `*.CMN`, `START*.BIN`) are code overlays "
+            "the engine reads into its overlay segment, their strings among their code, a message named by "
+            "the `mov si` before the engine's message call; the program's own strings are in its data "
+            "segment%s.  `pc98tl/panther.py` documents the formats and the program patches, "
+            "`pc98tl/panther_tl.py` the English.  Unchanged files rebuild byte for byte."
+            % (prog, "; the opening (`%s`) has its text in its own data segment" % op if op else ""), "",
+            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            "* `%s` gets a helper put in at the end of its code segment (the segments after it move up).  "
+            "A byte from 20h to 7Fh is a half-width letter: drawn 8 dots wide from the BIOS 8x16 font, bold "
+            "as the program's characters, two to a character's place; in the message window and the string "
+            "routine (menus) alike." % prog,
+            "* A scene's message longer than its own bytes is put at the scene's end and its `mov si` pointed "
+            "at it; the overlay segment grows to the largest scene (up to 65535 bytes), the segments after "
+            "it moving up.",
+            "* The program's messages and menu labels longer than their own bytes go in room put in after "
+            "its data segment, their `mov si` / `mov bx` pointed at them."]
+    if op:
+        out.append("* `%s` gets the same half-width drawing in its character loops, its reveal and its string "
+                   "routine; its text is rebuilt in room put in after its data segment (story lines centred "
+                   "anew, the characters' names centred in their card)." % op)
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Scene messages (`m` ids, `max_cells` 45): any length.  The patcher wraps between words at 45 "
+            "letters a line; the engine pages every 5 lines with a key wait.  `\\n` starts a new line.  ASCII "
+            "is drawn half-width; another character is drawn full-width when Shift-JIS has it (two cells), "
+            "else written as `?`.",
+            "* Scene strings no `mov si` names (%d, their `note` says so: the ending's credits and a few "
+            "lines): each within its own bytes (`max_cells`); longer ones are cut and reported." % kept,
+            "* A scene may take 65535 bytes with its English (the engine's read); a build past it is refused "
+            "and names the scene.",
+            "* Program strings (`e` ids): messages (`max_cells` 45) as the scenes' are; menu labels one line "
+            "each, `max_cells` the Japanese's room (past it reported, the box does not grow); the weapons' "
+            "names and the disk prompts within their own bytes (longer ones are cut and reported).  The "
+            "data segment has 39152 bytes of room for the moved ones; a build past it is "
+            "refused."]
+    if op:
+        out.append("* Opening strings (`o` ids): one line each, `max_cells` letters (80 for the story and "
+                   "glossary lines, the card's columns for the characters' names, the Japanese's room for "
+                   "the mode labels, past which is reported); longer lines are cut and reported.")
+    out += ["", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, the pictures; the opening's map and mecha "
+            "screens are English already)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1356,6 +1433,11 @@ def main():
             continue
         if cfg.get("encoding") == "silky":
             out = silky_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "panther":
+            out = panther_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
