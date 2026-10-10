@@ -257,5 +257,12 @@
   "remarks": [
    "Disk C of D.O. Kaizokuban (games/do_kaizokuban is Disks A-B). ADL2.EXE is ADL with ADL5's opcode numbering (pc98tl/adl.py, variant adl2); its new line (06) waits for a key itself, so the patch leaves that control as it is."
   ]
+ },
+ "hoshi_no_suna_monogatari_2": {
+  "remarks": [
+   "The collection's \"uncensored\" image has the same scripts and tables (only ADL2.EXE and DA differ); its ADL2.EXE takes the same patch, so it can be dropped onto PATCH.BAT (the patcher warns that it is not the image the strings were read from).",
+   "Most scripts here hold a 13h after a run of text, then a statement the entries reach: the walker never steps past 13h, so the tokenizer picks the walk up again at the entry (one byte kept as it is each time).",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: DAY4.EDT by 48,829 letters; DAY4's English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
+  ]
  }
 }
