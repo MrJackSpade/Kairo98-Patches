@@ -75,7 +75,7 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl98", "adl98s") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl98", "adl98s", "adl3a", "adl3b") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
     else:
@@ -134,11 +134,11 @@ def _game_files(vol, cfg):
 def scripts(vol, cfg):
     """The game folder's scripts (*.EDT but the tables)."""
     return [n for n in _game_files(vol, cfg)
-            if n.upper().endswith(".EDT") and not re.match(r"(NAME|KOM)_F", n.upper())]
+            if n.upper().endswith(".EDT") and not re.match(r"(NAME|KOM)_", n.upper())]
 
 
 def tables(vol, cfg):
-    return [n for n in _game_files(vol, cfg) if re.match(r"(NAME|KOM)_F\d*\.EDT$", n.upper())]
+    return [n for n in _game_files(vol, cfg) if re.match(r"(NAME|KOM)_\w*\.EDT$", n.upper())]
 
 
 def _program(vol, cfg):

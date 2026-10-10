@@ -264,5 +264,10 @@
    "Most scripts here hold a 13h after a run of text, then a statement the entries reach: the walker never steps past 13h, so the tokenizer picks the walk up again at the entry (one byte kept as it is each time).",
    "The --pseudo build cuts its filler to fit the 64 KB script segment: DAY4.EDT by 48,829 letters; DAY4's English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
   ]
+ },
+ "dor_special_edition_sakigake": {
+  "remarks": [
+   "The title screen waits for Return (clicks do not go on), in the unpatched game as well."
+  ]
  }
 }

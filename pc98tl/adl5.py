@@ -40,7 +40,10 @@ The patch (patch_exe, on ADL5.EXE; it is not packed):
   drawn 8 dots wide from the BIOS 8x16 font in the window's colour (bold
   where the engine's text is bold), with the engine's own character wait
   and wrap (the character width set to 8 for it); bytes of 80h and up are
-  still Shift-JIS.
+  still Shift-JIS.  Before each word the helper measures it against the
+  window's right edge and starts a new line when it would not fit; a new
+  line whose row (16 dots) would run past the window's bottom pages first
+  (the engine's own page only once a row starts at or below the bottom).
 * Speaker names and the commands (drawn by the same routine, 1D8Bh) take
   ASCII as well.
 
@@ -81,6 +84,13 @@ ADL98 = {
 # ADL98S (ADL98S.EXE, Cybernoid Alpha 1995: its walker at 59FFh): ADL98's, and 66h named, 67h, 9Dh,
 # AFh, and 9Ch (a length byte and that many bytes)
 ADL98S = {"len": {0x67: 1, 0x9D: 6, 0xAF: 8}, "named": {0x66}}
+# ADL3 (ADL3A.EXE: DOR Special Edition Sakigake, Doki Doki Disk Vol. 4-5; ADL3B.EXE: Collector D): ADL5's
+# earlier build, without its opcodes from B0h and C0h on, 75h, 88h, 94h, 95h, with shorter 23h, 24h, 53h,
+# 54h; ADL3A's 93h is one byte (ADL3B's and ADL5's a name and three bytes)
+ADL3 = {"len": {0x23: 2, 0x24: 3, 0x53: 3, 0x54: 5},
+        "drop": {0x75, 0x88, 0x94, 0x95, 0xB0, 0xB1, 0xB2, 0xB3, 0xB4, 0xB5, 0xC2, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9,
+                 0xCA, 0xCB},
+        "named_drop": {0xC0, 0xC1}}
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
@@ -98,6 +108,13 @@ def set_variant(name):
     if name == "adl98s":
         STMT_LEN.update(ADL98S["len"])
         NAMED |= ADL98S["named"]
+    if name in ("adl3a", "adl3b"):
+        STMT_LEN.update(ADL3["len"])
+        for op in ADL3["drop"]:
+            STMT_LEN.pop(op, None)
+        NAMED -= ADL3["named_drop"]
+        if name == "adl3a":
+            STMT_LEN[0x93] = 1
 
 
 def decode(raw):
@@ -167,11 +184,11 @@ def statement(d, i):
         return _named(d, i) + 1
     if op == 0x64:
         return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s") else 5)
-    if op == 0x93:
+    if op == 0x93 and VARIANT != "adl3a":
         return _named(d, i) + 3
-    if op == 0xC3:
+    if op == 0xC3 and not VARIANT.startswith("adl3"):
         return i + 4 + d[i + 1] * d[i + 2] * (2 if d[i + 3] & 2 else 1)
-    if op == 0xC4:
+    if op == 0xC4 and not VARIANT.startswith("adl3"):
         return _named(d, i + 1)
     if VARIANT == "adl98s" and op == 0x9C:
         return i + 2 + d[i + 1]
@@ -333,7 +350,7 @@ ROOM = 0x20                     # paragraphs put in at the end of the code segme
 
 # a run of text, the engine's loop (1F9Eh): call controls / mov al, es:[si-1] / or al, al / je /
 # cmp al, FFh / jne / call run / jmp
-RUNS_SIG = re.compile(rb"\xe8..\x26\x8a\x44\xff\x0a\xc0\x74\x09\x3c\xff\x75\x05\xe8(..)\xeb\xec", re.S)
+RUNS_SIG = re.compile(rb"\xe8..\x26\x8a\x44\xff\x0a\xc0\x74\x09\x3c\xff\x75\x05\xe8(..)\xeb.", re.S)
 # the run (1FBAh) from its test of the buffer mode to its draw, wait and advance
 RUN_SIG = re.compile(
     rb"\x80\x3e(..)\x00\x75\x05\x56\xe8..\x5e"           # cmp [buffer], 0 / jne / push si / call / pop si
@@ -392,8 +409,7 @@ t3:
     mov ax, word ptr [di]
     cmp ax, word ptr [di + 4]
     je t9
-    add word ptr [di + 2], 0x14
-    CALLN {page}
+    CALLN newline
     mov ax, word ptr [di + 4]
     mov word ptr [di], ax
 t9:
@@ -431,9 +447,8 @@ w2:
     add ax, cx
     cmp ax, word ptr [di + 8]
     jbe t5
-    add word ptr [di + 2], 0x14
     push dx
-    CALLN {page}
+    CALLN newline
     pop dx
     mov ax, word ptr [di + 4]
     mov word ptr [di], ax
@@ -474,6 +489,18 @@ t7:
     CALLN {advance}
     pop word ptr [{width}]
     JMPN {run}
+
+newline:
+    add word ptr [di + 2], 0x14
+    mov ax, word ptr [di + 2]
+    add ax, 0x10
+    cmp ax, word ptr [di + {bottom}]
+    jbe n1
+    mov ax, word ptr [di + {bottom}]
+    mov word ptr [di + 2], ax
+n1:
+    CALLN {page}
+    .byte 0xc3
 
 ank:
     pusha
@@ -600,7 +627,13 @@ def patch_exe(exe, name="ADL5.EXE"):
     if nl < 0:
         raise SystemExit("%s: the advance's new line is not found" % name)
     page = _call_target(seg, nl + 4)
-    g = _once(seg, GLYPH_SIG, "glyph drawer")
+    # (the page: mov ax, [di+2] / cmp ax, [di+bottom] / jb / call: a new line pages once a row starts at
+    # or below the window's bottom; the helper's pages as well once a row would run past it)
+    pm = re.compile(rb"\x8b\x45\x02\x3b\x45(.)\x72\x03\xe8", re.S).match(seg, page)
+    if not pm:
+        raise SystemExit("%s: the page is not laid out as expected" % name)
+    bottom = pm.group(1)[0]
+    g =_once(seg, GLYPH_SIG, "glyph drawer")
     gcolor = struct.unpack("<H", g.group(1))[0]
     grcg_on = _call_target(seg, g.start() + 6)
     grcg_off = _call_target(seg, g.end() - 4)
@@ -627,7 +660,7 @@ def patch_exe(exe, name="ADL5.EXE"):
         fast=hex(fast), skipkey=hex(skipkey), settimer=hex(settimer), waittimer=hex(waittimer),
         advance=hex(advance), glyph=hex(glyph), glyph2=hex(glyph + 2), color=hex(color), bold=hex(bold),
         grcg_on=hex(grcg_on), grcg_off=hex(grcg_off), cgkanji=hex(cgkanji), graphloop=hex(graphloop),
-        extra=extra, dseg_delta=hex(dseg_delta))
+        extra=extra, dseg_delta=hex(dseg_delta), bottom=hex(bottom))
     code, labels = _asm16(src, at, ("runstart", "text", "graph"))
     if len(code) > ROOM * 16 - 0x14:
         raise SystemExit("%s: the helper is %d bytes, the room %d" % (name, len(code), ROOM * 16 - 0x14))
@@ -655,8 +688,23 @@ def _data_segment(img, fixups):
 def _runtime_bytes(seg):
     """The data segment's bytes the code writes one at a time (mov [addr], a byte register: a drive
     letter, a digit)."""
-    return {struct.unpack_from("<H", m.group(1) or m.group(2))[0]
-            for m in re.finditer(rb"\xa2(..)|\x88[\x06\x0e\x16\x1e\x26\x2e\x36\x3e](..)", seg, re.S)}
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    md = Cs(CS_ARCH_X86, CS_MODE_16)
+    found, a = set(), 0
+    # (a store through ds or es: the data segment; cs: is the program's own variables)
+    store = re.compile(r"byte ptr (?:es:)?\[(0x[0-9a-f]+)\], [a-d][hl]$")
+    while a < len(seg):
+        moved = False
+        for ins in md.disasm(seg[a:], a):
+            if ins.mnemonic == "mov":
+                m = store.match(ins.op_str)
+                if m:
+                    found.add(int(m.group(1), 16))
+            a = ins.address + ins.size
+            moved = True
+        if not moved or a < len(seg):
+            a += 1
+    return found
 
 
 def program_strings(exe):

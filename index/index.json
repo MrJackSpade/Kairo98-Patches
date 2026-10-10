@@ -60568,7 +60568,14 @@
      "path": "Collector D\\Collector D [HD]\\Collector D.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/collector_d (patcher working, machine translation in progress)",
+     "url": "../games/collector_d/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42530 (erotic content)",
    "engine": "do",
@@ -60576,7 +60583,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Collector D Bangaihen",
@@ -61308,7 +61315,14 @@
      "path": "D.O. Doki Doki Disk Vol. 4\\D.O. Doki Doki Disk Vol. 4 [FD]\\D.O. Doki Doki Disk Vol. 4.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_4 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_4/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61316,7 +61330,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 5",
@@ -61347,7 +61361,14 @@
      "path": "D.O. Doki Doki Disk Vol. 5\\D.O. Doki Doki Disk Vol. 5 [FD]\\D.O. Doki Doki Disk Vol. 5.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_5/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61355,7 +61376,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 6",
@@ -62277,15 +62298,27 @@
      "path": "DOR Special Edition Sakigake\\DOR Special Edition Sakigake [HD]\\DOR Special Edition Sakigake.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_special_edition_sakigake (patcher working, machine translation in progress)",
+     "url": "../games/dor_special_edition_sakigake/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18195",
+     "url": "https://vndb.org/v18195",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42256 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Exterlien",

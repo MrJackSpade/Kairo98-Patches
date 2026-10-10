@@ -1,0 +1,14 @@
+{
+ "title": "Collector D",
+ "key": "DO.zip/Collector D",
+ "image": "Collector D\\Collector D [HD]\\Collector D.hdi",
+ "encoding": "adl",
+ "version": "adl3b",
+ "program": "ADL3B.EXE",
+ "game_dir": "DL03",
+ "program_files": [
+  "PCMSET.EXE"
+ ],
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:lclick,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 6
+}

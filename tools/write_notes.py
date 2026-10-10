@@ -1063,7 +1063,7 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
     v98 = cfg.get("version") in ("adl98", "adl98s")
-    label = {"adl98": "ADL98", "adl98s": "ADL98S"}.get(cfg.get("version"), "ADL5")
+    label = {"adl98": "ADL98", "adl98s": "ADL98S", "adl3a": "ADL3A", "adl3b": "ADL3B"}.get(cfg.get("version"), "ADL5")
     return ["", "## Engine", "",
             "D.O.'s **%s** engine (`%s`): %d scripts with text (%s), the speaker name table%s (%s); "
             "`pc98tl/adl5.py` documents the script format%s and the program patch "
@@ -1088,7 +1088,8 @@ def adl5_engine(cfg, files, tables, prog):
             "segments after it move up, every relocation with them).  In a run of text, 20h (a "
             "character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from "
             "the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's "
-            "text is), with the engine's own character wait and paging.  Before each English word the "
+            "text is), with the engine's own character wait and paging (a new line whose row would run past "
+            "the window's bottom pages first).  Before each English word the "
             "helper measures it against the window's right edge and starts a new line when it would not "
             "fit (a space at a line's start is not drawn): the windows a script uses change as it calls "
             "and jumps, so the wrap is the program's, not the patcher's." % prog,
@@ -1108,7 +1109,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    v5 = cfg.get("version") in ("adl5", "adl98", "adl98s")
+    v5 = cfg.get("version") in ("adl5", "adl98", "adl98s", "adl3a", "adl3b")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
              "engine": "program strings" if v5 else "save slot names"}

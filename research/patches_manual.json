@@ -1818,5 +1818,42 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/DOR Special Edition Sakigake": [
+  {
+   "label": "This repo: games/dor_special_edition_sakigake (patcher working, machine translation in progress)",
+   "url": "../games/dor_special_edition_sakigake/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v18195",
+   "url": "https://vndb.org/v18195",
+   "source": "VNDB"
+  }
+ ],
+ "DO.zip/Collector D": [
+  {
+   "label": "This repo: games/collector_d (patcher working, machine translation in progress)",
+   "url": "../games/collector_d/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 4": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_4 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_4/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "DO.zip/D.O. Doki Doki Disk Vol. 5": [
+  {
+   "label": "This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)",
+   "url": "../games/doki_doki_disk_vol_5/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

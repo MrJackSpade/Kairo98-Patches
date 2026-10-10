@@ -3103,5 +3103,61 @@
    "The other sections, save/load",
    "not yet seen"
   ]
+ ],
+ "dor_special_edition_sakigake": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the title, the opening (the elf in the forest), the first menu",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the small text window, paged; the menu's message window and its command box (4 letters, the table's slot)"
+  ],
+  [
+   "The rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "collector_d": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3B: the opening's full-screen text window",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words, a blank line between messages, paged with the window cleared whole"
+  ],
+  [
+   "Menus, the rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_4": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the logo, the opening menu, the studio scene",
+   "OK: the menu's command box and message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_5": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the logo, the opening menu, the studio scene",
+   "OK: the menu's command box and message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
  ]
 }

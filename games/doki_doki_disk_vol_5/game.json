@@ -1,0 +1,14 @@
+{
+ "title": "D.O. Doki Doki Disk Vol. 5",
+ "key": "DO.zip/D.O. Doki Doki Disk Vol. 5",
+ "image": "D.O. Doki Doki Disk Vol. 5\\D.O. Doki Doki Disk Vol. 5 [FD]\\D.O. Doki Doki Disk Vol. 5.hdm",
+ "encoding": "adl",
+ "version": "adl3a",
+ "program": "ADL3A.EXE",
+ "game_dir": "",
+ "program_files": [
+  "PCMSET.EXE"
+ ],
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:lclick,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 6
+}
