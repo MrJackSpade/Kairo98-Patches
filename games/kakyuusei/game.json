@@ -1,0 +1,21 @@
+{
+ "title": "Kakyuusei",
+ "key": "elf.zip/Kakyuusei",
+ "image": "Kakyuusei\\Kakyuusei (with Special Disk) [HD]\\Kakyuusei (with Special Disk).hdi",
+ "encoding": "ai5",
+ "game_dir": "KAKYU",
+ "archives": [
+  "KAKYUSEI.ARC",
+  "KSP.ARC"
+ ],
+ "archive_format": "kakyu",
+ "program": "AI5.EXE",
+ "version": "sil2",
+ "calls": {
+  "3": {
+   "cells": 10,
+   "note": "the hero's name"
+  }
+ },
+ "boot_steps": "15:shot,1:key=50,30:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}

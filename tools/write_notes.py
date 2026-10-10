@@ -846,6 +846,9 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
                  "  The scripts are in Isaku's archives %s (`pc98tl/isakuarc.py`): a directory encrypted with "
                  "a rising XOR and a rotation, the members stored or packed (LZSS); an archive with a rebuilt "
                  "script is laid out anew, the script stored." if cfg.get("archive_format") == "isaku" else
+                 "  The scripts are in Kakyuusei's archives %s (`pc98tl/kakyuarc.py`): a directory of 2300 "
+                 "slots, each byte rotated and XORed, the scripts packed (LZSS); an archive with a rebuilt "
+                 "script is laid out anew, the script packed again." if cfg.get("archive_format") == "kakyu" else
                  "  The scripts are in Elf's archives %s (`pc98tl/elfarc.py`): the archive holds name hashes "
                  "only, so the scripts are found from `start.mes` through the script names the scripts "
                  "give; a rebuilt script is compressed again and the archive laid out anew.") % ", ".join(

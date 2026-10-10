@@ -922,7 +922,8 @@ class Scripts:
     scripts in one are found from start.mes through the script names the
     scripts give, as the archive holds hashes only), or in Silky's data
     archives (game.json "archive_format": "silkdat" or "silkdisk",
-    pc98tl/silkdat.py), or Isaku's ("isaku", pc98tl/isakuarc.py): the
+    pc98tl/silkdat.py), or Isaku's ("isaku", pc98tl/isakuarc.py) or
+    Kakyuusei's ("kakyu", pc98tl/kakyuarc.py): the
     scripts by their names in it; or loose with
     another extension (game.json "script_ext"), named by their path in the
     game folder.  Names are as the refs give them:
@@ -944,10 +945,10 @@ class Scripts:
                           if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
             return
         self.items = []
-        if cfg.get("archive_format") in ("silkdat", "silkdisk", "isaku"):
-            from . import isakuarc, silkdat
+        if cfg.get("archive_format") in ("silkdat", "silkdisk", "isaku", "kakyu"):
+            from . import isakuarc, kakyuarc, silkdat
             kind = {"silkdat": silkdat.Archive, "silkdisk": silkdat.DiskArchive,
-                    "isaku": isakuarc.Archive}[cfg["archive_format"]]
+                    "isaku": isakuarc.Archive, "kakyu": kakyuarc.Archive}[cfg["archive_format"]]
             for name in cfg["archives"]:
                 self.arcs[name] = kind(vol.read(d + "/" + name))
             # (the script names the scripts give, for the one archive member whose first letter

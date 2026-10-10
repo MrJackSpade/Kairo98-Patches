@@ -75424,7 +75424,14 @@
      "path": "Kakyuusei\\Kakyuusei [FD]\\Kakyuusei (Disk Q).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kakyuusei (patcher working, machine translation in progress)",
+     "url": "../games/kakyuusei/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4587 (erotic content)",
    "engine": "elf-ai5",
@@ -75432,7 +75439,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Kono Yo no Hate de Koi o Utau Shoujo YU-NO",

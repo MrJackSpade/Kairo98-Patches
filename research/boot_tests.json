@@ -3371,5 +3371,19 @@
    "Calls between the scripts (DEF.MES's routines, ITEMMAIN.MES) with the scripts rebuilt",
    "OK: the game goes on from scene to scene"
   ]
+ ],
+ "kakyuusei": [
+  [
+   "Boot from the hard disk: Kakyuusei (choice 1)",
+   "OK: the first menu (colour or monochrome) with its filler items, the Elf logo, then the hero's name entry"
+  ],
+  [
+   "Kakyuusei past the name entry",
+   "blocked: the name entry takes no input in np21w, in the original game too"
+  ],
+  [
+   "Kakyuusei Special (choice 2, KSP5.EXE and KSP.ARC): title, then the first scene",
+   "OK: the filler wrapped between words at the window's width, paged with a key"
+  ]
  ]
 }

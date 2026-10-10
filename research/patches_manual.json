@@ -1977,5 +1977,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "elf.zip/Kakyuusei": [
+  {
+   "label": "This repo: games/kakyuusei (patcher working, machine translation in progress)",
+   "url": "../games/kakyuusei/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

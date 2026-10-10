@@ -317,6 +317,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | elf | Doukyuusei 2 | [This repo: games/doukyuusei_2 (patcher working, machine translation in progress)](../games/doukyuusei_2/notes.md) |
 | elf | Dragon Knight III | [This repo: games/dragon_knight_3 (patcher working, machine translation in progress)](../games/dragon_knight_3/notes.md) |
 | elf | Isaku | [This repo: games/isaku (patcher working, machine translation in progress)](../games/isaku/notes.md) |
+| elf | Kakyuusei | [This repo: games/kakyuusei (patcher working, machine translation in progress)](../games/kakyuusei/notes.md) |
 | elf | Metal Eye | [This repo: games/metal_eye (patcher working, machine translation in progress)](../games/metal_eye/notes.md) |
 | elf | Metal Eye 2 | [This repo: games/metal_eye_2 (patcher working, machine translation in progress)](../games/metal_eye_2/notes.md) |
 | elf | Shangrlia | [This repo: games/shangrlia (patcher working, machine translation in progress)](../games/shangrlia/notes.md) |
@@ -2260,7 +2261,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Foxy 2 [FD HD] `elf-ai5`
 - ♥ Isaku [FD HD extras] `elf-ai5` — *MTL (this repo)*
 - ♥ Jan Jaka Jan [FD HD extras] `elf-ai5` — **EN**
-- ♥ Kakyuusei [FD HD] `elf-ai5`
+- ♥ Kakyuusei [FD HD] `elf-ai5` — *MTL (this repo)*
 - ♥ Kono Yo no Hate de Koi o Utau Shoujo YU-NO [CD FD HD extras] `elf-other` — **EN**
 - ♥ Metal Eye [FD HD] `elf-ai5` — **EN**
 - ♥ Metal Eye 2 [FD HD extras] `elf-ai5` — **EN**
