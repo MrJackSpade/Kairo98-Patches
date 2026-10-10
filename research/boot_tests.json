@@ -3043,5 +3043,15 @@
    "The story (PA_02 ...), the battle scenes (S_xx), save/load, endings",
    "not yet seen (the clicks keep choosing the same setup item)"
   ]
+ ],
+ "cybernoid_alpha": [
+  [
+   "Disk A (patched) alone; PA_01.EDT's setup menus",
+   "OK: boots; filler half-width in the framed windows, wrapped by the helper at each window's edge"
+  ],
+  [
+   "The story and the rest of the game",
+   "not reachable: the collection has only an alternate dump of Disk A (the game is about 5 MB installed; its other disks are missing)"
+  ]
  ]
 }

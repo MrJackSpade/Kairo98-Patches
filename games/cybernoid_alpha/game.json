@@ -1,0 +1,12 @@
+{
+ "title": "Cybernoid Alpha",
+ "key": "DO.zip/Cybernoid Alpha",
+ "image": "Cybernoid Alpha\\Cybernoid Alpha [FD]\\alts\\Cybernoid Alpha (Disk A) [Alt 1].hdm",
+ "encoding": "adl",
+ "version": "adl98s",
+ "program": "ADL98S.EXE",
+ "game_dir": "",
+ "archive": "EDT00",
+ "name_cells": 10,
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

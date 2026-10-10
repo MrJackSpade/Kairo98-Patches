@@ -1757,5 +1757,23 @@
    "url": "https://vndb.org/v8838",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/Cybernoid Alpha": [
+  {
+   "label": "This repo: games/cybernoid_alpha (patcher working, machine translation in progress)",
+   "url": "../games/cybernoid_alpha/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8838",
+   "url": "https://vndb.org/v8838",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v9170",
+   "url": "https://vndb.org/v9170",
+   "source": "VNDB"
+  }
  ]
 }

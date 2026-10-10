@@ -240,5 +240,12 @@
    "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown.",
    "Some scripts (the battle scenes S_xx, PA_14) hold tables the walker never steps onto (after AFh, records of 14h bytes the entries reach); the tokenizer picks the walk up again at the next entry and the tables move as they are."
   ]
+ },
+ "cybernoid_alpha": {
+  "remarks": [
+   "The collection has only an alternate dump of Disk A (\"Disk A [Alt 1]\"); the other disks are missing, so the patch covers Disk A, which holds the program and every script (EDT00), and the game cannot be played past what Disk A holds.",
+   "The scripts and ADL98S.EXE are byte for byte those of Yuu Disk Vol. 8 (games/yuu_disk_vol_8, a complete hard-disk release): the strings are the same, ids included, so one translation serves both.",
+   "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown."
+  ]
  }
 }
