@@ -341,5 +341,10 @@
   "remarks": [
    "Names and labels longer than the Japanese draw past their menu or box, and what is drawn outside a menu stays on screen after it closes: keep them to their `max_cells`."
   ]
+ },
+ "foxy_2": {
+  "not_handled": [
+   "F2.COM's two DOS messages, shown only when it is loaded a second time or removed while not loaded (the game's batch file does neither)."
+  ]
  }
 }

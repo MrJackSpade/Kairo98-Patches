@@ -1985,5 +1985,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "elf.zip/Foxy 2": [
+  {
+   "label": "This repo: games/foxy_2 (patcher working, machine translation in progress)",
+   "url": "../games/foxy_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

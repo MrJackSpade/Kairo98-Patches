@@ -1,0 +1,11 @@
+{
+ "title": "Foxy 2",
+ "key": "elf.zip/Foxy 2",
+ "image": "Foxy 2\\Foxy 2 [HD]\\Foxy 2.hdi",
+ "encoding": "ai5",
+ "version": "ai4",
+ "game_dir": "FOXY2",
+ "program": "AI4.EXE",
+ "no_pages": true,
+ "boot_steps": "35:shot,3:enter,60:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

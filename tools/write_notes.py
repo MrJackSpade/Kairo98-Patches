@@ -875,7 +875,9 @@ def ai5_notes(name, cfg, doc, adult, clear, tests, extra):
              "so its most frequent letters take one byte; the program is not changed."),
             "* Lines are wrapped between words to the text window the script set up (its own commands, "
             "or a subroutine it calls), and a new page (a key wait and a clear) starts before a line "
-            "would run past the window's bottom.",
+            "would run past the window's bottom." + (
+                "  A script that never waits for a key (the opening, timed to its music) gets no new "
+                "page: its English is cut to its window's lines (reported)." if cfg.get("no_pages") else ""),
             "* Menu items are drawn by the menu itself, which takes characters only: their English is "
             "written in full-width letters.",
             "", "## Script", "",

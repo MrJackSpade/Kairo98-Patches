@@ -286,6 +286,7 @@ ENGINES = {
 LOOSE_END = False               # any byte not of an expression ends one (and is read with it)
 RAW_CALLS = {}                  # system calls whose argument is a number of bytes, not expressions
 FAR = False                     # the English kept out of the scripts (Isaku: pc98tl/ai5_far.py)
+NO_PAGES = False                # a script that never waits for a key gets no new page (game.json)
 CALLED = {}                     # {an address 2Ah calls: the window pokes of its routine} (Isaku)
 LIBRARIES = {}                  # {the address a library is loaded at: (its bytes, its tokens)} (Isaku)
 WINDOW = (13, 14, 15, 16)       # the poke indexes of the window's left, top, right, bottom
@@ -573,6 +574,8 @@ INSERTS = {}
 
 
 def set_calls(cfg):
+    global NO_PAGES
+    NO_PAGES = bool(cfg.get("no_pages"))
     CALLS.clear()
     INSERTS.clear()
     INSERTS.update({int(op, 16): cells for op, cells in cfg.get("inserts", {}).items()})
@@ -646,11 +649,15 @@ class Writer:
     the character width switched around them, lines wrapped between words,
     a new page (11: a key wait and a clear) where the window is full."""
 
-    def __init__(self, dic, width, lines, state, height=16, half=False, restore=True, guard=False):
+    def __init__(self, dic, width, lines, state, height=16, half=False, restore=True, guard=False,
+                 no_page=False):
         """half: the width is 1 already (the message before set it and nothing
         between draws); restore: the width goes back to 2 at the end; guard:
-        the statement before takes arguments a string would join."""
+        the statement before takes arguments a string would join; no_page: no
+        new page (a script that never waits for a key): what would go past the
+        window's last line is dropped (self.cut)."""
         self.dic, self.width, self.lines, self.st = dic, width, lines, state
+        self.no_page, self.cut = no_page, False
         self.half_poke, self.full_poke = font_poke(1, height), font_poke(2, height)
         self.out = bytearray()
         self.open = False
@@ -662,6 +669,8 @@ class Writer:
             self.open = False
 
     def ascii(self, s):
+        if self.cut:
+            return
         if not ANK:
             # (an engine without half-width strings: the PC-98's half-width two-byte glyphs,
             # 85 40-9E for ! to ~ and 86 40 for the space, at width 1; the file's dictionary
@@ -686,6 +695,8 @@ class Writer:
         self.st["col"] += len(s)
 
     def wide(self, b, cells):
+        if self.cut:
+            return
         self._close()
         if self.half:
             self.out += self.full_poke
@@ -696,6 +707,11 @@ class Writer:
 
     def newline(self):
         self._close()
+        if self.cut:
+            return
+        if self.st["line"] + 1 >= self.lines and self.no_page:
+            self.cut = True
+            return
         if self.st["line"] + 1 >= self.lines:
             self.out.append(0x11)
             self.guard = True
@@ -823,6 +839,8 @@ def rebuild(d, values, warn, ids, name):
         return d
     win = windows(d, toks)
     dic = _dict(d)
+    # (game.json "no_pages": a script that never waits for a key (no 11) gets no new page)
+    no_page = NO_PAGES and not any(t[0] == "op" and t[3] == 0x11 for t in toks)
     by_start = {k: (j, kind) for k, j, kind, _jp in us}
     linked = _links(d, toks, us, values)
     carry = False
@@ -879,8 +897,12 @@ def rebuild(d, values, warn, ids, name):
                     continue
                 prev = toks[n - 1] if n else None
                 w = Writer(dic, width, lines, st, h or 16, half=carry, restore=n not in linked,
-                           guard=bool(prev and prev[0] == "op" and prev[2] - prev[1] == 1))
+                           guard=bool(prev and prev[0] == "op" and prev[2] - prev[1] == 1),
+                           no_page=no_page)
                 w.text(ps)
+                if w.cut:
+                    warn.append("%s: more lines than its window has (%d), cut to them" % (
+                        ids.get((name, s), hex(s)), lines))
                 out += w.finish()
                 carry = n in linked and w.half
                 n = j

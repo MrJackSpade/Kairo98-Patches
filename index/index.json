@@ -74933,7 +74933,14 @@
      "path": "Foxy 2\\Foxy 2 [HD]\\Foxy 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/foxy_2 (patcher working, machine translation in progress)",
+     "url": "../games/foxy_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40166 (erotic content)",
    "engine": "elf-ai5",
@@ -74941,7 +74948,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Isaku",

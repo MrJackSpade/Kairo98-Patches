@@ -316,6 +316,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | elf | Doki Doki Shutter Chance | [This repo: games/doki_doki_shutter_chance (patcher working, machine translation in progress)](../games/doki_doki_shutter_chance/notes.md) |
 | elf | Doukyuusei 2 | [This repo: games/doukyuusei_2 (patcher working, machine translation in progress)](../games/doukyuusei_2/notes.md) |
 | elf | Dragon Knight III | [This repo: games/dragon_knight_3 (patcher working, machine translation in progress)](../games/dragon_knight_3/notes.md) |
+| elf | Foxy 2 | [This repo: games/foxy_2 (patcher working, machine translation in progress)](../games/foxy_2/notes.md) |
 | elf | Isaku | [This repo: games/isaku (patcher working, machine translation in progress)](../games/isaku/notes.md) |
 | elf | Kakyuusei | [This repo: games/kakyuusei (patcher working, machine translation in progress)](../games/kakyuusei/notes.md) |
 | elf | Metal Eye | [This repo: games/metal_eye (patcher working, machine translation in progress)](../games/metal_eye/notes.md) |
@@ -2258,7 +2259,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Dragon Knight III [FD HD extras] `elf-ai5` — **EN**
 - ♥ Elle [FD HD extras] `elf-ai5` — **EN**
 - ♥ Foxy [FD extras] `elf-ai5` — **EN**
-- ♥ Foxy 2 [FD HD] `elf-ai5`
+- ♥ Foxy 2 [FD HD] `elf-ai5` — *MTL (this repo)*
 - ♥ Isaku [FD HD extras] `elf-ai5` — *MTL (this repo)*
 - ♥ Jan Jaka Jan [FD HD extras] `elf-ai5` — **EN**
 - ♥ Kakyuusei [FD HD] `elf-ai5` — *MTL (this repo)*

@@ -3385,5 +3385,19 @@
    "Kakyuusei Special (choice 2, KSP5.EXE and KSP.ARC): title, then the first scene",
    "OK: the filler wrapped between words at the window's width, paged with a key"
   ]
+ ],
+ "foxy_2": [
+  [
+   "Boot from the hard disk (F2.COM, then AI4.EXE)",
+   "OK: the first menu with its filler items"
+  ],
+  [
+   "Opening (OPEN.MES, timed to its music)",
+   "OK: its pages of filler half-width, wrapped between words, no key waits, through to the FOXY 2 logo"
+  ],
+  [
+   "The first scenes (classmates, the laboratory)",
+   "OK: the filler in the window under the pictures, wrapped, the scenes going on with a key"
+  ]
  ]
 }
