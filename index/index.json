@@ -188420,15 +188420,27 @@
      "path": "Nonomura Byouin no Hitobito\\Nonomura Byouin no Hitobito [HD]\\Nonomura Byouin no Hitobito.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/nonomura_byouin_no_hitobito (patcher working, machine translation in progress)",
+     "url": "../games/nonomura_byouin_no_hitobito/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB",
+     "url": "https://vndb.org/",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4591 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Oh! Pai",

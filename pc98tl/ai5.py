@@ -832,8 +832,10 @@ class Scripts:
     """The game's MES files: loose in the game folder, or in Elf's archives
     (game.json "archives": [archive file names in the game folder]; the
     scripts in one are found from start.mes through the script names the
-    scripts give, as the archive holds hashes only).  Names are as the refs
-    give them: "FILE.MES", or "ARCHIVE/file.mes"."""
+    scripts give, as the archive holds hashes only), or in Silky's data
+    archives (game.json "archive_format": "silkdat", pc98tl/silkdat.py: the
+    scripts by their names in it).  Names are as the refs give them:
+    "FILE.MES", or "ARCHIVE/file.mes"."""
 
     def __init__(self, vol, cfg):
         self.vol, self.cfg = vol, cfg
@@ -843,8 +845,15 @@ class Scripts:
             self.items = [(p.split("/")[-1], p) for p, *_ in vol.walk()
                           if p.upper().startswith(d.upper() + "/") and p.upper().endswith(".MES")]
             return
-        from . import elfarc
         self.items = []
+        if cfg.get("archive_format") == "silkdat":
+            from . import silkdat
+            for name in cfg["archives"]:
+                arc = silkdat.Archive(vol.read(d + "/" + name))
+                self.arcs[name] = arc
+                self.items += [("%s/%s" % (name, f), (name, f)) for f in arc.names() if f.upper().endswith(".MES")]
+            return
+        from . import elfarc
         for name in cfg["archives"]:
             arc = elfarc.Archive(vol.read(d + "/" + name))
             self.arcs[name] = arc

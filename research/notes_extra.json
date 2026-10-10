@@ -149,5 +149,10 @@
    "The speaker tags (【...】) are subroutine bodies the script defines in a table (12 n, the text), which the driver treats as menu items: full-width letters within the Japanese tag's width.",
    "The boot test stops at the first menu: np21w passes no key or mouse input that picks an item, in the original game too (AUTOEXEC.BAT loads Elf's ELF.COM, and START.MES the mouse cursor MOUSE.DAT)."
   ]
+ },
+ "nonomura_byouin_no_hitobito": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`: a chained-XOR directory, the members stored as they are), which the patch lays out anew with the rebuilt scripts."
+  ]
  }
 }
