@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-10 (`resear
 
 ## Engine
 
-D.O.'s **ADL** engine (`ADL.EXE`): 9 scripts with text (`DOR1.EDT`, `DOR2.EDT`, `DOR3.EDT`, `DOR3A.EDT`, `DOR3B.EDT`, `DOR_P2.EDT`, `DOR_P3.EDT`, `OP.EDT`, `OP3.EDT`), the speaker name tables and the menu command tables (`KOM_F0.EDT`, `KOM_F1.EDT`, `KOM_F2.EDT`, `KOM_F3.EDT`, `NAME_F0.EDT`, `NAME_F1.EDT`, `NAME_F2.EDT`, `NAME_F3.EDT`); `pc98tl/adl.py` documents the formats and the program patch, and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) to its end, every entry lands on a statement, and each rebuilds byte for byte.
+D.O.'s **ADL** engine (`ADL.EXE`): 9 scripts with text (`DOR1.EDT`, `DOR2.EDT`, `DOR3.EDT`, `DOR3A.EDT`, `DOR3B.EDT`, `DOR_P2.EDT`, `DOR_P3.EDT`, `OP.EDT`, `OP3.EDT`), the speaker name tables and the menu command tables (`KOM_F0.EDT`, `KOM_F1.EDT`, `KOM_F2.EDT`, `KOM_F3.EDT`, `NAME_F0.EDT`, `NAME_F1.EDT`, `NAME_F2.EDT`, `NAME_F3.EDT`); `pc98tl/adl.py` documents the formats and the program patch, and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) to its end (where bytes the walker never steps onto sit among the statements, the walk is picked up again at the next entry and the bytes move as they are), and each rebuilds byte for byte.
 
 The patch works on the game's hard-disk release (the game in `DOR/`).
 

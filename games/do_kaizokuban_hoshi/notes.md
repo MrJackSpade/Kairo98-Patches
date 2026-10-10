@@ -7,13 +7,13 @@ Clearance: no PC-98 English release or announcement found on 2026-10-10 (`resear
 
 ## Engine
 
-D.O.'s **ADL** engine (`ADL.EXE`): 3 scripts with text (`HOS1_G.EDT`, `HOS2_G.EDT`, `MENU_H2.EDT`), the speaker name tables and the menu command tables (`KOM_F0.EDT`, `NAME_F0.EDT`); `pc98tl/adl.py` documents the formats and the program patch, and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) to its end, every entry lands on a statement, and each rebuilds byte for byte.
+D.O.'s **ADL2** engine (`ADL2.EXE`): 3 scripts with text (`HOS1_G.EDT`, `HOS2_G.EDT`, `MENU_H2.EDT`), the speaker name tables and the menu command tables (`KOM_F0.EDT`, `NAME_F0.EDT`); `pc98tl/adl.py` documents the formats and the program patch, and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) to its end (where bytes the walker never steps onto sit among the statements, the walk is picked up again at the next entry and the bytes move as they are), and each rebuilds byte for byte.
 
 The patch works on the game's hard-disk release (the game in `HOSHI12/`).
 
 * A script starts with its entries (the targets of its gotos and menus, as offsets), so a rebuilt script has them moved with its statements.
-* `ADL.EXE` gets a helper in 768 bytes put in at the end of its code segment (the data and work segments after it move up, every relocation with them).  In a run of text, 20h (a character the engine skips) switches to half-width letters: ASCII drawn one text cell each, with the engine's own character wait, wrapped at the window's right edge and paged (the blinking key-wait mark, then the window cleared) at its bottom.
-* Lines are wrapped between words by the patcher to the text window the script set (71h), the speaker's name indenting the text 10 cells; a full window that the script's new line (06) would clear waits for a key first when text was drawn since the last wait.
+* `ADL2.EXE` gets a helper in 768 bytes put in at the end of its code segment (the data and work segments after it move up, every relocation with them).  In a run of text, 20h (a character the engine skips) switches to half-width letters: ASCII drawn one text cell each, with the engine's own character wait, wrapped at the window's right edge and paged (the blinking key-wait mark, then the window cleared) at its bottom.
+* Lines are wrapped between words by the patcher to the text window the script set (71h), the speaker's name indenting the text 10 cells; the engine's new line (06) waits for a key itself before it clears a full window.
 * Speaker names, menu commands and the save slots' names take ASCII as well (one cell or one 8-dot column each, the menus' from the BIOS 8x16 font).
 * A menu's text window (sized by the script to the longest Japanese choice) is widened, with its frame, to the longest English choice, so that each choice stays one line.
 
