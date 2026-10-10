@@ -188982,15 +188982,27 @@
      "path": "Reira\\Reira [HD]\\Reira.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/reira (patcher working, machine translation in progress)",
+     "url": "../games/reira/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9053",
+     "url": "https://vndb.org/v9053",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18204 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Ushinawareta Rakuen",

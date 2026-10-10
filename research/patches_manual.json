@@ -1596,5 +1596,18 @@
    "url": "https://vndb.org/v9147",
    "source": "VNDB"
   }
+ ],
+ "Silkys.zip/Reira": [
+  {
+   "label": "This repo: games/reira (patcher working, machine translation in progress)",
+   "url": "../games/reira/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v9053",
+   "url": "https://vndb.org/v9053",
+   "source": "VNDB"
+  }
  ]
 }

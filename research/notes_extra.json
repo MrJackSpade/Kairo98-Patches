@@ -169,5 +169,10 @@
   "remarks": [
    "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts."
   ]
+ },
+ "reira": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK5.DAT (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts."
+  ]
  }
 }
