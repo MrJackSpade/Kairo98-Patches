@@ -42,6 +42,7 @@ Translation and the content classification (♥) are done by the translation mod
 | Test | Result |
 |---|---|
 | The hard-disk release; the opening lines, the title and its menu | OK: boots; half-width filler, the menu's items as full-width filler cut to their box |
+| The setup console (display, drives; ended with ESC) and the start menu (the arrow keys move the pointer, Return picks, a confirm box) | OK: its labels as half-width filler in their slots, the items as full-width filler |
 | The opening narration | OK: filler wrapped in the bottom text box, pages waiting for a key |
 | Later scenes, the endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |
