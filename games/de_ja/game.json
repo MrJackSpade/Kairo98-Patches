@@ -1,0 +1,9 @@
+{
+ "title": "De-Ja",
+ "key": "elf.zip/De-Ja",
+ "image": "De-Ja\\De-Ja [HD]\\De-Ja.hdi",
+ "encoding": "elfai",
+ "program": "AI.EXE",
+ "game_dir": "DEJA",
+ "boot_steps": "25:shot,1:right,2:enter,3:shot,3:enter,5:shot,1:esc,4:shot,1:esc,8:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot,2:enter,2:shot"
+}

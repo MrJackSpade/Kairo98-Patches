@@ -2009,5 +2009,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "elf.zip/De-Ja": [
+  {
+   "label": "This repo: games/de_ja (patcher working, machine translation in progress)",
+   "url": "../games/de_ja/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

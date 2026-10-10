@@ -73330,7 +73330,14 @@
      "path": "De-Ja\\De-Ja [HD]\\De-Ja.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/de_ja (patcher working, machine translation in progress)",
+     "url": "../games/de_ja/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r11835 (erotic content)",
    "engine": "elf-ai5",
@@ -73338,7 +73345,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/De-Ja II",

@@ -3439,5 +3439,23 @@
    "The REIRA demo (GAME in \\PPDISK\\B, run on its own)",
    "OK: its setup screen, then its first message and menus in filler; later scenes not reached"
   ]
+ ],
+ "de_ja": [
+  [
+   "Boot from the hard disk (DEJA.BAT: AI START.MES)",
+   "OK: the first menu's items in filler, half-width, in their boxes"
+  ],
+  [
+   "New game: the name entry (KPUT.COM)",
+   "OK: its prompts in full-width filler, the default names six full-width letters; ESC takes them"
+  ],
+  [
+   "The opening (OPEN.MES)",
+   "OK: speakers' tags in their colours, the filler after them wrapped between words to the window's 79 letters, 3 lines to a page, the next page after a key; the hero's name drawn where the script puts it"
+  ],
+  [
+   "The first scene (the hero's room)",
+   "OK: the command menu's items in filler in their boxes"
+  ]
  ]
 }

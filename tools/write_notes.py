@@ -1309,6 +1309,71 @@ def lmern_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def elfai_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "tag": "speaker tags", "name": "names and prompts"}
+    out = ["# %s%s (Elf)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Elf's early AI engine (`%s`, EXEPACK'd), before AI5: the scripts (`*.MES` in `%s/`) are run "
+            "a byte at a time, statements 99h-BFh with numbers, variables and blocks in braces, Shift-JIS "
+            "text drawn where it stands, each script's own dictionary (codes C0h-EFh, defined by statement "
+            "A4h, run in place).  Nothing in a script is an address.  `pc98tl/elfai.py` documents the format "
+            "and the program patch, `pc98tl/elfai_tl.py` the English.  Unchanged scripts stay byte for byte "
+            "as they are." % (cfg["program"], cfg["game_dir"]), "",
+            "The patch works on the game's hard-disk release.", "",
+            "* A script may not grow much: it is loaded at DS:2000h under the animations' buffers "
+            "(DS:8000h and up).  So the messages' English is kept in `NAME.ENG` next to each script, and the "
+            "script draws it line by line through a statement the program did not use (BBh and the line's "
+            "offset).  `%s` is unpacked and given a helper at the end of its code: the statement draws the "
+            "line a byte to a half-width letter, as the program draws a string; loading a script loads its "
+            "`.ENG` into a 64 KB segment past the program's memory, which it grows by as much." % cfg["program"],
+            "* Lines are wrapped between words to the text window (followed through the script: `A7` sets "
+            "it, 3 lines of 80 letters for the messages), starting where the text before leaves the cursor "
+            "(after a speaker's tag), and a new page (a key, then the window cleared) begun when it is full.",
+            "* Menu items and speakers' tags are written as strings in the script; names (the defaults "
+            "KPUT.COM, the name entry, starts from, and its prompts) full-width."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` 79): any length; wrapped and paged by the patcher.  `\\n` "
+            "starts a new line.  `{N24}`/`{N25}` stand for the hero's family/given name (keep them; each "
+            "is counted as 12 letters).",
+            "* Menu items (`i` ids, `max_cells` 14): one line, past the box's edge beyond it (reported).",
+            "* Speakers' tags (`t` ids): one line; the message goes on after it on the same line.",
+            "* Names (`n` ids): written full-width; a name 6 letters at most (KPUT.COM's), a prompt its "
+            "`max_cells`; past it cut and reported.",
+            "* English is ASCII (half-width); another character is written as `?` (`\"` in a menu item or "
+            "tag as `'`).  A script with its English may take 24 KB (less where it names a lower buffer), its "
+            "`.ENG` 64 KB; a build past either is refused and names the script."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures and the name entry's character grid (KPUT.COM's own)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def ppdisk_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1622,6 +1687,11 @@ def main():
             continue
         if cfg.get("encoding") == "lmern":
             out = lmern_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "elfai":
+            out = elfai_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
