@@ -269,5 +269,11 @@
   "remarks": [
    "The title screen waits for Return (clicks do not go on), in the unpatched game as well."
   ]
+ },
+ "collector_d_bangaihen": {
+  "remarks": [
+   "This ADL5.EXE is an earlier build than the other D.O. titles': its 23h, 24h, 53h and 54h statements are ADL3's shorter ones (pc98tl/adl5.py, variant adl5a).",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: MOVE.EDT (62,868 bytes, 58,160 of them Japanese text) leaves 2,668 bytes for English beyond the Japanese, so its English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
+  ]
  }
 }

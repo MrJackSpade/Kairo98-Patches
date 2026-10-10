@@ -1855,5 +1855,18 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/Collector D Bangaihen": [
+  {
+   "label": "This repo: games/collector_d_bangaihen (patcher working, machine translation in progress)",
+   "url": "../games/collector_d_bangaihen/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v18256",
+   "url": "https://vndb.org/v18256",
+   "source": "VNDB"
+  }
  ]
 }

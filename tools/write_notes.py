@@ -1109,7 +1109,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    v5 = cfg.get("version") in ("adl5", "adl98", "adl98s", "adl3a", "adl3b")
+    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl3a", "adl3b")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
              "engine": "program strings" if v5 else "save slot names"}

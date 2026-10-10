@@ -75,7 +75,7 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl98", "adl98s", "adl3a", "adl3b") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl3a", "adl3b") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
     else:

@@ -91,12 +91,15 @@ ADL3 = {"len": {0x23: 2, 0x24: 3, 0x53: 3, 0x54: 5},
         "drop": {0x75, 0x88, 0x94, 0x95, 0xB0, 0xB1, 0xB2, 0xB3, 0xB4, 0xB5, 0xC2, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9,
                  0xCA, 0xCB},
         "named_drop": {0xC0, 0xC1}}
+# ADL5A (ADL5.EXE of Collector D Bangaihen: an earlier ADL5 build): ADL5's statements with ADL3's shorter
+# 23h, 24h, 53h, 54h
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
 
 def set_variant(name):
-    """The engine's build: "adl5" (ADL5.EXE), "adl98" (ADL98.EXE) or "adl98s" (ADL98S.EXE)."""
+    """The engine's build: "adl5" (ADL5.EXE), "adl5a" (an earlier ADL5.EXE), "adl98" (ADL98.EXE), "adl98s"
+    (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b" (ADL3B.EXE)."""
     global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
     STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
     CTRL_END, CODED, VARIANT = 0x0C, False, name
@@ -115,6 +118,8 @@ def set_variant(name):
         NAMED -= ADL3["named_drop"]
         if name == "adl3a":
             STMT_LEN[0x93] = 1
+    if name == "adl5a":
+        STMT_LEN.update(ADL3["len"])
 
 
 def decode(raw):
@@ -247,7 +252,7 @@ def _resync(d):
     entry wherever it meets bytes no statement starts with (ADL98S's tables after AFh: records the
     entries reach, never the walker); the bytes skipped move with the statements around them."""
     ents = sorted(v for v in entries(d).values() if v < len(d))
-    out, i = [], base(d)
+    out, i, tried = [], base(d), set()
     while i < len(d) and d[i] != 0xFF:
         try:
             j = statement(d, i)
@@ -256,15 +261,17 @@ def _resync(d):
             out.append((i, j))
             i = j
         except (Bad, IndexError, ValueError):
-            # (the next entry after the last statement's start: a statement it falls inside is dropped,
-            # it was bytes the walker never steps onto)
+            # (the next entry after the last statement's start, not one the walk was picked up at
+            # before: a statement it falls inside is dropped, it was bytes the walker never steps onto)
+            tried.add(i)
             after = out[-1][0] if out else -1
-            e = next((v for v in ents if v > after and v != i), len(d))
+            e = next((v for v in ents if v > after and v not in tried), len(d))
             if e < i:
                 while out and out[-1][1] > e:
                     out.pop()
             elif e == len(d) or e <= i:
-                e = next((v for v in ents if v > i), len(d))
+                e = next((v for v in ents if v > i and v not in tried), len(d))
+            tried.add(e)
             i = e
     return out
 

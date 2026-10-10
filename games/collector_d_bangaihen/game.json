@@ -1,0 +1,14 @@
+{
+ "title": "Collector D Bangaihen",
+ "key": "DO.zip/Collector D Bangaihen",
+ "image": "Collector D Bangaihen\\Collector D Bangaihen [HD]\\Collector D Bangaihen.hdi",
+ "encoding": "adl",
+ "version": "adl5a",
+ "program": "ADL5.EXE",
+ "game_dir": "BANG",
+ "program_files": [
+  "PCMSET.EXE"
+ ],
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:lclick,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 8
+}

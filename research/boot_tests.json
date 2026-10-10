@@ -3159,5 +3159,19 @@
    "The other sections, save/load",
    "not yet seen"
   ]
+ ],
+ "collector_d_bangaihen": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL5: the first menu, the story's text window",
+   "OK: the command box (4 letters, the table's slot) and the message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The rest of the story, MOVE.EDT's moves, BAT2.EDT's battles, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }
