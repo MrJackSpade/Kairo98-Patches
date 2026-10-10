@@ -63813,15 +63813,27 @@
      "path": "Yuu Disk Vol. 5 - Telephone Scandal\\Yuu Disk Vol. 5 - Telephone Scandal [FD]\\Yuu Disk Vol. 5 - Telephone Scandal (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_5 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_5/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v159",
+     "url": "https://vndb.org/v159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18363 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 6 - Heart de Ron!! Midnight-hen",

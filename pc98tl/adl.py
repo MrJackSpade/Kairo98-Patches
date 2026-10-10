@@ -29,8 +29,9 @@ wrapping at the window's right edge, and paging (the key-wait mark, then
 the window cleared) when the next line would reach its bottom row.
 
 The name table (NAME_Fn.EDT, n the scenario) and the command table
-(KOM_Fn.EDT: the save/load and menu items 11h's first byte picks): 95 97,
-then bytes each rotated right twice, until 1Ah: NUL-ended Shift-JIS
+(KOM_Fn.EDT: the save/load and menu items 11h's first byte picks): a mark
+and coded bytes (TABLE_CODES; Part 2's 95 97, each byte rotated right
+twice), until 1Ah: NUL-ended Shift-JIS
 strings, a 9-byte slot (names) or a 17-byte slot (commands) each once
 loaded.  Names are drawn by 19B2h (to the text VRAM, 20h one cell);
 commands and the save slots' names (ADL.EXE's own) by 18D4h, to the
@@ -75,8 +76,29 @@ BASE = 0x1000
 CTRL_ARG = {1, 4, 7, 8}
 
 
+TEXT_MARK = 0x0F                # a run of text's mark (ADL5's FFh)
+WINDOW_OP = 0x71                # the text window (ADL5's 82h)
+
+
 class Bad(Exception):
     pass
+
+
+def ctrl_len(b):
+    """A control's bytes, its argument with it."""
+    return 2 if b in CTRL_ARG else 1
+
+
+def window(d, s):
+    """(x, the text's width in dots) of 71h at s."""
+    x, _y, w, _h = struct.unpack_from(">4H", d, s + 1)
+    return x, w
+
+
+def set_window_width(d, s, width):
+    """71h at s with its text widened to width dots."""
+    x, y, _w, h = struct.unpack_from(">4H", d, s + 1)
+    return d[s:s + 1] + struct.pack(">4H", x, y, width, h)
 
 
 def statement(d, i):
@@ -214,24 +236,44 @@ def encode_ascii(text):
 
 # ---- the name and command tables
 
-TABLE_MAGIC = b"\x95\x97"
+# the engine's coded text files (ADL.EXE 2823h): a two-byte mark, then each byte coded until 1Ah
+# (coded): 95 97 rotated right twice, 97 D1 inverted, 89 CE xored with the byte after the mark
+TABLE_CODES = (b"\x95\x97", b"\x97\xd1", b"\x89\xce")
+
+
+def _decode(raw):
+    """(the mark and key, the decoded bytes) of a coded file."""
+    mark = raw[:2]
+    if mark == b"\x95\x97":
+        return mark, bytes(((b >> 2) | (b << 6)) & 0xFF for b in raw[2:])
+    if mark == b"\x97\xd1":
+        return mark, bytes(b ^ 0xFF for b in raw[2:])
+    if mark == b"\x89\xce":
+        return raw[:3], bytes(b ^ raw[2] for b in raw[3:])
+    raise Bad("not a coded table (95 97, 97 D1 or 89 CE)")
+
+
+def _encode(head, dec):
+    if head == b"\x95\x97":
+        return head + bytes(((b << 2) | (b >> 6)) & 0xFF for b in dec)
+    if head == b"\x97\xd1":
+        return head + bytes(b ^ 0xFF for b in dec)
+    return head + bytes(b ^ head[2] for b in dec)
 
 
 def table_read(raw):
-    """The strings of a NAME_Fn / KOM_Fn file."""
-    if raw[:2] != TABLE_MAGIC:
-        raise Bad("not a 95 97 table")
-    dec = bytes(((b >> 2) | (b << 6)) & 0xFF for b in raw[2:])
+    """(the strings of a NAME_Fn / KOM_Fn file, what follows them (the coding and the 1Ah end))."""
+    head, dec = _decode(raw)
     end = dec.index(0x1A)
     parts = dec[:end].split(b"\x00")
     if parts[-1] != b"":
         raise Bad("the table does not end in NUL")
-    return parts[:-1], dec[end:]
+    return parts[:-1], (head, dec[end:])
 
 
 def table_write(parts, tail):
-    dec = b"".join(p + b"\x00" for p in parts) + tail
-    return TABLE_MAGIC + bytes(((b << 2) | (b >> 6)) & 0xFF for b in dec)
+    head, rest = tail
+    return _encode(head, b"".join(p + b"\x00" for p in parts) + rest)
 
 
 # ---- ADL.EXE
@@ -583,7 +625,7 @@ def patch_exe(exe):
         raise SystemExit("ADL.EXE: the helper is %d bytes, the room %d" % (len(code), ROOM * 16 - 2))
 
     def jmp(at, to, n):
-        seg[at:at + n] = b"\xe9" + struct.pack("<h", to - (at + 3)) + b"\x90" * (n - 3)
+        seg[at:at + n] = b"\xe9" + struct.pack("<H", (to - (at + 3)) & 0xFFFF) + b"\x90" * (n - 3)
     jmp(text, labels["text"], 3)
     jmp(name, labels["name"], 5)
     jmp(gat, labels["graph"], 3)

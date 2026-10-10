@@ -1,0 +1,14 @@
+{
+ "title": "Yuu Disk Vol. 5 - Telephone Scandal",
+ "key": "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal",
+ "image": "Yuu Disk Vol. 5 - Telephone Scandal\\Yuu Disk Vol. 5 - Telephone Scandal [FD]\\Yuu Disk Vol. 5 - Telephone Scandal (Disk A).hdm",
+ "encoding": "adl",
+ "version": "adl5",
+ "program": "ADL5.EXE",
+ "game_dir": "",
+ "name_cells": 8,
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:lclick,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "program_files": [
+  "PCMSET2.EXE"
+ ]
+}

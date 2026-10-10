@@ -3005,5 +3005,23 @@
    "The scenarios (DOR1-3, the S01_x chain, SS2), menus, save/load, endings",
    "not yet seen"
   ]
+ ],
+ "yuu_disk_vol_5": [
+  [
+   "Disk A (patched) and B in the floppy drives; PCMSET2.EXE, the voice speed setting",
+   "OK: its lines half-width filler, the two digits the program writes kept in place; the OK button goes on to the game"
+  ],
+  [
+   "ADL5: the title, the opening pages (DOR2.EDT)",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged with the key-wait mark"
+  ],
+  [
+   "The first menu",
+   "OK: the command box's items half-width filler (6 letters, the table's slot)"
+  ],
+  [
+   "DOR_P2/DOR_P3 (the two calls), save/load, the disk prompts, endings",
+   "not yet seen"
+  ]
  ]
 }

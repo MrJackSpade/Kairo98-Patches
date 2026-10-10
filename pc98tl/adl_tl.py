@@ -1,9 +1,12 @@
-"""D.O.'s ADL games (DOR Part 2): the scripts, the name and command tables
-and ADL.EXE's own strings out to strings.json, and the English patch (the
-formats and the ADL.EXE patch are in pc98tl/adl.py).
+"""D.O.'s ADL games (DOR Part 1-3) and ADL5 games (Yuu Disk Vol. 5): the
+scripts, the name and command tables and the program's own strings out to
+strings.json, and the English patch (the formats and the program patches
+are in pc98tl/adl.py and pc98tl/adl5.py; game.json "version": "adl5" picks
+the later one).
 
-The patch works on the game's hard-disk release (game.json "image", the
-game in "game_dir").
+The patch works on the image game.json names (a hard-disk release, or a
+floppy holding the program and its scripts), the game in "game_dir" ("" the
+disk's root), the program "program" (ADL.EXE where it is not given).
 
 Strings:
 
@@ -12,10 +15,20 @@ Strings:
   a colour change between words), unless one is the target of an entry.
   The controls between its runs are {X1}, {X2}... (each kept once, in any
   order; the note says what each does).
-* "name": a name table's names (NAME_Fn.EDT: 8 letters, the 9-byte slot).
-* "cmd": a command table's items (KOM_Fn.EDT: 16 letters, the 17-byte slot;
-  the menus' save/load and numbered items).
-* "engine": ADL.EXE's save slots' names (16 letters, the 17-byte slot).
+* "name": a name table's names (NAME_Fn.EDT: 8 letters, the 9-byte slot;
+  ADL5: twice the length 19h gives, its slot one more).
+* "cmd": a command table's items (KOM_Fn.EDT: 16 letters, the 17-byte slot,
+  ADL5: twice the length 18h gives; the menus' save/load and numbered items).
+* "engine": the program's own strings: ADL.EXE's save slots' names (16
+  letters, the 17-byte slot); ADL5.EXE's messages (runs of text, each
+  within the Japanese's bytes, a character the program rewrites (the drive
+  letter) {X1}, kept at its place) and its movement commands (8 letters).
+* ADL5's 71h (a run of text drawn at a place of its own) is a "msg" too,
+  one line from its place to the screen's right edge.
+* "engine" also: the lines of the helper programs game.json "program_files"
+  names (PCMSET2.EXE, the voice speed setting, drawn by ADL5's graphics
+  drawer: pc98tl/adl5.py patch_graph), each within its own bytes, the
+  characters the program rewrites (digits) {X1}... kept at their places.
 
 English in a run of text is written as 20h, then ASCII (pc98tl/adl.py:
 the helper draws it half-width), wrapped between words with a new line
@@ -23,15 +36,16 @@ the helper draws it half-width), wrapped between words with a new line
 that filled the window would be wrapped by the engine, and a new line (06)
 after it would leave an empty one); the engine pages by itself at the
 window's bottom.  The cursor is followed
-from statement to statement: the window 71h last set (its width; 0 at
-the start), the name's indent (10 cells after 04 n, to 03 clears or a 00
-after a control), new lines (06), and the Japanese runs left as they are
-(two cells a character).
+from statement to statement: the window last set (ADL's 71h, ADL5's 82h:
+its text's width; a script that draws before it sets one, the window its
+loader set), the name's indent (game.json "name_cells", 10 where it is not
+given, after 04 n, to 03 clears or a 00 after a control), new lines (06),
+and the Japanese runs left as they are (two cells a character).
 
-A menu's text window (71h after the 82h frame, then 12h and the menu,
-10h) is as wide as the longest Japanese choice: it is widened (with its
-frame) to the longest English choice, up to the screen's right edge, so
-each choice stays one line.
+A menu's text window (the last window set before its choices, the text
+statements after 10h; in ADL the 82h frame before it with it) is as wide
+as the longest Japanese choice: it is widened to the longest English
+choice, up to the screen's right edge, so each choice stays one line.
 
 A script is read into a 64 KB segment: a build whose script outgrows it is
 refused, naming the script's strings (the --pseudo filler is cut instead
@@ -42,7 +56,7 @@ import os
 import re
 import struct
 
-from . import adl
+from . import adl, adl5
 from .alice_sys2_tl import sha256
 
 PREFIX = {"msg": "m", "name": "n", "cmd": "c", "engine": "e"}
@@ -54,7 +68,19 @@ INDENT = 10                     # the cells after a name (04 n: 80 dots)
 SCREEN = 640
 TOKEN = re.compile(r"\{X(\d+)\}")
 CTRL_NOTE = {1: "colour %d", 2: "a key wait", 3: "the window cleared", 4: "speaker %d's name", 5: "the picture redrawn",
-             6: "a new line", 7: "animation %d on", 8: "animation %d off"}
+             6: "a new line", 7: "animation %d on", 8: "animation %d off", 9: "an effect", 10: "an effect",
+             11: "window %d"}
+F = adl                         # the script format: pc98tl/adl.py or adl5.py (game.json "version")
+
+
+def _set_format(cfg):
+    global F, INDENT
+    F = adl5 if cfg.get("version") == "adl5" else adl
+    INDENT = cfg.get("name_cells", 10)
+
+
+def _path(cfg, name):
+    return cfg["game_dir"] + "/" + name if cfg["game_dir"] else name
 
 
 def _image(cfg, src):
@@ -63,8 +89,8 @@ def _image(cfg, src):
 
 
 def _game_files(vol, cfg):
-    d = vol.find(cfg["game_dir"])
-    return sorted(e["name"] for e in vol.listdir(d["cluster"]) if not e["is_dir"])
+    cluster = vol.find(cfg["game_dir"])["cluster"] if cfg["game_dir"] else 0
+    return sorted(e["name"] for e in vol.listdir(cluster) if not e["is_dir"])
 
 
 def scripts(vol, cfg):
@@ -74,11 +100,11 @@ def scripts(vol, cfg):
 
 
 def tables(vol, cfg):
-    return [n for n in _game_files(vol, cfg) if re.match(r"(NAME|KOM)_F\d+\.EDT$", n.upper())]
+    return [n for n in _game_files(vol, cfg) if re.match(r"(NAME|KOM)_F\d*\.EDT$", n.upper())]
 
 
 def _program(vol, cfg):
-    exe = vol.read(cfg["game_dir"] + "/ADL.EXE")
+    exe = vol.read(_path(cfg, cfg.get("program", "ADL.EXE")))
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
     return exe, hdr
 
@@ -97,22 +123,22 @@ def _ends_on_text(its):
 def units(d, toks):
     """[(start of the first statement, [statement starts], [(run start, run end)], [control bytes between
     the runs])] of a script's runs of text."""
-    targets = set(adl.entries(d).values())
+    targets = set(F.entries(d).values())
     out, k = [], 0
     while k < len(toks):
         s, e = toks[k]
-        if d[s] != 0x70:
+        if d[s] != 0x70 and not (F is adl5 and d[s] == 0x71):
             k += 1
             continue
         group = [k]
-        while _ends_on_text(adl.items(d, *toks[group[-1]])) and group[-1] + 1 < len(toks) \
+        while d[s] == 0x70 and _ends_on_text(F.items(d, *toks[group[-1]])) and group[-1] + 1 < len(toks) \
                 and d[toks[group[-1] + 1][0]] == 0x70 and toks[group[-1] + 1][0] not in targets:
             group.append(group[-1] + 1)
         runs = []
         for m in group:
-            runs += [(a, b) for kind, a, b in adl.items(d, *toks[m]) if kind == "text"]
+            runs += [(a, b) for kind, a, b in F.items(d, *toks[m]) if kind == "text"]
         if runs:
-            # (the bytes between one run's 00 and the next run's 0Fh)
+            # (the bytes between one run's 00 and the next run's mark (0Fh, ADL5's FFh))
             between = [d[runs[i][1] + 1:runs[i + 1][0] - 1] for i in range(len(runs) - 1)]
             out.append((s, [toks[m][0] for m in group], runs, between))
         k = group[-1] + 1
@@ -124,12 +150,12 @@ def _describe(ctrl):
     out, j = [], 0
     while j < len(ctrl):
         b = ctrl[j]
-        if b in adl.CTRL_ARG:
+        if F.ctrl_len(b) == 2:
             out.append(CTRL_NOTE[b] % ctrl[j + 1])
             j += 2
         elif b in CTRL_NOTE:
             out.append(CTRL_NOTE[b])
-            j += 1
+            j += F.ctrl_len(b)
         else:
             j += 1
     return ", ".join(out) or "none (the text goes on)"
@@ -189,8 +215,8 @@ def _jp_advance(text, width, col, indent):
 
 
 def _menus(d, toks):
-    """{start of a menu's text window (the last 71h before its choices): (the 82h frame just before it or
-    None, [starts of the choices: the text statements right after 10h])}."""
+    """{start of a menu's text window (the last window set before its choices): (ADL's 82h frame just
+    before it or None, [starts of the choices: the text statements right after 10h])}."""
     out = {}
     for k, (s, _e) in enumerate(toks):
         if d[s] != 0x10:
@@ -199,10 +225,10 @@ def _menus(d, toks):
         first = k + 1
         while first < len(toks) and d[toks[first][0]] in (0x80, 0x82, 0x71):
             first += 1
-        w = next((j for j in range(first - 1, -1, -1) if d[toks[j][0]] == 0x71), None)
+        w = next((j for j in range(first - 1, -1, -1) if d[toks[j][0]] == F.WINDOW_OP), None)
         if w is None:
             continue
-        frame = toks[w - 1][0] if w and d[toks[w - 1][0]] == 0x82 else None
+        frame = toks[w - 1][0] if F is adl and w and d[toks[w - 1][0]] == 0x82 else None
         choices = []
         for s2, _e2 in toks[first:]:
             if d[s2] != 0x70:
@@ -215,8 +241,8 @@ def _menus(d, toks):
 
 def _widest(d, s, frame):
     """The widest a menu's text window at s may be (dots): it and its frame within the screen."""
-    x, _y, w, _h = _window(d, s)
-    most = SCREEN - x
+    x, w = F.window(d, s)
+    most = SCREEN - x - (32 if F is adl5 else 0)
     if frame is not None:
         fx, _fy, fw, _fh = struct.unpack_from(">4H", d, frame + 1)
         most = min(most, SCREEN - fx - (fw - w))
@@ -231,7 +257,7 @@ def _box_cells(d, s):
 
 
 def _window(d, s):
-    """(x, y, w, h) of 71h at s."""
+    """(x, y, w, h) of ADL's 71h at s."""
     return struct.unpack_from(">4H", d, s + 1)
 
 
@@ -247,17 +273,17 @@ def split_tokens(text, n, sid):
 
 def start_widths(vol, cfg):
     """{script: the text window's width (cells) it starts with}: a script that draws text before it
-    sets a window (71h) draws in the one its loader set.  The scripts each load (50h, 51h: a name,
+    sets a window draws in the one its loader set.  The scripts each load (50h, 51h: a name,
     .EDT added) are followed from script to script; where several load one, the narrowest; the
     first script (and one no script loads) none (0)."""
     loads = {}
     for name in scripts(vol, cfg):
-        d = vol.read(cfg["game_dir"] + "/" + name)
-        toks = adl.tokenize(d)
+        d = vol.read(_path(cfg, name))
+        toks = F.tokenize(d)
         width, out = None, []
         for s, e in toks:
-            if d[s] == 0x71:
-                width = _window(d, s)[2] // 8
+            if d[s] == F.WINDOW_OP:
+                width = F.window(d, s)[1] // 8
             elif d[s] in (0x50, 0x51):
                 target = d[s + 1:d.index(0, s + 1)].decode("ascii", "replace").upper() + ".EDT"
                 out.append((target, width))
@@ -293,7 +319,7 @@ def rebuild(d, toks, values, table, ids, start_width=0):
     widen = {}
     # (a menu's text window: as wide as the longest English choice, up to the screen's edge)
     for s, (frame, choices) in menus.items():
-        x, _y, w, _h = _window(d, s)
+        x, w = F.window(d, s)
         need = max([len(_ascii(p)) * 8 for c in choices if c in plan for p in plan[c][0]] or [0])
         if need > w:
             widen[s] = max(w, min(_widest(d, s, frame), (need + 15) // 16 * 16))
@@ -301,16 +327,32 @@ def rebuild(d, toks, values, table, ids, start_width=0):
     while k < len(toks):
         s, e = toks[k]
         op = d[s]
-        if op == 0x71:
-            x, y, w, h = _window(d, s)
+        if op == F.WINDOW_OP:
+            x, w = F.window(d, s)
             if s in widen:
                 w = widen[s]
-                new[s] = d[s:s + 1] + struct.pack(">4H", x, y, w, h)
+                new[s] = F.set_window_width(d, s, w)
                 f = menus[s][0]
                 if f is not None:
                     fx, fy, fw, fh = struct.unpack_from(">4H", d, f + 1)
-                    new[f] = d[f:f + 1] + struct.pack(">4H", fx, fy, max(fw, w + (fw - _window(d, s)[2])), fh)
+                    new[f] = d[f:f + 1] + struct.pack(">4H", fx, fy, max(fw, w + (fw - F.window(d, s)[1])), fh)
             width, col, indent = w // 8, 0, 0
+            k += 1
+            continue
+        if op == 0x71 and F is adl5:
+            # (a run drawn at a place of its own: one line to the screen's edge)
+            if s in plan:
+                x = struct.unpack_from(">H", d, s + 1)[0]
+                runs, between = us[s][2], us[s][3]
+                pieces, order = plan[s]
+                seq = [pieces[0]] + [x2 for i, t in enumerate(order) for x2 in (t, pieces[i + 1])]
+                body = bytearray()
+                for i, x2 in enumerate(seq):
+                    if i % 2 == 0:
+                        body += adl.encode_ascii(" ".join(_ascii(x2).split("\n"))[:(SCREEN - x) // 8])
+                    else:
+                        body += b"\x00" + between[x2 - 1] + bytes([F.TEXT_MARK])
+                new[s] = d[s:runs[0][0]] + bytes(body) + d[runs[-1][1]:e]
             k += 1
             continue
         if op != 0x70:
@@ -338,7 +380,7 @@ def rebuild(d, toks, values, table, ids, start_width=0):
                     body += adl.encode_ascii(text)
                 else:
                     ctrl = between[x - 1]
-                    body += b"\x00" + ctrl + b"\x0f"
+                    body += b"\x00" + ctrl + bytes([F.TEXT_MARK])
                     col, indent = _ctrl_effect(ctrl, col, indent)
             col, indent = _ctrl_effect(tail, col, indent)
             new[s] = head + bytes(body) + tail
@@ -347,25 +389,25 @@ def rebuild(d, toks, values, table, ids, start_width=0):
         else:
             for s2, e2 in stmts:
                 at = s2
-                for kind, a, b in adl.items(d, s2, e2):
+                for kind, a, b in F.items(d, s2, e2):
                     if kind == "text":
                         col, indent = _ctrl_effect(d[at:a], col, indent)
                         col = _jp_advance(adl.text_of(d[a:b], table), max(width, 1), col, indent)
                         at = b
                 col, indent = _ctrl_effect(d[at:e2], col, indent)
         k += n_stmt
-    return adl.rebuild(d, toks, new)
+    return F.rebuild(d, toks, new)
 
 
 def _ctrl_effect(raw, col, indent):
     """(col, indent) after a text statement's bytes other than its runs' characters: controls, the
-    runs' 0Fh and 00, statement starts (70h).  A 00 straight after a control moves the cursor to the
+    runs' marks (0Fh, ADL5's FFh) and 00, statement starts (70h).  A 00 straight after a control moves the cursor to the
     window's left edge and drops the name's indent (the engine's control loop reads it); a 00 after
     a run or at a statement's start only ends the statement."""
     j, ctrl = 0, False
     while j < len(raw):
         b = raw[j]
-        if b in (0, 0x0F, 0x70):
+        if b in (0, F.TEXT_MARK, 0x70):
             if b == 0 and ctrl:
                 col, indent = 0, 0
             ctrl = False
@@ -375,16 +417,51 @@ def _ctrl_effect(raw, col, indent):
             col = indent = INDENT
         elif b in (3, 6):
             col = indent
-        j += 2 if b in adl.CTRL_ARG else 1
+        j += F.ctrl_len(b)
         ctrl = True
     return col, indent
 
 
 # ---- tables
 
+def table_rooms(vol, cfg):
+    """(name room, command room): the letters a table's slot holds.  ADL: 8 and 16.  ADL5 copies
+    each table's strings into slots of twice the length 19h (names) and 18h (commands) give (a byte
+    before the table's name), and one more: the shortest any script sets."""
+    if F is not adl5:
+        return NAME_CELLS, CMD_CELLS
+    rooms = {0x19: [], 0x18: []}
+    for name in scripts(vol, cfg):
+        d = vol.read(_path(cfg, name))
+        for s, _e in F.tokenize(d):
+            if d[s] in rooms:
+                rooms[d[s]].append(2 * d[s + 1])
+    if not rooms[0x19] or not rooms[0x18]:
+        raise SystemExit("no script sets the name and command tables' slots (19h, 18h)")
+    return min(rooms[0x19]), min(rooms[0x18])
+
+
 def _table_strings(raw):
     parts, _tail = adl.table_read(raw)
     return [p.decode("cp932", "replace") for p in parts]
+
+
+def _program_runs(exe):
+    """[(start, end, kind, fixed, text)] of the program's own strings (file offsets): ADL5.EXE's
+    (pc98tl/adl5.py), ADL.EXE's save slots' names ("slot")."""
+    if F is adl5:
+        table = adl.kana_table(exe)
+        out = []
+        for s, e, kind, fixed in adl5.program_strings(exe):
+            raw = exe[s:e]
+            if kind == "run":
+                text = _text_with_fixed(raw, fixed, table)
+            else:
+                text = raw.rstrip(b"\x00").decode("cp932", "replace")
+            out.append((s, e, kind, fixed, text))
+        return out
+    hdr = struct.unpack_from("<H", exe, 8)[0] * 16
+    return [(hdr + at, hdr + at + SLOT_CELLS, "slot", [], jp) for at, jp in _slots(exe[hdr:])]
 
 
 def _slots(img):
@@ -404,6 +481,7 @@ def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     img = _image(cfg, src)
     vol = img.volumes[0]
+    _set_format(cfg)
     exe, hdr = _program(vol, cfg)
     table = adl.kana_table(exe[hdr:])
     merged, order = {}, []
@@ -418,35 +496,54 @@ def run_extract(here, src):
         if note:
             merged[key]["note"] = note
         order.append(key)
-    menu_cells = CMD_CELLS
+    name_room, cmd_room = table_rooms(vol, cfg)
+    menu_cells = cmd_room
     starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
-        d = vol.read(cfg["game_dir"] + "/" + name)
-        toks = adl.tokenize(d)
+        d = vol.read(_path(cfg, name))
+        toks = F.tokenize(d)
         menu_cells = min([menu_cells] + [_box_cells(d, s) for s, _e in toks if d[s] == 0x12])
-        if adl.rebuild(d, toks, {}) != d:
+        if F.rebuild(d, toks, {}) != d:
             raise SystemExit("%s does not rebuild byte for byte" % name)
         width = starts.get(name.upper(), 0)
         choice_cells = {c: _widest(d, w, f) // 8 for w, (f, cs) in _menus(d, toks).items() for c in cs}
         firsts = {u[0]: u for u in units(d, toks)}
         for s, _e in toks:
-            if d[s] == 0x71:
-                x, _y, w, _h = _window(d, s)
-                width = w // 8
+            if d[s] == F.WINDOW_OP:
+                width = F.window(d, s)[1] // 8
             if s in firsts:
                 _s, _starts, runs, between = firsts[s]
                 jp = unit_text(d, runs, table)
                 if not jp.replace("　", "").strip() or re.fullmatch(r"(\{X\d+\})*", jp.replace("　", "")):
                     continue
                 note = "; ".join("{X%d}: %s" % (i + 1, _describe(c)) for i, c in enumerate(between)) or None
-                add("msg", jp, "%s:%04x" % (name, s), choice_cells.get(s, width), note)
+                cells = choice_cells.get(s, width)
+                if d[s] == 0x71:
+                    cells = (SCREEN - struct.unpack_from(">H", d, s + 1)[0]) // 8
+                add("msg", jp, "%s:%04x" % (name, s), cells, note)
     for name in tables(vol, cfg):
         kind = "name" if name.upper().startswith("NAME") else "cmd"
-        for i, jp in enumerate(_table_strings(vol.read(cfg["game_dir"] + "/" + name))):
+        for i, jp in enumerate(_table_strings(vol.read(_path(cfg, name)))):
             if jp.replace("　", "").strip():
-                add(kind, jp, "%s:%d" % (name, i), NAME_CELLS if kind == "name" else menu_cells)
-    for at, jp in _slots(exe[hdr:]):
-        add("engine", jp, "ADL.EXE:%04x" % at, SLOT_CELLS)
+                add(kind, jp, "%s:%d" % (name, i), name_room if kind == "name" else menu_cells)
+    prog = cfg.get("program", "ADL.EXE")
+    for s, e, kind, fixed, jp in _program_runs(exe):
+        if kind == "slot":
+            # (refs: offsets in the load image, as before)
+            add("engine", jp, "%s:%04x" % (prog, s - hdr), SLOT_CELLS)
+        else:
+            note = "; ".join("{X%d}: a character the program writes there (the drive letter, the disk's number)"
+                             % (n + 1) for n in range(len(fixed))) or None
+            add("engine", jp, "%s:%04x" % (prog, s), (e - s) - 1 - 2 * len(fixed) if kind == "run" else 8, note)
+    for pname in cfg.get("program_files", []):
+        raw = vol.read(_path(cfg, pname))
+        for s, e, fixed in adl5.graph_strings(raw):
+            if not raw[s:e].decode("cp932", "replace").strip("　 ▼"):
+                continue
+            note = "; ".join("{X%d}: a character the program writes there (a digit)" % (n + 1)
+                             for n in range(len(fixed))) or None
+            add("engine", _text_with_fixed(raw[s:e], fixed, table), "%s:%04x" % (pname, s),
+                (e - s) - 2 * len(fixed), note)
     counts, strings = {}, []
     for key in order:
         e = merged[key]
@@ -490,6 +587,60 @@ def _fixed(text, room):
     return bytes(out[:room])
 
 
+def _text_with_fixed(raw, fixed, table):
+    """A run's or line's text, the characters at fixed (offsets) as {X1}, {X2}..."""
+    text, at = "", 0
+    for n, f in enumerate(fixed):
+        text += adl.text_of(raw[at:f], table) + "{X%d}" % (n + 1)
+        at = f + 2
+    return text + adl.text_of(raw[at:], table)
+
+
+def _fixed_line(text, raw, fixed, sid):
+    """(a helper program's line in its own bytes: ASCII (one column each, the drawer's own space 20h),
+    the characters the program rewrites kept at their places, NUL after; whether it was cut)."""
+    room = len(raw)
+    parts = TOKEN.split(text)[0::2] if fixed else [text]
+    if len(parts) != len(fixed) + 1:
+        raise SystemExit("%s: the English must keep %s" % (sid, ", ".join("{X%d}" % (i + 1) for i in range(len(fixed)))))
+    out, cut = bytearray(), False
+    for n, part in enumerate(parts):
+        enc = _fixed(part, room)
+        limit = fixed[n] if n < len(fixed) else room
+        if len(out) + len(enc) > limit:
+            enc, cut = enc[:max(0, limit - len(out))], True
+        out += enc
+        if n < len(fixed):
+            out += b"\x20" * (fixed[n] - len(out)) + raw[fixed[n]:fixed[n] + 2]
+    return bytes(out + bytes(room - len(out))), cut
+
+
+def _fixed_run(text, raw, fixed, sid):
+    """(a program message's run in its own bytes: 20h, the letters (7Fh a space), the characters the
+    program rewrites ({X1}...) kept at their places, the rest 20h (each switching the half-width mode,
+    drawing nothing); whether the English was cut)."""
+    room = len(raw)
+    parts = TOKEN.split(text)[0::2] if fixed else [text]
+    if len(parts) != len(fixed) + 1:
+        raise SystemExit("%s: the English must keep %s" % (sid, ", ".join("{X%d}" % (i + 1) for i in range(len(fixed)))))
+    out, cut = bytearray(b"\x20"), False
+    for n, part in enumerate(parts):
+        enc = adl.encode_ascii(" ".join(_ascii(part).split("\n")))[1:]
+        limit = fixed[n] if n < len(fixed) else room
+        if len(out) + len(enc) > limit:
+            enc, cut = enc[:max(0, limit - len(out))], True
+        out += enc
+        if n < len(fixed):
+            pad = fixed[n] - len(out)
+            if pad % 2:
+                # (an odd number of 20h would leave the half-width mode off: one drawn space instead)
+                out.append(0x7F)
+                pad -= 1
+            out += b"\x20" * pad
+            out += raw[fixed[n]:fixed[n] + 2]
+    return bytes(out + b"\x20" * (room - len(out))), cut
+
+
 def run_patch(here, src, dst, mode="en"):
     from .text import pseudo
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
@@ -498,14 +649,20 @@ def run_patch(here, src, dst, mode="en"):
         print("warning: source image differs from the one strings.json was extracted from")
     img = _image(cfg, src)
     vol = img.volumes[0]
+    _set_format(cfg)
     exe, hdr = _program(vol, cfg)
     table = adl.kana_table(exe[hdr:])
+    prog = cfg.get("program", "ADL.EXE")
     by_ref, ids = {}, {}
     for e in doc["strings"]:
         if mode == "pseudo":
             if e["kind"] == "msg":
                 text = "".join(pseudo(e["id"], 2 * len(p)) if i % 2 == 0 and p.strip("　 ") else
                                ("{X%s}" % p if i % 2 else p) for i, p in enumerate(TOKEN.split(e["jp"])))
+            elif TOKEN.search(e["jp"]):
+                # (each piece its own filler, as long as the Japanese's bytes; the patcher cuts it to its room)
+                text = "".join(pseudo(e["id"], 2 * len(p))[:2 * len(p)] if i % 2 == 0 else "{X%s}" % p
+                               for i, p in enumerate(TOKEN.split(e["jp"])))
             else:
                 text = pseudo(e["id"], 2 * len(e["jp"]))[:e["max_cells"]]
         else:
@@ -519,9 +676,9 @@ def run_patch(here, src, dst, mode="en"):
     warn, done = [], 0
     starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
-        path = cfg["game_dir"] + "/" + name
+        path = _path(cfg, name)
         d = vol.read(path)
-        toks = adl.tokenize(d)
+        toks = F.tokenize(d)
         values = {a: t for (f, a), t in by_ref.items() if f == name}
         if not values:
             continue
@@ -542,13 +699,14 @@ def run_patch(here, src, dst, mode="en"):
             new = rebuild(d, toks, values, table, sids, starts.get(name.upper(), 0))
         if cut:
             warn.append("%s: the filler was cut by %d letters to fit the script's segment" % (name, cut))
-        adl.tokenize(new)
+        F.tokenize(new)
         vol.write(path, new)
         done += 1
+    rooms = table_rooms(vol, cfg)
     for name in tables(vol, cfg):
-        path = cfg["game_dir"] + "/" + name
+        path = _path(cfg, name)
         parts, tail = adl.table_read(vol.read(path))
-        room = NAME_CELLS if name.upper().startswith("NAME") else CMD_CELLS
+        room = rooms[0] if name.upper().startswith("NAME") else rooms[1]
         changed = False
         for i in range(len(parts)):
             if (name, i) in by_ref:
@@ -559,12 +717,33 @@ def run_patch(here, src, dst, mode="en"):
                 changed = True
         if changed:
             vol.write(path, adl.table_write(parts, tail))
-    exe_img = bytearray(exe[hdr:])
-    for at, jp in _slots(bytes(exe_img)):
-        if ("ADL.EXE", at) in by_ref:
-            b = _fixed(by_ref[("ADL.EXE", at)], SLOT_CELLS)
-            exe_img[at:at + 17] = b + bytes(17 - len(b))
-    vol.write(cfg["game_dir"] + "/ADL.EXE", adl.patch_exe(exe[:hdr] + bytes(exe_img)))
+    out_exe = bytearray(exe)
+    for s, e, kind, fixed, jp in _program_runs(exe):
+        key = (prog, s - hdr) if kind == "slot" else (prog, s)
+        if key not in by_ref:
+            continue
+        if kind == "slot":
+            b = _fixed(by_ref[key], SLOT_CELLS)
+            out_exe[s:s + 17] = b + bytes(17 - len(b))
+        elif kind == "word":
+            b = _fixed(by_ref[key], 8)
+            out_exe[s:e] = b + bytes(8 - len(b))
+        else:
+            b, cut = _fixed_run(by_ref[key], exe[s:e], fixed, ids[key])
+            if cut:
+                warn.append("%s: cut to the program's room (%d bytes)" % (ids[key], e - s))
+            out_exe[s:e] = b
+    vol.write(_path(cfg, prog), F.patch_exe(bytes(out_exe)))
+    for pname in cfg.get("program_files", []):
+        raw = vol.read(_path(cfg, pname))
+        out = bytearray(raw)
+        for s, e, fixed in adl5.graph_strings(raw):
+            if (pname, s) in by_ref:
+                b, cut = _fixed_line(by_ref[(pname, s)], raw[s:e], fixed, ids[(pname, s)])
+                if cut:
+                    warn.append("%s: cut to the program's room (%d bytes)" % (ids[(pname, s)], e - s))
+                out[s:e] = b
+        vol.write(_path(cfg, pname), adl5.patch_graph(bytes(out), pname))
     for w in warn:
         print("warning:", w)
     img.save(dst)

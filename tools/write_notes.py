@@ -1060,6 +1060,33 @@ def silky_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def adl5_engine(cfg, files, tables, prog):
+    helpers = cfg.get("program_files", [])
+    return ["", "## Engine", "",
+            "D.O.'s **ADL5** engine (`%s`): %d scripts with text (%s), the speaker name table and the menu "
+            "command table (%s); `pc98tl/adl5.py` documents the script format and the program patch "
+            "(`pc98tl/adl.py` the characters and the tables), `pc98tl/adl_tl.py` the English.  Every "
+            "script tokenizes from its statements' start to its end, every entry lands on a statement, "
+            "and each rebuilds byte for byte." % (
+                prog, len(files), ", ".join("`%s`" % f for f in files), ", ".join("`%s`" % f for f in tables)), "",
+            "The patch works on the disk that holds the program and its scripts (`%s`); the other "
+            "disks are used as they are." % cfg["image"].replace("\\", "/").split("/")[-1], "",
+            "* A script starts with its entries (the targets of its gotos, calls and menus, as offsets), "
+            "so a rebuilt script has them moved with its statements.",
+            "* `%s` gets a helper in 512 bytes put in at the end of its code segment (the data and work "
+            "segments after it move up, every relocation with them).  In a run of text, 20h (a "
+            "character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from "
+            "the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's "
+            "text is), with the engine's own character wait, wrap and paging." % prog,
+            "* Lines are wrapped between words by the patcher to the text window the script set (82h: "
+            "its width less 32 dots), the speaker's name indenting the text %d cells; the engine's new "
+            "line (06) waits for a key itself before it clears a full window." % cfg.get("name_cells", 10),
+            "* Speaker names, menu commands and the program's own strings take ASCII as well.",
+            ] + (["* %s (run before the game) draws its lines with the same graphics drawer: it gets "
+                  "the same half-width letters (a 256-byte helper, put in the same way), and its lines are "
+                  "`e` strings too." % " and ".join("`%s`" % h for h in helpers)] if helpers else [])
+
+
 def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1068,8 +1095,12 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands", "engine": "save slot names"}
+    v5 = cfg.get("version") == "adl5"
+    prog = cfg.get("program", "ADL.EXE")
+    names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
+             "engine": "program strings" if v5 else "save slot names"}
     files = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] == "msg"})
+    name_cells = min([e["max_cells"] for e in strings if e["kind"] == "name"] or [8])
     tables = sorted({r.split(":")[0] for e in strings for r in e["refs"] if e["kind"] in ("name", "cmd")})
     cmd_cells = min([e["max_cells"] for e in strings if e["kind"] == "cmd"] or [16])
     out = ["# %s%s (D.O.)" % ("♥ " if heart else "", cfg["title"]), "",
@@ -1081,7 +1112,10 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
-    out += ["", "## Engine", "",
+    if v5:
+        out += adl5_engine(cfg, files, tables, prog)
+    else:
+        out += ["", "## Engine", "",
             "D.O.'s **ADL** engine (`ADL.EXE`): %d scripts with text (%s), the speaker name tables and "
             "the menu command tables (%s); `pc98tl/adl.py` documents the formats and the program patch, "
             "and `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start (1000h) "
@@ -1101,8 +1135,8 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
             "* Speaker names, menu commands and the save slots' names take ASCII as well (one cell or "
             "one 8-dot column each, the menus' from the BIOS 8x16 font).",
             "* A menu's text window (sized by the script to the longest Japanese choice) is widened, "
-            "with its frame, to the longest English choice, so that each choice stays one line.",
-            "", "## Script", "",
+            "with its frame, to the longest English choice, so that each choice stays one line."]
+    out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
                                                        for k, n in sorted(kinds.items()))), ""]
     out.append("Translation and the content classification (♥) are done by the translation model; "
@@ -1120,11 +1154,25 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
             "* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  "
             "Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script "
             "outgrows its segment is refused and names the script and its strings.",
-            "* Speaker names (`n` ids): %d letters (the table's 9-byte slot), drawn before the colon; the "
-            "text after them starts 10 cells in.  Longer ones are cut and reported." % 8,
-            "* Menu commands (`c` ids): `max_cells` (%d) letters fit the menus' boxes; up to 16 are taken "
-            "(the table's slot), longer ones are cut and reported." % cmd_cells,
-            "* Save slot names (`e` ids, in `ADL.EXE`): 16 letters (their 17-byte slots).",
+            ("* Speaker names (`n` ids): %d letters (the slot the script gives the table, 19h); the text "
+             "after them starts %d cells in.  Longer ones are cut and reported." % (name_cells, cfg.get("name_cells", 10))
+             if v5 else
+             "* Speaker names (`n` ids): %d letters (the table's 9-byte slot), drawn before the colon; the "
+             "text after them starts 10 cells in.  Longer ones are cut and reported." % 8),
+            ("* Menu commands (`c` ids): %d letters (the slot the script gives the table, 18h); longer "
+             "ones would run into the next command's, so they are cut and reported." % cmd_cells
+             if v5 else
+             "* Menu commands (`c` ids): `max_cells` (%d) letters fit the menus' boxes; up to 16 are taken "
+             "(the table's slot), longer ones are cut and reported." % cmd_cells)]
+    if v5:
+        out += ["* Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); a "
+                "character the program writes in at run time (a drive letter, a digit) is `{X1}`..., kept "
+                "in the English, which is placed so that it stays where the program writes it.  Longer "
+                "ones are cut and reported.",
+                "", "## Not handled", "",
+                "* Text drawn into the artwork (the title logos, pictures)."]
+    else:
+        out += ["* Save slot names (`e` ids, in `ADL.EXE`): 16 letters (their 17-byte slots).",
             "", "## Not handled", "",
             "* Text drawn into the artwork (the title logos, pictures).",
             "* `ADL.EXE`'s disk prompts (insert the system or scenario disk): shown only when the game "

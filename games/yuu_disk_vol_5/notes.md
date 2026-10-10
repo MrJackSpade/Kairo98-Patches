@@ -1,0 +1,48 @@
+# Yuu Disk Vol. 5 - Telephone Scandal (D.O.)
+
+> This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
+
+Source image: `Yuu Disk Vol. 5 - Telephone Scandal/Yuu Disk Vol. 5 - Telephone Scandal [FD]/Yuu Disk Vol. 5 - Telephone Scandal (Disk A).hdm` (sha256 in `strings.json`).
+Clearance: no PC-98 English release or announcement found on 2026-10-10 (`research/clearance.json`).
+
+## Engine
+
+D.O.'s **ADL5** engine (`ADL5.EXE`): 3 scripts with text (`DOR2.EDT`, `DOR_P2.EDT`, `DOR_P3.EDT`), the speaker name table and the menu command table (`KOM_F.EDT`, `NAME_F.EDT`); `pc98tl/adl5.py` documents the script format and the program patch (`pc98tl/adl.py` the characters and the tables), `pc98tl/adl_tl.py` the English.  Every script tokenizes from its statements' start to its end, every entry lands on a statement, and each rebuilds byte for byte.
+
+The patch works on the disk that holds the program and its scripts (`Yuu Disk Vol. 5 - Telephone Scandal (Disk A).hdm`); the other disks are used as they are.
+
+* A script starts with its entries (the targets of its gotos, calls and menus, as offsets), so a rebuilt script has them moved with its statements.
+* `ADL5.EXE` gets a helper in 512 bytes put in at the end of its code segment (the data and work segments after it move up, every relocation with them).  In a run of text, 20h (a character the engine skips) switches to half-width letters: ASCII drawn 8 dots wide from the BIOS 8x16 font into the graphics planes, in the text's colour (bold where the engine's text is), with the engine's own character wait, wrap and paging.
+* Lines are wrapped between words by the patcher to the text window the script set (82h: its width less 32 dots), the speaker's name indenting the text 8 cells; the engine's new line (06) waits for a key itself before it clears a full window.
+* Speaker names, menu commands and the program's own strings take ASCII as well.
+* `PCMSET2.EXE` (run before the game) draws its lines with the same graphics drawer: it gets the same half-width letters (a 256-byte helper, put in the same way), and its lines are `e` strings too.
+
+## Script
+
+859 strings: 5 menu commands, 27 program strings, 821 messages, 6 speaker names.
+
+Translation and the content classification (♥) are done by the translation model; 0 of 859 strings have English so far.
+
+## Limits
+
+* Messages (`m` ids): any length within the script's room (below); `\n` starts a new line. `max_cells` is a line's width in its window (letters); longer text wraps between words and pages.  A menu's choices (the messages right after a menu) should stay within one line: their `max_cells` is the widest the screen allows the menu's window.  ASCII is drawn half-width; another character is drawn full-width when Shift-JIS has it (two cells), else written as `?`.
+* `{X1}`, `{X2}`...: the script's controls between the runs of a message (a key wait, a colour change, a new line, the next statement going on along the same line); the note says what each does.  Keep each once, in any order; a message without them all is refused.
+* A script is read whole into a 64 KB segment: with its English it may take 65536 bytes.  Each English letter is one byte; a Japanese kana one, a kanji two.  A build whose script outgrows its segment is refused and names the script and its strings.
+* Speaker names (`n` ids): 8 letters (the slot the script gives the table, 19h); the text after them starts 8 cells in.  Longer ones are cut and reported.
+* Menu commands (`c` ids): 6 letters (the slot the script gives the table, 18h); longer ones would run into the next command's, so they are cut and reported.
+* Program strings (`e` ids): each within the Japanese's bytes (`max_cells` letters); a character the program writes in at run time (a drive letter, a digit) is `{X1}`..., kept in the English, which is placed so that it stays where the program writes it.  Longer ones are cut and reported.
+
+## Not handled
+
+* Text drawn into the artwork (the title logos, pictures).
+
+## Test status (np21w, `tools/boot_all.sh`)
+
+| Test | Result |
+|---|---|
+| Disk A (patched) and B in the floppy drives; PCMSET2.EXE, the voice speed setting | OK: its lines half-width filler, the two digits the program writes kept in place; the OK button goes on to the game |
+| ADL5: the title, the opening pages (DOR2.EDT) | OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged with the key-wait mark |
+| The first menu | OK: the command box's items half-width filler (6 letters, the table's slot) |
+| DOR_P2/DOR_P3 (the two calls), save/load, the disk prompts, endings | not yet seen |
+
+Telephone Scandal is also in DOR's English Windows release (G-Collections 2002): another platform, linked for the translation role to port from; it does not block this patch.
