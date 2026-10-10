@@ -150,11 +150,12 @@ def _ascii(text):
     return "".join(SUBST.get(c, c) for c in text)
 
 
-def wrap(text, width, col, indent):
+def wrap(text, width, col, indent, edge=None):
     """(the run's text with new lines where the next word would pass width
     cells, from column col, lines after a new line starting at indent; the
-    column it ends at).  A word longer than a line is cut at the edge."""
-    lines_out = []
+    column it ends at).  A word longer than a line is cut at the edge.  edge: the window's own width,
+    where the engine wraps by itself (width, unless the lines are kept shorter)."""
+    edge = width if edge is None else edge
     out = ""
     for n, para in enumerate(_ascii(text).split("\n")):
         if n:
@@ -171,10 +172,9 @@ def wrap(text, width, col, indent):
                 word, col, lead = word[room:], indent, ""
             out += lead + word
             col += len(lead) + len(word)
-            if col >= width:
+            if col >= edge:
                 # (the engine has wrapped by itself)
                 col = indent
-    del lines_out
     return out, col
 
 
@@ -245,12 +245,44 @@ def split_tokens(text, n, sid):
     return TOKEN.split(text)[0::2], found
 
 
-def rebuild(d, toks, values, table, ids):
-    """The script with English in values ({unit start: text})."""
+def start_widths(vol, cfg):
+    """{script: the text window's width (cells) it starts with}: a script that draws text before it
+    sets a window (71h) draws in the one its loader set.  The scripts each load (50h, 51h: a name,
+    .EDT added) are followed from script to script; where several load one, the narrowest; the
+    first script (and one no script loads) none (0)."""
+    loads = {}
+    for name in scripts(vol, cfg):
+        d = vol.read(cfg["game_dir"] + "/" + name)
+        toks = adl.tokenize(d)
+        width, out = None, []
+        for s, e in toks:
+            if d[s] == 0x71:
+                width = _window(d, s)[2] // 8
+            elif d[s] in (0x50, 0x51):
+                target = d[s + 1:d.index(0, s + 1)].decode("ascii", "replace").upper() + ".EDT"
+                out.append((target, width))
+        loads[name.upper()] = out
+    start = {}
+    for _round in range(len(loads) + 1):
+        new = {}
+        for name, out in loads.items():
+            for target, width in out:
+                w = width if width is not None else start.get(name)
+                if w:
+                    new[target] = min(new.get(target, w), w)
+        if new == start:
+            break
+        start = new
+    return start
+
+
+def rebuild(d, toks, values, table, ids, start_width=0):
+    """The script with English in values ({unit start: text}); start_width: the window's width (cells)
+    before the script sets one."""
     us = {u[0]: u for u in units(d, toks)}
     menus = _menus(d, toks)
     new = {}
-    width, col, indent = 0, 0, 0
+    width, col, indent = start_width, 0, 0
     # (each translated unit's statements: rebuilt from the English pieces)
     plan = {}
     for s, (start, starts, runs, between) in us.items():
@@ -302,7 +334,7 @@ def rebuild(d, toks, values, table, ids):
                 if i % 2 == 0:
                     # (a cell short of the edge: a line that fills the window is wrapped by the engine,
                     # and the script's own new line after it would leave an empty one)
-                    text, col = wrap(x, max(width - 1, indent + 1), col, indent)
+                    text, col = wrap(x, max(width - 1, indent + 1), col, indent, max(width, indent + 1))
                     body += adl.encode_ascii(text)
                 else:
                     ctrl = between[x - 1]
@@ -387,13 +419,14 @@ def run_extract(here, src):
             merged[key]["note"] = note
         order.append(key)
     menu_cells = CMD_CELLS
+    starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
         d = vol.read(cfg["game_dir"] + "/" + name)
         toks = adl.tokenize(d)
         menu_cells = min([menu_cells] + [_box_cells(d, s) for s, _e in toks if d[s] == 0x12])
         if adl.rebuild(d, toks, {}) != d:
             raise SystemExit("%s does not rebuild byte for byte" % name)
-        width = 0
+        width = starts.get(name.upper(), 0)
         choice_cells = {c: _widest(d, w, f) // 8 for w, (f, cs) in _menus(d, toks).items() for c in cs}
         firsts = {u[0]: u for u in units(d, toks)}
         for s, _e in toks:
@@ -484,6 +517,7 @@ def run_patch(here, src, dst, mode="en"):
             if text:
                 by_ref[key] = text
     warn, done = [], 0
+    starts = start_widths(vol, cfg)
     for name in scripts(vol, cfg):
         path = cfg["game_dir"] + "/" + name
         d = vol.read(path)
@@ -492,7 +526,7 @@ def run_patch(here, src, dst, mode="en"):
         if not values:
             continue
         sids = {a: ids[(name, a)] for a in values}
-        new = rebuild(d, toks, values, table, sids)
+        new = rebuild(d, toks, values, table, sids, starts.get(name.upper(), 0))
         if len(new) > 0x10000 and mode != "pseudo":
             raise SystemExit("%s: %d bytes, a script may take 65536 (its segment); shorten these strings: %s" % (
                 name, len(new), ", ".join(sorted(set(sids.values())))))
@@ -505,7 +539,7 @@ def run_patch(here, src, dst, mode="en"):
             if after >= total:
                 raise SystemExit("%s: the script does not fit even with its filler cut" % name)
             cut += total - after
-            new = rebuild(d, toks, values, table, sids)
+            new = rebuild(d, toks, values, table, sids, starts.get(name.upper(), 0))
         if cut:
             warn.append("%s: the filler was cut by %d letters to fit the script's segment" % (name, cut))
         adl.tokenize(new)

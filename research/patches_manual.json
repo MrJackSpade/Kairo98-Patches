@@ -1705,5 +1705,18 @@
    "url": "https://vndb.org/v159",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/DOR Part 3": [
+  {
+   "label": "This repo: games/dor_part_3 (patcher working, machine translation in progress)",
+   "url": "../games/dor_part_3/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8681",
+   "url": "https://vndb.org/v8681",
+   "source": "VNDB"
+  }
  ]
 }

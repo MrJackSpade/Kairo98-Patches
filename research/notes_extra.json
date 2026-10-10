@@ -215,5 +215,11 @@
    "Part 1's ADL.EXE is an earlier build than Part 2's (its data segment at 474h, its variables a byte lower, no key-skip in the character wait); the patch reads every address off the program.",
    "DOR has an English Windows release (G-Collections 2002; VNDB lists the Package and Download Editions): another platform, linked for the translation role to port from; it does not block this patch."
   ]
+ },
+ "dor_part_3": {
+  "remarks": [
+   "Scenario 1 is a chain of scripts (S01_A to S01_N, each loading the next with 50h); a script that draws text before it sets a window uses the one its loader set, which the patcher follows.",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: SS2.EDT (53,639 bytes in Japanese) by 28,846 letters; a real translation of SS2.EDT must stay about as long in bytes as the Japanese plus the 11,897 bytes the segment leaves (the patcher refuses and names the strings otherwise)."
+  ]
  }
 }

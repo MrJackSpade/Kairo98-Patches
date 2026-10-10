@@ -2995,5 +2995,15 @@
    "The scenarios (DOR1-3, the DOR_P2/P3 and DOR3A/B parts), save/load, endings",
    "not yet seen"
   ]
+ ],
+ "dor_part_3": [
+  [
+   "The hard-disk release; the opening (OP.EDT) clicked through",
+   "OK: boots; filler half-width, wrapped between words under the speaker name's indent, paged with the key-wait mark (a page break inside a message continues on the next page)"
+  ],
+  [
+   "The scenarios (DOR1-3, the S01_x chain, SS2), menus, save/load, endings",
+   "not yet seen"
+  ]
  ]
 }
