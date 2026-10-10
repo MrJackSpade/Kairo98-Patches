@@ -21,6 +21,9 @@ for g in $games; do
     fi
     dip=$(python -c "import json;print(json.load(open('games/$g/game.json',encoding='utf-8')).get('dipsw',''))" 2>/dev/null)
     [ -n "$dip" ] && set -- "$@" -Dip "$dip"
+    # (a hard-disk game that boots from a floppy of its own: game.json "boot_fd", relative to the collection)
+    boot_fd=$(python -c "import json;c=json.load(open('games/$g/game.json',encoding='utf-8')).get('boot_fd','');print('E:/PC98/'+c.replace(chr(92),'/') if c else '')" 2>/dev/null)
+    [ -n "$boot_fd" ] && set -- "$@" -Fd1 "$boot_fd"
     # (a game that reads its CD: game.json "cd", relative to the collection)
     cd_img=$(python -c "import json;c=json.load(open('games/$g/game.json',encoding='utf-8')).get('cd','');print('E:/PC98/'+c.replace(chr(92),'/') if c else '')" 2>/dev/null)
     [ -n "$cd_img" ] && set -- "$@" -Cd "$cd_img"

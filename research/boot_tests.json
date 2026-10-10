@@ -3201,5 +3201,19 @@
    "The other corners, save/load",
    "not yet seen"
   ]
+ ],
+ "crystal_rinal": [
+  [
+   "The CD version's HD Boot disk with the hard-disk image (patched) and the CD: the start menu (a box and its items, 71h)",
+   "OK: the items half-width filler, the highlight bar on the first"
+  ],
+  [
+   "ADL21: the opening's lines, the first scene (the nurse's room): a speaker's name and her lines",
+   "OK: filler half-width, wrapped between words in the window, paged; the speaker's name half-width with the text indented"
+  ],
+  [
+   "The rest of the story, the battles (BATLE.EDT, POWER.EDT's commands), save/load, endings",
+   "not yet seen"
+  ]
  ]
 }

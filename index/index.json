@@ -60972,7 +60972,14 @@
      "path": "Crystal Rinal\\Crystal Rinal [FD]\\Crystal Rinal (Disk L).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/crystal_rinal (patcher working, machine translation in progress)",
+     "url": "../games/crystal_rinal/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -60980,7 +60987,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Cybernoid Alpha",

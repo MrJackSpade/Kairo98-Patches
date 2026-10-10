@@ -1069,8 +1069,8 @@ def _cells_range(strings, kind):
 
 def adl5_engine(cfg, files, tables, prog):
     helpers = cfg.get("program_files", [])
-    v98 = cfg.get("version") in ("adl98", "adl98s")
-    label = {"adl98": "ADL98", "adl98u": "ADL98", "adl98s": "ADL98S", "adl3a": "ADL3A",
+    v98 = cfg.get("version") in ("adl98", "adl98s", "adl21")
+    label = {"adl98": "ADL98", "adl98u": "ADL98", "adl21": "ADL21", "adl98s": "ADL98S", "adl3a": "ADL3A",
              "adl3b": "ADL3B"}.get(cfg.get("version"), "ADL5")
     return ["", "## Engine", "",
             "D.O.'s **%s** engine (`%s`): %d scripts with text (%s), the speaker name table%s (%s); "
@@ -1082,7 +1082,7 @@ def adl5_engine(cfg, files, tables, prog):
                 label, prog, len(files), ", ".join("`%s`" % f for f in files),
                 " and the menu command table" if any(t.upper().startswith("KOM") for t in tables) else "",
                 ", ".join("`%s`" % f for f in tables),
-                " (ADL98's scripts are coded: after a 4-byte prefix, each byte inverted)" if v98 else ""), "",
+                " (the scripts are coded: after a 4-byte prefix, each byte inverted)" if v98 else ""), "",
             ("The patch works on the game's hard-disk release (the game in `%s/`)%s." % (
                 cfg["game_dir"], "; the scripts and the tables are members of %s (a word, the entries' size; "
                 "entries of a 12-byte name and a dword offset; the members), which the patch lays out anew" % (
@@ -1119,7 +1119,7 @@ def adl_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl3a", "adl3b")
+    v5 = cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b")
     prog = cfg.get("program", "ADL.EXE")
     names = {"msg": "messages", "name": "speaker names", "cmd": "menu commands",
              "engine": "program strings" if v5 else "save slot names"}

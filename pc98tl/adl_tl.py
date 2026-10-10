@@ -78,7 +78,7 @@ F = adl                         # the script format: pc98tl/adl.py or adl5.py (g
 
 def _set_format(cfg):
     global F, INDENT
-    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl3a", "adl3b") else adl
+    F = adl5 if cfg.get("version") in ("adl5", "adl5a", "adl98", "adl98s", "adl98u", "adl21", "adl3a", "adl3b") else adl
     if F is adl5:
         adl5.set_variant(cfg["version"])
     else:
@@ -145,8 +145,9 @@ def _game_files(vol, cfg):
 
 def scripts(vol, cfg):
     """The game folder's scripts (*.EDT but the tables)."""
+    extra = {n.upper() for n in cfg.get("tables", [])}
     return [n for n in _game_files(vol, cfg)
-            if n.upper().endswith(".EDT") and not re.match(TABLE_RE, n.upper())]
+            if n.upper().endswith(".EDT") and not re.match(TABLE_RE, n.upper()) and n.upper() not in extra]
 
 
 # (the tables: names (NAME_, DOR Special Edition '93's NA_) and commands (KOM_, its COM_))
@@ -154,7 +155,10 @@ TABLE_RE = r"(NAME|NA|KOM|COM)_\w*\.EDT$"
 
 
 def tables(vol, cfg):
-    return [n for n in _game_files(vol, cfg) if re.match(TABLE_RE, n.upper())]
+    """The name and command tables: by their names (TABLE_RE), and those game.json "tables" names
+    (Crystal Rinal's POWER.EDT, a command table 18h loads)."""
+    extra = {n.upper() for n in cfg.get("tables", [])}
+    return [n for n in _game_files(vol, cfg) if re.match(TABLE_RE, n.upper()) or n.upper() in extra]
 
 
 def _table_kind(name, slots):
@@ -310,6 +314,28 @@ def _widest(d, s, frame):
         most = min(most, SCREEN - fx - (fw - w))
     # (a multiple of 16 dots: the key-wait mark is drawn at its middle, which must be a whole cell)
     return most // 16 * 16
+
+
+def _boxes(d, toks):
+    """{a menu box's start (12h: x, y, width): [the starts of its items]}: Crystal Rinal's menus, a box
+    and its items as runs of text drawn at their own places (71h) right after it (text statements
+    with no text, the colour, between them).  The box's width is the highlight's, and its background
+    is drawn into the picture behind it, so the box keeps its width."""
+    out = {}
+    for k, (s, _e) in enumerate(toks):
+        if d[s] != 0x12:
+            continue
+        items, j = [], k + 1
+        while j < len(toks):
+            s2 = toks[j][0]
+            if d[s2] == 0x71:
+                items.append(s2)
+            elif not (d[s2] == 0x70 and not any(it[0] == "text" for it in F.items(d, s2, toks[j][1]))):
+                break
+            j += 1
+        if items:
+            out[s] = items
+    return out
 
 
 def _box_cells(d, s):
@@ -638,6 +664,8 @@ def run_extract(here, src):
         width = starts.get(name.upper(), 0)
         flow = flow_widths(d, toks, width) if F is adl5 else {}
         choice_cells = {c: _widest(d, w, f) // 8 for w, (f, cs) in _menus(d, toks).items() for c in cs}
+        box_items = {c: struct.unpack_from(">H", d, b + 1)[0] + struct.unpack_from(">H", d, b + 5)[0] - 8
+                     for b, cs in _boxes(d, toks).items() for c in cs}
         firsts = {u[0]: u for u in units(d, toks)}
         for s, _e in toks:
             if d[s] == F.WINDOW_OP:
@@ -652,7 +680,9 @@ def run_extract(here, src):
                 note = "; ".join("{X%d}: %s" % (i + 1, _describe(c)) for i, c in enumerate(between)) or None
                 cells = choice_cells.get(s, width)
                 if d[s] == 0x71:
-                    cells = (SCREEN - struct.unpack_from(">H", d, s + 1)[0]) // 8
+                    # (one line from its place to the screen's edge; a menu box's item, to the box's right
+                    # edge less its margin)
+                    cells = (box_items.get(s, SCREEN) - struct.unpack_from(">H", d, s + 1)[0]) // 8
                 add("msg", jp, "%s:%04x" % (name, s), cells, note)
     slots = table_slots(vol, cfg)
     for name in tables(vol, cfg):

@@ -1889,5 +1889,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/Crystal Rinal": [
+  {
+   "label": "This repo: games/crystal_rinal (patcher working, machine translation in progress)",
+   "url": "../games/crystal_rinal/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

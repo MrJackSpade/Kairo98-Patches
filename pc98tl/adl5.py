@@ -100,21 +100,28 @@ ADL3 = {"len": {0x23: 2, 0x24: 3, 0x53: 3, 0x54: 5},
 # ADL98U (ADL98.EXE of Yuu Disk Vol. 4, 1994: its walker at 58FFh): ADL98's statements with 9Ch three
 # bytes and AEh eleven, 0Dh a control with a byte as well, and the scripts not coded
 ADL98U = {"len": {0x9C: 3, 0xAE: 11}, "ctrl_args": {0x0D: 1}}
+# ADL21 (ADL21.EXE of Crystal Rinal's CD version, 1994: its walker at 58A2h): ADL98's statements with 67h
+# one byte and AEh eleven, 66h and 97h named; the scripts coded as ADL98's
+ADL21 = {"len": {0x67: 1, 0xAE: 11}, "named": {0x66, 0x97}}
 _BASE = (dict(STMT_LEN), set(NAMED), dict(CTRL_ARGS))
 VARIANT = "adl5"
 
 
 def set_variant(name):
     """The engine's build: "adl5" (ADL5.EXE), "adl5a" (an earlier ADL5.EXE), "adl98" (ADL98.EXE), "adl98u"
-    (Yuu Disk Vol. 4's ADL98.EXE), "adl98s" (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b" (ADL3B.EXE)."""
+    (Yuu Disk Vol. 4's ADL98.EXE), "adl21" (ADL21.EXE), "adl98s" (ADL98S.EXE), "adl3a" (ADL3A.EXE) or "adl3b"
+    (ADL3B.EXE)."""
     global STMT_LEN, NAMED, CTRL_ARGS, CTRL_END, CODED, VARIANT
     STMT_LEN, NAMED, CTRL_ARGS = dict(_BASE[0]), set(_BASE[1]), dict(_BASE[2])
     CTRL_END, CODED, VARIANT = 0x0C, False, name
-    if name in ("adl98", "adl98s", "adl98u"):
+    if name in ("adl98", "adl98s", "adl98u", "adl21"):
         STMT_LEN.update(ADL98["len"])
         NAMED |= ADL98["named"]
         CTRL_ARGS.update(ADL98["ctrl_args"])
         CTRL_END, CODED = 0x0D, True
+    if name == "adl21":
+        STMT_LEN.update(ADL21["len"])
+        NAMED |= ADL21["named"]
     if name == "adl98u":
         STMT_LEN.update(ADL98U["len"])
         CTRL_ARGS.update(ADL98U["ctrl_args"])
@@ -199,7 +206,7 @@ def statement(d, i):
     if op == 0x61:
         return _named(d, i) + 1
     if op == 0x64:
-        return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s", "adl98u") else 5)
+        return _named(d, i) + (6 if VARIANT in ("adl98", "adl98s", "adl98u", "adl21") else 5)
     if op == 0x93 and VARIANT != "adl3a":
         return _named(d, i) + 3
     if op == 0xC3 and not VARIANT.startswith("adl3"):
@@ -208,7 +215,7 @@ def statement(d, i):
         return _named(d, i + 1)
     if VARIANT == "adl98s" and op == 0x9C:
         return i + 2 + d[i + 1]
-    if VARIANT in ("adl98", "adl98s", "adl98u"):
+    if VARIANT in ("adl98", "adl98s", "adl98u", "adl21"):
         if op == 0x98:
             # (two bytes, then 3-byte records until 04)
             j = i + 3

@@ -283,6 +283,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Cocktail Soft FMC | Glass no Destiny | [This repo: games/glass_no_destiny (patcher working, machine translation in progress)](../games/glass_no_destiny/notes.md) |
 | D.O | Collector D | [This repo: games/collector_d (patcher working, machine translation in progress)](../games/collector_d/notes.md) |
 | D.O | Collector D Bangaihen | [This repo: games/collector_d_bangaihen (patcher working, machine translation in progress)](../games/collector_d_bangaihen/notes.md) |
+| D.O | Crystal Rinal | [This repo: games/crystal_rinal (patcher working, machine translation in progress)](../games/crystal_rinal/notes.md) |
 | D.O | Cybernoid Alpha | [This repo: games/cybernoid_alpha (patcher working, machine translation in progress)](../games/cybernoid_alpha/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 4 | [This repo: games/doki_doki_disk_vol_4 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_4/notes.md) |
 | D.O | D.O. Doki Doki Disk Vol. 5 | [This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)](../games/doki_doki_disk_vol_5/notes.md) |
@@ -1889,7 +1890,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Collector D [FD HD] `do` — *MTL (this repo)*
 - ♥ Collector D Bangaihen [FD HD] `do` — **EN**
 - ♥ Cry Sweeper [CD HD]
-- ♥ Crystal Rinal [CD FD HD extras] `do`
+- ♥ Crystal Rinal [CD FD HD extras] `do` — *MTL (this repo)*
 - ♥ Cybernoid Alpha [FD] `do` — **EN**
 - ♥ D.O. Best Characters [FD]
 - ♥ D.O. Doki Doki Disk CD Vol. 1 [CD]

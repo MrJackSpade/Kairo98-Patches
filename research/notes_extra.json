@@ -287,5 +287,12 @@
    "This ADL98.EXE is an earlier build than Zatsuon Ryouiki's: its scripts are not coded, 9Ch is three bytes and AEh eleven, 0Dh is a control with a byte, and some scripts go on after an end (FFh) that their entries reach (pc98tl/adl5.py, variant adl98u).",
    "The code segment's last routine runs on 11 bytes into the next segment (an instruction across the boundary); the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the menu's highlight was lost."
   ]
+ },
+ "crystal_rinal": {
+  "remarks": [
+   "The patch works on the CD version's hard-disk image.  It runs from the CD version's HD Boot disk floppy (which loads the CD-ROM driver) with the CD in the drive; on its own it stops at the DOS prompt, and the game started there shows a black screen.  The floppy release's ADL98.EXE is packed (DIET), which the patch does not take.",
+   "ADL21.EXE is ADL98's engine with 67h one byte and AEh eleven, and 66h and 97h named (pc98tl/adl5.py, variant adl21).  POWER.EDT, a command table the scripts load with 18h, is named in game.json \"tables\".",
+   "The start menu is a box (12h) with its items drawn at their own places (71h); the box's black background is drawn into the picture behind it, so each item's `max_cells` is the box's (15 letters)."
+  ]
  }
 }
