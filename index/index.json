@@ -64218,7 +64218,14 @@
      "path": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen [HD]\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_9 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_9/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -64226,7 +64233,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Zatsuon Ryouiki",
