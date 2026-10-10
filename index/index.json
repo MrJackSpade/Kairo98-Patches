@@ -168654,7 +168654,14 @@
      "path": "Lesser Mern\\Lesser Mern [HD]\\Lesser Mern.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/lesser_mern (patcher working, machine translation in progress)",
+     "url": "../games/lesser_mern/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "do",
@@ -168662,7 +168669,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "PantherSoftware.zip/Lesser Mern Special Director's Edition",

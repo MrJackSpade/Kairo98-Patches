@@ -3327,5 +3327,31 @@
    "Opening: the mode labels (CRUISE / ASSAULT / COMBAT MODE)",
    "not reached in the test"
   ]
+ ],
+ "lesser_mern": [
+  [
+   "Boot from the hard disk: the menu run first (LM.COM)",
+   "OK: its two lines drawn half-width (the filler cut to their bytes, reported)"
+  ],
+  [
+   "Title menu (LESS.EXE's string routine)",
+   "OK: the filler labels half-width, in the menu's colours; past the box where longer than the Japanese"
+  ],
+  [
+   "New game, the field menu and a system message (the message window)",
+   "OK: the menu's labels half-width; the message's filler past its own bytes, read from the English segment"
+  ],
+  [
+   "A map's message (MDT002: a villager talking)",
+   "OK: the speaker's name (moved to the script's end) on the first line, the message's filler wrapped between words at the window's width, going on past its own bytes"
+  ],
+  [
+   "Opening (OPEN.EXE)",
+   "OK: the filler drawn two letters to a gaiji, wrapped between words, line after line at the page's place, with the opening's pictures and timing"
+  ],
+  [
+   "Events (EV200-EV205) and the ending (ED200, ED201 in ENDG.EXE)",
+   "not reached in the test (the same message routine and helper as the maps')"
+  ]
  ]
 }

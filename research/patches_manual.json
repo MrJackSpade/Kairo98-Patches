@@ -1961,5 +1961,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "PantherSoftware.zip/Lesser Mern": [
+  {
+   "label": "This repo: games/lesser_mern (patcher working, machine translation in progress)",
+   "url": "../games/lesser_mern/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

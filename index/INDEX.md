@@ -404,6 +404,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Jast | Tenshi-tachi no Hohoemi | [This repo: games/tenshi_hohoemi (patcher working, machine translation in progress)](../games/tenshi_hohoemi/notes.md) |
 | Jast | Yoru no Tenshi-tachi - Shitetsu Ensen Satsujin Jiken | [This repo: games/yoru_no_tenshi (patcher working, machine translation in progress)](../games/yoru_no_tenshi/notes.md) |
 | Panther Software | Hamlet | [This repo: games/hamlet (patcher working, machine translation in progress)](../games/hamlet/notes.md) |
+| Panther Software | Lesser Mern | [This repo: games/lesser_mern (patcher working, machine translation in progress)](../games/lesser_mern/notes.md) |
 | Pioneer LDC | El-Hazard - The Magnificent World | [This repo: games/el_hazard (patcher working, machine translation in progress)](../games/el_hazard/notes.md) |
 | Pro Illusion | Ura Mansion Hakkin | [This repo: games/ura_mansion (patcher working, machine translation in progress)](../games/ura_mansion/notes.md) |
 | Santa Fe | 101 Kaime no Approach Shot | [This repo: games/approach_shot (patcher working, machine translation in progress)](../games/approach_shot/notes.md) |
@@ -4903,7 +4904,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - Hamlet [FD HD extras] `do` — *MTL (this repo)*
 - Isekai Denshou Joshua [FD HD]
 - Kami no Machi [FD extras]
-- Lesser Mern [FD HD extras] `do`
+- Lesser Mern [FD HD extras] `do` — *MTL (this repo)*
 - Lesser Mern Special Director's Edition [CD FD extras]
 - Tien Gow Pai [FD]
 - Tien Gow Pai Special - Tougen no Utage [FD]

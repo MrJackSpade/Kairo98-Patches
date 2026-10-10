@@ -336,5 +336,10 @@
   "remarks": [
    "Menu labels longer than the Japanese draw past their box, and what is drawn outside it stays on screen after the menu closes: keep them to their `max_cells`."
   ]
+ },
+ "lesser_mern": {
+  "remarks": [
+   "Names and labels longer than the Japanese draw past their menu or box, and what is drawn outside a menu stays on screen after it closes: keep them to their `max_cells`."
+  ]
  }
 }

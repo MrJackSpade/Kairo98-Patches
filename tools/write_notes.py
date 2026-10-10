@@ -1207,6 +1207,91 @@ def chan_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def lmern_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    prog = cfg["program"]
+    names = {"msg": "messages (maps, events, the ending)", "name": "speaker names",
+             "engine": "program strings", "opening": "opening messages"}
+    out = ["# %s%s (Panther Software)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Panther Software's own RPG engine (`%s`): the maps' scripts (`MDTnnn`, their messages inline "
+            "in their events, the speaker names in a table), the events' (`%s`) and the ending's (`%s`, run by "
+            "`ENDG.EXE`) share one message routine (a copier building the message, then a window drawing it a "
+            "character at a time); the program's own text (monsters, items, magic, battle and system messages, "
+            "menus) is in its data segment; the opening (`%s`) has a script of its own that puts each "
+            "character's glyph into a gaiji.  `pc98tl/lmern.py` documents the formats and the program patches, "
+            "`pc98tl/lmern_tl.py` the English.  Unchanged files rebuild byte for byte."
+            % (prog, ", ".join(cfg.get("event_files", [])), ", ".join(cfg.get("ending_files", [])),
+               cfg["opening"]), "",
+            "The patch works on the game's hard-disk release (the game in `%s/`)." % cfg["game_dir"], "",
+            "* `%s` and `ENDG.EXE` get a helper put in at the end of their code segment, their data segment "
+            "grown to 64 KB (the message buffer moved to its end, 2 KB) and a segment of English put in after "
+            "it.  A byte from 20h to 7Fh is a half-width letter, drawn 8 dots wide from the BIOS 8x16 font, "
+            "bold, in the caller's colour; the window breaks lines between words.  Every string keeps its "
+            "own bytes (lists walked by counting their strings keep their layout): English past them goes on "
+            "elsewhere through an escape (7Fh into the map's script, 7Ch into the English segment, back at "
+            "7Dh; 7Eh filler is skipped), followed by the copier, the window and the string routine alike." % prog,
+            "* A map's script is rebuilt with its English, the speaker names put at its end and their table "
+            "pointed at them.",
+            "* `%s` gets a helper drawing two letters into each gaiji; each message's text and its pages' "
+            "layout (where the gaiji go, line by line) go into room put in after the program, the layout "
+            "made anew for the English (wrapped between words to the page's width), the page's timing, "
+            "sounds and faces kept in their order." % cfg["opening"],
+            "* `LM.COM` and `OP.COM` (the menu run first) get the half-width letters in their string routine."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` 52, the map window's line): any length.  The window wraps "
+            "between words and waits for a key when full; `\\n` starts a new line.  ASCII is drawn "
+            "half-width; another character is drawn full-width when Shift-JIS has it (two cells), else "
+            "written as `?`.  A map's script with its English may take %d bytes; a build past it is refused "
+            "and names it." % lmern_max(),
+            "* Speaker names (`n` ids): one line, `max_cells` 24.",
+            "* Program strings (`e` ids): messages (`max_cells` 52) as the maps' are; names and labels any "
+            "length, but `max_cells` is the room of the menu, box or line they sit in (past it they run over "
+            "its edge, and what is drawn outside a menu stays on screen after it closes).  Past their own "
+            "bytes they are written in ASCII only (`?` for another character).  A program's English segment "
+            "may take 65520 bytes; a build past it is refused.  The two lines of the menu run first are cut "
+            "to their own bytes (reported).",
+            "* Opening messages (`o` ids): wrapped by the patcher to `max_cells` letters a line (the page's "
+            "width), ASCII only, at most %d letters a message (two to a gaiji; past it cut and reported); "
+            "`\\n` starts a new line." % (2 * 188)]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the artwork (the title logo, the status window's labels, which are English "
+            "already, the pictures)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
+def lmern_max():
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+    from pc98tl import lmern
+    return lmern.MDT_MAX
+
+
 def panther_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1433,6 +1518,11 @@ def main():
             continue
         if cfg.get("encoding") == "silky":
             out = silky_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "lmern":
+            out = lmern_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
