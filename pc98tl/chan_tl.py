@@ -3,16 +3,20 @@
 Strings:
 
 * "msg": the quiz's questions (QDAT, refs Qnn.QDT:question), and the girls' profiles (CHAN.EXE's
-  table, refs CHAN.EXE:profile n); drawn in the text window, `max_cells` letters a line (the window's
+  table, refs CHAN.EXE:offset); drawn in the text window, `max_cells` letters a line (the window's
   room), the program wrapping between words and paging; \\n starts a new line.
 * "cmd": the quiz's choices (refs Qnn.QDT:question.choice), each one line at its place.
-* "engine": the program's other strings (refs CHAN.EXE:offset), each in its own bytes.
+* "engine": the program's other strings (refs CHAN.EXE:offset), each in its own bytes; and the
+  messages of a console program run before the game (game.json "console_programs", Yuu Disk Vol. 7's
+  PSTAT.EXE: DOS's text console), each in its own bytes, its escape sequences and printf fields
+  {X1}, {X2}... kept in their order.
 
 English is ASCII (one byte a letter, drawn half-width by the patch's helper); another character is
 written in Shift-JIS when it has it (two bytes, full-width), else as `?`.
 """
 import json
 import os
+import re
 import struct
 
 from . import chan
@@ -55,6 +59,45 @@ def decode(raw):
     return raw.decode("cp932", "replace")
 
 
+CONSOLE_TOKEN = re.compile(rb"\x1b\[(?:%s|[^A-Za-z])*[A-Za-z]|%[-0-9.l]*[sdouxXc%]", re.S)
+TOKEN = re.compile(r"\{X(\d+)\}")
+
+
+def console_text(raw):
+    """(a console message as text, its tokens: escape sequences and printf fields as {X1}...)."""
+    tokens = [m.group() for m in CONSOLE_TOKEN.finditer(raw)]
+    parts = CONSOLE_TOKEN.split(raw)
+    text = ""
+    for k, p in enumerate(parts):
+        text += decode(p) + ("{X%d}" % (k + 1) if k < len(tokens) else "")
+    return text, tokens
+
+
+def console_bytes(text, raw, sid):
+    """(a console message's English in raw's bytes, NUL after; whether it was cut)."""
+    _t, tokens = console_text(raw)
+    found = [int(n) for n in TOKEN.findall(text)]
+    if found != list(range(1, len(tokens) + 1)):
+        raise SystemExit("%s: the English must keep %s in this order" % (
+            sid, ", ".join("{X%d}" % (k + 1) for k in range(len(tokens)))))
+    parts = [encode(p) for p in TOKEN.split(text)[0::2]]
+    # (past the room the text is cut from its end, the tokens kept whole)
+    over = sum(len(p) for p in parts) + sum(len(t) for t in tokens) - len(raw)
+    cut = over > 0
+    k = len(parts) - 1
+    while over > 0 and k >= 0:
+        drop = min(over, len(parts[k]))
+        parts[k] = parts[k][:len(parts[k]) - drop]
+        over -= drop
+        k -= 1
+    out = bytearray()
+    for k, p in enumerate(parts):
+        out += p
+        if k < len(tokens):
+            out += tokens[k]
+    return bytes(out) + bytes(len(raw) + 1 - len(out)), cut
+
+
 def _choice_cells(cfg):
     """The letters from the choices' place (column 57) to the screen's edge."""
     return cfg.get("choice_cells", SCREEN_COLS - 57)
@@ -84,12 +127,19 @@ def run_extract(here, src):
                 % (name, k, ans))
             for c in range(3):
                 add("cmd", decode(strs[1 + c]), "%s:%02x.%d" % (name, k, c + 1), _choice_cells(cfg))
-    t, offs, end = chan.profiles(exe)
-    for n, o in enumerate(offs):
-        add("msg", decode(exe[o:exe.index(0, o)]), "%s:profile%d" % (cfg["program"], n + 1), PROFILE_CELLS,
+    t, refs, block = chan.profiles(exe)
+    for o in sorted(set(refs)):
+        add("msg", decode(exe[o:exe.index(0, o)]), "%s:%04x" % (cfg["program"], o), PROFILE_CELLS,
             "a girl's profile (the lines after 0Ah, \\n in the English)")
     for s, e in chan.strings(exe):
         add("engine", decode(exe[s:e - 1]), "%s:%04x" % (cfg["program"], s), e - s - 1)
+    for pname in cfg.get("console_programs", []):
+        raw = vol.read(_path(cfg, pname))
+        for s, e in chan.console_strings(raw):
+            text, tokens = console_text(raw[s:e - 1])
+            note = ("a message the program prints to DOS's console; {X1}...: its escape sequences and printf "
+                    "fields, kept in this order" if tokens else "a message the program prints to DOS's console")
+            add("engine", text, "%s:%04x" % (pname, s), e - s - 1 - sum(len(t) for t in tokens), note)
     counts, strings = {}, []
     for key in order:
         e = merged[key]
@@ -161,24 +211,26 @@ def run_patch(here, src, dst, mode="en"):
     vol.write(_path(cfg, "QDAT"), qdat)
     out = bytearray(exe)
     # (the profiles: one block in the room the Japanese took, the table's offsets anew)
-    t, offs, end = chan.profiles(exe)
+    t, refs, block = chan.profiles(exe)
     hdr, ds = chan.data_segment(exe)
-    texts = [by_ref.get("%s:profile%d" % (prog, n + 1)) for n in range(len(offs))]
-    raws = [encode(x) if x is not None else exe[o:exe.index(0, o)] for x, o in zip(texts, offs)]
-    room = end - offs[0]
+    keys = ["%s:%04x" % (prog, a) for a, _e in block]
+    raws = [encode(by_ref[k]) if k in by_ref and a in refs else exe[a:e - 1] for k, (a, e) in zip(keys, block)]
+    room = block[-1][1] - block[0][0]
     if sum(len(r) + 1 for r in raws) > room:
         if mode != "pseudo":
             raise SystemExit("the profiles take %d bytes, their room %d; shorten these strings: %s" % (
-                sum(len(r) + 1 for r in raws), room, ", ".join(ids["%s:profile%d" % (prog, n + 1)] for n in range(len(offs)))))
+                sum(len(r) + 1 for r in raws), room, ", ".join(sorted({ids[k] for k in keys if k in ids}))))
         share = room // len(raws) - 1
         raws = [r[:share] for r in raws]
         warn.append("the profiles' filler was cut to fit their room (%d bytes)" % room)
-    at = offs[0]
-    for n, r in enumerate(raws):
-        struct.pack_into("<H", out, t + 2 * n, at - (hdr + ds * 16))
+    at, moved = block[0][0], {}
+    for (a, _e), r in zip(block, raws):
+        moved[a] = at
         out[at:at + len(r) + 1] = r + b"\x00"
         at += len(r) + 1
-    out[at:end] = bytes(end - at)
+    out[at:block[-1][1]] = bytes(block[-1][1] - at)
+    for n, a in enumerate(refs):
+        struct.pack_into("<H", out, t + 2 * n, moved[a] - (hdr + ds * 16))
     # (the program's other strings, each in its own bytes)
     for s, e in chan.strings(exe):
         ref = "%s:%04x" % (prog, s)
@@ -189,6 +241,23 @@ def run_patch(here, src, dst, mode="en"):
                 b = b[:e - s - 1]
             out[s:e] = b + bytes(e - s - len(b))
     vol.write(_path(cfg, prog), chan.patch_exe(bytes(out), prog, len(qdat)))
+    for pname in cfg.get("console_programs", []):
+        raw = vol.read(_path(cfg, pname))
+        pout = bytearray(raw)
+        for s, e in chan.console_strings(raw):
+            ref = "%s:%04x" % (pname, s)
+            if ref in by_ref:
+                text = by_ref[ref]
+                if mode == "pseudo":
+                    # (the filler with the message's tokens kept)
+                    _t, tokens = console_text(raw[s:e - 1])
+                    text = text[:max(1, e - s - 1 - sum(len(t) for t in tokens))] + "".join(
+                        "{X%d}" % (k + 1) for k in range(len(tokens)))
+                b, cut = console_bytes(text, raw[s:e - 1], ids[ref])
+                if cut:
+                    warn.append("%s: cut to the program's room (%d bytes)" % (ids[ref], e - s - 1))
+                pout[s:e] = b
+        vol.write(_path(cfg, pname), bytes(pout))
     for w in warn:
         print("warning:", w)
     img.save(dst)

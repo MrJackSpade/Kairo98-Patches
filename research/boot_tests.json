@@ -3283,5 +3283,19 @@
    "The mahjong game, the quiz, the album, endings",
    "not yet seen: the title menu takes no click in the emulator (the unpatched game neither); the clicks reach the program's button word, but no item starts"
   ]
+ ],
+ "yuu_disk_vol_7": [
+  [
+   "The title menu (patched)",
+   "OK: its items half-width filler (the string routine)"
+  ],
+  [
+   "A test copy whose title loops draw the first girl's profile at once (the text window)",
+   "OK: the profile's filler half-width, wrapped between words"
+  ],
+  [
+   "The mahjong game, the quiz, the album, endings",
+   "not yet seen: as in Moonlight Chan Rin Shan, the title menu takes no click in the emulator"
+  ]
  ]
 }

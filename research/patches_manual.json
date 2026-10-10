@@ -1945,5 +1945,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "DO.zip/Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen": [
+  {
+   "label": "This repo: games/yuu_disk_vol_7 (patcher working, machine translation in progress)",
+   "url": "../games/yuu_disk_vol_7/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

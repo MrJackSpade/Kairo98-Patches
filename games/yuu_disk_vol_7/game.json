@@ -1,0 +1,14 @@
+{
+ "title": "Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+ "key": "DO.zip/Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+ "image": "Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen\\Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen [HD]\\Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen.hdi",
+ "encoding": "chan",
+ "program": "CHAN.EXE",
+ "game_dir": "MOONCB",
+ "console_programs": [
+  "PSTAT.EXE"
+ ],
+ "qdat_size": 71632,
+ "profile_room": 1217,
+ "boot_steps": "40:shot,5:shot,5:shot,1:mouse=-40;100,1:mouse=20;12,1:shot,1:lclick,4:shot"
+}

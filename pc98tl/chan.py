@@ -13,7 +13,8 @@ graphics planes through the GRCG, by two routines:
 
 The quiz (QDAT): a directory of 16-byte entries (a 12-byte name, a word: the member's start in
 paragraphs from the file's start), the twelfth followed by an entry with no name giving the end; each
-member Qnn.QDT: a table of 100 word offsets (from the member's start, C8h bytes, as they are), then
+member Qnn.QDT: a table of 100 word offsets (from the member's start, C8h bytes, as they are; Yuu Disk
+Vol. 7's hold 50, the rest 0), then
 the questions, every byte inverted (the program inverts each member past its table once loaded):
 four word offsets (the question and the three choices), the right choice's number (a byte), then the
 four strings, each ended by 00.  The program reads the whole file into its work segments 42F7h on
@@ -45,11 +46,13 @@ QDAT_MAX = 0x28000              # four reads of 8000h and the last up to 8000h
 
 # the character routine's draw (4CCCh): mov dh, [si] / inc si / mov dl, [si] / inc si / mov di, [8] /
 # mov cl, [2] / call draw / mov [8], di / call wait / ret
-DRAW_SIG = re.compile(rb"\x8a\x34\x46\x8a\x14\x46\x8b\x3e\x08\x00\x8a\x0e\x02\x00\xe8(..)\x89\x3e\x08\x00\xe8(..)\xc3", re.S)
+# (the window's state: a block at B, 0 in Moonlight Chan Rin Shan, 5758h in Yuu Disk Vol. 7: [B+8] the
+# cursor, [B+2] the colour, [B+0Ah] a line's room, [B+0Ch] what is left of it, [B+10h] the rows left)
+DRAW_SIG = re.compile(rb"\x8a\x34\x46\x8a\x14\x46\x8b\x3e(..)\x8a\x0e(..)\xe8(..)\x89\x3e(..)\xe8(..)\xc3", re.S)
 # the text loop's two decrements after the character: dec word [0Ch] / dec word [0Ch] / jne
-DEC_SIG = re.compile(rb"\xff\x0e\x0c\x00\xff\x0e\x0c\x00\x75", re.S)
+DEC_SIG = "\xff\x0e{room}\xff\x0e{room}\x75"
 # the text loop's new line: dec word [10h] / jne
-NEWLINE_SIG = re.compile(rb"\xff\x0e\x10\x00\x75.\xc6\x06\x03\x00\x01", re.S)
+NEWLINE_SIG = "\xff\x0e{rows}\x75.\xc6\x06{flag}\x01"
 # the buffer copy: stosb / cmp al, 20h / je / movsb
 COPY_SIG = re.compile(rb"\xaa\x3c\x20\x74.\xa4", re.S)
 # the string routine's loop (290Eh): lodsb / mov dh, al / or al, al / je (the end) / lodsb / mov dl, al
@@ -69,8 +72,8 @@ texthook:
     jae tk2
     cmp dh, 0x20
     jne ta1
-    mov ax, word ptr [0x0a]
-    cmp ax, word ptr [0x0c]
+    mov ax, word ptr [{line}]
+    cmp ax, word ptr [{left}]
     jne ta2
     inc si
     mov word ptr cs:[{w}], 0
@@ -92,10 +95,10 @@ tm:
     jmp tm
 tme:
     pop si
-    mov ax, word ptr [0x0c]
+    mov ax, word ptr [{left}]
     cmp cx, ax
     jbe ta3
-    cmp ax, word ptr [0x0a]
+    cmp ax, word ptr [{line}]
     je ta3
     push si
     push dx
@@ -110,16 +113,16 @@ ta2:
 ta4:
     inc si
     mov word ptr cs:[{w}], 1
-    mov di, word ptr [8]
-    mov cl, byte ptr [2]
+    mov di, word ptr [{cursor}]
+    mov cl, byte ptr [{color}]
     mov al, dh
     CALLN ank
-    mov word ptr [8], di
+    mov word ptr [{cursor}], di
     CALLN {wait}
     .byte 0xc3
 tk2:
     mov byte ptr cs:[{prev}], 0
-    cmp word ptr [0x0c], 1
+    cmp word ptr [{left}], 1
     jne tk3
     push si
     push dx
@@ -209,9 +212,16 @@ def patch_exe(exe, name="CHAN.EXE", qdat_size=None):
     split = _code_end(img, next_seg * 16, name)
     seg = bytearray(img[cs0:split])
     draw = _one(seg, DRAW_SIG, "character draw", name)
+    base = struct.unpack("<H", draw.group(1))[0] - 8
+    if struct.unpack("<H", draw.group(2))[0] != base + 2 or struct.unpack("<H", draw.group(4))[0] != base + 8:
+        raise SystemExit("%s: the character draw is not laid out as expected" % name)
     wait = _call_target(seg, draw.start() + 21)
-    dec = _one(seg, DEC_SIG, "line room", name)
-    nl = _one(seg, NEWLINE_SIG, "new line", name).start()
+
+    def field(off):
+        return re.escape(struct.pack("<H", base + off))
+    dec = _one(seg, re.compile(DEC_SIG.encode("latin-1").replace(b"{room}", field(0x0C)), re.S), "line room", name)
+    nl = _one(seg, re.compile(NEWLINE_SIG.encode("latin-1").replace(b"{rows}", field(0x10)).replace(b"{flag}", field(3)),
+                              re.S), "new line", name).start()
     copy = _one(seg, COPY_SIG, "buffer copy", name).start()
     st = _one(seg, STR_SIG, "string routine", name)
     strend = st.start() + 7 + struct.unpack("b", st.group(1))[0]
@@ -230,13 +240,14 @@ def patch_exe(exe, name="CHAN.EXE", qdat_size=None):
     src = HELPER.format(after=hex(at + ROOM * 16), w=hex(w), prev=hex(prev), newline=hex(nl),
                         wait=hex(wait), back=hex(draw.start() + 3), strend=hex(strend), strcolor=hex(strcolor),
                         strloop=hex(strloop), strnext=hex(strnext), glyph=hex(glyph), glyph2=hex(glyph + 2),
-                        grcg=hex(grcg))
+                        grcg=hex(grcg), cursor=hex(base + 8), color=hex(base + 2), line=hex(base + 0x0A),
+                        left=hex(base + 0x0C))
     code, labels = _asm16(src, at, ("texthook", "strhook"))
     if len(code) > ROOM * 16 - 0x16:
         raise SystemExit("%s: the helper is %d bytes, the room %d" % (name, len(code), ROOM * 16 - 0x16))
     d0 = draw.start()
     seg[d0:d0 + 3] = b"\xe9" + struct.pack("<H", (labels["texthook"] - (d0 + 3)) & 0xFFFF)
-    seg[dec.start():dec.start() + 8] = b"\x2e\xa1" + struct.pack("<H", w) + b"\x29\x06\x0c\x00"
+    seg[dec.start():dec.start() + 8] = b"\x2e\xa1" + struct.pack("<H", w) + b"\x29\x06" + struct.pack("<H", base + 0x0C)
     seg[copy + 1:copy + 5] = b"\x3c\x80\x72" + seg[copy + 4:copy + 5]
     s0 = st.start()
     seg[s0:s0 + 5] = b"\xe9" + struct.pack("<H", (labels["strhook"] - (s0 + 3)) & 0xFFFF) + b"\x90\x90"
@@ -300,6 +311,9 @@ def member_read(m):
     dec = m[:TABLE] + bytes(255 - b for b in m[TABLE:])
     for k in range(n):
         at = struct.unpack_from("<H", dec, 2 * k)[0]
+        if not at:
+            # (Yuu Disk Vol. 7's members: 50 questions, the table's rest 0)
+            break
         offs = struct.unpack_from("<4H", dec, at)
         ans = dec[at + 8]
         strs = [dec[o:dec.index(0, o)] for o in offs]
@@ -319,9 +333,9 @@ def member_write(entries):
             offs.append(o)
             o += len(s) + 1
         body += struct.pack("<4H", *offs) + bytes([ans]) + b"".join(s + b"\x00" for s in strs)
-    head = b"".join(struct.pack("<H", t) for t in table)
-    if len(head) != TABLE:
-        raise SystemExit("a member's table must hold 100 questions")
+    if len(table) > TABLE // 2:
+        raise SystemExit("a member's table holds 100 questions")
+    head = b"".join(struct.pack("<H", t) for t in table) + bytes(TABLE - 2 * len(table))
     if TABLE + len(body) > 0x8000:
         raise SystemExit("a member of %d bytes; the program inverts at most 32 KB" % (TABLE + len(body)))
     return head + bytes(255 - b for b in body)
@@ -344,34 +358,72 @@ def data_segment(exe):
 
 
 def profiles(exe):
-    """(the table's file offset, [string file offsets], the block's end) of the profiles."""
+    """(the table's file offset, [its entries' file offsets (Yuu Disk Vol. 7's name four girls twice
+    each)], [(start, end past the 00)] of the block's strings): the block is the run of profiles (each
+    starting as the table's first does) around the ones the table names, the others kept as they are."""
     hdr, ds = data_segment(exe)
-    m = _one(exe[hdr:hdr + ds * 16], PROFILES_SIG, "profiles", "CHAN.EXE")
-    t = hdr + ds * 16 + struct.unpack("<H", m.group(1))[0]
-    offs = []
-    k = 0
+    base = hdr + ds * 16
+    m = _one(exe[hdr:base], PROFILES_SIG, "profiles", "CHAN.EXE")
+    t = base + struct.unpack("<H", m.group(1))[0]
+
+    def string_at(a, after_nul=True):
+        if not 0 < a < len(exe) or after_nul and exe[a - 1] != 0:
+            return None
+        ms = SJIS_STR.match(exe, a)
+        return ms.end() if ms else None
+    refs = []
     while True:
-        o = struct.unpack_from("<H", exe, t + 2 * k)[0]
-        a = hdr + ds * 16 + o
-        if a >= len(exe) or offs and (a <= offs[-1] or exe[a - 1] != 0) or not offs and o < 0x100:
+        a = base + struct.unpack_from("<H", exe, t + 2 * len(refs))[0]
+        # (Moonlight Chan Rin Shan's first profile follows the table straight)
+        if string_at(a, after_nul=False) is None:
             break
-        offs.append(a)
-        k += 1
-    end = exe.index(0, offs[-1]) + 1
-    return t, offs, end
+        refs.append(a)
+    head = exe[refs[0]:refs[0] + 4]
+    start, end = min(refs), string_at(max(refs), after_nul=False)
+    while True:
+        prev = exe.rfind(b"\x00", 0, start - 1) + 1
+        if exe[prev:prev + 4] != head or string_at(prev) != start:
+            break
+        start = prev
+    while exe[end:end + 4] == head and string_at(end):
+        end = string_at(end)
+    block, a = [], start
+    while a < end:
+        block.append((a, string_at(a, after_nul=False)))
+        a = block[-1][1]
+    return t, refs, block
 
 
 def strings(exe):
     """[(file start, end past the 00)] of the program's other strings: the data segment's, and the code
-    segment's with three kana or kanji or more."""
+    segment's with two kana or more."""
     hdr, ds = data_segment(exe)
-    t, offs, end = profiles(exe)
+    t, refs, block = profiles(exe)
     out = []
     for m in SJIS_STR.finditer(exe, hdr + ds * 16):
-        if len(m.group()) >= 5 and not offs[0] <= m.start() < end:
+        if len(m.group()) >= 5 and not block[0][0] <= m.start() < block[-1][1]:
             out.append((m.start(), m.end()))
     for m in SJIS_STR.finditer(exe, hdr, hdr + ds * 16):
         t2 = m.group()[:-1].decode("cp932", "replace")
-        if len(m.group()) >= 7 and sum(1 for c in t2 if "぀" <= c <= "ヿ" or "一" <= c <= "鿿") >= 3:
+        # (two kana or more: code bytes read as kanji have none)
+        if len(m.group()) >= 7 and sum(1 for c in t2 if "぀" <= c <= "ヿ") >= 2:
             out.append((m.start(), m.end()))
     return sorted(out)
+
+
+# ---- a console program run before the game (Yuu Disk Vol. 7's PSTAT.EXE: DOS's text console)
+
+CONSOLE_STR = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc]|[\x20-\x7e\x0a\x0d\x1b])+\x00", re.S)
+SJIS_CHAR = re.compile(rb"[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc]", re.S)
+ESC_SEQ = re.compile(rb"\x1b\[[0-9;>]*[A-Za-z]", re.S)
+
+
+def console_strings(exe):
+    """[(start, end past the 00)] of a console program's messages: NUL-ended strings in its data
+    segment with two Shift-JIS characters or more."""
+    hdr, ds = data_segment(exe)
+    out = []
+    for m in CONSOLE_STR.finditer(exe, hdr + ds * 16):
+        if len(SJIS_CHAR.findall(m.group())) >= 2:
+            out.append((m.start(), m.end()))
+    return out

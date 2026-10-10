@@ -304,6 +304,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | D.O | Moonlight Chan Rin Shan | [This repo: games/moonlight_chan_rin_shan (patcher working, machine translation in progress)](../games/moonlight_chan_rin_shan/notes.md) |
 | D.O | Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk | [This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)](../games/yuu_disk_vol_4/notes.md) |
 | D.O | Yuu Disk Vol. 5 - Telephone Scandal | [This repo: games/yuu_disk_vol_5 (patcher working, machine translation in progress)](../games/yuu_disk_vol_5/notes.md) |
+| D.O | Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen | [This repo: games/yuu_disk_vol_7 (patcher working, machine translation in progress)](../games/yuu_disk_vol_7/notes.md) |
 | D.O | Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban | [This repo: games/yuu_disk_vol_8 (patcher working, machine translation in progress)](../games/yuu_disk_vol_8/notes.md) |
 | D.O | Yuu Disk Vol. 9 - Arquelphos Gekitou-hen | [This repo: games/yuu_disk_vol_9 (patcher working, machine translation in progress)](../games/yuu_disk_vol_9/notes.md) |
 | D.O | Zatsuon Ryouiki | [This repo: games/zatsuon_ryouiki (patcher working, machine translation in progress)](../games/zatsuon_ryouiki/notes.md) |
@@ -1939,7 +1940,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk [FD HD] `do` — *MTL (this repo)*
 - ♥ Yuu Disk Vol. 5 - Telephone Scandal [FD] `do` — **EN**
 - ♥ Yuu Disk Vol. 6 - Heart de Ron!! Midnight-hen [FD HD]
-- ♥ Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen [FD HD] `do`
+- ♥ Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen [FD HD] `do` — *MTL (this repo)*
 - ♥ Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban [FD HD] `do` — **EN**
 - ♥ Yuu Disk Vol. 9 - Arquelphos Gekitou-hen [FD HD extras] `do` — *MTL (this repo)*
 - ♥ Zatsuon Ryouiki [CD FD HD extras] `do` — **EN**
