@@ -1,0 +1,11 @@
+{
+ "title": "Premium",
+ "key": "Silkys.zip/Premium",
+ "image": "Premium\\Premium [HD]\\Premium.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "game_dir": "PREMIUM",
+ "script_ext": ".M",
+ "program": "PRE.EXE",
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

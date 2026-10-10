@@ -422,6 +422,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Silky's | Kawarazakike no Ichizoku | [This repo: games/kawarazakike_no_ichizoku (patcher working, machine translation in progress)](../games/kawarazakike_no_ichizoku/notes.md) |
 | Silky's | Mobius Roid | [This repo: games/mobius_roid (patcher working, machine translation in progress)](../games/mobius_roid/notes.md) |
 | Silky's | Nonomura Byouin no Hitobito | [This repo: games/nonomura_byouin_no_hitobito (patcher working, machine translation in progress)](../games/nonomura_byouin_no_hitobito/notes.md) |
+| Silky's | Premium | [This repo: games/premium (patcher working, machine translation in progress)](../games/premium/notes.md) |
 | Silky's | Reira | [This repo: games/reira (patcher working, machine translation in progress)](../games/reira/notes.md) |
 | Silky's | Ushinawareta Rakuen | [This repo: games/ushinawareta_rakuen (patcher working, machine translation in progress)](../games/ushinawareta_rakuen/notes.md) |
 | Silky's | Valentine Kiss - Birth Days 2 | [This repo: games/valentine_kiss_2 (patcher working, machine translation in progress)](../games/valentine_kiss_2/notes.md) |
@@ -5552,7 +5553,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Mobius Roid [FD HD] `silkys` — **EN**
 - ♥ Nonomura Byouin no Hitobito [FD HD] `silkys` — **EN**
 - ♥ Oh! Pai [FD extras]
-- ♥ Premium [FD HD extras] `elf-ai5`
+- ♥ Premium [FD HD extras] `elf-ai5` — *MTL (this repo)*
 - ♥ Premium 2 [FD extras]
 - ♥ Reira [FD HD extras] `silkys` — **EN**
 - ♥ Ushinawareta Rakuen [FD HD] `silkys` — **EN**

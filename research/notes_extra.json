@@ -346,5 +346,10 @@
   "not_handled": [
    "F2.COM's two DOS messages, shown only when it is loaded a second time or removed while not loaded (the game's batch file does neither)."
   ]
+ },
+ "premium": {
+  "not_handled": [
+   "PRE.EXE's prompts to put a floppy in a drive: the floppy release's only, never shown by the hard-disk release the patch works on."
+  ]
  }
 }

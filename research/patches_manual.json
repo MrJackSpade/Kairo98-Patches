@@ -1993,5 +1993,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Silkys.zip/Premium": [
+  {
+   "label": "This repo: games/premium (patcher working, machine translation in progress)",
+   "url": "../games/premium/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
