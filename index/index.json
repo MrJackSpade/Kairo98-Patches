@@ -93731,7 +93731,14 @@
      "path": "Time Stripper Mako-chan\\Time Stripper Mako-chan [HD]\\Time Stripper Mako-chan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/time_stripper_mako_chan (patcher working, machine translation in progress)",
+     "url": "../games/time_stripper_mako_chan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r2841 (erotic content)",
    "engine": "unknown",
@@ -93739,7 +93746,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FourNine.zip/Angel Night",

@@ -366,6 +366,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
 | Foster | Koko wa Rakuensou | [This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)](../games/koko_wa_rakuensou/notes.md) |
 | Foster | Koko wa Rakuensou 2 | [This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)](../games/koko_wa_rakuensou_2/notes.md) |
+| Foster | Time Stripper Mako-chan | [This repo: games/time_stripper_mako_chan (patcher working, machine translation in progress)](../games/time_stripper_mako_chan/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
 | Game Technopolis | Dragon Eyes | [This repo: games/dragon_eyes (patcher working, machine translation in progress)](../games/dragon_eyes/notes.md) |
 | Game Technopolis | Hatsukoi Monogatari | [This repo: games/hatsukoi_monogatari (patcher working, machine translation in progress)](../games/hatsukoi_monogatari/notes.md) |
@@ -2603,7 +2604,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Kousoku Chojin [FD HD]
 - ♥ Rinkan Gakkou [FD HD]
 - ♥ Sayonara no Mukougawa [CD FD HD]
-- ♥ Time Stripper Mako-chan [FD HD]
+- ♥ Time Stripper Mako-chan [FD HD] — *MTL (this repo)*
 
 ### four nine (`FourNine.zip`)
 

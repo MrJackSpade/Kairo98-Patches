@@ -2065,5 +2065,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Foster.zip/Time Stripper Mako-chan": [
+  {
+   "label": "This repo: games/time_stripper_mako_chan (patcher working, machine translation in progress)",
+   "url": "../games/time_stripper_mako_chan/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
