@@ -3495,5 +3495,15 @@
    "The first scene (the hero's room)",
    "OK: the speakers' names on their plates, the messages' filler wrapped between words across the window, page after page with Enter"
   ]
+ ],
+ "yuu_disk_vol_3": [
+  [
+   "Disk A (patched) and B in the floppy drives; PCMSET2.EXE, the voice speed setting",
+   "OK: its lines in half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "The title and the story (DOR3.EDT)",
+   "OK: the title picture; the messages' filler after the speakers' names, wrapped at the window's edge, page after page; a command menu's filler in its box"
+  ]
  ]
 }

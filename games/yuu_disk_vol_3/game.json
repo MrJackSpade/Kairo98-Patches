@@ -1,0 +1,14 @@
+{
+ "title": "Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+ "key": "DO.zip/Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+ "image": "Yuu Disk Vol. 3 - Kanako-san no Yuuutsu\\Yuu Disk Vol. 3 - Kanako-san no Yuuutsu [FD]\\Yuu Disk Vol. 3 - Kanako-san no Yuuutsu (Disk A).hdm",
+ "encoding": "adl",
+ "version": "adl5",
+ "program": "ADL5.EXE",
+ "game_dir": "",
+ "name_cells": 8,
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,2:lclick,3:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "program_files": [
+  "PCMSET2.EXE"
+ ]
+}

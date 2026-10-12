@@ -302,6 +302,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | D.O | DOR Special Edition Sakigake | [This repo: games/dor_special_edition_sakigake (patcher working, machine translation in progress)](../games/dor_special_edition_sakigake/notes.md) |
 | D.O | Hoshi no Suna Monogatari 2 | [This repo: games/hoshi_no_suna_monogatari_2 (patcher working, machine translation in progress)](../games/hoshi_no_suna_monogatari_2/notes.md) |
 | D.O | Moonlight Chan Rin Shan | [This repo: games/moonlight_chan_rin_shan (patcher working, machine translation in progress)](../games/moonlight_chan_rin_shan/notes.md) |
+| D.O | Yuu Disk Vol. 3 - Kanako-san no Yuuutsu | [This repo: games/yuu_disk_vol_3 (patcher working, machine translation in progress)](../games/yuu_disk_vol_3/notes.md) |
 | D.O | Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk | [This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)](../games/yuu_disk_vol_4/notes.md) |
 | D.O | Yuu Disk Vol. 5 - Telephone Scandal | [This repo: games/yuu_disk_vol_5 (patcher working, machine translation in progress)](../games/yuu_disk_vol_5/notes.md) |
 | D.O | Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen | [This repo: games/yuu_disk_vol_7 (patcher working, machine translation in progress)](../games/yuu_disk_vol_7/notes.md) |
@@ -1947,7 +1948,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Yuu Disk Special - CD-ROM Bishoujo Collection [CD]
 - ♥ Yuu Disk Vol. 1 - Youjuu Senki Custom [FD]
 - ♥ Yuu Disk Vol. 2 - Exterlien Custom [FD]
-- ♥ Yuu Disk Vol. 3 - Kanako-san no Yuuutsu [FD]
+- ♥ Yuu Disk Vol. 3 - Kanako-san no Yuuutsu [FD] — *MTL (this repo)*
 - ♥ Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk [FD HD] `do` — *MTL (this repo)*
 - ♥ Yuu Disk Vol. 5 - Telephone Scandal [FD] `do` — **EN**
 - ♥ Yuu Disk Vol. 6 - Heart de Ron!! Midnight-hen [FD HD]
