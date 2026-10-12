@@ -1995,6 +1995,65 @@ def flz_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def choreo_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "message texts", "date": "pieces of the date line", "choice": "choices and buttons",
+             "menu": "menu titles"}
+    out = ["# %s%s (Space Project)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s`, Arigata-ya's \"Choreographer Inter-Book View Finder\": the `*.SCE` scenarios are bytecode for "
+            "a stack machine, the text in them (Shift-JIS, a string with its length).  The patcher writes the "
+            "scenarios again with the English, the jumps and the calls between scenarios moved to where their "
+            "operations now are.  `pc98tl/choreo.py` documents the format, `pc98tl/choreo_tl.py` the English.  "
+            "Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "* The game is played with the mouse.",
+            "* The program draws ASCII half-width by itself.  The message box is 36 half-width cells wide; the "
+            "program breaks a line at its edge (mid-word) and pages a full box (▼).  A message is built from "
+            "pieces (a speaker's name, a paragraph), each going on where the last ended; the patcher breaks the "
+            "English between words, following the column across a box's pieces."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Message texts (`m` ids, `max_cells` %d): any length; the patcher breaks the English between "
+            "words at %d half-width cells (a full line's new line would leave an empty one) and the program "
+            "pages the box.  `\\n` forces a new line; keep a piece's leading `\\n` (its paragraph break), as a "
+            "piece without one goes on from where the last ended." % (cfg["line_cells"], cfg["line_cells"]),
+            "* The date line (`d` ids: month, day, weekday): its box first shows the line's last 12 half-width "
+            "cells, the numbers taking 4; `max_cells` is each piece's share (month 2, day 2, weekday 4); past "
+            "it reported.",
+            "* Choices (`c` ids: the choice box, 24 cells; the title menu's buttons, 15; the システム button, "
+            "4) and menu titles (`u` ids): one line, `max_cells` the room; past it reported.",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, "
+            "else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2526,8 +2585,9 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz"):
-            out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes}[cfg["encoding"]](
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo"):
+            out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
+                   "choreo": choreo_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

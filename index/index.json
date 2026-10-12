@@ -197418,15 +197418,27 @@
      "path": "Tenkousei\\Tenkousei [HD]\\Tenkousei.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenkousei (patcher working, machine translation in progress)",
+     "url": "../games/tenkousei/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9109",
+     "url": "https://vndb.org/v9109",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18288 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Ship - Faster than Wind",

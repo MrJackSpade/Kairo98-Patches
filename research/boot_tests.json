@@ -3843,5 +3843,19 @@
    "The first chapter's card and the first scene's messages, Enter after each",
    "OK: the chapter card (a program string, in place) in filler half-width; the messages in filler half-width, broken between words at 58 cells"
   ]
+ ],
+ "tenkousei": [
+  [
+   "Boot from the hard disk: the title menu (the mouse on its first button, a click)",
+   "OK: the game starts; the menu title and the buttons in filler half-width"
+  ],
+  [
+   "The first scene's messages, a click after each",
+   "OK: the messages in filler half-width, broken between words inside the 36-cell box, the box paged by the program; the date line (filler in its pieces) and the clock"
+  ],
+  [
+   "The first choice (the mouse to the choice box, a click) and the next day's messages",
+   "OK: the choice and its menu title in filler; the next scene plays (the scenarios' jumps and calls moved); the paragraphs' breaks kept"
+  ]
  ]
 }

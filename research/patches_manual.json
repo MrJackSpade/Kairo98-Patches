@@ -2480,5 +2480,18 @@
    "url": "https://vndb.org/v5566",
    "source": "VNDB"
   }
+ ],
+ "SpaceProject.zip/Tenkousei": [
+  {
+   "label": "This repo: games/tenkousei (patcher working, machine translation in progress)",
+   "url": "../games/tenkousei/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v9109",
+   "url": "https://vndb.org/v9109",
+   "source": "VNDB"
+  }
  ]
 }
