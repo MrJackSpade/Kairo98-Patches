@@ -229065,15 +229065,27 @@
      "path": "Yumemizaka\\Yumemizaka [HD]\\Yumemizaka.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yumemizaka (patcher working, machine translation in progress)",
+     "url": "../games/yumemizaka/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v5566",
+     "url": "https://vndb.org/v5566",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r10731 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "U-meSoft.zip/Yumemizaka & Collections",

@@ -3833,5 +3833,15 @@
    "The animated scenes, the profiles and the battle lines",
    "untested: not reached in these runs (the leave scenes need the soldiers' consent; no battle was played)"
   ]
+ ],
+ "yumemizaka": [
+  [
+   "Boot from the hard disk: the prologue, the title, its first item (Enter through)",
+   "OK: the game starts; the prologue and the title are the program's pictures"
+  ],
+  [
+   "The first chapter's card and the first scene's messages, Enter after each",
+   "OK: the chapter card (a program string, in place) in filler half-width; the messages in filler half-width, broken between words at 58 cells"
+  ]
  ]
 }

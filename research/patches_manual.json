@@ -2467,5 +2467,18 @@
    "url": "https://vndb.org/v127",
    "source": "VNDB"
   }
+ ],
+ "U-meSoft.zip/Yumemizaka": [
+  {
+   "label": "This repo: games/yumemizaka (patcher working, machine translation in progress)",
+   "url": "../games/yumemizaka/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v5566",
+   "url": "https://vndb.org/v5566",
+   "source": "VNDB"
+  }
  ]
 }
