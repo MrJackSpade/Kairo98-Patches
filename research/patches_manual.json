@@ -2441,5 +2441,18 @@
    "url": "https://vndb.org/v14947",
    "source": "VNDB"
   }
+ ],
+ "CsWare.zip/Gloria - Kindan no Ketsuzoku": [
+  {
+   "label": "This repo: games/gloria (patcher working, machine translation in progress)",
+   "url": "../games/gloria/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v152",
+   "url": "https://vndb.org/v152",
+   "source": "VNDB"
+  }
  ]
 }

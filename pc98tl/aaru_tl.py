@@ -1,23 +1,27 @@
 """English for Aaru's engine (pc98tl/aaru.py): strings.json in, a patched image out.
 
-Strings (refs ARCHIVE/SCRIPT:offset in the (unpacked) script; the program's own strings PROGRAM:offset in
-the program file):
+Strings (refs ARCHIVE/SCRIPT:offset or SCRIPT:offset in the (unpacked) script; the program's own strings
+PROGRAM:offset in the program file):
 
 * "msg": a message (op 00h's text, `\\n` its lines, `\\N` in the script): any length.  The program
-  draws ASCII half-width and breaks a line at the window's edge; the patcher breaks the English between
-  words at `max_cells` (the window's width in half-width cells) with the program's new line between
-  them.  `\\n` in the English forces a new line.
+  draws ASCII half-width, breaks a line at the window's edge and waits for a key when the window is
+  full; the patcher breaks the English between words at `max_cells` (the window's width in half-width
+  cells: game.json "window_cells", else 60) with the program's new line between them.  `\\n` in the
+  English forces a new line.
 * "item": a choice's item (op 01h's text): `max_cells` the choice's widest Japanese item; past it
   reported.
 * "label": a string of the program's (its menus): in place, `max_cells` its room in bytes; past it cut
-  and reported.  A leading `{C0}`-style token (the program's colour control `\\(0)`) is kept.
+  and reported.
 
-English is ASCII (half-width; a byte from 60h written one higher, see `encode`; `` ` { } ~ ``, which the
-program does not draw, written `' ( ) -`); another character is written full-width in Shift-JIS when it
-has one, else `?`.  A string of the program's keeps its room, filled with spaces (its menus read the
-strings one after another).  `\\`, `%` and `|` (the program's controls) are written `/`, `pct` and `!`.  A changed script
-is laid out anew with its jumps moved, compressed again when it was, and its archive written anew; the
-program reads a script of at most 65535 bytes, so a longer build is refused and names its strings.
+The program's controls are tokens (`CONTROL`, `TOKEN`), kept in the English: `{C7}` a colour (`\\(7)`),
+`{S}` a key wait (`\\S`), `{G08-z}` a face picture (`\\G08-z.`) and `{G}` its end (`\\G.`).  English is
+ASCII (half-width; a byte from 60h written one higher, see `encode`; `` ` { } ~ ``, which the program
+does not draw, written `' ( ) -`); another character is written full-width in Shift-JIS when it has one,
+else `?`.  A string of the program's keeps its room, filled with spaces (its menus read the strings one
+after another).  `\\`, `%` and `|` (the program's controls) are written `/`, `pct` and `!`.  A changed
+script is laid out anew with its jumps moved, compressed again when it was, and its archive (or its
+file) written anew; the program reads a script of at most 65535 bytes, so a longer build is refused and
+names its strings.
 """
 import json
 import os
@@ -34,7 +38,10 @@ ROOM = 0xFFFF
 PROG_STR = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\xfc]|[\x20-\x7e])*[\x81-\x9f\xe0-\xef][\x40-\xfc]"
                       rb"(?:[\x81-\x9f\xe0-\xef][\x40-\xfc]|[\x20-\x7e])*\x00")
 WORDY = re.compile(r"[ぁ-ヿ一-鿿Ａ-ｚ]")
-COLOR = re.compile(r"^\\\((\d)\)")
+# the program's controls as strings.json shows them: `{C7}` a colour (\(7)), `{S}` a key wait (\S),
+# `{G08-z}` a face picture shown (\G08-z.), `{G}` the picture taken away (\G.)
+CONTROL = re.compile(r"\\\((\d+)\)|\\S|\\G([^.\\]*)\.")
+TOKEN = re.compile(r"\{C(\d+)\}|\{S\}|\{G([^{}]*)\}")
 
 
 def _image(src):
@@ -43,6 +50,7 @@ def _image(src):
 
 
 def cells(text):
+    text = TOKEN.sub("", text)
     return max((sum(1 if ord(c) < 0x80 or 0xFF61 <= ord(c) <= 0xFF9F else 2 for c in line)
                 for line in text.split("\n")), default=0)
 
@@ -58,14 +66,25 @@ def encode(text):
     """The English as the program's bytes: ASCII, a byte from 60h written one higher (the program
     draws a byte as Shift-JIS 8540h plus it less 21h, and from 60h that steps over the code 857Fh,
     which Shift-JIS has not: a letter low); another character in Shift-JIS."""
-    out = bytearray()
-    for ch in text:
-        for c in SUBST.get(ch, ch):
-            if " " <= c <= "~":
-                out.append(ord(c) + (1 if ord(c) >= 0x60 else 0))
-            else:
-                out += _sjis(c)
-    return bytes(out)
+    out, at = bytearray(), 0
+    for m in list(TOKEN.finditer(text)) + [None]:
+        for ch in text[at:m.start() if m else len(text)]:
+            for c in SUBST.get(ch, ch):
+                if c == "\n":
+                    out += b"\\N"
+                elif " " <= c <= "~":
+                    out.append(ord(c) + (1 if ord(c) >= 0x60 else 0))
+                else:
+                    out += _sjis(c)
+        if m is None:
+            return bytes(out)
+        at = m.end()
+        if m.group(1) is not None:
+            out += b"\\(" + m.group(1).encode() + b")"
+        elif m.group() == "{S}":
+            out += b"\\S"
+        else:
+            out += b"\\G" + m.group(2).encode("cp932") + b"."
 
 
 def wrap(text, width):
@@ -100,17 +119,25 @@ def prog_strings(exe):
 
 
 def scripts(vol, gd):
+    """[(file, name)]: a script in an FL1 archive (the archive's path, the script's name), or a file
+    of its own (its path, None)."""
     out = []
     for n, e in vol.walk():
-        if n.upper().startswith(gd.upper() + "/") and n.upper().endswith(".FL1"):
+        if not n.upper().startswith(gd.upper() + "/"):
+            continue
+        if n.upper().endswith(".FL1"):
             raw = vol.read(n)
             for nm, off, sz in A.fl1(raw):
                 if nm.upper().endswith(".AB"):
                     out.append((n, nm))
+        elif n.upper().endswith(".AB"):
+            out.append((n, None))
     return out
 
 
 def _script(raw, nm):
+    if nm is None:
+        return (A.unlz(raw), True) if A.compressed(raw) else (raw, False)
     for name, off, sz in A.fl1(raw):
         if name == nm:
             d = raw[off:off + sz]
@@ -118,8 +145,16 @@ def _script(raw, nm):
     raise KeyError(nm)
 
 
+def _rel(gd, arc, nm):
+    return arc[len(gd) + 1:] if nm is None else "%s/%s" % (arc[len(gd) + 1:], nm)
+
+
 def show(b):
-    return b.decode("cp932", "replace").replace("\\N", "\n")
+    def tok(m):
+        if m.group(1) is not None:
+            return "{C%s}" % m.group(1)
+        return "{S}" if m.group() == "\\S" else "{G%s}" % m.group(2)
+    return CONTROL.sub(tok, b.decode("cp932", "replace")).replace("\\N", "\n")
 
 
 def run_extract(here, src):
@@ -140,8 +175,7 @@ def run_extract(here, src):
             merged[key]["note"] = note
         order.append(key)
     for s, e in prog_strings(prog):
-        jp = prog[s:e].decode("cp932", "replace")
-        jp = COLOR.sub(lambda m: "{C%s}" % m.group(1), jp)
+        jp = show(prog[s:e])
         add("label", jp, "%s:%05x" % (cfg["program"], s), e - s,
             "a string of the program's (its menus): its room in bytes (a letter one, a full-width character two)")
     raws = {}
@@ -149,12 +183,12 @@ def run_extract(here, src):
         raws.setdefault(arc, vol.read(arc))
         d, _c = _script(raws[arc], nm)
         _p, ev = A.walk(d)
-        rel = "%s/%s" % (arc[len(gd) + 1:], nm)
+        rel = _rel(gd, arc, nm)
         its = [e for e in ev if e[0] == "item"]
         room = max((cells(show(d[e[2]:e[3]])) for e in its), default=0)
         for e in ev:
             if e[0] == "text" and show(d[e[1]:e[2] - 1]).strip("　 \n"):
-                add("msg", show(d[e[1]:e[2] - 1]), "%s:%04x" % (rel, e[1]), A.LINE)
+                add("msg", show(d[e[1]:e[2] - 1]), "%s:%04x" % (rel, e[1]), cfg.get("window_cells", A.LINE))
             elif e[0] == "item":
                 add("item", show(d[e[2]:e[3]]), "%s:%04x" % (rel, e[1]), room,
                     "a choice's item (the script's widest Japanese item)")
@@ -176,13 +210,16 @@ def run_extract(here, src):
 
 
 def _pseudo(e):
+    """Filler keeping the Japanese's leading and trailing controls (a colour, a face picture, a label's
+    new line)."""
+    lead = re.match(r"(?:\{[CSG][^{}]*\})*", e["jp"]).group()
+    tail = re.search(r"(?:\{[CSG][^{}]*\}|\n)*$", e["jp"]).group()
     if e["kind"] == "label":
-        lead = re.match(r"\{C\d\}", e["jp"])
-        lead = lead.group() if lead else ""
-        return lead + pseudo(e["id"], e["max_cells"], 1.0)[:max(1, e["max_cells"] - len(lead))]
+        room = e["max_cells"] - len(encode(lead + tail))
+        return lead + pseudo(e["id"], e["max_cells"], 1.0)[:max(1, room)] + tail
     if e["kind"] == "item":
         return pseudo(e["id"], e["max_cells"], 1.0)[:max(2, e["max_cells"])]
-    return pseudo(e["id"], cells(e["jp"]))
+    return lead + pseudo(e["id"], cells(e["jp"])) + tail
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -210,8 +247,7 @@ def run_patch(here, src, dst, mode="en"):
         en = by_ref.get(ref)
         if en is None:
             continue
-        m = re.match(r"\{C(\d)\}", en)
-        b = (b"\\(" + m.group(1).encode() + b")" if m else b"") + encode(en[m.end():] if m else en)
+        b = encode(en)
         if len(b) > e - s:
             warn.append("%s: %d bytes, cut to %d" % (ids[ref], len(b), e - s))
             b = b[:e - s]
@@ -226,7 +262,7 @@ def run_patch(here, src, dst, mode="en"):
         archives.setdefault(arc, raw)
         d, comp = _script(vol.read(arc), nm)
         _p, ev = A.walk(d)
-        rel = "%s/%s" % (arc[len(gd) + 1:], nm)
+        rel = _rel(gd, arc, nm)
         texts, items = {}, {}
         for e in ev:
             if e[0] == "text":
@@ -247,7 +283,8 @@ def run_patch(here, src, dst, mode="en"):
         if len(new) > ROOM:
             raise SystemExit("%s: %d bytes with its English, the program reads %d; shorten these strings: %s" % (
                 rel, len(new), ROOM, ", ".join(sorted({ids[r] for r in by_ref if r.startswith(rel + ":")}))))
-        archives[arc] = A.fl1_build(archives[arc], {nm: A.lz(new) if comp else new})
+        packed = A.lz(new) if comp else new
+        archives[arc] = packed if nm is None else A.fl1_build(archives[arc], {nm: packed})
         rebuilt += 1
     for arc, raw in archives.items():
         if raw != vol.read(arc):

@@ -1,11 +1,12 @@
-"""Aaru's script engine (M Hard, Rose Blood): FL1 archives and *.AB scripts.
+"""Aaru's script engine (M Hard, Rose Blood; CsWare's Gloria): FL1 archives and *.AB scripts.
 
 An FL1 archive: "FL1.0", 1Ah, two zeros, the files' count (a word), the directory's place (a dword), a
 word; the files one after another from 10h; the directory at the end, a file's 12-byte name and its
-size (`fl1`, `fl1_build`).  A file may be compressed (Rose Blood's scripts): two dwords, its compressed
-and unpacked sizes, then LZSS (`unlz`: a flag byte, a set bit a literal, a clear one a reference, its
-place the first byte and the second's top four bits, its length the low four plus 3; the 4 KB window
-filled first (`window`) and written from FEEh).
+size (`fl1`, `fl1_build`); Gloria keeps its scripts as files of their own.  A file may be compressed
+(Rose Blood's and Gloria's scripts): two dwords, its compressed and unpacked sizes, then LZSS (`unlz`:
+a flag byte, a set bit a literal, a clear one a reference, its place the first byte and the second's
+top four bits, its length the low four plus 3; the 4 KB window filled first (`window`) and written
+from FEEh).
 
 A script (*.AB): ops one after another (`FMT`), each a word (its low byte FFh the end) and its operands:
 words, bytes, strings (up to a NUL) and texts.  Op 00h shows a message (a text, `\\N` a new line), 01h a
@@ -21,7 +22,8 @@ FMT = {0: "T", 1: "C", 2: "J", 3: "WWW", 4: "WBW", 5: "", 6: "", 7: "", 8: "", 9
        0xC: "W", 0xD: "W", 0xE: "WW", 0xF: "WW", 0x10: "WBWJ", 0x11: "W", 0x12: "W", 0x13: "S", 0x14: "W",
        0x15: "W", 0x16: "S", 0x17: "WW", 0x18: "S", 0x19: "", 0x1B: "WB", 0x1C: "WWB", 0x1D: "WWW", 0x1E: "W",
        0x1F: "W", 0x20: "W", 0x21: "W", 0x22: "", 0x23: "", 0x24: "W", 0x25: "WWW", 0x26: "S", 0x27: "",
-       0x28: "", 0x29: "", 0x2B: "B", 0x2C: "", 0x2D: "B", 0x30: "BWBW", 0x31: "B", 0x32: "", 0x33: ""}
+       0x28: "", 0x29: "", 0x2B: "B", 0x2C: "", 0x2D: "B", 0x2E: "", 0x2F: "", 0x30: "BWBW", 0x31: "B",
+       0x32: "", 0x33: ""}
 LINE = 60                       # the message window's width in half-width cells
 
 
