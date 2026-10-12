@@ -1519,6 +1519,76 @@ def sgs_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def sys98_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "menu": "menu items and titles", "label": "labels", "name": "speakers' names",
+             "console": "program console lines"}
+    out = ["# %s%s (four nine System-98)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "four nine's System-98 (`%s`, packed with LZEXE): the scripts (`*.s`, the bytes after 100h XORed "
+            "with 1) are members of the `DISK_?.LIB` archives, listed in the `DISK_?.CAT` catalogs, both "
+            "LZSS-compressed; a script on its own next to the archives is the one the program reads.  A script is "
+            "16-bit ops with their messages and data between them; the patcher walks the code from its start and "
+            "every jump (the ops' lengths and pointers read off the program's own routines) and finds every "
+            "pointer to a message, a name, a file or data.  The shared routines' script (`%s`, loaded 4000h above "
+            "the others, which call it) keeps its layout.  `pc98tl/sys98.py` documents the formats, "
+            "`pc98tl/sys98_tl.py` the English.  Unchanged files rebuild byte for byte." % (
+                cfg["program"], cfg["sub_script"]), "",
+            "* The program is written unpacked and patched: an ASCII byte, which it drew as a blank, is drawn from "
+            "the kanji ROM's half-width row, one cell, so English takes a byte a letter.  The hook's code sits "
+            "where the program's three exits were; they share one tail now, each still printing its line and "
+            "exiting with its code.",
+            "* A changed script's old messages are cut out and the English goes at its end, every pointer moved; "
+            "the archives with a changed script are written anew, compressed as the originals are.",
+            "* Messages (in the wide windows) are broken between words at the window's width and get a key wait "
+            "and a cleared window past its lines; menus keep their lines."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` the window's width): any length.  `\\n` in the English forces a new "
+            "line.  A script with its English may take 16 KB (the program reads that much); a longer build is "
+            "refused and names the script and its strings.  The fullest scripts are close to that already, so "
+            "their English must stay about as long in bytes as the Japanese (two bytes a character, one a letter).",
+            "* Menus (`i` ids): one item a line, at most `max_cells` (the window's width), no more lines than the "
+            "Japanese; past it reported.",
+            "* Speakers' names (`n` ids): the program keeps 79 bytes; past them cut and reported.",
+            "* Program console lines (`c` ids): in place, `max_cells` the Japanese's bytes; past them cut and "
+            "reported.",
+            "* `{C1}`-style tokens are the controls inside a text (colours, names and numbers inserted, key waits, "
+            "new pages) and must be kept; `{XEBC3}`-style tokens are the game's own characters (the faces and "
+            "marks it defines).",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else "
+            "as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the title menu's items).",
+            "* Messages no op points at (left over in the scripts) are not extracted; they stay as they are."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def cinema_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1972,6 +2042,11 @@ def main():
             continue
         if cfg.get("encoding") == "scoop":
             out = scoop_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "sys98":
+            out = sys98_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

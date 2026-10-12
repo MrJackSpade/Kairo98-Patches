@@ -371,5 +371,10 @@
   "remarks": [
    "The disk keeps VC2.SIL, V6's own script, which nothing in V6 RS loads (and whose ops are V6's); it is left as it is."
   ]
+ },
+ "mugen_yasoukyoku": {
+  "remarks": [
+   "English releases exist on other platforms (Nocturnal Illusion, Windows and later); none on the PC-98."
+  ]
  }
 }

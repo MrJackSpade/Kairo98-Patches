@@ -2232,5 +2232,18 @@
    "url": "https://vndb.org/v10215",
    "source": "VNDB"
   }
+ ],
+ "Apricot.zip/Mugen Yasoukyoku": [
+  {
+   "label": "This repo: games/mugen_yasoukyoku (patcher working, machine translation in progress)",
+   "url": "../games/mugen_yasoukyoku/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v725",
+   "url": "https://vndb.org/v725",
+   "source": "VNDB"
+  }
  ]
 }
