@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-11 (`resear
 
 ## Engine
 
-Aaru's `MHARD.EXE`: the scripts (`*.AB`) are files in the FL1 archives (`*.FL1`, a directory of names and sizes at the end), compressed with LZSS in some games; a script is ops, each a word and its operands (the formats read off the program's own handlers).  The patcher lays a changed script out anew, its jumps moved, compresses it again when it was and writes the archive anew.  `pc98tl/aaru.py` documents the formats, `pc98tl/aaru_tl.py` the English.  Unchanged files rebuild byte for byte.
+Aaru's `MHARD.EXE`: the scripts (`*.AB`) are files in the FL1 archives (`*.FL1`, a directory of names and sizes at the end), compressed with LZSS in some games; a script is ops, each a word and its operands (the formats read off the program's own handlers).  The patcher lays a changed script out anew, its jumps moved, compresses it again when it was and writes it back.  `pc98tl/aaru.py` documents the formats, `pc98tl/aaru_tl.py` the English.  Unchanged files rebuild byte for byte.
 
 * The program draws ASCII half-width by itself, but from 60h one letter low (its half-width codes step over Shift-JIS's missing 857Fh); the patcher writes those bytes one higher, so lowercase letters show as they should.
 * The program breaks a message's line at its window's edge; the patcher breaks the English between words with the program's new line (`\N`) between the lines.
@@ -21,9 +21,10 @@ Translation and the content classification (♥) are done by the translation mod
 
 ## Limits
 
-* Messages (`m` ids, `max_cells` the window's width, 60 half-width cells): any length; the patcher breaks the lines between words.  `\n` in the English forces a new line (the Japanese's speaker names stand on a line of their own).  A script may take 65535 bytes unpacked; a longer build is refused and names its strings.
+* Messages (`m` ids, `max_cells` the window's width, 60 half-width cells): any length; the patcher breaks the lines between words; the program waits for a key when its window is full.  `\n` in the English forces a new line (the Japanese's speaker names stand on a line of their own).  A script may take 65535 bytes unpacked; a longer build is refused and names its strings.
 * Choice items (`i` ids): one line, `max_cells` the script's widest Japanese item; past it reported.
-* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width character two); past it cut and reported.  A leading `{C0}`-style token (a colour) is kept.
+* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width character two); past it cut and reported.
+* The program's controls are tokens: keep them in the English.  `{C7}` a colour, `{S}` a key wait, `{G08-z}` a face picture shown beside the window and `{G}` the picture taken away.
 * English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else as `?`.  `\`, `%`, `|`, `` ` ``, `{`, `}` and `~` are written `/`, `pct`, `!`, `'`, `(`, `)` and `-`.
 
 ## Not handled

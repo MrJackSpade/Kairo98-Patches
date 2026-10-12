@@ -1901,12 +1901,12 @@ def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     out += ["", "## Engine", "",
-            "%s's `%s` (Aaru's engine): the scripts (`*.AB`) are %s, compressed with LZSS in some games; "
+            "%s's `%s`%s: the scripts (`*.AB`) are %s, compressed with LZSS in some games; "
             "a script is ops, each a word and its operands (the formats read off the program's own handlers).  "
             "The patcher lays a changed script out anew, its jumps moved, compresses it again when it was and "
             "writes it back.  `pc98tl/aaru.py` documents the formats, `pc98tl/aaru_tl.py` the English.  "
             "Unchanged files rebuild byte for byte." % (
-                maker, cfg["program"], "files of their own" if loose else
+                maker, cfg["program"], " (Aaru's engine)" if loose else "", "files of their own" if loose else
                 "files in the FL1 archives (`*.FL1`, a directory of names and sizes at the end)"), "",
             "* The program draws ASCII half-width by itself, but from 60h one letter low (its half-width codes "
             "step over Shift-JIS's missing 857Fh); the patcher writes those bytes one higher, so lowercase "
