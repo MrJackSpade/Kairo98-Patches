@@ -1317,7 +1317,9 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    names = {"msg": "message runs", "item": "menu items", "name": "speakers' names", "engine": "program messages"}
+    names = {"msg": "message runs", "item": "menu items", "label": "placed labels", "name": "speakers' names",
+             "command": "menu commands",
+             "engine": "program messages"}
     prog, arc = cfg["program"], cfg["archive"]
     out = ["# %s%s (ZyX)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
@@ -1361,9 +1363,12 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
             cfg.get("window_cells", 0),
             "* Choice menus' items (`i` ids): one line in the menu's box, `max_cells` its widest Japanese "
             "item; past it the line breaks inside the box.",
+            "* Labels (`l` ids): text the script places on the screen, one line without breaks: "
+            "`max_cells` the Japanese's; past it the letters run on over what is beside them.",
             "* Speakers' names (`n` ids): `max_cells` bytes (the room the program copies each into): a "
             "letter one, two more for the half-width letters' start and end, a full-width character two; "
             "past it cut and reported.",
+            "* Commands of the menus (`c` ids): as the speakers' names.",
             "* Program messages (`e` ids): in their own bytes, `max_cells` the room; past it cut and "
             "reported.  The pieces of the two disk prompts that the program writes a drive's letter and a "
             "disk's number into keep their Japanese.",

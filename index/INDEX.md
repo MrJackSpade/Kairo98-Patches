@@ -431,6 +431,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Tomboy | Night Walker - Mayonaka no Tantei | [This repo: games/night_walker (patcher working, machine translation in progress)](../games/night_walker/notes.md) |
 | ZyX | Ikazuchi no Senshi Raidy 2 | [This repo: games/raidy_2 (patcher working, machine translation in progress)](../games/raidy_2/notes.md) |
 | ZyX | Ring Out!! | [This repo: games/ring_out (patcher working, machine translation in progress)](../games/ring_out/notes.md) |
+| ZyX | Twilight Hotel | [This repo: games/twilight_hotel (patcher working, machine translation in progress)](../games/twilight_hotel/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -7341,4 +7342,4 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Takamizawa Kyosuke - Nekketsu!! Kyouiku Kenshuu [FD HD extras]
 - ♥ Trigger [FD HD]
 - ♥ Trigger 2 [FD HD extras]
-- ♥ Twilight Hotel [FD HD]
+- ♥ Twilight Hotel [FD HD] — *MTL (this repo)*

@@ -2033,5 +2033,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "ZyX.zip/Twilight Hotel": [
+  {
+   "label": "This repo: games/twilight_hotel (patcher working, machine translation in progress)",
+   "url": "../games/twilight_hotel/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

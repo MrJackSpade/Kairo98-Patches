@@ -99,21 +99,29 @@ def _encode(head, dec):
 
 
 def name_tables(members_):
-    """{member: the least n of the ops 19h n "STEM" that load it} (the names are copied 2n + 1 bytes
-    apart, so a name may take 2n)."""
+    """{member: (op, n)}: the coded tables the scripts load (18h n "KOM_F0" the commands, 19h n
+    "NAME" the speakers' names), n the least they are loaded with (the entries are copied 2n + 1
+    bytes apart, so one may take 2n)."""
     out = {}
     names_ = {n.rsplit(".", 1)[0].encode("ascii"): n for n, m in members_ if m[:2] in CODED}
     for _n, m in members_:
+        if m[:2] in CODED:
+            continue
         try:
             d = script_data(m)
         except ValueError:
             continue
         if not is_script(d):
             continue
-        for x in re.finditer(rb"\x19(.)([A-Z0-9_]+)\x00", d, re.S):
-            name = names_.get(x.group(2))
-            if name:
-                out[name] = min(out.get(name, 255), x.group(1)[0])
+        # (op n STEM, or in a lengthed script op, its length, n STEM)
+        for pat in (rb"([\x18\x19])(.)([A-Z0-9_]+)\x00", rb"([\x18\x19]).(.)([A-Z0-9_]+)\x00"):
+            for x in re.finditer(pat, d, re.S):
+                name = names_.get(x.group(3))
+                if name:
+                    op, n = x.group(1)[0], x.group(2)[0]
+                    if name in out:
+                        n = min(n, out[name][1])
+                    out[name] = (op, n)
     return out
 
 
@@ -133,6 +141,11 @@ def names_file(items, tail, head):
 LEN_SIG = re.compile(rb"\x32\xe4\xbb(..)\x03\xd8\x2e\x8a\x07\x32\xe4\x03\xf0", re.S)
 SPEC_SIG = re.compile(rb"\xbb(..)\x32\xf6\x2e\x8a\x17\x43\xfe\xc6\x0a\xd2\x74.\x3a\xc2\x75.\xfe\xce\x8a\xde"
                       rb"\x32\xff\x03\xdb\x81\xc3(..)\x2e\x8b\x17\xf8\xc3", re.S)
+# (Twilight Hotel's ZVA.EXE: every op is followed by its length, a byte, or two (big-endian) with
+# the top bit set; its main loop only skips it)
+# the message's command loop: cmp al, N (the first byte past the commands)
+CMDS_SIG = re.compile(rb"\x3c(.)\x73.\x32\xe4\xfe\xc8\xd1\xe0\xbb(..)", re.S)
+LENGTHED_SIG = re.compile(rb"\xac\x32\xe4\xa8\x80\x74\x06\x8a\xe0\xac\x25\xff\x7f\x03\xf0", re.S)
 KANA_SIG = re.compile(rb"\x8a\xde\x32\xff\xd1\xe3\x81\xc3(..)\x2e\x8a\x37\x2e\x8a\x57\x01", re.S)
 
 # the main loop's routines for an op, by their code (call/jump targets masked): what they skip
@@ -178,6 +191,21 @@ class Program:
         self.hdr = struct.unpack_from("<H", exe, 8)[0] * 16
         cs = exe[self.hdr:]
         self.cs = cs
+        self.lengthed = bool(LENGTHED_SIG.search(cs))
+        cm = CMDS_SIG.search(cs)
+        if cm is None:
+            raise ValueError("ZVA98.EXE: the message's commands not found")
+        self.cmd_end = cm.group(1)[0]
+        tab = struct.unpack("<H", cm.group(2))[0]
+        self.cmd_args = {k + 1: _cmd_args(cs, struct.unpack_from("<H", cs, tab + 2 * k)[0])
+                         for k in range(self.cmd_end - 1)}
+        km = KANA_SIG.search(cs)
+        if km is None:
+            raise ValueError("ZVA98.EXE: the character table not found")
+        kana = struct.unpack("<H", km.group(1))[0]
+        self.kana = [cs[kana + 2 * b:kana + 2 * b + 2].decode("cp932", "replace") for b in range(0x80)]
+        if self.lengthed:
+            return
         m = [p.search(cs) for p in (LEN_SIG, SPEC_SIG, KANA_SIG)]
         if not all(m):
             raise ValueError("ZVA98.EXE: the op tables or the character table not found")
@@ -200,12 +228,17 @@ class Program:
                 self.kind[op] = KINDS[fp]
             else:
                 raise ValueError("ZVA98.EXE: op %02x's routine not known (%s)" % (op, fp))
-        kana = struct.unpack("<H", m[2].group(1))[0]
-        self.kana = [cs[kana + 2 * b:kana + 2 * b + 2].decode("cp932", "replace") for b in range(0x80)]
 
     def step(self, d, i):
         """(the next op, [(start, end) of text runs]) for the op at i."""
         op = d[i]
+        if self.lengthed:
+            n, size = op_length(d, i)
+            body = i + 1 + size
+            if op in (0x70, 0x71, 0x76):
+                _e, t = message(d, body + (4 if op == 0x71 else 0), self)
+                return body + n, t
+            return body + n, []
         k = self.kind.get(op)
         if k is None:
             if op in (0x28, 0x2B):
@@ -226,9 +259,9 @@ class Program:
                 j += 2 + d[j + 1]
             return j + 1, []
         if k == "msg":
-            return message(d, i + 1)
+            return message(d, i + 1, self)
         if k == "msg5":
-            return message(d, i + 5)
+            return message(d, i + 5, self)
         if k == "fixed":
             return i + self.len[op], []
         if k == "one":
@@ -288,24 +321,55 @@ class Program:
         return out
 
 
+def op_length(d, i):
+    """(the length of the op at i's body, the bytes its length takes) in a lengthed script"""
+    if d[i] == 0xFF:
+        return (1 if i + 1 < len(d) else 0), 0
+    b = d[i + 1]
+    if b & 0x80 and d[i] not in (0x10, 0xA0):
+        return ((b & 0x7F) << 8) | d[i + 2], 2
+    return b, 1
+
+
 def _nul(d, i):
     """The byte after the first NUL from i."""
     return d.index(0, i) + 1
 
 
-def message(d, i):
+def _cmd_args(cs, a):
+    """What a message's command takes, by its routine: 3 or 1 bytes, 0, or "0a" (bytes up to 0Ah,
+    then 4 more, or up to 0)."""
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    ins = list(Cs(CS_ARCH_X86, CS_MODE_16).disasm(bytes(cs[a:a + 48]), a))[:10]
+    text = [(i.mnemonic, i.op_str) for i in ins]
+    if len(text) >= 3 and text[0] == ("mov", "al, byte ptr es:[si]") and text[1] == ("inc", "si") and \
+            text[2] == ("or", "al, al"):
+        return "0a"
+    if ("add", "si, 3") in text[:6]:
+        return 3
+    if any("es:[si]" in o for _m, o in text[:6]) and ("inc", "si") in text[:7]:
+        return 1
+    return 0
+
+
+def message(d, i, prog):
     """(the end of the message whose commands start at i, its text runs)"""
     runs = []
+    end = prog.cmd_end
     while True:
         b = d[i]
         i += 1
         if b == 0:
             return i, runs
-        if b in (1, 4, 7, 8, 0xB, 0xC):
-            i += 1
-        elif b in (9, 0xA):
-            i += 3
-        elif b == 0xD:
+        if b == 0xFF:
+            e = d.index(0, i)
+            runs.append((i, e))
+            i = e + 1
+            continue
+        if b >= end:
+            return i - 1, runs
+        k = prog.cmd_args[b]
+        if k == "0a":
             while True:
                 c = d[i]
                 i += 1
@@ -314,12 +378,8 @@ def message(d, i):
                     break
                 if c == 0:
                     break
-        elif b == 0xFF:
-            e = d.index(0, i)
-            runs.append((i, e))
-            i = e + 1
-        elif b >= 0xE:
-            return i - 1, runs
+        else:
+            i += k
 
 
 FLOW_END = {0xFF, 0x92, 0x28, 0x91, 0x15}
@@ -342,6 +402,19 @@ def runs(prog, d):
     return walk(prog, d)[0]
 
 
+def placed(prog, d):
+    """{start} of the text runs of op 71h: drawn at a place the op gives, without line breaks."""
+    rs, ops = walk(prog, d)
+    order = sorted(ops)
+    out = set()
+    import bisect
+    for s_, _e in rs:
+        k = bisect.bisect_right(order, s_) - 1
+        if k >= 0 and d[order[k]] == 0x71:
+            out.add(s_)
+    return out
+
+
 def menus(prog, d):
     """[(first, end)] of the choice menus: from an op 72h n (n not 0) to the next 72h 00; the text
     runs between are the menu's items, drawn in its box."""
@@ -349,7 +422,8 @@ def menus(prog, d):
     out, start = [], None
     for i in sorted(ops):
         if d[i] == 0x72:
-            if d[i + 1]:
+            arg = d[i + 1 + op_length(d, i)[1]] if prog.lengthed else d[i + 1]
+            if arg:
                 start = i
             elif start is not None:
                 out.append((start, i))
@@ -358,6 +432,18 @@ def menus(prog, d):
 
 
 def walk(prog, d):
+    if prog.lengthed:
+        i, out, ops = code_start(d), [], set()
+        while i < len(d):
+            ops.add(i)
+            j, t = prog.step(d, i)
+            out += t
+            i = j
+        return sorted(out), ops
+    return _walk(prog, d)
+
+
+def _walk(prog, d):
     """[(start, end)] of every text run, the script walked from its start and every label.  Past a
     jump or return the walk goes on while its bytes are statements (a jump a statement before skips
     is followed by more code), its text runs kept when it reaches a label, a place walked already
@@ -407,20 +493,38 @@ def walk(prog, d):
     return sorted(out), ops
 
 
-def rebuild(d, values):
-    """The script with its text runs replaced ({start: bytes}), its labels moved with them."""
+def rebuild(d, values, prog=None):
+    """The script with its text runs replaced ({start: bytes}), its labels moved with them (and, in a
+    lengthed script, each op's length with its body)."""
     c = code_start(d)
-    edits = sorted(values.items())
-    ends = {s: d.index(0, s) for s, _b in edits}
-    out, at, shift = bytearray(), 0, []
-    for s, b in edits:
-        out += d[at:s] + b
-        shift.append((s, len(b) - (ends[s] - s)))
-        at = ends[s]
+    edits = {}                          # position -> (bytes replaced, new bytes)
+    for s_, b in values.items():
+        edits[s_] = (d.index(0, s_) - s_, b)
+    if prog is not None and prog.lengthed and values:
+        i = c
+        while i < len(d):
+            n, size = op_length(d, i)
+            j = i + 1 + size + n
+            grow = sum(len(b) - k for p, (k, b) in edits.items() if i < p < j)
+            if grow and d[i] != 0xFF:
+                m = n + grow
+                if size == 1 and m < 0x80:
+                    field = bytes([m])
+                elif m < 0x8000 and d[i] not in (0x10, 0xA0):
+                    field = bytes([0x80 | (m >> 8), m & 0xFF])
+                else:
+                    raise OverflowError("an op's body past its length's room")
+                edits[i + 1] = (size, field)
+            i = j
+    out, at = bytearray(), 0
+    for p in sorted(edits):
+        k, b = edits[p]
+        out += d[at:p] + b
+        at = p + k
     out += d[at:]
 
     def moved(p):
-        return p + sum(dd for s, dd in shift if s < p)
+        return p + sum(len(b) - k for q, (k, b) in edits.items() if q < p)
     for k in range(2, c, 2):
         old = c + struct.unpack_from(">H", d, k)[0]
         if old < len(d):        # (an unused label, FFFFh, stays as it is)
@@ -434,9 +538,7 @@ def rebuild(d, values):
 
 HOOK_SIG = re.compile(rb"\x80\xfe\x20\x74(.)\x80\xfe\x80\x73(.)\x8a\xde\x32\xff\xd1\xe3", re.S)
 DRAW_SIG = re.compile(rb"\xa0(..)\x32\xe4\xbf(..)\x03\xf8\x8b\x05\x52\xe8(..)\x5a\x8b\x5d\x02\xe8(..)\x8b\xf8"
-                      rb"\x8a\x0e(..)\xe8(..)\x80\x3e(..)\x00\x75.\xb0\x0c\xe8(..)\x0a\xc0\x75.\xb8\x0e\x04\xcd\x18"
-                      rb"\xf6\xc4\x04\x75.\xb4\x05\xcd\x33\xb2\x01\xa8\x03\x75.\xe8(..)\xa8\x10\x75.\xb2\x03\x8a\xc2"
-                      rb"\xe8(..)\xe8(..)", re.S)
+                      rb"\x8a\x0e(..)\xe8(..)", re.S)
 GLYPH_SIG = re.compile(rb"\x53\x56\x57\x55\x1e\x06\xb8(..)\x8e\xd8\x8e\xc0\xe8(..)\xe8(..)\xe8(..)\xe8(..)\x32\xe4"
                        rb"\xa0(..)\xfa\xe8(..)\xbe(..)\xe8(..)\xe8(..)\xfb", re.S)
 NEWLINE_SIG = re.compile(rb"\x83\x45\x02\x14\xe8(..)\x8b\x45\x04\x89\x05\xc3", re.S)
@@ -505,19 +607,18 @@ hfit:
     jb hdraw
     CALLN nl
 hdraw:
+    push bx
     cmp dh, 0x20
     je hadv
-    push bx
     mov ax, word ptr [bx]
     mov bx, word ptr [bx + 2]
     CALLN {vram}
     mov di, ax
     CALLN ank
-    pop bx
 hadv:
-    add word ptr [bx], 8
-    CALLN delay
-    JMPN {loop}
+    pop bx
+    sub word ptr [bx], 8
+    JMPN {after}
 nl:
     add word ptr [bx + 2], 0x14
     push di
@@ -596,33 +697,6 @@ ak1:
     pop bx
     pop ds
     .byte 0xc3
-delay:
-    cmp byte ptr [{fast}], 0
-    jne dl9
-    mov al, 0x0c
-    CALLN {keyq}
-    or al, al
-    jne dl3
-    mov ax, 0x40e
-    int 0x18
-    test ah, 4
-    jne dl9
-    mov ah, 5
-    int 0x33
-    mov dl, 1
-    test al, 3
-    jne dl1
-    CALLN {joy}
-    test al, 0x10
-    jne dl1
-dl3:
-    mov dl, 3
-dl1:
-    mov al, dl
-    CALLN {wait1}
-    CALLN {wait2}
-dl9:
-    .byte 0xc3
 """
 ROOM_PARAS = 0x30
 
@@ -658,8 +732,7 @@ def patch_exe(exe):
         mode=hex(mode), loop=hex(_rel(h0 + 5, hm.group(1))), sjis=hex(_rel(h0 + 10, hm.group(2))),
         kana=hex(h0 + 10), placed=u(pm.group(1)), placedat=u(pm.group(2)),
         win=u(dm.group(1)), curs=u(dm.group(2)), vram=hex(_rel(d0 + 23, dm.group(4))), colour=u(gm.group(6)),
-        fast=u(dm.group(7)), keyq=hex(_rel(d0 + 44, dm.group(8))), joy=hex(_rel(d0 + 71, dm.group(9))),
-        wait1=hex(_rel(d0 + 82, dm.group(10))), wait2=hex(_rel(d0 + 85, dm.group(11))),
+        after=hex(d0 + 32),
         page=hex(_rel(nm.start() + 7, nm.group(1))),
         fx1=hex(_rel(g0 + 22, gm.group(4))), fx2=hex(_rel(g0 + 25, gm.group(5))),
         grcg=hex(_rel(g0 + 34, gm.group(7))), buf=u(gm.group(8)), blit=hex(_rel(g0 + 40, gm.group(9))),

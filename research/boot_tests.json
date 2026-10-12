@@ -3481,5 +3481,19 @@
    "The opening (RO_01.ZSD) and the title",
    "OK: the speakers' names in filler on their plates (cut to their ten bytes), the messages' filler after them broken between words, page after page with Enter; the title logo between"
   ]
+ ],
+ "twilight_hotel": [
+  [
+   "Boot from the hard disk (TH.BAT: ZVA GB_OP), the settings screen",
+   "OK: its menu's items in filler in their box, its labels cut to their places' room; a right-click leaves it"
+  ],
+  [
+   "The opening and the title menu",
+   "OK: the opening's pictures (their narration drawn into them, Japanese); the title menu's labels in filler; a click on the first starts"
+  ],
+  [
+   "The first scene (the hero's room)",
+   "OK: the speakers' names on their plates, the messages' filler wrapped between words across the window, page after page with Enter"
+  ]
  ]
 }

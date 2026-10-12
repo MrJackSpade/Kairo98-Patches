@@ -14,15 +14,17 @@ ZyX's engine (`ZVA98.EXE`): the scripts are the members of the archive `ZSD00` (
 
 ## Script
 
-10468 strings: 5 program messages, 144 menu items, 10274 message runs, 45 speakers' names.
+10470 strings: 5 program messages, 144 menu items, 133 placed labels, 10143 message runs, 45 speakers' names.
 
-Translation and the content classification (♥) are done by the translation model; 0 of 10468 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 10470 strings have English so far.
 
 ## Limits
 
 * Message runs (`m` ids, `max_cells` 56: a line's letters after the speaker's name): any length; the window breaks lines between words and pages when full.  The line breaks and pages of the Japanese are the script's own commands around a run, so `\n` is a space.  A run its note says is followed by an inserted name or number is drawn on directly before it.  A script with its English may take 64 KB; a build past it is refused and names the script.
 * Choice menus' items (`i` ids): one line in the menu's box, `max_cells` its widest Japanese item; past it the line breaks inside the box.
+* Labels (`l` ids): text the script places on the screen, one line without breaks: `max_cells` the Japanese's; past it the letters run on over what is beside them.
 * Speakers' names (`n` ids): `max_cells` bytes (the room the program copies each into): a letter one, two more for the half-width letters' start and end, a full-width character two; past it cut and reported.
+* Commands of the menus (`c` ids): as the speakers' names.
 * Program messages (`e` ids): in their own bytes, `max_cells` the room; past it cut and reported.  The pieces of the two disk prompts that the program writes a drive's letter and a disk's number into keep their Japanese.
 * English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else as `?`.
 

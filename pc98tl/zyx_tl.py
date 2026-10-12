@@ -11,9 +11,13 @@ Strings:
 * "item": a choice menu's item (a run between op 72h n and 72h 00, refs as a message's): one line
   in the menu's box, `max_cells` the widest Japanese item of the menu (its box's room); past it
   the line breaks inside the box (reported).
+* "label": a run of op 71h, drawn at the place the op gives, one line without breaks: `max_cells`
+  the Japanese's (past it the letters run on over what is beside it, reported).
 * "name": a speaker's name (refs NAME.ZSD:index, the table op 19h n loads): `max_cells` its bytes,
   2n for the least n the scripts load it with (one a letter, two for the half-width letters'
   start and end, two for a full-width character); past it the English is cut and reported.
+* "command": a command of the game's menus (refs KOM_F0.ZSS:index, the table op 18h n loads): as a
+  name.
 * "engine": a message in the program's data (refs PROGRAM:offset), written in its own bytes:
   `max_cells` its room (one a letter, two for a full-width character); past it the English is cut
   and reported.
@@ -31,7 +35,7 @@ from . import zyx
 from .alice_sys2_tl import sha256
 from .text import pseudo, sjis_cols
 
-PREFIX = {"msg": "m", "item": "i", "name": "n", "engine": "e"}
+PREFIX = {"msg": "m", "item": "i", "label": "l", "name": "n", "command": "c", "engine": "e"}
 INSERT = {9: "a name", 0xA: "a number", 0xC: "a name"}
 
 
@@ -85,11 +89,13 @@ def run_extract(here, src):
     tables = zyx.name_tables(members)
     for name, m in members:
         if name in tables:
-            room = 2 * tables[name]
+            op, n = tables[name]
+            room = 2 * n
+            kind = "name" if op == 0x19 else "command"
             for k, raw in enumerate(zyx.names(m)[0]):
-                add("name", prog.decode(raw), "%s:%d" % (name, k), room,
-                    "a speaker's name: %d bytes (a letter one, and two for the half-width letters' "
-                    "start and end)" % room)
+                add(kind, prog.decode(raw), "%s:%d" % (name, k), room,
+                    "%s: %d bytes (a letter one, and two for the half-width letters' start and end)" % (
+                        "a speaker's name" if kind == "name" else "a command of the game's menus", room))
             continue
         try:
             d = zyx.script_data(m)
@@ -104,9 +110,14 @@ def run_extract(here, src):
             width = max([_cells(prog.decode(d[x:y])) for x, y in inside] or [0])
             for x, y in inside:
                 item_cells[x] = width
+        fixed = zyx.placed(prog, d)
         for s, e in rs:
             jp = prog.decode(d[s:e])
             if not jp.strip("　 "):
+                continue
+            if s in fixed:
+                add("label", jp, "%s:%04x" % (name, s), _cells(jp),
+                    "drawn at a fixed place without line breaks: its room the Japanese's")
                 continue
             if s in item_cells:
                 add("item", jp, "%s:%04x" % (name, s), item_cells[s],
@@ -140,9 +151,9 @@ def _cells(text):
 
 
 def _pseudo(e):
-    if e["kind"] == "item":
+    if e["kind"] in ("item", "label"):
         return pseudo(e["id"], 2 * e["max_cells"], 1.0)[:e["max_cells"]]
-    if e["kind"] in ("engine", "name"):
+    if e["kind"] in ("engine", "name", "command"):
         return pseudo(e["id"], 2 * e["max_cells"], 1.0)[:e["max_cells"] - 2]
     return pseudo(e["id"], sjis_cols(e["jp"].encode("cp932", "replace")))
 
@@ -154,11 +165,12 @@ def run_patch(here, src, dst, mode="en"):
         print("warning: source image differs from the one strings.json was extracted from")
     img = _image(src)
     vol = img.volumes[0]
-    by_ref, ids = {}, {}
+    by_ref, ids, rooms = {}, {}, {}
     for e in doc["strings"]:
         text = _pseudo(e) if mode == "pseudo" else e["en"]
         for r in e["refs"]:
             ids[r] = e["id"]
+            rooms[r] = (e["kind"], e["max_cells"])
             if text:
                 by_ref[r] = text
     warn, done = [], 0
@@ -170,7 +182,7 @@ def run_patch(here, src, dst, mode="en"):
     tables = zyx.name_tables(members)
     for name, m in members:
         if name in tables:
-            room = 2 * tables[name]
+            room = 2 * tables[name][1]
             plates, tail, head = zyx.names(m)
             changed = False
             for k in range(len(plates)):
@@ -199,8 +211,11 @@ def run_patch(here, src, dst, mode="en"):
                 ref = "%s:%04x" % (name, s)
                 if ref in by_ref:
                     values[s] = zyx.encode(by_ref[ref])
+                    kind, cells = rooms[ref]
+                    if kind in ("item", "label") and _cells(by_ref[ref]) > cells:
+                        warn.append("%s: %d letters, past its room (%d)" % (ids[ref], _cells(by_ref[ref]), cells))
         try:
-            new = zyx.rebuild(d, values) if values else m
+            new = zyx.rebuild(d, values, prog) if values else m
         except OverflowError:
             new = bytes(zyx.SCRIPT_MAX + 1)
         if len(new) > zyx.SCRIPT_MAX:
@@ -214,7 +229,7 @@ def run_patch(here, src, dst, mode="en"):
                 cut = {s: zyx.encode(by_ref["%s:%04x" % (name, s)][:max(4, int(len(by_ref["%s:%04x" % (name, s)]) * ratio))])
                        for s in values}
                 try:
-                    new = zyx.rebuild(d, cut)
+                    new = zyx.rebuild(d, cut, prog)
                 except OverflowError:
                     continue
             warn.append("%s: the filler was cut to %d%% to fit the script's 64 KB" % (name, int(ratio * 100)))

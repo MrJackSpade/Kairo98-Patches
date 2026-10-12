@@ -361,5 +361,10 @@
   "remarks": [
    "KOM_F0.ZSD (a command table: SAVE, LOAD, the wrestling moves, the look and talk commands) is not extracted: no script loads it (op 19h names NAME_F0 only), so it is never shown."
   ]
+ },
+ "twilight_hotel": {
+  "not_handled": [
+   "The opening's narration: drawn vertically into its pictures (TWOP_A-F.MOG), not text."
+  ]
  }
 }
