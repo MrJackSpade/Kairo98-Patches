@@ -366,5 +366,10 @@
   "not_handled": [
    "The opening's narration: drawn vertically into its pictures (TWOP_A-F.MOG), not text."
   ]
+ },
+ "viper_v6_rs": {
+  "remarks": [
+   "The disk keeps VC2.SIL, V6's own script, which nothing in V6 RS loads (and whose ops are V6's); it is left as it is."
+  ]
  }
 }

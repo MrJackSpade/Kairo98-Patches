@@ -1,0 +1,10 @@
+{
+ "title": "Animahjong X",
+ "key": "Sogna.zip/Animahjong X",
+ "image": "Animahjong X\\Animahjong X [HD]\\Animahjong X.hdi",
+ "encoding": "sgs",
+ "program": "SGS.COM",
+ "game_dir": "AMX",
+ "window_cells": 76,
+ "boot_steps": "25:shot,5:enter,8:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

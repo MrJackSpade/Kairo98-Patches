@@ -1,0 +1,10 @@
+{
+ "title": "Viper V6",
+ "key": "Sogna.zip/Viper V6",
+ "image": "Viper V6\\Viper V6 (with Turbo Kit) [HD]\\Viper V6 (with Turbo Kit).hdi",
+ "encoding": "sgs",
+ "program": "SGS.COM",
+ "game_dir": "V6",
+ "window_cells": 76,
+ "boot_steps": "25:shot,5:enter,8:shot,1:enter,10:shot,1:key=38,2:shot,1:key=104,2:shot,1:enter,8:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

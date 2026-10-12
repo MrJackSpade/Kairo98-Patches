@@ -2128,5 +2128,109 @@
    "url": "https://vndb.org/v3456",
    "source": "VNDB"
   }
+ ],
+ "Sogna.zip/Viper V6": [
+  {
+   "label": "This repo: games/viper_v6 (patcher working, machine translation in progress)",
+   "url": "../games/viper_v6/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8326",
+   "url": "https://vndb.org/v8326",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V6 RS": [
+  {
+   "label": "This repo: games/viper_v6_rs (patcher working, machine translation in progress)",
+   "url": "../games/viper_v6_rs/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8326",
+   "url": "https://vndb.org/v8326",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V8": [
+  {
+   "label": "This repo: games/viper_v8 (patcher working, machine translation in progress)",
+   "url": "../games/viper_v8/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8327",
+   "url": "https://vndb.org/v8327",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V8 RS": [
+  {
+   "label": "This repo: games/viper_v8_rs (patcher working, machine translation in progress)",
+   "url": "../games/viper_v8_rs/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8327",
+   "url": "https://vndb.org/v8327",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V10": [
+  {
+   "label": "This repo: games/viper_v10 (patcher working, machine translation in progress)",
+   "url": "../games/viper_v10/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8325",
+   "url": "https://vndb.org/v8325",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V10 RS": [
+  {
+   "label": "This repo: games/viper_v10_rs (patcher working, machine translation in progress)",
+   "url": "../games/viper_v10_rs/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8325",
+   "url": "https://vndb.org/v8325",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Viper V12": [
+  {
+   "label": "This repo: games/viper_v12 (patcher working, machine translation in progress)",
+   "url": "../games/viper_v12/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v7493",
+   "url": "https://vndb.org/v7493",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Animahjong X": [
+  {
+   "label": "This repo: games/animahjong_x (patcher working, machine translation in progress)",
+   "url": "../games/animahjong_x/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v10215",
+   "url": "https://vndb.org/v10215",
+   "source": "VNDB"
+  }
  ]
 }

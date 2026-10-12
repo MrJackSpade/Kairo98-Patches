@@ -195015,15 +195015,27 @@
      "path": "Animahjong X\\Animahjong X [HD]\\Animahjong X.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/animahjong_x (patcher working, machine translation in progress)",
+     "url": "../games/animahjong_x/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v10215",
+     "url": "https://vndb.org/v10215",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r20639 (no erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Animahjong X Perfect File",
@@ -195714,15 +195726,27 @@
      "path": "Viper V10\\Viper V10 [HD]\\Viper V10.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v10 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v10/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8325",
+     "url": "https://vndb.org/v8325",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16890 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V10 RS",
@@ -195782,15 +195806,27 @@
      "path": "Viper V10 RS\\Viper V10 RS [HD]\\Viper V10 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v10_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v10_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8325",
+     "url": "https://vndb.org/v8325",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16890 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V12",
@@ -195885,15 +195921,27 @@
      "path": "Viper V12\\Viper V12 [HD]\\Viper V12.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v12 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v12/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7493",
+     "url": "https://vndb.org/v7493",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20391 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V16",
@@ -196133,15 +196181,27 @@
      "path": "Viper V6\\Viper V6 [FD]\\Viper V6 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v6 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v6/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8326",
+     "url": "https://vndb.org/v8326",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16893 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V6 RS",
@@ -196164,15 +196224,27 @@
      "path": "Viper V6 RS\\Viper V6 RS [HD]\\Viper V6 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v6_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v6_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8326",
+     "url": "https://vndb.org/v8326",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20402 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V8",
@@ -196282,15 +196354,27 @@
      "path": "Viper V8\\Viper V8 [HD]\\Viper V8.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v8 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v8/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8327",
+     "url": "https://vndb.org/v8327",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16895 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V8 RS",
@@ -196357,15 +196441,27 @@
      "path": "Viper V8 RS\\Viper V8 RS [HD]\\Viper V8 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v8_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v8_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8327",
+     "url": "https://vndb.org/v8327",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16895 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "SomethingGood.zip/AI Igo 3",

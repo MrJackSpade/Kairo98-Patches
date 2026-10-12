@@ -3605,5 +3605,85 @@
    "The opening: the narration and the first scenes",
    "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
   ]
+ ],
+ "viper_v6": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title, the first menu and the picture menu",
+   "OK: the menu's items in filler, half-width"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name"
+  ]
+ ],
+ "viper_v6_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu; Information",
+   "OK: the information menu's items in filler, half-width, in their box; its pages of messages in filler, broken between words, the lines after the first indented"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages, drawn while the scene runs)"
+  ]
+ ],
+ "viper_v8": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (18日の金曜日; Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name"
+  ]
+ ],
+ "viper_v8_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages)"
+  ]
+ ],
+ "viper_v10": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene (the kendo hall)",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name; a choice menu's items in filler"
+  ]
+ ],
+ "viper_v10_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages; this build's writer draws through a routine, the hook writes the text VRAM there too)"
+  ]
+ ],
+ "viper_v12": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages)"
+  ]
+ ],
+ "animahjong_x": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title, the start menu",
+   "OK: the menu's items in filler, half-width"
+  ],
+  [
+   "The opening scene (the mahjong parlour) and the first hand of mahjong",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages, the 66-cell window STARTUP.SIL sets); the mahjong screen's call menu (ポン, カン, ロン) is in the pictures, not text in the scripts or the program, and stays Japanese"
+  ]
  ]
 }
