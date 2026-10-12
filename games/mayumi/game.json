@@ -1,16 +1,11 @@
 {
  "title": "Mayumi",
- "key": "CocktailSoft.zip/Mayumi",
+ "key": "doujinHomebrew.zip/Mayumi",
  "image": "Mayumi\\Mayumi [HD]\\Mayumi.hdi",
  "encoding": "adv98v",
  "game_dir": "MAYUMI",
- "extraop": false,
- "menu_fullwidth": true,
- "default_frame": [
-  1,
-  283,
-  78,
-  348
+ "program_files": [
+  "MAYUMI.COM"
  ],
- "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+ "boot_steps": "30:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
 }

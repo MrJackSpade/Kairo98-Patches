@@ -42059,15 +42059,37 @@
      "path": "Mayumi (BMP)\\Mayumi [FD]\\BMP (Mayumi).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mayumi (patcher working, machine translation in progress)",
+     "url": "../games/mayumi/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8929",
+     "url": "https://vndb.org/v8929",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8965",
+     "url": "https://vndb.org/v8965",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v9159",
+     "url": "https://vndb.org/v9159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18092 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Teki wa Ningen",

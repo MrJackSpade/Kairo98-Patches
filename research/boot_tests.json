@@ -1098,20 +1098,12 @@
  ],
  "mayumi": [
   [
-   "Load menu",
-   "OK: question as filler at its Japanese width; full-width filler items"
+   "Boot from the hard disk: the first menu; Enter on its first item",
+   "OK: the menu's prompt and items in filler half-width; the game starts"
   ],
   [
-   "Opening (short lines placed on the screen, each character faded in)",
-   "OK: each line one message (the fade commands between its characters belong to it), filler at its Japanese width where it is placed"
-  ],
-  [
-   "First scene messages",
-   "OK: filler wrapped between words to the box set at startup, 3-line pages"
-  ],
-  [
-   "Save/load, later scenes, endings",
-   "not yet seen"
+   "The opening: its captions over the pictures, then the messages, Enter after each",
+   "OK: the captions and messages in filler half-width, broken between words (a caption fitted to its box, past it reported)"
   ]
  ],
  "will_no_dengon": [
