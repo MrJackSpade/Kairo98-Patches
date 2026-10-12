@@ -1,0 +1,9 @@
+{
+ "title": "if 3",
+ "key": "Active.zip/if 3",
+ "image": "if 3\\if 3 [HD]\\if 3.hdi",
+ "encoding": "active_if",
+ "program": "MAIN.EXE",
+ "game_dir": "IF3",
+ "boot_steps": "25:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot"
+}

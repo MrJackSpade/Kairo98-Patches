@@ -3725,5 +3725,39 @@
    "The opening (its scrolling prologue, clicked past), then the first scenes' messages",
    "OK: the prologue is the pictures' (Japanese, as in the original); the speakers' names and messages in filler half-width, lines broken between words and the window paged (np21w shows this game's screens doubled, the original as well)"
   ]
+ ],
+ "if": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 1 (和也君の憂鬱な一日)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ],
+  [
+   "Scenario 4 (マディ救出大作戦) from the scenario menu: the speakers' names (op 72h) and their messages",
+   "OK: a name in filler with its message after it on the line, the message's other lines started under the name's end; the narration after a spaces-only name indented the same way; a second speaker's name on a new line"
+  ]
+ ],
+ "if_2": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 5 (やっぱり薔薇が好き)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ]
+ ],
+ "if_3": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 8 (自殺志願)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ]
  ]
 }

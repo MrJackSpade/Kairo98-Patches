@@ -293,7 +293,7 @@ class DiskImage:
         return bps in (256, 512, 1024, 2048) and b[13] in (1, 2, 4, 8, 16, 32, 64) and b[16] in (1, 2)
 
     @staticmethod
-    def _pc98_partitions(raw, hsize, ssize, spt, heads):
+    def _pc98_partitions(raw, hsize, ssize, spt, heads, entries=False):
         pt = hsize + ssize  # partition table lives in sector 1
         starts = []
         for i in range(16):
@@ -303,8 +303,48 @@ class DiskImage:
             s, h, c = e[8], e[9], struct.unpack_from("<H", e, 10)[0]
             off = hsize + ((c * heads + h) * spt + s) * ssize
             if DiskImage._is_bpb(raw, off):
-                starts.append(off)
+                starts.append((pt + i * 32, off) if entries else off)
         return starts
+
+    def grow_volume(self, k=0):
+        """An HDI's FAT volume grown by whole cylinders after its PC-98 partition's end (into the disk's
+        cylinders after it, then cylinders added at the image's end) to as many clusters as its FAT has
+        entries for, so nothing moves; the clusters added are free.  The bytes added."""
+        if self.kind != "hdi":
+            return 0
+        (_r, _t, hsize, _dsize, ssize, spt, heads, cyls) = struct.unpack_from("<8I", self.raw, 0)
+        v = self.volumes[k]
+        entry = [e for e, off in self._pc98_partitions(self.raw, hsize, ssize, spt, heads, True)
+                 if off == v.base][0]
+        end_s, end_h, end_c = self.raw[entry + 12], self.raw[entry + 13], struct.unpack_from("<H", self.raw, entry + 14)[0]
+        cyl_bytes = spt * heads * ssize
+        if end_s or end_h or (cyl_bytes // v.bps) % v.spc or v.base != hsize + \
+                struct.unpack_from("<H", self.raw, entry + 10)[0] * cyl_bytes:
+            return 0           # a partition not on whole cylinders
+        if v.base + v.total_sectors * v.bps != hsize + (end_c + 1) * cyl_bytes:
+            return 0           # (the end cylinder is the partition's last)
+        per_cyl = cyl_bytes // v.bps // v.spc
+        cap = (v.fat_sectors * v.bps * 2 // 3 if v.fat12 else v.fat_sectors * v.bps // 2) - 2
+        if v.fat12:
+            cap = min(cap, 4084)
+        add = (cap - v.nclusters) // per_cyl
+        if add <= 0:
+            return 0
+        need = hsize + (end_c + 1 + add) * cyl_bytes
+        if need > len(self.raw):
+            self.raw += bytes(need - len(self.raw))
+        new_cyls = max(cyls, end_c + 1 + add)
+        struct.pack_into("<I", self.raw, 12, new_cyls * cyl_bytes)
+        struct.pack_into("<I", self.raw, 28, new_cyls)
+        struct.pack_into("<H", self.raw, entry + 14, end_c + add)
+        total = v.total_sectors + add * cyl_bytes // v.bps
+        if total < 0x10000 and struct.unpack_from("<H", self.raw, v.base + 19)[0]:
+            struct.pack_into("<H", self.raw, v.base + 19, total)
+        else:
+            struct.pack_into("<H", self.raw, v.base + 19, 0)
+            struct.pack_into("<I", self.raw, v.base + 32, total)
+        self.volumes[k] = FatVolume(self.raw, v.base)
+        return add * cyl_bytes
 
     def save(self, path):
         open(path, "wb").write(self.raw)

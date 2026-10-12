@@ -14659,15 +14659,37 @@
      "path": "if\\if [HD]\\if.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if (patcher working, machine translation in progress)",
+     "url": "../games/if/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17741 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/if 123",
@@ -14760,15 +14782,37 @@
      "path": "if 2\\if 2 [HD]\\if 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if_2 (patcher working, machine translation in progress)",
+     "url": "../games/if_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17743 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/if 3",
@@ -14835,15 +14879,37 @@
      "path": "if 3\\if 3 [HD]\\if 3.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if_3 (patcher working, machine translation in progress)",
+     "url": "../games/if_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17745 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/Kusuriyubi no Kyoukasho",

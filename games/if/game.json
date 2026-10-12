@@ -1,0 +1,9 @@
+{
+ "title": "if",
+ "key": "Active.zip/if",
+ "image": "if\\if [HD]\\if.hdi",
+ "encoding": "active_if",
+ "program": "MAIN.EXE",
+ "game_dir": "IF",
+ "boot_steps": "25:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot,2:enter,5:shot"
+}

@@ -2284,5 +2284,74 @@
    "url": "https://vndb.org/v3152",
    "source": "VNDB"
   }
+ ],
+ "Active.zip/if": [
+  {
+   "label": "This repo: games/if (patcher working, machine translation in progress)",
+   "url": "../games/if/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8724",
+   "url": "https://vndb.org/v8724",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8725",
+   "url": "https://vndb.org/v8725",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8726",
+   "url": "https://vndb.org/v8726",
+   "source": "VNDB"
+  }
+ ],
+ "Active.zip/if 2": [
+  {
+   "label": "This repo: games/if_2 (patcher working, machine translation in progress)",
+   "url": "../games/if_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8724",
+   "url": "https://vndb.org/v8724",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8725",
+   "url": "https://vndb.org/v8725",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8726",
+   "url": "https://vndb.org/v8726",
+   "source": "VNDB"
+  }
+ ],
+ "Active.zip/if 3": [
+  {
+   "label": "This repo: games/if_3 (patcher working, machine translation in progress)",
+   "url": "../games/if_3/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8724",
+   "url": "https://vndb.org/v8724",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8725",
+   "url": "https://vndb.org/v8725",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8726",
+   "url": "https://vndb.org/v8726",
+   "source": "VNDB"
+  }
  ]
 }
