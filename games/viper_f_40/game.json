@@ -1,0 +1,11 @@
+{
+ "title": "Viper F-40",
+ "key": "Sogna.zip/Viper F-40",
+ "image": "Viper F-40\\Viper F-40 [HD]\\Viper F-40.hdi",
+ "encoding": "sgs21",
+ "program": "SGS21.COM",
+ "game_dir": "F40_21",
+ "boot_fd": "Viper F-40\\Viper F-40 [HD]\\Viper F-40 (HD Boot disk).hdm",
+ "cd": "Viper F-40\\Viper F-40 [CD]\\Viper F-40.ccd",
+ "boot_steps": "20:shot,3:enter,14:shot,1:space,5:shot,2:lclick,6:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot"
+}

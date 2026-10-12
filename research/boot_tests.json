@@ -3781,5 +3781,25 @@
    "The opening's messages, Enter after each",
    "OK: the messages in filler half-width, lowercase letters right (written a byte higher), broken between words; no choice came up in these scenes (the choices' items untested)"
   ]
+ ],
+ "viper_f_40": [
+  [
+   "Boot from the hard-disk boot floppy (the CD in the drive): its menu's first item, then the opening and the title",
+   "OK: the game starts from the patched hard disk; the title is a picture"
+  ],
+  [
+   "The first scene's messages and its menu, a click after each",
+   "OK: a speaker's name (its slot) and the message in filler half-width on one line, a longer one broken between words; the menu's items in filler half-width"
+  ]
+ ],
+ "guynarock_r": [
+  [
+   "Boot from the hard-disk boot floppy (the CD in the drive): its menu's first item, then the title",
+   "OK: the game starts from the patched hard disk; the title menu is a picture"
+  ],
+  [
+   "The opening's narration and the first scene, a click after each",
+   "OK: the narration's messages in filler half-width, broken between words and going on from one message to the next on a line (a space between); a full window waits for a click and goes on in a cleared one; a speaker's name (its slot) before a message"
+  ]
  ]
 }

@@ -1811,6 +1811,74 @@ def active_halo_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def sgs21_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speaker names", "item": "menu items", "label": "program strings",
+             "console": "program console lines"}
+    out = ["# %s%s (Sogna, SGS21)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Sogna's `%s` (protected mode): the scripts (`*.WIN`) are files in `SGS.DAT` (a directory of "
+            "32-byte entries, most files LZ-compressed); a script is ops, each a byte and its operands (the "
+            "formats read off the program's own routines), and the ops that go somewhere hold a place in the "
+            "script.  The patcher lays a changed script out anew with those places moved, compresses it again "
+            "and puts it at `SGS.DAT`'s end (the archive is mostly pictures and sounds).  `pc98tl/sgs21.py` "
+            "documents the formats, `pc98tl/sgs21_tl.py` the English.  Unchanged files rebuild byte for byte."
+            % cfg["program"], "",
+            "* The program draws ASCII half-width by itself (messages, menus, its dialogs).",
+            "* A message's window breaks its line at the right edge and does not scroll; the patcher breaks the "
+            "English between words (following the column from one message to the next, as the program does) "
+            "and, when the window's rows are full, ends the message there and goes on after a key wait and a "
+            "clear.",
+            "* The game is started from its hard-disk boot floppy's menu, with the CD in the drive "
+            "(`game.json` `boot_fd`, `cd`); the program refuses to start from the hard disk's prompt."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length.  `max_cells` is a line's room in half-width cells (the window's "
+            "width less the indent where a line after the first starts).  `{N03}`-style tokens are a speaker's "
+            "name (an `n` string) drawn at that place: keep them.  `{CLR}` clears the window, `{W}` is a "
+            "mark the program skips; `\\n` forces a new line.  A script may take 65535 bytes; a longer build "
+            "is refused and names its strings.",
+            "* Speaker names (`n` ids): at most 63 bytes (cut past it and reported); `max_cells` the Japanese's "
+            "width, past it reported (a message's text goes on right after the name).",
+            "* Menu items (`i` ids): at most 81 bytes (cut and reported); `max_cells` the menu's widest Japanese "
+            "item, past it reported (the box grows with its longest item).",
+            "* Program strings (`l` ids, its dialogs) and console lines (`c` ids, printed before the game): in "
+            "place, `max_cells` the room in bytes (a letter one, a full-width character two); past it cut and "
+            "reported.  The dialogs' YES / NO line keeps its two words where the Japanese has them (the "
+            "mouse's places are fixed).",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else "
+            "as `?`.  `\\` and `~` are written `/` and `-`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title menu).",
+            "* The boot floppy's install menu (`INSMENU`), which is not part of the game's disk."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2331,8 +2399,9 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") == "aaru":
-            out = aaru_notes(name, cfg, doc, adult, clear, tests, extra)
+        if cfg.get("encoding") in ("aaru", "sgs21"):
+            out = (aaru_notes if cfg["encoding"] == "aaru" else sgs21_notes)(
+                name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

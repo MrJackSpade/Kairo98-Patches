@@ -2415,5 +2415,31 @@
    "url": "https://vndb.org/v9159",
    "source": "VNDB"
   }
+ ],
+ "Sogna.zip/Viper F-40": [
+  {
+   "label": "This repo: games/viper_f_40 (patcher working, machine translation in progress)",
+   "url": "../games/viper_f_40/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v977",
+   "url": "https://vndb.org/v977",
+   "source": "VNDB"
+  }
+ ],
+ "Sogna.zip/Guynarock R": [
+  {
+   "label": "This repo: games/guynarock_r (patcher working, machine translation in progress)",
+   "url": "../games/guynarock_r/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v14947",
+   "url": "https://vndb.org/v14947",
+   "source": "VNDB"
+  }
  ]
 }

@@ -1,0 +1,6046 @@
+{
+ "source_image_sha256": "d289a1c4a08bd381e5226b92fa79e583657c420d9bce49dbceca3e4b8fcaed76",
+ "strings": [
+  {
+   "id": "l00001",
+   "kind": "label",
+   "jp": "ゲームを終了します。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:08e3e"
+   ],
+   "max_cells": 20,
+   "note": "a dialog's line of the program's: its room in bytes (a letter one, a full-width character two)"
+  },
+  {
+   "id": "l00002",
+   "kind": "label",
+   "jp": "メニューへ戻ります。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:08e53"
+   ],
+   "max_cells": 20,
+   "note": "a dialog's line of the program's: its room in bytes (a letter one, a full-width character two)"
+  },
+  {
+   "id": "l00003",
+   "kind": "label",
+   "jp": "Data1を読み込みます。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:08e68"
+   ],
+   "max_cells": 21,
+   "note": "a dialog's line of the program's: its room in bytes (a letter one, a full-width character two)"
+  },
+  {
+   "id": "l00004",
+   "kind": "label",
+   "jp": "Data1に保存します。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:08e7e"
+   ],
+   "max_cells": 19,
+   "note": "a dialog's line of the program's: its room in bytes (a letter one, a full-width character two)"
+  },
+  {
+   "id": "l00005",
+   "kind": "label",
+   "jp": "ＹＥＳ／ ＮＯ ",
+   "en": "",
+   "refs": [
+    "SGS21.COM:08e92"
+   ],
+   "max_cells": 14,
+   "note": "a dialog's line of the program's: its room in bytes (a letter one, a full-width character two)"
+  },
+  {
+   "id": "c00001",
+   "kind": "console",
+   "jp": "起動ディスクで起動して下さい。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:0083e"
+   ],
+   "max_cells": 30,
+   "note": "a line the program prints before the game: its room in bytes"
+  },
+  {
+   "id": "c00002",
+   "kind": "console",
+   "jp": "メモリーが不足しました。",
+   "en": "",
+   "refs": [
+    "SGS21.COM:0085f"
+   ],
+   "max_cells": 24,
+   "note": "a line the program prints before the game: its room in bytes"
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "【　エリー　】",
+   "en": "",
+   "refs": [
+    "START.WIN:007d",
+    "GRR0.WIN:0029",
+    "MOVE.WIN:0005",
+    "GRR1.WIN:0029",
+    "GRR2.WIN:0029",
+    "GRR3.WIN:0029",
+    "GRR4.WIN:0029"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "【　メグ　　】",
+   "en": "",
+   "refs": [
+    "START.WIN:008e",
+    "GRR0.WIN:003a",
+    "MOVE.WIN:0016",
+    "GRR1.WIN:003a",
+    "GRR2.WIN:003a",
+    "GRR3.WIN:003a",
+    "GRR4.WIN:003a"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "【　レミ　　】",
+   "en": "",
+   "refs": [
+    "START.WIN:009f",
+    "GRR0.WIN:004b",
+    "MOVE.WIN:0027",
+    "GRR1.WIN:004b",
+    "GRR2.WIN:004b",
+    "GRR3.WIN:004b",
+    "GRR4.WIN:004b"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "【　ルイ　　】",
+   "en": "",
+   "refs": [
+    "START.WIN:00b0",
+    "GRR0.WIN:005c",
+    "MOVE.WIN:0038",
+    "GRR1.WIN:005c",
+    "GRR2.WIN:005c",
+    "GRR3.WIN:005c",
+    "GRR4.WIN:005c"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "【　イオ　　】",
+   "en": "",
+   "refs": [
+    "START.WIN:00c1",
+    "GRR0.WIN:006d",
+    "MOVE.WIN:0049",
+    "GRR1.WIN:006d",
+    "GRR2.WIN:006d",
+    "GRR3.WIN:006d",
+    "GRR4.WIN:006d"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "【ヴァイカル】",
+   "en": "",
+   "refs": [
+    "START.WIN:00d2",
+    "GRR0.WIN:007e",
+    "MOVE.WIN:005a",
+    "GRR1.WIN:007e",
+    "GRR2.WIN:007e",
+    "GRR3.WIN:007e",
+    "GRR4.WIN:007e"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "n00007",
+   "kind": "name",
+   "jp": "【　長官　　】",
+   "en": "",
+   "refs": [
+    "START.WIN:00e3",
+    "GRR0.WIN:008f",
+    "MOVE.WIN:006b",
+    "GRR1.WIN:008f",
+    "GRR2.WIN:008f",
+    "GRR3.WIN:008f",
+    "GRR4.WIN:008f"
+   ],
+   "max_cells": 14,
+   "note": "a slot's text (a speaker's name, `{N..}` in a message): at most 63 bytes"
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "Track No. 　　　　曲タイトル",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0523"
+   ],
+   "max_cells": 80
+  },
+  {
+   "id": "i00001",
+   "kind": "item",
+   "jp": "　２　　ＳＰＡＣＥ　ＴＯＲＮＡＤＯ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0548"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00002",
+   "kind": "item",
+   "jp": "　３　　ＲＯＹＡＬ　ＳＴＲＥＴＣＨ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:056b"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00003",
+   "kind": "item",
+   "jp": "　４　　ＤＥＡＴＨＬＡＫＥ　ＤＲＩＶＥ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:058e"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00004",
+   "kind": "item",
+   "jp": "　５　　ＭＩＤＮＩＧＨＴ　ＳＬＡＹＥＲ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:05b5"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00005",
+   "kind": "item",
+   "jp": "　６　　ＤＡＮＧＥＲＯＵＳ　ＤＲＥＡＭ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:05dc"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00006",
+   "kind": "item",
+   "jp": "　７　　ＤＥＳＴＩＮＹ　ＨＡＭＭＥＲ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0603"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00007",
+   "kind": "item",
+   "jp": "　８　　ＭＩＳＴＥＲ　ＰＥＲＦＥＣＴ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0628"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00008",
+   "kind": "item",
+   "jp": "　９　　ＢＡＴＴＬＥ　ＦＩＥＬＤ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:064d"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00009",
+   "kind": "item",
+   "jp": "１０　　ＳＴＲＡＮＧＬＥ　ＨＯＬＤ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:066e"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00010",
+   "kind": "item",
+   "jp": "１１  　ＴＡＫＥ　ＴＨＥ　ＤＲＥＡＭ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0691"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00011",
+   "kind": "item",
+   "jp": "１２　　ＰＯＷＥＲ　ＦＩＧＨＴＥＲ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:06b6"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00012",
+   "kind": "item",
+   "jp": "１３　　ＨＥＡＶＥＮＳ　ＨＯＬＤ",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:06d9"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00013",
+   "kind": "item",
+   "jp": "　　　　　　メニューへ戻る",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:06fa"
+   ],
+   "max_cells": 38,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "No.　　サブタイトル",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:07cd"
+   ],
+   "max_cells": 80
+  },
+  {
+   "id": "i00014",
+   "kind": "item",
+   "jp": "　１　　ステーション",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:07e9"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00015",
+   "kind": "item",
+   "jp": "　２　　漂流船",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:07fe"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00016",
+   "kind": "item",
+   "jp": "　３　　謎の敵",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:080d"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00017",
+   "kind": "item",
+   "jp": "　４　　敵襲",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:081c"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00018",
+   "kind": "item",
+   "jp": "　５　　脱出",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0829"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00019",
+   "kind": "item",
+   "jp": "　６　　VICAL",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0836"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00020",
+   "kind": "item",
+   "jp": "　７　　FIGHTER",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0844"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00021",
+   "kind": "item",
+   "jp": "　８　　VIOLENCE WIND",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0854"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00022",
+   "kind": "item",
+   "jp": "　９　　BATTLE FORMATION",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:086a"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00023",
+   "kind": "item",
+   "jp": "１０  　記憶",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0883"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00024",
+   "kind": "item",
+   "jp": "　　　　メニューへ戻る",
+   "en": "",
+   "refs": [
+    "MAIN.WIN:0890"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "　西暦２０９０年。人類はその活動の場を宇宙に求めるようになり、数多くの外惑星との交流が始まった。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0239"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "が、それに伴い外惑星人による多種多様な犯罪や事件が増大して行きその対策として地球の衛星軌道上に防衛ステーションが設置された。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:029b"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "そこには、あらゆる事態に対応出来うる様巨大な万能戦闘機械が配備されていた。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0319"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "{N01}ふう・・・",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:06c0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "{N02}お帰り、エリー。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:07b4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "{N02}どうだった？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:08a8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "{N01}特に異常無いわ、いつも通りよ。どこまで行っても暗い宇宙が拡がってるだけ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:090b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "{N02}そうか、そりゃ良かった。何も無いのが一番いいんだよ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0991"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "{N01}そうね。本当はあたし達が必要無くなるのが一番いいんでしょうけどね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0a44"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "{N02}ま、理想としてはそうだけどさ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0ae1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00025",
+   "kind": "item",
+   "jp": "まわりを見る",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0b32",
+    "GRR0.WIN:1661",
+    "GRR0.WIN:17d4",
+    "GRR0.WIN:49f4",
+    "GRR0.WIN:504a",
+    "GRR0.WIN:5833",
+    "GRR1.WIN:0287",
+    "GRR1.WIN:0d06",
+    "GRR1.WIN:11ae"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00026",
+   "kind": "item",
+   "jp": "メグと話をする",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0b3f",
+    "GRR0.WIN:5057"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "{N01}（メグがいるわ。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0b78",
+    "GRR0.WIN:5090"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "{N01}（ここは格納庫の中。ガイナロックと呼ばれるあたし達専用の戦闘機が置いてあるわ。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0baa"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "{N01}このマシンもまだ本格的に使うような事態になったことがないからいいけど・・・けっこうすごいマシンなんでしょ？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0c32"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "{N02}そりゃそうさ、地球の技術の結晶だもんな。今のところ戦闘用マシンとしちゃ汎用性も高いし地球で最高のレベルだよな。ま、使わなくて済めばそれに越したことは無いけど。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0e1b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "{N01}そうね。使わないことを祈ってるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0ed3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "{N01}こっちは何か変わったことあった？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0f15"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "{N02}いや、特に無いな。いつも通りさ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0f8f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "{N01}いつも通りということは・・・イオはまだ起きてないのね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:0ff8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "{N02}ああ、いつも通りね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1068"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "{N01}しょうがないわねぇ・・・。あの娘なんでここに配置されたのかしら？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:10d9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "{N02}まあ、あまり役にはたってないな。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1180"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "{N01}そうよねぇ・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:11ba"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "{N02}でもこういう場所ではイオみたいな息抜き的な人間も必要だと思われたんじゃない？あたしらだけだとなんか殺伐とした雰囲気になるかもしれないからさ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:132d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "{N01}うーん・・・そうかもね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:13d3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "{N02}とりあえずエリーは休みなよ。メンテはあたしとルイでやっておくからさ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1437"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "{N01}ええ、お願い。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1512"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00027",
+   "kind": "item",
+   "jp": "移動する",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:153b",
+    "GRR1.WIN:1126"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "{N01}とりあえずメインへ行ってるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1554"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "{N02}ああ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:159d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00028",
+   "kind": "item",
+   "jp": "考える",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:166e"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "{N01}いろんな武器が置いてあるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:16ad"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "{N01}こんなにあっても使うことはあまり無いわね。まあ、無い方がいいんだけど。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:16ee"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "{N01}今ここでやることは無いわね。出ましょう。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1754"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "{N01}今はまだ誰もいないわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:180b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "{N01}ここはあたし達の宇宙ステーションの中枢部。ここから地球へ交信出来るようになってるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:184d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "{N01}ここではステーション全体を把握出来るようにいろんな所に設置されたカメラからの情報が入ってきてるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:18c1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "もっとも・・・各メンバーの部屋までは監視カメラは無いけど。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:193b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00029",
+   "kind": "item",
+   "jp": "隊員の事を考える",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19a0"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00030",
+   "kind": "item",
+   "jp": "エリー",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19c9"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00031",
+   "kind": "item",
+   "jp": "メグ",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19d0"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00032",
+   "kind": "item",
+   "jp": "レミ",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19d5"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00033",
+   "kind": "item",
+   "jp": "ルイ",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19da"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00034",
+   "kind": "item",
+   "jp": "イオ",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:19df"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "{N01}エリー・ロザリオ　　２１歳\n\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1a51"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "あたしのこと。このステーションの中ではみんなに指示を出す立場にあるとはいえ、他のみんなに頼ってしまうことも多いけどね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1a87"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "{N01}メグ・ヴァーミィ　　２２歳\n\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1b1d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "あたしの補佐的なことをやってもらっているわ。機械にも強いから主に通信関係のこととかやってもらってるけど武器も扱えるし、頼りになるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1b53"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "{N01}レミ如月　　　　　　２３歳\n\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1bf7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "ステーション内の医務をやってもらっているわ。一番お姉さんだからあたしから見ると落ちついて見えるわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1c2d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "{N01}ルイ・リベルタ　　　１９歳\n\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1cb1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "メカニックを担当してもらっているわ。仕事は細かい所まできっちりやってくれるからいいんだけど、ちょっと気が弱い所はあるわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1ce7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "{N01}イオ・アイアコス　　１７歳\n\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1d81"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "一番年下の娘。・・・あんまり役にはたってないわね。どうしてここに配置されたのかよくわからないわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1db7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "{N01}さてと・・・いつまでもここにいても仕方ないわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1e35"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "{N03}あら、お帰り。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1f02"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "{N01}ただいま。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1f28"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00035",
+   "kind": "item",
+   "jp": "レミと話をする",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:1f51"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "{N03}毎日パトロールも大変ね。同じことの繰り返しで。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:201d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "{N01}ううん。何にも無い方が平和でいいんだけどね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2065"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "{N03}そうね。あたし達がここにいる必要が無くなればそれに越したことは無いものね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:217a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "{N01}そうね。衛星軌道上のステーションもここだけじゃなくてたくさんあるんでしょ？それ全部無くなっちゃえばいいのにね。そしたらあたし達も地球に戻れるし、防衛費も削減されて税金も安くなるし。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:21e8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "{N03}とたんに現実的な話になるのね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2313"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "{N01}そりゃそうよ。切実な問題よ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:234b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "{N03}まあ・・・実際には一旦始めたことを元に戻すのは相当大変よね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:245a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "{N03}この規模で動いている予算を考えたらそうそう元には戻れないでしょう。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2561"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "{N03}純粋な考えで始めたはずのことなのに動き始めてしまったらそこに絡む欲や利権で目の前のことしか見えなくなってしまう・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:26da"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "{N03}みんなを守るために作られた組織のはずなのに組織が大きくなっていくと今度は組織を守ろうとして逆にみんなに牙を剥きはじめる。どこにでもある話よ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:288f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "{N03}そうならないためにはいろんな人の意見を聞かなきゃいけないんだけど・・・それすら拒絶してしまうのが現実ね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2a18"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "{N01}う～ん・・・ごめん・・・話ムズカシくてわかんないや。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2a9a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "{N03}そうね・・・ちょっと脱線しちゃったかも。そうそう、そういえばエリーはあの話聞いたことある？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2b65"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "{N01}なに、あの話って？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2be3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "{N03}極秘事項なんだけど・・・以前から噂されてた人工生命体がもうどこかに実戦配備されてるらしいって・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2d02"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "{N01}ほんと？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2d80"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "{N03}らしいのよ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2dc5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "{N01}人工生命体かぁ・・・どんなんだろ？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2df5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "{N03}ひょっとしてフランケンシュタインみたいなの想像してない？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2ea0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "{N01}・・・ちょっとね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2ef2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "{N03}見た目には普通の人間と変わらないらしいわよ。今の技術なら不可能では無いわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:2fc7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "{N01}ふーん・・・でも大丈夫なのかなぁ。そんなことして？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:302b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "{N03}何が？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3090"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "{N01}だってさ、クローン技術が出来た時にも問題になったじゃない。生命の尊厳がなんとかって。でも今度はイチから作っちゃうんだもんね・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:30b0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "{N03}そうね・・・クローンの場合は既に存在する人間を複製するという点で人道的に許されることではないという判断で禁止になったけど・・・",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3297"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "{N03}今回の件は全く新しい生命なわけだから普通に子供を生むのと同じだということらしいわね。考え方としては。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:33fc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "{N01}ふーん・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:347a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "{N03}複製するのはだめだけど誕生させるのはＯＫってことね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3535"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "{N01}どっちも同じようなもんだと思うけどね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3583"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "{N03}そうね。ま、物は言いようだってこと。いずれの場合も本来の生命の誕生の仕方とは違ってるから・・・認めたくはないわね。個人的には。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3708"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "{N01}・・・ねぇねぇレミ・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:37aa"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "{N03}何？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:37fa"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "{N01}常々不思議に思ってたんだけどさ・・・何でこのステーションって女ばっかりなの？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3816"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "{N03}ふふ・・・何？誰か恋しい人でもいるの？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:389c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "{N01}そういうわけじゃないけど・・・やっぱ不思議じゃない普通どこの部署でも女性の方が少ないでしょ？なのにここだけ女だらけっていうのもねぇ・・・何か理由があるのかな？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:395b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "{N03}そうね・・・それはきっとここが防衛ステーションだからじゃないのかしら。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3a1e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "{N01}何？どういうこと？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3b2d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "{N03}男性と女性の違いって何だと思う？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3bcc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "{N01}何って言われても・・・そりゃいろいろあるだろうけど・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3c06"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "{N03}たとえば体力的なものとかは今の時代どれだけでも技術的にサポートできるシステムがあるわ。ドクター岬が開発したバイオローダーがあれば女性でも男性以上の力を発揮出来るもの。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3def"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "{N01}アンダースーツに使ってるやつ？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3eaf"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "{N03}そう。でも、本能の部分までは技術的にもどうしようもないの。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3f70"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "{N01}本能？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3fc4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "{N03}そう・・・人間の本能・・・中でも防衛本能は私たち女性の方が強いわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:3ff1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "{N03}さっきの話と通ずる話になるけど、それは子供を生んで育てるという女性だけの生態に基づくものでしょうけど・・・種の保存を託されてるわけだからね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4271"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "{N03}自分を犠牲にしてでも子供を守ろうとする気持ちは親になってみないとわからないかもしれないけど。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4406"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "{N01}うーん・・・そっかぁ・・・そうよねぇ・・。子供かぁ・・・なんだか全然そんな感覚無いなぁ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:447c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "{N03}そりゃあ・・・今はまだ実感は出来ないでしょうけどね、そのうちわかるわよ・・・きっと。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4537"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "{N01}そうかなぁ・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4639"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "{N03}子供が出来ればきっと生命の尊さがわかるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:46dc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "{N01}子供？あたしが？全っ然考えられないなぁ、そんなの。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4720"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "{N03}まあ、女だらけの所じゃ考えられなくても当然かもね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:47fd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "{N01}さてと・・・それじゃあたし行くわね。あとでメインルームに集合ね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4853"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "{N03}ええ、またあとで。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:48d6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "{N03}どうしたの？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4971"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "{N01}あ、ううん別に。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4997"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "{N01}ここは格納庫だわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4a2b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "{N01}ルイがメンテナンスしてるわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4a5d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00036",
+   "kind": "item",
+   "jp": "ルイと話をする",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4ad0"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "{N01}ルイ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4b09"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "{N04}あ、エリー。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4b83"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "{N01}どう？調子は。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4bb3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "{N04}機関は全然問題無いです。ちょっとオイルが汚れてたんで補充しておきましたけど。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4c62"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "{N01}オイル汚れてた？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4cd2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "{N04}気にする程じゃ無いですよ。回し気味に使ってれば汚れるのは当然ですから。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4d8f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "{N01}・・・うーん、機械のことはよくわからないから・・・任せるわ。よろしくね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4df9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "{N04}はい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4e6e",
+    "GRR0.WIN:6346",
+    "GRR1.WIN:0585",
+    "GRR1.WIN:0c81"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "{N01}メグは？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4e98"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "{N04}さっき出ていきましたよ。もうあたし１人で充分ですから。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4f0d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "{N01}そう・・・じゃあ、メンテの方お願いね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4f5d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "{N04}はーい、まかせといて下さい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:4fd4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "{N01}（イオはまだいないわね。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:50c2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "{N01}メグ、様子はどう？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5101"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "{N02}別に異常はないよ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5164"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "{N01}そう。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5190"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "{N01}イオはまだ来てないのね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:51b6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "{N02}ああ、ほっときゃいつまでも寝てるだろ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5241"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "{N01}しょうがないなぁ。起こしに行くか。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5281"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "{N01}イオ、起きなさい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:52f0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "{N05}うー・・・まだ眠い・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:532d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "{N01}何言ってんの。もう時間よ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:535f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "{N05}だってぇ・・・眠いんだもん・・・",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:538f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "{N01}また夜更かししてたの？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:53c5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "{N05}だってぇ・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:53f1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "{N01}だってじゃないでしょ？起きなさい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5417"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00037",
+   "kind": "item",
+   "jp": "イオを見る",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5506"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00038",
+   "kind": "item",
+   "jp": "イオの事を考える",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5511"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00039",
+   "kind": "item",
+   "jp": "イオと話をする",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5522"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "{N01}（やっと起きたわね。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:555b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "{N01}（まだ眠そうだけど・・・。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5591"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "{N01}（よくあんなに眠れるもんだわ。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:55d2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "{N01}（それにしてもこの娘がここに配置されたのは謎よね。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5612"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "{N01}目が覚めた？\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5690"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "{N05}ふわぁーい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5718"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "{N01}早くメインルームに来るのよ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5746"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "{N05}あーい・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:57af"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00040",
+   "kind": "item",
+   "jp": "話をする",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5840",
+    "GRR0.WIN:5e46",
+    "GRR1.WIN:02a9",
+    "GRR1.WIN:0d2c",
+    "GRR1.WIN:11bb"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "{N01}もう全員揃っているわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5873"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "{N01}メグはレーダーの監視をしているわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:58ab"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "{N01}ルイ、メンテは終わった？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:58f2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "{N04}ええ、バッチリ仕上げときましたから安心して乗って下さい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5999"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "{N01}そう。ありがとう。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:59eb"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "{N05}あー、何もすること無いからまた寝てよっかなぁ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5ac4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "{N01}何言ってるの。ちゃんと仕事しなさい。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5b0c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "{N05}だって退屈なんだもん。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5b87"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "{N01}退屈な方がいいでしょ。平和な証拠なんだからさ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5bc1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "{N05}そりゃそうだけどさぁ・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5c36"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "{N02}エリー、ちょっと。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5ceb"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "{N01}どうしたの？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5d15"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "{N02}レーダーに反応があるんだけど・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5d37"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "{N01}スクリーンに写して。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5d71"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00041",
+   "kind": "item",
+   "jp": "スクリーンを見る",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5e35"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "{N01}（ずいぶん古いタイプの宇宙船ね・・・。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5e79"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "{N01}（このぶんじゃ・・・生存者なんていないわよねぇ・・。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5ec1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "{N01}古いタイプの宇宙船ね・・・。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5f1c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "{N02}ボロボロだな・・・",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5f4e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "{N03}難破して漂流・・・っていうパターンかしらね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5f76"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "{N01}あまり見ない形ね・・・。デザイン的には多分地球の物だと思うけど・・・だいぶ改造してるみたいね。・・・メグ、船体の形式から年代と所有者を割り出せる？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:5fc2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "{N02}やってみる。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:606a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "{N01}さて・・・それじゃ一応探査に行ってみましょう。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6096"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "{N03}そうね、何かわかるかもしれないわね。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:60da"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "{N01}さてと・・・",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:611e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00042",
+   "kind": "item",
+   "jp": "メグを連れていく",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6145"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00043",
+   "kind": "item",
+   "jp": "レミを連れていく",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6156"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00044",
+   "kind": "item",
+   "jp": "ルイを連れていく",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6167"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "{N01}（メグには船のデータを調べてもらわなきゃいけないし・・・）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:61be"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "{N01}（もしも生存者がいた時のことを考えてレミには医務室の準備をしててもらった方がいいわね。ま・・・あの状態じゃ絶望的だとは思うけど・・。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6216"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "{N01}（機械のトラブルがあるといけないからルイには一緒に来てもらいましょう。）",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:62ba"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "{N01}ルイ、一緒に来てくれる？",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6318"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "{N05}あたしも行く！",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6362"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "{N01}そうねぇ・・・。まあ・・・人手は多いに越したことはないか・・。でも遊びに行くんじゃないのよ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6386"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "{N05}わかってるよぉ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:63f8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "{N01}あの様子じゃ生存者は絶望だと思うけど・・・一応行ってみるわ。メグは分析を続けて。レミはもしも生存者がいた場合に備えて医療施設を整えておいて。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:642e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "{N03}わかったわ。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:64d0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "{N01}じゃあ、イオ、ルイ、行くわよ。\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:64f2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "{N04}はい。\n",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6526"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "{N05}オッケー。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6542"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "{N04}減圧開始します。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:6830"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "・・・スリー・・・ツー・・・ワン・・・ハッチ開きます。",
+   "en": "",
+   "refs": [
+    "GRR0.WIN:686b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "{N01}どこに行こうかしら・・。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:01ae"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "{N01}武器を持ってすぐにイオを助けにいかなきゃ。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:01ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "{N01}とりあえずメインルームへ行ってみましょう。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:0408"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "{N01}レミは医務室にいるはずよね。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:0456"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "{N01}行ってみましょう。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:0488"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "{N01}武器庫を見ておこうかしら。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:04be"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "{N01}格納庫に行ってみましょう。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:04fc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "{N01}急いで武器庫にいかなきゃ。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:053a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "{N01}急ぎましょう。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:057c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "{N01}今はメインルームへ急がなきゃ。",
+   "en": "",
+   "refs": [
+    "MOVE.WIN:05a3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00045",
+   "kind": "item",
+   "jp": "生存者について考える",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0294"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "{N01}（船内はボロボロね・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:02dc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "{N01}（しっかし・・・趣味悪い内装ね。地球人のセンスとは思えないわ・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0318"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "{N01}（この分じゃ生存者は期待しない方がよさそうね・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0383"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "{N01}（最低限の環境であれば可能性はゼロではないけど・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:03d9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "{N05}なんか変なカベ・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:047f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "{N04}いますかね・・・生存者。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:04af"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "{N01}そうね・・・可能性は低いけど・・・ゼロでは無いかもしれないわね。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:04dd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "{N01}ルイ、船内の酸素・・・それから気圧の状況を調べて。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:053d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "{N04}・・・・気圧は平常・・・船体からの空気の漏れは無いようです。酸素も必要量は確保されてます。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:05cf"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "{N01}そう・・・最低限、人が活動するのは可能な環境だってことね。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0649"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "{N05}じゃ、こんなうっとおしいの取っちゃっていい？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:06e2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "{N01}ええ、大丈夫でしょう。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0773"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "{N05}よかったー。もう暑苦しくって。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0806"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "{N01}とは言っても・・・この有り様じゃ・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0a3d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "{N05}誰もいないよねぇ・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0b30"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "{N01}念のため中を調べましょう。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0bae"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00046",
+   "kind": "item",
+   "jp": "この宇宙船について考える",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0d13"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "{N01}（ここがブリッジね・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0d5f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "{N01}（人がいた形跡はなさそうね。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0d9b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "{N01}（全く誰かがいた形跡も無いっていうのも何か妙よね・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0dde"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "{N01}（使われてなかったのかしら？この船。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0e36"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "{N01}（使われてないのに宇宙空間にあるのも不思議だし・・・一体何なんだろ。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0e7c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "{N01}・・・誰もいないわ・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0ee7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "{N05}ほんとだ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0f15"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "{N04}でも変ですね・・・誰も乗ってない船が勝手に漂流するわけは無いのに・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0f35"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "{N01}そうね・・・捨てられた・・・ってわけでも無いでしょうし・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0f99"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "{N04}何かに襲われた？・・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:0fed"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "{N01}だとしたら多少なりとも争ったような形跡があると思うけど・・・何も残ってないっていうのはおかしいわ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:101b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "{N04}そうですね・・・。他の所になにかあるかもしれないですね。移動してみますか。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1093"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "{N01}そうね。そうしましょう。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:10f3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "{N01}（ここは何かしら？）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:11ee"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "{N01}（ドアに電気が通じて無いから開きにくいわね・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1222"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "{N01}ここは？・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:131c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "{N05}何の部屋だろ？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1344"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "{N04}暗くてよく見えない・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:13b1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "{N01}イオ、ライト持って来てたわよね？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1488"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "{N05}うん。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1519"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "{N04}きゃーっ！！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1612",
+    "GRR2.WIN:0a25"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "{N05}うわ・・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:16fb"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "{N01}・・・ひどいわね・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:171d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "{N05}いっぱいいるね・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:17b1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "{N01}こんなに沢山の人が・・・。見たところ体格的にも似た感じね。・・・人体実験でもやらかしたのかしら・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:17e1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "{N05}奥も見てくるね。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:18c2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "{N01}気をつけるのよ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:18ec"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "{N05}はーい。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1958"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "{N01}ルイ、大丈夫？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1a1e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "{N04}うん・・・ごめんなさい・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1a55"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "{N01}仕方ないわ。決して気持ちのいいものじゃ無いもの。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1b0a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "{N04}・・・・人間って・・・死んじゃうとあんな風になっちゃうんだ・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1bfc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "{N01}・・・そうね・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1c58"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "{N04}エリーもイオも・・・怖くないの？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1cd5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "{N01}え？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1d0f",
+    "GRR1.WIN:2ba8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "{N04}あれだけの死体を見て怖くならないの？・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1daf"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "{N04}あたしはダメ・・・自分も死んじゃったらあんな風にって思ったら・・・怖くて・・・足がすくんじゃって・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1e1c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "{N01}・・・・そうね・・・恐くないって言ったらウソになるかもしれないけど・・・でも、あんまり考えたことは無いわ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:1f92"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "{N01}はい。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2053",
+    "GRR1.WIN:3ad6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "{N02}分析が出来たよ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2073"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "{N01}そう。教えて。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:20c0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "{N02}その船は約８０年位前のもんだね。市場に出回ったのは６８隻。その内まだ廃棄登録されていないのが３隻。・・・その３隻の所有者も出てる。データ送ろうか？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:227c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "{N01}お願い。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2328",
+    "GRR1.WIN:30da"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "{N01}３人・・・この死骸の中にこの船の所有者がいるかも。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:291b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "{N01}これだけの死骸の中から探そうっていうのも気が遠くなりそうだけど・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2963"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00047",
+   "kind": "item",
+   "jp": "データを照合する",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2a2e"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00048",
+   "kind": "item",
+   "jp": "マルク・スウェーズ",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2a5f"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00049",
+   "kind": "item",
+   "jp": "ヴァイカル・ロスモンド",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2a72"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "i00050",
+   "kind": "item",
+   "jp": "ケイン・ホーミー",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2a89"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "{N01}一致したわ・・・・。よくこんなにすぐに見つかったわね。この骨格の持ち主は・・・ヴァイカル・ロスモンド・・・。船の持ち主自身も人体実験されたということ？・・・一体誰に・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2bc2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "{N01}これじゃないわね・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2cd1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "{N01}メグ。この船の持ち主がわかったわ。持ち主はヴァイカル・ロスモンド。・・・今はもう亡くなってるわ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2e6a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "{N02}そっか・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2efd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "{N01}ただ・・・死因に不審な所があるの。ヴァイカル・ロスモンドの素性を調べてくれる？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:2f3e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "{N02}わかった、すぐ出す。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3091"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "・・・さて・・・それじゃ他の死骸の骨格も採取しておきましょう。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:31ab"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "{N01}！？\n",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:32f2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "{N04}どうしたの？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3342"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "{N01}データがあるですって？・・・そんなはずは・・・機械のミスかしら・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3364"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "{N01}そんな・・・バカな・・・まさか・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3440"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00051",
+   "kind": "item",
+   "jp": "ヴァイカルのデータと照合する",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3481"
+   ],
+   "max_cells": 28,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "{N01}そんな・・・バカな・・・。体格が似てるからって・・・骨格のデータが同じわけない・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:355b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "{N01}・・・・・・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:36f0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "{N04}どういうことなんですか？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3757"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "{N01}・・・・クローンね・・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:37ac"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "{N04}クローン？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3844"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "{N01}おそらくこの死骸全部・・・ヴァイカルのクローンだわ・・・でもこれがヴァイカルの仕業だとしたら・・・自分で自分のクローンを・・・何のために？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:39c3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "{N02}ヴァイカルのことについてわかった。生物学者らしい。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3c76"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "{N01}生物学者？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3cc2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "{N02}ところが、危険思想の持ち主だってんで学会から追放されたような奴らしい。それ以来消息不明だったらしいんだが・・・宇宙でのたれ死にしてたってことかな。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3ce2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "{N01}いや・・・さっきの報告は訂正するわ・・・。ヴァイカルは死んでないかもしれない。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3e26"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "{N02}どういうことだ？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3e8a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "{N01}死亡を確認したのは・・・多分クローン。・・・しかも数多くのね。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3eb0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "{N02}クローン？そんなの法律で禁止されてるはずだが？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3f04"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "{N01}危険思想の持ち主だって言ってたでしょう・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3f48"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "{N02}なるほどね・・・生物学者で危険思想の持ち主っていうのはそういうことか・・技術がありゃ出来ることだもんな。法律なんか意味をなさないよな。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:3f8c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "{N01}とりあえずもう少し調べて見るわ。まだ何か見つかるかも知れないし。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4028"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "{N02}わかった、気をつけてな。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:407e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "{N04}エリー・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4138"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "{N01}もう少し調べてみましょう。何か見つかるかもしれない。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:419b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "{N04}う・・うん。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:42b6",
+    "GRR1.WIN:4a52"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "{N05}きゃーーー！！\n",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:42dc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "{N01}イオ！！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:436d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "{N01}イオ！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:441a",
+    "GRR3.WIN:4f7f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "{N04}な・・何あれ！？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4436"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "{N01}くっ！・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:445c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "{N04}きゃーっ！！\n",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4596"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "{N01}ルイ！！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4644"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "{N01}だめだわ！こんなのじゃ歯が立たない・・・。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:478d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "{N04}エリー・・・",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:480f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "{N01}武器を取りに戻るのよ！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:488d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "{N04}でも・・・イオが！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:48f6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "{N01}いずれにしろこのままじゃ何も出来やしない。一旦戻ってイオを助けに来るのよ。",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:49c9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "{N01}メグ！聞こえる！？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4b22"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "{N02}どうした！？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4b4a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "{N01}未確認の生物に襲われたわ！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4b6c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "{N02}何！？",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4b9c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "{N01}イオが捕まってるの！武器を用意して！！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4bb8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "{N02}わかった！！",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4bf4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "{N01}（イオ・・・必ず助けに行くわ。待ってて・・・。）",
+   "en": "",
+   "refs": [
+    "GRR1.WIN:4c6d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "{N03}エリー、ルイ、大丈夫！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:03fd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "{N01}あたしは大丈夫。ルイを休ませてあげて。ショックが強かったみたいだから。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:042f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "{N03}わかったわ・・。エリーは？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0564"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "{N01}イオがまだ向こうに残ってるの。助けに行くわ。メグは？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0598"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "{N03}もう武器庫に行ってるわ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0619"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "{N01}わかったわ！ルイをお願い。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:064b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "{N01}メグ！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:06c9",
+    "GRR2.WIN:3ee7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "{N02}エリー、武器は用意しておいた！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:072a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "{N01}ありがとう！メグ、一緒に来てちょうだい！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0762"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "{N02}もちろん、そのつもりさ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:07d7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "{N01}移動してる！？・・・何で？・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0885"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "{N02}自力で動けるのか！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:08bb"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "{N01}あの船の動きを止めなきゃ！ガイナロックで出るわ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:08e5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "{N02}使うのか！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:093d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "{N01}あいつがヴァイカルだとしたらこのまま地球に行かせるわけにはいかないわ。それにイオも乗ってるのよ！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:095f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "{N03}何？\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0aa2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "{N04}ど・・どうしたの？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0ae8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "{N03}ちょっと見て来るわ・・・。\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0b5c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "{N04}あ・・・あたしも行く。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0bc6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "{N03}ルイは休んでた方がいいわ。\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0c3a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "{N04}でも・・・１人だと恐いから・・・。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0cc0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "{N03}わかったわ、一緒に行きましょ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0d47"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "{N02}何か・・・被弾したのか？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0e69"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "{N01}コンピューターで調べてみましょう。空気漏れしてたらまずいわ。封鎖しなきゃ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:0ee9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00052",
+   "kind": "item",
+   "jp": "コンピュータで解析",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:103a"
+   ],
+   "max_cells": 18,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "{N01}ステーション外部に破損・・・何か打ち込まれたみたいね・・・外板に損傷があるけど自動修復してる。空気の漏れは無いわ。とりあえず一安心ね。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:107b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00053",
+   "kind": "item",
+   "jp": "メグと話す",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:111c"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "{N02}ヴァイカルがこっちを攻撃していったってことか？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1149"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "{N01}おそらくね。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:118d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "{N02}何が打ち込まれたんだ？\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:11bc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "{N01}ちょっと待って。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:124b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "{N01}！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1372",
+    "GRR3.WIN:2c5b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "{N02}どうしたんだ！？\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1445"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "{N01}熱源体が侵入してる！・・・・何かの生物・・・まさかさっきの！？\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1482"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "これは？・・ルイとレミ・・・ダメ！そっちに行っちゃっ！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:14da"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "{N03}こっちよね、音がしたのは・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:15ba"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "{N01}レミ！ルイ！危ないわ！そっちにいっちゃダメ！！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1652"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "{N03}エリー！？\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1711"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "{N04}危ないって？・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1760"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "{N03}！？\n{N04}きゃーーーーっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:180b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "{N01}レミ！ルイ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:18cd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "{N03}こっ・・・この・・・\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1a54"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "{N04}いやーっ！！離してーっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1c69"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "{N01}レミ！ルイ！！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1ccc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "{N03}エリー！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1d13"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "{N04}エリー！！助けてーっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1d94"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "{N01}この・・・バケモノめ！くらえ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:1e40"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "{N01}なんで・・・なんで効かないのよぉっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2011"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "{N02}エリーどいて！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:20b6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "レミ、足どけろ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2109"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "{N02}！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2302"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "{N01}メグ！！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2542"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "{N02}あぅっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2560"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "{N04}うぅっ・・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:25d8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "んぐぅっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2620"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "{N01}ルイーっ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:273c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "{N03}いやっ！・・・あぁっ！！・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:27be"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "{N01}レミ！！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2871"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "{N02}くそー！エリー！逃げるんだ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:290a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "{N01}だって・・・ルイとレミが！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:29ae"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "{N02}奴等にはこの武器でも効かない！脱出するんだ！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2a37"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "{N01}だって！・・・！\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2aa0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "{N02}このまま全員やられる気か！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2b17"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "{N01}・・・・・・\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2b4d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "{N02}行くんだ！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2c16"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "{N02}早くエンジンを！あたしは減圧する！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2d3d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "{N01}わ・・わかったわ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:2e3b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "{N01}メグ！何をしたの！？メグ！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:38c5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "{N02}ウォームアップに９０秒はかかる！その間あたしが奴等を引きつける！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:39bd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "{N01}だ・・だめよ、そんなの！だったらあたしもここで戦う！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3a2c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "{N02}ここでみんなやられちまったら誰がイオを助けに行くんだ！？",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3b96"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "{N01}でも！・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3c2f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "{N02}エリー・・・あんたが行かなきゃいけないんだ・・・頼んだぞ。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3cea"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "{N01}メグ・・・。",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3de0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "{N02}来たか！・・・\n",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3ec2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "{N02}減圧が始まるぞ！！早く！！",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:3f7b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "{N01}・・・・メグ・・・・・・",
+   "en": "",
+   "refs": [
+    "GRR2.WIN:46f3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "{N05}？・・・ん・・あれ？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0556"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "{N06}気がついたようだな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:061d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00054",
+   "kind": "item",
+   "jp": "話す",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0659"
+   ],
+   "max_cells": 4,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "{N05}ここは・・・あんた誰？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0688"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "{N06}口の聞き方を知らない娘だな・・・まあいい、地球人相手に腹を立てていても仕方がない。私の名はヴァイカル。地球の歴史に偉大な一歩を記す科学者だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:06d7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "{N05}科学者？・・・そうは見えないけど・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0787"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "{N06}それはお前らの低い次元の常識で見ているからだ。私はお前らの常識などを遥かに超越した次元の科学者だからな。・・・まあ、お前ごときに理解できんのも無理はないがな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:07e6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "{N05}そんなことどーでもいいからここから出してよ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:089e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "{N06}そうはいかん。人質はおとなしくしておいてもらわんとな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0903"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "{N05}人質？・・・あたしが？やーよそんなの！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:095d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "{N06}お前に選択する権利はない。優れた者が支配する。それが自然の原理だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:09be"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "{N05}優れた者ですって？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0a1a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "{N06}そうだ。・・・私こそがこの地球の支配者となるべき存在なのだ。下衆な人間共は私の支配下で必要な量だけいればいい。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0a65"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "{N05}人間を物みたいに言わないでよ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0af7"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "{N06}物みたいにだと？バカを言うな。人間など物以下だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0b4e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "{N05}な・・なんですって？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0b98"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "{N06}物ならば迷惑にもならんが人間は地球を汚し、資源を食いつぶす害虫だ。多すぎる害虫は駆除しなければならん・・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0be5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "{N05}駆除！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0c6b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "{N06}不必要な人間は駆除し、その後に・・・私のクローン達が地球上に生息する唯一の知的生命体となる。それが地球にとっての理想の姿だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0cac"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "{N05}クローン・・・・あなたの？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0d4c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "{N06}そうだ・・・私は愚かな地球の科学者達に見切りをつけ地球を出た。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0d9f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "{N06}今のような地球の環境の状態ではいずれ生物が住むことが出来ない死の星となる。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0e1a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "{N06}だからこそ私は人間が自分たちの欲のために自然を変えていくのではなく、人間が変わっていくべきだと提案したのだ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0ea1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "{N06}だが愚かな科学者達は生命を弄ぶ行為だとして私を排除しようとした。だから私は奴等に見切りをつけ宇宙へ出ることにしたのだ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0f4a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "{N06}そして、あらゆる実験を繰り返し自らの身体をどのような環境でも生きていけるような理想の生命体として作り上げた。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:0ffd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "{N06}そして出来上がったのがこの身体だ。この形態が生物として最も優れた形態なのだ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:10a6"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "{N05}気持ち悪いかっこして何言ってんのよ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1116"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "{N06}まだ低俗な意識が抜けないらしいな・・・お前等の美意識ではまだ理解することは出来まい。・・・まあいい。お前達女は生かしておいてやる。利用価値があるからな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1173"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "{N05}利用価値？人質で？・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1225"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "{N06}それもある。人質としては力を持たない者が一番いい。お前のような子供が最適だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1276"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "{N05}子供ですって！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:12dc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "{N06}だが、本当に必要なのはお前達の身体だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:134b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "{N05}じ・・じろじろ見ないでよスケベ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:13d0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "{N06}勘違いするな。お前等の醜い身体などに興味は無い。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:140c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "{N05}な・・なんかムカつくわね・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:148d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "{N06}必要なのは・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:14c5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "子供を宿す能力だ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1546"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "{N05}子供？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:156c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "{N06}そう・・・クローンを繰り返すことには欠点がある。遺伝子に手を加えることをしなければ全く同じ個体しか出来上がらない・・・それに手を加えた遺伝子は生命力が弱くなる。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1747"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "{N06}そこで・・・その身体を介し新たな生命として進化させるのだ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:18b8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "{N05}ま・・・まさか・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:190c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "{N06}そう・・・地球の女に子を生ませる。お前の仲間の所にもクローンを送りこんでおいた。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1978"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "{N05}みんなに！？ウソ！！やめて！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1a37"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "{N06}地球の進化の第一歩を記すことになるのだ。その役にたてることを光栄に思ってもらわないとな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1a70"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "{N06}人質の役目が終わったらお前にも協力してもらう。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1b64"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "{N05}いやよ！・・・そんなの絶対にいや！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1bff"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "{N06}言ったはずだ。お前に選択の権利は無い。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1c62"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "{N05}・・・・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1c9e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "{N06}お前を人質として地球の明け渡しを要求する。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1cc0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "{N05}そんなこと・・・するわけないでしょ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1d57"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "{N06}確か・・・「人の命は地球よりも重い」とか言ってたような奴等もいたな・・・。ならばその言葉通りにしてもらおうじゃないか。お前の命と引き替えに・・・エセヒューマニスト共がどういう反応を示すか楽しみだな。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1d95"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "{N05}エリー？・・・\n",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1ee8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "{N06}ん？・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:1f0e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "{N01}待ちなさい！地球にはいかせないわ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:217a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "{N05}エリー！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:220a",
+    "GRR4.WIN:1462"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "{N06}追ってきたか・・・だがお前等に何が出来る？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:222c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "{N01}地球人をなめないでよね。あんたが宇宙をふらふらしてる間に科学は進歩してるのよ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:226c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "{N01}ヴァイカル！イオを返しなさい！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:2770"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "{N01}な・・・何？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:2901"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "{N06}ふっふっふ・・・そうか・・人間もそんな物を造れるようになったか。・・・大した進歩だ・・・が、その程度の物でいい気になられては困るな。お前等ごときが造った物などでは私には遠く及ばんのだ・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:2d66"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "{N01}！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3008",
+    "GRR3.WIN:3cb8"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "{N01}きゃぁっ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:317a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "{N01}う・・・く・・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:34d9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "{N01}な・・何か攻撃を・・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:35af"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00055",
+   "kind": "item",
+   "jp": "ミサイルで攻撃",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:35e2"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "{N06}くっくっく・・・つまらんな。この程度か？もう少し楽しませてくれるかと思ったが・・・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3799"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "{N01}だめ・・・強すぎる・・・・こんなに力に差があって・・・勝てるわけない・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:38e4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "{N06}観念したようだな・・・所詮お前等ごときが私にたてつこうなどと考えても無駄なことだ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3a23"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "{N06}この機械は不必要なので破壊する。その後、お前もあの小娘同様母胎として活用してやろう。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3a8b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "{N06}とどめだ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3b2d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "{N05}エリー！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3c64",
+    "GRR3.WIN:501d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "{N06}！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3d76"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "{N06}おのれ・・・まだ立ち上がる気力があったか！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:3e75"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "{N01}負けられない・・・このまま負けるわけにはいかない・・・あんたの勝手な理屈の犠牲になったルイやレミや・・・メグのために・・。イオを助け出すために・・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:405a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "{N01}負ける・・・もんか！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:42e0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "{N01}うおーーーーーっ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:4477"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "{N01}イオ！どこ！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:481c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "{N01}イオは・・・船体の中心部あたりね！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:4922"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "{N06}おのれ！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:4b25"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "クローン共、阻止しろ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:4bfc"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "{N01}イオ！イオ！どこにいるの！？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:4e2b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "{N01}何？・・・これは？・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:544b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "{N03}どこかに人造人間が配置されてるって話よ。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:5d75"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "{N02}あんたがいかなきゃいけないんだ・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:5e1b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "{N01}そうか・・知ってたんだ、メグは・・。",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:5e93"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "{N06}何だ？・・・これは・・・まさかあの地球人？",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:746a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "{N06}おのれ・・・食らえ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:74aa"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "{N06}！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:7755"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "{N06}馬鹿な・・・たかが地球人に・・・私が負けるはずがない！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:7912"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "{N06}負けるはずが無いんだ！！",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:7a2c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "{N06}馬鹿な・・・そんなバカな！こんな・・・こんなことでは死なん！・・絶対に・・・私は・・・",
+   "en": "",
+   "refs": [
+    "GRR3.WIN:7f0e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "{N01}本当ですか？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0258"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "{N07}ああ、３人共命に別状は無いということだ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:027a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "{N01}そうですか・・・分かりました。至急帰還します。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:036d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "{N01}良かった・・・みんな無事で・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:04c3"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "i00056",
+   "kind": "item",
+   "jp": "長官と話す",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0590"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: the menu's widest Japanese item (at most 81 bytes)"
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "{N07}おかえり・・・大変だったようだな。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:05c5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "{N01}長官・・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:05fd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "{N07}まず何から話したらいいかな・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:061d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "{N01}みんなは・・・本当に無事だったんですか？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:065d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "{N07}無事だ・・・とはいえないかもしれんが命に別状は無い。\n強度のショック状態だから鎮静剤を投与して安静にさせてある。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:069b"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "{N01}そうですか・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0721"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "{N07}君もしばらくこっちで休んでいった方がいいだろう。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0749"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "{N01}・・・長官・・・お聞きしたいことが・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0799"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "{N07}・・・話さなければならんと思っていたよ。・・・君たちの役目については・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:07d9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "{N01}私とイオが・・・造られた人間なんですね・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0845"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "{N07}そうだ。・・・だが造られた人間という表現ではなく新たな人類と言った方がより的確だろう。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0889"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "{N01}新たな？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:08f5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "{N07}そうだ。これまで人類が成し得なかったことを成し得る新たな人類だ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0913"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "{N07}君たちは我々普通の人間には無い強大なエネルギーを発揮出来る。イオが持つ「本能的」なエネルギーは、特に子供の純真さによって鍛えられる。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0969"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "{N07}だが子供は時に残酷性を持つものだ。そのエネルギーは一歩間違えば人類を破滅に導くことにもなる。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0a03"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "{N07}だから我々は人類の「知」を君に与えた。そして兵器としての「力」をガイナロックに結集した。その３つが一つの方向に向かって合わせられた時、それが合わさり大きな力になる。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0a75"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "{N01}（・・・新たな人類・・・そんなもの言葉だけの飾りに過ぎない・・・所詮兵器としてつくられた物。・・・だから私には生への喜びも無ければ死への恐れも無い・・・流した涙すら所詮は人の手で造られたキャラクターにすぎない・・・。）",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0b35"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "{N07}君たちを信用していないわけではない・・・だが、君たちの力は出来るだけ人に知られない方がいいんだ。そのためには・・・本人にも知らせない方がいい・・・それが政府の判断だ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0c33"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "{N01}わかりました・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0cef"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "{N01}長官・・・お願いがあります・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0d19"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "{N07}何だ？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0d51"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "{N01}私たち全員にとって・・・今回の事件の記憶は・・・辛すぎます・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0e5c"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "{N01}・・私たち全員の・・・記憶の抹消をお願いします。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:0f29"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "{N05}あ・・・ここは・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1029"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "{N05}そうか、地球に戻ったんだっけ・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:110d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "{N05}みんな・・・無事だったのね・・・良かった・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:125f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "{N06}地球の女を母胎とし、新たな生命を誕生させるのだ。・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:133a"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "{N05}エリーに・・エリーに知らせなきゃ・・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:13e2"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "{N01}イオ、ちょうどよかったわ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:14c1"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "{N05}あ・・・あのね、エリー。あのヴァイカルって奴が・・・\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:14f5"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "{N01}イオ、そのことはもう大丈夫。心配しなくていいのよ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1602"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "{N05}ほんと？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:164e"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "{N01}ええ・・・みんな大丈夫だったから心配しないで。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:16a4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "{N05}大丈夫だったの？・・・よかった・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:174d"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "{N01}イオ、こっちにいらっしゃい。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:17bd"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "{N05}エリー、何これ？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:18ef"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "{N01}心配しなくていいのよ。・・・みんな疲れてるから・・・疲れを取るためのものなの。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1919"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "{N05}ふーん・・・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:19a9"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "{N01}ゆっくり休んで・・・目が覚めたらまたいつもの生活に戻れるから・・・\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1a7f"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "{N05}うん・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1ae0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "{N05}あー、退屈ー。\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1c30"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "{N01}退屈な方がいいでしょ、平和なんだから。\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1d09"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "{N05}そりゃそうなんだけどぉ・・・。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1da0"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "{N03}痛っ・・・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1e09"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "{N05}どうしたの？",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1eca"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "{N03}なんだか・・・最近お腹が痛くて・・・",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1f43"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "{N05}なんか拾い食いでもしたの？\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:1fcf"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "{N03}そんなことしないわよ。イオじゃあるまいし。\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:20f4"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "{N04}なんかあたしも最近調子悪いんだ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:2254"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "{N05}虫でもいるんじゃないの？\n",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:22ef"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "{N04}やだなぁ、そんなこと言わないでよ。",
+   "en": "",
+   "refs": [
+    "GRR4.WIN:23e6"
+   ],
+   "max_cells": 62
+  }
+ ]
+}

@@ -195331,15 +195331,27 @@
      "path": "Guynarock R\\Guynarock R [HD]\\Guynarock R.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/guynarock_r (patcher working, machine translation in progress)",
+     "url": "../games/guynarock_r/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v14947",
+     "url": "https://vndb.org/v14947",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r33219 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper BTR - Mahou no Tobakushi Totocal Chiyomi",
@@ -195550,15 +195562,27 @@
      "path": "Viper F-40\\Viper F-40 [HD]\\Viper F-40.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_f_40 (patcher working, machine translation in progress)",
+     "url": "../games/viper_f_40/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v977",
+     "url": "https://vndb.org/v977",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r73559 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper GTS - Akuma wa Futatabi",
