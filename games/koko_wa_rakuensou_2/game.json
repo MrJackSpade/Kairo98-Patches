@@ -1,0 +1,11 @@
+{
+ "title": "Koko wa Rakuensou 2",
+ "key": "Foster.zip/Koko wa Rakuensou 2",
+ "image": "Koko wa Rakuensou 2\\Koko wa Rakuensou 2 (CD version) [HD]\\Koko wa Rakuensou 2 (CD version).hdi",
+ "encoding": "zyx",
+ "program": "MOTV21.EXE",
+ "archive": "MDT",
+ "game_dir": "RAKUEN2",
+ "window_cells": 72,
+ "boot_steps": "40:up,1:up,1:up,1:up,1:shot,1:enter,5:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot,3:enter,3:enter,3:enter,1:shot"
+}

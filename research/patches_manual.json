@@ -2049,5 +2049,21 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Foster.zip/Koko wa Rakuensou": [
+  {
+   "label": "This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)",
+   "url": "../games/koko_wa_rakuensou/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Foster.zip/Koko wa Rakuensou 2": [
+  {
+   "label": "This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)",
+   "url": "../games/koko_wa_rakuensou_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

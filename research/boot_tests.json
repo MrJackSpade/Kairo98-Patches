@@ -3505,5 +3505,25 @@
    "The title and the story (DOR3.EDT)",
    "OK: the title picture; the messages' filler after the speakers' names, wrapped at the window's edge, page after page; a command menu's filler in its box"
   ]
+ ],
+ "koko_wa_rakuensou": [
+  [
+   "Boot from the CD version's HD boot disk with the hard disk (RAKUEN: MOTV21.EXE)",
+   "OK: the title's labels in filler, half-width, at their places; Up and Enter pick the first"
+  ],
+  [
+   "The opening",
+   "OK: the messages' filler half-width, broken between words at the window's edge, a new page after a key when the window is full"
+  ]
+ ],
+ "koko_wa_rakuensou_2": [
+  [
+   "Boot from the CD version's HD boot disk with the hard disk (RAKUEN2: MOTV21.EXE AUTOEXE), the title menu",
+   "OK: its pictured items; the System item's menu in filler in its box, half-width; Up and Enter pick the first"
+  ],
+  [
+   "The first scene (the hero's room) and the hallway",
+   "OK: the speaker's name on its plate (cut to its room), the messages' filler wrapped between words, page after page with Enter; a choice menu's items in filler in their box"
+  ]
  ]
 }

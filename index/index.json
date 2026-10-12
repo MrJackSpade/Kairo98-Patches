@@ -93402,7 +93402,14 @@
      "path": "Koko wa Rakuensou\\Koko wa Rakuensou [FD]\\Koko wa Rakuensou (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)",
+     "url": "../games/koko_wa_rakuensou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1994 (erotic content)",
    "engine": "unknown",
@@ -93410,7 +93417,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Koko wa Rakuensou 2",
@@ -93483,7 +93490,14 @@
      "path": "Koko wa Rakuensou 2\\Koko wa Rakuensou 2 [FD]\\Koko wa Rakuensou 2 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)",
+     "url": "../games/koko_wa_rakuensou_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1997 (erotic content)",
    "engine": "unknown",
@@ -93491,7 +93505,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Kousoku Chojin",

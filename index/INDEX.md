@@ -364,6 +364,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_3 (patcher working, machine translation in progress)](../games/kounai_shasei_3/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_sp (patcher working, machine translation in progress)](../games/kounai_shasei_sp/notes.md) |
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
+| Foster | Koko wa Rakuensou | [This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)](../games/koko_wa_rakuensou/notes.md) |
+| Foster | Koko wa Rakuensou 2 | [This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)](../games/koko_wa_rakuensou_2/notes.md) |
 | Game Technopolis | Dennou Tenshi - Digital Ange | [This repo: games/dennou_tenshi (patcher working, machine translation in progress)](../games/dennou_tenshi/notes.md) |
 | Game Technopolis | Dragon Eyes | [This repo: games/dragon_eyes (patcher working, machine translation in progress)](../games/dragon_eyes/notes.md) |
 | Game Technopolis | Hatsukoi Monogatari | [This repo: games/hatsukoi_monogatari (patcher working, machine translation in progress)](../games/hatsukoi_monogatari/notes.md) |
@@ -2596,8 +2598,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 - ♥ Hana no Kioku [CD FD HD extras]
 - ♥ Hana no Kioku Dai-2-shou [FD HD]
-- ♥ Koko wa Rakuensou [CD FD HD]
-- ♥ Koko wa Rakuensou 2 [CD FD HD extras]
+- ♥ Koko wa Rakuensou [CD FD HD] — *MTL (this repo)*
+- ♥ Koko wa Rakuensou 2 [CD FD HD extras] — *MTL (this repo)*
 - ♥ Kousoku Chojin [FD HD]
 - ♥ Rinkan Gakkou [FD HD]
 - ♥ Sayonara no Mukougawa [CD FD HD]
