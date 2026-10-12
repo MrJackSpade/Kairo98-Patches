@@ -1743,6 +1743,74 @@ def active_if_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def active_halo_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "choice items", "prompt": "prompts", "opening": "opening blocks",
+             "menu": "main menu descriptions", "label": "program strings"}
+    out = ["# %s%s (Active MAIN98.EXE)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Active's `%s` (Borland C): the game's files are in the archive `%s` (its files found by a hash of "
+            "their names); the scripts (`*.HGO`) are a table of entries (labels, menus' items, switches' cases, "
+            "each with its places in the code) and the code, ops and texts.  The patcher walks every op (their "
+            "operands read off the program's own routines) and lays a changed script out anew, every place (the "
+            "entries', the switches' and the conditions') moved; the archive is written anew.  `pc98tl/active_halo.py` "
+            "documents the formats, `pc98tl/active_halo_tl.py` the English.  Unchanged files rebuild byte for byte."
+            % (cfg["program"], cfg["archive"]), "",
+            "* The program draws ASCII half-width by itself, so English takes a byte a letter.",
+            "* A message's lines are each a text of their own (a text starts a new line); the patcher breaks the "
+            "English between words into lines of the narrower window's width (56 cells) and the program pages "
+            "the window past its lines.",
+            "* The opening (`OPENING.DAT`, lines of text) is broken between words at its widest Japanese line and "
+            "its blocks' line counts set; the main menu's descriptions (`*.GMO`) are written anew with their places."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` the line's width, 56): any length; the patcher breaks the lines "
+            "between words and the program pages.  `\\n` in the English forces a new line.  A message is the "
+            "texts up to another op; a key wait it ends with (`{P}`, `{W}`) is put back when the English leaves it "
+            "out.  The program holds a script of at most 49152 bytes: a longer build is refused and names the "
+            "script's strings.",
+            "* Choice items (`i` ids): `max_cells` the script's widest Japanese item; past it reported.",
+            "* The opening (`o` ids): any number of lines, each at most `max_cells`, centred by the program.",
+            "* Main menu descriptions (`d` ids): one line, `max_cells` the menu's widest Japanese one; past it "
+            "reported.",
+            "* Prompts (`p` ids): `max_cells` the Japanese's; past it reported.",
+            "* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width "
+            "character two); past it cut and reported.  `%s`-style marks are kept.",
+            "* `{W}`-style tokens are the controls inside a message (`{P}` a key wait, `{W}` a key wait and a "
+            "cleared window, `{V0102}` a control and its two bytes); keep the ones that matter.  `\\`, `{` and `}` "
+            "are written `/`, `(` and `)`.",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else "
+            "as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the main menu's items, the opening's titles)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def cinema_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2201,6 +2269,11 @@ def main():
             continue
         if cfg.get("encoding") == "sys98":
             out = sys98_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "active_halo":
+            out = active_halo_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

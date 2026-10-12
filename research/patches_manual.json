@@ -2353,5 +2353,18 @@
    "url": "https://vndb.org/v8726",
    "source": "VNDB"
   }
+ ],
+ "Active.zip/Angel Halo": [
+  {
+   "label": "This repo: games/angel_halo (patcher working, machine translation in progress)",
+   "url": "../games/angel_halo/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v6958",
+   "url": "https://vndb.org/v6958",
+   "source": "VNDB"
+  }
  ]
 }

@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right | key=<VK> | hold=<VK> (held 600 ms)
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -48,7 +48,7 @@ $vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right 
 # reject a malformed step before the emulator starts
 foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
-    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
+    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+|hold=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
 }
 $p = Start-Process $Exe -ArgumentList $argv -WorkingDirectory $bin -PassThru
 Start-Sleep 3
@@ -93,10 +93,11 @@ foreach ($s in $Steps.Split(",")) {
         $n++; $f = "{0}_{1}.png" -f $Out, $n; $bmp.Save($f); $g.Dispose(); $bmp.Dispose()
         Write-Output "shot $f"
     } else {
-        $code = if ($act -like "key=*") { [int]$act.Substring(4) } else { $vk[$act] }
+        # key=<VK> taps a key; hold=<VK> holds it 600 ms (for games that sample keys slowly)
+        $code = if ($act -like "key=*") { [int]$act.Substring(4) } elseif ($act -like "hold=*") { [int]$act.Substring(5) } else { $vk[$act] }
         $sc = [W]::MapVirtualKey($code, 0)
         [W]::PostMessage($h, 0x100, [IntPtr]$code, [IntPtr](1 -bor ($sc -shl 16))) | Out-Null
-        Start-Sleep -Milliseconds 120
+        Start-Sleep -Milliseconds $(if ($act -like "hold=*") { 600 } else { 120 })
         [W]::PostMessage($h, 0x101, [IntPtr]$code, [IntPtr](1 -bor ($sc -shl 16) -bor (3 -shl 30))) | Out-Null
     }
 }

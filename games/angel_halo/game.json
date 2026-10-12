@@ -1,0 +1,10 @@
+{
+ "title": "Angel Halo",
+ "key": "Active.zip/Angel Halo",
+ "image": "Angel Halo\\Angel Halo (FD version) [HD]\\Angel Halo (FD version).hdi",
+ "encoding": "active_halo",
+ "program": "MAIN98.EXE",
+ "archive": "FDHALO.PAK",
+ "game_dir": "HALO",
+ "boot_steps": "12:shot,8:shot,8:shot,1:mouse=10;10,1:mouse=-10;-10,1:ldown,1:lup,6:shot,1:mouse=0;20,1:mouse=100;0,1:mouse=90;0,2:shot,1:ldown,1:lup,8:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot,1:ldown,1:lup,3:shot"
+}
