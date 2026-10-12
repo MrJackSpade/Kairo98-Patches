@@ -183088,15 +183088,27 @@
      "path": "Immoral Study Scenario 1 - Shirakawa Reiko\\Immoral Study Scenario 1 - Shirakawa Reiko [HD]\\Immoral Study Scenario 1 - Shirakawa Reiko.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_1 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v737",
+     "url": "https://vndb.org/v737",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1486 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka",
@@ -183158,15 +183170,27 @@
      "path": "Immoral Study Scenario 2 - Iijima Yuka\\Immoral Study Scenario 2 - Iijima Yuka [HD]\\Immoral Study Scenario 2 - Iijima Yuka.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_2 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v738",
+     "url": "https://vndb.org/v738",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1483 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami",
@@ -183226,15 +183250,27 @@
      "path": "Immoral Study Scenario 3 - Asakura Manami\\Immoral Study Scenario 3 - Asakura Manami [HD]\\Immoral Study Scenario 3 - Asakura Manami.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_3 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3456",
+     "url": "https://vndb.org/v3456",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6728 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Mahou Shoujo B-ko",

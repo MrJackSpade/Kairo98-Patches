@@ -2089,5 +2089,44 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Scoop.zip/Immoral Study Scenario 1 - Shirakawa Reiko": [
+  {
+   "label": "This repo: games/immoral_study_scenario_1 (patcher working, machine translation in progress)",
+   "url": "../games/immoral_study_scenario_1/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v737",
+   "url": "https://vndb.org/v737",
+   "source": "VNDB"
+  }
+ ],
+ "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka": [
+  {
+   "label": "This repo: games/immoral_study_scenario_2 (patcher working, machine translation in progress)",
+   "url": "../games/immoral_study_scenario_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v738",
+   "url": "https://vndb.org/v738",
+   "source": "VNDB"
+  }
+ ],
+ "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami": [
+  {
+   "label": "This repo: games/immoral_study_scenario_3 (patcher working, machine translation in progress)",
+   "url": "../games/immoral_study_scenario_3/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v3456",
+   "url": "https://vndb.org/v3456",
+   "source": "VNDB"
+  }
  ]
 }

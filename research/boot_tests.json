@@ -3575,5 +3575,35 @@
    "The first scenario's opening",
    "OK: the speakers' names (in the same message as the text) in filler, cut to their room, the messages' filler after them on their row, broken between words, a new page after a key"
   ]
+ ],
+ "immoral_study_scenario_1": [
+  [
+   "Boot from the hard disk (IMM01.BAT: SCBIOS, GSHELL, AI IMMORAL1.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration (the hero's monologue) and the first scene (the housekeeper at the door)",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
+ ],
+ "immoral_study_scenario_2": [
+  [
+   "Boot from the hard disk (IMM02.BAT: SCBIOS, GSHELL, AI IMMORAL2.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration and the first scene (the guard)",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
+ ],
+ "immoral_study_scenario_3": [
+  [
+   "Boot from the hard disk (IMM03.BAT: SCBIOS, GSHELL, AI IMMORAL3.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration and the first scenes",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
  ]
 }

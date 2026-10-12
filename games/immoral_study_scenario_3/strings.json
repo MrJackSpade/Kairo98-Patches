@@ -1,0 +1,8317 @@
+{
+ "source_image_sha256": "95716ee39ae3622b3170600e0a014d74a5522833e4faea305e0a40c36e6a2063",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "[プロテクトメモリが取得できません。]\nこのままゲームを実行されますと、アニメーションが実行されない可能性があります。",
+   "en": "",
+   "refs": [
+    "IMMORAL3.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "コンピューター本体のメモリが[１．６Ｍバイト]以上搭載されているかどうか確認してください。",
+   "en": "",
+   "refs": [
+    "IMMORAL3.BIN:03a2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "又、[製品添付のインストーラー]が作成する「[起動ディスク]」でゲームを実行しているかどうか、確認してください。",
+   "en": "",
+   "refs": [
+    "IMMORAL3.BIN:03ea"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00001",
+   "kind": "item",
+   "jp": " 最初から始める ",
+   "en": "",
+   "refs": [
+    "A00.BIN:0349"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00002",
+   "kind": "item",
+   "jp": " 途中から始める ",
+   "en": "",
+   "refs": [
+    "A00.BIN:0356"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00003",
+   "kind": "item",
+   "jp": "思い出のＣＧ画廊",
+   "en": "",
+   "refs": [
+    "A00.BIN:0363"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00004",
+   "kind": "item",
+   "jp": " 姉妹品のご紹介 ",
+   "en": "",
+   "refs": [
+    "A00.BIN:0372"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00005",
+   "kind": "item",
+   "jp": "　　 おわる 　　",
+   "en": "",
+   "refs": [
+    "A00.BIN:0382"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00006",
+   "kind": "item",
+   "jp": " ＤＡＴＡ－０ ",
+   "en": "",
+   "refs": [
+    "A00.BIN:038c"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00007",
+   "kind": "item",
+   "jp": " ＤＡＴＡ－１ ",
+   "en": "",
+   "refs": [
+    "A00.BIN:039b"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00008",
+   "kind": "item",
+   "jp": " ＤＡＴＡ－２ ",
+   "en": "",
+   "refs": [
+    "A00.BIN:03aa"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00009",
+   "kind": "item",
+   "jp": " ＤＡＴＡ－３ ",
+   "en": "",
+   "refs": [
+    "A00.BIN:03b9"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00010",
+   "kind": "item",
+   "jp": "コンティニュー",
+   "en": "",
+   "refs": [
+    "A00.BIN:03c8"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "ＣＧ画廊モードは、ゲームを１度クリアしてからお楽しみいただけます。",
+   "en": "",
+   "refs": [
+    "A00.BIN:03d6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "ゲーム終了…\nディスクを抜いて電源を切ってください。",
+   "en": "",
+   "refs": [
+    "A00.BIN:0407"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "ゲーム終了…\nディスクを抜いてから電源を切ってください。\n（［決定キー］を押すとＤＯＳに戻ります）。",
+   "en": "",
+   "refs": [
+    "A00.BIN:042f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00011",
+   "kind": "item",
+   "jp": "　データセーブ　",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:0581"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00012",
+   "kind": "item",
+   "jp": "　ゲームに戻る　",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:058e"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00013",
+   "kind": "item",
+   "jp": "　 ゲーム終了 　",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:059a"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "t00001",
+   "kind": "title",
+   "jp": "　　　　[システムメニュー]",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05a8"
+   ],
+   "max_cells": 24,
+   "note": "a menu's heading, highlighted: one line"
+  },
+  {
+   "id": "i00014",
+   "kind": "item",
+   "jp": "ＤＡＴＡ－０",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05be"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00015",
+   "kind": "item",
+   "jp": "ＤＡＴＡ－１",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05cb"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00016",
+   "kind": "item",
+   "jp": "ＤＡＴＡ－２",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05d8"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00017",
+   "kind": "item",
+   "jp": "ＤＡＴＡ－３",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05e5"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "ＳＡＶＥしました。",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:05f2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00018",
+   "kind": "item",
+   "jp": "　 もどる 　",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:0600"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00019",
+   "kind": "item",
+   "jp": "　終了する　",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:0609"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "t00002",
+   "kind": "title",
+   "jp": "　　　　　[本当に終了？ ]",
+   "en": "",
+   "refs": [
+    "JUMP.BIN:0612"
+   ],
+   "max_cells": 23,
+   "note": "a menu's heading, highlighted: one line"
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}ＧＡＭＥＯＶＥＲ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}",
+   "en": "",
+   "refs": [
+    "OVER.BIN:0349"
+   ],
+   "max_cells": 54,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "i00020",
+   "kind": "item",
+   "jp": "Cut 01",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0349"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00021",
+   "kind": "item",
+   "jp": "Cut 02",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0350"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00022",
+   "kind": "item",
+   "jp": "Cut 03",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0357"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00023",
+   "kind": "item",
+   "jp": "Cut 04",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:035e"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00024",
+   "kind": "item",
+   "jp": "Cut 05",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0365"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00025",
+   "kind": "item",
+   "jp": "Cut 06",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:036c"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00026",
+   "kind": "item",
+   "jp": "Cut 07",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0373"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00027",
+   "kind": "item",
+   "jp": "Cut 08",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:037a"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00028",
+   "kind": "item",
+   "jp": "Cut 09",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0381"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00029",
+   "kind": "item",
+   "jp": "Cut 10",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0388"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00030",
+   "kind": "item",
+   "jp": "Cut 11",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:038f"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00031",
+   "kind": "item",
+   "jp": "Cut 12",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0396"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00032",
+   "kind": "item",
+   "jp": "Cut 13",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:039d"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00033",
+   "kind": "item",
+   "jp": "Cut 14",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03a4"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00034",
+   "kind": "item",
+   "jp": "Cut 15",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03ab"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00035",
+   "kind": "item",
+   "jp": "Cut 16",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03b2"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00036",
+   "kind": "item",
+   "jp": "Cut 17",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03b9"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00037",
+   "kind": "item",
+   "jp": "Cut 18",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03c0"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00038",
+   "kind": "item",
+   "jp": "Cut 19",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03c7"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00039",
+   "kind": "item",
+   "jp": "Cut 20",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03ce"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00040",
+   "kind": "item",
+   "jp": "Cut 21",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03d5"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00041",
+   "kind": "item",
+   "jp": "Cut 22",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03dc"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00042",
+   "kind": "item",
+   "jp": "Cut 23",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03e3"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00043",
+   "kind": "item",
+   "jp": "Cut 24",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03ea"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00044",
+   "kind": "item",
+   "jp": "Cut 25",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03f1"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00045",
+   "kind": "item",
+   "jp": "Cut 26",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03f8"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00046",
+   "kind": "item",
+   "jp": "Cut 27",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:03ff"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00047",
+   "kind": "item",
+   "jp": "Cut 28",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0406"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00048",
+   "kind": "item",
+   "jp": "Cut 29",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:040d"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00049",
+   "kind": "item",
+   "jp": "Cut 30",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0414"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00050",
+   "kind": "item",
+   "jp": "Cut 31",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:041b"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00051",
+   "kind": "item",
+   "jp": "Cut 32",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0422"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00052",
+   "kind": "item",
+   "jp": "Cut 33",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0429"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00053",
+   "kind": "item",
+   "jp": "Cut 34",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0430"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00054",
+   "kind": "item",
+   "jp": "Cut 35",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0437"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00055",
+   "kind": "item",
+   "jp": "Cut 36",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:043e"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00056",
+   "kind": "item",
+   "jp": "Cut 37",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0445"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00057",
+   "kind": "item",
+   "jp": "Cut 38",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:044c"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00058",
+   "kind": "item",
+   "jp": "Cut 39",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0453"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00059",
+   "kind": "item",
+   "jp": "Cut 40",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:045a"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00060",
+   "kind": "item",
+   "jp": "Cut 41",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0461"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00061",
+   "kind": "item",
+   "jp": "Cut 42",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0468"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00062",
+   "kind": "item",
+   "jp": "Cut 43",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:046f"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00063",
+   "kind": "item",
+   "jp": "Cut 44",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0476"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00064",
+   "kind": "item",
+   "jp": "Cut 45",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:047d"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00065",
+   "kind": "item",
+   "jp": "Cut 46",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0484"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00066",
+   "kind": "item",
+   "jp": "Cut 47",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:048b"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00067",
+   "kind": "item",
+   "jp": "Cut 48",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0492"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00068",
+   "kind": "item",
+   "jp": "Cut 49",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:0499"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00069",
+   "kind": "item",
+   "jp": "BGM:01",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04a7"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00070",
+   "kind": "item",
+   "jp": "BGM:02",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04ae"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00071",
+   "kind": "item",
+   "jp": "BGM:03",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04b5"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00072",
+   "kind": "item",
+   "jp": "BGMoff",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04bc"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00073",
+   "kind": "item",
+   "jp": " EXIT ",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04c3"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "t00003",
+   "kind": "title",
+   "jp": "　　　[ＣＧ画廊モード／どのカットをご覧になりますか？]",
+   "en": "",
+   "refs": [
+    "CGMODE.BIN:04ca"
+   ],
+   "max_cells": 52,
+   "note": "a menu's heading, highlighted: one line"
+  },
+  {
+   "id": "i00074",
+   "kind": "item",
+   "jp": "　シナリオ＃１　",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:045f"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00075",
+   "kind": "item",
+   "jp": "　シナリオ＃２　",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:046e"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00076",
+   "kind": "item",
+   "jp": "　　 もどる 　　",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:047d"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "t00004",
+   "kind": "title",
+   "jp": "　 [姉妹品のご紹介] ",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:0488"
+   ],
+   "max_cells": 18,
+   "note": "a menu's heading, highlighted: one line"
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "【 シナリオ＃１ 「白川玲子」 】",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:0349"
+   ],
+   "max_cells": 31,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "[白川玲子]は「深窓の…」という表現がピッタリのお嬢様。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:049b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "箱入り娘の玲子は、豪華な洋館に住み、ほとんど外に出ることはないので、世間というものを全く知らない……。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:04c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "しかし、玲子の身辺を常に警戒し、あなたの授業を邪魔しようとする家政婦が待ち構えています。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:050d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "父親にきびしく育てられた玲子は、かたくななまでに操を守って、どんな男も寄せ付けない。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:054b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "凶悪で用心深い家政婦の目をかいくぐり、玲子の成績アップを、早急に達成しなくてはなりません。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:0583"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "もちろん、玲子の成績アップの為なら、どんなことにも手を染めます。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:05c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "玲子の心のヴェールを、一枚、一枚、取り除いていき……",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:05f3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "彼女の胸に、あなたの真摯な愛を刻みこむのです。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:061a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "そうやって、彼女の信頼を得ることに成功すれば、彼女は本当の姿をあなたの前に見せることでしょう。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:063a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "玲子の素朴な質問にも、誠意をもって答えてあげて下さい。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:067a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "純真で疑うことを知らない玲子に、[おとなのＡＢＣ]をレクチャーするのは、家庭教師であるあなたの役目なのです。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:06a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "インモラルスタディ シナリオ＃１ 「白川 玲子」\n　　対応機種： PC-9801/21 シリーズ (ＣＰＵ３８６以上)\n　　           ユーザーズメモリ１.６ＭＢ以上必要\n　　           マウス、ＦＭ音源、ＨＤＤ対応\n　　定価：     ￥５,８００（税別）\n　　発売日：   好評発売中",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:06ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "【 シナリオ＃２ 「飯嶋由佳」 】",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:0374"
+   ],
+   "max_cells": 31,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "由佳は、強気で自由気ままな性格の女の子。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:07db"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "由佳は家庭教師など頼んだ覚えはないと、強情にもあなたをはねつけます。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:07fc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "彼女の意志は固いらしく、なかなかあなたを受け入れようとしません。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:082b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "しかも、彼女の身辺をガードする、ゴリラのようなこの男があなたを執拗に監視しています。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:0853"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "しかし、あらゆる困難を乗り越えて、授業をまっとうしてこそ、[真の家庭教師]たりえるのです。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:088d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "もちろん、由佳の隠された本心を見極めなければ、それは授業とは呼べません。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:08c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "彼女の心の中にあるしこりを取り除き、自由を取り戻せるのは、あなただけなのです。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:08f8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "生徒と教師の心が１つになる……それは教師たるものの永遠のテーマでしょう。",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:092c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "インモラルスタディ シナリオ＃２ 「飯嶋 由佳」\n　　対応機種： PC-9801/21 シリーズ (ＣＰＵ３８６以上)\n　　           ユーザーズメモリ１.６ＭＢ以上必要\n　　           マウス、ＦＭ音源、ＨＤＤ対応\n　　定価：     ￥５,８００（税別）\n　　発売日：   好評発売中",
+   "en": "",
+   "refs": [
+    "DEMO.BIN:095f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　俺の名は[教師一筋]。この日本で家庭教師をさせれば、五本の指に入るといわれている男だ。\n　ひとたび俺が指導すれば、どんな奴でも一流大学への入学が可能な成績になる。当然、「ぜひうちの家庭教師」にと引く手あまたなのだが、俺も超一流家庭教師としてのプライドがある。半端な仕事はしないぜ。大金持ちのボンボンやお嬢ちゃんの相手をしてガッポリいただくのさ。",
+   "en": "",
+   "refs": [
+    "CUT00.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "　それにこの仕事、地味で堅苦しい仕事だと思われがちだがその職権を乱用すれば結構[オイシイ]目にもありつける。\n　例えば、大金持ち特有の温室育ちのお嬢様などだ。男に免疫のない美少女を落とすことなど、赤子の手をひねるよりも簡単だ。それに、家人に見つかるんじゃないかというスリルもあって、もう病みつきだ。\n　今まで何度かヤバイ事もあったが、なんとか切り抜けて来た。オイシイ話には、やはり[リスク]がなければ燃えないぜ。",
+   "en": "",
+   "refs": [
+    "CUT00.BIN:044b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "　ということで、仕事の話しに戻ろう。今回の生徒は、まだ幼さが残る少女「朝倉まなみ」だ。彼女は、超有名ファションデザイナー「朝倉沙夜子」の一人娘だ。\n　まなみは、幼い頃に火事で父親を失ったことからか、内気で自閉症気味なところがあるらしい。最近は人見知りがさらに激しくなって、登校拒否の前兆さえ、見えるという。そこで、俺様の登場と相成ったわけだ。",
+   "en": "",
+   "refs": [
+    "CUT00.BIN:0571"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "　母親である朝倉沙夜子が率いる「ＳＡＹＯＫＯ」ブランドの製品は、シックで落ち着いたイメージが評判の、超一流デザインだ。しかし、朝倉沙夜子本人は、非常な派手好きらしい…。\n　母子の性格的ギャップをどう埋めるかということに、今回の授業の成否はかかっているのかも…？\n　とにかく、ロリッとしたまなみの姿を想像しつつ、朝倉親子が住む豪邸へと足を向ける……",
+   "en": "",
+   "refs": [
+    "CUT00.BIN:066d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "ピンポ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}ン",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "ベルを鳴らすと現れたのはなんと、沙夜子自身。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0362"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00077",
+   "kind": "item",
+   "jp": "見る",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0382",
+    "CUT02.BIN:0386",
+    "CUT05.BIN:037f",
+    "CUT06.BIN:0349",
+    "CUT07.BIN:03ce",
+    "CUT08.BIN:0365",
+    "CUT09.BIN:0349",
+    "CUT13.BIN:0349",
+    "CUT14.BIN:05d5",
+    "CUT15.BIN:04c0",
+    "CUT16.BIN:038c",
+    "CUT17.BIN:0419",
+    "CUT18.BIN:0449",
+    "CUT21.BIN:0705",
+    "CUT23.BIN:0385",
+    "CUT28.BIN:0386",
+    "CUT33.BIN:03c7",
+    "CUT35.BIN:03b9",
+    "CUT37.BIN:0349",
+    "CUT40.BIN:0349",
+    "CUT41.BIN:04b7"
+   ],
+   "max_cells": 4,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00078",
+   "kind": "item",
+   "jp": "考える",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0386",
+    "CUT02.BIN:038a",
+    "CUT06.BIN:034d",
+    "CUT07.BIN:03d6",
+    "CUT08.BIN:036d",
+    "CUT09.BIN:0351",
+    "CUT13.BIN:0351",
+    "CUT14.BIN:05dd",
+    "CUT15.BIN:04c8",
+    "CUT16.BIN:0394",
+    "CUT17.BIN:0421",
+    "CUT18.BIN:0451",
+    "CUT21.BIN:070d",
+    "CUT23.BIN:0389",
+    "CUT28.BIN:038a",
+    "CUT33.BIN:03cf",
+    "CUT35.BIN:03c1",
+    "CUT37.BIN:0351",
+    "CUT40.BIN:0351"
+   ],
+   "max_cells": 6,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "噂に違わず、沙夜子の服装は派手の一言につきる。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:038b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "豊満なボディラインを強調するかのごとく、キュッと絞られたビニール質のワンピースが艶めかしい。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:03af"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "申訳程度の薄さのシャツが上半身を覆っているものの、セクシーさ抜群の衣装だ。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:03f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "見る者を圧倒する胸元と、カモシカのように美しい太股を強調する大胆な衣装。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0432"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "特にＦカップはあろうかというバストは弾力にあふれ、俺の視線を吸い付けて止まない。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:046a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "金持ちそうな家なのに、メイドのひとりやふたり、いないのかねぇ？",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:04a3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "子供を生んでいるんだから、それなりの年齢にはなっているのだろうが、いま見ている限りではとてもそんな年齢には見えない。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:04c9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "どうして、こんな派手でセクシーな服装を好む女性が、上品でおしとやかな女性を演出するＳＡＹＯＫＯブランドをデザインできるのだろうか……。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0513"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "首をひねるばかりの俺に、近づいてきた沙夜子が妖艶な笑みをうかべつつ、挨拶してくる。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:057b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "【沙夜子】",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:02f9",
+    "CUT03.BIN:02f9",
+    "CUT05.BIN:02f9",
+    "CUT17.BIN:02f9",
+    "CUT18.BIN:02f9",
+    "CUT20.BIN:02f9",
+    "CUT21.BIN:02f9",
+    "CUT22.BIN:02f9",
+    "CUT23.BIN:02f9",
+    "CUT25.BIN:02f9",
+    "CUT26.BIN:02f9",
+    "CUT28.BIN:02f9",
+    "CUT29.BIN:02f9",
+    "CUT30.BIN:02f9",
+    "CUT31.BIN:02f9",
+    "CUT32.BIN:02f9",
+    "CUT33.BIN:02f9",
+    "CUT35.BIN:02f9",
+    "CUT45.BIN:02f9",
+    "CUT46.BIN:02f9",
+    "CUT47.BIN:02f9",
+    "CUT48.BIN:02f9"
+   ],
+   "max_cells": 10,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "家庭教師の先生ですわね。\nわたくしが[朝倉沙夜子]ですわ。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:05b4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "召し使いが昨日辞めたばかりで、お世話が行き届かないことと存じますがお許し下さいませね。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:05e0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00079",
+   "kind": "item",
+   "jp": "話す",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:061e",
+    "CUT05.BIN:0383",
+    "CUT06.BIN:042e",
+    "CUT07.BIN:03d2",
+    "CUT08.BIN:0369",
+    "CUT09.BIN:034d",
+    "CUT13.BIN:034d",
+    "CUT14.BIN:05d9",
+    "CUT15.BIN:04c4",
+    "CUT16.BIN:0390",
+    "CUT17.BIN:041d",
+    "CUT18.BIN:044d",
+    "CUT21.BIN:0709",
+    "CUT23.BIN:0439",
+    "CUT28.BIN:04b1",
+    "CUT33.BIN:03cb",
+    "CUT35.BIN:03bd",
+    "CUT37.BIN:034d",
+    "CUT40.BIN:034d"
+   ],
+   "max_cells": 4,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "俺は、近づいてきた沙夜子を、ただ、茫然と見つめる。\n沙夜子の方は、俺が何か話しだすのを待っているようだ。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0622"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "服装は確かに派手だが、俺を出迎える態度はまったくもって上品そのものに見える。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:066c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "にこやかな笑みを浮かべた沙夜子は、俺の方を見つめたまま黙って立っている。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:06a2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "【教師】",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:02ce",
+    "CUT05.BIN:02ce",
+    "CUT06.BIN:02ce",
+    "CUT07.BIN:02ce",
+    "CUT08.BIN:02ce",
+    "CUT09.BIN:02ce",
+    "CUT10.BIN:02ce",
+    "CUT11.BIN:02ce",
+    "CUT12.BIN:02ce",
+    "CUT13.BIN:02ce",
+    "CUT14.BIN:02ce",
+    "CUT15.BIN:02ce",
+    "CUT16.BIN:02ce",
+    "CUT17.BIN:02ce",
+    "CUT18.BIN:02ce",
+    "CUT21.BIN:02ce",
+    "CUT23.BIN:02ce",
+    "CUT25.BIN:02ce",
+    "CUT28.BIN:02ce",
+    "CUT30.BIN:02ce",
+    "CUT31.BIN:02ce",
+    "CUT33.BIN:02ce",
+    "CUT34.BIN:02ce",
+    "CUT35.BIN:02ce",
+    "CUT36.BIN:02ce",
+    "CUT37.BIN:02ce",
+    "CUT39.BIN:02ce",
+    "CUT40.BIN:02ce",
+    "CUT41.BIN:02ce",
+    "CUT46.BIN:02ce",
+    "CUT47.BIN:02ce"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "いやっ、まことに結構なお身体で……",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:06d2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "はぁ………？",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:06e9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "い、いやっ。何でもありません。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:06f0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "それでは、娘さんの所に御案内下さい。まぁ、僕にお任せ下されば、学力アップなど時間の問題ですよ。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0702"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "その派手な洋服とは、全く違って、非常に丁寧な態度だな。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0748"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "ここで、ぼ～っと、つっ立っていてもしかたがない。\nさっさと[まなみ]の部屋まで案内してもらおう。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:0771"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "まぁ、ついでに[性に対する知識]も飛躍的にアップしますよ。………とは、口が裂けても言えんがな……ははは……！",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:07ac"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "それでは、まなみの部屋に御案内致しますわ。\nこちらへどうぞ。",
+   "en": "",
+   "refs": [
+    "CUT01.BIN:07f4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "沙夜子に案内された部屋は、少女趣味に満ち溢れたメルヘンチックな世界だった。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "部屋そのものは落ち着いたデザインと配色になっている。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:038f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "置かれている調度品達、まさに夢見る少女の世界から飛び出してきたようなものばかりだ。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:03b4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "抱きかかえることも難しそうな、巨大なヌイグルミも鎮座している。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:03ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "そう言えば、ここの娘のデザインだという触れ込みで、ＭＡＮＡＭＩブランドの商品もあったような……？",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0419"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "たしかに、この部屋のイメージとぴったりのメルヘンチックなデザインが売りだったな。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0461"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "クンクン…………クンクン……………",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:049e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "あれっ？\nどこかで嗅ぎなれたにおいがするぞ。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:04b8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "この不思議な臭いは、花の香りかと思って部屋を見回したがそのようなものは見当たらない。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:04d5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "部屋をぐるりと見回すが、香水のようなものが置いてある様子もない。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:050e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "匂いの源は、すでにこの部屋からは消えてしまっているようだ……。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:053b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "この臭い……どこかで嗅いだことがあるような……？",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0562"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "何か、非常に貴重で珍しいものから出る匂いだったような……？",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0581"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "おぉ！思い出したぞ！\nこいつは愛液の、しかも[処女特有の愛液]のにおいだ。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:05a9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "やれやれ、お嬢さん…オレ様のご到着を待ちきれずに、オナニーにふけっていたってわけか。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:05dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "いやはや、とんだ淫乱娘だな。まぁ、そのほうが手間が省けていろいろと楽しめるってモノだがね……",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0614"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "しかし、娘のオナニー癖はいつものことなのか、平然と部屋に入っていく沙夜子。",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0652"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "ふーん、この母親もいい度胸だな。それとも、においに鈍感なのかな？",
+   "en": "",
+   "refs": [
+    "CUT02.BIN:0685"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "俺の感慨を無視するようにスタスタと部屋の奥に入っていく沙夜子は無言で俺を手招きする。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "誘われるままに、部屋に入っていった俺が見たものは、一心不乱にスケッチブックと格闘する小柄な少女だった。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:038a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "道理で部屋の外から眺めても姿が見えないわけだ。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:03d7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "少女の服は可愛さ満点、ひらひらフリル付きのワンピースである。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:03fa"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "子供っぽいあどけなさを残した顔に、大きすぎるフレームの眼鏡をかけている。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:0429"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "ちらちらと俺を盗み見るその様子は、神経質というより、人見知りが過ぎるようだ。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:045b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "先生、この子がまなみですわ。\nまなみ、先生に御挨拶なさい。",
+   "en": "",
+   "refs": [
+    "CUT03.BIN:0491"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "まなみ、と紹介された少女はもじもじと顔をうつむかせ、上目づかいに俺を見つめている。",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "心なしか顔に赤みがさしているようだ。",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:037f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "【まなみ】",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:02e4",
+    "CUT06.BIN:02e4",
+    "CUT07.BIN:02e4",
+    "CUT08.BIN:02e4",
+    "CUT09.BIN:02e4",
+    "CUT10.BIN:02e4",
+    "CUT11.BIN:02e4",
+    "CUT12.BIN:02e4",
+    "CUT13.BIN:02e4",
+    "CUT14.BIN:02e4",
+    "CUT15.BIN:02e4",
+    "CUT16.BIN:02e4",
+    "CUT19.BIN:02e4",
+    "CUT24.BIN:02e4",
+    "CUT25.BIN:02e4",
+    "CUT26.BIN:02e4",
+    "CUT35.BIN:02e4",
+    "CUT37.BIN:02e4",
+    "CUT38.BIN:02e4",
+    "CUT39.BIN:02e4",
+    "CUT40.BIN:02e4",
+    "CUT41.BIN:02e4",
+    "CUT43.BIN:02e4",
+    "CUT45.BIN:02e4"
+   ],
+   "max_cells": 10,
+   "note": "a speaker's tag: one line"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "は……はじめまして。\n朝倉まなみです………",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:0397"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "消え入りそうな声で挨拶すると、まなみは恥ずかし気に顔を伏せてしまった。",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:03b1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "極端なあがり症か、人見知りの激しい娘か……\nこりゃ苦労しそうだな。",
+   "en": "",
+   "refs": [
+    "CUT04.BIN:03e0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "では、先生。まなみをお願いしますわ。\nわたくし、仕事が忙しいのでこれで失礼します。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "沙夜子は、いかにも忙しいといった表情をして、今にもこの部屋から出ていきそうな様子だ。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0387"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "いや、いったいどのような授業を……",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:03bf"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "この子には、わたくしの後を継いで国際的なファッションデザイナーになってもらうつもりですの。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:03d4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "この子の最初の発表作がなかなかの評判を頂戴しましてね。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0414"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "今のところ、わたくしがＭＡＮＡＭＩブランドの指揮をとっておりますが、ゆくゆくはこの子に全てを任せませんとね。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:043b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "でも、ご覧のとおりの性格で、わたくしもほとほと手を焼いておりますのよ。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0484"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "そこで、かねがね、御高名を伺っておりました先生にまなみをお預けしようと考えた次第ですの。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:04b0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "先生は生徒一人一人にぴったりのカリキュラムを組んで頂けると評判なので、わたくしも大安心ですわ。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:04ea"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "何分、宅のまなみは難しい性格なので……。\nほほほ、宜しくお願い致しますわ。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0533"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "人に口を挟ませる余裕を与えず、機関銃のように一気に話し終わると、人を小馬鹿にしたような微笑を残して、沙夜子は軽やかに立ち去る。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:0563"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "茫然としたまま、まなみの部屋に残された俺はまず、この、か弱げな少女をじっくりと観察することにした。",
+   "en": "",
+   "refs": [
+    "CUT05.BIN:05be"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "まなみという娘は、どこから見ても小学生のようなあどけなさを残した少女だった。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0352"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "その神経質そうな様子は、まるで何か悪いことをして職員室に叱られに来た生徒のようだ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0384"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "ひょっとしたら、オナニーがばれないかとビクビクしているのかも………。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:03be"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "もし、オナニーのことがばれるのを恐れているとすれば……こいつは、先制攻撃あるのみだな。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:03ea"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "あ………あのぉ………。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0422"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "まなみは、オドオドしながら俺の出方をうかがっているようだ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0432"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "やあ、まなみちゃんだね。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:045a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "は……はいぃ……。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0468"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "こうやって立っているだけでは授業にならないな。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0472"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "返事をするのでさえ、やっとという様子だな……。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:048f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "僕は家庭教師の[教師一筋]だ。なかなか、面白くていい名前だろう。今日から僕は君の先生というわけだ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:04ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "………はい……。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:04f5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "こりゃあ、会話をするのさえ大変かもな…。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:04fe"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "まなみちゃんは勉強は好きかな？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0517"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "とりあえず、この子の考えていることを把握しないとな。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:052a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "…………………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:054a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "まなみは、うつむいたまま返事をしぶっている。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0552"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "どうかな？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:056c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "……は……はい……。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0573"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "こまったな……もうダンマリかね？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:057e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "まなみは、俺と視線をあわせないようにしている。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0593"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "うむっ、感心感心。勉強は好きなんだ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:05ae"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "いっ、いえ………あの……あまり……",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:05c9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "ほほぅ、勉強は好きなのか…。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:05db"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "あれ？勉強はあまり好きじゃないのかな？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:05ed"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "好きなのか嫌いなのか…\n…はっきりしない娘だなぁ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0605"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "い……いいえ……あの……そういう訳では……",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0623"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "まなみは、返答に困っていっそうモジモジしている。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:063b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "勉強は好きなの？嫌いなの？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:065b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "…………あの……………その………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:066d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "……………………………………………………………………………考えのはっきりしない娘だな。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:067e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "僕は君に苦手な教科があれば、それを強化し、勉強が楽しくなるように助けてあげるのが仕事だ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:06ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "Ｙｅｓ／Ｎｏ以外の質問にした方がいいのかな？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:06ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "僕に隠し事はいけないよ。さぁ、約束できるかい？僕に隠し事をせずに何でも相談するって………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0711"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "…………は………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:074c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "えっ、何か言った？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0755"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "…………はい………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0761",
+    "CUT15.BIN:046e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "もう一度、言ってごらん。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:076b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "…………はい………約束します。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:077c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "顔を真っ赤にしているところなどは可愛いのだが、もじもじし過ぎて、彼女の意志がはっきり感じられないのが扱いづらい。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:078e",
+    "CUT06.BIN:0873"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "じゃ、これからの先生の質問には、しっかり答えてね。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:07dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "……………はい…………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:07fd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "何とも、じれったい娘だ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0809"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "しかも、返事が蚊の鳴くような今にも消え入りそうな声ではいちいち聞き返すだけでも重労働だ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:081a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "やれやれ、大変な娘を引き受けたものだ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0859"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "さて、こういう性格の娘の場合、強い否定を受けることはまずないと、考えて差し支えないから………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:08c2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "誘導尋問で俺の都合のいいようにもっていこう。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:08fe"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "いささか内向的な面に目をつむれば、なかなか可愛い子なんだがなぁ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:091d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "さて、まなみちゃん。今日は初めての授業だから、僕が勝手に内容を決めさせてもらうよ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0949"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "まずは君の学力や、一般教養についてテストを進めよう。\nいいかい？",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0980"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "………は……はい………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:09ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "こちらからどんどん誘導するようにしていけば、なんとかなるさ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:09b9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "まぁ、最初は一般教養から始めるのが妥当だな。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:09dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "では、まず、筆記の練習から始めよう。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:09ff"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "……………………",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0a19",
+    "CUT21.BIN:0735"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "そうだね………[習字の道具]でも用意してもらおうか。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0a22"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "……はい。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0a45"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "消え入りそうな声で返事をすると、習字道具をテーブルに用意するまなみ。",
+   "en": "",
+   "refs": [
+    "CUT06.BIN:0a4b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "じゃ、何か適当に書いてくれたまえ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "おどおどしながら筆を取るまなみ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0360"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "その、おどおどした仕草、筆運び…………全てが嗜虐的だ。まったく………楽しめそうな[素材]だ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0376"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "あ……あのぉ……先生、できました………。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:03b6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "まなみが震える手で俺に渡す半紙にかかれた文字は…\n　　　　「ともだち」\n……と書かれていた。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:03db"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "ふむふむ……先生に見せてごらん。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0416"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "…………は………はい。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:042b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "ふふん、どんな文字を書いたものやら。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0437"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "ふふん、「ともだち」とひらがなで書かれた文字は、可愛いく丸まった「少女文字」だ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:044e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "ふーん、「ともだち」か……",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0485"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "………………………………",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0494"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "ま、まなみの性格から言って、こういう少女文字は予想していたがな。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:04a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "書き上げられたばかりのまなみの文字は、いかにも意識してかかれたかのように、どこから見ても「少女文字」だ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:04cc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "ううん。これじゃあ、だめだ。まなみちゃん、こんな字体じゃあ、友達同士の文通には使えても、国際的ファッションデザイナーを目指す人としては最低だ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0510"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "女の子達の多くは、こういった丸文字を書く子が多いが、いったいどうやったら、こんな丸い文字がかけるのだろう？",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0578"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "で、でも……。あたし、こんな字しか書けない……。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:05c0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "わざと厳しい態度で意見すると、脅えたように身をくねらせるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:05dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "俺は、順調に運ぶシナリオに満足し、歓喜の笑みを押えるのに苦労しながらも早速、文字の矯正に着手することにした。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0607"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "すねたような、おびえたような態度でうつむくまなみ。やれやれ、この程度で落ち込まれては困るな。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0658"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "甘えちゃいけない。君の輝かしい将来を考えれば、こんな苦労くらい、些細なものだ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0691"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "さて、ここからオレ様のスペシャルレッスンといきますか。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:06c5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "では、国際的に活躍する日本人として欠かせない、毛筆の特訓から始めよう。準備したまえ。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:06ed"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "………はい………",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0729"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "今にも泣き出しそうな表情で、のろのろと硯に筆を用意するまなみ。さて、楽しい授業を始めるとしよう。",
+   "en": "",
+   "refs": [
+    "CUT07.BIN:0732"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "あのぉ………先生………、準備できました………",
+   "en": "",
+   "refs": [
+    "CUT08.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "まなみの表情は固くこわばり、手もガタガタと震えている。",
+   "en": "",
+   "refs": [
+    "CUT08.BIN:0372"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "よしよし、いい子だ。それでは、授業を始めようかな。",
+   "en": "",
+   "refs": [
+    "CUT08.BIN:0398"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "……は……はい。",
+   "en": "",
+   "refs": [
+    "CUT08.BIN:03b8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "獲物を狙う鋭い視線とはアンバランスな、押えようとも押え切れぬ俺の微笑を恐れているのか、まなみはガタガタ震えている。これでは、満足に書も書けまい。",
+   "en": "",
+   "refs": [
+    "CUT08.BIN:03c1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "筆を持つまなみの手は、恐怖と緊張のためにガタガタと震えている。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0356"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "ふむ。しかし、君の手先は何だね。そんなに震えていちゃあ字は書けないよ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0382"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "ああっ。す、すいません………。許して下さい。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:03ae"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "いったい、何をそんなに怯えているのかね？",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:03c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "うつむいて、俺から視線をそらし、蚊の鳴くような、今にも消え入りそうな声で許しを乞うあどけない娘。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:03de"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "謝ったら、それで全て解決すると言うのかね？",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:041d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "……ご、ごめんなさい………",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0439"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "まったく、嗜虐感をそそられる娘だ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0449"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "答えに困ってうつむいたまま、今にも泣き出しそうだ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0460"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "大体、君はお母さんに甘やかされて育っているようだ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0480"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "まったく、この娘は謝ることしかできないのかね？",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:04a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "まなみは、完全に怯えきった様子で、肩を震わせているのが判る。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:04bc",
+    "CUT09.BIN:05e2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "何でも謝れば済むってもんじゃあない。あきらめずに努力することが肝要だ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:04e5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "……………",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0516",
+    "CUT12.BIN:03bb",
+    "CUT13.BIN:048b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "とは言ったものの、まなみの脅えは本格的で、オレ様のお得意の言いくるめ攻撃を駆使してもなかなか埒があきそうにない。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:051c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "こんな場合は、相手を何かに集中させるのが最も効率的だ。何かに集中している者は外的要因に阻害されにくいものだ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0567"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "そこで俺は、独自に用意した奇抜な学習方法を用いることにする。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:05b6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "それでは、僕の考案した全く新しい書道の上達法を試してみよう。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:060b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "くくくくく…………ここからが本当のスペシャルレッスンと言うわけだよ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0636"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "じゃ、まなみちゃん、さぁ筆を持って。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0667"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "この方法は斬新かつ革命的で、これまでに何人もの生徒でその効果が確認済みの素晴らしい学習法だ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:067d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "それでは、まなみちゃん、筆をくわえたまえ。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:06c6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "えぇっ？！ふ、筆をですかぁ………？",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:06de"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "筆を咥えるという、大胆な授業方法にびっくりしたらしく、まなみは困惑の表情で目を白黒させている。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:06f3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "どうしてそんなに驚くんだい？\nそれとも君は僕の指導が信用できないのかな？",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0734"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "…………………………………",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0764"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "もう後には引けないぞ！行くべし行くべし行くべし！",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0772"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "まなみは、俺の厳しい一言が一段と脅えたらしい。涙を浮かべながら、おずおずと筆を咥える。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:0796"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "俺は一抹の罪悪感と共に、サディスティックな感情が沸き上がるのを感じた。",
+   "en": "",
+   "refs": [
+    "CUT09.BIN:07d2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "あっ、あのぉ………。きょれでぇ……いぃんでしょうきゃあ………",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "筆を咥えたままのたどたどしいまなみの声と表情が、俺の理性を吹き飛ばしそうになる。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:036a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "性欲の権化となる心を抑え、俺は指導を続ける。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:03a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "う、うむ。よかろう。それでは、半紙に字を書いてみよう。そうだな、まずは「口唇」と書き給え。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:03c2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "ふ、ふごぉ………",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:03fb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "瞳から涙を、筆を咥えた口元からは唾液を滴らせながら、懸命に筆を動かすまなみ。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:0405"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "思ったより筆の動きは滑らかで、読める程度の字に仕上がっている。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:043a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "予想通り、口技はかなり仕込まれているようだ。いやいや、可愛らしい口元が淫乱に動きまわるさまは、まったく壮観。",
+   "en": "",
+   "refs": [
+    "CUT10.BIN:0466"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "ひぇんひえ、じょうでしょうきゃあ……",
+   "en": "",
+   "refs": [
+    "CUT11.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "ふぅむ。悪くはないね。\nしかし、何だね。このよだれの量は？",
+   "en": "",
+   "refs": [
+    "CUT11.BIN:035e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "せっかく、きれいに書けた半紙が台無しだよ。しかも、筆圧が適当じゃないようだね。",
+   "en": "",
+   "refs": [
+    "CUT11.BIN:0381"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "しゅ、しゅいましぇん………",
+   "en": "",
+   "refs": [
+    "CUT11.BIN:03b7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "まなみの唾液の量は相当なもので、半紙をベタベタにしただけでは足りず、いまだに口元から筆を伝ってダラダラと垂れ流れている。",
+   "en": "",
+   "refs": [
+    "CUT11.BIN:03c5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "しぇんしぇい………。ふゅ、ふゅでを………",
+   "en": "",
+   "refs": [
+    "CUT12.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "息苦しいのだろうか、まなみはしきりに口をパクパクさせて俺に許しを乞おうとしている。",
+   "en": "",
+   "refs": [
+    "CUT12.BIN:035f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "だめだ。継続こそ最も重要。さぁ、第二段階を始めよう。",
+   "en": "",
+   "refs": [
+    "CUT12.BIN:0394"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "第二段階こそ俺の狙いであった。従順なまなみの「お勉強」と同時に俺は気持ち良くなれる………。全く、あこぎな授業だ。",
+   "en": "",
+   "refs": [
+    "CUT12.BIN:03c1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "上半身すっぱだかとなった俺は、自らを素材として書道の練習を強要する。",
+   "en": "",
+   "refs": [
+    "CUT12.BIN:0410"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "筆を咥えたまま、俺に懇願するような目でみつめるまなみ。ふふ……可愛いものだ。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0356"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "怯えた表情も、かなり様になってきたようだ。\nふふん、ひょっとしてマゾの素養があるんじゃあないのか？",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0387"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "緊張と不安が入り交じった瞳が、オレ様のサディスティックな気分を刺激するようだ。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:03c4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "さて、まなみちゃん。今度は唾液が滴らないよう、僕の身体に字を書いてみよう。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0406"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "しぇんしぇひ、じょうして………しょんにゃ………",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0437"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "うむ、壁に半紙を張り付けても同じ様なものだが、決定的な違いがあるんだ。それはね………",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0450"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "さっきも言った通り、君の筆圧が問題なんだ。僕の体に直接字を書くことで、僕は君の筆圧を直に感じることができる。わかったかい。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:0491"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "次のスペシャルレッスンは、オレ様も気持ち良くさせてもらわないとな。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:04e8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "生徒の学習の結果を正確に把握するのは、教師にとって重要な課題なのだ。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:051a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "ま、この調子でバシバシいかせてもらおうかな。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:054e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "こくりとうなずくまなみ。さぁ、お楽しみの始まりだ。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:056c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "それでは課題を出そう。「[口淫]」と書いてごらん。",
+   "en": "",
+   "refs": [
+    "CUT13.BIN:058a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00080",
+   "kind": "item",
+   "jp": "よく観察する",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0349"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00081",
+   "kind": "item",
+   "jp": "筆の感覚を楽しむ",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0352"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "まなみは額に汗を浮かべ、真剣な表情で一心不乱に筆を動かしている。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:035f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "まなみのゆっくりとした筆使いが、俺の一物を刺激する。\n震えるような毛先の動きが、なんとも言えない感覚だ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:038f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "まなみは、まさに真剣そのものといった表情で、筆の動きをコントロールしている。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:03d5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "筆の微妙な感覚を楽しむ俺の下半身は、次第に力を帯び始め雄々しく隆起する。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0408"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "まなみの口は、咥えた筆を落とすまいと、絶間なく動きつづける。その動きが、またなんとも艶めかしい。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0441"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "まなみの唾液で湿り気を帯びた筆先が、怒張した一物に柔らかく触れる。じれったいような甘い感覚に支配される……",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:047d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "よ、よしっ。いいぞ、その調子だ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:04c9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "ふぉごふぉご………",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:04de"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "赤く上気したまなみの頬……筆の動きも次第に熱を帯びてくる。そして、少女特有の青く、濃厚な体臭が俺の鼻孔を刺激する………。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:04ea"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "次第に荒くなっていくまなみの吐息が、俺の股間に吹きかけられる。人肌に暖められた風と、生き物のように動き回る筆の動きが俺の煩悩を刺激する。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0541"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "ううっ、もう我慢できん！！！\nまなみちゃん、第三段階に移ろう。筆を放したまえ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:05a0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "筆を咥え、桜色に上気したまなみの全身を眺める。全く、ためいきが出るほど美しい。しかも、その表情が実に欲情を誘うのだ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:05e2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "まなみちゃん、それでは先生の[筆]を使って授業を進めよう。この筆の使い方はわかるかい？",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0633"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "今度は、[本物の筆]を使ったレッスンをしていただこうか。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:066a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "ゴクッと喉を鳴らしながら首を振るまなみ。\nまったく、可愛いやつだ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0692"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "まなみの瞳にはまだ不安の色が残っているものの、先程のような緊張や恐怖は取り払われたようだ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:06bf"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "よろしい。では、教えてあげよう。この筆は[特別製]で、硯をするように、君の手や口で擦りあげると[墨]が出てくるんだ。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:06fd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "やってごらん。",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:074b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "いい調子だ。このまま楽しい授業に突入だ！",
+   "en": "",
+   "refs": [
+    "CUT14.BIN:0754"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "まなみはおそるおそる手を近づけ、男性自身を擦りあげる。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "小さな手がかもし出す、その微妙な感覚が俺の理性を吹き飛ばそうとする。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:036e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "先生、これでいいでしょうか？",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:03a0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "よ、よし…………そのまま、上下に擦りあげて………………そうだ………！",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:03b3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "まなみは無心に俺の分身を擦りあげる。可愛らしいしっとりしたその掌の感触は、この上もない至高の感覚を俺に与えつづける………。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:03dc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "はぁはぁ、そろそろ限界か………",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:042e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "はぁはぁ。その調子だ。よしっ、少し、力を入れてスピードをあげるんだ。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0440"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "おおっ、で………出る！！",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0478"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "俺は１回目の精をまなみの顔面に放出してしまった。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0489"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "よ……よし………。なかなか良かったよ。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:04ab"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "まなみは、顔射を受けて恐怖に引きつった顔をするかと思いきや、いかにも嬉々とした表情で瞳を輝かせている。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:04cd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "それじゃあ、次は口で墨をきれいに舐め取るんだ。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0510"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "はい。",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0530"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "ふぅ……この程度のテクニックでいかされてしまうとは、オレ様も焼きが回ったかな？",
+   "en": "",
+   "refs": [
+    "CUT15.BIN:0534"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "まなみは嬉しそうにうなずくと、俺のカルピスを巧みに舐めあげ、ごくごくと喉を鳴らして飲み干してしまう。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "今までのオドオドした態度とはガラッと変わって、オレの精液を美味しそうに舐めあげるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0399"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "どうだい、まなみちゃん、先生のカルピスの味は？",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:03da"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "う{X86A2}{X86A2}{X86A2}む……こいつめ、なかなか調教が進んでいるような気がする………一体、誰が……？",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:03fb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "先生、………おいしい………",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0434"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "まなみは、俺の精液を舐め上げながら、実に嬉しそうな表情を見せている。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0444"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "全部きれいにするんだよ。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0473"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "…ああ、せんせい、美味しい……",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0483"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "間違いない、こいつは誰かに調教されて、セックスの虜になってしまっている。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:0495"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "淫乱なロリータ…ドールそのものじゃあないか。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:04c4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "うむむむむ………こいつは母親が怪しいな。\nこんな調教ならオレ様も大歓迎なんだがなぁ。",
+   "en": "",
+   "refs": [
+    "CUT16.BIN:04e3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "お楽しみの最中、ごめんなさい。見ていられなくって………",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "いつの間にか、沙夜子が目前に立ちはだかり、嘲笑を浮かべつつ俺ににじり寄ってくる。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:036a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "その服装は、先程のビニール系ぴちぴちスーツから、何とも大胆にブラックレザーのボンデージへと変わっていた。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:03a3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "まさしく、生唾モノの女王様ルックは迫力満点だ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:03f2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "沙夜子は豊満な身体を惜し気もなく見せつけるように、身をくねらせつつ俺に迫ってくる。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0426"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "露出度の高いボンデージスーツに替わっても、沙夜子の若々しさはいささかも変わらない。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:045d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "衣装は人を変えると言うが、沙夜子も先程とはうって変わって、より大胆に、より艶めかしく変身したようだ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0498"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "先生、優秀な方と承っておりましたが………残念ですわ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:04dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "なな、どういうつもりでっ！？",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0502"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "そのような、快感だけをむさぼるスタイルの授業は、宅では必要としておりませんのよ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0514"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "い、いやっ、しかし………！",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:054b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "なるほど、巧みにセックスへ誘うアイディアには感心しましたわ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:055a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "………………………",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0587"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "しかし、まなみが望んでいるのは、そんなノーマルな愛情ではございませんことよ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:0591"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "それは、いったい………！？",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:05c3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "や、やはり、まなみを調教していたのは、母親である沙夜子だったのか！",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:05d2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "しかし、母娘の関係で調教するとは、さすがのオレ様も恐れ入ったぜ。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:05fe"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "この状況から言って、俺がすぐさま追い出されるようではなさそうだな。",
+   "en": "",
+   "refs": [
+    "CUT17.BIN:062d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "反射的にまなみの方を振り向いた俺は、先程とは打って変わって恐怖のために青ざめ、うち震えるまなみを見た。",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "その表情は顔面蒼白で、俺の前で見せていた脆弱さが可愛く思えるほど、あからさまな恐怖と驚きに満ちた代物だった。",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:038e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "こんな、生意気な小娘にはね………調教が必要ですのよ…！",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:03de"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "悪意に満ちた微笑を俺に送りつつ、沙夜子は腰のポケットに装着されていたであろう鞭を取り出す。",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0406"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "沙夜子が、妖しげな笑みを浮かべると、それに呼応するかのようにまなみの表情が引きつる。",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0456"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "これから、どんな恐怖が待っているというのだ？",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0490"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "そ、それは………？！",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:04ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "これの使い方は、御存じ？",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:04b9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "先程、玄関で俺を出迎えてくれた淑女はもういない…………ここにるのは、ブラックレザーに身を包んだ一人のサディストだ！",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:04cb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "い、いや………しかし………！",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0521"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "なら………教えて差し上げますわ。\n………こう、使うのよッ！！",
+   "en": "",
+   "refs": [
+    "CUT18.BIN:0531"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "冷ややかに愛娘を見つめていた沙夜子は、耐えかねたように鞭の一撃を容赦なくまなみに振るう。",
+   "en": "",
+   "refs": [
+    "CUT19.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "バシッ！！！",
+   "en": "",
+   "refs": [
+    "CUT19.BIN:0384"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "凄絶と言うよりも、むしろ、気持ちいい程の乾いた音が室内に響く。",
+   "en": "",
+   "refs": [
+    "CUT19.BIN:0391"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "くうっ！！",
+   "en": "",
+   "refs": [
+    "CUT19.BIN:03bd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "喉の奥から絞るように出されたまなみの悲鳴が、鞭の響きと共鳴する。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "ほらほらっ、もっといつもの様に泣き叫ぶのよッ！！\n先生に本当のまなみちゃんをお見せなさいっ！",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:0375"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "ビシッ、バシッ！！",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:03b1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "間断なく沙夜子の手で鞭は踊りつづける。汗にまみれ、嗜虐の喜びに燃える沙夜子のさまは、狂気の沙汰だ。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:03c3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "まなみは………まなみは苦痛に顔を歪め、涙を流しつつも、じっと耐えている。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:040d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "しかも、その酔ったような表情は、痛みに耐えていると言うよりは、押し上げる快感を押し隠しているようにも思える。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:043a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "俺は、まなみの隠された性癖を垣間見たような気がした。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:047f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "しかし、やはりそれは不思議な光景だった。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:04a3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "狂気に執りつかれたように鞭を振るう母親と、その行為を嫌悪でなく、喜びを持って受け入れる娘の交歓図。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:04be"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "異常としか言い様のないありさまだが、その中に見え隠れするエロスが、俺を捕らえて放さない。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:0505"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "さすがの俺も茫然とする他なかった。",
+   "en": "",
+   "refs": [
+    "CUT20.BIN:0542"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "ディレクター：\n　　　　　　　　　　　　社長",
+   "en": "",
+   "refs": [
+    "END.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "プロデューサー：\n　　　　　　　　　　　ふくろう\n　　　　　　　　　　　　　　　(行くぜ冬コミ、原稿だ！)",
+   "en": "",
+   "refs": [
+    "END.BIN:0368"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "設定／原作：\n　　　　　　　　　　 今西 精二\n　　　　　　　　　　　　　　　　　（スタジオ・ピッグ）",
+   "en": "",
+   "refs": [
+    "END.BIN:03ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "音楽：\n　　　　　　　　　　 度会 達也\n　　　　　　　　　　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "END.BIN:03f4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "作画監督：\n　　　　　　　　　　 小船井 充\n　　　　　　　　　　　　　　　　　（Ｋプロダクション）",
+   "en": "",
+   "refs": [
+    "END.BIN:042c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "作画：\n　　　　　　　 （有）Ｋプロダクション",
+   "en": "",
+   "refs": [
+    "END.BIN:0472"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "グラフィックス・チーフ：\n　　　　　　　　　　　ぱきら\n　　　　　　　　　　　　（アテナちゃんきゃわゆいっ！）",
+   "en": "",
+   "refs": [
+    "END.BIN:0498"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　　 水鼠\n　　　　　　　　　　　　(アテナを使っちゃいけないなぁ)",
+   "en": "",
+   "refs": [
+    "END.BIN:04e1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　デンジャ吉竹\n　　　　　　　　　　　　　(椰子の木と赤貝はダメだなぁ)",
+   "en": "",
+   "refs": [
+    "END.BIN:0524"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　　絵師華高\n　　　　　　　　　　　　　　　　　（同人計画停滞中…）",
+   "en": "",
+   "refs": [
+    "END.BIN:0571"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　　のりさん\n　　　　　　　　　　　　　　　　　（ＳＥの一部製作者）",
+   "en": "",
+   "refs": [
+    "END.BIN:05bb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "グラフィックス／デバッグ：\n　　　　　　　　　　　結城春架\n　　　　　　　　　　　　　　　　（周りは敵だらけ、[怒]）",
+   "en": "",
+   "refs": [
+    "END.BIN:0601"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　　闇隠疾風\n　　　　　　　　　　　　　　　　（初の連続休暇ッス！）",
+   "en": "",
+   "refs": [
+    "END.BIN:0654"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "グラフィックス：\n　　　　　　　　　　　 岩吉\n　　　　　　　　　　　　　　　　　　（サラは最高だ！）",
+   "en": "",
+   "refs": [
+    "END.BIN:069f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "プログラム：\n　　　　　　　　　　　たけゆき\n　　　　　　　　　　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "END.BIN:06e5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "プログラム：\n　　　　　　　　　　　したっぱ\n　　　　　　　　　　　　　　　　　　　　　　　　　　　",
+   "en": "",
+   "refs": [
+    "END.BIN:071e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "製作著作：\n　　　　　　　　　　 ＳｃｏｏＰ",
+   "en": "",
+   "refs": [
+    "END.BIN:0758"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "数分も鞭による「調教」が続いただろうか………？",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "冷静な判断力を失いつつある俺には、数時間にも、数秒間にも思えた。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0369"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "はぁはぁと息を切らした沙夜子は俺に向き直り、妖艶な笑みを浮かべ、勝ち誇ったように囁く。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0398"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "先生、わたくしの「調教」お気に召しまして？",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:03d4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "いやぁ………全く、結構なお手前で………",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:03f0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "あまりに間抜けな反応ぶりに自分でイヤになってしまったが沙夜子の方はそんなこと、お構いなしの様子である。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:040a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "ほほほ、お誉めにあずかり、光栄ですわ。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0451"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "わたくしも、今日は久々に「調教」に熱が入りましたの。\n最近はマンネリ気味で………",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:046a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "自信たっぷりの沙夜子の講釈も上の空に、聞いていると………はて、まなみはどうなったんだと急に気になり、足元に目をやる……。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:04a5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "やれやれ、親が親なら娘も娘だ。けだる気に細められた瞳は微かに涙を浮かべている。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:04f4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "先程の興奮の余韻だろうか、まだ息が荒い。こいつは明らかに、痛みのためでなく快楽による興奮だ。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:052a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "しかし、上気して桜色に染まった肌はどうだ、汗を浮かべ吸い付くようなきめ細かさと滑らかさを呈している。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:056c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "所々に鞭の傷跡が痛々しいが、若く、滑らかなまなみの肌はすぐにそれを覆い隠してしまうだろう。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:05af"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "まなみの肌に、吸い寄せられたように見入っている俺の視線に気付いた沙夜子は、刺すような眼差しで俺を見つめる。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:05ed"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "その視線には、娘の若さに対する嫉妬を感じさせるものがあった……。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0636"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "しかし、それは一瞬のことで、先程の冷酷な微笑に戻ると、甘くささやく………",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0661"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "まぁ、この子ったら、こんなに興奮しちゃって………",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0691"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "もっとも、生意気におねだりしてまで来て頂いた先生ですもの、このぐらいの折檻は嬉しくて当然ですわ。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:06ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "さぁ、先生。続きはどうしましょう？",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:06ef"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "妖しい視線を送ってくる沙夜子が、妙に艶めかしい。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0712"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "先生、どうしたんですか？",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:073e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "くそっ、こんな混乱した状態でなければ俺も喜んで「調教」に参加するところだが、今日はどうも勝手が違う。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:074f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "沙夜子は不敵な笑みを浮かべて俺を見つめている。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0798"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "……え、え～と…………",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:07ba"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "さぁ、どうなさったんです？",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:07c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "沙夜子がしゃしゃり出てから調子が狂いっぱなしだ。いまいましいが、もう少し、様子を見ることにしよう。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:07d7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "沙夜子はしびれを切らしたように、鞭をもてあそんでいる。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0819"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "まいったな、沙夜子さん、お見逸れしました。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:083c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "ここは、素直に誉め言葉でもかけておくか…。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0857"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "あなたなら、素晴らしい家庭教師になれることを、僕が請け負いますよ。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0873"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "ところで、後学のために、もぉ少し、あなたの「調教」術を拝見できませんかね。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:089f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "めったにお目にかかれない、実に興味深い授業内容ですからね。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:08cf"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "自尊心をくすぐる率直な誉め言葉に、沙夜子は皮肉そうな微笑で同意のウインクを返す。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:08f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "うーむ、色っぽい。実に絵になる女だ。",
+   "en": "",
+   "refs": [
+    "CUT21.BIN:0938"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "そして、沙夜子はヒールの踵をまなみの小さな乳房に置くと無表情にそれを踏みにじり、高圧的な命令を発する。",
+   "en": "",
+   "refs": [
+    "CUT22.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "まなみ、ポニーを取ってらっしゃい。",
+   "en": "",
+   "refs": [
+    "CUT22.BIN:0392"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "反抗という言葉を知らぬかのように、まなみはのろのろと立ちあがり、部屋の隅にある扉に手をかける。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "まなみは、おずおずと扉に手をかけようとしている。\nそれを見ている沙夜子は、恐ろしいまでに高圧的な態度だ。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:038e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "はぁ、鞭の次は一体どんな責め道具が飛び出すことやら……",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:03d3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "ふふふ、興味津々と言ったところですわね。\n先生、次のメニューは乗馬ですわ。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:03fb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "乗馬………？",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:0430"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "まなみの、扉を開けようとする手が震えている。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:043d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "すると、木馬責めってやつかい？子供相手にちょっと、過激すぎるんじゃあないかなぁ。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:0459"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "木馬って言うと、あれか、三角木馬とかいう責め具……？",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:048d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "ふふふ、先生、まなみは乗馬がとっても得意なんですのよ。まなみ、先生にポニーちゃんをお見せしなさい。",
+   "en": "",
+   "refs": [
+    "CUT23.BIN:04b1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "はい………お母様…………",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "扉を開けようとする手を休め、従順に返事を返しながらも、恐怖にうち震えるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:0358"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "ぞくっとするほど嗜虐感をそそる刺激的な仕草だ。",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:038d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "先天的なＭの資質を備えた少女か………",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:03b0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "こんな子と暮らしていたら、沙夜子でなくとも淫美なＳＭ世界の虜になること請け合いだな。",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:03cc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "ぼんやりした意識の中、俺はこの少女を苛めぬき、許しを乞うまなみを、さらに過酷に責める自分の姿に酔っていた……",
+   "en": "",
+   "refs": [
+    "CUT24.BIN:0407"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "ああっ、せんせぇ………もっと………もっと苛めてぇぇ！！",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "くっ、こうか！！………こうか………！！",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:0368"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "あ……ああ……ああぁん！！………もっと、もっとぉ……！",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:0380"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "妄想の世界に没入し、ひたすら想像世界をさ迷う俺。\nそんな俺を沙夜子の冷たい声が現実世界に引き戻しす……",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:039f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "先生………如何なさいました？もぅ、調教は始まっていましてよ。",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:03ec"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "ほぅら、ご覧なさい。まなみも憧れの先生に見つめられて、今日はいつもよりも感じているみたいですわ。",
+   "en": "",
+   "refs": [
+    "CUT25.BIN:0412"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "我に返ると………後ろ手に縛られ、木馬に乗せられたまなみがよがり狂い、激しく木馬を揺り動かしている。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "さっきの我慢強さとは、うって変わって、我を失ったように激しく悶えるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:038b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "快感に打ち震え、のたうちまわる様子は、蜘蛛の巣にかかった哀れな蝶を連想させる。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:03b9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "あ……ああぁ、お……母さまぁ…もぉ……もぉ許してぇ…！",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:03ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "ふふふ、可愛いわよ、まなみ。今日は先生をお迎えしているせいかしら？とっても気持ちよさそうよ。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:040d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "ねぇ、正直にお話なさい。今日はいつもより感じているんでしょ。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:0445"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "あぁ……お母様ぁ………そんなぁ………！",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:046c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "さぁ！！もっと激しく身もだえなさい。そして、その淫らな姿を、先生の瞳にしっかりと焼き付けて差し上げなさい。",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:0483"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "あ……はん……はん……はん、お母様ぁ………あそこが、あそこが擦れて………き、気持ちいい！！",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:04c8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "さぁ、もっと………もっと激しく！！………可愛いわぁ………私のまなみ………",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:04ff"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "あっ………はぁあああ…………ん………！",
+   "en": "",
+   "refs": [
+    "CUT26.BIN:052a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "そして、激しいロデオを見るような、淫美なショーを繰り広げたまなみは、激しく木馬を揺り動かし、そして、ぐったりと木馬に倒れ伏してしまう。",
+   "en": "",
+   "refs": [
+    "CUT27.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "あっけにとられて豪華なショーに見入っていた俺は、下半身に暖かい弾力と圧迫感を感じる。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "視線を走らせたその先には………圧倒的なボリュームを誇る沙夜子の２つの乳房が、俺の分身を絞めあげる様が飛び込んでくる。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:038f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "おおぉ？！\nなんだ、この下半身に伝わる心地好い肉圧感は？",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:03e8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "うふふ………、先生。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:0411"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "まなみもお勉強に疲れたようですし、この辺で休憩は如何かしら？",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:041e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "先生のココも、息抜きが必要だっておっしゃているようですわね？",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:0447"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "………もちろん………わたくしも………ねぇ、子供の教育のためにも、お互いの理解が必要だと思いませんこと？",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:0471"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "沙夜子は、胸を大きくグラインドさせながら、俺に妖しげな視線を送っている。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:04b5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "い………いやっ、それは大変、重要なこと………です………ああっ、沙夜子さん………いい気持ちだ………！",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:04eb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "豪華なショーをたっぷりと見学したあとの俺の下半身は、これ以上ないくらいに充血し、怒張している。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:0529"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "煩悩が、俺を支配し、何かを考えるどころではない。",
+   "en": "",
+   "refs": [
+    "CUT28.BIN:056a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "沙夜子のバストに包まれた俺の分身はムクムクと隆起し、またたく間に力がみなぎってくる。",
+   "en": "",
+   "refs": [
+    "CUT29.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "そして、暖かい沙夜子の胸で育まれ、たっぷりと成長した息子はその喉元をノックする。",
+   "en": "",
+   "refs": [
+    "CUT29.BIN:0388"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "まるで、口による激しい愛撫を要求するように………。",
+   "en": "",
+   "refs": [
+    "CUT29.BIN:03c2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "まぁ、たくましいわ。でも、いけない子ね………。そんなに激しく跳ねまわって………。",
+   "en": "",
+   "refs": [
+    "CUT29.BIN:03e3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "先生っていたずらっ子ですわ…………そんな子にはきつーいお仕置きが必要ですわね。",
+   "en": "",
+   "refs": [
+    "CUT29.BIN:0410"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "と、言いながら沙夜子は一物を咥える。",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "あっ、あぁぁ………た、たまらん………！",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:0364"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "おどおどしながら咥えた、まなみのフェラチオも刺激的だったが、沙夜子の唇の動きは脳天を直撃するほどの激しさだ。",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:0379"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "たまらなくなった俺は慌ただしく、腰を前後させようと……",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:03ca"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "しかし……素早く俺の高まりを察知した沙夜子は、射精寸前でカウパー液を滴らせる、俺の分身をきつく握り締めた。",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:03ec"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "ふふっ、いけませんわよ、先生。自分だけ、気持ち良くなるなんて、許しませんわ。",
+   "en": "",
+   "refs": [
+    "CUT30.BIN:043a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "気品と淫美さの入り交じった含み笑いを浮かべた沙夜子は、いたずらっぽく俺の分身をひと舐めすると、壁に手をつき、ぷっくりとしたセクシーな臀部を俺にさらした。",
+   "en": "",
+   "refs": [
+    "CUT31.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "さぁ、そのいたずらっ子を、わたくしの熱い蜜壺で踊らせてちょうだい。",
+   "en": "",
+   "refs": [
+    "CUT31.BIN:03b3"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "うぉおおおお！！さ、沙夜子ぉ………",
+   "en": "",
+   "refs": [
+    "CUT31.BIN:03dd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "もう、無我夢中だった。俺は、狂った魔物の様に沙夜子にむしゃぶりついた。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "今にも燃え上がらんばかりに熱を持った肉棒を、沙夜子の秘壷に押し込む。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:037b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "ヒッという小さな悲鳴とも、歓喜とも聞こえる声をあげる沙夜子。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:03ae"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "あ、あひっ……………………す、凄いっ！先生、す、凄い！",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:03da"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "沙夜子に差し込まれた俺のモノを伝って、愛液が流れ出してくる。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:03fc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "んっ、んっ……あぐっ……あ、はぁはぁ……もっとぉっ！",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:0429"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "沙夜子がよがり声をあげるたびに、肉壁が俺のモノを絞り上げるように伸縮する。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:0446"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "……いぃっ！……いいのぉっ！……せんせぇっ！…そこっ！",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:047f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "俺の腰が動くたびに、二人の結合部から、ぐちゅぐちゅという卑猥な音が漏れだす。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:049f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "……あっ………あっ……うっ………うぅぁ……んぐ………！",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:04d8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "溜りに溜まった精を放出するまで、何もかもかなぐり捨て、セックスマシーンと化して腰を振り続ける………",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:04f6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "あ、あぅ、あっ！あぁ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}っ！んぁっき、来てぇ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}っ！",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:053c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "最後に激しく腰を沙夜子の腰に叩きつけ、沙夜子の中に、精を放った……。",
+   "en": "",
+   "refs": [
+    "CUT32.BIN:057f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "あらゆる力を吸い取られ、茫然とした俺に勝利者の優越感を満面の笑みで表現した沙夜子の顔が迫ってきた。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "先生、さすがにお噂通りの腕前ですわ。わたくしも久々に満足させて頂きましたわ。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:0393"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "沙夜子の身体からは玉のような汗が吹き出しており、彼女も一通り満足したかのようだ。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:03d4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "木馬の上にうち捨てられたままのまなみは、いくぶん不満気にこちらを見ている。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:040e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "少なくとも俺の方が沙夜子よりも若いはずなのに、どうも俺の方が体力的には参ってしまっているようだ。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:043d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "沙夜子は勝ち誇ったような笑みを浮かべている。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:0480"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "いやぁ………沙夜子さん、参りましたよ。僕も勉強させられました。素晴らしいテクニックだ………",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:049f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "ほほほ、先生ったらお上手ですこと。でも、それでは高いお月謝をお支払いしている意味がございませんわ。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:04dc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "そろそろ、評判の独創的な授業内容を御披露頂けませんかしら？",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:051f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "いやぁ………しかし………",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:054a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "そぉですの？まなみもきっと、先生の特別レッスンを待ちかねておりますわよ。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:0557"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "軽蔑したように鼻を鳴らす沙夜子。嘲笑の笑みが俺にはやけに挑戦的に感じられる。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:0586"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "こんなにも翻弄されてしまったのは初めてだ。\nどうにかして名誉挽回しなくては！",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:05be"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "さて、どういった手段で反撃してやろうか？",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:05ef"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "ここで引いては男がすたる。腹を決めた俺は咄嗟にひらめいた。",
+   "en": "",
+   "refs": [
+    "CUT33.BIN:060a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "よろしい。我が家に伝わる秘技を御披露しましょう。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "まなみちゃんを、ソファに寄りかかるように座らせてください。そうそう………。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:036b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "まだ、夢うつつのまなみを沙夜子と二人がかりで、ソファにもたれかかるように床に座らせる。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:0397"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "もちろん、両腕は後ろ手に縛ったままだ。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:03d1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "正座を崩したような姿勢の下半身は丸見えで、とめどなく愛液を溢れさせている様が、手に取るように見える。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:03eb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "それを隠そうともせずに、恍惚の眼差しで俺を見つめるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:0432"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "チクリと俺の心の片隅が痛んだが、なぁに、この子はこうされることを望んでいるんだと自分に言い聞かせ、仕込みにかかった。",
+   "en": "",
+   "refs": [
+    "CUT34.BIN:0459"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "器用にまなみを縛り上げる俺を、興味深そうに眺めている沙夜子。瞳が輝いている。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "そんな様子を眺めると、この女は先天的にサドの性質を持っているんだなと感じてしまう。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0380"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "まなみは、これからどんな責苦が待っているのかと、期待と不安の入り交じったような目をしている。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:03c6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "沙夜子の方は、まなみのことなどどうでもよいといった様子で、俺の緊縛術の方に気を取られているようだ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0402"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "母と娘の視線が俺の方に注がれている。やれやれ、とんだ家庭教師役だぜ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0446"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "沙夜子さん、ローソクを用意してくれないか？",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:047a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "ふふ………そぉ来ると思ったわ。でも、この子、火がダメなのよ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0498"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "昔、火事で主人を失った時の記憶が残っているのか、火を見せた時の暴れ方が普通じゃなくって、手がつけられないのよね………。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:04bf"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "大丈夫さ。俺の縛り方は特別で絶対にほどけない。しかも、暴れれば暴れるほど、皮膚に食い込んで身体の自由を奪う。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0512"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "さらに言えば、どれだけきつく食い込んでも身体に傷ひとつ負わせない、魔法の緊縛術なのさ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0563"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "ふぅうん…。でも、この子、狂っちゃうかもよ。壊れたおもちゃは恐怖を感じないから面白くないわ。ねぇ、壊さない自信はあって？",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:059f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "まぁ、大丈夫でしょう。僕にお任せ下さい。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:05e9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "さて、縛りの方は完璧だが、問題はまなみの方だな。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0605"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "このままいって、本当に大丈夫なのか？",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0628"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "ここで停滞していても、しかたがないしな。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0640"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "とにかくやるっきゃない！",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0659"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "と、気軽に安請け合いしたものの、若干の不安は否めない。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0667"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00082",
+   "kind": "item",
+   "jp": "ローソクを近づける",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:068d"
+   ],
+   "max_cells": 18,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00083",
+   "kind": "item",
+   "jp": "やっぱり止める",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:069c"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00084",
+   "kind": "item",
+   "jp": "ロープの縛り具合を見る",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:06a6"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "まぁ、なるようになるさ。と、半ば開き直った俺は、思い切って火のついたローソクをまなみの顔に近づける。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:06b8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "ここまで来て、止めるって事はないだろう？",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:06f9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "ロープの状態は完璧だ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0713"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "ひぃー…………や、やめてぇ………！！",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0726"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "恐怖のあまり、瞳を大きく見開き、じりじりと逃げまどうまなみ。予想以上の反応だ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:073b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00085",
+   "kind": "item",
+   "jp": "ローソクを離す",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0775"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "おいおい、これ以上やったらマズイのでは？",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0781"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "俺はまなみの緊張をときほぐすため、少しばかりローソクの炎を遠ざける。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:079c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "我が家に伝わる秘伝の緊縛術を施したロープは、暴れれば暴れるほど、まなみの身体を強く絞め上げていく。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:07cb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "あ……あぁ………あああ………ゆ、許してぇ………！",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0813"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "俺は、更にローソクの炎を近づける。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:082e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "いや、もう一息だ、もっと炎を近づけるんだ！",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0848"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "ロープは、まなみの身体を蜘蛛の巣のように絞め上げ、身動き一つ出来ないようにしている。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:0866"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "しかし、恐怖のあまりとは言えまなみの反応は過剰だった。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:08a0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "悲鳴をあげたかと思うと、ショック症状に陥ってしまったのだ。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:08c4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "瞳孔が開き、小刻みに痙攣する様はどう見ても危険だった。しかし、俺には勝算があった。",
+   "en": "",
+   "refs": [
+    "CUT35.BIN:08ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00086",
+   "kind": "item",
+   "jp": "見つめる",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0349"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00087",
+   "kind": "item",
+   "jp": "囁く",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:034f"
+   ],
+   "max_cells": 4,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00088",
+   "kind": "item",
+   "jp": "愛撫する",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0353"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "ショック状態に陥ったまなみはガタガタと震え、目も座ってしまっている。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:035a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "俺は、まなみの耳元に優しく囁く。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:038b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "まなみちゃん………しっかり見るんだ。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:03a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "火は使い方さえ誤らなければ、決して恐いものではないんだよ。さぁ、僕を信じて………！",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:03b6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "まなみの身体を、やさしく撫でるように愛撫する。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:03ed"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "先程までは暖かかった身体も、今は氷のように冷たくなっている。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:040b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "ガタガタと震えていた身体の動きが、少しは柔らかくなっている様な気がする。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0433"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "が、あいかわらず、まなみの視線は宙をさまよっている。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0466"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "さぁ、まなみちゃん…先生がついているから安心して！",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0486"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "そして、優しく全身を愛撫する。肌を密着させていくと予想通り、滑らかなまなみの肌が俺の肌に吸い付き、これ以上無い一体感を味合わせる。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:04a6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00521",
+   "kind": "msg",
+   "jp": "心なしか、まなみの瞳に光がもとってきたように見える。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0502"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00522",
+   "kind": "msg",
+   "jp": "しっかりして、まなみちゃん……炎なんて恐くないんだ！",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0522"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00523",
+   "kind": "msg",
+   "jp": "肌と肌が密着する快感は何者にも代えがたいモノだ。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0541"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00524",
+   "kind": "msg",
+   "jp": "俺は快感に酔いしれつつ、まなみの緊張を解きほぐすように愛撫を続けた。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0568"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00525",
+   "kind": "msg",
+   "jp": "しぶとい愛撫と、優しく見つめる俺の瞳に安心感を覚えたのか、緊張でガチガチだったまなみも、次第にリラックスしていった。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0596"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00526",
+   "kind": "msg",
+   "jp": "ほぉ～ら大丈夫だ、先生が一緒に居るからね。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:05eb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00527",
+   "kind": "msg",
+   "jp": "俺はまなみの全身をマッサージするように、愛情をこめて撫でまわす。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:060c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00528",
+   "kind": "msg",
+   "jp": "まだ、少女のあどけなさの残るまなみの肉体が、恐怖のために小刻みに震えている。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:0638"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00529",
+   "kind": "msg",
+   "jp": "青ざめていた頬にも赤みがかかり、次第に全身の筋肉もほぐれてきた。さぁ、もうひと押しだ。",
+   "en": "",
+   "refs": [
+    "CUT36.BIN:066c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00530",
+   "kind": "msg",
+   "jp": "まなみは、まだ少しローソクの炎を恐がっているようだ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0356"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00531",
+   "kind": "msg",
+   "jp": "恐怖にうち震える少女というのも、なかなかそそるものがあるな。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:037a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00532",
+   "kind": "msg",
+   "jp": "まなみちゃん、それじゃあこのローソクを使って君を気持ちよくしてあげよう。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:039f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00533",
+   "kind": "msg",
+   "jp": "でも…………恐い………",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:03cd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00534",
+   "kind": "msg",
+   "jp": "大丈夫。ツボを刺激するのに熱いモノを押しあてる治療法があるのを知ってるかい？",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:03db"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00535",
+   "kind": "msg",
+   "jp": "おびえつつも、俺に信頼の眼差しを寄せるまなみ。コクリとうなずく。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0412"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00536",
+   "kind": "msg",
+   "jp": "いい子だ。少し、熱いけど我慢するんだよ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:043e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00537",
+   "kind": "msg",
+   "jp": "ここはオレ様の巧みな話術で、まなみの恐怖心を取り払わなくてはな……。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:045b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00538",
+   "kind": "msg",
+   "jp": "ふむ、心のこもった言葉こそ、オレの最大の武器だ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:048a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00539",
+   "kind": "msg",
+   "jp": "ローソクの炎への恐怖心を取り除くには………甘い言葉こそ最適だ！",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:04ad"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00089",
+   "kind": "item",
+   "jp": "言葉で責める",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:04dd"
+   ],
+   "max_cells": 12,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00090",
+   "kind": "item",
+   "jp": "ローソクを垂らす",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:04e8"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00540",
+   "kind": "msg",
+   "jp": "桜色に火照ったまなみの身体は、炎の恐怖に怯えてうち震えている。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:04f5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00541",
+   "kind": "msg",
+   "jp": "鞭の傷跡がなまなましく残るまなみの素肌は、吐息とともにたよりなげに震えている。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0520"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00542",
+   "kind": "msg",
+   "jp": "涙を浮かべながら俺を見つめるまなみの瞳は、恐怖と哀願の色を浮かべている。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0553"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00543",
+   "kind": "msg",
+   "jp": "大丈夫だよ、まなみちゃん。先生がついているからね。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0586"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00544",
+   "kind": "msg",
+   "jp": "…………せんせい……………",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:05a7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00545",
+   "kind": "msg",
+   "jp": "ほら、火は慎重に扱えば、とっても役に立つものなんだ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:05b5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00546",
+   "kind": "msg",
+   "jp": "……せ、せんせい…………ほ、本当…？",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:05d8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00547",
+   "kind": "msg",
+   "jp": "ほら、もう恐くないだろう？",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:05ed"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00548",
+   "kind": "msg",
+   "jp": "……あの…………",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:05fd"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00549",
+   "kind": "msg",
+   "jp": "俺、まなみへの愛撫の手を休めずに、全身の性感帯のツボにローソクを垂らしてゆく。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0606"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00550",
+   "kind": "msg",
+   "jp": "あっ………あああ………！",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:063f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00551",
+   "kind": "msg",
+   "jp": "どぉだい？最初はドキッとするけど、後からじわりとローソクの熱が滲みだして、気持ちいいだろう？",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:064d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00552",
+   "kind": "msg",
+   "jp": "ほんとう………ちょっと熱いけど何だか…………じん……としちゃって………",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0690"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00553",
+   "kind": "msg",
+   "jp": "さぁ、もっとだ………",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:06b9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00554",
+   "kind": "msg",
+   "jp": "あ……はぁ……はぁ……せ、せんせぇ。何だか、身体がほてってきて、じんじんするのぉ………！",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:06c5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00555",
+   "kind": "msg",
+   "jp": "ふふ………気持ちいいかい？",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:06fa"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00556",
+   "kind": "msg",
+   "jp": "あぁ……気持ち………気持ちいいのぉ………せんせぇ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:070a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00557",
+   "kind": "msg",
+   "jp": "よし、そろそろ直接的な刺激も欲しくなるころだろう。身体が桜色に燃えて、全身で欲しがってるぜ。",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:0728"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00558",
+   "kind": "msg",
+   "jp": "あぁ……あふぅ……はぁはぁはぁ………も……もっとぉ……もっとぉ………！",
+   "en": "",
+   "refs": [
+    "CUT37.BIN:076a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00559",
+   "kind": "msg",
+   "jp": "興奮のあまり、激しく身をよじらせ、可愛いワレ目を俺にさらして哀願の眼差しを俺に向ける。",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00560",
+   "kind": "msg",
+   "jp": "せ……せんせぇ……何とかしてぇ……まなみ、まなみ、狂っちゃう！！",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:0386"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00561",
+   "kind": "msg",
+   "jp": "ふふん、こりゃ面白い。しばらく、放っておこう。",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:03ab"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00562",
+   "kind": "msg",
+   "jp": "快楽を求めて身をよじる少女か………いい肴だぜ。",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:03c7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00563",
+   "kind": "msg",
+   "jp": "俺様の思惑も知らず、媚びを含んだ瞳で俺と沙夜子を交互に見つめ、快楽の欲求に身をよじりつづけるまなみ。",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:03e9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00564",
+   "kind": "msg",
+   "jp": "我慢できなくなったのか、まなみは必死に俺の所まで這いずって来る。",
+   "en": "",
+   "refs": [
+    "CUT38.BIN:0436"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00565",
+   "kind": "msg",
+   "jp": "何と、俺の股間に頬を埋め息子に頬ずりを始めた。何とも信じられん娘だ。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00566",
+   "kind": "msg",
+   "jp": "精一杯の媚びを含んだ笑みを俺に向けつつ、頬で一物を愛撫するまなみ。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:037c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00567",
+   "kind": "msg",
+   "jp": "…んん……いい気持ちだ………",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:03ae"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00568",
+   "kind": "msg",
+   "jp": "まなみは、ひたむきなまでに、頬を俺の股間にすり寄せる。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:03c0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00569",
+   "kind": "msg",
+   "jp": "……あああぁぁ、先生…………せんせい…",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:03e2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00570",
+   "kind": "msg",
+   "jp": "未熟ながらも、精一杯の心のこもった愛撫は、俺の煩悩を刺激する。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:03f8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00571",
+   "kind": "msg",
+   "jp": "まなみの頬の温かみと、時々触れるカールした髪が俺の亀頭を、陰茎を、睾丸を、柔らかく、優しく撫でていく。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:0426"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00572",
+   "kind": "msg",
+   "jp": "……こ……これ………せんせいのが……ほ、欲しい………",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:046e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00573",
+   "kind": "msg",
+   "jp": "まなみが自虐的な態度で擦り寄ってくるのをながめながら、俺はサディスティックな気分に浸る…。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:048b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00574",
+   "kind": "msg",
+   "jp": "…と同時に、まなみがとてもいとおしく感じられた。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:04d0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00575",
+   "kind": "msg",
+   "jp": "……お、おねがいです………せ、せんせぇ………！",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:04ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00576",
+   "kind": "msg",
+   "jp": "いっこうに返事をしない俺にシビレを切らしたのか、まなみは一物への愛撫をよりいっそう加速する。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:0509"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00577",
+   "kind": "msg",
+   "jp": "首だけでなく、身体全体を使った動きは、これまで以上に複雑な感覚を俺に与える。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:0545"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00578",
+   "kind": "msg",
+   "jp": "……うぅっ……ま、まなみちゃん……………！",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:057e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00579",
+   "kind": "msg",
+   "jp": "さき程、沙夜子に放出して萎えていた俺の分身も活力を取り戻して来る。……いやっ、それ以上の充実度だ。",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:0595"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00580",
+   "kind": "msg",
+   "jp": "あ………あああ………欲しい………せ、先生のが………欲しいのぉ………",
+   "en": "",
+   "refs": [
+    "CUT39.BIN:05dc"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00581",
+   "kind": "msg",
+   "jp": "ふふん、まなみの方は完全に出来上がっているようだ。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0356"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00582",
+   "kind": "msg",
+   "jp": "まなみは、はあはあと甘い吐息をもらし、俺の方に哀願するような、うるんだ目を向けている。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0378"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00583",
+   "kind": "msg",
+   "jp": "沙夜子の嫉妬深い視線をチクチクと感じる。\nこりゃあ、ヤバイか？",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:03ae"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00584",
+   "kind": "msg",
+   "jp": "俺は様子をうかがうため、チラリと沙夜子の方を見やる。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:03df"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00585",
+   "kind": "msg",
+   "jp": "まなみちゃん、どうしても先生が欲しいのかい？",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0406"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00586",
+   "kind": "msg",
+   "jp": "…ああぁ…せんせい、が、欲しい………の……！",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0422"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00587",
+   "kind": "msg",
+   "jp": "いけない子だなぁ、まなみちゃんは、そんなオネダリばかりして！",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:043c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00588",
+   "kind": "msg",
+   "jp": "……お、お願い………せ、先生……！",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0463"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00589",
+   "kind": "msg",
+   "jp": "何が欲しいのか言ってごらん…？",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0479"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00590",
+   "kind": "msg",
+   "jp": "……い、いや、先生…………………",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:048e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00591",
+   "kind": "msg",
+   "jp": "そんなに息を切らして、どうしたんだい、まなみちゃん？",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:04a1"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00592",
+   "kind": "msg",
+   "jp": "だって、だって……せんせいが………！",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:04c0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00593",
+   "kind": "msg",
+   "jp": "据膳食わぬは何とやら………",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:04d7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00594",
+   "kind": "msg",
+   "jp": "しかし、気になるのは沙夜子の視線だ。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:04e9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00595",
+   "kind": "msg",
+   "jp": "あらら？\n沙夜子も恍惚然とした表情で俺達の痴態を見つめているではないか。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0503"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00596",
+   "kind": "msg",
+   "jp": "素早く体制を整えた俺は、まなみの上におおいかぶさる。",
+   "en": "",
+   "refs": [
+    "CUT40.BIN:0537"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00597",
+   "kind": "msg",
+   "jp": "俺は、まなみの秘壷に一物をあてがう。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00598",
+   "kind": "msg",
+   "jp": "まだ蕾のままのまなみの秘所は、ぴったりと閉じたままだがその上に、しっとりとした愛液をたたえている。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0362"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00599",
+   "kind": "msg",
+   "jp": "じゃぁ……………………………入れるよ……。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:03a0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00600",
+   "kind": "msg",
+   "jp": "俺が、耳元に囁くと、まなみは期待と恐怖で緊張しながらもコクリとうなづく。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:03b8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00601",
+   "kind": "msg",
+   "jp": "………んんっ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:03ee"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00602",
+   "kind": "msg",
+   "jp": "俺はまなみの身体をしっかりと固定すると、まだ何者も受け入れたことのない、まなみの中へと侵入する。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:03f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00603",
+   "kind": "msg",
+   "jp": "………はぁぁっんっ！……………せ、せんせぇっ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0435"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00604",
+   "kind": "msg",
+   "jp": "身体を大きく動かして、上へ上へと逃げようとするまなみ。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:044f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00605",
+   "kind": "msg",
+   "jp": "しかし、俺の両腕がしっかりと身体を押さえつけているのでまなみはピクリとも動けない。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0473"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00606",
+   "kind": "msg",
+   "jp": "……じゃ……動くよ……",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:04a9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "i00091",
+   "kind": "item",
+   "jp": "激しく動く",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:04bb"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "i00092",
+   "kind": "item",
+   "jp": "優しく動く",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:04c3"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: one line in its box"
+  },
+  {
+   "id": "m00607",
+   "kind": "msg",
+   "jp": "まなみは、初めての痛みをこらえるかのように、目をしっかりと閉じ、身体を固く緊張させている。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:04cb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00608",
+   "kind": "msg",
+   "jp": "やわらかなまなみの肉体の感触を楽しむように、俺は腰を動かす…まなみは、苦痛にうち震えているようだ。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0503"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00609",
+   "kind": "msg",
+   "jp": "声をあげる事が罪悪とでも考えているのか、まなみは吐息と時折漏れ出るあえぎ声意外に、悲鳴すらあげようとしない。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0541"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00610",
+   "kind": "msg",
+   "jp": "…い……あぐ…………ん……痛っ………！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:058d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00611",
+   "kind": "msg",
+   "jp": "まなみの表情は苦痛と官能に歪んでいる。それにしても、きつい………。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:05a4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00612",
+   "kind": "msg",
+   "jp": "…はぁ……んぁっ！……んんっ！………ひぃ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:05ce"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00613",
+   "kind": "msg",
+   "jp": "処女の上、未発達のまなみの身体には、俺のビッグマグナムは刺激が強すぎたようだ。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:05e7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00614",
+   "kind": "msg",
+   "jp": "んっ、んっ、んぁ！……ぐ………痛………！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0625"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00615",
+   "kind": "msg",
+   "jp": "まなみの秘所から一筋の血が流れ出し、絨毯にしみを作っている。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:063e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00616",
+   "kind": "msg",
+   "jp": "はぁ……はぁ……はぁ……",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0668"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00617",
+   "kind": "msg",
+   "jp": "少しでも痛みを和らげるため、俺はゆるやかな律動を送る。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0675"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00618",
+   "kind": "msg",
+   "jp": "あ……ああぁ………ふぉお………お……お……あ……あ…！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:069a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00619",
+   "kind": "msg",
+   "jp": "ゆっくりと、深く動く俺の腰に呼応するように、まなみの吐息が乱れ、甘く、せつない、あえぎ声がもれる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:06b7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00620",
+   "kind": "msg",
+   "jp": "ん……あふ……あぁ……………んぐ…………あぅ……！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:06f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00621",
+   "kind": "msg",
+   "jp": "まなみの身体をいたわるように、ゆっくりと腰を動かす……幼く、はかなげなまなみの身体が、震え、もだえる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0713"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00622",
+   "kind": "msg",
+   "jp": "まなみは、初めて襲いかかる貫通の痛みに耐えるように、目を閉じ身体を震わせている。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0752"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00623",
+   "kind": "msg",
+   "jp": "握り締められたまなみ手がかすかに震えている。額にうっすらとにじむ汗が、時折眼鏡の縁を伝って落ちていく。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0787",
+    "CUT41.BIN:07cb"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00624",
+   "kind": "msg",
+   "jp": "…ん……痛っ……い、いたぁぃっ…せ、せんせぇ{X86A2}{X86A2}っ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:080f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00625",
+   "kind": "msg",
+   "jp": "俺が激しく腰を動かすと、まなみは苦痛の悲鳴をあげる。小さな秘壷が、更に収縮して、俺の一物を絞めあげる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:082e"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00626",
+   "kind": "msg",
+   "jp": "…いぃっ……いっ……痛いっ………せ、せんせ………！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0878"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00627",
+   "kind": "msg",
+   "jp": "俺の一物が深く押し入ると、まなみの身体がビクンビクンと大きく波打つ。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0894"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00628",
+   "kind": "msg",
+   "jp": "せ、せんせぇっ……！……へ、変になっちゃう……っ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:08ca"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00629",
+   "kind": "msg",
+   "jp": "まなみのあえぎ声に刺激された俺は、ピストン運動をさらに加速する。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:08e7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00630",
+   "kind": "msg",
+   "jp": "………あん……あぁ……はぁ……せんせい………き、気持ちいいよぉ……",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0915"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00631",
+   "kind": "msg",
+   "jp": "俺の一物をまなみの中へ、ゆっくりと、浅く深く、差し込んでいく。肉壁がねっとりと絡み付き、ひだが亀頭の裏側を擦りあげる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0939"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00632",
+   "kind": "msg",
+   "jp": "………も、もぅ……へ、変なのぉっ！…………はあぁっ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:098b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00633",
+   "kind": "msg",
+   "jp": "俺はやさしく、いたわるように律動を繰り返す。まなみは、初めて感じる結合の快感にうち震え、よがり声をあげる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:09a9"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00634",
+   "kind": "msg",
+   "jp": "………せんせぇ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}っ！あぁ{X86A2}{X86A2}{X86A2}{X86A2}{X86A2}っ！",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:09ef"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00635",
+   "kind": "msg",
+   "jp": "ゆっくりとではあるが、力強く、深く、まなみの蜜壷に侵入と後退を繰り返す。まなみは、必死に俺にしがみつこうとしている。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0a15"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00636",
+   "kind": "msg",
+   "jp": "……ああっ……………んあぁ……はぁはぁ…………",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0a61"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00637",
+   "kind": "msg",
+   "jp": "なす術を知らずに俺にかじりつくまなみに、いとおしさが込み上げてくる。",
+   "en": "",
+   "refs": [
+    "CUT41.BIN:0a79"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00638",
+   "kind": "msg",
+   "jp": "はぁ……はぁ……はぁ……うぅ……あ……あ……あ……！",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00639",
+   "kind": "msg",
+   "jp": "次第に、まなみは感じ始めているようだ。若いまなみの蜜壺は熱を帯び始め、締め付けが激しさを増す。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:0365"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00640",
+   "kind": "msg",
+   "jp": "たまらず、俺の律動のペースも上がっていく。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:03a7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00641",
+   "kind": "msg",
+   "jp": "はぁ……はぁああん……せ、先生…き、気持ちいいよう…！",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:03c5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00642",
+   "kind": "msg",
+   "jp": "まなみの蜜壷からあふれだした愛液は、卑猥な音とともに絨毯に、点々とした染みをつくっていく。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:03e6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00643",
+   "kind": "msg",
+   "jp": "徐々にあえぎが高まり、痛みが和らいだまなみの身体は俺をこれまで味わったことのない快感と興奮の世界へと誘う。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:0421"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00644",
+   "kind": "msg",
+   "jp": "たまりかねた俺は、思わず息子を蜜壺から引き抜いた。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:046c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00645",
+   "kind": "msg",
+   "jp": "小さな口をいっぱいに広げ、新鮮な呼気を求めて大きく胸を動かすまなみ。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:048f"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00646",
+   "kind": "msg",
+   "jp": "はぁはぁと吐息が漏れるたびに、激しく動く未発達な胸と、隆起を繰り返すへその周りが、いかにも幼女らしい。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:04bf"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00647",
+   "kind": "msg",
+   "jp": "まなみにとっての初めての体験…………",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:0506"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00648",
+   "kind": "msg",
+   "jp": "様々な思いが胸をかすめたのだろう。まなみは何とも表現しがたい感動の眼差しを俺に向ける。",
+   "en": "",
+   "refs": [
+    "CUT43.BIN:051c"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00649",
+   "kind": "msg",
+   "jp": "すると、それを待っていたかのように沙夜子が俺を押し倒し一物にむしゃぶりつく。",
+   "en": "",
+   "refs": [
+    "CUT44.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00650",
+   "kind": "msg",
+   "jp": "そして、まなみも………",
+   "en": "",
+   "refs": [
+    "CUT44.BIN:037b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00651",
+   "kind": "msg",
+   "jp": "あぁ………せんせい、おいしい、おいしい……………！",
+   "en": "",
+   "refs": [
+    "CUT45.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00652",
+   "kind": "msg",
+   "jp": "んん……むぐ………あぁ、いけませんわ、先生ったらこんなになって！",
+   "en": "",
+   "refs": [
+    "CUT45.BIN:0364"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00653",
+   "kind": "msg",
+   "jp": "母娘の絶妙な舌のハーモニー……………………………………俺は、本能のおもむくまま、激しく放出する。",
+   "en": "",
+   "refs": [
+    "CUT45.BIN:0389"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00654",
+   "kind": "msg",
+   "jp": "激しく、官能的な時間が終わり、俺と沙夜子は向き合って、くつろいだ時間を過ごしている。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00655",
+   "kind": "msg",
+   "jp": "まなみは疲れ果てたのだろう、沙夜子の膝ですやすやと寝入っている。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:0387"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00656",
+   "kind": "msg",
+   "jp": "感心致しましたわ、先生。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:03b2"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00657",
+   "kind": "msg",
+   "jp": "まなみの火炎恐怖症は絶望的で、絶対直らないって思っていましたの、わたくし。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:03c4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00658",
+   "kind": "msg",
+   "jp": "まぁね、要は愛情の問題さ。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:03f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00659",
+   "kind": "msg",
+   "jp": "奥さんのように、自分の欲望を満たすためのサドじゃあなくって、愛情を込めた調教には、奴隷も愛情を持って応える。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:040a"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00660",
+   "kind": "msg",
+   "jp": "それが一番、大事なことなのですよ。",
+   "en": "",
+   "refs": [
+    "CUT46.BIN:0455"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00661",
+   "kind": "msg",
+   "jp": "さぁて、天狗の鼻をへし折られた沙夜子め。どれほど悔しそうな顔を見せるだろう？",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00662",
+   "kind": "msg",
+   "jp": "そう思って、興味半分で沙夜子の反応を見ると、意外とさっぱりした邪気の無い笑顔をしているぞ。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:037d"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00663",
+   "kind": "msg",
+   "jp": "ふぅうん………なるほど………負けたわ。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:03c0"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00664",
+   "kind": "msg",
+   "jp": "あなたの噂を聞いて、若造が何を偉そうに、と思って天狗の鼻をへし折ってやろうと呼んだのだけれど………………",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:03d6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00665",
+   "kind": "msg",
+   "jp": "鼻をへし折られたのはわたくしのようね。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:041b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00666",
+   "kind": "msg",
+   "jp": "うふふ………まぁいいわ。\nわたくしもいい気分転換になったし………",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0431"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00667",
+   "kind": "msg",
+   "jp": "しかし………沙夜子さん、どうして鬼気迫るほどのサディズムを発揮して、まなみちゃんを調教するんだ？",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0456"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00668",
+   "kind": "msg",
+   "jp": "そこの所が俺にはよく、わからんのだが………？",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0499"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00669",
+   "kind": "msg",
+   "jp": "ふふ……ファッションデザイナーていう職業はプレッシャーによるストレスが大きくってね。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:04b5"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00670",
+   "kind": "msg",
+   "jp": "まぁ、わたくしのストレス解消のためにやってる部分も否定できないけど……",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:04f7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00671",
+   "kind": "msg",
+   "jp": "まなみも、ファッションデザイナーとしての第一歩を踏み出したことだし……",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0527"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00672",
+   "kind": "msg",
+   "jp": "この世界の慣習やプレッシャーに押しつぶされないための、教育の意味合いが大きいわね。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:055b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00673",
+   "kind": "msg",
+   "jp": "わたくしも、こうやって育てられて強くなったのですわよ。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0597"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00674",
+   "kind": "msg",
+   "jp": "はぁあ………沙夜子さんにそんな教育……もとい、調教をした奴の顔が見たいよ。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:05b6"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00675",
+   "kind": "msg",
+   "jp": "あらっ、その方なら貴方もよぉく、御存じですわよ。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:05e7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00676",
+   "kind": "msg",
+   "jp": "わたくしの家庭教師は貴方の[お父様]ですもの。",
+   "en": "",
+   "refs": [
+    "CUT47.BIN:0607"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00677",
+   "kind": "msg",
+   "jp": "予想もしなかった沙夜子のひと言に狼狽した俺は、穴があくほど沙夜子を見つめる。",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00678",
+   "kind": "msg",
+   "jp": "きっと、宇宙で一番間抜けな表情だったに違いない。",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:0380"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00679",
+   "kind": "msg",
+   "jp": "しかし、沙夜子は上品だが今まで見せなかったような、優しい笑顔を浮かべ、俺に囁く。",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:03a4"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00680",
+   "kind": "msg",
+   "jp": "驚かれまして？",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:03de"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00681",
+   "kind": "msg",
+   "jp": "わたくしは、貴方のお父様の教えを受けてこの業界を生き抜くことができましたのよ。",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:03e7"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00682",
+   "kind": "msg",
+   "jp": "そんな素晴らしい方のご子息に教えて頂いたのですもの。まなみもきっと、ファッションデザイナーとして立派にやってゆけますわ。",
+   "en": "",
+   "refs": [
+    "CUT48.BIN:041b"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00683",
+   "kind": "msg",
+   "jp": "慈しむように膝枕にまなみを抱く沙夜子は美しく、無邪気に眠るまなみの表情もまた、安らかな笑顔に包まれていた。",
+   "en": "",
+   "refs": [
+    "CUT49.BIN:0349"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00684",
+   "kind": "msg",
+   "jp": "ううむ、今回は俺様の完敗だな………\nしかし、親父が相手じゃあ分が悪いか………？！",
+   "en": "",
+   "refs": [
+    "CUT49.BIN:0391"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "b00001",
+   "kind": "batch",
+   "jp": "[[[[[ インモラルスタディ シナリオ３ ]]]]]",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:1"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00002",
+   "kind": "batch",
+   "jp": "プロテクトメモリが既に使用されています。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:16"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00003",
+   "kind": "batch",
+   "jp": "このプログラムは、HIMEM.sys や VMM386.exe な",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:17"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00004",
+   "kind": "batch",
+   "jp": "どのデバイスドライバと排他的に動作します。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:18"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00005",
+   "kind": "batch",
+   "jp": "他のプロテクトメモリを使用するデバイスドライ",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:19"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00006",
+   "kind": "batch",
+   "jp": "バやプログラムを切り離してから、再度実行して",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:20"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00007",
+   "kind": "batch",
+   "jp": "ください。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:21"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00008",
+   "kind": "batch",
+   "jp": "詳しくはＭＳ－ＤＯＳのマニュアル等を参考にし",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:22",
+    "IMM03.BAT:34",
+    "IMM03.BAT:43"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00009",
+   "kind": "batch",
+   "jp": "てください。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:23",
+    "IMM03.BAT:35",
+    "IMM03.BAT:44"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00010",
+   "kind": "batch",
+   "jp": "※ XMS, VCPI, DPMI, DPMS 等とは共存できません。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:24"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00011",
+   "kind": "batch",
+   "jp": "ゲームの実行に必要な割り込みベクタが、既に",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:28"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00012",
+   "kind": "batch",
+   "jp": "使用されています。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:29"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00013",
+   "kind": "batch",
+   "jp": "必要な割り込みベクタは 50h, 51h の２つです。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:30"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00014",
+   "kind": "batch",
+   "jp": "他のデバイスドライバ、あるいは常駐プログラム",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:31"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00015",
+   "kind": "batch",
+   "jp": "が原因と考えられますので、それらを使用しない",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:32"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00016",
+   "kind": "batch",
+   "jp": "ようにしてから、ゲームを再実行して下さい。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:33"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00017",
+   "kind": "batch",
+   "jp": "ゲームの実行に必要なだけのメモリが足りません。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:40"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00018",
+   "kind": "batch",
+   "jp": "使用可能コンベンショナルメモリを、４８０ＫＢ",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:41"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  },
+  {
+   "id": "b00019",
+   "kind": "batch",
+   "jp": "以上確保してから、再実行してください。",
+   "en": "",
+   "refs": [
+    "IMM03.BAT:42"
+   ],
+   "max_cells": 78,
+   "note": "printed by the batch file when the game cannot start"
+  }
+ ]
+}

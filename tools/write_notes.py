@@ -1386,6 +1386,70 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def scoop_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speakers' tags", "item": "menu items", "title": "menu headings",
+             "batch": "batch file lines"}
+    out = ["# %s%s (Scoop)" % ("\u2665 " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Scoop's Adventure Script Interpreter (`%s`, with SCBIOS.COM and GSHELL.COM resident): each "
+            "script (`*.BIN`, \"Adventure v1.00\") is a stack machine's code followed by its strings; the code "
+            "pushes a string's offset in the table (op 0Dh) right before the op that shows it (44h a "
+            "message or a speaker's tag, 4Ah a menu's item, 4Bh a menu's heading).  The English goes after "
+            "the end of the file and only those pushes change, so the code, every jump and every other "
+            "string stay where they were.  `pc98tl/scoop.py` documents the format, `pc98tl/scoop_tl.py` "
+            "the English.  Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "* The program draws ASCII half-width itself (SCBIOS.COM writes the text VRAM, a byte a cell) "
+            "and pages the window itself, so the English needs no program patch; the patcher breaks the "
+            "lines between words (0Dh) at the window's %d cells, from where the message before left the "
+            "line." % cfg["window_cells"],
+            "* Bytes A0h-DFh are characters from AI.COM's table (the hiragana the scripts use); `jp` shows "
+            "them as they look."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (\u2665) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` %d: the window's width): any length; the patcher breaks the "
+            "lines between words, the window waits for a key and starts over when full.  `\\n` in the "
+            "English forces a new line.  `[` and `]` around words show them in the highlight colour, as in "
+            "the Japanese.  A script with its English may take 64 KB; a longer build is refused and names "
+            "the script." % cfg["window_cells"],
+            "* Speakers' tags (`n` ids), menu items (`i` ids) and menu headings (`t` ids, shown "
+            "highlighted): one line, `max_cells` the Japanese's; past it reported.",
+            "* Batch file lines (`b` ids): printed by `%s` when the game cannot start (memory or "
+            "interrupts in use); one line." % cfg.get("batch", ""),
+            "* `{C1}`-style tokens are the colour commands inside a string and must be kept; `{X86A2}` is "
+            "NEC's long line (the scripts draw out a vowel with it).",
+            "* English is ASCII (half-width); `<` and `>` (a tag's marks) are written `(` and `)`; another "
+            "character is written full-width when Shift-JIS has it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title logo, the window frames)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def cinema_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1834,6 +1898,11 @@ def main():
             continue
         if cfg.get("encoding") == "lmern":
             out = lmern_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "scoop":
+            out = scoop_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
