@@ -8,6 +8,7 @@ and research/notes_extra.json (per-game remarks that no file records).
 """
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -1598,7 +1599,9 @@ def ail_notes(name, cfg, doc, adult, clear, tests, extra):
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "name": "speakers' names", "item": "choice items", "title": "scene titles",
-             "label": "program strings"}
+             "prompt": "prompts", "label": "program strings"}
+    widths = sorted({e["max_cells"] for e in strings if e["kind"] == "msg"})
+    used = sorted({m for e in strings if e["kind"] != "label" for m in re.findall(r"%[A-Za-z]", e["jp"])})
     out = ["# %s%s (Ail ADV.EXE)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -1617,9 +1620,9 @@ def ail_notes(name, cfg, doc, adult, clear, tests, extra):
                 cfg["program"], cfg["scenarios"]), "",
             "* The program draws a single byte half-width from the kanji ROM by itself, so English takes a byte a "
             "letter; it lays a text out two bytes at a time, so each text is padded to an even length.",
-            "* The program breaks a message's lines by itself (27 pairs in a slot indented under the name, 29 in "
-            "one from the window's edge) and pages the window; the patcher fills each line with spaces to that "
-            "width so the breaks fall between words.",
+            "* The program breaks a message's lines by itself (%d cells in a slot indented under the name, %d in "
+            "one from the window's edge, read off the program) and pages the window; the patcher fills each line "
+            "with spaces to that width so the breaks fall between words." % (widths[0], widths[-1]),
             "* The program's own strings (menus, prompts, messages) are replaced in place in the program."]
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
@@ -1627,21 +1630,30 @@ def ail_notes(name, cfg, doc, adult, clear, tests, extra):
     out.append("Translation and the content classification (♥) are done by the translation model; "
                "%d of %d strings have English so far." % (done, len(strings)))
     out += ["", "## Limits", "",
-            "* Messages (`m` ids, `max_cells` the line's width, 54 or 58 cells): any length; the patcher breaks "
+            "* Messages (`m` ids, `max_cells` the line's width, %s cells): any length; the patcher breaks "
+            % " or ".join(str(w) for w in widths) +
             "the lines between words and the program pages.  `\\n` in the English forces a new line.  A scenario "
             "with its English may take %d bytes unpacked (the program's buffer); a longer build is refused and "
-            "names the scenario's strings.  The fullest scenarios are within a few bytes of that already, so "
-            "their English must take no more bytes than the Japanese (two bytes a character, one a letter)." %
+            "names the scenario's strings.  The fullest scenarios are within a few hundred bytes of that already, "
+            "so their English must take no more bytes than the Japanese (two bytes a character, one a letter)." %
             cfg["scenario_room"],
             "* Speakers' names (`n` ids): `max_cells` the Japanese's.",
             "* Choice items (`i` ids): one line in the choice's box, `max_cells` the choice's widest Japanese "
             "item; past it reported.",
             "* Scene titles (`t` ids): shown with a choice and kept with a save, `max_cells` the Japanese's; "
-            "past it reported.",
-            "* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width "
-            "character two); past it cut and reported.  `%s`-style marks are kept.",
-            "* `>` is the program's colour mark and `%` its insert mark: in the English they are written `)` and "
-            "`pct`.",
+            "past it reported."]
+    if kinds.get("prompt"):
+        out.append("* Prompts (`p` ids): a line shown on its own, `max_cells` the Japanese's; past it reported.")
+    out += ["* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width "
+            "character two); past it cut and reported.  `%s`-style marks are kept."]
+    if used:
+        out.append("* Inserts (%s) must be kept: `%%m` the hero's name (the program string the name entry "
+                   "starts with, as the player types it), `%%s` the pronoun the player picks (the program strings "
+                   "listing them), `%%A` to `%%Z` a number.  The patcher breaks lines with an insert at its widest "
+                   "and fills them at its narrowest, so a longer one only moves a few spaces to the next line.  An "
+                   "insert the program has no string for is refused." % ", ".join("`%s`" % m for m in used))
+    out += ["* `>` is the program's colour mark: in the English it is written `)`; a `%` that is no insert is "
+            "written `pct`.",
             "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else "
             "as `?`."]
     out += ["", "## Not handled", "",

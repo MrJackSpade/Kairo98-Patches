@@ -5,15 +5,18 @@ ADV.EXE:offset in its data):
 
 * "msg": a message: any length.  The program lays a message out two bytes at a time (a Shift-JIS
   character, or two ASCII letters, each drawn half-width from the kanji ROM) and breaks the line
-  after 27 of them (54 cells) in a slot sub-op 00h fills (indented under the name), after 29 (58
-  cells) in one sub-op 01h fills (from the window's edge): `max_cells` the narrower of its slots'.
-  The patcher breaks the English between words by filling the line with spaces to that width, and
-  the program pages by itself (four lines a page, the name the first page's first).  `\\n` in the English forces a new
-  line.  `>` (the program's colour mark) is written `)` and `%` (its insert mark) `pct`.
+  after so many of them (`ail.Build.line`: Kyouhaku's 27, 54 cells, in a slot sub-op 00h fills,
+  indented under the name, and 29, 58 cells, in one sub-op 01h fills, from the window's edge; the
+  other builds' 26 and 28): `max_cells` the narrower of its slots'.  The patcher breaks the English
+  between words by filling the line with spaces to that width, and the program pages by itself (four
+  lines a page, the name the first page's first).  `\\n` in the English forces a new line.  `>` (the
+  program's colour mark) is written `)` and `%` (its insert mark) `pct`.
 * "name": a speaker's name (the texts in 【】): `max_cells` the Japanese's.
 * "item": a choice's item (one line in the choice's box): `max_cells` the choice's widest Japanese
   item; past it reported.
 * "title": a scene's title, shown with a choice: `max_cells` the Japanese's; past it reported.
+* "prompt": a line another sub-op shows on its own (Inma Seifukugari's before the girls' choice):
+  `max_cells` the Japanese's; past it reported.
 * "label": a string of the program's (its menus, its prompts, its messages): in place, `max_cells`
   its room in bytes (a letter one, a full-width character two); past it cut and reported.
   `%s`-style marks in it are kept.
@@ -22,8 +25,9 @@ English is ASCII (half-width); another character is written full-width in Shift-
 else `?`.  Every text is padded with a space to an even length (the program reads two bytes at a
 time).  A changed scenario is packed again (`ail.pack`); unpacked it may take game.json's
 "scenario_room" (the program's buffer: Kyouhaku's ADV.EXE unpacks a scenario to DS:8A98h, the C
-library's string buffer at D214h after it: 18300 bytes); a longer build is refused and names the
-scenario's strings.
+library's string buffer at D214h after it, Majogari no Yoru ni's to DS:766Eh, the same at BDEAh,
+Inma Seifukugari's to DS:756Ah, its next variable at BCE6h: 18300 bytes each); a longer build is
+refused and names the scenario's strings.
 """
 import json
 import os
@@ -33,8 +37,7 @@ from . import ail, exepack
 from .alice_sys2_tl import sha256
 from .text import pseudo
 
-PREFIX = {"msg": "m", "name": "n", "item": "i", "title": "t", "label": "l"}
-LINE = {0x00: 54, 0x01: 58}     # a message's line in a slot sub-op 00h or 01h fills
+PREFIX = {"msg": "m", "name": "n", "item": "i", "title": "t", "prompt": "p", "label": "l"}
 SUBST = {"…": "...", "’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-", ">": ")", "%": "pct"}
 # the program's strings: Shift-JIS (with ASCII) up to a NUL, in its data (after its code)
 PROG_STR = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\xfc]|[\x20-\x7e])*[\x81-\x9f\xe0-\xef][\x40-\xfc]"
@@ -91,32 +94,78 @@ def _sjis(ch):
     return e
 
 
-def encode(text, width=None):
-    """English as the program's bytes: ASCII as it is, another character in Shift-JIS (on an even
-    place), the lines filled with spaces to width (a new line: the rest of the line filled), padded to
-    an even length."""
+def _parts(text, inserts, label=False):
+    """The text as characters and inserts (`%` and a letter of `inserts`); another `%` written `pct`
+    (in a label, the program's own string, kept: its printf marks)."""
+    out, i = [], 0
+    while i < len(text):
+        if text[i] == "%" and text[i + 1:i + 2] in (inserts or {}):
+            out.append(text[i:i + 2])
+            i += 2
+            continue
+        out += list(text[i] if label and text[i] == "%" else SUBST.get(text[i], text[i]))
+        i += 1
+    return out
+
+
+def insert_cells(build, image):
+    """{letter: (fewest, most cells)} for a message's inserts: %m and %s the program's strings they
+    show (in the patched program's image: the fewest the strings there, the most their room, up to the
+    next string, where a name the player types goes), %A to %Z a number (one to five full-width
+    digits)."""
+    out = {chr(c): (2, 10) for c in range(ord("A"), ord("Z") + 1)}
+    for letter, offs in build.inserts.items():
+        found = []
+        for o in offs:
+            end = image.index(0, o)
+            nxt = end
+            while nxt < len(image) and image[nxt] == 0:
+                nxt += 1
+            if end > o:
+                found.append((end - o, nxt - 1 - o))
+        if found:
+            out[letter] = (min(f for f, _r in found), max(r + (r & 1) for _f, r in found))
+    return out
+
+
+def encode(text, width=None, inserts=None, label=False):
+    """English as the program's bytes: ASCII as it is, another character in Shift-JIS and an insert
+    (`%` and its letter) on an even place, the lines filled with spaces to width (a new line: the rest
+    of the line filled; an insert counted at its fewest cells, inserts {letter: (fewest, most)}),
+    padded to an even length."""
     out = bytearray()
-    t = "".join(SUBST.get(c, c) for c in text)
-    lines = t.split("\n")
+    lines = text.split("\n")
     for k, line in enumerate(lines):
-        start = len(out)
-        for ch in line:
-            if " " <= ch <= "~":
+        col = 0
+        for ch in _parts(line, inserts, label):
+            if len(ch) == 1 and " " <= ch <= "~":
                 out.append(ord(ch))
+                col += 1
+                continue
+            if len(out) & 1:
+                out.append(0x20)
+                col += 1
+            if len(ch) == 2:
+                out += ch.encode("ascii")
+                col += inserts[ch[1]][0]
             else:
-                if len(out) & 1:
-                    out.append(0x20)
                 out += _sjis(ch)
+                col += 2
         if width and k < len(lines) - 1:
-            used = (len(out) - start) % width
-            if used or len(out) == start:
+            used = col % width
+            if used or not col:
                 out += b" " * (width - used)
     if len(out) & 1:
         out.append(0x20)
     return bytes(out)
 
 
-def wrap(text, width):
+def _cells(word, inserts):
+    """A word's cells, an insert at its most (and one for the space putting it on an even place)."""
+    return sum(inserts[p[1]][1] + 1 if len(p) == 2 else cells(p) for p in _parts(word, inserts))
+
+
+def wrap(text, width, inserts=None):
     """The English with new lines between words at width cells."""
     out = []
     for k, para in enumerate(text.split("\n")):
@@ -124,7 +173,7 @@ def wrap(text, width):
             out.append("\n")
         col = 0
         for j, word in enumerate(para.split(" ")):
-            w = cells(word)
+            w = _cells(word, inserts)
             if j:
                 if col + 1 + w > width and col:
                     out.append("\n")
@@ -185,9 +234,12 @@ def run_extract(here, src):
             elif kind == "item":
                 add("item", jp, ref, rooms[off], "a choice's item: one line in its box (the choice's widest "
                     "Japanese item)")
-            else:
+            elif kind == "title":
                 add("title", jp, ref, cells(jp), "a scene's title, shown with the choice (and kept with a "
                     "save): `max_cells` the Japanese's")
+            else:
+                add("prompt", jp, ref, cells(jp), "a line shown on its own (not in the message window): "
+                    "`max_cells` the Japanese's")
     counts, strings = {}, []
     for key in order:
         ent = merged[key]
@@ -206,13 +258,15 @@ def run_extract(here, src):
 
 
 SHOW_MESSAGE = range(0x03, 0x08)     # the sub-ops showing the message box (the slots put before them)
+CHOICE = (0x08, 0x09)                 # the choices (their text the scene's title, the slots their items)
 
 
 def classify(d, build):
-    """({offset: "msg", "name", "item" or "title"}, {offset: a message's line or an item's room}):
-    the texts the slots hold (sub-ops 00h and 01h put a text in a slot) are a message's (slot 0 the
-    speaker's name, in 【】) when a sub-op showing the message box comes after them, a choice's items
-    when the choice (a sub-op with a text of its own, the scene's title) does."""
+    """({offset: "msg", "name", "item", "title" or "prompt"}, {offset: a message's line or an item's
+    room}): the texts the slots hold (sub-ops 00h and 01h put a text in a slot) are a message's (slot 0
+    the speaker's name, in 【】) when a sub-op showing the message box comes after them, a choice's
+    items when the choice (with a text of its own, the scene's title) does; another sub-op's text is a
+    prompt."""
     kinds, rooms = {}, {}
     pending = []
 
@@ -222,19 +276,21 @@ def classify(d, build):
         for o, s in pending:
             jp = _show(ail.text_at(d, o))
             if kind == "item":
-                kinds.setdefault(o, "item")
-                rooms[o] = room
+                if kinds.setdefault(o, "item") == "item":
+                    rooms[o] = room
             else:
                 kinds.setdefault(o, "name" if jp.startswith("【") and jp.endswith("】") else "msg")
                 if kinds[o] == "msg":
-                    rooms[o] = min(rooms.get(o, LINE[s]), LINE[s])
+                    rooms[o] = min(rooms.get(o, build.line[s]), build.line[s])
         pending.clear()
     for kind, _p, off, sub, _first in ail.events(d, build):
         if kind == "text" and sub in (0x00, 0x01):
             pending.append((off, sub))
-        elif kind == "text":
+        elif kind == "text" and sub in CHOICE:
             settle("item")
             kinds.setdefault(off, "title")
+        elif kind == "text":
+            kinds.setdefault(off, "prompt")
         elif sub in SHOW_MESSAGE:
             settle("msg")
     settle("msg")
@@ -242,7 +298,7 @@ def classify(d, build):
 
 
 def _pseudo(e):
-    if e["kind"] in ("item", "title"):
+    if e["kind"] in ("item", "title", "prompt"):
         return pseudo(e["id"], e["max_cells"], 1.0)[:max(2, e["max_cells"])]
     if e["kind"] == "label":
         marks = FORMAT.findall(e["jp"])
@@ -250,7 +306,8 @@ def _pseudo(e):
             1, e["max_cells"] - sum(len(m) + 1 for m in marks))]
     if e["kind"] == "name":
         return "[" + pseudo(e["id"], e["max_cells"], 1.0)[:max(1, e["max_cells"] - 2)] + "]"
-    return pseudo(e["id"], cells(e["jp"]))
+    marks = re.findall(r"%[A-Za-z]", e["jp"])
+    return (" ".join(marks) + " " if marks else "") + pseudo(e["id"], cells(e["jp"]))
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -285,11 +342,17 @@ def run_patch(here, src, dst, mode="en"):
             continue
         dollar = exe[s:e].endswith(b"$")
         room = e - s - dollar
-        b = encode(en)
+        b = encode(en, label=True)
         if len(b) > room:
             warn.append("%s: %d bytes, cut to %d" % (ids[ref], len(b), room))
             b = b[:room - (room & 1)]
         prog[s:e] = (b + b"$" * dollar).ljust(e - s, b"\0" if not dollar else b" ")
+    ins = insert_cells(build, bytes(prog[hdr:]))
+    for r, en in by_ref.items():
+        bad = sorted({m.group() for m in re.finditer(r"%[a-z]", en) if m.group()[1] not in ins})
+        if bad and not r.startswith(cfg["program"] + ":"):
+            raise SystemExit("%s: %s inserts nothing in this game's program (its inserts: %s)" % (
+                ids[r], ", ".join(bad), ", ".join("%" + c for c in sorted(ins))))
     raws = {k: blk for k, blk in enumerate(ail.blocks(raw_snl))}
     room = cfg["scenario_room"]
     changed = 0
@@ -304,10 +367,10 @@ def run_patch(here, src, dst, mode="en"):
             if ratio < 1.0:
                 en = en[:max(4, int(len(en) * ratio))]
             if ids[ref].startswith("m"):
-                new[off] = encode(wrap(en, rooms[ref]), rooms[ref])
+                new[off] = encode(wrap(en, rooms[ref], ins), rooms[ref], ins)
             else:
-                b = encode(en)
-                if ids[ref][0] in "it" and cells(en) > rooms[ref]:
+                b = encode(en, inserts=ins)
+                if ids[ref][0] in "itp" and cells(en) > rooms[ref]:
                     warn.append("%s: %d cells, past its room (%d)" % (ids[ref], cells(en), rooms[ref]))
                 new[off] = b
         return new, ail.rebuild(d, refs, new) if new else d

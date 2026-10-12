@@ -376,5 +376,10 @@
   "remarks": [
    "English releases exist on other platforms (Nocturnal Illusion, Windows and later); none on the PC-98."
   ]
+ },
+ "inma_seifukugari": {
+  "not_handled": [
+   "The opening's scrolling prologue (drawn in its pictures, ANIM*.ANM)."
+  ]
  }
 }

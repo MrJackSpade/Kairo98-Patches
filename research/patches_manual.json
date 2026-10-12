@@ -2258,5 +2258,31 @@
    "url": "https://vndb.org/v4302",
    "source": "VNDB"
   }
+ ],
+ "Ail.zip/Majogari no Yoru ni": [
+  {
+   "label": "This repo: games/majogari_no_yoru_ni (patcher working, machine translation in progress)",
+   "url": "../games/majogari_no_yoru_ni/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v3481",
+   "url": "https://vndb.org/v3481",
+   "source": "VNDB"
+  }
+ ],
+ "Ail.zip/Inma Seifukugari": [
+  {
+   "label": "This repo: games/inma_seifukugari (patcher working, machine translation in progress)",
+   "url": "../games/inma_seifukugari/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v3152",
+   "url": "https://vndb.org/v3152",
+   "source": "VNDB"
+  }
  ]
 }

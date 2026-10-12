@@ -1,0 +1,11 @@
+{
+ "title": "Majogari no Yoru ni",
+ "key": "Ail.zip/Majogari no Yoru ni",
+ "image": "Majogari no Yoru ni\\Majogari no Yoru ni [HD]\\Majogari no Yoru ni.hdi",
+ "encoding": "ail",
+ "program": "ADV.EXE",
+ "game_dir": "MAJO",
+ "scenarios": "SALL.SNL",
+ "scenario_room": 18300,
+ "boot_steps": "25:shot,1:enter,6:shot,1:mouse=120;48,1:mouse=117;49,2:shot,1:lclick,5:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

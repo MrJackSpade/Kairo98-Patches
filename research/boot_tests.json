@@ -3705,5 +3705,25 @@
    "The opening: speakers' names and their messages, a long message, the command menu",
    "OK: the names and messages in filler half-width (the program drawing single bytes from the ROM's half-width row); a long English message broken between words at 54 cells under the name and paged by the program (four lines a page); with its slot switched to sub-op 01h (a test build) at 58 cells from the window's edge; the command menu's items in filler"
   ]
+ ],
+ "majogari_no_yoru_ni": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's items in filler half-width (the program's own strings, in place); the game starts"
+  ],
+  [
+   "The name entry, its confirm clicked; the pronoun menu; the opening's messages",
+   "OK: the name entry's grid, prompt and name in filler (they are program strings); the pronoun menu's three items in filler; the messages in filler half-width, the inserts (%s the pronoun, %m the name) drawn from the patched program's strings, lines broken between words and the window paged; speakers' names in filler"
+  ]
+ ],
+ "inma_seifukugari": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's items in filler half-width (the program's own strings, in place); the game starts"
+  ],
+  [
+   "The opening (its scrolling prologue, clicked past), then the first scenes' messages",
+   "OK: the prologue is the pictures' (Japanese, as in the original); the speakers' names and messages in filler half-width, lines broken between words and the window paged (np21w shows this game's screens doubled, the original as well)"
+  ]
  ]
 }

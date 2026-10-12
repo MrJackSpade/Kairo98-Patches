@@ -1,0 +1,11 @@
+{
+ "title": "Inma Seifukugari",
+ "key": "Ail.zip/Inma Seifukugari",
+ "image": "Inma Seifukugari\\Inma Seifukugari [HD]\\Inma Seifukugari.hdi",
+ "encoding": "ail",
+ "program": "ADV.EXE",
+ "game_dir": "INMA",
+ "scenarios": "SALL.SNL",
+ "scenario_room": 18300,
+ "boot_steps": "25:shot,1:enter,8:shot,2:lclick,4:shot,2:lclick,4:shot,2:space,4:shot,2:esc,4:shot,2:rclick,4:shot,20:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

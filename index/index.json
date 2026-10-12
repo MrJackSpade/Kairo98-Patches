@@ -17185,15 +17185,27 @@
      "path": "Inma Seifukugari\\Inma Seifukugari [HD]\\Inma Seifukugari.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/inma_seifukugari (patcher working, machine translation in progress)",
+     "url": "../games/inma_seifukugari/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3152",
+     "url": "https://vndb.org/v3152",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17758 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Ail.zip/Kyouhaku",
@@ -17436,15 +17448,27 @@
      "path": "Majogari no Yoru ni\\Majogari no Yoru ni [HD]\\Majogari no Yoru ni.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/majogari_no_yoru_ni (patcher working, machine translation in progress)",
+     "url": "../games/majogari_no_yoru_ni/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3481",
+     "url": "https://vndb.org/v3481",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6754 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Ail.zip/Ruriiro no Yuki",
