@@ -12631,15 +12631,27 @@
      "path": "M Hard\\M Hard [HD]\\M Hard.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/m_hard (patcher working, machine translation in progress)",
+     "url": "../games/m_hard/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7263",
+     "url": "https://vndb.org/v7263",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18077 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aaru.zip/Rose Blood - Chi no Kawaki",
@@ -12693,15 +12705,27 @@
      "path": "Rose Blood - Chi no Kawaki\\Rose Blood - Chi no Kawaki [HD]\\Rose Blood - Chi no Kawaki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/rose_blood (patcher working, machine translation in progress)",
+     "url": "../games/rose_blood/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9062",
+     "url": "https://vndb.org/v9062",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18223 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aaru.zip/Zest to fantasy",

@@ -3769,5 +3769,25 @@
    "The main menu: the mouse to its second item (最初から始める), clicked; the first scenes' messages",
    "OK: the menu's description line in filler; the messages in filler half-width, broken between words into the window's lines, a key wait between them; no choice came up in these scenes (the choices' items untested)"
   ]
+ ],
+ "m_hard": [
+  [
+   "Boot from the hard disk: the title and its menu; Enter on its first item",
+   "OK: the menu's items in filler half-width (the program's strings, in place); the game starts"
+  ],
+  [
+   "The opening's messages, Enter after each",
+   "OK: the messages in filler half-width, lowercase letters right (written a byte higher), broken between words; no choice came up in these scenes (the choices' items untested)"
+  ]
+ ],
+ "rose_blood": [
+  [
+   "Boot from the hard disk: the title and its menu; Enter on its first item",
+   "OK: the menu's items in filler half-width (the program's strings, in place); the game starts"
+  ],
+  [
+   "The opening's messages, Enter after each",
+   "OK: the messages in filler half-width, lowercase letters right (written a byte higher), broken between words; no choice came up in these scenes (the choices' items untested)"
+  ]
  ]
 }

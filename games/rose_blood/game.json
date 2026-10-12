@@ -1,0 +1,9 @@
+{
+ "title": "Rose Blood - Chi no Kawaki",
+ "key": "Aaru.zip/Rose Blood - Chi no Kawaki",
+ "image": "Rose Blood - Chi no Kawaki\\Rose Blood - Chi no Kawaki [HD]\\Rose Blood - Chi no Kawaki.hdi",
+ "encoding": "aaru",
+ "program": "ROSE.EXE",
+ "game_dir": "ROSE",
+ "boot_steps": "25:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}

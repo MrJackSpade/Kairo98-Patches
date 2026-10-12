@@ -2366,5 +2366,31 @@
    "url": "https://vndb.org/v6958",
    "source": "VNDB"
   }
+ ],
+ "Aaru.zip/M Hard": [
+  {
+   "label": "This repo: games/m_hard (patcher working, machine translation in progress)",
+   "url": "../games/m_hard/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v7263",
+   "url": "https://vndb.org/v7263",
+   "source": "VNDB"
+  }
+ ],
+ "Aaru.zip/Rose Blood - Chi no Kawaki": [
+  {
+   "label": "This repo: games/rose_blood (patcher working, machine translation in progress)",
+   "url": "../games/rose_blood/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v9062",
+   "url": "https://vndb.org/v9062",
+   "source": "VNDB"
+  }
  ]
 }
