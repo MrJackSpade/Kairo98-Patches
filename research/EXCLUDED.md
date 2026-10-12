@@ -70,7 +70,7 @@ Nothing was ever extracted into the repo.
   stopped the game at start-up; to find out why, the strings of the start-up
   script (`DANGEL/B.ARC`, member 1, in the CD version's hard-disk install)
   were listed to see what the script draws.
-* **Acknowledged:** no.
+* **Acknowledged:** yes, 2026-10-12 (the maintainer, in the session that found it).
 
 ### What the game is
 
