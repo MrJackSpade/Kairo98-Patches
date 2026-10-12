@@ -1879,6 +1879,70 @@ def sgs21_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def yjwar_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "scene messages", "scene": "animated scenes' messages", "profile": "profile lines",
+             "battle": "battle lines", "doc": "data pages' paragraphs", "name": "unit names",
+             "label": "program strings"}
+    out = ["# %s%s (D.O.)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "D.O.'s `%s`: the scenes' messages are `*.TXB` files and the animated scenes `*.SC` files in "
+            "NCA archives (`SYSDATA.NCA`, `ANMSC.NCA`), their Shift-JIS with every bit inverted; the battle "
+            "lines (`*.MSG`), the data pages (`DATA_*.TXT`) and the unit table (`UNIT.DAT`) are plain files.  "
+            "`pc98tl/yjwar.py` documents the formats, `pc98tl/yjwar_tl.py` the English.  Unchanged files "
+            "rebuild byte for byte." % cfg["program"], "",
+            "* The program draws ASCII half-width by itself and breaks a line at its window's edge (mid-word); "
+            "the patcher breaks the English between words, filling each line's end with spaces.",
+            "* A message window holds four lines (a fifth is drawn over the screen); the patcher makes a longer "
+            "text several messages, a click each.",
+            "* The program's strings and its unit table are replaced in place in the program.",
+            "* The game asks for DIP switch SW2-8 off (`game.json` `dipsw`)."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Scene messages (`m` ids) and animated scenes' messages (`s` ids): any length, `max_cells` the "
+            "window's width (70 half-width cells).  `\\n` forces a new line.  The opening's pages are centred "
+            "line by line.",
+            "* Profile lines (`p` ids): one line each at a fixed place, `max_cells` 36; past it reported.",
+            "* Battle lines (`b` ids): broken at the battle window's 28 cells; at most 78 bytes (the longest "
+            "Japanese line), past it cut and reported.",
+            "* Data pages (`d` ids): a paragraph each, any length, broken at the page's 62 cells with the "
+            "Japanese's indents.",
+            "* Unit names (`n` ids): at most 19 bytes (cut past it); `max_cells` 16, the panels' room, past it "
+            "reported.",
+            "* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width "
+            "character two); past it cut and reported.  Keep `%s`/`%d` marks.",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, "
+            "else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2402,6 +2466,11 @@ def main():
             continue
         if cfg.get("encoding") == "sys98":
             out = sys98_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "yjwar":
+            out = yjwar_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

@@ -3811,5 +3811,27 @@
    "The opening's messages, a click after each",
    "OK: the messages in filler half-width, broken between words at the 50-cell window; a speaker's face picture shown and taken away with its message (the {G..} tokens kept)"
   ]
+ ],
+ "youjuu_senki": [
+  [
+   "Boot from the hard disk (DIP SW2-8 off): the start menu; its second item",
+   "OK: the menu's program strings in filler half-width (in place); the game starts"
+  ],
+  [
+   "The first scene's messages, a click each",
+   "OK: the messages in filler half-width, broken between words at the 70-cell window, a speaker's face beside them; a message past four lines goes on in a second (checked with a six-line test message)"
+  ],
+  [
+   "The HQ menu, its information item, the data page about the beasts",
+   "OK: the menus' program strings in filler half-width; the data page's paragraphs in filler, broken at the page's width with their indents"
+  ],
+  [
+   "The opening (start menu's first item), checked separately",
+   "OK: the opening's pages centred line by line in filler half-width"
+  ],
+  [
+   "The animated scenes, the profiles and the battle lines",
+   "untested: not reached in these runs (the leave scenes need the soldiers' consent; no battle was played)"
+  ]
  ]
 }

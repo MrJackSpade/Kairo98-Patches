@@ -1,0 +1,10 @@
+{
+ "title": "Youjuu Senki - A.D. 2048",
+ "key": "DO.zip/Youjuu Senki - A.D. 2048",
+ "image": "Youjuu Senki - A.D. 2048\\Youjuu Senki - A.D. 2048 [HD]\\Youjuu Senki - A.D. 2048.hdi",
+ "encoding": "yjwar",
+ "program": "YJWAR.EXE",
+ "game_dir": "GAME_YJ",
+ "dipsw": "3e f3 7b",
+ "boot_steps": "20:shot,0.2:mouse=0;-10,0.2:mouse=0;-10,0.2:mouse=0;-10,0.2:mouse=-10;0,0.2:mouse=-10;0,1:lclick,8:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,0.1:mouse=-10;-10,1:shot,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,1:shot,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=0;-10,0.1:mouse=0;-5,1:lclick,4:shot,0.1:mouse=0;10,0.1:mouse=0;5,0.1:mouse=0;3,1:lclick,4:shot"
+}

@@ -2454,5 +2454,18 @@
    "url": "https://vndb.org/v152",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/Youjuu Senki - A.D. 2048": [
+  {
+   "label": "This repo: games/youjuu_senki (patcher working, machine translation in progress)",
+   "url": "../games/youjuu_senki/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v127",
+   "url": "https://vndb.org/v127",
+   "source": "VNDB"
+  }
  ]
 }
