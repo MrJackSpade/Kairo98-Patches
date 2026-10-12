@@ -3461,5 +3461,15 @@
    "The first scene (the hero's room)",
    "OK: the command menu's items in filler in their boxes"
   ]
+ ],
+ "raidy_2": [
+  [
+   "Boot from the hard disk (the floppy version installed: RAI2.BAT, ZVA98 L2_OP)",
+   "OK: the first menu's items in filler, half-width"
+  ],
+  [
+   "The opening (L2_OP.ZSD) with Raidy's lines",
+   "OK: the speaker's name in filler on its plate (ten letters), the message's filler after it, half-width, broken between words at the window's edge, a new page after a key when the window is full; the title logo between"
+  ]
  ]
 }

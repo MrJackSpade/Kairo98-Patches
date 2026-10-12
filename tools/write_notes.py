@@ -1309,6 +1309,74 @@ def lmern_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "message runs", "name": "speakers' names", "engine": "program messages"}
+    prog, arc = cfg["program"], cfg["archive"]
+    out = ["# %s%s (ZyX)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "ZyX's engine (`%s`): the scripts are the members of the archive `%s` (a directory of names and "
+            "offsets); each is run from the code offset at its start, its labels (the words before the code) "
+            "the only places a jump or call goes, so a script may grow when its labels move with it.  A "
+            "message is a run of commands (colour, a key and a new page, a new line, the speaker, inserted "
+            "names and numbers) and text after FFh up to a NUL: bytes below 80h are characters from the "
+            "program's table, the rest Shift-JIS.  The speakers' names are `NAME.ZSD` (each byte rotated).  "
+            "`pc98tl/zyx.py` documents the formats and the program patch, `pc98tl/zyx_tl.py` the English.  "
+            "Unchanged files rebuild byte for byte." % (prog, arc), "",
+            "* The scripts are walked with the program's own op lengths (its table, and its routines for "
+            "the ops of variable length, recognised by their code) from their start and every label; the "
+            "text runs are rewritten and the labels moved by the bytes before them.",
+            "* `%s` gets a helper, put in after its code segment (the segments after it moved up): 80h "
+            "turns half-width letters on and off; a letter is drawn 8 dots wide from the ROM's ANK font "
+            "through the program's own drawing (colour, outline, the delay between letters); at a space "
+            "the line is broken when the next word would pass the window's edge, with the program's own "
+            "new line and, past the window's bottom, its key wait and new page.  The speakers' names' "
+            "loop gets the same letters." % prog]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Message runs (`m` ids, `max_cells` %d: a line's letters after the speaker's name): any "
+            "length; the window breaks lines between words and pages when full.  The line breaks and "
+            "pages of the Japanese are the script's own commands around a run, so `\\n` is a space.  A "
+            "run its note says is followed by an inserted name or number is drawn on directly before it.  "
+            "A script with its English may take 64 KB; a build past it is refused and names the script." %
+            cfg.get("window_cells", 0),
+            "* Speakers' names (`n` ids): 12 bytes: a letter one, two more for the half-width letters' "
+            "start and end, a full-width character two; past it cut and reported.",
+            "* Program messages (`e` ids): in their own bytes, `max_cells` the room; past it cut and "
+            "reported.  The pieces of the two disk prompts that the program writes a drive's letter and a "
+            "disk's number into keep their Japanese.",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has "
+            "it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title logo, the menus' frames)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def elfai_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -1687,6 +1755,11 @@ def main():
             continue
         if cfg.get("encoding") == "lmern":
             out = lmern_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "zyx":
+            out = zyx_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

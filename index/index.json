@@ -244586,7 +244586,14 @@
      "path": "Ikazuchi no Senshi Raidy 2\\Ikazuchi no Senshi Raidy 2 [FD]\\Ikazuchi no Senshi Raidy 2 (Disk I).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/raidy_2 (patcher working, machine translation in progress)",
+     "url": "../games/raidy_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15746 (erotic content)",
    "engine": "unknown",
@@ -244594,7 +244601,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "ZyX.zip/Let's! Pirates - Trouble Vacances",

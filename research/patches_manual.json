@@ -2017,5 +2017,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "ZyX.zip/Ikazuchi no Senshi Raidy 2": [
+  {
+   "label": "This repo: games/raidy_2 (patcher working, machine translation in progress)",
+   "url": "../games/raidy_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

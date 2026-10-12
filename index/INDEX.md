@@ -429,6 +429,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Silky's | Ushinawareta Rakuen | [This repo: games/ushinawareta_rakuen (patcher working, machine translation in progress)](../games/ushinawareta_rakuen/notes.md) |
 | Silky's | Valentine Kiss - Birth Days 2 | [This repo: games/valentine_kiss_2 (patcher working, machine translation in progress)](../games/valentine_kiss_2/notes.md) |
 | Tomboy | Night Walker - Mayonaka no Tantei | [This repo: games/night_walker (patcher working, machine translation in progress)](../games/night_walker/notes.md) |
+| ZyX | Ikazuchi no Senshi Raidy 2 | [This repo: games/raidy_2 (patcher working, machine translation in progress)](../games/raidy_2/notes.md) |
 
 ## Translations not yet matched to a collection title
 
@@ -7333,7 +7334,7 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 - ♥ Gakuen Bakuretsu Tenkousei! [FD HD]
 - ♥ Hercequary [FD HD extras]
 - ♥ Ikazuchi no Senshi Raidy [CD FD HD] — **EN**
-- ♥ Ikazuchi no Senshi Raidy 2 [CD FD HD]
+- ♥ Ikazuchi no Senshi Raidy 2 [CD FD HD] — *MTL (this repo)*
 - ♥ Let's! Pirates - Trouble Vacances [CD HD]
 - ♥ Ring Out!! [CD FD HD]
 - ♥ Takamizawa Kyosuke - Nekketsu!! Kyouiku Kenshuu [FD HD extras]
