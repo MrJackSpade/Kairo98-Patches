@@ -1589,6 +1589,73 @@ def sys98_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def ail_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speakers' names", "item": "choice items", "title": "scene titles",
+             "label": "program strings"}
+    out = ["# %s%s (Ail ADV.EXE)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Ail's `%s` (packed with EXEPACK): the scenarios are in `%s`, each LZSS-compressed; a scenario is "
+            "its tables, labels, code and text, the code reading each text by its offset.  The patcher walks the "
+            "code op by op (the sub-ops' arguments counted off the program's own routines) and lays the text "
+            "section out anew with the English, every offset moved; the code stays as it is.  `pc98tl/ail.py` "
+            "documents the formats, `pc98tl/ail_tl.py` the English.  Unchanged files rebuild byte for byte." % (
+                cfg["program"], cfg["scenarios"]), "",
+            "* The program draws a single byte half-width from the kanji ROM by itself, so English takes a byte a "
+            "letter; it lays a text out two bytes at a time, so each text is padded to an even length.",
+            "* The program breaks a message's lines by itself (27 pairs in a slot indented under the name, 29 in "
+            "one from the window's edge) and pages the window; the patcher fills each line with spaces to that "
+            "width so the breaks fall between words.",
+            "* The program's own strings (menus, prompts, messages) are replaced in place in the program."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` the line's width, 54 or 58 cells): any length; the patcher breaks "
+            "the lines between words and the program pages.  `\\n` in the English forces a new line.  A scenario "
+            "with its English may take %d bytes unpacked (the program's buffer); a longer build is refused and "
+            "names the scenario's strings.  The fullest scenarios are within a few bytes of that already, so "
+            "their English must take no more bytes than the Japanese (two bytes a character, one a letter)." %
+            cfg["scenario_room"],
+            "* Speakers' names (`n` ids): `max_cells` the Japanese's.",
+            "* Choice items (`i` ids): one line in the choice's box, `max_cells` the choice's widest Japanese "
+            "item; past it reported.",
+            "* Scene titles (`t` ids): shown with a choice and kept with a save, `max_cells` the Japanese's; "
+            "past it reported.",
+            "* Program strings (`l` ids): in place, `max_cells` the room in bytes (a letter one, a full-width "
+            "character two); past it cut and reported.  `%s`-style marks are kept.",
+            "* `>` is the program's colour mark and `%` its insert mark: in the English they are written `)` and "
+            "`pct`.",
+            "* English is ASCII (half-width); another character is written full-width when Shift-JIS has it, else "
+            "as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def cinema_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2047,6 +2114,11 @@ def main():
             continue
         if cfg.get("encoding") == "sys98":
             out = sys98_notes(name, cfg, doc, adult, clear, tests, extra)
+            open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
+            print("wrote", name)
+            continue
+        if cfg.get("encoding") == "ail":
+            out = ail_notes(name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue

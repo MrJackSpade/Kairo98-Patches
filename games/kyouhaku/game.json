@@ -1,0 +1,11 @@
+{
+ "title": "Kyouhaku",
+ "key": "Ail.zip/Kyouhaku",
+ "image": "Kyouhaku\\Kyouhaku [HD]\\Kyouhaku.hdi",
+ "encoding": "ail",
+ "program": "ADV.EXE",
+ "game_dir": "KYOU",
+ "scenarios": "SALL.SNL",
+ "scenario_room": 18300,
+ "boot_steps": "30:shot,4:enter,6:shot,3:enter,1:shot,2:shot,3:enter,1:shot,2:shot,3:enter,1:shot,2:shot,3:enter,1:shot,2:shot,3:enter,1:shot,2:shot,3:enter,1:shot,2:shot,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,1:shot,2:enter,1:shot,2:enter,1:shot,2:enter,1:shot"
+}

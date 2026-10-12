@@ -3695,5 +3695,15 @@
    "The opening: the narration, the command menu (Look and the others), what Look shows",
    "OK: the messages in filler half-width (the patched program drawing ASCII from the ROM's half-width row), broken between words at the 66-cell window, a key wait and a cleared window past its four lines; the command menu's five items in filler, one a line, in the 14-cell window"
   ]
+ ],
+ "kyouhaku": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's seven items in filler half-width (the program's own strings, replaced in place); the game starts"
+  ],
+  [
+   "The opening: speakers' names and their messages, a long message, the command menu",
+   "OK: the names and messages in filler half-width (the program drawing single bytes from the ROM's half-width row); a long English message broken between words at 54 cells under the name and paged by the program (four lines a page); with its slot switched to sub-op 01h (a test build) at 58 cells from the window's edge; the command menu's items in filler"
+  ]
  ]
 }

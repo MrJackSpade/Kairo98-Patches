@@ -2245,5 +2245,18 @@
    "url": "https://vndb.org/v725",
    "source": "VNDB"
   }
+ ],
+ "Ail.zip/Kyouhaku": [
+  {
+   "label": "This repo: games/kyouhaku (patcher working, machine translation in progress)",
+   "url": "../games/kyouhaku/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v4302",
+   "url": "https://vndb.org/v4302",
+   "source": "VNDB"
+  }
  ]
 }
