@@ -1,0 +1,19 @@
+{
+ "title": "Hana no Kioku Dai-2-shou",
+ "key": "Foster.zip/Hana no Kioku Dai-2-shou",
+ "image": "Hana no Kioku Dai-2-shou\\Hana no Kioku Dai-2-shou [HD]\\Hana no Kioku Dai-2-shou.hdi",
+ "encoding": "cinema",
+ "program": "HK2/HK2.COM",
+ "archive": "HK2/A.FA1",
+ "window": [
+  64,
+  3
+ ],
+ "scripts": [
+  "AUTOEXEC.BIN",
+  "G_MODE_*.BIN",
+  "HK2_*.BIN"
+ ],
+ "script_room": 40960,
+ "boot_steps": "30:shot,5:shot,1:enter,4:shot,1:enter,4:shot,1:enter,4:shot,1:enter,5:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

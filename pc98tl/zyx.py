@@ -23,9 +23,12 @@ at its right edge and, past its bottom, waits for a key and starts over.
 
 English (`patch_exe`): 80h (not a character) turns half-width letters on and off: between two 80h,
 a byte is an ASCII letter, drawn 8 dots wide from the ROM's ANK font through the program's own
-drawing (its colour and outline effects, its delay between letters); at a space the line is
-broken when the next word would pass the window's edge, with the program's own new line (and new
-page).  The helper goes in at the end of the code segment, the segments after it moved up.
+drawing (its colour and outline effects, its delay between letters; its advance breaks the line
+when less than a full-width cell is left, so a line keeps 8 dots spare); at a space the line is
+broken when the next word would pass the window's edge, with the program's own new line; past the
+window's bottom the helper waits for a key (command 02h's routine) and clears the window (the
+program's own, as its page does: some builds' new line does not page).  The helper goes in at the
+end of the code segment, the segments after it moved up.
 """
 import re
 import struct
@@ -542,6 +545,9 @@ DRAW_SIG = re.compile(rb"\xa0(..)\x32\xe4\xbf(..)\x03\xf8\x8b\x05\x52\xe8(..)\x5
 GLYPH_SIG = re.compile(rb"\x53\x56\x57\x55\x1e\x06\xb8(..)\x8e\xd8\x8e\xc0\xe8(..)\xe8(..)\xe8(..)\xe8(..)\x32\xe4"
                        rb"\xa0(..)\xfa\xe8(..)\xbe(..)\xe8(..)\xe8(..)\xfb", re.S)
 NEWLINE_SIG = re.compile(rb"\x83\x45\x02\x14\xe8(..)\x8b\x45\x04\x89\x05\xc3", re.S)
+# the window's clear (its cursor back to the top left): push si, di, ds; ds; the window's index; its
+# frame and cursor; the program's own page calls it after the key wait (command 02h)
+CLEAR_SIG = re.compile(rb"\x56\x57\x1e\xb8..\x8e\xd8\xa0..\x32\xe4\xbe..\xbf..\x03\xf0\x03\xf8\x80\x3e", re.S)
 PLACED_SIG = re.compile(rb"\x80\x3e(..)\x00\x74.\x8b\x3e(..)\x8a\x0e", re.S)
 # the speakers' names' loop: lodsb, Shift-JIS pairs, 20h half a cell, 0Dh a new line
 PLATE_SIG = re.compile(rb"\xac\x8a\xf0\x0a\xf6\x74.\x3c\x20\x75\x03\x47\xeb.\x3c\x0d", re.S)
@@ -595,14 +601,14 @@ mwe:
     shl cx, 1
     shl cx, 1
     add cx, word ptr [bx]
-    add cx, 8
+    add cx, 16
     cmp cx, word ptr [bx + 8]
     jbe hfit
     CALLN nl
     JMPN {loop}
 hfit:
     mov ax, word ptr [bx]
-    add ax, 7
+    add ax, 15
     cmp ax, word ptr [bx + 8]
     jb hdraw
     CALLN nl
@@ -621,6 +627,26 @@ hadv:
     JMPN {after}
 nl:
     add word ptr [bx + 2], 0x14
+    mov ax, word ptr [bx + 2]
+    cmp ax, word ptr [bx + 0xa]
+    jb nl1
+    push ds
+    push es
+    push si
+    push di
+    push bx
+    push cx
+    push dx
+    CALLN {keywait}
+    CALLN {clear}
+    pop dx
+    pop cx
+    pop bx
+    pop di
+    pop si
+    pop es
+    pop ds
+nl1:
     push di
     mov di, bx
     CALLN {page}
@@ -719,10 +745,12 @@ def patch_exe(exe):
     split_seg = min(s for s in segs if s > 0)
     split = split_seg * 16
     seg = img[:split]
-    found = [list(p.finditer(seg)) for p in (HOOK_SIG, DRAW_SIG, GLYPH_SIG, NEWLINE_SIG, PLACED_SIG, PLATE_SIG)]
+    found = [list(p.finditer(seg)) for p in (HOOK_SIG, DRAW_SIG, GLYPH_SIG, NEWLINE_SIG, PLACED_SIG, PLATE_SIG,
+                                             CLEAR_SIG, CMDS_SIG)]
     if any(len(f) != 1 for f in found):
         raise SystemExit("ZVA98.EXE: the patch sites are found %s times, once each expected" % [len(f) for f in found])
-    hm, dm, gm, nm, pm, lm = (f[0] for f in found)
+    hm, dm, gm, nm, pm, lm, cm, km2 = (f[0] for f in found)
+    keywait = struct.unpack_from("<H", seg, struct.unpack("<H", km2.group(2))[0] + 2)[0]   # command 02h
     km = KANA_SIG.search(seg)
     u = lambda g: hex(struct.unpack("<H", g)[0])      # noqa: E731
     h0, d0, g0 = hm.start(), dm.start(), gm.start()
@@ -733,7 +761,7 @@ def patch_exe(exe):
         kana=hex(h0 + 10), placed=u(pm.group(1)), placedat=u(pm.group(2)),
         win=u(dm.group(1)), curs=u(dm.group(2)), vram=hex(_rel(d0 + 23, dm.group(4))), colour=u(gm.group(6)),
         after=hex(d0 + 32),
-        page=hex(_rel(nm.start() + 7, nm.group(1))),
+        page=hex(_rel(nm.start() + 7, nm.group(1))), keywait=hex(keywait), clear=hex(cm.start()),
         fx1=hex(_rel(g0 + 22, gm.group(4))), fx2=hex(_rel(g0 + 25, gm.group(5))),
         grcg=hex(_rel(g0 + 34, gm.group(7))), buf=u(gm.group(8)), blit=hex(_rel(g0 + 40, gm.group(9))),
         grcgoff=hex(_rel(g0 + 43, gm.group(10))), dsimm=hex(g0 + 7),

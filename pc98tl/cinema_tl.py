@@ -18,11 +18,15 @@ Strings:
   `max_cells` the room; past it cut and reported.
 
 English is ASCII, drawn half-width by the program (its ANK letters); another character is written
-full-width in Shift-JIS when it has it, else `?`.  A script with its English must end before
-ESC.BIN's place in the buffer (7800h; ESC.BIN itself before 8000h): a longer build is refused and
-names the script.  AUTOEXEC.BIN runs machine code from its own bytes, so its code stays where it is:
-a text that fits is written in its place, a longer one after the script's end.
+full-width in Shift-JIS when it has it, else `?`.  The scripts are game.json's "scripts" (names, `*`
+for any letters).  A script with its English must end before the first file a script loads into
+the buffer (op 03h: ESC.BIN at 7800h in Time Stripper Mako-chan), else before the buffer's end (the
+paragraphs CINEMA.BIN gives it), a loaded file before the buffer's end: a longer build is refused
+and names the script (game.json "script_room", the room the notes give, is checked against it).
+A script that runs machine code from its own bytes (op 00h: AUTOEXEC.BIN) keeps its layout: a text
+that fits is written in its place, a longer one after the script's end.
 """
+import fnmatch
 import json
 import os
 import re
@@ -32,7 +36,6 @@ from .alice_sys2_tl import sha256
 from .text import pseudo, sjis_cols
 
 PREFIX = {"msg": "m", "name": "n", "item": "i", "engine": "e"}
-FIXED_CODE = ("AUTOEXEC.BIN",)
 ENGINE_RE = re.compile(rb"((?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc])+\.?)\r\n\$")
 
 
@@ -41,39 +44,82 @@ def _image(src):
     return DiskImage(src)
 
 
-def is_script(name):
-    return name.startswith("TSM_") or name in ("AUTOEXEC.BIN", "STAFF.BIN", "ESC.BIN")
+class Game:
+    """The archive's members, CINEMA.BIN's build, the scripts (game.json "scripts": their names, `*`
+    for any letters), where each runs in the buffer (a file op 03h loads, as ESC.BIN, at the address
+    it gives; the others at 0) and how far it may reach (the scripts at 0: the first such file; a
+    loaded one: the buffer's end)."""
 
+    def __init__(self, vol, cfg):
+        self.flags, self.mems = cinema.members(vol.read(cfg["archive"]))
+        by = {m[0]: m for m in self.mems}
+        self.build = cinema.Build(cinema.data(by["CINEMA.BIN"]))
+        self.names = [m[0] for m in self.mems if any(fnmatch.fnmatchcase(m[0], p) for p in cfg["scripts"])]
+        self.base = {}
+        for n in self.names:
+            try:
+                sc = cinema.Script(cinema.data(by[n]), self.build)
+            except ValueError:
+                continue
+            for a, (op, _e) in sc.ops.items():
+                if op == 0x03:
+                    f = sc.d[a + 5:sc.d.index(0, a + 5)].decode("ascii").upper()
+                    self.base[f] = sc.w(a + 3)
+        self.top = min(list(self.base.values()) + [self.build.buffer])
 
-def base_of(name):
-    return cinema.ESC_AT if name == "ESC.BIN" else 0
+    def base_of(self, name):
+        return self.base.get(name, 0)
 
+    def limit_of(self, name):
+        return self.build.buffer if name in self.base else self.top
 
-def limit_of(name):
-    return cinema.BUFFER_END if name == "ESC.BIN" else cinema.ESC_AT
+    def script(self, name, d):
+        return cinema.Script(d, self.build, self.base_of(name))
 
 
 def _cells(text):
     return sjis_cols(text.encode("cp932", "replace"))
 
 
-def _is_name(visible, suffix):
-    return visible.startswith("【") and visible.endswith("】") and b"\\f" not in suffix
+def _visible(t):
+    return bool(t.strip("　 \n"))
 
 
-def script_texts(name, d):
-    """(Script, [(ref, kind, addr, start, end, prefix, visible, suffix, menu)]) in address order."""
-    sc = cinema.Script(d, base_of(name))
-    out = []
-    for a, kind, (s, e) in sorted(cinema.texts(sc), key=lambda t: t[2][0]):
-        parts = cinema.split_text(d[s - sc.base:e - sc.base])
-        if parts is None:
-            raise ValueError("%s:%04x: a command inside the text" % (name, a))
-        prefix, visible, suffix = parts
-        if kind == "msg" and _is_name(visible, suffix):
-            kind = "name"
-        out.append(("%s:%04x" % (name, a), kind, a, s, e, prefix, visible, suffix, sc.items.get(a)))
-    return sc, out
+def _is_name(t):
+    return t.startswith("【") and t.endswith("】") and "\n" not in t
+
+
+class Text:
+    """A message (op 09h) or a menu's item: its pieces (cinema.pieces) and its strings, [(ref, kind,
+    index of the piece)]: a message's text, or a speaker's name (a message of its own, or the run
+    before the message's text in the same op), or an item."""
+
+    def __init__(self, name, a, kind, s, e, d, base, menu):
+        self.a, self.kind, self.s, self.e, self.menu = a, kind, s, e, menu
+        self.pieces = cinema.pieces(d[s - base:e - base])
+        runs = [k for k, (c, v) in enumerate(self.pieces) if c == "t" and _visible(v)]
+        ref = "%s:%04x" % (name, a)
+        self.strings = []
+        if kind == "item":
+            if len(runs) > 1:
+                raise ValueError("%s: a menu's item with commands inside" % ref)
+            self.strings = [(ref, "item", k) for k in runs]
+            return
+        ends_page = any(c == "c" and v == b"\\f" for c, v in self.pieces)
+        if len(runs) == 1:
+            t = self.pieces[runs[0]][1]
+            self.strings = [(ref, "name" if _is_name(t) and not ends_page else "msg", runs[0])]
+        elif len(runs) == 2 and _is_name(self.pieces[runs[0]][1]):
+            self.strings = [(ref + ":name", "name", runs[0]), (ref, "msg", runs[1])]
+        elif runs:
+            raise ValueError("%s: a message with commands between %d texts" % (ref, len(runs)))
+
+
+def script_texts(game, name, d):
+    """(Script, [Text]) in address order."""
+    sc = game.script(name, d)
+    return sc, [Text(name, a, kind, s, e, d, sc.base, sc.items.get(a))
+                for a, kind, (s, e) in sorted(cinema.texts(sc), key=lambda t: t[2][0])]
 
 
 def engine_runs(com):
@@ -96,32 +142,30 @@ def run_extract(here, src):
         if note:
             merged[key]["note"] = note
         order.append(key)
-    _flags, mems = cinema.members(vol.read(cfg["archive"]))
+    game = Game(vol, cfg)
     cols = cfg["window"][0]
-    for m in mems:
-        if not is_script(m[0]):
+    for m in game.mems:
+        if m[0] not in game.names:
             continue
-        sc, rows = script_texts(m[0], cinema.data(m))
+        sc, texts = script_texts(game, m[0], cinema.data(m))
         menus = {}
-        for ref, kind, a, s, e, prefix, visible, suffix, menu in rows:
-            if kind == "item":
-                menus[menu] = max(menus.get(menu, 0), _cells(visible))
+        for t in texts:
+            for ref, kind, k in t.strings:
+                if kind == "item":
+                    menus[t.menu] = max(menus.get(t.menu, 0), _cells(t.pieces[k][1]))
         after_name = False
-        for ref, kind, a, s, e, prefix, visible, suffix, menu in rows:
-            if not visible.strip("　 \n"):
-                after_name = False if kind != "item" else after_name
-                continue
-            if kind == "item":
-                add("item", visible, ref, menus[menu], "a menu's item: one line in its box (the menu's widest "
-                    "Japanese item)")
-                continue
-            if kind == "name":
-                add("name", visible, ref, _cells(visible), "a speaker's name: the message after it goes on "
-                    "along its row")
-                after_name = True
-                continue
-            add("msg", visible, ref, cols, "after the speaker's name, on its row" if after_name else None)
-            after_name = False
+        for t in texts:
+            for ref, kind, k in t.strings:
+                jp = t.pieces[k][1]
+                if kind == "item":
+                    add("item", jp, ref, menus[t.menu], "a menu's item: one line in its box (the menu's widest "
+                        "Japanese item)")
+                elif kind == "name":
+                    add("name", jp, ref, _cells(jp), "a speaker's name: the message after it goes on along "
+                        "its row")
+                else:
+                    add("msg", jp, ref, cols, "after the speaker's name, on its row" if after_name else None)
+                after_name = kind == "name"
     com_path = cfg["program"]
     com = vol.read(com_path)
     for s, e in engine_runs(com):
@@ -231,49 +275,60 @@ def _pseudo(e):
     return pseudo(e["id"], _cells(e["jp"]))
 
 
-def build_script(name, d, by_ref, ids, rooms, cfg, warn, ratio=1.0):
+def build_script(game, name, d, by_ref, ids, rooms, cfg, warn, ratio=1.0):
     """The script with its English (None when nothing changed)."""
-    sc, rows = script_texts(name, d)
+    sc, texts = script_texts(game, name, d)
     cur = Cursor(*cfg["window"])
     new_text, pages = {}, {}
-    for ref, kind, a, s, e, prefix, visible, suffix, menu in rows:
-        if kind == "item":
-            if ref in by_ref:
-                t = by_ref[ref]
-                if _cells(t) > rooms[ref]:
-                    warn.append("%s: %d letters, past its menu's room (%d)" % (ids[ref], _cells(t), rooms[ref]))
-                new_text[s] = prefix + cinema.encode(t) + suffix
+    for t in texts:
+        mine = {k: ref for ref, kind, k in t.strings if ref in by_ref}
+        if t.kind == "item":
+            for k, ref in mine.items():
+                en = by_ref[ref]
+                if _cells(en) > rooms[ref]:
+                    warn.append("%s: %d letters, past its menu's room (%d)" % (ids[ref], _cells(en), rooms[ref]))
+                new_text[t.s] = b"".join(cinema.encode(en) if j == k else
+                                         (v if c == "c" else v.encode("cp932")) for j, (c, v) in enumerate(t.pieces))
             continue
-        if ref not in by_ref or not visible.strip("　 \n"):
-            if visible.strip("　 \n"):
-                cur.jp(visible)
-            cur.suffix(suffix)
+        out = [bytearray()]
+        for k, (c, v) in enumerate(t.pieces):
+            if c == "c":
+                if v == b"\\n" and cur.row + 1 >= cur.rows and mine:
+                    # (a new line past the window's bottom: the page ends here, a key, a new page)
+                    out[-1] += b"\\f"
+                    out.append(bytearray())
+                    cur.clear = True
+                    continue
+                out[-1] += v
+                cur.suffix(v)
+                continue
+            if k not in mine:
+                out[-1] += v.encode("cp932")
+                if _visible(v):
+                    cur.jp(v)
+                continue
+            en = by_ref[mine[k]]
+            if ratio < 1.0:
+                en = en[:max(4, int(len(en) * ratio))]
+            kind = next(kd for _r, kd, j in t.strings if j == k)
+            if kind == "msg" and v.startswith("　") and not en.startswith(" "):
+                en = " " + en
+            ps = cur.english(en)
+            out[-1] += ps[0]
+            for p in ps[1:]:
+                out.append(bytearray(p))
+        if not mine:
             continue
-        t = by_ref[ref]
-        if ratio < 1.0:
-            t = t[:max(4, int(len(t) * ratio))]
-        if kind == "msg" and visible.startswith("　") and not t.startswith(" "):
-            t = " " + t
-        ps = cur.english(t)
-        if b"\\n" in suffix and b"\\f" not in suffix and cur.row + 1 >= cur.rows:
-            # (the script's new line after it would go past the window's bottom: the page ends here,
-            # after a key the next message starts a new one)
-            ps[-1] += b"\\f"
-            ps.append(b"")
-            suffix = suffix.replace(b"\\n", b"", 1)
-            cur.clear = True
-        cur.suffix(suffix)
-        ps[0] = prefix + ps[0]
-        ps[-1] = ps[-1] + suffix
-        if len(ps) == 1:
-            new_text[s] = ps[0]
+        if len(out) == 1:
+            new_text[t.s] = bytes(out[0])
         else:
-            pages[a] = ps
+            pages[t.a] = [bytes(p) for p in out]
     if not new_text and not pages:
         return None
-    if name in FIXED_CODE:
-        return cinema.redirect(sc, new_text, pages, limit_of(name))
-    return cinema.rebuild(sc, new_text, pages, limit_of(name))
+    if any(op == 0x00 for op, _e in sc.ops.values()):
+        # (it runs machine code from its own bytes: its layout stays)
+        return cinema.redirect(sc, new_text, pages, game.limit_of(name))
+    return cinema.rebuild(sc, new_text, pages, game.limit_of(name))
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -292,25 +347,27 @@ def run_patch(here, src, dst, mode="en"):
             if text:
                 by_ref[r] = text
     warn, done = [], 0
-    arc = vol.read(cfg["archive"])
-    flags, mems = cinema.members(arc)
-    for m in mems:
-        if not is_script(m[0]):
+    game = Game(vol, cfg)
+    if cfg.get("script_room") != game.top:
+        raise SystemExit("game.json: script_room is %s, the program gives the scripts %d bytes" % (
+            cfg.get("script_room"), game.top))
+    for m in game.mems:
+        if m[0] not in game.names:
             continue
         d = cinema.data(m)
         try:
-            new = build_script(m[0], d, by_ref, ids, rooms, cfg, warn)
+            new = build_script(game, m[0], d, by_ref, ids, rooms, cfg, warn)
         except OverflowError as ex:
             if mode != "pseudo":
                 raise SystemExit("%s: %d bytes with its English, it may take %d; shorten these strings: %s" % (
-                    m[0], ex.args[0] - base_of(m[0]), limit_of(m[0]) - base_of(m[0]),
+                    m[0], ex.args[0] - game.base_of(m[0]), game.limit_of(m[0]) - game.base_of(m[0]),
                     ", ".join(sorted({ids[r] for r in by_ref if r.startswith(m[0] + ":")}))))
             # (the --pseudo filler: every message cut in proportion until the script fits)
             ratio, new = 1.0, None
             while new is None:
                 ratio *= 0.9
                 try:
-                    new = build_script(m[0], d, by_ref, ids, rooms, cfg, [], ratio)
+                    new = build_script(game, m[0], d, by_ref, ids, rooms, cfg, [], ratio)
                 except OverflowError:
                     continue
             warn.append("%s: the filler was cut to %d%% to fit the script's room" % (m[0], int(ratio * 100)))
@@ -318,7 +375,7 @@ def run_patch(here, src, dst, mode="en"):
             m[1], m[2], m[3] = 0, new, len(new)
             done += 1
     if done:
-        vol.write(cfg["archive"], cinema.archive(flags, mems))
+        vol.write(cfg["archive"], cinema.archive(game.flags, game.mems))
     com0 = vol.read(cfg["program"])
     com = bytearray(com0)
     for s, e in engine_runs(bytes(com)):

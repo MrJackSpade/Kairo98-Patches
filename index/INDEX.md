@@ -364,6 +364,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_3 (patcher working, machine translation in progress)](../games/kounai_shasei_3/notes.md) |
 | Fairytale X Shitei | Kounai Shasei | [This repo: games/kounai_shasei_sp (patcher working, machine translation in progress)](../games/kounai_shasei_sp/notes.md) |
 | Fairytale X Shitei | Saori - Bishoujo-tachi no Yakata | [This repo: games/saori (patcher working, machine translation in progress)](../games/saori/notes.md) |
+| Foster | Hana no Kioku | [This repo: games/hana_no_kioku (patcher working, machine translation in progress)](../games/hana_no_kioku/notes.md) |
+| Foster | Hana no Kioku Dai-2-shou | [This repo: games/hana_no_kioku_dai_2_shou (patcher working, machine translation in progress)](../games/hana_no_kioku_dai_2_shou/notes.md) |
 | Foster | Koko wa Rakuensou | [This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)](../games/koko_wa_rakuensou/notes.md) |
 | Foster | Koko wa Rakuensou 2 | [This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)](../games/koko_wa_rakuensou_2/notes.md) |
 | Foster | Time Stripper Mako-chan | [This repo: games/time_stripper_mako_chan (patcher working, machine translation in progress)](../games/time_stripper_mako_chan/notes.md) |
@@ -2597,8 +2599,8 @@ AI/MTL-driven, not human translations. Each is retired when a human translation 
 
 ### Foster (`Foster.zip`)
 
-- ♥ Hana no Kioku [CD FD HD extras]
-- ♥ Hana no Kioku Dai-2-shou [FD HD]
+- ♥ Hana no Kioku [CD FD HD extras] — *MTL (this repo)*
+- ♥ Hana no Kioku Dai-2-shou [FD HD] — *MTL (this repo)*
 - ♥ Koko wa Rakuensou [CD FD HD] — *MTL (this repo)*
 - ♥ Koko wa Rakuensou 2 [CD FD HD extras] — *MTL (this repo)*
 - ♥ Kousoku Chojin [FD HD]

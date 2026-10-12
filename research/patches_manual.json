@@ -2073,5 +2073,21 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "Foster.zip/Hana no Kioku": [
+  {
+   "label": "This repo: games/hana_no_kioku (patcher working, machine translation in progress)",
+   "url": "../games/hana_no_kioku/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
+ ],
+ "Foster.zip/Hana no Kioku Dai-2-shou": [
+  {
+   "label": "This repo: games/hana_no_kioku_dai_2_shou (patcher working, machine translation in progress)",
+   "url": "../games/hana_no_kioku_dai_2_shou/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }

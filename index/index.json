@@ -93262,7 +93262,14 @@
      "path": "Hana no Kioku\\Hana no Kioku [FD]\\Hana no Kioku (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hana_no_kioku (patcher working, machine translation in progress)",
+     "url": "../games/hana_no_kioku/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17712 (erotic content)",
    "engine": "unknown",
@@ -93270,7 +93277,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Hana no Kioku Dai-2-shou",
@@ -93338,7 +93345,14 @@
      "path": "Hana no Kioku Dai-2-shou\\Hana no Kioku Dai-2-shou [HD]\\Hana no Kioku Dai-2-shou.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hana_no_kioku_dai_2_shou (patcher working, machine translation in progress)",
+     "url": "../games/hana_no_kioku_dai_2_shou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17715 (erotic content)",
    "engine": "unknown",
@@ -93346,7 +93360,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Koko wa Rakuensou",

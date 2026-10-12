@@ -18,18 +18,21 @@ when the last one runs out) and bytes, read in turn:
                      a length from ((100h|b) << 1, 2, 3, 4 | the bits) + 1 back
   length: 1 = 3, 01 = 4, 001 x = 5+x, 0001 xx = 7+xx, 00001 xxxx = 11+xxxx, 00000 b = 27+b.
 
-Scripts (TSM_nn.BIN, AUTOEXEC.BIN, STAFF.BIN; ESC.BIN, the escape menu, loaded at 7800h) are run by
-CINEMA.BIN from offset 0, op by op, in a 32 KB buffer whose last 2 KB (7800h) hold ESC.BIN.  The ops'
-lengths are CINEMA.BIN's (its table of 72 routines); the ones that take an address in the script:
+Scripts are run by CINEMA.BIN from offset 0, op by op, in a buffer of the paragraphs it gives them
+(32 KB in Time Stripper Mako-chan, whose last 2 KB, 7800h, hold ESC.BIN, the escape menu, loaded by
+op 03h; 40 KB in Hana no Kioku Dai-2-shou).  The ops' lengths are each build's (BUILDS: read off its
+table of routines); the ones that take an address in the script, in both builds:
   02 next cnt var(2) items(cnt)   a menu: its items' text addresses; the op ends at `next`
   03/09/0A/17/39 next ...         a message (09: text up to a NUL), a file to load (03 to an
                                   address, 0A, 17, 39): the op ends at `next`
   04 a                            goto; 32 a: gosub; 33 return
   05 var(2) a...                  switch on a variable: one address per value
   08 c var(2) v a                 if: goes to `a` when the comparison fails
-  29 a / 00 a                     palette data / machine code in the script (AUTOEXEC.BIN only)
-  3E (24 bytes) items             a menu: its items' text addresses (after the 24 bytes when the
-                                  word at 16h is set, as many as the word at 14h)
+  29 a / 00 a                     palette data / machine code in the script (AUTOEXEC.BIN)
+  3E (24 bytes) items             (Mako-chan) a menu: its items' text addresses (after the 24 bytes
+                                  when the word at 16h is set, as many as the word at 14h)
+  11 a / 45 a                     (Dai-2-shou) a key wait whose right click calls `a` / a file's
+                                  name read at `a`
 A switch's table runs up to the code after it: the first address past the op, or a label.
 Text: Shift-JIS, and bytes below 80h drawn half-width (MB3N.BIN's ANK glyphs); `\\` and a letter
 with a decimal number after it is a command: \\f clears the window before the next letter, \\n is a
@@ -186,24 +189,64 @@ def archive(flags, items):
 
 # --- scripts -----------------------------------------------------------------------------------
 
-FIX = {0x00: 3, 0x01: 1, 0x04: 3, 0x06: 1, 0x07: 4, 0x08: 7, 0x0B: 5, 0x0C: 1, 0x0D: 1, 0x0E: 1, 0x0F: 1,
-       0x10: 1, 0x11: 1, 0x12: 2, 0x13: 3, 0x14: 4, 0x15: 3, 0x18: 1, 0x19: 1, 0x1A: 2, 0x1B: 3, 0x1C: 3,
-       0x1D: 1, 0x1E: 3, 0x1F: 1, 0x20: 1, 0x21: 4, 0x22: 4, 0x23: 7, 0x24: 7, 0x25: 2, 0x26: 5, 0x27: 3,
-       0x28: 2, 0x29: 3, 0x2A: 3, 0x2B: 1, 0x2C: 3, 0x2D: 1, 0x2E: 2, 0x2F: 4, 0x30: 2, 0x31: 1, 0x32: 3,
-       0x33: 1, 0x34: 3, 0x35: 3, 0x36: 2, 0x37: 1, 0x38: 1, 0x3A: 1, 0x3B: 5, 0x3C: 1, 0x3D: 1, 0x3F: 1,
-       0x40: 1, 0x41: 1, 0x42: 1, 0x43: 4, 0x44: 7, 0x45: 3, 0x46: 10, 0x47: 7}
+# The ops of each build of CINEMA.BIN (told apart by its table of routines: the number of ops and
+# the table's place): their lengths, and the words that hold an address in the script ("code": an
+# op goes there; "data": it reads there).  Read off the routines: "add si, n" before the routine
+# that keeps si, "inc word [414h]" (one byte) before the loop, or the routine that goes on at the
+# word after the op (NEXT).
+_COMMON = {0x00: 3, 0x01: 1, 0x04: 3, 0x07: 4, 0x08: 7, 0x0C: 1, 0x0D: 1, 0x0E: 1, 0x0F: 1, 0x10: 1,
+           0x12: 2, 0x13: 3, 0x14: 4, 0x15: 3, 0x18: 1, 0x19: 1, 0x1A: 2, 0x1B: 3, 0x1C: 3, 0x1D: 1,
+           0x1E: 3, 0x1F: 1, 0x20: 1, 0x21: 4, 0x22: 4, 0x23: 7, 0x24: 7, 0x25: 2, 0x26: 5, 0x27: 3,
+           0x28: 2, 0x29: 3, 0x2A: 3, 0x2B: 1, 0x2C: 3, 0x2E: 2, 0x30: 2, 0x31: 1, 0x32: 3, 0x33: 1,
+           0x34: 3, 0x36: 2, 0x37: 1, 0x38: 1, 0x3A: 1, 0x3C: 1, 0x3D: 1, 0x3F: 1}
+BUILDS = {
+    # Time Stripper Mako-chan: 48h ops; 3Eh is a menu of its own (its items' addresses after it)
+    (0x48, 0x56A): {
+        "fix": {**_COMMON, **{0x06: 1, 0x0B: 5, 0x11: 1, 0x2D: 1, 0x2F: 4, 0x35: 3, 0x3B: 5, 0x40: 1,
+                                0x41: 1, 0x42: 1, 0x43: 4, 0x44: 7, 0x45: 3, 0x46: 10, 0x47: 7}},
+        "menu3e": True,
+        "code": {0x04: 1, 0x32: 1, 0x08: 5},
+        "data": {0x00: 1, 0x29: 1},
+    },
+    # Hana no Kioku Dai-2-shou: 49h ops; 11h waits for a key, a right click calls the address after
+    # it; 45h reads a file's name at its address
+    (0x49, 0x674): {
+        "fix": {**_COMMON, **{0x06: 3, 0x0B: 1, 0x11: 3, 0x3B: 1, 0x3E: 9, 0x40: 1, 0x41: 2, 0x42: 2,
+                                0x43: 1, 0x44: 1, 0x45: 3, 0x46: 5, 0x47: 1, 0x48: 1}},
+        "menu3e": False,
+        "code": {0x04: 1, 0x32: 1, 0x08: 5, 0x11: 1},
+        "data": {0x00: 1, 0x29: 1, 0x45: 1},
+    },
+}
 NEXT = {0x02, 0x03, 0x09, 0x0A, 0x17, 0x39}
 FLOW_END = {0x01, 0x04, 0x05, 0x16, 0x33}
-ESC_AT = 0x7800      # ESC.BIN's place in the script's buffer
-BUFFER_END = 0x8000
+DISPATCH = re.compile(rb"\x26\x8a\x1c\x80\xfb(.)\x72\x03\xe9..\x32\xff\xd1\xe3\xff\xa7(..)", re.S)
+BUFFER = re.compile(rb"\xa3\x16\x04\x05(..)\xa3\x08\x04", re.S)
+
+
+class Build:
+    """CINEMA.BIN's ops (BUILDS) and the size of its scripts' buffer (the paragraphs it gives it)."""
+
+    def __init__(self, prog):
+        m = DISPATCH.search(prog)
+        if m is None:
+            raise ValueError("CINEMA.BIN: the ops' table not found")
+        key = (m.group(1)[0], w(m.group(2), 0))
+        if key not in BUILDS:
+            raise ValueError("CINEMA.BIN: a build of %d ops (table at %xh) not known" % key)
+        self.__dict__.update(BUILDS[key])
+        b = BUFFER.search(prog)
+        if b is None:
+            raise ValueError("CINEMA.BIN: the scripts' buffer not found")
+        self.buffer = w(b.group(1), 0) * 16
 
 
 class Script:
     """A script's ops, walked from its start: ops {addr: (op, end)}, items {addr: owner op} (the menus'
     text), fields {addr of a word: kind} (the words that hold an address in the script)."""
 
-    def __init__(self, d, base=0):
-        self.d, self.base = d, base
+    def __init__(self, d, build, base=0):
+        self.d, self.base, self.build = d, base, build
         labels = set()
         for _ in range(64):
             ok = self._walk(labels)
@@ -224,7 +267,7 @@ class Script:
         return w(self.d, a - self.base)
 
     def _walk(self, labels):
-        d = self.d
+        d, fix = self.d, self.build.fix
         self.ops, self.items, self.fields, self.found, self.errs = {}, {}, {}, set(), []
         todo = [self.base]
         end = self.base + len(d)
@@ -232,7 +275,7 @@ class Script:
             i = todo.pop()
             while i not in self.ops and self.inside(i):
                 op = self.b(i)
-                if i + max(FIX.get(op, 3), 1) > end or (op not in FIX and i + 3 > end):
+                if i + max(fix.get(op, 3), 1) > end or (op not in fix and i + 3 > end):
                     self.errs.append("end at %x" % i)
                     break
                 fields = []
@@ -252,7 +295,7 @@ class Script:
                             self.items[a] = i
                 elif op == 0x16:
                     e = d.index(0, i + 1 - self.base) + 1 + self.base
-                elif op == 0x3E:
+                elif op == 0x3E and self.build.menu3e:
                     cnt = self.w(i + 0x15) if self.w(i + 0x17) else 0
                     e = i + 25 + 2 * cnt
                     for k in range(cnt):
@@ -270,21 +313,21 @@ class Script:
                         fields.append(j)
                         self.found.add(self.w(j))
                         todo.append(self.w(j))
-                elif op in FIX:
-                    e = i + FIX[op]
+                elif op in fix:
+                    e = i + fix[op]
                 else:
                     self.errs.append("op %02x at %x" % (op, i))
                     break
                 if e <= i or e > end:
                     self.errs.append("op %02x at %x ends at %x" % (op, i, e))
                     break
-                if op in (0x04, 0x32, 0x29, 0x00):
-                    fields.append(i + 1)
-                if op == 0x08:
-                    fields.append(i + 5)
+                for k in (self.build.code, self.build.data):
+                    if op in k:
+                        fields.append(i + k[op])
                 for f in fields:
                     self.fields[f] = op
-                for t in ([self.w(i + 5)] if op == 0x08 else [self.w(i + 1)] if op in (0x04, 0x32) else []):
+                if op in self.build.code:
+                    t = self.w(i + self.build.code[op])
                     self.found.add(t)
                     todo.append(t)
                 self.ops[i] = (op, e)
@@ -297,32 +340,30 @@ class Script:
 ESCAPE = re.compile(rb"\\([a-z])([0-9,]*)")
 
 
-def split_text(raw):
-    """(prefix, visible, suffix): the commands before and after the visible text; inside it, a new
-    line (\\n) is kept as a newline character.  None when another command is inside the text."""
-    parts, i = [], 0
+def pieces(raw):
+    """A text as [("c", command bytes) | ("t", text)]: the commands, and the text between them (a new
+    line, \\n, with text on both sides of it kept inside the text as a newline character)."""
+    toks, i = [], 0
     while i < len(raw):
         m = ESCAPE.match(raw, i)
         if m:
-            parts.append(("c", m.group(0)))
+            toks.append(("c", m.group(0)))
             i = m.end()
             continue
         n = 2 if (0x81 <= raw[i] <= 0x9F or 0xE0 <= raw[i] <= 0xFC) else 1
-        parts.append(("t", raw[i:i + n]))
+        toks.append(("t", raw[i:i + n]))
         i += n
-    a = 0
-    while a < len(parts) and parts[a][0] == "c":
-        a += 1
-    b = len(parts)
-    while b > a and parts[b - 1][0] == "c":
-        b -= 1
-    mid = parts[a:b]
-    if any(k == "c" and v != b"\\n" for k, v in mid):
-        return None
-    prefix = b"".join(v for _k, v in parts[:a])
-    suffix = b"".join(v for _k, v in parts[b:])
-    visible = b"".join(b"\n" if k == "c" else v for k, v in mid)
-    return prefix, visible.decode("cp932"), suffix
+    out = []
+    for k, (kind, v) in enumerate(toks):
+        if kind == "c" and v == b"\\n" and out and out[-1][0] == "t" and k + 1 < len(toks) and \
+                toks[k + 1][0] == "t":
+            out[-1] = ("t", out[-1][1] + b"\n")
+            continue
+        if kind == "t" and out and out[-1][0] == "t":
+            out[-1] = ("t", out[-1][1] + v)
+            continue
+        out.append((kind, v))
+    return [(k, v.decode("cp932") if k == "t" else v) for k, v in out]
 
 
 def texts(sc):
