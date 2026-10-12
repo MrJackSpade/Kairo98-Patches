@@ -244732,7 +244732,14 @@
      "path": "Ring Out!!\\Ring Out!! [FD]\\Ring Out!! (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ring_out (patcher working, machine translation in progress)",
+     "url": "../games/ring_out/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18217 (erotic content)",
    "engine": "unknown",
@@ -244740,7 +244747,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "ZyX.zip/Takamizawa Kyosuke - Nekketsu!! Kyouiku Kenshuu",

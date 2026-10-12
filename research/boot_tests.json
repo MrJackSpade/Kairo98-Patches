@@ -3465,11 +3465,21 @@
  "raidy_2": [
   [
    "Boot from the hard disk (the floppy version installed: RAI2.BAT, ZVA98 L2_OP)",
-   "OK: the first menu's items in filler, half-width"
+   "OK: the first menu's items in filler, half-width, in their box"
   ],
   [
    "The opening (L2_OP.ZSD) with Raidy's lines",
    "OK: the speaker's name in filler on its plate (ten letters), the message's filler after it, half-width, broken between words at the window's edge, a new page after a key when the window is full; the title logo between"
+  ]
+ ],
+ "ring_out": [
+  [
+   "Boot from the hard disk (the floppy version installed: RO.BAT, ZVA21F)",
+   "OK: the setup menu's items in filler, half-width, in their box; Down and Enter pick its last item"
+  ],
+  [
+   "The opening (RO_01.ZSD) and the title",
+   "OK: the speakers' names in filler on their plates (cut to their ten bytes), the messages' filler after them broken between words, page after page with Enter; the title logo between"
   ]
  ]
 }

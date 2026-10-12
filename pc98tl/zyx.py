@@ -61,32 +61,71 @@ def archive(items):
     return bytes(out)
 
 
-# ---- the speakers' names (NAME.ZSD) ----------------------------------------------------------------
+# ---- members coded (Ring Out!!'s ZVA21F.EXE: a member starting with a zero word is decoded) -----------
 
-NAMES = "NAME.ZSD"
-NAME_ROOM = 12          # op 19h n "NAME" copies the names n * 2 + 1 bytes apart (n = 6 the least)
-
-
-def _ror2(b):
-    return ((b >> 2) | (b << 6)) & 0xFF
+CODED = (b"\x95\x97", b"\x97\xd1", b"\x89\xce")
 
 
-def _rol2(b):
-    return ((b << 2) | (b >> 6)) & 0xFF
+def _decode(raw):
+    """A coded file's bytes: its first word says how (9597h each byte rotated right twice, 97D1h each
+    byte inverted, 89CEh XORed with the byte after it)."""
+    head = raw[:2]
+    if head == b"\x95\x97":
+        return bytes(((b >> 2) | (b << 6)) & 0xFF for b in raw[2:])
+    if head == b"\x97\xd1":
+        return bytes(b ^ 0xFF for b in raw[2:])
+    if head == b"\x89\xce":
+        k = raw[2]
+        return bytes(b ^ k for b in raw[3:])
+    raise ValueError("a coded file of an unknown kind (%s)" % head.hex())
+
+
+def script_data(member):
+    """A script as the program runs it: a member whose first word is 0 is coded after its fourth
+    byte (the program decodes it when it loads it); one written back is written plain."""
+    if member[:2] == b"\x00\x00":
+        return _decode(member[4:])
+    return member
+
+
+# ---- the speakers' names (a coded member op 19h n "NAME" loads) -------------------------------------
+
+def _encode(head, dec):
+    if head == b"\x95\x97":
+        return head + bytes(((b << 2) | (b >> 6)) & 0xFF for b in dec)
+    if head == b"\x97\xd1":
+        return head + bytes(b ^ 0xFF for b in dec)
+    raise ValueError("a coded file of an unknown kind (%s)" % head.hex())
+
+
+def name_tables(members_):
+    """{member: the least n of the ops 19h n "STEM" that load it} (the names are copied 2n + 1 bytes
+    apart, so a name may take 2n)."""
+    out = {}
+    names_ = {n.rsplit(".", 1)[0].encode("ascii"): n for n, m in members_ if m[:2] in CODED}
+    for _n, m in members_:
+        try:
+            d = script_data(m)
+        except ValueError:
+            continue
+        if not is_script(d):
+            continue
+        for x in re.finditer(rb"\x19(.)([A-Z0-9_]+)\x00", d, re.S):
+            name = names_.get(x.group(2))
+            if name:
+                out[name] = min(out.get(name, 255), x.group(1)[0])
+    return out
 
 
 def names(d):
-    """The speakers' names: NAME.ZSD (after its word 9597h each byte rotated right twice) holds them
-    ended by NUL, the list by 1Ah."""
-    if d[:2] != b"\x95\x97":
-        raise ValueError("NAME.ZSD: not the rotated form")
-    dec = bytes(_ror2(b) for b in d[2:])
-    return dec[:dec.index(0x1A)].split(b"\x00")[:-1], dec[dec.index(0x1A):]
+    """(the names (Shift-JIS, ended by NUL in the file), the rest (1Ah ...), the coding's word)"""
+    dec = _decode(d)
+    end = dec.index(0x1A)
+    return dec[:end].split(b"\x00")[:-1], dec[end:], d[:2]
 
 
-def names_file(items, tail):
-    dec = b"".join(n + b"\x00" for n in items) + tail
-    return b"\x95\x97" + bytes(_rol2(b) for b in dec)
+def names_file(items, tail, head):
+    return _encode(head, b"".join(n + b"\x00" for n in items) + tail)
 
 
 # ---- the program: its tables ---------------------------------------------------------------------
@@ -153,8 +192,10 @@ class Program:
             if cs[r] == 0xE8:
                 r = (r + 3 + struct.unpack_from("<h", cs, r + 1)[0]) & 0xFFFF
             fp = _fingerprint(cs, r)
-            if fp.startswith("26893665") or fp.startswith("26803e673000"):
+            if fp.startswith("268936") or (fp.startswith("26803e") and "2689" in fp):
                 self.kind[op] = "fixed"         # (a loop's start: noted, then its length)
+            elif fp.startswith("26803e") and "268b36" in fp:
+                self.kind[op] = "one"           # (back to a loop's start)
             elif fp in KINDS:
                 self.kind[op] = KINDS[fp]
             else:
@@ -298,10 +339,33 @@ def labels(d):
 
 
 def runs(prog, d):
-    """[(start, end)] of every text run, the script walked from its start and every label (past a
-    jump or return while its bytes go on being statements: a skipped jump's place)."""
+    return walk(prog, d)[0]
+
+
+def menus(prog, d):
+    """[(first, end)] of the choice menus: from an op 72h n (n not 0) to the next 72h 00; the text
+    runs between are the menu's items, drawn in its box."""
+    ops = walk(prog, d)[1]
+    out, start = [], None
+    for i in sorted(ops):
+        if d[i] == 0x72:
+            if d[i + 1]:
+                start = i
+            elif start is not None:
+                out.append((start, i))
+                start = None
+    return out
+
+
+def walk(prog, d):
+    """[(start, end)] of every text run, the script walked from its start and every label.  Past a
+    jump or return the walk goes on while its bytes are statements (a jump a statement before skips
+    is followed by more code), its text runs kept when it reaches a label, a place walked already
+    or the script's end, and dropped when it meets bytes that are no statement (dead bytes before
+    the next label)."""
     c = code_start(d)
-    seen, out = set(), set()
+    seen, out, ops = set(), set(), set()
+    starts = set(labels(d))
     for s in [c] + labels(d):
         if s >= len(d):
             continue
@@ -311,8 +375,10 @@ def runs(prog, d):
             out.add((s, e))
             seen.update(range(s, e + 1))
             continue
-        i, after_end = s, False
-        while i < len(d) and i not in seen:
+        i, guess, pending, covered = s, False, [], []
+        while i < len(d):
+            if i in seen or (guess and i in starts):
+                break
             op = d[i]
             if op == 0xFF:
                 seen.add(i)
@@ -320,14 +386,25 @@ def runs(prog, d):
             try:
                 j, t = prog.step(d, i)
             except (ValueError, IndexError):
-                if after_end:
+                if guess:
+                    pending, covered = [], []
                     break
                 raise ValueError("a statement not understood at %x" % i)
-            seen.update(range(i, j))
-            out.update(t)
-            after_end = op in FLOW_END
+            if guess:
+                pending += t
+                covered.append((i, j))
+            else:
+                seen.update(range(i, j))
+                out.update(t)
+                ops.add(i)
+            if op in FLOW_END:
+                guess = True
             i = j
-    return sorted(out)
+        out.update(pending)
+        for a, b in covered:
+            seen.update(range(a, b))
+            ops.add(a)
+    return sorted(out), ops
 
 
 def rebuild(d, values):

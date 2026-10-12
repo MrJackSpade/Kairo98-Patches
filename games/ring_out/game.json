@@ -1,0 +1,11 @@
+{
+ "title": "Ring Out!!",
+ "key": "ZyX.zip/Ring Out!!",
+ "image": "Ring Out!!\\Ring Out!! (FD version) [HD]\\Ring Out!! (FD version).hdi",
+ "encoding": "zyx",
+ "program": "ZVA21F.EXE",
+ "archive": "ZSD00",
+ "game_dir": "RINGOUT",
+ "window_cells": 56,
+ "boot_steps": "35:shot,1:down,1:shot,1:down,1:shot,1:enter,6:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

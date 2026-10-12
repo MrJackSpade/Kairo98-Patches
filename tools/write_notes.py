@@ -1317,7 +1317,7 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
     kinds = {}
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
-    names = {"msg": "message runs", "name": "speakers' names", "engine": "program messages"}
+    names = {"msg": "message runs", "item": "menu items", "name": "speakers' names", "engine": "program messages"}
     prog, arc = cfg["program"], cfg["archive"]
     out = ["# %s%s (ZyX)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
@@ -1334,7 +1334,8 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
             "the only places a jump or call goes, so a script may grow when its labels move with it.  A "
             "message is a run of commands (colour, a key and a new page, a new line, the speaker, inserted "
             "names and numbers) and text after FFh up to a NUL: bytes below 80h are characters from the "
-            "program's table, the rest Shift-JIS.  The speakers' names are `NAME.ZSD` (each byte rotated).  "
+            "program's table, the rest Shift-JIS.  The speakers' names are a coded member the scripts load "
+            "(op 19h).  "
             "`pc98tl/zyx.py` documents the formats and the program patch, `pc98tl/zyx_tl.py` the English.  "
             "Unchanged files rebuild byte for byte." % (prog, arc), "",
             "* The scripts are walked with the program's own op lengths (its table, and its routines for "
@@ -1358,8 +1359,11 @@ def zyx_notes(name, cfg, doc, adult, clear, tests, extra):
             "run its note says is followed by an inserted name or number is drawn on directly before it.  "
             "A script with its English may take 64 KB; a build past it is refused and names the script." %
             cfg.get("window_cells", 0),
-            "* Speakers' names (`n` ids): 12 bytes: a letter one, two more for the half-width letters' "
-            "start and end, a full-width character two; past it cut and reported.",
+            "* Choice menus' items (`i` ids): one line in the menu's box, `max_cells` its widest Japanese "
+            "item; past it the line breaks inside the box.",
+            "* Speakers' names (`n` ids): `max_cells` bytes (the room the program copies each into): a "
+            "letter one, two more for the half-width letters' start and end, a full-width character two; "
+            "past it cut and reported.",
             "* Program messages (`e` ids): in their own bytes, `max_cells` the room; past it cut and "
             "reported.  The pieces of the two disk prompts that the program writes a drive's letter and a "
             "disk's number into keep their Japanese.",

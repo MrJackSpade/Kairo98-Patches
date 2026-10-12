@@ -1,17 +1,20 @@
-"""English for ZyX's engine (pc98tl/zyx.py; Ikazuchi no Senshi Raidy 2): strings.json in, a patched
-image out.
+"""English for ZyX's engine (pc98tl/zyx.py; Ikazuchi no Senshi Raidy 2, Ring Out!!): strings.json in,
+a patched image out.
 
 Strings:
 
-* "msg": a text run of a script (refs NAME.ZSD:offset, the run's first byte, after the FF): any
+* "msg": a text run of a script (refs SCRIPT.ZSD:offset, the run's first byte, after the FF): any
   length.  The window breaks its lines between words at its edge and, when full, waits for a key
   and starts a new page.  A run's line breaks and pages are the script's commands around it, so a
   `\\n` in the English is a space.  A run the script follows with an inserted name or number (its
   note says so) is drawn on directly before it.
-* "name": a speaker's name, drawn above the message (refs NAME.ZSD:index): `max_cells` 12 bytes
-  (one a letter, two for the half-width letters' start and end, two for a full-width
-  character); past it the English is cut and reported.
-* "engine": a message in ZVA98.EXE's data (refs ZVA98.EXE:offset), written in its own bytes:
+* "item": a choice menu's item (a run between op 72h n and 72h 00, refs as a message's): one line
+  in the menu's box, `max_cells` the widest Japanese item of the menu (its box's room); past it
+  the line breaks inside the box (reported).
+* "name": a speaker's name (refs NAME.ZSD:index, the table op 19h n loads): `max_cells` its bytes,
+  2n for the least n the scripts load it with (one a letter, two for the half-width letters'
+  start and end, two for a full-width character); past it the English is cut and reported.
+* "engine": a message in the program's data (refs PROGRAM:offset), written in its own bytes:
   `max_cells` its room (one a letter, two for a full-width character); past it the English is cut
   and reported.
 
@@ -28,7 +31,7 @@ from . import zyx
 from .alice_sys2_tl import sha256
 from .text import pseudo, sjis_cols
 
-PREFIX = {"msg": "m", "name": "n", "engine": "e"}
+PREFIX = {"msg": "m", "item": "i", "name": "n", "engine": "e"}
 INSERT = {9: "a name", 0xA: "a number", 0xC: "a name"}
 
 
@@ -78,22 +81,40 @@ def run_extract(here, src):
         if note:
             merged[key]["note"] = note
         order.append(key)
-    for name, d in zyx.members(vol.read(_path(cfg, cfg["archive"]))):
-        if name == zyx.NAMES:
-            for k, raw in enumerate(zyx.names(d)[0]):
-                add("name", prog.decode(raw), "%s:%d" % (name, k), zyx.NAME_ROOM,
-                    "a speaker's name above the message: %d bytes (a letter one, and two for the "
-                    "half-width letters' start and end)" % zyx.NAME_ROOM)
+    members = zyx.members(vol.read(_path(cfg, cfg["archive"])))
+    tables = zyx.name_tables(members)
+    for name, m in members:
+        if name in tables:
+            room = 2 * tables[name]
+            for k, raw in enumerate(zyx.names(m)[0]):
+                add("name", prog.decode(raw), "%s:%d" % (name, k), room,
+                    "a speaker's name: %d bytes (a letter one, and two for the half-width letters' "
+                    "start and end)" % room)
+            continue
+        try:
+            d = zyx.script_data(m)
+        except ValueError:
             continue
         if not zyx.is_script(d):
             continue
-        for s, e in zyx.runs(prog, d):
+        rs = zyx.runs(prog, d)
+        item_cells = {}
+        for a, b in zyx.menus(prog, d):
+            inside = [(x, y) for x, y in rs if a < x < b]
+            width = max([_cells(prog.decode(d[x:y])) for x, y in inside] or [0])
+            for x, y in inside:
+                item_cells[x] = width
+        for s, e in rs:
             jp = prog.decode(d[s:e])
             if not jp.strip("　 "):
                 continue
+            if s in item_cells:
+                add("item", jp, "%s:%04x" % (name, s), item_cells[s],
+                    "a choice menu's item: one line in its box (the menu's widest Japanese item)")
+                continue
             nxt = d[e + 1] if e + 1 < len(d) else 0
             note = "followed by %s the script draws" % INSERT[nxt] if nxt in INSERT else None
-            add("msg", jp, "%s:%04x" % (name, s), cfg.get("window_cells", 64), note)
+            add("msg", jp, "%s:%04x" % (name, s), cfg["window_cells"], note)
     for s, e in program_runs(exe):
         add("engine", prog.decode(exe[s:e]), "%s:%04x" % (cfg["program"], s), e - s,
             "ZVA98.EXE's message, in its own bytes")
@@ -114,7 +135,13 @@ def run_extract(here, src):
     print("wrote %s: %d strings" % (out, len(strings)))
 
 
+def _cells(text):
+    return sjis_cols(text.encode("cp932", "replace"))
+
+
 def _pseudo(e):
+    if e["kind"] == "item":
+        return pseudo(e["id"], 2 * e["max_cells"], 1.0)[:e["max_cells"]]
     if e["kind"] in ("engine", "name"):
         return pseudo(e["id"], 2 * e["max_cells"], 1.0)[:e["max_cells"] - 2]
     return pseudo(e["id"], sjis_cols(e["jp"].encode("cp932", "replace")))
@@ -139,22 +166,32 @@ def run_patch(here, src, dst, mode="en"):
     exe = bytearray(vol.read(exe_path))
     prog = zyx.Program(bytes(exe))
     arc_items = []
-    for name, d in zyx.members(vol.read(_path(cfg, cfg["archive"]))):
-        if name == zyx.NAMES:
-            plates, tail = zyx.names(d)
+    members = zyx.members(vol.read(_path(cfg, cfg["archive"])))
+    tables = zyx.name_tables(members)
+    for name, m in members:
+        if name in tables:
+            room = 2 * tables[name]
+            plates, tail, head = zyx.names(m)
+            changed = False
             for k in range(len(plates)):
                 ref = "%s:%d" % (name, k)
                 if ref not in by_ref:
                     continue
                 t = by_ref[ref]
-                if len(zyx.encode(t)) > zyx.NAME_ROOM:
-                    warn.append("%s: %d bytes, cut to %d" % (ids[ref], len(zyx.encode(t)), zyx.NAME_ROOM))
-                    while len(zyx.encode(t)) > zyx.NAME_ROOM:
+                if len(zyx.encode(t)) > room:
+                    warn.append("%s: %d bytes, cut to %d" % (ids[ref], len(zyx.encode(t)), room))
+                    while len(zyx.encode(t)) > room:
                         t = t[:-1]
                 plates[k] = zyx.encode(t)
-            new = zyx.names_file(plates, tail)
-            done += new != d
+                changed = True
+            new = zyx.names_file(plates, tail, head) if changed else m
+            done += new != m
             arc_items.append((name, new))
+            continue
+        try:
+            d = zyx.script_data(m)
+        except ValueError:
+            arc_items.append((name, m))
             continue
         values = {}
         if zyx.is_script(d):
@@ -163,7 +200,7 @@ def run_patch(here, src, dst, mode="en"):
                 if ref in by_ref:
                     values[s] = zyx.encode(by_ref[ref])
         try:
-            new = zyx.rebuild(d, values) if values else d
+            new = zyx.rebuild(d, values) if values else m
         except OverflowError:
             new = bytes(zyx.SCRIPT_MAX + 1)
         if len(new) > zyx.SCRIPT_MAX:
@@ -181,7 +218,7 @@ def run_patch(here, src, dst, mode="en"):
                 except OverflowError:
                     continue
             warn.append("%s: the filler was cut to %d%% to fit the script's 64 KB" % (name, int(ratio * 100)))
-        if new != d:
+        if new != m:
             done += 1
         arc_items.append((name, new))
     vol.write(_path(cfg, cfg["archive"]), zyx.archive(arc_items))

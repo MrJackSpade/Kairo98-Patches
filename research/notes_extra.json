@@ -356,5 +356,10 @@
   "remarks": [
    "Disk B's own record 0 (a copy of the replay mode's help) is never shown: no menu on Disk B opens the replay mode."
   ]
+ },
+ "ring_out": {
+  "remarks": [
+   "KOM_F0.ZSD (a command table: SAVE, LOAD, the wrestling moves, the look and talk commands) is not extracted: no script loads it (op 19h names NAME_F0 only), so it is never shown."
+  ]
  }
 }

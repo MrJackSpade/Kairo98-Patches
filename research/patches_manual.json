@@ -2025,5 +2025,13 @@
    "source": "this repo",
    "wip": true
   }
+ ],
+ "ZyX.zip/Ring Out!!": [
+  {
+   "label": "This repo: games/ring_out (patcher working, machine translation in progress)",
+   "url": "../games/ring_out/notes.md",
+   "source": "this repo",
+   "wip": true
+  }
  ]
 }
