@@ -40,3 +40,4 @@ Translation and the content classification (♥) are done by the translation mod
 | Boot from the hard disk (TH.BAT: ZVA GB_OP), the settings screen | OK: its menu's items in filler in their box, its labels cut to their places' room; a right-click leaves it |
 | The opening and the title menu | OK: the opening's pictures (their narration drawn into them, Japanese); the title menu's labels in filler; a click on the first starts |
 | The first scene (the hero's room) | OK: the speakers' names on their plates, the messages' filler wrapped between words across the window, page after page with Enter |
+| Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare) | OK: the messages' filler broken between words only, pages within the window, the menus as before |

@@ -38,3 +38,4 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Boot from the CD version's HD boot disk with the hard disk (RAKUEN2: MOTV21.EXE AUTOEXE), the title menu | OK: its pictured items; the System item's menu in filler in its box, half-width; Up and Enter pick the first |
 | The first scene (the hero's room) and the hallway | OK: the speaker's name on its plate (cut to its room), the messages' filler wrapped between words, page after page with Enter; a choice menu's items in filler in their box |
+| Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare) | OK: the messages' filler broken between words only, pages within the window, the menus as before |

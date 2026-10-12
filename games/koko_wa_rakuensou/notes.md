@@ -38,3 +38,4 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Boot from the CD version's HD boot disk with the hard disk (RAKUEN: MOTV21.EXE) | OK: the title's labels in filler, half-width, at their places; Up and Enter pick the first |
 | The opening | OK: the messages' filler half-width, broken between words at the window's edge, a new page after a key when the window is full |
+| Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare) | OK: the messages' filler broken between words only, pages within the window, the menus as before |

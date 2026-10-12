@@ -38,5 +38,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Boot from the hard disk (the floppy version installed: RO.BAT, ZVA21F) | OK: the setup menu's items in filler, half-width, in their box; Down and Enter pick its last item |
 | The opening (RO_01.ZSD) and the title | OK: the speakers' names in filler on their plates (cut to their ten bytes), the messages' filler after them broken between words, page after page with Enter; the title logo between |
+| Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare) | OK: the messages' filler broken between words only, pages within the window, the menus as before |
 
 KOM_F0.ZSD (a command table: SAVE, LOAD, the wrestling moves, the look and talk commands) is not extracted: no script loads it (op 19h names NAME_F0 only), so it is never shown.

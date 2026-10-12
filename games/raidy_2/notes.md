@@ -38,3 +38,4 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Boot from the hard disk (the floppy version installed: RAI2.BAT, ZVA98 L2_OP) | OK: the first menu's items in filler, half-width, in their box |
 | The opening (L2_OP.ZSD) with Raidy's lines | OK: the speaker's name in filler on its plate (ten letters), the message's filler after it, half-width, broken between words at the window's edge, a new page after a key when the window is full; the title logo between |
+| Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare) | OK: the messages' filler broken between words only, pages within the window, the menus as before |

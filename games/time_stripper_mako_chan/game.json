@@ -9,5 +9,12 @@
   64,
   3
  ],
- "boot_steps": "30:shot,1:enter,5:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot"
+ "boot_steps": "30:shot,1:enter,5:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot",
+ "scripts": [
+  "AUTOEXEC.BIN",
+  "TSM_*.BIN",
+  "STAFF.BIN",
+  "ESC.BIN"
+ ],
+ "script_room": 30720
 }
