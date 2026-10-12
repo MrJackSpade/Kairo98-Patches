@@ -1119,5 +1119,107 @@
     "votes": 0
    }
   ]
+ },
+ "top_vndb": {
+  "checked": "2026-10-11",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "ZyX.zip/Ikazuchi no Senshi Raidy 2",
+    "title": "Ikazuchi no Senshi Raidy 2",
+    "vndb": [
+     "v603"
+    ],
+    "votes": 570
+   },
+   {
+    "key": "Apricot.zip/Mugen Yasoukyoku",
+    "title": "Mugen Yasoukyoku",
+    "vndb": [
+     "v725"
+    ],
+    "votes": 468
+   },
+   {
+    "key": "DO.zip/Youjuu Senki - A.D. 2048",
+    "title": "Youjuu Senki - A.D. 2048",
+    "vndb": [
+     "v127"
+    ],
+    "votes": 394
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 1 - Shirakawa Reiko",
+    "title": "Immoral Study Scenario 1 - Shirakawa Reiko",
+    "vndb": [
+     "v737"
+    ],
+    "votes": 393
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka",
+    "title": "Immoral Study Scenario 2 - Iijima Yuka",
+    "vndb": [
+     "v738"
+    ],
+    "votes": 325
+   },
+   {
+    "key": "ZyX.zip/Ring Out!!",
+    "title": "Ring Out!!",
+    "vndb": [
+     "v1189"
+    ],
+    "votes": 321
+   },
+   {
+    "key": "Foster.zip/Koko wa Rakuensou",
+    "title": "Koko wa Rakuensou",
+    "vndb": [
+     "v1012"
+    ],
+    "votes": 314
+   },
+   {
+    "key": "Foster.zip/Koko wa Rakuensou 2",
+    "title": "Koko wa Rakuensou 2",
+    "vndb": [
+     "v1013"
+    ],
+    "votes": 231
+   },
+   {
+    "key": "CsWare.zip/Gloria - Kindan no Ketsuzoku",
+    "title": "Gloria - Kindan no Ketsuzoku",
+    "vndb": [
+     "v152"
+    ],
+    "votes": 192
+   },
+   {
+    "key": "Foster.zip/Time Stripper Mako-chan",
+    "title": "Time Stripper Mako-chan",
+    "vndb": [
+     "v1444"
+    ],
+    "votes": 160
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+    "title": "Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami",
+    "title": "Immoral Study Scenario 3 - Asakura Manami",
+    "vndb": [
+     "v3456"
+    ],
+    "votes": 130
+   }
+  ]
  }
 }
