@@ -157789,15 +157789,27 @@
      "path": "Mashou no Kao\\Mashou no Kao [HD]\\Mashou no Kao.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mashou_no_kao (patcher working, machine translation in progress)",
+     "url": "../games/mashou_no_kao/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7581",
+     "url": "https://vndb.org/v7581",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15205 (erotic content)",
    "engine": "mink",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Mink.zip/Mink no Omochabako Vol. 1 - Two Shot Diary 2 Special Disk",

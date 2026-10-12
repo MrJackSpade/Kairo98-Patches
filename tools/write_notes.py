@@ -2054,6 +2054,67 @@ def choreo_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "name": "a character's name",
+             "label": "program strings (its menu, the save slots)"}
+    out = ["# %s%s (Mink)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s`, Mink's \"Game System AVS96\" (Microsoft EXEPACK): the `*.BIN` scripts are packed bytecode "
+            "with the text in them.  The patcher writes a changed script again (its jumps and calls moved) and "
+            "packs it; a script past its 64 KB segment is split into further files, its scenes reached through "
+            "a variable and the script-loading command both ways.  `pc98tl/avs96.py` documents the format, "
+            "`pc98tl/avs96_tl.py` the English.  Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "* The program draws only its own 24-dot font (the game's kana and kanji, a few capitals).  The "
+            "patched program draws English as letter pairs, two kanji-ROM ANK letters in one 24-dot cell, 12 "
+            "dots each (as for pc98tl/illusion_font24.py); a cell is two half-width letters.",
+            "* The game is played with the mouse; the right button opens the program's menu."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` %d, letters a line holds): any length.  The window is %d cells "
+            "(%d letters) by two rows; the patcher breaks the English between words and pads a line to the "
+            "window's edge, and the program waits for a click when the window is full.  `\\n` forces a new "
+            "line.  `{NAME}` is the hero's name (＠００), counted as %d cells; keep it."
+            % (2 * cfg["cols"], cfg["cols"], 2 * cfg["cols"], cfg["name_cells"]),
+            "* Menu items (`i` ids): one line in the menu's box, %d letters; past it reported." % cfg["item_letters"],
+            "* The hero's name as the game starts (`n` id): %d letters at most (the program keeps 20 bytes); "
+            "past it cut and reported." % 20,
+            "* Program strings (`l` ids: its menu, the save slots): in place, `max_cells` their room in letters; "
+            "past it cut and reported.",
+            "* English is ASCII (pairs); another character is written full-width (a cell) when Shift-JIS has "
+            "it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title's logo, the staff's names in the opening).",
+            "* The name-entry screen (CONFIG.BIN, `m00009`-`m00022`): its rows of kana are the grid the player "
+            "picks the hero's name from (the program's kana table); a name entered there is kana."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2585,9 +2646,9 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
-                   "choreo": choreo_notes}[cfg["encoding"]](
+                   "choreo": choreo_notes, "avs96": avs96_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

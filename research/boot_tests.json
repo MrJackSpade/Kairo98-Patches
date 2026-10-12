@@ -3857,5 +3857,23 @@
    "The first choice (the mouse to the choice box, a click) and the next day's messages",
    "OK: the choice and its menu title in filler; the next scene plays (the scenarios' jumps and calls moved); the paragraphs' breaks kept"
   ]
+ ],
+ "mashou_no_kao": [
+  [
+   "Boot from the hard disk: the load menu (CONFIG.BIN), its first item clicked",
+   "OK: the menu's title and items in filler, letter pairs half-width; the items kept to the box"
+  ],
+  [
+   "The opening (timed) and the first scene's messages, a click after each",
+   "OK: the messages in filler half-width, broken between words, a line padded to the window's edge, two rows then a click; the game goes on into the first room scene"
+  ],
+  [
+   "The right button in the first scene: the program's menu",
+   "OK: the program's own strings in filler, in place, each within its room"
+  ],
+  [
+   "A test build with S001.BIN split (every scene moved to S001A.BIN), the same steps",
+   "OK: the same screens: the scenes are reached from the hub in the other file and return to it"
+  ]
  ]
 }
