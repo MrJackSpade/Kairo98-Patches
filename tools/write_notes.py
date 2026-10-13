@@ -2412,22 +2412,37 @@ def diana_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    v2 = cfg.get("version") == 2
+    if v2:
+        store = ("The files are in the six `0Dnn.DAT` archives (a directory at the end, XOR 9999h; every "
+                 "file scrambled, a byte one more or less); the patcher writes the changed files into "
+                 "their archives again (a file split into parts gets its parts beside it).  A script "
+                 "holds 4650h bytes; `M2_SUB.DSD` is read after it (at 4650h, 3E80h bytes) and called "
+                 "by the scripts: its strings that do not fit it go to a pool kept at the top of every "
+                 "calling script's room.")
+        progs = ("The programs are plain MZ programs, written as they were with the routine changed.")
+    else:
+        store = ("The scenario is `SNR/*.DSD` scripts (some packed, \"eLZ0\"); the patcher writes a changed "
+                 "script unpacked (the game's resident expander does not read every packed stream as the "
+                 "program would).  A script holds 4268h bytes.")
+        progs = ("The programs are written unpacked (they were LZEXE), asking for no more memory than "
+                 "before.")
     out += ["", "## Engine", "",
             "FourNine's N.A.V.A.L system: `NAVAL.EXE` runs the scenario player `%s` and the mahjong "
-            "programs `SONNET.EXE` and `TYPHON.EXE`.  The scenario is `SNR/*.DSD` scripts (some packed, "
-            "\"eLZ0\"): operations a word each, parsed by the interpreter's own table; a string is drawn "
-            "by an operation pointing at it.  The patcher lays a changed script's strings out again in the "
-            "room the Japanese strings leave and after it (the code stays where it is), and writes the "
-            "script unpacked (the game's resident expander does not read every packed stream as the "
-            "program would).  A script past DIANA's buffer (4268h bytes) is split into copies of itself "
-            "(`NAMEB.DSD`...), each entered at one operation (through a jump at its start) and keeping the "
-            "strings its part of the code draws; the code going on to another part's entry goes to that "
-            "file.  The mahjong opponents' lines (`DAT/2JC*.DAT`, `DAT/FC4*.DAT`) are written anew with "
-            "their table.  `pc98tl/diana.py` documents the format, `pc98tl/diana_tl.py` the English.  "
-            "Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "programs `SONNET.EXE` and `TYPHON.EXE`.  The scripts (`*.DSD`) are operations a word each, "
+            "parsed by the interpreter's own table; a string is drawn by an operation pointing at it.  "
+            "The patcher lays a changed script's strings out again in the room the Japanese strings "
+            "leave and after it (the code stays where it is).  %s  A script past its room is split into "
+            "copies of itself (`NAMEB.DSD`...), each entered at one operation (through a jump at its "
+            "start; the operations under the jump copied into the free room) and keeping the strings its "
+            "part of the code draws; the code going on to another part's entry goes to that file.  The "
+            "mahjong opponents' files (`2JC*.DAT`, `FC4*.DAT`) are written anew with their table of "
+            "lines (entries with the same line sharing it).  `pc98tl/diana.py` documents the format, "
+            "`pc98tl/diana_tl.py` the English.  Unchanged files rebuild byte for byte."
+            % (cfg["program"], store), "",
             "* The three programs share one text routine; the patch makes it draw ASCII as half-width "
-            "letters (NEC's half-width row), a byte and a cell each.  The programs are written unpacked "
-            "(they were LZEXE), asking for no more memory than before.",
+            "letters (NEC's half-width row), a byte and a cell each.  " + progs,
+            "* The patched game folder has `MTL_NOTE.TXT`, the machine-translation notice.",
             "* The menus are chosen with the mouse."]
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
@@ -2443,11 +2458,16 @@ def diana_notes(name, cfg, doc, adult, clear, tests, extra):
             "* Menus (`i` ids): one item a line, `\\n` between them as in the Japanese; a line past "
             "`max_cells` letters is cut and reported.",
             "* Opponents' lines (`q` ids): broken between words at `max_cells` letters; an opponent's file "
-            "past the programs' buffer (%d bytes) is refused." % 0x4E2,
+            "past the programs' buffer (%s) is refused." % (", ".join("%s*: %d bytes" % kv for kv in sorted(
+                cfg["dat_room"].items())) if cfg.get("dat_room") else "%d bytes" % 0x4E2),
             "* Names, program and table strings (`n`, `l` ids): in place, `max_cells` bytes (a letter a "
             "byte, a full-width character two), padded with spaces; past it cut and reported.  Blanks in "
             "the Japanese where the program draws an item's name over them stay blanks.",
             "* DOS messages (`t` ids): in place, plain text; the program writes digits over the `00`s.",
+            "* Strings drawn one after another going on from a mark (`{M}` at the end: the game's "
+            "typewriter texts, a character a string, as in the character cards): each goes on from the "
+            "column and line the one before left; the English can be written in the first and the "
+            "others left as `{M}` alone (nothing drawn).",
             "* Tokens: keep them where the Japanese has them.  `{N}` the player's name, `{L}` the "
             "player's label, `{K}` a key, `{W}` a key and the window cleared, `{M}` a mark the next "
             "text goes on from; `{1Dnn}` `{1Enn}` colours, `{1Fnn}` the style, `{06nn}` a face, "
@@ -2455,7 +2475,8 @@ def diana_notes(name, cfg, doc, adult, clear, tests, extra):
             "characters.",
             "* English is ASCII; another character full-width when Shift-JIS has it, else `?`."]
     out += ["", "## Not handled", "",
-            "* Text drawn into the pictures (`GRP/*.EFD`: the title, the buttons, the panels)."]
+            "* Text drawn into the pictures (%s: the title, the buttons, the panels)."
+            % ("the archives' pictures" if v2 else "`GRP/*.EFD`")]
     for line in extra.get(name, {}).get("not_handled", []):
         out.append("* " + line)
     out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]

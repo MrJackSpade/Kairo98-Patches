@@ -8,7 +8,7 @@ segment's 56h; an offset in a script is from its start (the program adds 56h).
 The code is a run of operations, each a word (the operation, below 70h: DIANA's table at DS:5F2C)
 and its operands (`LENGTHS`).  Some take a list ended by FFF0h (18h, 24h, 25h); 13h is a switch (a
 variable, then a table of offsets as long as the variable's range: it ends where the code it jumps
-to, or other code, begins).  Jumps: 0Ah (goto), 0Dh-12h (on the last compare), 5Bh, 40h, 41h (after
+to, or other code, begins).  Jumps: 0Ah (goto), 0Dh-12h (on the last compare), 59h, 5Bh, 40h, 41h (after
 a mouse choice), 54h (call; 55h returns); 1Fh goes to another script, 5Ch calls one (5Dh returns
 to the caller's script, read again), 00h and 01h end.  53h stops, the
 script going on 5 bytes on (after an 00h) when the game comes back to it (not with FFh).
@@ -40,18 +40,89 @@ LENGTHS = {
     0x36: 6, 0x37: 8, 0x38: 8, 0x39: 13, 0x3a: 18, 0x3b: 13, 0x3c: 18, 0x3d: 8, 0x3e: 4, 0x3f: 6,
     0x40: 10, 0x41: 13, 0x42: 3, 0x43: 6, 0x44: 6, 0x45: 3, 0x46: 5, 0x47: 5, 0x48: 2, 0x49: 2,
     0x4a: 5, 0x4b: 5, 0x4c: 6, 0x4e: 2, 0x4f: 3, 0x50: 4, 0x51: 6, 0x52: 6, 0x53: 3, 0x54: 4,
-    0x55: 2, 0x56: 2, 0x57: 4, 0x58: 4, 0x59: 4, 0x5a: 4, 0x5b: 6, 0x5c: 4, 0x5d: 2, 0x5e: 11,
+    0x55: 2, 0x56: 2, 0x57: 4, 0x58: 4, 0x59: 6, 0x5a: 4, 0x5b: 6, 0x5c: 4, 0x5d: 2, 0x5e: 11,
     0x5f: 4, 0x60: 8, 0x61: 4, 0x62: 6, 0x68: 6, 0x69: 4, 0x6a: 10, 0x6b: 10, 0x6d: 3, 0x6e: 18,
     0x6f: 18}
-JUMP = {0x0a: 2, 0x0d: 2, 0x0e: 2, 0x0f: 2, 0x10: 2, 0x11: 2, 0x12: 2, 0x54: 2, 0x5b: 4, 0x40: 8,
+JUMP = {0x0a: 2, 0x0d: 2, 0x0e: 2, 0x0f: 2, 0x10: 2, 0x11: 2, 0x12: 2, 0x54: 2, 0x59: 4, 0x5b: 4, 0x40: 8,
         0x41: 8}
 END = {0x00, 0x01, 0x0a, 0x13, 0x1f, 0x40, 0x41, 0x55, 0x5d}
 GOTO, JMP, DRAW = 0x1f, 0x0a, 0x15
 ONE = {0x01, 0x02, 0x03, 0x04, 0x07, 0x0d}
+FILE_OPERANDS = {0x02: 8, 0x1a: 2, 0x1f: 2, 0x4a: 3, 0x4b: 3, 0x5c: 2, 0x60: 6, 0x61: 2, 0x69: 2}
+
+
+class Version:
+    """A release of DIANA: its scripts' place in its data segment, their room, its operations."""
+
+    def __init__(self, base, room, lengths=None, jump=None, end=None, files=None, overlay=None,
+                 overlay_room=0, scrambled=False):
+        self.base, self.room = base, room
+        self.lengths = {**LENGTHS, **(lengths or {})}
+        self.jump = {**JUMP, **(jump or {})}
+        self.end = END | set(end or ())
+        self.files = {**FILE_OPERANDS, **(files or {})}
+        self.overlay, self.overlay_room, self.scrambled = overlay, overlay_room, scrambled
+
+
+# Waku Waku Mahjong Panic!; and 2 (its DIANA: the scripts at 4Ah, 4650h bytes; 4Dh reads a further
+# file (M2_SUB.DSD) to 4650h, the code calling into it; 63h is 03h with variables, 64h 41h with a
+# variable, 65h reads a word from a script's table; every file scrambled, `unscramble`).
+V1 = Version(0x56, 0x4268)
+V2 = Version(0x4A, 0x4650, lengths={0x4d: 4, 0x63: 12, 0x64: 13, 0x65: 8}, jump={0x64: 8},
+             end={0x64}, files={0x4d: 2}, overlay=0x4650, overlay_room=0x3E80, scrambled=True)
+
+
+def unscramble(b):
+    """A file as DIANA 2 reads it: a byte at an even place one less, at an odd one one more."""
+    return bytes((c - 1) & 0xFF if i % 2 == 0 else (c + 1) & 0xFF for i, c in enumerate(b))
+
+
+def scramble(b):
+    return bytes((c + 1) & 0xFF if i % 2 == 0 else (c - 1) & 0xFF for i, c in enumerate(b))
 
 
 def W(d, a):
     return struct.unpack_from("<H", d, a)[0]
+
+
+def archive(d):
+    """[(name, offset, size)] of a later release's 0Dnn.DAT (Waku Waku Mahjong Panic! 2): the
+    directory at the end (its size, with that word, the file's last word), its words XOR 9999h: a 16-byte head
+    ("D_Lib"), then 16-byte entries (the name, ended by 00h, and the offset as a dword), ended by
+    one named "[[".  DIANA opens a file by its name first, and looks in the archives only when
+    that fails."""
+    n = W(d, len(d) - 2)
+    dr = bytearray(d[len(d) - n:])
+    for i in range(0, len(dr) - 1, 2):
+        dr[i] ^= 0x99
+        dr[i + 1] ^= 0x99
+    ents = []
+    for i in range(16, len(dr), 16):
+        name = bytes(dr[i:i + 12]).split(b"\0")[0]
+        at = struct.unpack_from("<I", dr, i + 12)[0]
+        ents.append((name.decode("ascii"), at))
+        if name == b"[[":
+            break
+    ends = [at for _nm, at in ents[1:-1]] + [len(d) - n]
+    return [(nm, at, end - at) for (nm, at), end in zip(ents[:-1], ends)]
+
+
+def write_archive(d, members):
+    """d (an archive) with its members as members gives them [(name, bytes)]: the data in that
+    order, the directory's head as it was but for the count (stored as it is, at 11), "[[End]]" after the
+    entries with the data's end (its low word; the high word the directory's size, so that the
+    file's last word is it after the XOR)."""
+    n = 16 + 16 * (len(members) + 1)
+    head = bytearray(d[len(d) - W(d, len(d) - 2):][:16])
+    for i in range(16):
+        head[i] ^= 0x99
+    struct.pack_into("<H", head, 11, len(members) ^ 0x9999)     # (the count as it is stored)
+    data, dr = bytearray(), bytearray(head)
+    for name, b in members:
+        dr += (name.encode("ascii") + b"\0").ljust(12, b" ") + struct.pack("<I", len(data))
+        data += b
+    dr += b"[[End]]".ljust(12, b" ") + struct.pack("<HH", len(data) & 0xFFFF, n ^ 0x9999)
+    return bytes(data) + bytes(c ^ 0x99 for c in dr)
 
 
 def load(raw):
@@ -59,8 +130,8 @@ def load(raw):
     return sys98.unpack(raw, 8)[0] if raw[:4] == b"eLZ0" else raw
 
 
-def _walk(d, barrier):
-    ops, inside, todo, bad = {}, set(), [0], []
+def _walk(d, barrier, v, starts):
+    ops, inside, todo, bad = {}, set(), list(starts), []
     while todo:
         pc = todo.pop()
         while pc not in ops:
@@ -77,36 +148,42 @@ def _walk(d, barrier):
             elif op == 0x13:
                 n, low = 4, 1 << 20
                 while pc + n < low and pc + n not in barrier and pc + n + 2 <= len(d):
-                    v = W(d, pc + n)
-                    if v >= len(d) or v in inside or pc <= v < pc + n + 2:
+                    w = W(d, pc + n)
+                    if w + 2 > len(d) or w in inside or pc <= w < pc + n + 2:
                         break
-                    tg.append(v)
-                    low = min(low, v)
+                    if W(d, w) not in v.lengths and W(d, w) not in (0x13, 0x18, 0x24, 0x25):
+                        break                       # (not code: the table has ended)
+                    tg.append(w)
+                    if w > pc:
+                        low = min(low, w)
                     n += 2
-            elif op in LENGTHS:
-                n = LENGTHS[op]
+            elif op in v.lengths:
+                n = v.lengths[op]
             else:
                 bad.append(pc)
                 break
-            if op in JUMP:
-                tg.append(W(d, pc + JUMP[op]))
+            if op in v.jump:
+                tg.append(W(d, pc + v.jump[op]))
             if op == 0x53 and d[pc + 2] != 0xFF:
                 tg.append(pc + 5)                   # (where the script goes on, after an 00h)
+            if v.overlay and starts == (0,):
+                tg = [t for t in tg if t < v.overlay]       # (a call into the further file)
             ops[pc] = (op, n, tg)
             inside.update(range(pc + 1, pc + n))
             todo.extend(tg)
-            if op in END:
+            if op in v.end:
                 break
             pc += n
     return ops, bad
 
 
-def parse(d):
-    """{offset: (operation, length, [targets])} of the code reached from the start.  A switch's
-    table is cut where code found on a later pass begins."""
+def parse(d, v=V1, starts=(0,)):
+    """{offset: (operation, length, [targets])} of the code reached from the start (or from starts:
+    a further file's code, d then that file after `v.overlay` bytes).  A switch's table is cut where
+    code found on a later pass begins."""
     barrier = frozenset()
     while True:
-        ops, bad = _walk(d, barrier)
+        ops, bad = _walk(d, barrier, v, tuple(starts))
         nb = frozenset(ops) | frozenset(bad)
         if nb == barrier:
             if bad:
@@ -115,7 +192,7 @@ def parse(d):
         barrier = nb
 
 
-def reach(ops, starts, stop=()):
+def reach(ops, starts, stop=(), v=V1):
     """The operations run from starts, not going on past the offsets in stop."""
     seen, todo = set(), list(starts)
     while todo:
@@ -127,7 +204,7 @@ def reach(ops, starts, stop=()):
                 break
             op, n, tg = ops[pc]
             todo.extend(tg)
-            if op in END:
+            if op in v.end:
                 break
             pc += n
     return seen
@@ -160,13 +237,10 @@ def draws(d, ops):
     return out
 
 
-FILE_OPERANDS = {0x02: 8, 0x1a: 2, 0x1f: 2, 0x4a: 3, 0x4b: 3, 0x5c: 2, 0x60: 6, 0x61: 2, 0x69: 2}
-
-
-def file_operands(d, ops):
+def file_operands(d, ops, v=V1):
     """The offsets the operations naming a file (or other data) point to: a file's name is read
     from the byte after (that byte, below 21h, the disk's number), often a string's 00h."""
-    return {W(d, pc + FILE_OPERANDS[op]) for pc, (op, n, t) in ops.items() if op in FILE_OPERANDS}
+    return {W(d, pc + v.files[op]) for pc, (op, n, t) in ops.items() if op in v.files}
 
 
 def windows(d, ops):

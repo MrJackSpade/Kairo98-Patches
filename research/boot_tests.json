@@ -3980,16 +3980,26 @@
    "OK: the items and the notes in filler half-width, the menus' rows in place"
   ],
   [
-   "New game: the prologue (BEGINF.DSD, a scrolling window)",
-   "OK: filler half-width, each string from a new line; the scroll looks as the Japanese's does"
-  ],
-  [
-   "The first scene (SS0.DSD, split into SS0.DSD and SS0B.DSD: its first part; MADV00.DSD), Enter after each page",
+   "New game, Enter through the prologue into the first scene (SS0.DSD, split into SS0.DSD and SS0B.DSD: its first part; MADV00.DSD), Enter after each page",
    "OK: the speakers' labels, the messages' filler broken between words with later lines indented by the label, a new page when the window is full"
+  ]
+ ],
+ "waku_waku_mahjong_panic_2": [
+  [
+   "Boot from the hard disk (SIKI2.BAT: NAVAL.EXE, DIANA.EXE; the scripts in the rewritten archives): the sound menu, the title menu",
+   "OK: the items in filler half-width, the menus' rows in place"
   ],
   [
-   "The Panel Attack character select (MP4SEL.DSD), clicked through",
-   "OK: the profiles' filler in the box, a click going on to the next"
+   "New game: the prologue (M0_00.DSD) in the message window, clicked through",
+   "OK: the filler broken between words at the window's edge, inside its frame, a new page when it is full"
+  ],
+  [
+   "The character cards (M0_00.DSD: a string a character, each going on from the mark the one before left)",
+   "OK: the chained filler going on along the line, broken at the card's edge, a new page (a click) when the card is full; the name line cut at its room (reported)"
+  ],
+  [
+   "Clicked on past the cards into the first room scene (M1_00.DSD)",
+   "OK: the speaker's name and the messages' filler inside the scene's message box, a new page when it is full"
   ]
  ]
 }

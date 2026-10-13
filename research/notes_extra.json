@@ -386,5 +386,10 @@
   "remarks": [
    "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE: the mouse menus did not take the test's inputs reliably).  The two programs' text routine is patched the same way as DIANA's (the same routine, found by its bytes)."
   ]
+ },
+ "waku_waku_mahjong_panic_2": {
+  "remarks": [
+   "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE), the save and load screens, the endings."
+  ]
  }
 }

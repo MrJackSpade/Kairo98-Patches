@@ -38,6 +38,7 @@ import struct
 
 from . import diana as D
 from . import lzexe
+from .alice_game import MTL_NOTE
 from .alice_sys2_tl import sha256
 from .disk import DiskImage
 from .text import pseudo
@@ -143,9 +144,10 @@ def _words(parts):
     return out
 
 
-def layout(text, width, lines):
+def layout(text, width, lines, col=0, line=0):
     """A message's bytes: broken between words at width cells, a new page (01h) after `lines` lines;
-    later lines indented by an opening speaker's label."""
+    later lines indented by an opening speaker's label; from col on the page's line line (a string
+    going on from the mark another left)."""
     parts = _parts(text)
     lead = []
     while parts and parts[0][0] == "t" and parts[0][2] == 0:
@@ -158,7 +160,7 @@ def layout(text, width, lines):
         w = sum(p[2] for p in parts[:k])
         if k and w <= width // 2:
             indent = w
-    rows, cur, used = [], [], 0
+    rows, cur, used = [], [], col
     pad = [("s", b" ", 1)] * indent
 
     def newline():
@@ -188,25 +190,85 @@ def layout(text, width, lines):
     out = bytearray(b"".join(p[1] for p in lead))
     for i, row in enumerate(rows):
         if i:
-            out += b"\x01" if i % lines == 0 else b"\x0d"
+            line += 1
+            if line >= lines:
+                out += b"\x01"
+                line = 0
+            else:
+                out += b"\x0d"
         out += b"".join(p[1] for p in row)
     return bytes(out)
 
 
-def lines_of(text, width):
-    """A menu's bytes: its lines as given, each cut at width cells.  (bytes, the widest line)"""
+def end_column(b, col=0, line=0):
+    """(column, line) a string's bytes leave the drawer at (from col on line)."""
+    for i, u in D.units(b + b"\0", 0):
+        if u == b"\x0d":
+            col, line = 0, line + 1
+        elif u == b"\x01":
+            col, line = 0, 0
+        elif u[0] >= 0x80:
+            col += 2
+        elif u[0] >= 0x20:
+            col += 1
+        elif u[0] in (0x04, 0x07):
+            col += TOKEN_CELLS["N" if u[0] == 4 else "L"]
+    return col, line
+
+
+def draw_order(d, ops, grps):
+    """The groups in the order the code draws them."""
+    group_at = {p: g for g in grps for p in g[2]}
+    order = []
+    for pc in sorted(ops):
+        if ops[pc][0] == D.DRAW and group_at.get(D.W(d, pc + 3)) not in order:
+            order.append(group_at[D.W(d, pc + 3)])
+    return order
+
+
+def marked(b):
+    """Whether a string ends with a mark (03h): the next one goes on from there."""
+    return [u for _i, u in D.units(b + b"\0", 0)][-1:] == [b"\x03"]
+
+
+def page_lines(found):
+    """{(window, width, height): the lines a page holds}, as the Japanese uses them (a chain of
+    strings going on from marks counted together)."""
+    most = {}
+    for name, d, ops, grps, drawn in found:
+        carry = {}
+        for g in draw_order(d, ops, grps):
+            key = drawn[g[0]]
+            col, line = carry.get(key[0], (0, 0))
+            body = b""
+            for p, body, sep in pieces(d, g):
+                col, line = end_column(body, col, line)
+                most[key] = max(most.get(key, 0), line + 1)
+                col, line = end_column(sep[:1], col, line) if sep[:1] in (b"\x01", b"\x0d") else (col, line)
+            carry[key[0]] = (col, line) if marked(body) else (0, 0)
+    return most
+
+
+def _rows(text):
+    """The widths of a text's lines (to a new line or a new page)."""
+    return [cells(r) for r in re.split(r"\n|\{W\}", text)]
+
+
+def lines_of(text, width, col=0):
+    """A menu's bytes: its lines as given, each cut at width cells (the first from col: going on
+    from a mark); a cut line keeps its codes.  (bytes, the widest line)"""
     out, widest = [], 0
     for line in text.split("\n"):
-        b, used = bytearray(), 0
+        b, used, cut = bytearray(), col, False
         for k, pb, c in _parts(line):
-            if used + c > width:
-                widest = max(widest, cells(line))
-                break
+            if c and (cut or used + c > width):
+                cut = True
+                continue
             b += pb
             used += c
-        else:
-            widest = max(widest, used)
+        widest = max(widest, cells(line) + col if cut else used)
         out.append(bytes(b))
+        col = 0
     return b"\x0d".join(out), widest
 
 
@@ -264,12 +326,45 @@ def pieces(d, group):
     return out
 
 
-def window_of(d, ops):
-    """{15h's offset: (window, width cells, height lines)} by the last 03h before it for its window
-    (else the window as most scripts set it); the height 0: the window scrolls (03h's window with
-    8), a string going on where the last one stopped."""
-    defs = sorted((pc, d[pc + 2] & 7, 2 * d[pc + 7], 0 if d[pc + 2] & 8 else d[pc + 8])
-                  for pc, (op, n, t) in ops.items() if op == 0x03)
+def _defs(d, ops):
+    return sorted((pc, d[pc + 2] & 7, 2 * d[pc + 7], 0 if d[pc + 2] & 8 else d[pc + 8])
+                  for pc, (op, n, t) in ops.items() if op in (0x03, 0x63))     # (63h: its place from variables)
+
+
+def common_windows(scripts, cfg):
+    """{window: (game.json's "windows" for it or None, {(width cells, height lines): how often the
+    game's scripts set it})}."""
+    seen = {}
+    for name, d, ops in scripts:
+        for pc, w, cw, h in _defs(d, ops):
+            seen.setdefault(w, {}).setdefault((cw, h), 0)
+            seen[w][(cw, h)] += 1
+    fixed = {int(w): tuple(v) for w, v in cfg.get("windows", {}).items()}
+    return {w: (fixed.get(w), seen.get(w, {})) for w in set(seen) | set(fixed)}
+
+
+def _pick(common, win, wide):
+    """A window a string is drawn in when its script does not set it: game.json's, else of the
+    game's settings for it (with three lines or more; of a message's width if any) the narrowest
+    holding the string's widest Japanese line (the most often set first), else the most often set."""
+    fixed, seen = common.get(win, (None, {}))
+    if fixed:
+        return fixed
+    if not seen:
+        return (58, 4)
+    fits = [k for k in seen if k[0] >= wide and k[1] >= 3]
+    pool = [k for k in fits if k[0] >= 56] or fits        # (a message's window before a menu's)
+    if not pool:
+        return max(seen, key=lambda k: seen[k])
+    return min(pool, key=lambda k: (k[0], -seen[k]))
+
+
+def window_of(d, ops, common=None):
+    """{15h's offset: (window, width cells, height lines)} by the last 03h (or 63h) before it for its
+    window (else `_pick`); the height 0: the window scrolls (03h's window with 8), a string going
+    on where the last one stopped."""
+    common = common or {}
+    defs = _defs(d, ops)
     out = {}
     for pc, (op, n, t) in ops.items():
         if op != D.DRAW:
@@ -279,11 +374,12 @@ def window_of(d, ops):
         for at, w, cw, h in defs:
             if w == win and at < pc:
                 best = (cw, h)
-        out[pc] = (win,) + (best or COMMON.get(win, (58, 4)))
+        if best:
+            out[pc] = (win,) + best
+        else:
+            a = D.W(d, pc + 3)
+            out[pc] = (win,) + _pick(common, win, max(_rows(show(d[a:D.end(d, a) - 1]))))
     return out
-
-
-COMMON = {0: (18, 8), 1: (18, 3), 2: (68, 5), 3: (58, 5)}   # the windows as BEGINF.DSD sets them
 
 
 def _gap_strings(d, covered, base=0):
@@ -366,9 +462,11 @@ def program_strings(image, data=0):
     return sorted(out)
 
 
-def script_tables(d, ops, grps):
-    """[(offset, bytes)] strings in a script outside its code and its drawn strings (tables)."""
+def script_tables(d, ops, grps, org=0):
+    """[(offset, bytes)] strings in a script outside its code and its drawn strings (tables); from
+    org (a further file's place)."""
     covered = bytearray(len(d))
+    covered[:org] = bytes([1]) * org
     for pc, (op, n, t) in ops.items():
         covered[pc:pc + n] = b"\1" * n
     for a, e, cut in grps:
@@ -376,27 +474,154 @@ def script_tables(d, ops, grps):
     return _gap_strings(d, covered)
 
 
+def dat_table(d):
+    """Where an opponent's file's table of lines begins: its first entry is the line right after it
+    (2Eh in the first game; 3Ah in the second's 2JC files)."""
+    for p in range(0x20, 0x80, 2):
+        first = D.W(d, p)
+        if not (p < first < len(d)) or (first - p) % 2:
+            continue
+        words = struct.unpack_from("<%dH" % ((first - p) // 2), d, p)
+        if all(w == 0xFFFF or first <= w <= len(d) for w in words):
+            return p, first
+    raise ValueError("no table of lines")
+
+
 def dat_strings(d):
-    """(name bytes, [(index, offset, bytes)]) of an opponent's file."""
-    first = min(v for v in struct.unpack_from("<%dH" % ((len(d) - DAT_HEAD) // 2), d, DAT_HEAD)
-                if v != 0xFFFF and v >= DAT_HEAD)
-    count = (first - DAT_HEAD) // 2
+    """(name bytes, [(index, offset, bytes)], the table's place, the first line's) of an opponent's
+    file."""
+    head, first = dat_table(d)
     out = []
-    for k in range(count):
-        v = D.W(d, DAT_HEAD + 2 * k)
+    for k in range((first - head) // 2):
+        v = D.W(d, head + 2 * k)
         if v != 0xFFFF:
             out.append((k, v, d[v:D.end(d, v) - 1]))
-    return d[:DAT_NAME], out
+    return d[:DAT_NAME], out, head, first
 
 
-def _dat_files(vol, gd):
-    return sorted(p[len(gd):] for p, e in vol.walk() if p.startswith(gd + "DAT/") and not e["is_dir"]
-                  and p.upper().endswith(".DAT") and re.match(r"(2JC|FC4)", p.rsplit("/", 1)[1].upper()))
+class Store:
+    """A release's files: the first game's in its folders (scripts in SNR/, packed or not; the
+    opponents' files in DAT/); the second's in the 0Dnn.DAT archives, every file scrambled, and a
+    changed file written beside them under its name (the programs open that first)."""
+
+    def __init__(self, img, cfg):
+        self.img, self.gd = img, cfg["game_dir"] + "/"
+        vol = self.vol
+        self.v = D.V2 if cfg.get("version") == 2 else D.V1
+        self.overlay = cfg.get("overlay")
+        self.members, self.home, self.archives = {}, {}, {}
+        self.changed, self.last = {}, None
+        if self.v.scrambled:
+            for p, e in sorted(vol.walk()):
+                nm = p[len(self.gd):]
+                if p.startswith(self.gd) and re.fullmatch(r"0D0\d\.DAT", nm.upper()):
+                    d = vol.read(p)
+                    self.archives[nm] = [d, [name for name, at, size in D.archive(d)]]
+                    for name, at, size in D.archive(d):
+                        self.members.setdefault(name.upper(), d[at:at + size])
+                        self.home.setdefault(name.upper(), nm)
+
+    def _names(self):
+        if self.v.scrambled:
+            return sorted(self.members)
+        return sorted(p[len(self.gd):] for p, e in self.vol.walk() if p.startswith(self.gd)
+                      and not e["is_dir"])
+
+    def scripts(self):
+        return [n for n in self._names() if n.upper().endswith(".DSD")]
+
+    def dats(self):
+        return [n for n in self._names() if n.upper().endswith(".DAT") and
+                re.match(r"(2JC|FC4)", n.rsplit("/", 1)[-1].upper()) and
+                (self.v.scrambled or n.upper().startswith("DAT/"))]
+
+    def read(self, name):
+        if self.v.scrambled:
+            return D.unscramble(self.members[name.upper()])
+        return D.load(self.vol.read(self.gd + name))
+
+    def exists(self, name):
+        if self.v.scrambled and (name.upper() in self.members or name.upper() in self.changed):
+            return True
+        try:
+            self.vol.find(self.gd + name)
+            return True
+        except FileNotFoundError:
+            return False
+
+    @property
+    def vol(self):
+        return self.img.volumes[0]
+
+    def write(self, name, data, create=True):
+        """A file written (a full disk's volume grown once, then refused); in the second game a
+        script or an opponent's file goes into its archive (a new one into the archive of the
+        file written before it), the archives written by `flush`."""
+        if self.v.scrambled and name.upper().endswith((".DSD", ".DAT")) and name not in self.archives:
+            key = name.upper()
+            home = self.home.get(key, self.last)
+            if key not in self.home:
+                self.home[key] = home
+                self.archives[home][1].append(name.upper())
+            self.changed[key] = D.scramble(data)
+            self.last = home
+            return
+        put = self.vol.create if create else self.vol.write
+        try:
+            put(self.gd + name, data)
+        except IOError:
+            if not self.img.grow_volume(0):
+                raise SystemExit("the disk is full: %s does not fit (%d bytes)" % (name, len(data)))
+            try:
+                (self.vol.create if create else self.vol.write)(self.gd + name, data)
+            except IOError:
+                raise SystemExit("the disk is full even grown: %s does not fit (%d bytes)" % (name, len(data)))
+
+    def flush(self):
+        """The archives with changed members written again."""
+        for nm, (d, names) in sorted(self.archives.items()):
+            if not any(n.upper() in self.changed for n in names):
+                continue
+            members = [(n, self.changed.get(n.upper(), self.members.get(n.upper()))) for n in names]
+            self.write(nm, D.write_archive(d, members), create=False)
+
+    def script(self, name, mains=None):
+        """(the script as DIANA's buffer holds it from offset 0, its operations); the further file
+        after zeros to its place, parsed from where the other scripts call it (mains: their
+        operations)."""
+        d = self.read(name)
+        if self.overlay and name.upper() == self.overlay.upper():
+            starts = sorted({D.W(md, pc + self.v.jump[op]) for md, mops in (mains or [])
+                             for pc, (op, n, t) in mops.items() if op in self.v.jump
+                             and D.W(md, pc + self.v.jump[op]) >= self.v.overlay})
+            d = bytes(self.v.overlay) + d
+            return d, D.parse(d, self.v, starts)
+        return d, D.parse(d, self.v)
+
+    def all_scripts(self):
+        """[(name, script, operations)], the further file last."""
+        out, mains = [], []
+        for name in self.scripts():
+            if self.overlay and name.upper() == self.overlay.upper():
+                continue
+            d, ops = self.script(name)
+            out.append((name, d, ops))
+            mains.append((d, ops))
+        if self.overlay and self.overlay.upper() in [n.upper() for n in self.scripts()]:
+            d, ops = self.script(self.overlay, mains)
+            out.append((self.overlay, d, ops))
+        return out
 
 
-def _scripts(vol, gd):
-    return sorted(p[len(gd):] for p, e in vol.walk() if p.startswith(gd) and not e["is_dir"]
-                  and p.upper().endswith(".DSD"))
+def program_image(raw):
+    """(the program's image, a function writing a program from a changed image): LZEXE programs
+    unpacked (written unpacked, asking for no more memory than before), others as they are."""
+    try:
+        p = lzexe.unpack(raw)
+        return p["image"], lambda image: lzexe.build(p, image, keep_most=True)
+    except ValueError:
+        hdr = D.W(raw, 8) * 16
+        return raw[hdr:], lambda image: raw[:hdr] + image
 
 
 def _quip_room(dats):
@@ -412,24 +637,37 @@ def _quip_room(dats):
 
 # ---- extraction ----
 
-def scan(vol, gd, cfg):
+def scan(vol_img, cfg):
     """[(kind, jp, ref, room, note)] every string, in order."""
     out = []
-    for name in _scripts(vol, gd):
-        d = D.load(vol.read(gd + name))
-        ops = D.parse(d)
+    store = Store(vol_img, cfg)
+    vol, gd = store.vol, store.gd
+    scripts = store.all_scripts()
+    common = common_windows(scripts, cfg)
+    found, fill = [], {}
+    for name, d, ops in scripts:
         grps = groups(d, ops)
-        wins = window_of(d, ops)
+        wins = window_of(d, ops, common)
         drawn = {}
         for pc, (op, n, t) in ops.items():
             if op == D.DRAW:
                 drawn.setdefault(D.W(d, pc + 3), wins[pc])
+        found.append((name, d, ops, grps, drawn))
         for g in grps:
             win, width, height = drawn[g[0]]
+            rows = [w for _p, b, _s in pieces(d, g) for w in _rows(show(b))]
+            fill[(win, width)] = max([fill.get((win, width), 0)] + rows)
+    pl = page_lines(found)
+    for name, d, ops, grps, drawn in found:
+        for g in grps:
+            win, width, height = drawn[g[0]]
+            per_page = _lines(drawn[g[0]], pl)
             ps = pieces(d, g)
             texts = [show(b) for _p, b, _s in ps]
-            jp_rows = [cells(r) for t in texts for r in t.split("\n")]
+            jp_rows = [w for t in texts for w in _rows(t)]
             widest = max(jp_rows + [0])
+            if width - 4 <= fill[(win, width)] < width:
+                width = fill[(win, width)]  # (the Japanese's own edge: the window's frame takes the rest)
             msg = width >= 40 and (height >= 3 or height == 0)
             for (p, b, sep), jp in zip(ps, texts):
                 ref = "%s:%04x" % (name, p)
@@ -441,19 +679,19 @@ def scan(vol, gd, cfg):
                     out.append(("msg", jp, ref, max(width, widest),
                                 "a message (window %d): %d letters a line, %d lines a page; broken between "
                                 "words, a new page when the window is full" % (win, max(width, widest),
-                                                                               _page_lines(height))))
+                                                                               per_page)))
                 else:
                     out.append(("item", jp, ref, max(width, widest),
                                 "a menu (window %d): an item a line, each up to %d letters (cut past it)"
                                 % (win, max(width, widest))))
-        for at, s in script_tables(d, ops, grps):
+        for at, s in script_tables(d, ops, grps, store.v.overlay if name.upper() == (store.overlay or "").upper() else 0):
             out.append(("label", show(s), "%s:%04x" % (name, at), len(s),
                         "a script's table entry: in place, %d bytes (a letter a byte), padded with spaces"
                         % len(s)))
-    dats = [(n, vol.read(gd + n)) for n in _dat_files(vol, gd)]
+    dats = [(n, store.read(n)) for n in store.dats()]
     qw, ql = _quip_room(dats)
     for name, d in dats:
-        nm, items = dat_strings(d)
+        nm, items, _h, _f = dat_strings(d)
         out.append(("name", show(nm.rstrip(b"\0")), "%s:name" % name, DAT_NAME,
                     "an opponent's name: in place, %d bytes (a letter a byte)" % DAT_NAME))
         for k, at, s in items:
@@ -461,7 +699,7 @@ def scan(vol, gd, cfg):
                         "a mahjong opponent's line: %d letters a line, %d lines; broken between words"
                         % (qw, ql)))
     for prog in PROGRAMS:
-        image = lzexe.unpack(vol.read(gd + prog))["image"]
+        image = program_image(vol.read(gd + prog))[0]
         for at, s, kind in program_strings(image, int(cfg["data"][prog], 16)):
             if kind == "console":
                 out.append(("console", s.decode("cp932").replace("\r\n", "\n"), "%s:%05x" % (prog, at),
@@ -477,12 +715,16 @@ def _page_lines(height):
     return max(1, height - 1)
 
 
+def _lines(key, pl):
+    """The lines a page of a window holds: its height but one, at most as many as the Japanese
+    fills."""
+    return max(1, min(_page_lines(key[2]), pl.get(key, 1 << 20)))
+
+
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
-    vol = DiskImage(src).volumes[0]
-    gd = cfg["game_dir"] + "/"
     merged, order = {}, []
-    for kind, jp, ref, room, note in scan(vol, gd, cfg):
+    for kind, jp, ref, room, note in scan(DiskImage(src), cfg):
         key = (kind, jp)
         if key in merged:
             merged[key]["refs"].append(ref)
@@ -528,13 +770,15 @@ def _place(out, free, blob):
     return a
 
 
-def build(d, ops, grps, new, keep=None, cuts=None, entry=None):
+def build(d, ops, grps, new, keep=None, cuts=None, entry=None, v=D.V1, fixed=None):
     """The script with its groups' pieces as new gives them ({piece start: bytes with the separator};
     else as they were); only the groups keep lists (None: all); cuts: {offset: a part's name},
-    there a 1Fh to it; entry: the first operation a jump there."""
+    there a 1Fh to it; entry: the first operation a jump there; fixed: {a group's start: the place
+    it is put elsewhere (the pool below a further file)}."""
+    fixed = fixed or {}
     out = bytearray(d)
     free = []
-    names = D.file_operands(d, ops)          # (a file's name is read from the byte before it, the
+    names = D.file_operands(d, ops, v)          # (a file's name is read from the byte before it, the
     for a, e, c in sorted(grps):             # 00h ending a string: those bytes stay)
         out[a:e] = bytes(e - a)
         for i in range(a, e):
@@ -555,7 +799,7 @@ def build(d, ops, grps, new, keep=None, cuts=None, entry=None):
             b += new.get(p, body + sep)
         blobs.append((g, bytes(b), offs))
     for g, b, offs in sorted(blobs, key=lambda x: -len(x[1])):
-        at = _place(out, free, b)
+        at = fixed[g[0]] if g[0] in fixed else _place(out, free, b)
         for p, o in offs.items():
             where[p] = at + o
     for pc, (op, n, t) in ops.items():
@@ -567,21 +811,76 @@ def build(d, ops, grps, new, keep=None, cuts=None, entry=None):
         if name not in names:
             names[name] = _place(out, free, name.encode() + b"\0")
         out[at:at + 4] = struct.pack("<HH", D.GOTO, names[name])
-    if entry is not None:
+    if entry is not None:                   # (the operations under the jump go on in a copy, and
+        head, at = [], 0                    # the code going to them goes to the copy)
+        while at < 4:
+            head.append(at)
+            at += ops[at][1]
+        stub = b"".join(d[pc:pc + ops[pc][1]] for pc in head)
+        if ops[head[-1]][0] not in v.end:
+            stub += struct.pack("<HH", D.JMP, at)
+        sat = _place(out, free, stub)
+        moved = {pc: sat + pc for pc in head}
+        for pc in list(ops) + [sat + pc for pc in head]:
+            src = pc - sat if pc >= sat and pc - sat in moved else pc
+            if src not in ops:
+                continue
+            op, n, t = ops[src]
+            for f in target_fields(d, src, op, n, v):
+                w = D.W(out, pc + f)
+                if w in moved:
+                    struct.pack_into("<H", out, pc + f, moved[w])
         out[0:4] = struct.pack("<HH", D.JMP, entry)
     return bytes(out)
 
 
-def split(d, ops, grps, new, name):
+def target_fields(d, pc, op, n, v=D.V1):
+    """The places (from pc) of an operation's jump targets."""
+    if op == 0x13:
+        return list(range(4, n, 2))
+    if op in v.jump:
+        return [v.jump[op]]
+    return []
+
+
+def group_bytes(d, g, new):
+    return b"".join(new.get(p, body + sep) for p, body, sep in pieces(d, g))
+
+
+def overlay_pool(d, ops, grps, new, v, org):
+    """(the further file, the pool, {group: its place in the pool}): its strings that do not fit
+    its room, largest first, moved to a pool kept at the top of the buffer below it by every
+    script calling it."""
+    fixed, pool = {}, b""
+    order = sorted(grps, key=lambda g: -len(group_bytes(d, g, new)))
+    while True:
+        at = org - len(pool)
+        places = {g: at + o for g, o in fixed.items()}
+        out = build(d, ops, grps, new, v=v, fixed=places)
+        if len(out) - org <= v.overlay_room:
+            return out[org:], pool, places
+        g = next((g for g in order if g[0] not in fixed), None)
+        if g is None:
+            raise ValueError("%d bytes, its room %d" % (len(out) - org, v.overlay_room))
+        fixed = {k: o + len(group_bytes(d, g, new)) for k, o in fixed.items()}
+        fixed[g[0]] = 0
+        pool = group_bytes(d, g, new) + pool
+
+
+def split(d, ops, grps, new, name, v=D.V1, org=0, room=None):
     """[(name, bytes)] the script, in parts when one is past DIANA's buffer: each part a copy
     entered at one operation (the first part at the start, a later one through a jump put at its
     start), running the code reached from there up to another part's entry, which goes to that
-    part (1Fh); each copy keeps only the strings its code draws."""
-    whole = build(d, ops, grps, new)
-    if len(whole) <= D.ROOM:
+    part (1Fh); each copy keeps only the strings its code draws.  A further file (org: its place
+    after the script) is not split."""
+    room = room or v.room
+    whole = build(d, ops, grps, new, v=v)
+    if org:
+        if len(whole) - org > v.overlay_room:
+            raise ValueError("%d bytes, its room %d" % (len(whole) - org, v.overlay_room))
+        return [(name, whole[org:])]
+    if len(whole) <= room:
         return [(name, whole)]
-    if ops[0][1] < 4 or any(0 in t for op, n, t in ops.values()):
-        raise ValueError("its start cannot take the jump a later part needs")
     group_of = {}
     for g in grps:
         for p in g[2]:
@@ -590,7 +889,7 @@ def split(d, ops, grps, new, name):
     targets = {x for op, n, t in ops.values() for x in t}
     # (no part begins inside a routine 54h calls: its return would go on in the part's copy of
     # the caller, without the caller's strings)
-    called = D.reach(ops, {t[0] for op, n, t in ops.values() if op == 0x54})
+    called = D.reach(ops, {t[0] for op, n, t in ops.values() if op == 0x54 and t}, v=v)
     stem, ext = name.rsplit("/", 1)[-1].rsplit(".", 1)
     folder = name.rsplit("/", 1)[0] + "/" if "/" in name else ""
     entries = [0]
@@ -600,16 +899,16 @@ def split(d, ops, grps, new, name):
 
     def make(k, ents):
         stop = set(ents)
-        seen = D.reach(ops, {ents[k]}, stop)
+        seen = D.reach(ops, {ents[k]}, stop, v)
         keep = {group_of[draw_at[pc]] for pc in seen if pc in draw_at}
         cuts = {}
         for j, e in enumerate(ents):
-            if j != k and _reaches(ops, seen, e):
+            if j != k and _reaches(ops, seen, e, v):
                 cuts[e] = part_name(j).replace("/", "\\").lower()
-        return build(d, ops, grps, new, keep, cuts, ents[k] if k else None), seen
+        return build(d, ops, grps, new, keep, cuts, ents[k] if k else None, v), seen
     while True:
         built = [make(k, entries) for k in range(len(entries))]
-        over = [k for k, (b, seen) in enumerate(built) if len(b) > D.ROOM]
+        over = [k for k, (b, seen) in enumerate(built) if len(b) > room]
         if not over:
             return [(part_name(k), b) for k, (b, seen) in enumerate(built)]
         if len(entries) >= 26:
@@ -622,7 +921,7 @@ def split(d, ops, grps, new, name):
         for c in cands:
             ents = entries + [c]
             rest, part = len(make(k, ents)[0]), len(make(len(ents) - 1, ents)[0])
-            key = (max(part - D.ROOM, 0), rest, c)
+            key = (max(part - room, 0), rest, c)
             if rest < len(built[k][0]) and (best is None or key < best):
                 best = key
         if best is None:
@@ -630,11 +929,11 @@ def split(d, ops, grps, new, name):
         entries.append(best[2])
 
 
-def _reaches(ops, seen, e):
+def _reaches(ops, seen, e, v=D.V1):
     """Whether the code in seen goes on to (or jumps to) e."""
     for pc in seen:
         op, n, t = ops[pc]
-        if e in t or (pc + n == e and op not in D.END):
+        if e in t or (pc + n == e and op not in v.end):
             return True
     return False
 
@@ -648,10 +947,16 @@ def _pseudo(e):
     if e["kind"] in ("msg", "quip"):
         label = re.match(r"【[^】]*】|\{L\}", jp[len(lead):])
         head = label.group() if label else ""
-        tail = re.search(r"(?:\{(?:[0-9A-F]{2,6}|W|K)\})*$", jp).group()
+        tail = re.search(r"(?:\{(?:[0-9A-F]{2,6}|W|K|M)\})*$", jp).group()
         return lead + head + pseudo(e["id"], 2 * len(body) - cells(head)) + tail
     if e["kind"] == "item":
-        return "\n".join(pseudo(e["id"], cells(line), 1.0)[:e["max_cells"]] for line in jp.split("\n"))
+        out = []
+        for line in jp.split("\n"):         # (an item's colours and marks kept: the game goes on with them)
+            lead = re.match(r"(?:\{(?:[0-9A-F]{2,6}|M)\})*", line).group()
+            tail = re.search(r"(?:\{(?:[0-9A-F]{2,6}|M)\})*$", line[len(lead):]).group()
+            room = e["max_cells"] - cells(lead + tail)
+            out.append(lead + (pseudo(e["id"], cells(line), 1.0)[:max(room, 0)] if TOKEN.sub("", line) else "") + tail)
+        return "\n".join(out)
     if e["kind"] == "console":
         return pseudo(e["id"], e["max_cells"], 1.0)[:e["max_cells"]]
     tail = re.search(r"(?:\{(?:[0-9A-F]{2,6})\})*$", jp).group()
@@ -697,66 +1002,96 @@ def run_patch(here, src, dst, mode="en"):
         img.save(dst)
         print("patched %s (%s mode, 0/%d strings translated)" % (dst, mode, len(doc["strings"])))
         return
-    for name in _scripts(vol, gd):
-        raw = vol.read(gd + name)
-        d = D.load(raw)
-        ops = D.parse(d)
+    store = Store(img, cfg)
+    v = store.v
+    scripts = store.all_scripts()
+    common = common_windows(scripts, cfg)
+    is_overlay = lambda n: n.upper() == (store.overlay or "").upper()     # noqa: E731
+    callers = {name for name, d, ops in scripts if v.overlay and not is_overlay(name) and any(
+        op in v.jump and D.W(d, pc + v.jump[op]) >= v.overlay for pc, (op, n, t) in ops.items())}
+    pool = b""
+    found = []
+    for name, d, ops in scripts:
         grps = groups(d, ops)
-        wins = window_of(d, ops)
+        wins = window_of(d, ops, common)
+        drawn = {}
+        for pc, (op, n, t) in ops.items():
+            if op == D.DRAW:
+                drawn.setdefault(D.W(d, pc + 3), wins[pc])
+        found.append((name, d, ops, grps, drawn))
+    pl = page_lines(found)
+    for name, d, ops in sorted(scripts, key=lambda x: not is_overlay(x[0])):   # (the further file first)
+        org = v.overlay if is_overlay(name) else 0
+        grps = groups(d, ops)
+        wins = window_of(d, ops, common)
         drawn = {}
         for pc, (op, n, t) in ops.items():
             if op == D.DRAW:
                 drawn.setdefault(D.W(d, pc + 3), wins[pc])
         new = {}
-        for g in grps:
+        carry = {}                          # (where a string ending in a mark, 03h, left the next)
+        for g in draw_order(d, ops, grps):
             win, width, height = drawn[g[0]]
+            per_page = _lines(drawn[g[0]], pl)
+            col, line = carry.get(win, (0, 0))
+            b = b""
             for p, body, sep in pieces(d, g):
                 ref = "%s:%04x" % (name, p)
-                if ref not in by_ref:
-                    continue
-                e = ids[ref]
-                if e["kind"] == "msg":
-                    if height == 0:
-                        b = layout(by_ref[ref], e["max_cells"], 1 << 20) + bytes([0x0D])
+                b = body
+                if ref in by_ref:
+                    e = ids[ref]
+                    if e["kind"] == "msg":
+                        if height == 0:
+                            b = layout(by_ref[ref], e["max_cells"], 1 << 20, col) + bytes([0x0D])
+                        else:
+                            b = layout(by_ref[ref], e["max_cells"], per_page, col, line)
                     else:
-                        b = layout(by_ref[ref], e["max_cells"], _page_lines(height))
-                else:
-                    b, widest = lines_of(by_ref[ref], e["max_cells"])
-                    if widest > e["max_cells"]:
-                        warn.append("%s: %d letters, room for %d (cut)" % (e["id"], widest, e["max_cells"]))
-                new[p] = b + sep
+                        b, widest = lines_of(by_ref[ref], e["max_cells"], col)
+                        if widest > e["max_cells"]:
+                            warn.append("%s: %d letters, room for %d (cut)" % (e["id"], widest, e["max_cells"]))
+                    new[p] = b + sep
+                col, line = end_column(b, col, line)
+                if line >= per_page:
+                    line = per_page - 1
+                col, line = end_column(sep[:1], col, line) if sep[:1] in (b"\x01", b"\x0d") else (col, line)
+            carry[win] = (col, line) if marked(b) else (0, 0)
         tables = {}
-        for at, s in script_tables(d, ops, grps):
+        for at, s in script_tables(d, ops, grps, org):
             ref = "%s:%04x" % (name, at)
             if ref in by_ref:
                 b, full = in_place(by_ref[ref], len(s))
                 if full > len(s):
                     warn.append("%s: %d bytes, room for %d (cut)" % (ids[ref]["id"], full, len(s)))
                 tables[at] = b
-        if not new and not tables:
+        pooled = bool(pool) and name in callers
+        if not new and not tables and not pooled:
             continue
         base = bytearray(d)
         for at, b in tables.items():
             base[at:at + len(b)] = b
         try:
-            parts = split(bytes(base), ops, grps, new, name)
+            if org:
+                data, pool, _places = overlay_pool(bytes(base), ops, grps, new, v, org)
+                parts = [(name, data)]
+                if pool:
+                    warn.append("%s: %d bytes of its strings in the pool below it" % (name, len(pool)))
+            else:
+                parts = split(bytes(base), ops, grps, new, name, v, org,
+                              v.overlay - len(pool) if pooled else None)
+                if pooled:                  # (the pool at its place, below the further file)
+                    parts = [(p, data.ljust(v.overlay - len(pool), b"\0") + pool) for p, data in parts]
         except ValueError as ex:
             raise SystemExit("%s: %s; shorten these strings: %s" % (name, ex, ", ".join(
                 sorted({ids[r]["id"] for r in ids if r.startswith(name + ":")}))))
         if len(parts) > 1:
             warn.append("%s: split into %s" % (name, ", ".join(p for p, _d in parts)))
         for p, data in parts:               # (as it is: the game's resident expander does not read
-            out = data                      # every stream pc98tl/sys98.py packs as the program does)
-            if p != name:
-                try:
-                    vol.find(gd + p)
-                    raise SystemExit("%s: its part's name %s is taken" % (name, p))
-                except FileNotFoundError:
-                    pass
-            vol.create(gd + p, out)
-    for name in _dat_files(vol, gd):
-        d = vol.read(gd + name)
-        nm, items = dat_strings(d)
+            if p != name and store.exists(p):   # every stream pc98tl/sys98.py packs as the program does)
+                raise SystemExit("%s: its part's name %s is taken" % (name, p))
+            store.write(p, data)
+    for name in store.dats():
+        d = store.read(name)
+        nm, items, head, first = dat_strings(d)
         ref = "%s:name" % name
         out = bytearray(d)
         if ref in by_ref:
@@ -765,32 +1100,36 @@ def run_patch(here, src, dst, mode="en"):
                 warn.append("%s: %d bytes, room for %d (cut)" % (ids[ref]["id"], full, DAT_NAME))
             out[:DAT_NAME] = b
         if any("%s:%d" % (name, k) in by_ref for k, at, s in items):
-            first = min(at for k, at, s in items)
             body = bytearray()
-            table = bytearray(out[DAT_HEAD:first])
+            table = bytearray(out[head:first])
+            placed = {}                     # (entries with the same line share it, as they did)
             for k, at, s in items:
                 r = "%s:%d" % (name, k)
                 b = layout(by_ref[r], ids[r]["max_cells"], 99) if r in by_ref else s
-                struct.pack_into("<H", table, 2 * k, first + len(body))
-                body += b + b"\0"
-            out = out[:DAT_HEAD] + table + body + b"\0"
-            if len(out) > DAT_ROOM:
+                if b not in placed:
+                    placed[b] = first + len(body)
+                    body += b + b"\0"
+                struct.pack_into("<H", table, 2 * k, placed[b])
+            out = out[:head] + table + body + b"\0"
+            room = cfg.get("dat_room", {}).get(name.rsplit("/", 1)[-1][:3].upper(), DAT_ROOM)
+            if len(out) > room:
                 raise SystemExit("%s: %d bytes, the programs read %d; shorten these strings: %s" % (
-                    name, len(out), DAT_ROOM, ", ".join(sorted({ids[r]["id"] for r in ids
+                    name, len(out), room, ", ".join(sorted({ids[r]["id"] for r in ids
                                                                 if r.startswith(name + ":")}))))
         if bytes(out) != d:
-            vol.write(gd + name, bytes(out))
+            store.write(name, bytes(out))
+    store.flush()
     for prog in PROGRAMS:
         texts = {int(r.split(":")[1], 16): t for r, t in by_ref.items() if r.startswith(prog + ":")}
-        p = lzexe.unpack(vol.read(gd + prog))
-        image = p["image"]
+        image, rebuild = program_image(store.vol.read(gd + prog))
         if prog in DRAWERS:
             image = D.hook(image)[0]
         elif not texts:
             continue
         pid = {int(r.split(":")[1], 16): e for r, e in ids.items() if r.startswith(prog + ":")}
         image = _program(image, int(cfg["data"][prog], 16), texts, warn, pid)
-        vol.write(gd + prog, lzexe.build(p, image, keep_most=True))
+        store.write(prog, rebuild(image), create=False)
+    store.write("MTL_NOTE.TXT", MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))
     for w_ in dict.fromkeys(warn):
         print("warning:", w_)
     img.save(dst)

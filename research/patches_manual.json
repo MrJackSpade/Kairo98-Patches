@@ -2584,5 +2584,18 @@
    "url": "https://vndb.org/v735",
    "source": "VNDB"
   }
+ ],
+ "FourNine.zip/Waku Waku Mahjong Panic! 2 - Kokushi Musou": [
+  {
+   "label": "This repo: games/waku_waku_mahjong_panic_2 (patcher working, machine translation in progress)",
+   "url": "../games/waku_waku_mahjong_panic_2/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v736",
+   "url": "https://vndb.org/v736",
+   "source": "VNDB"
+  }
  ]
 }
