@@ -3889,5 +3889,19 @@
    "Further clicks to the scene's first menu",
    "OK: a menu command in filler (its highlighted box)"
   ]
+ ],
+ "coming_heart": [
+  [
+   "Boot from the hard disk: the opening (CH_OPEN.EXE), shots every 6 s",
+   "OK: the opening's pages in filler half-width (letter pairs), broken between words; the opening plays to the title"
+  ],
+  [
+   "The title's menu, its first command clicked",
+   "OK: the commands in filler (pairs) in the menu's two columns"
+  ],
+  [
+   "The first scene's messages (MAPL.EXE), a click after each",
+   "OK: the messages in filler half-width, broken between words"
+  ]
  ]
 }

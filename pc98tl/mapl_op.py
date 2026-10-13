@@ -156,3 +156,39 @@ def patch(exe, new):
     hdr[5] = max(0, hdr[5] - paras)
     struct.pack_into("<14H", out, 0, *hdr)
     return bytes(out)
+
+
+# ---- the openings with "@" texts (CH_OPEN.EXE, LZEXE)
+#
+# A text drawer (`AT_DRAWER`) draws a string through the kanji-ROM glyph library (the one MAPL.EXE uses):
+# "@" and a letter and its digits a command ("@n" a new line, "@w" the speed, "@r" a pause, "@h" the
+# line's height, "@c" the colour), a lead byte and the next a character, another byte a half-width step.
+# Its callers push the string's far place ("push ds; push offset") and a width of -1 (no wrapping).
+
+AT_DRAWER = re.compile(rb"\xc8\x26\x00\x00\x56\x57\x8b\x7e\x0e\xc7\x46\xec\x11\x00")
+AT_CMD = re.compile(r"@[A-Za-z][0-9]*")
+AT_LINE = 60         # letters a line holds (the texts start 128 dots from the left)
+
+
+def at_texts(image, dgroup):
+    """[(DGROUP offset, bytes)]: the strings the text drawer's callers name."""
+    m = AT_DRAWER.search(image)
+    if not m:
+        raise ValueError("the opening's text drawer not found")
+    fn = m.start()
+    out = []
+    for c in re.finditer(rb"\x9a(..)(..)", image, re.S):
+        off, seg = struct.unpack("<HH", c.group(1) + c.group(2))
+        if seg * 16 + off != fn:
+            continue
+        p = image.rfind(b"\x1e\x68", c.start() - 16, c.start())
+        if p < 0:
+            raise ValueError("a text drawer call without its string")
+        at = struct.unpack_from("<H", image, p + 2)[0]
+        s = image[dgroup + at:image.index(0, dgroup + at)]
+        out.append((at, s))
+    return out
+
+
+def at_show(b):
+    return b.decode("cp932", "replace").replace("@n", "\n")

@@ -149878,15 +149878,27 @@
      "path": "Coming Heart\\Coming Heart [HD]\\Coming Heart.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/coming_heart (patcher working, machine translation in progress)",
+     "url": "../games/coming_heart/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1382",
+     "url": "https://vndb.org/v1382",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r2705 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "May-beSoft.zip/Escape!",

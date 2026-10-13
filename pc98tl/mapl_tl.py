@@ -29,7 +29,8 @@ from .alice_sys2_tl import sha256
 from .illusion_font24 import encode_en
 from .text import pseudo
 
-PREFIX = {"msg": "m", "command": "c", "label": "l", "dos": "d", "subtitle": "o"}
+PREFIX = {"msg": "m", "command": "c", "label": "l", "dos": "d", "subtitle": "o", "opening": "p",
+          "console": "t"}
 KIND = {0x01: "command", 0x03: "command"}
 SUBST = {"…": "...", "’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-"}
 CMD = re.compile(r"%(?:[Gg][A-Za-z]|[A-Za-z])(?:,[^;]*;|\d+;)?")
@@ -97,6 +98,23 @@ def run_extract(here, src):
                     add("subtitle", jp, "%s:%04x:%d" % (cfg["opening"], off, k), 2 * OP.LINE_CELLS,
                         "a subtitle of the opening: %d lines of %d letters at most, broken between words; "
                         "{#c} a colour" % (OP.ROWS, 2 * OP.LINE_CELLS))
+    if cfg.get("opening_at"):
+        p = lzexe.unpack(vol.read(gd + cfg["opening_at"]))
+        ds = dgroup(p)
+        texts = OP.at_texts(p["image"], ds)
+        for at, s in texts:
+            add("opening", OP.at_show(s), "%s:%04x" % (cfg["opening_at"], at), len(s),
+                "a page of the opening: in place, its room in letters (a letter a byte); lines broken "
+                "between words at %d letters; keep the @ commands" % OP.AT_LINE)
+        skip = {ds + at for at, _s in texts}
+        for at, s in console_strings(p["image"], skip):
+            add("console", show(s), "%s:%05x" % (cfg["opening_at"], at), len(s),
+                "a notice printed to the screen: in place, plain ASCII, its room in bytes")
+    for prog in cfg.get("utilities", []):
+        p = lzexe.unpack(vol.read(gd + prog))
+        for at, s in console_strings(p["image"], set()):
+            add("console", show(s), "%s:%05x" % (prog, at), len(s),
+                "a notice printed to the screen: in place, plain ASCII, its room in bytes")
     counts, strings = {}, []
     for key in order:
         ent = merged[key]
@@ -145,6 +163,53 @@ def program_strings(p):
     return out
 
 
+CONSOLE_STR = re.compile(rb"(?:[\x81-\x9f\xe0-\xef][\x40-\xfc]|[\x20-\x7e\r\n])*[\x81-\x9f\xe0-\xef][\x40-\xfc]"
+                         rb"(?:[\x81-\x9f\xe0-\xef][\x40-\xfc]|[\x20-\x7e\r\n])*(?=\x00)")
+
+
+def console_strings(image, skip):
+    """[(image place, bytes)]: a program's NUL-ended Japanese strings (two kana at least) printed to
+    the screen through DOS, but those at `skip`."""
+    return [(m.start(), m.group()) for m in CONSOLE_STR.finditer(image)
+            if len(KANA.findall(m.group())) >= 2 and m.start() not in skip]
+
+
+def encode_console(text, room):
+    """Plain ASCII (another character "?"), cut to `room` bytes."""
+    b = "".join(c if " " <= c <= "~" or c in "\r\n" else "?" for c in text).encode("ascii")
+    return b[:room]
+
+
+def encode_at(text):
+    """An opening page: lines broken between words at AT_LINE letters ("@n"), the @ commands kept,
+    the letters as pairs."""
+    lines = []
+    for para in text.split("\n"):
+        line, col = "", 0
+        for w in re.split(r"(@[A-Za-z][0-9]*| )", para):
+            if not w:
+                continue
+            if OP.AT_CMD.fullmatch(w):
+                line += w
+                continue
+            if w == " ":
+                if col:
+                    line += w
+                    col += 1
+                continue
+            u = letters(_pieces(w))
+            if col and col + u > OP.AT_LINE:
+                lines.append(line.rstrip(" "))
+                line, col = "", 0
+            line += w
+            col += u
+        lines.append(line)
+    return b"@n".join(
+        b"".join(seg.encode("ascii") if OP.AT_CMD.fullmatch(seg) else encode(_pieces(seg))
+                 for seg in re.split(r"(@[A-Za-z][0-9]*)", line) if seg) for line in lines)
+
+
+AT_STRIP = re.compile(r"@[A-Za-z][0-9]*")
 LABEL_TOKEN = re.compile(r"%%[A-Za-z]|%[sd]|%(?:[Gg][A-Za-z]|[A-Za-z])")
 
 
@@ -484,9 +549,36 @@ def _pseudo(e):
         return out
     if e["kind"] == "subtitle":
         return pseudo(e["id"], 2 * len(JAPANESE.findall(e["jp"])))
-    if e["kind"] in ("label", "dos"):           # (in place: cut to the room)
+    if e["kind"] == "opening":
+        return pseudo(e["id"], 2 * len(JAPANESE.findall(AT_STRIP.sub("", e["jp"]))))
+    if e["kind"] in ("label", "dos", "console"):    # (in place: cut to the room)
         return pseudo(e["id"], e["max_cells"], 1.0)[:e["max_cells"]]
     return pseudo(e["id"], e["max_cells"], 1.0)[:e["max_cells"]]
+
+
+def cut(b, room):
+    """b cut to room at a character's boundary (a Shift-JIS or pair lead byte takes the next)."""
+    i, last = 0, 0
+    while i < len(b):
+        n = 2 if 0x81 <= b[i] <= 0x9F or 0xA0 <= b[i] <= 0xDF or 0xE0 <= b[i] <= 0xFC else 1
+        if i + n > room:
+            break
+        i += n
+        last = i
+    return b[:last]
+
+
+def _console(image, skip, prog, by_ref, ids, warn):
+    out = {}
+    for at, s in console_strings(image, skip):
+        ref = "%s:%05x" % (prog, at)
+        if ref in by_ref:
+            b = encode_console(by_ref[ref], len(s) + 99)
+            if len(b) > len(s):
+                warn.append("%s: %d bytes, room for %d (cut)" % (ids[ref]["id"], len(b), len(s)))
+                b = b[:len(s)]
+            out[at] = b.ljust(len(s), b" ")
+    return out
 
 
 def run_patch(here, src, dst, mode="en"):
@@ -541,9 +633,7 @@ def run_patch(here, src, dst, mode="en"):
                 b = encode_label(by_ref[ref])
             if len(b) > len(s):
                 warn.append("%s: %d bytes, room for %d (cut)" % (e["id"], len(b), len(s)))
-                b = b[:len(s)]
-                while b and len(b.decode("cp932", "ignore").encode("cp932")) != len(b):
-                    b = b[:-1]
+                b = cut(b, len(s))
             strings[at] = b.ljust(len(s), b" " if kind == "dos" else b"\0")
         vol.write(gd + cfg["program"], patch_program(orig, cfg, strings))
         if cfg.get("opening"):
@@ -558,6 +648,30 @@ def run_patch(here, src, dst, mode="en"):
                 vol.write(gd + cfg["opening"], OP.patch(exe, new))
             except ValueError as ex:
                 raise SystemExit("%s; shorten the subtitles" % ex)
+        if cfg.get("opening_at"):
+            path = gd + cfg["opening_at"]
+            orig = vol.read(path)
+            p = lzexe.unpack(orig)
+            ds = dgroup(p)
+            texts = OP.at_texts(p["image"], ds)
+            strings = {}
+            for at, s in texts:
+                ref = "%s:%04x" % (cfg["opening_at"], at)
+                if ref in by_ref:
+                    b = encode_at(by_ref[ref])
+                    if len(b) > len(s):
+                        warn.append("%s: %d bytes, room for %d (cut)" % (ids[ref]["id"], len(b), len(s)))
+                        b = cut(b, len(s))
+                    strings[ds + at] = b.ljust(len(s), b"\0")
+            skip = {ds + at for at, _s in texts}
+            strings.update(_console(p["image"], skip, cfg["opening_at"], by_ref, ids, warn))
+            vol.write(path, patch_program(orig, cfg, strings))
+        for prog in cfg.get("utilities", []):
+            p = lzexe.unpack(vol.read(gd + prog))
+            image = bytearray(p["image"])
+            for at, b in _console(p["image"], set(), prog, by_ref, ids, warn).items():
+                image[at:at + len(b)] = b
+            vol.write(gd + prog, lzexe.build(p, bytes(image)))
     for w_ in dict.fromkeys(warn):
         print("warning:", w_)
     img.save(dst)

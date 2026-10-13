@@ -2519,5 +2519,18 @@
    "url": "https://vndb.org/v6009",
    "source": "VNDB"
   }
+ ],
+ "May-beSoft.zip/Coming Heart": [
+  {
+   "label": "This repo: games/coming_heart (patcher working, machine translation in progress)",
+   "url": "../games/coming_heart/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v1382",
+   "url": "https://vndb.org/v1382",
+   "source": "VNDB"
+  }
  ]
 }

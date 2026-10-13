@@ -2124,7 +2124,8 @@ def mapl_notes(name, cfg, doc, adult, clear, tests, extra):
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "command": "menu commands", "label": "program strings (notices, errors)",
-             "dos": "a DOS notice", "subtitle": "opening subtitles"}
+             "dos": "a DOS notice", "subtitle": "opening subtitles", "opening": "opening pages",
+             "console": "notices printed to the screen"}
     out = ["# %s%s (MBS Truse)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -2147,6 +2148,9 @@ def mapl_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("* The opening (`%s`) draws its subtitles on the text layer; the patched program lays them "
                    "out after its image (`pc98tl/mapl_op.py`) and draws pairs as two ANK characters."
                    % cfg["opening"])
+    if cfg.get("opening_at"):
+        out.append("* The opening (`%s`, LZEXE, written unpacked) draws its pages through the same glyph "
+                   "library; the patched program draws pairs the same way." % cfg["opening_at"])
     out.append("* The game is played with the mouse.")
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
@@ -2168,6 +2172,13 @@ def mapl_notes(name, cfg, doc, adult, clear, tests, extra):
     if cfg.get("opening"):
         out.append("* Opening subtitles (`o` ids): two lines of 74 letters at most, broken between words "
                    "(more cut and reported); `{#c}` a colour, keep it.  Together they may take about 2 KB.")
+    if cfg.get("opening_at"):
+        out.append("* Opening pages (`p` ids): in place, `max_cells` their room in letters (a letter a byte; "
+                   "past it cut and reported); lines broken between words at 60 letters (\"@n\"); keep the "
+                   "`@` commands (`@w` speed, `@r` pause, `@h` line height, `@c` colour).")
+    if cfg.get("opening_at") or cfg.get("utilities"):
+        out.append("* Notices printed to the screen (`t` ids: %s): plain ASCII, in place, `max_cells` their room in "
+                   "bytes." % ", ".join([cfg.get("opening_at", "")] + cfg.get("utilities", [])).strip(", "))
     out += ["", "## Not handled", "",
             "* Text drawn into the pictures (titles, the chapter cards)."]
     for line in extra.get(name, {}).get("not_handled", []):
