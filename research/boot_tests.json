@@ -4021,5 +4021,19 @@
    "Space at the title loop, then Enter: the start menu, the first scenes, the command menus",
    "OK: the messages in filler half-width wrapped at the box's width over its lines; the start and command menus' items in filler half-width in their columns, the cursor bar over the first"
   ]
+ ],
+ "mystery_house": [
+  [
+   "Boot from the floppy (N88-DISK BASIC starts M98): the title, its menu row with the input box",
+   "OK: the menu row's filler in half-width with the box [ ] kept at its column, the cursor in it"
+  ],
+  [
+   "2 (instructions), Enter through the pages",
+   "OK: each page's rows in filler half-width at the game's columns, one a row inside the screen; the press-a-key row with its box"
+  ],
+  [
+   "1 (start): the opening scene, then two typed commands",
+   "OK: the house drawn, the opening messages' filler broken between words at 79 cells under it, the prompt after; each command answered with the not-understood message's filler. A test build with an over-long message showed it a page of 2 lines at a time, waiting for a key"
+  ]
  ]
 }

@@ -2623,5 +2623,18 @@
    "url": "https://vndb.org/v8714",
    "source": "VNDB"
   }
+ ],
+ "Starcraft.zip/Mystery House": [
+  {
+   "label": "This repo: games/mystery_house (patcher working, machine translation in progress)",
+   "url": "../games/mystery_house/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v26969",
+   "url": "https://vndb.org/v26969",
+   "source": "VNDB"
+  }
  ]
 }

@@ -1,0 +1,16 @@
+{
+ "title": "Mystery House",
+ "key": "Starcraft.zip/Mystery House",
+ "image": "Mystery House\\Mystery House [FD]\\Mystery House.d88",
+ "encoding": "n88prog",
+ "programs": [
+  "MYS 98",
+  "M98"
+ ],
+ "width": 80,
+ "window_lines": 4,
+ "memory": {
+  "MYS 98": 52415
+ },
+ "boot_steps": "25:shot,1:key=50,6:shot,1:enter,5:shot,1:enter,5:shot,1:enter,5:shot,1:enter,5:shot,1:enter,5:shot,1:key=49,25:shot,1:key=78,1:enter,5:shot,1:key=83,1:enter,5:shot"
+}

@@ -199824,15 +199824,27 @@
      "path": "Mystery House\\Mystery House [FD]\\Mystery House.nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mystery_house (patcher working, machine translation in progress)",
+     "url": "../games/mystery_house/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v26969",
+     "url": "https://vndb.org/v26969",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r67501 (no erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Starcraft.zip/Phantasie",

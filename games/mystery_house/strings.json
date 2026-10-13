@@ -1,0 +1,3121 @@
+{
+ "source_image_sha256": "a2238970e470ec0e41c2b30f31e1f31867fb266d85854cb4b059786199fb55b4",
+ "strings": [
+  {
+   "id": "w00001",
+   "kind": "word",
+   "jp": "ﾐﾅﾐ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00002",
+   "kind": "word",
+   "jp": "ｷﾀ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:1"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00003",
+   "kind": "word",
+   "jp": "ﾆｼ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:2"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00004",
+   "kind": "word",
+   "jp": "ﾋｶﾞｼ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:3"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00005",
+   "kind": "word",
+   "jp": "ｳｴ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:4"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00006",
+   "kind": "word",
+   "jp": "ｼﾀ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:5"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00007",
+   "kind": "word",
+   "jp": " ｱｶﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:6"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00008",
+   "kind": "word",
+   "jp": " ｻｶﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:7"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00009",
+   "kind": "word",
+   "jp": " ﾉﾎﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:8"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00010",
+   "kind": "word",
+   "jp": " ｵﾘﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:9"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00011",
+   "kind": "word",
+   "jp": " ﾊｲﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:10"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00012",
+   "kind": "word",
+   "jp": " ﾃﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:11"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00013",
+   "kind": "word",
+   "jp": " ﾑｶｳ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:12"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00014",
+   "kind": "word",
+   "jp": " ﾕｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:13"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00015",
+   "kind": "word",
+   "jp": " ｲｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:14"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00016",
+   "kind": "word",
+   "jp": " ﾄﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:15"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00017",
+   "kind": "word",
+   "jp": " ﾓﾂ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:16"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00018",
+   "kind": "word",
+   "jp": " ﾋﾛｳ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:17"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00019",
+   "kind": "word",
+   "jp": " ｵﾄｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:18"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00020",
+   "kind": "word",
+   "jp": " ｵｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:40:19"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00021",
+   "kind": "word",
+   "jp": " ｳｺﾞｶｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00022",
+   "kind": "word",
+   "jp": " ｺﾜｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:1"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00023",
+   "kind": "word",
+   "jp": " ｸﾑ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:2"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00024",
+   "kind": "word",
+   "jp": " ﾋﾈﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:3"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00025",
+   "kind": "word",
+   "jp": " ﾏﾜｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:4"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00026",
+   "kind": "word",
+   "jp": " ｹﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:5"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00027",
+   "kind": "word",
+   "jp": " ﾕｻﾌﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:6"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00028",
+   "kind": "word",
+   "jp": " ｹｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:7"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00029",
+   "kind": "word",
+   "jp": " ｻﾜﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:8"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00030",
+   "kind": "word",
+   "jp": " ﾀﾀｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:9"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00031",
+   "kind": "word",
+   "jp": " ﾌｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:10"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00032",
+   "kind": "word",
+   "jp": " ｱｹﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:11"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00033",
+   "kind": "word",
+   "jp": " ｼﾒﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:12"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00034",
+   "kind": "word",
+   "jp": " ﾊｽﾞｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:13"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00035",
+   "kind": "word",
+   "jp": " ﾊﾅｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:14"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00036",
+   "kind": "word",
+   "jp": " ｽﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:15"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00037",
+   "kind": "word",
+   "jp": " ﾉｿﾞｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:16"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00038",
+   "kind": "word",
+   "jp": " ｶｹﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:17"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00039",
+   "kind": "word",
+   "jp": " ｺﾛｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:18"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00040",
+   "kind": "word",
+   "jp": " ﾂｹﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:19"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00041",
+   "kind": "word",
+   "jp": " ﾖﾑ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:20"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00042",
+   "kind": "word",
+   "jp": " ﾐﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:21"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00043",
+   "kind": "word",
+   "jp": " ﾋﾗｸ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:22"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00044",
+   "kind": "word",
+   "jp": " ﾄｼﾞﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:23"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00045",
+   "kind": "word",
+   "jp": " ﾀﾞｽ",
+   "en": "",
+   "refs": [
+    "MYS 98:42:24"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00046",
+   "kind": "word",
+   "jp": "ﾐﾅﾐ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00047",
+   "kind": "word",
+   "jp": "ｷﾀ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:1"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00048",
+   "kind": "word",
+   "jp": "ﾆｼ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:2"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00049",
+   "kind": "word",
+   "jp": "ﾋｶﾞｼ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:3"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00050",
+   "kind": "word",
+   "jp": "ｳｴ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:4"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00051",
+   "kind": "word",
+   "jp": "ｼﾀ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:5"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00052",
+   "kind": "word",
+   "jp": "ｶｲﾀﾞﾝ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:6"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00053",
+   "kind": "word",
+   "jp": "ﾏﾄﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:7"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00054",
+   "kind": "word",
+   "jp": "ﾅｶﾞｼ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:8"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00055",
+   "kind": "word",
+   "jp": "ﾚｲｿﾞｳｺ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:9"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00056",
+   "kind": "word",
+   "jp": "ﾄﾀﾞﾅ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:10"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00057",
+   "kind": "word",
+   "jp": "ﾄﾞｱ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:11"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00058",
+   "kind": "word",
+   "jp": "ﾄﾋﾞﾗ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:12"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00059",
+   "kind": "word",
+   "jp": "ﾉｰﾄ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:13"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00060",
+   "kind": "word",
+   "jp": "ﾊﾞﾀｰﾅｲﾌ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:14"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00061",
+   "kind": "word",
+   "jp": "ﾐｽﾞｻｼ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:15"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00062",
+   "kind": "word",
+   "jp": "ﾏｯﾁ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:16"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00063",
+   "kind": "word",
+   "jp": "ｼｬﾍﾞﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:17"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00064",
+   "kind": "word",
+   "jp": "ﾋﾟｽﾄﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:18"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00065",
+   "kind": "word",
+   "jp": "ﾚﾝｶﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:19"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00066",
+   "kind": "word",
+   "jp": "ﾎｳｾｷ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:20"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00067",
+   "kind": "word",
+   "jp": "ﾄﾞｱﾉ ｶｷﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:21",
+    "MYS 98:1103:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00068",
+   "kind": "word",
+   "jp": "ﾊｺﾉ ｶｷﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:22",
+    "MYS 98:1103:1"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00069",
+   "kind": "word",
+   "jp": "ﾀｵﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:23"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00070",
+   "kind": "word",
+   "jp": "ﾛｳｿｸ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:24"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00071",
+   "kind": "word",
+   "jp": "ｶﾅﾂﾞﾁ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:25"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00072",
+   "kind": "word",
+   "jp": "ｼﾀｲ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:26"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00073",
+   "kind": "word",
+   "jp": "ﾋﾄ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:27"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00074",
+   "kind": "word",
+   "jp": "ｷﾄﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:28"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00075",
+   "kind": "word",
+   "jp": "ﾗﾝﾌﾟ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:29"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00076",
+   "kind": "word",
+   "jp": "ｷ ",
+   "en": "",
+   "refs": [
+    "MYS 98:50:30"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00077",
+   "kind": "word",
+   "jp": "ﾓﾘ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00078",
+   "kind": "word",
+   "jp": "ｱﾅ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:1"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00079",
+   "kind": "word",
+   "jp": "ｺｹ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:2"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00080",
+   "kind": "word",
+   "jp": "ﾃｰﾌﾞﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:3"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00081",
+   "kind": "word",
+   "jp": "ﾎﾞｳｴﾝｷｮｳ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:4"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00082",
+   "kind": "word",
+   "jp": "ｲｽ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:5"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00083",
+   "kind": "word",
+   "jp": "ｴ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:6"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00084",
+   "kind": "word",
+   "jp": "ｶｸｼﾄﾞｱ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:7"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00085",
+   "kind": "word",
+   "jp": "ｶｸｼﾄﾋﾞﾗ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:8"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00086",
+   "kind": "word",
+   "jp": "ﾅｲﾌ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:9"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00087",
+   "kind": "word",
+   "jp": "ﾍﾞｯﾄﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:10"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00088",
+   "kind": "word",
+   "jp": "ﾀﾝｽ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:11"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00089",
+   "kind": "word",
+   "jp": "ﾊｺ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:12"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00090",
+   "kind": "word",
+   "jp": "ﾓﾉｲﾚ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:13"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00091",
+   "kind": "word",
+   "jp": "ﾃﾞｲｼﾞｰ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:14"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00092",
+   "kind": "word",
+   "jp": "ﾋﾅｷﾞｸ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:15"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00093",
+   "kind": "word",
+   "jp": "ｺｯｸ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:16"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00094",
+   "kind": "word",
+   "jp": "ｼﾞｬｸﾞﾁ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:17"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00095",
+   "kind": "word",
+   "jp": "ﾎﾞﾙﾄ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:18"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00096",
+   "kind": "word",
+   "jp": "ﾐｽﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:19"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00097",
+   "kind": "word",
+   "jp": "ﾍﾔ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:20"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00098",
+   "kind": "word",
+   "jp": "ﾊｼｺﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:21"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00099",
+   "kind": "word",
+   "jp": "ｼﾞｮｰｲ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:22"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00100",
+   "kind": "word",
+   "jp": "ｹﾞﾝｶﾝ ",
+   "en": "",
+   "refs": [
+    "MYS 98:52:23"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "ﾜｶﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:110:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "ﾃﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:130:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "ｦ ﾄﾞｳ ｽﾙ ﾉ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:150:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "ｿﾉ ﾎｳｺｳ ﾆﾊ ｽｽﾒ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:170:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "ﾄﾚ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:190:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "ｵｹ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:210:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ､ ﾓｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:230:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "ﾄﾞｱ ｶﾞ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:250:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:270:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｦ ｱｹﾙ ﾓﾉ ｦ ﾓｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:290:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "ﾄﾞﾉ ﾎｳｶﾞｸ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:310:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "ｵﾓｽｷﾞ ﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:330:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "ﾋﾗｷ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:350:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "ｳｺﾞｶｾ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:370:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "ﾍﾞﾂ ﾆ ｶﾜｯﾀ ﾓﾉﾊ ﾐｱﾀﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:390:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾐﾃ ﾅｲﾉ ﾆ ﾖｸ ﾄﾚﾏｽﾈ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:410:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "ﾀﾞﾝﾀﾞﾝ ｸﾗｸ ﾅｯﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:430:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "ｦ ｵｷ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:450:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "ｦ ﾄﾘ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:470:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "ｺｺﾆﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:490:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｶﾞ ｱｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:497:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｶﾞ ｼﾏﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:499:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾅﾆﾓ ﾐｴﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:510:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "ﾏｯｸﾗ ﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:520:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "w00101",
+   "kind": "word",
+   "jp": "ﾐﾙ",
+   "en": "",
+   "refs": [
+    "MYS 98:735:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "｣ ﾀﾞｹ ﾃﾞ ｹｯｺｳ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:906:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "w00102",
+   "kind": "word",
+   "jp": "ﾓﾁﾓﾉ",
+   "en": "",
+   "refs": [
+    "MYS 98:1020:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00103",
+   "kind": "word",
+   "jp": "ｾｰﾌﾞ ｹﾞｰﾑ",
+   "en": "",
+   "refs": [
+    "MYS 98:1022:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00104",
+   "kind": "word",
+   "jp": "ﾘｽﾄｱ ｹﾞｰﾑ",
+   "en": "",
+   "refs": [
+    "MYS 98:1024:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00105",
+   "kind": "word",
+   "jp": "ｼﾞｭｳ ",
+   "en": "",
+   "refs": [
+    "MYS 98:1100:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00106",
+   "kind": "word",
+   "jp": "ｶｷﾞ ",
+   "en": "",
+   "refs": [
+    "MYS 98:1103:2"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "w00107",
+   "kind": "word",
+   "jp": "ﾂｸｴ ",
+   "en": "",
+   "refs": [
+    "MYS 98:1107:0"
+   ],
+   "max_cells": 79,
+   "note": "a word matched against what the player types (a verb or noun searched for in the typed line, or a whole command): the player types it as written, the spaces around it included"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": " ﾊ ﾓﾘ ﾉ ﾅｶ ﾆ ｵﾁﾃ ﾕｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:1184:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ﾉ ﾊｲｯﾀ ﾖｳｷ ｦ ",
+   "en": "",
+   "refs": [
+    "MYS 98:1210:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｶﾞ ﾊｲｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:1220:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ､ ﾐｽﾞ ｦ ｶｹﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:1230:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "ﾉｰﾄ ﾊ ﾓﾘ ﾉ ﾅｶ ﾆ ｵﾁﾃ ﾕｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:1540:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾏｯﾁﾎﾞｳﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2110:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "ﾏｯﾁ ﾆ ﾋｶﾞ ﾄﾓﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2120:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "ﾛｳｿｸ ﾆ ﾋｶﾞ ﾄﾓﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2220:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "ﾛｳｿｸ ｶﾞ ﾓｴﾂｷ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2230:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "ｺｳｶﾅ ﾎｳｾｷ ｶﾞ ｺﾉ ｲｴ ﾉ ﾄﾞｺｶﾆ ｱﾙ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2730:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "ﾐﾂｹﾀ ﾔﾂ ﾉ ﾓﾉﾀﾞ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2730:2"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "7-6=1 ｿﾚﾃﾞ ｵﾜﾙ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2735:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "ｵﾏｴ ﾅﾝｶ ﾆ ﾐﾂｶﾙ ﾓﾉｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2740:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "ﾐﾝﾅ ﾜﾀｼﾉ ﾓﾉﾀﾞ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2740:2"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "ﾁｶｼﾂ ﾆ ｱﾘ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2745:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "ﾅﾆｶｶﾞ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:2820:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ﾉ ﾊｲｯﾃ ｲﾅｲ ",
+   "en": "",
+   "refs": [
+    "MYS 98:3012:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ﾉ ﾊｲｯﾃ ｲﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:3012:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "ﾀﾏ ﾉ ﾊｲｯﾃ ｲﾅｲ ",
+   "en": "",
+   "refs": [
+    "MYS 98:3014:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "ﾀﾏ ﾉ ﾊｲｯﾃ ｲﾙ ",
+   "en": "",
+   "refs": [
+    "MYS 98:3014:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾐｽﾃﾘ ﾊｳｽ ｦ ｶﾝﾘｮｳ ｼﾏｼﾀ",
+   "en": "",
+   "refs": [
+    "MYS 98:5004:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "ｳﾞｨｸﾄﾘｱ･ﾌｳ ﾉ ｱﾚﾊﾃﾀ ﾔｼｷ ﾃﾞｽ｡ ｱﾅﾀﾊ ﾏｴﾆﾜ ﾆ ﾀｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5006:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "ｲｼﾀﾞﾀﾐ ｶﾞ ｹﾞﾝｶﾝ ﾍﾄ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5006:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "ｹﾞﾝｶﾝ ﾉ ｿﾄﾆﾊ ﾊﾝﾆﾝ ｶﾞ ﾏﾁｶﾏｴﾃ ｵﾘ､ ｱﾀﾅﾊ ｺﾛｻﾚ ﾎｳｾｷﾊ ｳﾊﾞﾜﾚﾃ ｼﾏｲ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5023:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｹﾞﾝｶﾝ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5024:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "ｲｼﾀﾞﾀﾐ ｦ ｵﾘﾙﾄ ﾏｴﾆﾜ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5024:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ｶﾞ ｼﾏｯﾃ､ ｶｷﾞ ｶﾞ ｶｶｯﾃ ｼﾏｲ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5048:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ﾉ ｵﾄﾃﾞ ﾌﾘｶｴﾙﾄ､ ﾐｼﾗﾇ 7ﾆﾝ ﾉ ﾀﾞﾝｼﾞｮ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5049:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｲﾘｸﾞﾁ･ﾎｰﾙ ﾆ ｲﾏｽ｡ ﾄﾞｱﾊ ﾋｶﾞｼ､ﾆｼ､ﾐﾅﾐ ﾆ ｱﾘﾏｽ｡ ｶｲﾀﾞﾝ ﾓ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5050:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "ﾀﾞｲ ﾄﾞｺﾛ ﾃﾞｽ｡ ﾚｲｿﾞｳｺ､ｶﾞｽ ﾀﾞｲ､ ﾄﾀﾞﾅ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5096:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｶﾞ ﾃﾞﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5132:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾅｶﾞｼ ｦ ﾐﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5132:1",
+    "MYS 98:5134:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｶﾞ ﾃﾞﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5136:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾐｽﾞ ｦ ｲﾚﾙ ﾖｳｷ ｦ ﾓｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5138:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｦ ｸﾐﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5140:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "ｺﾜｽ ﾓﾉ ｦ ",
+   "en": "",
+   "refs": [
+    "MYS 98:5148:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "ﾅｶﾞｸ ﾂｶﾜﾚﾃ ﾅｲ ﾄｼｮｶﾝ ﾃﾞｽ｡ ﾎｺﾘ ｶﾞ ﾀﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5160:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "ﾄﾞｱ ﾊ ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5168:0",
+    "MYS 98:5202:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "ﾄﾞｱ ﾊ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5170:0",
+    "MYS 98:5204:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "ｼｮｸﾄﾞｳ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5188:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "ﾋｶﾞ ﾂｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5196:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "ﾋﾊ ｷｴﾏｼﾀ｡ ﾕｶﾆ ｱﾅｶﾞ ｱｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5198:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｶﾞ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5198:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾔｹ ｼﾆ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5200:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "ﾆｶｲ ﾆ ｱｶﾞｯﾀ ﾄｺﾛ ﾃﾞｽ｡ ﾛｳｶﾊ､ ﾋｶﾞｼ､ ﾆｼ､ ｷﾀ ﾆ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5226:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "ｶｲ ﾀﾞﾝ ﾉ ｲﾘｸﾞﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5256:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "ﾍﾔ ﾉ ｲﾘｸﾞﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5282:0",
+    "MYS 98:5328:0",
+    "MYS 98:5364:0",
+    "MYS 98:5410:0",
+    "MYS 98:5452:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "ﾌﾙｲ ｺﾄﾞﾓ ﾍﾞﾔ ﾃﾞｽ｡ ｼﾀｲ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5306:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "ﾄﾞｸﾀｰ ｸﾞﾘｰﾝ ｶﾞ ｼﾝﾃﾞ ｲﾏｽ｡ ｶﾚﾊ ｻｼ ｺﾛｻﾚﾀ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5316:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｷﾐﾜﾙｸ ﾅｲ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5318:0",
+    "MYS 98:5442:0",
+    "MYS 98:5516:0",
+    "MYS 98:5704:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｼﾀｲ ﾄ ﾊﾅｽ ﾉ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5320:0",
+    "MYS 98:5444:0",
+    "MYS 98:5518:0",
+    "MYS 98:5706:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "ｺﾄﾞﾓ ﾉ ｼﾝｼﾂ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5348:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "ｵｵｷﾅ ｼﾝｼﾂ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5388:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "ﾍﾔ ﾉ ｿﾄｶﾗ ﾅｲﾌｶﾞ ﾄﾝﾃﾞ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5388:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "ﾅｲﾌ ｶﾞ ｻｻｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5398:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "ﾂﾖｸ ｻｻｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5402:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "ﾁｲｻﾅ ｼﾝｼﾂ ﾆ ｲﾏｽ｡ ｼﾀｲ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5430:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "ｵﾊﾘｺ ﾉ ｻﾘｰﾃﾞｽ｡ ｱﾀﾏﾆ ｵｵｷﾅ ｺﾌﾞ ｶﾞ ﾃﾞｷﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5440:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "ｶﾉｼﾞｮ ﾉ ﾌｸﾆ ｷﾝｲﾛ ﾉ ｶﾐﾉｹ ｶﾞ ﾂｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5440:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "ｼｮｻｲ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5472:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "ｿﾉ ｴﾊ､ ﾄﾃﾓ ｺｳｶ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5488:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "ﾎﾞﾙﾄ ﾃﾞ ｺﾃｲ ｻﾚﾃ ｲﾃ ",
+   "en": "",
+   "refs": [
+    "MYS 98:5490:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "ｻﾋﾞ ﾂｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5494:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "ﾌﾛﾊﾞ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5504:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "ﾆｸﾔ ﾉ ﾋﾞﾙ ﾃﾞｽ｡ ｽﾄｯｷﾝｸﾞ ﾃﾞ ｼﾒ ｺﾛｻﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5514:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "ﾔﾈｳﾗ ﾍﾞﾔ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5530:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "ｶｸｼﾄﾋﾞﾗ ｶﾞ ﾐｴ ﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5530:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "ｯﾃ ﾅﾝ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5546:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｱﾀﾏ ｦ ﾃﾝｼﾞｮｳ ﾆ ﾌﾞﾂｹﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5554:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "ﾓﾘ ｶﾞ ﾐｴ ﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5558:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "ﾓﾉｵｷ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5568:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾐﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5584:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｶﾞ ｱｷ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5588:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "ﾄｳ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5596:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾊﾝﾆﾝ ﾆ ｺﾛｻﾚ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5606:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "ﾄﾞｱﾊ ｽﾃﾞﾆ ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5608:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "ﾄﾞｱﾊ ｽﾃﾞﾆ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5610:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "ｼﾝﾃﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5614:0",
+    "MYS 98:5732:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "ﾀﾏｶﾞ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5622:0",
+    "MYS 98:5740:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "ﾅﾆ ｦ ﾂｶｯﾃ ｺﾛｽ ﾉ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5624:0",
+    "MYS 98:5742:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "ﾀﾞﾚ ｦ ｺﾛｽ ﾉ ﾃﾞｽｶ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5626:0",
+    "MYS 98:5744:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "ｺﾛｾ ﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5628:0",
+    "MYS 98:5746:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "ｲｴ ﾉ ﾖｺ ﾉ ﾆﾜ ﾆ ｲﾏｽ｡ ｶｷﾈ ｽﾞﾀｲ ﾆ ﾐﾅﾐ ﾍ ｲｹﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5648:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "ﾄﾞｱﾊ ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5656:0",
+    "MYS 98:5686:0",
+    "MYS 98:5956:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "ﾄﾞｱﾊ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5658:0",
+    "MYS 98:5688:0",
+    "MYS 98:5958:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｶｷﾈ ﾆ ｶｺﾏﾚﾀ ｳﾗ ﾆﾜ ﾆ ｲﾏｽ｡ ｶｷﾈ ﾊ ｲｴ ﾆ ｿｯﾃ ｷﾀﾍﾄ ﾂﾂﾞｲﾃ ｲﾏｽ｡ ｼﾀｲ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5678:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "ｷﾄﾞﾊ ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5690:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "ｷﾄﾞﾊ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5692:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "ｷﾄﾞ ｶﾞ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5696:0",
+    "MYS 98:5730:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "ｷｶｲｺｳ ﾉ ｻﾑ ﾃﾞｽ｡ ﾄﾞﾝｷ ﾃﾞ ｱﾀﾏ ｦ ｳﾀﾚﾀ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5702:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｶｺｲ ﾉ ｱﾙ ﾁｲｻﾅ ﾎﾞﾁ ﾆ ｲﾏｽ｡ ﾎﾗﾚﾀ ﾊﾞｶﾘ ﾉ 6 ｯﾉ ﾊｶｱﾅ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5714:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "ｼﾞｮｰｲ ｶﾞ ｼﾞｬﾏ ｼﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5724:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "ｷﾄﾞﾊ ｽﾃﾞﾆ ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5726:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "ｷﾄﾞﾊ ｽﾃﾞﾆ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5728:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "ｲｷ ﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5732:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "ﾊｲｾﾞﾝ ｼﾂ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5766:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾅﾝﾎﾞｸ ﾆ ﾂﾂﾞｲ ﾃｲﾙ ｾﾏｲ ﾂｳﾛ ﾉ ﾊｼ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5786:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｶﾍﾞ ｲﾁﾒﾝ ｦ ｺｹ ｶﾞ ｵｵｯﾃ ｲﾙ ｼﾞﾒｼﾞﾒ ｼﾀ ﾍﾔ ﾆ ｲﾏｽ｡ ｼﾀｲ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5808:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "ｿﾚﾊ ｴﾝｶﾝｺｳ ﾉ ﾄﾑ ﾃﾞｽ｡ ｻｼ ｺﾛ ｻﾚﾀ ﾖｳﾃﾞｽ｡ ﾃ ﾆﾊ ﾋﾅｷﾞｸ ｦ ﾓｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5824:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "ﾚﾝｶﾞ ｶﾞ ﾄﾚ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5826:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "ｺｹ ｦ ﾌｸ ﾓﾉ ｶﾞ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5826:1"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "ﾎｳｾｷ ｶﾞ ﾐｴﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5830:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "ｼｯｶﾘ ﾆｷﾞｯﾃ ｲﾃ ﾄﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5836:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "ｶｲﾀﾞﾝ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5844:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｶﾋﾞ ｸｻｲ ｷｭｳｸﾂ ﾅ ﾊﾞｼｮ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5866:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "ﾅﾝﾎﾞｸ ﾆ ﾊｼﾙ ﾄﾝﾈﾙ ﾉ ﾐﾅﾐ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5884:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "ｱﾅﾀ ﾉ ﾏｴ ﾆﾊ ｵｵｷﾅ ﾏﾂ ﾉ ｷ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5904:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "ﾀｶｲ ﾏﾂ ﾉ ｷ ﾉ ﾃｯﾍﾟﾝ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5926:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "ｻｲｼﾝｶﾞﾀ ﾉ ﾎﾞｳｴﾝｷｮｳ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5940:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "ﾄﾞｱ ｶﾞ ｱｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5956:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "ﾄﾞｱ ｶﾞ ｼﾏﾘ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5958:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｷｯﾁﾝ ｶﾗ ｵﾘﾀ ﾄｺﾛ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5979:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "ﾓﾘ ﾆ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "MYS 98:5980:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "ﾓｳｲﾁﾄﾞ ﾔﾘﾏｽｶ ? (Y.N)",
+   "en": "",
+   "refs": [
+    "MYS 98:10030:0"
+   ],
+   "max_cells": 158,
+   "note": "a message: broken between words at 79 half-width cells, a key waited for after each 2 lines"
+  },
+  {
+   "id": "l00001",
+   "kind": "line",
+   "jp": "1 -- ｹﾞｰﾑ ｽﾀｰﾄ         2 -- ｹﾞｰﾑ ﾉ ｾﾂﾒｲ        [ ]",
+   "en": "",
+   "refs": [
+    "M98:3070:0"
+   ],
+   "max_cells": 50,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00002",
+   "kind": "line",
+   "jp": "ｷｰ ｦ ｵｼﾃ ｸﾀﾞｻｲ  [ ]",
+   "en": "",
+   "refs": [
+    "M98:3510:0"
+   ],
+   "max_cells": 19,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00003",
+   "kind": "line",
+   "jp": "ｺﾉ ｸﾐｱﾜｾ ｶﾞ ｺｳｶ ｦ ｳﾏﾅｶｯﾀ ﾊﾞｱｲ ﾆﾊ, ﾎｶ ﾉ ｸﾐｱﾜｾ ｦ ﾀﾒｼﾃ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "M98:4020:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00004",
+   "kind": "line",
+   "jp": "ｽﾙｺﾄ ﾃﾞ ｼﾝｺｳ ｼﾃ ﾕｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4030:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00005",
+   "kind": "line",
+   "jp": "ｲｴ ﾉ ﾅｶ ﾉ ｿｳｻｸ ﾆ ｱﾀｯﾃﾊ, ｢ﾒｲｼ｣ + ｢ﾍ･ﾆ･ｦ･ﾊ｣ + ｢ﾄﾞｳｼ｣ ﾉ ｸﾐｱﾜｾ ｦ ﾆｭｳﾘｮｸ",
+   "en": "",
+   "refs": [
+    "M98:4040:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00006",
+   "kind": "line",
+   "jp": "ｱﾅﾀ ﾊ ﾊﾝﾆﾝ ﾆ ｺﾛｻﾚﾙ ﾏｴﾆ, ｿﾉ ｻﾂｼﾞﾝｷ ｦ ﾐﾂｹﾀﾞｻﾈﾊﾞ ﾅﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "M98:4050:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00007",
+   "kind": "line",
+   "jp": "ﾐﾅ ｼﾀｲ ﾄ ﾅｯﾃ ｲﾙﾉﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4060:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00008",
+   "kind": "line",
+   "jp": "ｽｸﾞﾆ, ﾔｼｷﾅｲ ﾉ ﾄﾞｺｶﾍ ﾄ ﾁｯﾃ ﾕｷﾏｽ｡ ｱﾅﾀ ｶﾞ ﾂｷﾞ ﾆ ｺﾉ ﾋﾄﾀﾁ ﾄ ﾃﾞｱｳ ﾄｷﾆ ﾊ,",
+   "en": "",
+   "refs": [
+    "M98:4070:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00009",
+   "kind": "line",
+   "jp": "ｲｴ ﾆ ﾊｲｯﾃ ﾕｸﾄ, 7ﾆﾝ ﾉ ﾐｼﾗﾇ ﾋﾄﾋﾞﾄ ｶﾞ ﾎｰﾙ ﾆ ｱﾂﾏｯﾃ ｵﾘﾏｽｶﾞ, ｺﾉ ﾋﾄﾀﾁ ﾊ",
+   "en": "",
+   "refs": [
+    "M98:4080:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00010",
+   "kind": "line",
+   "jp": "｢ﾐｽﾃﾘｰﾊｳｽ｣ ﾊ, ﾍﾔｽｳ ﾉ ｵｵｲ ﾌﾙｲ ﾔｶﾀ ｶﾞ ﾌﾞﾀｲ ﾄ ﾅｯﾃ ｵﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4090:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00011",
+   "kind": "line",
+   "jp": "ｺﾉ ﾅｿﾞ ｦ ﾄｸﾆﾊ, ﾅﾝﾆﾁ ｲﾔ ﾅﾝｼｭｳｶﾝ ﾓ ｶｶﾙ ﾎﾄﾞ ﾉ ﾅﾝｶｲ ﾅ ｹﾞｰﾑ ﾅﾉﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4100:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00012",
+   "kind": "line",
+   "jp": "ｶﾂ ﾁｮｳｾﾝﾃｷ ﾅ ｹﾞｰﾑ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4110:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00013",
+   "kind": "line",
+   "jp": "ｱﾄﾞﾍﾞﾝﾁｬｰ･ｹﾞｰﾑ ﾊ ﾏｲｸﾛ･ｺﾝﾋﾟｭｰﾀ ｦ ﾂｶｯﾀ ｹﾞｰﾑ ﾉ ｳﾁ ﾃﾞ, ﾓｯﾄﾓ ﾐﾘｮｸﾃｷ",
+   "en": "",
+   "refs": [
+    "M98:4120:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00014",
+   "kind": "line",
+   "jp": "ﾏﾀ, ﾍﾔ ｾﾞﾝﾀｲ ﾉ ｺｳｹｲ ﾆ ﾓﾄﾞｼﾀｲ ﾄｷ ﾆﾊ, ｢ﾍﾔ ｦ ﾐﾙ｣ ﾄ ﾆｭｳﾘｮｸ ｼﾃ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "M98:4520:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00015",
+   "kind": "line",
+   "jp": "ﾓｯﾄ ﾁｶｸ ﾍ ﾖｯﾃ ﾐﾀｲ ﾊﾞｱｲ ﾆﾊ, ｢････ ｦ ﾐﾙ｣ ﾄ ﾆｭｳﾘｮｸ ｼﾃ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "M98:4530:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00016",
+   "kind": "line",
+   "jp": "  ｲﾅｲ ﾍﾔ ｶﾞ 2,3 ｱﾘﾏｽ｡ )",
+   "en": "",
+   "refs": [
+    "M98:4540:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00017",
+   "kind": "line",
+   "jp": "( ｲﾘｸﾞﾁ ｦ ｽｸﾘｰﾝ ﾆ ｶｸﾉ ﾊ ｷﾞｼﾞｭﾂﾃｷ ﾆ ﾑｽﾞｶｼｲ ﾉﾃﾞ, ｺﾉ ｹﾞﾝｿｸ ﾆ ｼﾀｶﾞｯﾃ",
+   "en": "",
+   "refs": [
+    "M98:4550:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00018",
+   "kind": "line",
+   "jp": "｢ﾋｶﾞｼ｣ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4560:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00019",
+   "kind": "line",
+   "jp": "ﾂｳｼﾞｮｳ, ｶﾞﾒﾝ ﾉ ｵｸ ｶﾞ ｢ｷﾀ｣ ﾃﾞｽ｡ ﾃﾏｴ ｶﾞ ｢ﾐﾅﾐ｣, ﾋﾀﾞﾘ ｶﾞ ｢ﾆｼ｣, ﾐｷﾞ ｶﾞ",
+   "en": "",
+   "refs": [
+    "M98:4570:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00020",
+   "kind": "line",
+   "jp": "｢ﾄﾞｱ ﾍ ﾕｸ｣  ｢ﾄﾞｱ ﾍ ﾊｲﾙ｣  ｢ｱﾅ ﾆ ﾕｸ｣  ｢ｱﾅ ﾆ ﾊｲﾙ｣",
+   "en": "",
+   "refs": [
+    "M98:4580:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00021",
+   "kind": "line",
+   "jp": "ﾀｲｼｮｳ ﾆ ﾑｶｯﾃ ﾄﾞｳｼ ｦ ﾂｶｯﾃ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "M98:4590:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00022",
+   "kind": "line",
+   "jp": "ﾎｳｺｳ ﾉ ﾆｭｳﾘｮｸ ﾃﾞ ﾕｷﾂﾞﾏｯﾃ ｳｺﾞｷ ｶﾞ ﾄﾚﾅｲ ﾊﾞｱｲ ﾆﾊ, ｼﾞｯｻｲ ﾆ ｼｭｳｲ ﾉ",
+   "en": "",
+   "refs": [
+    "M98:4600:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00023",
+   "kind": "line",
+   "jp": "ﾆｭｳﾘｮｸ ｼﾃ ｸﾀﾞｻｲ｡ ﾎｶ ﾉ ﾎｳｺｳ ﾓ ﾄﾞｳﾖｳ ﾆ ｼｮｳﾘｬｸ ﾃﾞｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:4610:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00024",
+   "kind": "line",
+   "jp": "ｼﾀｶﾞｯﾃ ﾆｭｳﾘｮｸ ｼﾃ ｸﾀﾞｻｲ｡ ｢ｷﾀ｣ ﾍ ｽｽﾑ ﾆﾊ, ｢ｷﾀ ﾍ ﾕｸ｣ ﾏﾀ ﾊ ﾀﾝ ﾆ ｢ｷﾀ｣ ﾄ",
+   "en": "",
+   "refs": [
+    "M98:4620:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00025",
+   "kind": "line",
+   "jp": "ｽｽﾑ ﾎｳｺｳ ﾄ ｼﾃﾊ, ｢ｷﾀ｣, ｢ﾋｶﾞｼ｣, ｢ﾆｼ｣, ｢ｳｴ｣, ｢ｼﾀ｣, ｿﾉﾊﾞ ｿﾉﾊﾞ ﾉ ｶﾞﾒﾝ ﾆ",
+   "en": "",
+   "refs": [
+    "M98:4630:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00026",
+   "kind": "line",
+   "jp": "ｺﾝﾗﾝ ｽﾙ ｺﾄ ﾆ ﾅﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:5020:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00027",
+   "kind": "line",
+   "jp": "ｲｸﾂｶ ﾉ ｺﾏﾝﾄﾞ ｦ ｲﾁﾄﾞ ﾆ ｱﾀｴﾙﾄ, ｺﾝﾋﾟｭｰﾀ ﾊ, ﾄﾞｯﾁ ﾉ ﾒｲﾚｲ ｦ ﾄﾘｱｹﾞﾃ ﾖｲﾉｶ",
+   "en": "",
+   "refs": [
+    "M98:5030:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00028",
+   "kind": "line",
+   "jp": "*** ｺﾞﾁｭｳｲ ***",
+   "en": "",
+   "refs": [
+    "M98:5040:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00029",
+   "kind": "line",
+   "jp": "       ( ｢ｾｰﾌﾞ ｹﾞｰﾑ｣, ｢ﾘｽﾄｱ ｹﾞｰﾑ｣ )",
+   "en": "",
+   "refs": [
+    "M98:5050:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00030",
+   "kind": "line",
+   "jp": "ｹﾞｰﾑ ﾉ ﾄﾁｭｳ ｹｲｶ ｦ ｹﾞｰﾑ･ﾃﾞｨｽｹｯﾄ ﾆ ｷﾛｸ ｼﾀﾘ, ﾌﾀﾀﾋﾞ ﾄﾘﾀﾞｽ ｺﾄ ﾓ ﾃﾞｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:5060:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00031",
+   "kind": "line",
+   "jp": "ﾄ   ﾑ   (ｷﾝﾊﾟﾂ)  ｴﾝｶﾝｺｳ",
+   "en": "",
+   "refs": [
+    "M98:5520:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00032",
+   "kind": "line",
+   "jp": "ｻ ﾘ ｰ   (ｱｶｹﾞ )  ｵﾊﾘｺ         ｻ   ﾑ   (ｸﾘｹﾞ )  ｷｶｲ ｷﾞｼ",
+   "en": "",
+   "refs": [
+    "M98:5530:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00033",
+   "kind": "line",
+   "jp": "ｸﾞﾘｰﾝ   (ｸﾘｹﾞ )  ｲ ｼ ｬ        ｼﾞ ｮ ｰ  (ｸﾘｹﾞ )  ﾊｶﾎﾘﾆﾝ",
+   "en": "",
+   "refs": [
+    "M98:5540:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00034",
+   "kind": "line",
+   "jp": "ﾋﾞ  ﾙ   (ｷﾝﾊﾟﾂ)  ﾆ ｸ ﾔ        ﾃﾞｲｼﾞｰ  (ｷﾝﾊﾟﾂ)  ﾁｮｳﾘｼ",
+   "en": "",
+   "refs": [
+    "M98:5550:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  },
+  {
+   "id": "l00035",
+   "kind": "line",
+   "jp": "ｹﾞｰﾑ ﾉ ｶｲｼｼﾞ ﾆﾊ, ｱﾅﾀ ﾉ ﾎｶ ﾆ 7ﾆﾝ ﾉ ﾆﾝｹﾞﾝ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "M98:5560:0"
+   ],
+   "max_cells": 74,
+   "note": "a row of a page the game lays out itself: one line, its room the rest of the row (max_cells); a row ending in [ ] keeps that input box at its column (end the English with [ ])"
+  }
+ ]
+}

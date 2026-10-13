@@ -2076,6 +2076,75 @@ def choreo_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def n88prog_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "line": "rows of the title and instruction pages", "word": "parser words"}
+    width, rows = cfg.get("width", 80), cfg["window_lines"]
+    out = ["# %s%s (Starcraft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "A program in N88-BASIC(86), on an N88-DISK BASIC floppy that starts it: %s.  The programs are saved "
+            "protected (every byte rotated a bit) and tokenized; the text is their string literals, half-width "
+            "katakana printed on the text layer.  The patcher writes each program again with the English in its "
+            "literals and every line's length set anew (jumps name line numbers, so lines may grow).  "
+            "`pc98tl/n88prog.py` documents the format, `pc98tl/n88prog_tl.py` the English.  A program with no "
+            "English is left as it is." % ", ".join("`%s`" % p for p in cfg["programs"]), "",
+            "* English goes out as ASCII on the same text layer: no drawing change.",
+            "* A changed program loses the spaces kept between its tokens (only LIST shows them), which leaves "
+            "it room: the game's program and its parser words must fit the memory BASIC leaves them, %s "
+            "(measured: the game started with the program padded to 53,000 bytes and ran out of memory at "
+            "54,000; 1,024 kept for what play needs).  A build past it is refused." % ", ".join(
+                "`%s` %d bytes" % (p, n) for p, n in cfg.get("memory", {}).items()),
+            "* A program's end mark is kept off a sector of its own (the disk does not start a program whose "
+            "last sector holds only zeros).",
+            "* The machine-translation notice is `MTL_NO.TXT` on the disk (N88 names are 6+3)."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length.  The patcher breaks the English between words at %d half-width "
+            "cells (the text layer's last column is left free) and prints each further line with a PRINT of its "
+            "own; after each %d lines it waits for a key (the window under the picture shows %d rows, with "
+            "the line before and the cursor's).  A message that goes on after something on its line (a noun "
+            "the game prints, then `ｦ ﾄﾘﾏｼﾀ｡`) starts its first line that much further on.  `\\n` forces a "
+            "new line.  `max_cells` is one page." % (width - 1, rows - 2, rows),
+            "* Rows of the title and instruction pages (`l` ids): one line each, its room (`max_cells`) the "
+            "rest of its row from the column the game puts it at; longer English is cut and reported.  A row "
+            "ending in the input box `[ ]` (the game puts its cursor in it) keeps the box at its column: end "
+            "the English with `[ ]`.",
+            "* Parser words (`w` ids): what the player types is matched against them.  The verb and noun lists "
+            "are searched for in the typed line, the spaces around a word part of the match (a Japanese verb "
+            "has its space before it, coming after the noun; put the spaces where the English order needs "
+            "them), and the commands `ﾓﾁﾓﾉ`, `ｾｰﾌﾞ ｹﾞｰﾑ`, `ﾘｽﾄｱ ｹﾞｰﾑ` are compared whole.  Written as given, "
+            "spaces included; at most %d cells (reported past it), 255 bytes (refused)." % (width - 1),
+            "* English is ASCII; a double quote becomes `'`, another character `?`."]
+    out += ["", "## Not handled", "",
+            "* The title logo (drawn from coordinates in `M98`'s DATA lines)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3040,11 +3109,13 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
+                                    "n88prog"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
-                   "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes}[cfg["encoding"]](
+                   "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
+                   "n88prog": n88prog_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
