@@ -3903,5 +3903,23 @@
    "The first scene's messages (MAPL.EXE), a click after each",
    "OK: the messages in filler half-width, broken between words"
   ]
+ ],
+ "rookies": [
+  [
+   "Boot from the hard disk (RK.BAT: ANI), the title, Enter; the title menu, Enter on its first item",
+   "OK: the menu's items in filler half-width (letter pairs) in their box; the first starts the game (the name-entry screen)"
+  ],
+  [
+   "The name-entry screen, its 終了 clicked; the opening (OPENING.SCP), a click after each message",
+   "OK: the speaker's name on a line of its own, the messages' filler half-width after it, broken between words at the window's edge"
+  ],
+  [
+   "The program's menu (a right click)",
+   "OK: its labels in filler (pairs), cut to their room"
+  ],
+  [
+   "A forced cut (OPENING.SCP's first part about 400 bytes, the rest in OPENING2.SCP), the opening clicked through",
+   "OK: the last message of the first part, then the first of OPENING2.SCP, the scene, name and window kept"
+  ]
  ]
 }

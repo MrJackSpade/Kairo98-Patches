@@ -230458,15 +230458,27 @@
      "path": "Rookies\\Rookies [HD]\\Rookies.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/rookies (patcher working, machine translation in progress)",
+     "url": "../games/rookies/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8783",
+     "url": "https://vndb.org/v8783",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17846 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Amida Chon Chon",

@@ -2191,6 +2191,72 @@ def mapl_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def aas_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "choice items", "name": "characters' names",
+             "label": "program strings (its menu, the save slots)", "console": "DOS notices"}
+    width = max((e["max_cells"] for e in strings if e["kind"] == "msg"), default=0)
+    out = ["# %s%s (Umitsuki Seisakusho)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s`, K. Hoshino's \"AVG and ANIME SYSTEM\" (Turbo C): the `*.SCP` scripts are LZ96-packed "
+            "bytecode with the text in them (JIS words).  The patcher writes a changed script again (its jumps "
+            "and calls moved) and packs it; a script past its 64 KB segment is cut into further files "
+            "(`NAME2.SCP`), each part going on to the next with the script-loading command, cut only before a "
+            "message no jump or routine reaches across.  `pc98tl/lz96.py` and `pc98tl/aas.py` document the "
+            "formats, `pc98tl/aas_tl.py` the English.  Unchanged files rebuild byte for byte." % cfg["program"],
+            "",
+            "* The program draws only full-width characters (the kanji ROM).  The patched program draws English "
+            "as letter pairs, two kanji-ROM ANK letters in one 16-dot cell (as for pc98tl/illusion_font24.py); "
+            "a cell is two half-width letters.",
+            "* The game is played with the mouse; the right button opens the program's menu."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` %d, letters a line holds): any length.  The window is %d cells "
+            "(%d letters) by three lines; the patcher breaks the English between words and ends a shorter line "
+            "itself, and the program waits for a click when the window is full.  `\\n` forces a new line.  "
+            "`{N}` is the player's name; `{Snn}` at a message's start is a speaker's name, drawn \"【name】\" on "
+            "a line of its own; keep them." % (width, width // 2, width),
+            "* Choice items (`i` ids): one line in the choice's box, `max_cells` letters; past it reported.",
+            "* Characters' names (`n` ids, the program's table): in place, %d letters at most; past it cut and "
+            "reported." % (cfg["names"][1] - 1),
+            "* Program strings (`l` ids: its menu, the save slots): in place, `max_cells` their room in letters; "
+            "past it cut and reported.",
+            "* DOS notices (`t` ids): printed through DOS, in place as plain ASCII, `max_cells` bytes; past it "
+            "cut and reported.",
+            "* English is ASCII (pairs); another character is written full-width (a cell) when Shift-JIS has "
+            "it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title's logo).",
+            "* The name-entry screen: its rows of kana are the grid the player picks the name from; a name "
+            "entered there is kana."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2722,10 +2788,10 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
-                   "mapl": mapl_notes}[cfg["encoding"]](
+                   "mapl": mapl_notes, "aas": aas_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
