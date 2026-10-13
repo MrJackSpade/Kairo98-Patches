@@ -406,5 +406,10 @@
   "remarks": [
    "Not reached in this test: commands in English words (the stress build's words are filler), the rooms past the front of the house, save and restore, the ending."
   ]
+ },
+ "maison_ikkoku": {
+  "remarks": [
+   "Not reached in this test: the other characters' scenes, saving and loading, the endings."
+  ]
  }
 }

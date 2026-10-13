@@ -2636,5 +2636,23 @@
    "url": "https://vndb.org/v26969",
    "source": "VNDB"
   }
+ ],
+ "MicroCabin.zip/Maison Ikkoku - Omoide no Photograph": [
+  {
+   "label": "This repo: games/maison_ikkoku (patcher working, machine translation in progress)",
+   "url": "../games/maison_ikkoku/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v890",
+   "url": "https://vndb.org/v890",
+   "source": "VNDB"
+  },
+  {
+   "label": "Maison Ikkoku (PC Engine version) English fan translation (2008)",
+   "url": "https://mattsmessyroom.com/projects/maison-ikkoku/",
+   "source": "web"
+  }
  ]
 }

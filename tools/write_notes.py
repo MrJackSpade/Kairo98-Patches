@@ -2145,6 +2145,63 @@ def n88prog_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def piyo_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "menu": "commands", "name": "names of things and people",
+             "line": "strings inside the script's code", "engine": "program notices"}
+    out = ["# %s%s (MicroCabin)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`PIYO.EXE` runs the compiled script `PIYO.LDY`; the messages are in `PIYO.LBC`, each byte coded by "
+            "the one before it in its message (rotated by its low three bits).  The patcher writes `PIYO.LBC` "
+            "anew and sets every message's place in `PIYO.LDY`'s table; the commands and the names, which the "
+            "script names by number through two more tables of places, go at `PIYO.LDY`'s end when changed.  "
+            "`pc98tl/piyo.py` documents the format, `pc98tl/piyo_tl.py` the English.  Unchanged files rebuild "
+            "byte for byte.", "",
+            "* The program draws the text on the text layer, a one-byte character as a half-width cell: English "
+            "goes out as ASCII, no drawing change.",
+            "* Each of `PIYO.LBC` and `PIYO.LDY` is read into one segment: 65535 bytes each; a build past it is "
+            "refused."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): the window under the picture is %d half-width cells wide and %d rows high, "
+            "scrolling as messages come.  The patcher breaks the English between words at %d cells; `\\n` "
+            "forces a new line.  A message past %d lines is reported (the window shows that many)." % (
+                cfg["width"] + 1, cfg["window_lines"], cfg["width"], cfg["window_lines"]),
+            "* Commands (`u` ids) and names (`n` ids): the menu shows %d half-width cells of each (the program "
+            "prints them `%%-.16s`); longer is reported.  Names are also put into messages." % cfg["menu_cells"],
+            "* Strings inside the script's code (`l` ids) and the program's notices (`e` ids): written in "
+            "place, `max_cells` their bytes; longer is cut and reported.",
+            "* English is ASCII; another character is written full-width when Shift-JIS has it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3110,12 +3167,12 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog"):
+                                    "n88prog", "piyo"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
-                   "n88prog": n88prog_notes}[cfg["encoding"]](
+                   "n88prog": n88prog_notes, "piyo": piyo_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

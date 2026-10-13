@@ -4035,5 +4035,15 @@
    "1 (start): the opening scene, then two typed commands",
    "OK: the house drawn, the opening messages' filler broken between words at 79 cells under it, the prompt after; each command answered with the not-understood message's filler. A test build with an over-long message showed it a page of 2 lines at a time, waiting for a key"
   ]
+ ],
+ "maison_ikkoku": [
+  [
+   "Boot from the floppy (PIYO.EXE): the title, then its menu (start, continue)",
+   "OK: the menu's two items in filler half-width in the menu window, the first highlighted"
+  ],
+  [
+   "Start: the first room, then commands from its menu, moving through the house",
+   "OK: each room's command menu in filler half-width, 16 cells an item; the messages' filler broken between words at 79 cells in the window under the picture, scrolling as they come; the rooms changing with the commands"
+  ]
  ]
 }

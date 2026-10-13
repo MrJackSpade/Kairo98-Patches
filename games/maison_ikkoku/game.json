@@ -1,0 +1,10 @@
+{
+ "title": "Maison Ikkoku - Omoide no Photograph",
+ "key": "MicroCabin.zip/Maison Ikkoku - Omoide no Photograph",
+ "image": "Maison Ikkoku - Omoide no Photograph\\Maison Ikkoku - Omoide no Photograph [FD]\\Maison Ikkoku - Omoide no Photograph.hdm",
+ "encoding": "piyo",
+ "width": 79,
+ "window_lines": 10,
+ "menu_cells": 16,
+ "boot_steps": "30:shot,1:enter,8:shot,1:enter,6:shot,1:key=40,1:enter,5:shot,1:enter,5:shot,1:key=40,1:key=40,1:enter,5:shot,1:enter,5:shot"
+}
