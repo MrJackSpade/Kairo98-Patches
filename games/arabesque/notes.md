@@ -31,15 +31,16 @@ ides' Adv98V script engine (`ALICE/`), on a hard-disk image: 87 scripts with tex
 
 ## Script
 
-5548 strings (5420 messages, 126 menu items, 1 name tags (procedure text), 1 program strings).
+5599 strings (5420 messages, 126 menu items, 1 name tags (procedure text), 49 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 5548 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 5599 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
+* Text file lines (`t` ids: `DAT/AR_STAFF.DAT`, shown as they are, e.g. the opening roll): the files hold Shift-JIS only (no half-width letters), so they are written in full-width letters, each line up to `max_cells` letters (its Japanese byte length), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -52,5 +53,6 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Sound board choice (artwork buttons) | OK: unchanged artwork; picked with Enter |
 | Prologue narration (black screen, framed box), first ~100 messages | OK: filler wrapped between words, 3-line pages waiting for a click; the wait marker's columns at the right edge kept clear (the third line used to run into it) |
+| Staff roll (DAT/AR_STAFF.DAT) | not yet seen |
 | Picture scenes after the prologue, save/load, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

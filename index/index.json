@@ -3785,7 +3785,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -3818,7 +3818,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -4291,7 +4291,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -8054,7 +8054,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -9507,7 +9507,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -12631,15 +12631,27 @@
      "path": "M Hard\\M Hard [HD]\\M Hard.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/m_hard (patcher working, machine translation in progress)",
+     "url": "../games/m_hard/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7263",
+     "url": "https://vndb.org/v7263",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18077 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aaru.zip/Rose Blood - Chi no Kawaki",
@@ -12693,15 +12705,27 @@
      "path": "Rose Blood - Chi no Kawaki\\Rose Blood - Chi no Kawaki [HD]\\Rose Blood - Chi no Kawaki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/rose_blood (patcher working, machine translation in progress)",
+     "url": "../games/rose_blood/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9062",
+     "url": "https://vndb.org/v9062",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18223 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aaru.zip/Zest to fantasy",
@@ -14129,15 +14153,27 @@
      "path": "Angel Halo\\Angel Halo [FD]\\Angel Halo (Disk D).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/angel_halo (patcher working, machine translation in progress)",
+     "url": "../games/angel_halo/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v6958",
+     "url": "https://vndb.org/v6958",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r13790 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/Gakuen Bomber",
@@ -14659,15 +14695,37 @@
      "path": "if\\if [HD]\\if.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if (patcher working, machine translation in progress)",
+     "url": "../games/if/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17741 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/if 123",
@@ -14760,15 +14818,37 @@
      "path": "if 2\\if 2 [HD]\\if 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if_2 (patcher working, machine translation in progress)",
+     "url": "../games/if_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17743 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/if 3",
@@ -14835,15 +14915,37 @@
      "path": "if 3\\if 3 [HD]\\if 3.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/if_3 (patcher working, machine translation in progress)",
+     "url": "../games/if_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8724",
+     "url": "https://vndb.org/v8724",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8725",
+     "url": "https://vndb.org/v8725",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8726",
+     "url": "https://vndb.org/v8726",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17745 (erotic content)",
    "engine": "active",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/Kusuriyubi no Kyoukasho",
@@ -16838,7 +16940,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 9 of 9 classified Agumix titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -17185,15 +17287,27 @@
      "path": "Inma Seifukugari\\Inma Seifukugari [HD]\\Inma Seifukugari.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/inma_seifukugari (patcher working, machine translation in progress)",
+     "url": "../games/inma_seifukugari/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3152",
+     "url": "https://vndb.org/v3152",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17758 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Ail.zip/Kyouhaku",
@@ -17274,15 +17388,27 @@
      "path": "Kyouhaku\\Kyouhaku [HD]\\Kyouhaku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kyouhaku (patcher working, machine translation in progress)",
+     "url": "../games/kyouhaku/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4302",
+     "url": "https://vndb.org/v4302",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r8293 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Ail.zip/Maha Barata",
@@ -17424,15 +17550,27 @@
      "path": "Majogari no Yoru ni\\Majogari no Yoru ni [HD]\\Majogari no Yoru ni.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/majogari_no_yoru_ni (patcher working, machine translation in progress)",
+     "url": "../games/majogari_no_yoru_ni/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3481",
+     "url": "https://vndb.org/v3481",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6754 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Ail.zip/Ruriiro no Yuki",
@@ -27283,15 +27421,27 @@
      "path": "Mugen Yasoukyoku\\Mugen Yasoukyoku [HD]\\Mugen Yasoukyoku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mugen_yasoukyoku (patcher working, machine translation in progress)",
+     "url": "../games/mugen_yasoukyoku/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v725",
+     "url": "https://vndb.org/v725",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18109 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Apros.zip/Resistance EX",
@@ -27975,7 +28125,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -28867,7 +29017,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -29421,7 +29571,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -30741,7 +30891,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -32400,15 +32550,27 @@
      "path": "LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98\\LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98 [FD]\\LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98 (Disk 2).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hokkaido_rensa (patcher working, machine translation in progress)",
+     "url": "../games/hokkaido_rensa/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Hokkaido Serial Murder Case remake (Switch/Steam, 2024, English)",
+     "url": "https://www.timeextension.com/news/2024/05/switch-remake-of-yuji-horiis-hokkaido-rensa-satsujin-ohotsuku-ni-kiyu-will-have-english-language-support",
+     "source": "web"
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "ASCII.zip/LOGiN Disk & Book Series - Kohakuiro no Yuigon",
@@ -33212,7 +33374,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -40284,7 +40446,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 16 of 17 classified Birdy Soft titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -41897,15 +42059,37 @@
      "path": "Mayumi (BMP)\\Mayumi [FD]\\BMP (Mayumi).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mayumi (patcher working, machine translation in progress)",
+     "url": "../games/mayumi/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8929",
+     "url": "https://vndb.org/v8929",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8965",
+     "url": "https://vndb.org/v8965",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v9159",
+     "url": "https://vndb.org/v9159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18092 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Teki wa Ningen",
@@ -45178,7 +45362,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -45219,7 +45403,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -45375,7 +45559,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -46700,15 +46884,27 @@
      "path": "Gloria - Kindan no Ketsuzoku\\Gloria - Kindan no Ketsuzoku [HD]\\Gloria - Kindan no Ketsuzoku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gloria (patcher working, machine translation in progress)",
+     "url": "../games/gloria/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v152",
+     "url": "https://vndb.org/v152",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12520 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CsWare.zip/Kindan no Ketsuzoku",
@@ -47969,7 +48165,14 @@
      "path": "Cat's Part 1\\Cat's Part 1 [HD]\\Cat's Part 1.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cats_part_1 (patcher working, machine translation in progress)",
+     "url": "../games/cats_part_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17515 (erotic content)",
    "engine": "adv98v",
@@ -47977,7 +48180,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CatsPro.zip/Feti (Fetish)",
@@ -50096,7 +50299,14 @@
      "path": "Bishoujo Tsuushin - Chat no Susume\\Bishoujo Tsuushin - Chat no Susume [FD]\\Bishoujo Tsuushin - Chat no Susume (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_tsuushin (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_tsuushin/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42464 (erotic content)",
    "engine": "adv98v",
@@ -50104,7 +50314,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny",
@@ -50428,7 +50638,14 @@
      "path": "Can Can Bunny Limited 5 1-2\\Can Can Bunny Limited 5 1-2 [HD]\\Can Can Bunny Limited 5 1-2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/can_can_bunny_limited (patcher working, machine translation in progress)",
+     "url": "../games/can_can_bunny_limited/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12843 (erotic content)",
    "engine": "adv98v",
@@ -50436,7 +50653,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny Premiere",
@@ -50770,7 +50987,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r12840 (erotic content)",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -50820,7 +51037,14 @@
      "path": "Cocktail Soft Zoukangou\\Cocktail Soft Zoukangou [FD]\\Cocktail Soft Zoukangou (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cocktail_zoukangou (patcher working, machine translation in progress)",
+     "url": "../games/cocktail_zoukangou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -50828,7 +51052,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Cocktail Soft Zoukangou 2",
@@ -50881,7 +51105,14 @@
      "path": "Cocktail Soft Zoukangou 2\\Cocktail Soft Zoukangou 2 [HD]\\Cocktail Soft Zoukangou 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cocktail_zoukangou_2 (patcher working, machine translation in progress)",
+     "url": "../games/cocktail_zoukangou_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -50889,7 +51120,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Cosmic Psycho",
@@ -51151,7 +51382,14 @@
      "path": "Custom Mate\\Custom Mate [HD]\\Custom Mate.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/custom_mate (patcher working, machine translation in progress)",
+     "url": "../games/custom_mate/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17924 (erotic content)",
    "engine": "adv98v",
@@ -51159,7 +51397,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Custom Mate 2",
@@ -51277,7 +51515,14 @@
      "path": "Custom Mate 2\\Custom Mate 2 [HD]\\Custom Mate 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/custom_mate_2 (patcher working, machine translation in progress)",
+     "url": "../games/custom_mate_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17925 (erotic content)",
    "engine": "adv98v",
@@ -51285,7 +51530,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Custom Mate 3",
@@ -51755,7 +52000,14 @@
      "path": "Dengeki Nurse 2 - More Sexy\\Dengeki Nurse 2 - More Sexy [HD]\\Dengeki Nurse 2 - More Sexy.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dengeki_nurse_2 (patcher working, machine translation in progress)",
+     "url": "../games/dengeki_nurse_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17666 (erotic content)",
    "engine": "adv98v",
@@ -51763,7 +52015,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Doki Doki Vacation",
@@ -51959,7 +52211,14 @@
      "path": "Dora Dora Emotion - Seihaiden\\Dora Dora Emotion - Seihaiden [HD]\\Dora Dora Emotion - Seihaiden.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dora_dora_emotion (patcher working, machine translation in progress)",
+     "url": "../games/dora_dora_emotion/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17677 (erotic content)",
    "engine": "adv98v",
@@ -51967,7 +52226,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Erotic Baka Novel - Denwa no Bell ga",
@@ -52049,7 +52308,14 @@
      "path": "Erotic Baka Novel - Denwa no Bell ga\\Erotic Baka Novel - Denwa no Bell ga... [HD]\\Erotic Baka Novel - Denwa no Bell ga....hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/denwa_no_bell (patcher working, machine translation in progress)",
+     "url": "../games/denwa_no_bell/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52057,7 +52323,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Erotic Baka Novel Series 2 - Itsuka Dokoka de",
@@ -52131,7 +52397,14 @@
      "path": "Erotic Baka Novel Series 2 - Itsuka Dokoka de\\Erotic Baka Novel Series 2 - Itsuka Dokoka de. [HD]\\Erotic Baka Novel Series 2 - Itsuka Dokoka de..hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/itsuka_dokoka_de (patcher working, machine translation in progress)",
+     "url": "../games/itsuka_dokoka_de/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52139,7 +52412,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Halfmoon ni Kawaru made",
@@ -52220,7 +52493,14 @@
      "path": "Halfmoon ni Kawaru made\\Halfmoon ni Kawaru made [HD]\\Halfmoon ni Kawaru made.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/halfmoon (patcher working, machine translation in progress)",
+     "url": "../games/halfmoon/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52228,7 +52508,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Hare Nochi Munasawagi!",
@@ -52399,15 +52679,27 @@
      "path": "Hare Nochi Oosawagi!\\Hare Nochi Oosawagi! [FD]\\Hare Nochi Oosawagi! (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hare_nochi_oosawagi (patcher working, machine translation in progress)",
+     "url": "../games/hare_nochi_oosawagi/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8714",
+     "url": "https://vndb.org/v8714",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40775 (erotic content)",
-   "engine": "unknown",
-   "english": false,
+   "engine": "adv98v",
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CocktailSoft.zip/Illumina!",
@@ -52584,7 +52876,14 @@
      "path": "JYB\\JYB [HD]\\JYB.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/jyb (patcher working, machine translation in progress)",
+     "url": "../games/jyb/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52592,7 +52891,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Kerakeraboshi",
@@ -52652,7 +52951,14 @@
      "path": "Kerakeraboshi\\Kerakeraboshi [HD]\\Kerakeraboshi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kerakeraboshi (patcher working, machine translation in progress)",
+     "url": "../games/kerakeraboshi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 29 of 29 classified Cocktail Soft titles are adult",
    "engine": "adv98v",
@@ -52660,7 +52966,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Kurukuru Party - Princess Quest",
@@ -52720,15 +53026,27 @@
      "path": "Kurukuru Party - Princess Quest\\Kurukuru Party - Princess Quest [HD]\\Kurukuru Party - Princess Quest.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kurukuru_party (patcher working, machine translation in progress)",
+     "url": "../games/kurukuru_party/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18233",
+     "url": "https://vndb.org/v18233",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42396 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CocktailSoft.zip/Liberty",
@@ -53220,7 +53538,14 @@
      "path": "Noushuku Angel 120% (U-Jin Presents)\\Noushuku Angel 120% (U-Jin Presents) [HD]\\Noushuku Angel 120% (U-Jin Presents).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/noushuku_angel (patcher working, machine translation in progress)",
+     "url": "../games/noushuku_angel/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18122 (erotic content)",
    "engine": "adv98v",
@@ -53228,7 +53553,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Pia Carrot e Youkoso!!",
@@ -53540,7 +53865,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18248 (erotic content)",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -53861,7 +54186,14 @@
      "path": "True Heart\\True Heart [HD]\\True Heart.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/true_heart (patcher working, machine translation in progress)",
+     "url": "../games/true_heart/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17914 (erotic content)",
    "engine": "adv98v",
@@ -53869,7 +54201,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "CocktailSoft.zip/Will no Dengon",
@@ -54165,7 +54497,14 @@
      "path": "Glass no Destiny\\Glass no Destiny [HD]\\Glass no Destiny.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/glass_no_destiny (patcher working, machine translation in progress)",
+     "url": "../games/glass_no_destiny/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17990 (erotic content)",
    "engine": "adv98v",
@@ -54173,7 +54512,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Colossus.zip/File 0 - Ghost Killer Kamimura Rei",
@@ -58512,7 +58851,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18201 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -58543,7 +58882,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r47467 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -59846,7 +60185,14 @@
      "path": "Arquelphos\\Arquelphos [HD]\\Arquelphos.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/arquelphos (patcher working, machine translation in progress)",
+     "url": "../games/arquelphos/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -59854,7 +60200,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Branmarker",
@@ -60425,7 +60771,14 @@
      "path": "Collector D\\Collector D [HD]\\Collector D.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/collector_d (patcher working, machine translation in progress)",
+     "url": "../games/collector_d/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42530 (erotic content)",
    "engine": "do",
@@ -60433,7 +60786,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Collector D Bangaihen",
@@ -60542,15 +60895,27 @@
      "path": "Collector D Bangaihen\\Collector D Bangaihen [HD]\\Collector D Bangaihen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/collector_d_bangaihen (patcher working, machine translation in progress)",
+     "url": "../games/collector_d_bangaihen/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18256",
+     "url": "https://vndb.org/v18256",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Cry Sweeper",
@@ -60810,7 +61175,14 @@
      "path": "Crystal Rinal\\Crystal Rinal [FD]\\Crystal Rinal (Disk L).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/crystal_rinal (patcher working, machine translation in progress)",
+     "url": "../games/crystal_rinal/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -60818,7 +61190,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Cybernoid Alpha",
@@ -60841,15 +61213,32 @@
      "path": "Cybernoid Alpha\\Cybernoid Alpha [FD]\\alts\\Cybernoid Alpha (Disk A) [Alt 1].hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cybernoid_alpha (patcher working, machine translation in progress)",
+     "url": "../games/cybernoid_alpha/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8838",
+     "url": "https://vndb.org/v8838",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v9170",
+     "url": "https://vndb.org/v9170",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17928 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/D.O. Best Characters",
@@ -61034,7 +61423,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -61073,7 +61462,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -61101,15 +61490,22 @@
      "path": "D.O. Doki Doki Disk Vol. 3\\D.O. Doki Doki Disk Vol. 3 [FD]\\D.O. Doki Doki Disk Vol. 3.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_3 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "do",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 4",
@@ -61148,15 +61544,22 @@
      "path": "D.O. Doki Doki Disk Vol. 4\\D.O. Doki Doki Disk Vol. 4 [FD]\\D.O. Doki Doki Disk Vol. 4.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_4 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_4/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "do",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 5",
@@ -61187,15 +61590,22 @@
      "path": "D.O. Doki Doki Disk Vol. 5\\D.O. Doki Doki Disk Vol. 5 [FD]\\D.O. Doki Doki Disk Vol. 5.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_5 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_5/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "do",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 6",
@@ -61218,15 +61628,22 @@
      "path": "D.O. Doki Doki Disk Vol. 6\\D.O. Doki Doki Disk Vol. 6 [FD]\\D.O. Doki Doki Disk Vol. 6.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_6 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_6/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "do",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 7",
@@ -61249,15 +61666,22 @@
      "path": "D.O. Doki Doki Disk Vol. 7\\D.O. Doki Doki Disk Vol. 7 [FD]\\D.O. Doki Doki Disk Vol. 7.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_7 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_7/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
-   "engine": "unlisted",
+   "engine": "do",
    "english": false,
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 8",
@@ -61296,7 +61720,14 @@
      "path": "D.O. Doki Doki Disk Vol. 8\\D.O. Doki Doki Disk Vol. 8 [HD]\\D.O. Doki Doki Disk Vol. 8.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_8 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_8/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61304,7 +61735,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Doki Doki Disk Vol. 9",
@@ -61343,7 +61774,14 @@
      "path": "D.O. Doki Doki Disk Vol. 9\\D.O. Doki Doki Disk Vol. 9 [HD]\\D.O. Doki Doki Disk Vol. 9.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_disk_vol_9 (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_disk_vol_9/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61351,7 +61789,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Kaizokuban",
@@ -61411,7 +61849,20 @@
      "path": "D.O. Kaizokuban\\D.O. Kaizokuban [HD]\\D.O. Kaizokuban (Disk C) (Hoshi no Suna Monogatari).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/do_kaizokuban (DOR, Disks A-B; patcher working, machine translation in progress)",
+     "url": "../games/do_kaizokuban/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/do_kaizokuban_hoshi (Hoshi no Suna Monogatari, Disk C; patcher working, machine translation in progress)",
+     "url": "../games/do_kaizokuban_hoshi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -61419,7 +61870,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/D.O. Kanshuu Premium Box - Touch My Heart",
@@ -61634,15 +62085,27 @@
      "path": "DOR Part 1\\DOR Part 1 [HD]\\DOR Part 1.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_part_1 (patcher working, machine translation in progress)",
+     "url": "../games/dor_part_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v159",
+     "url": "https://vndb.org/v159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17674 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Part 2",
@@ -61733,15 +62196,32 @@
      "path": "DOR Part 2\\DOR Part 2 [HD]\\DOR Part 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_part_2 (patcher working, machine translation in progress)",
+     "url": "../games/dor_part_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v159",
+     "url": "https://vndb.org/v159",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8680",
+     "url": "https://vndb.org/v8680",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17675 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Part 3",
@@ -61803,15 +62283,27 @@
      "path": "DOR Part 3\\DOR Part 3 [HD]\\DOR Part 3.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_part_3 (patcher working, machine translation in progress)",
+     "url": "../games/dor_part_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8681",
+     "url": "https://vndb.org/v8681",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17676 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Special Edition '93",
@@ -61953,15 +62445,27 @@
      "path": "DOR Special Edition '93\\DOR Special Edition '93 [FD]\\DOR Special Edition '93 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_special_edition_93 (patcher working, machine translation in progress)",
+     "url": "../games/dor_special_edition_93/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18196",
+     "url": "https://vndb.org/v18196",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42261 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/DOR Special Edition Sakigake",
@@ -62049,15 +62553,27 @@
      "path": "DOR Special Edition Sakigake\\DOR Special Edition Sakigake [HD]\\DOR Special Edition Sakigake.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dor_special_edition_sakigake (patcher working, machine translation in progress)",
+     "url": "../games/dor_special_edition_sakigake/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18195",
+     "url": "https://vndb.org/v18195",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42256 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Exterlien",
@@ -62541,15 +63057,27 @@
      "path": "Hoshi no Suna Monogatari 2\\Hoshi no Suna Monogatari 2 [HD]\\Hoshi no Suna Monogatari 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hoshi_no_suna_monogatari_2 (patcher working, machine translation in progress)",
+     "url": "../games/hoshi_no_suna_monogatari_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8721",
+     "url": "https://vndb.org/v8721",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17735 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Hoshi no Suna Monogatari 3",
@@ -62948,7 +63476,14 @@
      "path": "Moonlight Chan Rin Shan\\Moonlight Chan Rin Shan [HD]\\Moonlight Chan Rin Shan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/moonlight_chan_rin_shan (patcher working, machine translation in progress)",
+     "url": "../games/moonlight_chan_rin_shan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -62956,7 +63491,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Youjuu Club Custom",
@@ -63202,15 +63737,27 @@
      "path": "Youjuu Senki - A.D. 2048\\Youjuu Senki - A.D. 2048 [HD]\\Youjuu Senki - A.D. 2048.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/youjuu_senki (patcher working, machine translation in progress)",
+     "url": "../games/youjuu_senki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v127",
+     "url": "https://vndb.org/v127",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15696 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Youjuu Senki 2 - Reimei no Senshi-tachi",
@@ -63529,7 +64076,14 @@
      "path": "Yuu Disk Vol. 3 - Kanako-san no Yuuutsu\\Yuu Disk Vol. 3 - Kanako-san no Yuuutsu [FD]\\Yuu Disk Vol. 3 - Kanako-san no Yuuutsu (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_3 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18361 (erotic content)",
    "engine": "unknown",
@@ -63537,7 +64091,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
@@ -63576,7 +64130,14 @@
      "path": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk [HD]\\Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_4 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_4/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -63584,7 +64145,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal",
@@ -63629,15 +64190,27 @@
      "path": "Yuu Disk Vol. 5 - Telephone Scandal\\Yuu Disk Vol. 5 - Telephone Scandal [FD]\\Yuu Disk Vol. 5 - Telephone Scandal (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_5 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_5/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v159",
+     "url": "https://vndb.org/v159",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18363 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 6 - Heart de Ron!! Midnight-hen",
@@ -63745,7 +64318,14 @@
      "path": "Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen\\Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen [HD]\\Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_7 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_7/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -63753,7 +64333,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
@@ -63820,15 +64400,27 @@
      "path": "Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban\\Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban [HD]\\Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_8 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_8/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8838",
+     "url": "https://vndb.org/v8838",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18360 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
@@ -63869,7 +64461,14 @@
      "path": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen [HD]\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yuu_disk_vol_9 (patcher working, machine translation in progress)",
+     "url": "../games/yuu_disk_vol_9/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 27 of 27 classified D.O titles are adult",
    "engine": "do",
@@ -63877,7 +64476,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DO.zip/Zatsuon Ryouiki",
@@ -64013,15 +64612,27 @@
      "path": "Zatsuon Ryouiki\\Zatsuon Ryouiki [HD]\\Zatsuon Ryouiki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/zatsuon_ryouiki (patcher working, machine translation in progress)",
+     "url": "../games/zatsuon_ryouiki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9173",
+     "url": "https://vndb.org/v9173",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18368 (erotic content)",
    "engine": "do",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Zoku Youjuu Senki - Sajin no Mokushiroku",
@@ -70384,7 +70995,14 @@
      "path": "Kekkou Kamen - Oshioki Paradise no Maki\\Kekkou Kamen - Oshioki Paradise no Maki [HD]\\Kekkou Kamen - Oshioki Paradise no Maki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kekkou_kamen (patcher working, machine translation in progress)",
+     "url": "../games/kekkou_kamen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17783 (erotic content)",
    "engine": "adv98v",
@@ -70392,7 +71010,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DynamicPro.zip/Kekkou Kamen 2 - Oshioki Densetsu no Maki",
@@ -70473,7 +71091,14 @@
      "path": "Kekkou Kamen 2 - Oshioki Densetsu no Maki\\Kekkou Kamen 2 - Oshioki Densetsu no Maki [HD]\\Kekkou Kamen 2 - Oshioki Densetsu no Maki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kekkou_kamen_2 (patcher working, machine translation in progress)",
+     "url": "../games/kekkou_kamen_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17782 (erotic content)",
    "engine": "adv98v",
@@ -70481,7 +71106,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "DynamicPro.zip/Super Erect Taisen S-EX",
@@ -72920,7 +73545,14 @@
      "path": "De-Ja\\De-Ja [HD]\\De-Ja.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/de_ja (patcher working, machine translation in progress)",
+     "url": "../games/de_ja/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r11835 (erotic content)",
    "engine": "elf-ai5",
@@ -72928,7 +73560,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/De-Ja II",
@@ -73046,7 +73678,14 @@
      "path": "De-Ja II\\De-Ja II [HD]\\De-Ja II.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/de_ja_2 (patcher working, machine translation in progress)",
+     "url": "../games/de_ja_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4585 (erotic content)",
    "engine": "elf-ai5",
@@ -73054,7 +73693,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Doki Doki Shutter Chance",
@@ -73138,15 +73777,27 @@
      "path": "Doki Doki Shutter Chance\\Doki Doki Shutter Chance [FD]\\Doki Doki Shutter Chance.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doki_doki_shutter_chance (patcher working, machine translation in progress)",
+     "url": "../games/doki_doki_shutter_chance/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v17596",
+     "url": "https://vndb.org/v17596",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40347 (erotic content)",
-   "engine": "elf-ai5",
-   "english": false,
+   "engine": "adv98v",
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Doukyuusei",
@@ -73640,15 +74291,27 @@
      "path": "Doukyuusei 2\\Doukyuusei 2 [FD]\\Doukyuusei 2 (Disk K).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doukyuusei_2 (patcher working, machine translation in progress)",
+     "url": "../games/doukyuusei_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2337 (English release: the 2024 Windows remake, Winter Heat)",
+     "url": "https://vndb.org/v2337",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4564 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Dragon Knight",
@@ -73746,7 +74409,7 @@
    ],
    "heart": true,
    "heart_basis": "VNDB r12771 (erotic content)",
-   "engine": "unlisted",
+   "engine": "elf-ai5",
    "english": true,
    "in_progress": false,
    "announced": [],
@@ -74206,15 +74869,27 @@
      "path": "Dragon Knight III\\Dragon Knight III [HD]\\Dragon Knight III.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dragon_knight_3 (patcher working, machine translation in progress)",
+     "url": "../games/dragon_knight_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v723 (English release on DOS: Knights of Xentar, a rewritten localization)",
+     "url": "https://vndb.org/v723",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6774 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Elle",
@@ -74408,7 +75083,7 @@
    ],
    "heart": true,
    "heart_basis": "VNDB r39378 (erotic content)",
-   "engine": "unlisted",
+   "engine": "elf-ai5",
    "english": true,
    "in_progress": false,
    "announced": [],
@@ -74480,7 +75155,14 @@
      "path": "Foxy 2\\Foxy 2 [HD]\\Foxy 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/foxy_2 (patcher working, machine translation in progress)",
+     "url": "../games/foxy_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40166 (erotic content)",
    "engine": "elf-ai5",
@@ -74488,7 +75170,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Isaku",
@@ -74601,7 +75283,14 @@
      "path": "Isaku\\Isaku [HD]\\Isaku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/isaku (patcher working, machine translation in progress)",
+     "url": "../games/isaku/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4586 (erotic content)",
    "engine": "elf-ai5",
@@ -74609,7 +75298,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Jan Jaka Jan",
@@ -74964,7 +75653,14 @@
      "path": "Kakyuusei\\Kakyuusei [FD]\\Kakyuusei (Disk Q).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kakyuusei (patcher working, machine translation in progress)",
+     "url": "../games/kakyuusei/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4587 (erotic content)",
    "engine": "elf-ai5",
@@ -74972,7 +75668,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "elf.zip/Kono Yo no Hate de Koi o Utau Shoujo YU-NO",
@@ -75282,15 +75978,27 @@
      "path": "Metal Eye\\Metal Eye [HD]\\Metal Eye.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/metal_eye (patcher working, machine translation in progress)",
+     "url": "../games/metal_eye/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7825",
+     "url": "https://vndb.org/v7825",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15686 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Metal Eye 2",
@@ -75395,15 +76103,27 @@
      "path": "Metal Eye 2\\Metal Eye 2 [HD]\\Metal Eye 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/metal_eye_2 (patcher working, machine translation in progress)",
+     "url": "../games/metal_eye_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7834",
+     "url": "https://vndb.org/v7834",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15698 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Pinky Ponky - Beautiful Dream",
@@ -75431,7 +76151,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 28 of 28 classified elf titles are adult",
-   "engine": "unlisted",
+   "engine": "elf-other",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -75462,7 +76182,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r46215 (erotic content)",
-   "engine": "unlisted",
+   "engine": "elf-other",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -75493,7 +76213,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18153 (erotic content)",
-   "engine": "unlisted",
+   "engine": "elf-other",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -75548,7 +76268,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18178 (erotic content)",
-   "engine": "unlisted",
+   "engine": "elf-other",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -75771,15 +76491,27 @@
      "path": "Shangrlia\\Shangrlia [HD]\\Shangrlia.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/shangrlia (patcher working, machine translation in progress)",
+     "url": "../games/shangrlia/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3182",
+     "url": "https://vndb.org/v3182",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6251 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Shangrlia 2",
@@ -76013,15 +76745,27 @@
      "path": "Tenshin Ranma\\Tenshin Ranma [HD]\\Tenshin Ranma.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenshin_ranma (patcher working, machine translation in progress)",
+     "url": "../games/tenshin_ranma/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7824",
+     "url": "https://vndb.org/v7824",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15685 (erotic content)",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "elf.zip/Words Worth",
@@ -77037,7 +77781,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "VNDB r18918 (no erotic content)",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -80315,7 +81059,14 @@
      "path": "Fairytale Kaizokuban\\Fairytale Kaizokuban [FD hd9]\\Fairytale Kaizokuban (Disk B).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/fairytale_kaizokuban (patcher working, machine translation in progress)",
+     "url": "../games/fairytale_kaizokuban/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 24 of 25 classified Fairytale titles are adult",
    "engine": "adv98v",
@@ -80323,7 +81074,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Gokuraku Mandara",
@@ -80411,7 +81162,14 @@
      "path": "Gokuraku Mandara\\Gokuraku Mandara [HD]\\Gokuraku Mandara.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gokuraku_mandara (patcher working, machine translation in progress)",
+     "url": "../games/gokuraku_mandara/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17710 (erotic content)",
    "engine": "adv98v",
@@ -80419,7 +81177,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Kao Floppy Gekijou - Route 246 Satsujin Annai",
@@ -80452,7 +81210,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 24 of 25 classified Fairytale titles are adult",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -80753,7 +81511,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18050 (erotic content)",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -81025,7 +81783,14 @@
      "path": "Lam-Mal\\Lam-Mal [FD]\\Lam-Mal (Disk 4 - Ni).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/lam_mal (patcher working, machine translation in progress)",
+     "url": "../games/lam_mal/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18062 (erotic content)",
    "engine": "adv98v",
@@ -81033,7 +81798,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Lipstick #1 - Lolita-hen",
@@ -81187,7 +81952,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 24 of 25 classified Fairytale titles are adult",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -81304,7 +82069,14 @@
      "path": "Lipstick Adventure 3\\Lipstick Adventure 3 [HD]\\Lipstick Adventure 3.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/lipstick_adventure_3 (patcher working, machine translation in progress)",
+     "url": "../games/lipstick_adventure_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17842 (erotic content)",
    "engine": "adv98v",
@@ -81312,7 +82084,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Mai",
@@ -81379,7 +82151,14 @@
      "path": "Mai\\Mai [HD]\\Mai.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mai (patcher working, machine translation in progress)",
+     "url": "../games/mai/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 24 of 25 classified Fairytale titles are adult",
    "engine": "adv98v",
@@ -81387,7 +82166,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Marine Philt",
@@ -81475,15 +82254,27 @@
      "path": "Marine Philt\\Marine Philt [HD]\\Marine Philt.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/marine_philt (patcher working, machine translation in progress)",
+     "url": "../games/marine_philt/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "Official English Windows release announced by Fakku (VNDB r160192, not yet released)",
+     "url": "https://vndb.org/r160192",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18087 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Fairytale.zip/Moon Gate",
@@ -82142,7 +82933,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r8525 (erotic content)",
-   "engine": "unknown",
+   "engine": "adv98v",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -82495,15 +83286,27 @@
      "path": "Watashi o Golf ni Tsuretette\\Watashi o Golf ni Tsuretette [FD hd9]\\Watashi o Golf ni Tsuretette (Disk C).nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/watashi_golf (patcher working, machine translation in progress)",
+     "url": "../games/watashi_golf/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v27000",
+     "url": "https://vndb.org/v27000",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r67578 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Fairytale.zip/X-na",
@@ -82674,7 +83477,14 @@
      "path": "XIX!\\XIX! [FD]\\XIX! (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/xix (patcher working, machine translation in progress)",
+     "url": "../games/xix/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40508 (erotic content)",
    "engine": "adv98v",
@@ -82682,7 +83492,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Fairytale.zip/Yumeji - Asakusa Kitan",
@@ -82751,7 +83561,14 @@
      "path": "Yumeji - Asakusa Kitan\\Yumeji - Asakusa Kitan [HD]\\Yumeji - Asakusa Kitan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yumeji (patcher working, machine translation in progress)",
+     "url": "../games/yumeji/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18359 (erotic content)",
    "engine": "adv98v",
@@ -82759,7 +83576,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleHardcover.zip/Ballade for Maria (Maria ni Sasageru Ballade)",
@@ -83562,7 +84379,20 @@
      "path": "Himitsu Shirei 1919\\Himitsu Shirei 1919 (Dai-2-wa) [HD]\\Himitsu Shirei 1919 (Dai-2-wa).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/himitsu_shirei_1919 (patcher working, machine translation in progress)",
+     "url": "../games/himitsu_shirei_1919/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/himitsu_shirei_1919_2 (patcher working, machine translation in progress)",
+     "url": "../games/himitsu_shirei_1919_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r34218 (erotic content)",
    "engine": "adv98v",
@@ -83570,7 +84400,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Jankirou",
@@ -83859,7 +84689,14 @@
      "path": "Kanako\\Kanako [HD]\\Kanako.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kanako (patcher working, machine translation in progress)",
+     "url": "../games/kanako/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17778 (erotic content)",
    "engine": "adv98v",
@@ -83867,7 +84704,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Manami - Ai to Koukan no Hibi",
@@ -83927,7 +84764,14 @@
      "path": "Manami - Ai to Koukan no Hibi\\Manami - Ai to Koukan no Hibi [HD]\\Manami - Ai to Koukan no Hibi.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/manami (patcher working, machine translation in progress)",
+     "url": "../games/manami/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18085 (erotic content)",
    "engine": "adv98v",
@@ -83935,7 +84779,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/Miho",
@@ -84332,7 +85176,14 @@
      "path": "Toumei Ningen\\Toumei Ningen [HD]\\Toumei Ningen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/toumei_ningen (patcher working, machine translation in progress)",
+     "url": "../games/toumei_ningen/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 12 of 12 classified Fairytale Red-Zone titles are adult",
    "engine": "adv98v",
@@ -84340,7 +85191,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/U-Jin Special Collection (Kounai Shasei re-release)",
@@ -84421,7 +85272,26 @@
      "path": "U-Jin Special Collection (Kounai Shasei re-release)\\U-Jin Special Collection (Kounai Shasei re-release) [HD]\\U-Jin Special Collection (Kounai Shasei re-release) (Vol. 3).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ujin_collection_1 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/ujin_collection_2 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/ujin_collection_3 (patcher working, machine translation in progress)",
+     "url": "../games/ujin_collection_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 12 of 12 classified Fairytale Red-Zone titles are adult",
    "engine": "adv98v",
@@ -84429,7 +85299,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleRed-zone.zip/X-Girl",
@@ -84661,7 +85531,14 @@
      "path": "Dragon City X Shitei\\Dragon City X Shitei [FD]\\Dragon City X Shitei (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dragon_city (patcher working, machine translation in progress)",
+     "url": "../games/dragon_city/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17941 (erotic content)",
    "engine": "adv98v",
@@ -84669,7 +85546,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleXShitei.zip/Kounai Shasei",
@@ -84911,7 +85788,32 @@
      "path": "Kounai Shasei\\Kounai Shasei (Vol. 3) [FD]\\Kounai Shasei (Vol. 3) (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kounai_shasei_2 (patcher working, machine translation in progress)",
+     "url": "../games/kounai_shasei_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/kounai_shasei_1 (patcher working, machine translation in progress)",
+     "url": "../games/kounai_shasei_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/kounai_shasei_3 (patcher working, machine translation in progress)",
+     "url": "../games/kounai_shasei_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "This repo: games/kounai_shasei_sp (patcher working, machine translation in progress)",
+     "url": "../games/kounai_shasei_sp/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Fairytale X Shitei titles are adult",
    "engine": "adv98v",
@@ -84919,7 +85821,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FairytaleXShitei.zip/Saori - Bishoujo-tachi no Yakata",
@@ -92568,7 +93470,14 @@
      "path": "Hana no Kioku\\Hana no Kioku [FD]\\Hana no Kioku (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hana_no_kioku (patcher working, machine translation in progress)",
+     "url": "../games/hana_no_kioku/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17712 (erotic content)",
    "engine": "unknown",
@@ -92576,7 +93485,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Hana no Kioku Dai-2-shou",
@@ -92644,7 +93553,14 @@
      "path": "Hana no Kioku Dai-2-shou\\Hana no Kioku Dai-2-shou [HD]\\Hana no Kioku Dai-2-shou.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hana_no_kioku_dai_2_shou (patcher working, machine translation in progress)",
+     "url": "../games/hana_no_kioku_dai_2_shou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17715 (erotic content)",
    "engine": "unknown",
@@ -92652,7 +93568,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Koko wa Rakuensou",
@@ -92708,7 +93624,14 @@
      "path": "Koko wa Rakuensou\\Koko wa Rakuensou [FD]\\Koko wa Rakuensou (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koko_wa_rakuensou (patcher working, machine translation in progress)",
+     "url": "../games/koko_wa_rakuensou/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1994 (erotic content)",
    "engine": "unknown",
@@ -92716,7 +93639,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Koko wa Rakuensou 2",
@@ -92789,7 +93712,14 @@
      "path": "Koko wa Rakuensou 2\\Koko wa Rakuensou 2 [FD]\\Koko wa Rakuensou 2 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koko_wa_rakuensou_2 (patcher working, machine translation in progress)",
+     "url": "../games/koko_wa_rakuensou_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1997 (erotic content)",
    "engine": "unknown",
@@ -92797,7 +93727,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Foster.zip/Kousoku Chojin",
@@ -93023,7 +93953,14 @@
      "path": "Time Stripper Mako-chan\\Time Stripper Mako-chan [HD]\\Time Stripper Mako-chan.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/time_stripper_mako_chan (patcher working, machine translation in progress)",
+     "url": "../games/time_stripper_mako_chan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r2841 (erotic content)",
    "engine": "unknown",
@@ -93031,7 +93968,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "FourNine.zip/Angel Night",
@@ -93660,15 +94597,27 @@
      "path": "Gaogao! 3rd - Wild Force\\Gaogao! 3rd - Wild Force [HD]\\Gaogao! 3rd - Wild Force.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gaogao_3rd (patcher working, machine translation in progress)",
+     "url": "../games/gaogao_3rd/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8696",
+     "url": "https://vndb.org/v8696",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17697 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FourNine.zip/Gaogao! Optional Disk",
@@ -94286,15 +95235,27 @@
      "path": "Waku Waku Mahjong Panic! - Shikigami Denshou\\Waku Waku Mahjong Panic! - Shikigami Denshou [HD]\\Waku Waku Mahjong Panic! - Shikigami Denshou.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/waku_waku_mahjong_panic (patcher working, machine translation in progress)",
+     "url": "../games/waku_waku_mahjong_panic/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v735",
+     "url": "https://vndb.org/v735",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20791 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FourNine.zip/Waku Waku Mahjong Panic! 2 - Kokushi Musou",
@@ -94404,15 +95365,27 @@
      "path": "Waku Waku Mahjong Panic! 2 - Kokushi Musou\\Waku Waku Mahjong Panic! 2 - Kokushi Musou [HD]\\Waku Waku Mahjong Panic! 2 - Kokushi Musou.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/waku_waku_mahjong_panic_2 (patcher working, machine translation in progress)",
+     "url": "../games/waku_waku_mahjong_panic_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v736",
+     "url": "https://vndb.org/v736",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20792 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Frontier.zip/Frontier",
@@ -97939,7 +98912,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "VNDB r18257 (no erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -98885,7 +99858,14 @@
      "path": "Dennou Tenshi - Digital Ange\\Dennou Tenshi - Digital Ange [HD]\\Dennou Tenshi - Digital Ange.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dennou_tenshi (patcher working, machine translation in progress)",
+     "url": "../games/dennou_tenshi/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17933 (erotic content)",
    "engine": "adv98v",
@@ -98893,7 +99873,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Dragon Eyes",
@@ -99150,7 +100130,14 @@
      "path": "Hatsukoi Monogatari\\Hatsukoi Monogatari [HD]\\Hatsukoi Monogatari.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hatsukoi_monogatari (patcher working, machine translation in progress)",
+     "url": "../games/hatsukoi_monogatari/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40388 (erotic content)",
    "engine": "adv98v",
@@ -99158,7 +100145,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Himitsu no Hanazono",
@@ -99275,7 +100262,14 @@
      "path": "Himitsu no Hanazono\\Himitsu no Hanazono [FD]\\Himitsu no Hanazono (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/himitsu_no_hanazono (patcher working, machine translation in progress)",
+     "url": "../games/himitsu_no_hanazono/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18011 (erotic content)",
    "engine": "adv98v",
@@ -99283,7 +100277,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Kimi Dake ni Ai o",
@@ -99355,7 +100349,14 @@
      "path": "Kimi Dake ni Ai o\\Kimi Dake ni Ai o... [FD]\\Kimi Dake ni Ai o... (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kimi_dake_ni_ai_o (patcher working, machine translation in progress)",
+     "url": "../games/kimi_dake_ni_ai_o/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17785 (erotic content)",
    "engine": "adv98v",
@@ -99363,7 +100364,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Ligarued",
@@ -99608,7 +100609,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18827 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -99703,7 +100704,14 @@
      "path": "Tessera (IV)\\Tessera (IV) [HD]\\Tessera (IV).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tessera (patcher working, machine translation in progress)",
+     "url": "../games/tessera/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 7 of 7 classified Game Technopolis titles are adult",
    "engine": "adv98v",
@@ -99711,7 +100719,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "GameTechnopolis.zip/Tsukune-chan no Daibouken",
@@ -102053,7 +103061,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -102254,7 +103262,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -115022,7 +116030,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "VNDB r18999 (no erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -115053,7 +116061,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18971 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -116580,7 +117588,14 @@
      "path": "Ides User's Club Disk Magazine #001\\Ides User's Club Disk Magazine #001 [FD]\\Ides User's Club Disk Magazine #001.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_001 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_001/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Ides titles are adult",
    "engine": "adv98v",
@@ -116588,7 +117603,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Ides.zip/Ides User's Club Disk Magazine #002",
@@ -116611,7 +117626,14 @@
      "path": "Ides User's Club Disk Magazine #002\\Ides User's Club Disk Magazine #002 [FD]\\Ides User's Club Disk Magazine #002.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_002 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_002/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Ides titles are adult",
    "engine": "adv98v",
@@ -116619,7 +117641,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Ides.zip/Ides User's Club Disk Magazine #003",
@@ -116642,7 +117664,14 @@
      "path": "Ides User's Club Disk Magazine #003\\Ides User's Club Disk Magazine #003 [FD]\\Ides User's Club Disk Magazine #003.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_003 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_003/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r128940 (erotic content)",
    "engine": "adv98v",
@@ -116650,7 +117679,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Ides.zip/Ides User's Club Disk Magazine #004",
@@ -116696,7 +117725,14 @@
      "path": "Ides User's Club Disk Magazine #004\\Ides User's Club Disk Magazine #004 [HD]\\Ides User's Club Disk Magazine #004.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ides_club_004 (patcher working, machine translation in progress)",
+     "url": "../games/ides_club_004/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r128941 (erotic content)",
    "engine": "adv98v",
@@ -116704,7 +117740,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Uno Byouin Monogatari Hen - Kangofu ver.",
@@ -129872,7 +130908,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -131216,7 +132252,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -134093,7 +135129,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -135386,7 +136422,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -135865,7 +136901,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -135898,7 +136934,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -135931,7 +136967,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -135964,7 +137000,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -136063,7 +137099,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -148062,7 +149098,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -148890,15 +149926,27 @@
      "path": "Coming Heart\\Coming Heart [HD]\\Coming Heart.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/coming_heart (patcher working, machine translation in progress)",
+     "url": "../games/coming_heart/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1382",
+     "url": "https://vndb.org/v1382",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r2705 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "May-beSoft.zip/Escape!",
@@ -149909,15 +150957,27 @@
      "path": "Doop\\Doop [HD]\\Doop.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doop (patcher working, machine translation in progress)",
+     "url": "../games/doop/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v6009",
+     "url": "https://vndb.org/v6009",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16081 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "May-beSoftTruse.zip/Hizumi",
@@ -150630,7 +151690,14 @@
      "path": "PP Disk No. 03\\PP Disk No. 03 [FD]\\PP Disk No. 03 (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/pp_disk_no_03 (patcher working, machine translation in progress)",
+     "url": "../games/pp_disk_no_03/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "silkys",
@@ -150638,7 +151705,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Mediax.zip/PP Disk No. 04",
@@ -156794,15 +157861,27 @@
      "path": "Mashou no Kao\\Mashou no Kao [HD]\\Mashou no Kao.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mashou_no_kao (patcher working, machine translation in progress)",
+     "url": "../games/mashou_no_kao/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7581",
+     "url": "https://vndb.org/v7581",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15205 (erotic content)",
    "engine": "mink",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Mink.zip/Mink no Omochabako Vol. 1 - Two Shot Diary 2 Special Disk",
@@ -167640,7 +168719,14 @@
      "path": "Hamlet\\Hamlet [HD]\\Hamlet.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hamlet (patcher working, machine translation in progress)",
+     "url": "../games/hamlet/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "do",
@@ -167648,7 +168734,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "PantherSoftware.zip/Isekai Denshou Joshua",
@@ -167925,7 +169011,14 @@
      "path": "Lesser Mern\\Lesser Mern [HD]\\Lesser Mern.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/lesser_mern (patcher working, machine translation in progress)",
+     "url": "../games/lesser_mern/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "do",
@@ -167933,7 +169026,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "PantherSoftware.zip/Lesser Mern Special Director's Edition",
@@ -171783,15 +172876,27 @@
      "path": "El-Hazard - The Magnificent World\\El-Hazard - The Magnificent World [HD]\\El-Hazard - The Magnificent World.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/el_hazard (patcher working, machine translation in progress)",
+     "url": "../games/el_hazard/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9084",
+     "url": "https://vndb.org/v9084",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
    "engine": "elf-ai5",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "PistonSoft.zip/His Name is Diamond",
@@ -171871,7 +172976,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -171930,7 +173035,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -178872,7 +179977,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -180370,7 +181475,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -181551,7 +182656,14 @@
      "path": "101 Kaime no Approach Shot\\101 Kaime no Approach Shot [FD]\\alts\\101 Kaime no Approach Shot (Disk A) [Alt 3].hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/approach_shot (patcher working, machine translation in progress)",
+     "url": "../games/approach_shot/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r74218 (erotic content)",
    "engine": "adv98v",
@@ -181559,7 +182671,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Bishoujo Audition - Idol o Sagase!",
@@ -181626,7 +182738,14 @@
      "path": "Bishoujo Audition - Idol o Sagase!\\Bishoujo Audition - Idol o Sagase! [HD]\\Bishoujo Audition - Idol o Sagase!.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_audition (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_audition/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42349 (erotic content)",
    "engine": "adv98v",
@@ -181634,7 +182753,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Disk Bishoujo Daizukan",
@@ -181671,7 +182790,14 @@
      "path": "Disk Bishoujo Daizukan\\Disk Bishoujo Daizukan [FD]\\Disk Bishoujo Daizukan (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_daizukan (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_daizukan/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Santa Fe titles are adult",
    "engine": "adv98v",
@@ -181679,7 +182805,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "SantaFe.zip/Disk Bishoujo Daizukan '91",
@@ -181723,7 +182849,14 @@
      "path": "Disk Bishoujo Daizukan '91\\Disk Bishoujo Daizukan '91 [FD]\\Disk Bishoujo Daizukan '91 (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/bishoujo_daizukan_91 (patcher working, machine translation in progress)",
+     "url": "../games/bishoujo_daizukan_91/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 2 of 2 classified Santa Fe titles are adult",
    "engine": "adv98v",
@@ -181731,7 +182864,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Assault Alien",
@@ -182235,15 +183368,27 @@
      "path": "Immoral Study Scenario 1 - Shirakawa Reiko\\Immoral Study Scenario 1 - Shirakawa Reiko [HD]\\Immoral Study Scenario 1 - Shirakawa Reiko.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_1 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_1/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v737",
+     "url": "https://vndb.org/v737",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1486 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka",
@@ -182305,15 +183450,27 @@
      "path": "Immoral Study Scenario 2 - Iijima Yuka\\Immoral Study Scenario 2 - Iijima Yuka [HD]\\Immoral Study Scenario 2 - Iijima Yuka.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_2 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v738",
+     "url": "https://vndb.org/v738",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r1483 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami",
@@ -182373,15 +183530,27 @@
      "path": "Immoral Study Scenario 3 - Asakura Manami\\Immoral Study Scenario 3 - Asakura Manami [HD]\\Immoral Study Scenario 3 - Asakura Manami.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/immoral_study_scenario_3 (patcher working, machine translation in progress)",
+     "url": "../games/immoral_study_scenario_3/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v3456",
+     "url": "https://vndb.org/v3456",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r6728 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Scoop.zip/Mahou Shoujo B-ko",
@@ -183665,7 +184834,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "ascii-rpgkit",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -184579,7 +185748,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -186656,15 +187825,27 @@
      "path": "Ai Shimai - Futari no kajitsu\\Ai Shimai - Futari no kajitsu [HD]\\Ai Shimai - Futari no kajitsu.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ai_shimai (patcher working, machine translation in progress)",
+     "url": "../games/ai_shimai/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1836",
+     "url": "https://vndb.org/v1836",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17407 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Be-Yond",
@@ -186788,15 +187969,27 @@
      "path": "Be-Yond\\Be-Yond [HD]\\Be-Yond.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/be_yond (patcher working, machine translation in progress)",
+     "url": "../games/be_yond/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v1973",
+     "url": "https://vndb.org/v1973",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "provisional: 16 of 16 classified Silky's titles are adult",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Birth Days",
@@ -186969,15 +188162,27 @@
      "path": "Crescent\\Crescent [HD]\\Crescent.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/crescent (patcher working, machine translation in progress)",
+     "url": "../games/crescent/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8830",
+     "url": "https://vndb.org/v8830",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17921 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Fermion",
@@ -187030,15 +188235,27 @@
      "path": "Fermion\\Fermion [HD]\\Fermion.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/fermion (patcher working, machine translation in progress)",
+     "url": "../games/fermion/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v5903",
+     "url": "https://vndb.org/v5903",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r11535 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Figure",
@@ -187342,15 +188559,27 @@
      "path": "Jack - Haitoku no Megami\\Jack - Haitoku no Megami [HD]\\Jack - Haitoku no Megami.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/jack (patcher working, machine translation in progress)",
+     "url": "../games/jack/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v6387",
+     "url": "https://vndb.org/v6387",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12541 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Kawarazakike no Ichizoku",
@@ -187561,15 +188790,27 @@
      "path": "Kawarazakike no Ichizoku\\Kawarazakike no Ichizoku [HD]\\Kawarazakike no Ichizoku.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kawarazakike_no_ichizoku (patcher working, machine translation in progress)",
+     "url": "../games/kawarazakike_no_ichizoku/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2351",
+     "url": "https://vndb.org/v2351",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4594 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Koihime - Mystic Princess",
@@ -187650,15 +188891,27 @@
      "path": "Koihime - Mystic Princess\\Koihime - Mystic Princess [HD]\\Koihime - Mystic Princess.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koihime (patcher working, machine translation in progress)",
+     "url": "../games/koihime/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2347",
+     "url": "https://vndb.org/v2347",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17786 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Marine Buster",
@@ -187774,15 +189027,27 @@
      "path": "Mobius Roid\\Mobius Roid [HD]\\Mobius Roid.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/mobius_roid (patcher working, machine translation in progress)",
+     "url": "../games/mobius_roid/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8812",
+     "url": "https://vndb.org/v8812",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17891 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Nonomura Byouin no Hitobito",
@@ -187899,15 +189164,27 @@
      "path": "Nonomura Byouin no Hitobito\\Nonomura Byouin no Hitobito [HD]\\Nonomura Byouin no Hitobito.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/nonomura_byouin_no_hitobito (patcher working, machine translation in progress)",
+     "url": "../games/nonomura_byouin_no_hitobito/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2346",
+     "url": "https://vndb.org/v2346",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r4591 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Oh! Pai",
@@ -188180,7 +189457,14 @@
      "path": "Premium\\Premium [HD]\\Premium.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/premium (patcher working, machine translation in progress)",
+     "url": "../games/premium/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r13798 (erotic content)",
    "engine": "elf-ai5",
@@ -188188,7 +189472,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "Silkys.zip/Premium 2",
@@ -188425,15 +189709,27 @@
      "path": "Reira\\Reira [HD]\\Reira.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/reira (patcher working, machine translation in progress)",
+     "url": "../games/reira/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9053",
+     "url": "https://vndb.org/v9053",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18204 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Ushinawareta Rakuen",
@@ -188557,15 +189853,27 @@
      "path": "Ushinawareta Rakuen\\Ushinawareta Rakuen [HD]\\Ushinawareta Rakuen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ushinawareta_rakuen (patcher working, machine translation in progress)",
+     "url": "../games/ushinawareta_rakuen/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9147",
+     "url": "https://vndb.org/v9147",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18331 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Valentine Kiss - Birth Days 2",
@@ -188639,15 +189947,27 @@
      "path": "Valentine Kiss - Birth Days 2\\Valentine Kiss - Birth Days 2 [HD]\\Valentine Kiss - Birth Days 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/valentine_kiss_2 (patcher working, machine translation in progress)",
+     "url": "../games/valentine_kiss_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18230",
+     "url": "https://vndb.org/v18230",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r42383 (erotic content)",
    "engine": "silkys",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Casino Dream v4.3",
@@ -193987,15 +195307,27 @@
      "path": "Animahjong X\\Animahjong X [HD]\\Animahjong X.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/animahjong_x (patcher working, machine translation in progress)",
+     "url": "../games/animahjong_x/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v10215",
+     "url": "https://vndb.org/v10215",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r20639 (no erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Animahjong X Perfect File",
@@ -194119,15 +195451,27 @@
      "path": "Guynarock R\\Guynarock R [HD]\\Guynarock R.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/guynarock_r (patcher working, machine translation in progress)",
+     "url": "../games/guynarock_r/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v14947",
+     "url": "https://vndb.org/v14947",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r33219 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper BTR - Mahou no Tobakushi Totocal Chiyomi",
@@ -194338,15 +195682,27 @@
      "path": "Viper F-40\\Viper F-40 [HD]\\Viper F-40.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_f_40 (patcher working, machine translation in progress)",
+     "url": "../games/viper_f_40/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v977",
+     "url": "https://vndb.org/v977",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r73559 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper GTS - Akuma wa Futatabi",
@@ -194686,15 +196042,27 @@
      "path": "Viper V10\\Viper V10 [HD]\\Viper V10.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v10 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v10/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8325",
+     "url": "https://vndb.org/v8325",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16890 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V10 RS",
@@ -194754,15 +196122,27 @@
      "path": "Viper V10 RS\\Viper V10 RS [HD]\\Viper V10 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v10_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v10_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8325",
+     "url": "https://vndb.org/v8325",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16890 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V12",
@@ -194857,15 +196237,27 @@
      "path": "Viper V12\\Viper V12 [HD]\\Viper V12.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v12 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v12/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7493",
+     "url": "https://vndb.org/v7493",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20391 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V16",
@@ -195105,15 +196497,27 @@
      "path": "Viper V6\\Viper V6 [FD]\\Viper V6 (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v6 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v6/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8326",
+     "url": "https://vndb.org/v8326",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16893 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V6 RS",
@@ -195136,15 +196540,27 @@
      "path": "Viper V6 RS\\Viper V6 RS [HD]\\Viper V6 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v6_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v6_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8326",
+     "url": "https://vndb.org/v8326",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r20402 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V8",
@@ -195254,15 +196670,27 @@
      "path": "Viper V8\\Viper V8 [HD]\\Viper V8.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v8 (patcher working, machine translation in progress)",
+     "url": "../games/viper_v8/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8327",
+     "url": "https://vndb.org/v8327",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16895 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Sogna.zip/Viper V8 RS",
@@ -195329,15 +196757,27 @@
      "path": "Viper V8 RS\\Viper V8 RS [HD]\\Viper V8 RS.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/viper_v8_rs (patcher working, machine translation in progress)",
+     "url": "../games/viper_v8_rs/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8327",
+     "url": "https://vndb.org/v8327",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16895 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "SomethingGood.zip/AI Igo 3",
@@ -196074,15 +197514,27 @@
      "path": "Tenkousei\\Tenkousei [HD]\\Tenkousei.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/tenkousei (patcher working, machine translation in progress)",
+     "url": "../games/tenkousei/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9109",
+     "url": "https://vndb.org/v9109",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18288 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Ship - Faster than Wind",
@@ -200266,7 +201718,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18814 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -200305,7 +201757,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r18812 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -200413,7 +201865,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 4 of 4 classified Striker titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204435,7 +205887,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204504,7 +205956,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204542,7 +205994,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204573,7 +206025,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204611,7 +206063,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -204680,7 +206132,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "VNDB r132411 (no erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -225411,7 +226863,14 @@
      "path": "Night Walker - Mayonaka no Tantei\\Night Walker - Mayonaka no Tantei [HD]\\Night Walker - Mayonaka no Tantei.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/night_walker (patcher working, machine translation in progress)",
+     "url": "../games/night_walker/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18114 (erotic content)",
    "engine": "adv98v",
@@ -225419,7 +226878,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "doujinHomebrew.zip/Volley Ball 2 on 2",
@@ -227714,15 +229173,27 @@
      "path": "Yumemizaka\\Yumemizaka [HD]\\Yumemizaka.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/yumemizaka (patcher working, machine translation in progress)",
+     "url": "../games/yumemizaka/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v5566",
+     "url": "https://vndb.org/v5566",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r10731 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "U-meSoft.zip/Yumemizaka & Collections",
@@ -228841,15 +230312,27 @@
      "path": "Love Escalator\\Love Escalator [HD]\\Love Escalator.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/love_escalator (patcher working, machine translation in progress)",
+     "url": "../games/love_escalator/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8781",
+     "url": "https://vndb.org/v8781",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17844 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "UmitsukiSeisakusho.zip/Power Slave",
@@ -229047,15 +230530,27 @@
      "path": "Rookies\\Rookies [HD]\\Rookies.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/rookies (patcher working, machine translation in progress)",
+     "url": "../games/rookies/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8783",
+     "url": "https://vndb.org/v8783",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17846 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Amida Chon Chon",
@@ -231610,7 +233105,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "VNDB r19012 (no erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -233899,7 +235394,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "VNDB r42332 (erotic content)",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -233992,7 +235487,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -235218,7 +236713,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 10 of 10 classified Wendy Magazine titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -235322,7 +236817,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 10 of 10 classified Wendy Magazine titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -235434,7 +236929,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 10 of 10 classified Wendy Magazine titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -235700,7 +237195,7 @@
    "patches": [],
    "heart": true,
    "heart_basis": "provisional: 10 of 10 classified Wendy Magazine titles are adult",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -238066,7 +239561,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -238452,7 +239947,7 @@
    "patches": [],
    "heart": false,
    "heart_basis": "provisional: not listed as adult on VNDB",
-   "engine": "unlisted",
+   "engine": "unknown",
    "english": false,
    "in_progress": false,
    "announced": [],
@@ -243629,7 +245124,14 @@
      "path": "Ikazuchi no Senshi Raidy 2\\Ikazuchi no Senshi Raidy 2 [FD]\\Ikazuchi no Senshi Raidy 2 (Disk I).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/raidy_2 (patcher working, machine translation in progress)",
+     "url": "../games/raidy_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15746 (erotic content)",
    "engine": "unknown",
@@ -243637,7 +245139,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "ZyX.zip/Let's! Pirates - Trouble Vacances",
@@ -243768,7 +245270,14 @@
      "path": "Ring Out!!\\Ring Out!! [FD]\\Ring Out!! (System disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ring_out (patcher working, machine translation in progress)",
+     "url": "../games/ring_out/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18217 (erotic content)",
    "engine": "unknown",
@@ -243776,7 +245285,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   },
   {
    "key": "ZyX.zip/Takamizawa Kyosuke - Nekketsu!! Kyouiku Kenshuu",
@@ -244184,7 +245693,14 @@
      "path": "Twilight Hotel\\Twilight Hotel [HD]\\Twilight Hotel.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/twilight_hotel (patcher working, machine translation in progress)",
+     "url": "../games/twilight_hotel/notes.md",
+     "source": "this repo",
+     "wip": true
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15130 (erotic content)",
    "engine": "unknown",
@@ -244192,7 +245708,7 @@
    "in_progress": false,
    "announced": [],
    "skip": false,
-   "status": "untranslated"
+   "status": "machine translation (this repo)"
   }
  ],
  "unmatched_translations": [

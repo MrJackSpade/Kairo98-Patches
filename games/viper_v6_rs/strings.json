@@ -1,0 +1,8281 @@
+{
+ "source_image_sha256": "e76234544f4a5fee5b385a95add03d67ccfc059e2029c67f4e3e0f33fb362fcc",
+ "strings": [
+  {
+   "id": "c00001",
+   "kind": "console",
+   "jp": "ＳＧＳ３８６ Ver3.40RS Copyright (C) 1993/9 K.Ohshima",
+   "en": "",
+   "refs": [
+    "SGS.COM:4954"
+   ],
+   "max_cells": 53,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00002",
+   "kind": "console",
+   "jp": "１６ｂｉｔリアルモードで動作します。",
+   "en": "",
+   "refs": [
+    "SGS.COM:498d"
+   ],
+   "max_cells": 36,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00003",
+   "kind": "console",
+   "jp": "３２ｂｉｔネイティブモードで動作します。",
+   "en": "",
+   "refs": [
+    "SGS.COM:49b4"
+   ],
+   "max_cells": 40,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00004",
+   "kind": "console",
+   "jp": "３２ｂｉｔネイティブ（ＶＣＰＩ対応）モードで動作します。",
+   "en": "",
+   "refs": [
+    "SGS.COM:49df"
+   ],
+   "max_cells": 56,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00005",
+   "kind": "console",
+   "jp": "メモリーが不足しました。",
+   "en": "",
+   "refs": [
+    "SGS.COM:4a1a"
+   ],
+   "max_cells": 24,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00006",
+   "kind": "console",
+   "jp": "ハードディスクモードで動作します。",
+   "en": "",
+   "refs": [
+    "SGS.COM:4a36"
+   ],
+   "max_cells": 34,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "c00007",
+   "kind": "console",
+   "jp": "フロッピーディスクモードで動作します。",
+   "en": "",
+   "refs": [
+    "SGS.COM:4a5b"
+   ],
+   "max_cells": 38,
+   "note": "a line the program prints before the game starts: `max_cells` its room in bytes (a letter one, a full-width character two); past it cut and reported"
+  },
+  {
+   "id": "i00001",
+   "kind": "item",
+   "jp": "ソニア・インフォメーション",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0041"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00002",
+   "kind": "item",
+   "jp": "ミュージック・モード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:005e"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00003",
+   "kind": "item",
+   "jp": "ＢＧＶ・モード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0075"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00004",
+   "kind": "item",
+   "jp": "悪魔が来たりて",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0085"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00005",
+   "kind": "item",
+   "jp": "アフタヌーン",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0095"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00006",
+   "kind": "item",
+   "jp": "ダブルインパクト",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00a3"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00007",
+   "kind": "item",
+   "jp": "音源の設定",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00b6"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00008",
+   "kind": "item",
+   "jp": "メインメニューへ戻る",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00c3"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00009",
+   "kind": "item",
+   "jp": "セーブデータのロード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00da"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00010",
+   "kind": "item",
+   "jp": "データ１",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00f0",
+    "STARTUP.SIL:04e8",
+    "VB.SIL:2fb0",
+    "VB.SIL:2ff5",
+    "VB1.SIL:0fa1",
+    "VB1.SIL:0fe6",
+    "VC0.SIL:3990",
+    "VC0.SIL:39d5",
+    "VC1.SIL:3527",
+    "VC1.SIL:356c",
+    "VE.SIL:21fa",
+    "VE.SIL:223f"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00011",
+   "kind": "item",
+   "jp": "データ２",
+   "en": "",
+   "refs": [
+    "INFO.SIL:00fa",
+    "STARTUP.SIL:04f3",
+    "VB.SIL:2fba",
+    "VB.SIL:2fff",
+    "VB1.SIL:0fab",
+    "VB1.SIL:0ff0",
+    "VC0.SIL:399a",
+    "VC0.SIL:39df",
+    "VC1.SIL:3531",
+    "VC1.SIL:3576",
+    "VE.SIL:2204",
+    "VE.SIL:2249"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00012",
+   "kind": "item",
+   "jp": "データ３",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0104",
+    "STARTUP.SIL:04fe",
+    "VB.SIL:2fc4",
+    "VB.SIL:3009",
+    "VB1.SIL:0fb5",
+    "VB1.SIL:0ffa",
+    "VC0.SIL:39a4",
+    "VC0.SIL:39e9",
+    "VC1.SIL:353b",
+    "VC1.SIL:3580",
+    "VE.SIL:220e",
+    "VE.SIL:2253"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00013",
+   "kind": "item",
+   "jp": "データ４",
+   "en": "",
+   "refs": [
+    "INFO.SIL:010e",
+    "STARTUP.SIL:0509",
+    "VB.SIL:2fce",
+    "VB.SIL:3013",
+    "VB1.SIL:0fbf",
+    "VB1.SIL:1004",
+    "VC0.SIL:39ae",
+    "VC0.SIL:39f3",
+    "VC1.SIL:3545",
+    "VC1.SIL:358a",
+    "VE.SIL:2218",
+    "VE.SIL:225d"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00014",
+   "kind": "item",
+   "jp": "データ５",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0118",
+    "STARTUP.SIL:0514",
+    "VB.SIL:2fd8",
+    "VB.SIL:301d",
+    "VB1.SIL:0fc9",
+    "VB1.SIL:100e",
+    "VC0.SIL:39b8",
+    "VC0.SIL:39fd",
+    "VC1.SIL:354f",
+    "VC1.SIL:3594",
+    "VE.SIL:2222",
+    "VE.SIL:2267"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00015",
+   "kind": "item",
+   "jp": "データ６",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0122",
+    "STARTUP.SIL:051f",
+    "VB.SIL:2fe2",
+    "VB.SIL:3027",
+    "VB1.SIL:0fd3",
+    "VB1.SIL:1018",
+    "VC0.SIL:39c2",
+    "VC0.SIL:3a07",
+    "VC1.SIL:3559",
+    "VC1.SIL:359e",
+    "VE.SIL:222c",
+    "VE.SIL:2271"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00016",
+   "kind": "item",
+   "jp": "終　　　了",
+   "en": "",
+   "refs": [
+    "INFO.SIL:012d"
+   ],
+   "max_cells": 26,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "s00001",
+   "kind": "system",
+   "jp": "データディスク１をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0159"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00002",
+   "kind": "system",
+   "jp": "データディスク３をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:01a3"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00003",
+   "kind": "system",
+   "jp": "ディスク４をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:01ef"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "i00017",
+   "kind": "item",
+   "jp": "ミュージック音源",
+   "en": "",
+   "refs": [
+    "INFO.SIL:02b9"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00018",
+   "kind": "item",
+   "jp": "ＦＭ音源",
+   "en": "",
+   "refs": [
+    "INFO.SIL:02cb"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00019",
+   "kind": "item",
+   "jp": "ＭＩＤＩ音源（ＧＳ音源）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:02d5"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00020",
+   "kind": "item",
+   "jp": "ＦＭ音源バランス",
+   "en": "",
+   "refs": [
+    "INFO.SIL:02f0"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00021",
+   "kind": "item",
+   "jp": "タイプ１（高）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0302"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00022",
+   "kind": "item",
+   "jp": "タイプ２（中）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0312"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00023",
+   "kind": "item",
+   "jp": "タイプ３（低）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0322"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00024",
+   "kind": "item",
+   "jp": "ＦＭ音源の種類",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0333"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00025",
+   "kind": "item",
+   "jp": "本体内蔵又は８６ボード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0343"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00026",
+   "kind": "item",
+   "jp": "ＰＣ−９８０１−２６Ｋ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:035b"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00027",
+   "kind": "item",
+   "jp": "ＳＳＧ・ＰＣＭの品質",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0374"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00028",
+   "kind": "item",
+   "jp": "高品位モード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:038a"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00029",
+   "kind": "item",
+   "jp": "低品位モード",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0398"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00030",
+   "kind": "item",
+   "jp": "設定終了",
+   "en": "",
+   "refs": [
+    "INFO.SIL:03a7"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00031",
+   "kind": "item",
+   "jp": "ゆ〜ざ〜さぽ〜とのお部屋",
+   "en": "",
+   "refs": [
+    "INFO.SIL:04e3"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00032",
+   "kind": "item",
+   "jp": "ぷろぐらま　　　のお部屋",
+   "en": "",
+   "refs": [
+    "INFO.SIL:04fe"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00033",
+   "kind": "item",
+   "jp": "こんぽ〜ざ〜　　のお部屋",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0519"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00034",
+   "kind": "item",
+   "jp": "おぷしょんめにゅ〜へ戻る",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0534"
+   ],
+   "max_cells": 24,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "　ＳＯＧＮＡ　ＶＩＰＥＲ−Ｖ６ＲＳ　インフォメーションメッセージ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0586"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "　ＶＩＰＥＲ−Ｖ６ＲＳキットをお買い上げありがとうございます。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:05ce"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "　オリジナルＶ６発売からＴＵＲＢＯキットと進歩した訳ですが、ついに決定打",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0610"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "　ともいうべきＲＳはいかがだったでしょうか（あっまだこれからプレイの人も",
+   "en": "",
+   "refs": [
+    "INFO.SIL:065c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "　いるかな）？。　ＶＩＰＥＲ−Ｖ１２に登載のＴＩＰ−Ｓを先行投入したＲＳ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:06a8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "　キットはディスク枚数の制限上全ての台詞をしゃべる訳では在りませんが、",
+   "en": "",
+   "refs": [
+    "INFO.SIL:06f4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "　おいしいところは逃していないと思いますので十分に堪能していただきたいと",
+   "en": "",
+   "refs": [
+    "INFO.SIL:073e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "　思います。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:078a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "　ところでＶＩＰＥＲはバイパーと読みます。ＶＩＰＥＲが読めない人が以外に",
+   "en": "",
+   "refs": [
+    "INFO.SIL:079e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "　多いので・・・ビッパーではないですよぉ。　ついでにＶ６、Ｖ８、Ｖ１０と",
+   "en": "",
+   "refs": [
+    "INFO.SIL:07ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "　いうのは自動車のＶ型エンジンの気筒数からきています、Ｖ１２の次がＶ１６",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0836"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "　なのはＶ１４というエンジンが存在しないからなんです。Ｖ１６以上のエンジン",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0882"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "　もまだ存在しないのでＶ１６の次はどうしましょう？（笑）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:08d0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "　Ｓ４（ストレート４、直列４気筒）とかＢ６（ボクサー６、水平対抗６気筒）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:090c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "　とかエンジンの形式になるんでしょうか、それはまだ判りません。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0958"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "　Ｖ６ＲＳのメッセージを書く為にＶ６のメッセージを改めて読み返したんです",
+   "en": "",
+   "refs": [
+    "INFO.SIL:099d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "　が、たった２年ほど前にはまだ３８６マシンがトップクラスで２８６が主流に",
+   "en": "",
+   "refs": [
+    "INFO.SIL:09e9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "　なりつつあったんですね。今の４８６で高速クロックが主流な時代なんて誰が",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0a35"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "　予想出来たでしょうか？",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0a81"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "　Ｖ６の時は２８６推奨でＶ３０マシンは買い換えましょうねとか言っていたん",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0a9d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "　ですが、ＲＳでは３８６ＳＸ１６ＭＨｚ以上推奨４８６ですから驚きです。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0ae9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "　ただ、実際ユーザーアンケートでも既に２８６マシンは全体の１５{C1}をすでに",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0b33"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "　割っていますしＶ３０マシンにいたってはもういないといってもまんざら嘘に",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0b81"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "　はならない状態までいっています。（５{C1}以下なんです）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0bcd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "　逆に４８６マシンの締める割合は６０{C1}を越えようとしています。　（４８６",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0c09"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　アクセラレータ、ＣＰＵ載せ換え除く）流石にペンティアムマシンはほとんど",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0c57"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "　居ませんけど（笑）。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0ca3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "　２月にはついに１０万を切るマシン（しかも４８６ＳＸ３３ＭＨｚだ）がＮＥＣ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0cbd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　から発売されＥＰＳＯＮも追従するように１０万以下のマシンに価格改定など、",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0d0b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "　もはや２８６の中古が１０万以上した時代は嘘のようです。実売価格は６〜８万",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0d59"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "　位だそうですから、快適に動作するにはペンティアムクラスのマシンでないと",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0da7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "　無理なビジネスソフトが存在する時代です、ゲームやるだけの人でも買い換え",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0df3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "　ていいかもしれません。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0e3f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "　さてＶ８ＲＳキットＶ１０ＲＳキットそしてＶ１２と今年前半のＳＯＧＮＡは",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0e5e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "　次々とハイパワーなソフトを発売します。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0eaa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "　ＶＩＰＥＲ−Ｖ１２は待望の全部しゃべる、そしてちゃんと動くで",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0eda"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　宇宙刑事とスペオペと魔法少女だ！",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0f1c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "　ついでにＶＩＰＥＲ−Ｖ１６はもっと凄くなって今年後半登場（予定）。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0f6e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　文責　超海豚",
+   "en": "",
+   "refs": [
+    "INFO.SIL:0fba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "　ども！　９８版を担当しているプログラマーのＰちゃんです！　毎回ソフトを",
+   "en": "",
+   "refs": [
+    "INFO.SIL:101a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "　出す度に、何か打たねば〜と思いつつも、マスターアップの日が近づくにつれ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1066"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "　とてもこんな物を打ってる余裕はなくなってしまうんですね。　　今も、隣で",
+   "en": "",
+   "refs": [
+    "INFO.SIL:10b2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "　窓付きＴＶ（キャンビーの事（笑））で動いているのを横目に、これを打って",
+   "en": "",
+   "refs": [
+    "INFO.SIL:10fe"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "　います。（∞）／　　この原稿は、最終的なマスターアップ前に打っています",
+   "en": "",
+   "refs": [
+    "INFO.SIL:114a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "　ので、実際の製品と食い違いがあるかもしれませんのであしからず。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1196"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "　さて、皆さんはもうＲＳキットをプレイされたでしょうか？　今回は、音声と",
+   "en": "",
+   "refs": [
+    "INFO.SIL:11de"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "　ＣＧの追加、さらに音楽面では８６ボード対応バーションとＭＩＤＩ版の曲が",
+   "en": "",
+   "refs": [
+    "INFO.SIL:122a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "　収録されています。　音声の方は、残念ながらその全てを収録することは出来",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1276"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "　ませんでしたが、肝心なシーンでの音声（笑）は全て収録してあります。それ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:12c2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "　でも、今回は社長に泣いてもらって当初のＦＤ４枚組から５枚組と変更させて",
+   "en": "",
+   "refs": [
+    "INFO.SIL:130e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "　もらいました。（∞；）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:135a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "　また、今回からはＮＥＣの新機種（ＸシリーズやＣｂシリーズ）から搭載され",
+   "en": "",
+   "refs": [
+    "INFO.SIL:137a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "　た新ＰＣＭ音源にも対応しています。また、ＰＣＭ音源を搭載していない機種",
+   "en": "",
+   "refs": [
+    "INFO.SIL:13c6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "　でも、これ以上ない高品質な発声を実現し、ネイティブモード（３８６以上の",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1412"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "　機種が本来の力を発揮する動作モード）にも対応することで、パフォーマンス",
+   "en": "",
+   "refs": [
+    "INFO.SIL:145e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "　の高い音声再生となっています。いくら音声が付いていても、ノイズが多くて",
+   "en": "",
+   "refs": [
+    "INFO.SIL:14aa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "　は聴くのが嫌になってしまいますからね。またこれで一段とＯＶＡに迫れたの",
+   "en": "",
+   "refs": [
+    "INFO.SIL:14f6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "　ではと思います。Ｖ（∞）Ｖ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1542"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "　今回は、発売済みのソフトに音声を追加する関係上、ＨＤＤ専用＋要１．６Ｍ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1565"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "　メモリーとさせて頂きました。もともと、メモリーをフルに使いきってしまっ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:15b1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "　ていたので、音声を読み込むメモリーが空いてなかったんですね・・・。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:15fd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "　Ｖ１２に関しては、あにまーじゃんＸと同様にＦＤ＋６４０Ｋメモリ対応予定",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1645"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "　で進めています。もっとも、今回これを見ている方には関係なかったですね。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1691"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "　最近、問い合わせで多いのは初心者の方でＨＤＤ＋１ＦＤのパソコン（最近は",
+   "en": "",
+   "refs": [
+    "INFO.SIL:16e1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "　特にキャンビー（笑））を使用しているため、ＨＤＤにインストールしないと",
+   "en": "",
+   "refs": [
+    "INFO.SIL:172d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "　プレイ出来ない事です。　ＨＤＤへのインストールはある程度ＭＳ−ＤＯＳの",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1779"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "　環境設定に関する知識が必要ですし、今回の様に１Ｍ程度のプロテクトメモリ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:17c5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "　を必ず確保する必要がある場合では、とても初心者に扱えるしろものではなく",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1811"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "　なってしまいます。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:185d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "　まぁ、そんなこともありまして今回から、起動ディスク方式での対応を取らせ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1879"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "　て頂きました。しかし、他人の真似をしたくない私は、この起動ディスクすら",
+   "en": "",
+   "refs": [
+    "INFO.SIL:18c5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "　独自の起動方式で作ってあります。起動ディスク作成の煩わしさや、ＦＤ起動",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1911"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "　であるがために、起動に時間がかかると言った問題点を全て無くしました。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:195d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "　（ＭＳ−ＤＯＳを書き込むための空き容量すらもったいなかったという噂も）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:19a7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "　それだけに、起動メニューの内容には不満がありますが・・・（∞；）",
+   "en": "",
+   "refs": [
+    "INFO.SIL:19f3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "　また、ＨＤＤから直接起動できない訳ではありませんので環境設定に自信があ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1a3c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "　る方は、自分で環境を作ってみて下さい。　また、仮想８６ＥＭＳドライバー",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1a88"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "　のＶＣＰＩモードにも対応していますが、使用している機種や環境によっては、",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1ad4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "　音声再生が低品質モード（ＣＰＵパワーに余裕がない場合は、自動的にこのモ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1b22"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "　ードになります）になる可能性があります。　今回はメインメモリーの空きが",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1b6e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "　５００Ｋ以上空いていれば動作しますので、ＥＭＳドライバーを外した状態で",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1bba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "　試して見て下さい。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1c06"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "　とまぁ、色々と打ってみましたが、そろそろデバッグの続きをしないといけない",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1c26"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "　ので、今回はこの辺で失礼します。それでは皆さん次回作でまた、お会いしま",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1c74"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "　しょう。励ましのお便りお待ちしています．．．．．。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1cc0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "　　　　　　　より大きな感動を皆様に．．．．。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1d04"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　　　　　　　　Ｐちゃんでした。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1d3e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　　　　９５／０３／０７　明朝",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1d8e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "　いや〜、Ｖ１０以来１年ぶりに登場のとまぞぉです。昔はたしかＴＨＯＭＡＳ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1de8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "　って名乗っていたかもしれないっすね。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1e34"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "　今回は、待望のＲＳ仕様、音声バリバリでお送りできたわけですが、せっかく",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1e62"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "　のパワーアップなので、ＭＩＤＩ対応になりました。　マニュアルにも書いて",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1eae"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "　あるかとは思いますが、ローランド社のＳＣ５５上のＧＳ音源を標準に作って",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1efa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "　あります。ローランドの他のＧＳ音源でも、忠実に鳴るとおもいます。試しに、",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1f46"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "　こちらにあるヤマハのＧＭ音源ＴＧ１００でも試してみたのですが、ちょっと",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1f94"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "　悲しい鳴りかたになってしまってますので、おすすめ出来ません。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:1fe0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "　ところでＭＩＤＩユーザーのみなさん。ＦＭ音源ボードとのＭＩＸの仕方とか",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2026"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "　はどうなさっているんでしょう。ミキサー等を使っているのでしょうか。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2072"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "　うーん。知りたい。ということで、アンケートはがきのすみのほうにでも、",
+   "en": "",
+   "refs": [
+    "INFO.SIL:20ba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "　ＭＩＤＩの器材とＭＩＸの方法などをメモしていただけると、うれしいな〜。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2104"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "　参考にします。それからＶ８ＲＳから、豪華なＳＣ８８にも、ディスクの容量",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2150"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "　しだいで、対応したいと考えてますので、ちょっと期待しててください。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:219c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "　そういえば（笑）、８６ボードにも対応してます。元曲にＦＭ音源を３音プラス",
+   "en": "",
+   "refs": [
+    "INFO.SIL:21e4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "　した、プラスミックス的な仕上げです。こっちもよろしくねん。",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2232"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "　　　　　　そいでは〜",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2276"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　　　　とまぞぉ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2290"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00035",
+   "kind": "item",
+   "jp": "０１　派遣秘書",
+   "en": "",
+   "refs": [
+    "INFO.SIL:22db"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00036",
+   "kind": "item",
+   "jp": "０２　天は全てを許し給う",
+   "en": "",
+   "refs": [
+    "INFO.SIL:22ec"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00037",
+   "kind": "item",
+   "jp": "０３　ＢＬＯＷ　ＨＯＴ　ＡＮＤ　ＣＯＬＤ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2307"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00038",
+   "kind": "item",
+   "jp": "０４　ラフ・カット",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2332"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00039",
+   "kind": "item",
+   "jp": "０５　ＢＡＣＫ　ＢＥＡＴ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2347"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00040",
+   "kind": "item",
+   "jp": "０６　ＣＯＵＮＴＲＹ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2362"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00041",
+   "kind": "item",
+   "jp": "０７　ＯＰＥＮＩＮＧ　ＴＨＥＭＥ",
+   "en": "",
+   "refs": [
+    "INFO.SIL:2379"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00042",
+   "kind": "item",
+   "jp": "ＣＨ　おち！",
+   "en": "",
+   "refs": [
+    "INFO.SIL:239c"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00043",
+   "kind": "item",
+   "jp": "　　　ミュージック・モード終了",
+   "en": "",
+   "refs": [
+    "INFO.SIL:23ab"
+   ],
+   "max_cells": 40,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "s00004",
+   "kind": "system",
+   "jp": "　ファイルが存在しません。\n　インストールをやり直して下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:0106"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00005",
+   "kind": "system",
+   "jp": "　システムディスクをドライブ１にセットして下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:014d"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00006",
+   "kind": "system",
+   "jp": "　データディスク１をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:0188"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00007",
+   "kind": "system",
+   "jp": "　ディスクリードエラーです。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:01c3"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00008",
+   "kind": "system",
+   "jp": "　ディスクライトエラーです。\nライトプロテクトを解除して下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:01e8"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "　プロテクトメモリまたは、ＶＣＰＩメモリが確保出来ませんでした。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:025f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "仮想８６ＥＭＳドライバ等を外すか、ＶＣＰＩメモリを９０４Ｋバイト",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:02a3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "以上確保してから起動して下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:02e7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "ゲームを終了します。スペースキーを押して下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:030f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00044",
+   "kind": "item",
+   "jp": "メニュー",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:04dd",
+    "VB.SIL:3032",
+    "VB1.SIL:1023",
+    "VC0.SIL:3a12",
+    "VC1.SIL:35a9",
+    "VE.SIL:227c"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "s00009",
+   "kind": "system",
+   "jp": "ディスク１をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:066e"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00010",
+   "kind": "system",
+   "jp": "ディスク２をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:06ba"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "s00011",
+   "kind": "system",
+   "jp": "ディスク３をドライブ２にセットして下さい。",
+   "en": "",
+   "refs": [
+    "STARTUP.SIL:0706"
+   ],
+   "max_cells": 79,
+   "note": "a system message (a disk prompt): 79 bytes"
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "小川君　",
+   "en": "",
+   "refs": [
+    "VB.SIL:0005",
+    "VB2.SIL:0005"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "悪　魔　",
+   "en": "",
+   "refs": [
+    "VB.SIL:0020",
+    "VB2.SIL:0020"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "あなたは・・・・誰かを憎んだ事はありませんか？・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0142",
+    "VB2.SIL:007e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "殺してしまいたいと思うほどに人を憎んだ事は・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0186",
+    "VB2.SIL:00c2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "そして・・・悪魔の誘惑があなたを導いたとしたら・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:01c6",
+    "VB2.SIL:0102"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "よし・・・できた。　これで説明書どおりだな。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0257",
+    "VB2.SIL:0193"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "これで悪魔を呼びだして、おれをバカにしたやつらに復讐をしてやるんだ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:028e",
+    "VB2.SIL:01ca"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "俺のことを女にモテないだのスポーツができないだの金持っていないだの頭がクラッシュしてるだの気持ち悪いだの和田勉に似てるだの",
+   "en": "",
+   "refs": [
+    "VB.SIL:02db",
+    "VB2.SIL:0217"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "え〜と、あと何があったっけ・・・あ、まぁ、そんなことはどうでもいいんだ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:035e",
+    "VB2.SIL:029a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "そー言って、俺をバカにした奴達を悪魔の力によって葬りさってやる！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:03af",
+    "VB2.SIL:02eb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "ふっふっふっ・・・俺がその気になったらどんなに恐ろしいか思い知らせてやるぜ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:03fa",
+    "VB2.SIL:0336"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "さて、さっそく悪魔を呼び出すとするか。",
+   "en": "",
+   "refs": [
+    "VB.SIL:044f",
+    "VB2.SIL:038b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "え〜と、呪文はなんだったっけ・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:047e",
+    "VB2.SIL:03ba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "え〜と・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:04ab",
+    "VB2.SIL:03e7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "アノクタラサンミャクサンボダイ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:04c1",
+    "VB2.SIL:03fd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "じゃあねーや・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:04f5",
+    "VB2.SIL:0431"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "ピピルマピピルマ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0512",
+    "VB2.SIL:044e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "でもないし・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0536",
+    "VB2.SIL:0472"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "悪魔だから・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0551",
+    "VB2.SIL:048d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "デーーーービーーーール・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:056b",
+    "VB2.SIL:04a7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "ちがうよな・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0597",
+    "VB2.SIL:04d3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "練馬３３も２２−３９？？？？・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:05b4",
+    "VB2.SIL:04f0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "これは明らかに違うし・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:05e6",
+    "VB2.SIL:0522"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "そうだそうだ説明書を見ればいいんだ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:060d",
+    "VB2.SIL:0549"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "えーと、あったあった。",
+   "en": "",
+   "refs": [
+    "VB.SIL:063a",
+    "VB2.SIL:0576"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "ゝ〆Θ♀∴…ΠΣΨΦ……КШζ…ГД§ΓЖЙЦЫЮЯξ",
+   "en": "",
+   "refs": [
+    "VB.SIL:0659",
+    "VB2.SIL:0595"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "お！？　う・・うまくいったのかな？　　おおっ！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:06ff",
+    "VB2.SIL:063b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "よばれてとびでてジャジャジャジャーン",
+   "en": "",
+   "refs": [
+    "VB.SIL:0777",
+    "VB2.SIL:06b3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "あ・・・あなたが悪魔ですか？・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:07e1",
+    "VB2.SIL:071d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "そうよ、{C1}私を呼び出したってことは何か願いがあるんでしょう？　{C2}何でもかなえてあげるわ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:082f",
+    "VB2.SIL:076b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "ほ・・ほんと？",
+   "en": "",
+   "refs": [
+    "VB.SIL:08c7",
+    "VB2.SIL:0803"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "本当よ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:08de",
+    "VB2.SIL:081a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "そ・・それじゃ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0909",
+    "VB2.SIL:0845"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "ちょっとまって、{C1}このポーズだとつかれるから違うポーズにするわね。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0922",
+    "VB2.SIL:085e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "さ、いいわよ。　{C1}何がお望み？",
+   "en": "",
+   "refs": [
+    "VB.SIL:09c6",
+    "VB2.SIL:0902"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "えーっとねー。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0a10",
+    "VB.SIL:0d98",
+    "VB.SIL:0e1b",
+    "VB2.SIL:094c",
+    "VB2.SIL:0c6c",
+    "VB2.SIL:3854"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00045",
+   "kind": "item",
+   "jp": "何がいいかな",
+   "en": "",
+   "refs": [
+    "VB.SIL:0a2f"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00046",
+   "kind": "item",
+   "jp": "ナニがいいかな",
+   "en": "",
+   "refs": [
+    "VB.SIL:0a3e"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "うーん、そうだなー。　誰からいじめてやろうかな〜。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0a68",
+    "VB2.SIL:0963"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "やっぱあいつかな〜あいつに殴られた恨みは忘れられん！　いや、しかし、あいつにやられた精神的なショックもけっこうヘビーなものはあったし",
+   "en": "",
+   "refs": [
+    "VB.SIL:0aac",
+    "VB2.SIL:099e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "まぁだ？",
+   "en": "",
+   "refs": [
+    "VB.SIL:0b39",
+    "VB2.SIL:0a2b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "あ・・・ちょ・・・ちょっとまって・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0b65",
+    "VB2.SIL:0a57"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "むう・・・し・・・しかし・・・この悪魔・・・想像してたよりずいぶん可愛い女の子が出て来たな・・・け・・けっこう体つきもやらしいし・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0b9d",
+    "VB2.SIL:0a86"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "願い事は決まった？",
+   "en": "",
+   "refs": [
+    "VB.SIL:0c2c",
+    "VB2.SIL:0b15"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "え？　あ・・・そ・・・そうだね・・・何でもいいんだっけ？",
+   "en": "",
+   "refs": [
+    "VB.SIL:0c60",
+    "VB2.SIL:0b49"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "何でもいいわよ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0ca1",
+    "VB2.SIL:0b8a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "そっかぁ・・・何でもいいのかぁ・・・・ナニでもいいのかなぁ・・考えてみれば、俺の部屋の中に女の子と２人だけというシチュエーションは初めてだ・・・うーむ・・ど、どうしよう。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0cd9",
+    "VB2.SIL:0bb9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "はい。",
+   "en": "",
+   "refs": [
+    "VB.SIL:0daf",
+    "VB.SIL:0e32",
+    "VB.SIL:0faf",
+    "VB2.SIL:0c83",
+    "VB2.SIL:0d0e",
+    "VB2.SIL:386b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "あ、ちょっとまって・・・やっぱもうちょっと考える・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0dd3",
+    "VB.SIL:0e56",
+    "VB2.SIL:0ca7",
+    "VB2.SIL:388f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "はっきりしない男ね・・・{C1}{C2}忙しい中わざわざ来てやってりゃいい気になって・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0e95",
+    "VB2.SIL:38ce"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "そんな奴は即刻命をいただくわ！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:0f2a",
+    "VB2.SIL:3963"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "わーー！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:0f5f",
+    "VB2.SIL:3998"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "あ・・・あの・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:0f94",
+    "VB2.SIL:0cf3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "その・・・ナニがしたいなっていうのは・・・ダメ？",
+   "en": "",
+   "refs": [
+    "VB.SIL:0fd3",
+    "VB2.SIL:0d32"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "ナニって・・・？",
+   "en": "",
+   "refs": [
+    "VB.SIL:100c",
+    "VB2.SIL:0d6b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "いや・・その・・・何というか・・・男と女の・・・まぁ、いわゆる・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:103c",
+    "VB2.SIL:0d9b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "あ、なーんだ。　{C1}セックスしたいの？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1089",
+    "VB2.SIL:0de8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "いや・・・まぁ、有り体に言えば・・・そうなんだけど・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:10e1",
+    "VB2.SIL:0e40"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "それなら一番楽だわ、{C1}早速やりましょう。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1122",
+    "VB2.SIL:0e81"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "あ・・・そ、そうなの？（なんかやけに簡単だけど・・・）",
+   "en": "",
+   "refs": [
+    "VB.SIL:117c",
+    "VB2.SIL:0edb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "さ、早くしましょう。　{C1}ほら、早く脱いで。",
+   "en": "",
+   "refs": [
+    "VB.SIL:11c7",
+    "VB2.SIL:0f26"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "は・・・はい。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1202",
+    "VB2.SIL:0f61"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "あら、{C1}けっこう立派なもんもってんじゃない。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1219",
+    "VB2.SIL:0f78"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "そ・・・そうですか？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1256",
+    "VB2.SIL:0fb5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "さて、{C1}何して欲しい？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1273",
+    "VB2.SIL:0fd2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "そ・・・そうですねぇ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:129a",
+    "VB2.SIL:0ff9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00047",
+   "kind": "item",
+   "jp": "手でしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:12c1",
+    "VB.SIL:2cda"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "そ・・それじゃ、手でしてもらえます？",
+   "en": "",
+   "refs": [
+    "VB.SIL:12eb",
+    "VB2.SIL:101c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "いいわよ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1318",
+    "VB2.SIL:1049"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "こんな感じていい？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1390",
+    "VB2.SIL:10bb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "は・・・はい・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:13cc",
+    "VB2.SIL:10f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00048",
+   "kind": "item",
+   "jp": "もっとしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:13f2",
+    "VB.SIL:1e63"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00049",
+   "kind": "item",
+   "jp": "速くしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:1405"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00050",
+   "kind": "item",
+   "jp": "もういいや",
+   "en": "",
+   "refs": [
+    "VB.SIL:1416",
+    "VB.SIL:18e0",
+    "VB.SIL:1e8d",
+    "VB.SIL:21bb"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "もっとしてて。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1436",
+    "VB2.SIL:1115"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "はいはい、{C1}こんな感じでいいのね。",
+   "en": "",
+   "refs": [
+    "VB.SIL:144d",
+    "VB2.SIL:112c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "も・・・もっと速くしてくれる？",
+   "en": "",
+   "refs": [
+    "VB.SIL:14d7",
+    "VB2.SIL:117b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "こんなもんかしら？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1501",
+    "VB2.SIL:11a5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "あ・・・そう・・それくらい・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1539",
+    "VB2.SIL:11dd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "もっとしてて・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:156b",
+    "VB2.SIL:1206"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "はいはい。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1586",
+    "VB2.SIL:1221"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "あ・・・ま・・まって・・あ・・いきそ・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:15b4",
+    "VB2.SIL:124f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "どっくんどっくん",
+   "en": "",
+   "refs": [
+    "VB.SIL:161e",
+    "VB.SIL:1b94",
+    "VB.SIL:204f",
+    "VB.SIL:293d",
+    "VB1.SIL:069b",
+    "VB2.SIL:12b9",
+    "VB2.SIL:1841",
+    "VB2.SIL:1dcd",
+    "VB2.SIL:266b",
+    "VB2.SIL:2fa9",
+    "VC1.SIL:1b0c",
+    "VC1.SIL:2103"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "あ・・・もういいや・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1649"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "は〜い。",
+   "en": "",
+   "refs": [
+    "VB.SIL:166a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "あら〜{C1}いっぱい出したわね。",
+   "en": "",
+   "refs": [
+    "VB.SIL:1720",
+    "VB2.SIL:1344"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "ご・・・ごめんなさい・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1778",
+    "VB2.SIL:139c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "別に謝ることなんかないわよ。　{C1}こんなに出すなんて・・{C2}よっぽど溜ってたのね。　{C3}これなら、すぐ出来そうね。",
+   "en": "",
+   "refs": [
+    "VB.SIL:179b",
+    "VB2.SIL:13bf"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "は・・はぁ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1851",
+    "VB.SIL:213a",
+    "VB2.SIL:1475",
+    "VB2.SIL:1ea7",
+    "VC0.SIL:2036"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "どーする？　{C1}まだ続ける？",
+   "en": "",
+   "refs": [
+    "VB.SIL:186a",
+    "VB.SIL:1d17",
+    "VB2.SIL:148e",
+    "VB2.SIL:19c4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "そ・・・そうですねぇ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:18ae",
+    "VB2.SIL:14d2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00051",
+   "kind": "item",
+   "jp": "まだやる",
+   "en": "",
+   "refs": [
+    "VB.SIL:18d5",
+    "VB.SIL:21b0"
+   ],
+   "max_cells": 10,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "それじゃあせっかくだから・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1900",
+    "VB2.SIL:14f1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "ん・・・{C1}んぐ・・・{C2}んっ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:19a5",
+    "VB2.SIL:1652"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "あ・・・いい・・・生でされるのは初めてだから・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:19d8",
+    "VB2.SIL:1685"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "んぐ・・・{C1}んぐぐ・・・{C2}んぐ・・{C3}んぐぐ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1a13",
+    "VB2.SIL:16c0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "・・・何言ってんのかわかんないけど・・・くわえたまましゃべられると微妙な振動がまたよくて・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1a54",
+    "VB2.SIL:1701"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "んぐ・・・{C1}んぐぐぐ・・{C2}んぐぐ・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1abb",
+    "VB2.SIL:1768"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "そう・・・お店ではゴムつけないといけないから・・・生だとずいぶん・・・あ・・・ま・・またいきそう・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1af0",
+    "VB2.SIL:179d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "ご・・ごめん、中に出しちゃった・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1be0",
+    "VB2.SIL:188d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "ふふ・・・{C1}さっき出したばっかりなのにまたこんなに出すなんて・・・{C2}若いだけあって元気ね・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1c5c",
+    "VB2.SIL:1909"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "こんな感じかしら？・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1d93",
+    "VB2.SIL:1b82"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "あ・・うん・・・いいんじゃないでしょうか・・・（こればっかりは胸がおっきくないとできないからなぁ・・・胸が大きい悪魔でよかったよかった・・・）",
+   "en": "",
+   "refs": [
+    "VB.SIL:1dbe",
+    "VB2.SIL:1bad"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00052",
+   "kind": "item",
+   "jp": "もっと強くしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:1e76"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "どう？　{C1}気持ちいい？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1eb3",
+    "VB2.SIL:1c44"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "あ・・は・・はい。　気持ちいいです・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1eda",
+    "VB2.SIL:1c6b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "こんな感じでいいの？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1f14",
+    "VB2.SIL:1c9c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "はい・・・めったにしてもらえないことだからもうしばらくやっといて下さいな・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1f39",
+    "VB2.SIL:1cc1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "もっと強く押えた方がいいかしら？",
+   "en": "",
+   "refs": [
+    "VB.SIL:1f9a",
+    "VB2.SIL:1d18"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "あ・・でも・・・あんまし強くすると・・・あ・・・あかん・・出る・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:1fcb",
+    "VB2.SIL:1d49"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "ご・・・ごめんなさい・・・もう出ちゃった・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:20a3",
+    "VB2.SIL:1e10"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "ふふ・・・{C1}{C2}本当にいっぱい出るわね・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:20dc",
+    "VB2.SIL:1e49"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "さて・・{C1}どうする？　{C2}まだ続ける？",
+   "en": "",
+   "refs": [
+    "VB.SIL:2153",
+    "VB2.SIL:1ec0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "ま・・まだ大丈夫・・・やれます！　やらせて下さい！！　監督！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:21db",
+    "VB2.SIL:1f19"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "あたし監督じゃないわよ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:2222",
+    "VB2.SIL:1f60"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "い・・いや、つい言葉の流れで・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2262",
+    "VB2.SIL:1fa0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "（まだ、入れてないのにここで終わらせてなるものか・・・さすがにこうたて続けだと苦しいものはあるけど・・もう２度とこんなチャンスはないかもしれない・・・ここでやらなきゃ後悔する・・・死ぬまでやったるで！！）",
+   "en": "",
+   "refs": [
+    "VB.SIL:228d",
+    "VB2.SIL:1fcb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "それじゃあ、{C1}今度はあたしも楽しませてね。",
+   "en": "",
+   "refs": [
+    "VB.SIL:23a0",
+    "VB2.SIL:20ce"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "さ、{C1}いらっしゃい。",
+   "en": "",
+   "refs": [
+    "VB.SIL:244e",
+    "VB2.SIL:217c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "よ・・よろしくお願いします。　ぼ・・ぼく初めてなもんで・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2477",
+    "VB2.SIL:21a5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "うそおっしゃい。",
+   "en": "",
+   "refs": [
+    "VB.SIL:24bc",
+    "VB2.SIL:21ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "いや・・・商売でやってる人以外ではという意味ですが・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:24f4",
+    "VB2.SIL:2222"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "あたしも仕事でという意味では同じだけど・・・{C1}{C2}ま、いいじゃない楽しみましょ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:2535",
+    "VB2.SIL:2263"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "そ・・それじゃ、さっそく・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:25c9",
+    "VB2.SIL:22f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "そ・・・それじゃ・・入れます・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:261f",
+    "VB2.SIL:234d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "うん・・・{C1}もう充分濡れているからいきなり入れていいわよ。\n{C2}{C3}{C4}{C5}んっ・・・{C6}と　　{C7}{C8}あっ・・・{C9}お・・大っきい・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:264a",
+    "VB2.SIL:2378"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "あぁ・・やっぱ・・・生だとえぇなぁ・・・そ・・そいじゃ、動きますよ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:26d9",
+    "VB2.SIL:2407"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "あっ・・・あっ・・・あっ・・{C1}もっと・・もっと激しくして・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:273c",
+    "VB2.SIL:246a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "（うーむ、さすがは悪魔・・・攻撃的なＳＥＸを好むようだ・・・こうして見てると普通の女とあんまりかわんないんだけど・・・）",
+   "en": "",
+   "refs": [
+    "VB.SIL:278d",
+    "VB2.SIL:24bb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "もっと・・もっと・・{C1}あ・・いい・・い・・いきそう・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:280e",
+    "VB2.SIL:253c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "あ・・・なんか・・締めつけがきつくなってきた・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2857",
+    "VB2.SIL:2585"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あっ・・・い・・いく・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2892",
+    "VB2.SIL:25c0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "あ・・・ぼ・・僕も・・・いきそう・・・抜かなきゃ・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:28c9",
+    "VB2.SIL:25f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "はぁ・・はぁ・・・あぁ・・良かった。　危うく中に出すとこだった。",
+   "en": "",
+   "refs": [
+    "VB.SIL:2980",
+    "VB2.SIL:26ae"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "別にいいのよ、{C1}中に出しても。{C2}人間と悪魔だったら、できたりしないから。",
+   "en": "",
+   "refs": [
+    "VB.SIL:29cb",
+    "VB2.SIL:26f9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "え？・・そ・・そうなの？・・しまった・・・そうだったのか・・・それだったら中に出したかった・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2a53",
+    "VB2.SIL:2781"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "ま、{C1}まだまだ時間はあるわ。　{C2}まだ出来るでしょ？",
+   "en": "",
+   "refs": [
+    "VB.SIL:2abc",
+    "VB2.SIL:27ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "え？・・・い・・いやしかし・・もうさすがに・・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2b1e",
+    "VB2.SIL:284c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00053",
+   "kind": "item",
+   "jp": "もうやめる",
+   "en": "",
+   "refs": [
+    "VB.SIL:2b5d"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00054",
+   "kind": "item",
+   "jp": "まだやったるわい",
+   "en": "",
+   "refs": [
+    "VB.SIL:2b6a"
+   ],
+   "max_cells": 16,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "うーん・・・そうだな・・・もうこの次にタダで出来るのはいつになるかわかんないし・・・もうちょいやってみるかな・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2b9a",
+    "VB2.SIL:2887"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "そうそう・・・{C1}がんばって・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2c13",
+    "VB2.SIL:2900"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "さ、{C1}何がしてほしいの？",
+   "en": "",
+   "refs": [
+    "VB.SIL:2c8f",
+    "VB2.SIL:1538",
+    "VB2.SIL:1a24"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00055",
+   "kind": "item",
+   "jp": "口でしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:2ceb"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00056",
+   "kind": "item",
+   "jp": "胸でしてもらう",
+   "en": "",
+   "refs": [
+    "VB.SIL:2cfc"
+   ],
+   "max_cells": 14,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "そ・・・それじゃ口でしてもらえます？",
+   "en": "",
+   "refs": [
+    "VB.SIL:2d2d",
+    "VB2.SIL:157f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "ええ、いいわよ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:2d5a",
+    "VB2.SIL:15ac"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "そ・・そいじゃ・・・あの・・・胸でしてほしいな・・・なんて・・・それだけやったことないんで・・・",
+   "en": "",
+   "refs": [
+    "VB.SIL:2d9e",
+    "VB2.SIL:1a6b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "あたしもやったことないけど・・・{C1}いいわよ、やってみましょ。",
+   "en": "",
+   "refs": [
+    "VB.SIL:2e07",
+    "VB2.SIL:1ad4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "そう・・・{C1}{C2}それならば・・・{C3}{C4}願いを聞いてやった代償にお前の命をもらっていくよ！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:2ea0",
+    "VB2.SIL:39bb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "わーーーーーーーー！！",
+   "en": "",
+   "refs": [
+    "VB.SIL:2f0b",
+    "VB2.SIL:3a26"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "i00057",
+   "kind": "item",
+   "jp": "セーブ",
+   "en": "",
+   "refs": [
+    "VB.SIL:2fa8",
+    "VB1.SIL:0f99",
+    "VC0.SIL:3988",
+    "VC1.SIL:351f",
+    "VE.SIL:21f2"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00058",
+   "kind": "item",
+   "jp": "ロード",
+   "en": "",
+   "refs": [
+    "VB.SIL:2fed",
+    "VB1.SIL:0fde",
+    "VC0.SIL:39cd",
+    "VC1.SIL:3564",
+    "VE.SIL:2237"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00059",
+   "kind": "item",
+   "jp": "ＮＯ",
+   "en": "",
+   "refs": [
+    "VB.SIL:303c",
+    "VB.SIL:3055",
+    "VB1.SIL:102d",
+    "VB1.SIL:1046",
+    "VC0.SIL:3a1c",
+    "VC0.SIL:3a35",
+    "VC1.SIL:35b3",
+    "VC1.SIL:35cc",
+    "VE.SIL:2286",
+    "VE.SIL:229f"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00060",
+   "kind": "item",
+   "jp": "ＹＥＳ",
+   "en": "",
+   "refs": [
+    "VB.SIL:3042",
+    "VB.SIL:305b",
+    "VB1.SIL:1033",
+    "VB1.SIL:104c",
+    "VC0.SIL:3a22",
+    "VC0.SIL:3a3b",
+    "VC1.SIL:35b9",
+    "VC1.SIL:35d2",
+    "VE.SIL:228c",
+    "VE.SIL:22a5"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00061",
+   "kind": "item",
+   "jp": "終　　了",
+   "en": "",
+   "refs": [
+    "VB.SIL:304b",
+    "VB1.SIL:103c",
+    "VC0.SIL:3a2b",
+    "VC1.SIL:35c2",
+    "VE.SIL:2295"
+   ],
+   "max_cells": 8,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "ねぇ、{C1}後ろでしたことある？",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0061",
+    "VB2.SIL:296f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "え！？・・・い・・いやそれは・・ないです。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:00a7",
+    "VB2.SIL:29b5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "それじゃ、{C1}こんどはこっちに入れて。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:00da",
+    "VB2.SIL:29e8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "い・・いいんですか？",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0126",
+    "VB2.SIL:2a34"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "いいわよ、{C1}人間だったら一本だけでしょ。　{C2}悪魔の中には２本ついてるものいるから。　{C3}そいつの相手するときは両方使ってるの。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0143",
+    "VB2.SIL:2a51"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "２本いっぺんに？・・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:020d",
+    "VB2.SIL:2b1b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "そ、{C1}前と後ろに。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:022e",
+    "VB2.SIL:2b3c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "うーむ・・・（俺が女だったらそんな奴の相手したくはないが・・・それはそれで気持ちいいのかもしれん・・・）",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0268",
+    "VB2.SIL:2b76"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "考えないで早くちょうだいよ。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:02d9",
+    "VB2.SIL:2be7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "あ・・は、はい・・それじゃいきます。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0325",
+    "VB2.SIL:2c33"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "あ・・{C1}いいわ・・{C2}そう・・動いて・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0397",
+    "VB2.SIL:2ca5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "お・・・何か・・前より締まって・・・いいかもしんない・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:03d0",
+    "VB2.SIL:2cde"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "もっと激しくして・・・{C1}大丈夫だから・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0413",
+    "VB2.SIL:2d21"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "は・・はい・・それじゃ・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:044e",
+    "VB2.SIL:2d5c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "あっ・・・あぅ・・・{C1}いい・・・いいわよ・・・{C2}すごくいい。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0486",
+    "VB2.SIL:2d94"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "ぼ・・・僕も・・・こんな感じは初めてです・・・すごく・・・締めつけて・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:04d3",
+    "VB2.SIL:2de1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "だめ・・{C1}まだいっちゃだめよ・・・{C2}あぁ・・・いい・・もっともっと動いて・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0524",
+    "VB2.SIL:2e32"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "だ・・だって・・もう・・いきそうなんですけど・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0583",
+    "VB2.SIL:2e91"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "だめよ・・{C1}まだ・・まだだめ・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:05be",
+    "VB2.SIL:2ecc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "そ・・・そんなこといったって・・・もう・・・あ・・・いきそう・・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:05f1",
+    "VB2.SIL:2eff"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "だめ・・・{C1}まだ・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:063e",
+    "VB2.SIL:2f4c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "も・・{C1}もういっちゃったの？・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:06f1",
+    "VB2.SIL:2fff"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "す・・・すいません・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0743",
+    "VB2.SIL:3051"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "あたしまだいってないのに〜。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0762",
+    "VB2.SIL:3070"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "ごめんなさい・・早くて・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:07ac",
+    "VB2.SIL:30ba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "まだできるでしょ。　{C1}早く元気にしてよ。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:07d1",
+    "VB2.SIL:30df"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "い・・いや、もうさすがに・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:082d",
+    "VB2.SIL:313b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "だめよ！　{C1}あたしが満足するまではゆるさない！！",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0854",
+    "VB2.SIL:3162"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "そ・・・そんな・・だってもう・・・出ない・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:08b2",
+    "VB2.SIL:31c0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "だめ！！　{C1}意地でも立たせて続きをやるの！！",
+   "en": "",
+   "refs": [
+    "VB1.SIL:08e9",
+    "VB2.SIL:31f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "そ・・そんな・・・{C1}鬼・・{C2}悪魔〜！！",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0941",
+    "VB2.SIL:324f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "そうよ、{C1}自分で呼び出しといて何言ってんのよ！！",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0970",
+    "VB2.SIL:327e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "ああ・・・頭がぼーっとする・・・あれは・・夢だったのか・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:09e5",
+    "VB2.SIL:32f3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "ああ・・下半身の感覚がない・・あれ？・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0a28",
+    "VB2.SIL:3336"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "・・・あ・・・くわえてる・・・夢じゃなかったのね・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0a81",
+    "VB2.SIL:338f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "・・・・あれから・・・どれだけ、経ったんだろう・・・もはや下半身に感覚はなく・・・俺の上にのっている人の（悪魔の）動きだけが感じられている・・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0ad6",
+    "VB2.SIL:33e4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "彼女は・・まだやっているのだろうか・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0b71",
+    "VB2.SIL:347f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "・・・まだやってる・・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0bb8",
+    "VB2.SIL:34c6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "俺は・・いったい・・・いつになったら・・解放されるのだろう・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0be6",
+    "VB2.SIL:34f4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "こ・・こんなことなら・・・悪魔なんか・・呼び出すんじゃなかった・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0c2f",
+    "VB2.SIL:353d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "さてと・・・{C1}{C2}これであたしも充分楽しんだことだし・・・{C3}{C4}ま、本来ならば悪魔との契約は魂の一つももらって帰るんだけど。　",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0ca8",
+    "VB2.SIL:35b6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "今回に限っては、ただにしておいてあげるわ。　{C1}{C2}それじゃ、{C3}またしたくなったら呼んでね。　",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0dc5",
+    "VB2.SIL:368c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "２日でも３日でも相手して上げるから。　{C1}それじゃ、元気でね〜。",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0e2e",
+    "VB2.SIL:3722"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "す・・素直に魂を取ってもらった方が・・・なんぼか楽だったかも・・しれん・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0e8e",
+    "VB2.SIL:37a8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "俺の人生って・・・一体・・・・",
+   "en": "",
+   "refs": [
+    "VB1.SIL:0ee5",
+    "VB2.SIL:37ff"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "美　保　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0005",
+    "VC0.SIL:003b"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "久　美　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0020",
+    "VC0.SIL:0056"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "男　Ａ　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0071"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "男　Ｂ　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:008c"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00007",
+   "kind": "name",
+   "jp": "依頼主　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:00a7"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00008",
+   "kind": "name",
+   "jp": "ＴＥＬ　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:00c2"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "私は美保。　子どもの頃からあこがれていた探偵さん。　いつかきっと私も探偵になって、ひと花咲かせてやるんだ！と思い続けて、やっと自分の事務所をかまえることができたの。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0204"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "これでもう仕事がバンバン、私は大儲け〜・・・ってな夢はこの不況であっさりと砕かれて・・・このところヒマなのよ〜。　でも、今日は久しぶりの仕事の依頼があって、もうすぐ依頼人が来るはず。　報酬もでかそうだし、楽しみ〜。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:02b1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "でも今回の仕事はパートナーの久美にまかせちゃおうかなって思ってるの。あの子探偵のくせに今一行動力がないから、ここで一発大きな仕事をやらせて、自信を付けさせてあげなきゃ！　そして私は楽して大金持ち！！　なんて素敵な人生なんでしょ・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0390"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "どうも、初めまして、よろしくお願いします。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:04b8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "こちらこそよろしくお願いします。　私がこの探偵事務所の責任者の桜木美保です。　で、こっちが久美です。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:04f8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "よろしくお願いします。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0580"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "いや、しかしお２人ともおきれいでいらっしゃる探偵にしておくのはもったいないくらいですな。　実は私は、芸能プロデュースの方もやっておりまして、どうです？　お２人で。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:05ad"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "いや・・・そういう話はまた今度にしてもらって・・・で、今回の依頼というのは？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0665"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "あ、これは失礼。　実はですね・・・お恥ずかしい話ですが、先ほど申し上げた様に私、芸能プロデュースをやっているのですが、うちの事務所の所属の娘がどんどんとやめていってしまって困ってるんです。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:06c8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "は・・はあ・・・しかし・・・私の所では芸能人のあっせんというのはやっておりませんので・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:079a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "あ、いえ。　そうじゃなく・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:080b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "はぁ・・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:083f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "それで、うちをやめた娘がことごとく、ライバルの事務所へと移籍してしまってるんですよ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0862"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "なるほど、引き抜きってことですね・・・それで、私達になにをしろと？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:08d0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "単なる引き抜きであれば、事務所間の話でなんとかなる場合もあるんですが・・・実は困ったことにバックがありまして・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0929"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "バック？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:09b1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "裏でどうやら某政治家がからんでいるらしいんですよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:09d0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "政治家？　なんでまた・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0a18"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "自分の気に入った娘を手元においておきたいということらしいんですが・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0a48"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "よーするにスケベオヤジってことね・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0aa5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "ええ、まぁそういうことなんですけど・・・それでですね、実はその政治家と芸能プロとの間で密約書がかわされたらしく、それがその政治家の屋敷にあるらしいんです。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0ae1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "で、それを私達に見つけてくれと？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0b92"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "お願いできますか？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0bc8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "でも、それを手にいれたとして、何にお使いになるんですか？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0bf0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "自分の趣味で若い娘をやりとりしようなんていうことが許せないんです。　白日のもとにさらして、あの娘達を救ってやりたいんです。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0c6e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "でも、その娘達も望んでやったことなんじゃ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0d16"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "（ちょっとちょっと！　客を説得してどーすんのよ、せっかくの仕事なのに！）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0d8b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "あの娘達は純粋にスターになりたいだけなんです。　その気持ちを利用する汚い大人が許せない・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0e51"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "わ・・わかりました。　お引受けしましょう。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0ee5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "　で、とりあえずその屋敷へのコンタクトの方法なんですが・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:0fc3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "それならば、ちょうどうまいぐあいにメイドを募集していたんですよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1012"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "あ・・・そうなんですか。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:10a5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "連絡先はここに書いてあります。　ただ、募集人員が一人なんで・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:10d3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "なるほどね・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1176"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "じゃ、久美いってきて。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:11e1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "え、あ・・あたしが行くの？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1230"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "だーって、あたしにメイドなんて似合うと思う？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1286"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "そ・・そりゃ似合わないけど・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:12ed"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "はっきりいわれるとなんかムカつくわね・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:136d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "それでは、とりあえず準備金ということで５０万おいていきますので。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:13ae"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "はいっ！　わかりました、お任せ下さい！",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1480"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "・・っていっちゃったけど、大丈夫かしら・・・こんな仕事。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1528"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "なにいってんのよ。　こんなおいしい仕事めったにないんだからがんばってもらわなきゃ！",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1576"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "だって・・・今までって、居なくなった猫さがしとか、浮気の調査とかそんなのしかやったことないじゃない。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1619"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "　いきなり、こんな仕事やれっていわれても・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:16d8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "だーいじょうぶ。　何事も当たって砕けろってやつよ。　恐いのは最初だけ、なれれば気持ちよくなるって。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1718"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "気持ちよくってのがちょっとわかんないけど・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:17cb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "仕方無いわね・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1854"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "はーい、それじゃいってらっしゃ〜！！　何かあったらすぐ電話するのよ。はいテレホンカード。　Ｑ２にかけちゃだめよ！",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1876"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "ねぇ・・・携帯電話とか買わない？・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1915"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "何いってんの！　高いんだからあれは！　だからこそおいしい仕事をこなして儲けるのよ！　そうしたら何でも買えるんだから！　マンションだって車だって買い放題！　夢のような生活を送るのよ！",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1951"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "別にそこまで求めてないけど・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1a56"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "欲の無い子ね〜。　でも、とりあえずごはんたべなきゃしょーがないんだから！　がんばっていってらっしゃい！",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1a8c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "はーい。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1b1b",
+    "VC0.SIL:1bdd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "（さてと・・・とりあえず屋敷にやってはきたけれど・・・わぁ・・・大きい家・・・お金持ちなんだなぁ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1b4d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "ピンポーン",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1bc3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "あの、すいません。　メイドの募集を見て来たんですけど・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1bf5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "なんかやけに簡単だったなぁ・・・しかも今日からすぐ住み込みでなんて・・・よっぽど人がいないのかしら・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1c74"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "まぁ、今の若い子がメイドなんて仕事を好んでするわけはないわよね・・・自分のことすらろくにできない子が多いんだから。　人の世話なんてするわけないし・・・ま、そのおかげで仕事がやりやすいけど・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1d01"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "さて、とりあえずお掃除のふりして調べちゃいましょ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1de6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "（さて・・・と・・どこがどの部屋なんだろう・・・広すぎてわかんないな・・・あたし達のマンションの何倍くらいあるんだろう・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1e3f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "（廊下だけでも何倍かありそう・・・ああ、考えるとむなしいだけだからやめましょ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1ec6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "よっ、新しいメイドさんかい。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1f22"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "あ、はい。　{C1}今日から入りました。　よろしくお願いします。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1f47"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "ああ聞いているよ、久美ちゃんってんだろ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1f92"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "は・・はい、{C1}どうしてご存じなんですか？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1fc2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "かわいい女の子が来りゃ、情報もまわるってもんだよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:1ffc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "ま、ここは男が多いから、がんばってくれよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2057"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "は・・はい、{C1}どうも。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2089"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "（な・・なんか・・・こわそうなお兄さんだったわ・・・でも・・・男が多いからがんばれっていわれても、どういう意味だかよくわかんないわね・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:20b1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "（ここは・・・書斎のようね・・・ここが一番怪しいわよね、普通・・・ちょっと調べて・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2166"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "おい、何してる！？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:21c7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "あ・・あの・・・お掃除をしようと・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:21e1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "今日入ったメイドだな。　その部屋はいいんだ、御主人様に近寄らないように言われなかったのか？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2219"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "あ・・・はい・・・まだ御主人様にお会いしてないんで・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:227b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "その部屋は俺達がやるから他の所の掃除でもしててくれ。　でないと俺が怒られちまう。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:22c5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "は・・はい、わかりました。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:231d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "（やっぱり・・・あの部屋に何かありそうね・・・夜になったら調べてみましょ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2355"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "（さて・・・もうみんな寝ちゃってるわね・・・　書斎を調べにいかなきゃ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:23c1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "（これで例の書類が見つかれば、もう仕事はおわりだもの・・・楽なもんね・・・さ、早くいって調べちゃいましょう。）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2416"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "（さてさて・・・いかにも怪しいって雰囲気よね。　高そうなじゅうたんとか高そうな応接セットとが入っちゃいけない部屋だったらなんで応接セットなんかおいてあるのかしら・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:24aa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "（大体、書斎に応接セットっていうのも妙な話よね。　こんなに広い家だから、応接間くらいあるだろうし・・・やっぱり、密談用かしら？）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:255b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "（とりあえず本棚を見てみましょ。）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:25e4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "（え〜と、なんかむずかしそうな本がいっぱいあるわね・・・とりあえず見てみましょ・・・・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:261c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "（法律の本だわ。　う〜ん・・・読めない・・・どーしてこんな古文みたいな書き方がしてあるのかしら？・・・読むことができなきゃ内容なんかわかりゃしないわ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2681"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "（・・って、別に本を読みに来てるわけじゃないんだからいいんだけど・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2726"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "（こっちの棚にも同じ様な本だらけ・・・別に本の間に何かはさんでるような気配はないし・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2784"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "（額縁の裏とかに隠して・・・・・{C1}{C2}ないわね・・・今時、こんなとこに隠す人もいないか・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:27f4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "（テーブルの下とか・・・{C1}{C2}何もないわよね・・・別に引出しとかないわけだし・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2866"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "（わかった！　このツボだわ。　ありがちなのよ、こーゆうのに大事な物を入れとくって言うの。）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:28ce"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "（おばさんのヘソクリなんかもそうだし、犬だってエサをかくしてたりするし・・・{C1}{C2}あれ？　何もないわ・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2931"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "（おかしいわね・・・怪しいと思ったのに・・・何も見つからない・・・いったいどこにあるんだろう？・・・・）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:29a7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "（！？・・足音がする・・・誰か来る！？）",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2a18"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "ガチャッ",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2a49"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "何やってんだ、こんな時間に。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2a93"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "（ま・・{C1}まずい・・・）{C2}{C3}あの・・・お掃除を・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2ac5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "掃除だ？　電気もつけないでか？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2b19"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "いえ・・・{C1}あの・・・{C2}皆さんがお休みでしょうから、迷惑にならないようにと思って。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2b4d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "どんなに探したってお前の探してる物は見つからないさ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2bbf"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "え？・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2c09"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "ここには、そんな書類はないってことだよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2c33"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "な・・なんのことですか？・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2c71"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "今更、しらばっくれても仕方無いだろう。　こっちはとっくにお前の正体なんてわかってるんだぜ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2ca6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "え！？・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2d16"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "一人でのこのこ来やがって、探偵ごっこなんざなめたまねしてるとどういう事になるか・・・体で覚えてもらうことになるぜ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2d3b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "あ・・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2db9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "久美からの連絡がないわねー。　まったく何やってんだろ。　ほんっとにあの子はトロいんだから。　探偵なんて向いてないのかもしんないわねー。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2e21"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "でも、便りがないのはよい便りというし。　ま、うまくいってんでしょー。あたしゃ、何もしないで待ってるだけでいーんだもんね。\n楽なもんよ、きゃはははは・・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2ecc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "はぁ・・・それにしても電話がないな〜。　まさか！？・・・・電話が止まっているのでは！？・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:2f8b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "大丈夫よね。　この前、電話代払いに行ったし・・・ちょっとかけてみよ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:300c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "「ピッピッピ〜〜〜〜ン・・・ただいまから・・・」",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3067"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "大丈夫、大丈夫、通じているわ。　電話が通じているのに電話がこないということは、いかに仕事が少ないかと言う事ね・・・どうしよう、どっか広告でもうった方がいいのかな〜。　でも、広告代もばかになんないし。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:30b5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "第一、お金がなきゃどうしようもないし・・・でも仕事がこないとお金は入んないし・・・でも仕事が来るためには広告を・・・ああ・・・なんだかニワトリと卵みたいだわ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:31a0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "トルルル〜〜〜〜",
+   "en": "",
+   "refs": [
+    "VC0.SIL:325b",
+    "VC0.SIL:3281"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "あら、やっと来た。　まったく久美ったら連絡おそいんだから。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:32b3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "カチャ",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3304"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "もしもし。　",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3329"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "あれ？・・・{C1}もしもし？・・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:336c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "・・・あっ・・・あぅ・・・・・・あっ・・・あっ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:33af"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "何これ？・・・{C1}{C2}いたずら電話かな？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3403"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "・・・あっ・・・あっ・・・あぁ・・・あぅ・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3452"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "！？・・・この声・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:34a2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "よぉ、聞こえたかい。　お友達の声は。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:352a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "誰！？　あなたは・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3560"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "わかるだろ？　説明なんかしなくとも。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3593"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "久美に・・何をしたの！？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:35c9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "おいおい、そこまで説明させる気か？　具体的にはだな、上の口と下の口と後ろの穴に３人でえーと何回だっけなー。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:35fe"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "そ・・そんなこと聞いてんじゃないわよ！　{C1}久美は無事なの！？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:367a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "ああ、今も元気に腰を使ってるぜ。",
+   "en": "",
+   "refs": [
+    "VC0.SIL:36d2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "それでな、あんまり気持ちいいから自分だけ楽しんじゃ悪いってんで、あんたにも来て欲しいってことなんだが・・・どうする？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3725"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "あたしが警察に通報するってことは考えないの？",
+   "en": "",
+   "refs": [
+    "VC0.SIL:37a1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "おいおい、俺はあの女の言ったことを伝えてるだけだぜ。　ま、来ないってんなら・・・あんたらもう２度と会うこともなくなるかもしれないけどな・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:3808"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "わかったわ・・・{C1}どこに行ったらいいの・・・",
+   "en": "",
+   "refs": [
+    "VC0.SIL:389c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "よう、早かったな。　そんなに急がなくてもゆっくり相手してやるのに。　それともあんたの方が待ちきれなかったのかな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0164"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "好き者同志ってわけだな。　そんなにたまってんのかい？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:01f8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "ふざけないでよ！　久美はどこ！？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0243"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "そうきゃんきゃん言わなくとも・・・そっちの部屋にいるぜ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0282"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "久美！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0305"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "さすがに何度も上下から入れてやったから、もうお腹いっぱいだそうだ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:031e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "あんた達・・・{C1}久美を放して！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:03a5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "そうはいかないよな。　せっかく来たんだから、あんたにもいろいろやってもらわないとな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:03ef"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "な・・{C1}何をしろっていうのよ・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:044b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "わかってんだろ？　こっちの女と同じ様に気持ちいい目を見てもらうだけだよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:049a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "そ・・{C1}それで本当に返してもらえるんでしょうね。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:04ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "ああ、約束してやるよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:054f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "本当ね！？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:056d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "ああ、本当だから、さっさと服を脱ぎな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0599"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "さ・・{C1}さぁ・・・{C2}脱いだわよ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:05ff"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "色気のねぇ脱ぎ方だな・・・もうちょっと脱ぎ方の勉強しておきな。　後々役にたつから。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0634"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "ば・・馬鹿なこといってんじゃないわよ！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:068f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "さてと・・・あんたみたいな気の強いタイプの女には、とりあえず自分でテンション高めてもらおうかな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:06f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "じ・・{C1}{C2}自分でって・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0760"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "普段やってるようにやりゃいいんだよ。　必要ならナスでもキュウリでも用意してやるぜ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:079f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "そ・・{C1}{C2}そんなこと・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:07fa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "まさか、やったことないなんていうなよな、いい年して。それとも何か？　普段だとこっちの女と２人で慰め合ってるってわけか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0835"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "ち・・違うわよ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:08b4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "何でもいいからさっさとやりな。　なんならこの女、水ぶっかけてたたき起こしてやろうか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:08e9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "やめてよ！・・・{C1}{C2}わかったわ・・{C3}やるわよ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0946"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "１人でできるもん・・・ってか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:09a0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "（こ・・{C1}こんなこと・・・{C2}他人の目の前でするなんて・・・{C3}恥ずかしい・・・{C4}{C5}死ぬほど恥ずかしい・・・{C6}けど・・・）",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0a09"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "どうした？　見られてるとよけいに興奮するのかな？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0a90"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "ち・・{C1}違うわよ！　そんなわけないでしょ！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0ac8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "じゃあ、友達が犯されてるのを見て濡れてきたってなわけだ。　変態じみた女だな、まったく。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0b06"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "ち・・違うわ！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0b64"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "そんなこといいながら、ピチャピチャ音たててるじゃねーの、このインラン",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0b86"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "違うわ・・・{C1}そんなこと・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0bd0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "違うったって、さっきからさかんに音たててんじゃねーか、ちょっと見せてみな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0bff"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "み・・{C1}見せろって・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0c52"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "てめぇの指で広げて見せてみろっていってんだよ！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0c7b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "そ・・{C1}そんなこと・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0cb1",
+    "VC1.SIL:2a84"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "今さら恥ずかしがるようなタマじゃねーだろ、インラン女。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0cdb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "ち・・{C1}違うっていってるでしょ！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0d19"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "違うかどうか、見てやるから広げて見せろっていってんだろ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0d4a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "い・・{C1}いやよ・・・{C2}{C3}そんなこと・・・{C4}できないわ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0d8a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "できないってんなら別にいいぜ、またあっちの女たたき起こしてやらせるからよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0dd6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "や・・{C1}やめて！・・・{C2}{C3}わかったわ・・・{C4}やるわよ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0e28"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "こ・・{C1}これでいいの？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0e81"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "よく見えねぇなぁ、もっと広げて見せな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0ea8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "こ・・{C1}これくらい？・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0f06"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "へぇ〜・・・よくまぁこんだけ広がるもんだ、よっぽど使いこんでんだな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0f41"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "ち・・{C1}違います！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0f8b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "ほら見ろ、やっぱり濡れてんじゃねーか。　よくこんな状況で濡れるよな、俺だったら縮みあがっちまうけどな。　よっぽどの好き者だな、こんな状況を楽しめるなんて。　うらやましいよな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:0fcc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "そんな・・・{C1}楽しんでなんかいないわ！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:109c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "じゃ、どうしてそんなに濡れてるんだ？　しかも、自分の指で濡らしてるんだからな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:10d5"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "あんたがやれっていったんでしょ！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:112b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "俺は普段やってることをやれって言っただけだぜ。　勝手にオナニー始めたのはお前だろ？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1184"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "なんて意地悪なのよ、{C1}あんた達・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:11de"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "へっへっ。　さて、次は何がして欲しいんだ？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1237"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "な・・{C1}何がって・・・{C2}どういう意味よ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1269"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "それだけ濡らしてりゃ、次に何が欲しいのかって聞いてんだよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:12b6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "何も欲しくないわよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:12f8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "そうかい、それじゃしかたないな。　お前にそんなもん見せられた俺の暴れん坊の行き場がないんで・・・あの女でがまんするか。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1331"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "わ・・{C1}わかったわよ、{C2}どうすればいいのよ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:13af"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "どうすればいい？　お前はどうしてほしいんだ？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:141a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "う・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:144e",
+    "VC1.SIL:2154"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "欲しいんじゃないのか？　これが。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1475"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "・・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:149d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "お前が欲しくないんなら、俺はあっちでがまんするぜ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:14bb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "ほ・・{C1}{C2}欲しいです・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:150c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "あ？　聞こえねーな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1553"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "欲しい・・・{C1}です・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:156f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "何をどこにどーしてほしいのか言わなきゃわかんねーな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:15ac"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "あたしの・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:15e8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "あたしの？・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1619"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "あたしの・・・{C1}{C2}○○○○に・・・・{C3}{C4}××××を・・・{C5}{C6}入れて・・・{C7}{C8}下さい・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1633"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "やりゃできるじねーか。　さて、そこまでねだられちゃしょうがねーな、入れてやるとするか。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:16ea"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "・・・・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1748"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "ほら、望み通りに入れてやるから寝な。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:176d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "・・・あっ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1799"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "ほら、入れるぜ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:17bc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "あぁっ・・・{C1}あっ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1807"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "本当はこんな風にされるのが好きなんだろ？　いやらしい女だな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1832"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "うっ・・・{C1}あっ・・・あっ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1876"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "どうなんだよ。　答えな、インラン女。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:18a8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "あぅ・・・{C1}{C2}す・・{C3}{C4}好きです・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:18d4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "ほらみろ、やっぱりインランだ。　こんなことされて悦んでやがる。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:190b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あ・・・あぁっ・・・{C2}あっ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1951"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "ほら、もっとして欲しいか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1991"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}もっと・・・{C2}もっとして下さい・・・あぁっ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:19b3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "よーし。　なら、もっと強く・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1a00"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あっ・{C2}あぅ・・・{C3}はぁ・・・{C4}あぁ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1a3b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "そろそろ・・・いくぞ・・・中に出すぞ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1a83"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}い・・{C2}いや・・・{C3}外に・・{C4}外に出して・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1ab1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "・・・ふぅ・・・だめだぜ・・もっと早く言わなきゃ。　もう中に出しちまった。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1b29"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "あぁ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1b7b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "さてと、タッチ。　お前、後ろの方がいいだろ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1b99"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "そうだな、俺はこっちをもらうぜ。　ほら、こっちに尻をむけな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1bcd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "えっ・・・やだ！・・・{C1}おしりは・・いや！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1c18"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00521",
+   "kind": "msg",
+   "jp": "なに言ってんだ。　インランのくせに。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1c71"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00522",
+   "kind": "msg",
+   "jp": "いや！　{C1}お願い！　やめて！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1c9d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00523",
+   "kind": "msg",
+   "jp": "あっちの女はいやだなんて言わなかったぞ！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1ceb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00524",
+   "kind": "msg",
+   "jp": "あんときゃ、俺ので口ふさいでたからな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1d1b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00525",
+   "kind": "msg",
+   "jp": "おぉ、そうか。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1d49"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00526",
+   "kind": "msg",
+   "jp": "いや！　やめて！・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1d60"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00527",
+   "kind": "msg",
+   "jp": "うるせえな・・・ほら。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1d9c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00528",
+   "kind": "msg",
+   "jp": "い・・{C1}痛っ！！・・・{C2}痛っ・・・{C3}痛あい・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1dc7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00529",
+   "kind": "msg",
+   "jp": "おっ・・・インランのくせにこっちは初めてか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1e34"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00530",
+   "kind": "msg",
+   "jp": "痛っ・・・{C1}痛い・・・・{C2}やめ・・・{C3}もう・・・{C4}やめて・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1e68"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00531",
+   "kind": "msg",
+   "jp": "うるせえな・・・・やめてほしきゃもっと締めな、そうすりゃ早くいっちまうからよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1eb8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00532",
+   "kind": "msg",
+   "jp": "あぐ・・・{C1}あぅっ・・・{C2}{C3}痛っ・・・・{C4}痛い・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1f0e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00533",
+   "kind": "msg",
+   "jp": "うーむ・・・・さすがに・・・初モノは締まるな・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1f57"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00534",
+   "kind": "msg",
+   "jp": "初モノって言うのか？　こういうのも。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1f91"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00535",
+   "kind": "msg",
+   "jp": "あ・・・{C1}あぅ・・・{C2}は・・{C3}早く・・{C4}早く・・・・{C5}終わって・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:1fbe"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00536",
+   "kind": "msg",
+   "jp": "だったら、もっと締めなって。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2011"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00537",
+   "kind": "msg",
+   "jp": "うっ・・・{C1}あっ・・・{C2}あ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2035"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00538",
+   "kind": "msg",
+   "jp": "よーし・・・いいぞ・・・いくぞ・・・いくぞ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2069"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00539",
+   "kind": "msg",
+   "jp": "あぁ・・・・あっ・・あっ・・・・{C1}あっ・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:20b4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00540",
+   "kind": "msg",
+   "jp": "はぁ・・・・けっこうよかったぜ、インラン女。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2120"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00541",
+   "kind": "msg",
+   "jp": "お、あっちも気がついた様だな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2170"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00542",
+   "kind": "msg",
+   "jp": "み・・美保・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2196"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00543",
+   "kind": "msg",
+   "jp": "ほら、あっちにいって重なりな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:21b9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00544",
+   "kind": "msg",
+   "jp": "あ〜あ、２人とももうベトベトだな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2205"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00545",
+   "kind": "msg",
+   "jp": "美保・・・{C1}{C2}ごめんね・・・{C3}あたしがしくじっちゃって・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:222f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00546",
+   "kind": "msg",
+   "jp": "ううん・・・{C1}{C2}あたしが・・・{C3}久美だけ行かせたから・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:229f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00547",
+   "kind": "msg",
+   "jp": "２人してなぐさめあいか？　だったら、今度は２人でやってもらおうか。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:230e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00548",
+   "kind": "msg",
+   "jp": "これだけベトベトだともう入れる気がしねえしな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2358"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00549",
+   "kind": "msg",
+   "jp": "ほら、さっさとやんな。　なんなら手伝ってやろうか？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:238e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00550",
+   "kind": "msg",
+   "jp": "美保・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:23c9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00551",
+   "kind": "msg",
+   "jp": "いう通りにしましょう・・・{C1}{C2}今は・・・{C3}あいつらに犯られるよりは・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:23f3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00552",
+   "kind": "msg",
+   "jp": "・・うん・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:246d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00553",
+   "kind": "msg",
+   "jp": "美保・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:24c9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00554",
+   "kind": "msg",
+   "jp": "そう・・・{C1}{C2}そこを・・・{C3}合わせて・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:24e4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00555",
+   "kind": "msg",
+   "jp": "あっ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:251f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00556",
+   "kind": "msg",
+   "jp": "久美・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:253c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00557",
+   "kind": "msg",
+   "jp": "美保・・・・{C1}気持ちいい？・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:255a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00558",
+   "kind": "msg",
+   "jp": "あぁっ・・・{C1}うん・・・{C2}あたしも・・・{C3}{C4}敏感になってる・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:258b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00559",
+   "kind": "msg",
+   "jp": "あ・・{C1}あたしも・・・{C2}美保とだと・・{C3}安心感があって・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:25dc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00560",
+   "kind": "msg",
+   "jp": "久美・・・{C1}もっと・・・{C2}強く・・・{C3}こすり合わせて・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:262a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00561",
+   "kind": "msg",
+   "jp": "うん・・・{C1}{C2}こう？・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2677"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00562",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}{C2}そ・・そう・・・・{C3}気持ちいい・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:26a4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00563",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あん・・・{C2}み・・美保・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:26e9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00564",
+   "kind": "msg",
+   "jp": "久美・・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2724"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00565",
+   "kind": "msg",
+   "jp": "い・・・{C1}いきそう・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2744"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00566",
+   "kind": "msg",
+   "jp": "あ・・・{C1}あたしも・・・・{C2}いく・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:276f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00567",
+   "kind": "msg",
+   "jp": "あぁ・・{C1}あぁっ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:27b9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00568",
+   "kind": "msg",
+   "jp": "あぁっ・・・あぁぁぁっ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:27e0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00569",
+   "kind": "msg",
+   "jp": "見てたらまた勃ってきちまったぜ。こっち来な。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2857"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00570",
+   "kind": "msg",
+   "jp": "あっ・・・いや・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:288d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00571",
+   "kind": "msg",
+   "jp": "いやじゃねーよ。　ほら。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:28b2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00572",
+   "kind": "msg",
+   "jp": "あうっ・・あっ・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:28fd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00573",
+   "kind": "msg",
+   "jp": "ほらよ、ハメられてる所を相棒に見てもらいな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2920"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00574",
+   "kind": "msg",
+   "jp": "ああっ・・{C1}い・・いやぁ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2954"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00575",
+   "kind": "msg",
+   "jp": "く・・{C1}久美・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2984"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00576",
+   "kind": "msg",
+   "jp": "お前は俺が相手してやるぜ、こっちに来な。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:29a7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00577",
+   "kind": "msg",
+   "jp": "ああっ・・・{C1}い・・{C2}痛ぁい・・・{C3}背中が・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2a09"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00578",
+   "kind": "msg",
+   "jp": "ぜいたくいってんじゃねーよ。　てめぇで誘っといて。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2a4a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00579",
+   "kind": "msg",
+   "jp": "おい、そいつの顔をこっちにむけな。そいつにかけてやるからよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2aae"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00580",
+   "kind": "msg",
+   "jp": "ああ、それじゃ俺はそっちにかけるぜ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2af2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00581",
+   "kind": "msg",
+   "jp": "間違っても俺にかけるなよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2b1e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00582",
+   "kind": "msg",
+   "jp": "俺だってかけたくねえよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2b40"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00583",
+   "kind": "msg",
+   "jp": "よし・・・いくぞ・・・こっちに向けな・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2b61"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00584",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}やぁ・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2b93"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00585",
+   "kind": "msg",
+   "jp": "これで、全部のシーン終わりかな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2c0a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00586",
+   "kind": "msg",
+   "jp": "いい絵は撮れましたか？　社長。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2c32"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00587",
+   "kind": "msg",
+   "jp": "あ・・あなたは・・・マネージャーさん！？・・・ど・・どうして・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2c58"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00588",
+   "kind": "msg",
+   "jp": "やあ、探偵さん。　よくうちの仕事を引き受けてくれましたね。　おかげでいい絵が撮れましたよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2ca1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00589",
+   "kind": "msg",
+   "jp": "いい絵？・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2d03"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00590",
+   "kind": "msg",
+   "jp": "一部始終ビデオに撮らせてもらったよ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2d1a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00591",
+   "kind": "msg",
+   "jp": "ビデオ！？　そ・・そんな・・・だましたのね！！",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2d46"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00592",
+   "kind": "msg",
+   "jp": "だましたなんて人聞きの悪い。　私は君達のデビューのチャンスを作ってあげたいと思ってただけだよ。　前に、言ったじゃないか、芸能活動をやってるって。　私はあんたらをどーしてもＡＶにデビューさせたくてな。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2d7d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00593",
+   "kind": "msg",
+   "jp": "しかし、あんたらが素直に話にのってくると思わなんだでな。　こーいうことにさせてもらったんだが。　ま、世の中こんなもんだと思ってくれ。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2e4c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00594",
+   "kind": "msg",
+   "jp": "こ・・こんなことして・・・ただですむと思ってるの！？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2ed8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00595",
+   "kind": "msg",
+   "jp": "ただではすまさんよ、ちゃんと君達にギャラは払う。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2f15"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00596",
+   "kind": "msg",
+   "jp": "え？・・は・・ほんと？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2f5b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00597",
+   "kind": "msg",
+   "jp": "ちょっと・・・美保ったら・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2f79"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00598",
+   "kind": "msg",
+   "jp": "そうだな・・・とりあえず、依頼した分のギャラとあとは売行きに応じてということでどうかな？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2f9e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00599",
+   "kind": "msg",
+   "jp": "も・・もうちょっと色付きません？",
+   "en": "",
+   "refs": [
+    "VC1.SIL:2ffe"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00600",
+   "kind": "msg",
+   "jp": "美保ったら・・・お金もらえばいいってもんじゃ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:3026"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00601",
+   "kind": "msg",
+   "jp": "どうせならもらった方がいいじゃない。あたしだって痛い思いしたんだし。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:3063"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00602",
+   "kind": "msg",
+   "jp": "そりゃそうだけど・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:30ad"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00603",
+   "kind": "msg",
+   "jp": "それじゃあ、印税の方での話にするか。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:30cb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00604",
+   "kind": "msg",
+   "jp": "そうですね、そうしましょう。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:30f7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00605",
+   "kind": "msg",
+   "jp": "これだったら、最初からこういう話でもってっても良かったかもしれんな。もっとも、それだとこれだけ迫力のある絵は撮れなかったろうが。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:311c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00606",
+   "kind": "msg",
+   "jp": "いや〜大丈夫ですよ。　あたし演技力ありますから。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:31a4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00607",
+   "kind": "msg",
+   "jp": "美保って・・・こんな性格だったのね・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:31dc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00608",
+   "kind": "msg",
+   "jp": "じゃあ、来週パッケージの撮影ね。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:320f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00609",
+   "kind": "msg",
+   "jp": "は〜い。　よろしくお願いしまーす。",
+   "en": "",
+   "refs": [
+    "VC1.SIL:3237"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00610",
+   "kind": "msg",
+   "jp": "　　”元探偵の２人の美女、ＡＶデビュー！！　大迫力の映像で大ヒット中！！”",
+   "en": "",
+   "refs": [
+    "VC1.SIL:32a1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00611",
+   "kind": "msg",
+   "jp": "世の中って、{C1}どうなるかわからないものね・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:3356"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00612",
+   "kind": "msg",
+   "jp": "ま、{C1}お金が入ってきて楽になって。　{C2}{C3}えーんでないの？{C4}\n\n{C5}{C6}{C7}{C8}キャハハハハ・・・・",
+   "en": "",
+   "refs": [
+    "VC1.SIL:33b2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "n00009",
+   "kind": "name",
+   "jp": "一　代　",
+   "en": "",
+   "refs": [
+    "VE.SIL:0005"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00010",
+   "kind": "name",
+   "jp": "六　実　",
+   "en": "",
+   "refs": [
+    "VE.SIL:0020"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00011",
+   "kind": "name",
+   "jp": "司　会　",
+   "en": "",
+   "refs": [
+    "VE.SIL:003b"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00012",
+   "kind": "name",
+   "jp": "　Ｄ　　",
+   "en": "",
+   "refs": [
+    "VE.SIL:0056"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00013",
+   "kind": "name",
+   "jp": "Ａ　Ｄ　",
+   "en": "",
+   "refs": [
+    "VE.SIL:0071"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "n00014",
+   "kind": "name",
+   "jp": "Ｆ　Ｄ　",
+   "en": "",
+   "refs": [
+    "VE.SIL:008c"
+   ],
+   "max_cells": 8,
+   "note": "a string the messages insert (a speaker's name before the message, whose next lines start after it): `max_cells` the Japanese's; the program keeps 48 bytes"
+  },
+  {
+   "id": "m00613",
+   "kind": "msg",
+   "jp": "・・・というわけで今日の「２０才に見えないコンテスト」は６番の方に決定しましたー。",
+   "en": "",
+   "refs": [
+    "VE.SIL:02b8"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00614",
+   "kind": "msg",
+   "jp": "ちょっとまってよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0315"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00615",
+   "kind": "msg",
+   "jp": "納得いかないわね。　どうしてその子が優勝なの！？　{C1}だれが見たって私の方が若く見えるでしょう！？",
+   "en": "",
+   "refs": [
+    "VE.SIL:033a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00616",
+   "kind": "msg",
+   "jp": "い・・いや君、これはバラエティーだから・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:03ec"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00617",
+   "kind": "msg",
+   "jp": "バラエティーだからって、そんないい加減な判断して欲しくないわね。　{C1}{C2}何のために、朝の８時から待ってたと思ってんのよ。　{C3}ちゃんと審査してよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:041f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00618",
+   "kind": "msg",
+   "jp": "ディレクター、ど・・・どうします？",
+   "en": "",
+   "refs": [
+    "VE.SIL:0512"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00619",
+   "kind": "msg",
+   "jp": "・・・俺に言われても・・・司会が丸く納めてよ。　生なんだから時間ないんだし。",
+   "en": "",
+   "refs": [
+    "VE.SIL:053c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00620",
+   "kind": "msg",
+   "jp": "だってほら！　{C1}こんなパンツはいてるじゃない！",
+   "en": "",
+   "refs": [
+    "VE.SIL:05b0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00621",
+   "kind": "msg",
+   "jp": "きゃー！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0614",
+    "VE.SIL:07d6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00622",
+   "kind": "msg",
+   "jp": "私は、ほら！　{C1}ちゃんとグンパンのプリントものよ！！　{C2}どう！？　これでも私が優勝じゃないっていうの！？",
+   "en": "",
+   "refs": [
+    "VE.SIL:064f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00623",
+   "kind": "msg",
+   "jp": "いや・・・そういわれても。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0709"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00624",
+   "kind": "msg",
+   "jp": "何よ！　{C1}まだ不満だっていうの！？",
+   "en": "",
+   "refs": [
+    "VE.SIL:072b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00625",
+   "kind": "msg",
+   "jp": "じゃあこれはどう！？",
+   "en": "",
+   "refs": [
+    "VE.SIL:07af"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00626",
+   "kind": "msg",
+   "jp": "き・・きみ・・お昼の番組なんだから・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:07f1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00627",
+   "kind": "msg",
+   "jp": "おもしろいからやらしちゃえ。",
+   "en": "",
+   "refs": [
+    "VE.SIL:081f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00628",
+   "kind": "msg",
+   "jp": "いいんですか！？　こんなこと！？・・・もう、ＣＭ終わっちゃいますよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0844"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00629",
+   "kind": "msg",
+   "jp": "いーんだよ、ＴＶなんて視聴率取れりゃ後で何とでもなる。",
+   "en": "",
+   "refs": [
+    "VE.SIL:088e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00630",
+   "kind": "msg",
+   "jp": "やだ、やめてよー。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0913"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00631",
+   "kind": "msg",
+   "jp": "ほら見てご覧なさいな！　{C1}こーんなにいっぱい生えてるじゃないの！　{C2}立派な大人だって言う証拠じゃない！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0939"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00632",
+   "kind": "msg",
+   "jp": "でも！",
+   "en": "",
+   "refs": [
+    "VE.SIL:09f6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00633",
+   "kind": "msg",
+   "jp": "わたしはつるつるよーー！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0a20"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00634",
+   "kind": "msg",
+   "jp": "いーんですか！？　生番組でこんなことやらせちゃって！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0aa0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00635",
+   "kind": "msg",
+   "jp": "かまわん！　数字がぐんぐんのびてる！　モザイクの用意だけしておけ！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0afa"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00636",
+   "kind": "msg",
+   "jp": "司会！　もっとひきのばしてエスカレートさせろ！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0b52",
+    "VE.SIL:0e1b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00637",
+   "kind": "msg",
+   "jp": "モ・・・モザイクったって・・・生放送ですから危ないですよ。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0b99"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00638",
+   "kind": "msg",
+   "jp": "大丈夫だ！　片方は見てのとうり生えてない！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0bf7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00639",
+   "kind": "msg",
+   "jp": "そーいう問題では・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:0c48"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00640",
+   "kind": "msg",
+   "jp": "いーからやれ！！　数字が全てだ！！　みの○んたがなんぼのもんじゃい！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0c84"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00641",
+   "kind": "msg",
+   "jp": "え〜ん。　もう、お嫁にいけな〜い。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0d37"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00642",
+   "kind": "msg",
+   "jp": "はぁ・・・はぁ・・・{C1}さあ！　{C2}もう充分でしょ！　{C3}だれが優勝かきめてよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0d87"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00643",
+   "kind": "msg",
+   "jp": "え・・・え〜っと・・・ディレクター、どうします？",
+   "en": "",
+   "refs": [
+    "VE.SIL:0de3"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00644",
+   "kind": "msg",
+   "jp": "そ・・・そんな・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:0e53"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00645",
+   "kind": "msg",
+   "jp": "早くしてよ！　もうわかってるでしょ！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0e70"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00646",
+   "kind": "msg",
+   "jp": "そ、それでは審査員の方・・・札を上げて下さい。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0ea7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00647",
+   "kind": "msg",
+   "jp": "１番、６番、６番、１番。　引き分けですね。",
+   "en": "",
+   "refs": [
+    "VE.SIL:0ef9"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00648",
+   "kind": "msg",
+   "jp": "なんですってぇーーー！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0f2d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00649",
+   "kind": "msg",
+   "jp": "わかったわ！　{C1}この手は使いたくなかったけど・・・{C2}こうなったら実力でわからせるしかないわね！　{C3}この私のテクニックで！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:0f8b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00650",
+   "kind": "msg",
+   "jp": "相手を先にイカせた方の勝ちよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:1089"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00651",
+   "kind": "msg",
+   "jp": "え！？　{C1}な・・なんでそんな！",
+   "en": "",
+   "refs": [
+    "VE.SIL:10d1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00652",
+   "kind": "msg",
+   "jp": "先にイッちゃった方がより大人だっていうことよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:1116"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00653",
+   "kind": "msg",
+   "jp": "そ・・そんな・・・{C1}どういう理屈なのよ、それ！？",
+   "en": "",
+   "refs": [
+    "VE.SIL:1178"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00654",
+   "kind": "msg",
+   "jp": "問答無用！！　{C1}いくわよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:11e6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00655",
+   "kind": "msg",
+   "jp": "ほら、足を開きなさい！　{C1}私の舌でイカせてあげるわ！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:124c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00656",
+   "kind": "msg",
+   "jp": "い・・いや、{C1}やめて！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:1295"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00657",
+   "kind": "msg",
+   "jp": "口ではイヤだっていいながら、ちゃっかり足開いてるじゃない。　{C1}そーいう本音と建前の使い方が大人だって言うのよ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:12dc"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00658",
+   "kind": "msg",
+   "jp": "あっ！・・・{C1}そ・・そこは・・・{C2}いや・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:135b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00659",
+   "kind": "msg",
+   "jp": "いやってことはもっとなめてほしいってことね。　{C1}わかったわ！",
+   "en": "",
+   "refs": [
+    "VE.SIL:13b7"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00660",
+   "kind": "msg",
+   "jp": "ほ〜ら、{C1}いやだいやだっていいながらもこんなに濡らしちゃって・・・{C2}感度いいじゃないの・・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:145d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00661",
+   "kind": "msg",
+   "jp": "い・・・いやぁ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:14d0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00662",
+   "kind": "msg",
+   "jp": "もっと素直になりなさいよ。　{C1}気持ちいいんでしょ。　{C2}素直に感じればもっとよくなるわよ。",
+   "en": "",
+   "refs": [
+    "VE.SIL:14f6"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00663",
+   "kind": "msg",
+   "jp": "（これなら、簡単にイカせられるわ。　{C1}この私のテクニックで・・・必ず勝ってみせるわ。）",
+   "en": "",
+   "refs": [
+    "VE.SIL:1593"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00664",
+   "kind": "msg",
+   "jp": "（こ・・この子・・・{C1}{C2}うまいわ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:165b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00665",
+   "kind": "msg",
+   "jp": "こんな感じ・・・{C1}初めて・・・{C2}はずかしい・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1692"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00666",
+   "kind": "msg",
+   "jp": "こ・・・こんな子に公衆の面前でイカされるなんて・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:16cd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00667",
+   "kind": "msg",
+   "jp": "せっかく・・・{C1}せっかく優勝したのに・・・）",
+   "en": "",
+   "refs": [
+    "VE.SIL:170c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00668",
+   "kind": "msg",
+   "jp": "（そ・・・そうよ・・・{C1}私だって・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1746"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00669",
+   "kind": "msg",
+   "jp": "私だって女子校時代は・・・・{C1}お姉様と慕われた女・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:177d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00670",
+   "kind": "msg",
+   "jp": "ま・・まけるもんですか！）",
+   "en": "",
+   "refs": [
+    "VE.SIL:17c0"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00671",
+   "kind": "msg",
+   "jp": "ほーら、だいぶ充血してきてるし、もうすぐイカせてあげるわよ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1829"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00672",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}な・・・なにを・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:18a1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00673",
+   "kind": "msg",
+   "jp": "あ・・・あたしだって・・・{C1}負けられないわ！・・・{C2}調子にのってこっちにお尻をむけたのは失敗だったわね。",
+   "en": "",
+   "refs": [
+    "VE.SIL:1920"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00674",
+   "kind": "msg",
+   "jp": "あ・・・{C1}あぁっ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:19f4"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00675",
+   "kind": "msg",
+   "jp": "どう？・・・{C1}前と後ろの両方に指を入れてるから、{C2}{C3}中でこすり合わさって気持ちいいでしょ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1a1d"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00676",
+   "kind": "msg",
+   "jp": "これで何人もイカせてきたわ・・・{C1}あなたも同じ様にイカせてあげる！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:1a8a"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00677",
+   "kind": "msg",
+   "jp": "・・・あ・・・{C1}ああっ・・・{C2}いや・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1adb"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00678",
+   "kind": "msg",
+   "jp": "・・・すごく・・・あふれてきてるわ・・こ・・これで私の・・・勝ちよ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1b45"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00679",
+   "kind": "msg",
+   "jp": "・・・そ・・{C1}そうはさせるもんですか・・・{C2}{C3}しょ・・勝負よ！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:1b9e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00680",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}ああっ・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1c2e"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00681",
+   "kind": "msg",
+   "jp": "はぁ・・・{C1}うっ・・・{C2}あっ・・{C3}{C4}は・・はやく・・・{C5}{C6}イッちゃいなさいよ・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1c5b"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00682",
+   "kind": "msg",
+   "jp": "あ・・・{C1}{C2}あなたこそ・・・{C3}{C4}早くイキな・・・{C5}さい・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1cba"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00683",
+   "kind": "msg",
+   "jp": "・・・ああ・・{C1}うっ・・・{C2}はぁ・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1d09"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00684",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あっ・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1d43"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00685",
+   "kind": "msg",
+   "jp": "あぁっ・・・{C1}あっ・・・{C2}{C3}{C4}だ・・・だめ・・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1d6c"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00686",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あ・{C2}くっ・・・{C3}はぁ・・・{C4}ああ・・・{C5}あっ・・・{C6}いやっ・・・い・・・いきそう・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1db1"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00687",
+   "kind": "msg",
+   "jp": "あっ・・・{C1}あっ・・・{C2}あぁ・・・{C3}あっ",
+   "en": "",
+   "refs": [
+    "VE.SIL:1e27"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00688",
+   "kind": "msg",
+   "jp": "あっ・・・あっ・・・{C1}あっ・・だ・・だめっ・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:1e60"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00689",
+   "kind": "msg",
+   "jp": "あっ・・・・{C1}あぁーーーーーーっ",
+   "en": "",
+   "refs": [
+    "VE.SIL:1edd"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00690",
+   "kind": "msg",
+   "jp": "い・・・・いくーーーーーっ",
+   "en": "",
+   "refs": [
+    "VE.SIL:1fa2"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00691",
+   "kind": "msg",
+   "jp": "〜〜というわけで、２人共同時にいってしまいましたので・・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:2017"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00692",
+   "kind": "msg",
+   "jp": "優勝は一番老けていた３番ということに・・・",
+   "en": "",
+   "refs": [
+    "VE.SIL:205f"
+   ],
+   "max_cells": 76
+  },
+  {
+   "id": "m00693",
+   "kind": "msg",
+   "jp": "何だったのよ〜、私の努力は〜〜〜！！",
+   "en": "",
+   "refs": [
+    "VE.SIL:20a1"
+   ],
+   "max_cells": 76
+  }
+ ]
+}

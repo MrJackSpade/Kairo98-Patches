@@ -31,9 +31,9 @@ ides' Adv98V script engine (`DEMON/`), on a hard-disk image: 118 scripts with te
 
 ## Script
 
-5185 strings (5085 messages, 44 name tags (procedure text), 46 string variable values, 9 text file lines, 1 program strings).
+5187 strings (5085 messages, 44 name tags (procedure text), 46 string variable values, 9 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 5185 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 5187 strings have English so far.
 
 ## Limits
 

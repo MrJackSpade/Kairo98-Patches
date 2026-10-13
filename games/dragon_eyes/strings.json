@@ -34424,15 +34424,25 @@
   {
    "id": "e00001",
    "kind": "engine",
-   "jp": "ﾃ帥＜ｃ梶[が解放できません。$プログラムが起動できません。(0",
+   "jp": "メモリーが解放できません。",
    "en": "",
    "refs": [
-    "ADVSHELL.COM:0244"
+    "ADVSHELL.COM:0246"
    ],
-   "max_cells": 29
+   "max_cells": 13
   },
   {
    "id": "e00002",
+   "kind": "engine",
+   "jp": "プログラムが起動できません。(0",
+   "en": "",
+   "refs": [
+    "ADVSHELL.COM:0261"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00003",
    "kind": "engine",
    "jp": "ドラゴンアイズ",
    "en": "",
@@ -34442,7 +34452,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00003",
+   "id": "e00004",
    "kind": "engine",
    "jp": "ＰＣ－９８０１",
    "en": "",
@@ -34452,17 +34462,27 @@
    "max_cells": 7
   },
   {
-   "id": "e00004",
+   "id": "e00005",
    "kind": "engine",
-   "jp": "帥hライブＡ：から起動しなおしてください。",
+   "jp": "[[[ プログラムを読み込み中 ]]]",
    "en": "",
    "refs": [
-    "ADVSHELL.COM:065b"
+    "ADVSHELL.COM:0631"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "ドライブＡ：から起動しなおしてください。",
+   "en": "",
+   "refs": [
+    "ADVSHELL.COM:065c"
    ],
    "max_cells": 20
   },
   {
-   "id": "e00005",
+   "id": "e00007",
    "kind": "engine",
    "jp": "ドライブＡ：のディスクを確認してください。",
    "en": "",
@@ -34470,6 +34490,16 @@
     "ADVSHELL.COM:0688"
    ],
    "max_cells": 21
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ドライブ１に、ディスクＡを入れてください",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:1650"
+   ],
+   "max_cells": 20
   }
  ]
 }

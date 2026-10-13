@@ -1,0 +1,9 @@
+{
+ "title": "Yumemizaka",
+ "key": "U-meSoft.zip/Yumemizaka",
+ "image": "Yumemizaka\\Yumemizaka [HD]\\Yumemizaka.hdi",
+ "encoding": "flz",
+ "program": "YUMEMI.EXE",
+ "game_dir": "YUMEMI",
+ "boot_steps": "25:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,5:shot,2:enter,6:shot,1:enter,6:shot,1:enter,6:shot,1:enter,6:shot,1:enter,6:shot,1:enter,6:shot,1:enter"
+}

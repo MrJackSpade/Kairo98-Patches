@@ -1,0 +1,49 @@
+{
+ "title": "Kounai Shasei",
+ "key": "FairytaleXShitei.zip/Kounai Shasei",
+ "image": "Kounai Shasei\\Kounai Shasei (Vol. 1) [FD]\\Kounai Shasei (Vol. 1) (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "KOUNAI1",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "page_break": "8190",
+ "script_room": 17100,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "KOUNAI1",
+  "disks": [
+   "Kounai Shasei (Vol. 1) (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "ADV98V.SYS",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\KOUNAI1",
+   "ADV98V\\ADVBIOS",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "proc_fullwidth": true,
+ "program_files": [
+  "CMD/NAME.I86"
+ ],
+ "program_fullwidth": true
+}

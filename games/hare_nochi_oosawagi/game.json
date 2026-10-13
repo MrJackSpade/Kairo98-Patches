@@ -1,0 +1,64 @@
+{
+ "title": "Hare Nochi Oosawagi!",
+ "key": "CocktailSoft.zip/Hare Nochi Oosawagi!",
+ "image": "Hare Nochi Oosawagi!\\Hare Nochi Oosawagi! [FD]\\Hare Nochi Oosawagi! (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Hare Nochi Oosawagi! (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "program_fixes": [
+  {
+   "file": "ADVSHELL.COM",
+   "find": "2ac0e86a0085c07505b001e86100c3",
+   "replace": "31c0909090909090909090909090c3",
+   "why": "ADVSHELL checks drive A's volume label for the game disk's (ﾊﾚﾉﾁｵｵｻﾜ.ｷﾞA); on the hard disk the check is made to report a match"
+  },
+  {
+   "file": "HARE.EXE",
+   "find": "423a5c5052535c4b454e312e50525300423a5c5052535c4b454e322e50525300423a5c5052535c4b454e332e50525300423a5c5052535c4b454e342e50525300423a5c5052535c4b454e352e50525300423a5c5052535c4b454e362e50525300423a5c5052535c4b454e372e50525300423a5c5052535c4b454e382e50525300423a5c5052535c4b454e392e50525300423a5c5052535c4b454e31302e50525300423a5c5052535c4b454e31312e50525300423a5c5052535c4b454e31322e50525300423a5c5052535c4c4f474f2e50525300423a5c5052535c312e50525300423a5c5052535c32362e50525300423a5c5052535c33342e50525300423a5c5052535c33352e50525300423a5c5052535c415f362e50525300423a5c5052535c4b5f34422e50525300423a5c5052535c54455f322e50525300423a5c5052535c54455f332e50525300423a5c5052535c4b5f322e50525300423a5c5052535c4d41494e2e505253000000000000000000423a5c4d55535c484f2d454e442e4d",
+   "replace": "413a5c5052535c4b454e312e50525300413a5c5052535c4b454e322e50525300413a5c5052535c4b454e332e50525300413a5c5052535c4b454e342e50525300413a5c5052535c4b454e352e50525300413a5c5052535c4b454e362e50525300413a5c5052535c4b454e372e50525300413a5c5052535c4b454e382e50525300413a5c5052535c4b454e392e50525300413a5c5052535c4b454e31302e50525300413a5c5052535c4b454e31312e50525300413a5c5052535c4b454e31322e50525300413a5c5052535c4c4f474f2e50525300413a5c5052535c312e50525300413a5c5052535c32362e50525300413a5c5052535c33342e50525300413a5c5052535c33352e50525300413a5c5052535c415f362e50525300413a5c5052535c4b5f34422e50525300413a5c5052535c54455f322e50525300413a5c5052535c54455f332e50525300413a5c5052535c4b5f322e50525300413a5c5052535c4d41494e2e505253000000000000000000413a5c4d55535c484f2d454e442e4d",
+   "why": "the opening (HARE.EXE) loads its pictures and its music from drive B (B:\\PRS\\..., B:\\MUS\\HO-END.M); on the hard disk every file is on drive A"
+  },
+  {
+   "file": "ADVSHELL.COM",
+   "find": "423a5c4d55535c484f2d4f504e2e4d",
+   "replace": "413a5c4d55535c484f2d4f504e2e4d",
+   "why": "ADVSHELL plays the opening music from drive B (B:\\MUS\\HO-OPN.M); on the hard disk every file is on drive A"
+  }
+ ],
+ "boot_steps": "30:shot,25:shot,25:shot,25:shot,25:shot,25:shot,15:shot,2:key=32,5:shot,2:enter,12:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot",
+ "advh_opening": "HARE.EXE"
+}

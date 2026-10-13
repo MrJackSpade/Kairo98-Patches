@@ -1,0 +1,10 @@
+{
+ "title": "Hoshi no Suna Monogatari 2",
+ "key": "DO.zip/Hoshi no Suna Monogatari 2",
+ "image": "Hoshi no Suna Monogatari 2\\Hoshi no Suna Monogatari 2 [HD]\\Hoshi no Suna Monogatari 2.hdi",
+ "encoding": "adl",
+ "version": "adl2",
+ "program": "ADL2.EXE",
+ "game_dir": "HOSI",
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

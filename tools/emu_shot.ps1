@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right | key=<VK> | skey=<VK> (with shift held) | hold=<VK> (held 600 ms)
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -9,6 +9,8 @@ param(
     [Parameter(Mandatory)] [string]$Out,
     [string]$Steps = "25:shot",
     [string]$Dip = "",   # DIP switch bytes, e.g. "3e f3 7b" (np21w DIPswtch)
+    [string]$ClkMult = "",   # CPU clock multiplier (np21w clk_mult; empty: the emulator's default)
+    [string]$Cd = "",   # a CD-ROM image (.ccd/.cue/.iso) in the IDE CD drive (secondary master)
     [string]$Exe = "E:\PC98work\emu\bin\np21x64w.exe"
 )
 $ErrorActionPreference = "Stop"
@@ -21,6 +23,37 @@ public static class W {
   [DllImport("user32.dll")] public static extern bool PostMessage(IntPtr h, uint m, IntPtr w, IntPtr l);
   [DllImport("user32.dll")] public static extern uint MapVirtualKey(uint c, uint t);
   public struct RECT { public int L, T, R, B; }
+  // the emulator runs on a desktop of its own (never shown): its window cannot pop up or take the focus
+  [DllImport("user32.dll", CharSet = CharSet.Unicode)] static extern IntPtr CreateDesktop(string name, IntPtr dev, IntPtr mode, uint flags, uint access, IntPtr sa);
+  [DllImport("user32.dll")] static extern bool CloseDesktop(IntPtr d);
+  delegate bool EnumProc(IntPtr h, IntPtr l);
+  [DllImport("user32.dll")] static extern bool EnumDesktopWindows(IntPtr d, EnumProc f, IntPtr l);
+  [DllImport("user32.dll")] static extern uint GetWindowThreadProcessId(IntPtr h, out uint pid);
+  [DllImport("user32.dll", CharSet = CharSet.Unicode)] static extern int GetClassName(IntPtr h, System.Text.StringBuilder s, int n);
+  [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)] struct SI {
+    public int cb; public string res, desk, title; public int x, y, w, h, cx, cy, fill, flags; public short show, r2; public IntPtr r3, i, o, e; }
+  struct PI { public IntPtr proc, thread; public int pid, tid; }
+  [DllImport("kernel32.dll", CharSet = CharSet.Unicode)] static extern bool CreateProcess(string app, string cmd, IntPtr pa, IntPtr ta, bool inh, uint flags, IntPtr env, string cwd, ref SI si, out PI pi);
+  static IntPtr desk;
+  public static int Launch(string exe, string args, string cwd, string name) {
+    desk = CreateDesktop(name, IntPtr.Zero, IntPtr.Zero, 0, 0x10000000, IntPtr.Zero);
+    if (desk == IntPtr.Zero) throw new Exception("CreateDesktop failed");
+    SI si = new SI(); si.cb = Marshal.SizeOf(typeof(SI)); si.desk = name;
+    PI pi;
+    if (!CreateProcess(null, "\"" + exe + "\" " + args, IntPtr.Zero, IntPtr.Zero, false, 0, IntPtr.Zero, cwd, ref si, out pi))
+      throw new Exception("CreateProcess failed: " + Marshal.GetLastWin32Error());
+    return pi.pid;
+  }
+  public static IntPtr MainWindow(int pid) {
+    IntPtr found = IntPtr.Zero;
+    EnumDesktopWindows(desk, (h, l) => {
+      uint p; GetWindowThreadProcessId(h, out p);
+      var c = new System.Text.StringBuilder(64); GetClassName(h, c, 64);
+      if (p == pid && c.ToString() == "NP2-MainWindow") { found = h; return false; }
+      return true; }, IntPtr.Zero);
+    return found;
+  }
+  public static void Done() { if (desk != IntPtr.Zero) CloseDesktop(desk); }
 }
 "@
 $bin = Split-Path $Exe
@@ -35,10 +68,10 @@ foreach ($f in @($Fd1, $Fd2)) {
 $ini = Join-Path $work "np21.ini"
 $base = Join-Path $bin "np21x64w.ini"
 $lines = @()
-if (Test-Path $base) { $lines = Get-Content $base | Where-Object { $_ -notmatch '^(HDD1FILE|IDE1TYPE|WindposX|WindposY|DIPswtch)=' } }
+if (Test-Path $base) { $lines = Get-Content $base | Where-Object { $_ -notmatch '^(HDD1FILE|IDE1TYPE|IDE3TYPE|CD3_FILE|SVCDFILE|WindposX|WindposY|DIPswtch|clk_mult)=' } }
 if (-not ($lines -match '^\[NekoProject21\]')) { $lines = @("[NekoProject21]") + $lines }
 $out2 = @()
-foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100"; if ($Dip) { $out2 += "DIPswtch=$Dip" } } }
+foreach ($l in $lines) { $out2 += $l; if ($l -match '^\[NekoProject21\]') { $out2 += "HDD1FILE=$img"; $out2 += "IDE1TYPE=1"; $out2 += "WindposX=100"; $out2 += "WindposY=100"; if ($Dip) { $out2 += "DIPswtch=$Dip" }; if ($ClkMult) { $out2 += "clk_mult=$ClkMult" }; if ($Cd) { $out2 += "IDE3TYPE=2"; $out2 += "CD3_FILE=$Cd"; $out2 += "SVCDFILE=true" } } }
 Set-Content $ini $out2
 $argv = @("-i$ini") + ($fds | ForEach-Object { '"' + $_ + '"' })
 $started = Get-Date
@@ -46,18 +79,18 @@ $vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right 
 # reject a malformed step before the emulator starts
 foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
-    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
+    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+|skey=\d+|hold=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
 }
-$p = Start-Process $Exe -ArgumentList $argv -WorkingDirectory $bin -PassThru
+$p = Get-Process -Id ([W]::Launch($Exe, ($argv -join " "), $bin, "kairo98emu_" + [guid]::NewGuid().ToString("N").Substring(0, 8)))
 Start-Sleep 3
-$p.Refresh(); $h = $p.MainWindowHandle
+$h = [W]::MainWindow($p.Id)
 $n = 0
 New-Item -ItemType Directory -Force (Split-Path $Out) | Out-Null
 try {
 foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
     Start-Sleep -Milliseconds ([int]([double]$wait * 1000))
-    $p.Refresh(); $h = $p.MainWindowHandle
+    $h = [W]::MainWindow($p.Id)
     if ($act -like "mouse=*") {
         # move the emulated mouse (our np21w build's test message WM_USER+0x7A0, signed deltas)
         $dxy = $act.Substring(6).Split(";")
@@ -91,16 +124,24 @@ foreach ($s in $Steps.Split(",")) {
         $n++; $f = "{0}_{1}.png" -f $Out, $n; $bmp.Save($f); $g.Dispose(); $bmp.Dispose()
         Write-Output "shot $f"
     } else {
-        $code = if ($act -like "key=*") { [int]$act.Substring(4) } else { $vk[$act] }
+        # key=<VK> taps a key; hold=<VK> holds it 600 ms (for games that sample keys slowly)
+        # skey=<VK> taps it with shift held (e.g. 226 for "_" at a DOS prompt)
+        $code = if ($act -like "key=*") { [int]$act.Substring(4) } elseif ($act -like "skey=*") { [int]$act.Substring(5) } elseif ($act -like "hold=*") { [int]$act.Substring(5) } else { $vk[$act] }
         $sc = [W]::MapVirtualKey($code, 0)
+        $ssc = [W]::MapVirtualKey(16, 0)
+        if ($act -like "skey=*") { [W]::PostMessage($h, 0x100, [IntPtr]16, [IntPtr](1 -bor ($ssc -shl 16))) | Out-Null; Start-Sleep -Milliseconds 120 }
         [W]::PostMessage($h, 0x100, [IntPtr]$code, [IntPtr](1 -bor ($sc -shl 16))) | Out-Null
-        Start-Sleep -Milliseconds 120
+        Start-Sleep -Milliseconds $(if ($act -like "hold=*") { 600 } else { 120 })
         [W]::PostMessage($h, 0x101, [IntPtr]$code, [IntPtr](1 -bor ($sc -shl 16) -bor (3 -shl 30))) | Out-Null
+        if ($act -like "skey=*") { Start-Sleep -Milliseconds 120; [W]::PostMessage($h, 0x101, [IntPtr]16, [IntPtr](1 -bor ($ssc -shl 16) -bor (3 -shl 30))) | Out-Null }
     }
 }
 } finally {
     # always close the emulator, even when a step fails
-    $p.CloseMainWindow() | Out-Null; Start-Sleep 1; if (-not $p.HasExited) { $p.Kill() }
+    $h = [W]::MainWindow($p.Id)
+    if ($h -ne [IntPtr]::Zero) { [W]::PostMessage($h, 0x10, [IntPtr]0, [IntPtr]0) | Out-Null }
+    Start-Sleep 1; if (-not $p.HasExited) { $p.Kill() }
+    [W]::Done()
 }
 $state = Get-ChildItem -Path $work, $bin -Filter *.S00 -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -ge $started } | Sort-Object LastWriteTime | Select-Object -Last 1
 if ($state) { Move-Item -Force $state.FullName ("{0}.s00" -f $Out); Write-Output ("state {0}.s00" -f $Out) }

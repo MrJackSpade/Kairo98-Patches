@@ -1,0 +1,12 @@
+{
+ "title": "Hana no Kioku",
+ "key": "Foster.zip/Hana no Kioku",
+ "image": "Hana no Kioku\\Hana no Kioku (CD version) [HD]\\Hana no Kioku (CD version).hdi",
+ "encoding": "zyx",
+ "program": "MOTV21.EXE",
+ "archive": "MDT",
+ "game_dir": "KIOKU",
+ "window_cells": 72,
+ "boot_fd": "Hana no Kioku\\Hana no Kioku (CD version) [HD]\\Hana no Kioku (CD version) (HD Boot disk).hdm",
+ "boot_steps": "40:shot,5:shot,1:enter,4:shot,1:enter,4:shot,1:enter,5:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

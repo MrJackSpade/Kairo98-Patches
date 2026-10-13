@@ -1,0 +1,33 @@
+{
+ "title": "Valentine Kiss - Birth Days 2",
+ "key": "Silkys.zip/Valentine Kiss - Birth Days 2",
+ "image": "Valentine Kiss - Birth Days 2\\Valentine Kiss - Birth Days 2 [HD]\\Valentine Kiss - Birth Days 2.hdi",
+ "encoding": "ai5",
+ "version": "sil2",
+ "program": "SIL.EXE",
+ "game_dir": "VK",
+ "archive_format": "silkdisk",
+ "archives": [
+  "DISK_A",
+  "DISK_B",
+  "DISK_C",
+  "DISK_D"
+ ],
+ "calls": {
+  "0": {
+   "cells": 12,
+   "note": "the hero's name (the name entry's, たいちろう by default)"
+  },
+  "7": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,6:shot,1:mouse=100;60,1:mouse=100;60,1:mouse=72;71,1:lclick,4:shot,3:lclick,6:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot",
+ "default_window": [
+  20,
+  308,
+  59,
+  382
+ ]
+}

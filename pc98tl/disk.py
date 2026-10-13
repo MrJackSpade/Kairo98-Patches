@@ -2,7 +2,10 @@
 
 Supports:
   * .hdi  Anex86 hard disk image (32-byte header, header_size usually 4096)
-  * .hdm / .fdi-less raw 2HD floppy (1024-byte sectors, FAT12 at offset 0)
+  * .hdm / .fdi-less raw 2HD floppy (1024-byte sectors, FAT12 at offset 0);
+    a self-booting one whose boot sector holds no BPB (Elf's own system
+    disks) is read with the standard 2HD layout when its FAT starts with
+    the 2HD media byte (FE FF FF in sector 1)
 
 The FAT layer can list, read, replace (grow or shrink) and add files, so a
 patcher can write translated data straight back into a copy of the image.
@@ -10,11 +13,15 @@ patcher can write translated data straight back into a copy of the image.
 import struct
 
 
+# the standard 2HD floppy's BPB fields (bytes 11-35 of a boot sector)
+BPB_2HD = struct.pack("<HBHBHHBHHHII", 1024, 1, 1, 2, 192, 1232, 0xFE, 2, 8, 2, 0, 0)
+
+
 class FatVolume:
-    def __init__(self, buf, base):
+    def __init__(self, buf, base, bpb=None):
         self.buf = buf            # bytearray of the whole image
         self.base = base          # byte offset of the FAT boot sector
-        b = bytes(buf[base:base + 64])
+        b = bytes(buf[base:base + 64]) if bpb is None else bytes(11) + bpb
         (self.bps, self.spc, self.reserved, self.nfats, self.root_entries,
          total16, self.media, self.fat_sectors, _spt, _heads, _hidden,
          total32) = struct.unpack_from("<HBHBHHBHHHII", b, 11)
@@ -126,12 +133,13 @@ class FatVolume:
             data += self.buf[o:o + self.cluster_size]
         return bytes(data[:ent["size"]])
 
-    def create(self, path, data):
-        """Create (or overwrite) a file with an 8.3 name in an existing directory."""
+    def create(self, path, data, contiguous=False):
+        """Create (or overwrite) a file with an 8.3 name in an existing directory (`contiguous`: in
+        one run of clusters, `write_run`)."""
         parts = [p for p in path.replace("\\", "/").split("/") if p]
         try:
             self.find(path)
-            return self.write(path, data)
+            return self.write_run(path, data) if contiguous else self.write(path, data)
         except FileNotFoundError:
             pass
         name, _, ext = parts[-1].upper().partition(".")
@@ -152,7 +160,10 @@ class FatVolume:
         entry[0:11] = name.encode("cp932").ljust(8) + ext.encode("cp932").ljust(3)
         entry[11] = 0x20  # archive
         self.buf[slot:slot + 32] = entry
-        self.write(path, data)
+        if contiguous:
+            self.write_run(path, data)
+        else:
+            self.write(path, data)
 
     def mkdir(self, path):
         """Create a directory (8.3 name) in an existing directory."""
@@ -184,6 +195,48 @@ class FatVolume:
         for c in (self.chain(ent["cluster"]) if ent["cluster"] else []):
             self._set(c, 0)
         self.buf[ent["entry_off"]] = 0xE5
+
+    def release(self, path):
+        """Free a file's clusters, leaving it empty (to be written again)."""
+        ent = self.find(path)
+        for c in (self.chain(ent["cluster"]) if ent["cluster"] else []):
+            self._set(c, 0)
+        e = ent["entry_off"]
+        struct.pack_into("<H", self.buf, e + 26, 0)
+        struct.pack_into("<I", self.buf, e + 28, 0)
+
+    def write_run(self, path, data):
+        """Replace an existing file's contents in one run of clusters (for a loader that reads a file
+        as consecutive clusters): its own run when that holds it, grown into free clusters after
+        it, else the first free run that holds it."""
+        ent = self.find(path)
+        old = self.chain(ent["cluster"]) if ent["cluster"] else []
+        need = max(1, (len(data) + self.cluster_size - 1) // self.cluster_size)
+        run = None
+        if old and old == list(range(old[0], old[0] + len(old))):
+            ext = [old[0] + k for k in range(len(old), need)]
+            if all(c < self.nclusters + 2 and self._get(c) == 0 for c in ext):
+                run = old[0]
+        for c in old:
+            self._set(c, 0)
+        if run is None:
+            free = 0
+            for c in range(2, self.nclusters + 2):
+                free = free + 1 if self._get(c) == 0 else 0
+                if free == need:
+                    run = c - need + 1
+                    break
+            if run is None:
+                raise IOError("no run of %d free clusters for %s" % (need, path))
+        keep = list(range(run, run + need))
+        for i, c in enumerate(keep):
+            self._set(c, keep[i + 1] if i + 1 < len(keep) else 0xFFF if self.fat12 else 0xFFFF)
+            chunk = data[i * self.cluster_size:(i + 1) * self.cluster_size]
+            o = self._coff(c)
+            self.buf[o:o + self.cluster_size] = chunk.ljust(self.cluster_size, b"\0")
+        e = ent["entry_off"]
+        struct.pack_into("<H", self.buf, e + 26, keep[0])
+        struct.pack_into("<I", self.buf, e + 28, len(data))
 
     def write(self, path, data):
         """Replace an existing file's contents, growing/shrinking its chain."""
@@ -231,6 +284,8 @@ class DiskImage:
             self.header_size = 0
             if self._is_bpb(raw, 0):
                 self.volumes.append(FatVolume(raw, 0))
+            elif len(raw) == 1232 * 1024 and raw[1024:1027] == b"\xfe\xff\xff":
+                self.volumes.append(FatVolume(raw, 0, BPB_2HD))
         if not self.volumes:  # fallback: scan for a boot sector
             for off in range(0, min(len(raw), 8 << 20), 256):
                 if self._is_bpb(raw, off):
@@ -284,7 +339,7 @@ class DiskImage:
         return bps in (256, 512, 1024, 2048) and b[13] in (1, 2, 4, 8, 16, 32, 64) and b[16] in (1, 2)
 
     @staticmethod
-    def _pc98_partitions(raw, hsize, ssize, spt, heads):
+    def _pc98_partitions(raw, hsize, ssize, spt, heads, entries=False):
         pt = hsize + ssize  # partition table lives in sector 1
         starts = []
         for i in range(16):
@@ -294,8 +349,48 @@ class DiskImage:
             s, h, c = e[8], e[9], struct.unpack_from("<H", e, 10)[0]
             off = hsize + ((c * heads + h) * spt + s) * ssize
             if DiskImage._is_bpb(raw, off):
-                starts.append(off)
+                starts.append((pt + i * 32, off) if entries else off)
         return starts
+
+    def grow_volume(self, k=0):
+        """An HDI's FAT volume grown by whole cylinders after its PC-98 partition's end (into the disk's
+        cylinders after it, then cylinders added at the image's end) to as many clusters as its FAT has
+        entries for, so nothing moves; the clusters added are free.  The bytes added."""
+        if self.kind != "hdi":
+            return 0
+        (_r, _t, hsize, _dsize, ssize, spt, heads, cyls) = struct.unpack_from("<8I", self.raw, 0)
+        v = self.volumes[k]
+        entry = [e for e, off in self._pc98_partitions(self.raw, hsize, ssize, spt, heads, True)
+                 if off == v.base][0]
+        end_s, end_h, end_c = self.raw[entry + 12], self.raw[entry + 13], struct.unpack_from("<H", self.raw, entry + 14)[0]
+        cyl_bytes = spt * heads * ssize
+        if end_s or end_h or (cyl_bytes // v.bps) % v.spc or v.base != hsize + \
+                struct.unpack_from("<H", self.raw, entry + 10)[0] * cyl_bytes:
+            return 0           # a partition not on whole cylinders
+        if v.base + v.total_sectors * v.bps != hsize + (end_c + 1) * cyl_bytes:
+            return 0           # (the end cylinder is the partition's last)
+        per_cyl = cyl_bytes // v.bps // v.spc
+        cap = (v.fat_sectors * v.bps * 2 // 3 if v.fat12 else v.fat_sectors * v.bps // 2) - 2
+        if v.fat12:
+            cap = min(cap, 4084)
+        add = (cap - v.nclusters) // per_cyl
+        if add <= 0:
+            return 0
+        need = hsize + (end_c + 1 + add) * cyl_bytes
+        if need > len(self.raw):
+            self.raw += bytes(need - len(self.raw))
+        new_cyls = max(cyls, end_c + 1 + add)
+        struct.pack_into("<I", self.raw, 12, new_cyls * cyl_bytes)
+        struct.pack_into("<I", self.raw, 28, new_cyls)
+        struct.pack_into("<H", self.raw, entry + 14, end_c + add)
+        total = v.total_sectors + add * cyl_bytes // v.bps
+        if total < 0x10000 and struct.unpack_from("<H", self.raw, v.base + 19)[0]:
+            struct.pack_into("<H", self.raw, v.base + 19, total)
+        else:
+            struct.pack_into("<H", self.raw, v.base + 19, 0)
+            struct.pack_into("<I", self.raw, v.base + 32, total)
+        self.volumes[k] = FatVolume(self.raw, v.base)
+        return add * cyl_bytes
 
     def save(self, path):
         open(path, "wb").write(self.raw)

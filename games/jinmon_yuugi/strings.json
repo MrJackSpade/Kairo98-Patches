@@ -46067,6 +46067,468 @@
    "max_cells": 15
   },
   {
+   "id": "t00001",
+   "kind": "file",
+   "jp": "　　　　－企画－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00002",
+   "kind": "file",
+   "jp": "　　　 金杉ハジメ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00003",
+   "kind": "file",
+   "jp": "　　　 中原ゆうき",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00004",
+   "kind": "file",
+   "jp": "－キャラクターデザイン－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:3"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "t00005",
+   "kind": "file",
+   "jp": "　　　　りんしん",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00006",
+   "kind": "file",
+   "jp": "　　（スタジオ旗艦）",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:5"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00007",
+   "kind": "file",
+   "jp": "　 　　－脚本－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:6"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00008",
+   "kind": "file",
+   "jp": "　 　 中原ゆうき",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00009",
+   "kind": "file",
+   "jp": "　 　　－原画－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:8"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00010",
+   "kind": "file",
+   "jp": "　 　　りんしん",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:9"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00011",
+   "kind": "file",
+   "jp": " 　（スタジオ旗艦）",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:10",
+    "TCM/FN_STAFF.DAT:12",
+    "TCM/FN_STAFF.DAT:15"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00012",
+   "kind": "file",
+   "jp": " 　　ふじみやいと",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00013",
+   "kind": "file",
+   "jp": " 　　－絵コンテ－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:13"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00014",
+   "kind": "file",
+   "jp": " 　　ふくもとかん",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:14"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00015",
+   "kind": "file",
+   "jp": "　　　 －音楽－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:16"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00016",
+   "kind": "file",
+   "jp": "       ＭＵＳＥ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:17"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00017",
+   "kind": "file",
+   "jp": "　　 　－着色－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:18"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00018",
+   "kind": "file",
+   "jp": "　　　 松本規之",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:19"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00019",
+   "kind": "file",
+   "jp": "　　　　塩見元",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:20"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00020",
+   "kind": "file",
+   "jp": "       須磨邦雄",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:21"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00021",
+   "kind": "file",
+   "jp": "　　　　あさの",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:22"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00022",
+   "kind": "file",
+   "jp": "　　　　 たま",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:23"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "t00023",
+   "kind": "file",
+   "jp": "   おまけの人’TURBO",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:24"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00024",
+   "kind": "file",
+   "jp": " 小林\"ｾｯｸｽ☆ﾏｽｨｰﾝ\"紀子",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:25"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00025",
+   "kind": "file",
+   "jp": "     高橋まさきち",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:26"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00026",
+   "kind": "file",
+   "jp": "     西城忠治plue",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:27"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00027",
+   "kind": "file",
+   "jp": "　　 －着色監修－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:28"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00028",
+   "kind": "file",
+   "jp": "　　　  塩見元",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:29"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00029",
+   "kind": "file",
+   "jp": " －ゲームプログラム－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:30"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00030",
+   "kind": "file",
+   "jp": " 　 坂井まちゃあき",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:31"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00031",
+   "kind": "file",
+   "jp": "　 －システム監修－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:32"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00032",
+   "kind": "file",
+   "jp": "　　   ＰＩＹＯ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:33"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00033",
+   "kind": "file",
+   "jp": "    －アドワーク－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:34"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00034",
+   "kind": "file",
+   "jp": "   ＳＣＨＥＣＴＥＲ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:35"
+   ],
+   "max_cells": 9
+  },
+  {
+   "id": "t00035",
+   "kind": "file",
+   "jp": "     －デバッグ－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:36"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00036",
+   "kind": "file",
+   "jp": "   伊集院マンマミーヤ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:37"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "t00037",
+   "kind": "file",
+   "jp": "デヴィッド・カウパーデール",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:38"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "t00038",
+   "kind": "file",
+   "jp": " 小林キャンディミルキー",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:39"
+   ],
+   "max_cells": 11
+  },
+  {
+   "id": "t00039",
+   "kind": "file",
+   "jp": "     －制作協力－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:40"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00040",
+   "kind": "file",
+   "jp": "     スタジオ旗艦",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:41"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00041",
+   "kind": "file",
+   "jp": "　　　 澁澤　Ｔ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:42"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00042",
+   "kind": "file",
+   "jp": "       藤井純生",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:43"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00043",
+   "kind": "file",
+   "jp": "       大将三郎",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:44"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00044",
+   "kind": "file",
+   "jp": "       －製作－",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:45"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "t00045",
+   "kind": "file",
+   "jp": "      金杉ハジメ",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:46"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "t00046",
+   "kind": "file",
+   "jp": "（Ｃ）アイデス　１９９５",
+   "en": "",
+   "refs": [
+    "TCM/FN_STAFF.DAT:47"
+   ],
+   "max_cells": 12
+  },
+  {
    "id": "e00001",
    "kind": "engine",
    "jp": "エラー: メモリーが足りません。",
@@ -46075,6 +46537,26 @@
     "YUGI.COM:00ff"
    ],
    "max_cells": 15
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "終了しました。",
+   "en": "",
+   "refs": [
+    "YUGI.COM:0186"
+   ],
+   "max_cells": 7
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "フロッピーをぬいて、電源を切ってください。",
+   "en": "",
+   "refs": [
+    "YUGI.COM:01b6"
+   ],
+   "max_cells": 21
   }
  ]
 }

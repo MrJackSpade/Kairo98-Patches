@@ -1,0 +1,40 @@
+{
+ "title": "Tenshin Ranma",
+ "key": "elf.zip/Tenshin Ranma",
+ "image": "Tenshin Ranma\\Tenshin Ranma [HD]\\Tenshin Ranma.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "game_dir": "TEN",
+ "calls": {
+  "0": {
+   "cells": 0,
+   "note": "a pause in the staff roll"
+  },
+  "16": {
+   "cells": 8,
+   "note": "a party member's name (Takami)"
+  },
+  "17": {
+   "cells": 8,
+   "note": "a party member's name (Yuima)"
+  },
+  "18": {
+   "cells": 8,
+   "note": "a party member's name (Amano)"
+  }
+ },
+ "inserts": {
+  "14": 10,
+  "15": 10
+ },
+ "records": [
+  {
+   "file": "SENTO.COM",
+   "first": 18,
+   "stride": 30,
+   "size": 12,
+   "note": "a monster's name in battle (SENTO.COM, the battle table: 30-byte records, the name field 12 bytes ended by a NUL)"
+  }
+ ],
+ "boot_steps": "25:enter,4:right,2:enter,4:enter,6:enter,4:enter,4:enter,1:enter,1:up,1:up,1:left,1:up,1:up,1:enter,1:down,1:down,1:right,1:up,2:shot,1:enter,1:up,1:up,1:left,1:up,1:up,1:enter,1:down,1:down,1:right,1:up,2:shot,1:enter,1:up,1:up,1:left,1:up,1:up,1:enter,1:down,1:down,1:right,1:up,2:shot"
+}

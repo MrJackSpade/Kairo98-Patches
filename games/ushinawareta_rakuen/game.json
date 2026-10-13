@@ -1,0 +1,24 @@
+{
+ "title": "Ushinawareta Rakuen",
+ "key": "Silkys.zip/Ushinawareta Rakuen",
+ "image": "Ushinawareta Rakuen\\Ushinawareta Rakuen [HD]\\Ushinawareta Rakuen.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "SHIMA98",
+ "archive_format": "silkdat",
+ "archives": [
+  "SILK0.DAT",
+  "SILK1.DAT",
+  "SILK2.DAT",
+  "SILK3.DAT",
+  "SILK4.DAT"
+ ],
+ "calls": {
+  "59": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

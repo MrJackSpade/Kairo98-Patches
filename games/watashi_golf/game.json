@@ -1,0 +1,60 @@
+{
+ "title": "Watashi o Golf ni Tsuretette",
+ "key": "Fairytale.zip/Watashi o Golf ni Tsuretette",
+ "image": "Watashi o Golf ni Tsuretette\\Watashi o Golf ni Tsuretette [FD hd9]\\Watashi o Golf ni Tsuretette (Disk A).d88",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Watashi o Golf ni Tsuretette (Disk B).d88",
+   "Watashi o Golf ni Tsuretette (Disk C).d88"
+  ],
+  "subdirs": true,
+  "skip": [
+   "ADVH_SYS.DOS"
+  ],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ],
+  "unused": {
+   "Watashi o Golf ni Tsuretette (Disk A).d88": [
+    "MES/OPEN0.MES"
+   ]
+  }
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "data_files": [
+  "GOLF/SPEAK.DAT",
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "boot_steps": "40:shot,3:enter,4:shot,1:key=65,1:key=66,2:key=13,3:shot,1:key=65,1:key=66,1:key=67,2:key=13,4:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot,2:right,1:shot,1:enter,2:shot",
+ "program_files": [
+  "GNAME.COM"
+ ],
+ "program_fullwidth": true
+}

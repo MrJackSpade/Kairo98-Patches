@@ -1,0 +1,11 @@
+{
+ "title": "Guynarock R",
+ "key": "Sogna.zip/Guynarock R",
+ "image": "Guynarock R\\Guynarock R [HD]\\Guynarock R.hdi",
+ "encoding": "sgs21",
+ "program": "SGS21.COM",
+ "game_dir": "GRR_21",
+ "boot_fd": "Guynarock R\\Guynarock R [HD]\\Guynarock R (HD Boot disk).hdm",
+ "cd": "Guynarock R\\Guynarock R [CD]\\Guynarock R.ccd",
+ "boot_steps": "20:shot,3:enter,14:shot,1:space,5:shot,2:lclick,6:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot,3:lclick,5:shot"
+}

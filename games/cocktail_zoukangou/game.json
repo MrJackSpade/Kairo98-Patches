@@ -1,0 +1,55 @@
+{
+ "title": "Cocktail Soft Zoukangou",
+ "key": "CocktailSoft.zip/Cocktail Soft Zoukangou",
+ "image": "Cocktail Soft Zoukangou\\Cocktail Soft Zoukangou [FD]\\Cocktail Soft Zoukangou (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "boot_steps": "40:shot,2:enter,3:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Cocktail Soft Zoukangou (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "program_fixes": [
+  {
+   "file": "ADVSHELL.COM",
+   "find": "2ac0e80a0085c07505b001e80100c3",
+   "replace": "31c0909090909090909090909090c3",
+   "why": "ADVSHELL checks drive A's volume label for the game disk's (ｶｸﾃﾙｿﾞｳｶﾝ A); on the hard disk the check is made to report a match"
+  }
+ ],
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true
+}

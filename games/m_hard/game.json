@@ -1,0 +1,9 @@
+{
+ "title": "M Hard",
+ "key": "Aaru.zip/M Hard",
+ "image": "M Hard\\M Hard [HD]\\M Hard.hdi",
+ "encoding": "aaru",
+ "program": "MHARD.EXE",
+ "game_dir": "MHARD",
+ "boot_steps": "25:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}

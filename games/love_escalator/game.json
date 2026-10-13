@@ -1,0 +1,17 @@
+{
+ "title": "Love Escalator",
+ "key": "UmitsukiSeisakusho.zip/Love Escalator",
+ "image": "Love Escalator\\Love Escalator [HD]\\Love Escalator.hdi",
+ "encoding": "eqa",
+ "program": "EQAP32.EXE",
+ "archive": "LOVE.EAR",
+ "game_dir": "LOVE",
+ "window": [
+  10,
+  19,
+  60,
+  4
+ ],
+ "split_var": 10,
+ "boot_steps": "50:shot,1:down,1:shot,1:enter,8:shot,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,1:lclick,8:enter,12:shot,3:enter,1:shot,3:enter,1:shot,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,2:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,2:rclick,3:shot"
+}

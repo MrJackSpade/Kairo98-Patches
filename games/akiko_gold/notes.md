@@ -29,14 +29,15 @@ ides' Adv98V script engine (`GOLD/`), on a hard-disk image: 90 scripts with text
 
 ## Script
 
-11523 strings (11077 messages, 445 menu items, 1 program strings).
+11554 strings (11077 messages, 445 menu items, 29 text file lines, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 11523 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 11554 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
+* Text file lines (`t` ids: `TCM/S_CREDIT.DAT`, shown as they are, e.g. the opening roll): the files hold Shift-JIS only (no half-width letters), so they are written in full-width letters, each line up to `max_cells` letters (its Japanese byte length), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -50,5 +51,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Setup and start menus | OK: questions and menu items as filler at their Japanese width |
 | Opening narration (text typed slowly, several runs a sentence) | OK: runs continue on the page, wrapped between words to the 70-column box; a page of exactly 70 columns draws whole; pages wait for a click (a timed wait used to turn them by itself) |
 | Riding scene messages | OK: filler wrapped to the box |
+| Staff credits (TCM/S_CREDIT.DAT) | not yet seen |
 | In-game menus, save/load, later acts, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

@@ -1,0 +1,24 @@
+{
+ "title": "Jack - Haitoku no Megami",
+ "key": "Silkys.zip/Jack - Haitoku no Megami",
+ "image": "Jack - Haitoku no Megami\\Jack - Haitoku no Megami [HD]\\Jack - Haitoku no Megami.hdi",
+ "encoding": "ai5",
+ "version": "sil2",
+ "program": "SIL.EXE",
+ "game_dir": "JACK",
+ "archive_format": "silkdisk",
+ "archives": [
+  "DISK_A",
+  "DISK_B",
+  "DISK_C",
+  "DISK_D",
+  "DISK_E"
+ ],
+ "calls": {
+  "0": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

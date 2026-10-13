@@ -1006,7 +1006,8 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-03 ('Yumeji' 'Asakusa Kitan' PC-98 English translation): no English translation found (YouTube, LaunchBox only)"
   ]
  },
  "FairytaleRed-zone.zip/Kanako": {
@@ -1016,7 +1017,8 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Kanako' Fairytale PC-98 English translation patch): no English patch found; My Abandonware's 'English version' flag is unreliable (as for Can Can Bunny Premiere/Spirits and Custom Mate 3); VNDB and the team pages list none"
   ]
  },
  "GameTechnopolis.zip/Dennou Tenshi - Digital Ange": {
@@ -1026,7 +1028,8 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Dennou Tenshi' 'Digital Angel' PC-98 English translation): no English translation found (MobyGames, Internet Archive manual and scans, PC Engine listings only)"
   ]
  },
  "Tomboy.zip/Night Walker - Mayonaka no Tantei": {
@@ -1036,7 +1039,8 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Night Walker' 'Mayonaka no Tantei' PC-98 English translation): no English translation of the game found (the anime's English release only)"
   ]
  },
  "CatsPro.zip/Cat's Part 1": {
@@ -1046,7 +1050,8 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Cat's Part 1' PC-98 English translation): no English translation found (GameFAQs, UVList (Japanese only), Sumthings)"
   ]
  },
  "CocktailSoft.zip/Can Can Bunny Limited 5 1-2": {
@@ -1056,7 +1061,1925 @@
    "VNDB API 2026-10-03: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Can Can Bunny Limited' PC-98 English translation): no English patch found; My Abandonware's 'English version' flag is unreliable (as for Premiere, Spirits, Custom Mate 3); VNDB and the team pages list none"
+  ]
+ },
+ "CocktailSoft.zip/Custom Mate": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Custom Mate' Cocktail Soft PC-98 English translation): no English patch found; My Abandonware's 'English version' flag is unreliable (as for Custom Mate 3 and the Can Can Bunny titles); VNDB and the team pages list none"
+  ]
+ },
+ "CocktailSoft.zip/Dora Dora Emotion - Seihaiden": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Dora Dora Emotion' Seihaiden PC-98 English translation): no English translation found (Internet Archive, GameFAQs, LaunchBox synopsis only)"
+  ]
+ },
+ "CocktailSoft.zip/True Heart": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('True Heart' PC-98 Cocktail Soft English translation): no English translation found (Internet Archive (Japanese), MobyGames, Anivisual collection)"
+  ]
+ },
+ "Fairytale.zip/Marine Philt": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: English releases: Marine Philt (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Marine Philt' PC-98 English translation): no PC-98 English patch found (machine-translated playthrough videos, a Junker HQ thread on editing the text); the English release VNDB lists is for Windows"
+  ]
+ },
+ "FairytaleRed-zone.zip/Manami - Ai to Koukan no Hibi": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Manami' 'Ai to Koukan no Hibi' PC-98 English translation): no English translation found (PC-98 game lists only)"
+  ]
+ },
+ "Fairytale.zip/Lipstick Adventure 3": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Lipstick Adventure 3' PC-98 English translation): no English patch found; My Abandonware's 'English version' flags (its X68000 download, and the first game's PC-98 one) are the site's unreliable language flags; VNDB and the team pages list none"
+  ]
+ },
+ "Fairytale.zip/XIX!": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('XIX!' PC-98 English translation): no English translation found"
+  ]
+ },
+ "GameTechnopolis.zip/Himitsu no Hanazono": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Himitsu no Hanazono' PC-98 English translation): no English translation found (MobyGames, GameFAQs, a playthrough video)"
+  ]
+ },
+ "GameTechnopolis.zip/Kimi Dake ni Ai o": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search 2026-10-07 ('Kimi Dake ni Ai'): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Kimi Dake ni Ai o' PC-98 English translation): no English patch found; My Abandonware's 'English version' flag is unreliable (as for earlier titles); VNDB and the team pages list none"
+  ]
+ },
+ "CocktailSoft.zip/Bishoujo Tsuushin - Chat no Susume": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Bishoujo Tsuushin' 'Chat no Susume' PC-98 English translation): no English translation found (only other games' patches)"
+  ]
+ },
+ "CocktailSoft.zip/Custom Mate 2": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Custom Mate 2' PC-98 English translation): no English patch found (a 2010 Tokugawa forum translation request unanswered); My Abandonware's 'English version' flag is unreliable (as for Custom Mate and Custom Mate 3); VNDB and the team pages list none"
+  ]
+ },
+ "CocktailSoft.zip/Dengeki Nurse 2 - More Sexy": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Dengeki Nurse 2' PC-98 English translation; the first game's translator jackdbs/WINEReleasing): no translation of the sequel found or announced (the first game has a PC-98 English patch by jackdbs and Fakku's Steam release; for this one only a soundtrack upload by the same person); My Abandonware's 'English version' flag is unreliable"
+  ]
+ },
+ "CocktailSoft.zip/Halfmoon ni Kawaru made": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Halfmoon ni Kawaru made' PC-98 English translation): no English translation found (LaunchBox, Lutris, game lists)"
+  ]
+ },
+ "CocktailSoft.zip/Noushuku Angel 120% (U-Jin Presents)": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Noushuku Angel 120%' PC-98 English translation): no English translation found (only the soundtrack's track titles translated on VGMRips)"
+  ]
+ },
+ "FairytaleRed-zone.zip/Toumei Ningen": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Toumei Ningen' PC-98 English translation): no English translation found (pc98.org lists 'Toumei Ningen Arawaru' without a patch; music rips only)"
+  ]
+ },
+ "FairytaleXShitei.zip/Dragon City X Shitei": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Dragon City X Shitei' PC-98 English translation): no English translation found (GameFAQs, Generation MSX title translation only)"
+  ]
+ },
+ "FairytaleXShitei.zip/Kounai Shasei": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-07 ('Kounai Shasei' PC-98 English translation): no English translation found (TCRF, GameFAQs only)"
+  ]
+ },
+ "GameTechnopolis.zip/Hatsukoi Monogatari": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches, and RUNE's unrelated 2002 Windows Hatsukoi)"
+  ]
+ },
+ "SantaFe.zip/Bishoujo Audition - Idol o Sagase!": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other games' patches)"
+  ]
+ },
+ "CocktailSoft.zip/Kurukuru Party - Princess Quest": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (a news item says FAKKU plans English Steam releases of Fairytale's PC-98 catalog: not a PC-98 release, nothing announced for this title)"
+  ]
+ },
+ "CocktailSoftFmc.zip/Glass no Destiny": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches)"
+  ]
+ },
+ "DynamicPro.zip/Kekkou Kamen 2 - Oshioki Densetsu no Maki": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches and the live-action film)"
+  ]
+ },
+ "FairytaleRed-zone.zip/Himitsu Shirei 1919": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches)"
+  ]
+ },
+ "Ides.zip/Ides User's Club Disk Magazine #003": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were general disk magazine pages)"
+  ]
+ },
+ "Ides.zip/Ides User's Club Disk Magazine #004": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were general disk magazine pages)"
+  ]
+ },
+ "SantaFe.zip/101 Kaime no Approach Shot": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (the game is listed in PC-98 catalogues; translation results were other games)"
+  ]
+ },
+ "ASCII.zip/LOGiN Disk & Book Series - Hokkaido Rensa Satsujin - Okhotsk ni Kiyu 98": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found; a 2024 remake for Switch and Steam (of the Famicom version) has English: other platform, linked"
+  ]
+ },
+ "CocktailSoft.zip/Cocktail Soft Zoukangou": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results: FAKKU's planned English releases of the Fairytale/Cocktail Soft catalogue on Steam, Dengeki Nurse's announced; nothing for this title)"
+  ]
+ },
+ "CocktailSoft.zip/Cocktail Soft Zoukangou 2": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results: FAKKU's planned English releases of the Fairytale/Cocktail Soft catalogue on Steam; nothing for this title)"
+  ]
+ },
+ "CocktailSoft.zip/Erotic Baka Novel - Denwa no Bell ga": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches and unrelated novels)"
+  ]
+ },
+ "CocktailSoft.zip/Erotic Baka Novel Series 2 - Itsuka Dokoka de": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 titles)"
+  ]
+ },
+ "CocktailSoft.zip/JYB": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results: FAKKU's planned English releases of the Fairytale/Cocktail Soft catalogue; nothing for this title)"
+  ]
+ },
+ "CocktailSoft.zip/Kerakeraboshi": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches)"
+  ]
+ },
+ "DynamicPro.zip/Kekkou Kamen - Oshioki Paradise no Maki": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were the live-action films and other PC-98 patches)"
+  ]
+ },
+ "Fairytale.zip/Fairytale Kaizokuban": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found (FAKKU has bought Fairytale's catalogue for Steam releases; none of this title so far)"
+  ]
+ },
+ "Fairytale.zip/Gokuraku Mandara": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other PC-98 patches)"
+  ]
+ },
+ "Fairytale.zip/Lam-Mal": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were other games' patches)"
+  ]
+ },
+ "Fairytale.zip/Mai": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): Pure-Peace/mailService; brudfors/maisi-mr-to-ct; VermilionFateburn/Battle-Maid-Redux; megabitsenmzq/Main-Menu-Translator; MateusNobreSilva/app_send_mail",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results: FAKKU's planned English releases of the Fairytale catalogue and other Fairytale games; nothing for this title)"
+  ]
+ },
+ "Fairytale.zip/Watashi o Golf ni Tsuretette": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no English translation or announcement found"
+  ]
+ },
+ "FairytaleRed-zone.zip/U-Jin Special Collection (Kounai Shasei re-release)": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were general PC-98 pages)"
+  ]
+ },
+ "GameTechnopolis.zip/Tessera (IV)": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results: FAKKU's planned English releases of the Fairytale catalogue and translations of other Fairytale games; nothing for this title)"
+  ]
+ },
+ "Ides.zip/Ides User's Club Disk Magazine #001": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (searches for Ides User's Club disk magazines found only general disk magazine pages)"
+  ]
+ },
+ "Ides.zip/Ides User's Club Disk Magazine #002": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (searches for Ides User's Club disk magazines found only general disk magazine pages)"
+  ]
+ },
+ "SantaFe.zip/Disk Bishoujo Daizukan": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (results were general PC-98 game lists)"
+  ]
+ },
+ "SantaFe.zip/Disk Bishoujo Daizukan '91": {
+  "checked": "2026-10-07",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-07: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation found (searches for Disk Bishoujo Daizukan found only general PC-98 game lists)"
+  ]
+ },
+ "elf.zip/Dragon Knight III": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Knights of Xentar - CD Edition (dos); Knights of Xentar - FD Edition (dos); Knights of Xentar - Demo (dos); Knights of Xentar - NR-18 Upgrade (dos)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found (the English release is the DOS localization Knights of Xentar, a rewritten script)"
+  ]
+ },
+ "elf.zip/Doukyuusei 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Dōkyūsei 2: Winter Heat (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found"
+  ]
+ },
+ "elf.zip/Isaku": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Isaku Elf PC-98 English translation patch): nothing for Isaku (other PC-98 patches only)"
+  ]
+ },
+ "elf.zip/Kakyuusei": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Kakyuusei Elf PC-98 English translation patch): no English patch; VNDB's release list has a Korean fan translation (Parangsae Team) and a 2025 remake, neither English for PC-98"
+  ]
+ },
+ "elf.zip/De-Ja": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): DeepL/deepl-java; myomi/jbpm4-developersguide-ja-translation; potappo/moz-devnews-ja; metinilgar/desktop-translation-app-deepl-javafx; DeeJay429/AI-VideoTranslator-by-DeeJay",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found",
+   "web search (title + English translation, PC-98): web search 2026-10-10 ('De-Ja Elf 1990 PC-98 English translation patch'): no English patch found (results: Dragon Knight's MTL patch, Slayers, Madou Monogatari, EVE Burst Error; none for De-Ja)"
+  ]
+ },
+ "elf.zip/Shangrlia": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: LISTED as shangrlia2 only (the sequel, Shangrlia 2); settled by hand: the first game is not translated",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found (the fan translation by BabaJeanmel and Alpharobo is of the sequel, Shangrlia 2)"
+  ]
+ },
+ "PioneerLdc.zip/El-Hazard - The Magnificent World": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: English releases: Shinpi no Sekai El-Hazard (win); Shinpi no Sekai El-Hazard (gba)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found"
+  ]
+ },
+ "elf.zip/Metal Eye": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 English translation or announcement found"
+  ]
+ },
+ "elf.zip/Doki Doki Shutter Chance": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + elf PC-98 English translation patch): no English translation or announcement found (only an unrelated 1997 PlayStation title of the same name)"
+  ]
+ },
+ "elf.zip/Metal Eye 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + elf PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Premium": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): MerelyServices/Merely-Framework; deepaksabat/JobFair; kirby-tools/kirby.tools; endhvh/ze_premium; extiverse/premium-translations",
+   "web search (title + English translation, PC-98): web search (Silky's Premium PC-98 English translation patch): nothing for Premium (other PC-98 patches only)"
+  ]
+ },
+ "elf.zip/Tenshin Ranma": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + elf PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "elf.zip/Foxy 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Foxy 2 Elf PC-98 English translation): nothing for Foxy 2 (other PC-98 patches only)"
+  ]
+ },
+ "elf.zip/De-Ja II": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + elf PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Be-Yond": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: v1973 (Be-Yond ~Kurodaishou ni Mirareteru~, the PC-98 release r3876) has no English release (the earlier title search matched an unrelated VN)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-09 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Nonomura Byouin no Hitobito": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + English translation PC-98): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Kawarazakike no Ichizoku": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + PC-98 English translation patch): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Ai Shimai - Futari no kajitsu": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + English translation): only the OVA's English title (Immoral Sisters); no English translation of the game or announcement found; VNDB v1836 has no English release"
+  ]
+ },
+ "Silkys.zip/Ushinawareta Rakuen": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Reira": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation patch): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Fermion": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Jack - Haitoku no Megami": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): jackboxpt/JackboxPartyPack-Localization; JackboxUtility/JackboxUtility; Nriver/jackett-translation; ziyao233/lets_build_a_compiler_zh; OnoMichio/Yakuza6BlueJacketDemoTranslation",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Crescent": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Mobius Roid": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Silkys.zip/Valentine Kiss - Birth Days 2": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 (title + Silky's PC-98 English translation): no English translation or announcement found"
+  ]
+ },
+ "Mediax.zip/PP Disk No. 03": {
+  "checked": "2026-10-09",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-09: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-10 ('\"PP Disk\" Mediax PC-98 English translation patch'): no English patch found (results are other PC-98 fan translations: Slayers, Madou Monogatari, rusty; none for PP Disk)"
+  ]
+ },
+ "DO.zip/DOR Part 2": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: English releases: DOR - Package Edition (win); DOR - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for DOR / D.O. (other PC-98 patches only: EVE Burst Error, Madou Monogatari, Slayers)"
+  ]
+ },
+ "DO.zip/DOR Part 1": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: English releases: DOR - Package Edition (win); DOR - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 patch; G-Collections' 2002 Windows DOR (English) only"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: English releases: DOR - Package Edition (win); DOR - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): no PC-98 patch; the story is in G-Collections' 2002 Windows DOR (English)"
+  ]
+ },
+ "DO.zip/Zatsuon Ryouiki": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for Zatsuon Ryouiki / 雑音領域 (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Cybernoid Alpha": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for Cybernoid Alpha / サイバノイド アルファ (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/DOR Part 3": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for DOR Part 3 (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for Cybernoid Alpha / サイバノイド アルファ (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/DOR Special Edition Sakigake": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for DOR Special Edition Sakigake (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Hoshi no Suna Monogatari 2": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for Hoshi no Suna Monogatari 2 / 星の砂物語2 (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/DOR Special Edition '93": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for DOR Special Edition '93 (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Collector D Bangaihen": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for Collector D Bangaihen (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Arquelphos": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for Arquelphos (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Collector D": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for Collector D (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Crystal Rinal": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Crystal Rinal + English translation, PC-98): nothing (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 3": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (unrelated results only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 4": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 5": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 6": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 7": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 8": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (unrelated results only)"
+  ]
+ },
+ "DO.zip/D.O. Doki Doki Disk Vol. 9": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing for D.O. Doki Doki Disk (unrelated results only)"
+  ]
+ },
+ "DO.zip/D.O. Kaizokuban": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): nothing for D.O. Kaizokuban / DO海賊版 (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Moonlight Chan Rin Shan": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (title + English translation, PC-98): nothing (a LaunchBox entry for the Japanese release only)"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Crystal Rinal / Yuu Disk + English translation, PC-98): nothing (other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Moonlight Chan Rin Shan + English translation, PC-98): nothing (a LaunchBox entry for the Japanese release only)"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 9 - Arquelphos Gekitou-hen": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Arquelphos + English translation, PC-98): nothing (other PC-98 patches only)"
+  ]
+ },
+ "PantherSoftware.zip/Hamlet": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: English releases: Paper Shakespeare: Very Naked Hamlet (win, lin)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): prateekiiest/Code-Sleep-Python; jkliptonia/hamlet; AdamBlumMusic/Hamlet; deepshikhabhati/Hamlet-translation; caldwecr/hamlet",
+   "web search (title + English translation, PC-98): web search (Hamlet Panther Software PC-98 English translation patch): nothing for Hamlet (other PC-98 patches only)"
+  ]
+ },
+ "PantherSoftware.zip/Lesser Mern": {
+  "checked": "2026-10-10",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-10: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search (Lesser Mern PC-98 English translation patch): nothing for Lesser Mern (other PC-98 patches only)"
+  ]
+ },
+ "ZyX.zip/Ikazuchi no Senshi Raidy 2": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Lightning Warrior Raidy II: Temple of Desire - Package Edition (win); Lightning Warrior Raidy II: Temple of Desire - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Raidy 2\" PC-98 English translation patch'): no English patch for Raidy 2 (the first game, Lightning Warrior Raidy, has a PC-98 patch porting G-Collections' Windows translation: retrogametalk.com/repo/pc-98/lightning-warrior-raidy-english-patched/; other results unrelated)"
+  ]
+ },
+ "Apricot.zip/Mugen Yasoukyoku": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Nocturnal Illusion (win); Milky House Memorial Collection (win); Nocturnal Illusion Renewal (win, lin, mac, oth); JAST USA Memorial Collection Special Edition (win); Nocturnal Illusion (web); Nocturnal Illusion Renewal (web); Nocturnal Illusion Censorship-patch 1.1 (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (no project or patch for the title; other PC-98 patches only)"
+  ]
+ },
+ "DO.zip/Youjuu Senki - A.D. 2048": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Pretty Soldier Wars A.D. 2048 - Package Edition (win); Pretty Soldier Wars A.D. 2048 - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: no English translation found"
+  ]
+ },
+ "Scoop.zip/Immoral Study Scenario 1 - Shirakawa Reiko": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Immoral Study Scenario 1: Reiko Shirakawa (win); Immoral Study Scenario 1: Shirakawa Reiko (web); Immoral Study #1: Reiko Shirakawa - Fan Remaster (win, lin, mac, and); Immoral Study #1: Reiko Shirakawa - Original (win, lin)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Immoral Study\" Scoop PC-98 English translation patch'): no PC-98 translation; scenarios 1 and 2 had an English release for Windows (Himeya Soft), scenario 3 none (en.everybodywiki.com/Immoral_Study)"
+  ]
+ },
+ "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Immoral Study Scenario 2: Yuka Ijima (win); Immoral Study Scenario 2: Iijima Yuka (web); Immoral Study Scenario 2: Yuka Ijima - Fan Remaster (win, lin, and); Immoral Study Scenario 2: Yuka Ijima - Original (win, lin, and)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Immoral Study\" Scoop PC-98 English translation patch'): no PC-98 translation; scenarios 1 and 2 had an English release for Windows (Himeya Soft), scenario 3 none (en.everybodywiki.com/Immoral_Study)"
+  ]
+ },
+ "ZyX.zip/Ring Out!!": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Pro Lesring: Ring Out!! (win); Ring Out!! (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Ring Out!!\" ZyX PC-98 English translation patch'): no English patch found (results: Lightning Warrior Raidy's patch, Madou Monogatari, EVE Burst Error)"
+  ]
+ },
+ "Foster.zip/Koko wa Rakuensou": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Paradise Heights (win); Koko wa Rakuen-sou (web); Paradise Heights GB (gbc)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Koko wa Rakuensou\" English translation patch PC-98'): no translation of either Koko wa Rakuensou game (results about other PC-98 fan translations only)"
+  ]
+ },
+ "Foster.zip/Koko wa Rakuensou 2": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Return to Paradise Heights (win); Koko wa Rakuen-sou 2 (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Koko wa Rakuensou\" English translation patch PC-98'): no translation of either Koko wa Rakuensou game (results about other PC-98 fan translations only)"
+  ]
+ },
+ "CsWare.zip/Gloria - Kindan no Ketsuzoku": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Gloria (win); Glo-ri-a ~Kindan no Ketsuzoku~ (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): vw5hwbngy4-debug/gloria-union-english"
+  ]
+ },
+ "Foster.zip/Time Stripper Mako-chan": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Timestripper (win); Time Stripper Mako-chan (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Time Stripper Mako-chan\" English translation patch'): no translation of the game (results about other titles' patches only)"
+  ]
+ },
+ "DO.zip/Yuu Disk Vol. 3 - Kanako-san no Yuuutsu": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: DOR - Package Edition (win); DOR - Download Edition (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Yuu Disk\" \"Kanako-san no Yuuutsu\" English translation PC-98'): nothing for this title (results: YU-NO, DISK-Y)"
+  ]
+ },
+ "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Immoral Study Scenario 3: Asakura Manami (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Immoral Study\" Scoop PC-98 English translation patch'): no PC-98 translation; scenarios 1 and 2 had an English release for Windows (Himeya Soft), scenario 3 none (en.everybodywiki.com/Immoral_Study)"
+  ]
+ },
+ "U-meSoft.zip/Yumemizaka": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: no English translation found"
+  ]
+ },
+ "FourNine.zip/Waku Waku Mahjong Panic! - Shikigami Denshou": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Legend of Fairies (win, mac); Legends of Fairies & Fairy Nights - Download Edition (win, mac)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-13: web search for an English patch of Waku Waku Mahjong Panic! Shikigami Denshou: none found"
+  ]
+ },
+ "FourNine.zip/Waku Waku Mahjong Panic! 2 - Kokushi Musou": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Fairy Nights (win, mac); Legends of Fairies & Fairy Nights - Download Edition (win, mac)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-13: web search for an English patch of Waku Waku Mahjong Panic! 2 - Kokushi Musou: none found"
+  ]
+ },
+ "Sogna.zip/Viper V6": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (VNDB v8326 releases page and LaunchBox entry only; no patch or project)"
+  ]
+ },
+ "Sogna.zip/Viper V6 RS": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (VNDB v8326 releases page and LaunchBox entry only; no patch or project)"
+  ]
+ },
+ "Starcraft.zip/Mystery House": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Mystery House (oth); Mystery House (ios); Mystery House - Taken Over (win, lin, mac, ios, and, web); Mystery House (oth)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
    "GitHub search (title + translation): nothing"
+  ]
+ },
+ "LoveGun.zip/Ace of Spades": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Ace of Spades (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Sogna.zip/Viper V8": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (MobyGames Sogna listing only; no patch or project)"
+  ]
+ },
+ "Sogna.zip/Viper V8 RS": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (MobyGames Sogna listing only; no patch or project)"
+  ]
+ },
+ "Active.zip/Angel Halo": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (a Lutris listing of the game; other titles' PC-98 patches only)"
+  ]
+ },
+ "HudsonSoft.zip/Salad no Kuni no Tomato-hime": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Princess Tomato in the Salad Kingdom (nes); Princess Tomato in the Salad Kingdom (nes)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Sogna.zip/Viper F-40": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): 2026-10-12: no English translation found (MobyGames lists Viper F40; no fan patch for any platform)"
+  ]
+ },
+ "Sogna.zip/Viper V12": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (MobyGames listing only; no patch or project)"
+  ]
+ },
+ "AbogadoPowers.zip/Kuro no Danshou - The Literary Fragment": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Sogna.zip/Viper V10": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (VNDB v8325 releases page and MobyGames only; no patch or project)"
+  ]
+ },
+ "Sogna.zip/Viper V10 RS": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (VNDB v8325 releases page and MobyGames only; no patch or project)"
+  ]
+ },
+ "Ail.zip/Kyouhaku": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "BirdySoft.zip/Cal": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): bookfere/Ebook-Translator-Calibre-Plugin; CalsiBotDev/CalsiBot; hsalis/Ribosome-Binding-Site-Calculator-v1.0; jhu-lcsr/handeye_calib_camodocal; kovidgoyal/calibre-translations"
+  ]
+ },
+ "BirdySoft.zip/Cal II": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): ProfessorBattlesword/Calculus_II"
+  ]
+ },
+ "BirdySoft.zip/Pal - Wonder Trip! Chizuru": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): jordibruin/posturepal-localization; GalileoFe/PalWorld-Save-Movement-Complete-Tutorio; PalabraAI/palabra-ai-python; cimentadaj/randomization-JPAL; PalabraAI/palabra-ai-javascript"
+  ]
+ },
+ "Silkys.zip/Koihime - Mystic Princess": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-13: searched '\"Koihime\" Silky's 1995 恋姫 PC-98 English translation patch': no PC-98 translation found or announced"
+  ]
+ },
+ "Active.zip/if": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): iflytek/iFly-Skills; buildingSMART/IFC-translations; codezero-be/laravel-unique-translation; jan-oxymoron/project-hospital-translations; joomla/core-translations",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Active.zip/if 2": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Active.zip/if 3": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nabilnbgh/IF3260-Grafika-Komputer-Translation; richardshe/Translational-fidelity-screens-reveal-eIF3-as-a-key-regulator-of-start-codon-selectivity; 7lmiq/copyright2",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Mink.zip/Mashou no Kao": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: web search 'Mashou no Kao Mink PC-98 English translation patch': no English release or announced translation found (results only other PC-98 patches)"
+  ]
+ },
+ "Starcraft.zip/Wizard and the Princess": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Wizard and the Princess (oth); Wizard and the Princess (web); Adventure in Serenia (web)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "May-beSoftTruse.zip/Doop": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): arashackdev/doopl",
+   "web search (title + English translation, PC-98): 2026-10-12: web search 'Doop MBS Truse PC-98 1997 English translation patch': no English release or announced translation found (results only other PC-98 patches)"
+  ]
+ },
+ "TeSoft.zip/Psy-O-Blade": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Psy-O-Blade (smd)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Melody.zip/Kurayami": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: In Darkness (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Aaru.zip/Rose Blood - Chi no Kawaki": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Enix.zip/Misty Blue": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "FamilySoft.zip/Dies Irae": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Ail.zip/Majogari no Yoru ni": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' patches only; no patch or project)"
+  ]
+ },
+ "doujinHomebrew.zip/Virgin Angel": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Custom.zip/Star Platinum": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Star Platinum - Menu Patch (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "MicroCabin.zip/Maison Ikkoku - Omoide no Photograph": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Maison Ikkoku (pce)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Mink.zip/Dangel": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "doujinHomebrew.zip/Mayumi": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Foster.zip/Hana no Kioku": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Hana no Kioku\" Foster PC-98 English translation'): no translation of either Hana no Kioku game (results about other PC-98 translations and a database page)"
+  ]
+ },
+ "May-beSoft.zip/Escape!": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): ali-rantakari/ANSIEscapeHelper; hypermegacrash/MMTextGadget; timperrett/sbt-native2ascii-plugin; arthens/safe-translations; lostRSEs/escape-room"
+  ]
+ },
+ "AbogadoPowers.zip/Es no Houteishiki": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Foster.zip/Hana no Kioku Dai-2-shou": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer",
+   "web search (title + English translation, PC-98): web search 2026-10-12 ('\"Hana no Kioku\" Foster PC-98 English translation'): no translation of either Hana no Kioku game (results about other PC-98 translations and a database page)"
+  ]
+ },
+ "HimeyaSoft.zip/Zenith": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): M1CTIAN/Zenith; Hans5958/Zenith-MIDI-i18n; angelliambo/zenithnexus-translation-system; kaizo-x/zenith-run"
+  ]
+ },
+ "Sogna.zip/Guynarock R": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: no English translation found"
+  ]
+ },
+ "UmitsukiSeisakusho.zip/Love Escalator": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): edouardlicn123/Love-escalator-translation-tool",
+   "web search (title + English translation, PC-98): 2026-10-12: searched '\"Love Escalator\" ラブエスカレーター 海月製作所 PC-98 English translation': no PC-98 translation found or announced"
+  ]
+ },
+ "Aaru.zip/M Hard": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): ChaiBapchya/mxnet-hardmax_machine_translation",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (other titles' PC-98 patches only; no patch or project)"
+  ]
+ },
+ "Ail.zip/Inma Seifukugari": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (no patch or project)"
+  ]
+ },
+ "Aypio.zip/Sex": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): Globik/sex_for_many; rqguan/humansexmap; Aventus1/sexology-library; ManuelRP15/Sextant; ajeetgupta7/Krakencoder-Multimodal-Connectome-Translation-Sex-Classification-Modeling"
+  ]
+ },
+ "CocktailSoft.zip/Can Can Bunny": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "HimeyaSoft.zip/Bacta": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "HimeyaSoft.zip/Bacta 1&2 + Voice": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "TechnoGrard.zip/Minimum Guynarock": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search: no answer"
+  ]
+ },
+ "ZyX.zip/Twilight Hotel": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): web search 2026-10-11 ('\"Twilight Hotel\" ZyX PC-98 English translation'): no English release or patch (Wikipedia's ZyX list gives no English title for it)"
+  ]
+ },
+ "Aypio.zip/Sex 2": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Custom.zip/Teen": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): grrrr/hvcc_teensy; dsopas/emoji-translator; kflynn/teensyPS2toUSB; timothyhollabaugh/ArcadeMachineTeensyKeyboardEmulator; chippolot/teenslator"
+  ]
+ },
+ "DO.zip/Branmarker": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "UmitsukiSeisakusho.zip/Rookies": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): RufatTech/spitfire-translations; aghangri/spitfire-translations; Murdrek/NBA_rookie_longevity_prediction",
+   "web search (title + English translation, PC-98): 2026-10-12: searched 'Rookies 海月製作所 PC-98 English translation patch': no PC-98 translation found or announced"
+  ]
+ },
+ "BlackPackage.zip/Miwaku no Chousho": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "CocktailSoft.zip/Hare Nochi Oosawagi!": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-13: web search ('Hare Nochi Oosawagi' PC-98 English translation patch): no English translation found (results only for other PC-98 titles: EVE Burst Error, Madou Monogatari, Ys)"
+  ]
+ },
+ "FourNine.zip/Gaogao! 3rd - Wild Force": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-13: web search for an English patch of Gaogao! 3rd - Wild Force: none found (only other PC-98 patches)"
+  ]
+ },
+ "HimeyaSoft.zip/De.FaNa": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "Leaf.zip/DR^2 Night Janki": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing"
+  ]
+ },
+ "May-beSoft.zip/Coming Heart": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: web search '\"Coming Heart\" PC-98 MBS Truse English translation': no English release or announced translation found (results only other PC-98 games)"
+  ]
+ },
+ "Sogna.zip/Animahjong X": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: nothing (Wikipedia PC-98 list and Lutris entry only; no patch or project)"
+  ]
+ },
+ "SpaceProject.zip/Tenkousei": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: English releases: Tenkousei (win)",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: web search 'Tenkousei PC-98 Space Project 1995 English translation patch': no English release or announced translation found (results only other PC-98 patches)"
+  ]
+ },
+ "U-meSoft.zip/Hiiragizaka no Kyuukan": {
+  "checked": "2026-10-11",
+  "result": "clear",
+  "sources": [
+   "VNDB API 2026-10-11: no English release on any platform",
+   "https://baba-jpc.neocities.org/translations/translations: not listed",
+   "https://alpharobo.neocities.org/: not listed",
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-12: no English translation found"
   ]
  }
 }

@@ -11,5 +11,9 @@
  "var_cols": {
   "3": 19
  },
- "boot_steps": "30:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot"
+ "boot_steps": "30:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot,2:lclick,2:shot",
+ "text_files": [
+  "MES/STAFF.TXT"
+ ],
+ "text_fullwidth": true
 }

@@ -5,5 +5,17 @@
  "encoding": "adv98v",
  "game_dir": "TRAVELJ",
  "extraop": true,
- "boot_steps": "30:shot"
+ "boot_steps": "30:shot",
+ "text_files": [
+  "DAT/END1.DAT"
+ ],
+ "table_files": [
+  "DAT/RESTART.DAT",
+  "DAT/TJLH.DAT"
+ ],
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "table_fullwidth": true
 }

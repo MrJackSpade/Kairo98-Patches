@@ -1,0 +1,15 @@
+{
+ "title": "Shangrlia",
+ "key": "elf.zip/Shangrlia",
+ "image": "Shangrlia\\Shangrlia [HD]\\Shangrlia.hdi",
+ "encoding": "ai5",
+ "version": "ai4",
+ "game_dir": "SYAN",
+ "calls": {
+  "0": {
+   "cells": 0,
+   "note": "a pause in the staff roll"
+  }
+ },
+ "boot_steps": "35:shot,3:enter,6:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

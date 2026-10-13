@@ -29,9 +29,9 @@ ides' Adv98V script engine (`CHIEMI/`), on a hard-disk image: 207 scripts with t
 
 ## Script
 
-6086 strings (5812 messages, 272 menu items, 1 string variable values, 1 program strings).
+6088 strings (5812 messages, 272 menu items, 1 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6086 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6088 strings have English so far.
 
 ## Limits
 

@@ -1,0 +1,22 @@
+{
+ "title": "Lesser Mern",
+ "key": "PantherSoftware.zip/Lesser Mern",
+ "image": "Lesser Mern\\Lesser Mern [HD]\\Lesser Mern.hdi",
+ "encoding": "lmern",
+ "program": "LESS.EXE",
+ "game_dir": "LM",
+ "opening": "OPEN.EXE",
+ "event_files": [
+  "EV200",
+  "EV201",
+  "EV202",
+  "EV203",
+  "EV204",
+  "EV205"
+ ],
+ "ending_files": [
+  "ED200",
+  "ED201"
+ ],
+ "boot_steps": "25:shot,1:down,1:enter,10:shot,10:shot,1:enter,10:shot,1:esc,2:shot,1:down,1:down,1:down,1:enter,2:shot,1:esc,1:esc,2:shot"
+}

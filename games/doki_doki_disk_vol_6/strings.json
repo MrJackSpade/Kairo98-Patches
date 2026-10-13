@@ -1,0 +1,1260 @@
+{
+ "source_image_sha256": "ef7cbb85aac7d204f5468aef741eb894082caee730bbfc6abb0ed050d797f4db",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "１．発刊のお言葉{X1}２．Ｗｉｎｄｏｗｓをもっともっと面白く！！{X2}３．ミュージック・ライブラリー{X3}４．アート・ギャラリー{X4}５．よもやま通信{X5}６．開発室便り{X6}７．クラブＤ．Ｏ．からのお知らせ{X7}８．新作情報{X8}９．ユーザーズ・サロン（仮）",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0127"
+   ],
+   "max_cells": 44,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a new line; {X4}: a new line; {X5}: a new line; {X6}: a new line; {X7}: a new line; {X8}: a new line"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　－－－３Ｄディスク発刊のお言葉－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0201"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "３ＤディスクＶｏｌ．６の発刊です。立ちはだかる幾多の苦難と仕事を、野を越え山越え発刊することができました。{X1}これもひとえに皆様の温かい御支援と御声援の賜物のおかげであることはいうまでもありません。{X2}スタッフも多忙な仕事の合間を縫って各担当パートを作ってきてくれました。このペースを維持して、Ｖｏｌ．７も発刊していきたいと思います。{X3}スタッフも楽しんで作った３Ｄディスク、皆さんにも楽しんでいただけるならば、無上の喜びです。{X4}ちなみに、ここだけの話、今回のオープニングのグラフィックはＤ．Ｏ．が{X5}社運を賭けていると噂の『ブランマーカー２』（猛烈開発中）から、ちょこっとだけ拝借してきた秘蔵の一点物です。{X6}たった１枚だけなんてケチくさいわねぇ・・・。{X7}こほんっ！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0234"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, the window cleared, animation 1 on; {X2}: animation 1 off, a key wait, the window cleared, animation 1 on; {X3}: animation 1 off, a key wait, the window cleared, animation 1 on; {X4}: animation 1 off, a key wait, the window cleared, animation 1 on; {X5}: a new line; {X6}: animation 1 off, a key wait, the window cleared, animation 5 on; {X7}: animation 5 off, a key wait, the window cleared, animation 0 off, animation 2 off, animation 2 on, animation 3 on"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "こほんっ！しかし、拝借してきたと言っても、その道のりは険しく、開発の皆さんのガードはミスリルの鎧よりも硬く、{X1}『あくまごときにくれてやる物など無い！』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0424"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 0 off, animation 1 off, animation 2 off, animation 2 on, animation 3 on"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "無い！』と言って、なかなか資料をくれませんでした。{X1}仕方ないから、某デバッグ隊員に命じたら、ユーザーの皆さんのためにと泣く泣く、『絵を描く時は暗所を好む』というＧＯＵＤＡさんの習性を利用して、閃光弾でＧＯＵＤＡさんの目をくらませ、その隙に強奪してきたのよねえ。{X2}この事がディレクターやＧＯＵＤＡさんにバレれば、彼の人生は終劇となるでしょう・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:049e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, the window cleared, animation 5 on; {X2}: animation 5 off, a key wait, the window cleared, animation 1 on"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "平成６年２月　神奈川県某所{X1}カチ・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:05c1"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "カチ・・・カチ・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:05e8"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "　{X1}はっ・・・このマウスのクリック音は・・・{X2}カチ・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:05f9"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "カチ・・カチ・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0622"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "カチ・・カチ・・カチ・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0631"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "　{X1}しまったＧＯＵＤＡさんだ！{X2}もう、この場所を嗅ぎつけたのか！！{X3}カチ・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0645"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "カチ・カチ・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0680"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "カチ・カチ・カチ・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:068d"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "カチ・カチ・カチ・カチ・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:069d"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "カチ・カチ・カチ・カチ・カチ・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:06b0"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "　{X1}イカン、早く逃げねば！{X2}バッ！{X3}うわあっ！{X4}カチカチカチカチカカチカチカチカチチカチカチカチカチカチカチカチ！！{X5}うっぎゃあ～・・・・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:06c8"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　{X2}それでは、ごゆっくりお楽しみください。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0741"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: animation 0 on, animation 1 on, animation 4 on, animation 5 on"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "　{X1}　{X2}Ｗｉｎｄｏｗｓ",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:07be"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: the window cleared; {X2}: a new line, a new line, a new line"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　です。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:07dc"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "いきなり、コーナーになってしまいました。{X1}興味のある人も、あまり無い人{X2}も、持っている人も、持ってない人もやっぱり注目しているんじゃないかなぁＷｉｎｄｏｗｓ。{X3}と、私個人は勝手に思っているのですが・・・。{X4}　{X5}　　　ディー・オーも{X6}　　　　Ｗｉｎｄｏｗｓに{X7}　　　　　参入しました。{X8}ふふふ、美少女ソフトメーカーでは一番乗りです。{X9}初めて月へ行って、月面に星条旗を立てた時の宇宙飛行士の気持ちがよくわかります。{X10}先陣争いで一番首を取った、昔の武将の気分もよくわかるなあ。{X11}この３Ｄディスクも、いつの日かＷｉｎｄｏｗｓ対応になるでしょう。{X12}その時どんな３Ｄディスクになるのか・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:07f1"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a key wait, a new line; {X2}: a new line; {X3}: a key wait, a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a new line, a new line; {X7}: a new line, a new line; {X8}: a key wait, the window cleared; {X9}: a key wait, a new line; {X10}: a key wait, a new line; {X11}: a key wait, the window cleared; {X12}: a key wait, a new line"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "のか・・・楽しみです。{X1}　{X2}『Ｗｉｎｄｏｗｓを{X3}　　もっともっと面白くね！！』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:099a"
+   ],
+   "max_cells": 30,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a new line, a new line; {X3}: a new line"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "　ディー・オーからの提案です",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:09dc"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "　{X1}　　－－　Ｄ．Ｏ．{X2}　　　　　Ｗｉｎｄｏｗｓ対応Ｓｏｆｔ{X3}　　　　　　　　　　　　　ＬＩＮＥ－ＵＰ　－－{X4}　　　　－　ディー・オー壁紙集{X5}　　　　　　　　　　＆{X6}　　　　　　　　ビデオクリップ集{X7}　　　　　　　　　　　　　Ｖｏｌ．１～５　－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0a0a"
+   ],
+   "max_cells": 50,
+   "note": "{X1}: the window cleared; {X2}: a new line; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a new line; {X7}: a new line"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "Ｗｉｎｄｏｗｓの背景に飾ることができるＣＧデータ集です。{X1}Ｄ．Ｏ．が誇る大好評の数々のゲームから人気のある{X2}キャラクターを選りすぐり集めました。可愛くて愛らしくて、みーんな美少女です。{X3}マルチメディアライクな作品を指向するディー・オーが視覚と聴覚の両方から迫ります。{X4}そしてビデオクリップ集では有名声優さんの可愛い声が楽しめます。{X5}ディー・オー壁紙集　Ｖｏｌ．１～５{X6}　　　　　　　　（ＦＤ版）　標準価格　各３８００円{X7}ディー・オー壁紙集　＆　ビデオクリップ集{X8}　　　　　　　　　　　　　　　　　Ｖｏｌ．１～５{X9}　　　　（ＣＤ－ＲＯＭ版）　標準価格　各５８００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0aca"
+   ],
+   "max_cells": 50,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a new line; {X3}: a key wait, the window cleared; {X4}: a key wait, a new line; {X5}: a key wait, the window cleared; {X6}: a new line, a new line; {X7}: a key wait, the window cleared; {X8}: a new line; {X9}: a new line"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "　{X1}　　　好評発売中！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0c81"
+   ],
+   "max_cells": 50,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　{X1}　{X2}　　－　ディー・オー　ＷＡＶＥデータ集　『口はさいわいのもと』　－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0cbe"
+   ],
+   "max_cells": 70,
+   "note": "{X1}: the window cleared; {X2}: a new line, a new line"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "Ｗｉｎｄｏｗｓ上でしゃべり、鳴らす、音声・効果音データです。{X1}Ｗｉｎｄｏｗｓのイベント・メッセージなどに応じた、いろいろな音声データ効果音データを用意。{X2}ブランマーカー／シャミー役のこおろぎさとみ、{X3}ＤＯＲシリーズ／あくまちゃん役の矢島晶子、{X4}そのほか有名声優９名を加えた総勢１１名の豪華競演です。{X5}そして特別対談、「シャミーＶＳあくまちゃん　美少女ゲームを語る！！」を収録、ディー・オーの看板娘二人の初のトーク・セッションです。{X6}また、ＣＤ－ＤＡを同時収録しましたので、おはようコール、おやすみコール留守番電話などへも利用できます。{X7}　　　　ディー・オー　ＷＡＶＥデータ集　『口はさいわいのもと』{X8}　　　　　　　　標準価格　ＣＤ－ＲＯＭ版　８８００円{X9}　　　　　　　　標準価格　ＦＤ版　　　　　６８００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0cff"
+   ],
+   "max_cells": 70,
+   "note": "{X1}: a key wait, a new line; {X2}: a key wait, a new line; {X3}: a new line; {X4}: a new line; {X5}: a key wait, the window cleared; {X6}: a key wait, a new line; {X7}: a key wait, the window cleared; {X8}: a new line, a new line; {X9}: a new line, a new line"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "　{X1}　　　好　評　発　売　中　！！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0f1e"
+   ],
+   "max_cells": 70,
+   "note": "{X1}: a new line, a new line"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　{X1}　{X2}　－Ｄ．Ｏ．ＯＲＩＧＩＮＡＬ　ＳＣＲＥＥＮ　ＳＡＶＥＲ{X3}　　　　　『ブランマーカーＶＳ妖獣戦記Ａ．Ｓ．Ｓ．Ｐ．』－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0f5a"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: the window cleared; {X2}: a new line; {X3}: a new line, a new line"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "パソコンモニターの焼付けを防ぐための、自動アニメーションプログラムのことです。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:0fd3"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "『ブランマーカー編』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1036"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "　シャミーとその仲間たちが、かわいいキャラクターとなって魔法　をかけたり、モンスターを追いかけたり・・・。シャミーとヴィ　ガの愉快な愉快な珍道中。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:104f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "『妖獣戦記Ａ．Ｓ．Ｓ．Ｐ．編』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:10df"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "　マリエが走る、冴子が走る、スクリーン狭しと　　Ａ．Ｓ．Ｓ．Ｐ．（アスプ）のアユミが、アル　　ファが、ミカコが、戦います。走ります。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1104"
+   ],
+   "max_cells": 46
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "　　　Ｄ．Ｏ．ＯＲＩＧＩＮＡＬ　ＳＣＲＥＥＮ　ＳＡＶＥＲ{X1}　　　　『ブランマーカーＶＳ妖獣戦記Ａ．Ｓ．Ｓ．Ｐ．』{X2}　　　　　　　　　　標準価格　８８００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:118a"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line, a new line; {X2}: a new line, a new line"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　３月１８日{X2}　　　　全国一斉発売！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1217"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a new line; {X2}: a new line, a new line"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "　{X1}－－　ミュージック・ライブラリー　－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1287"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "今号のミュージック／{X1}　　　ＤＯＲ　ＳＥ　魁（さきがけ）",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:12b2"
+   ],
+   "max_cells": 38,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "＃１{X1}　　　　　　『混乱』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:13c7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "＃２{X1}『ＭＯＲＮＩＮＧ　ＣＯＦＦＥＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:13ff"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "＃３{X1}　　『ＰＯＷＥＲ　ＤＲＩＦＴ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1448"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "＃４{X1}　『ＢＡＴＴＬＥ　ＳＱＵＡＲＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:148d"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "＃５{X1}『ＭＩＤＮＩＧＨＴ　ＤＲＩＶＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:14d5"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "＃６{X1}　『ＦＩＮＡＬ　ＢＡＴＴＬＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:151e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "＃７{X1}　　　『君と歩いた並木道』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1564"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "＃８{X1}『ＦＯＬＬＯＷ{X2}　　　ＴＨＥ　ＲＡＩＮＢＯＷ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:15a2"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a new line"
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "＃９{X1}　　『ＰＨＯＴＯＧＲＡＰＨ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:15f7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "＃１０{X1}　　『ＤＡＮＧＥＲ　ＺＯＮＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:163b"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "＃１１{X1}　　『ＳＰＯＲＴＳ　ＮＥＷＳ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1681"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "＃１２{X1}　　『ＢＬＵＥ　ＭＡＲＩＮＥ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:16c7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "＃１３{X1}　　　　『デートの日曜日』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:170d"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "＃１４{X1}　　　　『ＨＯＬＩＤＡＹ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:174c"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "＃１５{X1}　　　『今朝も元気に大遅刻』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:178d"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "＃１６{X1}　　　『ＯＮＬＹ　ＹＯＵ』",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:17cf"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　－－－－－－アート・ギャラリー－－－－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1818"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "今回のアート・ギャラリーは、オリジナルＣＧ展。{X1}それでは始まり、はじまりぃ。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1852"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "　{X1}　　　－－－　次　へ　－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:18a1",
+    "DK6V2.EDT:18c9"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "　{X1}　－－－　お　し　ま　い　－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:18f1"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　－－－－－－－－－よもやま通信－－－－－－－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1934"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "早いものでこのコーナーもすでに６回を迎えました。{X1}思えば、「そんなにやったかなぁ」という感じです。{X2}時間が経つのが早く感じるのは、こうやって過去を振り返るからかもしれません。{X3}そういえば昨年末のデバッグの忙しさが、もう遥か彼方のできごとのように思えます。{X4}今年もこれから山のようにありますケド（笑）。{X5}ユーザーの皆様、年賀状どうもありがとうございます。社員一同楽しく読ませていただきました。{X6}３Ｄディスクは今年も当然の事ですが年２回の発刊を目指してガンバリます。{X7}時間的な制限などできることは限られていますが、その中でユーザーの皆さんに新作の情報などいろいろ楽しめるよう、もっと面白くしていきたいと考えています。{X8}よもやま通信も「よもやま」のタイトルのごとく、雑多にもっとバラエティに富んだ内容でこれからはお送りしたいですね。{X9}　{X10}　　　　　　これからのＤ．Ｏ．の３Ｄディスクは一味違うぞ。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1971"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: a key wait, the window cleared; {X8}: a key wait, the window cleared; {X9}: a key wait, the window cleared; {X10}: a new line"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　　　－Ｖｏｌ．７　予告－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1bad"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "それは忘れた頃にやって来た。{X1}仕事の嵐が吹きまくり、{X2}スタッフがそれに追われているとき・・・。{X3}「えっ、Ｖｏｌ．７！」{X4}「もう締切りなの！」{X5}「そんなー、聞いてないよー」{X6}「聞いてなくても、やるしかないでしょ」{X7}気がつけば{X8}迫り来る締切り。{X9}次々に襲いかかる難題。{X10}押し寄せる仕事の山・・・{X11}はたして、新しい３Ｄディスクを作り上げることができるのか？{X12}ユーザーたちの期待に応えられるのか？{X13}頑張れ！年２回発刊を何としても死守するのだ。{X14}負けるな！この難関を乗り越えれば、{X15}次はどきどき新聞とデバッグとソフトの製作と・・・えーと、ほかに仕事まだあるからよろしく。{X16}　{X17}　・・・・・・・・・・・・・・・・・・・・・・・・・・あぅ（Ｔ＿Ｔ）{X18}　{X19}　　　　　　　３ＤディスクＶｏｌ．７　乞う御期待！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1bdb"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, a new line; {X3}: a key wait, the window cleared, animation 2 on; {X4}: animation 2 off, a key wait, a new line; {X5}: a key wait, a new line, animation 2 on; {X6}: animation 2 off, a key wait, the window cleared; {X7}: a key wait, the window cleared; {X8}: a key wait; {X9}: a key wait, the window cleared; {X10}: a key wait; {X11}: a key wait, the window cleared; {X12}: a key wait, a new line; {X13}: a key wait, the window cleared; {X14}: a key wait, the window cleared; {X15}: a key wait, a new line; {X16}: a key wait, the window cleared; {X17}: a new line; {X18}: a key wait, the window cleared; {X19}: a new line"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　－－－－－－開発室便り－－－－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1de6"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "みんなーっ！交通ルール守ってるかーっ！？{X1}私は、ちこっと問題ありだぞーっ！{X2}ふう・・・。{X3}まあ、そんな事はさておいて・・・。{X4}開発室便りだったな・・・。{X5}Ｄ．Ｏ．の開発室はいつもとあいかわらずだ。{X6}　{X7}　　　　　　　　　　　　　じゃあさようなら・・・。{X8}「ぶち切れてんじゃねーよ！広崎！」{X9}「おっと、このなさけ容赦ないつっこみは・・・。{X10}涼正ちゃん」{X11}「ヒーローをちゃん付けで呼ぶんじゃねーっ！」{X12}「じゃ、涼正プー」{X13}「なんだ、それは・・・」{X14}「今はガイルバンのシナリオ書いてる時じゃないんだから、涼正プーは、私の大脳皮質からどいててくれよなっ！」{X15}「ふん、開発室便りだったら、ガイルバンの次回作の構想を書くとか、ガイルバンの秘密超能力大紹介とか、そーゆーのをやれば読者は喜ぶぞ」{X16}「大紹介しちゃったら、秘密でもなんでもないぞ。{X17}だいたい今はＷＡＶＥ　ＤＡＴＡ集『口はさいわいのもと』のフルカラーグラフィック描いている合間なんだから、私のシナリオ作成中枢は、ティッシュにくるんで引き出しの中にしまってあるんだよん・・・、涼正みょん」{X18}「よし！じゃあ、それが終ったらガイルバンの次回作を書くんだなっ！？」{X19}「これが終ったら『クリスタル・リナール』の原画さっ。だいたい次にＤＯＲが出るとしても、ガイルバンをやるなんて、私は一言も言っとらんぞ」{X20}「なんだとっ！おのれっ！こうしてやるっ！」{X21}「ああああ・・・。私のシナリオ作成中枢をどこへ持って行くっ！」{X22}「こんなものっ、芝浦の運河に沈めてやるぜっ！」{X23}「かえせえええぇぇぇぇ・・・」{X24}「ラトナ、パス！」{X25}「ふふふふふ・・・。確かに受け取ったわよ」{X26}「げっ！底意地の悪いのが、二人そろってしまった・・・。{X27}そいつを返せラトナ！」{X28}「いやよっ。ふふふ・・・、私の魔術でこれを・・・。{X29}　{X30}　　ふふふふふふふふふふふふふふふふふふふふふふふふふふふふ・・・」{X31}「おおっ！広崎のシナリオ作成中枢が巨大化したぜっ！」{X32}「みんな！出動よ！」{X33}「あああ・・・。ＡＳＳＰのメンバーまで・・・」{X34}「よーじゅーだーっ！」{X35}「いくわよっ！マリエ！」{X36}「ああ・・・。戦いはいつ終るの・・・」{X37}「どけっ！こいつは俺が倒してやるっ！」{X38}「これより作戦行動に入ります！」{X39}「こら撃つな！私の脳が・・・」{X40}「ふふふふふ・・・。馬鹿ね・・・」{X41}「私の学校をよくも！」{X42}「切るなあぁーーっ！」{X43}　{X44}　　　　　　　　　　　　　　・・・・・・。{X45}実は、私は一度シナリオでやってみたかった事があるんだ。{X46}いい機会だから、やっちゃうぞ・・・。ほら・・・。{X47}　{X48}　　　　　　　　　　　「ふう・・・。夢か・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:1e1b"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, a new line; {X2}: a key wait, the window cleared; {X3}: a key wait; {X4}: a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: a key wait, the window cleared; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a key wait, a new line; {X10}: a key wait; {X11}: a key wait, the window cleared; {X12}: a key wait, a new line; {X13}: a key wait, a new line; {X14}: a key wait, the window cleared; {X15}: a key wait, the window cleared; {X16}: a key wait, the window cleared; {X17}: a key wait, the window cleared; {X18}: a key wait, the window cleared; {X19}: a key wait, the window cleared; {X20}: a key wait, the window cleared; {X21}: a key wait, a new line; {X22}: a key wait, the window cleared; {X23}: a key wait, the window cleared; {X24}: a key wait, the window cleared; {X25}: a key wait, a new line; {X26}: a key wait, the window cleared; {X27}: a key wait, a new line; {X28}: a key wait, the window cleared; {X29}: a key wait, the window cleared; {X30}: a new line; {X31}: a key wait, the window cleared; {X32}: a key wait, the window cleared; {X33}: a key wait, a new line; {X34}: a key wait, the window cleared; {X35}: a key wait, a new line; {X36}: a key wait, a new line; {X37}: a key wait, the window cleared; {X38}: a key wait, a new line; {X39}: a key wait, the window cleared; {X40}: a key wait, a new line; {X41}: a key wait, the window cleared; {X42}: a key wait, the window cleared; {X43}: a key wait, the window cleared; {X44}: a new line; {X45}: a key wait, the window cleared; {X46}: a key wait, a new line; {X47}: a key wait, the window cleared; {X48}: a new line"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "　{X1}　　　　－－－－－－クラブＤ．Ｏ．からのお知らせ－－－－－－{X2}　{X3}　　　　　　　　　　　－オリジナルグッズ発売中－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:240c"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "Ｄ．Ｏ．ではオリジナルグッズを発売しています。{X1}アニメイトや、有名パソコンソフト店などで扱っています。{X2}通信販売もしています。なお、以下は２月２０日現在の発売状況です。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:2473"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, the window cleared, animation 1 on; {X2}: a new line"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "●Ｄ．Ｏ．キャラクターズトランプ{X1}　　　　　　　　　　　　　　　　　　　　　　　　　　　　１４００円{X2}●Ｄ．Ｏ．ジグソーパズル{X3}　（妖獣戦記・ブランマーカー）{X4}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１８００円{X5}●テレフォンカード{X6}　（妖獣戦記・ブランマーカー・星の砂物語２・ＤＯＲ　ＳＥ‘９３）{X7}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１２００円{X8}●オリジナルビデオＶｏｌ．１～５{X9}　　　　　　　　　　　　　　　　　　　　　　　　　　　各４８００円{X10}●Ｄ．Ｏ．オリジナルキャラクターディスクラベル{X11}　　　　　　　　　　　　　　　　　　　　　　　　　　　　　８００円{X12}　{X13}　　　　　　　　　　　　　　以上発売中！！{X14}　{X15}　　　　　　　　　　－－　以下近日発売予定　－－{X16}●Ｄ．Ｏ．イラスト集{X17}　　　　　　　　　　　　　　　　　　　　　　　　　　　　２０００円{X18}●カレンダー（４月～３月の年度暦）{X19}　（ブランマーカー・妖獣戦記）{X20}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１５００円{X21}●設定資料集（ブランマーカー・妖獣戦記）{X22}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１２００円{X23}●ポストカードコレクション{X24}　（妖獣戦記・ブランマーカー・星の砂物語・ＤＯＲ）各シリーズ{X25}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１２００円{X26}●レターセット{X27}　（妖獣戦記・ブランマーカー）{X28}　　　　　　　　　　　　　　　　　　　　　　　　　　　各１５００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:24fb"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line, a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a new line; {X5}: a key wait, the window cleared; {X6}: a new line; {X7}: a new line; {X8}: a key wait, the window cleared; {X9}: a new line, a new line; {X10}: a key wait, the window cleared; {X11}: a new line, a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a key wait, the window cleared; {X15}: a new line; {X16}: a key wait, the window cleared; {X17}: a new line, a new line; {X18}: a key wait, the window cleared; {X19}: a new line; {X20}: a new line; {X21}: a key wait, the window cleared; {X22}: a new line, a new line; {X23}: a key wait, the window cleared; {X24}: a new line; {X25}: a new line; {X26}: a key wait, the window cleared; {X27}: a new line; {X28}: a new line"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　－－－　通信販売　ご希望の方へ　－－－{X2}　{X3}　　　　　　　　　－－－　消費税について　－－－{X4}通信販売の場合は、ゲームソフト、オリジナルグッズ共に全商品、消費税は{X5}サービスになります。{X6}　{X7}　　　　　　　　　－－－　郵送料について　－－－{X8}通信販売で『オリジナルグッズのみ』をご注文の場合は、商品の種類、個数に関係なく、商品の代金のほかに送料として一律５００円が必要になります。{X9}ご注文の際には、忘れずに加算してください。{X10}送料が加算されていないと商品を発送できませんので、お気を付け下さい。{X11}ただし、ゲームソフトのみ、もしくはゲームソフトとオリジナルグッズを一緒にご注文頂いた場合には、送料はサービスとなります。{X12}　{X13}　　　　　　　　　－－－　現金書留の場合　－－－{X14}住所、氏名、電話番号、商品名、個数等を明記したものと商品の合計代金{X15}（グッズのみの場合はプラス５００円）を同封し、下記の住所へお申し込み下さい。{X16}　郵便番号　２５１{X17}　神奈川県藤沢市藤沢１１５－２　藤沢郵便局　私書箱４号{X18}　（株）ディー・オー　　通販係{X19}　{X20}　　　　　　　　　－－－　郵便振替の場合　－－－{X21}振替用紙の通信欄に住所、氏名、電話番号、商品名、個数等を明記し、下記へ商品の合計代金（グッズのみの場合はプラス５００円）を振り込んで下さい。{X22}振込先／横浜３－２２８８２{X23}加入者名／株式会社ディー・オー",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:28a0"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared, animation 1 on; {X5}: a new line; {X6}: animation 1 off, a key wait, the window cleared; {X7}: a new line; {X8}: a key wait, the window cleared, animation 1 on; {X9}: animation 1 off, a key wait, the window cleared, animation 1 on; {X10}: a new line; {X11}: animation 1 off, a key wait, the window cleared, animation 1 on; {X12}: animation 1 off, a key wait, the window cleared; {X13}: a new line; {X14}: a key wait, the window cleared, animation 1 on; {X15}: a new line; {X16}: animation 1 off, a key wait, the window cleared; {X17}: a new line; {X18}: a new line; {X19}: a key wait, the window cleared; {X20}: a new line; {X21}: a key wait, the window cleared, animation 1 on; {X22}: animation 1 off, a key wait, the window cleared; {X23}: a new line"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "おまけ{X1}　　　　　　　　　　　　　事務局でのお話。{X2}事務の方の話を聞くと、最近通販の注文や入会申込の郵便物が増えているとの事。とてもうれしい事です。ありがとうございます。{X3}でも増えた分、事務局の事務処理がだいぶ繁雑になってきたそうで、ちょっとしたことが仕事を滞らせ、トラブルになってしまうことがあるそうです。{X4}その時に、通販の注文やユーザーサポートを送ってもらったときの葉書や手紙は、次のような物が手早く処理しやすいと言っていました。{X5}・手紙や注文書、封書の裏には、リターンアドレス（ユーザーの住所）が書い　てある。{X6}・ユーザーの住所には郵便番号が明記され、都道府県から書き始めてある。{X7}・文字が丁寧に楷書で書いてある。{X8}・注文したソフトやユーザーサポートでの商品名、機種名が最後まで全て{X9}　（例えば作品のメディアの形態まで、ＣＤ－ＲＯＭ版など）書いてある。{X10}「住所だけでもはっきりわかりやすく書いてくれれば、もっと早くソフトや情報が送れるのに」{X11}「しかも、家にも早く帰れるというわけだ」{X12}「でも、考えたらあなたの（給与の）事務処理が一番時間かかるから、帰る時間はそんな変わんないわね」{X13}「・・・あのね・・・」{X14}　　　　　　　　　　　　　　　　　　　　　　　　おしまい",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:2c65"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared, animation 1 on; {X3}: animation 1 off, a key wait, the window cleared, animation 1 on; {X4}: animation 1 off, a key wait, the window cleared, animation 1 on; {X5}: animation 1 off, a key wait, the window cleared, animation 5 on; {X6}: animation 5 off, a key wait, the window cleared, animation 5 on; {X7}: animation 5 off, a key wait, the window cleared, animation 5 on; {X8}: animation 5 off, a key wait, the window cleared, animation 5 on; {X9}: a new line; {X10}: animation 5 off, a key wait, the window cleared; {X11}: a key wait, the window cleared; {X12}: a key wait, the window cleared; {X13}: a key wait, the window cleared; {X14}: a new line, a new line"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　－－－－－－新作情報－－－－－－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:2f77"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　－ＤＯＲ　ＳＰＥＣＩＡＬ　ＥＤＩＴＩＯＮ　’９３－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:2fb0"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "あなたの前にはドアがあります。悪魔の作った不思議なドアが・・・。{X1}オムニバス・ストーリー・アドベンチャー『ＤＯＲ』シリーズのスペックを大幅にグレードアップしたスペシャルバージョンです！！",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3009"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 off, a key wait, the window cleared, animation 1 on"
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "　{X1}　－機甲戦士ガイルバン　ＡＣＴ２　　決戦！ギル・グラウバー基地潜入－{X2}メイアとの戦いから数週間が過ぎた。メイアは俺の仲間になったがいまだに万年ヒステリーは治っていない。おまけにいくみはメイアが仲間になったのが気に入らないらしく何かと反抗的だ。まったく・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:30bb"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "俺の手がメイアの肩をとらえ体重を乗せてゆくと、第二波・・・、みぞおちへの膝蹴りが来た。{X1}ものすごく痛かったが、ひるむことなく、メイアを押えつけた。{X2}メイア：{X3}「ど、どいてよっ！」{X4}涼　正：「秘密基地の場所を言ったらどいてやる」{X5}メイア：{X6}「言わない・・・」{X7}涼　正：「そーーーか・・・。俺にしてほしいか・・・」{X8}メイア：{X9}「ばっ・・・、ばかっ！」{X10}　　　　　メイアの腕をさわさわ・・・。{X11}メイア：{X12}「今のうちに止めないと、後悔するわよっ！」{X13}涼　正：「俺に『後悔』の二文字は存在しない・・・。なぜならっ！{X14}　　　　　俺は正義と言う信念と大儀の上に立っているからな・・・、はっは　　　　　っはっ」{X15}メイア：{X16}「はた迷惑な奴・・・」{X17}涼　正：「そーやって、かたくなに秘密基地の場所を黙っていると言う事は・　　　　　・・。ギル・グラウバーに加担していると考えていいわけだな？」{X18}メイア：「・・・・・・。・・・{X19}ったく・・・」{X20}メイア：{X21}「あん・・・。やめてよっ！」{X22}メイア：{X23}「やだっ！ばか・・・。くすぐったいわよっ」{X24}メイア：{X25}「だ・・・、だめ・・・」{X26}メイア：{X27}「あ・・・・・・。だめだってば・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3188"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: animation 0 off, animation 2 on; {X4}: animation 2 off, animation 0 on, a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: animation 0 off, animation 2 on; {X7}: animation 2 off, animation 0 on, a key wait, the window cleared; {X8}: a key wait, the window cleared; {X9}: animation 0 off, animation 2 on; {X10}: animation 2 off, animation 0 on, a new line; {X11}: a key wait, the window cleared; {X12}: animation 0 off, animation 2 on; {X13}: animation 2 off, animation 0 on, a key wait, the window cleared; {X14}: a new line; {X15}: a key wait, the window cleared; {X16}: animation 0 off, animation 2 on; {X17}: animation 2 off, animation 0 on, a key wait, the window cleared; {X18}: a key wait, the window cleared; {X19}: animation 0 off, animation 2 on; {X20}: animation 2 off, animation 0 on, a key wait, the window cleared; {X21}: animation 0 off, animation 2 on; {X22}: animation 2 off, animation 0 on, a key wait, the window cleared; {X23}: animation 0 off, animation 2 on; {X24}: animation 2 off, animation 0 on, a key wait, the window cleared; {X25}: animation 0 off, animation 2 on; {X26}: animation 2 off, animation 0 on, a key wait, the window cleared; {X27}: animation 0 off, animation 2 on"
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "俺はゆっくり、責めるように動いた。{X1}いくみはさらに身をこわばらせ、俺の肩にあてた手をつっぱった。{X2}いくみ：{X3}「く・・・・・っ！んんあっ・・・く」{X4}いくみの体に深く身をしずめて、俺は激しく動いた。{X5}いくみ：{X6}「あああぁぁぁ・・・。いやっ！いやあああぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:347e"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: animation 1 on; {X4}: animation 1 off, a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: animation 1 on"
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "涼　正：「いじっぱりだな、おまえは・・・。そーゆーのは、話がややっこし　　　　　くなるばっかりだ・・・」{X1}いくみ：{X2}「ああああああああ・・・。り・・・、涼正が私だけを好きなんじゃ　　　　　なきゃいやなのぉ・・・」{X3}まだ、こんな事を言うとはな・・・。{X4}俺はいくみの肩を押えてめちゃくちゃに動きまくってやった。{X5}いくみ：{X6}「う・・・。うわああああああぁぁぁぁ・・・・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3551"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: animation 1 on; {X3}: animation 1 off, a key wait, the window cleared; {X4}: a key wait, the window cleared; {X5}: a key wait, the window cleared; {X6}: animation 1 on"
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "　　－ジャングル探検　蟆口　浩　探検シリーズ＃１{X1}　　　　　　　　『南米オボコ山中に、幻の若返りの泉を見つけた！』－{X2}蟆口　浩は南米奥地のオボコ山にあるという若返りの泉を目指して、探検に出かける。彼のサポートをするのは『南米ムケチン語』の通訳を勤める隊員、唯と医療業務を担当する隊員、佳つ乃の２人である。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3660"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "あなた：お～い、ちょ、ちょっと待って、待ってくれぇ～！{X1}佳つ乃：あ～。唯、隊長がまた一人だけ遅れだしているよぉ。{X2}　唯　：{X3}え～っ！・・も～、やってらんないなぁ。日が傾くまでになにか手掛　　　　かりを見つけたかったのにぃ。{X4}　唯　：{X5}んもぉ～。そんなにいろんなもの持ってくるからですよ。{X6}　　　　いいかげん、いらないものは捨てていってくださいよー！{X7}あなた：うるさいっ！口答えするんじゃないっ！ただの下っぱのくせして、{X8}　　　　俺に逆らうのは５６億７０００万年早いんだよ、バカヤロウっ！{X9}　{X10}　　　　　　　　・・・ぴきいぃぃん！（謎の腰痛）{X11}あなた：あたたたた・・・。こ、腰がぁ・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3761"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: animation 2 on; {X4}: animation 2 off, a key wait, the window cleared; {X5}: animation 2 on; {X6}: a new line; {X7}: animation 2 off, a key wait, the window cleared; {X8}: a new line; {X9}: a key wait, the window cleared; {X10}: a new line; {X11}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "　唯　：あっ！隊長、あの木の上！{X1}あなた：やややっ！女ではないか！{X2}謎の女：{X3}あ～ン、着地失敗だわ。遺跡の中に降りるはずが、ジャングルの中に　　　　落ちちゃうしィ・・・。{X4}　　　　それもこれも、みんなあのパイロットのせいね！{X5}謎の女：{X6}もうちょっと上手に高度を調整してくれれば、こんなことにはならな　　　　かったのよ！！{X7}謎の女：{X8}『知恵と勇気と美貌を兼ね備えた世界最高の美少女考古学者』たるア　　　　タシが、こんな失態を演じるわけないのよね！{X9}謎の女：それにしても木にひっかかっちゃうなんて、最っ低！{X10}　　　　みっともなくて、とても人には見せられないわ！{X11}あなた：ところが、わたしらはもう見ちゃっているんだな。{X12}謎の女：{X13}だ、だれ？{X14}ナレーター：謎の女は、やっと我々探険隊に気がついた。{X15}謎の女：{X16}！・・・あっ！おじさぁ～ん！ちょうどいいところに通りかかってく　　　　れたわァ！ねえ、お願い！アタシをここから降ろしてちょうだいよ！　　　　キャノピーが引っ掛かって降りられないの。{X17}あなた：や～だよぉん。自力で降りてきたまえ。『謎の女』君！{X18}佳つ乃：・・・すごぉい。隊長が女の子の助けを断ってる！{X19}　唯　：ダイレクトに『おじさぁ～ん！』なんて呼び掛けられたから、だいぶ　　　　頭にきているのよ。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3902"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: animation 0 off, animation 1 on; {X4}: a new line; {X5}: animation 1 off, animation 0 on, a key wait, the window cleared; {X6}: animation 0 off, animation 1 on; {X7}: animation 1 off, animation 0 on, a key wait, the window cleared; {X8}: animation 0 off, animation 1 on; {X9}: animation 1 off, animation 0 on, a key wait, the window cleared; {X10}: a new line; {X11}: animation 1 off, animation 0 on, a key wait, the window cleared; {X12}: a key wait, the window cleared; {X13}: animation 0 off, animation 1 on; {X14}: animation 1 off, animation 0 on, a key wait, the window cleared; {X15}: a key wait, the window cleared; {X16}: animation 0 off, animation 1 on; {X17}: animation 1 off, animation 0 on, a key wait, the window cleared; {X18}: a key wait, the window cleared; {X19}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "ライム：{X1}あ・・・あはぁ、あ、う。{X2}ライム：{X3}はあぁぁ・・・。うぅ。どうしてこんなになっちゃうの？{X4}　　　　どうしてこんなに変な声が出ちゃうの？{X5}　　　　どうしてこんなに体が震えちゃうの？{X6}ライム：{X7}うわ、あっふぅ・・・。んっはぁ。うくぅ・・・。{X8}　　　　んぁんぅ・・。やはぁ。こ、これが、お、男の人？・・。{X9}　　　　だ、だめ、だっ、た・・らぁ。負けです、わた、しのォ。{X10}ライム：{X11}う、うそ。あはぅ。と、とても、強くっ・・てぇ、あぁ。{X12}　　　　いやはぅ、すっ、すてきぃ・・・。くぅ、はぁああ～。{X13}　　　　あふ、ぁん、あっはぁ・・。あっ、あぁぁああ～・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3c27"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 0 off, animation 1 on; {X2}: animation 1 off, animation 0 on, a key wait, the window cleared; {X3}: animation 0 off, animation 1 on; {X4}: a new line; {X5}: a new line; {X6}: animation 1 off, animation 0 on, a key wait, the window cleared; {X7}: animation 0 off, animation 1 on; {X8}: a new line; {X9}: a new line; {X10}: animation 1 off, animation 0 on, a key wait, the window cleared; {X11}: animation 0 off, animation 1 on; {X12}: a new line; {X13}: a new line"
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　－Ｃｕｒｓｅ　ｏｆ　Ｂｅａｓｔ－{X2}一匹狼の庸兵ファルクは獣人化の呪いを解くために、庸兵や用心棒をしながら諸国を放浪していく。砂漠に眠る遺跡を捜し出せといわれて前人未踏の砂漠の奥深くへと・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3db7"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "シャナ：{X1}「・・・きゃあっ・・・・・・！」{X2}・・・一息ついた俺の耳に、シャナの悲鳴が飛び込んでくる・・・{X3}やられたのか！{X4}・・・俺は慌てて視線を、シャナが戦っていた方に向けた・・・・・・{X5}・・・モンスターの鈎爪をかわした時に、尻尾で足元をすくわれたらしい・・・引き倒された拍子に服がはだけてしまい、肩から胸にかけて露になってしまっている・・・乱れた裾も色っぽい・・・{X6}シャナ：{X7}「・・・痛っ！・・・あ、足が・・・・・・」{X8}・・・尻尾の一撃で足を痛めたらしい・・・すぐに立ち上がれそうにない・・・いわんこっちゃない・・・俺はシャナとモンスターの間に割り込み、モンスターに攻撃をかけた・・・・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:3e70"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 0 off, animation 1 on; {X2}: animation 1 off, animation 0 on, a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared; {X5}: a new line; {X6}: a key wait, the window cleared; {X7}: animation 0 off, animation 1 on; {X8}: animation 1 off, animation 0 on, a key wait, the window cleared"
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "フラム：{X1}「・・・いいわ・・・私を抱けば、元に戻るのであれば・・・私を抱　　　　　いて・・・・・・」{X2}・・・玄室の床に身を横たえているフラムに、そっと触れる・・・{X3}フラム：{X4}「・・・きゃあっ・・・あ、わ、私・・・まだ・・・」{X5}・・・そう言いながら頬を赤らめるフラムからは、普段の強気な姿は到底想像できない・・・素肌の触れ合っている所からも、微かな震えが伝わってくる・・・・・・{X6}ファルク：「・・・やめるか・・・・・・？」{X7}・・・俺の問に、フラムの瞳に微かな逡巡が浮かぶ・・・その迷いを肯定と受け取った俺は、フラムから身を離そうとする・・・だがフラムは、そんな俺を抱き止めて震える声で言った・・・・・・{X8}フラム：{X9}「・・・でも・・・いいの・・・あなたに・・・」{X10}　　　　　ファンタジーＲＰＧ風、特撮ヒーロー物、冒険活劇ありの{X11}　　　　　　　　　　　オムニバス・アドベンチャー{X12}　{X13}　　　　　『ＤＯＲ　ＳＰＥＣＩＡＬ　ＥＤＩＴＩＯＮ　’９３』{X14}　　　　ＰＣ－９８０１ＶＭ／ＵＶシリーズ　Ｘ６８０００シリーズ{X15}　　　　　　　ＰＣ－９８２１ＭＵＬＴｉ　ＣＤーＲＯＭ版{X16}　　　　　　　　ＰＣ－９８２１ＭＡＴＥ　ＨＤＤ専用版{X17}　　　　　　　ＦＭ－ＴＯＷＮＳシリーズ（Ｍａｒｔｙ対応）{X18}　　　　　　　　　　　標準価格　各８，８００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4011"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: animation 1 on; {X2}: animation 1 off, a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: animation 1 on; {X5}: animation 1 off, a key wait, the window cleared; {X6}: a key wait, the window cleared; {X7}: a key wait, the window cleared; {X8}: a key wait, the window cleared; {X9}: animation 1 on; {X10}: animation 1 off, a key wait, the window cleared; {X11}: a new line; {X12}: a key wait, the window cleared; {X13}: a new line; {X14}: a key wait, the window cleared; {X15}: a new line; {X16}: a new line; {X17}: a key wait, the window cleared; {X18}: a new line"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "　{X1}　　　　好　評　発　売　中",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4338",
+    "DK6V2.EDT:4aec"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line"
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　　　　　妖獣戦記　－Ａ．Ｄ．２０４８－{X2}人類が核の破壊力をいやというほど味わった「Ｔｈｅ　Ｔｈｉｒｄ」と呼ばれた世界大戦の後・・・。{X3}完璧なまでに破壊しつくされ、廃墟と化した特殊兵器工場から流出した生物兵器の遺伝子は、残留放射能の作用により「妖獣」を生み出すに到った。{X4}人間の身体を媒体として繁殖する「妖獣」は、壊滅状態からの再興に力をつくす人類にとって大きな厄災となっていた・・・",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4367"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, the window cleared; {X4}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "「いやっ！　だっ・・・・・・れ・・か・・、た・・・・すけ・・・、ひぃぃぃぃ！ああっ、あぁぁぁぁぁぁっ！！」{X1}「はあぁ、ああああああっ！うあっ、あっ、ああ・・・やめ・・・て・・・、あうっ、あうううううぅぅぅぅ・・・・」{X2}「やあああああああああぁぁぁぁぁぁぁぁぁぁぁぁぁぁぁ・・・・・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:44c8"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "「んっ・・・はぐぅ・・・んんん！！うう・・・、んぐっ！！んんっ・・・」{X1}「んんんっ！んっ！・・・んぐぅぅぅぅぅぅぅぅ、・・・うううう・・・・・・・・・んぐぅ・・・」{X2}「んーーーーー！！んんっ！んっ！んっ！ぐんんんんんぅぅぅ・・・。{X3}んぐぐぐぐぐぐ・・・・・、んんん・・・うう！！」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:459c"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: a new line"
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "Ａ．Ｄ．２０４８。人類は妖獣に対抗する切札として、バイオソルジャーを投入した特殊警察Ａ．Ｓ．Ｓ．Ｐ．を組織した。{X1}Ａ．Ｓ．Ｓ．Ｐ．。対妖獣特殊警察、Ａｎｔｉ－Ｓｔｒａｎｇｅｂｅａｓｔ　Ｓｐｅｃｉａｌ　Ｐｏｌｉｃｅ・・・アスプ。{X2}天賦の戦いの才を持った美少女、あらゆる格闘技を身に付けた美女、余人の追随を許さない力を持った女神達。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:464c"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "アルファ：「たまには休暇で外にでるのもいいわね」{X1}アルファ：「無理に冷静になろうとする事自体・・・、本当は冷静じゃないの　　　　　　かもしれないわ・・・」{X2}アルファ：「私はＡＳＳＰでは古株だから・・・、みんなの前では気を張って　　　　　　なければならないし・・・。ＡＳＳＰを軌道にのせるために、{X3}　　　　　　麗子と二人で必死だったわ・・・」{X4}アルファ：「・・・・・。",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:476c"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, the window cleared; {X2}: a key wait, the window cleared; {X3}: a new line; {X4}: a key wait, the window cleared"
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "アルファ：「・・・・・。はあーーー、だめねぇ・・・。{X1}　　　　　　やっぱり、本部を離れると、気が緩んでしまうわ・・・」{X2}アルファ：「あの・・・、隊長？{X3}　　　　　　気が緩んだついでに・・・。お願いがあるんだけど・・・」",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4865"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: a key wait, a new line; {X2}: a key wait, the window cleared; {X3}: a key wait, a new line"
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "アルファ：「ああっ・・・！んんっ・・・」{X1}アルファ：「乱暴にしてもいいから・・・、くっ・・・。{X2}　　　　　　私を、・・・いかせて・・・」{X3}アルファ：「あっ、ああっああう・・・」{X4}アルファ：「んんんんんん・・・。{X5}んあっ！あう・・・」{X6}アルファ：「はあああああああぁぁぁぁぁぁ・・・・・・」{X7}　{X8}　　重厚なシナリオと軽快なゲームシステムのシミュレーションゲーム{X9}　{X10}　　　　　　　　　『妖獣戦記－Ａ．Ｄ．２０４８－』{X11}　　　　　　　　　ＰＣ－９８０１ＶＭ／ＵＶシリーズ{X12}　　　　　　　　　ＰＣ－９８２１ＭＵＬＴｉ／ＭＡＴＥ{X13}　　　　　　　ＦＭ－ＴＯＷＮＳシリーズ（Ｍａｒｔｙ対応）{X14}　　　　　　　　　　　標準価格　各８，８００円",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4909"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: animation 0 off, a key wait, the window cleared, animation 0 on; {X2}: animation 0 off, a key wait, a new line, animation 0 on; {X3}: animation 0 off, a key wait, the window cleared, animation 0 on; {X4}: animation 0 off, a key wait, the window cleared; {X5}: animation 0 on; {X6}: animation 0 off, a key wait, the window cleared, animation 0 on; {X7}: animation 0 off, a key wait, the window cleared; {X8}: a new line; {X9}: a key wait, the window cleared; {X10}: a new line; {X11}: a key wait, the window cleared; {X12}: a new line; {X13}: a key wait, the window cleared; {X14}: a new line"
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "　{X1}　　　　　　－－－－－－ユーザーズサロン（仮称）－－－－－－{X2}　　　　　　　　　　　３Ｄディスク改造計画その１{X3}　　　－ユーザーからのお便り・ＣＧコーナーを作ろう、という企画－",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4b27"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a key wait, the window cleared; {X3}: a new line"
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "３Ｄディスクをもっと面白い物にしよう！ということで、まずは、ユーザー{X1}の皆さんの交流の場所となる、お便り・ＣＧコーナーを作りたいなぁと思い{X2}ます。{X3}でも、でも、でもでもでも、できるかどうかは、ユーザーの方々の絶大なご協力とご支持があって初めて成り立つのです。{X4}いやユーザーの皆さんは、きっときっと投稿してくれるに違いない。{X5}私は信じて待っています。{X6}この間も友人とカラオケに行って、あみんの「待つわ」を歌ってきました。{X7}（・・・つまらなかったですね）{X8}タイトルも未定なので「これは！」というのがあったらドンドン応募してください{X9}（「タイトル募集中」というタイトルの連作エッセイの本がありましたっけ）。{X10}３Ｄディスクへの皆様のお便り、イラスト、ＣＧ、感想、ご意見などお待ちしております。{X11}文章はテキストファイルなんかで送ってくれると、３Ｄディスクに載せるのにはとっても助かるなぁ。{X12}もちろん普通の手紙でもＯＫです。イラスト、ＣＧもよろしくね。{X13}そうそう、Ｖｏｌ．４とＶｏｌ．５で募集した宿題のＣＧも、まだ受け付けていまーす。宛て先はこちら・・・{X14}　郵便番号　２５１{X15}　神奈川県藤沢市藤沢１１５－２　藤沢郵便局　私書箱４号{X16}　（株）ディー・オー「クラブＤ．Ｏ．事務局　お便り、ＣＧコーナー」係",
+   "en": "",
+   "refs": [
+    "DK6V2.EDT:4bba"
+   ],
+   "max_cells": 32,
+   "note": "{X1}: a new line; {X2}: a new line; {X3}: animation 1 off, a key wait, the window cleared, animation 1 on; {X4}: animation 1 off, a key wait, the window cleared, animation 1 on; {X5}: animation 1 off, a key wait, the window cleared, animation 1 on; {X6}: animation 1 off, a key wait, a new line, animation 1 on; {X7}: animation 1 off, a new line; {X8}: a key wait, the window cleared, animation 1 on; {X9}: animation 1 off; {X10}: a key wait, the window cleared, animation 1 on; {X11}: animation 1 off, a key wait, the window cleared, animation 1 on; {X12}: animation 1 off, a key wait, the window cleared, animation 1 on; {X13}: animation 1 off, a key wait, the window cleared, animation 1 on; {X14}: animation 1 off, a key wait, the window cleared, animation 5 on; {X15}: a new line; {X16}: a new line"
+  },
+  {
+   "id": "c00001",
+   "kind": "cmd",
+   "jp": "　 １",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:0"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00002",
+   "kind": "cmd",
+   "jp": "　 ２",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00003",
+   "kind": "cmd",
+   "jp": "　 ３",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:2"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00004",
+   "kind": "cmd",
+   "jp": "　 ４",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00005",
+   "kind": "cmd",
+   "jp": "　 ５",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:4"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00006",
+   "kind": "cmd",
+   "jp": "　 ６",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:5"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00007",
+   "kind": "cmd",
+   "jp": "　 ７",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:6"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00008",
+   "kind": "cmd",
+   "jp": "　 ８",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:7"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00009",
+   "kind": "cmd",
+   "jp": "　 ９",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00010",
+   "kind": "cmd",
+   "jp": "　１０",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:9"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00011",
+   "kind": "cmd",
+   "jp": "Ｆ　　Ｆ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:10"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00012",
+   "kind": "cmd",
+   "jp": "Ｒ Ｅ Ｗ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:11"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "c00013",
+   "kind": "cmd",
+   "jp": "ＥＸＩＴ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:12"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": " 前　進 ",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4b8"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "右を向く",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4c1"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "左を向く",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4ca"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": " 後　退 ",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:b4d3"
+   ],
+   "max_cells": 8
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ドライブ{X1}に",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10422",
+    "ADL5.EXE:10469"
+   ],
+   "max_cells": 9,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "{X1}をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10431"
+   ],
+   "max_cells": 43,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10478"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ディスクが書き込み禁止になっています。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104ae"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "セーブが終了しました。",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104de"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "システムディスク",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:104f9"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "データディスク",
+   "en": "",
+   "refs": [
+    "ADL5.EXE:10510"
+   ],
+   "max_cells": 13
+  }
+ ]
+}

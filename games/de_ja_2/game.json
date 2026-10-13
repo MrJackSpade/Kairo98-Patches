@@ -1,0 +1,35 @@
+{
+ "title": "De-Ja II",
+ "key": "elf.zip/De-Ja II",
+ "image": "De-Ja II\\De-Ja II [HD]\\De-Ja II.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "game_dir": "DEJA2",
+ "calls": {
+  "7": {
+   "cells": 12,
+   "note": "the hero's family name (the name entry's, はつしば by default)"
+  },
+  "8": {
+   "cells": 12,
+   "note": "the hero's given name (the name entry's, りゅうすけ by default)"
+  },
+  "9": {
+   "cells": 6,
+   "note": "an ellipsis (three ・, printed in Japanese)"
+  },
+  "18": {
+   "cells": 16,
+   "note": "an island's name (083.MES's subroutine, its own text a string of its own)"
+  },
+  "21": {
+   "cells": 16,
+   "note": "a place's name (083.MES's subroutine, its own text a string of its own)"
+  },
+  "22": {
+   "cells": 16,
+   "note": "a guide's name (083.MES's subroutine, its own text a string of its own)"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:right,3:shot"
+}

@@ -1,0 +1,10 @@
+{
+ "title": "Gloria - Kindan no Ketsuzoku",
+ "key": "CsWare.zip/Gloria - Kindan no Ketsuzoku",
+ "image": "Gloria - Kindan no Ketsuzoku\\Gloria - Kindan no Ketsuzoku [HD]\\Gloria - Kindan no Ketsuzoku.hdi",
+ "encoding": "aaru",
+ "program": "GLORIA.EXE",
+ "game_dir": "GLORIA",
+ "boot_steps": "20:lclick,6:shot,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=-10;0,0.2:mouse=0;-10,0.2:mouse=0;-10,0.2:mouse=0;-10,0.2:mouse=0;-10,0.2:mouse=0;-10,1:lclick,8:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot",
+ "window_cells": 50
+}

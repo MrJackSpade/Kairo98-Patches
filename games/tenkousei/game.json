@@ -1,0 +1,66 @@
+{
+ "title": "Tenkousei",
+ "key": "SpaceProject.zip/Tenkousei",
+ "image": "Tenkousei\\Tenkousei [HD]\\Tenkousei.hdi",
+ "encoding": "choreo",
+ "program": "CHOREOV.EXE",
+ "game_dir": "TENKOU",
+ "ini": "TENKOU.INI",
+ "line_cells": 35,
+ "rooms": [
+  [
+   "choice",
+   null,
+   24
+  ],
+  [
+   "choice",
+   [
+    0,
+    10
+   ],
+   15
+  ],
+  [
+   "choice",
+   [
+    1,
+    10
+   ],
+   15
+  ],
+  [
+   "choice",
+   [
+    2,
+    10
+   ],
+   15
+  ],
+  [
+   "choice",
+   [
+    3,
+    10
+   ],
+   15
+  ],
+  [
+   "choice",
+   [
+    4,
+    10
+   ],
+   15
+  ],
+  [
+   "choice",
+   [
+    4,
+    29
+   ],
+   4
+  ]
+ ],
+ "boot_steps": "20:shot,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=-10;0,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,1:lclick,4:shot,2:lclick,3:lclick,3:lclick,3:shot,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,0.1:mouse=0;-10,1:shot,1:lclick,4:shot,2:lclick,3:shot,2:lclick,3:shot"
+}

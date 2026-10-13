@@ -30,15 +30,16 @@ ides' Adv98V script engine (`VC2/`), on a hard-disk image: 337 scripts with text
 
 ## Script
 
-34690 strings (34589 messages, 84 menu items, 2 string variable values, 15 program strings).
+34740 strings (34589 messages, 84 menu items, 2 string variable values, 48 text file lines, 17 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 34690 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 34740 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `MES/VC2_STF.DAT`, `TCM/VC2_STF.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
 
 ## Not handled
@@ -54,5 +55,6 @@ Translation and the content classification (♥) are done by the translation mod
 | Name entry window | OK: the window's labels as filler at their places (the kana table stays Japanese). In the original and the patched build the buttons take clicks (Standard name fills in the default), but Finish input leaves the game on the window in np21w, and with the window's call left out the original stops at the next command too; so for the rest of the test a test image set the two name parts to their defaults with the engine's own expression call (cd 5376 "@0='...'") in place of the window's calls |
 | Opening (city pictures, headgear boot text) | OK: filler wrapped between words to the box, pages waiting for a click, the red boot text on its lines |
 | First room scene (test image) | OK: speaker bracket, the hero's name (DISP @1, 8 columns kept for it) and the message on one line, wrapped between words inside the 3-line box, pages waiting for a click; the two-item menu after the question |
+| Staff rolls (MES/VC2_STF.DAT, TCM/VC2_STF.DAT) | not yet seen |
 | Choosing a name in the window, phone calls, save/load, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

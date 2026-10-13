@@ -1,0 +1,17 @@
+{
+ "title": "Coming Heart",
+ "key": "May-beSoft.zip/Coming Heart",
+ "image": "Coming Heart\\Coming Heart [HD]\\Coming Heart.hdi",
+ "encoding": "mapl",
+ "program": "MAPL.EXE",
+ "game_dir": "COMING",
+ "store": "fdff",
+ "rooms": {
+  "command": 32
+ },
+ "opening_at": "CH_OPEN.EXE",
+ "utilities": [
+  "TRNSDAT.EXE"
+ ],
+ "boot_steps": "15:shot,6:shot,6:shot,6:shot,6:shot,6:shot,6:shot,6:shot,6:shot,6:shot,6:shot,2:lclick,4:shot,2:lclick,4:shot,2:lclick,4:shot,2:lclick,4:shot"
+}

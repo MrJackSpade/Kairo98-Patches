@@ -1,0 +1,11 @@
+{
+ "title": "Twilight Hotel",
+ "key": "ZyX.zip/Twilight Hotel",
+ "image": "Twilight Hotel\\Twilight Hotel [HD]\\Twilight Hotel.hdi",
+ "encoding": "zyx",
+ "program": "ZVA.EXE",
+ "archive": "ZSS",
+ "game_dir": "TH",
+ "window_cells": 72,
+ "boot_steps": "30:rclick,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,3:enter,2:shot,1:mouse=-5;29,1:mouse=0;29,1:mouse=0;29,1:shot,1:lclick,6:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot,3:enter,3:enter,1:shot"
+}

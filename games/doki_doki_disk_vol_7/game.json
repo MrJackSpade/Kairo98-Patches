@@ -1,0 +1,11 @@
+{
+ "title": "D.O. Doki Doki Disk Vol. 7",
+ "key": "DO.zip/D.O. Doki Doki Disk Vol. 7",
+ "image": "D.O. Doki Doki Disk Vol. 7\\D.O. Doki Doki Disk Vol. 7 [FD]\\D.O. Doki Doki Disk Vol. 7.hdm",
+ "encoding": "adl",
+ "version": "adl5",
+ "program": "ADL5.EXE",
+ "game_dir": "",
+ "name_cells": 8,
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

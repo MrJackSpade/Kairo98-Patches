@@ -1,0 +1,14 @@
+{
+ "title": "Arquelphos",
+ "key": "DO.zip/Arquelphos",
+ "image": "Arquelphos\\Arquelphos [HD]\\Arquelphos.hdi",
+ "encoding": "adl",
+ "version": "arq98",
+ "program": "ARQ98.EXE",
+ "game_dir": "DL02",
+ "program_files": [
+  "PCMSET.EXE"
+ ],
+ "boot_steps": "40:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,1:mouse=88;-150,1:lclick,3:shot,3:lclick,3:shot,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,1.5:lclick,2:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot,1.5:lclick,1:shot",
+ "message_cells": 48
+}

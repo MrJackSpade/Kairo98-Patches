@@ -1,0 +1,10 @@
+{
+ "title": "D.O. Doki Doki Disk Vol. 3",
+ "key": "DO.zip/D.O. Doki Doki Disk Vol. 3",
+ "image": "D.O. Doki Doki Disk Vol. 3\\D.O. Doki Doki Disk Vol. 3 [FD]\\D.O. Doki Doki Disk Vol. 3.hdm",
+ "encoding": "adl",
+ "version": "adl2",
+ "program": "ADL.EXE",
+ "game_dir": "",
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

@@ -1,0 +1,43 @@
+{
+ "title": "Cat's Part 1",
+ "key": "CatsPro.zip/Cat's Part 1",
+ "image": "Cat's Part 1\\Cat's Part 1 [FD]\\Cat's Part 1 (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "menu_fullwidth": true,
+ "boot_steps": "60:shot,30:shot,4:lclick,4:shot",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Cat's Part 1 (Disk B).hdm",
+   "Cat's Part 1 (Disk C).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "IO98.SYS",
+   "MEGDOS.SYS",
+   "INSTH.EXE",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\",
+   "PART1"
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ }
+}

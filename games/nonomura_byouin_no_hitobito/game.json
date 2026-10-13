@@ -1,0 +1,24 @@
+{
+ "title": "Nonomura Byouin no Hitobito",
+ "key": "Silkys.zip/Nonomura Byouin no Hitobito",
+ "image": "Nonomura Byouin no Hitobito\\Nonomura Byouin no Hitobito [HD]\\Nonomura Byouin no Hitobito.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "NONOMURA",
+ "archive_format": "silkdat",
+ "archives": [
+  "SILK0.DAT",
+  "SILK1.DAT",
+  "SILK2.DAT",
+  "SILK3.DAT",
+  "SILK4.DAT"
+ ],
+ "calls": {
+  "0": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

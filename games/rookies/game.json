@@ -1,0 +1,14 @@
+{
+ "title": "Rookies",
+ "key": "UmitsukiSeisakusho.zip/Rookies",
+ "image": "Rookies\\Rookies [HD]\\Rookies.hdi",
+ "encoding": "aas",
+ "program": "ANI.EXE",
+ "game_dir": "ROOKIES",
+ "names": [
+  781,
+  55,
+  28
+ ],
+ "boot_steps": "15:shot,1:enter,4:shot,1:enter,6:shot,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=10;0,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,0.1:mouse=0;10,1:lclick,6:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,1:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,1:shot,2:rclick,3:shot"
+}

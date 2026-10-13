@@ -31,9 +31,9 @@ ides' Adv98V script engine (`INJU/`), on a hard-disk image: 101 scripts with tex
 
 ## Script
 
-6128 strings (39 name tags (procedure text), 5536 messages, 552 menu items, 1 program strings).
+6129 strings (39 name tags (procedure text), 5534 messages, 553 menu items, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 6128 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 6129 strings have English so far.
 
 ## Limits
 

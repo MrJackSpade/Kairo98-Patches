@@ -1,0 +1,10 @@
+{
+ "title": "Mugen Yasoukyoku",
+ "key": "Apricot.zip/Mugen Yasoukyoku",
+ "image": "Mugen Yasoukyoku\\Mugen Yasoukyoku [HD]\\Mugen Yasoukyoku.hdi",
+ "encoding": "sys98",
+ "program": "SYS98.EXE",
+ "game_dir": "夢幻夜想",
+ "sub_script": "Mug_Sub.s",
+ "boot_steps": "30:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot"
+}

@@ -31,9 +31,9 @@ ides' Adv98V script engine (`YOJU/`), on a hard-disk image: 88 scripts with text
 
 ## Script
 
-5294 strings (23 name tags (procedure text), 5097 messages, 172 menu items, 1 string variable values, 1 program strings).
+5289 strings (23 name tags (procedure text), 5097 messages, 165 menu items, 1 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 5294 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 5289 strings have English so far.
 
 ## Limits
 

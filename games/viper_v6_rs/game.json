@@ -1,0 +1,20 @@
+{
+ "title": "Viper V6 RS",
+ "key": "Sogna.zip/Viper V6 RS",
+ "image": "Viper V6 RS\\Viper V6 RS [HD]\\Viper V6 RS.hdi",
+ "encoding": "sgs",
+ "program": "SGS.COM",
+ "game_dir": "V6",
+ "window_cells": 76,
+ "scripts": [
+  "INFO.SIL",
+  "STARTUP.SIL",
+  "VB.SIL",
+  "VB1.SIL",
+  "VB2.SIL",
+  "VC0.SIL",
+  "VC1.SIL",
+  "VE.SIL"
+ ],
+ "boot_steps": "25:shot,5:enter,10:shot,1:key=38,2:shot,1:key=104,2:shot,1:enter,8:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

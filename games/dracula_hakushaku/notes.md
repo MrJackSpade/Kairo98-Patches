@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-03 (`resear
 
 ## Engine
 
-ides' Adv98V script engine (`DRACULA/`), on a hard-disk image: 110 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (`DRACULA/`), on a hard-disk image: 110 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -30,9 +30,9 @@ ides' Adv98V script engine (`DRACULA/`), on a hard-disk image: 110 scripts with 
 
 ## Script
 
-3627 strings (3605 messages, 1 name tags (procedure text), 20 menu items, 1 program strings).
+3629 strings (3605 messages, 1 name tags (procedure text), 20 menu items, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3627 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3629 strings have English so far.
 
 ## Limits
 

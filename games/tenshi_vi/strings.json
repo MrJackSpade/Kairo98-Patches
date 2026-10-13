@@ -13509,6 +13509,16 @@
   {
    "id": "e00007",
    "kind": "engine",
+   "jp": "　　Ｂ：＜リターン＞",
+   "en": "",
+   "refs": [
+    "EXE:ac7c"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
    "jp": "　４．インストーラーを起動します",
    "en": "4. Launch the installer.",
    "refs": [
@@ -13517,7 +13527,7 @@
    "max_cells": 16
   },
   {
-   "id": "e00008",
+   "id": "e00009",
    "kind": "engine",
    "jp": "　５．インストーラーが起動されますので、以下は画面に表示されるメッセージに従ってください",
    "en": "5. Once the installer starts, follow the messages displayed on screen.",
@@ -13527,7 +13537,7 @@
    "max_cells": 44
   },
   {
-   "id": "e00009",
+   "id": "e00010",
    "kind": "engine",
    "jp": "（注）ハードディスク等へのインストールを行なったことによる、直接的もしくは間接的ないかなる被害についての責任も、ジャストは責任を負わないものとします。したがって、ハードディスク等へのインストールを行なう場合は、お客様個人の責任において実行されることをあらかじめご了承下さい。",
    "en": "(Note) Just is not responsible for any direct or indirect damage caused by installing to a hard disk or other media. Therefore, please understand that any installation to a hard disk or other media is done at the customer's own risk.",
@@ -13537,7 +13547,7 @@
    "max_cells": 137
   },
   {
-   "id": "e00010",
+   "id": "e00011",
    "kind": "engine",
    "jp": "お疲れさまでした。",
    "en": "Thank you for playing.",
@@ -13547,7 +13557,7 @@
    "max_cells": 9
   },
   {
-   "id": "e00011",
+   "id": "e00012",
    "kind": "engine",
    "jp": "フロッピーディスクを抜いてから、電源を切ってください。",
    "en": "Please remove the floppy disk before turning off the power.",
@@ -13557,7 +13567,7 @@
    "max_cells": 27
   },
   {
-   "id": "e00012",
+   "id": "e00013",
    "kind": "engine",
    "jp": "ＧＤＣクロックが５ＭＨｚになっています。２．５ＭＨｚに変更してください。",
    "en": "The GDC clock is set to 5MHz. Please change it to 2.5MHz.",
@@ -13567,7 +13577,7 @@
    "max_cells": 36
   },
   {
-   "id": "e00013",
+   "id": "e00014",
    "kind": "engine",
    "jp": "変更方法：",
    "en": "How to change:",
@@ -13577,7 +13587,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00014",
+   "id": "e00015",
    "kind": "engine",
    "jp": "　ディップスイッチ２の８番をＯＦＦにしてリセットボタンを押してください。",
    "en": "Turn off dip switch 2, pin 8, and press the reset button.",
@@ -13587,7 +13597,7 @@
    "max_cells": 36
   },
   {
-   "id": "e00015",
+   "id": "e00016",
    "kind": "engine",
    "jp": "　詳しくはマニュアル等を参照してください。",
    "en": "Please refer to the manual for details.",
@@ -13597,7 +13607,7 @@
    "max_cells": 21
   },
   {
-   "id": "e00016",
+   "id": "e00017",
    "kind": "engine",
    "jp": "メッセージ[%03u] ",
    "en": "Message[%03u] ",
@@ -13607,7 +13617,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00017",
+   "id": "e00018",
    "kind": "engine",
    "jp": "フラグ[%d] は %d になりました",
    "en": "Flag[%d] is now %d",
@@ -13617,7 +13627,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00018",
+   "id": "e00019",
    "kind": "engine",
    "jp": "カウンタ %d をリセットしました",
    "en": "Counter %d has been reset",
@@ -13627,7 +13637,7 @@
    "max_cells": 15
   },
   {
-   "id": "e00019",
+   "id": "e00020",
    "kind": "engine",
    "jp": "ＬＯＯＫ",
    "en": "LOOK",
@@ -13637,7 +13647,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00020",
+   "id": "e00021",
    "kind": "engine",
    "jp": "ＳＰＥＡＫ",
    "en": "SPEAK",
@@ -13647,7 +13657,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00021",
+   "id": "e00022",
    "kind": "engine",
    "jp": "ＡＣＴＩＯＮ",
    "en": "ACTION",
@@ -13657,7 +13667,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00022",
+   "id": "e00023",
    "kind": "engine",
    "jp": "ＳＹＳＴＥＭ",
    "en": "SYSTEM",
@@ -13667,7 +13677,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00023",
+   "id": "e00024",
    "kind": "engine",
    "jp": "シーンジャンプ",
    "en": "Scene Jump",
@@ -13677,7 +13687,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00024",
+   "id": "e00025",
    "kind": "engine",
    "jp": "フラグ反転",
    "en": "Toggle Flag",
@@ -13687,7 +13697,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00025",
+   "id": "e00026",
    "kind": "engine",
    "jp": "カウンタオフ",
    "en": "Counter Off",
@@ -13697,7 +13707,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00026",
+   "id": "e00027",
    "kind": "engine",
    "jp": "デバックメニュー",
    "en": "Debug Menu",
@@ -13707,7 +13717,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00027",
+   "id": "e00028",
    "kind": "engine",
    "jp": "ロード",
    "en": "Load",
@@ -13717,7 +13727,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00028",
+   "id": "e00029",
    "kind": "engine",
    "jp": "セーブ",
    "en": "Save",
@@ -13727,7 +13737,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00029",
+   "id": "e00030",
    "kind": "engine",
    "jp": "メッセージ速度",
    "en": "Message Speed",
@@ -13737,7 +13747,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00030",
+   "id": "e00031",
    "kind": "engine",
    "jp": "ゲーム終了",
    "en": "Quit Game",
@@ -13747,7 +13757,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00031",
+   "id": "e00032",
    "kind": "engine",
    "jp": "セーブＮｏ．１",
    "en": "Save No. 1",
@@ -13757,7 +13767,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00032",
+   "id": "e00033",
    "kind": "engine",
    "jp": "セーブＮｏ．２",
    "en": "Save No. 2",
@@ -13767,7 +13777,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00033",
+   "id": "e00034",
    "kind": "engine",
    "jp": "セーブＮｏ．３",
    "en": "Save No. 3",
@@ -13777,7 +13787,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00034",
+   "id": "e00035",
    "kind": "engine",
    "jp": "セーブＮｏ．４",
    "en": "Save No. 4",
@@ -13787,7 +13797,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00035",
+   "id": "e00036",
    "kind": "engine",
    "jp": "セーブＮｏ．５",
    "en": "Save No. 5",
@@ -13797,7 +13807,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00036",
+   "id": "e00037",
    "kind": "engine",
    "jp": "セーブＮｏ．６",
    "en": "Save No. 6",
@@ -13807,7 +13817,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00037",
+   "id": "e00038",
    "kind": "engine",
    "jp": "セーブＮｏ．７",
    "en": "Save No. 7",
@@ -13817,7 +13827,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00038",
+   "id": "e00039",
    "kind": "engine",
    "jp": "セーブＮｏ．８",
    "en": "Save No. 8",
@@ -13827,7 +13837,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00039",
+   "id": "e00040",
    "kind": "engine",
    "jp": "セーブするファイルを選んでください",
    "en": "Please select a file to save",
@@ -13837,7 +13847,7 @@
    "max_cells": 17
   },
   {
-   "id": "e00040",
+   "id": "e00041",
    "kind": "engine",
    "jp": "ロードＮｏ．１",
    "en": "Load No. 1",
@@ -13847,7 +13857,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00041",
+   "id": "e00042",
    "kind": "engine",
    "jp": "ロードＮｏ．２",
    "en": "Load No. 2",
@@ -13857,7 +13867,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00042",
+   "id": "e00043",
    "kind": "engine",
    "jp": "ロードＮｏ．３",
    "en": "Load No. 3",
@@ -13867,7 +13877,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00043",
+   "id": "e00044",
    "kind": "engine",
    "jp": "ロードＮｏ．４",
    "en": "Load No. 4",
@@ -13877,7 +13887,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00044",
+   "id": "e00045",
    "kind": "engine",
    "jp": "ロードＮｏ．５",
    "en": "Load No. 5",
@@ -13887,7 +13897,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00045",
+   "id": "e00046",
    "kind": "engine",
    "jp": "ロードＮｏ．６",
    "en": "Load No. 6",
@@ -13897,7 +13907,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00046",
+   "id": "e00047",
    "kind": "engine",
    "jp": "ロードＮｏ．７",
    "en": "Load No. 7",
@@ -13907,7 +13917,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00047",
+   "id": "e00048",
    "kind": "engine",
    "jp": "ロードＮｏ．８",
    "en": "Load No. 8",
@@ -13917,7 +13927,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00048",
+   "id": "e00049",
    "kind": "engine",
    "jp": "ロードするファイルを選んでください",
    "en": "Please select a file to load",
@@ -13927,7 +13937,7 @@
    "max_cells": 17
   },
   {
-   "id": "e00049",
+   "id": "e00050",
    "kind": "engine",
    "jp": "スピード１",
    "en": "Speed 1",
@@ -13937,7 +13947,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00050",
+   "id": "e00051",
    "kind": "engine",
    "jp": "スピード２",
    "en": "Speed 2",
@@ -13947,7 +13957,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00051",
+   "id": "e00052",
    "kind": "engine",
    "jp": "スピード３",
    "en": "Speed 3",
@@ -13957,7 +13967,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00052",
+   "id": "e00053",
    "kind": "engine",
    "jp": "スピード４",
    "en": "Speed 4",
@@ -13967,7 +13977,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00053",
+   "id": "e00054",
    "kind": "engine",
    "jp": "スピード５",
    "en": "Speed 5",
@@ -13977,7 +13987,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00054",
+   "id": "e00055",
    "kind": "engine",
    "jp": "スピード６",
    "en": "Speed 6",
@@ -13987,7 +13997,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00055",
+   "id": "e00056",
    "kind": "engine",
    "jp": "スピード７",
    "en": "Speed 7",
@@ -13997,7 +14007,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00056",
+   "id": "e00057",
    "kind": "engine",
    "jp": "スピード８",
    "en": "Speed 8",
@@ -14007,7 +14017,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00057",
+   "id": "e00058",
    "kind": "engine",
    "jp": "メッセージスピードを選んでください",
    "en": "Please select the message speed",
@@ -14017,7 +14027,7 @@
    "max_cells": 17
   },
   {
-   "id": "e00058",
+   "id": "e00059",
    "kind": "engine",
    "jp": "最初から始める",
    "en": "Start from beginning",
@@ -14027,7 +14037,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00059",
+   "id": "e00060",
    "kind": "engine",
    "jp": "途中から始める",
    "en": "Start from middle",
@@ -14037,7 +14047,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00060",
+   "id": "e00061",
    "kind": "engine",
    "jp": "マニュアル補足",
    "en": "Manual Supplement",
@@ -14047,7 +14057,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00061",
+   "id": "e00062",
    "kind": "engine",
    "jp": "はい",
    "en": "Yes",
@@ -14057,7 +14067,7 @@
    "max_cells": 2
   },
   {
-   "id": "e00062",
+   "id": "e00063",
    "kind": "engine",
    "jp": "いいえ",
    "en": "No",
@@ -14067,7 +14077,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00063",
+   "id": "e00064",
    "kind": "engine",
    "jp": "終了してよろしいですか？",
    "en": "Are you sure you want to quit?",
@@ -14077,7 +14087,7 @@
    "max_cells": 12
   },
   {
-   "id": "e00064",
+   "id": "e00065",
    "kind": "engine",
    "jp": "続ける",
    "en": "Continue",
@@ -14087,7 +14097,7 @@
    "max_cells": 3
   },
   {
-   "id": "e00065",
+   "id": "e00066",
    "kind": "engine",
    "jp": "最初から",
    "en": "From beginning",
@@ -14097,7 +14107,7 @@
    "max_cells": 4
   },
   {
-   "id": "e00066",
+   "id": "e00067",
    "kind": "engine",
    "jp": "もうやめる",
    "en": "Quit now",
@@ -14107,7 +14117,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00067",
+   "id": "e00068",
    "kind": "engine",
    "jp": "例外処理実行",
    "en": "Execute exception handling",
@@ -14117,7 +14127,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00068",
+   "id": "e00069",
    "kind": "engine",
    "jp": "メッセージ初期化",
    "en": "Initialize messages",
@@ -14127,7 +14137,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00069",
+   "id": "e00070",
    "kind": "engine",
    "jp": "アニメ間隔設定",
    "en": "Set animation interval",
@@ -14137,7 +14147,7 @@
    "max_cells": 7
   },
   {
-   "id": "e00070",
+   "id": "e00071",
    "kind": "engine",
    "jp": "ＤＯＳシェル",
    "en": "DOS shell",
@@ -14147,7 +14157,7 @@
    "max_cells": 6
   },
   {
-   "id": "e00071",
+   "id": "e00072",
    "kind": "engine",
    "jp": "フラグ表示",
    "en": "Show flags",
@@ -14157,7 +14167,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00072",
+   "id": "e00073",
    "kind": "engine",
    "jp": "アニメオン",
    "en": "Animation on",
@@ -14167,7 +14177,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00073",
+   "id": "e00074",
    "kind": "engine",
    "jp": "アニメオフ",
    "en": "Animation off",
@@ -14177,7 +14187,7 @@
    "max_cells": 5
   },
   {
-   "id": "e00074",
+   "id": "e00075",
    "kind": "engine",
    "jp": "デバッグメニュー",
    "en": "Debug menu",
@@ -14187,7 +14197,7 @@
    "max_cells": 8
   },
   {
-   "id": "e00075",
+   "id": "e00076",
    "kind": "engine",
    "jp": "ドライブ２にディスクＡを入れてください",
    "en": "Please insert Disk A into drive 2",
@@ -14197,7 +14207,7 @@
    "max_cells": 19
   },
   {
-   "id": "e00076",
+   "id": "e00077",
    "kind": "engine",
    "jp": "コマンドを選択してください",
    "en": "Please select a command",
@@ -14207,7 +14217,7 @@
    "max_cells": 13
   },
   {
-   "id": "e00077",
+   "id": "e00078",
    "kind": "engine",
    "jp": "そしてその後、俺のもとに何通かの手紙が届いた‥‥‥‥。",
    "en": "And then, several letters arrived for me...",
@@ -14217,7 +14227,7 @@
    "max_cells": 27
   },
   {
-   "id": "e00078",
+   "id": "e00079",
    "kind": "engine",
    "jp": "　進藤さん、その後お変わりありませんか？",
    "en": "Shindo-san, how have you been?",
@@ -14227,7 +14237,7 @@
    "max_cells": 20
   },
   {
-   "id": "e00079",
+   "id": "e00080",
    "kind": "engine",
    "jp": "　事件の余波も過ぎ去り、白樺女学園もやっと平和な日々を取り戻しました。",
    "en": "The aftermath of the incident has passed, and Shirakaba Girls' Academy has finally returned to peaceful days.",
@@ -14237,7 +14247,7 @@
    "max_cells": 35
   },
   {
-   "id": "e00080",
+   "id": "e00081",
    "kind": "engine",
    "jp": "　この学園を救ってくれたあなたに報いるためにも、私、精一杯力を尽くして、学園を守っていくつもりです。",
    "en": "To repay you for saving this academy, I intend to give my all to protect it.",
@@ -14247,7 +14257,7 @@
    "max_cells": 50
   },
   {
-   "id": "e00081",
+   "id": "e00082",
    "kind": "engine",
    "jp": "　だからいつの日かきっともう一度教師としてこの学園に戻ってきてください。　私、一日も早くその日が訪れることを心から祈っていますから‥‥‥‥。",
    "en": "So please, someday, come back to this academy as a teacher once more. I sincerely pray that day will come soon...",
@@ -14257,7 +14267,7 @@
    "max_cells": 70
   },
   {
-   "id": "e00082",
+   "id": "e00083",
    "kind": "engine",
    "jp": "　進藤先生‥‥‥‥あっ、もう先生じゃなかったんですよね。ごめんなさい。",
    "en": "Professor Shindo... oh, you're not a professor anymore, are you? I'm sorry.",
@@ -14267,7 +14277,7 @@
    "max_cells": 35
   },
   {
-   "id": "e00083",
+   "id": "e00084",
    "kind": "engine",
    "jp": "　あの後、私も教師をやめて結婚したんです。",
    "en": "After that, I also quit teaching and got married.",
@@ -14277,7 +14287,7 @@
    "max_cells": 21
   },
   {
-   "id": "e00084",
+   "id": "e00085",
    "kind": "engine",
    "jp": "　主人は、達也さんほど若くて素敵な男性ではないけれど、やさしくて真面目ないい人です。",
    "en": "My husband isn't as young and wonderful as Tatsuya-san, but he's a kind, serious, good man.",
@@ -14287,7 +14297,7 @@
    "max_cells": 42
   },
   {
-   "id": "e00085",
+   "id": "e00086",
    "kind": "engine",
    "jp": "　少し退屈だけれど毎日平穏で、こういうのを幸せというのかなあ、っていう感じです。",
    "en": "It's a bit boring, but every day is peaceful, and I feel like this is what they call happiness.",
@@ -14297,7 +14307,7 @@
    "max_cells": 40
   },
   {
-   "id": "e00086",
+   "id": "e00087",
    "kind": "engine",
    "jp": "　あの夜のことは私の心の中に一生しまっておくつもりですが、達也さんにやさしくしてもらったことは、これからもずっと忘れません。",
    "en": "I intend to keep that night locked in my heart forever, but I will never forget how kind you were to me, Tatsuya-san.",
@@ -14307,7 +14317,7 @@
    "max_cells": 62
   },
   {
-   "id": "e00087",
+   "id": "e00088",
    "kind": "engine",
    "jp": "　では、これからもお元気で。奥さんと幸せになってください‥‥‥‥。",
    "en": "Well then, take care of yourself. Please be happy with your wife...",
@@ -14317,7 +14327,7 @@
    "max_cells": 33
   },
   {
-   "id": "e00088",
+   "id": "e00089",
    "kind": "engine",
    "jp": "　先生、元気ぃー？　由希ちゃんだよーん。",
    "en": "Teacher, how are you? It's Yuki-chan!",
@@ -14327,7 +14337,7 @@
    "max_cells": 20
   },
   {
-   "id": "e00089",
+   "id": "e00090",
    "kind": "engine",
    "jp": "　あのねー、先生がやめた後、もっとずっとカッコイイ男の先生が入ったから、みんな",
    "en": "Hey, after you quit, an even cooler male teacher came, so everyone has",
@@ -14337,7 +14347,7 @@
    "max_cells": 39
   },
   {
-   "id": "e00090",
+   "id": "e00091",
    "kind": "engine",
    "jp": "先生のことなんかすっかり忘れちゃってるよー‥‥‥‥なーんてね、ウソウソ！",
    "en": "completely forgotten about you... just kidding, it's a lie, a lie!",
@@ -14347,7 +14357,7 @@
    "max_cells": 36
   },
   {
-   "id": "e00091",
+   "id": "e00092",
    "kind": "engine",
    "jp": "　あたし、これでもけっこう執念深いんだからね。ちょっとやそっとのことじゃ先生の",
    "en": "I'm actually quite persistent, you know. I won't forget you",
@@ -14357,7 +14367,7 @@
    "max_cells": 39
   },
   {
-   "id": "e00092",
+   "id": "e00093",
    "kind": "engine",
    "jp": "こと忘れないんだから！",
    "en": "just because of something like that!",
@@ -14367,7 +14377,7 @@
    "max_cells": 11
   },
   {
-   "id": "e00093",
+   "id": "e00094",
    "kind": "engine",
    "jp": "　夏休みには智美ちゃんと一緒に先生のところへ遊びに行くからね。それまであたしの",
    "en": "During summer vacation, I'm coming to visit you with Tomomi-chan. So if you forget about me by then,",
@@ -14377,7 +14387,7 @@
    "max_cells": 39
   },
   {
-   "id": "e00094",
+   "id": "e00095",
    "kind": "engine",
    "jp": "こと忘れてたら、許さないんだよっ！",
    "en": "I won't forgive you!",
@@ -14387,7 +14397,7 @@
    "max_cells": 17
   },
   {
-   "id": "e00095",
+   "id": "e00096",
    "kind": "engine",
    "jp": "　お元気ですか？　智美です。",
    "en": "How are you? This is Tomomi.",
@@ -14397,7 +14407,7 @@
    "max_cells": 14
   },
   {
-   "id": "e00096",
+   "id": "e00097",
    "kind": "engine",
    "jp": "　先生が突然学校をやめちゃったんで、私、すごくショックだったんですよ？",
    "en": "When you suddenly quit school, I was really shocked, you know?",
@@ -14407,7 +14417,7 @@
    "max_cells": 35
   },
   {
-   "id": "e00097",
+   "id": "e00098",
    "kind": "engine",
    "jp": "　クラスのみんなも、最後の授業で先生にひどいこと言っちゃったけど、今はみんな、",
    "en": "Everyone in class said terrible things to you in the last class, but now everyone is saying",
@@ -14417,7 +14427,7 @@
    "max_cells": 39
   },
   {
-   "id": "e00098",
+   "id": "e00099",
    "kind": "engine",
    "jp": "「先生に戻ってきてほしい」って言ってます。",
    "en": "'We want the teacher to come back.'",
@@ -14427,7 +14437,7 @@
    "max_cells": 21
   },
   {
-   "id": "e00099",
+   "id": "e00100",
    "kind": "engine",
    "jp": "　ところで、由希ちゃんが「夏休みには先生のところに遊びに行くんだっ！」って勝手",
    "en": "By the way, Yuki-chan is all excited saying 'I'm going to visit the teacher during summer vacation!' but if it's okay with you, I'd like to come see you too.",
@@ -14437,7 +14447,7 @@
    "max_cells": 39
   },
   {
-   "id": "e00100",
+   "id": "e00101",
    "kind": "engine",
    "jp": "にはりきってますけど、先生さえよかったら私も先生に会いに行きたいな。",
    "en": "Well then, please reply whenever you have time. I'll be waiting...",
@@ -14447,7 +14457,7 @@
    "max_cells": 34
   },
   {
-   "id": "e00101",
+   "id": "e00102",
    "kind": "engine",
    "jp": "　それじゃ、いつでもいいですからお返事くださいね。待ってますから‥‥‥‥。",
    "en": "Teacher, it's been a while! This is Matsumoto Ikuko.",
@@ -14457,7 +14467,7 @@
    "max_cells": 37
   },
   {
-   "id": "e00102",
+   "id": "e00103",
    "kind": "engine",
    "jp": "　先生、お久しぶり！　松本郁子です。",
    "en": "Teacher, you promised to come cheer for me at the national tournament, so why didn't you come? I'm really disappointed.",
@@ -14467,7 +14477,7 @@
    "max_cells": 18
   },
   {
-   "id": "e00103",
+   "id": "e00104",
    "kind": "engine",
    "jp": "　先生、全国大会は応援に来てくれるって約束したのに、どうして来てくれなかったんですか？　すごく残念です。",
    "en": "But look! I won the 100m dash and got a trophy and a certificate. Pretty amazing, right? But of course, it's all thanks to you.",
@@ -14477,7 +14487,7 @@
    "max_cells": 52
   },
   {
-   "id": "e00104",
+   "id": "e00105",
    "kind": "engine",
    "jp": "　でも、ほらっ！　私、１００Ｍ走で優勝して、カップと賞状をもらったんですよ。すごいでしょ？　でももちろん、これもみんな先生のおかげです。",
    "en": "Senior Yamaguchi also placed a wonderful third in the 400m. Just as expected!",
@@ -14487,7 +14497,7 @@
    "max_cells": 68
   },
   {
-   "id": "e00105",
+   "id": "e00106",
    "kind": "engine",
    "jp": "　山口先輩も、４００Ｍで見事３位に入賞しました。さすがですよネ！",
    "en": "She also said to say hi to you, so please definitely come watch the next tournament!!",
@@ -14497,7 +14507,7 @@
    "max_cells": 32
   },
   {
-   "id": "e00106",
+   "id": "e00107",
    "kind": "engine",
    "jp": "　先輩からも、先生によろしくって言ってましたから次の大会は絶対見に来てくださいね！！",
    "en": "Teacher... how are you? I'm still working hard at my piano practice as always.",
@@ -14507,7 +14517,7 @@
    "max_cells": 42
   },
   {
-   "id": "e00107",
+   "id": "e00108",
    "kind": "engine",
    "jp": "　先生‥‥お元気ですか？私は、相変わらずピアノのおけいこに頑張ってます。",
    "en": "...But since I met you, I feel like I've come to love piano practice even more than before.",
@@ -14517,7 +14527,7 @@
    "max_cells": 36
   },
   {
-   "id": "e00108",
+   "id": "e00109",
    "kind": "engine",
    "jp": "　‥‥‥でも私、先生に出会ってから、前よりもっとピアノの練習が好きになったような気がします。",
    "en": "That's surely because whenever I play, I put my feelings for you into it, playing as if you're listening.",
@@ -14527,7 +14537,7 @@
    "max_cells": 46
   },
   {
-   "id": "e00109",
+   "id": "e00110",
    "kind": "engine",
    "jp": "　きっとそれは、いつもピアノを弾くときには、先生への想いを込めて、先生に聴いてもらっているつもりで弾いているからですね。",
    "en": "And now, I have a goal.",
@@ -14537,7 +14547,7 @@
    "max_cells": 60
   },
   {
-   "id": "e00110",
+   "id": "e00111",
    "kind": "engine",
    "jp": "　それに、今の私には目標があるんです。",
    "en": "That goal is to become even better at piano someday, and when I meet you again, I want you to hear my playing and be moved. So... until then, please don't forget about Risa.",
@@ -14547,7 +14557,7 @@
    "max_cells": 19
   },
   {
-   "id": "e00111",
+   "id": "e00112",
    "kind": "engine",
    "jp": "　それは、いつか、もっともっとピアノがうまくなって、先生にもう一度出会ったときに私のピアノを聴いて感動してほしいんです。だから‥‥‥それまで理沙のこと、忘れないでくださいね。",
    "en": "Teacher, I'll do my best! I don't know if I can make up for the lost time before the national tournament, but I'll train even harder than before, and I'll definitely...",

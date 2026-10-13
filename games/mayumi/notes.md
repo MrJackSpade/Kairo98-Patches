@@ -3,11 +3,11 @@
 > This patch's script is a **machine translation (AI/MTL)**, not a human translation. It will be retired if a human translation is released.
 
 Source image: `Mayumi/Mayumi [HD]/Mayumi.hdi` (sha256 in `strings.json`).
-Clearance: no PC-98 English release or announcement found on 2026-10-03 (`research/clearance.json`).
+Clearance: no PC-98 English release or announcement found on 2026-10-11 (`research/clearance.json`).
 
 ## Engine
 
-ides' Adv98V script engine (`MAYUMI/`), on a hard-disk image: 72 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  No procedure holds text, so no procedure grows.
+ides' Adv98V script engine (`MAYUMI/`), on a hard-disk image: 72 scripts with text (`MES/*.MES`, `*.MEC`) in its bytecode (`pc98tl/adv98v.py` documents it).  Every script tokenizes and rebuilds byte for byte.  The procedure table was not measured, so a procedure may not grow: text in a procedure (`n` ids) keeps its Japanese byte length.
 
 ## English display (`pc98tl/adv98v_tl.py`)
 
@@ -30,14 +30,13 @@ ides' Adv98V script engine (`MAYUMI/`), on a hard-disk image: 72 scripts with te
 
 ## Script
 
-4944 strings (4749 messages, 74 menu items, 18 name tags (procedure text), 102 string variable values, 1 program strings).
+4912 strings (4715 messages, 74 menu items, 18 name tags (procedure text), 102 string variable values, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4944 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4912 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; `\n` starts a new line.  Full-width characters can stay in the English; `{Uxxxx}` stand for the game's own characters (hearts, symbols) and are written back as they are.
-* This engine draws menus from Shift-JIS only (an ASCII string in a menu crashes it), so menu items are written in full-width letters: `max_cells` letters each, cut and padded.
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own, so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
@@ -51,8 +50,6 @@ Translation and the content classification (♥) are done by the translation mod
 
 | Test | Result |
 |---|---|
-| Load menu | OK: question as filler at its Japanese width; full-width filler items |
-| Opening (short lines placed on the screen, each character faded in) | OK: each line one message (the fade commands between its characters belong to it), filler at its Japanese width where it is placed |
-| First scene messages | OK: filler wrapped between words to the box set at startup, 3-line pages |
-| Save/load, later scenes, endings | not yet seen |
+| Boot from the hard disk: the first menu; Enter on its first item | OK: the menu's prompt and items in filler half-width; the game starts |
+| The opening: its captions over the pictures, then the messages, Enter after each | OK: the captions and messages in filler half-width, broken between words (a caption fitted to its box, past it reported) |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

@@ -1,0 +1,17 @@
+{
+ "title": "Crystal Rinal",
+ "key": "DO.zip/Crystal Rinal",
+ "image": "Crystal Rinal\\Crystal Rinal (CD version) [HD]\\Crystal Rinal (CD version).hdi",
+ "encoding": "adl",
+ "version": "adl21",
+ "program": "ADL21.EXE",
+ "game_dir": "CL",
+ "archive": "EDT",
+ "tables": [
+  "POWER.EDT"
+ ],
+ "boot_steps": "60:shot,10:shot,2:lclick,3:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 10,
+ "boot_fd": "Crystal Rinal\\Crystal Rinal (CD version) [HD]\\Crystal Rinal (CD version) (HD Boot disk).hdm",
+ "cd": "Crystal Rinal\\Crystal Rinal [CD]\\Crystal Rinal.ccd"
+}

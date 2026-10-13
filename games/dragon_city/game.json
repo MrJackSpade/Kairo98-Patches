@@ -1,0 +1,19 @@
+{
+ "title": "Dragon City X Shitei",
+ "key": "FairytaleXShitei.zip/Dragon City X Shitei",
+ "image": "Dragon City X Shitei\\Dragon City X Shitei [FD]\\Dragon City X Shitei (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "base_scripts": [
+  "STARTING.MES",
+  "STARTPRO.MES"
+ ],
+ "program_files": [
+  "BIN/NAME.BIN"
+ ],
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "boot_steps": "40:shot,3:enter,3:enter,3:enter,15:shot,1:key=65,1:key=66,1:key=67,2:shot,2:key=13,4:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

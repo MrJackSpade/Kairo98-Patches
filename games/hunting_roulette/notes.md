@@ -25,9 +25,9 @@ JAST's scene engine (`HNT/HNT_RLT.EXE`): 152 scene files (`*.OVL`) holding text 
 
 ## Script
 
-4985 strings (4833 scene text, 152 engine strings).
+4986 strings (4833 scene text, 153 engine strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 4985 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 4986 strings have English so far.
 
 ## Limits
 

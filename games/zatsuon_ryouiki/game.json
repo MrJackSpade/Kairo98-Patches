@@ -1,0 +1,11 @@
+{
+ "title": "Zatsuon Ryouiki",
+ "key": "DO.zip/Zatsuon Ryouiki",
+ "image": "Zatsuon Ryouiki\\Zatsuon Ryouiki [HD]\\Zatsuon Ryouiki.hdi",
+ "encoding": "adl",
+ "version": "adl98",
+ "program": "ADL98.EXE",
+ "game_dir": "ZR",
+ "name_cells": 10,
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

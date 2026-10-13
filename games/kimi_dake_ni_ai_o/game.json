@@ -1,0 +1,46 @@
+{
+ "title": "Kimi Dake ni Ai o",
+ "key": "GameTechnopolis.zip/Kimi Dake ni Ai o",
+ "image": "Kimi Dake ni Ai o\\Kimi Dake ni Ai o... [FD]\\Kimi Dake ni Ai o... (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "KIMI",
+ "extraop": false,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "proc_fullwidth": true,
+ "script_room": 17100,
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "KIMI",
+  "disks": [
+   "Kimi Dake ni Ai o... (Disk B).hdm",
+   "Kimi Dake ni Ai o... (Disk C).hdm"
+  ],
+  "subdirs": true,
+  "skip": [
+   "ADV98V.SYS",
+   "CONFIG.SYS"
+  ],
+  "run": [
+   "A:",
+   "cd \\KIMI",
+   "ADV98V\\ADVBIOS",
+   "cd .."
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "drive_prefix": {
+  "a:": "",
+  "b:": ""
+ },
+ "boot_steps": "40:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

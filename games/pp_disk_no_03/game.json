@@ -1,0 +1,73 @@
+{
+ "title": "PP Disk No. 03",
+ "key": "Mediax.zip/PP Disk No. 03",
+ "image": "PP Disk No. 03\\PP Disk No. 03 [FD]\\PP Disk No. 03 (Disk A).hdm",
+ "encoding": "ppdisk",
+ "game_dir": "PPDISK",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "PPDISK",
+  "disks": [
+   "PP Disk No. 03 (Disk B).hdm"
+  ],
+  "disk_dirs": {
+   "PP Disk No. 03 (Disk B).hdm": "B"
+  },
+  "skip": [
+   "CDOS98.COM",
+   "SHELL.COM",
+   "SHELL.RC"
+  ],
+  "run": [
+   "A:",
+   "cd \\PPDISK",
+   "MDRV",
+   "MDRV -tgun_kuan.tdt",
+   "MDRV -ddrums.drm",
+   "MDRV -mppdisk01.kmd",
+   "MDRV -p",
+   "PPDISK -d",
+   "cd B",
+   "PPDISK -d",
+   "cd \\"
+  ],
+  "replace": [
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ]
+ },
+ "folders": {
+  "A": "PPDISK",
+  "B": "PPDISK/B"
+ },
+ "demo": {
+  "disk": "B",
+  "version": "ai5",
+  "program": "SIL.EXE",
+  "archive_format": "silkdat",
+  "archives": [
+   "SILK0.DAT"
+  ],
+  "calls": {
+   "3": {
+    "page": true,
+    "note": "a key wait and a new page"
+   },
+   "59": {
+    "page": true,
+    "note": "a key wait and a new page"
+   },
+   "24": {
+    "page": true,
+    "note": "a key wait and a new page"
+   }
+  }
+ },
+ "boot_steps": ""
+}

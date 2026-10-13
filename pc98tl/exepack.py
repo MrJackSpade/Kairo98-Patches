@@ -126,12 +126,36 @@ def pack(orig, image):
     kept where the bytes are unchanged, and those covering changed bytes
     become copies (a fill split around them).  The unpacker, its
     relocation table and the memory the program asks for stay as they
-    were.  The result is checked by unpacking it."""
+    were.  The result is checked by unpacking it.
+
+    The unpacker decodes in place, from the end down: a copy's data must
+    stay below the output it becomes.  When a change near the image's start
+    breaks that, the image is kept as it is (the packed data's own start,
+    left in place) up to the end of the lowest changed command, and the
+    packing tried again."""
+    prefix, cmds, _ = _commands(orig)
+    keep = 0
+    while True:
+        try:
+            return _pack(orig, image, keep)
+        except (ValueError, IndexError):
+            nxt = [n for n in range(keep, len(cmds))
+                   if image[cmds[n][0]:cmds[n][1]] != (bytes([cmds[n][3]]) * (cmds[n][1] - cmds[n][0])
+                                                     if cmds[n][2] == "fill" else cmds[n][3])]
+            if not nxt:
+                raise
+            keep = nxt[0] + 1
+
+
+def _pack(orig, image, keep):
+    """`pack` with the image's first `keep` commands' output kept in place."""
     hdr = list(struct.unpack_from("<14H", orig, 0))
     base = hdr[4] * 16
     img = orig[base:]
     block = hdr[11] * 16
     prefix, cmds, _ = _commands(orig)
+    if keep:
+        prefix, cmds = cmds[keep - 1][1], cmds[keep:]
     out = []
     for start, end, kind, val in cmds:
         new = image[start:end]

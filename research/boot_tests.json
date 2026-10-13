@@ -884,6 +884,10 @@
    "OK: each page holds until clicked (checked after 20 s), one click a page"
   ],
   [
+   "Staff list (DAT/STAFF.DAT, from the menu)",
+   "not yet seen"
+  ],
+  [
    "Registration (name entry), save/load, other scenarios, endings",
    "not yet seen"
   ]
@@ -916,6 +920,10 @@
    "OK: filler wrapped between words to the 3-line box (63 columns), pages with a wait between"
   ],
   [
+   "Staff roll (TCM/FN_STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "Save/load, later chapters, endings",
    "not yet seen"
   ]
@@ -936,6 +944,10 @@
   [
    "Opening scene",
    "OK: filler wrapped between words to the 2-line box, pages with a wait between"
+  ],
+  [
+   "Staff roll (GIBO_TCM/STAFF.DAT)",
+   "not yet seen"
   ],
   [
    "Save/load, later acts, endings",
@@ -1014,6 +1026,10 @@
    "OK: filler wrapped to the box"
   ],
   [
+   "Staff credits (TCM/S_CREDIT.DAT)",
+   "not yet seen"
+  ],
+  [
    "In-game menus, save/load, later acts, endings",
    "not yet seen"
   ]
@@ -1068,26 +1084,26 @@
    "OK: filler items at their Japanese width"
   ],
   [
+   "Staff rolls (CLM/ROLL.DAT, CLM/ROLL2.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
+  ],
+  [
    "Save/load, later days (other disks' files), endings",
    "not yet seen"
   ]
  ],
  "mayumi": [
   [
-   "Load menu",
-   "OK: question as filler at its Japanese width; full-width filler items"
+   "Boot from the hard disk: the first menu; Enter on its first item",
+   "OK: the menu's prompt and items in filler half-width; the game starts"
   ],
   [
-   "Opening (short lines placed on the screen, each character faded in)",
-   "OK: each line one message (the fade commands between its characters belong to it), filler at its Japanese width where it is placed"
-  ],
-  [
-   "First scene messages",
-   "OK: filler wrapped between words to the box set at startup, 3-line pages"
-  ],
-  [
-   "Save/load, later scenes, endings",
-   "not yet seen"
+   "The opening: its captions over the pictures, then the messages, Enter after each",
+   "OK: the captions and messages in filler half-width, broken between words (a caption fitted to its box, past it reported)"
   ]
  ],
  "will_no_dengon": [
@@ -1158,6 +1174,10 @@
    "OK: tag on the first line, filler wrapped between words under it, 2-line pages; each page cleared and re-tagged as between the original messages (they used to draw over each other)"
   ],
   [
+   "Ending rolls (CMD/ROLL_A.DAT, CMD/ROLL_B.DAT)",
+   "not yet seen"
+  ],
+  [
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
@@ -1172,6 +1192,14 @@
    "OK: speaker tag on the first line, filler wrapped between words to the box (set at startup), pages of 3 lines"
   ],
   [
+   "Name entry prompt (CMD/MOUSENAM.I86, the start menu's fourth item)",
+   "OK: half-width filler under the kana grid; the grid stays as it is"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
+  ],
+  [
    "Save/load, later scenes, endings",
    "not yet seen"
   ]
@@ -1184,6 +1212,18 @@
   [
    "Title menu (artwork) with the wizard skipped in a test image",
    "Blocked: the cursor moves (arrows, mouse) but no item can be selected (click, Enter, space)"
+  ],
+  [
+   "Ending roll (DAT/END1.DAT)",
+   "not yet seen"
+  ],
+  [
+   "Restart list (DAT/RESTART.DAT) and the load window's notes (DAT/TJLH.DAT)",
+   "not yet seen (behind the setup wizard, which takes no emulated input)"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
   ],
   [
    "Messages, menus, scenes past the opening, save/load, endings",
@@ -1254,6 +1294,10 @@
    "OK: filler wrapped between words, 3-line pages waiting for a click; the wait marker's columns at the right edge kept clear (the third line used to run into it)"
   ],
   [
+   "Staff roll (DAT/AR_STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
    "Picture scenes after the prologue, save/load, endings",
    "not yet seen"
   ]
@@ -1292,6 +1336,10 @@
   [
    "First room scene (test image)",
    "OK: speaker bracket, the hero's name (DISP @1, 8 columns kept for it) and the message on one line, wrapped between words inside the 3-line box, pages waiting for a click; the two-item menu after the question"
+  ],
+  [
+   "Staff rolls (MES/VC2_STF.DAT, TCM/VC2_STF.DAT)",
+   "not yet seen"
   ],
   [
    "Choosing a name in the window, phone calls, save/load, later scenes, endings",
@@ -1336,6 +1384,10 @@
   [
    "First command menu",
    "OK: three filler items at their places in the menu window, ASCII drawn (no full-width needed)"
+  ],
+  [
+   "Opening credits (SJOP.CMD)",
+   "OK: every credit line as half-width filler at its place, the two spelled in the PC-98's own half-width letters (0x85 xx) included"
   ],
   [
    "The other menu choices, saving and loading, later scenes, endings",
@@ -1404,6 +1456,10 @@
    "OK: speaker tags in full-width filler, the message after the tag on its line, wrapped between words to the box, pages waiting for a key; pictures change with the story"
   ],
   [
+   "Name entry prompt (CMD/MOUSENAM.I86)",
+   "OK: half-width filler under the kana grid; the grid stays as it is"
+  ],
+  [
    "Choosing a name, the episodes, saving and loading, endings",
    "not yet seen"
   ]
@@ -1432,6 +1488,14 @@
   [
    "Character status screen",
    "Reached; its labels are drawn in the picture"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Scripts in MES_02 and MES_T1 to MES_T5 (now extracted)",
+   "not yet seen"
   ],
   [
    "Customizing, the married life simulation, saving and loading, endings",
@@ -1478,8 +1542,2484 @@
    "OK: messages page the same way as the story goes on"
   ],
   [
+   "Ending roll (CMD/ROLL.DAT, shown by G_ED1B.MES)",
+   "OK on a test image that runs G_ED1B.MES's roll part right after the start script's setup: the roll's lines scroll up as full-width filler"
+  ],
+  [
    "The investigation's command menus, saving and loading, later scenes, endings",
    "not yet seen"
+  ]
+ ],
+ "yumeji": [
+  [
+   "Sound-board setup (its question and three-item menu)",
+   "OK: full-width filler items at their places; the question keeps to its Japanese lines in the setup box and pages inside that box (the file's message end sets a full-screen frame, so the page break sets the box again)"
+  ],
+  [
+   "Opening (Asakusa, the title picture)",
+   "OK: filler on the title picture, pages waiting for a click"
+  ],
+  [
+   "The gallery scene (the first scene)",
+   "OK: filler wrapped between words over two lines, pages waiting for a click as the story goes on"
+  ],
+  [
+   "The scene menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "kanako": [
+  [
+   "Opening pictures and the Red-Zone logo",
+   "OK"
+  ],
+  [
+   "Title screen with its menus",
+   "OK: filler questions in the box, the two-item menus at their places"
+  ],
+  [
+   "The first scene (the office)",
+   "OK: filler wrapped between words to the 2-line box, pages waiting for a click as the story goes on"
+  ],
+  [
+   "Staff roll (KA_DAT/STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The verb and noun command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "dennou_tenshi": [
+  [
+   "Title screen (Ange's greeting, the START and name-entry buttons)",
+   "OK: filler in the box, pages waiting for a click; the buttons are drawn in the picture"
+  ],
+  [
+   "Name entry (the second button)",
+   "Reached: its kana grid is drawn in the picture; not driven further"
+  ],
+  [
+   "Opening after START (the street, the girl on the rooftop, the meeting, the title)",
+   "OK: filler wrapped between words to the 2-line box, pages waiting for a click, pictures change with the story"
+  ],
+  [
+   "Ending rolls (DEN_TCM/ENDING_1-7.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Entering a name, menus in the scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "night_walker": [
+  [
+   "Text colour question and its menu",
+   "OK: the question pages in its own box (the clear its box was set up with, not the game's panel clear) and the two items under it"
+  ],
+  [
+   "Start menu (opening / day one)",
+   "OK: two filler items at their places"
+  ],
+  [
+   "Opening roll (MES/TEXT.DOC over the night bridge)",
+   "OK: the text file's lines as filler at their byte size"
+  ],
+  [
+   "Day one (the pendant, the hero's monologue, the first meeting)",
+   "OK: filler wrapped between words to the 3-line box; a message that ends with its own key wait and clear pages the same way; pictures and portraits change with the story; the scene's game screen reached"
+  ],
+  [
+   "The investigation's command menus, the staff roll, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "cats_part_1": [
+  [
+   "Title picture",
+   "Blocked: the game stops on the title in np21w in the original as well: the collection's hard-disk install (in PART1, where the root-relative script paths fail), the floppy set laid out at the root, the original floppies booted as they are, and the CPU slowed to 9.8 MHz all stay on it for six minutes with keys and clicks. The title's timed wait (AC 320 0) never ends; with it left out in a test image the next timed wait stops on the logo, and the scripts use that wait 186 times"
+  ],
+  [
+   "Messages, menus, scenes, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "can_can_bunny_limited": [
+  [
+   "Title menu (two items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Opening (the phone call in the dark)",
+   "OK: the speaker's tag on its line (its procedure clears the box, prints the tag and breaks the line), the message below it, the hero's name and ellipses inline; pages stay inside the 3-line box"
+  ],
+  [
+   "The first scene (Ariko's arrival)",
+   "OK: pictures and messages in the box"
+  ],
+  [
+   "Staff roll (STAFF.DAT)",
+   "not yet seen"
+  ],
+  [
+   "Choosing the date, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "custom_mate": [
+  [
+   "Game-mode menu (name entry, start, new game, text colour)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name entry (the first item)",
+   "Its kana window takes no emulated click or key in the original either; the run picks game start instead"
+  ],
+  [
+   "The opening and its yes/no question",
+   "OK: filler in the box, the two answers under it; Up and click choose"
+  ],
+  [
+   "Customizing the girl (the demon, her questions and the stat panel)",
+   "OK: questions with their menus, the panel's label and value per line cut to their Japanese widths; the dialog box over the bottom box as in the original"
+  ],
+  [
+   "The default hero name (NAME.DEF) in the story",
+   "not yet seen"
+  ],
+  [
+   "Entering a name, the simulation, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "dora_dora_emotion": [
+  [
+   "Title menu (three items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Opening scene (Asuta and Mink)",
+   "OK: speaker tags (cut to their procedure's room) on the first line, filler wrapped between words below, pages waiting for a click within the 3-line box"
+  ],
+  [
+   "Staff roll (DAT/S.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The map, the mahjong matches, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "true_heart": [
+  [
+   "Title menu (name, start, continue, CG mode)",
+   "Its items are drawn in the picture; start chosen with a click"
+  ],
+  [
+   "Opening scene (the prince)",
+   "OK: speaker tags (cut to their procedure's room) on their line, filler wrapped between words below, pages waiting for a click within the 2-line box"
+  ],
+  [
+   "The name entry, command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "marine_philt": [
+  [
+   "Title menu (three items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Opening roll (2050 A.D., the city, the satellite, the capsule)",
+   "OK: the roll's lines as full-width filler (the roll module draws Shift-JIS only; ASCII came out blank) scrolling over the pictures"
+  ],
+  [
+   "Seed's room (the first scene)",
+   "OK: the command screen with its artwork buttons; messages wrapped between words to the 3-line box, the MORE marker pages them"
+  ],
+  [
+   "The commands (look, talk, get, move, use), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "manami": [
+  [
+   "Setup questions with their menus (sound board, text colour)",
+   "OK: questions and filler items in their windows"
+  ],
+  [
+   "The first scene and its four-item command menu",
+   "OK: filler wrapped between words to the 3-line box, pages waiting for a click; the menu's items at their places, the first command's replies"
+  ],
+  [
+   "Staff roll (TCM/ROLL.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The other commands, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "lipstick_adventure_3": [
+  [
+   "Title menu and the wedding opening",
+   "OK: filler items, the opening's lines and credits"
+  ],
+  [
+   "Goro's office (the first scene)",
+   "OK: speaker tags and their opening quote mark at their Japanese width, the message after them wrapped between words, pages waiting for a click; the command bar (artwork)"
+  ],
+  [
+   "The script buffer",
+   "A full-length filler build of LP1_01A.MES (21632 bytes) ran past the engine's 17744-byte script buffer into the procedure table and the game went black after the title; the build now holds each script to the buffer (the --pseudo filler is cut to fit, an English build that outgrows it is refused)"
+  ],
+  [
+   "The commands (look, talk, think, use, move), saving and loading, later chapters, endings",
+   "not yet seen"
+  ]
+ ],
+ "xix": [
+  [
+   "Start menu (four items)",
+   "OK: full-width filler items at their places; with ASCII items choosing one ended the engine ('ﾓﾄﾞｯﾁｬｯﾀ'), as in the oldest builds"
+  ],
+  [
+   "Opening (the desert, the crystal ball) and the title",
+   "OK: filler messages under the pictures, pages waiting for a key"
+  ],
+  [
+   "The first scene (the girl from the crystal by the fire)",
+   "OK: filler wrapped between words, pages waiting for a key"
+  ],
+  [
+   "Hard-disk layout",
+   "Not used: AdvBIOS prints 'cannot run on this machine' under the hard disk's DOS, so the patch writes the game's own boot floppy"
+  ],
+  [
+   "Name entry prompt (NAME.I86)",
+   "not yet seen"
+  ],
+  [
+   "Battles (the prompt in ADVXSYS/ADVX2.DAT, the monster names in ADVXSYS/MONSTER*.DAT)",
+   "not yet seen"
+  ],
+  [
+   "Menus in scenes, the dungeon map, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "himitsu_no_hanazono": [
+  [
+   "Start menu (two items)",
+   "OK: full-width filler items"
+  ],
+  [
+   "Opening (Reiko, then Yukari at the window)",
+   "OK: filler wrapped between words in the bottom box and then the top box as the scene moves it, pages waiting for a key; the [Hit Return Key] prompt as filler"
+  ],
+  [
+   "Procedure text",
+   "With ASCII strings in procedures (the wait marker, ellipses) the game hung on a black screen before drawing anything; written full-width it runs"
+  ],
+  [
+   "The command choices, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "kimi_dake_ni_ai_o": [
+  [
+   "Opening (the wedding, the girl in blue, the woman in the office)",
+   "OK: filler wrapped between words to the box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "Menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "bishoujo_tsuushin": [
+  [
+   "Opening notice (full-screen text)",
+   "OK: filler lines on the white screen, pages waiting for a click"
+  ],
+  [
+   "The BBS command screen and the robot host's message",
+   "OK: the command buttons are drawn in the artwork; the host's message wrapped between words in the 4-line box"
+  ],
+  [
+   "The commands (profile, line status, calling a partner, chat), saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "custom_mate_2": [
+  [
+   "Name window at the start",
+   "Its labels as filler; it takes clicks but the click script cannot steer it, so a test image set the names to their defaults with the engine's own expression call (cd 8192 \"@n='...'\") in place of the window's calls"
+  ],
+  [
+   "Opening (the layered text windows)",
+   "OK: filler wrapped between words in each window, pages waiting for a click"
+  ],
+  [
+   "The lab, the terminal and its two-item menus, the scene with the android",
+   "OK: messages page in the bottom box; menus at their places; the terminal's name field"
+  ],
+  [
+   "Staff roll (MES/STAFF2.TXT)",
+   "not yet seen"
+  ],
+  [
+   "The customization and life simulation, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "dengeki_nurse_2": [
+  [
+   "Title menu (artwork) and the chapter card",
+   "Drawn in the picture; the first item chosen with a click"
+  ],
+  [
+   "Prologue (the villains' throne room)",
+   "OK: filler wrapped between words beside each speaker's portrait, pages waiting for a click"
+  ],
+  [
+   "The first scene (the hero at the car) with its command bar",
+   "OK: speaker tags on the first line, the message below, pages waiting for a click; the command bar is artwork"
+  ],
+  [
+   "Battles (NRS2FGT.CMD's texts, the enemy names in DAT/NRS2ENM.DAT)",
+   "not yet seen"
+  ],
+  [
+   "The commands, the transformation scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "halfmoon": [
+  [
+   "Story select (the four girls' panels, artwork) and its centre menu",
+   "OK: the centre menu's filler items; Suzuka's panel chosen with a click"
+  ],
+  [
+   "Suzuka's prologue (full-screen text) and the escape scene",
+   "OK: filler wrapped between words, the speaker's tag above each message, pages waiting for a click; the game's key wait clears the box, so pages end with it (page_break 81 90) and no extra cleared box comes between them"
+  ],
+  [
+   "Item and art names (DAT/ITEM.TBL)",
+   "not yet seen"
+  ],
+  [
+   "The other three stories, the menu's other items, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "noushuku_angel": [
+  [
+   "Title menu (five items in the blackboard window)",
+   "OK: filler items; the highlight the script draws over each item (the item's label without its centring spaces, placed past them) is the item's own string at the item's column, so the two no longer draw over each other"
+  ],
+  [
+   "Opening (the town, the school, the corridor, the two at the spotlight)",
+   "OK: filler under each picture, pages waiting for a click"
+  ],
+  [
+   "The school gate (the first scene) with its command panel",
+   "OK: speaker tags and the message in the box, pages waiting for a click; the command panel is artwork"
+  ],
+  [
+   "The commands, the other stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "toumei_ningen": [
+  [
+   "Setup menus at the start (one and two items)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Prologue (the laboratory, the scientist and the invisibility drug)",
+   "OK: filler wrapped between words under the pictures, pages waiting for a click"
+  ],
+  [
+   "The command menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "dragon_city": [
+  [
+   "Title and the start menu",
+   "OK: filler question and items, the highlight on the first"
+  ],
+  [
+   "Name entry (BIN/NAME.BIN)",
+   "OK: its prompt as half-width filler; a name typed with the keyboard is taken (its typing tables stay as they are)"
+  ],
+  [
+   "Opening (the dream, the girl, the first meeting)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "ADVH.EXE",
+   "This release wraps ADVH 1.31A (EXEPACK) in an XOR layer, and its variables sit 2 bytes lower than Dragon Eyes'; the patch unwraps it, reads the variable addresses off the text loop, and writes the plain EXEPACK program"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "kounai_shasei_1": [
+  [
+   "Start menu and the save slot menu",
+   "OK: filler items at their places, the highlight on the first"
+  ],
+  [
+   "Name registration (the start menu's third item, CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken and the start menu returns"
+  ],
+  [
+   "Opening text and the title card (Vol. 1)",
+   "OK: filler wrapped in the window, pages waiting for a key"
+  ],
+  [
+   "The guide's introduction and the four-story select screen",
+   "OK: filler in the bottom box; the story labels (procedures in Y2SEL.MES) in full-width filler at their places on the picture grid"
+  ],
+  [
+   "The yes/no question and the first story (the stained glass, the school)",
+   "OK: question and items at their places; dialogue under the speaker tag, pages waiting for a key"
+  ],
+  [
+   "The other stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "kounai_shasei_2": [
+  [
+   "Start menu, the confirmation and the change-name question",
+   "OK: filler question and items at their places, the highlight on the first"
+  ],
+  [
+   "Name entry (CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken"
+  ],
+  [
+   "The first scene (the girl at the window) with its command menu (talk, think, look)",
+   "OK: filler items at their places; dialogue under the pictures, pages waiting for a key; the one-item submenu returns to the menu"
+  ],
+  [
+   "Leaving the first scene, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "kounai_shasei_3": [
+  [
+   "Start menu and the save slot menu",
+   "OK: filler items at their places, the highlight on the first"
+  ],
+  [
+   "Name registration (the start menu's second item, CMD/NAME.I86)",
+   "OK: its prompt in full-width filler (the module draws Shift-JIS only); a name typed with the keyboard is taken and the start menu returns"
+  ],
+  [
+   "Opening (the giant turtle, the defence force office, the girl's transformation and fight)",
+   "OK: speaker tags and filler wrapped in the bottom box, pages waiting for a key; pictures change with the story"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "kounai_shasei_sp": [
+  [
+   "Opening exchange (the X team and the users) and the title",
+   "OK: filler lines in their colours at their places, waiting for a key"
+  ],
+  [
+   "Main menu (four corners) with its explanation",
+   "OK: filler heading, items at their places with the highlight on the first, the explanation below"
+  ],
+  [
+   "Quiz (question titles, the questions with their answer menus and hints, right and wrong answers)",
+   "OK: filler question above the items, the hint at its place; the answer screens' lines (procedures) in full-width filler"
+  ],
+  [
+   "The penalty game after a wrong answer",
+   "OK: speaker tag and filler, then its menu, which returns to itself on a wrong pick as in the original"
+  ],
+  [
+   "The music and graphics corners, the bonus corner, the end of the quiz",
+   "not yet seen"
+  ]
+ ],
+ "hatsukoi_monogatari": [
+  [
+   "Opening (Fol, the guide, introducing herself)",
+   "OK: speaker tag and filler in the bottom box, pages waiting for a click"
+  ],
+  [
+   "Name window (HAT_TCM/MOUSENAM.TCM)",
+   "Its kana grid takes no emulated click or key, in the original too; for the rest of the test a test image left out the window's load and call in MES_1/PRSC02A.MES and PRSC02B.MES (no-ops of the same length; the default name in NAME.DEF stays)"
+  ],
+  [
+   "Blood type (artwork buttons) and star sign menus with their Yes/No confirmations",
+   "OK: the star sign grid's two-line buttons as filler at their places, picked with the keyboard; the confirmation's items at their places"
+  ],
+  [
+   "The fortune question (artwork buttons)",
+   "OK: the question as filler; its buttons are artwork"
+  ],
+  [
+   "The school days after the questions, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "bishoujo_audition": [
+  [
+   "Start menu",
+   "OK: filler item at its place"
+  ],
+  [
+   "Opening (the girl in the school uniform) and the title",
+   "OK: filler under the picture, pages waiting for a click"
+  ],
+  [
+   "The cat-eared guide's explanation on the blackboard, with its menus",
+   "OK: filler wrapped on the blackboard and in the bottom box, menus' filler items at their places"
+  ],
+  [
+   "The auditions, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "glass_no_destiny": [
+  [
+   "Opening (the house in the birch wood, the room, the move, the cat)",
+   "OK: filler wrapped over the bottom of each picture, pages waiting for a click; pictures change with the story"
+  ],
+  [
+   "Staff rolls (SR_PARTS/STAFF_1-6.DAT)",
+   "not yet seen"
+  ],
+  [
+   "Menus, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "kekkou_kamen_2": [
+  [
+   "Start menu (start, change name)",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (TCM/NAMEWIND.TCM)",
+   "OK: its labels as filler at their places, the kana grid as it is, the default name shown; it takes no emulated input, so for the rest of the test a test image left out its call in MES/START.MES (no-ops of the same length; the default name in NAME.DEF stays), as the start menu's first item does in the original"
+  ],
+  [
+   "Opening (the walk to the school, the title, the school, the corridor, the staff room)",
+   "OK: the speaker tag (a procedure) and filler wrapped in the bottom box, pages waiting for a click; pictures change with the story"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "himitsu_shirei_1919": [
+  [
+   "Start menu (opening, parameters, game start, config)",
+   "OK: filler items at their places; the game start item used for the test (the opening's name window takes no emulated input)"
+  ],
+  [
+   "The first briefing (the office, the agents, the target)",
+   "OK: filler wrapped between words in the 57-column box under the speaker's tag, pages waiting for a click and carrying on where they left off; pictures change with the story"
+  ],
+  [
+   "The command menu and its submenus",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (TCM/NAMEWIND.TCM) in the opening",
+   "Its kana grid takes no emulated input in the original either"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "himitsu_shirei_1919_2": [
+  [
+   "Start menu",
+   "OK: filler items at their places; the game start item used for the test"
+  ],
+  [
+   "The briefing (the office, the chief's message on the computer monitor)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click; the monitor's one-line frame keeps its text to the Japanese width (longer filler is cut there, as reported by the patcher)"
+  ],
+  [
+   "Staff roll (MES/STAFF.TXT)",
+   "not yet seen"
+  ],
+  [
+   "Menus in the scenes, saving and loading, later scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "ides_club_003": [
+  [
+   "Main menu (artwork)",
+   "Its items are artwork; it takes no emulated click or key in the patched build (the pointer does not show), so the pages below were tested on test images whose start script chains to that page instead of the menu"
+  ],
+  [
+   "Novel page (003_N01.MES, the room)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click"
+  ],
+  [
+   "Shop catalogue page (003_FA5.MES)",
+   "OK: its list menu's filler items at their places, the title and description panels' filler wrapped in their frames"
+  ],
+  [
+   "The other pages, the menu's return, exit",
+   "not yet seen"
+  ]
+ ],
+ "ides_club_004": [
+  [
+   "Opening (the editor girl) and the magazine menu (artwork)",
+   "OK: filler beside the girl; the menu is artwork"
+  ],
+  [
+   "Exit page (the closing credits, 4_MAIN.MES)",
+   "OK: its single page-long message as filler wrapped over the full-screen frame, as in the original"
+  ],
+  [
+   "A game page (4_FAIR05.MES)",
+   "OK on a test image whose start script chains to that page: the list menu's filler items, the title panel and the text box's filler wrapped between words, pages waiting for a click"
+  ],
+  [
+   "The other pages, the novel, the shop",
+   "not yet seen"
+  ]
+ ],
+ "approach_shot": [
+  [
+   "The club receptionist's greeting",
+   "OK: filler in the box beside the picture, pages waiting for a key"
+  ],
+  [
+   "Name entry (BIN/GNAME.COM: the hero's name, then the golf name in letters)",
+   "OK: its prompts as full-width filler at their places (the prompt after the kana grid included); names typed with the keyboard are taken"
+  ],
+  [
+   "The club's questions and menus (explanation, mode, course, out/in, hole)",
+   "OK: question filler above full-width filler items, picked with the keyboard"
+  ],
+  [
+   "The golf round (BIN/HIT.EXE)",
+   "OK: the round starts on the first hole"
+  ],
+  [
+   "Shots, the caddie's lines, the girls' scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "hokkaido_rensa": [
+  [
+   "Title (the copyright lines)",
+   "OK: each line's filler on its own row, above the next line's frame"
+  ],
+  [
+   "Monitor question and message speed question",
+   "OK: filler question and items at their places"
+  ],
+  [
+   "Name window (KNJNAME.CMD)",
+   "OK: its labels as full-width filler at their places, the kana grid as it is; the click script cannot steer it to its done button, so for the rest of the test a test image left out its run in OHO000.MES (no-ops of the same length), after which the original goes on as well"
+  ],
+  [
+   "The phone call and the harbour scene with its command menu",
+   "OK: filler in the bottom box, the command menu's filler items at their places"
+  ],
+  [
+   "The investigation, the blackjack game, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "cocktail_zoukangou": [
+  [
+   "Start menu (the four sampling-program items)",
+   "OK: filler items at their places, the question below in its colour"
+  ],
+  [
+   "The explanation story (the night city, the girl)",
+   "OK: filler wrapped in the bottom box, pages waiting for a key; pictures change with the story, and it returns to the menu"
+  ],
+  [
+   "Mouse",
+   "With the base image's QMOUSE loaded beside the game's MOUSE.SYS the key waits take no key or click; the install leaves QMOUSE out"
+  ],
+  [
+   "The other programs, the default names (NAME.DEF)",
+   "not yet seen"
+  ]
+ ],
+ "cocktail_zoukangou_2": [
+  [
+   "The opening demo (the burning city, the ship, the school, the classroom)",
+   "OK: filler wrapped in the bottom box beside the logo, pages waiting for a click; pictures change with the story"
+  ],
+  [
+   "The magazine's menu and its other programs",
+   "not yet seen"
+  ]
+ ],
+ "denwa_no_bell": [
+  [
+   "Title menu",
+   "OK: filler items at their places, picked with a click"
+  ],
+  [
+   "The opening (the room, the morning)",
+   "OK: filler wrapped between words in the bottom box, pages waiting for a click and clearing the box"
+  ],
+  [
+   "The first choice menu",
+   "OK: filler items at their places beside the picture"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "itsuka_dokoka_de": [
+  [
+   "Title and its 'enter your name?' question",
+   "OK: the question as filler in its bar beside the Y/N buttons (artwork)"
+  ],
+  [
+   "The Y/N buttons (IT_TCM/ICON3H.TCM)",
+   "Take no emulated click (the pointer is not drawn over the title, and clicks at the buttons' place do nothing) nor Y/N/Enter keys, in the original too; leaving the button wait out on a test image does not get past it either"
+  ],
+  [
+   "The story, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "jyb": [
+  [
+   "Title menu",
+   "OK: filler items at their places"
+  ],
+  [
+   "Name window (Tcm/MouseNam.Tcm)",
+   "Its prompt as filler; it takes no emulated input, so for the rest of the test a test image left out its two calls in STARTUP.MES (no-ops of the same length)"
+  ],
+  [
+   "Opening (the three girls' picture, the dialogue under it)",
+   "OK: each speaker tag on its line and the filler wrapped below it in the box under the picture, pages waiting for a click (OPENING.MES defines its speaker and box procedures again per scene)"
+  ],
+  [
+   "The speech-bubble scene",
+   "OK: filler wrapped in each bubble at its place"
+  ],
+  [
+   "The town map, the shops, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "kerakeraboshi": [
+  [
+   "Title (Kameko) and its menu",
+   "OK: filler item at its place"
+  ],
+  [
+   "The opening (the locker room, the title card)",
+   "OK: the speaker tag (a procedure) on its line and the filler wrapped below it in the bottom box, pages waiting for a click"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "kekkou_kamen": [
+  [
+   "Title and its menu",
+   "OK: filler item at its place"
+  ],
+  [
+   "The opening (the villain's hall) and the walk to the school",
+   "OK: filler wrapped in the message box under the map, pages waiting for a click"
+  ],
+  [
+   "The name window (KNJNAME.CMD), later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "gokuraku_mandara": [
+  [
+   "Startup questions and the title menu",
+   "OK: filler questions and items at their places"
+  ],
+  [
+   "The opening (the tea room, the narrator)",
+   "OK: filler wrapped in the bottom box, typed out letter by letter, pages waiting for a click"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "ides_club_001": [
+  [
+   "Title and the magazine menu (the hostess beside it)",
+   "OK: filler heading and items at their places, the highlight on the first"
+  ],
+  [
+   "The magazine's explanation pages",
+   "OK: filler wrapped in the page frame, the key-prompt line at the foot, returning to the menu"
+  ],
+  [
+   "The other pages, the shop, exit",
+   "not yet seen"
+  ]
+ ],
+ "ides_club_002": [
+  [
+   "Opening notice, title and the magazine menu",
+   "OK: filler wrapped on the notice page, the menu's heading and items at their places"
+  ],
+  [
+   "The magazine's explanation pages",
+   "OK: filler wrapped in the page frame, the key-prompt line at the foot, returning to the menu"
+  ],
+  [
+   "The other pages, exit",
+   "not yet seen"
+  ]
+ ],
+ "tessera": [
+  [
+   "Publisher logo and its start menu",
+   "OK: filler items at their places"
+  ],
+  [
+   "Prologue (the car, the woman in the forest), the title",
+   "OK: filler wrapped in the one-line box, pages waiting for a click"
+  ],
+  [
+   "The first scene (the motorcycle) with its command menu and submenu",
+   "OK: filler items at their places; the message below"
+  ],
+  [
+   "Later scenes, the name entry, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "ujin_collection_1": [
+  [
+   "The collection's menu and the intro text",
+   "OK: filler wrapped, the volume grid's items at their places"
+  ],
+  [
+   "Title card and the guide's introduction",
+   "OK: filler in the bottom box beside the frame art, pages waiting for a click"
+  ],
+  [
+   "The four-story select screen",
+   "OK: the story labels as filler at their places on the picture grid"
+  ],
+  [
+   "The stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "ujin_collection_2": [
+  [
+   "The setup questions and menus, the logo screen",
+   "OK: filler questions and items at their places"
+  ],
+  [
+   "Name window (kana grid)",
+   "Its prompt as filler; its grid takes no emulated click or key (as in the other releases' name windows), so the story is not reached"
+  ],
+  [
+   "The stories, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "ujin_collection_3": [
+  [
+   "Start question",
+   "OK: filler question and items at their places"
+  ],
+  [
+   "Opening (the giant turtle, the defence force office)",
+   "OK: filler wrapped in the boxes beside the frame art, pages waiting for a click (the game draws its screen in two halves, the same in the original)"
+  ],
+  [
+   "Later scenes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "lam_mal": [
+  [
+   "The scroll's notices and menus at the start",
+   "OK: filler wrapped in the scroll, the items at their places"
+  ],
+  [
+   "Name window (MOUSENAM.I86)",
+   "OK: its prompt as half-width filler, the name field and the fixed name suffix in their places; its grid takes no emulated click or key, so for the rest of the test a test image left out its run in START.MES (no-ops of the same length)"
+  ],
+  [
+   "Opening (the logos, the town under the moon)",
+   "OK: filler wrapped under the picture, pages waiting for a click"
+  ],
+  [
+   "The game proper, the disk changes, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "mai": [
+  [
+   "Opening (Mai's homework, her friend at the door, the garden, the room)",
+   "OK: the speaker tag and filler wrapped in the box under the picture, pages waiting for a click"
+  ],
+  [
+   "Title",
+   "OK"
+  ],
+  [
+   "The game proper, the staff roll (GAIBU/STAFF.TXT), saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "bishoujo_daizukan": [
+  [
+   "Opening (the hostess, the guide)",
+   "OK: filler wrapped beside the pictures, pages waiting for a key"
+  ],
+  [
+   "Name entry (NAME.COM)",
+   "OK: its prompt as filler; a name typed with the keyboard is taken"
+  ],
+  [
+   "The girls' menu and a profile page",
+   "OK: filler items and the profile's lines at their places"
+  ],
+  [
+   "A girl's scene",
+   "OK: filler wrapped under the picture in the speaker's colour"
+  ],
+  [
+   "ADVH.EXE",
+   "Wrapped three times in a XOR layer (\"TC0\"); the program checks a key disk and resets the machine otherwise, which the release's crack disarms at run time; the patch unwraps it and makes the crack's seven-byte change to the program (game.json advh_fixes)"
+  ],
+  [
+   "The other girls, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "bishoujo_daizukan_91": [
+  [
+   "Opening (the hostess) and the name question",
+   "OK: filler wrapped beside the picture, pages waiting for a key; the two items, the highlight moving between them"
+  ],
+  [
+   "Name entry (NAME.COM)",
+   "OK: its prompt as filler; a name typed with the keyboard is taken"
+  ],
+  [
+   "Hero's name in messages (＊＊＊, NAME.DEF)",
+   "OK: English messages with ＊＊＊ show the default name (set in English) and, after the name entry, the typed name"
+  ],
+  [
+   "Start of the game (the saved place in FLAG0 loaded)",
+   "OK: the girls' menu and a profile page with filler at their places; a girl's scene with filler under the picture in the speaker's colour"
+  ],
+  [
+   "ADVH.EXE",
+   "Not wrapped (plain EXEPACK); in this build a run of program text starts on code bytes (9D C3, popf / ret, before the disk-change message), which the extraction leaves out: written over, the program's save loading ended in \"ERROR: unknown .MES file\""
+  ],
+  [
+   "The other girls, saving and loading, endings",
+   "not yet seen"
+  ]
+ ],
+ "watashi_golf": [
+  [
+   "Start menu",
+   "OK: filler items, the highlight on the first"
+  ],
+  [
+   "Name entry (GNAME.COM: the hero's name, then the golf name in letters)",
+   "OK: its prompts as full-width filler at their places; names typed with the keyboard are taken and shown in its confirmation line"
+  ],
+  [
+   "The club lobby (messages and the command menus)",
+   "OK: filler wrapped in the bottom box, pages waiting for a key; one-line menus picked with the arrow keys, the choices leading on to new messages"
+  ],
+  [
+   "The golf round (GOLF/HIT.EXE, started from the practice script RENSYU.MES in a test image)",
+   "OK: the round starts on the first hole; shots are hit and scored"
+  ],
+  [
+   "The caddie's lines (GOLF/SPEAK.DAT), the girls' scenes, Disk B and C scenes, endings",
+   "not yet seen"
+  ]
+ ],
+ "fairytale_kaizokuban": [
+  [
+   "Start menu and its submenu",
+   "OK: filler items, the highlight moved with the arrow keys; the second item opens a five-item menu"
+  ],
+  [
+   "The opening story (the president)",
+   "OK: filler wrapped in the bottom box, pages waiting for a key"
+  ],
+  [
+   "The stories behind the other menu items, Disk B's pictures, endings",
+   "not yet seen"
+  ]
+ ],
+ "kurukuru_party": [
+  [
+   "Title menu, the start and the mode question (START.EVT)",
+   "OK: filler wrapped in the two-line box and paged with a key wait; menu items at their places, cut to the menu's width"
+  ],
+  [
+   "Character select (PREMAIN1.EVT)",
+   "OK: filler in the message window beside the portraits; the YES/NO menu"
+  ],
+  [
+   "The explanation (EXP.EVT, run from a test image whose start script chains to it)",
+   "OK: filler wrapped between words in the 40-letter, four-line window, a new page before a line would scroll it"
+  ],
+  [
+   "The scripts in the second buffer (the characters' openings, events, endings), the board game",
+   "not yet seen"
+  ]
+ ],
+ "dragon_knight_3": [
+  [
+   "The hard-disk release; the opening pictures and the title menu",
+   "OK: boots; the title menu's items as full-width filler"
+  ],
+  [
+   "Name entry",
+   "OK: its prompt and buttons as half-width filler in their slots; the character grid stays Japanese; the default name is taken"
+  ],
+  [
+   "Town dialogue (the two-line box)",
+   "OK: filler wrapped between words in the box, the hero's name in brackets, pages waiting for a key"
+  ],
+  [
+   "Event scene (the bottom text)",
+   "OK: filler wrapped across the bottom window, pages waiting for a key"
+  ],
+  [
+   "Shops, battles, camp menu, later towns, endings",
+   "not yet seen"
+  ]
+ ],
+ "doukyuusei_2": [
+  [
+   "The hard-disk release (both games from its menu); the logo and the start menu",
+   "OK: boots; the start menu's items as full-width filler"
+  ],
+  [
+   "Name entry",
+   "The entry's prompt is a picture; its window takes no emulated key or click (the original's neither), so the scenes below were run in a test image with the name entry left out"
+  ],
+  [
+   "Prologue (the classroom, the teacher)",
+   "OK: filler wrapped in the bottom window, the speaker's bracket kept, pages waiting for a key"
+  ],
+  [
+   "Scripts over the 57344-byte buffer with full filler",
+   "the --pseudo build cuts their filler to fit (reported per script); a real build over it is refused"
+  ],
+  [
+   "The town map, the other girls' scenes, the Special Disk, endings",
+   "not yet seen"
+  ]
+ ],
+ "shangrlia": [
+  [
+   "The hard-disk release; the title and its menu",
+   "OK: boots; the menu's five items as full-width filler, cut to their boxes"
+  ],
+  [
+   "The opening (the park, Natsumi)",
+   "OK: filler in half-width letters wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "The strategy map, the girls' scenes, battles, the staff roll",
+   "not yet seen"
+  ]
+ ],
+ "el_hazard": [
+  [
+   "The hard-disk release with its CD in the drive (game.json cd); the animated opening",
+   "OK: boots and plays the opening (it needs the CD; without it the screen stays black, as the original's does)"
+  ],
+  [
+   "The first scenes (the school at night, Makoto, Nanami)",
+   "OK: filler wrapped in the bottom window, the speaker's bracket kept, pages waiting for a key"
+  ],
+  [
+   "Script buffer",
+   "A script runs at DS:0000 before the engine's variables at DS:A000h (40960 bytes; read off the running engine)"
+  ],
+  [
+   "Menus, the later chapters, the staff roll",
+   "not yet seen"
+  ]
+ ],
+ "metal_eye": [
+  [
+   "The hard-disk release; the start menu and the logo",
+   "OK: boots; the menu's items as full-width filler"
+  ],
+  [
+   "The prologue (the laboratory)",
+   "OK: filler wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "The title menu and the first scene (the hero's room)",
+   "OK: menu items as full-width filler; messages as half-width filler"
+  ],
+  [
+   "Status screens, battles, the Special Disk (separate floppies, not in the hard-disk release), endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_shutter_chance": [
+  [
+   "Hard-disk layout boots (main game in DOKI, ADVH started from AUTOEXEC.BAT)",
+   "OK"
+  ],
+  [
+   "Opening lines before the title picture",
+   "OK: half-width filler, centred lines kept on the screen"
+  ],
+  [
+   "Title picture, then the story pages in the middle box",
+   "OK: filler wrapped in the box, lines 11 dots apart as the engine's own, a click (right button) going on"
+  ],
+  [
+   "The client's scene (portrait with the text column at its right)",
+   "OK: filler wrapped in the column; a long message pages with a key wait, the column cleared for the next page"
+  ],
+  [
+   "A data collection (DOKI/JOSHI started in a test image)",
+   "OK: its opening, story pages and client scene as in the main game"
+  ]
+ ],
+ "metal_eye_2": [
+  [
+   "The hard-disk release; the logos, the opening and the title",
+   "OK: boots; the opening's lines as half-width filler"
+  ],
+  [
+   "The start menu (load data 1-9, start from the beginning)",
+   "OK: items as full-width filler, picked with the arrow keys"
+  ],
+  [
+   "The prologue (the floating city)",
+   "OK: filler wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "Status screens, battles, the Special Disk (separate floppies, not in the hard-disk release), endings",
+   "not yet seen"
+  ]
+ ],
+ "tenshin_ranma": [
+  [
+   "The hard-disk release; the title and its menu",
+   "OK: boots; the menu's items as full-width filler, cut to their boxes"
+  ],
+  [
+   "Name entry (a new game)",
+   "OK: its prompt and buttons as half-width filler in their slots, the character grid stays Japanese, the default name is taken; the one-cell closing bracket of the name field (m00007) with its 8-letter filler is drawn again at the screen's left edge"
+  ],
+  [
+   "The opening scene",
+   "OK: the speaker's name (subroutines 16-18) before half-width filler, wrapped in the bottom window, pages waiting for a key"
+  ],
+  [
+   "Party talk in the dungeon (a shipped save loaded)",
+   "OK: filler wrapped in each speaker's box beside the portrait (the box the script picks by its variable)"
+  ],
+  [
+   "A battle (its one-line message box)",
+   "OK: the monster's name from SENTO.COM as full-width filler in its 5-letter field, the filler after it on the same line, a longer message paged in the box with a key wait"
+  ],
+  [
+   "Shops, the ending and the staff roll",
+   "not yet seen"
+  ]
+ ],
+ "de_ja_2": [
+  [
+   "The hard-disk release; its first menu (the monitor type)",
+   "OK: boots; the prompt as half-width filler, the items as full-width filler cut to their boxes"
+  ],
+  [
+   "Picking a menu item",
+   "blocked: in np21w no key (Return, Space, Z, X, the keypad), mouse button or mouse move picks an item, in the original game as in the patched one; the arrow keys move the highlight"
+  ],
+  [
+   "Scenes, the name entry, the ending",
+   "not yet seen"
+  ]
+ ],
+ "be_yond": [
+  [
+   "Hard-disk layout boots (the seven disks' files in BIYO, started with GAME.BAT)",
+   "OK"
+  ],
+  [
+   "The display menu and the title texts",
+   "OK: half-width filler, the menu's highlight on its items"
+  ],
+  [
+   "The icon menu (NEW GAME, LOAD, MES, EXIT)",
+   "OK: its label (a string variable) as half-width filler, centred"
+  ],
+  [
+   "The opening narration",
+   "OK: half-width filler wrapped between words in the bottom window, a key going on"
+  ],
+  [
+   "The first dialogue scene (speaker tags, the bridge)",
+   "OK: each speaker's tag on its own line, the message wrapped between words below it, longer ones paged by the engine"
+  ],
+  [
+   "The name entry, the program's error messages",
+   "not yet seen"
+  ]
+ ],
+ "nonomura_byouin_no_hitobito": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The prologue (the hospital director)",
+   "OK: filler wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "Investigation menus, later scenes, the ending (OVER9.MES's paged lines)",
+   "not yet seen"
+  ]
+ ],
+ "kawarazakike_no_ichizoku": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The opening (the mansion's gate, the first meeting)",
+   "OK: filler wrapped across the bottom text window, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings (ENDING.MES's paged lines)",
+   "not yet seen"
+  ]
+ ],
+ "ai_shimai": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The prologue",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "ushinawareta_rakuen": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The prologue",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "reira": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The setup console (display, drives; ended with ESC) and the start menu (the arrow keys move the pointer, Return picks, a confirm box)",
+   "OK: its labels as half-width filler in their slots, the items as full-width filler"
+  ],
+  [
+   "The opening narration",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "mobius_roid": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The first scene (the house)",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "jack": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The first scene",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "valentine_kiss_2": [
+  [
+   "The hard-disk release; the opening lines, the title and its menu",
+   "OK: boots; half-width filler, the menu's items as full-width filler cut to their box"
+  ],
+  [
+   "The first day (the plaza, the hero's self-introduction)",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "The name entry",
+   "OK: the default name taken with the mouse (the entry's frame and prompt are a picture; its kana grid stays Japanese)"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "fermion": [
+  [
+   "The hard-disk release; the opening lines and the title",
+   "OK: boots; half-width filler"
+  ],
+  [
+   "The prologue (the bottom message box)",
+   "OK: filler wrapped between words to the box's 61 columns, pages waiting for a key"
+  ],
+  [
+   "Later scenes, menus, the endings",
+   "not yet seen"
+  ]
+ ],
+ "crescent": [
+  [
+   "The hard-disk release; the opening and the title menu",
+   "OK: boots; the menu's items as full-width filler cut to their boxes"
+  ],
+  [
+   "The prologue",
+   "OK: filler wrapped in the bottom text box, pages waiting for a key"
+  ],
+  [
+   "Later scenes, the endings",
+   "not yet seen"
+  ]
+ ],
+ "dor_part_2": [
+  [
+   "The hard-disk release; the opening (OP.EDT) to its menu, clicking through",
+   "OK: boots; filler half-width in the message window, wrapped between words, paged with the blinking key-wait mark; the speaker's name box (filler name, colon, text indented 10 cells, wrapped lines indented too); colour changes inside a message kept"
+  ],
+  [
+   "The opening menu",
+   "OK: the menu commands' box draws half-width filler (cut to its 6 letters); the screen split into picture panels at this point is the game's own in np21w (the unpatched game shows the same)"
+  ],
+  [
+   "DOR3 (started from a test copy of OP.EDT jumping to the scenario-3 start): opening, story, first menu",
+   "OK: title logo, story text wrapped and paged, speaker names, a choice menu with the command box and the choice window widened to the filler"
+  ],
+  [
+   "DOR2 (the same way): opening pages",
+   "OK: wrapped and paged filler, the engine's own pages when a message outgrows the window"
+  ],
+  [
+   "English after a speaker's name (a test line in en mode)",
+   "OK: wraps between words, continuation lines under the indented text"
+  ],
+  [
+   "Save/load, DOR1, DOR4A/B, endings",
+   "not yet seen"
+  ]
+ ],
+ "dor_part_1": [
+  [
+   "The hard-disk release; the opening (OP.EDT) clicked through to its menu",
+   "OK: boots (ADL.EXE, Part 1's build, with the half-width helper); filler half-width, wrapped between words (a cell short of the edge, so no empty row after a full line), paged with the key-wait mark; colour changes inside a message kept; the speaker's name box and its indent"
+  ],
+  [
+   "The opening menu",
+   "OK: the command box draws half-width filler (cut to its 6 letters)"
+  ],
+  [
+   "The scenarios (DOR1-3, the DOR_P2/P3 and DOR3A/B parts), save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "dor_part_3": [
+  [
+   "The hard-disk release; the opening (OP.EDT) clicked through",
+   "OK: boots; filler half-width, wrapped between words under the speaker name's indent, paged with the key-wait mark (a page break inside a message continues on the next page)"
+  ],
+  [
+   "The scenarios (DOR1-3, the S01_x chain, SS2), menus, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "yuu_disk_vol_5": [
+  [
+   "Disk A (patched) and B in the floppy drives; PCMSET2.EXE, the voice speed setting",
+   "OK: its lines half-width filler, the two digits the program writes kept in place; the OK button goes on to the game"
+  ],
+  [
+   "ADL5: the title, the opening pages (DOR2.EDT)",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged with the key-wait mark"
+  ],
+  [
+   "The first menu",
+   "OK: the command box's items half-width filler (6 letters, the table's slot)"
+  ],
+  [
+   "DOR_P2/DOR_P3 (the two calls), save/load, the disk prompts, endings",
+   "not yet seen"
+  ]
+ ],
+ "zatsuon_ryouiki": [
+  [
+   "The hard-disk release; MENU2.EDT, the display setting menu, clicked through",
+   "OK: boots (ADL98.EXE with the helper); filler half-width (8x16, graphics planes) in the white windows, wrapped by the helper between words at each window's own edge, paged; the menu's choices in their window (the choices come before the menu op: no widening, their max_cells is the window)"
+  ],
+  [
+   "The game's days (DAY1 ...), the replay menu, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "yuu_disk_vol_8": [
+  [
+   "The hard-disk release; PA_01.EDT's setup menus (display, sound, wait), clicked",
+   "OK: boots (ADL98S.EXE with the helper; the scripts and tables read from and written back to the EDT00 archive); filler half-width in the framed windows, wrapped by the helper between words at each window's edge"
+  ],
+  [
+   "The story (PA_02 ...), the battle scenes (S_xx), save/load, endings",
+   "not yet seen (the clicks keep choosing the same setup item)"
+  ]
+ ],
+ "cybernoid_alpha": [
+  [
+   "Disk A (patched) alone; PA_01.EDT's setup menus",
+   "OK: boots; filler half-width in the framed windows, wrapped by the helper at each window's edge"
+  ],
+  [
+   "Disk A (patched) in drive 1, Yuu Disk Vol. 8's Disk B in drive 2 (the setup menu's own strings left Japanese so it stays usable: at 2.5 times the Japanese its items overflow the small box and push its last item, End setup, out of view): the opening and the first scene",
+   "OK: the opening's pictures and title load from Disk B; the filler in the message window wrapped at its edge, page after page with Enter; a choice menu's items in filler"
+  ],
+  [
+   "Disks C and D",
+   "not reached in the test"
+  ]
+ ],
+ "do_kaizokuban_hoshi": [
+  [
+   "The hard-disk image of Disk C (Hoshi no Suna Monogatari, ADL2.EXE): the opening, the menu, the story",
+   "OK: boots; speaker names with the text indented; filler half-width, wrapped between words and paged; the menu's command box"
+  ],
+  [
+   "The rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "do_kaizokuban": [
+  [
+   "The hard-disk image of Disks A-B (DOR, ADL'.EXE): the opening, the menu, the first scenario (the planetarium)",
+   "OK: boots; speaker names with the text indented; filler half-width, wrapped between words and paged; the menu's command box half-width filler"
+  ],
+  [
+   "The other scenarios, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "hoshi_no_suna_monogatari_2": [
+  [
+   "The hard-disk release: the opening menu, the title and the prologue (PRORO.EDT)",
+   "OK: boots (ADL2.EXE with the helper); the menu's command box half-width filler; the prologue's filler half-width, wrapped between words and paged in its window"
+  ],
+  [
+   "The days (DAY1-5), save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_6": [
+  [
+   "The floppy (patched): the logo, the opening menu (one statement, its items with new lines between), the studio scene",
+   "OK: boots (ADL5.EXE with the helper); filler half-width, wrapped by the helper between words, paged; the command box half-width"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_7": [
+  [
+   "The floppy (patched): the logo, the opening menu (one statement, its items with new lines between), the studio scene",
+   "OK: boots (ADL5.EXE with the helper); filler half-width, wrapped by the helper between words, paged; the command box half-width"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "dor_special_edition_sakigake": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the title, the opening (the elf in the forest), the first menu",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the small text window, paged; the menu's message window and its command box (4 letters, the table's slot)"
+  ],
+  [
+   "The rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "collector_d": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3B: the opening's full-screen text window",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words, a blank line between messages, paged with the window cleared whole"
+  ],
+  [
+   "Menus, the rest of the story, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_4": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the logo, the opening menu, the studio scene",
+   "OK: the menu's command box and message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_5": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL3A: the logo, the opening menu, the studio scene",
+   "OK: the menu's command box and message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "collector_d_bangaihen": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ADL5: the first menu, the story's text window",
+   "OK: the command box (4 letters, the table's slot) and the message window; filler half-width (8x16, graphics planes), wrapped between words in the window, paged"
+  ],
+  [
+   "The rest of the story, MOVE.EDT's moves, BAT2.EDT's battles, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "dor_special_edition_93": [
+  [
+   "PCMSET2.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler, the two digits the program writes kept in place; the OK button goes on to the game"
+  ],
+  [
+   "ADL5: the title, the opening (OP.EDT): a speaker's name and her lines, then the town",
+   "OK: the speaker name half-width with the text indented by its slot (the lines after it indented the same, no name, as in the unpatched game); filler half-width, wrapped between words, paged; the town map (MOVE.EDT) drawn"
+  ],
+  [
+   "The town's command menus, the story's sections, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "yuu_disk_vol_4": [
+  [
+   "ADL98: the title, the main menu (its eleven items, 71h text drawn at their places)",
+   "OK: the items half-width filler, one line each, the highlight bar on the item under the cursor; a click starts that item"
+  ],
+  [
+   "The slot machine corner (the menu's fourth item): the speakers' lines, its command box",
+   "OK: filler half-width, wrapped between words in the window, paged; the command box's items half-width (cut at the screen's right edge, where the box sits)"
+  ],
+  [
+   "The other corners, save/load",
+   "not yet seen"
+  ]
+ ],
+ "crystal_rinal": [
+  [
+   "The CD version's HD Boot disk with the hard-disk image (patched) and the CD: the start menu (a box and its items, 71h)",
+   "OK: the items half-width filler, the highlight bar on the first"
+  ],
+  [
+   "ADL21: the opening's lines, the first scene (the nurse's room): a speaker's name and her lines",
+   "OK: filler half-width, wrapped between words in the window, paged; the speaker's name half-width with the text indented"
+  ],
+  [
+   "The rest of the story, the battles (BATLE.EDT, POWER.EDT's commands), save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_3": [
+  [
+   "The floppy (patched): the title, the opening's lines, the gramophone scene, the command box",
+   "OK: filler half-width, wrapped and paged; the command box's items half-width (cut to the table's slot)"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "arquelphos": [
+  [
+   "PCMSET.EXE (patched), the voice speed setting",
+   "OK: its lines half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "ARQ98: the opening (the village girl, the goddess Rera), the title, the island map",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged; the speaker's portrait box at its control; the map's menu (a picture) as it was"
+  ],
+  [
+   "The stages and their battles, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "yuu_disk_vol_9": [
+  [
+   "ARQ98: the opening (the village girl), its messages and the speaker's portrait",
+   "OK: filler half-width (8x16, graphics planes), wrapped between words in the window, paged; the portrait box at its control"
+  ],
+  [
+   "The stages and their battles, save/load, endings",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_8": [
+  [
+   "NADL: the title, the main menu (the command box), the first section's messages",
+   "OK: the command box's items half-width with its highlight; filler half-width, the speaker's name half-width with the text indented; wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "doki_doki_disk_vol_9": [
+  [
+   "NADL: the title, the main menu (the command box), the first section's messages",
+   "OK: the command box's items half-width with its highlight; filler half-width, wrapped between words in the window, paged"
+  ],
+  [
+   "The other sections, save/load",
+   "not yet seen"
+  ]
+ ],
+ "moonlight_chan_rin_shan": [
+  [
+   "The title menu (patched)",
+   "OK: its items half-width filler (the string routine), the pointer's item highlighted"
+  ],
+  [
+   "A test copy whose title loop draws the first girl's profile at once (the text window)",
+   "OK: the profile's filler half-width, 38 letters a line, wrapped between words"
+  ],
+  [
+   "The mahjong game, the quiz, the album, endings",
+   "not yet seen: the title menu takes no click in the emulator (the unpatched game neither); the clicks reach the program's button word, but no item starts"
+  ]
+ ],
+ "yuu_disk_vol_7": [
+  [
+   "The title menu (patched)",
+   "OK: its items half-width filler (the string routine)"
+  ],
+  [
+   "A test copy whose title loops draw the first girl's profile at once (the text window)",
+   "OK: the profile's filler half-width, wrapped between words"
+  ],
+  [
+   "The mahjong game, the quiz, the album, endings",
+   "not yet seen: as in Moonlight Chan Rin Shan, the title menu takes no click in the emulator"
+  ]
+ ],
+ "hamlet": [
+  [
+   "Boot from the hard disk (PANTHER.EXE's logo, then HAM.EXE)",
+   "OK: the logo, then the title menu"
+  ],
+  [
+   "Title menu (HAM.EXE's string routine)",
+   "OK: the filler labels drawn half-width, bold, in the menu's colours; past the box where longer than the Japanese (reported as overruns)"
+  ],
+  [
+   "New game: the first scene's messages (START.BIN, message window)",
+   "OK: filler wrapped between words at 45 letters, 5 lines a page, the key wait and the next page; the face beside it"
+  ],
+  [
+   "Opening (HOPEN.EXE): glossary page",
+   "OK: each line typed out half-width at its place"
+  ],
+  [
+   "Opening: the characters' cards",
+   "OK: each name centred in its card, moving with it, cut to the card's 38 columns"
+  ],
+  [
+   "Opening: story pages (reveal and scroll)",
+   "OK: lines centred anew, cut at 80 letters (reported), revealed and scrolled as the Japanese"
+  ],
+  [
+   "Opening: the mode labels (CRUISE / ASSAULT / COMBAT MODE)",
+   "not reached in the test"
+  ]
+ ],
+ "lesser_mern": [
+  [
+   "Boot from the hard disk: the menu run first (LM.COM)",
+   "OK: its two lines drawn half-width (the filler cut to their bytes, reported)"
+  ],
+  [
+   "Title menu (LESS.EXE's string routine)",
+   "OK: the filler labels half-width, in the menu's colours; past the box where longer than the Japanese"
+  ],
+  [
+   "New game, the field menu and a system message (the message window)",
+   "OK: the menu's labels half-width; the message's filler past its own bytes, read from the English segment"
+  ],
+  [
+   "A map's message (MDT002: a villager talking)",
+   "OK: the speaker's name (moved to the script's end) on the first line, the message's filler wrapped between words at the window's width, going on past its own bytes"
+  ],
+  [
+   "Opening (OPEN.EXE)",
+   "OK: the filler drawn two letters to a gaiji, wrapped between words, line after line at the page's place, with the opening's pictures and timing"
+  ],
+  [
+   "Events (EV200-EV205) and the ending (ED200, ED201 in ENDG.EXE)",
+   "not reached in the test (the same message routine and helper as the maps')"
+  ]
+ ],
+ "isaku": [
+  [
+   "Boot from the hard disk (AI5.EXE unpacked, with its helper; the English segment)",
+   "OK: the first menu (colour or monochrome) with its filler items, then the Elf logo"
+  ],
+  [
+   "Opening (OPENIN.MES): its lines from the English segment",
+   "OK: the filler drawn half-width line after line"
+  ],
+  [
+   "The first scene (a menu at the shoe lockers, then the classroom): the message window",
+   "OK: the filler read from the scene's English, wrapped between words at the window's width (62 letters), paged with a key"
+  ],
+  [
+   "Calls between the scripts (DEF.MES's routines, ITEMMAIN.MES) with the scripts rebuilt",
+   "OK: the game goes on from scene to scene"
+  ]
+ ],
+ "kakyuusei": [
+  [
+   "Boot from the hard disk: Kakyuusei (choice 1)",
+   "OK: the first menu (colour or monochrome) with its filler items, the Elf logo, then the hero's name entry"
+  ],
+  [
+   "Kakyuusei past the name entry",
+   "blocked: the name entry takes no input in np21w, in the original game too"
+  ],
+  [
+   "Kakyuusei Special (choice 2, KSP5.EXE and KSP.ARC): title, then the first scene",
+   "OK: the filler wrapped between words at the window's width, paged with a key"
+  ]
+ ],
+ "foxy_2": [
+  [
+   "Boot from the hard disk (F2.COM, then AI4.EXE)",
+   "OK: the first menu with its filler items"
+  ],
+  [
+   "Opening (OPEN.MES, timed to its music)",
+   "OK: its pages of filler half-width, wrapped between words, no key waits, through to the FOXY 2 logo"
+  ],
+  [
+   "The first scenes (classmates, the laboratory)",
+   "OK: the filler in the window under the pictures, wrapped, the scenes going on with a key"
+  ]
+ ],
+ "premium": [
+  [
+   "Boot from the hard disk (PRE.EXE, start.m)",
+   "OK: the logo with its menu's filler items"
+  ],
+  [
+   "The first messages (the window at the bottom)",
+   "OK: the filler wrapped between words, paged with a key, page after page"
+  ]
+ ],
+ "pp_disk_no_03": [
+  [
+   "Boot from the hard disk (Disk A's viewer, PPDISK -d)",
+   "OK: the title, then the main menu: its title, items and Pia's balloon in filler, half-width, in their boxes"
+  ],
+  [
+   "Disk A: the map quiz (the first item)",
+   "OK: its message in filler in the bar under the map"
+  ],
+  [
+   "Disk A: an article (a menu of type 3)",
+   "OK: the filler wrapped between words at the box's 46 letters, 8 lines to a page, the next page with Enter"
+  ],
+  [
+   "Disk A: a list (CG pictures and full-screen pages)",
+   "OK: the pages' filler wrapped at 80 letters, 24 lines to a page, the next page with a click; the pictures load"
+  ],
+  [
+   "ESC on the main menu, then Disk B's viewer",
+   "OK: Disk A's viewer quits, Disk B's title and menus follow in filler"
+  ],
+  [
+   "Disk B: the REIRA demo's installer text (PPCOPY.CMD)",
+   "OK: shown in filler wrapped at 78 letters; at 2.5 times the Japanese it takes 31 lines and the first scroll off (reported by the patcher)"
+  ],
+  [
+   "The REIRA demo (GAME in \\PPDISK\\B, run on its own)",
+   "OK: its setup screen, then its first message and menus in filler; later scenes not reached"
+  ]
+ ],
+ "de_ja": [
+  [
+   "Boot from the hard disk (DEJA.BAT: AI START.MES)",
+   "OK: the first menu's items in filler, half-width, in their boxes"
+  ],
+  [
+   "New game: the name entry (KPUT.COM)",
+   "OK: its prompts in full-width filler, the default names six full-width letters; ESC takes them"
+  ],
+  [
+   "The opening (OPEN.MES)",
+   "OK: speakers' tags in their colours, the filler after them wrapped between words to the window's 79 letters, 3 lines to a page, the next page after a key; the hero's name drawn where the script puts it"
+  ],
+  [
+   "The first scene (the hero's room)",
+   "OK: the command menu's items in filler in their boxes"
+  ]
+ ],
+ "raidy_2": [
+  [
+   "Boot from the hard disk (the floppy version installed: RAI2.BAT, ZVA98 L2_OP)",
+   "OK: the first menu's items in filler, half-width, in their box"
+  ],
+  [
+   "The opening (L2_OP.ZSD) with Raidy's lines",
+   "OK: the speaker's name in filler on its plate (ten letters), the message's filler after it, half-width, broken between words at the window's edge, a new page after a key when the window is full; the title logo between"
+  ],
+  [
+   "Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare)",
+   "OK: the messages' filler broken between words only, pages within the window, the menus as before"
+  ]
+ ],
+ "ring_out": [
+  [
+   "Boot from the hard disk (the floppy version installed: RO.BAT, ZVA21F)",
+   "OK: the setup menu's items in filler, half-width, in their box; Down and Enter pick its last item"
+  ],
+  [
+   "The opening (RO_01.ZSD) and the title",
+   "OK: the speakers' names in filler on their plates (cut to their ten bytes), the messages' filler after them broken between words, page after page with Enter; the title logo between"
+  ],
+  [
+   "Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare)",
+   "OK: the messages' filler broken between words only, pages within the window, the menus as before"
+  ]
+ ],
+ "twilight_hotel": [
+  [
+   "Boot from the hard disk (TH.BAT: ZVA GB_OP), the settings screen",
+   "OK: its menu's items in filler in their box, its labels cut to their places' room; a right-click leaves it"
+  ],
+  [
+   "The opening and the title menu",
+   "OK: the opening's pictures (their narration drawn into them, Japanese); the title menu's labels in filler; a click on the first starts"
+  ],
+  [
+   "The first scene (the hero's room)",
+   "OK: the speakers' names on their plates, the messages' filler wrapped between words across the window, page after page with Enter"
+  ],
+  [
+   "Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare)",
+   "OK: the messages' filler broken between words only, pages within the window, the menus as before"
+  ]
+ ],
+ "yuu_disk_vol_3": [
+  [
+   "Disk A (patched) and B in the floppy drives; PCMSET2.EXE, the voice speed setting",
+   "OK: its lines in half-width filler; the OK button goes on to the game"
+  ],
+  [
+   "The title and the story (DOR3.EDT)",
+   "OK: the title picture; the messages' filler after the speakers' names, wrapped at the window's edge, page after page; a command menu's filler in its box"
+  ]
+ ],
+ "koko_wa_rakuensou": [
+  [
+   "Boot from the CD version's HD boot disk with the hard disk (RAKUEN: MOTV21.EXE)",
+   "OK: the title's labels in filler, half-width, at their places; Up and Enter pick the first"
+  ],
+  [
+   "The opening",
+   "OK: the messages' filler half-width, broken between words at the window's edge, a new page after a key when the window is full"
+  ],
+  [
+   "Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare)",
+   "OK: the messages' filler broken between words only, pages within the window, the menus as before"
+  ]
+ ],
+ "koko_wa_rakuensou_2": [
+  [
+   "Boot from the CD version's HD boot disk with the hard disk (RAKUEN2: MOTV21.EXE AUTOEXE), the title menu",
+   "OK: its pictured items; the System item's menu in filler in its box, half-width; Up and Enter pick the first"
+  ],
+  [
+   "The first scene (the hero's room) and the hallway",
+   "OK: the speaker's name on its plate (cut to its room), the messages' filler wrapped between words, page after page with Enter; a choice menu's items in filler in their box"
+  ],
+  [
+   "Re-test after the helper's change (2026-10-12: a line past the window's bottom waits for a key and clears the window; a line keeps 8 dots spare)",
+   "OK: the messages' filler broken between words only, pages within the window, the menus as before"
+  ]
+ ],
+ "time_stripper_mako_chan": [
+  [
+   "Boot from the hard disk (TSM.COM, the archive's driver, CINEMA.BIN), the title menu",
+   "OK: the menu's help line in filler, half-width, in the message window; Enter starts"
+  ],
+  [
+   "The opening and the first scene",
+   "OK: the speakers' names in filler (cut to their room) with the messages' filler after them on their row, broken between words, three rows a page, a new page after a key; a choice menu's items in filler in the window"
+  ]
+ ],
+ "hana_no_kioku": [
+  [
+   "Boot from the CD version's HD boot disk with the hard disk (KIOKU: MOTV21.EXE), the title",
+   "OK: the title menu's labels in filler, half-width, at their places; Enter picks the first"
+  ],
+  [
+   "The first scene (the train)",
+   "OK: the messages' filler half-width, broken between words at the window's edge; a line past the window's bottom waits for a key and starts a new page"
+  ]
+ ],
+ "hana_no_kioku_dai_2_shou": [
+  [
+   "Boot from the hard disk (HK2.COM, the archive's driver, CINEMA.BIN), the title menu",
+   "OK: the menu's items in filler, half-width; Enter picks the first"
+  ],
+  [
+   "The first scenario's opening",
+   "OK: the speakers' names (in the same message as the text) in filler, cut to their room, the messages' filler after them on their row, broken between words, a new page after a key"
+  ]
+ ],
+ "immoral_study_scenario_1": [
+  [
+   "Boot from the hard disk (IMM01.BAT: SCBIOS, GSHELL, AI IMMORAL1.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration (the hero's monologue) and the first scene (the housekeeper at the door)",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
+ ],
+ "immoral_study_scenario_2": [
+  [
+   "Boot from the hard disk (IMM02.BAT: SCBIOS, GSHELL, AI IMMORAL2.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration and the first scene (the guard)",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
+ ],
+ "immoral_study_scenario_3": [
+  [
+   "Boot from the hard disk (IMM03.BAT: SCBIOS, GSHELL, AI IMMORAL3.BIN), the title menu",
+   "OK: the menu's items in filler, half-width, in their box; Enter picks the first"
+  ],
+  [
+   "The opening: the narration and the first scenes",
+   "OK: the messages' filler half-width, broken between words at the window's edge, the window waiting for a key and starting over when full; the speakers' tags in filler in their colour (cut to their room); a choice menu's items in filler"
+  ]
+ ],
+ "viper_v6": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title, the first menu and the picture menu",
+   "OK: the menu's items in filler, half-width"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name"
+  ]
+ ],
+ "viper_v6_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu; Information",
+   "OK: the information menu's items in filler, half-width, in their box; its pages of messages in filler, broken between words, the lines after the first indented"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages, drawn while the scene runs)"
+  ]
+ ],
+ "viper_v8": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (18日の金曜日; Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name"
+  ]
+ ],
+ "viper_v8_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages)"
+  ]
+ ],
+ "viper_v10": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scene (the kendo hall)",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name; a choice menu's items in filler"
+  ]
+ ],
+ "viper_v10_rs": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages; this build's writer draws through a routine, the hook writes the text VRAM there too)"
+  ]
+ ],
+ "viper_v12": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title and the picture menu",
+   "OK"
+  ],
+  [
+   "The picture menu's top story (Up, Enter): the opening scenes",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages)"
+  ]
+ ],
+ "animahjong_x": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FMX, SGS), the title, the start menu",
+   "OK: the menu's items in filler, half-width"
+  ],
+  [
+   "The opening scene (the mahjong parlour) and the first hand of mahjong",
+   "OK: the speaker's name in filler in its colour, the messages in filler half-width, each starting on a cleared window, broken between words at the window's edge and indented under the name (op 72's messages, the 66-cell window STARTUP.SIL sets); the mahjong screen's call menu (ポン, カン, ロン) is in the pictures, not text in the scripts or the program, and stays Japanese"
+  ]
+ ],
+ "mugen_yasoukyoku": [
+  [
+   "Boot from the hard disk (AUTOEXEC: FONT, SYS98.EXE run.s), the title menu; Enter on the first item",
+   "OK: the title menu is the picture's (Japanese); the game starts"
+  ],
+  [
+   "The opening: the narration, the command menu (Look and the others), what Look shows",
+   "OK: the messages in filler half-width (the patched program drawing ASCII from the ROM's half-width row), broken between words at the 66-cell window, a key wait and a cleared window past its four lines; the command menu's five items in filler, one a line, in the 14-cell window"
+  ]
+ ],
+ "kyouhaku": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's seven items in filler half-width (the program's own strings, replaced in place); the game starts"
+  ],
+  [
+   "The opening: speakers' names and their messages, a long message, the command menu",
+   "OK: the names and messages in filler half-width (the program drawing single bytes from the ROM's half-width row); a long English message broken between words at 54 cells under the name and paged by the program (four lines a page); with its slot switched to sub-op 01h (a test build) at 58 cells from the window's edge; the command menu's items in filler"
+  ]
+ ],
+ "majogari_no_yoru_ni": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's items in filler half-width (the program's own strings, in place); the game starts"
+  ],
+  [
+   "The name entry, its confirm clicked; the pronoun menu; the opening's messages",
+   "OK: the name entry's grid, prompt and name in filler (they are program strings); the pronoun menu's three items in filler; the messages in filler half-width, the inserts (%s the pronoun, %m the name) drawn from the patched program's strings, lines broken between words and the window paged; speakers' names in filler"
+  ]
+ ],
+ "inma_seifukugari": [
+  [
+   "Boot from the hard disk, the title menu; Enter on its first item",
+   "OK: the title menu's items in filler half-width (the program's own strings, in place); the game starts"
+  ],
+  [
+   "The opening (its scrolling prologue, clicked past), then the first scenes' messages",
+   "OK: the prologue is the pictures' (Japanese, as in the original); the speakers' names and messages in filler half-width, lines broken between words and the window paged (np21w shows this game's screens doubled, the original as well)"
+  ]
+ ],
+ "if": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 1 (和也君の憂鬱な一日)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ],
+  [
+   "Scenario 4 (マディ救出大作戦) from the scenario menu: the speakers' names (op 72h) and their messages",
+   "OK: a name in filler with its message after it on the line, the message's other lines started under the name's end; the narration after a spaces-only name indented the same way; a second speaker's name on a new line"
+  ]
+ ],
+ "if_2": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 5 (やっぱり薔薇が好き)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ]
+ ],
+ "if_3": [
+  [
+   "Boot from the hard disk: the title, the scenario menu",
+   "OK: the menu's prompt lines and the scenarios' titles in filler half-width (the patched program drawing ASCII pairs from the ROM's half-width row)"
+  ],
+  [
+   "Enter on the first scenario: scenario 8 (自殺志願)'s opening, its messages and choices",
+   "OK: the messages in filler half-width, broken between words at the window's edge (the window the scripts set followed), a key wait between them, the window cleared past its lines; the choices' items in filler"
+  ]
+ ],
+ "angel_halo": [
+  [
+   "Boot from the hard disk: the opening (OPENING.DAT's blocks over the pictures), the title",
+   "OK: the opening's blocks in filler half-width, centred and broken between words (the program draws ASCII by itself); the title's prompt line (a program string) in filler"
+  ],
+  [
+   "The main menu: the mouse to its second item (最初から始める), clicked; the first scenes' messages",
+   "OK: the menu's description line in filler; the messages in filler half-width, broken between words into the window's lines, a key wait between them; no choice came up in these scenes (the choices' items untested)"
+  ]
+ ],
+ "m_hard": [
+  [
+   "Boot from the hard disk: the title and its menu; Enter on its first item",
+   "OK: the menu's items in filler half-width (the program's strings, in place); the game starts"
+  ],
+  [
+   "The opening's messages, Enter after each",
+   "OK: the messages in filler half-width, lowercase letters right (written a byte higher), broken between words; no choice came up in these scenes (the choices' items untested)"
+  ]
+ ],
+ "rose_blood": [
+  [
+   "Boot from the hard disk: the title and its menu; Enter on its first item",
+   "OK: the menu's items in filler half-width (the program's strings, in place); the game starts"
+  ],
+  [
+   "The opening's messages, Enter after each",
+   "OK: the messages in filler half-width, lowercase letters right (written a byte higher), broken between words; no choice came up in these scenes (the choices' items untested)"
+  ]
+ ],
+ "viper_f_40": [
+  [
+   "Boot from the hard-disk boot floppy (the CD in the drive): its menu's first item, then the opening and the title",
+   "OK: the game starts from the patched hard disk; the title is a picture"
+  ],
+  [
+   "The first scene's messages and its menu, a click after each",
+   "OK: a speaker's name (its slot) and the message in filler half-width on one line, a longer one broken between words; the menu's items in filler half-width"
+  ]
+ ],
+ "guynarock_r": [
+  [
+   "Boot from the hard-disk boot floppy (the CD in the drive): its menu's first item, then the title",
+   "OK: the game starts from the patched hard disk; the title menu is a picture"
+  ],
+  [
+   "The opening's narration and the first scene, a click after each",
+   "OK: the narration's messages in filler half-width, broken between words and going on from one message to the next on a line (a space between); a full window waits for a click and goes on in a cleared one; a speaker's name (its slot) before a message"
+  ]
+ ],
+ "gloria": [
+  [
+   "Boot from the hard disk: the title, a click, the menu; a click on its first item (the pointer moved in small steps)",
+   "OK: the menu's program string in filler half-width (in place); the game starts"
+  ],
+  [
+   "The opening's messages, a click after each",
+   "OK: the messages in filler half-width, broken between words at the 50-cell window; a speaker's face picture shown and taken away with its message (the {G..} tokens kept)"
+  ]
+ ],
+ "youjuu_senki": [
+  [
+   "Boot from the hard disk (DIP SW2-8 off): the start menu; its second item",
+   "OK: the menu's program strings in filler half-width (in place); the game starts"
+  ],
+  [
+   "The first scene's messages, a click each",
+   "OK: the messages in filler half-width, broken between words at the 70-cell window, a speaker's face beside them; a message past four lines goes on in a second (checked with a six-line test message)"
+  ],
+  [
+   "The HQ menu, its information item, the data page about the beasts",
+   "OK: the menus' program strings in filler half-width; the data page's paragraphs in filler, broken at the page's width with their indents"
+  ],
+  [
+   "The opening (start menu's first item), checked separately",
+   "OK: the opening's pages centred line by line in filler half-width"
+  ],
+  [
+   "The animated scenes, the profiles and the battle lines",
+   "untested: not reached in these runs (the leave scenes need the soldiers' consent; no battle was played)"
+  ]
+ ],
+ "yumemizaka": [
+  [
+   "Boot from the hard disk: the prologue, the title, its first item (Enter through)",
+   "OK: the game starts; the prologue and the title are the program's pictures"
+  ],
+  [
+   "The first chapter's card and the first scene's messages, Enter after each",
+   "OK: the chapter card (a program string, in place) in filler half-width; the messages in filler half-width, broken between words at 58 cells"
+  ]
+ ],
+ "tenkousei": [
+  [
+   "Boot from the hard disk: the title menu (the mouse on its first button, a click)",
+   "OK: the game starts; the menu title and the buttons in filler half-width"
+  ],
+  [
+   "The first scene's messages, a click after each",
+   "OK: the messages in filler half-width, broken between words inside the 36-cell box, the box paged by the program; the date line (filler in its pieces) and the clock"
+  ],
+  [
+   "The first choice (the mouse to the choice box, a click) and the next day's messages",
+   "OK: the choice and its menu title in filler; the next scene plays (the scenarios' jumps and calls moved); the paragraphs' breaks kept"
+  ]
+ ],
+ "mashou_no_kao": [
+  [
+   "Boot from the hard disk: the load menu (CONFIG.BIN), its first item clicked",
+   "OK: the menu's title and items in filler, letter pairs half-width; the items kept to the box"
+  ],
+  [
+   "The opening (timed) and the first scene's messages, a click after each",
+   "OK: the messages in filler half-width, broken between words, a line padded to the window's edge, two rows then a click; the game goes on into the first room scene"
+  ],
+  [
+   "The right button in the first scene: the program's menu",
+   "OK: the program's own strings in filler, in place, each within its room"
+  ],
+  [
+   "A test build with S001.BIN split (every scene moved to S001A.BIN), the same steps",
+   "OK: the same screens: the scenes are reached from the hub in the other file and return to it"
+  ]
+ ],
+ "doop": [
+  [
+   "Boot from the hard disk: the opening (DOOP_OP.EXE) playing, shots every 12 s",
+   "OK: the subtitles in filler half-width on the text layer (letter pairs), broken between words onto two lines; the opening plays to its end"
+  ],
+  [
+   "The title, a click; the prologue's messages (MAPL.EXE), a click after each",
+   "OK: the messages in filler half-width (pairs), broken between words, the program's key waits and pages kept"
+  ],
+  [
+   "Further clicks to the scene's first menu",
+   "OK: a menu command in filler (its highlighted box)"
+  ]
+ ],
+ "coming_heart": [
+  [
+   "Boot from the hard disk: the opening (CH_OPEN.EXE), shots every 6 s",
+   "OK: the opening's pages in filler half-width (letter pairs), broken between words; the opening plays to the title"
+  ],
+  [
+   "The title's menu, its first command clicked",
+   "OK: the commands in filler (pairs) in the menu's two columns"
+  ],
+  [
+   "The first scene's messages (MAPL.EXE), a click after each",
+   "OK: the messages in filler half-width, broken between words"
+  ]
+ ],
+ "rookies": [
+  [
+   "Boot from the hard disk (RK.BAT: ANI), the title, Enter; the title menu, Enter on its first item",
+   "OK: the menu's items in filler half-width (letter pairs) in their box; the first starts the game (the name-entry screen)"
+  ],
+  [
+   "The name-entry screen, its 終了 clicked; the opening (OPENING.SCP), a click after each message",
+   "OK: the speaker's name on a line of its own, the messages' filler half-width after it, broken between words at the window's edge"
+  ],
+  [
+   "The program's menu (a right click)",
+   "OK: its labels in filler (pairs), cut to their room"
+  ],
+  [
+   "A forced cut (OPENING.SCP's first part about 400 bytes, the rest in OPENING2.SCP), the opening clicked through",
+   "OK: the last message of the first part, then the first of OPENING2.SCP, the scene, name and window kept"
+  ]
+ ],
+ "love_escalator": [
+  [
+   "Boot from the hard disk (LOVE.BAT: EQAP32 STARTUP), the title menu, Down and Enter on NEW GAME",
+   "OK: the menu (its labels drawn in the picture); the name-entry screen, its 決定 clicked and the confirmation passed with Enter"
+  ],
+  [
+   "The prologue (PR.EQA), Enter after each message",
+   "OK: the messages in filler half-width (letter pairs), broken between words at the window's edge"
+  ],
+  [
+   "The first scene (ST041A.EQA)",
+   "OK: the speakers' labels (their slot strings in filler, cut to their room; the hero's label as entered, kana) before the messages' filler"
+  ],
+  [
+   "The program's menu (a right click in the scene)",
+   "OK: its items in filler (pairs), the first highlighted"
+  ],
+  [
+   "ADDITIONAL MANUAL from the title menu: its menu, then a help page (the 74×12 window)",
+   "OK: the items in filler (past their room, as reported, running beyond the box); the page's filler broken between words in the window"
+  ],
+  [
+   "A forced cut (PR.EQA's first part about 900 bytes, the rest in PR2.EQA), the prologue clicked through",
+   "OK: m02464, the first part's last message, then m02465, the first of PR2.EQA, the scene kept"
+  ],
+  [
+   "The endings' hub split (ERE.EQA, its last scenes in ERE2.EQA): a test start calling ERE with var 00 at the table entry of a scene in ERE2",
+   "OK: ERE2's first scene's messages (m01677 on), its speaker's label, page after page"
+  ],
+  [
+   "A page break: the pseudo build's one paged message (m12333) in place of PR.EQA's first, in the game's flow",
+   "OK: four lines, a click, the rest on a new page, a click, the next message"
+  ]
+ ],
+ "koihime": [
+  [
+   "Boot from floppies A and B (IGS-DOS, IGS OP.DIA): the monitor menu, the title menu",
+   "OK: the items in filler half-width, turned on their sides in the vertical menus, the menus sized to them"
+  ],
+  [
+   "The name prompt and the name-entry screen (START.DIA)",
+   "OK: the prompt's filler in the vertical box; the entry's captions in filler (past their room, as reported)"
+  ],
+  [
+   "The prologue (OPEN.DIA), Enter after each message",
+   "OK: the speaker's label, the messages' filler in the box's six columns, broken between words, a new page after a click when the box is full"
+  ],
+  [
+   "A test start of the first scene (START loading S11.DIA), S11.DIA split by force into three files by its routine's bodies; the command menus chosen with Left and Enter",
+   "OK: the commands' replies kept only in S11_2.DIA shown (m01302 on), the part's file entered at the body, the scene's opening not shown again"
+  ]
+ ],
+ "waku_waku_mahjong_panic": [
+  [
+   "Boot from the hard disk (SIKI.BAT: NAVAL.EXE, DIANA.EXE): the sound menu, the title menu",
+   "OK: the items and the notes in filler half-width, the menus' rows in place"
+  ],
+  [
+   "New game, Enter through the prologue into the first scene (SS0.DSD, split into SS0.DSD and SS0B.DSD: its first part; MADV00.DSD), Enter after each page",
+   "OK: the speakers' labels, the messages' filler broken between words with later lines indented by the label, a new page when the window is full"
+  ]
+ ],
+ "waku_waku_mahjong_panic_2": [
+  [
+   "Boot from the hard disk (SIKI2.BAT: NAVAL.EXE, DIANA.EXE; the scripts in the rewritten archives): the sound menu, the title menu",
+   "OK: the items in filler half-width, the menus' rows in place"
+  ],
+  [
+   "New game: the prologue (M0_00.DSD) in the message window, clicked through",
+   "OK: the filler broken between words at the window's edge, inside its frame, a new page when it is full"
+  ],
+  [
+   "The character cards (M0_00.DSD: a string a character, each going on from the mark the one before left)",
+   "OK: the chained filler going on along the line, broken at the card's edge, a new page (a click) when the card is full; the name line cut at its room (reported)"
+  ],
+  [
+   "Clicked on past the cards into the first room scene (M1_00.DSD)",
+   "OK: the speaker's name and the messages' filler inside the scene's message box, a new page when it is full"
+  ]
+ ],
+ "gaogao_3rd": [
+  [
+   "Boot from the hard disk (GAO3.BAT: SYS98FM.EXE config.lsp, then WF_OPEN.LSP): the sound menu, the title menu",
+   "OK: the items in filler half-width (the patched program drawing ASCII from the ROM's half-width row), one a line in their windows"
+  ],
+  [
+   "New game, Enter on: the opening (OVERTURE), its speech bubble, the message window, the command menu",
+   "OK: the bubble's filler beside the face inside its frame; the messages broken between words at the 66-cell window; the menu's items one a line"
+  ]
+ ],
+ "hare_nochi_oosawagi": [
+  [
+   "Boot from the hard disk (ADVSHELL: the opening HARE.EXE, then ADVH.EXE): the credits, the title, the character cards",
+   "OK: the credits' and every card's records in filler half-width, each field in its colour, the cards going on one after another to the end of the opening"
+  ],
+  [
+   "Space at the title loop, then Enter: the start menu, the first scenes, the command menus",
+   "OK: the messages in filler half-width wrapped at the box's width over its lines; the start and command menus' items in filler half-width in their columns, the cursor bar over the first"
   ]
  ]
 }

@@ -111,5 +111,295 @@
    "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; the game refuses to start otherwise). The patch uses the collection's hard-disk install.",
    "Engine strings keep their byte length, so some labels are abbreviated (country names JPN/CHN/GER, one-kanji terrain names as two letters, the heroine Kotono as Koto on name labels)."
   ]
+ },
+ "mai": {
+  "remarks": [
+   "Needs DIP switch 2-8 OFF (game.json \"dipsw\"; AdvBIOS asks for it and stops otherwise)."
+  ]
+ },
+ "fairytale_kaizokuban": {
+  "not_handled": [
+   "The title line ADVSHELL.COM prints while it loads the engine (`Ｆａｉｒｙｔａｌｅ　海賊版`, a brand name in full-width letters and three kanji): the program-string search takes only runs with kana."
+  ]
+ },
+ "doukyuusei_2": {
+  "remarks": [
+   "Script room: in these scripts the English (with its commands) has fewer than three bytes for each Japanese character, so their English must be kept short (bytes for English / Japanese characters): `17.mes` 25419 / 17354; `27.mes` 25029 / 16595; `14.mes` 25503 / 15815; `15.mes` 27286 / 16268; `30.mes` 27066 / 15378; `39.mes` 25406 / 14291; `16a.mes` 23921 / 12915; `42.mes` 28230 / 15057; `41.mes` 25307 / 13292; `01.mes` 28598 / 14886; `26.mes` 27184 / 13514; `22.mes` 30917 / 15196; `21.mes` 29086 / 13196; `36.mes` 30258 / 13111; `43.mes` 31126 / 13468; `25.mes` 39443 / 16099; `SPECIAL.DAT/hint.mes` 49002 / 19738; `38.mes` 28762 / 11545; `31.mes` 31897 / 11756; `02.mes` 30631 / 11224; `40.mes` 33932 / 12069; `37.mes` 32798 / 11087; `39_sub.mes` 35471 / 11940; `62b.mes` 35715 / 11951."
+  ]
+ },
+ "doki_doki_shutter_chance": {
+  "remarks": [
+   "This is Elf's 1989 build of ADVH, older than the Fairytale/Cocktail Soft ones: its `ADVH.EXE` is neither EXEPACK-packed nor wrapped, and is written back unpacked; it has no disk-change command, so the half-width helper is put after the end of its image (the end of the text loop's code segment) and the header's size grows with it; it draws its glyphs squeezed to ten rows (lines 11 dots apart), and the helper squeezes the letters the same way (`pc98tl/advh.py`).",
+   "The main disk is Elf's own boot disk: FAT with no BPB in its boot sector, read with the standard 2HD layout (`pc98tl/disk.py`); its `ELF1.SYS`/`ELF2.SYS` system is not installed (the hard disk's DOS runs the game).",
+   "Scripts are loaded at DS:D800h and run up to the code segment at 1200h, a 10240-byte buffer (`script_room`).",
+   "The startup script's procedure 1 clears the box and shows a scene picture; it is not taken as the message end (a procedure that loads a file never is), and pages are split with the key wait `81 90`."
+  ]
+ },
+ "tenshin_ranma": {
+  "remarks": [
+   "The speech boxes are set by the start script's subroutine 1, which picks one of four windows by a variable the scene sets just before calling it (`0A var n`); the patcher follows the start script's subroutines into every scene and takes the window the variable picks (`pc98tl/ai5.py` windows).",
+   "The party's names are typed in the name entry (its kana grid stays Japanese) and printed by subroutines 16-18; the patcher keeps 8 cells for each.",
+   "Monster and item names in battle come from `SENTO.COM`, a table of 30-byte records, each with a 12-byte name field ended by a NUL: `r` ids, written in full-width letters, up to `max_cells` (5) letters.",
+   "The battle prints a name (command 14) and a number (command 15) between the pieces of its one-line messages; the patcher counts 10 cells for each (game.json \"inserts\": the longest monster name, five full-width letters, and a five-digit number in full-width digits), so the text after them wraps and pages from where they leave the line."
+  ]
+ },
+ "de_ja_2": {
+  "remarks": [
+   "Subroutines 7 and 8 print the hero's family and given name from the name entry (its kana grid stays Japanese; the defaults はつしば and りゅうすけ are poked by OPEN.MES); the patcher keeps 12 cells for each.  Subroutine 9 prints an ellipsis (three ・) in Japanese; 6 cells.  Subroutines 18, 21 and 22 (083.MES) print an island's, a place's and a guide's name, their text strings of their own; 16 cells each.",
+   "The speaker tags (【...】) are subroutine bodies the script defines in a table (12 n, the text), which the driver treats as menu items: full-width letters within the Japanese tag's width.",
+   "The boot test stops at the first menu: np21w passes no key or mouse input that picks an item, in the original game too (AUTOEXEC.BAT loads Elf's ELF.COM, and START.MES the mouse cursor MOUSE.DAT)."
+  ]
+ },
+ "nonomura_byouin_no_hitobito": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`: a chained-XOR directory, the members stored as they are), which the patch lays out anew with the rebuilt scripts."
+  ]
+ },
+ "kawarazakike_no_ichizoku": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`: a chained-XOR directory whose key, 2Ah here, is read off SIL.EXE; the members stored as they are), which the patch lays out anew with the rebuilt scripts."
+  ]
+ },
+ "ai_shimai": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK3.DAT (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts."
+  ]
+ },
+ "ushinawareta_rakuen": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK4.DAT (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts."
+  ]
+ },
+ "reira": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the data archives SILK0.DAT-SILK5.DAT (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts."
+  ]
+ },
+ "mobius_roid": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_D (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2)."
+  ]
+ },
+ "jack": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_E (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2)."
+  ]
+ },
+ "valentine_kiss_2": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; its scripts and pictures are in the DISK_ archives (an XOR-encrypted directory) DISK_A-DISK_D (`pc98tl/silkdat.py`), which the patch lays out anew with the rebuilt scripts. This later SIL.EXE codes text differently from Elf's AI5: dictionary characters from D0h, and C0h-CFh two-byte characters too (game.json version sil2).",
+   "The message box (columns 20-59) is set by DEFMAIN.MES, which the game runs first; the scripts after it set none, so game.json default_window gives it."
+  ],
+  "not_handled": [
+   "The name entry's frame and its prompt (主人公の名前を入力してください, 名前, おわり) are part of a picture."
+  ]
+ },
+ "fermion": {
+  "remarks": [
+   "Fermion's SIL.EXE is the same General Message system-1 (Rev.95:06:30) as Be-Yond's SL.EXE; its archives DISKA-DISKD hold the members uncompressed. The message box is set inside the system library, so its columns (3-63) were measured on screen: game.json message_window."
+  ]
+ },
+ "crescent": {
+  "remarks": [
+   "Silky's runs Elf's AI5 engine as SIL.EXE; Crescent's scripts are loose .M files in CRE/A-CRE/D (one folder a floppy), named by that path in the refs (game.json script_ext)."
+  ]
+ },
+ "dor_part_2": {
+  "remarks": [
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: DOR2.EDT by 2,266 letters, DOR3.EDT (48,032 bytes in Japanese) by 19,182 and DOR4B.EDT by 7,206; a real translation must keep those scripts about as long in bytes as the Japanese plus what the segment leaves (the patcher refuses and names the strings otherwise).",
+   "DOR has English Windows releases (DOR Package Edition / Download Edition, VNDB): another platform, linked for the translation role to port from; it does not block this patch."
+  ]
+ },
+ "dor_part_1": {
+  "remarks": [
+   "Part 1's ADL.EXE is an earlier build than Part 2's (its data segment at 474h, its variables a byte lower, no key-skip in the character wait); the patch reads every address off the program.",
+   "DOR has an English Windows release (G-Collections 2002; VNDB lists the Package and Download Editions): another platform, linked for the translation role to port from; it does not block this patch."
+  ]
+ },
+ "dor_part_3": {
+  "remarks": [
+   "Scenario 1 is a chain of scripts (S01_A to S01_N, each loading the next with 50h); a script that draws text before it sets a window uses the one its loader set, which the patcher follows.",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: SS2.EDT (53,639 bytes in Japanese) by 28,846 letters; a real translation of SS2.EDT must stay about as long in bytes as the Japanese plus the 11,897 bytes the segment leaves (the patcher refuses and names the strings otherwise)."
+  ]
+ },
+ "yuu_disk_vol_5": {
+  "remarks": [
+   "Telephone Scandal is also in DOR's English Windows release (G-Collections 2002): another platform, linked for the translation role to port from; it does not block this patch."
+  ]
+ },
+ "zatsuon_ryouiki": {
+  "remarks": [
+   "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown.",
+   "In the menus here the choices are text statements before the menu op, in a window sized for the Japanese: an English choice longer than its max_cells wraps onto a second line, past the menu's rows.",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: DAY1.EDT by 13,572 letters, DAY1A.EDT by 1,653, DAY2.EDT (63,656 bytes in Japanese) by 53,446 and DAY2P.EDT by 36,444; DAY2.EDT leaves 1,880 bytes for English beyond the Japanese, so its English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
+  ]
+ },
+ "yuu_disk_vol_8": {
+  "remarks": [
+   "The scripts and ADL98S.EXE are byte for byte those of Cybernoid Alpha (its full release); a translation of this folder serves both.",
+   "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown.",
+   "Some scripts (the battle scenes S_xx, PA_14) hold tables the walker never steps onto (after AFh, records of 14h bytes the entries reach); the tokenizer picks the walk up again at the next entry and the tables move as they are."
+  ]
+ },
+ "cybernoid_alpha": {
+  "remarks": [
+   "The collection has only an alternate dump of this release's Disk A (\"Disk A [Alt 1]\"), which holds the program and every script (EDT00); the patch covers it. Yuu Disk Vol. 8 (games/yuu_disk_vol_8) is the same game: its Disk A matches this one file for file except DA (a saved game: this dump has been played) and DO (the settings), and its Disks B-D hold the rest (the disk-ID files DB-DD, the pictures GF01-GF03, the sounds PCM02-PCM03). Played with the patched Disk A and Yuu Disk Vol. 8's Disk B, the story runs (see the tests).",
+   "The scripts and ADL98S.EXE are byte for byte those of Yuu Disk Vol. 8 (games/yuu_disk_vol_8, a complete hard-disk release): the strings are the same, ids included, so one translation serves both.",
+   "KOM_F0.EDT (the command table) is not extracted: no script loads it (op 18h), so it is never shown."
+  ]
+ },
+ "do_kaizokuban": {
+  "remarks": [
+   "D.O. Kaizokuban is two games on two images: this folder is Disks A-B (DOR's three scenarios, ADL'.EXE, on the ADL driver); games/do_kaizokuban_hoshi is Disk C (Hoshi no Suna Monogatari, ADL2.EXE)."
+  ]
+ },
+ "do_kaizokuban_hoshi": {
+  "remarks": [
+   "Disk C of D.O. Kaizokuban (games/do_kaizokuban is Disks A-B). ADL2.EXE is ADL with ADL5's opcode numbering (pc98tl/adl.py, variant adl2); its new line (06) waits for a key itself, so the patch leaves that control as it is."
+  ]
+ },
+ "hoshi_no_suna_monogatari_2": {
+  "remarks": [
+   "The collection's \"uncensored\" image has the same scripts and tables (only ADL2.EXE and DA differ); its ADL2.EXE takes the same patch, so it can be dropped onto PATCH.BAT (the patcher warns that it is not the image the strings were read from).",
+   "Most scripts here hold a 13h after a run of text, then a statement the entries reach: the walker never steps past 13h, so the tokenizer picks the walk up again at the entry (one byte kept as it is each time).",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: DAY4.EDT by 48,829 letters; DAY4's English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
+  ]
+ },
+ "dor_special_edition_sakigake": {
+  "remarks": [
+   "The title screen waits for Return (clicks do not go on), in the unpatched game as well."
+  ]
+ },
+ "collector_d_bangaihen": {
+  "remarks": [
+   "This ADL5.EXE is an earlier build than the other D.O. titles': its 23h, 24h, 53h and 54h statements are ADL3's shorter ones (pc98tl/adl5.py, variant adl5a).",
+   "The --pseudo build cuts its filler to fit the 64 KB script segment: MOVE.EDT (62,868 bytes, 58,160 of them Japanese text) leaves 2,668 bytes for English beyond the Japanese, so its English must stay about as long in bytes as the Japanese (the patcher refuses and names the strings otherwise)."
+  ]
+ },
+ "dor_special_edition_93": {
+  "remarks": [
+   "ADL5.EXE's code segment's last routine runs on 13 bytes into the next segment; the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the routine ran into the helper and the town map stayed black.",
+   "Its tables are named NAME_/NA_ (names) and KOM_/COM_ (commands); each table's `max_cells` is the slot the scripts give it (19h, 18h), and for commands also the menu boxes drawn while it is loaded."
+  ]
+ },
+ "yuu_disk_vol_4": {
+  "remarks": [
+   "This ADL98.EXE is an earlier build than Zatsuon Ryouiki's: its scripts are not coded, 9Ch is three bytes and AEh eleven, 0Dh is a control with a byte, and some scripts go on after an end (FFh) that their entries reach (pc98tl/adl5.py, variant adl98u).",
+   "The code segment's last routine runs on 11 bytes into the next segment (an instruction across the boundary); the helper's room goes in after that routine, not at the segment's start (pc98tl/adl.py _code_end).  At the segment's start the menu's highlight was lost."
+  ]
+ },
+ "crystal_rinal": {
+  "remarks": [
+   "The patch works on the CD version's hard-disk image.  It runs from the CD version's HD Boot disk floppy (which loads the CD-ROM driver) with the CD in the drive; on its own it stops at the DOS prompt, and the game started there shows a black screen.  The floppy release's ADL98.EXE is packed (DIET), which the patch does not take.",
+   "ADL21.EXE is ADL98's engine with 67h one byte and AEh eleven, and 66h and 97h named (pc98tl/adl5.py, variant adl21).  POWER.EDT, a command table the scripts load with 18h, is named in game.json \"tables\".",
+   "The start menu is a box (12h) with its items drawn at their own places (71h); the box's black background is drawn into the picture behind it, so each item's `max_cells` is the box's (15 letters)."
+  ]
+ },
+ "doki_doki_disk_vol_3": {
+  "remarks": [
+   "This ADL.EXE walks ADL2's statements (its length table is ADL2.EXE's): pc98tl/adl.py, variant adl2."
+  ]
+ },
+ "arquelphos": {
+  "remarks": [
+   "The messages' window is set up at run time: from B0h to 230h dots during the opening (48 letters, game.json \"message_cells\"), narrower where a portrait box is shown; the helper wraps at the window's edge as it is.",
+   "The patch adds the message segment (the block's size, in paragraphs) to the program's image; the memory the program asks DOS for past its image stays the same."
+  ]
+ },
+ "yuu_disk_vol_9": {
+  "remarks": [
+   "The messages' window is set up at run time, as in Arquelphos: 48 letters (game.json \"message_cells\"), narrower where a portrait box is shown; the helper wraps at the window's edge as it is."
+  ]
+ },
+ "doki_doki_disk_vol_8": {
+  "remarks": [
+   "NADL.EXE gives every statement its length after its opcode (a byte, or two with the top bit set), so the scripts walk without a table of lengths; a rebuilt statement gets its length anew, and each text statement is a string of its own (pc98tl/adl5.py, variant nadl)."
+  ]
+ },
+ "doki_doki_disk_vol_9": {
+  "remarks": [
+   "NADL.EXE gives every statement its length after its opcode (a byte, or two with the top bit set), so the scripts walk without a table of lengths; a rebuilt statement gets its length anew, and each text statement is a string of its own (pc98tl/adl5.py, variant nadl)."
+  ]
+ },
+ "moonlight_chan_rin_shan": {
+  "remarks": [
+   "The quiz questions and the profiles are drawn by the same text window routine the test copy used; the choices and the menus by the string routine the title menu shows."
+  ]
+ },
+ "yuu_disk_vol_7": {
+  "remarks": [
+   "This CHAN.EXE keeps its text window's state at 5758h (Moonlight Chan Rin Shan's at 0); pc98tl/chan.py reads it off the character draw.  Its profile table names four girls, each twice; the profiles it does not name are kept as they are.",
+   "PSTAT.EXE (run first by MOON.BAT: it checks the machine and the memory) prints to DOS's text console, English as it is; its messages are `e` strings, each in its own bytes."
+  ]
+ },
+ "hamlet": {
+  "remarks": [
+   "Menu labels longer than the Japanese draw past their box, and what is drawn outside it stays on screen after the menu closes: keep them to their `max_cells`."
+  ]
+ },
+ "lesser_mern": {
+  "remarks": [
+   "Names and labels longer than the Japanese draw past their menu or box, and what is drawn outside a menu stays on screen after it closes: keep them to their `max_cells`."
+  ]
+ },
+ "foxy_2": {
+  "not_handled": [
+   "F2.COM's two DOS messages, shown only when it is loaded a second time or removed while not loaded (the game's batch file does neither)."
+  ]
+ },
+ "premium": {
+  "not_handled": [
+   "PRE.EXE's prompts to put a floppy in a drive: the floppy release's only, never shown by the hard-disk release the patch works on."
+  ]
+ },
+ "pp_disk_no_03": {
+  "remarks": [
+   "Disk B's own record 0 (a copy of the replay mode's help) is never shown: no menu on Disk B opens the replay mode."
+  ]
+ },
+ "ring_out": {
+  "remarks": [
+   "KOM_F0.ZSD (a command table: SAVE, LOAD, the wrestling moves, the look and talk commands) is not extracted: no script loads it (op 19h names NAME_F0 only), so it is never shown."
+  ]
+ },
+ "twilight_hotel": {
+  "not_handled": [
+   "The opening's narration: drawn vertically into its pictures (TWOP_A-F.MOG), not text."
+  ]
+ },
+ "viper_v6_rs": {
+  "remarks": [
+   "The disk keeps VC2.SIL, V6's own script, which nothing in V6 RS loads (and whose ops are V6's); it is left as it is."
+  ]
+ },
+ "mugen_yasoukyoku": {
+  "remarks": [
+   "English releases exist on other platforms (Nocturnal Illusion, Windows and later); none on the PC-98."
+  ]
+ },
+ "inma_seifukugari": {
+  "not_handled": [
+   "The opening's scrolling prologue (drawn in its pictures, ANIM*.ANM)."
+  ]
+ },
+ "waku_waku_mahjong_panic": {
+  "remarks": [
+   "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE: the mouse menus did not take the test's inputs reliably).  The two programs' text routine is patched the same way as DIANA's (the same routine, found by its bytes)."
+  ]
+ },
+ "waku_waku_mahjong_panic_2": {
+  "remarks": [
+   "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE), the save and load screens, the endings."
+  ]
+ },
+ "gaogao_3rd": {
+  "remarks": [
+   "Not reached in this test: the battles past the opening, the save and load screens, the endings."
+  ]
+ },
+ "hare_nochi_oosawagi": {
+  "remarks": [
+   "Not reached in this test: the scenes past the first rooms, save and load, the endings."
+  ]
  }
 }

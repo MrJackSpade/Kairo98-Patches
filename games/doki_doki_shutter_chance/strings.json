@@ -1,0 +1,668 @@
+{
+ "source_image_sha256": "677212833cfa8acdd39b0cef2b34469168e3707e7eb643a0d67202c98d927851",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "　　　　　　　　◇◇◇　どきどき！　シャッターチャンス　◇◇◇",
+   "en": "",
+   "refs": [
+    "START.MES:0",
+    "JOSHI/START.MES:0",
+    "NURSE/START.MES:0",
+    "BUS/START.MES:0"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　〔ｃ〕ｅｌｆ　１９８９．２",
+   "en": "",
+   "refs": [
+    "START.MES:1",
+    "JOSHI/START.MES:1",
+    "NURSE/START.MES:1",
+    "BUS/START.MES:1"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　ＮＯＷ　ＳＹＳＴＥＭ　ＬＯＡＤＩＮＧ！",
+   "en": "",
+   "refs": [
+    "START.MES:2",
+    "JOSHI/START.MES:2",
+    "NURSE/START.MES:2",
+    "BUS/START.MES:2"
+   ],
+   "max_cells": 39
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "『亀羅　小僧』通称早撮りのジャック。",
+   "en": "",
+   "refs": [
+    "START.MES:3",
+    "JOSHI/START.MES:3",
+    "NURSE/START.MES:3",
+    "BUS/START.MES:3"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "法の網をかいくぐり、『のほほーん』と暮らしている悪人をこのカメラひとつで退治するのが俺の仕事である。",
+   "en": "",
+   "refs": [
+    "START.MES:4",
+    "JOSHI/START.MES:4",
+    "NURSE/START.MES:4",
+    "BUS/START.MES:4"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "そんな俺の所に、いつものように新しい仕事の依頼がきた。",
+   "en": "",
+   "refs": [
+    "START.MES:5",
+    "JOSHI/START.MES:5",
+    "NURSE/START.MES:5",
+    "BUS/START.MES:5"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "依頼人は、清水　くみ　１６歳。\n東都女子短大付属渋谷女子高等学校の２年生。",
+   "en": "",
+   "refs": [
+    "START.MES:6"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "いつも学校で、『いぢめ』にあっている彼女は、同級生のわなにはまり無実の罪をきせられたあげく、学校の先生におこられた恨みを晴らしたいという\n依頼は、彼女をいぢめた友達１０人の恥ずかしい写真を撮ってほしいとの事だった。\n報酬は、なっなんと、くみちゃんの恥ずかしい写真だ。",
+   "en": "",
+   "refs": [
+    "START.MES:7"
+   ],
+   "max_cells": 131
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "カメラの中に入っているフイルムはきっかり１０枚。当然失敗は許されない\n俺は、愛用のカメラを手に取ると彼女の学校へと向かった。",
+   "en": "",
+   "refs": [
+    "START.MES:8"
+   ],
+   "max_cells": 61
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　★★★　ゲームの操作方法　★★★",
+   "en": "",
+   "refs": [
+    "START.MES:9",
+    "JOSHI/START.MES:9",
+    "NURSE/START.MES:9",
+    "BUS/START.MES:11"
+   ],
+   "max_cells": 27
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "　　　　　あなたは、主人公の『亀羅　小僧』を操り１０人の女の子の写真を\n　　　　　集めるのが目的です。",
+   "en": "",
+   "refs": [
+    "START.MES:10",
+    "JOSHI/START.MES:10",
+    "NURSE/START.MES:10",
+    "BUS/START.MES:12"
+   ],
+   "max_cells": 50
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "　　　　　『亀羅　小僧』は、テンキーの２・４・６・８で操ります。\n　　　　　女の子を〔赤い髪のキャラクター〕を見つけたらタイミング良く\n　　　　　スペースキーを押してください。２、３秒後にシャッターが切れて\n　　　　　ストロボが光ります。\n　　　　　ストロボの光の中に女の子が入っていればその女の子を写真に撮った\n　　　　　ことになります。",
+   "en": "",
+   "refs": [
+    "START.MES:11",
+    "JOSHI/START.MES:11",
+    "NURSE/START.MES:11",
+    "BUS/START.MES:13"
+   ],
+   "max_cells": 165
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "　　　　　だだし、学校の先生〔黄色髪のキャラクター〕につかまると、今まで\n　　　　　撮った写真を没収されてしまいます。\n　　　　　こうして、時間以内に１０枚のフイルムに１０人の女の子を撮せば\n　　　　　ゲーム終了です。",
+   "en": "",
+   "refs": [
+    "START.MES:12",
+    "JOSHI/START.MES:12",
+    "NURSE/START.MES:12",
+    "BUS/START.MES:14"
+   ],
+   "max_cells": 106
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "　　　　　ゲームが終われば、その写真を現像して依頼人に送ります。\n　　　　　果して、あなたの仕事は成功するでしょうか？",
+   "en": "",
+   "refs": [
+    "START.MES:13",
+    "JOSHI/START.MES:13",
+    "NURSE/START.MES:13",
+    "BUS/START.MES:15"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "　おまえは、亀羅小僧だな\n　そのフイルムは没収する",
+   "en": "",
+   "refs": [
+    "START.MES:14",
+    "START.MES:16",
+    "JOSHI/START.MES:14",
+    "JOSHI/START.MES:16",
+    "NURSE/START.MES:14",
+    "NURSE/START.MES:16",
+    "BUS/START.MES:16",
+    "BUS/START.MES:18"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "　あなたは、新しいフイルム\n　にかえた。",
+   "en": "",
+   "refs": [
+    "START.MES:15",
+    "START.MES:17",
+    "JOSHI/START.MES:15",
+    "JOSHI/START.MES:17",
+    "NURSE/START.MES:15",
+    "NURSE/START.MES:17",
+    "BUS/START.MES:17",
+    "BUS/START.MES:19"
+   ],
+   "max_cells": 19
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "　　　ＴＩＭＥ　ＵＰ　　　",
+   "en": "",
+   "refs": [
+    "START.MES:18",
+    "JOSHI/START.MES:18",
+    "NURSE/START.MES:18",
+    "BUS/START.MES:20"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "あなたから送られて来るはずの写真がまだ届きません。きっと、あなたの身に何かあったのでしょう。\nわたしは、もう１日だけあなたを待ってみます。どうか、がんばってください。",
+   "en": "",
+   "refs": [
+    "START.MES:19",
+    "JOSHI/START.MES:19",
+    "NURSE/START.MES:19",
+    "BUS/START.MES:21"
+   ],
+   "max_cells": 82
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "　　ＣＯＭＰＬＥＴＥＤ　　",
+   "en": "",
+   "refs": [
+    "START.MES:20",
+    "JOSHI/START.MES:20",
+    "NURSE/START.MES:20",
+    "BUS/START.MES:22"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　よーし。現像だ！！",
+   "en": "",
+   "refs": [
+    "START.MES:21",
+    "JOSHI/START.MES:21",
+    "NURSE/START.MES:21",
+    "BUS/START.MES:23"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "　　　　　　　　俺様はこの１０枚の写真を依頼人の彼女に送った。\n　　　　　　　　そして、数日後・・・・・・・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "START.MES:22",
+    "JOSHI/START.MES:22",
+    "NURSE/START.MES:22",
+    "BUS/START.MES:24"
+   ],
+   "max_cells": 62
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "今回は、どうも、ありがとうございました。１０人分の写真を確かに受け取りました。\nこれを持っていればもう、私がいぢめられることは無くなるでしょう。本当にどうもありがとうございました。",
+   "en": "",
+   "refs": [
+    "START.MES:23",
+    "JOSHI/START.MES:23",
+    "NURSE/START.MES:23",
+    "BUS/START.MES:25"
+   ],
+   "max_cells": 89
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "これは、お礼の私の写真です。\nはずかしいからあんまり見ないでくださいね。",
+   "en": "",
+   "refs": [
+    "START.MES:24",
+    "JOSHI/START.MES:24",
+    "NURSE/START.MES:24",
+    "BUS/START.MES:26"
+   ],
+   "max_cells": 35
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "　　　　これで、今回の仕事は、終わりだ。俺様の手にかかればこんなもんさ。\n　　　　そうそう、今回の依頼人の彼女、なかなかかわいかったな・・・・・。",
+   "en": "",
+   "refs": [
+    "START.MES:25",
+    "JOSHI/START.MES:25",
+    "NURSE/START.MES:25",
+    "BUS/START.MES:27"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "　　　　もし、君が俺様に仕事を依頼したかったら金曜日の夕方五時に新宿駅\n　　　　西口の伝言板にＫＡＭＥあてにメッセージを書いておくんだな。",
+   "en": "",
+   "refs": [
+    "START.MES:26",
+    "JOSHI/START.MES:26",
+    "NURSE/START.MES:26",
+    "BUS/START.MES:28"
+   ],
+   "max_cells": 68
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　　　　おっと、もうこんな時間だ。次の依頼人が俺様を待っている。\n　　　　今度の仕事はどんな仕事になるのやら・・・・・・・・・・",
+   "en": "",
+   "refs": [
+    "START.MES:27",
+    "JOSHI/START.MES:27",
+    "NURSE/START.MES:27",
+    "BUS/START.MES:29"
+   ],
+   "max_cells": 63
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "☆☆　ＴＨＥ　ＥＮＤ　☆☆",
+   "en": "",
+   "refs": [
+    "START.MES:28",
+    "JOSHI/START.MES:28",
+    "NURSE/START.MES:28",
+    "BUS/START.MES:30"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "あなたから送られてきた写真を受け取りました。写真はちゃんと１０枚あるのですが悲しいことに同じ写真があります。\n残念ながら、これでは私の気持ちはおさまりません。",
+   "en": "",
+   "refs": [
+    "START.MES:29",
+    "JOSHI/START.MES:29",
+    "NURSE/START.MES:29",
+    "BUS/START.MES:31"
+   ],
+   "max_cells": 78
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "もう一度、あなたに同じ仕事を依頼します。どうか、がんばってください。",
+   "en": "",
+   "refs": [
+    "START.MES:30",
+    "JOSHI/START.MES:30",
+    "NURSE/START.MES:30",
+    "BUS/START.MES:32"
+   ],
+   "max_cells": 34
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "あなたから送られてきた写真を受け取りました。でも、何も写ってない写真があるのです。\nあなたに仕事を依頼したのは、間違いだったのでしょうか？",
+   "en": "",
+   "refs": [
+    "START.MES:31",
+    "JOSHI/START.MES:31",
+    "NURSE/START.MES:31",
+    "BUS/START.MES:33"
+   ],
+   "max_cells": 68
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "わたしは、あなたを信じてもう一度、同じ仕事を依頼します。健闘を祈ります。",
+   "en": "",
+   "refs": [
+    "START.MES:32",
+    "JOSHI/START.MES:32",
+    "NURSE/START.MES:32",
+    "BUS/START.MES:34"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "送られてきた写真はお返しします。私がいっている事がうそでないことを確認してください。",
+   "en": "",
+   "refs": [
+    "START.MES:33",
+    "JOSHI/START.MES:33",
+    "NURSE/START.MES:33",
+    "BUS/START.MES:35"
+   ],
+   "max_cells": 42
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "＊＊",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e330",
+    "ADVH.EXE:e352",
+    "JOSHI/ADVH.EXE:e330",
+    "JOSHI/ADVH.EXE:e352",
+    "NURSE/ADVH.EXE:e330",
+    "NURSE/ADVH.EXE:e352",
+    "BUS/ADVH.EXE:e330",
+    "BUS/ADVH.EXE:e352"
+   ],
+   "max_cells": 2
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "フラグのセーブができません",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e336",
+    "JOSHI/ADVH.EXE:e336",
+    "NURSE/ADVH.EXE:e336",
+    "BUS/ADVH.EXE:e336"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "が",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e40b",
+    "JOSHI/ADVH.EXE:e40b",
+    "NURSE/ADVH.EXE:e40b",
+    "BUS/ADVH.EXE:e40b"
+   ],
+   "max_cells": 1
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "オープンできません。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e40f",
+    "JOSHI/ADVH.EXE:e40f",
+    "NURSE/ADVH.EXE:e40f",
+    "BUS/ADVH.EXE:e40f"
+   ],
+   "max_cells": 10
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "のサイズを得られません。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e42e",
+    "JOSHI/ADVH.EXE:e42e",
+    "NURSE/ADVH.EXE:e42e",
+    "BUS/ADVH.EXE:e42e"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "メモリーの開放に失敗しました。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e449",
+    "JOSHI/ADVH.EXE:e449",
+    "NURSE/ADVH.EXE:e449",
+    "BUS/ADVH.EXE:e449"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "さぶろう",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:e470",
+    "JOSHI/ADVH.EXE:e470",
+    "NURSE/ADVH.EXE:e470",
+    "BUS/ADVH.EXE:e470"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "ＥＸＥＣに失敗しました。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:ee25",
+    "JOSHI/ADVH.EXE:ee25",
+    "NURSE/ADVH.EXE:ee25",
+    "BUS/ADVH.EXE:ee25"
+   ],
+   "max_cells": 12
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "ファイルがオープン出来ません。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:f43a",
+    "JOSHI/ADVH.EXE:f43a",
+    "NURSE/ADVH.EXE:f43a",
+    "BUS/ADVH.EXE:f43a"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "ファイルの読み込みに失敗しました。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:f45b",
+    "JOSHI/ADVH.EXE:f45b",
+    "NURSE/ADVH.EXE:f45b",
+    "BUS/ADVH.EXE:f45b"
+   ],
+   "max_cells": 17
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "ファイルのクローズに失敗しました。。",
+   "en": "",
+   "refs": [
+    "ADVH.EXE:f480",
+    "JOSHI/ADVH.EXE:f480",
+    "NURSE/ADVH.EXE:f480",
+    "BUS/ADVH.EXE:f480"
+   ],
+   "max_cells": 18
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "今度の依頼人は、中村　ひろみ。\n東都女子短大付属渋谷女子高等学校の２年生。\nこの前の依頼人、清水　くみに俺様の話を聞いてきたそうだ。",
+   "en": "",
+   "refs": [
+    "JOSHI/START.MES:6"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "彼女は家がやくざというだけでみんなから仲間外れにされているというのだ\n俺様が彼女を仲間外れにしている友達の恥ずかしい写真を使っておねがいすればきっと彼女を仲間にいれてくれるだろう。",
+   "en": "",
+   "refs": [
+    "JOSHI/START.MES:7"
+   ],
+   "max_cells": 89
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "フイルムはいつものように１０枚だけ\n成功したら彼女の恥ずかしい写真をもらうという約束で仕事を請け負っのだった。",
+   "en": "",
+   "refs": [
+    "JOSHI/START.MES:8"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "へへへへ、今回の依頼人は総合病院の看護婦、田中　よしこだ。\n彼女は、患者の評判もよくほかの先生達からもかわいがられていた。",
+   "en": "",
+   "refs": [
+    "NURSE/START.MES:6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "その彼女が先輩の看護婦達からいじめられているというのだ。",
+   "en": "",
+   "refs": [
+    "NURSE/START.MES:7"
+   ],
+   "max_cells": 28
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "このかわいそうな彼女を救ってあげなきゃ男がすたるというもの。\nフイルムはいつものように１０枚だけ\n成功したら彼女の恥ずかしい写真をもらうという約束で仕事を請け負っのだった。",
+   "en": "",
+   "refs": [
+    "NURSE/START.MES:8",
+    "BUS/START.MES:10"
+   ],
+   "max_cells": 84
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "今度の依頼人は、まつもとようこ。\nはとバスツアーのバスガイドだ。",
+   "en": "",
+   "refs": [
+    "BUS/START.MES:6"
+   ],
+   "max_cells": 31
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "彼女はこの会社に就職してから半年だというのにかわいい顔と持ち前の明るさであっという間に社内の人気者になってしまった。",
+   "en": "",
+   "refs": [
+    "BUS/START.MES:7"
+   ],
+   "max_cells": 58
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "ところが彼女の人気を妬んだ会社の先輩達は彼女をいびり始めたのだ。",
+   "en": "",
+   "refs": [
+    "BUS/START.MES:8"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "彼女も最初の内はしかたないと思ってあきらめていたが先輩達のいびりは激しくなる一方だった。",
+   "en": "",
+   "refs": [
+    "BUS/START.MES:9"
+   ],
+   "max_cells": 44
+  }
+ ]
+}

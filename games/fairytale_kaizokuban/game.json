@@ -1,0 +1,51 @@
+{
+ "title": "Fairytale Kaizokuban",
+ "key": "Fairytale.zip/Fairytale Kaizokuban",
+ "image": "Fairytale Kaizokuban\\Fairytale Kaizokuban [FD hd9]\\Fairytale Kaizokuban (Disk A).d88",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Fairytale Kaizokuban (Disk B).d88"
+  ],
+  "subdirs": true,
+  "skip": [
+   "ADVH_SYS.DOS",
+   "ﾌｪｱﾘｰﾃｰﾙ.  A",
+   "ﾌｪｱﾘｰﾃｰﾙ.  B"
+  ],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "boot_steps": "38:shot,1:right,1:shot,2:enter,4:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot,3:enter,2:shot"
+}

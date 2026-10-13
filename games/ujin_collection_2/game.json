@@ -1,0 +1,14 @@
+{
+ "title": "U-Jin Special Collection (Kounai Shasei re-release) Vol. 2",
+ "key": "FairytaleRed-zone.zip/U-Jin Special Collection (Kounai Shasei re-release)",
+ "image": "U-Jin Special Collection (Kounai Shasei re-release)\\U-Jin Special Collection (Kounai Shasei re-release) [HD]\\U-Jin Special Collection (Kounai Shasei re-release) (Vol. 2).hdi",
+ "encoding": "adv98v",
+ "game_dir": "KOUNAI2",
+ "extraop": false,
+ "boot_steps": "40:shot,3:lclick,3:shot,3:lclick,3:shot,1:right,2:enter,3:shot,1:right,2:enter,3:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "script_room": 17096
+}

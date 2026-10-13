@@ -27,8 +27,8 @@ DOS_DIRS = ("DOS/", "TOOLS/", "WINDOWS/", "BIN/", "UTIL/", "DRIVER/")
 ENGINES = [
     ("alice-sys", "Alice Soft System 1-3", "ADISK.DAT scenario; Dalk is done (games/dalk)",
      lambda n, e, p: "ADISK.DAT" in n),
-    ("adv98v", "Cocktail Soft / Fairytale ADV engine", "*.MES + *.TCM/*.GPC/*.USO, ADV98V.OVL; cracked by existing patches (Dead of the Brain, Dengeki Nurse, X-Girl)",
-     lambda n, e, p: "ADV98V.OVL" in n or ("TCM" in e and ("GPC" in e or "USO" in e)) or ("USO" in e and "MES" in e)),
+    ("adv98v", "Cocktail Soft / Fairytale ADV engine", "*.MES + *.TCM/*.GPC/*.USO, ADV98V.OVL or ADVH.EXE; cracked by existing patches (Dead of the Brain, Dengeki Nurse, X-Girl)",
+     lambda n, e, p: "ADV98V.OVL" in n or "ADVH.EXE" in n or ("TCM" in e and ("GPC" in e or "USO" in e)) or ("USO" in e and "MES" in e)),
     ("elf-ai5", "Elf AI5", "AI5.EXE, *.MES scripts",
      lambda n, e, p: "AI5.EXE" in n or ("START.MES" in n and ("S4" in e or "M" in e) and p in ("elf", "Silky's"))),
     ("silkys", "Silky's SIL engine", "SIL.EXE / SILKn.DAT",

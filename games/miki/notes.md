@@ -29,13 +29,13 @@ The floppies have no room for a longer script, so the patch lays the game out on
 * A message after a speaker's name tag (a procedure that ends its line) starts on the frame's second line.
 * Procedures are read for what they print: a name tag ends its line, a fixed text (an ellipsis) or a name shown from a variable (its Japanese width) moves along it, a line break moves down, and a frame or text reset starts a fresh page.  A message continues the page of the text before it, wrapped from where that left off, with room left for what is printed after it.
 * Procedures (`B9 n`) are copied into fixed slots of a table (one per number, run on into free slots after it); a build that would overrun one is refused.
-* String variables' values (`@n='...'` arguments) are rewritten in place.
+* String variables' values (`@n='...'` arguments) and the strings in the engine's programs are rewritten in place.
 
 ## Script
 
-1236 strings (5 name tags (procedure text), 85 menu items, 1145 messages, 1 string variable values).
+1238 strings (5 name tags (procedure text), 85 menu items, 1145 messages, 1 string variable values, 2 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 1236 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1238 strings have English so far.
 
 ## Limits
 
@@ -44,6 +44,8 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -55,5 +57,7 @@ Translation and the content classification (♥) are done by the translation mod
 |---|---|
 | Floppy laid out on a hard disk; start menu | OK: boots from the hard disk; full-width filler items |
 | Opening village and festival scenes | OK: speaker tag on the first line, filler wrapped between words to the box (set at startup), pages of 3 lines |
+| Name entry prompt (CMD/MOUSENAM.I86, the start menu's fourth item) | OK: half-width filler under the kana grid; the grid stays as it is |
+| The default hero name (NAME.DEF) in the story | not yet seen |
 | Save/load, later scenes, endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

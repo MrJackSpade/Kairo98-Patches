@@ -1,0 +1,2439 @@
+{
+ "source_image_sha256": "0daca83c79b963dc38d266bf4af2cf13b732d62c8c5aa1d6978896f8121a1754",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "１．３Ｄディスク発刊のお言葉",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:012e"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "２．ミュージック・ライブラリー",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0149"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "３．アート・ギャラリー",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0165"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "４．よもやま通信",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:017b"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "５．開発室便り",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:018a"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "６．クラブ　ディー・オーからのお知らせ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:019a"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "７．ゲーム",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:01b9"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "８．宿題",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:01c5"
+   ],
+   "max_cells": 40
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "　－－－－－－－　３Ｄディスク発刊のお言葉　－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0232"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "新作ソフト制作の間隙を縫うようにして作られてきた『３Ｄディスク』。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:026c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "その『３Ｄディスク』も、今回でめでたく５枚目・・・",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:029e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "Ｖｏｌ．５を迎えることができました。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:02c5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "これも皆さんの応援があったからこそです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:02e1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "そして今回も、それぞれのパートのスタッフが集まり、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:02fd"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "Ｖｏｌ．５を期待している皆さんのために駆け抜けるような勢いで作りました。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:031f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "Ｖｏｌ．４でも言ったとおり、この『３Ｄディスク』は市販を目的とされたソフトのように大容量にはできません。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0353"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "しかし、作り上げるという点においては『星の砂物語』シリーズや『ＤＯＲ』シリーズと何ら変わりはありません。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:039d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "思い入れは一緒です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:03ec"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "真剣に、そして楽しみながら作ったディー・オーの世界を",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:03ff"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "覗いてみてください。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0427"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "「ムゥ－ンライトちゃんリンしゃん」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0655",
+    "DOKI5.EDT:069e",
+    "DOKI5.EDT:06e7",
+    "DOKI5.EDT:0730",
+    "DOKI5.EDT:0779",
+    "DOKI5.EDT:07c2",
+    "DOKI5.EDT:080b",
+    "DOKI5.EDT:0854",
+    "DOKI5.EDT:089d",
+    "DOKI5.EDT:08e6",
+    "DOKI5.EDT:0930",
+    "DOKI5.EDT:097a"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．１",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0673"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．２",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:06bc"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．３",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0705"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．４",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:074e"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．５",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0797"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．６",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:07e0"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．７",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0829"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．８",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0872"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．９",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:08bb"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．１０",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0904"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．１１",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:094e"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "　　　　　　　挿入曲　Ｎｏ．１２",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0998"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "　－－－－－－－－－　アート・ギャラリー　－－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:09d9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "　　　　　　Ａｒｑｕｅｌｐｈｏｓ（アルキルフォス）　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0a6a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "ＰＩＴ（ピット）は、ジェラシックワールドいちの上昇志向の強い恐竜。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0a98"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "そんなＰＩＴが何をとち狂ったか、人間の女の子に興味を持ってしまった。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0acf"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "でもＰＩＴは恐竜！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0b0d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "　　　大きい！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0b23"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "　　重い！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0bc6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "　　しっぽが邪魔！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0c68"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "　　　サイズがあわない！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0d0f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "　　　そんな時、コリントの女神がいたずらっぽく微笑んだ。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0d2f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "「人間の姿が欲しいのならばコリントの私を訪ねてくるがいい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0d58"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "但し、８人の私の可愛い僕がお前の前進を妨げるであろう。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0da5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "そうだ、エッチな戦いを挑んでくるはずだ。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0dcf"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "　　　　　　　　　お前はそれを受けて立て。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0e3f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "　　　　　そして人間の女の子の○らしさを知るがいい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0f01"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "お前がコリントに到着する頃にはお前の心はもう人間のはず！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0f76"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "姿形は約束通り私が変えて見せよう！！」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:0fa2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "　　　　　　　ああ、ＰＩＴの運命やいかに！？",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1092"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "ＰＣ－９８００シリーズ、Ｘ６８０００シリーズ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:10b7",
+    "DOKI5.EDT:16a3"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　７月１６日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:10db"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "ＰＣ－９８２１シリーズ、ＦＭ－ＴＯＷＮＳ（ＭＡＲＴＹ）",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1101",
+    "DOKI5.EDT:16ed"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　７月３０日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1133"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　コレクターＤ　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1165"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "元ソフトハウスのゲームデザイナーの君は世紀末に訪れた大不況で倒産してしまった会社を後に今は花もときめくおもちゃメーカーのデザイナー！！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1182"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "えっ、何のおもちゃだって・・・・うーん、いわゆる大人のおもちゃて奴",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:11e4"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "自分で作ったおもちゃを自分でセールスし、そして人々に悦びを思い出させる！！　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:120f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "武器は「美少女ゲーム」のゲームデザインで培った発想とひらめきである。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1246"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "あなたは昔取ったきねづかで超高性能パソコンに向いおもちゃのデザインをはじめるのである。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:127c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　タッチハ？",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:12bf",
+    "DOKI5.EDT:12da"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　１　　ゴツゴツ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:12f5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　１＞　ゴツゴツ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1316",
+    "DOKI5.EDT:134b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　２＞　スベスベ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:132e",
+    "DOKI5.EDT:1363"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　３＞　フニャフニャ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:137b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　－２－",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:139f",
+    "DOKI5.EDT:13d9",
+    "DOKI5.EDT:1413"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　－　－{X1}　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:13bd",
+    "DOKI5.EDT:13f7"
+   ],
+   "max_cells": 60,
+   "note": "{X1}: none (the text goes on)"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "　　　　　　　　スベスベデスネ。カシコマリマシタ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1433"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　サイズハ？",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1479",
+    "DOKI5.EDT:1495"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　１＞　ミミカキ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:14b1",
+    "DOKI5.EDT:14d1",
+    "DOKI5.EDT:1505"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　２＞　ニンジン",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:14e7",
+    "DOKI5.EDT:151b",
+    "DOKI5.EDT:1551"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　３＞　ダイコン",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1534",
+    "DOKI5.EDT:156a",
+    "DOKI5.EDT:159b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　・",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1582",
+    "DOKI5.EDT:15b3",
+    "DOKI5.EDT:15c7",
+    "DOKI5.EDT:15e0",
+    "DOKI5.EDT:15f4",
+    "DOKI5.EDT:1608",
+    "DOKI5.EDT:1621",
+    "DOKI5.EDT:1635",
+    "DOKI5.EDT:1649",
+    "DOKI5.EDT:1662",
+    "DOKI5.EDT:1676",
+    "DOKI5.EDT:168a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　７月２３日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:16c7"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　８月　６日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:171f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "　－－－－－－－－－－　よもやま通信　－－－－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:177e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "『Ｖｏｌ．５予告』でお知らせしたとおり、『３ＤディスクＶｏｌ．５』をすぐにお届けすることができました。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:17b9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "これで一安心と言うところです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1804"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "しかし、これで制作が遅れるなどという暴挙に出ようものなら",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:181c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "（遅れるだけならまだしも、これで発刊しないということにでもなろうものなら）、殺されてしまいます。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1842"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "いやもう、シャレになりません。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:187b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "・・・ほんとーに。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1893"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "シャレにならないだけならまだしも、新聞の三面記事に",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:18a2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "「ソフト・メーカー社員惨殺。怨恨の可能性も・・・！？」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:18c7"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "などという見出しが出た日には、どうなることか。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:18f2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "もっとも、そこまでされるまで何もしないということはないはずですが・・・。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1912"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "何はともあれ無事に『３Ｄディスク』が発刊できて、一安心というところです（刺されずに済んだという安心感も、あるような無いような・・・）。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:193c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "　　　　　しかし、まだまだ安心はできないのです・・・。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:199e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　それは何故か・・・？",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:19c5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "　　　『３ＤディスクＶｏｌ．６』が待ち受けているからです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:19ea"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "・・・ああ、恐ろしや、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1a19"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "恐ろしや。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1a2c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "でも、年間２枚の『３Ｄディスク』の発行は行います。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1a37"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "皆さんが納得してくれる作品作りをするぞという意気込みは、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1a60"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "溶岩よりも熱く激しく心の中に煮えたぎっています",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1a89"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "（意気込みだけではしょうがないんですが・・・）。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1aac"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "さて、件の煮えたぎる意気込みを現実化するためにも、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1acc"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "皆さんからの御意見のお手紙をお待ちしています。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1af1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "『３Ｄディスク』の感想や、こんなことをして欲しいという希望をユーザーズクラブ宛までお送りください。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1b14"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "皆さんからの意見や感想が、これからの『３Ｄディスク』作りに",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1b5d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "役立てられます。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1b89"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "　　　　　　皆さんからのお便りをお待ちしています。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1b9f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "　－－－－－－－－－－　Ｖｏｌ．６予告　－－－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1bc5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "　　　　　　　　今月の標語　『〆切は守ろう』",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c06"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "ああっ！　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c2a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "こっ、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c36"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "この言葉が心臓に突き刺さる！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c40"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "会員の皆さんは随分、苛立っていたことでしょう。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c5b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "考えてみればＶｏｌ．４は去年の８月に届いていた「はず」ですし、そのペースから考えると、Ｖｏｌ．５は「もう」届いていなければいけない「はず」なのです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1c7e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "それが、どうしてこういうことになってしまったのか。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1cde"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "・",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1d00",
+    "DOKI5.EDT:1d08"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "・謎です",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1d10"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "（何が謎なのか、さっぱり分かりませんが）。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1d1b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "「『３ＤディスクＶｏｌ．４』は、まだ出ないんでしょうか？」、「もう、『３Ｄディスク』は出さないんですか？」という問い合わせがある度に、胃が痛む思いでした。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1d39"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "自業自得と言われればそれまでなんですが・・・。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1da1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "今度は、こういう事がないようにしたいと思いますので、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1dc2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "暖かい目で見守ってやってください。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1de4"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "　　　　　それでは、Ｖｏｌ．６でまたお会いしましょう。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1e05"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "　－－－－－－－－－－－　開発室便り　－－－－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1e5e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "１９９３年も、すでに半分以上が過ぎ去ってしまいました。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1e9c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "いやはや、時の経つのは早いものです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1ec2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "「光陰矢のごとし」という言葉をしみじみと感じている今日この頃です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1edc"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "「お前、何を一人で黄昏ている？　こんなに仕事が残っておるだろうが。サクサクやらんか、サクサクと！」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1f0b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "「おをっ！　せんぱひ、いつからそこにいたんですか？」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1f4a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "「『しみじみと感じている』というくだりの辺りからだ。ちっとも気づかなかったのか、お前は」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1f6a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "「ちーとも気づきませんでした。せんぱひ、実は忍者ですね？」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1fa1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "「何を馬鹿なことをいうとるか。ボケーッと、惚けまくってボケボケしとるからだ。もーちっとしっかりせい」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:1fc9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "「惚けまくってるなんて、そんな心外な。心に余裕をもって仕事をしているだけですよ」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2009"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "「余裕なんて持ってる場合じゃないぞ。今年は『Ｄ－ｌｉｎｅ』シリーズもガンガンだすし、『ブランマーカー２』もあるし、『妖獣戦記』も出すし、そのほかにも山のように新作ソフトを出すんだ。余裕なんて持ってる暇はないぞ。地獄のデバッグは目の前まで迫っている」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:203e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "　　　　　　　　　「・・・・・・な、なんと」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:20f8"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "「キリンのように１日１５分睡眠で、ギンギンに飛ばせ。飛ばしまくるのだ。サルだ、サルだ、猿になるのだ。猿の穴で修行して、ウッキーになるのだ。そして、マウスクリックとバグだししかしないウッキーロボになるのだ」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2113"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "　　　　　　　　　「・・・・・・そ、そげな」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:219d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "「さあ、お前はもう会社に住むのだ。会社の主になるのだ。さあ、デバッグだ、デバッグだ」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:21b8"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　「ひいいいぃぃぃっ！」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:21f9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "「おおっ！　こいつまた気絶したぞ。意外と精神的プレッシャーに弱い奴だな」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2216"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "『おーい、前回と同じ引きだよ。山田君、座布団を全部もっていきなさい』",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:224c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　おあとがよろしいようで。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2287"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "　－－－－－　クラブ　ディー・オーからのお知らせ　－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:22d9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "昨年発売以来好評をいただいている『ＤＯＲ』シリーズ。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:230e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "今年はその『ＤＯＲ』に声優さん達によって命が吹き込まれた、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:233d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "『ＤＯＲベストセレクション』が発売になり、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:236b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "ディー・オーは、メディアミックス元年を迎えました。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:238f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "そんなメディアミックスの申し子『ＤＯＲベストセレクションＶＨＳ』は、ゲームの世界とは一味違った世界を覗ける、あくまの作った素敵な「扉」です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:23b6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "まだ見ていない人も多いのではないでしょうか・・・。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:241f"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "　　　　　　その様な訳で通信販売のお知らせです。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2445"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "　　　（モニターの前の皆さん、君子豹変と言わないでね）。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:246e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "このビデオは通信販売でしかお買い求めになれません。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2499"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "　　『ＤＯＲベストセレクション』ＶＨＳシリーズ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:24c1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　各巻４８００円",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:24eb"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．１～「加奈子さんの憂鬱」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:250e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　　　　　　　　　　　好評発売中！",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:252e",
+    "DOKI5.EDT:2578"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．２～「テレフォンスキャンダル」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2553"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．３～「機甲戦士ガイルバン」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:259d"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　平成５年７月３０日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:25c1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．４～「５時から９時まで」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:25e8"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　平成５年８月２７日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2605"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．５～「中原君の秘密」",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:262c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　平成５年９月２４日　発売開始",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:264a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "●Ｖｏｌ．１～Ｖｏｌ．５　　　セット価格　２０，０００円",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2676"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "購入ご希望の方は、弊社まで電話連絡ください（０３－５４４３－７７０３　東京営業部まで）。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:26a5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "会員番号を確認の上、代引通販（郵便屋さんにお金を払って商品を受け取るシステムです）にて商品をお届けします。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:26e8"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "＊代引通販は、既に発売になっているものか",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2739"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "　Ｖｏｌ．１～Ｖｏｌ．５のセットを購入される場合の方法です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2759"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "予約～購入と言う方法をとられる方は、現金書留等でお申し込みください。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:278b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "郵便番号　２５１",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:27c2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "藤沢市藤沢１１５－２　藤沢郵便局私書箱４号",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:27d2"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "株式会社ディー・オー　　通販係",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:27fa"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "　－－－－－－－－－－－　宿　題　－－－－－－－－－－－－　",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2852"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "宿題　『夏休みの宿題は８月３１日に泣きながらやっていた。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2890"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "　　　来年こそ早く終らせよう思いつつ同じことを繰り返す』",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:28bb"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "　　　　　　　　・・・・・・・・・・・・。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:28ea"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "みなさんにも、こういう辛く悲しい思い出があるのではないでしょうか？",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2904"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "えー、そう言ったわけでして（もはや会話になっていない）、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:292e"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "今回の宿題も開発中の新作ゲーム『ＤＯＲ　スペシャルエディション』の線画グラフィックの彩色です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2952"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "前回同様、厳しい、",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:29a4"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "ヒジョーに厳しい審査を行い、優秀者の人は",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:29b6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "『３Ｄディスク』内で発表しますのでガンガン応募してきてくらはい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:29d9"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "勿論、一人何点でも応募可能です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2a0b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "この宿題のコーナーは、クラブ　ディー・オーと会員のみなさんとの会話の場でもあります。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2a2a"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "こちらからだす宿題だけでなく、会員のみなさんからの自由提出課題（みなさんが描いてくれたグラフィック）も待っています。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2a68"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "自由提出課題も厳正なる審査の上、ヒジョーにうまい人はやはり",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2ab6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "『３Ｄディスク』内で発表しますので山のように送ってきてくらはい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2ae7"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "これからも会員のみなさんと一緒に作り上げる『３Ｄディスク』にしたいと思いますので、色々と感想を送ってきてくださいね。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2b16"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "それでは、モニターを見つめすぎて目を疲れさせないように頑張ってね。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2b66"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "　　　　　　＋－－－－－－－－－－－－－－＋",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2b94",
+    "DOKI5.EDT:2be0"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "　　　　　　｜　グラフィックデータの扱い　｜",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2bbe"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "このドキドキディスクの中には、＜ＰＩＣ形式＞と＜Ｂ１形式＞のグラフィックデ－タファイルが、それぞれ２つずつ入っています。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2c0b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "グラフィックツ－ルをお持ちの方は、後述のファイルをデ－タディスクにコピ－して彩色をお楽しみ下さい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2c65"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "　　　　　　　　　－　収録ファイル内容　－",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2cb0"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "　　　　　　　Ｘ３．ＰＩＣ　　　　Ｘ４．ＰＩＣ",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2cd1"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "　　　　　　　Ｘ３．Ｂ１　　　　　Ｘ４．Ｂ１",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2cf6"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "＜ＰＩＣ形式＞とは・・・（株）パンサ－ソフトウェアのグラフィックツ－ル＜Ａｃｔｏｒ９８・ＡＣＴＧＩＧＡ＞に対応したファイル形式です。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2d17"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "＜Ａｃｔｏｒ９８・ＡＣＴＧＩＧＡ＞をお持ちの方は，＜ＰＩＣ形式＞のファイルをデータディスクにコピーして下さい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2d83"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "＜Ｂ１形式＞とは・・・（株）ツァイトのグラフィックツ－ル",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2de0"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "＜Ｚ’ｓＳＴＡＦＦ＞や（株）Ｃ・ｌａｂの＜マルチペイント＞に対応したベタファイル形式。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2e0c"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "＜Ｚ’ｓＳＴＡＦＦ＞や＜マルチペイント＞をお持ちの方は，＜Ｂ１形式＞のベタファイルをデータディスクにコピーして下さい。",
+   "en": "",
+   "refs": [
+    "DOKI5.EDT:2e57"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　『ブランマーカー２』より",
+   "en": "",
+   "refs": [
+    "GAME5.EDT:00b5"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　　－　おしまい　－",
+   "en": "",
+   "refs": [
+    "GAME5.EDT:037b"
+   ],
+   "max_cells": 60
+  },
+  {
+   "id": "c00001",
+   "kind": "cmd",
+   "jp": " 　１　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00002",
+   "kind": "cmd",
+   "jp": " 　２　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:1"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00003",
+   "kind": "cmd",
+   "jp": " 　３　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:2"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00004",
+   "kind": "cmd",
+   "jp": " 　４　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:3"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00005",
+   "kind": "cmd",
+   "jp": " 　５　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:4"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00006",
+   "kind": "cmd",
+   "jp": " 　６　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:5"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00007",
+   "kind": "cmd",
+   "jp": " 　７　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:6"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00008",
+   "kind": "cmd",
+   "jp": " 　８　 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:7"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00009",
+   "kind": "cmd",
+   "jp": "Ｆ　　Ｆ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:8"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00010",
+   "kind": "cmd",
+   "jp": "Ｒ Ｅ Ｗ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:9"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00011",
+   "kind": "cmd",
+   "jp": "ＥＸＩＴ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:10"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00012",
+   "kind": "cmd",
+   "jp": "ＮＥＸＴ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:11"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00013",
+   "kind": "cmd",
+   "jp": " 終　了 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:12"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "c00014",
+   "kind": "cmd",
+   "jp": " 継　続 ",
+   "en": "",
+   "refs": [
+    "KOM_F0.EDT:13"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "あくま",
+   "en": "",
+   "refs": [
+    "NAME_F0.EDT:0"
+   ],
+   "max_cells": 6
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "ドライブ{X1}に",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9d02"
+   ],
+   "max_cells": 9,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "{X1}をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9d11"
+   ],
+   "max_cells": 43,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00003",
+   "kind": "engine",
+   "jp": "ドライブ{X1}に{X2}",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9d45"
+   ],
+   "max_cells": 9,
+   "note": "{X1}: a character the program writes there (the drive letter, the disk's number); {X2}: a character the program writes there (the drive letter, the disk's number)"
+  },
+  {
+   "id": "e00004",
+   "kind": "engine",
+   "jp": "をいれてマウスボタンをクリックしてください。",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9d56"
+   ],
+   "max_cells": 43
+  },
+  {
+   "id": "e00005",
+   "kind": "engine",
+   "jp": "ディスクが書き込み禁止になっています。",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9d88"
+   ],
+   "max_cells": 37
+  },
+  {
+   "id": "e00006",
+   "kind": "engine",
+   "jp": "セーブが終了しました。",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9db4"
+   ],
+   "max_cells": 21
+  },
+  {
+   "id": "e00007",
+   "kind": "engine",
+   "jp": "システムディスク",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9dcf"
+   ],
+   "max_cells": 15
+  },
+  {
+   "id": "e00008",
+   "kind": "engine",
+   "jp": "データディスク",
+   "en": "",
+   "refs": [
+    "ADL3A.EXE:9de6"
+   ],
+   "max_cells": 13
+  },
+  {
+   "id": "e00009",
+   "kind": "engine",
+   "jp": "この作品では、有名声優さんたちに多数出演していただきました。せっかくの声",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4a69"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00010",
+   "kind": "engine",
+   "jp": "優さんたちの声がきれいに聴きとれるように、音声の調整をしましょう。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4ab2"
+   ],
+   "max_cells": 66
+  },
+  {
+   "id": "e00011",
+   "kind": "engine",
+   "jp": "ＮＥＣＰＣ－９８シリーズ（互換機を含む）では、お使いの機種やクロック毎",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4af5"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00012",
+   "kind": "engine",
+   "jp": "に発声時間の微調整が必要になります。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4b3e"
+   ],
+   "max_cells": 36
+  },
+  {
+   "id": "e00013",
+   "kind": "engine",
+   "jp": "画面に出ている基本時間と、あなたのコンピューターの発声時間を合わせましょ",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4b63"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00014",
+   "kind": "engine",
+   "jp": "う。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4bac"
+   ],
+   "max_cells": 4
+  },
+  {
+   "id": "e00015",
+   "kind": "engine",
+   "jp": "基本時間と発声時間が違う場合は、発声時間を変更しなければいけません。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4bb1"
+   ],
+   "max_cells": 68
+  },
+  {
+   "id": "e00016",
+   "kind": "engine",
+   "jp": "マウスカーソルをレバーに合わせて、マウスの左ボタンを押したままにすると、",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4bf6"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00017",
+   "kind": "engine",
+   "jp": "レバーを＋か－かの方向に動かすことができます。レバーを好みの位置に動かし",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4c3f"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00018",
+   "kind": "engine",
+   "jp": "たら、左ボタンを離すと、その場所にレバーを固定します。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4c88"
+   ],
+   "max_cells": 54
+  },
+  {
+   "id": "e00019",
+   "kind": "engine",
+   "jp": "レバーを固定したらＰＬＡＹボタンを左クリックしてください。変更後の音声が",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4cbf"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00020",
+   "kind": "engine",
+   "jp": "聞こえ、発声時間が表示されます。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4d08"
+   ],
+   "max_cells": 32
+  },
+  {
+   "id": "e00021",
+   "kind": "engine",
+   "jp": "基本時間と発声時間がだいたい合うように変更したら、ＯＫボタンを左クリック",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4d29"
+   ],
+   "max_cells": 72
+  },
+  {
+   "id": "e00022",
+   "kind": "engine",
+   "jp": "してください。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4d72"
+   ],
+   "max_cells": 14
+  },
+  {
+   "id": "e00023",
+   "kind": "engine",
+   "jp": "これで調整は終わりです。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4d81"
+   ],
+   "max_cells": 24
+  },
+  {
+   "id": "e00024",
+   "kind": "engine",
+   "jp": "基本時間は、０６　ｓｅｃです。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4d9a"
+   ],
+   "max_cells": 30
+  },
+  {
+   "id": "e00025",
+   "kind": "engine",
+   "jp": "ディスクをいれて書き込み許可の状態にしてください。",
+   "en": "",
+   "refs": [
+    "PCMSET.EXE:4db9"
+   ],
+   "max_cells": 50
+  }
+ ]
+}

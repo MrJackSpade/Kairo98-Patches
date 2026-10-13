@@ -29,9 +29,9 @@ ides' Adv98V script engine (`NAOMI/`), on a hard-disk image: 35 scripts with tex
 
 ## Script
 
-3902 strings (3738 messages, 163 menu items, 1 program strings).
+3904 strings (3738 messages, 163 menu items, 3 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3902 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3904 strings have English so far.
 
 ## Limits
 

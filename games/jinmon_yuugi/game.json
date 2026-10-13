@@ -7,5 +7,8 @@
  "extraop": true,
  "proc_slot": 76,
  "proc_slots": 20,
- "boot_steps": "30:shot,4:enter,25:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot"
+ "boot_steps": "30:shot,4:enter,25:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot",
+ "text_files": [
+  "TCM/FN_STAFF.DAT"
+ ]
 }

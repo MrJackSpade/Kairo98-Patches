@@ -1,0 +1,12 @@
+{
+ "title": "Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+ "key": "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+ "image": "Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban\\Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban [HD]\\Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban.hdi",
+ "encoding": "adl",
+ "version": "adl98s",
+ "program": "ADL98S.EXE",
+ "game_dir": "SYB",
+ "archive": "EDT00",
+ "name_cells": 10,
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

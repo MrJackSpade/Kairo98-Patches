@@ -1,0 +1,21 @@
+{
+ "title": "Mashou no Kao",
+ "key": "Mink.zip/Mashou no Kao",
+ "image": "Mashou no Kao\\Mashou no Kao [HD]\\Mashou no Kao.hdi",
+ "encoding": "avs96",
+ "program": "AVS96.EXE",
+ "game_dir": "MA",
+ "first": "LOGO.BIN",
+ "unused": [
+  "ENMDING.BIN"
+ ],
+ "cols": 26,
+ "name_cells": 5,
+ "item_letters": 18,
+ "var": 496,
+ "labels": [
+  24800,
+  25316
+ ],
+ "boot_steps": "30:shot,1:lclick,13:lclick,13:lclick,13:lclick,13:lclick,13:lclick,13:lclick,13:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,4:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,3:shot,1:lclick,2:rclick,4:shot,2:rclick,3:shot"
+}

@@ -21,9 +21,9 @@ JAST's later scene engine: 103 scene files (`*.SCM`), command tables then messag
 
 ## Script
 
-1442 strings (1118 scene text, 111 engine strings, 213 menu words).
+1443 strings (1118 scene text, 112 engine strings, 213 menu words).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 1442 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 1443 strings have English so far.
 
 ## Limits
 

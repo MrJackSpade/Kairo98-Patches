@@ -33,9 +33,9 @@ The floppies have no room for a longer script, so the patch lays the game out on
 
 ## Script
 
-11668 strings (50 name tags (procedure text), 11140 messages, 475 menu items, 2 string variable values, 1 program strings).
+11721 strings (50 name tags (procedure text), 11136 messages, 473 menu items, 2 string variable values, 56 text file lines, 4 program strings).
 
-Translation and the content classification (♥) are done by the translation model; 0 of 11668 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 11721 strings have English so far.
 
 ## Limits
 
@@ -43,7 +43,9 @@ Translation and the content classification (♥) are done by the translation mod
 * Menu items (`i` ids), messages in one-line frames and text placed at a fixed spot on the screen (menu buttons, labels): twice their `max_cells` in letters; longer ones are cut and reported.
 * Name tags (`n` ids) live in procedures, and a procedure may only grow into the free slots after its own (76 bytes a slot), so the tags of one procedure share a few bytes beyond the Japanese: keep names about as long as the Japanese ones.  The patcher refuses a build that overruns a slot and names that procedure's strings.
 * String variables (`v` ids): the Japanese's byte length (twice `max_cells` in letters).  Longer ones are refused.  `'` and `"` are written full-width (they would end the script's quoting).
+* Text file lines (`t` ids: `CLM/ROLL.DAT`, `CLM/ROLL2.DAT`, shown as they are, e.g. the opening roll): each line up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded into a fixed place in memory; longer ones are cut and reported.
 * Program strings (`e` ids): twice `max_cells` in letters, written in place; longer ones are cut and reported.
+* Names in data files (`e` ids from `NAME.DEF`): written in place, each up to its field's room (`max_cells` full-width letters, as the files hold these names in Shift-JIS only: the name with the spaces around it and any `＠` padding after it), a shorter one padded as the field was (`＠`, or the NUL or FF byte ending it); longer ones are cut and reported.
 
 ## Not handled
 
@@ -56,5 +58,7 @@ Translation and the content classification (♥) are done by the translation mod
 | Eight floppies laid out on a hard disk; title menu | OK: boots from the hard disk (Custom Mate 3's DOS image as the base, the only one in the family with room); menu items fixed width |
 | Opening classroom scene | OK: speaker tags on the first line, the message under them wrapped between words, 2-line pages |
 | First in-game menus | OK: filler items at their Japanese width |
+| Staff rolls (CLM/ROLL.DAT, CLM/ROLL2.DAT) | not yet seen |
+| The default hero name (NAME.DEF) in the story | not yet seen |
 | Save/load, later days (other disks' files), endings | not yet seen |
 | Gameplay past the opening scenes, save/load, endings | not yet seen |

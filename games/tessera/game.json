@@ -1,0 +1,10 @@
+{
+ "title": "Tessera (IV)",
+ "key": "GameTechnopolis.zip/Tessera (IV)",
+ "image": "Tessera (IV)\\Tessera (IV) [HD]\\Tessera (IV).hdi",
+ "encoding": "adv98v",
+ "game_dir": "TECELA",
+ "extraop": false,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "script_room": 17096
+}

@@ -1,0 +1,15 @@
+{
+ "title": "Can Can Bunny Limited 5 1-2",
+ "key": "CocktailSoft.zip/Can Can Bunny Limited 5 1-2",
+ "image": "Can Can Bunny Limited 5 1-2\\Can Can Bunny Limited 5 1-2 [HD]\\Can Can Bunny Limited 5 1-2.hdi",
+ "encoding": "adv98v",
+ "game_dir": "LIMIT",
+ "extraop": true,
+ "proc_slot": 76,
+ "proc_slots": 20,
+ "name_cols": 8,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "text_files": [
+  "STAFF.DAT"
+ ]
+}

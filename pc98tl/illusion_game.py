@@ -19,7 +19,7 @@ import re
 
 from .disk import DiskImage
 from .alice_sys2_tl import sha256
-from . import illusion, exepack
+from . import elfdos, exepack, illusion
 
 MTL_NOTE = """{title} - English patch (machine translation)
 
@@ -193,9 +193,9 @@ def _text(e, mode):
 DOS_FILES = {"IO.SYS", "MSDOS.SYS", "COMMAND.COM", "AUTOEXEC.BAT", "CONFIG.SYS"}
 
 
-def _copy_dir(fv, src_dir, vol, dst_dir):
+def _copy_dir(fv, src_dir, vol, dst_dir, left=()):
     """A floppy folder's files (and folders) into the hard disk's, merged
-    with one already there."""
+    with one already there; left: the floppy's paths not copied."""
     try:
         vol.find(dst_dir)
     except FileNotFoundError:
@@ -204,8 +204,8 @@ def _copy_dir(fv, src_dir, vol, dst_dir):
         if e["name"] in (".", ".."):
             continue
         if e["is_dir"]:
-            _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"])
-        else:
+            _copy_dir(fv, src_dir + "/" + e["name"], vol, dst_dir + "/" + e["name"], left)
+        elif (src_dir + "/" + e["name"]).upper() not in left:
             _put(vol, dst_dir + "/" + e["name"], fv.read(src_dir + "/" + e["name"]))
 
 
@@ -228,14 +228,20 @@ def _hdd_install(cfg, src):
 
     cfg["hdd"]: {"base": DOS hard-disk image (relative to the collection),
     "remove": [the base's own game entries], "dir": install directory,
-    "disks": [the other floppies, next to the source image], "skip": [files
+    "disks": [the other floppies, next to the source image; FAT, or Elf's
+    ELFDOS whose files go into the install directory], "skip": [files
     not installed], "run": [AUTOEXEC.BAT lines that start the game],
     "replace": [AUTOEXEC.BAT lines of the base game that "run" replaces],
     "subdirs": true to copy the disks' folders too, same-named ones
     merged, "config_sys": [CONFIG.SYS lines put before its SHELL line: a
     driver the game needs, such as its own mouse driver]}.  dir ""
     installs into the root (an engine that names its files from the
-    drive's root).
+    drive's root).  "unused": {disk: [paths]}: a disk's copies of files
+    that another disk holds differently and the game never loads from it
+    (the scripts name the other disk's), not installed.  "disk_dirs":
+    {disk: folder}: a disk that is a game of its own (a data collection
+    with its own engine and start script) installed into that folder of
+    the install directory instead.
     cfg["drive_prefix"] then maps the engine's drive prefixes to the hard
     disk's (every file is in the install directory)."""
     h = cfg["hdd"]
@@ -247,16 +253,28 @@ def _hdd_install(cfg, src):
     d = h["dir"]
     if d:
         vol.mkdir(d)
-    pre = d + "/" if d else ""
     skip = {n.upper() for n in h.get("skip", [])} | DOS_FILES
     for disk in [src] + [os.path.join(os.path.dirname(src), n) for n in h["disks"]]:
+        left = {q.upper() for q in h.get("unused", {}).get(os.path.basename(disk), [])}
+        sub = h.get("disk_dirs", {}).get(os.path.basename(disk))
+        pre = (d + "/" if d else "") + (sub + "/" if sub else "")
+        if sub:
+            vol.mkdir(pre[:-1])
+        if elfdos.is_elfdos(open(disk, "rb").read()):
+            # (Elf's own file system: one folder of files)
+            for name, data in elfdos.files(disk):
+                if name.upper() not in skip and name.upper() not in left:
+                    _put(vol, pre + name, data)
+            continue
         fv = DiskImage(disk).volumes[0]
         for e in fv.listdir(0):
             if e["name"].upper() in skip or e["name"] in (".", ".."):
                 continue
             if e["is_dir"]:
                 if h.get("subdirs"):
-                    _copy_dir(fv, e["name"], vol, pre + e["name"])
+                    _copy_dir(fv, e["name"], vol, pre + e["name"], left)
+                continue
+            if e["name"].upper() in left:
                 continue
             _put(vol, pre + e["name"], fv.read(e["name"]))
     auto = vol.read("AUTOEXEC.BAT").decode("cp932").split("\r\n")

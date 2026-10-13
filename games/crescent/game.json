@@ -1,0 +1,17 @@
+{
+ "title": "Crescent",
+ "key": "Silkys.zip/Crescent",
+ "image": "Crescent\\Crescent [HD]\\Crescent.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "CRE",
+ "script_ext": ".M",
+ "calls": {
+  "7": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

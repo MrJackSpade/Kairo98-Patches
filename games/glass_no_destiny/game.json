@@ -1,0 +1,18 @@
+{
+ "title": "Glass no Destiny",
+ "key": "CocktailSoftFmc.zip/Glass no Destiny",
+ "image": "Glass no Destiny\\Glass no Destiny [HD]\\Glass no Destiny.hdi",
+ "encoding": "adv98v",
+ "game_dir": "GLASS",
+ "extraop": true,
+ "boot_steps": "40:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot,3:lclick,2:shot",
+ "text_files": [
+  "SR_PARTS/STAFF_1.DAT",
+  "SR_PARTS/STAFF_2.DAT",
+  "SR_PARTS/STAFF_3.DAT",
+  "SR_PARTS/STAFF_4.DAT",
+  "SR_PARTS/STAFF_5.DAT",
+  "SR_PARTS/STAFF_6.DAT"
+ ],
+ "script_room": 18612
+}

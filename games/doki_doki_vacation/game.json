@@ -47,5 +47,13 @@
   "a:": "",
   "b:": ""
  },
- "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot"
+ "boot_steps": "30:shot,4:enter,4:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot,4:lclick,3:shot",
+ "text_files": [
+  "CLM/ROLL.DAT",
+  "CLM/ROLL2.DAT"
+ ],
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true
 }

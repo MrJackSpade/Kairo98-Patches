@@ -703,5 +703,1069 @@
     "votes": 0
    }
   ]
+ },
+ "elf-ai5": {
+  "checked": "2026-10-09",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "elf.zip/Dragon Knight III",
+    "title": "Dragon Knight III",
+    "vndb": [
+     "v723"
+    ],
+    "votes": 159
+   },
+   {
+    "key": "elf.zip/Doukyuusei 2",
+    "title": "Doukyuusei 2",
+    "vndb": [
+     "v2337"
+    ],
+    "votes": 133
+   },
+   {
+    "key": "elf.zip/Isaku",
+    "title": "Isaku",
+    "vndb": [
+     "v2340"
+    ],
+    "votes": 118
+   },
+   {
+    "key": "elf.zip/Kakyuusei",
+    "title": "Kakyuusei",
+    "vndb": [
+     "v2341"
+    ],
+    "votes": 85
+   },
+   {
+    "key": "elf.zip/De-Ja",
+    "title": "De-Ja",
+    "vndb": [
+     "v2338"
+    ],
+    "votes": 28
+   },
+   {
+    "key": "elf.zip/Shangrlia",
+    "title": "Shangrlia",
+    "vndb": [
+     "v3182"
+    ],
+    "votes": 19
+   },
+   {
+    "key": "PioneerLdc.zip/El-Hazard - The Magnificent World",
+    "title": "El-Hazard - The Magnificent World",
+    "vndb": [
+     "v9084"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "elf.zip/Metal Eye",
+    "title": "Metal Eye",
+    "vndb": [
+     "v7825"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "elf.zip/Doki Doki Shutter Chance",
+    "title": "Doki Doki Shutter Chance",
+    "vndb": [
+     "v17596"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "elf.zip/Metal Eye 2",
+    "title": "Metal Eye 2",
+    "vndb": [
+     "v7834"
+    ],
+    "votes": 7
+   },
+   {
+    "key": "Silkys.zip/Premium",
+    "title": "Premium",
+    "vndb": [
+     "v6962"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "elf.zip/Tenshin Ranma",
+    "title": "Tenshin Ranma",
+    "vndb": [
+     "v7824"
+    ],
+    "votes": 5
+   },
+   {
+    "key": "elf.zip/Foxy 2",
+    "title": "Foxy 2",
+    "vndb": [
+     "v17500"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "elf.zip/De-Ja II",
+    "title": "De-Ja II",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
+ },
+ "silkys": {
+  "checked": "2026-10-09",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "Silkys.zip/Be-Yond",
+    "title": "Be-Yond",
+    "vndb": [
+     "v432"
+    ],
+    "votes": 876
+   },
+   {
+    "key": "Silkys.zip/Nonomura Byouin no Hitobito",
+    "title": "Nonomura Byouin no Hitobito",
+    "vndb": [
+     "v2346"
+    ],
+    "votes": 88
+   },
+   {
+    "key": "Silkys.zip/Kawarazakike no Ichizoku",
+    "title": "Kawarazakike no Ichizoku",
+    "vndb": [
+     "v2351"
+    ],
+    "votes": 83
+   },
+   {
+    "key": "Silkys.zip/Ai Shimai - Futari no kajitsu",
+    "title": "Ai Shimai - Futari no kajitsu",
+    "vndb": [
+     "v1836"
+    ],
+    "votes": 40
+   },
+   {
+    "key": "Silkys.zip/Ushinawareta Rakuen",
+    "title": "Ushinawareta Rakuen",
+    "vndb": [
+     "v9147"
+    ],
+    "votes": 21
+   },
+   {
+    "key": "Silkys.zip/Reira",
+    "title": "Reira",
+    "vndb": [
+     "v9053"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "Silkys.zip/Fermion",
+    "title": "Fermion",
+    "vndb": [
+     "v5903"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "Silkys.zip/Jack - Haitoku no Megami",
+    "title": "Jack - Haitoku no Megami",
+    "vndb": [
+     "v6387"
+    ],
+    "votes": 9
+   },
+   {
+    "key": "Silkys.zip/Crescent",
+    "title": "Crescent",
+    "vndb": [
+     "v8830"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "Silkys.zip/Mobius Roid",
+    "title": "Mobius Roid",
+    "vndb": [
+     "v8812"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "Silkys.zip/Valentine Kiss - Birth Days 2",
+    "title": "Valentine Kiss - Birth Days 2",
+    "vndb": [
+     "v18230"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "Mediax.zip/PP Disk No. 03",
+    "title": "PP Disk No. 03",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
+ },
+ "do": {
+  "checked": "2026-10-10",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "DO.zip/DOR Part 2",
+    "title": "DOR Part 2",
+    "vndb": [
+     "v159",
+     "v8680"
+    ],
+    "votes": 165
+   },
+   {
+    "key": "DO.zip/DOR Part 1",
+    "title": "DOR Part 1",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 5 - Telephone Scandal",
+    "title": "Yuu Disk Vol. 5 - Telephone Scandal",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "DO.zip/Zatsuon Ryouiki",
+    "title": "Zatsuon Ryouiki",
+    "vndb": [
+     "v9173"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "DO.zip/Cybernoid Alpha",
+    "title": "Cybernoid Alpha",
+    "vndb": [
+     "v8838",
+     "v9170"
+    ],
+    "votes": 8
+   },
+   {
+    "key": "DO.zip/DOR Part 3",
+    "title": "DOR Part 3",
+    "vndb": [
+     "v8681"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+    "title": "Yuu Disk Vol. 8 - Cybernoid Alpha Yuu Disk-ban",
+    "vndb": [
+     "v8838"
+    ],
+    "votes": 6
+   },
+   {
+    "key": "DO.zip/DOR Special Edition Sakigake",
+    "title": "DOR Special Edition Sakigake",
+    "vndb": [
+     "v18195"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "DO.zip/Hoshi no Suna Monogatari 2",
+    "title": "Hoshi no Suna Monogatari 2",
+    "vndb": [
+     "v8721"
+    ],
+    "votes": 3
+   },
+   {
+    "key": "DO.zip/DOR Special Edition '93",
+    "title": "DOR Special Edition '93",
+    "vndb": [
+     "v18196"
+    ],
+    "votes": 2
+   },
+   {
+    "key": "DO.zip/Collector D Bangaihen",
+    "title": "Collector D Bangaihen",
+    "vndb": [
+     "v18256"
+    ],
+    "votes": 1
+   },
+   {
+    "key": "DO.zip/Arquelphos",
+    "title": "Arquelphos",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Collector D",
+    "title": "Collector D",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Crystal Rinal",
+    "title": "Crystal Rinal",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 3",
+    "title": "D.O. Doki Doki Disk Vol. 3",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 4",
+    "title": "D.O. Doki Doki Disk Vol. 4",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 5",
+    "title": "D.O. Doki Doki Disk Vol. 5",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 6",
+    "title": "D.O. Doki Doki Disk Vol. 6",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 7",
+    "title": "D.O. Doki Doki Disk Vol. 7",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 8",
+    "title": "D.O. Doki Doki Disk Vol. 8",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Doki Doki Disk Vol. 9",
+    "title": "D.O. Doki Doki Disk Vol. 9",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/D.O. Kaizokuban",
+    "title": "D.O. Kaizokuban",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Moonlight Chan Rin Shan",
+    "title": "Moonlight Chan Rin Shan",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+    "title": "Yuu Disk Vol. 4 - Crystal Rinal Otanoshimi Disk",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+    "title": "Yuu Disk Vol. 7 - Moonlight Chan Rin Shan Bangaihen",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+    "title": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+    "vndb": [],
+    "votes": 0
+   },
+   {
+    "key": "PantherSoftware.zip/Hamlet",
+    "title": "Hamlet",
+    "vndb": [
+     "v30597"
+    ],
+    "votes": 0
+   },
+   {
+    "key": "PantherSoftware.zip/Lesser Mern",
+    "title": "Lesser Mern",
+    "vndb": [],
+    "votes": 0
+   }
+  ]
+ },
+ "top_vndb": {
+  "checked": "2026-10-11",
+  "basis": "VNDB vote count (sum over the title's VNs)",
+  "titles": [
+   {
+    "key": "ZyX.zip/Ikazuchi no Senshi Raidy 2",
+    "title": "Ikazuchi no Senshi Raidy 2",
+    "vndb": [
+     "v603"
+    ],
+    "votes": 570
+   },
+   {
+    "key": "Apricot.zip/Mugen Yasoukyoku",
+    "title": "Mugen Yasoukyoku",
+    "vndb": [
+     "v725"
+    ],
+    "votes": 468
+   },
+   {
+    "key": "DO.zip/Youjuu Senki - A.D. 2048",
+    "title": "Youjuu Senki - A.D. 2048",
+    "vndb": [
+     "v127"
+    ],
+    "votes": 394
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 1 - Shirakawa Reiko",
+    "title": "Immoral Study Scenario 1 - Shirakawa Reiko",
+    "vndb": [
+     "v737"
+    ],
+    "votes": 393
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 2 - Iijima Yuka",
+    "title": "Immoral Study Scenario 2 - Iijima Yuka",
+    "vndb": [
+     "v738"
+    ],
+    "votes": 325
+   },
+   {
+    "key": "ZyX.zip/Ring Out!!",
+    "title": "Ring Out!!",
+    "vndb": [
+     "v1189"
+    ],
+    "votes": 321
+   },
+   {
+    "key": "Foster.zip/Koko wa Rakuensou",
+    "title": "Koko wa Rakuensou",
+    "vndb": [
+     "v1012"
+    ],
+    "votes": 314
+   },
+   {
+    "key": "Foster.zip/Koko wa Rakuensou 2",
+    "title": "Koko wa Rakuensou 2",
+    "vndb": [
+     "v1013"
+    ],
+    "votes": 231
+   },
+   {
+    "key": "CsWare.zip/Gloria - Kindan no Ketsuzoku",
+    "title": "Gloria - Kindan no Ketsuzoku",
+    "vndb": [
+     "v152"
+    ],
+    "votes": 192
+   },
+   {
+    "key": "Foster.zip/Time Stripper Mako-chan",
+    "title": "Time Stripper Mako-chan",
+    "vndb": [
+     "v1444"
+    ],
+    "votes": 160
+   },
+   {
+    "key": "DO.zip/Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+    "title": "Yuu Disk Vol. 3 - Kanako-san no Yuuutsu",
+    "vndb": [
+     "v159"
+    ],
+    "votes": 149
+   },
+   {
+    "key": "Scoop.zip/Immoral Study Scenario 3 - Asakura Manami",
+    "title": "Immoral Study Scenario 3 - Asakura Manami",
+    "vndb": [
+     "v3456"
+    ],
+    "votes": 130
+   },
+   {
+    "key": "FourNine.zip/Waku Waku Mahjong Panic! - Shikigami Denshou",
+    "title": "Waku Waku Mahjong Panic! - Shikigami Denshou",
+    "vndb": [
+     "v735"
+    ],
+    "votes": 66
+   },
+   {
+    "key": "FourNine.zip/Waku Waku Mahjong Panic! 2 - Kokushi Musou",
+    "title": "Waku Waku Mahjong Panic! 2 - Kokushi Musou",
+    "vndb": [
+     "v736"
+    ],
+    "votes": 49
+   },
+   {
+    "key": "Sogna.zip/Viper V6",
+    "title": "Viper V6",
+    "vndb": [
+     "v8326"
+    ],
+    "votes": 43
+   },
+   {
+    "key": "Sogna.zip/Viper V6 RS",
+    "title": "Viper V6 RS",
+    "vndb": [
+     "v8326"
+    ],
+    "votes": 43
+   },
+   {
+    "key": "Starcraft.zip/Mystery House",
+    "title": "Mystery House",
+    "vndb": [
+     "v26969",
+     "v30626"
+    ],
+    "votes": 39
+   },
+   {
+    "key": "LoveGun.zip/Ace of Spades",
+    "title": "Ace of Spades",
+    "vndb": [
+     "v11034"
+    ],
+    "votes": 33
+   },
+   {
+    "key": "Sogna.zip/Viper V8",
+    "title": "Viper V8",
+    "vndb": [
+     "v8327"
+    ],
+    "votes": 32
+   },
+   {
+    "key": "Sogna.zip/Viper V8 RS",
+    "title": "Viper V8 RS",
+    "vndb": [
+     "v8327"
+    ],
+    "votes": 32
+   },
+   {
+    "key": "Active.zip/Angel Halo",
+    "title": "Angel Halo",
+    "vndb": [
+     "v6958"
+    ],
+    "votes": 31
+   },
+   {
+    "key": "HudsonSoft.zip/Salad no Kuni no Tomato-hime",
+    "title": "Salad no Kuni no Tomato-hime",
+    "vndb": [
+     "v9522"
+    ],
+    "votes": 30
+   },
+   {
+    "key": "Sogna.zip/Viper F-40",
+    "title": "Viper F-40",
+    "vndb": [
+     "v977"
+    ],
+    "votes": 27
+   },
+   {
+    "key": "Sogna.zip/Viper V12",
+    "title": "Viper V12",
+    "vndb": [
+     "v7493"
+    ],
+    "votes": 25
+   },
+   {
+    "key": "AbogadoPowers.zip/Kuro no Danshou - The Literary Fragment",
+    "title": "Kuro no Danshou - The Literary Fragment",
+    "vndb": [
+     "v4568"
+    ],
+    "votes": 24
+   },
+   {
+    "key": "Sogna.zip/Viper V10",
+    "title": "Viper V10",
+    "vndb": [
+     "v8325"
+    ],
+    "votes": 24
+   },
+   {
+    "key": "Sogna.zip/Viper V10 RS",
+    "title": "Viper V10 RS",
+    "vndb": [
+     "v8325"
+    ],
+    "votes": 24
+   },
+   {
+    "key": "Ail.zip/Kyouhaku",
+    "title": "Kyouhaku",
+    "vndb": [
+     "v4302"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "BirdySoft.zip/Cal",
+    "title": "Cal",
+    "vndb": [
+     "v4835",
+     "v8589",
+     "v8999"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "BirdySoft.zip/Cal II",
+    "title": "Cal II",
+    "vndb": [
+     "v4835",
+     "v8589",
+     "v8999"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "BirdySoft.zip/Pal - Wonder Trip! Chizuru",
+    "title": "Pal - Wonder Trip! Chizuru",
+    "vndb": [
+     "v4835",
+     "v8589",
+     "v8999"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "Silkys.zip/Koihime - Mystic Princess",
+    "title": "Koihime - Mystic Princess",
+    "vndb": [
+     "v2347"
+    ],
+    "votes": 22
+   },
+   {
+    "key": "Active.zip/if",
+    "title": "if",
+    "vndb": [
+     "v8724",
+     "v8725",
+     "v8726"
+    ],
+    "votes": 20
+   },
+   {
+    "key": "Active.zip/if 2",
+    "title": "if 2",
+    "vndb": [
+     "v8724",
+     "v8725",
+     "v8726"
+    ],
+    "votes": 20
+   },
+   {
+    "key": "Active.zip/if 3",
+    "title": "if 3",
+    "vndb": [
+     "v8724",
+     "v8725",
+     "v8726"
+    ],
+    "votes": 20
+   },
+   {
+    "key": "Mink.zip/Mashou no Kao",
+    "title": "Mashou no Kao",
+    "vndb": [
+     "v7581"
+    ],
+    "votes": 20
+   },
+   {
+    "key": "Starcraft.zip/Wizard and the Princess",
+    "title": "Wizard and the Princess",
+    "vndb": [
+     "v26973"
+    ],
+    "votes": 19
+   },
+   {
+    "key": "May-beSoftTruse.zip/Doop",
+    "title": "Doop",
+    "vndb": [
+     "v6009"
+    ],
+    "votes": 18
+   },
+   {
+    "key": "TeSoft.zip/Psy-O-Blade",
+    "title": "Psy-O-Blade",
+    "vndb": [
+     "v7554"
+    ],
+    "votes": 18
+   },
+   {
+    "key": "Melody.zip/Kurayami",
+    "title": "Kurayami",
+    "vndb": [
+     "v8757"
+    ],
+    "votes": 17
+   },
+   {
+    "key": "Aaru.zip/Rose Blood - Chi no Kawaki",
+    "title": "Rose Blood - Chi no Kawaki",
+    "vndb": [
+     "v9062"
+    ],
+    "votes": 16
+   },
+   {
+    "key": "Enix.zip/Misty Blue",
+    "title": "Misty Blue",
+    "vndb": [
+     "v5597"
+    ],
+    "votes": 16
+   },
+   {
+    "key": "FamilySoft.zip/Dies Irae",
+    "title": "Dies Irae",
+    "vndb": [
+     "v8797"
+    ],
+    "votes": 16
+   },
+   {
+    "key": "Ail.zip/Majogari no Yoru ni",
+    "title": "Majogari no Yoru ni",
+    "vndb": [
+     "v3481"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "doujinHomebrew.zip/Virgin Angel",
+    "title": "Virgin Angel",
+    "vndb": [
+     "v8718"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "Custom.zip/Star Platinum",
+    "title": "Star Platinum",
+    "vndb": [
+     "v18101"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "MicroCabin.zip/Maison Ikkoku - Omoide no Photograph",
+    "title": "Maison Ikkoku - Omoide no Photograph",
+    "vndb": [
+     "v890"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "Mink.zip/Dangel",
+    "title": "Dangel",
+    "vndb": [
+     "v6373"
+    ],
+    "votes": 15
+   },
+   {
+    "key": "doujinHomebrew.zip/Mayumi",
+    "title": "Mayumi",
+    "vndb": [
+     "v8929",
+     "v8965",
+     "v9159"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "Foster.zip/Hana no Kioku",
+    "title": "Hana no Kioku",
+    "vndb": [
+     "v8708"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "May-beSoft.zip/Escape!",
+    "title": "Escape!",
+    "vndb": [
+     "v2316"
+    ],
+    "votes": 14
+   },
+   {
+    "key": "AbogadoPowers.zip/Es no Houteishiki",
+    "title": "Es no Houteishiki",
+    "vndb": [
+     "v8874"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "Foster.zip/Hana no Kioku Dai-2-shou",
+    "title": "Hana no Kioku Dai-2-shou",
+    "vndb": [
+     "v8709"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "HimeyaSoft.zip/Zenith",
+    "title": "Zenith",
+    "vndb": [
+     "v9174"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "Sogna.zip/Guynarock R",
+    "title": "Guynarock R",
+    "vndb": [
+     "v14947"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "UmitsukiSeisakusho.zip/Love Escalator",
+    "title": "Love Escalator",
+    "vndb": [
+     "v8781"
+    ],
+    "votes": 13
+   },
+   {
+    "key": "Aaru.zip/M Hard",
+    "title": "M Hard",
+    "vndb": [
+     "v7263"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "Ail.zip/Inma Seifukugari",
+    "title": "Inma Seifukugari",
+    "vndb": [
+     "v3152"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "Aypio.zip/Sex",
+    "title": "Sex",
+    "vndb": [
+     "v4916"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "CocktailSoft.zip/Can Can Bunny",
+    "title": "Can Can Bunny",
+    "vndb": [
+     "v4558"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "HimeyaSoft.zip/Bacta",
+    "title": "Bacta",
+    "vndb": [
+     "v8568",
+     "v8569"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "HimeyaSoft.zip/Bacta 1&2 + Voice",
+    "title": "Bacta 1&2 + Voice",
+    "vndb": [
+     "v8568",
+     "v8569"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "TechnoGrard.zip/Minimum Guynarock",
+    "title": "Minimum Guynarock",
+    "vndb": [
+     "v18120",
+     "v18122"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "ZyX.zip/Twilight Hotel",
+    "title": "Twilight Hotel",
+    "vndb": [
+     "v7548"
+    ],
+    "votes": 12
+   },
+   {
+    "key": "Aypio.zip/Sex 2",
+    "title": "Sex 2",
+    "vndb": [
+     "v9081"
+    ],
+    "votes": 11
+   },
+   {
+    "key": "Custom.zip/Teen",
+    "title": "Teen",
+    "vndb": [
+     "v5886"
+    ],
+    "votes": 11
+   },
+   {
+    "key": "DO.zip/Branmarker",
+    "title": "Branmarker",
+    "vndb": [
+     "v523"
+    ],
+    "votes": 11
+   },
+   {
+    "key": "UmitsukiSeisakusho.zip/Rookies",
+    "title": "Rookies",
+    "vndb": [
+     "v8783"
+    ],
+    "votes": 11
+   },
+   {
+    "key": "BlackPackage.zip/Miwaku no Chousho",
+    "title": "Miwaku no Chousho",
+    "vndb": [
+     "v8973"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "CocktailSoft.zip/Hare Nochi Oosawagi!",
+    "title": "Hare Nochi Oosawagi!",
+    "vndb": [
+     "v8714"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "FourNine.zip/Gaogao! 3rd - Wild Force",
+    "title": "Gaogao! 3rd - Wild Force",
+    "vndb": [
+     "v8696"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "HimeyaSoft.zip/De.FaNa",
+    "title": "De.FaNa",
+    "vndb": [
+     "v8671"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "Leaf.zip/DR^2 Night Janki",
+    "title": "DR^2 Night Janki",
+    "vndb": [
+     "v448"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "May-beSoft.zip/Coming Heart",
+    "title": "Coming Heart",
+    "vndb": [
+     "v1382"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "Sogna.zip/Animahjong X",
+    "title": "Animahjong X",
+    "vndb": [
+     "v10215"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "SpaceProject.zip/Tenkousei",
+    "title": "Tenkousei",
+    "vndb": [
+     "v9109"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "U-meSoft.zip/Hiiragizaka no Kyuukan",
+    "title": "Hiiragizaka no Kyuukan",
+    "vndb": [
+     "v5568"
+    ],
+    "votes": 10
+   },
+   {
+    "key": "U-meSoft.zip/Yumemizaka",
+    "title": "Yumemizaka",
+    "vndb": [
+     "v5566"
+    ],
+    "votes": 10
+   }
+  ]
  }
 }

@@ -1,0 +1,13 @@
+{
+ "title": "Fermion",
+ "key": "Silkys.zip/Fermion",
+ "image": "Fermion\\Fermion [HD]\\Fermion.hdi",
+ "encoding": "silky",
+ "program": "SIL.EXE",
+ "game_dir": "FERM",
+ "message_window": [
+  3,
+  63
+ ],
+ "boot_steps": "40:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

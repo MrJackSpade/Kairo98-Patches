@@ -1,0 +1,10 @@
+{
+ "title": "Viper V10",
+ "key": "Sogna.zip/Viper V10",
+ "image": "Viper V10\\Viper V10 [HD]\\Viper V10.hdi",
+ "encoding": "sgs",
+ "program": "SGS.COM",
+ "game_dir": "V10",
+ "window_cells": 76,
+ "boot_steps": "25:shot,5:enter,10:shot,1:key=38,2:shot,1:key=104,2:shot,1:enter,8:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot,3:enter,1:shot"
+}

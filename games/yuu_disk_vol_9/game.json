@@ -1,0 +1,11 @@
+{
+ "title": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+ "key": "DO.zip/Yuu Disk Vol. 9 - Arquelphos Gekitou-hen",
+ "image": "Yuu Disk Vol. 9 - Arquelphos Gekitou-hen\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen [HD]\\Yuu Disk Vol. 9 - Arquelphos Gekitou-hen.hdi",
+ "encoding": "adl",
+ "version": "arq98",
+ "program": "ARQ98.EXE",
+ "game_dir": "ARQ",
+ "message_cells": 48,
+ "boot_steps": "40:shot,1.5:shot,1.5:shot,1.5:shot,1.5:shot,1.5:shot,1.5:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot"
+}

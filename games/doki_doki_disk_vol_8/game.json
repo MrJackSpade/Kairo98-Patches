@@ -1,0 +1,11 @@
+{
+ "title": "D.O. Doki Doki Disk Vol. 8",
+ "key": "DO.zip/D.O. Doki Doki Disk Vol. 8",
+ "image": "D.O. Doki Doki Disk Vol. 8\\D.O. Doki Doki Disk Vol. 8 [HD]\\D.O. Doki Doki Disk Vol. 8.hdi",
+ "encoding": "adl",
+ "version": "nadl",
+ "program": "NADL.EXE",
+ "game_dir": "DOKI8",
+ "boot_steps": "40:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot,2:lclick,1:shot",
+ "name_cells": 8
+}

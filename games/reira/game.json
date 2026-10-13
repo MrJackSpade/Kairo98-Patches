@@ -1,0 +1,33 @@
+{
+ "title": "Reira",
+ "key": "Silkys.zip/Reira",
+ "image": "Reira\\Reira [HD]\\Reira.hdi",
+ "encoding": "ai5",
+ "version": "ai5",
+ "program": "SIL.EXE",
+ "game_dir": "REIRA",
+ "archive_format": "silkdat",
+ "archives": [
+  "SILK0.DAT",
+  "SILK1.DAT",
+  "SILK2.DAT",
+  "SILK3.DAT",
+  "SILK4.DAT",
+  "SILK5.DAT"
+ ],
+ "calls": {
+  "3": {
+   "page": true,
+   "note": "a key wait and a new page"
+  },
+  "59": {
+   "page": true,
+   "note": "a key wait and a new page"
+  },
+  "24": {
+   "page": true,
+   "note": "a key wait and a new page"
+  }
+ },
+ "boot_steps": "40:shot,2:esc,5:down,2:enter,3:shot,2:down,2:enter,4:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}
