@@ -1,0 +1,15 @@
+{
+ "title": "Waku Waku Mahjong Panic! - Shikigami Denshou",
+ "key": "FourNine.zip/Waku Waku Mahjong Panic! - Shikigami Denshou",
+ "image": "Waku Waku Mahjong Panic! - Shikigami Denshou\\Waku Waku Mahjong Panic! - Shikigami Denshou [HD]\\Waku Waku Mahjong Panic! - Shikigami Denshou.hdi",
+ "encoding": "diana",
+ "program": "DIANA.EXE",
+ "game_dir": "SIKIGAMI",
+ "data": {
+  "DIANA.EXE": "2ef0",
+  "NAVAL.EXE": "e00",
+  "SONNET.EXE": "11710",
+  "TYPHON.EXE": "164f0"
+ },
+ "boot_steps": "30:shot,1:lclick,6:lclick,6:lclick,20:shot,1:enter,10:enter,5:enter,60:shot,1:enter,4:shot,1:enter,4:shot,1:enter,4:shot,1:enter,4:shot,1:enter,4:shot,1:enter,4:shot"
+}

@@ -2393,6 +2393,79 @@ def igs_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def diana_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menus", "quip": "mahjong opponents' lines",
+             "name": "opponents' names", "label": "program and table strings", "console": "DOS messages"}
+    out = ["# %s%s (FourNine)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "FourNine's N.A.V.A.L system: `NAVAL.EXE` runs the scenario player `%s` and the mahjong "
+            "programs `SONNET.EXE` and `TYPHON.EXE`.  The scenario is `SNR/*.DSD` scripts (some packed, "
+            "\"eLZ0\"): operations a word each, parsed by the interpreter's own table; a string is drawn "
+            "by an operation pointing at it.  The patcher lays a changed script's strings out again in the "
+            "room the Japanese strings leave and after it (the code stays where it is), and writes the "
+            "script unpacked (the game's resident expander does not read every packed stream as the "
+            "program would).  A script past DIANA's buffer (4268h bytes) is split into copies of itself "
+            "(`NAMEB.DSD`...), each entered at one operation (through a jump at its start) and keeping the "
+            "strings its part of the code draws; the code going on to another part's entry goes to that "
+            "file.  The mahjong opponents' lines (`DAT/2JC*.DAT`, `DAT/FC4*.DAT`) are written anew with "
+            "their table.  `pc98tl/diana.py` documents the format, `pc98tl/diana_tl.py` the English.  "
+            "Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "* The three programs share one text routine; the patch makes it draw ASCII as half-width "
+            "letters (NEC's half-width row), a byte and a cell each.  The programs are written unpacked "
+            "(they were LZEXE), asking for no more memory than before.",
+            "* The menus are chosen with the mouse."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, a page each; `max_cells` the letters a line holds, the note gives the "
+            "lines): any length.  The patcher breaks the English between words and starts a new page (a "
+            "key, the window cleared) when the window is full; a message opening with a speaker's label "
+            "(`【 ... 】` or `{L}`) has its later lines indented by the label's width.  In a scrolling "
+            "window (the prologue) each message ends with a new line.  `\\n` forces a new line.",
+            "* Menus (`i` ids): one item a line, `\\n` between them as in the Japanese; a line past "
+            "`max_cells` letters is cut and reported.",
+            "* Opponents' lines (`q` ids): broken between words at `max_cells` letters; an opponent's file "
+            "past the programs' buffer (%d bytes) is refused." % 0x4E2,
+            "* Names, program and table strings (`n`, `l` ids): in place, `max_cells` bytes (a letter a "
+            "byte, a full-width character two), padded with spaces; past it cut and reported.  Blanks in "
+            "the Japanese where the program draws an item's name over them stay blanks.",
+            "* DOS messages (`t` ids): in place, plain text; the program writes digits over the `00`s.",
+            "* Tokens: keep them where the Japanese has them.  `{N}` the player's name, `{L}` the "
+            "player's label, `{K}` a key, `{W}` a key and the window cleared, `{M}` a mark the next "
+            "text goes on from; `{1Dnn}` `{1Enn}` colours, `{1Fnn}` the style, `{06nn}` a face, "
+            "`{08nn}` a sound, `{10nn}` a pause; `{85xx}`/`{EBxx}` the font's half-width and own "
+            "characters.",
+            "* English is ASCII; another character full-width when Shift-JIS has it, else `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (`GRP/*.EFD`: the title, the buttons, the panels)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2924,11 +2997,11 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
-                   "eqa": eqa_notes, "igs": igs_notes}[cfg["encoding"]](
+                   "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

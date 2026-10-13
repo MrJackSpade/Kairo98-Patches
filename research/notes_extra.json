@@ -381,5 +381,10 @@
   "not_handled": [
    "The opening's scrolling prologue (drawn in its pictures, ANIM*.ANM)."
   ]
+ },
+ "waku_waku_mahjong_panic": {
+  "remarks": [
+   "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE: the mouse menus did not take the test's inputs reliably).  The two programs' text routine is patched the same way as DIANA's (the same routine, found by its bytes)."
+  ]
  }
 }

@@ -93,18 +93,20 @@ def unpack(exe):
             pos += w
         relocs.append(seg * 16 + pos)
     return {"image": image, "relocs": relocs, "ip": ip, "cs": cs, "sp": sp, "ss": ss,
-            "memory": size + h[5] * 16}
+            "memory": size + h[5] * 16, "most": size + h[6] * 16}
 
 
-def build(p, image=None):
-    """A plain MZ program from unpack()'s result (its image replaced by image)."""
+def build(p, image=None, keep_most=False):
+    """A plain MZ program from unpack()'s result (its image replaced by image); keep_most: asking
+    for no more memory than the packed program did (else for all there is)."""
     image = p["image"] if image is None else image
     relocs = p["relocs"]
     hdr_len = (0x1C + 4 * len(relocs) + 15) // 16 * 16
     total = hdr_len + len(image)
     pages, last = (total + 511) // 512, total % 512
     minalloc = max(0, (p["memory"] - len(image) + 15) // 16)
-    head = struct.pack("<14H", 0x5A4D, last, pages, len(relocs), hdr_len // 16, minalloc, 0xFFFF,
+    most = max(minalloc, min(0xFFFF, (p["most"] - len(image) + 15) // 16)) if keep_most else 0xFFFF
+    head = struct.pack("<14H", 0x5A4D, last, pages, len(relocs), hdr_len // 16, minalloc, most,
                        p["ss"], p["sp"], 0, p["ip"], p["cs"], 0x1C, 0)
     out = bytearray(head[:0x1C])
     for r in relocs:

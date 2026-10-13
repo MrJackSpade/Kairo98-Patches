@@ -3973,5 +3973,23 @@
    "A test start of the first scene (START loading S11.DIA), S11.DIA split by force into three files by its routine's bodies; the command menus chosen with Left and Enter",
    "OK: the commands' replies kept only in S11_2.DIA shown (m01302 on), the part's file entered at the body, the scene's opening not shown again"
   ]
+ ],
+ "waku_waku_mahjong_panic": [
+  [
+   "Boot from the hard disk (SIKI.BAT: NAVAL.EXE, DIANA.EXE): the sound menu, the title menu",
+   "OK: the items and the notes in filler half-width, the menus' rows in place"
+  ],
+  [
+   "New game: the prologue (BEGINF.DSD, a scrolling window)",
+   "OK: filler half-width, each string from a new line; the scroll looks as the Japanese's does"
+  ],
+  [
+   "The first scene (SS0.DSD, split into SS0.DSD and SS0B.DSD: its first part; MADV00.DSD), Enter after each page",
+   "OK: the speakers' labels, the messages' filler broken between words with later lines indented by the label, a new page when the window is full"
+  ],
+  [
+   "The Panel Attack character select (MP4SEL.DSD), clicked through",
+   "OK: the profiles' filler in the box, a click going on to the next"
+  ]
  ]
 }

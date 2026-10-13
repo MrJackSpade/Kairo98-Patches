@@ -2571,5 +2571,18 @@
    "url": "https://vndb.org/v2347",
    "source": "VNDB"
   }
+ ],
+ "FourNine.zip/Waku Waku Mahjong Panic! - Shikigami Denshou": [
+  {
+   "label": "This repo: games/waku_waku_mahjong_panic (patcher working, machine translation in progress)",
+   "url": "../games/waku_waku_mahjong_panic/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v735",
+   "url": "https://vndb.org/v735",
+   "source": "VNDB"
+  }
  ]
 }
