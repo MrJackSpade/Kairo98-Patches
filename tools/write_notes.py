@@ -2202,6 +2202,60 @@ def piyo_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def ace_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "script paragraphs", "name": "speaker lines", "menu": "program strings (the menus)"}
+    out = ["# %s%s (LoveGun)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s` with its scripts in `*.S` files: a length and a line count, then lines of JIS characters "
+            "stored as words, low byte first, each ended by a 0.  The program draws a line a 16x16 cell a "
+            "character, each glyph read from the font ROM (int 18h AH=14h), into a line buffer of 36 cells.  "
+            "`pc98tl/ace.py` documents the format, `pc98tl/ace_tl.py` the English.  Unchanged files rebuild "
+            "byte for byte." % cfg["program"], "",
+            "* Half-width English: two letters go in one cell, written as one word (the second letter with "
+            "bit 7 set, which no JIS row has).  The program's glyph reader is given a helper that draws such "
+            "a cell from the BIOS's 8x16 font, a letter in each half; the helper goes in after the code "
+            "segment's last routine, the segments after it moved up.",
+            "* The program pages a scene's lines in its message window itself (▼ and a key)."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Script paragraphs (`m` ids): any length.  The patcher breaks the English between words at "
+            "72 half-width letters (the line's 36 cells) and writes the script again with as many lines as "
+            "it needs; `\\n` forces a new line.",
+            "* Speaker lines (`n` ids): one line, 72 half-width letters.",
+            "* Program strings (`u` ids, the menus): written in place, `max_cells` half-width letters (two "
+            "to a word); longer is cut and reported.",
+            "* English is ASCII; another character is written full-width when JIS has it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title logo, the cards)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3167,12 +3221,13 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo"):
+                                    "n88prog", "piyo", "ace"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
-                   "n88prog": n88prog_notes, "piyo": piyo_notes}[cfg["encoding"]](
+                   "n88prog": n88prog_notes, "piyo": piyo_notes,
+                   "ace": ace_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

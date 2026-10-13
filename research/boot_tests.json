@@ -4045,5 +4045,15 @@
    "Start: the first room, then commands from its menu, moving through the house",
    "OK: each room's command menu in filler half-width, 16 cells an item; the messages' filler broken between words at 79 cells in the window under the picture, scrolling as they come; the rooms changing with the commands"
   ]
+ ],
+ "ace_of_spades": [
+  [
+   "Boot from the hard disk (AH.BAT: NA.COM, ACE.EXE): the title menu, Enter for the start menu",
+   "OK: every menu item in filler half-width, two letters a cell, inside its box; the title picture intact"
+  ],
+  [
+   "Start: the opening scene's message window, Enter through its pages",
+   "OK: the speaker line and the paragraphs in filler half-width, broken between words at 72 letters a line, paged by the program with its marker"
+  ]
  ]
 }

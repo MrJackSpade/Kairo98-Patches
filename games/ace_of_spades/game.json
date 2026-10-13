@@ -1,0 +1,9 @@
+{
+ "title": "Ace of Spades",
+ "key": "LoveGun.zip/Ace of Spades",
+ "image": "Ace of Spades\\Ace of Spades [HD]\\Ace of Spades.hdi",
+ "encoding": "ace",
+ "program": "ACE.EXE",
+ "game_dir": "ACE",
+ "boot_steps": "25:shot,1:enter,6:shot,1:enter,8:shot,1:enter,5:shot,1:enter,5:shot,1:enter,5:shot,1:enter,5:shot"
+}

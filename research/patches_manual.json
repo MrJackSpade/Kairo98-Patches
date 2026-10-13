@@ -2654,5 +2654,18 @@
    "url": "https://mattsmessyroom.com/projects/maison-ikkoku/",
    "source": "web"
   }
+ ],
+ "LoveGun.zip/Ace of Spades": [
+  {
+   "label": "This repo: games/ace_of_spades (patcher working, machine translation in progress)",
+   "url": "../games/ace_of_spades/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v11034",
+   "url": "https://vndb.org/v11034",
+   "source": "VNDB"
+  }
  ]
 }

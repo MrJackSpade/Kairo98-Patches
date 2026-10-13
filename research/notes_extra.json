@@ -411,5 +411,10 @@
   "remarks": [
    "Not reached in this test: the other characters' scenes, saving and loading, the endings."
   ]
+ },
+ "ace_of_spades": {
+  "remarks": [
+   "Not reached in this test: poker and blackjack play, the scenes past the opening, the graphics and music rooms."
+  ]
  }
 }

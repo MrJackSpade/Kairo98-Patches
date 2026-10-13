@@ -146338,15 +146338,27 @@
      "path": "Ace of Spades\\Ace of Spades [HD]\\Ace of Spades.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/ace_of_spades (patcher working, machine translation in progress)",
+     "url": "../games/ace_of_spades/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v11034",
+     "url": "https://vndb.org/v11034",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r26128 (erotic content)",
    "engine": "great-na",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "LoveGun.zip/Dangerous Toys",
