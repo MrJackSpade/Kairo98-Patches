@@ -32,10 +32,11 @@ PRINT, DATA, THEN, ELSE = 0xC0, 0x91, 0xD6, 0x99
 MAX_LITERAL = 255        # a string's length byte
 
 
-def read(prog):
-    """[(line number, body)] of a protected program and the bytes after
-    its end (the save's padding to whole sectors)."""
-    p = n88basic.unprotect(prog)
+def read(prog, protected=True):
+    """[(line number, body)] of a protected program (or, protected=False,
+    a plain binary save) and the bytes after its end (the save's padding
+    to whole sectors)."""
+    p = n88basic.unprotect(prog) if protected else bytes(prog)
     out, pos = [], 0
     while True:
         if pos + 4 > len(p):
@@ -50,7 +51,7 @@ def read(prog):
         pos += ln
 
 
-def write(lines, tail, size=None):
+def write(lines, tail, size=None, protected=True):
     """The protected program from [(line number, body)] and the tail read()
     gave, padded with the tail's bytes to `size` when it is no larger."""
     lines = list(lines)
@@ -71,7 +72,7 @@ def write(lines, tail, size=None):
     out += tail
     if size is not None and len(out) < size:
         out += bytes(size - len(out))
-    return n88basic.protect(bytes(out))
+    return n88basic.protect(bytes(out)) if protected else bytes(out)
 
 
 def _walk(body):

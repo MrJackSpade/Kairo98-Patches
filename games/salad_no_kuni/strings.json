@@ -1,0 +1,6542 @@
+{
+ "source_image_sha256": "0e16107fe18eb38d9271cc1bd56000c2a08baa09e212a41d91435a23f4059d89",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "DISK ﾆ ERROR ｶﾞｱﾘﾏｽ｡ ﾃﾞﾝｹﾞﾝ ｦ ｲﾁﾄﾞ ｷｯﾃ ﾓｳｲﾁﾄﾞ ｽﾀｰﾄ ｻｾﾃｸﾀﾞｻｲ｡\nﾏﾀ､ ﾗｲﾄ ﾌﾟﾛﾃｸﾄ ﾊ ｶｹﾅｲ ﾃﾞ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P0:0396"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "ﾄﾞｳｼﾏｽｶ? ",
+   "en": "",
+   "refs": [
+    "SARADA.P0:118f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝｺﾞｳ ｦ ｼﾃｲｼﾃ ｸﾀﾞｻｲ｡ (1-9)? [ｴｽｹｰﾌﾟｷｰ(ESC):ﾁｭｳｼ] ",
+   "en": "",
+   "refs": [
+    "SARADA.P0:1d5b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "ﾖﾛｼｲﾃﾞｽｶ? (Y or N) ",
+   "en": "",
+   "refs": [
+    "SARADA.P0:1db5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "｢ｻﾗﾀﾞﾉ ｸﾆﾉ ﾄﾏﾄﾋﾒ｣ ﾃﾞｨｽｸ ﾊﾞｰｼﾞｮﾝ\nﾊﾄﾞｿﾝ ｿﾌﾄ 1984ﾈﾝ ｻｸﾋﾝ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:30c2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "ｿﾉ ﾎｳｺｳﾍﾊ ｲｹﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3224",
+    "SARADA.P2:31e3",
+    "SARADA.P3:31e0",
+    "SARADA.P4:31e0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "ﾓｯﾃｲﾅｲ ﾓﾉﾊ ﾐﾙｺﾄﾊ ﾃﾞｷﾏｾﾝﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P1:32bf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "ﾓｯﾃ ｲﾅｲ ﾓﾉﾊ ｱｹﾞﾗﾚﾏｾﾝﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P1:32df",
+    "SARADA.P2:3367",
+    "SARADA.P3:3364",
+    "SARADA.P4:3356"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "ﾄｸﾆ ｶﾜｯﾀ ﾖｳｽﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3311",
+    "SARADA.P2:3296",
+    "SARADA.P3:3293",
+    "SARADA.P4:328d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "ｶﾗｯﾎﾟ ﾉ ｽｲﾄｳﾃﾞｽ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3333",
+    "SARADA.P2:32b8",
+    "SARADA.P3:32b5",
+    "SARADA.P4:32af"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "ﾐｽﾞ ｶﾞ ﾀｯﾌﾟﾘ ﾊｲｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3346",
+    "SARADA.P2:32cb",
+    "SARADA.P3:32c8",
+    "SARADA.P4:32c2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "ﾌﾗﾝｽﾊﾟﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3360",
+    "SARADA.P2:32e5",
+    "SARADA.P3:32e2",
+    "SARADA.P4:32dc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｾﾂ ﾉ ﾂﾙｷﾞ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3370",
+    "SARADA.P2:32f5",
+    "SARADA.P3:32f2",
+    "SARADA.P4:32ec"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "｢ﾃﾞｾﾞﾆﾗﾝﾄﾞ｣ ﾉ ﾃｰﾌﾟ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3385",
+    "SARADA.P2:330a",
+    "SARADA.P3:3307",
+    "SARADA.P4:3301"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": " ﾄｲｳ ｺﾄﾊﾞﾊ ｺｺﾃﾞﾊ ﾂｶｴﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:33e9",
+    "SARADA.P2:33a6",
+    "SARADA.P3:33a3",
+    "SARADA.P4:3395"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "ｺｺﾃﾞﾊ ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3408",
+    "SARADA.P1:348b",
+    "SARADA.P2:33c5",
+    "SARADA.P2:3448",
+    "SARADA.P3:33c2",
+    "SARADA.P3:3445",
+    "SARADA.P4:33b4",
+    "SARADA.P4:3437"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "ｺﾄﾊ ﾃﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:342d",
+    "SARADA.P2:33ea",
+    "SARADA.P3:33e7",
+    "SARADA.P4:33d9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": " ﾃﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3442",
+    "SARADA.P2:33ff",
+    "SARADA.P3:33fc",
+    "SARADA.P4:33ee"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "ﾅﾆ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3451",
+    "SARADA.P2:340e",
+    "SARADA.P3:340b",
+    "SARADA.P4:33fd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "ﾉﾃﾞｽｶ?",
+   "en": "",
+   "refs": [
+    "SARADA.P1:346b",
+    "SARADA.P2:3428",
+    "SARADA.P3:3425",
+    "SARADA.P4:3417"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": " ｽﾙﾉﾃﾞｽｶ?",
+   "en": "",
+   "refs": [
+    "SARADA.P1:347b",
+    "SARADA.P2:3438",
+    "SARADA.P3:3435",
+    "SARADA.P4:3427"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": " ｦ ﾂｶｯﾃ ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:349c",
+    "SARADA.P2:3459",
+    "SARADA.P3:3456",
+    "SARADA.P4:3448"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "ﾅﾆｦ ﾂｶｯﾃ ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:34b5",
+    "SARADA.P2:3472",
+    "SARADA.P3:346f",
+    "SARADA.P4:3461"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "ｽｲﾄｳ(CANTEEN)",
+   "en": "",
+   "refs": [
+    "SARADA.P1:354a",
+    "SARADA.P2:3530",
+    "SARADA.P3:3504",
+    "SARADA.P4:34f2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "ﾐｽﾞ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:355a",
+    "SARADA.P2:3540",
+    "SARADA.P3:3514",
+    "SARADA.P4:3502"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "ﾊﾟﾝ(BREAD)",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3560",
+    "SARADA.P2:3546",
+    "SARADA.P3:351a",
+    "SARADA.P4:3508"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "ﾛｳｿｸ(CANDLE)",
+   "en": "",
+   "refs": [
+    "SARADA.P1:356d",
+    "SARADA.P2:3553",
+    "SARADA.P3:3527",
+    "SARADA.P4:3515"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "ﾂﾙｷﾞ(SWORD)",
+   "en": "",
+   "refs": [
+    "SARADA.P1:357c",
+    "SARADA.P3:3536",
+    "SARADA.P4:3524"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "ﾃｰﾌﾟ(TAPE)",
+   "en": "",
+   "refs": [
+    "SARADA.P1:358a",
+    "SARADA.P2:356f",
+    "SARADA.P3:3544",
+    "SARADA.P4:3532"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "ﾊﾞｹﾂ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:359c",
+    "SARADA.P2:3581",
+    "SARADA.P3:3556",
+    "SARADA.P4:3544"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00007",
+   "kind": "name",
+   "jp": "ｺｯﾌﾟ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35a3",
+    "SARADA.P2:3588",
+    "SARADA.P3:355d",
+    "SARADA.P4:354b"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00008",
+   "kind": "name",
+   "jp": "ｾﾝﾀｸｲﾀ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35af",
+    "SARADA.P2:3594",
+    "SARADA.P3:3569",
+    "SARADA.P4:3557"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00009",
+   "kind": "name",
+   "jp": "ﾅｶﾞｸﾞﾂ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35b8",
+    "SARADA.P2:359d",
+    "SARADA.P3:3572",
+    "SARADA.P4:3560"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00010",
+   "kind": "name",
+   "jp": "ﾗｼﾞｵ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35c1",
+    "SARADA.P2:35a6",
+    "SARADA.P3:357b",
+    "SARADA.P4:3569"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00011",
+   "kind": "name",
+   "jp": "ﾀﾝｲﾁﾃﾞﾝﾁ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35c8"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00012",
+   "kind": "name",
+   "jp": "ﾀﾝﾆﾃﾞﾝﾁ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35d3"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00013",
+   "kind": "name",
+   "jp": "ﾀﾝｻﾝﾃﾞﾝﾁ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35dd"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00014",
+   "kind": "name",
+   "jp": "ﾍﾞﾝﾄｳ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35e8",
+    "SARADA.P2:35df",
+    "SARADA.P3:35b4",
+    "SARADA.P4:35a2"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00015",
+   "kind": "name",
+   "jp": "ﾀﾊﾞｺ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35f0",
+    "SARADA.P2:35e7",
+    "SARADA.P3:35bc",
+    "SARADA.P4:35aa"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00016",
+   "kind": "name",
+   "jp": "ﾃｶﾞﾀ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:35f7",
+    "SARADA.P2:35ee",
+    "SARADA.P3:35c3",
+    "SARADA.P4:35b1"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "CITY(ﾏﾁ) POND(ｲｹ) ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:368f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "ｼﾞｮｳｶﾏﾁ ﾍ ﾂﾂﾞｲﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:36c5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "ﾀｽｹ ｦ ﾓﾄﾒﾃ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:370f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "｢ｳ､ｳ･･･ﾝ｣ ﾄ ｲｯﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:374b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "｢･･･ｶﾞ､ﾎ･ｼ･ｲ･･･｣ ﾄ ｲｯﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3762"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "ｿﾝﾅｺﾄｦ ｼﾀﾗ ｼﾝﾃﾞｼﾏｲﾏｽﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3791"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "ﾐｽﾞﾊ ﾓｯﾃ ｲﾏｾﾝﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:37ab"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "ｳﾚｼｿｳﾆ ﾜﾗｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:37e6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "｢ｱﾌﾞﾅｲ ﾄｺﾛ ｦ ﾀｽｹﾃｸﾚﾃ ﾄﾞｳﾓ ｱﾘｶﾞﾄｳ ｺﾞｻﾞｲﾏｼﾀ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3819"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "｢ﾜﾀｼﾊ､ ｶﾎﾞﾁｬｵｳ ﾉ ﾄｺﾛ ｶﾗ ｲﾉﾁ ｶﾗｶﾞﾗ ﾆｹﾞﾃ ｷﾀﾉﾃﾞｽ｡｣\n｢ﾜﾀｼﾀﾁ ﾉ ﾄﾏﾄﾋﾒ ﾊ ﾏﾀﾞ ｵｳ ﾉ ｼﾛ ﾆ ｶﾝｷﾝ ｻﾚﾃ ｲﾏｽ｡｣\n｢ﾓｳ ﾀﾞﾚﾓ ﾋﾒ ｦ ｽｸｲﾀﾞｾﾙ ﾓﾉﾊ ｲﾏｾﾝ｡ ﾄﾞｳｶ ｱﾅﾀﾉ ﾁｶﾗｦ ｶｼﾃｸﾀﾞｻｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:384b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "｢ﾏﾁ ﾆ ﾌﾛｳｼｬ ﾉ ｽｶﾞﾀ ｦ ｼﾀ ﾜﾚﾜﾚ ﾉ ﾅｶﾏｶﾞ ｲﾏｽ｡｣\n｢ｶﾚ ﾆ ｱｴﾊﾞ ﾓｯﾄ ｸﾜｼｲ ｺﾄｶﾞ ﾜｶﾙ ﾊｽﾞﾃﾞｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:38eb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "｢ｺﾞｵﾝ ﾊ ｲｯｼｮｳ ﾜｽﾚﾏｾﾝ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3946"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "ｳﾂｸｼｲ ｲｹﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3993"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ｷﾚｲﾅ ﾐｽﾞﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:39a3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "ｺｺﾊ ﾕｳｴｲｷﾝｼ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:39b7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "ﾐｽﾞｦ ﾀｯﾌﾟﾘ ｸﾑｺﾄｶﾞ ﾃﾞｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:39e7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "ｲﾛｲﾛﾅ ﾐｾ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3a1c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "ｻｶﾔｻﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3a47"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "ｻｹ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3a8b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "｢ｻﾗﾀﾞ ﾉ ﾎﾏﾚ｣ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3a9c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "ﾒｲｼｭ ｢ｻﾗﾀﾞ ﾉ ﾎﾏﾚ｣ ﾊ ﾄﾞｳﾃﾞｯｶ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3ab1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "ｻｹ ｶﾞ ｵｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3ad1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "｢ｷﾐﾊ ﾅﾆｦ ｸﾚﾙﾝﾀﾞｲ?｣\n? ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3aee"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "｢ｿﾚﾃﾞﾊ ｻｹｦ ｳﾙｺﾄﾊ ﾃﾞｷﾅｲﾅ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3b0f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "｢ﾊﾟﾝﾅﾝｶ ﾓｯﾃ ﾅｲｼﾞｬ ﾅｲｶ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3b32"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "｢ｵｰｹｲ｡ ﾌﾗﾝｽﾊﾟﾝ ﾊ ｵﾚﾉ ｺｳﾌﾞﾂﾅﾝﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3b56"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "ﾌﾙﾄﾞｳｸﾞﾔｻﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3b90"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "ﾌﾙﾄﾞｳｸﾞ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3bd9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "｢ﾊﾞｹﾂ(BUCKET)･ｺｯﾌﾟ(CUP)･ｶｻ(UMBRELLA)･ｾﾝﾀｸｲﾀ(WASHBOARD)･ﾅｶﾞｸﾞﾂ(BOOTS)､ ｶﾞ ｱﾙﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3bef"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "｢ﾄｺﾛﾃﾞ ｷﾐ ｲｲ ﾂﾙｷﾞ ｦ ﾓｯﾃﾙｼﾞｬﾅｲｶ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3c49"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "｢ｿﾚ ﾊ ﾅｼﾀﾞﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3c77"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "｢ﾅﾆﾄ ｺｳｶﾝ ｽﾙｶﾈ?｣\n? ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3ce2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "｢ｿﾚｼﾞｬｱ ﾑﾘﾀﾞﾈ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3d08"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "｢ｷﾐﾊ ｿﾝﾅﾓﾉﾊ ﾓｯﾃ ｲﾅｲｼﾞｬ ﾅｲｶ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3d23"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "｢ﾏｧｲｲﾔ､ ｿﾚﾄｺｳｶﾝｼﾃｱｹﾞﾙﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3d48"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "｢ﾎﾝﾄｳﾊ ｿﾉ ﾂﾙｷﾞ ｶﾞ ﾎｼｶｯﾀﾝﾀﾞｹﾄﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3d6c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "｢ｿﾚﾀﾞｯﾀﾗ ﾖﾛｺﾝﾃﾞ ｶｴｻｾﾃ ﾓﾗｳﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3d9e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "ﾃﾚﾋﾞ ｶﾞ ｵｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3dda"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｷｬｻﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3def"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｷｾｲﾋﾝ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3e28"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "ﾀﾝｲﾁ､ ﾀﾝﾆ､ ﾀﾝｻﾝ ﾃﾞﾝﾁ ｶﾞ ﾊﾟｯｸｼﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3e3f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "｢ﾗｼﾞｵ(RADIO)､ ｶﾝﾃﾞﾝﾁ(BATTERY) ｦ ｶｯﾃｸﾘ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3e67"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "｢ｼﾞｮｳﾀﾞﾝ ﾊ ﾔﾒﾃｸﾘ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3e9c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "｢ｵｯ､ ﾃﾞｾﾞﾆﾗﾝﾄﾞﾀﾞﾈ｡ ｵﾚﾓ ﾔﾘﾀｲ ﾄ ｵﾓｯﾃﾀﾝﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3f08"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "｢ﾏｲﾄﾞ ｱﾘｶﾞﾄｳ ｺﾞｻﾞｲﾏｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3f35"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "｢ﾅﾝﾄ ｶｴﾁ ｸﾘﾏｽｶ?｣\n? ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3f4f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "ｵﾍﾞﾝﾄｳﾔｻﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3f80"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "ｶﾜｲｲ ﾈｰﾁｬﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3fc0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "ﾏｸﾉｿﾄﾍﾞﾝﾄｳ､ ﾏｸﾀﾞｹﾍﾞﾝﾄｳ､ ﾏｸﾅｼﾍﾞﾝﾄｳ ﾅﾄﾞ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:3fd3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "｢ｵﾍﾞﾝﾄｳ ｵｲｼｲﾜﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4005"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "｢ﾏｧ! ｴｯﾁﾈ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4023"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "｢ｱﾅﾀﾉ ﾓｯﾃｲﾙﾓﾉﾄｼﾞｬ ｶｴﾗﾚﾅｲﾜ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:403c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "｢ﾏｧ､ ｳﾚｼｲ! ｵﾍﾞﾝﾄｳ ﾋﾄﾂ ｱｹﾞﾁｬｳ!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4067"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "｢ｲｸﾂﾓ ｱｹﾞﾗﾚﾅｲﾜﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4089"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "｢ｱｶﾞ､ ｸﾞﾝｼﾞｮｲﾛ｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:409e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "ﾀﾊﾞｺﾔｻﾝﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:40c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "ｴｲﾄｽﾀｰ､ ﾎﾞｰﾛﾎﾞﾛ､ ﾗｰｸﾗｸ､ ﾊｰﾄﾞｾﾌﾞﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4107"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "｢ﾅﾆｶ ﾖｳｶｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4134"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "｢ﾅﾝﾀﾞｲ､ ﾋﾄﾉ ｶｵｦ ｼﾞﾛｼﾞﾛ ﾐﾀﾘｼﾃ ｼﾂﾚｲｼﾞｬﾅｲﾉ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4143"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "｢ｽｲｶﾞﾗ ﾊ ﾊｲｻﾞﾗﾆ｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4170"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "｢ｵﾏｴｻﾝ ﾊ ﾅﾆ ｦ ﾓｯﾃﾙﾝﾀﾞｲ?｣\n? ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:419a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "｢ﾁｮｳﾄﾞ ﾌﾞﾂﾀﾞﾝ ﾉ ｶﾞ ｷﾚﾃﾀﾝﾀﾞ｡ ﾎﾘ､ ｽｲｽｷﾞﾆ ﾁｭｳｲ ｼﾅｻｲﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:41cf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "｢ｿﾚｼﾞｬ ｳﾚﾅｲﾈ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4206"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "｢ｳｿﾂｲﾁｬ ｲｹﾅｲﾖ｡ ｵﾏｴｻﾝ ｿﾝﾅﾉ ﾓｯﾃﾅｲﾝﾀﾞﾛ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4218"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "｢ｵﾏｴｻﾝ､ ﾜﾀｼｦ ﾀﾍﾞﾖｳｯﾃﾉｶｲ?｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:424b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "｢ｱﾀｼﾆ ｵｾｼﾞｲｯﾃﾓ ｼｮｳｶﾞﾅｲﾝｼﾞｬ ﾅｲｶｲ?｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4268"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "ﾎﾝﾔｻﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:42a3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "ﾎﾝ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:42d3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "ｲﾛｲﾛ ﾅ ﾎﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:42e4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "｢ｱﾝｹｰﾄﾆ ｺﾀｴﾃ ｸﾚﾅｷｬ ｳﾗﾅｲﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4304"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "｢ﾄｳﾃﾝ ﾃﾞﾊ､ ﾀﾀﾞｲﾏ ｱﾝｹｰﾄ ｦ ｼﾞｯｼ ｼﾃｵﾘﾏｽ｡｣\n｢ｱﾅﾀｶﾞ ｲﾏﾏﾃﾞ ﾖﾝﾀﾞ ﾎﾝﾉ ﾅｶﾃﾞ ｲﾁﾊﾞﾝ ｵﾓｼﾛｲ ﾓﾉﾊ ﾅﾝﾃﾞｽｶ?｣\n? ",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4322"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "｢ｱﾘｶﾞﾄｳ ｺﾞｻﾞｲﾏｼﾀ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4397"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "｢ﾄﾞｳｿﾞ ｺｺｦ ﾄｵｯﾃ ｲｯﾃ ｸﾀﾞｻｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:43c0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "ﾐﾁﾊﾞﾀ ﾆ ｽﾜﾘｺﾝﾃﾞ ﾔｽﾝﾃﾞ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:43ff"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "ｻﾗﾀﾞﾏﾁ ﾌﾞｷﾞｮｳｼｮ ﾉ ｾｲﾓﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4421"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "｢ｱﾘｶﾞﾄｳ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4464"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "｢ｿﾝﾅﾓﾉ ｲﾗﾅｲﾖ｡ ｱｱ､ ｲｯﾌﾟｸｼﾀｲﾅｧ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4471"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "｢ｷｦﾂｹﾃ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:44ac"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "｢ｱﾉ ﾌﾞｷﾞｮｳｼｮ ﾉ ﾅｶﾆﾊ ｼﾚｲﾌﾞ ﾉ ﾓﾉｶﾞ ﾋﾄﾘ ﾄﾗﾜﾚﾃ ｲﾏｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:44bd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "｢ｶﾚﾆ ｱｳﾄ ﾅﾆｶ ﾜｶﾙｶﾓ ｼﾚﾏｾﾝﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:44f1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "ﾊｼﾗ ﾆﾊ ｶﾝﾊﾞﾝ(SIGNBOARD) ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:453b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "｢ｻﾗﾀﾞﾏﾁﾌﾞｷﾞｮｳｼｮ｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4563"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "ﾂｳﾖｳﾓﾝ(SIDEGATE) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4583"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "ｿﾝﾅ ｺﾄｦ ｼﾀﾗ ｵｺﾗﾚﾏｽﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:45a0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "ｶﾍﾞ ｶﾞ ﾀｶｸﾃ ﾄﾋﾞｺｴ ﾗﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:45b8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "ﾎﾟｽﾀｰ ｶﾞ ﾊｯﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4607"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "｢ｱﾅﾀﾊ ﾓｳ ﾐﾂｷﾏｳｽ ｦ ﾃﾆｲﾚﾀｶ! ﾃﾞｾﾞﾆﾗﾝﾄﾞ ｺｳﾋｮｳ ﾊﾂﾊﾞｲﾁｭｳ!｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:461d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "｢ﾏﾀﾞﾏﾀﾞ ｻｷﾊ ﾅｶﾞｲ ｶﾞﾝﾊﾞﾛｳ!｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4690"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "ﾅﾆｶ ｱﾘｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:46da"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "ｶﾝﾇｷ(BAR) ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:46ea"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "ｳｺﾞｷｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4704"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "ｶﾝﾇｷ ｶﾞ ｶｶｯﾃ ｲﾙﾉﾃﾞ ｱｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:471c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "ｶﾝﾇｷ ﾊ ﾊｽﾞﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4763"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ﾊ ﾋﾗｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:47a2",
+    "SARADA.P1:567c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾅｶﾆﾊ ﾅﾆﾓ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:47d1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "ﾅﾆｶﾆ ﾂｶｴｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4827"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ﾊ ｶｶｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:488f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "｢ﾛｳﾔ｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:48a3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ｶﾞ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:48cc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "ｱｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:48fa"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ｵﾅｶｶﾞ ｽｲﾃ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:493e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "ｵﾍﾞﾝﾄｳ ｦ ﾀﾍﾞﾃ ﾏﾝｿﾞｸ ｼﾃｲﾙ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4958"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "ｶｷﾞ(LOCK) ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:497b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ﾊｽﾞｾｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4995"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "｢ﾐｽﾞﾖﾘ ｸｲﾓﾝｶﾞ ﾎｼｲﾖｰ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:49c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "｢ｵﾚﾊ､ ﾊﾟﾝﾊ ﾀﾍﾞﾅｲﾝﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:49ea"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "｢ﾄﾞｳﾓ ｱﾘｶﾞﾄｳ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4a17"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "｢ﾊﾗﾍｯﾀﾖｰ｡ ﾅﾝｶ ｸｲﾓﾝ ﾁｮｰﾀﾞｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4a34"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "｢ｵﾏｴｶﾞ ｳﾜｻﾉ ｷｭｳﾘｾﾝｼｶ｡ ﾊﾝﾗﾝｸﾞﾝ ﾉ ｱｲｺﾄﾊﾞﾊ \"G13\" ﾀﾞｾﾞ｡ ﾖｸ ｵﾎﾞｴﾄｸﾝﾀﾞﾅ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4a5b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "｢ｶﾞﾝﾊﾞﾚﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4aa2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ｶﾞﾝｼﾞｮｳﾃﾞ ｺﾜﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4aba"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "ｱｲｶｷﾞ ﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4add"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "｢ﾅﾆｦ ｼﾞﾛｼﾞﾛ ﾐﾃｲﾙ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4b09"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "｢ｱﾔｼｲ ﾔﾂﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4b1f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "｢ﾋｶｴｲ! ｺｺｦ ﾄﾞｺﾀﾞﾄ ｵﾓｯﾃｲﾙ､ ｻﾗﾀﾞﾏﾁﾌﾞｷﾞｮｳｼｮ ﾄ ｼｯﾃﾉ ｺﾄｶ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4b37"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "｢ｴｴｲ! ｺﾔﾂｦ ｿﾄﾆ ﾂﾏﾐﾀﾞｾ!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4b70"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "｢ﾅｾﾞ ｵﾏｴｶﾞ ｿﾚｦ ｼｯﾃｲﾙ｡ ｱﾔｼｲﾔﾂﾀﾞ｡ ﾎｳﾘﾀﾞｼﾃ ｼﾏｴ!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4ba7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "ﾅﾆｶﾞ ｶｲﾃ ｱﾙｶ ﾖﾒﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4bf8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "ﾋｯｿﾘ ﾄ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4c25"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "ｲﾁｺﾞ(STRAWBERRY) ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4c7d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "ｶﾜｲｿｳﾆ ｼﾝﾃﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4c9e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "ﾅﾆｶ ｼｶｹ ｶﾞ ｱﾘｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4cb2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "ﾋﾞｸﾄﾓ ｼﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4cd3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "ﾄﾞｺｶﾍ ﾂﾂﾞｲﾃ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4d05"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "ﾅｶﾆ ﾀﾞﾚｶ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4d34",
+    "SARADA.P2:3b83"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "｢ｵｯﾄ｡ ﾜｽﾚﾃｲﾀｶﾞ ｺｸｵｳｸﾞﾝ ﾆﾊ ｳｫｰﾒﾛﾝ ﾄｲｳ ﾔｻｲﾒｶ ｶﾞ ｱﾙ｡｣\n｢ｿﾉ ｹﾝ ﾆ ﾂｲﾃ ｸﾜｼｲｺﾄ ﾊ ｻｸｾﾝｻﾝﾎﾞｳ ﾉ ﾎｳｶﾗ ﾊﾅｼﾃ ﾓﾗｵｳ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4d87"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "｢ﾜﾀｼｶﾞ ｼｮｳｸﾞﾝﾉ ﾛﾝﾒﾛﾝﾀﾞ｡ ﾜﾚﾜﾚﾊ､ ｺﾝｶｲﾉ ｷﾐﾉ ｺｳｲｦ ﾋｼﾞｮｳﾆ ｶﾝｼｬｼﾃｲﾙ｡｣\n｢ﾜﾚﾜﾚﾊ ｷﾐｶﾞ ﾌﾞｼﾞﾆ ﾄﾏﾄﾋﾒｦ ﾀｽｹﾀﾞｽ ｺﾄｦ ｲﾉｯﾃｲﾙ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4e00"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "｢ｶﾞﾝﾊﾞｯﾃ ｸﾚﾀﾏｴ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4e76"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "｢ﾜﾀｼﾀﾁｶﾞ ｵｼｴﾗﾚﾙ ｺﾄﾊ ｿﾚﾀﾞｹﾃﾞｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4eb1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "｢ﾄﾞｳｶ ｶﾞﾝﾊﾞｯﾃ ｸﾀﾞｻｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4ed3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "｢ﾜﾀｼｶﾞ ｻｸｾﾝｻﾝﾎﾞｳ ﾉ ﾘｻ ﾃﾞｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4ef1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "｢ｼﾞﾂﾊ､ ﾜﾀｼﾀﾁﾆﾓ ﾀﾞｲｺｰﾝ ﾄﾕｳ ｷｮｳﾘｮｸﾅ ﾔｻｲﾒｶ ｶﾞ ｱｯﾀﾉﾃﾞｽｶﾞ､ ｿﾉｶｷﾞ ﾊ ｺｸｵｳｸﾞﾝ ﾆ ﾇｽﾏﾚﾃ\nｼﾏｯﾀ ﾉ ﾃﾞｽ｡ ｺﾉﾏｴﾓ ｿﾚｦ ﾄﾘﾆ ｲｯﾀﾓﾉｶﾞ ﾂｶﾏｯﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4f15"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "ｵｵｷﾅ ﾓﾘﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:4fa9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "START ﾄ ｲﾚﾃ RETURN KEY ｦ ｵｼﾃ ｸﾀﾞｻｲ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:50f4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "ﾀｲﾄﾙ ｶﾞﾒﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5118"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "ﾜｶﾚﾐﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5129"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "ﾐﾁｼﾙﾍﾞ(GUIDEPOST) ｶﾞ ﾀｯﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5134"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "ｱﾅﾀ ﾊ ｶﾎﾞﾁｬﾀﾞｲｵｳ ﾉ ｼﾞｮｳｶﾏﾁ ﾍ ﾓｳｽｸﾞ ﾉ ﾄｺﾛﾏﾃﾞ ﾔｯﾃ ｷﾏｼﾀ｡\nﾊﾀｼﾃ､ ｱﾅﾀﾊ ﾌﾞｼﾞﾆ ﾄﾏﾄﾋﾒ ｦ ｽｸｲﾀﾞｽ ｺﾄｶﾞ ﾃﾞｷﾙﾃﾞｼｮｳｶ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5153"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "ﾐﾁ ｶﾞ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:51bb",
+    "SARADA.P3:41e1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "ｶｷ(PERSIMMON) ｶﾞ ﾀｵﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:51cc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "ｶｷ ﾊ ﾄﾃﾓ ｸﾙｼｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:51e7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "ｶｷ ﾊ ｹﾞﾝｷ ﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:51fa"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "ｶｷ ｶﾞ ｽﾜｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:520d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "ｷﾘｶﾌﾞ(STUMP) ﾉ ｱﾙﾄｺﾛ ﾆ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:521d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "ｷﾘｶﾌﾞ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:523a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "ｲｹ ﾉ ﾌﾁ ﾆ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5249"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "ｲｹ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5259"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "ﾏﾁ ﾉ ｲﾘｸﾞﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5265"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "ﾄｳﾘ ﾉ ﾘｮｳｶﾞﾜ ﾆ ﾐｾ(SHOP) ｶﾞ ﾅﾗﾝﾃﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5275"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "ｻｶﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:529b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "ｻｶﾔｻﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:52aa"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "ｻｶﾔｻﾝ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:52b9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "ﾌﾞﾄﾞｳ(GRAPE) ｶﾞ ｻｹ(SAKE) ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:52c8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "ﾌﾙﾄﾞｳｸﾞﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:52ec"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "ﾌﾙﾄﾞｳｸﾞﾔｻﾝ  ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5300"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "ﾌﾙﾄﾞｳｸﾞﾔｻﾝ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5315"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "ﾅｼ(PEAR) ｶﾞ ﾌﾙﾄﾞｳｸﾞ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5329"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｷﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5348"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｷﾔｻﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5359"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｷﾔ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:536a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "ｸﾘ(CHESTNUT) ｶﾞ ﾃﾞﾝｷｾｲﾋﾝ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5379"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "ｵﾍﾞﾝﾄｳﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:539d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "ｵﾍﾞﾝﾄｳﾔｻﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:53b0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "ﾍﾞﾝﾄｳﾔｻﾝ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:53c3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "ﾓﾓ(PEACH) ｶﾞ ｵﾍﾞﾝﾄｳ(LUNCH) ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:53d5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "ﾀﾊﾞｺﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:53fb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "ﾀﾊﾞｺﾔｻﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:540c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "ﾀﾊﾞｺﾔｻﾝ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:541d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "ｳﾒﾎﾞｼﾊﾞｱｻﾝ(UME) ｶﾞ ﾀﾊﾞｺ(TOBACCO) ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:542e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "ﾎﾝﾔｻﾝ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:545a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "ﾎﾝﾔｻﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5469"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "ﾎﾝﾔｻﾝ ﾉ ﾅｶﾃﾞｽ｡ ｲﾛｲﾛ ﾅ ﾎﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5478"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "ﾐｶﾝ(ORANGE) ｶﾞ ﾎﾝ ｦ ｳｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:549a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "ﾎﾝﾀﾞﾅ ｶﾞ ｽﾞﾚﾃ ﾂｳﾛ ｶﾞ ｱﾗﾜﾚ ﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:54b7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "ｳﾗﾐﾁ ﾍ ﾂｳｼﾞﾃ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:54d6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "ﾌﾞｷﾞｮｳｼｮ ﾍ ﾂｳｼﾞﾙ ﾐﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:54ec"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "ﾆﾝﾆｸ(GARLIC)ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5505"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "ｻﾗﾀﾞﾏﾁ ﾌﾞｷﾞｮｳｼｮ ﾉ ﾏｴﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5519"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "ｼｮｳﾒﾝ ﾆ ﾓﾝ(GATE) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5532"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "ｵﾓﾔ ﾉ ﾏｴ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:554c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "ﾔｼｷ ﾉ ﾅｶ ﾊ ﾋｯｿﾘ ﾄ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:555a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "ｶﾍﾞ ｶﾞ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5573"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "ﾅﾔ(BARN) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5585"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "ｶﾝﾇｷ ｶﾞ ﾊｽﾞﾚﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5597"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "ｶﾝﾇｷ ﾊ ﾊｽﾞﾚﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55a8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ｶﾞ ﾋﾗｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55b9",
+    "SARADA.P1:566c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ﾊ ﾋﾗｲﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55c9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "ﾅﾔ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55d9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "ﾊｺ ｶﾞ ｵｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55e5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "ﾊｺ ﾉ ﾌﾀ ｶﾞ ｱｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:55f5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "ﾃｶﾞﾀ(TEGATA) ｶﾞ ﾊｲｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5607"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "ﾀﾃﾓﾉ ﾉ ﾖｺ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5621"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "ﾏﾄﾞﾗｼｲ ﾓﾉ ｶﾞ ﾐｱﾀﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5630"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "ﾀﾃﾓﾉ ﾉ ﾏｴ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5646"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "ｼｮｳﾒﾝ ﾆ ｲﾘｸﾞﾁ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5655"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "ﾀﾃﾓﾉ ﾉ ﾅｶ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:568d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "ﾛｳﾔ(PRISON) ﾆﾊ ﾆﾝﾆｸ(GARLIC) ｶﾞ ﾄﾗｴﾗﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:569c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "ｻﾗﾀﾞﾏﾁ ﾌﾞｷﾞｮｳｼｮ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:56c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "ｷｬﾍﾞﾂﾌﾞｷﾞｮｳ(CABBAGE) ｶﾞ ｽﾜｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:56e0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "ｷｬﾍﾞﾂﾌﾞｷﾞｮｳ ｶﾞ ｵｺﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5702"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "ｷｬﾍﾞﾂﾌﾞｷﾞｮｳ ﾊ ﾄﾃﾓ ｵｺｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5719"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "ｷｮｳｶｲ(CHURCH) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5735"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "ｷｮｳｶｲ ｶﾞ ﾐｴﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:574c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "ｷｮｳｶｲ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:575b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "ｻｲﾀﾞﾝ(ALTAR)､ ｼﾞｭｳｼﾞｶ(CROSS) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:576a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "ｻｲﾀﾞﾝ ｶﾞ ｳｺﾞｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5790"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "ｻｲﾀﾞﾝ ﾉ ｱｯﾀ ﾄｺﾛﾆ ｶｲﾀﾞﾝ(STAIRS) ｶﾞ ｱﾗﾜﾚﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:57a2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "ﾀﾃﾓﾉ(BUILDING) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:57cd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "ﾀﾃﾓﾉ ｶﾞ ﾐｴﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:57e5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "ﾊﾝﾗﾝｸﾞﾝ ｼﾚｲﾌﾞ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:57f3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "ﾐﾝﾅ ｶﾞ ｶｲｷﾞ ｦ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:580a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "ﾛﾝﾒﾛﾝ ｼｮｳｸﾞﾝ ｶﾞ ｱﾗﾜﾚﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:581f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "ﾛﾝﾒﾛﾝ ｼｮｳｸﾞﾝ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5838"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "ｻｸｾﾝ ｻﾝﾎﾞｳ ｶﾞ ｱﾗﾜﾚﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:584d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "ｼﾞｮｾｲ ﾉ ｻｸｾﾝ ｻﾝﾎﾞｳ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5864"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "ﾓﾘ(FOREST)ﾍﾉ ﾃﾞｸﾞﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:587c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "ﾑｺｳ ﾆ ﾓﾘ ｶﾞ ﾐｴﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P1:5894"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "ﾓｯﾃﾅｹﾚﾊﾞ ﾄﾞｳｼﾖｳﾓ ﾅｲ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3384",
+    "SARADA.P3:3381",
+    "SARADA.P4:3373"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "n00017",
+   "kind": "name",
+   "jp": "ﾂﾙｷﾞ(SORD)",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3562"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00018",
+   "kind": "name",
+   "jp": "ﾀﾝｲﾁﾃﾞﾝﾁ(BAT1)",
+   "en": "",
+   "refs": [
+    "SARADA.P2:35ad",
+    "SARADA.P3:3582",
+    "SARADA.P4:3570"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00019",
+   "kind": "name",
+   "jp": "ﾀﾝﾆﾃﾞﾝﾁ(BAT2)",
+   "en": "",
+   "refs": [
+    "SARADA.P2:35be",
+    "SARADA.P3:3593",
+    "SARADA.P4:3581"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00020",
+   "kind": "name",
+   "jp": "ﾀﾝｻﾝﾃﾞﾝﾁ(BAT3)",
+   "en": "",
+   "refs": [
+    "SARADA.P2:35ce",
+    "SARADA.P3:35a3",
+    "SARADA.P4:3591"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00021",
+   "kind": "name",
+   "jp": "ﾋﾟｰﾅｯﾂ",
+   "en": "",
+   "refs": [
+    "SARADA.P2:35f5",
+    "SARADA.P3:35ca",
+    "SARADA.P4:35b8"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00022",
+   "kind": "name",
+   "jp": "ｻｰﾍﾞﾙ",
+   "en": "",
+   "refs": [
+    "SARADA.P2:35fe",
+    "SARADA.P3:35d3",
+    "SARADA.P4:35c1"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾓﾄﾞﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3735"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "｢ﾋﾀﾞﾘ ﾊ ｷｹﾝ｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3744"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ﾜﾀﾚｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3779"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "ﾂﾒﾀｸﾃ ｵﾎﾞﾚｿｳ ﾃﾞｽｶﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:378e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "ｷｭｳﾘ ﾊ ﾐｽﾞﾆ ｳｸﾉﾃﾞ ｳﾏｸ ｶﾜｦ ﾜﾀﾚﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:37a5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "ﾊｼｶﾞ ｺﾜﾚﾃ ｲﾙﾉﾃﾞ ﾜﾀﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:37cf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "ｲﾏﾆﾓ ｸｽﾞﾚｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3800"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "ﾓｳ ｲｸﾋﾂﾖｳ ﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:383a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "ﾌｷｹﾞﾝ ｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3874"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "ｻｹ ﾉ ｱｷﾋﾞﾝ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3884"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "ｶｹｼﾞｸ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3897"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "｢････ｻｹ････ﾌﾞﾂﾌﾞﾂ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:38a5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "｢ﾖｸ ｷｶﾞﾂｸｼﾞｬ ﾅｲｶ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:38d7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "｢ﾅﾆｦ ｽﾙﾝﾀﾞ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:38fd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "｢ﾄｺﾛﾃﾞ ﾂﾏﾐﾊ ﾅｲﾉｶﾈ?｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3925"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "｢ﾖｼﾖｼ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3952"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "｢ｿﾝﾅ ﾀﾞｻｲﾓﾉｼﾞｬ ｶﾎﾞﾁｬﾀﾞｲｵｳ ﾊ ﾀｵｾﾅｲｿﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:398f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "｢ｵﾏｴ ｶﾞ ｳﾜｻﾉ ｷｭｳﾘｾﾝｼ ﾀﾞﾅ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:39cc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "｢ｺﾉｻｷ ﾊ ﾎﾗｱﾅ ﾉ ﾅｶﾆ ｱﾙ \"ﾀﾞｲｺｰﾝ\" ﾆ ﾉｯﾃ ｲｸﾉｶﾞ ﾖｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:39f0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "｢ｳﾏｲｻｹｼﾞｬ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3a28"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾅｯﾂ ﾉ ｶﾀﾁ ｦ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3aa5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾀﾞﾚﾓ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3ad3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "｢ﾅﾆﾓ ｲﾘﾏｾﾝﾖｰ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3aff"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "｢ﾊｯ ﾊｯ ﾊｯ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3b11"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "｢ｴｰﾄ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3bd8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "｢ｳｫｰﾒﾛﾝ ﾊ ｶﾜﾆ ﾋｿﾝﾃﾞ ｲﾙｾﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3be2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "｢ｴｰﾄ｡ ﾎｶﾆﾊ ﾅﾆﾓ ﾅｶｯﾀ ﾄ ｵﾓｳｹﾄﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3c06"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "｢ｳｫｰﾒﾛﾝ ﾊ ｷ ﾃﾞ ﾅｷﾞﾀｵｽﾄ ﾔｯﾂｹﾗﾚﾙﾃﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3c2a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "｢ｳｰﾝ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3c81"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "｢ﾀﾞｲｺｰﾝ?｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3c8b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "｢ﾀﾞｲｺｰﾝ ﾊ ｼｱﾝ(CYAN) ﾉ ﾎﾞﾀﾝ ｦ ｵｽﾄ ﾊﾟﾜｰ ｶﾞ ﾊｲﾙｾﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3c9e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "ｲﾘｸﾞﾁ ﾆ ｼｶｹ ﾊ ﾅｲﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3cfc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "ﾏｯﾀｸ ｳｺﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3d38"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3d63"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3d9c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "ｺﾉ ﾄﾋﾞﾗﾉ ｶｷﾞﾊ ﾏﾀﾞ ﾏﾁﾉ ﾅｶﾆ ｱﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3db7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "ﾅﾆｶ ｦ ﾊﾒﾙﾖｳﾆ ﾅｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3ddd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "ｱｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3dfd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝﾁ ｶﾞ ｾｯﾄ ｻﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3e67"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝﾁ ｦ ｲﾚﾙ ﾄｺﾛｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3e7f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "ｷｶｸ ｶﾞ ｱｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3eb7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｹﾞﾝ ｶﾞ ﾊｲﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3edf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "ﾅﾆｲﾛ? ",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3efb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "ﾅﾆ ﾓ ｵｺﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3f12"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "ﾒｲﾝ ｽｲｯﾁ ｶﾞ ﾊｲﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3f35"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "ｽｲｯﾁ ﾊ ｽﾃﾞﾆ ﾊｲｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3f4c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝｹﾞﾝ ｶﾞ ﾊｲｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3f7c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "ﾒｲﾝ ｽｲｯﾁ ｶﾞ ﾊｲｯﾃ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:3f94"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "ﾂﾐﾁ ｶﾞ ﾜｶﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4000"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "ｶﾜ ｶﾞ ﾅｶﾞﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4011"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "ｷﾀﾅｲ ｺﾔ(COTTAGE) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4022"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "ﾑｯﾂﾘ ﾄ ｼﾀ ﾆﾝｼﾞﾝ(CARROT) ﾉ ｼﾞｲｻﾝ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:403c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "｢ﾊｯ ﾊｯ ﾊｯ､ ﾋｻｼﾌﾞﾘ ﾉ ｻｹｼﾞｬ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4064"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "ﾂﾏﾐ ｦ ﾀﾍﾞﾅｶﾞﾗ ｻｹｦ ﾉﾝﾃﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4081"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "｢ｺﾚｶﾞ ﾗｲﾄ ｻｰﾍﾞﾙ(SABER) ﾀﾞ｡ ｵﾏｴ ﾉ ｷｮｳﾘｮｸ ﾅ ﾐｶﾀﾆ ﾅﾙﾀﾞﾛｳ｡ ﾓｯﾃ ﾕｸｶﾞ ﾖｲ｡｣\n｢ﾀﾀﾞｼ ﾃﾞﾝﾁ ｶﾞ ﾅｲﾄ ﾂｶｴﾝｿﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:409d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "ﾑﾗ ﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:40fe"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "ﾔｻｼｲ ﾋﾟｰﾅｯﾂ ﾉ ｶｿﾞｸ ｶﾞ ﾜｷｱｲｱｲ ﾄ ﾊﾅｼｦ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:410a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾅｯﾂﾎﾞｳﾔ ｶﾞ ﾅｷﾀﾞｼﾃ ｼﾏｲﾏｼﾀ｡ ｶﾜｲｿｰﾆ!",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4135"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾅｯﾂﾎﾞｳﾔ ﾉ ﾅﾐﾀﾞ ｶﾞ ｼﾞﾒﾝﾆ ｵﾁﾃ ﾋﾟｰﾅｯﾂ ﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:415a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "ｷﾉｺｿﾞｸ ﾉ ﾑﾗ ﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4189"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "ｷﾉｺ ｶﾞ ﾋﾄﾘ ﾃﾞﾃｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:419e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "ｲﾝﾃﾘｷﾉｺ ｶﾞ ﾃﾞﾃｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:41b2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "ﾄﾞｳｸﾂ ﾍ ﾐﾁｶﾞ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:41c6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "ﾄﾞｳｸﾂ ﾉ ｲﾘｸﾞﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:41de"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "ﾄﾞｳｸﾂ ﾉ ﾅｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:41f1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "ｳﾗｶﾞﾜ ﾍ ﾏﾜｯﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4200"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ﾉ ﾏｴ ﾆ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4213"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "ｷﾄﾞｳﾒｶ ｢ﾀﾞｲｺｰﾝ｣ ﾉ ｺﾝｿｰﾙ ﾙｰﾑ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4225"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "ｺﾝｿｰﾙ ﾆﾊ ﾀｸｻﾝ ﾉ ｹｲｷ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4246"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "｢ｺﾞｺﾞｺﾞｰ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4263"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｺｰﾝ ｶﾞ ｳｺﾞｷﾀﾞｼﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:426e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "｢ｶﾞｶﾞｰﾝ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4284"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "ｱﾅﾀ ﾊ ｺﾚｶﾗｻｷ ﾀﾞｲｺｰﾝ ﾆ ﾉｯﾃ ｽｽﾑｺﾄｶﾞ ﾃﾞｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:428f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "ﾐｷﾞ ﾄ ﾋﾀﾞﾘ ﾆ ｲﾄﾞｳ ﾃﾞｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:42b8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "ﾊｼｶﾞ ｺﾜﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:42d1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "ﾅｶﾆ ﾀﾞﾚｶ ｲｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:42e0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "ｾﾏｲ ｺﾔ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:42f1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "ｻｹｦ ﾓﾗｯﾃ ﾖﾛｺﾝﾃﾞｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:42fd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "ﾀｲﾍﾝ ｷｹﾞﾝ ｶﾞ ﾖｻｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4311"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "ﾗｲﾄ ｻｰﾍﾞﾙ ｶﾞ ｵｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4327"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "ﾋﾀﾞﾘ ﾄ ﾏｴ ﾆ ｲｹﾙ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:433e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "ﾓﾘﾉ ﾅｶﾊ ﾐﾁｶﾞ ｲｯﾊﾟｲﾃﾞｽ｡ ﾏﾖﾜﾅｲﾖｳﾆ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4355"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾅｯﾂｿﾞｸ ﾉ ｲｴ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4377"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "ｵｼﾞｲｻﾝ､ ｵﾄｳｻﾝ､ ｵｶｱｻﾝ ﾄ ｺﾄﾞﾓ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:438f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "ﾊﾃﾞﾆ ﾅｲﾃ ﾅﾐﾀﾞｶﾞ ﾎﾞﾛﾎﾞﾛ ｵﾁﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:43b3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾅｯﾂ(PEANUT) ｶﾞ ｵﾁﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:43d2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "ｷﾉｺﾉ ｶﾀﾁﾉ ｲｴｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:43ed"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "ﾔｻｼｿｳﾅ ｷﾉｺﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4402"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "ｶﾝｶﾞｴｺﾝﾃﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4411"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "ｲﾘｸﾞﾁ ｶﾞ ﾐｴﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4420"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "ﾅｶﾆ ﾅﾆｶﾞ ｱﾙﾉﾃﾞｼｮｳｶ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:442f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "ﾂｸｴ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4443"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4450"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "ﾄﾋﾟﾗ ﾊ ｼﾏｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:445e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "ｲｽ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:446f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "ｺﾝﾄﾛｰﾙ ﾚﾊﾞｰ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:447b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "ﾕﾚﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4490"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "ﾒ ｶﾞ ﾋｶｯﾀｿﾞ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P2:4498"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "ﾄﾞｳｸﾂ ﾉ ｲﾜ ｦ ﾌﾞﾁﾔﾌﾞｯﾃ ﾀﾞｲｺｰﾝ ｶﾞ ｽｶﾞﾀ ｦ ｱﾗﾜｼﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:44a6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｺｰﾝ ﾊ ｽｸﾞﾚﾀ ｷﾄﾞｳﾒｶ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P2:44d6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "n00023",
+   "kind": "name",
+   "jp": "ﾊﾞﾅﾅﾉｶﾜ",
+   "en": "",
+   "refs": [
+    "SARADA.P3:35e4",
+    "SARADA.P4:35d2"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "ﾓﾃｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:36f1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "ｷﾚｲﾅ ﾐｽﾞﾃﾞｽｶﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3738"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "ﾐｮｳﾆ ｼｽﾞﾏﾘ ｶｴｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:374a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "ｵﾖｸﾞﾏﾃﾞﾓ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3762"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "ﾏｯｽｸﾞ ﾅ ﾐﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3787"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "ｶﾝﾀﾝﾆ ﾀｵｾｿｳﾅ ｱｲﾃﾃﾞﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:37cb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ﾀｶｲ ｷﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:38cd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "｢ｷｹﾝｦ ｵｶｽﾉｶﾞ ｱﾄﾞﾍﾞﾝﾁｬｰﾃﾞｽ｡｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3906"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾅﾆﾓ ｲﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3946"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "ﾅﾆｶｶﾞ ﾏﾁｶﾏｴﾃ ｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3968"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "ﾜﾀﾚｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:39a2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "ｶﾝﾀﾝﾆﾊ ｷﾚｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:39eb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝﾁ ｶﾞ ﾊｲｯﾃ ｲﾙﾉﾃﾞ ﾂｶｴﾏｽﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3a10"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "ﾗｲﾄｻｰﾍﾞﾙ ﾃﾞﾝﾁｶﾞ ﾅｹﾚﾊﾞ ﾀﾀﾞﾉﾎﾞｳ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3a2e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾂｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3a8b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ﾃﾞﾝﾁｦ ﾂｹﾙﾓﾉｦ ﾓｯﾃ ｲﾏｾﾝﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3a9a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "ｳﾏｸ ﾀﾞｯｼｭﾂ ﾃﾞｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3ae0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾊ ｱﾐｦ ｷﾙﾓﾉｦ ﾓｯﾃｲﾅｲﾉﾃﾞ ｺｺｶﾗ ﾀﾞｯｼｭﾂ ｽﾙｺﾄﾊ ﾃﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3afb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "ﾃﾞﾝﾁ ｶﾞ ﾊｲｯﾃ ﾅｲﾉﾃﾞ ｻｰﾍﾞﾙ ﾊ ﾂｶｴﾏｾﾝﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3b31"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "ｵｵｷｽｷﾞﾃ ﾀﾞｲｺｰﾝ ﾃﾞﾓ ｺｴﾗﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3b80"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "ｵｵｷﾅ ｷ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3b9f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾓﾃﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3bbc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "ﾐﾁｦ ﾐﾁｸﾘｰ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3bf2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "ﾐｽﾞｦ ﾐｽﾞﾆﾊ ｲﾗﾚﾅｲ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c00"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "ｲｷﾄﾞﾏﾘﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c15"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "ﾄｵｸﾃ ﾖｸ ﾐｴﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c38"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "ﾋﾀﾞﾘﾉ ﾐﾁﾊ ｵｶﾆ ﾂﾅｶﾞﾙ ｹﾓﾉﾐﾁﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c4a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "ﾔｻｼｲ ｶｵｦ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c84"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "｢ﾀﾁｼｮﾝ ｼﾃﾊ ｲｹﾅｲﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3c97"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "｢ｵﾓｲﾄﾄﾞﾏﾚ｡ ｼﾝﾃﾞ ﾊﾅﾐｶﾞ ｻｸﾓﾉｶ｡｣ ﾄ ｶｲﾃ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3cce"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "ﾁｮｳﾄﾞ ｶﾞｹﾉ ｼﾀﾆ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3d1b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "ﾘｰｶﾞﾙ ﾉ ｸﾂﾀﾞ!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3d33"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞｵﾘﾃ ﾀｽｶﾙﾖｳﾅ ﾀｶｻﾃﾞﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3d44"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "ｵｯｺﾁﾃ ｼﾏｲﾏｽﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3d64"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "ﾔﾊﾘ ﾊﾟﾗｼｭｰﾄﾉ ｶﾜﾘﾆﾅﾙﾖｳﾅﾓﾉｶﾞ ﾋﾂﾖｳﾃﾞｼｮｳ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3d7c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "｢ﾔｯﾎｰ｡｣\nｶｻｦ ﾂｶｯﾃ ｳﾏｸ ｵﾘﾙｺﾄｶﾞ ﾃﾞｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3da5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "ﾗｲﾄｻｰﾍﾞﾙ ﾃﾞ ﾔｯﾂｹﾗﾚｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3e0c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "ｽﾃﾞﾃﾞ ﾀｵｾﾙﾖｳﾅ ｱｲﾃﾃﾞﾊ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3e3b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "ﾀﾝｻﾝﾃﾞﾝﾁﾃﾞﾊ ｻｰﾍﾞﾙﾉ ｼｭﾂﾘｮｸｶﾞ ﾀﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3ea5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "ｷｯﾃﾓ ｷｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3ee6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "ﾓｳ ﾄﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f0e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "ﾖｸ ｽﾍﾞﾘｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f31"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "ｲﾜ ｶﾞ ｺﾛｶﾞｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f55"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "ｵｵｷﾅ ｶﾜﾉ ﾎﾄﾘﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f67"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｺｰﾝ ﾊ ｽﾞﾝｽﾞﾝ ｽｽﾐﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f7c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "ﾅﾝﾀﾞ ｺﾘｬ?",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f93"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "ｺｸｵｳｸﾞﾝﾉ ﾛﾎﾞｯﾄﾀﾞｰ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3f9d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "｢ｲﾃｰﾅ!! ｿﾝﾅﾉｼﾞｬ ﾔﾗﾚﾅｲｿﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3fb1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "ﾔｯﾀｰ! ﾄｶﾞｯﾀ ｷﾃﾞ ﾔｯﾂｹﾙ ｺﾄｶﾞ ﾃﾞｷﾀｿﾞ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3fcb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "ﾑｺｳｷﾞｼｶﾞ ﾐｴﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:3ff0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "ｳｫｰﾒﾛﾝ ﾆ ﾄﾘｶｺﾏﾚﾃ ｼﾏｯﾀｰ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4003"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "ｲﾏﾉ ﾀﾀｶｲﾃﾞ ﾀﾞｲｺｰﾝﾓ ｷｽﾞﾂｲﾃ ｼﾏｲﾏｼﾀ｡ ｺﾚｶﾗ ｻｷﾊ ﾏﾀ ﾋﾄﾘﾃﾞ ｲｶﾅｸﾃﾊ ﾅﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:401b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "ﾜｶﾚﾐﾁ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:405d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "ｼﾛｶﾞ ﾐｴﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:406c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:407b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "ｼﾛﾉ ｳﾗﾆ ﾏﾜｯﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:408a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "｢ｺﾗ ﾅﾝﾀﾞｧｵﾏｴ!! ｱﾔｼｲﾔﾂﾀﾞ!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P3:409d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "ﾜﾅﾆ ﾂｶﾏｯﾁｬｯﾀﾖｰ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:40b7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "ｺｺﾊ ｲｯﾀｲ ﾄﾞｺﾃﾞｼｮｳ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:40c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "ﾐﾁｶﾞ ｵｵｷﾅ ｲｼﾃﾞ ﾌｻｶﾞﾚﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:40da"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "ｻｯｷ ﾀﾞｲｺｰﾝﾃﾞ ﾜﾀｯﾃｷﾀ ｶﾜｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:40f5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "｢ﾀﾁｲﾘｷﾝｼ｣ ﾉ ｶﾝﾊﾞﾝ ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4114"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "ｾﾞｯﾍﾟｷﾉ ﾎｿｲ ﾐﾁ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:412f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "ｻﾝﾁｮｳ ﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4143"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "ｶﾞｹｯﾌﾟﾁ(PRECIPICE) ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4152"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "ﾃﾞﾀｰ｡ ﾔﾏﾀﾉﾊﾞﾅﾅ(BANANA)ﾀﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:416a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "ﾔﾏﾀﾉﾊﾞﾅﾅ ﾄ ｶｸﾄｳ ﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4184"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "ﾔｯﾀｰ! ﾔｯﾂｹﾗﾚﾀｿﾞ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:419d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "ｱｲﾃｦ ﾀｵｽﾆﾊ ﾃｺﾞﾛﾅ ｲｼﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:41af"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "ｱｻｲ ｶﾜﾃﾞｽ｡ ｱﾙｲﾃ ﾜﾀﾚｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:41c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "ｶﾜﾉ ﾅｶｶﾗ ﾅﾆｶ ﾃﾞﾃｷﾀｿﾞ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:41f2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "ｽｲｶｶﾞﾀ ﾛﾎﾞｯﾄ ｢ｳｫｰﾒﾛﾝ｣(WARMELON) ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4209"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "ｱﾏﾘ ｷｶﾅｲ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:422e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "ｳｫｰﾒﾛﾝ ｶﾞ ﾊﾞﾗﾊﾞﾗﾀﾞ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P3:423e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "ﾅﾝﾄｶ ﾑｺｳｷﾞｼﾏﾃﾞﾊ ﾀﾄﾞﾘﾂｹｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4253"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "ｺﾉ ｼﾞｮｳｷｮｳ ﾃﾞﾊ CLEAR GAME ﾄ ｳﾁｺﾝﾀﾞﾎｳｶﾞ ｲｲﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4270"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "ﾐﾁｶﾞ ﾂﾂﾞｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42a0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "ﾋﾀﾞﾘﾄ ﾏｴﾆ ｲｹﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42b0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "ﾏｶﾞﾘｶﾄﾞﾆﾊ ｲﾜｶﾞ ﾀｯﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42c4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "ｵｵｷﾅ ｼﾛﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42db"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "ｶﾘﾌﾗﾜｰ ﾉ ﾊﾞﾝﾍﾟｲﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42e7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "ﾎﾘ(MOAT) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:42fb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "｢ｺｺﾊ ｵﾏｴﾅﾝｶﾉ ｸﾙﾄｺﾛｼﾞｬ ﾅｲｿﾞ!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P3:430d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "ｶﾀｲ ｱﾐﾆ ﾂｶﾏｯﾀﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:432a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "ﾜｶﾝﾅｲ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:433e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "ｱﾀﾘﾆﾊ ｵｵｷﾅ ｷｶﾞ ﾊｴﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4345"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "ｵﾖｲﾃﾞﾊ ﾜﾀﾚｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:435d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "ｾﾞﾝﾎﾟｳﾆﾊ ｵｼﾛ(CASTLE)ｶﾞ ﾐｴﾙﾐﾀｲﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4372"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "ｵｼﾞｿﾞｳｻﾝ(JIZO) ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4394"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "ｺﾉﾏﾏｲｸﾄ ｷｹﾝﾐﾀｲ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:43ab"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "ｵﾊｶ(TOMB) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:43bf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "ｶﾎﾞﾁｬﾀﾞｲｵｳ ﾉ ｼﾛｶﾞ ﾐｵﾛｾﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:43d2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "ｺｯﾁﾆ ｷｶﾞﾂｲﾀ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:43ec"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "ﾅｶﾅｶ ﾃｺﾞﾜｲ ｱｲﾃﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:43ff"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "ﾊﾞﾅﾅﾉ ｶﾜ(RIND) ｶﾞ ｵﾁﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P3:4412"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "n00024",
+   "kind": "name",
+   "jp": "ｶｷﾞ",
+   "en": "",
+   "refs": [
+    "SARADA.P4:35dc"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "n00025",
+   "kind": "name",
+   "jp": "ｱｵﾑｼ(CATERPILLAR)",
+   "en": "",
+   "refs": [
+    "SARADA.P4:35e2"
+   ],
+   "max_cells": 79,
+   "note": "an object's name in the inventory list (one line, the names after it on the same line)"
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "3ｶﾞｲﾀﾞﾃ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3730"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "3ｶﾞｲﾆ ﾉﾘｺﾑﾀﾒﾉ ﾂｳﾛｶﾞ ｱﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3740"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "1ｶｲｶﾗﾊ ﾉﾚｿｳﾆ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3767"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "ｽﾍﾞｯﾃ ﾉﾎﾞﾚﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3785"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "ｶｷﾞﾊ ｶｶｯﾃ ﾅｲﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:37ad"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "ﾅｶﾆ ｲﾙﾉﾊ ﾄﾏﾄﾋﾒ(TOMATO) ﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:380e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "ｶｵｶﾞ ﾖｸ ﾐｴﾏｾﾝ｡ ﾅｲﾃｲﾙﾉﾃﾞｼｮｳｶ?",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3831"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "ﾛｰﾌﾟｶﾞ ﾀﾚｻｶﾞｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3851"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "ｺﾝﾅﾄｺﾛﾆ ﾛｰﾌﾟｶﾞ ｱﾙﾅﾝﾃ!! ｱﾄﾞﾍﾞﾝﾁｬｰﾊ ﾂｺﾞｳｶﾞｲｲ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3868"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "ﾄﾞﾃｰﾝ!! ﾔｯﾊﾟﾘ ｵﾁﾀｰ｡\nｺﾚﾃﾞ ｱｶﾞﾚﾙ ｱﾄﾞﾍﾞﾝﾁｬｰｶﾞ ｵｵｲﾃﾞｽﾈｰ｡ ｻﾗﾀﾞﾊ ｿﾝﾅﾆ ｱﾏｸﾅｲﾃﾞｯｾ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:38a0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ﾀｶｲ ｶﾍﾞﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3933"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "ﾓｳ ｱﾘﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3946"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "ﾄｸﾆ ｶﾜｯﾀ ﾄｺﾛﾊ ﾅｲﾐﾀｲﾃﾞｽｶﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3980"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "ｵﾓｸﾃ ｳｺﾞｷﾏｾﾝ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:39a4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "ﾎｯﾃﾓ ﾎｯﾃﾓ ﾂﾁﾊﾞｶﾘ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:39cd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "ﾖｲﾖｲﾖｲ!!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:39e2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "ﾄﾞﾛﾀﾞﾗｹﾆ ﾅﾘﾏｽﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:39ee"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "ｲｼﾊ ｲｼ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3a1b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "｢ﾊｯﾊｯﾊｯ｡ ｵﾚﾊ ｲﾓﾀﾞ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3a32"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "｢ｲﾓﾀﾞ! ｲﾓﾀﾞ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3a4a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "｢ｵｳ､ ｲｲｶｻ ﾓｯﾃﾙｼﾞｬ ﾅｲｶ｡ ﾓﾗｯﾄｸｾﾞ｡ ｵﾚｲﾆ ｼﾛﾉﾅｶﾍ ﾂﾚﾃｲｯﾃﾔﾛｳ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3a65"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "｢ｵﾚﾊ ｲﾓﾀﾞｾﾞ! ｿﾝﾅﾓﾉ ｲﾙｶ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3aaa"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "ｱﾀﾀｶｲ ｵﾕ ｶﾞ ﾊｲｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3b07"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "｢ｱｰ､ ｽｯｷﾘｼﾀ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3b3a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "｢ｱｰ､ ｷﾓﾁｲｲ｡｣ ｶﾗﾀﾞﾉ ﾄﾞﾛｶﾞ ﾄﾚﾃ ｷﾚｲﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3b50"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "2ｶｲﾆ ｲｸ ｶｲﾀﾞﾝ ﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3bb5"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "ｱﾅﾀﾉ ｱﾙｲﾀｱﾄﾆﾊ ﾄﾞﾛﾀﾞﾗｹﾉ ｱｼｱﾄ ｶﾞ ﾂｲﾃｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3bdb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "ﾅｽ ﾉ ｶｹﾞ ﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3c27"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "ﾛｳﾔﾉ ｶｷﾞｦ ﾓｯﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3c81"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "ｶｷﾞｶﾞ ｶｶｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3cc0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "ﾛｳﾔﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3cd3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "｢ｶﾞﾝﾊﾞｯﾃ ｸﾀﾞｻｲ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3d31"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "｢ｱﾅﾀﾉ ｵｶｹﾞﾃ ﾆｹﾞﾙ ｺﾄｶﾞ ﾃﾞｷﾏｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3d47"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "｢ｶﾎﾞﾁｬｵｳ ﾊ ﾎﾝﾄﾆ ﾃｺﾞﾜｲ ﾔﾂﾃﾞｽ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3d6a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "｢ﾞﾀﾝｶｳﾞﾄﾞﾌﾊｽｼﾈｪﾞｼｱﾞﾄﾝｱ｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3ddc"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "｢ﾄﾌｿｲﾖﾊﾄﾌｿﾝｿﾞﾄﾊ｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3df9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "ﾀﾞﾀﾞﾉ ﾌﾀﾉ ﾖｳﾃﾞｽｶﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3e2b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "ﾀﾞﾚﾄ ﾊﾅｽﾉﾃﾞｽｶ?",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3e41"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "｢ﾅｶﾞｲ ｱｲﾀﾞ ﾄｼﾞｺﾒﾗﾚﾃ ｲﾀﾉﾃﾞ ｶﾗﾀﾞｶﾞ ｼﾅﾋﾞﾃ ｷﾀﾐﾀｲﾀﾞﾅ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3e88"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "｢ｱｰ､ ｸﾙｼｶｯﾀ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3ebf"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "｢ﾎﾞｸﾊ ｶﾎﾞﾁｬﾀﾞｲｵｳﾉ ｷﾗｲﾅﾓﾉｦ ﾓｯﾃｲﾙﾉﾃﾞ ﾄｼﾞｺﾒﾗﾚﾃ ｲﾀﾝﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3ed2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "｢ｱｰ､ ｶﾗﾀﾞｶﾞ ｼｬｷｯﾄ ｼﾃｷﾀﾖ｡ ﾄﾞｳﾓ ｱﾘｶﾞﾄｳ｡｣\n｢ｺﾚｶﾞ ｶﾎﾞﾁｬﾀﾞｲｵｳ ﾉ ｷﾗｲﾅ ｱｵﾑｼﾀﾞﾖ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3f1f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "ﾅｶﾉ ｴﾝｶｲｦ ﾉｿﾞｲﾃｲﾏｽ｡ ｷｯﾄ ｼﾞﾌﾞﾝﾓ ﾉﾐﾀｲﾉﾃﾞｽﾈ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3f94"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "ﾏｯﾃﾓ ﾑﾀﾞﾅ ﾖｳﾃﾞｽｶﾞ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3fd7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "ﾅｽﾓ ｻｹｦ ﾉﾐﾊｼﾞﾒﾀ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:3fef"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "ｼｮｸﾑﾆ ﾀｲﾏﾝﾅ ﾌﾞｶﾃﾞｽﾈｰ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:400b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "ﾀﾀｲﾃﾓ ｵｷﾅｲ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4049"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "ｶｷﾞ ﾊ ｶｶｯﾃ ｲﾅｲﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4080"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "ｺﾞｺﾞｺﾞｰ｡ ﾛｹｯﾄｶﾞ ｼﾄﾞｳｼﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4098"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "ﾊﾔｸｼﾅｲﾄ ｵｯﾃｶﾞ ｷﾏｽﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:40e4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "ﾅｶﾉ ﾓﾉﾊ ﾐﾝﾅ ﾆｹﾞﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4128"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲﾆ ｷｽﾞｶﾚﾃ ｼﾏｲﾏｽﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4144"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "ﾏｯﾀｸ ﾑﾎﾞｳﾋﾞﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4178"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "ｴﾝｶｲﾉ ｻｶﾅﾆ ｻﾚﾃｲﾀﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:41b1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "｢ｱﾘｶﾞﾄｳ｡ ｺﾚﾃﾞ ﾜﾀｼﾓ ﾔｯﾄ ｼﾞﾕｳﾆ ﾅﾚﾙﾉﾃﾞｽﾈ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:41cb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "ｶﾝｶﾝﾆ ｵｺｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4225"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "ﾄﾃﾓ ﾊﾅｼｦｽﾙ ｼﾞｮｳﾀｲﾃﾞﾊ ﾅｲﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4238"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "ﾌﾀﾘﾊ ｲｯｷｳﾁﾆ ﾅﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4259"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "｢ﾎﾚ!!｣\n｢ｷﾞｮｴｰｯ! ﾅﾝﾀﾞｺﾚﾊ!!｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4292"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｵｳﾊ ｲﾁﾓｸｻﾝﾆ ﾆｹﾞﾃ ｲｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:42bb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｵｳﾊ ﾌﾞｶｦ ﾐｽﾃﾃ ﾀﾀﾞﾋﾄﾘ ﾛｹｯﾄﾃﾞ ﾀﾞｯｼｭﾂ ｼﾃｲｷﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:42e2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｵｳｦ ﾉｾﾀ ﾛｹｯﾄﾊ ｳﾁｭｳﾉ ﾊﾃﾏﾃﾞ ﾄﾝﾃﾞｲｯﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:431d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "ﾅｾﾞｶ ﾀﾞｲｺｰﾝﾓ ﾃｦ ﾌｯﾃﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:437d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "ﾖｸ ｺｺﾏﾃﾞ ﾀﾄﾞﾘﾂｷﾏｼﾀﾈ｡ ﾎﾝﾄｳﾆ ｺﾞｸﾛｳｻﾏﾃﾞｼﾀ｡\nｺﾉ ｱﾄﾞﾍﾞﾝﾁｬｰﾆ ｶﾝｽﾙ ｵﾀﾖﾘｦ ﾊﾄﾞｿﾝﾄｰｷｮｰﾏﾃﾞ ｵﾖｾｸﾀﾞｻｲ｡\nｺﾞｼﾖｳﾉ ｷｼｭﾒｲ､ ｵﾄｼ､ ｺﾞｼｮｸｷﾞｮｳ ﾅﾄﾞﾓ ｶｷｿｴﾃ ｲﾀﾀﾞｸﾄ ｻｲﾜｲﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:439c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "ﾖｺﾆ ﾏﾜｯﾃ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:444f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "ｵｼﾛﾉ ﾆﾜﾆ ｵﾘﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:445e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲｶﾞ ｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:446e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "ｵｼﾛﾉ ｳｴﾉﾎｳﾆ ﾛｳﾔｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:447d"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "ﾊﾀｹ(FIELD)ﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4495"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "ﾖｯ､ ｺﾝﾁｬｰ｡ ｱﾝﾀ ｳﾜｻﾉ ｷｭｰﾁｬﾝﾀﾞﾛ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:44a8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "ｲﾓｶﾞ ﾎｯﾀ ﾄﾝﾈﾙﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:44c7"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "ｵｼﾛﾉ 1ｶｲﾉ ﾄｲﾚﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:44d9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "ﾕﾃﾞｷｭｳﾘ ﾆ ﾅｯﾃｼﾏｲﾏｼﾀ｡ ｺﾚｼﾞｬｱ ﾁｮﾂﾄ ﾀﾀｶｴﾅｲﾃﾞｼｮｳ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:44eb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "ﾌﾛﾊﾞﾉ ｿﾄﾆ ﾃﾞﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4519"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "2ｶｲﾉ ﾛｳｶｶﾞ ﾐｴﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:452a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲﾆ ﾐﾂｶｯﾃ ｲｯｶﾝﾉ ｵﾜﾘﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:453b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲ(GUARD)ｶﾞ ﾊﾞﾅﾅﾉ ｶﾜﾃﾞ ｽﾍﾞｯﾃｺﾛﾝﾃﾞ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4557"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗﾉ ﾏｴﾆ ｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4585"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "ﾀｹﾉｺ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4595"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "ｶﾌﾞ ｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:45a2"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "ﾋﾟｰﾏﾝｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:45ae"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "ｶﾒ ｶﾞ ｵｲﾃｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:45bb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "ﾊｸｻｲ ｶﾞ ﾃﾞﾃｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:45ca"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00521",
+   "kind": "msg",
+   "jp": "3ｶﾞｲﾆ ｱｶﾞｯﾃ ｷﾏｼﾀ｡ ｼｮｳﾒﾝﾉ ﾍﾔﾃﾞﾊ ｴﾝｶｲｦ ｼﾃｲﾙﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:45db"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00522",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲﾊ ｻｹｦ ﾉﾐｽｷﾞﾃ ﾖｲﾂﾌﾞﾚﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:460b"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00523",
+   "kind": "msg",
+   "jp": "ﾄﾋﾞﾗﾉ ｱﾙﾄｺﾛﾏﾃﾞ ﾔｯﾃｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:462e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00524",
+   "kind": "msg",
+   "jp": "ﾛｹｯﾄﾉ ｿｳｼﾞｭｳﾊ ﾑｽﾞｶｼｶｯﾀ ﾖｳﾃﾞｽ｡ ﾂｲﾗｸｼﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4646"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00525",
+   "kind": "msg",
+   "jp": "3ｶﾞｲﾍﾉ ｶｲﾀﾞﾝﾍ ﾂﾂﾞｸ ﾛｳｶﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4673"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00526",
+   "kind": "msg",
+   "jp": "ｶﾎﾞﾁｬﾀﾞｲｵｳ(PUMPKIN)ｶﾞ ｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:468e"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00527",
+   "kind": "msg",
+   "jp": "ｲﾀｰ!! ﾄﾏﾄﾋﾒﾀﾞ!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:46aa"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00528",
+   "kind": "msg",
+   "jp": "｢ｺﾗｧｰｯ｡ ｷｻﾏｧｰ､ ﾅﾆﾓﾉﾀﾞ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:46b9"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00529",
+   "kind": "msg",
+   "jp": "｢ｳﾚｼｲﾜ｡ ｱﾅﾀﾉｵｶｹﾞﾃﾞ ｱﾉ ｶﾎﾞﾁｬﾀﾞｲｵｳｦ ﾂｲﾎｳｽﾙｺﾄｶﾞ ﾃﾞｷﾀﾜ｡｣",
+   "en": "",
+   "refs": [
+    "SARADA.P4:46d1"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00530",
+   "kind": "msg",
+   "jp": "ｶﾎﾞﾁｬﾀﾞｲｵｳ ﾉ ｲﾅｸﾅｯﾀ ｻﾗﾀﾞﾉｸﾆ ﾆﾊ ﾏﾀ ﾑｶｼﾉﾖｳﾆ ﾍｲﾜｶﾞ ﾓﾄﾞｯﾃ ｷﾏｼﾀ｡\nｺﾚﾆﾃ ｢ｻﾗﾀﾞﾉ ｸﾆﾉ ﾄﾏﾄﾋﾒ｣ ｾﾞﾝｶﾝﾉ ｵﾜﾘ ﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4706"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00531",
+   "kind": "msg",
+   "jp": "ﾛｹｯﾄﾊ ﾂｲﾗｸｼﾃ ﾌﾀﾘﾊ ｲｯｶﾝﾉ ｵﾜﾘﾃﾞｽ｡ ｿｳｼﾞｭｳﾓ ﾃﾞｷﾅｲﾉﾆ ﾉﾙｶﾗﾃﾞｽﾖ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:476a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00532",
+   "kind": "msg",
+   "jp": "ﾏﾀﾞﾏﾀﾞ ｷｭｳﾘｾﾝｼﾊ ﾜｶｶｯﾀﾉｶ? ﾀﾞｲｵｳﾉ ﾋｬｸｾﾝﾚﾝﾏﾉ ｳﾃﾞﾆﾊ ｶﾅﾜﾅｶｯﾀ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:47a4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00533",
+   "kind": "msg",
+   "jp": "ﾄｳｷﾋﾞﾛｹｯﾄ(ROCKET) ｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:47e3"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00534",
+   "kind": "msg",
+   "jp": "ﾄﾞｱｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:47fe"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00535",
+   "kind": "msg",
+   "jp": "ﾊﾔｸ ﾀﾁｻｯﾀ ﾎｳｶﾞ ﾖｻｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:480a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00536",
+   "kind": "msg",
+   "jp": "ﾅｶﾉ ﾋﾄﾉ ｽｶﾞﾀｶﾞ ﾁﾗﾁﾗ ﾐｴｶｸﾚ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4822"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00537",
+   "kind": "msg",
+   "jp": "ﾅﾝﾉ ﾊﾀｹ ﾃﾞｼｮｳｶ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4843"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00538",
+   "kind": "msg",
+   "jp": "ｶｼｺｿｳﾅ ｲﾓｶﾞ ﾃﾞﾃｷﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4853"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00539",
+   "kind": "msg",
+   "jp": "ｷｭｳﾘﾊ ﾎｿｲﾉﾃﾞ ﾊｲﾚｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4868"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00540",
+   "kind": "msg",
+   "jp": "ﾄｲﾚﾄ ﾌﾛﾄ ｼｬﾜｰｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:487f"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00541",
+   "kind": "msg",
+   "jp": "CLEAR GAME ﾄ ｳﾁｺﾝﾀﾞﾎｳｶﾞ ﾖｻｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4895"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00542",
+   "kind": "msg",
+   "jp": "ｶｲﾀﾞﾝｶﾞ ｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:48b6"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00543",
+   "kind": "msg",
+   "jp": "ﾊﾞﾝﾍﾟｲﾉ ｶｹﾞｶﾞ ﾐｴﾏｽ｡ ｺﾉﾏﾏｲｸﾄ ﾐﾂｶｯﾃ ｼﾏｲｿｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:48c4"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00544",
+   "kind": "msg",
+   "jp": "ｷｾﾞﾂｼﾀﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:48f0"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00545",
+   "kind": "msg",
+   "jp": "ﾛｳﾔ ﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:48fd"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00546",
+   "kind": "msg",
+   "jp": "ﾊﾃﾞﾅ ﾌｸｦ ｷﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:490a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00547",
+   "kind": "msg",
+   "jp": "ﾏﾄﾞﾆ ｶﾌﾞﾘﾂｲﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:491a"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00548",
+   "kind": "msg",
+   "jp": "ｻｶﾀﾞﾁ ｼﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:492c"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00549",
+   "kind": "msg",
+   "jp": "ﾌﾀｶﾞ ｼﾃｱﾘﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4939"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00550",
+   "kind": "msg",
+   "jp": "ﾅﾆｶ ﾜｹｶﾞ ｱｯﾃ ﾄｼﾞｺﾒﾗﾚﾃ ｲﾀﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4946"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00551",
+   "kind": "msg",
+   "jp": "ﾍﾔﾉ ﾏｴﾆﾊ ﾐﾊﾘﾉ ﾊﾞﾝﾍﾟｲｶﾞ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4965"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00552",
+   "kind": "msg",
+   "jp": "ﾊﾅﾁｮｳﾁﾝ ｦ ﾀﾞｼﾃ ﾈﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4981"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00553",
+   "kind": "msg",
+   "jp": "ﾛｹｯﾄﾆ ﾉﾙ ｲﾘｸﾞﾁ ﾉ ﾖｳﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4997"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00554",
+   "kind": "msg",
+   "jp": "ﾊﾔｸ ｼﾅｲﾄ ﾊﾞﾝﾍﾟｲｶﾞ ｵｷﾃ ｷﾏｽﾖ!",
+   "en": "",
+   "refs": [
+    "SARADA.P4:49af"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00555",
+   "kind": "msg",
+   "jp": "ｶﾎﾞﾁｬﾀﾞｲｵｳﾓ ｲﾋﾞｷｦ ｶｲﾃ ﾈﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:49cb"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00556",
+   "kind": "msg",
+   "jp": "ﾄﾏﾄﾋﾒｶﾞ ﾀｽｹｦ ﾓﾄﾒﾃｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:49e8"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00557",
+   "kind": "msg",
+   "jp": "ﾀﾞｲｵｳｶﾞ ﾒｦｻﾏｼﾃ ｼﾏｲﾏｼﾀ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:49fe"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00558",
+   "kind": "msg",
+   "jp": "ｷｭｳﾘｾﾝｼﾊ ｵｻﾚｷﾞﾐﾃﾞｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4a15"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  },
+  {
+   "id": "m00559",
+   "kind": "msg",
+   "jp": "ﾐﾝﾅｶﾞ ﾃｦ ﾌｯﾃ ｲﾏｽ｡",
+   "en": "",
+   "refs": [
+    "SARADA.P4:4a29"
+   ],
+   "max_cells": 237,
+   "note": "a message: any length; broken between words at the screen's width from where the cursor is, \\n a new line; a key waited for after each windowful (3 lines)"
+  }
+ ]
+}

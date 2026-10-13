@@ -2256,6 +2256,64 @@ def ace_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def sarada_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "inventory names"}
+    out = ["# %s%s (Hudson Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "An N88-DISK BASIC(86) disk: `START` (a BASIC program) BLOADs `SARADA.P0` (the game's core, "
+            "x86 code) and the chapters `SARADA.P1`-`P4` (x86 code with their text in it: half-width "
+            "katakana strings ended by a 0).  P0's string routine prints every string, whether written "
+            "after a call, in a table, or named by an immediate.  `pc98tl/sarada.py` documents the format, "
+            "`pc98tl/sarada_tl.py` the English.  A build with no English leaves the files as they are.", "",
+            "* English at any length: the string routine is made a far call to a helper loaded with a "
+            "table (`SARADA.T0`-`T4`, at 2600h:0, memory neither BASIC nor the game uses; `START` loads "
+            "each with its chapter).  A string with English is printed from the table instead, a word "
+            "at a time, broken between words from the cursor's real column.",
+            "* The game shows the text layer's last 4 rows under its picture and scrolls the whole "
+            "layer: the scroll waits for a key before a line not yet read would leave the window.",
+            "* The chapters' inventory, which printed its names a character at a time, prints them "
+            "through the string routine.",
+            "* The parser's word list (in P0) already takes English words; it is not extracted."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length.  The helper breaks the English between words at the "
+            "screen's 80 columns (the last left free) from wherever the cursor is; `\\n` forces a new line.  "
+            "A key is waited for after each windowful (3 lines).  A message the player answers on the same "
+            "line (the prompts) should end as the Japanese does, with its space.",
+            "* Inventory names (`n` ids): one line each, the next name after a space.",
+            "* English is ASCII; another character (and `|`, which the game draws as another sign) is "
+            "written as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title logo)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3221,13 +3279,13 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace"):
+                                    "n88prog", "piyo", "ace", "sarada"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
-                   "ace": ace_notes}[cfg["encoding"]](
+                   "ace": ace_notes, "sarada": sarada_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

@@ -2667,5 +2667,18 @@
    "url": "https://vndb.org/v11034",
    "source": "VNDB"
   }
+ ],
+ "HudsonSoft.zip/Salad no Kuni no Tomato-hime": [
+  {
+   "label": "This repo: games/salad_no_kuni (patcher working, machine translation in progress)",
+   "url": "../games/salad_no_kuni/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v9522",
+   "url": "https://vndb.org/v9522",
+   "source": "VNDB"
+  }
  ]
 }

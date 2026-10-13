@@ -4055,5 +4055,19 @@
    "Start: the opening scene's message window, Enter through its pages",
    "OK: the speaker line and the paragraphs in filler half-width, broken between words at 72 letters a line, paged by the program with its marker"
   ]
+ ],
+ "salad_no_kuni": [
+  [
+   "Boot from the floppy (START auto-run): the title picture and its text window",
+   "OK: the credits and the next message in filler half-width, broken between words, a key waited for once the 4-row window is full (Space goes on)"
+  ],
+  [
+   "Type START: the first scene",
+   "OK: the scene's description and the prompt in filler, paged at the window"
+  ],
+  [
+   "Type I (inventory), then LOOK",
+   "OK: the inventory's line and each object's name in filler, then LOOK's answer; the picture intact"
+  ]
  ]
 }

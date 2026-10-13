@@ -116555,15 +116555,27 @@
      "path": "Salad no Kuni no Tomato-hime\\Salad no Kuni no Tomato-hime [FD h01] [Set 1]\\Salad no Kuni no Tomato-hime [Set 1].nfd"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/salad_no_kuni (patcher working, machine translation in progress)",
+     "url": "../games/salad_no_kuni/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9522",
+     "url": "https://vndb.org/v9522",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r19123 (no erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Hulinks.zip/Star Command",

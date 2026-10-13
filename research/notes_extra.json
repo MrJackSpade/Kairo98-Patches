@@ -416,5 +416,10 @@
   "remarks": [
    "Not reached in this test: poker and blackjack play, the scenes past the opening, the graphics and music rooms."
   ]
+ },
+ "salad_no_kuni": {
+  "remarks": [
+   "Not reached in this test: chapters 2-4 (their tables load the same way as chapter 1's), saving and loading."
+  ]
  }
 }
