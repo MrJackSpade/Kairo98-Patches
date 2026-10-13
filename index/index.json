@@ -230252,15 +230252,27 @@
      "path": "Love Escalator\\Love Escalator [HD]\\Love Escalator.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/love_escalator (patcher working, machine translation in progress)",
+     "url": "../games/love_escalator/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8781",
+     "url": "https://vndb.org/v8781",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17844 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "UmitsukiSeisakusho.zip/Power Slave",

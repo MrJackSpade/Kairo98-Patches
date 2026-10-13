@@ -2257,6 +2257,73 @@ def aas_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def eqa_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "name": "speakers' labels and the hero's name",
+             "slot": "other strings put into slots", "notice": "disk-error notices of the program's"}
+    out = ["# %s%s (Umitsuki Seisakusho)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s`, O. Tomioka's EQAP32 engine (a DOS/4GW program, Watcom C): the `*.EQA` scripts are bytecode in the "
+            "`%s` archive, the text in them in the text layer's code (JIS less 2020h).  The patcher writes a "
+            "changed script again (its jumps, calls and tables moved) and the archive anew.  A script past "
+            "its 64 KB buffer is cut into further scripts (`NAME2.EQA`): a scene in parts going on with the "
+            "script command (each with a copy of its shared routines), a hub of scenes (the endings) with "
+            "its scenes in a further script reached through variable %d.  `pc98tl/le.py`, `pc98tl/ear.py` "
+            "and `pc98tl/eqa.py` document the formats, `pc98tl/eqa_tl.py` the English.  Unchanged files "
+            "rebuild byte for byte." % (cfg["program"], cfg["archive"], cfg["split_var"]), "",
+            "* The program draws only full-width characters on the text layer.  The patched program also "
+            "draws letter pairs, two ANK letters in one character's two cells (its cell writer extended in "
+            "the code object's spare room); a cell is one half-width letter.",
+            "* The game is played with the keyboard or the mouse; the right button opens the program's menu."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` the window's width in letters): any length.  The window is "
+            "usually 60 cells by four lines (the help pages 74 by twelve); the patcher breaks the English "
+            "between words, and when the window is full ends the message there and goes on in a further one "
+            "after the script's click.  `\\n` forces a new line.",
+            "* Tokens: keep them.  `{X9n}`-`{XCn}` insert a slot's string (`{X90}` the hero's family name, "
+            "`{X92}` his given name, `{X94}` his label, `{X96}` on the speakers' labels; at a message's start "
+            "the speaker); `{X82}` / `{X83}` draw slowly / at once (around a label); `{X84}` clears the "
+            "window; `{X80}` waits for a click.",
+            "* Menu items (`i` ids): one line, `max_cells` letters (the menu's item width); past it reported.",
+            "* Speakers' labels and names (`n` ids) and other slot strings (`s` ids): `max_cells` their room "
+            "in bytes (a letter a byte, a full-width character two); past it cut (the ending tokens kept) "
+            "and reported.  The hero's name and label are what the player enters on the name-entry screen.",
+            "* The program's notices (`e` ids): in place, `max_cells` bytes; past it cut and reported.",
+            "* English is ASCII (pairs); another character is written full-width when JIS has it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures: the title menu's and the program's menus' labels, the title's "
+            "logo, the notice before the prologue.",
+            "* The name-entry screen: its grid of kana and letters is the program's table the player picks "
+            "the hero's name from; a name entered there is kana."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2788,10 +2855,11 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
-                   "mapl": mapl_notes, "aas": aas_notes}[cfg["encoding"]](
+                   "mapl": mapl_notes, "aas": aas_notes,
+                   "eqa": eqa_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

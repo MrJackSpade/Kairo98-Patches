@@ -3921,5 +3921,39 @@
    "A forced cut (OPENING.SCP's first part about 400 bytes, the rest in OPENING2.SCP), the opening clicked through",
    "OK: the last message of the first part, then the first of OPENING2.SCP, the scene, name and window kept"
   ]
+ ],
+ "love_escalator": [
+  [
+   "Boot from the hard disk (LOVE.BAT: EQAP32 STARTUP), the title menu, Down and Enter on NEW GAME",
+   "OK: the menu (its labels drawn in the picture); the name-entry screen, its 決定 clicked and the confirmation passed with Enter"
+  ],
+  [
+   "The prologue (PR.EQA), Enter after each message",
+   "OK: the messages in filler half-width (letter pairs), broken between words at the window's edge"
+  ],
+  [
+   "The first scene (ST041A.EQA)",
+   "OK: the speakers' labels (their slot strings in filler, cut to their room; the hero's label as entered, kana) before the messages' filler"
+  ],
+  [
+   "The program's menu (a right click in the scene)",
+   "OK: its items in filler (pairs), the first highlighted"
+  ],
+  [
+   "ADDITIONAL MANUAL from the title menu: its menu, then a help page (the 74×12 window)",
+   "OK: the items in filler (past their room, as reported, running beyond the box); the page's filler broken between words in the window"
+  ],
+  [
+   "A forced cut (PR.EQA's first part about 900 bytes, the rest in PR2.EQA), the prologue clicked through",
+   "OK: m02464, the first part's last message, then m02465, the first of PR2.EQA, the scene kept"
+  ],
+  [
+   "The endings' hub split (ERE.EQA, its last scenes in ERE2.EQA): a test start calling ERE with var 00 at the table entry of a scene in ERE2",
+   "OK: ERE2's first scene's messages (m01677 on), its speaker's label, page after page"
+  ],
+  [
+   "A page break: the pseudo build's one paged message (m12333) in place of PR.EQA's first, in the game's flow",
+   "OK: four lines, a click, the rest on a new page, a click, the next message"
+  ]
  ]
 }
