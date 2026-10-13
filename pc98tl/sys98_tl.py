@@ -30,18 +30,22 @@ import os
 import re
 import struct
 
-from . import lzexe, sys98
+from . import exepack, lzexe, sys98
 from .alice_sys2_tl import sha256
 from .text import pseudo
 
 PREFIX = {"msg": "m", "menu": "i", "label": "l", "name": "n", "console": "c"}
 MENU_WIDTH = 40   # a window narrower than this (in cells) holds a menu or a title, a line an item
+#                   (game.json "menu_width" for another game's)
 NAME_ROOM = 79
+FM_ROOM = 0xC400  # SYS98FM.EXE's buffer for a script (it reads the whole member)
 TOKEN = re.compile(r"\{C(\d+)\}|\{X([0-9A-F]{2,4})\}")
 SUBST = {"…": "...", "’": "'", "‘": "'", "“": '"', "”": '"', "—": "-", "–": "-"}
 # a line printed through int DCh: mov dx, the line / mov ah, 1 / mov cl, 10h / int DCh, ds set before it
 # (push the segment / pop ds)
 CONSOLE_SIG = re.compile(rb"\xba(..)\xb4\x01\xb1\x10\xcd\xdc", re.S)
+# SYS98FM.EXE's: push the segment / pop ds / mov dx, the line / mov ah, 9 / int 21h
+CONSOLE_FM_SIG = re.compile(rb"\x68(..)\x1f\xba(..)\xb4\x09\xcd\x21", re.S)
 SEG_SIG = re.compile(rb"\x68(..)\x1f", re.S)
 
 
@@ -63,29 +67,47 @@ class Game:
             if name.endswith(".CAT") and name[:-4] + ".LIB" in self.files:
                 self.cats.append((name, sys98.Catalog(vol.read(self.files[name]),
                                                       vol.read(self.files[name[:-4] + ".LIB"]))))
+        self.fm = cfg.get("engine") == "fm"
+        ext = cfg.get("script_ext", ".s")
         self.where = {}
         for cname, cat in self.cats:
             for m in cat.names():
-                if m.lower().endswith(".s") and m.upper() not in self.where:
+                if m.lower().endswith(ext) and m.upper() not in self.where:
+                    if ext != ".s" and cat.read(m)[:sys98.SCRIPT_BASE] != bytes(sys98.SCRIPT_BASE):
+                        continue            # (a picture of the same extension)
                     self.where[m.upper()] = (cname, m)
         self.scripts = {}
         for key, (cname, m) in sorted(self.where.items()):
             raw = vol.read(self.files[key]) if key in self.files else dict(self.cats)[cname].read(m)
             self.scripts[m] = sys98.decode(raw)
-        self.sub = cfg["sub_script"]
+        self.sub = cfg.get("sub_script")
+        self.ops = sys98.OPS_FM if self.fm else None
+        self.room = FM_ROOM if self.fm else sys98.SCRIPT_ROOM
+        self.control = sys98.CONTROL_FM if self.fm else None
 
     def org(self, name):
-        return 0x4000 if name.lower() == self.sub.lower() else 0
+        return 0x4000 if self.sub and name.lower() == self.sub.lower() else 0
+
+    def program(self):
+        """(the program as unpack() gives it, the patch for it)"""
+        raw = self.vol.read(self.files[self.cfg["program"].upper()])
+        if self.fm:
+            return sys98.mz_unpack(exepack.unpack(raw) if exepack.is_packed(raw) else raw), \
+                sys98.patch_program_fm
+        return lzexe.unpack(raw), sys98.patch_program
 
     def walks(self):
         ext, out = set(), {}
         for n, d in self.scripts.items():
             if self.org(n) == 0:
-                out[n] = sys98.walk(d)
+                out[n] = sys98.walk(d, ops_table=self.ops)
+                if self.fm:                 # (again, its switch tables ending where a text begins)
+                    texts = {t for _a, k, t in out[n][1] if k in ("text", "string")}
+                    out[n] = sys98.walk(d, ops_table=self.ops, barriers=texts)
                 ext |= {t for _a, k, t in out[n][1] if k == "extern"}
         for n, d in self.scripts.items():
             if self.org(n):
-                out[n] = sys98.walk(d, self.org(n), sorted(ext))
+                out[n] = sys98.walk(d, self.org(n), sorted(ext), ops_table=self.ops)
         return out
 
 
@@ -96,10 +118,10 @@ def _char(raw):
         return "{X%s}" % raw.hex().upper()
 
 
-def split(d, i):
+def split(d, i, control=None):
     """(prefix bytes, visible text, suffix bytes, [inner control bytes]) of the text at i: the
     controls before its first character and after its last outside, the others tokens."""
-    at = sys98.atoms(d, i)
+    at = sys98.atoms(d, i, control)
     a, b = 0, len(at)
     while a < b and at[a][0] not in "ta":
         a += 1
@@ -192,15 +214,23 @@ def texts(game, walks, wins):
                 out.append((n, "name", t, o, None))
             elif op == 0x15:
                 win = d[o - org + 2] & 0x0F
-                out.append((n, "msg" if wins.get(win, (66, 4))[0] >= MENU_WIDTH else "menu", t, o, win))
+                out.append((n, "msg" if wins.get(win, (66, 4))[0] >= game.cfg.get("menu_width", MENU_WIDTH)
+                            else "menu", t, o, win))
             else:
                 out.append((n, "label", t, o, None))
     return out
 
 
 def console_lines(prog_image):
-    """[(start, end)]: the program's lines it prints through int DCh (a "$" ends each), image offsets."""
+    """[(start, end)]: the program's lines it prints through int DCh (SYS98FM: int 21h; a "$" ends
+    each), image offsets."""
     out = set()
+    for m in CONSOLE_FM_SIG.finditer(prog_image):
+        seg, off = struct.unpack("<HH", m.group(1) + m.group(2))
+        s = seg * 16 + off
+        e = prog_image.find(b"$", s)
+        if 0 < e and re.search(rb"[\x81-\x9f\xe0-\xfc]", prog_image[s:e]):
+            out.add((s, e))
     for m in CONSOLE_SIG.finditer(prog_image):
         segs = list(SEG_SIG.finditer(prog_image, max(0, m.start() - 32), m.start()))
         if not segs:
@@ -246,7 +276,7 @@ def run_extract(here, src):
         if note:
             merged[key]["note"] = note
         order.append(key)
-    prog = lzexe.unpack(vol.read(game.files[cfg["program"].upper()]))["image"]
+    prog = game.program()[0]["image"]
     for s, e in console_lines(prog):
         _p, vis, _s = console_split(prog[s:e])
         add("console", vis, "%s:%05x" % (cfg["program"], s), len(prog[s:e]) - len(_p) - len(_s),
@@ -258,7 +288,7 @@ def run_extract(here, src):
             continue
         done.add((n, t))
         d = game.scripts[n]
-        _p, vis, _s, _i = split(d, t - game.org(n))
+        _p, vis, _s, _i = split(d, t - game.org(n), game.control)
         if not _visible(vis):
             continue
         ref = "%s:%04x" % (n, t)
@@ -341,7 +371,11 @@ def build_script(game, n, walks, wins, by_ref, ids, rooms, warn, ratio=1.0):
     org = game.org(n)
     ops, refs = walks[n]
     new = {}
-    for nm, kind, t, o, win in texts(game, walks, wins):
+    if not hasattr(game, "_texts"):         # (the texts of every script, found once)
+        game._texts = {}
+        for item in texts(game, walks, wins):
+            game._texts.setdefault(item[0], []).append(item)
+    for nm, kind, t, o, win in game._texts.get(n, []):
         if nm != n or t in new:
             continue
         ref = "%s:%04x" % (n, t)
@@ -350,7 +384,7 @@ def build_script(game, n, walks, wins, by_ref, ids, rooms, warn, ratio=1.0):
             continue
         if ratio < 1.0:
             en = en[:max(4, int(len(en) * ratio))]
-        prefix, vis, suffix, inner = split(d, t - org)
+        prefix, vis, suffix, inner = split(d, t - org, game.control)
         page = None
         if kind == "msg":
             width, lines = wins.get(win, (76, 3))
@@ -369,7 +403,7 @@ def build_script(game, n, walks, wins, by_ref, ids, rooms, warn, ratio=1.0):
         new[t] = b
     if not new:
         return None
-    return sys98.rebuild(d, org, refs, new, keep_layout=bool(org))
+    return sys98.rebuild(d, org, refs, new, keep_layout=bool(org), room=game.room, control=game.control)
 
 
 def patch_console(prog, by_ref, ids, cfg, warn):
@@ -440,7 +474,7 @@ def run_patch(here, src, dst, mode="en"):
         except OverflowError as ex:
             if mode != "pseudo":
                 raise SystemExit("%s: %d bytes with its English, the program reads %d; shorten these "
-                                 "strings: %s" % (n, ex.args[0], sys98.SCRIPT_ROOM, ", ".join(sorted(
+                                 "strings: %s" % (n, ex.args[0], game.room, ", ".join(sorted(
                                      {ids[r] for r in by_ref if r.startswith(n + ":")}))))
             ratio, new = 1.0, None
             while new is None:
@@ -449,16 +483,17 @@ def run_patch(here, src, dst, mode="en"):
                     new = build_script(game, n, walks, wins, by_ref, ids, rooms, [], ratio)
                 except OverflowError:
                     continue
-            warn.append("%s: the filler was cut to %d%% to fit the script's 16 KB" % (n, int(ratio * 100)))
+            warn.append("%s: the filler was cut to %d%% to fit the script's room (%d bytes)" % (
+                n, int(ratio * 100), game.room))
         if new is not None and new != game.scripts[n]:
             changed[n] = new
     prog_path = game.files[cfg["program"].upper()]
-    p = lzexe.unpack(vol.read(prog_path))
+    p, patch = game.program()
     prog = patch_console(p["image"], by_ref, ids, cfg, warn)
     if changed or prog != p["image"]:
         write_archives(game, changed)
-        image, p["relocs"] = sys98.patch_program(prog, p["relocs"])
-        vol.write(prog_path, lzexe.build(p, image))
+        image, p["relocs"] = patch(prog, p["relocs"])
+        vol.write(prog_path, lzexe.build(p, image, keep_most=game.fm))
     for w_ in dict.fromkeys(warn):
         print("warning:", w_)
     img.save(dst)

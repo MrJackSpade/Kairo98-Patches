@@ -128,6 +128,15 @@ OPS = {
 }
 
 
+# SYS98FM.EXE (Gaogao! 3rd): the same ops but 2Eh, and these (lengths and pointers read off its handlers)
+OPS_FM = {k: v for k, v in OPS.items() if k != 0x2E}
+OPS_FM.update({
+    0x37: (4, {2: "file"}), 0x61: (4, {2: "file"}), 0x67: (10, {}), 0x84: (2, {}), 0x85: (2, {}),
+    0x86: (4, {2: "data"}), 0x87: (22, {}), 0x88: (8, {}), 0x89: (4, {2: "data"}), 0x8A: (10, {}),
+    0x8B: (8, {}), 0x8C: (2, {}), 0x8E: (2, {}), 0x29: (8, {}), 0x2A: (8, {}),
+})
+
+
 def decode(member):
     """A script as the program runs it: its bytes from 100h on XORed with 1 (op 1Fh's loader)."""
     d = bytearray(member)
@@ -143,7 +152,20 @@ encode = decode
 STOPS = {0x00, 0x0A, 0x13, 0x55, 0x1F, 0x7F}
 
 
-def walk(d, org=0, entries=()):
+def _probe(word, i, org, end, table):
+    """Whether the code at i runs on (op after op) to an op that stops without an unknown op."""
+    for _k in range(4096):
+        if not org + SCRIPT_BASE <= i <= end - 2 or word(i) not in table:
+            return False
+        op = word(i)
+        n = table[op][0]
+        if n is None or op in STOPS:
+            return True
+        i += n
+    return True
+
+
+def walk(d, org=0, entries=(), ops_table=None, barriers=()):
     """(ops {addr: (op, end)}, refs [(addr of the word, kind, target)]): the script's code, from 100h
     and every place a jump goes (the scripts keep their messages and data between the code too).
     Addresses are org + the offset in the file: a script is loaded at 0, the shared routines' script
@@ -162,20 +184,26 @@ def walk(d, org=0, entries=()):
             if not org + SCRIPT_BASE <= i <= end - 2:
                 raise ValueError("code at %x outside the script" % i)
             op = word(i)
-            if op not in OPS:
+            table = ops_table or OPS
+            if op not in table:
                 raise ValueError("op %02x at %x not known" % (op, i))
-            n, fields = OPS[op]
+            n, fields = table[op]
             if n is None:
                 # op 13h: the variable, then the table of targets: as many as run up to the lowest
                 # place one of them goes (the code after the table); 0 a case with none
                 j, low = i + 4, end
-                while j < low:
+                while j < low and j not in barriers:    # (barriers: texts a table cannot run into)
                     t = word(j)
                     if t == 0:
                         j += 2
                         continue
                     if not org + SCRIPT_BASE <= t < end:
                         break
+                    if ops_table is not None and not _probe(word, t, org, end, table):
+                        if j > i + 4:       # (past the first: the table has ended)
+                            break
+                        j += 2              # (SYS98FM: the first case never taken, pointing at data)
+                        continue
                     refs.append((j, "code", t))
                     work.append(t)
                     low = min(low, t)
@@ -203,7 +231,10 @@ CONTROL = {0x01: 0, 0x02: 0, 0x03: 1, 0x04: 1, 0x05: 2, 0x06: 1, 0x07: 1, 0x08: 
            0x0B: 1, 0x0C: 1, 0x0D: 0, 0x0E: 1}
 
 
-def atoms(d, i):
+CONTROL_FM = {**CONTROL, 0x07: 0, 0x0A: 0}     # SYS98FM.EXE's: 07h and 0Ah take no byte
+
+
+def atoms(d, i, control=None):
     """[(kind, bytes)] of the text at i up to its 00h (not included): "c" a control, "n" a new line
     (0Dh), "p" a new page (01h), "k" a key wait (02h), "t" a character (Shift-JIS, two bytes), "a" a
     byte the program draws half-width (an ASCII byte or a half-width kana)."""
@@ -217,7 +248,7 @@ def atoms(d, i):
             out.append(("c", d[i:i + n]))
             i += n
         elif b < 0x0F:
-            n = 1 + CONTROL[b]
+            n = 1 + (control or CONTROL)[b]
             out.append(({0x0D: "n", 0x01: "p", 0x02: "k"}.get(b, "c"), d[i:i + n]))
             i += n
         elif 0x81 <= b <= 0x9F or 0xE0 <= b <= 0xFC:
@@ -228,20 +259,20 @@ def atoms(d, i):
             i += 1
 
 
-def text_end(d, i):
+def text_end(d, i, control=None):
     """The offset after a text's 00h."""
-    return i + sum(len(r) for _k, r in atoms(d, i)) + 1
+    return i + sum(len(r) for _k, r in atoms(d, i, control)) + 1
 
 
-def rebuild(d, org, refs, new, keep_layout=False):
+def rebuild(d, org, refs, new, keep_layout=False, room=SCRIPT_ROOM, control=None):
     """The script with new texts: new {address of a text or a string: its bytes, without the 00h}.
     The old ones are cut out and what follows them moves up (every pointer in the script moved with
     it), the new ones go after the end; keep_layout (the shared routines' script, which the others call
-    by address): nothing moves, the new texts go after the end.  OverflowError past SCRIPT_ROOM."""
+    by address): nothing moves, the new texts go after the end.  OverflowError past room."""
     cuts = []
     if not keep_layout:
         for t in sorted(new):
-            s, e = t - org, text_end(d, t - org)
+            s, e = t - org, text_end(d, t - org, control)
             if cuts and s <= cuts[-1][1]:
                 cuts[-1][1] = max(cuts[-1][1], e)
             else:
@@ -266,13 +297,15 @@ def rebuild(d, org, refs, new, keep_layout=False):
     for t in sorted(new):
         at[t] = len(out)
         out += new[t] + b"\0"
+    if len(out) > room:
+        raise OverflowError(len(out))
     for a, kind, t in refs:
         w = moved(a - org)
         if kind.startswith("extern"):
             continue
         v = org + (at[t] if t in at else moved(t - org))
         struct.pack_into("<H", out, w, v)
-    if len(out) > SCRIPT_ROOM:
+    if len(out) > room:
         raise OverflowError(len(out))
     return bytes(out)
 
@@ -389,6 +422,119 @@ two:
                 struct.pack_into("<H", img, ins.address + 1, (moved[t] - (ins.address + 3)) & 0xFFFF)
     img[site:site + 4] = b"\xe9" + struct.pack("<H", (labs["hook"] - (site + 3)) & 0xFFFF) + b"\x90"
     # the ends' segment words were relocated; the new code has one (the push of the segment)
+    relocs = [r for r in relocs if not a01 <= r < end] + [labs["segw"] + 1]
+    return bytes(img), sorted(relocs)
+
+
+def mz_unpack(exe):
+    """unpack()'s result (pc98tl/lzexe.py) for a program not packed: its image, relocations, entry,
+    stack and memory."""
+    h = struct.unpack_from("<13H", exe, 0)
+    hdr = h[4] * 16
+    size = h[2] * 512 - ((512 - h[1]) if h[1] else 0) - hdr
+    relocs = [struct.unpack_from("<H", exe, h[12] + 4 * k + 2)[0] * 16 +
+              struct.unpack_from("<H", exe, h[12] + 4 * k)[0] for k in range(h[3])]
+    return {"image": exe[hdr:hdr + size], "relocs": relocs, "ip": h[10], "cs": h[11], "sp": h[8],
+            "ss": h[7], "memory": size + h[5] * 16, "most": size + h[6] * 16}
+
+
+# SYS98FM.EXE (Gaogao! 3rd): the ops' dispatch: cmp ax, 100h / jb +2 / xor ax, ax / add ax, ax /
+# add ax, table / mov bx, ax / jmp cs:[bx]; the ends print through DOS (int 21h, ah 9)
+DISPATCH_FM_SIG = re.compile(rb"\x3d\x00\x01\x72\x02\x33\xc0\x03\xc0\x05(..)\x8b\xd8\x2e\xff\x27", re.S)
+EXIT_FM_SIG = re.compile(rb"\xe8(..)\x68(..)\x1f\xba(..)\xb4\x09\xcd\x21\xb8\x01\x4c\xcd\x21"
+                         rb"\xe8(..)\x68(..)\x1f\xba(..)\xb4\x09\xcd\x21\xb8\x00\x4c\xcd\x21"
+                         rb"\xe8(..)\x50\xe8(..)\x68(..)\x1f\xba(..)\xb4\x09\xcd\x21\x58\xb4\x4c\xcd\x21",
+                         re.S)
+
+
+def patch_program_fm(image, relocs):
+    """patch_program for SYS98FM.EXE (not packed; its ends print through DOS): (image, relocs)."""
+    img = bytearray(image)
+    w = lambda a: struct.unpack_from("<H", img, a)[0]       # noqa: E731
+    mg, mc, md, me = (list(s.finditer(img)) for s in (GLYPH_SIG, CG_READ_SIG, DISPATCH_FM_SIG, EXIT_FM_SIG))
+    if len(mg) != 1 or len(md) != 1 or len(me) != 1 or not mc:
+        raise SystemExit("SYS98FM.EXE: the patch sites found %d, %d, %d, %d times" % (
+            len(mg), len(mc), len(md), len(me)))
+    site = mg[0].start() + 7
+    blank = (site + 4 + struct.unpack("<b", mg[0].group(1))[0]) & 0xFFFF
+    back = site + 4
+    cg = [m.start() for m in mc if m.start() > site][0]
+    table = struct.unpack("<H", md[0].group(1))[0]
+    e = me[0]
+    a01 = e.start()
+    a00 = a01 + 19
+    a7f = a00 + 19
+    end = e.end()
+    if w(table) != a00 or w(table + 2) != a01 or w(table + 2 * 0x7F) != a7f:
+        raise SystemExit("SYS98FM.EXE: the ends are not ops 00h, 01h and 7Fh")
+    rel = lambda at, g: (at + 3 + struct.unpack("<h", e.group(g))[0]) & 0xFFFF   # noqa: E731
+    restore, getvar = rel(a01, 1), rel(a7f, 7)
+    seg, msg01, msg00 = w(a01 + 4), w(a01 + 7), w(a00 + 7)
+    if rel(a00, 4) != restore or w(a00 + 4) != seg or w(a7f + 11) != msg00:
+        raise SystemExit("SYS98FM.EXE: the ends differ")
+    src = """
+e01:
+    .byte 0x6a, 0x01
+    .byte 0x68, {m01_lo}, {m01_hi}
+    jmp common
+e7f:
+    CALLN {getvar}
+    push ax
+    jmp t
+e00:
+    .byte 0x6a, 0x00
+t:
+    .byte 0x68, {m00_lo}, {m00_hi}
+common:
+    CALLN {restore}
+    pop dx
+segw:
+    .byte 0x68, {seg_lo}, {seg_hi}
+    pop ds
+    mov ah, 9
+    int 0x21
+    pop ax
+    mov ah, 0x4c
+    int 0x21
+hook:
+    cmp al, 0x80
+    jae two
+    cmp al, 0x20
+    jbe none
+    mov cl, al
+    mov ax, 0x290b
+    out 0x68, al
+    mov al, cl
+    JMPN {cg}
+none:
+    JMPN {blank}
+two:
+    JMPN {back}
+""".format(getvar=hex(getvar), restore=hex(restore), cg=hex(cg), blank=hex(blank), back=hex(back),
+           seg_lo=hex(seg & 0xFF), seg_hi=hex(seg >> 8), m01_lo=hex(msg01 & 0xFF), m01_hi=hex(msg01 >> 8),
+           m00_lo=hex(msg00 & 0xFF), m00_hi=hex(msg00 >> 8))
+    code, labs = _asm16(src, a01, ["e01", "e00", "e7f", "hook", "segw"])
+    if a01 + len(code) > end or labs["e01"] != a01:
+        raise SystemExit("SYS98FM.EXE: the hook does not fit (%d bytes, %d)" % (len(code), end - a01))
+    img[a01:a01 + len(code)] = code
+    img[a01 + len(code):end] = b"\x90" * (end - a01 - len(code))
+    for k in range(0x100):
+        v = w(table + 2 * k)
+        if v == a00:
+            struct.pack_into("<H", img, table + 2 * k, labs["e00"])
+        elif v == a7f:
+            struct.pack_into("<H", img, table + 2 * k, labs["e7f"])
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    md16 = Cs(CS_ARCH_X86, CS_MODE_16)
+    md16.skipdata = True
+    moved = {a00: labs["e00"], a7f: labs["e7f"]}
+    for ins in md16.disasm(bytes(image[:seg * 16]), 0):
+        if ins.mnemonic in ("jmp", "call") and ins.size == 3 and ins.bytes[0] in (0xE8, 0xE9) \
+                and not a01 <= ins.address < end:
+            t = (ins.address + 3 + struct.unpack_from("<h", image, ins.address + 1)[0]) & 0xFFFF
+            if t in moved:
+                struct.pack_into("<H", img, ins.address + 1, (moved[t] - (ins.address + 3)) & 0xFFFF)
+    img[site:site + 4] = b"\xe9" + struct.pack("<H", (labs["hook"] - (site + 3)) & 0xFFFF) + b"\x90"
     relocs = [r for r in relocs if not a01 <= r < end] + [labs["segw"] + 1]
     return bytes(img), sorted(relocs)
 

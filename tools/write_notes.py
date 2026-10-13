@@ -1539,16 +1539,21 @@ def sys98_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    fm = cfg.get("engine") == "fm"
+    ext = cfg.get("script_ext", ".s")
+    shared = ("  The shared routines' script (`%s`, loaded 4000h above the others, which call it) keeps its "
+              "layout." % cfg["sub_script"]) if cfg.get("sub_script") else ""
     out += ["", "## Engine", "",
-            "four nine's System-98 (`%s`, packed with LZEXE): the scripts (`*.s`, the bytes after 100h XORed "
+            "four nine's System-98 (`%s`, packed with %s): the scripts (`*%s`%s, the bytes after 100h XORed "
             "with 1) are members of the `DISK_?.LIB` archives, listed in the `DISK_?.CAT` catalogs, both "
             "LZSS-compressed; a script on its own next to the archives is the one the program reads.  A script is "
             "16-bit ops with their messages and data between them; the patcher walks the code from its start and "
             "every jump (the ops' lengths and pointers read off the program's own routines) and finds every "
-            "pointer to a message, a name, a file or data.  The shared routines' script (`%s`, loaded 4000h above "
-            "the others, which call it) keeps its layout.  `pc98tl/sys98.py` documents the formats, "
+            "pointer to a message, a name, a file or data.%s  `pc98tl/sys98.py` documents the formats, "
             "`pc98tl/sys98_tl.py` the English.  Unchanged files rebuild byte for byte." % (
-                cfg["program"], cfg["sub_script"]), "",
+                cfg["program"], "EXEPACK" if fm else "LZEXE", ext,
+                " (those that begin with 100h zero bytes; the others are pictures)" if ext != ".s" else "",
+                shared), "",
             "* The program is written unpacked and patched: an ASCII byte, which it drew as a blank, is drawn from "
             "the kanji ROM's half-width row, one cell, so English takes a byte a letter.  The hook's code sits "
             "where the program's three exits were; they share one tail now, each still printing its line and "
@@ -1564,9 +1569,11 @@ def sys98_notes(name, cfg, doc, adult, clear, tests, extra):
                "%d of %d strings have English so far." % (done, len(strings)))
     out += ["", "## Limits", "",
             "* Messages (`m` ids, `max_cells` the window's width): any length.  `\\n` in the English forces a new "
-            "line.  A script with its English may take 16 KB (the program reads that much); a longer build is "
-            "refused and names the script and its strings.  The fullest scripts are close to that already, so "
-            "their English must stay about as long in bytes as the Japanese (two bytes a character, one a letter).",
+            "line.  A script with its English may take %s (the program reads that much); a longer build is "
+            "refused and names the script and its strings.%s" % (
+                "49 KB (C400h bytes)" if fm else "16 KB",
+                "" if fm else "  The fullest scripts are close to that already, so their English must stay about "
+                "as long in bytes as the Japanese (two bytes a character, one a letter)."),
             "* Menus (`i` ids): one item a line, at most `max_cells` (the window's width), no more lines than the "
             "Japanese; past it reported.",
             "* Speakers' names (`n` ids): the program keeps 79 bytes; past them cut and reported.",

@@ -1,0 +1,12 @@
+{
+ "title": "Gaogao! 3rd - Wild Force",
+ "key": "FourNine.zip/Gaogao! 3rd - Wild Force",
+ "image": "Gaogao! 3rd - Wild Force\\Gaogao! 3rd - Wild Force [HD]\\Gaogao! 3rd - Wild Force.hdi",
+ "encoding": "sys98",
+ "program": "SYS98FM.EXE",
+ "game_dir": "GAO3",
+ "boot_steps": "20:shot,10:shot,1:enter,8:shot,1:enter,8:shot,1:enter,6:shot,1:enter,6:shot,1:enter,6:shot,1:enter,6:shot",
+ "engine": "fm",
+ "script_ext": ".lsp",
+ "menu_width": 30
+}

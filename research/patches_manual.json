@@ -2597,5 +2597,18 @@
    "url": "https://vndb.org/v736",
    "source": "VNDB"
   }
+ ],
+ "FourNine.zip/Gaogao! 3rd - Wild Force": [
+  {
+   "label": "This repo: games/gaogao_3rd (patcher working, machine translation in progress)",
+   "url": "../games/gaogao_3rd/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8696",
+   "url": "https://vndb.org/v8696",
+   "source": "VNDB"
+  }
  ]
 }

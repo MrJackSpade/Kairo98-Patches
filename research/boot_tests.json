@@ -4001,5 +4001,15 @@
    "Clicked on past the cards into the first room scene (M1_00.DSD)",
    "OK: the speaker's name and the messages' filler inside the scene's message box, a new page when it is full"
   ]
+ ],
+ "gaogao_3rd": [
+  [
+   "Boot from the hard disk (GAO3.BAT: SYS98FM.EXE config.lsp, then WF_OPEN.LSP): the sound menu, the title menu",
+   "OK: the items in filler half-width (the patched program drawing ASCII from the ROM's half-width row), one a line in their windows"
+  ],
+  [
+   "New game, Enter on: the opening (OVERTURE), its speech bubble, the message window, the command menu",
+   "OK: the bubble's filler beside the face inside its frame; the messages broken between words at the 66-cell window; the menu's items one a line"
+  ]
  ]
 }

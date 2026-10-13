@@ -391,5 +391,10 @@
   "remarks": [
    "Not reached in this test: a mahjong match (SONNET.EXE, TYPHON.EXE), the save and load screens, the endings."
   ]
+ },
+ "gaogao_3rd": {
+  "remarks": [
+   "Not reached in this test: the battles past the opening, the save and load screens, the endings."
+  ]
  }
 }

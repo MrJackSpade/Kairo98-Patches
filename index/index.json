@@ -94585,15 +94585,27 @@
      "path": "Gaogao! 3rd - Wild Force\\Gaogao! 3rd - Wild Force [HD]\\Gaogao! 3rd - Wild Force.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/gaogao_3rd (patcher working, machine translation in progress)",
+     "url": "../games/gaogao_3rd/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8696",
+     "url": "https://vndb.org/v8696",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17697 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FourNine.zip/Gaogao! Optional Disk",
