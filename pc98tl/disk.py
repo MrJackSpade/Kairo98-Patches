@@ -133,12 +133,13 @@ class FatVolume:
             data += self.buf[o:o + self.cluster_size]
         return bytes(data[:ent["size"]])
 
-    def create(self, path, data):
-        """Create (or overwrite) a file with an 8.3 name in an existing directory."""
+    def create(self, path, data, contiguous=False):
+        """Create (or overwrite) a file with an 8.3 name in an existing directory (`contiguous`: in
+        one run of clusters, `write_run`)."""
         parts = [p for p in path.replace("\\", "/").split("/") if p]
         try:
             self.find(path)
-            return self.write(path, data)
+            return self.write_run(path, data) if contiguous else self.write(path, data)
         except FileNotFoundError:
             pass
         name, _, ext = parts[-1].upper().partition(".")
@@ -159,7 +160,10 @@ class FatVolume:
         entry[0:11] = name.encode("cp932").ljust(8) + ext.encode("cp932").ljust(3)
         entry[11] = 0x20  # archive
         self.buf[slot:slot + 32] = entry
-        self.write(path, data)
+        if contiguous:
+            self.write_run(path, data)
+        else:
+            self.write(path, data)
 
     def mkdir(self, path):
         """Create a directory (8.3 name) in an existing directory."""
@@ -191,6 +195,48 @@ class FatVolume:
         for c in (self.chain(ent["cluster"]) if ent["cluster"] else []):
             self._set(c, 0)
         self.buf[ent["entry_off"]] = 0xE5
+
+    def release(self, path):
+        """Free a file's clusters, leaving it empty (to be written again)."""
+        ent = self.find(path)
+        for c in (self.chain(ent["cluster"]) if ent["cluster"] else []):
+            self._set(c, 0)
+        e = ent["entry_off"]
+        struct.pack_into("<H", self.buf, e + 26, 0)
+        struct.pack_into("<I", self.buf, e + 28, 0)
+
+    def write_run(self, path, data):
+        """Replace an existing file's contents in one run of clusters (for a loader that reads a file
+        as consecutive clusters): its own run when that holds it, grown into free clusters after
+        it, else the first free run that holds it."""
+        ent = self.find(path)
+        old = self.chain(ent["cluster"]) if ent["cluster"] else []
+        need = max(1, (len(data) + self.cluster_size - 1) // self.cluster_size)
+        run = None
+        if old and old == list(range(old[0], old[0] + len(old))):
+            ext = [old[0] + k for k in range(len(old), need)]
+            if all(c < self.nclusters + 2 and self._get(c) == 0 for c in ext):
+                run = old[0]
+        for c in old:
+            self._set(c, 0)
+        if run is None:
+            free = 0
+            for c in range(2, self.nclusters + 2):
+                free = free + 1 if self._get(c) == 0 else 0
+                if free == need:
+                    run = c - need + 1
+                    break
+            if run is None:
+                raise IOError("no run of %d free clusters for %s" % (need, path))
+        keep = list(range(run, run + need))
+        for i, c in enumerate(keep):
+            self._set(c, keep[i + 1] if i + 1 < len(keep) else 0xFFF if self.fat12 else 0xFFFF)
+            chunk = data[i * self.cluster_size:(i + 1) * self.cluster_size]
+            o = self._coff(c)
+            self.buf[o:o + self.cluster_size] = chunk.ljust(self.cluster_size, b"\0")
+        e = ent["entry_off"]
+        struct.pack_into("<H", self.buf, e + 26, keep[0])
+        struct.pack_into("<I", self.buf, e + 28, len(data))
 
     def write(self, path, data):
         """Replace an existing file's contents, growing/shrinking its chain."""

@@ -1,0 +1,14 @@
+{
+ "title": "Koihime - Mystic Princess",
+ "key": "Silkys.zip/Koihime - Mystic Princess",
+ "image": "Koihime - Mystic Princess\\Koihime - Mystic Princess [FD]\\Koihime - Mystic Princess (Disk A).hdm",
+ "disks": [
+  "Koihime - Mystic Princess (Disk B).hdm",
+  "Koihime - Mystic Princess (Disk C).hdm",
+  "Koihime - Mystic Princess (Disk D).hdm",
+  "Koihime - Mystic Princess (Disk E).hdm"
+ ],
+ "encoding": "igs",
+ "program": "IGS.EXE",
+ "boot_steps": "15:shot,10:enter,12:shot,1:enter,5:shot,2:enter,3:shot,2:enter,4:shot,3:enter,3:enter,3:enter,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot,4:enter,1:shot"
+}

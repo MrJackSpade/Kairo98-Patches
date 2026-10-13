@@ -188843,15 +188843,27 @@
      "path": "Koihime - Mystic Princess\\Koihime - Mystic Princess [HD]\\Koihime - Mystic Princess.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/koihime (patcher working, machine translation in progress)",
+     "url": "../games/koihime/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v2347",
+     "url": "https://vndb.org/v2347",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17786 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Silkys.zip/Marine Buster",

@@ -3955,5 +3955,23 @@
    "A page break: the pseudo build's one paged message (m12333) in place of PR.EQA's first, in the game's flow",
    "OK: four lines, a click, the rest on a new page, a click, the next message"
   ]
+ ],
+ "koihime": [
+  [
+   "Boot from floppies A and B (IGS-DOS, IGS OP.DIA): the monitor menu, the title menu",
+   "OK: the items in filler half-width, turned on their sides in the vertical menus, the menus sized to them"
+  ],
+  [
+   "The name prompt and the name-entry screen (START.DIA)",
+   "OK: the prompt's filler in the vertical box; the entry's captions in filler (past their room, as reported)"
+  ],
+  [
+   "The prologue (OPEN.DIA), Enter after each message",
+   "OK: the speaker's label, the messages' filler in the box's six columns, broken between words, a new page after a click when the box is full"
+  ],
+  [
+   "A test start of the first scene (START loading S11.DIA), S11.DIA split by force into three files by its routine's bodies; the command menus chosen with Left and Enter",
+   "OK: the commands' replies kept only in S11_2.DIA shown (m01302 on), the part's file entered at the body, the scene's opening not shown again"
+  ]
  ]
 }

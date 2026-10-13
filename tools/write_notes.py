@@ -2324,6 +2324,75 @@ def eqa_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def igs_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "item": "menu items", "label": "other strings the scripts draw"}
+    out = ["# %s%s (Silky's)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` and the other disks beside it (sha256 of the first in `strings.json`)."
+           % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`%s`, Silky's \"Image Gaming System\" (1995, by spinout; IGS-DOS on five floppies): the `*.DIA` "
+            "scripts are a stack machine's code with their strings in a data part.  The patcher packs the "
+            "English into the room the Japanese strings leave (moving the pushes of their addresses), and "
+            "adds routines after the code; a script past its 32 KB segment is split into further files "
+            "(`NAME_2.DIA`): its main routine's parts, or a looping routine's bodies (entered through a "
+            "byte of the saved state, 700h), each file with the strings it uses.  IGS-DOS reads a file as "
+            "one run of clusters, so every file written is one run.  `pc98tl/igs.py` documents the format, "
+            "`pc98tl/igs_tl.py` the English.  Unchanged files rebuild byte for byte." % cfg["program"], "",
+            "* The program draws half-width letters itself: in its vertical windows (the message box at "
+            "the right, the menus) turned on their sides, read downwards.  The message box is given six "
+            "columns 18 dots apart instead of four 27 apart (the same box).",
+            "* The scripts' width routine counts a letter as one cell (it counted 0), so a menu is sized "
+            "to its English items.",
+            "* The game is played with the keyboard or the mouse; in a vertical menu Left moves to the next "
+            "item."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids, `max_cells` the letters a line holds; the note gives the lines): any "
+            "length.  The message box holds 41 letters a column and six columns.  A scene's strings are "
+            "drawn one after another until the script clears the window; the patcher breaks the English "
+            "between words, and when the window is full starts a new page (a click, the window cleared), "
+            "a message that no longer fits from a new page.  A message whose Japanese ends in a new line "
+            "keeps it (the next string starts a new line).  `\\n` forces a new line.",
+            "* Tokens: keep them.  `{N}` / `{M}` the hero's names; `{DF0}`... a number the program fills "
+            "in; `{S0}` / `{S1}` the program's text style.  A reading over kanji shows as kanji《reading》 "
+            "in the Japanese; English has none.",
+            "* Menu items (`i` ids): one column, %d letters at most; past it reported." % 40,
+            "* Other strings (`l` ids: a page's title, the name entry's captions): `max_cells` the "
+            "Japanese's width; past it reported.",
+            "* English is ASCII; \"$\" and \"%\" (the program's codes) are written full-width; another "
+            "character full-width when Shift-JIS has it, else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the logo).",
+            "* The name-entry screen's grid of kana (a table the scripts index): a name entered there is "
+            "kana."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -2855,11 +2924,11 @@ def main():
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
             continue
-        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa"):
+        if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
-                   "eqa": eqa_notes}[cfg["encoding"]](
+                   "eqa": eqa_notes, "igs": igs_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
