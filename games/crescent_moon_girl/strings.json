@@ -1605,7 +1605,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "幸福のノート",
-   "en": "Joy Notes",
+   "en": "",
    "refs": [
     "p00:0175",
     "b:p39:1849"
@@ -1616,7 +1616,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "不幸のノート",
-   "en": "Woe Notes",
+   "en": "",
    "refs": [
     "p00:0183",
     "b:p39:1857"
@@ -1627,7 +1627,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "妖かしのノート",
-   "en": "Eerie Notes",
+   "en": "",
    "refs": [
     "p00:0191",
     "b:p39:1865"
@@ -2098,7 +2098,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "変更点（ＰＣ－９８）",
-   "en": "PC-98 Changes",
+   "en": "",
    "refs": [
     "p01:000f",
     "p01:0337",
@@ -2111,7 +2111,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "シロさんの開発記",
-   "en": "Shiro's Dev Log",
+   "en": "",
    "refs": [
     "p01:0027",
     "p01:034f",
@@ -2124,7 +2124,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "スタッフ紹介",
-   "en": "Staff Intro",
+   "en": "",
    "refs": [
     "p01:0038",
     "p01:0360",
@@ -2137,7 +2137,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "戻る",
-   "en": "Back",
+   "en": "",
    "refs": [
     "p01:0048",
     "p01:0370",
@@ -9198,7 +9198,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "責任をとる",
-   "en": "Own Up",
+   "en": "",
    "refs": [
     "p49:0bff"
    ],
@@ -9208,7 +9208,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "逃げる",
-   "en": "Flee",
+   "en": "",
    "refs": [
     "p49:0c0a"
    ],
@@ -9957,7 +9957,7 @@
    "id": "v00001",
    "kind": "verb",
    "jp": "プロローグ",
-   "en": "Prologue",
+   "en": "",
    "refs": [
     "verb:0"
    ],
@@ -9967,7 +9967,7 @@
    "id": "v00002",
    "kind": "verb",
    "jp": "ゲーム",
-   "en": "Game",
+   "en": "",
    "refs": [
     "verb:1"
    ],
@@ -9977,7 +9977,7 @@
    "id": "v00003",
    "kind": "verb",
    "jp": "ロード",
-   "en": "Load",
+   "en": "",
    "refs": [
     "verb:2"
    ],
@@ -9987,7 +9987,7 @@
    "id": "v00004",
    "kind": "verb",
    "jp": "アリスの館",
-   "en": "Alice's Mansion",
+   "en": "",
    "refs": [
     "verb:3"
    ],
@@ -9997,7 +9997,7 @@
    "id": "v00005",
    "kind": "verb",
    "jp": "聞く・話す",
-   "en": "Talk/Listen",
+   "en": "",
    "refs": [
     "verb:4"
    ],
@@ -10007,7 +10007,7 @@
    "id": "v00006",
    "kind": "verb",
    "jp": "移動",
-   "en": "Move",
+   "en": "",
    "refs": [
     "verb:5"
    ],
@@ -10017,7 +10017,7 @@
    "id": "v00007",
    "kind": "verb",
    "jp": "見る",
-   "en": "Look",
+   "en": "",
    "refs": [
     "verb:6"
    ],
@@ -10027,7 +10027,7 @@
    "id": "v00008",
    "kind": "verb",
    "jp": "逃げる",
-   "en": "Flee",
+   "en": "",
    "refs": [
     "verb:7"
    ],
@@ -10037,7 +10037,7 @@
    "id": "v00009",
    "kind": "verb",
    "jp": "入る",
-   "en": "Enter",
+   "en": "",
    "refs": [
     "verb:8"
    ],
@@ -10047,7 +10047,7 @@
    "id": "v00010",
    "kind": "verb",
    "jp": "出る",
-   "en": "Exit",
+   "en": "",
    "refs": [
     "verb:9"
    ],
@@ -10057,7 +10057,7 @@
    "id": "v00011",
    "kind": "verb",
    "jp": "使う",
-   "en": "Use",
+   "en": "",
    "refs": [
     "verb:10"
    ],
@@ -10067,7 +10067,7 @@
    "id": "v00012",
    "kind": "verb",
    "jp": "渡す",
-   "en": "Give",
+   "en": "",
    "refs": [
     "verb:11"
    ],
@@ -10077,7 +10077,7 @@
    "id": "v00013",
    "kind": "verb",
    "jp": "買う",
-   "en": "Buy",
+   "en": "",
    "refs": [
     "verb:12"
    ],
@@ -10087,7 +10087,7 @@
    "id": "v00014",
    "kind": "verb",
    "jp": "ほめる",
-   "en": "Praise",
+   "en": "",
    "refs": [
     "verb:13"
    ],
@@ -10097,7 +10097,7 @@
    "id": "v00015",
    "kind": "verb",
    "jp": "開ける",
-   "en": "Open",
+   "en": "",
    "refs": [
     "verb:14"
    ],
@@ -10107,7 +10107,7 @@
    "id": "v00016",
    "kind": "verb",
    "jp": "脱がす",
-   "en": "Undress",
+   "en": "",
    "refs": [
     "verb:15"
    ],
@@ -10117,7 +10117,7 @@
    "id": "v00017",
    "kind": "verb",
    "jp": "さわる",
-   "en": "Touch",
+   "en": "",
    "refs": [
     "verb:16"
    ],
@@ -10127,7 +10127,7 @@
    "id": "v00018",
    "kind": "verb",
    "jp": "取る",
-   "en": "Take",
+   "en": "",
    "refs": [
     "verb:17"
    ],
@@ -10137,7 +10137,7 @@
    "id": "v00019",
    "kind": "verb",
    "jp": "ヤル",
-   "en": "Do It",
+   "en": "",
    "refs": [
     "verb:18"
    ],
@@ -10147,7 +10147,7 @@
    "id": "v00020",
    "kind": "verb",
    "jp": "考える",
-   "en": "Think",
+   "en": "",
    "refs": [
     "verb:19"
    ],
@@ -10157,7 +10157,7 @@
    "id": "v00021",
    "kind": "verb",
    "jp": "持ち物",
-   "en": "Items",
+   "en": "",
    "refs": [
     "verb:20"
    ],
@@ -10167,7 +10167,7 @@
    "id": "v00022",
    "kind": "verb",
    "jp": "セーブ",
-   "en": "Save",
+   "en": "",
    "refs": [
     "verb:21"
    ],
@@ -10177,7 +10177,7 @@
    "id": "o00001",
    "kind": "obj",
    "jp": "*",
-   "en": "*",
+   "en": "",
    "refs": [
     "obj:0"
    ],
@@ -10187,7 +10187,7 @@
    "id": "o00002",
    "kind": "obj",
    "jp": "おじさん",
-   "en": "Mister",
+   "en": "",
    "refs": [
     "obj:1"
    ],
@@ -10197,7 +10197,7 @@
    "id": "o00003",
    "kind": "obj",
    "jp": "女の子",
-   "en": "Girl",
+   "en": "",
    "refs": [
     "obj:2"
    ],
@@ -10207,7 +10207,7 @@
    "id": "o00004",
    "kind": "obj",
    "jp": "子供",
-   "en": "Child",
+   "en": "",
    "refs": [
     "obj:3"
    ],
@@ -10217,7 +10217,7 @@
    "id": "o00005",
    "kind": "obj",
    "jp": "おばさん",
-   "en": "Lady",
+   "en": "",
    "refs": [
     "obj:4"
    ],
@@ -10227,7 +10227,7 @@
    "id": "o00006",
    "kind": "obj",
    "jp": "光",
-   "en": "Light",
+   "en": "",
    "refs": [
     "obj:5"
    ],
@@ -10237,7 +10237,7 @@
    "id": "o00007",
    "kind": "obj",
    "jp": "アケミ",
-   "en": "Akemi",
+   "en": "",
    "refs": [
     "obj:6"
    ],
@@ -10247,7 +10247,7 @@
    "id": "o00008",
    "kind": "obj",
    "jp": "智津",
-   "en": "Chizu",
+   "en": "",
    "refs": [
     "obj:7"
    ],
@@ -10257,7 +10257,7 @@
    "id": "o00009",
    "kind": "obj",
    "jp": "靖美",
-   "en": "Yasumi",
+   "en": "",
    "refs": [
     "obj:8"
    ],
@@ -10267,7 +10267,7 @@
    "id": "o00010",
    "kind": "obj",
    "jp": "優子",
-   "en": "Yuko",
+   "en": "",
    "refs": [
     "obj:9"
    ],
@@ -10277,7 +10277,7 @@
    "id": "o00011",
    "kind": "obj",
    "jp": "沙矢華",
-   "en": "Sayaka",
+   "en": "",
    "refs": [
     "obj:10"
    ],
@@ -10287,7 +10287,7 @@
    "id": "o00012",
    "kind": "obj",
    "jp": "玲子",
-   "en": "Reiko",
+   "en": "",
    "refs": [
     "obj:11"
    ],
@@ -10297,7 +10297,7 @@
    "id": "o00013",
    "kind": "obj",
    "jp": "モモ",
-   "en": "Momo",
+   "en": "",
    "refs": [
     "obj:12"
    ],
@@ -10307,7 +10307,7 @@
    "id": "o00014",
    "kind": "obj",
    "jp": "真美",
-   "en": "Mami",
+   "en": "",
    "refs": [
     "obj:13"
    ],
@@ -10317,7 +10317,7 @@
    "id": "o00015",
    "kind": "obj",
    "jp": "弥生",
-   "en": "Yayoi",
+   "en": "",
    "refs": [
     "obj:14"
    ],
@@ -10327,7 +10327,7 @@
    "id": "o00016",
    "kind": "obj",
    "jp": "綾乃",
-   "en": "Ayano",
+   "en": "",
    "refs": [
     "obj:15"
    ],
@@ -10337,7 +10337,7 @@
    "id": "o00017",
    "kind": "obj",
    "jp": "由利子",
-   "en": "Yuriko",
+   "en": "",
    "refs": [
     "obj:16"
    ],
@@ -10347,7 +10347,7 @@
    "id": "o00018",
    "kind": "obj",
    "jp": "久美子",
-   "en": "Kumiko",
+   "en": "",
    "refs": [
     "obj:17"
    ],
@@ -10357,7 +10357,7 @@
    "id": "o00019",
    "kind": "obj",
    "jp": "典子",
-   "en": "Noriko",
+   "en": "",
    "refs": [
     "obj:18"
    ],
@@ -10367,7 +10367,7 @@
    "id": "o00020",
    "kind": "obj",
    "jp": "美香",
-   "en": "Mika",
+   "en": "",
    "refs": [
     "obj:19"
    ],
@@ -10377,7 +10377,7 @@
    "id": "o00021",
    "kind": "obj",
    "jp": "美智子",
-   "en": "Michiko",
+   "en": "",
    "refs": [
     "obj:20"
    ],
@@ -10387,7 +10387,7 @@
    "id": "o00022",
    "kind": "obj",
    "jp": "美有",
-   "en": "Miyu",
+   "en": "",
    "refs": [
     "obj:21"
    ],
@@ -10397,7 +10397,7 @@
    "id": "o00023",
    "kind": "obj",
    "jp": "メス猫",
-   "en": "Female Cat",
+   "en": "",
    "refs": [
     "obj:22",
     "obj:94"
@@ -10408,7 +10408,7 @@
    "id": "o00024",
    "kind": "obj",
    "jp": "ひつじ",
-   "en": "Sheep",
+   "en": "",
    "refs": [
     "obj:23"
    ],
@@ -10418,7 +10418,7 @@
    "id": "o00025",
    "kind": "obj",
    "jp": "アンナ",
-   "en": "Anna",
+   "en": "",
    "refs": [
     "obj:24"
    ],
@@ -10428,7 +10428,7 @@
    "id": "o00026",
    "kind": "obj",
    "jp": "幸",
-   "en": "Sachi",
+   "en": "",
    "refs": [
     "obj:25"
    ],
@@ -10438,7 +10438,7 @@
    "id": "o00027",
    "kind": "obj",
    "jp": "魔女",
-   "en": "Witch",
+   "en": "",
    "refs": [
     "obj:26"
    ],
@@ -10448,7 +10448,7 @@
    "id": "o00028",
    "kind": "obj",
    "jp": "森",
-   "en": "Forest",
+   "en": "",
    "refs": [
     "obj:27"
    ],
@@ -10458,7 +10458,7 @@
    "id": "o00029",
    "kind": "obj",
    "jp": "まわり",
-   "en": "Surroundings",
+   "en": "",
    "refs": [
     "obj:28"
    ],
@@ -10468,7 +10468,7 @@
    "id": "o00030",
    "kind": "obj",
    "jp": "寮",
-   "en": "Dorm",
+   "en": "",
    "refs": [
     "obj:29",
     "obj:59"
@@ -10479,7 +10479,7 @@
    "id": "o00031",
    "kind": "obj",
    "jp": "商店街",
-   "en": "Shopping Street",
+   "en": "",
    "refs": [
     "obj:30"
    ],
@@ -10489,7 +10489,7 @@
    "id": "o00032",
    "kind": "obj",
    "jp": "家",
-   "en": "House",
+   "en": "",
    "refs": [
     "obj:31"
    ],
@@ -10499,7 +10499,7 @@
    "id": "o00033",
    "kind": "obj",
    "jp": "公園",
-   "en": "Park",
+   "en": "",
    "refs": [
     "obj:32"
    ],
@@ -10509,7 +10509,7 @@
    "id": "o00034",
    "kind": "obj",
    "jp": "屋敷",
-   "en": "Mansion",
+   "en": "",
    "refs": [
     "obj:33"
    ],
@@ -10519,7 +10519,7 @@
    "id": "o00035",
    "kind": "obj",
    "jp": "砂場",
-   "en": "Sandbox",
+   "en": "",
    "refs": [
     "obj:34"
    ],
@@ -10529,7 +10529,7 @@
    "id": "o00036",
    "kind": "obj",
    "jp": "空",
-   "en": "Sky",
+   "en": "",
    "refs": [
     "obj:35"
    ],
@@ -10539,7 +10539,7 @@
    "id": "o00037",
    "kind": "obj",
    "jp": "木",
-   "en": "Tree",
+   "en": "",
    "refs": [
     "obj:36"
    ],
@@ -10549,7 +10549,7 @@
    "id": "o00038",
    "kind": "obj",
    "jp": "はり紙",
-   "en": "Poster",
+   "en": "",
    "refs": [
     "obj:37"
    ],
@@ -10559,7 +10559,7 @@
    "id": "o00039",
    "kind": "obj",
    "jp": "名前",
-   "en": "Name",
+   "en": "",
    "refs": [
     "obj:38"
    ],
@@ -10569,7 +10569,7 @@
    "id": "o00040",
    "kind": "obj",
    "jp": "年",
-   "en": "Age",
+   "en": "",
    "refs": [
     "obj:39"
    ],
@@ -10579,7 +10579,7 @@
    "id": "o00041",
    "kind": "obj",
    "jp": "シュミ",
-   "en": "Hobbies",
+   "en": "",
    "refs": [
     "obj:40"
    ],
@@ -10589,7 +10589,7 @@
    "id": "o00042",
    "kind": "obj",
    "jp": "サイズ",
-   "en": "Size",
+   "en": "",
    "refs": [
     "obj:41"
    ],
@@ -10599,7 +10599,7 @@
    "id": "o00043",
    "kind": "obj",
    "jp": "アザ",
-   "en": "Birthmark",
+   "en": "",
    "refs": [
     "obj:42"
    ],
@@ -10609,7 +10609,7 @@
    "id": "o00044",
    "kind": "obj",
    "jp": "胸",
-   "en": "Chest",
+   "en": "",
    "refs": [
     "obj:43"
    ],
@@ -10619,7 +10619,7 @@
    "id": "o00045",
    "kind": "obj",
    "jp": "下着",
-   "en": "Underwear",
+   "en": "",
    "refs": [
     "obj:44"
    ],
@@ -10629,7 +10629,7 @@
    "id": "o00046",
    "kind": "obj",
    "jp": "ベッド",
-   "en": "Bed",
+   "en": "",
    "refs": [
     "obj:45"
    ],
@@ -10639,7 +10639,7 @@
    "id": "o00047",
    "kind": "obj",
    "jp": "服",
-   "en": "Clothes",
+   "en": "",
    "refs": [
     "obj:46"
    ],
@@ -10649,7 +10649,7 @@
    "id": "o00048",
    "kind": "obj",
    "jp": "ピィー",
-   "en": "Beep",
+   "en": "",
    "refs": [
     "obj:47"
    ],
@@ -10659,7 +10659,7 @@
    "id": "o00049",
    "kind": "obj",
    "jp": "砂遊び",
-   "en": "Sand Play",
+   "en": "",
    "refs": [
     "obj:48"
    ],
@@ -10669,7 +10669,7 @@
    "id": "o00050",
    "kind": "obj",
    "jp": "花",
-   "en": "Flower",
+   "en": "",
    "refs": [
     "obj:49"
    ],
@@ -10679,7 +10679,7 @@
    "id": "o00051",
    "kind": "obj",
    "jp": "種",
-   "en": "Seeds",
+   "en": "",
    "refs": [
     "obj:50"
    ],
@@ -10689,7 +10689,7 @@
    "id": "o00052",
    "kind": "obj",
    "jp": "魚",
-   "en": "Fish",
+   "en": "",
    "refs": [
     "obj:51"
    ],
@@ -10699,7 +10699,7 @@
    "id": "o00053",
    "kind": "obj",
    "jp": "塩",
-   "en": "Salt",
+   "en": "",
    "refs": [
     "obj:52"
    ],
@@ -10709,7 +10709,7 @@
    "id": "o00054",
    "kind": "obj",
    "jp": "酒屋",
-   "en": "Liquor Store",
+   "en": "",
    "refs": [
     "obj:53",
     "obj:87"
@@ -10720,7 +10720,7 @@
    "id": "o00055",
    "kind": "obj",
    "jp": "野菜",
-   "en": "Vegetables",
+   "en": "",
    "refs": [
     "obj:54"
    ],
@@ -10730,7 +10730,7 @@
    "id": "o00056",
    "kind": "obj",
    "jp": "酒",
-   "en": "Liquor",
+   "en": "",
    "refs": [
     "obj:55"
    ],
@@ -10740,7 +10740,7 @@
    "id": "o00057",
    "kind": "obj",
    "jp": "レオタード",
-   "en": "Leotard",
+   "en": "",
    "refs": [
     "obj:56"
    ],
@@ -10750,7 +10750,7 @@
    "id": "o00058",
    "kind": "obj",
    "jp": "動物",
-   "en": "Animals",
+   "en": "",
    "refs": [
     "obj:57"
    ],
@@ -10760,7 +10760,7 @@
    "id": "o00059",
    "kind": "obj",
    "jp": "薬",
-   "en": "Medicine",
+   "en": "",
    "refs": [
     "obj:58"
    ],
@@ -10770,7 +10770,7 @@
    "id": "o00060",
    "kind": "obj",
    "jp": "パンティー",
-   "en": "Panties",
+   "en": "",
    "refs": [
     "obj:60"
    ],
@@ -10780,7 +10780,7 @@
    "id": "o00061",
    "kind": "obj",
    "jp": "ドア",
-   "en": "Door",
+   "en": "",
    "refs": [
     "obj:61"
    ],
@@ -10790,7 +10790,7 @@
    "id": "o00062",
    "kind": "obj",
    "jp": "鍵",
-   "en": "Key",
+   "en": "",
    "refs": [
     "obj:62"
    ],
@@ -10800,7 +10800,7 @@
    "id": "o00063",
    "kind": "obj",
    "jp": "１号室",
-   "en": "Room 1",
+   "en": "",
    "refs": [
     "obj:63"
    ],
@@ -10810,7 +10810,7 @@
    "id": "o00064",
    "kind": "obj",
    "jp": "２号室",
-   "en": "Room 2",
+   "en": "",
    "refs": [
     "obj:64"
    ],
@@ -10820,7 +10820,7 @@
    "id": "o00065",
    "kind": "obj",
    "jp": "３号室",
-   "en": "Room 3",
+   "en": "",
    "refs": [
     "obj:65"
    ],
@@ -10830,7 +10830,7 @@
    "id": "o00066",
    "kind": "obj",
    "jp": "４号室",
-   "en": "Room 4",
+   "en": "",
    "refs": [
     "obj:66"
    ],
@@ -10840,7 +10840,7 @@
    "id": "o00067",
    "kind": "obj",
    "jp": "５号室",
-   "en": "Room 5",
+   "en": "",
    "refs": [
     "obj:67"
    ],
@@ -10850,7 +10850,7 @@
    "id": "o00068",
    "kind": "obj",
    "jp": "６号室",
-   "en": "Room 6",
+   "en": "",
    "refs": [
     "obj:68"
    ],
@@ -10860,7 +10860,7 @@
    "id": "o00069",
    "kind": "obj",
    "jp": "７号室",
-   "en": "Room 7",
+   "en": "",
    "refs": [
     "obj:69"
    ],
@@ -10870,7 +10870,7 @@
    "id": "o00070",
    "kind": "obj",
    "jp": "８号室",
-   "en": "Room 8",
+   "en": "",
    "refs": [
     "obj:70"
    ],
@@ -10880,7 +10880,7 @@
    "id": "o00071",
    "kind": "obj",
    "jp": "９号室",
-   "en": "Room 9",
+   "en": "",
    "refs": [
     "obj:71"
    ],
@@ -10890,7 +10890,7 @@
    "id": "o00072",
    "kind": "obj",
    "jp": "１０号室",
-   "en": "Room 10",
+   "en": "",
    "refs": [
     "obj:72"
    ],
@@ -10900,7 +10900,7 @@
    "id": "o00073",
    "kind": "obj",
    "jp": "１１号室",
-   "en": "Room 11",
+   "en": "",
    "refs": [
     "obj:73"
    ],
@@ -10910,7 +10910,7 @@
    "id": "o00074",
    "kind": "obj",
    "jp": "１２号室",
-   "en": "Room 12",
+   "en": "",
    "refs": [
     "obj:74"
    ],
@@ -10920,7 +10920,7 @@
    "id": "o00075",
    "kind": "obj",
    "jp": "１３号室",
-   "en": "Room 13",
+   "en": "",
    "refs": [
     "obj:75"
    ],
@@ -10930,7 +10930,7 @@
    "id": "o00076",
    "kind": "obj",
    "jp": "１４号室",
-   "en": "Room 14",
+   "en": "",
    "refs": [
     "obj:76"
    ],
@@ -10940,7 +10940,7 @@
    "id": "o00077",
    "kind": "obj",
    "jp": "１５号室",
-   "en": "Room 15",
+   "en": "",
    "refs": [
     "obj:77"
    ],
@@ -10950,7 +10950,7 @@
    "id": "o00078",
    "kind": "obj",
    "jp": "１６号室",
-   "en": "Room 16",
+   "en": "",
    "refs": [
     "obj:78"
    ],
@@ -10960,7 +10960,7 @@
    "id": "o00079",
    "kind": "obj",
    "jp": "１７号室",
-   "en": "Room 17",
+   "en": "",
    "refs": [
     "obj:79"
    ],
@@ -10970,7 +10970,7 @@
    "id": "o00080",
    "kind": "obj",
    "jp": "１８号室",
-   "en": "Room 18",
+   "en": "",
    "refs": [
     "obj:80"
    ],
@@ -10980,7 +10980,7 @@
    "id": "o00081",
    "kind": "obj",
    "jp": "風呂場",
-   "en": "Bathroom",
+   "en": "",
    "refs": [
     "obj:81"
    ],
@@ -10990,7 +10990,7 @@
    "id": "o00082",
    "kind": "obj",
    "jp": "屋上",
-   "en": "Rooftop",
+   "en": "",
    "refs": [
     "obj:82"
    ],
@@ -11000,7 +11000,7 @@
    "id": "o00083",
    "kind": "obj",
    "jp": "写真",
-   "en": "Photo",
+   "en": "",
    "refs": [
     "obj:83"
    ],
@@ -11010,7 +11010,7 @@
    "id": "o00084",
    "kind": "obj",
    "jp": "住所",
-   "en": "Address",
+   "en": "",
    "refs": [
     "obj:84"
    ],
@@ -11020,7 +11020,7 @@
    "id": "o00085",
    "kind": "obj",
    "jp": "オリ",
-   "en": "Cage",
+   "en": "",
    "refs": [
     "obj:85"
    ],
@@ -11030,7 +11030,7 @@
    "id": "o00086",
    "kind": "obj",
    "jp": "八百屋",
-   "en": "Greengrocer",
+   "en": "",
    "refs": [
     "obj:86"
    ],
@@ -11040,7 +11040,7 @@
    "id": "o00087",
    "kind": "obj",
    "jp": "風呂屋",
-   "en": "Bathhouse",
+   "en": "",
    "refs": [
     "obj:88"
    ],
@@ -11050,7 +11050,7 @@
    "id": "o00088",
    "kind": "obj",
    "jp": "花屋",
-   "en": "Florist",
+   "en": "",
    "refs": [
     "obj:89"
    ],
@@ -11060,7 +11060,7 @@
    "id": "o00089",
    "kind": "obj",
    "jp": "ペット店",
-   "en": "Pet Shop",
+   "en": "",
    "refs": [
     "obj:90"
    ],
@@ -11070,7 +11070,7 @@
    "id": "o00090",
    "kind": "obj",
    "jp": "公衆便所",
-   "en": "Public Toilet",
+   "en": "",
    "refs": [
     "obj:91"
    ],
@@ -11080,7 +11080,7 @@
    "id": "o00091",
    "kind": "obj",
    "jp": "タオル",
-   "en": "Towel",
+   "en": "",
    "refs": [
     "obj:92"
    ],
@@ -11090,7 +11090,7 @@
    "id": "o00092",
    "kind": "obj",
    "jp": "女子寮",
-   "en": "Girls' Dorm",
+   "en": "",
    "refs": [
     "obj:93"
    ],
@@ -11100,7 +11100,7 @@
    "id": "o00093",
    "kind": "obj",
    "jp": "三日月",
-   "en": "Crescent Moon",
+   "en": "",
    "refs": [
     "obj:95"
    ],
@@ -11110,7 +11110,7 @@
    "id": "o00094",
    "kind": "obj",
    "jp": "ヌイグルミ",
-   "en": "Stuffed Toy",
+   "en": "",
    "refs": [
     "obj:96"
    ],
@@ -11120,7 +11120,7 @@
    "id": "o00095",
    "kind": "obj",
    "jp": "魚屋",
-   "en": "Fish Shop",
+   "en": "",
    "refs": [
     "obj:97"
    ],
@@ -11130,7 +11130,7 @@
    "id": "o00096",
    "kind": "obj",
    "jp": "猫",
-   "en": "Cat",
+   "en": "",
    "refs": [
     "obj:98"
    ],
@@ -11140,7 +11140,7 @@
    "id": "o00097",
    "kind": "obj",
    "jp": "チョコ",
-   "en": "Chocolate",
+   "en": "",
    "refs": [
     "obj:99"
    ],
@@ -11150,7 +11150,7 @@
    "id": "o00098",
    "kind": "obj",
    "jp": "剣",
-   "en": "Sword",
+   "en": "",
    "refs": [
     "obj:100",
     "obj:102"
@@ -11161,7 +11161,7 @@
    "id": "o00099",
    "kind": "obj",
    "jp": "クモの巣",
-   "en": "Spider Web",
+   "en": "",
    "refs": [
     "obj:101"
    ],
@@ -11171,7 +11171,7 @@
    "id": "m00495",
    "kind": "msg",
    "jp": "ある天気のいい日曜日、猫のミイは飼い主の美有に連れられて外\nに出ました。\n「",
-   "en": "One fine Sunday, Mii the cat was taken outside by his owner, Miyu.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0006"
    ],
@@ -11181,7 +11181,7 @@
    "id": "m00496",
    "kind": "msg",
    "jp": "ミイちゃん、今日は私のお友達がたくさんいるところに連れて\n いってあげるわね。女の子だけだし、みんな猫が大好きだから\n ミイが来るのを楽しみにしてるのよ。",
-   "en": "Mii, today I'm taking you somewhere with lots of my friends. It's all girls, and everyone loves cats, so they're all looking forward to meeting you.",
+   "en": "",
    "refs": [
     "b:p02:003d"
    ],
@@ -11191,7 +11191,7 @@
    "id": "m00497",
    "kind": "msg",
    "jp": "」\n美有はそう言ってニッコリと笑いました。\n（女の子がたくさん・・。）\n「",
-   "en": "\"\nMiyu said that with a big smile.\n(Lots of girls...)\n\"",
+   "en": "",
    "refs": [
     "b:p02:00a4"
    ],
@@ -11201,7 +11201,7 @@
    "id": "m00498",
    "kind": "msg",
    "jp": "ニャ。ニャ。",
-   "en": "Nya. Nya.",
+   "en": "",
    "refs": [
     "b:p02:00d8"
    ],
@@ -11211,7 +11211,7 @@
    "id": "m00499",
    "kind": "msg",
    "jp": "」\nミイはなんとなく顔の筋肉がダルンとゆるんでしまいました。",
-   "en": "\"\nSomehow, all the muscles in Mii's face went slack.",
+   "en": "",
    "refs": [
     "b:p02:00e4"
    ],
@@ -11221,7 +11221,7 @@
    "id": "m00500",
    "kind": "msg",
    "jp": "さあ、ついたわ。ここは、私の通っている学校の寮なのよ。",
-   "en": "Here we are. This is the dorm of the school I go to.",
+   "en": "",
    "refs": [
     "b:p02:0112"
    ],
@@ -11231,7 +11231,7 @@
    "id": "m00501",
    "kind": "msg",
    "jp": "」\nピンク色のかわいい建物には＜白百合学園女子寮＞と書いてあり\nました。\n「",
-   "en": "\"\nThe cute pink building had a sign that read <Shirayuri Academy Girls' Dorm>.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0134"
    ],
@@ -11241,7 +11241,7 @@
    "id": "m00502",
    "kind": "msg",
    "jp": "女子寮・・・女の園なんだニャ・・・。",
-   "en": "A girls' dorm... a garden of maidens, nya...",
+   "en": "",
    "refs": [
     "b:p02:016d"
    ],
@@ -11251,7 +11251,7 @@
    "id": "m00503",
    "kind": "msg",
    "jp": "」\nワクワクしながら寮の中に入って行くと・・・",
-   "en": "\"\nWhen Mii excitedly went inside...",
+   "en": "",
    "refs": [
     "b:p02:0189"
    ],
@@ -11261,7 +11261,7 @@
    "id": "m00504",
    "kind": "msg",
    "jp": "キャン。かわいい。",
-   "en": "Kyaa! So cute!",
+   "en": "",
    "refs": [
     "b:p02:01af"
    ],
@@ -11271,7 +11271,7 @@
    "id": "m00505",
    "kind": "msg",
    "jp": "」\nすぐに、かわゆい女の子達がミイのまわりに集まってきました。\n「",
-   "en": "\"\nIn no time, adorable girls had gathered all around Mii.\n\"",
+   "en": "",
    "refs": [
     "b:p02:01bd"
    ],
@@ -11281,7 +11281,7 @@
    "id": "m00506",
    "kind": "msg",
    "jp": "ほぉら、お魚よ。えい。えい。",
-   "en": "Looky here, a fishy! Hup! Hup!",
+   "en": "",
    "refs": [
     "b:p02:01e8"
    ],
@@ -11291,7 +11291,7 @@
    "id": "m00507",
    "kind": "msg",
    "jp": "ニヤ。ニヤー。ニヤン。",
-   "en": "Nya. Nyaa. Nyan.",
+   "en": "",
    "refs": [
     "b:p02:01fe"
    ],
@@ -11301,7 +11301,7 @@
    "id": "m00508",
    "kind": "msg",
    "jp": "よし。捕まえたぞ。わあ、毛がやわらかいな。",
-   "en": "Okay, got you! Wow, his fur is so soft.",
+   "en": "",
    "refs": [
     "b:p02:0217"
    ],
@@ -11311,7 +11311,7 @@
    "id": "m00509",
    "kind": "msg",
    "jp": "」\n男子禁制の女子寮に男（？）が一ぴき、まるで、ハーレムにでも\nいるような雰囲気をミイ思う存分に味わいながら\n（僕って、なんてしあわせ者なんだろう。もし、人間だったら\n こんなに可愛がってもらえないもんニャ。猫に生まれて本当に\n よかったニャ。）\nと、しみじみと感じたのだった。",
-   "en": "\"\nOne male (?) in a girls' dorm where men are forbidden - Mii savored to his heart's content the feeling of being in a harem, and thought deeply to himself:\n(What a lucky guy I am. If I were human, they'd never fuss over me like this, nya. I'm so glad I was born a cat, nya.)",
+   "en": "",
    "refs": [
     "b:p02:0232"
    ],
@@ -11321,7 +11321,7 @@
    "id": "m00510",
    "kind": "msg",
    "jp": "そうして、女の子達と一日楽しく遊んだミイは行きと同じように\n美有にだっこされて帰途についた。\n（今日はとっても楽しかったニャ。）\nミイは、そんなことを考えながらふと塀を見上げた。\n「",
-   "en": "And so, after a whole day of fun with the girls, Mii was carried home in Miyu's arms, just as he had come.\n(Today was so much fun, nya.)\nThinking such things, Mii happened to glance up at a wall.\n\"",
+   "en": "",
    "refs": [
     "b:p02:02f5"
    ],
@@ -11331,7 +11331,7 @@
    "id": "m00511",
    "kind": "msg",
    "jp": "ニャン！？",
-   "en": "Nyan!?",
+   "en": "",
    "refs": [
     "b:p02:0373"
    ],
@@ -11341,7 +11341,7 @@
    "id": "m00512",
    "kind": "msg",
    "jp": "塀の上には、今までに見たこともないほど美しいメス猫が座って\nいました。\n「",
-   "en": "On top of the wall sat a female cat more beautiful than any he had ever seen.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0383"
    ],
@@ -11351,7 +11351,7 @@
    "id": "m00513",
    "kind": "msg",
    "jp": "ニャンて美しい猫なんだ。お嬢さん・・・お・名前は？",
-   "en": "Nyow, what a beautiful cat. Miss... m-may I ask your name?",
+   "en": "",
    "refs": [
     "b:p02:03b6"
    ],
@@ -11361,7 +11361,7 @@
    "id": "m00514",
    "kind": "msg",
    "jp": "」\nミイは、ジタバタと暴れて彼女の側に行こうとしましたが、美有\nはその事にまったく気付いてくれず、スタスタと家に帰っていっ\nてしまいました。",
-   "en": "\"\nMii thrashed and struggled to get to her side, but Miyu didn't notice at all and briskly walked home.",
+   "en": "",
    "refs": [
     "b:p02:03db"
    ],
@@ -11371,7 +11371,7 @@
    "id": "m00515",
    "kind": "msg",
    "jp": "家に帰ってからも、",
-   "en": "Even after getting home,",
+   "en": "",
    "refs": [
     "b:p02:043d"
    ],
@@ -11381,7 +11381,7 @@
    "id": "m00516",
    "kind": "msg",
    "jp": "ミイはメス猫の事が忘れられず、寝ても覚め\nてもメス猫のことばかり考えていました。しばらくして・・\n「",
-   "en": " Mii could not forget the female cat, and thought of nothing but her, asleep or awake. After a while...\n\"",
+   "en": "",
    "refs": [
     "b:p02:044a"
    ],
@@ -11391,7 +11391,7 @@
    "id": "m00517",
    "kind": "msg",
    "jp": "考えてばかりいてもしょうがない。彼女を捜しに行こう。",
-   "en": "No use just thinking about it. I'll go look for her.",
+   "en": "",
    "refs": [
     "b:p02:048f"
    ],
@@ -11401,7 +11401,7 @@
    "id": "m00518",
    "kind": "msg",
    "jp": "」\n突然悟りを開いたミイは、メス猫を捜す旅にでた。",
-   "en": "\"\nHaving suddenly reached enlightenment, Mii set out on a journey to find the female cat.",
+   "en": "",
    "refs": [
     "b:p02:04b2"
    ],
@@ -11411,7 +11411,7 @@
    "id": "m00519",
    "kind": "msg",
    "jp": "商店街や公園など、",
-   "en": "Through the shopping street, the park,",
+   "en": "",
    "refs": [
     "b:p02:04db"
    ],
@@ -11421,7 +11421,7 @@
    "id": "m00520",
    "kind": "msg",
    "jp": "街中を歩き回ってメス猫を捜している内に\nいつのまにかミイは、",
-   "en": " all around town he walked searching for the female cat, until before he knew it, Mii",
+   "en": "",
    "refs": [
     "b:p02:04ed"
    ],
@@ -11431,7 +11431,7 @@
    "id": "m00521",
    "kind": "msg",
    "jp": "薄暗い森の中に迷い込んでしまった。\n「",
-   "en": " had wandered into a gloomy forest.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0518"
    ],
@@ -11441,7 +11441,7 @@
    "id": "m00522",
    "kind": "msg",
    "jp": "変ニャ所に来てしまったニャ。おや。あんニャ所に屋敷が\n あるぞ。あそこにいってみよう。",
-   "en": "I've come to a weird place, nya. Oh? There's a mansion over there. Let's go take a look.",
+   "en": "",
    "refs": [
     "b:p02:0534"
    ],
@@ -11451,7 +11451,7 @@
    "id": "m00523",
    "kind": "msg",
    "jp": "」\nミイは森の奥にある屋敷の中に入っていった。ギィーー。重い扉を\n開けると、",
-   "en": "\"\nMii went into the mansion deep in the forest. Creeeak. When he opened the heavy door,",
+   "en": "",
    "refs": [
     "b:p02:056f"
    ],
@@ -11461,7 +11461,7 @@
    "id": "m00524",
    "kind": "msg",
    "jp": "真っ赤なじゅうたんを敷いた豪華なフロアに入り込んだ。\nそして、どんどん中に入って行くと・・・",
-   "en": " he found himself in a luxurious hall laid with a bright red carpet.\nAnd as he went further and further in...",
+   "en": "",
    "refs": [
     "b:p02:05a4"
    ],
@@ -11471,7 +11471,7 @@
    "id": "m00525",
    "kind": "msg",
    "jp": "真ん中にテーブルのある、紺色のカーテンで囲まれた不思議な\n部屋にでた。テーブルの上には、キラキラと光る水晶玉が置いて\nあった。それを見た瞬間ミイの目が光った。\n「",
-   "en": "He came to a mysterious room surrounded by navy blue curtains, with a table in the middle. On the table sat a glittering crystal ball. The moment he saw it, Mii's eyes lit up.\n\"",
+   "en": "",
    "refs": [
     "b:p02:05e8"
    ],
@@ -11481,7 +11481,7 @@
    "id": "m00526",
    "kind": "msg",
    "jp": "にゃゃん？あれは・・・",
-   "en": "Nyaan? What's that...",
+   "en": "",
    "refs": [
     "b:p02:0663"
    ],
@@ -11491,7 +11491,7 @@
    "id": "m00527",
    "kind": "msg",
    "jp": "」\nバッ。勢いよくテーブルに跳びのると、水晶玉で玉とりをはじめ\nた。水晶玉の丸い形がミイの野生の血を呼び覚ましてしまったの\nだ。\n「",
-   "en": "\"\nWith a bound he leapt onto the table and started batting the crystal ball around. Its round shape had awakened Mii's wild blood.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0671"
    ],
@@ -11501,7 +11501,7 @@
    "id": "m00528",
    "kind": "msg",
    "jp": "ニャン。ニャン。",
-   "en": "Nyan. Nyan.",
+   "en": "",
    "refs": [
     "b:p02:06d2"
    ],
@@ -11511,7 +11511,7 @@
    "id": "m00529",
    "kind": "msg",
    "jp": "とその時、勢い余って玉が転がった。\nコロッ。ゴロッ。ゴロロロロロロロロロ・・・・・・・・・・・\n・・・・・・・・・・・・・・・・・・・・・・・・・・・・・",
-   "en": "Just then, he got carried away and the ball rolled.\nClunk. Rumble. Rumblerumblerumblerumble...",
+   "en": "",
    "refs": [
     "b:p02:06e5"
    ],
@@ -11521,7 +11521,7 @@
    "id": "m00530",
    "kind": "msg",
    "jp": "ガッシャーン！！！\nテーブルから落ちた水晶玉は、大きな音をたてて割れた。ミイは\nマズイと思いその場から立ち去ろうと、後ろを向いた。",
-   "en": "CRAAASH!!!\nThe crystal ball fell off the table and shattered with a loud noise. Thinking this was bad, Mii turned around to slip away.",
+   "en": "",
    "refs": [
     "b:p02:074c"
    ],
@@ -11531,7 +11531,7 @@
    "id": "m00531",
    "kind": "msg",
    "jp": "今のは、いったい何の音じゃ？",
-   "en": "What on earth was that noise?",
+   "en": "",
    "refs": [
     "b:p02:07b0"
    ],
@@ -11541,7 +11541,7 @@
    "id": "m00532",
    "kind": "msg",
    "jp": "突然、怪しげな衣装を着た女と羊の格好をした男がドヤドヤと\n入ってきた。\n女は、足元に転がっている破片に気付き、眉間に二本のしわを\n寄せた。そしてゆっくりとミイを見た。\n「",
-   "en": "Suddenly a woman in a strange costume and a man dressed as a sheep came barging in.\nThe woman noticed the shards scattered at her feet, and two creases formed between her brows. Then she slowly looked at Mii.\n\"",
+   "en": "",
    "refs": [
     "b:p02:07cb"
    ],
@@ -11551,7 +11551,7 @@
    "id": "m00533",
    "kind": "msg",
    "jp": "よくも・・・私の大事な水晶玉を。執事！その猫をひっと\n らえなさい！！！",
-   "en": "How dare you... my precious crystal ball! Butler! Seize that cat!!!",
+   "en": "",
    "refs": [
     "b:p02:0845"
    ],
@@ -11561,7 +11561,7 @@
    "id": "m00534",
    "kind": "msg",
    "jp": "はっ。魔女様。",
-   "en": "Yes, my lady Witch.",
+   "en": "",
    "refs": [
     "b:p02:087d"
    ],
@@ -11571,7 +11571,7 @@
    "id": "m00535",
    "kind": "msg",
    "jp": "」\n（魔女？ここは、魔女の屋敷だったのか・・・。ガーン。）\nミイは、必死に逃げようとしたが時すでに遅し！！\nあっさりと執事に捕まってしまった。\nミイを捕まえた魔女は、冷淡に笑った。\n「",
-   "en": "\"\n(A witch? So this was a witch's mansion... Oh no.)\nMii desperately tried to escape, but it was already too late!!\nThe butler caught him with no trouble at all.\nHaving captured Mii, the witch laughed coldly.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0889"
    ],
@@ -11581,7 +11581,7 @@
    "id": "m00536",
    "kind": "msg",
    "jp": "罰としてお前をこの世で、一番醜い生き物に変えてやろう。\n クッ。オホホホホホホホホホホホホホホホホホホホホホホッ",
-   "en": "As punishment, I shall turn you into the ugliest creature in this world. Heh. Ohohohohohohohohohohohohoho!",
+   "en": "",
    "refs": [
     "b:p02:090a"
    ],
@@ -11591,7 +11591,7 @@
    "id": "m00537",
    "kind": "msg",
    "jp": "」\n魔女が奇妙な光を発すると、ミイの体は空中に浮び、みるみる",
-   "en": "\"\nThe witch gave off an eerie light, and Mii's body floated up into the air, and before his very eyes",
+   "en": "",
    "refs": [
     "b:p02:0968"
    ],
@@ -11601,7 +11601,7 @@
    "id": "m00538",
    "kind": "msg",
    "jp": "うちにムクムクと",
-   "en": " it swelled and bulged",
+   "en": "",
    "refs": [
     "b:p02:0997"
    ],
@@ -11611,7 +11611,7 @@
    "id": "m00539",
    "kind": "msg",
    "jp": "変形していった。",
-   "en": " and changed shape.",
+   "en": "",
    "refs": [
     "b:p02:09a5"
    ],
@@ -11621,7 +11621,7 @@
    "id": "m00540",
    "kind": "msg",
    "jp": "げげげげっ。け、毛がないーー。耳が！シッポがーーっ！",
-   "en": "Gyaaah! M-my fur is gone! My ears! My tail!",
+   "en": "",
    "refs": [
     "b:p02:09b6"
    ],
@@ -11631,7 +11631,7 @@
    "id": "m00541",
    "kind": "msg",
    "jp": "」\nミイは、魔女の魔法で人間にされてしまったのだった。\n「",
-   "en": "\"\nThe witch's magic had turned Mii into a human.\n\"",
+   "en": "",
    "refs": [
     "b:p02:09e0"
    ],
@@ -11641,7 +11641,7 @@
    "id": "m00542",
    "kind": "msg",
    "jp": "ククククッ。お前はこれから人間として、毎朝満員電車に\n 乗って会社に行ったり、周りの人の顔色をうかがったり世間の目を\n 気にしながら、ゴキブリのようにセコセコ働いて苦労とストレス\n に耐えながら、憎悪のうごめく人間社会で一生過ごしていくのじゃ\n オホホホホホホホホホホホホホホホホホホホホホホホホホホッ。",
-   "en": "Hehehehe. From now on you will live as a human - riding packed trains to the office every morning, reading everyone's moods, worrying about what the world thinks, toiling away like a cockroach, enduring hardship and stress, spending the rest of your life in a human society seething with hatred! Ohohohohohohohohohohohohohoho!",
+   "en": "",
    "refs": [
     "b:p02:0a09"
    ],
@@ -11651,7 +11651,7 @@
    "id": "m00543",
    "kind": "msg",
    "jp": "」\n魔女は、満足そうに高らかに笑った。",
-   "en": "\"\nThe witch laughed loudly and with great satisfaction.",
+   "en": "",
    "refs": [
     "b:p02:0af9"
    ],
@@ -11661,7 +11661,7 @@
    "id": "m00544",
    "kind": "msg",
    "jp": "こんな姿じゃ、あのメス猫のところに行けないよぉ・・・。\n それに、美有ちゃんのところにも帰ることもできない・・・。\n お願いです。何でも言うことをききますから。どうか、元に戻\n して下さい。",
-   "en": "I can't go to that female cat looking like this... And I can't go back to Miyu either... Please. I'll do anything you say. Please, change me back.",
+   "en": "",
    "refs": [
     "b:p02:0b17"
    ],
@@ -11671,7 +11671,7 @@
    "id": "m00545",
    "kind": "msg",
    "jp": "」\nミイが哀願をすると、またも魔女は冷淡に笑いながら言った。",
-   "en": "\"\nWhen Mii begged, the witch again laughed coldly and said:",
+   "en": "",
    "refs": [
     "b:p02:0b8b"
    ],
@@ -11681,7 +11681,7 @@
    "id": "m00546",
    "kind": "msg",
    "jp": "もし、お前がこの街のどこかにいるはずの胸に”三日月の形の\n アザ”のある娘を見つけて、ここに連れて来ることができたら\n 元に戻してやってもいいけどね。ククククッ。",
-   "en": "If you can find the girl somewhere in this town who has a \"crescent-moon-shaped birthmark\" on her chest, and bring her here, then maybe I'll change you back. Hehehehe.",
+   "en": "",
    "refs": [
     "b:p02:0bba"
    ],
@@ -11691,7 +11691,7 @@
    "id": "m00547",
    "kind": "msg",
    "jp": "本当ですか？",
-   "en": "Really?",
+   "en": "",
    "refs": [
     "b:p02:0c2e"
    ],
@@ -11701,7 +11701,7 @@
    "id": "m00548",
    "kind": "msg",
    "jp": "２年前に水晶玉の占いで、この町にいることがわかりここに\n 来たのだが、そこから先がまったく手がかりがないのじゃぞ。",
-   "en": "Two years ago my crystal ball divination told me she was in this town, so I came here, but since then I haven't found a single clue, you know.",
+   "en": "",
    "refs": [
     "b:p02:0c3f"
    ],
@@ -11711,7 +11711,7 @@
    "id": "m00549",
    "kind": "msg",
    "jp": "解りました。必ず胸に”三日月のアザ”のある女の子を捜して\n ここに連れて来ます。",
-   "en": "I understand. I'll definitely find the girl with the \"crescent moon birthmark\" on her chest and bring her here.",
+   "en": "",
    "refs": [
     "b:p02:0c93"
    ],
@@ -11721,7 +11721,7 @@
    "id": "m00550",
    "kind": "msg",
    "jp": "私が、いくら捜しても、見つからないのに、おまえごときに\n 見つけられるかしらね。",
-   "en": "I've searched and searched and never found her. I wonder if the likes of you can.",
+   "en": "",
    "refs": [
     "b:p02:0cd2"
    ],
@@ -11731,7 +11731,7 @@
    "id": "m00551",
    "kind": "msg",
    "jp": "いいえ、絶対に見つけます。",
-   "en": "No, I'll find her for sure.",
+   "en": "",
    "refs": [
     "b:p02:0d07"
    ],
@@ -11741,7 +11741,7 @@
    "id": "m00552",
    "kind": "msg",
    "jp": "それじゃあ。買い物をしても困らない程度のお金と洋服を\n あげましょう。健闘を祈っているわ。ホホホホーーッ。",
-   "en": "Very well. I'll give you some clothes, and enough money that shopping won't be a problem. I wish you luck. Hohohohooo!",
+   "en": "",
    "refs": [
     "b:p02:0d1e"
    ],
@@ -11751,7 +11751,7 @@
    "id": "m00553",
    "kind": "msg",
    "jp": "」\nこうして、ミイは猫の姿に戻るために街へ出ていった。\n「",
-   "en": "\"\nAnd so, Mii set out into town to get his cat form back.\n\"",
+   "en": "",
    "refs": [
     "b:p02:0d67"
    ],
@@ -11761,7 +11761,7 @@
    "id": "m00554",
    "kind": "msg",
    "jp": "そうだ、せっかく人間になったのだからそれを利用して、\n あの、かわいいメス猫もついでに捜してしまおう。",
-   "en": "I know - since I've become human anyway, I'll use it to look for that cute female cat while I'm at it.",
+   "en": "",
    "refs": [
     "b:p02:0d8d"
    ],
@@ -11771,7 +11771,7 @@
    "id": "m00555",
    "kind": "msg",
    "jp": "おっ。男！！！",
-   "en": "Wh- a man!!!",
+   "en": "",
    "refs": [
     "b:p05:0019"
    ],
@@ -11781,7 +11781,7 @@
    "id": "m00556",
    "kind": "msg",
    "jp": "」\nなんと。",
-   "en": "\"\nWhat a shock.",
+   "en": "",
    "refs": [
     "b:p05:0026"
    ],
@@ -11791,7 +11791,7 @@
    "id": "m00557",
    "kind": "msg",
    "jp": "この娘",
-   "en": "This girl",
+   "en": "",
    "refs": [
     "b:p05:0032",
     "c:p13:2216"
@@ -11802,7 +11802,7 @@
    "id": "m00558",
    "kind": "msg",
    "jp": "アケミ",
-   "en": "Akemi",
+   "en": "",
    "refs": [
     "b:p05:003d",
     "b:p05:02b3"
@@ -11813,7 +11813,7 @@
    "id": "m00559",
    "kind": "msg",
    "jp": "は、オカマだったのです。",
-   "en": " was actually a guy in drag.",
+   "en": "",
    "refs": [
     "b:p05:0044"
    ],
@@ -11823,7 +11823,7 @@
    "id": "m00560",
    "kind": "msg",
    "jp": "アケミ ",
-   "en": "Akemi ",
+   "en": "",
    "refs": [
     "b:p05:0069",
     "b:p05:00fb",
@@ -11849,7 +11849,7 @@
    "id": "m00561",
    "kind": "msg",
    "jp": "クスン。クスン。",
-   "en": "Sniff. Sniff.",
+   "en": "",
    "refs": [
     "b:p05:0074"
    ],
@@ -11859,7 +11859,7 @@
    "id": "m00562",
    "kind": "msg",
    "jp": "キミ",
-   "en": "You",
+   "en": "",
    "refs": [
     "b:p05:0095",
     "c:p14:172c"
@@ -11870,7 +11870,7 @@
    "id": "m00563",
    "kind": "msg",
    "jp": "アケミちゃん",
-   "en": "Akemi",
+   "en": "",
    "refs": [
     "b:p05:00a0"
    ],
@@ -11880,7 +11880,7 @@
    "id": "m00564",
    "kind": "msg",
    "jp": "・・・男だったの？",
-   "en": "... you were a guy?",
+   "en": "",
    "refs": [
     "b:p05:00aa"
    ],
@@ -11890,7 +11890,7 @@
    "id": "m00565",
    "kind": "msg",
    "jp": "」\nピンクのレースのパンティーのモッコリが気持ちわるいです。",
-   "en": "\"\nThe bulge in those pink lace panties is pretty gross.",
+   "en": "",
    "refs": [
     "b:p05:00b8"
    ],
@@ -11900,7 +11900,7 @@
    "id": "m00566",
    "kind": "msg",
    "jp": "クスン・・・実はそうだったの。\n     お願い、アケミのこと嫌いにならないで・・・",
-   "en": "Sniff... Yes, it's true. Please, don't hate Akemi for it...",
+   "en": "",
    "refs": [
     "b:p05:0106"
    ],
@@ -11910,7 +11910,7 @@
    "id": "m00567",
    "kind": "msg",
    "jp": "」\nすがるような目でミイを見ています。",
-   "en": "\"\nShe's looking at Mii with clinging eyes.",
+   "en": "",
    "refs": [
     "b:p05:013d"
    ],
@@ -11920,7 +11920,7 @@
    "id": "m00568",
    "kind": "msg",
    "jp": "男どうしだって、愛があれば大丈夫よ。\n     ねえ。",
-   "en": "Even between two guys, it's okay if there's love. Right?",
+   "en": "",
    "refs": [
     "b:p05:0175"
    ],
@@ -11930,7 +11930,7 @@
    "id": "m00569",
    "kind": "msg",
    "jp": "     愛してるって言って・・・",
-   "en": "Say you love me...",
+   "en": "",
    "refs": [
     "b:p05:019b"
    ],
@@ -11940,7 +11940,7 @@
    "id": "m00570",
    "kind": "msg",
    "jp": "」\nミイ  （",
-   "en": "\"\nMii  (",
+   "en": "",
    "refs": [
     "b:p05:01b0",
     "b:p06:12a5"
@@ -11951,7 +11951,7 @@
    "id": "m00571",
    "kind": "msg",
    "jp": "言えるか！！そんなもん。",
-   "en": "As if I'd say that!!",
+   "en": "",
    "refs": [
     "b:p05:01bc"
    ],
@@ -11961,7 +11961,7 @@
    "id": "m00572",
    "kind": "msg",
    "jp": "）",
-   "en": ")",
+   "en": "",
    "refs": [
     "b:p05:01cd",
     "b:p05:029d",
@@ -11975,7 +11975,7 @@
    "id": "m00573",
    "kind": "msg",
    "jp": "あっ。それから、このことはパピィーには\n     言わないでね。パピィーは、アケミがオカマだってこと\n     世間に知られるのをとても恐れているの。",
-   "en": "Oh, and please don't tell Papa about this. Papa is terrified that people will find out Akemi is a guy in drag.",
+   "en": "",
    "refs": [
     "b:p05:01ee"
    ],
@@ -11985,7 +11985,7 @@
    "id": "m00574",
    "kind": "msg",
    "jp": "ミイ  （",
-   "en": "Mii  (",
+   "en": "",
    "refs": [
     "b:p05:0257",
     "c:p13:008d"
@@ -11996,7 +11996,7 @@
    "id": "m00575",
    "kind": "msg",
    "jp": "これは、いいことを聞いたぞ。このことをネタにして\n     オヤジを脅して、塩を売ってもらおう。",
-   "en": "Now that's good to know. I'll use this to blackmail the old man into selling me salt.",
+   "en": "",
    "refs": [
     "b:p05:0261"
    ],
@@ -12006,7 +12006,7 @@
    "id": "m00576",
    "kind": "msg",
    "jp": "は、ミイに哀願の眼差しを送っていたが\n捜しているのは、",
-   "en": " gave Mii a pleading look, but the one he was looking for was",
+   "en": "",
    "refs": [
     "b:p05:02ba"
    ],
@@ -12016,7 +12016,7 @@
    "id": "m00577",
    "kind": "msg",
    "jp": "なので彼女（？）を置いて\n魚屋を出た。",
-   "en": ", so he left her (?) behind and walked out of the fish shop.",
+   "en": "",
    "refs": [
     "b:p05:02f3"
    ],
@@ -12026,7 +12026,7 @@
    "id": "m00578",
    "kind": "msg",
    "jp": "あーーーん。待って！！行かないで・・・",
-   "en": "Waaah! Wait!! Don't go...",
+   "en": "",
    "refs": [
     "b:p05:032f"
    ],
@@ -12036,7 +12036,7 @@
    "id": "m00579",
    "kind": "msg",
    "jp": "玲子  ",
-   "en": "Reiko  ",
+   "en": "",
    "refs": [
     "b:p06:0026",
     "b:p06:0354",
@@ -12128,7 +12128,7 @@
    "id": "m00580",
    "kind": "msg",
    "jp": "あらン。また来てくれたのね。うれしいわ。",
-   "en": "Oh my, you came back! I'm so happy.",
+   "en": "",
    "refs": [
     "b:p06:0030"
    ],
@@ -12138,7 +12138,7 @@
    "id": "m00581",
    "kind": "msg",
    "jp": "」\nキャンペーンガールが、ニッコリと笑って迎えてくれた。",
-   "en": "\"\nThe promo girl greeted him with a big smile.",
+   "en": "",
    "refs": [
     "b:p06:0048"
    ],
@@ -12148,7 +12148,7 @@
    "id": "m00582",
    "kind": "msg",
    "jp": "いらっしゃいませ。新発売のスーパー・ＴＲＹ\n     いかがですか？",
-   "en": "Welcome! How about some of our new Super TRY?",
+   "en": "",
    "refs": [
     "b:p06:0080"
    ],
@@ -12158,7 +12158,7 @@
    "id": "m00583",
    "kind": "msg",
    "jp": "」\nキャンペーンガールが、新酒の宣伝をしています。",
-   "en": "\"\nA promo girl is advertising a new drink.",
+   "en": "",
    "refs": [
     "b:p06:00af"
    ],
@@ -12168,7 +12168,7 @@
    "id": "m00584",
    "kind": "msg",
    "jp": "なかなか美人でスタイルもバッチリ決まっています。\nバニーガールの格好がとてもよく似合っています。",
-   "en": "She's quite a beauty, with a knockout figure.\nThe bunny girl outfit suits her very well.",
+   "en": "",
    "refs": [
     "b:p06:01c3"
    ],
@@ -12178,7 +12178,7 @@
    "id": "m00585",
    "kind": "msg",
    "jp": "おいしそうだな・・・。",
-   "en": "Looks tasty...",
+   "en": "",
    "refs": [
     "b:p06:0213"
    ],
@@ -12188,7 +12188,7 @@
    "id": "m00586",
    "kind": "msg",
    "jp": "どこの商店街にでも、かならず一軒はありそうな雰囲気の\n酒屋です。\nバニーガールがなんとも不似合いで異様な雰囲気をかもし\n出しています。",
-   "en": "A liquor store with the kind of atmosphere you'd find in any shopping street.\nThe bunny girl looks totally out of place and gives the store a bizarre air.",
+   "en": "",
    "refs": [
     "b:p06:0224"
    ],
@@ -12198,7 +12198,7 @@
    "id": "m00587",
    "kind": "msg",
    "jp": "レオタードが邪魔で見えない。",
-   "en": "The leotard is in the way, I can't see.",
+   "en": "",
    "refs": [
     "b:p06:0286"
    ],
@@ -12208,7 +12208,7 @@
    "id": "m00588",
    "kind": "msg",
    "jp": "色々な種類の酒が並んでいます。",
-   "en": "All sorts of liquor are lined up.",
+   "en": "",
    "refs": [
     "b:p06:029f"
    ],
@@ -12218,7 +12218,7 @@
    "id": "m00589",
    "kind": "msg",
    "jp": "ピチピチで、体の線がハッキリと見えます。\nハイレグカットで、股にくいこんでいます。",
-   "en": "It's skin-tight, clearly showing the lines of her body.\nIt's a high-leg cut that rides up at the crotch.",
+   "en": "",
    "refs": [
     "b:p06:02b8"
    ],
@@ -12228,7 +12228,7 @@
    "id": "m00590",
    "kind": "msg",
    "jp": "（そういえば、寮の",
-   "en": "(Come to think of it, ",
+   "en": "",
    "refs": [
     "b:p06:02fe"
    ],
@@ -12238,7 +12238,7 @@
    "id": "m00591",
    "kind": "msg",
    "jp": "弥生ちゃん",
-   "en": "Yayoi",
+   "en": "",
    "refs": [
     "b:p06:031a"
    ],
@@ -12248,7 +12248,7 @@
    "id": "m00592",
    "kind": "msg",
    "jp": "がレオタードを欲しいがってたな。）",
-   "en": " at the dorm said she wanted a leotard.)",
+   "en": "",
    "refs": [
     "b:p06:0322"
    ],
@@ -12258,7 +12258,7 @@
    "id": "m00593",
    "kind": "msg",
    "jp": "あん。感じちゃう。",
-   "en": "Ahn. That tickles.",
+   "en": "",
    "refs": [
     "b:p06:035e"
    ],
@@ -12268,7 +12268,7 @@
    "id": "m00594",
    "kind": "msg",
    "jp": "ちょっとぉ。おさわりは、困りますぅ。",
-   "en": "Hey now. No touching, please.",
+   "en": "",
    "refs": [
     "b:p06:0390"
    ],
@@ -12278,7 +12278,7 @@
    "id": "m00595",
    "kind": "msg",
    "jp": "あっ。はぁぁぁん。",
-   "en": "Ah. Haaahn.",
+   "en": "",
    "refs": [
     "b:p06:03ce"
    ],
@@ -12288,7 +12288,7 @@
    "id": "m00596",
    "kind": "msg",
    "jp": "」\n彼女は、いやがっている様子は、ないようだ。",
-   "en": "\"\nShe doesn't seem to mind at all.",
+   "en": "",
    "refs": [
     "b:p06:03d9"
    ],
@@ -12298,7 +12298,7 @@
    "id": "m00597",
    "kind": "msg",
    "jp": "お客さん！そんなところさわらないで下さい。",
-   "en": "Sir! Please don't touch me there.",
+   "en": "",
    "refs": [
     "b:p06:041a"
    ],
@@ -12308,7 +12308,7 @@
    "id": "m00598",
    "kind": "msg",
    "jp": "あん。そんな風にさわられたら・・・私・・・\n     気が遠くなっちゃいそう。",
-   "en": "Ahn. If you touch me like that... I... I think I'm going to faint.",
+   "en": "",
    "refs": [
     "b:p06:0446"
    ],
@@ -12318,7 +12318,7 @@
    "id": "m00599",
    "kind": "msg",
    "jp": "お客さん。おさわり千円ですよ。",
-   "en": "Sir, touching is a thousand yen.",
+   "en": "",
    "refs": [
     "b:p06:0487"
    ],
@@ -12328,7 +12328,7 @@
    "id": "m00600",
    "kind": "msg",
    "jp": "・・・ちょっと違うような気がするんですが。",
-   "en": "...I feel like that's not quite right.",
+   "en": "",
    "refs": [
     "b:p06:04a7"
    ],
@@ -12338,7 +12338,7 @@
    "id": "m00601",
    "kind": "msg",
    "jp": "あら、ごめんなさい。つい、いつもの癖で・・・。",
-   "en": "Oh, I'm sorry. Force of habit...",
+   "en": "",
    "refs": [
     "b:p06:04ce",
     "b:p06:05b1"
@@ -12349,7 +12349,7 @@
    "id": "m00602",
    "kind": "msg",
    "jp": "」\nいつもって・・・いったいどんなバイトをしているんだろう？",
-   "en": "\"\nHabit...? What kind of side job does she usually do?",
+   "en": "",
    "refs": [
     "b:p06:04ea"
    ],
@@ -12359,7 +12359,7 @@
    "id": "m00603",
    "kind": "msg",
    "jp": "玲子  「",
-   "en": "Reiko  \"",
+   "en": "",
    "refs": [
     "b:p06:051b",
     "b:p06:055f",
@@ -12374,7 +12374,7 @@
    "id": "m00604",
    "kind": "msg",
    "jp": "あん。そんな風にさわられまくったら・・・私・・・\n     気が遠くなっちゃいそう。",
-   "en": "Ahn. If you keep touching me all over like that... I... I think I'm going to faint.",
+   "en": "",
    "refs": [
     "b:p06:0524"
    ],
@@ -12384,7 +12384,7 @@
    "id": "m00605",
    "kind": "msg",
    "jp": "お客さん。おさわり一回千円ですよ。",
-   "en": "Sir, touching is a thousand yen a pop.",
+   "en": "",
    "refs": [
     "b:p06:0568"
    ],
@@ -12394,7 +12394,7 @@
    "id": "m00606",
    "kind": "msg",
    "jp": "ちょっと、違うような気がするんですが。",
-   "en": "I feel like that's not quite right.",
+   "en": "",
    "refs": [
     "b:p06:058c"
    ],
@@ -12404,7 +12404,7 @@
    "id": "m00607",
    "kind": "msg",
    "jp": "」\n玲子  「",
-   "en": "\"\nReiko  \"",
+   "en": "",
    "refs": [
     "b:p06:05a6",
     "b:p06:0c1d"
@@ -12415,7 +12415,7 @@
    "id": "m00608",
    "kind": "msg",
    "jp": "」\nいつもって・・・いったいどんな事をいつもをしているんだろう？",
-   "en": "\"\nHabit...? What on earth does she usually do?",
+   "en": "",
    "refs": [
     "b:p06:05cd"
    ],
@@ -12425,7 +12425,7 @@
    "id": "m00609",
    "kind": "msg",
    "jp": "玲子 ",
-   "en": "Reiko ",
+   "en": "",
    "refs": [
     "b:p06:0614"
    ],
@@ -12435,7 +12435,7 @@
    "id": "m00610",
    "kind": "msg",
    "jp": "むやみに商品にさわらないで下さい。",
-   "en": "Please don't handle the merchandise.",
+   "en": "",
    "refs": [
     "b:p06:061d"
    ],
@@ -12445,7 +12445,7 @@
    "id": "m00611",
    "kind": "msg",
    "jp": "あらぁん。お客さん何なさるんですか！！",
-   "en": "Oh my! Sir, what are you doing!!",
+   "en": "",
    "refs": [
     "b:p06:0652"
    ],
@@ -12455,7 +12455,7 @@
    "id": "m00612",
    "kind": "msg",
    "jp": "レオタードは、女の子の体にピッタリとフィットしていて\n脱がせられなかった。\nミイ  （",
-   "en": "The leotard fit snugly to her body and wouldn't come off.\nMii  (",
+   "en": "",
    "refs": [
     "b:p06:066f"
    ],
@@ -12465,7 +12465,7 @@
    "id": "m00613",
    "kind": "msg",
    "jp": "なんて脱がせにくい服なんだ。\n     これは、彼女をその気にさせて彼女に脱いでもらわ\n     ないと無理かな・・・。",
-   "en": "What a hard outfit to take off. I guess it's impossible unless I get her in the mood and have her take it off herself...",
+   "en": "",
    "refs": [
     "b:p06:06b0"
    ],
@@ -12475,7 +12475,7 @@
    "id": "m00614",
    "kind": "msg",
    "jp": "ミイは、寮の女の子がレオタードを欲しがっていたことを\n思いだしてレオタードを取ろうとした。",
-   "en": "Remembering that a girl at the dorm wanted a leotard, Mii tried to take it.",
+   "en": "",
    "refs": [
     "b:p06:06ff"
    ],
@@ -12485,7 +12485,7 @@
    "id": "m00615",
    "kind": "msg",
    "jp": "やぁン。お客さん何なさるんですか！！",
-   "en": "Eek! Sir, what are you doing!!",
+   "en": "",
    "refs": [
     "b:p06:075b"
    ],
@@ -12495,7 +12495,7 @@
    "id": "m00616",
    "kind": "msg",
    "jp": "」\nレオタードは、女の子の体にピッタリとフィットしていて\n脱がせられなかった。\nミイ  （",
-   "en": "\"\nThe leotard fit snugly to her body and wouldn't come off.\nMii  (",
+   "en": "",
    "refs": [
     "b:p06:0775"
    ],
@@ -12505,7 +12505,7 @@
    "id": "m00617",
    "kind": "msg",
    "jp": "なんて脱がせにくい服なんだ。",
-   "en": "What a hard outfit to take off.",
+   "en": "",
    "refs": [
     "b:p06:07b8"
    ],
@@ -12515,7 +12515,7 @@
    "id": "m00618",
    "kind": "msg",
    "jp": "）\nその上",
-   "en": ")\nOn top of that, ",
+   "en": "",
    "refs": [
     "b:p06:07cc"
    ],
@@ -12525,7 +12525,7 @@
    "id": "m00619",
    "kind": "msg",
    "jp": "玲子",
-   "en": "Reiko",
+   "en": "",
    "refs": [
     "b:p06:07e3",
     "b:p06:1178",
@@ -12547,7 +12547,7 @@
    "id": "m00620",
    "kind": "msg",
    "jp": "が、ジタバタと、動くので余計に取りにくかった。\nこれは、彼女が動けなくなった時に取るしかなさそうだ。",
-   "en": " kept squirming, making it even harder.\nLooks like the only way is to take it when she can't move.",
+   "en": "",
    "refs": [
     "b:p06:07e8"
    ],
@@ -12557,7 +12557,7 @@
    "id": "m00621",
    "kind": "msg",
    "jp": "万引は困りますぅ。",
-   "en": "No shoplifting, please.",
+   "en": "",
    "refs": [
     "b:p06:0848"
    ],
@@ -12567,7 +12567,7 @@
    "id": "m00622",
    "kind": "msg",
    "jp": "ミイは、買ったばかりのビールを飲んだ。",
-   "en": "Mii drank the beer he had just bought.",
+   "en": "",
    "refs": [
     "b:p06:0859"
    ],
@@ -12577,7 +12577,7 @@
    "id": "m00623",
    "kind": "msg",
    "jp": "ステキ。いい飲みっぷりね。",
-   "en": "Wonderful! You sure can drink.",
+   "en": "",
    "refs": [
     "b:p06:0890"
    ],
@@ -12587,7 +12587,7 @@
    "id": "m00624",
    "kind": "msg",
    "jp": "」\nクラッ。一瞬、目の前が真っ暗になった。\nミイ  「",
-   "en": "\"\nWhoa. For a moment everything went black.\nMii  \"",
+   "en": "",
    "refs": [
     "b:p06:08a4"
    ],
@@ -12597,7 +12597,7 @@
    "id": "m00625",
    "kind": "msg",
    "jp": "アレレ。ヒック・・・酔っはらっちはったみたいら。",
-   "en": "Whoa. Hic... Guesh I got drunk.",
+   "en": "",
    "refs": [
     "b:p06:08cd"
    ],
@@ -12607,7 +12607,7 @@
    "id": "m00626",
    "kind": "msg",
    "jp": "まぁ。大丈夫ですかぁ？",
-   "en": "Oh my, are you alright?",
+   "en": "",
    "refs": [
     "b:p06:090b"
    ],
@@ -12617,7 +12617,7 @@
    "id": "m00627",
    "kind": "msg",
    "jp": "」\nミイは、フラフラとその場にしゃがみこんだ。",
-   "en": "\"\nMii staggered and crouched down on the spot.",
+   "en": "",
    "refs": [
     "b:p06:091d"
    ],
@@ -12627,7 +12627,7 @@
    "id": "m00628",
    "kind": "msg",
    "jp": "ウィック。",
-   "en": "Hic.",
+   "en": "",
    "refs": [
     "b:p06:0948"
    ],
@@ -12637,7 +12637,7 @@
    "id": "m00629",
    "kind": "msg",
    "jp": "ふひひひひ。",
-   "en": "Heeheehee.",
+   "en": "",
    "refs": [
     "b:p06:095e"
    ],
@@ -12647,7 +12647,7 @@
    "id": "m00630",
    "kind": "msg",
    "jp": "コポッ。",
-   "en": "Blorp.",
+   "en": "",
    "refs": [
     "b:p06:0971"
    ],
@@ -12657,7 +12657,7 @@
    "id": "m00631",
    "kind": "msg",
    "jp": "ウゥイイ。",
-   "en": "Uuuhh.",
+   "en": "",
    "refs": [
     "b:p06:0985"
    ],
@@ -12667,7 +12667,7 @@
    "id": "m00632",
    "kind": "msg",
    "jp": "ぐふふふん。",
-   "en": "Guhuhuhn.",
+   "en": "",
    "refs": [
     "b:p06:099b"
    ],
@@ -12677,7 +12677,7 @@
    "id": "m00633",
    "kind": "msg",
    "jp": "ふにぃぃぃぃ。",
-   "en": "Funyiiii.",
+   "en": "",
    "refs": [
     "b:p06:09af"
    ],
@@ -12687,7 +12687,7 @@
    "id": "m00634",
    "kind": "msg",
    "jp": "にぉぉぉぉぉん。",
-   "en": "Nyooooon.",
+   "en": "",
    "refs": [
     "b:p06:09c3"
    ],
@@ -12697,7 +12697,7 @@
    "id": "m00635",
    "kind": "msg",
    "jp": "お客さん。大丈夫ですかぁ？",
-   "en": "Sir, are you alright?",
+   "en": "",
    "refs": [
     "b:p06:09fc"
    ],
@@ -12707,7 +12707,7 @@
    "id": "m00636",
    "kind": "msg",
    "jp": "はふぅ。うん。なんとか、酔いがさめたみたい。",
-   "en": "Phew. Yeah. I think I've sobered up, more or less.",
+   "en": "",
    "refs": [
     "b:p06:0a1c"
    ],
@@ -12717,7 +12717,7 @@
    "id": "m00637",
    "kind": "msg",
    "jp": "よかった。急に動かなくなるからおどろいたわ。",
-   "en": "Thank goodness. You froze up so suddenly, it scared me.",
+   "en": "",
    "refs": [
     "b:p06:0a53"
    ],
@@ -12727,7 +12727,7 @@
    "id": "m00638",
    "kind": "msg",
    "jp": "まいど、ありがうございまーす。",
-   "en": "Thank you very much, come agaaain!",
+   "en": "",
    "refs": [
     "b:p06:0a97"
    ],
@@ -12737,7 +12737,7 @@
    "id": "m00639",
    "kind": "msg",
    "jp": "ありがとうございまーす。これ、発売記念でーす。",
-   "en": "Thank you very muuuch! This is a launch-day gift!",
+   "en": "",
    "refs": [
     "b:p06:0ad5"
    ],
@@ -12747,7 +12747,7 @@
    "id": "m00640",
    "kind": "msg",
    "jp": "」\nタオルをもらいました。",
-   "en": "\"\nMii received a towel.",
+   "en": "",
    "refs": [
     "b:p06:0af6"
    ],
@@ -12757,7 +12757,7 @@
    "id": "m00641",
    "kind": "msg",
    "jp": "いらっしゃいまーせぇ。",
-   "en": "Welcome, welcooome!",
+   "en": "",
    "refs": [
     "b:p06:0b22",
     "b:p06:0b87",
@@ -12770,7 +12770,7 @@
    "id": "m00642",
    "kind": "msg",
    "jp": "お仕事大変そうですね。",
-   "en": "Your job looks tough.",
+   "en": "",
    "refs": [
     "b:p06:0b3a",
     "b:p06:0c0b"
@@ -12781,7 +12781,7 @@
    "id": "m00643",
    "kind": "msg",
    "jp": "そう思うんなら、ビール買って下さいな。",
-   "en": "If you think so, then buy some beer, won't you?",
+   "en": "",
    "refs": [
     "b:p06:0b57",
     "b:p06:0c28"
@@ -12792,7 +12792,7 @@
    "id": "m00644",
    "kind": "msg",
    "jp": "いらっしゃいませ。新製品のビール。\n     ＜スーパー・トライ＞いかがですか？",
-   "en": "Welcome! How about our new beer, <Super TRY>?",
+   "en": "",
    "refs": [
     "b:p06:0ba1",
     "b:p06:0c72"
@@ -12803,7 +12803,7 @@
    "id": "m00645",
    "kind": "msg",
    "jp": "７８・５６・８２よ。",
-   "en": "78-56-82.",
+   "en": "",
    "refs": [
     "b:p06:0ccd"
    ],
@@ -12813,7 +12813,7 @@
    "id": "m00646",
    "kind": "msg",
    "jp": "私、アザなんてないわよぉ。",
-   "en": "I don't have any birthmark, you know.",
+   "en": "",
    "refs": [
     "b:p06:0d03"
    ],
@@ -12823,7 +12823,7 @@
    "id": "m00647",
    "kind": "msg",
    "jp": "ただし、何ですか？",
-   "en": "\"But\" what?",
+   "en": "",
    "refs": [
     "b:p06:0d26"
    ],
@@ -12833,7 +12833,7 @@
    "id": "m00648",
    "kind": "msg",
    "jp": "見るだけなんて許さないわよ。",
-   "en": "I won't allow you to just look.",
+   "en": "",
    "refs": [
     "b:p06:0d52"
    ],
@@ -12843,7 +12843,7 @@
    "id": "m00649",
    "kind": "msg",
    "jp": "服を脱がせるからには、\n     それなりの事をしてくれるんでしょうね。",
-   "en": "If you're going to take my clothes off, you'd better make it worth my while.",
+   "en": "",
    "refs": [
     "b:p06:0d92"
    ],
@@ -12853,7 +12853,7 @@
    "id": "m00650",
    "kind": "msg",
    "jp": "？？？？",
-   "en": "????",
+   "en": "",
    "refs": [
     "b:p06:0dc8"
    ],
@@ -12863,7 +12863,7 @@
    "id": "m00651",
    "kind": "msg",
    "jp": "服を脱がして、その気にさせて\n     胸を見るだけで放り出すつもりなの？",
-   "en": "You're going to undress me, get me all in the mood, then just take a look at my chest and toss me aside?",
+   "en": "",
    "refs": [
     "b:p06:0def"
    ],
@@ -12873,7 +12873,7 @@
    "id": "m00652",
    "kind": "msg",
    "jp": "いやぁ。そういうつもりじゃあ・・・。",
-   "en": "N-no, that's not what I meant...",
+   "en": "",
    "refs": [
     "b:p06:0e2c"
    ],
@@ -12883,7 +12883,7 @@
    "id": "m00653",
    "kind": "msg",
    "jp": "」\n    （にゃはは。まいったなこりゃ・・・。）\n好きモノのお姉さんに迫られてミイの鼻の下はダルンと伸びた。",
-   "en": "\"\n(Nyahaha. Well, this is a fine mess...)\nWith a frisky older woman coming on to him, Mii's face went all slack and goofy.",
+   "en": "",
    "refs": [
     "b:p06:0e41"
    ],
@@ -12893,7 +12893,7 @@
    "id": "m00654",
    "kind": "msg",
    "jp": "そうね。ピィーをしてくれるんなら\n     見せてあげてもいいわよ。",
-   "en": "Let's see. If you'll do some Beep with me, I might show you.",
+   "en": "",
    "refs": [
     "b:p06:0eaf"
    ],
@@ -12903,7 +12903,7 @@
    "id": "m00655",
    "kind": "msg",
    "jp": "胸を見せてください。",
-   "en": "Please show me your chest.",
+   "en": "",
    "refs": [
     "b:p06:0ee9",
     "b:p06:0f36"
@@ -12914,7 +12914,7 @@
    "id": "m00656",
    "kind": "msg",
    "jp": "いいわよ。・・・ただし！",
-   "en": "Sure. ...But!",
+   "en": "",
    "refs": [
     "b:p06:0f15"
    ],
@@ -12924,7 +12924,7 @@
    "id": "m00657",
    "kind": "msg",
    "jp": "えーーーーっ。\n     ・・・どうしようかな。",
-   "en": "Whaaaat? ...What should I do?",
+   "en": "",
    "refs": [
     "b:p06:0f62"
    ],
@@ -12934,7 +12934,7 @@
    "id": "m00658",
    "kind": "msg",
    "jp": "海外旅行に行って、ブランド物を買ってくるのが趣味なの。",
-   "en": "My hobby is traveling abroad and buying designer goods.",
+   "en": "",
    "refs": [
     "b:p06:0fa1"
    ],
@@ -12944,7 +12944,7 @@
    "id": "m00659",
    "kind": "msg",
    "jp": "・・・そんなおとぎ話、真剣に信じてるの？",
-   "en": "...You seriously believe a fairy tale like that?",
+   "en": "",
    "refs": [
     "b:p06:0ff0"
    ],
@@ -12954,7 +12954,7 @@
    "id": "m00660",
    "kind": "msg",
    "jp": "おいしそうでしょ？",
-   "en": "Looks tasty, doesn't it?",
+   "en": "",
    "refs": [
     "b:p06:1031"
    ],
@@ -12964,7 +12964,7 @@
    "id": "m00661",
    "kind": "msg",
    "jp": "現役女子大生ョ。でも、年はナ・イ・ショ。",
-   "en": "I'm a college girl. But my age is a se-cret.",
+   "en": "",
    "refs": [
     "b:p06:105c"
    ],
@@ -12974,7 +12974,7 @@
    "id": "m00662",
    "kind": "msg",
    "jp": "もぉん。レ・イ・コだってばぁ。忘れちゃイヤん。",
-   "en": "Mooo. It's Re-i-ko! Don't you dare forget.",
+   "en": "",
    "refs": [
     "b:p06:1096"
    ],
@@ -12984,7 +12984,7 @@
    "id": "m00663",
    "kind": "msg",
    "jp": "うふん。玲子（レイコ）っていうの。\n     いい名前でしょ。",
-   "en": "Mmm. My name's Reiko. Pretty name, isn't it?",
+   "en": "",
    "refs": [
     "b:p06:10c4"
    ],
@@ -12994,7 +12994,7 @@
    "id": "m00664",
    "kind": "msg",
    "jp": "困ります。私は商品じゃありませーん。",
-   "en": "Please don't. I'm not part of the merchandise.",
+   "en": "",
    "refs": [
     "b:p06:1111"
    ],
@@ -15187,7 +15187,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "うん。",
-   "en": "Yeah.",
+   "en": "",
    "refs": [
     "b:p09:089b",
     "b:p09:08f4",
@@ -15203,7 +15203,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "断る",
-   "en": "Refuse",
+   "en": "",
    "refs": [
     "b:p09:08a2",
     "b:p09:08fb",
@@ -15219,7 +15219,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "考える",
-   "en": "Think",
+   "en": "",
    "refs": [
     "b:p09:08a9",
     "b:p09:0902",
@@ -21355,7 +21355,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "好き",
-   "en": "Like",
+   "en": "",
    "refs": [
     "b:p52:08ac"
    ],
@@ -21365,7 +21365,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "嫌い",
-   "en": "Dislike",
+   "en": "",
    "refs": [
     "b:p52:08b3"
    ],
@@ -21415,7 +21415,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "それでも嫌い",
-   "en": "Still Hate",
+   "en": "",
    "refs": [
     "b:p52:09f3"
    ],
@@ -21425,7 +21425,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "やっぱり好き",
-   "en": "Like Anyway",
+   "en": "",
    "refs": [
     "b:p52:09ff"
    ],
@@ -26119,7 +26119,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "胸を見せてもらう",
-   "en": "See Her Chest",
+   "en": "",
    "refs": [
     "c:p11:15df"
    ],
@@ -26129,7 +26129,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "ピィーをする",
-   "en": "Do Beep",
+   "en": "",
    "refs": [
     "c:p11:15ed"
    ],
@@ -27514,7 +27514,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "綾乃",
-   "en": "Ayano",
+   "en": "",
    "refs": [
     "c:p13:0736",
     "c:p13:0b0a"
@@ -27525,7 +27525,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "由利子",
-   "en": "Yuriko",
+   "en": "",
    "refs": [
     "c:p13:073e",
     "c:p13:0b12"
@@ -27536,7 +27536,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "両方",
-   "en": "Both",
+   "en": "",
    "refs": [
     "c:p13:0748",
     "c:p13:0b1c",
@@ -27689,7 +27689,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "ムチを持った娘",
-   "en": "Girl w/ Whip",
+   "en": "",
    "refs": [
     "c:p13:0b26"
    ],
@@ -27699,7 +27699,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "縛られている娘",
-   "en": "Tied-Up Girl",
+   "en": "",
    "refs": [
     "c:p13:0b35"
    ],
@@ -35326,7 +35326,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "屋敷に連れて行く",
-   "en": "Take to Mansion",
+   "en": "",
    "refs": [
     "c:p24:08f5",
     "c:p24:0aa5"
@@ -35337,7 +35337,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "一緒に逃げる",
-   "en": "Run Together",
+   "en": "",
    "refs": [
     "c:p24:0905",
     "c:p24:0ab5",
@@ -35729,7 +35729,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "戻してもらう",
-   "en": "Get Restored",
+   "en": "",
    "refs": [
     "c:p26:04b3"
    ],
@@ -35739,7 +35739,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "後にしてもらう",
-   "en": "Ask for Later",
+   "en": "",
    "refs": [
     "c:p26:04be"
    ],
@@ -35873,7 +35873,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "猫に戻してもらう",
-   "en": "Turn Back to Cat",
+   "en": "",
    "refs": [
     "c:p26:079b",
     "c:p26:0840",
@@ -35885,7 +35885,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "女の子を助ける",
-   "en": "Save the Girl",
+   "en": "",
    "refs": [
     "c:p26:07a9",
     "c:p26:084e"
@@ -36057,7 +36057,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "人間ままでいい",
-   "en": "Stay Human",
+   "en": "",
    "refs": [
     "c:p26:0baa"
    ],
@@ -36097,7 +36097,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "連れて行く",
-   "en": "Take Along",
+   "en": "",
    "refs": [
     "c:p26:0d2f"
    ],
@@ -36107,7 +36107,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "連れて行かない",
-   "en": "Don't Take",
+   "en": "",
    "refs": [
     "c:p26:0d3a"
    ],
@@ -36907,7 +36907,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "魔女の所へ連れて行く",
-   "en": "Take to the Witch",
+   "en": "",
    "refs": [
     "c:p28:00e4"
    ],
@@ -36917,7 +36917,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "話を聞く",
-   "en": "Listen",
+   "en": "",
    "refs": [
     "c:p28:00f7"
    ],
@@ -36927,7 +36927,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "逃がしてあげる",
-   "en": "Set Free",
+   "en": "",
    "refs": [
     "c:p28:0101"
    ],
@@ -37395,7 +37395,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "あきらめて屋敷に行く",
-   "en": "Give Up, To Mansion",
+   "en": "",
    "refs": [
     "c:p28:0d0a"
    ],
@@ -37405,7 +37405,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "塩を探しに行く",
-   "en": "Look for Salt",
+   "en": "",
    "refs": [
     "c:p28:0d29"
    ],
@@ -38155,7 +38155,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "食べる",
-   "en": "Eat",
+   "en": "",
    "refs": [
     "c:p30:017f"
    ],
@@ -38165,7 +38165,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "食べない",
-   "en": "Not Eat",
+   "en": "",
    "refs": [
     "c:p30:0188"
    ],

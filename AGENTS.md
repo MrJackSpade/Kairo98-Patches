@@ -36,5 +36,23 @@ accident. Other covers one-off work outside those roles.
     says which sections are its own.
   * `games/<title>/strings.json`: the handoff between the roles. Its format is
     in both skills.
+
+## Pulling and merging strings.json
+
+Git merges `games/*/strings.json` with `tools/merge_strings.py`, which matches
+entries by their Japanese text. A pull that brings in a re-extraction (new,
+renumbered, folded or re-padded entries) keeps the English, and the reverse.
+
+* Run `python tools/install_merge_driver.py` once per clone. Git only runs the
+  driver when it is registered in the clone's own config; without it, git
+  silently falls back to a line merge that can attach English to the wrong
+  Japanese.
+* Commit or stash your work before pulling. Git does not run merge drivers
+  against uncommitted changes.
+* Never hand-merge these files or resolve them with `--ours`/`--theirs`. When
+  the driver reports a conflict, it lists each entry it could not merge; fix
+  those entries and rerun the merge.
+* The rules are tested in `tools/test_merge_strings.py`; run it after changing
+  the driver.
   * `ROADMAP.md` and `index/`: status. Each role updates only its own columns
     and records, as its skill says.

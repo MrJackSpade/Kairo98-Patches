@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "《創立以来一世紀半の時とともに、伝統を築いてきた、名門セントソフィア女学院》",
-   "en": "",
+   "en": "(A century and a half since its founding, this prestigious St. Sophia Girls' Academy has built its traditions.)",
    "refs": [
     "scene1:0"
    ],
@@ -16,7 +16,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "《この天使たちの園に俺が（表向き）教師として赴任して３ヶ月になる》",
-   "en": "",
+   "en": "(It's been three months since I came to this garden of angels as a teacher—officially, anyway.)",
    "refs": [
     "scene2:0"
    ],
@@ -26,7 +26,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "《一世紀半の伝統にふさわしく、夜の学院にまつわる様々な噂がある‥‥‥》",
-   "en": "",
+   "en": "(True to a century and a half of tradition, there are all sorts of rumors about the academy at night...)",
    "refs": [
     "scene3:0"
    ],
@@ -36,7 +36,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "《‥‥‥そう、この学院は、夜と昼まったく別の顔をもっているのだ‥‥‥》",
-   "en": "",
+   "en": "(...Yes, this academy has a completely different face at night than it does by day...)",
    "refs": [
     "scene4:0"
    ],
@@ -46,7 +46,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "ＡＮＹ―ＫＥＹ　ＴＯ　ＳＴＡＲＴ",
-   "en": "",
+   "en": "ANY-KEY TO START",
    "refs": [
     "scene5:0"
    ],
@@ -56,7 +56,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "《校長室に呼ばれた》",
-   "en": "",
+   "en": "(I was summoned to the principal's office.)",
    "refs": [
     "scene6:0"
    ],
@@ -66,7 +66,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "{C1}校長：「もう、この学院には慣れたかね？」",
-   "en": "",
+   "en": "{C1}Principal: \"Have you gotten used to this academy yet?\"",
    "refs": [
     "scene6:1"
    ],
@@ -76,7 +76,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "「ええ、まあなんとか。　しかし、ここでは空気と時間が独特の流れ方をしているような気がしますよ」",
-   "en": "",
+   "en": "\"Yes, more or less. But I feel like the air and time here flow in a peculiar way.\"",
    "refs": [
     "scene6:2"
    ],
@@ -86,7 +86,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "{C1}校長：「それがこの学院の伝統というものだろう。　私の誇りとするところだ。　もっとも、ここのところ、別の空気も流れ始めているようだ。　それで、君にきて来てもらった訳だが‥‥‥」",
-   "en": "",
+   "en": "{C1}Principal: \"That's what they call tradition at this academy. It's a source of pride for me. Though lately, it seems a different kind of air has started flowing as well. That's why I asked you to come...\"",
    "refs": [
     "scene6:3"
    ],
@@ -96,7 +96,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "{C1}校長：「たのんでおいた例の調査だが、少しは進んでいるかね？」",
-   "en": "",
+   "en": "{C1}Principal: \"That investigation I asked you to conduct—has it progressed at all?\"",
    "refs": [
     "scene6:4"
    ],
@@ -106,7 +106,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "「ええ噂のようなものはたくさん耳にしましたが、報告できるようなものは、まだありません」",
-   "en": "",
+   "en": "\"Yes, I've heard plenty of rumors, but nothing I can report yet.\"",
    "refs": [
     "scene6:5"
    ],
@@ -116,7 +116,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "{C1}校長：「うむ、生徒の夜の行動が噂になるのは、おだやかではない。　心配しているのだよ。　だが、調査はくれぐれも内密に、かつ君個人のレベルでお願いするよ」",
-   "en": "",
+   "en": "{C1}Principal: \"Hmm. Having rumors about students' nighttime activities is hardly reassuring. I'm worried. But please keep the investigation strictly confidential, and on a personal level.\"",
    "refs": [
     "scene6:6"
    ],
@@ -126,7 +126,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "{C1}校長：「物見高いマスコミにでも知れて、彼らにここを食い荒されたら、学院の伝統も生徒達の心も傷つきかねないからな」",
-   "en": "",
+   "en": "{C1}Principal: \"If the nosy media got wind of it and tore this place apart, it could damage both the academy's traditions and the students' hearts.\"",
    "refs": [
     "scene6:7"
    ],
@@ -136,7 +136,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "{C1}校長：「これが、以前君に頼まれたていた学院に関する資料だ。　渡しておくよ」",
-   "en": "",
+   "en": "{C1}Principal: \"These are the materials about the academy you asked for before. I'll hand them over.\"",
    "refs": [
     "scene6:8"
    ],
@@ -146,7 +146,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "「ありがとうございます。　エート、『聖ソフィア学院史』、『学友会名簿』‥‥‥これは学院の建物の見取図ですね。　おや？このコピーはなんでしょうか？」",
-   "en": "",
+   "en": "\"Thank you very much. Let's see... 'History of St. Sophia Academy,' 'Student Council Roster'... This is a floor plan of the academy buildings, isn't it? Oh? What's this copy?\"",
    "refs": [
     "scene6:9"
    ],
@@ -156,7 +156,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "{C1}校長：「どれ？ああそれも見取図じゃないかね。　資料集めを依頼した鮎川先生が〈ソフィア学院〉〈見取図〉の項目で索引したら、その資料の番号も出てきたそうだ。　オールドホーン文庫にあった古文書の一部らしい」",
-   "en": "",
+   "en": "{C1}Principal: \"Let me see? Ah, that's also a floor plan, isn't it? When I asked Ayukawa-sensei to gather materials, he indexed under 'Sophia Academy' and 'Floor Plan,' and that document's number came up too. It seems to be part of an old manuscript from the Oldhorn Library.\"",
    "refs": [
     "scene6:10"
    ],
@@ -166,7 +166,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "「手書きのようですが、地図のようにも、分子モデルのようにも見えますね。　この点線が交差する処のコウモリの印なんか思わせぶりですね。　埋蔵金の地図かも知れない（笑）」",
-   "en": "",
+   "en": "\"It looks handwritten, but it could be a map or a molecular model. The bat mark where these dotted lines cross is rather suggestive. Maybe it's a treasure map (laughs).\"",
    "refs": [
     "scene6:11"
    ],
@@ -176,7 +176,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "{C1}校長：「古いカードをコンピュータに打ち込むときミスがあったのかもしれないな。とにかく渡しておくよ」",
-   "en": "",
+   "en": "{C1}Principal: \"Maybe there was an error when the old cards were entered into the computer. Anyway, I'll leave it with you.\"",
    "refs": [
     "scene6:12"
    ],
@@ -186,7 +186,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "{C1}校長：「ところで君は生徒たちにけっこう人気があるそうじゃないか。　なにせうちの生徒たちは美しさも好奇心も盛りの令嬢たちばかりだ。　君自身が〈悪い噂〉にならないようにしてくれよ（笑）」",
-   "en": "",
+   "en": "{C1}Principal: \"By the way, I hear you're quite popular with the students. After all, our students are young ladies in the bloom of beauty and curiosity. Just make sure you don't become a 'bad rumor' yourself (laughs).\"",
    "refs": [
     "scene6:13"
    ],
@@ -196,7 +196,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "{C1}校長：「学生時代に君がたくさん女性たちを相手に〈活躍〉したことは、君のお父さんに相談されて知っているよ」",
-   "en": "",
+   "en": "{C1}Principal: \"I know about your 'exploits' with many women during your student days—your father consulted me about it.\"",
    "refs": [
     "scene6:14"
    ],
@@ -206,7 +206,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "「父は弟に子供の教育を相談するようなタイプではありません。　ジョークもお上手ですね。　それもネクタイと同じで、イギリス仕込ですか（笑）」",
-   "en": "",
+   "en": "\"My father isn't the type to consult his younger brother about raising children. You're quite good at jokes too. Is that also British-trained, like your necktie? (laughs)\"",
    "refs": [
     "scene6:15"
    ],
@@ -216,7 +216,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "{C1}校長：「それじゃ私の記憶違いだったのかな（笑）」",
-   "en": "",
+   "en": "{C1}Principal: \"Then perhaps my memory was mistaken (laughs).\"",
    "refs": [
     "scene6:16"
    ],
@@ -226,7 +226,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "{C1}校長：「信頼しているよ。　なにせ私と同じ血が流れているんだからな」",
-   "en": "",
+   "en": "{C1}Principal: \"I trust you. After all, the same blood flows through your veins as mine.\"",
    "refs": [
     "scene6:17"
    ],
@@ -236,7 +236,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "「はい、『教育とは身をもって多くを与え導く』でしたね。　ところで、〈血〉の話ですが、叔父さん、いや校長こそ若い頃ずいぶんと活躍したそうじゃないですか（笑）」",
-   "en": "",
+   "en": "\"Yes, 'Education is giving much through one's own example and guiding'—that's the motto. Speaking of 'blood,' Uncle—I mean, Principal—I hear you were quite active in your youth yourself (laughs).\"",
    "refs": [
     "scene6:18"
    ],
@@ -246,7 +246,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "{C1}校長：「昔の話だから忘れたな。　誰も知らないジュラ紀のような昔だ。　まあとにかくよろしく頼むよ。　行きなさい」",
-   "en": "",
+   "en": "{C1}Principal: \"That's old news, I've forgotten it. It's ancient history, like the Jurassic period, known to no one. Well, anyway, I'm counting on you. You may go.\"",
    "refs": [
     "scene6:19"
    ],
@@ -256,7 +256,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "《ソフィア学院の校長は、俺とは叔父と甥の関係だ。　叔父はずっとイギリスで教鞭をとっていたので、会う機会はほとんどなかったが、父に言わせると俺は叔父に似ているらしい》",
-   "en": "",
+   "en": "(The principal of Sophia Academy is my uncle—my father's brother. He'd been teaching in England all along, so we rarely had the chance to meet, but according to my father, I resemble my uncle.)",
    "refs": [
     "scene6:20"
    ],
@@ -266,7 +266,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "《たしかに真面目だけが取柄で頑固者の父よりも、気が合うような感じがする。　若かった頃は情熱的な活動家だったそうだ。　今はその情熱をソフィア学院で教育に傾けている、ということらしい》",
-   "en": "",
+   "en": "(Indeed, I feel more compatible with him than with my father, whose only virtue is his seriousness and who is stubborn. They say he was a passionate activist in his youth. Now he apparently devotes that passion to education at Sophia Academy.)",
    "refs": [
     "scene6:21"
    ],
@@ -276,7 +276,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "《努めて明るく振舞おうとしているようだけれど、疲れがたまっているようだ。　校長もただ座っていればいいというわけにはいかないらしい。　それに今度のような噂があっては、気が休まるときが無いだろう》",
-   "en": "",
+   "en": "(He seems to be trying to act cheerful, but he looks tired. Being principal isn't just sitting around, it seems. And with rumors like these, he must never get a moment's peace.)",
    "refs": [
     "scene6:22"
    ],
@@ -286,7 +286,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "《『これはパイプではない』というタイトルの絵が有ったな。　芸術は難しい》",
-   "en": "",
+   "en": "(There was a painting titled 'This Is Not a Pipe.' Art is difficult.)",
    "refs": [
     "scene6:23"
    ],
@@ -296,7 +296,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "《ソフィア学院の創立者の肖像だ。　優しい表情をしている。　慈愛に満ちた人だったのだろう》",
-   "en": "",
+   "en": "(It's a portrait of the founder of Sophia Academy. He has a gentle expression. He must have been a man full of compassion.)",
    "refs": [
     "scene6:24"
    ],
@@ -306,7 +306,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "《何という名前の植物なのだろう》",
-   "en": "",
+   "en": "(I wonder what kind of plant this is.)",
    "refs": [
     "scene6:25"
    ],
@@ -316,7 +316,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "《時間は学院の内も外も同じ速さで流れているのだろうか？　ここに来てから、時間の感覚が変わってしまったような気きがするのだが‥‥‥》",
-   "en": "",
+   "en": "(Does time flow at the same speed inside the academy as outside? Since I came here, I feel like my sense of time has changed...)",
    "refs": [
     "scene6:26"
    ],
@@ -326,7 +326,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "《いつも校長はセンスがいい。　ロンドンが長かったためだろうか？》",
-   "en": "",
+   "en": "(The principal always has good taste. Maybe because he spent so long in London?)",
    "refs": [
     "scene6:27"
    ],
@@ -336,7 +336,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "《ソフィア学院の校長というのも心労の多い職務なのだろう》",
-   "en": "",
+   "en": "(Being principal of Sophia Academy must be a job full of worries.)",
    "refs": [
     "scene6:28"
    ],
@@ -346,7 +346,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "《俺は叔父に似ていると言われるから、俺もこうなるのかもしれないな。　叔父さんのような年輪を刻むなら、こうなってもいいか》",
-   "en": "",
+   "en": "(They say I resemble my uncle, so maybe I'll end up like this too. If I can carve out rings of age like my uncle's, maybe that's fine.)",
    "refs": [
     "scene6:29"
    ],
@@ -356,7 +356,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "《ローズウッド製かな。　使い込まれていい色をしている》",
-   "en": "",
+   "en": "(Probably rosewood. It's been well used and has a nice color.)",
    "refs": [
     "scene6:30"
    ],
@@ -366,7 +366,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "《絵の具の具合いが、微妙だが、新しい感じの部分がある》",
-   "en": "",
+   "en": "(The paint condition is subtle, but there are parts that look new.)",
    "refs": [
     "scene6:31"
    ],
@@ -376,7 +376,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "《表面の土が変色している》",
-   "en": "",
+   "en": "(The surface soil is discolored.)",
    "refs": [
     "scene6:32"
    ],
@@ -386,7 +386,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "《振子を見ていると、自己催眠にかかっていまいそうだ》",
-   "en": "",
+   "en": "(Watching the pendulum, I feel like I might hypnotize myself.)",
    "refs": [
     "scene6:33"
    ],
@@ -396,7 +396,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "《アンティークもののような色をしている》",
-   "en": "",
+   "en": "(It has the color of an antique.)",
    "refs": [
     "scene6:34"
    ],
@@ -406,7 +406,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "《上品な色と柄だ》",
-   "en": "",
+   "en": "(An elegant color and pattern.)",
    "refs": [
     "scene6:35"
    ],
@@ -416,7 +416,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "《きっちりと櫛がとおっている》",
-   "en": "",
+   "en": "(His hair is neatly combed.)",
    "refs": [
     "scene6:36"
    ],
@@ -426,7 +426,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "「ご用件は何でしょうか？」",
-   "en": "",
+   "en": "\"What is it you need?\"",
    "refs": [
     "scene6:37"
    ],
@@ -436,7 +436,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "{C1}校長：「二人きりの時は、学院内でも、そう堅い言い方をしなくてもいいよ」",
-   "en": "",
+   "en": "{C1}Principal: \"When we're alone, even within the academy, you don't need to be so formal.\"",
    "refs": [
     "scene6:38"
    ],
@@ -446,7 +446,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "《どうも何かひっかかるな。　よく見てみよう》",
-   "en": "",
+   "en": "(Something's bothering me. Let me take a closer look.)",
    "refs": [
     "scene6:39"
    ],
@@ -456,7 +456,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "「壁の肖像画ですが、絵の具のようすが、少しおかしくありませんか？」",
-   "en": "",
+   "en": "\"About the portrait on the wall—doesn't the paint look a little odd?\"",
    "refs": [
     "scene6:40"
    ],
@@ -466,7 +466,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "{C1}校長：「うん、実は二日ほど、ここから持ち去られていたんだ。　戻ってきたらこんなふうになっていた。　警察を学院に入れたくないし、絵も戻ってきたので内密にしておいたんだ」",
-   "en": "",
+   "en": "{C1}Principal: \"Yes, actually, it was taken from here for about two days. When it came back, it looked like this. I didn't want the police in the academy, and since the painting was back, I kept it quiet.\"",
    "refs": [
     "scene6:41"
    ],
@@ -476,7 +476,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "{C1}校長：「まず、後ろの肖像画を見なさい」",
-   "en": "",
+   "en": "{C1}Principal: \"First, look at the portrait behind you.\"",
    "refs": [
     "scene6:42"
    ],
@@ -486,7 +486,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "「ソフィア学院の創立者はどういう人物なんですか？」",
-   "en": "",
+   "en": "\"What kind of person was the founder of Sophia Academy?\"",
    "refs": [
     "scene6:43"
    ],
@@ -496,7 +496,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "{C1}校長：「父方がイギリス系で母方がポーランド系のカナダ人。　家は医薬品で財を成していたそうだ。　本国の大学で化学と薬学を修めた後、イギリスに留学して、化学史に興味を持ち。　その専門になっている」",
-   "en": "",
+   "en": "{C1}Principal: \"A Canadian of English descent on his father's side and Polish on his mother's. His family made their fortune in pharmaceuticals. After studying chemistry and pharmacy at a university in his home country, he studied abroad in England, where he became interested in the history of chemistry. That became his specialty.\"",
    "refs": [
     "scene6:44"
    ],
@@ -506,7 +506,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "{C1}校長：「ユダヤの秘術のカバラや錬金術の調査では世界的な研究業績を残している。　日本にも調査のために立ち寄り、教会の活動に賛同してこの学院を創立した訳だ」",
-   "en": "",
+   "en": "{C1}Principal: \"He left world-class research achievements in the study of Jewish mysticism—Kabbalah and alchemy. He stopped in Japan for research, sympathized with the church's activities, and founded this academy.\"",
    "refs": [
     "scene6:45"
    ],
@@ -516,7 +516,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "「彼は日本で亡くなったんですか？」",
-   "en": "",
+   "en": "\"Did he die in Japan?\"",
    "refs": [
     "scene6:46"
    ],
@@ -526,7 +526,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "{C1}校長：「いや、チベットに調査旅行中に病死している。　病名はわかっていない。　自ら人体実験をしたという噂もあったようだ。　遺体は遺言に従って日本に埋葬され、蔵書と調査資料は本学院に寄贈された」",
-   "en": "",
+   "en": "{C1}Principal: \"No, he died of illness during a research trip to Tibet. The cause is unknown. There were rumors that he experimented on himself. His body was buried in Japan according to his will, and his books and research materials were donated to this academy.\"",
    "refs": [
     "scene6:47"
    ],
@@ -536,7 +536,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "「何という植物ですか？」",
-   "en": "",
+   "en": "\"What kind of plant is this?\"",
    "refs": [
     "scene6:48"
    ],
@@ -546,7 +546,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "{C1}校長：「なんと言ったかな。　中央アジア原産で何かの薬になる木だ。　原木は創立者が持ち帰って、愛好したらしい」",
-   "en": "",
+   "en": "{C1}Principal: \"What was it called... It's a tree native to Central Asia, used for some kind of medicine. The founder brought back the original and apparently cherished it.\"",
    "refs": [
     "scene6:49"
    ],
@@ -556,7 +556,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "{C1}校長：「栽培が難しいうえに、独特の臭いがあるので一般には普及していない。　それに今は国内に持ち込むにしても、検疫を通らないだろうから、そういう意味でもここにしかない貴重な植物といえるな」",
-   "en": "",
+   "en": "{C1}Principal: \"It's difficult to cultivate and has a distinctive odor, so it never became widespread. Besides, even if you tried to bring it into the country now, it wouldn't pass quarantine. In that sense, it's a precious plant found only here.\"",
    "refs": [
     "scene6:50"
    ],
@@ -566,7 +566,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "「土の表面が変色していますね」",
-   "en": "",
+   "en": "\"The surface of the soil is discolored.\"",
    "refs": [
     "scene6:51"
    ],
@@ -576,7 +576,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "{C1}校長：「えっ！本当だ。　気づかなかったよ」",
-   "en": "",
+   "en": "{C1}Principal: \"What! You're right. I hadn't noticed.\"",
    "refs": [
     "scene6:52"
    ],
@@ -586,7 +586,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "「ちょっと失礼、さすがに手に馴染む形と重さですね」",
-   "en": "",
+   "en": "\"Excuse me—it really does have a shape and weight that fits the hand.\"",
    "refs": [
     "scene6:53"
    ],
@@ -596,7 +596,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "《裏側には別状はないようだ》",
-   "en": "",
+   "en": "(The back side seems to be fine.)",
    "refs": [
     "scene6:54"
    ],
@@ -606,7 +606,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "《持てない》",
-   "en": "",
+   "en": "(I can't pick it up.)",
    "refs": [
     "scene6:55"
    ],
@@ -616,7 +616,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "《校長が座っているから、やめておこう》",
-   "en": "",
+   "en": "(The principal is sitting there, so I'll pass.)",
    "refs": [
     "scene6:56"
    ],
@@ -626,7 +626,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "《いくらなんでも、それは失礼だ》",
-   "en": "",
+   "en": "(That would be rude, no matter how you look at it.)",
    "refs": [
     "scene6:57"
    ],
@@ -636,7 +636,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "《校長がいる》",
-   "en": "",
+   "en": "(The principal is here.)",
    "refs": [
     "scene6:58"
    ],
@@ -646,7 +646,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "《ドアがあるけれど、まだ校長の用件が済んでいないから、出るわけにはいかない》",
-   "en": "",
+   "en": "(There's a door, but the principal isn't done with me yet, so I can't leave.)",
    "refs": [
     "scene6:59"
    ],
@@ -656,7 +656,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "《肖像があるけれど、どうする？》",
-   "en": "",
+   "en": "(There's a portrait. What to do?)",
    "refs": [
     "scene6:60"
    ],
@@ -666,7 +666,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "《観葉植物があるけど、どうする？》",
-   "en": "",
+   "en": "(There's a potted plant. What to do?)",
    "refs": [
     "scene6:61"
    ],
@@ -676,7 +676,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "《おっと、まだ校長の話が済んでいないぞ》",
-   "en": "",
+   "en": "(Oops, the principal isn't done talking yet.)",
    "refs": [
     "scene6:62"
    ],
@@ -686,7 +686,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "《生徒会室で情報を収集することにしよう》",
-   "en": "",
+   "en": "(Let's gather information at the student council room.)",
    "refs": [
     "scene6:63"
    ],
@@ -696,7 +696,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "《今はどうしようもない。　たしかに推理小説では依頼人が怪しいというのは、よくある話だが‥‥‥》",
-   "en": "",
+   "en": "(Nothing I can do about it now. In mystery novels, the client being suspicious is a common trope, but...)",
    "refs": [
     "scene6:64"
    ],
@@ -706,7 +706,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "《べつになんの変哲もないパイプだ》",
-   "en": "",
+   "en": "(It's a perfectly ordinary pipe.)",
    "refs": [
     "scene6:65"
    ],
@@ -716,7 +716,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "《一部分、同じ材質の絵の具で塗り直してあるように見える》",
-   "en": "",
+   "en": "(Part of it looks like it's been repainted with paint of the same material.)",
    "refs": [
     "scene6:66"
    ],
@@ -726,7 +726,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "《微弱だけど、独特な香りがあるな》",
-   "en": "",
+   "en": "(It's faint, but there's a distinctive scent.)",
    "refs": [
     "scene6:67"
    ],
@@ -736,7 +736,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "《こんな所に不思議の国への入口があるなんていうのが昔読んだ童話にあったけど、あるわけないか》",
-   "en": "",
+   "en": "(In a fairy tale I read long ago, there was an entrance to a wonderland in a place like this, but there's no way.)",
    "refs": [
     "scene6:68"
    ],
@@ -746,7 +746,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "《校長がイギリスから持ってきたものらしい》",
-   "en": "",
+   "en": "(Apparently the principal brought it from England.)",
    "refs": [
     "scene6:69"
    ],
@@ -756,7 +756,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "《シルク１００％だ》",
-   "en": "",
+   "en": "(It's 100% silk.)",
    "refs": [
     "scene6:70"
    ],
@@ -766,7 +766,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "《生徒会室に来た》",
-   "en": "",
+   "en": "(I arrived at the student council room.)",
    "refs": [
     "scene7:0"
    ],
@@ -776,7 +776,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "「牛乳飲んでるか」",
-   "en": "",
+   "en": "\"Drinking your milk?\"",
    "refs": [
     "scene7:1"
    ],
@@ -786,7 +786,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "{C2}会長：「なぜです？」",
-   "en": "",
+   "en": "{C2}President: \"Why?\"",
    "refs": [
     "scene7:2"
    ],
@@ -796,7 +796,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "「〈牛乳をたくさん飲んで豊かなバストを〉ってわけだ」",
-   "en": "",
+   "en": "\"'Drink plenty of milk for a fuller bust'—that's the idea.\"",
    "refs": [
     "scene7:3"
    ],
@@ -806,7 +806,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "{C2}会長：「挑発するのはやめてください。　先生はひまかもしれませんけど、私たちはそうではないんですから。　それにその種のジョークはこの学院にはそぐわないと思いますけど」",
-   "en": "",
+   "en": "{C2}President: \"Please stop provoking us. You may have time to spare, but we don't. Besides, that kind of joke doesn't suit this academy.\"",
    "refs": [
     "scene7:4"
    ],
@@ -816,7 +816,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "「俺の存在自体がそぐわないんだ」",
-   "en": "",
+   "en": "\"My very existence doesn't suit it.\"",
    "refs": [
     "scene7:5"
    ],
@@ -826,7 +826,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "{C2}会長：「そうかもしれませんね（笑）」",
-   "en": "",
+   "en": "{C2}President: \"That might be true (laughs).\"",
    "refs": [
     "scene7:6"
    ],
@@ -836,7 +836,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "{C2}副会長：「こんにちわ」",
-   "en": "",
+   "en": "{C2}Vice President: \"Hello.\"",
    "refs": [
     "scene7:7"
    ],
@@ -846,7 +846,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "「やあ、今日は一段ときれいだな。　まるでレースのパンティみたいに清楚だ」",
-   "en": "",
+   "en": "\"Hey, you look even prettier today. As pure and chaste as lace panties.\"",
    "refs": [
     "scene7:8"
    ],
@@ -856,7 +856,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "{C2}副会長：「エッ？‥‥‥またまた先生の悪い癖ですね。　私はもう慣れましたけど、中等部から来たばかりの一年生のなかには先生を怖がっている子もいますよ」",
-   "en": "",
+   "en": "{C2}Vice President: \"Huh? ...There you go again with your bad habit, sensei. I'm used to it by now, but some of the first-years who just came from the middle school are scared of you.\"",
    "refs": [
     "scene7:9"
    ],
@@ -866,7 +866,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "「バイキンのようにか？正しい判断だ。　一年生の中にはまだ野生の勘をなくしてない者もいるということだな」",
-   "en": "",
+   "en": "\"Like a germ? A sound judgment. So there are still some first-years who haven't lost their wild instincts.\"",
    "refs": [
     "scene7:10"
    ],
@@ -876,7 +876,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "{C2}副会長：「ふーっ（ためいき）、教師や父兄の中にも先生を問題にしようとするむきもあるようですよ。　校長先生の心労を増やさないためにも気を付けて下さい」",
-   "en": "",
+   "en": "{C2}Vice President: \"Sigh... There are factions among the faculty and parents who want to make an issue of you, you know. Please be careful, for the principal's sake.\"",
    "refs": [
     "scene7:11"
    ],
@@ -886,7 +886,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "「その〈むき〉というのは、あの〈鉄の処女〉の寮長や化学の内山先生たちだな。　俺の方もああいう人たちは苦手なんだ。　‥‥‥いや、ご忠告ありがとう。　気を付けるよ。　でもこれは血統の問題らしいんだ」",
-   "en": "",
+   "en": "\"Those 'factions' would be the dorm mother—that 'Iron Maiden'—and the chemistry teacher Uchiyama and his lot. I'm not fond of those types either. ...No, thank you for the advice. I'll be careful. But apparently it's a matter of bloodline.\"",
    "refs": [
     "scene7:12"
    ],
@@ -896,7 +896,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "《期待に応えなければならないな》",
-   "en": "",
+   "en": "(I must live up to expectations.)",
    "refs": [
     "scene7:13"
    ],
@@ -906,7 +906,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "《丸山ゆかり。　ソフィア学院生徒会会長。　信任投票となった先の選挙で二選をはたした。　生徒会の自治活動が確立しているソフィア学院では、生徒会会長はかなりの影響力をもつポジションだ》",
-   "en": "",
+   "en": "(Maruyama Yukari. Student council president of Sophia Academy. She won a second term in the last election, which became a vote of confidence. In Sophia Academy, where autonomous student council activities are well established, the student council president holds considerable influence.)",
    "refs": [
     "scene7:14"
    ],
@@ -916,7 +916,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "《フェミニズムに興味を持っている。　その知識は、学院のＯＧでバークレイでマスターをとっている社会科の上野洋子女史を感心させるほどだ》",
-   "en": "",
+   "en": "(She's interested in feminism. Her knowledge is enough to impress Ueno Yoko, the social studies teacher and academy alumna who earned her master's at Berkeley.)",
    "refs": [
     "scene7:15"
    ],
@@ -926,7 +926,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "《活動する女性の常だが、ソフィア学院の〈お嬢様〉的雰囲気に不満を持っている。　遠慮なく意見を言う彼女を煙たがる教師もいるが、俺とはなぜか気が合う》",
-   "en": "",
+   "en": "(As is common for active women, she's dissatisfied with the 'young lady' atmosphere of Sophia Academy. Some teachers find her outspokenness annoying, but for some reason she and I get along.)",
    "refs": [
     "scene7:16"
    ],
@@ -936,7 +936,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "《ソフィア学院生徒会副会長の加納晶子は清楚な、いわゆる〈令嬢〉タイプ》",
-   "en": "",
+   "en": "(Kano Akiko, vice president of the Sophia Academy student council, is the refined, so-called 'young lady' type.)",
    "refs": [
     "scene7:17"
    ],
@@ -946,7 +946,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "《落ち着いているが、シャープな頭脳の持ち主。　スマートに実務をこなしてゆく。　彼女に憧れる生徒も多く、〈相談〉しに彼女のまわりに集まってくるから、学院内の裏の情報にも詳しい》",
-   "en": "",
+   "en": "(She's calm but sharp-witted. She handles business smartly. Many students admire her and gather around her for 'consultations,' so she's well-versed in the academy's underground information.)",
    "refs": [
     "scene7:18"
    ],
@@ -956,7 +956,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "《精かんを装っているけれど、笑顔は可愛い》",
-   "en": "",
+   "en": "(She puts on a stern air, but her smile is cute.)",
    "refs": [
     "scene7:19"
    ],
@@ -966,7 +966,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "《涼しげな瞳、透き通るような肌、将来はいい女になるな》",
-   "en": "",
+   "en": "(Cool eyes, translucent skin—she'll become a fine woman someday.)",
    "refs": [
     "scene7:20"
    ],
@@ -976,7 +976,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "《ドアの向こうには見えるのは野々村祐子だ。　あの子には学院の〈噂〉の取材を手伝ってもらっている》",
-   "en": "",
+   "en": "(Beyond the door I can see Nonomura Yuko. She's been helping me gather information on the academy's 'rumors.')",
    "refs": [
     "scene7:21"
    ],
@@ -986,7 +986,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "《ソフィア学院生徒会の活動ぶりを証明するのに十分なくらいは、インクの染みなどで汚れている》",
-   "en": "",
+   "en": "(It's stained with ink blots and such, enough to prove the activity of the Sophia Academy student council.)",
    "refs": [
     "scene7:22"
    ],
@@ -996,7 +996,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "《外は気持ちよく晴れている。　しかし、この太陽の光によって追放された〈闇〉が学院に戻って来る夜、何かが起こるのだ》",
-   "en": "",
+   "en": "(Outside it's pleasantly sunny. But tonight, when the 'darkness' banished by this sunlight returns to the academy, something will happen.)",
    "refs": [
     "scene7:23"
    ],
@@ -1006,7 +1006,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "《いきなり事件のことを尋ねるのも妙だな》",
-   "en": "",
+   "en": "(Asking about the incidents out of nowhere would be odd.)",
    "refs": [
     "scene7:24"
    ],
@@ -1016,7 +1016,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "「ところで、学院内で何か新たな問題は発生していますかね？」",
-   "en": "",
+   "en": "\"By the way, have any new problems arisen within the academy?\"",
    "refs": [
     "scene7:25"
    ],
@@ -1026,7 +1026,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「ええ、学院内でおかしな臭いがするっていういう苦情が集まっています。　何か薬品のような臭いらしいんですけれど‥‥‥」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"Yes, we've been receiving complaints about a strange smell in the academy. Apparently it smells like some kind of chemical...\"{A515}",
    "refs": [
     "scene7:26"
    ],
@@ -1036,7 +1036,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "「場所は？」",
-   "en": "",
+   "en": "\"Where?\"",
    "refs": [
     "scene7:27"
    ],
@@ -1046,7 +1046,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「古い建物の閉鎖された部屋から臭うらしいんです。　でも、管理課にその部屋を調べてもらったときはそんな臭いはしませんでした。　ただほこりっぽいだけでした」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"It seems to come from a sealed-off room in an old building. But when the Facilities Office checked the room, there was no such smell. It was just dusty.\"{A515}",
    "refs": [
     "scene7:28"
    ],
@@ -1056,7 +1056,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "「フーン、勘違いだったわけか。　建物に染み着いた〈伝統〉が人間の感覚を狂わせたってわけだな」",
-   "en": "",
+   "en": "\"Hmm, so it was a false alarm. The 'tradition' soaked into the building messed with people's senses, huh.\"",
    "refs": [
     "scene7:29"
    ],
@@ -1066,7 +1066,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「ええ、そうかもしれませんね。　でも、他の意見も有るんです」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"Yes, that might be. But there are other opinions too.\"{A515}",
    "refs": [
     "scene7:30"
    ],
@@ -1076,7 +1076,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "「どんな？」",
-   "en": "",
+   "en": "\"Like what?\"",
    "refs": [
     "scene7:31"
    ],
@@ -1086,7 +1086,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「地下に悪魔の神殿に続く通路があって、そこから黒魔術の薬の臭いが漏れてくるっていう（笑）」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"That there's a passage underground leading to a demon's temple, and the smell of black magic potions leaks out from there (laughs).\"{A515}",
    "refs": [
     "scene7:32"
    ],
@@ -1096,7 +1096,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "「高校生にしてはちょっと工夫のない噂だな」",
-   "en": "",
+   "en": "\"That's a rather unimaginative rumor for high schoolers.\"",
    "refs": [
     "scene7:33"
    ],
@@ -1106,7 +1106,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「ええ、でもこの噂は広まっていますよ」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"Yes, but the rumor is spreading.\"{A515}",
    "refs": [
     "scene7:34"
    ],
@@ -1116,7 +1116,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "「やれやれ、ソフィア学院のお嬢様たちは、よほど退屈しているらしい」",
-   "en": "",
+   "en": "\"Good grief, the young ladies of Sophia Academy must be terribly bored.\"",
    "refs": [
     "scene7:35"
    ],
@@ -1126,7 +1126,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「ここは平和すぎますからね。　‥‥‥きっとまた内山先生と化学クラブの連中が、〈高度な実験〉をして、〈高度で複雑な薬品〉を下水に流しちゃったんだと思います」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"It's too peaceful here. ...I bet Uchiyama-sensei and the chemistry club members did another 'advanced experiment' and dumped 'advanced, complex chemicals' down the drain.\"{A515}",
    "refs": [
     "scene7:36"
    ],
@@ -1136,7 +1136,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "{C2}会長：{A515}「科学者というのは、専門分野以外には盲目になって、後先のこととか、まわりのことを考えられなくなることが多いみたいですから」{A515}",
-   "en": "",
+   "en": "{C2}President: {A515}\"Scientists seem to become blind to everything outside their specialty and often can't think about consequences or their surroundings.\"{A515}",
    "refs": [
     "scene7:37"
    ],
@@ -1146,7 +1146,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "「そうだろうな」",
-   "en": "",
+   "en": "\"Probably so.\"",
    "refs": [
     "scene7:38"
    ],
@@ -1156,7 +1156,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "《いきなり聞くと怪しがるかもしれないぞ》",
-   "en": "",
+   "en": "(Asking suddenly might make her suspicious.)",
    "refs": [
     "scene7:39"
    ],
@@ -1166,7 +1166,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "「こちらの方には何かニュースはあるかな？」",
-   "en": "",
+   "en": "\"Any news on your side?\"",
    "refs": [
     "scene7:40"
    ],
@@ -1176,7 +1176,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "{C2}副会長：{A515}「ソフィア寮の子に聞いた話ですけれど、ファンタジックなのがあります。　真夜中に足音が寮の〈開かずの間〉の前で消えてしまうっていうんです」{A515}",
-   "en": "",
+   "en": "{C2}Vice President: {A515}\"I heard this from a girl at Sophia Dorm—it's quite fantastical. Footsteps at midnight disappear in front of the dorm's 'room that must not be opened.'\"{A515}",
    "refs": [
     "scene7:41"
    ],
@@ -1186,7 +1186,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "{C2}副会長：{A515}「本人はけっこう真剣に言ってましたけれど、荒唐無稽な話ですね。　昼間あの寮長先生に抑圧されているから、夜になって想像力が飛躍するんでしょうか（笑）」{A515}",
-   "en": "",
+   "en": "{C2}Vice President: {A515}\"She said it quite seriously, but it's an absurd story. Maybe being repressed by that dorm mother during the day makes their imaginations run wild at night (laughs).\"{A515}",
    "refs": [
     "scene7:42"
    ],
@@ -1196,7 +1196,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "「なるほど（笑）しかし、火の無いところには煙はたたないって言うぞ」",
-   "en": "",
+   "en": "\"I see (laughs). But they say there's no smoke without fire.\"",
    "refs": [
     "scene7:43"
    ],
@@ -1206,7 +1206,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "{C2}副会長：{A515}「ソフィア寮には〈オペラ座の怪人〉みたいなのがいるってことですか（笑）」{A515}",
-   "en": "",
+   "en": "{C2}Vice President: {A515}\"So you're saying there's a 'Phantom of the Opera' in Sophia Dorm? (laughs)\"{A515}",
    "refs": [
     "scene7:44"
    ],
@@ -1216,7 +1216,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "「そうさ」",
-   "en": "",
+   "en": "\"That's right.\"",
    "refs": [
     "scene7:45"
    ],
@@ -1226,7 +1226,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "{C2}副会長：{A515}「先生らしくないご意見ですね。　‥‥‥あっ！まさか先生が寮に夜這に行ってるんじゃないでしょうね」{A515}",
-   "en": "",
+   "en": "{C2}Vice President: {A515}\"That's not a very teacher-like opinion. ...Ah! Surely you're not sneaking into the dorm at night, sensei?\"{A515}",
    "refs": [
     "scene7:46"
    ],
@@ -1236,7 +1236,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "「いや、行ってないよ、まだ」",
-   "en": "",
+   "en": "\"No, I haven't gone. Not yet.\"",
    "refs": [
     "scene7:47"
    ],
@@ -1246,7 +1246,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "{C2}副会長：{A515}「やめてくださいよ。　先生ならやりかねないわ」{A515}\n（こいつ本気で心配してるぞ。　やれやれ）",
-   "en": "",
+   "en": "{C2}Vice President: {A515}\"Oh, stop it. You're just the type who would.\"{A515}\n(She's genuinely worried. Good grief.)",
    "refs": [
     "scene7:48"
    ],
@@ -1256,7 +1256,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "《もう用事はないはずだ》",
-   "en": "",
+   "en": "(I should have no more business here.)",
    "refs": [
     "scene7:49"
    ],
@@ -1266,7 +1266,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "《急いで行かなければならない用事はない。　だいたいあそこは空気が悪い》",
-   "en": "",
+   "en": "(There's nothing I need to rush to. Besides, the air there is bad.)",
    "refs": [
     "scene7:50"
    ],
@@ -1276,7 +1276,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "《これからこの学院の〈闇〉に向かって行かなければならないのは確かだ。　だが、抽象的に考えるのはよそう。　必要なのは具体的な手がかりだ》",
-   "en": "",
+   "en": "(It's certain that I must head toward this academy's 'darkness.' But let's not think abstractly. What I need is concrete clues.)",
    "refs": [
     "scene7:51"
    ],
@@ -1286,7 +1286,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "《なぜ？》",
-   "en": "",
+   "en": "(Why?)",
    "refs": [
     "scene7:52"
    ],
@@ -1296,7 +1296,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "《祐子に声をかけてみよう》",
-   "en": "",
+   "en": "(Let me call out to Yuko.)",
    "refs": [
     "scene7:53"
    ],
@@ -1306,7 +1306,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "{C2}会長：「あっ？！なにするんです。　先生じゃなかったら、セクシャル・ハラスメントとして問題にするところです」\n（{C1}『先生じゃなかったら』って？！{C0}）",
-   "en": "",
+   "en": "{C2}President: \"Ah?! What are you doing? If you weren't a teacher, I'd be filing a sexual harassment complaint.\"\n({C1}'If you weren't a teacher'?!{C0})",
    "refs": [
     "scene7:54"
    ],
@@ -1316,7 +1316,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "{C2}副会長：「エッ！」\n（やっぱりやってしまった。　いったいどういう教師なんだ、俺ってやつは）",
-   "en": "",
+   "en": "{C2}Vice President: \"Eep!\"\n(I did it again. What kind of teacher am I, anyway?)",
    "refs": [
     "scene7:55"
    ],
@@ -1326,7 +1326,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "《いつも学院内をかけまわっている祐子だけど、今日もなにかニュースあるだろうか》\n「やあ、野々村」",
-   "en": "",
+   "en": "(Yuko's always running around the academy. She probably has some news today too.)\n\"Hey, Nonomura.\"",
    "refs": [
     "scene8:0"
    ],
@@ -1336,7 +1336,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「あっ、先生、探してたのよ。　学校じゅう歩き回っちゃったんだから」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Oh, sensei! I was looking for you. I've been walking all over the school!\"{A515}",
    "refs": [
     "scene8:1"
    ],
@@ -1346,7 +1346,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "「すまん、おじさ‥‥‥いや、校長に呼ばれてたんだ。　それにしても、俺がそれほど人気があったとは思わなかったよ」",
-   "en": "",
+   "en": "\"Sorry, I was called by the prin—I mean, the principal. Though I didn't think I was that popular.\"",
    "refs": [
     "scene8:2"
    ],
@@ -1356,7 +1356,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「エッ？！」　　（赤くなってしまった）{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Huh?!\" (She blushed.){A515}",
    "refs": [
     "scene8:3"
    ],
@@ -1366,7 +1366,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "「悪かった。　ウチはつまらん冗談を言う家系なんだ。　で、何か事件か？」",
-   "en": "",
+   "en": "\"Sorry. My family has a habit of making bad jokes. So, is something going on?\"",
    "refs": [
     "scene8:4"
    ],
@@ -1376,7 +1376,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「雅美が変になっちゃたの」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Masami's become weird.\"{A515}",
    "refs": [
     "scene8:5"
    ],
@@ -1386,7 +1386,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "「変になったって？どういうことなんだ。　もう少し詳しく言ってみてくれないか」",
-   "en": "",
+   "en": "\"Became weird? What do you mean? Can you be a bit more specific?\"",
    "refs": [
     "scene8:6"
    ],
@@ -1396,7 +1396,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「夜中に姿を消しちゃったんだけれど、翌朝はベッドにいたの。　でも、全然感じが違っちゃったのよ。　妙な笑い方をしたり、変なことをしたり‥‥‥」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"She disappeared in the middle of the night, but she was in her bed the next morning. But she was completely different. She laughs strangely, and does weird things...\"{A515}",
    "refs": [
     "scene8:7"
    ],
@@ -1406,7 +1406,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "「変なことって？」",
-   "en": "",
+   "en": "\"Weird things like what?\"",
    "refs": [
     "scene8:8"
    ],
@@ -1416,7 +1416,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「それは‥‥‥、言えない！」　　（また赤くなった）{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"That's... I can't say!\" (She blushed again.){A515}",
    "refs": [
     "scene8:9"
    ],
@@ -1426,7 +1426,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "「そうか『変なこと』か、‥‥‥だいたい分かるよ」",
-   "en": "",
+   "en": "\"I see, 'weird things'... I have a general idea.\"",
    "refs": [
     "scene8:10"
    ],
@@ -1436,7 +1436,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "「実はたった今、寮の噂を聞いて、気になっていたところなんだ。　それで、裕子に聞いてみようと思って声をかけたんだ」",
-   "en": "",
+   "en": "\"Actually, I just heard a rumor about the dorm and was getting curious. So I thought I'd ask you, Yuko.\"",
    "refs": [
     "scene8:11"
    ],
@@ -1446,7 +1446,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「そうなの」　　（好奇心旺盛な表情になってきた）{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Is that so.\" (Her expression became curious.){A515}",
    "refs": [
     "scene8:12"
    ],
@@ -1456,7 +1456,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "「噂では真夜中に足音が聞こえるというんだが、聞いたことあるかい？」",
-   "en": "",
+   "en": "\"The rumor says footsteps can be heard at midnight. Have you ever heard them?\"",
    "refs": [
     "scene8:13"
    ],
@@ -1466,7 +1466,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「ううん。　でも、その音は何人もの寮生が聞いているみたい。　わたしは恐いから、お祈りをして寝ちゃうの。　気にはなるんだけど‥‥‥あっ！そうだ。　先生が寮に来ればいいんだ。　そしたら、私恐くないし、先生、それがいい」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"No. But it seems several residents have heard it. I'm scared, so I just say my prayers and go to sleep. I'm curious, though... Ah! I know. You should come to the dorm, sensei. Then I won't be scared. Yes, sensei, that's the way.\"{A515}",
    "refs": [
     "scene8:14"
    ],
@@ -1476,7 +1476,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "「俺も寮は調べたいが‥‥‥。　しかし、来いといわれても、ソフィア寮は男子禁制だし‥‥‥、あの寮長と交渉するのは、至難の技だしな」",
-   "en": "",
+   "en": "\"I'd like to investigate the dorm too... But even if you invite me, Sophia Dorm is off-limits to men... and negotiating with that dorm mother is a Herculean task.\"",
    "refs": [
     "scene8:15"
    ],
@@ -1486,7 +1486,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「そーっと入ってきちゃえばいいんですよ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"You can just sneak in quietly.\"{A515}",
    "refs": [
     "scene8:16"
    ],
@@ -1496,7 +1496,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "「入ってきちゃえばいいって‥‥‥そりゃ、ちょっとした冒険だよ」",
-   "en": "",
+   "en": "\"'Just sneak in'... That's quite an adventure.\"",
    "refs": [
     "scene8:17"
    ],
@@ -1506,7 +1506,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「そう冒険よ、でもわたしが一緒なら大丈夫。　わたしって運がいいんだから」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Yes, an adventure! But if I'm with you, it'll be fine. I'm lucky, you see.\"{A515}",
    "refs": [
     "scene8:18"
    ],
@@ -1516,7 +1516,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "「そうか『運がいい』か（笑）。　よし、それじゃ冒険の旅をはじめるとするか。　では、王女様今宵参上いたします」",
-   "en": "",
+   "en": "\"I see, 'lucky' huh (laughs). Alright, then let's begin our adventure. I shall visit you tonight, my princess.\"",
    "refs": [
     "scene8:19"
    ],
@@ -1526,7 +1526,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "《俺の担任のクラスの生徒であり、顧問の文芸部の部員だ。　文芸部は、独自に新聞の発行もしている。　裕子はその記者で、印刷担当だ》",
-   "en": "",
+   "en": "(She's a student in my homeroom class and a member of the literature club I advise. The literature club publishes its own newspaper. Yuko is its reporter and handles printing.)",
    "refs": [
     "scene8:20"
    ],
@@ -1536,7 +1536,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "《俺は名ばかりの顧問だが、校長が俺に任せた学院の広報誌と印刷所が同じだから、彼女によく相談される。　また、ライター志望で学院じゅう走り回って情報を集めている〈情報筋〉でもある》",
-   "en": "",
+   "en": "(I'm a figurehead advisor, but since the academy PR magazine the principal assigned me shares the same printer, she often consults me. She's also an 'information source' who aspires to be a writer and runs around the academy gathering intel.)",
    "refs": [
     "scene8:21"
    ],
@@ -1546,7 +1546,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "《祐子は寮生だったな》",
-   "en": "",
+   "en": "(Yuko's a dorm resident, right.)",
    "refs": [
     "scene8:22"
    ],
@@ -1556,7 +1556,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "《女の子がある晩を境にぜんぜん感じが違ってしまうことはよくあることだ。　ソフィア寮の生徒だって例外ではないだろう。　しかし、裕子の話は、校長が心配していた噂とそっくりだ。　〈闇〉への入口はソフィア寮にありそうだな》",
-   "en": "",
+   "en": "(It's common for a girl to seem completely different after a certain night. Sophia Dorm students are no exception. But Yuko's story matches the rumors the principal was worried about. The entrance to the 'darkness' is probably in Sophia Dorm.)",
    "refs": [
     "scene8:23"
    ],
@@ -1566,7 +1566,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「アッ、アン」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Ah, ah...\"{A515}",
    "refs": [
     "scene8:24"
    ],
@@ -1576,7 +1576,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "「えーと、い、いと、糸屑が付いていたように見えたんだ」\n（無意識に手が動いてしまった。　あーあ、また赤くなった）",
-   "en": "",
+   "en": "\"Um, th-there was... a loose thread, I thought I saw one.\"\n(My hand moved unconsciously. Oh boy, she's blushing again.)",
    "refs": [
     "scene8:25"
    ],
@@ -1586,7 +1586,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "《そりゃ、行かなければならないだろうが、気が進まない、あそこにいると監視されているような気がするんだ》",
-   "en": "",
+   "en": "(I suppose I have to go, but I'm not eager. When I'm there, I feel like I'm being watched.)",
    "refs": [
     "scene8:26",
     "scene9:22"
@@ -1597,7 +1597,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "《まだ報告できるものはない》",
-   "en": "",
+   "en": "(I still have nothing to report.)",
    "refs": [
     "scene8:27",
     "scene9:23"
@@ -1608,7 +1608,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "《いますぐ？どうして？》",
-   "en": "",
+   "en": "(Right now? Why?)",
    "refs": [
     "scene8:28",
     "scene9:24"
@@ -1619,7 +1619,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "《今夜２２時までに寮の敷地に潜り込んで、裕子の手引で建物にはいる手筈にした。　でもその方法が〈運任せ〉なのだ。　‥‥‥不安だな》",
-   "en": "",
+   "en": "(The plan is to sneak onto the dorm grounds by 10 PM tonight and enter the building with Yuko's guidance. But the method relies on 'luck.' ...I'm uneasy.)",
    "refs": [
     "scene8:29",
     "scene9:25"
@@ -1630,7 +1630,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "《もういいだろう》",
-   "en": "",
+   "en": "(That's enough.)",
    "refs": [
     "scene8:30",
     "scene9:26"
@@ -1641,7 +1641,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "《ほんとに走り回っていたんだろうか、ちょっと上気した表情だ》",
-   "en": "",
+   "en": "(She really must have been running around—her face is slightly flushed.)",
    "refs": [
     "scene8:31",
     "scene9:27"
@@ -1652,7 +1652,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "《近くには誰もいない。誰かに見られているような感じがしたんだが‥‥‥》",
-   "en": "",
+   "en": "(No one's nearby. But I felt like someone was watching me...)",
    "refs": [
     "scene8:32",
     "scene9:28"
@@ -1663,7 +1663,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "《ケヤキは町の保存樹に指定された古木で寮の敷地内に伸びた横枝が切れないため、枝の部分だけセキュリティー・システムのセンサーが働かないのだそうだ。》",
-   "en": "",
+   "en": "(The zelkova is an old tree designated as a town preservation tree, and since the branch extending over the dorm grounds can't be cut, the security system sensors don't work on that branch, apparently.)",
    "refs": [
     "scene9:0"
    ],
@@ -1673,7 +1673,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "《ソフィア寮は古い建物だが、この敷地は最新のセキュリティー・システムが導入されている。　門限以後は寮長室のコントロール・ボードを制御しなければ、外塀に触れるだけで、警報がなり、警備会社に通報されるという。》",
-   "en": "",
+   "en": "(Sophia Dorm is an old building, but the grounds have the latest security system. After curfew, unless the control board in the dorm mother's room is operated, merely touching the outer wall triggers an alarm and notifies the security company, they say.)",
    "refs": [
     "scene9:1"
    ],
@@ -1683,7 +1683,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "《祐子は寮の外側にあるケヤキの横枝をつたって行けば、寮の敷地に内に入れると言った。》",
-   "en": "",
+   "en": "(Yuko said that if I go along the zelkova's side branch from outside the dorm, I can get onto the dorm grounds.)",
    "refs": [
     "scene9:2"
    ],
@@ -1693,7 +1693,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "《それを先輩から聞いたという祐子は自信満々だった。　しかし、冷静に考えれば、とても信じる足るものではない。　不確かな話だ。》",
-   "en": "",
+   "en": "(Yuko, who heard it from a senior, was full of confidence. But thinking calmly, it's hardly trustworthy. It's an uncertain story.)",
    "refs": [
     "scene9:3"
    ],
@@ -1703,7 +1703,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "《しかし、俺は祐子が持ってるという〈運〉に賭けてみることにしたのだ。　そして賭けは成功した。　俺はこうして寮の敷地内に立っている。　よーし、祐子の幸運は本物かもしれない。》",
-   "en": "",
+   "en": "(But I decided to bet on the 'luck' Yuko claims to have. And the bet paid off. Here I am, standing on the dorm grounds. Alright, maybe Yuko's luck is real.)",
    "refs": [
     "scene9:4"
    ],
@@ -1713,7 +1713,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "《さて、合図に小石を投げて、手引きしてもらうことになっているんだが、えーと、祐子の部屋は‥‥‥！しまった！メモを落としてしまった。　部屋番号と見取り図を書いてもらったのに、まずいな。》",
-   "en": "",
+   "en": "(Now, I'm supposed to throw a pebble as a signal and have her guide me in. Let's see, Yuko's room is... Damn! I dropped the memo. She'd written down the room number and a floor plan for me. This is bad.)",
    "refs": [
     "scene9:5"
    ],
@@ -1723,7 +1723,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "《歴史の重みというものは、昼は荘厳を、夜は不気味さを生む。》",
-   "en": "",
+   "en": "(The weight of history creates solemnity by day and eeriness by night.)",
    "refs": [
     "scene9:6"
    ],
@@ -1733,7 +1733,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "《昼間はトラディッショナル・ファッションにはうってつけの背景となるアイヴィーだが、夜の姿は、少女の生気を吸って生長をつづけるは怪しげな生物だな。》",
-   "en": "",
+   "en": "(By day, the ivy is a perfect backdrop for traditional fashion, but by night, it looks like a sinister organism that keeps growing by sucking the life force of young girls.)},{",
    "refs": [
     "scene9:7"
    ],
@@ -1743,7 +1743,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "《まるでバスティーユ牢獄だ。》",
-   "en": "",
+   "en": "(It's like the Bastille prison.)",
    "refs": [
     "scene9:8"
    ],
@@ -1753,7 +1753,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "《さて、祐子の部屋を捜さなければな。　たしか２０２号室だったな‥‥‥。　ということは二階だな。　どうもあの部屋のような気がするけど、自信はない。　えーい、いっそのこと忍び込んでしまおうか。　運まかせの冒険のついでだ。》",
-   "en": "",
+   "en": "(Now, I need to find Yuko's room. It was Room 202, I think... So it's on the second floor. I have a feeling it's that room, but I'm not sure. Ah, forget it—let's just sneak in. It's part of the luck-driven adventure anyway.)",
    "refs": [
     "scene9:9"
    ],
@@ -1763,7 +1763,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "《登れないことはないだろう。　しかし、寮長にでも見付かったら、フリークライミングの練習という言い訳はきかないだろうな。》",
-   "en": "",
+   "en": "(I could probably climb it. But if the dorm mother caught me, 'free climbing practice' wouldn't fly as an excuse.)",
    "refs": [
     "scene9:10"
    ],
@@ -1773,7 +1773,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "《まるで緑の巨大な怪物に見える。》",
-   "en": "",
+   "en": "(It looks like a giant green monster.)",
    "refs": [
     "scene9:11"
    ],
@@ -1783,7 +1783,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "《威圧的で、まるで外部の人間の侵入を拒んでいるようだ。》",
-   "en": "",
+   "en": "(It's imposing, as if refusing entry to outsiders.)",
    "refs": [
     "scene9:12"
    ],
@@ -1793,7 +1793,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "《不確かに影が揺れているのが見えたりしている。　あれが祐子の部屋かな。　間違えたら事だぞ》",
-   "en": "",
+   "en": "(I can see a shadow flickering uncertainly. Is that Yuko's room? If I get it wrong, that's trouble.)",
    "refs": [
     "scene9:13"
    ],
@@ -1803,7 +1803,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "《玄関から堂々潜入。　やはり、ここが祐子の部屋だ。　しかし、鍵がかかっている。　ノックしてほかの部屋の生徒に見られたら面倒だ。　打ち合わせどうり、外から合図しよう》",
-   "en": "",
+   "en": "(Entering boldly through the front door. So this is Yuko's room after all. But it's locked. If I knock and a student from another room sees me, that's trouble. As planned, I'll signal from outside.)",
    "refs": [
     "scene9:14"
    ],
@@ -1813,7 +1813,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "《祐子の部屋の前まできたら、へんな笑い声がする。　ちょっと覗いてみよう》",
-   "en": "",
+   "en": "(As I reached Yuko's room, I heard strange laughter. Let me take a peek.)",
    "refs": [
     "scene9:15"
    ],
@@ -1823,7 +1823,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "《ここは祐子の隣の部屋だな。　どれ、おやおや》",
-   "en": "",
+   "en": "(This is the room next to Yuko's. Well, well, well.)",
    "refs": [
     "scene9:16"
    ],
@@ -1833,7 +1833,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "《ロープの代用には、ちょっと長さがたりないよな、やっぱり》",
-   "en": "",
+   "en": "(As a substitute for rope, it's just not long enough, as I thought.)",
    "refs": [
     "scene9:17"
    ],
@@ -1843,7 +1843,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "《こういうやり方は、オールドファッションなラブ・ストーリーみたいだな。　ティーンエイジャーにもどったみたいに緊張する。　いいか、石ころ、ちょうどいいくらいの音をたてるんだぞ。　エイ！》",
-   "en": "",
+   "en": "(This method feels like an old-fashioned love story. I'm as nervous as if I were a teenager again. Alright, pebble, make just the right amount of noise. Here goes!)",
    "refs": [
     "scene9:18"
    ],
@@ -1853,7 +1853,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "《きっと、そうしたほうがいいのだろう。　理性がキリキリまいしている。　けれど、やっぱり好奇心には勝てない》",
-   "en": "",
+   "en": "(I'm sure I should do that. My reason is screaming at me. But I can't overcome my curiosity.)",
    "refs": [
     "scene9:19"
    ],
@@ -1863,7 +1863,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "《寮の庭に一旦戻ったが‥‥‥》",
-   "en": "",
+   "en": "(I returned to the dorm garden for now...)",
    "refs": [
     "scene9:20"
    ],
@@ -1873,7 +1873,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "（無意識に手が動いてしまった。　あーあ、また赤くなった）",
-   "en": "",
+   "en": "(My hand moved unconsciously. Oh boy, she's blushing again.)",
    "refs": [
     "scene9:21"
    ],
@@ -1883,7 +1883,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "《さっき玄関が開いていたじゃないか》",
-   "en": "",
+   "en": "(The front door was open a moment ago.)",
    "refs": [
     "scene10:0"
    ],
@@ -1893,7 +1893,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "《祐子が合図に気付いて、窓から顔を出した》",
-   "en": "",
+   "en": "(Yuko noticed the signal and poked her head out the window.)",
    "refs": [
     "scene10:1"
    ],
@@ -1903,7 +1903,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「すぐ行きます」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"I'll be right there.\"{A515}",
    "refs": [
     "scene10:2"
    ],
@@ -1913,7 +1913,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「あ、先生、いまドアを‥‥‥」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Oh, sensei, I'll open the door now...\"{A515}",
    "refs": [
     "scene10:3"
    ],
@@ -1923,7 +1923,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "「{C1}シッ！{C0}」\n（おしゃべりは後だ。　俺は柄にもなく緊張し、慎重になっている。　手引きを待っている泥棒になった気分だ）",
-   "en": "",
+   "en": "\"{C1}Shh!{C0}\"\n(Talk later. I'm unusually tense and cautious. I feel like a burglar waiting for his accomplice.)",
    "refs": [
     "scene10:4"
    ],
@@ -1933,7 +1933,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "《昼間とちょっと違った感じがするな》",
-   "en": "",
+   "en": "(It feels a bit different than during the day.)",
    "refs": [
     "scene10:5"
    ],
@@ -1943,7 +1943,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "《今だったら、ひきかえせる。　でも、祐子の信頼にも応えなけらばならいし、なにより俺の好奇心ときたら、人並みじゃないからな。》",
-   "en": "",
+   "en": "(I could still turn back now. But I have to live up to Yuko's trust, and more than anything, my curiosity is far from ordinary.)",
    "refs": [
     "scene10:6"
    ],
@@ -1953,7 +1953,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "《意外と薄そうだ。　割れなくてよかった》",
-   "en": "",
+   "en": "(It looks surprisingly thin. Good thing it didn't break.)",
    "refs": [
     "scene10:7"
    ],
@@ -1963,7 +1963,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "《暗くてよくわからない。　人の気配はないようだが‥‥‥》",
-   "en": "",
+   "en": "(It's dark and hard to see. No sign of people, though...)",
    "refs": [
     "scene10:8"
    ],
@@ -1973,7 +1973,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "《昼間とは、ちょっと雰囲気が違う\n着ているものと、月明りのせいだろう》",
-   "en": "",
+   "en": "(The atmosphere is a bit different from daytime.\nIt's probably because of what she's wearing and the moonlight.)",
    "refs": [
     "scene10:9"
    ],
@@ -1983,7 +1983,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "《それじゃ行こう》",
-   "en": "",
+   "en": "(Well then, let's go.)",
    "refs": [
     "scene10:10"
    ],
@@ -1993,7 +1993,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "《祐子を待とう》",
-   "en": "",
+   "en": "(Let's wait for Yuko.)",
    "refs": [
     "scene10:11"
    ],
@@ -2003,7 +2003,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "《祐子が西の方を指差していたから、あそこだろう》",
-   "en": "",
+   "en": "(Yuko pointed west, so it must be over there.)",
    "refs": [
     "scene10:12"
    ],
@@ -2013,7 +2013,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "《理性ＶＳ好奇心。　好奇心の勝ちだ。\n　部屋へなんか、引き返すもんか》",
-   "en": "",
+   "en": "(Reason vs. curiosity. Curiosity wins.\nNo way am I going back to the room.)",
    "refs": [
     "scene10:13"
    ],
@@ -2023,7 +2023,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "・・・・・",
-   "en": "",
+   "en": "・・・・・",
    "refs": [
     "scene11:0",
     "scene12:0",
@@ -2067,7 +2067,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "《祐子が部屋の鍵を開ける。　いったいどんな部屋なんだろう》",
-   "en": "",
+   "en": "(Yuko unlocks the door. I wonder what kind of room it is.)",
    "refs": [
     "scene11:1"
    ],
@@ -2077,7 +2077,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "《祐子が中を確認しするために、部屋に戻った。　俺は打ち合わせどうり、二分後に彼女の部屋を慎重にノックした》",
-   "en": "",
+   "en": "(Yuko went back to her room to check inside. As arranged, I knocked on her door carefully two minutes later.)",
    "refs": [
     "scene11:2"
    ],
@@ -2087,7 +2087,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "《おや、ネグリジェに着替えてるぞ。　寮長の見回りの時、寝ていたことにするためだろうか》",
-   "en": "",
+   "en": "(Oh, she's changed into a negligee. Probably to pretend she was asleep during the dorm mother's rounds.)",
    "refs": [
     "scene11:3"
    ],
@@ -2097,7 +2097,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「先生、どうぞ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Sensei, please come in.\"{A515}",
    "refs": [
     "scene11:4"
    ],
@@ -2107,7 +2107,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "「シーッ！とにかく中にいれてくれ」\n《中に入った》",
-   "en": "",
+   "en": "\"Shh! Just let me in first.\"\n(I went inside.)",
    "refs": [
     "scene11:5"
    ],
@@ -2117,7 +2117,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "「部屋の外にたっているとアリを訪ねたキリギリスみたいに不安になりそうだ」",
-   "en": "",
+   "en": "\"Standing outside the room makes me as uneasy as a grasshopper visiting an ant.\"",
    "refs": [
     "scene11:6"
    ],
@@ -2127,7 +2127,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「大丈夫よ。　この時間は廊下にでてくる子はいないし、二時間は寮長の見回りもないわよ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"It's fine. No one comes out into the hallway at this hour, and the dorm mother won't do rounds for another two hours.\"{A515}",
    "refs": [
     "scene11:7"
    ],
@@ -2137,7 +2137,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "「おきてをやぶり、障害を乗り越え、王女様のところへ来たわけだ。　何かご褒美でもあるのかな」",
-   "en": "",
+   "en": "\"So I've broken the rules, overcome the obstacles, and come to my princess. Is there some reward in store?\"",
    "refs": [
     "scene11:8"
    ],
@@ -2147,7 +2147,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「先生の話には、ときどきついていけなくなっちゃう（笑）」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Sometimes I just can't keep up with you, sensei (laughs).\"{A515}",
    "refs": [
     "scene11:9"
    ],
@@ -2157,7 +2157,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "「スマン、前にも言ったかもしれないが、くだらんジョークをいう血統の出なんだ。　ま、とにかく、事情を聞こう」",
-   "en": "",
+   "en": "\"Sorry, I might have said this before, but I come from a bloodline that tells stupid jokes. Anyway, let's hear what's going on.\"",
    "refs": [
     "scene11:10"
    ],
@@ -2167,7 +2167,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "「部屋の中にいれてくれよ」",
-   "en": "",
+   "en": "\"Let me into your room.\"",
    "refs": [
     "scene11:11"
    ],
@@ -2177,7 +2177,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「はい」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Yes.\"{A515}",
    "refs": [
     "scene11:12",
     "scene47:22"
@@ -2188,7 +2188,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "「昼間の話だけど、どういうことなんだ」",
-   "en": "",
+   "en": "\"About what you said during the day—what's going on?\"",
    "refs": [
     "scene11:13"
    ],
@@ -2198,7 +2198,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「寮の子が夜中にいなくなって、朝もどってくると変になっちゃってるの。　由美ばかりじゃなくて、もう何人もよ。　\n寮長は隠そうとして、かん口令を出してるけど、寮内はパニック寸前って感じ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Girls in the dorm disappear at night, and when they come back in the morning, they've become strange. It's not just Yumi—several others too.\nThe dorm mother is trying to hide it and has imposed a gag order, but the dorm is on the verge of panic.\"{A515}",
    "refs": [
     "scene11:14"
    ],
@@ -2208,7 +2208,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "「外の〈火遊び〉で火傷したんじゃないのか。\n　それとも世界最古の〈商売〉をするやつがいるのかもしれない」",
-   "en": "",
+   "en": "\"Maybe they got burned from 'playing with fire' outside.\nOr maybe someone's running the world's oldest 'profession.'\"",
    "refs": [
     "scene11:15"
    ],
@@ -2218,7 +2218,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「売春ってこと？そういうタイプの子たちじゃないわ。　それに、ここでは門限以降外出することは先生みたいなプロじゃなければ不可能よ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"You mean prostitution? They're not that type. Besides, leaving after curfew here is impossible unless you're a pro like you, sensei.\"{A515}",
    "refs": [
     "scene11:16"
    ],
@@ -2228,7 +2228,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "「別に商売にしてるわけじゃないさ。\n　こういうことにかけちゃ、才能があるってことさ」",
-   "en": "",
+   "en": "\"It's not like I make a business of it.\nIt's just that I have a talent for this sort of thing.\"",
    "refs": [
     "scene11:17"
    ],
@@ -2238,7 +2238,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「それに、何人もの寮生が、みな同じようになっているというのも不自然よ。　由美とは初等部依頼の友達だったの‥‥‥」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Besides, it's unnatural that several residents all became the same way. Yumi and I have been friends since elementary school...\"{A515}",
    "refs": [
     "scene11:18"
    ],
@@ -2248,7 +2248,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "「ということは寮の外ではなく、中で何かが起こってるってことだな。\n　やっぱり‥‥‥」",
-   "en": "",
+   "en": "\"So something's happening inside the dorm, not outside.\nJust as I thought...\"",
    "refs": [
     "scene11:19"
    ],
@@ -2258,7 +2258,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「同室の聡美はもう寝ちゃった。　寝たら絶対起きない子なの。\n夜火事になったどうしようって思うくらい」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"My roommate Satomi's already asleep. Once she's asleep, she absolutely won't wake up.\nI worry she wouldn't even wake up if there was a fire at night.\"{A515}",
    "refs": [
     "scene11:20"
    ],
@@ -2268,7 +2268,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「それに先生が来るかもしれないってことは、聡美だけには、そっと教えてあるから、もし起きても騒ぎにはならないはずよ。\n　それに、彼女、先生のファンなの。　だから、わたしたちライバルってわけ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Besides, I quietly told Satomi that you might come, so even if she wakes up, there won't be a fuss.\nAnd she's a fan of yours, sensei. So we're rivals, you see.\"{A515}",
    "refs": [
     "scene11:21"
    ],
@@ -2278,7 +2278,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「小さいときから一緒にいるから、これがあると安心なの」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"I've had it since I was little, so having it makes me feel safe.\"{A515}",
    "refs": [
     "scene11:22"
    ],
@@ -2288,7 +2288,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「わたしにとっては〈白馬の騎士〉ってことかしら。　来てくれて本当にうれしい。\n　‥‥‥ところで、さっきから気になってたんだけど、ズボンの前のところに何を差し込んでるの。\n　まさか、エッチなものじゃないでしょうね」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"So you're my 'knight on a white horse,' I suppose. I'm really glad you came.\n...By the way, I've been wondering—what are you keeping in the front of your pants?\nIt's not something naughty, is it?\"{A515}",
    "refs": [
     "scene11:23"
    ],
@@ -2298,7 +2298,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "《着ているものも、髪型もかわると、ぐっと妖艶な感じだな。\n　ビーナスを連想させる胸のふくらみに、理性を忘れてしまいそうだ》",
-   "en": "",
+   "en": "(With a different outfit and hairstyle, she looks far more alluring.\nThe swell of her breasts, reminiscent of Venus, makes me want to forget all reason.)",
    "refs": [
     "scene11:24"
    ],
@@ -2308,7 +2308,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "《祐子が抱いているのだろうか。　うらやましいやつだ》",
-   "en": "",
+   "en": "(She's probably hugging it. Lucky thing.)",
    "refs": [
     "scene11:25"
    ],
@@ -2318,7 +2318,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "《まずは、祐子の話を聞こう》",
-   "en": "",
+   "en": "(First, let's hear Yuko's story.)",
    "refs": [
     "scene11:26"
    ],
@@ -2328,7 +2328,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "《様子がおかしくなったという寮生の部屋あたりを中心に探ってみよう》",
-   "en": "",
+   "en": "(Let's investigate around the rooms of the residents who became strange.)",
    "refs": [
     "scene11:27"
    ],
@@ -2338,7 +2338,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "《おっと、まずは話を聞いてから行動を考えなきゃな》",
-   "en": "",
+   "en": "(Whoa, first I need to hear the story before planning my actions.)},{",
    "refs": [
     "scene11:28"
    ],
@@ -2348,7 +2348,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "《クールにいこうぜ》",
-   "en": "",
+   "en": "(Let's play it cool.)",
    "refs": [
     "scene11:29"
    ],
@@ -2358,7 +2358,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "《祐子は寮長室に呼ばれて行ってしまった。　まさか俺の侵入がバレたんじゃないだろうな。　奥では祐子のルームメートの聡美が寝ている。　どんな顔して寝てるんだろう》",
-   "en": "",
+   "en": "(Yuko was called to the dorm mother's room and left. Surely my intrusion hasn't been discovered. Satomi, Yuko's roommate, is sleeping in the back. I wonder what she looks like when she sleeps.)",
    "refs": [
     "scene11:30"
    ],
@@ -2368,7 +2368,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "《場当たり的行動は避けなければ》",
-   "en": "",
+   "en": "(I must avoid acting on the spur of the moment.)",
    "refs": [
     "scene11:31"
    ],
@@ -2378,7 +2378,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "《{C1}よし！調べてみよう{C0}》",
-   "en": "",
+   "en": "({C1}Alright! Let's investigate.{C0})",
    "refs": [
     "scene11:32"
    ],
@@ -2388,7 +2388,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「アッアッーン、せ、せんせい‥‥‥。　フー、いきなりさわらないでよ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Ah, ah... s-sensei... Whew, don't touch me so suddenly.\"{A515}",
    "refs": [
     "scene11:33"
    ],
@@ -2398,7 +2398,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「先生！なにやってんの！」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Sensei! What are you doing?!\"{A515}",
    "refs": [
     "scene11:34"
    ],
@@ -2408,7 +2408,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "「スマン、ちょっと気になってな」",
-   "en": "",
+   "en": "\"Sorry, I was just curious.\"",
    "refs": [
     "scene11:35"
    ],
@@ -2418,7 +2418,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "《その前にすることがあったな》",
-   "en": "",
+   "en": "(There was something I needed to do first.)",
    "refs": [
     "scene11:36"
    ],
@@ -2428,7 +2428,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "「夜いなくなった寮生はどの部屋なんだ？\n間取りしか描かれてないけど、この見取り図で確認してみよう」",
-   "en": "",
+   "en": "\"Which rooms are the residents who disappear at night in?\nIt only shows the layout, but let's check with this floor plan.\"",
    "refs": [
     "scene11:37"
    ],
@@ -2438,7 +2438,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「ここが、由美の部屋、それからこことここの部屋もそうね」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"This is Yumi's room, and these two rooms as well.\"{A515}",
    "refs": [
     "scene11:38"
    ],
@@ -2448,7 +2448,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "「みんな階は違うけど、北側の端だな。　何が寮の北にあるんだ？」",
-   "en": "",
+   "en": "\"Different floors, but all at the north end. What's north of the dorm?\"",
    "refs": [
     "scene11:39"
    ],
@@ -2458,7 +2458,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「北というと時計台がある方向ね」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"North would be the direction of the clock tower.\"{A515}",
    "refs": [
     "scene11:40"
    ],
@@ -2468,7 +2468,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "「見取り図にある、一階の北にあるこの部屋は？」",
-   "en": "",
+   "en": "\"What about this room on the north side of the first floor on the floor plan?\"",
    "refs": [
     "scene11:41"
    ],
@@ -2478,7 +2478,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "{C2}祐子：{A515}「えーとなんだったけ‥‥‥あっ、それ、倉庫よ。\n　そうそう、例の噂の〈開かずの間〉がここらしいわ」{A515}",
-   "en": "",
+   "en": "{C2}Yuko: {A515}\"Let me see... Ah, that's the storage room.\nYes, that's supposedly the 'room that must not be opened' from the rumors.\"{A515}",
    "refs": [
     "scene11:42"
    ],
@@ -2488,7 +2488,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "「そうか、倉庫か‥‥‥やっぱりそこが怪しいよな」",
-   "en": "",
+   "en": "\"I see, the storage room... That's the suspicious one, as I thought.\"",
    "refs": [
     "scene11:43"
    ],
@@ -2498,7 +2498,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "「ズボンの前？{C2}あっ！そうだ。{C0}　\nメモや見取り図を入れた封筒はここだった」",
-   "en": "",
+   "en": "\"Front of my pants? {C2}Ah, right!{C0}\nThe envelope with the memo and floor plan was here.\"",
    "refs": [
     "scene11:44"
    ],
@@ -2508,7 +2508,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "「何？」",
-   "en": "",
+   "en": "\"What?\"",
    "refs": [
     "scene11:45"
    ],
@@ -2518,7 +2518,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "《おいおい》",
-   "en": "",
+   "en": "(Oh boy.)",
    "refs": [
     "scene11:46"
    ],
@@ -2528,7 +2528,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "《祐子の部屋の向かいの２０４号室、樋口玲子と嶋崎久美の部屋。　楽しそうな声がきこえてくるので、　鍵穴を覗いてみると》",
-   "en": "",
+   "en": "(Room 204 across from Yuko's room—the room of Higuchi Reiko and Shimazaki Kumi. Hearing cheerful voices, I peeked through the keyhole.)",
    "refs": [
     "scene12:1"
    ],
@@ -2538,7 +2538,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "《祐子が言っていた〈変なこと〉ってのは、こういう類の〈変なこと〉なのか》",
-   "en": "",
+   "en": "(So this is the kind of 'weird thing' Yuko was talking about.)",
    "refs": [
     "scene12:2"
    ],
@@ -2548,7 +2548,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "《旧式の鍵はこれだから困る‥‥‥いや、いい。　だけど、ちょっと見にくいな》",
-   "en": "",
+   "en": "(Old-fashioned locks are a pain... no, actually, they're good. But it's a bit hard to see.)",
    "refs": [
     "scene12:3"
    ],
@@ -2558,7 +2558,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "《こうしてる姿が見つかったら‥‥‥マズイよな。　でも離れがたい》",
-   "en": "",
+   "en": "(If I got caught doing this... that'd be bad. But I can't pull myself away.)",
    "refs": [
     "scene12:4"
    ],
@@ -2568,7 +2568,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "《祐子の部屋のドアは鍵がかかっていた。　そーっとノックして入れてもらおうか。　けど、この股間が‥‥‥》",
-   "en": "",
+   "en": "(Yuko's door was locked. Should I knock softly and have her let me in? But this bulge...)",
    "refs": [
     "scene12:5"
    ],
@@ -2578,7 +2578,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "《鍵がかかっているんじゃないかな？》",
-   "en": "",
+   "en": "(It's probably locked, isn't it?)",
    "refs": [
     "scene12:6"
    ],
@@ -2588,7 +2588,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "《どれ、招待にお応えしましょうか》",
-   "en": "",
+   "en": "(Well then, shall I accept the invitation?)",
    "refs": [
     "scene12:7"
    ],
@@ -2598,7 +2598,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "《おや、鍵がかかっていませんね。　ということは、〈善意の第三者〉をお迎えしたい、ってことでしょうかね》",
-   "en": "",
+   "en": "(Oh, it's not locked. Which means they want to welcome a 'well-meaning third party,' does it?)",
    "refs": [
     "scene12:8"
    ],
@@ -2608,7 +2608,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "《おとりこみのところ、おじゃまします》",
-   "en": "",
+   "en": "(Pardon me for intruding on your little tryst.)",
    "refs": [
     "scene13:0"
    ],
@@ -2618,7 +2618,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "「ヤア、こんばんわ。　鍵がかかっていなかったから‥‥‥」",
-   "en": "",
+   "en": "\"Hey, good evening. The door wasn't locked, so...\"",
    "refs": [
     "scene13:1"
    ],
@@ -2628,7 +2628,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "{C2}玲子：「あっ‥‥‥ああ～」",
-   "en": "",
+   "en": "{C2}Reiko: \"Ah... aah...\"",
    "refs": [
     "scene13:2"
    ],
@@ -2638,7 +2638,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "{C2}久美：「アッ、ウ」",
-   "en": "",
+   "en": "{C2}Kumi: \"Ah, uh...\"",
    "refs": [
     "scene13:3"
    ],
@@ -2648,7 +2648,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "（会話にならないな。　まるで月の住人と話してるみたいだ）",
-   "en": "",
+   "en": "(This isn't conversation. It's like talking to inhabitants of the moon.)",
    "refs": [
     "scene13:4"
    ],
@@ -2658,7 +2658,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "《参加することに意義がある‥‥‥だよな》",
-   "en": "",
+   "en": "(The important thing is to participate... right?)",
    "refs": [
     "scene13:5"
    ],
@@ -2668,7 +2668,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "《そうだ、こんなところにはいられないんだっけ。　だけど、もうちょっと‥‥‥いいよな》",
-   "en": "",
+   "en": "(Right, I shouldn't be here. But just a little more... that's fine, right?)",
    "refs": [
     "scene13:6"
    ],
@@ -2678,7 +2678,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "《二人ともなかなかのボディだ》",
-   "en": "",
+   "en": "(Both of them have quite nice bodies.)",
    "refs": [
     "scene13:7"
    ],
@@ -2688,7 +2688,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "《あ～あ、これだからな、俺は。　しょうがないやつだ》",
-   "en": "",
+   "en": "(Ahh, this is why I'm like this. I'm hopeless.)",
    "refs": [
     "scene13:8"
    ],
@@ -2698,7 +2698,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "「ずいぶんと楽しそうだな」",
-   "en": "",
+   "en": "\"You two seem to be having a lot of fun.\"",
    "refs": [
     "scene13:9"
    ],
@@ -2708,7 +2708,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "{C2}久美：「きて」",
-   "en": "",
+   "en": "{C2}Kumi: \"Come.\"",
    "refs": [
     "scene13:10"
    ],
@@ -2718,7 +2718,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "{C2}玲子：「お願い」",
-   "en": "",
+   "en": "{C2}Reiko: \"Please.\"",
    "refs": [
     "scene13:11"
    ],
@@ -2728,7 +2728,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "「ここでも俺は人気があるな。　どれ、それでは‥‥‥」",
-   "en": "",
+   "en": "\"I'm popular here too. Well then, allow me...\"",
    "refs": [
     "scene13:12"
    ],
@@ -2738,7 +2738,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "《ＳＯ　ＷＨＡＴ？》",
-   "en": "",
+   "en": "(SO WHAT?)",
    "refs": [
     "scene13:13"
    ],
@@ -2748,7 +2748,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "《{C1}Ｈｅｒｅ　ｇｏｅｓ！{C0}》",
-   "en": "",
+   "en": "({C1}Here goes!{C0})",
    "refs": [
     "scene13:14"
    ],
@@ -2758,7 +2758,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "《ウム‥‥‥それが正しい選択だろうけど‥‥‥‥‥》",
-   "en": "",
+   "en": "(Hmm... that would be the right choice, but...)",
    "refs": [
     "scene13:15"
    ],
@@ -2768,7 +2768,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "《二人のお呼ばれになることにした》",
-   "en": "",
+   "en": "(I decided to accept the two's invitation.)",
    "refs": [
     "scene14:0"
    ],
@@ -2778,7 +2778,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "「こりゃ、すごいな」",
-   "en": "",
+   "en": "\"Wow, this is something.\"",
    "refs": [
     "scene14:1"
    ],
@@ -2788,7 +2788,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "{C2}久美：「ふふふ、そうよ。　私たちってとっても「すごい」のよ」",
-   "en": "",
+   "en": "{C2}Kumi: \"Hehehe, that's right. We're very 'something.'\"",
    "refs": [
     "scene14:2"
    ],
@@ -2798,7 +2798,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "《早くここを出なけりゃ、と理性の声は聞こえるが、本能が独走してしまう。　困ったものだ》",
-   "en": "",
+   "en": "(I can hear reason telling me to get out of here quickly, but instinct is running wild. What a problem.)",
    "refs": [
     "scene14:3"
    ],
@@ -2808,7 +2808,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "《俺を待ってるんだろうな》",
-   "en": "",
+   "en": "(They're waiting for me, aren't they.)},{",
    "refs": [
     "scene14:4"
    ],
@@ -2818,7 +2818,7 @@
    "id": "m00278",
    "kind": "msg",
    "jp": "《この娘たち‥‥‥まるで獣かマシンだ》",
-   "en": "",
+   "en": "(These girls... they're like beasts or machines.)",
    "refs": [
     "scene14:5"
    ],
@@ -2828,7 +2828,7 @@
    "id": "m00279",
    "kind": "msg",
    "jp": "《「みだら」としかいいようがない》",
-   "en": "",
+   "en": "(There's no other word for it but 'lewd.')",
    "refs": [
     "scene14:6"
    ],
@@ -2838,7 +2838,7 @@
    "id": "m00280",
    "kind": "msg",
    "jp": "{C2}久美：「アッ、アッ～ン」",
-   "en": "",
+   "en": " {C2}Kumi: \"Ah, ah...\"",
    "refs": [
     "scene14:7"
    ],
@@ -2848,7 +2848,7 @@
    "id": "m00281",
    "kind": "msg",
    "jp": "{C2}玲子：「ウッ、アッ、アッ～ン」",
-   "en": "",
+   "en": "{C2}Reiko: \"Uh, ah, ah...\"",
    "refs": [
     "scene14:8"
    ],
@@ -2858,7 +2858,7 @@
    "id": "m00282",
    "kind": "msg",
    "jp": "{C2}久美：「だめ～」",
-   "en": "",
+   "en": "{C2}Kumi: \"No...\"",
    "refs": [
     "scene14:9"
    ],
@@ -2868,7 +2868,7 @@
    "id": "m00283",
    "kind": "msg",
    "jp": "{C2}久美：「あ～ん、くすぐったいわ」",
-   "en": "",
+   "en": "{C2}Kumi: \"Ah... that tickles.\"",
    "refs": [
     "scene14:10"
    ],
@@ -2878,7 +2878,7 @@
    "id": "m00284",
    "kind": "msg",
    "jp": "{C2}玲子：「あ～ん、あ～ん、アッ、アッ～ン」",
-   "en": "",
+   "en": "{C2}Reiko: \"Ah, ah, ah, ah...\"",
    "refs": [
     "scene14:11"
    ],
@@ -2888,7 +2888,7 @@
    "id": "m00285",
    "kind": "msg",
    "jp": "{C2}久美：「アッ、ウッ、あ～ん」",
-   "en": "",
+   "en": "{C2}Kumi: \"Ah, uh, ah...\"",
    "refs": [
     "scene14:12"
    ],
@@ -2898,7 +2898,7 @@
    "id": "m00286",
    "kind": "msg",
    "jp": "{C2}玲子：「ムッ‥‥‥」",
-   "en": "",
+   "en": "{C2}Reiko: \"Mm...\"",
    "refs": [
     "scene14:13"
    ],
@@ -2908,7 +2908,7 @@
    "id": "m00287",
    "kind": "msg",
    "jp": "{C2}久美：「アッ、アッ～ン、あ～ん」",
-   "en": "",
+   "en": "{C2}Kumi: \"Ah, ah, ah...\"",
    "refs": [
     "scene14:14"
    ],
@@ -2918,7 +2918,7 @@
    "id": "m00288",
    "kind": "msg",
    "jp": "{C2}玲子：「あ、あ、あ、あ、あ～ん」",
-   "en": "",
+   "en": "{C2}Reiko: \"Ah, ah, ah, ah, ah...\"",
    "refs": [
     "scene14:15"
    ],
@@ -2928,7 +2928,7 @@
    "id": "m00289",
    "kind": "msg",
    "jp": "{C2}久美：「だめよ、そんなには、だめ～」",
-   "en": "",
+   "en": "{C2}Kumi: \"No, not that much, no...\"",
    "refs": [
     "scene14:16"
    ],
@@ -2938,7 +2938,7 @@
    "id": "m00290",
    "kind": "msg",
    "jp": "{C2}玲子：「イッ！いい‥‥‥わたし、へんになちゃう」",
-   "en": "",
+   "en": "{C2}Reiko: \"I... it's good... I'm going to become strange...\"",
    "refs": [
     "scene14:17"
    ],
@@ -2948,7 +2948,7 @@
    "id": "m00291",
    "kind": "msg",
    "jp": "《まだ、まだ》",
-   "en": "",
+   "en": "(More, more.)",
    "refs": [
     "scene14:18"
    ],
@@ -2958,7 +2958,7 @@
    "id": "m00292",
    "kind": "msg",
    "jp": "「ふーっ、急に体が軽くなったような気がするよ」",
-   "en": "",
+   "en": "\"Whew, I suddenly feel lighter.\"",
    "refs": [
     "scene14:19"
    ],
@@ -2968,7 +2968,7 @@
    "id": "m00293",
    "kind": "msg",
    "jp": "{C2}久美：「また飛べるかもしれないよ。　試してみたら」",
-   "en": "",
+   "en": "{C2}Kumi: \"You might be able to fly again. Why don't you try?\"",
    "refs": [
     "scene14:20"
    ],
@@ -2978,7 +2978,7 @@
    "id": "m00294",
    "kind": "msg",
    "jp": "「いや今度のナイト・フライトはリザーブ済みなんだ」",
-   "en": "",
+   "en": "\"No, my next night flight is already reserved.\"",
    "refs": [
     "scene14:21"
    ],
@@ -2988,7 +2988,7 @@
    "id": "m00295",
    "kind": "msg",
    "jp": "{C2}玲子：「ごあいさつね」",
-   "en": "",
+   "en": "{C2}Reiko: \"What a thing to say.\"",
    "refs": [
     "scene14:22"
    ],
@@ -2998,7 +2998,7 @@
    "id": "m00296",
    "kind": "msg",
    "jp": "「まっ、くれぐれも若さにまかせて無理をしないように。\n　それじゃ」",
-   "en": "",
+   "en": "\"Well, just don't overdo it in the heat of youth.\nSee you.\"",
    "refs": [
     "scene14:23"
    ],
@@ -3008,7 +3008,7 @@
    "id": "m00297",
    "kind": "msg",
    "jp": "{C2}久美：「おたがいにね（笑）」",
-   "en": "",
+   "en": "{C2}Kumi: \"Same to you (laughs).\"",
    "refs": [
     "scene14:24"
    ],
@@ -3018,7 +3018,7 @@
    "id": "m00298",
    "kind": "msg",
    "jp": "《お楽しみの時間は過ぎた。\n　冒険を再開しなければ‥‥‥‥‥とりあえず、また庭に出よう》",
-   "en": "",
+   "en": "(The fun time is over.\nI must resume the adventure... For now, let's go back out to the garden.)",
    "refs": [
     "scene14:25"
    ],
@@ -3028,7 +3028,7 @@
    "id": "m00299",
    "kind": "msg",
    "jp": "《祐子の隣の部屋２０１号室、「在室」の名札は岡田由香だな。　ちいさな悲鳴のような声が聞こえたような気がしたので、覗いてみると‥‥‥》",
-   "en": "",
+   "en": "(Room 201 next to Yuko's—the nameplate says 'In' for Okada Yuka. I thought I heard a small cry, so I peeked in...)",
    "refs": [
     "scene15:1"
    ],
@@ -3038,7 +3038,7 @@
    "id": "m00300",
    "kind": "msg",
    "jp": "《ひとりで遊んでいるわけだ》",
-   "en": "",
+   "en": "(So she's playing by herself.)",
    "refs": [
     "scene15:2"
    ],
@@ -3048,7 +3048,7 @@
    "id": "m00301",
    "kind": "msg",
    "jp": "《一緒に遊んであげたいものだが、祐子との約束もあるし‥‥‥》",
-   "en": "",
+   "en": "(I'd like to play with her, but I have a promise to keep with Yuko...)",
    "refs": [
     "scene15:3"
    ],
@@ -3058,7 +3058,7 @@
    "id": "m00302",
    "kind": "msg",
    "jp": "《あの娘もこんな悪戯してるのだろうか》",
-   "en": "",
+   "en": "(Is that girl also up to such mischief?)",
    "refs": [
     "scene15:4"
    ],
@@ -3068,7 +3068,7 @@
    "id": "m00303",
    "kind": "msg",
    "jp": "《うーむ、あんなふうにするのか。　それにしても絶妙な指づかいだ》",
-   "en": "",
+   "en": "(Hmm, so that's how she does it. And what exquisite fingerwork.)",
    "refs": [
     "scene15:5"
    ],
@@ -3078,7 +3078,7 @@
    "id": "m00304",
    "kind": "msg",
    "jp": "《今のところは人影はない》",
-   "en": "",
+   "en": "(No one around at the moment.)",
    "refs": [
     "scene15:6"
    ],
@@ -3088,7 +3088,7 @@
    "id": "m00305",
    "kind": "msg",
    "jp": "《でもな‥‥‥》",
-   "en": "",
+   "en": "(But...)",
    "refs": [
     "scene15:7"
    ],
@@ -3098,7 +3098,7 @@
    "id": "m00306",
    "kind": "msg",
    "jp": "《それじゃ、一緒に遊んであげることにしよう》",
-   "en": "",
+   "en": "(Well then, I'll play with her.)",
    "refs": [
     "scene15:8"
    ],
@@ -3108,7 +3108,7 @@
    "id": "m00307",
    "kind": "msg",
    "jp": "《祐子のいる２０２号室だ。　でも、この２０１号室にも非常に興味があるな》",
-   "en": "",
+   "en": "(Room 202, where Yuko is. But I'm also very interested in Room 201.)",
    "refs": [
     "scene15:9"
    ],
@@ -3118,7 +3118,7 @@
    "id": "m00308",
    "kind": "msg",
    "jp": "《おや、鍵が開いてる。　なんか呼ばれてるみたいだな》",
-   "en": "",
+   "en": "(Oh, the door's unlocked. It feels like I'm being called.)",
    "refs": [
     "scene15:10"
    ],
@@ -3128,7 +3128,7 @@
    "id": "m00309",
    "kind": "msg",
    "jp": "《祐子の部屋には鍵がかかっている》",
-   "en": "",
+   "en": "(Yuko's room is locked.)",
    "refs": [
     "scene15:11"
    ],
@@ -3138,7 +3138,7 @@
    "id": "m00310",
    "kind": "msg",
    "jp": "《由香の部屋に入ってきてしまった》",
-   "en": "",
+   "en": "(I've stepped into Yuka's room.)",
    "refs": [
     "scene16:0"
    ],
@@ -3148,7 +3148,7 @@
    "id": "m00311",
    "kind": "msg",
    "jp": "{C2}由香：「キャ！」",
-   "en": "",
+   "en": "{C2}Yuka: \"Eek!\"",
    "refs": [
     "scene16:1"
    ],
@@ -3158,7 +3158,7 @@
    "id": "m00312",
    "kind": "msg",
    "jp": "「ひとりぼっちで遊んでばかりいてもつまらないだろ」",
-   "en": "",
+   "en": "\"Playing all alone must be boring, right?\"",
    "refs": [
     "scene16:2"
    ],
@@ -3168,7 +3168,7 @@
    "id": "m00313",
    "kind": "msg",
    "jp": "{C2}由香：「えっ？」",
-   "en": "",
+   "en": "{C2}Yuka: \"Huh?\"",
    "refs": [
     "scene16:3"
    ],
@@ -3178,7 +3178,7 @@
    "id": "m00314",
    "kind": "msg",
    "jp": "「どうだい、俺と一緒にやらない？」",
-   "en": "",
+   "en": "\"How about doing it with me?\"",
    "refs": [
     "scene16:4"
    ],
@@ -3188,7 +3188,7 @@
    "id": "m00315",
    "kind": "msg",
    "jp": "{C2}由香：「でも‥‥‥」",
-   "en": "",
+   "en": "{C2}Yuka: \"But...\"",
    "refs": [
     "scene16:5"
    ],
@@ -3198,7 +3198,7 @@
    "id": "m00316",
    "kind": "msg",
    "jp": "「体の力ぬいてごらん」",
-   "en": "",
+   "en": "\"Just relax your body.\"",
    "refs": [
     "scene16:6"
    ],
@@ -3208,7 +3208,7 @@
    "id": "m00317",
    "kind": "msg",
    "jp": "{C2}由香：「やさしくしてください」",
-   "en": "",
+   "en": "{C2}Yuka: \"Please be gentle.\"",
    "refs": [
     "scene16:7"
    ],
@@ -3218,7 +3218,7 @@
    "id": "m00318",
    "kind": "msg",
    "jp": "《可愛い。　興奮が醒めていないって感じだ》",
-   "en": "",
+   "en": "(Cute. She's still excited.)",
    "refs": [
     "scene16:8"
    ],
@@ -3228,7 +3228,7 @@
    "id": "m00319",
    "kind": "msg",
    "jp": "《校長も「教育とは身をもって多くを与え、教え導くことだ」と言ってたことだし‥‥‥》",
-   "en": "",
+   "en": "(The principal did say, 'Education is giving much through one's own example and guiding'...)",
    "refs": [
     "scene16:9"
    ],
@@ -3238,7 +3238,7 @@
    "id": "m00320",
    "kind": "msg",
    "jp": "《いかんな、忘れそうだ》",
-   "en": "",
+   "en": "(This is bad, I'm about to forget.)",
    "refs": [
     "scene16:10"
    ],
@@ -3248,7 +3248,7 @@
    "id": "m00321",
    "kind": "msg",
    "jp": "《目が熱っぽい表情を浮かべている》",
-   "en": "",
+   "en": "(Her eyes look feverish.)",
    "refs": [
     "scene16:11"
    ],
@@ -3258,7 +3258,7 @@
    "id": "m00322",
    "kind": "msg",
    "jp": "《準備はもうできてるみたいだ》",
-   "en": "",
+   "en": "(She seems ready already.)",
    "refs": [
     "scene16:12"
    ],
@@ -3268,7 +3268,7 @@
    "id": "m00323",
    "kind": "msg",
    "jp": "《由香はすばらしい》",
-   "en": "",
+   "en": "(Yuka is wonderful.)",
    "refs": [
     "scene17:0"
    ],
@@ -3278,7 +3278,7 @@
    "id": "m00324",
    "kind": "msg",
    "jp": "{C2}由香：「あ、あん、あ～ん」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah, ah...\"",
    "refs": [
     "scene17:1"
    ],
@@ -3288,7 +3288,7 @@
    "id": "m00325",
    "kind": "msg",
    "jp": "「声も可愛いね」",
-   "en": "",
+   "en": "\"Your voice is cute too.\"",
    "refs": [
     "scene17:2"
    ],
@@ -3298,7 +3298,7 @@
    "id": "m00326",
    "kind": "msg",
    "jp": "{C2}由香：「やだ、はずかしい」",
-   "en": "",
+   "en": "{C2}Yuka: \"Oh, stop, I'm embarrassed.\"",
    "refs": [
     "scene17:3"
    ],
@@ -3308,7 +3308,7 @@
    "id": "m00327",
    "kind": "msg",
    "jp": "《可愛い顔してけっこなオンナだな》",
-   "en": "",
+   "en": "(With that cute face, she's quite a woman.)",
    "refs": [
     "scene17:4"
    ],
@@ -3318,7 +3318,7 @@
    "id": "m00328",
    "kind": "msg",
    "jp": "《反省会は後だ》",
-   "en": "",
+   "en": "(Self-reflection comes later.)",
    "refs": [
     "scene17:5"
    ],
@@ -3328,7 +3328,7 @@
    "id": "m00329",
    "kind": "msg",
    "jp": "《スマン》",
-   "en": "",
+   "en": "(Sorry.)",
    "refs": [
     "scene17:6"
    ],
@@ -3338,7 +3338,7 @@
    "id": "m00330",
    "kind": "msg",
    "jp": "《かなり感じてるみたいだ》",
-   "en": "",
+   "en": "(She seems to be feeling it quite a bit.)",
    "refs": [
     "scene17:7"
    ],
@@ -3348,7 +3348,7 @@
    "id": "m00331",
    "kind": "msg",
    "jp": "《すっかりオトナなのものだ》",
-   "en": "",
+   "en": "(She's fully a woman.)",
    "refs": [
     "scene17:8"
    ],
@@ -3358,7 +3358,7 @@
    "id": "m00332",
    "kind": "msg",
    "jp": "{C2}由香：「あ～ん、や～ん‥‥‥そんなの‥‥‥」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah... no... not like that...\"",
    "refs": [
     "scene17:9"
    ],
@@ -3368,7 +3368,7 @@
    "id": "m00333",
    "kind": "msg",
    "jp": "{C2}由香：「やさしく‥‥‥して」",
-   "en": "",
+   "en": "{C2}Yuka: \"Be... gentle...\"",
    "refs": [
     "scene17:10"
    ],
@@ -3378,7 +3378,7 @@
    "id": "m00334",
    "kind": "msg",
    "jp": "{C2}由香：「あっ、強くしないで」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, not so hard.\"",
    "refs": [
     "scene17:11"
    ],
@@ -3388,7 +3388,7 @@
    "id": "m00335",
    "kind": "msg",
    "jp": "{C2}由香：「あ～ん、くすぐったいわ」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah... that tickles.\"",
    "refs": [
     "scene17:12"
    ],
@@ -3398,7 +3398,7 @@
    "id": "m00336",
    "kind": "msg",
    "jp": "{C2}由香：「あっ、あっ、いや～、そこだけはだめ」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah, no... not there...\"",
    "refs": [
     "scene17:13"
    ],
@@ -3408,7 +3408,7 @@
    "id": "m00337",
    "kind": "msg",
    "jp": "{C2}由香：「アッ、アッ～、イ、いっちゃう～ん」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah... I'm... I'm going to...\"",
    "refs": [
     "scene17:14"
    ],
@@ -3418,7 +3418,7 @@
    "id": "m00338",
    "kind": "msg",
    "jp": "{C2}由香：「アッ、アッ～ン、あ～ん」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah, ah...\"",
    "refs": [
     "scene17:15"
    ],
@@ -3428,7 +3428,7 @@
    "id": "m00339",
    "kind": "msg",
    "jp": "{C2}由香：「ウッ、プ」",
-   "en": "",
+   "en": "{C2}Yuka: \"Uh, mm...\"",
    "refs": [
     "scene17:16"
    ],
@@ -3438,7 +3438,7 @@
    "id": "m00340",
    "kind": "msg",
    "jp": "{C2}由香：「あっ、あっ、いや～」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah, no...\"",
    "refs": [
     "scene17:17"
    ],
@@ -3448,7 +3448,7 @@
    "id": "m00341",
    "kind": "msg",
    "jp": "{C2}由香：「アッ、アハーン」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ahaan...\"",
    "refs": [
     "scene17:18"
    ],
@@ -3458,7 +3458,7 @@
    "id": "m00342",
    "kind": "msg",
    "jp": "{C2}由香：「だめよ、そんなには、だめ～」",
-   "en": "",
+   "en": "{C2}Yuka: \"No, not that much, no...\"",
    "refs": [
     "scene17:19"
    ],
@@ -3468,7 +3468,7 @@
    "id": "m00343",
    "kind": "msg",
    "jp": "{C2}由香：「あ、あ、あ、あ、あ～ん」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, ah, ah, ah, ah...\"",
    "refs": [
     "scene17:20"
    ],
@@ -3478,7 +3478,7 @@
    "id": "m00344",
    "kind": "msg",
    "jp": "《もう、いきそうだ》",
-   "en": "",
+   "en": "(She's about to come.)",
    "refs": [
     "scene18:0"
    ],
@@ -3488,7 +3488,7 @@
    "id": "m00345",
    "kind": "msg",
    "jp": "{C2}由香：「{C2}ハッ、ハッ、ハッ、ア～～～�{C0}」",
-   "en": "",
+   "en": "{C2}Yuka: \"{C2}Ha, ha, ha, aaaaah...{C0}\"",
    "refs": [
     "scene18:1"
    ],
@@ -3498,7 +3498,7 @@
    "id": "m00346",
    "kind": "msg",
    "jp": "「素敵だよ」",
-   "en": "",
+   "en": "\"You're wonderful.\"",
    "refs": [
     "scene18:2"
    ],
@@ -3508,7 +3508,7 @@
    "id": "m00347",
    "kind": "msg",
    "jp": "{C2}由香：「あっ、あぁん�‥‥‥わたしも‥‥‥楽しいわ�」",
-   "en": "",
+   "en": "{C2}Yuka: \"Ah, aah... I... I'm enjoying it too...\"",
    "refs": [
     "scene18:3"
    ],
@@ -3518,7 +3518,7 @@
    "id": "m00348",
    "kind": "msg",
    "jp": "「よかったよ。でも、あまり悪戯しすぎて、怪我をしないようにね」",
-   "en": "",
+   "en": "\"That was good. But don't play too much and hurt yourself.\"",
    "refs": [
     "scene18:4"
    ],
@@ -3528,7 +3528,7 @@
    "id": "m00349",
    "kind": "msg",
    "jp": "{C2}由香：「先生こそ、〈淫行〉で捕まらないようにね�」",
-   "en": "",
+   "en": "{C2}Yuka: \"You're the one who should be careful not to get arrested for 'indecent acts,' sensei...\"",
    "refs": [
     "scene18:5"
    ],
@@ -3538,7 +3538,7 @@
    "id": "m00350",
    "kind": "msg",
    "jp": "「そ、そうだな‥‥‥」",
-   "en": "",
+   "en": "\"Y-yeah, I suppose...\"",
    "refs": [
     "scene18:6"
    ],
@@ -3548,7 +3548,7 @@
    "id": "m00351",
    "kind": "msg",
    "jp": "《けっこう開放的なタイプなんだ》",
-   "en": "",
+   "en": "(She's quite an open-minded type.)",
    "refs": [
     "scene18:7"
    ],
@@ -3558,7 +3558,7 @@
    "id": "m00352",
    "kind": "msg",
    "jp": "《俺と同じ顔の天使が、俺と同じ顔の悪魔を攻撃し始めた》",
-   "en": "",
+   "en": "(An angel with my face began attacking a demon with my face.)",
    "refs": [
     "scene18:8"
    ],
@@ -3568,7 +3568,7 @@
    "id": "m00353",
    "kind": "msg",
    "jp": "《とりあえず、外にでようと思うけど‥‥‥》",
-   "en": "",
+   "en": "(For now, I think I'll go outside...)",
    "refs": [
     "scene18:9",
     "scene19:11"
@@ -3579,7 +3579,7 @@
    "id": "m00354",
    "kind": "msg",
    "jp": "《さっきよりも表情が明るい》",
-   "en": "",
+   "en": "(Her expression is brighter than before.)",
    "refs": [
     "scene18:10",
     "scene19:12"
@@ -3590,7 +3590,7 @@
    "id": "m00355",
    "kind": "msg",
    "jp": "《そうだ、いったんもとの場所に戻ろう。でも、その前に‥‥‥》",
-   "en": "",
+   "en": "(Right, let's go back to where we were. But before that...)",
    "refs": [
     "scene18:11",
     "scene19:13"
@@ -3601,7 +3601,7 @@
    "id": "m00356",
    "kind": "msg",
    "jp": "「ところで、最近この寮で起こっている事件について何か知らないかな」",
-   "en": "",
+   "en": "\"By the way, do you know anything about the incidents happening in this dorm lately?\"",
    "refs": [
     "scene18:12",
     "scene19:14"
@@ -3612,7 +3612,7 @@
    "id": "m00357",
    "kind": "msg",
    "jp": "{C2}由香：「先生、探偵もやってるの？\n　ま、教師よりも向いてるかもね。\n　えーと例の〈寮生夜間失そう事件〉ね。\n　噂では、夜中に何人もの足音が〈開かずの間〉の前で消えるらしいですよ。\n　でもそれって何だかいかにもＢ級ミステリーの設定よね」",
-   "en": "",
+   "en": "{C2}Yuka: \"Sensei, are you a detective too?\nWell, it might suit you better than teaching.\nLet's see, you mean the 'Dorm Resident Nighttime Disappearance Incident.'\nAccording to the rumor, several sets of footsteps disappear in front of the 'room that must not be opened' at midnight.\nBut that sounds like something straight out of a B-grade mystery, doesn't it?\"",
    "refs": [
     "scene18:13",
     "scene19:15"
@@ -3623,7 +3623,7 @@
    "id": "m00358",
    "kind": "msg",
    "jp": "「確かにそうだな」\n（そのＢ級の探偵を、俺がやらされるってわけか。　やれやれ）",
-   "en": "",
+   "en": "\"That's certainly true.\"\n(So I'm the one who has to play that B-grade detective. Good grief.)",
    "refs": [
     "scene18:14"
    ],
@@ -3633,7 +3633,7 @@
    "id": "m00359",
    "kind": "msg",
    "jp": "《まだ、することがある。眼前の義務と権利を放棄するわけにはいかない》",
-   "en": "",
+   "en": "(There's still something to do. I can't abandon the duty and right before my eyes.)",
    "refs": [
     "scene18:15"
    ],
@@ -3643,7 +3643,7 @@
    "id": "m00360",
    "kind": "msg",
    "jp": "「それじゃ、おやすみ」",
-   "en": "",
+   "en": "\"Well then, good night.\"",
    "refs": [
     "scene18:16"
    ],
@@ -3653,7 +3653,7 @@
    "id": "m00361",
    "kind": "msg",
    "jp": "「ずいぶん感度良好じゃないか。どこで性能アップしてるんだい？」",
-   "en": "",
+   "en": "\"Quite sensitive, aren't you? Where'd you get the performance upgrade?\"",
    "refs": [
     "scene18:17"
    ],
@@ -3663,7 +3663,7 @@
    "id": "m00362",
    "kind": "msg",
    "jp": "{C2}由香：「いやぁ～ん、今日が初めてよ�」",
-   "en": "",
+   "en": "{C2}Yuka: \"Oh no... today was my first time...\"",
    "refs": [
     "scene18:18"
    ],
@@ -3673,7 +3673,7 @@
    "id": "m00363",
    "kind": "msg",
    "jp": "「『今日は』だろ。この、淫乱娘め」",
-   "en": "",
+   "en": "\"'Today was,' you mean. You little slut.\"",
    "refs": [
     "scene18:19"
    ],
@@ -3683,7 +3683,7 @@
    "id": "m00364",
    "kind": "msg",
    "jp": "{C2}由香：「ああ～ん、いや‥‥‥そんなに‥‥‥だめ～�」",
-   "en": "",
+   "en": "{C2}Yuka: \"Aah... no... not so much... no...\"",
    "refs": [
     "scene18:20"
    ],
@@ -3693,7 +3693,7 @@
    "id": "m00365",
    "kind": "msg",
    "jp": "《もう、そろそろ限界かな》",
-   "en": "",
+   "en": "(I'm about at my limit.)",
    "refs": [
     "scene18:21"
    ],
@@ -3703,7 +3703,7 @@
    "id": "m00366",
    "kind": "msg",
    "jp": "《そうだな‥‥‥‥。\nだめだ、血が下に行ってるから、大脳が働かない》",
-   "en": "",
+   "en": "(Yeah...\nNo good—the blood's all gone south, so my cerebrum isn't working.)",
    "refs": [
     "scene18:22"
    ],
@@ -3713,7 +3713,7 @@
    "id": "m00367",
    "kind": "msg",
    "jp": "《全身うっすらと汗をかいてる》",
-   "en": "",
+   "en": "(Her whole body is lightly covered in sweat.)",
    "refs": [
     "scene18:23"
    ],
@@ -3723,7 +3723,7 @@
    "id": "m00368",
    "kind": "msg",
    "jp": "《外に何か用事があったかな？》",
-   "en": "",
+   "en": "(Did I have some business outside?)",
    "refs": [
     "scene18:24"
    ],
@@ -3733,7 +3733,7 @@
    "id": "m00369",
    "kind": "msg",
    "jp": "《祐子と同室に聡美のベッドの前にきていしまった。》",
-   "en": "",
+   "en": "(I've ended up in front of Satomi's bed, Yuko's roommate.)",
    "refs": [
     "scene19:1"
    ],
@@ -3743,7 +3743,7 @@
    "id": "m00370",
    "kind": "msg",
    "jp": "《祐子は彼女が俺のファンだって言ってたな。　悪い気はしないジョークだ》",
-   "en": "",
+   "en": "(Yuko said she's a fan of mine. That's a joke I don't mind.)",
    "refs": [
     "scene19:2"
    ],
@@ -3753,7 +3753,7 @@
    "id": "m00371",
    "kind": "msg",
    "jp": "《寮長室からすぐには戻ってくるんだろうか？》",
-   "en": "",
+   "en": "(Will she be back from the dorm mother's room soon?)",
    "refs": [
     "scene19:3"
    ],
@@ -3763,7 +3763,7 @@
    "id": "m00372",
    "kind": "msg",
    "jp": "《どうもイケナイことをしてみたくなってきた》",
-   "en": "",
+   "en": "(I'm starting to want to do something naughty.)",
    "refs": [
     "scene19:4"
    ],
@@ -3773,7 +3773,7 @@
    "id": "m00373",
    "kind": "msg",
    "jp": "《また悪魔の方が天使より優勢になってきた》",
-   "en": "",
+   "en": "(The demon is gaining the upper hand over the angel again.)",
    "refs": [
     "scene19:5"
    ],
@@ -3783,7 +3783,7 @@
    "id": "m00374",
    "kind": "msg",
    "jp": "《可愛い寝顔だ》",
-   "en": "",
+   "en": "(What a cute sleeping face.)",
    "refs": [
     "scene19:6"
    ],
@@ -3793,7 +3793,7 @@
    "id": "m00375",
    "kind": "msg",
    "jp": "《鍵をかけておこう》",
-   "en": "",
+   "en": "(Let me lock the door.)",
    "refs": [
     "scene19:7"
    ],
@@ -3803,7 +3803,7 @@
    "id": "m00376",
    "kind": "msg",
    "jp": "《そんなこと‥‥‥してみたいが‥‥‥》",
-   "en": "",
+   "en": "(I'd like to do that... but...)",
    "refs": [
     "scene19:8"
    ],
@@ -3813,7 +3813,7 @@
    "id": "m00377",
    "kind": "msg",
    "jp": "《そーっと、取ってっみよう》",
-   "en": "",
+   "en": "(Let me quietly take it.)",
    "refs": [
     "scene19:9"
    ],
@@ -3823,7 +3823,7 @@
    "id": "m00378",
    "kind": "msg",
    "jp": "《そっちにはあまり興味がないな》",
-   "en": "",
+   "en": "(Not much interest in that.)",
    "refs": [
     "scene19:10"
    ],
@@ -3833,7 +3833,7 @@
    "id": "m00379",
    "kind": "msg",
    "jp": "《聡子の寝顔をみてやれ》",
-   "en": "",
+   "en": "(Take a look at Satomi's sleeping face.)",
    "refs": [
     "scene20:0"
    ],
@@ -3843,7 +3843,7 @@
    "id": "m00380",
    "kind": "msg",
    "jp": "《どんな夢を見てるんだろう》",
-   "en": "",
+   "en": "(I wonder what she's dreaming about.)",
    "refs": [
     "scene20:1"
    ],
@@ -3853,7 +3853,7 @@
    "id": "m00381",
    "kind": "msg",
    "jp": "《彼女“夢の世界”に俺もまぜてもらうことにしよう》",
-   "en": "",
+   "en": "(Let me join her in the 'world of dreams.')",
    "refs": [
     "scene20:2"
    ],
@@ -3863,7 +3863,7 @@
    "id": "m00382",
    "kind": "msg",
    "jp": "《今は忘れることにしよう》",
-   "en": "",
+   "en": "(Let's forget about that for now.)",
    "refs": [
     "scene20:3"
    ],
@@ -3873,7 +3873,7 @@
    "id": "m00383",
    "kind": "msg",
    "jp": "《理性がとろけてしまう》",
-   "en": "",
+   "en": "(My reason is melting away.)",
    "refs": [
     "scene20:4"
    ],
@@ -3883,7 +3883,7 @@
    "id": "m00384",
    "kind": "msg",
    "jp": "《しばらくのあいだ目をつむっていてくれよ》",
-   "en": "",
+   "en": "(Keep your eyes closed for a while.)",
    "refs": [
     "scene20:5"
    ],
@@ -3893,7 +3893,7 @@
    "id": "m00385",
    "kind": "msg",
    "jp": "《劣情に捕われた男の顔が映っている》",
-   "en": "",
+   "en": "(A man's face consumed by lust is reflected.)",
    "refs": [
     "scene20:6"
    ],
@@ -3903,7 +3903,7 @@
    "id": "m00386",
    "kind": "msg",
    "jp": "《吸い付くみたいだ》",
-   "en": "",
+   "en": "(They look like they'd cling to me.)",
    "refs": [
     "scene20:7"
    ],
@@ -3913,7 +3913,7 @@
    "id": "m00387",
    "kind": "msg",
    "jp": "《果実のようだ》",
-   "en": "",
+   "en": "(They're like fruit.)",
    "refs": [
     "scene20:8"
    ],
@@ -3923,7 +3923,7 @@
    "id": "m00388",
    "kind": "msg",
    "jp": "《おや？乳首が立ってきたぞ》",
-   "en": "",
+   "en": "(Oh? Her nipples are getting hard.)",
    "refs": [
     "scene20:9"
    ],
@@ -3933,7 +3933,7 @@
    "id": "m00389",
    "kind": "msg",
    "jp": "《あっ！濡れてる。　聡美の息づかいも、荒くなってきたぞ》",
-   "en": "",
+   "en": "(Ah! She's wet. Satomi's breathing is getting heavier too.)",
    "refs": [
     "scene20:10"
    ],
@@ -3943,7 +3943,7 @@
    "id": "m00390",
    "kind": "msg",
    "jp": "《もうすっかり準備ＯＫって感じだ。　これは男を溺れさせる底なしの沼だ。　キケンなことをしていることわかっている。　けれど俺は、もう食虫花の蜜に誘われる虫だ。　理性なんか、とろけてしまった。》",
-   "en": "",
+   "en": "(She's completely ready. This is a bottomless swamp that drowns men. I know I'm doing something dangerous. But I'm already an insect lured by the nectar of a carnivorous plant. My reason has melted away.)",
    "refs": [
     "scene20:11"
    ],
@@ -3953,7 +3953,7 @@
    "id": "m00391",
    "kind": "msg",
    "jp": "《もう、何も考えられない》",
-   "en": "",
+   "en": "(I can't think about anything anymore.)",
    "refs": [
     "scene21:0"
    ],
@@ -3963,7 +3963,7 @@
    "id": "m00392",
    "kind": "msg",
    "jp": "《考えたくない》",
-   "en": "",
+   "en": "(I don't want to think.)",
    "refs": [
     "scene21:1"
    ],
@@ -3973,7 +3973,7 @@
    "id": "m00393",
    "kind": "msg",
    "jp": "《知るもんか》",
-   "en": "",
+   "en": "(Who cares.)",
    "refs": [
     "scene21:2"
    ],
@@ -3983,7 +3983,7 @@
    "id": "m00394",
    "kind": "msg",
    "jp": "《結局、こういうやつなんだ》",
-   "en": "",
+   "en": "(In the end, this is the kind of guy I am.)",
    "refs": [
     "scene21:3"
    ],
@@ -3993,7 +3993,7 @@
    "id": "m00395",
    "kind": "msg",
    "jp": "《表情が淫らになってきた。\n　本当に寝てるのかな？声まで上げ始めた》",
-   "en": "",
+   "en": "(Her expression is becoming lewd.\nIs she really asleep? She's even starting to make sounds.)",
    "refs": [
     "scene21:4",
     "scene22:3"
@@ -4004,7 +4004,7 @@
    "id": "m00396",
    "kind": "msg",
    "jp": "{C2}聡美：「アッ、アッ～ン」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah...\"",
    "refs": [
     "scene21:5",
     "scene22:4"
@@ -4015,7 +4015,7 @@
    "id": "m00397",
    "kind": "msg",
    "jp": "{C2}聡美：「ウッ、ウッ、ウン」",
-   "en": "",
+   "en": "{C2}Satomi: \"Uh, uh, mm...\"",
    "refs": [
     "scene21:6",
     "scene22:5"
@@ -4026,7 +4026,7 @@
    "id": "m00398",
    "kind": "msg",
    "jp": "{C2}聡美：「あっ、あっ、あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah, ah...\"",
    "refs": [
     "scene21:7",
     "scene22:6"
@@ -4037,7 +4037,7 @@
    "id": "m00399",
    "kind": "msg",
    "jp": "{C2}聡美：「あ～ん、あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah...\"",
    "refs": [
     "scene21:8",
     "scene22:7"
@@ -4048,7 +4048,7 @@
    "id": "m00400",
    "kind": "msg",
    "jp": "{C2}聡美：「あ、あ、あ、あ、あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah, ah, ah, ah...\"",
    "refs": [
     "scene21:9",
     "scene22:8"
@@ -4059,7 +4059,7 @@
    "id": "m00401",
    "kind": "msg",
    "jp": "{C2}聡美：「あ～ん！ふー」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah! Whew...\"",
    "refs": [
     "scene21:10",
     "scene22:9"
@@ -4070,7 +4070,7 @@
    "id": "m00402",
    "kind": "msg",
    "jp": "{C2}聡美：「アッ、アッ～」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah...\"",
    "refs": [
     "scene21:11",
     "scene22:10"
@@ -4081,7 +4081,7 @@
    "id": "m00403",
    "kind": "msg",
    "jp": "{C2}聡美：「アッ、あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah...\"",
    "refs": [
     "scene21:12",
     "scene22:11"
@@ -4092,7 +4092,7 @@
    "id": "m00404",
    "kind": "msg",
    "jp": "{C2}聡美：「アッ、アッ～ン、あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah, ah...\"",
    "refs": [
     "scene21:13",
     "scene22:12"
@@ -4103,7 +4103,7 @@
    "id": "m00405",
    "kind": "msg",
    "jp": "{C2}聡美：「アッ、ウッ、ウッ、ふ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, uh, uh, mm...\"",
    "refs": [
     "scene21:14",
     "scene22:13"
@@ -4114,7 +4114,7 @@
    "id": "m00406",
    "kind": "msg",
    "jp": "{C2}聡美：「あ、あ、あ、あ、あ、あ、あ、あ、あ～あ～ん」",
-   "en": "",
+   "en": "{C2}Satomi: \"Ah, ah, ah, ah, ah, ah, ah, ah, ah... aah...\"",
    "refs": [
     "scene21:15",
     "scene22:14"
@@ -4125,7 +4125,7 @@
    "id": "m00407",
    "kind": "msg",
    "jp": "《もう限界、いきそうだ》",
-   "en": "",
+   "en": "(I'm at my limit, about to come.)",
    "refs": [
     "scene21:16",
     "scene22:15"
@@ -4136,7 +4136,7 @@
    "id": "m00408",
    "kind": "msg",
    "jp": "（{C1}おや？{C0}ドアの外で、もの音がする。\n　祐子が帰ってきたのかな。　祐子には悪いが、もう少し待ってもらおう）",
-   "en": "",
+   "en": "({C1}Huh?{C0} There's a sound outside the door.\nDid Yuko come back? Sorry, Yuko, but you'll have to wait a bit longer.)",
    "refs": [
     "scene21:17",
     "scene22:16"
@@ -4147,7 +4147,7 @@
    "id": "m00409",
    "kind": "msg",
    "jp": "〈寮生夜間失そう事件〉ね。\n　噂では、夜中に何人もの足音が〈開かずの間〉の前で消えるらしいですよ。\n　でもそれって何だかいかにもＢ級ミステリーの設定よね」",
-   "en": "",
+   "en": "'Dorm Resident Nighttime Disappearance Incident,' huh.\nAccording to the rumor, several sets of footsteps disappear in front of the 'room that must not be opened' at midnight.\nBut that sounds like something straight out of a B-grade mystery, doesn't it?\"",
    "refs": [
     "scene21:18",
     "scene22:17"
@@ -4158,7 +4158,7 @@
    "id": "m00410",
    "kind": "msg",
    "jp": "{C2}寮長：{A515}「なにをしてるんです！！まあ、汚らわしい！悪魔！！」{A515}",
-   "en": "",
+   "en": "{C2}Dorm Mother: {A515}\"What are you doing?! How filthy! You demon!!\"{A515}",
    "refs": [
     "scene22:0"
    ],
@@ -4168,7 +4168,7 @@
    "id": "m00411",
    "kind": "msg",
    "jp": "（{C2}しまった！{C0}\n鍵がかかってるのを不審に思った祐子が寮長を呼びにいったんだ）",
-   "en": "",
+   "en": "({C2}Damn!{C0}\nYuko found the locked door suspicious and went to fetch the dorm mother.)",
    "refs": [
     "scene22:1"
    ],
@@ -4178,7 +4178,7 @@
    "id": "m00412",
    "kind": "msg",
    "jp": "《{C1}Ｇ{C2}Ａ{C1}Ｍ{C2}Ｅ　{C1}Ｏ{C2}Ｖ{C1}Ｅ{C2}Ｒ{C0}》",
-   "en": "",
+   "en": "({C1}G{C2}A{C1}M{C2}E {C1}O{C2}V{C1}E{C2}R{C0})",
    "refs": [
     "scene22:2",
     "scene23:0",
@@ -4193,7 +4193,7 @@
    "id": "m00413",
    "kind": "msg",
    "jp": "《問題の倉庫の前にきた。　だけど〈開かずの間〉を開けるにはどうしたらいいんだろう？》",
-   "en": "",
+   "en": "(I've arrived at the storage room in question. But how do we open the 'room that must not be opened'?)",
    "refs": [
     "scene23:1"
    ],
@@ -4203,7 +4203,7 @@
    "id": "m00414",
    "kind": "msg",
    "jp": "《夜中に聞こえる足音は、この辺で消えているというから、この倉庫を調べてみたいんだが、ずいぶんと厳重だな‥‥‥。　いったいどんな財宝があるっていうんだ》",
-   "en": "",
+   "en": "(The footsteps heard at midnight supposedly disappear around here, so I'd like to investigate this storage room, but it's heavily secured... What kind of treasure is in there, anyway?)",
    "refs": [
     "scene23:2"
    ],
@@ -4213,7 +4213,7 @@
    "id": "m00415",
    "kind": "msg",
    "jp": "《すっかり寝静まっているな》",
-   "en": "",
+   "en": "(Everyone's fast asleep.)",
    "refs": [
     "scene23:3"
    ],
@@ -4223,7 +4223,7 @@
    "id": "m00416",
    "kind": "msg",
    "jp": "《全然、怖がっているようすはない。　頼もしいというか、無謀というか》",
-   "en": "",
+   "en": "(She doesn't seem scared at all. Reassuring, or reckless—take your pick.)",
    "refs": [
     "scene23:4"
    ],
@@ -4233,7 +4233,7 @@
    "id": "m00417",
    "kind": "msg",
    "jp": "《校長に頼んで、鍵を手に入れてもらっておくべきだった》",
-   "en": "",
+   "en": "(I should have asked the principal to get me the key.)",
    "refs": [
     "scene23:5"
    ],
@@ -4243,7 +4243,7 @@
    "id": "m00418",
    "kind": "msg",
    "jp": "《鍵を開けなければ、ここで行き止りだな》",
-   "en": "",
+   "en": "(Without unlocking it, this is a dead end.)",
    "refs": [
     "scene23:6"
    ],
@@ -4253,7 +4253,7 @@
    "id": "m00419",
    "kind": "msg",
    "jp": "《鍵か‥‥‥{C2}！{C0}もしかしたら、俺が来る前に‥‥‥》",
-   "en": "",
+   "en": "(A key... {C2}!{C0} Maybe, before I came...)",
    "refs": [
     "scene23:7"
    ],
@@ -4263,7 +4263,7 @@
    "id": "m00420",
    "kind": "msg",
    "jp": "「いったい、何が入っているんだろう？」",
-   "en": "",
+   "en": "\"What on earth is inside?\"",
    "refs": [
     "scene23:8"
    ],
@@ -4273,7 +4273,7 @@
    "id": "m00421",
    "kind": "msg",
    "jp": "{C2}祐子：「さあ、わたしも知らない」",
-   "en": "",
+   "en": "{C2}Yuko: \"I don't know either.\"",
    "refs": [
     "scene23:9"
    ],
@@ -4283,7 +4283,7 @@
    "id": "m00422",
    "kind": "msg",
    "jp": "「怖くないか？」",
-   "en": "",
+   "en": "\"Aren't you scared?\"",
    "refs": [
     "scene23:10"
    ],
@@ -4293,7 +4293,7 @@
    "id": "m00423",
    "kind": "msg",
    "jp": "{C2}祐子：「ぜんぜん平気」",
-   "en": "",
+   "en": "{C2}Yuko: \"Not at all.\"",
    "refs": [
     "scene23:11"
    ],
@@ -4303,7 +4303,7 @@
    "id": "m00424",
    "kind": "msg",
    "jp": "《ずいぶんと古典的なタイプだけど、丈夫そうだ》",
-   "en": "",
+   "en": "(It's a rather classic type, but it looks sturdy.)",
    "refs": [
     "scene23:12"
    ],
@@ -4313,7 +4313,7 @@
    "id": "m00425",
    "kind": "msg",
    "jp": "《こうなったら、俺のかくし芸で、鍵を開けるしかないか、このアーミー・ナイフを使って‥‥‥》",
-   "en": "",
+   "en": "(If it comes to that, I'll have to use my hidden talent to pick the lock with this army knife...)",
    "refs": [
     "scene23:13"
    ],
@@ -4323,7 +4323,7 @@
    "id": "m00426",
    "kind": "msg",
    "jp": "{C1}ビー！！{C0}　　\n《{C2}し、しっまった警報装置が作動してしまった{C0}》",
-   "en": "",
+   "en": "{C1}BEEEEP!!{C0}\n({C2}D-damn, the alarm system went off!{C0})",
    "refs": [
     "scene23:14"
    ],
@@ -4333,7 +4333,7 @@
    "id": "m00427",
    "kind": "msg",
    "jp": "{C2}祐子：「ウフ、こんなところで止めてください」",
-   "en": "",
+   "en": "{C2}Yuko: \"Hehe, please stop here.\"",
    "refs": [
     "scene23:15"
    ],
@@ -4343,7 +4343,7 @@
    "id": "m00428",
    "kind": "msg",
    "jp": "「依頼人を信用しないのが、いい探偵の条件なのさ」",
-   "en": "",
+   "en": "\"Not trusting the client is the mark of a good detective.\"",
    "refs": [
     "scene23:16"
    ],
@@ -4353,7 +4353,7 @@
    "id": "m00429",
    "kind": "msg",
    "jp": "{C2}祐子：「ペーパーバック・ミステリーの読み過ぎですよ」",
-   "en": "",
+   "en": "{C2}Yuko: \"You've been reading too many paperback mysteries.\"",
    "refs": [
     "scene23:17"
    ],
@@ -4363,7 +4363,7 @@
    "id": "m00430",
    "kind": "msg",
    "jp": "{C2}祐子：「止めてください」",
-   "en": "",
+   "en": "{C2}Yuko: \"Please stop.\"",
    "refs": [
     "scene23:18"
    ],
@@ -4373,7 +4373,7 @@
    "id": "m00431",
    "kind": "msg",
    "jp": "「妖精から魔法の杖を貸してもらったんじゃないのか？」",
-   "en": "",
+   "en": "\"Didn't a fairy lend you a magic wand?\"",
    "refs": [
     "scene23:19"
    ],
@@ -4383,7 +4383,7 @@
    "id": "m00432",
    "kind": "msg",
    "jp": "{C2}祐子：「そんなことばかり言ってないで、もっと真剣に考えてください。　〈妖精の杖〉だなんて‥‥‥！{C1}あっ、そうだ！{C0}　」",
-   "en": "",
+   "en": "{C2}Yuko: \"Stop saying things like that and think more seriously. 'Fairy's wand,' honestly...! {C1}Oh, that's it!{C0}\"",
    "refs": [
     "scene23:20"
    ],
@@ -4393,7 +4393,7 @@
    "id": "m00433",
    "kind": "msg",
    "jp": "《かなり太いのが何重にもまいてある》",
-   "en": "",
+   "en": "(A fairly thick one is wrapped around many times.)",
    "refs": [
     "scene23:21"
    ],
@@ -4403,7 +4403,7 @@
    "id": "m00434",
    "kind": "msg",
    "jp": "《金庫みたいにしっかりとしまっている》",
-   "en": "",
+   "en": "(It's secured tightly like a safe.)",
    "refs": [
     "scene23:22"
    ],
@@ -4413,7 +4413,7 @@
    "id": "m00435",
    "kind": "msg",
    "jp": "{C2}祐子：「寮長室から借りてきちゃった。　もちろん無断でね」",
-   "en": "",
+   "en": "{C2}Yuko: \"I borrowed it from the dorm mother's room. Without permission, of course.\"",
    "refs": [
     "scene24:0"
    ],
@@ -4423,7 +4423,7 @@
    "id": "m00436",
    "kind": "msg",
    "jp": "「いけない子だ。　だけど、頼りになる子だ（笑）」《レオタード？欲望が現実認識を歪めてるんだろうか？》",
-   "en": "",
+   "en": "\"What a naughty girl. But a reliable one (laughs).\" (A leotard? Is desire distorting my perception of reality?)",
    "refs": [
     "scene24:1"
    ],
@@ -4433,7 +4433,7 @@
    "id": "m00437",
    "kind": "msg",
    "jp": "《このペンライトで見えるかな？‥‥‥》",
-   "en": "",
+   "en": "(Can I see with this penlight?...)?",
    "refs": [
     "scene25:0"
    ],
@@ -4443,7 +4443,7 @@
    "id": "m00438",
    "kind": "msg",
    "jp": "《とうとう〈開かずの間〉が開いた。　一体何があるんだろ》",
-   "en": "",
+   "en": "(The 'room that must not be opened' has finally been opened. What on earth is inside?)",
    "refs": [
     "scene25:1"
    ],
@@ -4453,7 +4453,7 @@
    "id": "m00439",
    "kind": "msg",
    "jp": "「怖くないかい」",
-   "en": "",
+   "en": "\"Aren't you scared?\"",
    "refs": [
     "scene25:2"
    ],
@@ -4463,7 +4463,7 @@
    "id": "m00440",
    "kind": "msg",
    "jp": "{C2}祐子：「ちょ、ちょっぴり怖いかな。　でも先生といっしょだから、平気」",
-   "en": "",
+   "en": "{C2}Yuko: \"A-a little, maybe. But since I'm with you, sensei, I'm fine.\"",
    "refs": [
     "scene25:3"
    ],
@@ -4473,7 +4473,7 @@
    "id": "m00441",
    "kind": "msg",
    "jp": "「そう、俺は頼りなる。　夜一人でトイレにだっていけるんだ」",
-   "en": "",
+   "en": "\"That's right, I'm reliable. I can even go to the bathroom alone at night.\"",
    "refs": [
     "scene25:4"
    ],
@@ -4483,7 +4483,7 @@
    "id": "m00442",
    "kind": "msg",
    "jp": "{C2}祐子：「先生といると、楽しい」",
-   "en": "",
+   "en": "{C2}Yuko: \"Being with you is fun, sensei.\"",
    "refs": [
     "scene25:5"
    ],
@@ -4493,7 +4493,7 @@
    "id": "m00443",
    "kind": "msg",
    "jp": "《テンシンランマン‥‥‥あれ！どう書くんだっけ？‥‥‥‥　まあいいか》",
-   "en": "",
+   "en": "(Tenshin Ranman... wait, how do you write that? ...Ah, whatever.)",
    "refs": [
     "scene25:6"
    ],
@@ -4503,7 +4503,7 @@
    "id": "m00444",
    "kind": "msg",
    "jp": "《ホコリが厚く積もっている。　だけど空気はホコリっぽくもカビ臭くもない。　やはりこの扉は最近、何度か開いたのにちがいない。》",
-   "en": "",
+   "en": "(Dust is thickly accumulated. But the air isn't dusty or musty. This door must have been opened several times recently.)",
    "refs": [
     "scene25:7"
    ],
@@ -4513,7 +4513,7 @@
    "id": "m00445",
    "kind": "msg",
    "jp": "《持ってきたペンライト、やっぱり暗いな。　ハロゲン球がついているんだけど、電池がなくなってきたのかな？》",
-   "en": "",
+   "en": "(The penlight I brought is still too dim. It has a halogen bulb, but maybe the batteries are running low?)",
    "refs": [
     "scene25:8"
    ],
@@ -4523,7 +4523,7 @@
    "id": "m00446",
    "kind": "msg",
    "jp": "《何か手掛かりを捜さなきゃ》",
-   "en": "",
+   "en": "(I need to find some clues.)",
    "refs": [
     "scene25:9"
    ],
@@ -4533,7 +4533,7 @@
    "id": "m00447",
    "kind": "msg",
    "jp": "《暗くてよく見えないけれど、なにか瓶のようなものが並んでいる》",
-   "en": "",
+   "en": "(It's too dark to see well, but there are rows of bottle-like things.)",
    "refs": [
     "scene25:10"
    ],
@@ -4543,7 +4543,7 @@
    "id": "m00448",
    "kind": "msg",
    "jp": "《扉は閉めた》",
-   "en": "",
+   "en": "(I closed the door.)",
    "refs": [
     "scene25:11"
    ],
@@ -4553,7 +4553,7 @@
    "id": "m00449",
    "kind": "msg",
    "jp": "《書架だ》",
-   "en": "",
+   "en": "(It's a bookshelf.)",
    "refs": [
     "scene25:12"
    ],
@@ -4563,7 +4563,7 @@
    "id": "m00450",
    "kind": "msg",
    "jp": "《木の箱が並んでいる》",
-   "en": "",
+   "en": "(Wooden boxes are lined up.)",
    "refs": [
     "scene25:13"
    ],
@@ -4573,7 +4573,7 @@
    "id": "m00451",
    "kind": "msg",
    "jp": "《並んだ瓶の中には何か粘性のある液体が入っている》",
-   "en": "",
+   "en": "(The lined-up bottles contain some viscous liquid.)",
    "refs": [
     "scene25:14"
    ],
@@ -4583,7 +4583,7 @@
    "id": "m00452",
    "kind": "msg",
    "jp": "《出口へ？もう少しここは調べたほうがよさそうだぞ》",
-   "en": "",
+   "en": "(To the exit? I should investigate here a bit more.)",
    "refs": [
     "scene25:15"
    ],
@@ -4593,7 +4593,7 @@
    "id": "m00453",
    "kind": "msg",
    "jp": "《どんな本があるんだろうか》",
-   "en": "",
+   "en": "(What kind of books are there?)",
    "refs": [
     "scene25:16"
    ],
@@ -4603,7 +4603,7 @@
    "id": "m00454",
    "kind": "msg",
    "jp": "《並んだ木製の箱の中に植物の標本や古文書があった。　これも創立者の集めたものの一部なのだろうか？》",
-   "en": "",
+   "en": "(Inside the wooden boxes were plant specimens and old documents. Are these also part of the founder's collection?)",
    "refs": [
     "scene25:17"
    ],
@@ -4613,7 +4613,7 @@
    "id": "m00455",
    "kind": "msg",
    "jp": "本チャンではスポット処理が入ります。",
-   "en": "",
+   "en": "(A spot effect will be inserted in the full version.)",
    "refs": [
     "scene26:0"
    ],
@@ -4623,7 +4623,7 @@
    "id": "m00456",
    "kind": "msg",
    "jp": "《天井までとどく重厚な木製の書架の前に来た。　ここで謎を解く鍵が手に入るといいのだが‥‥‥》",
-   "en": "",
+   "en": "(I've come to a heavy wooden bookshelf reaching to the ceiling. I hope I can find the key to solving this mystery here...)",
    "refs": [
     "scene26:1"
    ],
@@ -4633,7 +4633,7 @@
    "id": "m00457",
    "kind": "msg",
    "jp": "{C2}祐子：「ずいぶん、古そうな本ばかり」",
-   "en": "",
+   "en": "{C2}Yuko: \"They all look so old.\"",
    "refs": [
     "scene26:2"
    ],
@@ -4643,7 +4643,7 @@
    "id": "m00458",
    "kind": "msg",
    "jp": "「ああ、蒐集家には垂ぜんものばかりなんじゃないかな」",
-   "en": "",
+   "en": "\"Yeah, a collector would drool over these.\"",
    "refs": [
     "scene26:3"
    ],
@@ -4653,7 +4653,7 @@
    "id": "m00459",
    "kind": "msg",
    "jp": "{C2}祐子：「スイゼン？」",
-   "en": "",
+   "en": "{C2}Yuko: \"Drool?\"",
    "refs": [
     "scene26:4"
    ],
@@ -4663,7 +4663,7 @@
    "id": "m00460",
    "kind": "msg",
    "jp": "「ヨダレがたれちゃう、ってことさ」",
-   "en": "",
+   "en": "\"It means your mouth would water.\"",
    "refs": [
     "scene26:5"
    ],
@@ -4673,7 +4673,7 @@
    "id": "m00461",
    "kind": "msg",
    "jp": "《しっかりと俺の腕につかまっている。　腕に胸のふくらが感じられる。\n　まさかわざと押しつけているんじゃないだろうな》",
-   "en": "",
+   "en": "(She's clinging tightly to my arm. I can feel the swell of her breasts against it.\nShe can't be pressing them against me on purpose, can she?)",
    "refs": [
     "scene26:6"
    ],
@@ -4683,7 +4683,7 @@
    "id": "m00462",
    "kind": "msg",
    "jp": "《あまり、ゆっくりとはしていられないんだったな》",
-   "en": "",
+   "en": "(I can't afford to take my time.)",
    "refs": [
     "scene26:7"
    ],
@@ -4693,7 +4693,7 @@
    "id": "m00463",
    "kind": "msg",
    "jp": "《これも創立者のコレクションの一部なのだろうか》",
-   "en": "",
+   "en": "(Is this also part of the founder's collection?)",
    "refs": [
     "scene26:8"
    ],
@@ -4703,7 +4703,7 @@
    "id": "m00464",
    "kind": "msg",
    "jp": "《怖がっているようには見えない。　好奇心の強い娘だ》",
-   "en": "",
+   "en": "(She doesn't look scared. She's a curious girl.)",
    "refs": [
     "scene26:9"
    ],
@@ -4713,7 +4713,7 @@
    "id": "m00465",
    "kind": "msg",
    "jp": "《ここにはホコリは積もっていないな。　本にはホコリが大敵だものな。　\nだが、誰が管理しているんだろうか？》",
-   "en": "",
+   "en": "(No dust has accumulated here. Dust is the enemy of books, after all.\nBut who manages this place?)",
    "refs": [
     "scene26:10"
    ],
@@ -4723,7 +4723,7 @@
    "id": "m00466",
    "kind": "msg",
    "jp": "《予備の電池はないけれど、あと数時間はもつだろう》",
-   "en": "",
+   "en": "(I don't have spare batteries, but it should last a few more hours.)",
    "refs": [
     "scene26:11"
    ],
@@ -4733,7 +4733,7 @@
    "id": "m00467",
    "kind": "msg",
    "jp": "「Ａカップかな？」",
-   "en": "",
+   "en": "\"An A cup, I'd say?\"",
    "refs": [
     "scene26:12"
    ],
@@ -4743,7 +4743,7 @@
    "id": "m00468",
    "kind": "msg",
    "jp": "{C2}祐子：「いいえ！Ｂです！」",
-   "en": "",
+   "en": " {C2}Yuko: \"No! It's a B!\"",
    "refs": [
     "scene26:13"
    ],
@@ -4753,7 +4753,7 @@
    "id": "m00469",
    "kind": "msg",
    "jp": "《ラテン語やギリシャ語、ヘブライ語、ウーム、俺の語学力ではタイトルの意味さえわからない。　‥‥‥‥‥‥おや、これは英語だな、‥‥‥\n〈{C2}Ｓｔａｉｒ―ｗａｙ　ｔｏ　Ｈｅａｖｅｎ{C0}〉‥‥‥アメリカ人が使いそうな現代的英語だな》",
-   "en": "",
+   "en": "(Latin, Greek, Hebrew... hmm, with my language skills I can't even understand the titles. ...Oh, this one's in English...\n'{C2}Stair-way to Heaven{C0}'... That's modern English an American would use.)",
    "refs": [
     "scene26:14"
    ],
@@ -4763,7 +4763,7 @@
    "id": "m00470",
    "kind": "msg",
    "jp": "《古典がならぶこのコレクションの中では異質だ。　しかも天地が逆さだ。　〈天国への階段〉が逆立ちして〈地獄への‥‥‥〉ってわけじゃないだろうな》",
-   "en": "",
+   "en": "(It's out of place in this collection of classics. And it's upside down. It's not like 'Stairway to Heaven' standing on its head becomes 'Stairway to Hell,' is it?)",
    "refs": [
     "scene26:15"
    ],
@@ -4773,7 +4773,7 @@
    "id": "m00471",
    "kind": "msg",
    "jp": "《堅牢なつくりだ。　ちょっとやそっとでは動きそうにもないな》",
-   "en": "",
+   "en": "(It's solidly built. It doesn't look like it would budge easily.)",
    "refs": [
     "scene26:16"
    ],
@@ -4783,7 +4783,7 @@
    "id": "m00472",
    "kind": "msg",
    "jp": "《どれ手に取ってみよう》",
-   "en": "",
+   "en": "(Let me pick it up.)",
    "refs": [
     "scene26:17"
    ],
@@ -4793,7 +4793,7 @@
    "id": "m00473",
    "kind": "msg",
    "jp": "《『天国への階段』ね。　魔術好きの人間がつけそうなタイトルの本だな。　いったいどんな本なのだろうか》",
-   "en": "",
+   "en": "('Stairway to Heaven,' huh. Sounds like a title someone into the occult would choose. What kind of book is it, I wonder?)",
    "refs": [
     "scene27:1"
    ],
@@ -4803,7 +4803,7 @@
    "id": "m00474",
    "kind": "msg",
    "jp": "《この本はほかの本に比べたら、新しいし、装丁もシンプルだ。　どうしてこれをコレクションに加えたんだろう。　なにせ創立者が集めたのは羊皮紙やパピルスにかかれたものまであるんだからな》",
-   "en": "",
+   "en": "(Compared to the other books, this one is newer and has simpler binding. Why was it added to the collection? After all, the founder collected everything from parchment to papyrus.)",
    "refs": [
     "scene27:2"
    ],
@@ -4813,7 +4813,7 @@
    "id": "m00475",
    "kind": "msg",
    "jp": "《彼はいったいどんなことを書いいるんだろうか。　読んでみよう。　英語だったらなんとかなるだろう。》",
-   "en": "",
+   "en": "(What on earth did he write? Let me read it. If it's in English, I can manage.)",
    "refs": [
     "scene27:3"
    ],
@@ -4823,7 +4823,7 @@
    "id": "m00476",
    "kind": "msg",
    "jp": "《これで捜査の方向を見つけることができればいいのだけれど‥‥‥》",
-   "en": "",
+   "en": "(If only this could point the investigation in the right direction...)",
    "refs": [
     "scene27:4"
    ],
@@ -4833,7 +4833,7 @@
    "id": "m00477",
    "kind": "msg",
    "jp": "《彼女もなにか興味のある本を見つけたようだ。》",
-   "en": "",
+   "en": "(She seems to have found a book that interests her too.)",
    "refs": [
     "scene27:5"
    ],
@@ -4843,7 +4843,7 @@
    "id": "m00478",
    "kind": "msg",
    "jp": "《ずいぶん読み込まれていると見えて、背がちょっと傷んでるな》",
-   "en": "",
+   "en": "(It's clearly been read a lot—the spine is a bit worn.)",
    "refs": [
     "scene27:6"
    ],
@@ -4853,7 +4853,7 @@
    "id": "m00479",
    "kind": "msg",
    "jp": "《著者名が見にくいな。　エート、Ｊａｍａ‥‥ｉｃ‥‥ａ‥‥ジャマイカ！？　いや違う。　Ｊａｍ‥‥ｅｓ　Ｏｌ‥‥ｄｈ‥‥ｏｒｎ‥‥{C1}ン！{C2}ジェームズ・オールドホーンだ！{C0}創立者が書いた本だ！》",
-   "en": "",
+   "en": "(The author's name is hard to read. Let's see... Jama...ic...a... Jamaica?! No, that's not it. Jam...es Ol...dh...orn... {C1}Huh!{C2} It's James Oldhorn!{C0} This is a book written by the founder!)",
    "refs": [
     "scene27:7"
    ],
@@ -4863,7 +4863,7 @@
    "id": "m00480",
    "kind": "msg",
    "jp": "《創立者が書いた本、いったいどんな内容なんだろう？》",
-   "en": "",
+   "en": "(A book written by the founder—what could be in it?)",
    "refs": [
     "scene28:0"
    ],
@@ -4873,7 +4873,7 @@
    "id": "m00481",
    "kind": "msg",
    "jp": "{C2}祐子：「わたしには読めない本ばっかり、絵がたくさん載っているのもあるけれど、なんか気味が悪いコウモリの絵だったりするし‥‥‥先生は何読んでるの？」",
-   "en": "",
+   "en": "{C2}Yuko: \"These are all books I can't read. Some have lots of pictures, but they're creepy bat illustrations... What are you reading, sensei?\"",
    "refs": [
     "scene28:1"
    ],
@@ -4883,7 +4883,7 @@
    "id": "m00482",
    "kind": "msg",
    "jp": "「創立者が書いた本だ。　英語得意だったな。　読んでみるかい？」",
-   "en": "",
+   "en": "\"A book written by the founder. You were good at English, right? Want to try reading it?\"",
    "refs": [
     "scene28:2"
    ],
@@ -4893,7 +4893,7 @@
    "id": "m00483",
    "kind": "msg",
    "jp": "{C2}祐子：「どれどれ、エッ？これ本当に英語なの？知らない単語ばっかり」",
-   "en": "",
+   "en": "{C2}Yuko: \"Let me see... Huh? Is this really English? It's all words I don't know.\"",
    "refs": [
     "scene28:3"
    ],
@@ -4903,7 +4903,7 @@
    "id": "m00484",
    "kind": "msg",
    "jp": "「わざと古い英語を使ってるんだ。　世紀が一つや二つぐらいの古さじゃない。　どうやら創立者は、この本をあまり人に読んでもらいたくなかったようだな」",
-   "en": "",
+   "en": "\"He deliberately used archaic English. Not just one or two centuries old. It seems the founder didn't want just anyone reading this book.\"",
    "refs": [
     "scene28:4"
    ],
@@ -4913,7 +4913,7 @@
    "id": "m00485",
    "kind": "msg",
    "jp": "「だけど、本の扉の走り書きはインクはにじみぐあいから察すると、比較的新しいもののようだ。　どうだ、これは読めるだろう。　科学の論文みたいにシンプルな英語だ」",
-   "en": "",
+   "en": "\"But the scribble on the flyleaf, judging by the ink bleeding, seems relatively recent. See, you can read this, right? It's simple English, like a scientific paper.\"",
    "refs": [
     "scene28:5"
    ],
@@ -4923,7 +4923,7 @@
    "id": "m00486",
    "kind": "msg",
    "jp": "{C2}祐子：「“この書は新世界への扉なり”ですね？」",
-   "en": "",
+   "en": "{C2}Yuko: \"'This book is the door to a new world,' right?\"",
    "refs": [
     "scene28:6"
    ],
@@ -4933,7 +4933,7 @@
    "id": "m00487",
    "kind": "msg",
    "jp": "「ちょと、思わせぶりすぎるよな。　ソフィストケートされていない」",
-   "en": "",
+   "en": "\"A bit too suggestive, isn't it? Not very sophisticated.\"",
    "refs": [
     "scene28:7"
    ],
@@ -4943,7 +4943,7 @@
    "id": "m00488",
    "kind": "msg",
    "jp": "《タイトルはアメリカの近代的英語で、内容はシェークスピアより古い英語。　このことになにか意味があるあるにだろうか》",
-   "en": "",
+   "en": "(The title is in modern American English, but the content is older than Shakespeare. Does that mean something?)",
    "refs": [
     "scene28:8"
    ],
@@ -4953,7 +4953,7 @@
    "id": "m00489",
    "kind": "msg",
    "jp": "《ウーム、時間がない》",
-   "en": "",
+   "en": "(Hmm, we're running out of time.)",
    "refs": [
     "scene28:9"
    ],
@@ -4963,7 +4963,7 @@
    "id": "m00490",
    "kind": "msg",
    "jp": "《この本を拝借してじっくり読んでみたいところだけれど、この走り書きの主に気づかれたくない。　書架に戻して、倉庫を出ることにしよう》",
-   "en": "",
+   "en": "(I'd like to borrow this book and read it carefully, but I don't want the scribble's author to notice. Let me put it back on the shelf and leave the storage room.)",
    "refs": [
     "scene28:10"
    ],
@@ -4973,7 +4973,7 @@
    "id": "m00491",
    "kind": "msg",
    "jp": "{C2}祐子：「明日も、ここを調べますか」",
-   "en": "",
+   "en": "{C2}Yuko: \"Will we investigate here again tomorrow?\"",
    "refs": [
     "scene28:11"
    ],
@@ -4983,7 +4983,7 @@
    "id": "m00492",
    "kind": "msg",
    "jp": "「おそらく、ここへはまた来ることになるだろうけれど、明日は時計台に行くつりだ。　あそこも何かと噂にのぼる場所だからな。　一度調べてみる必要がある」",
-   "en": "",
+   "en": "\"We'll probably come back here, but tomorrow I plan to go to the clock tower. That place is also the subject of many rumors. It needs to be investigated once.\"",
    "refs": [
     "scene28:12"
    ],
@@ -4993,7 +4993,7 @@
    "id": "m00493",
    "kind": "msg",
    "jp": "{C2}祐子：「わたしも一緒よ。　“一夜を共にしてしまった”んだもの、わしたちもう他人どうしじゃないんだから（笑）」",
-   "en": "",
+   "en": "{C2}Yuko: \"I'm coming too. We've already 'spent a night together,' so we're not strangers anymore (laughs).\"",
    "refs": [
     "scene28:13"
    ],
@@ -5003,7 +5003,7 @@
    "id": "m00494",
    "kind": "msg",
    "jp": "《この娘は、臆するということがないようだ。　将来が楽しみだ》",
-   "en": "",
+   "en": "(This girl doesn't seem to know fear. Her future is promising.)",
    "refs": [
     "scene28:14"
    ],
@@ -5013,7 +5013,7 @@
    "id": "m00495",
    "kind": "msg",
    "jp": "《ずいぶんと古い英語で書かれてるな。　科学史の研究論文にしてはもったいぶり過ぎる。　たとえが多すぎてまるで暗号だ。　初めに古代の碑文を前にした考古学者の気分だ》",
-   "en": "",
+   "en": "(It's written in very old English. Too pretentious for a research paper on the history of science. Too many metaphors—it's like a cipher. I feel like an archaeologist facing an ancient inscription for the first time.)",
    "refs": [
     "scene28:15"
    ],
@@ -5023,7 +5023,7 @@
    "id": "m00496",
    "kind": "msg",
    "jp": "《もちろん、さっき読んだときと同じだ》",
-   "en": "",
+   "en": "(Of course, it's the same as when I read it earlier.)",
    "refs": [
     "scene28:16"
    ],
@@ -5033,7 +5033,7 @@
    "id": "m00497",
    "kind": "msg",
    "jp": "《著者名がない。　それにこのコウモリの紋章はなんだろう？　どこかで見たような気がするんだが‥‥‥》",
-   "en": "",
+   "en": "(There's no author name. And what is this bat emblem? I feel like I've seen it somewhere...)",
    "refs": [
     "scene28:17"
    ],
@@ -5043,7 +5043,7 @@
    "id": "m00498",
    "kind": "msg",
    "jp": "コウモリのシルエットが入ります。",
-   "en": "",
+   "en": "(A bat silhouette appears.)",
    "refs": [
     "scene29:0"
    ],
@@ -5053,7 +5053,7 @@
    "id": "m00499",
    "kind": "msg",
    "jp": "‥‥‥‥‥",
-   "en": "",
+   "en": "‥‥‥‥‥",
    "refs": [
     "scene30:0",
     "scene31:0",
@@ -5066,7 +5066,7 @@
    "id": "m00500",
    "kind": "msg",
    "jp": "《ソフィア学院のほぼ中央に位置し、ソフィア寮の北の方向にある時計台。ここも何かと噂になる建物だ》",
-   "en": "",
+   "en": "(The clock tower, located near the center of Sophia Academy, north of Sophia Dorm. This building is also the subject of many rumors.)",
    "refs": [
     "scene30:1"
    ],
@@ -5076,7 +5076,7 @@
    "id": "m00501",
    "kind": "msg",
    "jp": "「この時計台をめぐる噂は君も聞いたことがあるだろう？」",
-   "en": "",
+   "en": "\"You've heard the rumors about this clock tower, haven't you?\"",
    "refs": [
     "scene30:2"
    ],
@@ -5086,7 +5086,7 @@
    "id": "m00502",
    "kind": "msg",
    "jp": "{C2}祐子：「真夜中に泣き声をあげながら、針が惑うっていうの聞いたことがある」",
-   "en": "",
+   "en": "{C2}Yuko: \"I've heard that at midnight the hands go astray while crying sounds echo.\"",
    "refs": [
     "scene30:3"
    ],
@@ -5096,7 +5096,7 @@
    "id": "m00503",
    "kind": "msg",
    "jp": "「ここの地下から学院のあちこちに地下道がのびているというのは？」",
-   "en": "",
+   "en": "\"What about the underground passages that supposedly run from beneath here to various parts of the academy?\"",
    "refs": [
     "scene30:4"
    ],
@@ -5106,7 +5106,7 @@
    "id": "m00504",
    "kind": "msg",
    "jp": "{C2}祐子：「あ、それも聞いたことある」",
-   "en": "",
+   "en": "{C2}Yuko: \"Oh, I've heard that one too.\"",
    "refs": [
     "scene30:5"
    ],
@@ -5116,7 +5116,7 @@
    "id": "m00505",
    "kind": "msg",
    "jp": "「ゆうべ『聖ソフィア学院史』をめくってみたんだが、この学院の中でも最も古い建物らしいな。　だから、いろんな噂があるんだろう。　時間は真実の上に人の想像の産物をホコリのように積もらさせる。　今から、そのホコリを払いに行くわけだ」",
-   "en": "",
+   "en": "\"Last night I flipped through the 'History of St. Sophia Academy,' and it seems this is the oldest building in the academy. That's why there are so many rumors. Time piles the products of human imagination over truth like dust. Now we're going to brush that dust away.\"",
    "refs": [
     "scene30:6"
    ],
@@ -5126,7 +5126,7 @@
    "id": "m00506",
    "kind": "msg",
    "jp": "《エート、どうするんだっけな》",
-   "en": "",
+   "en": "(Um, what was I supposed to do?)",
    "refs": [
     "scene30:7"
    ],
@@ -5136,7 +5136,7 @@
    "id": "m00507",
    "kind": "msg",
    "jp": "《今日は、校長を通して管理課から立ち入りの許可と鍵をもらってある。　じっくり調べることができる。　でも女子生徒と二人で密室に入るとなると、問題になりそうだな。　うるさがたに見とがめられないうちに入ることにしよう》",
-   "en": "",
+   "en": "(Today I got permission and the key from the Facilities Office through the principal. I can investigate thoroughly. But entering a closed room alone with a female student could be a problem. Let's go in before the sticklers notice.)",
    "refs": [
     "scene30:8"
    ],
@@ -5146,7 +5146,7 @@
    "id": "m00508",
    "kind": "msg",
    "jp": "《すっかり俺のパートナーになってしまったな。　彼女といると明るい気分になる。　彼女を面倒な事にまきこまないように気をつけよう。》",
-   "en": "",
+   "en": "(She's become quite my partner. Being with her brightens my mood. I need to be careful not to drag her into trouble.)",
    "refs": [
     "scene30:9"
    ],
@@ -5156,7 +5156,7 @@
    "id": "m00509",
    "kind": "msg",
    "jp": "《『聖ソフィア学院史』によると、時計台は学院創立以前にあった、さる富豪邸から引き継がれたのだそうだ。　動乱の時代に備えた私軍のための施設らしい。　砦の物見台か何かだ。　地下道もそのとき作られたらしい》",
-   "en": "",
+   "en": "(According to the 'History of St. Sophia Academy,' the clock tower was inherited from a wealthy man's estate that existed before the academy's founding. It was apparently a facility for a private army prepared for turbulent times. A fortress watchtower or something. The underground passages were also built then.)",
    "refs": [
     "scene30:10"
    ],
@@ -5166,7 +5166,7 @@
    "id": "m00510",
    "kind": "msg",
    "jp": "《敷地を譲り受けた創立者は、この建物を気に入り、当時としては破格の大金をかけて時計台に改築し、自分の研究室もおいたということだ。　地下道は今世紀半ばに、政府の衛生指導によって閉鎖されている》",
-   "en": "",
+   "en": "(The founder, who received the land, liked this building, spent an unprecedented sum to convert it into a clock tower, and even set up his own research room there. The underground passages were sealed in the middle of this century due to government sanitation guidelines.)",
    "refs": [
     "scene30:11"
    ],
@@ -5176,7 +5176,7 @@
    "id": "m00511",
    "kind": "msg",
    "jp": "《好奇心に満ちた目だな》",
-   "en": "",
+   "en": "(Her eyes are full of curiosity.)",
    "refs": [
     "scene30:12"
    ],
@@ -5186,7 +5186,7 @@
    "id": "m00512",
    "kind": "msg",
    "jp": "《真下からと見ると、ちょっとした楼閣だな》",
-   "en": "",
+   "en": "(Looking up from directly below, it's quite a tower.)",
    "refs": [
     "scene30:13"
    ],
@@ -5196,7 +5196,7 @@
    "id": "m00513",
    "kind": "msg",
    "jp": "《時計台の影が俺の影を貫いている。　不吉だ》",
-   "en": "",
+   "en": "(The clock tower's shadow pierces my shadow. Ominous.)",
    "refs": [
     "scene30:14"
    ],
@@ -5206,7 +5206,7 @@
    "id": "m00514",
    "kind": "msg",
    "jp": "《黒い鳥が飛んでいった》",
-   "en": "",
+   "en": "(A black bird flew away.)",
    "refs": [
     "scene30:15"
    ],
@@ -5216,7 +5216,7 @@
    "id": "m00515",
    "kind": "msg",
    "jp": "《時計台の階段をのぼり、時計の内部にやってきた》",
-   "en": "",
+   "en": "(I climbed the clock tower stairs and arrived at the clock's interior.)",
    "refs": [
     "scene31:1"
    ],
@@ -5226,7 +5226,7 @@
    "id": "m00516",
    "kind": "msg",
    "jp": "{C2}祐子：「うわーっ、ほこりっぽい！」",
-   "en": "",
+   "en": "{C2}Yuko: \"Whoa, it's so dusty!\"",
    "refs": [
     "scene31:2"
    ],
@@ -5236,7 +5236,7 @@
    "id": "m00517",
    "kind": "msg",
    "jp": "「定期的に時計のメンテナンスが行われているのだろうに、どうも妙だな。　昨日の倉庫もそうだった。　隅々まで管理の行き届いているこの学院のなかで、どうして俺たちが調べる場所は、こうホコリっぽいんだろう？」",
-   "en": "",
+   "en": "\"The clock should be maintained regularly, but this is strange. Yesterday's storage room was the same. In this academy where every corner is well managed, why are the places we investigate so dusty?\"",
    "refs": [
     "scene31:3"
    ],
@@ -5246,7 +5246,7 @@
    "id": "m00518",
    "kind": "msg",
    "jp": "{C2}祐子：「なにかあるってことね」",
-   "en": "",
+   "en": "{C2}Yuko: \"So there's something here.\"",
    "refs": [
     "scene31:4"
    ],
@@ -5256,7 +5256,7 @@
    "id": "m00519",
    "kind": "msg",
    "jp": "‥‥‥‥",
-   "en": "",
+   "en": "‥‥‥‥",
    "refs": [
     "scene31:5"
    ],
@@ -5266,7 +5266,7 @@
    "id": "m00520",
    "kind": "msg",
    "jp": "「{C1}ン！？{C0}」\n{C2}祐子：「{C2}キャッ！{C0}」",
-   "en": "",
+   "en": "\"{C1}Huh?!{C0}\"\n{C2}Yuko: \"{C2}Eek!{C0}\"",
    "refs": [
     "scene31:6"
    ],
@@ -5276,7 +5276,7 @@
    "id": "m00521",
    "kind": "msg",
    "jp": "「どうした？」",
-   "en": "",
+   "en": "\"What's wrong?\"",
    "refs": [
     "scene31:7",
     "scene41:14"
@@ -5287,7 +5287,7 @@
    "id": "m00522",
    "kind": "msg",
    "jp": "{C2}祐子：「いま、窓の方に誰かがいたような気配がしたの」",
-   "en": "",
+   "en": "{C2}Yuko: \"I felt like someone was at the window just now.\"",
    "refs": [
     "scene31:8"
    ],
@@ -5297,7 +5297,7 @@
    "id": "m00523",
    "kind": "msg",
    "jp": "「祐子もそうか。　窓を開けてみよう」",
-   "en": "",
+   "en": "\"You felt it too, Yuko? Let me open the window.\"",
    "refs": [
     "scene31:9"
    ],
@@ -5307,7 +5307,7 @@
    "id": "m00524",
    "kind": "msg",
    "jp": "《さて、今度はどうしよう》",
-   "en": "",
+   "en": "(Now, what to do next?)",
    "refs": [
     "scene31:10"
    ],
@@ -5317,7 +5317,7 @@
    "id": "m00525",
    "kind": "msg",
    "jp": "《だんだんいとおしく思えてきた。　教師と生徒の一線を越えてしまうのが心配だ》",
-   "en": "",
+   "en": "(She's becoming dearer to me by the day. I worry I might cross the line between teacher and student.)",
    "refs": [
     "scene31:11"
    ],
@@ -5327,7 +5327,7 @@
    "id": "m00526",
    "kind": "msg",
    "jp": "《チャップリンの『モダン・タイム』みたいにならないように、気をつけよう》",
-   "en": "",
+   "en": "(I must be careful not to end up like Chaplin's 'Modern Times.')",
    "refs": [
     "scene31:12"
    ],
@@ -5337,7 +5337,7 @@
    "id": "m00527",
    "kind": "msg",
    "jp": "《ここに上がってきから、ずっと窓の方に気配がしているんだが‥‥‥》",
-   "en": "",
+   "en": "(Ever since I came up here, I've felt a presence near the window...)",
    "refs": [
     "scene31:13"
    ],
@@ -5347,7 +5347,7 @@
    "id": "m00528",
    "kind": "msg",
    "jp": "《制服がホコリでよごれてしまった》",
-   "en": "",
+   "en": "(Her uniform got dirty with dust.)",
    "refs": [
     "scene31:14"
    ],
@@ -5357,7 +5357,7 @@
    "id": "m00529",
    "kind": "msg",
    "jp": "《見るかぎり全く別条はないんだが‥‥‥》",
-   "en": "",
+   "en": "(As far as I can see, there's nothing wrong...)",
    "refs": [
     "scene31:15"
    ],
@@ -5367,7 +5367,7 @@
    "id": "m00530",
    "kind": "msg",
    "jp": "《時計を動かすだけのためにしては、やけに大きな歯車のシステムだな。　何か特別なことのために使っているんだろうか？》",
-   "en": "",
+   "en": "(This gear system is awfully large just for running a clock. Are they used for something special?)",
    "refs": [
     "scene31:16"
    ],
@@ -5377,7 +5377,7 @@
    "id": "m00531",
    "kind": "msg",
    "jp": "《しっかりとした造作のフレンチ・ウインドウだ。　この窓の辺りの気配が気になる。　祐子はどうなんだろうか？》",
-   "en": "",
+   "en": "(It's a well-made French window. The presence around this window bothers me. What about Yuko?)",
    "refs": [
     "scene31:17"
    ],
@@ -5387,7 +5387,7 @@
    "id": "m00532",
    "kind": "msg",
    "jp": "《オヤ？ピッチが微妙に違う歯車が幾つかあるな。　これが噂の針を惑わして泣く時計の正体だな》",
-   "en": "",
+   "en": "(Oh? There are several gears with subtly different pitches. So this is the truth behind the rumored clock that cries and sends its hands astray.)",
    "refs": [
     "scene31:18"
    ],
@@ -5397,7 +5397,7 @@
    "id": "m00533",
    "kind": "msg",
    "jp": "《ほんとに不自然なほど積もったホコリだな》",
-   "en": "",
+   "en": "(The dust is piled up so unnaturally.)",
    "refs": [
     "scene31:19"
    ],
@@ -5407,7 +5407,7 @@
    "id": "m00534",
    "kind": "msg",
    "jp": "《窓を開けると、くもったガラスにさえぎられていた太陽の光が一斉に注ぎ込まれた》",
-   "en": "",
+   "en": "(When I opened the window, the sunlight that had been blocked by the cloudy glass poured in all at once.)",
    "refs": [
     "scene32:1"
    ],
@@ -5417,7 +5417,7 @@
    "id": "m00535",
    "kind": "msg",
    "jp": "{C2}祐子：「床の上で何か光ってる！」",
-   "en": "",
+   "en": "{C2}Yuko: \"Something's shining on the floor!\"",
    "refs": [
     "scene32:2"
    ],
@@ -5427,7 +5427,7 @@
    "id": "m00536",
    "kind": "msg",
    "jp": "「ウン、どうやら鍵と、それから‥‥‥何かアクセサリーのようなものだな」",
-   "en": "",
+   "en": "\"Yeah, looks like a key, and... something like an accessory.\"",
    "refs": [
     "scene32:3"
    ],
@@ -5437,7 +5437,7 @@
    "id": "m00537",
    "kind": "msg",
    "jp": "{C2}祐子：「ペンダントよ！」",
-   "en": "",
+   "en": "{C2}Yuko: \"It's a pendant!\"",
    "refs": [
     "scene32:4"
    ],
@@ -5447,7 +5447,7 @@
    "id": "m00538",
    "kind": "msg",
    "jp": "《ちょっとまぶしそうな表情をしてる》",
-   "en": "",
+   "en": "(She looks a bit dazzled.)",
    "refs": [
     "scene32:5"
    ],
@@ -5457,7 +5457,7 @@
    "id": "m00539",
    "kind": "msg",
    "jp": "《空中にホコリが舞っているから、光の輪郭が見えている》",
-   "en": "",
+   "en": "(Dust is floating in the air, so I can see the outline of the light.)",
    "refs": [
     "scene32:6"
    ],
@@ -5467,7 +5467,7 @@
    "id": "m00540",
    "kind": "msg",
    "jp": "《コーヒーのブランド・マークみたいなオールド・ファッションなやつだな》",
-   "en": "",
+   "en": "(It's an old-fashioned one, like a coffee brand logo.)",
    "refs": [
     "scene32:7"
    ],
@@ -5477,7 +5477,7 @@
    "id": "m00541",
    "kind": "msg",
    "jp": "《何を型取っているのかよくわからないな》",
-   "en": "",
+   "en": "(I can't quite tell what it's shaped like.)",
    "refs": [
     "scene32:8"
    ],
@@ -5487,7 +5487,7 @@
    "id": "m00542",
    "kind": "msg",
    "jp": "《もう祐子が拾おうとしている》",
-   "en": "",
+   "en": "(Yuko's already about to pick it up.)",
    "refs": [
     "scene32:9"
    ],
@@ -5497,7 +5497,7 @@
    "id": "m00543",
    "kind": "msg",
    "jp": "《これで照らしても仕方ないか》",
-   "en": "",
+   "en": "(No point shining this on it.)",
    "refs": [
     "scene32:10"
    ],
@@ -5507,7 +5507,7 @@
    "id": "m00544",
    "kind": "msg",
    "jp": "《祐子が鍵と一緒に拾おうとしている》　　（ほんとに好奇心の強い娘だ）",
-   "en": "",
+   "en": "(Yuko's about to pick it up along with the key.) (She really is a curious girl.)",
    "refs": [
     "scene32:11"
    ],
@@ -5517,7 +5517,7 @@
    "id": "m00545",
    "kind": "msg",
    "jp": "《今日のところはこれで引き上げることにした》",
-   "en": "",
+   "en": "(I decided to call it a day.)",
    "refs": [
     "scene33:1"
    ],
@@ -5527,7 +5527,7 @@
    "id": "m00546",
    "kind": "msg",
    "jp": "「じゃあ、帰ろう。　寮まで送るよ」",
-   "en": "",
+   "en": "\"Well then, let's head back. I'll walk you to the dorm.\"",
    "refs": [
     "scene33:2"
    ],
@@ -5537,7 +5537,7 @@
    "id": "m00547",
    "kind": "msg",
    "jp": "{C2}祐子：「いいわよ、すぐそこだから。」",
-   "en": "",
+   "en": "{C2}Yuko: \"That's fine, it's right there.\"",
    "refs": [
     "scene33:3"
    ],
@@ -5547,7 +5547,7 @@
    "id": "m00548",
    "kind": "msg",
    "jp": "「デートは仕上げが大切なんだ」",
-   "en": "",
+   "en": "\"The finish is what matters on a date.\"",
    "refs": [
     "scene33:4"
    ],
@@ -5557,7 +5557,7 @@
    "id": "m00549",
    "kind": "msg",
    "jp": "{C2}祐子：「じゃ、送ってください（笑）」",
-   "en": "",
+   "en": "{C2}Yuko: \"Well then, please walk me (laughs).\"",
    "refs": [
     "scene33:5"
    ],
@@ -5567,7 +5567,7 @@
    "id": "m00550",
    "kind": "msg",
    "jp": "「今日はごくろうさま。　晩飯でも御馳走しようか」",
-   "en": "",
+   "en": "\"Good work today. How about I treat you to dinner?\"",
    "refs": [
     "scene33:6"
    ],
@@ -5577,7 +5577,7 @@
    "id": "m00551",
    "kind": "msg",
    "jp": "{C2}祐子：「わっ！ラッキー！！」",
-   "en": "",
+   "en": "{C2}Yuko: \"Wow! Lucky!!\"",
    "refs": [
     "scene33:7"
    ],
@@ -5587,7 +5587,7 @@
    "id": "m00552",
    "kind": "msg",
    "jp": "{C2}祐子：「でも、もうすぐ門限なの‥‥‥くやし～い！！」",
-   "en": "",
+   "en": "{C2}Yuko: \"But curfew's coming up... How frustrating!!\"",
    "refs": [
     "scene33:8"
    ],
@@ -5597,7 +5597,7 @@
    "id": "m00553",
    "kind": "msg",
    "jp": "《祐子を寮の前まで送って、自分の部屋に戻ってきた》",
-   "en": "",
+   "en": "(I walked Yuko to the dorm and returned to my room.)",
    "refs": [
     "scene34:1"
    ],
@@ -5607,7 +5607,7 @@
    "id": "m00554",
    "kind": "msg",
    "jp": "《今夜は婚約者の瞳が来るんだ。　この部屋のカオスをどうにかしなきゃ。》",
-   "en": "",
+   "en": "(My fiancée Hitomi is coming tonight. I need to do something about this room's chaos.)",
    "refs": [
     "scene34:2"
    ],
@@ -5617,7 +5617,7 @@
    "id": "m00555",
    "kind": "msg",
    "jp": "《今日は半日つきあわせてしまった。　疲れてもう寝てしまったろうか。　かわいい子猫ちゃん。　怖い夢など見なけりゃいいけど》",
-   "en": "",
+   "en": "(I kept her company for half the day. She's probably tired and already asleep. My cute little kitten. I hope she doesn't have bad dreams.)",
    "refs": [
     "scene34:3"
    ],
@@ -5627,7 +5627,7 @@
    "id": "m00556",
    "kind": "msg",
    "jp": "《早野瞳。　俺の婚約者だ。　大手商社総務部秘書課に勤務。　的確かつスマートにものごとをこなすタイプだ。　早い話、俺とは正反対だ。　凸凹カップルだと友人にはよく冷やかされる》",
-   "en": "",
+   "en": "(Hayano Hitomi. My fiancée. She works in the secretarial section of the general affairs department at a major trading company. She's the type who handles things precisely and smartly. In short, she's the exact opposite of me. My friends often tease us as an 'odd couple.')",
    "refs": [
     "scene34:4"
    ],
@@ -5637,7 +5637,7 @@
    "id": "m00557",
    "kind": "msg",
    "jp": "《けれど男と女は凹凸があるから組み合わさることができるんじゃないか。　おっと、こんな軽口をたたくと、また瞳に怒られるぞ。　けれど、なかなか性格は治らない。　なにせそういう血統なのだ》",
-   "en": "",
+   "en": "(But isn't it because a man and woman have complementary bumps and hollows that they can fit together? Oops, if I make jokes like this, Hitomi will scold me again. But my personality won't change easily. After all, it's in my blood.)",
    "refs": [
     "scene34:5"
    ],
@@ -5647,7 +5647,7 @@
    "id": "m00558",
    "kind": "msg",
    "jp": "《部屋が狭いというのもこういうときにはいい。　取り返しがつかないくらい散らかっていたとしても、短い時間でどうにか形になる》\n（負け惜しみか？やっぱり）",
-   "en": "",
+   "en": "(A small room comes in handy at times like this. Even if it's a complete mess, I can get it into shape in a short time.)\n(Sour grapes, I suppose?)",
    "refs": [
     "scene34:6"
    ],
@@ -5657,7 +5657,7 @@
    "id": "m00559",
    "kind": "msg",
    "jp": "《読みかけの本がひらいたままふせてある。　こうすると本がすごく傷むらしい。　愛書家から見れば俺って、野蛮人にちがいない》",
-   "en": "",
+   "en": "(A half-read book is left open face-down. Apparently that damages books terribly. To a bibliophile, I must look like a barbarian.)",
    "refs": [
     "scene34:7"
    ],
@@ -5667,7 +5667,7 @@
    "id": "m00560",
    "kind": "msg",
    "jp": "《瞳お手製のやつ。　染みなんかついてないよな》",
-   "en": "",
+   "en": "(Hitomi's handmade one. No stains on it, right?)",
    "refs": [
     "scene34:8"
    ],
@@ -5677,7 +5677,7 @@
    "id": "m00561",
    "kind": "msg",
    "jp": "《最近あまり使わないな》",
-   "en": "",
+   "en": "(I haven't used this much lately.)",
    "refs": [
     "scene34:9"
    ],
@@ -5687,7 +5687,7 @@
    "id": "m00562",
    "kind": "msg",
    "jp": "《しまった。　今朝、出すのわすれた》",
-   "en": "",
+   "en": "(Damn. I forgot to take it out this morning.)",
    "refs": [
     "scene34:10"
    ],
@@ -5697,7 +5697,7 @@
    "id": "m00563",
    "kind": "msg",
    "jp": "《下から五千円札が出てきた。　なんだか得したような気がする。　不思議だ》",
-   "en": "",
+   "en": "(A five-thousand-yen bill came out from underneath. I feel like I've gained something. Strange.)",
    "refs": [
     "scene34:11"
    ],
@@ -5707,7 +5707,7 @@
    "id": "m00564",
    "kind": "msg",
    "jp": "《『聖ソフィア学院史』だ。　校長から学院内の建物の見取り図と一緒に借りてきたんだけど……》",
-   "en": "",
+   "en": "(It's the 'History of St. Sophia Academy.' I borrowed it from the principal along with the floor plans of the academy buildings...)",
    "refs": [
     "scene34:12"
    ],
@@ -5717,7 +5717,7 @@
    "id": "m00565",
    "kind": "msg",
    "jp": "《やっぱり、こいつが気になるな》",
-   "en": "",
+   "en": "(This one still bothers me.)",
    "refs": [
     "scene34:13"
    ],
@@ -5727,7 +5727,7 @@
    "id": "m00566",
    "kind": "msg",
    "jp": "《学院内の主な建物の見取図だ》",
-   "en": "",
+   "en": "(It's a floor plan of the main buildings in the academy.)",
    "refs": [
     "scene35:0"
    ],
@@ -5737,7 +5737,7 @@
    "id": "m00567",
    "kind": "msg",
    "jp": "《これで、生徒会室で聞いた薬品臭事件の古い校舎の部屋と\n　生徒が消えたソフィア寮の部屋を確認ようと思ったのだけど‥‥‥》",
-   "en": "",
+   "en": "(I was going to use this to check the room in the old school building from the chemical smell incident I heard about in the student council room, and the rooms in Sophia Dorm where students disappeared...)",
    "refs": [
     "scene35:1"
    ],
@@ -5747,7 +5747,7 @@
    "id": "m00568",
    "kind": "msg",
    "jp": "《さすがに古い校舎は、何度も使用目的が変更されているらしく、非合理的な部屋割りだな‥‥‥》",
-   "en": "",
+   "en": "(As expected of the old school building, its purpose has been changed many times, resulting in an irrational room layout...)",
    "refs": [
     "scene35:2"
    ],
@@ -5757,7 +5757,7 @@
    "id": "m00569",
    "kind": "msg",
    "jp": "《倉庫に使われている床面積が広すぎる‥‥‥いったい何を納めてあるんだろうか？》",
-   "en": "",
+   "en": "(The floor area used for storage is too large... What on earth is stored there?)",
    "refs": [
     "scene35:3"
    ],
@@ -5767,7 +5767,7 @@
    "id": "m00570",
    "kind": "msg",
    "jp": "《用途の決まっていない部屋を倉庫にしているんだろう。\n　遠足のしおりのメモ欄みたいなものかな？》",
-   "en": "",
+   "en": "(They probably use rooms without assigned purposes as storage.\nLike the memo section of a field trip booklet?)",
    "refs": [
     "scene35:4"
    ],
@@ -5777,7 +5777,7 @@
    "id": "m00571",
    "kind": "msg",
    "jp": "《こっちが時計台で、北がこちらだとしたら、南にあるソフィア寮はここだな。\n　ということはこの点線は‥‥‥地下道の跡だろうか？》",
-   "en": "",
+   "en": "(If this is the clock tower and north is this way, then Sophia Dorm to the south is here.\nWhich means this dotted line is... a trace of an underground passage?)",
    "refs": [
     "scene35:5"
    ],
@@ -5787,7 +5787,7 @@
    "id": "m00572",
    "kind": "msg",
    "jp": "《{C2}ピンポ～ン{C0}　正解！\n　‥‥‥{C1}ン？！{C0}あっチャイムだ。瞳かな》",
-   "en": "",
+   "en": "({C2}Ding-dong!{C0} Correct!\n...{C1}Huh?!{C0} Oh, that's the doorbell. Is it Hitomi?)",
    "refs": [
     "scene35:6"
    ],
@@ -5797,7 +5797,7 @@
    "id": "m00573",
    "kind": "msg",
    "jp": "《ドアを開けると瞳の笑顔があった》",
-   "en": "",
+   "en": "(When I opened the door, there was Hitomi's smile.)",
    "refs": [
     "scene36:1"
    ],
@@ -5807,7 +5807,7 @@
    "id": "m00574",
    "kind": "msg",
    "jp": "「やあ、いらっしゃい」",
-   "en": "",
+   "en": "\"Hey, welcome.\"",
    "refs": [
     "scene36:2"
    ],
@@ -5817,7 +5817,7 @@
    "id": "m00575",
    "kind": "msg",
    "jp": "{C2}瞳：（部屋を覗きこんで）　\n「あわてて片付けたって感じね」",
-   "en": "",
+   "en": "{C2}Hitomi: (Peering into the room)\n\"Looks like you tidied up in a hurry.\"",
    "refs": [
     "scene36:3"
    ],
@@ -5827,7 +5827,7 @@
    "id": "m00576",
    "kind": "msg",
    "jp": "「図星だよ。　エントロピー増大が、この世の定めなんだ。」",
-   "en": "",
+   "en": "\"Hit the nail on the head. Increasing entropy is the way of this world.\"",
    "refs": [
     "scene36:4"
    ],
@@ -5837,7 +5837,7 @@
    "id": "m00577",
    "kind": "msg",
    "jp": "{C2}瞳：「相変わらずつまらないことばかり言ってるのね（笑）。　無理しなくてよかったのよ。　わたしがかたづけてあげようと思ってきたんだから」",
-   "en": "",
+   "en": "{C2}Hitomi: \"You're still saying the most pointless things (laughs). You didn't have to force yourself. I came to tidy up for you.\"",
    "refs": [
     "scene36:5"
    ],
@@ -5847,7 +5847,7 @@
    "id": "m00578",
    "kind": "msg",
    "jp": "「そろそろ独りでお留守番できるようにならなくちゃいけない、と思ったんだ。」",
-   "en": "",
+   "en": "\"I figured it was about time I learned to look after myself.\"",
    "refs": [
     "scene36:6"
    ],
@@ -5857,7 +5857,7 @@
    "id": "m00579",
    "kind": "msg",
    "jp": "{C2}瞳：「フーッ、あなたのその“素敵な”言い回しどうにかならないかしら。　これからずっとつきあわなきゃならないのかと思うと、溜息がでちゃう」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Whew, can't you do something about your 'wonderful' way of speaking? Just thinking I have to put up with it for the rest of my life makes me sigh.\"",
    "refs": [
     "scene36:7"
    ],
@@ -5867,7 +5867,7 @@
    "id": "m00580",
    "kind": "msg",
    "jp": "「呪われた血筋なんだ。　だけれど、瞳のために努力するよ。」",
-   "en": "",
+   "en": "\"It's a cursed bloodline. But I'll make an effort for you, Hitomi.\"",
    "refs": [
     "scene36:8"
    ],
@@ -5877,7 +5877,7 @@
    "id": "m00581",
    "kind": "msg",
    "jp": "{C2}瞳：「どこが努力してるっていうのよ（笑）」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Where's the effort, exactly? (laughs)\"",
    "refs": [
     "scene36:9"
    ],
@@ -5887,7 +5887,7 @@
    "id": "m00582",
    "kind": "msg",
    "jp": "「ところで、今日の瞳は一段ときれいだ。　俺の野性が目覚めちゃったよ。　はやく中に入って、シャワー浴びろよ」",
-   "en": "",
+   "en": "\"By the way, you look even more beautiful today, Hitomi. My wild side is awakening. Hurry up and come in and take a shower.\"",
    "refs": [
     "scene36:10"
    ],
@@ -5897,7 +5897,7 @@
    "id": "m00583",
    "kind": "msg",
    "jp": "{C2}瞳：「‥‥‥ばか‥‥‥」",
-   "en": "",
+   "en": "{C2}Hitomi: \"...Idiot...\"",
    "refs": [
     "scene36:11",
     "scene37:4"
@@ -5908,7 +5908,7 @@
    "id": "m00584",
    "kind": "msg",
    "jp": "《一緒にいるだけで、安らかな気分になれるんだ》",
-   "en": "",
+   "en": "(Just being with her puts me at ease.)",
    "refs": [
     "scene36:12"
    ],
@@ -5918,7 +5918,7 @@
    "id": "m00585",
    "kind": "msg",
    "jp": "《祐子は五年後どんな女にっているんだろう。　さぞ、いい女になるだろうな。　将来のあいつの恋人がうらやましい》",
-   "en": "",
+   "en": "(What kind of woman will Yuko become in five years? She'll surely be a fine one. I envy her future lover.)",
    "refs": [
     "scene36:13"
    ],
@@ -5928,7 +5928,7 @@
    "id": "m00586",
    "kind": "msg",
    "jp": "《考えただけで、もう‥‥‥》",
-   "en": "",
+   "en": "(Just thinking about it...)",
    "refs": [
     "scene36:14"
    ],
@@ -5938,7 +5938,7 @@
    "id": "m00587",
    "kind": "msg",
    "jp": "《うちのはちょっと狭いんだけど‥‥‥》",
-   "en": "",
+   "en": "(Mine's a bit small, but...)",
    "refs": [
     "scene36:15"
    ],
@@ -5948,7 +5948,7 @@
    "id": "m00588",
    "kind": "msg",
    "jp": "《今日の瞳は、一際きれいに見える。　そそられてしまう》",
-   "en": "",
+   "en": "(Hitomi looks especially beautiful today. She's tempting me.)",
    "refs": [
     "scene36:16"
    ],
@@ -5958,7 +5958,7 @@
    "id": "m00589",
    "kind": "msg",
    "jp": "《着痩せして見えるけど、実はＣカップ》",
-   "en": "",
+   "en": "(She looks slim in clothes, but she's actually a C cup.)",
    "refs": [
     "scene36:17"
    ],
@@ -5968,7 +5968,7 @@
    "id": "m00590",
    "kind": "msg",
    "jp": "《フィットネス・クラブとエスティック・サロンで磨いた脚線美。　タイトなミニがよく似合うんだ》",
-   "en": "",
+   "en": "(Legs honed at the fitness club and esthetic salon. Tight minis suit her well.)",
    "refs": [
     "scene36:18"
    ],
@@ -5978,7 +5978,7 @@
    "id": "m00591",
    "kind": "msg",
    "jp": "{C2}瞳：「わが母校ソフィア学院で教師をやるタイプじゃないわね。」",
-   "en": "",
+   "en": "{C2}Hitomi: \"You're not the type to be a teacher at my alma mater, Sophia Academy.\"",
    "refs": [
     "scene36:19"
    ],
@@ -5988,7 +5988,7 @@
    "id": "m00592",
    "kind": "msg",
    "jp": "「そうかな？」",
-   "en": "",
+   "en": "\"You think so?\"",
    "refs": [
     "scene36:20"
    ],
@@ -5998,7 +5998,7 @@
    "id": "m00593",
    "kind": "msg",
    "jp": "{C2}瞳：「生徒にからかわれてるのを、自分は人気があるなんて勘違いしてるんじゃないでしょうね。　生徒の笑い者にされないように気を付けてね。　女子高校生ってけっこうコワイこと考えてるんだから」",
-   "en": "",
+   "en": "{C2}Hitomi: \"You're not mistaking the students teasing you for being popular, are you? Be careful not to become the laughingstock of your students. High school girls think of some pretty scary things, you know.\"",
    "refs": [
     "scene36:21"
    ],
@@ -6008,7 +6008,7 @@
    "id": "m00594",
    "kind": "msg",
    "jp": "「ああ、ＯＧならではのご忠告、感謝するよ」",
-   "en": "",
+   "en": "\"Ah, I appreciate the advice only an alumna could give.\"",
    "refs": [
     "scene36:22"
    ],
@@ -6018,7 +6018,7 @@
    "id": "m00595",
    "kind": "msg",
    "jp": "「今夜は泊まっていく？」",
-   "en": "",
+   "en": "\"Are you staying the night?\"",
    "refs": [
     "scene36:23"
    ],
@@ -6028,7 +6028,7 @@
    "id": "m00596",
    "kind": "msg",
    "jp": "{C2}瞳：「ええ、この間のスーツとブラウス、クリーニングから持ってきてくれた？」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Yes. Did you pick up my suit and blouse from the cleaners?\"",
    "refs": [
     "scene36:24"
    ],
@@ -6038,7 +6038,7 @@
    "id": "m00597",
    "kind": "msg",
    "jp": "「うん」",
-   "en": "",
+   "en": "\"Yeah.\"",
    "refs": [
     "scene36:25"
    ],
@@ -6048,7 +6048,7 @@
    "id": "m00598",
    "kind": "msg",
    "jp": "{C2}瞳：「二日続けて同じ服で出社すると何かと噂する人がいるのよ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"People start rumors if you wear the same clothes to work two days in a row.\"",
    "refs": [
     "scene36:26"
    ],
@@ -6058,7 +6058,7 @@
    "id": "m00599",
    "kind": "msg",
    "jp": "「一流商社の秘書も大変そうだな」",
-   "en": "",
+   "en": "\"Being a secretary at a top trading company sounds tough.\"",
    "refs": [
     "scene36:27"
    ],
@@ -6068,7 +6068,7 @@
    "id": "m00600",
    "kind": "msg",
    "jp": "{C2}瞳：「いいえ、そうでもないわよ。　わたし、仕事好きだから。　もっともあなたほど楽しんでやってるわけじゃないけど」",
-   "en": "",
+   "en": "{C2}Hitomi: \"No, not really. I like my work. Though I'm not enjoying it as much as you enjoy yours.\"",
    "refs": [
     "scene36:28"
    ],
@@ -6078,7 +6078,7 @@
    "id": "m00601",
    "kind": "msg",
    "jp": "「俺だって、結構大変なんだ。　謎の〈ソフィア学院の怪人〉と闘わなけりゃならないんだ」",
-   "en": "",
+   "en": "\"I have it pretty tough too. I have to fight the mysterious 'Phantom of Sophia Academy.'\"",
    "refs": [
     "scene36:29"
    ],
@@ -6088,7 +6088,7 @@
    "id": "m00602",
    "kind": "msg",
    "jp": "{C2}瞳：「悪い癖が、また始まった。　その怪人って、校長先生？\n　あの先生は、立派な方よ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"There you go with that bad habit again. Is the 'phantom' the principal?\nHe's a fine man.\"",
    "refs": [
     "scene36:30"
    ],
@@ -6098,7 +6098,7 @@
    "id": "m00603",
    "kind": "msg",
    "jp": "「そうかい。　俺とよく似ているっていうのが親類の意見なんだけど」",
-   "en": "",
+   "en": "\"Is that so. My relatives say he resembles me quite a bit.\"",
    "refs": [
     "scene36:31"
    ],
@@ -6108,7 +6108,7 @@
    "id": "m00604",
    "kind": "msg",
    "jp": "{C2}瞳：「社交辞令ね、それ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"That's just a polite social lie.\"",
    "refs": [
     "scene36:32"
    ],
@@ -6118,7 +6118,7 @@
    "id": "m00605",
    "kind": "msg",
    "jp": "「こいつ！」　\n（無邪気にじゃれてしまった。　今夜は例の件のことは忘れてしまおう）",
-   "en": "",
+   "en": "\"You!\"",
    "refs": [
     "scene36:33"
    ],
@@ -6128,7 +6128,7 @@
    "id": "m00606",
    "kind": "msg",
    "jp": "「どう？玄関先で楽しいことするってのも、スリリングでいいかな」",
-   "en": "",
+   "en": "\"How about it? Doing something fun at the doorstep—thrilling, isn't it?\"",
    "refs": [
     "scene36:34"
    ],
@@ -6138,7 +6138,7 @@
    "id": "m00607",
    "kind": "msg",
    "jp": "{C2}瞳：「一人のときに楽しんでちょうだい。私は遠慮するわ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Enjoy yourself when you're alone. I'll pass.\"",
    "refs": [
     "scene36:35"
    ],
@@ -6148,7 +6148,7 @@
    "id": "m00608",
    "kind": "msg",
    "jp": "「ごめん、怒らないでくれよ。さあ、中にどうぞ」",
-   "en": "",
+   "en": "\"Sorry, don't be mad. Come on in.\"",
    "refs": [
     "scene36:36"
    ],
@@ -6158,7 +6158,7 @@
    "id": "m00609",
    "kind": "msg",
    "jp": "《バスルームを覗いちゃえ》",
-   "en": "",
+   "en": "(Let me peek into the bathroom.)",
    "refs": [
     "scene37:1"
    ],
@@ -6168,7 +6168,7 @@
    "id": "m00610",
    "kind": "msg",
    "jp": "{C2}瞳：「ン‥‥‥もー！いやらしいわよ。　覗き見するなんて」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Mm... Oh, you're so perverted. Peeping like that.\"",
    "refs": [
     "scene37:2"
    ],
@@ -6178,7 +6178,7 @@
    "id": "m00611",
    "kind": "msg",
    "jp": "「おや？意外なお言葉ですね。　俺がとっても〈いやらしい〉ことは、ずっと前から、とってもよく知っていらっしゃるはずですが」",
-   "en": "",
+   "en": "\"Oh? Surprising words from you. You should know very well, from long ago, that I'm very 'perverted.'\"",
    "refs": [
     "scene37:3"
    ],
@@ -6188,7 +6188,7 @@
    "id": "m00612",
    "kind": "msg",
    "jp": "《そりゃ、〈不退転の決意〉ですよ》",
-   "en": "",
+   "en": "(Well, that's 'unwavering determination.')",
    "refs": [
     "scene37:5"
    ],
@@ -6198,7 +6198,7 @@
    "id": "m00613",
    "kind": "msg",
    "jp": "《心身ともにどこか、未成熟の部分があるけれど、そこがいいんだ》",
-   "en": "",
+   "en": "(She has some immature parts, both physically and mentally, but that's what makes her good.)",
    "refs": [
     "scene37:6"
    ],
@@ -6208,7 +6208,7 @@
    "id": "m00614",
    "kind": "msg",
    "jp": "{C2}瞳：「ムッ‥‥‥‥‥‥ウーン。　今夜は随分激しいわね」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Mm... Mmm. You're quite intense tonight.\"",
    "refs": [
     "scene37:7"
    ],
@@ -6218,7 +6218,7 @@
    "id": "m00615",
    "kind": "msg",
    "jp": "{C2}瞳：「アッ！‥‥‥ヤッ！‥‥‥ン！」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Ah! ...Oh! ...Mm!\"",
    "refs": [
     "scene37:8"
    ],
@@ -6228,7 +6228,7 @@
    "id": "m00616",
    "kind": "msg",
    "jp": "{C2}瞳：「エッ！？ちょっと！あわてないで」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Huh?! Hey! Don't rush.\"",
    "refs": [
     "scene37:9"
    ],
@@ -6238,7 +6238,7 @@
    "id": "m00617",
    "kind": "msg",
    "jp": "「する？」",
-   "en": "",
+   "en": "\"Shall we?\"",
    "refs": [
     "scene37:10"
    ],
@@ -6248,7 +6248,7 @@
    "id": "m00618",
    "kind": "msg",
    "jp": "《しなやかな肢体だ》",
-   "en": "",
+   "en": "(What supple limbs.)},{",
    "refs": [
     "scene37:11"
    ],
@@ -6258,7 +6258,7 @@
    "id": "m00619",
    "kind": "msg",
    "jp": "《見ただけで弾力がわかるツンと上を向いたシルエット》",
-   "en": "",
+   "en": "(A silhouette that points upward, its firmness evident at a glance.)",
    "refs": [
     "scene37:12"
    ],
@@ -6268,7 +6268,7 @@
    "id": "m00620",
    "kind": "msg",
    "jp": "《ぐっと、上がったおしり、エアロビクスの成果だ》",
-   "en": "",
+   "en": "(That firm, lifted rear—the results of aerobics.)",
    "refs": [
     "scene37:13"
    ],
@@ -6278,7 +6278,7 @@
    "id": "m00621",
    "kind": "msg",
    "jp": "《今宵はサスペンス・フィルム風に‥‥‥バスルームで‥‥‥》",
-   "en": "",
+   "en": "(Tonight, in the style of a suspense film... in the bathroom...)",
    "refs": [
     "scene37:14"
    ],
@@ -6288,7 +6288,7 @@
    "id": "m00622",
    "kind": "msg",
    "jp": "《俺達はもう雄と雌でしかない》",
-   "en": "",
+   "en": "(We're nothing more than male and female now.)",
    "refs": [
     "scene38:1"
    ],
@@ -6298,7 +6298,7 @@
    "id": "m00623",
    "kind": "msg",
    "jp": "「どうだい？こういうのは」",
-   "en": "",
+   "en": "\"How's this?\"",
    "refs": [
     "scene38:2"
    ],
@@ -6308,7 +6308,7 @@
    "id": "m00624",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「え？わ‥‥‥わからない」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Huh? I... I don't know.\"{A259}",
    "refs": [
     "scene38:3"
    ],
@@ -6318,7 +6318,7 @@
    "id": "m00625",
    "kind": "msg",
    "jp": "《戸惑いながら淫らになってゆくのがかわいい》",
-   "en": "",
+   "en": "(It's cute how she becomes lewd while being flustered.)",
    "refs": [
     "scene38:4"
    ],
@@ -6328,7 +6328,7 @@
    "id": "m00626",
    "kind": "msg",
    "jp": "《今の俺は〈いま・ここ〉のことしか考えられない》",
-   "en": "",
+   "en": "(Right now, I can only think about the 'here and now.')",
    "refs": [
     "scene38:5"
    ],
@@ -6338,7 +6338,7 @@
    "id": "m00627",
    "kind": "msg",
    "jp": "《やけに渇いている。　俺の激しさに瞳が戸惑っている》",
-   "en": "",
+   "en": "(I'm awfully thirsty. Hitomi is flustered by my intensity.)",
    "refs": [
     "scene38:6"
    ],
@@ -6348,7 +6348,7 @@
    "id": "m00628",
    "kind": "msg",
    "jp": "《ぬれて俺の体にもはり付いてくる》",
-   "en": "",
+   "en": "(Wet, she clings to my body.)",
    "refs": [
     "scene38:7"
    ],
@@ -6358,7 +6358,7 @@
    "id": "m00629",
    "kind": "msg",
    "jp": "《ほんのり紅潮している》",
-   "en": "",
+   "en": "(She's slightly flushed.)",
    "refs": [
     "scene38:8"
    ],
@@ -6368,7 +6368,7 @@
    "id": "m00630",
    "kind": "msg",
    "jp": "《花びらが俺を誘惑している》",
-   "en": "",
+   "en": "(The petals are tempting me.)",
    "refs": [
     "scene38:9"
    ],
@@ -6378,7 +6378,7 @@
    "id": "m00631",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「だめ～、そんなに強くしないで」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"No... don't be so rough.\"{A259}",
    "refs": [
     "scene38:10"
    ],
@@ -6388,7 +6388,7 @@
    "id": "m00632",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「あ～ん、くすぐったいわ」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Ah... that tickles.\"{A259}",
    "refs": [
     "scene38:11"
    ],
@@ -6398,7 +6398,7 @@
    "id": "m00633",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「ウッ、やさしくして」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Uh, be gentle.\"{A259}",
    "refs": [
     "scene38:12"
    ],
@@ -6408,7 +6408,7 @@
    "id": "m00634",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「いや～ん‥‥‥くすぐったい」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Oh no... that tickles.\"{A259}",
    "refs": [
     "scene38:13"
    ],
@@ -6418,7 +6418,7 @@
    "id": "m00635",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「あっ、あっ、いや～、そこだけはだめ」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Ah, ah, no... not there...\"{A259}",
    "refs": [
     "scene38:14"
    ],
@@ -6428,7 +6428,7 @@
    "id": "m00636",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「アッ、アッ～とけちゃう～」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Ah, ah... I'm melting...\"{A259}",
    "refs": [
     "scene38:15"
    ],
@@ -6438,7 +6438,7 @@
    "id": "m00637",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「ム‥‥‥あ～ん」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Mm... ah...\"{A259}",
    "refs": [
     "scene38:16"
    ],
@@ -6448,7 +6448,7 @@
    "id": "m00638",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「ウッ、あ～ん{C2}�ふー」{A259}",
-   "en": "",
+   "en": " {C2}Hitomi: {A259}\"Uh, ah...{C2} whew...\"{A259}",
    "refs": [
     "scene38:17"
    ],
@@ -6458,7 +6458,7 @@
    "id": "m00639",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「だめよ、そんなには、だめ～」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"No, not that much, no...\"{A259}",
    "refs": [
     "scene38:18"
    ],
@@ -6468,7 +6468,7 @@
    "id": "m00640",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「ウッ、くすぐったいわ」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Uh, that tickles.\"{A259}",
    "refs": [
     "scene38:19"
    ],
@@ -6478,7 +6478,7 @@
    "id": "m00641",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「いや～ん‥‥‥」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"Oh no...\"{A259}",
    "refs": [
     "scene38:20"
    ],
@@ -6488,7 +6488,7 @@
    "id": "m00642",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「だめ～、そんなの」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"No... not like that.\"{A259}",
    "refs": [
     "scene38:21"
    ],
@@ -6498,7 +6498,7 @@
    "id": "m00643",
    "kind": "msg",
    "jp": "{C2}瞳：{A259}「そんなにふうに‥‥‥されたら‥‥‥わたし‥‥‥」{A259}",
-   "en": "",
+   "en": "{C2}Hitomi: {A259}\"If you do it like that... I...\"{A259}",
    "refs": [
     "scene38:22"
    ],
@@ -6508,7 +6508,7 @@
    "id": "m00644",
    "kind": "msg",
    "jp": "《瞳は口で俺を愛してくれた。俺は指で、いかせてやろう》",
-   "en": "",
+   "en": "(Hitomi loved me with her mouth. I'll make her come with my fingers.)",
    "refs": [
     "scene39:1"
    ],
@@ -6518,7 +6518,7 @@
    "id": "m00645",
    "kind": "msg",
    "jp": "「瞳、とっても素敵だ。　愛してるよ」",
-   "en": "",
+   "en": "\"Hitomi, you're wonderful. I love you.\"",
    "refs": [
     "scene39:2"
    ],
@@ -6528,7 +6528,7 @@
    "id": "m00646",
    "kind": "msg",
    "jp": "{C2}瞳：「ああ、天国に連れて行ってあげる‥‥‥」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Ah, I'll take you to heaven...\"",
    "refs": [
     "scene39:3"
    ],
@@ -6538,7 +6538,7 @@
    "id": "m00647",
    "kind": "msg",
    "jp": "「ヒトミィ{C2}�{C0}」",
-   "en": "",
+   "en": "\"Hitomii...{C2}{C0}\"",
    "refs": [
     "scene39:4"
    ],
@@ -6548,7 +6548,7 @@
    "id": "m00648",
    "kind": "msg",
    "jp": "{C2}瞳：「ムグ、あ、あぁ～ん‥‥‥今日のあなたの指、魔法だわ‥‥‥！\n{C2}お願いいって！！{C0}」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Mmph, ah, aah... your fingers today are like magic...!\n{C2}Please, let me come!!{C0}\"",
    "refs": [
     "scene39:5"
    ],
@@ -6558,7 +6558,7 @@
    "id": "m00649",
    "kind": "msg",
    "jp": "《目はトロンとさせ、唇と舌を使っている》",
-   "en": "",
+   "en": "(Her eyes are glazed, and she's using her lips and tongue.)",
    "refs": [
     "scene39:6"
    ],
@@ -6568,7 +6568,7 @@
    "id": "m00650",
    "kind": "msg",
    "jp": "《指が反り返ってる。　快楽にひたってるな》",
-   "en": "",
+   "en": "(Her fingers are curling back. She's immersed in pleasure.)",
    "refs": [
     "scene39:7"
    ],
@@ -6578,7 +6578,7 @@
    "id": "m00651",
    "kind": "msg",
    "jp": "{C2}瞳：「いやよ、そこはダメ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"No, not there.\"",
    "refs": [
     "scene39:8"
    ],
@@ -6588,7 +6588,7 @@
    "id": "m00652",
    "kind": "msg",
    "jp": "{C2}瞳：「そういうのをしたいの？あとでね」",
-   "en": "",
+   "en": "{C2}Hitomi: \"You want to do that? Later.\"",
    "refs": [
     "scene39:9"
    ],
@@ -6598,7 +6598,7 @@
    "id": "m00653",
    "kind": "msg",
    "jp": "{C2}瞳：「ムゥ、グ‥‥‥裏もなめてあげる」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Mm, mgh... I'll lick the underside too.\"",
    "refs": [
     "scene39:10"
    ],
@@ -6608,7 +6608,7 @@
    "id": "m00654",
    "kind": "msg",
    "jp": "{C2}瞳：「あぁ、{C2}�{C0}いっぱい出してね{C2}�{C0}」",
-   "en": "",
+   "en": " {C2}Hitomi: \"Ah...{C2}�{C0} let it all out...{C2}�{C0}\"",
    "refs": [
     "scene39:11"
    ],
@@ -6618,7 +6618,7 @@
    "id": "m00655",
    "kind": "msg",
    "jp": "{C2}瞳：「{C2}�{C0}待って{C2}�{C0}」",
-   "en": "",
+   "en": "{C2}Hitomi: \"{C2}�{C0}Wait...{C2}�{C0}\"",
    "refs": [
     "scene39:12"
    ],
@@ -6628,7 +6628,7 @@
    "id": "m00656",
    "kind": "msg",
    "jp": "{C2}瞳：「こんなに大きいの入らないわ。‥‥‥フフフ冗談よ」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Something this big won't fit... Hehehe, just kidding.\"",
    "refs": [
     "scene39:13"
    ],
@@ -6638,7 +6638,7 @@
    "id": "m00657",
    "kind": "msg",
    "jp": "{C2}瞳：「もっと{C2}�{C0}もっと強く～ン、して{C2}�{C0}」",
-   "en": "",
+   "en": "{C2}Hitomi: \"More...{C2}�{C0} harder...{C2}�{C0}\"",
    "refs": [
     "scene39:14"
    ],
@@ -6648,7 +6648,7 @@
    "id": "m00658",
    "kind": "msg",
    "jp": "{C2}瞳：「いや、いや、いや～ん」",
-   "en": "",
+   "en": "{C2}Hitomi: \"No, no, no...\"",
    "refs": [
     "scene39:15"
    ],
@@ -6658,7 +6658,7 @@
    "id": "m00659",
    "kind": "msg",
    "jp": "{C2}瞳：「もっとはやく～ン{C2}�{C0}」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Faster...{C2}�{C0}\"",
    "refs": [
     "scene39:16"
    ],
@@ -6668,7 +6668,7 @@
    "id": "m00660",
    "kind": "msg",
    "jp": "{C2}瞳：「アッ、ウッ、あ～ん」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Ah, uh, ah...\"",
    "refs": [
     "scene39:17"
    ],
@@ -6678,7 +6678,7 @@
    "id": "m00661",
    "kind": "msg",
    "jp": "{C2}瞳：「いい{C2}�{C0}いいわッ{C2}�{C0}とける、とけちゃう～」",
-   "en": "",
+   "en": " {C2}Hitomi: \"It's good...{C2}�{C0} it's so good...{C2}�{C0} I'm melting, melting...\"",
    "refs": [
     "scene39:18"
    ],
@@ -6688,7 +6688,7 @@
    "id": "m00662",
    "kind": "msg",
    "jp": "{C2}瞳：「あ～ん、強くして」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Ah... harder.\"",
    "refs": [
     "scene39:19"
    ],
@@ -6698,7 +6698,7 @@
    "id": "m00663",
    "kind": "msg",
    "jp": "《{C2}Ｇｏ　ａｈｅａｄ�{C0}》",
-   "en": "",
+   "en": "({C2}Go ahead...{C0})",
    "refs": [
     "scene39:20"
    ],
@@ -6708,7 +6708,7 @@
    "id": "m00664",
    "kind": "msg",
    "jp": "{C2}瞳：「まだよ。　だめ～」",
-   "en": "",
+   "en": "{C2}Hitomi: \"Not yet. No...\"",
    "refs": [
     "scene39:21"
    ],

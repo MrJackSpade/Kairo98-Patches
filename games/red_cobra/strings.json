@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "　僕はミスターＭ。",
-   "en": " I am Mister M.",
+   "en": "I'm Mr. M.",
    "refs": [
     "MES0.DOC:00000",
     "MES4.DOC:00000"
@@ -17,7 +17,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "　この星に住み着いている異星",
-   "en": " An alien who lives on this",
+   "en": "I'm an alien who's settled on this planet.",
    "refs": [
     "MES0.DOC:00001",
     "MES4.DOC:00001"
@@ -28,7 +28,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "人だ。",
-   "en": "world.",
+   "en": "An alien.",
    "refs": [
     "MES0.DOC:00002",
     "MES4.DOC:00002"
@@ -39,7 +39,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "　この星で長く暮らすうちに僕",
-   "en": " Living here so long, I",
+   "en": "During my long time living here, I learned",
    "refs": [
     "MES0.DOC:00003",
     "MES4.DOC:00003"
@@ -50,7 +50,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "以外にも異星人が住み着いてい",
-   "en": "found other aliens had also",
+   "en": "that other aliens had settled here besides",
    "refs": [
     "MES0.DOC:00004",
     "MES4.DOC:00004"
@@ -61,7 +61,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "ることを知った。",
-   "en": "settled here.",
+   "en": "myself.",
    "refs": [
     "MES0.DOC:00005",
     "MES4.DOC:00005"
@@ -72,7 +72,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "　その異星人には多くの女性が",
-   "en": " Many of those aliens were",
+   "en": "Many of those aliens were women, and they",
    "refs": [
     "MES0.DOC:00006",
     "MES4.DOC:00006"
@@ -83,7 +83,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "含まれており、重大な悩みを抱",
-   "en": "women, and they shared a grave",
+   "en": "were carrying a serious problem.",
    "refs": [
     "MES0.DOC:00007",
     "MES4.DOC:00007"
@@ -94,7 +94,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "えていた。",
-   "en": "a worry.",
+   "en": "A serious worry.",
    "refs": [
     "MES0.DOC:00008",
     "MES4.DOC:00008"
@@ -105,7 +105,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "「生きるうえで性生活は大切。",
-   "en": "\"Sex is vital to a good life.",
+   "en": "\"Sex is important for living.",
    "refs": [
     "MES0.DOC:00009",
     "MES4.DOC:00009"
@@ -116,7 +116,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "でも、ここ何年もエクスタシー",
-   "en": "But for years now I haven't",
+   "en": "But I haven't had an orgasm in years.\"",
    "refs": [
     "MES0.DOC:00010",
     "MES4.DOC:00010"
@@ -127,7 +127,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "を得ていないの」",
-   "en": "felt ecstasy.\"",
+   "en": "\"I haven't felt ecstasy in years.\"",
    "refs": [
     "MES0.DOC:00011",
     "MES4.DOC:00011"
@@ -138,7 +138,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "　彼女達異星人は、この星の男",
-   "en": " These alien women can have",
+   "en": "These alien women could have sex with the men of this planet,",
    "refs": [
     "MES0.DOC:00012",
     "MES4.DOC:00012"
@@ -149,7 +149,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "とセックスはできてもエクスタ",
-   "en": "sex with Earth men, but they",
+   "en": "but they couldn't achieve",
    "refs": [
     "MES0.DOC:00013",
     "MES4.DOC:00013"
@@ -160,7 +160,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "シーは得ることはできない。",
-   "en": "can never reach ecstasy.",
+   "en": "ecstasy.",
    "refs": [
     "MES0.DOC:00014",
     "MES4.DOC:00014"
@@ -171,7 +171,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "　僕は彼女達を救うため、ある",
-   "en": " To save them, I called on a",
+   "en": "To save them, I called",
    "refs": [
     "MES0.DOC:00015",
     "MES4.DOC:00015"
@@ -182,7 +182,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "男を呼んだ。",
-   "en": "certain man.",
+   "en": "a certain man.",
    "refs": [
     "MES0.DOC:00016",
     "MES4.DOC:00016"
@@ -193,7 +193,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "　その男の名は・・・・・。",
-   "en": " His name was.....",
+   "en": "That man's name was...",
    "refs": [
     "MES0.DOC:00017",
     "MES4.DOC:00017"
@@ -204,7 +204,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "「俺は愛の為に命を削るジゴロ・・・レッドコブラ。愛のために死ねるなら幸せさ」",
-   "en": "\"I'm a gigolo who spends his life for love... Red Cobra. Dying for love would be bliss.\"",
+   "en": "\"I'm a gigolo who burns his life for love... Red Cobra. If I can die for love, I'm a happy man.\"",
    "refs": [
     "MES0.DOC:00018",
     "MES4.DOC:00018"
@@ -215,7 +215,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "「久しぶりだなコブラ。元気だったか？　僕の息子はいつも元気さ」",
-   "en": "\"Been a while, Cobra. Doing well? My little guy always is.\"",
+   "en": "\"Long time no see, Cobra. Been well?\" \"My son's always full of energy.\"",
    "refs": [
     "MES0.DOC:00019",
     "MES4.DOC:00019"
@@ -226,7 +226,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "「俺はジゴロ。俺にやさしい言葉は無用さ」",
-   "en": "\"I'm a gigolo. Spare me the kind words.\"",
+   "en": "\"I'm a gigolo. I've no use for kind words.\"",
    "refs": [
     "MES0.DOC:00020",
     "MES4.DOC:00020"
@@ -237,7 +237,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "「ジルバシティへ飛んでくれないか。そこにクリームという女がいる。やれるぞ」",
-   "en": "\"Fly to Jitterbug City. There's a woman there named Cream. You'll score.\"",
+   "en": "\"Fly to Jilba City. There's a woman named Cream there. You can do her.\"",
    "refs": [
     "MES0.DOC:00021",
     "MES4.DOC:00021"
@@ -248,7 +248,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "「クリーム・・・・・なんという美しい名前なんだ。今までにこれほど美しい名前を聞いたことがない」",
-   "en": "\"Cream..... What a beautiful name. Never in my life have I heard a name so beautiful.\"",
+   "en": "\"Cream... What a beautiful name. I've never heard a name so lovely in all my life.\"",
    "refs": [
     "MES0.DOC:00022",
     "MES4.DOC:00022"
@@ -259,7 +259,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "「コブラ、相変わらずキザだな。だがな、カッコつけてるつもりだろうが、ダサダサだぞ」",
-   "en": "\"Cobra, smooth as ever. You think you look cool, but you're totally lame.\"",
+   "en": "\"Cobra, you're as corny as ever. You think you're being cool, but you're just lame.\"",
    "refs": [
     "MES0.DOC:00023",
     "MES4.DOC:00023"
@@ -270,7 +270,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "「ほっといてくれ、俺はジゴロさ。おまえにはこのカッコ良さが分からないだけさ」",
-   "en": "\"Leave me be, I'm a gigolo. You just can't appreciate how cool I am.\"",
+   "en": "\"Leave me alone, I'm a gigolo. You just can't appreciate this kind of cool.\"",
    "refs": [
     "MES0.DOC:00024",
     "MES4.DOC:00024"
@@ -281,7 +281,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "「わかったわかった、とにかく頼んだぞ」",
-   "en": "\"Fine, fine. Anyway, I'm counting on you.\"",
+   "en": "\"Fine, fine. Just get it done.\"",
    "refs": [
     "MES0.DOC:00025",
     "MES4.DOC:00025"
@@ -303,7 +303,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "「フッ、久々の仕事だぜ。待っていてくれ、クリーム。もうすぐ、この宇宙ナンバーワンのスペースジゴロ、レッドコブラに会える」",
-   "en": "\"Heh, my first job in ages. Wait for me, Cream. Soon you'll meet the universe's top Space Gigolo, Red Cobra.\"",
+   "en": "\"Heh, a job after a long time. Wait for me, Cream. Soon you'll meet the number one space gigolo in the universe, Red Cobra.\"",
    "refs": [
     "MES0.DOC:00027",
     "MES4.DOC:00027"
@@ -325,7 +325,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "「ＳＯＳ！　ＳＯＳ！　誰か！　助けて！」",
-   "en": "\"SOS! SOS! Anyone! Help me!\"",
+   "en": "\"SOS! SOS! Someone! Help!\"",
    "refs": [
     "MES0.DOC:00029",
     "MES4.DOC:00029"
@@ -336,7 +336,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。聞こえますかどーぞ」",
-   "en": "\"Ahem, ahem, testing the mic. Can you hear me? Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Can you hear me? Over.\"",
    "refs": [
     "MES0.DOC:00030",
     "MES4.DOC:00030"
@@ -347,7 +347,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "「助けて！　攻撃を受けて操縦不能です」",
-   "en": "\"Help! I'm under attack and can't steer!\"",
+   "en": "\"Help! We're under attack and can't steer!\"",
    "refs": [
     "MES0.DOC:00031",
     "MES4.DOC:00031"
@@ -358,7 +358,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。こちらは愛器【コンドルシャーク】号。俺はジゴロのレッドコブラさ。今助けてやる。どーぞ」",
-   "en": "\"Ahem, testing the mic. This is my beloved instrument, the Condor Shark. I'm Red Cobra, gigolo. I'll save you now. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. This is my beloved Condor Shark. I'm the gigolo Red Cobra. I'll save you now. Over.\"",
    "refs": [
     "MES0.DOC:00032",
     "MES4.DOC:00032"
@@ -380,7 +380,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "「ど、どうだ。これが俺の腕前だ。たいしたもんだろう？」",
-   "en": "\"H-how's that? That's my skill. Pretty impressive, huh?\"",
+   "en": "\"S-So? That's my skill. Pretty impressive, huh?\"",
    "refs": [
     "MES0.DOC:00034",
     "MES4.DOC:00034"
@@ -402,7 +402,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "「人は愛の為に生きている。船が壊れたら直せばいい。しかし、君の命は戻らないかもしれない」",
-   "en": "\"People live for love. A broken ship can be fixed. But your life might not come back.\"",
+   "en": "\"People live for love. If a ship breaks, you fix it. But your life might not come back.\"",
    "refs": [
     "MES0.DOC:00036",
     "MES4.DOC:00036"
@@ -413,7 +413,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "「はあ・・・どーも。今、そっちに行きます」",
-   "en": "\"Uh... thanks. I'm coming over there now.\"",
+   "en": "\"Ah... thanks. I'm coming over now.\"",
    "refs": [
     "MES0.DOC:00037",
     "MES4.DOC:00037"
@@ -424,7 +424,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "「あたし、リズミイ。助けて下さってありがとうございました」",
-   "en": "\"I'm Rhythmy. Thank you so much for saving me.\"",
+   "en": "\"I'm Rhythmie. Thank you so much for saving me.\"",
    "refs": [
     "MES0.DOC:00038",
     "MES4.DOC:00038"
@@ -435,7 +435,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "「俺はジゴロ。礼なんかいらないさ。乙女のプライベートを探るつもりはないが、何してたんだい？」",
-   "en": "\"I'm a gigolo. No thanks needed. I won't pry into a maiden's affairs, but what were you doing?\"",
+   "en": "\"I'm a gigolo. I don't need thanks. I don't intend to pry into a maiden's private affairs, but what were you doing?\"",
    "refs": [
     "MES0.DOC:00039",
     "MES4.DOC:00039"
@@ -446,7 +446,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "「あたしの住む惑星は【イオナ】っていうの。でも惑星【ドラテ】に侵略されてしまって」",
-   "en": "\"My home planet is called Iona. But it was invaded by the planet Drate, and...\"",
+   "en": "\"My home planet is called Iona. But it was invaded by the planet Dorate...\"",
    "refs": [
     "MES0.DOC:00040",
     "MES4.DOC:00040"
@@ -457,7 +457,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "「それで、宇宙船で逃げだした・・・どうだい？　俺の緻密な計算による予測なんだが」",
-   "en": "\"So you fled in a spaceship... Right? My prediction, by precise calculation.\"",
+   "en": "\"So you fled in a spaceship... Am I right? That's my prediction based on precise calculations.\"",
    "refs": [
     "MES0.DOC:00041",
     "MES4.DOC:00041"
@@ -468,7 +468,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "「そ、そーなんです」",
-   "en": "\"Th-that's right.\"",
+   "en": "\"Y-yes, that's right.\"",
    "refs": [
     "MES0.DOC:00042",
     "MES4.DOC:00042"
@@ -479,7 +479,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "「俺はジゴロだ。乙女が困っているのを放ってはおけない」",
-   "en": "\"I'm a gigolo. I can't leave a maiden in trouble.\"",
+   "en": "\"I'm a gigolo. I can't leave a maiden in distress.\"",
    "refs": [
     "MES0.DOC:00043",
     "MES4.DOC:00043"
@@ -490,7 +490,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "「じゃ、ドラテ軍を追い払ってくれるのね！！　うれしー！！　今すぐ出発しよっ？！」",
-   "en": "\"Then you'll drive out the Drate army! Yay!! Let's go right now, okay?!\"",
+   "en": "\"Then you'll drive off the Dorate army!! I'm so happy!! Let's leave right away, okay?!\"",
    "refs": [
     "MES0.DOC:00044",
     "MES4.DOC:00044"
@@ -501,7 +501,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "「ま、まてまて、本当の勇気ある者は無駄な戦いはしないものだ」",
-   "en": "\"W-wait. A truly brave man doesn't fight pointless battles.\"",
+   "en": "\"W-wait, wait. A truly brave man doesn't fight pointless battles.\"",
    "refs": [
     "MES0.DOC:00045",
     "MES4.DOC:00045"
@@ -512,7 +512,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "「どういうこと？」",
-   "en": "\"Meaning what?\"",
+   "en": "\"What do you mean?\"",
    "refs": [
     "MES0.DOC:00046",
     "MES4.DOC:00046"
@@ -523,7 +523,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "「いくら宇宙最強のレッドコブラでも、あまりに多勢に無勢だ」",
-   "en": "\"Even Red Cobra, strongest in space, is outnumbered.\"",
+   "en": "\"Even the strongest Red Cobra in the universe is too outnumbered.\"",
    "refs": [
     "MES0.DOC:00047",
     "MES4.DOC:00047"
@@ -534,7 +534,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "「なんだ、やっぱり・・・」",
-   "en": "\"Figures, I knew it...\"",
+   "en": "\"What, so you're just...\"",
    "refs": [
     "MES0.DOC:00048",
     "MES4.DOC:00048"
@@ -545,7 +545,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "「しかし、リズミイ。いつか、必ず君の星を救ってやる。俺のこの燃えるような愛の力でいつかきっとな」",
-   "en": "\"But Rhythmy, someday I'll surely save your planet. Someday, with the power of my burning love.\"",
+   "en": "\"But Rhythmie. Someday, I will definitely save your planet. With the power of my burning love, someday, for sure.\"",
    "refs": [
     "MES0.DOC:00049",
     "MES4.DOC:00049"
@@ -556,7 +556,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "「ねえ！　あ、あれは？！」",
-   "en": "\"Hey! Wh-what's that?!\"",
+   "en": "\"Hey! W-what's that?!\"",
    "refs": [
     "MES0.DOC:00050",
     "MES4.DOC:00050"
@@ -567,7 +567,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "「あたしを追いかけてきたドラテ軍よ！！」",
-   "en": "\"It's the Drate army chasing me!!\"",
+   "en": "\"It's the Dorate army that chased me!!\"",
    "refs": [
     "MES0.DOC:00051",
     "MES4.DOC:00051"
@@ -578,7 +578,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "「フッ、飛んで火に入る夏の虫とはこのことだよ。リズミイ」",
-   "en": "\"Heh, they're moths flying into the flame, Rhythmy.\"",
+   "en": "\"Heh, they're like moths flying into the flame. Rhythmie.\"",
    "refs": [
     "MES0.DOC:00052"
    ],
@@ -588,7 +588,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "「どっちがよ！」",
-   "en": "\"Who's the moth?!\"",
+   "en": "\"Which one's the moth?!\"",
    "refs": [
     "MES0.DOC:00053",
     "MES4.DOC:00053"
@@ -599,7 +599,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "「わたしはドラテ第３艦隊指令官サムソンだ。アイキコンドルシャークの船長に告ぐ。今すぐリズミイ姫を我々に渡し、ここから立ち去れ」",
-   "en": "\"I am Samson, commander of Drate's 3rd Fleet. Captain of the Aiki Condor Shark: hand over Princess Rhythmy now and leave.\"",
+   "en": "\"I am Samson, commander of the Dorate Third Fleet. I address the captain of the Aiki Condor Shark. Hand over Princess Rhythmie to us at once and leave this place.\"",
    "refs": [
     "MES0.DOC:00054",
     "MES4.DOC:00054"
@@ -610,7 +610,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "「リズミイ、君はリズミイではなくてリズミイヒメという名前なのか？」",
-   "en": "\"Rhythmy, so your name isn't Rhythmy, it's Rhythmyhime?\"",
+   "en": "\"Rhythmie, is your name not Rhythmie but Rhythmie-hime?\"",
    "refs": [
     "MES0.DOC:00055",
     "MES4.DOC:00055"
@@ -621,7 +621,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "「違うわ」",
-   "en": "\"Nope.\"",
+   "en": "\"No, it isn't.\"",
    "refs": [
     "MES0.DOC:00056",
     "MES4.DOC:00056"
@@ -632,7 +632,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。こちら愛器【コンドルシャーク】。サムソン君、リズミイヒメという人物はこの船には乗っていないぜ」",
-   "en": "\"Ahem, ahem, testing the mic. This is my beloved Condor Shark. Samson, there's nobody named Rhythmyhime aboard this ship.\"",
+   "en": "\"Ahem, ahem. Testing microphone. This is my beloved Condor Shark. Samson, there's no one named Princess Rhythmie aboard this ship.\"",
    "refs": [
     "MES0.DOC:00057",
     "MES4.DOC:00057"
@@ -643,7 +643,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "「乗っているのはリズミイだ。それから、この船の名前はコンドルシャークだ。どーぞ」",
-   "en": "\"The one aboard is Rhythmy. Also, this ship's name is Condor Shark. Over.\"",
+   "en": "\"What's aboard is Rhythmie. Also, this ship's name is Condor Shark. Over.\"",
    "refs": [
     "MES0.DOC:00058",
     "MES4.DOC:00058"
@@ -654,7 +654,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "「コンドルシャーク？　しかし、傍受した無線でも、今もアイキコンドルシャークと・・・」",
-   "en": "\"Condor Shark? But the radio we intercepted just now said Aiki Condor Shark...\"",
+   "en": "\"Condor Shark? But even in the radio we intercepted, it said Aiki Condor Shark...\"",
    "refs": [
     "MES0.DOC:00059",
     "MES4.DOC:00059"
@@ -665,7 +665,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。サムソン君、日本語は難しいものだ。自分の大切なものや愛してる道具を日本では愛器というんだ。どーぞ」",
-   "en": "\"Ahem, testing the mic. Samson, Japanese is hard. In Japan, 'aiki' means a precious or beloved tool of yours. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Samson, Japanese is a difficult language. In Japan, they call something precious or a tool you love an aiki. Over.\"",
    "refs": [
     "MES0.DOC:00060",
     "MES4.DOC:00060"
@@ -676,7 +676,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "「この場合愛機でしょ」",
-   "en": "\"It's 'beloved ship'.\"",
+   "en": "\"In this case, it'd be aiki as in 'beloved machine'.\"",
    "refs": [
     "MES0.DOC:00061",
     "MES4.DOC:00061"
@@ -687,7 +687,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "「そうともいうな」",
-   "en": "\"That too.\"",
+   "en": "\"You could say that too.\"",
    "refs": [
     "MES0.DOC:00062",
     "MES4.DOC:00062"
@@ -698,7 +698,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "「それに、無線で船の紹介するときは普通付けないわ」",
-   "en": "\"And nobody says that when naming a ship on radio.\"",
+   "en": "\"Besides, you don't normally add that when introducing your ship over the radio.\"",
    "refs": [
     "MES0.DOC:00063",
     "MES4.DOC:00063"
@@ -709,7 +709,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "「フッ、リズミイ、君はまだまだ世の中を知らないな。そういうものなんだよ」",
-   "en": "\"Heh, Rhythmy, you still don't know the world. That's just how it is.\"",
+   "en": "\"Heh, Rhythmie, you still don't know the ways of the world. That's just how it is.\"",
    "refs": [
     "MES0.DOC:00064",
     "MES4.DOC:00064"
@@ -720,7 +720,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。サムソン君、その話はまた今度にしてくれないか。ジゴロは忙しいんだよ。どーぞ」",
-   "en": "\"Ahem, ahem, testing the mic. Samson, could we save that talk for later? A gigolo is a busy man. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Samson, can we save this for another time? A gigolo is a busy man. Over.\"",
    "refs": [
     "MES0.DOC:00065",
     "MES4.DOC:00065"
@@ -731,7 +731,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "「どうしても、リズミイ姫を渡さないということだな」",
-   "en": "\"So you refuse to hand over Princess Rhythmy.\"",
+   "en": "\"So you refuse to hand over Princess Rhythmie.\"",
    "refs": [
     "MES0.DOC:00066",
     "MES4.DOC:00066"
@@ -742,7 +742,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。サムソン君、くどいようだがリズミイヒメはこの船には乗っていない。人の話は良く聞くものだ。どーぞ」",
-   "en": "\"Ahem, testing the mic. Samson, I hate to repeat myself, but Rhythmyhime isn't aboard. Listen when people talk. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Samson, I hate to repeat myself, but Princess Rhythmie is not aboard this ship. You should listen carefully to what people say. Over.\"",
    "refs": [
     "MES0.DOC:00067",
     "MES4.DOC:00067"
@@ -753,7 +753,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "「ドラテ第３艦隊はこれからアイキコンドルシャークに攻撃をかける」",
-   "en": "\"The Drate 3rd Fleet will now attack the Aiki Condor Shark.\"",
+   "en": "\"The Dorate Third Fleet will now attack the Aiki Condor Shark.\"",
    "refs": [
     "MES0.DOC:00068",
     "MES4.DOC:00068"
@@ -764,7 +764,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。それだけはやめてくれ。どーぞ」",
-   "en": "\"Ahem, ahem, testing the mic. Anything but that. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Just don't do that. Over.\"",
    "refs": [
     "MES0.DOC:00069",
     "MES4.DOC:00069"
@@ -775,7 +775,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "「それでは、リズミイ姫を渡すんだな」",
-   "en": "\"Then hand over Princess Rhythmy.\"",
+   "en": "\"Then you'll hand over Princess Rhythmie.\"",
    "refs": [
     "MES0.DOC:00070",
     "MES4.DOC:00070"
@@ -786,7 +786,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中。それもできない。どーぞ」",
-   "en": "\"Ahem, ahem, testing the mic. Can't do that either. Over.\"",
+   "en": "\"Ahem, ahem. Testing microphone. Can't do that either. Over.\"",
    "refs": [
     "MES0.DOC:00071",
     "MES4.DOC:00071"
@@ -797,7 +797,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "「うーっ、どっちなんだっ！！！！！　攻撃開始！！」",
-   "en": "\"Grr, which is it?!!!!! Commence attack!!\"",
+   "en": "\"Grrr, which is it?! Commence attack!!\"",
    "refs": [
     "MES0.DOC:00072",
     "MES4.DOC:00072"
@@ -830,7 +830,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "「フッ、俺はジゴロ。ちょろいもんさ」",
-   "en": "\"Heh, I'm a gigolo. What a breeze.\"",
+   "en": "\"Heh, I'm a gigolo. Easy pickings.\"",
    "refs": [
     "MES0.DOC:00075",
     "MES4.DOC:00075"
@@ -841,7 +841,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "「ねえ、コブラ。お願いがあるの」",
-   "en": "\"Hey, Cobra. I have a favor.\"",
+   "en": "\"Hey, Cobra. I have a favor to ask.\"",
    "refs": [
     "MES0.DOC:00076",
     "MES4.DOC:00076"
@@ -852,7 +852,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "「なんだいレディ」",
-   "en": "\"What, lady?\"",
+   "en": "\"What is it, lady?\"",
    "refs": [
     "MES0.DOC:00077",
     "MES4.DOC:00077"
@@ -863,7 +863,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "「コブラがいつか【イオナ】を救ってくれるまで、この船にいていい？」",
-   "en": "\"Can I stay on this ship until you save Iona someday, Cobra?\"",
+   "en": "\"Can I stay on this ship until you save Iona someday?\"",
    "refs": [
     "MES0.DOC:00078",
     "MES4.DOC:00078"
@@ -874,7 +874,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "「フッ、ジゴロに特定の女はいらないのさ」",
-   "en": "\"Heh, a gigolo needs no one woman.\"",
+   "en": "\"Heh, a gigolo doesn't need one particular woman.\"",
    "refs": [
     "MES0.DOC:00079",
     "MES4.DOC:00079"
@@ -885,7 +885,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "「じゃあ、船の整備師として雇ってよ」",
-   "en": "\"Then hire me as ship mechanic.\"",
+   "en": "\"Then hire me as your ship's mechanic.\"",
    "refs": [
     "MES0.DOC:00080",
     "MES4.DOC:00080"
@@ -896,7 +896,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "「フッ、勝手にしなよ、プリティガール。おっ目的地ジルバシティに着いたようだぜ、ベイビー」",
-   "en": "\"Heh, suit yourself, pretty girl. Oh, looks like we've reached Jitterbug City, baby.\"",
+   "en": "\"Heh, suit yourself, pretty girl. Oh, looks like we've arrived at our destination, Jilba City, baby.\"",
    "refs": [
     "MES0.DOC:00081",
     "MES4.DOC:00081"
@@ -907,7 +907,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "「俺はこの町で仕事があるんだ。船の整備でもして待っててくれ、ベイビー」",
-   "en": "\"I've got work in this town. Wait here and tune up the ship, baby.\"",
+   "en": "\"I've got business in this town. Do some maintenance on the ship and wait for me, baby.\"",
    "refs": [
     "MES0.DOC:00082"
    ],
@@ -927,7 +927,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "「リズミイ、整備は大切だが壊すなよ」",
-   "en": "\"Rhythmy, tune it up, but don't break it.\"",
+   "en": "\"Rhythmie, maintenance is important, but don't break it.\"",
    "refs": [
     "MES0.DOC:00084"
    ],
@@ -937,7 +937,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "「あたし、船の整備ははじめてだけど、たぶん大丈夫だと思うわ」",
-   "en": "\"It's my first time servicing a ship, but I'm sure it'll be fine.\"",
+   "en": "\"This is my first time doing ship maintenance, but I think it'll probably be fine.\"",
    "refs": [
     "MES0.DOC:00085"
    ],
@@ -947,7 +947,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "「・・・・・（出かけるのやめようかな）」",
-   "en": "\"..... (Maybe I shouldn't go out.)\"",
+   "en": "\"... (Maybe I shouldn't go out.)\"",
    "refs": [
     "MES0.DOC:00086"
    ],
@@ -957,7 +957,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "「さあさあ、お仕事お仕事！　たーくさんお金を貯めて、【イオナ】を救う為の武器を買うんだからね！　いってらっしゃーい！！」",
-   "en": "\"Come on, off to work! Save up lots and lots of money so we can buy weapons to save Iona! Have a good day!!\"",
+   "en": "\"Come on, time for work, work! Save up lots of money and buy weapons to save Iona! Have a good trip!!\"",
    "refs": [
     "MES0.DOC:00087"
    ],
@@ -967,7 +967,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "「ま、まかせておいてくれ。ぜ、絶対に俺が救ってやるからな、ベイビー」",
-   "en": "\"L-leave it to me. I-I'll save it for sure, baby.\"",
+   "en": "\"L-leave it to me. I'll definitely save it, baby.\"",
    "refs": [
     "MES0.DOC:00088"
    ],
@@ -977,7 +977,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "「フッ、クリーム嬢の家はここだな。俺はジゴロ、お見通しさ」",
-   "en": "\"Heh, this must be Miss Cream's house. I'm a gigolo, I know.\"",
+   "en": "\"Heh, this is Miss Cream's place. I'm a gigolo, I can see through everything.\"",
    "refs": [
     "MES0.DOC:00089"
    ],
@@ -987,7 +987,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "「ごめんくださーい。ご注文の、ジゴロですがー」",
-   "en": "\"Hellooo. Delivery - one gigolo, as ordered.\"",
+   "en": "\"Excuse me~. Your ordered gigolo is here~.\"",
    "refs": [
     "MES0.DOC:00090"
    ],
@@ -997,7 +997,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "「こんにちは。レッドコブラさんですね、お待ちしてたんですよ」",
-   "en": "\"Hello. You must be Mr. Red Cobra. I've been expecting you.\"",
+   "en": "\"Hello. You're Red Cobra, aren't you? I've been waiting for you.\"",
    "refs": [
     "MES0.DOC:00091"
    ],
@@ -1007,7 +1007,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "「俺もクリームのような美しい女性にお会いできて心より嬉しく思っているよ」",
-   "en": "\"And I'm truly delighted to meet a woman as beautiful as you, Cream.\"",
+   "en": "\"I too am truly delighted to meet a beautiful woman like Cream.\"",
    "refs": [
     "MES0.DOC:00092"
    ],
@@ -1017,7 +1017,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "「まあ、お上手なのね」",
-   "en": "\"My, you flatterer.\"",
+   "en": "\"My, you're quite the smooth talker.\"",
    "refs": [
     "MES0.DOC:00093"
    ],
@@ -1027,7 +1027,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "「そうさ、俺に玩具を使わせたら天下逸品さ」",
-   "en": "\"Yes, with toys I'm the best there is.\"",
+   "en": "\"That's right. When it comes to using toys, I'm the best in the world.\"",
    "refs": [
     "MES0.DOC:00094"
    ],
@@ -1037,7 +1037,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "「？？？」",
-   "en": "\"???\"",
+   "en": "「？？？」",
    "refs": [
     "MES0.DOC:00095"
    ],
@@ -1047,7 +1047,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "「では、さっそく始めよう。こいつが玩具のインターフェースのポッキーさ。ポッキー、挨拶を」",
-   "en": "\"Well, let's get started. This is Pocky, the toys' interface. Pocky, say hello.\"",
+   "en": "\"Well then, let's get started. This is Pocky, the toy's interface. Pocky, say hello.\"",
    "refs": [
     "MES0.DOC:00096"
    ],
@@ -1057,7 +1057,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "「おら、ポッキーだべよ。おらさ、まがせでおげ」",
-   "en": "\"Ah'm Pocky, y'hear. Ya jus' leave it t'me.\"",
+   "en": "\"Ora, I'm Pocky. Leave it to me.\"",
    "refs": [
     "MES0.DOC:00097"
    ],
@@ -1067,7 +1067,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "「フッ、ポッキーは青森出身なのさ。俺にまかせておけと言っている」",
-   "en": "\"Heh, Pocky's from Aomori. He's saying leave it to him.\"",
+   "en": "\"Heh, Pocky's from Aomori. He's saying leave it to me.\"",
    "refs": [
     "MES0.DOC:00098"
    ],
@@ -1077,7 +1077,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "「まあ、きゃわいい。よろちくね、ポッキーちゃん。ばぶばぶー」",
-   "en": "\"Aww, so cute. Nice to meetcha, widdle Pocky. Goo goo!\"",
+   "en": "\"Oh, how cute. Nice to meet you, Pocky-chan. Babu babu~.\"",
    "refs": [
     "MES0.DOC:00099"
    ],
@@ -1097,7 +1097,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "「まあ、あたしったら、ふふふ。それで、どうすればいいの？　コブラさん」",
-   "en": "\"Oh, silly me, hee hee. So, what should I do, Mr. Cobra?\"",
+   "en": "\"Oh my, look at me, hehehe. So, what should I do? Mr. Cobra?\"",
    "refs": [
     "MES0.DOC:00101"
    ],
@@ -1107,7 +1107,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "「クリーム嬢の好きな場所を選択してそこに寝てくれ。格好はおまかせさ」",
-   "en": "\"Pick your favorite spot, Miss Cream, and lie down. Dress as you like.\"",
+   "en": "\"Choose a spot you like, Miss Cream, and lie down there. The pose is up to you.\"",
    "refs": [
     "MES0.DOC:00102"
    ],
@@ -1117,7 +1117,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "「服は着てていいの？」",
-   "en": "\"Clothes on, is that OK?\"",
+   "en": "\"Can I keep my clothes on?\"",
    "refs": [
     "MES0.DOC:00103"
    ],
@@ -1127,7 +1127,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "「基本的にはおまかせさ」",
-   "en": "\"Basically, your call.\"",
+   "en": "\"Basically, it's up to you.\"",
    "refs": [
     "MES0.DOC:00104"
    ],
@@ -1137,7 +1137,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "「じゃ、こんな感じはどうかしら？」",
-   "en": "\"Then how about like this?\"",
+   "en": "\"Then, how about something like this?\"",
    "refs": [
     "MES0.DOC:00105"
    ],
@@ -1147,7 +1147,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "「キュピーキュピピーサカサカサカサカ・・・・・」",
-   "en": "\"Kyupii kyupipii saka saka saka saka.....\"",
+   "en": "\"Kyupii kyupipii saka saka saka saka...\"",
    "refs": [
     "MES0.DOC:00106",
     "MES2.DOC:00106",
@@ -1159,7 +1159,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "「コブラさん、３年ぶりにイくことができました。本当にありがとうございました」",
-   "en": "\"Mr. Cobra, I climaxed for the first time in three years. Thank you so much.\"",
+   "en": "\"Mr. Cobra, I was able to come for the first time in three years. Thank you so much.\"",
    "refs": [
     "MES0.DOC:00107"
    ],
@@ -1169,7 +1169,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "「フッ、また乙女を一人救ったようだな。しかし、俺はジゴロ。引き止めないでくれ」",
-   "en": "\"Heh, looks like I've saved another maiden. But I'm a gigolo. Don't hold me back.\"",
+   "en": "\"Heh, looks like I've saved another maiden. But I'm a gigolo. Don't try to hold me back.\"",
    "refs": [
     "MES0.DOC:00108"
    ],
@@ -1179,7 +1179,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "「は、はあ・・・またいらして下さいね」",
-   "en": "\"Uh, sure... Please come again.\"",
+   "en": "\"O-oh... Please come again.\"",
    "refs": [
     "MES0.DOC:00109"
    ],
@@ -1189,7 +1189,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "「フッ、俺はジゴロ　困ってるレディの呼ぶ声が聞こえれば、いつでもやってくるのさ」",
-   "en": "\"Heh, I'm a gigolo. Whenever I hear a lady in trouble call, I'll come running.\"",
+   "en": "\"Heh, I'm a gigolo. If I hear the call of a lady in distress, I'll come anytime.\"",
    "refs": [
     "MES0.DOC:00110"
    ],
@@ -1199,7 +1199,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "「うれしいわ、コブラさん」",
-   "en": "\"How lovely, Mr. Cobra.\"",
+   "en": "\"I'm so happy, Mr. Cobra.\"",
    "refs": [
     "MES0.DOC:00111"
    ],
@@ -1209,7 +1209,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "「じゃあ、俺は行くぜ。さらばだ」",
-   "en": "\"Well, I'll be off. Farewell.\"",
+   "en": "\"Well, I'm off. Farewell.\"",
    "refs": [
     "MES0.DOC:00112"
    ],
@@ -1229,7 +1229,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "「カマキリがどうしたの？」",
-   "en": "\"What about the mantis?\"",
+   "en": "\"What about a praying mantis?\"",
    "refs": [
     "MES0.DOC:00114"
    ],
@@ -1239,7 +1239,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "「い、いや、何でもないが、このままではカマキリを踏んでしまいそうだ」",
-   "en": "\"N-no, it's nothing, but at this rate I might step on the mantis.\"",
+   "en": "\"N-no, it's nothing, but at this rate I'm going to step on the mantis.\"",
    "refs": [
     "MES0.DOC:00115"
    ],
@@ -1249,7 +1249,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "「横を通れば・・・」",
-   "en": "\"Just go around...\"",
+   "en": "\"If you go around it...\"",
    "refs": [
     "MES0.DOC:00116"
    ],
@@ -1259,7 +1259,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "「すまん、俺はウソをついていた。本当はカマキリが苦手なんだ」",
-   "en": "\"Sorry, I lied. The truth is I can't stand mantises.\"",
+   "en": "\"Sorry, I was lying. The truth is, I can't stand praying mantises.\"",
    "refs": [
     "MES0.DOC:00117"
    ],
@@ -1269,7 +1269,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "「なんでカマキリが苦手なの？」",
-   "en": "\"Why do mantises scare you?\"",
+   "en": "\"Why can't you stand praying mantises?\"",
    "refs": [
     "MES0.DOC:00118"
    ],
@@ -1279,7 +1279,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "「男と女は互いに愛し合い、死ぬまで愛でつながれているものだ。しかし、カマキリには愛がない」",
-   "en": "\"Men and women love each other, bound by love until death. But mantises have no love.\"",
+   "en": "\"A man and a woman love each other and are bound by love until death. But mantises have no love.\"",
    "refs": [
     "MES0.DOC:00119"
    ],
@@ -1289,7 +1289,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "「なぜなら、メスは好きになったオスをＳＥＸの後で喰ってしまう。これは不条理だっ！！　うーっ！！」",
-   "en": "\"Because the female eats the male she loves after SEX. It's so unfair!! Ugh!!\"",
+   "en": "\"Because the female eats the male she liked after sex. That's an outrage!! Grr!!\"",
    "refs": [
     "MES0.DOC:00120"
    ],
@@ -1299,7 +1299,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "「これを考えると、お、お腹が痛むんだ。ううう・・・」",
-   "en": "\"Just thinking of it gives me a st-stomachache. Ooh...\"",
+   "en": "\"When I think about it, m-my stomach hurts. Ugh...\"",
    "refs": [
     "MES0.DOC:00121"
    ],
@@ -1309,7 +1309,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "「わかったわ、じゃ、カマキリをどっかへやるわ」",
-   "en": "\"Okay, then I'll move the mantis somewhere.\"",
+   "en": "\"Okay, I'll get rid of the mantis.\"",
    "refs": [
     "MES0.DOC:00122"
    ],
@@ -1319,7 +1319,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "「あ、ありがとう！　君は命の恩人だ！　一生忘れない！」",
-   "en": "\"Th-thank you! You saved my life! I'll never forget!\"",
+   "en": "\"Th-thank you! You're my savior! I'll never forget this for the rest of my life!\"",
    "refs": [
     "MES0.DOC:00123"
    ],
@@ -1329,7 +1329,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "「まあ、うれしい。あたしも忘れないわ」",
-   "en": "\"Oh, how nice. I won't forget either.\"",
+   "en": "\"Oh, I'm so happy. I won't forget it either.\"",
    "refs": [
     "MES0.DOC:00124"
    ],
@@ -1339,7 +1339,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "「別れはつらいが、今度こそ、俺は行くぜ。さらばだ」",
-   "en": "\"Parting hurts, but this time I'm going. Farewell.\"",
+   "en": "\"Parting is painful, but this time for real, I'm off. Farewell.\"",
    "refs": [
     "MES0.DOC:00125"
    ],
@@ -1370,7 +1370,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "「リズミイ、君はいつ見てもかわいいねえ。心がなごやかになるよ」",
-   "en": "\"Rhythmy, you're cute every time I see you. So soothing.\"",
+   "en": "\"Rhythmie, you're cute no matter when I see you. It warms my heart.\"",
    "refs": [
     "MES0.DOC:00128"
    ],
@@ -1380,7 +1380,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "「まあ、そんな・・・・・コブラったら本当のことを・・・」",
-   "en": "\"Oh, stop..... Cobra, you're just telling the truth...\"",
+   "en": "\"Oh, stop it... Cobra, saying such true things...\"",
    "refs": [
     "MES0.DOC:00129"
    ],
@@ -1390,7 +1390,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "「さあて、俺はシャワーを浴びるぜ。リズミイまた、君の前から立ち去らねばならない。悲しまないでくれ」",
-   "en": "\"Well, I'm off to shower. Rhythmy, once again I must leave your side. Please don't be sad.\"",
+   "en": "\"Well, I'm going to take a shower. Rhythmie, I must leave your presence again. Don't be sad.\"",
    "refs": [
     "MES0.DOC:00130"
    ],
@@ -1410,7 +1410,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "「うわーっ！　大変だ！　カ、カマキリだ！」",
-   "en": "\"Aaah! Oh no! A-a mantis!\"",
+   "en": "\"Whoa! This is bad! A-a praying mantis!\"",
    "refs": [
     "MES0.DOC:00132"
    ],
@@ -1420,7 +1420,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "「リズミイ！　リズミイはどこだ！！　そ、そーだ！　電話しよう！！」",
-   "en": "\"Rhythmy! Where's Rhythmy?! Th-that's it! I'll call her!!\"",
+   "en": "\"Rhythmie! Where's Rhythmie?! R-right! I'll call!\"",
    "refs": [
     "MES0.DOC:00133"
    ],
@@ -1430,7 +1430,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "「はい、こちら操縦室」",
-   "en": "\"Yes, cockpit here.\"",
+   "en": "\"Yes, this is the cockpit.\"",
    "refs": [
     "MES0.DOC:00134"
    ],
@@ -1440,7 +1440,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "「人は１人生まれ１人死にゆく・・・人と人は助け合い、生き、そして愛を知る・・・」",
-   "en": "\"Born alone, we die alone... People help each other, live, and come to know love...\"",
+   "en": "\"A person is born alone and dies alone... People help each other, live, and come to know love...\"",
    "refs": [
     "MES0.DOC:00135"
    ],
@@ -1450,7 +1450,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "「アノー、何の用ですか？」",
-   "en": "\"Um, what do you want?\"",
+   "en": "\"Umm, what do you need?\"",
    "refs": [
     "MES0.DOC:00136"
    ],
@@ -1460,7 +1460,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "「カマキリだ！！　カマキリを俺の目の届かぬ所へやってくれ！！」",
-   "en": "\"A mantis!! Get the mantis out of my sight!!\"",
+   "en": "\"It's a mantis!! Get the mantis somewhere out of my sight!!\"",
    "refs": [
     "MES0.DOC:00137"
    ],
@@ -1480,7 +1480,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "「フフ、リズミイ、なんてすばらしい世界なんだーっ。愛が満ちている」",
-   "en": "\"Heh heh, Rhythmy, what a wonderful world! It's full of love.\"",
+   "en": "\"Hehe, Rhythmie, what a wonderful world. It's full of love.\"",
    "refs": [
     "MES0.DOC:00139"
    ],
@@ -1490,7 +1490,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "「カマキリがいないだけでしょう」",
-   "en": "\"The mantis is just gone.\"",
+   "en": "\"It's just that there's no mantis.\"",
    "refs": [
     "MES0.DOC:00140"
    ],
@@ -1500,7 +1500,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "「リズミイ、君の今日のドレスも最高だ。なんと言っても体のラインが美しく・・・」",
-   "en": "\"Rhythmy, your dress today is superb too. Above all, your figure is lovely...\"",
+   "en": "\"Rhythmie, your dress today is superb too. Above all, the lines of your body are so beautiful...\"",
    "refs": [
     "MES0.DOC:00141"
    ],
@@ -1510,7 +1510,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "「あたしはいつも作業服しか着てません！！」",
-   "en": "\"I only ever wear work overalls!!\"",
+   "en": "\"I only ever wear work clothes!!\"",
    "refs": [
     "MES0.DOC:00142"
    ],
@@ -1520,7 +1520,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "「フフ、子供だな。そうやってなんでも逆らいたがる。早く大人の女になれリズミイ。ビック・レディに・・・」",
-   "en": "\"Heh, such a kid. Always wanting to talk back. Grow up fast, Rhythmy. Into a big lady...\"",
+   "en": "\"Hehe, you're such a child. You always have to contradict everything. Grow into a grown woman soon, Rhythmie. Into a big lady...\"",
    "refs": [
     "MES0.DOC:00143"
    ],
@@ -1530,7 +1530,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "「今の身長でいいです」",
-   "en": "\"My height is fine.\"",
+   "en": "\"I'm fine with my current height.\"",
    "refs": [
     "MES0.DOC:00144"
    ],
@@ -1540,7 +1540,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "「たまにわけのわからない事を言う癖があるなあ。リズミイ・・・」",
-   "en": "\"You do say odd things now and then, Rhythmy...\"",
+   "en": "\"You have a habit of saying incomprehensible things sometimes, Rhythmie...\"",
    "refs": [
     "MES0.DOC:00145"
    ],
@@ -1550,7 +1550,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "『　お姫様がやってきた！　』　の巻\n　\nミスターＭからの指令を受け、クリーム嬢の元へ向かうコブラ。しかし、途中コブラを待ち受けていたものは壮絶なバトルだった！！",
-   "en": "\"The Princess Arrives!\" Chapter\n \nOn orders from Mister M, Cobra heads for Miss Cream. But on the way, a fierce battle awaits!!",
+   "en": "Chapter: \"A Princess Has Come!\"\n\nReceiving orders from Mr. M, Cobra heads to Miss Cream's place. But what awaited Cobra along the way was a fierce battle!!",
    "refs": [
     "MES0.DOC:00146"
    ],
@@ -1560,7 +1560,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "コブラ、次のしごとだ。タンゴシティに飛んでくれ。そこに、春鈴（ちゅんりん）という宇宙人３世の娘がいる。またまた、やれるぞ。やったな、コブラ」",
-   "en": "Cobra, next job. Fly to Tango City. There's a girl there named Chun Rin, a third-generation alien. You'll score again. Nice going, Cobra.\"",
+   "en": "\"Cobra, here's your next job. Fly to Tango City. There's a third-generation alien girl named Chunrin there. You can do her again. Lucky you, Cobra.\"",
    "refs": [
     "MES0.DOC:00147"
    ],
@@ -1570,7 +1570,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "「フッ、わかったぜ。愛のスペースジゴロにまかせておいてくれ」",
-   "en": "\"Heh, got it. Leave it to the Space Gigolo of love.\"",
+   "en": "\"Heh, got it. Leave it to the space gigolo of love.\"",
    "refs": [
     "MES0.DOC:00148"
    ],
@@ -1580,7 +1580,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "「頼んだぞ。彼女は君のハイテックな責めをアソコを濡らして待っているぞ」",
-   "en": "",
+   "en": "\"I'm counting on you. She's waiting for your high-tech teasing with her pussy all wet.\"",
    "refs": [
     "MES0.DOC:00149"
    ],
@@ -1590,7 +1590,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "「仕事なの？　コブラ？」",
-   "en": "",
+   "en": "\"Is it work, Cobra?\"",
    "refs": [
     "MES0.DOC:00150"
    ],
@@ -1600,7 +1600,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "「フッ、そうだ、リズミイ。タンゴシティに飛ぶぞ」",
-   "en": "",
+   "en": "\"Heh, that's right, Rhythmie. We're flying to Tango City.\"",
    "refs": [
     "MES0.DOC:00151"
    ],
@@ -1610,7 +1610,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "「了解」",
-   "en": "",
+   "en": "\"Roger.\"",
    "refs": [
     "MES0.DOC:00152"
    ],
@@ -1620,7 +1620,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "「コブラはん、あてはマングースっちゅうもんです」",
-   "en": "",
+   "en": "\"Mr. Cobra, I'm what they call a Mongoose.\"",
    "refs": [
     "MES0.DOC:00153"
    ],
@@ -1630,7 +1630,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "「フフ、やはり俺は有名だな。誰もが知っている」",
-   "en": "",
+   "en": "\"Hehe, I knew I was famous. Everyone knows me.\"",
    "refs": [
     "MES0.DOC:00154"
    ],
@@ -1640,7 +1640,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "「あてはな、コブラはんの商売敵や」",
-   "en": "",
+   "en": "\"I'm your business rival, Mr. Cobra.\"",
    "refs": [
     "MES0.DOC:00155"
    ],
@@ -1650,7 +1650,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "「リズミイ、商売敵っていうのは、俺のサインが欲しいということか？」",
-   "en": "",
+   "en": "\"Rhythmie, does 'business rival' mean she wants my autograph?\"",
    "refs": [
     "MES0.DOC:00156"
    ],
@@ -1660,7 +1660,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "「あんたと同じジゴロ屋ってことでしょ！！」",
-   "en": "",
+   "en": "\"It means she's in the same gigolo business as you!!\"",
    "refs": [
     "MES0.DOC:00157"
    ],
@@ -1670,7 +1670,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "「リズミイ、そうむきになるな。俺は知っていたんだが君にもさりげなく教えてやろうとしただけさ」",
-   "en": "",
+   "en": "\"Rhythmie, don't get so worked up. I knew that, I was just trying to casually teach you too.\"",
    "refs": [
     "MES0.DOC:00158"
    ],
@@ -1680,7 +1680,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "「はいはい、分かりました！！」",
-   "en": "",
+   "en": "\"Yeah, yeah, I got it!!\"",
    "refs": [
     "MES0.DOC:00159"
    ],
@@ -1690,7 +1690,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "「あては、宇宙一のジゴロ屋や。女のツボは女にしかわからんもんや。そうやろコブラはん」",
-   "en": "",
+   "en": "\"I'm the number one gigolo in the universe. Only a woman knows a woman's sweet spots. Isn't that right, Mr. Cobra?\"",
    "refs": [
     "MES0.DOC:00160"
    ],
@@ -1700,7 +1700,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "「フフッ、マングース。その強がるところがカワイイぜ」",
-   "en": "",
+   "en": "\"Heheh, Mongoose. That bravado of yours is cute.\"",
    "refs": [
     "MES0.DOC:00161"
    ],
@@ -1710,7 +1710,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "「うっ！！！　よ、よくも、あてをコケにしてくれましたな！！！」",
-   "en": "",
+   "en": "\"Gah!!! H-how dare you make a fool of me!!!\"",
    "refs": [
     "MES0.DOC:00162"
    ],
@@ -1720,7 +1720,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "「コ、コブラ。なんか怒ってるわよ！」",
-   "en": "",
+   "en": "\"C-Cobra. She's getting angry!\"",
    "refs": [
     "MES0.DOC:00163"
    ],
@@ -1730,7 +1730,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "「あてを怒らしたらどーなるか・・・今日という今日は覚悟してもらいまっせ！！！」",
-   "en": "",
+   "en": "\"You'll see what happens when you make me angry... Today of all days, you better be ready!!!\"",
    "refs": [
     "MES0.DOC:00164"
    ],
@@ -1740,7 +1740,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "「今日という今日はって、初対面でしょう」",
-   "en": "",
+   "en": "\"'Today of all days'? This is your first meeting.\"",
    "refs": [
     "MES0.DOC:00165"
    ],
@@ -1750,7 +1750,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "「おっほっほ、気の強いオナゴが一緒のようですな、コブラはん。しかしそれも今のうちだけどす。あてのテクにかかれば、どんなオナゴでもネコのようになってしまうさかいな」",
-   "en": "",
+   "en": "\"Oh ho ho, seems you have a feisty wench with you, Mr. Cobra. But that'll only last for now. Once they fall under my technique, any wench becomes like a cat.\"",
    "refs": [
     "MES0.DOC:00166"
    ],
@@ -1760,7 +1760,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "「ふん！　そんなことないわ！」",
-   "en": "",
+   "en": "\"Hmph! That's not true!\"",
    "refs": [
     "MES0.DOC:00167"
    ],
@@ -1770,7 +1770,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "「まあいいでしょ。あてはな、宇宙一美しいオナゴ。しかし、オトコは好かん」",
-   "en": "",
+   "en": "\"Well, whatever. I'm the most beautiful wench in the universe. But I don't like men.\"",
    "refs": [
     "MES0.DOC:00168"
    ],
@@ -1780,7 +1780,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "「あてはオナゴが好き。あては全宇宙のオナゴを自分のものにするのが夢や。それにはコブラはん、あんたが邪魔や」",
-   "en": "",
+   "en": "\"I like wenches. My dream is to make all the wenches in the universe mine. And for that, Mr. Cobra, you're in the way.\"",
    "refs": [
     "MES0.DOC:00169"
    ],
@@ -1790,7 +1790,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "「ずいぶん自分勝手な人みたいネ。どーするコブラ？」",
-   "en": "",
+   "en": "\"She seems like a pretty selfish person. What'll you do, Cobra?\"",
    "refs": [
     "MES0.DOC:00170"
    ],
@@ -1800,7 +1800,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "「フフ・・・目を閉じると俺の愛に満ちた人生が走馬燈のように・・・」",
-   "en": "",
+   "en": "\"Hehe... When I close my eyes, my love-filled life flashes before me like a zoetrope...\"",
    "refs": [
     "MES0.DOC:00171"
    ],
@@ -1810,7 +1810,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "「勝手にあたしの人生にまでピリオド打たないで！！！」",
-   "en": "",
+   "en": "\"Don't go putting a period on my life too!!!\"",
    "refs": [
     "MES0.DOC:00172"
    ],
@@ -1820,7 +1820,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "「きゃあああ！！！　攻撃してきたわ！！！」",
-   "en": "",
+   "en": "\"Kyaaa!!! She's attacking!!!\"",
    "refs": [
     "MES0.DOC:00173"
    ],
@@ -1830,7 +1830,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "「コブラはん、今日のところは、あてが引き下がりましょう。しかし、この次は超兵器を用意・・・」",
-   "en": "",
+   "en": "\"Mr. Cobra, I'll back down for today. But next time, I'll prepare a super weapon...\"",
    "refs": [
     "MES0.DOC:00174"
    ],
@@ -1840,7 +1840,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "「ミサイル発射！！」",
-   "en": "",
+   "en": "\"Missile launch!!\"",
    "refs": [
     "MES0.DOC:00175"
    ],
@@ -1850,7 +1850,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "「コッ、コブラはん！　おぼえてらっしゃい！！」",
-   "en": "",
+   "en": "\"M-Mr. Cobra! You'll remember this!!\"",
    "refs": [
     "MES0.DOC:00176"
    ],
@@ -1860,7 +1860,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "「フフ、ちょろいもんさ、ベイビー」",
-   "en": "",
+   "en": "\"Hehe, easy pickings, baby.\"",
    "refs": [
     "MES0.DOC:00177"
    ],
@@ -1870,7 +1870,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "「戦う前とは大違いなのね、コブラ」",
-   "en": "",
+   "en": "\"What a difference from before the fight, Cobra.\"",
    "refs": [
     "MES0.DOC:00178"
    ],
@@ -1880,7 +1880,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "『　天敵マングース登場！　』　の巻\n　\nなんとジゴロ屋はコブラだけでなかった！　ジゴロ屋同士の壮絶なシェアの奪い合いがここに始まろうとしていた！　負けるなレッドコブラ！　負けるなリズミイ！",
-   "en": "",
+   "en": "Chapter: \"The Natural Enemy Mongoose Appears!\"\n\nSurprisingly, Cobra wasn't the only gigolo! A fierce battle for market share between gigolos was about to begin! Don't lose, Red Cobra! Don't lose, Rhythmie!",
    "refs": [
     "MES0.DOC:00179"
    ],
@@ -1890,7 +1890,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "「な、何、あれ？！」",
-   "en": "",
+   "en": "\"W-what's that?!\"",
    "refs": [
     "MES0.DOC:00180"
    ],
@@ -1900,7 +1900,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "「またまた、ドラテのサムソン君じゃないのか？」",
-   "en": "",
+   "en": "\"Is it that Dorate guy Samson again?\"",
    "refs": [
     "MES0.DOC:00181"
    ],
@@ -1910,7 +1910,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "「なんだか、違うみたいよ！！」",
-   "en": "",
+   "en": "\"It doesn't seem like him!!\"",
    "refs": [
     "MES0.DOC:00182"
    ],
@@ -1920,7 +1920,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "「大人になれリズミイ、敵をあざむくには、まず昼寝ってな」",
-   "en": "",
+   "en": "\"Grow up, Rhythmie. To deceive the enemy, first take a nap, as they say.\"",
    "refs": [
     "MES0.DOC:00183"
    ],
@@ -1930,7 +1930,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "「・・・・・？　まずは味方から、じゃないの？」",
-   "en": "",
+   "en": "\"...? Isn't it 'first deceive your allies'?\"",
    "refs": [
     "MES0.DOC:00184"
    ],
@@ -1940,7 +1940,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "「まあいい、そのうち俺の究極のことわざを教えてやるさ」",
-   "en": "",
+   "en": "\"Well, whatever. Someday I'll teach you my ultimate proverb.\"",
    "refs": [
     "MES0.DOC:00185"
    ],
@@ -1950,7 +1950,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "「おっ、タンゴシティに着いたようだぞ」",
-   "en": "",
+   "en": "\"Oh, looks like we've arrived at Tango City.\"",
    "refs": [
     "MES0.DOC:00186"
    ],
@@ -1960,7 +1960,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "「いってらっしゃい！　がんばってね」",
-   "en": "",
+   "en": "\"Have a good trip! Do your best!\"",
    "refs": [
     "MES0.DOC:00187"
    ],
@@ -1970,7 +1970,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "「フッ、まかせておきなよ、ベイビー。行って来るぜ」",
-   "en": "",
+   "en": "\"Heh, leave it to me, baby. I'm off.\"",
    "refs": [
     "MES0.DOC:00188"
    ],
@@ -1980,7 +1980,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "［難易度の設定］●ＥＡＳＹ\n●ＮＯＲＭＡＬ\n●ＨＡＲＤ\n●キャンセル\n現在の設定状況は",
-   "en": "",
+   "en": "[Difficulty Setting] ● EASY\n● NORMAL\n● HARD\n● Cancel\nCurrent setting:",
    "refs": [
     "MES0.DOC:60000",
     "MES1.DOC:60000",
@@ -1995,7 +1995,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "ゲーム開始　：　左ボタン\n設　　　定　：　右ボタン",
-   "en": "",
+   "en": "Start game: Left button\nSettings: Right button",
    "refs": [
     "MES0.DOC:60001",
     "MES1.DOC:60001",
@@ -2009,7 +2009,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "　　愛の秘技　尺とり虫\n　　愛の秘技　万蛇の渦\n　　愛の秘技　炎竜の舞\n尺万炎連続技にて本仕事終了",
-   "en": "",
+   "en": "Love's Secret Art: Inchworm\nLove's Secret Art: Ten-Thousand Serpent Vortex\nLove's Secret Art: Flame Dragon Dance\nWith the Shaku-Man-En combo, this job is complete.",
    "refs": [
     "MES0.DOC:60002",
     "MES1.DOC:60002",
@@ -2022,7 +2022,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "左ボタンで続行します。\n右ボタンでオープニングをスキップします。",
-   "en": "",
+   "en": "Left button to continue.\nRight button to skip the opening.",
    "refs": [
     "MES0.DOC:60003"
    ],
@@ -2032,7 +2032,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "［セーブモード］　●ファイル１\n　●ファイル２\n　●ファイル３\n　●ファイル４\n　●ファイル５\nセーブファイルを決定して下さい。",
-   "en": "",
+   "en": "[Save Mode] ● File 1\n● File 2\n● File 3\n● File 4\n● File 5\nPlease select a save file.",
    "refs": [
     "MES0.DOC:60004"
    ],
@@ -2043,7 +2043,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "［ロードモード］　●ファイル１\n　●ファイル２\n　●ファイル３\n　●ファイル４\n　●ファイル５\nロードファイルを決定して下さい。",
-   "en": "",
+   "en": "[Load Mode] ● File 1\n● File 2\n● File 3\n● File 4\n● File 5\nPlease select a load file.",
    "refs": [
     "MES0.DOC:60005"
    ],
@@ -2054,7 +2054,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "［ＣＧ　モード］　●クリーム\n　●ちゅんりん\n　●リーニャ\n　●メロディ\n　●キャスリン\n　●そのほか",
-   "en": "",
+   "en": "[CG Mode] ● Cream\n● Chunrin\n● Rinya\n● Melody\n● Catherine\n● Other",
    "refs": [
     "MES0.DOC:60006"
    ],
@@ -2065,7 +2065,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "［ＢＧＭモード］●ひだりボタンでつぎのＢＧＭ\n●みぎボタンでおわり",
-   "en": "",
+   "en": "[BGM Mode] ● Left button for next BGM\n● Right button to end",
    "refs": [
     "MES0.DOC:60007"
    ],
@@ -2076,7 +2076,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "［ＰＣＭモード］　●クリーム\n　●ちゅんりん\n　●リーニャ\n　●メロディ\n　●キャスリン\n　●そのほか",
-   "en": "",
+   "en": "[PCM Mode] ● Cream\n● Chunrin\n● Rinya\n● Melody\n● Catherine\n● Other",
    "refs": [
     "MES0.DOC:60008"
    ],
@@ -2087,7 +2087,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "「フッ、春鈴嬢の家はここだな。俺はジゴロ、お見通しさ」",
-   "en": "",
+   "en": "\"Heh, this is Miss Chunrin's place. I'm a gigolo, I can see through everything.\"",
    "refs": [
     "MES1.DOC:00000"
    ],
@@ -2097,7 +2097,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "「ごめんくださーい。　ご注文のジゴロですがー」",
-   "en": "",
+   "en": "\"Excuse me~. Your ordered gigolo is here~.\"",
    "refs": [
     "MES1.DOC:00001"
    ],
@@ -2107,7 +2107,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "「はーい。あたし、春鈴あるよ。あなたに会えてほんとによかったわ」",
-   "en": "",
+   "en": "\"Heeey. I'm Chunrin. I'm so glad I got to meet you.\"",
    "refs": [
     "MES1.DOC:00002"
    ],
@@ -2117,7 +2117,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "「春鈴・・・なんという可憐な名前なんだ」",
-   "en": "",
+   "en": "\"Chunrin... What a lovely name.\"",
    "refs": [
     "MES1.DOC:00003"
    ],
@@ -2127,7 +2127,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "「この名前は、あたしのお婆ちゃんが付けた名前ある。お父さんはニッポン人でほんとは鈴子と付けたかったあるよ」",
-   "en": "",
+   "en": "\"This name was given to me by my grandma. My dad is Japanese and actually wanted to name me Suzuko.\"",
    "refs": [
     "MES1.DOC:00004"
    ],
@@ -2137,7 +2137,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "「でも、チューコク人のお母さんは春春（チュンチュン）と付けたかったあるから、気に入らなくてお父さんにケリ入れたある」",
-   "en": "",
+   "en": "\"But my Chinese mom wanted to name me Chun-chun, and when she didn't like it, she kicked my dad.\"",
    "refs": [
     "MES1.DOC:00005"
    ],
@@ -2147,7 +2147,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "「それを見てたお爺（チー）さんがビックリして腰を抜かしたあるよ。いい歳かっぱらってこれ以上、腰を抜かされると困る元宇宙人のお婆（パー）さんは、名案を思い付いたある」",
-   "en": "",
+   "en": "\"My grandpa saw that and was so surprised he fell over. My grandma, a former alien who was getting on in years and couldn't handle any more shocks, came up with a brilliant idea.\"",
    "refs": [
     "MES1.DOC:00006"
    ],
@@ -2157,7 +2157,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "「中をとって春鈴にしたらどーかって提案したあるよ。これがあたしの名前の由来ある。ちなみにお母さんの名前は羅緒春（ラオチュン）というある。羅緒春というのは・・・」",
-   "en": "",
+   "en": "\"She suggested taking the middle and calling me Chunrin. That's the origin of my name. By the way, my mother's name is Laochun. Laochun is...\"",
    "refs": [
     "MES1.DOC:00007"
    ],
@@ -2167,7 +2167,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "「ちゅ、春鈴、いつまで続くあるか？」",
-   "en": "",
+   "en": "\"Ch-Chunrin, how long is this going to go on?\"",
    "refs": [
     "MES1.DOC:00008"
    ],
@@ -2177,7 +2177,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "「もう少しあるよ。コブラ、ちゃんと聞くあるよ。羅緒春というのは、昔の大きな国のお姫様の名前からとったものある。そのお姫様というのが大変なわがままだったある」",
-   "en": "",
+   "en": "\"A little more. Cobra, listen properly. Laochun was taken from the name of a princess of a great ancient country. And that princess was terribly spoiled.\"",
    "refs": [
     "MES1.DOC:00009"
    ],
@@ -2187,7 +2187,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "「ある日、そのお姫様が散歩に出たあるよ。城から少し出たところで、大変なことが起こったある。何が起こったか分かるあるか？　コブラ？」",
-   "en": "",
+   "en": "\"One day, that princess went out for a walk. Just a little ways from the castle, something terrible happened. Do you know what happened, Cobra?\"",
    "refs": [
     "MES1.DOC:00010"
    ],
@@ -2197,7 +2197,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "「ベイビー、お見通しさ。ハバカリある」",
-   "en": "",
+   "en": "\"Baby, I can see through it. She had to go potty.\"",
    "refs": [
     "MES1.DOC:00011"
    ],
@@ -2207,7 +2207,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "「Ｏｈ！　大当たりあるよ。お姫様はハバカリをしたくなったある。お姫様は野グソはできない質だし、城に戻るのもやなので、家来に命令したある。便所を持って来いってね」",
-   "en": "",
+   "en": "\"Oh! Bullseye. The princess needed to go potty. She wasn't the type to poop in the field, and she didn't want to go back to the castle, so she ordered her retainers. She told them to bring a toilet.\"",
    "refs": [
     "MES1.DOC:00012"
    ],
@@ -2217,7 +2217,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "「それで、家来の一人が大急ぎでオマル持ってきたんだけど、ちょーわがままなお姫様は、これでは野グソと変わらないって、怒り始めたある」",
-   "en": "",
+   "en": "\"So one of the retainers hurriedly brought a chamber pot, but the super spoiled princess started getting angry, saying that was no different from pooping in the field.\"",
    "refs": [
     "MES1.DOC:00013"
    ],
@@ -2227,7 +2227,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "「家来達は城の便所は持って来られないと、一生懸命説明したあるよ。すると、お姫様は、ここに便所を建てればいいと言ったある」",
-   "en": "",
+   "en": "\"The retainers explained desperately that they couldn't bring the castle toilet. Then the princess said they should just build a toilet here.\"",
    "refs": [
     "MES1.DOC:00014"
    ],
@@ -2237,7 +2237,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "「家来達は腕利きの大工を呼んで便所作らせたある。お姫様とて大の方の苦しみは同じあるから、結局、待ち切れずに城に戻って用をたしたというお話しあるよ」",
-   "en": "",
+   "en": "\"The retainers called a skilled carpenter and had him build a toilet. But since even a princess suffers the same when it comes to number two, in the end she couldn't wait and went back to the castle to do her business. That's the story.\"",
    "refs": [
     "MES1.DOC:00015"
    ],
@@ -2247,7 +2247,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "「春鈴、君の話はすばらしーよ。まるで、月夜のラブストーリーのようだ」",
-   "en": "",
+   "en": "\"Chunrin, your story is wonderful. It's like a love story under the moonlight.\"",
    "refs": [
     "MES1.DOC:00016"
    ],
@@ -2257,7 +2257,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "「コブラ、本当にあたしの話、聞いてたあるか？　そんな話ではないあるよ」",
-   "en": "",
+   "en": "\"Cobra, were you really listening to my story? That's not what it was about.\"",
    "refs": [
     "MES1.DOC:00017"
    ],
@@ -2267,7 +2267,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "「春鈴、照れ隠しに、すねて見せてるあるね。カワイイよベイビー」",
-   "en": "",
+   "en": "\"Chunrin, you're pouting to hide your embarrassment. You're cute, baby.\"",
    "refs": [
     "MES1.DOC:00018"
    ],
@@ -2277,7 +2277,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "「もーいいある。はやく、あたしをイかせてほしーある」",
-   "en": "",
+   "en": "\"Oh, forget it. Hurry up and make me come.\"",
    "refs": [
     "MES1.DOC:00019"
    ],
@@ -2287,7 +2287,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "「ベイビー、わかったぜ。こいつが玩具のインターフェイスのポッキーさ。ポッキー、春鈴嬢だ」",
-   "en": "",
+   "en": "\"Baby, got it. This is Pocky, the toy's interface. Pocky, this is Miss Chunrin.\"",
    "refs": [
     "MES1.DOC:00020"
    ],
@@ -2297,7 +2297,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "「おら、ポッキーだべ。おらのテクは最高だんず（です）。ちなみに青森ではバカのことを、ほんずなす、と言うだべ。でも、人をほんずなすなんて言っては、まいね（だめだよ）」",
-   "en": "",
+   "en": "\"Ora, I'm Pocky. My technique is the best. By the way, in Aomori they call an idiot a honzu nasu. But you shouldn't call people honzu nasu.\"",
    "refs": [
     "MES1.DOC:00021"
    ],
@@ -2307,7 +2307,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "「ほんずなす、あるか？」",
-   "en": "",
+   "en": "\"Is it honzu nasu?\"",
    "refs": [
     "MES1.DOC:00022"
    ],
@@ -2317,7 +2317,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "「おらは、ポッキーある」",
-   "en": "",
+   "en": "\"I'm Pocky.\"",
    "refs": [
     "MES1.DOC:00023"
    ],
@@ -2327,7 +2327,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "「じゃあ、ほんずなすは誰ある？」",
-   "en": "",
+   "en": "\"Then who's the honzu nasu?\"",
    "refs": [
     "MES1.DOC:00024"
    ],
@@ -2337,7 +2337,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "「誰でもねーだべよ。かちゃくちゃねーなー（イライラするなあ）」",
-   "en": "",
+   "en": "\"Nobody is. Don't get so worked up.\"",
    "refs": [
     "MES1.DOC:00025"
    ],
@@ -2347,7 +2347,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "「かちゃくちゃは、誰あるか？」",
-   "en": "",
+   "en": "\"Who's kachakucha?\"",
    "refs": [
     "MES1.DOC:00026"
    ],
@@ -2357,7 +2357,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "「もーいいある。始めるあるから、好きな格好で横になってくれある」",
-   "en": "",
+   "en": "\"Oh, forget it. I'm starting, so lie down in whatever pose you like.\"",
    "refs": [
     "MES1.DOC:00027"
    ],
@@ -2367,7 +2367,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "「わかったあるよ」",
-   "en": "",
+   "en": "\"Okay.\"",
    "refs": [
     "MES1.DOC:00028"
    ],
@@ -2377,7 +2377,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "「コブラったらすごいある。もう、何度もイったあるよ。ほんずなすも、ありがとある」",
-   "en": "",
+   "en": "\"Cobra, you're amazing. I've come so many times. Thanks to you too, honzu nasu.\"",
    "refs": [
     "MES1.DOC:00029"
    ],
@@ -2387,7 +2387,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "「俺は愛の為に命をかけるジゴロ。礼なんていらねーぜ」",
-   "en": "",
+   "en": "\"I'm a gigolo who risks his life for love. I don't need thanks.\"",
    "refs": [
     "MES1.DOC:00030"
    ],
@@ -2397,7 +2397,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "「どんでもいいけど、おらはポッキーだべ」",
-   "en": "",
+   "en": "\"Whatever, but I'm Pocky.\"",
    "refs": [
     "MES1.DOC:00031"
    ],
@@ -2407,7 +2407,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "「また、来てほしいあるよ」",
-   "en": "",
+   "en": "\"I want you to come again.\"",
    "refs": [
     "MES1.DOC:00032"
    ],
@@ -2417,7 +2417,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "「俺は愛のあるところに必ず帰って来るのさ。ベイビー」",
-   "en": "",
+   "en": "\"I'll always return to where love is, baby.\"",
    "refs": [
     "MES1.DOC:00033"
    ],
@@ -2427,7 +2427,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "「うれしいあるよ、コブラ」",
-   "en": "",
+   "en": "\"I'm so happy, Cobra.\"",
    "refs": [
     "MES1.DOC:00034"
    ],
@@ -2437,7 +2437,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "「俺はもういかなくてはならない。グッバイ、ベイビー」",
-   "en": "",
+   "en": "\"I must be going now. Goodbye, baby.\"",
    "refs": [
     "MES1.DOC:00035"
    ],
@@ -2447,7 +2447,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "「再見ある」",
-   "en": "",
+   "en": "\"Zaijian.\"",
    "refs": [
     "MES1.DOC:00036"
    ],
@@ -2457,7 +2457,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "「リズミイ？　・・・買物にでも出かけたのかな？　ま、いいさ。俺はいつも通りシャワーを浴びるぜ」",
-   "en": "",
+   "en": "\"Rhythmie? ...Did she go shopping or something? Well, whatever. I'll take a shower as usual.\"",
    "refs": [
     "MES1.DOC:00037"
    ],
@@ -2467,7 +2467,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "「待てよ、またカマキリが出たらどうしよう・・・・・。俺はジゴロ、カマキリぐらい恐くないさ。フ、フフ」",
-   "en": "",
+   "en": "\"Wait, what if a mantis shows up again... I'm a gigolo, I'm not afraid of a mere mantis. H-heh.\"",
    "refs": [
     "MES1.DOC:00038"
    ],
@@ -2477,7 +2477,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "「よしよし、ここまではカマキリはいない・・・あとは、シャワー室の中を調べるだけだ。フフ、リズミイがいなくてもシャワーが浴びられるぜ」",
-   "en": "",
+   "en": "\"Okay, okay, no mantis so far... I just need to check inside the shower room. Hehe, I can take a shower even without Rhythmie here.\"",
    "refs": [
     "MES1.DOC:00039"
    ],
@@ -2487,7 +2487,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "「ドアをそーっと、そーっと開けるんだ」",
-   "en": "",
+   "en": "\"Open the door slowly, slowly.\"",
    "refs": [
     "MES1.DOC:00040"
    ],
@@ -2497,7 +2497,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "「・・・・・・・・・・？？？」",
-   "en": "",
+   "en": "「・・・・・・・・・・？？？」",
    "refs": [
     "MES1.DOC:00041"
    ],
@@ -2507,7 +2507,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "「・・・なんだ、リズミイじゃないか。ここにいたのか。びっくりさせるぜ」",
-   "en": "",
+   "en": "\"...Oh, it's you, Rhythmie. So you were here. You scared me.\"",
    "refs": [
     "MES1.DOC:00042"
    ],
@@ -2517,7 +2517,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "「きゃあああっ！！！　痴漢！！！　変態！！！」",
-   "en": "",
+   "en": "\"Kyaaaa!!! Pervert!!! Hentai!!!\"",
    "refs": [
     "MES1.DOC:00043"
    ],
@@ -2527,7 +2527,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "「出てって！　出てってよ！」",
-   "en": "",
+   "en": "\"Get out! Get out!\"",
    "refs": [
     "MES1.DOC:00044"
    ],
@@ -2537,7 +2537,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "「わ、わかったよ、レディ。今出ていくよ」",
-   "en": "",
+   "en": "\"O-okay, lady. I'm leaving now.\"",
    "refs": [
     "MES1.DOC:00045"
    ],
@@ -2547,7 +2547,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "「早く出て行ってよ！」",
-   "en": "",
+   "en": "\"Hurry up and get out!\"",
    "refs": [
     "MES1.DOC:00046"
    ],
@@ -2557,7 +2557,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "「な、なんだ？　か、亀か。亀と仲良しなんて変だぞ、リズミイ・・・」",
-   "en": "",
+   "en": "\"W-what? A-a turtle? Being friends with a turtle is weird, Rhythmie...\"",
    "refs": [
     "MES1.DOC:00047"
    ],
@@ -2567,7 +2567,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "「うどんを平べったくしたものを、きし麺、さらに細くしたものを、そう麺と言います」",
-   "en": "",
+   "en": "\"Udon flattened out is called kishimen, and making it even thinner gives you somen.\"",
    "refs": [
     "MES1.DOC:00048"
    ],
@@ -2577,7 +2577,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "「さてそれでは、カッコウが他の鳥の巣に卵を生み自分では育てないことをなんと言うでしょう？」",
-   "en": "",
+   "en": "\"Now then, what do you call it when a cuckoo lays its eggs in another bird's nest and doesn't raise them itself?\"",
    "refs": [
     "MES1.DOC:00049"
    ],
@@ -2587,7 +2587,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "１　錯　　乱\n２　託　　卵\n３　排　　卵\nさて何と答える？",
-   "en": "",
+   "en": "1. Confusion\n2. Brood parasitism\n3. Ovulation\nSo, what's your answer?",
    "refs": [
     "MES1.DOC:00050"
    ],
@@ -2597,7 +2597,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "「あーっと、残念！　コブラさんに残されている回答の権利はあと２回です。さて次の問題です」",
-   "en": "",
+   "en": "\"Ah, too bad! Mr. Cobra, you have two more chances to answer. Now, here's the next question.\"",
    "refs": [
     "MES1.DOC:00051",
     "MES2.DOC:00003",
@@ -2609,7 +2609,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "「やった！　正解です！　正解したジゴロ屋コブラさんには、チャチャシティの美少女リーニャさんのお相手の権利が与えられます！　やりましね！　コブラさん！」",
-   "en": "",
+   "en": "\"Great! Correct! For getting it right, gigolo Cobra is granted the right to be the partner of the beautiful girl Rinya from Chacha City! Way to go, Mr. Cobra!\"",
    "refs": [
     "MES1.DOC:00052"
    ],
@@ -2619,7 +2619,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "「フフ、俺にこんな低レベルの問題は通用しないぜ。リーニャは俺に任せてくれ」",
-   "en": "",
+   "en": "\"Hehe, such low-level questions don't work on me. Leave Rinya to me.\"",
    "refs": [
     "MES1.DOC:00053"
    ],
@@ -2629,7 +2629,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "「おーっと、コブラさんのナニが早くもいきり立っております！　きっと、リーニャさんもアソコを濡らしながら待っていることでしょう！それではまた来週！」",
-   "en": "",
+   "en": "\"Whoa, Mr. Cobra's thing is already getting hard! I'm sure Miss Rinya is waiting with her pussy all wet too! See you next week!\"",
    "refs": [
     "MES1.DOC:00054"
    ],
@@ -2639,7 +2639,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "「ねえ、コブラ。あのＭって人、ちょっと変じゃない？」",
-   "en": "",
+   "en": "\"Hey, Cobra. Isn't that Mr. M guy a little weird?\"",
    "refs": [
     "MES1.DOC:00055"
    ],
@@ -2649,7 +2649,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "「フ、奴はあーいうキャラクターなんだ」",
-   "en": "",
+   "en": "\"Heh, he's just that kind of character.\"",
    "refs": [
     "MES1.DOC:00056"
    ],
@@ -2659,7 +2659,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "「フフ、いつもかっこいい俺とは正反対のキャラってことだよ」",
-   "en": "",
+   "en": "\"Hehe, meaning he's the exact opposite of me, who's always cool.\"",
    "refs": [
     "MES1.DOC:00057"
    ],
@@ -2669,7 +2669,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "「正反対ではなくて、平行線な感じのキャラだと思うけど」",
-   "en": "",
+   "en": "\"I'd say he's not the opposite, but more like on a parallel line with you.\"",
    "refs": [
     "MES1.DOC:00058"
    ],
@@ -2679,7 +2679,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "「リズミイ、君も大人になれば、その意味が分かる時がくるさ」",
-   "en": "",
+   "en": "\"Rhythmie, when you grow up, the time will come when you understand what that means.\"",
    "refs": [
     "MES1.DOC:00059"
    ],
@@ -2689,7 +2689,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "「きっと、ずっと分からないままだと思うわ」",
-   "en": "",
+   "en": "\"I think I'll never understand it.\"",
    "refs": [
     "MES1.DOC:00060"
    ],
@@ -2699,7 +2699,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "「まあいい、さあ、出発だ」",
-   "en": "",
+   "en": "\"Well, whatever. Let's set off.\"",
    "refs": [
     "MES1.DOC:00061"
    ],
@@ -2709,7 +2709,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "「了解！！」",
-   "en": "",
+   "en": "\"Roger!!\"",
    "refs": [
     "MES1.DOC:00062",
     "MES2.DOC:00018"
@@ -2720,7 +2720,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "「あれは、マングース軍団！！！　大変！　囲まれてるわ！！」",
-   "en": "",
+   "en": "\"That's the Mongoose army!!! Oh no! We're surrounded!!\"",
    "refs": [
     "MES1.DOC:00063"
    ],
@@ -2730,7 +2730,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "「Ｏｈ！　Ｎｏ！　なんてこったい！」",
-   "en": "",
+   "en": "\"Oh! No! What the heck!\"",
    "refs": [
     "MES1.DOC:00064"
    ],
@@ -2740,7 +2740,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "「飛んで火に入る夏の虫とは、コブラはん、あんたの事どす」",
-   "en": "",
+   "en": "\"The moth flying into the flame, Mr. Cobra, is you.\"",
    "refs": [
     "MES1.DOC:00065"
    ],
@@ -2750,7 +2750,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "「マングース、俳句は５７５７７だ」",
-   "en": "",
+   "en": "\"Mongoose, haiku is 5-7-5-7-7.\"",
    "refs": [
     "MES1.DOC:00066"
    ],
@@ -2760,7 +2760,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "「？？？　コブラ、５７５７７は短歌でしょ。それにあれはことわざよ」",
-   "en": "",
+   "en": "\"??? Cobra, 5-7-5-7-7 is a tanka. And that was a proverb.\"",
    "refs": [
     "MES1.DOC:00067"
    ],
@@ -2770,7 +2770,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "「この俺をあまくみるな、リズミイ」",
-   "en": "",
+   "en": "\"Don't underestimate me, Rhythmie.\"",
    "refs": [
     "MES1.DOC:00068"
    ],
@@ -2780,7 +2780,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "「きゃあっ、攻撃だわっ！！！」",
-   "en": "",
+   "en": "\"Kyaa, an attack!!!\"",
    "refs": [
     "MES1.DOC:00069"
    ],
@@ -2790,7 +2790,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "「俺だって、ことわざくらい知ってるさ！！　今度使ってやるから覚えてろ！」",
-   "en": "",
+   "en": "\"I know proverbs too!! I'll use one next time, so remember that!\"",
    "refs": [
     "MES1.DOC:00070"
    ],
@@ -2800,7 +2800,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "「生きていられたらな。ごきげんよう、コブラはん！！！」",
-   "en": "",
+   "en": "\"If you live that long. Farewell, Mr. Cobra!!!\"",
    "refs": [
     "MES1.DOC:00071"
    ],
@@ -2810,7 +2810,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "「残るはマングースの船だけね！」",
-   "en": "",
+   "en": "\"Only Mongoose's ship is left!\"",
    "refs": [
     "MES1.DOC:00072"
    ],
@@ -2820,7 +2820,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "「フフ、所詮、俺の敵ではなかったのさ」",
-   "en": "",
+   "en": "\"Hehe, as expected, she was no match for me.\"",
    "refs": [
     "MES1.DOC:00073"
    ],
@@ -2830,7 +2830,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "「ちきしょー、コブラめ。こーなったら作戦を変更して、トロイの木馬作戦どす」",
-   "en": "",
+   "en": "\"Damn that Cobra. If that's how it is, I'll change tactics and use the Trojan Horse strategy.\"",
    "refs": [
     "MES1.DOC:00074"
    ],
@@ -2840,7 +2840,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "「降参したと見せかけて、超爆弾入り木馬をプレゼントし、コブラに届いたところで爆破・・・ほっほっほ、我ながらあては頭がいいどすなあ」",
-   "en": "",
+   "en": "\"I'll pretend to surrender, present a wooden horse packed with a super bomb, and when it reaches Cobra, it explodes... Hohoho, I'm so clever, even I'm impressed.\"",
    "refs": [
     "MES1.DOC:00075"
    ],
@@ -2850,7 +2850,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "「コブラはん、負けましたわ。あてがでしゃばっとりましたわ。もう、コブラはんの邪魔だてするようなことはいたしません」",
-   "en": "",
+   "en": "\"Mr. Cobra, I admit defeat. I was being too pushy. I won't do anything to get in your way anymore.\"",
    "refs": [
     "MES1.DOC:00076"
    ],
@@ -2860,7 +2860,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "「その証拠にあてからコブラはんにプレゼントがあるどす。宇宙の骨董屋で見つけた珍しい木馬、受け取ってもらえますな？」",
-   "en": "",
+   "en": "\"As proof, I have a present for you, Mr. Cobra. It's a rare wooden horse I found at a space antique shop. Will you accept it?\"",
    "refs": [
     "MES1.DOC:00077"
    ],
@@ -2870,7 +2870,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "「なんだか変よ、コブラ。気を付けた方が・・・」",
-   "en": "",
+   "en": "\"Something's fishy, Cobra. You should be careful...\"",
    "refs": [
     "MES1.DOC:00078"
    ],
@@ -2880,7 +2880,7 @@
    "id": "m00278",
    "kind": "msg",
    "jp": "「フフ、よく改心したな、マングース。人は愛なしでは生きていけないものなんだ。マングース、木馬という君の愛の形、受け取るぜ」",
-   "en": "",
+   "en": "\"Hehe, good of you to reform, Mongoose. People can't live without love. Mongoose, I'll accept this wooden horse, your form of love.\"",
    "refs": [
     "MES1.DOC:00079"
    ],
@@ -2890,7 +2890,7 @@
    "id": "m00279",
    "kind": "msg",
    "jp": "「だ、だめよ！　コ、コブラ！」",
-   "en": "",
+   "en": "\"D-don't! C-Cobra!\"",
    "refs": [
     "MES1.DOC:00080"
    ],
@@ -2900,7 +2900,7 @@
    "id": "m00280",
    "kind": "msg",
    "jp": "「リズミイ、やきもちを妬く気持ちは分かるがこれが本当の大人の愛の形なんだ。君にもわかる時が来るさ」",
-   "en": "",
+   "en": "\"Rhythmie, I understand your jealousy, but this is the true form of adult love. Your time will come too.\"",
    "refs": [
     "MES1.DOC:00081"
    ],
@@ -2910,7 +2910,7 @@
    "id": "m00281",
    "kind": "msg",
    "jp": "「コブラ、目を覚まして！　マングースは何か企んでるわ！」",
-   "en": "",
+   "en": "\"Cobra, wake up! Mongoose is up to something!\"",
    "refs": [
     "MES1.DOC:00082"
    ],
@@ -2920,7 +2920,7 @@
    "id": "m00282",
    "kind": "msg",
    "jp": "「マングース、愛の木馬を・・・」",
-   "en": "",
+   "en": "\"Mongoose, the wooden horse of love...\"",
    "refs": [
     "MES1.DOC:00083"
    ],
@@ -2930,7 +2930,7 @@
    "id": "m00283",
    "kind": "msg",
    "jp": "「ばーかどすなあ、愛の木馬などと自分で決めおって」",
-   "en": "",
+   "en": "\"What a fool, deciding it's a wooden horse of love all by yourself.\"",
    "refs": [
     "MES1.DOC:00084"
    ],
@@ -2940,7 +2940,7 @@
    "id": "m00284",
    "kind": "msg",
    "jp": "「コブラはん、愛の木馬を発射しますで。しっかりと、受け取ってや」",
-   "en": "",
+   "en": "\"Mr. Cobra, I'm launching the wooden horse of love. Catch it firmly now.\"",
    "refs": [
     "MES1.DOC:00085"
    ],
@@ -2950,7 +2950,7 @@
    "id": "m00285",
    "kind": "msg",
    "jp": "「オーケイ、マングース。この手でしっかりと受け止めてやるぜ」",
-   "en": "",
+   "en": "\"Okay, Mongoose. I'll catch it firmly with these hands.\"",
    "refs": [
     "MES1.DOC:00086"
    ],
@@ -2960,7 +2960,7 @@
    "id": "m00286",
    "kind": "msg",
    "jp": "「フフ、愛の木馬を受け取ったぜ、マングース！。それにしても、この愛は大きいぜ」",
-   "en": "",
+   "en": "\"Hehe, I've received the wooden horse of love, Mongoose! Man, this love is big.\"",
    "refs": [
     "MES1.DOC:00087"
    ],
@@ -2970,7 +2970,7 @@
    "id": "m00287",
    "kind": "msg",
    "jp": "「もう！　コブラったら！」",
-   "en": "",
+   "en": "\"Geez! Cobra!\"",
    "refs": [
     "MES1.DOC:00088"
    ],
@@ -2980,7 +2980,7 @@
    "id": "m00288",
    "kind": "msg",
    "jp": "「よーし、こうなったら！　バナナ作戦だわ！！」",
-   "en": "",
+   "en": "\"Alright, if that's how it is! It's the banana strategy!!\"",
    "refs": [
     "MES1.DOC:00089"
    ],
@@ -2990,7 +2990,7 @@
    "id": "m00289",
    "kind": "msg",
    "jp": "「うわあ！」",
-   "en": "",
+   "en": "\"Whoa!\"",
    "refs": [
     "MES1.DOC:00090"
    ],
@@ -3000,7 +3000,7 @@
    "id": "m00290",
    "kind": "msg",
    "jp": "「？？？？？　も、木馬が戻ってくる！　な、なぜどす？！　は、反転どす！　反転させるどす！」",
-   "en": "",
+   "en": "\"????? T-the wooden horse is coming back! W-why?! I-it's reversing! I'll reverse it!\"",
    "refs": [
     "MES1.DOC:00091"
    ],
@@ -3010,7 +3010,7 @@
    "id": "m00291",
    "kind": "msg",
    "jp": "「わわわわわっ、スイッチが効かないどす！」",
-   "en": "",
+   "en": "\"Wawawawawa, the switch won't work!\"",
    "refs": [
     "MES1.DOC:00092"
    ],
@@ -3020,7 +3020,7 @@
    "id": "m00292",
    "kind": "msg",
    "jp": "「やーん、なんでこーなるどす？！　」",
-   "en": "",
+   "en": "\"Noo, why does it turn out like this?!\"",
    "refs": [
     "MES1.DOC:00093"
    ],
@@ -3030,7 +3030,7 @@
    "id": "m00293",
    "kind": "msg",
    "jp": "「フフ、リズミイ。敵を簡単に信用してはだめだぜ。今回のように信用したふりをしてやっつける作戦なら話は別だがな」",
-   "en": "",
+   "en": "\"Hehe, Rhythmie. You shouldn't trust the enemy so easily. Though it's a different story if it's a strategy like this time, pretending to trust them to take them down.\"",
    "refs": [
     "MES1.DOC:00094"
    ],
@@ -3040,7 +3040,7 @@
    "id": "m00294",
    "kind": "msg",
    "jp": "「簡単に信用したのはコブラの方でしょ！　あたしがバナナの皮を投げていなかったらどーなってたか・・・」",
-   "en": "",
+   "en": "\"You're the one who trusted her easily! If I hadn't thrown that banana peel, what would have happened...\"",
    "refs": [
     "MES1.DOC:00095"
    ],
@@ -3050,7 +3050,7 @@
    "id": "m00295",
    "kind": "msg",
    "jp": "「フ、リズミイ。怒った顔もかわいいぜ」",
-   "en": "",
+   "en": "\"Heh, Rhythmie. Your angry face is cute too.\"",
    "refs": [
     "MES1.DOC:00096"
    ],
@@ -3060,7 +3060,7 @@
    "id": "m00296",
    "kind": "msg",
    "jp": "「おっ、チャチャシティに着いたようだぞ」",
-   "en": "",
+   "en": "\"Oh, looks like we've arrived at Chacha City.\"",
    "refs": [
     "MES1.DOC:00097"
    ],
@@ -3070,7 +3070,7 @@
    "id": "m00297",
    "kind": "msg",
    "jp": "「がんばってね。いってらっしゃーい」",
-   "en": "",
+   "en": "\"Do your best. Have a good trip.\"",
    "refs": [
     "MES1.DOC:00098"
    ],
@@ -3080,7 +3080,7 @@
    "id": "m00298",
    "kind": "msg",
    "jp": "「キャラクター？」",
-   "en": "",
+   "en": "\"Character?\"",
    "refs": [
     "MES1.DOC:00099"
    ],
@@ -3090,7 +3090,7 @@
    "id": "m00299",
    "kind": "msg",
    "jp": "「フッ、リーニャ嬢の家はここだな。俺はジゴロ、お見通しさ」",
-   "en": "",
+   "en": "\"Heh, this is Miss Rinya's place. I'm a gigolo, I can see through everything.\"",
    "refs": [
     "MES1.DOC:00100"
    ],
@@ -3100,7 +3100,7 @@
    "id": "m00300",
    "kind": "msg",
    "jp": "「ごめんくださーい！！　ご注文のジゴロですがー」",
-   "en": "",
+   "en": "\"Excuse me!! Your ordered gigolo is here~!\"",
    "refs": [
     "MES1.DOC:00101",
     "MES2.DOC:00077",
@@ -3112,7 +3112,7 @@
    "id": "m00301",
    "kind": "msg",
    "jp": "「では、さっそく始めよう。こいつが玩具のインターフェース、そして相棒のポッキーだ」",
-   "en": "",
+   "en": "\"Well then, let's get started. This is the toy's interface, and my partner, Pocky.\"",
    "refs": [
     "MES1.DOC:00102"
    ],
@@ -3122,7 +3122,7 @@
    "id": "m00302",
    "kind": "msg",
    "jp": "「おら、ポッキーだべ」",
-   "en": "",
+   "en": "\"Ora, I'm Pocky.\"",
    "refs": [
     "MES1.DOC:00103"
    ],
@@ -3132,7 +3132,7 @@
    "id": "m00303",
    "kind": "msg",
    "jp": "「まあ、かわいい相棒さんなのね。　よろしくね」",
-   "en": "",
+   "en": "\"Oh, what a cute partner. Nice to meet you.\"",
    "refs": [
     "MES1.DOC:00104"
    ],
@@ -3142,7 +3142,7 @@
    "id": "m00304",
    "kind": "msg",
    "jp": "「まんず、よろしぐだべ」",
-   "en": "",
+   "en": "\"Yeah, nice to meet you too.\"",
    "refs": [
     "MES1.DOC:00105"
    ],
@@ -3152,7 +3152,7 @@
    "id": "m00305",
    "kind": "msg",
    "jp": "「さっそく始めるぜ、リーニャ。好きな格好で好きな場所に寝てくれ」",
-   "en": "",
+   "en": "\"Let's get started right away, Rinya. Lie down wherever you like, in whatever pose you like.\"",
    "refs": [
     "MES1.DOC:00106"
    ],
@@ -3162,7 +3162,7 @@
    "id": "m00306",
    "kind": "msg",
    "jp": "「あたし、めちゃくちゃに責めて欲しいの」",
-   "en": "",
+   "en": "\"I want you to tease me like crazy.\"",
    "refs": [
     "MES1.DOC:00107"
    ],
@@ -3172,7 +3172,7 @@
    "id": "m00307",
    "kind": "msg",
    "jp": "「わかったぜ、なんでもまかしときな。ポッキー、いくぞ」",
-   "en": "",
+   "en": "\"Got it, leave everything to me. Pocky, let's go.\"",
    "refs": [
     "MES1.DOC:00108"
    ],
@@ -3182,7 +3182,7 @@
    "id": "m00308",
    "kind": "msg",
    "jp": "「ほーい、まがへでおげ（まかせておけ）」",
-   "en": "",
+   "en": "\"Okey, leave it to me.\"",
    "refs": [
     "MES1.DOC:00109"
    ],
@@ -3192,7 +3192,7 @@
    "id": "m00309",
    "kind": "msg",
    "jp": "「コブラさん、久しぶりにイくことができました。本当にありがとう」",
-   "en": "",
+   "en": "\"Mr. Cobra, I was able to come for the first time in a while. Thank you so much.\"",
    "refs": [
     "MES1.DOC:00110"
    ],
@@ -3202,7 +3202,7 @@
    "id": "m00310",
    "kind": "msg",
    "jp": "「フ、愛と正義のジゴロ屋家業、これが俺の仕事なのさ」",
-   "en": "",
+   "en": "\"Heh, the gigolo business of love and justice, that's my job.\"",
    "refs": [
     "MES1.DOC:00111"
    ],
@@ -3212,7 +3212,7 @@
    "id": "m00311",
    "kind": "msg",
    "jp": "「またお願いしていい？」",
-   "en": "",
+   "en": "\"Can I ask you again?\"",
    "refs": [
     "MES1.DOC:00112"
    ],
@@ -3222,7 +3222,7 @@
    "id": "m00312",
    "kind": "msg",
    "jp": "「困ってる女の子のお願いなら、すぐに飛んでくるさ」",
-   "en": "",
+   "en": "\"If it's a request from a girl in trouble, I'll fly right over.\"",
    "refs": [
     "MES1.DOC:00113"
    ],
@@ -3232,7 +3232,7 @@
    "id": "m00313",
    "kind": "msg",
    "jp": "「ありがとう、コブラさん」",
-   "en": "",
+   "en": "\"Thank you, Mr. Cobra.\"",
    "refs": [
     "MES1.DOC:00114"
    ],
@@ -3242,7 +3242,7 @@
    "id": "m00314",
    "kind": "msg",
    "jp": "「リーニャ、俺はもういかなくてはならない、悲しまないでくれ」",
-   "en": "",
+   "en": "\"Rinya, I must be going now. Don't be sad.\"",
    "refs": [
     "MES1.DOC:00115"
    ],
@@ -3252,7 +3252,7 @@
    "id": "m00315",
    "kind": "msg",
    "jp": "「さよなら、またね」",
-   "en": "",
+   "en": "\"Goodbye, see you again.\"",
    "refs": [
     "MES1.DOC:00116"
    ],
@@ -3262,7 +3262,7 @@
    "id": "m00316",
    "kind": "msg",
    "jp": "「グッバイ、ベイビー」",
-   "en": "",
+   "en": "\"Goodbye, baby.\"",
    "refs": [
     "MES1.DOC:00117"
    ],
@@ -3272,7 +3272,7 @@
    "id": "m00317",
    "kind": "msg",
    "jp": "「コブラさんですね。あたし、リーニャ、よろしくね」",
-   "en": "",
+   "en": "\"You're Mr. Cobra, right? I'm Rinya. Nice to meet you.\"",
    "refs": [
     "MES1.DOC:00118"
    ],
@@ -3282,7 +3282,7 @@
    "id": "m00318",
    "kind": "msg",
    "jp": "『　マングースの逆襲！！　』　の巻\n　\n天敵マングースが再び登場！　コブラは執ように迫るマングース軍団を倒すことができるのか？！　そして、マングースの隠された作戦とは？！　ジゴロ同士のし烈な戦いがはじまる！！",
-   "en": "",
+   "en": "Chapter: \"Mongoose's Counterattack!!\"\n\nThe natural enemy Mongoose appears again! Can Cobra defeat the persistently advancing Mongoose army?! And what is Mongoose's hidden strategy?! The fierce battle between gigolos begins!!",
    "refs": [
     "MES1.DOC:00119"
    ],
@@ -3292,7 +3292,7 @@
    "id": "m00319",
    "kind": "msg",
    "jp": "「光にもスピードがあることから、人間の目に映るもの全てが過去の事実であることが知られています」",
-   "en": "",
+   "en": "\"Since light also has speed, it's known that everything reflected in human eyes is a fact from the past.\"",
    "refs": [
     "MES2.DOC:00000"
    ],
@@ -3302,7 +3302,7 @@
    "id": "m00320",
    "kind": "msg",
    "jp": "「さてそれでは、肉食恐竜で有名なティラノザウルスが生きていたのはいつの時代でしょうか？」",
-   "en": "",
+   "en": "\"Now then, in what era did the carnivorous dinosaur famous for being a meat-eater, the Tyrannosaurus, live?\"",
    "refs": [
     "MES2.DOC:00001"
    ],
@@ -3312,7 +3312,7 @@
    "id": "m00321",
    "kind": "msg",
    "jp": "１　ジュラ紀\n２　鎌倉時代\n３　白亜紀\nさて何と答える？",
-   "en": "",
+   "en": "1. Jurassic period\n2. Kamakura period\n3. Cretaceous period\nSo, what's your answer?",
    "refs": [
     "MES2.DOC:00002"
    ],
@@ -3322,7 +3322,7 @@
    "id": "m00322",
    "kind": "msg",
    "jp": "「やった！　正解です！　正解したジゴロ屋コブラさんには、ワルツシティの美少女メロディさんのお相手の権利が与えられます！　やりましたね！　コブラさん！」",
-   "en": "",
+   "en": "\"Great! Correct! For getting it right, gigolo Cobra is granted the right to be the partner of the beautiful girl Melody from Waltz City! Way to go, Mr. Cobra!\"",
    "refs": [
     "MES2.DOC:00004"
    ],
@@ -3332,7 +3332,7 @@
    "id": "m00323",
    "kind": "msg",
    "jp": "「フフ、ジゴロは物知りなのさ。メロディは俺に任せてくれ」",
-   "en": "",
+   "en": "\"Hehe, a gigolo is knowledgeable. Leave Melody to me.\"",
    "refs": [
     "MES2.DOC:00005"
    ],
@@ -3342,7 +3342,7 @@
    "id": "m00324",
    "kind": "msg",
    "jp": "「おーっと、コブラさんのナニが早くもいきり立ってズボンからはみ出ておりまーす！」",
-   "en": "",
+   "en": "\"Whoa, Mr. Cobra's thing is already getting hard and sticking out of his pants!\"",
    "refs": [
     "MES2.DOC:00006",
     "MES3.DOC:00005"
@@ -3353,7 +3353,7 @@
    "id": "m00325",
    "kind": "msg",
    "jp": "「きっと、メロディさんもアソコを濡らしながら待っていることでしょう！　それではまた来週！」",
-   "en": "",
+   "en": "\"I'm sure Miss Melody is waiting with her pussy all wet too! See you next week!\"",
    "refs": [
     "MES2.DOC:00007"
    ],
@@ -3363,7 +3363,7 @@
    "id": "m00326",
    "kind": "msg",
    "jp": "「ねえ、コブラ、あのＭって人、本当に大丈夫なの？」",
-   "en": "",
+   "en": "\"Hey, Cobra, is that Mr. M guy really okay?\"",
    "refs": [
     "MES2.DOC:00008"
    ],
@@ -3373,7 +3373,7 @@
    "id": "m00327",
    "kind": "msg",
    "jp": "「たぶんな」",
-   "en": "",
+   "en": "\"Probably.\"",
    "refs": [
     "MES2.DOC:00009"
    ],
@@ -3383,7 +3383,7 @@
    "id": "m00328",
    "kind": "msg",
    "jp": "「たぶん・・・なのね」",
-   "en": "",
+   "en": "\"Probably... huh.\"",
    "refs": [
     "MES2.DOC:00010"
    ],
@@ -3393,7 +3393,7 @@
    "id": "m00329",
    "kind": "msg",
    "jp": "「リズミイ、気にするな。そんなことより俺達には重大な使命がある」",
-   "en": "",
+   "en": "\"Rhythmie, don't worry about it. More importantly, we have a crucial mission.\"",
    "refs": [
     "MES2.DOC:00011"
    ],
@@ -3403,7 +3403,7 @@
    "id": "m00330",
    "kind": "msg",
    "jp": "「・・・重大な使命って、メロディさんをイかせること？」",
-   "en": "",
+   "en": "\"...The crucial mission being making Melody come?\"",
    "refs": [
     "MES2.DOC:00012"
    ],
@@ -3413,7 +3413,7 @@
    "id": "m00331",
    "kind": "msg",
    "jp": "「それも１つだが君の星を助けることもだよ」",
-   "en": "",
+   "en": "\"That's one of them, but it's also about saving your planet.\"",
    "refs": [
     "MES2.DOC:00013"
    ],
@@ -3423,7 +3423,7 @@
    "id": "m00332",
    "kind": "msg",
    "jp": "「うれしいわコブラ。忘れていなかったのね」",
-   "en": "",
+   "en": "\"I'm so happy, Cobra. You hadn't forgotten.\"",
    "refs": [
     "MES2.DOC:00014"
    ],
@@ -3433,7 +3433,7 @@
    "id": "m00333",
    "kind": "msg",
    "jp": "「さっきまでは完全に忘れていた」",
-   "en": "",
+   "en": "\"I had completely forgotten until just now.\"",
    "refs": [
     "MES2.DOC:00015"
    ],
@@ -3443,7 +3443,7 @@
    "id": "m00334",
    "kind": "msg",
    "jp": "「そんなことだろうと思ってたわ」",
-   "en": "",
+   "en": "\"I figured it was something like that.\"",
    "refs": [
     "MES2.DOC:00016"
    ],
@@ -3453,7 +3453,7 @@
    "id": "m00335",
    "kind": "msg",
    "jp": "「思いだしただけいいじゃないか、さあ、出発だ」",
-   "en": "",
+   "en": "\"At least I remembered, right? Come on, let's set off.\"",
    "refs": [
     "MES2.DOC:00017"
    ],
@@ -3463,7 +3463,7 @@
    "id": "m00336",
    "kind": "msg",
    "jp": "「ま、またまたマングース軍団よ！！！」",
-   "en": "",
+   "en": "\"A-again, the Mongoose army!!!\"",
    "refs": [
     "MES2.DOC:00019"
    ],
@@ -3473,7 +3473,7 @@
    "id": "m00337",
    "kind": "msg",
    "jp": "「Ｏｈ！　Ｎｏ！　しつこい奴だ！」",
-   "en": "",
+   "en": "\"Oh! No! What a persistent pest!\"",
    "refs": [
     "MES2.DOC:00020"
    ],
@@ -3483,7 +3483,7 @@
    "id": "m00338",
    "kind": "msg",
    "jp": "「コブラはん、この前はあての愛の木馬を受け取ってもらえまへんでしたなあ」",
-   "en": "",
+   "en": "\"Mr. Cobra, you didn't accept my wooden horse of love last time.\"",
    "refs": [
     "MES2.DOC:00021"
    ],
@@ -3493,7 +3493,7 @@
    "id": "m00339",
    "kind": "msg",
    "jp": "「フフ、俺には超爆弾入り木馬であることぐらい分かっていたのさ」",
-   "en": "",
+   "en": "\"Hehe, I knew it was a wooden horse packed with a super bomb.\"",
    "refs": [
     "MES2.DOC:00022"
    ],
@@ -3503,7 +3503,7 @@
    "id": "m00340",
    "kind": "msg",
    "jp": "「ぜんぜん分かってなかったくせに。フン」",
-   "en": "",
+   "en": "\"You didn't know at all. Hmph.\"",
    "refs": [
     "MES2.DOC:00023"
    ],
@@ -3513,7 +3513,7 @@
    "id": "m00341",
    "kind": "msg",
    "jp": "「コブラはん。コンドルシャークの機銃の弾、あてが抜いておきましたで・・・・・」",
-   "en": "",
+   "en": "\"Mr. Cobra. I've already removed the bullets from the Condor Shark's machine guns...\"",
    "refs": [
     "MES2.DOC:00024"
    ],
@@ -3523,7 +3523,7 @@
    "id": "m00342",
    "kind": "msg",
    "jp": "「な、なにいっ」",
-   "en": "",
+   "en": "\"W-what?!\"",
    "refs": [
     "MES2.DOC:00025"
    ],
@@ -3533,7 +3533,7 @@
    "id": "m00343",
    "kind": "msg",
    "jp": "「コブラ！　大変！　本当だわ！　機銃の弾が全然ないわ！」",
-   "en": "",
+   "en": "\"Cobra! This is bad! It's true! There are no bullets in the machine guns at all!\"",
    "refs": [
     "MES2.DOC:00026"
    ],
@@ -3543,7 +3543,7 @@
    "id": "m00344",
    "kind": "msg",
    "jp": "「コブラはん、年貢の納めどきどすなあ。やっと、あてが宇宙一のジゴロになる時が来ましたどす。宇宙のオナゴは全てあてのモノどす」",
-   "en": "",
+   "en": "\"Mr. Cobra, it's time to pay your dues. The time has finally come for me to become the number one gigolo in the universe. All the wenches in the universe will be mine.\"",
    "refs": [
     "MES2.DOC:00027"
    ],
@@ -3553,7 +3553,7 @@
    "id": "m00345",
    "kind": "msg",
    "jp": "「どーすればいいのよ！！　何か武器として使えるものはないの？！」",
-   "en": "",
+   "en": "\"What should we do!! Isn't there anything we can use as a weapon?!\"",
    "refs": [
     "MES2.DOC:00028"
    ],
@@ -3563,7 +3563,7 @@
    "id": "m00346",
    "kind": "msg",
    "jp": "「そ、そーだ！　リズミイ、トランクだ！！」",
-   "en": "",
+   "en": "\"T-that's right! Rhythmie, the trunk!!\"",
    "refs": [
     "MES2.DOC:00029"
    ],
@@ -3573,7 +3573,7 @@
    "id": "m00347",
    "kind": "msg",
    "jp": "「トランクに武器があるのね！」",
-   "en": "",
+   "en": "\"There are weapons in the trunk!\"",
    "refs": [
     "MES2.DOC:00030"
    ],
@@ -3583,7 +3583,7 @@
    "id": "m00348",
    "kind": "msg",
    "jp": "「な、何よこれーっ」",
-   "en": "",
+   "en": "\"W-what is this?!\"",
    "refs": [
     "MES2.DOC:00031"
    ],
@@ -3593,7 +3593,7 @@
    "id": "m00349",
    "kind": "msg",
    "jp": "「それはスパナというものだよ、リズミイ」\n",
-   "en": "",
+   "en": "\"That's called a wrench, Rhythmie.\"",
    "refs": [
     "MES2.DOC:00032"
    ],
@@ -3603,7 +3603,7 @@
    "id": "m00350",
    "kind": "msg",
    "jp": "「知ってるわよ、そんなの！！　何なの、この無数のスパナは？」",
-   "en": "",
+   "en": "\"I know that!! What's with all these countless wrenches?\"",
    "refs": [
     "MES2.DOC:00033"
    ],
@@ -3613,7 +3613,7 @@
    "id": "m00351",
    "kind": "msg",
    "jp": "「工具会社の女社長からの愛のプレゼントさ」",
-   "en": "",
+   "en": "\"It's a present of love from the female president of a tool company.\"",
    "refs": [
     "MES2.DOC:00034"
    ],
@@ -3623,7 +3623,7 @@
    "id": "m00352",
    "kind": "msg",
    "jp": "「スパナと愛なんて全然関係ないと思うけど！！」",
-   "en": "",
+   "en": "\"I don't think wrenches and love have anything to do with each other!!\"",
    "refs": [
     "MES2.DOC:00035"
    ],
@@ -3633,7 +3633,7 @@
    "id": "m00353",
    "kind": "msg",
    "jp": "「子供には分からないのさ、リズミイ。スパナの鼻言葉は永遠の愛・・・」",
-   "en": "",
+   "en": "\"Children can't understand this, Rhythmie. The flower language of the wrench is eternal love...\"",
    "refs": [
     "MES2.DOC:00036"
    ],
@@ -3643,7 +3643,7 @@
    "id": "m00354",
    "kind": "msg",
    "jp": "「鼻でなくて花でしょ！　それに勝手にスパナを花にしないでっ！！」",
-   "en": "",
+   "en": "\"It's 'flower', not 'nose'! And don't go making wrenches into flowers on your own!!\"",
    "refs": [
     "MES2.DOC:00037"
    ],
@@ -3653,7 +3653,7 @@
    "id": "m00355",
    "kind": "msg",
    "jp": "「そう妬くな、リズミイ」",
-   "en": "",
+   "en": "\"Don't be so jealous, Rhythmie.\"",
    "refs": [
     "MES2.DOC:00038"
    ],
@@ -3663,7 +3663,7 @@
    "id": "m00356",
    "kind": "msg",
    "jp": "「気を付けろリズミイ！　俺のカンだが、俺達は今、かなりまずい状態にある」",
-   "en": "",
+   "en": "\"Watch out, Rhythmie! My instincts tell me we're in a pretty bad situation right now.\"",
    "refs": [
     "MES2.DOC:00039"
    ],
@@ -3673,7 +3673,7 @@
    "id": "m00357",
    "kind": "msg",
    "jp": "「言われなくても分かってるわ！！」",
-   "en": "",
+   "en": "\"I know that without you telling me!!\"",
    "refs": [
     "MES2.DOC:00040"
    ],
@@ -3683,7 +3683,7 @@
    "id": "m00358",
    "kind": "msg",
    "jp": "「よし、リズミイ。俺が運転して、敵を振り切る。君はスパナを投げて敵を撃破しろ！！」",
-   "en": "",
+   "en": "\"Alright, Rhythmie. I'll drive and shake off the enemy. You throw the wrenches and take them down!!\"",
    "refs": [
     "MES2.DOC:00041"
    ],
@@ -3693,7 +3693,7 @@
    "id": "m00359",
    "kind": "msg",
    "jp": "「えー？　あたしがやるのー？」",
-   "en": "",
+   "en": "\"Huh? I have to do it?\"",
    "refs": [
     "MES2.DOC:00042"
    ],
@@ -3703,7 +3703,7 @@
    "id": "m00360",
    "kind": "msg",
    "jp": "「安心しろリズミイ。ドライビングテクニックは数多くの女性達で実証済み。みんな俺のうまさにブルーフェイスさ！！」",
-   "en": "",
+   "en": "\"Don't worry, Rhythmie. My driving technique has been proven with countless women. They all turn blue-faced from how good I am!!\"",
    "refs": [
     "MES2.DOC:00043"
    ],
@@ -3713,7 +3713,7 @@
    "id": "m00361",
    "kind": "msg",
    "jp": "「なんなのよ、青い顔って！！」",
-   "en": "",
+   "en": "\"What do you mean, blue-faced!!\"",
    "refs": [
     "MES2.DOC:00044"
    ],
@@ -3723,7 +3723,7 @@
    "id": "m00362",
    "kind": "msg",
    "jp": "「リズミイ・・・」",
-   "en": "",
+   "en": "\"Rhythmie...\"",
    "refs": [
     "MES2.DOC:00045"
    ],
@@ -3733,7 +3733,7 @@
    "id": "m00363",
    "kind": "msg",
    "jp": "「何よ、真顔で・・・・・」",
-   "en": "",
+   "en": "\"What, with that serious face...\"",
    "refs": [
     "MES2.DOC:00046"
    ],
@@ -3743,7 +3743,7 @@
    "id": "m00364",
    "kind": "msg",
    "jp": "「君は今、俺を道づれにして死んでゆくことを悩んでいるね。しかし、俺は愛のために死ねる男。死など恐くはない。気にせず戦ってくれ」",
-   "en": "",
+   "en": "\"You're worried about dying with me as your companion. But I'm a man who can die for love. I'm not afraid of death. Fight without worrying.\"",
    "refs": [
     "MES2.DOC:00047"
    ],
@@ -3753,7 +3753,7 @@
    "id": "m00365",
    "kind": "msg",
    "jp": "「道づれににしてるのは、あなたの方でしょ！！」",
-   "en": "",
+   "en": "\"You're the one making me your companion!!\"",
    "refs": [
     "MES2.DOC:00048"
    ],
@@ -3763,7 +3763,7 @@
    "id": "m00366",
    "kind": "msg",
    "jp": "「ハアハア・・・ザコはやっつけたわ！　どうでもいいけど、このスパナだいぶ投げたのに減らないわ」",
-   "en": "",
+   "en": "\"Huff huff... I took out the small fry! Whatever, but I've thrown a lot of these wrenches and they're not decreasing.\"",
    "refs": [
     "MES2.DOC:00049"
    ],
@@ -3773,7 +3773,7 @@
    "id": "m00367",
    "kind": "msg",
    "jp": "「愛はマジック！！！」",
-   "en": "",
+   "en": "\"Love is magic!!!\"",
    "refs": [
     "MES2.DOC:00050"
    ],
@@ -3783,7 +3783,7 @@
    "id": "m00368",
    "kind": "msg",
    "jp": "「いちいちうるさいわコブラ！！！」",
-   "en": "",
+   "en": "\"You're so noisy about every little thing, Cobra!!!\"",
    "refs": [
     "MES2.DOC:00051"
    ],
@@ -3793,7 +3793,7 @@
    "id": "m00369",
    "kind": "msg",
    "jp": "「コブラはん、なかなかやりはりますなー。けど、あては全宇宙のオナゴを自分のモノにするまでは死なんで。覚悟おし、コブラはん」",
-   "en": "",
+   "en": "\"Mr. Cobra, you're quite something. But I won't die until I make all the wenches in the universe mine. Be prepared, Mr. Cobra.\"",
    "refs": [
     "MES2.DOC:00052"
    ],
@@ -3803,7 +3803,7 @@
    "id": "m00370",
    "kind": "msg",
    "jp": "「なんだか、誰かとノリが似てるわ・・・」",
-   "en": "",
+   "en": "\"Somehow, she reminds me of someone...\"",
    "refs": [
     "MES2.DOC:00053"
    ],
@@ -3813,7 +3813,7 @@
    "id": "m00371",
    "kind": "msg",
    "jp": "「このピッタリペッタン爆弾でコブラはんも終わりどす」",
-   "en": "",
+   "en": "\"With this Sticky-Flat Bomb, Mr. Cobra, you're finished.\"",
    "refs": [
     "MES2.DOC:00054"
    ],
@@ -3823,7 +3823,7 @@
    "id": "m00372",
    "kind": "msg",
    "jp": "「リズミイ振り切るぞ！！！！！」",
-   "en": "",
+   "en": "\"Rhythmie, I'm shaking them off!!!!!\"",
    "refs": [
     "MES2.DOC:00055"
    ],
@@ -3833,7 +3833,7 @@
    "id": "m00373",
    "kind": "msg",
    "jp": "「ＯＫ！！　コブラ！！」",
-   "en": "",
+   "en": "\"OK!! Cobra!!\"",
    "refs": [
     "MES2.DOC:00056"
    ],
@@ -3843,7 +3843,7 @@
    "id": "m00374",
    "kind": "msg",
    "jp": "「コ、コブラ！！！　なんで反転しないの！！！　マングースの船に突っ込んでしまうわ！！！」",
-   "en": "",
+   "en": "\"C-Cobra!!! Why aren't you turning around!!! We're going to crash into Mongoose's ship!!!\"",
    "refs": [
     "MES2.DOC:00057"
    ],
@@ -3853,7 +3853,7 @@
    "id": "m00375",
    "kind": "msg",
    "jp": "「フフ・・・ハンドルにカマキリがいるのさリズミイ」",
-   "en": "",
+   "en": "\"Hehe... There's a mantis on the steering wheel, Rhythmie.\"",
    "refs": [
     "MES2.DOC:00058"
    ],
@@ -3863,7 +3863,7 @@
    "id": "m00376",
    "kind": "msg",
    "jp": "「コ、コブラ！！　ブレーキ！！　ブレーキを踏むのよ！！」",
-   "en": "",
+   "en": "\"C-Cobra!! Brake!! Step on the brake!!\"",
    "refs": [
     "MES2.DOC:00059"
    ],
@@ -3873,7 +3873,7 @@
    "id": "m00377",
    "kind": "msg",
    "jp": "「わ、わかった！！！　せーの！！！！！」",
-   "en": "",
+   "en": "\"O-okay!!! Ready!!!!!\"",
    "refs": [
     "MES2.DOC:00060"
    ],
@@ -3883,7 +3883,7 @@
    "id": "m00378",
    "kind": "msg",
    "jp": "「きゃあああああ！！！」",
-   "en": "",
+   "en": "\"Kyaaaaaaa!!!\"",
    "refs": [
     "MES2.DOC:00061"
    ],
@@ -3893,7 +3893,7 @@
    "id": "m00379",
    "kind": "msg",
    "jp": "「どこに行くんだリズミイ！！！　帰ってこーい！！！」",
-   "en": "",
+   "en": "\"Where are you going, Rhythmie!!! Come back!!!\"",
    "refs": [
     "MES2.DOC:00062"
    ],
@@ -3903,7 +3903,7 @@
    "id": "m00380",
    "kind": "msg",
    "jp": "「さすがはコブラ・・・オナゴを自由にあやつる男」",
-   "en": "",
+   "en": "\"As expected of Cobra... A man who freely manipulates wenches.\"",
    "refs": [
     "MES2.DOC:00063"
    ],
@@ -3913,7 +3913,7 @@
    "id": "m00381",
    "kind": "msg",
    "jp": "「逃げたくなる気持ちはわかるが空は飛ぶなリズミイ」",
-   "en": "",
+   "en": "\"I understand wanting to run away, but don't fly through the sky, Rhythmie.\"",
    "refs": [
     "MES2.DOC:00064"
    ],
@@ -3923,7 +3923,7 @@
    "id": "m00382",
    "kind": "msg",
    "jp": "「飛ばしたのはあなたでしょ！！！」",
-   "en": "",
+   "en": "\"You're the one who sent me flying!!!\"",
    "refs": [
     "MES2.DOC:00065"
    ],
@@ -3933,7 +3933,7 @@
    "id": "m00383",
    "kind": "msg",
    "jp": "「恐いオナゴよのー。しかしここでは、その手は使われへん。これで終わりどす」",
-   "en": "",
+   "en": "\"What a scary wench. But that trick won't work here. This is the end.\"",
    "refs": [
     "MES2.DOC:00066"
    ],
@@ -3943,7 +3943,7 @@
    "id": "m00384",
    "kind": "msg",
    "jp": "「コブラ、足元にスパナがあるわ！！！」",
-   "en": "",
+   "en": "\"Cobra, there's a wrench at your feet!!!\"",
    "refs": [
     "MES2.DOC:00067"
    ],
@@ -3953,7 +3953,7 @@
    "id": "m00385",
    "kind": "msg",
    "jp": "「しめた！！　これを投げつけてやる！！！」",
-   "en": "",
+   "en": "\"Got it!! I'll throw this at her!!!\"",
    "refs": [
     "MES2.DOC:00068"
    ],
@@ -3963,7 +3963,7 @@
    "id": "m00386",
    "kind": "msg",
    "jp": "「は、早く！！！」",
-   "en": "",
+   "en": "\"H-hurry!!!\"",
    "refs": [
     "MES2.DOC:00069"
    ],
@@ -3973,7 +3973,7 @@
    "id": "m00387",
    "kind": "msg",
    "jp": "「花・・・・・美しい花・・・。コブラはん、この勝負あての負けどすわ。美しい花を見たあとに人を切ることはできへん」",
-   "en": "",
+   "en": "\"A flower... A beautiful flower... Mr. Cobra, I concede this match. I can't cut a person after seeing a beautiful flower.\"",
    "refs": [
     "MES2.DOC:00070"
    ],
@@ -3983,7 +3983,7 @@
    "id": "m00388",
    "kind": "msg",
    "jp": "「しかし、今度おうた時は必ず・・・・・さらばどす、コブラはん」",
-   "en": "",
+   "en": "\"But next time we meet, I definitely will... Farewell, Mr. Cobra.\"",
    "refs": [
     "MES2.DOC:00071"
    ],
@@ -3993,7 +3993,7 @@
    "id": "m00389",
    "kind": "msg",
    "jp": "「フフ・・・これがジゴロの本能という奴さ、リズミイ」",
-   "en": "",
+   "en": "\"Hehe... This is what they call the gigolo's instinct, Rhythmie.\"",
    "refs": [
     "MES2.DOC:00072"
    ],
@@ -4003,7 +4003,7 @@
    "id": "m00390",
    "kind": "msg",
    "jp": "「間違えただけでしょっ！！！」",
-   "en": "",
+   "en": "\"You just made a mistake!!\"",
    "refs": [
     "MES2.DOC:00073"
    ],
@@ -4013,7 +4013,7 @@
    "id": "m00391",
    "kind": "msg",
    "jp": "「おっ、ワルツシティに着いたようだぞ」",
-   "en": "",
+   "en": "\"Oh, looks like we've arrived at Waltz City.\"",
    "refs": [
     "MES2.DOC:00074"
    ],
@@ -4023,7 +4023,7 @@
    "id": "m00392",
    "kind": "msg",
    "jp": "「いってらっしゃーい！！」",
-   "en": "",
+   "en": "\"Have a good trip!!\"",
    "refs": [
     "MES2.DOC:00075"
    ],
@@ -4033,7 +4033,7 @@
    "id": "m00393",
    "kind": "msg",
    "jp": "「フッ、メロディ嬢の家はここだな。俺はジゴロ、お見通しさ」",
-   "en": "",
+   "en": "\"Heh, this is Miss Melody's place. I'm a gigolo, I can see through everything.\"",
    "refs": [
     "MES2.DOC:00076"
    ],
@@ -4043,7 +4043,7 @@
    "id": "m00394",
    "kind": "msg",
    "jp": "「おかしい、返事がない・・・」",
-   "en": "",
+   "en": "\"That's strange, no answer...\"",
    "refs": [
     "MES2.DOC:00078"
    ],
@@ -4053,7 +4053,7 @@
    "id": "m00395",
    "kind": "msg",
    "jp": "「・・・・・あん・・・・・あ・・・・・ああん・・・・・」",
-   "en": "",
+   "en": "\"...Ah... A... Aahn...\"",
    "refs": [
     "MES2.DOC:00079"
    ],
@@ -4063,7 +4063,7 @@
    "id": "m00396",
    "kind": "msg",
    "jp": "「妖しげな声が・・・よし、何でも見えるコブラアイだ！　ジュワッ！」",
-   "en": "",
+   "en": "\"A suspicious voice... Alright, Cobra Eye, which sees everything! Jwaa!\"",
    "refs": [
     "MES2.DOC:00080"
    ],
@@ -4073,7 +4073,7 @@
    "id": "m00397",
    "kind": "msg",
    "jp": "「しまった、待ちきれなかったか・・・いや、まだ間に合うはずだ。ポッキー行くぞ」",
-   "en": "",
+   "en": "\"Damn, she couldn't wait... No, there should still be time. Pocky, let's go.\"",
    "refs": [
     "MES2.DOC:00081"
    ],
@@ -4083,7 +4083,7 @@
    "id": "m00398",
    "kind": "msg",
    "jp": "「オッケイだべ」",
-   "en": "",
+   "en": "\"Okey.\"",
    "refs": [
     "MES2.DOC:00082"
    ],
@@ -4093,7 +4093,7 @@
    "id": "m00399",
    "kind": "msg",
    "jp": "「ああん、コブラさんね・・・遅かったじゃない・・・待ちきれなくて自分でしてたの」",
-   "en": "",
+   "en": "\"Aahn, Mr. Cobra... You're late... I couldn't wait, so I was doing it myself.\"",
    "refs": [
     "MES2.DOC:00083"
    ],
@@ -4103,7 +4103,7 @@
    "id": "m00400",
    "kind": "msg",
    "jp": "「メロディ、今度はポッキーにまかせてくれ」",
-   "en": "",
+   "en": "\"Melody, this time leave it to Pocky.\"",
    "refs": [
     "MES2.DOC:00084"
    ],
@@ -4113,7 +4113,7 @@
    "id": "m00401",
    "kind": "msg",
    "jp": "「わかったわ、はやくうん・・・」",
-   "en": "",
+   "en": "\"Okay, hurry...\"",
    "refs": [
     "MES2.DOC:00085"
    ],
@@ -4123,7 +4123,7 @@
    "id": "m00402",
    "kind": "msg",
    "jp": "「とってもよかったわ、コブラ。今度また来てね」",
-   "en": "",
+   "en": "\"That was really good, Cobra. Come again next time.\"",
    "refs": [
     "MES2.DOC:00086"
    ],
@@ -4133,7 +4133,7 @@
    "id": "m00403",
    "kind": "msg",
    "jp": "「ああ、もちろんさ。オナニーを我慢して待っててくれ」",
-   "en": "",
+   "en": "\"Yeah, of course. Hold off on the masturbation and wait for me.\"",
    "refs": [
     "MES2.DOC:00087"
    ],
@@ -4143,7 +4143,7 @@
    "id": "m00404",
    "kind": "msg",
    "jp": "「やーん、そんなこと言うとはずかしいわ」",
-   "en": "",
+   "en": "\"Oh no, saying something like that is embarrassing.\"",
    "refs": [
     "MES2.DOC:00088"
    ],
@@ -4153,7 +4153,7 @@
    "id": "m00405",
    "kind": "msg",
    "jp": "「俺はそろそろ行かなくちゃいけない。さらばだ」",
-   "en": "",
+   "en": "\"I've got to be going soon. Farewell.\"",
    "refs": [
     "MES2.DOC:00089"
    ],
@@ -4163,7 +4163,7 @@
    "id": "m00406",
    "kind": "msg",
    "jp": "「コブラはん、あての剣を受けられるどすか？　はいやあああああああああぁぁぁぁぁ！！！！！」",
-   "en": "",
+   "en": "\"Mr. Cobra, can you take my sword? Hyaaaaaaaah!!!!!\"",
    "refs": [
     "MES2.DOC:00091"
    ],
@@ -4173,7 +4173,7 @@
    "id": "m00407",
    "kind": "msg",
    "jp": "「大変！　マングースが切りかかってきたわ！」",
-   "en": "",
+   "en": "\"Oh no! Mongoose is attacking with her sword!\"",
    "refs": [
     "MES2.DOC:00092"
    ],
@@ -4183,7 +4183,7 @@
    "id": "m00408",
    "kind": "msg",
    "jp": "『　宇宙に散った紅の花！　』　の巻\n　\n打倒レッドコブラ！　瞳に紅れんの炎を燃やし襲いかかるマングース！　策略におちたコンドルシャークは戦えるのか？！そして、緊迫の１対１の対決のゆくえはどうなる？！　",
-   "en": "",
+   "en": "Chapter: \"The Crimson Flower Scattered in Space!\"\n\nDown with Red Cobra! Mongoose attacks with crimson flames burning in her eyes! Can the Condor Shark, fallen into a trap, still fight?! And what will become of the tense one-on-one showdown?!",
    "refs": [
     "MES2.DOC:00100"
    ],
@@ -4193,7 +4193,7 @@
    "id": "m00409",
    "kind": "msg",
    "jp": "「コップに入れた水に１円玉が浮くのは表面張力。さてそれでは長い角を持つ鯨イッカクの角の正体はなんでしょう？」",
-   "en": "",
+   "en": "\"A one-yen coin floating on water in a cup is due to surface tension. Now then, what is the true nature of the long horn of the narwhal, a whale with a long horn?\"",
    "refs": [
     "MES3.DOC:00000"
    ],
@@ -4203,7 +4203,7 @@
    "id": "m00410",
    "kind": "msg",
    "jp": "１　上顎の牙が変化したもの\n２　頭蓋骨の一部が突起したもの\n３　頭の皮が変化したもの\nさて何と答える？",
-   "en": "",
+   "en": "1. A transformed upper jaw tooth\n2. A protrusion of part of the skull\n3. Transformed skin on the head\nSo, what's your answer?",
    "refs": [
     "MES3.DOC:00001"
    ],
@@ -4213,7 +4213,7 @@
    "id": "m00411",
    "kind": "msg",
    "jp": "「やった！　正解です！　正解したジゴロ屋コブラさんには、ランダバシティの美少女キャスリンのお相手の権利が与えられます！　やりましたね！　コブラさん！」",
-   "en": "",
+   "en": "\"Great! Correct! For getting it right, gigolo Cobra is granted the right to be the partner of the beautiful girl Catherine from Randa City! Way to go, Mr. Cobra!\"",
    "refs": [
     "MES3.DOC:00003"
    ],
@@ -4223,7 +4223,7 @@
    "id": "m00412",
    "kind": "msg",
    "jp": "「フフ、鯨のことなら、俺にまかせておいてくれ。キャスリンも俺にまかせてくれ」",
-   "en": "",
+   "en": "\"Hehe, when it comes to whales, leave it to me. Leave Catherine to me too.\"",
    "refs": [
     "MES3.DOC:00004"
    ],
@@ -4233,7 +4233,7 @@
    "id": "m00413",
    "kind": "msg",
    "jp": "「きっと、キャスリンさんもアソコを濡らしながら待っていることでしょう！それではまた来週！」",
-   "en": "",
+   "en": "\"I'm sure Miss Catherine is waiting with her pussy all wet too! See you next week!\"",
    "refs": [
     "MES3.DOC:00006"
    ],
@@ -4243,7 +4243,7 @@
    "id": "m00414",
    "kind": "msg",
    "jp": "「ねえ、コブラ、あのＭって人、ちょっと下品じゃない？」",
-   "en": "",
+   "en": "\"Hey, Cobra, isn't that Mr. M guy a little vulgar?\"",
    "refs": [
     "MES3.DOC:00007"
    ],
@@ -4253,7 +4253,7 @@
    "id": "m00415",
    "kind": "msg",
    "jp": "「フフ、前に言ったろう。奴はそういうキャラクターなんだよ」",
-   "en": "",
+   "en": "\"Hehe, I told you before. He's just that kind of character.\"",
    "refs": [
     "MES3.DOC:00008"
    ],
@@ -4263,7 +4263,7 @@
    "id": "m00416",
    "kind": "msg",
    "jp": "「あたしには変なエロおやじにしか見えないけど」",
-   "en": "",
+   "en": "\"To me, he just looks like a weird lecherous old man.\"",
    "refs": [
     "MES3.DOC:00009"
    ],
@@ -4273,7 +4273,7 @@
    "id": "m00417",
    "kind": "msg",
    "jp": "「なんだ、完ぺきに見えてるじゃないか。さあ出発だ」",
-   "en": "",
+   "en": "\"What, you can see him perfectly well. Come on, let's set off.\"",
    "refs": [
     "MES3.DOC:00010"
    ],
@@ -4283,7 +4283,7 @@
    "id": "m00418",
    "kind": "msg",
    "jp": "「了解しました！」",
-   "en": "",
+   "en": "\"Roger!\"",
    "refs": [
     "MES3.DOC:00011"
    ],
@@ -4293,7 +4293,7 @@
    "id": "m00419",
    "kind": "msg",
    "jp": "「あれは！！！　ドラテの船よ！！！」",
-   "en": "",
+   "en": "\"That's!!! A Dorate ship!!!\"",
    "refs": [
     "MES3.DOC:00012"
    ],
@@ -4303,7 +4303,7 @@
    "id": "m00420",
    "kind": "msg",
    "jp": "「ちくしょう！　あれほどリズミイヒメは乗ってないと言ったのに！」",
-   "en": "",
+   "en": "\"Damn it! I told them so many times that Princess Rhythmie isn't aboard!\"",
    "refs": [
     "MES3.DOC:00013"
    ],
@@ -4313,7 +4313,7 @@
    "id": "m00421",
    "kind": "msg",
    "jp": "「わたしは、ドラテ第７艦隊指令官ファックマンだ。アイキコンドルシャークの船長に告ぐ。我がドラテ第３艦隊を全滅させたのはおまえか？」",
-   "en": "",
+   "en": "\"I am Fuckman, commander of the Dorate Seventh Fleet. I address the captain of the Aiki Condor Shark. Was it you who annihilated our Dorate Third Fleet?\"",
    "refs": [
     "MES3.DOC:00014"
    ],
@@ -4323,7 +4323,7 @@
    "id": "m00422",
    "kind": "msg",
    "jp": "「あーあー、ただ今マイクのテスト中」",
-   "en": "",
+   "en": "\"Ahem, ahem. Testing microphone.\"",
    "refs": [
     "MES3.DOC:00015"
    ],
@@ -4333,7 +4333,7 @@
    "id": "m00423",
    "kind": "msg",
    "jp": "「コブラ、どーして、ドラテと話すときだけそーなっちゃうのよ！」",
-   "en": "",
+   "en": "\"Cobra, why do you get like that only when talking to the Dorate!\"",
    "refs": [
     "MES3.DOC:00016"
    ],
@@ -4343,7 +4343,7 @@
    "id": "m00424",
    "kind": "msg",
    "jp": "「リズミイ、わかったからそんなに怒るな」",
-   "en": "",
+   "en": "\"Rhythmie, I get it, so don't get so angry.\"",
    "refs": [
     "MES3.DOC:00017"
    ],
@@ -4353,7 +4353,7 @@
    "id": "m00425",
    "kind": "msg",
    "jp": "「攻撃してきたのは、そっちの方だ、ファックマン指令」",
-   "en": "",
+   "en": "\"You're the ones who attacked, Commander Fuckman.\"",
    "refs": [
     "MES3.DOC:00018"
    ],
@@ -4363,7 +4363,7 @@
    "id": "m00426",
    "kind": "msg",
    "jp": "「それは我が姫を拉致したからだ」",
-   "en": "",
+   "en": "\"That's because you abducted our princess.\"",
    "refs": [
     "MES3.DOC:00019"
    ],
@@ -4373,7 +4373,7 @@
    "id": "m00427",
    "kind": "msg",
    "jp": "「拉致しようとしたのは、そっちの方だ。俺はジゴロ。女の子を拉致したりはしないさ」",
-   "en": "",
+   "en": "\"You're the ones who tried to abduct her. I'm a gigolo. I don't abduct girls.\"",
    "refs": [
     "MES3.DOC:00020"
    ],
@@ -4383,7 +4383,7 @@
    "id": "m00428",
    "kind": "msg",
    "jp": "「まあいい・・・我が第７艦隊はアイキコンドルシャークに攻撃を開始する」",
-   "en": "",
+   "en": "\"Fine... The Seventh Fleet will now commence an attack on the Aiki Condor Shark.\"",
    "refs": [
     "MES3.DOC:00021"
    ],
@@ -4393,7 +4393,7 @@
    "id": "m00429",
    "kind": "msg",
    "jp": "「いちいち言わずに攻撃した方が有利なのに」",
-   "en": "",
+   "en": "\"It'd be more advantageous to attack without announcing it every time.\"",
    "refs": [
     "MES3.DOC:00022"
    ],
@@ -4403,7 +4403,7 @@
    "id": "m00430",
    "kind": "msg",
    "jp": "「カッコつけたいんだろ」",
-   "en": "",
+   "en": "\"He wants to look cool.\"",
    "refs": [
     "MES3.DOC:00023"
    ],
@@ -4413,7 +4413,7 @@
    "id": "m00431",
    "kind": "msg",
    "jp": "「誰かと同じね」",
-   "en": "",
+   "en": "\"Just like someone we know.\"",
    "refs": [
     "MES3.DOC:00024"
    ],
@@ -4423,7 +4423,7 @@
    "id": "m00432",
    "kind": "msg",
    "jp": "「なかなか手ごわかったぜ」",
-   "en": "",
+   "en": "\"That was a tough one.\"",
    "refs": [
     "MES3.DOC:00025"
    ],
@@ -4433,7 +4433,7 @@
    "id": "m00433",
    "kind": "msg",
    "jp": "「あのボスキャラ、強いんだもの」",
-   "en": "",
+   "en": "\"That boss character was strong.\"",
    "refs": [
     "MES3.DOC:00026"
    ],
@@ -4443,7 +4443,7 @@
    "id": "m00434",
    "kind": "msg",
    "jp": "「おっ、ランダバシティに着いたようだぞ」",
-   "en": "",
+   "en": "\"Oh, looks like we've arrived at Randa City.\"",
    "refs": [
     "MES3.DOC:00027"
    ],
@@ -4453,7 +4453,7 @@
    "id": "m00435",
    "kind": "msg",
    "jp": "「いってらっしゃーい」",
-   "en": "",
+   "en": "\"Have a good trip.\"",
    "refs": [
     "MES3.DOC:00028"
    ],
@@ -4463,7 +4463,7 @@
    "id": "m00436",
    "kind": "msg",
    "jp": "「フッ、キャスリン嬢の家はここだな。俺はジゴロ、お見通しさ」",
-   "en": "",
+   "en": "\"Heh, this is Miss Catherine's place. I'm a gigolo, I can see through everything.\"",
    "refs": [
     "MES3.DOC:00029"
    ],
@@ -4473,7 +4473,7 @@
    "id": "m00437",
    "kind": "msg",
    "jp": "「コブラさんね。待ってたのよ」",
-   "en": "",
+   "en": "\"You're Mr. Cobra, right? I've been waiting.\"",
    "refs": [
     "MES3.DOC:00031"
    ],
@@ -4483,7 +4483,7 @@
    "id": "m00438",
    "kind": "msg",
    "jp": "「フフ、待たせてしまったようだね。しかし、その分最高の気分にさせてやるぜ」",
-   "en": "",
+   "en": "\"Hehe, looks like I kept you waiting. But I'll make you feel the best to make up for it.\"",
    "refs": [
     "MES3.DOC:00032"
    ],
@@ -4493,7 +4493,7 @@
    "id": "m00439",
    "kind": "msg",
    "jp": "「まあ、楽しみだわ！　で、どうすればいいの？」",
-   "en": "",
+   "en": "\"Oh, I can't wait! So, what should I do?\"",
    "refs": [
     "MES3.DOC:00033"
    ],
@@ -4503,7 +4503,7 @@
    "id": "m00440",
    "kind": "msg",
    "jp": "「好きな場所に好きな格好で寝てくれ。いや、立ったままでもいいが」",
-   "en": "",
+   "en": "\"Lie down wherever you like, in whatever pose you like. Or, you could stay standing, I suppose.\"",
    "refs": [
     "MES3.DOC:00034"
    ],
@@ -4513,7 +4513,7 @@
    "id": "m00441",
    "kind": "msg",
    "jp": "「こんな感じかしら・・・」",
-   "en": "",
+   "en": "\"Like this...?\"",
    "refs": [
     "MES3.DOC:00035"
    ],
@@ -4523,7 +4523,7 @@
    "id": "m00442",
    "kind": "msg",
    "jp": "「フフ、セクシーだぜキャスリン」",
-   "en": "",
+   "en": "\"Hehe, you're sexy, Catherine.\"",
    "refs": [
     "MES3.DOC:00036"
    ],
@@ -4533,7 +4533,7 @@
    "id": "m00443",
    "kind": "msg",
    "jp": "「ありがとうコブラ。やさしくしてね」",
-   "en": "",
+   "en": "\"Thank you, Cobra. Be gentle.\"",
    "refs": [
     "MES3.DOC:00037"
    ],
@@ -4543,7 +4543,7 @@
    "id": "m00444",
    "kind": "msg",
    "jp": "「キャスリン、眠っているうちに出て行く俺を許してくれ」",
-   "en": "",
+   "en": "\"Catherine, forgive me for leaving while you sleep.\"",
    "refs": [
     "MES3.DOC:00038"
    ],
@@ -4553,7 +4553,7 @@
    "id": "m00445",
    "kind": "msg",
    "jp": "「グッバイベイビー・・・今日は町に寄り道しようかな・・・」",
-   "en": "",
+   "en": "\"Goodbye, baby... Maybe I'll take a detour through town today...\"",
    "refs": [
     "MES3.DOC:00039"
    ],
@@ -4563,7 +4563,7 @@
    "id": "m00446",
    "kind": "msg",
    "jp": "「お兄さん、おもしろい物がありやすぜ」",
-   "en": "",
+   "en": "\"Hey mister, I've got something interesting here.\"",
    "refs": [
     "MES3.DOC:00040"
    ],
@@ -4573,7 +4573,7 @@
    "id": "m00447",
    "kind": "msg",
    "jp": "「おもしろいもの？　大人のおもちゃか？」",
-   "en": "",
+   "en": "\"Something interesting? An adult toy?\"",
    "refs": [
     "MES3.DOC:00041"
    ],
@@ -4583,7 +4583,7 @@
    "id": "m00448",
    "kind": "msg",
    "jp": "「それもあるけど、ほらこれ。カマキリバリアですよ」",
-   "en": "",
+   "en": "\"That too, but look at this. It's a Mantis Barrier.\"",
    "refs": [
     "MES3.DOC:00042"
    ],
@@ -4593,7 +4593,7 @@
    "id": "m00449",
    "kind": "msg",
    "jp": "「何？！　カマキリバリア？？？」",
-   "en": "",
+   "en": "\"What?! A Mantis Barrier???\"",
    "refs": [
     "MES3.DOC:00043"
    ],
@@ -4603,7 +4603,7 @@
    "id": "m00450",
    "kind": "msg",
    "jp": "「カマキリが嫌いな人が最近増えましてね」",
-   "en": "",
+   "en": "\"Recently, more and more people hate praying mantises.\"",
    "refs": [
     "MES3.DOC:00044"
    ],
@@ -4613,7 +4613,7 @@
    "id": "m00451",
    "kind": "msg",
    "jp": "「そうだろう。誰だって、カマキリは嫌なものさ」",
-   "en": "",
+   "en": "\"Right. Anyone would hate mantises.\"",
    "refs": [
     "MES3.DOC:00045"
    ],
@@ -4623,7 +4623,7 @@
    "id": "m00452",
    "kind": "msg",
    "jp": "「そこで、このカマキリバリアがあれば、いつでもカマキリから身を守れるのさ」",
-   "en": "",
+   "en": "\"So, with this Mantis Barrier, you can protect yourself from mantises anytime.\"",
    "refs": [
     "MES3.DOC:00046"
    ],
@@ -4633,7 +4633,7 @@
    "id": "m00453",
    "kind": "msg",
    "jp": "「何？！　それはいい！　やってみせてくれないか？」",
-   "en": "",
+   "en": "\"What?! That's great! Can you show me?\"",
    "refs": [
     "MES3.DOC:00047"
    ],
@@ -4643,7 +4643,7 @@
    "id": "m00454",
    "kind": "msg",
    "jp": "「いいかみてろよ。カマキリバリア、スイッチオン！」",
-   "en": "",
+   "en": "\"Alright, watch this. Mantis Barrier, switch on!\"",
    "refs": [
     "MES3.DOC:00048"
    ],
@@ -4653,7 +4653,7 @@
    "id": "m00455",
    "kind": "msg",
    "jp": "「おおおおおっ！」",
-   "en": "",
+   "en": "\"Oooooooh!\"",
    "refs": [
     "MES3.DOC:00049"
    ],
@@ -4663,7 +4663,7 @@
    "id": "m00456",
    "kind": "msg",
    "jp": "「どうだい、お兄さん。３０カネーだが買わねーか？」",
-   "en": "",
+   "en": "\"How about it, mister? It's 30 kanee. Want to buy it?\"",
    "refs": [
     "MES3.DOC:00050"
    ],
@@ -4673,7 +4673,7 @@
    "id": "m00457",
    "kind": "msg",
    "jp": "「買った！！！」",
-   "en": "",
+   "en": "\"I'll take it!!!\"",
    "refs": [
     "MES3.DOC:00051"
    ],
@@ -4683,7 +4683,7 @@
    "id": "m00458",
    "kind": "msg",
    "jp": "「まいど！！！」",
-   "en": "",
+   "en": "\"Thanks for your business!!!\"",
    "refs": [
     "MES3.DOC:00052"
    ],
@@ -4693,7 +4693,7 @@
    "id": "m00459",
    "kind": "msg",
    "jp": "「リズミイ？　・・・またシャワーでも浴びてるのかな？」",
-   "en": "",
+   "en": "\"Rhythmie? ...Is she taking a shower again?\"",
    "refs": [
     "MES3.DOC:00053"
    ],
@@ -4703,7 +4703,7 @@
    "id": "m00460",
    "kind": "msg",
    "jp": "「おかしい・・・・・シャワー室にもいない」",
-   "en": "",
+   "en": "\"That's strange... She's not in the shower room either.\"",
    "refs": [
     "MES3.DOC:00054"
    ],
@@ -4713,7 +4713,7 @@
    "id": "m00461",
    "kind": "msg",
    "jp": "「買物なら置き手紙するはずだが・・・」",
-   "en": "",
+   "en": "\"If she went shopping, she'd leave a note...\"",
    "refs": [
     "MES3.DOC:00055"
    ],
@@ -4723,7 +4723,7 @@
    "id": "m00462",
    "kind": "msg",
    "jp": "「ん？？？　無線だ、誰だろう？！」",
-   "en": "",
+   "en": "\"Hm??? A radio transmission. Who could it be?!\"",
    "refs": [
     "MES3.DOC:00056"
    ],
@@ -4733,7 +4733,7 @@
    "id": "m00463",
    "kind": "msg",
    "jp": "「コンドルシャーク、聞こえますか？！　コブラ、あたし、リズミイよ」",
-   "en": "",
+   "en": "\"Condor Shark, can you hear me?! Cobra, it's me, Rhythmie!\"",
    "refs": [
     "MES3.DOC:00057"
    ],
@@ -4743,7 +4743,7 @@
    "id": "m00464",
    "kind": "msg",
    "jp": "「リズミイ、無線なんかで遊ぶのはよせ」",
-   "en": "",
+   "en": "\"Rhythmie, don't play around with the radio.\"",
    "refs": [
     "MES3.DOC:00058"
    ],
@@ -4753,7 +4753,7 @@
    "id": "m00465",
    "kind": "msg",
    "jp": "「コブラ、あたし、ドラテに捕まっちゃったの！」",
-   "en": "",
+   "en": "\"Cobra, I've been captured by the Dorate!\"",
    "refs": [
     "MES3.DOC:00059"
    ],
@@ -4763,7 +4763,7 @@
    "id": "m00466",
    "kind": "msg",
    "jp": "「何？！」",
-   "en": "",
+   "en": "\"What?!\"",
    "refs": [
     "MES3.DOC:00060"
    ],
@@ -4773,7 +4773,7 @@
    "id": "m00467",
    "kind": "msg",
    "jp": "「お願い！　助け・・・」",
-   "en": "",
+   "en": "\"Please! Help...\"",
    "refs": [
     "MES3.DOC:00061"
    ],
@@ -4783,7 +4783,7 @@
    "id": "m00468",
    "kind": "msg",
    "jp": "「ちくしょう！！　愛を知らないカマキリ野郎め、ゆるさん！　ドラテ戦艦に潜入だ！」",
-   "en": "",
+   "en": "\"Damn it!! You mantis bastards who know nothing of love, I won't forgive you! I'm infiltrating the Dorate battleship!\"",
    "refs": [
     "MES3.DOC:00062"
    ],
@@ -4793,7 +4793,7 @@
    "id": "m00469",
    "kind": "msg",
    "jp": "「Ｏｈ　Ｎｏ！　見つかった！」",
-   "en": "",
+   "en": "\"Oh no! I've been spotted!\"",
    "refs": [
     "MES3.DOC:00063"
    ],
@@ -4803,7 +4803,7 @@
    "id": "m00470",
    "kind": "msg",
    "jp": "「名を語らず、地位語らずは影に生きる者の定めなり・・・」",
-   "en": "",
+   "en": "\"Not speaking one's name, not speaking one's rank, is the fate of one who lives in the shadows...\"",
    "refs": [
     "MES3.DOC:00064"
    ],
@@ -4813,7 +4813,7 @@
    "id": "m00471",
    "kind": "msg",
    "jp": "「何者だ！！」",
-   "en": "",
+   "en": "\"Who goes there!!\"",
    "refs": [
     "MES3.DOC:00065"
    ],
@@ -4823,7 +4823,7 @@
    "id": "m00472",
    "kind": "msg",
    "jp": "「運の無い奴よ・・・よりによってドラテ御庭番きっての強者、この風魔に見つかるとはな・・・」",
-   "en": "",
+   "en": "\"You're an unlucky one... To be found by none other than the strongest of the Dorate's inner guard, me, Fuuma...\"",
    "refs": [
     "MES3.DOC:00066"
    ],
@@ -4833,7 +4833,7 @@
    "id": "m00473",
    "kind": "msg",
    "jp": "「そりゃあああっ」",
-   "en": "",
+   "en": "\"Soryaaaah!\"",
    "refs": [
     "MES3.DOC:00067"
    ],
@@ -4843,7 +4843,7 @@
    "id": "m00474",
    "kind": "msg",
    "jp": "「自分で言うだけあって、なかなかの腕前」",
-   "en": "",
+   "en": "\"You're as skilled as you claim to be.\"",
    "refs": [
     "MES3.DOC:00068"
    ],
@@ -4853,7 +4853,7 @@
    "id": "m00475",
    "kind": "msg",
    "jp": "「ここが、お前の墓場と知れーい！」",
-   "en": "",
+   "en": "\"Know that this is your grave!\"",
    "refs": [
     "MES3.DOC:00069"
    ],
@@ -4863,7 +4863,7 @@
    "id": "m00476",
    "kind": "msg",
    "jp": "「待て！！」",
-   "en": "",
+   "en": "\"Wait!!\"",
    "refs": [
     "MES3.DOC:00070"
    ],
@@ -4873,7 +4873,7 @@
    "id": "m00477",
    "kind": "msg",
    "jp": "「ふん、怖気づいたか・・・」",
-   "en": "",
+   "en": "\"Hmph, lost your nerve...?\"",
    "refs": [
     "MES3.DOC:00071"
    ],
@@ -4883,7 +4883,7 @@
    "id": "m00478",
    "kind": "msg",
    "jp": "「落ちてたぞ、お前のか？」",
-   "en": "",
+   "en": "\"This fell. Is it yours?\"",
    "refs": [
     "MES3.DOC:00072"
    ],
@@ -4893,7 +4893,7 @@
    "id": "m00479",
    "kind": "msg",
    "jp": "「！！！！！　か、返せ！！！」",
-   "en": "",
+   "en": "\"!!!!! G-give it back!!!\"",
    "refs": [
     "MES3.DOC:00073"
    ],
@@ -4903,7 +4903,7 @@
    "id": "m00480",
    "kind": "msg",
    "jp": "「どうやら、影に生きる身でありながら、この女にホの字らしいな。しかも、まだ打ち明けていないようだな」",
-   "en": "",
+   "en": "\"Seems that even though you live in the shadows, you're sweet on this woman. And you haven't confessed your feelings yet, have you?\"",
    "refs": [
     "MES3.DOC:00074"
    ],
@@ -4913,7 +4913,7 @@
    "id": "m00481",
    "kind": "msg",
    "jp": "「そして、その女の名は［お鈴］」",
-   "en": "",
+   "en": "\"And that woman's name is Osuzu.\"",
    "refs": [
     "MES3.DOC:00075"
    ],
@@ -4924,7 +4924,7 @@
    "id": "m00482",
    "kind": "msg",
    "jp": "「なぜだ？！　なぜそこまでわかる？！」",
-   "en": "",
+   "en": "\"Why?! How do you know so much?!\"",
    "refs": [
     "MES3.DOC:00076"
    ],
@@ -4934,7 +4934,7 @@
    "id": "m00483",
    "kind": "msg",
    "jp": "「愛に生きる男、宇宙ジゴロナンバーワン！！コードネーム・レッドコブラとは俺のことさ」",
-   "en": "",
+   "en": "\"A man who lives for love, the number one space gigolo!! Code name: Red Cobra, that's me.\"",
    "refs": [
     "MES3.DOC:00077"
    ],
@@ -4944,7 +4944,7 @@
    "id": "m00484",
    "kind": "msg",
    "jp": "「お、おまえが、あのレッドコブラか！！」",
-   "en": "",
+   "en": "\"S-so you're that Red Cobra!!\"",
    "refs": [
     "MES3.DOC:00078"
    ],
@@ -4954,7 +4954,7 @@
    "id": "m00485",
    "kind": "msg",
    "jp": "「お鈴を愛し、愛されたいと思うなら、その女の好きな花を胸に付け、夜道で告白すると効果的だ」",
-   "en": "",
+   "en": "\"If you love Osuzu and want to be loved in return, wear her favorite flower on your chest and confess on a night road. That's effective.\"",
    "refs": [
     "MES3.DOC:00079"
    ],
@@ -4964,7 +4964,7 @@
    "id": "m00486",
    "kind": "msg",
    "jp": "「告白・・・？」",
-   "en": "",
+   "en": "\"Confess...?\"",
    "refs": [
     "MES3.DOC:00080"
    ],
@@ -4974,7 +4974,7 @@
    "id": "m00487",
    "kind": "msg",
    "jp": "「俺流にいうと最終的にはネジ込んであげることさ」",
-   "en": "",
+   "en": "\"In my style, ultimately it means screwing it in for her.\"",
    "refs": [
     "MES3.DOC:00081"
    ],
@@ -4984,7 +4984,7 @@
    "id": "m00488",
    "kind": "msg",
    "jp": "「まさかチ●コを・・・？」",
-   "en": "",
+   "en": "\"You don't mean your d*ck...?\"",
    "refs": [
     "MES3.DOC:00082"
    ],
@@ -4994,7 +4994,7 @@
    "id": "m00489",
    "kind": "msg",
    "jp": "「普通そういうものさ。チ●コに愛の言葉を乗せてリズミカルにな。お前の気持ちは彼女の心に届くはずさ」",
-   "en": "",
+   "en": "\"That's usually how it goes. Put words of love on your d*ck and go rhythmically. Your feelings should reach her heart.\"",
    "refs": [
     "MES3.DOC:00083"
    ],
@@ -5004,7 +5004,7 @@
    "id": "m00490",
    "kind": "msg",
    "jp": "「い、いきなり押し倒すのか？！」",
-   "en": "",
+   "en": "\"Y-you mean suddenly pushing her down?!\"",
    "refs": [
     "MES3.DOC:00084"
    ],
@@ -5014,7 +5014,7 @@
    "id": "m00491",
    "kind": "msg",
    "jp": "「誰もそんなことは言ってない。きっかけさ、きっかけをつかむんだ。その後もさらにきっかけだ。それが愛誕生のビックバンなんだ風魔」",
-   "en": "",
+   "en": "\"No one said that. It's about the opening, grabbing the opening. And then more openings after that. That's the Big Bang of love's birth, Fuuma.\"",
    "refs": [
     "MES3.DOC:00085"
    ],
@@ -5024,7 +5024,7 @@
    "id": "m00492",
    "kind": "msg",
    "jp": "「しかし、きっかけと言われても・・・」",
-   "en": "",
+   "en": "\"But even if you say opening...\"",
    "refs": [
     "MES3.DOC:00086"
    ],
@@ -5034,7 +5034,7 @@
    "id": "m00493",
    "kind": "msg",
    "jp": "「風魔、その鍛えられたしなやか体でエスコートするんだ」",
-   "en": "",
+   "en": "\"Fuuma, escort her with that trained, supple body of yours.\"",
    "refs": [
     "MES3.DOC:00087"
    ],
@@ -5044,7 +5044,7 @@
    "id": "m00494",
    "kind": "msg",
    "jp": "「彼女が『え？　え？　何？　何んなの？』なんて言ったらこっちものだ。ゆっくりと体重をかけて、愛の言葉をささやくのさ。女は愛の言葉に弱い」",
-   "en": "",
+   "en": "\"If she says 'Huh? Huh? What? What is this?' then you've got her. Slowly apply your weight and whisper words of love. Women are weak to words of love.\"",
    "refs": [
     "MES3.DOC:00088"
    ],
@@ -5054,7 +5054,7 @@
    "id": "m00495",
    "kind": "msg",
    "jp": "「しかし、何回かのデートを重ねた後のほうが・・・」",
-   "en": "",
+   "en": "\"But wouldn't it be better after several dates...?\"",
    "refs": [
     "MES3.DOC:00089"
    ],
@@ -5064,7 +5064,7 @@
    "id": "m00496",
    "kind": "msg",
    "jp": "「聞くけど風魔。ラブレターをお前が書いた。その後どうする？」",
-   "en": "",
+   "en": "\"Let me ask you, Fuuma. You've written a love letter. What do you do next?\"",
    "refs": [
     "MES3.DOC:00090"
    ],
@@ -5074,7 +5074,7 @@
    "id": "m00497",
    "kind": "msg",
    "jp": "「ポストに入れにいく」",
-   "en": "",
+   "en": "\"I go put it in the mailbox.\"",
    "refs": [
     "MES3.DOC:00091"
    ],
@@ -5084,7 +5084,7 @@
    "id": "m00498",
    "kind": "msg",
    "jp": "「フッ、それだよ風魔・・・チ●コを手紙と考えろ。そして、女のアソコはポストだ。だからそれは文通のようなものさ」",
-   "en": "",
+   "en": "\"Heh, that's it, Fuuma... Think of your d*ck as the letter. And a woman's pussy is the mailbox. So it's like correspondence.\"",
    "refs": [
     "MES3.DOC:00092"
    ],
@@ -5094,7 +5094,7 @@
    "id": "m00499",
    "kind": "msg",
    "jp": "「おお、なるほど。チ●コに言葉を乗せて入れるとはこのことか！！」",
-   "en": "",
+   "en": "\"Oh, I see. So that's what it means to put words on your d*ck and insert it!!\"",
    "refs": [
     "MES3.DOC:00093"
    ],
@@ -5104,7 +5104,7 @@
    "id": "m00500",
    "kind": "msg",
    "jp": "「しかし、これだけでは、女の心はつかみきれない。大切なのはアフターケアだ」",
-   "en": "",
+   "en": "\"But with just this, you can't fully capture a woman's heart. What's important is aftercare.\"",
    "refs": [
     "MES3.DOC:00094"
    ],
@@ -5114,7 +5114,7 @@
    "id": "m00501",
    "kind": "msg",
    "jp": "「というと？」",
-   "en": "",
+   "en": "\"Meaning?\"",
    "refs": [
     "MES3.DOC:00095"
    ],
@@ -5124,7 +5124,7 @@
    "id": "m00502",
    "kind": "msg",
    "jp": "「最後まで自分の愛を貫き、理解してもらい、最終的には結婚し、死ぬまで大きな愛で包んで幸せにしてやることさ。ビック・ラブ・ハンド・コーティングだ！」",
-   "en": "",
+   "en": "\"See your love through to the end, get her to understand, eventually marry, and wrap her in great love until death, making her happy. It's Big Love Hand Coating!\"",
    "refs": [
     "MES3.DOC:00096"
    ],
@@ -5134,7 +5134,7 @@
    "id": "m00503",
    "kind": "msg",
    "jp": "「フハハハ！！　そうはうまくはいかん。だがその言葉が影にも光を当ててくれたぞ」",
-   "en": "",
+   "en": "\"Hahaha!! It won't go that smoothly. But those words have shed light even on the shadows.\"",
    "refs": [
     "MES3.DOC:00097"
    ],
@@ -5144,7 +5144,7 @@
    "id": "m00504",
    "kind": "msg",
    "jp": "「心のスキをつき、混乱させ最後には相手の心をもつかむ戦法。まことに見事！！　拙者の負けだ。拙者の後に付いて来るがいい」",
-   "en": "",
+   "en": "\"A tactic that exploits the gaps in one's heart, confuses them, and finally captures their heart. Truly magnificent!! I concede defeat. Follow me.\"",
    "refs": [
     "MES3.DOC:00098"
    ],
@@ -5154,7 +5154,7 @@
    "id": "m00505",
    "kind": "msg",
    "jp": "風魔「つれ去った女はこの近くにいるはずだ」",
-   "en": "",
+   "en": "Fuuma: \"The woman who was taken should be somewhere near here.\"",
    "refs": [
     "MES3.DOC:00099"
    ],
@@ -5164,7 +5164,7 @@
    "id": "m00506",
    "kind": "msg",
    "jp": "「サンキュー風魔」",
-   "en": "",
+   "en": "\"Thank you, Fuuma.\"",
    "refs": [
     "MES3.DOC:00100"
    ],
@@ -5174,7 +5174,7 @@
    "id": "m00507",
    "kind": "msg",
    "jp": "「フハハハ、次に会った時は、お前の命無いと思えよ」",
-   "en": "",
+   "en": "\"Hahaha, next time we meet, know that your life is forfeit.\"",
    "refs": [
     "MES3.DOC:00101"
    ],
@@ -5184,7 +5184,7 @@
    "id": "m00508",
    "kind": "msg",
    "jp": "「きっとこのドアの向こうだな」",
-   "en": "",
+   "en": "\"She must be behind this door.\"",
    "refs": [
     "MES3.DOC:00102"
    ],
@@ -5194,7 +5194,7 @@
    "id": "m00509",
    "kind": "msg",
    "jp": "「コブラ！！」",
-   "en": "",
+   "en": "\"Cobra!!\"",
    "refs": [
     "MES3.DOC:00103"
    ],
@@ -5204,7 +5204,7 @@
    "id": "m00510",
    "kind": "msg",
    "jp": "「これは・・・俺もかなり有名だが君のような美女まで、俺の事を知っているとは光栄だよ」",
-   "en": "",
+   "en": "\"Well... I'm quite famous myself, but it's an honor that even a beauty like you knows about me.\"",
    "refs": [
     "MES3.DOC:00104"
    ],
@@ -5214,7 +5214,7 @@
    "id": "m00511",
    "kind": "msg",
    "jp": "「・・・・・？？？？？・・・・・コブラあたしよ？」",
-   "en": "",
+   "en": "\"...?????... Cobra, it's me?\"",
    "refs": [
     "MES3.DOC:00105"
    ],
@@ -5224,7 +5224,7 @@
    "id": "m00512",
    "kind": "msg",
    "jp": "「うーん、美しい」",
-   "en": "",
+   "en": "\"Mmm, beautiful.\"",
    "refs": [
     "MES3.DOC:00179"
    ],
@@ -5234,7 +5234,7 @@
    "id": "m00513",
    "kind": "msg",
    "jp": "「コブラ、あたし帝王タイガーに愛人にされるところだったの。あいつは欲しい女は、その星を破滅させてでも手に入れる悪魔のような男なの」",
-   "en": "",
+   "en": "\"Cobra, I was almost made the mistress of Emperor Tiger. That man is a devil who will destroy a whole planet to get the woman he wants.\"",
    "refs": [
     "MES3.DOC:00107"
    ],
@@ -5244,7 +5244,7 @@
    "id": "m00514",
    "kind": "msg",
    "jp": "「そして飽きた女は地下牢で一生働かすらしいの」",
-   "en": "",
+   "en": "\"And they say he makes women he's tired of work in the dungeons for life.\"",
    "refs": [
     "MES3.DOC:00108"
    ],
@@ -5254,7 +5254,7 @@
    "id": "m00515",
    "kind": "msg",
    "jp": "「愛を知らぬカマキリ野郎め、ゆるさん！！」",
-   "en": "",
+   "en": "\"You mantis bastard who knows nothing of love, I won't forgive you!!\"",
    "refs": [
     "MES3.DOC:00109"
    ],
@@ -5264,7 +5264,7 @@
    "id": "m00516",
    "kind": "msg",
    "jp": "「恐かったのよコブラ。ウエーーーン」",
-   "en": "",
+   "en": "\"I was so scared, Cobra. Waaaah.\"",
    "refs": [
     "MES3.DOC:00110"
    ],
@@ -5274,7 +5274,7 @@
    "id": "m00517",
    "kind": "msg",
    "jp": "「君、見てごらん」",
-   "en": "",
+   "en": "\"Look, my dear.\"",
    "refs": [
     "MES3.DOC:00111"
    ],
@@ -5284,7 +5284,7 @@
    "id": "m00518",
    "kind": "msg",
    "jp": "「この花は君だけのために咲いているようだ・・・美しい・・・」",
-   "en": "",
+   "en": "\"This flower seems to bloom only for you... Beautiful...\"",
    "refs": [
     "MES3.DOC:00112"
    ],
@@ -5294,7 +5294,7 @@
    "id": "m00519",
    "kind": "msg",
    "jp": "「まあ、ここに花があったなんて・・・」",
-   "en": "",
+   "en": "\"Oh, I had no idea there was a flower here...\"",
    "refs": [
     "MES3.DOC:00113"
    ],
@@ -5304,7 +5304,7 @@
    "id": "m00520",
    "kind": "msg",
    "jp": "「君の名前を聞いてなかったね」",
-   "en": "",
+   "en": "\"I never asked your name.\"",
    "refs": [
     "MES3.DOC:00114"
    ],
@@ -5314,7 +5314,7 @@
    "id": "m00521",
    "kind": "msg",
    "jp": "「え？　あたし、リズミイよ！」",
-   "en": "",
+   "en": "\"Huh? I'm Rhythmie!\"",
    "refs": [
     "MES3.DOC:00115"
    ],
@@ -5324,7 +5324,7 @@
    "id": "m00522",
    "kind": "msg",
    "jp": "「フッ、これは偶然だ。今、俺の船にも君と同じ名前の汚い子供が乗り込んでいるんだ」",
-   "en": "",
+   "en": "\"Heh, what a coincidence. Right now, there's a dirty kid with the same name as you on my ship.\"",
    "refs": [
     "MES3.DOC:00116"
    ],
@@ -5334,7 +5334,7 @@
    "id": "m00523",
    "kind": "msg",
    "jp": "「うーっ、ひどいわ！」",
-   "en": "",
+   "en": "\"Grr, that's awful!\"",
    "refs": [
     "MES3.DOC:00117"
    ],
@@ -5344,7 +5344,7 @@
    "id": "m00524",
    "kind": "msg",
    "jp": "「わかってる。そんな汚い子供と一緒にして欲しくないのだろう？」",
-   "en": "",
+   "en": "\"I know. You don't want to be lumped together with such a dirty kid, right?\"",
    "refs": [
     "MES3.DOC:00118"
    ],
@@ -5354,7 +5354,7 @@
    "id": "m00525",
    "kind": "msg",
    "jp": "「うーっ、うーっ」",
-   "en": "",
+   "en": "\"Grr, grr.\"",
    "refs": [
     "MES3.DOC:00119"
    ],
@@ -5364,7 +5364,7 @@
    "id": "m00526",
    "kind": "msg",
    "jp": "「大丈夫さ、君の方が何千倍も美しい」",
-   "en": "",
+   "en": "\"Don't worry, you're thousands of times more beautiful.\"",
    "refs": [
     "MES3.DOC:00120"
    ],
@@ -5374,7 +5374,7 @@
    "id": "m00527",
    "kind": "msg",
    "jp": "「あのねーっ！！！」",
-   "en": "",
+   "en": "\"Hey!!!\"",
    "refs": [
     "MES3.DOC:00121"
    ],
@@ -5384,7 +5384,7 @@
    "id": "m00528",
    "kind": "msg",
    "jp": "「そうだった。汚い方のリズミイもこの船にいるはずなんだが、君見かけなかったかい？」",
-   "en": "",
+   "en": "\"Oh, right. The dirty Rhythmie should be on this ship too. Have you seen her?\"",
    "refs": [
     "MES3.DOC:00122"
    ],
@@ -5394,7 +5394,7 @@
    "id": "m00529",
    "kind": "msg",
    "jp": "「コブラ！！　帝王タイガーよ！！」",
-   "en": "",
+   "en": "\"Cobra!! It's Emperor Tiger!!\"",
    "refs": [
     "MES3.DOC:00123"
    ],
@@ -5404,7 +5404,7 @@
    "id": "m00530",
    "kind": "msg",
    "jp": "「何？！　こいつがカマキリ野郎か？！」",
-   "en": "",
+   "en": "\"What?! This is the mantis bastard?!\"",
    "refs": [
     "MES3.DOC:00124"
    ],
@@ -5414,7 +5414,7 @@
    "id": "m00531",
    "kind": "msg",
    "jp": "「フッフッフ、コブラ、きさまもこれで終わりだ！！」",
-   "en": "",
+   "en": "\"Hehehe, Cobra, this is the end for you too!!\"",
    "refs": [
     "MES3.DOC:00125"
    ],
@@ -5424,7 +5424,7 @@
    "id": "m00532",
    "kind": "msg",
    "jp": "「どうかな、タイガー」",
-   "en": "",
+   "en": "\"We'll see about that, Tiger.\"",
    "refs": [
     "MES3.DOC:00126"
    ],
@@ -5434,7 +5434,7 @@
    "id": "m00533",
    "kind": "msg",
    "jp": "「俺のこの剣をかわした奴はまだいない・・・これからもな！！」",
-   "en": "",
+   "en": "\"No one has ever dodged this sword of mine... And no one ever will!!\"",
    "refs": [
     "MES3.DOC:00127"
    ],
@@ -5444,7 +5444,7 @@
    "id": "m00534",
    "kind": "msg",
    "jp": "「ど、どーするの、コブラ！！」",
-   "en": "",
+   "en": "\"W-what are you going to do, Cobra!!\"",
    "refs": [
     "MES3.DOC:00128"
    ],
@@ -5454,7 +5454,7 @@
    "id": "m00535",
    "kind": "msg",
    "jp": "「フフッ、リズミイ、慌てるな。奥の手があるのさ・・・タイガー、その剣を本当にかわせないか、試してみろ！」",
-   "en": "",
+   "en": "\"Heheh, Rhythmie, don't panic. I have a trump card... Tiger, try and see if you really can't dodge that sword!\"",
    "refs": [
     "MES3.DOC:00129"
    ],
@@ -5464,7 +5464,7 @@
    "id": "m00536",
    "kind": "msg",
    "jp": "「フッフッフ、死に急ぐとはいい度胸だ。受けてみるがよいわ！！！」",
-   "en": "",
+   "en": "\"Hehehe, rushing to your death, you've got guts. Then receive this!!!\"",
    "refs": [
     "MES3.DOC:00130"
    ],
@@ -5474,7 +5474,7 @@
    "id": "m00537",
    "kind": "msg",
    "jp": "「そりゃあああああ！！！」",
-   "en": "",
+   "en": "\"Soryaaaaaaah!!!\"",
    "refs": [
     "MES3.DOC:00131"
    ],
@@ -5484,7 +5484,7 @@
    "id": "m00538",
    "kind": "msg",
    "jp": "「Ｉ　ＬＯＶＥ　ＹＯＵ！！！　カーマーキーリー！！！　バリアー！！」",
-   "en": "",
+   "en": "\"I LOVE YOU!!! Karma Chameleon!!! Barrier!!\"",
    "refs": [
     "MES3.DOC:00132",
     "MES3.DOC:00155"
@@ -5495,7 +5495,7 @@
    "id": "m00539",
    "kind": "msg",
    "jp": "「うおおおおおおっ！！！　　しまったあ！！！」",
-   "en": "",
+   "en": "\"Uoooooooh!!! Dammit!!!\"",
    "refs": [
     "MES3.DOC:00133"
    ],
@@ -5505,7 +5505,7 @@
    "id": "m00540",
    "kind": "msg",
    "jp": "「やったわコブラ！」",
-   "en": "",
+   "en": "\"You did it, Cobra!\"",
    "refs": [
     "MES3.DOC:00134"
    ],
@@ -5515,7 +5515,7 @@
    "id": "m00541",
    "kind": "msg",
    "jp": "「フフ、これが俺の実力さ・・・。君、一緒にここを出よう・・・」",
-   "en": "",
+   "en": "\"Hehe, that's my true power... Come, let's leave this place together...\"",
    "refs": [
     "MES3.DOC:00135"
    ],
@@ -5525,7 +5525,7 @@
    "id": "m00542",
    "kind": "msg",
    "jp": "「・・・・・あの」",
-   "en": "",
+   "en": "\"...Um.\"",
    "refs": [
     "MES3.DOC:00136"
    ],
@@ -5535,7 +5535,7 @@
    "id": "m00543",
    "kind": "msg",
    "jp": "「何だい？　ハニー」",
-   "en": "",
+   "en": "\"What is it, honey?\"",
    "refs": [
     "MES3.DOC:00137"
    ],
@@ -5545,7 +5545,7 @@
    "id": "m00544",
    "kind": "msg",
    "jp": "「もう一人のリズミイさんはどうするの？」",
-   "en": "",
+   "en": "\"What about the other Rhythmie?\"",
    "refs": [
     "MES3.DOC:00138"
    ],
@@ -5555,7 +5555,7 @@
    "id": "m00545",
    "kind": "msg",
    "jp": "「見つからないからおいて行くことにするよ」",
-   "en": "",
+   "en": "\"Since we can't find her, I'll leave her behind.\"",
    "refs": [
     "MES3.DOC:00139"
    ],
@@ -5565,7 +5565,7 @@
    "id": "m00546",
    "kind": "msg",
    "jp": "「うーっ、もー知らない！！」",
-   "en": "",
+   "en": "\"Grr, forget it!!\"",
    "refs": [
     "MES3.DOC:00140"
    ],
@@ -5575,7 +5575,7 @@
    "id": "m00547",
    "kind": "msg",
    "jp": "「リズミイ、そんなに恥ずかしがらなくてもいいのに・・・」",
-   "en": "",
+   "en": "\"Rhythmie, you don't have to be so embarrassed...\"",
    "refs": [
     "MES3.DOC:00141"
    ],
@@ -5585,7 +5585,7 @@
    "id": "m00548",
    "kind": "msg",
    "jp": "「・・・フフ、いい女だった・・・」",
-   "en": "",
+   "en": "\"...Hehe, she was a fine woman...\"",
    "refs": [
     "MES3.DOC:00142"
    ],
@@ -5595,7 +5595,7 @@
    "id": "m00549",
    "kind": "msg",
    "jp": "「・・・リズミイ、いい名前だ・・・」",
-   "en": "",
+   "en": "\"...Rhythmie, a nice name...\"",
    "refs": [
     "MES3.DOC:00143"
    ],
@@ -5605,7 +5605,7 @@
    "id": "m00550",
    "kind": "msg",
    "jp": "「えっ？　あたし？　そうかしらー？！」",
-   "en": "",
+   "en": "\"Huh? Me? You think so?!\"",
    "refs": [
     "MES3.DOC:00144"
    ],
@@ -5615,7 +5615,7 @@
    "id": "m00551",
    "kind": "msg",
    "jp": "「ん？　帰ってたのか？　俺はこれから、この前出会った美しい女性に捧げる歌の歌詞を作るんだ。外に出て行ってくれないか、リズ」",
-   "en": "",
+   "en": "\"Hm? You're back? I'm about to write lyrics for a song dedicated to that beautiful woman I met the other day. Could you go outside, Riz?\"",
    "refs": [
     "MES3.DOC:00145"
    ],
@@ -5625,7 +5625,7 @@
    "id": "m00552",
    "kind": "msg",
    "jp": "「リズってなによ」",
-   "en": "",
+   "en": "\"What's with 'Riz'?\"",
    "refs": [
     "MES3.DOC:00146"
    ],
@@ -5635,7 +5635,7 @@
    "id": "m00553",
    "kind": "msg",
    "jp": "「ちょっと、まぎらわしいから今日からリズと呼ぶことにする」",
-   "en": "",
+   "en": "\"Well, it's confusing, so from today I'll call you Riz.\"",
    "refs": [
     "MES3.DOC:00147"
    ],
@@ -5645,7 +5645,7 @@
    "id": "m00554",
    "kind": "msg",
    "jp": "「もういいわよ！！！」",
-   "en": "",
+   "en": "\"That's it!!!\"",
    "refs": [
     "MES3.DOC:00148"
    ],
@@ -5655,7 +5655,7 @@
    "id": "m00555",
    "kind": "msg",
    "jp": "「ドラテ戦艦のあたしのこと言ってるのね。愛がなんのかんの言っても、結局、外見にこだわってるんじゃないの！　アタマにくるわ！」",
-   "en": "",
+   "en": "\"You're talking about me on the Dorate battleship. For all your talk about love, in the end you're just hung up on looks! It makes me so mad!\"",
    "refs": [
     "MES3.DOC:00149"
    ],
@@ -5665,7 +5665,7 @@
    "id": "m00556",
    "kind": "msg",
    "jp": "「よーし、カマキリを入れてやる！」",
-   "en": "",
+   "en": "\"Alright, I'll let the mantis in!\"",
    "refs": [
     "MES3.DOC:00150"
    ],
@@ -5675,7 +5675,7 @@
    "id": "m00557",
    "kind": "msg",
    "jp": "「コブラ？　たいへんよー、カマキリみたいのが、そっちに行ったわ」",
-   "en": "",
+   "en": "\"Cobra? Big trouble, something like a mantis went your way.\"",
    "refs": [
     "MES3.DOC:00151"
    ],
@@ -5685,7 +5685,7 @@
    "id": "m00558",
    "kind": "msg",
    "jp": "「フフフ、古池やかわず飛び込む水の音とは、お前のことだカマキリ！！」",
-   "en": "",
+   "en": "\"Hehehe, 'the old pond, a frog jumps in, the sound of water'—that's you, mantis!!\"",
    "refs": [
     "MES3.DOC:00152"
    ],
@@ -5695,7 +5695,7 @@
    "id": "m00559",
    "kind": "msg",
    "jp": "「なんだか、余裕ね、コブラ」",
-   "en": "",
+   "en": "\"You seem pretty relaxed, Cobra.\"",
    "refs": [
     "MES3.DOC:00153"
    ],
@@ -5705,7 +5705,7 @@
    "id": "m00560",
    "kind": "msg",
    "jp": "「リズ、君は知らないだろうが、これが俺とある女性の愛絆、カマキリバリアさ」",
-   "en": "",
+   "en": "\"Riz, you probably don't know, but this is the bond of love between me and a certain woman, the Mantis Barrier.\"",
    "refs": [
     "MES3.DOC:00154"
    ],
@@ -5715,7 +5715,7 @@
    "id": "m00561",
    "kind": "msg",
    "jp": "「そっちに行ったわよ、コブラ。いいの？」",
-   "en": "",
+   "en": "\"It went that way, Cobra. Is that okay?\"",
    "refs": [
     "MES3.DOC:00156"
    ],
@@ -5725,7 +5725,7 @@
    "id": "m00562",
    "kind": "msg",
    "jp": "「フフ、このバリアには触るなよ、リズ。かなりの電流が流れているからな」",
-   "en": "",
+   "en": "\"Hehe, don't touch this barrier, Riz. A considerable electric current runs through it.\"",
    "refs": [
     "MES3.DOC:00157"
    ],
@@ -5735,7 +5735,7 @@
    "id": "m00563",
    "kind": "msg",
    "jp": "「あー、足の方よ、コブラ」",
-   "en": "",
+   "en": "\"Ah, it's heading for your feet, Cobra.\"",
    "refs": [
     "MES3.DOC:00158"
    ],
@@ -5745,7 +5745,7 @@
    "id": "m00564",
    "kind": "msg",
    "jp": "「心配無用さ、リズ。俺の足元はカマキリの墓場さ」",
-   "en": "",
+   "en": "\"No need to worry, Riz. My feet are a mantis graveyard.\"",
    "refs": [
     "MES3.DOC:00159"
    ],
@@ -5755,7 +5755,7 @@
    "id": "m00565",
    "kind": "msg",
    "jp": "「あああっ！　隙間から入っちゃった！！」",
-   "en": "",
+   "en": "\"Aaaah! It got in through the gap!!\"",
    "refs": [
     "MES3.DOC:00160"
    ],
@@ -5765,7 +5765,7 @@
    "id": "m00566",
    "kind": "msg",
    "jp": "「Ｎｏ！！　きさま何故死なない？！　普通のカマキリではないのか！！」",
-   "en": "",
+   "en": "\"No!! Why won't you die?! Are you not a normal mantis?!\"",
    "refs": [
     "MES3.DOC:00161"
    ],
@@ -5775,7 +5775,7 @@
    "id": "m00567",
    "kind": "msg",
    "jp": "「普通のカマキリよ、コブラ」",
-   "en": "",
+   "en": "\"It's a normal mantis, Cobra.\"",
    "refs": [
     "MES3.DOC:00162"
    ],
@@ -5785,7 +5785,7 @@
    "id": "m00568",
    "kind": "msg",
    "jp": "「フッ、潜入成功！！　リズミイはどこに・・・・・」",
-   "en": "",
+   "en": "\"Heh, infiltration successful!! Now, where's Rhythmie...\"",
    "refs": [
     "MES3.DOC:00180"
    ],
@@ -5795,7 +5795,7 @@
    "id": "m00569",
    "kind": "msg",
    "jp": "「フッ、やはり普通のカマキリではないぞ、リズ！　コイツはカマキリのくせに鳴くぞ！！」",
-   "en": "",
+   "en": "\"Heh, as I thought, this isn't a normal mantis, Riz! This thing is a mantis, yet it's making noise!!\"",
    "refs": [
     "MES3.DOC:00163"
    ],
@@ -5805,7 +5805,7 @@
    "id": "m00570",
    "kind": "msg",
    "jp": "「鳴き声ではなくて、あんたが感電してる音よ！」",
-   "en": "",
+   "en": "\"That's not a cry, it's the sound of you getting electrocuted!\"",
    "refs": [
     "MES3.DOC:00164"
    ],
@@ -5815,7 +5815,7 @@
    "id": "m00571",
    "kind": "msg",
    "jp": "「人は１人生まれ１人死にゆく・・・・・」",
-   "en": "",
+   "en": "\"A person is born alone and dies alone...\"",
    "refs": [
     "MES3.DOC:00165"
    ],
@@ -5825,7 +5825,7 @@
    "id": "m00572",
    "kind": "msg",
    "jp": "「わかったわよ、助けてあげるわ」",
-   "en": "",
+   "en": "\"Fine, I'll save you.\"",
    "refs": [
     "MES3.DOC:00166"
    ],
@@ -5835,7 +5835,7 @@
    "id": "m00573",
    "kind": "msg",
    "jp": "「君も、やっと大人の心が分かるようになったな」",
-   "en": "",
+   "en": "\"You've finally come to understand the heart of an adult.\"",
    "refs": [
     "MES3.DOC:00167"
    ],
@@ -5845,7 +5845,7 @@
    "id": "m00574",
    "kind": "msg",
    "jp": "「助けるかわりに、あたしのために歌を作ってくれる？」",
-   "en": "",
+   "en": "\"In exchange for saving you, will you write a song for me?\"",
    "refs": [
     "MES3.DOC:00168"
    ],
@@ -5855,7 +5855,7 @@
    "id": "m00575",
    "kind": "msg",
    "jp": "「ＯＫリズ、君のハートがしびれるような歌を作ってあげよう」",
-   "en": "",
+   "en": "\"OK, Riz. I'll write a song that'll make your heart tingle.\"",
    "refs": [
     "MES3.DOC:00169"
    ],
@@ -5865,7 +5865,7 @@
    "id": "m00576",
    "kind": "msg",
    "jp": "「うれしー！！　ありがとう、コブラ！！」",
-   "en": "",
+   "en": "\"I'm so happy!! Thank you, Cobra!!\"",
    "refs": [
     "MES3.DOC:00170"
    ],
@@ -5875,7 +5875,7 @@
    "id": "m00577",
    "kind": "msg",
    "jp": "　『ビックラブ　アンド　ビックバリアー』\n　　　　作詞・作曲　レッドコブラ",
-   "en": "",
+   "en": "\"Big Love and Big Barrier\"\nLyrics and music by Red Cobra",
    "refs": [
     "MES3.DOC:00171"
    ],
@@ -5885,7 +5885,7 @@
    "id": "m00578",
    "kind": "msg",
    "jp": "アイラブ　アイラブ　アイラブ　リズミイ",
-   "en": "",
+   "en": "I love, I love, I love Rhythmie",
    "refs": [
     "MES3.DOC:00172"
    ],
@@ -5895,7 +5895,7 @@
    "id": "m00579",
    "kind": "msg",
    "jp": "言葉じゃないのさ　セクシー",
-   "en": "",
+   "en": "It's not words, it's sexy",
    "refs": [
     "MES3.DOC:00173"
    ],
@@ -5905,7 +5905,7 @@
    "id": "m00580",
    "kind": "msg",
    "jp": "ハートが鳴るのさ　サンダー",
-   "en": "",
+   "en": "My heart thunders",
    "refs": [
     "MES3.DOC:00174"
    ],
@@ -5915,7 +5915,7 @@
    "id": "m00581",
    "kind": "msg",
    "jp": "出かけよう　グリーンの奴がいない大空へ",
-   "en": "",
+   "en": "Let's go out to the wide sky where the green one isn't",
    "refs": [
     "MES3.DOC:00175"
    ],
@@ -5925,7 +5925,7 @@
    "id": "m00582",
    "kind": "msg",
    "jp": "探そう　グリーンの奴に負けない　ビックラブ",
-   "en": "",
+   "en": "Let's search for a big love that won't lose to the green one",
    "refs": [
     "MES3.DOC:00176"
    ],
@@ -5935,7 +5935,7 @@
    "id": "m00583",
    "kind": "msg",
    "jp": "Ｏｈ！　Ｏｈ！　Ｏｈ！　君にあげるよ",
-   "en": "",
+   "en": "Oh! Oh! Oh! I'll give it to you",
    "refs": [
     "MES3.DOC:00177"
    ],
@@ -5945,7 +5945,7 @@
    "id": "m00584",
    "kind": "msg",
    "jp": "本当のアイラブユー",
-   "en": "",
+   "en": "A true I love you",
    "refs": [
     "MES3.DOC:00178"
    ],
@@ -5955,7 +5955,7 @@
    "id": "m00585",
    "kind": "msg",
    "jp": "『　　捕らわれたリズミイ　　』の巻\n　\nドラテ第７艦隊の急襲！！　迎え撃つコブラそしてリズミイの運命は？！　捕らわれたリズミイを追ってドラテ艦に潜入するコブラ。そこでまちうけていた運命とは？！",
-   "en": "",
+   "en": "Chapter: \"The Captured Rhythmie\"\n\nA surprise attack by the Dorate Seventh Fleet!! Cobra fights back, but what will be Rhythmie's fate?! Cobra infiltrates the Dorate ship to rescue the captured Rhythmie. What fate awaited him there?!",
    "refs": [
     "MES3.DOC:00200"
    ],
@@ -5965,7 +5965,7 @@
    "id": "m00586",
    "kind": "msg",
    "jp": "「フッ、飛んで火にいる入る夏の虫とはこのことだよ。リズミイ」",
-   "en": "",
+   "en": "\"Heh, they're like moths flying into the flame. Rhythmie.\"",
    "refs": [
     "MES4.DOC:00052"
    ],
@@ -5975,7 +5975,7 @@
    "id": "e00001",
    "kind": "exe",
    "jp": "　ＳＴＡＧＥ　２　",
-   "en": "",
+   "en": "STAGE 2",
    "refs": [
     "exe:04602"
    ],
@@ -5986,7 +5986,7 @@
    "id": "e00002",
    "kind": "exe",
    "jp": "　ＳＴＡＧＥ　３　",
-   "en": "",
+   "en": "STAGE 3",
    "refs": [
     "exe:04615"
    ],
@@ -5997,7 +5997,7 @@
    "id": "e00003",
    "kind": "exe",
    "jp": "　ＳＴＡＧＥ　４　",
-   "en": "",
+   "en": "STAGE 4",
    "refs": [
     "exe:04628"
    ],
@@ -6008,7 +6008,7 @@
    "id": "e00004",
    "kind": "exe",
    "jp": "　ＳＴＡＧＥ　５　",
-   "en": "",
+   "en": "STAGE 5",
    "refs": [
     "exe:0463b"
    ],
@@ -6019,7 +6019,7 @@
    "id": "e00005",
    "kind": "exe",
    "jp": "【コブラ】　　　　　",
-   "en": "",
+   "en": "[Cobra]",
    "refs": [
     "exe:0483c"
    ],
@@ -6030,7 +6030,7 @@
    "id": "e00006",
    "kind": "exe",
    "jp": "【ミスターＭ】　　　",
-   "en": "",
+   "en": "[Mr. M]",
    "refs": [
     "exe:04851"
    ],
@@ -6041,7 +6041,7 @@
    "id": "e00007",
    "kind": "exe",
    "jp": "【女】　　　　　　　",
-   "en": "",
+   "en": "[Woman]",
    "refs": [
     "exe:04866"
    ],
@@ -6052,7 +6052,7 @@
    "id": "e00008",
    "kind": "exe",
    "jp": "【リズミイ】　　　　",
-   "en": "",
+   "en": "[Rhythmie]",
    "refs": [
     "exe:0487b"
    ],
@@ -6063,7 +6063,7 @@
    "id": "e00009",
    "kind": "exe",
    "jp": "【サムソン】　　　　",
-   "en": "",
+   "en": "[Samson]",
    "refs": [
     "exe:04890"
    ],
@@ -6074,7 +6074,7 @@
    "id": "e00010",
    "kind": "exe",
    "jp": "【クリーム】　　　　",
-   "en": "",
+   "en": "[Cream]",
    "refs": [
     "exe:048a5"
    ],
@@ -6085,7 +6085,7 @@
    "id": "e00011",
    "kind": "exe",
    "jp": "【ポッキー】　　　　",
-   "en": "",
+   "en": "[Pocky]",
    "refs": [
     "exe:048ba"
    ],
@@ -6096,7 +6096,7 @@
    "id": "e00012",
    "kind": "exe",
    "jp": "【カマキリ君】　　　",
-   "en": "",
+   "en": "[Mantis-kun]",
    "refs": [
     "exe:048cf"
    ],
@@ -6107,7 +6107,7 @@
    "id": "e00013",
    "kind": "exe",
    "jp": "【マングース】　　　",
-   "en": "",
+   "en": "[Mongoose]",
    "refs": [
     "exe:048e4"
    ],
@@ -6118,7 +6118,7 @@
    "id": "e00014",
    "kind": "exe",
    "jp": "【春鈴】　　　　　　",
-   "en": "",
+   "en": "[Chunrin]",
    "refs": [
     "exe:048f9"
    ],
@@ -6129,7 +6129,7 @@
    "id": "e00015",
    "kind": "exe",
    "jp": "【リーニャ】　　　　",
-   "en": "",
+   "en": "[Rinya]",
    "refs": [
     "exe:0490e"
    ],
@@ -6140,7 +6140,7 @@
    "id": "e00016",
    "kind": "exe",
    "jp": "【メロディ】　　　　",
-   "en": "",
+   "en": "[Melody]",
    "refs": [
     "exe:04923"
    ],
@@ -6151,7 +6151,7 @@
    "id": "e00017",
    "kind": "exe",
    "jp": "【ファックマン】　　",
-   "en": "",
+   "en": "[Fuckman]",
    "refs": [
     "exe:04938"
    ],
@@ -6162,7 +6162,7 @@
    "id": "e00018",
    "kind": "exe",
    "jp": "【キャスリン】　　　",
-   "en": "",
+   "en": "[Catherine]",
    "refs": [
     "exe:0494d"
    ],
@@ -6173,7 +6173,7 @@
    "id": "e00019",
    "kind": "exe",
    "jp": "【怪しげな男】　　　",
-   "en": "",
+   "en": "[Suspicious Man]",
    "refs": [
     "exe:04962"
    ],
@@ -6184,7 +6184,7 @@
    "id": "e00020",
    "kind": "exe",
    "jp": "【風魔】　　　　　　",
-   "en": "",
+   "en": "[Fuuma]",
    "refs": [
     "exe:04977"
    ],
@@ -6195,7 +6195,7 @@
    "id": "e00021",
    "kind": "exe",
    "jp": "【タイガー】　　　　",
-   "en": "",
+   "en": "[Tiger]",
    "refs": [
     "exe:0498c"
    ],
@@ -6206,7 +6206,7 @@
    "id": "e00022",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＡを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk A into drive <2>\nand press the left button.",
    "refs": [
     "exe:04bef"
    ],
@@ -6217,7 +6217,7 @@
    "id": "e00023",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＢを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk B into drive <2>\nand press the left button.",
    "refs": [
     "exe:04c42"
    ],
@@ -6228,7 +6228,7 @@
    "id": "e00024",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＣを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk C into drive <2>\nand press the left button.",
    "refs": [
     "exe:04c95"
    ],
@@ -6239,7 +6239,7 @@
    "id": "e00025",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＤを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk D into drive <2>\nand press the left button.",
    "refs": [
     "exe:04ce8"
    ],
@@ -6250,7 +6250,7 @@
    "id": "e00026",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＥを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk E into drive <2>\nand press the left button.",
    "refs": [
     "exe:04d3b"
    ],
@@ -6261,7 +6261,7 @@
    "id": "e00027",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＦを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk F into drive <2>\nand press the left button.",
    "refs": [
     "exe:04d8e"
    ],
@@ -6272,7 +6272,7 @@
    "id": "e00028",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＧを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk G into drive <2>\nand press the left button.",
    "refs": [
     "exe:04de1"
    ],
@@ -6283,7 +6283,7 @@
    "id": "e00029",
    "kind": "exe",
    "jp": "ドライブ＜２＞に、　　　　\nディスクＨを入れて、　　　\n左ボタンを押して下さい。　",
-   "en": "",
+   "en": "Insert Disk H into drive <2>\nand press the left button.",
    "refs": [
     "exe:04e34"
    ],
@@ -6294,7 +6294,7 @@
    "id": "e00030",
    "kind": "exe",
    "jp": "ＥＡＳＹです。　",
-   "en": "",
+   "en": "It's EASY.",
    "refs": [
     "exe:073f2"
    ],
@@ -6305,7 +6305,7 @@
    "id": "e00031",
    "kind": "exe",
    "jp": "ＮＯＲＭＡＬです",
-   "en": "",
+   "en": "It's NORMAL.",
    "refs": [
     "exe:07403"
    ],
@@ -6316,7 +6316,7 @@
    "id": "e00032",
    "kind": "exe",
    "jp": "ＨＡＲＤです。　",
-   "en": "",
+   "en": "It's HARD.",
    "refs": [
     "exe:07414"
    ],
@@ -6327,7 +6327,7 @@
    "id": "e00033",
    "kind": "exe",
    "jp": "コンティニュー　：　左ボタン",
-   "en": "",
+   "en": "Continue: Left button",
    "refs": [
     "exe:0c575"
    ],
@@ -6338,7 +6338,7 @@
    "id": "e00034",
    "kind": "exe",
    "jp": "　終　　　了　　：　右ボタン",
-   "en": "",
+   "en": "Quit: Right button",
    "refs": [
     "exe:0c592"
    ],
@@ -6349,7 +6349,7 @@
    "id": "e00035",
    "kind": "exe",
    "jp": "　コンティニューできません　",
-   "en": "",
+   "en": "Cannot continue.",
    "refs": [
     "exe:0c5af"
    ],
@@ -6360,7 +6360,7 @@
    "id": "e00036",
    "kind": "exe",
    "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
-   "en": "",
+   "en": "Not enough memory. Please remove device drivers or TSRs and restart.",
    "refs": [
     "exe:138ec"
    ],
@@ -6371,7 +6371,7 @@
    "id": "e00037",
    "kind": "exe",
    "jp": "ＥＭＭデバイスドライバを外して起動して下さい。\n",
-   "en": "",
+   "en": "Please remove the EMM device driver and restart.",
    "refs": [
     "exe:13958"
    ],
@@ -6382,7 +6382,7 @@
    "id": "e00038",
    "kind": "exe",
    "jp": "が搭載されていない機種では動作しません。\n",
-   "en": "",
+   "en": "Does not operate on models without this installed.",
    "refs": [
     "exe:1398e"
    ],
@@ -6393,7 +6393,7 @@
    "id": "e00039",
    "kind": "exe",
    "jp": "右ボタンで上にスクロール、左ボタンで下スクロールです。\n左右ボタンを同時に押すと終了します。",
-   "en": "",
+   "en": "Right button scrolls up, left button scrolls down.\nPress both buttons simultaneously to exit.",
    "refs": [
     "exe:139b9"
    ],
@@ -6404,7 +6404,7 @@
    "id": "e00040",
    "kind": "exe",
    "jp": "左ボタンを押すと【次を表示】します。\n右ボタンを押すと【終　　了】します。",
-   "en": "",
+   "en": "Press left button for [Next].\nPress right button to [Quit].",
    "refs": [
     "exe:13a16"
    ],
@@ -6415,7 +6415,7 @@
    "id": "e00041",
    "kind": "exe",
    "jp": "マウスを動かして【淫】のポイントを上げて下さい。\n右ボタンで上にスクロール、左ボタンで下スクロールします。",
-   "en": "",
+   "en": "Move the mouse to raise the [Lewd] points.\nRight button scrolls up, left button scrolls down.",
    "refs": [
     "exe:13a61"
    ],
@@ -6426,7 +6426,7 @@
    "id": "e00042",
    "kind": "exe",
    "jp": "ライトプロテクト状態です。",
-   "en": "",
+   "en": "The disk is write-protected.",
    "refs": [
     "exe:1b725"
    ],
@@ -6437,7 +6437,7 @@
    "id": "e00043",
    "kind": "exe",
    "jp": "ドライブが存在しません。",
-   "en": "",
+   "en": "The drive does not exist.",
    "refs": [
     "exe:1b740"
    ],
@@ -6448,7 +6448,7 @@
    "id": "e00044",
    "kind": "exe",
    "jp": "ドライブの準備ができていません。",
-   "en": "",
+   "en": "The drive is not ready.",
    "refs": [
     "exe:1b759"
    ],
@@ -6459,7 +6459,7 @@
    "id": "e00045",
    "kind": "exe",
    "jp": "存在しないコマンドです。",
-   "en": "",
+   "en": "This command does not exist.",
    "refs": [
     "exe:1b77a"
    ],
@@ -6470,7 +6470,7 @@
    "id": "e00046",
    "kind": "exe",
    "jp": "データのＣＲＣエラーです。",
-   "en": "",
+   "en": "A data CRC error occurred.",
    "refs": [
     "exe:1b793"
    ],
@@ -6481,7 +6481,7 @@
    "id": "e00047",
    "kind": "exe",
    "jp": "エラー　０５ｈ",
-   "en": "",
+   "en": "Error 05h",
    "refs": [
     "exe:1b7ae"
    ],
@@ -6492,7 +6492,7 @@
    "id": "e00048",
    "kind": "exe",
    "jp": "シークエラーです。",
-   "en": "",
+   "en": "A seek error occurred.",
    "refs": [
     "exe:1b7bd"
    ],
@@ -6503,7 +6503,7 @@
    "id": "e00049",
    "kind": "exe",
    "jp": "存在しないメディアタイプです。",
-   "en": "",
+   "en": "This media type does not exist.",
    "refs": [
     "exe:1b7d0"
    ],
@@ -6514,7 +6514,7 @@
    "id": "e00050",
    "kind": "exe",
    "jp": "セクタが見つかりません。",
-   "en": "",
+   "en": "Sector not found.",
    "refs": [
     "exe:1b7ef"
    ],
@@ -6525,7 +6525,7 @@
    "id": "e00051",
    "kind": "exe",
    "jp": "プリンタの用紙切れです。",
-   "en": "",
+   "en": "The printer is out of paper.",
    "refs": [
     "exe:1b808"
    ],
@@ -6536,7 +6536,7 @@
    "id": "e00052",
    "kind": "exe",
    "jp": "書き込み不良です。",
-   "en": "",
+   "en": "Write error.",
    "refs": [
     "exe:1b821"
    ],
@@ -6547,7 +6547,7 @@
    "id": "e00053",
    "kind": "exe",
    "jp": "読み込み不良です。",
-   "en": "",
+   "en": "Read error.",
    "refs": [
     "exe:1b834"
    ],
@@ -6558,7 +6558,7 @@
    "id": "e00054",
    "kind": "exe",
    "jp": "ディスク不良です。",
-   "en": "",
+   "en": "Bad disk.",
    "refs": [
     "exe:1b847"
    ],
@@ -6569,7 +6569,7 @@
    "id": "e00055",
    "kind": "exe",
    "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
-   "en": "",
+   "en": "Abort <A>  Retry <R>",
    "refs": [
     "exe:1b85a"
    ],
@@ -6580,7 +6580,7 @@
    "id": "e00056",
    "kind": "exe",
    "jp": "スペースキーでもう一度やります。",
-   "en": "",
+   "en": "Press the space key to try again.",
    "refs": [
     "exe:1b879"
    ],
@@ -6591,7 +6591,7 @@
    "id": "e00057",
    "kind": "exe",
    "jp": "ディスクを当社までご返送下さい。",
-   "en": "",
+   "en": "Please return the disk to our company.",
    "refs": [
     "exe:1b89a"
    ],

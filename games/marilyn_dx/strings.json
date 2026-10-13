@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "%003：じゃあ、%000……そこの曲がり角でお別れね。",
-   "en": "",
+   "en": "%003: Well then, %000... this is where we say goodbye, at that corner.",
    "refs": [
     "S001.OVL:6a"
    ]
@@ -15,7 +15,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "「ポカッ」",
-   "en": "",
+   "en": "*bonk*",
    "refs": [
     "S001.OVL:9c",
     "S001.OVL:e3"
@@ -25,7 +25,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "%003：いったぁ～～い……わたし、%000に何かわるいことした？",
-   "en": "",
+   "en": "%003: Owww... that hurt! Did I do something bad to you, %000?",
    "refs": [
     "S001.OVL:a7"
    ]
@@ -34,7 +34,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "%003：グスッ、%000のいじわる……そんなことばっかりすると、めぐみ泣いちゃうんだから……グスッ……。",
-   "en": "",
+   "en": "%003: *sniffle* You're so mean, %000... If you keep doing things like that, Megumi's gonna cry... *sniffle*...",
    "refs": [
     "S001.OVL:ee"
    ]
@@ -43,7 +43,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "%000：あ……ゴメンゴメン、そんなつもりじゃなかったんだ。今、頭の上にハエがとまってたもんだから……。",
-   "en": "",
+   "en": "%000: Ah... sorry, sorry, that's not what I meant to do. There was a fly on your head just now...",
    "refs": [
     "S001.OVL:151"
    ]
@@ -52,7 +52,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "%003：……ほんと？",
-   "en": "",
+   "en": "%003: ...Really?",
    "refs": [
     "S001.OVL:1b6"
    ]
@@ -61,7 +61,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "%000：ホント、ホント。",
-   "en": "",
+   "en": "%000: Really, really.",
    "refs": [
     "S001.OVL:1c9"
    ]
@@ -70,7 +70,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "（もうやめよう。あんまりやると、ホントに泣いちゃうぞ。）",
-   "en": "",
+   "en": "(Better stop now. If I keep this up, she really will cry.)",
    "refs": [
     "S001.OVL:1e1"
    ]
@@ -79,7 +79,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "（片瀬めぐみ……ちょっと子供っぽいけど、これでも高校二年生。俺のガールフレンドだ。）",
-   "en": "",
+   "en": "(Katase Megumi... a bit childish, but she's still a second-year high schooler. And she's my girlfriend.)",
    "refs": [
     "S001.OVL:21b"
    ]
@@ -88,7 +88,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "%003：どうしたの？　わたしの顔、なんかついてるかなァ？",
-   "en": "",
+   "en": "%003: What's the matter? Is there something on my face?",
    "refs": [
     "S001.OVL:270"
    ]
@@ -97,7 +97,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "（う～～ん、いつ見てもかわいいなぁ。やっぱ、こんなコと付きあってる俺って、幸せ者かもな。）",
-   "en": "",
+   "en": "(Mmm... she's cute no matter when I look at her. I guess being with a girl like her makes me a lucky guy.)",
    "refs": [
     "S001.OVL:2a8"
    ]
@@ -106,7 +106,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "%003：……なんだか、%000にそんなに見つめられると恥ずかしいな。",
-   "en": "",
+   "en": "%003: ...When you stare at me like that, %000, it makes me embarrassed.",
    "refs": [
     "S001.OVL:303"
    ]
@@ -115,7 +115,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "%003：わたし……この場所ってきらいだな。だって、いつもここで%000とさよならするんだもん。なんだか、さみしい気持ちになっちゃう。",
-   "en": "",
+   "en": "%003: I... I hate this place. Because I always have to say goodbye to you here, %000. It makes me feel so lonely.",
    "refs": [
     "S001.OVL:343"
    ]
@@ -124,7 +124,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "%000：そんな顔するなよ。さみしいのは俺も同じだけど、明日になればまた学校で会えるわけだし、さ。",
-   "en": "",
+   "en": "%000: Don't make that face. I feel lonely too, but come tomorrow, we'll see each other at school again, right?",
    "refs": [
     "S001.OVL:3c2"
    ]
@@ -133,7 +133,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "%003：うん……また明日、会えるんだもんね。よしっ、頑張って元気出そう、っと。",
-   "en": "",
+   "en": "%003: Yeah... we'll see each other again tomorrow. Okay, I'll try to cheer up!",
    "refs": [
     "S001.OVL:421"
    ]
@@ -151,7 +151,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "%000：えっ！？……と、突然、どうして！？",
-   "en": "",
+   "en": "%000: Huh!? W-why so sudden!?",
    "refs": [
     "S001.OVL:4c2"
    ]
@@ -169,7 +169,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "%000：（ゲッ！）いや……気持ちはうれしいんだけど、それはちょっとまずいかなあ……。",
-   "en": "",
+   "en": "%000: (Gulp!) No... I appreciate the thought, but that might be a bit of a problem...",
    "refs": [
     "S001.OVL:58a"
    ]
@@ -178,7 +178,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "%003：……どうして？",
-   "en": "",
+   "en": "%003: ...Why?",
    "refs": [
     "S001.OVL:5dd"
    ]
@@ -187,7 +187,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "%000：いや、それは、その……（まいったなあ、あの親父のことを説明するわけにもいかないし）……あっ、そうだ！　家に来るより、あさっては遊園地にでも遊びに行こうよ。うん、それがいいよ！",
-   "en": "",
+   "en": "%000: Well, it's just... uh... (Damn, I can't exactly explain about my old man)... Oh, I know! Instead of coming to my place, let's go to the amusement park the day after tomorrow. Yeah, that's a great idea!",
    "refs": [
     "S001.OVL:5f2"
    ]
@@ -196,7 +196,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "%003：えっ、遊園地？　でも……、",
-   "en": "",
+   "en": "%003: Huh? The amusement park? But...",
    "refs": [
     "S001.OVL:6a7"
    ]
@@ -205,7 +205,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "%000：ね、そうしようよ。きっと、その方が楽しいって。",
-   "en": "",
+   "en": "%000: Come on, let's do it. I'm sure it'll be more fun.",
    "refs": [
     "S001.OVL:6c8"
    ]
@@ -214,7 +214,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "%003：うーん……わかった。じゃ、あさってはお弁当用意してくるね。",
-   "en": "",
+   "en": "%003: Hmm... okay. Then I'll bring a packed lunch the day after tomorrow.",
    "refs": [
     "S001.OVL:6fd"
    ]
@@ -223,7 +223,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "%000：ああ。",
-   "en": "",
+   "en": "%000: Yeah.",
    "refs": [
     "S001.OVL:73e"
    ]
@@ -232,7 +232,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "%003：うふっ、なんだか日曜日が待ち遠しいなあ……。",
-   "en": "",
+   "en": "%003: Hehe... I can hardly wait for Sunday...",
    "refs": [
     "S001.OVL:74c"
    ]
@@ -241,7 +241,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "%000：じゃ、時間と待ち合わせ場所は、明日学校で……。",
-   "en": "",
+   "en": "%000: Well, we can decide the time and meeting place at school tomorrow...",
    "refs": [
     "S001.OVL:77f"
    ]
@@ -250,7 +250,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "%003：うん……じゃ、わたしそろそろ帰るね。",
-   "en": "",
+   "en": "%003: Yeah... Well, I should be heading home now.",
    "refs": [
     "S001.OVL:7b4"
    ]
@@ -259,7 +259,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "%000：ああ。それじゃ、また明日。",
-   "en": "",
+   "en": "%000: Yeah. See you tomorrow.",
    "refs": [
     "S001.OVL:7df"
    ]
@@ -268,7 +268,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "%003：うん、バイバイ！",
-   "en": "",
+   "en": "%003: Yeah, bye-bye!",
    "refs": [
     "S001.OVL:800"
    ]
@@ -277,7 +277,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "%003：%000……どこ見てるの？",
-   "en": "",
+   "en": "%003: %000... where are you looking?",
    "refs": [
     "S001.OVL:818",
     "S001.OVL:856"
@@ -287,7 +287,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "%003：もうっ……%000のエッチ。",
-   "en": "",
+   "en": "%003: Honestly... you pervert, %000.",
    "refs": [
     "S001.OVL:836"
    ]
@@ -296,7 +296,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "%003：ね、そんなとこ見てて楽しい？",
-   "en": "",
+   "en": "%003: Hey, is looking there fun?",
    "refs": [
     "S001.OVL:874"
    ]
@@ -305,7 +305,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "%003：待って……さよならも言わずに帰るなんて、わたしさみしい。",
-   "en": "",
+   "en": "%003: Wait... leaving without even saying goodbye makes me lonely.",
    "refs": [
     "S001.OVL:898"
    ]
@@ -314,7 +314,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "%003：……%000、そんなに早く帰りたいの？",
-   "en": "",
+   "en": "%003: ...%000, do you want to go home that badly?",
    "refs": [
     "S001.OVL:8d8"
    ]
@@ -323,7 +323,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "（ふぅ……まったく、あの親父さえいなかったら堂々とめぐみを家に呼べるのになあ……。）",
-   "en": "",
+   "en": "(Sigh... if it weren't for that old man of mine, I could invite Megumi over without any worries...)",
    "refs": [
     "S002.OVL:24"
    ]
@@ -332,7 +332,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "（どこにでもある、電信柱だ。）",
-   "en": "",
+   "en": "(It's a telephone pole, the kind you see anywhere.)",
    "refs": [
     "S002.OVL:7a"
    ]
@@ -341,7 +341,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "（塀だ………）",
-   "en": "",
+   "en": "(It's a wall...)",
    "refs": [
     "S002.OVL:9a"
    ]
@@ -350,7 +350,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "（こんなものじっと見てても、しょうがないんじゃないか？）",
-   "en": "",
+   "en": "(Staring at something like this isn't going to get me anywhere, is it?)",
    "refs": [
     "S002.OVL:a9"
    ]
@@ -359,7 +359,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "（そうだな。オレも家へ帰るとしよう。）",
-   "en": "",
+   "en": "(Yeah. I should head home too.)",
    "refs": [
     "S002.OVL:e3"
    ]
@@ -368,7 +368,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "（……自分の家に帰ってきたぞ。）",
-   "en": "",
+   "en": "(...I've made it back to my own house.)",
    "refs": [
     "S003.OVL:24"
    ]
@@ -377,7 +377,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "（オレは知ってるぞ。このインターフォンはワナなんだ。どういうワナかというと……）",
-   "en": "",
+   "en": "(I know all about it. This intercom is a trap. What kind of trap, you ask...)",
    "refs": [
     "S003.OVL:46"
    ]
@@ -386,7 +386,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "「ピンポーン」",
-   "en": "",
+   "en": "*DING-DONG*",
    "refs": [
     "S003.OVL:97"
    ]
@@ -395,7 +395,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "%000：……あ、押しちゃった！",
-   "en": "",
+   "en": "%000: ...Ah, I pressed it!",
    "refs": [
     "S003.OVL:a6"
    ]
@@ -404,7 +404,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "「ビーッ、ビーッ、ビーッ、ビーッ……」",
-   "en": "",
+   "en": "*BEEP, BEEP, BEEP, BEEP...*",
    "refs": [
     "S003.OVL:c3",
     "S003.OVL:21e"
@@ -414,7 +414,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "「侵入者撃退システム、作動シマス」",
-   "en": "",
+   "en": "\"Intruder Repulsion System, now activating.\"",
    "refs": [
     "S003.OVL:ea",
     "S003.OVL:245"
@@ -424,7 +424,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "%000：や、やべ……",
-   "en": "",
+   "en": "%000: Oh, crap...",
    "refs": [
     "S003.OVL:10d"
    ]
@@ -433,7 +433,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "「ヴィィーーン、バシュッ！」",
-   "en": "",
+   "en": "*WHIRRRR, FWOOOSH!*",
    "refs": [
     "S003.OVL:120",
     "S003.OVL:268"
@@ -443,7 +443,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "%000：き、来たあぁーーーっ！！",
-   "en": "",
+   "en": "%000: H-here it comes!!",
    "refs": [
     "S003.OVL:13f"
    ]
@@ -452,7 +452,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "「ヒュルルルルル……」",
-   "en": "",
+   "en": "*WHOOOOSH...*",
    "refs": [
     "S003.OVL:15e",
     "S003.OVL:2ac"
@@ -462,7 +462,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "%000：た、助けてくれェ～～～っ！",
-   "en": "",
+   "en": "%000: S-somebody help meee!",
    "refs": [
     "S003.OVL:175"
    ]
@@ -471,7 +471,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "「ドドーーーーン……」",
-   "en": "",
+   "en": "*KABOOOOM...*",
    "refs": [
     "S003.OVL:19a",
     "S003.OVL:2e0"
@@ -481,7 +481,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "%000：はぁ……はぁ……なんとか助かった……。",
-   "en": "",
+   "en": "%000: Hah... hah... I barely made it out alive...",
    "refs": [
     "S003.OVL:1b3",
     "S003.OVL:2f9"
@@ -491,7 +491,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "（オレは知っている。不用意にこのドアを開けようとすると……）",
-   "en": "",
+   "en": "(I know what happens. If you try to open this door carelessly...)",
    "refs": [
     "S003.OVL:1e1"
    ]
@@ -500,7 +500,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "%000：つ、つまり……こうなるわけだ！",
-   "en": "",
+   "en": "%000: I-in other words... this is what happens!",
    "refs": [
     "S003.OVL:287"
    ]
@@ -509,7 +509,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "%000：ひええぇ～～～っ！",
-   "en": "",
+   "en": "%000: Eeeek!",
    "refs": [
     "S003.OVL:2c3"
    ]
@@ -518,7 +518,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "（見かけは、何の変哲もない普通の家なんだよな。しかし……）",
-   "en": "",
+   "en": "(It looks like an ordinary, unremarkable house. But...)",
    "refs": [
     "S003.OVL:327"
    ]
@@ -527,7 +527,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "%000：……今度こそ中に入ろう。",
-   "en": "",
+   "en": "%000: ...This time, I'm getting inside.",
    "refs": [
     "S004.OVL:24"
    ]
@@ -536,7 +536,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "%000：よし。暗証番号を押して、ロックを解除して、と……",
-   "en": "",
+   "en": "%000: Okay. Punch in the security code, unlock it, and...",
    "refs": [
     "S004.OVL:44",
     "S004.OVL:cd"
@@ -546,7 +546,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "「ガチャッ」",
-   "en": "",
+   "en": "*CLICK*",
    "refs": [
     "S004.OVL:7b",
     "S004.OVL:104",
@@ -559,7 +559,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "（まったく、親父のやつ、しょうもないもんばっかり造りやがって……）",
-   "en": "",
+   "en": "(Honestly, my old man is always building the most ridiculous things...)",
    "refs": [
     "S004.OVL:89"
    ]
@@ -568,7 +568,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "%000：ただいまー、っと……ん？　親父の姿が見えないな。いつもならここで怪しげな研究に没頭してるはずなんだけど……",
-   "en": "",
+   "en": "%000: I'm home... huh? I don't see the old man. Usually he'd be here, absorbed in some shady research...",
    "refs": [
     "S005.OVL:2e"
    ]
@@ -577,7 +577,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "（ん？　あの、作業台の上に横たわっているのはなんだろう？　なんだか女の人みたいだけど……）",
-   "en": "",
+   "en": "(Huh? What's that lying on the workbench? Looks kind of like a woman...)",
    "refs": [
     "S005.OVL:a0"
    ]
@@ -586,7 +586,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "（床の上には……特に何も落ちていないな。）",
-   "en": "",
+   "en": "(On the floor... nothing in particular lying around.)",
    "refs": [
     "S005.OVL:fc"
    ]
@@ -595,7 +595,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "（……どこにも、親父の隠れている気配はないな。あるのはわけの分からない機械ばかりだ。）",
-   "en": "",
+   "en": "(...No sign of the old man hiding anywhere. All that's here are incomprehensible machines.)",
    "refs": [
     "S005.OVL:128"
    ]
@@ -604,7 +604,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "（よし。近くへ行ってみよう。）",
-   "en": "",
+   "en": "(Okay. Let's go take a closer look.)",
    "refs": [
     "S005.OVL:180"
    ]
@@ -613,7 +613,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "（やっぱり、女の子だ。しかも……裸！！）",
-   "en": "",
+   "en": "(It really is a girl. And she's... naked!!)",
    "refs": [
     "S006.OVL:4f"
    ]
@@ -622,7 +622,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "（なかなか、かわいいじゃないか。こんなかわいい子が裸で目の前にいるなんて……オレって、なんてラッキーなやつなんだ！！）",
-   "en": "",
+   "en": "(She's pretty cute, isn't she? A cute girl like this, naked right in front of me... Man, am I lucky!!)",
    "refs": [
     "S006.OVL:79"
    ]
@@ -631,7 +631,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "（けっこうデカいな。この胸に顔を埋めて、あんなことや、こんなことや……い、いかん。考えただけで、イッちゃいそう。）",
-   "en": "",
+   "en": "(They're pretty big. Burying my face in those breasts, doing this and that... n-no good. Just thinking about it is gonna make me come.)",
    "refs": [
     "S006.OVL:f1"
    ]
@@ -640,7 +640,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "（ゴクッ……こ、ここは、いわゆる×××というやつだよな。いかん……オレには刺激が強すぎる。",
-   "en": "",
+   "en": "(Gulp... t-this is what they call a XXX situation, isn't it. No good... this is too much stimulation for me.)",
    "refs": [
     "S006.OVL:165"
    ]
@@ -649,7 +649,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "（きれいだな……女の子の肌って、どうしてこんなにすべすべしてきれいなんだろう。）",
-   "en": "",
+   "en": "(She's beautiful... why is a girl's skin so smooth and lovely?)",
    "refs": [
     "S006.OVL:1c1"
    ]
@@ -658,7 +658,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "（しかし……この状況で、ただ見てるだけじゃ我慢できないよな？　ほら、据え膳食わぬはナントカっていうし……）",
-   "en": "",
+   "en": "(But... in a situation like this, I can't just stand here looking, right? You know what they say, a man who doesn't eat what's set before him is... something or other...)",
    "refs": [
     "S007.OVL:1a"
    ]
@@ -667,7 +667,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "（やっぱ、何度見てもかわいいよな……。）",
-   "en": "",
+   "en": "(Yeah, no matter how many times I look, she's cute...)",
    "refs": [
     "S007.OVL:86"
    ]
@@ -676,7 +676,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "（よ～し、さわっちゃうぞォ。さわって、もんで、あんなことや、こんなこともしちゃうぞ～……）",
-   "en": "",
+   "en": "(Alright, I'm gonna touch her. Touch her, squeeze her, do this and that...)",
    "refs": [
     "S007.OVL:b0"
    ]
@@ -685,7 +685,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "（……待てよ。さっきから思ってたけど、なんか変だぞ？　そういえば、このコ、さっきから息をしてないんじゃないか？　それに、脈も……ない。ということは……）",
-   "en": "",
+   "en": "(...Wait a minute. I've been thinking this for a while, but something's weird. Come to think of it, hasn't this girl not been breathing this whole time? And her pulse is... gone too. Which means...)",
    "refs": [
     "S007.OVL:10b"
    ]
@@ -694,7 +694,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "%000：まさか……し、死んでる！？",
-   "en": "",
+   "en": "%000: No way... s-she's dead!?",
    "refs": [
     "S007.OVL:1a4"
    ]
@@ -703,7 +703,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "%000：な、なぜ、一体何がどうなってるんだ！？　なんでこんなところに女の子の全裸死体が……？",
-   "en": "",
+   "en": "%000: W-why, what the hell is going on here!? Why is there a naked dead girl in a place like this...?",
    "refs": [
     "S007.OVL:1c5"
    ]
@@ -712,7 +712,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "%000：……ハッ、まさか、親父のやつが……？　そうだ、そうに違いない！　前から頭のおかしい変態親父ではあったが、ついに人殺しまで……、",
-   "en": "",
+   "en": "%000: ...Oh no, don't tell me the old man...? That's it, that's gotta be it! He's always been a crazy pervert, but now he's finally gone and killed someone...",
    "refs": [
     "S007.OVL:220"
    ]
@@ -721,7 +721,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "%000：……ということは、オレは、必然的に人殺しの息子ということに……うわあぁぁっ、どうすればいいんだあぁぁーーーっ！",
-   "en": "",
+   "en": "%000: ...Which means, I'm inevitably the son of a murderer... Aaaah, what am I supposed to do!?",
    "refs": [
     "S007.OVL:2a5"
    ]
@@ -730,7 +730,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "%002：おお、帰っておったのか、我が息子よ。",
-   "en": "",
+   "en": "%002: Oh, you're back, my son.",
    "refs": [
     "S007.OVL:31a"
    ]
@@ -739,7 +739,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "%000：お、親父……！！",
-   "en": "",
+   "en": "%000: O-old man...!!",
    "refs": [
     "S008.OVL:4c"
    ]
@@ -748,7 +748,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "%002：バカモノッ、なぁにが「親父」だ！　ワシのことは「スーパースペシャルドクター・ジョウ」と呼べと、何度も言っておるだろーがっ！！",
-   "en": "",
+   "en": "%002: You fool! What do you mean \"old man\"! How many times must I tell you to call me \"Super Special Doctor Joe\"!!",
    "refs": [
     "S008.OVL:63"
    ]
@@ -757,7 +757,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "%000：あのな……、",
-   "en": "",
+   "en": "%000: Listen here...\"",
    "refs": [
     "S008.OVL:e6"
    ]
@@ -766,7 +766,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "%002：……そんなことより、さっきからここで何を一人で騒いでおったのだ？",
-   "en": "",
+   "en": "%002: ...More importantly, what were you making such a racket about all by yourself just now?",
    "refs": [
     "S008.OVL:f9"
    ]
@@ -775,7 +775,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "%000：おいッ！！",
-   "en": "",
+   "en": "%000: Hey!!",
    "refs": [
     "S008.OVL:141"
    ]
@@ -784,7 +784,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "%002：なんだ？　大きな声を出しおって。",
-   "en": "",
+   "en": "%002: What? No need to shout.",
    "refs": [
     "S008.OVL:152"
    ]
@@ -793,7 +793,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "%000：オレは前からあんたに、他人には迷惑をかけないように、犯罪だけはしないようにしてくれ、と言ってきたはずだよな？",
-   "en": "",
+   "en": "%000: I've been telling you all along, don't cause trouble for other people, and don't commit any crimes, right?",
    "refs": [
     "S008.OVL:179"
    ]
@@ -802,7 +802,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "%002：そうだったか？",
-   "en": "",
+   "en": "%002: Did you?",
    "refs": [
     "S008.OVL:1ec"
    ]
@@ -811,7 +811,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "%000：そうなんだよッ！　それなのに、よりにもよって人を殺すなんてこと……犯罪者の息子になってしまったオレの人生をどうしてくれるんだよッ！？",
-   "en": "",
+   "en": "%000: Yes, I did! And yet, of all things, you go and kill someone... What are you going to do about my life now that I'm the son of a criminal!?",
    "refs": [
     "S008.OVL:201"
    ]
@@ -820,7 +820,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "%002：お前、さっきから何を言っとるんだ？　それではワシがまるで犯罪者みたいではないか？",
-   "en": "",
+   "en": "%002: What are you talking about? You make it sound like I'm some kind of criminal.",
    "refs": [
     "S008.OVL:28c"
    ]
@@ -829,7 +829,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "%000：とぼけるなよッ！　だったら、あそこの台の上に横たわってるのは何なんだよッ！！",
-   "en": "",
+   "en": "%000: Don't play dumb! Then what's that lying on the table over there!?",
    "refs": [
     "S008.OVL:2e3"
    ]
@@ -838,7 +838,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "%002：ほう……見て分からんのか？　ならば教えてやろう。あれはな、死体というものだ。",
-   "en": "",
+   "en": "%002: Oh? Can't you tell by looking? Then allow me to enlighten you. That is what is known as a corpse.",
    "refs": [
     "S008.OVL:336"
    ]
@@ -847,7 +847,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "%000：だからぁっ、なんでこんなとこに死体があるのかって聞いてんだよ！",
-   "en": "",
+   "en": "%000: That's what I'm asking! Why is there a corpse in a place like this!",
    "refs": [
     "S008.OVL:389"
    ]
@@ -856,7 +856,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "%002：うむ、説明しよう……あれは、不幸にも先日交通事故でなくなったある娘さんの遺体をだな、大学病院に忍び込んで盗んできたのだ。",
-   "en": "",
+   "en": "%002: Very well, I shall explain... That is the body of a young woman who unfortunately died in a traffic accident the other day. I snuck into the university hospital and stole it.",
    "refs": [
     "S008.OVL:3ce"
    ]
@@ -865,7 +865,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "%000：ホッ、なあんだ。そうだったのか……って、それだって立派な犯罪じゃないか！！",
-   "en": "",
+   "en": "%000: Oh, I see. So that's what it was... wait, that's still a full-blown crime!!",
    "refs": [
     "S008.OVL:44d"
    ]
@@ -874,7 +874,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "%002：ハーハッハッハッ！　このワシの偉大な研究の前では、たかが法律など取るに足らんことだ！",
-   "en": "",
+   "en": "%002: HAHAHAHA! In the face of my great research, mere laws are beneath notice!",
    "refs": [
     "S008.OVL:49e"
    ]
@@ -883,7 +883,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "%000：…………（こいつ、いつかきっと大それた犯罪をしでかすな）。",
-   "en": "",
+   "en": "%000: ...(This guy is definitely going to pull off some grand crime someday.)",
    "refs": [
     "S008.OVL:4f9"
    ]
@@ -892,7 +892,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "%000：しかし……いったい何のために、死体なんか盗んできたんだよ？",
-   "en": "",
+   "en": "%000: But... what in the world did you steal a corpse for?",
    "refs": [
     "S008.OVL:53b"
    ]
@@ -901,7 +901,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "%002：フッフッフッ、いい質問だ。教えてやろう……あれを盗んできたのはな、つまり、このワシが１５年間もの間、研究に研究を重ねた成果を具体化するときが来たからなのだ！",
-   "en": "",
+   "en": "%002: Heh heh heh, an excellent question. I shall tell you... I stole it because the time has come to give concrete form to the fruits of my fifteen years of research upon research!",
    "refs": [
     "S008.OVL:57c"
    ]
@@ -910,7 +910,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "%000：はあ……？",
-   "en": "",
+   "en": "%000: Huh...?",
    "refs": [
     "S008.OVL:61f"
    ]
@@ -919,7 +919,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "%002：そう……あれはすでにただの死体ではない。あの体には、ワシの研究の成果と全ての技術が投入されておるのだ！",
-   "en": "",
+   "en": "%002: Yes... that is no longer a mere corpse. Into that body have been poured the results of my research and all of my technology!",
    "refs": [
     "S008.OVL:630"
    ]
@@ -928,7 +928,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "%000：ふう～～ん。",
-   "en": "",
+   "en": "%000: Hmm...",
    "refs": [
     "S008.OVL:69d"
    ]
@@ -937,7 +937,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "%002：あれをここへ運んできてからというもの、ワシは寝るヒマはおろか便所に行く時間さえ惜しんで、各部の移植作業に明け暮れた。そして先程ついに、完成させることができたのだ！！",
-   "en": "",
+   "en": "%002: Ever since I brought it here, I've been so busy with the transplant work on every part that I've barely had time to sleep, let alone go to the toilet. And just now, I finally completed it!!",
    "refs": [
     "S008.OVL:6b0"
    ]
@@ -946,7 +946,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "%000：なるほどなるほど。",
-   "en": "",
+   "en": "%000: I see, I see.",
    "refs": [
     "S008.OVL:75b"
    ]
@@ -955,7 +955,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "%002：そして、これから起こる歴史的瞬間をお前にも一目見せてやろうと、ワシはずっとお前の帰りを待っておったのだぞ！",
-   "en": "",
+   "en": "%002: And to let you witness the historic moment that is about to occur, I have been waiting for you to come home!",
    "refs": [
     "S008.OVL:774"
    ]
@@ -964,7 +964,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "%000：ああ、そう。",
-   "en": "",
+   "en": "%000: Oh, is that so.",
    "refs": [
     "S008.OVL:7e5"
    ]
@@ -973,7 +973,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "%002：さあ、前置きはこれくらいでよかろう。じっくりと見るがいい、ワシの汗と涙と汚物と精液の結晶、我がサイボーグ第１号機『マリリンＤＸ』誕生の瞬間を！！",
-   "en": "",
+   "en": "%002: Now, enough preamble. Watch closely, for this is the crystallization of my sweat, tears, filth, and semen—the moment of the birth of my first cyborg unit, \"Marilyn DX\"!!",
    "refs": [
     "S008.OVL:7f9"
    ]
@@ -982,7 +982,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "%000：はあ～～ぁ！？　さいぼぉぐぅ～～～～っ！？",
-   "en": "",
+   "en": "%000: Whaaat!? Cyborg!?",
    "refs": [
     "S008.OVL:89f"
    ]
@@ -991,7 +991,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "「ヴゥゥゥーーーーーーン………」",
-   "en": "",
+   "en": "*WHIRRRRRRR...*",
    "refs": [
     "S008.OVL:8d0"
    ]
@@ -1000,7 +1000,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "「ムクッ」",
-   "en": "",
+   "en": "*SIT UP*",
    "refs": [
     "S008.OVL:8f1"
    ]
@@ -1009,7 +1009,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "%001：１番、マリリンＤＸ、安来節ヲ踊リマース。",
-   "en": "",
+   "en": "%001: Number one, Marilyn DX, will now perform the Yasugi-bushi dance.",
    "refs": [
     "S008.OVL:8fe"
    ]
@@ -1018,7 +1018,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "%001：アソレ、スッチャラッカホイホイ、スッチャラッカホイ、",
-   "en": "",
+   "en": "%001: And hey, sutcharakka hoi hoi, sutcharakka hoi,",
    "refs": [
     "S008.OVL:92f"
    ]
@@ -1027,7 +1027,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "%001：スッチャラッカホイホイ、スッチャラッカホイ！　ドーモ失礼シマシターッ！",
-   "en": "",
+   "en": "%001: Sutcharakka hoi hoi, sutcharakka hoi! Thank you very much!",
    "refs": [
     "S008.OVL:96c"
    ]
@@ -1036,7 +1036,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "「バタンッ」",
-   "en": "",
+   "en": "*THUD*",
    "refs": [
     "S008.OVL:9b9"
    ]
@@ -1045,7 +1045,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "%002：………………。",
-   "en": "",
+   "en": "%002：………………。",
    "refs": [
     "S008.OVL:9c8",
     "S008.OVL:c5a",
@@ -1057,7 +1057,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "%000：オレに見せたかったものって…………あれか？",
-   "en": "",
+   "en": "%000: So what you wanted to show me... was that?",
    "refs": [
     "S008.OVL:9dd"
    ]
@@ -1066,7 +1066,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "%002：……うーーむ……やはり、人工知能の出来が少し良くなかったようだな。",
-   "en": "",
+   "en": "%002: ...Hmm... it seems the artificial intelligence didn't turn out quite right.",
    "refs": [
     "S008.OVL:a12"
    ]
@@ -1075,7 +1075,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "%000：少し……か？",
-   "en": "",
+   "en": "%000: Just \"a bit\"...?",
    "refs": [
     "S008.OVL:a5b"
    ]
@@ -1084,7 +1084,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "%002：……こうなってしまってはやむを得まい。ケンジッ、少し下がっておれッ！",
-   "en": "",
+   "en": "%002: ...Well, there's no helping it now. Kenji, step back a bit!",
    "refs": [
     "S008.OVL:a6f"
    ]
@@ -1093,7 +1093,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "%000：えっ？……こ、こうか？",
-   "en": "",
+   "en": "%000: Huh? ...L-like this?",
    "refs": [
     "S008.OVL:aba"
    ]
@@ -1102,7 +1102,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "%002：もう少し後ろだッ！",
-   "en": "",
+   "en": "%002: A bit further back!",
    "refs": [
     "S008.OVL:ad7"
    ]
@@ -1111,7 +1111,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "%000：…………この辺りか？",
-   "en": "",
+   "en": "%000: ...Around here?",
    "refs": [
     "S008.OVL:af0"
    ]
@@ -1120,7 +1120,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "%002：よし、そこでいい。いいか、そのままじっと動くでないぞ……。",
-   "en": "",
+   "en": "%002: Good, that's fine. Now, don't move a muscle...",
    "refs": [
     "S008.OVL:b0b"
    ]
@@ -1129,7 +1129,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "%000：こ、今度は一体、何が始まるんだ……？",
-   "en": "",
+   "en": "%000: W-what's going to happen this time...?",
    "refs": [
     "S008.OVL:b4c"
    ]
@@ -1138,7 +1138,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "%002：………………許せ、息子よ。",
-   "en": "",
+   "en": "%002: ...Forgive me, my son.",
    "refs": [
     "S008.OVL:b77"
    ]
@@ -1147,7 +1147,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "%000：えっ……？",
-   "en": "",
+   "en": "%000: Huh...?",
    "refs": [
     "S008.OVL:b98"
    ]
@@ -1156,7 +1156,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "「プチッ」",
-   "en": "",
+   "en": "*CLICK*",
    "refs": [
     "S008.OVL:ba9",
     "S021.OVL:2f9",
@@ -1167,7 +1167,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "「バチバチバチバチバチバチバチ……」",
-   "en": "",
+   "en": "*CRACKLE CRACKLE CRACKLE CRACKLE CRACKLE CRACKLE CRACKLE...*",
    "refs": [
     "S008.OVL:bb6"
    ]
@@ -1176,7 +1176,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "%000：えっ、な、何を……うわああぁぁぁーーーーっ！",
-   "en": "",
+   "en": "%000: Wha-what are you... AAAAAAAH!",
    "refs": [
     "S008.OVL:bdb"
    ]
@@ -1185,7 +1185,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "「ビリビリビリビリビリビリビリ……」",
-   "en": "",
+   "en": "*ZZZZZZZZZZZZZ...*",
    "refs": [
     "S008.OVL:c10"
    ]
@@ -1194,7 +1194,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "%000：ぎゃああぁぁぁーーーーっ……！",
-   "en": "",
+   "en": "%000: GYAAAAAAH...!",
    "refs": [
     "S008.OVL:c35"
    ]
@@ -1203,7 +1203,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "%000：…………………………。",
-   "en": "",
+   "en": "%000：…………………………。",
    "refs": [
     "S008.OVL:c71",
     "S008.OVL:c8e"
@@ -1213,7 +1213,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "%000：………………う、うぅっ…………、",
-   "en": "",
+   "en": "%000: ...Ugh... ugh...",
    "refs": [
     "S008.OVL:cab"
    ]
@@ -1222,7 +1222,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "（親父の、腕だ……オレが物心ついたときからこうだったから、なぜこんな腕になったのかは知らない。）",
-   "en": "",
+   "en": "(It's the old man's arm... It's been like this ever since I can remember, so I don't know why it became like this.)",
    "refs": [
     "S008.OVL:cd3"
    ]
@@ -1231,7 +1231,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "（……これについて詮索するのはよそう。）",
-   "en": "",
+   "en": "(...I'd better not pry into that.)",
    "refs": [
     "S008.OVL:d35"
    ]
@@ -1240,7 +1240,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "（天宮丈之介……悲しいことに、オレの親父だ。）",
-   "en": "",
+   "en": "(Amamiya Jounosuke... sadly, he's my old man.)",
    "refs": [
     "S008.OVL:d5f"
    ]
@@ -1249,7 +1249,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "（親父が研究に使っている機械類だ……もちろん、オレにはどれが何の機械なのかさっぱりわかんないけど。）",
-   "en": "",
+   "en": "(These are the machines the old man uses for his research... of course, I haven't the faintest idea which machine does what.)",
    "refs": [
     "S008.OVL:d8f"
    ]
@@ -1258,7 +1258,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "%000：ハッ……オレは一体…………？",
-   "en": "",
+   "en": "%000: Huh... what in the world am I...?",
    "refs": [
     "S009.OVL:69"
    ]
@@ -1267,7 +1267,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "（あれ？　いつの間にか、さっきの女の子の死体がなくなってるぞ。で、あそこに横たわってるのは…………あ。なあんだ、オレじゃないか。）",
-   "en": "",
+   "en": "(Huh? The dead girl's body is gone all of a sudden. And what's lying over there is... oh. What do you know, it's me.)",
    "refs": [
     "S009.OVL:8d"
    ]
@@ -1276,7 +1276,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "%000：……って、おい、ちょっと待てよ。なんで、オレは自分で自分の姿が見えてるんだ！？",
-   "en": "",
+   "en": "%000: ...Wait, hold on a second. Why can I see my own body!?",
    "refs": [
     "S009.OVL:110"
    ]
@@ -1285,7 +1285,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "（一体、どうなってるんだ！？　オレ自身はここにいるのに、あんなところにオレの姿がある……ひょっとして、幽体離脱ってやつか？）",
-   "en": "",
+   "en": "(What's going on!? I'm right here, but there's my body over there... Could this be what they call an out-of-body experience?)",
    "refs": [
     "S009.OVL:166"
    ]
@@ -1294,7 +1294,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "（……いつもと変わりない、親父の研究室の床だ。）",
-   "en": "",
+   "en": "(...It's the floor of the old man's lab, same as always.)",
    "refs": [
     "S009.OVL:1e4"
    ]
@@ -1303,7 +1303,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "（それにしても、親父の姿が見えないな。いったい、どこに行ったんだ？）",
-   "en": "",
+   "en": "(Come to think of it, I don't see the old man. Where did he go?)",
    "refs": [
     "S009.OVL:216"
    ]
@@ -1312,7 +1312,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "（……研究室の中は、特にいつもと変わりはないな。）",
-   "en": "",
+   "en": "(...Nothing in the lab looks particularly different from usual.)",
    "refs": [
     "S009.OVL:25c",
     "S010.OVL:9fb"
@@ -1322,7 +1322,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "（よし。こうなったら、近くへ行って本当に自分の体かどうか確かめてみよう。）",
-   "en": "",
+   "en": "(Okay. In that case, let's go closer and see if that really is my body.)",
    "refs": [
     "S009.OVL:290"
    ]
@@ -1331,7 +1331,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "%000：……あれ？　動こうとしてるのに、全然からだが前に進まないぞ。一体、どうなってるんだ！？",
-   "en": "",
+   "en": "%000: ...Huh? I'm trying to move, but my body won't go forward at all. What's going on!?",
    "refs": [
     "S009.OVL:2db"
    ]
@@ -1340,7 +1340,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "（か、体が動かない……！）",
-   "en": "",
+   "en": "(M-my body won't move...!)",
    "refs": [
     "S009.OVL:339"
    ]
@@ -1349,7 +1349,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "%000：お、親父！！",
-   "en": "",
+   "en": "%000: O-old man!!",
    "refs": [
     "S010.OVL:44"
    ]
@@ -1358,7 +1358,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "%002：ほう……あれだけの電気ショックを受けながら、たった２４時間で意識を取り戻すとはたいしたものだな。さすがは我が息子だ！",
-   "en": "",
+   "en": "%002: Oh... to regain consciousness in just 24 hours after receiving such an electric shock is quite impressive. As expected of my son!",
    "refs": [
     "S010.OVL:57"
    ]
@@ -1367,7 +1367,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "%000：２４時間？……オレは、そんなに長い間、気を失っていたのか……？",
-   "en": "",
+   "en": "%000: 24 hours? ...I was unconscious for that long...?",
    "refs": [
     "S010.OVL:d2"
    ]
@@ -1376,7 +1376,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "%000：おいっ！",
-   "en": "",
+   "en": "%000: Hey!",
    "refs": [
     "S010.OVL:118"
    ]
@@ -1385,7 +1385,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "%002：……なんだ？",
-   "en": "",
+   "en": "%002: ...What?",
    "refs": [
     "S010.OVL:127"
    ]
@@ -1394,7 +1394,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "%000：説明しろッ！　なんでオレの体があんなところにあるんだよッ！？　それに、オレが体を動かそうと思ってもビクともしないぞ。一体どうなってるんだよッ！？",
-   "en": "",
+   "en": "%000: Explain yourself! Why is my body over there!? And when I try to move my body, it won't budge an inch. What the hell is going on!?",
    "refs": [
     "S010.OVL:13a"
    ]
@@ -1403,7 +1403,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "%002：バカか、お前？　つまり、お前がここにいて、お前の体はあそこにあるのだから、動かそうと思っても動くわけがなかろう。",
-   "en": "",
+   "en": "%002: Are you stupid? You're here, and your body is over there, so of course it won't move no matter how much you try.",
    "refs": [
     "S010.OVL:1d1"
    ]
@@ -1412,7 +1412,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "%000：だから～～～っ、なんでそんなことになってるんだよッ！",
-   "en": "",
+   "en": "%000: That's what I'm asking! Why has it come to this!?",
    "refs": [
     "S010.OVL:248"
    ]
@@ -1421,7 +1421,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "%002：まったく……頭の悪いやつだ。ならばほれ、これを見ればいくらお前でも状況が理解出来るだろう。",
-   "en": "",
+   "en": "%002: Honestly... you're so dense. Very well, look at this. Even you should be able to understand the situation then.",
    "refs": [
     "S010.OVL:283"
    ]
@@ -1430,7 +1430,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "%000：どわああぁーーーっ！！　な、なんだよ、これ！？",
-   "en": "",
+   "en": "%000: WHOOAAAH!! W-what is this!?",
    "refs": [
     "S010.OVL:2e6"
    ]
@@ -1439,7 +1439,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "%002：むろん、お前だ。",
-   "en": "",
+   "en": "%002: Why, it's you, of course.",
    "refs": [
     "S010.OVL:31b"
    ]
@@ -1448,7 +1448,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "%000：オ、オレ……！？",
-   "en": "",
+   "en": "%000: M-me...!?",
    "refs": [
     "S010.OVL:332"
    ]
@@ -1457,7 +1457,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "%000：おいッ！",
-   "en": "",
+   "en": "%000: Hey!",
    "refs": [
     "S010.OVL:34c",
     "S011.OVL:1ea"
@@ -1467,7 +1467,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "%002：なんだ、今度は！？",
-   "en": "",
+   "en": "%002: What is it now!?",
    "refs": [
     "S010.OVL:35b"
    ]
@@ -1476,7 +1476,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "%000：こんなんで納得できるかよッ、最初から順を追って説明してくれよッ！",
-   "en": "",
+   "en": "%000: You expect me to accept this!? Explain it to me from the beginning, step by step!",
    "refs": [
     "S010.OVL:374"
    ]
@@ -1485,7 +1485,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "%002：まったく、手間のかかるやつだ。しょうがあるまい………お前、昨日、我が記念すべきサイボーグ第１号機の始動に失敗したのは覚えておるな？",
-   "en": "",
+   "en": "%002: Honestly, you're such a handful. Very well... You remember how yesterday, the startup of my commemorative first cyborg unit failed, don't you?",
    "refs": [
     "S010.OVL:3bb"
    ]
@@ -1494,7 +1494,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "%000：あ、ああ……あのアホ踊りしたやつのことだな？",
-   "en": "",
+   "en": "%000: Y-yeah... you mean that thing that did the stupid dance?",
    "refs": [
     "S010.OVL:444"
    ]
@@ -1503,7 +1503,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "%002：そうだ……失敗の原因は人工頭脳だった。他の部分は全て完璧なのだが、人工頭脳についてだけは、研究が不十分だったようだ。なにぶん、研究しようにも、人間の頭脳のサンプルが手に入らなかったもんでな。",
-   "en": "",
+   "en": "%002: Indeed... the cause of the failure was the artificial brain. Every other part was perfect, but it seems my research on the artificial brain was insufficient. After all, no matter how much I wanted to research it, I couldn't get my hands on a sample of a human brain.",
    "refs": [
     "S010.OVL:477"
    ]
@@ -1512,7 +1512,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "%002：そこで、ワシの天才的頭脳がひらめいたのだ……ならば、これからでも生きている人間の脳味噌を手に入れればよいではないか、とな。",
-   "en": "",
+   "en": "%002: And then, my genius intellect had a flash of inspiration... Why not simply obtain the brain of a living human being, even now?",
    "refs": [
     "S010.OVL:53c"
    ]
@@ -1521,7 +1521,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "%000：あ、あんた……まさか、それでオレを………、",
-   "en": "",
+   "en": "%000: Y-you... don't tell me you used me for that...!",
    "refs": [
     "S010.OVL:5bd"
    ]
@@ -1530,7 +1530,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "%002：うむ、とりあえず手近にあったもんでな。",
-   "en": "",
+   "en": "%002: Indeed, you were the handiest thing around.",
    "refs": [
     "S010.OVL:5ee"
    ]
@@ -1539,7 +1539,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "%000：き、きっさま～～～ッ！！",
-   "en": "",
+   "en": "%000: Y-you bastard!!",
    "refs": [
     "S010.OVL:61b"
    ]
@@ -1548,7 +1548,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "%000：いや……ちょっと待てよ。まさかあんた、最初からこれが狙いで昨日、オレの帰りを待っていたんじゃないだろうな！？",
-   "en": "",
+   "en": "%000: No... wait a minute. You weren't waiting for me to come home yesterday because this was your plan all along, were you!?",
    "refs": [
     "S010.OVL:63b"
    ]
@@ -1557,7 +1557,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "%002：ん……なんのことだ？",
-   "en": "",
+   "en": "%002: Hmm... what are you talking about?",
    "refs": [
     "S010.OVL:6ae"
    ]
@@ -1566,7 +1566,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "%000：とぼけるなよッ！　なんかおかしいと思ってたんだよ。なぁにが『歴史的瞬間をお前にも見せてやろうと思って』……だよ。最初からオレを実験台にするつもりで帰りを待ってたんだろうがッ！",
-   "en": "",
+   "en": "%000: Don't play dumb! I knew something was off. \"Let me show you a historic moment\" my ass! You were waiting for me to come home because you planned to use me as your test subject from the start!",
    "refs": [
     "S010.OVL:6c9"
    ]
@@ -1575,7 +1575,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "%002：ほう……で、もしそうだったらどうするというのだ？",
-   "en": "",
+   "en": "%002: Oh? And what would you do if that were the case?",
    "refs": [
     "S010.OVL:77e"
    ]
@@ -1584,7 +1584,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "%000：ふっざけやがって～～～、ぶっ殺してやる！！",
-   "en": "",
+   "en": "%000: You're messing with me... I'll kill you!!",
    "refs": [
     "S010.OVL:7b5"
    ]
@@ -1593,7 +1593,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "%002：ほほう、面白いことをいうやつだ……しかし、ワシにそんな口を利いていいのかな？",
-   "en": "",
+   "en": "%002: Oh ho, what an interesting thing to say... But is it wise to speak to me like that?",
    "refs": [
     "S010.OVL:7e6"
    ]
@@ -1602,7 +1602,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "%002：もし、ワシがこの水槽の培養液を抜けば、今のお前なんぞ、ものの２分で死んでしまうのだぞ。それでもいいのかな？",
-   "en": "",
+   "en": "%002: If I were to drain the culture fluid from this tank, someone in your current state would be dead within two minutes. Is that acceptable to you?",
    "refs": [
     "S010.OVL:83b"
    ]
@@ -1611,7 +1611,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "%000：あ、あんた………人間じゃねえ。",
-   "en": "",
+   "en": "%000: Y-you... you're not human.",
    "refs": [
     "S010.OVL:8ae"
    ]
@@ -1620,7 +1620,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "%002：まあ、心配するな。研究が無事に終了すれば、ちゃんと元の体に戻してやるわい。",
-   "en": "",
+   "en": "%002: Well, don't worry. Once my research is complete, I'll put you back in your original body.",
    "refs": [
     "S010.OVL:8d4"
    ]
@@ -1629,7 +1629,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "「バタバタバタバタッ……」",
-   "en": "",
+   "en": "*THUD THUD THUD THUD...*",
    "refs": [
     "S010.OVL:925",
     "S052.OVL:34b"
@@ -1639,7 +1639,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "%002：ん……？",
-   "en": "",
+   "en": "%002: Hmm...?",
    "refs": [
     "S010.OVL:940",
     "S034.OVL:34"
@@ -1649,7 +1649,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "「ドカッ」",
-   "en": "",
+   "en": "*BAM*",
    "refs": [
     "S010.OVL:94f",
     "S052.OVL:375",
@@ -1660,7 +1660,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "（多分……趣味なんだろうな。）",
-   "en": "",
+   "en": "(It's probably... a hobby of his.)",
    "refs": [
     "S010.OVL:95b"
    ]
@@ -1669,7 +1669,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "（とにかく、今の状況をこいつに問いただしてみよう。）",
-   "en": "",
+   "en": "(Anyway, let's ask him about the current situation.)",
    "refs": [
     "S010.OVL:97b"
    ]
@@ -1678,7 +1678,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "（この親父だけは……元の体に戻ったら、絶対に生かしちゃおかないからな！）",
-   "en": "",
+   "en": "(This old man... once I get my body back, I'm not letting him off easy!)",
    "refs": [
     "S010.OVL:9b1"
    ]
@@ -1687,7 +1687,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "（まったく……研究だかなんだか知らないけど、次から次へととんでもないことばっかりしやがって……。）",
-   "en": "",
+   "en": "(Honestly... I don't know what kind of research he's doing, but he keeps pulling off one outrageous thing after another...)",
    "refs": [
     "S010.OVL:a2f"
    ]
@@ -1696,7 +1696,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "%005：動くなッ！　動くと命がないぞ！！",
-   "en": "",
+   "en": "%005: Don't move! Move and you die!!",
    "refs": [
     "S011.OVL:36"
    ]
@@ -1705,7 +1705,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "%002：な……なんだ、お前たちは！？",
-   "en": "",
+   "en": "%002: W-who are you people!?",
    "refs": [
     "S011.OVL:5d"
    ]
@@ -1714,7 +1714,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "%005：フッフッフッ……私は、世界征服を企む悪の秘密組織『世界はあたしたちのものよ、ウッフーン軍団』機械化部隊隊長、ビューティー加奈子。そして……、",
-   "en": "",
+   "en": "%005: Heh heh heh... I am the captain of the mechanized division of the evil secret organization plotting world conquest, \"The World Is Ours, Ooh-hoon Corps\"—Beauty Kanako. And...",
    "refs": [
     "S011.OVL:80"
    ]
@@ -1723,7 +1723,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "%006：……ワレワレハ、ロボット兵ダ。",
-   "en": "",
+   "en": "%006: ...We are robot soldiers.",
    "refs": [
     "S011.OVL:113"
    ]
@@ -1732,7 +1732,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "%005：フッ……恐れ入ったか？",
-   "en": "",
+   "en": "%005: Heh... Are you impressed?",
    "refs": [
     "S011.OVL:138"
    ]
@@ -1741,7 +1741,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "（おっ、これはなかなか……。）",
-   "en": "",
+   "en": "(Oh, now this is something...)",
    "refs": [
     "S011.OVL:156"
    ]
@@ -1750,7 +1750,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "（『世界はあたしたちのものよ、ウッフーン軍団』！？……なんだそりゃ？）",
-   "en": "",
+   "en": "(\"The World Is Ours, Ooh-hoon Corps\"!? ...What the hell is that?)",
    "refs": [
     "S011.OVL:176"
    ]
@@ -1759,7 +1759,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "（ロ、ロボット！？　こいつら、一体……？）",
-   "en": "",
+   "en": "(R-robots!? What in the world are these guys...?)",
    "refs": [
     "S011.OVL:1be"
    ]
@@ -1768,7 +1768,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "%002：その『世界はナンタラ、バッフーン軍団』が何の用だッ！？",
-   "en": "",
+   "en": "%002: What business does that \"World Is Something-or-Other, Bah-hoon Corps\" have here!?",
    "refs": [
     "S011.OVL:1f9"
    ]
@@ -1777,7 +1777,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "%005：フッ……知れたこと。お前が開発したという、サイボーグを頂きに来たのだ！",
-   "en": "",
+   "en": "%005: Heh... That's obvious. We've come to take the cyborg you've developed!",
    "refs": [
     "S011.OVL:236"
    ]
@@ -1786,7 +1786,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "%000：えっ！？",
-   "en": "",
+   "en": "%000: Huh!?",
    "refs": [
     "S011.OVL:283"
    ]
@@ -1795,7 +1795,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "%002：な、なんだと……！？",
-   "en": "",
+   "en": "%002: W-what...!?",
    "refs": [
     "S011.OVL:292"
    ]
@@ -1804,7 +1804,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "%005：フッフッフッ……トボけてもムダだぞ。お前が長い間サイボーグの研究を続けてきたこと、そしてそのサイボーグがついに完成したことは、ちゃんと我々にはわかっているのだ！！",
-   "en": "",
+   "en": "%005: Heh heh heh... Playing dumb is useless. We know full well that you've been researching cyborgs for a long time, and that your cyborg is finally complete!!",
    "refs": [
     "S011.OVL:2ad"
    ]
@@ -1813,7 +1813,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "%002：な、なぜそれを……！？",
-   "en": "",
+   "en": "%002: H-how do you know that...!?",
    "refs": [
     "S011.OVL:356"
    ]
@@ -1822,7 +1822,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "%005：フッ……我々を甘くみないことだな。",
-   "en": "",
+   "en": "%005: Heh... You shouldn't underestimate us.",
    "refs": [
     "S011.OVL:373"
    ]
@@ -1831,7 +1831,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "%000：おいッ！　どーでもいいけど、オレも会話の中に入れてくれよ！",
-   "en": "",
+   "en": "%000: Hey! I don't care about any of this, but include me in the conversation!",
    "refs": [
     "S011.OVL:39d"
    ]
@@ -1840,7 +1840,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "%005：ん？　今、どこからか変な声がしなかったか？……それとも空耳かな？",
-   "en": "",
+   "en": "%005: Hmm? Did I just hear a strange voice from somewhere? ...Or was it my imagination?",
    "refs": [
     "S011.OVL:3de"
    ]
@@ -1849,7 +1849,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "%002：そう、空耳だ！",
-   "en": "",
+   "en": "%002: Yes, it was your imagination!",
    "refs": [
     "S011.OVL:425"
    ]
@@ -1858,7 +1858,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "%000：お、おいおい……、",
-   "en": "",
+   "en": "%000: H-hey now...",
    "refs": [
     "S011.OVL:43a"
    ]
@@ -1867,7 +1867,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "%005：そうか……空耳なら気にすることはないな。",
-   "en": "",
+   "en": "%005: I see... If it was my imagination, then there's nothing to worry about.",
    "refs": [
     "S011.OVL:453"
    ]
@@ -1876,7 +1876,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "%000：あ、あのな………。",
-   "en": "",
+   "en": "%000: L-look here...",
    "refs": [
     "S011.OVL:482"
    ]
@@ -1885,7 +1885,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "%005：そんなことより……さあ、お前が開発したというサイボーグを渡してもらおう！",
-   "en": "",
+   "en": "%005: More importantly... come on, hand over the cyborg you've developed!",
    "refs": [
     "S011.OVL:49b"
    ]
@@ -1894,7 +1894,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "%002：ぐっ………、",
-   "en": "",
+   "en": "%002: Gah...!",
    "refs": [
     "S011.OVL:4ea"
    ]
@@ -1903,7 +1903,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "%005：ん？　あそこの台の上に横たわっているのは？……そうか、わかったぞ。あれが、お前が開発したというサイボーグだな！？",
-   "en": "",
+   "en": "%005: Hmm? What's that lying on the table over there? ...I see, I get it now. That's the cyborg you developed, isn't it!?",
    "refs": [
     "S011.OVL:4fe"
    ]
@@ -1912,7 +1912,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "%002：チィッ……バレたか。",
-   "en": "",
+   "en": "%002: Tch... So you found out.",
    "refs": [
     "S011.OVL:575"
    ]
@@ -1921,7 +1921,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "%000：え！？　おいおい、それはオレの……、",
-   "en": "",
+   "en": "%000: Huh!? Hey hey, that's my...!",
    "refs": [
     "S011.OVL:590"
    ]
@@ -1930,7 +1930,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "%005：フッ、そうとわかれば話は早い。ロボット兵ッ、あれを取ってこいッ！",
-   "en": "",
+   "en": "%005: Heh, now that we know, this'll be quick. Robot soldiers, go get it!",
    "refs": [
     "S011.OVL:5bb"
    ]
@@ -1939,7 +1939,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "%006：ラジャー！",
-   "en": "",
+   "en": "%006: Roger!",
    "refs": [
     "S011.OVL:602",
     "S011.OVL:712",
@@ -1950,7 +1950,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "%002：くっ………。",
-   "en": "",
+   "en": "%002: Damn...!",
    "refs": [
     "S011.OVL:613"
    ]
@@ -1959,7 +1959,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "%000：おい、ちょっと待てよ、違うって、それはオレの体で……、",
-   "en": "",
+   "en": "%000: Hey, wait a minute, that's wrong, that's my body...!",
    "refs": [
     "S011.OVL:626"
    ]
@@ -1968,7 +1968,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "%005：フッ……これさえ手に入れればもう用はない。そうだな……おとなしくしていたご褒美に、特別に命だけは見逃してやるとしよう。せいぜい感謝するがいい……ロボット兵、帰るぞッ！",
-   "en": "",
+   "en": "%005: Heh... Once we have this, we have no more use for you. Well then... as a reward for behaving yourselves, I'll graciously spare your lives. You'd best be grateful... Robot soldiers, we're leaving!",
    "refs": [
     "S011.OVL:665"
    ]
@@ -1977,7 +1977,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "%002：ま、待ってくれぇ。ワシのサイボーグを持っていかんでくれぇ……。",
-   "en": "",
+   "en": "%002: W-wait! Don't take my cyborg away...!",
    "refs": [
     "S011.OVL:723"
    ]
@@ -1986,7 +1986,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "%000：こらッ、ちょっと待てッ！　それはサイボーグじゃないって！　オレの体だって言ってんだろッ！！",
-   "en": "",
+   "en": "%000: Hey, wait a minute! That's not a cyborg! I told you, that's my body!!",
    "refs": [
     "S011.OVL:768"
    ]
@@ -1995,7 +1995,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "%005：では、さらばだ！",
-   "en": "",
+   "en": "%005: And so, farewell!",
    "refs": [
     "S011.OVL:7c9"
    ]
@@ -2004,7 +2004,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "%000：……そ、そんな……オレの体が…………。",
-   "en": "",
+   "en": "%000: ...N-no... my body...",
    "refs": [
     "S011.OVL:7f7"
    ]
@@ -2013,7 +2013,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "%002：………………フッフッフッフッフッ、",
-   "en": "",
+   "en": "%002: ...Heh heh heh heh heh,",
    "refs": [
     "S011.OVL:824"
    ]
@@ -2022,7 +2022,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "%000：……？？？",
-   "en": "",
+   "en": "%000：……？？？",
    "refs": [
     "S011.OVL:84d"
    ]
@@ -2031,7 +2031,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "%002：ハーッハッハッハッハッハッ！！",
-   "en": "",
+   "en": "%002: HAHAHAHAHA!!",
    "refs": [
     "S012.OVL:44"
    ]
@@ -2040,7 +2040,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "%002：まったく、バカなやつらだ。ワシの演技にコロッと引っ掛かりおって。あれがサイボーグではなく、ただの、我が息子、%000の体だと知ったときのやつらの顔が見たいわい！",
-   "en": "",
+   "en": "%002: Honestly, what fools. They fell for my acting hook, line, and sinker. I'd love to see the looks on their faces when they realize that wasn't a cyborg, but just the body of my son, %000!",
    "refs": [
     "S012.OVL:69"
    ]
@@ -2049,7 +2049,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "%002：……しかし偶然とはいえ、我がサイボーグ第１号機『マリリンＤＸ』を別の部屋に移しておいて本当に良かった。ああ、さすがワシ。なんて運がいいのだ！！",
-   "en": "",
+   "en": "%002: ...But even if it was by chance, it's a good thing I moved my first cyborg unit \"Marilyn DX\" to another room. Ah, as expected of me. What incredible luck!!",
    "refs": [
     "S012.OVL:10c"
    ]
@@ -2058,7 +2058,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "%000：おい……！",
-   "en": "",
+   "en": "%000: Hey...!",
    "refs": [
     "S012.OVL:1a2"
    ]
@@ -2067,7 +2067,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "%002：ん？………なんだ、お前いたのか。安心しろ、我が息子よ。我がサイボーグ第１号機は無事だぞ。",
-   "en": "",
+   "en": "%002: Hmm? ...Oh, you're still here. Don't worry, my son. My first cyborg unit is safe and sound.",
    "refs": [
     "S012.OVL:1b3"
    ]
@@ -2076,7 +2076,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "%000：うるさいッ！　そんなことより、オレの体を一体どーしてくれるんだよッ！",
-   "en": "",
+   "en": "%000: Shut up! More importantly, what are you going to do about my body!?",
    "refs": [
     "S012.OVL:212"
    ]
@@ -2085,7 +2085,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "%002：……ああ、お前の体なら、さっきの連中が持っていってしまったぞ。",
-   "en": "",
+   "en": "%002: ...Ah, your body? Those people from before took it away.",
    "refs": [
     "S012.OVL:25d"
    ]
@@ -2094,7 +2094,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "%000：知ってるよッ！　だからそれをどーするのかって聞いてんだよ！！",
-   "en": "",
+   "en": "%000: I know that! That's why I'm asking what you're going to do about it!!",
    "refs": [
     "S012.OVL:2a2"
    ]
@@ -2103,7 +2103,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "%002：どうするのかと言われてものう……持って行かれてしまったもんはしようがなかろう。",
-   "en": "",
+   "en": "%002: Even if you ask what to do about it... there's nothing to be done about something that's already been taken away.",
    "refs": [
     "S012.OVL:2e5"
    ]
@@ -2112,7 +2112,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "%000：あのなぁ～～～、あんたがあんなまぎらわしい態度を取るから、持っていかれたんだろーが！　なんとかして、さっきのやつらから取り返してきてくれよッ！",
-   "en": "",
+   "en": "%000: Listen here... they took it because you acted so suspiciously! Do something and get it back from those people!",
    "refs": [
     "S012.OVL:33a"
    ]
@@ -2121,7 +2121,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "%002：馬鹿を言うなッ！　ワシはただ天才なだけで、何の力もない一介の科学者だぞ！　あんな強そうな、しかもロボットまで従えた連中から取り戻せるわけがなかろうが！！",
-   "en": "",
+   "en": "%002: Don't be foolish! I am merely a genius, a powerless scientist! There's no way I could take it back from those tough-looking people who even command robots!!",
    "refs": [
     "S012.OVL:3cf"
    ]
@@ -2130,7 +2130,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "%000：だったら……警察にでも届けて、オレの体を取り戻してもらってくれよ！",
-   "en": "",
+   "en": "%000: Then... report it to the police or something, and have them get my body back!",
    "refs": [
     "S012.OVL:46f"
    ]
@@ -2139,7 +2139,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "%002：馬鹿者ッ、そんなことができるか！　そんなことをしたら、ワシが大学病院から死体を盗んだことまでバレてしまうではないか！！",
-   "en": "",
+   "en": "%002: You fool, I can't do that! If I did, it would expose the fact that I stole a corpse from the university hospital!!",
    "refs": [
     "S012.OVL:4b8"
    ]
@@ -2148,7 +2148,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "%000：な……なんて自分勝手なヤツなんだ。",
-   "en": "",
+   "en": "%000: W-what a selfish bastard you are.",
    "refs": [
     "S012.OVL:535"
    ]
@@ -2157,7 +2157,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "%002：まあ、そう心配するな。たとえこんな姿に変わり果てたお前であっても、ワシはちゃんと面倒を見てやるつもりだぞ、一応。",
-   "en": "",
+   "en": "%002: Well, don't worry so much. Even if you've been reduced to such a form, I intend to take care of you properly. At least, in principle.",
    "refs": [
     "S012.OVL:55f"
    ]
@@ -2166,7 +2166,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "%000：あんたがムリヤリこんな姿にしたんだろーが！　それに、こんな状態で生きていくくらいなら死んだ方がマシだよッ！",
-   "en": "",
+   "en": "%000: You're the one who forced me into this form! And living like this is worse than being dead!",
    "refs": [
     "S012.OVL:5d6"
    ]
@@ -2175,7 +2175,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "%002：……お前、そんなに自分のからだを取り戻したいのか？",
-   "en": "",
+   "en": "%002: ...Do you really want your body back that badly?",
    "refs": [
     "S012.OVL:648"
    ]
@@ -2184,7 +2184,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "%000：当たり前だッ！",
-   "en": "",
+   "en": "%000: Of course I do!",
    "refs": [
     "S012.OVL:681"
    ]
@@ -2193,7 +2193,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "%002：ふむ。そこまで言うのなら……実は、一つだけ方法がないこともないのだがな。",
-   "en": "",
+   "en": "%002: Hmm. If you insist... actually, there may be one way.",
    "refs": [
     "S012.OVL:696"
    ]
@@ -2202,7 +2202,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "%000：えっ！？　ほ、本当か、親父！？",
-   "en": "",
+   "en": "%000: Huh!? R-really, old man!?",
    "refs": [
     "S012.OVL:6e5"
    ]
@@ -2211,7 +2211,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "%002：ああ……実はな、『マリリンＤＸ』は戦闘型サイボーグなのだ。ああ見えても、あの体には素晴らしいパワーと数々の最新技術が秘められておる。その力は、アメリカ海軍を５秒で壊滅させてしまうほどの……、",
-   "en": "",
+   "en": "%002: Yes... you see, \"Marilyn DX\" is a combat-type cyborg. Despite appearances, that body contains amazing power and numerous cutting-edge technologies. Its power is enough to annihilate the US Navy in five seconds...",
    "refs": [
     "S012.OVL:70a"
    ]
@@ -2220,7 +2220,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "%000：……ウソつけ。",
-   "en": "",
+   "en": "%000: ...Liar.",
    "refs": [
     "S012.OVL:7cf"
    ]
@@ -2229,7 +2229,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "%002：……とにかく、あのサイボーグは、どんなに過酷な任務でも遂行できる能力を備えておるのだ！",
-   "en": "",
+   "en": "%002: ...In any case, that cyborg is equipped with the ability to carry out even the most grueling missions!",
    "refs": [
     "S012.OVL:7e4"
    ]
@@ -2238,7 +2238,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "%002：しかし……お前も知っての通り、人工頭脳があの調子では、とてもではないが使い物にはならん。そこで……だ。",
-   "en": "",
+   "en": "%002: However... as you well know, with the artificial brain in that state, it's utterly useless. And so...",
    "refs": [
     "S012.OVL:842"
    ]
@@ -2247,7 +2247,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "%000：なんか……イヤな予感がするな。",
-   "en": "",
+   "en": "%000: I have... a bad feeling about this.",
    "refs": [
     "S012.OVL:8af"
    ]
@@ -2256,7 +2256,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "%002：どういうわけか体を失って困っているお前――つまり、この水槽の中の脳味噌を『マリリンＤＸ』に移植する",
-   "en": "",
+   "en": "%002: You, who for some reason have lost your body and are in trouble—in other words, we transplant the brain in this tank into \"Marilyn DX\".",
    "refs": [
     "S012.OVL:8d4"
    ]
@@ -2265,7 +2265,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "　　　　　　　　　　　　　↓",
-   "en": "",
+   "en": "　　　　　　　　　　　　　↓",
    "refs": [
     "S012.OVL:93d",
     "S012.OVL:95a",
@@ -2279,7 +2279,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "%002：戦闘型サイボーグ『マリリンＤＸ』として復活したお前が、さっきの連中を探し出して、コテンバンにやっつける。",
-   "en": "",
+   "en": "%002: You, revived as the combat-type cyborg \"Marilyn DX\", find those people from before and defeat them soundly.",
    "refs": [
     "S012.OVL:978"
    ]
@@ -2288,7 +2288,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "%002：お前は自分の体を取り返し、無事、元の体に戻る。",
-   "en": "",
+   "en": "%002: You retrieve your body and safely return to your original form.",
    "refs": [
     "S012.OVL:a22"
    ]
@@ -2297,7 +2297,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "　　　　　　　　　　めでたしめでたし……。",
-   "en": "",
+   "en": "And they all lived happily ever after...",
    "refs": [
     "S012.OVL:a91"
    ]
@@ -2306,7 +2306,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "%002：……というのはどうだ？",
-   "en": "",
+   "en": "%002: ...How does that sound?",
    "refs": [
     "S012.OVL:abc"
    ]
@@ -2315,7 +2315,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "%000：ええ～～～～っ！？　オ、オレがサイボーグにぃ～～～っ！？",
-   "en": "",
+   "en": "%000: Whaaat!? M-me, becoming a cyborg!?",
    "refs": [
     "S012.OVL:ad9"
    ]
@@ -2324,7 +2324,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "%002：しようがあるまい。他に方法はなかろう。",
-   "en": "",
+   "en": "%002: There's no helping it. There's no other way.",
    "refs": [
     "S012.OVL:b18"
    ]
@@ -2333,7 +2333,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "%000：もし……オレが、サイボーグになるのを断ったら……？",
-   "en": "",
+   "en": "%000: What if... I refuse to become a cyborg...?",
    "refs": [
     "S012.OVL:b46"
    ]
@@ -2342,7 +2342,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "%002：お前がイヤだというなら、しかたがない。ワシとしても、無理強いはしたくないしな。",
-   "en": "",
+   "en": "%002: If you say you don't want to, then there's nothing to be done. I wouldn't want to force you either.",
    "refs": [
     "S012.OVL:b7f"
    ]
@@ -2351,7 +2351,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "%000：となると、オレは……？",
-   "en": "",
+   "en": "%000: Then I'd be...?",
    "refs": [
     "S012.OVL:bd4"
    ]
@@ -2360,7 +2360,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "%002：むろん、一生今のままだ。",
-   "en": "",
+   "en": "%002: Why, you'd stay as you are now for the rest of your life.",
    "refs": [
     "S012.OVL:bf1"
    ]
@@ -2369,7 +2369,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "%000：わーかったよっ、やるよっ。サイボーグでも何でもなりゃいーんだろ、チクショーッ。",
-   "en": "",
+   "en": "%000: Fine, I get it, I'll do it! I'll become a cyborg or whatever, damn it!",
    "refs": [
     "S012.OVL:c11"
    ]
@@ -2378,7 +2378,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "%002：おお、よくぞ言ってくれた、それでこそ我が息子だ！！　フッフッフッ、これで今度こそ、我が記念すべきサイボーグ第１号機『マリリンＤＸ』が完成するぞ！！",
-   "en": "",
+   "en": "%002: Oh, well said! That's my son!! Heh heh heh, now at last, my commemorative first cyborg unit \"Marilyn DX\" will be completed!!",
    "refs": [
     "S012.OVL:c66"
    ]
@@ -2387,7 +2387,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "%002：さあ、そうと決まったらさっそく手術に取り掛かるぞ。これから手術が終わるまでの間、お前には少し眠っていてもらうからな。",
-   "en": "",
+   "en": "%002: Now, since it's decided, let's begin the surgery right away. Until the surgery is finished, you'll need to sleep for a while.",
    "refs": [
     "S012.OVL:d00"
    ]
@@ -2396,7 +2396,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "「ポチッ」",
-   "en": "",
+   "en": "*CLICK*",
    "refs": [
     "S012.OVL:d7b"
    ]
@@ -2405,7 +2405,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "%000：えっ、ちょ、ちょっと、まだ心の準備が…………うぅ…………。",
-   "en": "",
+   "en": "%000: Huh? W-wait, I'm not mentally prepared yet... ugh...",
    "refs": [
     "S012.OVL:d86"
    ]
@@ -2414,7 +2414,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "「チュイーーーーン……ギギギギギギ…………」",
-   "en": "",
+   "en": "*BZZZZ... GRIND GRIND GRIND GRIND...*",
    "refs": [
     "S012.OVL:dc9"
    ]
@@ -2423,7 +2423,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "「ウインウインウインウイン……ガガガガガガ…………」",
-   "en": "",
+   "en": "*WHIRRR WHIRRR WHIRRR WHIRRR... CLANK CLANK CLANK CLANK...*",
    "refs": [
     "S012.OVL:df6"
    ]
@@ -2432,7 +2432,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "「パラリラパラリラパラリラ……プーッ…………」",
-   "en": "",
+   "en": "*PARA-LIRA PARA-LIRA PARA-LIRA... POOT...*",
    "refs": [
     "S012.OVL:e2b"
    ]
@@ -2441,7 +2441,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "%002：……ふうっ。結局朝までかかってしまったか……しかし、これでついに永年の苦労が報われるときが来たのだ！　さあ目覚めよ、スーパーウルトラむっちんぷりぷりサイボーグ『マリリンＤＸ』よ！！",
-   "en": "",
+   "en": "%002: ...Phew. So it took until morning after all... But now, at last, the time has come for my years of toil to bear fruit! Awaken now, Super Ultra Plump-and-Perky Cyborg \"Marilyn DX\"!!",
    "refs": [
     "S012.OVL:e5a"
    ]
@@ -2450,7 +2450,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "%002：……………………。",
-   "en": "",
+   "en": "%002：……………………。",
    "refs": [
     "S012.OVL:f15",
     "S012.OVL:f2e",
@@ -2461,7 +2461,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "%002：……おお、起動装置を作動させるのを忘れておった。",
-   "en": "",
+   "en": "%002: ...Oh, I forgot to activate the startup device.",
    "refs": [
     "S012.OVL:f47"
    ]
@@ -2470,7 +2470,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "「ガチャッ……」",
-   "en": "",
+   "en": "*CLUNK...*",
    "refs": [
     "S012.OVL:f7e"
    ]
@@ -2479,7 +2479,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "「ヴゥゥーーーーーーーーン……」",
-   "en": "",
+   "en": "*WHIRRRRRRRR...*",
    "refs": [
     "S012.OVL:f8f"
    ]
@@ -2488,7 +2488,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "%001：…………う、うぅーん……、",
-   "en": "",
+   "en": "%001: ...Ugh... ughh...",
    "refs": [
     "S012.OVL:fb0",
     "S055.OVL:3df"
@@ -2498,7 +2498,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "（この親父は……一体何を考えてるんだ！？）",
-   "en": "",
+   "en": "(This old man... what in the world is he thinking!?)",
    "refs": [
     "S012.OVL:fd2"
    ]
@@ -2507,7 +2507,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "（こいつ……絶対に自分のことしか考えてないな。）",
-   "en": "",
+   "en": "(This guy... he's definitely only thinking about himself.)",
    "refs": [
     "S012.OVL:ffe"
    ]
@@ -2516,7 +2516,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "（まったく……サイボーグだか知らないけど、親父の研究のせいで、オレは……）",
-   "en": "",
+   "en": "(Honestly... I don't know about being a cyborg, but because of the old man's research, I'm...)",
    "refs": [
     "S012.OVL:1030"
    ]
@@ -2525,7 +2525,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "%002：おお、気がついたか！　スーパーウルトラむっちんぷりぷりサイボーグ『マリリンＤＸ』よ！",
-   "en": "",
+   "en": "%002: Oh, you're awake! Super Ultra Plump-and-Perky Cyborg \"Marilyn DX\"!",
    "refs": [
     "S013.OVL:1a"
    ]
@@ -2534,7 +2534,7 @@
    "id": "m00278",
    "kind": "msg",
    "jp": "%001：……すーばー……？　あ、そうか、オレはもうサイボーグに……。",
-   "en": "",
+   "en": "%001: ...Super...? Oh, right, I'm already a cyborg...",
    "refs": [
     "S013.OVL:75"
    ]
@@ -2543,7 +2543,7 @@
    "id": "m00279",
    "kind": "msg",
    "jp": "%002：そうだ。お前はもはや、我が息子『%000』ではない。お前は、スーパーウルトラむっちんぷりぷりサイボーグ『マリリンＤＸ』として生まれ変わったのだ！！",
-   "en": "",
+   "en": "%002: That's right. You are no longer my son \"%000\". You have been reborn as the Super Ultra Plump-and-Perky Cyborg \"Marilyn DX\"!!",
    "refs": [
     "S013.OVL:b8"
    ]
@@ -2552,7 +2552,7 @@
    "id": "m00280",
    "kind": "msg",
    "jp": "%001：……どーでもいいけど、その名前だけはなんとかなんないか？",
-   "en": "",
+   "en": "%001: ...I don't really care, but can't you do something about that name?",
    "refs": [
     "S013.OVL:14d"
    ]
@@ -2561,7 +2561,7 @@
    "id": "m00281",
    "kind": "msg",
    "jp": "%002：しかし、なんだな……死体のときはなんとも思わなかったが、こうやって動き始めると、なかなかそそるものが……、",
-   "en": "",
+   "en": "%002: But you know... when you were a corpse, I didn't think anything of it, but now that you're moving around, it's rather... stimulating...",
    "refs": [
     "S013.OVL:18d"
    ]
@@ -2570,7 +2570,7 @@
    "id": "m00282",
    "kind": "msg",
    "jp": "（オレは、この親父によってついにサイボーグになってしまったのか……）",
-   "en": "",
+   "en": "(So I've finally been turned into a cyborg by this old man...)",
    "refs": [
     "S013.OVL:1ff"
    ]
@@ -2579,7 +2579,7 @@
    "id": "m00283",
    "kind": "msg",
    "jp": "%001：お、おい、何を考えてるんだ？　こら、ちょっと、実の息子を襲う気か！？",
-   "en": "",
+   "en": "%001: H-hey, what are you thinking? Hey, are you trying to assault your own son!?",
    "refs": [
     "S014.OVL:1f"
    ]
@@ -2588,7 +2588,7 @@
    "id": "m00284",
    "kind": "msg",
    "jp": "%002：はぁ、はぁっ……おとなしくせいっ。ワシは、日頃研究に明け暮れていたせいでたまっておるのだっ！",
-   "en": "",
+   "en": "%002: Hah, hah... hold still. I've been so absorbed in my research that I've built up quite a lot of tension!",
    "refs": [
     "S014.OVL:6b"
    ]
@@ -2597,7 +2597,7 @@
    "id": "m00285",
    "kind": "msg",
    "jp": "%001：も、もぉ～～～っ、許さんッ！　この変態親父ッ、この手で成敗してやるッ！！",
-   "en": "",
+   "en": "%001: Th-that's it, I won't forgive this! You perverted old man, I'll punish you with my own hands!!",
    "refs": [
     "S014.OVL:cf"
    ]
@@ -2606,7 +2606,7 @@
    "id": "m00286",
    "kind": "msg",
    "jp": "%001：フゥーッ、もう少しで実の父親に犯されるところだった……",
-   "en": "",
+   "en": "%001: Whew... I was almost raped by my own father...",
    "refs": [
     "S015.OVL:36"
    ]
@@ -2615,7 +2615,7 @@
    "id": "m00287",
    "kind": "msg",
    "jp": "%001：……ハッ、親父！　大丈夫か、親父！？",
-   "en": "",
+   "en": "%001: ...Oh! Old man! Are you okay, old man!?",
    "refs": [
     "S015.OVL:73"
    ]
@@ -2624,7 +2624,7 @@
    "id": "m00288",
    "kind": "msg",
    "jp": "%002：うむ……なかなかいいパンチだったぞ。さすがは、天才のワシが造ったサイボーグだけのことはある。",
-   "en": "",
+   "en": "%002: Indeed... that was quite a good punch. As expected of a cyborg built by a genius like me.",
    "refs": [
     "S015.OVL:a0"
    ]
@@ -2633,7 +2633,7 @@
    "id": "m00289",
    "kind": "msg",
    "jp": "%001：しかし……さっきオレが思い切り殴ったにもかかわらず、親父はピンピンしてるみたいけど、本当にこんなんでさっきのやつらに勝てるのか？",
-   "en": "",
+   "en": "%001: But... even though I hit you with everything I had, you seem perfectly fine. Can I really beat those guys from before with this?",
    "refs": [
     "S015.OVL:104"
    ]
@@ -2642,7 +2642,7 @@
    "id": "m00290",
    "kind": "msg",
    "jp": "%002：心配するな。こんなこともあろうかと思って、ワシは自分の体を密かに改造し、パワーアップしておったのだ。お前のパンチぐらいではびくともせん！",
-   "en": "",
+   "en": "%002: Don't worry. Anticipating something like this, I secretly modified my own body and powered it up. A punch like yours won't even faze me!",
    "refs": [
     "S015.OVL:18b"
    ]
@@ -2651,7 +2651,7 @@
    "id": "m00291",
    "kind": "msg",
    "jp": "%001：……さっきと言ってることが違うぞ。",
-   "en": "",
+   "en": "%001: ...That's not what you said before.",
    "refs": [
     "S015.OVL:21a"
    ]
@@ -2660,7 +2660,7 @@
    "id": "m00292",
    "kind": "msg",
    "jp": "%002：……それに、お前が持っているのはパワーだけではないぞ。お前のへその辺りを見てみるがいい。三つのボタンがあるだろう。",
-   "en": "",
+   "en": "%002: ...Besides, you have more than just power. Take a look around your navel. You'll see three buttons.",
    "refs": [
     "S015.OVL:244"
    ]
@@ -2669,7 +2669,7 @@
    "id": "m00293",
    "kind": "msg",
    "jp": "%001：ん？　本当だ、ボタンが三つ……。",
-   "en": "",
+   "en": "%001: Huh? You're right, three buttons...",
    "refs": [
     "S015.OVL:2bd"
    ]
@@ -2678,7 +2678,7 @@
    "id": "m00294",
    "kind": "msg",
    "jp": "%002：そう。それらのボタンは、お前の体に搭載された武器にそれぞれ対応しているのだ。",
-   "en": "",
+   "en": "%002: Yes. Each of those buttons corresponds to a weapon installed in your body.",
    "refs": [
     "S015.OVL:2e4"
    ]
@@ -2687,7 +2687,7 @@
    "id": "m00295",
    "kind": "msg",
    "jp": "%002：まず、Ａボタンはサブマシンガンだ。これは、お前の右ひじの間接に収納されている。",
-   "en": "",
+   "en": "%002: First, the A button is the submachine gun. It's stored in the joint of your right elbow.",
    "refs": [
     "S015.OVL:337"
    ]
@@ -2696,7 +2696,7 @@
    "id": "m00296",
    "kind": "msg",
    "jp": "%002：次にＢボタンだが、これを押すと、尻に格納された小型ミサイルが飛び出す仕組みになっている。ただし、どちらも弾数に限りがあるので注意するようにな。",
-   "en": "",
+   "en": "%002: Next is the B button. Pressing it causes small missiles stored in your rear to launch. However, both have limited ammunition, so be careful.",
    "refs": [
     "S015.OVL:38c"
    ]
@@ -2705,7 +2705,7 @@
    "id": "m00297",
    "kind": "msg",
    "jp": "%001：で……Ｃボタンは？",
-   "en": "",
+   "en": "%001: So... what about the C button?",
    "refs": [
     "S015.OVL:421"
    ]
@@ -2714,7 +2714,7 @@
    "id": "m00298",
    "kind": "msg",
    "jp": "%002：うむ。Ｃボタンは、自爆装置のボタンだ。",
-   "en": "",
+   "en": "%002: Indeed. The C button is the self-destruct device.",
    "refs": [
     "S015.OVL:43a"
    ]
@@ -2723,7 +2723,7 @@
    "id": "m00299",
    "kind": "msg",
    "jp": "%001：じ、自爆装置ぃ～～～っ！？　な、なんでそんなもんがついてるんだよ！？",
-   "en": "",
+   "en": "%001: S-self-destruct device!? W-why would you put something like that in me!?",
    "refs": [
     "S015.OVL:467"
    ]
@@ -2732,7 +2732,7 @@
    "id": "m00300",
    "kind": "msg",
    "jp": "%002：馬鹿者ッ！？　サイボーグといえば、自爆装置は付き物ではないか！　自らの命を捨てる覚悟でこの世の悪と戦う……それこそ、正義を守るヒーローの姿というものだ。",
-   "en": "",
+   "en": "%002: You fool! A self-destruct device is standard equipment for a cyborg! Fighting the evil of this world with the resolve to give up one's own life... that is the true form of a hero who protects justice.",
    "refs": [
     "S015.OVL:4b2"
    ]
@@ -2741,7 +2741,7 @@
    "id": "m00301",
    "kind": "msg",
    "jp": "%001：…………。",
-   "en": "",
+   "en": "%001：…………。",
    "refs": [
     "S015.OVL:551",
     "S015.OVL:995",
@@ -2761,7 +2761,7 @@
    "id": "m00302",
    "kind": "msg",
    "jp": "%002：さらに、それだけではないぞ。お前には、最後の武器として『バニーフラッシュ』という必殺技まで使えるようになっている。",
-   "en": "",
+   "en": "%002: Furthermore, that's not all. As your final weapon, you have access to a special move called \"Bunny Flash\".",
    "refs": [
     "S015.OVL:563"
    ]
@@ -2770,7 +2770,7 @@
    "id": "m00303",
    "kind": "msg",
    "jp": "%001：ばにーふらっしゅ……？",
-   "en": "",
+   "en": "%001: Bunny Flash...?",
    "refs": [
     "S015.OVL:5dc"
    ]
@@ -2779,7 +2779,7 @@
    "id": "m00304",
    "kind": "msg",
    "jp": "%002：そうだ。これはボタン式ではなく、音声識別方式になっている……つまり、お前が『バニィーッ、フラーッシュ！　食らってぇ～～ん』と叫べば、自動的に電磁波が発生する、というわけだ。",
-   "en": "",
+   "en": "%002: Yes. This one isn't button-operated; it uses voice recognition... In other words, when you shout \"Bunnyyy, Flash! Take this!\" electromagnetic waves are automatically generated.",
    "refs": [
     "S015.OVL:5f9"
    ]
@@ -2788,7 +2788,7 @@
    "id": "m00305",
    "kind": "msg",
    "jp": "%002：ただし一つ忠告しておくが、この技には、実際に電磁波が生ずるまでの間に多少のタイムラグが生ずる。したがって実際には、敵がかなり弱ってきたときにとどめの一撃として使わなければならないということだ。",
-   "en": "",
+   "en": "%002: However, I'll give you one piece of advice: this technique has a slight time lag before the electromagnetic waves actually generate. Therefore, in practice, you must use it as a finishing blow when the enemy is already considerably weakened.",
    "refs": [
     "S015.OVL:6ac"
    ]
@@ -2797,7 +2797,7 @@
    "id": "m00306",
    "kind": "msg",
    "jp": "%001：ふうーん……。",
-   "en": "",
+   "en": "%001: Hmm...",
    "refs": [
     "S015.OVL:773"
    ]
@@ -2806,7 +2806,7 @@
    "id": "m00307",
    "kind": "msg",
    "jp": "%001：ところで、親父……オレはいつまで裸でいなきゃならないんだ？",
-   "en": "",
+   "en": "%001: By the way, old man... how long do I have to stay naked?",
    "refs": [
     "S015.OVL:789"
    ]
@@ -2815,7 +2815,7 @@
    "id": "m00308",
    "kind": "msg",
    "jp": "%002：おおそうか、忘れておった。心配せずとも、ちゃんと用意してあるぞ。さあ、さっそくこれに着替えるがいい。",
-   "en": "",
+   "en": "%002: Oh right, I forgot. No need to worry, I've prepared something. Come, change into this right away.",
    "refs": [
     "S015.OVL:7ca"
    ]
@@ -2824,7 +2824,7 @@
    "id": "m00309",
    "kind": "msg",
    "jp": "%001：な、なんだよ、これ？　もっとマトモな服はないのかよ！？",
-   "en": "",
+   "en": "%001: W-what is this? Isn't there something more normal to wear!?",
    "refs": [
     "S015.OVL:837"
    ]
@@ -2833,7 +2833,7 @@
    "id": "m00310",
    "kind": "msg",
    "jp": "%002：馬鹿者ッ！！　見かけだけで判断するでない！　いいか、これはワシが造った特殊強化スーツでな、あらゆる攻撃に対して圧倒的な防御力を誇る最高の戦闘服なのだぞ！！",
-   "en": "",
+   "en": "%002: You fool!! Don't judge by appearances! Listen, this is a special reinforced suit I created. It's the ultimate combat outfit boasting overwhelming defensive power against all attacks!!",
    "refs": [
     "S015.OVL:874"
    ]
@@ -2842,7 +2842,7 @@
    "id": "m00311",
    "kind": "msg",
    "jp": "%001：そ、そうか……じゃあ、この奇抜なデザインも防御力と関係が……、",
-   "en": "",
+   "en": "%001: I-is that so... then this flashy design is also related to its defensive power...",
    "refs": [
     "S015.OVL:915"
    ]
@@ -2851,7 +2851,7 @@
    "id": "m00312",
    "kind": "msg",
    "jp": "%002：そんなもんあるわけなかろう。それは単にワシの趣味だ。",
-   "en": "",
+   "en": "%002: Of course not. That's simply my personal taste.",
    "refs": [
     "S015.OVL:95a"
    ]
@@ -2860,7 +2860,7 @@
    "id": "m00313",
    "kind": "msg",
    "jp": "（ああ……親父がこんなやつでなければ、オレももっとマトモな人生を送れたのに……）",
-   "en": "",
+   "en": "(Ah... if only the old man weren't like this, I could have lived a more normal life...)",
    "refs": [
     "S015.OVL:9a7"
    ]
@@ -2869,7 +2869,7 @@
    "id": "m00314",
    "kind": "msg",
    "jp": "（親父が研究や実験に使っている機械だ……）",
-   "en": "",
+   "en": "(These are the machines the old man uses for research and experiments...)",
    "refs": [
     "S015.OVL:9f9",
     "S016.OVL:292",
@@ -2889,7 +2889,7 @@
    "id": "m00315",
    "kind": "msg",
    "jp": "%002：……さあ、どうやら準備は整ったようだな。では行け、スーパーウルトラむっちんぷりぷりサイボーグ『マリリンＤＸ』よ！　行って、この世の悪を滅ぼすのだぁーッ！！",
-   "en": "",
+   "en": "%002: ...Now, it seems preparations are complete. Go forth, Super Ultra Plump-and-Perky Cyborg \"Marilyn DX\"! Go and destroy the evil of this world!!",
    "refs": [
     "S016.OVL:51"
    ]
@@ -2898,7 +2898,7 @@
    "id": "m00316",
    "kind": "msg",
    "jp": "%001：さあ行け、って言われても……一体どこに行けばいいんだ？",
-   "en": "",
+   "en": "%001: You say \"go forth,\" but... where exactly am I supposed to go?",
    "refs": [
     "S016.OVL:f3"
    ]
@@ -2907,7 +2907,7 @@
    "id": "m00317",
    "kind": "msg",
    "jp": "%002：決まっとるだろう。さっきの『世界はナンタラ、ブッヒーン軍団』の連中のころではないか。",
-   "en": "",
+   "en": "%002: Isn't that obvious? To those \"World Is Something-or-Other, Boo-hoon Corps\" people from before.",
    "refs": [
     "S016.OVL:130"
    ]
@@ -2916,7 +2916,7 @@
    "id": "m00318",
    "kind": "msg",
    "jp": "%001：で、あいつらの居場所を知る手掛かりかなにかは……？",
-   "en": "",
+   "en": "%001: And do you have any clues as to where they are...?",
    "refs": [
     "S016.OVL:18b"
    ]
@@ -2925,7 +2925,7 @@
    "id": "m00319",
    "kind": "msg",
    "jp": "%002：そんなもん、ワシが知るわけなかろう。",
-   "en": "",
+   "en": "%002: How would I know something like that?",
    "refs": [
     "S016.OVL:1c4"
    ]
@@ -2934,7 +2934,7 @@
    "id": "m00320",
    "kind": "msg",
    "jp": "%002：さあ、ボサッとしている場合ではないぞ。とっとと出かけて『世界はナンタラ、ゲッヒーン軍団』を捜し出すのだッ！！",
-   "en": "",
+   "en": "%002: Now, this is no time to be standing around. Get going and find the \"World Is Something-or-Other, Geh-hoon Corps\"!!",
    "refs": [
     "S016.OVL:1f0"
    ]
@@ -2943,7 +2943,7 @@
    "id": "m00321",
    "kind": "msg",
    "jp": "（ホンット無責任なヤツだよ、こいつは……。）",
-   "en": "",
+   "en": "(He's such an irresponsible guy, seriously...)",
    "refs": [
     "S016.OVL:264"
    ]
@@ -2952,7 +2952,7 @@
    "id": "m00322",
    "kind": "msg",
    "jp": "%001：あれ？……こんなとこに、何か落ちてるみたいだぞ。どれどれ……、",
-   "en": "",
+   "en": "%001: Huh? ...Looks like something's dropped here. Let's see...",
    "refs": [
     "S016.OVL:2be"
    ]
@@ -2961,7 +2961,7 @@
    "id": "m00323",
    "kind": "msg",
    "jp": "%001：こ、これは……ひょっとしてさっきのヤツらが付けていたバッジじゃないか？",
-   "en": "",
+   "en": "%001: T-this is... could this be the badge those guys from before were wearing?",
    "refs": [
     "S016.OVL:305"
    ]
@@ -2970,7 +2970,7 @@
    "id": "m00324",
    "kind": "msg",
    "jp": "%002：まったく、そんなものを落としていくとはマヌケなヤツらだ。しかし、一応これで手掛かりができたではないか。",
-   "en": "",
+   "en": "%002: Honestly, what fools, dropping something like that. But at least now we have a clue.",
    "refs": [
     "S016.OVL:354"
    ]
@@ -2979,7 +2979,7 @@
    "id": "m00325",
    "kind": "msg",
    "jp": "（うーん……ここには特に何もないみたいだな）",
-   "en": "",
+   "en": "(Hmm... there's nothing in particular here)",
    "refs": [
     "S016.OVL:3c2"
    ]
@@ -2988,7 +2988,7 @@
    "id": "m00326",
    "kind": "msg",
    "jp": "（ちょっと待てよ。このまま出かけても、手掛かりもないし、どこへ行けばいいのかさっぱり分からないぞ）",
-   "en": "",
+   "en": "(Wait a minute. Even if I go out like this, I have no clues and no idea where to go)",
    "refs": [
     "S016.OVL:3f0"
    ]
@@ -2997,7 +2997,7 @@
    "id": "m00327",
    "kind": "msg",
    "jp": "（……そうだな。とりあえず外に出て、このバッジを元に聞き込みをしてみよう）",
-   "en": "",
+   "en": "(...Yeah. Let's go outside and ask around using this badge as a lead)",
    "refs": [
     "S016.OVL:454"
    ]
@@ -3006,7 +3006,7 @@
    "id": "m00328",
    "kind": "msg",
    "jp": "（……街の大通りに出てきたぞ）",
-   "en": "",
+   "en": "(...I've come out onto the main street)",
    "refs": [
     "S017.OVL:2f",
     "S036.OVL:51"
@@ -3016,7 +3016,7 @@
    "id": "m00329",
    "kind": "msg",
    "jp": "（今日もいい天気だ。本当なら、こんな日はめぐみとどこかへ遊びにいきたいところなんだけど……）",
-   "en": "",
+   "en": "(It's nice weather today. On a day like this, I'd normally want to go out somewhere with Megumi...)",
    "refs": [
     "S017.OVL:4f",
     "S036.OVL:71",
@@ -3027,7 +3027,7 @@
    "id": "m00330",
    "kind": "msg",
    "jp": "（街の大通りだ。まさかこんなところに『世界はあたしたちのものよ、ウッフーン軍団』の連中がいるとは思えないけど……）",
-   "en": "",
+   "en": "(It's the main street. I can't imagine the \"World Is Ours, Ooh-hoon Corps\" people would be in a place like this...)",
    "refs": [
     "S017.OVL:ad",
     "S036.OVL:cf",
@@ -3038,7 +3038,7 @@
    "id": "m00331",
    "kind": "msg",
    "jp": "%001：あのー、ちょっとすいません。このバッジをどこかで見たことはありませんか？",
-   "en": "",
+   "en": "%001: Excuse me, sorry to bother you. Have you seen this badge anywhere?",
    "refs": [
     "S017.OVL:121"
    ]
@@ -3047,7 +3047,7 @@
    "id": "m00332",
    "kind": "msg",
    "jp": "%007：ん？　な、なんだ、あんた！？　俺は、そんな変な格好した女に知り合いはいないぞ！",
-   "en": "",
+   "en": "%007: Huh? W-what do you want!? I don't know any woman dressed as weird as you!",
    "refs": [
     "S017.OVL:170"
    ]
@@ -3056,7 +3056,7 @@
    "id": "m00333",
    "kind": "msg",
    "jp": "%009：ちょ、ちょっとォ……この人、変態じゃないの？　あんまり関わらない方がいいんじゃないの？……さ、行きましょ。",
-   "en": "",
+   "en": "%009: H-hey... isn't this person a pervert? Shouldn't we not get involved? ...Come on, let's go.",
    "refs": [
     "S017.OVL:1c5"
    ]
@@ -3065,7 +3065,7 @@
    "id": "m00334",
    "kind": "msg",
    "jp": "%001：あのー……、",
-   "en": "",
+   "en": "%001: Um...",
    "refs": [
     "S017.OVL:248"
    ]
@@ -3074,7 +3074,7 @@
    "id": "m00335",
    "kind": "msg",
    "jp": "%007：……しつこいぞ、あんた。これ以上俺にかまわないでくれ！",
-   "en": "",
+   "en": "%007: ...You're persistent, aren't you. Stop bothering me!",
    "refs": [
     "S017.OVL:25b"
    ]
@@ -3083,7 +3083,7 @@
    "id": "m00336",
    "kind": "msg",
    "jp": "%010：おい、ちょっと君……",
-   "en": "",
+   "en": "%010: Hey, you there...",
    "refs": [
     "S017.OVL:298"
    ]
@@ -3092,7 +3092,7 @@
    "id": "m00337",
    "kind": "msg",
    "jp": "%001：は……？",
-   "en": "",
+   "en": "%001: Huh...?",
    "refs": [
     "S017.OVL:2b3"
    ]
@@ -3101,7 +3101,7 @@
    "id": "m00338",
    "kind": "msg",
    "jp": "%010：君はここで何をしているのかね？",
-   "en": "",
+   "en": "%010: What are you doing here?",
    "refs": [
     "S017.OVL:2c4"
    ]
@@ -3110,7 +3110,7 @@
    "id": "m00339",
    "kind": "msg",
    "jp": "%001：（ゲッ……）い、いや、別に……",
-   "en": "",
+   "en": "%001: (Gulp...) N-nothing, really...",
    "refs": [
     "S017.OVL:2e9"
    ]
@@ -3119,7 +3119,7 @@
    "id": "m00340",
    "kind": "msg",
    "jp": "%010：別に、じゃないだろう。大体なんだね、そのふざけた格好は？",
-   "en": "",
+   "en": "%010: \"Nothing,\" you say? And what is that ridiculous outfit supposed to be?",
    "refs": [
     "S017.OVL:30e"
    ]
@@ -3128,7 +3128,7 @@
    "id": "m00341",
    "kind": "msg",
    "jp": "%001：いや、これはその～……（事情を説明したって、分かってくれるわけないよなぁ）",
-   "en": "",
+   "en": "%001: Well, this is, uh... (Even if I explained the situation, there's no way he'd understand)",
    "refs": [
     "S017.OVL:34d"
    ]
@@ -3137,7 +3137,7 @@
    "id": "m00342",
    "kind": "msg",
    "jp": "%010：まあいい、とりあえず交番まで来てもらおうか。",
-   "en": "",
+   "en": "%010: Never mind that. Come with me to the police box.",
    "refs": [
     "S017.OVL:39e"
    ]
@@ -3146,7 +3146,7 @@
    "id": "m00343",
    "kind": "msg",
    "jp": "%001：えっ、そんなぁ。オレ、別に怪しいもんじゃないっスよ。",
-   "en": "",
+   "en": "%001: Huh? Come on. I'm not some suspicious character.",
    "refs": [
     "S017.OVL:3d1"
    ]
@@ -3155,7 +3155,7 @@
    "id": "m00344",
    "kind": "msg",
    "jp": "%010：そんな格好で何を言っとるんだ。日本国中探しても、これほど怪しい奴は滅多にいないぞ！　さあ、とにかく一緒に来い！",
-   "en": "",
+   "en": "%010: Look at your outfit and say that. Search all of Japan and you'd be hard-pressed to find anyone more suspicious! Now come along!",
    "refs": [
     "S017.OVL:40c"
    ]
@@ -3164,7 +3164,7 @@
    "id": "m00345",
    "kind": "msg",
    "jp": "「ガシッ」",
-   "en": "",
+   "en": "*GRAB*",
    "refs": [
     "S017.OVL:481"
    ]
@@ -3173,7 +3173,7 @@
    "id": "m00346",
    "kind": "msg",
    "jp": "%001：ちょ、ちょっと、はなしてくれよ！",
-   "en": "",
+   "en": "%001: H-hey, let go of me!",
    "refs": [
     "S017.OVL:48c"
    ]
@@ -3182,7 +3182,7 @@
    "id": "m00347",
    "kind": "msg",
    "jp": "「ドン」",
-   "en": "",
+   "en": "*SHOVE*",
    "refs": [
     "S017.OVL:4b3"
    ]
@@ -3191,7 +3191,7 @@
    "id": "m00348",
    "kind": "msg",
    "jp": "%010：うわっっ！",
-   "en": "",
+   "en": "%010: Whoa!",
    "refs": [
     "S017.OVL:4bc"
    ]
@@ -3200,7 +3200,7 @@
    "id": "m00349",
    "kind": "msg",
    "jp": "「ドタタタタッ……」",
-   "en": "",
+   "en": "*STUMBLE STUMBLE STUMBLE...*",
    "refs": [
     "S017.OVL:4cd",
     "S055.OVL:2e9"
@@ -3210,7 +3210,7 @@
    "id": "m00350",
    "kind": "msg",
    "jp": "（し、しまった、ちょっと振りほどいただけのつもりが……サイボーグになってパワーアップしたってこと、忘れてたよ……）",
-   "en": "",
+   "en": "(D-damn, I only meant to shake him off... I forgot that becoming a cyborg made me stronger...)",
    "refs": [
     "S017.OVL:4e4"
    ]
@@ -3219,7 +3219,7 @@
    "id": "m00351",
    "kind": "msg",
    "jp": "%010：き、貴っ様～～～っ、本官に暴力を振るったなっ！　こうなったらもう容赦はせんぞ。公務執行妨害で逮捕してやるっ！！",
-   "en": "",
+   "en": "%010: Y-you...! You laid hands on an officer! I won't show any mercy now. I'll arrest you for obstruction of official duties!!",
    "refs": [
     "S017.OVL:559"
    ]
@@ -3228,7 +3228,7 @@
    "id": "m00352",
    "kind": "msg",
    "jp": "%001：あっちゃ～～～……。",
-   "en": "",
+   "en": "%001: Oh crap...",
    "refs": [
     "S017.OVL:5ce"
    ]
@@ -3237,7 +3237,7 @@
    "id": "m00353",
    "kind": "msg",
    "jp": "%001：ふぅ、勝ったぞ……なんて言ってる場合じゃない！　これじゃオレ、犯罪者じゃないか！",
-   "en": "",
+   "en": "%001: Phew, I won... wait, that's not the point! Now I'm a criminal!",
    "refs": [
     "S018.OVL:2c"
    ]
@@ -3246,7 +3246,7 @@
    "id": "m00354",
    "kind": "msg",
    "jp": "%001：まずいなあ……とにかく、警官がのびている間にこの場所を離れないと。",
-   "en": "",
+   "en": "%001: This is bad... I need to get away from here while that cop is still out cold.",
    "refs": [
     "S018.OVL:83"
    ]
@@ -3255,7 +3255,7 @@
    "id": "m00355",
    "kind": "msg",
    "jp": "（そんなものを見ている場合じゃない。早くここから立ち去らないと、まずいことになるぞ）",
-   "en": "",
+   "en": "(This is no time to be looking at that. I need to get out of here fast, or things will get bad)",
    "refs": [
     "S018.OVL:cd"
    ]
@@ -3264,7 +3264,7 @@
    "id": "m00356",
    "kind": "msg",
    "jp": "（もう、聞き込みをする余裕なんてないぞ。さっきの警官が意識を取り戻す前に、どこかへ逃げなきゃ……）",
-   "en": "",
+   "en": "(I don't have time to ask around anymore. I need to run somewhere before that cop regains consciousness...)",
    "refs": [
     "S018.OVL:123"
    ]
@@ -3273,7 +3273,7 @@
    "id": "m00357",
    "kind": "msg",
    "jp": "（そうだな。公園にでも行って、少し休むとするか）",
-   "en": "",
+   "en": "(Yeah. Let's go to the park and rest a bit)",
    "refs": [
     "S018.OVL:187"
    ]
@@ -3282,7 +3282,7 @@
    "id": "m00358",
    "kind": "msg",
    "jp": "%012：……なんだこいつ、へんなバッジつけやがって！　いいからそのバッジ、おれたちによこせよ！",
-   "en": "",
+   "en": "%012: ...What's this guy, wearing a weird badge! Just give us that badge!",
    "refs": [
     "S019.OVL:24"
    ]
@@ -3291,7 +3291,7 @@
    "id": "m00359",
    "kind": "msg",
    "jp": "「ボカッ」",
-   "en": "",
+   "en": "*WHACK*",
    "refs": [
     "S019.OVL:81"
    ]
@@ -3300,7 +3300,7 @@
    "id": "m00360",
    "kind": "msg",
    "jp": "%011：やだいっ！　これはパパとママのだいじなカタミなんだい！",
-   "en": "",
+   "en": "%011: No way! This is a precious memento from my mommy and daddy!",
    "refs": [
     "S019.OVL:8c"
    ]
@@ -3309,7 +3309,7 @@
    "id": "m00361",
    "kind": "msg",
    "jp": "%013：またそのはなしか！　こいつ、ウソばっかりつきやがって！",
-   "en": "",
+   "en": "%013: That story again! This kid's always lying!",
    "refs": [
     "S019.OVL:c9"
    ]
@@ -3318,7 +3318,7 @@
    "id": "m00362",
    "kind": "msg",
    "jp": "「バコッ」",
-   "en": "",
+   "en": "*BAM*",
    "refs": [
     "S019.OVL:106"
    ]
@@ -3327,7 +3327,7 @@
    "id": "m00363",
    "kind": "msg",
    "jp": "（オレの家からほど近いところにある、公園だ）",
-   "en": "",
+   "en": "(It's the park, not far from my house)",
    "refs": [
     "S019.OVL:112",
     "S038.OVL:6cc"
@@ -3337,7 +3337,7 @@
    "id": "m00364",
    "kind": "msg",
    "jp": "%001：こらこらお前たち、二人で一人をイジメるなんて卑怯じゃないか。そんなの、男のすることじゃないぞ！",
-   "en": "",
+   "en": "%001: Hey hey, you two, picking on one kid is cowardly. That's not what men do!",
    "refs": [
     "S019.OVL:140"
    ]
@@ -3346,7 +3346,7 @@
    "id": "m00365",
    "kind": "msg",
    "jp": "%012：なんだこいつ、女のくせに男みたいなしゃべりかたしやがって。それにかっこうもへんだし。",
-   "en": "",
+   "en": "%012: What's with this guy, talking like a man even though she's a girl. And her outfit's weird too.",
    "refs": [
     "S019.OVL:1a5"
    ]
@@ -3355,7 +3355,7 @@
    "id": "m00366",
    "kind": "msg",
    "jp": "%013：お、おい……きょう、学校で先生がいってた『へんたい』ってこいつのことじゃないか？",
-   "en": "",
+   "en": "%013: H-hey... isn't this the \"pervert\" the teacher warned us about at school today?",
    "refs": [
     "S019.OVL:200"
    ]
@@ -3364,7 +3364,7 @@
    "id": "m00367",
    "kind": "msg",
    "jp": "%012：えっ？……そういえば、先生が『アブないかっこうをしたへんな人には気をつけなさい』っていってたな。",
-   "en": "",
+   "en": "%012: Huh? ...Come to think of it, the teacher said \"beware of strange people in dangerous outfits.\"",
    "refs": [
     "S019.OVL:257"
    ]
@@ -3373,7 +3373,7 @@
    "id": "m00368",
    "kind": "msg",
    "jp": "%013：じゃ、じゃあ、オレたち、こいつに○○○なことや×××なことされちゃうのかな？",
-   "en": "",
+   "en": "%013: Th-then, are we gonna get XXX'd and YYY'd by this person?",
    "refs": [
     "S019.OVL:2be"
    ]
@@ -3382,7 +3382,7 @@
    "id": "m00369",
    "kind": "msg",
    "jp": "%012：やっ、やばい、にげよう！",
-   "en": "",
+   "en": "%012: Oh no, let's run!",
    "refs": [
     "S019.OVL:311"
    ]
@@ -3391,7 +3391,7 @@
    "id": "m00370",
    "kind": "msg",
    "jp": "%014：うわぁ～～～～っ……！！",
-   "en": "",
+   "en": "%014: Waaaaah...!!",
    "refs": [
     "S019.OVL:330"
    ]
@@ -3400,7 +3400,7 @@
    "id": "m00371",
    "kind": "msg",
    "jp": "（ん？　なんだか、子供たちがケンカしているようだ……というより、二人がかりで一人の子供をイジメているようだぞ）",
-   "en": "",
+   "en": "(Huh? Looks like the kids are fighting... or rather, two of them are bullying one kid)",
    "refs": [
     "S019.OVL:350"
    ]
@@ -3409,7 +3409,7 @@
    "id": "m00372",
    "kind": "msg",
    "jp": "%011：ありがとう、へんなかっこうのおねえちゃん！",
-   "en": "",
+   "en": "%011: Thank you, weird-looking big sister!",
    "refs": [
     "S020.OVL:4d"
    ]
@@ -3418,7 +3418,7 @@
    "id": "m00373",
    "kind": "msg",
    "jp": "%011：ぼく、まことっていうんだ。おねえちゃんは？",
-   "en": "",
+   "en": "%011: My name's Makoto. What's yours, big sister?",
    "refs": [
     "S020.OVL:7f"
    ]
@@ -3427,7 +3427,7 @@
    "id": "m00374",
    "kind": "msg",
    "jp": "%001：オレはケン……い、いや、お姉ちゃんの名前は、マリリンっていうんだよ。",
-   "en": "",
+   "en": "%001: I'm Ken... n-no, big sister's name is Marilyn.",
    "refs": [
     "S020.OVL:b0"
    ]
@@ -3436,7 +3436,7 @@
    "id": "m00375",
    "kind": "msg",
    "jp": "%011：ふうーん……かわったなまえだね。",
-   "en": "",
+   "en": "%011: Hmm... that's an unusual name.",
    "refs": [
     "S020.OVL:fb"
    ]
@@ -3445,7 +3445,7 @@
    "id": "m00376",
    "kind": "msg",
    "jp": "%001：ね、ねえ、まことくん、その胸につけているバッジ……ちょっと見せてもらえないかな？",
-   "en": "",
+   "en": "%001: H-hey, Makoto-kun, that badge you're wearing on your chest... could you let me see it for a bit?",
    "refs": [
     "S020.OVL:123"
    ]
@@ -3454,7 +3454,7 @@
    "id": "m00377",
    "kind": "msg",
    "jp": "%011：これ？……ホントはこれ、だれにもさわらせたことないんだけど、おねえちゃんならいいや。でもちょっとだけだよ、はい。",
-   "en": "",
+   "en": "%011: This? ...I've never let anyone touch this before, but I guess it's okay for you, big sister. But just for a little bit, here.",
    "refs": [
     "S020.OVL:17a"
    ]
@@ -3463,7 +3463,7 @@
    "id": "m00378",
    "kind": "msg",
    "jp": "（やっぱり……！　オレが研究室で見つけたものとまったく同じバッジだ……でも、どうしてこの子が……？）",
-   "en": "",
+   "en": "(Just as I thought...! It's the exact same badge I found in the lab... but why does this kid have it...?)",
    "refs": [
     "S020.OVL:1f3"
    ]
@@ -3472,7 +3472,7 @@
    "id": "m00379",
    "kind": "msg",
    "jp": "%001：ありがとう……もういいよ。",
-   "en": "",
+   "en": "%001: Thanks... that's enough.",
    "refs": [
     "S020.OVL:25a"
    ]
@@ -3481,7 +3481,7 @@
    "id": "m00380",
    "kind": "msg",
    "jp": "%001：ねえ、まことくん……まことくんは、どうやってこのバッジを手に入れたんだい？",
-   "en": "",
+   "en": "%001: Hey, Makoto-kun... how did you get this badge?",
    "refs": [
     "S020.OVL:27c"
    ]
@@ -3490,7 +3490,7 @@
    "id": "m00381",
    "kind": "msg",
    "jp": "%011：……ぼくね、せんしゅうの日よう日、パパとママといっしょに番台山へハイキングにいって、そのときにこれ、おちてたのを見つけたんだ。",
-   "en": "",
+   "en": "%011: ...Well, last Sunday, I went hiking with Mommy and Daddy to Bandai Mountain, and that's when I found this lying on the ground.",
    "refs": [
     "S020.OVL:2cd"
    ]
@@ -3499,7 +3499,7 @@
    "id": "m00382",
    "kind": "msg",
    "jp": "%001：番台山か……。",
-   "en": "",
+   "en": "%001: Bandai Mountain, huh...",
    "refs": [
     "S020.OVL:352"
    ]
@@ -3508,7 +3508,7 @@
    "id": "m00383",
    "kind": "msg",
    "jp": "%011：うん……それでね……それで、グスッ……パパとママ……グスッ……トラに食べられちゃったんだ……グスッ……。",
-   "en": "",
+   "en": "%011: Yeah... and then... *sniffle* ...Mommy and Daddy... *sniffle* ...got eaten by a tiger... *sniffle*...",
    "refs": [
     "S020.OVL:367"
    ]
@@ -3517,7 +3517,7 @@
    "id": "m00384",
    "kind": "msg",
    "jp": "%001：トラ……？　ハッハッハッ……まことくん、ウソをついちゃいけないな。日本の山にはトラなんか棲んでないんだよ。",
-   "en": "",
+   "en": "%001: A tiger...? Hahaha... Makoto-kun, you shouldn't tell lies. Tigers don't live in the mountains of Japan.",
    "refs": [
     "S020.OVL:3d6"
    ]
@@ -3526,7 +3526,7 @@
    "id": "m00385",
    "kind": "msg",
    "jp": "%011：ウソなんかじゃないよっ！　ほんとに、トラがいて……グスッ……パパとママが……グスッ、グスッ……。",
-   "en": "",
+   "en": "%011: It's not a lie! There really was a tiger... *sniffle* ...and Mommy and Daddy... *sniffle, sniffle*...",
    "refs": [
     "S020.OVL:447"
    ]
@@ -3535,7 +3535,7 @@
    "id": "m00386",
    "kind": "msg",
    "jp": "%001：……わかった。お姉ちゃん、その話信じるよ。だからもう泣くなよ、なっ！？",
-   "en": "",
+   "en": "%001: ...Okay. Big sister believes your story. So stop crying, alright!?",
    "refs": [
     "S020.OVL:4af"
    ]
@@ -3544,7 +3544,7 @@
    "id": "m00387",
    "kind": "msg",
    "jp": "%011：でも……ヒック、ヒック……。",
-   "en": "",
+   "en": "%011: But... *hic, hic*...",
    "refs": [
     "S020.OVL:4fc"
    ]
@@ -3553,7 +3553,7 @@
    "id": "m00388",
    "kind": "msg",
    "jp": "%001：……よしっ。じゃあ、お姉ちゃんがそのトラをやっつけてやるよ。パパとママのカタキ討ちだ！",
-   "en": "",
+   "en": "%001: ...Alright. Then big sister will defeat that tiger for you. It'll be revenge for your mommy and daddy!",
    "refs": [
     "S020.OVL:51f"
    ]
@@ -3562,7 +3562,7 @@
    "id": "m00389",
    "kind": "msg",
    "jp": "%011：……でも、トラって強いんだよ。おねえちゃんだって、きっと食べられちゃうよ。",
-   "en": "",
+   "en": "%011: ...But tigers are strong. You'd probably get eaten too, big sister.",
    "refs": [
     "S020.OVL:57c"
    ]
@@ -3571,7 +3571,7 @@
    "id": "m00390",
    "kind": "msg",
    "jp": "%001：だーいじょうぶ！　こう見えても、お姉ちゃんはメッチャクチャ強いんだからっ！",
-   "en": "",
+   "en": "%001: Don't worry! I may not look it, but big sister is super duper strong!",
    "refs": [
     "S020.OVL:5cd"
    ]
@@ -3580,7 +3580,7 @@
    "id": "m00391",
    "kind": "msg",
    "jp": "%011：……ほんと？　じゃ、ほんとにやっつけてくれるの！？",
-   "en": "",
+   "en": "%011: ...Really? Then you'll really defeat it!?",
    "refs": [
     "S020.OVL:61e"
    ]
@@ -3589,7 +3589,7 @@
    "id": "m00392",
    "kind": "msg",
    "jp": "%001：ああ。男と男の……じゃなかった、男と女の約束だ！　だから、まことくんももう、泣いたりなんかしちゃだめだぞ！",
-   "en": "",
+   "en": "%001: Yeah. A promise between man and... no wait, between a man and a woman! So you can't cry anymore either, Makoto-kun!",
    "refs": [
     "S020.OVL:657"
    ]
@@ -3598,7 +3598,7 @@
    "id": "m00393",
    "kind": "msg",
    "jp": "%011：うん、わかった！　じゃ、ゆーびきーりげーんまーん……。",
-   "en": "",
+   "en": "%011: Okay, I got it! Then, pinky promise...",
    "refs": [
     "S020.OVL:6c8"
    ]
@@ -3607,7 +3607,7 @@
    "id": "m00394",
    "kind": "msg",
    "jp": "%011：あっ。ぼくもう、かえんなきゃ。おばさんがしんぱいしてるかもしれないし……。",
-   "en": "",
+   "en": "%011: Oh. I have to go home now. My aunt might be worried about me...",
    "refs": [
     "S020.OVL:706"
    ]
@@ -3616,7 +3616,7 @@
    "id": "m00395",
    "kind": "msg",
    "jp": "%001：そうか。じゃ、気をつけて帰るんだぞ。",
-   "en": "",
+   "en": "%001: I see. Then be careful going home.",
    "refs": [
     "S020.OVL:757"
    ]
@@ -3625,7 +3625,7 @@
    "id": "m00396",
    "kind": "msg",
    "jp": "%011：うん！　きっとパパとママのカタキとってねっ！",
-   "en": "",
+   "en": "%011: Yeah! Make sure you get revenge for Mommy and Daddy!",
    "refs": [
     "S020.OVL:782"
    ]
@@ -3634,7 +3634,7 @@
    "id": "m00397",
    "kind": "msg",
    "jp": "（ん？……こ、このバッジは……！）",
-   "en": "",
+   "en": "(Huh? ...T-this badge is...!)",
    "refs": [
     "S020.OVL:7b6"
    ]
@@ -3643,7 +3643,7 @@
    "id": "m00398",
    "kind": "msg",
    "jp": "（どうしてこの子が、このバッジを……？）",
-   "en": "",
+   "en": "(Why does this kid have this badge...?)",
    "refs": [
     "S020.OVL:7da"
    ]
@@ -3652,7 +3652,7 @@
    "id": "m00399",
    "kind": "msg",
    "jp": "（なかなか、素直でかわいい男の子じゃないか）",
-   "en": "",
+   "en": "(He's a pretty honest and cute little boy)",
    "refs": [
     "S020.OVL:804"
    ]
@@ -3661,7 +3661,7 @@
    "id": "m00400",
    "kind": "msg",
    "jp": "（うーん……どうもこの子の目は、ウソをついているようには見えないな）",
-   "en": "",
+   "en": "(Hmm... his eyes don't look like he's lying)",
    "refs": [
     "S020.OVL:832"
    ]
@@ -3670,7 +3670,7 @@
    "id": "m00401",
    "kind": "msg",
    "jp": "（オレの家から程近いところにある公園だ）",
-   "en": "",
+   "en": "(It's the park, not far from my house)",
    "refs": [
     "S020.OVL:878",
     "S021.OVL:31a"
@@ -3680,7 +3680,7 @@
    "id": "m00402",
    "kind": "msg",
    "jp": "%001：トラかあ……動物園から逃げ出したりでもしたのかな？",
-   "en": "",
+   "en": "%001: A tiger, huh... I wonder if it escaped from a zoo or something?",
    "refs": [
     "S021.OVL:1a"
    ]
@@ -3689,7 +3689,7 @@
    "id": "m00403",
    "kind": "msg",
    "jp": "「ピーッ、ピーッ、ピーッ……」",
-   "en": "",
+   "en": "*BEEP, BEEP, BEEP...*",
    "refs": [
     "S021.OVL:53"
    ]
@@ -3698,7 +3698,7 @@
    "id": "m00404",
    "kind": "msg",
    "jp": "%001：ん？……何の音だろう？",
-   "en": "",
+   "en": "%001: Huh? ...What's that sound?",
    "refs": [
     "S021.OVL:72"
    ]
@@ -3707,7 +3707,7 @@
    "id": "m00405",
    "kind": "msg",
    "jp": "%002：フッフッフッ……どうだ、驚いたか？　お前の体には、通信機能までついておるのだ！……で、どうだ？　何か手掛かりはつかめたか？",
-   "en": "",
+   "en": "%002: Heh heh heh... Surprised? Your body even has a communication function! ...So, how's it going? Have you found any clues?",
    "refs": [
     "S021.OVL:92"
    ]
@@ -3716,7 +3716,7 @@
    "id": "m00406",
    "kind": "msg",
    "jp": "%001：ああ……たった今、番台山であのバッジを拾ったという子供に出会ったんだ。",
-   "en": "",
+   "en": "%001: Yeah... I just met a kid who said he found that badge on Bandai Mountain.",
    "refs": [
     "S021.OVL:113"
    ]
@@ -3725,7 +3725,7 @@
    "id": "m00407",
    "kind": "msg",
    "jp": "%002：なにっ……よし、マリリンよ。さっそく電車に乗って番台山へ急ぐのだ！",
-   "en": "",
+   "en": "%002: What...! Good, Marilyn. Hurry and take the train to Bandai Mountain at once!",
    "refs": [
     "S021.OVL:160"
    ]
@@ -3734,7 +3734,7 @@
    "id": "m00408",
    "kind": "msg",
    "jp": "%001：電車……って、あの～、空を飛ぶとかそういう機能は……？",
-   "en": "",
+   "en": "%001: The train...? Um, don't you have something like a flying function...?",
    "refs": [
     "S021.OVL:1a9"
    ]
@@ -3743,7 +3743,7 @@
    "id": "m00409",
    "kind": "msg",
    "jp": "%002：ない。",
-   "en": "",
+   "en": "%002: No.",
    "refs": [
     "S021.OVL:1e6"
    ]
@@ -3752,7 +3752,7 @@
    "id": "m00410",
    "kind": "msg",
    "jp": "%001：だったら、バイクとか車とか、そういうカッコイイ乗り物は……？",
-   "en": "",
+   "en": "%001: Then what about a motorcycle or a car, something cool like that...?",
    "refs": [
     "S021.OVL:1f3"
    ]
@@ -3761,7 +3761,7 @@
    "id": "m00411",
    "kind": "msg",
    "jp": "%002：アホかお前。たとえそんな乗り物があったとしても、お前は免許を持ってなかろーが。いいか、無免許運転は交通違反なんだぞ！",
-   "en": "",
+   "en": "%002: Don't be an idiot. Even if you had such a vehicle, you don't have a license. Listen, driving without a license is a traffic violation!",
    "refs": [
     "S021.OVL:236"
    ]
@@ -3770,7 +3770,7 @@
    "id": "m00412",
    "kind": "msg",
    "jp": "%002：さあ、ぐだぐだ言っとらんで、早く番台山へ行けっ！",
-   "en": "",
+   "en": "%002: Now, stop your grumbling and get to Bandai Mountain quickly!",
    "refs": [
     "S021.OVL:2c2"
    ]
@@ -3779,7 +3779,7 @@
    "id": "m00413",
    "kind": "msg",
    "jp": "%001：……ったく。",
-   "en": "",
+   "en": "%001: ...Honestly.",
    "refs": [
     "S021.OVL:306"
    ]
@@ -3788,7 +3788,7 @@
    "id": "m00414",
    "kind": "msg",
    "jp": "%001：よし、さっそく駅へ行くとしよう。",
-   "en": "",
+   "en": "%001: Alright, let's head to the station right away.",
    "refs": [
     "S021.OVL:344"
    ]
@@ -3797,7 +3797,7 @@
    "id": "m00415",
    "kind": "msg",
    "jp": "%001：駅だ……。",
-   "en": "",
+   "en": "%001: The station...",
    "refs": [
     "S021.OVL:36f"
    ]
@@ -3806,7 +3806,7 @@
    "id": "m00416",
    "kind": "msg",
    "jp": "%001：ん？　今、入ってきたのは番台山行きの電車じゃないか？……急いで乗らなきゃ！",
-   "en": "",
+   "en": "%001: Huh? Isn't that the train to Bandai Mountain that just pulled in? ...I've gotta hurry and get on!",
    "refs": [
     "S021.OVL:380"
    ]
@@ -3815,7 +3815,7 @@
    "id": "m00417",
    "kind": "msg",
    "jp": "%001：ふー、なんとか間に合ったな……。",
-   "en": "",
+   "en": "%001: Whew, I made it just in time...",
    "refs": [
     "S021.OVL:3d3"
    ]
@@ -3824,7 +3824,7 @@
    "id": "m00418",
    "kind": "msg",
    "jp": "「ガタンゴトン、ガタンゴトン……」",
-   "en": "",
+   "en": "*CLICKETY-CLACK, CLICKETY-CLACK...*",
    "refs": [
     "S021.OVL:3fa",
     "S021.OVL:4c6",
@@ -3835,7 +3835,7 @@
    "id": "m00419",
    "kind": "msg",
    "jp": "%015：……おい、ちょっと見ろよ、あの女。あんな格好で電車に乗って、恥ずかしくないのかな？",
-   "en": "",
+   "en": "%015: ...Hey, look at that woman. Riding the train dressed like that, isn't she embarrassed?",
    "refs": [
     "S021.OVL:41d"
    ]
@@ -3844,7 +3844,7 @@
    "id": "m00420",
    "kind": "msg",
    "jp": "%016：さあ……ただの目立ちたがり屋じゃないのか？",
-   "en": "",
+   "en": "%016: Who knows... isn't she just an attention seeker?",
    "refs": [
     "S021.OVL:476"
    ]
@@ -3853,7 +3853,7 @@
    "id": "m00421",
    "kind": "msg",
    "jp": "（……気にしないようにしよう）",
-   "en": "",
+   "en": "(...I'll try not to pay attention)",
    "refs": [
     "S021.OVL:4a7"
    ]
@@ -3862,7 +3862,7 @@
    "id": "m00422",
    "kind": "msg",
    "jp": "%017：ママー、あそこにへんなひとがいるよー？",
-   "en": "",
+   "en": "%017: Mommy, there's a weird person over there!",
    "refs": [
     "S021.OVL:4e9"
    ]
@@ -3871,7 +3871,7 @@
    "id": "m00423",
    "kind": "msg",
    "jp": "%018：これっ、指を差すんじゃありません！……指が腐るでしょっ。",
-   "en": "",
+   "en": "%018: Now, don't point your finger! ...Your finger will rot, you know.",
    "refs": [
     "S021.OVL:516"
    ]
@@ -3880,7 +3880,7 @@
    "id": "m00424",
    "kind": "msg",
    "jp": "（…………古典的だな）",
-   "en": "",
+   "en": "(...How old-fashioned)",
    "refs": [
     "S021.OVL:555"
    ]
@@ -3889,7 +3889,7 @@
    "id": "m00425",
    "kind": "msg",
    "jp": "%019：ばんだいさん～～、ばんだいさんにとうちゃくぅ～～～。",
-   "en": "",
+   "en": "%019: Bandai-san~, we've arrived at Bandai-san~.",
    "refs": [
     "S021.OVL:58f"
    ]
@@ -3898,7 +3898,7 @@
    "id": "m00426",
    "kind": "msg",
    "jp": "%001：おっ、もう着いたのか。降りなくっちゃ。",
-   "en": "",
+   "en": "%001: Oh, we're already here. I need to get off.",
    "refs": [
     "S021.OVL:5ca"
    ]
@@ -3907,7 +3907,7 @@
    "id": "m00427",
    "kind": "msg",
    "jp": "%001：ふう、ここが番台山か……。",
-   "en": "",
+   "en": "%001: Whew, so this is Bandai Mountain...",
    "refs": [
     "S022.OVL:37"
    ]
@@ -3916,7 +3916,7 @@
    "id": "m00428",
    "kind": "msg",
    "jp": "%020：おう、変な格好の娘さん。こんなところで何しとるだ？",
-   "en": "",
+   "en": "%020: Oh, miss in the strange outfit. What are you doing in a place like this?",
    "refs": [
     "S022.OVL:5a"
    ]
@@ -3925,7 +3925,7 @@
    "id": "m00429",
    "kind": "msg",
    "jp": "（……しっかし、とんでもないド田舎だなあ）",
-   "en": "",
+   "en": "(...Man, this is the middle of nowhere)",
    "refs": [
     "S022.OVL:94"
    ]
@@ -3934,7 +3934,7 @@
    "id": "m00430",
    "kind": "msg",
    "jp": "%001：オレ、今からこの番台山に登るところなんだけど……おじさんは？",
-   "en": "",
+   "en": "%001: I'm about to climb this Bandai Mountain... and you, mister?",
    "refs": [
     "S022.OVL:c0"
    ]
@@ -3943,7 +3943,7 @@
    "id": "m00431",
    "kind": "msg",
    "jp": "%020：なに、あの山に登るじゃと？　それはやめといた方がええぞ。実はな、最近、あの山にはワニが出るという噂が流れとるんじゃ。",
-   "en": "",
+   "en": "%020: What, you're going to climb that mountain? You'd best not. You see, lately there's been a rumor that crocodiles have appeared on that mountain.",
    "refs": [
     "S022.OVL:103"
    ]
@@ -3952,7 +3952,7 @@
    "id": "m00432",
    "kind": "msg",
    "jp": "%001：ワニ？",
-   "en": "",
+   "en": "%001: Crocodiles?",
    "refs": [
     "S022.OVL:17e"
    ]
@@ -3961,7 +3961,7 @@
    "id": "m00433",
    "kind": "msg",
    "jp": "%020：そうじゃ。じゃからワシも、そいつが村に降りてきたときのために、こうやって鉄砲持って見回りしとるんじゃよ。",
-   "en": "",
+   "en": "%020: That's right. That's why I'm patrolling with my gun like this, in case they come down to the village.",
    "refs": [
     "S022.OVL:18b"
    ]
@@ -3970,7 +3970,7 @@
    "id": "m00434",
    "kind": "msg",
    "jp": "%001：さっきがトラで、今度はワニかよ……で、おじさんはそのワニを見たんですか？",
-   "en": "",
+   "en": "%001: First tigers, now crocodiles... So, have you seen these crocodiles, mister?",
    "refs": [
     "S022.OVL:1fb"
    ]
@@ -3979,7 +3979,7 @@
    "id": "m00435",
    "kind": "msg",
    "jp": "%020：いや、ワシは見とらん。ワニが出るというのは、あの山の森の奥の方らしいからな。あそこの森は、迷路のように道が入り組んでおって、普段はほとんど人が寄りつかんところなんじゃ。",
-   "en": "",
+   "en": "%020: No, I haven't seen them. They say the crocodiles are deep in the forest of that mountain. The paths in that forest are as tangled as a maze, and hardly anyone goes near it normally.",
    "refs": [
     "S022.OVL:24a"
    ]
@@ -3988,7 +3988,7 @@
    "id": "m00436",
    "kind": "msg",
    "jp": "%001：なるほど……。",
-   "en": "",
+   "en": "%001: I see...",
    "refs": [
     "S022.OVL:2f9",
     "S033.OVL:70f"
@@ -3998,7 +3998,7 @@
    "id": "m00437",
    "kind": "msg",
    "jp": "（田舎もん丸出しだけど、人の良さそうなおじさんだな）",
-   "en": "",
+   "en": "(He's a total country bumpkin, but he seems like a nice old man)",
    "refs": [
     "S022.OVL:30f"
    ]
@@ -4007,7 +4007,7 @@
    "id": "m00438",
    "kind": "msg",
    "jp": "%001：おじさん、親切にありがとう。オレはこれで……。",
-   "en": "",
+   "en": "%001: Thanks for your kindness, mister. I'll be going now...",
    "refs": [
     "S022.OVL:345"
    ]
@@ -4016,7 +4016,7 @@
    "id": "m00439",
    "kind": "msg",
    "jp": "%020：あんた、あの山に登るんじゃないだろうな？",
-   "en": "",
+   "en": "%020: You're not going to climb that mountain, are you?",
    "refs": [
     "S022.OVL:37a"
    ]
@@ -4025,7 +4025,7 @@
    "id": "m00440",
    "kind": "msg",
    "jp": "%001：いやいや、ちょっとその辺を散歩するだけです（なんて、ウソだけど）。",
-   "en": "",
+   "en": "%001: No no, I'm just taking a little walk around here (yeah, right, that's a lie).",
    "refs": [
     "S022.OVL:3a9"
    ]
@@ -4034,7 +4034,7 @@
    "id": "m00441",
    "kind": "msg",
    "jp": "%020：そうか。ほんじゃ、気をつけてな。",
-   "en": "",
+   "en": "%020: I see. Well then, take care.",
    "refs": [
     "S022.OVL:3f2"
    ]
@@ -4043,7 +4043,7 @@
    "id": "m00442",
    "kind": "msg",
    "jp": "%001：ふぅーっ、ここまで登ってくるのも結構大変だったな。",
-   "en": "",
+   "en": "%001: Whew, climbing all the way up here was quite a workout.",
    "refs": [
     "S023.OVL:1f"
    ]
@@ -4052,7 +4052,7 @@
    "id": "m00443",
    "kind": "msg",
    "jp": "%001：……どうやらここから、あのおじさんが言ってた迷路のような森へ入っていくようだな。",
-   "en": "",
+   "en": "%001: ...Looks like from here I enter the maze-like forest that old man was talking about.",
    "refs": [
     "S023.OVL:58"
    ]
@@ -4061,7 +4061,7 @@
    "id": "m00444",
    "kind": "msg",
    "jp": "（……木々がうっそうと茂って、まるで樹海だな。これなら、確かに何が出てきてもおかしくないような気もするけど……）",
-   "en": "",
+   "en": "(...The trees are so thick, it's like a sea of trees. With this, I wouldn't be surprised if anything came out...)",
    "refs": [
     "S023.OVL:b0"
    ]
@@ -4070,7 +4070,7 @@
    "id": "m00445",
    "kind": "msg",
    "jp": "%001：よしっ。とにかく、この先を進んでみよう。",
-   "en": "",
+   "en": "%001: Alright. Anyway, let's keep going forward.",
    "refs": [
     "S023.OVL:122"
    ]
@@ -4079,7 +4079,7 @@
    "id": "m00446",
    "kind": "msg",
    "jp": "%001：ん？　ここは……。",
-   "en": "",
+   "en": "%001: Huh? This is...",
    "refs": [
     "S024.OVL:1a"
    ]
@@ -4088,7 +4088,7 @@
    "id": "m00447",
    "kind": "msg",
    "jp": "%001：こんなところに小屋があるぞ。なになに……『世界はあたしたちのものよ、ウッフーン軍団』番台山支部……ホントにこれでも秘密組織なのか？",
-   "en": "",
+   "en": "%001: There's a hut in a place like this. Let's see... \"The World Is Ours, Ooh-hoon Corps, Bandai Mountain Branch\"... Is this really a secret organization?",
    "refs": [
     "S024.OVL:34"
    ]
@@ -4097,7 +4097,7 @@
    "id": "m00448",
    "kind": "msg",
    "jp": "%021：何者か知りませんけど、よくここまで来れましたね。",
-   "en": "",
+   "en": "%021: I don't know who you are, but I'm impressed you made it this far.",
    "refs": [
     "S024.OVL:bd"
    ]
@@ -4106,7 +4106,7 @@
    "id": "m00449",
    "kind": "msg",
    "jp": "（……どうやら、ここで行き止まりのようだな）",
-   "en": "",
+   "en": "(...Looks like this is a dead end)",
    "refs": [
     "S024.OVL:f5"
    ]
@@ -4115,7 +4115,7 @@
    "id": "m00450",
    "kind": "msg",
    "jp": "%001：君は……？",
-   "en": "",
+   "en": "%001: And you are...?",
    "refs": [
     "S025.OVL:34"
    ]
@@ -4124,7 +4124,7 @@
    "id": "m00451",
    "kind": "msg",
    "jp": "%021：私は、『世界はあたしたちのものよ、ウッフーン軍団』バイオ部隊隊長のジューシー奈緒美よ。",
-   "en": "",
+   "en": "%021: I am the captain of the bio division of the \"World Is Ours, Ooh-hoon Corps\"—Juicy Naomi.",
    "refs": [
     "S025.OVL:45"
    ]
@@ -4133,7 +4133,7 @@
    "id": "m00452",
    "kind": "msg",
    "jp": "%001：……ここら一帯にトラやワニを放したのは、お前らの仕業だな！？",
-   "en": "",
+   "en": "%001: ...So it was you people who released those tigers and crocodiles around here!?",
    "refs": [
     "S025.OVL:a3"
    ]
@@ -4142,7 +4142,7 @@
    "id": "m00453",
    "kind": "msg",
    "jp": "%021：そうよ。この秘密支部の存在を他人に知られては困りますからね、人間が近づけないようにする必要があったのよ。",
-   "en": "",
+   "en": "%021: That's right. We can't have outsiders learning of this secret branch's existence, so we needed to keep people away.",
    "refs": [
     "S025.OVL:e6"
    ]
@@ -4151,7 +4151,7 @@
    "id": "m00454",
    "kind": "msg",
    "jp": "%001：くっそぅ～っ、お前らのせいでまことくんの両親が……",
-   "en": "",
+   "en": "%001: Damn you... because of you people, Makoto-kun's parents...",
    "refs": [
     "S025.OVL:155"
    ]
@@ -4160,7 +4160,7 @@
    "id": "m00455",
    "kind": "msg",
    "jp": "%021：さぁて、ここを知られてしまった以上、あなたにも死んでもらうとするわね。まずは『巨大ガマ』の登場よ！",
-   "en": "",
+   "en": "%021: Well now, since you've learned of this place, you'll have to die. First, let me introduce the \"Giant Toad\"!",
    "refs": [
     "S025.OVL:18f"
    ]
@@ -4169,7 +4169,7 @@
    "id": "m00456",
    "kind": "msg",
    "jp": "%021：……なかなかやるわね。でも、次はさっきのようにはいかないわよ。さあ『巨大ゼミ』よ、かかりなさい！",
-   "en": "",
+   "en": "%021: ...Not bad. But the next one won't be like before. Come, \"Giant Cicada\", attack!",
    "refs": [
     "S025.OVL:1fa"
    ]
@@ -4178,7 +4178,7 @@
    "id": "m00457",
    "kind": "msg",
    "jp": "%021：……どうやらあなた、ただの人間ではないようね。まあいいわ、今度こそこれで最後、『ミニゾウ』の出番よ！",
-   "en": "",
+   "en": "%021: ...It seems you're not an ordinary human. Fine, this time it's the last one—\"Mini Elephant\", your turn!",
    "refs": [
     "S025.OVL:263"
    ]
@@ -4187,7 +4187,7 @@
    "id": "m00458",
    "kind": "msg",
    "jp": "%001：ミ、ミニゾウ……？",
-   "en": "",
+   "en": "%001: M-Mini Elephant...?",
    "refs": [
     "S025.OVL:2ce"
    ]
@@ -4196,7 +4196,7 @@
    "id": "m00459",
    "kind": "msg",
    "jp": "（おおっ、これはなかなかオイシソーな……なんて言ってるヒマはないんだろうな）",
-   "en": "",
+   "en": "(Oh, that looks pretty tasty... wait, I don't have time for that)",
    "refs": [
     "S025.OVL:2eb",
     "S026.OVL:126"
@@ -4206,7 +4206,7 @@
    "id": "m00460",
    "kind": "msg",
    "jp": "%001：それにしても……ボロい建物だなあ。",
-   "en": "",
+   "en": "%001: Man... this is a shabby building.",
    "refs": [
     "S025.OVL:339"
    ]
@@ -4215,7 +4215,7 @@
    "id": "m00461",
    "kind": "msg",
    "jp": "%021：大きなお世話よ！　見かけだけで判断しないで。",
-   "en": "",
+   "en": "%021: Mind your own business! Don't judge by appearances.",
    "refs": [
     "S025.OVL:362"
    ]
@@ -4224,7 +4224,7 @@
    "id": "m00462",
    "kind": "msg",
    "jp": "（木がうっそうと繁っている。他に人の気配は……ないな）",
-   "en": "",
+   "en": "(The trees are thick. No other signs of people... none)",
    "refs": [
     "S025.OVL:396",
     "S026.OVL:192"
@@ -4234,7 +4234,7 @@
    "id": "m00463",
    "kind": "msg",
    "jp": "%021：し、しまったわ……巨大化はいいとしても、ゾウを小型化したのは意味がなかったわ。",
-   "en": "",
+   "en": "%021: D-damn... making things giant was fine, but shrinking the elephant was pointless.",
    "refs": [
     "S026.OVL:33"
    ]
@@ -4243,7 +4243,7 @@
    "id": "m00464",
    "kind": "msg",
    "jp": "%001：……あんた、ホントはバカだろ。",
-   "en": "",
+   "en": "%001: ...You're actually an idiot, aren't you.",
    "refs": [
     "S026.OVL:88"
    ]
@@ -4252,7 +4252,7 @@
    "id": "m00465",
    "kind": "msg",
    "jp": "%021：ふっ……でも、これで楽しみが出来たわけね。やっと、私の戦闘能力を存分に発揮するときが来たわ……さあ、いくわよっ！",
-   "en": "",
+   "en": "%021: Heh... but now I have something to look forward to. At last, the time has come for me to fully display my combat abilities... Now, here I come!",
    "refs": [
     "S026.OVL:ae"
    ]
@@ -4261,7 +4261,7 @@
    "id": "m00466",
    "kind": "msg",
    "jp": "（ホンットに、ボロい建物だ）",
-   "en": "",
+   "en": "(Seriously, what a shabby building)",
    "refs": [
     "S026.OVL:174"
    ]
@@ -4270,7 +4270,7 @@
    "id": "m00467",
    "kind": "msg",
    "jp": "%001：ふぅ、終わった。しかし親父のヤツ、とんでもない機能を付けやがったな……うれしいけど。",
-   "en": "",
+   "en": "%001: Whew, that's over. But the old man installed some incredible functions... not that I'm complaining.",
    "refs": [
     "S027.OVL:26"
    ]
@@ -4279,7 +4279,7 @@
    "id": "m00468",
    "kind": "msg",
    "jp": "%021：……う、うぅ……わ、私はいったい……？",
-   "en": "",
+   "en": "%021: ...Ugh... w-what happened to me...?",
    "refs": [
     "S027.OVL:82"
    ]
@@ -4288,7 +4288,7 @@
    "id": "m00469",
    "kind": "msg",
    "jp": "%001：私はいったい、って……何も覚えてないの？",
-   "en": "",
+   "en": "%001: \"What happened to me\"...? You don't remember anything?",
    "refs": [
     "S027.OVL:af"
    ]
@@ -4297,7 +4297,7 @@
    "id": "m00470",
    "kind": "msg",
    "jp": "%021：い、いえ、覚えてはいるんですけど……なんだか、自分が自分じゃなかったような……",
-   "en": "",
+   "en": "%021: N-no, I remember... but it's like I wasn't myself...",
    "refs": [
     "S027.OVL:de"
    ]
@@ -4306,7 +4306,7 @@
    "id": "m00471",
    "kind": "msg",
    "jp": "%001：……じゃ、いままでの行動は自分の意志じゃなかったってこと？",
-   "en": "",
+   "en": "%001: ...So your actions until now weren't of your own free will?",
    "refs": [
     "S027.OVL:133"
    ]
@@ -4315,7 +4315,7 @@
    "id": "m00472",
    "kind": "msg",
    "jp": "%021：よく……わかりません。ただ、なんとなく誰かに操られていたような……%001：うぅーむ……。",
-   "en": "",
+   "en": "%021: I'm... not sure. It just felt like someone was controlling me... %001: Hmm...",
    "refs": [
     "S027.OVL:174"
    ]
@@ -4324,7 +4324,7 @@
    "id": "m00473",
    "kind": "msg",
    "jp": "%021：……私、帝国理科大学で生物学の研究をしていたんです。それが、三ヶ月くらい前に変な格好をした女の人が現れて『あなたは私たちに必要な人材よ』って……",
-   "en": "",
+   "en": "%021: ...I was doing biology research at Imperial Science University. Then, about three months ago, a strangely dressed woman appeared and said \"You're exactly the kind of person we need\"...",
    "refs": [
     "S027.OVL:1d2"
    ]
@@ -4333,7 +4333,7 @@
    "id": "m00474",
    "kind": "msg",
    "jp": "%021：……それで、その女の人の目を見ているうちになにがなんだかわからなくなって、それからは誰かに命令されたわけでもないのに、ここでトラやワニを放し飼いにしたり、怪物の研究をしたり……。",
-   "en": "",
+   "en": "%021: ...And as I looked into that woman's eyes, I lost all sense of what was happening. After that, even without being ordered by anyone, I was here releasing tigers and crocodiles, researching monsters...",
    "refs": [
     "S027.OVL:269"
    ]
@@ -4342,7 +4342,7 @@
    "id": "m00475",
    "kind": "msg",
    "jp": "%001：そうか……きっと、催眠術か何かで誰かに操られてたんだな……。",
-   "en": "",
+   "en": "%001: I see... you must have been controlled by someone through hypnosis or something...",
    "refs": [
     "S027.OVL:322"
    ]
@@ -4351,7 +4351,7 @@
    "id": "m00476",
    "kind": "msg",
    "jp": "%004：オーッホッホッホッホッ。何者かは知らないけど、ジューシー奈緒美を倒すとは、なかなかやるわね。",
-   "en": "",
+   "en": "%004: OH-HO-HO-HO-HO. I don't know who you are, but defeating Juicy Naomi is quite impressive.",
    "refs": [
     "S027.OVL:365"
    ]
@@ -4360,7 +4360,7 @@
    "id": "m00477",
    "kind": "msg",
    "jp": "（彼女は、エクスタシーに達した後でぐったりしているようだ）",
-   "en": "",
+   "en": "(She seems to be limp after reaching ecstasy)",
    "refs": [
     "S027.OVL:3c9"
    ]
@@ -4369,7 +4369,7 @@
    "id": "m00478",
    "kind": "msg",
    "jp": "（どうやらこれは、彼女に詳しい事情を聞いてみる必要がありそうだな……）",
-   "en": "",
+   "en": "(It seems I need to ask her for the full details...)",
    "refs": [
     "S027.OVL:405"
    ]
@@ -4378,7 +4378,7 @@
    "id": "m00479",
    "kind": "msg",
    "jp": "%001：んっ！？　誰だ、お前はッ！？",
-   "en": "",
+   "en": "%001: Huh!? Who are you!?",
    "refs": [
     "S028.OVL:1a"
    ]
@@ -4387,7 +4387,7 @@
    "id": "m00480",
    "kind": "msg",
    "jp": "%004：ホーッホッホッホッ、この格好を見て分からないかしら？",
-   "en": "",
+   "en": "%004: HO-HO-HO-HO, can't you tell from this outfit?",
    "refs": [
     "S028.OVL:3d"
    ]
@@ -4396,7 +4396,7 @@
    "id": "m00481",
    "kind": "msg",
    "jp": "%001：う～～ん、『ラ・×ーヌ』の星じゃなさそうだし……どう見てもＳＭクラブの女王か、頭のオカシイただの露出狂の女、だな。",
-   "en": "",
+   "en": "%001: Hmm... you don't look like a star from \"La Siene\"... if anything, you look like an SM club dominatrix or just a crazy exhibitionist woman.",
    "refs": [
     "S028.OVL:78"
    ]
@@ -4405,7 +4405,7 @@
    "id": "m00482",
    "kind": "msg",
    "jp": "%021：あ……あの人ですっ！　私の研究室に来た、変な格好の女の人って。",
-   "en": "",
+   "en": "%021: Ah... that's her! The strangely dressed woman who came to my lab.",
    "refs": [
     "S028.OVL:f1"
    ]
@@ -4414,7 +4414,7 @@
    "id": "m00483",
    "kind": "msg",
    "jp": "%001：えっ、じゃあ……。",
-   "en": "",
+   "en": "%001: Huh, then...",
    "refs": [
     "S028.OVL:136"
    ]
@@ -4423,7 +4423,7 @@
    "id": "m00484",
    "kind": "msg",
    "jp": "%004：そうよ。私が謎の女・エリザベス明子。『世界はあたしたちのものよ、ウッフーン軍団』の司令官よ、オーッホッホッホッホッ！",
-   "en": "",
+   "en": "%004: That's right. I am the mysterious woman, Elizabeth Akiko. Commander of the \"World Is Ours, Ooh-hoon Corps\"! OH-HO-HO-HO-HO!",
    "refs": [
     "S028.OVL:14f"
    ]
@@ -4432,7 +4432,7 @@
    "id": "m00485",
    "kind": "msg",
    "jp": "%001：……謎の女、ねえ。",
-   "en": "",
+   "en": "%001: ...\"Mysterious woman,\" huh.",
    "refs": [
     "S028.OVL:1ca"
    ]
@@ -4441,7 +4441,7 @@
    "id": "m00486",
    "kind": "msg",
    "jp": "%001：おいっ、お前が『世界は……ウッフーン軍団』のボスだなッ！　オレの体を返せッ！！",
-   "en": "",
+   "en": "%001: Hey! You're the boss of the \"World Is... Ooh-hoon Corps\", aren't you! Give me back my body!!",
    "refs": [
     "S028.OVL:1e4"
    ]
@@ -4450,7 +4450,7 @@
    "id": "m00487",
    "kind": "msg",
    "jp": "%004：おれのからだ？　何のことかしら……？",
-   "en": "",
+   "en": "%004: Your body? Whatever do you mean...?",
    "refs": [
     "S028.OVL:239"
    ]
@@ -4459,7 +4459,7 @@
    "id": "m00488",
    "kind": "msg",
    "jp": "%001：とぼけるなッ！　あんたの部下のビューティー加奈子が、天宮丈之介の研究室から持ち去った体のことだよッ！",
-   "en": "",
+   "en": "%001: Don't play dumb! I'm talking about the body your subordinate Beauty Kanako took from Amamiya Jounosuke's lab!",
    "refs": [
     "S028.OVL:264"
    ]
@@ -4468,7 +4468,7 @@
    "id": "m00489",
    "kind": "msg",
    "jp": "%004：ああ、あれね。私はサイボーグを奪ってくるよう命じたのに、持ってきたのを見れば、ただの男の体じゃないの！　まったくあの娘ったら、本当にバカなんだから……",
-   "en": "",
+   "en": "%004: Oh, that. I ordered her to steal a cyborg, but what did she bring back? Just an ordinary man's body! Honestly, that girl is such an idiot...",
    "refs": [
     "S028.OVL:2cf"
    ]
@@ -4477,7 +4477,7 @@
    "id": "m00490",
    "kind": "msg",
    "jp": "%004：……ん？　わかったわ！　ということは、あなたが、そのとき加奈子が奪い損ねたサイボーグね！？",
-   "en": "",
+   "en": "%004: ...Hmm? I see! So you're the cyborg that Kanako failed to steal that time!?",
    "refs": [
     "S028.OVL:36c"
    ]
@@ -4486,7 +4486,7 @@
    "id": "m00491",
    "kind": "msg",
    "jp": "%001：ああ、そうだよ。だからオレの体を返せッ！",
-   "en": "",
+   "en": "%001: Yeah, that's right. So give me back my body!",
    "refs": [
     "S028.OVL:3cd"
    ]
@@ -4495,7 +4495,7 @@
    "id": "m00492",
    "kind": "msg",
    "jp": "%004：やっぱりね……まあいいわ。元はといえば加奈子のミスなんだから、あなたのことは加奈子に始末させることにしましょう。",
-   "en": "",
+   "en": "%004: Just as I thought... Well, fine. Since it was originally Kanako's mistake, I'll have Kanako deal with you.",
    "refs": [
     "S028.OVL:3fc"
    ]
@@ -4504,7 +4504,7 @@
    "id": "m00493",
    "kind": "msg",
    "jp": "%004：あなたも奈緒美を倒したくらいであまりいい気にならないことね。その娘は、幹部の中でも一番弱かったんだから。",
-   "en": "",
+   "en": "%004: Don't get too cocky just because you defeated Naomi. She was the weakest of our executives.",
    "refs": [
     "S028.OVL:473"
    ]
@@ -4513,7 +4513,7 @@
    "id": "m00494",
    "kind": "msg",
    "jp": "%001：いや、そういうことじゃなくて、オレの体を返せって……",
-   "en": "",
+   "en": "%001: No, that's not what I'm saying, I'm telling you to give me back my body...",
    "refs": [
     "S028.OVL:4e2"
    ]
@@ -4522,7 +4522,7 @@
    "id": "m00495",
    "kind": "msg",
    "jp": "%004：それじゃ、私はそろそろ失礼するわ。加奈子に始末されるまで、せいぜい命を大事にすることね、オーッホッホッホッ！",
-   "en": "",
+   "en": "%004: Well then, I'll be taking my leave now. Do take good care of your life until Kanako finishes you off. OH-HO-HO-HO!",
    "refs": [
     "S028.OVL:51d"
    ]
@@ -4531,7 +4531,7 @@
    "id": "m00496",
    "kind": "msg",
    "jp": "%001：おいッ、ちょっと待て！　オレの話をちゃんと聞い……、",
-   "en": "",
+   "en": "%001: Hey, wait! Listen to what I have to say...!",
    "refs": [
     "S028.OVL:590"
    ]
@@ -4540,7 +4540,7 @@
    "id": "m00497",
    "kind": "msg",
    "jp": "%001：……くそっ。",
-   "en": "",
+   "en": "%001: ...Damn it.",
    "refs": [
     "S028.OVL:5cd"
    ]
@@ -4549,7 +4549,7 @@
    "id": "m00498",
    "kind": "msg",
    "jp": "%001：しっかし……あの服装は、誰が考えたんだろうねえ。",
-   "en": "",
+   "en": "%001: But seriously... who came up with that outfit, I wonder.",
    "refs": [
     "S028.OVL:5e2"
    ]
@@ -4558,7 +4558,7 @@
    "id": "m00499",
    "kind": "msg",
    "jp": "%004：もちろん、私よ。オーッホッホッホッホッ！",
-   "en": "",
+   "en": "%004: Why, me, of course. OH-HO-HO-HO-HO!",
    "refs": [
     "S028.OVL:619"
    ]
@@ -4567,7 +4567,7 @@
    "id": "m00500",
    "kind": "msg",
    "jp": "%001：……地獄耳だな。",
-   "en": "",
+   "en": "%001: ...She's got ears like a hawk.",
    "refs": [
     "S028.OVL:648"
    ]
@@ -4576,7 +4576,7 @@
    "id": "m00501",
    "kind": "msg",
    "jp": "%001：さて、と……どうやら、オレの体を取り戻すのは後回しになりそうだな。",
-   "en": "",
+   "en": "%001: Well, then... looks like getting my body back will have to wait.",
    "refs": [
     "S029.OVL:1a"
    ]
@@ -4585,7 +4585,7 @@
    "id": "m00502",
    "kind": "msg",
    "jp": "%021：あの……",
-   "en": "",
+   "en": "%021: Um...",
    "refs": [
     "S029.OVL:64"
    ]
@@ -4594,7 +4594,7 @@
    "id": "m00503",
    "kind": "msg",
    "jp": "%001：ん？",
-   "en": "",
+   "en": "%001: Huh?",
    "refs": [
     "S029.OVL:73",
     "S030.OVL:25f",
@@ -4605,7 +4605,7 @@
    "id": "m00504",
    "kind": "msg",
    "jp": "%021：……ごめんなさい。私、今までなんてことを……。",
-   "en": "",
+   "en": "%021: ...I'm sorry. What have I been doing all this time...",
    "refs": [
     "S029.OVL:7e"
    ]
@@ -4614,7 +4614,7 @@
    "id": "m00505",
    "kind": "msg",
    "jp": "%001：……いや、キミが悪いわけじゃないよ。キミだって、あいつらに操られてたんだから……それより、家まで送ってってあげるよ。今ごろ家族だって心配してるだろうし……。",
-   "en": "",
+   "en": "%001: ...No, it's not your fault. You were being controlled by them too... More importantly, let me walk you home. Your family must be worried about you by now...",
    "refs": [
     "S029.OVL:b3"
    ]
@@ -4623,7 +4623,7 @@
    "id": "m00506",
    "kind": "msg",
    "jp": "%021：はい……どうもすみません。助けていただいて、そのうえ……",
-   "en": "",
+   "en": "%021: Yes... thank you so much. You saved me, and on top of that...",
    "refs": [
     "S029.OVL:156"
    ]
@@ -4632,7 +4632,7 @@
    "id": "m00507",
    "kind": "msg",
    "jp": "%001：いいっていいって。さ、それじゃ行くとしよう。",
-   "en": "",
+   "en": "%001: It's fine, it's fine. Come on, let's get going.",
    "refs": [
     "S029.OVL:195"
    ]
@@ -4641,7 +4641,7 @@
    "id": "m00508",
    "kind": "msg",
    "jp": "こうして、オレは奈緒美さんを家まで送っていき、それからひとまず自分の家へ帰ることにした……。",
-   "en": "",
+   "en": "And so, I walked Naomi-san home, and then decided to head back to my own house for the time being...",
    "refs": [
     "S029.OVL:1ca"
    ]
@@ -4650,7 +4650,7 @@
    "id": "m00509",
    "kind": "msg",
    "jp": "（考えてみれば、このコも被害者なんだよな……）",
-   "en": "",
+   "en": "(Come to think of it, she's a victim too...)",
    "refs": [
     "S029.OVL:228"
    ]
@@ -4659,7 +4659,7 @@
    "id": "m00510",
    "kind": "msg",
    "jp": "%002：おお、今帰ったか、マリリンＤＸよ！",
-   "en": "",
+   "en": "%002: Oh, you're back, Marilyn DX!",
    "refs": [
     "S030.OVL:41"
    ]
@@ -4668,7 +4668,7 @@
    "id": "m00511",
    "kind": "msg",
    "jp": "%002：……で、どうだ？　番台山へいって何か新しい手掛かりはつかめたか？",
-   "en": "",
+   "en": "%002: ...So, how did it go? Did you find any new clues at Bandai Mountain?",
    "refs": [
     "S030.OVL:6b"
    ]
@@ -4677,7 +4677,7 @@
    "id": "m00512",
    "kind": "msg",
    "jp": "%001：そうなんだ。実はあのあと……あーなって、こーなって、うんぬんかんぬん……。",
-   "en": "",
+   "en": "%001: Yeah, actually. After that... this happened, then that happened, and so on and so forth...",
    "refs": [
     "S030.OVL:b2"
    ]
@@ -4686,7 +4686,7 @@
    "id": "m00513",
    "kind": "msg",
    "jp": "%002：な、なにっ、『エリザベス明子』だと……！？",
-   "en": "",
+   "en": "%002: W-what!? \"Elizabeth Akiko\"...!?",
    "refs": [
     "S030.OVL:103"
    ]
@@ -4695,7 +4695,7 @@
    "id": "m00514",
    "kind": "msg",
    "jp": "%001：ん？　なんだ親父、あいつのことを知ってるのか？",
-   "en": "",
+   "en": "%001: Huh? What, old man, do you know her?",
    "refs": [
     "S030.OVL:134"
    ]
@@ -4704,7 +4704,7 @@
    "id": "m00515",
    "kind": "msg",
    "jp": "%002：い、いや、なんでもない……。",
-   "en": "",
+   "en": "%002: N-no, it's nothing...",
    "refs": [
     "S030.OVL:169"
    ]
@@ -4713,7 +4713,7 @@
    "id": "m00516",
    "kind": "msg",
    "jp": "%002：ところで……どうだ、『お仕置き機能』は役に立ったか？",
-   "en": "",
+   "en": "%002: By the way... how did the \"punishment function\" work out?",
    "refs": [
     "S030.OVL:18d"
    ]
@@ -4722,7 +4722,7 @@
    "id": "m00517",
    "kind": "msg",
    "jp": "%001：（ギクッ）えっ、お仕置き機能？　さ、さあ、なんのことかなあ、はははは……。",
-   "en": "",
+   "en": "%001: (Gulp!) Huh? Punishment function? W-well, I don't know what you're talking about, hahaha...",
    "refs": [
     "S030.OVL:1c8"
    ]
@@ -4731,7 +4731,7 @@
    "id": "m00518",
    "kind": "msg",
    "jp": "%002：ふむ……まあいい。マリリンＤＸよ、少しジッとしておれ。",
-   "en": "",
+   "en": "%002: Hmm... well, fine. Marilyn DX, hold still for a moment.",
    "refs": [
     "S030.OVL:219"
    ]
@@ -4740,7 +4740,7 @@
    "id": "m00519",
    "kind": "msg",
    "jp": "「ピッ」",
-   "en": "",
+   "en": "*BEEP*",
    "refs": [
     "S030.OVL:256"
    ]
@@ -4749,7 +4749,7 @@
    "id": "m00520",
    "kind": "msg",
    "jp": "「ガシャン」",
-   "en": "",
+   "en": "*CLUNK*",
    "refs": [
     "S030.OVL:26a"
    ]
@@ -4758,7 +4758,7 @@
    "id": "m00521",
    "kind": "msg",
    "jp": "%001：お、おい、何なんだ、これは？",
-   "en": "",
+   "en": "%001: H-hey, what is this?",
    "refs": [
     "S030.OVL:277"
    ]
@@ -4767,7 +4767,7 @@
    "id": "m00522",
    "kind": "msg",
    "jp": "%002：どうだ、驚いたか？　お前の体には超小型カメラが搭載されておってな、お前の行動の一部始終が全てテープに記録されるようになっておるのだ。",
-   "en": "",
+   "en": "%002: Surprised? Your body is equipped with a micro camera, and all of your actions are recorded on tape.",
    "refs": [
     "S030.OVL:29a"
    ]
@@ -4776,7 +4776,7 @@
    "id": "m00523",
    "kind": "msg",
    "jp": "%002：したがって、このテープを見れば、お前の戦闘やお仕置き機能作動中の様子がワシにも楽しめるというわけだ。",
-   "en": "",
+   "en": "%002: Therefore, by watching this tape, I too can enjoy your battles and the workings of the punishment function.",
    "refs": [
     "S030.OVL:325"
    ]
@@ -4785,7 +4785,7 @@
    "id": "m00524",
    "kind": "msg",
    "jp": "%002：お前も今日は、一日中動きまわってさすがに疲れただろう。もう自分の部屋で休んだらどうだ？",
-   "en": "",
+   "en": "%002: You've been moving around all day today, so you must be tired. Why don't you go rest in your room?",
    "refs": [
     "S030.OVL:3a2"
    ]
@@ -4794,7 +4794,7 @@
    "id": "m00525",
    "kind": "msg",
    "jp": "（天宮丈之介……認めたくないが、オレの父親だ）",
-   "en": "",
+   "en": "(Amamiya Jounosuke... as much as I hate to admit it, he's my father)",
    "refs": [
     "S030.OVL:400",
     "S033.OVL:960",
@@ -4805,7 +4805,7 @@
    "id": "m00526",
    "kind": "msg",
    "jp": "（そうだな。今日はもう疲れたし、自分の部屋へ行って寝るとしよう）",
-   "en": "",
+   "en": "(Yeah. I'm tired today, so let's go to my room and sleep)",
    "refs": [
     "S030.OVL:45c"
    ]
@@ -4814,7 +4814,7 @@
    "id": "m00527",
    "kind": "msg",
    "jp": "%001：……自分の部屋へ帰ってきたぞ。",
-   "en": "",
+   "en": "%001: ...I've made it back to my room.",
    "refs": [
     "S031.OVL:42",
     "S050.OVL:42"
@@ -4824,7 +4824,7 @@
    "id": "m00528",
    "kind": "msg",
    "jp": "（そういえば、たしかこの辺に……）",
-   "en": "",
+   "en": "(Come to think of it, it should be around here...)",
    "refs": [
     "S031.OVL:68",
     "S032.OVL:21e",
@@ -4837,7 +4837,7 @@
    "id": "m00529",
    "kind": "msg",
    "jp": "%001：おっ、あったあった。",
-   "en": "",
+   "en": "%001: Oh, there it is, there it is.",
    "refs": [
     "S031.OVL:8b",
     "S032.OVL:241",
@@ -4850,7 +4850,7 @@
    "id": "m00530",
    "kind": "msg",
    "jp": "%001：そうそう、普通の本の間にこれを隠しておいたんだよな。それじゃ、ちょっくらオナニーでも……",
-   "en": "",
+   "en": "%001: Yeah, I hid this between the normal books. Well then, time for a little masturbation...",
    "refs": [
     "S031.OVL:a8",
     "S032.OVL:25e",
@@ -4863,7 +4863,7 @@
    "id": "m00531",
    "kind": "msg",
    "jp": "%001：…………あ、ない。そうか、今は女の体だから、チンポが付いてなかったんだ。",
-   "en": "",
+   "en": "%001: ...Ah, it's not there. Right, since I'm in a woman's body now, I don't have a dick.",
    "refs": [
     "S031.OVL:107",
     "S032.OVL:2bd",
@@ -4876,7 +4876,7 @@
    "id": "m00532",
    "kind": "msg",
    "jp": "%001：しょうがない。この本は元に戻しておこう。",
-   "en": "",
+   "en": "%001: Oh well. I'll put this book back.",
    "refs": [
     "S031.OVL:156",
     "S032.OVL:30c",
@@ -4889,7 +4889,7 @@
    "id": "m00533",
    "kind": "msg",
    "jp": "%001：……また見るのか？",
-   "en": "",
+   "en": "%001: ...Are you going to look at it again?",
    "refs": [
     "S031.OVL:188",
     "S032.OVL:9e",
@@ -4902,7 +4902,7 @@
    "id": "m00534",
    "kind": "msg",
    "jp": "%001：……でも、オナニーはできないぞ。",
-   "en": "",
+   "en": "%001: ...But I can't masturbate.",
    "refs": [
     "S031.OVL:1a3",
     "S032.OVL:b9",
@@ -4915,7 +4915,7 @@
    "id": "m00535",
    "kind": "msg",
    "jp": "%001：……ふう。",
-   "en": "",
+   "en": "%001: ...Sigh.",
    "refs": [
     "S031.OVL:1cc",
     "S032.OVL:e2",
@@ -4928,7 +4928,7 @@
    "id": "m00536",
    "kind": "msg",
    "jp": "（オレが、普段使っている机だ……といっても、めったに勉強はしないけど）",
-   "en": "",
+   "en": "(It's the desk I usually use... though I rarely study at it)",
    "refs": [
     "S031.OVL:1de",
     "S032.OVL:f4"
@@ -4938,7 +4938,7 @@
    "id": "m00537",
    "kind": "msg",
    "jp": "（ステレオコンポだ……でも、今日はもう疲れているから、音楽を聴くのはよそう）",
-   "en": "",
+   "en": "(It's the stereo system... but I'm tired today, so I'll skip listening to music)",
    "refs": [
     "S031.OVL:226"
    ]
@@ -4947,7 +4947,7 @@
    "id": "m00538",
    "kind": "msg",
    "jp": "（……やっぱり、自分の部屋が一番落ち着くな）",
-   "en": "",
+   "en": "(...My own room is the most relaxing place, after all)",
    "refs": [
     "S031.OVL:274",
     "S032.OVL:182",
@@ -4959,7 +4959,7 @@
    "id": "m00539",
    "kind": "msg",
    "jp": "（そうだな。さすがに今日は疲れたし、もう寝るとしよう）",
-   "en": "",
+   "en": "(Yeah. I'm pretty tired today, so let's go to sleep)",
    "refs": [
     "S031.OVL:2a2"
    ]
@@ -4968,7 +4968,7 @@
    "id": "m00540",
    "kind": "msg",
    "jp": "%001：……………………。",
-   "en": "",
+   "en": "%001：……………………。",
    "refs": [
     "S031.OVL:2db",
     "S031.OVL:2f4",
@@ -4987,7 +4987,7 @@
    "id": "m00541",
    "kind": "msg",
    "jp": "「チュン、チュン、チチ、チュン、チュン……」",
-   "en": "",
+   "en": "*CHIRP, CHIRP, CHIRP, CHIRP, CHIRP...*",
    "refs": [
     "S032.OVL:47",
     "S051.OVL:49"
@@ -4997,7 +4997,7 @@
    "id": "m00542",
    "kind": "msg",
    "jp": "%001：……う、うぅ～ん……あ、もう朝か。",
-   "en": "",
+   "en": "%001: ...Ugh... oh, it's already morning.",
    "refs": [
     "S032.OVL:74",
     "S051.OVL:76"
@@ -5007,7 +5007,7 @@
    "id": "m00543",
    "kind": "msg",
    "jp": "（ステレオコンポだ……でも、朝っぱらから音楽を聴く気にもなれないな）",
-   "en": "",
+   "en": "(It's the stereo system... but I don't feel like listening to music this early in the morning)",
    "refs": [
     "S032.OVL:13c"
    ]
@@ -5016,7 +5016,7 @@
    "id": "m00544",
    "kind": "msg",
    "jp": "（おいおい、今起きたばかりなんだから、眠くならないぞ）",
-   "en": "",
+   "en": "(Come on, I just woke up, I'm not going to get sleepy)",
    "refs": [
     "S032.OVL:1b0",
     "S051.OVL:15e"
@@ -5026,7 +5026,7 @@
    "id": "m00545",
    "kind": "msg",
    "jp": "（そうだな。とりあえず、親父の研究室へ行ってみよう）",
-   "en": "",
+   "en": "(Yeah. Let's go check the old man's lab)",
    "refs": [
     "S032.OVL:1e8"
    ]
@@ -5035,7 +5035,7 @@
    "id": "m00546",
    "kind": "msg",
    "jp": "%002：おお、目覚めたか。マリリンＤＸよ。",
-   "en": "",
+   "en": "%002: Oh, you're awake, Marilyn DX.",
    "refs": [
     "S033.OVL:2e"
    ]
@@ -5044,7 +5044,7 @@
    "id": "m00547",
    "kind": "msg",
    "jp": "%002：どうだ？　昨夜はぐっすり眠って、体力は回復しただろうな？",
-   "en": "",
+   "en": "%002: How are you? You slept soundly last night, so your stamina should be recovered, right?",
    "refs": [
     "S033.OVL:58"
    ]
@@ -5053,7 +5053,7 @@
    "id": "m00548",
    "kind": "msg",
    "jp": "%001：ああ……けど、エネルギーは全然回復してないぞ。どうなってるんだ？",
-   "en": "",
+   "en": "%001: Yeah... but my energy hasn't recovered at all. What's going on?",
    "refs": [
     "S033.OVL:97"
    ]
@@ -5062,7 +5062,7 @@
    "id": "m00549",
    "kind": "msg",
    "jp": "%002：当たり前だ。眠ったくらいでエネルギーが増えたら、地球の資源問題は全て解決してしまうわ。",
-   "en": "",
+   "en": "%002: Of course not. If energy increased just from sleeping, all of Earth's resource problems would be solved.",
    "refs": [
     "S033.OVL:de"
    ]
@@ -5071,7 +5071,7 @@
    "id": "m00550",
    "kind": "msg",
    "jp": "%001：……じゃあ、エネルギーはどうやって回復させるんだ？",
-   "en": "",
+   "en": "%001: ...Then how do I recover energy?",
    "refs": [
     "S033.OVL:13b"
    ]
@@ -5080,7 +5080,7 @@
    "id": "m00551",
    "kind": "msg",
    "jp": "%002：簡単だ。お前のエネルギーはガソリンだ。その辺のガソリンスタンドへ行けばいくらでも給油してくれるぞ。",
-   "en": "",
+   "en": "%002: Simple. Your energy source is gasoline. Go to any gas station and they'll fill you up.",
    "refs": [
     "S033.OVL:174"
    ]
@@ -5089,7 +5089,7 @@
    "id": "m00552",
    "kind": "msg",
    "jp": "%001：……なんか、かっこ悪いなあ。",
-   "en": "",
+   "en": "%001: ...That's kind of uncool.",
    "refs": [
     "S033.OVL:1dd"
    ]
@@ -5098,7 +5098,7 @@
    "id": "m00553",
    "kind": "msg",
    "jp": "%002：ところでマリリンＤＸよ、昨夜あのビデオテープを分析した結果、色々と重要なことが判明したぞ。",
-   "en": "",
+   "en": "%002: By the way, Marilyn DX, after analyzing that video tape last night, several important things have come to light.",
    "refs": [
     "S033.OVL:201"
    ]
@@ -5107,7 +5107,7 @@
    "id": "m00554",
    "kind": "msg",
    "jp": "%001：重要なこと、というと？",
-   "en": "",
+   "en": "%001: Important things, you say?",
    "refs": [
     "S033.OVL:262"
    ]
@@ -5116,7 +5116,7 @@
    "id": "m00555",
    "kind": "msg",
    "jp": "%002：まず……お前に付けたお仕置き機能は、生身の女を倒したときにのみ作動するようになっている。従って、お前が倒したジューシー奈緒美という女は、サイボーグ手術などを施されていない完全な生身の女ということになるな。",
-   "en": "",
+   "en": "%002: First... the punishment function I installed only activates when you defeat a flesh-and-blood woman. Therefore, the woman you defeated, Juicy Naomi, was a completely natural woman without any cyborg surgery.",
    "refs": [
     "S033.OVL:27f"
    ]
@@ -5125,7 +5125,7 @@
    "id": "m00556",
    "kind": "msg",
    "jp": "%001：……じゃあ、彼女は最初からあんなに強かったのか？",
-   "en": "",
+   "en": "%001: ...So she was that strong from the start?",
    "refs": [
     "S033.OVL:352"
    ]
@@ -5134,7 +5134,7 @@
    "id": "m00557",
    "kind": "msg",
    "jp": "%002：そんなわけがあるまい。彼女がお前とある程度互角に戦えたのは、恐らく、高度な武器と『アーマースーツ』とでもいうべき特殊強化戦闘服のためだ。",
-   "en": "",
+   "en": "%002: Of course not. The reason she could fight you on somewhat equal footing was likely due to her advanced weapons and a special reinforced combat suit that could be called an \"armor suit.\"",
    "refs": [
     "S033.OVL:389"
    ]
@@ -5143,7 +5143,7 @@
    "id": "m00558",
    "kind": "msg",
    "jp": "%001：アーマースーツ……？",
-   "en": "",
+   "en": "%001: Armor suit...?",
    "refs": [
     "S033.OVL:418"
    ]
@@ -5152,7 +5152,7 @@
    "id": "m00559",
    "kind": "msg",
    "jp": "%002：うむ。恐らく、ジューシー奈緒美が着ていた戦闘服は、驚異的な防御力を持つと同時に、それを着た人間の運動能力全体を飛躍的にアップさせる機を備えたものだと思われる。",
-   "en": "",
+   "en": "%002: Indeed. The combat suit Juicy Naomi wore likely possessed tremendous defensive power while also dramatically enhancing the wearer's overall physical abilities.",
    "refs": [
     "S033.OVL:433"
    ]
@@ -5161,7 +5161,7 @@
    "id": "m00560",
    "kind": "msg",
    "jp": "%001：そ、そんなことが可能なのか？",
-   "en": "",
+   "en": "%001: I-is something like that possible?",
    "refs": [
     "S033.OVL:4d8"
    ]
@@ -5170,7 +5170,7 @@
    "id": "m00561",
    "kind": "msg",
    "jp": "%002：うぅーむ……この世の中に、ワシほどの天才科学者が存在するとは思えんが……いずれにせよ、彼らが相当高度な科学技術をもっていることは間違いない。",
-   "en": "",
+   "en": "%002: Hmm... I can't imagine there being another genius scientist of my caliber in this world... but in any case, there's no doubt they possess相当 advanced scientific technology.",
    "refs": [
     "S033.OVL:4fb"
    ]
@@ -5179,7 +5179,7 @@
    "id": "m00562",
    "kind": "msg",
    "jp": "%001：ところで、一つ気になってたことがあるんだけど……お仕置き機能が終わった後、ジューシー奈緒美が急に自分の意識を取り戻して、普通の女の子に戻ったのはいったいどうしてなんだ？",
-   "en": "",
+   "en": "%001: By the way, there's something I've been wondering about... after the punishment function ended, why did Juicy Naomi suddenly regain her consciousness and return to being a normal girl?",
    "refs": [
     "S033.OVL:58f"
    ]
@@ -5188,7 +5188,7 @@
    "id": "m00563",
    "kind": "msg",
    "jp": "%002：うむ。恐らく、彼女はマインドコントロールによって何者かに操られていたのだと考えられる。それが、お前のお仕置き機能によってエクスタシーに達したときのショックで、マインドコントロールから開放されたのだろう。",
-   "en": "",
+   "en": "%002: Indeed. It's likely she was being controlled by someone through mind control. The shock of reaching ecstasy through your punishment function probably freed her from that mind control.",
    "refs": [
     "S033.OVL:63e"
    ]
@@ -5197,7 +5197,7 @@
    "id": "m00564",
    "kind": "msg",
    "jp": "%002：それにしても、あれだけ強力なマインドコントロールを連中が使っているということは…………いや、まさか……",
-   "en": "",
+   "en": "%002: Even so, if they're using mind control that powerful... no, it can't be...",
    "refs": [
     "S033.OVL:725"
    ]
@@ -5206,7 +5206,7 @@
    "id": "m00565",
    "kind": "msg",
    "jp": "「ピンポーン……」",
-   "en": "",
+   "en": "*DING-DONG...*",
    "refs": [
     "S033.OVL:792"
    ]
@@ -5215,7 +5215,7 @@
    "id": "m00566",
    "kind": "msg",
    "jp": "%002：ほう、客とはめずらしいな。どれどれ……",
-   "en": "",
+   "en": "%002: Oh, a visitor? That's unusual. Let's see...",
    "refs": [
     "S033.OVL:7b0"
    ]
@@ -5224,7 +5224,7 @@
    "id": "m00567",
    "kind": "msg",
    "jp": "「ピコッ」",
-   "en": "",
+   "en": "*CLICK*",
    "refs": [
     "S033.OVL:7dd",
     "S056.OVL:2bd"
@@ -5234,7 +5234,7 @@
    "id": "m00568",
    "kind": "msg",
    "jp": "%001：あっ、めぐみ……！",
-   "en": "",
+   "en": "%001: Ah, Megumi...!",
    "refs": [
     "S033.OVL:7ea"
    ]
@@ -5243,7 +5243,7 @@
    "id": "m00569",
    "kind": "msg",
    "jp": "%002：なんだ、お前の友達か。それなら、我が家の侵入者撃退システムの餌食となる前に、早く中に通してやらんとな。",
-   "en": "",
+   "en": "%002: Oh, she's your friend. In that case, we'd better let her in quickly before she becomes prey to our home's intruder repulsion system.",
    "refs": [
     "S033.OVL:803"
    ]
@@ -5252,7 +5252,7 @@
    "id": "m00570",
    "kind": "msg",
    "jp": "%001：ち、ちょっと待ってくれよ。困るよオレ、こんな姿めぐみに見られたら……",
-   "en": "",
+   "en": "%001: W-wait a minute. I'm in trouble here, if Megumi sees me like this...",
    "refs": [
     "S033.OVL:872"
    ]
@@ -5261,7 +5261,7 @@
    "id": "m00571",
    "kind": "msg",
    "jp": "%002：……そうだな。確かに正義のヒーローたるもの、他人に正体を明かさないというのは鉄則だからな。よし、ワシがうまいこと言って追い返してやろう。",
-   "en": "",
+   "en": "%002: ...You're right. Indeed, it's an iron rule for a hero of justice not to reveal one's identity to others. Very well, I'll say something clever and send her away.",
    "refs": [
     "S033.OVL:8bd"
    ]
@@ -5270,7 +5270,7 @@
    "id": "m00572",
    "kind": "msg",
    "jp": "%003：あのぉー……",
-   "en": "",
+   "en": "%003: Um...",
    "refs": [
     "S033.OVL:94c"
    ]
@@ -5279,7 +5279,7 @@
    "id": "m00573",
    "kind": "msg",
    "jp": "%001：ゲッ……。",
-   "en": "",
+   "en": "%001: Gulp...",
    "refs": [
     "S034.OVL:43"
    ]
@@ -5288,7 +5288,7 @@
    "id": "m00574",
    "kind": "msg",
    "jp": "%003：あの……勝手に入ってきてすみません。玄関が開いてたもんですから。",
-   "en": "",
+   "en": "%003: Um... I'm sorry for letting myself in. The front door was open.",
    "refs": [
     "S034.OVL:54"
    ]
@@ -5297,7 +5297,7 @@
    "id": "m00575",
    "kind": "msg",
    "jp": "%002：むう。我が最強の侵入者撃退システムを破るとは……！",
-   "en": "",
+   "en": "%002: Hmph. To think she broke through my ultimate intruder repulsion system...!",
    "refs": [
     "S034.OVL:9b"
    ]
@@ -5315,7 +5315,7 @@
    "id": "m00577",
    "kind": "msg",
    "jp": "%003：あの、わたし……%000君とお、お、おつきあい（キャッ）……させていただいている片瀬めぐみです。",
-   "en": "",
+   "en": "%003: Um, I... I'm Katase Megumi, and I'm d-d-dating (eep!) ...%000-kun.",
    "refs": [
     "S034.OVL:108"
    ]
@@ -5477,7 +5477,7 @@
    "id": "m00595",
    "kind": "msg",
    "jp": "%003：…………。",
-   "en": "",
+   "en": "%003：…………。",
    "refs": [
     "S034.OVL:512",
     "S055.OVL:1bf"
@@ -10061,7 +10061,7 @@
    "id": "m01101",
    "kind": "msg",
    "jp": "（………………）",
-   "en": "",
+   "en": "（………………）",
    "refs": [
     "S077.OVL:185"
    ]
@@ -11032,7 +11032,7 @@
    "id": "m01208",
    "kind": "msg",
    "jp": "%003：%000……。",
-   "en": "",
+   "en": "%003：%000……。",
    "refs": [
     "S090.OVL:204"
    ]
@@ -11833,7 +11833,7 @@
    "id": "m01297",
    "kind": "msg",
    "jp": "%028：……………………",
-   "en": "",
+   "en": "%028：……………………",
    "refs": [
     "S095.OVL:d81"
    ]
@@ -12466,7 +12466,7 @@
    "id": "m01366",
    "kind": "msg",
    "jp": "%021：……？",
-   "en": "",
+   "en": "%021：……？",
    "refs": [
     "S101.OVL:7c9"
    ]
@@ -13826,7 +13826,7 @@
    "id": "m01517",
    "kind": "msg",
    "jp": "%027：！！！！！！！！",
-   "en": "",
+   "en": "%027：！！！！！！！！",
    "refs": [
     "S104.OVL:ddb"
    ]
@@ -17659,7 +17659,7 @@
    "id": "e00282",
    "kind": "engine",
    "jp": "%001：…………。",
-   "en": "",
+   "en": "%001：…………。",
    "refs": [
     "EXE:1cfca"
    ],

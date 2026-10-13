@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "　１もっこりまん\n　２おっぱいん\n　３ふとももん",
-   "en": "1 Mokkoriman\n2 Oppain\n3 Futomomon",
+   "en": "　1. Mokkori-man\n　2. Oppai-n\n　3. Futomomo-n",
    "refs": [
     "MI.DOC:00001"
    ],
@@ -17,7 +17,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "「よっしゃあ！　元気一発！　もっこりまん！」",
-   "en": "\"Alright! Full of pep! Mokkoriman!\"",
+   "en": "\"Alright! Full power! Mokkori-man!\"",
    "refs": [
     "MI.DOC:00002"
    ],
@@ -27,7 +27,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "「よ－－－しっ！　熟れた体で！　おっぱいん！」",
-   "en": "\"Here we go! With a ripe body! Oppain!\"",
+   "en": "\"O---kay! With this ripe body! Oppai-n!\"",
    "refs": [
     "MI.DOC:00003"
    ],
@@ -37,7 +37,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "「きゃい－－－んっ！　プリプリ娘の！　ふとももん！」",
-   "en": "\"Kyaiiin! The bouncy girl! Futomomon!\"",
+   "en": "\"Kyain---! From this perky girl! Futomomo-n!\"",
    "refs": [
     "MI.DOC:00004"
    ],
@@ -47,7 +47,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "「さあ、どこの釣り場にするか選んでくれ！」",
-   "en": "\"Okay, pick which fishing spot we hit!\"",
+   "en": "\"Come on, pick which fishing spot you want!\"",
    "refs": [
     "MI.DOC:00005"
    ],
@@ -57,7 +57,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "「どこの釣り場にするの？　選択してちょうだい」",
-   "en": "\"Which fishing spot shall we go to? Make your choice.\"",
+   "en": "\"Which fishing spot will it be? Make your choice.\"",
    "refs": [
     "MI.DOC:00006"
    ],
@@ -67,7 +67,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "「どこの釣り場にしようかな。選んでね」",
-   "en": "\"Hmm, which fishing spot should I pick? You choose!\"",
+   "en": "\"Which fishing spot should we go with? You pick.\"",
    "refs": [
     "MI.DOC:00007"
    ],
@@ -77,7 +77,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "「あたし、このプールのヌシの中森いわな。釣れるものなら釣ってごらん」",
-   "en": "\"I'm Iwana Nakamori, master of this pool. Catch me if you can.\"",
+   "en": "\"I'm Nakamori Iwana, the boss of this pool. Try to catch me if you can.\"",
    "refs": [
     "MI.DOC:00008"
    ],
@@ -87,7 +87,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "「あたし、鮎川鱗子。この温泉のヌシを釣ろうだなんて、１０年はやいわよ」",
-   "en": "\"I'm Rinko Ayukawa. Trying to catch the master of this hot spring? You're ten years too early.\"",
+   "en": "\"I'm Ayukawa Rinko. Trying to catch the boss of this hot spring? You're ten years too early.\"",
    "refs": [
     "MI.DOC:00010"
    ],
@@ -97,7 +97,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "「俺の名前は黒瀬まみ。この風呂のヌシは俺さ。火傷しないうちに帰ったほうが身のためだぜ」",
-   "en": "\"The name's Mami Kurose. I'm the master of this bath. Better head home before you get burned.\"",
+   "en": "\"My name's Kurose Mami. I'm the boss of this bath. You'd better leave before you get burned.\"",
    "refs": [
     "MI.DOC:00011"
    ],
@@ -107,7 +107,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "わたくし、この風呂屋のヌシ、せせらぎうな子です。あなたに釣られちゃったらどうしましょう」",
-   "en": "\"I am Unako Seseragi, master of this bathhouse. Oh my, whatever shall I do if you catch me?\"",
+   "en": "\"I am Seseragi Unako, the boss of this bathhouse. If you were to catch me, whatever would I do?\"",
    "refs": [
     "MI.DOC:00012"
    ],
@@ -117,7 +117,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "「あたし、このプールのヌシの田鮭いくら。優しく釣り上げてくれたら、たっぷりサービスしちゃうわよ」",
-   "en": "\"I'm Ikura Tajake, master of this pool. Reel me in gently and I'll give you plenty of service.\"",
+   "en": "\"I'm Tasake Ikura, the boss of this pool. If you reel me in gently, I'll give you plenty of service.\"",
    "refs": [
     "MI.DOC:00013"
    ],
@@ -127,7 +127,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "「わたし満潮鯛子。この泡風呂のヌシを釣ろうっていうの？　うふふ、高くつくわよ」",
-   "en": "\"I'm Taiko Mancho. You want to catch the master of this bubble bath? Ufufu, it'll cost you.\"",
+   "en": "\"I'm Michishio Taiko. You want to catch the boss of this bubble bath? Hehe, it'll cost you.\"",
    "refs": [
     "MI.DOC:00014"
    ],
@@ -137,7 +137,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "「あたしはユニットバス女王、海原麻里。あなたのナニが大きかったら釣られてあげてもいいわよ」",
-   "en": "\"I'm Mari Unabara, Queen of the Unit Bath. If your thing is big enough, maybe I'll let you catch me.\"",
+   "en": "\"I'm the queen of the unit bath, Unabara Mari. If your thing is big enough, I might let you catch me.\"",
    "refs": [
     "MI.DOC:00015"
    ],
@@ -167,7 +167,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "釣り場の変更",
-   "en": "Change Spot",
+   "en": "Change Fishing Spot",
    "refs": [
     "MI.DOC:00018"
    ],
@@ -207,7 +207,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "下町の風呂屋",
-   "en": "Old Town Bathhouse",
+   "en": "Downtown Bathhouse",
    "refs": [
     "MI.DOC:00022"
    ],
@@ -227,7 +227,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "ソープの泡風呂",
-   "en": "Soapland Bubble Bath",
+   "en": "Soap Land Bubble Bath",
    "refs": [
     "MI.DOC:00024"
    ],
@@ -237,7 +237,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "ＯＬのユニットバス",
-   "en": "Office Lady's Unit Bath",
+   "en": "OL's Unit Bath",
    "refs": [
     "MI.DOC:00025"
    ],
@@ -247,7 +247,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "「しまったあ！　逃げられたあ！」",
-   "en": "\"Dang it! It got away!\"",
+   "en": "\"Damn! It got away!\"",
    "refs": [
     "MI.DOC:00026"
    ],
@@ -257,7 +257,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "「あーんっ、逃げられちゃったわ！」",
-   "en": "\"Aww, it got away!\"",
+   "en": "\"Aahn, it got away!\"",
    "refs": [
     "MI.DOC:00027"
    ],
@@ -267,7 +267,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "「やだっ、逃げちゃったあ！」",
-   "en": "\"No way, it escaped!\"",
+   "en": "\"Oh no, it got away!\"",
    "refs": [
     "MI.DOC:00028"
    ],
@@ -277,7 +277,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "「ほりゃあああ！　かかったあ！」",
-   "en": "\"Hoooraaah! Got a bite!\"",
+   "en": "\"Horyaaa! Got one!\"",
    "refs": [
     "MI.DOC:00029"
    ],
@@ -287,7 +287,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "「そーれっ！　かかったわよっ！」",
-   "en": "\"There we go! Got one!\"",
+   "en": "\"Here we go! Got one!\"",
    "refs": [
     "MI.DOC:00030"
    ],
@@ -297,7 +297,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "「きゃいんっ！　かかったみたいっ！」",
-   "en": "\"Kyain! I think I've got one!\"",
+   "en": "\"Kyain! Looks like we got one!\"",
    "refs": [
     "MI.DOC:00031"
    ],
@@ -307,7 +307,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "「おっ、これはヌシだっ」",
-   "en": "\"Whoa, this is the master!\"",
+   "en": "\"Oh, this is the boss!\"",
    "refs": [
     "MI.DOC:00032"
    ],
@@ -317,7 +317,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "「おーしっ、ボタンを押して糸を引くぞ！」",
-   "en": "\"Alright, hit the button to reel in the line!\"",
+   "en": "\"Alright, press the button and reel it in!\"",
    "refs": [
     "MI.DOC:00033"
    ],
@@ -327,7 +327,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "「やった、これはヌシだわっ」",
-   "en": "\"Yes, this is the master!\"",
+   "en": "\"Yes, this is the boss!\"",
    "refs": [
     "MI.DOC:00034"
    ],
@@ -337,7 +337,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "「よーしっ、ボタンを押して糸をひくわ！」",
-   "en": "\"Okay, I'll press the button and reel in the line!\"",
+   "en": "\"Okay, press the button and reel it in!\"",
    "refs": [
     "MI.DOC:00035"
    ],
@@ -347,7 +347,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "「きゃいんっ、これってヌシだよっ」",
-   "en": "\"Kyain, this is the master!\"",
+   "en": "\"Kyain, this is the boss!\"",
    "refs": [
     "MI.DOC:00036"
    ],
@@ -357,7 +357,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "「やっほーっ、ボタンを押して糸を引くわ！」",
-   "en": "\"Yahoo! I'll press the button and reel in the line!\"",
+   "en": "\"Yahoo! Press the button and reel it in!\"",
    "refs": [
     "MI.DOC:00037"
    ],
@@ -367,7 +367,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "「やめてーー！」",
-   "en": "\"Stop iiit!\"",
+   "en": "\"Stop it---!\"",
    "refs": [
     "MI.DOC:00038"
    ],
@@ -377,7 +377,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "「キリキリキリ・・・・・」",
-   "en": "\"Creak creak creak.....\"",
+   "en": "\"Kiri kiri kiri......\"",
    "refs": [
     "MI.DOC:00039"
    ],
@@ -387,7 +387,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "「いやーんっ」",
-   "en": "\"Eeek!\"",
+   "en": "\"Iyaan!\"",
    "refs": [
     "MI.DOC:00040"
    ],
@@ -397,7 +397,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "「やったぜー！　釣り上げたあ！」",
-   "en": "\"Yeah! I reeled it in!\"",
+   "en": "\"Yeah! Caught it!\"",
    "refs": [
     "MI.DOC:00041"
    ],
@@ -407,7 +407,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "「やったわっ、釣れたわ！」",
-   "en": "\"I did it, I caught one!\"",
+   "en": "\"Yes! I caught it!\"",
    "refs": [
     "MI.DOC:00042"
    ],
@@ -417,7 +417,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "「やったあっ、釣っちゃった！」",
-   "en": "\"Yay, I caught it!\"",
+   "en": "\"Yay! I caught it!\"",
    "refs": [
     "MI.DOC:00043"
    ],
@@ -427,7 +427,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "　ボタンを押して下さい",
-   "en": "Press the button",
+   "en": "　Please press the button",
    "refs": [
     "MI.DOC:00044"
    ],
@@ -437,7 +437,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "●リリースする\n●食べちゃう",
-   "en": "- Release\n- Eat her up",
+   "en": "●Release it\n●Eat it",
    "refs": [
     "MI.DOC:00045"
    ],
@@ -447,7 +447,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "「リリースしますか？」\n　左でリリース\n　右でキャンセル",
-   "en": "\"Release her?\"\nLeft: Release\nRight: Cancel",
+   "en": "\"Release it?\"\n　Left: Release\n　Right: Cancel",
    "refs": [
     "MI.DOC:00046"
    ],
@@ -457,7 +457,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "「ありがとう、これ、サービスなんだから。な・い・しょ・よっ」",
-   "en": "",
+   "en": "\"Thanks. This is a little service, so keep it se-cret, okay?\"",
    "refs": [
     "MI.DOC:00047"
    ],
@@ -467,7 +467,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "「逃がしてくれてありがとう。お礼にこんなとこ見せてあげる」",
-   "en": "",
+   "en": "\"Thanks for letting me go. As thanks, I'll show you a place like this.\"",
    "refs": [
     "MI.DOC:00048"
    ],
@@ -477,7 +477,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "「ちぇっ、おまえだけに見せてやるぜ。誰にも言うなよ」",
-   "en": "",
+   "en": "\"Tch, I'll only show you. Don't tell anyone.\"",
    "refs": [
     "MI.DOC:00049"
    ],
@@ -487,7 +487,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "「ありがとうございます。ご恩は一生忘れません。お礼にわたくしのこんな恥ずかしい姿を・・・」",
-   "en": "",
+   "en": "\"Thank you so much. I'll never forget this kindness. As thanks, please look upon this embarrassing form of mine...\"",
    "refs": [
     "MI.DOC:00050"
    ],
@@ -497,7 +497,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "「逃がしてくれるのね。ありがと。これ、サービスよ」",
-   "en": "",
+   "en": "\"You're letting me go, huh? Thanks. This is a service.\"",
    "refs": [
     "MI.DOC:00051"
    ],
@@ -507,7 +507,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "「うふふ、逃がしてくれるなんて・・・あ・り・が・と」",
-   "en": "",
+   "en": "\"Hehe, letting me go... tha-nk-you.\"",
    "refs": [
     "MI.DOC:00052"
    ],
@@ -517,7 +517,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "「あたしのオナニーがサービスよ。また釣ってね」",
-   "en": "",
+   "en": "\"My masturbation is the service. Catch me again, okay?\"",
    "refs": [
     "MI.DOC:00053"
    ],
@@ -527,7 +527,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "「食べちゃいますか？」\n●左で食べる\n●右でキャンセル",
-   "en": "",
+   "en": "\"Eat it?\"\n●Left: Eat\n●Right: Cancel",
    "refs": [
     "MI.DOC:00054"
    ],
@@ -537,7 +537,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "●セーブ",
-   "en": "",
+   "en": "●Save",
    "refs": [
     "MI.DOC:00055"
    ],
@@ -547,7 +547,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "●ロード",
-   "en": "",
+   "en": "●Load",
    "refs": [
     "MI.DOC:00056"
    ],
@@ -557,7 +557,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "●終了",
-   "en": "",
+   "en": "●Quit",
    "refs": [
     "MI.DOC:00057"
    ],
@@ -567,7 +567,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "●おまけモード",
-   "en": "",
+   "en": "●Bonus Mode",
    "refs": [
     "MI.DOC:00058"
    ],
@@ -577,7 +577,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "「いやん、触らないで、ああん」",
-   "en": "",
+   "en": "\"No, don't touch me, aahn.\"",
    "refs": [
     "MI.DOC:00059"
    ],
@@ -587,7 +587,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "「あん、だめよ、そんなところ」",
-   "en": "",
+   "en": "\"Ahn, not there, that place.\"",
    "refs": [
     "MI.DOC:00060"
    ],
@@ -597,7 +597,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "「そこはだめっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Not there! Ah, aahn.\"",
    "refs": [
     "MI.DOC:00061"
    ],
@@ -607,7 +607,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "「やめてっ、触らないでってばっ、あっ」",
-   "en": "",
+   "en": "\"Stop it, I said don't touch! Ah!\"",
    "refs": [
     "MI.DOC:00062"
    ],
@@ -617,7 +617,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "「あっ、ああん、だめ、変なことしないで」",
-   "en": "",
+   "en": "\"Ah, aahn, no, don't do anything weird.\"",
    "refs": [
     "MI.DOC:00063"
    ],
@@ -627,7 +627,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "「あっ、そんなにしないで、変になっちゃう」",
-   "en": "",
+   "en": "\"Ah, don't do it so much, I'll get all weird.\"",
    "refs": [
     "MI.DOC:00064"
    ],
@@ -637,7 +637,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "「やめ・・・もっと優しくして」",
-   "en": "",
+   "en": "\"Stop... be gentler.\"",
    "refs": [
     "MI.DOC:00065"
    ],
@@ -647,7 +647,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "「あんっ、だ、だめよっ、そんなこと、ああん」",
-   "en": "",
+   "en": "\"Ahn! N-no, not that, aahn.\"",
    "refs": [
     "MI.DOC:00066"
    ],
@@ -657,7 +657,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "「だめってばっ、ああん、それ以上は、あっ」",
-   "en": "",
+   "en": "\"I said no! Aahn, any more than that, ah!\"",
    "refs": [
     "MI.DOC:00067"
    ],
@@ -667,7 +667,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "「いやっ、ほんとにしちゃうの？　ああん」",
-   "en": "",
+   "en": "\"No! Are you really going to do it? Aahn.\"",
    "refs": [
     "MI.DOC:00068"
    ],
@@ -677,7 +677,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "「だ、だめよ、あっ、感じちゃう」",
-   "en": "",
+   "en": "\"N-no, ah, I'm feeling it.\"",
    "refs": [
     "MI.DOC:00069"
    ],
@@ -687,7 +687,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "「あ、あたし、どうしよ、ああっ、こんなに、こんなに濡れちゃった」",
-   "en": "",
+   "en": "\"Ah, what do I do, aah, I'm so, so wet already.\"",
    "refs": [
     "MI.DOC:00070"
    ],
@@ -697,7 +697,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "「あっ、あああん、いいっ、いいわっ、ああん」",
-   "en": "",
+   "en": "\"Ah, aaaahn, it's good, it's good, aahn.\"",
    "refs": [
     "MI.DOC:00071"
    ],
@@ -707,7 +707,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "「ああん、あたし・・・感じてるの、ああっ」",
-   "en": "",
+   "en": "\"Aahn, I... I'm feeling it, aah.\"",
    "refs": [
     "MI.DOC:00072"
    ],
@@ -717,7 +717,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "「あああっ、もっと、もっと強くして、ああっ、あああん」",
-   "en": "",
+   "en": "\"Aaah, more, harder, aah, aaaahn.\"",
    "refs": [
     "MI.DOC:00073"
    ],
@@ -727,7 +727,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "「あたし、あたしっ、あああん、ああっ、あん」",
-   "en": "",
+   "en": "\"I, I, aaaahn, aah, ahn.\"",
    "refs": [
     "MI.DOC:00074"
    ],
@@ -737,7 +737,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "「そこ、そこがいいの、ああっ、あん、」",
-   "en": "",
+   "en": "\"There, that's the spot, aah, ahn.\"",
    "refs": [
     "MI.DOC:00075"
    ],
@@ -747,7 +747,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "「ああっ、ああっ、ああっ、いいっ、いいのっ、あっ、あああああん」",
-   "en": "",
+   "en": "\"Aah, aah, aah, it's good, it's good, ah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00076"
    ],
@@ -757,7 +757,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "「あああっ、ねえっ、あたしっ、あたしっ、いっちゃうっ、一緒いってっ\nああっ、あああああん」」",
-   "en": "",
+   "en": "\"Aaah, hey, I, I'm going to come, come with me\nAah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00077"
    ],
@@ -767,7 +767,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "「やっ、やめなさい、あっ、触らないでっ」",
-   "en": "",
+   "en": "\"No, stop it, ah, don't touch me!\"",
    "refs": [
     "MI.DOC:00078"
    ],
@@ -777,7 +777,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "「あっ、変なところ触らないでっ、あん、や、やめなさい」",
-   "en": "",
+   "en": "\"Ah, don't touch me there, ahn, s-stop it.\"",
    "refs": [
     "MI.DOC:00079"
    ],
@@ -787,7 +787,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "「ああん、だめっ、そこはだめっ、ああん」",
-   "en": "",
+   "en": "\"Aahn, no, not there, aahn.\"",
    "refs": [
     "MI.DOC:00080"
    ],
@@ -797,7 +797,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "「あん、もういいでしょう？、あっ、ちょっと」",
-   "en": "",
+   "en": "\"Ahn, that's enough, isn't it? Ah, hey.\"",
    "refs": [
     "MI.DOC:00081"
    ],
@@ -807,7 +807,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "「そんなに、ああっ、そんなにしないでっ、あん」",
-   "en": "",
+   "en": "\"So much, aah, don't do it so much, ahn.\"",
    "refs": [
     "MI.DOC:00082"
    ],
@@ -817,7 +817,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "「あっ、やめなさいっ、ああん、そこは、だめったら、あん」",
-   "en": "",
+   "en": "\"Ah, stop it! Aahn, not there, I said no, ahn.\"",
    "refs": [
     "MI.DOC:00083"
    ],
@@ -827,7 +827,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "「あっ、ああん、感じるわ、あああん」",
-   "en": "",
+   "en": "\"Ah, aahn, I'm feeling it, aaaahn.\"",
    "refs": [
     "MI.DOC:00084"
    ],
@@ -837,7 +837,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "「や、やめな・・・変になりそう、ああっ、ああん」",
-   "en": "",
+   "en": "\"St-stop... I'm going to lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00085"
    ],
@@ -847,7 +847,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "「あっ、やっ、やめて、あっ、あっ、ああん、ああん」",
-   "en": "",
+   "en": "\"Ah, no, stop, ah, ah, aahn, aahn.\"",
    "refs": [
     "MI.DOC:00086"
    ],
@@ -857,7 +857,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "「あん、これ以上はだめよっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, no more than this, aaaahn.\"",
    "refs": [
     "MI.DOC:00087"
    ],
@@ -867,7 +867,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "「あっ、あん、もうだめっ、ああっ、あああっ」",
-   "en": "",
+   "en": "\"Ah, ahn, I can't anymore, aah, aaah.\"",
    "refs": [
     "MI.DOC:00088",
     "MI.DOC:00107"
@@ -878,7 +878,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "「いいっ、気持ちいいわっ、あっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Good, it feels so good, ah, ah, aahn.\"",
    "refs": [
     "MI.DOC:00089"
    ],
@@ -888,7 +888,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "「あっ、あああん、もっと激しく、お願いっ」",
-   "en": "",
+   "en": "\"Ah, aaaahn, harder, please!\"",
    "refs": [
     "MI.DOC:00090"
    ],
@@ -898,7 +898,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "「いい、とってもいいわっ、ああっ、あああああん」",
-   "en": "",
+   "en": "\"Good, it feels so good, aah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00091"
    ],
@@ -908,7 +908,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "「ああっ、激しく、もっと激しくして、ああっ、ああっ、あああっ」",
-   "en": "",
+   "en": "\"Aah, harder, do it harder, aah, aah, aaah.\"",
    "refs": [
     "MI.DOC:00092"
    ],
@@ -918,7 +918,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "「あっ、あっ、あああん、もっと、もっとしてっ、あああん」",
-   "en": "",
+   "en": "\"Ah, ah, aaaahn, more, do it more, aaaahn.\"",
    "refs": [
     "MI.DOC:00093"
    ],
@@ -928,7 +928,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "「あっ、あああん、あん、だ、だめぇ、あっ、ああん」",
-   "en": "",
+   "en": "\"Ah, aaaahn, ahn, n-no, ah, aahn.\"",
    "refs": [
     "MI.DOC:00094"
    ],
@@ -938,7 +938,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、あっ、ああん、強くっ、強く突いてっ、あっ、あっ、あああん」",
-   "en": "",
+   "en": "\"Ah, ah, ah, ah, aahn, harder, thrust harder, ah, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00095"
    ],
@@ -948,7 +948,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、あっ、いく、いっちゃうわっ、もうだめなのっああっ、ああっ、ああっ、あああああん」",
-   "en": "",
+   "en": "\"Ah, ah, ah, ah, I'm coming, I'm going to come, I can't anymore, aah, aah, aah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00096"
    ],
@@ -958,7 +958,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "「あっ、やっ、やめろよ、あん、触るなよ」",
-   "en": "",
+   "en": "\"Ah, no, stop it, ahn, don't touch me.\"",
    "refs": [
     "MI.DOC:00097"
    ],
@@ -968,7 +968,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "「変なとこ触るなよ、ああん、やめろってばっ」",
-   "en": "",
+   "en": "\"Don't touch me there, aahn, I said stop!\"",
    "refs": [
     "MI.DOC:00098"
    ],
@@ -978,7 +978,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "「ああん、そこはだめっ、だめだってば、ああん」",
-   "en": "",
+   "en": "\"Aahn, not there, I said no, aahn.\"",
    "refs": [
     "MI.DOC:00099"
    ],
@@ -988,7 +988,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "「も、もういいだろっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Th-that's enough, ah, aahn.\"",
    "refs": [
     "MI.DOC:00100"
    ],
@@ -998,7 +998,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "「そんなに、ああっ、そんなにするなよっ、あん」",
-   "en": "",
+   "en": "\"So much, aah, don't do it so much, ahn.\"",
    "refs": [
     "MI.DOC:00101"
    ],
@@ -1008,7 +1008,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "「やめろっ、あっ、ああん、そこは、だめっ、あん」",
-   "en": "",
+   "en": "\"Stop it! Ah, aahn, not there, no, ahn.\"",
    "refs": [
     "MI.DOC:00102"
    ],
@@ -1018,7 +1018,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "「あっ、ああん、感じる、あああん」",
-   "en": "",
+   "en": "\"Ah, aahn, I'm feeling it, aaaahn.\"",
    "refs": [
     "MI.DOC:00103"
    ],
@@ -1028,7 +1028,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "「や、やめろよ、変になるよ、ああっ、ああん」",
-   "en": "",
+   "en": "\"S-stop it, I'll lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00104"
    ],
@@ -1038,7 +1038,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "「やっ、やめて、ああっ、あん、ああっ、ああっ」",
-   "en": "",
+   "en": "\"No, stop, aah, ahn, aah, aah.\"",
    "refs": [
     "MI.DOC:00105"
    ],
@@ -1048,7 +1048,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "「あん、これ以上はだめってばっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, I said no more than this, aaaahn.\"",
    "refs": [
     "MI.DOC:00106"
    ],
@@ -1058,7 +1058,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "「いいっ、気持ちいいっ、あっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Good, it feels so good, ah, ah, aahn.\"",
    "refs": [
     "MI.DOC:00108"
    ],
@@ -1068,7 +1068,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、もっと激しく、あああっ」",
-   "en": "",
+   "en": "\"Ah, ah, ah, harder, aaah.\"",
    "refs": [
     "MI.DOC:00109"
    ],
@@ -1078,7 +1078,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "「いい、とってもいいっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"Good, it feels so good, aah, aah.\"",
    "refs": [
     "MI.DOC:00110"
    ],
@@ -1088,7 +1088,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "「激しく、もっと激しくして、あっ、あっ、あああああん」",
-   "en": "",
+   "en": "\"Harder, do it harder, ah, ah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00111"
    ],
@@ -1098,7 +1098,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "「ああっ、ああっ、ああっ、もっと、もっとっ、あああん」",
-   "en": "",
+   "en": "\"Aah, aah, aah, more, more, aaaahn.\"",
    "refs": [
     "MI.DOC:00112"
    ],
@@ -1108,7 +1108,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "「あああん、あん、だ、だめぇ、あっ、ああん」",
-   "en": "",
+   "en": "\"Aaaahn, ahn, n-no, ah, aahn.\"",
    "refs": [
     "MI.DOC:00113",
     "MI.DOC:00132"
@@ -1119,7 +1119,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "「ああっ、ああっ、ああっ、体が、体がしびれちゃう、ああっ、あっ、あっ」",
-   "en": "",
+   "en": "\"Aah, aah, aah, my body, my body is going numb, aah, ah, ah.\"",
    "refs": [
     "MI.DOC:00114"
    ],
@@ -1129,7 +1129,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、あっ、いく、いっちゃうっ、もうだめっ、ああああっ、あああああん」",
-   "en": "",
+   "en": "\"Ah, ah, ah, ah, I'm coming, I'm going to come, I can't anymore, aaaah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00115"
    ],
@@ -1139,7 +1139,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "「あん、やめて下さい、あん、触らないで」",
-   "en": "",
+   "en": "\"Ahn, please stop, ahn, don't touch me.\"",
    "refs": [
     "MI.DOC:00116"
    ],
@@ -1149,7 +1149,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "「そんなところ触らないで、ああん、やめて下さい」",
-   "en": "",
+   "en": "\"Don't touch me there, aahn, please stop.\"",
    "refs": [
     "MI.DOC:00117"
    ],
@@ -1159,7 +1159,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "「ああん、そこはだめです、だめなんです、ああん」",
-   "en": "",
+   "en": "\"Aahn, not there, I can't, aahn.\"",
    "refs": [
     "MI.DOC:00118"
    ],
@@ -1169,7 +1169,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "「も、もう許して下さい、あっ、ああん」",
-   "en": "",
+   "en": "\"P-please, have mercy, ah, aahn.\"",
    "refs": [
     "MI.DOC:00119"
    ],
@@ -1179,7 +1179,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "「そんなに、あん、そんなにしないで、あん」",
-   "en": "",
+   "en": "\"So much, ahn, don't do it so much, ahn.\"",
    "refs": [
     "MI.DOC:00120"
    ],
@@ -1189,7 +1189,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "「やめてっ、あん、ああん、そこは、そこはだめなんですぅ、あん」",
-   "en": "",
+   "en": "\"Stop! Ahn, aahn, not there, I can't, ahn.\"",
    "refs": [
     "MI.DOC:00121"
    ],
@@ -1199,7 +1199,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "「あっ、ああん、感じちゃいます、あああん」",
-   "en": "",
+   "en": "\"Ah, aahn, I'm feeling it, aaaahn.\"",
    "refs": [
     "MI.DOC:00122"
    ],
@@ -1209,7 +1209,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "「や、やめて下さい、わたし変になりそう、ああっ、ああん」",
-   "en": "",
+   "en": "\"P-please stop, I'm going to lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00123"
    ],
@@ -1219,7 +1219,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "「やっ、やめて、あん、あん、ああん、ああん」",
-   "en": "",
+   "en": "\"No, stop, ahn, ahn, aahn, aahn.\"",
    "refs": [
     "MI.DOC:00124",
     "MI.DOC:00143"
@@ -1230,7 +1230,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "「あん、これ以上はだめですっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, no more than this, aaaahn.\"",
    "refs": [
     "MI.DOC:00125"
    ],
@@ -1240,7 +1240,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "「あん、ああん、もうだめですっ、ああん、あああっ」",
-   "en": "",
+   "en": "\"Ahn, aahn, I can't anymore, aahn, aaah.\"",
    "refs": [
     "MI.DOC:00126"
    ],
@@ -1250,7 +1250,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "「いいですっ、気持ちいいですっ、あっ、あっ、ああん」",
-   "en": "",
+   "en": "\"It's good, it feels so good, ah, ah, aahn.\"",
    "refs": [
     "MI.DOC:00127"
    ],
@@ -1260,7 +1260,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、もっと激しく、激しくして下さい、あああっ」",
-   "en": "",
+   "en": "\"Ah, ah, ah, harder, please do it harder, aaah.\"",
    "refs": [
     "MI.DOC:00128"
    ],
@@ -1270,7 +1270,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "「いいです、とってもいいですっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"It's good, it feels so good, aah, aah.\"",
    "refs": [
     "MI.DOC:00129"
    ],
@@ -1280,7 +1280,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "「激しく、もっと激しく、あっ、あっ、あああああん」",
-   "en": "",
+   "en": "\"Harder, do it harder, ah, ah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00130"
    ],
@@ -1290,7 +1290,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "「ああん、あん、ああっ、もっと、もっとっ、あああん」",
-   "en": "",
+   "en": "\"Aahn, ahn, aah, more, more, aaaahn.\"",
    "refs": [
     "MI.DOC:00131"
    ],
@@ -1300,7 +1300,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "「ああっ、ああっ、ああっ、あっ、ああん、あっ、あっ」",
-   "en": "",
+   "en": "\"Aah, aah, aah, ah, aahn, ah, ah.\"",
    "refs": [
     "MI.DOC:00133",
     "MI.DOC:00152"
@@ -1311,7 +1311,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "「あん、あん、あん、あん、いく、いっちゃいますっ、も、もうだめですぅっ、ああああっ、あああああん」",
-   "en": "",
+   "en": "\"Ahn, ahn, ahn, ahn, I'm coming, I'm going to come, I-I can't anymore, aaaah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00134"
    ],
@@ -1321,7 +1321,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "「あっ、あん、やめてよ、あん、触らないで」",
-   "en": "",
+   "en": "\"Ah, ahn, stop it, ahn, don't touch me.\"",
    "refs": [
     "MI.DOC:00135"
    ],
@@ -1331,7 +1331,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "「だめっ、そんなところ触らないで、ああん」",
-   "en": "",
+   "en": "\"No, don't touch me there, aahn.\"",
    "refs": [
     "MI.DOC:00136"
    ],
@@ -1341,7 +1341,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "「ああん、そこはだめってば、あっ、ああん」",
-   "en": "",
+   "en": "\"Aahn, I said not there, ah, aahn.\"",
    "refs": [
     "MI.DOC:00137"
    ],
@@ -1351,7 +1351,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "「ああっ、ゆ、許して、あっ、ああん」",
-   "en": "",
+   "en": "\"Aah, h-have mercy, ah, aahn.\"",
    "refs": [
     "MI.DOC:00138"
    ],
@@ -1361,7 +1361,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "「ああっ、そんなに、あん、そんなにしないで」",
-   "en": "",
+   "en": "\"Aah, so much, ahn, don't do it so much.\"",
    "refs": [
     "MI.DOC:00139"
    ],
@@ -1371,7 +1371,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "「やめてっ、あん、ああん、そこは、そこはだめなの」",
-   "en": "",
+   "en": "\"Stop! Ahn, aahn, not there, that place is off-limits.\"",
    "refs": [
     "MI.DOC:00140"
    ],
@@ -1381,7 +1381,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "「あっ、ああん、感じちゃう、あああん」",
-   "en": "",
+   "en": "\"Ah, aahn, I'm feeling it, aaaahn.\"",
    "refs": [
     "MI.DOC:00141",
     "MI.DOC:00179"
@@ -1392,7 +1392,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "「ああん、や、やめてっ、あたし変になっちゃう、ああっ、ああん」",
-   "en": "",
+   "en": "\"Aahn, s-stop, I'm going to lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00142"
    ],
@@ -1402,7 +1402,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "「ああん、これ以上はだめよっ、あっ、あああん」",
-   "en": "",
+   "en": "\"Aahn, no more than this, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00144"
    ],
@@ -1412,7 +1412,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "「あっ、あん、もうだめっ、ああん、あああっ」",
-   "en": "",
+   "en": "\"Ah, ahn, I can't anymore, aahn, aaah.\"",
    "refs": [
     "MI.DOC:00145"
    ],
@@ -1422,7 +1422,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "「あん、いいっ、気持ちいいっ、あっ、あそこも擦ってっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Ahn, good, it feels so good, ah, rub there too, ah, aahn.\"",
    "refs": [
     "MI.DOC:00146"
    ],
@@ -1432,7 +1432,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "「ああっ、ああっ、ああっ、もっと激しく、激しくして」",
-   "en": "",
+   "en": "\"Aah, aah, aah, harder, do it harder.\"",
    "refs": [
     "MI.DOC:00147"
    ],
@@ -1442,7 +1442,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "「あっ、いいっ、とってもいいっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"Ah, good, it feels so good, aah, aah.\"",
    "refs": [
     "MI.DOC:00148"
    ],
@@ -1452,7 +1452,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "「激しく、もっと激しく突いてっ、ああっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"Harder, thrust harder, aah, aah, aah.\"",
    "refs": [
     "MI.DOC:00149"
    ],
@@ -1462,7 +1462,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "「ああっ、あっ、あっ、もっと、もっとしてぇっ、あああん」",
-   "en": "",
+   "en": "\"Aah, ah, ah, more, do it more, aaaahn.\"",
    "refs": [
     "MI.DOC:00150",
     "MI.DOC:00169"
@@ -1473,7 +1473,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "「あっ、あん、だ、だめっ、あん、ああん」",
-   "en": "",
+   "en": "\"Ah, ahn, n-no, ahn, aahn.\"",
    "refs": [
     "MI.DOC:00151",
     "MI.DOC:00170"
@@ -1484,7 +1484,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、あっ、いく、いっちゃうっ、も、もうだめっ、ああっ、ああっ、あああああん」",
-   "en": "",
+   "en": "\"Ah, ah, ah, ah, I'm coming, I'm going to come, I-I can't anymore, aah, aah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00153"
    ],
@@ -1494,7 +1494,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "「あっ、ああん、やめなさい、あん、あああん」",
-   "en": "",
+   "en": "\"Ah, aahn, stop it, ahn, aaaahn.\"",
    "refs": [
     "MI.DOC:00154"
    ],
@@ -1504,7 +1504,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "「だめよっ、そんなとこ触っちゃっ、あ、でも、ああん」",
-   "en": "",
+   "en": "\"No, don't touch there, ah, but, aahn.\"",
    "refs": [
     "MI.DOC:00155"
    ],
@@ -1514,7 +1514,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "「ああん、そこはだめよ、だめってば、あっ、ああん」",
-   "en": "",
+   "en": "\"Aahn, not there, I said no, ah, aahn.\"",
    "refs": [
     "MI.DOC:00156"
    ],
@@ -1524,7 +1524,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "「あん、ああっ、やめ・・・て、あっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, aah, sto-op, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00157"
    ],
@@ -1534,7 +1534,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "「あん、やめてっ、あん、ああん、そこは、そこはだめ」",
-   "en": "",
+   "en": "\"Ahn, stop! Ahn, aahn, not there, that place is off-limits.\"",
    "refs": [
     "MI.DOC:00158"
    ],
@@ -1544,7 +1544,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "「ああっ、そんな、あん、そんなところ、ああっ、あああん」",
-   "en": "",
+   "en": "\"Aah, such, ahn, a place like that, aah, aaaahn.\"",
    "refs": [
     "MI.DOC:00159"
    ],
@@ -1554,7 +1554,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "「ああっ、あん、い、いいわ、感じるわ、あああん」",
-   "en": "",
+   "en": "\"Aah, ahn, i-it's good, I'm feeling it, aaaahn.\"",
    "refs": [
     "MI.DOC:00160"
    ],
@@ -1564,7 +1564,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "「ああん、わたし、わたし変になっちゃう、あっ、あああん」",
-   "en": "",
+   "en": "\"Aahn, I, I'm going to lose it, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00161"
    ],
@@ -1574,7 +1574,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "「ああっ、や、やめなさい、あっ、あん、ああっ、ああん」",
-   "en": "",
+   "en": "\"Aah, s-stop it, ah, ahn, aah, aahn.\"",
    "refs": [
     "MI.DOC:00162"
    ],
@@ -1584,7 +1584,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "「あっ、ああっ、だめっ、これ以上はだめよっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Ah, aah, no, no more than this, ah, aahn.\"",
    "refs": [
     "MI.DOC:00163"
    ],
@@ -1594,7 +1594,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "「あん、もうだめっ、感じちゃうわ、あああっ」",
-   "en": "",
+   "en": "\"Ahn, I can't anymore, I'm feeling it, aaah.\"",
    "refs": [
     "MI.DOC:00164"
    ],
@@ -1604,7 +1604,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "「あん、感じる、いいっ、とっても気持ちいいっ、あっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Ahn, I'm feeling it, good, it feels so good, ah, ah, aahn.\"",
    "refs": [
     "MI.DOC:00165"
    ],
@@ -1614,7 +1614,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "「あっ、ね、ねえ、もっと、もっと激しく、激しくして」",
-   "en": "",
+   "en": "\"Ah, hey, hey, more, harder, do it harder.\"",
    "refs": [
     "MI.DOC:00166"
    ],
@@ -1624,7 +1624,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "「あああん、いいっ、いい気持ちっ、あっ、ああああん」",
-   "en": "",
+   "en": "\"Aaaahn, good, it feels so good, ah, aaaaahn.\"",
    "refs": [
     "MI.DOC:00167"
    ],
@@ -1634,7 +1634,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "「もっと、もっと突き上げてっ、ああっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"More, thrust up more, aah, aah, aah.\"",
    "refs": [
     "MI.DOC:00168"
    ],
@@ -1644,7 +1644,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "「ああっ、ああっ、もっと、もっと奥までっ、あっ、あっ、あっ」",
-   "en": "",
+   "en": "\"Aah, aah, more, deeper, ah, ah, ah.\"",
    "refs": [
     "MI.DOC:00171"
    ],
@@ -1654,7 +1654,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、あっ、も、もうだめっ、だめなのっ、ああっ、ああっ、いっ、いっちゃうーっ、ああああん」",
-   "en": "",
+   "en": "\"Ah, ah, ah, ah, I-I can't anymore, I can't, aah, aah, I'm, I'm coming, aaaaahn.\"",
    "refs": [
     "MI.DOC:00172"
    ],
@@ -1664,7 +1664,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "「あん、いやっ、やめて、触らないで」",
-   "en": "",
+   "en": "\"Ahn, no, stop, don't touch me.\"",
    "refs": [
     "MI.DOC:00173"
    ],
@@ -1674,7 +1674,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "「やん、変なとこ触らないで、ああん」",
-   "en": "",
+   "en": "\"Yahn, don't touch me there, aahn.\"",
    "refs": [
     "MI.DOC:00174"
    ],
@@ -1684,7 +1684,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "「ああん、そこはだめっ、だめってば、ああん」",
-   "en": "",
+   "en": "\"Aahn, not there, I said no, aahn.\"",
    "refs": [
     "MI.DOC:00175"
    ],
@@ -1694,7 +1694,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "「ね、もういいでしょっ、あっ、ああん」",
-   "en": "",
+   "en": "\"Hey, that's enough, isn't it? Ah, aahn.\"",
    "refs": [
     "MI.DOC:00176"
    ],
@@ -1704,7 +1704,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "「そんなに、ああっ、そんなにしないでっ」",
-   "en": "",
+   "en": "\"So much, aah, don't do it so much!\"",
    "refs": [
     "MI.DOC:00177",
     "MI.DOC:00196"
@@ -1715,7 +1715,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "「いやっ、あああっ、そこは、そこは、あああん」",
-   "en": "",
+   "en": "\"No, aaah, not there, not there, aaaahn.\"",
    "refs": [
     "MI.DOC:00178"
    ],
@@ -1725,7 +1725,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "「や、やめて、変になっちゃう、ああっ、ああん」",
-   "en": "",
+   "en": "\"S-stop, I'll lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00180"
    ],
@@ -1735,7 +1735,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "「いやっ、ああっ、あん、どうしよう、あたしったら、ああっ」",
-   "en": "",
+   "en": "\"No, aah, ahn, what do I do, look at me, aah.\"",
    "refs": [
     "MI.DOC:00181"
    ],
@@ -1745,7 +1745,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "「ああん、これ以上はだめってばっ、ああっ」",
-   "en": "",
+   "en": "\"Aahn, I said no more than this, aah.\"",
    "refs": [
     "MI.DOC:00182"
    ],
@@ -1755,7 +1755,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "「あっ、あああん、もうだめっ、あっ」",
-   "en": "",
+   "en": "\"Ah, aaaahn, I can't anymore, ah.\"",
    "refs": [
     "MI.DOC:00183"
    ],
@@ -1765,7 +1765,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "「いいっ、とってもいいっ、もっと、奥まで、あっ、ああっ、あああん」",
-   "en": "",
+   "en": "\"Good, it feels so good, more, deeper, ah, aah, aaaahn.\"",
    "refs": [
     "MI.DOC:00184"
    ],
@@ -1775,7 +1775,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "「そ、そんなに、あっ、激しく、あああん」",
-   "en": "",
+   "en": "\"S-so much, ah, harder, aaaahn.\"",
    "refs": [
     "MI.DOC:00185"
    ],
@@ -1785,7 +1785,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "「いい、気持ちいいのっ、ああっ、ああっ」",
-   "en": "",
+   "en": "\"Good, it feels so good, aah, aah.\"",
    "refs": [
     "MI.DOC:00186"
    ],
@@ -1795,7 +1795,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "「もっと、もっと激しくして、ああっ、ああっ、あああん」",
-   "en": "",
+   "en": "\"More, do it harder, aah, aah, aaaahn.\"",
    "refs": [
     "MI.DOC:00187"
    ],
@@ -1805,7 +1805,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "「あああん、ああっ、もっと、もっとしてっ、あああん」",
-   "en": "",
+   "en": "\"Aaaahn, aah, more, do it more, aaaahn.\"",
    "refs": [
     "MI.DOC:00188"
    ],
@@ -1815,7 +1815,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "「だ、だめぇ、あっ、ああん、もっとぉ」",
-   "en": "",
+   "en": "\"N-no, ah, aahn, more.\"",
    "refs": [
     "MI.DOC:00189"
    ],
@@ -1825,7 +1825,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ、いっ、いいっ、あっ、あっ、あっ、奥まで来てるぅ」",
-   "en": "",
+   "en": "\"Ah, ah, ah, i-it's good, ah, ah, ah, it's reaching deep inside.\"",
    "refs": [
     "MI.DOC:00190"
    ],
@@ -1835,7 +1835,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "「あああっ、あああっ、あっ、ああっ、いっちゃうっ、いっちゃうっ、あああっ、あああああん」",
-   "en": "",
+   "en": "\"Aaah, aaah, ah, aah, I'm coming, I'm coming, aaah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00191"
    ],
@@ -1845,7 +1845,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "「やーん、だめーっ、逃がしてーっ」",
-   "en": "",
+   "en": "\"Nooo, stop, let me go!\"",
    "refs": [
     "MI.DOC:00192"
    ],
@@ -1855,7 +1855,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "「だめだめっ、だめってばーっ」",
-   "en": "",
+   "en": "\"No no, I said no!\"",
    "refs": [
     "MI.DOC:00193"
    ],
@@ -1865,7 +1865,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "「いやーん、エッチィ、やめてよーっ",
-   "en": "",
+   "en": "\"Nooo, you pervert, stop it!\"",
    "refs": [
     "MI.DOC:00194"
    ],
@@ -1875,7 +1875,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "「や、やめてよーっ、ばかぁっ」",
-   "en": "",
+   "en": "\"S-stop it, you idiot!\"",
    "refs": [
     "MI.DOC:00195"
    ],
@@ -1885,7 +1885,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "「ちょ、ちょとぉ、だめだってば、あっ、あっ、だめぇ」",
-   "en": "",
+   "en": "\"H-hey, I said no, ah, ah, no.\"",
    "refs": [
     "MI.DOC:00197"
    ],
@@ -1895,7 +1895,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "「ああっ、あん、やめ、やめてっ、あああっ、あああん」",
-   "en": "",
+   "en": "\"Aah, ahn, sto-stop, aaah, aaaahn.\"",
    "refs": [
     "MI.DOC:00198"
    ],
@@ -1905,7 +1905,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "「や、やめてよ、、変になっちゃうんだからぁ、ああっ、ああん」",
-   "en": "",
+   "en": "\"S-stop it, I'll lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00199"
    ],
@@ -1915,7 +1915,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "「ああん、どうしよう、あたし、あっ、あああん」",
-   "en": "",
+   "en": "\"Aahn, what do I do, I, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00200"
    ],
@@ -1925,7 +1925,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "「やめてよーっ、さわらないでよーっ」",
-   "en": "",
+   "en": "\"Stop it! Don't touch me!\"",
    "refs": [
     "MI.DOC:00201"
    ],
@@ -1935,7 +1935,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "「やーん、へんたーいっ、やめてーっ」",
-   "en": "",
+   "en": "\"Nooo, pervert! Stop!\"",
    "refs": [
     "MI.DOC:00202"
    ],
@@ -1945,7 +1945,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "「だ、だめってば、さわらないでーっ」",
-   "en": "",
+   "en": "\"N-no, I said, don't touch me!\"",
    "refs": [
     "MI.DOC:00203"
    ],
@@ -1955,7 +1955,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "「あーん、なんとかしてーっ」",
-   "en": "",
+   "en": "\"Aahn, do something!\"",
    "refs": [
     "MI.DOC:00204"
    ],
@@ -1965,7 +1965,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "「そんなとこ、ああっ、ばかばかぁ」",
-   "en": "",
+   "en": "\"A place like that, aah, you idiot, idiot!\"",
    "refs": [
     "MI.DOC:00205"
    ],
@@ -1975,7 +1975,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "「あん、もーっ、だめって言ってるでしょう、あーん」",
-   "en": "",
+   "en": "\"Ahn, geez, I told you no, aahn.\"",
    "refs": [
     "MI.DOC:00206"
    ],
@@ -1985,7 +1985,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "「あっ、あん、ああん、あああん、そんなに、そんなにしないで」",
-   "en": "",
+   "en": "\"Ah, ahn, aahn, aaaahn, so much, don't do it so much.\"",
    "refs": [
     "MI.DOC:00207"
    ],
@@ -1995,7 +1995,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "「あん、変になっちゃう、変になっちゃうよーっ、ああっ、ああん」",
-   "en": "",
+   "en": "\"Ahn, I'll lose it, I'll lose it, aah, aahn.\"",
    "refs": [
     "MI.DOC:00208"
    ],
@@ -2005,7 +2005,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "「だ、だめぇ、ああん、もうやめてーっ、助けてーっ」",
-   "en": "",
+   "en": "\"N-no, aahn, stop it, help!\"",
    "refs": [
     "MI.DOC:00209"
    ],
@@ -2015,7 +2015,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "「いやーん、そこはだめーっ、さわらないでーっ」",
-   "en": "",
+   "en": "\"Nooo, not there, don't touch me!\"",
    "refs": [
     "MI.DOC:00210"
    ],
@@ -2025,7 +2025,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "「あーん、そこもだめーっ、だめってばーっ」",
-   "en": "",
+   "en": "\"Aahn, not there either, I said no!\"",
    "refs": [
     "MI.DOC:00211"
    ],
@@ -2035,7 +2035,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "「あはーん、そこは少しいい、もっとーっ」",
-   "en": "",
+   "en": "\"Ahaan, that spot feels a little good, more!\"",
    "refs": [
     "MI.DOC:00212"
    ],
@@ -2045,7 +2045,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "「あっ、あーん、そこもいいみたいーっ」",
-   "en": "",
+   "en": "\"Ah, aahn, that spot feels good too.\"",
    "refs": [
     "MI.DOC:00213"
    ],
@@ -2055,7 +2055,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "「あん、そんなとこ、そんなこともいいみたいーっ、あーん」",
-   "en": "",
+   "en": "\"Ahn, a place like that, that feels good too, aahn.\"",
    "refs": [
     "MI.DOC:00214"
    ],
@@ -2065,7 +2065,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "「あん、もーっ、いやん、いやだけど、気持ちいいっ、あっあーん」",
-   "en": "",
+   "en": "\"Ahn, geez, no, I don't like it, but it feels good, ah, aahn.\"",
    "refs": [
     "MI.DOC:00215"
    ],
@@ -2075,7 +2075,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "「あっ、あん、ああん、あああん、もっとモミモミしてーっ」",
-   "en": "",
+   "en": "\"Ah, ahn, aahn, aaaahn, squeeze them more!\"",
    "refs": [
     "MI.DOC:00216"
    ],
@@ -2085,7 +2085,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "「あん、あああん、濡れちゃうよーっ、あっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, aaaahn, I'm getting wet, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00217"
    ],
@@ -2095,7 +2095,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "「だ、だめぇ、ああん、もうやめないでーっ、やめちゃいやーっ」",
-   "en": "",
+   "en": "\"N-no, aahn, don't stop, don't stop!\"",
    "refs": [
     "MI.DOC:00218"
    ],
@@ -2105,7 +2105,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "「きゃーっ、たすけてーっ、見ないでーっ」",
-   "en": "",
+   "en": "\"Kyaa! Help! Don't look!\"",
    "refs": [
     "MI.DOC:00219"
    ],
@@ -2115,7 +2115,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "「あーん、さわっちゃいやーっ、だめってばーっ」",
-   "en": "",
+   "en": "\"Aahn, don't touch, I said no!\"",
    "refs": [
     "MI.DOC:00220"
    ],
@@ -2125,7 +2125,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "「あっ、ああん、そんなとこ、だめーっ」",
-   "en": "",
+   "en": "\"Ah, aahn, a place like that, no!\"",
    "refs": [
     "MI.DOC:00221"
    ],
@@ -2135,7 +2135,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "「あっ、ああん、感じる感じるぅ、ああん」",
-   "en": "",
+   "en": "\"Ah, aahn, I'm feeling it, feeling it, aahn.\"",
    "refs": [
     "MI.DOC:00222"
    ],
@@ -2145,7 +2145,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "「あん、も、もっとしてっ、ああん」",
-   "en": "",
+   "en": "\"Ahn, m-more, do it more, aahn.\"",
    "refs": [
     "MI.DOC:00223"
    ],
@@ -2155,7 +2155,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "「やーん、こすらないでーっ、ビクビクしちゃうーっ」",
-   "en": "",
+   "en": "\"Nooo, don't rub, I'll start twitching!\"",
    "refs": [
     "MI.DOC:00224"
    ],
@@ -2165,7 +2165,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "「ああん、あん、あ、あたしったら、感じてるーっ」",
-   "en": "",
+   "en": "\"Aahn, ahn, ah, look at me, I'm feeling it!\"",
    "refs": [
     "MI.DOC:00225"
    ],
@@ -2175,7 +2175,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "「あっ、あん、もう濡れ濡れよーっ、あああん」",
-   "en": "",
+   "en": "\"Ah, ahn, I'm already soaking wet, aaaahn.\"",
    "refs": [
     "MI.DOC:00226"
    ],
@@ -2185,7 +2185,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "「あっあああん、もっとこすってぇ、気持ちいいのーっ」",
-   "en": "",
+   "en": "\"Ah, aaaahn, rub more, it feels so good!\"",
    "refs": [
     "MI.DOC:00227"
    ],
@@ -2195,7 +2195,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "「さわっちゃいやーっ、やめてーっ」",
-   "en": "",
+   "en": "\"Don't touch, stop!\"",
    "refs": [
     "MI.DOC:00228"
    ],
@@ -2205,7 +2205,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "「だめっ、だめってばーっ、あああん」",
-   "en": "",
+   "en": "\"No, I said no, aaaahn.\"",
    "refs": [
     "MI.DOC:00229"
    ],
@@ -2215,7 +2215,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "「あん、そこはだめっ、だめなのーっ」",
-   "en": "",
+   "en": "\"Ahn, not there, I can't!\"",
    "refs": [
     "MI.DOC:00230"
    ],
@@ -2225,7 +2225,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "「あん、モミモミしないでーっ、ああん」",
-   "en": "",
+   "en": "\"Ahn, don't squeeze, aahn.\"",
    "refs": [
     "MI.DOC:00231"
    ],
@@ -2235,7 +2235,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "「いやーん、さわらないでーっ、やだったらーっ」",
-   "en": "",
+   "en": "\"Nooo, don't touch me, I said no!\"",
    "refs": [
     "MI.DOC:00232"
    ],
@@ -2245,7 +2245,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "「やめてーっ、こするとビクビクしちゃうのーっ」",
-   "en": "",
+   "en": "\"Stop! If you rub, I'll twitch!\"",
    "refs": [
     "MI.DOC:00233"
    ],
@@ -2255,7 +2255,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "「いいっ、気持ちいいっ、あん、あああん」",
-   "en": "",
+   "en": "\"Good, it feels so good, ahn, aaaahn.\"",
    "refs": [
     "MI.DOC:00234"
    ],
@@ -2265,7 +2265,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "「ああん、濡れちゃった、濡れちゃったよーっ、あああん」",
-   "en": "",
+   "en": "\"Aahn, I got wet, I got wet, aaaahn.\"",
    "refs": [
     "MI.DOC:00235"
    ],
@@ -2275,7 +2275,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "「あっ、ああっ、あん、もっとしてーっ、めちゃくちゃにしてーっ」",
-   "en": "",
+   "en": "\"Ah, aah, ahn, do it more, mess me up!\"",
    "refs": [
     "MI.DOC:00236"
    ],
@@ -2285,7 +2285,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "「きゃいーん、やめてーん」",
-   "en": "",
+   "en": "\"Kyain, stop!\"",
    "refs": [
     "MI.DOC:00237"
    ],
@@ -2295,7 +2295,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "「だめぇ、だめなのーっ、あーん」",
-   "en": "",
+   "en": "\"No, I can't, aahn.\"",
    "refs": [
     "MI.DOC:00238"
    ],
@@ -2305,7 +2305,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "「やだぁ、そんなとこぉ、あっ、あああん」",
-   "en": "",
+   "en": "\"No, a place like that, ah, aaaahn.\"",
    "refs": [
     "MI.DOC:00239"
    ],
@@ -2315,7 +2315,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "「ああん、プルプルしないでーっ、気持ちいいからーっ」",
-   "en": "",
+   "en": "\"Aahn, don't make it tremble, it feels too good!\"",
    "refs": [
     "MI.DOC:00240"
    ],
@@ -2325,7 +2325,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "「あっ、やだーっ、くすぐったいよーっ」",
-   "en": "",
+   "en": "\"Ah, no, that tickles!\"",
    "refs": [
     "MI.DOC:00241"
    ],
@@ -2335,7 +2335,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "「あっ、だめっ、指で押さないでーっ、感じちゃうもーん」",
-   "en": "",
+   "en": "\"Ah, no, don't press with your fingers, I'll feel it!\"",
    "refs": [
     "MI.DOC:00242"
    ],
@@ -2345,7 +2345,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "「あっ、あああん、嘗めちゃいやーっ」",
-   "en": "",
+   "en": "\"Ah, aaaahn, don't lick!\"",
    "refs": [
     "MI.DOC:00243"
    ],
@@ -2355,7 +2355,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "「ああん、あああん、気持ちいい、あっああん」",
-   "en": "",
+   "en": "\"Aahn, aaaahn, it feels good, ah, aahn.\"",
    "refs": [
     "MI.DOC:00244"
    ],
@@ -2365,7 +2365,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "「だ、だめーっ、指を入れないでーっ、ああっ、あああああん」",
-   "en": "",
+   "en": "\"N-no, don't put your fingers in, aah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00245"
    ],
@@ -2375,7 +2375,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "「あーん、だめーっ、さわらないでーっ」",
-   "en": "",
+   "en": "\"Aahn, no, don't touch!\"",
    "refs": [
     "MI.DOC:00246"
    ],
@@ -2385,7 +2385,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "「いやーん、やめてよーっ」",
-   "en": "",
+   "en": "\"Nooo, stop it!\"",
    "refs": [
     "MI.DOC:00247"
    ],
@@ -2395,7 +2395,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "「ちょ、ちょっとぉ、さわらないでーっ」",
-   "en": "",
+   "en": "\"H-hey, don't touch!\"",
    "refs": [
     "MI.DOC:00248"
    ],
@@ -2405,7 +2405,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "「あっ、あーん、だめったらーっ」",
-   "en": "",
+   "en": "\"Ah, aahn, I said no!\"",
    "refs": [
     "MI.DOC:00249"
    ],
@@ -2415,7 +2415,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "「あーん、もーいいでしょう、あっあーん」",
-   "en": "",
+   "en": "\"Aahn, that's enough, isn't it? Ah, aahn.\"",
    "refs": [
     "MI.DOC:00250"
    ],
@@ -2425,7 +2425,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "「あっ、そんなとここすらないでーっ、あああん」",
-   "en": "",
+   "en": "\"Ah, don't rub there, aaaahn.\"",
    "refs": [
     "MI.DOC:00251"
    ],
@@ -2435,7 +2435,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "「あん、あたしもーだめっ、あああん」",
-   "en": "",
+   "en": "\"Ahn, I can't anymore, aaaahn.\"",
    "refs": [
     "MI.DOC:00252"
    ],
@@ -2445,7 +2445,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "「ああっ、あん、もっと、もっとーっ、あああん」",
-   "en": "",
+   "en": "\"Aah, ahn, more, more, aaaahn.\"",
    "refs": [
     "MI.DOC:00253"
    ],
@@ -2455,7 +2455,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "「あっ、あああん、指入れてっ、入れてもいいよっ、ああっ、あああああん」",
-   "en": "",
+   "en": "\"Ah, aaaahn, put your fingers in, you can put them in, aah, aaaaaahn.\"",
    "refs": [
     "MI.DOC:00254"
    ],
@@ -2465,7 +2465,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "「だめーんっ」",
-   "en": "",
+   "en": "\"Nooo!\"",
    "refs": [
     "MI.DOC:00255"
    ],
@@ -2475,7 +2475,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "「やったぜっ、全部のヌシを釣り上げたっ、ばんざーい」",
-   "en": "",
+   "en": "\"Yeah! We caught all the bosses! Hooray!\"",
    "refs": [
     "MI.DOC:00256"
    ],
@@ -2485,7 +2485,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "「やったーっ、やっぱり、この熟れた体があったからこそよねー、ねっ、ふとももん」",
-   "en": "",
+   "en": "\"Yay! As expected, it's all thanks to this ripe body, right, Futomomo-n?\"",
    "refs": [
     "MI.DOC:00257"
    ],
@@ -2495,7 +2495,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "「えーっ、違うよっ。やっぱ、あたしのプリプリのおっぱいの、お・か・げ」",
-   "en": "",
+   "en": "\"Ehh, that's wrong. It's all thanks to my perky boobs, tha-nks to them.\"",
    "refs": [
     "MI.DOC:00258"
    ],
@@ -2505,7 +2505,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "「まーまーまー、中をとって、僕のポコチンが良かったということで」",
-   "en": "",
+   "en": "\"Now, now, let's compromise and say it was my little dick that did the trick.\"",
    "refs": [
     "MI.DOC:00259"
    ],
@@ -2515,7 +2515,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "「どこが、中なのっ」",
-   "en": "",
+   "en": "\"Since when is that a compromise?!\"",
    "refs": [
     "MI.DOC:00260"
    ],
@@ -2525,7 +2525,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "「まーたねーっ」",
-   "en": "",
+   "en": "\"See you later!\"",
    "refs": [
     "MI.DOC:00261"
    ],
@@ -2535,7 +2535,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "「ばいばーいっ」",
-   "en": "",
+   "en": "\"Bye-bye!\"",
    "refs": [
     "MI.DOC:00262"
    ],
@@ -2545,7 +2545,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　８８％",
-   "en": "",
+   "en": "　CG Completion: 88% of 100%",
    "refs": [
     "MI.DOC:00263"
    ],
@@ -2555,7 +2555,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９０％",
-   "en": "",
+   "en": "　CG Completion: 90% of 100%",
    "refs": [
     "MI.DOC:00264"
    ],
@@ -2565,7 +2565,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９２％",
-   "en": "",
+   "en": "　CG Completion: 92% of 100%",
    "refs": [
     "MI.DOC:00265"
    ],
@@ -2575,7 +2575,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９３％",
-   "en": "",
+   "en": "　CG Completion: 93% of 100%",
    "refs": [
     "MI.DOC:00266"
    ],
@@ -2585,7 +2585,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９５％",
-   "en": "",
+   "en": "　CG Completion: 95% of 100%",
    "refs": [
     "MI.DOC:00267"
    ],
@@ -2595,7 +2595,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９６％",
-   "en": "",
+   "en": "　CG Completion: 96% of 100%",
    "refs": [
     "MI.DOC:00268"
    ],
@@ -2605,7 +2605,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　９８％",
-   "en": "",
+   "en": "　CG Completion: 98% of 100%",
    "refs": [
     "MI.DOC:00269"
    ],
@@ -2615,7 +2615,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "　ＣＧ達成率１００％中\n　　　　１００％",
-   "en": "",
+   "en": "　CG Completion: 100% of 100%",
    "refs": [
     "MI.DOC:00270"
    ],
@@ -2625,7 +2625,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "ドライブＡにディスクＡを入れて下さい。",
-   "en": "",
+   "en": "Please insert Disk A into Drive A.",
    "refs": [
     "MI.DOC:65000"
    ],
@@ -2635,7 +2635,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "ドライブＢにディスクＢを入れて下さい。",
-   "en": "",
+   "en": "Please insert Disk B into Drive B.",
    "refs": [
     "MI.DOC:65001"
    ],
@@ -2645,7 +2645,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "ドライブＢにディスクＣを入れて下さい。",
-   "en": "",
+   "en": "Please insert Disk C into Drive B.",
    "refs": [
     "MI.DOC:65002"
    ],
@@ -2655,7 +2655,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "ドライブＢにディスクＤを入れて下さい。",
-   "en": "",
+   "en": "Please insert Disk D into Drive B.",
    "refs": [
     "MI.DOC:65003"
    ],
@@ -2665,7 +2665,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "ドライブＢにディスクＥを入れて下さい。",
-   "en": "",
+   "en": "Please insert Disk E into Drive B.",
    "refs": [
     "MI.DOC:65004"
    ],
@@ -2675,7 +2675,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "ファイル．１にセ\nーブをしますか\n左でセーブ\n右でキャンセル",
-   "en": "",
+   "en": "Save to File 1?\nLeft: Save\nRight: Cancel",
    "refs": [
     "MI.DOC:65010"
    ],
@@ -2685,7 +2685,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "ファイル．２にセ\nーブをしますか\n左でセーブ\n右でキャンセル",
-   "en": "",
+   "en": "Save to File 2?\nLeft: Save\nRight: Cancel",
    "refs": [
     "MI.DOC:65016"
    ],
@@ -2695,7 +2695,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "ファイル．３にセ\nーブをしますか\n左でセーブ\n右でキャンセル",
-   "en": "",
+   "en": "Save to File 3?\nLeft: Save\nRight: Cancel",
    "refs": [
     "MI.DOC:65017"
    ],
@@ -2705,7 +2705,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "ファイル．１をロ\nードしますか\n左でロード\n右でキャンセル",
-   "en": "",
+   "en": "Load File 1?\nLeft: Load\nRight: Cancel",
    "refs": [
     "MI.DOC:65011"
    ],
@@ -2715,7 +2715,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "ファイル．２をロ\nードしますか\n左でロード\n右でキャンセル",
-   "en": "",
+   "en": "Load File 2?\nLeft: Load\nRight: Cancel",
    "refs": [
     "MI.DOC:65018"
    ],
@@ -2725,7 +2725,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "ファイル．３をロ\nードしますか\n左でロード\n右でキャンセル",
-   "en": "",
+   "en": "Load File 3?\nLeft: Load\nRight: Cancel",
    "refs": [
     "MI.DOC:65019"
    ],
@@ -2735,7 +2735,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "終了しますか\n左で終了\n右でキャンセル",
-   "en": "",
+   "en": "Quit?\nLeft: Quit\nRight: Cancel",
    "refs": [
     "MI.DOC:65012"
    ],
@@ -2745,7 +2745,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "おまけを見る\n左クリック\nおまけを見ない\n右クリック",
-   "en": "",
+   "en": "View bonus\nLeft-click\nDon't view bonus\nRight-click",
    "refs": [
     "MI.DOC:65013"
    ],
@@ -2755,7 +2755,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "ＣＧを見る－左クリック\nＣＧを見ない－右クリック",
-   "en": "",
+   "en": "View CG - Left-click\nDon't view CG - Right-click",
    "refs": [
     "MI.DOC:65020"
    ],
@@ -2765,7 +2765,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "　ファイル．１\n　ファイル．２\n　ファイル．３\n　　　　　　　　　　　　　　　　　セーブするファイ\nルを選んで下さい",
-   "en": "",
+   "en": "　File 1\n　File 2\n　File 3\n\nPlease select a file to save.",
    "refs": [
     "MI.DOC:65014"
    ],
@@ -2775,7 +2775,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "　ファイル．１\n　ファイル．２\n　ファイル．３\n　　　　　　　　　　　　　　　　　ロードするファイ\nルを選んで下さい",
-   "en": "",
+   "en": "　File 1\n　File 2\n　File 3\n\nPlease select a file to load.",
    "refs": [
     "MI.DOC:65015"
    ],
@@ -2785,7 +2785,7 @@
    "id": "e00001",
    "kind": "exe",
    "jp": "メモリが足りません。デバイスドライバや常駐ソフトを外して起動して下さい。\n",
-   "en": "",
+   "en": "Not enough memory. Please remove device drivers or TSR programs and restart.\n",
    "refs": [
     "exe:0d7c5"
    ],
@@ -2796,7 +2796,7 @@
    "id": "e00002",
    "kind": "exe",
    "jp": "ＥＭＳが使用可能状態の為ＰＣＭが正常に再生されない可能性があります。\n",
-   "en": "",
+   "en": "Because EMS is enabled, PCM may not play correctly.\n",
    "refs": [
     "exe:0fd80"
    ],
@@ -2807,7 +2807,7 @@
    "id": "e00003",
    "kind": "exe",
    "jp": "ＰＣＭを正常に再生するには CONFIG.SYS を書き換える必要があります。\n",
-   "en": "",
+   "en": "To play PCM correctly, you need to modify CONFIG.SYS.\n",
    "refs": [
     "exe:0fdc7"
    ],
@@ -2818,7 +2818,7 @@
    "id": "e00004",
    "kind": "exe",
    "jp": "の 変更方法はMS-DOSのマニュアルを参照して下さい。\n",
-   "en": "",
+   "en": "See the MS-DOS manual for how to change it.\n",
    "refs": [
     "exe:0fe16"
    ],
@@ -2829,7 +2829,7 @@
    "id": "e00005",
    "kind": "exe",
    "jp": "何か押すとゲームを続行します。\n",
-   "en": "",
+   "en": "Press any key to continue the game.\n",
    "refs": [
     "exe:0fe4e"
    ],
@@ -2840,7 +2840,7 @@
    "id": "e00006",
    "kind": "exe",
    "jp": "メモリー不足のため起動出来ません。\n",
-   "en": "",
+   "en": "Cannot start due to insufficient memory.\n",
    "refs": [
     "exe:0fe7a"
    ],
@@ -2851,7 +2851,7 @@
    "id": "e00007",
    "kind": "exe",
    "jp": "でゲームを行う場合、およそ524Kバイトのメモリーが必要です。\n",
-   "en": "",
+   "en": "To run the game, approximately 524K bytes of memory are required.\n",
    "refs": [
     "exe:0fea5"
    ],
@@ -2862,7 +2862,7 @@
    "id": "e00008",
    "kind": "exe",
    "jp": "や AUTOEXEC.BATの内容を変更してメモリーを確保して下さい。\n",
-   "en": "",
+   "en": "Please modify the contents of AUTOEXEC.BAT to free up memory.\n",
    "refs": [
     "exe:0feed"
    ],
@@ -2873,7 +2873,7 @@
    "id": "e00009",
    "kind": "exe",
    "jp": "ライトプロテクト状態です。",
-   "en": "",
+   "en": "The disk is write-protected.",
    "refs": [
     "exe:1c225"
    ],
@@ -2884,7 +2884,7 @@
    "id": "e00010",
    "kind": "exe",
    "jp": "ドライブが存在しません。",
-   "en": "",
+   "en": "The drive does not exist.",
    "refs": [
     "exe:1c240"
    ],
@@ -2895,7 +2895,7 @@
    "id": "e00011",
    "kind": "exe",
    "jp": "ドライブの準備ができていません。",
-   "en": "",
+   "en": "The drive is not ready.",
    "refs": [
     "exe:1c259"
    ],
@@ -2906,7 +2906,7 @@
    "id": "e00012",
    "kind": "exe",
    "jp": "存在しないコマンドです。",
-   "en": "",
+   "en": "Invalid command.",
    "refs": [
     "exe:1c27a"
    ],
@@ -2917,7 +2917,7 @@
    "id": "e00013",
    "kind": "exe",
    "jp": "データのＣＲＣエラーです。",
-   "en": "",
+   "en": "Data CRC error.",
    "refs": [
     "exe:1c293"
    ],
@@ -2928,7 +2928,7 @@
    "id": "e00014",
    "kind": "exe",
    "jp": "エラー　０５ｈ",
-   "en": "",
+   "en": "Error 05h",
    "refs": [
     "exe:1c2ae"
    ],
@@ -2939,7 +2939,7 @@
    "id": "e00015",
    "kind": "exe",
    "jp": "シークエラーです。",
-   "en": "",
+   "en": "Seek error.",
    "refs": [
     "exe:1c2bd"
    ],
@@ -2950,7 +2950,7 @@
    "id": "e00016",
    "kind": "exe",
    "jp": "存在しないメディアタイプです。",
-   "en": "",
+   "en": "Invalid media type.",
    "refs": [
     "exe:1c2d0"
    ],
@@ -2961,7 +2961,7 @@
    "id": "e00017",
    "kind": "exe",
    "jp": "セクタが見つかりません。",
-   "en": "",
+   "en": "Sector not found.",
    "refs": [
     "exe:1c2ef"
    ],
@@ -2972,7 +2972,7 @@
    "id": "e00018",
    "kind": "exe",
    "jp": "プリンタの用紙切れです。",
-   "en": "",
+   "en": "Printer is out of paper.",
    "refs": [
     "exe:1c308"
    ],
@@ -2983,7 +2983,7 @@
    "id": "e00019",
    "kind": "exe",
    "jp": "書き込み不良です。",
-   "en": "",
+   "en": "Write fault.",
    "refs": [
     "exe:1c321"
    ],
@@ -2994,7 +2994,7 @@
    "id": "e00020",
    "kind": "exe",
    "jp": "読み込み不良です。",
-   "en": "",
+   "en": "Read fault.",
    "refs": [
     "exe:1c334"
    ],
@@ -3005,7 +3005,7 @@
    "id": "e00021",
    "kind": "exe",
    "jp": "ディスク不良です。",
-   "en": "",
+   "en": "Disk fault.",
    "refs": [
     "exe:1c347"
    ],
@@ -3016,7 +3016,7 @@
    "id": "e00022",
    "kind": "exe",
    "jp": "　中止＜Ａ＞　　もう一度＜Ｒ＞",
-   "en": "",
+   "en": "　Abort <A>　　Retry <R>",
    "refs": [
     "exe:1c35a"
    ],
@@ -3027,7 +3027,7 @@
    "id": "e00023",
    "kind": "exe",
    "jp": "マウスの左ボタンでやりなおします",
-   "en": "",
+   "en": "Click the left mouse button to retry.",
    "refs": [
     "exe:1c379"
    ],
@@ -3038,7 +3038,7 @@
    "id": "e00024",
    "kind": "exe",
    "jp": "続行不可能。当社まで連絡下さい。",
-   "en": "",
+   "en": "Cannot continue. Please contact our company.",
    "refs": [
     "exe:1c39a"
    ],
