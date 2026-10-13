@@ -2314,6 +2314,75 @@ def sarada_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def kuro_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "scene messages", "label": "menu verbs", "choice": "choice options", "caption": "captions",
+             "program": "program strings"}
+    out = ["# %s%s (Abogado Powers)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "`KURODAN\\GAME.EXE` (Borland C, large model) with its scenes in `SCENE.SCN`, `ASCENE.SCN` and "
+            "`CSCENE.SCN` (XORed with AAh, indexed by `SCNDAT.TBL`).  A scene block is a header (menu records, "
+            "a table of places in the script) and a script of `!` commands and Shift-JIS text; labels outside "
+            "quotes are the menus' objects and verbs, the text between quotes their replies.  "
+            "`pc98tl/kuro.py` documents the format, `pc98tl/kuro_tl.py` the English.  A build with no English "
+            "leaves the files as they are.", "",
+            "* English at any length in the scenes: each block is written again with every place in its table "
+            "moved with the text it points at, the scene files and `SCNDAT.TBL` rewritten.  GAME.EXE draws "
+            "ASCII half-width itself and pages its message window.",
+            "* The program's own strings (the opening, the screen-mode menu, disk prompts, error messages): its "
+            "text renderer, puts, printf and sprintf jump to a helper in a segment of its own put before the "
+            "data segment, which points a string with English at the English kept there.",
+            "* Objects' names (the first piece of a menu label) are matched by string with the region names "
+            "stored in the pictures and are never shown: they are kept in Japanese.  The title scene's menu "
+            "lies under the title picture's English buttons and is kept as it is."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Scene messages (`m` ids): any length.  The patcher breaks the English between words at 66 "
+            "letters (the window takes 67) and the game pages after 4 rows; `{r}` is a click and a new page, "
+            "`\\n` a new line.  `{C1}`.. are effects and are kept (a missing one is put at the end); `{R1}`.. "
+            "are ruby readings (the half-width kana in the note), kept before the word they belong to or left "
+            "out.",
+            "* Menu verbs (`u` ids): up to 20 letters (the game copies each into a 21-byte slot); longer is cut "
+            "and reported.",
+            "* Choice options (`c` ids): one line each; a comma is written full-width (an ASCII comma would "
+            "start another option).",
+            "* Captions (`n` ids): broken between words at `max_cells` letters a line, `{n}` a new line.",
+            "* Program strings (`e` ids): any length, broken between words at 64 letters; `{w}` and `{s}` as "
+            "given.",
+            "* A scene block holds at most %d bytes (its places are 16-bit): a build over it is refused." %
+            (0x10000 - 0x400 - 0x20),
+            "* English is ASCII.  `( ) [ ] !` are written full-width (the script reads them as commands), `\"` "
+            "as `'`, `_` and `~` as `-`, `|` and backslash as `/`; any other character as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title buttons are English already)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3279,13 +3348,13 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
-                   "ace": ace_notes, "sarada": sarada_notes}[cfg["encoding"]](
+                   "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

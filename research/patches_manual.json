@@ -2680,5 +2680,18 @@
    "url": "https://vndb.org/v9522",
    "source": "VNDB"
   }
+ ],
+ "AbogadoPowers.zip/Kuro no Danshou - The Literary Fragment": [
+  {
+   "label": "This repo: games/kuro_no_danshou (patcher working, machine translation in progress)",
+   "url": "../games/kuro_no_danshou/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v4568",
+   "url": "https://vndb.org/v4568",
+   "source": "VNDB"
+  }
  ]
 }

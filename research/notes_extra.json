@@ -421,5 +421,10 @@
   "remarks": [
    "Not reached in this test: chapters 2-4 (their tables load the same way as chapter 1's), saving and loading."
   ]
+ },
+ "kuro_no_danshou": {
+  "remarks": [
+   "Not reached in this test: picking a menu item (the test's mouse input does not pick one, in the original game too), choice menus, captions, the scenes past the first."
+  ]
  }
 }

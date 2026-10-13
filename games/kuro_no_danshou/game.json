@@ -1,0 +1,9 @@
+{
+ "title": "Kuro no Danshou - The Literary Fragment",
+ "key": "AbogadoPowers.zip/Kuro no Danshou - The Literary Fragment",
+ "image": "Kuro no Danshou - The Literary Fragment\\Kuro no Danshou - The Literary Fragment [HD]\\Kuro no Danshou - The Literary Fragment.hdi",
+ "encoding": "kuro",
+ "game_dir": "KURODAN",
+ "program": "GAME.EXE",
+ "boot_steps": "25:shot,1:mouse=100;100,1:mouse=100;100,1:mouse=100;50,1:lclick,12:shot,1:mouse=120;-100,1:mouse=0;-95,1:lclick,6:shot,2.5:lclick,3:shot,2.5:lclick,3:shot,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,2.5:lclick,4:shot,0.5:lclick,4:shot,0.5:lclick,4:shot,0.5:lclick,4:shot,0.5:lclick,4:shot,0.5:lclick,4:shot,0.5:lclick,4:shot"
+}

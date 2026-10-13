@@ -4069,5 +4069,19 @@
    "Type I (inventory), then LOOK",
    "OK: the inventory's line and each object's name in filler, then LOOK's answer; the picture intact"
   ]
+ ],
+ "kuro_no_danshou": [
+  [
+   "Boot from the hard disk (AUTOEXEC: KURO.BAT, GAME.EXE): the screen-mode menu, its first item clicked",
+   "OK: the menu's title and items in filler half-width (the program's strings through the helper); the title picture with its English buttons follows"
+  ],
+  [
+   "Title: start, the opening",
+   "OK: the opening's lines in filler half-width, broken between words"
+  ],
+  [
+   "The first scene: clicks through its messages, then a click on the picture's window",
+   "OK: the messages in filler in the message window, broken between words and paged by the game; the window's verb menu opens with its two verbs in filler"
+  ]
  ]
 }

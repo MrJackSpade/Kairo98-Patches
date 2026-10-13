@@ -13212,15 +13212,27 @@
      "path": "Kuro no Danshou - The Literary Fragment\\Kuro no Danshou - The Literary Fragment [HD]\\Kuro no Danshou - The Literary Fragment.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/kuro_no_danshou (patcher working, machine translation in progress)",
+     "url": "../games/kuro_no_danshou/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4568",
+     "url": "https://vndb.org/v4568",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r15005 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "AbogadoPowers.zip/Tsumobaka Nisshi",
