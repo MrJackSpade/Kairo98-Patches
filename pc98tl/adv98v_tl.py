@@ -64,7 +64,9 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             table_parse]) and "table_fullwidth" (their text in full-width
             letters),
             "advh_fixes" ([{"find", "replace", "why"}]: ADVH.EXE program
-            fixes, see advh.patch), "program_fixes" ([{"file", "find",
+            fixes, see advh.patch), "advh_opening" (the opening program
+            whose text records advh.patch_opening fits to half-width
+            letters, HARE.EXE), "program_fixes" ([{"file", "find",
             "replace", "why"}]: same-length byte-signature fixes in the
             engine's programs, e.g. a disk check that a hard-disk layout
             cannot pass), "proc_frames" ({procedure: [frame]}: the text
@@ -547,6 +549,10 @@ def start_script(vol, game_dir, extraop):
     m = re.search(rb"\.ovl +(?:[a-z]:)?\\?(?:\w*mes\w*\\)?([^\\\s\x00$]+\.mes)", shell, re.I)
     if m:
         return m.group(1).decode("cp932").upper()
+    # (or as the command tail it gives ADVH.EXE: length, " \MES\HO0000.MES", CR)
+    m = re.search(rb" (?:[a-z]:)?\\?(?:\w*mes\w*\\)?([^\\\s\x00$]+\.mes)\r", shell, re.I)
+    if m:
+        return m.group(1).decode("cp932").upper()
     return "START.MES"
 
 
@@ -830,12 +836,15 @@ def program_strings(exe):
         pos, piece, at = s, "", s
         while pos <= e:
             ch, n = engine_strings.char_at(exe, pos) if pos < e else ("　", 0)
-            # (and at a DOS message's "$" end between two full-width messages)
-            dollar = ch == "$" and piece and ord(piece[-1]) >= 0x3000 and pos + 1 < e and exe[pos + 1] >= 0x81
+            # (and at a DOS message's "$" end: another full-width message may follow, anything
+            # else after it, a half-width katakana byte included, is the program's code)
+            dollar = ch == "$" and piece
             if ch in "　＠" or dollar:
                 if piece.strip():
                     out.append((at, pos, piece))
                 piece, at = "", pos + n
+                if dollar and not (pos + 1 < e and (0x81 <= exe[pos + 1] < 0xA0 or 0xE0 <= exe[pos + 1] < 0xF0)):
+                    break
             else:
                 piece += ch
             pos += n or 1
@@ -1031,6 +1040,20 @@ def _image(cfg, src):
         from .illusion_game import _hdd_install
         return _hdd_install(cfg, src)
     return DiskImage(src), cfg
+
+
+def _anim_max(src):
+    """The size of the largest animation file (*.MDA, *.ADA) on the
+    source disk and the other disks next to it (the same extension): the
+    room ADVH's animation driver's file buffers must keep for them
+    (pc98tl/advh.py)."""
+    folder, ext = os.path.dirname(os.path.abspath(src)), os.path.splitext(src)[1].lower()
+    sizes = [0]
+    for name in sorted(os.listdir(folder)):
+        if os.path.splitext(name)[1].lower() == ext:
+            for vol in DiskImage(os.path.join(folder, name)).volumes:
+                sizes += [e["size"] for p, e in vol.walk() if not e["is_dir"] and p.upper().endswith((".MDA", ".ADA"))]
+    return max(sizes)
 
 
 def _parts(cfg):
@@ -1878,7 +1901,10 @@ def run_patch(here, src, dst, mode="en"):
         ENGINE["proc_fullwidth"] = cfg.get("proc_fullwidth", False)
         if ENGINE["advh"]:
             exe_path = _join(cfg["game_dir"], "ADVH.EXE")
-            vol.write(exe_path, advh.patch(vol.read(exe_path), cfg.get("advh_fixes", ())))
+            vol.write(exe_path, advh.patch(vol.read(exe_path), cfg.get("advh_fixes", ()), _anim_max(src)))
+            if cfg.get("advh_opening"):
+                path = _join(cfg["game_dir"], cfg["advh_opening"])
+                vol.write(path, advh.patch_opening(vol.read(path)))
         for fix in cfg.get("program_fixes", []):
             # (byte-signature fixes in the engine's programs, the same length)
             path = _join(cfg["game_dir"], fix["file"])

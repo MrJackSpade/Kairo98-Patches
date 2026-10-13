@@ -4011,5 +4011,15 @@
    "New game, Enter on: the opening (OVERTURE), its speech bubble, the message window, the command menu",
    "OK: the bubble's filler beside the face inside its frame; the messages broken between words at the 66-cell window; the menu's items one a line"
   ]
+ ],
+ "hare_nochi_oosawagi": [
+  [
+   "Boot from the hard disk (ADVSHELL: the opening HARE.EXE, then ADVH.EXE): the credits, the title, the character cards",
+   "OK: the credits' and every card's records in filler half-width, each field in its colour, the cards going on one after another to the end of the opening"
+  ],
+  [
+   "Space at the title loop, then Enter: the start menu, the first scenes, the command menus",
+   "OK: the messages in filler half-width wrapped at the box's width over its lines; the start and command menus' items in filler half-width in their columns, the cursor bar over the first"
+  ]
  ]
 }

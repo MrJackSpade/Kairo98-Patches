@@ -396,5 +396,10 @@
   "remarks": [
    "Not reached in this test: the battles past the opening, the save and load screens, the endings."
   ]
+ },
+ "hare_nochi_oosawagi": {
+  "remarks": [
+   "Not reached in this test: the scenes past the first rooms, save and load, the endings."
+  ]
  }
 }

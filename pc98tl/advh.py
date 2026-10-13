@@ -31,6 +31,14 @@ and are written back as they are):
   unpacked) has the helper put after the end of its image instead, which
   is the end of the text loop's code segment; the header's size grows with
   it, and the program's own memory request (the file's size) with that.
+* A packed build with no disk-change command (Hare Nochi Oosawagi!: two
+  floppies, each disk's files read from its own drive) has the helper put
+  at the end of its animation driver's second file buffer, within the text
+  loop's code segment's reach: the driver (its segment's code after two
+  5000h-byte buffers at 404h and 5404h) only reads its files into them
+  (int 21h AH=3Fh, CX = 5000h) and draws from them, so past the largest
+  animation file the game has the buffer is never written.  The patch is
+  refused when the helper would not fit after that file.
 
 Every site is found by its byte signature; a program that does not match
 is refused.
@@ -56,6 +64,11 @@ DISK_SIG = re.compile(rb"\x2e\xa0..\xe8..\x2e\x3a\x06..\x74", re.S)
 # 6+7, 8+9, 10+11 and 14+15 and copies 4, 5, 12 and 13
 SQUEEZE_SIG = re.compile(rb"\xbe..\xb9\x02\x00\xa5\x8b\x04\x46\x46\x26\x09\x45\xfe", re.S)
 SQUEEZE_MAP = 0b1001110011   # the ten rows written, low bit first: set = two glyph rows ORed
+# the animation driver's file loader: mov si, 5404h / mov di, 204h / dec cl / je +6 /
+# mov si, 404h / mov di, 4 / mov word ptr [di], 0 / ... open ... / mov cx, 5000h / mov ah, 3Fh
+ANIM_SIG = re.compile(rb"\xbe\x04\x54\xbf\x04\x02\xfe\xc9\x74\x06\xbe\x04\x04\xbf\x04\x00\xc7\x05\x00\x00"
+                      rb".{8,24}?\xb9\x00\x50\xb4\x3f\xcd\x21", re.S)
+ANIM_END = 0x5404 + 0x5000   # the second buffer's end, in the driver's segment
 
 
 def _find_once(img, sig, what):
@@ -167,10 +180,15 @@ def unwrap(exe):
         img[k] ^= (prod >> 16) & 0xFF
         ax = (prod + add) & 0xFFFF
     seg = cs * 16
-    src = seg + 0x1EE
-    img[seg + 6:seg + 8] = img[src:src + 2]
-    img[seg + 0xE6:seg + 0xE9] = img[src + 2:src + 5]
-    img[seg + ip:seg + ip + 0x12] = img[src + 5:src + 0x17]
+    after = m.end() - base - seg             # (the wrapper's code after its loop, in its segment)
+    if img[seg + after] == 0xE9 and (after + 3 + struct.unpack_from("<h", img, seg + after + 1)[0]) & 0xFFFF == 0x10:
+        # (Hare Nochi Oosawagi!'s wrapper: straight on to EXEPACK's entry, nothing put back)
+        pass
+    else:
+        src = seg + 0x1EE
+        img[seg + 6:seg + 8] = img[src:src + 2]
+        img[seg + 0xE6:seg + 0xE9] = img[src + 2:src + 5]
+        img[seg + ip:seg + ip + 0x12] = img[src + 5:src + 0x17]
     hdr[10] = 0x10
     out = bytearray(exe[:base]) + img
     struct.pack_into("<14H", out, 0, *hdr)
@@ -180,13 +198,16 @@ def unwrap(exe):
     return out
 
 
-def patch(orig, fixes=()):
+def patch(orig, fixes=(), anim_max=None):
     """The program with half-width letters (85 xx): unpacked, patched and
     packed again with the original unpacker (an unpacked ADVH.EXE fails to
     restart when ADVSHELL runs it again).  A program in a wrapper is
     written back without it.  fixes: [{"find", "replace", "why"}] (hex,
     the same length), applied to the unpacked program, each found once:
-    what a wrapper did to the program at run time (a release's crack)."""
+    what a wrapper did to the program at run time (a release's crack).
+    anim_max: the size of the game's largest animation file (*.MDA,
+    *.ADA), for a build whose helper goes into the animation driver's
+    buffer (see above)."""
     orig = unwrap(orig)
     exe = exepack.unpack(orig) if exepack.is_packed(orig) else orig
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
@@ -212,9 +233,26 @@ def patch(orig, fixes=()):
     head = advance + 0x0F + 3 + struct.unpack_from("<h", img, advance + 0x10)[0]   # jmp near loop head
     if img[advance + 0x0F] != 0xE9:
         raise SystemExit("ADVH.EXE: the text loop's advance path is not laid out as expected")
+    anim = None
     if disk is not None:
         cave, cave_end = _cave(bytes(img), disk)
         seg = 0
+    elif exepack.is_packed(orig) and ANIM_SIG.search(bytes(img)):
+        # (no disk-change command, packed: at the end of the animation driver's second buffer,
+        # its segment the highest relocated one at or below its loader)
+        anim = _find_once(bytes(img), ANIM_SIG, "animation loader")
+        nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
+        bases = {16 * struct.unpack_from("<H", img, struct.unpack_from("<H", exe, rel_at + 4 * k)[0]
+                                         + 16 * struct.unpack_from("<H", exe, rel_at + 4 * k + 2)[0])[0]
+                 for k in range(nrel)}
+        base = max(b for b in bases | {0} if b <= anim)
+        if anim_max is None:
+            raise SystemExit("ADVH.EXE: the helper goes after the largest animation file, and its size is not given")
+        seg = 0
+        cave_end = base + ANIM_END
+        cave = cave_end - 0x200
+        if cave_end > 0x10000 or loop >= 0x10000:
+            raise SystemExit("ADVH.EXE: the animation driver's buffer is out of the text loop's reach")
     else:
         # (no disk-change command: after the image, in the text loop's code segment, the entry's)
         seg = struct.unpack_from("<H", exe, 0x16)[0] * 16
@@ -321,16 +359,26 @@ def patch(orig, fixes=()):
                       curx=hex(cur), cury=hex(cur + 2), color=hex(cur + 4), speed=hex(cur + 8), left=hex(cur + 0xC),
                       right=hex(cur + 0x10), glyph=hex(cur - 0x24), glyphb=hex(cur - 0x22))
     enc = _asm16(code, cave - seg)
+    if anim is not None:
+        # (put at the buffer's very end: assembled again where it lands)
+        while cave + len(enc) != cave_end:
+            cave = cave_end - len(enc)
+            enc = _asm16(code, cave - seg)
+        if cave < base + 0x5404 + anim_max:
+            raise SystemExit("ADVH.EXE: the helper is %d bytes, the animation buffer's room past the largest file %d"
+                             % (len(enc), cave_end - (base + 0x5404 + anim_max)))
+        if any(img[cave:cave_end]):
+            raise SystemExit("ADVH.EXE: the animation buffer's end is not empty")
     if cave + len(enc) > cave_end:
         raise SystemExit("ADVH.EXE: the helper is %d bytes, the room %d" % (len(enc), cave_end - cave))
     img[cave:cave + len(enc)] = bytes(enc)
-    jmp = b"\xe9" + struct.pack("<h", cave - (loop + 3))
+    jmp = b"\xe9" + struct.pack("<H", (cave - (loop + 3)) & 0xFFFF)
     img[loop:loop + 5] = jmp + b"\x90\x90"
     if disk is not None:
         # the disk-change wait: jump to its end (its je target)
         end = disk + 14 + img[disk + 13]
         img[disk:disk + 2] = bytes([0xEB, end - (disk + 2)])
-    else:
+    elif anim is None:
         del img[cave + len(enc):]
     # no segment fixup may fall in what was changed
     nrel, rel_at = struct.unpack_from("<H", exe, 6)[0], struct.unpack_from("<H", exe, 24)[0]
@@ -359,3 +407,64 @@ def encode(text):
             except UnicodeEncodeError:
                 out += bytes([0x85, ord("?")])
     return out
+
+
+# the opening program's per-character step (Hare Nochi Oosawagi!'s HARE.EXE),
+# called before each character of a text record is drawn: mov bp, seg /
+# mov ds, bp / mov al, [speed] / mov bp, seg / mov ds, bp / push ax ... es /
+# cmp word ptr [si], 2020h; and its end: pop es ... ax / add bx, 2 / ret /
+# cmp word ptr [bx], 2020h (bx the record's control field, a two-letter
+# code at each character's place)
+STEP_SIG = re.compile(rb"\xbd..\x8e\xdd\xa0..\xbd..\x8e\xdd\x50\x53\x51\x52\x55\x57\x56\x1e\x06\x81\x3c\x20\x20", re.S)
+# the control code's first digit: cmp al, 'A' / jb digit / sub al, 37h / jmp second / digit:
+# cmp al, '0' / jb skip / sub al, '0'
+CODE_SIG = re.compile(rb"\x3c\x41\x72\x04\x2c\x37\xeb\x06\x3c\x30\x72(.)\x2c\x30", re.S)
+STEP_END_SIG = re.compile(rb"\x07\x1f\x5e\x5f\x5d\x5a\x59\x5b\x58\x83\xc3\x02\xc3\x81\x3f\x20\x20")
+
+
+def patch_opening(exe):
+    """The opening program (plain MZ) with its text records' control
+    fields kept in step with half-width letters.
+
+    Its record player draws a record's text a character at a time (a
+    single byte as one half-width cell, which the text layer draws by
+    itself), and before each runs the two-letter code in the record's
+    control field at that character's place, the field's pointer stepping
+    2 a character: English letters, one byte each, would run it past the
+    field into the next record.  The step becomes the character's bytes (1
+    below 80h, else 2), so a code applies at its text's byte offset, as
+    the Japanese laid them out.  It is put in place of the step routine's
+    first 13 bytes, which only load a byte it does not use and set DS and
+    BP to the text segment they already hold (its one caller set them);
+    the two segment fixups in them are taken out of the header's table.
+
+    A letter at an odd byte offset now reads the field across two codes
+    ("0205" read from its second byte is "20"): every code the game has is
+    01h-0Fh, so a code whose first digit is not 0 is passed over, as a
+    blank one is (the dispatch table has no entry past 0Fh)."""
+    hdr = struct.unpack_from("<14H", exe, 0)
+    base = hdr[4] * 16
+    img = bytearray(exe[base:])
+    step = _find_once(bytes(img), STEP_SIG, "opening's character step")
+    end = _find_once(bytes(img), STEP_END_SIG, "opening's character step end") + 9
+    if not 0 < end - step < 0x80:
+        raise SystemExit("HARE.EXE: the character step is not laid out as expected")
+    # jmp short past the old prologue / cmp byte ptr [si], 80h / sbb bx, -2 / ret
+    img[step:step + 13] = bytes([0xEB, 0x0B]) + bytes.fromhex("803c8083dbfec3") + b"\x90" * 4
+    rel = (step + 2) - (end + 2)
+    img[end:end + 2] = bytes([0xEB, rel & 0xFF])
+    img[end + 2] = 0x90
+    code = _find_once(bytes(img), CODE_SIG, "opening's control code reader")
+    skip = code + 14 + struct.unpack("b", bytes([img[code + 11]]))[0] - 2   # (the jb's target, from its end)
+    # cmp al, '0' / jne skip / sub al, '0' (then its jmp to the second digit)
+    img[code:code + 6] = bytes([0x3C, 0x30, 0x75, (skip - (code + 4)) & 0xFF, 0x2C, 0x30])
+    relocs = [struct.unpack_from("<HH", exe, hdr[12] + 4 * k) for k in range(hdr[3])]
+    keep = [(o, s) for o, s in relocs if s * 16 + o not in (step + 1, step + 9)]
+    if len(keep) != len(relocs) - 2 or any(lo - 1 <= s * 16 + o < hi for o, s in keep
+                                           for lo, hi in ((step, step + 13), (end, end + 3))):
+        raise SystemExit("HARE.EXE: the character step's segment fixups are not where expected")
+    out = bytearray(exe[:base]) + img
+    struct.pack_into("<H", out, 6, len(keep))
+    table = b"".join(struct.pack("<HH", o, s) for o, s in keep) + bytes(8)
+    out[hdr[12]:hdr[12] + len(table)] = table
+    return bytes(out)

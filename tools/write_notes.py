@@ -635,9 +635,24 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "patch adds half-width letters to the program (`pc98tl/advh.py`): each English letter is "
             "written as `85 xx` (xx its ASCII code), which the program draws from the BIOS's 8x16 "
             "font one column wide and steps the cursor one column on; a packed program is unpacked, patched "
-            "and packed again with its own EXEPACK unpacker.  The disk-change command (wait for disk X "
-            "in the floppy drive) goes straight on.  Messages page with the key wait `81 90`, which "
+            "and packed again with its own EXEPACK unpacker.  " +
+            ("This build has no disk-change command (each disk's files are read from their own drive), "
+             "so the drawing routine goes at the end of the animation driver's second file buffer, past "
+             "the largest animation file the game has (the patch checks the room).  "
+             if cfg.get("advh_opening") else
+             "The disk-change command (wait for disk X in the floppy drive) goes straight on.  ") +
+            "Messages page with the key wait `81 90`, which "
             "clears the box: a message longer than the box goes on after a key on a fresh page.", ""]
+    if cfg.get("advh_opening"):
+        out[out.index(display):out.index(display)] = [
+            "The opening (`%s`, run by `ADVSHELL.COM` before the engine) is a program of its own: its "
+            "character cards and credits are fixed-width text records in the program (the `e` ids at "
+            "`%s:...`), each with a field of two-letter codes (colour, speed, scrolling) at its "
+            "characters' places.  It draws a single byte as a half-width cell itself; the patch "
+            "(`pc98tl/advh.py` patch_opening) steps the code field by the character's bytes rather than "
+            "2, so a code applies at its text's byte offset as the Japanese laid it out, and passes over "
+            "a pair a letter at an odd offset reads across two codes.  Each record's text is written in "
+            "place, cut to its room." % (cfg["advh_opening"], cfg["advh_opening"]), ""]
     if cfg.get("hdd"):
         out[out.index(display):out.index(display)] = [
             ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "

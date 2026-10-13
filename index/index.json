@@ -52679,15 +52679,27 @@
      "path": "Hare Nochi Oosawagi!\\Hare Nochi Oosawagi! [FD]\\Hare Nochi Oosawagi! (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/hare_nochi_oosawagi (patcher working, machine translation in progress)",
+     "url": "../games/hare_nochi_oosawagi/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8714",
+     "url": "https://vndb.org/v8714",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r40775 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CocktailSoft.zip/Illumina!",
