@@ -39762,15 +39762,37 @@
      "path": "Cal\\Cal [FD]\\Cal (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cal (patcher working, machine translation in progress)",
+     "url": "../games/cal/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4835",
+     "url": "https://vndb.org/v4835",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8589",
+     "url": "https://vndb.org/v8589",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8999",
+     "url": "https://vndb.org/v8999",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17484 (erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "BirdySoft.zip/Cal Gaiden - Tiny Steps Behind the Cal",

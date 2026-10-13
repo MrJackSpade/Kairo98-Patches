@@ -4083,5 +4083,19 @@
    "The first scene: clicks through its messages, then a click on the picture's window",
    "OK: the messages in filler in the message window, broken between words and paged by the game; the window's verb menu opens with its two verbs in filler"
   ]
+ ],
+ "cal": [
+  [
+   "Boot from both floppies (disk A, disk B): the title menu",
+   "OK: its three items in filler, two half-width letters a cell (the kernel's drawing through the helper)"
+  ],
+  [
+   "Start: the name entry screen, END clicked",
+   "OK: the prompt in filler; the grid as in the game"
+  ],
+  [
+   "The first scene: clicks through its messages, a choice picked twice",
+   "OK: the messages in filler in the text window, half-width, broken between words; the choice menu's four options in filler; each pick's reply in filler, wrapped onto a second line"
+  ]
  ]
 }

@@ -1,0 +1,26 @@
+{
+ "title": "Cal",
+ "key": "BirdySoft.zip/Cal",
+ "image": "Cal\\Cal [FD]\\Cal (Disk A).hdm",
+ "disks": [
+  "Cal (Disk B).hdm"
+ ],
+ "encoding": "cal",
+ "scripts": [
+  16,
+  17,
+  19,
+  20,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30
+ ],
+ "program": 253,
+ "boot_steps": "20:shot,1:mouse=0;-80,1:mouse=0;-70,1:lclick,12:shot,1:mouse=137;121,1:mouse=138;121,1:lclick,6:shot,3:lclick,3:lclick,3:lclick,3:lclick,3:lclick,3:lclick,3:lclick,3:shot,1:mouse=60;14,1:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot",
+ "kernel": 2
+}

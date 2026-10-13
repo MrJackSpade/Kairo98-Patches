@@ -2693,5 +2693,28 @@
    "url": "https://vndb.org/v4568",
    "source": "VNDB"
   }
+ ],
+ "BirdySoft.zip/Cal": [
+  {
+   "label": "This repo: games/cal (patcher working, machine translation in progress)",
+   "url": "../games/cal/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v4835",
+   "url": "https://vndb.org/v4835",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8589",
+   "url": "https://vndb.org/v8589",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB v8999",
+   "url": "https://vndb.org/v8999",
+   "source": "VNDB"
+  }
  ]
 }
