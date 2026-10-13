@@ -3875,5 +3875,19 @@
    "A test build with S001.BIN split (every scene moved to S001A.BIN), the same steps",
    "OK: the same screens: the scenes are reached from the hub in the other file and return to it"
   ]
+ ],
+ "doop": [
+  [
+   "Boot from the hard disk: the opening (DOOP_OP.EXE) playing, shots every 12 s",
+   "OK: the subtitles in filler half-width on the text layer (letter pairs), broken between words onto two lines; the opening plays to its end"
+  ],
+  [
+   "The title, a click; the prologue's messages (MAPL.EXE), a click after each",
+   "OK: the messages in filler half-width (pairs), broken between words, the program's key waits and pages kept"
+  ],
+  [
+   "Further clicks to the scene's first menu",
+   "OK: a menu command in filler (its highlighted box)"
+  ]
  ]
 }

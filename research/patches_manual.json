@@ -2506,5 +2506,18 @@
    "url": "https://vndb.org/v7581",
    "source": "VNDB"
   }
+ ],
+ "May-beSoftTruse.zip/Doop": [
+  {
+   "label": "This repo: games/doop (patcher working, machine translation in progress)",
+   "url": "../games/doop/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v6009",
+   "url": "https://vndb.org/v6009",
+   "source": "VNDB"
+  }
  ]
 }

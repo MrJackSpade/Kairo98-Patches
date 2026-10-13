@@ -1,0 +1,14 @@
+{
+ "title": "Doop",
+ "key": "May-beSoftTruse.zip/Doop",
+ "image": "Doop\\Doop [HD]\\Doop.hdi",
+ "encoding": "mapl",
+ "program": "MAPL.EXE",
+ "game_dir": "DOOP",
+ "store": "fdfa",
+ "rooms": {
+  "command": 36
+ },
+ "opening": "DOOP_OP.EXE",
+ "boot_steps": "22:shot,12:shot,12:shot,12:shot,12:shot,12:shot,12:shot,12:shot,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,4:lclick,1:enter,3:shot,4:shot,2:lclick,4:shot,2:lclick,4:shot,2:lclick,4:shot"
+}

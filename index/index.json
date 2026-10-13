@@ -150897,15 +150897,27 @@
      "path": "Doop\\Doop [HD]\\Doop.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/doop (patcher working, machine translation in progress)",
+     "url": "../games/doop/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v6009",
+     "url": "https://vndb.org/v6009",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16081 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "May-beSoftTruse.zip/Hizumi",
