@@ -108,7 +108,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "ゲーム",
-   "en": "Game",
+   "en": "",
    "refs": [
     "p00:07c2"
    ],
@@ -118,7 +118,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "アリスの館",
-   "en": "Alice Hall",
+   "en": "",
    "refs": [
     "p00:07cb"
    ],
@@ -128,7 +128,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "ゲームを終了",
-   "en": "Quit Game",
+   "en": "",
    "refs": [
     "p00:07d8"
    ],
@@ -148,7 +148,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "いいえ",
-   "en": "No",
+   "en": "",
    "refs": [
     "p00:0865"
    ],
@@ -158,7 +158,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "はい",
-   "en": "Yes",
+   "en": "",
    "refs": [
     "p00:086c",
     "s3:p26:2a88"
@@ -229,7 +229,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "機種",
-   "en": "System",
+   "en": "",
    "refs": [
     "p00:09ba"
    ],
@@ -239,7 +239,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "スタッフ",
-   "en": "Staff",
+   "en": "",
    "refs": [
     "p00:09c2"
    ],
@@ -249,7 +249,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "開発日記",
-   "en": "Dev Log",
+   "en": "",
    "refs": [
     "p00:09ce"
    ],
@@ -259,7 +259,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "募集だよん",
-   "en": "Wanted!",
+   "en": "",
    "refs": [
     "p00:09da"
    ],
@@ -269,7 +269,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "ゲームに戻る",
-   "en": "Back to Game",
+   "en": "",
    "refs": [
     "p00:09e6"
    ],
@@ -620,7 +620,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "スタッフ募集",
-   "en": "Staff Wanted",
+   "en": "",
    "refs": [
     "p00:16e4"
    ],
@@ -630,7 +630,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "作品募集",
-   "en": "Entries",
+   "en": "",
    "refs": [
     "p00:16f4"
    ],
@@ -740,7 +740,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "ヨシタカ",
-   "en": "Yositaka",
+   "en": "",
    "refs": [
     "p00:1a8d"
    ],
@@ -750,7 +750,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "ＴＡＤＡ",
-   "en": "TADA",
+   "en": "",
    "refs": [
     "p00:1a99"
    ],
@@ -760,7 +760,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "ＫＡＯＲＩ",
-   "en": "KAORI",
+   "en": "",
    "refs": [
     "p00:1aa5"
    ],
@@ -770,7 +770,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "ちーぼう",
-   "en": "Chiibo",
+   "en": "",
    "refs": [
     "p00:1ab3"
    ],
@@ -780,7 +780,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "次のページへ",
-   "en": "Next Page",
+   "en": "",
    "refs": [
     "p00:1abc",
     "p00:2280"
@@ -1062,7 +1062,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "とり",
-   "en": "Tori",
+   "en": "",
    "refs": [
     "p00:2256"
    ],
@@ -1072,7 +1072,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "ＹＯＫ",
-   "en": "YOK",
+   "en": "",
    "refs": [
     "p00:225c"
    ],
@@ -1082,7 +1082,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "ＹＵＫＩＭＩ",
-   "en": "YUKIMI",
+   "en": "",
    "refs": [
     "p00:2266"
    ],
@@ -1092,7 +1092,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "ＷＡＯ",
-   "en": "WAO",
+   "en": "",
    "refs": [
     "p00:2276"
    ],
@@ -1582,7 +1582,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "ＰＬＵＭ’Ｆ",
-   "en": "PLUM'F",
+   "en": "",
    "refs": [
     "p00:2fd5"
    ],
@@ -1592,7 +1592,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "栗林",
-   "en": "Kuribay.",
+   "en": "",
    "refs": [
     "p00:2fe5"
    ],
@@ -1602,7 +1602,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "応援の声（ＳＰＥＳＩＡＬ ＴＨＡＮＫＳ）",
-   "en": "Cheers (SPECIAL THANKS)",
+   "en": "",
    "refs": [
     "p00:2fed"
    ],
@@ -1957,7 +1957,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "ゲームを始める",
-   "en": "Start Game",
+   "en": "",
    "refs": [
     "s1:p01:0e4c",
     "s2:p01:0e2c",
@@ -1969,7 +1969,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "ゲームを始める前に登場人物の名前をかえる",
-   "en": "Rename the characters before starting",
+   "en": "",
    "refs": [
     "s1:p01:0e5a"
    ],
@@ -1979,7 +1979,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "このゲームの内容を見る",
-   "en": "About this game",
+   "en": "",
    "refs": [
     "s1:p01:0e7c"
    ],
@@ -1989,7 +1989,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "アントレのプロフィールを見る",
-   "en": "View Entree's profile",
+   "en": "",
    "refs": [
     "s1:p01:0e95"
    ],
@@ -1999,7 +1999,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "お・ま・け",
-   "en": "B-O-N-U-S",
+   "en": "",
    "refs": [
     "s1:p01:0ebb",
     "s2:p01:0e9b",
@@ -2031,7 +2031,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "ご覧になる",
-   "en": "Watch",
+   "en": "",
    "refs": [
     "s1:p01:0f38"
    ],
@@ -2041,7 +2041,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "ご覧にならない",
-   "en": "Don't watch",
+   "en": "",
    "refs": [
     "s1:p01:0f43"
    ],
@@ -2061,7 +2061,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "テレビドラマ其の１",
-   "en": "TV Drama Part 1",
+   "en": "",
    "refs": [
     "s1:p01:0f79"
    ],
@@ -2071,7 +2071,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "テレビドラマ其の２",
-   "en": "TV Drama Part 2",
+   "en": "",
    "refs": [
     "s1:p01:0f8e"
    ],
@@ -2081,7 +2081,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "音楽番組",
-   "en": "Music TV",
+   "en": "",
    "refs": [
     "s1:p01:0fa3",
     "s3:p01:0f2e"
@@ -2092,7 +2092,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "正しいＣＧ講座",
-   "en": "Proper CG 101",
+   "en": "",
    "refs": [
     "s1:p01:0faf",
     "s2:p01:0f19",
@@ -2104,7 +2104,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "やっぱり見ない",
-   "en": "Never mind",
+   "en": "",
    "refs": [
     "s1:p01:0fbf"
    ],
@@ -2194,7 +2194,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "名前を変更する",
-   "en": "Change names",
+   "en": "",
    "refs": [
     "s1:p01:11b1",
     "s2:p01:10fc",
@@ -2206,7 +2206,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "名前を変更しない",
-   "en": "Keep names",
+   "en": "",
    "refs": [
     "s1:p01:11c0",
     "s2:p01:110b",
@@ -2218,7 +2218,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "前回の名前でいく",
-   "en": "Use prev names",
+   "en": "",
    "refs": [
     "s1:p01:11d5"
    ],
@@ -2240,7 +2240,7 @@
    "id": "u00040",
    "kind": "menu",
    "jp": "{X1}（マリア）の名前",
-   "en": "Name of {X1} (Maria)",
+   "en": "",
    "refs": [
     "s1:p01:120b"
    ],
@@ -2250,7 +2250,7 @@
    "id": "u00041",
    "kind": "menu",
    "jp": "{X2}（カンパン）の名前",
-   "en": "Name of {X2} (Kanpan)",
+   "en": "",
    "refs": [
     "s1:p01:1220"
    ],
@@ -2260,7 +2260,7 @@
    "id": "u00042",
    "kind": "menu",
    "jp": "{X3}（ヘケート）の名前",
-   "en": "Name of {X3} (Hecate)",
+   "en": "",
    "refs": [
     "s1:p01:1237"
    ],
@@ -2270,7 +2270,7 @@
    "id": "u00043",
    "kind": "menu",
    "jp": "名前の変更をやめてメニューに戻る",
-   "en": "Stop renaming, back to menu",
+   "en": "",
    "refs": [
     "s1:p01:124d"
    ],
@@ -2501,7 +2501,7 @@
    "id": "n00001",
    "kind": "name",
    "jp": "マリアとカンパン",
-   "en": "Maria and Kanpan",
+   "en": "",
    "refs": [
     "s1:p01:0011"
    ],
@@ -2511,7 +2511,7 @@
    "id": "n00002",
    "kind": "name",
    "jp": "マリア",
-   "en": "Maria",
+   "en": "",
    "refs": [
     "s1:p01:0c5a",
     "s1:p01:134f"
@@ -2522,7 +2522,7 @@
    "id": "n00003",
    "kind": "name",
    "jp": "カンパン",
-   "en": "Kanpan",
+   "en": "",
    "refs": [
     "s1:p01:0c67",
     "s1:p01:135c"
@@ -2533,7 +2533,7 @@
    "id": "n00004",
    "kind": "name",
    "jp": "ヘケート",
-   "en": "Hecate",
+   "en": "",
    "refs": [
     "s1:p01:0c76",
     "s1:p01:136b"
@@ -2624,7 +2624,7 @@
    "id": "u00044",
    "kind": "menu",
    "jp": "{X1}さんをミる",
-   "en": "Look at {X1}",
+   "en": "",
    "refs": [
     "s1:p02:01f4"
    ],
@@ -2634,7 +2634,7 @@
    "id": "u00045",
    "kind": "menu",
    "jp": "オンナのコをミる",
-   "en": "Look at the girl",
+   "en": "",
    "refs": [
     "s1:p02:0206"
    ],
@@ -2644,7 +2644,7 @@
    "id": "u00046",
    "kind": "menu",
    "jp": "ジブンのコトをカンガえる",
-   "en": "Think about myself",
+   "en": "",
    "refs": [
     "s1:p02:021d"
    ],
@@ -2654,7 +2654,7 @@
    "id": "u00047",
    "kind": "menu",
    "jp": "ボクはダレ？",
-   "en": "Who am I?",
+   "en": "",
    "refs": [
     "s1:p02:023b"
    ],
@@ -2664,7 +2664,7 @@
    "id": "u00048",
    "kind": "menu",
    "jp": "{X1}さんのコトをカンガえる",
-   "en": "Think about {X1}",
+   "en": "",
    "refs": [
     "s1:p02:0254",
     "s1:p03:0067",
@@ -2676,7 +2676,7 @@
    "id": "u00049",
    "kind": "menu",
    "jp": "オンナのコのコトをカンガえる",
-   "en": "Think about the girl",
+   "en": "",
    "refs": [
     "s1:p02:0274"
    ],
@@ -2686,7 +2686,7 @@
    "id": "u00050",
    "kind": "menu",
    "jp": "ウゴいてみる",
-   "en": "Try moving",
+   "en": "",
    "refs": [
     "s1:p02:0290",
     "s1:p05:0037"
@@ -3037,7 +3037,7 @@
    "id": "u00051",
    "kind": "menu",
    "jp": "がんばってウゴく",
-   "en": "Try hard to move",
+   "en": "",
    "refs": [
     "s1:p03:0057"
    ],
@@ -3047,7 +3047,7 @@
    "id": "u00052",
    "kind": "menu",
    "jp": "もっと{X1}さんのコトをカンガえる",
-   "en": "Think more about {X1}",
+   "en": "",
    "refs": [
     "s1:p03:0082"
    ],
@@ -3057,7 +3057,7 @@
    "id": "u00053",
    "kind": "menu",
    "jp": "コエをダしてみる",
-   "en": "Try to speak",
+   "en": "",
    "refs": [
     "s1:p03:00a1",
     "s1:p05:0043"
@@ -3068,7 +3068,7 @@
    "id": "u00054",
    "kind": "menu",
    "jp": "{X1}さんをオこしにイく",
-   "en": "Go wake up {X1}",
+   "en": "",
    "refs": [
     "s1:p03:00be"
    ],
@@ -3744,7 +3744,7 @@
    "id": "u00055",
    "kind": "menu",
    "jp": "{X3}をミる",
-   "en": "Look at {X3}",
+   "en": "",
    "refs": [
     "s1:p04:00df"
    ],
@@ -3754,7 +3754,7 @@
    "id": "u00056",
    "kind": "menu",
    "jp": "アクマをミる",
-   "en": "See demon",
+   "en": "",
    "refs": [
     "s1:p04:00ef"
    ],
@@ -3764,7 +3764,7 @@
    "id": "u00057",
    "kind": "menu",
    "jp": "ヘンなニンゲンをミる",
-   "en": "Look at odd human",
+   "en": "",
    "refs": [
     "s1:p04:0103"
    ],
@@ -3774,7 +3774,7 @@
    "id": "u00058",
    "kind": "menu",
    "jp": "{X3}とシャベる",
-   "en": "Talk to {X3}",
+   "en": "",
    "refs": [
     "s1:p04:011e",
     "s1:p06:0581",
@@ -3787,7 +3787,7 @@
    "id": "u00059",
    "kind": "menu",
    "jp": "アクマとシャベる",
-   "en": "Talk to demon",
+   "en": "",
    "refs": [
     "s1:p04:0132"
    ],
@@ -3797,7 +3797,7 @@
    "id": "u00060",
    "kind": "menu",
    "jp": "ヘンなニンゲンとシャベる",
-   "en": "Talk to odd human",
+   "en": "",
    "refs": [
     "s1:p04:014a"
    ],
@@ -3807,7 +3807,7 @@
    "id": "u00061",
    "kind": "menu",
    "jp": "ムシして{X1}さんのトコロにイドウする",
-   "en": "Ignore it and go to {X1}",
+   "en": "",
    "refs": [
     "s1:p04:0164"
    ],
@@ -3817,7 +3817,7 @@
    "id": "u00062",
    "kind": "menu",
    "jp": "タスける？",
-   "en": "Rescue?",
+   "en": "",
    "refs": [
     "s1:p04:0187"
    ],
@@ -4204,7 +4204,7 @@
    "id": "u00063",
    "kind": "menu",
    "jp": "ボクはかわいそうナンですか？",
-   "en": "Am I pitiful?",
+   "en": "",
    "refs": [
     "s1:p04:07e3"
    ],
@@ -4214,7 +4214,7 @@
    "id": "u00064",
    "kind": "menu",
    "jp": "ボクがかわいそう？",
-   "en": "I'm pitiful?",
+   "en": "",
    "refs": [
     "s1:p04:0801"
    ],
@@ -4224,7 +4224,7 @@
    "id": "u00065",
    "kind": "menu",
    "jp": "カンジョウ・・カンジョウ・・",
-   "en": "Emotion... emotion...",
+   "en": "",
    "refs": [
     "s1:p04:081c"
    ],
@@ -4234,7 +4234,7 @@
    "id": "u00066",
    "kind": "menu",
    "jp": "カンジョウ・・・？",
-   "en": "Emotion...?",
+   "en": "",
    "refs": [
     "s1:p04:0842"
    ],
@@ -4244,7 +4244,7 @@
    "id": "u00067",
    "kind": "menu",
    "jp": "かわいそうってナニ？",
-   "en": "What's pitiful?",
+   "en": "",
    "refs": [
     "s1:p04:085f"
    ],
@@ -4254,7 +4254,7 @@
    "id": "u00068",
    "kind": "menu",
    "jp": "スクラップはカナしい",
-   "en": "Scrap is sad",
+   "en": "",
    "refs": [
     "s1:p04:0876"
    ],
@@ -4264,7 +4264,7 @@
    "id": "u00069",
    "kind": "menu",
    "jp": "スクラップってナニ？",
-   "en": "What's scrap?",
+   "en": "",
    "refs": [
     "s1:p04:0895"
    ],
@@ -4274,7 +4274,7 @@
    "id": "u00070",
    "kind": "menu",
    "jp": "ボク、スクラップになりたくない・・・",
-   "en": "I don't want to be scrap...",
+   "en": "",
    "refs": [
     "s1:p04:08b5"
    ],
@@ -4576,7 +4576,7 @@
    "id": "u00071",
    "kind": "menu",
    "jp": "どうやってニンゲンになるの？",
-   "en": "How do I become human?",
+   "en": "",
    "refs": [
     "s1:p04:0d08"
    ],
@@ -4586,7 +4586,7 @@
    "id": "u00072",
    "kind": "menu",
    "jp": "ニンゲンに？",
-   "en": "Human?",
+   "en": "",
    "refs": [
     "s1:p04:0d26"
    ],
@@ -4596,7 +4596,7 @@
    "id": "u00073",
    "kind": "menu",
    "jp": "どうすればいいの？",
-   "en": "What do I do?",
+   "en": "",
    "refs": [
     "s1:p04:0d3b"
    ],
@@ -4606,7 +4606,7 @@
    "id": "u00074",
    "kind": "menu",
    "jp": "やっちまうって？",
-   "en": "'Do her'?",
+   "en": "",
    "refs": [
     "s1:p04:0d55"
    ],
@@ -4616,7 +4616,7 @@
    "id": "u00075",
    "kind": "menu",
    "jp": "そんなコト・・・",
-   "en": "Such a thing...",
+   "en": "",
    "refs": [
     "s1:p04:0d68"
    ],
@@ -4626,7 +4626,7 @@
    "id": "u00076",
    "kind": "menu",
    "jp": "コウビですか・・・",
-   "en": "Mating...?",
+   "en": "",
    "refs": [
     "s1:p04:0d7c"
    ],
@@ -4636,7 +4636,7 @@
    "id": "u00077",
    "kind": "menu",
    "jp": "イっちまうって・・",
-   "en": "'All the way'..",
+   "en": "",
    "refs": [
     "s1:p04:0d93"
    ],
@@ -4646,7 +4646,7 @@
    "id": "u00078",
    "kind": "menu",
    "jp": "なんとなく、キいちゃいけないヨウなキがする・・・",
-   "en": "Somehow I feel I shouldn't ask that...",
+   "en": "",
    "refs": [
     "s1:p04:0da2"
    ],
@@ -4826,7 +4826,7 @@
    "id": "u00079",
    "kind": "menu",
    "jp": "やってみる",
-   "en": "Try it",
+   "en": "",
    "refs": [
     "s1:p04:111e"
    ],
@@ -4836,7 +4836,7 @@
    "id": "u00080",
    "kind": "menu",
    "jp": "そんなのいやだ",
-   "en": "No way!",
+   "en": "",
    "refs": [
     "s1:p04:1127"
    ],
@@ -4987,7 +4987,7 @@
    "id": "u00081",
    "kind": "menu",
    "jp": "{X3}をヨぶ",
-   "en": "Call {X3}",
+   "en": "",
    "refs": [
     "s1:p05:0052",
     "s1:p06:0599"
@@ -4998,7 +4998,7 @@
    "id": "u00082",
    "kind": "menu",
    "jp": "{X1}さんっタスけてクダさぁい！",
-   "en": "{X1}, help meee!",
+   "en": "",
    "refs": [
     "s1:p05:0062"
    ],
@@ -5008,7 +5008,7 @@
    "id": "u00083",
    "kind": "menu",
    "jp": "テレパシー",
-   "en": "Telepathy",
+   "en": "",
    "refs": [
     "s1:p05:0080"
    ],
@@ -5556,7 +5556,7 @@
    "id": "u00084",
    "kind": "menu",
    "jp": "ウゴくんだい！！",
-   "en": "Move, darn it!!",
+   "en": "",
    "refs": [
     "s1:p05:06e2"
    ],
@@ -5566,7 +5566,7 @@
    "id": "u00085",
    "kind": "menu",
    "jp": "コエをダすんだい！！",
-   "en": "Speak, darn it!!",
+   "en": "",
    "refs": [
     "s1:p05:06f3"
    ],
@@ -5576,7 +5576,7 @@
    "id": "u00086",
    "kind": "menu",
    "jp": "{X1}さん、キづいて！！",
-   "en": "{X1}, notice me!!",
+   "en": "",
    "refs": [
     "s1:p05:0707"
    ],
@@ -5866,7 +5866,7 @@
    "id": "u00087",
    "kind": "menu",
    "jp": "{X1}さんをミている",
-   "en": "Watching {X1}",
+   "en": "",
    "refs": [
     "s1:p06:00a5"
    ],
@@ -5876,7 +5876,7 @@
    "id": "u00088",
    "kind": "menu",
    "jp": "キレイってナンだろう・・・",
-   "en": "What is 'pretty'...",
+   "en": "",
    "refs": [
     "s1:p06:00b8"
    ],
@@ -5886,7 +5886,7 @@
    "id": "u00089",
    "kind": "menu",
    "jp": "カンジョウ・・・・・",
-   "en": "Emotion.....",
+   "en": "",
    "refs": [
     "s1:p06:00d5"
    ],
@@ -5896,7 +5896,7 @@
    "id": "u00090",
    "kind": "menu",
    "jp": "ナンのオトだろう",
-   "en": "What sound?",
+   "en": "",
    "refs": [
     "s1:p06:00ee"
    ],
@@ -5906,7 +5906,7 @@
    "id": "u00091",
    "kind": "menu",
    "jp": "がんばってがんばってうーーごくーーです",
-   "en": "Try hard, try hard, mooove!",
+   "en": "",
    "refs": [
     "s1:p06:0100"
    ],
@@ -6279,7 +6279,7 @@
    "id": "u00092",
    "kind": "menu",
    "jp": "じっとオトをキいている",
-   "en": "Listen to the sound",
+   "en": "",
    "refs": [
     "s1:p06:054d"
    ],
@@ -6289,7 +6289,7 @@
    "id": "u00093",
    "kind": "menu",
    "jp": "どうすればいいかカンガえてみる",
-   "en": "Think what to do",
+   "en": "",
    "refs": [
     "s1:p06:0560"
    ],
@@ -6299,7 +6299,7 @@
    "id": "u00094",
    "kind": "menu",
    "jp": "アバれてみる",
-   "en": "Thrash about",
+   "en": "",
    "refs": [
     "s1:p06:05aa"
    ],
@@ -6309,7 +6309,7 @@
    "id": "u00095",
    "kind": "menu",
    "jp": "{X3}をサガす",
-   "en": "Look for {X3}",
+   "en": "",
    "refs": [
     "s1:p06:05c0"
    ],
@@ -6794,7 +6794,7 @@
    "id": "u00096",
    "kind": "menu",
    "jp": "びりびりをカンガえる",
-   "en": "Think: bzzt-bzzt",
+   "en": "",
    "refs": [
     "s1:p07:0097"
    ],
@@ -6804,7 +6804,7 @@
    "id": "u00097",
    "kind": "menu",
    "jp": "{X3}のコトをカンガえる",
-   "en": "Think about {X3}",
+   "en": "",
    "refs": [
     "s1:p07:00aa"
    ],
@@ -6814,7 +6814,7 @@
    "id": "u00098",
    "kind": "menu",
    "jp": "ジブンのカラダのコトをカンガえる",
-   "en": "Think about my body",
+   "en": "",
    "refs": [
     "s1:p07:00d4"
    ],
@@ -6924,7 +6924,7 @@
    "id": "u00099",
    "kind": "menu",
    "jp": "ジコシュウフクカイロ",
-   "en": "Self-repair circuit",
+   "en": "",
    "refs": [
     "s1:p07:03b8"
    ],
@@ -6934,7 +6934,7 @@
    "id": "u00100",
    "kind": "menu",
    "jp": "{X1}さんにタスけをモトめる",
-   "en": "Ask {X1} for help",
+   "en": "",
    "refs": [
     "s1:p07:03d0"
    ],
@@ -6944,7 +6944,7 @@
    "id": "u00101",
    "kind": "menu",
    "jp": "ばちばちをナンとかする",
-   "en": "Fix the crackling",
+   "en": "",
    "refs": [
     "s1:p07:03e5"
    ],
@@ -6954,7 +6954,7 @@
    "id": "u00102",
    "kind": "menu",
    "jp": "{X3}にタスけてもらう",
-   "en": "Get {X3} to help",
+   "en": "",
    "refs": [
     "s1:p07:03f8"
    ],
@@ -6964,7 +6964,7 @@
    "id": "u00103",
    "kind": "menu",
    "jp": "カラダのジョウキョウをブンセキする",
-   "en": "Analyze body status",
+   "en": "",
    "refs": [
     "s1:p07:040d"
    ],
@@ -7225,7 +7225,7 @@
    "id": "u00104",
    "kind": "menu",
    "jp": "ウデのカイロにメイレイする",
-   "en": "Command arm circuit",
+   "en": "",
    "refs": [
     "s1:p08:0088"
    ],
@@ -7235,7 +7235,7 @@
    "id": "u00105",
    "kind": "menu",
    "jp": "エネルギーをキる",
-   "en": "Cut power",
+   "en": "",
    "refs": [
     "s1:p08:00a2"
    ],
@@ -7245,7 +7245,7 @@
    "id": "u00106",
    "kind": "menu",
    "jp": "ドウタイカイロにメイレイする",
-   "en": "Command torso circuit",
+   "en": "",
    "refs": [
     "s1:p08:00b3"
    ],
@@ -7255,7 +7255,7 @@
    "id": "u00107",
    "kind": "menu",
    "jp": "パープルヒララをハカイする",
-   "en": "Destroy Purple Hirara",
+   "en": "",
    "refs": [
     "s1:p08:00dd"
    ],
@@ -7595,7 +7595,7 @@
    "id": "u00108",
    "kind": "menu",
    "jp": "どんなコトをしても、{X1}からウデをハナす",
-   "en": "Take my arm off {X1}, whatever it takes",
+   "en": "",
    "refs": [
     "s1:p08:0582"
    ],
@@ -7605,7 +7605,7 @@
    "id": "u00109",
    "kind": "menu",
    "jp": "どうやってでも{X1}さんからウデをハナす",
-   "en": "Get my arm off {X1} somehow",
+   "en": "",
    "refs": [
     "s1:p08:05a7"
    ],
@@ -7615,7 +7615,7 @@
    "id": "u00110",
    "kind": "menu",
    "jp": "{X1}さんからウデをハナす",
-   "en": "Take arm off {X1}",
+   "en": "",
    "refs": [
     "s1:p08:05ca"
    ],
@@ -7625,7 +7625,7 @@
    "id": "u00111",
    "kind": "menu",
    "jp": "カイロをシャダンする",
-   "en": "Cut the circuit",
+   "en": "",
    "refs": [
     "s1:p08:05df"
    ],
@@ -7635,7 +7635,7 @@
    "id": "u00112",
    "kind": "menu",
    "jp": "うん。やっぱりこのままニギっている",
-   "en": "Yeah. Keep holding on after all",
+   "en": "",
    "refs": [
     "s1:p08:05f9"
    ],
@@ -7645,7 +7645,7 @@
    "id": "u00113",
    "kind": "menu",
    "jp": "やっぱりこのままニギっている",
-   "en": "Keep holding on after all",
+   "en": "",
    "refs": [
     "s1:p08:0617"
    ],
@@ -7655,7 +7655,7 @@
    "id": "u00114",
    "kind": "menu",
    "jp": "もうこのままニギっている",
-   "en": "Just keep holding on",
+   "en": "",
    "refs": [
     "s1:p08:0632"
    ],
@@ -7665,7 +7665,7 @@
    "id": "u00115",
    "kind": "menu",
    "jp": "ジサツする",
-   "en": "Suicide",
+   "en": "",
    "refs": [
     "s1:p08:064a",
     "s1:p11:0069"
@@ -7766,7 +7766,7 @@
    "id": "u00116",
    "kind": "menu",
    "jp": "ウデ",
-   "en": "Arm",
+   "en": "",
    "refs": [
     "s1:p08:0775",
     "s1:p21:0a2e"
@@ -7777,7 +7777,7 @@
    "id": "u00117",
    "kind": "menu",
    "jp": "アシ",
-   "en": "Legs",
+   "en": "",
    "refs": [
     "s1:p08:077d"
    ],
@@ -7787,7 +7787,7 @@
    "id": "u00118",
    "kind": "menu",
    "jp": "ドウタイ",
-   "en": "Torso",
+   "en": "",
    "refs": [
     "s1:p08:0785"
    ],
@@ -7797,7 +7797,7 @@
    "id": "u00119",
    "kind": "menu",
    "jp": "パープルヒララとのケツゴウカイロ",
-   "en": "Purple Hirara link circuit",
+   "en": "",
    "refs": [
     "s1:p08:0791"
    ],
@@ -8172,7 +8172,7 @@
    "id": "u00120",
    "kind": "menu",
    "jp": "よし。このまませまってしまおう",
-   "en": "OK. Make a move on her now",
+   "en": "",
    "refs": [
     "s1:p09:0045"
    ],
@@ -8182,7 +8182,7 @@
    "id": "u00121",
    "kind": "menu",
    "jp": "{X1}さんからハナれる",
-   "en": "Pull away from {X1}",
+   "en": "",
    "refs": [
     "s1:p09:0058"
    ],
@@ -8192,7 +8192,7 @@
    "id": "u00122",
    "kind": "menu",
    "jp": "さらにさらにさらにさらにさらにウデをひっこめる",
-   "en": "Pull arm back more, more, more, more, more",
+   "en": "",
    "refs": [
     "s1:p09:006d"
    ],
@@ -8202,7 +8202,7 @@
    "id": "u00123",
    "kind": "menu",
    "jp": "さらにさらにさらにさらにウデをひっこめる",
-   "en": "Pull arm back more, more, more, more",
+   "en": "",
    "refs": [
     "s1:p09:0090"
    ],
@@ -8212,7 +8212,7 @@
    "id": "u00124",
    "kind": "menu",
    "jp": "さらにさらにさらにウデをひっこめる",
-   "en": "Pull arm back more, more, more",
+   "en": "",
    "refs": [
     "s1:p09:00b0"
    ],
@@ -8222,7 +8222,7 @@
    "id": "u00125",
    "kind": "menu",
    "jp": "さらにさらにウデをひっこめる",
-   "en": "Pull arm back more, more",
+   "en": "",
    "refs": [
     "s1:p09:00cd"
    ],
@@ -8232,7 +8232,7 @@
    "id": "u00126",
    "kind": "menu",
    "jp": "さらにウデをひっこめる",
-   "en": "Pull arm back more",
+   "en": "",
    "refs": [
     "s1:p09:00e7"
    ],
@@ -8242,7 +8242,7 @@
    "id": "u00127",
    "kind": "menu",
    "jp": "ウデをひっこめる",
-   "en": "Pull arm back",
+   "en": "",
    "refs": [
     "s1:p09:00fe"
    ],
@@ -8252,7 +8252,7 @@
    "id": "u00128",
    "kind": "menu",
    "jp": "タスけをヨぶ",
-   "en": "Call help",
+   "en": "",
    "refs": [
     "s1:p09:010d",
     "s1:p18:08bc"
@@ -8263,7 +8263,7 @@
    "id": "u00129",
    "kind": "menu",
    "jp": "チカラいっぱいのテイコウ",
-   "en": "Resist with all might",
+   "en": "",
    "refs": [
     "s1:p09:0124"
    ],
@@ -8578,7 +8578,7 @@
    "id": "u00130",
    "kind": "menu",
    "jp": "カミサマ",
-   "en": "God",
+   "en": "",
    "refs": [
     "s1:p09:055a"
    ],
@@ -8588,7 +8588,7 @@
    "id": "u00131",
    "kind": "menu",
    "jp": "アクマ",
-   "en": "Demon",
+   "en": "",
    "refs": [
     "s1:p09:0566"
    ],
@@ -8598,7 +8598,7 @@
    "id": "u00132",
    "kind": "menu",
    "jp": "ダレか",
-   "en": "Someone",
+   "en": "",
    "refs": [
     "s1:p09:0570"
    ],
@@ -8819,7 +8819,7 @@
    "id": "u00133",
    "kind": "menu",
    "jp": "テをハナす",
-   "en": "Let go",
+   "en": "",
    "refs": [
     "s1:p10:004a"
    ],
@@ -8829,7 +8829,7 @@
    "id": "u00134",
    "kind": "menu",
    "jp": "ムネのカンショクをカンガえる",
-   "en": "Ponder the chest's feel",
+   "en": "",
    "refs": [
     "s1:p10:005b"
    ],
@@ -8839,7 +8839,7 @@
    "id": "u00135",
    "kind": "menu",
    "jp": "もうイチドこのままのジョウキョウにミをまかす",
-   "en": "Surrender to the situation again",
+   "en": "",
    "refs": [
     "s1:p10:007d"
    ],
@@ -8849,7 +8849,7 @@
    "id": "u00136",
    "kind": "menu",
    "jp": "このままのジョウキョウにミをまかす",
-   "en": "Surrender to the situation",
+   "en": "",
    "refs": [
     "s1:p10:00a7"
    ],
@@ -8859,7 +8859,7 @@
    "id": "u00137",
    "kind": "menu",
    "jp": "このままのジョウキョウをタノしむ",
-   "en": "Enjoy this situation",
+   "en": "",
    "refs": [
     "s1:p10:00cd"
    ],
@@ -8869,7 +8869,7 @@
    "id": "u00138",
    "kind": "menu",
    "jp": "アシをツカんでいるホウ",
-   "en": "The hand on her leg",
+   "en": "",
    "refs": [
     "s1:p10:00ee"
    ],
@@ -8879,7 +8879,7 @@
    "id": "u00139",
    "kind": "menu",
    "jp": "ムネをツカんでいるホウ",
-   "en": "The hand on her chest",
+   "en": "",
    "refs": [
     "s1:p10:0104"
    ],
@@ -9182,7 +9182,7 @@
    "id": "u00140",
    "kind": "menu",
    "jp": "ノロいのコトをカンガえる",
-   "en": "Think about the curse",
+   "en": "",
    "refs": [
     "s1:p10:0582"
    ],
@@ -9192,7 +9192,7 @@
    "id": "u00141",
    "kind": "menu",
    "jp": "ノロいをどうするかカンガえる",
-   "en": "Think how to handle curse",
+   "en": "",
    "refs": [
     "s1:p10:059f"
    ],
@@ -9202,7 +9202,7 @@
    "id": "u00142",
    "kind": "menu",
    "jp": "コロす？",
-   "en": "Kill?",
+   "en": "",
    "refs": [
     "s1:p10:05bd"
    ],
@@ -9452,7 +9452,7 @@
    "id": "u00143",
    "kind": "menu",
    "jp": "ホウホウをキく",
-   "en": "Ask how",
+   "en": "",
    "refs": [
     "s1:p10:093a"
    ],
@@ -9462,7 +9462,7 @@
    "id": "u00144",
    "kind": "menu",
    "jp": "ジサツ？",
-   "en": "Suicide?",
+   "en": "",
    "refs": [
     "s1:p10:0954"
    ],
@@ -9472,7 +9472,7 @@
    "id": "u00145",
    "kind": "menu",
    "jp": "どうすればいいんだろう・・・",
-   "en": "What should I do...",
+   "en": "",
    "refs": [
     "s1:p10:0966"
    ],
@@ -9622,7 +9622,7 @@
    "id": "u00146",
    "kind": "menu",
    "jp": "悩み続ける",
-   "en": "Agonize",
+   "en": "",
    "refs": [
     "s1:p10:0b9f"
    ],
@@ -9632,7 +9632,7 @@
    "id": "u00147",
    "kind": "menu",
    "jp": "人間になる！",
-   "en": "Be human!",
+   "en": "",
    "refs": [
     "s1:p10:0baa"
    ],
@@ -9702,7 +9702,7 @@
    "id": "u00148",
    "kind": "menu",
    "jp": "ニンゲンになる",
-   "en": "Become human",
+   "en": "",
    "refs": [
     "s1:p11:004a"
    ],
@@ -9712,7 +9712,7 @@
    "id": "u00149",
    "kind": "menu",
    "jp": "アクマをコロす",
-   "en": "Kill demon",
+   "en": "",
    "refs": [
     "s1:p11:0059"
    ],
@@ -9849,7 +9849,7 @@
    "id": "u00150",
    "kind": "menu",
    "jp": "{X3}のコエにシタガう",
-   "en": "Obey {X3}'s voice",
+   "en": "",
    "refs": [
     "s1:p11:0243"
    ],
@@ -9859,7 +9859,7 @@
    "id": "u00151",
    "kind": "menu",
    "jp": "ジサツ・・・・・",
-   "en": "Suicide.....",
+   "en": "",
    "refs": [
     "s1:p11:0256"
    ],
@@ -9869,7 +9869,7 @@
    "id": "u00152",
    "kind": "menu",
    "jp": "ここからニげよう",
-   "en": "Escape from here",
+   "en": "",
    "refs": [
     "s1:p11:0265"
    ],
@@ -9879,7 +9879,7 @@
    "id": "u00153",
    "kind": "menu",
    "jp": "{X3}を・・・コロす？",
-   "en": "Kill... {X3}?",
+   "en": "",
    "refs": [
     "s1:p11:0280"
    ],
@@ -9889,7 +9889,7 @@
    "id": "u00154",
    "kind": "menu",
    "jp": "ノロいをといてもらうヨウおネガいする",
-   "en": "Beg her to lift the curse",
+   "en": "",
    "refs": [
     "s1:p11:0297"
    ],
@@ -10305,7 +10305,7 @@
    "id": "u00155",
    "kind": "menu",
    "jp": "{X1}さんにおネガいしツヅける",
-   "en": "Keep pleading with {X1}",
+   "en": "",
    "refs": [
     "s1:p11:08ac"
    ],
@@ -10315,7 +10315,7 @@
    "id": "u00156",
    "kind": "menu",
    "jp": "ジバクする",
-   "en": "Explode",
+   "en": "",
    "refs": [
     "s1:p11:08c2"
    ],
@@ -10325,7 +10325,7 @@
    "id": "u00157",
    "kind": "menu",
    "jp": "カンガえる",
-   "en": "Think",
+   "en": "",
    "refs": [
     "s1:p11:08d7"
    ],
@@ -10335,7 +10335,7 @@
    "id": "u00158",
    "kind": "menu",
    "jp": "カイロをカクニンする",
-   "en": "Check circuits",
+   "en": "",
    "refs": [
     "s1:p11:08e9"
    ],
@@ -10457,7 +10457,7 @@
    "id": "u00159",
    "kind": "menu",
    "jp": "ジコハカイする",
-   "en": "Self-destruct",
+   "en": "",
    "refs": [
     "s1:p11:0ab8"
    ],
@@ -10467,7 +10467,7 @@
    "id": "u00160",
    "kind": "menu",
    "jp": "ジコハカイしない",
-   "en": "Don't destruct",
+   "en": "",
    "refs": [
     "s1:p11:0ac8"
    ],
@@ -10746,7 +10746,7 @@
    "id": "u00161",
    "kind": "menu",
    "jp": "{X3}にキいてみる",
-   "en": "Ask {X3}",
+   "en": "",
    "refs": [
     "s1:p13:005a",
     "s1:p16:01f9",
@@ -10758,7 +10758,7 @@
    "id": "u00162",
    "kind": "menu",
    "jp": "ぬるぬる？",
-   "en": "Slippery?",
+   "en": "",
    "refs": [
     "s1:p13:006c",
     "s1:p16:020b"
@@ -19357,7 +19357,7 @@
    "id": "n00005",
    "kind": "name",
    "jp": "カートリッジＡ",
-   "en": "Cartridge A",
+   "en": "",
    "refs": [
     "s1:p26:031b",
     "s2:p29:0246",
@@ -21602,7 +21602,7 @@
    "id": "n00006",
    "kind": "name",
    "jp": "　　遠野の森　　",
-   "en": "Tono Forest",
+   "en": "",
    "refs": [
     "s2:p01:0011"
    ],
@@ -21612,7 +21612,7 @@
    "id": "n00007",
    "kind": "name",
    "jp": "鷹雪",
-   "en": "Takayuki",
+   "en": "",
    "refs": [
     "s2:p01:0c5b",
     "s2:p01:1232"
@@ -21623,7 +21623,7 @@
    "id": "n00008",
    "kind": "name",
    "jp": "萌絵",
-   "en": "Moe",
+   "en": "",
    "refs": [
     "s2:p01:0c66",
     "s2:p01:123d"
@@ -57617,7 +57617,7 @@
    "id": "n00009",
    "kind": "name",
    "jp": "　　海賊稼業　　",
-   "en": "Pirate Trade",
+   "en": "",
    "refs": [
     "s3:p01:0011"
    ],
@@ -57627,7 +57627,7 @@
    "id": "n00010",
    "kind": "name",
    "jp": "カメリア",
-   "en": "Camellia",
+   "en": "",
    "refs": [
     "s3:p01:0c5b",
     "s3:p01:1362"
@@ -57638,7 +57638,7 @@
    "id": "n00011",
    "kind": "name",
    "jp": "鈴香",
-   "en": "Suzuka",
+   "en": "",
    "refs": [
     "s3:p01:0c6a",
     "s3:p01:1371"
@@ -57649,7 +57649,7 @@
    "id": "n00012",
    "kind": "name",
    "jp": "マリリン",
-   "en": "Marilyn",
+   "en": "",
    "refs": [
     "s3:p01:0c75",
     "s3:p01:137c"
@@ -57660,7 +57660,7 @@
    "id": "n00013",
    "kind": "name",
    "jp": "エルシー",
-   "en": "Elsie",
+   "en": "",
    "refs": [
     "s3:p01:0c84",
     "s3:p01:138b"
@@ -57671,7 +57671,7 @@
    "id": "n00014",
    "kind": "name",
    "jp": "ヴァイス",
-   "en": "Weiss",
+   "en": "",
    "refs": [
     "s3:p01:0c93",
     "s3:p01:139a"

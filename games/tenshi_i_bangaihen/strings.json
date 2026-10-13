@@ -5,7 +5,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "ワァ　すこ゛い。こんな大きなもの私の口にはいるかしら・・・。",
-   "en": "",
+   "en": "Wow, amazing. I wonder if something this big will fit in my mouth...",
    "refs": [
     "scene0:0"
    ],
@@ -15,7 +15,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "男の人のものって、こんなふうになっているの。",
-   "en": "",
+   "en": "So this is what a man's thing looks like.",
    "refs": [
     "scene1:0"
    ],
@@ -25,7 +25,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "イャーと゛うして、こんなことするの。",
-   "en": "",
+   "en": "No! Why are you doing this?",
    "refs": [
     "scene2:0"
    ],
@@ -35,7 +35,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "ウフフ　これからたのしいことしョ。",
-   "en": "",
+   "en": "Hehehe, let's do something fun now.",
    "refs": [
     "scene3:0"
    ],
@@ -45,7 +45,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "こんなんなっちゃうのも、あなたのせいよ。",
-   "en": "",
+   "en": "It's your fault I've become like this.",
    "refs": [
     "scene4:0"
    ],
@@ -55,7 +55,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "おねか゛い。なせ゛やさしくしてくれないの。",
-   "en": "",
+   "en": "Please. Why won't you be gentle with me?",
    "refs": [
     "scene5:0"
    ],
@@ -65,7 +65,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "あなたか゛悪いのよ。た゛から私．．．．。",
-   "en": "",
+   "en": "You're the one to blame. That's why I...",
    "refs": [
     "scene6:0"
    ],
@@ -75,7 +75,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "ねぇ。もっとよく見て。",
-   "en": "",
+   "en": "Hey. Look closer.",
    "refs": [
     "scene7:0"
    ],
@@ -85,7 +85,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "ホ゛ク　ク゛ス゛ク゛ス゛しないて゛はやくいらっしゃい。",
-   "en": "",
+   "en": "Don't dawdle, come here quickly.",
    "refs": [
     "scene8:0"
    ],
@@ -95,7 +95,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "いきなりうしろからなんて．．．．て゛もいいわ。",
-   "en": "",
+   "en": "Suddenly from behind like that... but it's fine.",
    "refs": [
     "scene9:0"
    ],
@@ -105,7 +105,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "お兄ちゃんなんてことするの。",
-   "en": "",
+   "en": "Onii-chan, how could you do such a thing?",
    "refs": [
     "scene10:0"
    ],

@@ -16,7 +16,7 @@
    "id": "e00002",
    "kind": "exe",
    "jp": "　あくまで戦う",
-   "en": "Fight on",
+   "en": "Fight to the end",
    "refs": [
     "exe:37c49"
    ],
@@ -26,7 +26,7 @@
    "id": "e00003",
    "kind": "exe",
    "jp": "@@全部隊補給",
-   "en": "Resupply all",
+   "en": "Supply All Units",
    "refs": [
     "exe:37d2a",
     "exe:37e24",
@@ -38,7 +38,7 @@
    "id": "e00004",
    "kind": "exe",
    "jp": "@@補充・修理",
-   "en": "Refit/Repair",
+   "en": "Replenish / Repair",
    "refs": [
     "exe:37d5c"
    ],
@@ -48,7 +48,7 @@
    "id": "e00005",
    "kind": "exe",
    "jp": "降車WORK",
-   "en": "Unload",
+   "en": "Disembark WORK",
    "refs": [
     "exe:37f1e"
    ],
@@ -58,7 +58,7 @@
    "id": "e00006",
    "kind": "exe",
    "jp": "自部隊一覧",
-   "en": "Unit list",
+   "en": "Unit List",
    "refs": [
     "exe:38018"
    ],
@@ -68,7 +68,7 @@
    "id": "e00007",
    "kind": "exe",
    "jp": "支配拠点表",
-   "en": "Bases held",
+   "en": "Controlled Bases",
    "refs": [
     "exe:38031",
     "exe:4cbfa"
@@ -79,7 +79,7 @@
    "id": "e00008",
    "kind": "exe",
    "jp": "@@陣営状況",
-   "en": "Situation",
+   "en": "Faction Status",
    "refs": [
     "exe:3804a"
    ],
@@ -89,7 +89,7 @@
    "id": "e00009",
    "kind": "exe",
    "jp": "兵器性能表",
-   "en": "Weapons",
+   "en": "Weapon Performance",
    "refs": [
     "exe:38063"
    ],
@@ -99,7 +99,7 @@
    "id": "e00010",
    "kind": "exe",
    "jp": "地形効果表",
-   "en": "Terrain",
+   "en": "Terrain Effects",
    "refs": [
     "exe:3807c",
     "exe:4cdef"
@@ -110,7 +110,7 @@
    "id": "e00011",
    "kind": "exe",
    "jp": "　損害表",
-   "en": "Damage",
+   "en": "Damage Report",
    "refs": [
     "exe:38095"
    ],
@@ -120,7 +120,7 @@
    "id": "e00012",
    "kind": "exe",
    "jp": "合流WORK",
-   "en": "Merge",
+   "en": "Merge WORK",
    "refs": [
     "exe:38112"
    ],
@@ -130,7 +130,7 @@
    "id": "e00013",
    "kind": "exe",
    "jp": "　確認",
-   "en": "Check",
+   "en": "Confirm",
    "refs": [
     "exe:38306"
    ],
@@ -140,7 +140,7 @@
    "id": "e00014",
    "kind": "exe",
    "jp": "@@ディスク",
-   "en": "  Disk",
+   "en": "Disk",
    "refs": [
     "exe:38400"
    ],
@@ -150,7 +150,7 @@
    "id": "e00015",
    "kind": "exe",
    "jp": "ゲーム中止",
-   "en": "Quit game",
+   "en": "Abort Game",
    "refs": [
     "exe:38432"
    ],
@@ -160,7 +160,7 @@
    "id": "e00016",
    "kind": "exe",
    "jp": "ゲーム終了",
-   "en": "End game",
+   "en": "End Game",
    "refs": [
     "exe:3844b"
    ],
@@ -170,7 +170,7 @@
    "id": "e00017",
    "kind": "exe",
    "jp": "　ＯＫ",
-   "en": "  OK",
+   "en": "OK",
    "refs": [
     "exe:38513"
    ],
@@ -180,7 +180,7 @@
    "id": "e00018",
    "kind": "exe",
    "jp": "１Ｐ　ショートシナリオ",
-   "en": "1P Short scenario",
+   "en": "1P Short Scenario",
    "refs": [
     "exe:385f4"
    ],
@@ -200,7 +200,7 @@
    "id": "e00020",
    "kind": "exe",
    "jp": "２Ｐ　対戦モード",
-   "en": "2P Versus",
+   "en": "2P Versus Mode",
    "refs": [
     "exe:38626"
    ],
@@ -210,7 +210,7 @@
    "id": "e00021",
    "kind": "exe",
    "jp": "　　　オプション",
-   "en": "      Options",
+   "en": "Options",
    "refs": [
     "exe:3863f"
    ],
@@ -220,7 +220,7 @@
    "id": "e00022",
    "kind": "exe",
    "jp": "　　首　都",
-   "en": "  Capital",
+   "en": "Capital",
    "refs": [
     "exe:386ee"
    ],
@@ -230,7 +230,7 @@
    "id": "e00023",
    "kind": "exe",
    "jp": "　　大都市",
-   "en": "  Big city",
+   "en": "Metropolis",
    "refs": [
     "exe:38707"
    ],
@@ -240,7 +240,7 @@
    "id": "e00024",
    "kind": "exe",
    "jp": "　　都　市",
-   "en": "  City",
+   "en": "City",
    "refs": [
     "exe:38720"
    ],
@@ -250,7 +250,7 @@
    "id": "e00025",
    "kind": "exe",
    "jp": "　　飛行場",
-   "en": "  Airfield",
+   "en": "Airfield",
    "refs": [
     "exe:38739"
    ],
@@ -260,7 +260,7 @@
    "id": "e00026",
    "kind": "exe",
    "jp": "　　軍　港",
-   "en": "  Port",
+   "en": "Naval Port",
    "refs": [
     "exe:38752"
    ],
@@ -270,7 +270,7 @@
    "id": "e00027",
    "kind": "exe",
    "jp": "@@空軍兵器工場",
-   "en": "  Air factory",
+   "en": "Air Force Factory",
    "refs": [
     "exe:3876b"
    ],
@@ -280,7 +280,7 @@
    "id": "e00028",
    "kind": "exe",
    "jp": "@@陸軍兵器工場",
-   "en": "  Tank factory",
+   "en": "Army Factory",
    "refs": [
     "exe:38784"
    ],
@@ -290,7 +290,7 @@
    "id": "e00029",
    "kind": "exe",
    "jp": "　　造船所",
-   "en": "  Shipyard",
+   "en": "Shipyard",
    "refs": [
     "exe:3879d"
    ],
@@ -300,7 +300,7 @@
    "id": "e00030",
    "kind": "exe",
    "jp": "　@@終了",
-   "en": "    End",
+   "en": "End",
    "refs": [
     "exe:387e8",
     "exe:48c4d"
@@ -311,7 +311,7 @@
    "id": "e00031",
    "kind": "exe",
    "jp": "対空攻撃",
-   "en": "Anti-air",
+   "en": "Anti-Air Attack",
    "refs": [
     "exe:388e2"
    ],
@@ -321,7 +321,7 @@
    "id": "e00032",
    "kind": "exe",
    "jp": "対地攻撃",
-   "en": "Anti-gnd",
+   "en": "Ground Attack",
    "refs": [
     "exe:388fb"
    ],
@@ -331,7 +331,7 @@
    "id": "e00033",
    "kind": "exe",
    "jp": "対艦攻撃",
-   "en": "Antiship",
+   "en": "Anti-Ship Attack",
    "refs": [
     "exe:38914"
    ],
@@ -341,7 +341,7 @@
    "id": "e00034",
    "kind": "exe",
    "jp": "対潜攻撃",
-   "en": "Anti-sub",
+   "en": "Anti-Sub Attack",
    "refs": [
     "exe:3892d"
    ],
@@ -351,7 +351,7 @@
    "id": "e00035",
    "kind": "exe",
    "jp": "　終了",
-   "en": "  End",
+   "en": "End",
    "refs": [
     "exe:38946",
     "exe:38be9",
@@ -364,7 +364,7 @@
    "id": "e00036",
    "kind": "exe",
    "jp": "攻撃目標ＷＯＲＫ",
-   "en": "Target",
+   "en": "Attack Target WORK",
    "refs": [
     "exe:389dc"
    ],
@@ -374,7 +374,7 @@
    "id": "e00037",
    "kind": "exe",
    "jp": "　搭載",
-   "en": "  Load",
+   "en": "Load",
    "refs": [
     "exe:38ad6"
    ],
@@ -384,7 +384,7 @@
    "id": "e00038",
    "kind": "exe",
    "jp": "　合流",
-   "en": " Merge",
+   "en": "Merge",
    "refs": [
     "exe:38bd0"
    ],
@@ -394,7 +394,7 @@
    "id": "e00039",
    "kind": "exe",
    "jp": "　降車",
-   "en": "Unload",
+   "en": "Disembark",
    "refs": [
     "exe:38cca"
    ],
@@ -404,7 +404,7 @@
    "id": "e00040",
    "kind": "exe",
    "jp": "　上陸",
-   "en": "  Land",
+   "en": "Land",
    "refs": [
     "exe:38dc4"
    ],
@@ -444,7 +444,7 @@
    "id": "e00044",
    "kind": "exe",
    "jp": "ＫＩＬＬ",
-   "en": "DELETE",
+   "en": "KILL",
    "refs": [
     "exe:392d8"
    ],
@@ -454,7 +454,7 @@
    "id": "e00045",
    "kind": "exe",
    "jp": "メモ書込み",
-   "en": "Write memo",
+   "en": "Write Memo",
    "refs": [
     "exe:392f1"
    ],
@@ -464,7 +464,7 @@
    "id": "e00046",
    "kind": "exe",
    "jp": "ロードしてはじめる",
-   "en": "Load and start",
+   "en": "Start with Load",
    "refs": [
     "exe:393a0"
    ],
@@ -474,7 +474,7 @@
    "id": "e00047",
    "kind": "exe",
    "jp": "　ＣＧギャラリー　",
-   "en": "  CG Gallery",
+   "en": "CG Gallery",
    "refs": [
     "exe:393b9"
    ],
@@ -484,7 +484,7 @@
    "id": "e00048",
    "kind": "exe",
    "jp": "　サウンドＢＯＸ　",
-   "en": "  Sound Box",
+   "en": "Sound Box",
    "refs": [
     "exe:393d2"
    ],
@@ -494,7 +494,7 @@
    "id": "e00049",
    "kind": "exe",
    "jp": "日本",
-   "en": "JPN",
+   "en": "Japan",
    "refs": [
     "exe:3949a"
    ],
@@ -504,7 +504,7 @@
    "id": "e00050",
    "kind": "exe",
    "jp": "中国",
-   "en": "CHN",
+   "en": "China",
    "refs": [
     "exe:394b3"
    ],
@@ -557,7 +557,7 @@
    "id": "e00055",
    "kind": "exe",
    "jp": "ドイツ",
-   "en": "GER",
+   "en": "Germany",
    "refs": [
     "exe:39530",
     "exe:39724"
@@ -578,7 +578,7 @@
    "id": "e00057",
    "kind": "exe",
    "jp": "イギリス",
-   "en": "Britain",
+   "en": "United Kingdom",
    "refs": [
     "exe:39562"
    ],
@@ -588,7 +588,7 @@
    "id": "e00058",
    "kind": "exe",
    "jp": "アメリカ",
-   "en": "America",
+   "en": "United States",
    "refs": [
     "exe:3957b"
    ],
@@ -598,7 +598,7 @@
    "id": "e00059",
    "kind": "exe",
    "jp": "琴乃",
-   "en": "Koto",
+   "en": "Kotono",
    "refs": [
     "exe:39594"
    ],
@@ -718,7 +718,7 @@
    "id": "e00071",
    "kind": "exe",
    "jp": "11.オープニング",
-   "en": "11.Opening",
+   "en": "11. Opening",
    "refs": [
     "exe:39788"
    ],
@@ -728,7 +728,7 @@
    "id": "e00072",
    "kind": "exe",
    "jp": "12.タイトル",
-   "en": "12.Title",
+   "en": "12. Title",
    "refs": [
     "exe:397a1"
    ],
@@ -738,7 +738,7 @@
    "id": "e00073",
    "kind": "exe",
    "jp": "13.ブリッジ１",
-   "en": "13.Bridge 1",
+   "en": "13. Bridge 1",
    "refs": [
     "exe:397ba"
    ],
@@ -748,7 +748,7 @@
    "id": "e00074",
    "kind": "exe",
    "jp": "14.ブリッジ２",
-   "en": "14.Bridge 2",
+   "en": "14. Bridge 2",
    "refs": [
     "exe:397d3"
    ],
@@ -758,7 +758,7 @@
    "id": "e00075",
    "kind": "exe",
    "jp": "15.Ｈシーン１",
-   "en": "15.H scene 1",
+   "en": "15. H-Scene 1",
    "refs": [
     "exe:397ec"
    ],
@@ -768,7 +768,7 @@
    "id": "e00076",
    "kind": "exe",
    "jp": "16.Ｈシーン２",
-   "en": "16.H scene 2",
+   "en": "16. H-Scene 2",
    "refs": [
     "exe:39805"
    ],
@@ -778,7 +778,7 @@
    "id": "e00077",
    "kind": "exe",
    "jp": "17.Ｈシーン３",
-   "en": "17.H scene 3",
+   "en": "17. H-Scene 3",
    "refs": [
     "exe:3981e"
    ],
@@ -788,7 +788,7 @@
    "id": "e00078",
    "kind": "exe",
    "jp": "18.ゲームオーバー",
-   "en": "18.Game over",
+   "en": "18. Game Over",
    "refs": [
     "exe:39837"
    ],
@@ -798,7 +798,7 @@
    "id": "e00079",
    "kind": "exe",
    "jp": "19.エンディング",
-   "en": "19.Ending",
+   "en": "19. Ending",
    "refs": [
     "exe:39850"
    ],
@@ -808,7 +808,7 @@
    "id": "e00080",
    "kind": "exe",
    "jp": "兵装:%s",
-   "en": "Arm:%s",
+   "en": "Armament: %s",
    "refs": [
     "exe:48930",
     "exe:48948"
@@ -820,7 +820,7 @@
    "id": "e00081",
    "kind": "exe",
    "jp": "経験レベルが上昇しました。",
-   "en": "Experience level rose.",
+   "en": "Experience level increased.",
    "refs": [
     "exe:48950",
     "exe:4896b"
@@ -831,7 +831,7 @@
    "id": "e00082",
    "kind": "exe",
    "jp": "墜落しました。",
-   "en": "Shot down.",
+   "en": "Crashed.",
    "refs": [
     "exe:48a57"
    ],
@@ -841,7 +841,7 @@
    "id": "e00083",
    "kind": "exe",
    "jp": "兵器生産",
-   "en": "Produce",
+   "en": "Weapon Production",
    "refs": [
     "exe:48b36"
    ],
@@ -851,7 +851,7 @@
    "id": "e00084",
    "kind": "exe",
    "jp": "あと@@%2d@@UNIT",
-   "en": "%2d units left",
+   "en": "%2d UNIT remaining",
    "refs": [
     "exe:48b3f"
    ],
@@ -862,7 +862,7 @@
    "id": "e00085",
    "kind": "exe",
    "jp": "軍事費が足りません。",
-   "en": "Not enough funds.",
+   "en": "Not enough military funds.",
    "refs": [
     "exe:48b5f"
    ],
@@ -872,7 +872,7 @@
    "id": "e00086",
    "kind": "exe",
    "jp": "燃料・弾薬の補給が行えません。",
-   "en": "Can't resupply fuel/ammo.",
+   "en": "Cannot supply fuel or ammunition.",
    "refs": [
     "exe:48b74"
    ],
@@ -882,7 +882,7 @@
    "id": "e00087",
    "kind": "exe",
    "jp": "軍事費が不足していて",
-   "en": "Funds are short:",
+   "en": "Military funds are insufficient,",
    "refs": [
     "exe:48b93"
    ],
@@ -892,7 +892,7 @@
    "id": "e00088",
    "kind": "exe",
    "jp": "　　%sを修理します。",
-   "en": "  Repairing %s.",
+   "en": "Repairing %s.",
    "refs": [
     "exe:48ba8"
    ],
@@ -903,7 +903,7 @@
    "id": "e00089",
    "kind": "exe",
    "jp": "　　部隊を補充します。",
-   "en": "  Reinforcing units.",
+   "en": "Replenishing units.",
    "refs": [
     "exe:48bbf"
    ],
@@ -913,7 +913,7 @@
    "id": "e00090",
    "kind": "exe",
    "jp": "　全部隊に補給します。",
-   "en": " Resupplying all.",
+   "en": "Supplying all units.",
    "refs": [
     "exe:48bd7"
    ],
@@ -923,7 +923,7 @@
    "id": "e00091",
    "kind": "exe",
    "jp": "このユニットはすでに行動済です",
-   "en": "This unit already moved.",
+   "en": "This unit has already acted.",
    "refs": [
     "exe:48c07"
    ],
@@ -933,7 +933,7 @@
    "id": "e00092",
    "kind": "exe",
    "jp": "この場所では降車できません。",
-   "en": "Can't unload here.",
+   "en": "Cannot disembark here.",
    "refs": [
     "exe:48c27"
    ],
@@ -943,7 +943,7 @@
    "id": "e00093",
    "kind": "exe",
    "jp": "　艦船同士の合流は出来ません。",
-   "en": " Ships can't merge.",
+   "en": "Ships cannot merge with ships.",
    "refs": [
     "exe:48c85"
    ],
@@ -953,7 +953,7 @@
    "id": "e00094",
    "kind": "exe",
    "jp": "←合流先",
-   "en": "<-Target",
+   "en": "← Merge target",
    "refs": [
     "exe:48cbc"
    ],
@@ -963,7 +963,7 @@
    "id": "e00095",
    "kind": "exe",
    "jp": "合流元→",
-   "en": "Source->",
+   "en": "Merge source →",
    "refs": [
     "exe:48cc5"
    ],
@@ -973,7 +973,7 @@
    "id": "e00096",
    "kind": "exe",
    "jp": "合流は出来ません。",
-   "en": "Can't merge.",
+   "en": "Cannot merge.",
    "refs": [
     "exe:48cce"
    ],
@@ -983,7 +983,7 @@
    "id": "e00097",
    "kind": "exe",
    "jp": "部隊を搭載した状態での",
-   "en": "With units loaded,",
+   "en": "While carrying units,",
    "refs": [
     "exe:48ce1"
    ],
@@ -993,7 +993,7 @@
    "id": "e00098",
    "kind": "exe",
    "jp": "平地",
-   "en": "Flat",
+   "en": "Plain",
    "refs": [
     "exe:4a774"
    ],
@@ -1003,7 +1003,7 @@
    "id": "e00099",
    "kind": "exe",
    "jp": "森林",
-   "en": "Wood",
+   "en": "Forest",
    "refs": [
     "exe:4a779"
    ],
@@ -1013,7 +1013,7 @@
    "id": "e00100",
    "kind": "exe",
    "jp": "荒地",
-   "en": "Wild",
+   "en": "Wasteland",
    "refs": [
     "exe:4a77e"
    ],
@@ -1023,7 +1023,7 @@
    "id": "e00101",
    "kind": "exe",
    "jp": "湿地",
-   "en": "Bog",
+   "en": "Marsh",
    "refs": [
     "exe:4a783"
    ],
@@ -1043,7 +1043,7 @@
    "id": "e00103",
    "kind": "exe",
    "jp": "川",
-   "en": "Rv",
+   "en": "River",
    "refs": [
     "exe:4a78d"
    ],
@@ -1053,7 +1053,7 @@
    "id": "e00104",
    "kind": "exe",
    "jp": "浅瀬",
-   "en": "Ford",
+   "en": "Shallow",
    "refs": [
     "exe:4a790"
    ],
@@ -1063,7 +1063,7 @@
    "id": "e00105",
    "kind": "exe",
    "jp": "海",
-   "en": "Oc",
+   "en": "Sea",
    "refs": [
     "exe:4a795",
     "exe:4dab4",
@@ -1075,7 +1075,7 @@
    "id": "e00106",
    "kind": "exe",
    "jp": "要塞",
-   "en": "Fort",
+   "en": "Fortress",
    "refs": [
     "exe:4a798"
    ],
@@ -1085,7 +1085,7 @@
    "id": "e00107",
    "kind": "exe",
    "jp": "山岳",
-   "en": "Mtn",
+   "en": "Mountain",
    "refs": [
     "exe:4a79d"
    ],
@@ -1095,7 +1095,7 @@
    "id": "e00108",
    "kind": "exe",
    "jp": "橋",
-   "en": "Br",
+   "en": "Bridge",
    "refs": [
     "exe:4a7a2"
    ],
@@ -1115,7 +1115,7 @@
    "id": "e00110",
    "kind": "exe",
    "jp": "制空戦闘機",
-   "en": "Fighter",
+   "en": "Air Superiority Fighter",
    "refs": [
     "exe:4a8b6"
    ],
@@ -1125,7 +1125,7 @@
    "id": "e00111",
    "kind": "exe",
    "jp": "支援戦闘機",
-   "en": "F-bomber",
+   "en": "Support Fighter",
    "refs": [
     "exe:4a8c1"
    ],
@@ -1135,7 +1135,7 @@
    "id": "e00112",
    "kind": "exe",
    "jp": "攻撃機",
-   "en": "Attack",
+   "en": "Attack Aircraft",
    "refs": [
     "exe:4a8cc"
    ],
@@ -1145,7 +1145,7 @@
    "id": "e00113",
    "kind": "exe",
    "jp": "補給機",
-   "en": "Tanker",
+   "en": "Supply Aircraft",
    "refs": [
     "exe:4a8d3"
    ],
@@ -1155,7 +1155,7 @@
    "id": "e00114",
    "kind": "exe",
    "jp": "輸送機",
-   "en": "Cargo",
+   "en": "Transport Aircraft",
    "refs": [
     "exe:4a8da"
    ],
@@ -1165,7 +1165,7 @@
    "id": "e00115",
    "kind": "exe",
    "jp": "対潜哨戒機",
-   "en": "ASW patrol",
+   "en": "Anti-Sub Patrol Aircraft",
    "refs": [
     "exe:4a8e1"
    ],
@@ -1175,7 +1175,7 @@
    "id": "e00116",
    "kind": "exe",
    "jp": "攻撃ヘリ",
-   "en": "Atk heli",
+   "en": "Attack Helicopter",
    "refs": [
     "exe:4a8ec"
    ],
@@ -1185,7 +1185,7 @@
    "id": "e00117",
    "kind": "exe",
    "jp": "輸送ヘリ",
-   "en": "Tpt heli",
+   "en": "Transport Helicopter",
    "refs": [
     "exe:4a8f5"
    ],
@@ -1195,7 +1195,7 @@
    "id": "e00118",
    "kind": "exe",
    "jp": "対潜ヘリ",
-   "en": "ASW heli",
+   "en": "Anti-Sub Helicopter",
    "refs": [
     "exe:4a8fe"
    ],
@@ -1205,7 +1205,7 @@
    "id": "e00119",
    "kind": "exe",
    "jp": "超重戦車",
-   "en": "Ult.tank",
+   "en": "Super-Heavy Tank",
    "refs": [
     "exe:4a907"
    ],
@@ -1215,7 +1215,7 @@
    "id": "e00120",
    "kind": "exe",
    "jp": "重戦車",
-   "en": "H.tank",
+   "en": "Heavy Tank",
    "refs": [
     "exe:4a910"
    ],
@@ -1225,7 +1225,7 @@
    "id": "e00121",
    "kind": "exe",
    "jp": "中戦車",
-   "en": "M.tank",
+   "en": "Medium Tank",
    "refs": [
     "exe:4a917"
    ],
@@ -1235,7 +1235,7 @@
    "id": "e00122",
    "kind": "exe",
    "jp": "軽戦車",
-   "en": "L.tank",
+   "en": "Light Tank",
    "refs": [
     "exe:4a91e"
    ],
@@ -1245,7 +1245,7 @@
    "id": "e00123",
    "kind": "exe",
    "jp": "歩兵戦闘車",
-   "en": "IFV",
+   "en": "Infantry Fighting Vehicle",
    "refs": [
     "exe:4a925"
    ],
@@ -1255,7 +1255,7 @@
    "id": "e00124",
    "kind": "exe",
    "jp": "兵員輸送車",
-   "en": "APC",
+   "en": "Armored Personnel Carrier",
    "refs": [
     "exe:4a930"
    ],
@@ -1265,7 +1265,7 @@
    "id": "e00125",
    "kind": "exe",
    "jp": "自走ＳＡＭ発射機",
-   "en": "SP SAM launcher",
+   "en": "Self-Propelled SAM Launcher",
    "refs": [
     "exe:4a93b"
    ],
@@ -1275,7 +1275,7 @@
    "id": "e00126",
    "kind": "exe",
    "jp": "自走対空機関砲",
-   "en": "SP AA gun",
+   "en": "Self-Propelled Anti-Air Gun",
    "refs": [
     "exe:4a94c"
    ],
@@ -1285,7 +1285,7 @@
    "id": "e00127",
    "kind": "exe",
    "jp": "自走砲",
-   "en": "SP gun",
+   "en": "Self-Propelled Artillery",
    "refs": [
     "exe:4a95b"
    ],
@@ -1295,7 +1295,7 @@
    "id": "e00128",
    "kind": "exe",
    "jp": "対艦ミサイル発射機",
-   "en": "Antiship missile",
+   "en": "Anti-Ship Missile Launcher",
    "refs": [
     "exe:4a962"
    ],
@@ -1305,7 +1305,7 @@
    "id": "e00129",
    "kind": "exe",
    "jp": "戦術ミサイル発射機",
-   "en": "Tactical missile",
+   "en": "Tactical Missile Launcher",
    "refs": [
     "exe:4a975"
    ],
@@ -1315,7 +1315,7 @@
    "id": "e00130",
    "kind": "exe",
    "jp": "対空機銃",
-   "en": "AA MG",
+   "en": "Anti-Air Machine Gun",
    "refs": [
     "exe:4a988"
    ],
@@ -1345,7 +1345,7 @@
    "id": "e00133",
    "kind": "exe",
    "jp": "補給車",
-   "en": "Supply",
+   "en": "Supply Vehicle",
    "refs": [
     "exe:4a9a3"
    ],
@@ -1355,7 +1355,7 @@
    "id": "e00134",
    "kind": "exe",
    "jp": "歩兵",
-   "en": "Inf.",
+   "en": "Infantry",
    "refs": [
     "exe:4a9aa",
     "exe:4ce2c"
@@ -1366,7 +1366,7 @@
    "id": "e00135",
    "kind": "exe",
    "jp": "重装歩兵",
-   "en": "Hvy inf.",
+   "en": "Heavy Infantry",
    "refs": [
     "exe:4a9af"
    ],
@@ -1376,7 +1376,7 @@
    "id": "e00136",
    "kind": "exe",
    "jp": "空挺歩兵",
-   "en": "Airborne",
+   "en": "Paratrooper",
    "refs": [
     "exe:4a9b8"
    ],
@@ -1386,7 +1386,7 @@
    "id": "e00137",
    "kind": "exe",
    "jp": "徴集兵",
-   "en": "Draft",
+   "en": "Conscript",
    "refs": [
     "exe:4a9c1"
    ],
@@ -1396,7 +1396,7 @@
    "id": "e00138",
    "kind": "exe",
    "jp": "戦艦",
-   "en": "BB",
+   "en": "Battleship",
    "refs": [
     "exe:4a9c8"
    ],
@@ -1406,7 +1406,7 @@
    "id": "e00139",
    "kind": "exe",
    "jp": "航空母艦",
-   "en": "Carrier",
+   "en": "Aircraft Carrier",
    "refs": [
     "exe:4a9cd"
    ],
@@ -1416,7 +1416,7 @@
    "id": "e00140",
    "kind": "exe",
    "jp": "巡洋艦",
-   "en": "Cruis.",
+   "en": "Cruiser",
    "refs": [
     "exe:4a9d6"
    ],
@@ -1426,7 +1426,7 @@
    "id": "e00141",
    "kind": "exe",
    "jp": "イージス巡洋艦",
-   "en": "Aegis cruiser",
+   "en": "Aegis Cruiser",
    "refs": [
     "exe:4a9dd"
    ],
@@ -1436,7 +1436,7 @@
    "id": "e00142",
    "kind": "exe",
    "jp": "駆逐艦",
-   "en": "Destr.",
+   "en": "Destroyer",
    "refs": [
     "exe:4a9ec"
    ],
@@ -1456,7 +1456,7 @@
    "id": "e00144",
    "kind": "exe",
    "jp": "ミサイル艇",
-   "en": "Missile bt",
+   "en": "Missile Boat",
    "refs": [
     "exe:4aa00"
    ],
@@ -1466,7 +1466,7 @@
    "id": "e00145",
    "kind": "exe",
    "jp": "楊陸艦",
-   "en": "LST",
+   "en": "Amphibious Assault Ship",
    "refs": [
     "exe:4aa0b"
    ],
@@ -1476,7 +1476,7 @@
    "id": "e00146",
    "kind": "exe",
    "jp": "輸送艦",
-   "en": "Trans.",
+   "en": "Transport Ship",
    "refs": [
     "exe:4aa12"
    ],
@@ -1486,7 +1486,7 @@
    "id": "e00147",
    "kind": "exe",
    "jp": "補給艦",
-   "en": "Oiler",
+   "en": "Supply Ship",
    "refs": [
     "exe:4aa19"
    ],
@@ -1496,7 +1496,7 @@
    "id": "e00148",
    "kind": "exe",
    "jp": "潜水艦",
-   "en": "Sub",
+   "en": "Submarine",
    "refs": [
     "exe:4aa20",
     "exe:4ce38"
@@ -1507,7 +1507,7 @@
    "id": "e00149",
    "kind": "exe",
    "jp": "7.62mm小銃",
-   "en": "7.62 rifle",
+   "en": "7.62mm Rifle",
    "refs": [
     "exe:4aa27",
     "exe:4aa32"
@@ -1518,7 +1518,7 @@
    "id": "e00150",
    "kind": "exe",
    "jp": "20mm機関銃",
-   "en": "20mm MG",
+   "en": "20mm Machine Gun",
    "refs": [
     "exe:4aa3d"
    ],
@@ -1528,7 +1528,7 @@
    "id": "e00151",
    "kind": "exe",
    "jp": "40mm機関砲",
-   "en": "40mm AC",
+   "en": "40mm Autocannon",
    "refs": [
     "exe:4aa48"
    ],
@@ -1538,7 +1538,7 @@
    "id": "e00152",
    "kind": "exe",
    "jp": "75mm砲",
-   "en": "75mm",
+   "en": "75mm Gun",
    "refs": [
     "exe:4aa53"
    ],
@@ -1548,7 +1548,7 @@
    "id": "e00153",
    "kind": "exe",
    "jp": "105mm砲",
-   "en": "105mm",
+   "en": "105mm Gun",
    "refs": [
     "exe:4aa5a"
    ],
@@ -1558,7 +1558,7 @@
    "id": "e00154",
    "kind": "exe",
    "jp": "120mm砲",
-   "en": "120mm",
+   "en": "120mm Gun",
    "refs": [
     "exe:4aa62"
    ],
@@ -1568,7 +1568,7 @@
    "id": "e00155",
    "kind": "exe",
    "jp": "155mm砲",
-   "en": "155mm",
+   "en": "155mm Gun",
    "refs": [
     "exe:4aa6a"
    ],
@@ -1578,7 +1578,7 @@
    "id": "e00156",
    "kind": "exe",
    "jp": "406mm砲",
-   "en": "406mm",
+   "en": "406mm Gun",
    "refs": [
     "exe:4aa72"
    ],
@@ -1588,7 +1588,7 @@
    "id": "e00157",
    "kind": "exe",
    "jp": "爆弾",
-   "en": "Bomb",
+   "en": "Bombs",
    "refs": [
     "exe:4aa7a"
    ],
@@ -1598,7 +1598,7 @@
    "id": "e00158",
    "kind": "exe",
    "jp": "ドライブ１に",
-   "en": "In drive 1",
+   "en": "Insert the SYSTEM DISK",
    "refs": [
     "exe:4c900",
     "exe:4c966",
@@ -1611,7 +1611,7 @@
    "id": "e00159",
    "kind": "exe",
    "jp": "ＳＹＳＴＥＭ@@ＤＩＳＫを",
-   "en": "insert SYSTEM DISK",
+   "en": "into Drive 1.",
    "refs": [
     "exe:4c90d"
    ],
@@ -1621,7 +1621,7 @@
    "id": "e00160",
    "kind": "exe",
    "jp": "入れてください",
-   "en": "please.",
+   "en": "Please insert.",
    "refs": [
     "exe:4c926",
     "exe:4c957",
@@ -1635,7 +1635,7 @@
    "id": "e00161",
    "kind": "exe",
    "jp": "ドライブ２に",
-   "en": "In drive 2",
+   "en": "Insert the GAME DISK",
    "refs": [
     "exe:4c935"
    ],
@@ -1645,7 +1645,7 @@
    "id": "e00162",
    "kind": "exe",
    "jp": "ＧＡＭＥ@@ＤＩＳＫを",
-   "en": "insert GAME DISK",
+   "en": "into Drive 2.",
    "refs": [
     "exe:4c942"
    ],
@@ -1655,7 +1655,7 @@
    "id": "e00163",
    "kind": "exe",
    "jp": "ＤＡＴＡ@@ＤＩＳＫ１を",
-   "en": "insert DATA DISK 1",
+   "en": "Insert DATA DISK 1",
    "refs": [
     "exe:4c973"
    ],
@@ -1665,7 +1665,7 @@
    "id": "e00164",
    "kind": "exe",
    "jp": "ＤＡＴＡ@@ＤＩＳＫ２を",
-   "en": "insert DATA DISK 2",
+   "en": "Insert DATA DISK 2",
    "refs": [
     "exe:4c9a6"
    ],
@@ -1675,7 +1675,7 @@
    "id": "e00165",
    "kind": "exe",
    "jp": "ＤＡＴＡ@@ＤＩＳＫ３を",
-   "en": "insert DATA DISK 3",
+   "en": "Insert DATA DISK 3",
    "refs": [
     "exe:4c9d9"
    ],
@@ -1685,7 +1685,7 @@
    "id": "e00166",
    "kind": "exe",
    "jp": "ドライブ１のディスクを",
-   "en": "Make drive 1's disk",
+   "en": "Make the disk in Drive 1",
    "refs": [
     "exe:4c9ff"
    ],
@@ -1695,7 +1695,7 @@
    "id": "e00167",
    "kind": "exe",
    "jp": "書き込み可能状態に",
-   "en": "writable,",
+   "en": "writable",
    "refs": [
     "exe:4ca16"
    ],
@@ -1705,7 +1705,7 @@
    "id": "e00168",
    "kind": "exe",
    "jp": "してください",
-   "en": "please.",
+   "en": "Please do so.",
    "refs": [
     "exe:4ca29"
    ],
@@ -1715,7 +1715,7 @@
    "id": "e00169",
    "kind": "exe",
    "jp": "このディスクは",
-   "en": "This disk is",
+   "en": "This disk is not",
    "refs": [
     "exe:4ca36"
    ],
@@ -1725,7 +1725,7 @@
    "id": "e00170",
    "kind": "exe",
    "jp": "ＡＮＧＥＬ★ＡＲＭＹの",
-   "en": "not an ANGEL ARMY",
+   "en": "an ANGEL★ARMY",
    "refs": [
     "exe:4ca45"
    ],
@@ -1745,7 +1745,7 @@
    "id": "e00172",
    "kind": "exe",
    "jp": "ファイルがオープンできません．",
-   "en": "Cannot open the file.",
+   "en": "Cannot open file.",
    "refs": [
     "exe:4cb47"
    ],
@@ -1755,7 +1755,7 @@
    "id": "e00173",
    "kind": "exe",
    "jp": "未定義エラー",
-   "en": "Undef. error",
+   "en": "Undefined Error",
    "refs": [
     "exe:4cb66"
    ],
@@ -1765,7 +1765,7 @@
    "id": "e00174",
    "kind": "exe",
    "jp": "射@@弾",
-   "en": "Rg/Am",
+   "en": "Ammo",
    "refs": [
     "exe:4cbb7"
    ],
@@ -1775,7 +1775,7 @@
    "id": "e00175",
    "kind": "exe",
    "jp": "移動　　燃料",
-   "en": "Move  Fuel",
+   "en": "Move / Fuel",
    "refs": [
     "exe:4cbce"
    ],
@@ -1785,7 +1785,7 @@
    "id": "e00176",
    "kind": "exe",
    "jp": "陣営状況",
-   "en": "Status",
+   "en": "Faction Status",
    "refs": [
     "exe:4cc0d"
    ],
@@ -1795,7 +1795,7 @@
    "id": "e00177",
    "kind": "exe",
    "jp": "@@￥%8lu　現在軍事費　￥%8lu",
-   "en": " Y%8lu  Funds now  Y%8lu",
+   "en": "¥%8lu / Current Military Funds ¥%8lu",
    "refs": [
     "exe:4cc49"
    ],
@@ -1806,7 +1806,7 @@
    "id": "e00178",
    "kind": "exe",
    "jp": "　@@%2d@@UPT　　空軍生産力　　%2d@@UPT",
-   "en": "  %2d UPT  Air output  %2d UPT",
+   "en": "%2d UPT / Air Force Production %2d UPT",
    "refs": [
     "exe:4cc87"
    ],
@@ -1817,7 +1817,7 @@
    "id": "e00179",
    "kind": "exe",
    "jp": "　@@%2d@@UPT　　陸軍生産力　　%2d@@UPT",
-   "en": "  %2d UPT  Land output %2d UPT",
+   "en": "%2d UPT / Army Production %2d UPT",
    "refs": [
     "exe:4ccae"
    ],
@@ -1828,7 +1828,7 @@
    "id": "e00180",
    "kind": "exe",
    "jp": "　@@%2d@@UPT　　海軍生産力　　%2d@@UPT",
-   "en": "  %2d UPT  Sea output  %2d UPT",
+   "en": "%2d UPT / Navy Production %2d UPT",
    "refs": [
     "exe:4ccd5"
    ],
@@ -1839,7 +1839,7 @@
    "id": "e00181",
    "kind": "exe",
    "jp": "　　@@%2d@@　　　総部隊数　　　@@%2d",
-   "en": "  %2d   Total units   %2d",
+   "en": "%2d / Total Units %2d",
    "refs": [
     "exe:4ccfc"
    ],
@@ -1850,7 +1850,7 @@
    "id": "e00182",
    "kind": "exe",
    "jp": "ユニットデータ",
-   "en": "Unit data",
+   "en": "Unit Data",
    "refs": [
     "exe:4cd90"
    ],
@@ -1860,7 +1860,7 @@
    "id": "e00183",
    "kind": "exe",
    "jp": "燃料:%3d/%3d",
-   "en": "F:%3d/%3d",
+   "en": "Fuel: %3d/%3d",
    "refs": [
     "exe:4cdce"
    ],
@@ -1901,7 +1901,7 @@
    "id": "e00187",
    "kind": "exe",
    "jp": "防御効果",
-   "en": "Defense",
+   "en": "Defense Effect",
    "refs": [
     "exe:4cdff"
    ],
@@ -1911,7 +1911,7 @@
    "id": "e00188",
    "kind": "exe",
    "jp": "航空機",
-   "en": "Plane",
+   "en": "Aircraft",
    "refs": [
     "exe:4ce1b"
    ],
@@ -1921,7 +1921,7 @@
    "id": "e00189",
    "kind": "exe",
    "jp": "ヘリ",
-   "en": "Heli",
+   "en": "Helicopter",
    "refs": [
     "exe:4ce22"
    ],
@@ -1931,7 +1931,7 @@
    "id": "e00190",
    "kind": "exe",
    "jp": "車両",
-   "en": "Veh.",
+   "en": "Vehicle",
    "refs": [
     "exe:4ce27"
    ],
@@ -1941,7 +1941,7 @@
    "id": "e00191",
    "kind": "exe",
    "jp": "水上艦",
-   "en": "Ship",
+   "en": "Surface Ship",
    "refs": [
     "exe:4ce31"
    ],
@@ -1971,7 +1971,7 @@
    "id": "e00194",
    "kind": "exe",
    "jp": "艦載",
-   "en": "Ship",
+   "en": "Carrier",
    "refs": [
     "exe:4ce49"
    ],
@@ -1991,7 +1991,7 @@
    "id": "e00196",
    "kind": "exe",
    "jp": "移動：%2d@@燃料：%3d@@防御力：%2d",
-   "en": "Move:%2d  Fuel:%3d Def:%2d",
+   "en": "Move: %2d / Fuel: %3d / Defense: %2d",
    "refs": [
     "exe:4ce88"
    ],
@@ -2002,7 +2002,7 @@
    "id": "e00197",
    "kind": "exe",
    "jp": "渡河：%s",
-   "en": "Ford:%s",
+   "en": "Crossing: %s",
    "refs": [
     "exe:4ceb1"
    ],
@@ -2013,7 +2013,7 @@
    "id": "e00198",
    "kind": "exe",
    "jp": "最大搭載数：%2d　搭載可能タイプ：",
-   "en": "Capacity:%2d  Carries: ",
+   "en": "Max Capacity: %2d / Types: ",
    "refs": [
     "exe:4ceba"
    ],
@@ -2024,7 +2024,7 @@
    "id": "e00199",
    "kind": "exe",
    "jp": "%s%s・",
-   "en": "%s%s,",
+   "en": "%s%s・",
    "refs": [
     "exe:4cedc"
    ],
@@ -2035,7 +2035,7 @@
    "id": "e00200",
    "kind": "exe",
    "jp": "兵装　　　　空@@陸@@海@@潜　射程　弾数",
-   "en": "Weapon    Air Gnd Sea Sub Rng Ammo",
+   "en": "Weapon / Air / Ground / Sea / Sub / Range / Ammo",
    "refs": [
     "exe:4cee3"
    ],
@@ -2045,7 +2045,7 @@
    "id": "e00201",
    "kind": "exe",
    "jp": "損害表",
-   "en": "Damage",
+   "en": "Damage Report",
    "refs": [
     "exe:4cf5d"
    ],
@@ -2055,7 +2055,7 @@
    "id": "e00202",
    "kind": "exe",
    "jp": "@@BLUE@@損害:%8lu",
-   "en": "  BLUE loss:%8lu",
+   "en": "BLUE Damage: %8lu",
    "refs": [
     "exe:4cf64"
    ],
@@ -2066,7 +2066,7 @@
    "id": "e00203",
    "kind": "exe",
    "jp": "ORANGE損害:%8lu",
-   "en": "ORANGE:%8lu",
+   "en": "ORANGE Damage: %8lu",
    "refs": [
     "exe:4cf76"
    ],
@@ -2077,7 +2077,7 @@
    "id": "e00204",
    "kind": "exe",
    "jp": "破壊率:%3d@@％@@",
-   "en": "Ruin:%3d%%",
+   "en": "Destruction Rate: %3d%%",
    "refs": [
     "exe:4cf86"
    ],
@@ -2088,7 +2088,7 @@
    "id": "e00205",
    "kind": "exe",
    "jp": "勝利レベル:%s",
-   "en": "Victory:%s",
+   "en": "Victory Level: %s",
    "refs": [
     "exe:4cf97"
    ],
@@ -2099,7 +2099,7 @@
    "id": "e00206",
    "kind": "exe",
    "jp": "破壊率:%3d@@％",
-   "en": "Ruin:%3d%%",
+   "en": "Destruction Rate: %3d%%",
    "refs": [
     "exe:4cfa5"
    ],
@@ -2110,7 +2110,7 @@
    "id": "e00207",
    "kind": "exe",
    "jp": "データディスクメニュー",
-   "en": "Data disk menu",
+   "en": "Data Disk Menu",
    "refs": [
     "exe:4cfc4"
    ],
@@ -2120,7 +2120,7 @@
    "id": "e00208",
    "kind": "exe",
    "jp": "%sが読み込めません。中断します。",
-   "en": "Can't read %s. Stopping.",
+   "en": "Cannot read %s. Aborting.",
    "refs": [
     "exe:4d024"
    ],
@@ -2142,7 +2142,7 @@
    "id": "e00210",
    "kind": "exe",
    "jp": "これ以上部隊を生産できません。",
-   "en": "No more units can be made.",
+   "en": "Cannot produce more units.",
    "refs": [
     "exe:4d131"
    ],
@@ -2152,7 +2152,7 @@
    "id": "e00211",
    "kind": "exe",
    "jp": "中止",
-   "en": "Stop",
+   "en": "Cancel",
    "refs": [
     "exe:4d150"
    ],
@@ -2192,7 +2192,7 @@
    "id": "e00215",
    "kind": "exe",
    "jp": "首都占領",
-   "en": "Capital!",
+   "en": "Capital Captured",
    "refs": [
     "exe:4d180"
    ],
@@ -2202,7 +2202,7 @@
    "id": "e00216",
    "kind": "exe",
    "jp": "%s首都占領",
-   "en": "%s capital",
+   "en": "%s Capital Captured",
    "refs": [
     "exe:4d189"
    ],
@@ -2213,7 +2213,7 @@
    "id": "e00217",
    "kind": "exe",
    "jp": "%s軍降伏",
-   "en": "%s quit",
+   "en": "%s Forces Surrender",
    "refs": [
     "exe:4d194"
    ],
@@ -2224,7 +2224,7 @@
    "id": "e00218",
    "kind": "exe",
    "jp": "%s軍勝利",
-   "en": "%s wins",
+   "en": "%s Forces Victorious",
    "refs": [
     "exe:4d19d"
    ],
@@ -2235,7 +2235,7 @@
    "id": "e00219",
    "kind": "exe",
    "jp": "%s軍の部隊は壊滅しました。",
-   "en": "%s army was wiped out.",
+   "en": "%s forces have been annihilated.",
    "refs": [
     "exe:4d1b2"
    ],
@@ -2246,7 +2246,7 @@
    "id": "e00220",
    "kind": "exe",
    "jp": "敵部隊全滅",
-   "en": "Enemy gone",
+   "en": "Enemy Forces Annihilated",
    "refs": [
     "exe:4d1cd"
    ],
@@ -2266,7 +2266,7 @@
    "id": "e00222",
    "kind": "exe",
    "jp": "対戦モード・マップ選択",
-   "en": "Versus: choose a map",
+   "en": "Versus Mode Map Select",
    "refs": [
     "exe:4da73"
    ],
@@ -2276,7 +2276,7 @@
    "id": "e00223",
    "kind": "exe",
    "jp": "空",
-   "en": "Ar",
+   "en": "Air",
    "refs": [
     "exe:4daae"
    ],
@@ -2286,7 +2286,7 @@
    "id": "e00224",
    "kind": "exe",
    "jp": "陸",
-   "en": "Gd",
+   "en": "Ground",
    "refs": [
     "exe:4dab1"
    ],
@@ -2316,7 +2316,7 @@
    "id": "e00227",
    "kind": "exe",
    "jp": "Ｙｅｓ…左クリック",
-   "en": "Yes...left click",
+   "en": "Yes… Left Click",
    "refs": [
     "exe:4db4e"
    ],
@@ -2326,7 +2326,7 @@
    "id": "e00228",
    "kind": "exe",
    "jp": "@@Ｎｏ@@…右クリック",
-   "en": "  No...right click",
+   "en": "No… Right Click",
    "refs": [
     "exe:4db61"
    ],
@@ -2336,7 +2336,7 @@
    "id": "e00229",
    "kind": "exe",
    "jp": "応戦しない",
-   "en": "Hold fire",
+   "en": "Do Not Fight Back",
    "refs": [
     "exe:4dbc0"
    ],
@@ -2356,7 +2356,7 @@
    "id": "e00231",
    "kind": "exe",
    "jp": "制作・著作",
-   "en": "Created by",
+   "en": "Produced by",
    "refs": [
     "exe:4dbfa"
    ],
@@ -2397,7 +2397,7 @@
    "id": "t00001",
    "kind": "text",
    "jp": "いえ、べつに戦争には\nもう興味ございません。　　　\nただ、ちょっとだけ兵器\nを作りすぎてしまっただ\nけですわ。　　　",
-   "en": "Oh, I'm not interested in war anymore.\nI just happened to build a few too many weapons, that's all.",
+   "en": "No, I'm not really interested\nin war anymore.\nI just happened to build a few\ntoo many weapons, that's all.",
    "refs": [
     "MESSAGE.TXT:00000000"
    ],
@@ -2407,7 +2407,7 @@
    "id": "t00002",
    "kind": "text",
    "jp": "さあ、いつでもかかって\nらっしゃい。　　　\nおとくいの人海戦術でお\n相手するわ。",
-   "en": "Come on, I'm ready anytime.\nI'll take you on with my famous human-wave tactics.",
+   "en": "Come on, bring it on\nwhenever you like.\nI'll entertain you with my\nfavorite human-wave tactics.",
    "refs": [
     "MESSAGE.TXT:00000001"
    ],
@@ -2417,7 +2417,7 @@
    "id": "t00003",
    "kind": "text",
    "jp": "連邦が崩壊したからって\nあまく見てほしくないわ。　　　\nたとえ経済がガタガタで\n兵器ドロボウが横行して\n秩序がみだれ・・・・・\nあぁ、困ったわ・・・・",
-   "en": "Don't take us lightly just because the Union fell.\nEven if the economy is a wreck, arms thieves run wild and order breaks down...\nOh dear, what a mess...",
+   "en": "Just because the Federation collapsed,\ndon't think you can underestimate us.\nEven if the economy is in shambles,\nweapon thieves run rampant,\nand order is breaking down...\nOh, what a mess...",
    "refs": [
     "MESSAGE.TXT:00000002"
    ],
@@ -2427,7 +2427,7 @@
    "id": "t00004",
    "kind": "text",
    "jp": "このステキな南の楽園に\n戦争は似合わないわ。　　　\nね、あなたもそう思うで\nしょ？",
-   "en": "War doesn't suit this lovely southern paradise.\nDon't you think so too?",
+   "en": "War doesn't suit this wonderful\nsouthern paradise.\nDon't you agree?",
    "refs": [
     "MESSAGE.TXT:00000003"
    ],
@@ -2437,7 +2437,7 @@
    "id": "t00005",
    "kind": "text",
    "jp": "・・・・・・・・・・・　　　\n悟りの境地に達した者こ\nそが、統治者としてふさ\nわしいと思います。",
-   "en": "...........\nOnly one who has reached enlightenment is fit to rule.",
+   "en": "...................\nOnly those who have reached\nenlightenment are fit\nto be rulers.",
    "refs": [
     "MESSAGE.TXT:00000004"
    ],
@@ -2447,7 +2447,7 @@
    "id": "t00006",
    "kind": "text",
    "jp": "我々は選ばれた民族であ\nる！　　　\n我が親愛なる国民よ、　\n団結して敵を倒すのだ！",
-   "en": "We are the chosen people!\nMy beloved nation, unite and crush the enemy!",
+   "en": "We are a chosen people!\nMy beloved citizens,\nunite and defeat the enemy!",
    "refs": [
     "MESSAGE.TXT:00000005"
    ],
@@ -2457,7 +2457,7 @@
    "id": "t00007",
    "kind": "text",
    "jp": "またもや軍事大国になっ\nてしまった。これは神の\n思し召しなのか！　　　\nさて、新兵器でも作ろう\nか・・・・・",
-   "en": "We've become a military power yet again. Is this the will of God?\nNow, shall I build some new weapons...?",
+   "en": "So I've become a military power\nonce again. Is this God's will?\nWell then, perhaps I'll\nbuild some new weapons...",
    "refs": [
     "MESSAGE.TXT:00000006"
    ],
@@ -2467,7 +2467,7 @@
    "id": "t00008",
    "kind": "text",
    "jp": "平和ね・・・・・\n戦争は外人さんにおまか\nせしますわ。　　　\nだって、お洋服が汚れて\nしまいますもの。",
-   "en": "How peaceful...\nI'll leave the fighting to the foreigners.\nAfter all, I'd get my clothes dirty.",
+   "en": "Peace, isn't it...\nI'll leave war to the foreigners.\nAfter all, it would\nstain my clothes.",
    "refs": [
     "MESSAGE.TXT:00000007"
    ],
@@ -2477,7 +2477,7 @@
    "id": "t00009",
    "kind": "text",
    "jp": "女王の国からこんにちは。　　　\nみんな仲良くしましょう。　　　\n・・・て、ムリですか？",
-   "en": "Hello from the land of the Queen.\nLet's all get along.\n...Oh, is that impossible?",
+   "en": "Hello from the Queen's country.\nLet's all get along.\n...Too much to ask?",
    "refs": [
     "MESSAGE.TXT:00000008"
    ],
@@ -2487,7 +2487,7 @@
    "id": "t00010",
    "kind": "text",
    "jp": "今やアメリカは世界の憲\n兵として君臨しているの。　　　\nほら、そこ！　ケンカし\nてると介入するわよ！",
-   "en": "America now reigns as the world's policeman.\nHey, you there! Keep fighting and I'll step in!",
+   "en": "America now reigns as the\nworld's policeman.\nHey, you there! If you keep\nfighting, I'll intervene!",
    "refs": [
     "MESSAGE.TXT:00000009"
    ],
@@ -2497,7 +2497,7 @@
    "id": "t00011",
    "kind": "text",
    "jp": "え？　ええっ？　戦争で\nすか？　　　\nまあ、どうしましょう。",
-   "en": "What? Whaaat? War?\nOh my, what shall I do?",
+   "en": "Huh? What? War?\nOh my, what shall we do?",
    "refs": [
     "MESSAGE.TXT:10000000"
    ],
@@ -2507,7 +2507,7 @@
    "id": "t00012",
    "kind": "text",
    "jp": "本気で私とやる気なの？　　　\n今のうちにあやまれば\n許してあげるわよ。",
-   "en": "You really mean to fight me?\nApologize now and I'll forgive you.",
+   "en": "Are you really serious about\nfighting me?\nApologize now and I might\nforgive you.",
    "refs": [
     "MESSAGE.TXT:10000001"
    ],
@@ -2517,7 +2517,7 @@
    "id": "t00013",
    "kind": "text",
    "jp": "い、いま、ちょっとそん\nなことしているヒマはな\nいんですけど・・・・・\nああ、本当に困ったわ。",
-   "en": "I-I really don't have time for that right now...\nOh, this is such trouble.",
+   "en": "I-I really don't have time\nfor something like this\nright now...\nOh, this is truly a problem.",
    "refs": [
     "MESSAGE.TXT:10000002"
    ],
@@ -2527,7 +2527,7 @@
    "id": "t00014",
    "kind": "text",
    "jp": "私はいぢめられるために\nいるんじゃないのよ！　　　\nまったく、なんて乱暴な\n人なのかしら。",
-   "en": "I'm not here just to be bullied!\nHonestly, what a violent person.",
+   "en": "I'm not here to be bullied!\nHonestly, what a\nrough person you are.",
    "refs": [
     "MESSAGE.TXT:10000003"
    ],
@@ -2537,7 +2537,7 @@
    "id": "t00015",
    "kind": "text",
    "jp": "テレポートしたり、火を\nふいたりはできないけど\nあなたを懲らしめること\nはできますわよ。",
-   "en": "I can't teleport or breathe fire, but I can still teach you a lesson.",
+   "en": "I can't teleport or breathe fire,\nbut I can certainly\npunish you.",
    "refs": [
     "MESSAGE.TXT:10000004"
    ],
@@ -2547,7 +2547,7 @@
    "id": "t00016",
    "kind": "text",
    "jp": "我々が決して外圧に屈す\nることのない不屈の民族\nであることをしらしめて\nくれる！",
-   "en": "We will show the world that we are a people who never bow to outside pressure!",
+   "en": "Let us show them that we are\nan unyielding people who\nwill never bow to\noutside pressure!",
    "refs": [
     "MESSAGE.TXT:10000005"
    ],
@@ -2557,7 +2557,7 @@
    "id": "t00017",
    "kind": "text",
    "jp": "ふっ、ふふっ・・・・・\n我が民族の優秀さを見せ\nてあげよう。　　　\n泣いてもしらんぞ。",
-   "en": "Heh, heh heh...\nI'll show you how superior my people are.\nDon't come crying to me.",
+   "en": "Heh, heheh...\nLet me show you the brilliance\nof my people.\nDon't cry when you lose.",
    "refs": [
     "MESSAGE.TXT:10000006"
    ],
@@ -2567,7 +2567,7 @@
    "id": "t00018",
    "kind": "text",
    "jp": "これから私はラウンジで\nティータイムですわ。　　　\nさ、外人さんお仕事です\nよ。",
-   "en": "Now I'm off to the lounge for tea time.\nWell, foreigners, time to get to work.",
+   "en": "I'm off to the lounge for\ntea time now.\nCome, foreigner, time to work.",
    "refs": [
     "MESSAGE.TXT:10000007"
    ],
@@ -2577,7 +2577,7 @@
    "id": "t00019",
    "kind": "text",
    "jp": "ふ～ん・・・・・\nわたしに勝てると思って\nるの。　　　\nおきらくなひとだね。",
-   "en": "Hmm...\nYou think you can beat me?\nWhat an easygoing person.",
+   "en": "Hmm...\nYou think you can beat me?\nYou're a carefree one, aren't you.",
    "refs": [
     "MESSAGE.TXT:10000008"
    ],
@@ -2587,7 +2587,7 @@
    "id": "t00020",
    "kind": "text",
    "jp": "ＨＥＹ　ＹＯＵ！　　　\n私ニ勝負ヲ挑ムナンテ、\n史上最高ノ　バカ　ネ。",
-   "en": "HEY YOU!\nChallenging ME? You Are The Biggest Fool In History.",
+   "en": "HEY YOU!\nChallenging me to a fight?\nYou're the biggest fool in history.",
    "refs": [
     "MESSAGE.TXT:10000009"
    ],
@@ -2597,7 +2597,7 @@
    "id": "t00021",
    "kind": "text",
    "jp": "う、うちてしやまん……",
-   "en": "W-we fight to the last...",
+   "en": "I-I can't fight anymore...",
    "refs": [
     "MESSAGE.TXT:20000000"
    ],
@@ -2607,7 +2607,7 @@
    "id": "t00022",
    "kind": "text",
    "jp": "つかん……………………。",
-   "en": "Tired...",
+   "en": "I'm done for...",
    "refs": [
     "MESSAGE.TXT:20000001"
    ],
@@ -2617,7 +2617,7 @@
    "id": "t00023",
    "kind": "text",
    "jp": "ああっ、もうどうしていい\nかわかんないよぉ……",
-   "en": "Aaah, I don't know what to do anymore...",
+   "en": "Ahh, I don't know what\nto do anymore...",
    "refs": [
     "MESSAGE.TXT:20000002"
    ],
@@ -2637,7 +2637,7 @@
    "id": "t00025",
    "kind": "text",
    "jp": "ちょっとは加減ってものを\nしてよねっ！",
-   "en": "You could hold back a little, you know!",
+   "en": "Show a little restraint!",
    "refs": [
     "MESSAGE.TXT:20000004"
    ],
@@ -2647,7 +2647,7 @@
    "id": "t00026",
    "kind": "text",
    "jp": "ふんっ、勝ったからって\nいい気になるなよ。",
-   "en": "Hmph, don't get cocky just because you won.",
+   "en": "Hmph, don't get cocky\njust because you won.",
    "refs": [
     "MESSAGE.TXT:20000005"
    ],
@@ -2657,7 +2657,7 @@
    "id": "t00027",
    "kind": "text",
    "jp": "きゅう・・・・・・・・・",
-   "en": "Ugh.........",
+   "en": "Kyuu...",
    "refs": [
     "MESSAGE.TXT:20000006"
    ],
@@ -2667,7 +2667,7 @@
    "id": "t00028",
    "kind": "text",
    "jp": "いぢめた{86A2}{86A2}{86A2}{86A2}{86A2}っ！！",
-   "en": "You bullied meeeee!!",
+   "en": "You bullied me{86A2}{86A2}{86A2}{86A2}{86A2}!!",
    "refs": [
     "MESSAGE.TXT:20000007"
    ],
@@ -2677,7 +2677,7 @@
    "id": "t00029",
    "kind": "text",
    "jp": "女王さまぁ、負けちゃいま\nしたぁ！！",
-   "en": "Your Majesty, I lost!!",
+   "en": "My Queen, we've lost!!",
    "refs": [
     "MESSAGE.TXT:20000008"
    ],
@@ -2687,7 +2687,7 @@
    "id": "t00030",
    "kind": "text",
    "jp": "おぼえてろぉ！　いつかタ\nコ殴りにしてやるっ！！",
-   "en": "You'll pay for this! Someday I'll beat you to a pulp!!",
+   "en": "I'll remember this! Someday\nI'll beat you to a pulp!!",
    "refs": [
     "MESSAGE.TXT:20000009"
    ],
@@ -2697,7 +2697,7 @@
    "id": "t00031",
    "kind": "text",
    "jp": "やっぱり勝つと気分がいい\nですわね。うふふ。",
-   "en": "Winning really does feel good. Ufufu.",
+   "en": "Winning really does feel good,\ndoesn't it? Hehehe.",
    "refs": [
     "MESSAGE.TXT:30000000"
    ],
@@ -2707,7 +2707,7 @@
    "id": "t00032",
    "kind": "text",
    "jp": "どう？　まいったでしょ？",
-   "en": "Well? Had enough?",
+   "en": "How about that? Convinced yet?",
    "refs": [
     "MESSAGE.TXT:30000001"
    ],
@@ -2717,7 +2717,7 @@
    "id": "t00033",
    "kind": "text",
    "jp": "まだまだロシア軍も捨てた\nもんじゃないでしょ。",
-   "en": "The Russian army isn't finished yet, see?",
+   "en": "The Russian army isn't\ndone for yet, is it?",
    "refs": [
     "MESSAGE.TXT:30000002"
    ],
@@ -2727,7 +2727,7 @@
    "id": "t00034",
    "kind": "text",
    "jp": "おほほほほ{86A2}{86A2}{86A2}{86A2}{86A2}っ！\nおとといいらっしゃい！",
-   "en": "Ohohohohooo! Come back when you've grown up!",
+   "en": "Ohohohoho{86A2}{86A2}{86A2}{86A2}{86A2}!\nCome back when you're serious!",
    "refs": [
     "MESSAGE.TXT:30000003"
    ],
@@ -2737,7 +2737,7 @@
    "id": "t00035",
    "kind": "text",
    "jp": "インド人えら{86A2}{86A2}{86A2}いっ！",
-   "en": "India is the greatest!",
+   "en": "Indians are great{86A2}{86A2}{86A2}!",
    "refs": [
     "MESSAGE.TXT:30000004"
    ],
@@ -2747,7 +2747,7 @@
    "id": "t00036",
    "kind": "text",
    "jp": "まっ、当然と言えば当然だ\nけどね……。",
-   "en": "Well, it was only natural...",
+   "en": "Well, it's only natural,\nI suppose...",
    "refs": [
     "MESSAGE.TXT:30000005"
    ],
@@ -2757,7 +2757,7 @@
    "id": "t00037",
    "kind": "text",
    "jp": "勝って飲み干すワインが\nうまいっ。",
-   "en": "Wine tastes best after a victory.",
+   "en": "Wine tastes better when\nyou drink it after a victory.",
    "refs": [
     "MESSAGE.TXT:30000006"
    ],
@@ -2767,7 +2767,7 @@
    "id": "t00038",
    "kind": "text",
    "jp": "ま、ざっとこんなもんです\nわね。",
-   "en": "Well, that's about how it goes.",
+   "en": "Well, that's about it,\nI suppose.",
    "refs": [
     "MESSAGE.TXT:30000007"
    ],
@@ -2777,7 +2777,7 @@
    "id": "t00039",
    "kind": "text",
    "jp": "イギリスに敗北なし！！\nぴぃすっ！",
-   "en": "Britain never loses!!\nPeace!",
+   "en": "No defeat for Britain!!\nPeace!",
    "refs": [
     "MESSAGE.TXT:30000008"
    ],
@@ -2787,7 +2787,7 @@
    "id": "t00040",
    "kind": "text",
    "jp": "やっぱりアメリカは世界一\nの実力者よね！",
-   "en": "America really is the strongest in the world!",
+   "en": "America really is the world's\nnumber one power!",
    "refs": [
     "MESSAGE.TXT:30000009"
    ],
@@ -2797,7 +2797,7 @@
    "id": "t00041",
    "kind": "text",
    "jp": "キャラクターデザイン",
-   "en": "Character design",
+   "en": "Character Design",
    "refs": [
     "STAFF.TXT:00000000"
    ],
@@ -2807,7 +2807,7 @@
    "id": "t00042",
    "kind": "text",
    "jp": "原画",
-   "en": "Key art",
+   "en": "Original Art",
    "refs": [
     "STAFF.TXT:00000001"
    ],
@@ -2817,7 +2817,7 @@
    "id": "t00043",
    "kind": "text",
    "jp": "　夢月　なな",
-   "en": "Nana Mutsuki",
+   "en": "Nana Yumezuki",
    "refs": [
     "STAFF.TXT:00000002"
    ],
@@ -2827,7 +2827,7 @@
    "id": "t00044",
    "kind": "text",
    "jp": "ゲームデザイン",
-   "en": "Game design",
+   "en": "Game Design",
    "refs": [
     "STAFF.TXT:00000003"
    ],
@@ -2887,7 +2887,7 @@
    "id": "t00050",
    "kind": "text",
    "jp": "プログラム",
-   "en": "Program",
+   "en": "Programming",
    "refs": [
     "STAFF.TXT:00000009"
    ],
@@ -2907,7 +2907,7 @@
    "id": "t00052",
    "kind": "text",
    "jp": "ＳＤ原画",
-   "en": "SD art",
+   "en": "SD Art",
    "refs": [
     "STAFF.TXT:0000000B"
    ],
@@ -2927,7 +2927,7 @@
    "id": "t00054",
    "kind": "text",
    "jp": "作画監督",
-   "en": "Art director",
+   "en": "Animation Director",
    "refs": [
     "STAFF.TXT:0000000D"
    ],
@@ -2947,7 +2947,7 @@
    "id": "t00056",
    "kind": "text",
    "jp": "ＣＧ作画",
-   "en": "CG art",
+   "en": "CG Art",
    "refs": [
     "STAFF.TXT:0000000F"
    ],
@@ -2967,7 +2967,7 @@
    "id": "t00058",
    "kind": "text",
    "jp": "ＣＧ作画",
-   "en": "CG art",
+   "en": "CG Art",
    "refs": [
     "STAFF.TXT:00000011"
    ],
@@ -2987,7 +2987,7 @@
    "id": "t00060",
    "kind": "text",
    "jp": "ＣＧ作画",
-   "en": "CG art",
+   "en": "CG Art",
    "refs": [
     "STAFF.TXT:00000013"
    ],
@@ -2997,7 +2997,7 @@
    "id": "t00061",
    "kind": "text",
    "jp": "　霜鳥　智",
-   "en": "Satoshi Shimotori",
+   "en": "Satoshi Shimodori",
    "refs": [
     "STAFF.TXT:00000014"
    ],
@@ -3007,7 +3007,7 @@
    "id": "t00062",
    "kind": "text",
    "jp": "ＣＧ作画",
-   "en": "CG art",
+   "en": "CG Art",
    "refs": [
     "STAFF.TXT:00000015"
    ],

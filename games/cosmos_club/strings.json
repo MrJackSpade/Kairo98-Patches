@@ -6,7 +6,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "ついこの間、",
-   "en": "",
+   "en": "Just the other day,",
    "refs": [
     "scene0:0"
    ],
@@ -16,7 +16,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "両親とも、仕事のつごうで外国へ行ってしまったので、",
-   "en": "",
+   "en": "both my parents went abroad on business,",
    "refs": [
     "scene0:1"
    ],
@@ -26,7 +26,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "日本に残ったボクは、この学校に転校して来た。",
-   "en": "",
+   "en": "so I stayed behind in Japan and transferred to this school.",
    "refs": [
     "scene0:2"
    ],
@@ -36,7 +36,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "ボクのクラスには、とびっきり可愛い娘がひとりいる。",
-   "en": "",
+   "en": "There's one incredibly cute girl in my class.",
    "refs": [
     "scene1:0"
    ],
@@ -46,7 +46,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "名前は、工藤麻奈（くどう・まな）。",
-   "en": "",
+   "en": "Her name is Kudou Mana.",
    "refs": [
     "scene1:1"
    ],
@@ -56,7 +56,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "ボクは、その娘に一目ボレをしてしまった・・・。",
-   "en": "",
+   "en": "I fell in love with her at first sight...",
    "refs": [
     "scene1:2"
    ],
@@ -66,7 +66,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "ここは、通称��コスモス・クラブ”。",
-   "en": "",
+   "en": "This place is commonly called the \"Cosmos Club.\"",
    "refs": [
     "scene2:0"
    ],
@@ -76,7 +76,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "学校のクラブ・ハウスのとなりにある学生の寮なので、",
-   "en": "",
+   "en": "It's a student dormitory next to the school's clubhouse,",
    "refs": [
     "scene2:1"
    ],
@@ -86,7 +86,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "みんなは、そう呼んでいるんだ。",
-   "en": "",
+   "en": "so that's what everyone calls it.",
    "refs": [
     "scene2:2"
    ],
@@ -96,7 +96,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "ボクは、ここで暮らすことになったんだけれど、",
-   "en": "",
+   "en": "I ended up living here,",
    "refs": [
     "scene2:3"
    ],
@@ -106,7 +106,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "なんと、あこがれの麻奈もそこに住んでいた！",
-   "en": "",
+   "en": "and wouldn't you know it, my beloved Mana lives here too!",
    "refs": [
     "scene2:4"
    ],
@@ -116,7 +116,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "「これから、楽しくやろうね！」",
-   "en": "",
+   "en": "\"Let's have fun together from now on!\"",
    "refs": [
     "scene4:0"
    ],
@@ -126,7 +126,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "ここは＜５号室＞、ボクの部屋だ。",
-   "en": "",
+   "en": "This is Room 5, my room.",
    "refs": [
     "scene5:0"
    ],
@@ -136,7 +136,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "外は明るいけれど、もう夕方なんだよ。",
-   "en": "",
+   "en": "It's bright outside, but it's already evening.",
    "refs": [
     "scene5:1"
    ],
@@ -146,7 +146,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "ボクの唯一の電化製品なんだ。",
-   "en": "",
+   "en": "It's my only electrical appliance.",
    "refs": [
     "scene5:2"
    ],
@@ -156,7 +156,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "特に、変わったモノなどないよ。",
-   "en": "",
+   "en": "There's nothing particularly unusual here.",
    "refs": [
     "scene5:3"
    ],
@@ -166,7 +166,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "いまは、本を読んでいる時間はないよ。",
-   "en": "",
+   "en": "I don't have time to read books right now.",
    "refs": [
     "scene5:4"
    ],
@@ -176,7 +176,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "まさか、窓から出るつもり・・・？",
-   "en": "",
+   "en": "Surely you don't plan to leave through the window...?",
    "refs": [
     "scene5:5"
    ],
@@ -186,7 +186,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "あの娘のことは、まだ良く知らないけれど・・・。",
-   "en": "",
+   "en": "I don't know that girl very well yet...",
    "refs": [
     "scene5:6"
    ],
@@ -196,7 +196,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "これから知るチャンスは、いくらでもある！",
-   "en": "",
+   "en": "But I'll have plenty of chances to get to know her!",
    "refs": [
     "scene5:7"
    ],
@@ -206,7 +206,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "もう、リビングで夕食を食べているんじゃないかな？",
-   "en": "",
+   "en": "She's probably already eating dinner in the living room.",
    "refs": [
     "scene5:8"
    ],
@@ -216,7 +216,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "リビングへ行って、夕食を食べないといけないな。",
-   "en": "",
+   "en": "I should go to the living room and eat dinner.",
    "refs": [
     "scene5:9"
    ],
@@ -226,7 +226,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "ここは、一階の廊下です。",
-   "en": "",
+   "en": "This is the first-floor hallway.",
    "refs": [
     "scene6:0",
     "scene11:0"
@@ -237,7 +237,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "リビング兼食堂がある。",
-   "en": "",
+   "en": "There's a living room that doubles as a dining room.",
    "refs": [
     "scene6:1"
    ],
@@ -247,7 +247,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "玄関がある。",
-   "en": "",
+   "en": "There's the entrance.",
    "refs": [
     "scene6:2",
     "scene11:1"
@@ -258,7 +258,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "＜１号室＞と＜２号室＞がある。",
-   "en": "",
+   "en": "There are Rooms 1 and 2.",
    "refs": [
     "scene6:3",
     "scene11:4",
@@ -270,7 +270,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "＜３号室＞と＜５号室＞、二階へ行く階段がある。",
-   "en": "",
+   "en": "There are Rooms 3 and 5, and the stairs to the second floor.",
    "refs": [
     "scene6:4",
     "scene11:3"
@@ -281,7 +281,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "このコスモス・クラブには、＜４号室＞がない。",
-   "en": "",
+   "en": "There's no Room 4 in this Cosmos Club.",
    "refs": [
     "scene6:5"
    ],
@@ -291,7 +291,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "学校の寮というよりも、下宿みたいだよね。",
-   "en": "",
+   "en": "It feels more like a boarding house than a school dorm, doesn't it?",
    "refs": [
     "scene6:6"
    ],
@@ -301,7 +301,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "ボクはまだ、あの娘のこと良く知らないんだ。",
-   "en": "",
+   "en": "I still don't know that girl very well.",
    "refs": [
     "scene6:7"
    ],
@@ -311,7 +311,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "誰か麻奈のこと、くわしい人はいないかな？",
-   "en": "",
+   "en": "Is there anyone who knows a lot about Mana?",
    "refs": [
     "scene6:8"
    ],
@@ -321,7 +321,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "早く夕食を食べに行かないと・・・。",
-   "en": "",
+   "en": "I need to hurry up and go eat dinner...",
    "refs": [
     "scene6:9"
    ],
@@ -331,7 +331,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "麻奈に、会いに行きたい！",
-   "en": "",
+   "en": "I want to go see Mana!",
    "refs": [
     "scene6:10"
    ],
@@ -341,7 +341,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "玄関から、外へ出てみたけれど・・・。",
-   "en": "",
+   "en": "I stepped outside through the entrance...",
    "refs": [
     "scene7:0"
    ],
@@ -351,7 +351,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "もうすぐ、暗くなるよ。",
-   "en": "",
+   "en": "It's going to get dark soon.",
    "refs": [
     "scene7:1"
    ],
@@ -361,7 +361,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "これから、どこへ行くつもり・・・か、わからない。",
-   "en": "",
+   "en": "I don't know where I'm supposed to go from here.",
    "refs": [
     "scene7:2"
    ],
@@ -371,7 +371,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "麻奈と二人っきりになるチャンスは、あるだろうか？",
-   "en": "",
+   "en": "Will I ever get a chance to be alone with Mana?",
    "refs": [
     "scene7:3"
    ],
@@ -381,7 +381,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "せっかく、ここへ来たんだから・・・。",
-   "en": "",
+   "en": "Since I came all the way here...",
    "refs": [
     "scene7:4"
    ],
@@ -391,7 +391,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "麻奈ならば、リビングにいると思うよ。",
-   "en": "",
+   "en": "If it's Mana, I think she's in the living room.",
    "refs": [
     "scene7:5"
    ],
@@ -401,7 +401,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "・・・あっ、こんなところに、むかしの五円玉が落ちていた。",
-   "en": "",
+   "en": "...Oh, there's an old five-yen coin lying here.",
    "refs": [
     "scene7:6"
    ],
@@ -411,7 +411,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "ボクは、その五円玉をひろって、ポケットに入れた。",
-   "en": "",
+   "en": "I picked up the five-yen coin and put it in my pocket.",
    "refs": [
     "scene7:7"
    ],
@@ -421,7 +421,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "いくら捜しても、もう何も落ちていないよ。",
-   "en": "",
+   "en": "No matter how much I search, there's nothing else lying around.",
    "refs": [
     "scene7:8"
    ],
@@ -431,7 +431,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "知らないかな・・・穴のあいていない五円玉だよ。",
-   "en": "",
+   "en": "I wonder if you know... it's a five-yen coin without a hole.",
    "refs": [
     "scene7:9"
    ],
@@ -441,7 +441,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "ここが、リビング兼食堂です。",
-   "en": "",
+   "en": "This is the living room and dining room.",
    "refs": [
     "scene8:0"
    ],
@@ -451,7 +451,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "・・・友彦さん、まだ食べている。",
-   "en": "",
+   "en": "...Tomohiko-san is still eating.",
    "refs": [
     "scene8:1"
    ],
@@ -461,7 +461,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "コスモス・クラブの住人が、みんなここに集まっているよ。",
-   "en": "",
+   "en": "All the Cosmos Club residents are gathered here.",
    "refs": [
     "scene8:2"
    ],
@@ -471,7 +471,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "みんな、自分の席で夕食を食べているよ。",
-   "en": "",
+   "en": "Everyone's eating dinner at their own seats.",
    "refs": [
     "scene8:3"
    ],
@@ -481,7 +481,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "あの、あいている席が、ボクの席なんだ。",
-   "en": "",
+   "en": "That empty seat over there is mine.",
    "refs": [
     "scene8:4"
    ],
@@ -491,7 +491,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "いつも、ボクの好物ばかりなのは、気のせいだろうか？",
-   "en": "",
+   "en": "Is it just my imagination that it's always my favorite foods?",
    "refs": [
     "scene8:5"
    ],
@@ -501,7 +501,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "「あんまりおそいんで、おかずはオレがいただいたぜ」",
-   "en": "",
+   "en": "\"You were so late, I helped myself to your side dishes.\"",
    "refs": [
     "scene8:6"
    ],
@@ -511,7 +511,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "・・・・・・ひどい！",
-   "en": "",
+   "en": "......That's terrible!",
    "refs": [
     "scene8:7"
    ],
@@ -521,7 +521,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "「・・・なんだよ。　やだねぇ、男のしつこいのは・・・」",
-   "en": "",
+   "en": "\"...What's with that look? Man, I hate persistent guys...\"",
    "refs": [
     "scene8:8"
    ],
@@ -531,7 +531,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "「友彦さんったら、もっと落ちついて食べればいいのにねぇ」",
-   "en": "",
+   "en": "\"Tomohiko-san, you should eat more calmly, you know.\"",
    "refs": [
     "scene8:9"
    ],
@@ -541,7 +541,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "「お気のどくねぇ・・・」",
-   "en": "",
+   "en": "\"That's too bad...\"",
    "refs": [
     "scene8:10"
    ],
@@ -551,7 +551,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "「あたしは、もうゴチソウ様だ」",
-   "en": "",
+   "en": "\"I'm already done.\"",
    "refs": [
     "scene8:11"
    ],
@@ -561,7 +561,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "「あたしの残ったおかず、食べていいよ」",
-   "en": "",
+   "en": "\"You can eat my leftover side dishes.\"",
    "refs": [
     "scene8:12"
    ],
@@ -571,7 +571,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "まず、いま見えている左側から、",
-   "en": "",
+   "en": "First, starting from the left side I can see now,",
    "refs": [
     "scene8:13"
    ],
@@ -581,7 +581,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "＜６号室＞で、ひとつ先輩の島本瑠美さん。",
-   "en": "",
+   "en": "from Room 6, one year my senior, Shimamoto Rumi-san.",
    "refs": [
     "scene8:14"
    ],
@@ -591,7 +591,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "＜８号室＞で、同じく先輩の三谷翠さん。",
-   "en": "",
+   "en": "from Room 8, also a senior, Mitani Midori-san.",
    "refs": [
     "scene8:15"
    ],
@@ -601,7 +601,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "学校で、いちども会った事のない、＜３号室＞の埋田友彦さん。",
-   "en": "",
+   "en": "and from Room 3, Umeda Tomohiko-san, whom I've never met at school.",
    "refs": [
     "scene8:16"
    ],
@@ -611,7 +611,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "みんながいる前では、麻奈に話しかけにくいなぁ。",
-   "en": "",
+   "en": "It's hard to talk to Mana with everyone around.",
    "refs": [
     "scene8:17"
    ],
@@ -621,7 +621,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "とにかく・・・夕食を食べなければ、朝までもたないよ。",
-   "en": "",
+   "en": "Anyway... if I don't eat dinner, I won't make it until morning.",
    "refs": [
     "scene8:18"
    ],
@@ -631,7 +631,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "「ゴハンはいっぱいあるから、オカワリしてね」",
-   "en": "",
+   "en": "\"There's plenty of rice, so have seconds.\"",
    "refs": [
     "scene8:19"
    ],
@@ -641,7 +641,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "残っているのだけでも、あじわってたべよう・・・。",
-   "en": "",
+   "en": "Let me savor what's left...",
    "refs": [
     "scene8:20"
    ],
@@ -651,7 +651,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "水を飲んだって、オナカいっぱいにならないよ！",
-   "en": "",
+   "en": "Drinking water won't fill me up!",
    "refs": [
     "scene8:21"
    ],
@@ -661,7 +661,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "あれっ、ボクの分のおかずが見あたらないなぁ。",
-   "en": "",
+   "en": "Huh, I can't find my portion of side dishes.",
    "refs": [
     "scene8:22"
    ],
@@ -671,7 +671,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "いまは・・・友彦さんの胃袋の中だ。",
-   "en": "",
+   "en": "Right now... they're in Tomohiko-san's stomach.",
    "refs": [
     "scene8:23"
    ],
@@ -681,7 +681,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "もう、麻奈を捜す必要はないのに・・・。",
-   "en": "",
+   "en": "I don't need to search for Mana anymore...",
    "refs": [
     "scene8:24"
    ],
@@ -691,7 +691,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "麻奈がいた・・・・・・！",
-   "en": "",
+   "en": "Mana's here......!",
    "refs": [
     "scene9:0"
    ],
@@ -701,7 +701,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "・・・いつ見ても、麻奈は可愛い。",
-   "en": "",
+   "en": "...No matter when I see her, Mana is cute.",
    "refs": [
     "scene9:1"
    ],
@@ -711,7 +711,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "左から、＜１号室＞で管理人をしている、音楽の田島圭子先生。",
-   "en": "",
+   "en": "From the left, the music teacher and dorm manager from Room 1, Tajima Keiko-sensei.",
    "refs": [
     "scene9:2"
    ],
@@ -721,7 +721,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "ボクが一目ボレをした、＜６号室＞の工藤麻奈！",
-   "en": "",
+   "en": "The girl I fell for at first sight, Kudou Mana from Room 6!",
    "refs": [
     "scene9:3"
    ],
@@ -731,7 +731,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "＜２号室＞で、ボクよりひとつ後輩の高島由紀ちゃん。",
-   "en": "",
+   "en": "From Room 2, one year my junior, Takashima Yuki-chan.",
    "refs": [
     "scene9:4"
    ],
@@ -741,7 +741,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "＜９号室＞で、島本さんたちと同じく先輩の岡田美紗さん。",
-   "en": "",
+   "en": "From Room 9, also a senior like Shimamoto-san, Okada Misa-san.",
    "refs": [
     "scene9:5"
    ],
@@ -751,7 +751,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "このリビングにいる全員が、コスモス・クラブの住人なんだ。",
-   "en": "",
+   "en": "Everyone in this living room is a resident of the Cosmos Club.",
    "refs": [
     "scene9:6"
    ],
@@ -761,7 +761,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "今日の夕食を作る係は、田島先生だったんだ。",
-   "en": "",
+   "en": "Tajima-sensei was in charge of making today's dinner.",
    "refs": [
     "scene9:7"
    ],
@@ -771,7 +771,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "「さあ、キミも早くおあがりなさい」",
-   "en": "",
+   "en": "\"Come now, you should eat quickly too.\"",
    "refs": [
     "scene9:8"
    ],
@@ -781,7 +781,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "「ごめんなさい・・・おかずのおかわりはないのよ」",
-   "en": "",
+   "en": "\"I'm sorry... there are no seconds for the side dishes.\"",
    "refs": [
     "scene9:9"
    ],
@@ -791,7 +791,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "「遅かったのね、先輩・・・」",
-   "en": "",
+   "en": "\"You were late, senpai...\"",
    "refs": [
     "scene9:10"
    ],
@@ -801,7 +801,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "「エヘヘ・・・由紀も、先輩のおかずを食べちゃった」",
-   "en": "",
+   "en": "\"Ehehe... Yuki ate your side dishes too, senpai.\"",
    "refs": [
     "scene9:11"
    ],
@@ -811,7 +811,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "「おさきに、いただいているわ」",
-   "en": "",
+   "en": "\"I already helped myself.\"",
    "refs": [
     "scene9:12"
    ],
@@ -821,7 +821,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "「明日は、わたしが夕食係だから、おいしいものをつくってあげるわ」",
-   "en": "",
+   "en": "\"Tomorrow I'm in charge of dinner, so I'll make you something delicious.\"",
    "refs": [
     "scene9:13"
    ],
@@ -831,7 +831,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "「ヤッホ−！」",
-   "en": "",
+   "en": "\"Yahoo!\"",
    "refs": [
     "scene9:14"
    ],
@@ -841,7 +841,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "「うえた動物の前にエサを置いておけば、食べられてあたり前よ」",
-   "en": "",
+   "en": "\"If you leave food in front of a hungry animal, it's only natural it gets eaten.\"",
    "refs": [
     "scene9:15"
    ],
@@ -851,7 +851,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "麻奈でも、ごはんを食べるんだな・・・。",
-   "en": "",
+   "en": "So even Mana eats rice...",
    "refs": [
     "scene9:16"
    ],
@@ -861,7 +861,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "夕食を食べたら、とりあえず自分の部屋へ戻ろうよ。",
-   "en": "",
+   "en": "After dinner, let's head back to my room for now.",
    "refs": [
     "scene9:17"
    ],
@@ -871,7 +871,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "「ごはんをたきすぎちゃったの・・・いっぱい食べてね」",
-   "en": "",
+   "en": "\"I cooked too much rice... eat plenty.\"",
    "refs": [
     "scene9:18"
    ],
@@ -881,7 +881,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "おかずも食べたいよう・・・。",
-   "en": "",
+   "en": "I want side dishes too...",
    "refs": [
     "scene9:19"
    ],
@@ -891,7 +891,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "あれっ・・・ボクのおかずは、どこにあるの？",
-   "en": "",
+   "en": "Huh... where are my side dishes?",
    "refs": [
     "scene9:20"
    ],
@@ -901,7 +901,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "「わるいな・・・オレが、くっちゃったぜ！」",
-   "en": "",
+   "en": "\"Sorry... I ate them all!\"",
    "refs": [
     "scene9:21"
    ],
@@ -911,7 +911,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "ないモノは、ムリだよ・・・。",
-   "en": "",
+   "en": "Can't help it if there's nothing there...",
    "refs": [
     "scene9:22"
    ],
@@ -921,7 +921,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "ふぅ・・・おいしい水だね。",
-   "en": "",
+   "en": "Phew... that's good water.",
    "refs": [
     "scene9:23"
    ],
@@ -931,7 +931,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "ここは＜５号室＞、ボクの部屋へ戻って来ました。",
-   "en": "",
+   "en": "This is Room 5, I've returned to my room.",
    "refs": [
     "scene10:0"
    ],
@@ -941,7 +941,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "ふるいノート、シャープペン、ホチキス・・・。",
-   "en": "",
+   "en": "An old notebook, a mechanical pencil, a stapler...",
    "refs": [
     "scene10:1"
    ],
@@ -951,7 +951,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "特に、いま必要なモノはないよ。",
-   "en": "",
+   "en": "Nothing I really need right now.",
    "refs": [
     "scene10:2"
    ],
@@ -961,7 +961,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "・・・十円玉が二枚、一円玉が七枚あった。",
-   "en": "",
+   "en": "...There were two ten-yen coins and seven one-yen coins.",
    "refs": [
     "scene10:3"
    ],
@@ -971,7 +971,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "でも、いまは必要じゃないよ。",
-   "en": "",
+   "en": "But I don't need them right now.",
    "refs": [
     "scene10:4"
    ],
@@ -981,7 +981,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "もう、みんなは自分の部屋へ戻っているころだよ。",
-   "en": "",
+   "en": "Everyone's probably already back in their rooms by now.",
    "refs": [
     "scene10:5"
    ],
@@ -991,7 +991,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "このままだと、今夜は徹夜になりそうだね。",
-   "en": "",
+   "en": "At this rate, I'll be up all night.",
    "refs": [
     "scene10:6"
    ],
@@ -1001,7 +1001,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "ボクはいま、特に何も持っていないよ。",
-   "en": "",
+   "en": "I don't have anything in particular right now.",
    "refs": [
     "scene10:7"
    ],
@@ -1011,7 +1011,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "ボクは、ムフフ本をかくし持っているよ。",
-   "en": "",
+   "en": "I have a naughty book hidden away.",
    "refs": [
     "scene10:8"
    ],
@@ -1021,7 +1021,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "ボクのポケットに、むかしの五円玉が入っている。",
-   "en": "",
+   "en": "There's an old five-yen coin in my pocket.",
    "refs": [
     "scene10:9"
    ],
@@ -1031,7 +1031,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "ボクは、むかしの五円玉とムフフ本を持っている。",
-   "en": "",
+   "en": "I have an old five-yen coin and a naughty book.",
    "refs": [
     "scene10:10"
    ],
@@ -1041,7 +1041,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "ボクは、まだ麻奈が＜６号室＞にいることしか知らない。",
-   "en": "",
+   "en": "All I know is that Mana is in Room 6.",
    "refs": [
     "scene10:11"
    ],
@@ -1051,7 +1051,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "あぁ、もっと麻奈のことを知りたい。！！",
-   "en": "",
+   "en": "Ah, I want to know more about Mana!!",
    "refs": [
     "scene10:12"
    ],
@@ -1061,7 +1061,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "麻奈に、ボクの気持ちを打ち明けたいな。",
-   "en": "",
+   "en": "I want to confess my feelings to Mana.",
    "refs": [
     "scene10:13"
    ],
@@ -1071,7 +1071,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "どんな事をしてでも、麻奈に会いに行こうよ！",
-   "en": "",
+   "en": "No matter what it takes, let's go see Mana!",
    "refs": [
     "scene10:14"
    ],
@@ -1081,7 +1081,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "本当に、いいの・・・？",
-   "en": "",
+   "en": "Are you really sure...?",
    "refs": [
     "scene10:15"
    ],
@@ -1091,7 +1091,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "じゃあ、おやすみなさぁい！",
-   "en": "",
+   "en": "Well then, good night!",
    "refs": [
     "scene10:16"
    ],
@@ -1101,7 +1101,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "リビングがある。",
-   "en": "",
+   "en": "There's the living room.",
    "refs": [
     "scene11:2",
     "scene17:3"
@@ -1112,7 +1112,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "ボクのほかには、誰もいない。",
-   "en": "",
+   "en": "There's no one here but me.",
    "refs": [
     "scene11:5"
    ],
@@ -1122,7 +1122,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "麻奈は、何を着て眠るのだろう？",
-   "en": "",
+   "en": "What does Mana wear to sleep?",
    "refs": [
     "scene11:6"
    ],
@@ -1132,7 +1132,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "麻奈の「ひみつ」って、何なのだろうか？",
-   "en": "",
+   "en": "What is Mana's \"secret\"?",
    "refs": [
     "scene11:7"
    ],
@@ -1142,7 +1142,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "とにかく、麻奈に会うためにガンバロ−！",
-   "en": "",
+   "en": "Anyway, let's do our best to meet Mana!",
    "refs": [
     "scene11:8"
    ],
@@ -1152,7 +1152,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "このムフフ本をあげたら、友彦さんは何をおしえてくれるのかな？",
-   "en": "",
+   "en": "If I give Tomohiko-san this naughty book, what will he tell me?",
    "refs": [
     "scene11:9"
    ],
@@ -1162,7 +1162,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "リビングにやって来た。",
-   "en": "",
+   "en": "I came to the living room.",
    "refs": [
     "scene12:0"
    ],
@@ -1172,7 +1172,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "浴室の脱衣場へつづくドアがある。",
-   "en": "",
+   "en": "There's a door leading to the bathroom's changing room.",
    "refs": [
     "scene12:1"
    ],
@@ -1182,7 +1182,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "トイレがある。",
-   "en": "",
+   "en": "There's the toilet.",
    "refs": [
     "scene12:2"
    ],
@@ -1192,7 +1192,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "廊下がある。",
-   "en": "",
+   "en": "There's the hallway.",
    "refs": [
     "scene12:3"
    ],
@@ -1202,7 +1202,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "窓から外を見てみると、夜空には星がいっぱい見えている。",
-   "en": "",
+   "en": "Looking out the window, I can see lots of stars in the night sky.",
    "refs": [
     "scene12:4"
    ],
@@ -1212,7 +1212,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "耳をすますと、なんだかザ−ザ−聞こえるけれど・・・。",
-   "en": "",
+   "en": "When I listen closely, I can hear a rushing sound...",
    "refs": [
     "scene12:5"
    ],
@@ -1222,7 +1222,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "もういまは、物音ひとつしないよ。",
-   "en": "",
+   "en": "There's not a sound now.",
    "refs": [
     "scene12:6"
    ],
@@ -1232,7 +1232,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "まだ、したくないなぁ・・・。",
-   "en": "",
+   "en": "I don't want to do that yet...",
    "refs": [
     "scene12:7"
    ],
@@ -1242,7 +1242,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "中から物音がするけれど、ノックが聞こえないみたいだ。",
-   "en": "",
+   "en": "There's a sound coming from inside, but it seems they can't hear my knocking.",
    "refs": [
     "scene12:8"
    ],
@@ -1252,7 +1252,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "ノックをしても、中には誰もいないよ。",
-   "en": "",
+   "en": "Even when I knock, there's no one inside.",
    "refs": [
     "scene12:9"
    ],
@@ -1262,7 +1262,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "いがいと、カンタンには麻奈に会えないモノだね。",
-   "en": "",
+   "en": "It's surprisingly hard to meet Mana.",
    "refs": [
     "scene12:10"
    ],
@@ -1272,7 +1272,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "浴室にいるのは、麻奈かな・・・？",
-   "en": "",
+   "en": "Could the person in the bathroom be Mana...?",
    "refs": [
     "scene12:11"
    ],
@@ -1282,7 +1282,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "友彦さんは、このコスモス・クラブ　いちばん古いから",
-   "en": "",
+   "en": "Tomohiko-san has been in this Cosmos Club the longest,",
    "refs": [
     "scene12:12"
    ],
@@ -1292,7 +1292,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "どうしたらいいか、知っているかもね。",
-   "en": "",
+   "en": "so he might know what to do.",
    "refs": [
     "scene12:13"
    ],
@@ -1302,7 +1302,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "ボクは、脱衣場に入って来た。",
-   "en": "",
+   "en": "I stepped into the changing room.",
    "refs": [
     "scene13:0"
    ],
@@ -1312,7 +1312,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "近くのカゴに、女モノの下着がおいてあるぞ！",
-   "en": "",
+   "en": "There's women's underwear in a basket nearby!",
    "refs": [
     "scene13:1"
    ],
@@ -1322,7 +1322,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "中から、シャワ−を使っている音が聞こえてくる。",
-   "en": "",
+   "en": "I can hear the sound of someone using the shower inside.",
    "refs": [
     "scene13:2"
    ],
@@ -1332,7 +1332,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "欲しいけれど・・・やめておこう。",
-   "en": "",
+   "en": "I want to, but... I'll hold back.",
    "refs": [
     "scene13:3"
    ],
@@ -1342,7 +1342,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "まさか、こんな所で・・・？",
-   "en": "",
+   "en": "Surely not, in a place like this...?",
    "refs": [
     "scene13:4"
    ],
@@ -1352,7 +1352,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "浴室にいるのが、麻奈ならいいけれど・・・。",
-   "en": "",
+   "en": "It'd be great if the person in the bathroom is Mana...",
    "refs": [
     "scene13:5"
    ],
@@ -1362,7 +1362,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "浴室にいる人は、何か麻奈の「ひみつ」を知っているかな？",
-   "en": "",
+   "en": "Does the person in the bathroom know something about Mana's \"secret\"?",
    "refs": [
     "scene13:6"
    ],
@@ -1372,7 +1372,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "浴室をのぞいてみようか？",
-   "en": "",
+   "en": "Should I peek into the bathroom?",
    "refs": [
     "scene13:7"
    ],
@@ -1382,7 +1382,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "持っているムフフ本を、かくした方がいいかな？",
-   "en": "",
+   "en": "Should I hide the naughty book I'm carrying?",
    "refs": [
     "scene13:8"
    ],
@@ -1392,7 +1392,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "・・・あっ、田島先生だ。",
-   "en": "",
+   "en": "...Oh, it's Tajima-sensei.",
    "refs": [
     "scene14:0"
    ],
@@ -1402,7 +1402,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "「誰・・・・・・！？」",
-   "en": "",
+   "en": "\"Who's there......!?\"",
    "refs": [
     "scene14:1"
    ],
@@ -1412,7 +1412,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "「キミ、こんな所で何をしているの！？」",
-   "en": "",
+   "en": "\"What are you doing in a place like this!?\"",
    "refs": [
     "scene15:0"
    ],
@@ -1422,7 +1422,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "「・・・また、キミか」",
-   "en": "",
+   "en": "\"...You again.\"",
    "refs": [
     "scene15:1"
    ],
@@ -1432,7 +1432,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "浴室にいるのは、とうぜん圭子先生とボクだけだ。",
-   "en": "",
+   "en": "Of course, the only ones in the bathroom are Keiko-sensei and me.",
    "refs": [
     "scene15:2"
    ],
@@ -1442,7 +1442,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "すごいユゲで、良く見えないよ。",
-   "en": "",
+   "en": "There's so much steam I can't see well.",
    "refs": [
     "scene15:3"
    ],
@@ -1452,7 +1452,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "「早くドアをしめて、行きなさい」",
-   "en": "",
+   "en": "\"Close the door quickly and leave.\"",
    "refs": [
     "scene15:4"
    ],
@@ -1462,7 +1462,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "「キミは、いったいどうゆうつもりなの！？」",
-   "en": "",
+   "en": "\"What on earth are you planning!?\"",
    "refs": [
     "scene15:5"
    ],
@@ -1472,7 +1472,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "「二階の自分の部屋にいるんじゃないかしら・・・？」",
-   "en": "",
+   "en": "\"Isn't she in her room on the second floor...?\"",
    "refs": [
     "scene15:6"
    ],
@@ -1482,7 +1482,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "「キミ、工藤さんが好きなんだ・・・」",
-   "en": "",
+   "en": "\"You like Kudou-san, don't you...\"",
    "refs": [
     "scene15:7"
    ],
@@ -1492,7 +1492,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "麻奈の部屋のカギだって、圭子先生が持っているハズだ。",
-   "en": "",
+   "en": "Keiko-sensei should have the key to Mana's room.",
    "refs": [
     "scene15:8"
    ],
@@ -1502,7 +1502,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "いつまでも、ここにいてもしかたないよ！",
-   "en": "",
+   "en": "Staying here forever won't do any good!",
    "refs": [
     "scene15:9"
    ],
@@ -1512,7 +1512,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "ここは、もう男らしく・・・！",
-   "en": "",
+   "en": "This is where I need to be manly...!",
    "refs": [
     "scene15:10"
    ],
@@ -1522,7 +1522,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "「キミに、先生をマンゾクさせられる・・・？」",
-   "en": "",
+   "en": "\"Can you satisfy me...?\"",
    "refs": [
     "scene16:0"
    ],
@@ -1532,7 +1532,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "圭子先生は、とうぜん初めてじゃなかった。",
-   "en": "",
+   "en": "Of course, Keiko-sensei wasn't a virgin.",
    "refs": [
     "scene16:1"
    ],
@@ -1542,7 +1542,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "「あわてないで、じっくりしてね・・・」",
-   "en": "",
+   "en": "\"Don't rush, take your time...\"",
    "refs": [
     "scene16:2"
    ],
@@ -1552,7 +1552,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "「何回ものぞいたんだから、先生がイクまではなさないわよ」",
-   "en": "",
+   "en": "\"You peeked so many times, I won't let you go until I come.\"",
    "refs": [
     "scene16:3"
    ],
@@ -1562,7 +1562,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "「工藤さんに会うには、２つのカギがひつようなの」",
-   "en": "",
+   "en": "\"To meet Kudou-san, you need two keys.\"",
    "refs": [
     "scene16:4"
    ],
@@ -1572,7 +1572,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "「まだ、はなさないわよ！」",
-   "en": "",
+   "en": "\"I'm not letting you go yet!\"",
    "refs": [
     "scene16:5"
    ],
@@ -1582,7 +1582,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "「キスは、しないで・・・！！」",
-   "en": "",
+   "en": "\"Don't kiss me...!!\"",
    "refs": [
     "scene16:6"
    ],
@@ -1592,7 +1592,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "「はふぅ・・・うぅん」",
-   "en": "",
+   "en": "\"Hafuu... uun.\"",
    "refs": [
     "scene16:7"
    ],
@@ -1602,7 +1602,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "「もっと、下よ・・・・・・」",
-   "en": "",
+   "en": "\"Lower... more...\"",
    "refs": [
     "scene16:8"
    ],
@@ -1612,7 +1612,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "「あぁっ・・・あぁぁぁ」",
-   "en": "",
+   "en": "\"Ahh... aaaah.\"",
    "refs": [
     "scene16:9"
    ],
@@ -1622,7 +1622,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "「はぁぁぁぁぁ・・・・・・」",
-   "en": "",
+   "en": "\"Haaaaaa......\"",
    "refs": [
     "scene16:10"
    ],
@@ -1632,7 +1632,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "「・・・・・・じらさないで」",
-   "en": "",
+   "en": "\"......Don't tease me.\"",
    "refs": [
     "scene16:11"
    ],
@@ -1642,7 +1642,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "・・・・・・あつく、ぬれている。",
-   "en": "",
+   "en": "......It's hot and wet.",
    "refs": [
     "scene16:12"
    ],
@@ -1652,7 +1652,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "ここは、二階へ行くための階段です。",
-   "en": "",
+   "en": "These are the stairs to the second floor.",
    "refs": [
     "scene17:0"
    ],
@@ -1662,7 +1662,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "階段を上がるとすぐに、おどり場があるよ。",
-   "en": "",
+   "en": "Right at the top of the stairs there's a landing.",
    "refs": [
     "scene17:1"
    ],
@@ -1672,7 +1672,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "＜３号室＞、＜５号室＞と玄関がある。",
-   "en": "",
+   "en": "There are Rooms 3 and 5, and the entrance.",
    "refs": [
     "scene17:4"
    ],
@@ -1682,7 +1682,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "あわてる事はないと思うケド、麻奈に早く会いたい！",
-   "en": "",
+   "en": "I don't think I need to rush, but I want to meet Mana soon!",
    "refs": [
     "scene17:5"
    ],
@@ -1692,7 +1692,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "あのサラサラのカミを、思いきり愛撫したいな。",
-   "en": "",
+   "en": "I want to caress that silky hair to my heart's content.",
    "refs": [
     "scene17:6"
    ],
@@ -1702,7 +1702,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "今夜、麻奈を抱けるだろうか？",
-   "en": "",
+   "en": "Will I be able to hold Mana tonight?",
    "refs": [
     "scene17:7"
    ],
@@ -1712,7 +1712,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "カギは、ひとつあればいいのかな・・・？",
-   "en": "",
+   "en": "Is one key enough...?",
    "refs": [
     "scene17:8"
    ],
@@ -1722,7 +1722,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "階段のおどり場に上がって来た。",
-   "en": "",
+   "en": "I came up to the stair landing.",
    "refs": [
     "scene18:0"
    ],
@@ -1732,7 +1732,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "カギのかかったドアがあるので、",
-   "en": "",
+   "en": "There's a locked door,",
    "refs": [
     "scene18:1"
    ],
@@ -1742,7 +1742,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "このままでは、二階へは行けないよ。",
-   "en": "",
+   "en": "so I can't get to the second floor like this.",
    "refs": [
     "scene18:2"
    ],
@@ -1752,7 +1752,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "そっちは、カベになっているよ。",
-   "en": "",
+   "en": "That way is a wall.",
    "refs": [
     "scene18:3"
    ],
@@ -1762,7 +1762,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "階段を降りれば、廊下だ。",
-   "en": "",
+   "en": "Going down the stairs leads to the hallway.",
    "refs": [
     "scene18:4"
    ],
@@ -1772,7 +1772,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "カベだよ。",
-   "en": "",
+   "en": "It's a wall.",
    "refs": [
     "scene18:5"
    ],
@@ -1782,7 +1782,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "このドアのむこうの二階に、麻奈はいるハズなんだ。",
-   "en": "",
+   "en": "Mana should be on the second floor beyond this door.",
    "refs": [
     "scene18:6"
    ],
@@ -1792,7 +1792,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "このドアを開けるには、どうしたらいいのだろう？",
-   "en": "",
+   "en": "What do I need to do to open this door?",
    "refs": [
     "scene18:7"
    ],
@@ -1802,7 +1802,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "友彦さんがくれたカギで、ここが開くのかな？",
-   "en": "",
+   "en": "Will the key Tomohiko-san gave me open this?",
    "refs": [
     "scene18:8"
    ],
@@ -1812,7 +1812,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "あわてない方が良いよ・・・１度使うと、こわれてしまうから。",
-   "en": "",
+   "en": "Better not to rush... because once you use it, it breaks.",
    "refs": [
     "scene18:9"
    ],
@@ -1822,7 +1822,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "麻奈は、リビングにいると思うよ。",
-   "en": "",
+   "en": "I think Mana is in the living room.",
    "refs": [
     "scene18:10"
    ],
@@ -1832,7 +1832,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "ここは、＜２号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 2's door.",
    "refs": [
     "scene19:0",
     "scene40:0"
@@ -1843,7 +1843,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "＜２号室＞には、高校１年生の高島由紀が住んでいる。",
-   "en": "",
+   "en": "High school first-year Takashima Yuki lives in Room 2.",
    "refs": [
     "scene19:1"
    ],
@@ -1853,7 +1853,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "ノブをまわすと、ドアがひらいたぞ。",
-   "en": "",
+   "en": "When I turned the knob, the door opened.",
    "refs": [
     "scene19:2"
    ],
@@ -1863,7 +1863,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "いまは、もうカギがかかっているよ。",
-   "en": "",
+   "en": "It's locked now.",
    "refs": [
     "scene19:3"
    ],
@@ -1873,7 +1873,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "麻奈は、ここの住人とのつき合いが、あまりないみたいだな。",
-   "en": "",
+   "en": "Mana doesn't seem to interact much with the other residents.",
    "refs": [
     "scene19:4"
    ],
@@ -1883,7 +1883,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "もう、夕食の時間だけれど・・・・・・。",
-   "en": "",
+   "en": "It's already dinner time, but......",
    "refs": [
     "scene19:5"
    ],
@@ -1893,7 +1893,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "由紀は、部屋にいるハズだよ。",
-   "en": "",
+   "en": "Yuki should be in her room.",
    "refs": [
     "scene19:6"
    ],
@@ -1903,7 +1903,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "秘密の部屋の入口は、ないみたいだね。",
-   "en": "",
+   "en": "There doesn't seem to be an entrance to a secret room.",
    "refs": [
     "scene19:7"
    ],
@@ -1913,7 +1913,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "由紀は、リビングにいるんじゃないかなぁ・・・。",
-   "en": "",
+   "en": "Isn't Yuki in the living room...?",
    "refs": [
     "scene19:8"
    ],
@@ -1923,7 +1923,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "ノックしてみたケド、返事がないよ。",
-   "en": "",
+   "en": "I knocked, but there was no answer.",
    "refs": [
     "scene19:9"
    ],
@@ -1933,7 +1933,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "由紀が、電気をつけっぱなしで眠っていた。",
-   "en": "",
+   "en": "Yuki was sleeping with the lights left on.",
    "refs": [
     "scene20:0"
    ],
@@ -1943,7 +1943,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "女の子らしい、カワイイ部屋だね。",
-   "en": "",
+   "en": "It's a cute room, just like a girl's.",
    "refs": [
     "scene20:1"
    ],
@@ -1953,7 +1953,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "ボクが入って来ても、ゼンゼン起きそうにないよ。",
-   "en": "",
+   "en": "Even with me coming in, she doesn't look like she'll wake up at all.",
    "refs": [
     "scene20:2"
    ],
@@ -1963,7 +1963,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "ウヒヒヒ・・・・・・。",
-   "en": "",
+   "en": "Uhehehe......",
    "refs": [
     "scene20:3"
    ],
@@ -1973,7 +1973,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "麻奈は、由紀を妹の様に可愛いがっている。",
-   "en": "",
+   "en": "Mana dotes on Yuki like a little sister.",
    "refs": [
     "scene20:4"
    ],
@@ -1983,7 +1983,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "何とかは、男のハジだとか・・・。",
-   "en": "",
+   "en": "They say that's a man's shame...",
    "refs": [
     "scene20:5"
    ],
@@ -1993,7 +1993,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "あの昔の五円玉は、あとでやくに立つのかなぁ・・・？",
-   "en": "",
+   "en": "Will that old five-yen coin come in handy later...?",
    "refs": [
     "scene20:6"
    ],
@@ -2003,7 +2003,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "眠っている女の子を起こすのは、やっぱりキスだね。",
-   "en": "",
+   "en": "The way to wake a sleeping girl is, of course, a kiss.",
    "refs": [
     "scene21:0"
    ],
@@ -2013,7 +2013,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "・・・でも、キスだけじゃものたりないね！",
-   "en": "",
+   "en": "...But a kiss alone isn't enough!",
    "refs": [
     "scene21:1"
    ],
@@ -2023,7 +2023,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "「・・・・・・お兄ちゃん！？」",
-   "en": "",
+   "en": "\"......Onii-chan!?\"",
    "refs": [
     "scene22:0"
    ],
@@ -2033,7 +2033,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "明るい顔をしているケド、由紀はふるえているよ。",
-   "en": "",
+   "en": "She's putting on a cheerful face, but Yuki is trembling.",
    "refs": [
     "scene22:1"
    ],
@@ -2043,7 +2043,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "「あたし、まだヴァ−ジンよ・・・・・・」",
-   "en": "",
+   "en": "\"I'm still a virgin......\"",
    "refs": [
     "scene22:2"
    ],
@@ -2053,7 +2053,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "「・・・でも、お兄ちゃんならいいわ」",
-   "en": "",
+   "en": "\"...But if it's Onii-chan, it's okay.\"",
    "refs": [
     "scene22:3"
    ],
@@ -2063,7 +2063,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "「麻奈さんのお部屋に入った人は、ダレもいないのよ」",
-   "en": "",
+   "en": "\"No one has ever entered Mana-san's room.\"",
    "refs": [
     "scene22:4"
    ],
@@ -2073,7 +2073,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "「友彦オジサンの所へ行ってみた・・・？」",
-   "en": "",
+   "en": "\"Have you tried going to Tomohiko-Ojisan's place...?\"",
    "refs": [
     "scene22:5"
    ],
@@ -2083,7 +2083,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "「もぅ、おしまい・・・？」",
-   "en": "",
+   "en": "\"Already... done...?\"",
    "refs": [
     "scene22:6"
    ],
@@ -2093,7 +2093,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "「・・・あたし、ちっとも良くなかったよ」",
-   "en": "",
+   "en": "\"...I wasn't any good at all.\"",
    "refs": [
     "scene22:7"
    ],
@@ -2103,7 +2103,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "「エヘッ・・・あたし、キスも初めてだったの」",
-   "en": "",
+   "en": "\"Eheh... that was my first kiss too.\"",
    "refs": [
     "scene22:8"
    ],
@@ -2113,7 +2113,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "「あんっ、あんっ、あんっ、・・・あぁぁぁぁぁ！」",
-   "en": "",
+   "en": "\"Anh, anh, anh... aaaaaah!\"",
    "refs": [
     "scene22:9"
    ],
@@ -2123,7 +2123,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "「ヤン・・・・・・！」",
-   "en": "",
+   "en": "\"Yan......!\"",
    "refs": [
     "scene22:10"
    ],
@@ -2133,7 +2133,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "「あぁ・・・キモチいいよ」",
-   "en": "",
+   "en": "\"Ah... it feels good.\"",
    "refs": [
     "scene22:11"
    ],
@@ -2143,7 +2143,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "「そこ・・・バッチイよ、お兄ちゃん」",
-   "en": "",
+   "en": "\"There... that's dirty, Onii-chan.\"",
    "refs": [
     "scene22:12"
    ],
@@ -2153,7 +2153,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "「あっ・・・あんまり、痛くしないで！」",
-   "en": "",
+   "en": "\"Ah... don't hurt me too much!\"",
    "refs": [
     "scene22:13"
    ],
@@ -2163,7 +2163,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "「お兄ちゃんどうしたの・・・つかれているみたいね」",
-   "en": "",
+   "en": "\"What's wrong, Onii-chan... you seem tired.\"",
    "refs": [
     "scene22:14"
    ],
@@ -2173,7 +2173,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "ここは、＜３号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 3's door.",
    "refs": [
     "scene23:0"
    ],
@@ -2183,7 +2183,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "＜３号室＞には、埋田友彦さんが住んでいる。",
-   "en": "",
+   "en": "Umeda Tomohiko-san lives in Room 3.",
    "refs": [
     "scene23:1"
    ],
@@ -2193,7 +2193,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "カギがかかっていて、中には入れないよ。",
-   "en": "",
+   "en": "It's locked, so I can't get in.",
    "refs": [
     "scene23:2"
    ],
@@ -2203,7 +2203,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "友彦さんなら、何か麻奈の事を知っているんじゃないかな？",
-   "en": "",
+   "en": "Tomohiko-san might know something about Mana.",
    "refs": [
     "scene23:3"
    ],
@@ -2213,7 +2213,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "まだ、朝になるまでには時間がある・・・！",
-   "en": "",
+   "en": "There's still time before morning...!",
    "refs": [
     "scene23:4"
    ],
@@ -2223,7 +2223,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "友彦さんが知っている麻奈の事を、ぜんぶ教えてくれるかな？",
-   "en": "",
+   "en": "Will he tell me everything he knows about Mana?",
    "refs": [
     "scene23:5"
    ],
@@ -2233,7 +2233,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "ダメだ・・・ボクは、とほうにくれた。",
-   "en": "",
+   "en": "Damn... I'm at a loss.",
    "refs": [
     "scene23:6"
    ],
@@ -2243,7 +2243,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "「うるせえぞ・・・・・・！！」",
-   "en": "",
+   "en": "\"Shut up......!!\"",
    "refs": [
     "scene23:7"
    ],
@@ -2253,7 +2253,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "ムダじゃないかなぁ・・・・・・？",
-   "en": "",
+   "en": "Wouldn't it be pointless...?",
    "refs": [
     "scene23:8"
    ],
@@ -2263,7 +2263,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "友彦さんの笑い声が、リビングから聞こえてくるよ。",
-   "en": "",
+   "en": "I can hear Tomohiko-san's laughter coming from the living room.",
    "refs": [
     "scene23:9"
    ],
@@ -2273,7 +2273,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "「ほほぉい、誰だ・・・！？」",
-   "en": "",
+   "en": "\"Who goes there...!?\"",
    "refs": [
     "scene23:10"
    ],
@@ -2283,7 +2283,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "「ヤボだな・・・明日にしてくれよ！！」",
-   "en": "",
+   "en": "\"How annoying... can't it wait until tomorrow!!\"",
    "refs": [
     "scene23:11"
    ],
@@ -2293,7 +2293,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "「何じゃ、お前か・・・」",
-   "en": "",
+   "en": "\"Oh, it's you...\"",
    "refs": [
     "scene24:0"
    ],
@@ -2303,7 +2303,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "「さぁて、この友彦さんに、何を聞きたいのかな？」",
-   "en": "",
+   "en": "\"So, what do you want to ask this Tomohiko-san?\"",
    "refs": [
     "scene24:1"
    ],
@@ -2313,7 +2313,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "友彦さんがジャマで、良く見えないよ。",
-   "en": "",
+   "en": "Tomohiko-san is in the way, so I can't see well.",
    "refs": [
     "scene24:2"
    ],
@@ -2323,7 +2323,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "ボクの学校の先輩だけど、学校では１度も会った事がないんだ。",
-   "en": "",
+   "en": "He's my senior at school, but I've never met him there.",
    "refs": [
     "scene24:3"
    ],
@@ -2333,7 +2333,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "「オレは、この＜コスモス・クラブ＞のヌシだから・・・」",
-   "en": "",
+   "en": "\"I'm the master of this Cosmos Club, so...\"",
    "refs": [
     "scene24:4"
    ],
@@ -2343,7 +2343,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "「知りたい事があれば、オレに聞きなよ」",
-   "en": "",
+   "en": "\"If there's something you want to know, ask me.\"",
    "refs": [
     "scene24:5"
    ],
@@ -2353,7 +2353,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "「そのカギが使えるのは、１度だけだ・・・」",
-   "en": "",
+   "en": "\"That key can only be used once...\"",
    "refs": [
     "scene24:6"
    ],
@@ -2363,7 +2363,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "「・・・それを、忘れるなよ」",
-   "en": "",
+   "en": "\"...Don't forget that.\"",
    "refs": [
     "scene24:7"
    ],
@@ -2373,7 +2373,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "「オレ、シゲキがないと、何にも思い出さないんだ」",
-   "en": "",
+   "en": "\"Without stimulation, I can't remember a thing.\"",
    "refs": [
     "scene24:8"
    ],
@@ -2383,7 +2383,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "「お前、何か持っていないの・・・？」",
-   "en": "",
+   "en": "\"Don't you have something...?\"",
    "refs": [
     "scene24:9"
    ],
@@ -2393,7 +2393,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "「お前の部屋には、何かないの・・・？」",
-   "en": "",
+   "en": "\"Isn't there something in your room...?\"",
    "refs": [
     "scene24:10"
    ],
@@ -2403,7 +2403,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "「お前いいモノ持っているじゃないの」",
-   "en": "",
+   "en": "\"You've got something good, don't you?\"",
    "refs": [
     "scene24:11"
    ],
@@ -2413,7 +2413,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "「それがあれば、麻奈の事を思い出せそうだよ」",
-   "en": "",
+   "en": "\"With that, I think I can remember about Mana.\"",
    "refs": [
     "scene24:12"
    ],
@@ -2423,7 +2423,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "「いま渡したカギは、麻奈の部屋を開けるのに使うなよ！！」",
-   "en": "",
+   "en": "\"Don't use the key I just gave you to open Mana's room!!\"",
    "refs": [
     "scene24:13"
    ],
@@ -2433,7 +2433,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "「また来いよ・・・・・・！」",
-   "en": "",
+   "en": "\"Come again......!\"",
    "refs": [
     "scene24:14"
    ],
@@ -2443,7 +2443,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "今夜中に、麻奈に会いに行けるかな・・・？",
-   "en": "",
+   "en": "Can I go meet Mana tonight...?",
    "refs": [
     "scene24:15"
    ],
@@ -2453,7 +2453,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "友彦さん、麻奈について教えてくれないかなぁ・・・。",
-   "en": "",
+   "en": "Tomohiko-san, won't you tell me about Mana...?",
    "refs": [
     "scene24:16"
    ],
@@ -2463,7 +2463,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "カギは、ひとつあれば麻奈に会えるのかな・・・？",
-   "en": "",
+   "en": "Can I meet Mana with just one key...?",
    "refs": [
     "scene24:17"
    ],
@@ -2473,7 +2473,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "この本棚の本も、ボクの数少ないザイサンなんだ。",
-   "en": "",
+   "en": "The books on this shelf are among my few possessions.",
    "refs": [
     "scene25:0"
    ],
@@ -2483,7 +2483,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "実は、この本棚の裏には、ボクの秘蔵本が隠してあるんだ！",
-   "en": "",
+   "en": "Actually, behind this bookshelf, I have my treasured book hidden!",
    "refs": [
     "scene25:1"
    ],
@@ -2493,7 +2493,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "本棚には、マンガ、小説や参考書がある。",
-   "en": "",
+   "en": "The bookshelf has manga, novels, and reference books.",
    "refs": [
     "scene25:2"
    ],
@@ -2503,7 +2503,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "特別にひつようなモノは、なさそうだよ。",
-   "en": "",
+   "en": "Nothing I particularly need.",
    "refs": [
     "scene25:3"
    ],
@@ -2513,7 +2513,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "大丈夫・・・まだ、夜は明けないよ。",
-   "en": "",
+   "en": "It's okay... dawn hasn't broken yet.",
    "refs": [
     "scene25:4"
    ],
@@ -2523,7 +2523,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "あの、ネコみたいな所が可愛いんだよね。",
-   "en": "",
+   "en": "That cat-like quality of hers is what's cute.",
    "refs": [
     "scene25:5"
    ],
@@ -2533,7 +2533,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "麻奈は、秘密があるような女の子なのかな？",
-   "en": "",
+   "en": "Is Mana the kind of girl who has secrets?",
    "refs": [
     "scene25:6"
    ],
@@ -2543,7 +2543,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "今夜がダメでも、明日があるさ！",
-   "en": "",
+   "en": "Even if tonight doesn't work, there's always tomorrow!",
    "refs": [
     "scene25:7"
    ],
@@ -2553,7 +2553,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "麻奈の部屋は、二階の＜６号室＞なんだ。",
-   "en": "",
+   "en": "Mana's room is Room 6 on the second floor.",
    "refs": [
     "scene25:8"
    ],
@@ -2563,7 +2563,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "そんなに、つごう良く・・・。",
-   "en": "",
+   "en": "It can't be that convenient...",
    "refs": [
     "scene25:9"
    ],
@@ -2573,7 +2573,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "あれっ、こんな所に昔の五円玉があった　・・・ラッキ−！！",
-   "en": "",
+   "en": "Oh, there's an old five-yen coin here... lucky!!",
    "refs": [
     "scene25:10"
    ],
@@ -2583,7 +2583,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "・・・お金があるワケないね。",
-   "en": "",
+   "en": "...Of course there's no money.",
    "refs": [
     "scene25:11"
    ],
@@ -2593,7 +2593,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "これが、ボクの秘蔵本なんだ。",
-   "en": "",
+   "en": "This is my treasured book.",
    "refs": [
     "scene26:0"
    ],
@@ -2603,7 +2603,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "きっと、この本がやくに立つだろう。",
-   "en": "",
+   "en": "This book will surely come in handy.",
    "refs": [
     "scene26:1"
    ],
@@ -2613,7 +2613,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "これを、友彦さんにあげるの、もったいない気もするなあ・・・。",
-   "en": "",
+   "en": "I feel a bit reluctant to give this to Tomohiko-san...",
    "refs": [
     "scene26:2"
    ],
@@ -2623,7 +2623,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "「これは、オレが造ったかぎだ・・・」",
-   "en": "",
+   "en": "\"This is a key I made...\"",
    "refs": [
     "scene27:0"
    ],
@@ -2633,7 +2633,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "「これで、この＜コスモス・クラブ＞のどこのカギも開けられる」",
-   "en": "",
+   "en": "\"With this, you can open any lock in this Cosmos Club.\"",
    "refs": [
     "scene27:1"
    ],
@@ -2643,7 +2643,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "「これを、お前にやるよ・・・」",
-   "en": "",
+   "en": "\"I'll give this to you...\"",
    "refs": [
     "scene27:2"
    ],
@@ -2653,7 +2653,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "ここは、１号室のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 1's door.",
    "refs": [
     "scene28:0"
    ],
@@ -2663,7 +2663,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "＜１号室＞には、音楽の教師で管理人の田島圭子先生が住んでいる。",
-   "en": "",
+   "en": "Music teacher and dorm manager Tajima Keiko-sensei lives in Room 1.",
    "refs": [
     "scene28:1"
    ],
@@ -2673,7 +2673,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "ボクは、ドロボーになる気はないよ・・・！",
-   "en": "",
+   "en": "I don't intend to become a thief...!",
    "refs": [
     "scene28:2"
    ],
@@ -2683,7 +2683,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "したい・・・・・・！",
-   "en": "",
+   "en": "I want to......!",
    "refs": [
     "scene28:3"
    ],
@@ -2693,7 +2693,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "圭子先生になんとか協力してもらうほうほうはないかな？",
-   "en": "",
+   "en": "Isn't there some way to get Keiko-sensei to cooperate?",
    "refs": [
     "scene28:4"
    ],
@@ -2703,7 +2703,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "麻奈の部屋のカギを、なんとかしててに入れたい・・・！",
-   "en": "",
+   "en": "I want to get my hands on the key to Mana's room somehow...!",
    "refs": [
     "scene28:5"
    ],
@@ -2713,7 +2713,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "・・・しかし、この＜コスモス・クラブ＞は、カベがカタイな。",
-   "en": "",
+   "en": "...But this Cosmos Club is a tough nut to crack.",
    "refs": [
     "scene28:6"
    ],
@@ -2723,7 +2723,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "いくらノックしても、返事がないよ。",
-   "en": "",
+   "en": "No matter how much I knock, there's no answer.",
    "refs": [
     "scene28:7"
    ],
@@ -2733,7 +2733,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "まだ、シャワーをあびているのかな？",
-   "en": "",
+   "en": "Is she still taking a shower?",
    "refs": [
     "scene28:8"
    ],
@@ -2743,7 +2743,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "あちゃ・・・もう、朝だ！",
-   "en": "",
+   "en": "Oh no... it's already morning!",
    "refs": [
     "scene29:0"
    ],
@@ -2753,7 +2753,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "ああ・・・もう朝だ。",
-   "en": "",
+   "en": "Ah... it's already morning.",
    "refs": [
     "scene29:1"
    ],
@@ -2763,7 +2763,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "今日は、きのうのぶんもガンバルぞ！！",
-   "en": "",
+   "en": "Today, I'll do my best for yesterday too!!",
    "refs": [
     "scene29:2"
    ],
@@ -2773,7 +2773,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "「おっはよう・・・！！」",
-   "en": "",
+   "en": "\"Good morning...!!\"",
    "refs": [
     "scene30:0"
    ],
@@ -2783,7 +2783,7 @@
    "id": "m00278",
    "kind": "msg",
    "jp": "「・・・何だか、眠そうね？」",
-   "en": "",
+   "en": "\"...You look sleepy.\"",
    "refs": [
     "scene30:1"
    ],
@@ -2793,7 +2793,7 @@
    "id": "m00279",
    "kind": "msg",
    "jp": "「きのうは、よく眠れたみたいネ！」",
-   "en": "",
+   "en": "\"Looks like you slept well yesterday!\"",
    "refs": [
     "scene30:2"
    ],
@@ -2803,7 +2803,7 @@
    "id": "m00280",
    "kind": "msg",
    "jp": "「ウフフ・・・・・・」",
-   "en": "",
+   "en": "\"Ufufu......\"",
    "refs": [
     "scene31:0"
    ],
@@ -2813,7 +2813,7 @@
    "id": "m00281",
    "kind": "msg",
    "jp": "「おたのしみは、これからよ！」",
-   "en": "",
+   "en": "\"The fun is just beginning!\"",
    "refs": [
     "scene31:1"
    ],
@@ -2823,7 +2823,7 @@
    "id": "m00282",
    "kind": "msg",
    "jp": "あっ・・・・！",
-   "en": "",
+   "en": "Ah......!",
    "refs": [
     "scene32:0"
    ],
@@ -2833,7 +2833,7 @@
    "id": "m00283",
    "kind": "msg",
    "jp": "・・・という間に、学校が終わって、",
-   "en": "",
+   "en": "...Before I knew it, school was over,",
    "refs": [
     "scene32:1"
    ],
@@ -2843,7 +2843,7 @@
    "id": "m00284",
    "kind": "msg",
    "jp": "ボクは、＜コスモス・クラブ＞に帰ってきた。",
-   "en": "",
+   "en": "and I returned to the Cosmos Club.",
    "refs": [
     "scene32:2"
    ],
@@ -2853,7 +2853,7 @@
    "id": "m00285",
    "kind": "msg",
    "jp": "今夜こそ、かならず麻奈に会って、気持ちを打ち明けるんだ！！",
-   "en": "",
+   "en": "Tonight, I'll definitely meet Mana and confess my feelings!!",
    "refs": [
     "scene32:3"
    ],
@@ -2863,7 +2863,7 @@
    "id": "m00286",
    "kind": "msg",
    "jp": "そのためには、ここにいてもしょうがないよ！",
-   "en": "",
+   "en": "To do that, staying here won't help!",
    "refs": [
     "scene32:4"
    ],
@@ -2873,7 +2873,7 @@
    "id": "m00287",
    "kind": "msg",
    "jp": "きのうの分まで今夜は、がんばらないと、",
-   "en": "",
+   "en": "I have to work hard tonight to make up for yesterday,",
    "refs": [
     "scene32:5"
    ],
@@ -2883,7 +2883,7 @@
    "id": "m00288",
    "kind": "msg",
    "jp": "麻奈とつき合う事なんか、出来ないゾ！！",
-   "en": "",
+   "en": "or I'll never get to date Mana!!",
    "refs": [
     "scene32:6"
    ],
@@ -2893,7 +2893,7 @@
    "id": "m00289",
    "kind": "msg",
    "jp": "ここは、１階の廊下です。",
-   "en": "",
+   "en": "This is the first-floor hallway.",
    "refs": [
     "scene33:0",
     "scene35:0"
@@ -2904,7 +2904,7 @@
    "id": "m00290",
    "kind": "msg",
    "jp": "特に、きのうと変わった所はないよ。",
-   "en": "",
+   "en": "Nothing's changed from yesterday.",
    "refs": [
     "scene33:1"
    ],
@@ -2914,7 +2914,7 @@
    "id": "m00291",
    "kind": "msg",
    "jp": "きのうのうちに、良く調べれば良かったね・・・。",
-   "en": "",
+   "en": "I should have investigated more thoroughly yesterday...",
    "refs": [
     "scene33:2"
    ],
@@ -2924,7 +2924,7 @@
    "id": "m00292",
    "kind": "msg",
    "jp": "そろそろ、夕食の時間だよ・・・。",
-   "en": "",
+   "en": "It's about time for dinner...",
    "refs": [
     "scene33:3"
    ],
@@ -2934,7 +2934,7 @@
    "id": "m00293",
    "kind": "msg",
    "jp": "まだ、とうぶんは朝にならないよ。",
-   "en": "",
+   "en": "It won't be morning for a while yet.",
    "refs": [
     "scene33:4"
    ],
@@ -2944,7 +2944,7 @@
    "id": "m00294",
    "kind": "msg",
    "jp": "夕食は終わったんだから、もう行くひつようないよ。",
-   "en": "",
+   "en": "Dinner's over, so there's no need to go.",
    "refs": [
     "scene33:5"
    ],
@@ -2954,7 +2954,7 @@
    "id": "m00295",
    "kind": "msg",
    "jp": "とうとう、麻奈に会う事が出来るんだ・・・！",
-   "en": "",
+   "en": "Finally, I can meet Mana...!",
    "refs": [
     "scene33:6"
    ],
@@ -2964,7 +2964,7 @@
    "id": "m00296",
    "kind": "msg",
    "jp": "麻奈の部屋は２階の６号室なんだけれど・・・。",
-   "en": "",
+   "en": "Mana's room is Room 6 on the second floor, but...",
    "refs": [
     "scene33:7"
    ],
@@ -2974,7 +2974,7 @@
    "id": "m00297",
    "kind": "msg",
    "jp": "麻奈は、こんな夜中に校庭で何をしているのかな・・・？",
-   "en": "",
+   "en": "What is Mana doing in the schoolyard this late at night...?",
    "refs": [
     "scene33:8"
    ],
@@ -2984,7 +2984,7 @@
    "id": "m00298",
    "kind": "msg",
    "jp": "ここの住人は、夕食の時間になっても、おしえてくれないんだ。",
-   "en": "",
+   "en": "The residents here won't tell me even when it's dinner time.",
    "refs": [
     "scene33:9"
    ],
@@ -2994,7 +2994,7 @@
    "id": "m00299",
    "kind": "msg",
    "jp": "早く麻奈を見つけなければ・・・！",
-   "en": "",
+   "en": "I have to find Mana quickly...!",
    "refs": [
     "scene33:10"
    ],
@@ -3004,7 +3004,7 @@
    "id": "m00300",
    "kind": "msg",
    "jp": "やり残しがなければ、麻奈に会いに行こう！",
-   "en": "",
+   "en": "If there's nothing left undone, let's go meet Mana!",
    "refs": [
     "scene33:11"
    ],
@@ -3014,7 +3014,7 @@
    "id": "m00301",
    "kind": "msg",
    "jp": "・・・あいかわらず、にぎやかな夕食だな。",
-   "en": "",
+   "en": "...As lively a dinner as ever.",
    "refs": [
     "scene34:0"
    ],
@@ -3024,7 +3024,7 @@
    "id": "m00302",
    "kind": "msg",
    "jp": "麻奈・・・・・・。",
-   "en": "",
+   "en": "Mana......",
    "refs": [
     "scene34:1"
    ],
@@ -3034,7 +3034,7 @@
    "id": "m00303",
    "kind": "msg",
    "jp": "ここでは、こんなに近くにいるのに、",
-   "en": "",
+   "en": "Even though she's this close,",
    "refs": [
     "scene34:2"
    ],
@@ -3044,7 +3044,7 @@
    "id": "m00304",
    "kind": "msg",
    "jp": "ボクの気持ちをつたえられない。",
-   "en": "",
+   "en": "I can't convey my feelings.",
    "refs": [
     "scene34:3"
    ],
@@ -3054,7 +3054,7 @@
    "id": "m00305",
    "kind": "msg",
    "jp": "特に、変わったモノなどないけれど、何か気になるの？",
-   "en": "",
+   "en": "There's nothing unusual, but is something bothering you?",
    "refs": [
     "scene35:1"
    ],
@@ -3064,7 +3064,7 @@
    "id": "m00306",
    "kind": "msg",
    "jp": "もう、夕食の時間はすぎているよ！",
-   "en": "",
+   "en": "Dinner time is already over!",
    "refs": [
     "scene35:2"
    ],
@@ -3074,7 +3074,7 @@
    "id": "m00307",
    "kind": "msg",
    "jp": "気はアセルけれど、まだまだ朝にならないから大丈夫だよ。",
-   "en": "",
+   "en": "I'm anxious, but it's still a long way from morning, so it's fine.",
    "refs": [
     "scene35:3"
    ],
@@ -3084,7 +3084,7 @@
    "id": "m00308",
    "kind": "msg",
    "jp": "夕食は終わっているんだから、いまいってもしょうがないよ。",
-   "en": "",
+   "en": "Dinner's over, so going now is pointless.",
    "refs": [
     "scene35:4"
    ],
@@ -3094,7 +3094,7 @@
    "id": "m00309",
    "kind": "msg",
    "jp": "麻奈とつき合うために、何かひつような事ってあるのかな？",
-   "en": "",
+   "en": "Is there something I need to do to date Mana?",
    "refs": [
     "scene35:5"
    ],
@@ -3104,7 +3104,7 @@
    "id": "m00310",
    "kind": "msg",
    "jp": "さあ、麻奈に会いに行こうよ！",
-   "en": "",
+   "en": "Come on, let's go meet Mana!",
    "refs": [
     "scene35:6"
    ],
@@ -3114,7 +3114,7 @@
    "id": "m00311",
    "kind": "msg",
    "jp": "早く、夕食を食べに行きたいなあ・・・。",
-   "en": "",
+   "en": "I want to hurry up and go eat dinner...",
    "refs": [
     "scene35:7"
    ],
@@ -3124,7 +3124,7 @@
    "id": "m00312",
    "kind": "msg",
    "jp": "急がば、まわれ・・・と云うけれど。",
-   "en": "",
+   "en": "They say \"more haste, less speed\"...",
    "refs": [
     "scene35:8"
    ],
@@ -3134,7 +3134,7 @@
    "id": "m00313",
    "kind": "msg",
    "jp": "ここは、＜１号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 1's door.",
    "refs": [
     "scene36:0"
    ],
@@ -3144,7 +3144,7 @@
    "id": "m00314",
    "kind": "msg",
    "jp": "＜１号室＞には、田島圭子先生が住んでいる。",
-   "en": "",
+   "en": "Tajima Keiko-sensei lives in Room 1.",
    "refs": [
     "scene36:1"
    ],
@@ -3154,7 +3154,7 @@
    "id": "m00315",
    "kind": "msg",
    "jp": "「あっ・・・ちょっと待ってね」",
-   "en": "",
+   "en": "\"Ah... wait a moment.\"",
    "refs": [
     "scene36:2"
    ],
@@ -3164,7 +3164,7 @@
    "id": "m00316",
    "kind": "msg",
    "jp": "「・・・いいわよ、どうぞ」",
-   "en": "",
+   "en": "\"...Okay, come in.\"",
    "refs": [
     "scene36:3"
    ],
@@ -3174,7 +3174,7 @@
    "id": "m00317",
    "kind": "msg",
    "jp": "・・・麻奈と会うまでは、体力をもたせなくちゃあ。",
-   "en": "",
+   "en": "...I need to conserve my stamina until I meet Mana.",
    "refs": [
     "scene36:4"
    ],
@@ -3184,7 +3184,7 @@
    "id": "m00318",
    "kind": "msg",
    "jp": "でも、圭子先生はセクシーだからなぁ・・・。",
-   "en": "",
+   "en": "But Keiko-sensei is so sexy...",
    "refs": [
     "scene36:5"
    ],
@@ -3194,7 +3194,7 @@
    "id": "m00319",
    "kind": "msg",
    "jp": "麻奈からはいつも、いいカオリがするんだ。",
-   "en": "",
+   "en": "Mana always smells so nice.",
    "refs": [
     "scene36:6"
    ],
@@ -3204,7 +3204,7 @@
    "id": "m00320",
    "kind": "msg",
    "jp": "居場所は知っているんだから、もうよゆうだね。",
-   "en": "",
+   "en": "I know where she is, so I can relax.",
    "refs": [
     "scene36:7"
    ],
@@ -3214,7 +3214,7 @@
    "id": "m00321",
    "kind": "msg",
    "jp": "おなかすいたよう・・・。",
-   "en": "",
+   "en": "I'm hungry...",
    "refs": [
     "scene36:8"
    ],
@@ -3224,7 +3224,7 @@
    "id": "m00322",
    "kind": "msg",
    "jp": "もう、ガンバルしかない！",
-   "en": "",
+   "en": "I just have to do my best!",
    "refs": [
     "scene36:9"
    ],
@@ -3234,7 +3234,7 @@
    "id": "m00323",
    "kind": "msg",
    "jp": "あれ・・・何か変な音がするゾ。",
-   "en": "",
+   "en": "Huh... I hear a strange sound.",
    "refs": [
     "scene36:10"
    ],
@@ -3244,7 +3244,7 @@
    "id": "m00324",
    "kind": "msg",
    "jp": "カべと柱に、昔の５円玉がはさまっていた・・・もらっておこう。",
-   "en": "",
+   "en": "An old five-yen coin was wedged between the wall and a pillar... I'll take it.",
    "refs": [
     "scene36:11"
    ],
@@ -3254,7 +3254,7 @@
    "id": "m00325",
    "kind": "msg",
    "jp": "・・・手がいたいだけだなあ。",
-   "en": "",
+   "en": "...My hand just hurts.",
    "refs": [
     "scene36:12"
    ],
@@ -3264,7 +3264,7 @@
    "id": "m00326",
    "kind": "msg",
    "jp": "圭子先生はいま部屋にはいないみたいだよ。",
-   "en": "",
+   "en": "Keiko-sensei doesn't seem to be in her room right now.",
    "refs": [
     "scene36:13"
    ],
@@ -3274,7 +3274,7 @@
    "id": "m00327",
    "kind": "msg",
    "jp": "「はい、はい・・・だあれ？」",
-   "en": "",
+   "en": "\"Yes, yes... who is it?\"",
    "refs": [
     "scene36:14"
    ],
@@ -3284,7 +3284,7 @@
    "id": "m00328",
    "kind": "msg",
    "jp": "「きみ、こんなじかんにどうしたの・・・？」",
-   "en": "",
+   "en": "\"What are you doing here at this hour...?\"",
    "refs": [
     "scene37:0"
    ],
@@ -3294,7 +3294,7 @@
    "id": "m00329",
    "kind": "msg",
    "jp": "「あらっ・・・こんどはナニ？」",
-   "en": "",
+   "en": "\"Oh... what is it this time?\"",
    "refs": [
     "scene37:1"
    ],
@@ -3304,7 +3304,7 @@
    "id": "m00330",
    "kind": "msg",
    "jp": "「ウフフ・・・先生がわすれられないの？」",
-   "en": "",
+   "en": "\"Ufufu... can't you forget about me?\"",
    "refs": [
     "scene37:2"
    ],
@@ -3314,7 +3314,7 @@
    "id": "m00331",
    "kind": "msg",
    "jp": "せまい部屋なのに、大きなダブルベットがあるよ。",
-   "en": "",
+   "en": "It's a small room, but there's a big double bed.",
    "refs": [
     "scene37:3"
    ],
@@ -3324,7 +3324,7 @@
    "id": "m00332",
    "kind": "msg",
    "jp": "こんなにキレイなのに、恋人がいないのはフシギだな。",
-   "en": "",
+   "en": "It's strange that someone this beautiful has no lover.",
    "refs": [
     "scene37:4"
    ],
@@ -3334,7 +3334,7 @@
    "id": "m00333",
    "kind": "msg",
    "jp": "・・・圭子先生って、スゴイ！",
-   "en": "",
+   "en": "...Keiko-sensei is amazing!",
    "refs": [
     "scene37:5"
    ],
@@ -3344,7 +3344,7 @@
    "id": "m00334",
    "kind": "msg",
    "jp": "「キミ夕食にはおくれないようにしなさいよ」",
-   "en": "",
+   "en": "\"Don't be late for dinner.\"",
    "refs": [
     "scene37:6"
    ],
@@ -3354,7 +3354,7 @@
    "id": "m00335",
    "kind": "msg",
    "jp": "「きのうのキミ、なかなかだったわよ・・・」",
-   "en": "",
+   "en": "\"You were quite something yesterday...\"",
    "refs": [
     "scene37:7"
    ],
@@ -3364,7 +3364,7 @@
    "id": "m00336",
    "kind": "msg",
    "jp": "「キミ、若いから、何回でも出来そうね」",
-   "en": "",
+   "en": "\"You're young, so you can probably go multiple times.\"",
    "refs": [
     "scene37:8"
    ],
@@ -3374,7 +3374,7 @@
    "id": "m00337",
    "kind": "msg",
    "jp": "「この部屋の上が、工藤さんの部屋よ」",
-   "en": "",
+   "en": "\"Kudou-san's room is right above this one.\"",
    "refs": [
     "scene37:9"
    ],
@@ -3384,7 +3384,7 @@
    "id": "m00338",
    "kind": "msg",
    "jp": "「・・・聞こえる？いつも朝になるまで、物音がしているのよ」",
-   "en": "",
+   "en": "\"...Can you hear it? There's always noise until morning.\"",
    "refs": [
     "scene37:10"
    ],
@@ -3394,7 +3394,7 @@
    "id": "m00339",
    "kind": "msg",
    "jp": "「先生とカンケイしたくせに・・・」",
-   "en": "",
+   "en": "\"Even though you had relations with me...\"",
    "refs": [
     "scene37:11"
    ],
@@ -3404,7 +3404,7 @@
    "id": "m00340",
    "kind": "msg",
    "jp": "「きみも、ふつうの男なのね」",
-   "en": "",
+   "en": "\"You're just a normal man, aren't you?\"",
    "refs": [
     "scene37:12"
    ],
@@ -3414,7 +3414,7 @@
    "id": "m00341",
    "kind": "msg",
    "jp": "「工藤さんと会って、後悔しないように・・・」",
-   "en": "",
+   "en": "\"So you won't regret meeting Kudou-san...\"",
    "refs": [
     "scene37:13"
    ],
@@ -3424,7 +3424,7 @@
    "id": "m00342",
    "kind": "msg",
    "jp": "麻奈は、いま何をしているのかな？",
-   "en": "",
+   "en": "What is Mana doing right now?",
    "refs": [
     "scene37:14"
    ],
@@ -3434,7 +3434,7 @@
    "id": "m00343",
    "kind": "msg",
    "jp": "圭子先生が、さそう様にボクを見つめているよ。",
-   "en": "",
+   "en": "Keiko-sensei is looking at me invitingly.",
    "refs": [
     "scene37:15"
    ],
@@ -3444,7 +3444,7 @@
    "id": "m00344",
    "kind": "msg",
    "jp": "ここで時間をつぶしたら、麻奈はどこかへ行ってしまうかな？",
-   "en": "",
+   "en": "If I waste time here, will Mana go somewhere?",
    "refs": [
     "scene37:16"
    ],
@@ -3454,7 +3454,7 @@
    "id": "m00345",
    "kind": "msg",
    "jp": "「アン・・・意外とダイタンなのね、キミは」",
-   "en": "",
+   "en": "\"Anh... you're surprisingly bold, aren't you?\"",
    "refs": [
     "scene38:0"
    ],
@@ -3464,7 +3464,7 @@
    "id": "m00346",
    "kind": "msg",
    "jp": "「今夜こそは、先生を満足させてね・・・」",
-   "en": "",
+   "en": "\"Tonight, you'll satisfy me...\"",
    "refs": [
     "scene38:1"
    ],
@@ -3474,7 +3474,7 @@
    "id": "m00347",
    "kind": "msg",
    "jp": "・・・圭子先生は初めてなワケないよね。",
-   "en": "",
+   "en": "...There's no way Keiko-sensei is a virgin.",
    "refs": [
     "scene38:2"
    ],
@@ -3484,7 +3484,7 @@
    "id": "m00348",
    "kind": "msg",
    "jp": "これが、大人の女性なんだ・・・。",
-   "en": "",
+   "en": "So this is what a mature woman is like...",
    "refs": [
     "scene38:3"
    ],
@@ -3494,7 +3494,7 @@
    "id": "m00349",
    "kind": "msg",
    "jp": "「このことは、先生とキミだけのヒミツよ・・・」",
-   "en": "",
+   "en": "\"This is a secret between you and me...\"",
    "refs": [
     "scene38:4"
    ],
@@ -3504,7 +3504,7 @@
    "id": "m00350",
    "kind": "msg",
    "jp": "「そうするなら、キミをどんどん男にしてあげるわ」",
-   "en": "",
+   "en": "\"If you do, I'll make a man out of you in no time.\"",
    "refs": [
     "scene38:5"
    ],
@@ -3514,7 +3514,7 @@
    "id": "m00351",
    "kind": "msg",
    "jp": "「ふうん、キミは工藤さんが好きなんだ・・・」",
-   "en": "",
+   "en": "\"Hmm, so you like Kudou-san...\"",
    "refs": [
     "scene38:6"
    ],
@@ -3524,7 +3524,7 @@
    "id": "m00352",
    "kind": "msg",
    "jp": "「工藤さんは、きっとまだヴァージンよ・・・」",
-   "en": "",
+   "en": "\"Kudou-san is surely still a virgin...\"",
    "refs": [
     "scene38:7"
    ],
@@ -3534,7 +3534,7 @@
    "id": "m00353",
    "kind": "msg",
    "jp": "「・・・キミに、うまく出来るかな？」",
-   "en": "",
+   "en": "\"...Do you think you can handle it?\"",
    "refs": [
     "scene38:8"
    ],
@@ -3544,7 +3544,7 @@
    "id": "m00354",
    "kind": "msg",
    "jp": "「キミだけさっさと終わってしまうなんて、ズルイわよ・・・」",
-   "en": "",
+   "en": "\"It's not fair if you finish so quickly...\"",
    "refs": [
     "scene38:9"
    ],
@@ -3554,7 +3554,7 @@
    "id": "m00355",
    "kind": "msg",
    "jp": "ボクは圭子先生からはなれると、服を着て廊下へ戻った。",
-   "en": "",
+   "en": "I pulled away from Keiko-sensei, got dressed, and returned to the hallway.",
    "refs": [
     "scene38:10"
    ],
@@ -3564,7 +3564,7 @@
    "id": "m00356",
    "kind": "msg",
    "jp": "「したくなったら、いつでもいらっしゃい」",
-   "en": "",
+   "en": "\"Come by anytime you feel like it.\"",
    "refs": [
     "scene38:11"
    ],
@@ -3574,7 +3574,7 @@
    "id": "m00357",
    "kind": "msg",
    "jp": "「メイク・ラブでは、キスはゆるしていないわ」",
-   "en": "",
+   "en": "\"I don't allow kissing during make love.\"",
    "refs": [
     "scene38:12"
    ],
@@ -3584,7 +3584,7 @@
    "id": "m00358",
    "kind": "msg",
    "jp": "「かんで・・・少し、強く・・・・・」",
-   "en": "",
+   "en": "\"Bite... a little harder......\"",
    "refs": [
     "scene38:13"
    ],
@@ -3594,7 +3594,7 @@
    "id": "m00359",
    "kind": "msg",
    "jp": "「あぁ・・・んぅ・・・・・・うっ」",
-   "en": "",
+   "en": "\"Ah... ngu...... uh.\"",
    "refs": [
     "scene38:14"
    ],
@@ -3604,7 +3604,7 @@
    "id": "m00360",
    "kind": "msg",
    "jp": "「うぅ・・・・・・くっ・・・ん」",
-   "en": "",
+   "en": "\"Uu...... kuh... n.\"",
    "refs": [
     "scene38:15"
    ],
@@ -3614,7 +3614,7 @@
    "id": "m00361",
    "kind": "msg",
    "jp": "「くふっ・・・・・・あはぁぁぁ」",
-   "en": "",
+   "en": "\"Kufu...... ahaaaa.\"",
    "refs": [
     "scene38:16"
    ],
@@ -3624,7 +3624,7 @@
    "id": "m00362",
    "kind": "msg",
    "jp": "「はぁぁぁぁぁ・・・・・・！」",
-   "en": "",
+   "en": "\"Haaaaaa......!\"",
    "refs": [
     "scene38:17"
    ],
@@ -3634,7 +3634,7 @@
    "id": "m00363",
    "kind": "msg",
    "jp": "「そう・・・上手になったわね、あぁ・・・あぁぁぁ！」",
-   "en": "",
+   "en": "\"Yes... you've gotten good, ah... aaaah!\"",
    "refs": [
     "scene38:18"
    ],
@@ -3644,7 +3644,7 @@
    "id": "m00364",
    "kind": "msg",
    "jp": "「ごほうびに、キミに工藤さんの部屋のカギをかしてあげるわ」",
-   "en": "",
+   "en": "\"As a reward, I'll lend you the key to Kudou-san's room.\"",
    "refs": [
     "scene38:19"
    ],
@@ -3654,7 +3654,7 @@
    "id": "m00365",
    "kind": "msg",
    "jp": "ボクは、脱いだ服のポケットに、カギをしまいこんだ！",
-   "en": "",
+   "en": "I tucked the key into the pocket of my discarded clothes!",
    "refs": [
     "scene38:20"
    ],
@@ -3664,7 +3664,7 @@
    "id": "m00366",
    "kind": "msg",
    "jp": "「そのカギで、別のカギを開ける事もできるらしいわ・・・」",
-   "en": "",
+   "en": "\"I hear that key can also open another lock...\"",
    "refs": [
     "scene38:21"
    ],
@@ -3674,7 +3674,7 @@
    "id": "m00367",
    "kind": "msg",
    "jp": "「・・・それは、どこだったかしら？」",
-   "en": "",
+   "en": "\"...Where was that again?\"",
    "refs": [
     "scene38:22"
    ],
@@ -3684,7 +3684,7 @@
    "id": "m00368",
    "kind": "msg",
    "jp": "「・・・先生は、キミの事が気に入ったわ」",
-   "en": "",
+   "en": "\"...I've taken a liking to you.\"",
    "refs": [
     "scene39:0"
    ],
@@ -3694,7 +3694,7 @@
    "id": "m00369",
    "kind": "msg",
    "jp": "「工藤さんなんて、わすれてしまいなさい」",
-   "en": "",
+   "en": "\"Forget about Kudou-san.\"",
    "refs": [
     "scene39:1"
    ],
@@ -3704,7 +3704,7 @@
    "id": "m00370",
    "kind": "msg",
    "jp": "「先生は、キミが卒業するまで、キミのものよ・・・」",
-   "en": "",
+   "en": "\"I'm yours until you graduate...\"",
    "refs": [
     "scene39:2"
    ],
@@ -3714,7 +3714,7 @@
    "id": "m00371",
    "kind": "msg",
    "jp": "「・・・いい思いさせてあげる」",
-   "en": "",
+   "en": "\"...I'll make it good for you.\"",
    "refs": [
     "scene39:3"
    ],
@@ -3724,7 +3724,7 @@
    "id": "m00372",
    "kind": "msg",
    "jp": "ボクには、もう・・・麻奈とつき合う体力を残せなかった。",
-   "en": "",
+   "en": "I no longer had... the stamina left to pursue Mana.",
    "refs": [
     "scene39:4"
    ],
@@ -3734,7 +3734,7 @@
    "id": "m00373",
    "kind": "msg",
    "jp": "＜ＧＡＭＥ・ＯＶＥＲ＞です。",
-   "en": "",
+   "en": "<GAME OVER>",
    "refs": [
     "scene39:5"
    ],
@@ -3744,7 +3744,7 @@
    "id": "m00374",
    "kind": "msg",
    "jp": "＜２号室＞には、後輩の由紀が住んでいる。",
-   "en": "",
+   "en": "My junior Yuki lives in Room 2.",
    "refs": [
     "scene40:1"
    ],
@@ -3754,7 +3754,7 @@
    "id": "m00375",
    "kind": "msg",
    "jp": "きのうとちがって、カギがかかっていて入れないよ。",
-   "en": "",
+   "en": "Unlike yesterday, it's locked and I can't get in.",
    "refs": [
     "scene40:2"
    ],
@@ -3764,7 +3764,7 @@
    "id": "m00376",
    "kind": "msg",
    "jp": "学校での麻奈の人気は、アイドル以上だからなあ・・・。",
-   "en": "",
+   "en": "Mana's popularity at school is more than an idol's...",
    "refs": [
     "scene40:3"
    ],
@@ -3774,7 +3774,7 @@
    "id": "m00377",
    "kind": "msg",
    "jp": "＜コスモス・クラブ＞でしか、麻奈と話すチャンスはないんだ。",
-   "en": "",
+   "en": "The only chance I have to talk to Mana is at the Cosmos Club.",
    "refs": [
     "scene40:4"
    ],
@@ -3784,7 +3784,7 @@
    "id": "m00378",
    "kind": "msg",
    "jp": "もし、麻奈がつき合ってくれなかったら・・・なんて、考えるのはやめよう。",
-   "en": "",
+   "en": "Let's stop thinking about what if Mana won't go out with me...",
    "refs": [
     "scene40:5"
    ],
@@ -3794,7 +3794,7 @@
    "id": "m00379",
    "kind": "msg",
    "jp": "浮気心もいいけれど・・・。",
-   "en": "",
+   "en": "A wandering heart is all well and good...",
    "refs": [
     "scene40:6"
    ],
@@ -3804,7 +3804,7 @@
    "id": "m00380",
    "kind": "msg",
    "jp": "ほどほどにしないと、後悔するかも知れないよ！",
-   "en": "",
+   "en": "If you don't keep it in check, you might regret it!",
    "refs": [
     "scene40:7"
    ],
@@ -3814,7 +3814,7 @@
    "id": "m00381",
    "kind": "msg",
    "jp": "こんな事も、どこかで役に立つ・・・？",
-   "en": "",
+   "en": "Could this come in handy somewhere...?",
    "refs": [
     "scene40:8"
    ],
@@ -3824,7 +3824,7 @@
    "id": "m00382",
    "kind": "msg",
    "jp": "いまは、部屋にいないみたいだね。",
-   "en": "",
+   "en": "She doesn't seem to be in her room right now.",
    "refs": [
     "scene40:9"
    ],
@@ -3834,7 +3834,7 @@
    "id": "m00383",
    "kind": "msg",
    "jp": "ダメだ・・・中で、イビキをかいて眠っているみたいだよ。",
-   "en": "",
+   "en": "No good... sounds like he's snoring away inside.",
    "refs": [
     "scene40:10"
    ],
@@ -3844,7 +3844,7 @@
    "id": "m00384",
    "kind": "msg",
    "jp": "「何じゃ・・・・・・？」",
-   "en": "",
+   "en": "\"What is it......?\"",
    "refs": [
     "scene41:0"
    ],
@@ -3854,7 +3854,7 @@
    "id": "m00385",
    "kind": "msg",
    "jp": "なんと、コタツがある・・・！！",
-   "en": "",
+   "en": "What the... there's a kotatsu...!!",
    "refs": [
     "scene41:1"
    ],
@@ -3864,7 +3864,7 @@
    "id": "m00386",
    "kind": "msg",
    "jp": "友彦さんは、本当にボクの先輩なのかな・・・？",
-   "en": "",
+   "en": "Is Tomohiko-san really my senior...?",
    "refs": [
     "scene41:2"
    ],
@@ -3874,7 +3874,7 @@
    "id": "m00387",
    "kind": "msg",
    "jp": "＜コスモス・クラブ＞の外で会った事が、１度もないんだ。",
-   "en": "",
+   "en": "I've never met him outside the Cosmos Club.",
    "refs": [
     "scene41:3"
    ],
@@ -3884,7 +3884,7 @@
    "id": "m00388",
    "kind": "msg",
    "jp": "「・・・早く、朝メシを食いたい・・・・・・」",
-   "en": "",
+   "en": "\"...I can't wait to eat breakfast......\"",
    "refs": [
     "scene41:4"
    ],
@@ -3894,7 +3894,7 @@
    "id": "m00389",
    "kind": "msg",
    "jp": "「２階へ行っても麻奈に会えなければ、美紗に聞いてみなよ」",
-   "en": "",
+   "en": "\"If you can't meet Mana even on the second floor, try asking Misa.\"",
    "refs": [
     "scene41:5"
    ],
@@ -3904,7 +3904,7 @@
    "id": "m00390",
    "kind": "msg",
    "jp": "「・・・・・・宇宙の愛か・・・」",
-   "en": "",
+   "en": "\"......Cosmic love, huh...\"",
    "refs": [
     "scene41:6"
    ],
@@ -3914,7 +3914,7 @@
    "id": "m00391",
    "kind": "msg",
    "jp": "「ガンバレよ・・・オレにはそれしか云えないゼ！」",
-   "en": "",
+   "en": "\"Do your best... that's all I can say!\"",
    "refs": [
     "scene41:7"
    ],
@@ -3924,7 +3924,7 @@
    "id": "m00392",
    "kind": "msg",
    "jp": "「きのうだと手伝えたんだが・・・悪いな」",
-   "en": "",
+   "en": "\"I could've helped yesterday... sorry.\"",
    "refs": [
     "scene41:8"
    ],
@@ -3934,7 +3934,7 @@
    "id": "m00393",
    "kind": "msg",
    "jp": "麻奈のクチビルが、そっとボク自信をふくんで・・・ほしいなあ。",
-   "en": "",
+   "en": "I wish Mana's lips would gently envelop me...",
    "refs": [
     "scene41:9"
    ],
@@ -3944,7 +3944,7 @@
    "id": "m00394",
    "kind": "msg",
    "jp": "あとは、外へ行くだけだから、気がらくだよね。",
-   "en": "",
+   "en": "All that's left is to go outside, so I'm relieved.",
    "refs": [
     "scene41:10"
    ],
@@ -3954,7 +3954,7 @@
    "id": "m00395",
    "kind": "msg",
    "jp": "あたって、くだけ・・・たくないよ！",
-   "en": "",
+   "en": "I don't want to hit and break...!",
    "refs": [
     "scene41:11"
    ],
@@ -3964,7 +3964,7 @@
    "id": "m00396",
    "kind": "msg",
    "jp": "ここは、２階へ行くための階段です。",
-   "en": "",
+   "en": "These are the stairs to the second floor.",
    "refs": [
     "scene42:0"
    ],
@@ -3974,7 +3974,7 @@
    "id": "m00397",
    "kind": "msg",
    "jp": "２階へ行くには、この階段を使うしかないんだ。",
-   "en": "",
+   "en": "These stairs are the only way to the second floor.",
    "refs": [
     "scene42:1"
    ],
@@ -3984,7 +3984,7 @@
    "id": "m00398",
    "kind": "msg",
    "jp": "麻奈にはまさか、ＢＦなどいないよ・・・ね。",
-   "en": "",
+   "en": "There's no way Mana has a boyfriend... right?",
    "refs": [
     "scene42:2"
    ],
@@ -3994,7 +3994,7 @@
    "id": "m00399",
    "kind": "msg",
    "jp": "麻奈ったら、こんな時間に何をしているのかな？",
-   "en": "",
+   "en": "What is Mana doing at this hour?",
    "refs": [
     "scene42:3"
    ],
@@ -4004,7 +4004,7 @@
    "id": "m00400",
    "kind": "msg",
    "jp": "もう、夕食のじかんだよ！",
-   "en": "",
+   "en": "It's already dinner time!",
    "refs": [
     "scene42:4"
    ],
@@ -4014,7 +4014,7 @@
    "id": "m00401",
    "kind": "msg",
    "jp": "まなは、いったいどこにいるのだろう？",
-   "en": "",
+   "en": "Where in the world is Mana?",
    "refs": [
     "scene42:5"
    ],
@@ -4024,7 +4024,7 @@
    "id": "m00402",
    "kind": "msg",
    "jp": "今夜中に見つけないと・・・（ＧＡＭＥが終わっちゃうよ）。",
-   "en": "",
+   "en": "If I don't find her tonight... (the game will end).",
    "refs": [
     "scene42:6"
    ],
@@ -4034,7 +4034,7 @@
    "id": "m00403",
    "kind": "msg",
    "jp": "もう、そとへいってもいいかな・・・？",
-   "en": "",
+   "en": "Can I go outside now...?",
    "refs": [
     "scene42:7"
    ],
@@ -4044,7 +4044,7 @@
    "id": "m00404",
    "kind": "msg",
    "jp": "階段のおどりり場に上がって来た。",
-   "en": "",
+   "en": "I came up to the stair landing.",
    "refs": [
     "scene43:0"
    ],
@@ -4054,7 +4054,7 @@
    "id": "m00405",
    "kind": "msg",
    "jp": "このおどり場のドアを開けないと、２階へ行けないよ。",
-   "en": "",
+   "en": "I can't get to the second floor without opening this landing door.",
    "refs": [
     "scene43:1"
    ],
@@ -4064,7 +4064,7 @@
    "id": "m00406",
    "kind": "msg",
    "jp": "カギがないと、このドアを開けることが出来ないんだ。",
-   "en": "",
+   "en": "Without a key, I can't open this door.",
    "refs": [
     "scene43:2"
    ],
@@ -4074,7 +4074,7 @@
    "id": "m00407",
    "kind": "msg",
    "jp": "この上に、麻奈の部屋があるんだ！",
-   "en": "",
+   "en": "Mana's room is up there!",
    "refs": [
     "scene43:3"
    ],
@@ -4084,7 +4084,7 @@
    "id": "m00408",
    "kind": "msg",
    "jp": "どこかでカギを手にいれなくちゃ・・・！",
-   "en": "",
+   "en": "I have to get a key from somewhere...!",
    "refs": [
     "scene43:4"
    ],
@@ -4094,7 +4094,7 @@
    "id": "m00409",
    "kind": "msg",
    "jp": "圭子先生からかりているカギがあるけれど・・・。",
-   "en": "",
+   "en": "I have the key I borrowed from Keiko-sensei...",
    "refs": [
     "scene43:5"
    ],
@@ -4104,7 +4104,7 @@
    "id": "m00410",
    "kind": "msg",
    "jp": "友彦さんがくれた、ニセモノのカギがあるぞ！",
-   "en": "",
+   "en": "I have the fake key Tomohiko-san gave me!",
    "refs": [
     "scene43:6"
    ],
@@ -4114,7 +4114,7 @@
    "id": "m00411",
    "kind": "msg",
    "jp": "カギは２つある・・・どちらをつかおうか？",
-   "en": "",
+   "en": "I have two keys... which one should I use?",
    "refs": [
     "scene43:7"
    ],
@@ -4124,7 +4124,7 @@
    "id": "m00412",
    "kind": "msg",
    "jp": "いまは、まだ使わないほうがいいよ。",
-   "en": "",
+   "en": "Better not to use it yet.",
    "refs": [
     "scene43:8"
    ],
@@ -4134,7 +4134,7 @@
    "id": "m00413",
    "kind": "msg",
    "jp": "ボクは、圭子先生からかりたカギを使って、ドアを開けた。",
-   "en": "",
+   "en": "I used the key I borrowed from Keiko-sensei to open the door.",
    "refs": [
     "scene43:9"
    ],
@@ -4144,7 +4144,7 @@
    "id": "m00414",
    "kind": "msg",
    "jp": "よし、２階へ行こう！",
-   "en": "",
+   "en": "Alright, let's go to the second floor!",
    "refs": [
     "scene43:10"
    ],
@@ -4154,7 +4154,7 @@
    "id": "m00415",
    "kind": "msg",
    "jp": "カギは、こわれてしまったけれど、ドアを開ける事が出来た。",
-   "en": "",
+   "en": "The key broke, but I managed to open the door.",
    "refs": [
     "scene43:11"
    ],
@@ -4164,7 +4164,7 @@
    "id": "m00416",
    "kind": "msg",
    "jp": "ここで使っても、しょうがないよ！",
-   "en": "",
+   "en": "Using it here is pointless!",
    "refs": [
     "scene43:12"
    ],
@@ -4174,7 +4174,7 @@
    "id": "m00417",
    "kind": "msg",
    "jp": "ここは、２階の廊下です。",
-   "en": "",
+   "en": "This is the second-floor hallway.",
    "refs": [
     "scene44:0"
    ],
@@ -4184,7 +4184,7 @@
    "id": "m00418",
    "kind": "msg",
    "jp": "廊下の先は、いきどまりになっているよ。",
-   "en": "",
+   "en": "The hallway ends at a dead end.",
    "refs": [
     "scene44:1"
    ],
@@ -4194,7 +4194,7 @@
    "id": "m00419",
    "kind": "msg",
    "jp": "窓があって、カベになっている。",
-   "en": "",
+   "en": "There's a window and a wall.",
    "refs": [
     "scene44:2"
    ],
@@ -4204,7 +4204,7 @@
    "id": "m00420",
    "kind": "msg",
    "jp": "前には、＜９号室＞と＜８号室＞、",
-   "en": "",
+   "en": "Ahead are Rooms 9 and 8,",
    "refs": [
     "scene44:3"
    ],
@@ -4214,7 +4214,7 @@
    "id": "m00421",
    "kind": "msg",
    "jp": "後ろには、下へ行く階段とトイレがある。",
-   "en": "",
+   "en": "behind are the stairs down and the toilet.",
    "refs": [
     "scene44:4"
    ],
@@ -4224,7 +4224,7 @@
    "id": "m00422",
    "kind": "msg",
    "jp": "前には、＜６号室＞と＜７号室＞、",
-   "en": "",
+   "en": "Ahead are Rooms 6 and 7,",
    "refs": [
     "scene44:5"
    ],
@@ -4234,7 +4234,7 @@
    "id": "m00423",
    "kind": "msg",
    "jp": "後ろには、小さなキッチンがある。",
-   "en": "",
+   "en": "behind is a small kitchen.",
    "refs": [
     "scene44:6"
    ],
@@ -4244,7 +4244,7 @@
    "id": "m00424",
    "kind": "msg",
    "jp": "麻奈、とうとうボクは、ここまできたよ！",
-   "en": "",
+   "en": "Mana, I've finally made it this far!",
    "refs": [
     "scene44:7"
    ],
@@ -4254,7 +4254,7 @@
    "id": "m00425",
    "kind": "msg",
    "jp": "せっかく、苦労してここまで来たのになあ・・・。",
-   "en": "",
+   "en": "After all that trouble to get here...",
    "refs": [
     "scene44:8"
    ],
@@ -4264,7 +4264,7 @@
    "id": "m00426",
    "kind": "msg",
    "jp": "さあて、どの部屋から行ってみようか・・・？",
-   "en": "",
+   "en": "Now, which room should I try first...?",
    "refs": [
     "scene44:9"
    ],
@@ -4274,7 +4274,7 @@
    "id": "m00427",
    "kind": "msg",
    "jp": "やり残しがなければ、麻奈に会いに行こうよ！",
-   "en": "",
+   "en": "If there's nothing left undone, let's go meet Mana!",
    "refs": [
     "scene44:10"
    ],
@@ -4284,7 +4284,7 @@
    "id": "m00428",
    "kind": "msg",
    "jp": "ここは、＜７号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 7's door.",
    "refs": [
     "scene45:0"
    ],
@@ -4294,7 +4294,7 @@
    "id": "m00429",
    "kind": "msg",
    "jp": "ここには、３年生の島本瑠美さんが住んでいるんだ。",
-   "en": "",
+   "en": "Third-year Shimamoto Rumi-san lives here.",
    "refs": [
     "scene45:1"
    ],
@@ -4304,7 +4304,7 @@
    "id": "m00430",
    "kind": "msg",
    "jp": "もうすぐだ・・・もうすぐ麻奈に会える！",
-   "en": "",
+   "en": "Almost there... I'll meet Mana soon!",
    "refs": [
     "scene45:2"
    ],
@@ -4314,7 +4314,7 @@
    "id": "m00431",
    "kind": "msg",
    "jp": "・・・麻奈って、ふしぎな娘だな。",
-   "en": "",
+   "en": "...Mana is a mysterious girl.",
    "refs": [
     "scene45:3"
    ],
@@ -4324,7 +4324,7 @@
    "id": "m00432",
    "kind": "msg",
    "jp": "ここまで来たら、もうあわてる事はないよね。",
-   "en": "",
+   "en": "Now that I've come this far, there's no need to rush.",
    "refs": [
     "scene45:4"
    ],
@@ -4334,7 +4334,7 @@
    "id": "m00433",
    "kind": "msg",
    "jp": "好きにしてよ・・・！",
-   "en": "",
+   "en": "Do what you like...!",
    "refs": [
     "scene45:5"
    ],
@@ -4344,7 +4344,7 @@
    "id": "m00434",
    "kind": "msg",
    "jp": "どれどれ・・・・・・。",
-   "en": "",
+   "en": "Let's see......",
    "refs": [
     "scene45:6"
    ],
@@ -4354,7 +4354,7 @@
    "id": "m00435",
    "kind": "msg",
    "jp": "まだ、しているのかな・・・。",
-   "en": "",
+   "en": "Are they still at it...?",
    "refs": [
     "scene45:7"
    ],
@@ -4364,7 +4364,7 @@
    "id": "m00436",
    "kind": "msg",
    "jp": "ダメだ・・・くらくて、中が見えないよ。",
-   "en": "",
+   "en": "No good... it's too dark to see inside.",
    "refs": [
     "scene45:8"
    ],
@@ -4374,7 +4374,7 @@
    "id": "m00437",
    "kind": "msg",
    "jp": "・・・・・・瑠美さんと翠さんだ！",
-   "en": "",
+   "en": "......It's Rumi-san and Midori-san!",
    "refs": [
     "scene46:0"
    ],
@@ -4384,7 +4384,7 @@
    "id": "m00438",
    "kind": "msg",
    "jp": "女同士なんて、もったいないなぁ・・・。",
-   "en": "",
+   "en": "Two women together... what a waste...",
    "refs": [
     "scene46:1"
    ],
@@ -4394,7 +4394,7 @@
    "id": "m00439",
    "kind": "msg",
    "jp": "・・・すごいなぁ。",
-   "en": "",
+   "en": "...Amazing.",
    "refs": [
     "scene46:2"
    ],
@@ -4404,7 +4404,7 @@
    "id": "m00440",
    "kind": "msg",
    "jp": "女同士は、きりがないらしいから・・・。",
-   "en": "",
+   "en": "They say women together never finish...",
    "refs": [
     "scene46:3"
    ],
@@ -4414,7 +4414,7 @@
    "id": "m00441",
    "kind": "msg",
    "jp": "ここは、＜８号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 8's door.",
    "refs": [
     "scene47:0"
    ],
@@ -4424,7 +4424,7 @@
    "id": "m00442",
    "kind": "msg",
    "jp": "ここには、三年生の三谷翠さんが住んでいるんだ。",
-   "en": "",
+   "en": "Third-year Mitani Midori-san lives here.",
    "refs": [
     "scene47:1"
    ],
@@ -4434,7 +4434,7 @@
    "id": "m00443",
    "kind": "msg",
    "jp": "＜コスモス・クラブ＞で、ただひとりボクのニガ手な人だよ。",
-   "en": "",
+   "en": "She's the only person in the Cosmos Club I can't handle.",
    "refs": [
     "scene47:2"
    ],
@@ -4444,7 +4444,7 @@
    "id": "m00444",
    "kind": "msg",
    "jp": "ワン・ドア・ツ−・ロック・・・ボクのカギじゃあ、開けられないよ。",
-   "en": "",
+   "en": "One door, two locks... my key can't open this.",
    "refs": [
     "scene47:3"
    ],
@@ -4454,7 +4454,7 @@
    "id": "m00445",
    "kind": "msg",
    "jp": "麻奈の部屋は、＜６号室＞だよ。",
-   "en": "",
+   "en": "Mana's room is Room 6.",
    "refs": [
     "scene47:4"
    ],
@@ -4464,7 +4464,7 @@
    "id": "m00446",
    "kind": "msg",
    "jp": "・・・しかし、麻奈はどこから、外へ出るんだろう？",
-   "en": "",
+   "en": "...But where does Mana go out from?",
    "refs": [
     "scene47:5"
    ],
@@ -4474,7 +4474,7 @@
    "id": "m00447",
    "kind": "msg",
    "jp": "とにかく、麻奈に会わなくちゃ・・・。",
-   "en": "",
+   "en": "Anyway, I have to meet Mana...",
    "refs": [
     "scene47:6"
    ],
@@ -4484,7 +4484,7 @@
    "id": "m00448",
    "kind": "msg",
    "jp": "また、＜７号室＞をのぞきに行こうか・・・？",
-   "en": "",
+   "en": "Should I go peek into Room 7 again...?",
    "refs": [
     "scene47:7"
    ],
@@ -4494,7 +4494,7 @@
    "id": "m00449",
    "kind": "msg",
    "jp": "まだ、しているのかな・・・？",
-   "en": "",
+   "en": "Are they still at it...?",
    "refs": [
     "scene47:8"
    ],
@@ -4504,7 +4504,7 @@
    "id": "m00450",
    "kind": "msg",
    "jp": "何が見えるかな・・・？",
-   "en": "",
+   "en": "What can I see...?",
    "refs": [
     "scene47:9"
    ],
@@ -4514,7 +4514,7 @@
    "id": "m00451",
    "kind": "msg",
    "jp": "ナニが見えるかな・・・？",
-   "en": "",
+   "en": "What can I see...?",
    "refs": [
     "scene47:10"
    ],
@@ -4524,7 +4524,7 @@
    "id": "m00452",
    "kind": "msg",
    "jp": "何も見えないし、何も聞こえないよ。",
-   "en": "",
+   "en": "I can't see anything and I can't hear anything.",
    "refs": [
     "scene47:11"
    ],
@@ -4534,7 +4534,7 @@
    "id": "m00453",
    "kind": "msg",
    "jp": "あっ・・・！",
-   "en": "",
+   "en": "Ah......!",
    "refs": [
     "scene48:0"
    ],
@@ -4544,7 +4544,7 @@
    "id": "m00454",
    "kind": "msg",
    "jp": "あんな事してる・・・！！",
-   "en": "",
+   "en": "They're doing that......!!",
    "refs": [
     "scene48:1"
    ],
@@ -4554,7 +4554,7 @@
    "id": "m00455",
    "kind": "msg",
    "jp": "まぜて欲しいけれど・・・。",
-   "en": "",
+   "en": "I'd like to join in, but...",
    "refs": [
     "scene48:2"
    ],
@@ -4564,7 +4564,7 @@
    "id": "m00456",
    "kind": "msg",
    "jp": "ここは、グッとガマンのコ！",
-   "en": "",
+   "en": "This is where I grit my teeth and bear it!",
    "refs": [
     "scene48:3"
    ],
@@ -4574,7 +4574,7 @@
    "id": "m00457",
    "kind": "msg",
    "jp": "二人も相手にしていたら、麻奈に会う前に朝になっちゃうよ！",
-   "en": "",
+   "en": "If I dealt with both of them, it'd be morning before I met Mana!",
    "refs": [
     "scene48:4"
    ],
@@ -4584,7 +4584,7 @@
    "id": "m00458",
    "kind": "msg",
    "jp": "ここは、＜９号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 9's door.",
    "refs": [
     "scene49:0"
    ],
@@ -4594,7 +4594,7 @@
    "id": "m00459",
    "kind": "msg",
    "jp": "ここには、三年生の岡田美沙さんが住んでいる。",
-   "en": "",
+   "en": "Third-year Okada Misa-san lives here.",
    "refs": [
     "scene49:1"
    ],
@@ -4604,7 +4604,7 @@
    "id": "m00460",
    "kind": "msg",
    "jp": "麻奈は、リビングで良く美沙さんと話していたよね。",
-   "en": "",
+   "en": "Mana often talks with Misa-san in the living room.",
    "refs": [
     "scene49:2"
    ],
@@ -4614,7 +4614,7 @@
    "id": "m00461",
    "kind": "msg",
    "jp": "この部屋の向かい側が、麻奈の部屋だけれど・・・。",
-   "en": "",
+   "en": "Mana's room is across from this one...",
    "refs": [
     "scene49:3"
    ],
@@ -4624,7 +4624,7 @@
    "id": "m00462",
    "kind": "msg",
    "jp": "せっかくだから、美沙さんに会って行こうか？",
-   "en": "",
+   "en": "Since I'm here, should I go meet Misa-san?",
    "refs": [
     "scene49:4"
    ],
@@ -4634,7 +4634,7 @@
    "id": "m00463",
    "kind": "msg",
    "jp": "特に、変わった事などおこらなかったよ。",
-   "en": "",
+   "en": "Nothing particularly unusual happened.",
    "refs": [
     "scene49:5"
    ],
@@ -4644,7 +4644,7 @@
    "id": "m00464",
    "kind": "msg",
    "jp": "「どなた、ですか・・・？」",
-   "en": "",
+   "en": "\"Who is it...?\"",
    "refs": [
     "scene49:6"
    ],
@@ -4654,7 +4654,7 @@
    "id": "m00465",
    "kind": "msg",
    "jp": "「・・・どうぞ、お入りなさい」",
-   "en": "",
+   "en": "\"...Please, come in.\"",
    "refs": [
     "scene49:7"
    ],
@@ -4664,7 +4664,7 @@
    "id": "m00466",
    "kind": "msg",
    "jp": "この圭子先生が、かしてくれたカギでは、",
-   "en": "",
+   "en": "With the key Keiko-sensei lent me,",
    "refs": [
     "scene49:8"
    ],
@@ -4674,7 +4674,7 @@
    "id": "m00467",
    "kind": "msg",
    "jp": "＜９号室＞のドアは、開けられなかった。",
-   "en": "",
+   "en": "I couldn't open Room 9's door.",
    "refs": [
     "scene49:9"
    ],
@@ -4684,7 +4684,7 @@
    "id": "m00468",
    "kind": "msg",
    "jp": "ニセモノのカギは、こわれてしまったけれど、",
-   "en": "",
+   "en": "The fake key broke, but",
    "refs": [
     "scene49:10",
     "scene53:9"
@@ -4695,7 +4695,7 @@
    "id": "m00469",
    "kind": "msg",
    "jp": "＜９号室＞のドアを、開ける事が出来た。",
-   "en": "",
+   "en": "I was able to open Room 9's door.",
    "refs": [
     "scene49:11"
    ],
@@ -4705,7 +4705,7 @@
    "id": "m00470",
    "kind": "msg",
    "jp": "「まぁ、むかしの五円玉を、お持ちなの？」",
-   "en": "",
+   "en": "\"Oh my, you have an old five-yen coin?\"",
    "refs": [
     "scene49:12"
    ],
@@ -4715,7 +4715,7 @@
    "id": "m00471",
    "kind": "msg",
    "jp": "「わたしに、見せてくださいな・・・」",
-   "en": "",
+   "en": "\"Please, let me see it...\"",
    "refs": [
     "scene49:13"
    ],
@@ -4725,7 +4725,7 @@
    "id": "m00472",
    "kind": "msg",
    "jp": "「どうしてカギを・・・出て行って下さい！！」",
-   "en": "",
+   "en": "\"How did you get a key... please leave!!\"",
    "refs": [
     "scene50:0"
    ],
@@ -4735,7 +4735,7 @@
    "id": "m00473",
    "kind": "msg",
    "jp": "「ステキな、お客様ね・・・」",
-   "en": "",
+   "en": "\"What a wonderful guest...\"",
    "refs": [
     "scene50:1"
    ],
@@ -4745,7 +4745,7 @@
    "id": "m00474",
    "kind": "msg",
    "jp": "ボクと美沙さんが、いるだけだよ。",
-   "en": "",
+   "en": "It's just me and Misa-san here.",
    "refs": [
     "scene50:2"
    ],
@@ -4755,7 +4755,7 @@
    "id": "m00475",
    "kind": "msg",
    "jp": "おこって、ボクをにらみつけている。",
-   "en": "",
+   "en": "She's angry and glaring at me.",
    "refs": [
     "scene50:3"
    ],
@@ -4765,7 +4765,7 @@
    "id": "m00476",
    "kind": "msg",
    "jp": "やさしい、お姉さん−っていう感じだね。",
-   "en": "",
+   "en": "She gives off a gentle older-sister vibe.",
    "refs": [
     "scene50:4"
    ],
@@ -4775,7 +4775,7 @@
    "id": "m00477",
    "kind": "msg",
    "jp": "「帰って下さい、帰って下さい・・・！」",
-   "en": "",
+   "en": "\"Go home, please go home...!\"",
    "refs": [
     "scene50:5"
    ],
@@ -4785,7 +4785,7 @@
    "id": "m00478",
    "kind": "msg",
    "jp": "「あなたの行動力って、ステキね・・・」",
-   "en": "",
+   "en": "\"Your initiative is wonderful...\"",
    "refs": [
     "scene50:6"
    ],
@@ -4795,7 +4795,7 @@
    "id": "m00479",
    "kind": "msg",
    "jp": "「・・・男の子って、みんなそうなのかしら？」",
-   "en": "",
+   "en": "\"...Are all boys like that?\"",
    "refs": [
     "scene50:7"
    ],
@@ -4805,7 +4805,7 @@
    "id": "m00480",
    "kind": "msg",
    "jp": "「あらっ、まだ麻奈ちゃんに会っていないの？」",
-   "en": "",
+   "en": "\"Oh, you haven't met Mana-chan yet?\"",
    "refs": [
     "scene50:8"
    ],
@@ -4815,7 +4815,7 @@
    "id": "m00481",
    "kind": "msg",
    "jp": "「あなたなら、大丈夫・・・ガンバッテ下さいね！」",
-   "en": "",
+   "en": "\"You'll be fine... do your best!\"",
    "refs": [
     "scene50:9"
    ],
@@ -4825,7 +4825,7 @@
    "id": "m00482",
    "kind": "msg",
    "jp": "「もう、麻奈ちゃんには・・・？」",
-   "en": "",
+   "en": "\"Have you already... with Mana-chan?\"",
    "refs": [
     "scene50:10"
    ],
@@ -4835,7 +4835,7 @@
    "id": "m00483",
    "kind": "msg",
    "jp": "「麻奈ちゃんのお部屋は、お向かいよ」",
-   "en": "",
+   "en": "\"Mana-chan's room is across the hall.\"",
    "refs": [
     "scene50:11"
    ],
@@ -4845,7 +4845,7 @@
    "id": "m00484",
    "kind": "msg",
    "jp": "「麻奈ちゃん、いなかったの？」",
-   "en": "",
+   "en": "\"Mana-chan wasn't there?\"",
    "refs": [
     "scene50:12"
    ],
@@ -4855,7 +4855,7 @@
    "id": "m00485",
    "kind": "msg",
    "jp": "「ヘンね・・・どこへ、行ったのかしら・・・」",
-   "en": "",
+   "en": "\"That's strange... where could she have gone...\"",
    "refs": [
     "scene50:13"
    ],
@@ -4865,7 +4865,7 @@
    "id": "m00486",
    "kind": "msg",
    "jp": "「・・・また、グランドに行ったのかも知れないわね」",
-   "en": "",
+   "en": "\"...She might have gone to the schoolyard again.\"",
    "refs": [
     "scene50:14"
    ],
@@ -4875,7 +4875,7 @@
    "id": "m00487",
    "kind": "msg",
    "jp": "「麻奈ちゃん、ときどき夜中に行っているみたいよ」",
-   "en": "",
+   "en": "\"Mana-chan sometimes goes there at night.\"",
    "refs": [
     "scene50:15"
    ],
@@ -4885,7 +4885,7 @@
    "id": "m00488",
    "kind": "msg",
    "jp": "「あなた・・・見てしまったのね」",
-   "en": "",
+   "en": "\"You... saw it, didn't you.\"",
    "refs": [
     "scene50:16"
    ],
@@ -4895,7 +4895,7 @@
    "id": "m00489",
    "kind": "msg",
    "jp": "「くわしくは、麻奈ちゃんからお聞きなさいな」",
-   "en": "",
+   "en": "\"Ask Mana-chan for the details.\"",
    "refs": [
     "scene50:17"
    ],
@@ -4905,7 +4905,7 @@
    "id": "m00490",
    "kind": "msg",
    "jp": "「いま、麻奈ちゃんはグランドにいるわよ」",
-   "en": "",
+   "en": "\"Mana-chan is at the schoolyard right now.\"",
    "refs": [
     "scene50:18"
    ],
@@ -4915,7 +4915,7 @@
    "id": "m00491",
    "kind": "msg",
    "jp": "「・・・麻奈ちゃんは、グランドにいるの」",
-   "en": "",
+   "en": "\"...Mana-chan is at the schoolyard.\"",
    "refs": [
     "scene50:19"
    ],
@@ -4925,7 +4925,7 @@
    "id": "m00492",
    "kind": "msg",
    "jp": "「本当に麻奈ちゃんが好きなら、行ってみるといいわ」",
-   "en": "",
+   "en": "\"If you truly love Mana-chan, you should go see.\"",
    "refs": [
     "scene50:20"
    ],
@@ -4935,7 +4935,7 @@
    "id": "m00493",
    "kind": "msg",
    "jp": "「やめて・・・わたし、そんな女じゃない！」",
-   "en": "",
+   "en": "\"Stop... I'm not that kind of woman!\"",
    "refs": [
     "scene50:21"
    ],
@@ -4945,7 +4945,7 @@
    "id": "m00494",
    "kind": "msg",
    "jp": "麻奈の事を、美沙さんに聞いてみようよ。",
-   "en": "",
+   "en": "Let's ask Misa-san about Mana.",
    "refs": [
     "scene50:22"
    ],
@@ -4955,7 +4955,7 @@
    "id": "m00495",
    "kind": "msg",
    "jp": "あの部屋・・・あれは、何だったんだ！？",
-   "en": "",
+   "en": "That room... what was that!?",
    "refs": [
     "scene50:23"
    ],
@@ -4965,7 +4965,7 @@
    "id": "m00496",
    "kind": "msg",
    "jp": "美沙さんなら、麻奈の事を良く知っているんじゃないかな？",
-   "en": "",
+   "en": "Misa-san probably knows a lot about Mana.",
    "refs": [
     "scene50:24"
    ],
@@ -4975,7 +4975,7 @@
    "id": "m00497",
    "kind": "msg",
    "jp": "「バカね・・・麻奈ちゃんを好きなのに・・・・・・」",
-   "en": "",
+   "en": "\"You fool... even though you love Mana-chan......\"",
    "refs": [
     "scene51:0"
    ],
@@ -4985,7 +4985,7 @@
    "id": "m00498",
    "kind": "msg",
    "jp": "・・・ボクに、されるがままだ。",
-   "en": "",
+   "en": "...She's letting me do as I please.",
    "refs": [
     "scene51:1"
    ],
@@ -4995,7 +4995,7 @@
    "id": "m00499",
    "kind": "msg",
    "jp": "「もう、はなれて・・・」",
-   "en": "",
+   "en": "\"Stop, pull away...\"",
    "refs": [
     "scene51:2"
    ],
@@ -5005,7 +5005,7 @@
    "id": "m00500",
    "kind": "msg",
    "jp": "「・・・何も、話さないで」",
-   "en": "",
+   "en": "\"...Don't say anything.\"",
    "refs": [
     "scene51:3"
    ],
@@ -5015,7 +5015,7 @@
    "id": "m00501",
    "kind": "msg",
    "jp": "「この事は、麻奈ちゃんにヒミツにして・・・」",
-   "en": "",
+   "en": "\"Keep this a secret from Mana-chan...\"",
    "refs": [
     "scene51:4"
    ],
@@ -5025,7 +5025,7 @@
    "id": "m00502",
    "kind": "msg",
    "jp": "「約束して・・・麻奈ちゃんに、かなしい思いはさせないと」",
-   "en": "",
+   "en": "\"Promise me... that you won't make Mana-chan sad.\"",
    "refs": [
     "scene51:5"
    ],
@@ -5035,7 +5035,7 @@
    "id": "m00503",
    "kind": "msg",
    "jp": "「・・・・・・バカね」",
-   "en": "",
+   "en": "\"......You fool.\"",
    "refs": [
     "scene51:6"
    ],
@@ -5045,7 +5045,7 @@
    "id": "m00504",
    "kind": "msg",
    "jp": "「あなた、やさしいのね・・・」",
-   "en": "",
+   "en": "\"You're so gentle...\"",
    "refs": [
     "scene51:7"
    ],
@@ -5055,7 +5055,7 @@
    "id": "m00505",
    "kind": "msg",
    "jp": "「あぁ・・・・・・」",
-   "en": "",
+   "en": "\"Ah......\"",
    "refs": [
     "scene51:8"
    ],
@@ -5065,7 +5065,7 @@
    "id": "m00506",
    "kind": "msg",
    "jp": "「あっ、あっ、あっ・・・！」",
-   "en": "",
+   "en": "\"Ah, ah, ah...!\"",
    "refs": [
     "scene51:9"
    ],
@@ -5075,7 +5075,7 @@
    "id": "m00507",
    "kind": "msg",
    "jp": "「うっ、うぅ・・・くっ！」",
-   "en": "",
+   "en": "\"Uh, uu... kuh!\"",
    "refs": [
     "scene51:10"
    ],
@@ -5085,7 +5085,7 @@
    "id": "m00508",
    "kind": "msg",
    "jp": "「はぁぁぁぁぁ・・・あぁん」",
-   "en": "",
+   "en": "\"Haaaaaa... aan.\"",
    "refs": [
     "scene51:11"
    ],
@@ -5095,7 +5095,7 @@
    "id": "m00509",
    "kind": "msg",
    "jp": "「ダメ・・・そこは・・・・・・」",
-   "en": "",
+   "en": "\"No... not there......\"",
    "refs": [
     "scene51:12"
    ],
@@ -5105,7 +5105,7 @@
    "id": "m00510",
    "kind": "msg",
    "jp": "「あふっ・・・・・・あぁぁぁ・・・あぁん！」",
-   "en": "",
+   "en": "\"Afu...... aaaah... aan!\"",
    "refs": [
     "scene51:13"
    ],
@@ -5115,7 +5115,7 @@
    "id": "m00511",
    "kind": "msg",
    "jp": "「あぁぁぁぁ・・・・・・！」",
-   "en": "",
+   "en": "\"Aaaaa......!\"",
    "refs": [
     "scene52:0"
    ],
@@ -5125,7 +5125,7 @@
    "id": "m00512",
    "kind": "msg",
    "jp": "「・・・・・・・・・」",
-   "en": "",
+   "en": "「・・・・・・・・・」",
    "refs": [
     "scene52:1"
    ],
@@ -5135,7 +5135,7 @@
    "id": "m00513",
    "kind": "msg",
    "jp": "「・・・麻奈ちゃんに、わるい事したわ」",
-   "en": "",
+   "en": "\"...I've done something wrong to Mana-chan.\"",
    "refs": [
     "scene52:2"
    ],
@@ -5145,7 +5145,7 @@
    "id": "m00514",
    "kind": "msg",
    "jp": "「しばらく、しばらくこのままでいてね・・・」",
-   "en": "",
+   "en": "\"Stay like this for a while, just a while...\"",
    "refs": [
     "scene52:3"
    ],
@@ -5155,7 +5155,7 @@
    "id": "m00515",
    "kind": "msg",
    "jp": "ここは、＜６号室＞のドアの前です。",
-   "en": "",
+   "en": "This is in front of Room 6's door.",
    "refs": [
     "scene53:0"
    ],
@@ -5165,7 +5165,7 @@
    "id": "m00516",
    "kind": "msg",
    "jp": "ここには、ボクの一目ボレした工藤麻奈が住んでいるんだ！",
-   "en": "",
+   "en": "Kudou Mana, the girl I fell for at first sight, lives here!",
    "refs": [
     "scene53:1"
    ],
@@ -5175,7 +5175,7 @@
    "id": "m00517",
    "kind": "msg",
    "jp": "麻奈・・・愛してる！",
-   "en": "",
+   "en": "Mana... I love you!",
    "refs": [
     "scene53:2"
    ],
@@ -5185,7 +5185,7 @@
    "id": "m00518",
    "kind": "msg",
    "jp": "麻奈は、まだ戻って来ていないみたいだよ。",
-   "en": "",
+   "en": "Mana doesn't seem to have come back yet.",
    "refs": [
     "scene53:3"
    ],
@@ -5195,7 +5195,7 @@
    "id": "m00519",
    "kind": "msg",
    "jp": "ここまで来て、まよう事ないよ！",
-   "en": "",
+   "en": "No need to hesitate now that I've come this far!",
    "refs": [
     "scene53:4"
    ],
@@ -5205,7 +5205,7 @@
    "id": "m00520",
    "kind": "msg",
    "jp": "麻奈を、麻奈をさがさなくちゃ・・・！！",
-   "en": "",
+   "en": "I have to find Mana, find Mana...!!",
    "refs": [
     "scene53:5"
    ],
@@ -5215,7 +5215,7 @@
    "id": "m00521",
    "kind": "msg",
    "jp": "さぁ、麻奈に会いに行こうよ！",
-   "en": "",
+   "en": "Come on, let's go meet Mana!",
    "refs": [
     "scene53:6"
    ],
@@ -5225,7 +5225,7 @@
    "id": "m00522",
    "kind": "msg",
    "jp": "なんだか、カタイ音がするな・・・。",
-   "en": "",
+   "en": "I hear a hard, solid sound...",
    "refs": [
     "scene53:7"
    ],
@@ -5235,7 +5235,7 @@
    "id": "m00523",
    "kind": "msg",
    "jp": "いないのかな・・・ノックしてもへんじがないよ。",
-   "en": "",
+   "en": "Is she not here... no answer even when I knock.",
    "refs": [
     "scene53:8"
    ],
@@ -5245,7 +5245,7 @@
    "id": "m00524",
    "kind": "msg",
    "jp": "ドアが開いたので、ボクは部屋に入って行った・・・。",
-   "en": "",
+   "en": "The door opened, so I stepped into the room...",
    "refs": [
     "scene53:10"
    ],
@@ -5255,7 +5255,7 @@
    "id": "m00525",
    "kind": "msg",
    "jp": "どこに、どうゆうふうに使うつもりなの？",
-   "en": "",
+   "en": "Where and how do you plan to use it?",
    "refs": [
     "scene53:11"
    ],
@@ -5265,7 +5265,7 @@
    "id": "m00526",
    "kind": "msg",
    "jp": "せっかく、ここまで来たのに・・・。",
-   "en": "",
+   "en": "After coming all this way...",
    "refs": [
     "scene54:0"
    ],
@@ -5275,7 +5275,7 @@
    "id": "m00527",
    "kind": "msg",
    "jp": "麻奈は、すぐ戻って来るのかな？",
-   "en": "",
+   "en": "Will Mana come back soon?",
    "refs": [
     "scene54:1"
    ],
@@ -5285,7 +5285,7 @@
    "id": "m00528",
    "kind": "msg",
    "jp": "カギはあるんだから、また来よう。",
-   "en": "",
+   "en": "I have the key, so I'll come back.",
    "refs": [
     "scene54:2"
    ],
@@ -5295,7 +5295,7 @@
    "id": "m00529",
    "kind": "msg",
    "jp": "あれっ、さっきはちがう部屋だったのに・・・。",
-   "en": "",
+   "en": "Huh, it was a different room a moment ago...",
    "refs": [
     "scene54:3"
    ],
@@ -5305,7 +5305,7 @@
    "id": "m00530",
    "kind": "msg",
    "jp": "・・・つかれているのかな？",
-   "en": "",
+   "en": "...Am I tired?",
    "refs": [
     "scene54:4"
    ],
@@ -5315,7 +5315,7 @@
    "id": "m00531",
    "kind": "msg",
    "jp": "なっ、なんだこの部屋は・・・！？",
-   "en": "",
+   "en": "Wh-what is this room...!?",
    "refs": [
     "scene55:0"
    ],
@@ -5325,7 +5325,7 @@
    "id": "m00532",
    "kind": "msg",
    "jp": "・・・ここが、麻奈の部屋なのか？",
-   "en": "",
+   "en": "...Is this really Mana's room?",
    "refs": [
     "scene55:1"
    ],
@@ -5335,7 +5335,7 @@
    "id": "m00533",
    "kind": "msg",
    "jp": "ハハハ・・・出なおした方が、良さそうだね。",
-   "en": "",
+   "en": "Hahaha... I'd better leave and come back.",
    "refs": [
     "scene55:2"
    ],
@@ -5345,7 +5345,7 @@
    "id": "m00534",
    "kind": "msg",
    "jp": "さっきまで、まともな部屋だったのに・・・。",
-   "en": "",
+   "en": "It was a normal room just a moment ago...",
    "refs": [
     "scene55:3"
    ],
@@ -5355,7 +5355,7 @@
    "id": "m00535",
    "kind": "msg",
    "jp": "・・・麻奈は、こんな所で何をしているのかな？",
-   "en": "",
+   "en": "...What is Mana doing in a place like this?",
    "refs": [
     "scene56:0"
    ],
@@ -5365,7 +5365,7 @@
    "id": "m00536",
    "kind": "msg",
    "jp": "でも、やったネ！",
-   "en": "",
+   "en": "But, I did it!",
    "refs": [
     "scene56:1"
    ],
@@ -5375,7 +5375,7 @@
    "id": "m00537",
    "kind": "msg",
    "jp": "とうとうボクは、麻奈に会えるんだ！！",
-   "en": "",
+   "en": "Finally, I can meet Mana!!",
    "refs": [
     "scene56:2"
    ],
@@ -5385,7 +5385,7 @@
    "id": "m00538",
    "kind": "msg",
    "jp": "「あらっ、どうしたの・・・こんな所に？」",
-   "en": "",
+   "en": "\"Oh, what's wrong... in a place like this?\"",
    "refs": [
     "scene57:0"
    ],
@@ -5395,7 +5395,7 @@
    "id": "m00539",
    "kind": "msg",
    "jp": "「あたしをさがして、来てくれたの・・・？」",
-   "en": "",
+   "en": "\"Did you come looking for me...?\"",
    "refs": [
     "scene57:1"
    ],
@@ -5405,7 +5405,7 @@
    "id": "m00540",
    "kind": "msg",
    "jp": "「・・・えっ、あたしを？」",
-   "en": "",
+   "en": "\"...Huh, for me?\"",
    "refs": [
     "scene57:2"
    ],
@@ -5415,7 +5415,7 @@
    "id": "m00541",
    "kind": "msg",
    "jp": "「ありがとう、うれしいわ・・・」",
-   "en": "",
+   "en": "\"Thank you, I'm happy...\"",
    "refs": [
     "scene57:3"
    ],
@@ -5425,7 +5425,7 @@
    "id": "m00542",
    "kind": "msg",
    "jp": "「あたしも・・・どうしたら、あたしの気持ちを信じてくれるのかな？」",
-   "en": "",
+   "en": "\"I wonder... what I can do to make you believe my feelings?\"",
    "refs": [
     "scene57:4"
    ],
@@ -5435,7 +5435,7 @@
    "id": "m00543",
    "kind": "msg",
    "jp": "「あたし、あなたがここに来るのを知っていたわ」",
-   "en": "",
+   "en": "\"I knew you would come here.\"",
    "refs": [
     "scene57:5"
    ],
@@ -5445,7 +5445,7 @@
    "id": "m00544",
    "kind": "msg",
    "jp": "「・・・あなた、あたしの部屋に入ったでしょう？」",
-   "en": "",
+   "en": "\"...You went into my room, didn't you?\"",
    "refs": [
     "scene57:6"
    ],
@@ -5455,7 +5455,7 @@
    "id": "m00545",
    "kind": "msg",
    "jp": "「それならば、あたしの正体がわかったハズ・・・」",
-   "en": "",
+   "en": "\"Then you should know what I really am...\"",
    "refs": [
     "scene57:7"
    ],
@@ -5465,7 +5465,7 @@
    "id": "m00546",
    "kind": "msg",
    "jp": "「もぅ、あなたを帰さないわ！」",
-   "en": "",
+   "en": "\"I won't let you go back now!\"",
    "refs": [
     "scene57:8"
    ],
@@ -5475,7 +5475,7 @@
    "id": "m00547",
    "kind": "msg",
    "jp": "「・・・その前に？」",
-   "en": "",
+   "en": "\"...Before that?\"",
    "refs": [
     "scene57:9"
    ],
@@ -5485,7 +5485,7 @@
    "id": "m00548",
    "kind": "msg",
    "jp": "「いいわよ・・・・・・」",
-   "en": "",
+   "en": "\"Okay......\"",
    "refs": [
     "scene57:10"
    ],
@@ -5495,7 +5495,7 @@
    "id": "m00549",
    "kind": "msg",
    "jp": "「地球人って、どうしてこんなのが、いいの・・・？」",
-   "en": "",
+   "en": "\"Why do Earthlings like this sort of thing...?\"",
    "refs": [
     "scene58:0"
    ],
@@ -5505,7 +5505,7 @@
    "id": "m00550",
    "kind": "msg",
    "jp": "・・・あぁ、ショック！",
-   "en": "",
+   "en": "...Ah, what a shock!",
    "refs": [
     "scene58:1"
    ],
@@ -5515,7 +5515,7 @@
    "id": "m00551",
    "kind": "msg",
    "jp": "麻奈が、異性人だったなんて・・・。",
-   "en": "",
+   "en": "Mana was an alien...",
    "refs": [
     "scene58:2"
    ],
@@ -5525,7 +5525,7 @@
    "id": "m00552",
    "kind": "msg",
    "jp": "これじゃあ、最後のバンサンならぬ、最後の・・・だよう！！",
-   "en": "",
+   "en": "This isn't the last supper, it's the last...!!",
    "refs": [
     "scene58:3"
    ],
@@ -5535,7 +5535,7 @@
    "id": "m00553",
    "kind": "msg",
    "jp": "麻奈の云った事、ジョ−ダンじゃないみたいだね・・・。",
-   "en": "",
+   "en": "What Mana said doesn't seem to be a joke...",
    "refs": [
     "scene59:0"
    ],
@@ -5545,7 +5545,7 @@
    "id": "m00554",
    "kind": "msg",
    "jp": "＜ＧＡＭＥ・ＥＮＤ＞です！",
-   "en": "",
+   "en": "<GAME END>!",
    "refs": [
     "scene59:1"
    ],
@@ -5555,7 +5555,7 @@
    "id": "m00555",
    "kind": "msg",
    "jp": "「うっ・・・・・・あんっ、痛い！」",
-   "en": "",
+   "en": "\"Uh...... anh, it hurts!\"",
    "refs": [
     "scene60:0"
    ],
@@ -5565,7 +5565,7 @@
    "id": "m00556",
    "kind": "msg",
    "jp": "「・・・これで、あたしの気持ち、信じてくれるの？」",
-   "en": "",
+   "en": "\"...Now will you believe my feelings?\"",
    "refs": [
     "scene60:1"
    ],
@@ -5575,7 +5575,7 @@
    "id": "m00557",
    "kind": "msg",
    "jp": "「でも、カルイ女の子だと、思わないでね・・・」",
-   "en": "",
+   "en": "\"But don't think I'm an easy girl...\"",
    "refs": [
     "scene60:2"
    ],
@@ -5585,7 +5585,7 @@
    "id": "m00558",
    "kind": "msg",
    "jp": "「・・・・・・あたし、初めてなんだから！」",
-   "en": "",
+   "en": "\"......Because this is my first time!\"",
    "refs": [
     "scene60:3"
    ],
@@ -5595,7 +5595,7 @@
    "id": "m00559",
    "kind": "msg",
    "jp": "ついにボクは、麻奈の気持ちを、射止める事が出来ました！",
-   "en": "",
+   "en": "At last, I was able to win Mana's heart!",
    "refs": [
     "scene60:4"
    ],
@@ -5605,7 +5605,7 @@
    "id": "m00560",
    "kind": "msg",
    "jp": "「これからも、楽しくやろうね！！」",
-   "en": "",
+   "en": "\"Let's have fun together from now on too!!\"",
    "refs": [
     "scene61:0"
    ],
@@ -5615,7 +5615,7 @@
    "id": "m00561",
    "kind": "msg",
    "jp": "＜ＨＡＰＰＹ・ＥＮＤ＞です。",
-   "en": "",
+   "en": "<HAPPY END>",
    "refs": [
     "scene61:1"
    ],
@@ -5625,7 +5625,7 @@
    "id": "w00001",
    "kind": "word",
    "jp": "調べる・見る",
-   "en": "",
+   "en": "Investigate / Look",
    "refs": [
     "word0:0"
    ],
@@ -5635,7 +5635,7 @@
    "id": "w00002",
    "kind": "word",
    "jp": "話す・聞く",
-   "en": "",
+   "en": "Talk / Listen",
    "refs": [
     "word0:1"
    ],
@@ -5645,7 +5645,7 @@
    "id": "w00003",
    "kind": "word",
    "jp": "行く・戻る",
-   "en": "",
+   "en": "Go / Return",
    "refs": [
     "word0:2"
    ],
@@ -5655,7 +5655,7 @@
    "id": "w00004",
    "kind": "word",
    "jp": "抱く・犯す",
-   "en": "",
+   "en": "Embrace / Violate",
    "refs": [
     "word0:3"
    ],
@@ -5665,7 +5665,7 @@
    "id": "w00005",
    "kind": "word",
    "jp": "キス・なめる",
-   "en": "",
+   "en": "Kiss / Lick",
    "refs": [
     "word0:4"
    ],
@@ -5675,7 +5675,7 @@
    "id": "w00006",
    "kind": "word",
    "jp": "考える",
-   "en": "",
+   "en": "Think",
    "refs": [
     "word0:5"
    ],
@@ -5685,7 +5685,7 @@
    "id": "w00007",
    "kind": "word",
    "jp": "食べる・飲む",
-   "en": "",
+   "en": "Eat / Drink",
    "refs": [
     "word0:6"
    ],
@@ -5695,7 +5695,7 @@
    "id": "w00008",
    "kind": "word",
    "jp": "愛撫する",
-   "en": "",
+   "en": "Caress",
    "refs": [
     "word0:7"
    ],
@@ -5705,7 +5705,7 @@
    "id": "w00009",
    "kind": "word",
    "jp": "ノックする",
-   "en": "",
+   "en": "Knock",
    "refs": [
     "word0:8"
    ],
@@ -5715,7 +5715,7 @@
    "id": "w00010",
    "kind": "word",
    "jp": "眠る",
-   "en": "",
+   "en": "Sleep",
    "refs": [
     "word0:9"
    ],
@@ -5725,7 +5725,7 @@
    "id": "w00011",
    "kind": "word",
    "jp": "捜す",
-   "en": "",
+   "en": "Search",
    "refs": [
     "word0:10"
    ],
@@ -5735,7 +5735,7 @@
    "id": "w00012",
    "kind": "word",
    "jp": "取る・もらう",
-   "en": "",
+   "en": "Take / Receive",
    "refs": [
     "word0:11"
    ],
@@ -5745,7 +5745,7 @@
    "id": "w00013",
    "kind": "word",
    "jp": "使う",
-   "en": "",
+   "en": "Use",
    "refs": [
     "word0:12"
    ],
@@ -5755,7 +5755,7 @@
    "id": "w00014",
    "kind": "word",
    "jp": "のぞく",
-   "en": "",
+   "en": "Peek",
    "refs": [
     "word0:13"
    ],
@@ -5765,7 +5765,7 @@
    "id": "w00015",
    "kind": "word",
    "jp": "渡す",
-   "en": "",
+   "en": "Hand over",
    "refs": [
     "word0:14"
    ],
@@ -5775,7 +5775,7 @@
    "id": "w00016",
    "kind": "word",
    "jp": "脱がす",
-   "en": "",
+   "en": "Undress",
    "refs": [
     "word0:15"
    ],
@@ -5785,7 +5785,7 @@
    "id": "w00017",
    "kind": "word",
    "jp": "やめる",
-   "en": "",
+   "en": "Stop",
    "refs": [
     "word0:16"
    ],
@@ -5795,7 +5795,7 @@
    "id": "w00018",
    "kind": "word",
    "jp": "待つ",
-   "en": "",
+   "en": "Wait",
    "refs": [
     "word0:17"
    ],
@@ -5805,7 +5805,7 @@
    "id": "w00019",
    "kind": "word",
    "jp": "動かす",
-   "en": "",
+   "en": "Move",
    "refs": [
     "word0:18"
    ],
@@ -5815,7 +5815,7 @@
    "id": "w00020",
    "kind": "word",
    "jp": "起こす",
-   "en": "",
+   "en": "Wake up",
    "refs": [
     "word0:19"
    ],
@@ -5825,7 +5825,7 @@
    "id": "w00021",
    "kind": "word",
    "jp": "キャンセル",
-   "en": "",
+   "en": "Cancel",
    "refs": [
     "word1:0"
    ],
@@ -5835,7 +5835,7 @@
    "id": "w00022",
    "kind": "word",
    "jp": "圭子",
-   "en": "",
+   "en": "Keiko",
    "refs": [
     "word1:1"
    ],
@@ -5845,7 +5845,7 @@
    "id": "w00023",
    "kind": "word",
    "jp": "由紀",
-   "en": "",
+   "en": "Yuki",
    "refs": [
     "word1:2"
    ],
@@ -5855,7 +5855,7 @@
    "id": "w00024",
    "kind": "word",
    "jp": "友彦",
-   "en": "",
+   "en": "Tomohiko",
    "refs": [
     "word1:3"
    ],
@@ -5865,7 +5865,7 @@
    "id": "w00025",
    "kind": "word",
    "jp": "瑠美",
-   "en": "",
+   "en": "Rumi",
    "refs": [
     "word1:4"
    ],
@@ -5875,7 +5875,7 @@
    "id": "w00026",
    "kind": "word",
    "jp": "翠",
-   "en": "",
+   "en": "Midori",
    "refs": [
     "word1:5"
    ],
@@ -5885,7 +5885,7 @@
    "id": "w00027",
    "kind": "word",
    "jp": "美紗",
-   "en": "",
+   "en": "Misa",
    "refs": [
     "word1:6"
    ],
@@ -5895,7 +5895,7 @@
    "id": "w00028",
    "kind": "word",
    "jp": "麻奈",
-   "en": "",
+   "en": "Mana",
    "refs": [
     "word1:7"
    ],
@@ -5905,7 +5905,7 @@
    "id": "w00029",
    "kind": "word",
    "jp": "コスモスクラブ",
-   "en": "",
+   "en": "Cosmos Club",
    "refs": [
     "word1:8"
    ],
@@ -5915,7 +5915,7 @@
    "id": "w00030",
    "kind": "word",
    "jp": "１号室",
-   "en": "",
+   "en": "Room 1",
    "refs": [
     "word1:9"
    ],
@@ -5925,7 +5925,7 @@
    "id": "w00031",
    "kind": "word",
    "jp": "２号室",
-   "en": "",
+   "en": "Room 2",
    "refs": [
     "word1:10"
    ],
@@ -5935,7 +5935,7 @@
    "id": "w00032",
    "kind": "word",
    "jp": "３号室",
-   "en": "",
+   "en": "Room 3",
    "refs": [
     "word1:11"
    ],
@@ -5945,7 +5945,7 @@
    "id": "w00033",
    "kind": "word",
    "jp": "５号室",
-   "en": "",
+   "en": "Room 5",
    "refs": [
     "word1:12"
    ],
@@ -5955,7 +5955,7 @@
    "id": "w00034",
    "kind": "word",
    "jp": "６号室",
-   "en": "",
+   "en": "Room 6",
    "refs": [
     "word1:13"
    ],
@@ -5965,7 +5965,7 @@
    "id": "w00035",
    "kind": "word",
    "jp": "７号室",
-   "en": "",
+   "en": "Room 7",
    "refs": [
     "word1:14"
    ],
@@ -5975,7 +5975,7 @@
    "id": "w00036",
    "kind": "word",
    "jp": "８号室",
-   "en": "",
+   "en": "Room 8",
    "refs": [
     "word1:15"
    ],
@@ -5985,7 +5985,7 @@
    "id": "w00037",
    "kind": "word",
    "jp": "９号室",
-   "en": "",
+   "en": "Room 9",
    "refs": [
     "word1:16"
    ],
@@ -5995,7 +5995,7 @@
    "id": "w00038",
    "kind": "word",
    "jp": "玄関・外",
-   "en": "",
+   "en": "Entrance / Outside",
    "refs": [
     "word1:17"
    ],
@@ -6005,7 +6005,7 @@
    "id": "w00039",
    "kind": "word",
    "jp": "リビング",
-   "en": "",
+   "en": "Living room",
    "refs": [
     "word1:18"
    ],
@@ -6015,7 +6015,7 @@
    "id": "w00040",
    "kind": "word",
    "jp": "トイレ",
-   "en": "",
+   "en": "Toilet",
    "refs": [
     "word1:19"
    ],
@@ -6025,7 +6025,7 @@
    "id": "w00041",
    "kind": "word",
    "jp": "脱衣場",
-   "en": "",
+   "en": "Changing room",
    "refs": [
     "word1:20"
    ],
@@ -6035,7 +6035,7 @@
    "id": "w00042",
    "kind": "word",
    "jp": "浴室",
-   "en": "",
+   "en": "Bathroom",
    "refs": [
     "word1:21"
    ],
@@ -6045,7 +6045,7 @@
    "id": "w00043",
    "kind": "word",
    "jp": "階段",
-   "en": "",
+   "en": "Stairs",
    "refs": [
     "word1:22"
    ],
@@ -6055,7 +6055,7 @@
    "id": "w00044",
    "kind": "word",
    "jp": "おどり場",
-   "en": "",
+   "en": "Landing",
    "refs": [
     "word1:23"
    ],
@@ -6065,7 +6065,7 @@
    "id": "w00045",
    "kind": "word",
    "jp": "一階",
-   "en": "",
+   "en": "First floor",
    "refs": [
     "word1:24"
    ],
@@ -6075,7 +6075,7 @@
    "id": "w00046",
    "kind": "word",
    "jp": "二階",
-   "en": "",
+   "en": "Second floor",
    "refs": [
     "word1:25"
    ],
@@ -6085,7 +6085,7 @@
    "id": "w00047",
    "kind": "word",
    "jp": "キッチン",
-   "en": "",
+   "en": "Kitchen",
    "refs": [
     "word1:26"
    ],
@@ -6095,7 +6095,7 @@
    "id": "w00048",
    "kind": "word",
    "jp": "上",
-   "en": "",
+   "en": "Up",
    "refs": [
     "word1:27"
    ],
@@ -6105,7 +6105,7 @@
    "id": "w00049",
    "kind": "word",
    "jp": "下",
-   "en": "",
+   "en": "Down",
    "refs": [
     "word1:28"
    ],
@@ -6115,7 +6115,7 @@
    "id": "w00050",
    "kind": "word",
    "jp": "左",
-   "en": "",
+   "en": "Left",
    "refs": [
     "word1:29"
    ],
@@ -6125,7 +6125,7 @@
    "id": "w00051",
    "kind": "word",
    "jp": "右",
-   "en": "",
+   "en": "Right",
    "refs": [
     "word1:30"
    ],
@@ -6135,7 +6135,7 @@
    "id": "w00052",
    "kind": "word",
    "jp": "前",
-   "en": "",
+   "en": "Front",
    "refs": [
     "word1:31"
    ],
@@ -6145,7 +6145,7 @@
    "id": "w00053",
    "kind": "word",
    "jp": "後ろ",
-   "en": "",
+   "en": "Behind",
    "refs": [
     "word1:32"
    ],
@@ -6155,7 +6155,7 @@
    "id": "w00054",
    "kind": "word",
    "jp": "中",
-   "en": "",
+   "en": "Inside",
    "refs": [
     "word1:33"
    ],
@@ -6165,7 +6165,7 @@
    "id": "w00055",
    "kind": "word",
    "jp": "外",
-   "en": "",
+   "en": "Outside",
    "refs": [
     "word1:34"
    ],
@@ -6175,7 +6175,7 @@
    "id": "w00056",
    "kind": "word",
    "jp": "廊下",
-   "en": "",
+   "en": "Hallway",
    "refs": [
     "word1:35"
    ],
@@ -6185,7 +6185,7 @@
    "id": "w00057",
    "kind": "word",
    "jp": "学校",
-   "en": "",
+   "en": "School",
    "refs": [
     "word1:36"
    ],
@@ -6195,7 +6195,7 @@
    "id": "w00058",
    "kind": "word",
    "jp": "グランド",
-   "en": "",
+   "en": "Schoolyard",
    "refs": [
     "word1:37"
    ],
@@ -6205,7 +6205,7 @@
    "id": "w00059",
    "kind": "word",
    "jp": "芝生",
-   "en": "",
+   "en": "Lawn",
    "refs": [
     "word1:38"
    ],
@@ -6215,7 +6215,7 @@
    "id": "w00060",
    "kind": "word",
    "jp": "空",
-   "en": "",
+   "en": "Sky",
    "refs": [
     "word1:39"
    ],
@@ -6225,7 +6225,7 @@
    "id": "w00061",
    "kind": "word",
    "jp": "髪",
-   "en": "",
+   "en": "Hair",
    "refs": [
     "word1:40"
    ],
@@ -6235,7 +6235,7 @@
    "id": "w00062",
    "kind": "word",
    "jp": "ほほ",
-   "en": "",
+   "en": "Cheek",
    "refs": [
     "word1:41"
    ],
@@ -6245,7 +6245,7 @@
    "id": "w00063",
    "kind": "word",
    "jp": "胸",
-   "en": "",
+   "en": "Chest",
    "refs": [
     "word1:42"
    ],
@@ -6255,7 +6255,7 @@
    "id": "w00064",
    "kind": "word",
    "jp": "乳首",
-   "en": "",
+   "en": "Nipple",
    "refs": [
     "word1:43"
    ],
@@ -6265,7 +6265,7 @@
    "id": "w00065",
    "kind": "word",
    "jp": "おへそ",
-   "en": "",
+   "en": "Belly button",
    "refs": [
     "word1:44"
    ],
@@ -6275,7 +6275,7 @@
    "id": "w00066",
    "kind": "word",
    "jp": "おしり",
-   "en": "",
+   "en": "Butt",
    "refs": [
     "word1:45"
    ],
@@ -6285,7 +6285,7 @@
    "id": "w00067",
    "kind": "word",
    "jp": "あそこ",
-   "en": "",
+   "en": "Down there",
    "refs": [
     "word1:46"
    ],
@@ -6295,7 +6295,7 @@
    "id": "w00068",
    "kind": "word",
    "jp": "クリトリス",
-   "en": "",
+   "en": "Clitoris",
    "refs": [
     "word1:47"
    ],
@@ -6305,7 +6305,7 @@
    "id": "w00069",
    "kind": "word",
    "jp": "耳たぶ",
-   "en": "",
+   "en": "Earlobe",
    "refs": [
     "word1:48"
    ],
@@ -6315,7 +6315,7 @@
    "id": "w00070",
    "kind": "word",
    "jp": "くちびる",
-   "en": "",
+   "en": "Lips",
    "refs": [
     "word1:49"
    ],
@@ -6325,7 +6325,7 @@
    "id": "w00071",
    "kind": "word",
    "jp": "指",
-   "en": "",
+   "en": "Finger",
    "refs": [
     "word1:50"
    ],
@@ -6335,7 +6335,7 @@
    "id": "w00072",
    "kind": "word",
    "jp": "舌",
-   "en": "",
+   "en": "Tongue",
    "refs": [
     "word1:51"
    ],
@@ -6345,7 +6345,7 @@
    "id": "w00073",
    "kind": "word",
    "jp": "腰",
-   "en": "",
+   "en": "Hips",
    "refs": [
     "word1:52"
    ],
@@ -6355,7 +6355,7 @@
    "id": "w00074",
    "kind": "word",
    "jp": "おなか",
-   "en": "",
+   "en": "Stomach",
    "refs": [
     "word1:53"
    ],
@@ -6365,7 +6365,7 @@
    "id": "w00075",
    "kind": "word",
    "jp": "背中",
-   "en": "",
+   "en": "Back",
    "refs": [
     "word1:54"
    ],
@@ -6375,7 +6375,7 @@
    "id": "w00076",
    "kind": "word",
    "jp": "足のうら",
-   "en": "",
+   "en": "Sole of foot",
    "refs": [
     "word1:55"
    ],
@@ -6385,7 +6385,7 @@
    "id": "w00077",
    "kind": "word",
    "jp": "洋服",
-   "en": "",
+   "en": "Clothes",
    "refs": [
     "word1:56"
    ],
@@ -6395,7 +6395,7 @@
    "id": "w00078",
    "kind": "word",
    "jp": "ブラジャ−",
-   "en": "",
+   "en": "Bra",
    "refs": [
     "word1:57"
    ],
@@ -6405,7 +6405,7 @@
    "id": "w00079",
    "kind": "word",
    "jp": "パンティ",
-   "en": "",
+   "en": "Panties",
    "refs": [
     "word1:58"
    ],
@@ -6415,7 +6415,7 @@
    "id": "w00080",
    "kind": "word",
    "jp": "パジャマ",
-   "en": "",
+   "en": "Pajamas",
    "refs": [
     "word1:59"
    ],
@@ -6425,7 +6425,7 @@
    "id": "w00081",
    "kind": "word",
    "jp": "麻奈のこと",
-   "en": "",
+   "en": "About Mana",
    "refs": [
     "word1:60"
    ],
@@ -6435,7 +6435,7 @@
    "id": "w00082",
    "kind": "word",
    "jp": "ＣＤラジカセ",
-   "en": "",
+   "en": "CD boombox",
    "refs": [
     "word1:61"
    ],
@@ -6445,7 +6445,7 @@
    "id": "w00083",
    "kind": "word",
    "jp": "机",
-   "en": "",
+   "en": "Desk",
    "refs": [
     "word1:62"
    ],
@@ -6455,7 +6455,7 @@
    "id": "w00084",
    "kind": "word",
    "jp": "ドア",
-   "en": "",
+   "en": "Door",
    "refs": [
     "word1:63"
    ],
@@ -6465,7 +6465,7 @@
    "id": "w00085",
    "kind": "word",
    "jp": "テ−ブル",
-   "en": "",
+   "en": "Table",
    "refs": [
     "word1:64"
    ],
@@ -6475,7 +6475,7 @@
    "id": "w00086",
    "kind": "word",
    "jp": "イス",
-   "en": "",
+   "en": "Chair",
    "refs": [
     "word1:65"
    ],
@@ -6485,7 +6485,7 @@
    "id": "w00087",
    "kind": "word",
    "jp": "料理",
-   "en": "",
+   "en": "Cooking",
    "refs": [
     "word1:66"
    ],
@@ -6495,7 +6495,7 @@
    "id": "w00088",
    "kind": "word",
    "jp": "おかず",
-   "en": "",
+   "en": "Side dishes",
    "refs": [
     "word1:67"
    ],
@@ -6505,7 +6505,7 @@
    "id": "w00089",
    "kind": "word",
    "jp": "ごはん",
-   "en": "",
+   "en": "Rice",
    "refs": [
     "word1:68"
    ],
@@ -6515,7 +6515,7 @@
    "id": "w00090",
    "kind": "word",
    "jp": "みそ汁",
-   "en": "",
+   "en": "Miso soup",
    "refs": [
     "word1:69"
    ],
@@ -6525,7 +6525,7 @@
    "id": "w00091",
    "kind": "word",
    "jp": "水",
-   "en": "",
+   "en": "Water",
    "refs": [
     "word1:70"
    ],
@@ -6535,7 +6535,7 @@
    "id": "w00092",
    "kind": "word",
    "jp": "フトン",
-   "en": "",
+   "en": "Futon",
    "refs": [
     "word1:71"
    ],
@@ -6545,7 +6545,7 @@
    "id": "w00093",
    "kind": "word",
    "jp": "マクラ",
-   "en": "",
+   "en": "Pillow",
    "refs": [
     "word1:72"
    ],
@@ -6555,7 +6555,7 @@
    "id": "w00094",
    "kind": "word",
    "jp": "ベット",
-   "en": "",
+   "en": "Bed",
    "refs": [
     "word1:73"
    ],
@@ -6565,7 +6565,7 @@
    "id": "w00095",
    "kind": "word",
    "jp": "カベ",
-   "en": "",
+   "en": "Wall",
    "refs": [
     "word1:74"
    ],
@@ -6575,7 +6575,7 @@
    "id": "w00096",
    "kind": "word",
    "jp": "カギ穴",
-   "en": "",
+   "en": "Keyhole",
    "refs": [
     "word1:75"
    ],
@@ -6585,7 +6585,7 @@
    "id": "w00097",
    "kind": "word",
    "jp": "本棚",
-   "en": "",
+   "en": "Bookshelf",
    "refs": [
     "word1:76"
    ],
@@ -6595,7 +6595,7 @@
    "id": "w00098",
    "kind": "word",
    "jp": "秘蔵本",
-   "en": "",
+   "en": "Treasured book",
    "refs": [
     "word1:77"
    ],
@@ -6605,7 +6605,7 @@
    "id": "w00099",
    "kind": "word",
    "jp": "カギ",
-   "en": "",
+   "en": "Key",
    "refs": [
     "word1:78"
    ],
@@ -6615,7 +6615,7 @@
    "id": "w00100",
    "kind": "word",
    "jp": "お金",
-   "en": "",
+   "en": "Money",
    "refs": [
     "word1:79"
    ],
@@ -6625,7 +6625,7 @@
    "id": "w00101",
    "kind": "word",
    "jp": "教科書",
-   "en": "",
+   "en": "Textbook",
    "refs": [
     "word1:80"
    ],
@@ -6635,7 +6635,7 @@
    "id": "w00102",
    "kind": "word",
    "jp": "時間",
-   "en": "",
+   "en": "Time",
    "refs": [
     "word1:81"
    ],
@@ -6645,7 +6645,7 @@
    "id": "w00103",
    "kind": "word",
    "jp": "マンガ",
-   "en": "",
+   "en": "Manga",
    "refs": [
     "word1:82"
    ],
@@ -6655,7 +6655,7 @@
    "id": "w00104",
    "kind": "word",
    "jp": "小説",
-   "en": "",
+   "en": "Novel",
    "refs": [
     "word1:83"
    ],
@@ -6665,7 +6665,7 @@
    "id": "w00105",
    "kind": "word",
    "jp": "参考書",
-   "en": "",
+   "en": "Reference book",
    "refs": [
     "word1:84"
    ],
@@ -6675,7 +6675,7 @@
    "id": "w00106",
    "kind": "word",
    "jp": "機械",
-   "en": "",
+   "en": "Machine",
    "refs": [
     "word1:85"
    ],
@@ -6685,7 +6685,7 @@
    "id": "w00107",
    "kind": "word",
    "jp": "スイッチ",
-   "en": "",
+   "en": "Switch",
    "refs": [
     "word1:86"
    ],
@@ -6695,7 +6695,7 @@
    "id": "w00108",
    "kind": "word",
    "jp": "ダイヤル",
-   "en": "",
+   "en": "Dial",
    "refs": [
     "word1:87"
    ],
@@ -6705,7 +6705,7 @@
    "id": "w00109",
    "kind": "word",
    "jp": "カギ（ニセ）",
-   "en": "",
+   "en": "Key (fake)",
    "refs": [
     "word1:88"
    ],
@@ -6715,7 +6715,7 @@
    "id": "w00110",
    "kind": "word",
    "jp": "カバン",
-   "en": "",
+   "en": "Bag",
    "refs": [
     "word1:89"
    ],
@@ -6725,7 +6725,7 @@
    "id": "w00111",
    "kind": "word",
    "jp": "窓・外",
-   "en": "",
+   "en": "Window / Outside",
    "refs": [
     "word1:90"
    ],
@@ -6735,7 +6735,7 @@
    "id": "w00112",
    "kind": "word",
    "jp": "カギのこと",
-   "en": "",
+   "en": "About the key",
    "refs": [
     "word1:91"
    ],
@@ -6745,7 +6745,7 @@
    "id": "w00113",
    "kind": "word",
    "jp": "これからのこと",
-   "en": "",
+   "en": "About the future",
    "refs": [
     "word1:92"
    ],
@@ -6755,7 +6755,7 @@
    "id": "w00114",
    "kind": "word",
    "jp": "持ちモノ",
-   "en": "",
+   "en": "Belongings",
    "refs": [
     "word1:93"
    ],
@@ -6765,7 +6765,7 @@
    "id": "w00115",
    "kind": "word",
    "jp": "むかしの五円玉",
-   "en": "",
+   "en": "Old five-yen coin",
    "refs": [
     "word1:94"
    ],
@@ -6775,7 +6775,7 @@
    "id": "w00116",
    "kind": "word",
    "jp": "セックス",
-   "en": "",
+   "en": "Sex",
    "refs": [
     "word1:95"
    ],
@@ -6785,7 +6785,7 @@
    "id": "m00562",
    "kind": "msg",
    "jp": "＜−ＨＩＴ・ＡＮＹ・ＫＥＹ−＞",
-   "en": "",
+   "en": "<- HIT ANY KEY ->",
    "refs": [
     "words:0"
    ],
@@ -6795,7 +6795,7 @@
    "id": "m00563",
    "kind": "msg",
    "jp": "＜−ＣＡＮＣＥＬ−＞",
-   "en": "",
+   "en": "<- CANCEL ->",
    "refs": [
     "words:1"
    ],
@@ -6805,7 +6805,7 @@
    "id": "m00564",
    "kind": "msg",
    "jp": "−よしっ！",
-   "en": "",
+   "en": "- Alright!",
    "refs": [
     "words:2"
    ],
@@ -6815,7 +6815,7 @@
    "id": "m00565",
    "kind": "msg",
    "jp": "そうだね・・・。",
-   "en": "",
+   "en": "That's right...",
    "refs": [
     "words:3"
    ],
@@ -6825,7 +6825,7 @@
    "id": "m00566",
    "kind": "msg",
    "jp": "そうするよ。",
-   "en": "",
+   "en": "I'll do that.",
    "refs": [
     "words:4"
    ],
@@ -6835,7 +6835,7 @@
    "id": "m00567",
    "kind": "msg",
    "jp": "とても、出来ないよ・・・。",
-   "en": "",
+   "en": "I really can't...",
    "refs": [
     "words:5"
    ],
@@ -6845,7 +6845,7 @@
    "id": "m00568",
    "kind": "msg",
    "jp": "やめておいた方が、いいと思うなぁ。",
-   "en": "",
+   "en": "I think it's better not to.",
    "refs": [
     "words:6"
    ],
@@ -6855,7 +6855,7 @@
    "id": "m00569",
    "kind": "msg",
    "jp": "ダメだ・・・カギが、かかっている。",
-   "en": "",
+   "en": "No good... it's locked.",
    "refs": [
     "words:7"
    ],
@@ -6865,7 +6865,7 @@
    "id": "m00570",
    "kind": "msg",
    "jp": "こんな時間に、外へ行く必要がないと思うよ。",
-   "en": "",
+   "en": "I don't think there's any need to go outside at this hour.",
    "refs": [
     "words:8"
    ],
@@ -6875,7 +6875,7 @@
    "id": "m00571",
    "kind": "msg",
    "jp": "いまは、行きたくないなぁ・・・。",
-   "en": "",
+   "en": "I don't want to go right now...",
    "refs": [
     "words:9"
    ],
@@ -6885,7 +6885,7 @@
    "id": "m00572",
    "kind": "msg",
    "jp": "ＬＯＡＤ　ＯＫ　！！",
-   "en": "",
+   "en": "LOAD OK!!",
    "refs": [
     "words:10"
    ],
@@ -6895,7 +6895,7 @@
    "id": "m00573",
    "kind": "msg",
    "jp": "ＳＡＶＥ　ＯＫ　！！",
-   "en": "",
+   "en": "SAVE OK!!",
    "refs": [
     "words:11"
    ],
@@ -6905,7 +6905,7 @@
    "id": "m00574",
    "kind": "msg",
    "jp": "ＤＲＩＶＥ１　に　ＤＩＳＫ１　を　セットして下さい。",
-   "en": "",
+   "en": "Please set DISK 1 in DRIVE 1.",
    "refs": [
     "words:12"
    ],
@@ -6915,7 +6915,7 @@
    "id": "m00575",
    "kind": "msg",
    "jp": "ＤＲＩＶＥ２　に　ＤＩＳＫ２　を　セットして下さい。",
-   "en": "",
+   "en": "Please set DISK 2 in DRIVE 2.",
    "refs": [
     "words:13"
    ],
@@ -6925,7 +6925,7 @@
    "id": "m00576",
    "kind": "msg",
    "jp": "ＬＯＡＤ　ＥＲＲＯＲ　！！",
-   "en": "",
+   "en": "LOAD ERROR!!",
    "refs": [
     "words:14"
    ],
@@ -6935,7 +6935,7 @@
    "id": "m00577",
    "kind": "msg",
    "jp": "ＳＡＶＥ　ＥＲＲＯＲ　！！",
-   "en": "",
+   "en": "SAVE ERROR!!",
    "refs": [
     "words:15"
    ],
@@ -6945,7 +6945,7 @@
    "id": "m00578",
    "kind": "msg",
    "jp": "＜ＩＮＩＴＩＡＬ　ＳＴＡＲＴ＞",
-   "en": "",
+   "en": "<INITIAL START>",
    "refs": [
     "words:16"
    ],
@@ -6955,7 +6955,7 @@
    "id": "m00579",
    "kind": "msg",
    "jp": "一致しないぞ　！！",
-   "en": "",
+   "en": "It doesn't match!!",
    "refs": [
     "words:17"
    ],
@@ -6965,7 +6965,7 @@
    "id": "m00580",
    "kind": "msg",
    "jp": "動詞が無いぞ　！！",
-   "en": "",
+   "en": "There's no verb!!",
    "refs": [
     "words:18"
    ],
@@ -6975,7 +6975,7 @@
    "id": "m00581",
    "kind": "msg",
    "jp": "ＫＯＭ−ＡＴＴＡＣＨ−ＡＮＤ−ＡＮＥ",
-   "en": "",
+   "en": "KOM-ATTACH-AND-ANE",
    "refs": [
     "words:19"
    ],

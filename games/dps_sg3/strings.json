@@ -27,7 +27,7 @@
    "id": "u00001",
    "kind": "menu",
    "jp": "ゲームを始める",
-   "en": "Start Game",
+   "en": "",
    "refs": [
     "p00:02a8",
     "s1:p01:0198",
@@ -39,7 +39,7 @@
    "id": "u00002",
    "kind": "menu",
    "jp": "ＡＬＩＣＥの館",
-   "en": "Alice's House",
+   "en": "",
    "refs": [
     "p00:02b6"
    ],
@@ -159,7 +159,7 @@
    "id": "u00003",
    "kind": "menu",
    "jp": "ＰＣ－９８Ｖ",
-   "en": "PC-98V",
+   "en": "",
    "refs": [
     "p00:0475"
    ],
@@ -169,7 +169,7 @@
    "id": "u00004",
    "kind": "menu",
    "jp": "Ｘ６８０００",
-   "en": "X68000",
+   "en": "",
    "refs": [
     "p00:048b"
    ],
@@ -179,7 +179,7 @@
    "id": "u00005",
    "kind": "menu",
    "jp": "ＦＭ－ＴＯＷＮＳ",
-   "en": "FM-TOWNS",
+   "en": "",
    "refs": [
     "p00:04a1"
    ],
@@ -189,7 +189,7 @@
    "id": "u00006",
    "kind": "menu",
    "jp": "ＰＣ－８８ＶＡ",
-   "en": "PC-88VA",
+   "en": "",
    "refs": [
     "p00:04bb"
    ],
@@ -199,7 +199,7 @@
    "id": "u00007",
    "kind": "menu",
    "jp": "ＭＳＸ２",
-   "en": "MSX2",
+   "en": "",
    "refs": [
     "p00:04d3"
    ],
@@ -209,7 +209,7 @@
    "id": "u00008",
    "kind": "menu",
    "jp": "スタッフ",
-   "en": "Staff",
+   "en": "",
    "refs": [
     "p00:04e0"
    ],
@@ -219,7 +219,7 @@
    "id": "u00009",
    "kind": "menu",
    "jp": "ゆきちＮＥＴ紹介",
-   "en": "About YukichiNET",
+   "en": "",
    "refs": [
     "p00:04f1"
    ],
@@ -229,7 +229,7 @@
    "id": "u00010",
    "kind": "menu",
    "jp": "商品紹介",
-   "en": "Products",
+   "en": "",
    "refs": [
     "p00:0503"
    ],
@@ -239,7 +239,7 @@
    "id": "u00011",
    "kind": "menu",
    "jp": "デバッグ",
-   "en": "Debug",
+   "en": "",
    "refs": [
     "p00:0514"
    ],
@@ -249,7 +249,7 @@
    "id": "u00012",
    "kind": "menu",
    "jp": "ゲームへ",
-   "en": "To Game",
+   "en": "",
    "refs": [
     "p00:0521"
    ],
@@ -639,7 +639,7 @@
    "id": "u00013",
    "kind": "menu",
    "jp": "ＣＧテスト",
-   "en": "CG Test",
+   "en": "",
    "refs": [
     "p00:138a"
    ],
@@ -649,7 +649,7 @@
    "id": "u00014",
    "kind": "menu",
    "jp": "ＢＧＭテスト",
-   "en": "BGM Test",
+   "en": "",
    "refs": [
     "p00:1398"
    ],
@@ -659,7 +659,7 @@
    "id": "u00015",
    "kind": "menu",
    "jp": "戻る",
-   "en": "Back",
+   "en": "",
    "refs": [
     "p00:13a8"
    ],
@@ -1126,7 +1126,7 @@
    "id": "u00016",
    "kind": "menu",
    "jp": "説明書を読む",
-   "en": "Read Manual",
+   "en": "",
    "refs": [
     "s1:p01:01a6",
     "s2:p01:01c4",
@@ -3694,7 +3694,7 @@
    "id": "u00017",
    "kind": "menu",
    "jp": "とにかく、追っかける",
-   "en": "Just chase it",
+   "en": "",
    "refs": [
     "s1:p02:0189"
    ],
@@ -3704,7 +3704,7 @@
    "id": "u00018",
    "kind": "menu",
    "jp": "何時間追いかけていたか考えながら追いかける",
-   "en": "Chase, wondering how many hours it's been",
+   "en": "",
    "refs": [
     "s1:p02:0198"
    ],
@@ -3714,7 +3714,7 @@
    "id": "u00019",
    "kind": "menu",
    "jp": "どうして追いかけているのかを考えながら追いかける",
-   "en": "Chase, wondering why I'm chasing it",
+   "en": "",
    "refs": [
     "s1:p02:01b8"
    ],
@@ -3724,7 +3724,7 @@
    "id": "u00020",
    "kind": "menu",
    "jp": "全力疾走して追いかける",
-   "en": "Chase at full sprint",
+   "en": "",
    "refs": [
     "s1:p02:01d9"
    ],
@@ -4065,7 +4065,7 @@
    "id": "u00021",
    "kind": "menu",
    "jp": "石を投げる",
-   "en": "Throw rock",
+   "en": "",
    "refs": [
     "s1:p02:0777"
    ],
@@ -4075,7 +4075,7 @@
    "id": "u00022",
    "kind": "menu",
    "jp": "匙を投げる",
-   "en": "Give up",
+   "en": "",
    "refs": [
     "s1:p02:0789"
    ],
@@ -4085,7 +4085,7 @@
    "id": "u00023",
    "kind": "menu",
    "jp": "その辺に茂っている木を投げる",
-   "en": "Throw a nearby tree",
+   "en": "",
    "refs": [
     "s1:p02:079b"
    ],
@@ -4095,7 +4095,7 @@
    "id": "u00024",
    "kind": "menu",
    "jp": "自分を投げる",
-   "en": "Throw self",
+   "en": "",
    "refs": [
     "s1:p02:07b8"
    ],
@@ -4105,7 +4105,7 @@
    "id": "u00025",
    "kind": "menu",
    "jp": "道を引っ張って、うさぎを引き寄せる",
-   "en": "Pull the road, reel in rabbit",
+   "en": "",
    "refs": [
     "s1:p02:07cc"
    ],
@@ -4682,7 +4682,7 @@
    "id": "u00026",
    "kind": "menu",
    "jp": "先回りする",
-   "en": "Cut ahead",
+   "en": "",
    "refs": [
     "s1:p02:0d1f"
    ],
@@ -4692,7 +4692,7 @@
    "id": "u00027",
    "kind": "menu",
    "jp": "ベン・ジョンソンに変身する",
-   "en": "Turn into Ben Johnson",
+   "en": "",
    "refs": [
     "s1:p02:0d2a"
    ],
@@ -4702,7 +4702,7 @@
    "id": "u00028",
    "kind": "menu",
    "jp": "三段跳び",
-   "en": "Tri-jump",
+   "en": "",
    "refs": [
     "s1:p02:0d44"
    ],
@@ -4712,7 +4712,7 @@
    "id": "u00029",
    "kind": "menu",
    "jp": "砲丸投げ",
-   "en": "Shot put",
+   "en": "",
    "refs": [
     "s1:p02:0d50"
    ],
@@ -4722,7 +4722,7 @@
    "id": "u00030",
    "kind": "menu",
    "jp": "警官の真似をする",
-   "en": "Act like a cop",
+   "en": "",
    "refs": [
     "s1:p02:0d5c"
    ],
@@ -6265,7 +6265,7 @@
    "id": "u00031",
    "kind": "menu",
    "jp": "壁を見つける",
-   "en": "Find a wall",
+   "en": "",
    "refs": [
     "s1:p03:0084"
    ],
@@ -6275,7 +6275,7 @@
    "id": "u00032",
    "kind": "menu",
    "jp": "泳ぐ",
-   "en": "Swim",
+   "en": "",
    "refs": [
     "s1:p03:0090"
    ],
@@ -6285,7 +6285,7 @@
    "id": "u00033",
    "kind": "menu",
    "jp": "足掻く",
-   "en": "Flail",
+   "en": "",
    "refs": [
     "s1:p03:0098"
    ],
@@ -6295,7 +6295,7 @@
    "id": "u00034",
    "kind": "menu",
    "jp": "底を確かめる",
-   "en": "Check bottom",
+   "en": "",
    "refs": [
     "s1:p03:00a1"
    ],
@@ -6305,7 +6305,7 @@
    "id": "u00035",
    "kind": "menu",
    "jp": "服をパラシュート代わりにする",
-   "en": "Use clothes as parachute",
+   "en": "",
    "refs": [
     "s1:p03:00ad"
    ],
@@ -6616,7 +6616,7 @@
    "id": "u00036",
    "kind": "menu",
    "jp": "歌を歌う",
-   "en": "Sing",
+   "en": "",
    "refs": [
     "s1:p03:048c"
    ],
@@ -6626,7 +6626,7 @@
    "id": "u00037",
    "kind": "menu",
    "jp": "寝る",
-   "en": "Sleep",
+   "en": "",
    "refs": [
     "s1:p03:0496"
    ],
@@ -6636,7 +6636,7 @@
    "id": "u00038",
    "kind": "menu",
    "jp": "もう一度、泳いでみよう",
-   "en": "Try swimming again",
+   "en": "",
    "refs": [
     "s1:p03:049d"
    ],
@@ -6646,7 +6646,7 @@
    "id": "u00039",
    "kind": "menu",
    "jp": "スーパーマンだ",
-   "en": "I'm Superman",
+   "en": "",
    "refs": [
     "s1:p03:04b0"
    ],
@@ -6656,7 +6656,7 @@
    "id": "u00040",
    "kind": "menu",
    "jp": "そうだ。うさぎはどこだ？",
-   "en": "Oh, where's the rabbit?",
+   "en": "",
    "refs": [
     "s1:p03:04c0"
    ],
@@ -6856,7 +6856,7 @@
    "id": "u00041",
    "kind": "menu",
    "jp": "じいぃぃぃぃっと見る",
-   "en": "Stare really hard",
+   "en": "",
    "refs": [
     "s1:p03:076e"
    ],
@@ -6866,7 +6866,7 @@
    "id": "u00042",
    "kind": "menu",
    "jp": "穴が開く程、周囲を見る",
-   "en": "Look around intently",
+   "en": "",
    "refs": [
     "s1:p03:077e"
    ],
@@ -6876,7 +6876,7 @@
    "id": "u00043",
    "kind": "menu",
    "jp": "その辺を手探りしてみる",
-   "en": "Feel around nearby",
+   "en": "",
    "refs": [
     "s1:p03:0794"
    ],
@@ -6886,7 +6886,7 @@
    "id": "u00044",
    "kind": "menu",
    "jp": "無闇に走り回ってみる",
-   "en": "Run around blindly",
+   "en": "",
    "refs": [
     "s1:p03:07a6"
    ],
@@ -6896,7 +6896,7 @@
    "id": "u00045",
    "kind": "menu",
    "jp": "とりあえず、じっとしている",
-   "en": "Just stay still for now",
+   "en": "",
    "refs": [
     "s1:p03:07b8"
    ],
@@ -7111,7 +7111,7 @@
    "id": "u00046",
    "kind": "menu",
    "jp": "木のドア",
-   "en": "Wood",
+   "en": "",
    "refs": [
     "s1:p04:00e7"
    ],
@@ -7121,7 +7121,7 @@
    "id": "u00047",
    "kind": "menu",
    "jp": "鉄のドア",
-   "en": "Iron",
+   "en": "",
    "refs": [
     "s1:p04:00f2"
    ],
@@ -7131,7 +7131,7 @@
    "id": "u00048",
    "kind": "menu",
    "jp": "ガラスのドア",
-   "en": "Glass",
+   "en": "",
    "refs": [
     "s1:p04:00fd"
    ],
@@ -7141,7 +7141,7 @@
    "id": "u00049",
    "kind": "menu",
    "jp": "ぼーーっとしてる",
-   "en": "Space out",
+   "en": "",
    "refs": [
     "s1:p04:010c"
    ],
@@ -7161,7 +7161,7 @@
    "id": "u00050",
    "kind": "menu",
    "jp": "見る",
-   "en": "Look",
+   "en": "",
    "refs": [
     "s1:p04:012a",
     "s1:p04:02a0",
@@ -7173,7 +7173,7 @@
    "id": "u00051",
    "kind": "menu",
    "jp": "開ける",
-   "en": "Open",
+   "en": "",
    "refs": [
     "s1:p04:0131",
     "s1:p04:02a7",
@@ -7185,7 +7185,7 @@
    "id": "u00052",
    "kind": "menu",
    "jp": "叩く",
-   "en": "Knock",
+   "en": "",
    "refs": [
     "s1:p04:0139"
    ],
@@ -7217,7 +7217,7 @@
    "id": "u00053",
    "kind": "menu",
    "jp": "そおっと開く",
-   "en": "Open gently",
+   "en": "",
    "refs": [
     "s1:p04:0175",
     "s1:p04:02ed",
@@ -7229,7 +7229,7 @@
    "id": "u00054",
    "kind": "menu",
    "jp": "ばーーーーんっと開ける",
-   "en": "Slam it open!",
+   "en": "",
    "refs": [
     "s1:p04:0180",
     "s1:p04:02f8",
@@ -7355,7 +7355,7 @@
    "id": "u00055",
    "kind": "menu",
    "jp": "殴る",
-   "en": "Punch",
+   "en": "",
    "refs": [
     "s1:p04:02af"
    ],
@@ -7495,7 +7495,7 @@
    "id": "u00056",
    "kind": "menu",
    "jp": "破壊する",
-   "en": "Destroy",
+   "en": "",
    "refs": [
     "s1:p04:0449"
    ],
@@ -8350,7 +8350,7 @@
    "id": "u00057",
    "kind": "menu",
    "jp": "ねぇちゃん、茶ぁしばけへんかぁ？",
-   "en": "Hey babe, fancy some tea?",
+   "en": "",
    "refs": [
     "s1:p05:01dd"
    ],
@@ -8360,7 +8360,7 @@
    "id": "u00058",
    "kind": "menu",
    "jp": "乳、揉ませろ",
-   "en": "Let me grope",
+   "en": "",
    "refs": [
     "s1:p05:01f4"
    ],
@@ -8370,7 +8370,7 @@
    "id": "u00059",
    "kind": "menu",
    "jp": "一緒に、官能の世界を体験しないかい？",
-   "en": "Care to explore sensuality with me?",
+   "en": "",
    "refs": [
     "s1:p05:0200"
    ],
@@ -8380,7 +8380,7 @@
    "id": "u00060",
    "kind": "menu",
    "jp": "ねぇちゃんの名前は？",
-   "en": "What's your name?",
+   "en": "",
    "refs": [
     "s1:p05:021f"
    ],
@@ -8390,7 +8390,7 @@
    "id": "u00061",
    "kind": "menu",
    "jp": "尻、嘗めさせろ",
-   "en": "Lemme lick ass",
+   "en": "",
    "refs": [
     "s1:p05:0230"
    ],
@@ -10692,7 +10692,7 @@
    "id": "u00062",
    "kind": "menu",
    "jp": "エリツィンをどう思う？",
-   "en": "What about Yeltsin?",
+   "en": "",
    "refs": [
     "s1:p05:07e2"
    ],
@@ -10702,7 +10702,7 @@
    "id": "u00063",
    "kind": "menu",
    "jp": "ノストラダムスの予言は当たるかな？",
-   "en": "Will Nostradamus be right?",
+   "en": "",
    "refs": [
     "s1:p05:07f9"
    ],
@@ -10712,7 +10712,7 @@
    "id": "u00064",
    "kind": "menu",
    "jp": "やっぱりスポーツはサッカーだと思わんか？",
-   "en": "Isn't soccer THE sport?",
+   "en": "",
    "refs": [
     "s1:p05:0819"
    ],
@@ -10722,7 +10722,7 @@
    "id": "u00065",
    "kind": "menu",
    "jp": "消費税をどう考える？",
-   "en": "Views on sales tax?",
+   "en": "",
    "refs": [
     "s1:p05:083b"
    ],
@@ -10732,7 +10732,7 @@
    "id": "u00066",
    "kind": "menu",
    "jp": "ハニワとたこやきどっちが好きかね？",
-   "en": "Haniwa or takoyaki: which?",
+   "en": "",
    "refs": [
     "s1:p05:084f"
    ],
@@ -12954,7 +12954,7 @@
    "id": "u00067",
    "kind": "menu",
    "jp": "どうして、さっきは変な言葉で喋った？",
-   "en": "Why'd you talk funny earlier?",
+   "en": "",
    "refs": [
     "s1:p05:0f25"
    ],
@@ -12964,7 +12964,7 @@
    "id": "u00068",
    "kind": "menu",
    "jp": "ここはどこだ？",
-   "en": "Where am I?",
+   "en": "",
    "refs": [
     "s1:p05:0f42"
    ],
@@ -12974,7 +12974,7 @@
    "id": "u00069",
    "kind": "menu",
    "jp": "乳すけてるぞ",
-   "en": "See-through!",
+   "en": "",
    "refs": [
     "s1:p05:0f50"
    ],
@@ -12984,7 +12984,7 @@
    "id": "u00070",
    "kind": "menu",
    "jp": "キラ以外、誰もいないのか？",
-   "en": "Nobody here but Kira?",
+   "en": "",
    "refs": [
     "s1:p05:0f5c"
    ],
@@ -12994,7 +12994,7 @@
    "id": "u00071",
    "kind": "menu",
    "jp": "出ていく",
-   "en": "Leave",
+   "en": "",
    "refs": [
     "s1:p05:0f73",
     "s1:p11:071b"
@@ -14996,7 +14996,7 @@
    "id": "u00072",
    "kind": "menu",
    "jp": "じゃけんする",
-   "en": "Play janken",
+   "en": "",
    "refs": [
     "s1:p05:1502"
    ],
@@ -15006,7 +15006,7 @@
    "id": "u00073",
    "kind": "menu",
    "jp": "じゃんけんしない",
-   "en": "Skip janken",
+   "en": "",
    "refs": [
     "s1:p05:150d"
    ],
@@ -16468,7 +16468,7 @@
    "id": "u00074",
    "kind": "menu",
    "jp": "そんな格好で風邪、ひかんか？",
-   "en": "Won't you catch a chill?",
+   "en": "",
    "refs": [
     "s1:p05:1a3a"
    ],
@@ -16478,7 +16478,7 @@
    "id": "u00075",
    "kind": "menu",
    "jp": "家族は帰ってきたか？",
-   "en": "Family back yet?",
+   "en": "",
    "refs": [
     "s1:p05:1a58"
    ],
@@ -16488,7 +16488,7 @@
    "id": "u00076",
    "kind": "menu",
    "jp": "メシ食いに行こうぜ",
-   "en": "Let's go eat",
+   "en": "",
    "refs": [
     "s1:p05:1a70"
    ],
@@ -16498,7 +16498,7 @@
    "id": "u00077",
    "kind": "menu",
    "jp": "別の場所へ遊びに行かないか？",
-   "en": "Go play somewhere else?",
+   "en": "",
    "refs": [
     "s1:p05:1a88"
    ],
@@ -16508,7 +16508,7 @@
    "id": "u00078",
    "kind": "menu",
    "jp": "さあ、いっぱつやろうか",
-   "en": "Time for a quickie?",
+   "en": "",
    "refs": [
     "s1:p05:1aa7"
    ],
@@ -16518,7 +16518,7 @@
    "id": "u00079",
    "kind": "menu",
    "jp": "キラっていくつなんだ？",
-   "en": "How old are you, Kira?",
+   "en": "",
    "refs": [
     "s1:p05:1abd"
    ],
@@ -16528,7 +16528,7 @@
    "id": "u00080",
    "kind": "menu",
    "jp": "キラってホントにネズミなのか？",
-   "en": "Kira, are you really a mouse?",
+   "en": "",
    "refs": [
     "s1:p05:1ad6"
    ],
@@ -16538,7 +16538,7 @@
    "id": "u00081",
    "kind": "menu",
    "jp": "乳揉ませろ",
-   "en": "Cop a feel",
+   "en": "",
    "refs": [
     "s1:p05:1af8",
     "s1:p08:1d90"
@@ -16549,7 +16549,7 @@
    "id": "u00082",
    "kind": "menu",
    "jp": "デートしようぜ",
-   "en": "Let's go out",
+   "en": "",
    "refs": [
     "s1:p05:1b09"
    ],
@@ -16559,7 +16559,7 @@
    "id": "u00083",
    "kind": "menu",
    "jp": "泳ごうぜ",
-   "en": "Go swim",
+   "en": "",
    "refs": [
     "s1:p05:1b1d"
    ],
@@ -16569,7 +16569,7 @@
    "id": "u00084",
    "kind": "menu",
    "jp": "石をとばしっこしよう",
-   "en": "Let's skip stones",
+   "en": "",
    "refs": [
     "s1:p05:1b2e"
    ],
@@ -16579,7 +16579,7 @@
    "id": "u00085",
    "kind": "menu",
    "jp": "キラの職業は？",
-   "en": "Kira's job?",
+   "en": "",
    "refs": [
     "s1:p05:1b44"
    ],
@@ -16589,7 +16589,7 @@
    "id": "u00086",
    "kind": "menu",
    "jp": "出る",
-   "en": "Exit",
+   "en": "",
    "refs": [
     "s1:p05:1b55",
     "s1:p08:0434",

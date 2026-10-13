@@ -5,7 +5,7 @@
    "id": "w00001",
    "kind": "word",
    "jp": "ひろう",
-   "en": "",
+   "en": "Pick up",
    "refs": [
     "verb:4"
    ],
@@ -15,7 +15,7 @@
    "id": "w00002",
    "kind": "word",
    "jp": "みる",
-   "en": "",
+   "en": "Look",
    "refs": [
     "verb:5"
    ],
@@ -25,7 +25,7 @@
    "id": "w00003",
    "kind": "word",
    "jp": "いく",
-   "en": "",
+   "en": "Go",
    "refs": [
     "verb:6"
    ],
@@ -35,7 +35,7 @@
    "id": "w00004",
    "kind": "word",
    "jp": "はいる",
-   "en": "",
+   "en": "Enter",
    "refs": [
     "verb:7"
    ],
@@ -45,7 +45,7 @@
    "id": "w00005",
    "kind": "word",
    "jp": "さか゛す",
-   "en": "",
+   "en": "Search",
    "refs": [
     "verb:8"
    ],
@@ -55,7 +55,7 @@
    "id": "w00006",
    "kind": "word",
    "jp": "しらへ゛",
-   "en": "",
+   "en": "Investigate",
    "refs": [
     "verb:9"
    ],
@@ -65,7 +65,7 @@
    "id": "w00007",
    "kind": "word",
    "jp": "はなす",
-   "en": "",
+   "en": "Talk",
    "refs": [
     "verb:10"
    ],
@@ -75,7 +75,7 @@
    "id": "w00008",
    "kind": "word",
    "jp": "とる",
-   "en": "",
+   "en": "Take",
    "refs": [
     "verb:11"
    ],
@@ -85,7 +85,7 @@
    "id": "w00009",
    "kind": "word",
    "jp": "あける",
-   "en": "",
+   "en": "Open",
    "refs": [
     "verb:12"
    ],
@@ -95,7 +95,7 @@
    "id": "w00010",
    "kind": "word",
    "jp": "うこ゛か",
-   "en": "",
+   "en": "Move",
    "refs": [
     "verb:13"
    ],
@@ -105,7 +105,7 @@
    "id": "w00011",
    "kind": "word",
    "jp": "て゛る",
-   "en": "",
+   "en": "Exit",
    "refs": [
     "verb:14"
    ],
@@ -115,7 +115,7 @@
    "id": "w00012",
    "kind": "word",
    "jp": "きく",
-   "en": "",
+   "en": "Listen",
    "refs": [
     "verb:15"
    ],
@@ -125,7 +125,7 @@
    "id": "w00013",
    "kind": "word",
    "jp": "なく゛る",
-   "en": "",
+   "en": "Punch",
    "refs": [
     "verb:16"
    ],
@@ -135,7 +135,7 @@
    "id": "w00014",
    "kind": "word",
    "jp": "のる",
-   "en": "",
+   "en": "Ride",
    "refs": [
     "verb:17"
    ],
@@ -145,7 +145,7 @@
    "id": "w00015",
    "kind": "word",
    "jp": "かえる",
-   "en": "",
+   "en": "Return",
    "refs": [
     "verb:18"
    ],
@@ -155,7 +155,7 @@
    "id": "w00016",
    "kind": "word",
    "jp": "みせる",
-   "en": "",
+   "en": "Show",
    "refs": [
     "verb:19"
    ],
@@ -165,7 +165,7 @@
    "id": "w00017",
    "kind": "word",
    "jp": "もと゛る",
-   "en": "",
+   "en": "Go back",
    "refs": [
     "verb:20"
    ],
@@ -175,7 +175,7 @@
    "id": "w00018",
    "kind": "word",
    "jp": "のほ゛る",
-   "en": "",
+   "en": "Climb",
    "refs": [
     "verb:21"
    ],
@@ -185,7 +185,7 @@
    "id": "w00019",
    "kind": "word",
    "jp": "すてる",
-   "en": "",
+   "en": "Discard",
    "refs": [
     "verb:22"
    ],
@@ -195,7 +195,7 @@
    "id": "w00020",
    "kind": "word",
    "jp": "くと゛く",
-   "en": "",
+   "en": "Seduce",
    "refs": [
     "verb:23"
    ],
@@ -205,7 +205,7 @@
    "id": "w00021",
    "kind": "word",
    "jp": "たへ゛る",
-   "en": "",
+   "en": "Eat",
    "refs": [
     "verb:24"
    ],
@@ -215,7 +215,7 @@
    "id": "w00022",
    "kind": "word",
    "jp": "つかう",
-   "en": "",
+   "en": "Use",
    "refs": [
     "verb:25"
    ],
@@ -225,7 +225,7 @@
    "id": "w00023",
    "kind": "word",
    "jp": "あいふ゛",
-   "en": "",
+   "en": "Embrace",
    "refs": [
     "verb:26"
    ],
@@ -235,7 +235,7 @@
    "id": "w00024",
    "kind": "word",
    "jp": "なめる",
-   "en": "",
+   "en": "Lick",
    "refs": [
     "verb:27"
    ],
@@ -245,7 +245,7 @@
    "id": "w00025",
    "kind": "word",
    "jp": "おかす",
-   "en": "",
+   "en": "Violate",
    "refs": [
     "verb:28"
    ],
@@ -255,7 +255,7 @@
    "id": "w00026",
    "kind": "word",
    "jp": "せつくす",
-   "en": "",
+   "en": "Sex",
    "refs": [
     "verb:29"
    ],
@@ -265,7 +265,7 @@
    "id": "w00027",
    "kind": "word",
    "jp": "もむ",
-   "en": "",
+   "en": "Massage",
    "refs": [
     "verb:30"
    ],
@@ -275,7 +275,7 @@
    "id": "w00028",
    "kind": "word",
    "jp": "ぬか゛す",
-   "en": "",
+   "en": "Strip",
    "refs": [
     "verb:31"
    ],
@@ -285,7 +285,7 @@
    "id": "w00029",
    "kind": "word",
    "jp": "くすく゛",
-   "en": "",
+   "en": "Tickle",
    "refs": [
     "verb:32"
    ],
@@ -295,7 +295,7 @@
    "id": "w00030",
    "kind": "word",
    "jp": "ねる",
-   "en": "",
+   "en": "Sleep",
    "refs": [
     "verb:33"
    ],
@@ -305,7 +305,7 @@
    "id": "w00031",
    "kind": "word",
    "jp": "きすする",
-   "en": "",
+   "en": "Kiss",
    "refs": [
     "verb:34"
    ],
@@ -315,7 +315,7 @@
    "id": "w00032",
    "kind": "word",
    "jp": "わかれる",
-   "en": "",
+   "en": "Break up",
    "refs": [
     "verb:35"
    ],
@@ -325,7 +325,7 @@
    "id": "w00033",
    "kind": "word",
    "jp": "か゛つこ",
-   "en": "",
+   "en": "School",
    "refs": [
     "noun:1"
    ],
@@ -335,7 +335,7 @@
    "id": "w00034",
    "kind": "word",
    "jp": "こうしや",
-   "en": "",
+   "en": "School building",
    "refs": [
     "noun:2"
    ],
@@ -345,7 +345,7 @@
    "id": "w00035",
    "kind": "word",
    "jp": "き",
-   "en": "",
+   "en": "Tree",
    "refs": [
     "noun:3"
    ],
@@ -355,7 +355,7 @@
    "id": "w00036",
    "kind": "word",
    "jp": "まえ",
-   "en": "",
+   "en": "Front",
    "refs": [
     "noun:4"
    ],
@@ -365,7 +365,7 @@
    "id": "w00037",
    "kind": "word",
    "jp": "うしろ",
-   "en": "",
+   "en": "Back",
    "refs": [
     "noun:5"
    ],
@@ -375,7 +375,7 @@
    "id": "w00038",
    "kind": "word",
    "jp": "ひた゛り",
-   "en": "",
+   "en": "Left",
    "refs": [
     "noun:6"
    ],
@@ -385,7 +385,7 @@
    "id": "w00039",
    "kind": "word",
    "jp": "みき゛",
-   "en": "",
+   "en": "Right",
    "refs": [
     "noun:7"
    ],
@@ -395,7 +395,7 @@
    "id": "w00040",
    "kind": "word",
    "jp": "かみ",
-   "en": "",
+   "en": "Hair",
    "refs": [
     "noun:8"
    ],
@@ -405,7 +405,7 @@
    "id": "w00041",
    "kind": "word",
    "jp": "めも",
-   "en": "",
+   "en": "Memo",
    "refs": [
     "noun:9"
    ],
@@ -415,7 +415,7 @@
    "id": "w00042",
    "kind": "word",
    "jp": "ゆみこ",
-   "en": "",
+   "en": "Yumiko",
    "refs": [
     "noun:10"
    ],
@@ -425,7 +425,7 @@
    "id": "w00043",
    "kind": "word",
    "jp": "まり",
-   "en": "",
+   "en": "Mari",
    "refs": [
     "noun:11"
    ],
@@ -435,7 +435,7 @@
    "id": "w00044",
    "kind": "word",
    "jp": "くみ",
-   "en": "",
+   "en": "Kumi",
    "refs": [
     "noun:12"
    ],
@@ -445,7 +445,7 @@
    "id": "w00045",
    "kind": "word",
    "jp": "なおこ",
-   "en": "",
+   "en": "Naoko",
    "refs": [
     "noun:13"
    ],
@@ -455,7 +455,7 @@
    "id": "w00046",
    "kind": "word",
    "jp": "ようこ",
-   "en": "",
+   "en": "Yoko",
    "refs": [
     "noun:14"
    ],
@@ -465,7 +465,7 @@
    "id": "w00047",
    "kind": "word",
    "jp": "いしい",
-   "en": "",
+   "en": "Ishii",
    "refs": [
     "noun:15"
    ],
@@ -475,7 +475,7 @@
    "id": "w00048",
    "kind": "word",
    "jp": "かなあみ",
-   "en": "",
+   "en": "Wire fence",
    "refs": [
     "noun:16"
    ],
@@ -485,7 +485,7 @@
    "id": "w00049",
    "kind": "word",
    "jp": "ふ゛しつ",
-   "en": "",
+   "en": "Club room",
    "refs": [
     "noun:17"
    ],
@@ -495,7 +495,7 @@
    "id": "w00050",
    "kind": "word",
    "jp": "くらふ゛",
-   "en": "",
+   "en": "Club",
    "refs": [
     "noun:18"
    ],
@@ -505,7 +505,7 @@
    "id": "w00051",
    "kind": "word",
    "jp": "と゛あ",
-   "en": "",
+   "en": "Door",
    "refs": [
     "noun:19"
    ],
@@ -515,7 +515,7 @@
    "id": "w00052",
    "kind": "word",
    "jp": "まと゛",
-   "en": "",
+   "en": "Window",
    "refs": [
     "noun:20"
    ],
@@ -525,7 +525,7 @@
    "id": "w00053",
    "kind": "word",
    "jp": "かき゛",
-   "en": "",
+   "en": "Lock",
    "refs": [
     "noun:21"
    ],
@@ -535,7 +535,7 @@
    "id": "w00054",
    "kind": "word",
    "jp": "せんせい",
-   "en": "",
+   "en": "Teacher",
    "refs": [
     "noun:22"
    ],
@@ -545,7 +545,7 @@
    "id": "w00055",
    "kind": "word",
    "jp": "たいいく",
-   "en": "",
+   "en": "Gym",
    "refs": [
     "noun:23"
    ],
@@ -555,7 +555,7 @@
    "id": "w00056",
    "kind": "word",
    "jp": "ふく",
-   "en": "",
+   "en": "Clothes",
    "refs": [
     "noun:24"
    ],
@@ -565,7 +565,7 @@
    "id": "w00057",
    "kind": "word",
    "jp": "は゜んて",
-   "en": "",
+   "en": "Panties",
    "refs": [
     "noun:25"
    ],
@@ -575,7 +575,7 @@
    "id": "w00058",
    "kind": "word",
    "jp": "むね",
-   "en": "",
+   "en": "Breasts",
    "refs": [
     "noun:26"
    ],
@@ -585,7 +585,7 @@
    "id": "w00059",
    "kind": "word",
    "jp": "おしり",
-   "en": "",
+   "en": "Ass",
    "refs": [
     "noun:27"
    ],
@@ -595,7 +595,7 @@
    "id": "w00060",
    "kind": "word",
    "jp": "こし",
-   "en": "",
+   "en": "Hips",
    "refs": [
     "noun:28"
    ],
@@ -605,7 +605,7 @@
    "id": "w00061",
    "kind": "word",
    "jp": "からた゛",
-   "en": "",
+   "en": "Body",
    "refs": [
     "noun:29"
    ],
@@ -615,7 +615,7 @@
    "id": "w00062",
    "kind": "word",
    "jp": "あそこ",
-   "en": "",
+   "en": "Down there",
    "refs": [
     "noun:30"
    ],
@@ -625,7 +625,7 @@
    "id": "w00063",
    "kind": "word",
    "jp": "せいき",
-   "en": "",
+   "en": "Penis",
    "refs": [
     "noun:31"
    ],
@@ -635,7 +635,7 @@
    "id": "w00064",
    "kind": "word",
    "jp": "おんな",
-   "en": "",
+   "en": "Woman",
    "refs": [
     "noun:32"
    ],
@@ -645,7 +645,7 @@
    "id": "w00065",
    "kind": "word",
    "jp": "てにすこ",
-   "en": "",
+   "en": "Tennis court",
    "refs": [
     "noun:33"
    ],
@@ -655,7 +655,7 @@
    "id": "w00066",
    "kind": "word",
    "jp": "こうてい",
-   "en": "",
+   "en": "Schoolyard",
    "refs": [
     "noun:34"
    ],
@@ -665,7 +665,7 @@
    "id": "w00067",
    "kind": "word",
    "jp": "こうもん",
-   "en": "",
+   "en": "Gate",
    "refs": [
     "noun:35"
    ],
@@ -675,7 +675,7 @@
    "id": "w00068",
    "kind": "word",
    "jp": "かお",
-   "en": "",
+   "en": "Face",
    "refs": [
     "noun:36"
    ],
@@ -685,7 +685,7 @@
    "id": "w00069",
    "kind": "word",
    "jp": "あし",
-   "en": "",
+   "en": "Legs",
    "refs": [
     "noun:37"
    ],
@@ -695,7 +695,7 @@
    "id": "w00070",
    "kind": "word",
    "jp": "て",
-   "en": "",
+   "en": "Hand",
    "refs": [
     "noun:38"
    ],
@@ -705,7 +705,7 @@
    "id": "w00071",
    "kind": "word",
    "jp": "みち",
-   "en": "",
+   "en": "Path",
    "refs": [
     "noun:39",
     "noun:80"
@@ -716,7 +716,7 @@
    "id": "w00072",
    "kind": "word",
    "jp": "かは゛ん",
-   "en": "",
+   "en": "Bag",
    "refs": [
     "noun:40"
    ],
@@ -726,7 +726,7 @@
    "id": "w00073",
    "kind": "word",
    "jp": "つくえ",
-   "en": "",
+   "en": "Desk",
    "refs": [
     "noun:41"
    ],
@@ -736,7 +736,7 @@
    "id": "w00074",
    "kind": "word",
    "jp": "いす",
-   "en": "",
+   "en": "Chair",
    "refs": [
     "noun:42"
    ],
@@ -746,7 +746,7 @@
    "id": "w00075",
    "kind": "word",
    "jp": "まいこん",
-   "en": "",
+   "en": "Microcomputer",
    "refs": [
     "noun:43"
    ],
@@ -756,7 +756,7 @@
    "id": "w00076",
    "kind": "word",
    "jp": "うえ",
-   "en": "",
+   "en": "Top",
    "refs": [
     "noun:44"
    ],
@@ -766,7 +766,7 @@
    "id": "w00077",
    "kind": "word",
    "jp": "はいきん",
-   "en": "",
+   "en": "Hiking",
    "refs": [
     "noun:45"
    ],
@@ -776,7 +776,7 @@
    "id": "w00078",
    "kind": "word",
    "jp": "らし゛か",
-   "en": "",
+   "en": "Radio cassette",
    "refs": [
     "noun:46"
    ],
@@ -786,7 +786,7 @@
    "id": "w00079",
    "kind": "word",
    "jp": "かへ゛",
-   "en": "",
+   "en": "Wall",
    "refs": [
     "noun:47"
    ],
@@ -796,7 +796,7 @@
    "id": "w00080",
    "kind": "word",
    "jp": "ほ゜すた",
-   "en": "",
+   "en": "Poster",
    "refs": [
     "noun:48"
    ],
@@ -806,7 +806,7 @@
    "id": "w00081",
    "kind": "word",
    "jp": "しやしん",
-   "en": "",
+   "en": "Photo",
    "refs": [
     "noun:49"
    ],
@@ -816,7 +816,7 @@
    "id": "w00082",
    "kind": "word",
    "jp": "ぬーと゛",
-   "en": "",
+   "en": "Nude",
    "refs": [
     "noun:50"
    ],
@@ -826,7 +826,7 @@
    "id": "w00083",
    "kind": "word",
    "jp": "て゛んわ",
-   "en": "",
+   "en": "Telephone",
    "refs": [
     "noun:51"
    ],
@@ -836,7 +836,7 @@
    "id": "w00084",
    "kind": "word",
    "jp": "かいた゛",
-   "en": "",
+   "en": "Stairs",
    "refs": [
     "noun:52"
    ],
@@ -846,7 +846,7 @@
    "id": "w00085",
    "kind": "word",
    "jp": "いもうと",
-   "en": "",
+   "en": "Little sister",
    "refs": [
     "noun:53"
    ],
@@ -856,7 +856,7 @@
    "id": "w00086",
    "kind": "word",
    "jp": "け゛んか",
-   "en": "",
+   "en": "Entrance",
    "refs": [
     "noun:54"
    ],
@@ -866,7 +866,7 @@
    "id": "w00087",
    "kind": "word",
    "jp": "た゛いと",
-   "en": "",
+   "en": "Date",
    "refs": [
     "noun:55"
    ],
@@ -876,7 +876,7 @@
    "id": "w00088",
    "kind": "word",
    "jp": "いま",
-   "en": "",
+   "en": "Living room",
    "refs": [
     "noun:56"
    ],
@@ -886,7 +886,7 @@
    "id": "w00089",
    "kind": "word",
    "jp": "はは",
-   "en": "",
+   "en": "Mother",
    "refs": [
     "noun:57"
    ],
@@ -896,7 +896,7 @@
    "id": "w00090",
    "kind": "word",
    "jp": "へ゛つと",
-   "en": "",
+   "en": "Bed",
    "refs": [
     "noun:58",
     "noun:85"
@@ -907,7 +907,7 @@
    "id": "w00091",
    "kind": "word",
    "jp": "ちち",
-   "en": "",
+   "en": "Father",
    "refs": [
     "noun:59"
    ],
@@ -917,7 +917,7 @@
    "id": "w00092",
    "kind": "word",
    "jp": "そと",
-   "en": "",
+   "en": "Outside",
    "refs": [
     "noun:60"
    ],
@@ -927,7 +927,7 @@
    "id": "w00093",
    "kind": "word",
    "jp": "こうえん",
-   "en": "",
+   "en": "Park",
    "refs": [
     "noun:61"
    ],
@@ -937,7 +937,7 @@
    "id": "w00094",
    "kind": "word",
    "jp": "ほん",
-   "en": "",
+   "en": "Book",
    "refs": [
     "noun:62"
    ],
@@ -947,7 +947,7 @@
    "id": "w00095",
    "kind": "word",
    "jp": "ゆうはん",
-   "en": "",
+   "en": "Dinner",
    "refs": [
     "noun:63"
    ],
@@ -957,7 +957,7 @@
    "id": "w00096",
    "kind": "word",
    "jp": "ひみつ",
-   "en": "",
+   "en": "Secret",
    "refs": [
     "noun:64"
    ],
@@ -967,7 +967,7 @@
    "id": "w00097",
    "kind": "word",
    "jp": "しんふ゛",
-   "en": "",
+   "en": "Truth",
    "refs": [
     "noun:65"
    ],
@@ -977,7 +977,7 @@
    "id": "w00098",
    "kind": "word",
    "jp": "おしいれ",
-   "en": "",
+   "en": "Closet",
    "refs": [
     "noun:66"
    ],
@@ -987,7 +987,7 @@
    "id": "w00099",
    "kind": "word",
    "jp": "しけ゛み",
-   "en": "",
+   "en": "Bushes",
    "refs": [
     "noun:67"
    ],
@@ -997,7 +997,7 @@
    "id": "w00100",
    "kind": "word",
    "jp": "へ゛んち",
-   "en": "",
+   "en": "Bench",
    "refs": [
     "noun:68"
    ],
@@ -1007,7 +1007,7 @@
    "id": "w00101",
    "kind": "word",
    "jp": "すへ゛り",
-   "en": "",
+   "en": "Slide",
    "refs": [
     "noun:69"
    ],
@@ -1017,7 +1017,7 @@
    "id": "w00102",
    "kind": "word",
    "jp": "ふ゛らん",
-   "en": "",
+   "en": "Swing",
    "refs": [
     "noun:70"
    ],
@@ -1027,7 +1027,7 @@
    "id": "w00103",
    "kind": "word",
    "jp": "あへ゛つ",
-   "en": "",
+   "en": "Pervert",
    "refs": [
     "noun:71"
    ],
@@ -1037,7 +1037,7 @@
    "id": "w00104",
    "kind": "word",
    "jp": "せーらー",
-   "en": "",
+   "en": "Sailor uniform",
    "refs": [
     "noun:72"
    ],
@@ -1047,7 +1047,7 @@
    "id": "w00105",
    "kind": "word",
    "jp": "えき",
-   "en": "",
+   "en": "Station",
    "refs": [
     "noun:73"
    ],
@@ -1057,7 +1057,7 @@
    "id": "w00106",
    "kind": "word",
    "jp": "て゛なわ",
-   "en": "",
+   "en": "Station plaza",
    "refs": [
     "noun:74"
    ],
@@ -1067,7 +1067,7 @@
    "id": "w00107",
    "kind": "word",
    "jp": "なそ゛",
-   "en": "",
+   "en": "Mystery",
    "refs": [
     "noun:75"
    ],
@@ -1077,7 +1077,7 @@
    "id": "w00108",
    "kind": "word",
    "jp": "ほ゛ーと",
-   "en": "",
+   "en": "Boat",
    "refs": [
     "noun:76"
    ],
@@ -1087,7 +1087,7 @@
    "id": "w00109",
    "kind": "word",
    "jp": "みす゛う",
-   "en": "",
+   "en": "Lake",
    "refs": [
     "noun:77"
    ],
@@ -1097,7 +1097,7 @@
    "id": "w00110",
    "kind": "word",
    "jp": "のりは゛",
-   "en": "",
+   "en": "Boat dock",
    "refs": [
     "noun:78"
    ],
@@ -1107,7 +1107,7 @@
    "id": "w00111",
    "kind": "word",
    "jp": "もり",
-   "en": "",
+   "en": "Forest",
    "refs": [
     "noun:79"
    ],
@@ -1117,7 +1117,7 @@
    "id": "w00112",
    "kind": "word",
    "jp": "ほらあな",
-   "en": "",
+   "en": "Cave",
    "refs": [
     "noun:81"
    ],
@@ -1127,7 +1127,7 @@
    "id": "w00113",
    "kind": "word",
    "jp": "と゛うく",
-   "en": "",
+   "en": "Tool",
    "refs": [
     "noun:82"
    ],
@@ -1137,7 +1137,7 @@
    "id": "w00114",
    "kind": "word",
    "jp": "いわ",
-   "en": "",
+   "en": "Rock",
    "refs": [
     "noun:83"
    ],
@@ -1147,7 +1147,7 @@
    "id": "w00115",
    "kind": "word",
    "jp": "あめ",
-   "en": "",
+   "en": "Rain",
    "refs": [
     "noun:84"
    ],
@@ -1157,7 +1157,7 @@
    "id": "w00116",
    "kind": "word",
    "jp": "たんす",
-   "en": "",
+   "en": "Dresser",
    "refs": [
     "noun:86"
    ],
@@ -1167,7 +1167,7 @@
    "id": "w00117",
    "kind": "word",
    "jp": "ひきた゛",
-   "en": "",
+   "en": "Drawer",
    "refs": [
     "noun:87"
    ],
@@ -1177,7 +1177,7 @@
    "id": "w00118",
    "kind": "word",
    "jp": "まち",
-   "en": "",
+   "en": "Town",
    "refs": [
     "noun:88"
    ],
@@ -1187,7 +1187,7 @@
    "id": "w00119",
    "kind": "word",
    "jp": "くつしよ",
-   "en": "",
+   "en": "Shoeshine",
    "refs": [
     "noun:89"
    ],
@@ -1197,7 +1197,7 @@
    "id": "w00120",
    "kind": "word",
    "jp": "すたんと",
-   "en": "",
+   "en": "Stand",
    "refs": [
     "noun:90"
    ],
@@ -1207,7 +1207,7 @@
    "id": "w00121",
    "kind": "word",
    "jp": "ようみ",
-   "en": "",
+   "en": "Yomi",
    "refs": [
     "noun:91"
    ],
@@ -1217,7 +1217,7 @@
    "id": "w00122",
    "kind": "word",
    "jp": "かーてん",
-   "en": "",
+   "en": "Curtain",
    "refs": [
     "noun:92"
    ],
@@ -1227,7 +1227,7 @@
    "id": "w00123",
    "kind": "word",
    "jp": "えいか゛",
-   "en": "",
+   "en": "Movie",
    "refs": [
     "noun:93"
    ],
@@ -1237,7 +1237,7 @@
    "id": "w00124",
    "kind": "word",
    "jp": "とるこ",
-   "en": "",
+   "en": "Turkish bath",
    "refs": [
     "noun:94"
    ],
@@ -1247,7 +1247,7 @@
    "id": "w00125",
    "kind": "word",
    "jp": "て゛いす",
-   "en": "",
+   "en": "Disco",
    "refs": [
     "noun:95"
    ],
@@ -1257,7 +1257,7 @@
    "id": "w00126",
    "kind": "word",
    "jp": "すなつく",
-   "en": "",
+   "en": "Snack bar",
    "refs": [
     "noun:96"
    ],
@@ -1267,7 +1267,7 @@
    "id": "w00127",
    "kind": "word",
    "jp": "ろし゛",
-   "en": "",
+   "en": "Alley",
    "refs": [
     "noun:97"
    ],
@@ -1277,7 +1277,7 @@
    "id": "w00128",
    "kind": "word",
    "jp": "やくさ゛",
-   "en": "",
+   "en": "Yakuza",
    "refs": [
     "noun:98"
    ],
@@ -1287,7 +1287,7 @@
    "id": "w00129",
    "kind": "word",
    "jp": "ちんひ゜",
-   "en": "",
+   "en": "Chinpira",
    "refs": [
     "noun:99"
    ],
@@ -1297,7 +1297,7 @@
    "id": "w00130",
    "kind": "word",
    "jp": "ますたー",
-   "en": "",
+   "en": "Master",
    "refs": [
     "noun:100"
    ],
@@ -1307,7 +1307,7 @@
    "id": "w00131",
    "kind": "word",
    "jp": "かね",
-   "en": "",
+   "en": "Money",
    "refs": [
     "noun:101"
    ],
@@ -1317,7 +1317,7 @@
    "id": "w00132",
    "kind": "word",
    "jp": "さけ",
-   "en": "",
+   "en": "Alcohol",
    "refs": [
     "noun:102"
    ],
@@ -1327,7 +1327,7 @@
    "id": "w00133",
    "kind": "word",
    "jp": "みせ",
-   "en": "",
+   "en": "Shop",
    "refs": [
     "noun:103"
    ],
@@ -1337,7 +1337,7 @@
    "id": "w00134",
    "kind": "word",
    "jp": "きやく",
-   "en": "",
+   "en": "Customer",
    "refs": [
     "noun:104"
    ],
@@ -1347,7 +1347,7 @@
    "id": "w00135",
    "kind": "word",
    "jp": "ほてる",
-   "en": "",
+   "en": "Hotel",
    "refs": [
     "noun:105"
    ],
@@ -1357,7 +1357,7 @@
    "id": "w00136",
    "kind": "word",
    "jp": "へや",
-   "en": "",
+   "en": "Room",
    "refs": [
     "noun:106"
    ],
@@ -1367,7 +1367,7 @@
    "id": "w00137",
    "kind": "word",
    "jp": "けいかん",
-   "en": "",
+   "en": "Police officer",
    "refs": [
     "noun:107"
    ],
@@ -1377,7 +1377,7 @@
    "id": "w00138",
    "kind": "word",
    "jp": "てれひ゛",
-   "en": "",
+   "en": "TV",
    "refs": [
     "noun:108"
    ],
@@ -1387,7 +1387,7 @@
    "id": "w00139",
    "kind": "word",
    "jp": "しはいに",
-   "en": "",
+   "en": "Manager",
    "refs": [
     "noun:109"
    ],
@@ -1397,7 +1397,7 @@
    "id": "w00140",
    "kind": "word",
    "jp": "ひ゛て゛",
-   "en": "",
+   "en": "Video",
    "refs": [
     "noun:110"
    ],
@@ -1407,7 +1407,7 @@
    "id": "w00141",
    "kind": "word",
    "jp": "しやわー",
-   "en": "",
+   "en": "Shower",
    "refs": [
     "noun:111"
    ],
@@ -1417,7 +1417,7 @@
    "id": "w00142",
    "kind": "word",
    "jp": "ふろ",
-   "en": "",
+   "en": "Bath",
    "refs": [
     "noun:112"
    ],
@@ -1427,7 +1427,7 @@
    "id": "w00143",
    "kind": "word",
    "jp": "いえ",
-   "en": "",
+   "en": "House",
    "refs": [
     "noun:113"
    ],
@@ -1437,7 +1437,7 @@
    "id": "w00144",
    "kind": "word",
    "jp": "にかい",
-   "en": "",
+   "en": "Second floor",
    "refs": [
     "noun:114"
    ],
@@ -1447,7 +1447,7 @@
    "id": "w00145",
    "kind": "word",
    "jp": "らけつと",
-   "en": "",
+   "en": "Racket",
    "refs": [
     "noun:115"
    ],
@@ -1457,7 +1457,7 @@
    "id": "w00146",
    "kind": "word",
    "jp": "なまえ",
-   "en": "",
+   "en": "Name",
    "refs": [
     "noun:116"
    ],
@@ -1467,7 +1467,7 @@
    "id": "w00147",
    "kind": "word",
    "jp": "てんし",
-   "en": "",
+   "en": "Angel",
    "refs": [
     "noun:117"
    ],
@@ -1477,7 +1477,7 @@
    "id": "w00148",
    "kind": "word",
    "jp": "えりか",
-   "en": "",
+   "en": "Erika",
    "refs": [
     "noun:118"
    ],
@@ -1487,7 +1487,7 @@
    "id": "e00001",
    "kind": "engine",
    "jp": "ＤＡＴＡを",
-   "en": "",
+   "en": "DATA",
    "refs": [
     "eng:033a"
    ],
@@ -1497,7 +1497,7 @@
    "id": "e00002",
    "kind": "engine",
    "jp": "ロート゛",
-   "en": "",
+   "en": "LOAD",
    "refs": [
     "eng:0340"
    ],
@@ -1507,7 +1507,7 @@
    "id": "e00003",
    "kind": "engine",
    "jp": "セーフ゛",
-   "en": "",
+   "en": "SAVE",
    "refs": [
     "eng:0345"
    ],
@@ -1517,7 +1517,7 @@
    "id": "e00004",
    "kind": "engine",
    "jp": "します。",
-   "en": "",
+   "en": "now.",
    "refs": [
     "eng:034a"
    ],
@@ -1527,7 +1527,7 @@
    "id": "e00005",
    "kind": "engine",
    "jp": "ＧＡＭＥ　ＯＶＥＲ",
-   "en": "",
+   "en": "GAME OVER",
    "refs": [
     "eng:037d"
    ],
@@ -1537,7 +1537,7 @@
    "id": "e00006",
    "kind": "engine",
    "jp": "ＨＩＴ　ＡＮＹ　ＫＥＹ",
-   "en": "",
+   "en": "HIT ANY KEY",
    "refs": [
     "eng:0387"
    ],
@@ -1547,7 +1547,7 @@
    "id": "e00007",
    "kind": "engine",
    "jp": "ＰＵＳＨ　ＲＥＴＵＲＮ　ＫＥＹ",
-   "en": "",
+   "en": "PUSH RETURN KEY",
    "refs": [
     "eng:0393"
    ],
@@ -1557,7 +1557,7 @@
    "id": "p00001",
    "kind": "panel",
    "jp": "前に行く",
-   "en": "",
+   "en": "Go forward",
    "refs": [
     "panel:1"
    ],
@@ -1567,7 +1567,7 @@
    "id": "p00002",
    "kind": "panel",
    "jp": "後ろに行く",
-   "en": "",
+   "en": "Go back",
    "refs": [
     "panel:2"
    ],
@@ -1577,7 +1577,7 @@
    "id": "p00003",
    "kind": "panel",
    "jp": "左に行く",
-   "en": "",
+   "en": "Go left",
    "refs": [
     "panel:3"
    ],
@@ -1587,7 +1587,7 @@
    "id": "p00004",
    "kind": "panel",
    "jp": "右に行く",
-   "en": "",
+   "en": "Go right",
    "refs": [
     "panel:4"
    ],
@@ -1597,7 +1597,7 @@
    "id": "p00005",
    "kind": "panel",
    "jp": "見る",
-   "en": "",
+   "en": "Look",
    "refs": [
     "panel:5"
    ],
@@ -1607,7 +1607,7 @@
    "id": "p00006",
    "kind": "panel",
    "jp": "行く",
-   "en": "",
+   "en": "Go",
    "refs": [
     "panel:6"
    ],
@@ -1617,7 +1617,7 @@
    "id": "p00007",
    "kind": "panel",
    "jp": "入る",
-   "en": "",
+   "en": "Enter",
    "refs": [
     "panel:7"
    ],
@@ -1627,7 +1627,7 @@
    "id": "p00008",
    "kind": "panel",
    "jp": "探す",
-   "en": "",
+   "en": "Search",
    "refs": [
     "panel:8"
    ],
@@ -1637,7 +1637,7 @@
    "id": "p00009",
    "kind": "panel",
    "jp": "調へ゛る",
-   "en": "",
+   "en": "Investigate",
    "refs": [
     "panel:9"
    ],
@@ -1647,7 +1647,7 @@
    "id": "p00010",
    "kind": "panel",
    "jp": "話す",
-   "en": "",
+   "en": "Talk",
    "refs": [
     "panel:10"
    ],
@@ -1657,7 +1657,7 @@
    "id": "p00011",
    "kind": "panel",
    "jp": "取る",
-   "en": "",
+   "en": "Take",
    "refs": [
     "panel:11"
    ],
@@ -1667,7 +1667,7 @@
    "id": "p00012",
    "kind": "panel",
    "jp": "あける",
-   "en": "",
+   "en": "Open",
    "refs": [
     "panel:12"
    ],
@@ -1677,7 +1677,7 @@
    "id": "p00013",
    "kind": "panel",
    "jp": "動かす",
-   "en": "",
+   "en": "Move",
    "refs": [
     "panel:13"
    ],
@@ -1687,7 +1687,7 @@
    "id": "m00001",
    "kind": "msg",
    "jp": "今、熱いおもいを込めて、あなたにおくるロマン・アト゛ヘ゛ンチャー　‼　　彼女たちはあなたを待っています。　さあ、ＬＥＴ’Ｓ　ＬＯＶＥ　！！",
-   "en": "",
+   "en": "A romance adventure, delivered to you with burning passion! The girls are waiting for you. So, LET'S LOVE!!",
    "refs": [
     "scene0:0"
    ],
@@ -1697,7 +1697,7 @@
    "id": "m00002",
    "kind": "msg",
    "jp": "ここはあなたの高校の校庭て゛す。　放課後、あなたはクラフ゛活動を終えて　帰ろうとしているところて゛す。",
-   "en": "",
+   "en": "This is the schoolyard of your high school. After school, you've finished your club activities and are about to head home.",
    "refs": [
     "scene1:0"
    ],
@@ -1707,7 +1707,7 @@
    "id": "m00003",
    "kind": "msg",
    "jp": "授業か゛終って　静かて゛す。皆んなもう帰ったようて゛すね。",
-   "en": "",
+   "en": "Classes are over and it's quiet. Looks like everyone's already gone home.",
    "refs": [
     "scene1:1"
    ],
@@ -1717,7 +1717,7 @@
    "id": "m00004",
    "kind": "msg",
    "jp": "マイコンクラフ゛の部しつか゛あります。",
-   "en": "",
+   "en": "There's the microcomputer club room.",
    "refs": [
     "scene1:2"
    ],
@@ -1727,7 +1727,7 @@
    "id": "m00005",
    "kind": "msg",
    "jp": "テニスコートか゛あります。",
-   "en": "",
+   "en": "There's the tennis court.",
    "refs": [
     "scene1:3",
     "scene2:7"
@@ -1738,7 +1738,7 @@
    "id": "m00006",
    "kind": "msg",
    "jp": "体育館か゛あります。",
-   "en": "",
+   "en": "There's the gymnasium.",
    "refs": [
     "scene1:4"
    ],
@@ -1748,7 +1748,7 @@
    "id": "m00007",
    "kind": "msg",
    "jp": "校庭て゛す。",
-   "en": "",
+   "en": "It's the schoolyard.",
    "refs": [
     "scene1:5",
     "scene2:2",
@@ -1763,7 +1763,7 @@
    "id": "m00008",
    "kind": "msg",
    "jp": "もう少し校庭をふ゛らついてみませんか？",
-   "en": "",
+   "en": "Want to wander around the schoolyard a bit more?",
    "refs": [
     "scene1:6",
     "scene2:12",
@@ -1777,7 +1777,7 @@
    "id": "m00009",
    "kind": "msg",
    "jp": "テニスコートにきました。テニス部はまた゛熱心に練習しています。",
-   "en": "",
+   "en": "You've come to the tennis court. The tennis club is still practicing diligently.",
    "refs": [
     "scene2:0"
    ],
@@ -1787,7 +1787,7 @@
    "id": "m00010",
    "kind": "msg",
    "jp": "テニス部はまた゛練習しています。由美子か゛いるはす゛て゛す。探してみませんか。",
-   "en": "",
+   "en": "The tennis club is still practicing. Yumiko should be here. Why not look for her?",
    "refs": [
     "scene2:1"
    ],
@@ -1797,7 +1797,7 @@
    "id": "m00011",
    "kind": "msg",
    "jp": "校門か゛あります。",
-   "en": "",
+   "en": "There's the school gate.",
    "refs": [
     "scene2:3",
     "scene4:2"
@@ -1808,7 +1808,7 @@
    "id": "m00012",
    "kind": "msg",
    "jp": "ムフフフ・・・。コーフンしますねェ・・・。",
-   "en": "",
+   "en": "Heh heh heh... This is exciting...",
    "refs": [
     "scene2:4",
     "scene3:4"
@@ -1819,7 +1819,7 @@
    "id": "m00013",
    "kind": "msg",
    "jp": "かわいいコは゛かりて゛す。みんなヒ゜チヒ゜チて゛すね〜。",
-   "en": "",
+   "en": "Nothing but cute girls. All firm and perky~.",
    "refs": [
     "scene2:5"
    ],
@@ -1829,7 +1829,7 @@
    "id": "m00014",
    "kind": "msg",
    "jp": "金アミか゛あって、行けません。　　　　　",
-   "en": "",
+   "en": "There's a wire fence, so you can't go.",
    "refs": [
     "scene2:6"
    ],
@@ -1839,7 +1839,7 @@
    "id": "m00015",
    "kind": "msg",
    "jp": "いてて・・・よってたかってイシ゛メられました。",
-   "en": "",
+   "en": "Ow ow... They all ganged up on me.",
    "refs": [
     "scene2:8"
    ],
@@ -1849,7 +1849,7 @@
    "id": "m00016",
    "kind": "msg",
    "jp": "練習に夢中て゛相手にしてくれません。",
-   "en": "",
+   "en": "They're so absorbed in practice they won't pay you any attention.",
    "refs": [
     "scene2:9"
    ],
@@ -1859,7 +1859,7 @@
    "id": "m00017",
    "kind": "msg",
    "jp": "これからなんた゛から、あわてないて゛下さいよ。",
-   "en": "",
+   "en": "We're just getting started, so don't rush.",
    "refs": [
     "scene2:10",
     "scene3:9"
@@ -1870,7 +1870,7 @@
    "id": "m00018",
    "kind": "msg",
    "jp": "と゛こにいるのかわかりません。探してくた゜さい。",
-   "en": "",
+   "en": "You can't tell where she is. Please search for her.",
    "refs": [
     "scene2:11"
    ],
@@ -1880,7 +1880,7 @@
    "id": "m00019",
    "kind": "msg",
    "jp": "由美子か゛いました。この学校のＮＯ１。男子生徒のあこか゛れて゛す。頭も顔もよく、スホ゜ーツ万能の彼女にもちろんあなたもあこか゛れています。という訳て゛、あなたの目的はこの由美子を何とか口説き落とすことて゛す。",
-   "en": "",
+   "en": "There's Yumiko. The #1 girl at this school. The object of every male student's admiration. Smart, beautiful, and great at sports—of course you admire her too. So, your goal is to somehow win over this Yumiko.",
    "refs": [
     "scene3:0"
    ],
@@ -1890,7 +1890,7 @@
    "id": "m00020",
    "kind": "msg",
    "jp": "テニスの練習をしています。すてきた゛なァ・・・。",
-   "en": "",
+   "en": "She's practicing tennis. What a beauty...",
    "refs": [
     "scene3:2"
    ],
@@ -1900,7 +1900,7 @@
    "id": "m00021",
    "kind": "msg",
    "jp": "ムフフ。すてきた゛なァ・・・。",
-   "en": "",
+   "en": "Heh heh. What a beauty...",
    "refs": [
     "scene3:3"
    ],
@@ -1910,7 +1910,7 @@
    "id": "m00022",
    "kind": "msg",
    "jp": "何もかもあなた好みて゛す。せ゛ひともモノにして下さい。",
-   "en": "",
+   "en": "Everything about her is to your liking. By all means, make her yours.",
    "refs": [
     "scene3:5"
    ],
@@ -1920,7 +1920,7 @@
    "id": "m00023",
    "kind": "msg",
    "jp": "金アミか゛あって、その向うは外て゛す。",
-   "en": "",
+   "en": "There's a wire fence, and beyond it is the outside.",
    "refs": [
     "scene3:6"
    ],
@@ -1930,7 +1930,7 @@
    "id": "m00024",
    "kind": "msg",
    "jp": "ここか゛テスコートて゛す。",
-   "en": "",
+   "en": "This is the tennis court.",
    "refs": [
     "scene3:7"
    ],
@@ -1940,7 +1940,7 @@
    "id": "m00025",
    "kind": "msg",
    "jp": "かるく無視されました。",
-   "en": "",
+   "en": "You were casually ignored.",
    "refs": [
     "scene3:8"
    ],
@@ -1950,7 +1950,7 @@
    "id": "m00026",
    "kind": "msg",
    "jp": "あなたの入っているマイコンクラフ゛の部しつか゛あります。",
-   "en": "",
+   "en": "There's the room for the microcomputer club you belong to.",
    "refs": [
     "scene4:0"
    ],
@@ -1960,7 +1960,7 @@
    "id": "m00027",
    "kind": "msg",
    "jp": "もう少し校庭をフ゛ラついてみませんか　？",
-   "en": "",
+   "en": "Want to wander around the schoolyard a bit more?",
    "refs": [
     "scene4:3"
    ],
@@ -1970,7 +1970,7 @@
    "id": "m00028",
    "kind": "msg",
    "jp": "先生か゛います。「こらっ！早く帰れ！」と言ってます。",
-   "en": "",
+   "en": "There's a teacher. He's saying, \"Hey! Go home already!\"",
    "refs": [
     "scene5:0"
    ],
@@ -1980,7 +1980,7 @@
    "id": "m00029",
    "kind": "msg",
    "jp": "「また゛ウロウロしてるのか、早く帰れ！」とと゛なられました。",
-   "en": "",
+   "en": "He yelled at you: \"Still wandering around? Go home!\"",
    "refs": [
     "scene5:1"
    ],
@@ -1990,7 +1990,7 @@
    "id": "m00030",
    "kind": "msg",
    "jp": "学校て゛は一番コワイ先生。あなたはこの先生にはと゛うも弱いのて゛す。",
-   "en": "",
+   "en": "He's the scariest teacher at school. You're just no match for him.",
    "refs": [
     "scene5:3"
    ],
@@ -2000,7 +2000,7 @@
    "id": "m00031",
    "kind": "msg",
    "jp": "ここか゛校舎て゛す。",
-   "en": "",
+   "en": "This is the school building.",
    "refs": [
     "scene5:4"
    ],
@@ -2010,7 +2010,7 @@
    "id": "m00032",
    "kind": "msg",
    "jp": "体育館の入口の前て゛す。",
-   "en": "",
+   "en": "You're in front of the gymnasium entrance.",
    "refs": [
     "scene6:0"
    ],
@@ -2020,7 +2020,7 @@
    "id": "m00033",
    "kind": "msg",
    "jp": "体育館か゛あります。メモか゛落ちています。",
-   "en": "",
+   "en": "There's the gymnasium. A memo is lying on the ground.",
    "refs": [
     "scene6:1"
    ],
@@ -2030,7 +2030,7 @@
    "id": "m00034",
    "kind": "msg",
    "jp": "カキ゛か゛かかっていて、中には入れません。",
-   "en": "",
+   "en": "It's locked, so you can't get inside.",
    "refs": [
     "scene6:3"
    ],
@@ -2040,7 +2040,7 @@
    "id": "m00035",
    "kind": "msg",
    "jp": "何か書いてあります。拾わないとわかりません。",
-   "en": "",
+   "en": "Something's written on it. You can't tell unless you pick it up.",
    "refs": [
     "scene6:4"
    ],
@@ -2050,7 +2050,7 @@
    "id": "m00036",
    "kind": "msg",
    "jp": "友人の石井か゛います。「よお、　いっしょに帰ろうせ゛！」と言ってます。",
-   "en": "",
+   "en": "Your friend Ishii is here. He's saying, \"Hey, let's head home together!\"",
    "refs": [
     "scene7:0"
    ],
@@ -2060,7 +2060,7 @@
    "id": "m00037",
    "kind": "msg",
    "jp": "同し゛マイコンクラフ゛の男て゛す。女好きて゛なかなかいいやつて゛す。",
-   "en": "",
+   "en": "He's a guy from the same microcomputer club. A womanizer, but a pretty good guy.",
    "refs": [
     "scene7:1"
    ],
@@ -2070,7 +2070,7 @@
    "id": "m00038",
    "kind": "msg",
    "jp": "テニスコートて゛すか゛、もう、もと゛っても何もないて゛しょう。",
-   "en": "",
+   "en": "It's the tennis court, but going back now won't get you anything.",
    "refs": [
     "scene7:2"
    ],
@@ -2080,7 +2080,7 @@
    "id": "m00039",
    "kind": "msg",
    "jp": "校門て゛す。",
-   "en": "",
+   "en": "It's the school gate.",
    "refs": [
     "scene7:3",
     "scene8:1"
@@ -2091,7 +2091,7 @@
    "id": "m00040",
    "kind": "msg",
    "jp": "そろそろ帰らないと先生か゛ウルサイて゛すよ。",
-   "en": "",
+   "en": "If you don't head home soon, the teacher will be on your case.",
    "refs": [
     "scene7:4",
     "scene8:10"
@@ -2102,7 +2102,7 @@
    "id": "m00041",
    "kind": "msg",
    "jp": "先ほと゛はテニスコートにいましたか゛、もう帰っているて゛しょう。",
-   "en": "",
+   "en": "She was at the tennis court a moment ago, but she's probably gone home by now.",
    "refs": [
     "scene7:5"
    ],
@@ -2112,7 +2112,7 @@
    "id": "m00042",
    "kind": "msg",
    "jp": "「早く帰ろうせ゛！」",
-   "en": "",
+   "en": "\"Let's hurry home!\"",
    "refs": [
     "scene7:6"
    ],
@@ -2122,7 +2122,7 @@
    "id": "m00043",
    "kind": "msg",
    "jp": "「こりゃ何かのフ゜ロク゛ラムし゛ゃないのか・・？　マイコンにうちこんて゛走らせないと分からんな。お前のところのマイコンて゛やってみな・・」",
-   "en": "",
+   "en": "\"Isn't this some kind of program...? We won't know until we type it into a microcomputer and run it. Try it on your machine...\"",
    "refs": [
     "scene7:7"
    ],
@@ -2132,7 +2132,7 @@
    "id": "m00044",
    "kind": "msg",
    "jp": "ハ゛カなことを考えないて゛下さい。それとも、あなた、もしかして・・・。",
-   "en": "",
+   "en": "Don't think about doing anything stupid. Or are you, perhaps...?",
    "refs": [
     "scene7:8"
    ],
@@ -2142,7 +2142,7 @@
    "id": "m00045",
    "kind": "msg",
    "jp": "誰かいるようて゛す。女の子かな　・・？",
-   "en": "",
+   "en": "Someone seems to be there. A girl, maybe...?",
    "refs": [
     "scene7:9"
    ],
@@ -2152,7 +2152,7 @@
    "id": "m00046",
    "kind": "msg",
    "jp": "校舎か゛見えます。誰かいるようて゛す。女の子かな　・・？",
-   "en": "",
+   "en": "You can see the school building. Someone seems to be there. A girl, maybe...?",
    "refs": [
     "scene7:10"
    ],
@@ -2162,7 +2162,7 @@
    "id": "m00047",
    "kind": "msg",
    "jp": "テニス部の１年生、真理か゛帰ろうとしています。もう練習は終ったのて゛しょうか・・・。",
-   "en": "",
+   "en": "Mari, a first-year on the tennis team, is about to head home. Practice must be over already...",
    "refs": [
     "scene8:0"
    ],
@@ -2172,7 +2172,7 @@
    "id": "m00048",
    "kind": "msg",
    "jp": "校庭て゛す",
-   "en": "",
+   "en": "It's the schoolyard.",
    "refs": [
     "scene8:2"
    ],
@@ -2182,7 +2182,7 @@
    "id": "m00049",
    "kind": "msg",
    "jp": "校舎か゛見えます。",
-   "en": "",
+   "en": "You can see the school building.",
    "refs": [
     "scene8:3"
    ],
@@ -2192,7 +2192,7 @@
    "id": "m00050",
    "kind": "msg",
    "jp": "ヒ゜カヒ゜カの女子高生。　かわいいな〜〜。",
-   "en": "",
+   "en": "A fresh-faced high school girl. So cute~~.",
    "refs": [
     "scene8:4"
    ],
@@ -2202,7 +2202,7 @@
    "id": "m00051",
    "kind": "msg",
    "jp": "顔にスケヘ゛心を出して、女の子をシ゛ッとみつめています。",
-   "en": "",
+   "en": "You're staring at the girl with a lecherous look on your face.",
    "refs": [
     "scene8:5"
    ],
@@ -2212,7 +2212,7 @@
    "id": "m00052",
    "kind": "msg",
    "jp": "セーラー服て゛すねェ。",
-   "en": "",
+   "en": "A sailor uniform, huh.",
    "refs": [
     "scene8:6"
    ],
@@ -2222,7 +2222,7 @@
    "id": "m00053",
    "kind": "msg",
    "jp": "ムラムラときます。",
-   "en": "",
+   "en": "You're getting aroused.",
    "refs": [
     "scene8:7"
    ],
@@ -2232,7 +2232,7 @@
    "id": "m00054",
    "kind": "msg",
    "jp": "ぬか゛せなきゃわかりませんよ。",
-   "en": "",
+   "en": "You won't know unless you strip her.",
    "refs": [
     "scene8:8"
    ],
@@ -2242,7 +2242,7 @@
    "id": "m00055",
    "kind": "msg",
    "jp": "この子も、とってもかわいいて゛すねぇ・・・。",
-   "en": "",
+   "en": "This girl is really cute too...",
    "refs": [
     "scene8:9"
    ],
@@ -2252,7 +2252,7 @@
    "id": "m00056",
    "kind": "msg",
    "jp": "さっきまて゛テニスコートにいましたか゛、もう帰っているて゛しょう。",
-   "en": "",
+   "en": "She was at the tennis court until a moment ago, but she's probably gone home by now.",
    "refs": [
     "scene8:11"
    ],
@@ -2262,7 +2262,7 @@
    "id": "m00057",
    "kind": "msg",
    "jp": "由美子のことを聞きました。　「とってもすてきな人て゛すよ。　て゛も、あの先ハ゜イなんた゛か暗いとこか゛あるみたい。」",
-   "en": "",
+   "en": "You asked about Yumiko. \"She's a wonderful person. But that senpai seems to have something dark about her.\"",
    "refs": [
     "scene8:12"
    ],
@@ -2272,7 +2272,7 @@
    "id": "m00058",
    "kind": "msg",
    "jp": "「かわいいなこの子、やっちまおうか　？」",
-   "en": "",
+   "en": "\"She's cute, this one. Should I do her?\"",
    "refs": [
     "scene8:13"
    ],
@@ -2282,7 +2282,7 @@
    "id": "m00059",
    "kind": "msg",
    "jp": "「イターーイ！　何するんて゛すか・・・‼」",
-   "en": "",
+   "en": "\"Oww! What are you doing...?!\"",
    "refs": [
     "scene8:14"
    ],
@@ -2292,7 +2292,7 @@
    "id": "m00060",
    "kind": "msg",
    "jp": "「イテッ！　何すんた゛よハ゛カ‼」",
-   "en": "",
+   "en": "\"Ow! What the hell are you doing, you idiot?!\"",
    "refs": [
     "scene8:15"
    ],
@@ -2302,7 +2302,7 @@
    "id": "m00061",
    "kind": "msg",
    "jp": "「何て゛すか　これ・・・？」",
-   "en": "",
+   "en": "\"What is this...?\"",
    "refs": [
     "scene8:16"
    ],
@@ -2312,7 +2312,7 @@
    "id": "m00062",
    "kind": "msg",
    "jp": "「イヤた゛ぁ〜、好みし゛ゃありません。」",
-   "en": "",
+   "en": "\"No way~, not my type.\"",
    "refs": [
     "scene8:17"
    ],
@@ -2322,7 +2322,7 @@
    "id": "m00063",
    "kind": "msg",
    "jp": "「キャ〜〜ッ‼　何するのよ　やめて〜〜っ！！」",
-   "en": "",
+   "en": "\"Eeek!! What are you doing?! Stop it~!!\"",
    "refs": [
     "scene8:18"
    ],
@@ -2332,7 +2332,7 @@
    "id": "m00064",
    "kind": "msg",
    "jp": "「何かヒミツの部分か゛あって、そこか゛またステキなのよ〜。」",
-   "en": "",
+   "en": "\"She's got some secret side to her, and that's what makes her so wonderful~.\"",
    "refs": [
     "scene8:19"
    ],
@@ -2342,7 +2342,7 @@
    "id": "m00065",
    "kind": "msg",
    "jp": "マリて゛〜す。　よろしくね　♥",
-   "en": "",
+   "en": "I'm Mari~. Nice to meet you ♥",
    "refs": [
     "scene8:20"
    ],
@@ -2352,7 +2352,7 @@
    "id": "m00066",
    "kind": "msg",
    "jp": "キャーッ、何するのよ！やめてーッ！",
-   "en": "",
+   "en": "Eek! What are you doing?! Stop it!",
    "refs": [
     "scene9:0"
    ],
@@ -2362,7 +2362,7 @@
    "id": "m00067",
    "kind": "msg",
    "jp": "そんなことしてるハ゛アイし゛ゃないて゛しょう・・！",
-   "en": "",
+   "en": "This is no time for that...!",
    "refs": [
     "scene9:1"
    ],
@@ -2372,7 +2372,7 @@
    "id": "m00068",
    "kind": "msg",
    "jp": "かなりいやか゛ってますよ。",
-   "en": "",
+   "en": "She's really resisting.",
    "refs": [
     "scene9:2"
    ],
@@ -2382,7 +2382,7 @@
    "id": "m00069",
    "kind": "msg",
    "jp": "こ゛らんの通りて゛す。フ゜フ゜ッ！ハナ血か゛・・・。",
-   "en": "",
+   "en": "As you can see. Heh heh! Nosebleed...",
    "refs": [
     "scene9:3"
    ],
@@ -2392,7 +2392,7 @@
    "id": "m00070",
    "kind": "msg",
    "jp": "顔にスケヘ゛心を出して、女の子をシ゛ッと見つめています。",
-   "en": "",
+   "en": "You're staring at the girl with a lecherous look on your face.",
    "refs": [
     "scene9:4"
    ],
@@ -2402,7 +2402,7 @@
    "id": "m00071",
    "kind": "msg",
    "jp": "あなたにぬか゛されています。",
-   "en": "",
+   "en": "She's being stripped by you.",
    "refs": [
     "scene9:5"
    ],
@@ -2412,7 +2412,7 @@
    "id": "m00072",
    "kind": "msg",
    "jp": "「ああ〜ん！」　とてもそれと゛ころて゛はありません。",
-   "en": "",
+   "en": "\"Aah~n!\" She's in no state to care.",
    "refs": [
     "scene9:6",
     "scene10:6"
@@ -2423,7 +2423,7 @@
    "id": "m00073",
    "kind": "msg",
    "jp": "「ホラ、早くやっちまえよ！」",
-   "en": "",
+   "en": "\"Come on, hurry up and do her!\"",
    "refs": [
     "scene9:7"
    ],
@@ -2433,7 +2433,7 @@
    "id": "m00074",
    "kind": "msg",
    "jp": "ああ〜ん、おかあさ〜ん！",
-   "en": "",
+   "en": "Aah~n, mommy~!",
    "refs": [
     "scene9:8",
     "scene10:8"
@@ -2444,7 +2444,7 @@
    "id": "m00075",
    "kind": "msg",
    "jp": "今さら口説いてもしかたないて゛しょう。",
-   "en": "",
+   "en": "It's too late to try seducing her now.",
    "refs": [
     "scene9:9",
     "scene10:7"
@@ -2455,7 +2455,7 @@
    "id": "m00076",
    "kind": "msg",
    "jp": "「いやああ〜ん！」",
-   "en": "",
+   "en": "\"Nooo~!\"",
    "refs": [
     "scene9:10"
    ],
@@ -2465,7 +2465,7 @@
    "id": "m00077",
    "kind": "msg",
    "jp": "もう　し゛ゅう分て゛す。",
-   "en": "",
+   "en": "That's more than enough.",
    "refs": [
     "scene9:11"
    ],
@@ -2475,7 +2475,7 @@
    "id": "m00078",
    "kind": "msg",
    "jp": "「あぁーーーん・・・・ン」",
-   "en": "",
+   "en": "\"Aaaah...n\"",
    "refs": [
     "scene10:0"
    ],
@@ -2485,7 +2485,7 @@
    "id": "m00079",
    "kind": "msg",
    "jp": "あなたに犯されています。",
-   "en": "",
+   "en": "She's being violated by you.",
    "refs": [
     "scene10:1"
    ],
@@ -2495,7 +2495,7 @@
    "id": "m00080",
    "kind": "msg",
    "jp": "石井か゛「早くしろよ、オ、オレも・・・！」とさわいて゛います。",
-   "en": "",
+   "en": "Ishii is shouting, \"Hurry up! I-I want some too...!\"",
    "refs": [
     "scene10:2"
    ],
@@ -2505,7 +2505,7 @@
    "id": "m00081",
    "kind": "msg",
    "jp": "そんなヨユーはありませんよ。",
-   "en": "",
+   "en": "There's no room for that.",
    "refs": [
     "scene10:3"
    ],
@@ -2515,7 +2515,7 @@
    "id": "m00082",
    "kind": "msg",
    "jp": "「あうぅっっ！」　その気になって、もた゛えています。",
-   "en": "",
+   "en": "\"Ahhh!\" She's getting into it, writhing with pleasure.",
    "refs": [
     "scene10:4"
    ],
@@ -2525,7 +2525,7 @@
    "id": "m00083",
    "kind": "msg",
    "jp": "勝手に見てくた゛さい。",
-   "en": "",
+   "en": "Look all you want.",
    "refs": [
     "scene10:5"
    ],
@@ -2535,7 +2535,7 @@
    "id": "m00084",
    "kind": "msg",
    "jp": "もうぬか゛してます。",
-   "en": "",
+   "en": "She's already stripped.",
    "refs": [
     "scene10:9"
    ],
@@ -2545,7 +2545,7 @@
    "id": "m00085",
    "kind": "msg",
    "jp": "「と゛うしたんた゛。最近たまっているんし゛ゃないのか」と言われました。",
-   "en": "",
+   "en": "He said to you, \"What's wrong? Haven't you been getting any lately?\"",
    "refs": [
     "scene11:0"
    ],
@@ -2555,7 +2555,7 @@
    "id": "m00086",
    "kind": "msg",
    "jp": "「あの子なかなかよかったな。お前も悪いヤローた゛よ。」",
-   "en": "",
+   "en": "\"That girl was pretty good. You're a bad guy too.\"",
    "refs": [
     "scene11:1"
    ],
@@ -2565,7 +2565,7 @@
    "id": "m00087",
    "kind": "msg",
    "jp": "学校か゛見えます。",
-   "en": "",
+   "en": "You can see the school.",
    "refs": [
     "scene11:2"
    ],
@@ -2575,7 +2575,7 @@
    "id": "m00088",
    "kind": "msg",
    "jp": "ヘイか゛続いています。",
-   "en": "",
+   "en": "The walls continue on.",
    "refs": [
     "scene11:3"
    ],
@@ -2585,7 +2585,7 @@
    "id": "m00089",
    "kind": "msg",
    "jp": "もう学校へもと゛っても何もありません。あきらめて家に帰りましょう。",
-   "en": "",
+   "en": "There's nothing left at school. Give up and go home.",
    "refs": [
     "scene11:4",
     "scene11:7"
@@ -2596,7 +2596,7 @@
    "id": "m00090",
    "kind": "msg",
    "jp": "と゛こへ行くんて゛すか？家はそっちし゛ゃありませんよ。　",
-   "en": "",
+   "en": "Where are you going? Your house isn't that way.",
    "refs": [
     "scene11:5"
    ],
@@ -2606,7 +2606,7 @@
    "id": "m00091",
    "kind": "msg",
    "jp": "探してもしかたないて゛しょう。",
-   "en": "",
+   "en": "Searching won't help now.",
    "refs": [
     "scene11:6"
    ],
@@ -2616,7 +2616,7 @@
    "id": "m00092",
    "kind": "msg",
    "jp": "と゛こかへ行ってしまいました。",
-   "en": "",
+   "en": "She's gone off somewhere.",
    "refs": [
     "scene11:8"
    ],
@@ -2626,7 +2626,7 @@
    "id": "m00093",
    "kind": "msg",
    "jp": "目の前にいます。",
-   "en": "",
+   "en": "She's right in front of you.",
    "refs": [
     "scene11:9"
    ],
@@ -2636,7 +2636,7 @@
    "id": "m00094",
    "kind": "msg",
    "jp": "ここて゛はと゛うしようもありません。",
-   "en": "",
+   "en": "There's nothing you can do here.",
    "refs": [
     "scene11:10"
    ],
@@ -2646,7 +2646,7 @@
    "id": "m00095",
    "kind": "msg",
    "jp": "はし゛めからやらないとムリて゛しょう・・・。",
-   "en": "",
+   "en": "You'd have to start from the beginning...",
    "refs": [
     "scene11:11"
    ],
@@ -2656,7 +2656,7 @@
    "id": "m00096",
    "kind": "msg",
    "jp": "もう持っています。",
-   "en": "",
+   "en": "You already have it.",
    "refs": [
     "scene11:12"
    ],
@@ -2666,7 +2666,7 @@
    "id": "m00097",
    "kind": "msg",
    "jp": "「おまえ、いい女紹介してやろうか。日曜日あいてたらハイキンク゛に行こうせ゛。」",
-   "en": "",
+   "en": "\"Hey, want me to introduce you to a good woman? If you're free Sunday, let's go hiking.\"",
    "refs": [
     "scene11:13"
    ],
@@ -2676,7 +2676,7 @@
    "id": "m00098",
    "kind": "msg",
    "jp": "このまま帰っちゃっていいんて゛すか・・・？",
-   "en": "",
+   "en": "Are you sure you want to just go home like this...?",
    "refs": [
     "scene11:14"
    ],
@@ -2686,7 +2686,7 @@
    "id": "m00099",
    "kind": "msg",
    "jp": "「あのコなかなかよかったな・・。　それよりおまえ、いい女紹介してやろうか。日曜日あいてたらハイキンク゛に行こうせ゛。」",
-   "en": "",
+   "en": "\"That girl was pretty good... Anyway, want me to introduce you to a good woman? If you're free Sunday, let's go hiking.\"",
    "refs": [
     "scene11:15"
    ],
@@ -2696,7 +2696,7 @@
    "id": "m00100",
    "kind": "msg",
    "jp": "「なんた゛よ　それ・・？」",
-   "en": "",
+   "en": "\"What the hell is that...?\"",
    "refs": [
     "scene11:16"
    ],
@@ -2706,7 +2706,7 @@
    "id": "m00101",
    "kind": "msg",
    "jp": "あなたは自分の家に帰ってきました。ここはあなたの部屋て゛す。机、イス、ラシ゛カセなと゛か゛あります。カヘ゛にはホ゜スターか゛はってあります。",
-   "en": "",
+   "en": "You've returned to your home. This is your room. There's a desk, chair, radio cassette, and such. A poster is on the wall.",
    "refs": [
     "scene12:0"
    ],
@@ -2716,7 +2716,7 @@
    "id": "m00102",
    "kind": "msg",
    "jp": "　シ゛リリリーン！　あなたに電話か゛かかってきました。今の恋人の久美て゛す。あなたはこの女にあきあきしています。「ねぇ、今、近くの公園にいるの。すく゛来てよ。」",
-   "en": "",
+   "en": "Brrring! You get a phone call. It's Kumi, your current girlfriend. You're tired of her. \"Hey, I'm at the nearby park right now. Come quick.\"",
    "refs": [
     "scene12:1"
    ],
@@ -2726,7 +2726,7 @@
    "id": "m00103",
    "kind": "msg",
    "jp": "ろうかか゛あります。",
-   "en": "",
+   "en": "There's a hallway.",
    "refs": [
     "scene12:2",
     "scene12:14",
@@ -2739,7 +2739,7 @@
    "id": "m00104",
    "kind": "msg",
    "jp": "ヌート゛のホ゜スターて゛す。",
-   "en": "",
+   "en": "It's a nude poster.",
    "refs": [
     "scene12:3"
    ],
@@ -2749,7 +2749,7 @@
    "id": "m00105",
    "kind": "msg",
    "jp": "もちろん由美子のしゃしんて゛す。",
-   "en": "",
+   "en": "Of course, it's a photo of Yumiko.",
    "refs": [
     "scene12:4"
    ],
@@ -2759,7 +2759,7 @@
    "id": "m00106",
    "kind": "msg",
    "jp": "行ってもしょうか゛ないて゛しょう。",
-   "en": "",
+   "en": "Going there won't help.",
    "refs": [
     "scene12:5",
     "scene13:5",
@@ -2774,7 +2774,7 @@
    "id": "m00107",
    "kind": "msg",
    "jp": "二階にいます。",
-   "en": "",
+   "en": "She's on the second floor.",
    "refs": [
     "scene12:6",
     "scene13:6",
@@ -2787,7 +2787,7 @@
    "id": "m00108",
    "kind": "msg",
    "jp": "台所にいます。",
-   "en": "",
+   "en": "She's in the kitchen.",
    "refs": [
     "scene12:7",
     "scene13:7",
@@ -2801,7 +2801,7 @@
    "id": "m00109",
    "kind": "msg",
    "jp": "居間にいます。",
-   "en": "",
+   "en": "She's in the living room.",
    "refs": [
     "scene12:8",
     "scene13:8",
@@ -2815,7 +2815,7 @@
    "id": "m00110",
    "kind": "msg",
    "jp": "目の前にいますよ。",
-   "en": "",
+   "en": "She's right in front of you.",
    "refs": [
     "scene12:9",
     "scene14:6",
@@ -2829,7 +2829,7 @@
    "id": "m00111",
    "kind": "msg",
    "jp": "ヘソクリの２万円か゛あります。由美子とホテルに行くシキンて゛す。",
-   "en": "",
+   "en": "You have 20,000 yen in secret savings. Funds for taking Yumiko to a hotel.",
    "refs": [
     "scene12:10"
    ],
@@ -2839,7 +2839,7 @@
    "id": "m00112",
    "kind": "msg",
    "jp": "「ユミコノ　シ゛ュウタ゛イナ　ヒミツヲ　オシエヨウ。カノシ゛ョハ　アルオトコト　トクヘ゛ツナ　カンケイヲ　モッテイル。ソノオトコハ・・・」　ここて゛終っている。",
-   "en": "",
+   "en": "\"I WILL TELL YOU YUMIKO'S IMPORTANT SECRET. SHE HAS A SPECIAL RELATIONSHIP WITH A CERTAIN MAN. THAT MAN IS...\" It ends there.",
    "refs": [
     "scene12:11"
    ],
@@ -2849,7 +2849,7 @@
    "id": "m00113",
    "kind": "msg",
    "jp": "何も聞こえません。",
-   "en": "",
+   "en": "You can't hear anything.",
    "refs": [
     "scene12:12"
    ],
@@ -2859,7 +2859,7 @@
    "id": "m00114",
    "kind": "msg",
    "jp": "「つかう　まいこん」と、入力。",
-   "en": "",
+   "en": "You type in \"USE MICROCOMPUTER\".",
    "refs": [
     "scene12:13"
    ],
@@ -2869,7 +2869,7 @@
    "id": "m00115",
    "kind": "msg",
    "jp": "と゛こにあるのかわかりません。",
-   "en": "",
+   "en": "You don't know where it is.",
    "refs": [
     "scene12:15",
     "scene13:11",
@@ -2884,7 +2884,7 @@
    "id": "m00116",
    "kind": "msg",
    "jp": "ホ゜ケットの中に持っていますよ。",
-   "en": "",
+   "en": "You have it in your pocket.",
    "refs": [
     "scene12:16",
     "scene13:12",
@@ -2899,7 +2899,7 @@
    "id": "m00117",
    "kind": "msg",
    "jp": "このままて゛は分かりません。",
-   "en": "",
+   "en": "You can't tell like this.",
    "refs": [
     "scene12:17"
    ],
@@ -2909,7 +2909,7 @@
    "id": "m00118",
    "kind": "msg",
    "jp": "ここはあなたの家のろうかて゛す。左に台所と階段か゛あります。二階は妹の部屋て゛す。右は居間て゛前方はけ゛んかんて゛す。あなたの部屋はうしろて゛す。",
-   "en": "",
+   "en": "This is the hallway of your house. The kitchen and stairs are to the left. The second floor is your sister's room. The living room is to the right, and the entrance is ahead. Your room is behind you.",
    "refs": [
     "scene13:0"
    ],
@@ -2919,7 +2919,7 @@
    "id": "m00119",
    "kind": "msg",
    "jp": "玄関て゛す。外に出てもしょうか゛ないて゛しょう。",
-   "en": "",
+   "en": "It's the entrance. Going outside won't help.",
    "refs": [
     "scene13:1"
    ],
@@ -2929,7 +2929,7 @@
    "id": "m00120",
    "kind": "msg",
    "jp": "あなたの部屋か゛あります。",
-   "en": "",
+   "en": "There's your room.",
    "refs": [
     "scene13:2"
    ],
@@ -2939,7 +2939,7 @@
    "id": "m00121",
    "kind": "msg",
    "jp": "台所と階段か゛あります。",
-   "en": "",
+   "en": "There's the kitchen and stairs.",
    "refs": [
     "scene13:3"
    ],
@@ -2949,7 +2949,7 @@
    "id": "m00122",
    "kind": "msg",
    "jp": "居間か゛あります。",
-   "en": "",
+   "en": "There's the living room.",
    "refs": [
     "scene13:4"
    ],
@@ -2959,7 +2959,7 @@
    "id": "m00123",
    "kind": "msg",
    "jp": "あなたの部屋にあります。",
-   "en": "",
+   "en": "It's in your room.",
    "refs": [
     "scene13:9",
     "scene14:8",
@@ -2973,7 +2973,7 @@
    "id": "m00124",
    "kind": "msg",
    "jp": "と゛こへ帰るのて゛すか・・・？",
-   "en": "",
+   "en": "Where are you going back to...?",
    "refs": [
     "scene13:10"
    ],
@@ -2983,7 +2983,7 @@
    "id": "m00125",
    "kind": "msg",
    "jp": "台所にきました。おいしそうなにおいか゛します。あなたの母親か゛夕食のしたくをしています。",
-   "en": "",
+   "en": "You've come to the kitchen. It smells delicious. Your mother is preparing dinner.",
    "refs": [
     "scene14:0"
    ],
@@ -2993,7 +2993,7 @@
    "id": "m00126",
    "kind": "msg",
    "jp": "母親のハ゜ンティを見たか゛るなんて、あなたヘンタイて゛すか！？",
-   "en": "",
+   "en": "Wanting to see your mother's panties—are you a pervert!?",
    "refs": [
     "scene14:2"
    ],
@@ -3003,7 +3003,7 @@
    "id": "m00127",
    "kind": "msg",
    "jp": "勝手に見て下さい。このスケヘ゛！",
-   "en": "",
+   "en": "Look all you want. You lech!",
    "refs": [
     "scene14:3",
     "scene16:3",
@@ -3015,7 +3015,7 @@
    "id": "m00128",
    "kind": "msg",
    "jp": "ここか゛そうて゛す。",
-   "en": "",
+   "en": "This is it.",
    "refs": [
     "scene14:4",
     "scene15:4"
@@ -3026,7 +3026,7 @@
    "id": "m00129",
    "kind": "msg",
    "jp": "「すく゛夕食て゛すからね。外なんか行っちゃた゛めよ！」",
-   "en": "",
+   "en": "\"Dinner will be ready soon. Don't go outside!\"",
    "refs": [
     "scene14:9"
    ],
@@ -3036,7 +3036,7 @@
    "id": "m00130",
    "kind": "msg",
    "jp": "ハ゛カなことしないて゛下さい。",
-   "en": "",
+   "en": "Don't do anything stupid.",
    "refs": [
     "scene14:10",
     "scene15:5",
@@ -3048,7 +3048,7 @@
    "id": "m00131",
    "kind": "msg",
    "jp": "また゛したくか゛て゛きてません。",
-   "en": "",
+   "en": "It's not ready yet.",
    "refs": [
     "scene14:11"
    ],
@@ -3058,7 +3058,7 @@
    "id": "m00132",
    "kind": "msg",
    "jp": "「キャッ！なにするの、この子は！ハ゛カなことしないて゛ちょうた゛い！」としかられました。",
-   "en": "",
+   "en": "\"Eek! What are you doing, you child! Don't do anything stupid!\" You were scolded.",
    "refs": [
     "scene14:12"
    ],
@@ -3068,7 +3068,7 @@
    "id": "m00133",
    "kind": "msg",
    "jp": "居間にきました。あなたの父親か゛新聞を読んて゛います。",
-   "en": "",
+   "en": "You've come to the living room. Your father is reading the newspaper.",
    "refs": [
     "scene15:0"
    ],
@@ -3078,7 +3078,7 @@
    "id": "m00134",
    "kind": "msg",
    "jp": "「ハ゛カモノ。また゛せ゛んふ゛読み終っとらん！」とおこられました。",
-   "en": "",
+   "en": "\"You fool. I haven't finished reading it all yet!\" You were scolded.",
    "refs": [
     "scene15:2"
    ],
@@ -3088,7 +3088,7 @@
    "id": "m00135",
    "kind": "msg",
    "jp": "新聞を読むのに夢中て゛「アー」とか「ウー」としか答えてくれません。",
-   "en": "",
+   "en": "He's so absorbed in the newspaper he only answers \"Uh-huh\" or \"Mm-hmm.\"",
    "refs": [
     "scene15:10"
    ],
@@ -3098,7 +3098,7 @@
    "id": "m00136",
    "kind": "msg",
    "jp": "「ハ゛カ、何やってんた゛、お前。寝るなら自分の部屋へいけ」とおこられました。",
-   "en": "",
+   "en": "\"Idiot, what are you doing? If you want to sleep, go to your own room.\" You were scolded.",
    "refs": [
     "scene15:11"
    ],
@@ -3108,7 +3108,7 @@
    "id": "m00137",
    "kind": "msg",
    "jp": "ハ゛チッ。「いててて！」いきなりなく゛られました。あたり前た゛けと゛・・・。",
-   "en": "",
+   "en": "Whack. \"Ow ow ow!\" You were suddenly punched. Well, that's only natural...",
    "refs": [
     "scene15:12"
    ],
@@ -3118,7 +3118,7 @@
    "id": "m00138",
    "kind": "msg",
    "jp": "妹の部屋にきました。妹は寝ころんて゛本を読んて゛います。",
-   "en": "",
+   "en": "You've come to your sister's room. She's lying down reading a book.",
    "refs": [
     "scene16:0"
    ],
@@ -3128,7 +3128,7 @@
    "id": "m00139",
    "kind": "msg",
    "jp": "「なによ、お兄ちゃん。こんと゛あんなことしたら、お父さんに言いつけるから」",
-   "en": "",
+   "en": "\"What is it, big brother? If you do anything like that again, I'll tell Dad.\"",
    "refs": [
     "scene16:1",
     "scene17:0"
@@ -3139,7 +3139,7 @@
    "id": "m00140",
    "kind": "msg",
    "jp": "Ｇハ゜ンをぬか゛せなきゃ見れませんね。",
-   "en": "",
+   "en": "You can't see it unless you take off her panties.",
    "refs": [
     "scene16:2"
    ],
@@ -3149,7 +3149,7 @@
    "id": "m00141",
    "kind": "msg",
    "jp": "ちょっとナマイキた゛けと゛、かわいい妹て゛す。",
-   "en": "",
+   "en": "She's a bit cheeky, but she's a cute little sister.",
    "refs": [
     "scene16:4"
    ],
@@ -3159,7 +3159,7 @@
    "id": "m00142",
    "kind": "msg",
    "jp": "少女まんか゛て゛しょう。",
-   "en": "",
+   "en": "It's probably a shoujo manga.",
    "refs": [
     "scene16:5"
    ],
@@ -3169,7 +3169,7 @@
    "id": "m00143",
    "kind": "msg",
    "jp": "これ以上、上には行けません。",
-   "en": "",
+   "en": "You can't go any higher.",
    "refs": [
     "scene16:6",
     "scene17:5"
@@ -3180,7 +3180,7 @@
    "id": "m00144",
    "kind": "msg",
    "jp": "あなたの妹て゛すよ。いいかけ゛んにして下さい。",
-   "en": "",
+   "en": "She's your sister. Cut it out.",
    "refs": [
     "scene16:11"
    ],
@@ -3190,7 +3190,7 @@
    "id": "m00145",
    "kind": "msg",
    "jp": "「いたあ〜い！あ〜ん。お兄ちゃんのハ゛カ！」",
-   "en": "",
+   "en": "\"That hurts~! Aah~n. Big brother, you idiot!\"",
    "refs": [
     "scene16:12",
     "scene17:11"
@@ -3201,7 +3201,7 @@
    "id": "m00146",
    "kind": "msg",
    "jp": "「何ハ゛カいってるのよ」と妹にハ゛カにされました。",
-   "en": "",
+   "en": "\"Don't be stupid,\" your sister said, mocking you.",
    "refs": [
     "scene16:13"
    ],
@@ -3211,7 +3211,7 @@
    "id": "m00147",
    "kind": "msg",
    "jp": "「いやあ〜ん。やめてよ〜っ！」",
-   "en": "",
+   "en": "\"Nooo~. Stop it~!\"",
    "refs": [
     "scene16:14"
    ],
@@ -3221,7 +3221,7 @@
    "id": "m00148",
    "kind": "msg",
    "jp": "階段か゛あります。",
-   "en": "",
+   "en": "There are stairs.",
    "refs": [
     "scene16:18"
    ],
@@ -3231,7 +3231,7 @@
    "id": "m00149",
    "kind": "msg",
    "jp": "「ん？　お兄ちゃん、何か用？」",
-   "en": "",
+   "en": "\"Hm? Big brother, what do you want?\"",
    "refs": [
     "scene16:19"
    ],
@@ -3241,7 +3241,7 @@
    "id": "m00150",
    "kind": "msg",
    "jp": "「キャーッ！なにすんのよ、お兄ちゃん！」",
-   "en": "",
+   "en": "\"Eek! What are you doing, big brother!\"",
    "refs": [
     "scene17:1"
    ],
@@ -3251,7 +3251,7 @@
    "id": "m00151",
    "kind": "msg",
    "jp": "階段か゛あって、下におりるとろうかて゛す。",
-   "en": "",
+   "en": "There are stairs; going down leads to the hallway.",
    "refs": [
     "scene17:2"
    ],
@@ -3261,7 +3261,7 @@
    "id": "m00152",
    "kind": "msg",
    "jp": "ロリータハ゜ンティて゛す。し゛っくりこ゛らん下さい。しかし、・・・？？。",
-   "en": "",
+   "en": "They're Lolita panties. Take a good look. But...??",
    "refs": [
     "scene17:3"
    ],
@@ -3271,7 +3271,7 @@
    "id": "m00153",
    "kind": "msg",
    "jp": "勝手に調へ゛てくた゛さい。",
-   "en": "",
+   "en": "Investigate all you want.",
    "refs": [
     "scene17:10"
    ],
@@ -3281,7 +3281,7 @@
    "id": "m00154",
    "kind": "msg",
    "jp": "「いやあーっ！お父さ〜ん」　妹の声て゛父親にみつかり、あなたは大目玉をくらいました。ハ゛ツとして外出キンシて゛す。これて゛はと゛うすることもて゛きません。",
-   "en": "",
+   "en": "\"Nooo! Daaaad!\" Your father caught you because of your sister's voice, and you got a severe scolding. As punishment, you're forbidden from going out. Now you can't do anything.",
    "refs": [
     "scene17:12"
    ],
@@ -3291,7 +3291,7 @@
    "id": "m00155",
    "kind": "msg",
    "jp": "「いやた゛ったら、お父さんに言うわよ！」",
-   "en": "",
+   "en": "\"If you don't stop, I'll tell Dad!\"",
    "refs": [
     "scene17:17"
    ],
@@ -3301,7 +3301,7 @@
    "id": "m00156",
    "kind": "msg",
    "jp": "ここはあなたの家の近くの公園の入口て゛す。人かけ゛はまったくありません。",
-   "en": "",
+   "en": "This is the entrance to the park near your house. There's not a soul around.",
    "refs": [
     "scene18:0"
    ],
@@ -3311,7 +3311,7 @@
    "id": "m00157",
    "kind": "msg",
    "jp": "と゛うろか゛あります。",
-   "en": "",
+   "en": "There's a path.",
    "refs": [
     "scene18:1"
    ],
@@ -3321,7 +3321,7 @@
    "id": "m00158",
    "kind": "msg",
    "jp": "ヘ゛ンチか゛あります。",
-   "en": "",
+   "en": "There's a bench.",
    "refs": [
     "scene18:2"
    ],
@@ -3331,7 +3331,7 @@
    "id": "m00159",
    "kind": "msg",
    "jp": "しけ゛みか゛あります。",
-   "en": "",
+   "en": "There are bushes.",
    "refs": [
     "scene18:3",
     "scene19:2",
@@ -3346,7 +3346,7 @@
    "id": "m00160",
    "kind": "msg",
    "jp": "ここか゛公園て゛す。",
-   "en": "",
+   "en": "This is the park.",
    "refs": [
     "scene18:4",
     "scene19:5",
@@ -3362,7 +3362,7 @@
    "id": "m00161",
    "kind": "msg",
    "jp": "フ゛ランコか゛あります。久美か゛いました。",
-   "en": "",
+   "en": "There are swings. Kumi is here.",
    "refs": [
     "scene18:5",
     "scene22:0"
@@ -3373,7 +3373,7 @@
    "id": "m00162",
    "kind": "msg",
    "jp": "久美に聞いてもちょっと分からないて゛しょう。むしろ・・・・。",
-   "en": "",
+   "en": "Asking Kumi probably won't help. Rather...",
    "refs": [
     "scene18:6",
     "scene19:10",
@@ -3389,7 +3389,7 @@
    "id": "m00163",
    "kind": "msg",
    "jp": "まえに同し゛クラスて゛した。半年ほと゛つきあっていますか゛、性格的にあなたとはあわないようて゛す。かわいいんた゛けと゛・・・。",
-   "en": "",
+   "en": "She was in your class before. You've been going out for about six months, but her personality doesn't seem to mesh with yours. She's cute, though...",
    "refs": [
     "scene18:7",
     "scene19:9",
@@ -3405,7 +3405,7 @@
    "id": "m00164",
    "kind": "msg",
    "jp": "メモは家においてきました。しかし、ある男とはいったい誰て゛しょう。彼女をモノにするためには、それか゛誰なのかしっておかなけれは゛なりません。",
-   "en": "",
+   "en": "You left the memo at home. But who exactly is \"a certain man\"? To win her over, you need to know who that is.",
    "refs": [
     "scene18:8",
     "scene19:12",
@@ -3421,7 +3421,7 @@
    "id": "m00165",
    "kind": "msg",
    "jp": "と゛こあるか分かりません。",
-   "en": "",
+   "en": "You don't know where it is.",
    "refs": [
     "scene18:9",
     "scene19:14",
@@ -3434,7 +3434,7 @@
    "id": "m00166",
    "kind": "msg",
    "jp": "と゛こにいるのか分かりません。",
-   "en": "",
+   "en": "You don't know where she is.",
    "refs": [
     "scene18:10",
     "scene19:15"
@@ -3445,7 +3445,7 @@
    "id": "m00167",
    "kind": "msg",
    "jp": "しけ゛みの左の方にあるフ゛ランコのところにいるようて゛すよ。",
-   "en": "",
+   "en": "She seems to be at the swings, to the left of the bushes.",
    "refs": [
     "scene18:11",
     "scene19:16",
@@ -3458,7 +3458,7 @@
    "id": "m00168",
    "kind": "msg",
    "jp": "家においてきました。",
-   "en": "",
+   "en": "You left it at home.",
    "refs": [
     "scene18:12",
     "scene19:17",
@@ -3472,7 +3472,7 @@
    "id": "m00169",
    "kind": "msg",
    "jp": "て゛もないようは分かっているから、もう必要ありませんよ。",
-   "en": "",
+   "en": "You already know the gist of it, so you don't need it anymore.",
    "refs": [
     "scene18:13",
     "scene19:18",
@@ -3487,7 +3487,7 @@
    "id": "m00170",
    "kind": "msg",
    "jp": "スッキリしてるは゛あいし゛ゃないて゛しょう。由美子はと゛うするんて゛す？",
-   "en": "",
+   "en": "This is no time to be satisfied. What about Yumiko?",
    "refs": [
     "scene18:14",
     "scene19:19",
@@ -3502,7 +3502,7 @@
    "id": "m00171",
    "kind": "msg",
    "jp": "しけ゛みか゛あって、アヘ゛ックか゛います。「コラッのそ゛くな！」とと゛なられました。",
-   "en": "",
+   "en": "There are bushes, and a pervert is there. \"Hey, you pervert!\" he yelled at you.",
    "refs": [
     "scene19:0"
    ],
@@ -3512,7 +3512,7 @@
    "id": "m00172",
    "kind": "msg",
    "jp": "公園の入口か゛あります。",
-   "en": "",
+   "en": "There's the park entrance.",
    "refs": [
     "scene19:1",
     "scene20:1",
@@ -3524,7 +3524,7 @@
    "id": "m00173",
    "kind": "msg",
    "jp": "たいしたものはありません。",
-   "en": "",
+   "en": "Nothing much here.",
    "refs": [
     "scene19:3",
     "scene21:2"
@@ -3535,7 +3535,7 @@
    "id": "m00174",
    "kind": "msg",
    "jp": "「いつまて゛もノソ゛クな、ハ゛カ‼」とと゛なられました。",
-   "en": "",
+   "en": "\"Stop peeking already, you idiot!!\" he yelled at you.",
    "refs": [
     "scene19:4"
    ],
@@ -3545,7 +3545,7 @@
    "id": "m00175",
    "kind": "msg",
    "jp": "しけ゛みの前にいます。",
-   "en": "",
+   "en": "You're in front of the bushes.",
    "refs": [
     "scene19:6"
    ],
@@ -3555,7 +3555,7 @@
    "id": "m00176",
    "kind": "msg",
    "jp": "「ハ゛カヤロー！」とイシをふ゛つけられました。",
-   "en": "",
+   "en": "\"You idiot!\" He threw a rock at you.",
    "refs": [
     "scene19:7"
    ],
@@ -3565,7 +3565,7 @@
    "id": "m00177",
    "kind": "msg",
    "jp": "ノソ゛キをしにきたわけし゛ゃないて゛しょう。目の前にいるけと゛・・・。",
-   "en": "",
+   "en": "You didn't come here to peep, did you? She's right in front of you...",
    "refs": [
     "scene19:8"
    ],
@@ -3575,7 +3575,7 @@
    "id": "m00178",
    "kind": "msg",
    "jp": "「このやろう、なめんし゛ゃねえそ゛‼」ホ゛カッ。なく゛られました。",
-   "en": "",
+   "en": "\"You bastard, don't mess with me!!\" Wham. You got punched.",
    "refs": [
     "scene19:11"
    ],
@@ -3585,7 +3585,7 @@
    "id": "m00179",
    "kind": "msg",
    "jp": "木立ちか゛あります。　その方向には行けません。",
-   "en": "",
+   "en": "There's a grove of trees. You can't go that way.",
    "refs": [
     "scene19:13"
    ],
@@ -3595,7 +3595,7 @@
    "id": "m00180",
    "kind": "msg",
    "jp": "「ウルサイ。あっちへ行け」とと゛なられました。",
-   "en": "",
+   "en": "\"Shut up. Go away,\" he yelled at you.",
    "refs": [
     "scene19:20"
    ],
@@ -3605,7 +3605,7 @@
    "id": "m00181",
    "kind": "msg",
    "jp": "「ああ、そのこならさっきフ゛ランコの方に行ったよ。」",
-   "en": "",
+   "en": "\"Oh, that girl went toward the swings a moment ago.\"",
    "refs": [
     "scene19:21"
    ],
@@ -3615,7 +3615,7 @@
    "id": "m00182",
    "kind": "msg",
    "jp": "スヘ゛リ台か゛あります。",
-   "en": "",
+   "en": "There's a slide.",
    "refs": [
     "scene20:0"
    ],
@@ -3625,7 +3625,7 @@
    "id": "m00183",
    "kind": "msg",
    "jp": "へ゛んちか゛あります。",
-   "en": "",
+   "en": "There's a bench.",
    "refs": [
     "scene20:2"
    ],
@@ -3635,7 +3635,7 @@
    "id": "m00184",
    "kind": "msg",
    "jp": "目の前はすへ゛り台て゛す。のほ゛ってすへ゛る気し゛ゃないて゛しょうね。",
-   "en": "",
+   "en": "The slide is right in front of you. You're not thinking of climbing up and sliding down, are you?",
    "refs": [
     "scene20:5"
    ],
@@ -3645,7 +3645,7 @@
    "id": "m00185",
    "kind": "msg",
    "jp": "誰もいません。久美はと゛こにいるのて゛しょうか。",
-   "en": "",
+   "en": "No one's here. Where could Kumi be?",
    "refs": [
     "scene21:0"
    ],
@@ -3655,7 +3655,7 @@
    "id": "m00186",
    "kind": "msg",
    "jp": "目の前か゛ヘ゛ンチて゛すよ。",
-   "en": "",
+   "en": "The bench is right in front of you.",
    "refs": [
     "scene21:4"
    ],
@@ -3665,7 +3665,7 @@
    "id": "m00187",
    "kind": "msg",
    "jp": "暗くてよく見えません。",
-   "en": "",
+   "en": "It's too dark to see well.",
    "refs": [
     "scene22:1"
    ],
@@ -3675,7 +3675,7 @@
    "id": "m00188",
    "kind": "msg",
    "jp": "ここか゛フ゛ランコのあるところて゛す。久美か゛います。",
-   "en": "",
+   "en": "This is where the swings are. Kumi is here.",
    "refs": [
     "scene22:4",
     "scene23:6",
@@ -3687,7 +3687,7 @@
    "id": "m00189",
    "kind": "msg",
    "jp": "家においてきました。　",
-   "en": "",
+   "en": "You left it at home.",
    "refs": [
     "scene22:5"
    ],
@@ -3697,7 +3697,7 @@
    "id": "m00190",
    "kind": "msg",
    "jp": "「やめてえッ！何するのよ！」",
-   "en": "",
+   "en": "\"Stop it! What are you doing!\"",
    "refs": [
     "scene22:11",
     "scene23:14",
@@ -3709,7 +3709,7 @@
    "id": "m00191",
    "kind": "msg",
    "jp": "久美は泣きなか゛ら帰っていきました。いいんて゛す。今は由美子か゛ターケ゛ットて゛す。",
-   "en": "",
+   "en": "Kumi went home crying. That's fine. Yumiko is your target now.",
    "refs": [
     "scene22:12",
     "scene23:15"
@@ -3720,7 +3720,7 @@
    "id": "m00192",
    "kind": "msg",
    "jp": "「最近、冷たいのね。ちっとも会ってくれないし゛ゃない。もう、あたしをきらいになったの」と言ってます。て゛も、由美子のことをわすれちゃいけません。",
-   "en": "",
+   "en": "She's saying, \"You've been so cold lately. You never come to see me. Have you stopped liking me?\" But you mustn't forget about Yumiko.",
    "refs": [
     "scene23:0"
    ],
@@ -3730,7 +3730,7 @@
    "id": "m00193",
    "kind": "msg",
    "jp": "スケヘ゛心か゛うす゛きます。",
-   "en": "",
+   "en": "Your lecherous urges stir.",
    "refs": [
     "scene23:1"
    ],
@@ -3740,7 +3740,7 @@
    "id": "m00194",
    "kind": "msg",
    "jp": "セーラー服か゛スケヘ゛心をそそります。しかし、ここはカ゛マンしないと・・・。",
-   "en": "",
+   "en": "Her sailor uniform stirs your lecherous urges. But you have to hold back here...",
    "refs": [
     "scene23:4"
    ],
@@ -3750,7 +3750,7 @@
    "id": "m00195",
    "kind": "msg",
    "jp": "メモは家においてきました。",
-   "en": "",
+   "en": "You left the memo at home.",
    "refs": [
     "scene23:9"
    ],
@@ -3760,7 +3760,7 @@
    "id": "m00196",
    "kind": "msg",
    "jp": "「ほかの人を好きになっちゃいやよ。」",
-   "en": "",
+   "en": "\"Don't you dare fall for someone else.\"",
    "refs": [
     "scene23:12"
    ],
@@ -3770,7 +3770,7 @@
    "id": "m00197",
    "kind": "msg",
    "jp": "もう今さら口説くことはないて゛しょう。半年もつきあっているんた゛から・・・。",
-   "en": "",
+   "en": "There's no need to seduce her now. You've been going out for six months...",
    "refs": [
     "scene23:16"
    ],
@@ -3780,7 +3780,7 @@
    "id": "m00198",
    "kind": "msg",
    "jp": "「あああ〜ん。好きよ・・・大好き」　これし゛ゃ由美子と゛ころし゛ゃないて゛すね。",
-   "en": "",
+   "en": "\"Aaaah~n. I love you... I love you so much\" This is no time for Yumiko.",
    "refs": [
     "scene24:0"
    ],
@@ -3790,7 +3790,7 @@
    "id": "m00199",
    "kind": "msg",
    "jp": "こ゛らんの通りて゛す。好みて゛はないけと゛、やっは゜り・・・フ゜フ゜フ゜て゛す。",
-   "en": "",
+   "en": "As you can see. Not your type, but still... heh heh heh.",
    "refs": [
     "scene24:3"
    ],
@@ -3800,7 +3800,7 @@
    "id": "m00200",
    "kind": "msg",
    "jp": "そんなもの見なくてもいいて゛しょう。",
-   "en": "",
+   "en": "You don't need to look at that.",
    "refs": [
     "scene24:4"
    ],
@@ -3810,7 +3810,7 @@
    "id": "m00201",
    "kind": "msg",
    "jp": "ぬか゛してと゛こかへナケ゛ちゃったて゛しょ。",
-   "en": "",
+   "en": "You stripped them off and threw them somewhere, didn't you?",
    "refs": [
     "scene24:5"
    ],
@@ -3820,7 +3820,7 @@
    "id": "m00202",
    "kind": "msg",
    "jp": "かってに見てコーフンして下さい。",
-   "en": "",
+   "en": "Look all you want and get excited.",
    "refs": [
     "scene24:6"
    ],
@@ -3830,7 +3830,7 @@
    "id": "m00203",
    "kind": "msg",
    "jp": "あ〜あ、あなたはやっは゜りスケヘ゛て゛すね。あとて゛、と゛うなってもしりませんよ。",
-   "en": "",
+   "en": "Oh dear, you really are a pervert. Whatever happens later, don't say I didn't warn you.",
    "refs": [
     "scene24:7"
    ],
@@ -3840,7 +3840,7 @@
    "id": "m00204",
    "kind": "msg",
    "jp": "あなたか゛と゛こかへなけ゛すてたて゛しょう。彼女はノーハ゜ンて゛帰らなきゃなりません。",
-   "en": "",
+   "en": "You must have thrown them away somewhere. She has to go home without panties.",
    "refs": [
     "scene24:10"
    ],
@@ -3850,7 +3850,7 @@
    "id": "m00205",
    "kind": "msg",
    "jp": "それと゛ころし゛ゃありません。",
-   "en": "",
+   "en": "This is no time for that.",
    "refs": [
     "scene24:11",
     "scene30:5",
@@ -3866,7 +3866,7 @@
    "id": "m00206",
    "kind": "msg",
    "jp": "はけ゛しく動いています。",
-   "en": "",
+   "en": "She's moving intensely.",
    "refs": [
     "scene24:14"
    ],
@@ -3876,7 +3876,7 @@
    "id": "m00207",
    "kind": "msg",
    "jp": "モタ゛えてます。「ああぁぁぁ〜〜〜っ！」",
-   "en": "",
+   "en": "She's writhing. \"Aaaah~!\"",
    "refs": [
     "scene24:16"
    ],
@@ -3886,7 +3886,7 @@
    "id": "m00208",
    "kind": "msg",
    "jp": "今日は石井とやくそくしたハイキンク゛にいく日て゛す。彼らはもう駅て゛あなたをまっています。まん中の女の子か゛石井の彼女て゛直子。左は彼女の友達の洋子て゛す。",
-   "en": "",
+   "en": "Today is the day you go hiking as promised with Ishii. They're already waiting for you at the station. The girl in the middle is Ishii's girlfriend, Naoko. The one on the left is her friend Yoko.",
    "refs": [
     "scene25:0"
    ],
@@ -3896,7 +3896,7 @@
    "id": "m00209",
    "kind": "msg",
    "jp": "彼女のことはよくしってます。石井とは３か月ほと゛つきあっています。",
-   "en": "",
+   "en": "You know her well. She's been going out with Ishii for about three months.",
    "refs": [
     "scene25:1",
     "scene27:3",
@@ -3909,7 +3909,7 @@
    "id": "m00210",
    "kind": "msg",
    "jp": "あなたはこの子にあうのは初めてて゛す。なかなかかわいい子て゛すね。",
-   "en": "",
+   "en": "This is your first time meeting her. She's a pretty cute girl.",
    "refs": [
     "scene25:2",
     "scene27:4",
@@ -3922,7 +3922,7 @@
    "id": "m00211",
    "kind": "msg",
    "jp": "いちは゛ん早くきたらしく、待ちくたひ゛れています。",
-   "en": "",
+   "en": "She seems to have arrived first, and she's tired of waiting.",
    "refs": [
     "scene25:3"
    ],
@@ -3932,7 +3932,7 @@
    "id": "m00212",
    "kind": "msg",
    "jp": "「いやん、エッチ！」",
-   "en": "",
+   "en": "\"Oh my, you pervert!\"",
    "refs": [
     "scene25:4",
     "scene28:2"
@@ -3943,7 +3943,7 @@
    "id": "m00213",
    "kind": "msg",
    "jp": "ムチムチしています。おもわす゛コーフン。て゛も由美子は・・・？",
-   "en": "",
+   "en": "She's plump and curvy. You can't help getting excited. But what about Yumiko...?",
    "refs": [
     "scene25:5",
     "scene28:3",
@@ -3956,7 +3956,7 @@
    "id": "m00214",
    "kind": "msg",
    "jp": "同級生て゛おなし゛マイコンクラフ゛のメンハ゛ーて゛す。",
-   "en": "",
+   "en": "He's a classmate and a member of the same microcomputer club.",
    "refs": [
     "scene25:6",
     "scene27:5",
@@ -3969,7 +3969,7 @@
    "id": "m00215",
    "kind": "msg",
    "jp": "ナソ゛の男か゛気にかかります。誰かしっているて゛しょうか。",
-   "en": "",
+   "en": "The mysterious man weighs on your mind. Does anyone know who he is?",
    "refs": [
     "scene25:7",
     "scene27:6",
@@ -3982,7 +3982,7 @@
    "id": "m00216",
    "kind": "msg",
    "jp": "今のところまさにナソ゛。何もわかりません。",
-   "en": "",
+   "en": "Right now it's a complete mystery. You don't know anything.",
    "refs": [
     "scene25:8",
     "scene27:7",
@@ -3995,7 +3995,7 @@
    "id": "m00217",
    "kind": "msg",
    "jp": "「この子　洋子よ。私の友達なの」",
-   "en": "",
+   "en": "\"This is Yoko. She's my friend.\"",
    "refs": [
     "scene25:9"
    ],
@@ -4005,7 +4005,7 @@
    "id": "m00218",
    "kind": "msg",
    "jp": "「私、洋子て゛す。よろしくね」とかわいく言ってます。",
-   "en": "",
+   "en": "She says cutely, \"I'm Yoko. Nice to meet you.\"",
    "refs": [
     "scene25:10"
    ],
@@ -4015,7 +4015,7 @@
    "id": "m00219",
    "kind": "msg",
    "jp": "「おそいし゛ゃねーの。早くいこうせ゛」",
-   "en": "",
+   "en": "\"You're late, man. Let's get going.\"",
    "refs": [
     "scene25:11"
    ],
@@ -4025,7 +4025,7 @@
    "id": "m00220",
    "kind": "msg",
    "jp": "ハ゛カなことは　しないよーに。",
-   "en": "",
+   "en": "Don't do anything stupid.",
    "refs": [
     "scene25:12",
     "scene27:11",
@@ -4037,7 +4037,7 @@
    "id": "m00221",
    "kind": "msg",
    "jp": "「おい、と゛こへ行くんた゛よ」と石井にいわれました。",
-   "en": "",
+   "en": "Ishii said to you, \"Hey, where are you going?\"",
    "refs": [
     "scene25:13",
     "scene27:12"
@@ -4048,7 +4048,7 @@
    "id": "m00222",
    "kind": "msg",
    "jp": "「ハ゛カ！オレの彼女た゛そ゛！」と石井におこられました。",
-   "en": "",
+   "en": "\"Idiot! She's my girlfriend!\" Ishii scolded you.",
    "refs": [
     "scene25:14"
    ],
@@ -4058,7 +4058,7 @@
    "id": "m00223",
    "kind": "msg",
    "jp": "あわてないよーに。",
-   "en": "",
+   "en": "Don't rush.",
    "refs": [
     "scene25:15",
     "scene27:14",
@@ -4070,7 +4070,7 @@
    "id": "m00224",
    "kind": "msg",
    "jp": "電車にのって１時間あまり、山と湖か゛見える所やってきました。天気はいいし、気分もいい・・・。たまには、こういう所に来るのもいいもんて゛す。",
-   "en": "",
+   "en": "After riding the train for a little over an hour, you've arrived at a place with mountains and a lake. The weather is nice, and you feel great... Coming to a place like this once in a while is nice.",
    "refs": [
     "scene26:0"
    ],
@@ -4080,7 +4080,7 @@
    "id": "m00225",
    "kind": "msg",
    "jp": "あなたは湖のホ゛ートのりは゛にきています。彼らか゛ホ゛ートに乗ろうとさそっています。",
-   "en": "",
+   "en": "You've come to the boat dock on the lake. They're inviting you to go out on a boat.",
    "refs": [
     "scene27:0"
    ],
@@ -4090,7 +4090,7 @@
    "id": "m00226",
    "kind": "msg",
    "jp": "ホ゛ートに乗っています。",
-   "en": "",
+   "en": "You're on the boat.",
    "refs": [
     "scene27:1"
    ],
@@ -4100,7 +4100,7 @@
    "id": "m00227",
    "kind": "msg",
    "jp": "ホ゛ートのまえて゛あなたを待っています。",
-   "en": "",
+   "en": "They're waiting for you in front of the boat.",
    "refs": [
     "scene27:2"
    ],
@@ -4110,7 +4110,7 @@
    "id": "m00228",
    "kind": "msg",
    "jp": "「ねぇ、早くきてぇー。ホ゛ートに乗りましょうよ。」",
-   "en": "",
+   "en": "\"Hey, come on~. Let's get on the boat.\"",
    "refs": [
     "scene27:8"
    ],
@@ -4120,7 +4120,7 @@
    "id": "m00229",
    "kind": "msg",
    "jp": "「あなた　由美子さんを好きなの？うん、あたしはよくしらないけと゛、あの人なんかウラの部分か゛あるみたいね。そのことなら直子か゛くわしいわ。」",
-   "en": "",
+   "en": "\"You like Yumiko? Hmm, I don't know her well, but that girl seems to have some hidden side. Naoko knows all about that.\"",
    "refs": [
     "scene27:9",
     "scene28:12",
@@ -4132,7 +4132,7 @@
    "id": "m00230",
    "kind": "msg",
    "jp": "「しらないわ　そんな人」",
-   "en": "",
+   "en": "\"I don't know anyone like that.\"",
    "refs": [
     "scene27:10",
     "scene28:13"
@@ -4143,7 +4143,7 @@
    "id": "m00231",
    "kind": "msg",
    "jp": "さすか゛手か゛早い。彼女もまんさ゛らて゛もなさそうて゛す。",
-   "en": "",
+   "en": "As expected, you're quick with your hands. She doesn't seem to mind.",
    "refs": [
     "scene27:13",
     "scene28:16"
@@ -4154,7 +4154,7 @@
    "id": "m00232",
    "kind": "msg",
    "jp": "あなたは洋子とホ゛ートに乗っています。彼女もかわいいて゛すね。",
-   "en": "",
+   "en": "You're on the boat with Yoko. She's cute too.",
    "refs": [
     "scene28:0"
    ],
@@ -4164,7 +4164,7 @@
    "id": "m00233",
    "kind": "msg",
    "jp": "いいけしきて゛す。",
-   "en": "",
+   "en": "Nice scenery.",
    "refs": [
     "scene28:1"
    ],
@@ -4174,7 +4174,7 @@
    "id": "m00234",
    "kind": "msg",
    "jp": "ひろい湖て゛すねぇ。",
-   "en": "",
+   "en": "What a wide lake.",
    "refs": [
     "scene28:4"
    ],
@@ -4184,7 +4184,7 @@
    "id": "m00235",
    "kind": "msg",
    "jp": "このコに由美子のことを聞いてみますか？",
-   "en": "",
+   "en": "Want to ask this girl about Yumiko?",
    "refs": [
     "scene28:5",
     "scene29:2"
@@ -4195,7 +4195,7 @@
    "id": "m00236",
    "kind": "msg",
    "jp": "「あなたいい人ね。誰か好きな人いるの？」　彼女はあなたを気にいったようて゛す。",
-   "en": "",
+   "en": "\"You're a nice person. Is there someone you like?\" She seems to have taken a liking to you.",
    "refs": [
     "scene28:11",
     "scene29:10"
@@ -4206,7 +4206,7 @@
    "id": "m00237",
    "kind": "msg",
    "jp": "もう乗っています。",
-   "en": "",
+   "en": "You're already on board.",
    "refs": [
     "scene28:15"
    ],
@@ -4216,7 +4216,7 @@
    "id": "m00238",
    "kind": "msg",
    "jp": "あなたを見つめています。きっとあなたか゛気にいったんて゛すよ。",
-   "en": "",
+   "en": "She's gazing at you. She must have taken a liking to you.",
    "refs": [
     "scene29:0"
    ],
@@ -4226,7 +4226,7 @@
    "id": "m00239",
    "kind": "msg",
    "jp": "「そろそろもと゛りましょう。おなかすいちゃったわ」",
-   "en": "",
+   "en": "\"Let's head back soon. I'm hungry.\"",
    "refs": [
     "scene29:9"
    ],
@@ -4236,7 +4236,7 @@
    "id": "m00240",
    "kind": "msg",
    "jp": "「ああ〜っ！あふ゛ない。こんなところて゛やめてよ〜‼」",
-   "en": "",
+   "en": "\"Ahh! That's dangerous. Stop it in a place like this~!!\"",
    "refs": [
     "scene30:0"
    ],
@@ -4246,7 +4246,7 @@
    "id": "m00241",
    "kind": "msg",
    "jp": "かなりいやか゛ってます。やめたほうか゛いいのて゛は・・・。",
-   "en": "",
+   "en": "She's really resisting. Maybe you should stop...",
    "refs": [
     "scene30:1"
    ],
@@ -4256,7 +4256,7 @@
    "id": "m00242",
    "kind": "msg",
    "jp": "こ゛らんの通り、す゛り下け゛られています。自分て゛やったくせに。",
-   "en": "",
+   "en": "As you can see, she's been pulled down. Even though she did it herself.",
    "refs": [
     "scene30:2"
    ],
@@ -4266,7 +4266,7 @@
    "id": "m00243",
    "kind": "msg",
    "jp": "ゆれています。あふ゛ないて゛すよ。",
-   "en": "",
+   "en": "It's rocking. That's dangerous.",
    "refs": [
     "scene30:4"
    ],
@@ -4276,7 +4276,7 @@
    "id": "m00244",
    "kind": "msg",
    "jp": "気もちのいい草原て゛す。へ゛んとうは食へ゛たし、天気はいいし、女の子ははしゃいて゛います。",
-   "en": "",
+   "en": "It's a pleasant meadow. You've eaten your bento, the weather is nice, and the girls are frolicking.",
    "refs": [
     "scene31:0"
    ],
@@ -4286,7 +4286,7 @@
    "id": "m00245",
    "kind": "msg",
    "jp": "こ゛らんの通りの野原て゛す。いい天気て゛すね。",
-   "en": "",
+   "en": "It's a field, as you can see. Nice weather, huh.",
    "refs": [
     "scene31:1",
     "scene32:1"
@@ -4297,7 +4297,7 @@
    "id": "m00246",
    "kind": "msg",
    "jp": "まわりはす゛っと野原て゛す。",
-   "en": "",
+   "en": "It's fields all around.",
    "refs": [
     "scene31:2",
     "scene32:2"
@@ -4308,7 +4308,7 @@
    "id": "m00247",
    "kind": "msg",
    "jp": "ナソ゛の男とは一体誰のことなのて゛しょう　？",
-   "en": "",
+   "en": "Who on earth is this mysterious man?",
    "refs": [
     "scene31:3",
     "scene32:3",
@@ -4323,7 +4323,7 @@
    "id": "m00248",
    "kind": "msg",
    "jp": "むし゛ゃきにはしゃいて゛います。",
-   "en": "",
+   "en": "She's frolicking innocently.",
    "refs": [
     "scene31:4",
     "scene32:4"
@@ -4334,7 +4334,7 @@
    "id": "m00249",
    "kind": "msg",
    "jp": "スケヘ゛そうにわらっています。",
-   "en": "",
+   "en": "He's grinning lecherously.",
    "refs": [
     "scene31:5",
     "scene32:5"
@@ -4345,7 +4345,7 @@
    "id": "m00250",
    "kind": "msg",
    "jp": "あそこに見えるて゛しょう。",
-   "en": "",
+   "en": "You can see it over there.",
    "refs": [
     "scene31:6",
     "scene32:6"
@@ -4356,7 +4356,7 @@
    "id": "m00251",
    "kind": "msg",
    "jp": "いまのところと゛うしようもありません。",
-   "en": "",
+   "en": "There's nothing you can do right now.",
    "refs": [
     "scene31:7",
     "scene32:7",
@@ -4371,7 +4371,7 @@
    "id": "m00252",
    "kind": "msg",
    "jp": "誰かに聞いてみますか？",
-   "en": "",
+   "en": "Want to ask someone?",
    "refs": [
     "scene31:8",
     "scene32:8",
@@ -4386,7 +4386,7 @@
    "id": "m00253",
    "kind": "msg",
    "jp": "友人のカ゛ールフレント゛て゛す。",
-   "en": "",
+   "en": "She's your friend's girlfriend.",
    "refs": [
     "scene31:9",
     "scene35:11"
@@ -4397,7 +4397,7 @@
    "id": "m00254",
    "kind": "msg",
    "jp": "直子か゛何かをしっているかもしれません。あとて゛聞いてみましょう。",
-   "en": "",
+   "en": "Naoko might know something. Let's ask her later.",
    "refs": [
     "scene31:10",
     "scene32:9",
@@ -4412,7 +4412,7 @@
    "id": "m00255",
    "kind": "msg",
    "jp": "今のところ直子の友人た゛ということしかわかっていません。",
-   "en": "",
+   "en": "All you know right now is that she's Naoko's friend.",
    "refs": [
     "scene31:11",
     "scene32:11",
@@ -4427,7 +4427,7 @@
    "id": "m00256",
    "kind": "msg",
    "jp": "マイコンクラフ゛の中て゛はワリと気か゛あうほうて゛す。",
-   "en": "",
+   "en": "Among the microcomputer club members, you two get along pretty well.",
    "refs": [
     "scene31:12",
     "scene32:12",
@@ -4442,7 +4442,7 @@
    "id": "m00257",
    "kind": "msg",
    "jp": "「え、なあに？なにをフ゛ツフ゛ツいってんのよ」",
-   "en": "",
+   "en": "\"Huh? What? What are you muttering about?\"",
    "refs": [
     "scene31:13",
     "scene32:16"
@@ -4453,7 +4453,7 @@
    "id": "m00258",
    "kind": "msg",
    "jp": "し゛ょうた゛んはヨセ！",
-   "en": "",
+   "en": "No jokes!",
    "refs": [
     "scene31:14",
     "scene33:13",
@@ -4465,7 +4465,7 @@
    "id": "m00259",
    "kind": "msg",
    "jp": "ここし゛ゃます゛いて゛すよ。",
-   "en": "",
+   "en": "It's too cramped here.",
    "refs": [
     "scene31:15"
    ],
@@ -4475,7 +4475,7 @@
    "id": "m00260",
    "kind": "msg",
    "jp": "「へへへ、おまえ、あの子　気にいったか？　と゛うた゛森にいかないか」",
-   "en": "",
+   "en": "\"Heh heh heh, you like that girl, huh? How about we go to the forest?\"",
    "refs": [
     "scene32:0"
    ],
@@ -4485,7 +4485,7 @@
    "id": "m00261",
    "kind": "msg",
    "jp": "石井のカ゛ールフレント゛て゛す。",
-   "en": "",
+   "en": "She's Ishii's girlfriend.",
    "refs": [
     "scene32:10",
     "scene33:8",
@@ -4498,7 +4498,7 @@
    "id": "m00262",
    "kind": "msg",
    "jp": "「おれも直子とうまくやるから、森へいこうせ゛」",
-   "en": "",
+   "en": "\"I'll work things out with Naoko too, so let's head to the forest.\"",
    "refs": [
     "scene32:13"
    ],
@@ -4508,7 +4508,7 @@
    "id": "m00263",
    "kind": "msg",
    "jp": "「何すんた゛よ　ハ゛カ！」",
-   "en": "",
+   "en": "\"What are you doing, you idiot!\"",
    "refs": [
     "scene32:14"
    ],
@@ -4518,7 +4518,7 @@
    "id": "m00264",
    "kind": "msg",
    "jp": "また゛早い！",
-   "en": "",
+   "en": "Too fast!",
    "refs": [
     "scene32:15"
    ],
@@ -4528,7 +4528,7 @@
    "id": "m00265",
    "kind": "msg",
    "jp": "森の中て゛す。みちにまよったふりして洋子と二人きりになりました。",
-   "en": "",
+   "en": "You're in the forest. You pretended to be lost and ended up alone with Yoko.",
    "refs": [
     "scene33:0"
    ],
@@ -4538,7 +4538,7 @@
    "id": "m00266",
    "kind": "msg",
    "jp": "ほんとにまよってしまいました。と゛こにも行けません。",
-   "en": "",
+   "en": "You really did get lost. You can't go anywhere.",
    "refs": [
     "scene33:1",
     "scene34:7"
@@ -4549,7 +4549,7 @@
    "id": "m00267",
    "kind": "msg",
    "jp": "あなたの下心に気つ゛いたのか、ふ安そうて゛す。",
-   "en": "",
+   "en": "She seems uneasy, as if she's sensed your ulterior motives.",
    "refs": [
     "scene33:3"
    ],
@@ -4559,7 +4559,7 @@
    "id": "m00268",
    "kind": "msg",
    "jp": "ここは森の中て゛すよ。",
-   "en": "",
+   "en": "You're in the middle of the forest.",
    "refs": [
     "scene33:4",
     "scene34:8",
@@ -4571,7 +4571,7 @@
    "id": "m00269",
    "kind": "msg",
    "jp": "「直子たちはと゛こへ行っちゃったのかしら・・・」",
-   "en": "",
+   "en": "\"I wonder where Naoko and the others went...\"",
    "refs": [
     "scene33:11"
    ],
@@ -4581,7 +4581,7 @@
    "id": "m00270",
    "kind": "msg",
    "jp": "みちにまよって出られません。",
-   "en": "",
+   "en": "You're lost and can't find your way out.",
    "refs": [
     "scene33:12"
    ],
@@ -4591,7 +4591,7 @@
    "id": "m00271",
    "kind": "msg",
    "jp": "雨か゛ふってきました。「あそこに　ほら穴か゛あるわ！」とまあつこ゛うのいいことて゛・・・。",
-   "en": "",
+   "en": "It's started to rain. \"There's a cave over there!\" How convenient...",
    "refs": [
     "scene34:0"
    ],
@@ -4601,7 +4601,7 @@
    "id": "m00272",
    "kind": "msg",
    "jp": "ほら穴か゛あります。",
-   "en": "",
+   "en": "There's a cave.",
    "refs": [
     "scene34:1"
    ],
@@ -4611,7 +4611,7 @@
    "id": "m00273",
    "kind": "msg",
    "jp": "と゛こをみわたしても森て゛す。",
-   "en": "",
+   "en": "No matter where you look, it's all forest.",
    "refs": [
     "scene34:2"
    ],
@@ -4621,7 +4621,7 @@
    "id": "m00274",
    "kind": "msg",
    "jp": "とつせ゛んの雨にあわてています。",
-   "en": "",
+   "en": "They're panicking over the sudden rain.",
    "refs": [
     "scene34:4"
    ],
@@ -4631,7 +4631,7 @@
    "id": "m00275",
    "kind": "msg",
    "jp": "雨やと゛りするのにもってこいのほら穴て゛す。",
-   "en": "",
+   "en": "It's a perfect cave for taking shelter from the rain.",
    "refs": [
     "scene34:5"
    ],
@@ -4641,7 +4641,7 @@
    "id": "m00276",
    "kind": "msg",
    "jp": "ちょっと　やみそうにありませんねェ。",
-   "en": "",
+   "en": "It doesn't look like it'll stop anytime soon.",
    "refs": [
     "scene34:6",
     "scene35:5"
@@ -4652,7 +4652,7 @@
    "id": "m00277",
    "kind": "msg",
    "jp": "「あそこて゛雨やと゛りしましょうよ！」",
-   "en": "",
+   "en": "\"Let's take shelter from the rain over there!\"",
    "refs": [
     "scene34:15"
    ],
@@ -4662,7 +4662,7 @@
    "id": "m00278",
    "kind": "msg",
    "jp": "「いやよ　こんなとこし゛ゃ」",
-   "en": "",
+   "en": "\"No way, not in a place like this.\"",
    "refs": [
     "scene34:18",
     "scene35:23"
@@ -4673,7 +4673,7 @@
    "id": "m00279",
    "kind": "msg",
    "jp": "ほら穴の中にはいりました。二人ともス゛フ゛ぬれて゛す。",
-   "en": "",
+   "en": "You've entered the cave. Both of you are soaking wet.",
    "refs": [
     "scene35:0"
    ],
@@ -4683,7 +4683,7 @@
    "id": "m00280",
    "kind": "msg",
    "jp": "ほら穴の入り口て゛す。",
-   "en": "",
+   "en": "It's the cave entrance.",
    "refs": [
     "scene35:1",
     "scene36:2"
@@ -4694,7 +4694,7 @@
    "id": "m00281",
    "kind": "msg",
    "jp": "ほら穴の中て゛す。",
-   "en": "",
+   "en": "You're inside the cave.",
    "refs": [
     "scene35:2",
     "scene36:3"
@@ -4705,7 +4705,7 @@
    "id": "m00282",
    "kind": "msg",
    "jp": "あなたを見つめています。",
-   "en": "",
+   "en": "She's gazing at you.",
    "refs": [
     "scene35:4",
     "scene50:2"
@@ -4716,7 +4716,7 @@
    "id": "m00283",
    "kind": "msg",
    "jp": "ここか゛ほら穴の中て゛す。",
-   "en": "",
+   "en": "This is the inside of the cave.",
    "refs": [
     "scene35:7"
    ],
@@ -4726,7 +4726,7 @@
    "id": "m00284",
    "kind": "msg",
    "jp": "「早く　雨やまないかしら」",
-   "en": "",
+   "en": "\"I wish the rain would stop soon.\"",
    "refs": [
     "scene35:14"
    ],
@@ -4736,7 +4736,7 @@
    "id": "m00285",
    "kind": "msg",
    "jp": "「なあに　それ？」",
-   "en": "",
+   "en": "\"What's that?\"",
    "refs": [
     "scene35:15"
    ],
@@ -4746,7 +4746,7 @@
    "id": "m00286",
    "kind": "msg",
    "jp": "「由美子さんか゛好きなの！？　あの人　やめたほうか゛いいわ。あまりいいうわさ聞かないもの。直子に聞いてみたらいいわ。」",
-   "en": "",
+   "en": "\"You like Yumiko?! You'd better stay away from her. I haven't heard good rumors about her. You should ask Naoko.\"",
    "refs": [
     "scene35:16"
    ],
@@ -4756,7 +4756,7 @@
    "id": "m00287",
    "kind": "msg",
    "jp": "「あたしは由美子さんについては　それ以上しらないわ。あとは直子に聞いてよ。」",
-   "en": "",
+   "en": "\"I don't know anything more about Yumiko. Ask Naoko for the rest.\"",
    "refs": [
     "scene35:17"
    ],
@@ -4766,7 +4766,7 @@
    "id": "m00288",
    "kind": "msg",
    "jp": "「小学校のころからの友達よ。彼女、由美子さんとも友達た゛わ」",
-   "en": "",
+   "en": "\"We've been friends since elementary school. She's friends with Yumiko too.\"",
    "refs": [
     "scene35:18"
    ],
@@ -4776,7 +4776,7 @@
    "id": "m00289",
    "kind": "msg",
    "jp": "「あたしはふつうの女の子よ」",
-   "en": "",
+   "en": "\"I'm just an ordinary girl.\"",
    "refs": [
     "scene35:19"
    ],
@@ -4786,7 +4786,7 @@
    "id": "m00290",
    "kind": "msg",
    "jp": "「しらないわそんな人」",
-   "en": "",
+   "en": "\"I don't know anyone like that.\"",
    "refs": [
     "scene35:20"
    ],
@@ -4796,7 +4796,7 @@
    "id": "m00291",
    "kind": "msg",
    "jp": "「あの人　今は直子とつきあっているけと゛、ちょっと前は由美子さんか゛好きた゛ったみたいよ」",
-   "en": "",
+   "en": "\"He's going out with Naoko now, but it seems he liked Yumiko a while back.\"",
    "refs": [
     "scene35:21"
    ],
@@ -4806,7 +4806,7 @@
    "id": "m00292",
    "kind": "msg",
    "jp": "そんなおそまつなものを見せても　よろこひ゛ませんよ。",
-   "en": "",
+   "en": "Showing something that shabby won't make her happy.",
    "refs": [
     "scene35:22",
     "scene36:16"
@@ -4817,7 +4817,7 @@
    "id": "m00293",
    "kind": "msg",
    "jp": "「あ、やめて　いた〜〜い！やめてえっ！」　下か゛いわなのて゛　ちょっといたいのかもしれません。",
-   "en": "",
+   "en": "\"Ah, stop, it hurts~! Stop it!\" Since the ground is rocky, it might hurt a bit.",
    "refs": [
     "scene36:0"
    ],
@@ -4827,7 +4827,7 @@
    "id": "m00294",
    "kind": "msg",
    "jp": "こ゛らんの通りて゛す。あなたもスキて゛すねぇ。",
-   "en": "",
+   "en": "As you can see. You really are something.",
    "refs": [
     "scene36:1"
    ],
@@ -4837,7 +4837,7 @@
    "id": "m00295",
    "kind": "msg",
    "jp": "もた゛えています。",
-   "en": "",
+   "en": "She's writhing.",
    "refs": [
     "scene36:5",
     "scene40:3"
@@ -4848,7 +4848,7 @@
    "id": "m00296",
    "kind": "msg",
    "jp": "ムフフフフ・・・・・",
-   "en": "",
+   "en": "Heh heh heh heh...",
    "refs": [
     "scene36:7"
    ],
@@ -4858,7 +4858,7 @@
    "id": "m00297",
    "kind": "msg",
    "jp": "「いやーっ、やめてよーっ‼」",
-   "en": "",
+   "en": "\"Nooo, stop it~!!\"",
    "refs": [
     "scene36:14"
    ],
@@ -4868,7 +4868,7 @@
    "id": "m00298",
    "kind": "msg",
    "jp": "「あああ〜〜ん！」",
-   "en": "",
+   "en": "\"Aaaah~!\"",
    "refs": [
     "scene36:15"
    ],
@@ -4878,7 +4878,7 @@
    "id": "m00299",
    "kind": "msg",
    "jp": "あなたは由美子の話をきくために直子の家にやってきました。ここは直子の部屋て゛す。",
-   "en": "",
+   "en": "You've come to Naoko's house to hear about Yumiko. This is Naoko's room.",
    "refs": [
     "scene37:0"
    ],
@@ -4888,7 +4888,7 @@
    "id": "m00300",
    "kind": "msg",
    "jp": "この子もイロっほ゜て゛すねェ。石井にはもったいない。",
-   "en": "",
+   "en": "This girl's sexy too. She's wasted on Ishii.",
    "refs": [
     "scene37:1",
     "scene38:1",
@@ -4902,7 +4902,7 @@
    "id": "m00301",
    "kind": "msg",
    "jp": "「ちょっと　何するのよ！」とおこられました。",
-   "en": "",
+   "en": "\"Hey, what are you doing!\" You were scolded.",
    "refs": [
     "scene37:2"
    ],
@@ -4912,7 +4912,7 @@
    "id": "m00302",
    "kind": "msg",
    "jp": "石井の恋人て゛すか゛、由美子の友達て゛もあります。あとは本人にと゛うそ゛。",
-   "en": "",
+   "en": "She's Ishii's girlfriend, but she's also Yumiko's friend. The rest is up to you.",
    "refs": [
     "scene37:3",
     "scene37:6",
@@ -4926,7 +4926,7 @@
    "id": "m00303",
    "kind": "msg",
    "jp": "そのために　ここに来たのて゛す。直子にきいてくた゛さい。",
-   "en": "",
+   "en": "That's why you came here. Ask Naoko.",
    "refs": [
     "scene37:4",
     "scene38:6"
@@ -4937,7 +4937,7 @@
    "id": "m00304",
    "kind": "msg",
    "jp": "直子にきいてくた゛さい。",
-   "en": "",
+   "en": "Ask Naoko.",
    "refs": [
     "scene37:5",
     "scene38:7"
@@ -4948,7 +4948,7 @@
    "id": "m00305",
    "kind": "msg",
    "jp": "「由美子はね、原先生にす゛っとせまられていたのよ。もちろん　そんなハ゛カな話にのるような由美子し゛ゃないけと゛、何か弱みをにき゛られているみたい。今も関係してるわ。」　「それから　由美子の性格かわっちゃってね。まいにち夜の街をさまよっているわ。あなた　助けてあけ゛てよ」",
-   "en": "",
+   "en": "\"Yumiko's been pursued by Mr. Hara for a long time. Of course, Yumiko isn't the type to go along with something like that, but it seems he's got some kind of leverage on her. They're still involved now.\" \"And Yumiko's personality has changed. She wanders the streets at night every day. Please, help her.\"",
    "refs": [
     "scene37:7",
     "scene38:8"
@@ -4959,7 +4959,7 @@
    "id": "m00306",
    "kind": "msg",
    "jp": "「あの人　由美子か゛好きた゛ったのよ」",
-   "en": "",
+   "en": "\"That man liked Yumiko.\"",
    "refs": [
     "scene37:8",
     "scene38:9"
@@ -4970,7 +4970,7 @@
    "id": "m00307",
    "kind": "msg",
    "jp": "「せっかく来たのに、そう　あわてることないし゛ゃない」　ユーワクしてるのかな？",
-   "en": "",
+   "en": "\"You went to all the trouble of coming here, so there's no need to rush.\" Is she tempting you?",
    "refs": [
     "scene37:9",
     "scene38:11"
@@ -4981,7 +4981,7 @@
    "id": "m00308",
    "kind": "msg",
    "jp": "彼女にこのメモのキ゛ワクを聞いてみましょうか？",
-   "en": "",
+   "en": "Want to ask her about the memo's mystery?",
    "refs": [
     "scene37:10",
     "scene38:3"
@@ -4992,7 +4992,7 @@
    "id": "m00309",
    "kind": "msg",
    "jp": "その気か゛ありそうて゛すよ。",
-   "en": "",
+   "en": "She seems to be in the mood.",
    "refs": [
     "scene37:11"
    ],
@@ -5002,7 +5002,7 @@
    "id": "m00310",
    "kind": "msg",
    "jp": "話をしにきたんて゛しょ。",
-   "en": "",
+   "en": "You came here to talk, right?",
    "refs": [
     "scene37:12",
     "scene38:12"
@@ -5013,7 +5013,7 @@
    "id": "m00311",
    "kind": "msg",
    "jp": "「へえ、　あなたも由美子か゛好きなの・・・フフフ。」　イミのあるわらいて゛す。",
-   "en": "",
+   "en": "\"Oh, you like Yumiko too... Heh heh heh.\" It's a meaningful laugh.",
    "refs": [
     "scene37:13"
    ],
@@ -5023,7 +5023,7 @@
    "id": "m00312",
    "kind": "msg",
    "jp": "「へえ、あなたも由美子か゛好きなの　フフフ」　イミのあるわらいかたて゛す。",
-   "en": "",
+   "en": "\"Oh, you like Yumiko too. Heh heh heh.\" It's a meaningful way of laughing.",
    "refs": [
     "scene38:0"
    ],
@@ -5033,7 +5033,7 @@
    "id": "m00313",
    "kind": "msg",
    "jp": "彼女の部屋の出口て゛す。",
-   "en": "",
+   "en": "It's the exit from her room.",
    "refs": [
     "scene38:2",
     "scene39:2"
@@ -5044,7 +5044,7 @@
    "id": "m00314",
    "kind": "msg",
    "jp": "「て゛も　先生との関係か゛わかって　あきらめたみたい」",
-   "en": "",
+   "en": "\"But once she found out about his relationship, she seems to have given up.\"",
    "refs": [
     "scene38:10"
    ],
@@ -5054,7 +5054,7 @@
    "id": "m00315",
    "kind": "msg",
    "jp": "「ああ〜〜ん♡」　あなたは石井にわるいと思いつつ、直子に手をた゛してしまいました。あとて゛　と゛うなってもしりませんよ〜〜っ！",
-   "en": "",
+   "en": "\"Aaaah~n♡\" Though you feel bad for Ishii, you've laid your hands on Naoko. Whatever happens later, don't say I didn't warn you~!",
    "refs": [
     "scene39:0"
    ],
@@ -5064,7 +5064,7 @@
    "id": "m00316",
    "kind": "msg",
    "jp": "口て゛はいやか゛っていますか゛、まんさ゛らて゛もなさそうて゛す。",
-   "en": "",
+   "en": "She's protesting verbally, but she doesn't seem to mind.",
    "refs": [
     "scene39:4"
    ],
@@ -5074,7 +5074,7 @@
    "id": "m00317",
    "kind": "msg",
    "jp": "ムチムチて゛す。おっと　ハナ血か゛・・・。",
-   "en": "",
+   "en": "She's plump and curvy. Whoa, nosebleed...",
    "refs": [
     "scene39:5",
     "scene40:4"
@@ -5085,7 +5085,7 @@
    "id": "m00318",
    "kind": "msg",
    "jp": "また゛　直子にきくへ゛き話か゛あるんて゛すか゛、しょうか゛ないて゛すね。",
-   "en": "",
+   "en": "You still have things to ask Naoko, but there's no helping it.",
    "refs": [
     "scene39:7"
    ],
@@ -5095,7 +5095,7 @@
    "id": "m00319",
    "kind": "msg",
    "jp": "これ以上ぬか゛す必要もないて゛しょう。",
-   "en": "",
+   "en": "There's no need to strip her any further.",
    "refs": [
     "scene39:8",
     "scene40:9"
@@ -5106,7 +5106,7 @@
    "id": "m00320",
    "kind": "msg",
    "jp": "そうて゛す。　石井のこともあるし、今は由美子のことを考えるへ゛きて゛すね。",
-   "en": "",
+   "en": "That's right. There's Ishii to consider, so you should be thinking about Yumiko now.",
    "refs": [
     "scene39:9"
    ],
@@ -5116,7 +5116,7 @@
    "id": "m00321",
    "kind": "msg",
    "jp": "「い、い、いいわ・・・！　あううっっ！！」",
-   "en": "",
+   "en": "\"O-okay...! Ahhh!!\"",
    "refs": [
     "scene39:10"
    ],
@@ -5126,7 +5126,7 @@
    "id": "m00322",
    "kind": "msg",
    "jp": "「アッ　アウッ　ウァァ〜〜ッ！」　そろそろやめたほうか゛　いいんし゛ゃないて゛すか？　石井にハ゛レたらことて゛すよ。",
-   "en": "",
+   "en": "\"Ah! Auh! Waaaah~!\" Shouldn't you stop soon? If Ishii finds out, you're in trouble.",
    "refs": [
     "scene40:0"
    ],
@@ -5136,7 +5136,7 @@
    "id": "m00323",
    "kind": "msg",
    "jp": "「あううっ！　い、いいわ・・♡」",
-   "en": "",
+   "en": "\"Ahhh! O-okay...♡\"",
    "refs": [
     "scene40:5"
    ],
@@ -5146,7 +5146,7 @@
    "id": "m00324",
    "kind": "msg",
    "jp": "そうて゛す。石井のこともあるし、今は由美子のことを考えるへ゛きて゛すからね。",
-   "en": "",
+   "en": "That's right. There's Ishii to consider, so you should be thinking about Yumiko now.",
    "refs": [
     "scene40:7"
    ],
@@ -5156,7 +5156,7 @@
    "id": "m00325",
    "kind": "msg",
    "jp": "「アッ　アウッ　ウァァ〜〜ッ！」　もた゛えています。",
-   "en": "",
+   "en": "\"Ah! Auh! Waaaah~!\" She's writhing.",
    "refs": [
     "scene40:8"
    ],
@@ -5166,7 +5166,7 @@
    "id": "m00326",
    "kind": "msg",
    "jp": "また゛　久由に聞くへ゛きことか゛あるんて゛すか゛、しかたないて゛すね・・・。",
-   "en": "",
+   "en": "You still have things to ask Kumi, but there's no helping it...",
    "refs": [
     "scene40:10"
    ],
@@ -5176,7 +5176,7 @@
    "id": "m00327",
    "kind": "msg",
    "jp": "「あ、こ、こ、このヤロウ！なんてことするんた゛‼」　あなたはメいっは゜いふ゛んなく゛られました。人の彼女に手をた゛したあなたか゛悪い。　従って、これ以上ケ゛ームを続けることはて゛きません。",
-   "en": "",
+   "en": "\"Y-you bastard! How dare you!!\" You were beaten to a pulp. It's your fault for laying hands on another man's girlfriend. Therefore, you can no longer continue the game.",
    "refs": [
     "scene41:0"
    ],
@@ -5186,7 +5186,7 @@
    "id": "m00328",
    "kind": "msg",
    "jp": "あなたは由美子を探しに夜の街にやってきました。　左にはトルコ、右にスナックとテ゛ィスコか゛あります。その間に路地か゛あります。",
-   "en": "",
+   "en": "You've come to the night town to search for Yumiko. There's a Turkish bath on the left, and a snack bar and disco on the right. There's an alley between them.",
    "refs": [
     "scene42:0"
    ],
@@ -5196,7 +5196,7 @@
    "id": "m00329",
    "kind": "msg",
    "jp": "夜の街て゛す。",
-   "en": "",
+   "en": "It's the night town.",
    "refs": [
     "scene42:1"
    ],
@@ -5206,7 +5206,7 @@
    "id": "m00330",
    "kind": "msg",
    "jp": "まさか　あの先生と由美子か゛？信し゛られません。早く　由美子を探して　はっきりさせて下さい。",
-   "en": "",
+   "en": "Could that teacher and Yumiko really be...? Unbelievable. Hurry and find Yumiko to get the truth.",
    "refs": [
     "scene42:2",
     "scene43:3",
@@ -5221,7 +5221,7 @@
    "id": "m00331",
    "kind": "msg",
    "jp": "と゛こにいるか分かりません。探して下さい。",
-   "en": "",
+   "en": "You don't know where she is. Please search for her.",
    "refs": [
     "scene42:3",
     "scene43:4",
@@ -5239,7 +5239,7 @@
    "id": "m00332",
    "kind": "msg",
    "jp": "ロリータホ゜ルノをやっています。見たいて゛しょうか゛　今はカ゛マンて゛すね。",
-   "en": "",
+   "en": "They're showing a Lolita porno. You'd like to watch, but you'll have to hold back for now.",
    "refs": [
     "scene42:4"
    ],
@@ -5249,7 +5249,7 @@
    "id": "m00333",
    "kind": "msg",
    "jp": "ここからて゛は　よく見えません。",
-   "en": "",
+   "en": "You can't see well from here.",
    "refs": [
     "scene42:5"
    ],
@@ -5259,7 +5259,7 @@
    "id": "m00334",
    "kind": "msg",
    "jp": "そんなところへ行っても　しょうか゛ないて゛しょう。",
-   "en": "",
+   "en": "Going there won't help.",
    "refs": [
     "scene42:6"
    ],
@@ -5269,7 +5269,7 @@
    "id": "m00335",
    "kind": "msg",
    "jp": "映画をみてるヒマはありません。",
-   "en": "",
+   "en": "You don't have time to watch a movie.",
    "refs": [
     "scene42:7",
     "scene43:6",
@@ -5284,7 +5284,7 @@
    "id": "m00336",
    "kind": "msg",
    "jp": "テ゛ィスコにいるみたいて゛すよ。",
-   "en": "",
+   "en": "She seems to be at the disco.",
    "refs": [
     "scene42:8",
     "scene43:8",
@@ -5298,7 +5298,7 @@
    "id": "m00337",
    "kind": "msg",
    "jp": "せっかく来たのに　由美子をみつけてからて゛いいて゛しょう。",
-   "en": "",
+   "en": "You went to all the trouble of coming here, but you can do that after you find Yumiko.",
    "refs": [
     "scene42:9",
     "scene43:9"
@@ -5309,7 +5309,7 @@
    "id": "m00338",
    "kind": "msg",
    "jp": "交番か゛あります。　「こらっ　こんなところを高校生か゛ウロウロするんし゛ゃない。早く帰れ」",
-   "en": "",
+   "en": "There's a police box. \"Hey! A high schooler shouldn't be wandering around a place like this. Go home now.\"",
    "refs": [
     "scene43:0"
    ],
@@ -5319,7 +5319,7 @@
    "id": "m00339",
    "kind": "msg",
    "jp": "「また　お前か。なんと゛言ったらわかるんた゛。ちょっと　こっちへ来い！」　交番につれこまれてしまいました。　従って、これ以上ケ゛ームを続けることはて゛きません。",
-   "en": "",
+   "en": "\"You again. How many times do I have to tell you? Come here!\" You were dragged into the police box. Therefore, you can no longer continue the game.",
    "refs": [
     "scene43:1"
    ],
@@ -5329,7 +5329,7 @@
    "id": "m00340",
    "kind": "msg",
    "jp": "にき゛やかな夜のカンラクカ゛イて゛す。",
-   "en": "",
+   "en": "It's a lively night entertainment district.",
    "refs": [
     "scene43:2",
     "scene44:1",
@@ -5343,7 +5343,7 @@
    "id": "m00341",
    "kind": "msg",
    "jp": "交番にはいっても　しょうか゛ないて゛しょう。",
-   "en": "",
+   "en": "Going into the police box won't help.",
    "refs": [
     "scene43:5"
    ],
@@ -5353,7 +5353,7 @@
    "id": "m00342",
    "kind": "msg",
    "jp": "トルコにはいりました。「お客さん、いい子か゛いますよ。入って下さいよ。」",
-   "en": "",
+   "en": "You've entered the Turkish bath. \"Sir, we've got good girls here. Please come in.\"",
    "refs": [
     "scene44:0"
    ],
@@ -5363,7 +5363,7 @@
    "id": "m00343",
    "kind": "msg",
    "jp": "あ〜あ　すっきりした。て゛も　あなたは由美子をさか゛しにきたんて゛しょ？　お金はせ゛んふ゛使ってしまいましたよ。",
-   "en": "",
+   "en": "Ahh, that was refreshing. But you came here to search for Yumiko, didn't you? You've spent all your money.",
    "refs": [
     "scene44:4"
    ],
@@ -5373,7 +5373,7 @@
    "id": "m00344",
    "kind": "msg",
    "jp": "「そんな女　しらないね」　とシハイニンか゛言ってます。",
-   "en": "",
+   "en": "\"Don't know any girl like that,\" the manager says.",
    "refs": [
     "scene44:8"
    ],
@@ -5383,7 +5383,7 @@
    "id": "m00345",
    "kind": "msg",
    "jp": "スナックの中て゛す。マスターと客か゛います。　　",
-   "en": "",
+   "en": "You're inside the snack bar. There's the master and a customer.",
    "refs": [
     "scene45:0"
    ],
@@ -5393,7 +5393,7 @@
    "id": "m00346",
    "kind": "msg",
    "jp": "ゆっくりしてるは゛あいし゛ゃ　ありませんよ。",
-   "en": "",
+   "en": "This is no time to take it easy.",
    "refs": [
     "scene45:1"
    ],
@@ -5403,7 +5403,7 @@
    "id": "m00347",
    "kind": "msg",
    "jp": "うさんくさそうに　こっちを見ています。",
-   "en": "",
+   "en": "He's looking at you suspiciously.",
    "refs": [
     "scene45:5"
    ],
@@ -5413,7 +5413,7 @@
    "id": "m00348",
    "kind": "msg",
    "jp": "「ああ　その子ならさっきまて゛　ここにいたな。テ゛ィスコへ行くって言ってたよ」",
-   "en": "",
+   "en": "\"Oh, that girl was here until a moment ago. She said she was going to the disco.\"",
    "refs": [
     "scene45:9"
    ],
@@ -5423,7 +5423,7 @@
    "id": "m00349",
    "kind": "msg",
    "jp": "「そんな女　しらないね」　とお客さんか゛言ってます。",
-   "en": "",
+   "en": "\"Don't know any girl like that,\" the customer says.",
    "refs": [
     "scene45:10",
     "scene47:7"
@@ -5434,7 +5434,7 @@
    "id": "m00350",
    "kind": "msg",
    "jp": "「おいっ。カ゛キのくせに　こんなところをウロウロするんし゛ゃねぇョ。金もってるた゛ろう。ヨコシナ」　あり金せ゛んふ゛まきあけ゛られました。",
-   "en": "",
+   "en": "\"Hey. A brat like you shouldn't be wandering around here. You've got money, right? Hand it over.\" All your money was taken.",
    "refs": [
     "scene46:0"
    ],
@@ -5444,7 +5444,7 @@
    "id": "m00351",
    "kind": "msg",
    "jp": "「テメェ　また来たのか。ナマイキなやつた゛な」　と　ホ゛コホ゛コされました。サイキフノウて゛す。",
-   "en": "",
+   "en": "\"You again, huh. You're a cocky one,\" he said, beating you senseless. You're unable to move.",
    "refs": [
     "scene46:1"
    ],
@@ -5454,7 +5454,7 @@
    "id": "m00352",
    "kind": "msg",
    "jp": "こっちを　にらんて゛ます。",
-   "en": "",
+   "en": "He's glaring at you.",
    "refs": [
     "scene46:5"
    ],
@@ -5464,7 +5464,7 @@
    "id": "m00353",
    "kind": "msg",
    "jp": "おそろしいことを　かんか゛えないて゛下さい。",
-   "en": "",
+   "en": "Don't think about doing anything terrifying.",
    "refs": [
     "scene46:6"
    ],
@@ -5474,7 +5474,7 @@
    "id": "m00354",
    "kind": "msg",
    "jp": "ゆうかんに　ヤクサ゛にたちむかったあなたは、とうせ゛んメチャクチャにやられました。　従って、これ以上ケ゛ームを続けることはて゛きません。",
-   "en": "",
+   "en": "You bravely stood up to the yakuza and were, of course, beaten to a pulp. Therefore, you can no longer continue the game.",
    "refs": [
     "scene46:9"
    ],
@@ -5484,7 +5484,7 @@
    "id": "m00355",
    "kind": "msg",
    "jp": "テ゛ィスコの中て゛す。みんな　キ゛ンキ゛ンにのりまくっています。",
-   "en": "",
+   "en": "You're inside the disco. Everyone's dancing wildly.",
    "refs": [
     "scene47:0"
    ],
@@ -5494,7 +5494,7 @@
    "id": "m00356",
    "kind": "msg",
    "jp": "ここに由美子か゛いるはす゛て゛す。　よく探してみて下さい。",
-   "en": "",
+   "en": "Yumiko should be here. Search carefully.",
    "refs": [
     "scene47:1"
    ],
@@ -5504,7 +5504,7 @@
    "id": "m00357",
    "kind": "msg",
    "jp": "人こ゛みて゛す。",
-   "en": "",
+   "en": "It's crowded.",
    "refs": [
     "scene47:2"
    ],
@@ -5514,7 +5514,7 @@
    "id": "m00358",
    "kind": "msg",
    "jp": "テ゛ィスコの中て゛す。あっ　由美子か゛いました。",
-   "en": "",
+   "en": "You're inside the disco. Ah, there's Yumiko.",
    "refs": [
     "scene48:0"
    ],
@@ -5524,7 +5524,7 @@
    "id": "m00359",
    "kind": "msg",
    "jp": "みんな　おと゛っています。にき゛やかて゛す。",
-   "en": "",
+   "en": "Everyone's dancing. It's lively.",
    "refs": [
     "scene48:1"
    ],
@@ -5534,7 +5534,7 @@
    "id": "m00360",
    "kind": "msg",
    "jp": "あなたはメモのないようを　また゛カイメイしていません。",
-   "en": "",
+   "en": "You haven't yet deciphered the memo's contents.",
    "refs": [
     "scene48:2"
    ],
@@ -5544,7 +5544,7 @@
    "id": "m00361",
    "kind": "msg",
    "jp": "由美子にし゛し゛つかと゛うか聞いてみましょう。",
-   "en": "",
+   "en": "Let's ask Yumiko directly.",
    "refs": [
     "scene48:3"
    ],
@@ -5554,7 +5554,7 @@
    "id": "m00362",
    "kind": "msg",
    "jp": "由美子はかなりヨっているようて゛す。学校て゛みるのとは別人のようて゛す。",
-   "en": "",
+   "en": "Yumiko seems pretty drunk. She looks like a different person from the one you see at school.",
    "refs": [
     "scene48:4",
     "scene49:2"
@@ -5565,7 +5565,7 @@
    "id": "m00363",
    "kind": "msg",
    "jp": "由美子のイメーシ゛からは　かけはなれた服をきています。",
-   "en": "",
+   "en": "She's wearing clothes that are far from the image you have of Yumiko.",
    "refs": [
     "scene48:5",
     "scene50:3",
@@ -5577,7 +5577,7 @@
    "id": "m00364",
    "kind": "msg",
    "jp": "服はかわっても、やはり由美子はすは゛らしい。何としてて゛も今夜モノにしなけれは゛・・・。",
-   "en": "",
+   "en": "Even with different clothes, Yumiko is still wonderful. You must have her tonight no matter what...",
    "refs": [
     "scene48:6",
     "scene49:4",
@@ -5589,7 +5589,7 @@
    "id": "m00365",
    "kind": "msg",
    "jp": "今さら　そんなところへ行ってもしょうか゛ないて゛しょう。",
-   "en": "",
+   "en": "Going there now won't help.",
    "refs": [
     "scene48:7",
     "scene50:5"
@@ -5600,7 +5600,7 @@
    "id": "m00366",
    "kind": "msg",
    "jp": "由美子に聞いてみて下さい。",
-   "en": "",
+   "en": "Ask Yumiko.",
    "refs": [
     "scene48:8"
    ],
@@ -5610,7 +5610,7 @@
    "id": "m00367",
    "kind": "msg",
    "jp": "「誰？あなた。思いた゛した。いつもテニスしているのを見てた人ね」",
-   "en": "",
+   "en": "\"Who are you? Oh, I remember. You're the one who's always watching me play tennis.\"",
    "refs": [
     "scene48:9"
    ],
@@ -5620,7 +5620,7 @@
    "id": "m00368",
    "kind": "msg",
    "jp": "「ウルさいわねぇ。あっちへ行ってよ！」",
-   "en": "",
+   "en": "\"You're so annoying. Go away!\"",
    "refs": [
     "scene48:10"
    ],
@@ -5630,7 +5630,7 @@
    "id": "m00369",
    "kind": "msg",
    "jp": "由美子と話をつけなけりゃ、ひとりて゛出てもしかたありません。",
-   "en": "",
+   "en": "Unless you settle things with Yumiko, leaving alone won't accomplish anything.",
    "refs": [
     "scene48:11"
    ],
@@ -5640,7 +5640,7 @@
    "id": "m00370",
    "kind": "msg",
    "jp": "は゛しょをかんか゛えて下さい。",
-   "en": "",
+   "en": "Think about the location.",
    "refs": [
     "scene48:12",
     "scene50:8",
@@ -5652,7 +5652,7 @@
    "id": "m00371",
    "kind": "msg",
    "jp": "あなたか゛原先生のことを話すと、由美子の顔いろか゛かわりました。　何かありそうて゛す。　・・あなたは由美子といっしょにテ゛ィスコをて゛ました。",
-   "en": "",
+   "en": "When you mention Mr. Hara, Yumiko's expression changes. Something's going on. ...You leave the disco with Yumiko.",
    "refs": [
     "scene49:0"
    ],
@@ -5662,7 +5662,7 @@
    "id": "m00372",
    "kind": "msg",
    "jp": "にき゛やかな夜の街て゛す。",
-   "en": "",
+   "en": "It's a lively night town.",
    "refs": [
     "scene49:1",
     "scene50:1",
@@ -5674,7 +5674,7 @@
    "id": "m00373",
    "kind": "msg",
    "jp": "「ふふふ・・。　そうねぇ・・・。」　　？？　",
-   "en": "",
+   "en": "\"Heh heh heh... I suppose so...\" ?? ",
    "refs": [
     "scene49:3"
    ],
@@ -5684,7 +5684,7 @@
    "id": "m00374",
    "kind": "msg",
    "jp": "ホテルを探した方か゛いいんし゛ゃないて゛すか・・・？",
-   "en": "",
+   "en": "Wouldn't it be better to find a hotel...?",
    "refs": [
     "scene49:5"
    ],
@@ -5694,7 +5694,7 @@
    "id": "m00375",
    "kind": "msg",
    "jp": "「あたしと　あの先生のことしってるなんて、あなた　なかなかね」",
-   "en": "",
+   "en": "\"You know about me and that teacher. You're quite something.\"",
    "refs": [
     "scene49:6",
     "scene50:0"
@@ -5705,7 +5705,7 @@
    "id": "m00376",
    "kind": "msg",
    "jp": "「フフ・・・そう、直子はあたしか゛原先生とつきあっているのを　しってるものね。て゛も　と゛うしてつきあっているのかは、しらないて゛しょ。きっと」",
-   "en": "",
+   "en": "\"Heh... Right, Naoko knows I'm involved with Mr. Hara. But she doesn't know why, I'm sure.\"",
    "refs": [
     "scene49:7"
    ],
@@ -5715,7 +5715,7 @@
    "id": "m00377",
    "kind": "msg",
    "jp": "口説きか゛　うまくいってからにして下さい。",
-   "en": "",
+   "en": "Wait until your seduction succeeds.",
    "refs": [
     "scene49:8"
    ],
@@ -5725,7 +5725,7 @@
    "id": "m00378",
    "kind": "msg",
    "jp": "「何　考えてるのよ。このスケヘ゛」　見ぬかれていますよ。",
-   "en": "",
+   "en": "\"What are you thinking about? You pervert.\" She's seen right through you.",
    "refs": [
     "scene50:6",
     "scene51:6"
@@ -5736,7 +5736,7 @@
    "id": "m00379",
    "kind": "msg",
    "jp": "「世の中いろいろあるのよ。あなたなんかに関係ないわ」",
-   "en": "",
+   "en": "\"The world is full of all sorts of things. It's none of your business.\"",
    "refs": [
     "scene50:7",
     "scene51:7"
@@ -5747,7 +5747,7 @@
    "id": "m00380",
    "kind": "msg",
    "jp": "な、なんと、つこ゛うよくホテルか゛ありました。あなたと由美子は今、ホテルの前にいます。",
-   "en": "",
+   "en": "W-well, how convenient—there's a hotel. You and Yumiko are now in front of the hotel.",
    "refs": [
     "scene51:0"
    ],
@@ -5757,7 +5757,7 @@
    "id": "m00381",
    "kind": "msg",
    "jp": "あなたか゛と゛うするのか見ています。",
-   "en": "",
+   "en": "She's watching to see what you'll do.",
    "refs": [
     "scene51:2"
    ],
@@ -5767,7 +5767,7 @@
    "id": "m00382",
    "kind": "msg",
    "jp": "「いいわ・・・」",
-   "en": "",
+   "en": "\"Fine...\"",
    "refs": [
     "scene51:4"
    ],
@@ -5777,7 +5777,7 @@
    "id": "m00383",
    "kind": "msg",
    "jp": "目の前にありますよ。",
-   "en": "",
+   "en": "It's right in front of you.",
    "refs": [
     "scene51:5"
    ],
@@ -5787,7 +5787,7 @@
    "id": "m00384",
    "kind": "msg",
    "jp": "あなたはホテルに入ろうにも、お金をもっていません。　さっき街て゛せ゛んふ゛使ってしまったからて゛す。　これし゛ゃ由美子をホテルにつれこめませんね。　従って、これ以上ケ゛ームを続けることはて゛きません。",
-   "en": "",
+   "en": "You try to enter the hotel, but you don't have any money. Because you spent it all in town earlier. So you can't take Yumiko to a hotel. Therefore, you can no longer continue the game.",
    "refs": [
     "scene52:0"
    ],
@@ -5797,7 +5797,7 @@
    "id": "m00385",
    "kind": "msg",
    "jp": "あなたと由美子はホテルの中にいます。　ついにここまて゛来ました。",
-   "en": "",
+   "en": "You and Yumiko are inside the hotel. You've finally made it this far.",
    "refs": [
     "scene53:0"
    ],
@@ -5807,7 +5807,7 @@
    "id": "m00386",
    "kind": "msg",
    "jp": "こうして見ると、由美子はやっは゜りすは゛らしい女て゛す。　あなたの目は高い。　さあ、早く・・・・！",
-   "en": "",
+   "en": "Looking at her like this, Yumiko really is a wonderful woman. You have good taste. Now, hurry...!",
    "refs": [
     "scene53:1"
    ],
@@ -5817,7 +5817,7 @@
    "id": "m00387",
    "kind": "msg",
    "jp": "「そんなにあわてなくてもいいし゛ゃない。」",
-   "en": "",
+   "en": "\"There's no need to rush so much.\"",
    "refs": [
     "scene53:2"
    ],
@@ -5827,7 +5827,7 @@
    "id": "m00388",
    "kind": "msg",
    "jp": "そんなことをしてるハ゛アイし゛ゃありませんよ。",
-   "en": "",
+   "en": "This is no time for that.",
    "refs": [
     "scene53:3",
     "scene54:2",
@@ -5841,7 +5841,7 @@
    "id": "m00389",
    "kind": "msg",
    "jp": "「シャワーて゛も浴ひ゛てきたら。」",
-   "en": "",
+   "en": "\"Why don't you take a shower?\"",
    "refs": [
     "scene53:4"
    ],
@@ -5851,7 +5851,7 @@
    "id": "m00390",
    "kind": "msg",
    "jp": "「そんなこと　話したくないわ。」",
-   "en": "",
+   "en": "\"I don't want to talk about that.\"",
    "refs": [
     "scene53:5",
     "scene54:5",
@@ -5863,7 +5863,7 @@
    "id": "m00391",
    "kind": "msg",
    "jp": "せっかくここまて゛来たのに・・・。　もうひといき、か゛んは゛ってくた゛さい。",
-   "en": "",
+   "en": "You came all this way... Just one more push. Hang in there.",
    "refs": [
     "scene53:6",
     "scene54:6",
@@ -5876,7 +5876,7 @@
    "id": "m00392",
    "kind": "msg",
    "jp": "ま、まさか・・・！　そんなことて゛きませんよ。",
-   "en": "",
+   "en": "N-no way...! You can't do that.",
    "refs": [
     "scene53:7",
     "scene54:7"
@@ -5887,7 +5887,7 @@
    "id": "m00393",
    "kind": "msg",
    "jp": "「そんなにあわてなくてもいいし゛ゃない・・。　シャワーて゛も浴ひ゛てきたら。」",
-   "en": "",
+   "en": "\"There's no need to rush so much... Why don't you take a shower?\"",
    "refs": [
     "scene53:8"
    ],
@@ -5897,7 +5897,7 @@
    "id": "m00394",
    "kind": "msg",
    "jp": "今さら何を言ってるんて゛すか！",
-   "en": "",
+   "en": "What are you saying at a time like this!",
    "refs": [
     "scene53:9",
     "scene54:8"
@@ -5908,7 +5908,7 @@
    "id": "m00395",
    "kind": "msg",
    "jp": "シャワーを浴ひ゛て、由美子は今、ヘ゛ット゛の中にいます。　つ、ついに・・・・",
-   "en": "",
+   "en": "After taking a shower, Yumiko is now in bed. F-finally...",
    "refs": [
     "scene54:0"
    ],
@@ -5918,7 +5918,7 @@
    "id": "m00396",
    "kind": "msg",
    "jp": "チョーハツ的な目て゛こちらを見ています。か゛んは゛って下さい。",
-   "en": "",
+   "en": "She's looking at you with provocative eyes. Hang in there.",
    "refs": [
     "scene54:1"
    ],
@@ -5928,7 +5928,7 @@
    "id": "m00397",
    "kind": "msg",
    "jp": "「あ、ちょっと待ってよ、思い出したわ！　あなた　たしか久美とつきあってたわねぇ。　ウソ言ってもタ゛メよ。　あたし、そういうウワキモノって大きらい！」　あ、あ、ここまて゛来て・・・・　従って、これ以上ケ゛ームを続けることはて゛きません。",
-   "en": "",
+   "en": "\"Ah, wait a moment, I remember now! You were going out with Kumi, weren't you? Don't lie to me. I hate cheaters like that!\" A-ah, after coming all this way... Therefore, you can no longer continue the game.",
    "refs": [
     "scene54:3"
    ],
@@ -5938,7 +5938,7 @@
    "id": "m00398",
    "kind": "msg",
    "jp": "「と゛うしたの？　早くぅ・・・♡」",
-   "en": "",
+   "en": "\"What's wrong? Hurry...♡\"",
    "refs": [
     "scene54:4"
    ],
@@ -5948,7 +5948,7 @@
    "id": "m00399",
    "kind": "msg",
    "jp": "「あああ・・・・・んんっ！」　由美子は、いか゛いにもえやすいタイフ゜なのかもしれません。",
-   "en": "",
+   "en": "\"Aaaah...nnh!\" Yumiko might be the type who gets aroused easily.",
    "refs": [
     "scene55:0"
    ],
@@ -5958,7 +5958,7 @@
    "id": "m00400",
    "kind": "msg",
    "jp": "あなたのウテ゛の中て゛もた゛えています・・・。",
-   "en": "",
+   "en": "She's writhing in your arms...",
    "refs": [
     "scene55:1"
    ],
@@ -5968,7 +5968,7 @@
    "id": "m00401",
    "kind": "msg",
    "jp": "また゛イってはいけません。",
-   "en": "",
+   "en": "You can't come yet.",
    "refs": [
     "scene55:3"
    ],
@@ -5978,7 +5978,7 @@
    "id": "m00402",
    "kind": "msg",
    "jp": "「あっふう〜〜〜ん。うっうああぁ〜っ！！」",
-   "en": "",
+   "en": "\"Ahh fuu~n. Ugh uaaaah~!!\"",
    "refs": [
     "scene55:4",
     "scene56:5",
@@ -5990,7 +5990,7 @@
    "id": "m00403",
    "kind": "msg",
    "jp": "今さら何を言っとるんて゛すか！",
-   "en": "",
+   "en": "What are you saying at a time like this!",
    "refs": [
     "scene55:5",
     "scene56:8",
@@ -6002,7 +6002,7 @@
    "id": "m00404",
    "kind": "msg",
    "jp": "つ、ついに　やりました！　あなたは　目的を果たしました。　しかし、彼女の心か゛あなたのものになった訳て゛はないし、あのメモのことも　また゛わかっていませんね。なせ゛彼女か゛先生とつきあったかもしらないまま　ケ゛ームオーハ゛ーて゛す。",
-   "en": "",
+   "en": "Y-you finally did it! You've accomplished your goal. However, her heart isn't yours yet, and you still don't know about that memo. Without learning why she got involved with the teacher, it's game over.",
    "refs": [
     "scene56:0"
    ],
@@ -6012,7 +6012,7 @@
    "id": "m00405",
    "kind": "msg",
    "jp": "つ、ついに　やりました！　あなたは　目的を果たしました。",
-   "en": "",
+   "en": "Y-you finally did it! You've accomplished your goal.",
    "refs": [
     "scene56:1"
    ],
@@ -6022,7 +6022,7 @@
    "id": "m00406",
    "kind": "msg",
    "jp": "よーく見て下さい。由美子は今、あなたのものて゛す！",
-   "en": "",
+   "en": "Take a good look. Yumiko is yours now!",
    "refs": [
     "scene56:2"
    ],
@@ -6032,7 +6032,7 @@
    "id": "m00407",
    "kind": "msg",
    "jp": "「うああぁぁぁ〜〜っ　いいぃ〜〜っっ！」",
-   "en": "",
+   "en": "\"Uaaaah~! So good~!!\"",
    "refs": [
     "scene56:9"
    ],
@@ -6042,7 +6042,7 @@
    "id": "m00408",
    "kind": "msg",
    "jp": "「あたしね、　し゛つはあの先生をゆすってたのよ。　あの先生以前あたしを犯そうとしてね。　た゛から逆におと゛してやったのよ。　て゛も、そういう自分か゛いやになってね・・・　それて゛まい晩飲みあるいてたって訳よ。」",
-   "en": "",
+   "en": "\"You know, I was actually blackmailing that teacher. He tried to rape me before. So I turned the tables on him. But I started hating myself for it... That's why I've been drinking every night.\"",
    "refs": [
     "scene57:0"
    ],
@@ -6052,7 +6052,7 @@
    "id": "m00409",
    "kind": "msg",
    "jp": "あなたにすへ゛てを告白しています。",
-   "en": "",
+   "en": "She's confessing everything to you.",
    "refs": [
     "scene57:1"
    ],
@@ -6062,7 +6062,7 @@
    "id": "m00410",
    "kind": "msg",
    "jp": "今は彼女の話を聞いてあけ゛てくた゛さい。",
-   "en": "",
+   "en": "For now, please listen to her story.",
    "refs": [
     "scene57:3"
    ],
@@ -6072,7 +6072,7 @@
    "id": "m00411",
    "kind": "msg",
    "jp": "「あなたの他にももう一人、石井クンか゛そのことをしってるわ。」",
-   "en": "",
+   "en": "\"Besides you, there's one other person who knows about it—Ishii-kun.\"",
    "refs": [
     "scene57:6"
    ],
@@ -6082,7 +6082,7 @@
    "id": "m00412",
    "kind": "msg",
    "jp": "しかし、彼女の心か゛あなたのものになった訳て゛はないし、あのメモのことも　また゛わかっていませんね。なせ゛彼女か゛先生とつきあったかもしらないまま　ケ゛ームオーハ゛ーて゛す。",
-   "en": "",
+   "en": "However, her heart isn't yours yet, and you still don't know about that memo. Without learning why she got involved with the teacher, it's game over.",
    "refs": [
     "scene57:7"
    ],
@@ -6092,7 +6092,7 @@
    "id": "m00413",
    "kind": "msg",
    "jp": "後日、あなたは原先生を呼ひ゛出して、テッテー的にふ゛んなく゛ったのて゛す。　先生として、男としてなさけないて゛すからね。　原先生はその後、学校から姿を消しました。",
-   "en": "",
+   "en": "Later, you called out Mr. Hara and beat him thoroughly. As a teacher and as a man, he's pathetic. After that, Mr. Hara disappeared from the school.",
    "refs": [
     "scene58:0"
    ],
@@ -6102,7 +6102,7 @@
    "id": "m00414",
    "kind": "msg",
    "jp": "という訳て゛、由美子はあなたに大感シャ。すっかりあなたにホレてしまいました。　　そうて゛す！　あなたはついに大目的を果たしたのて゛す。　こ゛りっは゜！　えらいっ！！　と゛ーもおつかれさまて゛した。",
-   "en": "",
+   "en": "And so, Yumiko is deeply impressed by you. She's completely fallen for you. That's right! You've finally achieved your great goal. Bravo! Well done!! Thanks for all your hard work.",
    "refs": [
     "scene59:0"
    ],

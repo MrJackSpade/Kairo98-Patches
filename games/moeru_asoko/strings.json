@@ -6,7 +6,7 @@
    "id": "e00001",
    "kind": "dos",
    "jp": "起動用のメモリが足りません。必要空きメモリは約５６０ＫＢです。\n",
-   "en": "",
+   "en": "Not enough memory to start. Approximately 560KB of free memory is required.\n",
    "refs": [
     "exe:1fe52"
    ],
@@ -16,7 +16,7 @@
    "id": "e00002",
    "kind": "dos",
    "jp": "ハードディスクでコマンドラインから起動すると、このように何かと不都合が生じる場合\n",
-   "en": "",
+   "en": "Starting from the command line on a hard disk can cause various inconveniences like this,\n",
    "refs": [
     "exe:1fe92"
    ],
@@ -26,7 +26,7 @@
    "id": "e00003",
    "kind": "dos",
    "jp": "がありますので、フロッピーディスクから起動して実行をハードディスクに移す方法を\n",
-   "en": "",
+   "en": "so we recommend starting from a floppy disk and then transferring execution to the hard disk.\n",
    "refs": [
     "exe:1fee4"
    ],
@@ -36,7 +36,7 @@
    "id": "e00004",
    "kind": "dos",
    "jp": "お勧めします。\n",
-   "en": "",
+   "en": "We recommend this method.\n",
    "refs": [
     "exe:1ff34"
    ],
@@ -46,7 +46,7 @@
    "id": "e00005",
    "kind": "exe",
    "jp": "チー",
-   "en": "",
+   "en": "Chi",
    "refs": [
     "exe:200a6"
    ],
@@ -56,7 +56,7 @@
    "id": "e00006",
    "kind": "exe",
    "jp": "ポン",
-   "en": "",
+   "en": "Pon",
    "refs": [
     "exe:200b3"
    ],
@@ -66,7 +66,7 @@
    "id": "e00007",
    "kind": "exe",
    "jp": "カン",
-   "en": "",
+   "en": "Kan",
    "refs": [
     "exe:200c0",
     "exe:200da",
@@ -79,7 +79,7 @@
    "id": "e00008",
    "kind": "exe",
    "jp": "ロン",
-   "en": "",
+   "en": "Ron",
    "refs": [
     "exe:200cd"
    ],
@@ -89,7 +89,7 @@
    "id": "e00009",
    "kind": "exe",
    "jp": "リーチ",
-   "en": "",
+   "en": "Riichi",
    "refs": [
     "exe:20128"
    ],
@@ -99,7 +99,7 @@
    "id": "e00010",
    "kind": "exe",
    "jp": "ツモ",
-   "en": "",
+   "en": "Tsumo",
    "refs": [
     "exe:20135"
    ],
@@ -109,7 +109,7 @@
    "id": "e00011",
    "kind": "exe",
    "jp": "九種九牌",
-   "en": "",
+   "en": "Nine Tiles, Nine Kinds",
    "refs": [
     "exe:2015c"
    ],
@@ -119,7 +119,7 @@
    "id": "e00012",
    "kind": "exe",
    "jp": "つづける",
-   "en": "",
+   "en": "Continue",
    "refs": [
     "exe:20169"
    ],
@@ -129,7 +129,7 @@
    "id": "e00013",
    "kind": "exe",
    "jp": "やめる",
-   "en": "",
+   "en": "Quit",
    "refs": [
     "exe:20176"
    ],
@@ -139,7 +139,7 @@
    "id": "e00014",
    "kind": "exe",
    "jp": "おつかれさまでした",
-   "en": "",
+   "en": "Thanks for playing",
    "refs": [
     "exe:20ce6"
    ],
@@ -149,7 +149,7 @@
    "id": "e00015",
    "kind": "exe",
    "jp": "ディスクを抜いて、電源を切ってください",
-   "en": "",
+   "en": "Please remove the disk and turn off the power",
    "refs": [
     "exe:20cf9"
    ],
@@ -159,7 +159,7 @@
    "id": "e00016",
    "kind": "exe",
    "jp": "ＢＧＭ@@%.2d",
-   "en": "",
+   "en": "BGM@@%.2d",
    "refs": [
     "exe:20d20"
    ],
@@ -170,7 +170,7 @@
    "id": "e00017",
    "kind": "exe",
    "jp": "まだおあずけ",
-   "en": "",
+   "en": "Still waiting",
    "refs": [
     "exe:20d30"
    ],
@@ -180,7 +180,7 @@
    "id": "e00018",
    "kind": "exe",
    "jp": "水着篇麻雀中",
-   "en": "",
+   "en": "Swimsuit Chapter - Mahjong in Progress",
    "refs": [
     "exe:20d46"
    ],
@@ -190,7 +190,7 @@
    "id": "e00019",
    "kind": "exe",
    "jp": "制服篇麻雀中",
-   "en": "",
+   "en": "Uniform Chapter - Mahjong in Progress",
    "refs": [
     "exe:20d53"
    ],
@@ -200,7 +200,7 @@
    "id": "e00020",
    "kind": "exe",
    "jp": "ＯＬ篇麻雀中",
-   "en": "",
+   "en": "OL Chapter - Mahjong in Progress",
    "refs": [
     "exe:20d60"
    ],
@@ -210,7 +210,7 @@
    "id": "e00021",
    "kind": "exe",
    "jp": "　Ｈシーン",
-   "en": "",
+   "en": "　H Scene",
    "refs": [
     "exe:20d6d"
    ],
@@ -220,7 +220,7 @@
    "id": "e00022",
    "kind": "exe",
    "jp": "@@自己紹介１",
-   "en": "",
+   "en": "@@Self-Introduction 1",
    "refs": [
     "exe:20d7a"
    ],
@@ -230,7 +230,7 @@
    "id": "e00023",
    "kind": "exe",
    "jp": "@@自己紹介２",
-   "en": "",
+   "en": "@@Self-Introduction 2",
    "refs": [
     "exe:20d87"
    ],
@@ -240,7 +240,7 @@
    "id": "e00024",
    "kind": "exe",
    "jp": "@@自己紹介３",
-   "en": "",
+   "en": "@@Self-Introduction 3",
    "refs": [
     "exe:20d94"
    ],
@@ -250,7 +250,7 @@
    "id": "e00025",
    "kind": "exe",
    "jp": "　タイトル",
-   "en": "",
+   "en": "　Title",
    "refs": [
     "exe:20da1"
    ],
@@ -260,7 +260,7 @@
    "id": "e00026",
    "kind": "exe",
    "jp": "ステージ選択",
-   "en": "",
+   "en": "Stage Select",
    "refs": [
     "exe:20dae"
    ],
@@ -270,7 +270,7 @@
    "id": "e00027",
    "kind": "exe",
    "jp": "ゲームオーバ",
-   "en": "",
+   "en": "Game Over",
    "refs": [
     "exe:20dbb"
    ],
@@ -280,7 +280,7 @@
    "id": "e00028",
    "kind": "exe",
    "jp": "エンディング",
-   "en": "",
+   "en": "Ending",
    "refs": [
     "exe:20dc8"
    ],
@@ -290,7 +290,7 @@
    "id": "e00029",
    "kind": "exe",
    "jp": "得点表-YOU１",
-   "en": "",
+   "en": "Score Table - YOU 1",
    "refs": [
     "exe:20dd5"
    ],
@@ -300,7 +300,7 @@
    "id": "e00030",
    "kind": "exe",
    "jp": "得点表-YOU２",
-   "en": "",
+   "en": "Score Table - YOU 2",
    "refs": [
     "exe:20de2"
    ],
@@ -310,7 +310,7 @@
    "id": "e00031",
    "kind": "exe",
    "jp": "得点表-COM１",
-   "en": "",
+   "en": "Score Table - COM 1",
    "refs": [
     "exe:20def"
    ],
@@ -320,7 +320,7 @@
    "id": "e00032",
    "kind": "exe",
    "jp": "得点表-COM２",
-   "en": "",
+   "en": "Score Table - COM 2",
    "refs": [
     "exe:20dfc"
    ],
@@ -330,7 +330,7 @@
    "id": "e00033",
    "kind": "exe",
    "jp": "ＣＯＭリーチ",
-   "en": "",
+   "en": "COM Riichi",
    "refs": [
     "exe:20e09"
    ],
@@ -340,7 +340,7 @@
    "id": "e00034",
    "kind": "exe",
    "jp": "ＹＯＵリーチ",
-   "en": "",
+   "en": "YOU Riichi",
    "refs": [
     "exe:20e16"
    ],
@@ -350,7 +350,7 @@
    "id": "e00035",
    "kind": "exe",
    "jp": "店頭デモ用１",
-   "en": "",
+   "en": "Store Demo 1",
    "refs": [
     "exe:20e23"
    ],
@@ -360,7 +360,7 @@
    "id": "e00036",
    "kind": "exe",
    "jp": "店頭デモ用２",
-   "en": "",
+   "en": "Store Demo 2",
    "refs": [
     "exe:20e30"
    ],
@@ -370,7 +370,7 @@
    "id": "e00037",
    "kind": "exe",
    "jp": "店頭デモ用３",
-   "en": "",
+   "en": "Store Demo 3",
    "refs": [
     "exe:20e3d"
    ],
@@ -380,7 +380,7 @@
    "id": "e00038",
    "kind": "dos",
    "jp": "このディレクトリに %s がありません。\n　カレントディレクトリを変更してください。\n",
-   "en": "",
+   "en": "%s is not in this directory.\n　Please change the current directory.\n",
    "refs": [
     "exe:20fe8"
    ],
@@ -391,7 +391,7 @@
    "id": "e00039",
    "kind": "exe",
    "jp": "ディスクが違います。",
-   "en": "",
+   "en": "Wrong disk.",
    "refs": [
     "exe:21039"
    ],
@@ -401,7 +401,7 @@
    "id": "e00040",
    "kind": "exe",
    "jp": "未定義エラー",
-   "en": "",
+   "en": "Undefined Error",
    "refs": [
     "exe:2106e"
    ],
@@ -411,7 +411,7 @@
    "id": "e00041",
    "kind": "exe",
    "jp": "ダブル立直",
-   "en": "",
+   "en": "Double Riichi",
    "refs": [
     "exe:214e6"
    ],
@@ -421,7 +421,7 @@
    "id": "e00042",
    "kind": "exe",
    "jp": "立直",
-   "en": "",
+   "en": "Riichi",
    "refs": [
     "exe:214f1"
    ],
@@ -431,7 +431,7 @@
    "id": "e00043",
    "kind": "exe",
    "jp": "一発",
-   "en": "",
+   "en": "Ippatsu",
    "refs": [
     "exe:214f6"
    ],
@@ -441,7 +441,7 @@
    "id": "e00044",
    "kind": "exe",
    "jp": "自摸和",
-   "en": "",
+   "en": "Tsumo",
    "refs": [
     "exe:214fb"
    ],
@@ -451,7 +451,7 @@
    "id": "e00045",
    "kind": "exe",
    "jp": "海底撈月",
-   "en": "",
+   "en": "Haitei Raoyue",
    "refs": [
     "exe:21502"
    ],
@@ -461,7 +461,7 @@
    "id": "e00046",
    "kind": "exe",
    "jp": "河底撈魚",
-   "en": "",
+   "en": "Houtei Raoyui",
    "refs": [
     "exe:2150b"
    ],
@@ -471,7 +471,7 @@
    "id": "e00047",
    "kind": "exe",
    "jp": "嶺上開花",
-   "en": "",
+   "en": "Rinshan Kaihou",
    "refs": [
     "exe:21514"
    ],
@@ -481,7 +481,7 @@
    "id": "e00048",
    "kind": "exe",
    "jp": "槍槓",
-   "en": "",
+   "en": "Chankan",
    "refs": [
     "exe:2151d"
    ],
@@ -491,7 +491,7 @@
    "id": "e00049",
    "kind": "exe",
    "jp": "飜牌",
-   "en": "",
+   "en": "Fanpai",
    "refs": [
     "exe:21522"
    ],
@@ -501,7 +501,7 @@
    "id": "e00050",
    "kind": "exe",
    "jp": "断公九",
-   "en": "",
+   "en": "Tanyao",
    "refs": [
     "exe:21527"
    ],
@@ -511,7 +511,7 @@
    "id": "e00051",
    "kind": "exe",
    "jp": "平和",
-   "en": "",
+   "en": "Pinfu",
    "refs": [
     "exe:2152e"
    ],
@@ -521,7 +521,7 @@
    "id": "e00052",
    "kind": "exe",
    "jp": "一盃口",
-   "en": "",
+   "en": "Iipeikou",
    "refs": [
     "exe:21533"
    ],
@@ -531,7 +531,7 @@
    "id": "e00053",
    "kind": "exe",
    "jp": "三色同順",
-   "en": "",
+   "en": "Sanshoku Doujun",
    "refs": [
     "exe:2153a"
    ],
@@ -541,7 +541,7 @@
    "id": "e00054",
    "kind": "exe",
    "jp": "一気通貫",
-   "en": "",
+   "en": "Ittsu",
    "refs": [
     "exe:21543"
    ],
@@ -551,7 +551,7 @@
    "id": "e00055",
    "kind": "exe",
    "jp": "全帯公",
-   "en": "",
+   "en": "Chanta",
    "refs": [
     "exe:2154c"
    ],
@@ -561,7 +561,7 @@
    "id": "e00056",
    "kind": "exe",
    "jp": "対々和",
-   "en": "",
+   "en": "Toitoi",
    "refs": [
     "exe:21553"
    ],
@@ -571,7 +571,7 @@
    "id": "e00057",
    "kind": "exe",
    "jp": "三暗刻",
-   "en": "",
+   "en": "San Ankou",
    "refs": [
     "exe:2155a"
    ],
@@ -581,7 +581,7 @@
    "id": "e00058",
    "kind": "exe",
    "jp": "三槓子",
-   "en": "",
+   "en": "San Kantsu",
    "refs": [
     "exe:21561"
    ],
@@ -591,7 +591,7 @@
    "id": "e00059",
    "kind": "exe",
    "jp": "三色同刻",
-   "en": "",
+   "en": "Sanshoku Doukou",
    "refs": [
     "exe:21568"
    ],
@@ -601,7 +601,7 @@
    "id": "e00060",
    "kind": "exe",
    "jp": "混老頭",
-   "en": "",
+   "en": "Honroutou",
    "refs": [
     "exe:21571"
    ],
@@ -611,7 +611,7 @@
    "id": "e00061",
    "kind": "exe",
    "jp": "小三元",
-   "en": "",
+   "en": "Shou Sangén",
    "refs": [
     "exe:21578"
    ],
@@ -621,7 +621,7 @@
    "id": "e00062",
    "kind": "exe",
    "jp": "七対子",
-   "en": "",
+   "en": "Chiitoitsu",
    "refs": [
     "exe:2157f"
    ],
@@ -631,7 +631,7 @@
    "id": "e00063",
    "kind": "exe",
    "jp": "純全帯公",
-   "en": "",
+   "en": "Junchan",
    "refs": [
     "exe:21586"
    ],
@@ -641,7 +641,7 @@
    "id": "e00064",
    "kind": "exe",
    "jp": "二盃口",
-   "en": "",
+   "en": "Ryanpeikou",
    "refs": [
     "exe:2158f"
    ],
@@ -651,7 +651,7 @@
    "id": "e00065",
    "kind": "exe",
    "jp": "混一色",
-   "en": "",
+   "en": "Honitsu",
    "refs": [
     "exe:21596"
    ],
@@ -661,7 +661,7 @@
    "id": "e00066",
    "kind": "exe",
    "jp": "清一色",
-   "en": "",
+   "en": "Chinitsu",
    "refs": [
     "exe:2159d"
    ],
@@ -671,7 +671,7 @@
    "id": "e00067",
    "kind": "exe",
    "jp": "ドラ",
-   "en": "",
+   "en": "Dora",
    "refs": [
     "exe:215a4"
    ],
@@ -681,7 +681,7 @@
    "id": "e00068",
    "kind": "exe",
    "jp": "四暗刻",
-   "en": "",
+   "en": "Suu Ankou",
    "refs": [
     "exe:215a9"
    ],
@@ -691,7 +691,7 @@
    "id": "e00069",
    "kind": "exe",
    "jp": "国士無双",
-   "en": "",
+   "en": "Kokushi Musou",
    "refs": [
     "exe:215b0"
    ],
@@ -701,7 +701,7 @@
    "id": "e00070",
    "kind": "exe",
    "jp": "九連宝燈",
-   "en": "",
+   "en": "Chuuren Poutou",
    "refs": [
     "exe:215b9"
    ],
@@ -711,7 +711,7 @@
    "id": "e00071",
    "kind": "exe",
    "jp": "緑一色",
-   "en": "",
+   "en": "Ryuuiisou",
    "refs": [
     "exe:215c2"
    ],
@@ -721,7 +721,7 @@
    "id": "e00072",
    "kind": "exe",
    "jp": "清老頭",
-   "en": "",
+   "en": "Chinroutou",
    "refs": [
     "exe:215c9"
    ],
@@ -731,7 +731,7 @@
    "id": "e00073",
    "kind": "exe",
    "jp": "大三元",
-   "en": "",
+   "en": "Daisangen",
    "refs": [
     "exe:215d0"
    ],
@@ -741,7 +741,7 @@
    "id": "e00074",
    "kind": "exe",
    "jp": "字一色",
-   "en": "",
+   "en": "Tsuuiisou",
    "refs": [
     "exe:215d7"
    ],
@@ -751,7 +751,7 @@
    "id": "e00075",
    "kind": "exe",
    "jp": "四槓子",
-   "en": "",
+   "en": "Suu Kantsu",
    "refs": [
     "exe:215de"
    ],
@@ -761,7 +761,7 @@
    "id": "e00076",
    "kind": "exe",
    "jp": "天和",
-   "en": "",
+   "en": "Tenhou",
    "refs": [
     "exe:215e5"
    ],
@@ -771,7 +771,7 @@
    "id": "e00077",
    "kind": "exe",
    "jp": "地和",
-   "en": "",
+   "en": "Chiihou",
    "refs": [
     "exe:215ea"
    ],
@@ -781,7 +781,7 @@
    "id": "e00078",
    "kind": "exe",
    "jp": "人和",
-   "en": "",
+   "en": "Renhou",
    "refs": [
     "exe:215ef"
    ],
@@ -791,7 +791,7 @@
    "id": "e00079",
    "kind": "exe",
    "jp": "小四喜",
-   "en": "",
+   "en": "Shou Suushi",
    "refs": [
     "exe:215f4"
    ],
@@ -801,7 +801,7 @@
    "id": "e00080",
    "kind": "exe",
    "jp": "大四喜",
-   "en": "",
+   "en": "Daisuushi",
    "refs": [
     "exe:215fb"
    ],
@@ -811,7 +811,7 @@
    "id": "e00081",
    "kind": "exe",
    "jp": "大車輪",
-   "en": "",
+   "en": "Dai Sharin",
    "refs": [
     "exe:21602"
    ],
@@ -821,7 +821,7 @@
    "id": "e00082",
    "kind": "exe",
    "jp": "十三不搭",
-   "en": "",
+   "en": "Juusan Poutou",
    "refs": [
     "exe:21609"
    ],
@@ -831,7 +831,7 @@
    "id": "e00083",
    "kind": "exe",
    "jp": "流し満貫",
-   "en": "",
+   "en": "Nagashi Mangan",
    "refs": [
     "exe:21612"
    ],
@@ -841,7 +841,7 @@
    "id": "e00084",
    "kind": "exe",
    "jp": "東",
-   "en": "",
+   "en": "East",
    "refs": [
     "exe:21804",
     "exe:21850"
@@ -852,7 +852,7 @@
    "id": "e00085",
    "kind": "exe",
    "jp": "南",
-   "en": "",
+   "en": "South",
    "refs": [
     "exe:21807",
     "exe:21853"
@@ -863,7 +863,7 @@
    "id": "e00086",
    "kind": "exe",
    "jp": "西",
-   "en": "",
+   "en": "West",
    "refs": [
     "exe:2180a"
    ],
@@ -873,7 +873,7 @@
    "id": "e00087",
    "kind": "exe",
    "jp": "北",
-   "en": "",
+   "en": "North",
    "refs": [
     "exe:2180d"
    ],
@@ -883,7 +883,7 @@
    "id": "e00088",
    "kind": "exe",
    "jp": "東一",
-   "en": "",
+   "en": "East 1",
    "refs": [
     "exe:21810",
     "exe:21856"
@@ -894,7 +894,7 @@
    "id": "e00089",
    "kind": "exe",
    "jp": "東二",
-   "en": "",
+   "en": "East 2",
    "refs": [
     "exe:21815",
     "exe:2185b"
@@ -905,7 +905,7 @@
    "id": "e00090",
    "kind": "exe",
    "jp": "東三",
-   "en": "",
+   "en": "East 3",
    "refs": [
     "exe:2181a",
     "exe:21860"
@@ -916,7 +916,7 @@
    "id": "e00091",
    "kind": "exe",
    "jp": "東四",
-   "en": "",
+   "en": "East 4",
    "refs": [
     "exe:2181f",
     "exe:21865"
@@ -927,7 +927,7 @@
    "id": "e00092",
    "kind": "exe",
    "jp": "南一",
-   "en": "",
+   "en": "South 1",
    "refs": [
     "exe:21824",
     "exe:2186a"
@@ -938,7 +938,7 @@
    "id": "e00093",
    "kind": "exe",
    "jp": "南二",
-   "en": "",
+   "en": "South 2",
    "refs": [
     "exe:21829",
     "exe:2186f"
@@ -949,7 +949,7 @@
    "id": "e00094",
    "kind": "exe",
    "jp": "南三",
-   "en": "",
+   "en": "South 3",
    "refs": [
     "exe:2182e",
     "exe:21874"
@@ -960,7 +960,7 @@
    "id": "e00095",
    "kind": "exe",
    "jp": "南四",
-   "en": "",
+   "en": "South 4",
    "refs": [
     "exe:21833",
     "exe:21879"
@@ -971,7 +971,7 @@
    "id": "e00096",
    "kind": "exe",
    "jp": "%s局",
-   "en": "",
+   "en": "%s Round",
    "refs": [
     "exe:21838",
     "exe:2187e",
@@ -984,7 +984,7 @@
    "id": "e00097",
    "kind": "exe",
    "jp": "点",
-   "en": "",
+   "en": "Points",
    "refs": [
     "exe:2184a",
     "exe:218b9",
@@ -997,7 +997,7 @@
    "id": "e00098",
    "kind": "exe",
    "jp": "チョンボ",
-   "en": "",
+   "en": "Chombo",
    "refs": [
     "exe:21883"
    ],
@@ -1007,7 +1007,7 @@
    "id": "e00099",
    "kind": "exe",
    "jp": "フリテンチョンボ",
-   "en": "",
+   "en": "Furiten Chombo",
    "refs": [
     "exe:2188c"
    ],
@@ -1017,7 +1017,7 @@
    "id": "e00100",
    "kind": "exe",
    "jp": "あなたのステハイ",
-   "en": "",
+   "en": "Your Steal Tile",
    "refs": [
     "exe:2189d"
    ],
@@ -1027,7 +1027,7 @@
    "id": "e00101",
    "kind": "exe",
    "jp": "%d飜",
-   "en": "",
+   "en": "%d Han",
    "refs": [
     "exe:218ae"
    ],
@@ -1038,7 +1038,7 @@
    "id": "e00102",
    "kind": "exe",
    "jp": "符",
-   "en": "",
+   "en": "Fu",
    "refs": [
     "exe:218b3"
    ],
@@ -1048,7 +1048,7 @@
    "id": "e00103",
    "kind": "exe",
    "jp": "飜",
-   "en": "",
+   "en": "Han",
    "refs": [
     "exe:218b6"
    ],
@@ -1058,7 +1058,7 @@
    "id": "e00104",
    "kind": "exe",
    "jp": "荒牌",
-   "en": "",
+   "en": "Exhaustive Draw",
    "refs": [
     "exe:21906"
    ],
@@ -1068,7 +1068,7 @@
    "id": "e00105",
    "kind": "exe",
    "jp": "四開槓",
-   "en": "",
+   "en": "Four Kans",
    "refs": [
     "exe:2190b"
    ],
@@ -1078,7 +1078,7 @@
    "id": "e00106",
    "kind": "exe",
    "jp": "九種公九牌倒牌",
-   "en": "",
+   "en": "Nine Kinds, Nine Tiles - Abortive Draw",
    "refs": [
     "exe:21912"
    ],
