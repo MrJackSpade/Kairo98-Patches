@@ -431,5 +431,10 @@
   "remarks": [
    "Not reached in this test: saving and loading, the music test, the credits, the chapters past the first scene, the disk prompt (both disks are in their drives)."
   ]
+ },
+ "cal_ii": {
+  "remarks": [
+   "Not reached in this test: choices past the first scene, saving and loading, the music test, the credits, disks C and D's scenes, the disk prompt."
+  ]
  }
 }

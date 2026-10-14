@@ -40086,15 +40086,37 @@
      "path": "Cal II\\Cal II [FD]\\Cal II (Disk D).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/cal_ii (patcher working, machine translation in progress)",
+     "url": "../games/cal_ii/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4835",
+     "url": "https://vndb.org/v4835",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8589",
+     "url": "https://vndb.org/v8589",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8999",
+     "url": "https://vndb.org/v8999",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17487 (erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "BirdySoft.zip/Cal III Kanketsuhen",

@@ -78,5 +78,16 @@ class AdosDisk:
         e = struct.pack("<HBHB", len(data) & 0xFFFF, len(data) >> 16, start, need) + b"\0\0"
         self.raw[DIR + 8 * n:DIR + 8 * n + 8] = e
 
+    def write_many(self, files):
+        """Several files at once ({number: bytes}): their old sectors freed first, then each written in
+        the first free run long enough (the largest first), so they can use one another's room."""
+        for n in files:
+            old = self.entry(n)
+            if old:
+                self.raw[old[1] * SECTOR:(old[1] + old[2]) * SECTOR] = bytes(old[2] * SECTOR)
+                self.raw[DIR + 8 * n:DIR + 8 * n + 8] = FREE
+        for n in sorted(files, key=lambda k: -len(files[k])):
+            self.write(n, files[n])
+
     def save(self, path):
         open(path, "wb").write(bytes(self.raw))

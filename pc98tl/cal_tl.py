@@ -43,11 +43,11 @@ def _disks(cfg, src):
     return [AdosDisk(src)] + [AdosDisk(os.path.join(base, n)) for n in cfg.get("disks", [])]
 
 
-def units(s):
+def units(s, gram=None):
     """[(kind, ref place, item, start, end, prefix)] of a script's text: lines' bodies, choices' items,
     names."""
     out = []
-    for kind, a, e in C.tokens(s):
+    for kind, a, e in C.tokens(s, gram):
         if kind == "text":
             pre, body, _suf = C.text_parts(s, a, e)
             if C.has_japanese(body):
@@ -71,9 +71,10 @@ def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
     disk = _disks(cfg, src)[0]
     merged, order = {}, []
+    gram = C.grammar(disk.read(cfg["program"]))
     for n in cfg["scripts"]:
         s = disk.read(n)
-        for kind, a, k, x, y, _pre in units(s):
+        for kind, a, k, x, y, _pre in units(s, gram):
             jp = C.show(s[x:y])
             key = (kind, jp)
             ref = _ref(n, a, k)
@@ -125,7 +126,8 @@ TOKEN = re.compile(r"\{[A-Z]\}|\{c[0-7]\}")
 
 
 def _visible(word):
-    return len(TOKEN.sub("", word))
+    """Cells a word takes: a name the game puts in counted at a name's most (16), a colour none."""
+    return len(TOKEN.sub("", word)) + NAME_MAX * len(re.findall(r"\{[A-Z]\}", word))
 
 
 def wrap(text, width, first):
@@ -196,11 +198,11 @@ def _pseudo(e):
     return pseudo(e["id"], 2 * len(jp))[:CHOICE_MAX]
 
 
-def build_script(s, n, by_ref, ids, warn):
+def build_script(s, n, by_ref, ids, warn, gram=None):
     """The script with its English."""
     out = bytearray()
     rows = 0
-    for kind, a, e in C.tokens(s):
+    for kind, a, e in C.tokens(s, gram):
         if kind == "cmd" and s[a] == 0x1D:
             rows = 0
         if kind == "text":
@@ -263,16 +265,18 @@ def run_patch(here, src, dst, mode="en"):
             if text:
                 by_ref[r] = text
     warn = []
-    built = {n: build_script(a.read(n), n, by_ref, ids, warn) for n in cfg["scripts"]}
+    prog0 = a.read(cfg["program"])
+    gram, base = C.grammar(prog0), C.script_base(prog0)
+    to_b = cfg.get("scripts_disk", "B") == "B"
+    target = b if to_b else a
+    built = {n: build_script(a.read(n), n, by_ref, ids, warn, gram) for n in cfg["scripts"]}
     if any(built[n] != a.read(n) for n in built):
-        limit = C.buffer_sectors(None) * 1024
-        spare = [n for n in range(0x10, 0x100) if n not in built and not a.entry(n) and not b.entry(n)]
+        limit = C.buffer_sectors(prog0) * 1024
+        spare = [n for n in range(base, 0x100) if n not in built and not a.entry(n) and not b.entry(n)]
         out = {}
         for n, data in built.items():
-            parts = C.split(n, data, limit, spare)
-            out.update(parts)
-        for n, data in sorted(out.items()):
-            b.write(n, data)
+            out.update(C.split(n, data, limit, spare, base, gram))
+        target.write_many(out)
         prog = bytearray(a.read(cfg["program"]))
         for x, y in C.program_strings(bytes(prog)):
             en = by_ref.get("P:%04x" % x)
@@ -298,7 +302,7 @@ def run_patch(here, src, dst, mode="en"):
                 C.DISK_PROMPT[30:32] + C.encode_pairs(segs[2][0], 18)
             kern[k:k + len(C.DISK_PROMPT)] = out
         a.write(cfg["kernel"], bytes(kern))
-        prog, addr = C.patch_program(bytes(prog))
+        prog, addr = C.patch_program(bytes(prog), disk_b=to_b)
         a.write(cfg["program"], prog)
         a.write(cfg["kernel"], C.patch_kernel(a.read(cfg["kernel"]), addr))
     for w_ in dict.fromkeys(warn):

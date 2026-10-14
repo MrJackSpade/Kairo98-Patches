@@ -2413,9 +2413,12 @@ def cal_notes(name, cfg, doc, adult, clear, tests, extra):
             "character and writes it as one half-width cell of the text layer; the kernel's character drawing is "
             "made to call the same helper, which draws two letters in one 16-dot cell (menus, choices, the name "
             "prompt, the program's strings, from the BIOS's 8x16 font).",
-            "* The scripts are written to disk B, where there is room, and the program reads them there.  A script "
-            "longer than the moved buffer (23 sectors) is split where nothing is open, its rest a script of its "
-            "own the first part goes to.",
+            ("* The scripts are written to disk B, where there is room, and the program reads them there.  "
+             if cfg.get("scripts_disk", "B") == "B" else
+             "* The scripts are written again on disk A, laid out anew in the room their old copies and the free "
+             "sectors make.  ") +
+            "A script longer than the moved buffer is split where nothing is open, its rest a script of its own "
+            "the first part goes to.",
             "* A message longer than the window's 4 rows is ended and continued after a click."]
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
@@ -2433,7 +2436,7 @@ def cal_notes(name, cfg, doc, adult, clear, tests, extra):
             "full-width cell).  In the prompt `{1}` and `{2}` are the disk's and the drive's letters: up to 10 "
             "letters before `{1}`, 18 between, 18 after.",
             "* English is ASCII letters, digits, space and `.,!?'\"-:;()&/%*+`; anything else is written as `?`.",
-            "* Disk B's free room holds the scripts' English: a build that does not fit is refused.",
+            "* The scripts' disk's free room holds their English: a build that does not fit is refused.",
             "* The disks have no file names (ADOS), so the image carries no MTL_NOTE.TXT; the machine-translation "
             "notice is this file and the patch's name."]
     out += ["", "## Not handled", "",

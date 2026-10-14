@@ -43,9 +43,11 @@ MAP = dict(zip(CHARS, CODES))
 UNMAP = {v: k for k, v in MAP.items()}
 
 
-def tokens(s):
+def tokens(s, gram=None):
     """[(kind, start, end)]: text (a line, its $ included), choice (03 n and its items), name (0D n ... !),
-    jump (FF EF / FF EE), cmd."""
+    jump (FF EF / FF EE), cmd.  gram: the program's commands' arguments (`grammar`; Cal's by default)."""
+    ff_args = gram["ff"] if gram else FF_ARGS
+    ctl_args = gram["ctl"] if gram else CTL_ARGS
     out, k, n = [], 0, len(s)
     while k < n:
         b = s[k]
@@ -54,7 +56,7 @@ def tokens(s):
             if x == 0xFF:
                 e = k + 3 + 3 * s[k + 2]
             else:
-                e = k + 2 + FF_ARGS.get(x, 0)
+                e = k + 2 + ff_args.get(x, 0)
             out.append(("jump" if x in (0xEF, 0xEE) else "cmd", k, e))
             k = e
         elif b == 0x03:
@@ -73,7 +75,7 @@ def tokens(s):
             out.append(("name", k, j))
             k = j
         elif b < 0x20:
-            e = k + 1 + CTL_ARGS.get(b, 0)
+            e = k + 1 + ctl_args.get(b, 0)
             out.append(("cmd", k, e))
             k = e
         else:
@@ -477,18 +479,19 @@ def patch_program(prog, disk_b=True):  # noqa: C901
     g[call.start() + 1:call.start() + 4] = b"\xe8" + rel(call.start() + 1, ad["draw"])
     struct.pack_into("<H", g, buf.start(1), old + HELPER_ROOM)
     if disk_b:
-        ld = _one(LOAD_SIG, g, "script load")
-        g[ld.start() + 1] = 1
+        ld = _one(BASE_SIG, g, "script load")
+        g[ld.start() + 7] = 1
     g += bytes(old - len(g)) + helper
     return bytes(g), {k: ad[k] for k in ("g_conv", "g_row")}
 
 
 def buffer_sectors(prog):
     """Whole sectors the moved script buffer holds (up to the flags)."""
-    return (FLAGS - (BUFFER + HELPER_ROOM)) // 1024
+    old = struct.unpack("<H", _one(BUFFER_SIG, prog, "script buffer").group(1))[0]
+    return (flags_at(prog) - (old + HELPER_ROOM)) // 1024
 
 
-def split(n, data, limit, spare):
+def split(n, data, limit, spare, base=0x10, gram=None):
     """{script file: bytes}: the script whole, or (longer than `limit`) cut where nothing is open (no if,
     switch, while or loop, no choice menu waiting for its switch) right after a window is cleared, the
     first part ended by FF EB going to the rest, put in a spare script number (recursively)."""
@@ -496,7 +499,7 @@ def split(n, data, limit, spare):
         return {n: data}
     best = None
     depth, pending = 0, False
-    T = tokens(data)
+    T = tokens(data, gram)
     for i, (kind, a, e) in enumerate(T):
         if i and depth == 0 and not pending and T[i - 1][0] == "cmd" and data[T[i - 1][1]] == 0x1D \
                 and a + 3 <= limit:
@@ -516,8 +519,8 @@ def split(n, data, limit, spare):
     if best is None or not spare:
         raise SystemExit("script %02Xh: %d bytes, the buffer holds %d, and no place to split it" % (n, len(data), limit))
     m = spare.pop(0)
-    out = {n: data[:best] + bytes([0xFF, 0xEB, m - 0x10])}
-    out.update(split(m, data[best:], limit, spare))
+    out = {n: data[:best] + bytes([0xFF, 0xEB, m - base])}
+    out.update(split(m, data[best:], limit, spare, base, gram))
     return out
 
 
@@ -585,3 +588,52 @@ def encode_pairs(text, room):
     if len(b) > room:
         b = b[:room]
     return b + bytes([MAP[" "]]) * (room - len(b))
+
+
+# the interpreter's tables: cmp al, 20h / jb +3 / jmp text / shl ax, 1 / mov bx, ax / jmp [bx+table]; and
+# for FFh: lodsb / not al / shl ax, 1 / mov bx, ax / jmp [bx+table]
+CTL_TABLE_SIG = re.compile(rb"\x3c\x20\x72\x03\xe9..\xd1\xe0\x8b\xd8\xff\xa7(..)", re.S)
+FF_TABLE_SIG = re.compile(rb"\xac\xf6\xd0\xd1\xe0\x8b\xd8\xff\xa7(..)", re.S)
+# the flags: a command's mov bx, flags / add bx, ax / lodsb / mov [bx], al
+FLAGS_SIG = re.compile(rb"\xac\xbb(..)\x03\xd8\xac\x88\x07", re.S)
+# the script load's base: mov ah, 0 / add al, base / int 49h
+# (after mov word [x], 0)
+BASE_SIG = re.compile(rb"\xc7\x06..\x00\x00\xb4\x00\x04(.)\xcd\x49", re.S)
+
+
+def _handler_args(prog, a):
+    """Bytes a command's handler reads from the script before it jumps on: its lodsb and lodsw, and a
+    condition's 3 (mov cl, 1 / call)."""
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    n = 0
+    prev = None
+    for ins in Cs(CS_ARCH_X86, CS_MODE_16).disasm(prog[a:a + 80], a):
+        if ins.mnemonic == "lodsb":
+            n += 1
+        elif ins.mnemonic == "lodsw":
+            n += 2
+        elif ins.mnemonic == "call" and prev == ("mov", "cl, 1"):
+            n += 3
+        if ins.mnemonic in ("jmp", "ret"):
+            break
+        prev = (ins.mnemonic, ins.op_str)
+    return n
+
+
+def grammar(prog):
+    """{"ctl": {byte: arguments}, "ff": {code: arguments}} of a program's interpreter (03, 0D and FF FF
+    read lists of their own)."""
+    c = _one(CTL_TABLE_SIG, prog, "interpreter's command table")
+    f = _one(FF_TABLE_SIG, prog, "interpreter's FFh table")
+    ct, ft = struct.unpack("<H", c.group(1))[0], struct.unpack("<H", f.group(1))[0]
+    ctl = {i: _handler_args(prog, struct.unpack_from("<H", prog, ct + 2 * i)[0]) for i in range(0x20)}
+    ff = {0xFF - i: _handler_args(prog, struct.unpack_from("<H", prog, ft + 2 * i)[0]) for i in range(0x20)}
+    return {"ctl": ctl, "ff": ff}
+
+
+def flags_at(prog):
+    return struct.unpack("<H", _one(FLAGS_SIG, prog, "flags").group(1))[0]
+
+
+def script_base(prog):
+    return _one(BASE_SIG, prog, "script load").group(1)[0]

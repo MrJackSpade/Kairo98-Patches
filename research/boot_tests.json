@@ -4097,5 +4097,19 @@
    "The first scene: clicks through its messages, a choice picked twice",
    "OK: the messages in filler in the text window, half-width, broken between words; the choice menu's four options in filler; each pick's reply in filler, wrapped onto a second line"
   ]
+ ],
+ "cal_ii": [
+  [
+   "Boot from disks A and B: the title menu",
+   "OK: its three items in filler, two half-width letters a cell"
+  ],
+  [
+   "Start: the name entry screen, END clicked",
+   "OK: the prompt in filler; the grid as in the game"
+  ],
+  [
+   "The first scene: clicks through its messages",
+   "OK: the speaker's name and the messages in filler in the text window, half-width, broken between words, the window filled to its 4 rows and paged"
+  ]
  ]
 }
