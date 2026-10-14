@@ -1,0 +1,15 @@
+{
+ "title": "Wizard and the Princess",
+ "key": "Starcraft.zip/Wizard and the Princess",
+ "image": "Wizard and the Princess\\Wizard and the Princess (2HD conversion) [FD]\\Wizard and the Princess (2HD conversion).d88",
+ "encoding": "widry",
+ "data": [
+  "RDA",
+  "MDA"
+ ],
+ "engine": "WIDRY.ASM",
+ "loader": "M98",
+ "pool": "WIDRY.ENG",
+ "segment": 6144,
+ "boot_steps": "25:shot,1:key=76,1:key=79,1:key=79,1:key=75,1:enter,4:shot,1:key=21,1:key=71,1:key=81,1:enter,5:shot,1:key=74,1:key=82,1:enter,5:shot"
+}

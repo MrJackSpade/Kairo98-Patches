@@ -441,5 +441,10 @@
   "remarks": [
    "Not reached in this test: saving and loading, the music test, the endings."
   ]
+ },
+ "wizard_and_the_princess": {
+  "remarks": [
+   "Not reached in this test: the rooms past the second, saving and loading, the ending."
+  ]
  }
 }

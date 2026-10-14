@@ -4125,5 +4125,19 @@
    "The story: clicks through its narration, a choice menu, the speaker's lines",
    "OK: the narration and lines in filler, half-width, broken between words; the choice menu's four options in filler, one picked and its scene going on"
   ]
+ ],
+ "wizard_and_the_princess": [
+  [
+   "Boot from the floppy (BASIC, M98): the first room",
+   "OK: its description in filler, half-width, on the picture's text rows"
+  ],
+  [
+   "Type LOOK (not a word of the game's)",
+   "OK: the parser's reply in filler, broken between words, the description again in filler"
+  ],
+  [
+   "Kana lock, type ｷﾀ (north)",
+   "OK: the next room (the snake) with its description in filler; another command's reply in filler"
+  ]
  ]
 }

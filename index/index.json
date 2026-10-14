@@ -201634,15 +201634,27 @@
      "path": "Wizard and the Princess\\Wizard and the Princess [FD]\\Wizard and the Princess (Disk 2).d88"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/wizard_and_the_princess (patcher working, machine translation in progress)",
+     "url": "../games/wizard_and_the_princess/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v26973",
+     "url": "https://vndb.org/v26973",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r67506 (no erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Starcraft.zip/Yubiwa Monogatari (Lord of the Rings) Dai-1-kan - Tabi no Nakama",

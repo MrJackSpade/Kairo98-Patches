@@ -2762,5 +2762,18 @@
    "url": "https://vndb.org/v8999",
    "source": "VNDB"
   }
+ ],
+ "Starcraft.zip/Wizard and the Princess": [
+  {
+   "label": "This repo: games/wizard_and_the_princess (patcher working, machine translation in progress)",
+   "url": "../games/wizard_and_the_princess/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v26973",
+   "url": "https://vndb.org/v26973",
+   "source": "VNDB"
+  }
  ]
 }
