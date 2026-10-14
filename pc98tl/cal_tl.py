@@ -18,7 +18,7 @@ import re
 
 from .alice_sys2_tl import sha256
 from .alice_game import MTL_NOTE
-from .ados import AdosDisk
+from .ados import AdosDisk, PalDisk
 from . import cal as C
 from .text import pseudo
 
@@ -39,8 +39,10 @@ NOTE = {"msg": "a message: any length, broken between words at the window's widt
 
 
 def _disks(cfg, src):
+    """The game's disks: ADOS, or (game.json "fs": "pal") Pal's own."""
     base = os.path.dirname(src)
-    return [AdosDisk(src)] + [AdosDisk(os.path.join(base, n)) for n in cfg.get("disks", [])]
+    kind = PalDisk if cfg.get("fs") == "pal" else AdosDisk
+    return [kind(src)] + [kind(os.path.join(base, n)) for n in cfg.get("disks", [])]
 
 
 def units(s, gram=None):
@@ -256,7 +258,7 @@ def run_patch(here, src, dst, mode="en"):
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
     disks = _disks(cfg, src)
-    a, b = disks[0], disks[1]
+    a, b = disks[0], (disks[1] if len(disks) > 1 else disks[0])
     by_ref, ids = {}, {}
     for e in doc["strings"]:
         text = _pseudo(e) if mode == "pseudo" else e["en"]

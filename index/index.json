@@ -40742,15 +40742,37 @@
      "path": "Pal - Wonder Trip! Chizuru\\Pal - Wonder Trip! Chizuru [FD]\\Pal - Wonder Trip! Chizuru.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/pal (patcher working, machine translation in progress)",
+     "url": "../games/pal/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4835",
+     "url": "https://vndb.org/v4835",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8589",
+     "url": "https://vndb.org/v8589",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB v8999",
+     "url": "https://vndb.org/v8999",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18130 (erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "BirdySoft.zip/Pias",

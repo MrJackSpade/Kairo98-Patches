@@ -1,0 +1,17 @@
+{
+ "title": "Pal - Wonder Trip! Chizuru",
+ "key": "BirdySoft.zip/Pal - Wonder Trip! Chizuru",
+ "image": "Pal - Wonder Trip! Chizuru\\Pal - Wonder Trip! Chizuru [FD]\\Pal - Wonder Trip! Chizuru.hdm",
+ "encoding": "cal",
+ "fs": "pal",
+ "scripts": [
+  80,
+  81,
+  82,
+  83
+ ],
+ "scripts_disk": "A",
+ "program": 240,
+ "kernel": 0,
+ "boot_steps": "20:shot,1:lclick,10:mouse=137;121,1:mouse=138;121,1:shot,1:lclick,8:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot"
+}

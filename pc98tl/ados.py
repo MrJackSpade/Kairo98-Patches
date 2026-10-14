@@ -91,3 +91,57 @@ class AdosDisk:
 
     def save(self, path):
         open(path, "wb").write(bytes(self.raw))
+
+
+class PalDisk(AdosDisk):
+    """Pal - Wonder Trip! Chizuru's disk: the same layout and directory place, its entries the first
+    sector (a word), the size in 16-byte paragraphs (a word) and a 4-byte time; every entry a file."""
+
+    def __init__(self, path):
+        self.path = path
+        self.raw = bytearray(open(path, "rb").read())
+        self.sectors = len(self.raw) // SECTOR
+
+    def label(self):
+        return ""
+
+    def entry(self, n):
+        e = bytes(self.raw[DIR + 8 * n:DIR + 8 * n + 8])
+        if not any(e):
+            return None
+        start, paras = struct.unpack_from("<HH", e, 0)
+        return paras * 16, start, -(-paras // 64)
+
+    def write(self, n, data):
+        data = data + bytes(-len(data) % 16)
+        stamp = bytes(self.raw[DIR + 8 * n + 4:DIR + 8 * n + 8])
+        need = max(1, -(-len(data) // SECTOR))
+        old = self.entry(n)
+        if old and old[2] >= need:
+            start = old[1]
+        else:
+            used = self._used(skip=n)
+            start, run = None, 0
+            for s in range(RESERVED, self.sectors):
+                run = 0 if s in used else run + 1
+                if run == need:
+                    start = s - need + 1
+                    break
+            if start is None:
+                raise IOError("%s: no %d free sectors in a row for file %d (%d free in all)" % (
+                    self.path, need, n, self.sectors - len(used)))
+            if old:
+                self.raw[old[1] * SECTOR:(old[1] + old[2]) * SECTOR] = bytes(old[2] * SECTOR)
+        self.raw[start * SECTOR:(start + need) * SECTOR] = data + bytes(need * SECTOR - len(data))
+        self.raw[DIR + 8 * n:DIR + 8 * n + 8] = struct.pack("<HH", start, len(data) // 16) + stamp
+
+    def write_many(self, files):
+        stamps = {n: bytes(self.raw[DIR + 8 * n + 4:DIR + 8 * n + 8]) for n in files}
+        for n in files:
+            old = self.entry(n)
+            if old:
+                self.raw[old[1] * SECTOR:(old[1] + old[2]) * SECTOR] = bytes(old[2] * SECTOR)
+                self.raw[DIR + 8 * n:DIR + 8 * n + 8] = bytes(8)
+        for n in sorted(files, key=lambda k: -len(files[k])):
+            self.raw[DIR + 8 * n + 4:DIR + 8 * n + 8] = stamps[n]
+            self.write(n, files[n])

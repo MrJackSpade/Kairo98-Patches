@@ -405,6 +405,15 @@ CALL_SIG = re.compile(rb"\x58\xe8(..)\x32\xe4\xac\x0a\xc0\x79\x05", re.S)
 LOAD_SIG = re.compile(rb"\xb4\x00\x04\x10\xcd\x49")
 # the script buffer: mov bx, buffer / mov [script pointer], bx
 BUFFER_SIG = re.compile(rb"\xbb(..)\x89\x1e..\xa1..\xe8", re.S)
+# (Pal: mov bp, buffer / mov [script pointer], bp)
+BUFFER_SIG_PAL = re.compile(rb"\xbd(..)\x89\x2e..\xa1..\xe8", re.S)
+
+
+def _buffer(prog):
+    found = list(BUFFER_SIG.finditer(prog)) + list(BUFFER_SIG_PAL.finditer(prog))
+    if len(found) != 1:
+        raise SystemExit("Cal program: the script buffer's signature is found %d times, not once" % len(found))
+    return found[0]
 
 
 def _one(sig, data, what):
@@ -446,7 +455,7 @@ def patch_program(prog, disk_b=True):  # noqa: C901
     word = lambda m, k: struct.unpack("<H", m.group(k))[0]  # noqa: E731
     d = _one(DRAW_SIG, g, "character writer")
     a = _one(ADVANCE_SIG, g, "column's advance")
-    buf = _one(BUFFER_SIG, g, "script buffer")
+    buf = _buffer(g)
     old = word(buf, 1)
     if len(g) > old:
         raise SystemExit("Cal program: the program runs into its script buffer")
@@ -487,7 +496,7 @@ def patch_program(prog, disk_b=True):  # noqa: C901
 
 def buffer_sectors(prog):
     """Whole sectors the moved script buffer holds (up to the flags)."""
-    old = struct.unpack("<H", _one(BUFFER_SIG, prog, "script buffer").group(1))[0]
+    old = struct.unpack("<H", _buffer(prog).group(1))[0]
     return (flags_at(prog) - (old + HELPER_ROOM)) // 1024
 
 
@@ -599,6 +608,8 @@ FLAGS_SIG = re.compile(rb"\xac\xbb(..)\x03\xd8\xac\x88\x07", re.S)
 # the script load's base: mov ah, 0 / add al, base / int 49h
 # (after mov word [x], 0)
 BASE_SIG = re.compile(rb"\xc7\x06..\x00\x00\xb4\x00\x04(.)\xcd\x49", re.S)
+# (Pal: xor ah, ah / add ax, base / int 49h)
+BASE_SIG_PAL = re.compile(rb"\xc7\x06..\x00\x00\x32\xe4\x05(..)\xcd\x49", re.S)
 
 
 def _handler_args(prog, a):
@@ -636,4 +647,6 @@ def flags_at(prog):
 
 
 def script_base(prog):
-    return _one(BASE_SIG, prog, "script load").group(1)[0]
+    if BASE_SIG.search(prog):
+        return _one(BASE_SIG, prog, "script load").group(1)[0]
+    return struct.unpack("<H", _one(BASE_SIG_PAL, prog, "script load").group(1))[0]

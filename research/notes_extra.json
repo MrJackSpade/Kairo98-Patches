@@ -436,5 +436,10 @@
   "remarks": [
    "Not reached in this test: choices past the first scene, saving and loading, the music test, the credits, disks C and D's scenes, the disk prompt."
   ]
+ },
+ "pal": {
+  "remarks": [
+   "Not reached in this test: saving and loading, the music test, the endings."
+  ]
  }
 }

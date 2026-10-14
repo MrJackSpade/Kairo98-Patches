@@ -4111,5 +4111,19 @@
    "The first scene: clicks through its messages",
    "OK: the speaker's name and the messages in filler in the text window, half-width, broken between words, the window filled to its 4 rows and paged"
   ]
+ ],
+ "pal": [
+  [
+   "Boot from the floppy: the title menu, its first item clicked",
+   "OK: its three items in filler, two half-width letters a cell"
+  ],
+  [
+   "The name entry screen, END clicked",
+   "OK: the prompt in filler; the grid as in the game"
+  ],
+  [
+   "The story: clicks through its narration, a choice menu, the speaker's lines",
+   "OK: the narration and lines in filler, half-width, broken between words; the choice menu's four options in filler, one picked and its scene going on"
+  ]
  ]
 }
