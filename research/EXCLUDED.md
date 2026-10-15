@@ -157,6 +157,8 @@ in real gameplay. Two checks would answer it:
 2. Search the other scripts for calls into member 1.
 
 If the member is unreachable, the maintainer decides whether the game comes
-off this list. One option is leaving member 1 out of extraction. The images
+off this list. Options the maintainer raised: leave member 1 out of extraction,
+or have the patcher remove it or make it unreachable, so the English build
+cannot show the scene even if the original could. The images
 were restored to `E:\PC98\Dangel\` for this review (the CD version's `.hdi`
 and `.zip`).
