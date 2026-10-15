@@ -128,3 +128,35 @@ wasn't touched. Test builds in the session's scratch folder were deleted. The
 script had been extracted to `games/dangel/strings.json` before the finding;
 that file was deleted and never committed. The format work (`pc98tl/dangel.py`,
 `dangel_tl.py`) was kept out of the repo.
+
+### Review (2026-10-14): is the scene reachable in play?
+
+The maintainer played the CD version from a new start. The first scene after
+the prologue showed an adult protagonist. A recheck of the script placed that
+scene and the flagged scene apart:
+
+* **The scene the maintainer reached is `B.ARC` member 3.** It is the wake-up
+  ten years later: Anduke sees his adult body reflected in Alicia's eye
+  (strings 63 and 76). This member has no age mention, and the maintainer's
+  screenshots match it.
+* **The flagged scene is `B.ARC` member 1.** Its speakers are only 女, ？？ and
+  男の子. It contains the stated age (string 51) and the "child" exchange
+  (string 84). It ends with a flash of light and a scream (strings 105–106),
+  which is the event before the ten-year sleep. The findings above stand.
+* **It did not appear in the maintainer's playthrough.** The member has about
+  65 voiced lines, each waiting for a key, and none showed. All that appeared
+  between the prologue and the wake-up was a one-frame flash. The member may
+  play only under a condition (for example, a start-up menu choice or a flag),
+  or the game may never call it.
+
+**Status: still excluded.** The open question is whether member 1 is reachable
+in real gameplay. Two checks would answer it:
+
+1. Run the game under the execution watch on the archive loader and log which
+   members load from start-up through the wake-up. This needs no screenshots.
+2. Search the other scripts for calls into member 1.
+
+If the member is unreachable, the maintainer decides whether the game comes
+off this list. One option is leaving member 1 out of extraction. The images
+were restored to `E:\PC98\Dangel\` for this review (the CD version's `.hdi`
+and `.zip`).
