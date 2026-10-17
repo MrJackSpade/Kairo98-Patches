@@ -89813,15 +89813,27 @@
      "path": "Dies Irae\\Dies Irae [FD]\\Dies Irae (Disk 7).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dies_irae (patcher working, machine translation in progress)",
+     "url": "../games/dies_irae/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8797",
+     "url": "https://vndb.org/v8797",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r17870 (no erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "FamilySoft.zip/Idaten Ikase Otoko - Mugiko ni Aitai",

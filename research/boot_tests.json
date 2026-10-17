@@ -4209,5 +4209,19 @@
    "Walking the town to a battle (the Benz man), Return through two rounds",
    "OK: the battle's choices and messages in filler, the monster's name (kept in its buffer) and the damage numbers in the lines"
   ]
+ ],
+ "dies_irae": [
+  [
+   "Boot the hard disk: the opening, Return, the character select; S (start) clicked",
+   "OK: the title and the character select as in the original (their text is in the pictures)"
+  ],
+  [
+   "The first scene (the reception): the description and the talk with Marian, about 12 clicks",
+   "OK: every message in filler, half-width two letters a character, broken between words; a full window waits and goes on with the rest; the faces change between the lines"
+  ],
+  [
+   "The menu of places at the scene's end",
+   "OK: its choices in filler in the menu's box (20 letters each); picking one moves to the next scene, whose messages are in filler"
+  ]
  ]
 }

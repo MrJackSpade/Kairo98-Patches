@@ -461,5 +461,10 @@
   "remarks": [
    "Not reached in this test: the disk-change prompts (later in the story), the story's own save and load screens, the bonus game's shops and its ending, the end of the story."
   ]
+ },
+ "dies_irae": {
+  "remarks": [
+   "Not reached in this test: the save, load and system menus (000.CEN), the battles, the other two heroes' stories, the endings."
+  ]
  }
 }

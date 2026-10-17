@@ -2646,6 +2646,70 @@ def maxadv_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def dies_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "choice": "menu choices", "prog": "program messages"}
+    out = ["# %s%s (FamilySoft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "FamilySoft's own engine (`DIESIRAE\\DIES01.EXE`, started by `DIES98.COM` after the opening "
+            "`D_OP98.EXE`) under MS-DOS on the hard disk.  The scenario is text scripts (`*.CEN`, every byte "
+            "stored one less): commands, codes and Shift-JIS text read a byte at a time, the menus a line a "
+            "choice.  `pc98tl/dies.py` documents it, `pc98tl/dies_tl.py` the English.  A build with no "
+            "English leaves the disk as it is.", "",
+            "* English two letters a character, as two-byte codes of printable ASCII bytes the scripts' reader "
+            "takes as characters; the glyph routine is made to jump, before its CG ROM read, to a helper in a "
+            "segment put in before the data segment, which draws such a code from two 8x16 BIOS glyphs.",
+            "* The patcher breaks the English between words at the window's 24 characters (48 letters) with "
+            "the script's own new line; the program pages a full window (three lines) with its own wait.",
+            "* The script buffer is made larger (32 KB, from 17000 bytes): the program reads a scene's script "
+            "and the shared `000.CEN` into it together.",
+            "* The programs' DOS messages (disk errors, memory, the goodbye) are written in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m`): any length, broken between words at 48 letters and paged by the program; `\\n` "
+            "a new line.  Keep each `{Xn}` (a code of the script's: `{Fn}` a face, `{Cn}` a colour, `{Gn}` a "
+            "picture, `{Wn}` a wait...) where it stands: a code the Japanese does not have is refused by "
+            "string id.  A message runs on from the text before it when the script puts no break between them.",
+            "* Choices (`c`): one line in the menu's box, `max_cells` characters (20 letters); longer is cut "
+            "and reported by string id.",
+            "* A scene's script, with its English and `000.CEN`'s, must fit the script buffer (32 KB): a "
+            "build over it is refused with the script's name.",
+            "* Program messages (`e`): in place, `max_cells` letters; longer is cut and reported.",
+            "* English uses letters, digits and `.,'\"!?-:;()`; anything else is written as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the character select's names, the command buttons, "
+            "the speakers' names under their faces).",
+            "* The setup tools (`SETUPFD.BAT`, which makes a boot floppy, and the `HDSTART.EXE` it runs), "
+            "which the hard-disk image does not use."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def misty_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3685,14 +3749,14 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
-                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes}[cfg["encoding"]](
+                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

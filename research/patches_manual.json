@@ -2814,5 +2814,18 @@
    "url": "https://vndb.org/v5597",
    "source": "VNDB"
   }
+ ],
+ "FamilySoft.zip/Dies Irae": [
+  {
+   "label": "This repo: games/dies_irae (patcher working, machine translation in progress)",
+   "url": "../games/dies_irae/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8797",
+   "url": "https://vndb.org/v8797",
+   "source": "VNDB"
+  }
  ]
 }

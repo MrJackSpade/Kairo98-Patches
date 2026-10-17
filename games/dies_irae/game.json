@@ -1,0 +1,9 @@
+{
+ "title": "Dies Irae",
+ "key": "FamilySoft.zip/Dies Irae",
+ "image": "Dies Irae\\Dies Irae (FD version) [HD]\\Dies Irae (FD version).hdi",
+ "encoding": "dies",
+ "dir": "DIESIRAE",
+ "engine": "DIES01.EXE",
+ "boot_steps": "30:enter,30:mouse=-50;110,2:shot,1:lclick,5:mouse=-200;-150,2:lclick,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot,1:lclick,2:shot"
+}
