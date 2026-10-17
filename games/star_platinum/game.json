@@ -1,0 +1,9 @@
+{
+ "title": "Star Platinum",
+ "key": "Custom.zip/Star Platinum",
+ "image": "Star Platinum\\Star Platinum [HD]\\Star Platinum.hdi",
+ "encoding": "starpt",
+ "dir": "STAR_PT",
+ "engine": "SPV.BIN",
+ "text": "SCENARIO.GDM"
+}
