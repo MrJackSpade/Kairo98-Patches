@@ -1,0 +1,19 @@
+{
+ "title": "Zenith",
+ "key": "HimeyaSoft.zip/Zenith",
+ "image": "Zenith\\Zenith (FD version) [HD]\\Zenith (FD version).hdi",
+ "encoding": "cinema",
+ "program": "ZENITH/ZENITH.COM",
+ "archive": "ZENITH/A.FA1",
+ "window": [
+  64,
+  3
+ ],
+ "scripts": [
+  "ZT.BIN"
+ ],
+ "script_room": 65536,
+ "speaker_line": true,
+ "relocate_code": true,
+ "boot_steps": "25:shot,6:shot,2:enter,5:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot"
+}

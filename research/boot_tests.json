@@ -4287,5 +4287,15 @@
    "The opening and the first scene's messages (SCENE.SCN, about 5 clicks)",
    "OK: every message in filler, half-width, broken between words at 66 letters; three or four lines a page, the page mark after each, a click going on"
   ]
+ ],
+ "zenith": [
+  [
+   "Boot the hard disk (ZENITH.COM, the FD version's): the sound-source menu (FM), the title menu (START)",
+   "OK: both menus are the pictures' and as in the original"
+  ],
+  [
+   "The opening's first scene (ZT.BIN, about 6 keys)",
+   "OK: each speaker's name in filler on the first row, the speech in filler under it, half-width; a message the Japanese splits around a wait shown in its two pieces; the blinking key mark after each, a key going on; the pictures changing with the scene"
+  ]
  ]
 }

@@ -24,7 +24,11 @@ the buffer (op 03h: ESC.BIN at 7800h in Time Stripper Mako-chan), else before th
 paragraphs CINEMA.BIN gives it), a loaded file before the buffer's end: a longer build is refused
 and names the script (game.json "script_room", the room the notes give, is checked against it).
 A script that runs machine code from its own bytes (op 00h: AUTOEXEC.BIN) keeps its layout: a text
-that fits is written in its place, a longer one after the script's end.
+that fits is written in its place, a longer one after the script's end; with game.json
+"relocate_code" (Zenith's ZT.BIN, its machine code after its last op) it is written again like the
+others, the code moved with its own addresses (cinema.machine_code).  game.json "speaker_line"
+(Zenith): a message's first line is its speaker's name, a "name" string of its own; a message the
+Japanese splits around a command is a string a piece.
 """
 import fnmatch
 import json
@@ -37,6 +41,8 @@ from .text import pseudo, sjis_cols
 
 PREFIX = {"msg": "m", "name": "n", "item": "i", "engine": "e"}
 ENGINE_RE = re.compile(rb"((?:[\x81-\x9f\xe0-\xef][\x40-\x7e\x80-\xfc])+\.?)\r\n\$")
+# (game.json "speaker_line", Zenith's: a speaker's name on a message's first line, the speech after it)
+SPEAKER = re.compile(r"([^\n「」『』（）　]{1,8})\n(?=[「『（])")
 
 
 def _image(src):
@@ -54,6 +60,7 @@ class Game:
         self.flags, self.mems = cinema.members(vol.read(cfg["archive"]))
         by = {m[0]: m for m in self.mems}
         self.build = cinema.Build(cinema.data(by["CINEMA.BIN"]))
+        self.speaker_line = bool(cfg.get("speaker_line"))
         self.names = [m[0] for m in self.mems if any(fnmatch.fnmatchcase(m[0], p) for p in cfg["scripts"])]
         self.base = {}
         for n in self.names:
@@ -94,7 +101,7 @@ class Text:
     index of the piece)]: a message's text, or a speaker's name (a message of its own, or the run
     before the message's text in the same op), or an item."""
 
-    def __init__(self, name, a, kind, s, e, d, base, menu):
+    def __init__(self, name, a, kind, s, e, d, base, menu, speaker_line=False):
         self.a, self.kind, self.s, self.e, self.menu = a, kind, s, e, menu
         self.pieces = cinema.pieces(d[s - base:e - base])
         runs = [k for k, (c, v) in enumerate(self.pieces) if c == "t" and _visible(v)]
@@ -106,11 +113,28 @@ class Text:
             self.strings = [(ref, "item", k) for k in runs]
             return
         ends_page = any(c == "c" and v == b"\\f" for c, v in self.pieces)
+        if runs and speaker_line:
+            # (Zenith's: the speaker's name on the message's first line, the speech after it: the name a
+            # string of its own, the new line between them kept)
+            k0 = runs[0]
+            m = SPEAKER.match(self.pieces[k0][1])
+            if m:
+                self.pieces[k0:k0 + 1] = [("t", m.group(1)), ("c", b"\\n"), ("t", self.pieces[k0][1][m.end(1) + 1:])]
+                runs = [k0] + [k + 2 for k in runs]
+                self.strings = [(ref + ":name", "name", k0)]
+                rest = runs[1:]
+                for n, k in enumerate(rest):
+                    self.strings.append((ref if n == len(rest) - 1 else "%s:%d" % (ref, n + 1), "msg", k))
+                return
         if len(runs) == 1:
             t = self.pieces[runs[0]][1]
             self.strings = [(ref, "name" if _is_name(t) and not ends_page else "msg", runs[0])]
         elif len(runs) == 2 and _is_name(self.pieces[runs[0]][1]):
             self.strings = [(ref + ":name", "name", runs[0]), (ref, "msg", runs[1])]
+        elif runs and speaker_line:
+            # (a message with a command between its texts (Zenith's waits): a string each)
+            self.strings = [(ref if n == len(runs) - 1 else "%s:%d" % (ref, n + 1), "msg", k)
+                            for n, k in enumerate(runs)]
         elif runs:
             raise ValueError("%s: a message with commands between %d texts" % (ref, len(runs)))
 
@@ -118,7 +142,7 @@ class Text:
 def script_texts(game, name, d):
     """(Script, [Text]) in address order."""
     sc = game.script(name, d)
-    return sc, [Text(name, a, kind, s, e, d, sc.base, sc.items.get(a))
+    return sc, [Text(name, a, kind, s, e, d, sc.base, sc.items.get(a), game.speaker_line)
                 for a, kind, (s, e) in sorted(cinema.texts(sc), key=lambda t: t[2][0])]
 
 
@@ -325,8 +349,9 @@ def build_script(game, name, d, by_ref, ids, rooms, cfg, warn, ratio=1.0):
             pages[t.a] = [bytes(p) for p in out]
     if not new_text and not pages:
         return None
-    if any(op == 0x00 for op, _e in sc.ops.values()):
-        # (it runs machine code from its own bytes: its layout stays)
+    if any(op == 0x00 for op, _e in sc.ops.values()) and not cfg.get("relocate_code"):
+        # (it runs machine code from its own bytes: its layout stays; with game.json "relocate_code",
+        # Zenith's, the code after the last op is moved with the rest, its own addresses with it)
         return cinema.redirect(sc, new_text, pages, game.limit_of(name))
     return cinema.rebuild(sc, new_text, pages, game.limit_of(name))
 

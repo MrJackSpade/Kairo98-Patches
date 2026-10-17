@@ -1,0 +1,6641 @@
+{
+ "source_image_sha256": "b2e13b20c8a6c38b7a2bb953876b6ec6f4cbc4ceeec511d489c8b708d64f56dd",
+ "strings": [
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "　　　　　Ｂディスクを DRIVE 2 に入れて下さい。",
+   "en": "",
+   "refs": [
+    "ZT.BIN:012b"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "キャル",
+   "en": "",
+   "refs": [
+    "ZT.BIN:01df:name",
+    "ZT.BIN:029b:name",
+    "ZT.BIN:0346:name",
+    "ZT.BIN:041f:name",
+    "ZT.BIN:0505:name",
+    "ZT.BIN:0603:name",
+    "ZT.BIN:0703:name",
+    "ZT.BIN:07de:name",
+    "ZT.BIN:0884:name",
+    "ZT.BIN:08ee:name",
+    "ZT.BIN:0949:name",
+    "ZT.BIN:13cd:name",
+    "ZT.BIN:15b2:name",
+    "ZT.BIN:1614:name",
+    "ZT.BIN:169a:name",
+    "ZT.BIN:1e6a:name",
+    "ZT.BIN:2182:name",
+    "ZT.BIN:22ff:name",
+    "ZT.BIN:2519:name",
+    "ZT.BIN:259b:name",
+    "ZT.BIN:2626:name",
+    "ZT.BIN:2808:name",
+    "ZT.BIN:2862:name",
+    "ZT.BIN:28dc:name",
+    "ZT.BIN:2b10:name",
+    "ZT.BIN:2bc9:name",
+    "ZT.BIN:2c63:name",
+    "ZT.BIN:2ce5:name",
+    "ZT.BIN:2d2e:name",
+    "ZT.BIN:2dbc:name",
+    "ZT.BIN:2e4e:name",
+    "ZT.BIN:2f5f:name",
+    "ZT.BIN:2fcb:name",
+    "ZT.BIN:3035:name",
+    "ZT.BIN:30e1:name",
+    "ZT.BIN:3151:name",
+    "ZT.BIN:31e3:name",
+    "ZT.BIN:3228:name",
+    "ZT.BIN:32f6:name",
+    "ZT.BIN:3370:name",
+    "ZT.BIN:3430:name",
+    "ZT.BIN:3503:name",
+    "ZT.BIN:3598:name",
+    "ZT.BIN:3617:name",
+    "ZT.BIN:3667:name",
+    "ZT.BIN:66f3:name",
+    "ZT.BIN:67ea:name",
+    "ZT.BIN:689b:name",
+    "ZT.BIN:6bbd:name",
+    "ZT.BIN:6c3c:name",
+    "ZT.BIN:6ce1:name",
+    "ZT.BIN:6d67:name",
+    "ZT.BIN:6e60:name",
+    "ZT.BIN:6ecd:name",
+    "ZT.BIN:6fa3:name",
+    "ZT.BIN:7060:name",
+    "ZT.BIN:8100:name",
+    "ZT.BIN:813f:name",
+    "ZT.BIN:82bc:name",
+    "ZT.BIN:82f5:name",
+    "ZT.BIN:8479:name",
+    "ZT.BIN:84a8:name",
+    "ZT.BIN:84f9:name",
+    "ZT.BIN:8924:name",
+    "ZT.BIN:9101:name",
+    "ZT.BIN:9178:name",
+    "ZT.BIN:9776:name",
+    "ZT.BIN:983c:name",
+    "ZT.BIN:98da:name",
+    "ZT.BIN:99a6:name",
+    "ZT.BIN:9a7c:name",
+    "ZT.BIN:9b07:name",
+    "ZT.BIN:9bd1:name",
+    "ZT.BIN:9c44:name",
+    "ZT.BIN:9c92:name",
+    "ZT.BIN:9d3b:name",
+    "ZT.BIN:ab6a:name",
+    "ZT.BIN:abe2:name",
+    "ZT.BIN:ac73:name",
+    "ZT.BIN:ad08:name",
+    "ZT.BIN:b70a:name"
+   ],
+   "max_cells": 6,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "「ヒロミィー？",
+   "en": "",
+   "refs": [
+    "ZT.BIN:01df:1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "　ヒロミィー、いないのォ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:01df"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "ヒロミ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:021d:name",
+    "ZT.BIN:02ee:name",
+    "ZT.BIN:03c0:name",
+    "ZT.BIN:0490:name",
+    "ZT.BIN:0576:name",
+    "ZT.BIN:065c:name",
+    "ZT.BIN:06bc:name",
+    "ZT.BIN:073e:name",
+    "ZT.BIN:079f:name",
+    "ZT.BIN:0827:name",
+    "ZT.BIN:08af:name",
+    "ZT.BIN:0a78:name",
+    "ZT.BIN:0b2a:name",
+    "ZT.BIN:0bf4:name",
+    "ZT.BIN:0d2a:name",
+    "ZT.BIN:0e3c:name",
+    "ZT.BIN:0edb:name",
+    "ZT.BIN:0f60:name",
+    "ZT.BIN:0fcd:name",
+    "ZT.BIN:102b:name",
+    "ZT.BIN:10a3:name",
+    "ZT.BIN:1179:name",
+    "ZT.BIN:11f5:name",
+    "ZT.BIN:12cd:name",
+    "ZT.BIN:1378:name",
+    "ZT.BIN:14ad:name",
+    "ZT.BIN:150d:name",
+    "ZT.BIN:157f:name",
+    "ZT.BIN:15fb:name",
+    "ZT.BIN:1659:name",
+    "ZT.BIN:1736:name",
+    "ZT.BIN:17d6:name",
+    "ZT.BIN:1842:name",
+    "ZT.BIN:18e4:name",
+    "ZT.BIN:1980:name",
+    "ZT.BIN:1a96:name",
+    "ZT.BIN:1b79:name",
+    "ZT.BIN:1d0a:name",
+    "ZT.BIN:1dfe:name",
+    "ZT.BIN:1ead:name",
+    "ZT.BIN:1fe4:name",
+    "ZT.BIN:2062:name",
+    "ZT.BIN:20f6:name",
+    "ZT.BIN:215a:name",
+    "ZT.BIN:21d3:name",
+    "ZT.BIN:229f:name",
+    "ZT.BIN:2332:name",
+    "ZT.BIN:23d4:name",
+    "ZT.BIN:2458:name",
+    "ZT.BIN:24ee:name",
+    "ZT.BIN:2556:name",
+    "ZT.BIN:26ab:name",
+    "ZT.BIN:270d:name",
+    "ZT.BIN:27c9:name",
+    "ZT.BIN:283b:name",
+    "ZT.BIN:289d:name",
+    "ZT.BIN:2915:name",
+    "ZT.BIN:2ac3:name",
+    "ZT.BIN:2b39:name",
+    "ZT.BIN:2b5e:name",
+    "ZT.BIN:2c24:name",
+    "ZT.BIN:2cb0:name",
+    "ZT.BIN:2d5f:name",
+    "ZT.BIN:2df1:name",
+    "ZT.BIN:2e95:name",
+    "ZT.BIN:2f92:name",
+    "ZT.BIN:3000:name",
+    "ZT.BIN:307a:name",
+    "ZT.BIN:311c:name",
+    "ZT.BIN:3184:name",
+    "ZT.BIN:3263:name",
+    "ZT.BIN:329f:name",
+    "ZT.BIN:3343:name",
+    "ZT.BIN:3403:name",
+    "ZT.BIN:3479:name",
+    "ZT.BIN:34be:name",
+    "ZT.BIN:3526:name",
+    "ZT.BIN:3559:name",
+    "ZT.BIN:35c3:name",
+    "ZT.BIN:35e6:name",
+    "ZT.BIN:363a:name",
+    "ZT.BIN:36b1:name",
+    "ZT.BIN:3771:name",
+    "ZT.BIN:381e:name",
+    "ZT.BIN:38ff:name",
+    "ZT.BIN:39ba:name",
+    "ZT.BIN:3a69:name",
+    "ZT.BIN:3b02:name",
+    "ZT.BIN:3b9f:name",
+    "ZT.BIN:3c48:name",
+    "ZT.BIN:3c9c:name",
+    "ZT.BIN:3d8c:name",
+    "ZT.BIN:3e6a:name",
+    "ZT.BIN:3ed7:name",
+    "ZT.BIN:3f5e:name",
+    "ZT.BIN:4033:name",
+    "ZT.BIN:40e2:name",
+    "ZT.BIN:4203:name",
+    "ZT.BIN:4276:name",
+    "ZT.BIN:42f7:name",
+    "ZT.BIN:43d2:name",
+    "ZT.BIN:4416:name",
+    "ZT.BIN:458e:name",
+    "ZT.BIN:4627:name",
+    "ZT.BIN:46d4:name",
+    "ZT.BIN:4715:name",
+    "ZT.BIN:4754:name",
+    "ZT.BIN:47b6:name",
+    "ZT.BIN:482e:name",
+    "ZT.BIN:48f8:name",
+    "ZT.BIN:49cc:name",
+    "ZT.BIN:4a7a:name",
+    "ZT.BIN:4b20:name",
+    "ZT.BIN:4b49:name",
+    "ZT.BIN:4b86:name",
+    "ZT.BIN:4bb9:name",
+    "ZT.BIN:4bee:name",
+    "ZT.BIN:4c39:name",
+    "ZT.BIN:4d70:name",
+    "ZT.BIN:4e2d:name",
+    "ZT.BIN:4ecc:name",
+    "ZT.BIN:4f43:name",
+    "ZT.BIN:5015:name",
+    "ZT.BIN:50c6:name",
+    "ZT.BIN:515b:name",
+    "ZT.BIN:521f:name",
+    "ZT.BIN:52aa:name",
+    "ZT.BIN:533b:name",
+    "ZT.BIN:542a:name",
+    "ZT.BIN:54d9:name",
+    "ZT.BIN:55e2:name",
+    "ZT.BIN:5672:name",
+    "ZT.BIN:5765:name",
+    "ZT.BIN:581e:name",
+    "ZT.BIN:58c5:name",
+    "ZT.BIN:58fc:name",
+    "ZT.BIN:5945:name",
+    "ZT.BIN:59dc:name",
+    "ZT.BIN:5a61:name",
+    "ZT.BIN:5b0f:name",
+    "ZT.BIN:5ba9:name",
+    "ZT.BIN:5c00:name",
+    "ZT.BIN:5c2b:name",
+    "ZT.BIN:5c5e:name",
+    "ZT.BIN:5c99:name",
+    "ZT.BIN:5d2f:name",
+    "ZT.BIN:5e32:name",
+    "ZT.BIN:5ea4:name",
+    "ZT.BIN:5f2c:name",
+    "ZT.BIN:5fb6:name",
+    "ZT.BIN:6021:name",
+    "ZT.BIN:6087:name",
+    "ZT.BIN:6119:name",
+    "ZT.BIN:619d:name",
+    "ZT.BIN:6215:name",
+    "ZT.BIN:626f:name",
+    "ZT.BIN:62c7:name",
+    "ZT.BIN:6319:name",
+    "ZT.BIN:6355:name",
+    "ZT.BIN:63a7:name",
+    "ZT.BIN:63d8:name",
+    "ZT.BIN:6409:name",
+    "ZT.BIN:6469:name",
+    "ZT.BIN:6515:name",
+    "ZT.BIN:657b:name",
+    "ZT.BIN:65ff:name",
+    "ZT.BIN:668b:name",
+    "ZT.BIN:67b2:name",
+    "ZT.BIN:6845:name",
+    "ZT.BIN:6902:name",
+    "ZT.BIN:69b6:name",
+    "ZT.BIN:6a6f:name",
+    "ZT.BIN:6ada:name",
+    "ZT.BIN:6b07:name",
+    "ZT.BIN:6bdf:name",
+    "ZT.BIN:6c66:name",
+    "ZT.BIN:6d14:name",
+    "ZT.BIN:6db7:name",
+    "ZT.BIN:6e80:name",
+    "ZT.BIN:6f0c:name",
+    "ZT.BIN:6ff9:name",
+    "ZT.BIN:70ac:name",
+    "ZT.BIN:7202:name",
+    "ZT.BIN:72a1:name",
+    "ZT.BIN:7338:name",
+    "ZT.BIN:75f5:name",
+    "ZT.BIN:76a5:name",
+    "ZT.BIN:77c7:name",
+    "ZT.BIN:796b:name",
+    "ZT.BIN:7a26:name",
+    "ZT.BIN:7b53:name",
+    "ZT.BIN:7c51:name",
+    "ZT.BIN:800e:name",
+    "ZT.BIN:80a0:name",
+    "ZT.BIN:81af:name",
+    "ZT.BIN:8222:name",
+    "ZT.BIN:825c:name",
+    "ZT.BIN:83df:name",
+    "ZT.BIN:841a:name",
+    "ZT.BIN:8555:name",
+    "ZT.BIN:8596:name",
+    "ZT.BIN:85df:name",
+    "ZT.BIN:864b:name",
+    "ZT.BIN:8695:name",
+    "ZT.BIN:86d3:name",
+    "ZT.BIN:8718:name",
+    "ZT.BIN:8782:name",
+    "ZT.BIN:87e5:name",
+    "ZT.BIN:883b:name",
+    "ZT.BIN:88f6:name",
+    "ZT.BIN:89e3:name",
+    "ZT.BIN:8a57:name",
+    "ZT.BIN:8b6a:name",
+    "ZT.BIN:8c48:name",
+    "ZT.BIN:8d9e:name",
+    "ZT.BIN:8e8e:name",
+    "ZT.BIN:8f78:name",
+    "ZT.BIN:9040:name",
+    "ZT.BIN:90bb:name",
+    "ZT.BIN:9153:name",
+    "ZT.BIN:9375:name",
+    "ZT.BIN:941f:name",
+    "ZT.BIN:94ba:name",
+    "ZT.BIN:956a:name",
+    "ZT.BIN:9654:name",
+    "ZT.BIN:96c6:name",
+    "ZT.BIN:97d4:name",
+    "ZT.BIN:9880:name",
+    "ZT.BIN:9938:name",
+    "ZT.BIN:9a00:name",
+    "ZT.BIN:9b91:name",
+    "ZT.BIN:9cb7:name",
+    "ZT.BIN:9d8e:name",
+    "ZT.BIN:9dd6:name",
+    "ZT.BIN:9e8f:name",
+    "ZT.BIN:9ee3:name",
+    "ZT.BIN:9f5d:name",
+    "ZT.BIN:a100:name",
+    "ZT.BIN:a138:name",
+    "ZT.BIN:a17e:name",
+    "ZT.BIN:a210:name",
+    "ZT.BIN:a271:name",
+    "ZT.BIN:a2f9:name",
+    "ZT.BIN:a363:name",
+    "ZT.BIN:a3c5:name",
+    "ZT.BIN:a3f6:name",
+    "ZT.BIN:a4e9:name",
+    "ZT.BIN:a583:name",
+    "ZT.BIN:a66b:name",
+    "ZT.BIN:a729:name",
+    "ZT.BIN:a7d3:name",
+    "ZT.BIN:a88d:name",
+    "ZT.BIN:a8f9:name",
+    "ZT.BIN:a98d:name",
+    "ZT.BIN:a9fe:name",
+    "ZT.BIN:aa4c:name",
+    "ZT.BIN:aa9e:name",
+    "ZT.BIN:ab29:name",
+    "ZT.BIN:aba5:name",
+    "ZT.BIN:ac1b:name",
+    "ZT.BIN:acce:name",
+    "ZT.BIN:ad5d:name",
+    "ZT.BIN:adcb:name",
+    "ZT.BIN:aec5:name",
+    "ZT.BIN:af7d:name",
+    "ZT.BIN:b00b:name",
+    "ZT.BIN:b119:name",
+    "ZT.BIN:b1cd:name",
+    "ZT.BIN:b2b4:name",
+    "ZT.BIN:b305:name",
+    "ZT.BIN:b354:name",
+    "ZT.BIN:b3a1:name",
+    "ZT.BIN:b3da:name",
+    "ZT.BIN:b423:name",
+    "ZT.BIN:b486:name",
+    "ZT.BIN:b509:name",
+    "ZT.BIN:b59d:name",
+    "ZT.BIN:b5ed:name",
+    "ZT.BIN:b649:name",
+    "ZT.BIN:b6df:name",
+    "ZT.BIN:b767:name",
+    "ZT.BIN:b7c6:name",
+    "ZT.BIN:b81f:name",
+    "ZT.BIN:b8b0:name",
+    "ZT.BIN:b931:name",
+    "ZT.BIN:b986:name",
+    "ZT.BIN:b9f7:name",
+    "ZT.BIN:baaa:name",
+    "ZT.BIN:bae1:name",
+    "ZT.BIN:bb39:name",
+    "ZT.BIN:bb7e:name"
+   ],
+   "max_cells": 6,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "「ア‥‥‥アン‥‥‥‥‥‥アァ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:021d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "「ヒロミィ？",
+   "en": "",
+   "refs": [
+    "ZT.BIN:029b:1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "　どうしたのォ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:029b"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "「アッ‥‥‥‥‥‥ウゥ～ン」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:02ee"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "「おなか痛いのォ？",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0346:1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "　ねェ、大丈夫ゥ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0346"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "「ウゥ‥‥‥‥‥‥ア、アンッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:03c0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "「アアーッ！　い～けないんだァ～、そんなコトしちャ～」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:041f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "「だ、だって‥‥‥ンンッ‥‥‥き、気持ち良いんだもん！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0490"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "「‥‥‥いいなァ‥‥‥ヒロミばっかり、ずるいィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0505"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "「ダ、ダメよ‥‥‥ハァハァ‥‥‥こ、子供には‥‥‥まだ、早いわよ‥‥‥アンッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0576"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "「キャル、子供じゃないもん！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0603"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "「ア、アン！　いいッ！　いいのォ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:065c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "「ア‥‥‥アアン！　アッ‥‥‥‥‥‥アァ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:06bc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "「いいなァ‥‥‥気持ち良さそォ～」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0703"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "「アン！　アッ‥‥‥‥‥‥ウゥンッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:073e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "「ウ～ン‥‥‥‥‥‥アッ！　アッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:079f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "「すごォ～い‥‥‥そんなに擦って痛くないのォ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:07de"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "「ウゥン！　いいッ！　いいのッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0827"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0884",
+    "ZT.BIN:89fd",
+    "ZT.BIN:a9fe",
+    "ZT.BIN:aad5",
+    "ZT.BIN:aafe",
+    "ZT.BIN:b649"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "「いくッ！　いくッ！　いくゥゥゥゥゥゥゥゥ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:08af"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥ゴクリ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:08ee"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "エマ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:091a:name",
+    "ZT.BIN:0960:name",
+    "ZT.BIN:09ce:name",
+    "ZT.BIN:0ac0:name",
+    "ZT.BIN:0b90:name",
+    "ZT.BIN:0c9c:name",
+    "ZT.BIN:0d7a:name",
+    "ZT.BIN:0e85:name",
+    "ZT.BIN:0f3a:name",
+    "ZT.BIN:0f9f:name",
+    "ZT.BIN:1062:name",
+    "ZT.BIN:111a:name",
+    "ZT.BIN:1227:name",
+    "ZT.BIN:1291:name",
+    "ZT.BIN:1314:name",
+    "ZT.BIN:145f:name",
+    "ZT.BIN:1542:name",
+    "ZT.BIN:16b5:name",
+    "ZT.BIN:1783:name",
+    "ZT.BIN:17fd:name",
+    "ZT.BIN:1873:name",
+    "ZT.BIN:20c7:name",
+    "ZT.BIN:2377:name",
+    "ZT.BIN:241f:name",
+    "ZT.BIN:2483:name",
+    "ZT.BIN:2686:name",
+    "ZT.BIN:3731:name",
+    "ZT.BIN:37ba:name",
+    "ZT.BIN:386d:name",
+    "ZT.BIN:395a:name",
+    "ZT.BIN:3a21:name",
+    "ZT.BIN:3ac2:name",
+    "ZT.BIN:3b5d:name",
+    "ZT.BIN:3c02:name",
+    "ZT.BIN:3d1c:name",
+    "ZT.BIN:3e10:name",
+    "ZT.BIN:3eb3:name",
+    "ZT.BIN:3f20:name",
+    "ZT.BIN:3fd1:name",
+    "ZT.BIN:4096:name",
+    "ZT.BIN:41b3:name",
+    "ZT.BIN:425c:name",
+    "ZT.BIN:42d1:name",
+    "ZT.BIN:4340:name",
+    "ZT.BIN:45df:name",
+    "ZT.BIN:4690:name",
+    "ZT.BIN:47e3:name",
+    "ZT.BIN:487d:name",
+    "ZT.BIN:494d:name",
+    "ZT.BIN:49f3:name",
+    "ZT.BIN:4abf:name",
+    "ZT.BIN:78e4:name",
+    "ZT.BIN:798b:name",
+    "ZT.BIN:7e49:name",
+    "ZT.BIN:7e8f:name",
+    "ZT.BIN:7ede:name",
+    "ZT.BIN:7f4a:name",
+    "ZT.BIN:7f79:name",
+    "ZT.BIN:8032:name",
+    "ZT.BIN:834f:name",
+    "ZT.BIN:8393:name",
+    "ZT.BIN:89fd:name",
+    "ZT.BIN:8afd:name",
+    "ZT.BIN:8bc7:name",
+    "ZT.BIN:8d01:name",
+    "ZT.BIN:8e15:name",
+    "ZT.BIN:8edd:name",
+    "ZT.BIN:8fd5:name",
+    "ZT.BIN:aad5:name"
+   ],
+   "max_cells": 4,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "「いつまで、なにしてんのよッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:091a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "「え？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0949",
+    "ZT.BIN:2ce5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "「エエーイ！　おどきッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0960"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "「いーかげんにしろッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:09ce"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "「エ、エマッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0a78"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "「ちょっと、ヒロミッ！　いつまで盛ってるつもりッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0ac0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "「ひ、ひとを犬や猫みたいに言わないでよォ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0b2a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "「犬や猫は、そんなしょっちゅう盛ってないわよ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0b90"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "「だってしょうがないでしょう‥‥‥もう１ヶ月も彼氏と逢ってないのよ‥‥‥もう、身体が火照って、火照って‥‥‥フゥ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0bf4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "「フゥじゃないわよ！　そんなだらしのない穴にはね、シャンプーでも詰めときゃいいのよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0c9c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "「アッ！　ひっどーい！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0d2a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "「ああ、うるさい！　そんなコトより、とっととブリッジに来なさいよ！　レーダーに反応があったんだから！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0d7a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "「反応？　なんの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0e3c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "「来たら詳しく話すわよ！　いいから早く済ましてブリッジに来なさいよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0e85"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "「わ、分かったわよ‥‥‥もォ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0edb"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "「ああ、それから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0f3a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "「なに？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0f60"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "「ちゃんと手ェ、洗ってきてよね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0f9f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "「洗うわよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:0fcd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "「お待たせ、エマ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:102b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "「遅い、遅いッ！　いつまでオナニーしてんのよッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1062"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "「してないわよッ！　服着る時間くらい頂戴よね！　それに髪だってセットしないといけないんだし‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:10a3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "「なにがセットよ。こんな女所帯で、めかし込んで、いったい誰に見せるってゆーのよ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:111a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "「いいでしょう、もォ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1179"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "「そんなことより、何があったの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:11f5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "「ああ、そうそう‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1227"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "「それが‥‥‥レーダーが変なモンを拾ったのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1291"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "「変なモノ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:12cd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "「そう‥‥‥どうやら、漂流船みたいなんだけど‥‥‥もう少しで、カメラがとらえるはずよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1314"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "「事故かしら？　でも漂流船なんて、なんか幽霊船みたいで気味が悪いわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1378"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "「エェッ！？　幽霊ェ～！？　キャル、恐いィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:13cd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "「あぁ、うるさいッ！　映像、出るわよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:145f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "「こ、これは‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:14ad"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "「こ、これは‥‥‥貨物船‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:150d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "「エネルギー反応、無し。炉は完全に死んでるわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1542"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "「キャル、通信のほう、確認してみて」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:157f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "「ハ～イ‥‥‥えっとォ‥‥‥こうしてこうでェ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:15b2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "「どう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:15fb"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "「ウウン、全然ダメェ～。プンともツンとも言わないよォ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1614"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "「それを言うなら、ウンともスンともでしょう‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1659"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "「ブゥ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:169a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "「情報、出たわよ。船名はマーメイド号。土星の鉱山から地球へ向かう途中、消息を絶っているわね。５ヶ月前のことよ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:16b5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "「５ヶ月か‥‥‥だったら生存の確率は高いはずなんだけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1736"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "「熱反応は、無し。動体反応も、無し。生命反応も、これまた‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1783"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "「エマ？　どうしたの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:17d6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "「生命反応確認！　微弱だけど、生物がいる可能性があるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:17fd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00072",
+   "kind": "msg",
+   "jp": "「じゃあ、乗組員は無事ってことね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1842"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00073",
+   "kind": "msg",
+   "jp": "「さァ？　この生命センサーは、蚊やゴキブリ、それに植物にだって反応するから、乗組員とは限らないわよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1873"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00074",
+   "kind": "msg",
+   "jp": "「とにかく、反応がある以上、見過ごすわけにはいかないわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:18e4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00075",
+   "kind": "msg",
+   "jp": "「ノリコ、接舷の準備を‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1980"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "ノリコ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:19de:name",
+    "ZT.BIN:1af0:name",
+    "ZT.BIN:1c33:name",
+    "ZT.BIN:1ca0:name",
+    "ZT.BIN:1d70:name",
+    "ZT.BIN:1f15:name",
+    "ZT.BIN:20b0:name",
+    "ZT.BIN:2246:name",
+    "ZT.BIN:9db5:name",
+    "ZT.BIN:9e0d:name",
+    "ZT.BIN:9e58:name",
+    "ZT.BIN:9ebe:name",
+    "ZT.BIN:9f1c:name",
+    "ZT.BIN:a4c5:name",
+    "ZT.BIN:a559:name",
+    "ZT.BIN:a5f1:name",
+    "ZT.BIN:a6b3:name",
+    "ZT.BIN:a787:name",
+    "ZT.BIN:a84f:name",
+    "ZT.BIN:a8d9:name",
+    "ZT.BIN:a947:name",
+    "ZT.BIN:aa71:name",
+    "ZT.BIN:ae8d:name",
+    "ZT.BIN:af55:name",
+    "ZT.BIN:afdf:name",
+    "ZT.BIN:b091:name",
+    "ZT.BIN:b161:name",
+    "ZT.BIN:b219:name"
+   ],
+   "max_cells": 6,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00076",
+   "kind": "msg",
+   "jp": "「了解‥‥‥貨物船のエアロックは死んでいるから、ハッチへ直接、連結させるしかないわ。でも、規格がちょっと合わないみたい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:19de"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00077",
+   "kind": "msg",
+   "jp": "「その時は、いつもの様に強引にグイーンと‥‥‥ね？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1a96"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00078",
+   "kind": "msg",
+   "jp": "「ね、じゃないでしょう！　後で怒られるのは航海士である私なんですからね！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1af0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00079",
+   "kind": "msg",
+   "jp": "「まァまァ、そう興奮しないで‥‥‥‥‥‥お願い、ノリコォ‥‥‥愛してるからァ、ウ～ン」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1b79"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00080",
+   "kind": "msg",
+   "jp": "「もう、気持ち悪い！　私は、どうなっても知りませんからね！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1c33"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00081",
+   "kind": "msg",
+   "jp": "「左舷中央に接舷！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1ca0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00082",
+   "kind": "msg",
+   "jp": "「アラアラアラ‥‥‥今日は随分と荒っぽいわねェ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1d0a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00083",
+   "kind": "msg",
+   "jp": "「貨物船の真横につけたわよ。相対速度０。接舷準備完了‥‥‥始末書はヒロミ持ちですからね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1d70"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00084",
+   "kind": "msg",
+   "jp": "「わ、分かったわよォ、もう‥‥‥‥‥‥さーて、マーメイド号に乗り込むわよ。キャル、用意して」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1dfe"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00085",
+   "kind": "msg",
+   "jp": "「ハーイ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1e6a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00086",
+   "kind": "msg",
+   "jp": "「それから、ファル‥‥‥‥‥‥あれ？　ファルは？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1ead"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00087",
+   "kind": "msg",
+   "jp": "「あの娘なら、とっくに準備出来てるわよ‥‥‥ほら」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1f15"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "ファル",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1f9e:name",
+    "ZT.BIN:22c6:name",
+    "ZT.BIN:25d6:name",
+    "ZT.BIN:265d:name",
+    "ZT.BIN:26dc:name",
+    "ZT.BIN:2792:name",
+    "ZT.BIN:4cab:name",
+    "ZT.BIN:4de7:name",
+    "ZT.BIN:4e82:name",
+    "ZT.BIN:4f0b:name",
+    "ZT.BIN:4fdd:name",
+    "ZT.BIN:5082:name",
+    "ZT.BIN:5123:name",
+    "ZT.BIN:51e5:name",
+    "ZT.BIN:5278:name",
+    "ZT.BIN:5313:name",
+    "ZT.BIN:5396:name",
+    "ZT.BIN:5485:name",
+    "ZT.BIN:5560:name",
+    "ZT.BIN:563d:name",
+    "ZT.BIN:56e7:name",
+    "ZT.BIN:57d4:name",
+    "ZT.BIN:589d:name",
+    "ZT.BIN:59a2:name",
+    "ZT.BIN:5a2d:name",
+    "ZT.BIN:5ab2:name",
+    "ZT.BIN:6947:name",
+    "ZT.BIN:6a08:name",
+    "ZT.BIN:7131:name",
+    "ZT.BIN:723a:name",
+    "ZT.BIN:72e3:name",
+    "ZT.BIN:73a6:name",
+    "ZT.BIN:743b:name",
+    "ZT.BIN:7476:name",
+    "ZT.BIN:7524:name",
+    "ZT.BIN:7657:name",
+    "ZT.BIN:76f9:name",
+    "ZT.BIN:7839:name",
+    "ZT.BIN:7aae:name",
+    "ZT.BIN:7bab:name",
+    "ZT.BIN:7cbd:name",
+    "ZT.BIN:91d7:name",
+    "ZT.BIN:9206:name",
+    "ZT.BIN:926a:name",
+    "ZT.BIN:92b7:name",
+    "ZT.BIN:931c:name",
+    "ZT.BIN:939e:name",
+    "ZT.BIN:93d3:name",
+    "ZT.BIN:947e:name",
+    "ZT.BIN:9514:name",
+    "ZT.BIN:9608:name",
+    "ZT.BIN:969e:name",
+    "ZT.BIN:aafe:name"
+   ],
+   "max_cells": 6,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00088",
+   "kind": "msg",
+   "jp": "「ヒロミィー！　早く来ねェーと、さき行っちまうぞ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1f9e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00089",
+   "kind": "msg",
+   "jp": "「フフフ、相変わらずね、ファルは‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:1fe4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00090",
+   "kind": "msg",
+   "jp": "「準備ＯＫね。それじゃあ、ノリコ、エマ、後のコトは頼んだわよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2062"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00091",
+   "kind": "msg",
+   "jp": "「了解」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:20b0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00092",
+   "kind": "msg",
+   "jp": "「いいから、さっさと行きなさいよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:20c7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00093",
+   "kind": "msg",
+   "jp": "「ン‥‥‥‥‥‥オホン！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:20f6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00094",
+   "kind": "msg",
+   "jp": "「キャル、準備はいい？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:215a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00095",
+   "kind": "msg",
+   "jp": "「ハーイ！　いいでーす！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2182"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00096",
+   "kind": "msg",
+   "jp": "「よし！　これよりマーメイド号の船内調査を始める！　接舷開始！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:21d3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00097",
+   "kind": "msg",
+   "jp": "「接舷！　ハッチ開放！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2246"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00098",
+   "kind": "msg",
+   "jp": "「真っ暗ね‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:229f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00099",
+   "kind": "msg",
+   "jp": "「なんかバケモンでも、出そうな雰囲気だな」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:22c6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00100",
+   "kind": "msg",
+   "jp": "「ヤァ～ン！　キャル、恐いィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:22ff"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00101",
+   "kind": "msg",
+   "jp": "「もう、キャルを苛めないで‥‥‥エマ？　聞こえてる？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2332"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00102",
+   "kind": "msg",
+   "jp": "「はいはい、あんたたちの漫才なら、さっきからしっかりと聞こえてるわよ。感度良好」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2377"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00103",
+   "kind": "msg",
+   "jp": "「そう‥‥‥ところで、この貨物船、完全に死んじゃってるの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:23d4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00104",
+   "kind": "msg",
+   "jp": "「ちょっと待って、いま調べるわ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:241f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00105",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥どう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2458"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00106",
+   "kind": "msg",
+   "jp": "「貨物船のメイン・バッテリーが、まだ生きてるみたいね。こっちから遠隔操作で動力を入れてみるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2483"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00107",
+   "kind": "msg",
+   "jp": "「そう、お願い‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:24ee"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00108",
+   "kind": "msg",
+   "jp": "「ねェねェ、ヒロミィ～‥‥‥早く帰ろうよォ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2519"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00109",
+   "kind": "msg",
+   "jp": "「なに言ってんのよ！？　いま来たばっかりでしょう！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2556"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00110",
+   "kind": "msg",
+   "jp": "「だってェ～‥‥‥‥‥‥暗いの恐いんだもん」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:259b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00111",
+   "kind": "msg",
+   "jp": "「おめェー、よくそんなんで軍人なんかになれたもんだな、アァｯ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:25d6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00112",
+   "kind": "msg",
+   "jp": "「だってェ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2626"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00113",
+   "kind": "msg",
+   "jp": "「おッ！　ついたな‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:265d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00114",
+   "kind": "msg",
+   "jp": "「どう？　生き返った？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2686"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00115",
+   "kind": "msg",
+   "jp": "「ＯＫよ。バッチリ明るくなったわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:26ab"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00116",
+   "kind": "msg",
+   "jp": "「さァ、とっとと調べちまおうぜ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:26dc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00117",
+   "kind": "msg",
+   "jp": "「そうね。３人で分担して調べましょう。捜査ポイントは、コクピットとメイン・コンピュータ、それに貨物室と医療室ぐらいね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:270d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00118",
+   "kind": "msg",
+   "jp": "「じゃあ、オレは貨物室のほうを見てくる」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2792"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00119",
+   "kind": "msg",
+   "jp": "「頼むわ‥‥‥キャルはコクピットのほうを調べて」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:27c9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00120",
+   "kind": "msg",
+   "jp": "「エェ～！？　一人で行くのォ～！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2808"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00121",
+   "kind": "msg",
+   "jp": "「当たり前でしょう！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:283b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00122",
+   "kind": "msg",
+   "jp": "「やだ、やだッ！　ヒロミと一緒にいるゥ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2862"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00123",
+   "kind": "msg",
+   "jp": "「そんなこと言ってると、お尻ひっぱたくわよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:289d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00124",
+   "kind": "msg",
+   "jp": "「フェーン！　分かったよォ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:28dc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00125",
+   "kind": "msg",
+   "jp": "「フゥ‥‥‥それじゃあみんな、しっかり頼んだわよ。私は、この船のメイン・コンピュータを調べて来るから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2915"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "i00001",
+   "kind": "item",
+   "jp": "　セーブしない",
+   "en": "",
+   "refs": [
+    "ZT.BIN:29c0",
+    "ZT.BIN:7d0b",
+    "ZT.BIN:9fc2"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00002",
+   "kind": "item",
+   "jp": "　データ１にＳＡＶＥ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:29d1",
+    "ZT.BIN:7d1c",
+    "ZT.BIN:9fd3"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00003",
+   "kind": "item",
+   "jp": "　データ２にＳＡＶＥ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:29e8",
+    "ZT.BIN:7d33",
+    "ZT.BIN:9fea"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00004",
+   "kind": "item",
+   "jp": "　データ３にＳＡＶＥ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:29ff",
+    "ZT.BIN:7d4a",
+    "ZT.BIN:a001"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00005",
+   "kind": "item",
+   "jp": "　データ４にＳＡＶＥ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2a16",
+    "ZT.BIN:7d61",
+    "ZT.BIN:a018"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00006",
+   "kind": "item",
+   "jp": "　データ５にＳＡＶＥ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2a2d",
+    "ZT.BIN:7d78",
+    "ZT.BIN:a02f"
+   ],
+   "max_cells": 20,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00126",
+   "kind": "msg",
+   "jp": "　　　　セーブしました。",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2a5f",
+    "ZT.BIN:7daa",
+    "ZT.BIN:a061"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00127",
+   "kind": "msg",
+   "jp": "「キャル？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2ac3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00128",
+   "kind": "msg",
+   "jp": "「ヒロミィ～、帰るのォ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2b10"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00129",
+   "kind": "msg",
+   "jp": "「まだよ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2b39"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00130",
+   "kind": "msg",
+   "jp": "「キャル？　まだ、そんな所を調べてるの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2b5e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00131",
+   "kind": "msg",
+   "jp": "「あぁ、ヒロミィ～。だって、ここが凄く気になるんだものォ～‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2bc9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00132",
+   "kind": "msg",
+   "jp": "「キャル、コクピットの方は‥‥‥‥‥‥キャル？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2c24"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00133",
+   "kind": "msg",
+   "jp": "「うんしょ、うんしょ‥‥‥ウ～ン、なにもないなァ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2c63"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00134",
+   "kind": "msg",
+   "jp": "「あるわけないでしょう、そんな所に！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2cb0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00135",
+   "kind": "msg",
+   "jp": "「アァ～、ヒロミィ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2d2e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00136",
+   "kind": "msg",
+   "jp": "「アァ～ヒロミィ～、じゃないわよ！　そんな所に入り込んで、なにやってんのよ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2d5f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00137",
+   "kind": "msg",
+   "jp": "「だってェ、なにかありそうなんだもん」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2dbc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00138",
+   "kind": "msg",
+   "jp": "「１０円玉拾ってんじゃないんだから、そんなトコ調べてもしょうがないでしょう！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2df1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00139",
+   "kind": "msg",
+   "jp": "「ひどォ～い！　キャル、１０円なんか探してないもん！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2e4e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00140",
+   "kind": "msg",
+   "jp": "「分かった、分かった‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2e95"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "i00007",
+   "kind": "item",
+   "jp": "　キャルと話す",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2ee3"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00008",
+   "kind": "item",
+   "jp": "　辺りを調べる",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2ef4",
+    "ZT.BIN:4d01",
+    "ZT.BIN:5d9d"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00009",
+   "kind": "item",
+   "jp": "　コンピュータ室へ行く",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2f05",
+    "ZT.BIN:4d27",
+    "ZT.BIN:5dc3"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00010",
+   "kind": "item",
+   "jp": "　貨物室へ行く",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2f1e",
+    "ZT.BIN:44c3",
+    "ZT.BIN:4554",
+    "ZT.BIN:5ddc"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00011",
+   "kind": "item",
+   "jp": "　医療室へ行く",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2f2f",
+    "ZT.BIN:44d4",
+    "ZT.BIN:4565",
+    "ZT.BIN:4d40"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00141",
+   "kind": "msg",
+   "jp": "「ヒロミィ～、まだ帰らないのォ～？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2f5f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00142",
+   "kind": "msg",
+   "jp": "「そんなに帰りたいなら、一人で帰りなさい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2f92"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00143",
+   "kind": "msg",
+   "jp": "「やだ、一人じゃ恐いィ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:2fcb"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00144",
+   "kind": "msg",
+   "jp": "「どう？　なにか変わった所はあった？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3000",
+    "ZT.BIN:533b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00145",
+   "kind": "msg",
+   "jp": "「べつに何もないよォ～‥‥‥だから、もう帰ろうよォ～」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3035"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00146",
+   "kind": "msg",
+   "jp": "「あのねェ、私たちはべつに遠足に来てるわけじゃないのよ。そう、帰ろう、帰ろう言わないの」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:307a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00147",
+   "kind": "msg",
+   "jp": "「だってェ‥‥‥なんかこの船、恐いんだもん」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:30e1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00148",
+   "kind": "msg",
+   "jp": "「恐いって‥‥‥あなた軍人でしょう！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:311c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00149",
+   "kind": "msg",
+   "jp": "「だって恐いもんは恐いんだもん！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3151"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00150",
+   "kind": "msg",
+   "jp": "「そんなコトばっかり言ってると、それ以上の恐怖を見ることになるわよ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3184"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00151",
+   "kind": "msg",
+   "jp": "「エ～ン！　ヒロミの方が恐いよォ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:31e3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00152",
+   "kind": "msg",
+   "jp": "「ヒロミィ～、早く帰ろうよォ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3228"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00153",
+   "kind": "msg",
+   "jp": "「ダーメ。もう少し調べてからね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3263"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00154",
+   "kind": "msg",
+   "jp": "「しかし、ずいぶんと狭いコクピットねェ。４人ぐらいしか、入れないみたい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:329f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00155",
+   "kind": "msg",
+   "jp": "「本当、私たちのゼニスのコクピットなんか、野球が出来るのにね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:32f6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00156",
+   "kind": "msg",
+   "jp": "「や、野球は出来ないでしょう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3343"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00157",
+   "kind": "msg",
+   "jp": "「でも、この前、ファルがやってたよ。私にボール投げさせて、打ったら、コンピュータに当たっておかしくなって、それでエマが怒って‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3370"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00158",
+   "kind": "msg",
+   "jp": "「なんですってェ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3403"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00159",
+   "kind": "msg",
+   "jp": "「エーン、私がやったわけじゃないのにィ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3430"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00160",
+   "kind": "msg",
+   "jp": "「機能は完全に停止しているんだけど‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3479"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00161",
+   "kind": "msg",
+   "jp": "「それじゃあ、私はコンピュータ室を見てくるから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:34be"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00162",
+   "kind": "msg",
+   "jp": "「早く帰ってきてね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3503"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00163",
+   "kind": "msg",
+   "jp": "「あ、あのねェ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3526"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00164",
+   "kind": "msg",
+   "jp": "「それじゃあ、ファルの方を見てくるからね‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3559"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00165",
+   "kind": "msg",
+   "jp": "「キャルも一緒に行くゥ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3598"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00166",
+   "kind": "msg",
+   "jp": "「ダーメ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:35c3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00167",
+   "kind": "msg",
+   "jp": "「私は医療室を見てくるから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:35e6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00168",
+   "kind": "msg",
+   "jp": "「行かないでェ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3617"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00169",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥バイバイ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:363a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00170",
+   "kind": "msg",
+   "jp": "「ア～ン！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3667"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00171",
+   "kind": "msg",
+   "jp": "「エマ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:36b1",
+    "ZT.BIN:3c9c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00172",
+   "kind": "msg",
+   "jp": "「ちょうど良かったわ。いま、呼ぼうと思ってたのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3731"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00173",
+   "kind": "msg",
+   "jp": "「なにかあったの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3771"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00174",
+   "kind": "msg",
+   "jp": "「なにかあったのじゃないわよ。あなたに頼まれた医療室の扉のロックが、やっと外れたのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:37ba"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00175",
+   "kind": "msg",
+   "jp": "「そんなに大変だったの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:381e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00176",
+   "kind": "msg",
+   "jp": "「大変もなにも、誰かがメイン・コンピュータをいじくって、外からあそこにロックをかけたらしいのよ。しかも何重にもプロテクトをかけてね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:386d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00177",
+   "kind": "msg",
+   "jp": "「なんで、そんなコトをしたのかしら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:38ff"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00178",
+   "kind": "msg",
+   "jp": "「扉を硬く閉ざす理由は２つ。何かを閉じこめるか、何かに入り込まれたくないか‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:395a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00179",
+   "kind": "msg",
+   "jp": "「この場合、外からロックをかけたわけだから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:39ba"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00180",
+   "kind": "msg",
+   "jp": "「そう。何かを医療室に閉じ込めた‥‥‥と、見るのが自然ね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3a21"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00181",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥ちょっと調べてくるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3a69"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00182",
+   "kind": "msg",
+   "jp": "「気を付けなさいよ。何がいるかわからないんだから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3ac2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00183",
+   "kind": "msg",
+   "jp": "「でも、危険な反応は無いんでしょう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3b02"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00184",
+   "kind": "msg",
+   "jp": "「まァ、どのセンサーも異常は示していないけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3b5d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00185",
+   "kind": "msg",
+   "jp": "「とにかく、ちょっと様子を見てくるだけだから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3b9f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00186",
+   "kind": "msg",
+   "jp": "「本当に、気を付けなさいよ。あんたドジなんだから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3c02"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00187",
+   "kind": "msg",
+   "jp": "「ありがとう‥‥‥気を付けるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3c48"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00188",
+   "kind": "msg",
+   "jp": "「なによ？　こっちは忙しいんですからね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3d1c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00189",
+   "kind": "msg",
+   "jp": "「あ、エマ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3d8c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00190",
+   "kind": "msg",
+   "jp": "「このメイン・コンピュータの中を覗いてみたら、おもしろいものを発見したわよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3e10"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00191",
+   "kind": "msg",
+   "jp": "「おもしろいもの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3e6a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00192",
+   "kind": "msg",
+   "jp": "「この船の航海日誌よ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3eb3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00193",
+   "kind": "msg",
+   "jp": "「それで、内容は？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3ed7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00194",
+   "kind": "msg",
+   "jp": "「それが出航から２０日間までの記録しかないのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3f20"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00195",
+   "kind": "msg",
+   "jp": "「２０日間だけ？　いったい２０日目に、何が起きたっていうの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3f5e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00196",
+   "kind": "msg",
+   "jp": "「出航から１９日目に小型の救命ポッドを拾っているのよ。しかも、辺境調査船のね‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:3fd1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00197",
+   "kind": "msg",
+   "jp": "「辺境調査船の？　それで中に生存者はいたの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4033"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00198",
+   "kind": "msg",
+   "jp": "「なし‥‥‥というより、最初から誰も乗っていなかったみたいよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4096"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00199",
+   "kind": "msg",
+   "jp": "「でも、その救命ポッドを発見した次の日から、この船の航海日誌は途切れている‥‥‥‥‥‥その救命ポッドが、この船の漂流と関係していることは、間違いなさそうね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:40e2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00200",
+   "kind": "msg",
+   "jp": "「新種の細菌が乗っていたとか、まァいくらでも原因は考えられるわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:41b3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00201",
+   "kind": "msg",
+   "jp": "「ウーン‥‥‥‥‥‥ああ、それから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4203"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00202",
+   "kind": "msg",
+   "jp": "「なによ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:425c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00203",
+   "kind": "msg",
+   "jp": "「医療室の扉が開かないんだけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4276"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00204",
+   "kind": "msg",
+   "jp": "「ロックされてるわけ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:42d1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00205",
+   "kind": "msg",
+   "jp": "「そうみたいなのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:42f7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00206",
+   "kind": "msg",
+   "jp": "「おかしいわね。最初この船を調べた時、ほとんどの扉のロックは外れていたのに、なんで医療室だけ‥‥‥‥‥‥まァいいわ。調べておくから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4340"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00207",
+   "kind": "msg",
+   "jp": "「お願いね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:43d2",
+    "ZT.BIN:4b20"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00208",
+   "kind": "msg",
+   "jp": "「さて、この船のメイン・コンピュータの前だけど‥‥‥‥‥‥ウーン、どうしよう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4416"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "i00012",
+   "kind": "item",
+   "jp": "　コンピュータを調べる",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4495",
+    "ZT.BIN:4526"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00013",
+   "kind": "item",
+   "jp": "　コクピットへ行く",
+   "en": "",
+   "refs": [
+    "ZT.BIN:44ae",
+    "ZT.BIN:453f",
+    "ZT.BIN:4d12",
+    "ZT.BIN:5dae"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "i00014",
+   "kind": "item",
+   "jp": "　エマと話す",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4517"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00209",
+   "kind": "msg",
+   "jp": "「エマ、あのォ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:458e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00210",
+   "kind": "msg",
+   "jp": "「うるさいわね！　いまやってるわよ！　邪魔しないでよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:45df"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00211",
+   "kind": "msg",
+   "jp": "「まだ何も言ってないじゃない‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4627"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00212",
+   "kind": "msg",
+   "jp": "「勝手にいじんないでよ！　素人はすっこんでなさい！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4690"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00213",
+   "kind": "msg",
+   "jp": "「そ、そこまで言わなくても‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:46d4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00214",
+   "kind": "msg",
+   "jp": "「さて、このメイン・コンピュータは‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4715"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00215",
+   "kind": "msg",
+   "jp": "「ん？　あれ？　コレ、まだ生きてるみたい‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4754"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00216",
+   "kind": "msg",
+   "jp": "通信機\n　ピ・ピ・ピッ！！",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4795",
+    "ZT.BIN:66d1",
+    "ZT.BIN:6926",
+    "ZT.BIN:710f",
+    "ZT.BIN:78c3"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00217",
+   "kind": "msg",
+   "jp": "「エマ‥‥‥‥‥‥エマッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:47b6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00218",
+   "kind": "msg",
+   "jp": "『なによ、うるさいわね！　いちいち怒鳴るんじゃないわよッ！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:47e3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00219",
+   "kind": "msg",
+   "jp": "「こっちのコンピュータが生きてるみたいなんだけど、解析できる？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:482e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00220",
+   "kind": "msg",
+   "jp": "『できる？　できる、ですって！？　誰にモノ言ってるのよッ！？　私に扱えない機械があるとでも思っているわけ！？』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:487d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00221",
+   "kind": "msg",
+   "jp": "「わ、分かったわよ‥‥‥それじゃあ、解析をお願いできますでしょうか？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:48f8"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00222",
+   "kind": "msg",
+   "jp": "『最初から、そう言えばいいのよ。こんな貨物船のチンケなコンピュータなんか、簡単に‥‥‥‥‥‥‥‥‥あら、ダメだわ』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:494d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00223",
+   "kind": "msg",
+   "jp": "「ちょ、ちょっとォ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:49cc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00224",
+   "kind": "msg",
+   "jp": "『慌てるんじゃないわよッ！　こっちから制御するコトが出来ないって言ってるのよ。どうやら、そっちの端末がいかれてるみたいね』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:49f3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00225",
+   "kind": "msg",
+   "jp": "「それじゃあ、こっちへ来て直接アクセスしてちょうだい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4a7a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00226",
+   "kind": "msg",
+   "jp": "『ハイハイ‥‥‥まったく人使いが荒いわねェ‥‥‥‥‥‥じゃあ、準備が出来たら行くわ』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4abf"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00227",
+   "kind": "msg",
+   "jp": "「とりあえず、エマの到着を待ちましょう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4b49"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00228",
+   "kind": "msg",
+   "jp": "「コクピットへ行こうか‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4b86"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00229",
+   "kind": "msg",
+   "jp": "「貨物室を見てこようかな‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4bb9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00230",
+   "kind": "msg",
+   "jp": "「医療室に行ってみよう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4bee"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00231",
+   "kind": "msg",
+   "jp": "「どう、ファル？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4c39"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00232",
+   "kind": "msg",
+   "jp": "「おお、ヒロミか‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4cab"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "i00015",
+   "kind": "item",
+   "jp": "　ファルと話す",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4cf0"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00233",
+   "kind": "msg",
+   "jp": "「とにかく気を付けてね。何か分かったら、すぐに知らせるから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4d70"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00234",
+   "kind": "msg",
+   "jp": "「やっぱり、こいつの出番がきそうな気配だな」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4de7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00235",
+   "kind": "msg",
+   "jp": "「ここに救命ポッドがなかった？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4e2d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00236",
+   "kind": "msg",
+   "jp": "「救命ポッド？　そんなモンはなかったなァ‥‥‥ああ、でも」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4e82"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00237",
+   "kind": "msg",
+   "jp": "「でも？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4ecc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00238",
+   "kind": "msg",
+   "jp": "「なんか引きずったような跡があったなァ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4f0b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00239",
+   "kind": "msg",
+   "jp": "「え？　どこに？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4f43"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00240",
+   "kind": "msg",
+   "jp": "「ほら、あそこだよ。貨物搬入口の真ん前」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:4fdd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00241",
+   "kind": "msg",
+   "jp": "「本当だ。かなり重いモノを引きずったみたいね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5015"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00242",
+   "kind": "msg",
+   "jp": "「しかもこの様子じゃ、かなり慌てて捨てたみたいだぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5082"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00243",
+   "kind": "msg",
+   "jp": "「たぶん、それが‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:50c6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00244",
+   "kind": "msg",
+   "jp": "「それが、救命ポッドだったってわけか？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5123"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00245",
+   "kind": "msg",
+   "jp": "「ええ、たぶんね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:515b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00246",
+   "kind": "msg",
+   "jp": "「で、その救命ポッドてのは、なんなんだ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:51e5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00247",
+   "kind": "msg",
+   "jp": "「それがまだ、全然、分からないのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:521f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00248",
+   "kind": "msg",
+   "jp": "「なんだよ、それ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5278"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00249",
+   "kind": "msg",
+   "jp": "「少しでもおかしなトコがあったら、すぐに連絡してね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:52aa"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00250",
+   "kind": "msg",
+   "jp": "「ＯＫ、ＯＫ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5313"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00251",
+   "kind": "msg",
+   "jp": "「別にこれといった所は無いな。普通の貨物船の、普通の貨物室だよ。１つ変わってる所があるとすれば、乗組員が一人もいないコトぐらいだな」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5396"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00252",
+   "kind": "msg",
+   "jp": "「それが一番、重大な問題なんだけどね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:542a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00253",
+   "kind": "msg",
+   "jp": "「仕事がやってらんなくなって、全員でバックレでもしたんじゃないか？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5485"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00254",
+   "kind": "msg",
+   "jp": "「それだったら助かるわ。少なくとも、私たちの処理する問題じゃなくなるんですものね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:54d9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00255",
+   "kind": "msg",
+   "jp": "「が、そうはいかないと思うぜ。なんか、嫌な予感がするんだよ。このショット・ガンが大暴れすることになるような‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5560"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00256",
+   "kind": "msg",
+   "jp": "「それは本当に嫌な予感ね‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:55e2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00257",
+   "kind": "msg",
+   "jp": "「どういう意味だ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:563d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00258",
+   "kind": "msg",
+   "jp": "「ここから見るぶんには、ごく普通の貨物室に見えるんだけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5672"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00259",
+   "kind": "msg",
+   "jp": "「貨物の中身も、普通の鉱石だったぞ。まァ、普通じゃない鉱石があったとしても、見分けなんかつかないだろうけどな」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:56e7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00260",
+   "kind": "msg",
+   "jp": "「気を付けてよ。何が入っているか分からないんだから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5765"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00261",
+   "kind": "msg",
+   "jp": "「そんときゃ、このショット・ガンが火を吹くだけのコトだよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:57d4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00262",
+   "kind": "msg",
+   "jp": "「やたら撃たないでよ。積荷に穴でもあけたら、私が文句いわれるんですからね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:581e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00263",
+   "kind": "msg",
+   "jp": "「死ぬよりゃマシだろ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:589d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00264",
+   "kind": "msg",
+   "jp": "「そうだけど‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:58c5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00265",
+   "kind": "msg",
+   "jp": "「何の変哲もない貨物室に見えるんだけど‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:58fc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00266",
+   "kind": "msg",
+   "jp": "「それじゃあ、キャルの様子を見てくるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5945"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00267",
+   "kind": "msg",
+   "jp": "「気合い入れろって言っといてくれ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:59a2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00268",
+   "kind": "msg",
+   "jp": "「コンピュータを見てくるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:59dc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00269",
+   "kind": "msg",
+   "jp": "「余計なコトして、壊すなよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5a2d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00270",
+   "kind": "msg",
+   "jp": "「医療室の方に行ってくるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5a61"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00271",
+   "kind": "msg",
+   "jp": "「あんまりチョロチョロすんなよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5ab2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00272",
+   "kind": "msg",
+   "jp": "「医療室に入りたいんだけど‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5b0f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00273",
+   "kind": "msg",
+   "jp": "「フゥ‥‥‥やっぱり開かないわねェ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5ba9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00274",
+   "kind": "msg",
+   "jp": "「医療室の中に‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5c00"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00275",
+   "kind": "msg",
+   "jp": "「あれ？　開かないわね‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5c2b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00276",
+   "kind": "msg",
+   "jp": "「ヨッ！　ウンショ！！　ウ～ン‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5c5e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00277",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥ハァハァハァ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5c99"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00278",
+   "kind": "msg",
+   "jp": "「ダメだわ。どうしても開かないみたい‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5d2f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "i00016",
+   "kind": "item",
+   "jp": "　扉を調べる",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5d8e"
+   ],
+   "max_cells": 22,
+   "note": "a menu's item: one line in its box (the menu's widest Japanese item)"
+  },
+  {
+   "id": "m00279",
+   "kind": "msg",
+   "jp": "「電源は来てるみたいなんだけど、どうして開かないのかしら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5e32"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00280",
+   "kind": "msg",
+   "jp": "「外からはロック出来ないようだし、中に誰かいてロックしちゃってるとか‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5ea4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00281",
+   "kind": "msg",
+   "jp": "「とにかく、この扉の厚さじゃ、壊して中に入るなんてことは無理みたいね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5f2c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00282",
+   "kind": "msg",
+   "jp": "「なんとか開かないものかしらねェ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:5fb6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00283",
+   "kind": "msg",
+   "jp": "「これといって、破損している所は見られないわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6021"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00284",
+   "kind": "msg",
+   "jp": "「ということは、この扉が開かないのは、単純にロックされているだけってことかしら‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6087"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00285",
+   "kind": "msg",
+   "jp": "「とにかく、この辺りを調べただけじゃ、大したコトは分からないわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6119"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00286",
+   "kind": "msg",
+   "jp": "「怪しい所がこれといって無いところが、怪しいんだけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:619d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00287",
+   "kind": "msg",
+   "jp": "「コクピットへ行ってみよう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6215"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00288",
+   "kind": "msg",
+   "jp": "「コンピュータ室へ行こう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:626f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00289",
+   "kind": "msg",
+   "jp": "「貨物室を見て来ようかな‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:62c7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00290",
+   "kind": "msg",
+   "jp": "「さーて、開くかな？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6319"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00291",
+   "kind": "msg",
+   "jp": "「さァ、入るわよ。落ち着いて行きましょう」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6355"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00292",
+   "kind": "msg",
+   "jp": "「なんか随分と綺麗な所ねェ‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:63a7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00293",
+   "kind": "msg",
+   "jp": "「医療室なんだから、当たり前かァ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:63d8"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00294",
+   "kind": "msg",
+   "jp": "「でも、なにか気になる‥‥‥‥‥‥ん？　あれは‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6409"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00295",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥花？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6469"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00296",
+   "kind": "msg",
+   "jp": "「こんな所に花が、飾って‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6515"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00297",
+   "kind": "msg",
+   "jp": "「まさか、微弱な生命反応って、これに反応したんじゃないでしょうね？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:657b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00298",
+   "kind": "msg",
+   "jp": "「でも、不思議な花ねェ。初めて見るわ、こんな形の花。なんて名前の花かしら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:65ff"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00299",
+   "kind": "msg",
+   "jp": "「ウーン、でも良い香り。なんか気持ちが‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:668b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00300",
+   "kind": "msg",
+   "jp": "『ヒロミィー！　ヒロミィー、助けてェー！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:66f3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00301",
+   "kind": "msg",
+   "jp": "「キャル！？　キャル、どうしたのッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:67b2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00302",
+   "kind": "msg",
+   "jp": "『エ～ン！　ヒロミィ～！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:67ea"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00303",
+   "kind": "msg",
+   "jp": "「キャル！？　どうしたの！？　落ち着いて、ちゃんと報告しなさいッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6845"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00304",
+   "kind": "msg",
+   "jp": "『ウェ～ン！　ヒロミィィィィィィィ！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:689b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00305",
+   "kind": "msg",
+   "jp": "「ああ、もう！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6902"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00306",
+   "kind": "msg",
+   "jp": "『どうした、ヒロミ？　オレが様子を見てこーか？』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6947"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00307",
+   "kind": "msg",
+   "jp": "「いえ、いいわ。ファルはそこを動かないで‥‥‥私が行ってみるから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:69b6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00308",
+   "kind": "msg",
+   "jp": "『ＯＫ。なんかあったら、すぐ呼んでくれ』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6a08"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00309",
+   "kind": "msg",
+   "jp": "「分かったわ‥‥‥‥‥‥とにかくコクピットに行かないと」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6a6f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00310",
+   "kind": "msg",
+   "jp": "「キャル！　どうしたのッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6ada"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00311",
+   "kind": "msg",
+   "jp": "「キャル！？　ここを開けなさい！　キャル！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6b07"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00312",
+   "kind": "msg",
+   "jp": "「ヒロミィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6bbd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00313",
+   "kind": "msg",
+   "jp": "「ど、どうしたの、キャル！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6bdf"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00314",
+   "kind": "msg",
+   "jp": "「フエェ～ン‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6c3c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00315",
+   "kind": "msg",
+   "jp": "「泣いてちゃ分からないでしょう！　ちゃんと説明しなさい！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6c66"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00316",
+   "kind": "msg",
+   "jp": "「ゴ、ゴキブリがァ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6ce1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00317",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥え？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6d14"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00318",
+   "kind": "msg",
+   "jp": "「操縦席の下にね‥‥‥ゴキブリが‥‥‥ゴキブリがいたのォ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6d67"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00319",
+   "kind": "msg",
+   "jp": "「ハ、ハハ‥‥‥よ、よく聞こえなかったんですけど‥‥‥あ、あなた、いま‥‥‥ゴ、ゴキブリって言いました？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6db7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00320",
+   "kind": "msg",
+   "jp": "「言いましたァ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6e60"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00321",
+   "kind": "msg",
+   "jp": "「ブッ殺す！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6e80"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00322",
+   "kind": "msg",
+   "jp": "「フェ～ン！　ヒロミ、恐いィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6ecd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00323",
+   "kind": "msg",
+   "jp": "「そんなコトで、こんなに大騒ぎしてッ！　もう、いいかげんにしないと怒るわよ、キャル！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6f0c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00324",
+   "kind": "msg",
+   "jp": "「エ～ン、だってキャルに向かって飛んできたんだよォ！　ブ～ンッて！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6fa3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00325",
+   "kind": "msg",
+   "jp": "「そんなもん、食べちゃえばいいのよッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:6ff9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00326",
+   "kind": "msg",
+   "jp": "「ヤダァ～、ヒロミ、ゴキブリ食べるのォ？　気持ち悪いィ～！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7060"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00327",
+   "kind": "msg",
+   "jp": "「ああ、うるさいッ！　まったくもう、こっちは何事かと思って来てみれば‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:70ac"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00328",
+   "kind": "msg",
+   "jp": "『ヒ、ヒロミ！‥‥‥‥‥‥うわッ！　なんだ、こいつらはッ！？』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7131"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00329",
+   "kind": "msg",
+   "jp": "「ファ、ファルッ！？　どうしたのッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7202"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00330",
+   "kind": "msg",
+   "jp": "『クソォ、こいつらッ！　くらえッ！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:723a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00331",
+   "kind": "msg",
+   "jp": "「じゅ、銃声！？‥‥‥‥‥‥ファル？　ファル！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:72a1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00332",
+   "kind": "msg",
+   "jp": "『‥‥‥‥‥‥‥‥‥』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:72e3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00333",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥キャル！　貨物室に行くわよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7338"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00334",
+   "kind": "msg",
+   "jp": "「く、くそォ！　なんなんだ、こいつらはッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:73a6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00335",
+   "kind": "msg",
+   "jp": "「な、なんだこいつらァ‥‥‥不死身なのか？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:743b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00336",
+   "kind": "msg",
+   "jp": "「汚ねェーぞ、てめェーら！　撃たれたんなら、ちゃんと死ねよ、ちくしょうッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7476"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00337",
+   "kind": "msg",
+   "jp": "「く、くそォ、いったい何匹いやがるんだ‥‥‥‥‥‥こりゃあ、ちょっとやばいぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7524"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00338",
+   "kind": "msg",
+   "jp": "「な、なんなのこれは‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:75f5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00339",
+   "kind": "msg",
+   "jp": "「見て分かるだろ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7657"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00340",
+   "kind": "msg",
+   "jp": "「分かんないわよ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:76a5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00341",
+   "kind": "msg",
+   "jp": "「乗組員の成れの果てさ‥‥‥しかし、頭を吹き飛ばされないかぎり、まったく死なねェーんだよ。いや、はなから死んじまってるのか‥‥‥まるで、ゾンビだぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:76f9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00342",
+   "kind": "msg",
+   "jp": "「で、でも、なんで乗組員がこんな姿に‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:77c7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00343",
+   "kind": "msg",
+   "jp": "「さァな？　熱心なヌーディストなんだろう‥‥‥‥‥‥クソォ！　ゾロゾロと出てきやがって、いったい何匹いやがるんだッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7839"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00344",
+   "kind": "msg",
+   "jp": "『ちょ、ちょっと！　なんなのよ、こいつらはッ！？』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:78e4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00345",
+   "kind": "msg",
+   "jp": "「エ、エマ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:796b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00346",
+   "kind": "msg",
+   "jp": "『ちょっと、ヒロミ！　とっとと来て、こいつらをなんとかしなさいよ！　早く私を助けるのよッ！！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:798b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00347",
+   "kind": "msg",
+   "jp": "「分かったわ！　ここを処理したらすぐに行くから、それまでなんとか‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7a26"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00348",
+   "kind": "msg",
+   "jp": "「ここはいいから、早く行ってやれ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7aae"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00349",
+   "kind": "msg",
+   "jp": "「で、でも‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7b53",
+    "ZT.BIN:af55"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00350",
+   "kind": "msg",
+   "jp": "「心配すんな。ここはオレ一人でなんとかもつ。それよりヒロミは、エマと合流してゼニスまでの退路を確保してくれ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7bab"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00351",
+   "kind": "msg",
+   "jp": "「わ、分かったわ。ファル、気を付けて‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7c51"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00352",
+   "kind": "msg",
+   "jp": "「ヒロミもな‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7cbd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00353",
+   "kind": "msg",
+   "jp": "　　　　　Ｃディスクを DRIVE 2 に入れて下さい。",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7dda"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00354",
+   "kind": "msg",
+   "jp": "「な、なに‥‥‥なにすんのよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7e49"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00355",
+   "kind": "msg",
+   "jp": "「あ‥‥‥あぁ‥‥‥‥‥‥ふ、ふざけるんじゃないわよ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7e8f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00356",
+   "kind": "msg",
+   "jp": "「ふ、ふざけるんじゃ‥‥‥ウゥ‥‥‥クゥ‥‥‥‥‥‥アアン！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7ede"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00357",
+   "kind": "msg",
+   "jp": "「い、いや‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7f4a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00358",
+   "kind": "msg",
+   "jp": "「や、やめてェ‥‥‥‥‥‥あぁ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:7f79"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00359",
+   "kind": "msg",
+   "jp": "「エ、エマッ！！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:800e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00360",
+   "kind": "msg",
+   "jp": "「あ、あぁ‥‥‥ヒ、ヒロミ‥‥‥‥‥‥ハァハァ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8032"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00361",
+   "kind": "msg",
+   "jp": "「な、なんてことを‥‥‥‥‥‥い、いま助けるわよ、エマ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:80a0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00362",
+   "kind": "msg",
+   "jp": "「アッ‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8100"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00363",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥ンッ！！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:813f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00364",
+   "kind": "msg",
+   "jp": "「キャル‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:81af"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00365",
+   "kind": "msg",
+   "jp": "「キャル？‥‥‥‥‥‥‥‥‥キャルッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8222"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00366",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥ハッ！！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:825c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00367",
+   "kind": "msg",
+   "jp": "「い、いやぁぁぁぁぁぁぁぁ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:82bc"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00368",
+   "kind": "msg",
+   "jp": "「フェーン‥‥‥‥‥‥ヒ、ヒロミィ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:82f5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00369",
+   "kind": "msg",
+   "jp": "「い‥‥‥いや‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:834f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00370",
+   "kind": "msg",
+   "jp": "「ウッ‥‥‥ウゥ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8393"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00371",
+   "kind": "msg",
+   "jp": "「アッ‥‥‥‥‥‥い、いやッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:83df"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00372",
+   "kind": "msg",
+   "jp": "「あぁ‥‥‥‥‥‥ダ、ダメ‥‥‥‥‥‥ウゥ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:841a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00373",
+   "kind": "msg",
+   "jp": "「ン‥‥‥ングゥ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8479"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00374",
+   "kind": "msg",
+   "jp": "「ング‥‥‥ウグ‥‥‥‥‥‥ウ、ウゥッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:84a8"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00375",
+   "kind": "msg",
+   "jp": "「ウ‥‥‥ウゥ‥‥‥‥‥‥ケホ！　ケホ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:84f9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00376",
+   "kind": "msg",
+   "jp": "「あぁ‥‥‥‥‥‥ダ、ダメ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8555"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00377",
+   "kind": "msg",
+   "jp": "「ち、力が‥‥‥身体に力が入らない‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8596"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00378",
+   "kind": "msg",
+   "jp": "「ダ、ダメ‥‥‥‥‥‥力が‥‥‥力が抜けていく‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:85df"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00379",
+   "kind": "msg",
+   "jp": "「ああ‥‥‥このままじゃ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:864b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00380",
+   "kind": "msg",
+   "jp": "「ハッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8695"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00381",
+   "kind": "msg",
+   "jp": "「ク、クゥ‥‥‥も、もう少し‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:86d3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00382",
+   "kind": "msg",
+   "jp": "「も、もう少しで‥‥‥手が‥‥‥‥‥‥届くッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8718"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00383",
+   "kind": "msg",
+   "jp": "「くらえッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8782"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00384",
+   "kind": "msg",
+   "jp": "「よくも、好き勝手やってくれたわねッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:87e5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00385",
+   "kind": "msg",
+   "jp": "「キャル！　エマッ！！　早く、こっちへ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:883b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00386",
+   "kind": "msg",
+   "jp": "「キャル？　エマ？　大丈夫？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:88f6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00387",
+   "kind": "msg",
+   "jp": "「ウェ～！　変な味がするよォ～‥‥‥ペッ！　ペッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8924"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00388",
+   "kind": "msg",
+   "jp": "「エマ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:89e3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00389",
+   "kind": "msg",
+   "jp": "「エマ！？　しっかりッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8a57"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00390",
+   "kind": "msg",
+   "jp": "「だ、大丈夫よ‥‥‥なんとか、まだ生きてるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8afd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00391",
+   "kind": "msg",
+   "jp": "「一人でゼニスまで戻れる？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8b6a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00392",
+   "kind": "msg",
+   "jp": "「ええ、なんとかね。あなたたちの援護は、出来なさそうだけど‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8bc7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00393",
+   "kind": "msg",
+   "jp": "「それじゃあ、エマはすぐにゼニスに戻って、脱出の準備をお願い。私たちはファルと合流して、この船の自爆装置を作動させるわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8c48"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00394",
+   "kind": "msg",
+   "jp": "「メイン・コンピュータの自爆装置はいかれてるわよ。補助の自爆装置も、ほとんどダメ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8d01"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00395",
+   "kind": "msg",
+   "jp": "「なんですって！？　じゃあ、この船を破壊出来ないの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8d9e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00396",
+   "kind": "msg",
+   "jp": "「いいえ、１つだけ補助自爆装置が生きてるわ‥‥‥医療室よ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8e15"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00397",
+   "kind": "msg",
+   "jp": "「医療室が？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8e8e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00398",
+   "kind": "msg",
+   "jp": "「あそこだけは、どういうわけかずっと隔離されてたのよ。だから、自爆装置も無事だったみたいね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8edd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00399",
+   "kind": "msg",
+   "jp": "「分かったわ‥‥‥医療室ね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8f78"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00400",
+   "kind": "msg",
+   "jp": "「気を付けるのよ‥‥‥あんたドジなんだから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:8fd5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00401",
+   "kind": "msg",
+   "jp": "「エマも、気を付けて‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9040"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00402",
+   "kind": "msg",
+   "jp": "「キャル！　ファルの援護に向かうわよ！　一緒に来て！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:90bb"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00403",
+   "kind": "msg",
+   "jp": "「ア～ン、ちょっと待ってェ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9101"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00404",
+   "kind": "msg",
+   "jp": "「急いで、キャル！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9153"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00405",
+   "kind": "msg",
+   "jp": "「ア～ン、待ってよォ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9178"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00406",
+   "kind": "msg",
+   "jp": "「や、やめろォー！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:91d7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00407",
+   "kind": "msg",
+   "jp": "「ク、クソォ！　や、やめろッ！　はなしやがれッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9206"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00408",
+   "kind": "msg",
+   "jp": "「アッ‥‥‥‥‥‥アァ‥‥‥よ、よせェ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:926a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00409",
+   "kind": "msg",
+   "jp": "「ウ、ウン‥‥‥‥‥‥ク、クソォ‥‥‥‥‥‥ウゥ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:92b7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00410",
+   "kind": "msg",
+   "jp": "「ク、クソォ‥‥‥‥‥‥ち、力が‥‥‥力が入らねェ‥‥‥ウゥ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:931c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00411",
+   "kind": "msg",
+   "jp": "「ファル！　伏せてッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9375"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00412",
+   "kind": "msg",
+   "jp": "「！！！！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:939e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00413",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥フゥ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:93d3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00414",
+   "kind": "msg",
+   "jp": "「大丈夫、ファル？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:941f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00415",
+   "kind": "msg",
+   "jp": "「ああ、なんとかな‥‥‥おかげで助かったぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:947e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00416",
+   "kind": "msg",
+   "jp": "「どお？　一人でゼニスに戻れそう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:94ba"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00417",
+   "kind": "msg",
+   "jp": "「ああ、大丈夫だ‥‥‥すまないな、援護してやりたいんだが‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9514"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00418",
+   "kind": "msg",
+   "jp": "「いいのよ。それより気を付けて‥‥‥私とキャルは、この船の自爆装置を作動させたら、すぐゼニスに戻るから」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:956a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00419",
+   "kind": "msg",
+   "jp": "「気を付けろ‥‥‥あいつら、殺しても、簡単にゃあ死なないぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9608"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00420",
+   "kind": "msg",
+   "jp": "「ええ、分かったわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9654"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00421",
+   "kind": "msg",
+   "jp": "「じゃあ、後は頼んだぜ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:969e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00422",
+   "kind": "msg",
+   "jp": "「ええ、まかしておいて‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:96c6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00423",
+   "kind": "msg",
+   "jp": "「え～とォ‥‥‥ここをこォーしてェ～‥‥‥‥‥‥ここをォ‥‥‥‥‥‥アレェ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9776"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00424",
+   "kind": "msg",
+   "jp": "「ちょっと、大丈夫なの？　早くしてよ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:97d4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00425",
+   "kind": "msg",
+   "jp": "「大丈夫だよォ！　あとはここを‥‥‥‥‥‥ウ～ン？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:983c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00426",
+   "kind": "msg",
+   "jp": "「ちょ、ちょっとォッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9880"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00427",
+   "kind": "msg",
+   "jp": "「ア～ン！　ヒロミがよこからゴチャゴチャ言うと、分かんなくなっちゃうゥ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:98da"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00428",
+   "kind": "msg",
+   "jp": "「わ、分かったから‥‥‥早くお願い‥‥‥ね？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9938"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00429",
+   "kind": "msg",
+   "jp": "「だからァ～‥‥‥ここをこうしてェ～‥‥‥それで、こっちをォ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:99a6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00430",
+   "kind": "msg",
+   "jp": "「い、急いでね‥‥‥‥‥‥ねッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9a00"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00431",
+   "kind": "msg",
+   "jp": "「最後にこれをォ‥‥‥‥‥‥エイッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9a7c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00432",
+   "kind": "msg",
+   "jp": "「ヤッタァー！　動いた！　動いたッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9b07"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00433",
+   "kind": "msg",
+   "jp": "「さァ、キャル！　脱出するわよ！　急いでッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9b91"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00434",
+   "kind": "msg",
+   "jp": "「ア～ン！　待ってよォ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9bd1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00435",
+   "kind": "msg",
+   "jp": "「アッ！　お花、お花ッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9c44"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00436",
+   "kind": "msg",
+   "jp": "「フフフ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9c92"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00437",
+   "kind": "msg",
+   "jp": "「キャル！　なにやってるの！？　おいてくわよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9cb7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00438",
+   "kind": "msg",
+   "jp": "「ハーイ！　いま行きまァ～す！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9d3b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00439",
+   "kind": "msg",
+   "jp": "「全員乗っているわね？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9d8e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00440",
+   "kind": "msg",
+   "jp": "「ええ、大丈夫よ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9db5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00441",
+   "kind": "msg",
+   "jp": "「よし！　連結切り放し！　高速離脱！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9dd6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00442",
+   "kind": "msg",
+   "jp": "「了解！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9e0d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00443",
+   "kind": "msg",
+   "jp": "「貨物船マーメイド‥‥‥‥‥‥破壊確認」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9e58"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00444",
+   "kind": "msg",
+   "jp": "「フゥ‥‥‥‥‥‥‥‥‥アッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9e8f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00445",
+   "kind": "msg",
+   "jp": "「大丈夫、ヒロミ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9ebe"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00446",
+   "kind": "msg",
+   "jp": "「だ、大丈夫よ‥‥‥ちょっと、疲れただけ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9ee3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00447",
+   "kind": "msg",
+   "jp": "「あとは私一人で大丈夫だから、ヒロミはもう休んで」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9f1c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00448",
+   "kind": "msg",
+   "jp": "「ええ、そうするわ‥‥‥‥‥‥あとはお願いね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:9f5d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00449",
+   "kind": "msg",
+   "jp": "　　　　　Ｄディスクを DRIVE 2 に入れて下さい。",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a091"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00450",
+   "kind": "msg",
+   "jp": "「エマ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a100"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00451",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥ファル」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a138"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00452",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥キャル」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a17e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00453",
+   "kind": "msg",
+   "jp": "「みんな、お疲れ様‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a210"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00454",
+   "kind": "msg",
+   "jp": "「こんなに疲れ切ってしまって‥‥‥‥‥‥なのに、私たちは何も助けるコトが出来なかった‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a271"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00455",
+   "kind": "msg",
+   "jp": "「フゥ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a2f9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00456",
+   "kind": "msg",
+   "jp": "「いや、なにも助けられなかったわけじゃないわね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a363"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00457",
+   "kind": "msg",
+   "jp": "「この花を助け出すコトが出来たわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a3c5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00458",
+   "kind": "msg",
+   "jp": "「でも、この花‥‥‥よく枯れずに咲いていたわねェ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a3f6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00459",
+   "kind": "msg",
+   "jp": "「ヒロミ、大丈夫？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a4c5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00460",
+   "kind": "msg",
+   "jp": "「ええ、身体は凄くだるいけど‥‥‥みんなよりは軽いみたい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a4e9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00461",
+   "kind": "msg",
+   "jp": "「しっかり身体を休めてね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a559"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00462",
+   "kind": "msg",
+   "jp": "「ええ、ありがとう‥‥‥‥‥‥それで、調査の方はどう？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a583"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00463",
+   "kind": "msg",
+   "jp": "「ええ、ファルが持ち帰った、ゾンビの死体を調べてみたんだけど‥‥‥どうやら、何者かに操られていたみたいね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a5f1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00464",
+   "kind": "msg",
+   "jp": "「操られていた？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a66b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00465",
+   "kind": "msg",
+   "jp": "「ええ、脳の中に、なにか種みたいなモノが埋め込まれていたのよ。それが受信機の様な役目をしていたみたい」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a6b3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00466",
+   "kind": "msg",
+   "jp": "「そんなことして、誰が操っていたわけ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a729"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00467",
+   "kind": "msg",
+   "jp": "「そこまではまだ分からないわ。もう少し調べてみないと‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a787"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00468",
+   "kind": "msg",
+   "jp": "「そうね‥‥‥‥‥‥でも、誰が何の目的で、操っていたというのかしら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a7d3"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00469",
+   "kind": "msg",
+   "jp": "「いずれにしろ、もう少し調べれば‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a84f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00470",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥あら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a88d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00471",
+   "kind": "msg",
+   "jp": "「どうしたの？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a8d9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00472",
+   "kind": "msg",
+   "jp": "「誰か来たみたい‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a8f9"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00473",
+   "kind": "msg",
+   "jp": "「え？　誰かって、私以外は、みんなその部屋に居るのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a947"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00474",
+   "kind": "msg",
+   "jp": "「そ、そうよね‥‥‥‥‥‥でも、扉の向こうに誰か‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:a98d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00475",
+   "kind": "msg",
+   "jp": "「ゾ、ゾンビッ！！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:aa4c"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00476",
+   "kind": "msg",
+   "jp": "「えっ！？　なんですって！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:aa71"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00477",
+   "kind": "msg",
+   "jp": "「エマッ！　ファルッ！！　起きてッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:aa9e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00478",
+   "kind": "msg",
+   "jp": "「ダ、ダメだわ！　薬が効いていて、眠ってるんだわ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ab29"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00479",
+   "kind": "msg",
+   "jp": "「ウゥ～ン‥‥‥ヒロミィ？　どうしたのォ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ab6a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00480",
+   "kind": "msg",
+   "jp": "「キャ、キャル！　起きて！　起きるのよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:aba5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00481",
+   "kind": "msg",
+   "jp": "「なーにィ？　もうご飯‥‥‥‥‥‥アッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:abe2"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00482",
+   "kind": "msg",
+   "jp": "「キャル！　こっちへ来て！　早くッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ac1b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00483",
+   "kind": "msg",
+   "jp": "「ヒ、ヒロミィ～‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ac73"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00484",
+   "kind": "msg",
+   "jp": "「だ、大丈夫よ‥‥‥‥‥‥大丈夫だからね」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:acce"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00485",
+   "kind": "msg",
+   "jp": "「フェ～ン‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ad08"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00486",
+   "kind": "msg",
+   "jp": "「ほら、泣かないのッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ad5d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00487",
+   "kind": "msg",
+   "jp": "「さァ、ゾンビども‥‥‥そっからちょっとでも近付いてみなさい。その洗脳された頭を吹き飛ばしてやるから！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:adcb"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00488",
+   "kind": "msg",
+   "jp": "「ヒロミッ！　いますぐに行くから‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:ae8d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00489",
+   "kind": "msg",
+   "jp": "「ダメよ！　ノリコはそこから動かないで！　すぐに扉をロックして、絶対に開けちゃダメよ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:aec5"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00490",
+   "kind": "msg",
+   "jp": "「何かあったら、一人でも逃げるのよ、ノリコ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:af7d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00491",
+   "kind": "msg",
+   "jp": "「そんなコト言わないでッ！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:afdf"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00492",
+   "kind": "msg",
+   "jp": "「とにかく、なんとか戦ってみるわ。まだ、勝てないと決まったわけじゃないし‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b00b"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00493",
+   "kind": "msg",
+   "jp": "「でも、なんでこの船にまで‥‥‥‥‥‥あの脳に埋め込まれた種の受信能力は、せいぜい１００メートル四方なのに‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b091"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00494",
+   "kind": "msg",
+   "jp": "「どういうこと？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b119"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00495",
+   "kind": "msg",
+   "jp": "「つまり、そのゾンビたちは、操っているモノから半径１００メートル以内でしか活動出来ないのよ」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b161"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00496",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b1cd"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00497",
+   "kind": "msg",
+   "jp": "「マーメイドは粉々だし、それに、もう数百キロも離れているのに‥‥‥なんで、この船で活動しているのかしら？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b219"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00498",
+   "kind": "msg",
+   "jp": "「このゾンビの活動範囲は、操るモノからたった１００メートル‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b2b4"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00499",
+   "kind": "msg",
+   "jp": "「と、言うことは‥‥‥この船にゾンビのご主人様が居るってわけ？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b305"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00500",
+   "kind": "msg",
+   "jp": "「このゼニスと、貨物船マーメイドに共通した存在は‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b354"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00501",
+   "kind": "msg",
+   "jp": "「ま、まさかッ！？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b3a1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00502",
+   "kind": "msg",
+   "jp": "「まさか‥‥‥あの花が‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b3da"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00503",
+   "kind": "msg",
+   "jp": "「でも、花が人間を支配するなんて‥‥‥それに、なんのために？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b423"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00504",
+   "kind": "msg",
+   "jp": "「で、でも‥‥‥この花は、何カ月も漂流していた船の中で、なぜか枯れずに咲いていた‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b486"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00505",
+   "kind": "msg",
+   "jp": "「つまり、養分をどうにか獲ていたということだわ。その養分を供給していたのが、このゾンビたち‥‥‥？」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b509"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00506",
+   "kind": "msg",
+   "jp": "「アァッ！　考えていてもしかたないわッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b59d"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00507",
+   "kind": "msg",
+   "jp": "「エエーイ！　ままよッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b5ed"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "ゾンビ",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b695:name"
+   ],
+   "max_cells": 6,
+   "note": "a speaker's name: the message after it goes on along its row"
+  },
+  {
+   "id": "m00508",
+   "kind": "msg",
+   "jp": "「グゥォォォォォォォォォォォォォ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b695"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00509",
+   "kind": "msg",
+   "jp": "「や、やったわ‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b6df"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00510",
+   "kind": "msg",
+   "jp": "「こ、粉々になっちゃったァ～！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b70a"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00511",
+   "kind": "msg",
+   "jp": "「こんな花が‥‥‥‥‥‥」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b767"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00512",
+   "kind": "msg",
+   "jp": "『こうして、私たちゼニスの乗組員は、なんとか生き延びるコトが出来た‥‥‥』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b7c6"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00513",
+   "kind": "msg",
+   "jp": "『その後の調べで、あのゾンビたちはマーメイド号の乗組員の成れの果てであるコトが分かった。もちろん、あの植物の仕業なのは間違いない』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b81f"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00514",
+   "kind": "msg",
+   "jp": "『しかし、なぜ、あの植物が人間を洗脳し、私たちを襲わせたのか‥‥‥‥‥‥それはいまでもハッキリとは分かっていない』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b8b0"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00515",
+   "kind": "msg",
+   "jp": "『植物の中には、虫を捕まえて栄養を補給するものがあるというけど‥‥‥』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b931"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00516",
+   "kind": "msg",
+   "jp": "『この花も、ただ栄養を補給するために、動物に種を寄生させ、操っていたというのだろうか‥‥‥‥‥‥』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b986"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00517",
+   "kind": "msg",
+   "jp": "『そして、たまたま寄生したのが、人間だったというだけで、この花からみれば、人もネズミも関係ないコト‥‥‥たまたま近くにいた動物が人間であったというだけ‥‥‥‥‥‥』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:b9f7"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00518",
+   "kind": "msg",
+   "jp": "『‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥フゥ！』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:baaa"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00519",
+   "kind": "msg",
+   "jp": "『とにかく、この先のコトを調べるのは、私たちの役目ではないわね』",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bae1"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00520",
+   "kind": "msg",
+   "jp": "「アッ！　もうこんな時間！　パトロール終了じゃない！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bb39"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00521",
+   "kind": "msg",
+   "jp": "「‥‥‥‥‥‥さァ、木星に帰りましょうかッ！！」",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bb7e"
+   ],
+   "max_cells": 64,
+   "note": "after the speaker's name, on its row"
+  },
+  {
+   "id": "m00522",
+   "kind": "msg",
+   "jp": "　　　　　　　　　　姫屋スペシャル　　音楽モード",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bc36"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00523",
+   "kind": "msg",
+   "jp": "　Melting of snow",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bc79"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00524",
+   "kind": "msg",
+   "jp": "　Alert!",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bc9f"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00525",
+   "kind": "msg",
+   "jp": "　Rain of bombs",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bcbd"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00526",
+   "kind": "msg",
+   "jp": "　My bright tomorrow",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bce1"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00527",
+   "kind": "msg",
+   "jp": "　Unpleasant smell",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bd0a"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00528",
+   "kind": "msg",
+   "jp": "　Evening primrose",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bd31"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00529",
+   "kind": "msg",
+   "jp": "　ZENITH",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bd58"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "m00530",
+   "kind": "msg",
+   "jp": "　Ghost ship",
+   "en": "",
+   "refs": [
+    "ZT.BIN:bd75"
+   ],
+   "max_cells": 64
+  },
+  {
+   "id": "e00001",
+   "kind": "engine",
+   "jp": "メモリーが足りません.",
+   "en": "",
+   "refs": [
+    "ZENITH.COM:008d"
+   ],
+   "max_cells": 21,
+   "note": "TSM.COM's message (printed by DOS), in its own bytes"
+  },
+  {
+   "id": "e00002",
+   "kind": "engine",
+   "jp": "ファイルが読み込めません.",
+   "en": "",
+   "refs": [
+    "ZENITH.COM:00a5"
+   ],
+   "max_cells": 25,
+   "note": "TSM.COM's message (printed by DOS), in its own bytes"
+  }
+ ]
+}

@@ -486,5 +486,10 @@
   "remarks": [
    "Not reached in this test: the menus of objects and verbs, the choices, the in-game option menus (ES98.EXE's own strings), the music mode, saving and loading."
   ]
+ },
+ "zenith": {
+  "remarks": [
+   "Not reached in this test: the save and load menus (the menu items), the later scenes, the endings."
+  ]
  }
 }

@@ -217,11 +217,26 @@ BUILDS = {
         "code": {0x04: 1, 0x32: 1, 0x08: 5, 0x11: 1},
         "data": {0x00: 1, 0x29: 1, 0x45: 1},
     },
+    # Zenith (Himeya Soft): 48h ops, the table at 57Ah; 2Fh, 35h, 3Ah, 42h load a file and 3Ch, 3Eh
+    # start an animation from the data after them (each to the word after the op), 39h is 2 bytes, 46h a
+    # picture's menu (4)
+    (0x48, 0x57A): {
+        "fix": {**_COMMON, **{0x06: 1, 0x0B: 3, 0x11: 1, 0x2D: 2, 0x34: 3, 0x39: 2, 0x3B: 2, 0x3D: 2,
+                                0x40: 3, 0x41: 1, 0x43: 2, 0x44: 1, 0x45: 1, 0x46: 4, 0x47: 1, 0xFF: 1}},
+        "next": {0x02, 0x03, 0x09, 0x0A, 0x17, 0x2F, 0x35, 0x3A, 0x3C, 0x3E, 0x42},
+        "wait": 0x11,               # (a key, the cursor blinking; 3Fh waits for an animation here)
+        "menu3e": False,
+        "code": {0x04: 1, 0x32: 1, 0x08: 5},
+        "data": {0x00: 1, 0x29: 1},
+    },
 }
 NEXT = {0x02, 0x03, 0x09, 0x0A, 0x17, 0x39}
 FLOW_END = {0x01, 0x04, 0x05, 0x16, 0x33}
 DISPATCH = re.compile(rb"\x26\x8a\x1c\x80\xfb(.)\x72\x03\xe9..\x32\xff\xd1\xe3\xff\xa7(..)", re.S)
+# Zenith's: mov bl, es:[si] / xor bh, bh / shl bx, 1 / jmp [bx+table]
+DISPATCH2 = re.compile(rb"\x26\x8a\x1c\x32\xff\xd1\xe3\xff\xa7(..)", re.S)
 BUFFER = re.compile(rb"\xa3\x16\x04\x05(..)\xa3\x08\x04", re.S)
+BUFFER2 = re.compile(rb"\xa3\x16\x04\x8e\xc0\x05(..)\xa3\x10\x04", re.S)
 
 
 class Build:
@@ -229,13 +244,23 @@ class Build:
 
     def __init__(self, prog):
         m = DISPATCH.search(prog)
-        if m is None:
-            raise ValueError("CINEMA.BIN: the ops' table not found")
-        key = (m.group(1)[0], w(m.group(2), 0))
+        if m is not None:
+            key = (m.group(1)[0], w(m.group(2), 0))
+        else:
+            # (Zenith's: no bound on the op; its ops are the table's entries before the first one that
+            # goes to the routine every unknown op goes to)
+            m = DISPATCH2.search(prog)
+            if m is None:
+                raise ValueError("CINEMA.BIN: the ops' table not found")
+            table = w(m.group(1), 0)
+            ents = [w(prog, table + 2 * k) for k in range(256)]
+            bad = max(set(ents), key=ents.count)
+            key = (ents.index(bad), table)
         if key not in BUILDS:
             raise ValueError("CINEMA.BIN: a build of %d ops (table at %xh) not known" % key)
         self.__dict__.update(BUILDS[key])
-        b = BUFFER.search(prog)
+        self.next = BUILDS[key].get("next", NEXT)
+        b = BUFFER.search(prog) or BUFFER2.search(prog)
         if b is None:
             raise ValueError("CINEMA.BIN: the scripts' buffer not found")
         self.buffer = w(b.group(1), 0) * 16
@@ -280,7 +305,7 @@ class Script:
                     break
                 fields = []
                 jump = None
-                if op in NEXT:
+                if op in getattr(self.build, "next", NEXT):
                     e = self.w(i + 1)
                     fields.append(i + 1)
                     if op == 0x09 and not i < e <= end:
@@ -464,6 +489,7 @@ def rebuild(sc, new_text, pages, limit):
             return where(v)    # (op 29h's palette, in the bytes after the last op)
         raise ValueError("an address into the middle of something: %x" % v)
     out = bytearray()
+    machine = machine_code(sc)
     for kind, s, e, a, body in pieces:
         if kind == "pages":
             for k, p in enumerate(body):
@@ -471,7 +497,7 @@ def rebuild(sc, new_text, pages, limit):
                 nxt = fix(e) if last else base + len(out) + 3 + len(p) + 1
                 out += b"\x09" + struct.pack("<H", nxt) + p + b"\0"
                 if not last:
-                    out += b"\x3F"
+                    out += bytes([getattr(sc.build, "wait", 0x3F)])
             continue
         out += b"".join(body)
         if a is None:
@@ -480,7 +506,57 @@ def rebuild(sc, new_text, pages, limit):
             if s <= f < e:
                 p = where(f) - base
                 struct.pack_into("<H", out, p, fix(w(out, p)))
+    # (machine code in the bytes after the ops, Zenith's animation handler: its own addresses moved)
+    for at, size, lo, hi in machine:
+        p = where(at) - base
+        v = int.from_bytes(out[p:p + size], "little")
+        if lo <= v <= hi:
+            out[p:p + size] = (where(v) if size == 2 else v).to_bytes(size, "little")
     return bytes(out)
+
+
+def machine_code(sc):
+    """[(place of a word, 2, lo, hi)] in the machine code op 00h calls: the immediates and displacements
+    that are places in the code's own span (the bytes after the last op), found by following the code
+    from op 00h's addresses and from the routine it hands to int 40h's AH=7 (a handler)."""
+    from capstone import Cs, CS_ARCH_X86, CS_MODE_16
+    from capstone.x86 import X86_OP_IMM, X86_OP_MEM
+    calls = [sc.w(a + 1) for a, (op, _e) in sc.ops.items() if op == 0x00]
+    if not calls:
+        return []
+    end = sc.base + len(sc.d)
+    last = max(e for _op, e in sc.ops.values())
+    lo, hi = last, end
+    if not all(lo <= c < hi for c in calls):
+        raise ValueError("op 00h calls machine code outside the bytes after the last op")
+    md = Cs(CS_ARCH_X86, CS_MODE_16)
+    md.detail = True
+    todo, seen, out = list(calls), set(), []
+    while todo:
+        pc = todo.pop()
+        si = None                                  # (the last value put in si)
+        while lo <= pc < hi and pc not in seen:
+            seen.add(pc)
+            ins = next(md.disasm(bytes(sc.d[pc - sc.base:pc - sc.base + 16]), pc), None)
+            if ins is None:
+                raise ValueError("machine code at %x does not decode" % pc)
+            for o in ins.operands:
+                if o.type == X86_OP_IMM and ins.imm_size == 2 and lo <= (o.imm & 0xFFFF) <= hi:
+                    out.append((pc + ins.imm_offset, 2, lo, hi))
+                if o.type == X86_OP_MEM and ins.disp_size == 2 and lo <= (o.mem.disp & 0xFFFF) <= hi:
+                    out.append((pc + ins.disp_offset, 2, lo, hi))
+            if ins.mnemonic == "mov" and ins.op_str.startswith("si, 0x"):
+                si = int(ins.op_str[4:], 16)
+            if ins.mnemonic == "int" and ins.op_str == "0x40" and si is not None and lo <= si < hi:
+                todo.append(si)                    # (int 40h AH=7 with si a handler)
+            m = ins.mnemonic
+            if m in ("call", "jmp") or (m.startswith("j") and m != "jmp"):
+                if ins.op_str.startswith("0x"):
+                    todo.append(int(ins.op_str, 16))
+            if m in ("ret", "retf", "iret", "jmp"):
+                break
+            pc += ins.size
+    return out
 
 
 def redirect(sc, new_text, pages, limit):
@@ -516,7 +592,7 @@ def redirect(sc, new_text, pages, limit):
             nxt = old_next if last else at + 3 + len(p) + 1
             tail += b"\x09" + struct.pack("<H", nxt) + p + b"\0"
             if not last:
-                tail += b"\x3F"
+                tail += bytes([getattr(sc.build, "wait", 0x3F)])
         d[a - base:a - base + 3] = b"\x04" + struct.pack("<H", here)
     if end0 + len(tail) > limit:
         raise OverflowError(end0 + len(tail))
