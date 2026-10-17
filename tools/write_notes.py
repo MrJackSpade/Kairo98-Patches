@@ -2574,6 +2574,78 @@ def psyo_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def maxadv_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "dlg": "lines of dialogue", "name": "speaker names", "ttl": "chapter titles",
+             "cho": "menu choices", "roll": "staff roll", "set": "words kept in variables",
+             "launch": "launcher texts", "engine": "program strings"}
+    out = ["# %s%s (Melody)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`).  VNDB lists an English release for "
+                   "Windows (*In Darkness*), another platform's: its script may be ported." % (
+                       "no PC-98 English release or announcement found" if res == "clear" else res,
+                       c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Melody's MAX Adventure Scenario Driver (`MAXG.EXE`, encrypted over LZEXE) under MS-DOS, started "
+            "by `YAMI.COM`; the files are in PCK archives served by Melody's disk driver EXDD "
+            "(`pc98tl/maxpck.py`: the archive, and MAXPACK, its LZSS).  The scenario is bytecode scripts "
+            "(`*.MDR` in `MDR.PCK`): messages, dialogue with a speaker's name, chapter titles, menus of "
+            "choices, string variables and the staff roll.  `pc98tl/maxadv.py` documents it, "
+            "`pc98tl/maxadv_tl.py` the English.  A build with no English leaves the disk as it is.  The "
+            "game needs the GDC at 2.5 MHz (game.json `dipsw`).", "",
+            "* English at any length: each record with English is written again, in its place when it fits, "
+            "else in the room another moved record left or at the script's end, with a goto to it and one "
+            "back; nothing else in the script moves.  The scripts are packed again into `MDR.PCK`.",
+            "* The engine draws ASCII half-width itself.  The patcher breaks the English between words at "
+            "54 columns and makes a page of every three lines, each page but the last ending with the "
+            "game's own wait; a line of dialogue repeats its speaker's name on each page.",
+            "* The engine's own strings (its system menu, save and load screens, messages) are written in "
+            "place and the engine is written out unpacked; the settings' values kept in `SYSTEM.DAT` follow "
+            "the menu's English.  The launcher's text is written in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"].replace("/", "\\")]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m`), dialogue (`d`), titles (`t`), choices (`c`), variables (`v`), the staff roll "
+            "(`r`): any length; messages and dialogue broken between words at 54 columns and paged by three "
+            "lines; `\\n` a new line.  A speaker's name (`n`) counts in its line's first row.",
+            "* `{@xx}` codes must be kept: `{@cX}` a colour, `{@sN}` a speed, `{@wN}` a pause, `{@m0}` the "
+            "hero's name (counted as 8 columns), `{@mN}` another value.  The patcher warns by string id when "
+            "they differ from the Japanese's.",
+            "* A menu choice (`c`) is one line; keep each short (the menu is as wide as its longest item).",
+            "* Each script, with its English, must fit the engine's 64K script buffer: a build over it is "
+            "refused with the script's name.",
+            "* Program strings (`e`) and the launcher's text (`l`): in place, `max_cells` bytes; longer is "
+            "cut and reported by string id.  In `l`, `\\n` takes two bytes.",
+            "* English is ASCII; anything else is written as `?`, and `@` (the codes' mark) as `?` too."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the name-entry screen's letters, which stay as they "
+            "are so a name can be picked).",
+            "* The installer (`HDINST.EXE`), which the hard-disk image does not use."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3539,14 +3611,14 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
-                   "psyo": psyo_notes}[cfg["encoding"]](
+                   "psyo": psyo_notes, "maxadv": maxadv_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

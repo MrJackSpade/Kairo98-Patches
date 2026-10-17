@@ -451,5 +451,10 @@
   "remarks": [
    "Not reached in this test: the command menus, saving and loading (to a user disk in drive 2), the ending."
   ]
+ },
+ "kurayami": {
+  "remarks": [
+   "Not reached in this test: the menus of choices inside the scenes, saving and loading, the endings and the staff roll."
+  ]
  }
 }

@@ -4157,5 +4157,27 @@
    "About 45 clicks on: the next scenes (corridor, four speakers)",
    "OK: every line and name in filler, no Japanese left on screen"
   ]
+ ],
+ "kurayami": [
+  [
+   "Boot the hard disk (GDC 2.5 MHz): the launcher (YAMI.COM)",
+   "OK: its menu in filler, in place, half-width DOS text"
+  ],
+  [
+   "The title, then the start-up messages",
+   "OK: messages in filler, half-width, broken between words in the message window"
+  ],
+  [
+   "The start menu (choices)",
+   "OK: every choice in filler; the second picked opens the name screen, the first (Up, Return) starts the game"
+  ],
+  [
+   "The opening narration (YM001) and the first dialogue (YM002), about 70 clicks",
+   "OK: lines in filler; a long message pages after three lines with the game's wait cursor and goes on; dialogue shows its speaker's name in filler before the line"
+  ],
+  [
+   "Right click: the engine's system menu",
+   "OK: its items and the settings' values in filler (the engine written out unpacked)"
+  ]
  ]
 }
