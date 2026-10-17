@@ -120,13 +120,17 @@ def _commands(exe):
     return dst, list(reversed(cmds)), long_hdr
 
 
-def pack(orig, image):
+def pack(orig, image, extra=b""):
     """`orig` (an EXEPACK-packed program) with its unpacked load image
-    replaced by `image` (the same length): the original's commands are
+    replaced by `image` (the same length), and `extra` (whole paragraphs)
+    put after it, the image made that much longer (the memory past the
+    image the program asks for made that much smaller, as long as the
+    unpacker still has its room): the original's commands are
     kept where the bytes are unchanged, and those covering changed bytes
     become copies (a fill split around them).  The unpacker, its
     relocation table and the memory the program asks for stay as they
-    were.  The result is checked by unpacking it.
+    were (with `extra`, the unpacker's stack moves up with it).  The result
+    is checked by unpacking it.
 
     The unpacker decodes in place, from the end down: a copy's data must
     stay below the output it becomes.  When a change near the image's start
@@ -137,7 +141,7 @@ def pack(orig, image):
     keep = 0
     while True:
         try:
-            return _pack(orig, image, keep)
+            return _pack(orig, image, keep, extra)
         except (ValueError, IndexError):
             nxt = [n for n in range(keep, len(cmds))
                    if image[cmds[n][0]:cmds[n][1]] != (bytes([cmds[n][3]]) * (cmds[n][1] - cmds[n][0])
@@ -147,7 +151,7 @@ def pack(orig, image):
             keep = nxt[0] + 1
 
 
-def _pack(orig, image, keep):
+def _pack(orig, image, keep, extra=b""):
     """`pack` with the image's first `keep` commands' output kept in place."""
     hdr = list(struct.unpack_from("<14H", orig, 0))
     base = hdr[4] * 16
@@ -183,17 +187,29 @@ def _pack(orig, image, keep):
             data += bytes([val, count & 0xFF, count >> 8, 0xB0 | last])
         else:
             data += val + bytes([count & 0xFF, count >> 8, 0xB2 | last])
+    if len(extra) % 16 or len(extra) > 0xFFFF:
+        raise ValueError("EXEPACK: the extra bytes must be whole paragraphs, under 64 KB")
+    if extra:
+        data += extra + bytes([len(extra) & 0xFF, len(extra) >> 8, 0xB2])
     while len(data) % 16:
         data.append(0xFF)
-    stub = img[block:]
+    stub = bytearray(img[block:])
+    dest = struct.unpack_from("<H", stub, 12)[0] + len(extra) // 16
+    struct.pack_into("<H", stub, 12, dest)
+    stub = bytes(stub)
     hdr[11] = len(data) // 16                       # the unpacker's segment
+    # the unpacker's stack, past where it puts itself (past the unpacked image): moved up with it
+    hdr[7] += len(extra) // 16
     load_old = hdr[2] * 512 - (512 - hdr[1] if hdr[1] else 0) - base
     load_new = len(data) + len(stub)
     hdr[5] = max(0, hdr[5] - (load_new - load_old + 15) // 16)    # the same total memory
+    # (the unpacker puts itself past the unpacked image, its stack past that)
+    hdr[5] = max(hdr[5], (dest * 16 + len(stub) + 0x100 - load_new + 15) // 16,
+                 (hdr[7] * 16 + hdr[8] - load_new + 15) // 16)
     total = base + load_new
     hdr[1], hdr[2] = total % 512, (total + 511) // 512
     result = struct.pack("<14H", *hdr) + orig[28:base] + bytes(data) + stub
     check = unpack(result)
-    if check[struct.unpack_from("<H", check, 8)[0] * 16:][:len(image)] != image:
+    if check[struct.unpack_from("<H", check, 8)[0] * 16:][:len(image) + len(extra)] != image + extra:
         raise ValueError("EXEPACK: the repacked program does not unpack to the image")
     return result

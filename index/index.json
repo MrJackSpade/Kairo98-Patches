@@ -77545,15 +77545,27 @@
      "path": "Misty Blue\\Misty Blue [FD]\\Misty Blue (Disk C).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/misty_blue (patcher working, machine translation in progress)",
+     "url": "../games/misty_blue/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v5597",
+     "url": "https://vndb.org/v5597",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r10852 (no erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Enix.zip/Morita Kazurou no Shougi",

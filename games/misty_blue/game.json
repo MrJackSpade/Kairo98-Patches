@@ -1,0 +1,11 @@
+{
+ "title": "Misty Blue",
+ "key": "Enix.zip/Misty Blue",
+ "image": "Misty Blue\\Misty Blue [FD]\\Misty Blue (Disk A).hdm",
+ "disks": [
+  "Misty Blue (Disk B).hdm",
+  "Misty Blue (Disk C).hdm"
+ ],
+ "encoding": "misty",
+ "boot_steps": "30:shot,1:down,1:enter,10:shot"
+}

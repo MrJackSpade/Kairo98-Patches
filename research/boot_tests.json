@@ -4179,5 +4179,35 @@
    "Right click: the engine's system menu",
    "OK: its items and the settings' values in filler (the engine written out unpacked)"
   ]
+ ],
+ "misty_blue": [
+  [
+   "Boot disk A (disk B in drive 2): the start menu",
+   "OK: its four choices in filler, half-width, the cursor bar on the first"
+  ],
+  [
+   "Start from the beginning: the opening's pictures, the title, then the first scene (about 180 s, Return)",
+   "OK: messages in filler, half-width two letters a cell, broken between words; a message's next line in the window; the wait cursor shows"
+  ],
+  [
+   "The menu's second choice (load): the load prompt",
+   "OK: the prompt in filler in place, its two digits kept"
+  ],
+  [
+   "The menu's fourth choice: the bonus game's start-up screen (the text-screen writer)",
+   "OK: both lines in filler, half-width, in place"
+  ],
+  [
+   "The bonus game (disk B in drive 1, disk A in drive 2): the opening talk",
+   "OK: messages in filler, half-width, broken between words; a full window waits for Return, is cleared and goes on"
+  ],
+  [
+   "F1 (load), Return: the town from the save on disk A; F3 (items); F2 (save)",
+   "OK: the load and save prompts and their choices in filler (choices cut to their boxes); the item list in filler over three lines with the counts; the town as in the original"
+  ],
+  [
+   "Walking the town to a battle (the Benz man), Return through two rounds",
+   "OK: the battle's choices and messages in filler, the monster's name (kept in its buffer) and the damage numbers in the lines"
+  ]
  ]
 }

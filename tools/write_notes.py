@@ -2646,6 +2646,80 @@ def maxadv_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def misty_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "prompt": "program prompts", "text": "text-screen and DOS texts",
+             "choice": "bonus-game menu choices"}
+    out = ["# %s%s (Enix)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`), with disks B and C beside it." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Enix's own engine on its own DOS (ENIX.DOS), three floppies.  Disks A and C each have a `MAIN.EXE` "
+            "(EXEPACK) that loads scene modules and, per scene, a text bundle (`*.BUN`) into its data segment; "
+            "the text is a code of its own (one or two bytes a character).  Disk B also carries the bonus game "
+            "(*えにっくす くえすと*, booted from disk B): its own `MAIN.EXE` running `.MES` scripts with "
+            "Shift-JIS text.  `pc98tl/misty.py` documents the story's engine, `pc98tl/misty_mes.py` the bonus "
+            "game's, `pc98tl/misty_tl.py` the English.  A build with no English leaves the disks as they are.", "",
+            "* Story: English drawn two half-width letters a cell from the BIOS font by a helper the decoder "
+            "goes through; the helper breaks lines between words at the window's edge.  The English's most "
+            "frequent words are kept in a dictionary in `MAIN.EXE` (a code each) so the bundles fit their "
+            "room.  The helper and dictionary are appended after the program's image (EXEPACK repacked, the "
+            "unpacker's stack moved up with it).",
+            "* The program's prompts (disk change, save and load) and the opening credits in the scene "
+            "modules are written in place.  The modules' text-screen writer (the bonus game's start-up "
+            "screen, the disk prompts) is rewritten in its own bytes to take half-width letters.",
+            "* Bonus game: each text in a script becomes a reference to a table of English put after its "
+            "`MAIN.EXE`'s image, with a helper that draws it half-width, breaks lines between words and, when "
+            "a window is full, waits for Return and clears it.  The scripts get shorter (the scripts place "
+            "their own music and maps right after themselves).  The names the bonus game keeps (the hero, "
+            "the monsters) are references too, and the save on disk A (`FLAG0`) has its names rewritten "
+            "the same way.",
+            "* `MTL_NOTE.TXT` is put on disk A; the patched B and C are "
+            "written as `<out> - Misty Blue (Disk B).hdm` and `(Disk C)`."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m`): any length, broken between words at the window's edge; `\\n` a new line.  "
+            "The story's bundles must fit their room in the data segment (B000h-FC00h): a build over it is "
+            "refused with the bundle's name (the dictionary of frequent words keeps the English compact).  "
+            "The bonus game's English must fit its program's segment (about 50 KB): a build over it is refused.",
+            "* Prompts (`p`): in place, `max_cells` letters; keep each `{D}` (a digit), in order.",
+            "* Texts (`t`): in place, `max_cells` letters, a letter a column.",
+            "* Choices (`c`): the bonus game's menus draw each choice in a box of a fixed width: `max_cells` "
+            "letters.",
+            "* Longer `p`, `t` or `c` is cut and reported by string id.",
+            "* Story English uses letters, digits and `.,'\"!?-:;()`; the bonus game's any ASCII (`\"` is "
+            "written as `'`, `|` as `/`); anything else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (titles, the bonus game's status panel).",
+            "* `SOC.DAT` on disk B: a leftover directory listing nothing reads.",
+            "* The bonus game's debug screens (flag editor) are written in place like the other texts but "
+            "are not reachable in normal play."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3611,14 +3685,14 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
-                   "psyo": psyo_notes, "maxadv": maxadv_notes}[cfg["encoding"]](
+                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)
