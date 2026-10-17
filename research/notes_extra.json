@@ -471,5 +471,10 @@
   "remarks": [
    "Not reached in this test: the title menu's other choices (the music mode, the announcement: the menu took neither the keys nor the mouse moves the test sent), saving and loading, the endings and the staff roll."
   ]
+ },
+ "star_platinum": {
+  "remarks": [
+   "Not reached in this test: the later scenes' narration (its narrower windows), the card rules' explanations (SPD.BIN), the staff rolls, saving and loading; the drivers' and the start-up disk maker's messages show only when memory is short or the MIDI search hung."
+  ]
  }
 }

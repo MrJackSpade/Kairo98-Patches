@@ -5,5 +5,6 @@
  "encoding": "starpt",
  "dir": "STAR_PT",
  "engine": "SPV.BIN",
- "text": "SCENARIO.GDM"
+ "text": "SCENARIO.GDM",
+ "boot_steps": "25:esc,4:esc,5:hold=98,1:shot,1:enter,6:shot,3:enter,3:enter,3:shot,3:lclick,1:shot,1:shot,3:rclick,3:shot"
 }

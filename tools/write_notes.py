@@ -2712,6 +2712,78 @@ def vangel_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def starpt_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "narration paragraphs", "dlg": "speeches", "name": "speaker names", "choice": "menu lines",
+             "balloon": "card game balloons", "credit": "staff roll lines", "prog": "program texts"}
+    out = ["# %s%s (Custom)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Custom's own engine under MS-DOS on the hard disk: `STAR_PT\\SP.COM` loads the resident drivers "
+            "(`VAL24`, `CSTMOUSE`, `TRPSCHRN`, `CSTMET`, `CSTMIDI.BIN`) and runs the modules in turn (`CUSTLOGO`, "
+            "`SPO`, `SPG`, `SPD`, `SPF`, `SPE`, `SPV.BIN`), each a PKLITE 1.50 program.  The text is in GDM "
+            "archives (an LZSS offset table, then LZSS entries): `SCENARIO.GDM` (each entry bytecode and a pool "
+            "of strings it names by number) and `MUSIC.GDM` (the card game's balloons, the staff rolls).  "
+            "`pc98tl/starpt.py` documents the formats, `pc98tl/starpt_tl.py` the English, `pc98tl/pklite.py` "
+            "the unpacking.  A build with no English leaves the disk as it is.", "",
+            "* The programs are unpacked by running PKLITE's own decompressor under emulation (twice, loaded "
+            "apart, for the relocations) and written unpacked.",
+            "* English half-width: the modules that draw text (`SPV`, `SPG`, `SPD`, `SPE`, `SPF`) drew a byte "
+            "below 100h as a blank; their glyph routine calls a helper (a segment put in before the data "
+            "segment) that draws it from the BIOS 8x16 font.",
+            "* The script's strings are written again at any length (the bytecode names them by number); the "
+            "patcher breaks the English between words at the window's width (a narrower layout's where the "
+            "Japanese is narrower), under the speaker's name, and starts a new screen with the name again "
+            "after four lines.  SPV's script buffer is made 65,520 bytes.",
+            "* The card game's balloons broken at 27 letters (the program breaks a line itself after 28), up "
+            "to four lines; the staff rolls' lines centred where the Japanese was.",
+            "* The programs' own text (the system menu, the card rules, the drivers' and the start-up disk "
+            "maker's DOS messages) in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Narration (`m`), speeches (`d`): any length, broken between words and paged by the patcher; "
+            "`\\n` a new line; keep each `{..}` code (`{p15_}` a pause, `{w10}` the typing speed, `{k}` a key "
+            "wait).  `{Gxxxx}` is a character of the game's own font and is dropped.  A scene with its English "
+            "must fit the script buffer (65,520 bytes): a build over it is refused with the entry's number.",
+            "* Speaker names (`n`): up to 7 letters (the column before the lines).",
+            "* Menu lines (`c`): one line, `max_cells` letters (the box keeps the Japanese width; longer is "
+            "reported by string id).",
+            "* Balloons (`b`): broken at 27 letters, up to four lines; more is cut and reported.",
+            "* Staff roll lines (`r`): one line, centred.",
+            "* Program texts (`e`): in place, `max_cells` letters; longer is cut and reported by string id; "
+            "keep each `%s`, `%d`, `%c`, `%ld` and `{ESC}`.",
+            "* English uses ASCII; other characters are written as `?` (curly quotes, dashes and `…` are "
+            "made ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the opening's subtitles, the title)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3815,14 +3887,16 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
+                                    "starpt"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
-                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes}[cfg["encoding"]](
+                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
+                   "starpt": starpt_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

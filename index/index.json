@@ -59692,15 +59692,27 @@
      "path": "Star Platinum\\Star Platinum [HD]\\Star Platinum.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/star_platinum (patcher working, machine translation in progress)",
+     "url": "../games/star_platinum/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v18101",
+     "url": "https://vndb.org/v18101",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r41883 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Custom.zip/Teen",

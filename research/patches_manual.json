@@ -2840,5 +2840,18 @@
    "url": "https://vndb.org/v8718",
    "source": "VNDB"
   }
+ ],
+ "Custom.zip/Star Platinum": [
+  {
+   "label": "This repo: games/star_platinum (patcher working, machine translation in progress)",
+   "url": "../games/star_platinum/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v18101",
+   "url": "https://vndb.org/v18101",
+   "source": "VNDB"
+  }
  ]
 }

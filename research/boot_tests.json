@@ -4241,5 +4241,23 @@
    "The first text: narration, then a speaker's lines (about 5 clicks)",
    "OK: narration in filler, broken between words, its lines lined up; the speaker's name in filler before the first line and the rest under it; four lines a page"
   ]
+ ],
+ "star_platinum": [
+  [
+   "Boot the hard disk (SP.COM: the drivers, the logo, the opening's pictures); Esc to the top menu",
+   "OK: the menu's title and choices in filler, half-width; the box keeps the Japanese width (a longer choice is cut by the program)"
+  ],
+  [
+   "Story mode, start from the beginning: the prologue's speeches (about 5 keys)",
+   "OK: each speaker's name and lines in filler, half-width, broken between words under the name; four lines a screen, a speech going on to a new screen with the name again"
+  ],
+  [
+   "The top menu's second choice (the card game): its introduction, the first balloon",
+   "OK: the introduction's lines in filler, paged in its box; the balloon in filler, broken at 27 letters, no blank lines"
+  ],
+  [
+   "Right click in the card game: the system menu (SPG.BIN's own text)",
+   "OK: every choice in filler, half-width, the settings' values beside them"
+  ]
  ]
 }
