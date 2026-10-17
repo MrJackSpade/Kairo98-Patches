@@ -1,0 +1,10 @@
+{
+ "title": "Escape!",
+ "key": "May-beSoft.zip/Escape!",
+ "image": "Escape!\\Escape! [HD]\\Escape!.hdi",
+ "encoding": "fas",
+ "dir": "ESCAPE",
+ "engine": "FAS.EXE",
+ "text": "ES_FSXP.DAT",
+ "boot_steps": "20:shot,8:shot,3:enter,6:shot,3:enter,5:shot,3:enter,4:shot,3:enter,4:shot"
+}

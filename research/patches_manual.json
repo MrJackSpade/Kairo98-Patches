@@ -2853,5 +2853,18 @@
    "url": "https://vndb.org/v18101",
    "source": "VNDB"
   }
+ ],
+ "May-beSoft.zip/Escape!": [
+  {
+   "label": "This repo: games/escape (patcher working, machine translation in progress)",
+   "url": "../games/escape/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v2316",
+   "url": "https://vndb.org/v2316",
+   "source": "VNDB"
+  }
  ]
 }

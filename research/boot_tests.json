@@ -4259,5 +4259,23 @@
    "Right click in the card game: the system menu (SPG.BIN's own text)",
    "OK: every choice in filler, half-width, the settings' values beside them"
   ]
+ ],
+ "escape": [
+  [
+   "Boot the hard disk (ES.BAT, FAS.EXE): the opening's lines (FAS.EXE's own text)",
+   "OK: the lines in filler, half-width, in place (cut at the Japanese room)"
+  ],
+  [
+   "The title menu",
+   "OK: every choice in filler, half-width, in place"
+  ],
+  [
+   "Game start: the first scene's speeches (MAP1A's messages, about 10 keys)",
+   "OK: each speaker's name and message in filler, half-width; broken between words at 47 columns, the later lines under the speaker's indent; the window's key mark after each message"
+  ],
+  [
+   "A test build with a nine-line English message and an English name: the first message",
+   "OK: five lines, a key, the window cleared, the other four at the indent; the name padded to the indent, the next message beside it"
+  ]
  ]
 }

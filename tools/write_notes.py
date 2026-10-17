@@ -2784,6 +2784,72 @@ def starpt_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def fas_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speaker names", "prog": "program texts"}
+    out = ["# %s%s (May-Be Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "May-Be Soft's FAS engine (`ESCAPE\\FAS.EXE`, Borland C++ 1993, run by `ES.BAT`) under MS-DOS on "
+            "the hard disk.  The scenes' scripts are FSX files in `ES_FSXP.DAT`, the H scenes' HSX files in "
+            "`ES_HSXP.DAT` (packs: a directory, then the files): events, each a plain bytecode head that "
+            "names message streams in its code (stored XOR D6h) by their place.  `pc98tl/fas.py` documents "
+            "the formats, `pc98tl/fas_tl.py` the English.  A build with no English leaves the disk as it is.", "",
+            "* The messages are written again at any length: the events' code is rebuilt, the heads' code "
+            "places, the events' lengths and places moved.",
+            "* English half-width: the message routine's character fetch calls a helper that takes a byte "
+            "20h-7Eh as a character of one byte (drawn by the program's text routine, half-width on the text "
+            "screen), and its column step one that steps one column for it (a segment put in before the data "
+            "segment).",
+            "* The patcher breaks the English between words at 47 columns (the program breaks a line itself "
+            "at 48), the lines after the first at the speaker's indent, and waits for a key and starts a new "
+            "window after five lines; an English name is padded to the indent.",
+            "* FAS.EXE's own text (the title and in-game menus, the item names, the save and load messages, "
+            "the opening's lines) in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m`): any length, broken between words and paged by the patcher; `\\n` a new line; "
+            "keep each `{K}` (a key wait).  A script with its English must stay within 32,768 bytes: a build "
+            "over it is refused with the script's name.",
+            "* Speaker names (`n`): up to `max_cells` letters (the indent of the lines under them, usually "
+            "10), brackets included; longer is reported by string id.",
+            "* Program texts (`e`): in place, `max_cells` letters; longer is cut and reported by string id.  "
+            "Keep `_w`, `_s` and `%d`; some are pieces the program puts together (a menu's name and the "
+            "rest of its prompt).",
+            "* English uses ASCII; other characters are written as `?` (curly quotes, dashes, `…` and the "
+            "name brackets `【】` are made ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title).",
+            "* The `.DOC` files in the game's folder (the developers' notes and the questionnaire), read "
+            "outside the game."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3888,7 +3954,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt"):
+                                    "starpt", "fas"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -3896,7 +3962,7 @@ def main():
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
-                   "starpt": starpt_notes}[cfg["encoding"]](
+                   "starpt": starpt_notes, "fas": fas_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

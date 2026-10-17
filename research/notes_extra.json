@@ -476,5 +476,10 @@
   "remarks": [
    "Not reached in this test: the later scenes' narration (its narrower windows), the card rules' explanations (SPD.BIN), the staff rolls, saving and loading; the drivers' and the start-up disk maker's messages show only when memory is short or the MIDI search hung."
   ]
+ },
+ "escape": {
+  "remarks": [
+   "Not reached in this test: the in-game menu (the right button opened nothing at that point), the H scenes (ES_HSXP.DAT, the same message code), saving and loading, the endings."
+  ]
  }
 }
