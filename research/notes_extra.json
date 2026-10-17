@@ -466,5 +466,10 @@
   "remarks": [
    "Not reached in this test: the save, load and system menus (000.CEN), the battles, the other two heroes' stories, the endings."
   ]
+ },
+ "virgin_angel": {
+  "remarks": [
+   "Not reached in this test: the title menu's other choices (the music mode, the announcement: the menu took neither the keys nor the mouse moves the test sent), saving and loading, the endings and the staff roll."
+  ]
  }
 }

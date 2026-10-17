@@ -2646,6 +2646,72 @@ def maxadv_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def vangel_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "narration paragraphs", "dlg": "speeches", "name": "speaker names", "prog": "program texts",
+             "bat": "start-up batch lines", "ann": "announcement lines"}
+    out = ["# %s%s (Crystal Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Crystal Soft's own engine (`V_ANGEL\\M.EXE`, EXEPACK, run by the start-up batch `HDGAME.BAT` as "
+            "`m cmd00.scb`) under MS-DOS on the hard disk.  The scenario's text is `CMD00.TXB` (every byte "
+            "complemented; texts ended by 1Ah, lines by 00h, a page by a line of 12h, a speaker's lines after "
+            "13h and the name), the most frequent characters a byte each by a table in M.EXE.  "
+            "`pc98tl/vangel.py` documents it, `pc98tl/vangel_tl.py` the English.  A build with no English "
+            "leaves the disk as it is.", "",
+            "* English two letters a character, as two-byte codes of the Shift-JIS leads no text uses; the "
+            "program's four glyph routines call, in place of their BIOS glyph call, a helper in a segment put "
+            "in before the data segment, which draws such a code from two 8x16 BIOS glyphs.  M.EXE is written "
+            "unpacked.",
+            "* The patcher breaks the English between words (56 letters a line, a speaker's lines narrower by "
+            "the name), pads each page's lines to one length (the program centres each line), and starts a "
+            "new page after four lines; a speech going on to a new page shows the speaker's name again.",
+            "* M.EXE's own text (the opening's lines, the staff roll, the music mode) in place; its console "
+            "messages (the mouse prompt, start-up errors) in place as ASCII.",
+            "* The start-up batch files' lines (the sound board's check and choice) written as English DOS "
+            "text, their colours kept; `ANNOUNCE.TXT` (the title menu's announcement) written as ASCII.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Narration (`m`), speeches (`d`): any length, broken between words and paged by the patcher; "
+            "`\\n` a new line.  A text with its English must fit the program's text buffer (8191 bytes): a "
+            "build over it is refused with the text's number.",
+            "* Speaker names (`n`): short; a speaker's lines are narrower by the name.",
+            "* Program texts (`e`): in place, `max_cells` letters; longer is cut and reported by string id.",
+            "* Batch lines (`b`): any length; keep each `{Cn}` (a colour).  `<`, `>` and `|` are written as "
+            "`(`, `)` and `/` (DOS's redirections).",
+            "* Announcement lines (`a`): up to `max_cells` letters a line; longer is cut and reported.",
+            "* English uses letters, digits and `.,'!?-` (`\"` written as `'`, `:` and `;` as `,`, brackets "
+            "as `-`); anything else as `?`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title menu's choices, the title)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3749,14 +3815,14 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
-                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes}[cfg["encoding"]](
+                   "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

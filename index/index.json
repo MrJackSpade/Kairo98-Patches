@@ -59116,15 +59116,27 @@
      "path": "Virgin Angel\\Virgin Angel [HD]\\Crystal Soft (Virgin Angel).hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/virgin_angel (patcher working, machine translation in progress)",
+     "url": "../games/virgin_angel/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8718",
+     "url": "https://vndb.org/v8718",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17730 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Wanderers",

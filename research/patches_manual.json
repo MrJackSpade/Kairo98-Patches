@@ -2827,5 +2827,18 @@
    "url": "https://vndb.org/v8797",
    "source": "VNDB"
   }
+ ],
+ "doujinHomebrew.zip/Virgin Angel": [
+  {
+   "label": "This repo: games/virgin_angel (patcher working, machine translation in progress)",
+   "url": "../games/virgin_angel/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8718",
+   "url": "https://vndb.org/v8718",
+   "source": "VNDB"
+  }
  ]
 }

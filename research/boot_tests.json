@@ -4223,5 +4223,23 @@
    "The menu of places at the scene's end",
    "OK: its choices in filler in the menu's box (20 letters each); picking one moves to the next scene, whose messages are in filler"
   ]
+ ],
+ "virgin_angel": [
+  [
+   "Boot the hard disk: the start-up batch (HDGAME.BAT), its sound board check and choice; 2 picked",
+   "OK: every line in filler, ASCII DOS text, the colours kept"
+  ],
+  [
+   "M.EXE's mouse prompt; Y",
+   "OK: the prompt in filler, ASCII"
+  ],
+  [
+   "The title menu's first choice: the opening's lines (M.EXE)",
+   "OK: each line in filler, half-width two letters a character, centred as in the original"
+  ],
+  [
+   "The first text: narration, then a speaker's lines (about 5 clicks)",
+   "OK: narration in filler, broken between words, its lines lined up; the speaker's name in filler before the first line and the rest under it; four lines a page"
+  ]
  ]
 }

@@ -1,0 +1,10 @@
+{
+ "title": "Virgin Angel",
+ "key": "doujinHomebrew.zip/Virgin Angel",
+ "image": "Virgin Angel\\Virgin Angel [HD]\\Crystal Soft (Virgin Angel).hdi",
+ "encoding": "vangel",
+ "dir": "V_ANGEL",
+ "engine": "M.EXE",
+ "text": "CMD00.TXB",
+ "boot_steps": "22:shot,3:key=50,12:key=89,15:enter,10:shot,8:lclick,6:shot,1:lclick,5:shot,1:lclick,5:shot,1:lclick,5:shot,1:lclick,5:shot"
+}
