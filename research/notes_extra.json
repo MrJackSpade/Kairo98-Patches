@@ -446,5 +446,10 @@
   "remarks": [
    "Not reached in this test: the rooms past the second, saving and loading, the ending."
   ]
+ },
+ "psy_o_blade": {
+  "remarks": [
+   "Not reached in this test: the command menus, saving and loading (to a user disk in drive 2), the ending."
+  ]
  }
 }

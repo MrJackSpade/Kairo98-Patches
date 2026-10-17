@@ -4139,5 +4139,23 @@
    "Kana lock, type ｷﾀ (north)",
    "OK: the next room (the snake) with its description in filler; another command's reply in filler"
   ]
+ ],
+ "psy_o_blade": [
+  [
+   "Boot both floppies; the opening demo (cockpit picture, two speakers)",
+   "OK: names and lines in filler, half-width, broken between words"
+  ],
+  [
+   "Title screen (PSY-O-BLADE, load a save?)",
+   "OK: title, copyright and the yes/no choice in filler; clicking the second choice starts a new game"
+  ],
+  [
+   "First scene: two portrait windows",
+   "OK: the speaker names (the bars above the portraits) and both windows' lines in filler; a full window shows the game's wait cursor and is cleared for the rest"
+  ],
+  [
+   "About 45 clicks on: the next scenes (corridor, four speakers)",
+   "OK: every line and name in filler, no Japanese left on screen"
+  ]
  ]
 }

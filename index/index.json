@@ -212616,15 +212616,27 @@
      "path": "Psy-O-Blade\\Psy-O-Blade [FD]\\Psy-O-Blade (Program disk).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/psy_o_blade (patcher working, machine translation in progress)",
+     "url": "../games/psy_o_blade/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v7554",
+     "url": "https://vndb.org/v7554",
+     "source": "VNDB"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r18950 (no erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "TeSoft.zip/Rune Worth - Kokui no Kikoushi",

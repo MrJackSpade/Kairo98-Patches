@@ -2510,6 +2510,70 @@ def widry_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def psyo_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    out = ["# %s%s (T&E Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`), with `%s` in drive 2." % (
+               cfg["image"].replace("\\", "/"), cfg["disks"][0])]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`).  VNDB's English release is the Mega Drive "
+                   "version's (a fan translation), another platform's." % (
+                       "no PC-98 English release or announcement found" if res == "clear" else res,
+                       c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Two 2HD disks of raw sectors (no file system).  The main program (on the program disk at "
+            "`program_at`, loaded at 2000h:0) loads overlays (code with the text inline) to 2000h:AEC0h, and "
+            "small resident blocks (the speaker names, the item names, the save screens) above them, through "
+            "12-byte entries (drive, track, sector, length, address).  Text is stored 60h less than the "
+            "characters; bytes below 20h are commands (window, clear, wait, colour, choices...).  Every message "
+            "goes through one routine.  `pc98tl/psyo.py` documents it, `pc98tl/psyo_tl.py` the English.  A "
+            "build with no English leaves the disk as it is.", "",
+            "* English at any length: a table of the English is put on the program disk's empty tracks and "
+            "read into 6000h:0 at start-up by a stub in the program's zeros.  The message routine looks its "
+            "message up there by its bytes and reads the English from it instead, drawing it half-width.",
+            "* Lines are broken between words at the window's right edge.  When English fills its window, the "
+            "game's own wait cursor shows and the window is cleared for the rest (the Japanese scrolls).",
+            "* The disks have no file system: `MTL_NOTE.TXT` is written next to the patched disk, and the data "
+            "disk is copied there unchanged."]
+    out += ["", "## Script", "",
+            "%d strings: %d messages (dialogue, narration, menus and choices, the speaker and item names, the "
+            "title and disk screens)." % (len(strings), len(strings)), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; lines broken between words at the window's edge, a full window "
+            "waits for a key and is cleared.  `\\n` is a new line.",
+            "* `{XX}` and `{XX:args}` are the game's commands and must be kept, in order: `{04:nn}` picks a "
+            "window, `{09}` clears it, `{08}` waits for a key, `{0C:nn}` sets the colour, `{05:...}` and `{06:nn}` "
+            "place the text, `{0F}` marks a choice's start and end (keep a choice's text between its two "
+            "`{0F}`), `{0E:...}` calls one of the game's routines (a picture, a portrait), `{14:...}` prints "
+            "another message there, `{11:...}` a number.  The patcher warns by string id when the commands "
+            "differ from the Japanese's.",
+            "* The same Japanese is one string everywhere (the game finds its English by the Japanese).",
+            "* English is ASCII; anything else is written as `?`, `[` and `]` (the game's kana switches) as "
+            "`(` and `)`.",
+            "* The English all together must fit the disk's empty tracks and 256K of memory: a build over it is "
+            "refused."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures.",
+            "* A few strings are code bytes the extractor took for text; they have no effect if translated."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def avs96_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -3475,13 +3539,14 @@ def main():
             print("wrote", name)
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
-                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry"):
+                                    "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
                    "eqa": eqa_notes, "igs": igs_notes, "diana": diana_notes,
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
-                   "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes}[cfg["encoding"]](
+                   "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
+                   "psyo": psyo_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

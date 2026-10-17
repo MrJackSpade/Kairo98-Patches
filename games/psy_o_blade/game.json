@@ -1,0 +1,11 @@
+{
+ "title": "Psy-O-Blade",
+ "key": "TeSoft.zip/Psy-O-Blade",
+ "image": "Psy-O-Blade\\Psy-O-Blade [FD]\\Psy-O-Blade (Program disk).hdm",
+ "disks": [
+  "Psy-O-Blade (Data disk).hdm"
+ ],
+ "encoding": "psyo",
+ "program_at": "0x3f00",
+ "boot_steps": "20:shot,5:enter,8:shot,1:mouse=40;22,1:lclick,14:lclick,4:shot,3:lclick,3:lclick,3:lclick,4:shot,3:lclick,3:lclick,3:lclick,3:lclick,3:lclick,4:shot"
+}

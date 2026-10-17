@@ -2775,5 +2775,18 @@
    "url": "https://vndb.org/v26973",
    "source": "VNDB"
   }
+ ],
+ "TeSoft.zip/Psy-O-Blade": [
+  {
+   "label": "This repo: games/psy_o_blade (patcher working, machine translation in progress)",
+   "url": "../games/psy_o_blade/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v7554",
+   "url": "https://vndb.org/v7554",
+   "source": "VNDB"
+  }
  ]
 }
