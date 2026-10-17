@@ -13108,15 +13108,27 @@
      "path": "Es no Houteishiki\\Es no Houteishiki [HD]\\Es no Houteishiki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/es_no_houteishiki (patcher working, machine translation in progress)",
+     "url": "../games/es_no_houteishiki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8874",
+     "url": "https://vndb.org/v8874",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17974 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "AbogadoPowers.zip/Kuro no Danshou - The Literary Fragment",

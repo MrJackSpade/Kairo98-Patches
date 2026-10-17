@@ -1,0 +1,14 @@
+{
+ "title": "Es no Houteishiki",
+ "key": "AbogadoPowers.zip/Es no Houteishiki",
+ "image": "Es no Houteishiki\\Es no Houteishiki [HD]\\Es no Houteishiki.hdi",
+ "encoding": "kuro",
+ "game_dir": "ES",
+ "program": "ES98.EXE",
+ "title_scene": -1,
+ "program_in_place": true,
+ "scene_files": [
+  "SCENE.SCN"
+ ],
+ "boot_steps": "25:mouse=100;100,1:mouse=100;100,1:mouse=120;-25,1:lclick,8:mouse=0;-20,1:mouse=0;-18,1:shot,1:lclick,10:shot,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot"
+}

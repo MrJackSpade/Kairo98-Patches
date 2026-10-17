@@ -481,5 +481,10 @@
   "remarks": [
    "Not reached in this test: the in-game menu (the right button opened nothing at that point), the H scenes (ES_HSXP.DAT, the same message code), saving and loading, the endings."
   ]
+ },
+ "es_no_houteishiki": {
+  "remarks": [
+   "Not reached in this test: the menus of objects and verbs, the choices, the in-game option menus (ES98.EXE's own strings), the music mode, saving and loading."
+  ]
  }
 }

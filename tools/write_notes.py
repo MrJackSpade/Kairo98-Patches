@@ -2333,22 +2333,28 @@ def kuro_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    files = cfg.get("scene_files", ["SCENE.SCN", "ASCENE.SCN", "CSCENE.SCN"])
+    in_place = cfg.get("program_in_place")
     out += ["", "## Engine", "",
-            "`KURODAN\\GAME.EXE` (Borland C, large model) with its scenes in `SCENE.SCN`, `ASCENE.SCN` and "
-            "`CSCENE.SCN` (XORed with AAh, indexed by `SCNDAT.TBL`).  A scene block is a header (menu records, "
-            "a table of places in the script) and a script of `!` commands and Shift-JIS text; labels outside "
-            "quotes are the menus' objects and verbs, the text between quotes their replies.  "
-            "`pc98tl/kuro.py` documents the format, `pc98tl/kuro_tl.py` the English.  A build with no English "
-            "leaves the files as they are.", "",
+            "`%s\\%s` (Borland C, large model) with its scenes in %s (XORed with AAh, indexed by `SCNDAT.TBL`).  "
+            "A scene block is a header (menu records, a table of places in the script) and a script of `!` "
+            "commands%s and Shift-JIS text; labels outside quotes are the menus' objects and verbs, the text "
+            "between quotes their replies.  `pc98tl/kuro.py` documents the format, `pc98tl/kuro_tl.py` the "
+            "English.  A build with no English leaves the files as they are." % (
+                cfg["game_dir"], cfg["program"], ", ".join("`%s`" % n for n in files),
+                " (and `#i( )`, `#l`, `#n` blocks)" if cfg.get("title_scene", 0) != 0 else ""), "",
             "* English at any length in the scenes: each block is written again with every place in its table "
-            "moved with the text it points at, the scene files and `SCNDAT.TBL` rewritten.  GAME.EXE draws "
-            "ASCII half-width itself and pages its message window.",
-            "* The program's own strings (the opening, the screen-mode menu, disk prompts, error messages): its "
-            "text renderer, puts, printf and sprintf jump to a helper in a segment of its own put before the "
-            "data segment, which points a string with English at the English kept there.",
+            "moved with the text it points at, the scene files and `SCNDAT.TBL` rewritten.  %s draws "
+            "ASCII half-width itself and pages its message window." % cfg["program"],
+            ("* The program's own strings (menus, messages) in place: %s copies them and reaches them through "
+             "tables, so they keep their places." % cfg["program"]) if in_place else
+            ("* The program's own strings (the opening, the screen-mode menu, disk prompts, error messages): its "
+             "text renderer, puts, printf and sprintf jump to a helper in a segment of its own put before the "
+             "data segment, which points a string with English at the English kept there."),
             "* Objects' names (the first piece of a menu label) are matched by string with the region names "
-            "stored in the pictures and are never shown: they are kept in Japanese.  The title scene's menu "
-            "lies under the title picture's English buttons and is kept as it is."]
+            "stored in the pictures and are never shown: they are kept in Japanese." +
+            ("  The title scene's menu lies under the title picture's English buttons and is kept as it is."
+             if cfg.get("title_scene", 0) == 0 else "")]
     out += ["", "## Script", "",
             "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
                                                        for k, n in sorted(kinds.items()))), ""]
@@ -2365,8 +2371,10 @@ def kuro_notes(name, cfg, doc, adult, clear, tests, extra):
             "* Choice options (`c` ids): one line each; a comma is written full-width (an ASCII comma would "
             "start another option).",
             "* Captions (`n` ids): broken between words at `max_cells` letters a line, `{n}` a new line.",
-            "* Program strings (`e` ids): any length, broken between words at 64 letters; `{w}` and `{s}` as "
-            "given.",
+            ("* Program strings (`e` ids): in place, `max_cells` letters (longer is cut and reported by string "
+             "id); `{w}` and `{s}` as given." if in_place else
+             "* Program strings (`e` ids): any length, broken between words at 64 letters; `{w}` and `{s}` as "
+             "given."),
             "* A scene block holds at most %d bytes (its places are 16-bit): a build over it is refused." %
             (0x10000 - 0x400 - 0x20),
             "* English is ASCII.  `( ) [ ] !` are written full-width (the script reads them as commands), `\"` "

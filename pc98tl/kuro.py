@@ -11,7 +11,8 @@ in the script (the offsets' table: the menus' objects and verbs, the replies, th
 script.  The script (`tokens`): commands `!` and a letter (b, g, j: a 2-byte argument; x: 2 bytes, `=`,
 a byte; s, m, r, c, p: a parenthesised list, p's starting with a 2-byte type: 4 a caption `x,y,text`, 7 a
 ruby reading in half-width kana for the word after it), conditions `[` 2 bytes `]` and an operator and a
-byte, `:` and a 2-byte argument (or, after a label, its condition), `"`, `,` and `&`, and Shift-JIS text
+byte (Es no Houteishiki's scripts also: `#i(` conditions `)` an if, `#l` its else, `#n` its end, and a
+label's conditions in parentheses), `:` and a 2-byte argument (or, after a label, its condition), `"`, `,` and `&`, and Shift-JIS text
 (`_r` a click and a new page, `_n` a new line in a caption, a 0Ah byte a new line).  Text outside quotes
 is a label: an object's name and its verbs, written end to end, each starting where the offsets' table
 points (GAME.EXE copies each into a 21-byte slot and matches them by string); the text between a label's
@@ -109,9 +110,15 @@ def _is_cmd(s, k):
     return s[k] == 0x21 and k + 1 < len(s) and 0x61 <= s[k + 1] <= 0x7A
 
 
+def _is_block(s, k):
+    """#i(...) an if, #l its else, #n its end (Es no Houteishiki's scripts)."""
+    return s[k] == 0x23 and k + 1 < len(s) and s[k + 1] in b"iln"
+
+
 def _texty(s, j):
     c = s[j]
-    return c == 0x0A or c in KANA or (0x20 <= c < 0x7F and c not in DELIM and not _is_cmd(s, j))
+    return c == 0x0A or c in KANA or (0x20 <= c < 0x7F and c not in DELIM and not _is_cmd(s, j)
+                                      and not _is_block(s, j))
 
 
 def tokens(s):
@@ -137,10 +144,19 @@ def tokens(s):
                     out.append(("open", k, k + 5, ("p", s[k + 3]))); k += 5; continue
                 out.append(("open", k, k + 3, (L, None))); k += 3; continue
             raise ValueError("a command at %x is not laid out as expected" % k)
+        if _is_block(s, k):
+            if s[k + 1] == 0x69:
+                if s[k + 2] != 0x28:
+                    raise ValueError("#i at %x is not laid out as expected" % k)
+                out.append(("open", k, k + 3, ("i", None))); k += 3; continue
+            out.append(("cmd", k, k + 2, chr(s[k + 1]))); k += 2; continue
         if c == 0x5B:
-            if k + 5 < n and s[k + 3] == 0x5D and s[k + 4] in b"=+-<>":
+            if k + 5 < n and s[k + 3] == 0x5D and s[k + 4] in b"=+-<>}":
                 out.append(("cond", k, k + 6, None)); k += 6; continue
             raise ValueError("a condition at %x is not laid out as expected" % k)
+        if c == 0x28:
+            # (a label's conditions in parentheses: Es no Houteishiki)
+            out.append(("open", k, k + 1, ("(", None))); k += 1; continue
         if c == 0x29:
             out.append(("close", k, k + 1, None)); k += 1; continue
         if c == 0x3A:
@@ -295,7 +311,8 @@ def show_text(b):
     out, k = "", 0
     while k < len(b):
         if b[k] in LEAD and k + 1 < len(b):
-            out += b[k:k + 2].decode("cp932", "replace")
+            # (86A2h: NEC's long dash, written twice as a dash)
+            out += "―" if b[k:k + 2] == b"\x86\xa2" else b[k:k + 2].decode("cp932", "replace")
             k += 2
         elif b[k:k + 2] in CODES:
             out += CODES[b[k:k + 2]]

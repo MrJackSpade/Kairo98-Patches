@@ -7,7 +7,7 @@ Clearance: no PC-98 English release or announcement found on 2026-10-11 (`resear
 
 ## Engine
 
-`KURODAN\GAME.EXE` (Borland C, large model) with its scenes in `SCENE.SCN`, `ASCENE.SCN` and `CSCENE.SCN` (XORed with AAh, indexed by `SCNDAT.TBL`).  A scene block is a header (menu records, a table of places in the script) and a script of `!` commands and Shift-JIS text; labels outside quotes are the menus' objects and verbs, the text between quotes their replies.  `pc98tl/kuro.py` documents the format, `pc98tl/kuro_tl.py` the English.  A build with no English leaves the files as they are.
+`KURODAN\GAME.EXE` (Borland C, large model) with its scenes in `SCENE.SCN`, `ASCENE.SCN`, `CSCENE.SCN` (XORed with AAh, indexed by `SCNDAT.TBL`).  A scene block is a header (menu records, a table of places in the script) and a script of `!` commands and Shift-JIS text; labels outside quotes are the menus' objects and verbs, the text between quotes their replies.  `pc98tl/kuro.py` documents the format, `pc98tl/kuro_tl.py` the English.  A build with no English leaves the files as they are.
 
 * English at any length in the scenes: each block is written again with every place in its table moved with the text it points at, the scene files and `SCNDAT.TBL` rewritten.  GAME.EXE draws ASCII half-width itself and pages its message window.
 * The program's own strings (the opening, the screen-mode menu, disk prompts, error messages): its text renderer, puts, printf and sprintf jump to a helper in a segment of its own put before the data segment, which points a string with English at the English kept there.

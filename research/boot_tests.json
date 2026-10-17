@@ -4277,5 +4277,15 @@
    "A test build with a nine-line English message and an English name: the first message",
    "OK: five lines, a key, the window cleared, the other four at the indent; the name padded to the indent, the next message beside it"
   ]
+ ],
+ "es_no_houteishiki": [
+  [
+   "Boot the hard disk (ES.BAT, ES98.EXE): the palette choice (Analog), the title menu (Initial Start)",
+   "OK: both menus are the pictures' English, as in the original"
+  ],
+  [
+   "The opening and the first scene's messages (SCENE.SCN, about 5 clicks)",
+   "OK: every message in filler, half-width, broken between words at 66 letters; three or four lines a page, the page mark after each, a click going on"
+  ]
  ]
 }

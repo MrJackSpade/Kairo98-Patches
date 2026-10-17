@@ -2866,5 +2866,18 @@
    "url": "https://vndb.org/v2316",
    "source": "VNDB"
   }
+ ],
+ "AbogadoPowers.zip/Es no Houteishiki": [
+  {
+   "label": "This repo: games/es_no_houteishiki (patcher working, machine translation in progress)",
+   "url": "../games/es_no_houteishiki/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8874",
+   "url": "https://vndb.org/v8874",
+   "source": "VNDB"
+  }
  ]
 }

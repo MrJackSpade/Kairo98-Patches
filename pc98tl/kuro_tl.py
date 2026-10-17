@@ -15,7 +15,11 @@ Strings:
 * e (program): GAME.EXE's own strings (the opening, the screen-mode menu, the disk prompts, the error
   messages): any length, broken between words at 64 letters.
 
-The title's scene (the first) is left as it is: its menu is the title picture's buttons (English already),
+game.json: game_dir, program; title_scene (default 0, -1 none); program_in_place (the program's strings
+written in place, max_cells bytes, instead of through the helper: Es no Houteishiki's ES98.EXE copies its
+strings and reaches them through tables).
+
+The title's scene (the first, unless title_scene says otherwise) is left as it is: its menu is the title picture's buttons (English already),
 the menu's own text never shown and its items found by where that text would lie.
 
 ASCII is drawn half-width.  The script's own signs ( ) [ ] ! are written full-width, " as ', _ and ~ as
@@ -24,6 +28,7 @@ ASCII is drawn half-width.  The script's own signs ( ) [ ] ! are written full-wi
 import json
 import os
 import re
+import struct
 
 from .alice_sys2_tl import sha256
 from .alice_game import MTL_NOTE
@@ -47,7 +52,9 @@ NOTE = {"msg": "a message: any length, broken between words at 66 letters, paged
         "choice": "an option of a choice menu: one line",
         "caption": "a caption drawn at its place: broken between words at max_cells letters a line, {n} a new "
                    "line",
-        "program": "a string of GAME.EXE's: broken between words at 64 letters, \\n a new line; {w} {s} as given"}
+        "program": "a string of GAME.EXE's: broken between words at 64 letters, \\n a new line; {w} {s} as given",
+        "program_in_place": "a string of the program's, in place: max_cells letters, \\n a new line; {w} {s} as "
+                            "given"}
 
 
 def _game(cfg, src):
@@ -56,16 +63,18 @@ def _game(cfg, src):
 
 
 def _scene_files(vol, gd):
-    return {n: K.xor(vol.read("%s/%s" % (gd, n))) for n in K.SCENE_FILES}
+    """{name: decoded} of the scene files SCNDAT.TBL names."""
+    tbl = K.xor(vol.read(gd + "/SCNDAT.TBL"))
+    return {n: K.xor(vol.read("%s/%s" % (gd, n))) for n in sorted(set(e[0] for e in K.table(tbl)))}
 
 
-def found(vol, gd):
+def found(vol, gd, title=TITLE):
     """[(ref, kind, jp, room, rubies)] of the scenes' units, in order."""
     files = _scene_files(vol, gd)
     tbl = K.xor(vol.read(gd + "/SCNDAT.TBL"))
     out = []
     for i, name, block in K.scenes(files, tbl):
-        if i == TITLE:
+        if i == title:
             continue
         _h, offsets, s = K.parse(block)
         for kind, a, e, parts in K.units(s, offsets, K.keys(_h, offsets)):
@@ -95,8 +104,11 @@ def run_extract(here, src):
         order.append(key)
     exe = vol.read(gd + "/" + cfg["program"])
     for off, t in K.exe_strings(exe):
-        add("program", K.show_text(t), "%s:%04x" % (cfg["program"], off), EXE_WIDTH * 8, NOTE["program"])
-    for ref, kind, jp, room, rubies in found(vol, gd):
+        room, note = EXE_WIDTH * 8, NOTE["program"]
+        if cfg.get("program_in_place"):
+            room, note = len(t), NOTE["program_in_place"]
+        add("program", K.show_text(t), "%s:%04x" % (cfg["program"], off), room, note)
+    for ref, kind, jp, room, rubies in found(vol, gd, cfg.get("title_scene", TITLE)):
         note = NOTE[kind]
         if rubies:
             note += "; readings: " + ", ".join("{R%d} %s" % (k + 1, r) for k, r in enumerate(rubies))
@@ -247,7 +259,7 @@ def run_patch(here, src, dst, mode="en"):
     tbl = K.xor(vol.read(gd + "/SCNDAT.TBL"))
     blocks, changed = [], False
     for i, name, block in K.scenes(files, tbl):
-        if i == TITLE:
+        if i == cfg.get("title_scene", TITLE):
             blocks.append(block)
             continue
         _h, offsets, s = K.parse(block)
@@ -298,7 +310,20 @@ def run_patch(here, src, dst, mode="en"):
         en = by_ref.get("%s:%04x" % (cfg["program"], off))
         if en is not None:
             english[off] = encode(en, EXE_WIDTH, b"\n", [], b"")
-    if english:
+    if english and cfg.get("program_in_place"):
+        # (Es no Houteishiki's ES98.EXE: its strings copied and reached through tables, written in place)
+        hdr = struct.unpack_from("<H", exe, 8)[0] * 16
+        exe = bytearray(exe)
+        base = hdr + K.dgroup(bytes(exe)) * 16
+        room = dict((off, len(t)) for off, t in K.exe_strings(bytes(exe)))
+        for off, en in english.items():
+            if len(en) > room[off]:
+                warn.append("%s: %d bytes, room for %d" % (ids["%s:%04x" % (cfg["program"], off)]["id"],
+                                                           len(en), room[off]))
+                en = en[:room[off]]
+            exe[base + off:base + off + room[off]] = en.ljust(room[off], b"\0")
+        vol.write(prog, bytes(exe))
+    elif english:
         vol.write(prog, K.patch_program(exe, english))
     vol.create(gd + "/MTL_NOTE.TXT", MTL_NOTE.format(title=cfg["title"]).replace("\n", "\r\n").encode("ascii"))
     for w_ in dict.fromkeys(warn):
