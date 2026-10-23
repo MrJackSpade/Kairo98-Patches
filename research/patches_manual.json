@@ -2949,5 +2949,23 @@
    "url": "https://vndb.org/v8569",
    "source": "VNDB"
   }
+ ],
+ "TechnoGrard.zip/Minimum Guynarock": [
+  {
+   "label": "This repo: games/minimum_guynarock (patcher working, machine translation in progress)",
+   "url": "../games/minimum_guynarock/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB: Minimum Guynarock",
+   "url": "https://vndb.org/v18122",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB: Ginsei Senshin Guynarock (the set)",
+   "url": "https://vndb.org/v18120",
+   "source": "VNDB"
+  }
  ]
 }

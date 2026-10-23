@@ -1,0 +1,1160 @@
+{
+ "source_image_sha256": "212bb02984582dff8328b90d02075add3931aaa33d83a86faed6444b31ee438e",
+ "strings": [
+  {
+   "id": "l00001",
+   "kind": "line",
+   "jp": "　　　　西暦２１２５年、人類が宇宙に進出して半世紀が過ぎた",
+   "en": "",
+   "refs": [
+    "S:05de"
+   ],
+   "max_cells": 58,
+   "note": "a line of the opening, drawn at its place: max_cells letters, one line"
+  },
+  {
+   "id": "l00002",
+   "kind": "line",
+   "jp": "それに伴い、地球外生命体からの防衛を目的としたステーションが造られた",
+   "en": "",
+   "refs": [
+    "S:0626"
+   ],
+   "max_cells": 68,
+   "note": "a line of the opening, drawn at its place: max_cells letters, one line"
+  },
+  {
+   "id": "l00003",
+   "kind": "line",
+   "jp": "　その中に女性５人で構成された特殊任務部隊［Ｓ．Ａ．Ｓ．］があった",
+   "en": "",
+   "refs": [
+    "S:0674"
+   ],
+   "max_cells": 66,
+   "note": "a line of the opening, drawn at its place: max_cells letters, one line"
+  },
+  {
+   "id": "m00001",
+   "kind": "msg",
+   "jp": "{S2}あー、退屈だよー。{S1}イオ！、ごろごろするんじゃないの！\nもう少し緊張してなさい！仕事中なんだから。{S2}だってー、あんまりヒマなんで体がなまっちゃう・・・{W}",
+   "en": "",
+   "refs": [
+    "S:06ee"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00002",
+   "kind": "msg",
+   "jp": "ピー、ピー、{S2}何！？{W}",
+   "en": "",
+   "refs": [
+    "S:0792"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00003",
+   "kind": "msg",
+   "jp": "{S1}何かしら。{S4}宇宙船みたいね。{S3}けっこうボロボロだよ。{S5}難破船でしょ。{S1}誰か探索に・・・{S2}いくいく！あたしいく！！{W}",
+   "en": "",
+   "refs": [
+    "S:07b4"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00004",
+   "kind": "msg",
+   "jp": "{S1}・・・・・しょうがないわね\n気をつけてよ、あなたはおっちょこちょいなんだから。{S2}はーい。{W}",
+   "en": "",
+   "refs": [
+    "S:0838"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00005",
+   "kind": "msg",
+   "jp": "イオが探索に向かいました。{W}",
+   "en": "",
+   "refs": [
+    "S:08aa"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00006",
+   "kind": "msg",
+   "jp": "{S2}わー、中もボロボロ・・・\nこりゃ生存者なんて、期待できないわねー{W}",
+   "en": "",
+   "refs": [
+    "S:08d0"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00007",
+   "kind": "msg",
+   "jp": "{S2}おーい・・・\nだれもいないよねー{W}",
+   "en": "",
+   "refs": [
+    "S:0920"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00008",
+   "kind": "msg",
+   "jp": "{S2}おーい\nだれかいるー！？・・・{S7}しめしめ・・・\nカモがきやがったぜ・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0950"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00009",
+   "kind": "msg",
+   "jp": "{S7}ガオー・・・{S2}あれ、これ何だろ？{W}",
+   "en": "",
+   "refs": [
+    "S:09aa"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00010",
+   "kind": "msg",
+   "jp": "{S2}何かの液体？・・・\nまだあたたかいみたい・・・\nてことは、だれか生存者がいるかもしれないってことね。よーし、じゃ、がんばってさがさなきゃ。{W}",
+   "en": "",
+   "refs": [
+    "S:09dc"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00011",
+   "kind": "msg",
+   "jp": "{S7}ガ・・・ガオー",
+   "en": "",
+   "refs": [
+    "S:0a70"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00012",
+   "kind": "msg",
+   "jp": "{S2}キャーーー",
+   "en": "",
+   "refs": [
+    "S:0a86"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00013",
+   "kind": "msg",
+   "jp": "{S6}えーかげんにせんかー！{S2}・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0aaa"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00014",
+   "kind": "msg",
+   "jp": "{S3}おっそいわねー、イオは・・・{S1}珍しいから、遊んでるんじゃないの。{S5}はりきってたもんね。{S1}好奇心は旺盛なのよねー、あの子は・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0ae4"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00015",
+   "kind": "msg",
+   "jp": "{S6}フッフッフッ、おろかな人間共よ。お前達の仲間はあずかった！{S3}まあ・・・２，３時間放っときゃ、そのうち帰ってくんじゃないの？・・・{S1}でも、方向オンチだから、こっちまでちゃんと、戻ってこれるかどうか・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0b78"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00016",
+   "kind": "msg",
+   "jp": "{S6}あの・・・・・{S5}しばらくしても、帰ってこなかったら迎えにいった方がいいかな。{S1}大丈夫よ、イオは、ボーっとしてるけど、生命力はつよいんだから。\n３日ぐらい放っといても死にゃしないわ。{S6}あの・・・すいません。{W}",
+   "en": "",
+   "refs": [
+    "S:0c4e"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00017",
+   "kind": "msg",
+   "jp": "{S2}エリーーーーー！！{W}",
+   "en": "",
+   "refs": [
+    "S:0d30"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00018",
+   "kind": "msg",
+   "jp": "{S2}えーーーーーん、ひどいよみんなー\nあたしバケモノに、つかまって、こわかったんだから。{S1}イ、イオ・・・・・{S6}あー、そーいうわけでおまえらの仲間はあずかった。\nおとなしく燃料を渡してもらおう。{S1}やーよ。{W}",
+   "en": "",
+   "refs": [
+    "S:0d52"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00019",
+   "kind": "msg",
+   "jp": "{S6}何？、お、お前らの仲間が人質になってるんだぞ！？{S1}だって、燃料渡しちゃったらあたしたちが困るじゃない。{S6}・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0e28"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00020",
+   "kind": "msg",
+   "jp": "{S2}エリーーーーー！！{S1}わ、わかった・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0eae"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00021",
+   "kind": "msg",
+   "jp": "燃料を渡しました。{W}",
+   "en": "",
+   "refs": [
+    "S:0ee6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00022",
+   "kind": "msg",
+   "jp": "{S1}はい、渡したから、イオを放して、とっとといなくなってね。{S6}ふっふっふっ、だれが解放するといった！{S1}ちょっと・・・、いっとくけど暴れると、手つけられなくなるわよ、その子。{S2}えーん、エリー・・・{S6}・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:0f04"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00023",
+   "kind": "msg",
+   "jp": "{S5}エ・・・エリー！、バケモノが艦内に・・・{S1}なんですって！？{W}",
+   "en": "",
+   "refs": [
+    "S:0fee"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00024",
+   "kind": "msg",
+   "jp": "{S6}ふっふっ、さっき、そっちに送りこんどいたのだ。\nしばらく遊んでいるがいい。{S2}あーん、エリー、こわいよー{S1}あー、心配しないで、あとで迎えにいくから、じゃーね。{W}",
+   "en": "",
+   "refs": [
+    "S:1034"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00025",
+   "kind": "msg",
+   "jp": "モンスターが迫ってきます。{S1}仕方ないわ！脱出しましょう。{W}",
+   "en": "",
+   "refs": [
+    "S:10e4"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00026",
+   "kind": "msg",
+   "jp": "{S3}エリー！{S1}な、何をするの、メグ・・・{W}",
+   "en": "",
+   "refs": [
+    "S:112a"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00027",
+   "kind": "msg",
+   "jp": "{S3}ここは私達が何とかする。\nエリーはイオを助けにいって！！{S1}そんな！{W}{S3}問答してる時間はないんだ！早く・・・{S1}いやよ！メグ！！{W}",
+   "en": "",
+   "refs": [
+    "S:1160"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00028",
+   "kind": "msg",
+   "jp": "脱出艇が発射されました。{S1}メグーーーーー！{W}",
+   "en": "",
+   "refs": [
+    "S:11f2"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00029",
+   "kind": "msg",
+   "jp": "{S1}・・・メグ・・・・・\n面倒なことを、押し付けたわね・・・{W}",
+   "en": "",
+   "refs": [
+    "S:122a"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00030",
+   "kind": "msg",
+   "jp": "{S2}わーーーーーん。\nやだやだやだやだやだやだ・・・{S6}えーい、じっとせんか！\n何もせんから・・・{S2}うそだ、うそだー！\nあんなことや、こんなことや、いろいろする気なんでしょ！\nあーん！もう、お嫁にいけなーい！！{W}",
+   "en": "",
+   "refs": [
+    "S:1272"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00031",
+   "kind": "msg",
+   "jp": "{S6}あー、困っちゃたなー\nたしかに、こいつらの母体として体を提供してもらおうとは思っていたが・・・{W}{S2}わーーーーーん！\nやっぱりそうだー！！{W}{S1}イオ！イオ！{W}",
+   "en": "",
+   "refs": [
+    "S:134c"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00032",
+   "kind": "msg",
+   "jp": "{S1}イオ！迎えに来たわよ！{S2}エリー！早く帰りましょう！{S6}何をふざけたことを！{W}",
+   "en": "",
+   "refs": [
+    "S:1400"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00033",
+   "kind": "msg",
+   "jp": "{S6}くらえ！{S1}きゃーーー{S2}エリーーー！{W}",
+   "en": "",
+   "refs": [
+    "S:145c"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00034",
+   "kind": "msg",
+   "jp": "{S2}なんてことするのよ！{W}",
+   "en": "",
+   "refs": [
+    "S:1492"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00035",
+   "kind": "msg",
+   "jp": "{S1}イオ！大丈夫よ。{S2}あ！エリー{S1}すぐ、そっちにいくからね。{W}",
+   "en": "",
+   "refs": [
+    "S:14b6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00036",
+   "kind": "msg",
+   "jp": "{S1}あ！痛った・・・・・{S6}お前の仲間になぐられたお返しだ・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1502"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00037",
+   "kind": "msg",
+   "jp": "{S1}そんなの本人になぐり返せばいーじゃない！{S6}バカもの！あの娘にそんなことをしたら、１００倍にしてかえされそうじゃわい！{W}",
+   "en": "",
+   "refs": [
+    "S:154e"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00038",
+   "kind": "msg",
+   "jp": "{S1}あたりまえでしょ！そんなの！\nそんなことでびびってるんだったら、最初からつれていかなきゃいーでしょうが！！{S6}そんなもん最初からわかってりゃ、つれてきゃせんわい！\nみた感じ幼児っぽいから、一番あつかいやすそうだと思ったんじゃ！！{W}",
+   "en": "",
+   "refs": [
+    "S:15ce"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00039",
+   "kind": "msg",
+   "jp": "{S1}と・・・ともかく、イオは返してもらうわ！{S6}そうはいくか！\nこっちだって、クローン達が相当の被害を受けとるんだ、ただで返せると思うてか！{W}",
+   "en": "",
+   "refs": [
+    "S:16bc"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00040",
+   "kind": "msg",
+   "jp": "{S1}何よ！男らしくないわね！{S6}あ！{W}",
+   "en": "",
+   "refs": [
+    "S:1754"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00041",
+   "kind": "msg",
+   "jp": "{S6}あー！！\nおきあがれん！！{S1}バカじゃないの！{W}",
+   "en": "",
+   "refs": [
+    "S:1784"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00042",
+   "kind": "msg",
+   "jp": "{S1}イオ！{S2}エリー{W}",
+   "en": "",
+   "refs": [
+    "S:17c2"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00043",
+   "kind": "msg",
+   "jp": "{S2}えーーーん！！\nこわかったよー{S1}よしよし・・・{W}",
+   "en": "",
+   "refs": [
+    "S:17e2"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00044",
+   "kind": "msg",
+   "jp": "{S7}よかった・・・迎えに来てくれて・・・{W}",
+   "en": "",
+   "refs": [
+    "S:181c"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00045",
+   "kind": "msg",
+   "jp": "ヴィン{W}",
+   "en": "",
+   "refs": [
+    "S:1864"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00046",
+   "kind": "msg",
+   "jp": "{S1}あ！ま、まって！\n今回は反応しなくていいの！・・・{S2}手遅れみたい。{W}",
+   "en": "",
+   "refs": [
+    "S:187e"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00047",
+   "kind": "msg",
+   "jp": "{S6}いてて・・・\nん？なんだ・・{W}",
+   "en": "",
+   "refs": [
+    "S:18d6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00048",
+   "kind": "msg",
+   "jp": "{S6}な・・・なんだ？・・・さっきのか？！\nまあいい・・・どっちでもいーか。{W}",
+   "en": "",
+   "refs": [
+    "S:1914"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00049",
+   "kind": "msg",
+   "jp": "{S1}いくぞ！{W}",
+   "en": "",
+   "refs": [
+    "S:196a"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00050",
+   "kind": "msg",
+   "jp": "{S1}と・・・とどかん・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1980"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00051",
+   "kind": "msg",
+   "jp": "{S1}ひいーーーーー！{S6}おろかものめー{W}",
+   "en": "",
+   "refs": [
+    "S:19a6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00052",
+   "kind": "msg",
+   "jp": "{S1}ちょっとちょっと・・・\nひどいんじゃないの、女の子相手に！{S6}バカめ！手足が短くなったことも考えずに、パンチで片付けようなどとは・・・\n愚かにもほどがあるわい！{W}",
+   "en": "",
+   "refs": [
+    "S:19d8"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00053",
+   "kind": "msg",
+   "jp": "{S1}だからって、女の子をぶつなんて最低よ！{S6}おのれのどの姿をみて女の子だというんじゃ！！{S1}なによ！人を見た目で判断しないでよね！！\n中身はれっきとした女の子よ！！{W}",
+   "en": "",
+   "refs": [
+    "S:1a82"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00054",
+   "kind": "msg",
+   "jp": "{S6}中身がどうあれ、見た目は寸づまりのへんなやつじゃ！！\nおのれの体を見りゃパンチが届くかどうかぐらい、わかりそーなもんじゃろーが！！{S1}そんなこといったって、本当は届くはずだったんだから・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1b2e"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00055",
+   "kind": "msg",
+   "jp": "{S6}そんなこたどーでもいい！\nとどめをさしてやる！{S1}きゃーやめて！あんたみたいな不細工にやられたくないわ！！{W}",
+   "en": "",
+   "refs": [
+    "S:1bf6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00056",
+   "kind": "msg",
+   "jp": "{S6}ぶ・・・不細工？・・・{S1}そーよ！この世のものとは思えないほど、不細工よ！！\nあー見苦しい！こっちこないでよ！{W}",
+   "en": "",
+   "refs": [
+    "S:1c70"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00057",
+   "kind": "msg",
+   "jp": "{S1}勝った・・・・・{S2}口で勝てるんだったら、ロボットの必要全然なかった気がする・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1cf6"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00058",
+   "kind": "msg",
+   "jp": "地球本部{W}",
+   "en": "",
+   "refs": [
+    "S:1d5c"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00059",
+   "kind": "msg",
+   "jp": "{S8}なに？記憶を抹消したい？{S1}はい・・・まあいろいろありまして・・・{S8}うーん、まあいいだろう・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1d70"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00060",
+   "kind": "msg",
+   "jp": "{S2}よかった、みんな無事で。{W}",
+   "en": "",
+   "refs": [
+    "S:1de2"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00061",
+   "kind": "msg",
+   "jp": "{S2}・・・・・\nあれ、でも、なんか大事なこと・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1e04"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00062",
+   "kind": "msg",
+   "jp": "{S2}そうだ！\nたしかみんなを母体にって・・・\nエリーに知らせなきゃ！{W}",
+   "en": "",
+   "refs": [
+    "S:1e46"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00063",
+   "kind": "msg",
+   "jp": "{S2}エリー！・・・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1e96"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00064",
+   "kind": "msg",
+   "jp": "{S1}長官、ひとつ私にも、これでよろしく。{S8}うむ・・・この方法が一番安上がりだな・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1eb8"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00065",
+   "kind": "msg",
+   "jp": "バキッ！{W}",
+   "en": "",
+   "refs": [
+    "S:1f14"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00066",
+   "kind": "msg",
+   "jp": "{S2}あー、退屈・・・{S1}イオ！ごろごろするんじゃないの！{W}",
+   "en": "",
+   "refs": [
+    "S:1f22"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00067",
+   "kind": "msg",
+   "jp": "{S3}いたっ、何だろう・・・\n最近お腹がいたくって・・・{S2}はーーーい！\nあたし直したげる！{S3}本当？{S2}本当よ、そーいう時は・・・{W}",
+   "en": "",
+   "refs": [
+    "S:1f66"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00068",
+   "kind": "msg",
+   "jp": "{S2}逆療法！{S3}ぐえっ！！",
+   "en": "",
+   "refs": [
+    "S:1fee"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00069",
+   "kind": "msg",
+   "jp": "{S3}なんてことすんのよ！{S2}いたーーーい。{W}{S1}まあまあメグ、大人げない。イオのすることだから・・・{S3}まったく・・・{W}",
+   "en": "",
+   "refs": [
+    "S:2012"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00070",
+   "kind": "msg",
+   "jp": "ピー・・・・・\n\n\n　　　　　　おしまい。",
+   "en": "",
+   "refs": [
+    "S:20ae"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "m00071",
+   "kind": "msg",
+   "jp": "{S2}え？",
+   "en": "",
+   "refs": [
+    "S:20e8"
+   ],
+   "max_cells": 26,
+   "note": "a story text: any length (broken between words at 26 letters, 5 lines a window, more after a key); {S1}-{S8} a speaker's line, {S0} a line without a name, \\n a new line, {W} a key and the window cleared: keep each {S..} and {W} where it belongs"
+  },
+  {
+   "id": "n00001",
+   "kind": "name",
+   "jp": "エリー",
+   "en": "",
+   "refs": [
+    "S:219a"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00002",
+   "kind": "name",
+   "jp": "イオ",
+   "en": "",
+   "refs": [
+    "S:21b2"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00003",
+   "kind": "name",
+   "jp": "メグ",
+   "en": "",
+   "refs": [
+    "S:21ca"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00004",
+   "kind": "name",
+   "jp": "レミ",
+   "en": "",
+   "refs": [
+    "S:21e2"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00005",
+   "kind": "name",
+   "jp": "ルイ",
+   "en": "",
+   "refs": [
+    "S:21fa"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00006",
+   "kind": "name",
+   "jp": "バイカル",
+   "en": "",
+   "refs": [
+    "S:2212"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00007",
+   "kind": "name",
+   "jp": "クローン",
+   "en": "",
+   "refs": [
+    "S:222a"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "n00008",
+   "kind": "name",
+   "jp": "長官",
+   "en": "",
+   "refs": [
+    "S:2242"
+   ],
+   "max_cells": 8,
+   "note": "a speaker's name in the window's column: up to 8 letters"
+  },
+  {
+   "id": "e00001",
+   "kind": "prog",
+   "jp": "メモリが不足しました。",
+   "en": "",
+   "refs": [
+    "E:04029"
+   ],
+   "max_cells": 22,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00002",
+   "kind": "prog",
+   "jp": "無効なファンクションコードです.",
+   "en": "",
+   "refs": [
+    "I:039a"
+   ],
+   "max_cells": 31,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00003",
+   "kind": "prog",
+   "jp": "ファイルが存在しません.",
+   "en": "",
+   "refs": [
+    "I:03bc"
+   ],
+   "max_cells": 23,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00004",
+   "kind": "prog",
+   "jp": "無効なパスです.　　　",
+   "en": "",
+   "refs": [
+    "I:03d6"
+   ],
+   "max_cells": 21,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00005",
+   "kind": "prog",
+   "jp": "オープンされているファイルが多すぎます.",
+   "en": "",
+   "refs": [
+    "I:03ee"
+   ],
+   "max_cells": 39,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00006",
+   "kind": "prog",
+   "jp": "アクセスが拒否されました.",
+   "en": "",
+   "refs": [
+    "I:0418"
+   ],
+   "max_cells": 25,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00007",
+   "kind": "prog",
+   "jp": "無効なハンドルです.　",
+   "en": "",
+   "refs": [
+    "I:0434"
+   ],
+   "max_cells": 21,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00008",
+   "kind": "prog",
+   "jp": "メモリ中のデータが破壊されました.",
+   "en": "",
+   "refs": [
+    "I:044c"
+   ],
+   "max_cells": 33,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00009",
+   "kind": "prog",
+   "jp": "メモリーが足りません.",
+   "en": "",
+   "refs": [
+    "I:0470"
+   ],
+   "max_cells": 21,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00010",
+   "kind": "prog",
+   "jp": "無効なブロックです.",
+   "en": "",
+   "refs": [
+    "I:0488"
+   ],
+   "max_cells": 19,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00011",
+   "kind": "prog",
+   "jp": "アクセスが無効です.　",
+   "en": "",
+   "refs": [
+    "I:049e"
+   ],
+   "max_cells": 21,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00012",
+   "kind": "prog",
+   "jp": "書き込み失敗ダメージ１２４！",
+   "en": "",
+   "refs": [
+    "I:04b6"
+   ],
+   "max_cells": 28,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00013",
+   "kind": "prog",
+   "jp": "ＭＳ－ＤＯＳのバージョンがちがいます.",
+   "en": "",
+   "refs": [
+    "I:04d5"
+   ],
+   "max_cells": 37,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00014",
+   "kind": "prog",
+   "jp": "バージョン３．ｘ以降のＭＳ－ＤＯＳをご使用下さい.",
+   "en": "",
+   "refs": [
+    "I:04fc"
+   ],
+   "max_cells": 49,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00015",
+   "kind": "prog",
+   "jp": "エラーです！",
+   "en": "",
+   "refs": [
+    "I:0532"
+   ],
+   "max_cells": 12,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00016",
+   "kind": "prog",
+   "jp": "もう一度ディスクを確認してから実行して下さい.",
+   "en": "",
+   "refs": [
+    "I:0540"
+   ],
+   "max_cells": 45,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00017",
+   "kind": "prog",
+   "jp": "ＭＳ－ＤＯＳインストールプログラム『とるる～ Ver 1.0』",
+   "en": "",
+   "refs": [
+    "I:057c"
+   ],
+   "max_cells": 54,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00018",
+   "kind": "prog",
+   "jp": "ＭＳ－ＤＯＳのディスクをドライブＡに",
+   "en": "",
+   "refs": [
+    "I:05dd"
+   ],
+   "max_cells": 36,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00019",
+   "kind": "prog",
+   "jp": "ゲームディスク１をドライブＢに入れてください.",
+   "en": "",
+   "refs": [
+    "I:0603"
+   ],
+   "max_cells": 45,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00020",
+   "kind": "prog",
+   "jp": "準備ができましたらスペースキーを押してください. (ESC : Cansel)",
+   "en": "",
+   "refs": [
+    "I:0634"
+   ],
+   "max_cells": 62,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00021",
+   "kind": "prog",
+   "jp": "只今インストール中...",
+   "en": "",
+   "refs": [
+    "I:067e"
+   ],
+   "max_cells": 21,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00022",
+   "kind": "prog",
+   "jp": "ＭＳ－ＤＯＳのインストールが終了しました.",
+   "en": "",
+   "refs": [
+    "I:0697"
+   ],
+   "max_cells": 41,
+   "note": "a program's message, in place: max_cells letters"
+  },
+  {
+   "id": "e00023",
+   "kind": "prog",
+   "jp": "ＥＳＣが押されたのでインストールを中止します.",
+   "en": "",
+   "refs": [
+    "I:06ca"
+   ],
+   "max_cells": 45,
+   "note": "a program's message, in place: max_cells letters"
+  }
+ ]
+}

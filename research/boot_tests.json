@@ -4385,5 +4385,27 @@
    "Unmodified build",
    "OK: a build with no English is the source image byte for byte"
   ]
+ ],
+ "minimum_guynarock": [
+  [
+   "Pseudo build boots (np21w)",
+   "OK: the opening's lines in ASCII under the pictures, then the title"
+  ],
+  [
+   "First scenes (pseudo)",
+   "OK: speakers' names half-width in the window's column, messages broken between words at 26 letters, 5 lines a window, the rest after a key"
+  ],
+  [
+   "Installer (pseudo, run from the prompt)",
+   "OK: its messages' lines in place, the cancel message after ESC"
+  ],
+  [
+   "Partly translated build",
+   "OK: names and a long message in English over two windows; the rest in Japanese as before"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source image byte for byte"
+  ]
  ]
 }

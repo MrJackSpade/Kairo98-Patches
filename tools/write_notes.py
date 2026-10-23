@@ -3148,6 +3148,75 @@ def b12_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def qbasic_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "line": "opening lines", "name": "speakers' names", "prog": "program messages"}
+    out = ["# %s%s (TechnoGrard)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "A compiled QuickBASIC 4.x program (`%s`, EXEPACKed, run by `AUTOEXEC.BAT` from the self-booting "
+            "floppy) with the whole script in it: string constants in its data group, each a descriptor (a "
+            "length and a place).  `pc98tl/qbasic.py` documents the format and the patch, "
+            "`pc98tl/qbasic_tl.py` the English.  A build with no English leaves the disk as it is." % cfg["engine"],
+            "",
+            "* Each changed string's descriptor is pointed at its English in a block after the data group's "
+            "data; the runtime's string space and the start-up's stack are moved past it, and the program is "
+            "written back unpacked.",
+            "* The story's routine draws its text a character at a time, 4 columns a step; a helper in the "
+            "runtime's padding makes the step 2 for a one-byte character, so ASCII letters stand half a "
+            "full-width character apart.  The routine breaks a line at the window's edge itself; the patcher "
+            "breaks the English between words and puts a wait for a key and a cleared window after each "
+            "window's 5 lines.",
+            "* The speakers' names are PRINTed whole: their English is written as NEC's two-byte half-width "
+            "characters (a full-width character after them shows right only after an even count of letters, "
+            "so an odd count is evened with two spaces).",
+            "* `%s` (which puts MS-DOS on the game's floppy) has its messages' lines written in place." %
+            cfg["installer"],
+            "* `MTL_NOTE.TXT` is put on the floppy."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 26 letters, 5 lines a window, more "
+            "windows after a key.  `{S1}`-`{S8}` start a speaker's line (the name from `n0000N`), `{S0}` a line "
+            "without a name, `\\n` a new line, `{W}` a key and the window cleared: keep each `{S..}` and `{W}`.",
+            "* Opening lines (`l` ids): one line each, up to `max_cells` letters; longer is reported by string "
+            "id.",
+            "* Speakers' names (`n` ids): up to 8 letters; longer is cut and reported by string id.",
+            "* Program messages (`e` ids): in place, up to `max_cells` letters; longer is cut and reported by "
+            "string id.",
+            "* All the English must fit the data group (64 KB, about 48 KB of English); a build past it is "
+            "refused.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes and `…` are made "
+            "ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (`.SZH`: the title, the staff roll).",
+            "* `MG.DOC` on the floppy (the installing notes), read outside the game."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4322,7 +4391,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4331,7 +4400,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

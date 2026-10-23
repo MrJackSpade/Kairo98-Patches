@@ -511,5 +511,10 @@
   "remarks": [
    "Past the first scenes of each game the boot test did not play; every script goes through the same rebuild."
   ]
+ },
+ "minimum_guynarock": {
+  "remarks": [
+   "Past the first scenes the boot test did not play; every message goes through the same routine."
+  ]
  }
 }

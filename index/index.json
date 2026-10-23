@@ -218951,15 +218951,32 @@
      "path": "Minimum Guynarock\\Minimum Guynarock [FD]\\Minimum Guynarock.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/minimum_guynarock (patcher working, machine translation in progress)",
+     "url": "../games/minimum_guynarock/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB: Minimum Guynarock",
+     "url": "https://vndb.org/v18122",
+     "source": "VNDB"
+    },
+    {
+     "label": "VNDB: Ginsei Senshin Guynarock (the set)",
+     "url": "https://vndb.org/v18120",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r41994 (erotic content)",
    "engine": "sogna-sgs",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "TecnoSoft.zip/Shin Kugyokuden",

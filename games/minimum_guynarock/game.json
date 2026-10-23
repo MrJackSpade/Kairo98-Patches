@@ -1,0 +1,9 @@
+{
+ "title": "Minimum Guynarock",
+ "key": "TechnoGrard.zip/Minimum Guynarock",
+ "image": "Minimum Guynarock\\Minimum Guynarock [FD]\\Minimum Guynarock.hdm",
+ "encoding": "qbasic",
+ "engine": "MG.EXE",
+ "installer": "INSTALL.EXE",
+ "boot_steps": "25:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}
