@@ -50473,15 +50473,27 @@
      "path": "Can Can Bunny\\Can Can Bunny [FD]\\Can Can Bunny.hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/can_can_bunny (patcher working, machine translation in progress)",
+     "url": "../games/can_can_bunny/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB: Can Can Bunny",
+     "url": "https://vndb.org/v4558",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r8750 (erotic content)",
    "engine": "unlisted",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CocktailSoft.zip/Can Can Bunny Extra",

@@ -4311,5 +4311,31 @@
    "Every patched script read again (all 58 .MES files in the four archives)",
    "OK: every command and address read back; each message too long for one window made a message and the call after it again"
   ]
+ ],
+ "can_can_bunny": [
+  [
+   "Pseudo build boots (np21w, floppy)",
+   "OK: the store loads from track 124, the program runs"
+  ],
+  [
+   "Opening (pseudo)",
+   "OK: the story's lines half-width at the bottom, centred again; a two-line text shown as two pages; the five profiles wrapped beside their pictures, a longer one paged"
+  ],
+  [
+   "Notebook and a girl's room (pseudo)",
+   "OK: the box's messages wrapped to its second line, a longer one scrolled; the command panel's rows and submenus; the player's name put mid-line"
+  ],
+  [
+   "Player's room (pseudo)",
+   "OK: its commands and messages"
+  ],
+  [
+   "Partly translated build",
+   "OK: six strings in English (a real sentence wrapped over the box's two lines, a command, the opening's first lines), the rest in Japanese as before"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source image byte for byte"
+  ]
  ]
 }

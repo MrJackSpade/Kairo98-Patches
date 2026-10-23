@@ -2932,6 +2932,89 @@ def aypio_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def cocktail_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "cmd": "commands", "word": "words", "page": "opening and ending pages"}
+    out = ["# %s%s (Cocktail Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Cocktail Soft's PC-98 version of its PC-8801 game: one self-booting 2HD floppy (1024-byte "
+            "sectors).  The boot sector loads the program from track 95; the program decodes itself (a "
+            "stub at its end).  It is the PC-8801 game's Z80 code ported to x86 by machine, each part running "
+            "with a 64 KB segment as its 8080 memory: the main part's data comes with the program, the five "
+            "girls' talks (`CHR1KJ.COM`-`CHR5KJ.COM`, PC-8801 files on the disk) are read into it, and the "
+            "opening and the ending run in a part of their own.  `pc98tl/cocktail.py` documents the formats "
+            "and the patch, `pc98tl/cocktail_tl.py` the English.  A build with no English leaves the disk as "
+            "it is.",
+            "",
+            "* The patch draws a character of two ASCII bytes as their two half-width glyphs side by side "
+            "(the program's glyph read, and the opening's copy of it).",
+            "* The English is kept in a store on the free tracks at the disk's end (124 on), which the "
+            "patched program reads at its start into memory the game does not use (segment 5200h, above the "
+            "program's segments and its disk buffer at 5000h), with the helpers.  A translated text's first "
+            "two bytes become a mark of its English; the program's reads of text (the main part's two loops, "
+            "its one-byte loop, the opening's) go through a helper that reads the English from the store on "
+            "a mark and goes on after the original text's end, so no text moves and no address changes.",
+            "* The message box (two lines of 50 cells) scrolls a line as the program's own multi-line "
+            "messages do: the helper takes a line break to the box's second line, or scrolls the box with "
+            "the program's routine.",
+            "* In the opening, a text longer than its rows is shown a page at a time (about 3 seconds a "
+            "page, or a key); a line the Japanese centred is centred again.",
+            "* The PC-8801 files MAIN.COM, USER.COM, GAME.COM, PROLOG.COM and ENDING.COM carry copies of the "
+            "program's texts; their copies get the same marks.  The player's entries (the name, the age... "
+            "in USER.COM's defaults and the disk's two saved games) get marks too.",
+            "* The disk has no file system, so the machine-translation notice is `MTL_NOTE.TXT` next to the "
+            "patched image instead of a file on the disk."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 50 letters, the box scrolling for "
+            "more lines; `\\n` a new line.  A Japanese line is a record of its own: the patcher gives each "
+            "record a line of the English and the last record the rest.  `{N0}`-`{N6}` an entry the player "
+            "made (the name, the age, the job, the blood type, the personality, the hobby, the type liked): "
+            "the program puts it where the Japanese has it, so keep it once (it counts 14 letters); a "
+            "message without it gets the entry after its text, reported by string id.",
+            "* Commands (`c` ids): one row of the command panel, `max_cells` letters (12, or 14 for a row "
+            "the program does not indent); longer runs past the panel's frame and is reported.",
+            "* Words (`w` ids): a choice of the player's entries, or the disk's own entries: up to 14 "
+            "letters.",
+            "* Opening and ending pages (`p` ids): broken between words at `max_cells` letters, as many rows "
+            "a page as the Japanese has (the picture beside a profile takes the rest), more pages shown in "
+            "turn; `\\n` a new line, `{C1}`-`{C7}` a colour.",
+            "* The store holds 240 KB on the disk; the marks 4096 English texts.  A build past either is "
+            "refused.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes, `…` and the "
+            "brackets are made ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the notebook's names, the status panel's labels).",
+            "* The program's own messages for a DOS run of the game (\"READ_SEG\" and the like: they print "
+            "with DOS, which the self-booting disk has not)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4106,7 +4189,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio"):
+                                    "starpt", "fas", "aypio", "cocktail"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4115,7 +4198,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

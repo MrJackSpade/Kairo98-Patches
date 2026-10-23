@@ -2814,13 +2814,14 @@
   ]
  },
  "CocktailSoft.zip/Can Can Bunny": {
-  "checked": "2026-10-11",
+  "checked": "2026-10-23",
   "result": "clear",
   "sources": [
    "VNDB API 2026-10-11: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): nothing"
+   "GitHub search (title + translation): nothing",
+   "web search (title + English translation, PC-98): 2026-10-23: no PC-98 translation or announced project; FAKKU's acquisition of the Fairytale/Cocktail Soft catalogue plans Steam (Windows) releases, none of Can Can Bunny announced"
   ]
  },
  "HimeyaSoft.zip/Bacta": {
