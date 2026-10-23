@@ -2858,6 +2858,80 @@ def fas_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def aypio_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "names", "insert": "words put in", "page": "pages", "choice": "menu choices",
+             "text": "other texts", "prog": "program messages"}
+    out = ["# %s%s (Aypio)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Aypio's UK2 engine (`%s\\UK2.EXE`, run by `SEX.BAT` under its sound driver NAX.COM) on the hard "
+            "disk.  The scripts are the `.MES` members of `DATALIB1-4.DLB` (a directory of names, places and "
+            "sizes, then the members): compiled commands of two letters (and a few of one byte) whose "
+            "arguments are typed values, expressions and conditions, with addresses (gotos, calls, the ifs' "
+            "and loops' ends) as words.  `pc98tl/aypio.py` documents the formats, `pc98tl/aypio_tl.py` the "
+            "English.  A build with no English leaves the disk as it is." % cfg["dir"], "",
+            "* The scripts are walked command by command (UK2.EXE's own reading of each command's "
+            "arguments) and written again with their texts at any length, every address moved with what it "
+            "points at; the archives are written again.",
+            "* Text is the program's own code: two-byte Shift-JIS and single bytes standing for the "
+            "characters of its table.  Its command `\\k` makes it draw bytes as themselves, ASCII half-width: "
+            "the English is written in `\\k` (a name or a word put in goes back to `\\K`), so the program "
+            "needs no patch.",
+            "* The program breaks a line at the window's edge by itself and its message window shows four "
+            "rows (a speaker's and three); the patcher breaks the English between words at 64 letters and "
+            "puts a longer message's rest in more messages, each shown by the call after the message.",
+            "* UK2.EXE's messages, the sound driver's (NAX.COM) and the floppy launcher's (AYPIO.COM) DOS "
+            "messages in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 64 letters, 3 lines a window under a "
+            "speaker (4 without one), the rest in more windows; `\\n` a new line.  `{N1}`.. a name and "
+            "`{S1}`.. a word the message puts in: keep each where it belongs (they count 8 letters).  "
+            "`{C7}` a colour and `{W100}` a wait are kept.",
+            "* Names (`n` ids) and words put in (`w` ids): up to 16 letters (their slots hold 20 bytes); "
+            "longer is cut and reported by string id.",
+            "* Pages (`p` ids): broken between words at 64 letters; `\\n` a new line.",
+            "* Menu choices (`c` ids): one line, `max_cells` letters (the box keeps the Japanese width).",
+            "* Program messages (`e` ids): in place, `max_cells` letters; longer is cut and reported.",
+            "* A script runs on top of the ones that called it: the deepest chain (start.mes, sex.mes, a "
+            "scene, what it calls) must stay within 35,000 bytes, one script within 60,000; a build past "
+            "either is refused and names the scripts.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes, `…` and the "
+            "brackets are made ASCII); a backslash (the commands' mark) as `/`."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title).",
+            "* The name entry's characters (the kana the player picks a name from) and the default names' "
+            "pieces: the name stays as the player enters it.",
+            "* NAX.COM's help screens (shown only when it is run with its options by hand)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4032,7 +4106,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas"):
+                                    "starpt", "fas", "aypio"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4040,7 +4114,8 @@ def main():
                    "n88prog": n88prog_notes, "piyo": piyo_notes,
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
-                   "starpt": starpt_notes, "fas": fas_notes}[cfg["encoding"]](
+                   "starpt": starpt_notes, "fas": fas_notes,
+                   "aypio": aypio_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

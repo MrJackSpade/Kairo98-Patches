@@ -36127,15 +36127,27 @@
      "path": "Sex\\Sex [HD]\\Sex.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/sex (patcher working, machine translation in progress)",
+     "url": "../games/sex/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v4916",
+     "url": "https://vndb.org/v4916",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17558 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aypio.zip/Sex 2",

@@ -4297,5 +4297,19 @@
    "The opening's first scene (ZT.BIN, about 6 keys)",
    "OK: each speaker's name in filler on the first row, the speech in filler under it, half-width; a message the Japanese splits around a wait shown in its two pieces; the blinking key mark after each, a key going on; the pictures changing with the scene"
   ]
+ ],
+ "sex": [
+  [
+   "Boot the hard disk (SEX.BAT: NAX.COM, UK2.EXE): the opening's pages (U2, about 4 keys)",
+   "OK: each page in filler, half-width, broken between words at 64 letters, four rows a page"
+  ],
+  [
+   "The title: its menu (W8) and the message under it",
+   "OK: every choice in filler, half-width (the box keeps the Japanese width, a longer choice runs on below it); the message in filler, broken between words"
+  ],
+  [
+   "Every patched script read again (all 58 .MES files in the four archives)",
+   "OK: every command and address read back; each message too long for one window made a message and the call after it again"
+  ]
  ]
 }

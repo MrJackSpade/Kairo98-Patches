@@ -491,5 +491,10 @@
   "remarks": [
    "Not reached in this test: the save and load menus (the menu items), the later scenes, the endings."
   ]
+ },
+ "sex": {
+  "remarks": [
+   "Not reached in this test: the story's scenes (the title menu takes no choice from the emulator's keys or mouse here, in the original as well), so a message paged over windows in a scene, the names and words put in, the name entry and saving are not seen on screen."
+  ]
  }
 }

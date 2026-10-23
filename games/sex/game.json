@@ -1,0 +1,10 @@
+{
+ "title": "Sex",
+ "key": "Aypio.zip/Sex",
+ "image": "Sex\\Sex [HD]\\Sex.hdi",
+ "encoding": "aypio",
+ "dir": "SEX",
+ "engine": "UK2.EXE",
+ "text": "DATALIB1.DLB",
+ "boot_steps": "25:shot,4:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,10:enter,3:enter,3:enter,3:shot"
+}
