@@ -33,6 +33,20 @@ import struct
 HEAD = b"<< UK2 TEXT Ver1.00 >>\0"
 BS = 0x5C
 LIMIT = 0x88B8              # the scripts' room: a script and the ones that called it (UK2.EXE's check)
+ROOM_MAX = 0xFFF0           # the room grown (`set_room`): its check adds 16-bit sizes
+ROOM_ALLOC = re.compile(rb"\x6a\x00\x68(..)\x6a\x00\x6a\x00\x9a", re.S)     # push 0, room; push 0, 0; call
+ROOM_CHECK = re.compile(rb"\x3d(..)\x76", re.S)                         # cmp ax, room; jbe
+
+
+def set_room(img, room):
+    """UK2.EXE's image with the scripts' room (its allocation and its check) made `room` bytes."""
+    img = bytearray(img)
+    for pat in (ROOM_ALLOC, ROOM_CHECK):
+        at = [m.start(1) for m in pat.finditer(img) if struct.unpack("<H", m.group(1))[0] == LIMIT]
+        if len(at) != 1:
+            raise ScriptError("UK2.EXE: the scripts' room is found %d times, not once" % len(at))
+        struct.pack_into("<H", img, at[0], room)
+    return bytes(img)
 MEMBER = 0xEA60             # a script's longest
 
 GRAMMAR = {
@@ -53,6 +67,27 @@ GRAMMAR = {
     "W9": "E", "WA": "E", "WB": "nE:2", "WC": "E", "WD": "E", "WE": "E", "WF": "E", "WG": "", "WH": "nE:5",
     "WI": "E", "WJ": "V E V", "WK": "nE:6", "WL": "nE:4",
 }
+# Sex 2's build (SEX2\UK2.EXE): commands gone, new ones, and others reading other arguments
+GRAMMAR_2 = dict(GRAMMAR)
+for _n in ("D0", "F6", "F7", "L5", "U4", "UA", "UF", "UG", "WJ"):
+    del GRAMMAR_2[_n]
+GRAMMAR_2.update({
+    "I0": "nE:6", "I1": "V nE:6", "I2": "V V V", "M1": "nE:1", "M5": "nE:1",
+    "F2": "", "F4": "V V V E V V", "I3": "V V V", "I4": "nE:4", "I5": "V", "I6": "", "M6": "V",
+    "UC": "V E*", "UL": "E", "UM": "V V", "UN": "nE:3", "UO": "E", "UP": "nE:2 V V",
+})
+GRAMMARS = (GRAMMAR, GRAMMAR_2)
+NAMES = re.compile(rb"A0(?:[A-Z][0-9A-Z])+")      # the program's table of its commands' names
+
+
+def grammar(exe):
+    """The grammar of the program's build: the one whose commands are its table's."""
+    m = NAMES.search(exe)
+    names = {m.group()[i:i + 2].decode() for i in range(0, len(m.group()), 2)} if m else set()
+    for g in GRAMMARS:
+        if set(g) == names:
+            return g
+    raise ScriptError("UK2.EXE: its commands' table matches no known build")
 
 
 # ---- DLB --------------------------------------------------------------------------------------------------
@@ -93,7 +128,8 @@ class Script:
     """A script walked: cmds [(place, name)], addrs [place of an address word], strings [(start, end)]
     (a string value's bytes, its 0 at end), each string's command (`owner`)."""
 
-    def __init__(self, d):
+    def __init__(self, d, grammar=GRAMMAR):
+        self.grammar = grammar
         if not d.startswith(HEAD):
             raise ScriptError("not a UK2 TEXT script")
         self.d, self.k = d, len(HEAD)
@@ -213,10 +249,10 @@ class Script:
             self._b()
         else:
             name = bytes([c, self._b()]).decode("latin-1")
-            if name not in GRAMMAR:
+            if name not in self.grammar:
                 raise ScriptError("a command %r at %x" % (name, at))
             self._cmd = (at, name)
-            self._args(GRAMMAR[name])
+            self._args(self.grammar[name])
         self.cmds.append((at, name))
 
     def next_command(self, a):
@@ -297,12 +333,21 @@ def lead(c):
     return 0x81 <= c <= 0x9F or 0xE0 <= c <= 0xFC
 
 
-def show(b, table):
+SPEC = re.compile(rb"%[-+ 0#]*[0-9]*(?:\.[0-9]+)?[a-zA-Z]")     # a C format's place for a value
+
+
+def show(b, table, specs=False):
     """A string as strings.json shows it: codes as {r} {C7} {W100} {k} {K}, inserts {N1} (a name) and
-    {S1} (a word), a new line (\\r) as a new line."""
+    {S1} (a word), a new line (\\r) as a new line; with `specs` (a text given to a C format: a page, U2, or
+    a format, UC) a value's place (%d, %s..) as itself in either mode."""
     out, k, raw = [], 0, False
     while k < len(b):
         c = b[k]
+        m = SPEC.match(b, k) if specs and c == 0x25 else None
+        if m:
+            out.append(m.group().decode("ascii"))
+            k = m.end()
+            continue
         if c == BS:
             m = CODE_RE.match(b, k)
             if m:
@@ -345,7 +390,8 @@ def ascii_text(text):
     return "".join(c if 0x20 <= ord(c) < 0x7F or c == "\n" else "?" for c in s)
 
 
-TOKEN = re.compile(r"\{([NS])(\d+)\}|\{([CW]\d+)\}|\n|[ ]+|[^ \n{]+|\{")
+# (a format's %s takes a name in the program's own characters: it goes in \K like an insert)
+TOKEN = re.compile(r"\{([NS])(\d+)\}|\{([CW]\d+)\}|(%-?\d*s)|\n|[ ]+|[^ \n{%]+|\{|%")
 INSERT_WIDTH = 8            # letters a name or a word put in may take
 
 
@@ -357,6 +403,8 @@ def tokens(text):
             out.append(("ins", bytes([5 if m.group(1) == "S" else 6, int(m.group(2))])))
         elif m.group(3):
             out.append(("code", b"\\" + m.group(3).encode("ascii")))
+        elif m.group(4):
+            out.append(("ins", g.encode("ascii")))
         elif g == "\n":
             out.append(("break", None))
         elif g.isspace():

@@ -36204,15 +36204,27 @@
      "path": "Sex 2\\Sex 2 [HD]\\Sex 2.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/sex_2 (patcher working, machine translation in progress)",
+     "url": "../games/sex_2/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB: Sex 2",
+     "url": "https://vndb.org/v9081",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18251 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aypio.zip/Sorcer Kingdom",

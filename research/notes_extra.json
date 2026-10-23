@@ -516,5 +516,11 @@
   "remarks": [
    "Past the first scenes the boot test did not play; every message goes through the same routine."
   ]
+ },
+ "sex_2": {
+  "remarks": [
+   "Past the first scene the boot test did not play; every script goes through the same rebuild.",
+   "The menus take the mouse only (the boot steps move it in small steps; a large jump is not seen)."
+  ]
  }
 }

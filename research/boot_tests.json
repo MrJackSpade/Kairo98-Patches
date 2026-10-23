@@ -4407,5 +4407,31 @@
    "Unmodified build",
    "OK: a build with no English is the source image byte for byte"
   ]
+ ],
+ "sex_2": [
+  [
+   "Pseudo build boots (np21w, SEX2.BAT)",
+   "OK: SOUNDSEL.EXE's menu in filler, then the title"
+  ],
+  [
+   "The name page (U2 in window 1) and its menu (W8)",
+   "OK: the page in filler broken between words at 48 letters, both names put in by its %s shown right; the choices in filler (the box keeps the Japanese width)"
+  ],
+  [
+   "The first scene (pseudo, clicked through)",
+   "OK: the day's page with its %d filled; messages in filler broken between words at 48 letters, 4 rows a window, a longer one's rest in a second window"
+  ],
+  [
+   "Scripts' room",
+   "OK: the stress build's deepest chain (main.mes > sex20.mes > sex21.mes > sex_sys.mes, 40,305 bytes) grew the room to 40,960 bytes and the game ran; all 53 patched scripts read back"
+  ],
+  [
+   "Partly translated build",
+   "OK: SOUNDSEL.EXE's menu in English, the name page in English with the names in it, its choices in English"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source image byte for byte"
+  ]
  ]
 }

@@ -1,0 +1,12 @@
+{
+ "title": "Sex 2",
+ "key": "Aypio.zip/Sex 2",
+ "image": "Sex 2\\Sex 2 [HD]\\Sex 2.hdi",
+ "encoding": "aypio",
+ "dir": "SEX2",
+ "engine": "UK2.EXE",
+ "launcher": "SEX2.BAT",
+ "text": "DATALIB1.DLB",
+ "width": 48,
+ "boot_steps": "12:shot,3:enter,10:shot,2:mouse=1;1,0.2:mouse=-127;-127,0.2:mouse=-127;-127,0.2:mouse=-127;-127,0.2:mouse=-127;-127,0.2:mouse=-127;-127,0.2:mouse=-127;-127,0.2:mouse=112;62,0.2:mouse=112;62,0.2:mouse=112;62,0.2:mouse=112;62,0.2:mouse=110;60,0.2:mouse=4;58,0.5:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot,3:lclick,4:shot"
+}

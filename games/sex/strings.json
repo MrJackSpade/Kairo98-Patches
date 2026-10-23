@@ -10,7 +10,7 @@
     "1:aypio.mes:1f"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "c00001",
@@ -92,7 +92,7 @@
     "1:aypio.mes:1aa"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00003",
@@ -103,7 +103,7 @@
     "1:aypio.mes:23a"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00004",
@@ -114,7 +114,7 @@
     "1:aypio.mes:2b9"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00005",
@@ -125,7 +125,7 @@
     "1:aypio.mes:370"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00006",
@@ -136,7 +136,7 @@
     "1:aypio.mes:498"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00007",
@@ -147,7 +147,7 @@
     "1:aypio.mes:599"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00008",
@@ -158,7 +158,7 @@
     "1:aypio.mes:5c6"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00009",
@@ -169,7 +169,7 @@
     "1:aypio.mes:5ea"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00010",
@@ -180,7 +180,7 @@
     "1:aypio.mes:613"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00011",
@@ -191,7 +191,7 @@
     "1:aypio.mes:63d"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00012",
@@ -202,7 +202,7 @@
     "1:aypio.mes:6a3"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "c00007",
@@ -235,7 +235,7 @@
     "1:aypio.mes:73b"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00014",
@@ -246,7 +246,7 @@
     "1:aypio.mes:7a2"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00015",
@@ -257,7 +257,7 @@
     "1:aypio.mes:7f9"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00016",
@@ -268,7 +268,7 @@
     "1:aypio.mes:875"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00017",
@@ -279,7 +279,7 @@
     "1:aypio.mes:88f"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00018",
@@ -290,7 +290,7 @@
     "1:aypio.mes:97c"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00019",
@@ -301,7 +301,7 @@
     "1:aypio.mes:9d8"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00020",
@@ -312,7 +312,7 @@
     "1:aypio.mes:a95"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00021",
@@ -323,7 +323,7 @@
     "1:aypio.mes:b88"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00022",
@@ -334,7 +334,7 @@
     "1:aypio.mes:bce"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00023",
@@ -345,7 +345,7 @@
     "1:aypio.mes:c55"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00024",
@@ -356,7 +356,7 @@
     "1:aypio.mes:cdb"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00025",
@@ -367,7 +367,7 @@
     "1:aypio.mes:dbc"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00026",
@@ -378,7 +378,7 @@
     "1:aypio.mes:e19"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00027",
@@ -389,7 +389,7 @@
     "1:aypio.mes:e41"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00028",
@@ -400,7 +400,7 @@
     "1:aypio.mes:ea0"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00029",
@@ -411,7 +411,7 @@
     "1:aypio.mes:1027"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00030",
@@ -422,7 +422,7 @@
     "1:aypio.mes:12aa"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00031",
@@ -433,7 +433,7 @@
     "1:aypio.mes:132b"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00032",
@@ -444,7 +444,7 @@
     "1:aypio.mes:16da"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00033",
@@ -455,7 +455,7 @@
     "1:aypio.mes:189a"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00034",
@@ -466,7 +466,7 @@
     "1:aypio.mes:1a61"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00035",
@@ -477,7 +477,7 @@
     "1:aypio.mes:1bdb"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00036",
@@ -488,7 +488,7 @@
     "1:aypio.mes:1c51"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00037",
@@ -499,7 +499,7 @@
     "1:aypio.mes:1cfa"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00038",
@@ -510,7 +510,7 @@
     "1:aypio.mes:1d7f"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "t00001",
@@ -568,7 +568,7 @@
     "1:aypio.mes:1e92"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00040",
@@ -579,7 +579,7 @@
     "1:aypio.mes:1ee8"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00041",
@@ -590,7 +590,7 @@
     "1:aypio.mes:1f3e"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00042",
@@ -601,7 +601,7 @@
     "1:aypio.mes:200d"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00043",
@@ -612,7 +612,7 @@
     "1:aypio.mes:231c"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00044",
@@ -623,7 +623,7 @@
     "1:aypio.mes:236d"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00045",
@@ -634,7 +634,7 @@
     "1:aypio.mes:2440"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00046",
@@ -645,7 +645,7 @@
     "1:aypio.mes:274f"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00047",
@@ -656,7 +656,7 @@
     "1:aypio.mes:27a0"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00048",
@@ -667,7 +667,7 @@
     "1:aypio.mes:2873"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00049",
@@ -678,7 +678,7 @@
     "1:aypio.mes:2b82"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00050",
@@ -689,7 +689,7 @@
     "1:aypio.mes:2bd2"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00051",
@@ -700,7 +700,7 @@
     "1:dj1.mes:24"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00052",
@@ -711,7 +711,7 @@
     "1:dj1.mes:c7"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00053",
@@ -722,7 +722,7 @@
     "1:dj1.mes:230"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00054",
@@ -733,7 +733,7 @@
     "1:dj1.mes:2dc"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00055",
@@ -744,7 +744,7 @@
     "1:dj1.mes:3a9"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00056",
@@ -755,7 +755,7 @@
     "1:dj1.mes:453"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00057",
@@ -766,7 +766,7 @@
     "1:dj1.mes:5c3"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00058",
@@ -777,7 +777,7 @@
     "1:dj1.mes:666"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00059",
@@ -788,7 +788,7 @@
     "1:dj1.mes:725"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00060",
@@ -799,7 +799,7 @@
     "1:dj1.mes:7e4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00061",
@@ -810,7 +810,7 @@
     "1:dj_nana.mes:32"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00062",
@@ -821,7 +821,7 @@
     "1:dj_nana.mes:a4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00063",
@@ -832,7 +832,7 @@
     "1:dj_nana.mes:116"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00064",
@@ -843,7 +843,7 @@
     "1:dj_nana.mes:164"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00065",
@@ -855,7 +855,7 @@
     "1:dj_nana.mes:269"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00066",
@@ -866,7 +866,7 @@
     "1:dj_nana.mes:2e7"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00067",
@@ -877,7 +877,7 @@
     "1:hd_inst.mes:1f"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00068",
@@ -888,7 +888,7 @@
     "1:hd_inst.mes:a4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00069",
@@ -899,7 +899,7 @@
     "1:hd_inst.mes:14a"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00070",
@@ -910,7 +910,7 @@
     "1:hd_inst.mes:1b9"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00071",
@@ -921,7 +921,7 @@
     "1:hd_inst.mes:224"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00072",
@@ -932,7 +932,7 @@
     "1:hd_inst.mes:2a4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00073",
@@ -943,7 +943,7 @@
     "1:hd_inst.mes:306"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00074",
@@ -954,7 +954,7 @@
     "1:hd_inst.mes:38a"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00075",
@@ -965,7 +965,7 @@
     "1:hd_inst.mes:3fe"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "c00012",
@@ -987,7 +987,7 @@
     "1:hd_inst.mes:48a"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00077",
@@ -998,7 +998,7 @@
     "1:hd_inst.mes:4e4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00078",
@@ -1009,7 +1009,7 @@
     "1:hd_inst.mes:576"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00079",
@@ -1020,7 +1020,7 @@
     "1:hd_inst.mes:5d3"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00080",
@@ -1031,7 +1031,7 @@
     "1:hd_inst.mes:660"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00081",
@@ -1042,7 +1042,7 @@
     "1:hd_inst.mes:6aa"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00082",
@@ -1053,18 +1053,18 @@
     "1:name_inp.mes:2f4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00083",
    "kind": "page",
-   "jp": "{C7}あなたのなまえ：%ゃ%ゃ%ゃ%ゃ%ゃ%ゃ",
+   "jp": "{C7}あなたのなまえ：%s%s%s%s%s%s",
    "en": "",
    "refs": [
     "1:name_inp.mes:48d"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00084",
@@ -1075,7 +1075,7 @@
     "1:sex.mes:b1e"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00085",
@@ -1086,7 +1086,7 @@
     "1:sex.mes:c18"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00086",
@@ -1097,7 +1097,7 @@
     "1:sex.mes:cf7"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00087",
@@ -1108,7 +1108,7 @@
     "1:sex.mes:ddc"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00088",
@@ -1119,7 +1119,7 @@
     "1:sex.mes:e97"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00089",
@@ -1130,7 +1130,7 @@
     "1:sex.mes:f42"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00090",
@@ -1141,7 +1141,7 @@
     "1:sex.mes:fe4"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00091",
@@ -1152,7 +1152,7 @@
     "1:sex.mes:1094"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00092",
@@ -1164,7 +1164,7 @@
     "1:sex.mes:11ae"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00093",
@@ -1175,7 +1175,7 @@
     "1:sex.mes:1266"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00094",
@@ -1186,7 +1186,7 @@
     "1:sex.mes:133b"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00095",
@@ -1197,7 +1197,7 @@
     "1:sex.mes:13e7"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00096",
@@ -1208,7 +1208,7 @@
     "1:sex.mes:1485"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00097",
@@ -1219,7 +1219,7 @@
     "1:sex.mes:156b"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00098",
@@ -1230,7 +1230,7 @@
     "1:sex.mes:15e3"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00099",
@@ -1241,7 +1241,7 @@
     "1:sex.mes:169c"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00100",
@@ -1252,7 +1252,7 @@
     "1:sex.mes:1770"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "c00013",
@@ -2047,7 +2047,7 @@
     "1:sex_a02.mes:76"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "m00061",
@@ -5638,6 +5638,20 @@
     "1:sex_a07.mes:4a9",
     "1:sex_n03.mes:224",
     "1:sex_n05.mes:128"
+   ],
+   "max_cells": 9999,
+   "note": "a text a script sets: one line"
+  },
+  {
+   "id": "t00004",
+   "kind": "text",
+   "jp": "アソコを愛撫する",
+   "en": "",
+   "refs": [
+    "1:sex_a05.mes:b9",
+    "1:sex_a07.mes:4d2",
+    "1:sex_n03.mes:241",
+    "1:sex_n05.mes:145"
    ],
    "max_cells": 9999,
    "note": "a text a script sets: one line"
@@ -14288,7 +14302,7 @@
     "1:sex_m02.mes:69"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "m01138",
@@ -17273,7 +17287,7 @@
    "note": "a message: any length (broken between words, 3 lines a window under a speaker, more windows for the rest); \\n a new line; keep each {N1} (a name) and {S1} (a word) where it belongs"
   },
   {
-   "id": "t00004",
+   "id": "t00005",
    "kind": "text",
    "jp": "××××をキレイにする",
    "en": "",
@@ -25316,7 +25330,7 @@
    "note": "a menu's choice: one line, max_cells letters"
   },
   {
-   "id": "t00005",
+   "id": "t00006",
    "kind": "text",
    "jp": "レルッ！！　ヌチュ！！　プチュチュ！！",
    "en": "",
@@ -31269,7 +31283,7 @@
     "1:sex_n02.mes:76"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "m02612",
@@ -31415,7 +31429,7 @@
    "note": "a message: any length (broken between words, 3 lines a window under a speaker, more windows for the rest); \\n a new line; keep each {N1} (a name) and {S1} (a word) where it belongs"
   },
   {
-   "id": "t00006",
+   "id": "t00007",
    "kind": "text",
    "jp": "胸を揉む",
    "en": "",
@@ -41235,7 +41249,7 @@
     "1:sex_sys.mes:308"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "n00001",
@@ -41282,7 +41296,7 @@
    "note": "a speaker's name: up to 16 letters"
   },
   {
-   "id": "t00007",
+   "id": "t00008",
    "kind": "text",
    "jp": "ハードディスクについて",
    "en": "",
@@ -41378,7 +41392,7 @@
     "1:start.mes:474"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00106",
@@ -41389,7 +41403,7 @@
     "1:start.mes:4ed"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00107",
@@ -41400,7 +41414,7 @@
     "1:start.mes:722"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "m03488",
@@ -41466,7 +41480,7 @@
     "1:start.mes:c39"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00109",
@@ -41477,7 +41491,7 @@
     "1:start.mes:ce9"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00110",
@@ -41488,7 +41502,7 @@
     "1:start.mes:d94"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "p00111",
@@ -41499,7 +41513,7 @@
     "1:start.mes:e6b"
    ],
    "max_cells": 9999,
-   "note": "a page of text: broken between words at 64 letters; \\n a new line"
+   "note": "a page of text: broken between words at 64 letters; \\n a new line; keep each %d, %s.. (where a value goes) in order"
   },
   {
    "id": "e00001",

@@ -10,25 +10,28 @@ Clearance: no PC-98 English release or announcement found on 2026-10-11 (`resear
 Aypio's UK2 engine (`SEX\UK2.EXE`, run by `SEX.BAT` under its sound driver NAX.COM) on the hard disk.  The scripts are the `.MES` members of `DATALIB1-4.DLB` (a directory of names, places and sizes, then the members): compiled commands of two letters (and a few of one byte) whose arguments are typed values, expressions and conditions, with addresses (gotos, calls, the ifs' and loops' ends) as words.  `pc98tl/aypio.py` documents the formats, `pc98tl/aypio_tl.py` the English.  A build with no English leaves the disk as it is.
 
 * The scripts are walked command by command (UK2.EXE's own reading of each command's arguments) and written again with their texts at any length, every address moved with what it points at; the archives are written again.
-* Text is the program's own code: two-byte Shift-JIS and single bytes standing for the characters of its table.  Its command `\k` makes it draw bytes as themselves, ASCII half-width: the English is written in `\k` (a name or a word put in goes back to `\K`), so the program needs no patch.
+* Text is the program's own code: two-byte Shift-JIS and single bytes standing for the characters of its table.  Its command `\k` makes it draw bytes as themselves, ASCII half-width: the English is written in `\k` (a name or a word put in, and a page's `%s`, go back to `\K`), so the program needs no patch.
 * The program breaks a line at the window's edge by itself and its message window shows four rows (a speaker's and three); the patcher breaks the English between words at 64 letters and puts a longer message's rest in more messages, each shown by the call after the message.
+* Pages and formatted texts go through a C format (`%d`, `%s`.. are values' places, shown as they are).
+* A script runs on top of the ones that called it, in a room of 35,000 bytes: when the deepest chain with its English is longer, the room (UK2.EXE's allocation and its check) is grown to fit, a kilobyte at a time.
 * UK2.EXE's messages, the sound driver's (NAX.COM) and the floppy launcher's (AYPIO.COM) DOS messages in place.
 * `MTL_NOTE.TXT` is put in the game's folder (`SEX`).
 
 ## Script
 
-3783 strings: 134 menu choices, 11 words put in, 3492 messages, 4 names, 111 pages, 24 program messages, 7 other texts.
+3784 strings: 134 menu choices, 11 words put in, 3492 messages, 4 names, 111 pages, 24 program messages, 8 other texts.
 
-Translation and the content classification (♥) are done by the translation model; 0 of 3783 strings have English so far.
+Translation and the content classification (♥) are done by the translation model; 0 of 3784 strings have English so far.
 
 ## Limits
 
 * Messages (`m` ids): any length; broken between words at 64 letters, 3 lines a window under a speaker (4 without one), the rest in more windows; `\n` a new line.  `{N1}`.. a name and `{S1}`.. a word the message puts in: keep each where it belongs (they count 8 letters).  `{C7}` a colour and `{W100}` a wait are kept.
 * Names (`n` ids) and words put in (`w` ids): up to 16 letters (their slots hold 20 bytes); longer is cut and reported by string id.
-* Pages (`p` ids): broken between words at 64 letters; `\n` a new line.
+* Pages (`p` ids): broken between words at 64 (48 in window 1) letters; `\n` a new line; `%d`, `%s`.. are where a value goes (a number, a name): keep each, in order (a different set is reported by string id).
 * Menu choices (`c` ids): one line, `max_cells` letters (the box keeps the Japanese width).
+* Other texts (`t` ids): one line.
 * Program messages (`e` ids): in place, `max_cells` letters; longer is cut and reported.
-* A script runs on top of the ones that called it: the deepest chain (start.mes, sex.mes, a scene, what it calls) must stay within 35,000 bytes, one script within 60,000; a build past either is refused and names the scripts.
+* A script runs on top of the ones that called it: the deepest chain (with its English) may grow the room to 65,520 bytes, one script stays within 60,000; a build past either is refused and names the scripts.
 * English is ASCII; other characters are written as `?` (curly quotes, dashes, `…` and the brackets are made ASCII); a backslash (the commands' mark) as `/`.
 
 ## Not handled
