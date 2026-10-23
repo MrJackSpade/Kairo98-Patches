@@ -1,0 +1,10 @@
+{
+ "title": "Bacta",
+ "key": "HimeyaSoft.zip/Bacta",
+ "image": "Bacta\\Bacta [FD hd9]\\Bacta (Disk A).d88",
+ "encoding": "hmy",
+ "floppies": {
+  "B": "Bacta (Disk B).d88"
+ },
+ "boot_steps": "30:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}

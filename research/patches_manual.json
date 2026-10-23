@@ -2918,5 +2918,18 @@
    "url": "https://vndb.org/v4558",
    "source": "VNDB"
   }
+ ],
+ "HimeyaSoft.zip/Bacta": [
+  {
+   "label": "This repo: games/bacta (patcher working, machine translation in progress)",
+   "url": "../games/bacta/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB: Bacta",
+   "url": "https://vndb.org/v8568",
+   "source": "VNDB"
+  }
  ]
 }

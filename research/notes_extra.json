@@ -501,5 +501,10 @@
   "remarks": [
    "The ending (the same part as the opening, the same records) and the player's entry screen were not reached in the boot test; their texts go through the same helpers."
   ]
+ },
+ "bacta": {
+  "remarks": [
+   "Past the first scenes and the first command menus the game was not played in the boot test; every script goes through the same rebuild."
+  ]
  }
 }

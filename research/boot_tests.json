@@ -4337,5 +4337,31 @@
    "Unmodified build",
    "OK: a build with no English is the source image byte for byte"
   ]
+ ],
+ "bacta": [
+  [
+   "Pseudo build boots (np21w, two floppies)",
+   "OK: MAKO-DOS finds every file of the repacked floppies"
+  ],
+  [
+   "Title menu (pseudo)",
+   "OK: the choices half-width in their 12-letter boxes"
+  ],
+  [
+   "Opening scenes (pseudo)",
+   "OK: speakers' names and messages half-width, wrapped to the window's second line"
+  ],
+  [
+   "Command menus (pseudo)",
+   "OK: the five commands and their submenus in their boxes"
+  ],
+  [
+   "Partly translated build",
+   "OK: a long message broken between words over three windows, each waiting for a key; the rest in Japanese as before"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source floppies byte for byte"
+  ]
  ]
 }
