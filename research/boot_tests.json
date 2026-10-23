@@ -4363,5 +4363,27 @@
    "Unmodified build",
    "OK: a build with no English is the source floppies byte for byte"
   ]
+ ],
+ "bacta_1_2_voice": [
+  [
+   "Pseudo build boots (np21w, BACTA21.BAT)",
+   "OK: the mode and game menus' choices half-width in their boxes"
+  ],
+  [
+   "Bacta's first scenes (pseudo)",
+   "OK: speakers' names and messages half-width in the 68-letter window"
+  ],
+  [
+   "Bacta 2's title and opening (pseudo)",
+   "OK: the opening's messages broken between words in its 56-letter window"
+  ],
+  [
+   "Partly translated build",
+   "OK: a long message broken between words over two windows, each waiting for a key; the rest in Japanese as before"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source image byte for byte"
+  ]
  ]
 }

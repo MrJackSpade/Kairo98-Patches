@@ -3084,6 +3084,70 @@ def hmy_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def b12_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "name": "speakers' names", "item": "menu choices"}
+    out = ["# %s%s (Himeya Soft)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Himeya Soft's B12 engine (`%s\\%s`, run by `BACTA21.BAT`; type `CD BACTA` and `BACTA21` at the "
+            "prompt), with Bacta and Bacta 2 in one set (a voice or a text mode, then the game).  The scripts "
+            "are the members of `%s`, an archive of names and places, each byte of a member rotated 5 bits: "
+            "op codes (31 of them) with addresses (gosubs, jumps by a variable, the flags' and variables' "
+            "conditional jumps) as words, and if/else blocks run \"skipped\" in between.  "
+            "`pc98tl/b12.py` documents the formats, `pc98tl/b12_tl.py` the English.  A build with no English "
+            "leaves the disk as it is." % (cfg["dir"], cfg["engine"], cfg["archive"]),
+            "",
+            "* The scripts are read op by op and written again with their texts at any length, every address "
+            "moved with what it points at; the archive is written again.",
+            "* The engine draws bytes below 80h half-width itself: the English needs no program patch.",
+            "* The window (Bacta's 3 lines of 68 letters, Bacta 2's 4 of 60, as each script sets it) breaks a "
+            "line at its edge and goes on down past its bottom; its new-line code in a text does not move the "
+            "window's position.  The patcher breaks the English between words and fills each line with "
+            "spaces to the edge, and puts a wait for a key and a cleared window after each window's lines.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at `max_cells` letters (68 or 60), its "
+            "window's lines a window, more windows shown in turn; `\\n` a new line.  The speaker's name "
+            "before it is a string of its own.",
+            "* Speakers' names (`n` ids): up to 16 letters, put before each of their messages with a space.",
+            "* Menu choices (`c` ids): up to `max_cells` letters (the menu's widest Japanese); longer is "
+            "reported by string id.",
+            "* A script with its English must fit its segment (64 KB); a build past it is refused and names "
+            "the script.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes, `…` and the "
+            "brackets are made ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (`GDT`: the opening's notice, the titles).",
+            "* The spoken lines (`PCM`, the voice mode)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4258,7 +4322,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4267,7 +4331,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

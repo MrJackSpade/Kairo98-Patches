@@ -2931,5 +2931,23 @@
    "url": "https://vndb.org/v8568",
    "source": "VNDB"
   }
+ ],
+ "HimeyaSoft.zip/Bacta 1&2 + Voice": [
+  {
+   "label": "This repo: games/bacta_1_2_voice (patcher working, machine translation in progress)",
+   "url": "../games/bacta_1_2_voice/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB: Bacta",
+   "url": "https://vndb.org/v8568",
+   "source": "VNDB"
+  },
+  {
+   "label": "VNDB: Bacta 2",
+   "url": "https://vndb.org/v8569",
+   "source": "VNDB"
+  }
  ]
 }

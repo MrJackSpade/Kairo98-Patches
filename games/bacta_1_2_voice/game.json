@@ -1,0 +1,10 @@
+{
+ "title": "Bacta 1&2 + Voice",
+ "key": "HimeyaSoft.zip/Bacta 1&2 + Voice",
+ "image": "Bacta 1&2 + Voice\\Bacta 1&2 + Voice [HD]\\Bacta 1&2 + Voice.hdi",
+ "encoding": "b12",
+ "dir": "BACTA",
+ "engine": "B12.EXE",
+ "archive": "SNR",
+ "boot_steps": "20:key=13,0.3:key=67,0.3:key=68,0.3:key=32,0.3:key=66,0.3:key=65,0.3:key=67,0.3:key=84,0.3:key=65,0.5:enter,0.3:key=66,0.3:key=65,0.3:key=67,0.3:key=84,0.3:key=65,0.3:key=50,0.3:key=49,0.5:enter,15:shot,5:enter,5:shot,5:enter,8:shot,5:enter,5:shot,5:enter,5:shot"
+}

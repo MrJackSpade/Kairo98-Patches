@@ -506,5 +506,10 @@
   "remarks": [
    "Past the first scenes and the first command menus the game was not played in the boot test; every script goes through the same rebuild."
   ]
+ },
+ "bacta_1_2_voice": {
+  "remarks": [
+   "Past the first scenes of each game the boot test did not play; every script goes through the same rebuild."
+  ]
  }
 }
