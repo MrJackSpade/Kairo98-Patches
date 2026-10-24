@@ -1,6 +1,6 @@
 # Boot an HDI in np21w, send keys on a schedule, and capture window screenshots.
 #   pwsh tools/emu_shot.ps1 -Hdi X.hdi -Out shots\name -Steps "20:shot,1:enter,3:shot"
-# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | enter | space | esc | up | down | left | right | key=<VK> | skey=<VK> (with shift held) | hold=<VK> (held 600 ms)
+# Each step is "<seconds to wait>:<action>"; action = shot | save (emulator state -> <Out>.s00) | lclick | rclick | ldown | lup | mouse=dx;dy | fdd=<drive 0-3>;<image path> (put another floppy in) | enter | space | esc | up | down | left | right | key=<VK> | skey=<VK> (with shift held) | hold=<VK> (held 600 ms)
 # | key=<VK decimal>.  Screenshots are <Out>_<n>.png.  Works with the desktop locked (PrintWindow/PostMessage).
 param(
     [string]$Hdi = "",
@@ -79,7 +79,7 @@ $vk = @{ enter = 13; space = 32; esc = 27; up = 38; down = 40; left = 37; right 
 # reject a malformed step before the emulator starts
 foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
-    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|key=\d+|skey=\d+|hold=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
+    if (-not ($act -match '^(shot|save|lclick|rclick|ldown|lup|mouse=-?\d+;-?\d+|fdd=\d;.+|key=\d+|skey=\d+|hold=\d+)$' -or $vk.ContainsKey($act))) { throw "bad step: $s" }
 }
 $p = Get-Process -Id ([W]::Launch($Exe, ($argv -join " "), $bin, "kairo98emu_" + [guid]::NewGuid().ToString("N").Substring(0, 8)))
 Start-Sleep 3
@@ -91,6 +91,14 @@ foreach ($s in $Steps.Split(",")) {
     $wait, $act = $s.Split(":", 2)
     Start-Sleep -Milliseconds ([int]([double]$wait * 1000))
     $h = [W]::MainWindow($p.Id)
+    if ($act -like "fdd=*") {
+        # another floppy image into a drive (our np21w build's test message WM_USER+0x7A2: the drive,
+        # the image's path in kairo98_fdd.txt beside the emulator)
+        $drv, $img = $act.Substring(4).Split(";", 2)
+        Set-Content -Path (Join-Path (Split-Path $Exe) "kairo98_fdd.txt") -Value $img -Encoding Default
+        [W]::PostMessage($h, 0xBA2, [IntPtr][int]$drv, [IntPtr]0) | Out-Null
+        continue
+    }
     if ($act -like "mouse=*") {
         # move the emulated mouse (our np21w build's test message WM_USER+0x7A0, signed deltas)
         $dxy = $act.Substring(6).Split(";")
