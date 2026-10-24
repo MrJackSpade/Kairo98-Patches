@@ -7,7 +7,9 @@ rest zero), then the blocks.  A block: "FLZ0", its unpacked size and its packed 
 the first byte and the second's top four bits, its length the low four plus 3; the 4 KB window filled
 with spaces and written from FEEh; `pack` writes it).  Unpacked: the strings' count (a word), their
 places (a word each) and the strings, each ended by a NUL; CR (0Dh) a new line.  The scripts name a
-message by its block and number, so a string may take any length (`txb`, `txb_build`).
+message by its block and number, so a string may take any length (`txb`, `txb_build`).  A block
+the English takes past 64 KB is written in the wide form instead (`wide_block`), which the patched
+program reads (`flz_tl.widen`).
 """
 import struct
 
@@ -99,25 +101,41 @@ def txb(raw):
 
 
 def block(strings):
+    base = 2 + 2 * len(strings)
+    if base + sum(len(s) + 1 for s in strings) > 0xFFFF:
+        raise ValueError("a block past 65535 bytes")
     head = bytearray(struct.pack("<H", len(strings)))
     body = bytearray()
-    base = 2 + 2 * len(strings)
     for s in strings:
         head += struct.pack("<H", base + len(body))
         body += s + b"\0"
-    if len(head) + len(body) > 0xFFFF:
-        raise ValueError("a block past 65535 bytes")
     return bytes(head + body)
 
 
-def txb_build(raw, new):
-    """The file with new {(block, number): bytes}; an unchanged block kept as it was."""
+def wide_block(strings):
+    """A block in the wide form (`flz_tl.widen`'s loader): the strings' count, their places in
+    paragraphs, then the strings, each from a paragraph's start; any length, not packed."""
+    out = bytearray(struct.pack("<H", len(strings)) + bytes(2 * len(strings)))
+    for j, s in enumerate(strings):
+        out += bytes(-len(out) % 16)
+        if len(out) // 16 > 0xFFFF:
+            raise ValueError("a block past 1 MB")
+        struct.pack_into("<H", out, 2 + 2 * j, len(out) // 16)
+        out += s + b"\0"
+    return bytes(out)
+
+
+def txb_build(raw, new, wide=False):
+    """The file with new {(block, number): bytes}; an unchanged block kept as it was (`wide`: every
+    block written in the wide form)."""
     offs = [o for o in struct.unpack_from("<%dI" % TABLE, raw, 0) if o]
     blocks = txb(raw)
     out = bytearray(4 * TABLE)
     for k, strings in enumerate(blocks):
         struct.pack_into("<I", out, 4 * k, len(out))
-        if any((k, j) in new for j in range(len(strings))):
+        if wide:
+            out += wide_block([new.get((k, j), s) for j, s in enumerate(strings)])
+        elif any((k, j) in new for j in range(len(strings))):
             data = block([new.get((k, j), s) for j, s in enumerate(strings)])
             packed = pack(data)
             out += MAGIC + struct.pack("<HH", len(data), len(packed)) + packed

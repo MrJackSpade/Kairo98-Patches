@@ -548,5 +548,15 @@
   "remarks": [
    "Not reached in this test: the matches' lines, the cards and the endings, so they are not seen on screen."
   ]
+ },
+ "yumemizaka": {
+  "not_handled": [
+   "The prologue that scrolls before the title (it is in none of the game's text files)."
+  ]
+ },
+ "hiiragizaka_no_kyuukan": {
+  "remarks": [
+   "Not reached in this test: the diary, the endings and the achievement screen, so they are not seen on screen."
+  ]
  }
 }

@@ -1,0 +1,11 @@
+{
+ "title": "Hiiragizaka no Kyuukan",
+ "key": "U-meSoft.zip/Hiiragizaka no Kyuukan",
+ "image": "Hiiragizaka no Kyuukan\\Hiiragizaka no Kyuukan (FD version) [HD]\\Hiiragizaka no Kyuukan (FD version).hdi",
+ "encoding": "flz",
+ "program": "HIRAGI.EXE",
+ "game_dir": "HIRAGI",
+ "line": 56,
+ "rows": 4,
+ "boot_steps": "25:shot,3:enter,4:shot,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=100;100,1:mouse=-20;0,1:mouse=-20;0,1:mouse=-20;0,1:mouse=-20;0,1:mouse=-20;0,1:mouse=-20;0,1:mouse=-20;0,1:mouse=0;-6,1:mouse=0;-6,1:shot,1:lclick,5:shot,2:lclick,4:shot,2:lclick,4:shot,2:lclick,3:lclick,3:lclick,4:shot,2:lclick,2:lclick,2:lclick,2:lclick,4:shot,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,2:lclick,4:shot"
+}

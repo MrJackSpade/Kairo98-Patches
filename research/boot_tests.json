@@ -4523,5 +4523,19 @@
    "A new game: the opening's narration and the first scene's message window",
    "OK: each line in filler, half-width, at its place"
   ]
+ ],
+ "hiiragizaka_no_kyuukan": [
+  [
+   "Boot the hard disk (HIRAGI.EXE): the U-Me logo, the title and its menu",
+   "OK: the menu's items in filler, half-width, in their box"
+  ],
+  [
+   "The name window (the default name), its END clicked",
+   "OK: the default name in filler; the kana grid as it is"
+  ],
+  [
+   "A new game: the day's card and the first messages, read from the wide TXB blocks",
+   "OK: the day card in filler; each message in filler, broken between words within the window's 56 cells and 4 rows; the scenes' pictures as they are"
+  ]
  ]
 }
