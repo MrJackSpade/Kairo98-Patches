@@ -1,0 +1,9 @@
+{
+ "title": "DR^2 Night Janki",
+ "key": "Leaf.zip/DR^2 Night Janki",
+ "image": "DR^2 Night Janki\\DR^2 Night Janki [HD]\\DR^2 Night Janki.hdi",
+ "encoding": "leafnj",
+ "dir": "NJ",
+ "program": "NJ.EXE",
+ "boot_steps": "20:shot,3:enter,5:shot,3:enter,5:shot,5:down,1:enter,2:shot,2:shot,4:shot,6:shot,6:shot"
+}

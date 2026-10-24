@@ -3452,6 +3452,59 @@ def mcs_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def leafnj_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"line": "lines", "prog": "program messages"}
+    out = ["# %s%s (Leaf)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Leaf's mahjong program `%s\\%s` (a C program, run by `HDNJ.BAT`), on the hard disk.  Every text "
+            "of the game is a string in its data group: the story's and the matches' lines, the menus, the "
+            "cards', characters' and hands' names, DOS's messages.  `pc98tl/leafnj_tl.py` documents it and "
+            "writes the English.  A build with no English leaves the disk as it is." % (cfg["dir"], cfg["program"]), "",
+            "* The program draws a string with one routine: a two-byte character from the CG ROM's kanji, a "
+            "byte from its half-width row - but it swapped the code's bytes for a byte, so a byte was drawn "
+            "as nothing.  The patch takes the swap out (two bytes), so English is drawn half-width as ASCII.",
+            "* Each string is written in place.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Lines (`l` ids): each is drawn at its place on the screen (a speaker's name, its padding, the "
+            "speech); up to `max_cells` letters, the Japanese's bytes (two letters for each full-width "
+            "character); longer is cut and reported by string id.  `@` in a line starts a new line (keep the "
+            "Japanese's ones where they are), and keep `%s`, `%d`, `%$d`.",
+            "* Program messages (`e` ids): DOS's, before their `$`: up to `max_cells` letters.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes and `…` are made "
+            "ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (`.LFG`: the title, its menu, the fonts' pictures)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4630,7 +4683,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps", "brm", "mcs"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps", "brm", "mcs", "leafnj"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4639,7 +4692,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes, "brm": brm_notes, "mcs": mcs_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes, "brm": brm_notes, "mcs": mcs_notes, "leafnj": leafnj_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

@@ -3032,5 +3032,18 @@
    "url": "https://vndb.org/v8671",
    "source": "VNDB"
   }
+ ],
+ "Leaf.zip/DR^2 Night Janki": [
+  {
+   "label": "This repo: games/dr2_night_janki (patcher working, machine translation in progress)",
+   "url": "../games/dr2_night_janki/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v448",
+   "url": "https://vndb.org/v448",
+   "source": "VNDB"
+  }
  ]
 }

@@ -4513,5 +4513,15 @@
    "Start a game: the first scene (DE_01.BIN) and its messages",
    "OK: the speaker's name and each message in filler, half-width, broken between words at the program's 68-letter lines, the rest after a key"
   ]
+ ],
+ "dr2_night_janki": [
+  [
+   "Boot the hard disk (HDNJ.BAT, NJ.EXE): the sound source menu, the title, the continue menu",
+   "OK: the menus' items in filler, half-width (the title and its menu are pictures)"
+  ],
+  [
+   "A new game: the opening's narration and the first scene's message window",
+   "OK: each line in filler, half-width, at its place"
+  ]
  ]
 }

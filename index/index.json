@@ -141821,15 +141821,27 @@
      "path": "DR^2 Night Janki\\DR^2 Night Janki [HD]\\DR^2 Night Janki.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/dr2_night_janki (patcher working, machine translation in progress)",
+     "url": "../games/dr2_night_janki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v448",
+     "url": "https://vndb.org/v448",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r971 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Leaf.zip/Filsnown - Hikari to Toki",

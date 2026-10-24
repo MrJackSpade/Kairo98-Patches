@@ -543,5 +543,10 @@
   "remarks": [
    "Not reached in this test: the menus of choices inside the story, the save screen and op 8Dh's animated messages, so they are not seen on screen."
   ]
+ },
+ "dr2_night_janki": {
+  "remarks": [
+   "Not reached in this test: the matches' lines, the cards and the endings, so they are not seen on screen."
+  ]
  }
 }

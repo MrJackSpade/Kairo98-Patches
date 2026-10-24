@@ -1,0 +1,3968 @@
+{
+ "source_image_sha256": "1d3a2e1bf4b78b3b5f37a3ea1889dbdaa622dcd15771f80331e91b491db2137e",
+ "strings": [
+  {
+   "id": "e00001",
+   "kind": "prog",
+   "jp": "ディスク %s を書き込み可能な状態にして下さい",
+   "en": "",
+   "refs": [
+    "E:14948"
+   ],
+   "max_cells": 45,
+   "note": "DOS's message, printed when a disk or file is missing: max_cells letters"
+  },
+  {
+   "id": "e00002",
+   "kind": "prog",
+   "jp": "が見つかりません",
+   "en": "",
+   "refs": [
+    "E:14987"
+   ],
+   "max_cells": 17,
+   "note": "DOS's message, printed when a disk or file is missing: max_cells letters"
+  },
+  {
+   "id": "e00003",
+   "kind": "prog",
+   "jp": "ドライブにディスク %s を挿入して下さい",
+   "en": "",
+   "refs": [
+    "E:14999"
+   ],
+   "max_cells": 39,
+   "note": "DOS's message, printed when a disk or file is missing: max_cells letters"
+  },
+  {
+   "id": "e00004",
+   "kind": "prog",
+   "jp": "ファイルのアクセスに失敗しました",
+   "en": "",
+   "refs": [
+    "E:149c5"
+   ],
+   "max_cells": 33,
+   "note": "DOS's message, printed when a disk or file is missing: max_cells letters"
+  },
+  {
+   "id": "l00001",
+   "kind": "line",
+   "jp": "データが異常です",
+   "en": "",
+   "refs": [
+    "E:149e8"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00002",
+   "kind": "line",
+   "jp": "交配の札",
+   "en": "",
+   "refs": [
+    "E:14a04"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00003",
+   "kind": "line",
+   "jp": "治癒の札",
+   "en": "",
+   "refs": [
+    "E:14a0d"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00004",
+   "kind": "line",
+   "jp": "ＤＲの札",
+   "en": "",
+   "refs": [
+    "E:14a16"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00005",
+   "kind": "line",
+   "jp": "一撃の札",
+   "en": "",
+   "refs": [
+    "E:14a1f"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00006",
+   "kind": "line",
+   "jp": "体力の札",
+   "en": "",
+   "refs": [
+    "E:14a28"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00007",
+   "kind": "line",
+   "jp": "念　　震",
+   "en": "",
+   "refs": [
+    "E:14a3a"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00008",
+   "kind": "line",
+   "jp": "雀士乱舞",
+   "en": "",
+   "refs": [
+    "E:14a43"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00009",
+   "kind": "line",
+   "jp": "白龍天武",
+   "en": "",
+   "refs": [
+    "E:14a4c"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00010",
+   "kind": "line",
+   "jp": "アレイ",
+   "en": "",
+   "refs": [
+    "E:14a55"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00011",
+   "kind": "line",
+   "jp": "フランソワーズ",
+   "en": "",
+   "refs": [
+    "E:14a5c",
+    "E:1929d"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00012",
+   "kind": "line",
+   "jp": "たま",
+   "en": "",
+   "refs": [
+    "E:14a6b"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00013",
+   "kind": "line",
+   "jp": "メイフィア",
+   "en": "",
+   "refs": [
+    "E:14a70"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00014",
+   "kind": "line",
+   "jp": "イビル＆エビル",
+   "en": "",
+   "refs": [
+    "E:14a7b"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00015",
+   "kind": "line",
+   "jp": "ルミラ",
+   "en": "",
+   "refs": [
+    "E:14a8a"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00016",
+   "kind": "line",
+   "jp": "メモリが足りません",
+   "en": "",
+   "refs": [
+    "E:14a91"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00017",
+   "kind": "line",
+   "jp": "ＦＭ音源",
+   "en": "",
+   "refs": [
+    "E:14c6d"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00018",
+   "kind": "line",
+   "jp": "８６音源",
+   "en": "",
+   "refs": [
+    "E:14c76"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00019",
+   "kind": "line",
+   "jp": "アレイ　「えっ！やっ・・・あの・・なにを・・・」",
+   "en": "",
+   "refs": [
+    "E:14d14"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00020",
+   "kind": "line",
+   "jp": "アレイ　「あ・・・あの・・あまり見ないで下さい。・・・さあさあ続きをし@　　　　　ましょう」",
+   "en": "",
+   "refs": [
+    "E:14d45"
+   ],
+   "max_cells": 91,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00021",
+   "kind": "line",
+   "jp": "伯斗　　「？？？」",
+   "en": "",
+   "refs": [
+    "E:14da1",
+    "E:14e78",
+    "E:151dc",
+    "E:15783",
+    "E:15972"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00022",
+   "kind": "line",
+   "jp": "アレイ　「くっ・・・いた・い・・いや・・・」",
+   "en": "",
+   "refs": [
+    "E:14db4"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00023",
+   "kind": "line",
+   "jp": "アレイ　「いやぁぁぁ・・・い・いたい・・・もう・・あっ・・・・・・・・@　　　　　・・・・くっ・・それ以上」",
+   "en": "",
+   "refs": [
+    "E:14de1"
+   ],
+   "max_cells": 107,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00024",
+   "kind": "line",
+   "jp": "アレイ　「あぁぁぁぁぁぁぁぁっ・・・・・」",
+   "en": "",
+   "refs": [
+    "E:14e4d"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00025",
+   "kind": "line",
+   "jp": "伯斗　　「・・・・？・・なにやってんだ」",
+   "en": "",
+   "refs": [
+    "E:14e8b"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00026",
+   "kind": "line",
+   "jp": "フランソワーズ「脱いでるんです」",
+   "en": "",
+   "refs": [
+    "E:14eb4"
+   ],
+   "max_cells": 32,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00027",
+   "kind": "line",
+   "jp": "伯斗　　「あ・・・あっそう」",
+   "en": "",
+   "refs": [
+    "E:14ed5"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00028",
+   "kind": "line",
+   "jp": "フランソワーズ「なかなかお強いですね。次は負けませんわ」",
+   "en": "",
+   "refs": [
+    "E:14ef2"
+   ],
+   "max_cells": 56,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00029",
+   "kind": "line",
+   "jp": "フランソワーズ「はうっ・・・お人形さんの指が奥まで・・・」",
+   "en": "",
+   "refs": [
+    "E:14f2b"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00030",
+   "kind": "line",
+   "jp": "フランソワーズ「だめぇぇぇぇぇぇぇっ・・・」",
+   "en": "",
+   "refs": [
+    "E:14f66"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00031",
+   "kind": "line",
+   "jp": "伯斗　　「？？？（なにやってんだ？）」",
+   "en": "",
+   "refs": [
+    "E:14f93"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00032",
+   "kind": "line",
+   "jp": "メイフィア「もうっ！！・・・しょうがないなぁ・・・」",
+   "en": "",
+   "refs": [
+    "E:14fba"
+   ],
+   "max_cells": 52,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00033",
+   "kind": "line",
+   "jp": "メイフィア「ほらほら、ぼ－としてないで早く勝負の続きをするわよっ！！」",
+   "en": "",
+   "refs": [
+    "E:14fef"
+   ],
+   "max_cells": 70,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00034",
+   "kind": "line",
+   "jp": "メイフィア「もーっ！！・・また負けちゃった」",
+   "en": "",
+   "refs": [
+    "E:15036"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00035",
+   "kind": "line",
+   "jp": "メイフィア「まったく変なルールなんだから・・・」",
+   "en": "",
+   "refs": [
+    "E:15063"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00036",
+   "kind": "line",
+   "jp": "メイフィア「ハァはぁ・・・ハァ・・・あっ・・・はぁ、ハァ・・・」",
+   "en": "",
+   "refs": [
+    "E:15094"
+   ],
+   "max_cells": 64,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00037",
+   "kind": "line",
+   "jp": "メイフィア「も・・・もう・・・もう・・・お、おねがい、いやぁぁぁぁぁぁっ」",
+   "en": "",
+   "refs": [
+    "E:150d5"
+   ],
+   "max_cells": 74,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00038",
+   "kind": "line",
+   "jp": "メイフィア「だ、だめぇ～もうだめぇ～～～～あ～～～～～～」",
+   "en": "",
+   "refs": [
+    "E:15120"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00039",
+   "kind": "line",
+   "jp": "たま　　「にゃ～んにゃん・・・んっ？・・・にゃん」",
+   "en": "",
+   "refs": [
+    "E:1515b"
+   ],
+   "max_cells": 50,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00040",
+   "kind": "line",
+   "jp": "伯斗　　「なにやってんだ？」",
+   "en": "",
+   "refs": [
+    "E:1518e"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00041",
+   "kind": "line",
+   "jp": "たま　　「にぃやぁ～～～～～ん・・・にゃ～～ん」",
+   "en": "",
+   "refs": [
+    "E:151ab"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00042",
+   "kind": "line",
+   "jp": "たま　　「にゃ～～～～～～～～～～～～～～～～～～～～@　　　　　ふにゃ・・・はにゃ・・・はぁ・・・にゃにゃ・・・・@　　　　　にゃ～～～～～～～～～～～～～～～～～～～～ん」@",
+   "en": "",
+   "refs": [
+    "E:151ef"
+   ],
+   "max_cells": 175,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00043",
+   "kind": "line",
+   "jp": "エビル　「くっ、負けちまった。好きにしろ・・・」",
+   "en": "",
+   "refs": [
+    "E:1529f"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00044",
+   "kind": "line",
+   "jp": "イビル　「しかたない。・・・」",
+   "en": "",
+   "refs": [
+    "E:152d0"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00045",
+   "kind": "line",
+   "jp": "伯斗　　「・・・」",
+   "en": "",
+   "refs": [
+    "E:152ef",
+    "E:153e3",
+    "E:15425",
+    "E:17b4e",
+    "E:17eb7",
+    "E:1886f"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00046",
+   "kind": "line",
+   "jp": "イビル　「なにボーっとしてんだ！」",
+   "en": "",
+   "refs": [
+    "E:15302"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00047",
+   "kind": "line",
+   "jp": "伯斗　　「あ、・・・？」",
+   "en": "",
+   "refs": [
+    "E:15325"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00048",
+   "kind": "line",
+   "jp": "エビル　「ささっと次の勝負だ！！」",
+   "en": "",
+   "refs": [
+    "E:1533e"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00049",
+   "kind": "line",
+   "jp": "エビル　「またか、くそぉ！！」",
+   "en": "",
+   "refs": [
+    "E:15361"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00050",
+   "kind": "line",
+   "jp": "イビル　「う～～、しかたないエビル、本棚にもたれろ！」",
+   "en": "",
+   "refs": [
+    "E:15380"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00051",
+   "kind": "line",
+   "jp": "エビル　「こうか」",
+   "en": "",
+   "refs": [
+    "E:153b7"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00052",
+   "kind": "line",
+   "jp": "イビル　「そのままだぞ」",
+   "en": "",
+   "refs": [
+    "E:153ca"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00053",
+   "kind": "line",
+   "jp": "イビル　「こ、これでいいか？・・・はぁ・はぁ」",
+   "en": "",
+   "refs": [
+    "E:153f6"
+   ],
+   "max_cells": 46,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00054",
+   "kind": "line",
+   "jp": "イビル　「よし、次だ！！」",
+   "en": "",
+   "refs": [
+    "E:15438"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00055",
+   "kind": "line",
+   "jp": "イビル　「か、完敗だ。」",
+   "en": "",
+   "refs": [
+    "E:15453"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00056",
+   "kind": "line",
+   "jp": "イビル　「こうなったら、やけだとことんまでやってやる。」",
+   "en": "",
+   "refs": [
+    "E:1546c"
+   ],
+   "max_cells": 56,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00057",
+   "kind": "line",
+   "jp": "エビル　「うっうあっ！・・・な、なにを」",
+   "en": "",
+   "refs": [
+    "E:154a5"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00058",
+   "kind": "line",
+   "jp": "イビル　「エビル、声を出せ！！」",
+   "en": "",
+   "refs": [
+    "E:154ce"
+   ],
+   "max_cells": 32,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00059",
+   "kind": "line",
+   "jp": "エビル　「こえ！！・・・どうやって？」",
+   "en": "",
+   "refs": [
+    "E:154ef"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00060",
+   "kind": "line",
+   "jp": "イビル　「うっ・・はぁ・・あっとかなんでもいい」",
+   "en": "",
+   "refs": [
+    "E:15516"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00061",
+   "kind": "line",
+   "jp": "エビル　「こうか？・・・あっ・・・。」",
+   "en": "",
+   "refs": [
+    "E:15547"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00062",
+   "kind": "line",
+   "jp": "イビル　「よしよし、その調子で！」",
+   "en": "",
+   "refs": [
+    "E:1556e"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00063",
+   "kind": "line",
+   "jp": "エビル　「あっ・・・はぁ、はぁ・・・うっ・くっ」",
+   "en": "",
+   "refs": [
+    "E:15591"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00064",
+   "kind": "line",
+   "jp": "イビル　「よ、よし・・・・んぅ・・・くっ・・・」",
+   "en": "",
+   "refs": [
+    "E:155c2"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00065",
+   "kind": "line",
+   "jp": "エビル　「はぁ・・・ハァ・・・はぁ・・・・くっ」",
+   "en": "",
+   "refs": [
+    "E:155f3"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00066",
+   "kind": "line",
+   "jp": "イビル　「ハァ・・・はぁ・・・・い、・・・くっ・・・。」",
+   "en": "",
+   "refs": [
+    "E:15624"
+   ],
+   "max_cells": 56,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00067",
+   "kind": "line",
+   "jp": "イビル＆エビル「はっ・・はぁ・・・いい・・・ぁっ・・くぅ～・・・@　　　　　　　　はぁはぁはぁはふぁ・・あ～～～～～～～～～～～～」",
+   "en": "",
+   "refs": [
+    "E:1565d"
+   ],
+   "max_cells": 131,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00068",
+   "kind": "line",
+   "jp": "伯斗　　「？？？あらら」",
+   "en": "",
+   "refs": [
+    "E:156e1"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00069",
+   "kind": "line",
+   "jp": "ルミラ　「う～次は負けないわよ！」",
+   "en": "",
+   "refs": [
+    "E:156fa"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00070",
+   "kind": "line",
+   "jp": "ルミラ　「ちょっとそんなに乱暴にしないでよ、少し勝ったくらいで、@　　　　　い、いい気にならないでよ」",
+   "en": "",
+   "refs": [
+    "E:1571d"
+   ],
+   "max_cells": 101,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00071",
+   "kind": "line",
+   "jp": "ルミラ　「こんなポ－ズさせて、許さないから！」",
+   "en": "",
+   "refs": [
+    "E:15796"
+   ],
+   "max_cells": 46,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00072",
+   "kind": "line",
+   "jp": "伯斗　　「許すもなにも・・・？？？？？？？？？？？？？？？？？？@　　　　　？？？？？？？？？？？？？？？？？？？？？？？？？？？」",
+   "en": "",
+   "refs": [
+    "E:157c5"
+   ],
+   "max_cells": 131,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00073",
+   "kind": "line",
+   "jp": "ルミラ　「あ～～～ん、恥ずかしい、・・・ハァッ・・・はあっ・・@　　　　　んぅ・・・ああん変になっちゃう～～！」",
+   "en": "",
+   "refs": [
+    "E:15849"
+   ],
+   "max_cells": 111,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00074",
+   "kind": "line",
+   "jp": "ルミラ　「も・もっと・・・ハァ・・・ハァ・・・そこ・・・」",
+   "en": "",
+   "refs": [
+    "E:158b9"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00075",
+   "kind": "line",
+   "jp": "伯斗　　「？」",
+   "en": "",
+   "refs": [
+    "E:158f4"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00076",
+   "kind": "line",
+   "jp": "ルミラ　「いい、もっといじめてぇ！・・・はぁぁ・・・ハァ」",
+   "en": "",
+   "refs": [
+    "E:15903"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00077",
+   "kind": "line",
+   "jp": "伯斗　　「？？」",
+   "en": "",
+   "refs": [
+    "E:1593e"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00078",
+   "kind": "line",
+   "jp": "ルミラ　「そんなところ・・・あっ」",
+   "en": "",
+   "refs": [
+    "E:1594f"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00079",
+   "kind": "line",
+   "jp": "ルミラ　「そんなに・・・あっ・ん、ああっァ～～～～～～～～」",
+   "en": "",
+   "refs": [
+    "E:15985"
+   ],
+   "max_cells": 60,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00080",
+   "kind": "line",
+   "jp": "伯斗　　「？？？？」",
+   "en": "",
+   "refs": [
+    "E:159c2"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00081",
+   "kind": "line",
+   "jp": "どちらを奪いますか？",
+   "en": "",
+   "refs": [
+    "E:159d7"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00082",
+   "kind": "line",
+   "jp": "　　 ハート %$d個%s",
+   "en": "",
+   "refs": [
+    "E:159f0"
+   ],
+   "max_cells": 19,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00083",
+   "kind": "line",
+   "jp": "　　 ハート 半分",
+   "en": "",
+   "refs": [
+    "E:15a04"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00084",
+   "kind": "line",
+   "jp": " リーチ ",
+   "en": "",
+   "refs": [
+    "E:15a76"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00085",
+   "kind": "line",
+   "jp": "  チー  ",
+   "en": "",
+   "refs": [
+    "E:15a88"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00086",
+   "kind": "line",
+   "jp": "アイテム",
+   "en": "",
+   "refs": [
+    "E:15ab5",
+    "E:15c91"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00087",
+   "kind": "line",
+   "jp": "テンパイ",
+   "en": "",
+   "refs": [
+    "E:15ad4",
+    "E:15ae6"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00088",
+   "kind": "line",
+   "jp": "ノーテン",
+   "en": "",
+   "refs": [
+    "E:15add",
+    "E:15aef"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00089",
+   "kind": "line",
+   "jp": "変換を失敗しています",
+   "en": "",
+   "refs": [
+    "E:15b59"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00090",
+   "kind": "line",
+   "jp": "が最大値に達しました[%d]",
+   "en": "",
+   "refs": [
+    "E:15bc6"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00091",
+   "kind": "line",
+   "jp": "そんなんナイ！！",
+   "en": "",
+   "refs": [
+    "E:15be2"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00092",
+   "kind": "line",
+   "jp": "判定用バッファKNが異常です",
+   "en": "",
+   "refs": [
+    "E:15bf6"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00093",
+   "kind": "line",
+   "jp": "チーで手配の変換が失敗しました",
+   "en": "",
+   "refs": [
+    "E:15c14"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00094",
+   "kind": "line",
+   "jp": "ポンで手配の変換が失敗しました",
+   "en": "",
+   "refs": [
+    "E:15c36"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00095",
+   "kind": "line",
+   "jp": "交換する牌を選んで下さい",
+   "en": "",
+   "refs": [
+    "E:15c58"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00096",
+   "kind": "line",
+   "jp": "相手の牌を選んで下さい",
+   "en": "",
+   "refs": [
+    "E:15c71"
+   ],
+   "max_cells": 22,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00097",
+   "kind": "line",
+   "jp": "札／技を使用しますか",
+   "en": "",
+   "refs": [
+    "E:15c9a"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00098",
+   "kind": "line",
+   "jp": "　　　この町に、今から約３００年もの昔から建っていたと言われている",
+   "en": "",
+   "refs": [
+    "E:15cdf"
+   ],
+   "max_cells": 66,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00099",
+   "kind": "line",
+   "jp": "　　　　　　　　　　　　　　屋敷・・・・・・",
+   "en": "",
+   "refs": [
+    "E:15d22"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00100",
+   "kind": "line",
+   "jp": "　　　その屋敷ではここ２、３０年の間満月の夜になると、人の断末魔が聞こえ",
+   "en": "",
+   "refs": [
+    "E:15d4f"
+   ],
+   "max_cells": 72,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00101",
+   "kind": "line",
+   "jp": "　　　たという。この町では、麻雀によって名の上がった人々が次々といなくな",
+   "en": "",
+   "refs": [
+    "E:15d98"
+   ],
+   "max_cells": 72,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00102",
+   "kind": "line",
+   "jp": "　　　るという噂がある。人々は恐れこの屋敷をこう読んだ",
+   "en": "",
+   "refs": [
+    "E:15de1"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00103",
+   "kind": "line",
+   "jp": "　　　　　　　　　　　　　　　雀　鬼　の　館",
+   "en": "",
+   "refs": [
+    "E:15e18"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00104",
+   "kind": "line",
+   "jp": "　　　その死の屋敷に導かれるかのごとく、この町で今、一人の雀士がぐんぐんと",
+   "en": "",
+   "refs": [
+    "E:15e45"
+   ],
+   "max_cells": 74,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00105",
+   "kind": "line",
+   "jp": "　　　力を付けていた。",
+   "en": "",
+   "refs": [
+    "E:15e90"
+   ],
+   "max_cells": 22,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00106",
+   "kind": "line",
+   "jp": "　　彼は代々続く有名な探偵の家柄であり、今までに数多くの事件を解決していた。",
+   "en": "",
+   "refs": [
+    "E:15ea7"
+   ],
+   "max_cells": 76,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00107",
+   "kind": "line",
+   "jp": "　　　そんな彼の元にある日一通の手紙と屋敷の見取り図が届いた・・・・・・",
+   "en": "",
+   "refs": [
+    "E:15ef4"
+   ],
+   "max_cells": 72,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00108",
+   "kind": "line",
+   "jp": "『今宵、月　真円を描きし時　この手紙と共に@@　　　我が屋敷の扉を開かれよ。血を持って我が肉体の乾きを満たすが良い』@@　　　　　　　　　　　　　　　　　　　　　　　　　　　　館の主　ルミラ",
+   "en": "",
+   "refs": [
+    "E:15f3d"
+   ],
+   "max_cells": 186,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00109",
+   "kind": "line",
+   "jp": "　　　　　　　　血ぬられた屋敷にまた一人@@　　　　　　　　　　　　　　若き雀士が立ち上がった・・・・・",
+   "en": "",
+   "refs": [
+    "E:15ff8"
+   ],
+   "max_cells": 102,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00110",
+   "kind": "line",
+   "jp": " 移　　動 ",
+   "en": "",
+   "refs": [
+    "E:160b5"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00111",
+   "kind": "line",
+   "jp": " アイテム ",
+   "en": "",
+   "refs": [
+    "E:160c0"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00112",
+   "kind": "line",
+   "jp": " システム ",
+   "en": "",
+   "refs": [
+    "E:160cb"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00113",
+   "kind": "line",
+   "jp": " は　　い ",
+   "en": "",
+   "refs": [
+    "E:160ec"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00114",
+   "kind": "line",
+   "jp": "アイテムはありません",
+   "en": "",
+   "refs": [
+    "E:1610a"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00115",
+   "kind": "line",
+   "jp": "メッセージ",
+   "en": "",
+   "refs": [
+    "E:1612a"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00116",
+   "kind": "line",
+   "jp": " 音　　源 ",
+   "en": "",
+   "refs": [
+    "E:1614b"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00117",
+   "kind": "line",
+   "jp": " 音源なし ",
+   "en": "",
+   "refs": [
+    "E:16160"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00118",
+   "kind": "line",
+   "jp": " 速　　い ",
+   "en": "",
+   "refs": [
+    "E:161a2"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00119",
+   "kind": "line",
+   "jp": " やや速い ",
+   "en": "",
+   "refs": [
+    "E:161ad"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00120",
+   "kind": "line",
+   "jp": " 普　　通 ",
+   "en": "",
+   "refs": [
+    "E:161b8"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00121",
+   "kind": "line",
+   "jp": " やや遅い ",
+   "en": "",
+   "refs": [
+    "E:161c3"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00122",
+   "kind": "line",
+   "jp": " 遅　　い ",
+   "en": "",
+   "refs": [
+    "E:161ce"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00123",
+   "kind": "line",
+   "jp": "セーブ　%$d",
+   "en": "",
+   "refs": [
+    "E:161e4"
+   ],
+   "max_cells": 11,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00124",
+   "kind": "line",
+   "jp": "セーブが終了しました",
+   "en": "",
+   "refs": [
+    "E:161fd"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00125",
+   "kind": "line",
+   "jp": "セーブに失敗しました",
+   "en": "",
+   "refs": [
+    "E:16212"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00126",
+   "kind": "line",
+   "jp": "ロード　%$d",
+   "en": "",
+   "refs": [
+    "E:16227"
+   ],
+   "max_cells": 11,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00127",
+   "kind": "line",
+   "jp": "ロードが終了しました",
+   "en": "",
+   "refs": [
+    "E:16233"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00128",
+   "kind": "line",
+   "jp": "俺は、この町に住む、伯斗龍二。",
+   "en": "",
+   "refs": [
+    "E:16255"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00129",
+   "kind": "line",
+   "jp": "特にすることもなく、今じゃ親の代から続いている探偵事務所を営んでいる。@家系のせいか、俺は妙な力があるみたいだ。その妙な力のおかげで今までに数@々の難事件を解決してきた。",
+   "en": "",
+   "refs": [
+    "E:16274"
+   ],
+   "max_cells": 168,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00130",
+   "kind": "line",
+   "jp": "しかし、こう言っちゃなんだが今の世の中は、平和すぎて商売あがったりだ！@趣味と言えば町の雀荘にでも行って生活費稼ぎぐらいか・・・りっぱな仕事か@もな。",
+   "en": "",
+   "refs": [
+    "E:1631d"
+   ],
+   "max_cells": 148,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00131",
+   "kind": "line",
+   "jp": "自慢じゃないが俺は麻雀にはちょっと自信がある。・・・この町の中じゃもう@俺と闘える奴はいないだろう。",
+   "en": "",
+   "refs": [
+    "E:163b2"
+   ],
+   "max_cells": 99,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00132",
+   "kind": "line",
+   "jp": "そんな時だった、あの噂の館から手紙が届いたのは。送り主はルミラって奴だ。@どんな奴かは知らないが麻雀好きの探偵としては、これに行かざるをえない。",
+   "en": "",
+   "refs": [
+    "E:16416"
+   ],
+   "max_cells": 143,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00133",
+   "kind": "line",
+   "jp": "しかもその館ってのが、かなりのいわくつきときたら・・・探偵としても興味@がある、ってなわけだ。",
+   "en": "",
+   "refs": [
+    "E:164a6"
+   ],
+   "max_cells": 93,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00134",
+   "kind": "line",
+   "jp": "１Ｆ・人形の部屋",
+   "en": "",
+   "refs": [
+    "E:16504"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00135",
+   "kind": "line",
+   "jp": "１Ｆ・上への階段",
+   "en": "",
+   "refs": [
+    "E:16515"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00136",
+   "kind": "line",
+   "jp": "１Ｆ・道具部屋",
+   "en": "",
+   "refs": [
+    "E:16526"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00137",
+   "kind": "line",
+   "jp": "１Ｆ・あき部屋",
+   "en": "",
+   "refs": [
+    "E:16535"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00138",
+   "kind": "line",
+   "jp": "１Ｆ・入り口",
+   "en": "",
+   "refs": [
+    "E:16544"
+   ],
+   "max_cells": 12,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00139",
+   "kind": "line",
+   "jp": "１Ｆ・絵画の部屋",
+   "en": "",
+   "refs": [
+    "E:16551"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00140",
+   "kind": "line",
+   "jp": "２Ｆ・石版の部屋",
+   "en": "",
+   "refs": [
+    "E:16571"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00141",
+   "kind": "line",
+   "jp": "２Ｆ・ねこの部屋",
+   "en": "",
+   "refs": [
+    "E:16582"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00142",
+   "kind": "line",
+   "jp": "２Ｆ・下への階段",
+   "en": "",
+   "refs": [
+    "E:16593"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00143",
+   "kind": "line",
+   "jp": "２Ｆ・上への階段",
+   "en": "",
+   "refs": [
+    "E:165a4"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00144",
+   "kind": "line",
+   "jp": "３Ｆ・主の部屋",
+   "en": "",
+   "refs": [
+    "E:165c4"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00145",
+   "kind": "line",
+   "jp": "３Ｆ・下への階段",
+   "en": "",
+   "refs": [
+    "E:165d3"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00146",
+   "kind": "line",
+   "jp": "伯斗　　「かわいい人形がおいてあるだけだな」",
+   "en": "",
+   "refs": [
+    "E:1666a"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00147",
+   "kind": "line",
+   "jp": "伯斗　　「女の子の部屋だったのかな？・・・まっ関係ないか」",
+   "en": "",
+   "refs": [
+    "E:16697"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00148",
+   "kind": "line",
+   "jp": "伯斗　　「どう見たって人形があるだけだよなぁ～・・・・・・・・@　　　　　まさかあの人形が・・・ははは、そんなわけないな」",
+   "en": "",
+   "refs": [
+    "E:166d2"
+   ],
+   "max_cells": 121,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00149",
+   "kind": "line",
+   "jp": "伯斗　　「おっ、何だあれは・・・・・・こんなとこに牌が落ちている」",
+   "en": "",
+   "refs": [
+    "E:1674c",
+    "E:16ce7",
+    "E:16e18"
+   ],
+   "max_cells": 66,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00150",
+   "kind": "line",
+   "jp": "伯斗　　「うぉ！！」",
+   "en": "",
+   "refs": [
+    "E:1678f",
+    "E:16d2a",
+    "E:16e5b"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00151",
+   "kind": "line",
+   "jp": "伯斗は『白龍天武』を覚えた。",
+   "en": "",
+   "refs": [
+    "E:167a4"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00152",
+   "kind": "line",
+   "jp": "伯斗　　「もう、人形娘はいないな・・・」",
+   "en": "",
+   "refs": [
+    "E:167c1"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00153",
+   "kind": "line",
+   "jp": "「待って下さい」",
+   "en": "",
+   "refs": [
+    "E:167ea",
+    "E:1682a"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00154",
+   "kind": "line",
+   "jp": "伯斗　　「そら耳かな・・・？今声がしたような」",
+   "en": "",
+   "refs": [
+    "E:167fb"
+   ],
+   "max_cells": 46,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00155",
+   "kind": "line",
+   "jp": "伯斗　　「やっぱりそら耳じゃないみたいだな・・・出てこいよ」",
+   "en": "",
+   "refs": [
+    "E:1683b"
+   ],
+   "max_cells": 60,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00156",
+   "kind": "line",
+   "jp": "伯斗　　「！？いぃ～～～～～～～！！」",
+   "en": "",
+   "refs": [
+    "E:16878"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00157",
+   "kind": "line",
+   "jp": "フランソワーズ「どうも初めまして私フランソワ－ズと申します。」",
+   "en": "",
+   "refs": [
+    "E:1689f"
+   ],
+   "max_cells": 62,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00158",
+   "kind": "line",
+   "jp": "伯斗　　「あっ、あぁどうも（ビックリしたぁ～人形じゃなかったのかよ）」",
+   "en": "",
+   "refs": [
+    "E:168de"
+   ],
+   "max_cells": 70,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00159",
+   "kind": "line",
+   "jp": "フランソワーズ「そうそうで申し訳ありませんが、一勝負試させて頂ます」",
+   "en": "",
+   "refs": [
+    "E:16925"
+   ],
+   "max_cells": 68,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00160",
+   "kind": "line",
+   "jp": "伯斗　　「あ～・・そっそう、いいよ」",
+   "en": "",
+   "refs": [
+    "E:1696a"
+   ],
+   "max_cells": 36,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00161",
+   "kind": "line",
+   "jp": "フランソワーズ「くすん、くすん」",
+   "en": "",
+   "refs": [
+    "E:1698f"
+   ],
+   "max_cells": 32,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00162",
+   "kind": "line",
+   "jp": "フランソワーズは泣きながら逃げていった",
+   "en": "",
+   "refs": [
+    "E:169b0"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00163",
+   "kind": "line",
+   "jp": "アイテム屋「あら、お客さん？・・・珍しいわねぇ～。６年ぶりかしらしかし@　　　　　　あなたも不運ねぇ～、へたに麻雀が強いんでしょ・・・・・・・@　　　　　　全く本当にこの町にナイト雀鬼様がいらっしゃるのかしら？」",
+   "en": "",
+   "refs": [
+    "E:169dc"
+   ],
+   "max_cells": 210,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00164",
+   "kind": "line",
+   "jp": "伯斗　　「なんだそのナイト雀鬼ってのは？」",
+   "en": "",
+   "refs": [
+    "E:16aaf"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00165",
+   "kind": "line",
+   "jp": "アイテム屋「えっ！あ～なんでもないのなんでも・・・・」",
+   "en": "",
+   "refs": [
+    "E:16ada"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00166",
+   "kind": "line",
+   "jp": "伯斗　　「・・・・・・」",
+   "en": "",
+   "refs": [
+    "E:16b11"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00167",
+   "kind": "line",
+   "jp": "アイテム屋「それより何にするの？たくさん買っといた方がいいけど・・・・@　　　　　　ま、お金と相談してね」",
+   "en": "",
+   "refs": [
+    "E:16b2a"
+   ],
+   "max_cells": 105,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00168",
+   "kind": "line",
+   "jp": "アイテム屋「いらっしゃい」",
+   "en": "",
+   "refs": [
+    "E:16b94"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00169",
+   "kind": "line",
+   "jp": "アイテム屋「何にする？」",
+   "en": "",
+   "refs": [
+    "E:16baf"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00170",
+   "kind": "line",
+   "jp": "アイテム屋「『%s』はもう持ってるじゃない」",
+   "en": "",
+   "refs": [
+    "E:16bc8"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00171",
+   "kind": "line",
+   "jp": "アイテム屋「『%s』は %$ld ＧＯＬＤよ・・・・・・・・@　　　　　　お金が足りないようね」",
+   "en": "",
+   "refs": [
+    "E:16bf3"
+   ],
+   "max_cells": 87,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00172",
+   "kind": "line",
+   "jp": "アイテム屋「『%s』は %$ld ＧＯＬＤよ」",
+   "en": "",
+   "refs": [
+    "E:16c4b"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00173",
+   "kind": "line",
+   "jp": "アイテム屋「まいどあり～」",
+   "en": "",
+   "refs": [
+    "E:16c72"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00174",
+   "kind": "line",
+   "jp": "アイテム屋「やめるのね」",
+   "en": "",
+   "refs": [
+    "E:16c8d"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00175",
+   "kind": "line",
+   "jp": "アイテム屋「また、よってね」",
+   "en": "",
+   "refs": [
+    "E:16ca6"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00176",
+   "kind": "line",
+   "jp": "伯斗　　「何もない部屋だな・・・」",
+   "en": "",
+   "refs": [
+    "E:16cc4"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00177",
+   "kind": "line",
+   "jp": "伯斗は『雀士乱舞』を覚えた。",
+   "en": "",
+   "refs": [
+    "E:16d3f"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00178",
+   "kind": "line",
+   "jp": "伯斗　　「西洋風のヨロイがあるだけだな」",
+   "en": "",
+   "refs": [
+    "E:16d5c"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00179",
+   "kind": "line",
+   "jp": "伯斗　　「しかし変だな、普通こういったヨロイは壁ぎわに置くものと相場が@　　　　　決まっているのにな・・・」",
+   "en": "",
+   "refs": [
+    "E:16d85"
+   ],
+   "max_cells": 107,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00180",
+   "kind": "line",
+   "jp": "伯斗　　「これじゃ、階段が使えないぞ」",
+   "en": "",
+   "refs": [
+    "E:16df1"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00181",
+   "kind": "line",
+   "jp": "伯斗は『念震』を覚えた。",
+   "en": "",
+   "refs": [
+    "E:16e70"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00182",
+   "kind": "line",
+   "jp": "伯斗　　「もう、ヨロイ娘はいないな・・・」",
+   "en": "",
+   "refs": [
+    "E:16e89"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00183",
+   "kind": "line",
+   "jp": "伯斗　　「鎧がじゃまで移動できないぞ」",
+   "en": "",
+   "refs": [
+    "E:16eb4"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00184",
+   "kind": "line",
+   "jp": "突然鎧が動き、話しかけてきた。",
+   "en": "",
+   "refs": [
+    "E:16edb"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00185",
+   "kind": "line",
+   "jp": "伯斗　　「な、なんだ」",
+   "en": "",
+   "refs": [
+    "E:16efa"
+   ],
+   "max_cells": 22,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00186",
+   "kind": "line",
+   "jp": "ヨロイ娘「え・え～と私こうゆう者ですが・・・・・・」",
+   "en": "",
+   "refs": [
+    "E:16f11"
+   ],
+   "max_cells": 52,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00187",
+   "kind": "line",
+   "jp": "伯斗　　「ん・・・？なになに、雀鬼の館一番突撃隊アレイ・・・・・・・・@　　　　　で、何？」",
+   "en": "",
+   "refs": [
+    "E:16f46"
+   ],
+   "max_cells": 91,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00188",
+   "kind": "line",
+   "jp": "アレイ　「何と言われましても、そのぉ～私と闘わない事には話が先に進まな@　　　　　いのでしてですねぇ～」",
+   "en": "",
+   "refs": [
+    "E:16fa2"
+   ],
+   "max_cells": 103,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00189",
+   "kind": "line",
+   "jp": "伯斗　　「ふ～ん」",
+   "en": "",
+   "refs": [
+    "E:1700a"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00190",
+   "kind": "line",
+   "jp": "アレイ　「う～んどうも６年ぶりのお客様で調子が狂っちゃうなぁ～@　　　　　ま、とにかく私と麻雀始めませんか？」",
+   "en": "",
+   "refs": [
+    "E:1701d"
+   ],
+   "max_cells": 109,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00191",
+   "kind": "line",
+   "jp": "伯斗　　「なんで・・・」",
+   "en": "",
+   "refs": [
+    "E:1708b"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00192",
+   "kind": "line",
+   "jp": "アレイ　「う～～～なんででしょ？」",
+   "en": "",
+   "refs": [
+    "E:170a4"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00193",
+   "kind": "line",
+   "jp": "伯斗　　「早い話しがこうだな、この先に進みたいなら私と麻雀で勝負しろ！@　　　　　ってことだろ・・・それならそうと言えよ！」",
+   "en": "",
+   "refs": [
+    "E:170c7"
+   ],
+   "max_cells": 123,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00194",
+   "kind": "line",
+   "jp": "アレイ　「う～～（さっき言ったんだけどなぁぁ）」",
+   "en": "",
+   "refs": [
+    "E:17143"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00195",
+   "kind": "line",
+   "jp": "伯斗　　「それじゃはじめよう」",
+   "en": "",
+   "refs": [
+    "E:17174"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00196",
+   "kind": "line",
+   "jp": "アレイ　「ひ～～～ん」",
+   "en": "",
+   "refs": [
+    "E:17193"
+   ],
+   "max_cells": 22,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00197",
+   "kind": "line",
+   "jp": "アレイは泣きながら逃げていった",
+   "en": "",
+   "refs": [
+    "E:171aa"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00198",
+   "kind": "line",
+   "jp": "伯斗　　「ここは趣味の部屋だな・・・絵がたくさんある」",
+   "en": "",
+   "refs": [
+    "E:171ca"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00199",
+   "kind": "line",
+   "jp": "伯斗　　「お、あの真ん中の絵なんかなかなかいい感じだな。」",
+   "en": "",
+   "refs": [
+    "E:17201"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00200",
+   "kind": "line",
+   "jp": "「おにいさん見る目あるねぇ～」",
+   "en": "",
+   "refs": [
+    "E:1723c"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00201",
+   "kind": "line",
+   "jp": "伯斗　　「誰だ！！俺は逃げたりしないから出てこいよ！」",
+   "en": "",
+   "refs": [
+    "E:1725b"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00202",
+   "kind": "line",
+   "jp": "「どこ見てんの、私は隠れてなんかないわよ！！もう」",
+   "en": "",
+   "refs": [
+    "E:17292"
+   ],
+   "max_cells": 50,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00203",
+   "kind": "line",
+   "jp": "伯斗　　「・・・？」",
+   "en": "",
+   "refs": [
+    "E:172c5",
+    "E:17d0f"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00204",
+   "kind": "line",
+   "jp": "「ヤッホ～、ここよ、ここ、ここだってば」",
+   "en": "",
+   "refs": [
+    "E:172da"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00205",
+   "kind": "line",
+   "jp": "伯斗　　「なにぃ～！？絵がしゃべってぞ！！ぉ～おい」",
+   "en": "",
+   "refs": [
+    "E:17303"
+   ],
+   "max_cells": 52,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00206",
+   "kind": "line",
+   "jp": "額縁の女「ねぇねぇさっきの、いい感じの絵って私のことでしょ？@　　　　　ねっ！ねっ！」",
+   "en": "",
+   "refs": [
+    "E:17338"
+   ],
+   "max_cells": 85,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00207",
+   "kind": "line",
+   "jp": "伯斗　　「えっ、あっそうそう」",
+   "en": "",
+   "refs": [
+    "E:1738e"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00208",
+   "kind": "line",
+   "jp": "額縁の女「やっぱり、おにいさん見る目あるよ。私、メイフィア・ピクチャー@　　　　　よろしくね」",
+   "en": "",
+   "refs": [
+    "E:173ad"
+   ],
+   "max_cells": 93,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00209",
+   "kind": "line",
+   "jp": "伯斗　　（よろしくねったってな～）",
+   "en": "",
+   "refs": [
+    "E:1740b"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00210",
+   "kind": "line",
+   "jp": "メイフィア「う～ん、結構あんた私のタイプなんだけどなぁ～でも雀鬼様だっ@　　　　　　たらルミラ様にしかられちゃうしなぁ～」",
+   "en": "",
+   "refs": [
+    "E:1742e"
+   ],
+   "max_cells": 121,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00211",
+   "kind": "line",
+   "jp": "メイフィア「しょうがないな、あんたのことは諦めて闘うか・・・そのかわり@　　　　　　私に負けたときは私の物だからね」",
+   "en": "",
+   "refs": [
+    "E:174a8"
+   ],
+   "max_cells": 115,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00212",
+   "kind": "line",
+   "jp": "伯斗",
+   "en": "",
+   "refs": [
+    "E:1751c",
+    "E:1757b",
+    "E:17f1a"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00213",
+   "kind": "line",
+   "jp": "　「ところでなんなんだその雀鬼って？」",
+   "en": "",
+   "refs": [
+    "E:17521"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00214",
+   "kind": "line",
+   "jp": "メイフィア「あ～、あんたにはたぶん関係ないことよ」",
+   "en": "",
+   "refs": [
+    "E:17548"
+   ],
+   "max_cells": 50,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00215",
+   "kind": "line",
+   "jp": "メイフィア「さあ、始めましょう」",
+   "en": "",
+   "refs": [
+    "E:1758d"
+   ],
+   "max_cells": 32,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00216",
+   "kind": "line",
+   "jp": "メイフィア「あ～ぁ、負けちゃった」",
+   "en": "",
+   "refs": [
+    "E:175ae"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00217",
+   "kind": "line",
+   "jp": "メイフィアは逃げていった",
+   "en": "",
+   "refs": [
+    "E:175d1"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00218",
+   "kind": "line",
+   "jp": "伯斗　　「もう、額縁の女はいないな・・・」",
+   "en": "",
+   "refs": [
+    "E:175ea"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00219",
+   "kind": "line",
+   "jp": "伯斗　　「壁に何やら石版らしき物がある・・・」",
+   "en": "",
+   "refs": [
+    "E:17616"
+   ],
+   "max_cells": 46,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00220",
+   "kind": "line",
+   "jp": "石版を調べますか？",
+   "en": "",
+   "refs": [
+    "E:17645"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00221",
+   "kind": "line",
+   "jp": "伯斗　　「なんだ？銀色の弾が出てきたぞ・・・とりあえず持っていこう」",
+   "en": "",
+   "refs": [
+    "E:17658"
+   ],
+   "max_cells": 68,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00222",
+   "kind": "line",
+   "jp": "伯斗　　「どうやら、失敗したようだ・・・・」",
+   "en": "",
+   "refs": [
+    "E:1769d"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00223",
+   "kind": "line",
+   "jp": "伯斗　　「ここには、もう何もないな・・・・」",
+   "en": "",
+   "refs": [
+    "E:176ca"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00224",
+   "kind": "line",
+   "jp": "伯斗　　「真ん中に猫の置物があるくらいか・・・いや待てよ！！」",
+   "en": "",
+   "refs": [
+    "E:176f8"
+   ],
+   "max_cells": 62,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00225",
+   "kind": "line",
+   "jp": "伯斗　　「こんなとこにみかんが・・・ちょうど腹が減ってたし、@　　　　　いただい・」",
+   "en": "",
+   "refs": [
+    "E:17737"
+   ],
+   "max_cells": 83,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00226",
+   "kind": "line",
+   "jp": "たま　　「にゃ～」",
+   "en": "",
+   "refs": [
+    "E:1778b",
+    "E:177f8"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00227",
+   "kind": "line",
+   "jp": "伯斗　　「なんだお前置物じゃなかったのか、ん！？あ～、お前もほしいのか、@　　　　　ほら」",
+   "en": "",
+   "refs": [
+    "E:1779e"
+   ],
+   "max_cells": 89,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00228",
+   "kind": "line",
+   "jp": "伯斗　　「なんだみかんがほしいんじゃないのか、悪いけど俺は忙しいから、@　　　　　じゃあな」",
+   "en": "",
+   "refs": [
+    "E:1780b"
+   ],
+   "max_cells": 91,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00229",
+   "kind": "line",
+   "jp": "たま　　「う～～う～～」",
+   "en": "",
+   "refs": [
+    "E:17867"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00230",
+   "kind": "line",
+   "jp": "伯斗　　「う～～ってお前・・・」",
+   "en": "",
+   "refs": [
+    "E:17880"
+   ],
+   "max_cells": 32,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00231",
+   "kind": "line",
+   "jp": "たま　　「う～～にゃんにゃにゃ～ん」",
+   "en": "",
+   "refs": [
+    "E:178a1"
+   ],
+   "max_cells": 36,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00232",
+   "kind": "line",
+   "jp": "伯斗　　「おわぁ！！なんだなんだ。」",
+   "en": "",
+   "refs": [
+    "E:178c6"
+   ],
+   "max_cells": 36,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00233",
+   "kind": "line",
+   "jp": "たま　　「にゃんにゃにゃ～んにゃんにゃにゃ～んにゃんにゃ@　　　　　にゃ～んにゃんにゃにゃ～んにゃんにゃにゃんにゃ@　　　　　にゃんにゃにゃ～んにゃんにゃにゃ～んにゃんにゃ@　　　　　にゃ～んにゃんにゃにゃ～んにゃんにゃにゃんにゃ」",
+   "en": "",
+   "refs": [
+    "E:178eb",
+    "E:17a18"
+   ],
+   "max_cells": 229,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00234",
+   "kind": "line",
+   "jp": "伯斗　　「そうかそうだったのか、うんうんって・・・全然わかんないって」",
+   "en": "",
+   "refs": [
+    "E:179d1"
+   ],
+   "max_cells": 70,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00235",
+   "kind": "line",
+   "jp": "伯斗　　「だめだこりゃ・・・とにかく麻雀しろってことだろ？」",
+   "en": "",
+   "refs": [
+    "E:17afe"
+   ],
+   "max_cells": 60,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00236",
+   "kind": "line",
+   "jp": "たま　　「にゃん」",
+   "en": "",
+   "refs": [
+    "E:17b3b"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00237",
+   "kind": "line",
+   "jp": "たま　「にゃんにゃ～～～ん」",
+   "en": "",
+   "refs": [
+    "E:17b61"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00238",
+   "kind": "line",
+   "jp": "たまは泣きながら逃げていった",
+   "en": "",
+   "refs": [
+    "E:17b7e"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00239",
+   "kind": "line",
+   "jp": "伯斗　　「もう、ねこはいないな・・・」",
+   "en": "",
+   "refs": [
+    "E:17b9b"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00240",
+   "kind": "line",
+   "jp": "伯斗　　「立派な作りの扉がある。おそらく館の主の部屋だろう」",
+   "en": "",
+   "refs": [
+    "E:17be4"
+   ],
+   "max_cells": 60,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00241",
+   "kind": "line",
+   "jp": "中に入りますか？",
+   "en": "",
+   "refs": [
+    "E:17c21"
+   ],
+   "max_cells": 16,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00242",
+   "kind": "line",
+   "jp": "伯斗　　「なんだ？鍵がかかっているぞ・・・仕方がない、出直すか・・・」",
+   "en": "",
+   "refs": [
+    "E:17c32"
+   ],
+   "max_cells": 70,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00243",
+   "kind": "line",
+   "jp": "伯斗　　「なんだお前らは、物騒な物持ちやがって」",
+   "en": "",
+   "refs": [
+    "E:17c79"
+   ],
+   "max_cells": 48,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00244",
+   "kind": "line",
+   "jp": "イビル・エビル「・・・・・・」",
+   "en": "",
+   "refs": [
+    "E:17caa"
+   ],
+   "max_cells": 30,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00245",
+   "kind": "line",
+   "jp": "伯斗　　「なんとか言ったらどうなんだ！」",
+   "en": "",
+   "refs": [
+    "E:17cc9"
+   ],
+   "max_cells": 40,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00246",
+   "kind": "line",
+   "jp": "イビル・エビル「ふっふふふ」",
+   "en": "",
+   "refs": [
+    "E:17cf2"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00247",
+   "kind": "line",
+   "jp": "エビル　「どうするイビル」",
+   "en": "",
+   "refs": [
+    "E:17d24"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00248",
+   "kind": "line",
+   "jp": "イビル　「そうだな、ここまで来た奴はこいつが初めてだしな」",
+   "en": "",
+   "refs": [
+    "E:17d3f"
+   ],
+   "max_cells": 58,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00249",
+   "kind": "line",
+   "jp": "伯斗　　「こそこそと、なんなんだ！」",
+   "en": "",
+   "refs": [
+    "E:17d7a"
+   ],
+   "max_cells": 36,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00250",
+   "kind": "line",
+   "jp": "エビル　「いくぞイビル！！」",
+   "en": "",
+   "refs": [
+    "E:17d9f"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00251",
+   "kind": "line",
+   "jp": "イビル　「しかしよくここまでこれたものだ」",
+   "en": "",
+   "refs": [
+    "E:17dbc"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00252",
+   "kind": "line",
+   "jp": "エビル　「全くだな・・・ま、どっちにしろ私たちのコンビプレイには歯が立@　　　　　たないだろうけど」",
+   "en": "",
+   "refs": [
+    "E:17de7"
+   ],
+   "max_cells": 99,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00253",
+   "kind": "line",
+   "jp": "イビル　「だがここまで来た以上油断は出来ないね、もしこいつがナイト雀鬼@　　　　　様だったらどうする・・・」",
+   "en": "",
+   "refs": [
+    "E:17e4b"
+   ],
+   "max_cells": 107,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00254",
+   "kind": "line",
+   "jp": "イビル　「こんな奴がナイト雀鬼様の訳がない」",
+   "en": "",
+   "refs": [
+    "E:17eca"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00255",
+   "kind": "line",
+   "jp": "エビル　「そうだな・・・はっはは」",
+   "en": "",
+   "refs": [
+    "E:17ef7"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00256",
+   "kind": "line",
+   "jp": "「お前らの言ってるナイト雀鬼って一体何者なんだ！！」",
+   "en": "",
+   "refs": [
+    "E:17f1f"
+   ],
+   "max_cells": 52,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00257",
+   "kind": "line",
+   "jp": "エビル　「それはルミラ様のもとまで行くことができたら自分で聞くんだな。@　　　　　もっともここで終わりのお前には関係のないことだったな。@　　　　　さあ行くぞ」",
+   "en": "",
+   "refs": [
+    "E:17f54"
+   ],
+   "max_cells": 158,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00258",
+   "kind": "line",
+   "jp": "伯斗　　「ったく、しょうがないなぁぁ」",
+   "en": "",
+   "refs": [
+    "E:17ff3"
+   ],
+   "max_cells": 38,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00259",
+   "kind": "line",
+   "jp": "エビル　「くっ・・・つ・・強い・・・もしかするとお前は、ルミラ様が探し@　　　　　求めているナイト雀鬼様かもしれん」",
+   "en": "",
+   "refs": [
+    "E:1801a"
+   ],
+   "max_cells": 115,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00260",
+   "kind": "line",
+   "jp": "イビル　「うっ・・・くっ・・・そうかもしれん・・・それならば我らの敗北@　　　　　も納得が行く」",
+   "en": "",
+   "refs": [
+    "E:1808e"
+   ],
+   "max_cells": 95,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00261",
+   "kind": "line",
+   "jp": "伯斗　　「あ～あ気絶しちまった・・・しかし麻雀に負けて気絶するか・・・@　　　　　・・・・さて行くか！」",
+   "en": "",
+   "refs": [
+    "E:180ee"
+   ],
+   "max_cells": 103,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00262",
+   "kind": "line",
+   "jp": "ルミラ　「よくここまで来ましたね・・・・どうでしたか、私の用意したパー@　　　　　ティは？」",
+   "en": "",
+   "refs": [
+    "E:18156"
+   ],
+   "max_cells": 91,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00263",
+   "kind": "line",
+   "jp": "伯斗　　「パ－ティ！？」",
+   "en": "",
+   "refs": [
+    "E:181b2"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00264",
+   "kind": "line",
+   "jp": "ルミラ　「そう・・・そしてこれからパーティのフィナーレよ・・・・・・・@　　　　　あなたがナイト雀鬼様かどうかを試してね」",
+   "en": "",
+   "refs": [
+    "E:181cb"
+   ],
+   "max_cells": 121,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00265",
+   "kind": "line",
+   "jp": "伯斗　　「ナイト雀鬼って一体誰なんだ！！」",
+   "en": "",
+   "refs": [
+    "E:18245"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00266",
+   "kind": "line",
+   "jp": "ルミラ　「・・・・・・・・・・この館の主であり・・・・・・・・・・・・@　　　　　・・・・・・・・・私のフィアンセよ！」",
+   "en": "",
+   "refs": [
+    "E:18270"
+   ],
+   "max_cells": 119,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00267",
+   "kind": "line",
+   "jp": "伯斗　　「この館の主？・・・主がなぜ館にいないんだ！」",
+   "en": "",
+   "refs": [
+    "E:182e8"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00268",
+   "kind": "line",
+   "jp": "ルミラ　「冥土の土産に教えてあげるわ・・・・・・・・・・・・・」",
+   "en": "",
+   "refs": [
+    "E:1831f"
+   ],
+   "max_cells": 64,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00269",
+   "kind": "line",
+   "jp": "ルミラ　「そう、あれはもう２６年前のこと。雀鬼様はまだ小さく、私も赤ん@　　　　　坊だった。そして、雀鬼様と私は親どうしが決めた婚約者だったの。@　　　　　デュラル家とナイト家の間にかわされたね」",
+   "en": "",
+   "refs": [
+    "E:18360"
+   ],
+   "max_cells": 194,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00270",
+   "kind": "line",
+   "jp": "ルミラ　「でも、なぜだかは分からないけど、ナイト家は魔族の暮らしを捨て@　　　　　て、人間の生活選んだの。",
+   "en": "",
+   "refs": [
+    "E:18423"
+   ],
+   "max_cells": 105,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00271",
+   "kind": "line",
+   "jp": "ルミラ　「魔族の掟では、婚約者とは生命を共にすると決まっている。消息不@　　　　　明や人間界に逃げ延びたもの達は全て死とみなされ、私もまた死を@　　　　　宣告される。」",
+   "en": "",
+   "refs": [
+    "E:1848d"
+   ],
+   "max_cells": 166,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00272",
+   "kind": "line",
+   "jp": "ルミラ　「だから、私はナイト雀鬼様を見つけだすことに決めた。そして、ナ@　　　　　イト家はもともと麻雀能力が高いためいずれ名が上がるとにらんで@　　　　　この町の雀士達を・・・・」",
+   "en": "",
+   "refs": [
+    "E:18534"
+   ],
+   "max_cells": 178,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00273",
+   "kind": "line",
+   "jp": "伯斗　　「手当たりしだい、この館に連れ込んだって訳か・・・」",
+   "en": "",
+   "refs": [
+    "E:185e7"
+   ],
+   "max_cells": 60,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00274",
+   "kind": "line",
+   "jp": "ルミラ　「そのほとんどが２階までで終わりね」",
+   "en": "",
+   "refs": [
+    "E:18624"
+   ],
+   "max_cells": 44,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00275",
+   "kind": "line",
+   "jp": "伯斗　　「その人達をどうした！！」",
+   "en": "",
+   "refs": [
+    "E:18651"
+   ],
+   "max_cells": 34,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00276",
+   "kind": "line",
+   "jp": "ルミラ　「あら、もう勝ったつもり？・・・そんな口の聞き方は、私を倒して@　　　　　からにしたほうがいいわね！」",
+   "en": "",
+   "refs": [
+    "E:18674"
+   ],
+   "max_cells": 109,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00277",
+   "kind": "line",
+   "jp": "伯斗　　「なに！？」",
+   "en": "",
+   "refs": [
+    "E:186e2"
+   ],
+   "max_cells": 20,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00278",
+   "kind": "line",
+   "jp": "ルミラ　「あなたもしょせん他の人たちと同じ道をたどるんだから、その時わ@　　　　　かるでしょ」",
+   "en": "",
+   "refs": [
+    "E:186f7"
+   ],
+   "max_cells": 93,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00279",
+   "kind": "line",
+   "jp": "伯斗　　「やってみなきゃわからないぜぇ、それよりいいかげんそのうす気味@　　　　　の悪い所から出てこいよ」",
+   "en": "",
+   "refs": [
+    "E:18755"
+   ],
+   "max_cells": 105,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00280",
+   "kind": "line",
+   "jp": "ルミラ　「そうね、いくらなんでも初めて私の所まで来た客ですものね。失礼@　　　　　だったかしら」",
+   "en": "",
+   "refs": [
+    "E:187bf"
+   ],
+   "max_cells": 95,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00281",
+   "kind": "line",
+   "jp": "ルミラ　「あなたのその自慢げな態度を直してあげるわ」",
+   "en": "",
+   "refs": [
+    "E:1881f"
+   ],
+   "max_cells": 52,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00282",
+   "kind": "line",
+   "jp": "ルミラ　「さぁ勝負よ！！」",
+   "en": "",
+   "refs": [
+    "E:18854"
+   ],
+   "max_cells": 26,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00283",
+   "kind": "line",
+   "jp": "全てを許す",
+   "en": "",
+   "refs": [
+    "E:18882"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00284",
+   "kind": "line",
+   "jp": " 銃を使う ",
+   "en": "",
+   "refs": [
+    "E:1888d"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00285",
+   "kind": "line",
+   "jp": "ルミラ　「つ・・・強い・・・・・あなたはやはりナイト雀鬼様・・・・・・@　　　　　私を倒せるその力が何よりの証拠」",
+   "en": "",
+   "refs": [
+    "E:188ae"
+   ],
+   "max_cells": 113,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00286",
+   "kind": "line",
+   "jp": "伯斗　　「そんなことよりここに連れてこられた人々は？」",
+   "en": "",
+   "refs": [
+    "E:18920"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00287",
+   "kind": "line",
+   "jp": "ルミラ　「魔族が人間に正体をしられた時は、その人間の口を封じるしかない@　　　　　のよ」",
+   "en": "",
+   "refs": [
+    "E:18957"
+   ],
+   "max_cells": 87,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00288",
+   "kind": "line",
+   "jp": "伯斗　　「くっ・・・なんてことを罪もない人たちを！！」",
+   "en": "",
+   "refs": [
+    "E:189af"
+   ],
+   "max_cells": 54,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00289",
+   "kind": "line",
+   "jp": "ルミラ　「ナイト雀鬼様、御願いです。館にお戻りください。あなたの力はや@　　　　　はり魔族の力です」",
+   "en": "",
+   "refs": [
+    "E:189e6"
+   ],
+   "max_cells": 99,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00290",
+   "kind": "line",
+   "jp": "伯斗　　「この館に？・・・そんなことするわけないだろ！！@　　　　　だいたい俺は人間だ！！」",
+   "en": "",
+   "refs": [
+    "E:18a4a"
+   ],
+   "max_cells": 91,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00291",
+   "kind": "line",
+   "jp": "ルミラ　「しかし・・・・・」",
+   "en": "",
+   "refs": [
+    "E:18aa6"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00292",
+   "kind": "line",
+   "jp": "伯斗　　「それに・・・それにおまえ達のしたことを、このまま放っておくわ@　　　　　けには行かない・・・」",
+   "en": "",
+   "refs": [
+    "E:18ac3"
+   ],
+   "max_cells": 103,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00293",
+   "kind": "line",
+   "jp": "ルミラ　「そうですか、分かりました。・・・もともと、私はあなたと共に生@　　　　　命がある身です」",
+   "en": "",
+   "refs": [
+    "E:18b2b"
+   ],
+   "max_cells": 97,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00294",
+   "kind": "line",
+   "jp": "伯斗　　「これから先、人々に迷惑をかるのをやめてくれ・・・それから」",
+   "en": "",
+   "refs": [
+    "E:18b8d"
+   ],
+   "max_cells": 68,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00295",
+   "kind": "line",
+   "jp": "ルミラ　「でも私は、幼心にナイト雀鬼様のことを待ちつづけ・・・」",
+   "en": "",
+   "refs": [
+    "E:18bd2"
+   ],
+   "max_cells": 64,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00296",
+   "kind": "line",
+   "jp": "伯斗　　「無理だよ・・・俺は「人間」なんだ！魔族だかなんだかしらないが@　　　　　正体を見られたら、その人を消してしまうような奴等と一緒にいら@　　　　　れない！」",
+   "en": "",
+   "refs": [
+    "E:18c13"
+   ],
+   "max_cells": 162,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00297",
+   "kind": "line",
+   "jp": "ルミラ　「私も人間に・・・」",
+   "en": "",
+   "refs": [
+    "E:18cb6"
+   ],
+   "max_cells": 28,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00298",
+   "kind": "line",
+   "jp": "伯斗　　「とにかくもうこれ以上人々に迷惑をかけないでくれ・・・じゃ～な」",
+   "en": "",
+   "refs": [
+    "E:18cd3"
+   ],
+   "max_cells": 72,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00299",
+   "kind": "line",
+   "jp": "ルミラ　「・・・」",
+   "en": "",
+   "refs": [
+    "E:18d1c"
+   ],
+   "max_cells": 18,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00300",
+   "kind": "line",
+   "jp": "・・・・その後、人々の記憶の中に雀鬼の館は、その存在すら消えていたと言う",
+   "en": "",
+   "refs": [
+    "E:18d3d"
+   ],
+   "max_cells": 72,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00301",
+   "kind": "line",
+   "jp": "@@　　　　　　　　　　　　ただ一人をのこして・・・",
+   "en": "",
+   "refs": [
+    "E:18d86"
+   ],
+   "max_cells": 50,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00302",
+   "kind": "line",
+   "jp": "館内に銃声が、水の波紋のように広がって行く",
+   "en": "",
+   "refs": [
+    "E:18dc4",
+    "E:18e37"
+   ],
+   "max_cells": 42,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00303",
+   "kind": "line",
+   "jp": "伯斗　　（・・・・・・・ゆるしてくれ・・・・）",
+   "en": "",
+   "refs": [
+    "E:18def",
+    "E:18e62"
+   ],
+   "max_cells": 46,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00304",
+   "kind": "line",
+   "jp": "・・・その後",
+   "en": "",
+   "refs": [
+    "E:18e9f"
+   ],
+   "max_cells": 12,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00305",
+   "kind": "line",
+   "jp": "伯斗　　「・・・なんで、お前らがここにいるわけ？・・・しかも、毎晩毎晩@　　　　　・・・・・・とほほ」",
+   "en": "",
+   "refs": [
+    "E:18eac"
+   ],
+   "max_cells": 101,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00306",
+   "kind": "line",
+   "jp": "ルミラ　「しかたないでしょ。あなたが私に銀の弾を打ち込んだせいで、魔族@　　　　　の力を抜かれちゃったんだから、もうあの館にはいられないのよ。@　　　　　あそこにいたら逆に私たちの方が危ないわ」",
+   "en": "",
+   "refs": [
+    "E:18f21"
+   ],
+   "max_cells": 192,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00307",
+   "kind": "line",
+   "jp": "ルミラ　「かといって、行く宛もないんだから、ちゃんと責任を取ってもらわ@　　　　　なくちゃねぇ～」",
+   "en": "",
+   "refs": [
+    "E:18fe2"
+   ],
+   "max_cells": 97,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00308",
+   "kind": "line",
+   "jp": "みんな　「そうだそうだ」",
+   "en": "",
+   "refs": [
+    "E:19044"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00309",
+   "kind": "line",
+   "jp": "伯斗　　「・・・とほほ」",
+   "en": "",
+   "refs": [
+    "E:1905d"
+   ],
+   "max_cells": 24,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00310",
+   "kind": "line",
+   "jp": "・・・というわけで@　　　　　　　　　　　　　　　　　　　　　　　　　　　@　　　　　　　　　めでたし　め・で・た・し@　　　　　　　　　　　　　　　　　　　　　　　　　　　@　　　　　　　　　じゃな～～～～～～～～～い@　　　　　　　　　　　　　　　　　　　　　　ｂｙ　　伯斗",
+   "en": "",
+   "refs": [
+    "E:19076"
+   ],
+   "max_cells": 273,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00311",
+   "kind": "line",
+   "jp": "　ア　レ　イ　",
+   "en": "",
+   "refs": [
+    "E:1928e"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00312",
+   "kind": "line",
+   "jp": "　メイフィア　",
+   "en": "",
+   "refs": [
+    "E:192ac"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00313",
+   "kind": "line",
+   "jp": "　た　　　ま　",
+   "en": "",
+   "refs": [
+    "E:192bb"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00314",
+   "kind": "line",
+   "jp": "エビル・イビル",
+   "en": "",
+   "refs": [
+    "E:192ca"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00315",
+   "kind": "line",
+   "jp": "続きから ",
+   "en": "",
+   "refs": [
+    "E:1941b"
+   ],
+   "max_cells": 9,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00316",
+   "kind": "line",
+   "jp": " 初めから ",
+   "en": "",
+   "refs": [
+    "E:19425"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00317",
+   "kind": "line",
+   "jp": "データ　１",
+   "en": "",
+   "refs": [
+    "E:19430"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00318",
+   "kind": "line",
+   "jp": "データ　２",
+   "en": "",
+   "refs": [
+    "E:1943b"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00319",
+   "kind": "line",
+   "jp": "データ　３",
+   "en": "",
+   "refs": [
+    "E:19446"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00320",
+   "kind": "line",
+   "jp": "データ　４",
+   "en": "",
+   "refs": [
+    "E:19451"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00321",
+   "kind": "line",
+   "jp": "データ　５",
+   "en": "",
+   "refs": [
+    "E:1945c"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00322",
+   "kind": "line",
+   "jp": "データ　６",
+   "en": "",
+   "refs": [
+    "E:19467"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00323",
+   "kind": "line",
+   "jp": "リーチ",
+   "en": "",
+   "refs": [
+    "E:19838"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00324",
+   "kind": "line",
+   "jp": "一発",
+   "en": "",
+   "refs": [
+    "E:1983f"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00325",
+   "kind": "line",
+   "jp": "平和",
+   "en": "",
+   "refs": [
+    "E:19844"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00326",
+   "kind": "line",
+   "jp": "タンヤオ",
+   "en": "",
+   "refs": [
+    "E:19849"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00327",
+   "kind": "line",
+   "jp": "役牌",
+   "en": "",
+   "refs": [
+    "E:19852"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00328",
+   "kind": "line",
+   "jp": "イーペーコウ",
+   "en": "",
+   "refs": [
+    "E:19857"
+   ],
+   "max_cells": 12,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00329",
+   "kind": "line",
+   "jp": "チートイツ",
+   "en": "",
+   "refs": [
+    "E:19864"
+   ],
+   "max_cells": 10,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00330",
+   "kind": "line",
+   "jp": "ツモ",
+   "en": "",
+   "refs": [
+    "E:1986f"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00331",
+   "kind": "line",
+   "jp": "ドラ",
+   "en": "",
+   "refs": [
+    "E:19874"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00332",
+   "kind": "line",
+   "jp": "トイトイ",
+   "en": "",
+   "refs": [
+    "E:19879"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00333",
+   "kind": "line",
+   "jp": "三色",
+   "en": "",
+   "refs": [
+    "E:19882"
+   ],
+   "max_cells": 4,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00334",
+   "kind": "line",
+   "jp": "チャンタ",
+   "en": "",
+   "refs": [
+    "E:19887"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00335",
+   "kind": "line",
+   "jp": "一気通貫",
+   "en": "",
+   "refs": [
+    "E:19890"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00336",
+   "kind": "line",
+   "jp": "三暗刻",
+   "en": "",
+   "refs": [
+    "E:19899"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00337",
+   "kind": "line",
+   "jp": "ホンイツ",
+   "en": "",
+   "refs": [
+    "E:198a0"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00338",
+   "kind": "line",
+   "jp": "ジュンチャン",
+   "en": "",
+   "refs": [
+    "E:198a9"
+   ],
+   "max_cells": 12,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00339",
+   "kind": "line",
+   "jp": "リャンペイコウ",
+   "en": "",
+   "refs": [
+    "E:198b6"
+   ],
+   "max_cells": 14,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00340",
+   "kind": "line",
+   "jp": "小三元",
+   "en": "",
+   "refs": [
+    "E:198c5"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00341",
+   "kind": "line",
+   "jp": "チンイツ",
+   "en": "",
+   "refs": [
+    "E:198cc"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00342",
+   "kind": "line",
+   "jp": "大四喜",
+   "en": "",
+   "refs": [
+    "E:198d5"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00343",
+   "kind": "line",
+   "jp": "小四喜",
+   "en": "",
+   "refs": [
+    "E:198dc"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00344",
+   "kind": "line",
+   "jp": "大三元",
+   "en": "",
+   "refs": [
+    "E:198e3"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00345",
+   "kind": "line",
+   "jp": "字一色",
+   "en": "",
+   "refs": [
+    "E:198ea"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00346",
+   "kind": "line",
+   "jp": "清老頭",
+   "en": "",
+   "refs": [
+    "E:198f1"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00347",
+   "kind": "line",
+   "jp": "緑一色",
+   "en": "",
+   "refs": [
+    "E:198f8"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00348",
+   "kind": "line",
+   "jp": "国士無双",
+   "en": "",
+   "refs": [
+    "E:198ff"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00349",
+   "kind": "line",
+   "jp": "九連宝燈",
+   "en": "",
+   "refs": [
+    "E:19908"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00350",
+   "kind": "line",
+   "jp": "四暗刻",
+   "en": "",
+   "refs": [
+    "E:19911"
+   ],
+   "max_cells": 6,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00351",
+   "kind": "line",
+   "jp": "ハイテイ",
+   "en": "",
+   "refs": [
+    "E:19918"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00352",
+   "kind": "line",
+   "jp": "チョンボ",
+   "en": "",
+   "refs": [
+    "E:1997c"
+   ],
+   "max_cells": 8,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00353",
+   "kind": "line",
+   "jp": "%$d翻　満貫",
+   "en": "",
+   "refs": [
+    "E:19985"
+   ],
+   "max_cells": 11,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  },
+  {
+   "id": "l00354",
+   "kind": "line",
+   "jp": "点数　%s%s%$6ld",
+   "en": "",
+   "refs": [
+    "E:199da"
+   ],
+   "max_cells": 15,
+   "note": "a line of the screen (or a menu's, a name's, a hand's text), drawn at its place: max_cells letters; keep %s and %d"
+  }
+ ]
+}
