@@ -1,0 +1,9 @@
+{
+ "title": "Teen",
+ "key": "Custom.zip/Teen",
+ "image": "Teen\\Teen [HD]\\Teen.hdi",
+ "encoding": "trps",
+ "dir": "TEEN",
+ "engine": "MENU.EXE",
+ "boot_steps": "15:shot,5:enter,5:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot,3:enter,4:shot"
+}

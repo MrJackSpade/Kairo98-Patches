@@ -59808,15 +59808,27 @@
      "path": "Teen\\Teen [HD]\\Teen.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/teen (patcher working, machine translation in progress)",
+     "url": "../games/teen/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB: Teen",
+     "url": "https://vndb.org/v5886",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r11505 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/0x0F exp2",

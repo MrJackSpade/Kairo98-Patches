@@ -2880,13 +2880,14 @@
   ]
  },
  "Custom.zip/Teen": {
-  "checked": "2026-10-11",
+  "checked": "2026-10-23",
   "result": "clear",
   "sources": [
    "VNDB API 2026-10-11: no English release on any platform",
    "https://baba-jpc.neocities.org/translations/translations: not listed",
    "https://alpharobo.neocities.org/: not listed",
-   "GitHub search (title + translation): grrrr/hvcc_teensy; dsopas/emoji-translator; kflynn/teensyPS2toUSB; timothyhollabaugh/ArcadeMachineTeensyKeyboardEmulator; chippolot/teenslator"
+   "GitHub search (title + translation): grrrr/hvcc_teensy; dsopas/emoji-translator; kflynn/teensyPS2toUSB; timothyhollabaugh/ArcadeMachineTeensyKeyboardEmulator; chippolot/teenslator",
+   "web search (title + English translation, PC-98): 2026-10-23: no English release or announcement found (Custom \"Teen\")"
   ]
  },
  "DO.zip/Branmarker": {

@@ -2980,5 +2980,18 @@
    "url": "https://vndb.org/v9081",
    "source": "VNDB"
   }
+ ],
+ "Custom.zip/Teen": [
+  {
+   "label": "This repo: games/teen (patcher working, machine translation in progress)",
+   "url": "../games/teen/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB: Teen",
+   "url": "https://vndb.org/v5886",
+   "source": "VNDB"
+  }
  ]
 }

@@ -4433,5 +4433,31 @@
    "Unmodified build",
    "OK: a build with no English is the source image byte for byte"
   ]
+ ],
+ "teen": [
+  [
+   "Pseudo build boots (np21w, TEEN.COM)",
+   "OK: the main menu's items in filler, drawn as pairs of letters in their box"
+  ],
+  [
+   "The opening (pseudo)",
+   "OK: messages in filler, half-width, broken between words at 64 letters; the speakers' names in their brackets in pairs of letters"
+  ],
+  [
+   "A message longer than a window",
+   "OK: 4 rows, the window's wait, then the rest in a cleared window after a key"
+  ],
+  [
+   "A choice (pseudo)",
+   "OK: the menu shows its three choices in filler, as the Japanese menu shows three"
+  ],
+  [
+   "Partly translated build",
+   "OK: the main menu's items in English (Gallery, System, Controls, Quit); a long English message over two windows; the rest in Japanese as before"
+  ],
+  [
+   "Unmodified build",
+   "OK: a build with no English is the source image byte for byte"
+  ]
  ]
 }

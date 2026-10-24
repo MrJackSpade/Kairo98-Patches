@@ -3242,6 +3242,75 @@ def qbasic_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def trps_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "prog": "program strings", "help": "help lines"}
+    out = ["# %s%s (Custom)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "Custom's own C++ engine (`%s\\TEEN.COM` runs INIT.EXE, CUSTOM.EXE and MENU.EXE; MENU.EXE plays "
+            "the opening, TEEN_S1.EXE and TEEN_S2.EXE the two scenarios), on the hard disk.  The scenes are "
+            "compiled into the programs; the messages are the lines of `DATA_00.MSG` and `DATA_nn.1MS`/"
+            "`.2MS` (each byte rotated and XORed), named by their line's number.  `pc98tl/trps.py` documents "
+            "the formats and the patch, `pc98tl/trps_tl.py` the English.  A build with no English leaves "
+            "the disk as it is." % cfg["dir"], "",
+            "* The message files are written again, each line any length.",
+            "* The programs (PKLITE) are written back unpacked.  Their message routine passes over a byte "
+            "that is not a Shift-JIS lead: it is made to call a helper (a segment put in before the last) "
+            "that draws the byte with the routine's own call, 8 dots wide, a column on.  The one-byte "
+            "glyph routine counted its rows with a local it had not set; it is made to count 16.",
+            "* The window breaks a row at its edge and waits for a key after its 4 rows; the patcher breaks "
+            "the English between words at 64 letters, filling each row with spaces to the edge.  After a "
+            "window's wait the helper waits for the keys to be let go (and empties the key buffer), so the "
+            "key does not also end the message's own wait.",
+            "* The programs' strings are written in place.  Those drawn two bytes a character (menus, "
+            "choices, names) are written in pairs of letters: each pair a code of its own (Shift-JIS "
+            "EDh-EFh) whose glyph the kanji routine's hook makes from the two letters' BIOS glyphs; a "
+            "choice's label goes the same into the choices' conditions that name it.  The console's "
+            "messages (and strings with ASCII in them already) are written as they are.",
+            "* `HELP.TXT` (the operation help) is written again, its escape codes kept.",
+            "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 64 letters, 4 rows a window, more "
+            "windows after a key; `\\n` a new row.  `{Gxxxx}` a character of the game's own (TEEN.GAI) is "
+            "kept where it is (2 letters wide).",
+            "* Program strings (`e` ids): in place, up to `max_cells` letters (longer is cut and reported by "
+            "string id); keep `%d`, `%s`.. and `\\n`.  A string drawn in pairs of letters takes an even "
+            "number of letters (one more space otherwise); a program's pairs may be at most "
+            "564 different ones (a build past it is refused).",
+            "* Help lines (`h` ids): one line of the text screen; keep each `{ESC}`.",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes and `…` are made "
+            "ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (`.YCG`: the title, the logos)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4416,7 +4485,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4425,7 +4494,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

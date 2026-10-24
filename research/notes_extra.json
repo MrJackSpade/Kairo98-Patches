@@ -522,5 +522,11 @@
    "Past the first scene the boot test did not play; every script goes through the same rebuild.",
    "The menus take the mouse only (the boot steps move it in small steps; a large jump is not seen)."
   ]
+ },
+ "teen": {
+  "remarks": [
+   "Past the first choice the boot test did not play; every message line and program string goes through the same patch. HELP.TXT and the installers' messages were not shown in the boot test.",
+   "The menus take the mouse (Enter opens and closes a choice menu)."
+  ]
  }
 }
