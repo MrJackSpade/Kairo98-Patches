@@ -2993,5 +2993,18 @@
    "url": "https://vndb.org/v5886",
    "source": "VNDB"
   }
+ ],
+ "DO.zip/Branmarker": [
+  {
+   "label": "This repo: games/branmarker (patcher working, machine translation in progress)",
+   "url": "../games/branmarker/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v523",
+   "url": "https://vndb.org/v523",
+   "source": "VNDB"
+  }
  ]
 }

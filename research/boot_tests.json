@@ -4459,5 +4459,31 @@
    "Unmodified build",
    "OK: a build with no English is the source image byte for byte"
   ]
+ ],
+ "branmarker": [
+  [
+   "Boot disk A with disk B in drive 2: the opening (OPENG's lines)",
+   "OK: each line in filler, half-width, at its place on the opening's pictures"
+  ],
+  [
+   "The load prompt and its data menu, the prompt for disk C (put in, Return), the first map",
+   "OK: the prompt and the three data slots in filler; the map's status panel name in filler; a girl's talk on the map: her name on its own line (cut to its room) and the message in filler broken between words at 40 letters"
+  ],
+  [
+   "ESC: the command menu and its message",
+   "OK: the menu's items in filler cut to their rooms, the message under the face in filler"
+  ],
+  [
+   "A test build with the menu's message 380 letters long",
+   "OK: broken between words, four lines a window, the rest in the next windows after a key (its part past its place read from the program's own room)"
+  ],
+  [
+   "A test build whose opening runs the ending instead (disk E asked for and put in)",
+   "OK: the prompt shows disk E's letter where {D} is; the ending's speakers and lines in filler, half-width, at their places"
+  ],
+  [
+   "Boot disk B (the omake disk): its menu, the BGM gallery and the sound test",
+   "OK: the gallery's and the sound test's labels in filler with their numbers after them (the menu is a picture)"
+  ]
  ]
 }

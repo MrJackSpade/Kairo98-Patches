@@ -1,0 +1,21 @@
+{
+ "title": "Branmarker",
+ "key": "DO.zip/Branmarker",
+ "image": "Branmarker\\Branmarker [FD]\\Branmarker (Disk A).hdm",
+ "disks": [
+  "Branmarker (Disk B).hdm",
+  "Branmarker (Disk C).hdm",
+  "Branmarker (Disk D).hdm",
+  "Branmarker (Disk E).hdm"
+ ],
+ "encoding": "brm",
+ "message_overlays": [
+  "MAP02M"
+ ],
+ "stream_overlays": [
+  "OPENG",
+  "BROE"
+ ],
+ "omake_streams": 36864,
+ "boot_steps": "11:shot,4:shot,4:shot,4:shot,4:enter,9:shot,1:enter,4:shot,1:enter,4:shot,1:fdd=1;E:/PC98Work/test_branmarker - Branmarker (Disk C).hdm,2:enter,10:shot,2:hold=27,3:shot,2:hold=13,3:shot"
+}

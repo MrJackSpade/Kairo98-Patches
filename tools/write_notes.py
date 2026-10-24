@@ -3311,6 +3311,78 @@ def trps_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+def brm_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "plain": "plain strings", "prompt": "disk prompts", "scene": "opening and "
+             "ending lines", "credit": "staff roll lines", "name": "ending speakers"}
+    out = ["# %s%s (D.O.)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`), with the other disks beside it (%s)." % (
+               cfg["image"].replace("\\", "/"), ", ".join("`%s`" % d for d in cfg["disks"]))]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "D.O.'s own program on self-booting floppies: DO loads DOS.SYS (the program, run at 0100:0100) "
+            "and DATA.SYS (1000:0000); the program loads its overlays at 0100:B98C (the maps' MAPnn, the "
+            "opening's OPENG from disk B, the ending's BROE from disk E) and MAP02M (the town's talk) at "
+            "7B00:0000.  Disk B boots the omake disk's program, a DOS.SYS of its own (its events and a copy "
+            "of the ending).  `pc98tl/brm.py` documents the formats and the patch, `pc98tl/brm_tl.py` the "
+            "English.  A build writes every disk (the other disks beside the output, named after it).", "",
+            "* English is drawn in pairs of letters, each pair one character of the game's: the glyph fetch "
+            "reads a pair's two 8x16 letters from the CG ROM into the two halves of the 16x16 glyph (the "
+            "Shift-JIS conversion moved inside it; the room from the prompt's blink, an unrolled loop "
+            "written again as a loop).  The opening's and the ending's own character loops take a pair with "
+            "its first byte's high bit set.",
+            "* The message copy is written again with two more codes: 0E lo hi goes on in DATA.SYS's "
+            "segment (a bank after DATA.SYS's variables, 1000:CE70-E7FF), 0F lo hi in the text's own "
+            "segment.  A message's English goes in place; what does not fit goes on in the program's own "
+            "room (0100:E000-EFFF, DOS.SYS made longer), the bank (the program's and MAP02M's), or after a "
+            "map overlay's end (up to E000h).  The message buffer is moved from 1000:2940 (214 bytes) to "
+            "1000:E800 (1 KB).",
+            "* The disk prompt's letter, which the program writes into the prompt, is written where the "
+            "English puts {D}.",
+            "* Menus, names, items and the load prompt (drawn by the plain string drawer), and the opening's "
+            "and the ending's lines and the staff roll (streams of their own), are written in place.",
+            "* `MTL_NOTE.TXT` is put on disk A."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 40 letters (the window's width), four "
+            "lines a window, more after a key; `\\n` a new line.  Keep `{N1}`.. (a name or an item the game "
+            "puts in; 12 letters are allowed for it when breaking lines) and `{V1}`.. (a number).  The rooms "
+            "for what does not fit in place are hard limits (a build past them is refused): about 10 KB for "
+            "the program and MAP02M together, and after each map overlay up to E000h of its segment.",
+            "* Plain strings (`p` ids), disk prompts (`d` ids), opening and ending lines (`s`), staff roll "
+            "lines (`c`) and ending speakers (`n`): in place, up to `max_cells` letters (longer is cut and "
+            "reported by string id).  A disk prompt needs its `{D}`.  A string takes an even number of "
+            "letters (one more space otherwise).",
+            "* English is ASCII; other characters are written as `?` (curly quotes, dashes and `…` are made "
+            "ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the opening's verse, the omake disk's menu)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
+
 def dies_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4485,7 +4557,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps", "brm"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4494,7 +4566,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes, "brm": brm_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

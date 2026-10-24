@@ -60481,15 +60481,27 @@
      "path": "Branmarker\\Branmarker [FD]\\Branmarker (Disk E).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/branmarker (patcher working, machine translation in progress)",
+     "url": "../games/branmarker/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v523",
+     "url": "https://vndb.org/v523",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r16112 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "DO.zip/Branmarker 2",
