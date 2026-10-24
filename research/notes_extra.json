@@ -533,5 +533,10 @@
   "remarks": [
    "Not reached in this test: the omake disk's recollection mode (it needs the game's saved progress), so its events are not seen on screen; the ending is seen only through a test build that runs it from the opening."
   ]
+ },
+ "miwaku_no_chousho": {
+  "remarks": [
+   "Not reached in this test: choices inside the story, the save and load screens, and the folded big scripts (MC_EVE50 and the like) beyond their first messages."
+  ]
  }
 }

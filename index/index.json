@@ -41825,15 +41825,27 @@
      "path": "Miwaku no Chousho\\Miwaku no Chousho [HD]\\Miwaku no Chousho.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/miwaku_no_chousho (patcher working, machine translation in progress)",
+     "url": "../games/miwaku_no_chousho/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8973",
+     "url": "https://vndb.org/v8973",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18101 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "doujinHomebrew.zip/Tonosama vs Satan",

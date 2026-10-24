@@ -4485,5 +4485,23 @@
    "Boot disk B (the omake disk): its menu, the BGM gallery and the sound test",
    "OK: the gallery's and the sound test's labels in filler with their numbers after them (the menu is a picture)"
   ]
+ ],
+ "miwaku_no_chousho": [
+  [
+   "Boot the hard disk (MCBAT.BAT, MCEXE.EXE INIT.SO3): the sound driver's setup screen",
+   "OK: every line in filler, half-width, at its place in its box"
+  ],
+  [
+   "Return: the main menu, then a new game's name entry",
+   "OK: the menu's title and items in filler; the name prompt and its two choices in filler"
+  ],
+  [
+   "The opening and the first messages of MC_START.SO3 (folded to fit its room)",
+   "OK: each message in filler, half-width, broken between words at 72 letters; the scene goes on through the moved jumps and calls"
+  ],
+  [
+   "A test build with a five-line message",
+   "OK: the window shows four lines, then the fifth on a new window after a key"
+  ]
  ]
 }

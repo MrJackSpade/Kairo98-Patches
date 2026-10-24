@@ -1,0 +1,9 @@
+{
+ "title": "Miwaku no Chousho",
+ "key": "BlackPackage.zip/Miwaku no Chousho",
+ "image": "Miwaku no Chousho\\Miwaku no Chousho [HD]\\Miwaku no Chousho.hdi",
+ "encoding": "mcs",
+ "dir": "MC",
+ "program": "MCEXE.EXE",
+ "boot_steps": "22:shot,2:enter,5:shot,1:down,1:enter,6:shot,3:enter,4:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot,3:enter,3:shot"
+}

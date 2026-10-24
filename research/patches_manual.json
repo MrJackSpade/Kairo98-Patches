@@ -3006,5 +3006,18 @@
    "url": "https://vndb.org/v523",
    "source": "VNDB"
   }
+ ],
+ "BlackPackage.zip/Miwaku no Chousho": [
+  {
+   "label": "This repo: games/miwaku_no_chousho (patcher working, machine translation in progress)",
+   "url": "../games/miwaku_no_chousho/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8973",
+   "url": "https://vndb.org/v8973",
+   "source": "VNDB"
+  }
  ]
 }
