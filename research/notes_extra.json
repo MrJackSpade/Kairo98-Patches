@@ -538,5 +538,10 @@
   "remarks": [
    "Not reached in this test: choices inside the story, the save and load screens, and the folded big scripts (MC_EVE50 and the like) beyond their first messages."
   ]
+ },
+ "de_fana": {
+  "remarks": [
+   "Not reached in this test: the menus of choices inside the story, the save screen and op 8Dh's animated messages, so they are not seen on screen."
+  ]
  }
 }

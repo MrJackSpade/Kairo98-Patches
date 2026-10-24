@@ -1,0 +1,19 @@
+{
+ "title": "De.FaNa",
+ "key": "HimeyaSoft.zip/De.FaNa",
+ "image": "De.FaNa\\De.FaNa (FD version) [HD]\\De.FaNa (FD version).hdi",
+ "encoding": "cinema",
+ "program": "DEFANA/DEFANA.COM",
+ "archive": "DEFANA/A.FA1",
+ "window": [
+  68,
+  3
+ ],
+ "scripts": [
+  "DE_*.BIN",
+  "DI.BIN"
+ ],
+ "speaker_line": true,
+ "script_room": 16384,
+ "boot_steps": "25:shot,6:shot,2:enter,5:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot,2:enter,4:shot"
+}

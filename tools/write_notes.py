@@ -4089,7 +4089,7 @@ def aaru_notes(name, cfg, doc, adult, clear, tests, extra):
 
 
 def cinema_himeya_notes(name, cfg, doc, adult, clear, tests, extra):
-    """Himeya Soft's build of the CINEMA engine (Zenith)."""
+    """Himeya Soft's builds of the CINEMA engine (Zenith, De.FaNa)."""
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
     strings = doc["strings"]
@@ -4100,6 +4100,7 @@ def cinema_himeya_notes(name, cfg, doc, adult, clear, tests, extra):
     names = {"msg": "messages", "name": "speakers' names", "item": "menu items", "engine": "program messages"}
     cols, rows = cfg["window"]
     prog = cfg["program"].rsplit("/", 1)[-1]
+    room = cfg.get("script_room", 65536)
     out = ["# %s%s (Himeya Soft)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -4112,18 +4113,21 @@ def cinema_himeya_notes(name, cfg, doc, adult, clear, tests, extra):
     out += ["", "## Engine", "",
             "Foster's CINEMA engine in Himeya Soft's build (`%s` loads the archive's driver, FAD.BIN, from "
             "`%s`; CINEMA.BIN runs the script, MB3N_H.BIN draws the text).  The archive is Foster's FA1 (a "
-            "directory at its end, members compressed, a member written back stored).  The whole story is "
-            "one script, %s, run in a 64 KB segment; this build's 48h ops (its table at 57Ah, read by the "
-            "dispatch with no bound) are in `pc98tl/cinema.py`'s BUILDS, which documents the formats; "
-            "`pc98tl/cinema_tl.py` the English.  Unchanged files rebuild byte for byte." % (
-                prog, cfg["archive"], ", ".join(cfg["scripts"])), "",
+            "directory at its end, members compressed, a member written back stored).  %s; this build's ops "
+            "(%s) are in `pc98tl/cinema.py`'s BUILDS, which documents the formats; `pc98tl/cinema_tl.py` the "
+            "English.  Unchanged files rebuild byte for byte." % (
+                prog, cfg["archive"],
+                ("The whole story is one script, %s, run in a %d KB buffer" if len(cfg["scripts"]) == 1 else
+                 "The scripts (%s) run one at a time in a %d KB buffer") % (", ".join(cfg["scripts"]), room // 1024),
+                "48h ops, its table at 57Ah, read by the dispatch with no bound" if cfg.get("relocate_code") else
+                "3Dh ops and 7Fh-8Fh, its table at 238Ch; 31h the gosub, 32h the return, 8Dh a message too"), "",
             "* The program draws bytes below 80h itself as half-width letters, so the English needs no "
             "program patch.  A message is the speaker's name on its first line and the speech after it: "
             "the name is a string of its own.",
-            "* The script is written again with every address in it moved with the text.  It ends with "
-            "machine code op 00h calls (an animation's interrupt handler): it moves with the rest, its "
-            "own addresses (found by following its code from op 00h's calls and from the handler it "
-            "installs) moved with it.",
+            "* A script is written again with every address in it moved with the text." +
+            (("  It ends with machine code op 00h calls (an animation's interrupt handler): it moves with "
+              "the rest, its own addresses (found by following its code from op 00h's calls and from the "
+              "handler it installs) moved with it.") if cfg.get("relocate_code") else ""),
             "* The patcher breaks the lines between words at %d letters and, when the window's %d rows are "
             "full, ends the page (\\f) and waits for a key (op 11h, this build's wait with the blinking "
             "mark) before the rest." % (cols, rows)]
@@ -4135,8 +4139,8 @@ def cinema_himeya_notes(name, cfg, doc, adult, clear, tests, extra):
     out += ["", "## Limits", "",
             "* Messages (`m` ids): any length; broken between words at %d letters, paged after %d rows.  "
             "`\\n` in the English forces a new line.  A message the Japanese splits around a wait (`:1` in "
-            "its ref) is two strings, shown one after the other.  The script with its English must fit "
-            "its 64 KB segment: a build past it is refused and names the script." % (cols, rows),
+            "its ref) is two strings, shown one after the other.  A script with its English must fit "
+            "its %d KB buffer: a build past it is refused and names the script." % (cols, rows, room // 1024),
             "* Speakers' names (`n` ids): one line, `max_cells` the Japanese's (past it cut).",
             "* Menu items (`i` ids, the save and load menus): one line in the menu's box, `max_cells` the "
             "menu's widest Japanese item; past it reported.",

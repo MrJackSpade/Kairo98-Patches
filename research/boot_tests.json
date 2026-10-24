@@ -4503,5 +4503,15 @@
    "A test build with a five-line message",
    "OK: the window shows four lines, then the fifth on a new window after a key"
   ]
+ ],
+ "de_fana": [
+  [
+   "Boot the hard disk (DEFANA.COM: CINEMA.BIN, DI.BIN): the sound choice and the title menu",
+   "OK: the line under the sound choice in filler, half-width, broken between words (the menus are pictures)"
+  ],
+  [
+   "Start a game: the first scene (DE_01.BIN) and its messages",
+   "OK: the speaker's name and each message in filler, half-width, broken between words at the program's 68-letter lines, the rest after a key"
+  ]
  ]
 }

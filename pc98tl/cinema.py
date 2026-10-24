@@ -229,14 +229,34 @@ BUILDS = {
         "code": {0x04: 1, 0x32: 1, 0x08: 5},
         "data": {0x00: 1, 0x29: 1},
     },
+    # De.FaNa (Himeya Soft): 3Dh ops and 7Fh-8Fh, the table at 238Ch; 31h is the gosub and 32h the return, 38h loads
+    # a file (to the word after the op), 11h waits for a key (the cursor blinking), 06h without it
+    (0x3D, 0x238C): {
+        "fix": {0x00: 3, 0x01: 1, 0x04: 3, 0x06: 1, 0x07: 4, 0x08: 7, 0x0B: 3, 0x0C: 1, 0x0D: 1, 0x0E: 1,
+                0x0F: 1, 0x10: 1, 0x11: 1, 0x12: 2, 0x13: 3, 0x14: 4, 0x15: 3, 0x18: 1, 0x19: 1, 0x1A: 2,
+                0x1B: 3, 0x1C: 3, 0x1D: 1, 0x1E: 3, 0x1F: 1, 0x20: 1, 0x21: 4, 0x22: 4, 0x23: 7, 0x24: 7,
+                0x25: 2, 0x26: 5, 0x27: 3, 0x28: 2, 0x29: 3, 0x2A: 3, 0x2B: 1, 0x2C: 3, 0x2D: 2, 0x2E: 2,
+                0x2F: 2, 0x30: 1, 0x31: 3, 0x32: 1, 0x33: 3, 0x34: 2, 0x35: 1, 0x36: 1, 0x37: 1, 0x39: 2,
+                0x3A: 1, 0x3B: 1, 0x3C: 2, 0x7F: 1, 0x82: 2, 0x84: 2, 0x86: 2, 0x88: 1, 0x89: 3, 0x8A: 4,
+                0x8B: 1, 0x8C: 5, 0x8E: 1, 0x8F: 2},
+        "next": {0x02, 0x03, 0x09, 0x0A, 0x17, 0x38, 0x80, 0x81, 0x83, 0x85, 0x87, 0x8D},
+        "wait": 0x11,
+        "menu3e": False,
+        "code": {0x04: 1, 0x31: 1, 0x08: 5},
+        "data": {0x00: 1, 0x29: 1},
+        "flow_end": {0x01, 0x04, 0x05, 0x16, 0x32},
+        "messages": {0x09, 0x8D},   # (8Dh a message too: a speaker's, its mouth moving)
+    },
 }
 NEXT = {0x02, 0x03, 0x09, 0x0A, 0x17, 0x39}
+MESSAGES = {0x09}             # ops with a message: the word after the op its end, the text from the op's 4th byte
 FLOW_END = {0x01, 0x04, 0x05, 0x16, 0x33}
 DISPATCH = re.compile(rb"\x26\x8a\x1c\x80\xfb(.)\x72\x03\xe9..\x32\xff\xd1\xe3\xff\xa7(..)", re.S)
 # Zenith's: mov bl, es:[si] / xor bh, bh / shl bx, 1 / jmp [bx+table]
 DISPATCH2 = re.compile(rb"\x26\x8a\x1c\x32\xff\xd1\xe3\xff\xa7(..)", re.S)
 BUFFER = re.compile(rb"\xa3\x16\x04\x05(..)\xa3\x08\x04", re.S)
 BUFFER2 = re.compile(rb"\xa3\x16\x04\x8e\xc0\x05(..)\xa3\x10\x04", re.S)
+BUFFER3 = re.compile(rb"\xa3\x16\x04\x05(..)\xa3\x10\x04", re.S)   # (De.FaNa's)
 
 
 class Build:
@@ -260,7 +280,7 @@ class Build:
             raise ValueError("CINEMA.BIN: a build of %d ops (table at %xh) not known" % key)
         self.__dict__.update(BUILDS[key])
         self.next = BUILDS[key].get("next", NEXT)
-        b = BUFFER.search(prog) or BUFFER2.search(prog)
+        b = BUFFER.search(prog) or BUFFER2.search(prog) or BUFFER3.search(prog)
         if b is None:
             raise ValueError("CINEMA.BIN: the scripts' buffer not found")
         self.buffer = w(b.group(1), 0) * 16
@@ -308,7 +328,7 @@ class Script:
                 if op in getattr(self.build, "next", NEXT):
                     e = self.w(i + 1)
                     fields.append(i + 1)
-                    if op == 0x09 and not i < e <= end:
+                    if op in getattr(self.build, "messages", MESSAGES) and not i < e <= end:
                         # (a message that goes on somewhere else: one the English put after the end)
                         jump, e = e, d.index(0, i + 3 - self.base) + 1 + self.base
                         self.found.add(jump)
@@ -356,7 +376,7 @@ class Script:
                     self.found.add(t)
                     todo.append(t)
                 self.ops[i] = (op, e)
-                if op in FLOW_END or jump is not None:
+                if op in getattr(self.build, "flow_end", FLOW_END) or jump is not None:
                     break
                 i = e
         return not self.errs
@@ -392,10 +412,11 @@ def pieces(raw):
 
 
 def texts(sc):
-    """[(addr, kind, (start, end))]: the op 09 messages' and the menus' text (end: its NUL)."""
+    """[(addr, kind, (start, end))]: the messages' (op 09, the build's `messages`) and the menus' text (end:
+    its NUL)."""
     out = []
     for a, (op, e) in sorted(sc.ops.items()):
-        if op == 0x09:
+        if op in getattr(sc.build, "messages", MESSAGES):
             out.append((a, "msg", (a + 3, e - 1)))
     for a in sorted(sc.items):
         if sc.inside(a):

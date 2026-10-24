@@ -3019,5 +3019,18 @@
    "url": "https://vndb.org/v8973",
    "source": "VNDB"
   }
+ ],
+ "HimeyaSoft.zip/De.FaNa": [
+  {
+   "label": "This repo: games/de_fana (patcher working, machine translation in progress)",
+   "url": "../games/de_fana/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8671",
+   "url": "https://vndb.org/v8671",
+   "source": "VNDB"
+  }
  ]
 }

@@ -7,10 +7,10 @@ Clearance: no PC-98 English release or announcement found on 2026-10-11 (`resear
 
 ## Engine
 
-Foster's CINEMA engine in Himeya Soft's build (`ZENITH.COM` loads the archive's driver, FAD.BIN, from `ZENITH/A.FA1`; CINEMA.BIN runs the script, MB3N_H.BIN draws the text).  The archive is Foster's FA1 (a directory at its end, members compressed, a member written back stored).  The whole story is one script, ZT.BIN, run in a 64 KB segment; this build's 48h ops (its table at 57Ah, read by the dispatch with no bound) are in `pc98tl/cinema.py`'s BUILDS, which documents the formats; `pc98tl/cinema_tl.py` the English.  Unchanged files rebuild byte for byte.
+Foster's CINEMA engine in Himeya Soft's build (`ZENITH.COM` loads the archive's driver, FAD.BIN, from `ZENITH/A.FA1`; CINEMA.BIN runs the script, MB3N_H.BIN draws the text).  The archive is Foster's FA1 (a directory at its end, members compressed, a member written back stored).  The whole story is one script, ZT.BIN, run in a 64 KB buffer; this build's ops (48h ops, its table at 57Ah, read by the dispatch with no bound) are in `pc98tl/cinema.py`'s BUILDS, which documents the formats; `pc98tl/cinema_tl.py` the English.  Unchanged files rebuild byte for byte.
 
 * The program draws bytes below 80h itself as half-width letters, so the English needs no program patch.  A message is the speaker's name on its first line and the speech after it: the name is a string of its own.
-* The script is written again with every address in it moved with the text.  It ends with machine code op 00h calls (an animation's interrupt handler): it moves with the rest, its own addresses (found by following its code from op 00h's calls and from the handler it installs) moved with it.
+* A script is written again with every address in it moved with the text.  It ends with machine code op 00h calls (an animation's interrupt handler): it moves with the rest, its own addresses (found by following its code from op 00h's calls and from the handler it installs) moved with it.
 * The patcher breaks the lines between words at 64 letters and, when the window's 3 rows are full, ends the page (\f) and waits for a key (op 11h, this build's wait with the blinking mark) before the rest.
 
 ## Script
@@ -21,7 +21,7 @@ Translation and the content classification (♥) are done by the translation mod
 
 ## Limits
 
-* Messages (`m` ids): any length; broken between words at 64 letters, paged after 3 rows.  `\n` in the English forces a new line.  A message the Japanese splits around a wait (`:1` in its ref) is two strings, shown one after the other.  The script with its English must fit its 64 KB segment: a build past it is refused and names the script.
+* Messages (`m` ids): any length; broken between words at 64 letters, paged after 3 rows.  `\n` in the English forces a new line.  A message the Japanese splits around a wait (`:1` in its ref) is two strings, shown one after the other.  A script with its English must fit its 64 KB buffer: a build past it is refused and names the script.
 * Speakers' names (`n` ids): one line, `max_cells` the Japanese's (past it cut).
 * Menu items (`i` ids, the save and load menus): one line in the menu's box, `max_cells` the menu's widest Japanese item; past it reported.
 * Program messages (`e` ids): ZENITH.COM's, printed by DOS when memory or a file is missing, in their own bytes, `max_cells` the room; past it cut and reported.
