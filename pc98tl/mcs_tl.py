@@ -37,9 +37,10 @@ NOTE = {"msg": "a message: any length (broken between words at 72 letters, 4 lin
         "prog": "the program's own message, in place: max_cells letters"}
 SPEAKER = re.compile(rb"^((?:[\x81-\x9f\xe0-\xfc][\x40-\xfc]|`\d){1,8})_")
 REAL = re.compile("[ぁ-ヺ一-鿿Ａ-ｚ０-９]")
-EXE_TEXT = re.compile(rb"(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]|[\x20-\x7e])*"
+# a run of the program's text, up to a "$" (where DOS's print ends a message: the one before is not taken in)
+EXE_TEXT = re.compile(rb"(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]|[\x20-\x23\x25-\x7e])*"
                       rb"(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]){3,}"
-                      rb"(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]|[\x20-\x7e])*")
+                      rb"(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]|[\x20-\x23\x25-\x7e])*")
 NAME_WIDTH = 12                # letters allowed for the hero's name when breaking lines
 SYSTEM = re.compile(r"A0_|INIT\.|MC_000\.")   # scripts of the system's screens: their messages are labels
 

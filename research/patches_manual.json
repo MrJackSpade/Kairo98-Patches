@@ -3058,5 +3058,12 @@
    "url": "https://vndb.org/v5568",
    "source": "VNDB"
   }
+ ],
+ "BirdySoft.zip/My Eyes!": [
+  {
+   "label": "My Eyes! PC-98 English translation by Cabal Translations (patch released)",
+   "url": "https://romhack.ing/database/content/entry/aYIb6sYaTqqdQ2tZOP7CBA/my-eyes-pc-98-english-translation",
+   "source": "romhack.ing"
+  }
  ]
 }

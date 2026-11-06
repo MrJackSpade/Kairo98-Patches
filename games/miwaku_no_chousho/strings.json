@@ -116806,34 +116806,34 @@
   {
    "id": "e00002",
    "kind": "prog",
-   "jp": "$メモリーが足りません。",
+   "jp": "メモリーが足りません。",
    "en": "",
    "refs": [
-    "E:0d351"
+    "E:0d352"
    ],
-   "max_cells": 23,
+   "max_cells": 22,
    "note": "the program's own message, in place: max_cells letters"
   },
   {
    "id": "e00003",
    "kind": "prog",
-   "jp": "$ems が異常です。",
+   "jp": "ems が異常です。",
    "en": "",
    "refs": [
-    "E:0d3b0"
+    "E:0d3b1"
    ],
-   "max_cells": 17,
+   "max_cells": 16,
    "note": "the program's own message, in place: max_cells letters"
   },
   {
    "id": "e00004",
    "kind": "prog",
-   "jp": "$msdrv ver4.4a 以上を常駐させてください",
+   "jp": "msdrv ver4.4a 以上を常駐させてください",
    "en": "",
    "refs": [
-    "E:0d41c"
+    "E:0d41d"
    ],
-   "max_cells": 39,
+   "max_cells": 38,
    "note": "the program's own message, in place: max_cells letters"
   },
   {

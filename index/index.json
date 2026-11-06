@@ -40747,15 +40747,21 @@
      "path": "My Eyes!\\My Eyes! [FD]\\My Eyes! (Disk D).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "My Eyes! PC-98 English translation by Cabal Translations (patch released)",
+     "url": "https://romhack.ing/database/content/entry/aYIb6sYaTqqdQ2tZOP7CBA/my-eyes-pc-98-english-translation",
+     "source": "romhack.ing"
+    }
+   ],
    "heart": false,
    "heart_basis": "VNDB r18111 (no erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "BirdySoft.zip/Pal - Wonder Trip! Chizuru",

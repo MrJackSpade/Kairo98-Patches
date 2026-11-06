@@ -3011,5 +3011,13 @@
    "web search (title + English translation, PC-98): 2026-10-12: no English translation found",
    "web search (title + English translation, PC-98): 2026-10-24: no translation or announcement found"
   ]
+ },
+ "BirdySoft.zip/My Eyes!": {
+  "checked": "2026-11-06",
+  "result": "human translation on PC-98: skipped",
+  "sources": [
+   "VNDB r166526: My Eyes! (p98), English, Cabal Translations, released 2026-09-26 (also x68 r166370, fmt r166527)",
+   "https://romhack.ing/database/content/entry/aYIb6sYaTqqdQ2tZOP7CBA/my-eyes-pc-98-english-translation (patch released)"
+  ]
  }
 }

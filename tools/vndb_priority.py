@@ -5,7 +5,7 @@
 Titles come from index/index.json (status "untranslated"; with --engine,
 every title of that engine family).  Each is matched to VNDB through the
 PC-98 release list (research/vndb_p98_all.json, by title the way
-build_index.py matches), falling back to a VNDB title search; the vote
+build_index.py matches), falling back to a VNDB title search among PC-98 releases; the vote
 counts of its VNs are summed.  The ranking goes to research/priority.json
 under <family>, most votes first; unmatched titles get 0 votes and keep
 index order at the end.
@@ -46,18 +46,28 @@ def votecounts(ids):
 
 
 def search(title):
-    """A VNDB title search: the full title, then without its subtitle or
-    parenthetical; a result counts when one title holds the other."""
+    """A VNDB title search among PC-98 releases: the full title, then without
+    its subtitle or parenthetical; a result counts when the titles' words are
+    the same, or the shorter's (two words or more) are a run of the other's
+    (whole words: "Mana" is not "Manami", "Suki!" not "... Kimi ga Suki!")."""
     import re
+
+    def words(s):
+        return re.findall(r"[a-z0-9]+", s.lower())
+
+    def holds(a, b):
+        return any(b[k:k + len(a)] == a for k in range(len(b) - len(a) + 1))
+
     queries = [title, title.split(" - ")[0], re.sub(r"\s*\(.*?\)", "", title)]
     for q in dict.fromkeys(q.strip() for q in queries if q.strip()):
-        res = _post({"filters": ["search", "=", q], "fields": "title,alttitle,votecount", "results": 10})
-        want = slug(q)
+        res = _post({"filters": ["and", ["search", "=", q], ["platform", "=", "p98"]],
+                     "fields": "title,alttitle,votecount", "results": 10})
+        want = words(q)
         for r in res["results"]:
-            for name in (r["title"], r.get("alttitle") or ""):
-                got = slug(name)
-                if got and len(min(got, want, key=len)) >= 4 and (got == want or want in got or got in want):
-                    return r["id"]
+            got = words(r["title"])
+            short = min(got, want, key=len)
+            if got == want or (len(short) >= 2 and len("".join(short)) >= 4 and (holds(want, got) or holds(got, want))):
+                return r["id"]
     return None
 
 

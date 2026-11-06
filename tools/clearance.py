@@ -101,7 +101,7 @@ def main():
                 continue
             day = time.strftime("%Y-%m-%d")
             en = vndb_english(t["vndb"])
-            pc98 = [r for r in en if "pc9" in r[1]]
+            pc98 = [r for r in en if "p98" in r[1]]
             teams = team_hits(t["title"])
             sources = ["VNDB API %s: %s" % (day, "no English release on any platform" if not en else
                                              "English releases: " + "; ".join("%s (%s)" % (n, ", ".join(p))
