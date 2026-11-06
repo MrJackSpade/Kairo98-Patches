@@ -4551,5 +4551,19 @@
    "The two menus (Enter) and the explanation after them",
    "OK: the menu items in filler (a fixed-width box: cut to its room, as reported); the explanation's messages in filler, wrapped over several lines"
   ]
+ ],
+ "sakura_no_mori": [
+  [
+   "Boot the filler build (hard-disk release): the opening (OPENING.DAT)",
+   "OK: each block of its lines in filler, half-width, centred under the pictures, a long one over two lines"
+  ],
+  [
+   "The main menu (a click past the opening; the pointer moved onto 最初から始める)",
+   "OK: the program's line and the item's description in filler, half-width, in the box under the menu"
+  ],
+  [
+   "A new game: the first scene's messages (clicks)",
+   "OK: each message in filler, half-width, broken between words within the box, the page mark at a full box"
+  ]
  ]
 }

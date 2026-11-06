@@ -15566,15 +15566,27 @@
      "path": "Sakura no Mori\\Sakura no Mori [HD]\\Sakura no Mori.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/sakura_no_mori (patcher working, machine translation in progress)",
+     "url": "../games/sakura_no_mori/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v9069",
+     "url": "https://vndb.org/v9069",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r18234 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Active.zip/Sweet Angel",

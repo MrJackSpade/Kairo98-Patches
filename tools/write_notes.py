@@ -1787,7 +1787,7 @@ def active_halo_notes(name, cfg, doc, adult, clear, tests, extra):
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     names = {"msg": "messages", "item": "choice items", "prompt": "prompts", "opening": "opening blocks",
              "menu": "main menu descriptions", "label": "program strings"}
-    out = ["# %s%s (Active MAIN98.EXE)" % ("♥ " if heart else "", cfg["title"]), "",
+    out = ["# %s%s (Active %s)" % ("♥ " if heart else "", cfg["title"], cfg["program"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
            "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
@@ -1796,14 +1796,26 @@ def active_halo_notes(name, cfg, doc, adult, clear, tests, extra):
         res = c.get("result", "")
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    where = ("the game's files are in the archive `%s` (its files found by a hash of their names)" % cfg["archive"]
+             if cfg.get("archive") else "the game's files are in its folder `%s`" % cfg["game_dir"])
+    rewritten = "the archive is written anew" if cfg.get("archive") else "each changed file is written back"
     out += ["", "## Engine", "",
-            "Active's `%s` (Borland C): the game's files are in the archive `%s` (its files found by a hash of "
-            "their names); the scripts (`*.HGO`) are a table of entries (labels, menus' items, switches' cases, "
-            "each with its places in the code) and the code, ops and texts.  The patcher walks every op (their "
-            "operands read off the program's own routines) and lays a changed script out anew, every place (the "
-            "entries', the switches' and the conditions') moved; the archive is written anew.  `pc98tl/active_halo.py` "
+            "Active's `%s` (Borland C): %s; the scripts (`*.HGO`) are a table of entries (labels, menus' items, "
+            "switches' cases, each with its places in the code) and the code, ops and texts.  The patcher walks "
+            "every op (their operands read off the program's own routines) and lays a changed script out anew, "
+            "every place (the entries', the switches' and the conditions') moved; %s.  `pc98tl/active_halo.py` "
             "documents the formats, `pc98tl/active_halo_tl.py` the English.  Unchanged files rebuild byte for byte."
-            % (cfg["program"], cfg["archive"]), "",
+            % (cfg["program"], where, rewritten), ""]
+    if cfg.get("sub_ops"):
+        out += ["This build's ops differ from Angel Halo's in %s (read off its scripts, every one of which walks "
+                "and rebuilds byte for byte)." % ", ".join("sub-op %sh (%s)" % (k.upper(), "operands " + v if v
+                                                                               else "no operand")
+                                                           for k, v in sorted(cfg["sub_ops"].items())), ""]
+    if cfg.get("cpx"):
+        out += ["The scripts are packed (`CPX One-Pass SD`, `pc98tl/cpx.py`): runs of bytes copied from up to 255 "
+                "back, marked by an escape byte.  The program unpacks a file only when it has that header and uses "
+                "any other as it is, so a changed script is written back unpacked.", ""]
+    out += [
             "* The program draws ASCII half-width by itself, so English takes a byte a letter.",
             "* A message's lines are each a text of their own (a text starts a new line); the patcher breaks the "
             "English between words into lines of the narrower window's width (56 cells) and the program pages "

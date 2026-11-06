@@ -24,14 +24,16 @@ strings MAIN98.EXE:offset in its data):
 English is ASCII (the program draws it half-width); another character is written full-width in
 Shift-JIS when it has one, else `?`.  A changed script is laid out anew with every place moved; the
 program holds a script of at most 49152 bytes, so a longer build is refused and names the script's
-strings (in pseudo mode the filler is cut).  FDHALO.PAK is written anew.
+strings (in pseudo mode the filler is cut).  A CPX-packed script (pc98tl/cpx.py) is read unpacked and,
+changed, written back unpacked, which the program takes as it is.  FDHALO.PAK is written anew (game.json "archive"); without
+one (Sakura no Mori) the files are the game folder's own, each changed one written back.
 """
 import json
 import os
 import re
 import struct
 
-from . import active_halo as H
+from . import active_halo as H, cpx
 from .alice_sys2_tl import sha256
 from .text import pseudo
 
@@ -212,16 +214,54 @@ def prog_strings(exe, hdr):
 
 def _paths(cfg):
     gd = cfg["game_dir"]
-    return gd + "/" + cfg["program"], gd + "/" + cfg["archive"]
+    return gd + "/" + cfg["program"], (gd + "/" + cfg["archive"]) if cfg.get("archive") else None
+
+
+class Folder:
+    """The game folder's own files, for a release without an archive (Sakura no Mori): Pak's names,
+    read and replace; the replaced files written back by `save`."""
+
+    def __init__(self, vol, game_dir):
+        self.vol, self.dir, self.new = vol, game_dir, {}
+
+    def names(self):
+        return [e["name"] for e in self.vol.listdir(self.vol.find(self.dir)["cluster"]) if not e["is_dir"]]
+
+    def read(self, name):
+        return self.new[name] if name in self.new else self.vol.read(self.dir + "/" + name)
+
+    def replace(self, name, data):
+        self.new[name] = data
+
+    def save(self):
+        for name, data in self.new.items():
+            self.vol.write(self.dir + "/" + name, data)
+
+
+BASE_SUB = dict(H.SUB)
+
+
+def _ops(cfg):
+    """The sub-ops' operands for this game: Angel Halo's, with game.json's "sub_ops" ({hex sub-op:
+    format}) where an older build differs (Sakura no Mori's)."""
+    H.SUB.clear()
+    H.SUB.update(BASE_SUB)
+    H.SUB.update({int(k, 16): v for k, v in cfg.get("sub_ops", {}).items()})
+
+
+def _store(vol, cfg, pak_path):
+    """The game's files: its archive (Angel Halo's FDHALO.PAK), or its folder."""
+    return H.Pak(vol.read(pak_path)) if pak_path else Folder(vol, cfg["game_dir"])
 
 
 def run_extract(here, src):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    _ops(cfg)
     vol = _image(src).volumes[0]
     prog_path, pak_path = _paths(cfg)
     exe = vol.read(prog_path)
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
-    pak = H.Pak(vol.read(pak_path))
+    pak = _store(vol, cfg, pak_path)
     merged, order = {}, []
 
     def add(kind, jp, ref, cells_, note=None):
@@ -251,7 +291,7 @@ def run_extract(here, src):
             add("menu", show(t), "%s:%d" % (n, item), room, "a main menu item's description, on the line "
                 "under the menu (the menu's widest Japanese one)")
     for n in scripts(pak):
-        h = pak.read(n)
+        h = cpx.unpack(pak.read(n))
         its = items(h)
         room = max((cells(t) for _s, _e, t, _m in its), default=0)
         for s, e, t, _m in its:
@@ -292,6 +332,7 @@ def _pseudo(e):
 
 def run_patch(here, src, dst, mode="en"):
     cfg = json.load(open(os.path.join(here, "game.json"), encoding="utf-8"))
+    _ops(cfg)
     doc = json.load(open(os.path.join(here, "strings.json"), encoding="utf-8"))
     if sha256(src) != doc["source_image_sha256"]:
         print("warning: source image differs from the one strings.json was extracted from")
@@ -300,8 +341,7 @@ def run_patch(here, src, dst, mode="en"):
     prog_path, pak_path = _paths(cfg)
     exe = vol.read(prog_path)
     hdr = struct.unpack_from("<H", exe, 8)[0] * 16
-    raw_pak = vol.read(pak_path)
-    pak = H.Pak(raw_pak)
+    pak = _store(vol, cfg, pak_path)
     by_ref, ids, rooms = {}, {}, {}
     for e in doc["strings"]:
         text = _pseudo(e) if mode == "pseudo" else e["en"]
@@ -360,7 +400,7 @@ def run_patch(here, src, dst, mode="en"):
             changed = True
     rebuilt = 0
     for n in scripts(pak):
-        h = pak.read(n)
+        h = cpx.unpack(pak.read(n))
         msgs, its, prs = messages(h), items(h), prompts(h)
 
         def build(ratio):
@@ -407,8 +447,10 @@ def run_patch(here, src, dst, mode="en"):
             pak.replace(n, out)
             rebuilt += 1
             changed = True
-    if changed:
+    if changed and pak_path:
         vol.write(pak_path, pak.build())
+    elif changed:
+        pak.save()
     for w_ in dict.fromkeys(warn):
         print("warning:", w_)
     img.save(dst)

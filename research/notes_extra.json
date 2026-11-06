@@ -564,5 +564,10 @@
    "np21w shows this game properly only with DIP switches 3E F3 7B (game.json \"dipsw\"); with its defaults the screen after the title is drawn in the wrong display mode, the original floppies too.",
    "Not reached in this test: the dates with the girls past the first explanation, and the endings, so they are not seen on screen."
   ]
+ },
+ "sakura_no_mori": {
+  "remarks": [
+   "Not reached in this test: the choices, the later chapters, save/load and the endings, so they are not seen on screen."
+  ]
  }
 }

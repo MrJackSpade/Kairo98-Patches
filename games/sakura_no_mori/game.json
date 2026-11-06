@@ -1,0 +1,15 @@
+{
+ "title": "Sakura no Mori",
+ "key": "Active.zip/Sakura no Mori",
+ "image": "Sakura no Mori\\Sakura no Mori [HD]\\Sakura no Mori.hdi",
+ "encoding": "active_halo",
+ "program": "MAIN.EXE",
+ "game_dir": "SAKURA",
+ "sub_ops": {
+  "01": "SWW",
+  "02": "SWW",
+  "24": ""
+ },
+ "cpx": true,
+ "boot_steps": "12:shot,8:esc,8:lclick,6:shot,1:mouse=10;0,1:mouse=10;0,1:mouse=10;0,1:mouse=10;0,1:mouse=0;-10,1:mouse=0;-10,1:mouse=0;-10,1:mouse=0;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:mouse=10;-10,1:shot,1:lclick,8:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot,2:lclick,3:shot"
+}

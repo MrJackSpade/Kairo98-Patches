@@ -103,14 +103,16 @@ def gmo(d):
 
 
 def gmo_build(d, texts):
-    """The menu with the descriptions texts {item: bytes} put in, the places and the length set."""
+    """The menu with the descriptions texts {item: bytes} put in, the places and the length set; what
+    follows the descriptions (Sakura no Mori's menu picture, read from their end) kept after them."""
     out = bytearray(d[:GMO_TEXT])
+    tail = d[GMO_TEXT + struct.unpack_from("<H", d, GMO_SIZE)[0]:]
     body = bytearray()
     for k, (item, old) in enumerate(gmo(d)):
         struct.pack_into("<HH", out, GMO_INDEX + 4 * k, item, len(body))
         body += texts.get(item, old) + b"\0"
     struct.pack_into("<H", out, GMO_SIZE, len(body))
-    return bytes(out + body)
+    return bytes(out + body + tail)
 
 
 def string(d, i):
