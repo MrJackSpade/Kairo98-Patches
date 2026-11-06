@@ -76,7 +76,10 @@ GRAMMAR_2.update({
     "F2": "", "F4": "V V V E V V", "I3": "V V V", "I4": "nE:4", "I5": "V", "I6": "", "M6": "V",
     "UC": "V E*", "UL": "E", "UM": "V V", "UN": "nE:3", "UO": "E", "UP": "nE:2 V V",
 })
-GRAMMARS = (GRAMMAR, GRAMMAR_2)
+# Chuushaki's build (CHUSYA\UK2.EXE): Sex 2's and A7, a value (read off its scripts: every one of the
+# game's 123 walks and rebuilds byte for byte with it, and with no other form)
+GRAMMAR_3 = dict(GRAMMAR_2, A7="V")
+GRAMMARS = (GRAMMAR, GRAMMAR_2, GRAMMAR_3)
 NAMES = re.compile(rb"A0(?:[A-Z][0-9A-Z])+")      # the program's table of its commands' names
 
 

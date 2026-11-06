@@ -4565,5 +4565,15 @@
    "A new game: the first scene's messages (clicks)",
    "OK: each message in filler, half-width, broken between words within the box, the page mark at a full box"
   ]
+ ],
+ "chuushaki": [
+  [
+   "Boot the filler build (the installed hard-disk game): the opening demo",
+   "OK: its pictures as they are (their text is drawn into them)"
+  ],
+  [
+   "Enter past the opening: the first scene's messages (clicks)",
+   "OK: each message in filler, half-width, broken between words within the window, a long one over two lines"
+  ]
  ]
 }

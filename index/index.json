@@ -35850,15 +35850,27 @@
      "path": "Chuushaki - Hirasawa Nurse School\\Chuushaki - Hirasawa Nurse School [HD]\\Chuushaki - Hirasawa Nurse School.hdi"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/chuushaki (patcher working, machine translation in progress)",
+     "url": "../games/chuushaki/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v8633",
+     "url": "https://vndb.org/v8633",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r17559 (erotic content)",
    "engine": "unknown",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "Aypio.zip/Concert",

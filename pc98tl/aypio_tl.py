@@ -22,7 +22,8 @@ Strings:
 
 English is ASCII, written in \\k (the program then draws bytes as themselves, half-width); a name or a word
 put in goes in \\K (the program's own characters).  A build with English writes the DLB archives again
-(the scripts with every address moved) and UK2.EXE's messages in place.
+(the scripts with every address moved), or with game.json "loose_scripts" (Chuushaki's installed game, its
+*.MES files in its folder; refs F:NAME:offset) each changed script, and UK2.EXE's messages in place.
 """
 import json
 import os
@@ -114,19 +115,29 @@ def units(sc, table):
     return out
 
 
-def scripts(vol, cfg):
-    """[(archive, member, Script)]."""
-    g = A.grammar(_program(vol, cfg)[1])
+def containers(vol, cfg):
+    """[(tag, the archive's path or None, its bytes, [(script name, bytes)])]: the DLB archives' scripts
+    (tag the archive's number), or, with game.json "loose_scripts" and no archive, the game folder's own
+    *.MES files (tag F; Chuushaki's installed game)."""
     out = []
     for arc in ARCHIVES:
         p = _path(cfg, arc)
-        if not _has(vol, p):
-            continue
-        data = vol.read(p)
-        for name, at, size in A.dlb(data):
-            if name.lower().endswith(".mes"):
-                out.append((arc, name, A.Script(data[at:at + size], g)))
+        if _has(vol, p):
+            data = vol.read(p)
+            out.append((arc[7], p, data, [(name, data[at:at + size]) for name, at, size in A.dlb(data)
+                                          if name.lower().endswith(".mes")]))
+    if not out and cfg.get("loose_scripts"):
+        names = [e["name"] for e in vol.listdir(vol.find(cfg["dir"])["cluster"])
+                 if not e["is_dir"] and e["name"].upper().endswith(".MES")]
+        out.append(("F", None, None, [(n, vol.read(_path(cfg, n))) for n in names]))
     return out
+
+
+def scripts(vol, cfg):
+    """[(container tag, member, Script)]."""
+    g = A.grammar(_program(vol, cfg)[1])
+    return [(tag, name, A.Script(raw, g)) for tag, _p, _d, members in containers(vol, cfg)
+            for name, raw in members]
 
 
 def found(vol, cfg):
@@ -140,7 +151,7 @@ def found(vol, cfg):
             room = {"name": 16, "insert": 16}.get(kind)
             if kind == "choice":
                 room = sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in jp)
-            out.append(("%s:%s:%x" % (arc[7], name, s), kind, jp, room))
+            out.append(("%s:%s:%x" % (arc, name, s), kind, jp, room))
     for s, e in S.program_strings(bytes(img)):
         out.append(("E:%05x" % s, "prog", S.show(img[s:e]), e - s))
     for name in COMS:
@@ -311,19 +322,13 @@ def run_patch(here, src, dst, mode="en"):
     sizes, calls = {}, {}
     table = A.kana_table(_program(vol, cfg)[1])
     g = A.grammar(_program(vol, cfg)[1])
-    for arc in ARCHIVES:
-        p = _path(cfg, arc)
-        if not _has(vol, p):
-            continue
-        data = vol.read(p)
+    for tag, p, data, scripts_in in containers(vol, cfg):
         members = {}
-        for name, at, size in A.dlb(data):
-            if not name.lower().endswith(".mes"):
-                continue
-            sc = A.Script(data[at:at + size], g)
+        for name, raw in scripts_in:
+            sc = A.Script(raw, g)
             new = {}
             for s, kind, span, who in units(sc, table):
-                e, text = by_ref.get("%s:%s:%x" % (arc[7], name, s), (None, ""))
+                e, text = by_ref.get("%s:%s:%x" % (tag, name, s), (None, ""))
                 if text:
                     if kind in SPECS and FORMAT.findall(text) != FORMAT.findall(e["jp"]):
                         warn.append("%s: its %%d.. differ from the Japanese's" % e["id"])
@@ -337,8 +342,10 @@ def run_patch(here, src, dst, mode="en"):
             sizes[name.lower()] = len(out)
             calls[name.lower()] = {sc.d[s2:e2].decode("latin-1").lower().rstrip("1")
                                    for s2, e2 in sc.strings if re.fullmatch(rb"[0-9A-Za-z_\-]+\.mes1?", sc.d[s2:e2], re.I)}
-        if members:
+        if members and p:
             vol.write(p, A.dlb_bytes(data, members))
+        for name, out in (members.items() if not p else ()):
+            vol.write(_path(cfg, name), out)
     # (a script runs on top of the ones that called it: the deepest chain must fit the program's room)
     def chain(n, seen=()):
         if n in seen or n not in sizes:

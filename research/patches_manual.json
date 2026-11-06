@@ -3091,5 +3091,18 @@
    "url": "https://vndb.org/v9069",
    "source": "VNDB"
   }
+ ],
+ "Aypio.zip/Chuushaki - Hirasawa Nurse School": [
+  {
+   "label": "This repo: games/chuushaki (patcher working, machine translation in progress)",
+   "url": "../games/chuushaki/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8633",
+   "url": "https://vndb.org/v8633",
+   "source": "VNDB"
+  }
  ]
 }

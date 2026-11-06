@@ -2900,7 +2900,8 @@ def aypio_notes(name, cfg, doc, adult, clear, tests, extra):
              "text": "other texts", "format": "formatted texts", "batch": "installer lines",
              "prog": "program messages"}
     width = cfg.get("width", 64)
-    later = "launcher" in cfg            # (Sex 2's build: run by its own batch file after its sound menu)
+    loose = bool(cfg.get("loose_scripts"))  # (Chuushaki's installed game: the scripts in its folder)
+    later = "launcher" in cfg and not loose  # (Sex 2's build: run by its own batch file after its sound menu)
     out = ["# %s%s (Aypio)" % ("♥ " if heart else "", cfg["title"]), "",
            "> This patch's script is a **machine translation (AI/MTL)**, not a human "
            "translation. It will be retired if a human translation is released.", "",
@@ -2911,20 +2912,23 @@ def aypio_notes(name, cfg, doc, adult, clear, tests, extra):
         out.append("Clearance: %s on %s (`research/clearance.json`)." % (
             "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
     run = ("run by `%s` after `SOUNDSEL.EXE`'s sound board menu, under the PMD/MMD sound drivers"
-           % cfg["launcher"] if later else "run by `SEX.BAT` under its sound driver NAX.COM")
+           % cfg["launcher"] if later else "run by `%s` under its sound driver NAX.COM" % cfg.get("launcher", "SEX.BAT"))
+    where = ("The scripts are the `.MES` files in its folder (installed from the floppies' LZH archives)" if loose
+             else "The scripts are the `.MES` members of `DATALIB1-4.DLB` (a directory of names, places and sizes, "
+                  "then the members)")
     out += ["", "## Engine", "",
-            "Aypio's UK2 engine (`%s\\UK2.EXE`, %s) on the hard disk.  The scripts are the `.MES` members of "
-            "`DATALIB1-4.DLB` (a directory of names, places and sizes, then the members): compiled commands "
+            "Aypio's UK2 engine (`%s\\UK2.EXE`, %s) on the hard disk.  %s: compiled commands "
             "of two letters (and a few of one byte) whose arguments are typed values, expressions and "
             "conditions, with addresses (gotos, calls, the ifs' and loops' ends) as words.  "
             "`pc98tl/aypio.py` documents the formats, `pc98tl/aypio_tl.py` the English.  A build with no "
-            "English leaves the disk as it is." % (cfg["dir"], run), "",
+            "English leaves the disk as it is." % (cfg["dir"], run, where), "",
             "* The scripts are walked command by command (UK2.EXE's own reading of each command's "
             "arguments) and written again with their texts at any length, every address moved with what it "
-            "points at; the archives are written again." +
+            "points at; %s." % ("each changed script is written again" if loose else "the archives are written again") +
             ("  This build's commands differ from Sex's (some gone, some new, some reading other "
              "arguments): its grammar is picked by the program's own table of its commands' names." if later
-             else ""),
+             else "  This build's commands are Sex 2's and one more (`A7`, a value, read off its scripts): its "
+             "grammar is picked by the program's own table of its commands' names." if loose else ""),
             "* Text is the program's own code: two-byte Shift-JIS and single bytes standing for the "
             "characters of its table.  Its command `\\k` makes it draw bytes as themselves, ASCII half-width: "
             "the English is written in `\\k` (a name or a word put in, and a page's `%s`, go back to `\\K`), "
@@ -2937,10 +2941,12 @@ def aypio_notes(name, cfg, doc, adult, clear, tests, extra):
             "* A script runs on top of the ones that called it, in a room of 35,000 bytes: when the deepest "
             "chain with its English is longer, the room (UK2.EXE's allocation and its check) is grown to fit, "
             "a kilobyte at a time%s." % (", and `UK2.CFG`'s `MIN_MEM` (the memory asked for without EMS) by "
-                                          "as much" if later else ""),
+                                          "as much" if later or loose else ""),
             "* UK2.EXE's messages%s in place." % (
                 ", `SOUNDSEL.EXE`'s menu and the lines `INSTALL.BAT` (the CD's copy to a hard disk) shows"
                 if later else
+                ", the sound driver's (NAX.COM) DOS messages and the lines `INSTALL.BAT` (the floppies' copy to a "
+                "hard disk) shows" if loose else
                 ", the sound driver's (NAX.COM) and the floppy launcher's (AYPIO.COM) DOS messages"),
             "* `MTL_NOTE.TXT` is put in the game's folder (`%s`)." % cfg["dir"]]
     out += ["", "## Script", "",

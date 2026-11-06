@@ -1,0 +1,11 @@
+{
+ "title": "Chuushaki - Hirasawa Nurse School",
+ "key": "Aypio.zip/Chuushaki - Hirasawa Nurse School",
+ "image": "Chuushaki - Hirasawa Nurse School\\Chuushaki - Hirasawa Nurse School [HD]\\Chuushaki - Hirasawa Nurse School.hdi",
+ "encoding": "aypio",
+ "dir": "CHUSYA",
+ "engine": "UK2.EXE",
+ "launcher": "CHUSYA.BAT",
+ "loose_scripts": true,
+ "boot_steps": "15:shot,8:shot,4:enter,4:shot,3:enter,3:shot,3:enter,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot"
+}
