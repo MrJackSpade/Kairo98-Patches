@@ -4537,5 +4537,19 @@
    "A new game: the day's card and the first messages, read from the wide TXB blocks",
    "OK: the day card in filler; each message in filler, broken between words within the window's 56 cells and 4 rows; the scenes' pictures as they are"
   ]
+ ],
+ "can_can_bunny_superior": [
+  [
+   "Boot the filler build (two floppies laid out on a hard disk, np21w with DIP switches 3E F3 7B): the opening (OP.EXE)",
+   "OK: its captions in filler, half-width, centred under the pictures, a long one over two lines"
+  ],
+  [
+   "The title, then the first script's messages (Shift past the title, clicks)",
+   "OK: the title picture; each message in filler, half-width, wrapped within the box"
+  ],
+  [
+   "The two menus (Enter) and the explanation after them",
+   "OK: the menu items in filler (a fixed-width box: cut to its room, as reported); the explanation's messages in filler, wrapped over several lines"
+  ]
  ]
 }

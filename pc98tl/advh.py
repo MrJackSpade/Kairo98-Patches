@@ -126,7 +126,8 @@ def _asm16(src, org):
 # mov bx, mult / mov di, 100h / mov cx, count / mul bx / add ax, add /
 # xor [di], dl / inc di / loop; then the original bytes it overwrote are
 # put back from cs:1EEh (a word to cs:6, three bytes to cs:E6h, 12h bytes
-# to the entry) and it jumps to EXEPACK's entry, cs:10h
+# to the entry) and it jumps to EXEPACK's entry, cs:10h (or it jumps there
+# straight on, after storing words of its own into the image)
 WRAP_SIG = re.compile(rb"\xb8(..)\xbb(..)\xbf\x00\x01\xb9(..)\xf7\xe3\x05(..)\x30\x15\x47\xe2\xf6", re.S)
 
 
@@ -181,9 +182,18 @@ def unwrap(exe):
         ax = (prod + add) & 0xFFFF
     seg = cs * 16
     after = m.end() - base - seg             # (the wrapper's code after its loop, in its segment)
-    if img[seg + after] == 0xE9 and (after + 3 + struct.unpack_from("<h", img, seg + after + 1)[0]) & 0xFFFF == 0x10:
-        # (Hare Nochi Oosawagi!'s wrapper: straight on to EXEPACK's entry, nothing put back)
-        pass
+    # (Can Can Bunny Superior's wrapper: words stored through DS, still the PSP, so at their
+    # address less 100h in the image (mov word [addr], value ...), then on to EXEPACK's entry)
+    stores, at = [], seg + after
+    while img[at:at + 2] == b"\xc7\x06":
+        stores.append(struct.unpack_from("<HH", img, at + 2))
+        at += 6
+    jump = at - seg
+    to_exepack = img[at] == 0xE9 and (jump + 3 + struct.unpack_from("<h", img, at + 1)[0]) & 0xFFFF == 0x10
+    if to_exepack:
+        # (Hare Nochi Oosawagi!'s wrapper has no stores: straight on, nothing put back)
+        for addr, value in stores:
+            struct.pack_into("<H", img, addr - 0x100, value)
     else:
         src = seg + 0x1EE
         img[seg + 6:seg + 8] = img[src:src + 2]

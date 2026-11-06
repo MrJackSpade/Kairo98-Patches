@@ -54,6 +54,10 @@ game.json: {"title", "key", "image" (the HDI), "encoding": "adv98v",
             draws Shift-JIS only: their lines in full-width letters),
             "program_files" ([other modules, relative to the game
             folder, whose strings are shown: a name entry module]),
+            "caption_programs" ([opening programs, relative to the game
+            folder, that show captions from a table: see
+            pc98tl/advh_captions.py; their captions are `o` strings, the
+            rest of their text program strings]),
             "program_fullwidth" (those modules draw Shift-JIS only: their
             strings in full-width letters), "data_files" ([data files,
             relative to the game folder, of names the engine shows: item,
@@ -104,7 +108,7 @@ import struct
 
 from .alice_sys2_tl import sha256
 from .disk import DiskImage
-from . import adv98v as av, advh, engine_strings
+from . import adv98v as av, advh, advh_captions, engine_strings
 
 TEXT = ("chr1", "chr2", "str")
 LINE_H, GLYPH_H = 20, 16
@@ -570,6 +574,14 @@ def _streams(data, extraop):
 DOS_PROGRAMS = {"COMMAND.COM", "IO.SYS", "MSDOS.SYS"}     # the base disk's own, beside a root install
 PROGRAM_EXT = (".COM", ".EXE", ".OV1", ".OVL", ".TCM")
 _HERO = re.compile(rb"@\d+='([^']+)'")
+
+
+def _uncaptioned(cfg, name, exe, runs):
+    """A program's string runs less its captions' (game.json "caption_programs")."""
+    if name not in cfg.get("caption_programs", ()):
+        return runs
+    spans = [(s, e) for _k, s, e, _t in advh_captions.captions(exe)]
+    return [r for r in runs if not any(s <= r[0] < e + 1 for s, e in spans)]
 
 
 def _programs(vol, game_dir, extra=()):
@@ -1136,7 +1148,10 @@ def run_extract(here, src):
             extra += [("file", name, "%d" % n, 0, 0, text, raw_len // 2) for n, (text, raw_len) in enumerate(lines)]
         for name, path in _programs(vol, cfg["game_dir"], cfg.get("program_files", ())):
             extra += [("engine", name, "%04x" % s, s, e, text, (e - s) // 2)
-                      for s, e, text in program_strings(vol.read(path))]
+                      for s, e, text in _uncaptioned(cfg, name, vol.read(path), program_strings(vol.read(path)))]
+        for name in cfg.get("caption_programs", []):
+            extra += [("caption", name, "o%d" % k, s, e, text, len(text))
+                      for k, s, e, text in advh_captions.captions(vol.read(_join(cfg["game_dir"], name)))]
         for name in cfg.get("data_files", []):
             data = vol.read(_join(cfg["game_dir"], name))
             grow = name_room(vol, cfg["game_dir"], data)
@@ -1156,7 +1171,7 @@ def run_extract(here, src):
             merged[key]["max_cells"] = min(merged[key]["max_cells"], cells)
         for key, cap in caps.items():
             merged[key]["max_cells"] = min(merged[key]["max_cells"], cap)
-    prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e", "file": "t"}
+    prefix = {"msg": "m", "item": "i", "inline": "n", "var": "v", "engine": "e", "file": "t", "caption": "o"}
     counters, strings = {}, []
     for key in order:
         e = merged[key]
@@ -2008,7 +2023,7 @@ def run_patch(here, src, dst, mode="en"):
                     for name in cfg.get("data_files", [])]
         for name, path, finder, wide in written:
             exe = vol.read(path)
-            runs = finder(exe)
+            runs = _uncaptioned(cfg, name, exe, finder(exe))
             name_file = name_table(exe) if finder is data_strings else None
             values = {}
             for s, e, _t in runs:
@@ -2041,6 +2056,17 @@ def run_patch(here, src, dst, mode="en"):
             new, cut = engine_strings.apply(exe, runs, values)
             for s, need, room in cut:
                 warn.append("%s: %d bytes, the program has room for %d" % (ids["%s:%04x" % (name, s)], need, room))
+            if new != exe:
+                vol.write(path, new)
+        for name in cfg.get("caption_programs", []):
+            path = _join(cfg["game_dir"], name)
+            exe = vol.read(path)
+            texts = {k: by_ref["%s:o%d" % (name, k)] for k, _s, _e, _t in advh_captions.captions(exe)
+                     if "%s:o%d" % (name, k) in by_ref}
+            new, cut = advh_captions.patch(exe, texts)
+            for k in cut:
+                warn.append("%s: more than %d lines of %d letters, cut" % (
+                    ids["%s:o%d" % (name, k)], advh_captions.ROWS, advh_captions.WIDTH))
             if new != exe:
                 vol.write(path, new)
         for name, path in _files(vol, cfg["game_dir"]):

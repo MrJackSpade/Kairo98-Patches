@@ -3065,5 +3065,18 @@
    "url": "https://romhack.ing/database/content/entry/aYIb6sYaTqqdQ2tZOP7CBA/my-eyes-pc-98-english-translation",
    "source": "romhack.ing"
   }
+ ],
+ "CocktailSoft.zip/Can Can Bunny Superior": [
+  {
+   "label": "This repo: games/can_can_bunny_superior (patcher working, machine translation in progress)",
+   "url": "../games/can_can_bunny_superior/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v6479",
+   "url": "https://vndb.org/v6479",
+   "source": "VNDB"
+  }
  ]
 }

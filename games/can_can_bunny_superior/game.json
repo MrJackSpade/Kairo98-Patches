@@ -1,0 +1,72 @@
+{
+ "title": "Can Can Bunny Superior",
+ "key": "CocktailSoft.zip/Can Can Bunny Superior",
+ "image": "Can Can Bunny Superior\\Can Can Bunny Superior [FD]\\Can Can Bunny Superior (Disk A).hdm",
+ "encoding": "adv98v",
+ "game_dir": "",
+ "extraop": false,
+ "engine": "advh",
+ "line_h": 22,
+ "page_break": "8190",
+ "boot_steps": "12:shot,8:shot,8:shot,10:shot,1:hold=16,8:shot,5:lclick,4:shot,5:lclick,4:shot,4:enter,4:shot,4:enter,4:shot,4:lclick,4:shot,4:lclick,4:shot,4:enter,4:shot,4:lclick,4:shot,4:lclick,4:shot",
+ "hdd": {
+  "base": "Naomi - Bishoujo-tachi no Yakata\\Naomi - Bishoujo-tachi no Yakata [HD]\\Naomi - Bishoujo-tachi no Yakata.hdi",
+  "remove": [
+   "NAOMI",
+   "NAOMI.BAT"
+  ],
+  "dir": "",
+  "disks": [
+   "Can Can Bunny Superior (Disk B).hdm"
+  ],
+  "subdirs": true,
+  "skip": [],
+  "run": [
+   "A:",
+   "cd \\",
+   "ADVSHELL"
+  ],
+  "replace": [
+   "LH /L:2 QMOUSE -z",
+   "A:",
+   "cd \\NAOMI",
+   "NAOMI",
+   "cd .."
+  ],
+  "config_sys": [
+   "DEVICE=A:\\MOUSE.SYS"
+  ]
+ },
+ "drive_prefix": {
+  "b:": "a:"
+ },
+ "program_fixes": [
+  {
+   "file": "ADVSHELL.COM",
+   "find": "2ac0e80a0085c07505b001e80100c3",
+   "replace": "31c0909090909090909090909090c3",
+   "why": "ADVSHELL checks drive A's volume label for the game disk's (ｽﾍﾟﾘｵｰﾙ.98A); on the hard disk the check is made to report a match"
+  },
+  {
+   "file": "OP.EXE",
+   "find": "423a5c5049435c535441522e434800423a5c5049435c4f502e50525300423a5c5049435c4f50322e50525300423a5c5049435c4f5032422e50525300423a5c5049435c4f50332e50525300423a5c5049435c4f5033422e50525300423a5c5049435c4f5033414e492e50525300423a5c5049435c4f5033414e4d2e50525300423a5c5049435c4f5033414e542e50525300423a5c5049435c524f474f312e50525300423a5c5049435c524f474f322e50525300423a5c5049435c4f50342e505253",
+   "replace": "413a5c5049435c535441522e434800413a5c5049435c4f502e50525300413a5c5049435c4f50322e50525300413a5c5049435c4f5032422e50525300413a5c5049435c4f50332e50525300413a5c5049435c4f5033422e50525300413a5c5049435c4f5033414e492e50525300413a5c5049435c4f5033414e4d2e50525300413a5c5049435c4f5033414e542e50525300413a5c5049435c524f474f312e50525300413a5c5049435c524f474f322e50525300413a5c5049435c4f50342e505253",
+   "why": "the opening loads its pictures from drive B (B:\\PIC\\...); on the hard disk they are in A:\\PIC"
+  }
+ ],
+ "data_files": [
+  "NAME.DEF"
+ ],
+ "data_fullwidth": true,
+ "caption_programs": [
+  "OP.EXE"
+ ],
+ "advh_fixes": [
+  {
+   "find": "9a0000201385c0752bfa",
+   "replace": "9a0000201385c09090fa",
+   "why": "its start-up calls a check that passes only on the original floppy and otherwise stops the program in an endless loop; the check still runs, its failure is passed over"
+  }
+ ],
+ "dipsw": "3e f3 7b"
+}

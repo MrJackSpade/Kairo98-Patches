@@ -653,6 +653,14 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
             "2, so a code applies at its text's byte offset as the Japanese laid it out, and passes over "
             "a pair a letter at an odd offset reads across two codes.  Each record's text is written in "
             "place, cut to its room." % (cfg["advh_opening"], cfg["advh_opening"]), ""]
+    for prog in cfg.get("caption_programs", []):
+        out[out.index(display):out.index(display)] = [
+            "The opening (`%s`, run by the first script before the engine's own) is a program of its own that "
+            "shows a caption under each picture: the n-th string of a table in its data, drawn on the text layer "
+            "from column 10 over two cleared rows, a single byte as a half-width cell (`pc98tl/advh_captions.py`). "
+            "The patch writes the captions anew past the program's stack (the load image made to reach there, "
+            "its minimum allocation lessened to match) and points the table at them; its other strings (the "
+            "name prompt) are written in place." % prog, ""]
     if cfg.get("hdd"):
         out[out.index(display):out.index(display)] = [
             ("This game's mahjong is a separate engine (`MAH4.OVL`) with no Japanese text of its own. "
@@ -696,7 +704,8 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
     for e in strings:
         kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
     labels = {"msg": "messages", "item": "menu items", "inline": "name tags (procedure text)",
-              "var": "string variable values", "engine": "program strings", "file": "text file lines"}
+              "var": "string variable values", "engine": "program strings", "file": "text file lines",
+              "caption": "opening captions"}
     out += ["", "## Script", "", "%d strings (%s)." % (len(strings), ", ".join(
         "%d %s" % (n, labels.get(k, k)) for k, n in kinds.items())), ""]
     out.append("Translation and the content classification (♥) are done by the translation model; "
@@ -761,6 +770,9 @@ def adv98v_notes(name, cfg, doc, adult, clear, tests, extra):
                    "up to its Japanese byte length (twice `max_cells` in letters), as the file is loaded "
                    "into a fixed place in memory; longer ones are cut and reported."
                    % ", ".join("`%s`" % f for f in cfg.get("text_files", [])))
+    if "caption" in has:
+        out.append("* Opening captions (`o` ids): broken between words into at most two lines of 70 letters, "
+                   "each centred on the screen; a longer one is cut and reported.")
     if "engine" in has and cfg.get("program_fullwidth"):
         out.append("* Program strings (`e` ids: %s): the module's text is Shift-JIS only, so they are "
                    "written in full-width letters, up to `max_cells` letters each, in place; longer ones are cut "

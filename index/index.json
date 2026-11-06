@@ -51128,15 +51128,27 @@
      "path": "Can Can Bunny Superior\\Can Can Bunny Superior [FD]\\Can Can Bunny Superior (Disk B).hdm"
     }
    ],
-   "patches": [],
+   "patches": [
+    {
+     "label": "This repo: games/can_can_bunny_superior (patcher working, machine translation in progress)",
+     "url": "../games/can_can_bunny_superior/notes.md",
+     "source": "this repo",
+     "wip": true
+    },
+    {
+     "label": "VNDB v6479",
+     "url": "https://vndb.org/v6479",
+     "source": "VNDB"
+    }
+   ],
    "heart": true,
    "heart_basis": "VNDB r12840 (erotic content)",
    "engine": "adv98v",
-   "english": false,
+   "english": true,
    "in_progress": false,
    "announced": [],
-   "skip": false,
-   "status": "untranslated"
+   "skip": true,
+   "status": "human translation"
   },
   {
    "key": "CocktailSoft.zip/Cocktail Soft Zoukangou",
