@@ -3104,5 +3104,18 @@
    "url": "https://vndb.org/v8633",
    "source": "VNDB"
   }
+ ],
+ "FairyDust.zip/Ma Doll": [
+  {
+   "label": "This repo: games/ma_doll (patcher working, machine translation in progress)",
+   "url": "../games/ma_doll/notes.md",
+   "source": "this repo",
+   "wip": true
+  },
+  {
+   "label": "VNDB v8787",
+   "url": "https://vndb.org/v8787",
+   "source": "VNDB"
+  }
  ]
 }

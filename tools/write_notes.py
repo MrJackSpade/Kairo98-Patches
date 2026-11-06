@@ -3488,6 +3488,77 @@ def mcs_notes(name, cfg, doc, adult, clear, tests, extra):
     return out
 
 
+
+def madoll_notes(name, cfg, doc, adult, clear, tests, extra):
+    a = adult.get(cfg["key"], {})
+    heart = bool(a.get("adult"))
+    strings = doc["strings"]
+    done = sum(1 for e in strings if e["en"])
+    kinds = {}
+    for e in strings:
+        kinds[e["kind"]] = kinds.get(e["kind"], 0) + 1
+    names = {"msg": "messages", "choice": "choices", "name": "names put in", "prog": "program strings"}
+    out = ["# %s%s (FairyDust)" % ("♥ " if heart else "", cfg["title"]), "",
+           "> This patch's script is a **machine translation (AI/MTL)**, not a human "
+           "translation. It will be retired if a human translation is released.", "",
+           "Source image: `%s` (sha256 in `strings.json`)." % cfg["image"].replace("\\", "/")]
+    c = clear.get(cfg["key"])
+    if c:
+        res = c.get("result", "")
+        out.append("Clearance: %s on %s (`research/clearance.json`)." % (
+            "no PC-98 English release or announcement found" if res == "clear" else res, c.get("checked", "")))
+    out += ["", "## Engine", "",
+            "FairyDust's `%s\\%s` (MS C, EXEPACK'd) on the hard disk.  The scripts (`STY_nn.SCR`) are 6-byte "
+            "records (an op and two operands) and a text area of NUL-ended strings, XOR 7Fh, that the records name "
+            "by place: the messages (ops ending 02), the choices (the second block's records) and the pictures' "
+            "names (ops ending 09).  A text's bytes are Shift-JIS, half-width kana bytes for hiragana and ASCII "
+            "bytes for full-width letters and some kanji (the program's table of one-byte characters), 02 and a "
+            "byte a name the program keeps.  `pc98tl/madoll.py` documents the formats and the patch, "
+            "`pc98tl/madoll_tl.py` the English.  A build with no English leaves the disk as it is." % (
+                cfg["dir"], cfg["program"]), "",
+            "* The table's entries for the ASCII bytes are made the letters themselves (an entry of a letter and "
+            "0 is drawn in one half-width cell, as the program already does for a few marks), so English is "
+            "ASCII, a byte a letter; Japanese that stays is written with those characters spelled out in "
+            "Shift-JIS.",
+            "* The messages outgrow the text area (the program loads it into %d bytes below its data), so each "
+            "script's messages go into a file of their own, `STY_nn.MSG`, each from a paragraph's start, and a "
+            "message's operand becomes its paragraph.  The script loader's call of its text reader is made a "
+            "call of a helper that also reads the .MSG file into memory it asks DOS for once (the largest "
+            ".MSG's size); the two message readers (the window's and the log's) take the message's segment from "
+            "that memory and its paragraph.  The text area keeps only the choices and the pictures' names; the "
+            "helpers sit at the end of its room.  The program is written back unpacked." % 0x86D0,
+            "* The window breaks a line at 58 cells and scrolls up a line when its 4 lines are full; the patcher "
+            "breaks the English between words at 58 letters."]
+    out += ["", "## Script", "",
+            "%d strings: %s." % (len(strings), ", ".join("%d %s" % (n, names.get(k, k))
+                                                       for k, n in sorted(kinds.items()))), ""]
+    out.append("Translation and the content classification (♥) are done by the translation model; "
+               "%d of %d strings have English so far." % (done, len(strings)))
+    out += ["", "## Limits", "",
+            "* Messages (`m` ids): any length; broken between words at 58 letters, the window scrolling.  "
+            "`\n` a new line.  Keep `{N0}` (the hero's name), `{N1}`.. (the names and tags the program puts "
+            "in, `n` ids) and `{01}`.",
+            "* The largest script's messages must fit the free memory the game leaves (about 84 KB); the "
+            "patcher reports the largest `.MSG` file's size.",
+            "* Choices (`c` ids): one line, `max_cells` letters (the Japanese's width); longer ones are cut and "
+            "reported.",
+            "* Names (`n` ids) and program strings (`e` ids): in place, `max_cells` letters (the Japanese's "
+            "bytes); longer ones are cut and reported.  A name is drawn two bytes at a time, so an odd length is "
+            "padded with a space.",
+            "* English is ASCII; `\\` is written `/` (the program's escape), other characters as `?` (curly "
+            "quotes, dashes and `…` are made ASCII)."]
+    out += ["", "## Not handled", "",
+            "* Text drawn into the pictures (the title, the frame's lettering).",
+            "* The name entry's tables of kana (picked by their place)."]
+    for line in extra.get(name, {}).get("not_handled", []):
+        out.append("* " + line)
+    out += ["", "## Test status (np21w, `tools/boot_all.sh`)", "", "| Test | Result |", "|---|---|"]
+    for t, r in tests.get(name, []):
+        out.append("| %s | %s |" % (t, r))
+    for line in extra.get(name, {}).get("remarks", []):
+        out += ["", line]
+    return out
+
 def leafnj_notes(name, cfg, doc, adult, clear, tests, extra):
     a = adult.get(cfg["key"], {})
     heart = bool(a.get("adult"))
@@ -4719,7 +4790,7 @@ def main():
             continue
         if cfg.get("encoding") in ("aaru", "sgs21", "flz", "choreo", "avs96", "mapl", "aas", "eqa", "igs", "diana",
                                     "n88prog", "piyo", "ace", "sarada", "kuro", "cal", "widry", "psyo", "maxadv", "misty", "dies", "vangel",
-                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps", "brm", "mcs", "leafnj"):
+                                    "starpt", "fas", "aypio", "cocktail", "hmy", "b12", "qbasic", "trps", "brm", "mcs", "leafnj", "madoll"):
             out = {"aaru": aaru_notes, "sgs21": sgs21_notes, "flz": flz_notes,
                    "choreo": choreo_notes, "avs96": avs96_notes,
                    "mapl": mapl_notes, "aas": aas_notes,
@@ -4728,7 +4799,7 @@ def main():
                    "ace": ace_notes, "sarada": sarada_notes, "kuro": kuro_notes, "cal": cal_notes, "widry": widry_notes,
                    "psyo": psyo_notes, "maxadv": maxadv_notes, "misty": misty_notes, "dies": dies_notes, "vangel": vangel_notes,
                    "starpt": starpt_notes, "fas": fas_notes,
-                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes, "brm": brm_notes, "mcs": mcs_notes, "leafnj": leafnj_notes}[cfg["encoding"]](
+                   "aypio": aypio_notes, "cocktail": cocktail_notes, "hmy": hmy_notes, "b12": b12_notes, "qbasic": qbasic_notes, "trps": trps_notes, "brm": brm_notes, "mcs": mcs_notes, "leafnj": leafnj_notes, "madoll": madoll_notes}[cfg["encoding"]](
                 name, cfg, doc, adult, clear, tests, extra)
             open(os.path.join(here, "notes.md"), "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
             print("wrote", name)

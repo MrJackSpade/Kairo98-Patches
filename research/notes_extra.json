@@ -574,5 +574,10 @@
   "remarks": [
    "Not reached in this test: the menus and choices, the quiz, the endings and the CG mode, so they are not seen on screen."
   ]
+ },
+ "ma_doll": {
+  "remarks": [
+   "Not reached in this test: the choices, the log, the CG and music modes and the endings, so they are not seen on screen."
+  ]
  }
 }

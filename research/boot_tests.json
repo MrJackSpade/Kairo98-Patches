@@ -4575,5 +4575,15 @@
    "Enter past the opening: the first scene's messages (clicks)",
    "OK: each message in filler, half-width, broken between words within the window, a long one over two lines"
   ]
+ ],
+ "ma_doll": [
+  [
+   "Boot the filler build (the installed hard-disk game): the system menu and the name entry (the pointer moved onto them)",
+   "OK: the menu's items and the default name in filler, half-width, cut to their room as reported; the name entry's kana tables as they are"
+  ],
+  [
+   "The opening (STY_OP) and the first scene's messages (clicks), read from the .MSG files",
+   "OK: each message in filler, half-width, broken between words, a long one over two lines; the names the program puts in in filler; the page mark"
+  ]
  ]
 }

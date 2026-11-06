@@ -1,0 +1,9 @@
+{
+ "title": "Ma Doll",
+ "key": "FairyDust.zip/Ma Doll",
+ "image": "Ma Doll\\Ma Doll [HD]\\Ma Doll.hdi",
+ "encoding": "madoll",
+ "dir": "MADOU",
+ "program": "MDMAIN.EXE",
+ "boot_steps": "15:shot,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:mouse=-10;-4,1:lclick,6:shot,1:mouse=-5;-12,1:mouse=-5;-12,1:mouse=-5;-12,1:mouse=-5;-12,1:mouse=-5;-12,1:lclick,6:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot,3:lclick,3:shot"
+}
